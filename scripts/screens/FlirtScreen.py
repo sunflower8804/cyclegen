@@ -522,18 +522,14 @@ class FlirtScreen(Screens):
                 if you.history:
                     if you.history.murder:
                         if "is_murderer" in you.history.murder:
-                            if len(you.history.murder["is_murderer"]) > 0 and you.shunned == 0 and not you.dead and "you_forgiven" not in tags:
-                                continue
-                            else:
+                            if len(you.history.murder["is_murderer"]) > 0 and you.shunned == 0 and not you.dead and "you_forgiven" in tags:
                                 youreforgiven = True
                                 
             if game.clan.age < cat.forgiven + 10:
                 if cat.history:
                     if cat.history.murder:
                         if "is_murderer" in cat.history.murder:
-                            if len(cat.history.murder["is_murderer"]) > 0 and cat.shunned == 0 and not cat.dead and  "they_forgiven" not in tags:
-                                continue
-                            else:
+                            if len(cat.history.murder["is_murderer"]) > 0 and cat.shunned == 0 and not cat.dead and  "they_forgiven" in tags:
                                 theyreforgiven = True
             
             if "you_forgiven" in tags and (you.shunned > 0 or not youreforgiven):
