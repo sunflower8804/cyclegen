@@ -47,25 +47,6 @@
             "You're right, y_c. You're always right. Thank you."
         ]
     ],
-    "assertivewarriorapp_comfort": [
-        [
-            "no_kit",
-            "assertive",
-            "comfort",
-            "random_cat",
-            "no_kit"
-        ],
-        [
-            "Huh? Oh, nothing's wrong ...",
-            "Just ... had a bad day, is all ...",
-            "*Sigh* y_c, have you ever felt like you're not enough for anyone?",
-            "Usually, when it comes to making a decision, I never hesitate. Whatever the obstacle, I'll run headfirst into it, no questions asked.",
-            "But, today, on patrol, I didn't listen to the leader, and accidentally ran straight into an enemy trap. Luckily, r_w was there to keep everyone safe, but because of me, my Clanmates could've been hurt, or worse.",
-            "I just feel like such a failure. A liability. I can't help the way I am, but what if everyone's better off without me?",
-            "[You offer t_c words of reassurance, but they seem troubled beyond comforting.]",
-            "[Still, you sit with them through the night, hoping to stabilize them through whatever storm they might be weathering right now.]"
-        ]
-    ],
     "app_9": [
         [
             "Any",
@@ -209,9 +190,7 @@
     "app_26": [
         [
             "elder",
-            "neurotic",
-            "sweet",
-            "upstanding"
+            "neurotic"
         ],
         [
             "There you are, you old badger!",
@@ -223,9 +202,6 @@
         [
             "Any",
             "assertive",
-            "brooding",
-            "unlawful",
-            "cool",
             "you_shunned"
         ],
         [
@@ -245,7 +221,6 @@
         [
             "Any",
             "neurotic",
-            "introspective",
             "you_shunned"
         ],
         [
@@ -268,11 +243,7 @@
         [
             "kitten",
             "insult",
-            "stable",
-            "sweet",
-            "introspective",
-            "upstanding",
-            "cool"
+            "stable"
         ],
         [
             "Hey! Be nice! When you're an apprentice, your mentor won't let that slide."
@@ -282,7 +253,6 @@
         [
             "Any",
             "neurotic",
-            "brooding",
             "introspective",
             "platonic_like"
         ],
@@ -309,8 +279,6 @@
     "app31232": [
         [
             "kitten",
-            "sweet",
-            "upstanding",
             "stable",
             "introspective"
         ],
@@ -339,9 +307,6 @@
             "insult",
             "Any",
             "cool",
-            "stable",
-            "introspective",
-            "assertive",
             "silly",
             "unabashed"
         ],
@@ -354,9 +319,6 @@
             "insult",
             "Any",
             "cool",
-            "stable",
-            "introspective",
-            "assertive",
             "silly",
             "unabashed"
         ],
@@ -368,9 +330,7 @@
         [
             "insult",
             "Any",
-            "upstanding",
-            "cool",
-            "assertive"
+            "upstanding"
         ],
         [
             "Are you just saying that because I caught a bigger bird than you?"
@@ -381,8 +341,6 @@
             "insult",
             "Any",
             "assertive",
-            "unlawful",
-            "silly",
             "unabashed"
         ],
         [
@@ -393,10 +351,7 @@
         [
             "insult",
             "Any",
-            "silly",
-            "assertive",
-            "unabashed",
-            "cool"
+            "silly"
         ],
         [
             "Hmm, I think I smell sour mouse! Oh wait, it's just your attitude."
@@ -405,7 +360,6 @@
     "app_32aa1": [
         [
             "insult",
-            "apprentice",
             "upstanding",
             "introspective",
             "stable"
@@ -419,8 +373,7 @@
             "insult",
             "apprentice",
             "cool",
-            "upstanding",
-            "stable"
+            "upstanding"
         ],
         [
             "Careful, your jealousy is showing."
@@ -471,8 +424,6 @@
             "romantic_like",
             "assertive",
             "sweet",
-            "unlawful",
-            "cool",
             "unabashed"
         ],
         [
@@ -484,7 +435,6 @@
         [
             "Any",
             "assertive",
-            "neutral",
             "platonic_like",
             "random_cat"
         ],

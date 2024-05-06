@@ -339,6 +339,12 @@ class StartScreen(Screens):
                 self.open_data_directory_button.hide()
 
             self.closebtn.show()
+            
+        if game.clan is not None:
+            key_copy = tuple(Cat.all_cats.keys())
+            for x in key_copy:
+                if x not in game.clan.clan_cats:
+                    game.clan.remove_cat(x)
 
         # LOAD settings
         game.load_settings()
