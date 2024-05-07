@@ -393,12 +393,8 @@ class FlirtScreen(Screens):
                 continue
             elif success and "reject" in tags:
                 continue
-            if talk[0] and (cluster1 not in tags and cluster2 not in tags):
-                if len(tags) != 1 and len(tags) != 2:
-                    continue
-                else:
-                    if len(tags) == 2 and "reject" not in tags:
-                        continue
+            elif not success and "reject" not in tags:
+                continue
 
 
 
@@ -1564,6 +1560,12 @@ class FlirtScreen(Screens):
                 text = text.replace("df_m_n", str(Cat.all_cats.get(you.df_mentor).name))
             else:
                 return ""
+        # Their mentor
+        if "t_mn" in text or "tm_n" in text:
+            if cat.mentor is None:
+                return ""
+            text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
+            text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
             
         # Your mentor
         if "m_n" in text:
@@ -1578,12 +1580,6 @@ class FlirtScreen(Screens):
             else:
                 return ""
         
-        # Their mentor
-        if "t_mn" in text or "tm_n" in text:
-            if cat.mentor is None:
-                return ""
-            text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
-            text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
         
         # Clan leader's name
         if "l_n" in text:

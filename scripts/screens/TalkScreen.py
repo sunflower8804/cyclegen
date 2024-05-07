@@ -565,23 +565,23 @@ class TalkScreen(Screens):
 
             if "grief stricken" in cat.illnesses:
                 dead_cat = Cat.all_cats.get(cat.illnesses['grief stricken'].get("grief_cat"))
-                if "grievingyou" in tags:
-                    # if not game.clan.your_cat.dead:
-                    #     cat.illnesses.remove('grief stricken')
-                    if dead_cat.name != game.clan.your_cat.name:
-                        continue
-                else:
-                    if dead_cat.name == game.clan.your_cat.name:
-                        continue
+                if dead_cat:
+                    if "grievingyou" in tags:
+                        if dead_cat.name != game.clan.your_cat.name:
+                            continue
+                    else:
+                        if dead_cat.name == game.clan.your_cat.name:
+                            continue
 
             if "grief stricken" in you.illnesses:
                 dead_cat = Cat.all_cats.get(you.illnesses['grief stricken'].get("grief_cat"))
-                if "grievingthem" in tags:
-                    if dead_cat.name != cat.name:
-                        continue
-                else:
-                    if dead_cat.name == cat.name:
-                        continue
+                if dead_cat:
+                    if "grievingthem" in tags:
+                        if dead_cat.name != cat.name:
+                            continue
+                    else:
+                        if dead_cat.name == cat.name:
+                            continue
             
             # FORGIVEN TAGS
 
@@ -1528,7 +1528,7 @@ class TalkScreen(Screens):
                     return ""
                 counter = 0
                 sibling = Cat.fetch_cat(choice(cat.inheritance.get_siblings()))
-                while sibling.outside or sibling.dead or sibling.ID == cat.ID or ("t_l" in text and sibling.moons != cat.moons):
+                while sibling.outside or sibling.dead or sibling.ID == game.clan.your_cat.ID or sibling.ID == cat.ID or ("t_l" in text and sibling.moons != cat.moons):
                     counter+=1
                     if counter > COUNTER_LIM:
                         return ""
@@ -1718,7 +1718,13 @@ class TalkScreen(Screens):
                 text = text.replace("df_m_n", str(Cat.all_cats.get(you.df_mentor).name))
             else:
                 return ""
-            
+        # Their mentor
+        if "t_mn" in text or "tm_n" in text:
+            if cat.mentor is None:
+                return ""
+            text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
+            text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
+                
         # Your mentor
         if "m_n" in text:
             if you.mentor is None or you.mentor == cat.ID:
@@ -1732,12 +1738,7 @@ class TalkScreen(Screens):
             else:
                 return ""
         
-        # Their mentor
-        if "t_mn" in text or "tm_n" in text:
-            if cat.mentor is None:
-                return ""
-            text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
-            text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
+        
         
         # Clan leader's name
         if "l_n" in text:

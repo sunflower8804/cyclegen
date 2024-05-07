@@ -452,7 +452,7 @@ class Events:
             acc = random.choice(acc_list)
         game.clan.your_cat.pelt.inventory.append(acc)
         string = f"You found a new accessory, {self.accessory_display_name(acc)}! You choose to store it in a safe place for now."
-        game.cur_events_list.insert(0, Single_Event(string, "health"))
+        game.cur_events_list.insert(0, Single_Event(string, "alert"))
 
     def accessory_display_name(self, accessory):
         if accessory is None:
@@ -1390,9 +1390,11 @@ class Events:
             
     def generate_df_events(self):
         if random.randint(1,3) == 1:
-            evt = Single_Event(random.choice(self.df_txt["general"]))
-            if evt not in game.cur_events_list:
-                game.cur_events_list.append(evt)
+            evt = self.adjust_txt(random.choice(self.df_txt["general"]))
+            if evt:
+                evt = Single_Event(evt)
+                if evt not in game.cur_events_list:
+                    game.cur_events_list.append(evt)
         if random.randint(1,30) == 1:
             r_clanmate = Cat.all_cats.get(random.choice(game.clan.clan_cats))
             counter = 0
@@ -2286,9 +2288,9 @@ class Events:
 
                     # change personality facets
                     cat.personality.aggression = min(max(cat.personality.aggression + (-1*cat.courage)%2, 0), 15)
-                    cat.personality.sociability = min(max(cat.personality.aggression + (-1*cat.compassion)%2, 0), 15)
-                    cat.personality.lawfulness = min(max(cat.personality.aggression + (-1*cat.intelligence)%2, 0), 15)
-                    cat.personality.stability = min(max(cat.personality.aggression + (-1*cat.empathy)%2, 0), 15)
+                    cat.personality.sociability = min(max(cat.personality.sociability + (-1*cat.compassion)%2, 0), 15)
+                    cat.personality.lawfulness = min(max(cat.personality.lawfulness + (-1*cat.intelligence)%2, 0), 15)
+                    cat.personality.stability = min(max(cat.personality.stability + (-1*cat.empathy)%2, 0), 15)
 
                     med_cat_list = [i for i in Cat.all_cats_list if
                                     i.status in ["medicine cat", "medicine cat apprentice"] and not (
@@ -3508,9 +3510,9 @@ class Events:
                 elif cat.status == 'leader':
                     if random.randint(1,4) == 1:
                         if cat.ID == game.clan.your_cat.ID:
-                            text = text + " c_nClan will once more look to you for guidance."
+                            text = text + f" {game.clan.name}Clan will once more look to you for guidance."
                         else:
-                            text = text + " c_nClan will once more look to them for guidance."
+                            text = text + f" {game.clan.name}Clan will once more look to them for guidance."
                         cat.specsuffix_hidden = False
                         if game.clan.deputy:
                             game.clan.deputy.status_change('warrior')
