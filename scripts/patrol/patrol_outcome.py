@@ -45,6 +45,7 @@ class PatrolOutcome():
             lost_cats: List[str] = None,
             injury: List[Dict] = None,
             murder: List[str] = None,
+            convert: List[str] = None,
             accessory: List[Dict] = None,
             history_reg_death: str = None,
             history_leader_death: str = None,
@@ -72,6 +73,7 @@ class PatrolOutcome():
         self.lost_cats = lost_cats if lost_cats is not None else []
         self.injury = injury if injury is not None else []
         self.murder = murder if murder is not None else []
+        self.convert = convert if convert is not None else []
         self.accessory = accessory if accessory is not None else []
         self.history_reg_death = history_reg_death if history_reg_death is not None else \
                                  "m_c died on patrol."
@@ -156,6 +158,7 @@ class PatrolOutcome():
                     dead_cats=_d.get("dead_cats"),
                     injury=_d.get("injury"),
                     murder=_d.get("murder"),
+                    convert =_d.get("convert"),
                     accessory=_d.get("accessory"),
                     lost_cats=_d.get("lost_cats"),
                     history_leader_death=_d["history_text"].get("lead_death") if \
@@ -190,6 +193,7 @@ class PatrolOutcome():
         results.append(self._handle_accessories(patrol))
         results.append(self._handle_death(patrol))
         results.append(self._handle_lost(patrol))
+        results.append(self._handle_df_convert(patrol))
         results.append(self._handle_condition_and_scars(patrol))
         results.append(self._handle_relationship_changes(patrol))
         results.append(self._handle_rep_changes(patrol))
@@ -460,6 +464,49 @@ class PatrolOutcome():
             results.append(f"{_cat.name} has been lost.")
             _cat.gone()
             #_cat.greif(body=False)
+            
+        return " ".join(results)
+    
+    def _handle_df_convert(self, patrol:'Patrol') -> str:
+        """ Handle losing cats """
+        
+        if not self.convert:
+            return ""
+        
+        def gather_cat_objects(cat_list, patrol: 'Patrol') -> list: 
+            out_set = set()
+            
+            for _cat in cat_list:
+                if _cat == "r_c":
+                    out_set.add(patrol.patrol_random_cat)
+                elif _cat == "p_l":
+                    out_set.add(patrol.patrol_leader)
+                elif _cat == "s_c":
+                    out_set.add(self.stat_cat)
+                elif _cat == "y_c":
+                    out_set.add(game.clan.your_cat)
+                elif _cat == "app1" and len(patrol.patrol_apprentices) >= 1:
+                    out_set.add(patrol.patrol_apprentices[0])
+                elif _cat == "app2" and len(patrol.patrol_apprentices) >= 2:
+                    out_set.add(patrol.patrol_apprentices[1])
+                elif _cat == "patrol":
+                    out_set.update(patrol.patrol_cats)
+                elif _cat == "multi":
+                    cats_dying = random.randint(1, max(1, len(patrol.patrol_cats) - 1))
+                    out_set.update(random.sample(patrol.patrol_cats, cats_dying))
+                    
+            return list(out_set)
+        
+        cats_to_convert = gather_cat_objects(self.convert, patrol)
+        if not cats_to_convert:
+            print(f"Something was indicated in convert, but no cats were indicated: {self.cats_to_convert}")
+            return ""
+        
+        
+        results = []
+        for _cat in cats_to_convert:
+            results.append(f"{_cat.name} has joined the Dark Forest.")
+            _cat.joined_df = True
             
         return " ".join(results)
     
