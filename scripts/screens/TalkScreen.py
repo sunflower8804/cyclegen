@@ -1718,7 +1718,13 @@ class TalkScreen(Screens):
                 text = text.replace("df_m_n", str(Cat.all_cats.get(you.df_mentor).name))
             else:
                 return ""
-            
+        # Their mentor
+        if "t_mn" in text or "tm_n" in text:
+            if cat.mentor is None:
+                return ""
+            text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
+            text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
+                
         # Your mentor
         if "m_n" in text:
             if you.mentor is None or you.mentor == cat.ID:
@@ -1732,12 +1738,7 @@ class TalkScreen(Screens):
             else:
                 return ""
         
-        # Their mentor
-        if "t_mn" in text or "tm_n" in text:
-            if cat.mentor is None:
-                return ""
-            text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
-            text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
+        
         
         # Clan leader's name
         if "l_n" in text:
