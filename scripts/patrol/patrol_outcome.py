@@ -468,7 +468,7 @@ class PatrolOutcome():
         return " ".join(results)
     
     def _handle_df_convert(self, patrol:'Patrol') -> str:
-        """ Handle losing cats """
+        """ Handle converting cats to the DF in DF patrols """
         
         if not self.convert:
             return ""
@@ -499,7 +499,7 @@ class PatrolOutcome():
         
         cats_to_convert = gather_cat_objects(self.convert, patrol)
         if not cats_to_convert:
-            print(f"Something was indicated in convert, but no cats were indicated: {self.cats_to_convert}")
+            print(f"Something was indicated in convert, but no cats were indicated: {self.convert}")
             return ""
         
         
