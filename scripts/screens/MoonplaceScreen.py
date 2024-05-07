@@ -170,8 +170,12 @@ class MoonplaceScreen(Screens):
         for leaf in leaves:
             if game.clan.biome == "Forest":
                 platform_dir = "resources/images/moonplace/moonhollow.png"
-            elif game.clan.biome == "Plains":
-                platform_dir = "resources/images/moonplace/moongrove.png"
+            # elif game.clan.biome == "Plains":
+            #     platform_dir = "resources/images/moonplace/moongrove.png"
+            # elif game.clan.biome == "Beach":
+            #     platform_dir = "resources/images/moonplace/mooncove.png"
+            # elif game.clan.biome == "Mountainous":
+            #     platform_dir = "resources/images/moonplace/moonplace1.png"
             else:
                 platform_dir = "resources/images/moonplace/moonplace1.png"
             
