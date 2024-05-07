@@ -320,10 +320,8 @@ class MurderScreen(Screens):
             game.clan.leader_lives = 0
         cat_to_murder.die()
         game.cur_events_list.insert(0, Single_Event(ceremony_txt))
-        # discover_chance = self.get_discover_chance(you, cat_to_murder, accomplice, accompliced)
-        discover_chance = 2
-        # r_num = randint(1,100)
-        r_num = 1
+        discover_chance = self.get_discover_chance(you, cat_to_murder, accomplice, accompliced)
+        r_num = randint(1,100)
         discovered = False
         if r_num < discover_chance:
             discovered = True
