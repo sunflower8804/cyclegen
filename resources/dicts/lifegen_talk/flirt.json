@@ -2507,5 +2507,47 @@
             "[t_c opens their maws and snarls at you]",
             "How <b>dare</b> you y_c. How dare you think you can replace d_c!"
         ]
+    ],
+    "grieving_flirt_reuse432": [
+        [
+            "Any",
+            "they_grieving",
+            "you_shunned"
+        ],
+        [
+            "Um, thank you... but I'm... I'm still processing things."
+        ]
+    ],
+    "grieving_flirt_reuse5121": [
+        [
+            "Any",
+            "they_grieving",
+            "you_shunned",
+            "reject"
+        ],
+        [
+            "Not the time or the place. Move along."
+        ]
+    ],
+    "grieving_flirt_reuse41": [
+        [
+            "Any",
+            "they_shunned",
+            "you_grieving"
+        ],
+        [
+            "Um, thank you... but I'm... I'm still processing things."
+        ]
+    ],
+    "grieving_flirt_reuse511": [
+        [
+            "Any",
+            "they_shunned",
+            "you_grieving",
+            "reject"
+        ],
+        [
+            "Not the time or the place. Move along."
+        ]
     ]
 }
