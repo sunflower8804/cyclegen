@@ -2290,9 +2290,9 @@ class Events:
 
                     # change personality facets
                     cat.personality.aggression = min(max(cat.personality.aggression + (-1*cat.courage)%2, 0), 15)
-                    cat.personality.sociability = min(max(cat.personality.aggression + (-1*cat.compassion)%2, 0), 15)
-                    cat.personality.lawfulness = min(max(cat.personality.aggression + (-1*cat.intelligence)%2, 0), 15)
-                    cat.personality.stability = min(max(cat.personality.aggression + (-1*cat.empathy)%2, 0), 15)
+                    cat.personality.sociability = min(max(cat.personality.sociability + (-1*cat.compassion)%2, 0), 15)
+                    cat.personality.lawfulness = min(max(cat.personality.lawfulness + (-1*cat.intelligence)%2, 0), 15)
+                    cat.personality.stability = min(max(cat.personality.stability + (-1*cat.empathy)%2, 0), 15)
 
                     med_cat_list = [i for i in Cat.all_cats_list if
                                     i.status in ["medicine cat", "medicine cat apprentice"] and not (
