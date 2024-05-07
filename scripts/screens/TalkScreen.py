@@ -1528,7 +1528,7 @@ class TalkScreen(Screens):
                     return ""
                 counter = 0
                 sibling = Cat.fetch_cat(choice(cat.inheritance.get_siblings()))
-                while sibling.outside or sibling.dead or sibling.ID == cat.ID or ("t_l" in text and sibling.moons != cat.moons):
+                while sibling.outside or sibling.dead or sibling.ID == game.clan.your_cat.ID or sibling.ID == cat.ID or ("t_l" in text and sibling.moons != cat.moons):
                     counter+=1
                     if counter > COUNTER_LIM:
                         return ""
