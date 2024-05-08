@@ -1102,10 +1102,13 @@ class TalkScreen(Screens):
         weighted_tags = ["you_pregnant", "they_pregnant", "from_mentor", "from_your_parent", "from_adopted_parent", "adopted_parent", "half sibling", "littermate", "siblings_mate", "cousin", "adopted_sibling", "parents_siblings", "from_mentor", "from_your_kit", "from_your_apprentice", "from_mate", "from_parent", "adopted_parent", "from_kit", "sibling", "from_adopted_kit", "they_injured", "they_ill", "you_injured", "you_ill", "you_grieving", "you_forgiven", "they_forgiven", "murderedyou", "murderedthem"]
         for item in texts_list.values():
             tags = item["tags"] if "tags" in item else item[0]
-            num_fam_mentor_tags = 1
+            weight = 1
             if any(i in weighted_tags for i in tags):
-                num_fam_mentor_tags+=3
-            weights2.append(num_fam_mentor_tags)
+                weight+=3
+            if "focus" in tags:
+                weight+=10
+            weights2.append(weight)
+
 
         if "debug_ensure_dialogue" in game.config and game.config["debug_ensure_dialogue"]:
             if game.config["debug_ensure_dialogue"] in list(texts_list.keys()):
