@@ -386,6 +386,7 @@ class Events:
         game.clan.exile_return = False
         
         self.check_achievements()
+        self.generate_dialogue_focus()
         self.checks = [len(game.clan.your_cat.apprentice), len(game.clan.your_cat.mate), len(game.clan.your_cat.inheritance.get_blood_kits()), None]
         if game.clan.leader:
             self.checks[3] = game.clan.leader.ID
@@ -409,6 +410,35 @@ class Events:
     
     def add_freshkill(self):
         game.clan.freshkill_pile.add_freshkill(game.clan.freshkill_pile.amount_food_needed())
+
+
+    def generate_dialogue_focus(self):
+        resource_dir = "resources/dicts/"
+        with open(f"{resource_dir}dialogue_focuses.json",
+                encoding="ascii") as read_file:
+            dialogue_focuses = ujson.loads(read_file.read())
+        
+        # Handle lost focus for conditional focuses that have no set duration
+        if game.clan.focus == "war" and game.clan.war.get("at_war", False):
+            game.clan.focus = ""
+            game.clan.focus_moons = 0
+
+        # Handle lost focus for focuses that have set duration
+        if game.clan.focus and dialogue_focuses[game.clan.focus]["duration"] != -1 and game.clan.focus_moons >= dialogue_focuses[game.clan.focus]["duration"]:
+            game.clan.focus = ""
+            game.clan.focus_moons = 0
+
+        if not game.clan.focus:
+            if game.clan.war.get("at_war", True):
+                game.clan.focus = "war"
+            elif random.randint(1,20) == 1:
+                game.clan.focus = random.choice(["valentines"])
+
+        if game.clan.focus:
+            game.clan.focus_moons += 1
+            if game.clan.focus_moons == 1 and dialogue_focuses[game.clan.focus]["moon_event"]:
+                game.cur_events_list.append(Single_Event(self.adjust_txt(random.choice(dialogue_focuses[game.clan.focus]["moon_event"])), "misc"))
+
                 
     def gain_acc(self):
         possible_accs = ["WILD", "PLANT", "COLLAR", "FLOWER", "PLANT2", "SNAKE", "SMALLANIMAL", "DEADINSECT", "ALIVEINSECT", "FRUIT", "CRAFTED", "TAIL2"]
@@ -3546,101 +3576,7 @@ class Events:
         resource_dir = "resources/dicts/events/disasters/"
         disaster_text = {}
         with open(f"{resource_dir}forest.json",
-                  encoding="ascii") as read_file:
-            disaster_text = ujson.loads(read_file.read())
-        current_disaster = disaster_text.get(game.clan.second_disaster)
-        current_moon = game.clan.second_disaster_moon
-        if current_moon > 0 and current_moon < current_disaster["duration"]:
-            event_string = random.choice(current_disaster["progress_events"]["moon" + str(current_moon)])
-            event_string = ongoing_event_text_adjust(Cat, event_string)
-            game.clan.second_disaster_moon += 1
-            game.cur_events_list.append(
-                        Single_Event(event_string, "alert"))
-        elif current_moon == current_disaster["duration"]:
-            event_string = random.choice(current_disaster["conclusion_events"])
-            game.clan.second_disaster_moon = 0
-            game.clan.second_disaster = ""
-            event_string = ongoing_event_text_adjust(Cat, event_string)
-            game.cur_events_list.append(
-                        Single_Event(event_string, "alert"))
-
-    def handle_disaster(self):
-        if not game.clan.disaster:
-            return
-
-        resource_dir = "resources/dicts/events/disasters/"
-        disaster_text = {}
-        with open(f"{resource_dir}forest.json",
-                  encoding="ascii") as read_file:
-            disaster_text = ujson.loads(read_file.read())
-        
-        current_disaster = disaster_text.get(game.clan.disaster)
-        current_moon = game.clan.disaster_moon
-        if current_moon == 0:
-            event_string = random.choice(current_disaster["trigger_events"])
-            game.clan.disaster_moon += 1
-        elif current_moon < current_disaster["duration"]:
-            event_string = random.choice(current_disaster["progress_events"]["moon" + str(current_moon)])
-            game.clan.disaster_moon += 1
-            self.handle_disaster_impacts(current_disaster)
-            if random.randint(1,30) == 1 and not game.clan.second_disaster and current_disaster["secondary_disasters"]:
-                game.clan.second_disaster = random.choice(list(current_disaster["secondary_disasters"].keys()))
-                secondary_event_string = random.choice(current_disaster["secondary_disasters"][game.clan.second_disaster]["trigger_events"])
-                secondary_event_string = ongoing_event_text_adjust(Cat, secondary_event_string)
-                game.cur_events_list.append(
-                        Single_Event(secondary_event_string, "alert"))
-        else:
-            event_string = random.choice(current_disaster["conclusion_events"])
-            game.clan.disaster_moon = 0
-            game.clan.disaster = ""
-        
-        event_string = ongoing_event_text_adjust(Cat, event_string)
-        game.cur_events_list.append(
-                        Single_Event(event_string, "alert"))
-        if game.clan.second_disaster:
-            self.handle_second_disaster()
-    
-    def handle_disaster_impacts(self, current_disaster):      
-        for i in range(random.randint(0,2)):
-            cat = Cat.all_cats.get(random.choice(game.clan.clan_cats))
-            for j in range(20):
-                if cat.outside or cat.dead or cat.moons < 6:
-                    cat = Cat.all_cats.get(random.choice(game.clan.clan_cats))
-                else:
-                    break
-            if cat.outside or cat.dead or cat.moons < 6:
-                return
-            if current_disaster["collateral_damage"]:
-                if random.randint(1,10) == 1:
-                    if random.randint(1,5) == 1:
-                        herbs = game.clan.herbs.copy()
-                        for herb in herbs:
-                            adjust_by = random.choices([-3, -2, -1], [1, 2, 3],
-                                                    k=1)
-                            game.clan.herbs[herb] += adjust_by[0]
-                            if game.clan.herbs[herb] <= 0:
-                                game.clan.herbs.pop(herb)
-                    if random.randint(1,5) == 1:
-                        game.clan.freshkill_pile.total_amount = game.clan.freshkill_pile.total_amount * 0.7
-                if random.randint(1,10) != 1:
-                    if "injuries" in current_disaster["collateral_damage"]:
-                        cat.get_injured(random.choice(current_disaster["collateral_damage"]["injuries"]))
-                else:
-                    if "deaths" in current_disaster["collateral_damage"]:
-                        if cat.status == "leader":
-                            History.add_death(cat, death_text=current_disaster["collateral_damage"]["deaths"]["history_text"]["reg_death"][4:])
-                        else:
-                            History.add_death(cat, death_text=current_disaster["collateral_damage"]["deaths"]["history_text"]["reg_death"])
-                        cat.die()
-                        death_text = random.choice(current_disaster["collateral_damage"]["deaths"]["death_text"]).replace("m_c", str(cat.name)).replace("c_n", str(game.clan.name) + "Clan")
-                        game.cur_events_list.append(
-                            Single_Event(death_text, "birth_death", cat.ID))
-
-    def handle_second_disaster(self):
-        resource_dir = "resources/dicts/events/disasters/"
-        disaster_text = {}
-        with open(f"{resource_dir}forest.json",
-                  encoding="ascii") as read_file:
+                encoding="ascii") as read_file:
             disaster_text = ujson.loads(read_file.read())
         current_disaster = disaster_text.get(game.clan.second_disaster)
         current_moon = game.clan.second_disaster_moon

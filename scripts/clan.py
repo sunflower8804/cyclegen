@@ -135,6 +135,8 @@ class Clan():
         self.affair = False
         self.achievements = []
         self.talks = []
+        self.focus = ""
+        self.focus_moons = 0
         
         # Init Settings
         self.clan_settings = {}
@@ -529,6 +531,8 @@ class Clan():
         clan_data['talks'] = self.talks
         clan_data["disaster"] = self.disaster
         clan_data["disaster_moon"] = self.disaster_moon
+        clan_data["focus"] = self.focus
+        clan_data["focus_moons"] = self.focus_moons
 
         if "other_med" in game.switches:
             other_med = []
@@ -910,6 +914,12 @@ class Clan():
         
         if "disaster_moon" in clan_data:
             game.clan.disaster_moon = clan_data["disaster_moon"]
+
+        if "focus" in clan_data:
+            game.clan.focus = clan_data["focus"]
+
+        if "focus_moons" in clan_data:
+            game.clan.focus_moons = clan_data["focus_moons"]
 
         if "other_med" in clan_data:
             other_med = []

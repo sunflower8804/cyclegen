@@ -392,6 +392,11 @@ class TalkScreen(Screens):
                     possible_texts3 = ujson.loads(read_file.read())
                     possible_texts.update(possible_texts3)
 
+            if game.clan.focus:
+                with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
+                    possible_texts5 = ujson.loads(read_file.read())
+                    possible_texts.update(possible_texts5)
+
         return self.filter_texts(cat, possible_texts)
 
 
