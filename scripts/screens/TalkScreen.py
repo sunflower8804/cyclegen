@@ -828,6 +828,9 @@ class TalkScreen(Screens):
                 if "siblings_mate" in tags:
                     if cat.ID in you.inheritance.get_siblings_mates():
                         fam = True
+                if "grandparent" in tags:
+                    if cat.is_grandparent(game.clan.your_cat):
+                        fam = True
                 if not fam:
                     continue
 
