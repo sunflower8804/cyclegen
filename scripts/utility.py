@@ -817,7 +817,7 @@ def change_relationship_values(cats_to: list,
 def get_cluster(trait):
         # Mapping traits to their respective clusters
         trait_to_clusters = {
-            "assertive": ["troublesome", "fierce", "bold", "daring", "confident", "adventurous", "arrogant", "competitive", "smug", "impulsive", "noisy"],
+            "assertive": ["fierce", "bold", "daring", "confident", "adventurous", "arrogant", "competitive", "smug", "impulsive", "noisy"],
             "brooding": ["bloodthirsty", "cold", "strict", "vengeful", "grumpy", "bullying", "secretive", "aloof", "stoic", "reserved"],
             "cool": ["charismatic", "sneaky", "cunning", "arrogant", "charming", "manipulative", "leader-like", "passionate", "witty", "flexible", "mellow"],
             "upstanding": ["righteous", "ambitious", "strict", "competitive", "responsible", "bossy", "know-it-all", "leader-like", "smug", "loyal", "justified", "methodical"],
@@ -827,7 +827,7 @@ def get_cluster(trait):
             "stable": ["loyal", "responsible", "wise", "faithful", "polite", "disciplined", "patient", "passionate", "witty", "trusting"],
             "sweet": ["compassionate", "faithful", "loving", "oblivious", "sincere", "sweet", "polite", "daydreamer", "trusting", "humble", "emotional"],
             "unabashed": ["childish", "confident", "bold", "shameless", "strange", "oblivious", "flamboyant", "impulsive", "noisy", "honest", "spontaneous"],
-            "unlawful": ["bloodthirsty", "sneaky", "rebellious", "manipulative", "obsessive", "aloof", "stoic"]
+            "unlawful": ["bloodthirsty", "sneaky", "rebellious", "manipulative", "obsessive", "aloof", "stoic", "cunning", "troublesome"]
         }
         clusters = [key for key, values in trait_to_clusters.items() if trait in values]
 
