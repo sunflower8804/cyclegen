@@ -346,6 +346,11 @@
 			"adult": 8,
 			"senior": 8	
 			},
-		"max_shunned_moons": 10
+		"max_shunned_moons": 10,
+		"return_home_chance": 0,
+		"comment": [
+		"Newborns have an exile_chance in case one of you sick freaks (/lhj) decides to save edit them to be shunned.",
+		"Leaving return_home_chance at zero will keep the game's default chances."
+	]
 	}
 }
