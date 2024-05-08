@@ -260,9 +260,9 @@ class Events:
         game.just_died.clear()
 
         for cat in Cat.all_cats.copy().values():
-            if cat.shunned == 1:
+            if cat.shunned == 2:
                 if cat.status == "leader":
-                    string = f"Due to the cries of outrage from their Clan after the reveal of their crime, {game.clan.leader.name} has stepped down as leader of {game.clan.name}Clan."
+                    string = f"Due to the cries of outrage from their Clan after the reveal of their crime, {cat.name} has stepped down as leader of {game.clan.name}Clan."
                     cat.specsuffix_hidden = True
                     game.clan.leader_lives = 1
                     # ^^ to keep the leader status for dialogue but take away "star".
@@ -270,7 +270,7 @@ class Events:
                     game.cur_events_list.insert(0, Single_Event(string, "alert"))
 
                 elif cat.status == "deputy":
-                    string = f"{game.clan.leader.name} has thrown {game.clan.deputy.name} from their position as {game.clan.name}Clan's deputy."
+                    string = f"{game.clan.leader.name} has thrown {cat.name} from their position as {game.clan.name}Clan's deputy."
                     game.cur_events_list.insert(0, Single_Event(string, "alert"))
                 
                 elif cat.status in ["medicine cat", "medicine cat apprentice"]:
@@ -290,8 +290,6 @@ class Events:
                     string = f"{cat.name} has been shunned from the Clan."
                     
                     game.cur_events_list.insert(0, Single_Event(string, "alert"))
-
-            
 
         # Promote leader and deputy, if needed.
         self.check_and_promote_leader()
@@ -1315,9 +1313,9 @@ class Events:
     
     def check_leader(self, checks):
         if game.clan.leader:
-            if checks[3] != game.clan.leader.ID and game.clan.your_cat.status == 'leader' and not game.switches['window_open']:
+            if checks[3] != game.clan.leader.ID and game.clan.your_cat.status == 'leader' and not game.switches['window_open'] and game.clan.your_cat.shunned == 0:
                 DeputyScreen('events screen')
-            elif checks[3] != game.clan.leader.ID and game.clan.your_cat.status == 'leader':
+            elif checks[3] != game.clan.leader.ID and game.clan.your_cat.status == 'leader' and game.clan.your_cat.shunned == 0:
                 game.switches['windows_dict'].append('deputy')
             
             
@@ -2245,7 +2243,7 @@ class Events:
                 else:
                 # Max number of moons a cat can be shunned before the clan makes up their damn mind
                 # Currently ten, but it was also roll if its set to more than that in a cat's save
-                    if cat.shunned > 9:
+                    if cat.shunned >= game.config["shunned_cat"]["max_shunned_moons"]:
                         self.exile_or_forgive(cat)
         
         if cat.status == 'leader' and cat.shunned > 0 and cat.name.specsuffix_hidden is False:
@@ -3739,20 +3737,14 @@ class Events:
             self.b_txt = ujson.loads(read_file.read())
         if cat.shunned > 2:
             involved_cats = []
+
             if game.clan.your_cat.ID == cat.ID:
-                fate = random.randint(1,6)
+                fate = random.randint(1, int((game.config["shunned_cat"]["exile_chance"][cat.age]) * 1.75))
             else:
-                if cat.moons > 40:
-                    fate = random.randint(1,15)
-                elif cat.moons > 12:
-                    fate = random.randint(1,10)
-                elif cat.moons > 6:
-                    fate = random.randint(1,6)
-                else:
-                    fate = random.randint(1,3)
+                fate = random.randint(1, int(game.config["shunned_cat"]["exile_chance"][cat.age]))
 
             # these numbers are kind of crazy but i wanted to keep the one randint
-            if fate in [1, 2, 3, 5, 6, 10, 11]:
+            if fate != 1:
                 cat.shunned = 0
                 cat.forgiven = game.clan.age
                 cat.exiled = False
@@ -3842,7 +3834,7 @@ class Events:
 
                 game.cur_events_list.insert(0, Single_Event(text, "alert", involved_cats))
 
-            elif fate in [7, 12]:
+            elif fate == 2 and cat.ID != game.clan.your_cat.ID:
                 cat.outside = True
                 cat.status = "former Clancat"
                 game.clan.add_to_outside(cat)
@@ -3988,19 +3980,20 @@ class Events:
                                         f"They don't know if {game.clan.deputy.name} would approve, "
                                         f"but life must go on. "
                                     ])
-                                elif game.clan.deputy.shunned > 0:
+                                elif game.clan.deputy.shunned == 2:
                                     previous_deputy_mention = f"Since {game.clan.deputy.name}'s crime was revealed, a new cat must be chosen to take their place."
                                 
 
                                 else:
-                                    text = "whoooaa"
+                                    text = "Error!"
+                                    previous_deputy_mention = "Report as bug."
                                 involved_cats.append(game.clan.deputy.ID)
 
                                 if game.clan.deputy.outside or game.clan.deputy.dead:
                                     text = f"{game.clan.leader.name} chooses " \
                                         f"{random_cat.name} to take over " \
                                         f"as deputy. " + previous_deputy_mention
-                                elif game.clan.deputy.shunned > 0:
+                                elif game.clan.deputy.shunned == 2:
                                     text = previous_deputy_mention + f" {game.clan.leader.name} chooses " \
                                         f"{random_cat.name} to take over " \
                                         f"as deputy."

@@ -1843,7 +1843,7 @@
             "you_shunned",
             "they_blind",
             "you_blind",
-            "flirt"
+            "reject"
         ],
         [
             "Ew. Why would you say that to anycat, given your situation?",
@@ -1856,7 +1856,7 @@
             "you_shunned",
             "they_blind",
             "you_blind",
-            "flirt"
+            "reject"
         ],
         [
             "Please don't say that to me right now."
@@ -1868,7 +1868,6 @@
             "you_shunned",
             "they_blind",
             "you_blind",
-            "flirt",
             "they_deaf"
         ],
         [
@@ -1881,7 +1880,6 @@
             "you_shunned",
             "they_blind",
             "you_blind",
-            "flirt",
             "from_mate"
         ],
         [
@@ -1894,7 +1892,6 @@
             "you_shunned",
             "they_blind",
             "you_blind",
-            "flirt",
             "from_mate",
             "they_deaf",
             "you_deaf"
@@ -1908,8 +1905,7 @@
             "Any",
             "you_shunned",
             "they_blind",
-            "you_blind",
-            "flirt"
+            "you_blind"
         ],
         [
             "You're very cruel, y_c."
@@ -1920,8 +1916,7 @@
             "Any",
             "you_shunned",
             "they_blind",
-            "you_blind",
-            "flirt"
+            "you_blind"
         ],
         [
             "No, no, don't do that. Not now."
@@ -1932,8 +1927,7 @@
             "Any",
             "you_shunned",
             "they_blind",
-            "you_blind",
-            "flirt"
+            "you_blind"
         ],
         [
             "Maybe I could have liked you if you weren't so evil."
@@ -1944,8 +1938,7 @@
             "Any",
             "they_shunned",
             "they_blind",
-            "you_blind",
-            "flirt"
+            "you_blind"
         ],
         [
             "Oh, um... thank you..."
@@ -1957,8 +1950,7 @@
             "they_shunned",
             "grievingyou",
             "they_blind",
-            "you_blind",
-            "flirt"
+            "you_blind"
         ],
         [
             "What's going on..?"
@@ -1969,8 +1961,7 @@
             "Any",
             "grievingyou",
             "they_blind",
-            "you_blind",
-            "flirt"
+            "you_blind"
         ],
         [
             "What's going on..?"
@@ -1982,8 +1973,7 @@
             "they_shunned",
             "they_grieving",
             "they_blind",
-            "you_blind",
-            "flirt"
+            "you_blind"
         ],
         [
             "What's going on..?"
@@ -1994,11 +1984,42 @@
             "Any",
             "they_grieving",
             "they_blind",
-            "you_blind",
-            "flirt"
+            "you_blind"
         ],
         [
             "What's going on..?"
+        ]
+    ],
+    "flirt_sh_J38": [
+        [
+            "Any",
+            "both_shunned",
+            "they_blind",
+            "you_blind",
+            "reject"
+        ],
+        [
+            "Ugh... Not now..."
+        ]
+    ],
+    "flirt_sh_J39": [
+        [
+            "Any",
+            "reject",
+            "you_shunned"
+        ],
+        [
+            "Ugh..."
+        ]
+    ],
+    "flirt_sh_J40": [
+        [
+            "Any",
+            "reject",
+            "they_shunned"
+        ],
+        [
+            "Ugh..."
         ]
     ],
     "flirting_shunned_CM1": [
@@ -2069,6 +2090,20 @@
             "You aren't allowed to <i>talk</i> to me, let alone say something like that.",
             "I might not be a murderer, but I still know how to use these claws.",
             "Remember that next time you even <i>think</i> about opening your mouth."
+        ]
+    ],
+    "flirt_sh_J41": [
+        [
+            "Ugh..."
+        ]
+    ],
+    "flirt_sh_J42": [
+        [
+            "Any",
+            "they_shunned"
+        ],
+        [
+            "Ugh..."
         ]
     ],
     "flirting_shunned_SQ4": [

@@ -433,5 +433,22 @@
 	"affair_relationship_change_ub": 30,
 	"murder_chance":-1,
 	"accomplice_chance":-1,
-	"debug_ensure_dialogue": ""
+	"debug_ensure_dialogue": "",
+
+	"shunned_cat": {
+		"exile_chance": {
+			"newborn": 500,
+			"kitten": 45,
+			"adolescent": 20,
+			"young adult": 10,
+			"adult": 8,
+			"senior": 8	
+			},
+		"max_shunned_moons": 10,
+		"return_home_chance": 0,
+		"comment": [
+		"Newborns have an exile_chance in case one of you sick freaks (/lhj) decides to save edit them to be shunned.",
+		"Leaving return_home_chance at zero will keep the game's default chances."
+	]
+	}
 }

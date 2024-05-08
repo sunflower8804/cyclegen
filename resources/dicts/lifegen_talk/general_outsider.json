@@ -424,5 +424,16 @@
             "No matter that I wasn't one of you in life, if I ended up here... It must be my duty to protect you.",
             "So I will."
         ]
+    ],
+    "dead_outsider_J19": [
+        [
+            "they_dead",
+            "you_dead",
+            "newborn"
+        ],
+        [
+            "Oh, goodness...",
+            "I'm sorry you have to be here, little guy."
+        ]
     ]
 }

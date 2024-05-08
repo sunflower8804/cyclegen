@@ -173,7 +173,10 @@ class TalkScreen(Screens):
             if self.the_cat.dead and self.the_cat.outside and not self.the_cat.df:
                 platform_dir = "resources/images/urbg.png"
             elif self.the_cat.dead and not self.the_cat.outside and not self.the_cat.df:
-                platform_dir = "resources/images/starclanbg.png"
+                if game.clan.biome == "Forest":
+                    platform_dir = "resources/images/dead_camps/sunsetclouds.png"
+                else:
+                    platform_dir = "resources/images/starclanbg.png"
             elif self.the_cat.dead and not self.the_cat.outside and self.the_cat.df:
                 platform_dir = "resources/images/darkforestbg.png"
             else:

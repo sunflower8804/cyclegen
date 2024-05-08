@@ -489,14 +489,14 @@ class Cat():
                                 self.df = True
                                 self.thought = "Is startled to find themselves wading in the muck of a shadowed forest"
                                 game.clan.add_to_darkforest(self)
-
-                if self.shunned > 0 and self.forgiven > 1:
-                    self.df = True
-                    self.thought = "Is startled to find themselves wading in the muck of a shadowed forest"
-                    game.clan.add_to_darkforest(self)
-                elif self.shunned == 0 and self.forgiven > 0:
-                    self.thought = "Is shocked they made it into StarClan"
-                    game.clan.add_to_starclan(self)
+                if not self.df:
+                    if self.shunned > 0 and self.forgiven > 1:
+                        self.df = True
+                        self.thought = "Is startled to find themselves wading in the muck of a shadowed forest"
+                        game.clan.add_to_darkforest(self)
+                    elif self.shunned == 0 and self.forgiven > 0:
+                        self.thought = "Is shocked they made it into StarClan"
+                        game.clan.add_to_starclan(self)
             
         else:
             self.thought = "Is fascinated by the new ghostly world they've stumbled into"
@@ -515,6 +515,7 @@ class Cat():
         status."""
         self.exiled = True
         self.outside = True
+        self.shunned = 0
         self.status = 'exiled'
         if self.personality.trait == 'vengeful':
             self.thought = "Swears their revenge for being exiled"
@@ -593,10 +594,37 @@ class Cat():
         acceptchance = randint(1,5)
         killchance = randint(1,50)
         if you.exiled:
+            return_home_upperbound = int(game.config["shunned_cat"]["return_home_chance"])
 
             if num_victims == 0:
                 acceptchance = randint (1,4)
                 killchance = randint(1,40)
+            
+            elif num_victims == 1: # one victim
+                acceptchance = randint(1,8)
+                killchance = randint(1,30)
+
+            elif num_victims < 4: # 2-3 victims
+                acceptchance = randint(1,15)
+                killchance = randint(1,30)
+
+            elif num_victims < 7: # 4-6 victims
+                acceptchance = randint(1,30)
+                killchance = randint(1,30)
+
+            elif num_victims < 10: # 7-9 victims
+                acceptchance = randint(1,30)
+                killchance = randint(1,12)
+
+            else: # 10+ victims?????!!?!
+                acceptchance = randint(1,40)
+                killchance = randint(1,10)
+
+        elif you.status in ["loner", "rogue", "kittypet", "former Clancat"]:
+        # can only be former clancat rn but this is just to cover bases 4 the future
+            if num_victims == 0:
+                acceptchance = randint(1,3)
+                killchance = randint(1,50)
             
             elif num_victims == 1: # one victim
                 if nice:
@@ -641,6 +669,7 @@ class Cat():
                 else:
                     acceptchance = randint(1,30)
                     killchance = randint(1,12)
+
             else: # 10+ victims?????!!?!
                 if nice:
                     acceptchance = randint (1,35)
@@ -652,65 +681,11 @@ class Cat():
                     acceptchance = randint(1,40)
                     killchance = randint(1,10)
 
-        elif you.status in ["loner", "rogue", "kittypet", "former Clancat"]:
-        # can only be former clancat rn but this is just to cover bases 4 the future
-            if num_victims == 0:
-                acceptchance = randint(1,3)
-                killchance = randint(1,50)
-            
-            elif num_victims == 1: # one victim
-                if nice:
-                    acceptchance = randint (1,4)
-                    killchance = randint(1,40)
-                elif naughty:
-                    acceptchance = randint(1,8)
-                    killchance = randint(1,30)
-                else:
-                    acceptchance = randint(1,6)
-                    killchance = randint(1,30)
+        if return_home_upperbound > 0:
+            acceptchance = randint(1, return_home_upperbound)
 
-            elif num_victims < 4: # 2-3 victims
-                if nice:
-                    acceptchance = randint (1,8)
-                    killchance = randint(1,35)
-                elif naughty:
-                    acceptchance = randint(1,15)
-                    killchance = randint(1,22)
-                else:
-                    acceptchance = randint(1,10)
-                    killchance = randint(1,30)
-
-            elif num_victims < 7: # 4-6 victims
-                if nice:
-                    acceptchance = randint (1,10)
-                    killchance = randint(1,30)
-                elif naughty:
-                    acceptchance = randint(1,25)
-                    killchance = randint(1,15)
-                else:
-                    acceptchance = randint(1,20)
-                    killchance = randint(1,30)
-
-            elif num_victims < 10: # 7-9 victims
-                if nice:
-                    acceptchance = randint (1,20)
-                    killchance = randint(1,20)
-                elif naughty:
-                    acceptchance = randint(1,30)
-                    killchance = randint(1,10)
-                else:
-                    acceptchance = randint(1,20)
-                    killchance = randint(1,12)
-            else: # 10+ victims?????!!?!
-                if nice:
-                    acceptchance = randint (1,35)
-                    killchance = randint(1,15)
-                elif naughty:
-                    acceptchance = randint(1,35)
-                    killchance = randint(1,8)
-                else:
-                    acceptchance = randint(1,30)
-                    killchance = randint(1,10)
+        # print("RETURN CHANCES: ", return_home_upperbound)
+        # print("RNG: ", acceptchance)
 
         if you.exiled:
             event_text = f"You muster up your courage and turn to walk back home, hoping that your Clanmates will be able to forgive you. At the {game.clan.name}Clan border, you sit and wait for a patrol. <br>"

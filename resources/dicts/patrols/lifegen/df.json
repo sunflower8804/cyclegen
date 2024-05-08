@@ -696,7 +696,7 @@
         "weight": 20,
         "intro_text": "As you go for a stroll around the Dark Forest, just enjoying the gloomy forest before training begins, you stumble upon a confused r_c. They look up at you, panicked, as they ask where they are.",
         "decline_text": "Meh. Not your business. You walk away, leaving them startled, confused and sputtering out your name.",
-        "chance_of_success": 10,
+        "chance_of_success": 90,
         "success_outcomes": [
             {
                 "text": "You explain that you're both in the Dark Forest, where you can train to become stronger. You offer to bring them to the training area, if they'd like to join you. r_c agrees hesitantly, following your lead.",
@@ -710,7 +710,8 @@
                         "values": ["comfort", "trust"],
                         "amount": 2
                     }
-                ]
+                ],
+                "convert": ["r_c"]
             },
             {
                 "text": "You explain that you're both in the Dark Forest, where you can train to become stronger. You offer to bring them to the training area if they'd like to join you. r_c trusts you, so they eagerly follow your lead.",
@@ -725,7 +726,8 @@
                         "values": ["comfort", "trust"],
                         "amount": 5
                     }
-                ]
+                ],
+                "convert": ["r_c"]
             },
             {
                 "text": "You explain that you're both in the Dark Forest, where you can train to become stronger. You offer to bring them to the training area, if they'd like to join you. r_c hesitates before shaking their head in refusal. Their loss, you suppose. You let them find their own way out as you proceed to the training grounds.",
