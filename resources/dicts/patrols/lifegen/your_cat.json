@@ -8,12 +8,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "herb_gathering",
-            "med_only"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 3,

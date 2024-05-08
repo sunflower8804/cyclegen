@@ -8,11 +8,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -45,11 +43,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 5,
@@ -82,11 +78,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 4,
@@ -119,11 +113,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training"
-        ],
+        "tags": [],
         "patrol_art": "lg_app4",
         "min_cats": 1,
         "max_cats": 2,
@@ -139,8 +131,12 @@
                 "weight": 20,
                 "accessory": [
                     {
-                        "cats": ["p_l"],
-                        "accessory": ["LEAF"]
+                        "cats": [
+                            "p_l"
+                        ],
+                        "accessory": [
+                            "LEAF"
+                        ]
                     }
                 ]
             }
@@ -162,11 +158,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training"
-        ],
+        "tags": [],
         "patrol_art": "lg_app5",
         "min_cats": 1,
         "max_cats": 2,
@@ -199,11 +193,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -236,11 +228,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 5,
@@ -273,11 +263,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 1,
@@ -310,11 +298,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training"
-        ],
+        "tags": [],
         "patrol_art": "lg_app9",
         "min_cats": 1,
         "max_cats": 2,
@@ -347,11 +333,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 3,
@@ -384,11 +368,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -421,11 +403,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -458,11 +438,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_app13",
         "min_cats": 1,
         "max_cats": 1,
@@ -495,11 +473,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -532,11 +508,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_app15",
         "min_cats": 1,
         "max_cats": 2,
@@ -569,11 +543,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -606,11 +578,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -643,11 +613,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -680,11 +648,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_app19",
         "min_cats": 1,
         "max_cats": 2,
@@ -717,12 +683,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -755,12 +718,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "lifegen_app21,23,24",
         "min_cats": 1,
         "max_cats": 2,
@@ -793,12 +753,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -831,12 +788,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "lifegen_app21,23,24",
         "min_cats": 1,
         "max_cats": 2,
@@ -869,12 +823,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "lifegen_app21,23,24",
         "min_cats": 1,
         "max_cats": 2,
@@ -907,12 +858,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -945,12 +893,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -983,12 +928,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -1021,12 +963,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -1059,12 +998,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -1097,12 +1033,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -1135,12 +1068,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training",
-            "apprentice"
-        ],
+        "tags": [],
         "patrol_art": "gen_hunt_mouse",
         "min_cats": 1,
         "max_cats": 2,
@@ -1173,10 +1103,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
         "tags": [
-            "training",
             "bloodthirsty_only"
         ],
         "patrol_art": "patrolartapp_clawsout",
