@@ -1081,6 +1081,10 @@ class Events:
                 text = text.replace("o_c", str(other_clan.name))
             if "c_n" in text:
                 text = text.replace("c_n", str(game.clan.name))
+            if "w_c" in text:
+                if game.clan.war.get("at_war", False):
+                    return ""
+                text = text.replace("w_c", str(game.clan.war["enemy"]))
             return text
         except:
             return ""

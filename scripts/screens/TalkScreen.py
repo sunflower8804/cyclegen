@@ -1905,5 +1905,9 @@ class TalkScreen(Screens):
                 random_cat = choice(self.get_living_cats())
                 counter +=1
             text = text.replace("sh_l", str(random_cat.name))
+        if "w_c" in text:
+            if game.clan.war.get("at_war", False):
+                return ""
+            text = text.replace("w_c", str(game.clan.war["enemy"]))
 
         return text
