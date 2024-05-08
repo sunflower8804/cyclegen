@@ -1962,7 +1962,7 @@ class Events:
                 else:
                 # Max number of moons a cat can be shunned before the clan makes up their damn mind
                 # Currently ten, but it was also roll if its set to more than that in a cat's save
-                    if cat.shunned > 9:
+                    if cat.shunned >= game.config["shunned_cat"]["max_shunned_moons"]:
                         self.exile_or_forgive(cat)
         
         if cat.status == 'leader' and cat.shunned > 0 and cat.name.specsuffix_hidden is False:
@@ -3430,20 +3430,14 @@ class Events:
             self.b_txt = ujson.loads(read_file.read())
         if cat.shunned > 2:
             involved_cats = []
+
             if game.clan.your_cat.ID == cat.ID:
-                fate = random.randint(1,6)
+                fate = random.randint(1, int((game.config["shunned_cat"]["exile_chance"][cat.age]) * 1.75))
             else:
-                if cat.moons > 40:
-                    fate = random.randint(1,15)
-                elif cat.moons > 12:
-                    fate = random.randint(1,10)
-                elif cat.moons > 6:
-                    fate = random.randint(1,6)
-                else:
-                    fate = random.randint(1,3)
+                fate = random.randint(1, int(game.config["shunned_cat"]["exile_chance"][cat.age]))
 
             # these numbers are kind of crazy but i wanted to keep the one randint
-            if fate in [1, 2, 3, 5, 6, 10, 11]:
+            if fate != 1:
                 cat.shunned = 0
                 cat.forgiven = game.clan.age
                 cat.exiled = False
@@ -3533,7 +3527,7 @@ class Events:
 
                 game.cur_events_list.insert(0, Single_Event(text, "alert", involved_cats))
 
-            elif fate in [7, 12]:
+            elif fate == 2 and cat.ID != game.clan.your_cat.ID:
                 cat.outside = True
                 cat.status = "former Clancat"
                 game.clan.add_to_outside(cat)
