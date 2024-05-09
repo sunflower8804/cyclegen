@@ -1846,6 +1846,19 @@
             "... Trivial stuff like that."
         ]
     ],
+     "introspective_AJ": [
+        [
+            "any",
+            "introspective"
+        ],
+        [
+           "Psst. y_c, come here. Careful! No sudden moves!",
+	   "Look up there, at that tree branch. See that? No? Look carefully …",
+	   "[You follow t_c’s careful gaze, squinting through the mass of leaves until, finally, you spot a bird’s nest, filled with colorful eggs.]",
+	   "Isn’t it beautiful? Life is such a precious thing …",
+	   "Plus, I suppose they’ll make good prey once they hatch, too. Heh!"
+        ]
+    ],
     "Introspective_to_app": [
         [
             "Apprentice",
@@ -2899,7 +2912,7 @@
     "cool_51": [
         [
             "Any",
-            "cool",
+            "silly",
             "introspective",
             "they_blind",
             "you_blind"
@@ -2921,6 +2934,48 @@
         [
             "[You prod a sleeping t_c with the side of your paw. They swat you away.]",
             "Mmf ... Just a little longer ..."
+        ]
+    ],
+    "cool_AJ": [
+        [
+            "Any",
+            "cool",
+            "neutral",
+	    "greenleaf"
+        ],
+        [
+            "Well, if it isn’t m_c! My favorite cat. Nice weather today, isn’t it?",
+	    "Almost makes you feel like things aren’t so bad here, ah?",
+	    "[t_c grins at you, and you’re shocked by just how entrancing their smile is.]"
+        ]
+    ],
+    "cool_AJ1": [
+        [
+            "Any",
+            "cool",
+            "dislike"
+        ],
+        [
+            "Oh. Hi, y_c. What is it?",
+	    "[You start telling t_c about your day, but they just nod along, clearly not paying attention.]",
+	    "Mhm. Mhm. Oh, wow, that’s great.",
+	    "Oh, well wouldja look at the time! Unfortunately, it seems like I have to go do something else now.",
+	    "But, ah, thanks for stopping by, and everything. You know I always love our talks. *Snrk*",
+	    "[t_c's words are nice, but somehow, you can't help feeling a little slighted ...]"
+        ]
+    ],
+    "cool_AJ1": [
+        [
+            "Any",
+            "cool",
+            "romantic_like"
+        ],
+        [
+            "So, y_c, I hear you want romantic advice, huh? Well, you’ve come to the right cat. Everybody seems to fall head over paws for me, and I can’t quite figure out why …",
+	    "Whatever the case, it’s all about confidence. And coolness. You gotta be smooth, play hard to get …",
+	    "Ah, who am I kidding. You’re such a catch, m_c, I’m sure you could have any cat in the whole clan you wanted.",
+	    "And, uh, I’m not just saying that either, y’know. I … I really mean it.",
+	    "[t_c hits you with one of their trademark grins, but for some reason, it seems a bit deeper this time. A bit more pained.]"
         ]
     ],
     "brooding_1": [
@@ -2964,6 +3019,22 @@
             "StarClan... I just can't sleep.",
             "My mind's telling me to keep working!",
             "Ever feel this way, y_c?"
+        ]
+    ],
+    "upstanding_AJ": [
+        [
+            "Any",
+            "upstanding",
+            "they_blind",
+            "you_blind",
+	    "random_cat",
+	    "neutral"
+        ],
+        [
+            "y_c, what in StarClan’s name are you doing just lazing around camp? You should be out training! Or taking extra patrols! Or - Or …",
+	    "*Sigh*. I’m sorry. I guess I’m just more stressed than usual lately. I shouldn’t take it out on you. Maybe a walk to clear my head is what I need.",
+	    "And on my walk, maybe I can check the twolegplace border, and harvest from the herb gardens for r_m, and help restock the prey pile …",
+	    "... What? Nothing wrong with multitasking!"
         ]
     ],
     "neurotic_1": [
