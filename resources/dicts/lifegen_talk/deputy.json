@@ -161,12 +161,48 @@
             "Now, c'mon, lazybones! We've got a long walk ahead of us!"
         ]
     ],
-    "dep_321": [
+    "medapp_busy1c": [
         [
-            "Any"
+            "Any",
+            "assertive",
+            "cool",
+            "upstanding"
         ],
         [
             "There's too much to do right now. Let's talk later."
+        ]
+    ],
+    "medapp_busy2c": [
+        [
+            "Any",
+            "introspective",
+            "neurotic",
+            "stable",
+            "sweet"
+        ],
+        [
+            "Sorry, I'm a little busy! Mind if we talk later?"
+        ]
+    ],
+    "medapp_busy3c": [
+        [
+            "Any",
+            "unabashed",
+            "silly"
+        ],
+        [
+            "Argh! y_c, why do you always come at the worst possible time?",
+            "I'm busy now but let's talk later."
+        ]
+    ],
+    "medapp_busy4c": [
+        [
+            "Any",
+            "unlawful",
+            "brooding"
+        ],
+        [
+            "... Some cats have things to do."
         ]
     ],
     "dep_15af": [
@@ -476,19 +512,7 @@
             "Hmph. Whatever. Just stay outta the real warriors' way, before someone squishes you."
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
+    
     "assertive_1_2": [
         [
             "Any",
@@ -1429,7 +1453,8 @@
     ],
     "assertive_elder_23": [
         [
-            "leader"
+            "leader",
+            "neurotic"
         ],
         [
             "y_c, are you worried at all about the size of the Clan?",
@@ -1589,7 +1614,12 @@
     ],
     "brooding_deputy12": [
         [
-            "Any"
+            "Any",
+            "upstanding",
+            "stable",
+            "assertive",
+            "introspective",
+            "brooding"
         ],
         [
             "[t_c gazes up at l_n atop the leader's den with an unreadable expression on their face.]",
@@ -1599,7 +1629,12 @@
     ],
     "brooding_deputy13": [
         [
-            "Any"
+            "Any",
+            "upstanding",
+            "stable",
+            "assertive",
+            "introspective",
+            "brooding"
         ],
         [
             "[You overhear t_c and l_n very seriously discussing some diplomatic affairs with o_cClan.]",

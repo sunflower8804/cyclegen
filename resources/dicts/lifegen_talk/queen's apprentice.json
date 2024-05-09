@@ -164,19 +164,6 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
     "assertive_tonewborn_2": [
         [
             "newborn",
@@ -231,19 +218,6 @@
             "y_c ... Do you think I'm not ... 'nice' enough to be a queen?",
             "Everyone tells me that queens are supposed to be all soft and loving ...",
             "I just like keeping them safe."
-        ]
-    ],
-    "assertive_tonewborn3_2": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
         ]
     ],
     "assertive_apprentice7": [
@@ -852,7 +826,9 @@
     ],
     "queens_app_general_newborn": [
         [
-            "newborn"
+            "newborn",
+            "sweet",
+            "stable"
         ],
         [
             "Hi there, sweet kit. You're so precious."

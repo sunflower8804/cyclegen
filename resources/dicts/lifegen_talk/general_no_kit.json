@@ -13893,7 +13893,7 @@
     "sc_living_7": [
         [
             "they_sc",
-            "from_your_mate",
+            "from_mate",
             "any"
         ],
         [
@@ -14024,7 +14024,7 @@
             "they_sc",
             "you_df",
             "Any",
-            "from_your_mate"
+            "from_mate"
         ],
         [
             "I... I'm sorry, y_c.",
@@ -16018,7 +16018,7 @@
             "you_dftrainee",
             "they_sc",
             "any",
-            "they_brooding",
+            "brooding",
             "cool",
             "you_blind"
             
@@ -16260,7 +16260,7 @@
             "they_ur",
             "you_ur",
             "you_neurotic",
-            "mates",
+            "from_mate",
             "any",
             "you_blind",
             "they_blind",
@@ -16330,7 +16330,7 @@
     ],
     "DF_mate_H1": [
         [
-            "mates",
+            "from_mate",
             "you_sc",
             "they_df",
             "any"
@@ -17048,7 +17048,7 @@
     "sweet_livingtotrainee_4": [
         [
             "no_kit",
-            "you_medicine_cat",
+            "you_medicine cat",
             "you_not_dftrainee",
             "they_dftrainee",
              "sweet"

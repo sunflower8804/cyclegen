@@ -1,10 +1,46 @@
 {
-    "dep_321": [
+    "medapp_busy1c": [
         [
-            "Any"
+            "Any",
+            "assertive",
+            "cool",
+            "upstanding"
         ],
         [
             "There's too much to do right now. Let's talk later."
+        ]
+    ],
+    "medapp_busy2c": [
+        [
+            "Any",
+            "introspective",
+            "neurotic",
+            "stable",
+            "sweet"
+        ],
+        [
+            "Sorry, I'm a little busy! Mind if we talk later?"
+        ]
+    ],
+    "medapp_busy3c": [
+        [
+            "Any",
+            "unabashed",
+            "silly"
+        ],
+        [
+            "Argh! y_c, why do you always come at the worst possible time?",
+            "I'm busy now but let's talk later."
+        ]
+    ],
+    "medapp_busy4c": [
+        [
+            "Any",
+            "unlawful",
+            "brooding"
+        ],
+        [
+            "... Some cats have things to do."
         ]
     ],
     "dep_132": [
@@ -102,19 +138,7 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
+    
     "assertive_apprentice7": [
         [
             "no_kit",
@@ -1444,7 +1468,10 @@
     ],
     "newborn_frommedapp": [
         [
-            "newborn"
+            "newborn",
+            "sweet",
+            "stable",
+            "introspective"
         ],
         [
             "I never expected kittens to be this small when they're born. They're like a little pebble... that meows.",
@@ -1512,8 +1539,6 @@
             "Alright, now let me show you a basic battle stance.",
             "[t_c moves into a battle stance. Their form is sloppy -- df_m_n would never allow that.]",
             "[You settle in and prepare yourself for a long day of learning things you already know.]"
-            
         ]
     ]
-        
 }

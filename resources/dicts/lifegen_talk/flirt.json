@@ -882,7 +882,8 @@
             "cool",
             "assertive",
             "brooding",
-            "unabashed"
+            "unabashed",
+            "any"
         ],
         [
             "If I act like I'm interested will it get you to stop?"
@@ -902,7 +903,8 @@
             "reject",
             "cool",
             "from_mate",
-            "stable"
+            "stable",
+            "Any"
         ],
         [
             "As much as I like you, we have got to work on your flirting ability, dear."
@@ -1178,7 +1180,8 @@
         [
             "reject",
             "unabashed",
-            "assertive"
+            "assertive",
+            "Any"
         ],
         [
             "I always look lovely. Are you trying to imply that I don't?"
@@ -1230,7 +1233,8 @@
             "reject",
             "cool",
             "silly",
-            "assertive"
+            "assertive",
+            "Any"
         ],
         [
             "...Hahaha! At least you're funny."
@@ -1240,7 +1244,8 @@
         [
             "reject",
             "upstanding",
-            "stable"
+            "stable",
+            "any"
         ],
         [
             "Sorry, I just don't have time for something like this right now."
@@ -1271,7 +1276,8 @@
             "reject",
             "upstanding",
             "unlawful",
-            "brooding"
+            "brooding",
+            "Any"
         ],
         [
             "..Thanks.. Your pelt looks... scruffy today?"
@@ -1400,7 +1406,8 @@
             "reject",
             "silly",
             "cool",
-            "unabashed"
+            "unabashed",
+            "Any"
         ],
         [
             "I must have sand in my ears... What was that again?"
@@ -1450,7 +1457,8 @@
     "f2d5gf2": [
         [
             "reject",
-            "cool"
+            "cool",
+            "Any"
         ],
         [
             "Hey, didn't I teach you that line?"
@@ -1472,7 +1480,8 @@
             "reject",
             "brooding",
             "unlawful",
-            "upstanding"
+            "upstanding",
+            "Any"
         ],
         [
             "...",
@@ -1585,7 +1594,8 @@
             "from_mate",
             "stable",
             "cool",
-            "assertive"
+            "assertive",
+            "Any"
         ],
         [
             "Thanks, honey. That was really cute even though it was kind of lame..."
@@ -1597,7 +1607,8 @@
             "from_mate",
             "silly",
             "sweet",
-            "cool"
+            "cool",
+            "Any"
         ],
         [
             "Don't worry! You'll get better one day."
@@ -1622,7 +1633,8 @@
             "from_mate",
             "cool",
             "silly",
-            "unlawful"
+            "unlawful",
+            "Any"
         ],
         [
             "You really suck at that, you know? Hah."
@@ -2093,6 +2105,11 @@
         ]
     ],
     "flirt_sh_J41": [
+        [
+            "Any",
+            "reject",
+            "they_shunned"
+        ],
         [
             "Ugh..."
         ]

@@ -245,9 +245,10 @@
             "I'm proud of you, little one. I'm sure d_c is too."
         ]
     ],
-    "warrior231": [
+    "stable_warrior_fight": [
         [
-            "mediator"
+            "mediator",
+            "stable"
         ],
         [
             "Hey! I was looking to talk with you. Is there a chance that you can help me out with something? If you aren't busy of course.",
@@ -702,19 +703,7 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
+    
     "assertive_gen": [
         [
             "no_kit",

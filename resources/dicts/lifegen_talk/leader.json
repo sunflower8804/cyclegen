@@ -464,19 +464,7 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
+    
     "assertive_1": [
         [
             "Any",
@@ -1467,7 +1455,12 @@
     ],
     "brooding_deputy13": [
         [
-            "Any"
+            "Any",
+            "upstanding",
+            "stable",
+            "assertive",
+            "introspective",
+            "brooding"
         ],
         [
             "[You overhear t_c and d_n very seriously discussing some diplomatic affairs with o_cClan.]",
