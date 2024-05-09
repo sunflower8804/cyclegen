@@ -104,7 +104,6 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    
     "assertive_parent21": [
         [
             "kitten",
@@ -134,7 +133,6 @@
             "unabashed",
             "silly",
             "insult",
-            "random_cat",
             "platonic_like"
         ],
         [
@@ -544,11 +542,56 @@
             "I love you so much."
         ]
     ],
+    "you_newborn_from_parent": [
+        [
+            "newborn",
+            "from_parent",
+            "adopted_parent"
+        ],
+        [
+            "I knew I always wanted to name one of my kits y_c.",
+            "You're perfect."
+        ]
+    ],
+    "you_newborn_from_parent2": [
+        [
+            "newborn",
+            "from_parent",
+            "adopted_parent"
+        ],
+        [
+            "Hello there, little one. I'm your parent, t_c.",
+            "Can you say my name yet?",
+            "[You let out a squeak and t_c smiles amusedly.]",
+            "Close enough."
+        ]
+    ],
+    "you_newborn_from_parent3": [
+        [
+            "newborn",
+            "from_parent",
+            "adopted_parent"
+        ],
+        [
+            "I promise I'll always be here to protect you."
+        ]
+    ],
+    "you_newborn_from_parent4": [
+        [
+            "newborn",
+            "from_parent",
+            "adopted_parent"
+        ],
+        [
+            "Soft kitty, warm kitty, little ball of fur...",
+            "Happy kitty, sleepy kitty, purr purr purr...",
+            "[You fall asleep to your parent's gentle humming.]"
+        ]
+    ],
     "you_newborn2": [
         [
             "newborn",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "Peek-a-boo!",
@@ -712,8 +755,7 @@
         [
             "newborn",
             "cool",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "Ah, StarClan, look at those little ears. So stinkin' adorable.",
@@ -724,8 +766,7 @@
         [
             "newborn",
             "cool",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "What a cute little guy!",
@@ -840,8 +881,7 @@
     "brooding_newborn": [
         [
             "newborn",
-            "brooding",
-            "random_cat"
+            "brooding"
         ],
         [
             "Who is that ...?",
@@ -916,7 +956,6 @@
         [
             "kitten",
             "brooding",
-            "random_cat",
             "non-related"
         ],
         [
@@ -930,7 +969,6 @@
         [
             "kitten",
             "brooding",
-            "random_cat",
             "platonic_like",
             "from_parent"
         ],
@@ -1032,7 +1070,6 @@
             "silly",
             "from_parent",
             "platonic_like",
-            "random_cat",
             "you_assertive",
             "you_brooding",
             "you_unlawful",
@@ -1127,8 +1164,7 @@
             "brooding",
             "introspective",
             "from_parent",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "Hm? You and r_k wanna play outside?",
@@ -1345,8 +1381,7 @@
         [
             "any",
             "insult",
-            "unlawful",
-            "random_cat"
+            "unlawful"
         ],
         [
             "...You're lucky that r_c is here. Otherwise, I don't think you'd want to know what I would do to you."
@@ -1418,8 +1453,7 @@
         [
             "kitten",
             "brooding",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "What do you need?",
@@ -1433,8 +1467,7 @@
         [
             "kitten",
             "brooding",
-            "sibling",
-            "random_cat"
+            "sibling"
         ],
         [
             "Oh- Uhh, hey there, y_c.",
@@ -1502,7 +1535,6 @@
         [
             "unabashed",
             "kitten",
-            "random_cat",
             "non-related"
         ],
         [
@@ -1611,8 +1643,7 @@
     "neurotic_tokit": [
         [
             "kitten",
-            "neurotic",
-            "random_cat"
+            "neurotic"
         ],
         [
             "Oh! Uh, hi, y_c!",
@@ -1623,8 +1654,7 @@
         [
             "kitten",
             "neurotic",
-            "non-related",
-            "random_cat"
+            "non-related"
         ],
         [
             "Hey, y_c! What's going on?",
@@ -1636,8 +1666,7 @@
         [
             "kitten",
             "neurotic",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "[You're playing a game of chase with t_c!]",
@@ -1912,7 +1941,6 @@
     "stable_kit_younewborn_3": [
         [
             "newborn",
-            "random_cat",
             "stable"
         ],
         [
@@ -2315,9 +2343,9 @@
     ],
     "youkit_sh_J30": [
         [
-        "you_shunned",
-        "they_df",
-        "you_kitten"
+            "you_shunned",
+            "they_df",
+            "you_kitten"
         ],
         [
             "Huh. I never expected that from you, little kit...",
@@ -3518,7 +3546,7 @@
             "[t_c doesn't even react to your insult.]"
         ]
     ],
-    "you_kit_ur_J1" : [
+    "you_kit_ur_J1": [
         [
             "they_ur",
             "any"
@@ -3528,7 +3556,7 @@
             "I won't question it, though. You're a nice kit. I'm glad to have you around."
         ]
     ],
-    "you_kit_ur_J2" : [
+    "you_kit_ur_J2": [
         [
             "they_ur",
             "you_shunned",
@@ -3539,7 +3567,7 @@
             "There's something dark within you. I hope you find some way to expel it before you grow up."
         ]
     ],
-    "you_kit_ur_J3" : [
+    "you_kit_ur_J3": [
         [
             "they_ur",
             "you_grieving",
@@ -3549,7 +3577,7 @@
             "Chin up. d_c would hate to see you so upset."
         ]
     ],
-    "you_kit_ur_J4" : [
+    "you_kit_ur_J4": [
         [
             "they_ur",
             "you_grieving",
@@ -3560,7 +3588,7 @@
             "It's times like this where I don't envy the living..."
         ]
     ],
-    "you_kit_ur_J5" : [
+    "you_kit_ur_J5": [
         [
             "they_ur",
             "you_ur",
@@ -3571,7 +3599,7 @@
             "I don't know how I keep forgetting!"
         ]
     ],
-    "you_kit_ur_J6" : [
+    "you_kit_ur_J6": [
         [
             "they_ur",
             "you_ur",
@@ -3584,7 +3612,7 @@
             "Hear those birds? Do you think dead cats anywhere else get to hear that?"
         ]
     ],
-    "you_kit_ur_J7" : [
+    "you_kit_ur_J7": [
         [
             "they_ur",
             "you_ur",
@@ -3599,7 +3627,7 @@
             "[It looks silly, but you can't pretend you've never done the same.]"
         ]
     ],
-    "you_kit_ur_J8" : [
+    "you_kit_ur_J8": [
         [
             "they_ur",
             "you_ur",
@@ -3614,7 +3642,7 @@
             "[Still, your sense of smell allows you to feel t_c's presence next to you. Your chest vibrates with a purr.]"
         ]
     ],
-    "you_kit_ur_J9" : [
+    "you_kit_ur_J9": [
         [
             "they_ur",
             "you_df",
@@ -3625,7 +3653,7 @@
             "I think you're lost, kit. Please go back home. You don't belong here."
         ]
     ],
-    "you_kit_ur_J10" : [
+    "you_kit_ur_J10": [
         [
             "they_ur",
             "you_df",
@@ -3637,7 +3665,7 @@
             "[t_c doesn't notice you prowling through the undergrowth of the waking world.]"
         ]
     ],
-    "you_kit_ur_J11" : [
+    "you_kit_ur_J11": [
         [
             "they_ur",
             "you_df",
@@ -3651,7 +3679,7 @@
             "[You feel a hollow, ghostly claw rake your muzzle before you can react, and with a hiss, they flee.]"
         ]
     ],
-    "you_kit_ur_J12" : [
+    "you_kit_ur_J12": [
         [
             "they_ur",
             "you_df",
@@ -3667,7 +3695,7 @@
             "[The feeling is gone before you can consider what to do about it. They must have run off.]"
         ]
     ],
-    "you_kit_ur_J13" : [
+    "you_kit_ur_J13": [
         [
             "they_ur",
             "you_sc",
@@ -3679,7 +3707,7 @@
             "Haha. Didn't think so."
         ]
     ],
-    "you_kit_ur_J14" : [
+    "you_kit_ur_J14": [
         [
             "they_ur",
             "you_sc",
@@ -3691,7 +3719,7 @@
             "[t_c stares at you in awe.]"
         ]
     ],
-    "you_kit_ur_J15" : [
+    "you_kit_ur_J15": [
         [
             "they_ur",
             "you_sc",
@@ -3703,7 +3731,7 @@
             "StarClan cat? What are you doing here?"
         ]
     ],
-    "you_kit_ur_J16" : [
+    "you_kit_ur_J16": [
         [
             "they_ur",
             "you_sc",
@@ -3717,7 +3745,7 @@
             "[t_c doesn't seem to notice you.]"
         ]
     ],
-    "you_kit_ur_J17" : [
+    "you_kit_ur_J17": [
         [
             "they_ur",
             "any",
@@ -3727,7 +3755,7 @@
             "I'm glad you don't look as sad anymore!"
         ]
     ],
-    "you_kit_ur_J18" : [
+    "you_kit_ur_J18": [
         [
             "they_ur",
             "any",
@@ -3742,7 +3770,7 @@
             "I can't wait to see you grow up."
         ]
     ],
-    "you_kit_ur_J19" : [
+    "you_kit_ur_J19": [
         [
             "you_ur",
             "any"
@@ -3753,7 +3781,7 @@
             "Sorry. It's just... weird."
         ]
     ],
-    "you_kit_ur_J20" : [
+    "you_kit_ur_J20": [
         [
             "you_ur",
             "they_shunned",
@@ -3764,7 +3792,7 @@
             "IS this how you feel?"
         ]
     ],
-    "you_kit_ur_J21" : [
+    "you_kit_ur_J21": [
         [
             "you_ur",
             "they_grieving",
@@ -3774,7 +3802,7 @@
             "Don't tell me it's going to get better, ghost. You have no idea."
         ]
     ],
-    "you_kit_ur_J22" : [
+    "you_kit_ur_J22": [
         [
             "you_ur",
             "they_grieving",
@@ -3785,7 +3813,7 @@
             "Don't tell me it's going to get better, ghost. You have no idea."
         ]
     ],
-    "you_kit_ur_J23" : [
+    "you_kit_ur_J23": [
         [
             "you_ur",
             "they_df",
@@ -3797,7 +3825,7 @@
             "It's not as easy, but it's certainly not as boring."
         ]
     ],
-    "you_kit_ur_J24" : [
+    "you_kit_ur_J24": [
         [
             "you_ur",
             "they_df",
@@ -3810,7 +3838,7 @@
             "[It must be a Dark Forest cat! You turn to greet the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
-    "you_kit_ur_J25" : [
+    "you_kit_ur_J25": [
         [
             "you_ur",
             "they_df",
@@ -3823,7 +3851,7 @@
             "[It must be a Dark Forest cat! You turn to greet the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
-    "you_kit_ur_J26" : [
+    "you_kit_ur_J26": [
         [
             "you_ur",
             "they_df",
@@ -3838,7 +3866,7 @@
             "[It must be a Dark Forest cat! You turn to greet the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
-    "you_kit_ur_J27" : [
+    "you_kit_ur_J27": [
         [
             "you_ur",
             "they_sc",
@@ -3851,7 +3879,7 @@
             "What?"
         ]
     ],
-    "you_kit_ur_J28" : [
+    "you_kit_ur_J28": [
         [
             "you_ur",
             "they_sc",
@@ -3864,7 +3892,7 @@
             "[It must be a StarClan cat! You turn to the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
-    "you_kit_ur_J29" : [
+    "you_kit_ur_J29": [
         [
             "you_ur",
             "they_sc",
@@ -3877,7 +3905,7 @@
             "[It must be a StarClan cat! You turn to the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
-    "you_kit_ur_J30" : [
+    "you_kit_ur_J30": [
         [
             "you_ur",
             "they_sc",
@@ -3892,7 +3920,7 @@
             "[It must be a StarClan cat! You turn to the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
-    "you_kit_ur_J31" : [
+    "you_kit_ur_J31": [
         [
             "you_ur",
             "they_sc",

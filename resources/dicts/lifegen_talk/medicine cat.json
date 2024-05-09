@@ -32,8 +32,7 @@
         [
             "medicine cat apprentice",
             "assertive",
-            "from_mentor",
-            "random_cat"
+            "from_mentor"
         ],
         [
             "I noticed you treating r_c the other day, and it really wasn't bad! You've come a long way. But, one thing I did notice was that you were a little too ... nice when delivering them their diagnosis?",
@@ -271,14 +270,12 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    
     "assertive_apprentice7": [
         [
             "no_kit",
             "platonic_like",
             "assertive",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
@@ -433,8 +430,7 @@
         [
             "medicine cat",
             "medicine cat apprentice",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "r_s seems to be doing well, don'tcha think?",
@@ -444,8 +440,7 @@
     "assertive_elder_7": [
         [
             "medicine cat",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Be sure to bring r_s the herbs they need."
@@ -675,8 +670,7 @@
             "Any",
             "assertive",
             "unabashed",
-            "romantic_like",
-            "random_cat"
+            "romantic_like"
         ],
         [
             "What's that? One of the kits told you your ears are too big?",
@@ -704,7 +698,6 @@
             "mediator",
             "mediator apprentice",
             "assertive",
-            "random_cat",
             "platonic_like",
             "comfort",
             "trust",
@@ -727,8 +720,7 @@
         [
             "mediator",
             "mediator apprentice",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
@@ -969,8 +961,7 @@
     "introspective_Med_1": [
         [
             "any",
-            "introspective",
-            "random_cat"
+            "introspective"
         ],
         [
             "Yes, y_c? Do you need something?",
@@ -1264,8 +1255,7 @@
     "silly_med_ideas": [
         [
             "Any",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "I love my role as a medicine cat.",
@@ -1294,8 +1284,7 @@
     "silly_med_burdock": [
         [
             "Any",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "[You walk into the medicine den for something or other and find t_c carefully applying some kind of chewed herb to a fresh wound on r_c's pelt. When t_c notices you, they give you a friendly greeting.]",
@@ -1319,7 +1308,6 @@
     "brooding_medapp": [
         [
             "any",
-            "random_cat",
             "brooding"
         ],
         [
@@ -1460,7 +1448,6 @@
     ],
     "Necrotic_med_cat_1": [
         [
-            "Random_cat",
             "neurotic",
             "Any"
         ],
@@ -1471,7 +1458,6 @@
     ],
     "Necrotic_med_cat_2": [
         [
-            "Random_cat",
             "neurotic",
             "Any",
             "Leafbare",
@@ -1523,7 +1509,6 @@
             "queen's apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1623,7 +1608,6 @@
     "sweet_meddie_13": [
         [
             "warrior",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1648,7 +1632,6 @@
     "sweet_meddie_15": [
         [
             "mediator",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1661,7 +1644,6 @@
     "sweet_meddie_16": [
         [
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1675,7 +1657,6 @@
     "sweet_meddie_17": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1690,7 +1671,6 @@
     "sweet_meddie_18": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1706,7 +1686,6 @@
     "sweet_meddie_19": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1718,7 +1697,6 @@
     "sweet_meddie_20": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1730,7 +1708,6 @@
     "sweet_meddie_21": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1742,7 +1719,6 @@
     "sweet_meddie_22": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1780,7 +1756,6 @@
     "sweet_meddie_25": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -2081,5 +2056,5 @@
             "[t_c pauses and looks you in the eyes.]",
             "Make sure you're making the right choices, okay?"
         ]
-    ]  
+    ]
 }

@@ -138,14 +138,12 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    
     "assertive_apprentice7": [
         [
             "no_kit",
             "platonic_like",
             "assertive",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
@@ -225,8 +223,7 @@
         [
             "Any",
             "assertive",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "y_c, can you believe it? I actually got to dress a real wound today! Eeee, so cool!!!",
@@ -238,8 +235,7 @@
         [
             "Any",
             "assertive",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "Er, sorry, y_c. I can't chat right now ...",
@@ -291,7 +287,6 @@
             "mediator",
             "mediator apprentice",
             "assertive",
-            "random_cat",
             "platonic_love"
         ],
         [
@@ -308,8 +303,7 @@
         [
             "mediator",
             "mediator apprentice",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
@@ -954,7 +948,6 @@
     "sweet_medapp_7": [
         [
             "apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -965,7 +958,6 @@
     "sweet_medapp_8": [
         [
             "queen's apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1050,7 +1042,6 @@
     "sweet_medapp_15": [
         [
             "mediator",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1063,7 +1054,6 @@
     "sweet_medapp_16": [
         [
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1080,7 +1070,6 @@
     "sweet_medapp_17": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1093,7 +1082,6 @@
     "brooding_medapp": [
         [
             "any",
-            "random_cat",
             "brooding"
         ],
         [
@@ -1259,8 +1247,7 @@
             "Any",
             "from_your_apprentice",
             "brooding",
-            "neurotic",
-            "random_cat"
+            "neurotic"
         ],
         [
             "y_c, r_w just came in with a thorn in their paw. They're waiting for you now.",
@@ -1303,7 +1290,6 @@
     "sweet_medapp_18": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1314,7 +1300,6 @@
     "sweet_medapp_19": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1339,7 +1324,6 @@
     "sweet_medapp_21": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1375,7 +1359,6 @@
     "sweet_medapp_24": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1388,7 +1371,6 @@
     "sweet_medapp_25": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1415,8 +1397,7 @@
     "upstanding_medapp1": [
         [
             "upstanding",
-            "Any",
-            "random_cat"
+            "Any"
         ],
         [
             "Hey there y_c! Is it alright if I give you a checkup? Make sure everything is alright?",
@@ -1443,8 +1424,7 @@
     "upstanding_medapp3": [
         [
             "upstanding",
-            "no_kit",
-            "random_cat"
+            "no_kit"
         ],
         [
             "...y_c?",
@@ -1482,8 +1462,7 @@
         [
             "no_kit",
             "neurotic",
-            "upstanding",
-            "random_cat"
+            "upstanding"
         ],
         [
             "Gah, stupid, stupid, so stupid, t_c ...",
@@ -1501,7 +1480,6 @@
         [
             "no_kit",
             "neurotic",
-            "random_cat",
             "trust"
         ],
         [

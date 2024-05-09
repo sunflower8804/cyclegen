@@ -60,8 +60,7 @@
         [
             "apprentice",
             "brooding",
-            "dislike",
-            "random_cat"
+            "dislike"
         ],
         [
             "[After a lot of pestering from the kits, you agree to show off some of the skills m_n taught you, and host a little training session.]",
@@ -108,8 +107,7 @@
             "warrior",
             "brooding",
             "assertive",
-            "dislike",
-            "random_cat"
+            "dislike"
         ],
         [
             "y_c! Border patrol. I've already told the rest of the patrol to gather next to the entrance.",
@@ -122,8 +120,7 @@
     "silly_gen_prey": [
         [
             "Any",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "I went on a hunting patrol with r_w the other day and found THE cutest mouse I think I've ever seen. It had big, innocent eyes and it was snacking on a blackberry!",
@@ -470,7 +467,6 @@
         [
             "mediator apprentice",
             "mediator",
-            "random_cat",
             "assertive",
             "unabashed"
         ],
@@ -485,7 +481,6 @@
             "mediator apprentice",
             "mediator",
             "assertive",
-            "random_cat",
             "silly",
             "unlawful",
             "cool"
@@ -512,7 +507,6 @@
             "Hmph. Whatever. Just stay outta the real warriors' way, before someone squishes you."
         ]
     ],
-    
     "assertive_1_2": [
         [
             "Any",
@@ -566,7 +560,6 @@
             "mediator",
             "mediator apprentice",
             "assertive",
-            "random_cat",
             "platonic_like",
             "comfort",
             "trust",
@@ -589,8 +582,7 @@
         [
             "mediator",
             "mediator apprentice",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
@@ -1184,8 +1176,7 @@
         [
             "warrior",
             "apprentice",
-            "introspective",
-            "random_cat"
+            "introspective"
         ],
         [
             "... y_c? Is something the matter? I heard from r_c that you were looking for me.",
@@ -1394,8 +1385,7 @@
             "Any",
             "assertive",
             "unabashed",
-            "romantic_like",
-            "random_cat"
+            "romantic_like"
         ],
         [
             "What's that? One of the kits told you your ears are too big?",
@@ -1423,7 +1413,6 @@
             "Any",
             "assertive",
             "platonic_love",
-            "random_cat",
             "no_kit"
         ],
         [
@@ -1463,8 +1452,7 @@
     ],
     "assertive_elder_24": [
         [
-            "leader",
-            "random_cat"
+            "leader"
         ],
         [
             "The new apprentices are doing well, aren't they?",
@@ -1474,7 +1462,6 @@
     "cool_deputy_1": [
         [
             "Any",
-            "random_cat",
             "cool"
         ],
         [
@@ -1499,8 +1486,7 @@
     "cool_deputy_3": [
         [
             "Any",
-            "cool",
-            "random_cat"
+            "cool"
         ],
         [
             "Recently I've been thinking about the best way to talk to r_c.",
@@ -1604,8 +1590,7 @@
     "brooding_deputy11": [
         [
             "warrior",
-            "apprentice",
-            "random_cat"
+            "apprentice"
         ],
         [
             "Hm? You want to patrol with r_w today?",
@@ -1675,8 +1660,7 @@
             "queen",
             "brooding",
             "stable",
-            "introspective",
-            "random_cat"
+            "introspective"
         ],
         [
             "Hey, I saw you talking with r_k earlier.",
@@ -1692,8 +1676,7 @@
             "queen",
             "brooding",
             "introspective",
-            "platonic_love",
-            "random_cat"
+            "platonic_love"
         ],
         [
             "*Wince* Oof ...",
@@ -1712,8 +1695,7 @@
             "queen",
             "leader",
             "brooding",
-            "upstanding",
-            "random_cat"
+            "upstanding"
         ],
         [
             "[Seems like the deputy is holding an extra training drill for the apprentices.]",
@@ -1732,7 +1714,6 @@
             "queen's apprentice",
             "mediator apprentice",
             "brooding",
-            "random_cat",
             "neutral",
             "non-related"
         ],
@@ -1746,8 +1727,7 @@
     "newborn_fromdep": [
         [
             "newborn",
-            "neutral",
-            "random_cat"
+            "neutral"
         ],
         [
             "Hm ...",
@@ -1772,8 +1752,7 @@
     "silly_deputy_plotting": [
         [
             "Any",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "Oh, hi y_c! I had a question for you, actually.",
@@ -1835,8 +1814,7 @@
         [
             "apprentice",
             "silly",
-            "from_mentor",
-            "random_cat"
+            "from_mentor"
         ],
         [
             "Hey, y_c!",
@@ -1911,7 +1889,6 @@
             "queen's apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1948,7 +1925,6 @@
     "sweet_deputy_8": [
         [
             "queen's apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1986,7 +1962,6 @@
             "medicine cat",
             "mediator",
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -2013,7 +1988,6 @@
     "sweet_deputy_22": [
         [
             "warrior",
-            "random_cat",
             "sweet"
         ],
         [
@@ -2025,7 +1999,6 @@
     "sweet_deputy_13": [
         [
             "medicine cat",
-            "random_cat",
             "sweet"
         ],
         [
@@ -2037,7 +2010,6 @@
     "sweet_deputy_14": [
         [
             "mediator",
-            "random_cat",
             "sweet"
         ],
         [
@@ -2049,7 +2021,6 @@
     "sweet_deputy_15": [
         [
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -2077,7 +2048,6 @@
     "sweet_deputy_17": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -2089,7 +2059,6 @@
     "sweet_deputy_18": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -2114,7 +2083,6 @@
     "sweet_deputy_20": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -2126,7 +2094,6 @@
     "sweet_deputy_21": [
         [
             "elder",
-            "random_cat",
             "sweet",
             "they_deaf",
             "you_deaf"

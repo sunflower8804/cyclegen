@@ -65,7 +65,6 @@
             "Maybe you will. I don't know about me..."
         ]
     ],
-	
     "assertive_leafbare": [
         [
             "Any",
@@ -84,7 +83,6 @@
         [
             "mediator apprentice",
             "mediator",
-            "random_cat",
             "assertive",
             "unabashed"
         ],
@@ -99,7 +97,6 @@
             "mediator apprentice",
             "mediator",
             "assertive",
-            "random_cat",
             "silly",
             "unlawful",
             "cool"
@@ -133,7 +130,6 @@
             "platonic_like",
             "assertive",
             "silly",
-            "random_cat",
             "they_sameage"
         ],
         [
@@ -372,8 +368,7 @@
         [
             "mediator",
             "mediator apprentice",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
@@ -510,8 +505,7 @@
             "Any",
             "assertive",
             "unabashed",
-            "romantic_like",
-            "random_cat"
+            "romantic_like"
         ],
         [
             "What's that? One of the kits told you your ears are too big?",
@@ -535,7 +529,7 @@
             "Without you, I don't know what I'd do."
         ]
     ],
-	"assertive_respect1": [
+    "assertive_respect1": [
         [
             "assertive",
             "silly",
@@ -547,7 +541,7 @@
             "apprentice",
             "deputy",
             "leader",
-		"they_sameage"
+            "they_sameage"
         ],
         [
             "y_c, if something happens to the c_nClan, if we go into battle ...",
@@ -750,8 +744,7 @@
             "any",
             "assertive",
             "silly",
-            "platonic_love",
-            "random_cat"
+            "platonic_love"
         ],
         [
             "Hey, flea-brain. I've been looking for you all over, what's --",
@@ -781,8 +774,7 @@
         [
             "Any",
             "assertive",
-            "leafbare",
-            "random_cat"
+            "leafbare"
         ],
         [
             "[t_c hates leafbare, and they're prepared to make it everyone in c_nClan's problem.]",
@@ -796,7 +788,6 @@
             "mediator",
             "mediator apprentice",
             "assertive",
-            "random_cat",
             "platonic_love"
         ],
         [
@@ -961,7 +952,6 @@
             "silly",
             "unlawful",
             "platonic_like",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -1101,7 +1091,6 @@
             "assertive",
             "platonic_like",
             "from_parent",
-            "random_cat",
             "silly",
             "they_blind",
             "you_blind"
@@ -1271,7 +1260,6 @@
         [
             "Any",
             "platonic_love",
-            "random_cat",
             "assertive",
             "silly",
             "unlawful",
@@ -1814,8 +1802,7 @@
     "introspective_2": [
         [
             "Any",
-            "introspective",
-            "random_cat"
+            "introspective"
         ],
         [
             "Oh, hi, y_c. You wanted to speak to me?",
@@ -1846,17 +1833,17 @@
             "... Trivial stuff like that."
         ]
     ],
-     "introspective_AJ": [
+    "introspective_AJ": [
         [
             "any",
             "introspective"
         ],
         [
-           "Psst. y_c, come here. Careful! No sudden moves!",
-	   "Look up there, at that tree branch. See that? No? Look carefully …",
-	   "[You follow t_c’s careful gaze, squinting through the mass of leaves until, finally, you spot a bird’s nest, filled with colorful eggs.]",
-	   "Isn’t it beautiful? Life is such a precious thing …",
-	   "Plus, I suppose they’ll make good prey once they hatch, too. Heh!"
+            "Psst. y_c, come here. Careful! No sudden moves!",
+            "Look up there, at that tree branch. See that? No? Look carefully …",
+            "[You follow t_c’s careful gaze, squinting through the mass of leaves until, finally, you spot a bird’s nest, filled with colorful eggs.]",
+            "Isn’t it beautiful? Life is such a precious thing …",
+            "Plus, I suppose they’ll make good prey once they hatch, too. Heh!"
         ]
     ],
     "Introspective_to_app": [
@@ -1878,7 +1865,6 @@
             "Introspective",
             "Dislike",
             "Jealousy",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -2031,8 +2017,7 @@
         [
             "any",
             "introspective",
-            "leaffall",
-            "random_cat"
+            "leaffall"
         ],
         [
             "Good morning, y_c. It's lovely to see you.",
@@ -2072,7 +2057,6 @@
         [
             "Medicine Cat Apprentice",
             "Introspective",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -2102,7 +2086,7 @@
             "introspective",
             "they_blind",
             "you_blind",
-		"neutral"
+            "neutral"
         ],
         [
             "Oh, uhm, hello...",
@@ -2368,8 +2352,7 @@
         [
             "Any",
             "Introspective",
-            "romantic_like",
-            "random_cat"
+            "romantic_like"
         ],
         [
             "Hey y_c! Want to cat-watch together?",
@@ -2577,7 +2560,6 @@
             "Any",
             "Introspective",
             "from_mate",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -2609,8 +2591,7 @@
         [
             "Any",
             "Introspective",
-            "from_mate",
-            "random_cat"
+            "from_mate"
         ],
         [
             "Hey, y_c. Would you like to do some cat watching with me?",
@@ -2700,7 +2681,6 @@
             "any",
             "introspective",
             "respect",
-            "random_cat",
             "they_deaf",
             "you_blind"
         ],
@@ -2772,8 +2752,7 @@
         [
             "any",
             "introspective",
-            "trust",
-            "random_cat"
+            "trust"
         ],
         [
             "Hey, y_c. How are you?",
@@ -2790,7 +2769,6 @@
             "any",
             "introspective",
             "trust",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -2824,7 +2802,6 @@
             "any",
             "introspective",
             "trust",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -2941,12 +2918,12 @@
             "Any",
             "cool",
             "neutral",
-	    "greenleaf"
+            "greenleaf"
         ],
         [
             "Well, if it isn’t m_c! My favorite cat. Nice weather today, isn’t it?",
-	    "Almost makes you feel like things aren’t so bad here, ah?",
-	    "[t_c grins at you, and you’re shocked by just how entrancing their smile is.]"
+            "Almost makes you feel like things aren’t so bad here, ah?",
+            "[t_c grins at you, and you’re shocked by just how entrancing their smile is.]"
         ]
     ],
     "cool_AJ1": [
@@ -2957,11 +2934,11 @@
         ],
         [
             "Oh. Hi, y_c. What is it?",
-	    "[You start telling t_c about your day, but they just nod along, clearly not paying attention.]",
-	    "Mhm. Mhm. Oh, wow, that’s great.",
-	    "Oh, well wouldja look at the time! Unfortunately, it seems like I have to go do something else now.",
-	    "But, ah, thanks for stopping by, and everything. You know I always love our talks. *Snrk*",
-	    "[t_c's words are nice, but somehow, you can't help feeling a little slighted ...]"
+            "[You start telling t_c about your day, but they just nod along, clearly not paying attention.]",
+            "Mhm. Mhm. Oh, wow, that’s great.",
+            "Oh, well wouldja look at the time! Unfortunately, it seems like I have to go do something else now.",
+            "But, ah, thanks for stopping by, and everything. You know I always love our talks. *Snrk*",
+            "[t_c's words are nice, but somehow, you can't help feeling a little slighted ...]"
         ]
     ],
     "cool_AJ1": [
@@ -2972,10 +2949,10 @@
         ],
         [
             "So, y_c, I hear you want romantic advice, huh? Well, you’ve come to the right cat. Everybody seems to fall head over paws for me, and I can’t quite figure out why …",
-	    "Whatever the case, it’s all about confidence. And coolness. You gotta be smooth, play hard to get …",
-	    "Ah, who am I kidding. You’re such a catch, m_c, I’m sure you could have any cat in the whole clan you wanted.",
-	    "And, uh, I’m not just saying that either, y’know. I … I really mean it.",
-	    "[t_c hits you with one of their trademark grins, but for some reason, it seems a bit deeper this time. A bit more pained.]"
+            "Whatever the case, it’s all about confidence. And coolness. You gotta be smooth, play hard to get …",
+            "Ah, who am I kidding. You’re such a catch, m_c, I’m sure you could have any cat in the whole clan you wanted.",
+            "And, uh, I’m not just saying that either, y’know. I … I really mean it.",
+            "[t_c hits you with one of their trademark grins, but for some reason, it seems a bit deeper this time. A bit more pained.]"
         ]
     ],
     "brooding_1": [
@@ -3027,14 +3004,13 @@
             "upstanding",
             "they_blind",
             "you_blind",
-	    "random_cat",
-	    "neutral"
+            "neutral"
         ],
         [
             "y_c, what in StarClan’s name are you doing just lazing around camp? You should be out training! Or taking extra patrols! Or - Or …",
-	    "*Sigh*. I’m sorry. I guess I’m just more stressed than usual lately. I shouldn’t take it out on you. Maybe a walk to clear my head is what I need.",
-	    "And on my walk, maybe I can check the twolegplace border, and harvest from the herb gardens for r_m, and help restock the prey pile …",
-	    "... What? Nothing wrong with multitasking!"
+            "*Sigh*. I’m sorry. I guess I’m just more stressed than usual lately. I shouldn’t take it out on you. Maybe a walk to clear my head is what I need.",
+            "And on my walk, maybe I can check the twolegplace border, and harvest from the herb gardens for r_m, and help restock the prey pile …",
+            "... What? Nothing wrong with multitasking!"
         ]
     ],
     "neurotic_1": [
@@ -3051,7 +3027,6 @@
     "necrotic_gen8": [
         [
             "no_kit",
-            "random_cat",
             "neurotic",
             "they_younger",
             "trust"
@@ -3106,7 +3081,6 @@
         [
             "Any",
             "neurotic",
-            "random_cat",
             "you_blind"
         ],
         [
@@ -3446,7 +3420,6 @@
         [
             "Any",
             "sweet",
-            "random_cat",
             "you_ill",
             "you_blind"
         ],
@@ -5146,7 +5119,6 @@
             "Any",
             "Introspective",
             "from_mate",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -5177,8 +5149,7 @@
         [
             "Any",
             "Introspective",
-            "from_mate",
-            "random_cat"
+            "from_mate"
         ],
         [
             "Hey, y_c. Would you like to do some cat watching with me?",
@@ -5208,8 +5179,7 @@
     "silly_gen_party": [
         [
             "Any",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "Greetings, y_c! So, I've been working on this BIG plan of mine, and I need feedback...",
@@ -5281,8 +5251,7 @@
     "silly_gen_plants": [
         [
             "Any",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "You wanna learn something really stupid about plants? No? Well, too bad, y_c!",
@@ -5491,7 +5460,6 @@
             "Any",
             "silly",
             "leafbare",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -5543,8 +5511,7 @@
         [
             "medicine cat apprentice",
             "medicine cat",
-            "brooding",
-            "random_cat"
+            "brooding"
         ],
         [
             "Erm ... Hi.",
@@ -5689,7 +5656,6 @@
             "mediator apprentice",
             "mediator",
             "brooding",
-            "random_cat",
             "unabashed",
             "they_blind"
         ],
@@ -5914,7 +5880,6 @@
             "deputy",
             "leader",
             "brooding",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -5987,7 +5952,6 @@
             "platonic_like",
             "comfort",
             "trust",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -6005,7 +5969,6 @@
             "platonic_like",
             "comfort",
             "trust",
-            "random_cat",
             "leaffall",
             "they_blind",
             "leafbare"
@@ -6023,8 +5986,7 @@
             "platonic_like",
             "comfort",
             "trust",
-            "they_blind",
-            "random_cat"
+            "they_blind"
         ],
         [
             "I overheard this so-called 'joke' the other day, but I didn't find it very funny. Maybe you can help me figure it out, y_c.",
@@ -6041,8 +6003,7 @@
             "platonic_like",
             "comfort",
             "trust",
-            "they_blind",
-            "random_cat"
+            "they_blind"
         ],
         [
             "What's that? You want to know how I'm ... feeling?",
@@ -6058,8 +6019,7 @@
             "platonic_like",
             "comfort",
             "trust",
-            "they_blind",
-            "random_cat"
+            "they_blind"
         ],
         [
             "Mm.",
@@ -6072,8 +6032,7 @@
             "brooding",
             "platonic_like",
             "comfort",
-            "trust",
-            "random_cat"
+            "trust"
         ],
         [
             "I encountered a rather large bird out on patrol today. It would've made a great meal for the Clan.",
@@ -6088,8 +6047,7 @@
         [
             "any",
             "brooding",
-            "platonic_love",
-            "random_cat"
+            "platonic_love"
         ],
         [
             "[You watch r_a try again and again to make t_c laugh.]",
@@ -6723,7 +6681,6 @@
             "any",
             "insult",
             "neurotic",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -7033,8 +6990,7 @@
             "any",
             "insult",
             "unlawful",
-            "they_blind",
-            "random_cat"
+            "they_blind"
         ],
         [
             "...You're lucky that r_c is here. Otherwise, I don't think you'd want to know what I would do to you."
@@ -7399,8 +7355,7 @@
             "comfort",
             "trust",
             "romantic_like",
-            "from_mate",
-            "random_cat"
+            "from_mate"
         ],
         [
             "[You watch r_a try again and again to make t_c laugh.]",
@@ -7453,8 +7408,7 @@
         [
             "any",
             "platonic_love",
-            "brooding",
-            "random_cat"
+            "brooding"
         ],
         [
             "[You're chatting with r_c when t_c races up to you, huge grin on their face.]",
@@ -7486,7 +7440,6 @@
             "any",
             "platonic_love",
             "brooding",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -7501,8 +7454,7 @@
         [
             "any",
             "platonic_like",
-            "brooding",
-            "random_cat"
+            "brooding"
         ],
         [
             "[You're telling r_c a story from earlier, with t_c close by.]",
@@ -7544,7 +7496,6 @@
             "Any",
             "stable",
             "sweet",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -7571,7 +7522,6 @@
             "stable",
             "upstanding",
             "introspective",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -7689,7 +7639,6 @@
             "unabashed",
             "unlawful",
             "leaffall",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -7758,8 +7707,7 @@
         [
             "Any",
             "silly",
-            "from_mate",
-            "random_cat"
+            "from_mate"
         ],
         [
             "[You and t_c are sitting at the edge of camp together, lazily watching the day pass you by.]",
@@ -8206,7 +8154,6 @@
         [
             "no_kit",
             "cool",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -8264,8 +8211,7 @@
         [
             "Any",
             "cool",
-            "platonic_love",
-            "random_cat"
+            "platonic_love"
         ],
         [
             "[t_c catches you eyeing a juicy mouse r_w brought in from across camp.]",
@@ -8279,7 +8225,6 @@
         [
             "upstanding",
             "Any",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -8417,7 +8362,6 @@
             "Any",
             "you_injured",
             "you_ill",
-            "random_cat",
             "stable",
             "assertive",
             "cool",
@@ -8937,8 +8881,7 @@
             "assertive",
             "cool",
             "unabashed",
-            "unlawful",
-            "random_cat"
+            "unlawful"
         ],
         [
             "[t_c is talking with r_c across camp.]",
@@ -8994,8 +8937,7 @@
     "bloodthirsty_gen1": [
         [
             "Any",
-            "bloodthirsty",
-            "random_cat"
+            "bloodthirsty"
         ],
         [
             "I wonder if our insides are similar to the insides of prey. We're all living creatures, after all.",
@@ -9085,8 +9027,7 @@
             "Any",
             "brooding",
             "unlawful",
-            "platonic_love",
-            "random_cat"
+            "platonic_love"
         ],
         [
             "y_c, I just caught r_c looking at you funny. Are they giving you a hard time?",
@@ -9099,8 +9040,7 @@
             "Any",
             "brooding",
             "unlawful",
-            "platonic_love",
-            "random_cat"
+            "platonic_love"
         ],
         [
             "y_c, I've been having dreams about you lately. It's gotten so bad it's been keeping me up at night.",
@@ -9315,7 +9255,6 @@
         [
             "Any",
             "neurotic",
-            "random_cat",
             "platonic_like"
         ],
         [
@@ -9370,8 +9309,7 @@
         [
             "no_kit",
             "neurotic",
-            "platonic_love",
-            "random_cat"
+            "platonic_love"
         ],
         [
             "Hey ... I saw you hanging out with r_c earlier. They're a fun cat, huh?",
@@ -9487,7 +9425,6 @@
             "Any",
             "neurotic",
             "dislike",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9502,7 +9439,6 @@
             "Any",
             "neurotic",
             "romantic_like",
-            "random_cat",
             "non-mates",
             "they_blind"
         ],
@@ -9520,8 +9456,7 @@
         [
             "Any",
             "neurotic",
-            "romantic_like",
-            "random_cat"
+            "romantic_like"
         ],
         [
             "[t_c does an impression of r_c that's so accurate, you can't help but crack up.]",
@@ -9657,7 +9592,6 @@
             "Any",
             "neurotic",
             "from_mate",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9677,7 +9611,6 @@
             "stable",
             "brooding",
             "neurotic",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9694,7 +9627,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind",
             "they_deaf"
         ],
@@ -9727,7 +9659,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind",
             "they_deaf"
         ],
@@ -9756,7 +9687,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9801,7 +9731,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9814,7 +9743,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9843,7 +9771,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9857,7 +9784,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9870,7 +9796,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9882,8 +9807,7 @@
         [
             "any",
             "from_your_kit",
-            "from_adopted_kit",
-            "random_cat"
+            "from_adopted_kit"
         ],
         [
             "Oh, hey, y_c! I learned this really cool new thing today, it's like ...",
@@ -9896,7 +9820,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9910,7 +9833,6 @@
             "any",
             "from_your_kit",
             "from_adopted_kit",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -9923,7 +9845,6 @@
     "thoughtful_mate": [
         [
             "no_kit",
-            "random_cat",
             "sweet",
             "stable",
             "introspective",
@@ -9939,7 +9860,6 @@
     "excited_mate": [
         [
             "Any",
-            "random_cat",
             "sweet",
             "stable",
             "upstanding",
@@ -9954,7 +9874,6 @@
     "calm_mate": [
         [
             "Any",
-            "random_cat",
             "introspective",
             "stable",
             "brooding"
@@ -9969,7 +9888,6 @@
     "gen_mate2": [
         [
             "Any",
-            "random_cat",
             "leaffall",
             "leafbare",
             "they_blind",
@@ -9983,7 +9901,6 @@
     "gen_mate3": [
         [
             "Any",
-            "random_cat",
             "silly",
             "cool",
             "they_blind",
@@ -9999,7 +9916,6 @@
     "gen_mate4": [
         [
             "Any",
-            "random_cat",
             "cool",
             "sweet",
             "neurotic",
@@ -10014,7 +9930,6 @@
     "gen_mate5": [
         [
             "Any",
-            "random_cat",
             "platonic_like",
             "cool",
             "assertive",
@@ -10033,7 +9948,6 @@
     "gen_mate6": [
         [
             "no_kit",
-            "random_cat",
             "platonic_like",
             "introspective",
             "upstanding"
@@ -10049,7 +9963,6 @@
     "gen_mate7": [
         [
             "any",
-            "random_cat",
             "platonic_like",
             "assertive",
             "sweet",
@@ -10066,7 +9979,6 @@
     "gen_mate07": [
         [
             "any",
-            "random_cat",
             "from_parent",
             "from_adopted_parent",
             "they_blind",
@@ -10098,7 +10010,6 @@
         [
             "Any",
             "assertive",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -10110,7 +10021,6 @@
         [
             "Any",
             "assertive",
-            "random_cat",
             "non-related"
         ],
         [
@@ -10126,7 +10036,6 @@
             "Any",
             "assertive",
             "upstanding",
-            "random_cat",
             "non-related"
         ],
         [
@@ -10142,7 +10051,6 @@
             "Any",
             "assertive",
             "cool",
-            "random_cat",
             "they_blind",
             "they_deaf"
         ],
@@ -10417,7 +10325,6 @@
             "any",
             "they_ill",
             "they_injured",
-            "random_cat",
             "they_blind",
             "they_deaf"
         ],
@@ -10432,7 +10339,6 @@
             "any",
             "they_ill",
             "they_injured",
-            "random_cat",
             "dead_close"
         ],
         [
@@ -10451,7 +10357,6 @@
             "any",
             "they_ill",
             "they_injured",
-            "random_cat",
             "they_app",
             "they_blind"
         ],
@@ -10468,7 +10373,6 @@
             "they_injured",
             "sibling",
             "adopted_sibling",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -10483,7 +10387,6 @@
             "they_injured",
             "from_parent",
             "from_adopted_parent",
-            "random_cat",
             "platonic_like",
             "they_blind"
         ],
@@ -10501,7 +10404,6 @@
             "they_injured",
             "from_parent",
             "from_adopted_parent",
-            "random_cat",
             "platonic_like",
             "they_blind",
             "they_deaf"
@@ -10530,7 +10432,6 @@
             "any",
             "they_ill",
             "they_injured",
-            "random_cat",
             "platonic_love"
         ],
         [
@@ -10577,7 +10478,6 @@
             "they_injured",
             "from_parent",
             "from_adopted_parent",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -10703,7 +10603,6 @@
             "medicine cat apprentice",
             "queen's apprentice",
             "silly",
-            "random_cat",
             "from_mentor",
             "they_blind"
         ],
@@ -10720,7 +10619,6 @@
             "medicine cat apprentice",
             "queen's apprentice",
             "silly",
-            "random_cat",
             "from_mentor",
             "they_blind"
         ],
@@ -10754,7 +10652,6 @@
             "medicine cat apprentice",
             "queen's apprentice",
             "silly",
-            "random_cat",
             "from_mentor"
         ],
         [
@@ -10770,7 +10667,6 @@
             "medicine cat apprentice",
             "silly",
             "from_mentor",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -10855,7 +10751,6 @@
         [
             "Any",
             "silly",
-            "random_cat",
             "from_parent",
             "they_blind",
             "you_blind"
@@ -10876,7 +10771,6 @@
             "unlawful",
             "brooding",
             "trust",
-            "random_cat",
             "non-related",
             "they_blind"
         ],
@@ -10895,7 +10789,6 @@
             "silly",
             "assertive",
             "platonic_like",
-            "random_cat",
             "non-related",
             "they_younger",
             "they_blind"
@@ -10909,8 +10802,7 @@
     "neurotic_siblings": [
         [
             "no_kit",
-            "neurotic",
-            "random_cat"
+            "neurotic"
         ],
         [
             "[t_c gazes into a puddle apprehensively.]",
@@ -10923,7 +10815,6 @@
         [
             "no_kit",
             "platonic_like",
-            "random_cat",
             "non-related",
             "they_blind"
         ],
@@ -10939,7 +10830,6 @@
         [
             "no_kit",
             "platonic_like",
-            "random_cat",
             "from_mate",
             "they_blind"
         ],
@@ -10952,7 +10842,6 @@
     "about_kit": [
         [
             "no_kit",
-            "random_cat",
             "platonic_like",
             "non-related"
         ],
@@ -10965,7 +10854,6 @@
     "about_kit3": [
         [
             "no_kit",
-            "random_cat",
             "platonic_like",
             "non-related",
             "neurotic",
@@ -10987,7 +10875,6 @@
     "about_kit4": [
         [
             "no_kit",
-            "random_cat",
             "trust",
             "non-related"
         ],
@@ -11000,7 +10887,6 @@
     "about_kit2": [
         [
             "no_kit",
-            "random_cat",
             "platonic_like",
             "non-related",
             "neurotic",
@@ -11029,7 +10915,6 @@
             "unlawful",
             "unabashed",
             "stable",
-            "random_cat",
             "non-related",
             "they_older",
             "they_blind"
@@ -11050,7 +10935,6 @@
             "unlawful",
             "unabashed",
             "silly",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -11070,7 +10954,6 @@
             "unabashed",
             "silly",
             "cool",
-            "random_cat",
             "platonic_like",
             "non-related",
             "they_blind"
@@ -11088,7 +10971,6 @@
         [
             "no_kit",
             "platonic_like",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -11101,7 +10983,6 @@
     "gen_siblings1": [
         [
             "Any",
-            "random_cat",
             "non-related",
             "they_blind"
         ],
@@ -11113,7 +10994,6 @@
     "gen_siblings2": [
         [
             "Any",
-            "random_cat",
             "platonic_like",
             "non-related",
             "they_blind"
@@ -11128,7 +11008,6 @@
     "gen_siblings3": [
         [
             "Any",
-            "random_cat",
             "platonic_like",
             "non-related"
         ],
@@ -11152,7 +11031,6 @@
             "cool",
             "brooding",
             "neurotic",
-            "random_cat",
             "platonic_like",
             "they_app",
             "non-related",
@@ -11167,7 +11045,6 @@
     "about_kit1": [
         [
             "no_kit",
-            "random_cat",
             "platonic_like",
             "non-related",
             "they_blind"
@@ -11181,7 +11058,6 @@
     "about_kit15": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "they_blind",
             "they_deaf"
@@ -11195,7 +11071,6 @@
     "about_kit5": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "silly",
             "assertive",
@@ -11210,7 +11085,6 @@
     "about_kit6": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "silly",
             "assertive",
@@ -11229,7 +11103,6 @@
     "about_kit7": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "assertive",
             "unabashed",
@@ -11244,7 +11117,6 @@
     "about_kit8": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "silly",
             "unlawful",
@@ -11259,7 +11131,6 @@
     "about_kit9": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "neurotic",
             "they_blind"
@@ -11274,7 +11145,6 @@
     "about_kit10": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "neurotic",
             "brooding",
@@ -11288,7 +11158,6 @@
     "about_kit11": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "brooding",
             "they_blind"
@@ -11302,7 +11171,6 @@
     "about_kit12": [
         [
             "no_kit",
-            "random_cat",
             "they_blind",
             "they_deaf"
         ],
@@ -11315,7 +11183,6 @@
     "about_kit13": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "silly",
             "assertive",
@@ -11332,7 +11199,6 @@
     "about_kit14": [
         [
             "no_kit",
-            "random_cat",
             "non-related",
             "stable",
             "introspective"
@@ -11439,7 +11305,6 @@
     "about_parent": [
         [
             "no_kit",
-            "random_cat",
             "platonic_like",
             "neurotic",
             "brooding",
@@ -11455,7 +11320,6 @@
     "about_parent1": [
         [
             "Any",
-            "random_cat",
             "they_younger",
             "brooding",
             "they_blind"
@@ -11470,7 +11334,6 @@
     "about_parent3": [
         [
             "Any",
-            "random_cat",
             "sweet",
             "stable",
             "introspective",
@@ -11485,8 +11348,7 @@
     ],
     "about_parent4": [
         [
-            "Any",
-            "random_cat"
+            "Any"
         ],
         [
             "Hey, y_c, how do you think these feathers look in my fur?",
@@ -11499,8 +11361,7 @@
     ],
     "parent_issues": [
         [
-            "Any",
-            "random_cat"
+            "Any"
         ],
         [
             "[t_c watches t_p_negative across camp with an intense glare.]",
@@ -11511,7 +11372,6 @@
     "parent_issues_1": [
         [
             "Any",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -11523,7 +11383,6 @@
     "parent_issues_2": [
         [
             "Any",
-            "random_cat",
             "platonic_love",
             "they_blind",
             "you_blind"
@@ -11539,7 +11398,6 @@
     "parent_issues_3": [
         [
             "Any",
-            "random_cat",
             "trust"
         ],
         [
@@ -11582,7 +11440,6 @@
             "silly",
             "unlawful",
             "unabashed",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -11665,7 +11522,6 @@
         [
             "Any",
             "unlawful",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -11680,7 +11536,6 @@
         [
             "Any",
             "unlawful",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -11737,8 +11592,7 @@
         [
             "mediator apprentice",
             "mediator",
-            "unlawful",
-            "random_cat"
+            "unlawful"
         ],
         [
             "Look, if this is about r_c's stupid pebble, tell them that they're never getting it back!",
@@ -11749,8 +11603,7 @@
     "unlawful_gen8": [
         [
             "Any",
-            "unlawful",
-            "random_cat"
+            "unlawful"
         ],
         [
             "Ah! I wasn't doing anything suspicious!",
@@ -11761,8 +11614,7 @@
     "unlawful_gen9": [
         [
             "Any",
-            "unlawful",
-            "random_cat"
+            "unlawful"
         ],
         [
             "Ah! I wasn't doing anything suspicious!",
@@ -11803,7 +11655,6 @@
         [
             "no_kit",
             "unlawful",
-            "random_cat",
             "you_upstanding",
             "you_stable",
             "you_assertive",
@@ -11954,7 +11805,6 @@
             "cool",
             "unlawful",
             "leafbare",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -11985,7 +11835,6 @@
             "Any",
             "cool",
             "newleaf",
-            "random_cat",
             "you_blind"
         ],
         [
@@ -12184,7 +12033,6 @@
             "from_mentor",
             "brooding",
             "platonic_like",
-            "random_cat",
             "they_blind"
         ],
         [
@@ -12231,8 +12079,7 @@
             "any",
             "from_mentor",
             "brooding",
-            "dislike",
-            "random_cat"
+            "dislike"
         ],
         [
             "[Sigh ... Of course, just your luck that you'd end up with the most brooding, impersonable cat in the Clan as your mentor.]",
@@ -12246,8 +12093,7 @@
             "any",
             "from_mentor",
             "brooding",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "[t_c catches you staring at them from across camp and smiles.]",
@@ -12347,7 +12193,6 @@
             "neurotic",
             "sibling",
             "adopted_sibling",
-            "random_cat",
             "they_blind",
             "you_blind"
         ],
@@ -14430,8 +14275,7 @@
         [
             "any",
             "you_shunned",
-            "unlawful",
-            "random_cat"
+            "unlawful"
         ],
         [
             "Word to the wise, if you wanna get away with it next time, you should pick me as an accomplice.",
@@ -14442,8 +14286,7 @@
         [
             "any",
             "you_shunned",
-            "they_apprentice",
-            "random_cat"
+            "they_apprentice"
         ],
         [
             "[The apprentices observe you from across the camp, wide-eyed, then dash off in a flurry of whispers.]",
@@ -15691,7 +15534,7 @@
             "Don't mess it up again. I doubt they'll be so kind a second time."
         ]
     ],
-    "they_ur_J18" : [
+    "they_ur_J18": [
         [
             "they_ur",
             "any",
@@ -15893,7 +15736,6 @@
             "[It must be a StarClan cat! You turn to the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
-
     "you_ur_J13": [
         [
             "you_ur",
@@ -15952,7 +15794,6 @@
             "you_dftrainee"
         ],
         [
-
             "[t_c approaches you with a wide smile.]",
             "It's a shame you were caught, but honestly? You can see now just how little they value you.",
             "Casting you aside for such a little thing like that... It's telling, isn't it? But don't worry, y_c.",
@@ -15975,7 +15816,6 @@
             "You can overcome it. Consider it training. And remember, as your true Clanmates, we'll never abandon you."
         ]
     ],
-
     "they_df_sh_R5": [
         [
             "they_df",
@@ -15988,10 +15828,9 @@
             "Oh, your Clan has shunned you? That's gotta be awful!",
             "Well, I can't help you there, but I can here! I don't care what you've done. Everyone has something to hide here.",
             "There's no shame in anything you've done. Even if you decide you want forgiveness that's fine.",
-            "Who are we to tell you how to live your life? We're dead! Ha, it would be really foolish to take our advice on the living." 
+            "Who are we to tell you how to live your life? We're dead! Ha, it would be really foolish to take our advice on the living."
         ]
     ],
-
     "they_df_sh_R6": [
         [
             "they_df",
@@ -16010,7 +15849,7 @@
             "[You land a fierce swipe on t_c and they back off with a wild grin.]",
             "That's what I'm talking about! See? And don't you feel better now? There's no need to worry about whatever nonsense your Clanmates have done.",
             "Just clear your mind and remind yourself where you truly belong. We'll never see you differently, no matter what.",
-            "Now, let's see you do that again! Faster!" 
+            "Now, let's see you do that again! Faster!"
         ]
     ],
     "trainee_J1": [
@@ -16021,7 +15860,6 @@
             "brooding",
             "cool",
             "you_blind"
-            
         ],
         [
             "Don't think I haven't seen you sculking through the Dark Forest, traitor.",
@@ -16125,7 +15963,6 @@
             "from_parent",
             "you_orphaned",
             "they_ur",
-
             "you_ur",
             "any"
         ],
@@ -16135,7 +15972,7 @@
             "I wonder why you're here, then."
         ]
     ],
-   "UR_H1": [
+    "UR_H1": [
         [
             "they_ur",
             "you_ur",
@@ -16193,7 +16030,7 @@
             "you_ur",
             "you_blind",
             "they_blind",
-	        "no_kit"
+            "no_kit"
         ],
         [
             "I kinda feel bad for those in StarClan and the Dark Forest.",
@@ -16298,7 +16135,7 @@
             "But I think I'm okay with it. I'm not sure what I would do in StarClan or the Dark Forest. Something tells me I'll be bored out of my mind."
         ]
     ],
-   "UR_backstory_H4": [
+    "UR_backstory_H4": [
         [
             "they_ur",
             "you_ur",
@@ -16725,8 +16562,7 @@
             "[Good riddance.]"
         ]
     ],
-    
-   "Living_strange_H2": [
+    "Living_strange_H2": [
         [
             "strange",
             "they_living",
@@ -16859,7 +16695,7 @@
             "You matter too much for this! Don't worry, I'll see if I can find any herbs down here... if they exist."
         ]
     ],
-"sweet_trainee_PS8": [
+    "sweet_trainee_PS8": [
         [
             "no_kit",
             "you_df",
@@ -16950,7 +16786,7 @@
         [
             "Think we'll learn something new tonight? I hope so."
         ]
-        ],
+    ],
     "both_trainee_2c": [
         [
             "they_dftrainee",
@@ -16966,7 +16802,7 @@
             "W-wha-? No, of course not!",
             "[t_c flushes and hurries away.]"
         ]
-        ],
+    ],
     "both_trainee_3c": [
         [
             "they_dftrainee",
@@ -16978,7 +16814,7 @@
         [
             "Even though we're both training in the Dark Forest... it doesn't mean we'll end up there, right? After we die?"
         ]
-        ],
+    ],
     "both_trainee_4c": [
         [
             "they_dftrainee",
@@ -16989,7 +16825,7 @@
             "[t_c glances around, before leaning forward to whisper in your ear.]",
             "I saw you last night... in the Dark Forest. You fought well."
         ]
-        ],
+    ],
     "both_trainee_5c": [
         [
             "they_dftrainee",
@@ -17051,7 +16887,7 @@
             "you_medicine cat",
             "you_not_dftrainee",
             "they_dftrainee",
-             "sweet"
+            "sweet"
         ],
         [
             "[You smell the familiar scent of blood and follow it, finding y_c tending to their wounds.]",
@@ -17063,11 +16899,10 @@
         [
             "no_kit",
             "you_warrior",
-            "random_cat",
             "from_your_apprentice",
             "you_not_dftrainee",
             "they_dftrainee",
-             "sweet",
+            "sweet",
             "you_blind",
             "they_blind"
         ],
@@ -17112,7 +16947,7 @@
             "from_df_apprentice",
             "they_younger",
             "any",
-                    "they_blind"
+            "they_blind"
         ],
         [
             "[You're watching t_c train. They're panting hard, repeating the moves you've taught them over and over again.]",
@@ -17121,7 +16956,7 @@
             "[t_c's ears droop, but they go back to practice. You know you push them hard, but it's for their own good.]",
             "[You don't want t_c to make the same mistakes you did.]"
         ]
-        ],
+    ],
     "trainee_df_2c": [
         [
             "they_dftrainee",
@@ -17134,7 +16969,7 @@
             "Teach me something hard, y_c.",
             "I need to be strong enough to protect t_l."
         ]
-        ],
+    ],
     "trainee_df_2_2c": [
         [
             "they_dftrainee",
@@ -17147,7 +16982,7 @@
             "Teach me something hard today, y_c.",
             "I need to be strong enough to protect t_kk."
         ]
-        ],
+    ],
     "trainee_df_3c": [
         [
             "they_dftrainee",
@@ -17159,7 +16994,7 @@
         [
             "If StarClan cares so much about the Clans, why don't they have their own trainees?"
         ]
-        ],
+    ],
     "trainee_df_4c": [
         [
             "they_dftrainee",
@@ -17305,10 +17140,9 @@
             "You've been slacking in your training recently, y_c. Don't think I haven't noticed.",
             "No, not your Clan training. What m_n teaches you is worthless compared to what I teach you.",
             "Here is where you really learn."
-        
         ]
-        ],
-        "df_trainee_2c": [
+    ],
+    "df_trainee_2c": [
         [
             "any",
             "you_dftrainee",
@@ -17321,8 +17155,8 @@
             "Is it power? Revenge? Or maybe you wish to be feared?",
             "Whatever it is, know this: the Dark Forest does not give without taking."
         ]
-        ],
-        "df_trainee_3c": [
+    ],
+    "df_trainee_3c": [
         [
             "any",
             "you_dftrainee",
@@ -17353,7 +17187,7 @@
             "It's an old power. Only powerful cats have learnt it, and it only works on those who are weak-willed.",
             "Watch this.",
             "[t_c digs into the sludge, scooping up a pawful and showing it to you. The sludge briefly takes the form of a flower.]",
-            "[But you still smell it's sickly rotten scent, and the flower flickers -- then turns back into muck.]" ,
+            "[But you still smell it's sickly rotten scent, and the flower flickers -- then turns back into muck.]",
             "Good. It didn't work on you. Just as I expected from my trainee."
         ]
     ],
@@ -17369,7 +17203,7 @@
             "[You ask t_c about their past and how they ended up in the Dark Forest.]",
             "[t_c turns on you with a snarl.]",
             "Never ask me that again."
-      ]
+        ]
     ],
     "UR_parent_H3": [
         [
@@ -17484,7 +17318,6 @@
             "Shhh!! Shh, I know I'm not dead. Now... be quiet.",
             "[t_c gives you a suspicious look and slowly pulls their paw from your face.]",
             "I can see you and talk to you, isn't that exciting?? I thought dead cats would be more excited..."
-
         ]
     ],
     "they_df_sh_R7": [

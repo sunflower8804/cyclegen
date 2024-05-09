@@ -261,14 +261,12 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    
     "assertive_apprentice7": [
         [
             "no_kit",
             "platonic_like",
             "assertive",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
@@ -442,8 +440,7 @@
             "Any",
             "assertive",
             "neutral",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "y_c, can you believe it? I actually got to mediate a real, serious argument today! Eeee, so cool!!!",
@@ -455,8 +452,7 @@
         [
             "Any",
             "assertive",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "Er, sorry, y_c. I can't chat right now ...",
@@ -467,8 +463,7 @@
     "assertive_elder_3": [
         [
             "mediator",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Knowing what we know from mediating their conflicts, if everyone in camp got into a fight ... Who d'you think would win?",
@@ -661,8 +656,7 @@
         [
             "Any",
             "assertive",
-            "from_your_apprentice",
-            "random_cat"
+            "from_your_apprentice"
         ],
         [
             "y_c? I might've ... goofed something up.",
@@ -676,8 +670,7 @@
     "assertivemediatorapp_8": [
         [
             "mediator",
-            "mediator apprentice",
-            "random_cat"
+            "mediator apprentice"
         ],
         [
             "*Sigh* Looks like the warriors are fighting again ...",
@@ -860,7 +853,6 @@
     "sweet_mediapp_2": [
         [
             "kitten",
-            "random_cat",
             "sweet"
         ],
         [
@@ -885,7 +877,6 @@
     "sweet_mediapp_4": [
         [
             "kitten",
-            "random_cat",
             "sweet"
         ],
         [
@@ -972,7 +963,6 @@
             "medicine cat",
             "mediator",
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -987,7 +977,6 @@
             "medicine cat",
             "mediator",
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1004,7 +993,6 @@
     "sweet_mediapp_13": [
         [
             "warrior",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1015,7 +1003,6 @@
     "sweet_mediapp_14": [
         [
             "medicine cat",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1042,7 +1029,6 @@
     "sweet_mediapp_16": [
         [
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1080,7 +1066,6 @@
     "sweet_mediapp_19": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1094,7 +1079,6 @@
     "sweet_mediapp_20": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1106,7 +1090,6 @@
     "sweet_mediapp_21": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1118,7 +1101,6 @@
     "sweet_mediapp_22": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1131,7 +1113,6 @@
     "sweet_mediapp_23": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1146,7 +1127,6 @@
     "sweet_mediapp_24": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1172,8 +1152,7 @@
         [
             "no_kit",
             "neurotic",
-            "upstanding",
-            "random_cat"
+            "upstanding"
         ],
         [
             "Gah, stupid, stupid, so stupid, t_c ...",
@@ -1191,7 +1170,6 @@
         [
             "no_kit",
             "neurotic",
-            "random_cat",
             "trust"
         ],
         [

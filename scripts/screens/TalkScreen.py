@@ -681,13 +681,13 @@ class TalkScreen(Screens):
             if any(i in you_backstory_list for i in tags):
                 ts = you_backstory_list
                 for j in range(len(ts)):
-                    ts[j] = ts[j][3:]
+                    ts[j] = ts[j][4:]
                 if you.backstory not in ts:
                     continue
             if any(i in they_backstory_list for i in tags):
                 ts = they_backstory_list
                 for j in range(len(ts)):
-                    ts[j] = ts[j][4:]
+                    ts[j] = ts[j][5:]
                 if cat.backstory not in ts:
                     continue
 

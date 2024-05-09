@@ -82,8 +82,7 @@
         [
             "apprentice",
             "brooding",
-            "dislike",
-            "random_cat"
+            "dislike"
         ],
         [
             "[After a lot of pestering from the kits, you agree to show off some of the skills m_n taught you, and host a little training session.]",
@@ -378,7 +377,6 @@
         [
             "mediator apprentice",
             "mediator",
-            "random_cat",
             "assertive",
             "unabashed"
         ],
@@ -393,7 +391,6 @@
             "mediator apprentice",
             "mediator",
             "assertive",
-            "random_cat",
             "silly",
             "unlawful",
             "cool"
@@ -464,7 +461,6 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    
     "assertive_1": [
         [
             "Any",
@@ -482,8 +478,7 @@
     "assertive_elder": [
         [
             "Any",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Did you see r_c earlier today, y_c? Oh, StarClan, it was the funniest thing ever!",
@@ -509,7 +504,6 @@
             "mediator",
             "mediator apprentice",
             "assertive",
-            "random_cat",
             "platonic_like",
             "comfort",
             "trust",
@@ -532,8 +526,7 @@
         [
             "mediator",
             "mediator apprentice",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
@@ -585,8 +578,7 @@
     "assertive_elder_6": [
         [
             "deputy",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "We're getting close to the gathering ... Better start thinking about who should go.",
@@ -598,7 +590,6 @@
         [
             "deputy",
             "assertive",
-            "random_cat",
             "platonic_like"
         ],
         [
@@ -612,7 +603,6 @@
         [
             "deputy",
             "assertive",
-            "random_cat",
             "dislike"
         ],
         [
@@ -1203,8 +1193,7 @@
             "Any",
             "assertive",
             "unabashed",
-            "romantic_like",
-            "random_cat"
+            "romantic_like"
         ],
         [
             "What's that? One of the kits told you your ears are too big?",
@@ -1442,7 +1431,6 @@
             "queen's apprentice",
             "mediator apprentice",
             "brooding",
-            "random_cat",
             "neutral",
             "non-related"
         ],
@@ -1500,8 +1488,7 @@
             "queen",
             "brooding",
             "stable",
-            "introspective",
-            "random_cat"
+            "introspective"
         ],
         [
             "Hey, I saw you talking with r_k earlier.",
@@ -1517,8 +1504,7 @@
             "queen",
             "brooding",
             "introspective",
-            "platonic_love",
-            "random_cat"
+            "platonic_love"
         ],
         [
             "*Wince* Oof ...",
@@ -1590,8 +1576,7 @@
     "newborn_fromleader1": [
         [
             "newborn",
-            "neutral",
-            "random_cat"
+            "neutral"
         ],
         [
             "Hm ...",
@@ -1628,7 +1613,6 @@
     "sweet_leader_1": [
         [
             "newborn",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1660,8 +1644,7 @@
     "sweet_leader_4": [
         [
             "kitten",
-            "sweet",
-            "random_cat"
+            "sweet"
         ],
         [
             "Hm? Oh, it's just you, y_c. How are you doing this evening?",
@@ -1743,7 +1726,6 @@
     "sweet_leader_10": [
         [
             "mediator apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1792,7 +1774,6 @@
     "sweet_leader_13": [
         [
             "warrior",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1818,7 +1799,6 @@
     "sweet_leader_15": [
         [
             "mediator",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1831,7 +1811,6 @@
     "sweet_leader_16": [
         [
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1858,7 +1837,6 @@
     "sweet_leader_18": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
