@@ -2456,7 +2456,7 @@ class ProfileScreen(Screens):
                                                                 image_cache.load_image(f"resources/images/faith{self.the_cat.faith}.png").convert_alpha())
         self.faith_bar.disable()
         self.faith_text = UITextBoxTweaked(self.get_faith_text(self.the_cat.faith),
-                                                        scale(pygame.Rect((420, 1100), (870, 298))),
+                                                        scale(pygame.Rect((410, 1100), (850, 298))),
                                                         object_id="#text_box_26_horizleft_pad_10_14",
                                                         line_spacing=1, manager=MANAGER)
         
