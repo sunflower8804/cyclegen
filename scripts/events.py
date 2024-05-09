@@ -407,10 +407,11 @@ class Events:
                 SaveError(traceback.format_exc())
     
     def add_freshkill(self):
+        """Adds amount of freshkill needed for the Clan"""
         game.clan.freshkill_pile.add_freshkill(game.clan.freshkill_pile.amount_food_needed())
 
-
     def generate_dialogue_focus(self):
+        """Handles dialogue focus for each moon, generating conditional focuses for specific events (war, starving) or random chance focuses (valentines, quality of leadership)"""
         resource_dir = "resources/dicts/"
         with open(f"{resource_dir}dialogue_focuses.json",
                 encoding="ascii") as read_file:

@@ -184,7 +184,7 @@ class AffairScreen(Screens):
         with open(f"{self.RESOURCE_DIR}affair.json",
                 encoding="ascii") as read_file:
             self.mu_txt = ujson.loads(read_file.read())
-        success = self.is_success()
+        success = self.is_success(affair_cat)
         affair_relationship_chance_lb = game.config["affair_relationship_change_lb"]
         affair_relationship_chance_ub = game.config["affair_relationship_change_ub"]
         if success:
@@ -238,8 +238,41 @@ class AffairScreen(Screens):
         self.exit_screen()
         game.switches['cur_screen'] = "events screen"
 
-    def is_success(self):
-        if randint(0, game.config["affair_success_chance"]) == 0:
+    def is_success(self, affair_cat):
+        """Calculates affair success rate based on relationships"""
+        chance = game.config["affair_success_chance"]
+        for i in game.clan.your_cat.mate:
+            if Cat.fetch_cat(i).relationships.get(game.clan.your_cat.ID).romantic_love > 50:
+                chance -=5
+            elif Cat.fetch_cat(i).relationships.get(game.clan.your_cat.ID).romantic_love < 10:
+                chance +=5
+            if Cat.fetch_cat(i).relationships.get(game.clan.your_cat.ID).comfortable > 50:
+                chance -=5
+            elif Cat.fetch_cat(i).relationships.get(game.clan.your_cat.ID).comfortable < 10:
+                chance +=5
+            if Cat.fetch_cat(i).relationships.get(game.clan.your_cat.ID).trust > 50:
+                chance -=5
+            elif Cat.fetch_cat(i).relationships.get(game.clan.your_cat.ID).trust < 10:
+                chance +=5
+        if affair_cat.relationships.get(game.clan.your_cat.ID).dislike > 10:
+                chance += 10
+        if affair_cat.relationships.get(game.clan.your_cat.ID).romantic_love > 20:
+                chance -= 10
+        elif affair_cat.relationships.get(game.clan.your_cat.ID).romantic_love < 10:
+                chance += 10
+        if affair_cat.relationships.get(game.clan.your_cat.ID).comfortable > 20:
+                chance -= 10
+        elif affair_cat.relationships.get(game.clan.your_cat.ID).comfortable < 10:
+                chance += 10
+        if affair_cat.relationships.get(game.clan.your_cat.ID).trust > 20:
+                chance -= 10
+        elif affair_cat.relationships.get(game.clan.your_cat.ID).trust < 10:
+                chance += 10
+        if affair_cat.relationships.get(game.clan.your_cat.ID).admiration > 20:
+                chance -= 10
+        elif affair_cat.relationships.get(game.clan.your_cat.ID).admiration < 10:
+                chance += 10
+        if randint(0, chance + randint(-10,10)) == 0:
             return True
         return False
 
