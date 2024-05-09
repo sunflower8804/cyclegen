@@ -142,6 +142,7 @@ class ProfileScreen(Screens):
         self.placeholder_tab_4 = None
         self.placeholder_tab_3 = None
         self.placeholder_tab_2 = None
+        self.faith_bar = None
         self.your_tab = None
         self.backstory_tab_button = None
         self.dangerous_tab_button = None
@@ -277,6 +278,8 @@ class ProfileScreen(Screens):
                 self.toggle_conditions_tab()
             elif event.ui_element == self.accessories_tab_button:
                 self.toggle_accessories_tab()
+            elif event.ui_element == self.placeholder_tab_3:
+                self.toggle_faith_tab()
             elif event.ui_element == self.previous_page_button:
                 if self.page > 0:
                     self.page -= 1
@@ -861,7 +864,7 @@ class ProfileScreen(Screens):
 
         self.placeholder_tab_3 = UIImageButton(scale(pygame.Rect((800, 1244), (352, 60))), "",
                                             object_id="#cat_tab_3_blank_button", starting_height=1, manager=MANAGER)
-        self.placeholder_tab_3.disable()
+        # self.placeholder_tab_3.disable()
 
         self.accessories_tab_button = UIImageButton(scale(pygame.Rect((1152, 1244), (352, 60))), "",
                                             object_id="#accessories_tab_button", starting_height=1, manager=MANAGER)
@@ -2429,7 +2432,58 @@ class ProfileScreen(Screens):
 
         text = "<br><br>".join(text_list)
         return text
+    
+    def toggle_faith_tab(self):
+        """Opens faith tab"""
+        previous_open_tab = self.open_tab
+        self.close_current_tab()
 
+        if previous_open_tab == 'faith':
+            pass
+        else:
+            self.open_tab = "faith"
+            self.backstory_background = pygame_gui.elements.UIImage(scale(pygame.Rect((178, 930), (1240, 314))),
+                                                                    self.backstory_tab)
+            self.backstory_background.disable()
+            self.open_faith_tab()
+            self.update_disabled_buttons_and_text()
+
+    def open_faith_tab(self):
+        if self.faith_bar:
+            self.faith_bar.kill()
+            self.faith_text.kill()
+        self.faith_bar = pygame_gui.elements.UIImage(scale(pygame.Rect((390, 1030), (842, 78))),
+                                                                image_cache.load_image(f"resources/images/faith{self.the_cat.faith}.png").convert_alpha())
+        self.faith_bar.disable()
+        self.faith_text = UITextBoxTweaked(self.get_faith_text(self.the_cat.faith),
+                                                        scale(pygame.Rect((420, 1100), (870, 298))),
+                                                        object_id="#text_box_26_horizleft_pad_10_14",
+                                                        line_spacing=1, manager=MANAGER)
+        
+    def get_faith_text(self, faith):
+        faith_dict = {
+            "-9": "This cat's devotion to the Dark Forest is unshakable and absolute.",
+            "-8": "Nearly all devotion has been redirected towards the Dark Forest. This cat sees StarClan's ways as hopelessly weak and obsolete.",
+            "-7": "Lured in by the Dark Forest's promises of power, this cat willingly walks its terrible path.",
+            "-6": "This cat believes the Dark Forest's teachings will help them gain strength and security for their Clan, even if the methods make them uneasy.",
+            "-5": "Driven by the Dark Forest's pull, this cat lives in an moral crisis, constantly wavering between noble and dark impulses.",
+            "-4": "A growing doubt in their mind makes this cat question if the Dark Forest's ways could be justified as merely a different path.",
+            "-3": "In moments of weakness, this cat fantasizes about the strength and freedom the Dark Forest could offer.",
+            "-2": "Curiosity about the Dark Forest's power nags at the back of this cat's mind from time to time.",
+            "-1": "While not fully convinced, this cat sometimes wonders if the Dark Forest exists to tempt them away from the warrior code.",
+            "0": "This cat has no belief or reverence for StarClan or the Dark Forest.",
+            "1": "While not actively disbelieving, this cat is highly skeptical of StarClan's existence. They follow Clan rituals out of tradition rather than true faith.",
+            "2": "This cat is undecided on whether StarClan is truly watching over them. They keep an open mind but need more proof to be fully convinced.",
+            "3": "There are times this cat feels StarClan's presence. Their faith waxes and wanes periodically.",
+            "4": "This cat leans towards believing in StarClan more often than not.",
+            "5": "This cat holds a steady faith that StarClan watches over the Clans. This cat often looks for signs their ancestors are guiding them.",
+            "6": "A firmly devout believer, this cat has faith that StarClan exists.",
+            "7": "Beyond just believing, this cat actively searches for signs and omens from StarClan to guide their actions and that of their Clanmates",
+            "8": "StarClan's wisdom and approval guide every aspect of this cat's life.",
+            "9": "This cat's devotion to StarClan is unshakable and absolute."
+        }
+        return faith_dict[str(faith)]
+    
     def toggle_accessories_tab(self):
         """Opens accessories tab"""
 
@@ -2944,6 +2998,8 @@ class ProfileScreen(Screens):
             for i in self.accessory_buttons:
                 self.accessory_buttons[i].kill()
             self.open_accessories()
+        elif self.open_tab == "faith":
+            self.open_faith_tab()
         # History Tab:
         elif self.open_tab == 'history':
             # show/hide fav tab star
@@ -3107,6 +3163,10 @@ class ProfileScreen(Screens):
             self.clear_accessories.kill()
             self.search_bar_image.kill()
             self.search_bar.kill()
+        elif self.open_tab == "faith":
+            self.backstory_background.kill()
+            self.faith_bar.kill()
+            self.faith_text.kill()
         elif self.open_tab == 'your tab':
             if self.have_kits_button:
                 self.have_kits_button.kill()
