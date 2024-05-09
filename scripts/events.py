@@ -679,11 +679,12 @@ class Events:
                 cat = Cat.all_cats[candidate_id]
                 is_age_compatible = (other_parent_age is None) or (cat.age == other_parent_age)
                 is_gender_compatible = True
+                is_relation_compatible = cat.is_potential_mate(Cat.all_cats.get(other_parent_id)) if other_parent_id else True
                 if not game.clan.clan_settings["same sex birth"]:
                     is_gender_compatible = (other_parent_gender is None) or (cat.gender != other_parent_gender)
                 return (cat.ID != game.clan.your_cat.ID and cat.ID != other_parent_id and not cat.dead and not cat.outside 
                         and cat.age in ["young adult", "adult", "senior adult"] 
-                        and "apprentice" not in cat.status and is_age_compatible and is_gender_compatible)
+                        and "apprentice" not in cat.status and is_age_compatible and is_gender_compatible and is_relation_compatible)
 
             for _ in range(MAX_ATTEMPTS):
                 candidate_id = random.choice(Cat.all_cats_list).ID
@@ -699,7 +700,7 @@ class Events:
                 parent2 = None
                 adoptive_parents = []
                 if birth_type == BirthType.NO_PARENTS:
-                    thought = f"Is glad that their kits are safe"
+                    thought = "Is glad that their kits are safe"
                     parent1 = create_new_cat(Cat, Relationship,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
@@ -713,12 +714,19 @@ class Events:
                 elif birth_type == BirthType.TWO_PARENTS:
                     parent1 = pick_valid_parent()
                     parent2 = pick_valid_parent(parent1)
+                    if not parent2:
+                        for i in range(5):
+                            if not parent2:
+                                parent1 = pick_valid_parent()
+                                parent2 = pick_valid_parent(parent1)
+                            else:
+                                break
                     parent1.set_mate(parent2)
 
                 elif birth_type == BirthType.ONE_ADOPTIVE_PARENT:
                     adoptive_parent1 = pick_valid_parent()
                     adoptive_parents = [adoptive_parent1.ID]
-                    thought = f"Is glad that their kits are safe"
+                    thought = "Is glad that their kits are safe"
                     parent1 = create_new_cat(Cat, Relationship,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
@@ -742,6 +750,13 @@ class Events:
                 elif birth_type == BirthType.TWO_ADOPTIVE_PARENTS:
                     adoptive_parent1 = pick_valid_parent()
                     adoptive_parent2 = pick_valid_parent(adoptive_parent1)
+                    if not adoptive_parent2:
+                        for i in range(5):
+                            if not adoptive_parent2:
+                                adoptive_parent1 = pick_valid_parent()
+                                adoptive_parent2 = pick_valid_parent(adoptive_parent1)
+                            else:
+                                break
                     adoptive_parent1.set_mate(adoptive_parent2)
                     adoptive_parents = [adoptive_parent1.ID, adoptive_parent2.ID]
                     thought = f"Is glad that their kits are safe"
