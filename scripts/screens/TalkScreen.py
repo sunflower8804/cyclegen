@@ -25,7 +25,7 @@ class RelationType(Enum):
     NOT_BLOOD = 'not blood related'	# not blood related for parent siblings
     RELATED = 'blood related'   	# related by blood (different mates only)
 
-BLOOD_RELATIVE_TYPES = [RelationType.BLOOD, RelationType.HALF_BLOOD, RelationType.RELATED]
+BLOOD_RELATIVE_TYPES = [RelationType.BLOOD, RelationType.HALF_BLOOD, RelationType.RELATED, RelationType.ADOPTIVE]
 
 class TalkScreen(Screens):
 
@@ -839,7 +839,7 @@ class TalkScreen(Screens):
 
 
             if "non-related" in tags:
-                if you.inheritance.get_exact_rel_type(cat.ID) == RelationType.RELATED:
+                if you.inheritance.get_exact_rel_type(cat.ID) in BLOOD_RELATIVE_TYPES:
                     continue
 
             # If you have murdered someone and have been revealed
