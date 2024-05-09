@@ -420,6 +420,9 @@ class Events:
         if game.clan.focus == "war" and game.clan.war.get("at_war", False):
             game.clan.focus = ""
             game.clan.focus_moons = 0
+        if game.clan.focus == "starving" and game.clan.freshkill_pile.total_amount > game.clan.freshkill_pile.amount_food_needed()*0.5:
+            game.clan.focus = ""
+            game.clan.focus_moons = 0
 
         # Handle lost focus for focuses that have set duration
         if game.clan.focus and dialogue_focuses[game.clan.focus]["duration"] != -1 and game.clan.focus_moons >= dialogue_focuses[game.clan.focus]["duration"]:
@@ -429,6 +432,8 @@ class Events:
         if not game.clan.focus:
             if game.clan.war.get("at_war", True):
                 game.clan.focus = "war"
+            elif game.clan.freshkill_pile.total_amount < game.clan.freshkill_pile.amount_food_needed()*0.5:
+                game.clan.focus = "starving"
             elif random.randint(1,20) == 1:
                 game.clan.focus = random.choice(["valentines"])
 
