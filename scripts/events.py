@@ -1162,10 +1162,23 @@ class Events:
         if game.clan.your_cat.former_mentor:
             if Cat.all_cats[game.clan.your_cat.former_mentor[-1]].dead and game.clan.your_cat.status == 'medicine cat':
                 ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor'])
-            ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony'])
+
+            if game.clan.age < (game.clan.your_cat.forgiven + 10):
+                try:
+                    ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony forgiven'])
+                except:
+                    ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony'])
+            else:
+                ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony'])
             ceremony_txt = ceremony_txt.replace('m_n', str(Cat.all_cats[game.clan.your_cat.former_mentor[-1]].name))
         else:
-            ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor'])
+            if game.clan.age < (game.clan.your_cat.forgiven + 10):
+                try:
+                    ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor forgiven'])
+                except:
+                    ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor'])
+            else:
+                ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor'])
         
         ceremony_txt = ceremony_txt.replace('c_n', str(game.clan.name))
         ceremony_txt = ceremony_txt.replace('y_c', str(game.clan.your_cat.name))

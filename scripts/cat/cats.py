@@ -2411,7 +2411,10 @@ class Cat():
         """
         
         try:
-            first_cousin_mates = game.clan.clan_settings["first cousin mates"]
+            if game.clan is not None:
+                first_cousin_mates = game.clan.clan_settings["first cousin mates"]
+            else:
+                print("NoneType Clan for is_potential_mate()")
         except:
             if 'unittest' not in sys.modules:
                 raise
