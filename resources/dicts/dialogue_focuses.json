@@ -1,0 +1,16 @@
+{
+    "war": {
+        "duration": -1,
+        "moon_event": null
+    },
+    "starving": {
+        "duration": -1,
+        "moon_event": null
+    },
+    "valentines": {
+        "duration": 3,
+        "moon_event": [
+            "Love is in the air this season, and all of c_nClan is abuzz over who's going to get together next!"
+        ]
+    }
+}

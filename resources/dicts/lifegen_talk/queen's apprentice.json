@@ -164,19 +164,6 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
     "assertive_tonewborn_2": [
         [
             "newborn",
@@ -233,26 +220,12 @@
             "I just like keeping them safe."
         ]
     ],
-    "assertive_tonewborn3_2": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
     "assertive_apprentice7": [
         [
             "no_kit",
             "platonic_like",
             "assertive",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
@@ -416,8 +389,7 @@
             "Any",
             "assertive",
             "neutral",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "y_c, can you believe it? I actually got to advise a real queen today! Eeee, so cool!!!",
@@ -429,8 +401,7 @@
         [
             "Any",
             "assertive",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "Er, sorry, y_c. I can't chat right now ...",
@@ -441,8 +412,7 @@
     "assertive_elder_3": [
         [
             "Any",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Did you see r_c earlier today, y_c? Oh, StarClan, it was the funniest thing ever!",
@@ -466,8 +436,7 @@
         [
             "queen",
             "assertive",
-            "from_your_apprentice",
-            "random_cat"
+            "from_your_apprentice"
         ],
         [
             "r_k's crying again. They've been having such a hard time lately ...",
@@ -524,7 +493,6 @@
             "mediator",
             "mediator apprentice",
             "assertive",
-            "random_cat",
             "platonic_like",
             "comfort",
             "trust",
@@ -547,8 +515,7 @@
         [
             "mediator",
             "mediator apprentice",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
@@ -852,7 +819,9 @@
     ],
     "queens_app_general_newborn": [
         [
-            "newborn"
+            "newborn",
+            "sweet",
+            "stable"
         ],
         [
             "Hi there, sweet kit. You're so precious."
@@ -992,7 +961,6 @@
     "sweet_queenapp_9": [
         [
             "medicine cat apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1004,7 +972,6 @@
     "sweet_queenapp_10": [
         [
             "mediator apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1019,7 +986,6 @@
             "medicine cat",
             "mediator",
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1033,7 +999,6 @@
             "medicine cat",
             "mediator",
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1045,7 +1010,6 @@
     "sweet_queenapp_13": [
         [
             "warrior",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1059,7 +1023,6 @@
     "sweet_queenapp_14": [
         [
             "medicine cat",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1095,7 +1058,6 @@
     "sweet_queenapp_17": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1110,7 +1072,6 @@
     "sweet_queenapp_18": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1151,7 +1112,6 @@
     "sweet_queenapp_21": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1195,7 +1155,6 @@
     "sweet_queenapp_24": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1206,7 +1165,6 @@
     "sweet_queenapp_25": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1220,8 +1178,7 @@
         [
             "no_kit",
             "neurotic",
-            "upstanding",
-            "random_cat"
+            "upstanding"
         ],
         [
             "Gah, stupid, stupid, so stupid, t_c ...",
@@ -1239,7 +1196,6 @@
         [
             "no_kit",
             "neurotic",
-            "random_cat",
             "trust"
         ],
         [

@@ -135,6 +135,8 @@ class Clan():
         self.affair = False
         self.achievements = []
         self.talks = []
+        self.focus = ""
+        self.focus_moons = 0
         
         # Init Settings
         self.clan_settings = {}
@@ -151,6 +153,7 @@ class Clan():
         all_settings.append(_settings['role'])
         all_settings.append(_settings['relation'])
         all_settings.append(_settings['freshkill_tactics'])
+        all_settings.append(_settings['clan_focus'])
 
         for setting in all_settings:  # Add all the settings to the settings dictionary
             for setting_name, inf in setting.items():
@@ -175,6 +178,8 @@ class Clan():
             "enemy": None, 
             "duration": 0,
         }
+        self.last_focus_change = None
+        self.clans_in_focus = []
 
         self.faded_ids = [
         ]  # Stores ID's of faded cats, to ensure these IDs aren't reused.
@@ -462,6 +467,8 @@ class Clan():
             "biome": self.biome,
             "camp_bg": self.camp_bg,
             "gamemode": self.game_mode,
+            "last_focus_change": self.last_focus_change,
+            "clans_in_focus": self.clans_in_focus,
             "instructor": self.instructor.ID,
             "demon": self.demon.ID,
             "reputation": self.reputation,
@@ -524,6 +531,8 @@ class Clan():
         clan_data['talks'] = self.talks
         clan_data["disaster"] = self.disaster
         clan_data["disaster_moon"] = self.disaster_moon
+        clan_data["focus"] = self.focus
+        clan_data["focus_moons"] = self.focus_moons
 
         if "other_med" in game.switches:
             other_med = []
@@ -869,6 +878,9 @@ class Clan():
                 for cat in clan_data["faded_cats"].split(","):
                     game.clan.faded_ids.append(cat)
 
+        game.clan.last_focus_change = clan_data.get("last_focus_change")
+        game.clan.clans_in_focus = clan_data.get("clans_in_focus", [])
+
         # Patrolled cats
         if "patrolled_cats" in clan_data:
             game.patrolled = clan_data["patrolled_cats"]
@@ -902,6 +914,12 @@ class Clan():
         
         if "disaster_moon" in clan_data:
             game.clan.disaster_moon = clan_data["disaster_moon"]
+
+        if "focus" in clan_data:
+            game.clan.focus = clan_data["focus"]
+
+        if "focus_moons" in clan_data:
+            game.clan.focus_moons = clan_data["focus_moons"]
 
         if "other_med" in clan_data:
             other_med = []

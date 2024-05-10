@@ -235,6 +235,7 @@ class Cat():
         self.did_activity = False
         self.df_mentor = None
         self.df_apprentices = []
+        self.faith = randint(-9, 9)
         
         self.prevent_fading = False  # Prevents a cat from fading.
         self.faded_offspring = []  # Stores of a list of faded offspring, for family page purposes.
@@ -898,7 +899,6 @@ class Cat():
                 
                 Cat.grief_strings[cat.ID].append((text, (self.ID, cat.ID), "negative"))
                 
-
     def familial_grief(self, living_cat: Cat):
         """
         returns relevant grief strings for family members, if no relevant strings then returns None
@@ -1040,8 +1040,7 @@ class Cat():
         # If we have it sorted by rank, we also need to re-sort
         if game.sort_type == "rank" and resort:
             Cat.sort_cats()
-
-    
+   
     def rank_change_traits_skill(self, mentor):
         """Updates trait and skill upon ceremony"""  
 
@@ -1070,14 +1069,13 @@ class Cat():
             return
         
         self.personality.set_kit(self.is_baby()) #Update kit trait stuff
-        
 
     def describe_cat(self, short=False):
         """ Generates a string describing the cat's appearance and gender. Mainly used for generating
         the allegiances. If short is true, it will generate a very short one, with the minimal amount of information. """
         output = Pelt.describe_appearance(self, short)
         # Add "a" or "an"
-        if output[0].lower() in "aiou":
+        if output[0].lower() in "aeiou":
             output = f"an {output}"
         else:
             output = f"a {output}"
@@ -1216,7 +1214,6 @@ class Cat():
             )
 
             print(f"WARNING: saving history of cat #{self.ID} didn't work")
-            
 
     def generate_lead_ceremony(self):
         """
@@ -1715,7 +1712,17 @@ class Cat():
         else:
             moons_with = 0
 
+        # focus buff
+        moons_prior = game.config["focus"]["rest and recover"]["moons_earlier_healed"]
+
         if self.illnesses[illness]["duration"] - moons_with <= 0:
+            self.healed_condition = True
+            return False
+
+        # CLAN FOCUS! - if the focus 'rest and recover' is selected
+        elif game.clan.clan_settings.get("rest and recover") and\
+            self.illnesses[illness]["duration"] + moons_prior - moons_with <= 0:
+            # print(f"rest and recover - illness {illness} of {self.name} healed earlier")
             self.healed_condition = True
             return False
 
@@ -1746,8 +1753,19 @@ class Cat():
             moons_with = game.clan.age - self.injuries[injury]["moon_start"]
 
 
+        # focus buff
+        moons_prior = game.config["focus"]["rest and recover"]["moons_earlier_healed"]
+
         # if the cat has an infected wound, the wound shouldn't heal till the illness is cured
         if not self.injuries[injury]["complication"] and self.injuries[injury]["duration"] - moons_with <= 0:
+            self.healed_condition = True
+            return False
+
+        # CLAN FOCUS! - if the focus 'rest and recover' is selected
+        elif not self.injuries[injury]["complication"] and \
+            game.clan.clan_settings.get("rest and recover") and\
+            self.injuries[injury]["duration"] + moons_prior - moons_with <= 0:
+            # print(f"rest and recover - injury {injury} of {self.name} healed earlier")
             self.healed_condition = True
             return False
 
@@ -3369,7 +3387,8 @@ class Cat():
                 "empathy": self.empathy if self.empathy else 0,
                 "did_activity": self.did_activity if self.did_activity else False,
                 "df_mentor": self.df_mentor if self.df_mentor else None,
-                "df_apprentices": self.df_apprentices if self.df_apprentices else []
+                "df_apprentices": self.df_apprentices if self.df_apprentices else [],
+                "faith": self.faith if self.faith else 0
             }
 
 

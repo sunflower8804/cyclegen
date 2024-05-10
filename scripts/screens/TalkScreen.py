@@ -25,7 +25,7 @@ class RelationType(Enum):
     NOT_BLOOD = 'not blood related'	# not blood related for parent siblings
     RELATED = 'blood related'   	# related by blood (different mates only)
 
-BLOOD_RELATIVE_TYPES = [RelationType.BLOOD, RelationType.HALF_BLOOD, RelationType.RELATED]
+BLOOD_RELATIVE_TYPES = [RelationType.BLOOD, RelationType.HALF_BLOOD, RelationType.RELATED, RelationType.ADOPTIVE]
 
 class TalkScreen(Screens):
 
@@ -395,6 +395,11 @@ class TalkScreen(Screens):
                     possible_texts3 = ujson.loads(read_file.read())
                     possible_texts.update(possible_texts3)
 
+            if game.clan.focus:
+                with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
+                    possible_texts5 = ujson.loads(read_file.read())
+                    possible_texts.update(possible_texts5)
+
         return self.filter_texts(cat, possible_texts)
 
 
@@ -676,13 +681,13 @@ class TalkScreen(Screens):
             if any(i in you_backstory_list for i in tags):
                 ts = you_backstory_list
                 for j in range(len(ts)):
-                    ts[j] = ts[j][3:]
+                    ts[j] = ts[j][4:]
                 if you.backstory not in ts:
                     continue
             if any(i in they_backstory_list for i in tags):
                 ts = they_backstory_list
                 for j in range(len(ts)):
-                    ts[j] = ts[j][4:]
+                    ts[j] = ts[j][5:]
                 if cat.backstory not in ts:
                     continue
 
@@ -826,12 +831,15 @@ class TalkScreen(Screens):
                 if "siblings_mate" in tags:
                     if cat.ID in you.inheritance.get_siblings_mates():
                         fam = True
+                if "grandparent" in tags:
+                    if cat.is_grandparent(game.clan.your_cat):
+                        fam = True
                 if not fam:
                     continue
 
 
             if "non-related" in tags:
-                if you.inheritance.get_exact_rel_type(cat.ID) == RelationType.RELATED:
+                if you.inheritance.get_exact_rel_type(cat.ID) in BLOOD_RELATIVE_TYPES:
                     continue
 
             # If you have murdered someone and have been revealed
@@ -1105,10 +1113,13 @@ class TalkScreen(Screens):
         weighted_tags = ["you_pregnant", "they_pregnant", "from_mentor", "from_your_parent", "from_adopted_parent", "adopted_parent", "half sibling", "littermate", "siblings_mate", "cousin", "adopted_sibling", "parents_siblings", "from_mentor", "from_your_kit", "from_your_apprentice", "from_mate", "from_parent", "adopted_parent", "from_kit", "sibling", "from_adopted_kit", "they_injured", "they_ill", "you_injured", "you_ill", "you_grieving", "you_forgiven", "they_forgiven", "murderedyou", "murderedthem"]
         for item in texts_list.values():
             tags = item["tags"] if "tags" in item else item[0]
-            num_fam_mentor_tags = 1
+            weight = 1
             if any(i in weighted_tags for i in tags):
-                num_fam_mentor_tags+=3
-            weights2.append(num_fam_mentor_tags)
+                weight+=3
+            if "focus" in tags:
+                weight+=10
+            weights2.append(weight)
+
 
         if "debug_ensure_dialogue" in game.config and game.config["debug_ensure_dialogue"]:
             if game.config["debug_ensure_dialogue"] in list(texts_list.keys()):
@@ -1897,5 +1908,9 @@ class TalkScreen(Screens):
                 random_cat = choice(self.get_living_cats())
                 counter +=1
             text = text.replace("sh_l", str(random_cat.name))
+        if "w_c" in text:
+            if game.clan.war.get("at_war", False):
+                return ""
+            text = text.replace("w_c", str(game.clan.war["enemy"]))
 
         return text

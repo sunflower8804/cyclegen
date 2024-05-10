@@ -142,8 +142,7 @@
         [
             "mediator apprentice",
             "assertive",
-            "from_mentor",
-            "random_cat"
+            "from_mentor"
         ],
         [
             "I noticed you helping the warriors resolve their dispute the other day, and it really wasn't bad! You've come a long way. But, one thing I did notice was that you were a little too ... nice?",
@@ -363,19 +362,6 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
     "Introspective_mdtor_to_app": [
         [
             "Apprentice",
@@ -413,8 +399,7 @@
     "introspective_mdtor_1": [
         [
             "any",
-            "introspective",
-            "random_cat"
+            "introspective"
         ],
         [
             "r_c, please. I know you're upset, but I can't help if you don't tell me what's wrong.",
@@ -595,8 +580,7 @@
     "assertive_elder_4": [
         [
             "mediator",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Knowing what we know from mediating their conflicts, if everyone in camp got into a fight ... Who d'you think would win?",
@@ -654,8 +638,7 @@
     "assertivemediator_5_3": [
         [
             "Any",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "y_c, you see that fish on the freshkill pile? I need you to move it to the back of the pile.",
@@ -962,8 +945,7 @@
             "Any",
             "assertive",
             "unabashed",
-            "romantic_like",
-            "random_cat"
+            "romantic_like"
         ],
         [
             "What's that? One of the kits told you your ears are too big?",
@@ -1049,8 +1031,7 @@
         [
             "leader",
             "deputy",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Happy to report things are mostly peaceful around camp!",
@@ -1083,8 +1064,7 @@
     "sweet_mediator_3": [
         [
             "kitten",
-            "sweet",
-            "random_cat"
+            "sweet"
         ],
         [
             "Hey y_c! What are you up to today, are you remembering to play safely?",
@@ -1094,8 +1074,7 @@
     "sweet_mediator_4": [
         [
             "kitten",
-            "sweet",
-            "random_cat"
+            "sweet"
         ],
         [
             "Ah! I'm here! r_c told me all about the fight you had, are you alright?",
@@ -1108,7 +1087,6 @@
             "queen's apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1125,7 +1103,6 @@
             "queen's apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1168,7 +1145,6 @@
     "sweet_mediator_10": [
         [
             "mediator apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1184,7 +1160,6 @@
             "medicine cat",
             "mediator",
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1215,7 +1190,6 @@
     "sweet_mediator_13": [
         [
             "warrior",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1246,7 +1220,6 @@
     "sweet_mediator_15": [
         [
             "mediator",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1259,7 +1232,6 @@
     "sweet_mediator_16": [
         [
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1272,7 +1244,6 @@
     "sweet_mediator_17": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1349,7 +1320,6 @@
     "sweet_mediator_23": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1362,7 +1332,6 @@
     "sweet_mediator_24": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1387,8 +1356,7 @@
         [
             "upstanding",
             "no_kit",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "Hey y_c! You've been working pretty hard recently and I just thought I'd check up on you. Remember to take a break every once in a while, yeah? Rest is important after all!",

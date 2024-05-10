@@ -101,10 +101,10 @@ class DatePatrolScreen(Screens):
         # Check is a cat is clicked
         elif event.ui_element in self.cat_buttons.values() and doubleclick:
             self.selected_cat = event.ui_element.return_cat_object()
-            if self.selected_cat.ID == self.cat_id:
+            if self.selected_cat.ID == self.cat_id and self.selected_cat.ID != game.clan.your_cat.ID:
                 if self.selected_cat in self.current_patrol:
                     self.current_patrol.remove(self.selected_cat)
-                else:
+                elif len(self.current_patrol) < 3:
                     self.current_patrol.append(self.selected_cat)
                 self.update_cat_images_buttons()
                 self.update_button()
@@ -183,7 +183,7 @@ class DatePatrolScreen(Screens):
             self.current_page -= 1
             self.update_cat_images_buttons()
             self.update_button()
-        elif event.ui_element == self.elements['patrol_start'] and len(self.current_patrol) == 2:
+        elif event.ui_element == self.elements['patrol_start'] and (2 <= len(self.current_patrol) <= 3):
             self.selected_cat = None
             self.start_patrol_thread = self.loading_screen_start_work(self.run_patrol_start, "start")
         elif event.ui_element == self.elements.get('mate_button'):
@@ -252,7 +252,7 @@ class DatePatrolScreen(Screens):
             if self.selected_cat in self.current_patrol:
                 self.elements["add_remove_cat"] = UIImageButton(scale(pygame.Rect((672, 920), (254, 60))), "",
                                                                 object_id="#remove_cat_button", manager=MANAGER)
-            elif self.selected_cat is None or len(self.current_patrol) >= 2:
+            elif self.selected_cat is None or len(self.current_patrol) >= 3:
                 self.elements["add_remove_cat"] = UIImageButton(scale(pygame.Rect((700, 920), (196, 60))), "",
                                                                 object_id="#add_cat_button", manager=MANAGER)
                 self.elements["add_remove_cat"].disable()

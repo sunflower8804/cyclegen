@@ -157,8 +157,7 @@
         [
             "mediator apprentice",
             "assertive",
-            "from_mentor",
-            "random_cat"
+            "from_mentor"
         ],
         [
             "I noticed you helping r_k and r_k resolve their dispute the other day, and it really wasn't bad! You've come a long way. But, one thing I did notice was that you were a little too ... nice?",
@@ -382,26 +381,12 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
     "assertive_apprentice7": [
         [
             "no_kit",
             "platonic_like",
             "assertive",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
@@ -578,8 +563,7 @@
             "queen",
             "assertive",
             "platonic_like",
-            "neutral",
-            "random_cat"
+            "neutral"
         ],
         [
             "*Sigh* StarClan, today was hard ...",
@@ -599,9 +583,11 @@
             "Thanks, kid!"
         ]
     ],
-    "assertive_elder_2": [
+    "queen_kits": [
         [
-            "no_kit"
+            "no_kit",
+            "they_adult",
+            "clan_has_kits"
         ],
         [
             "[Watching t_c play with the kits is like watching the most skilled hunter bring down a piece of prey, or watching the medicine cat heal a wound.]",
@@ -988,8 +974,7 @@
             "Any",
             "assertive",
             "unabashed",
-            "romantic_like",
-            "random_cat"
+            "romantic_like"
         ],
         [
             "What's that? One of the kits told you your ears are too big?",
@@ -1040,8 +1025,7 @@
     "brooding_queen4": [
         [
             "no_kit",
-            "brooding",
-            "random_cat"
+            "brooding"
         ],
         [
             "[t_c looks after r_k fondly.]",
@@ -1095,8 +1079,7 @@
             "mediator",
             "deputy",
             "leader",
-            "elder",
-            "random_cat"
+            "elder"
         ],
         [
             "[r_k just puked in the nursery and it's total chaos.]",
@@ -1205,8 +1188,7 @@
             "Any",
             "Cool",
             "neutral",
-            "clan_has_kits",
-            "random_cat"
+            "clan_has_kits"
         ],
         [
             "[t_c stumbles out of the nursery, leaving the ear-piercing sounds of mewling kits behind them.]",
@@ -1221,8 +1203,7 @@
         [
             "Any",
             "Cool",
-            "clan_has_kits",
-            "random_cat"
+            "clan_has_kits"
         ],
         [
             "[t_c is laying in front of the nursery, calmly washing their paws.]",
@@ -1498,7 +1479,6 @@
             "medicine cat",
             "mediator",
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1510,7 +1490,6 @@
     "sweet_queen_13": [
         [
             "warrior",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1522,7 +1501,6 @@
     "sweet_queen_14": [
         [
             "medicine cat",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1534,7 +1512,6 @@
     "sweet_queen_15": [
         [
             "mediator",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1546,7 +1523,6 @@
     "sweet_queen_16": [
         [
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1558,7 +1534,6 @@
     "sweet_queen_17": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1570,7 +1545,6 @@
     "sweet_queen_18": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1601,7 +1575,6 @@
     "sweet_queen_20": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1614,7 +1587,6 @@
     "sweet_queen_21": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1630,7 +1602,6 @@
     "sweet_queen_22": [
         [
             "leader",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1644,7 +1615,6 @@
     "sweet_queen_23": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1656,7 +1626,6 @@
     "sweet_queen_24": [
         [
             "elder",
-            "random_cat",
             "sweet"
         ],
         [

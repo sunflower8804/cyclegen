@@ -720,8 +720,7 @@
     "newborn_unlawful1": [
         [
             "unlawful",
-            "Any",
-            "random_cat"
+            "Any"
         ],
         [
             "[What's this newborn doing outside of the nursery?]",
@@ -950,17 +949,6 @@
             "[You curl against y_p and shiver slightly as a cool breeze enters the nursery. Despite their small size, t_c takes notice.]",
             "Meow!",
             "[y_p stares in shock at the little kitten who spoke so clearly only to see tiny t_c pointing at you with their little paws. y_p immediately pulls you both closer and purrs loudly.]"
-        ]
-    ],
-    "they_starving_4": [
-        [
-            "any",
-            "they_starving"
-        ],
-        [
-            "meeewwww!!!!",
-            "[A newborn kitten kneads against a queen trying to get milk, but seemingly being unable to.]",
-            "[The queen gives you a sad glance before gently licking their forehead.]"
         ]
     ],
     "sweet_newborn_3": [
@@ -1746,5 +1734,4 @@
             "MROOOOOOOOW!!!!!!!!"
         ]
     ]
-
 }

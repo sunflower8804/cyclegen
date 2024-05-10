@@ -2,7 +2,6 @@
     "gen_crush": [
         [
             "no_kit",
-            "random_cat",
             "platonic_like"
         ],
         [
@@ -15,7 +14,6 @@
     "gen_crush1": [
         [
             "no_kit",
-            "random_cat",
             "platonic_like",
             "silly",
             "assertive",
@@ -31,7 +29,6 @@
     "gen_crush4": [
         [
             "no_kit",
-            "random_cat",
             "introspective"
         ],
         [
@@ -44,7 +41,6 @@
     "gen_crush5": [
         [
             "no_kit",
-            "random_cat",
             "they_adult",
             "brooding",
             "assertive",
@@ -59,7 +55,6 @@
     "gen_crush5_apprentice": [
         [
             "no_kit",
-            "random_cat",
             "they_app",
             "brooding",
             "assertive",
@@ -74,7 +69,6 @@
     "trust_crush": [
         [
             "no_kit",
-            "random_cat",
             "platonic_love"
         ],
         [
@@ -89,7 +83,6 @@
     "confront_crush": [
         [
             "no_kit",
-            "random_cat",
             "assertive",
             "unlawful",
             "brooding",
@@ -107,7 +100,6 @@
     "crush_moveon": [
         [
             "no_kit",
-            "random_cat",
             "platonic_love"
         ],
         [
@@ -121,7 +113,6 @@
     "crush_dream": [
         [
             "no_kit",
-            "random_cat",
             "upstanding",
             "stable",
             "introspective",
@@ -137,7 +128,6 @@
     "gen_yourcrush": [
         [
             "Any",
-            "random_cat",
             "unabashed",
             "cool",
             "assertive",
@@ -152,7 +142,6 @@
     "gen_yourcrush1": [
         [
             "no_kit",
-            "random_cat",
             "assertive",
             "unabashed",
             "upstanding"
@@ -186,8 +175,7 @@
     "hater_yourcrush": [
         [
             "any",
-            "dislike",
-            "random_cat"
+            "dislike"
         ],
         [
             "You don't stand a chance with your_crush ... You know that, don't you?",
@@ -198,7 +186,6 @@
     "hater_yourcrush1": [
         [
             "any",
-            "random_cat",
             "assertive",
             "cool",
             "unlawful",
@@ -373,8 +360,7 @@
             "assertive",
             "cool",
             "silly",
-            "stable",
-            "random_cat"
+            "stable"
         ],
         [
             "[t_c interrupts you in the middle of talking to your_crush.]",

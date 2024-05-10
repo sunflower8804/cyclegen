@@ -57,8 +57,7 @@
     "silly_gen_prey": [
         [
             "Any",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "I went on a hunting patrol with r_w the other day and found THE cutest mouse I think I've ever seen. It had big, innocent eyes and it was snacking on a blackberry!",
@@ -220,8 +219,7 @@
         [
             "apprentice",
             "brooding",
-            "dislike",
-            "random_cat"
+            "dislike"
         ],
         [
             "[After a lot of pestering from the kits, you agree to show off some of the skills m_n taught you, and host a little training session.]",
@@ -245,9 +243,10 @@
             "I'm proud of you, little one. I'm sure d_c is too."
         ]
     ],
-    "warrior231": [
+    "stable_warrior_fight": [
         [
-            "mediator"
+            "mediator",
+            "stable"
         ],
         [
             "Hey! I was looking to talk with you. Is there a chance that you can help me out with something? If you aren't busy of course.",
@@ -453,7 +452,6 @@
             "no_kit",
             "assertive",
             "platonic_love",
-            "random_cat",
             "no_kit"
         ],
         [
@@ -604,7 +602,6 @@
         [
             "mediator apprentice",
             "mediator",
-            "random_cat",
             "assertive",
             "unabashed"
         ],
@@ -619,7 +616,6 @@
             "mediator apprentice",
             "mediator",
             "assertive",
-            "random_cat",
             "silly",
             "unlawful",
             "cool"
@@ -702,26 +698,12 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
     "assertive_gen": [
         [
             "no_kit",
             "platonic_like",
             "assertive",
             "silly",
-            "random_cat",
             "they_younger"
         ],
         [
@@ -867,7 +849,6 @@
             "mediator",
             "mediator apprentice",
             "assertive",
-            "random_cat",
             "platonic_love"
         ],
         [
@@ -884,8 +865,7 @@
         [
             "mediator",
             "mediator apprentice",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
@@ -1282,7 +1262,6 @@
     "sweet_warrior_7": [
         [
             "apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1313,7 +1292,6 @@
     "sweet_warrior_10": [
         [
             "mediator apprentice",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1328,7 +1306,6 @@
             "medicine cat",
             "mediator",
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1374,7 +1351,6 @@
     "sweet_warrior_15": [
         [
             "mediator",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1388,7 +1364,6 @@
     "sweet_warrior_16": [
         [
             "queen",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1400,7 +1375,6 @@
     "sweet_warrior_17": [
         [
             "deputy",
-            "random_cat",
             "sweet"
         ],
         [
@@ -1778,8 +1752,7 @@
             "upstanding",
             "Any",
             "Beach",
-            "Wetlands",
-            "random_cat"
+            "Wetlands"
         ],
         [
             "I heard d_n say that the fresh-kill pile was looking a little low today, and that got me thinking...",
@@ -1972,8 +1945,7 @@
     "newborn_silly_warrior": [
         [
             "newborn",
-            "silly",
-            "random_cat"
+            "silly"
         ],
         [
             "Oh my StarClan, you are just the cutest!",
@@ -2154,8 +2126,7 @@
             "queen",
             "queen's apprentice",
             "unabashed",
-            "trust",
-            "random_cat"
+            "trust"
         ],
         [
             "Woah, woah, woah, what's going on?",
@@ -3209,12 +3180,12 @@
             "warrior",
             "they_warrior",
             "you_dftrainee",
-                    "you_blind",
-                    "they_blind"
+            "you_blind",
+            "they_blind"
         ],
         [
             "[You settle into your nest, preparing yourself for a night of Dark Forest training.]",
-        "[Next to you, t_c is snoring loudly.]"
+            "[Next to you, t_c is snoring loudly.]"
         ]
     ]
 }

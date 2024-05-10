@@ -487,7 +487,7 @@ class EventsScreen(Screens):
             ele.kill()
         self.cat_profile_buttons = []
 
-        # self.hide_menu_buttons()
+        self.hide_menu_buttons()
 
     def on_use(self):
         

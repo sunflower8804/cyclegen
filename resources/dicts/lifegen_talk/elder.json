@@ -248,7 +248,6 @@
             "assertive",
             "silly",
             "unlawful",
-            "random_cat",
             "young elder"
         ],
         [
@@ -619,19 +618,6 @@
             "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
         ]
     ],
-    "assertive_tonewborn3": [
-        [
-            "newborn",
-            "assertive",
-            "introspective",
-            "neurotic"
-        ],
-        [
-            "Whoa ... this is them? They're so small!",
-            "Hard to believe I was that small once ...",
-            "Hm ..."
-        ]
-    ],
     "assertive_1": [
         [
             "Any",
@@ -692,7 +678,6 @@
             "mediator",
             "mediator apprentice",
             "assertive",
-            "random_cat",
             "platonic_love"
         ],
         [
@@ -709,8 +694,7 @@
         [
             "mediator",
             "mediator apprentice",
-            "assertive",
-            "random_cat"
+            "assertive"
         ],
         [
             "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
@@ -1137,28 +1121,11 @@
             "Let's make it a good day."
         ]
     ],
-    "starving_elder": [
-        [
-            "no_kit",
-            "sweet",
-            "introspective",
-            "stable",
-            "they_starving",
-            "unabashed"
-        ],
-        [
-            "...",
-            "Oh...? Is that mouse for me?",
-            "[t_c stares longingly at the prey, eyes dull with hunger.]",
-            "No, you take it, young'un. It's not long before I take my place in StarClan, and you need your strength."
-        ]
-    ],
     "brooding_elder": [
         [
             "kitten",
             "brooding",
-            "neutral",
-            "random_cat"
+            "neutral"
         ],
         [
             "[You normally like visiting with the older cats in the Clan, but t_c has always scared you a little.]",
@@ -1192,8 +1159,7 @@
         [
             "kitten",
             "brooding",
-            "platonic_like",
-            "random_cat"
+            "platonic_like"
         ],
         [
             "[You ask t_c if they have any cool stories from their youth they can tell you.]",

@@ -8,11 +8,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "camp"
-        ],
+        "tags": [],
         "patrol_art": "lg_queen_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -45,11 +43,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "camp"
-        ],
+        "tags": [],
         "patrol_art": "lg_queen_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -82,11 +78,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "camp"
-        ],
+        "tags": [],
         "patrol_art": "lg_queen_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -119,11 +113,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "camp"
-        ],
+        "tags": [],
         "patrol_art": "lg_queen_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -156,11 +148,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "camp"
-        ],
+        "tags": [],
         "patrol_art": "lg_queen_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -193,11 +183,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "camp"
-        ],
+        "tags": [],
         "patrol_art": "lg_queen_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -230,11 +218,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "camp"
-        ],
+        "tags": [],
         "patrol_art": "lg_queen_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -267,11 +253,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "camp"
-        ],
+        "tags": [],
         "patrol_art": "lg_queen_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -294,7 +278,8 @@
                 "weight": 20
             }
         ]
-    },{
+    },
+    {
         "patrol_id": "gen_queen_event108",
         "biome": [
             "Any"
@@ -303,11 +288,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "camp"
-        ],
+        "tags": [],
         "patrol_art": "lg_queen_default",
         "min_cats": 1,
         "max_cats": 3,

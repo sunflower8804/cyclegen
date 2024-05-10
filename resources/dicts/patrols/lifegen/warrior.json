@@ -14,6 +14,7 @@
             "hunting",
             "small_prey"
         ],
+        "tags": [],
         "patrol_art": "lg_warrior1",
         "min_cats": 1,
         "max_cats": 3,
@@ -52,6 +53,7 @@
             "border",
             "small_prey"
         ],
+        "tags": [],
         "patrol_art": "lg_warrior2",
         "min_cats": 1,
         "max_cats": 3,
@@ -90,6 +92,7 @@
             "hunting",
             "small_prey"
         ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -122,11 +125,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 5,
@@ -159,11 +160,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "training"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 2,
@@ -196,11 +195,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -233,11 +230,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "hunting"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -270,11 +265,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "patrol"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 5,
@@ -307,11 +300,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -344,11 +335,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 3,
@@ -381,11 +370,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -418,11 +405,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -455,11 +440,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 2,
@@ -492,11 +475,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior14",
         "min_cats": 1,
         "max_cats": 2,
@@ -529,11 +510,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 2,
@@ -566,11 +545,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 2,
@@ -603,11 +580,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior14",
         "min_cats": 1,
         "max_cats": 2,
@@ -640,11 +615,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -668,8 +641,8 @@
             }
         ]
     },
-	{
-		"patrol_id": "lifegen_warrior_19",
+    {
+        "patrol_id": "lifegen_warrior_19",
         "biome": [
             "Beach"
         ],
@@ -677,11 +650,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -691,7 +662,7 @@
         "decline_text": "Curiosity killed the cat, and you don't want to be an example of that. You quickly turn around and walk away.",
         "chance_of_success": 50,
         "success_outcomes": [
-		    {
+            {
                 "text": "How fun! Seaweed has no actual use, but popping the bubbles on it is fun!",
                 "exp": 15,
                 "weight": 20
@@ -700,7 +671,10 @@
                 "text": "Seaweed! You decide to gather some of the pieces to take it to the medicine cat den. Wash it out to remove the salt and it could be beneficial as makeshift cobwebs to dress wounds.",
                 "exp": 15,
                 "weight": 20,
-				"stat_skill": ["HEALER,1", "INNOVATOR,1"]
+                "stat_skill": [
+                    "HEALER,1",
+                    "INNOVATOR,1"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -708,11 +682,11 @@
                 "text": "Seaweed. You are unimpressed by the long tendrils and turn away. Nothing useful there.",
                 "exp": 0,
                 "weight": 20
-			}
-		]
-	},
-	{
-		"patrol_id": "lifegen_warrior_20",
+            }
+        ]
+    },
+    {
+        "patrol_id": "lifegen_warrior_20",
         "biome": [
             "Beach"
         ],
@@ -720,12 +694,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "hunting",
-			"small_prey"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -735,7 +706,7 @@
         "decline_text": "Twolegs are bad news. You quickly and quietly leave the area, making a mental note to warn the clan of their presence.",
         "chance_of_success": 50,
         "success_outcomes": [
-		    {
+            {
                 "text": "You sneak towards the twolegs and their box. As you get closer, you realize the scent is of fish. You reach into the box while no one is looking and hook a fish with your claws, running away before anyone could spot you.",
                 "exp": 15,
                 "weight": 20
@@ -746,11 +717,11 @@
                 "text": "Upon getting closer to the box, you realize it's filled with fish. Excited, you rush towards it before a twoleg picks you up. You hiss as the twoleg tries to subdue you. Raking your claws against its arm, it yowls and lets you go. You run away without a second thought.",
                 "exp": 0,
                 "weight": 20
-			}
-		]
-	},
-	{
-		"patrol_id": "lifegen_warrior_21",
+            }
+        ]
+    },
+    {
+        "patrol_id": "lifegen_warrior_21",
         "biome": [
             "Beach"
         ],
@@ -758,11 +729,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -772,7 +741,7 @@
         "decline_text": "You have better things to focus on than a seashell. You continue your way, ignoring it.",
         "chance_of_success": 50,
         "success_outcomes": [
-		    {
+            {
                 "text": "You dash towards it, hoping to grab it before the waves do. Luckily, you're able to swipe it just in time! You trot back to camp happily, glistening seashell in tow.",
                 "exp": 15,
                 "weight": 20
@@ -783,11 +752,11 @@
                 "text": "Unfortunately, the waves are faster than you are and the seashell is sucked back into the ocean. Maybe another day you'll find a similar one to take home- but not today.",
                 "exp": 0,
                 "weight": 20
-			}
-		]
-	},
-	{
-		"patrol_id": "lifegen_warrior_22",
+            }
+        ]
+    },
+    {
+        "patrol_id": "lifegen_warrior_22",
         "biome": [
             "Beach"
         ],
@@ -795,11 +764,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -809,7 +776,7 @@
         "decline_text": "No way you'll go near that. Would be best to report it back to the others before anyone else comes across it.",
         "chance_of_success": 50,
         "success_outcomes": [
-		    {
+            {
                 "text": "As you get closer, you begin to realize what it is- a jellyfish! It seemed to have drifted onto shore. While you don't touch it due to fear of stings, you can appreciate how cool it looks. Not often do you seen a transparent creature.",
                 "exp": 15,
                 "weight": 20
@@ -820,11 +787,11 @@
                 "text": "You pad closer, curious as to what it is. You realize its a jellyfish, and you begin poking it. Suddenly, a sharp, stinging pain immediately hit you, causing you to draw back your paw in pain. You quickly rush back to camp, where you're told that it isn't poisonous- but scolded for touching a potentially deadly jellyfish.",
                 "exp": 0,
                 "weight": 20
-			}
-		]
-	},
-	{
-		"patrol_id": "lifegen_shunned_warrior_1",
+            }
+        ]
+    },
+    {
+        "patrol_id": "lifegen_shunned_warrior_1",
         "biome": [
             "Any"
         ],
@@ -832,12 +799,9 @@
             "Any"
         ],
         "types": [
-            "hunting"
+            "lifegen"
         ],
-        "tags": [
-            "border",
-            "shunned"
-        ],
+        "tags": [],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,
@@ -847,7 +811,7 @@
         "decline_text": "No, it's far too risky. Not wanting to risk extending your punishment, you go to sleep with an empty stomach.",
         "chance_of_success": 50,
         "success_outcomes": [
-		    {
+            {
                 "text": "Thankfully, your nest is already at the edge of camp. It's no challenge to slip out, and when you do, you have to stop yourself from yelping with joy at the sight of live prey. The sleeping squirrel doesn't awaken until far too late, and it's the most delicious meal you've had since your punishment began.",
                 "exp": 20,
                 "weight": 20
@@ -858,7 +822,7 @@
                 "text": "You stand from your nest to attempt to slip out of camp, but the night guard senses the movement and snaps their head towards you. They shoot you a warning glance and you settle back into your nest, not wanting to extend your punishment further.",
                 "exp": 0,
                 "weight": 20
-			}
-		]
-	}
+            }
+        ]
+    }
 ]
