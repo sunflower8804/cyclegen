@@ -8,11 +8,7 @@
             "Any"
         ],
         "types": [
-            "hunting"
-        ],
-        "tags": [
-            "hunting",
-            "small_prey"
+            "lifegen"
         ],
         "tags": [],
         "patrol_art": "lg_warrior1",
@@ -47,11 +43,7 @@
             "Any"
         ],
         "types": [
-            "hunting"
-        ],
-        "tags": [
-            "border",
-            "small_prey"
+            "lifegen"
         ],
         "tags": [],
         "patrol_art": "lg_warrior2",
@@ -86,11 +78,7 @@
             "Any"
         ],
         "types": [
-            "hunting"
-        ],
-        "tags": [
-            "hunting",
-            "small_prey"
+            "lifegen"
         ],
         "tags": [],
         "patrol_art": "lg_warrior_default",
@@ -791,7 +779,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_shunned_warrior_1",
+        "patrol_id": "lifegen_shunned_warrior_J1",
         "biome": [
             "Any"
         ],

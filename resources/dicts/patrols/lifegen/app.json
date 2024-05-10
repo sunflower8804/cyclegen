@@ -1130,5 +1130,42 @@
                 "weight": 20
             }
         ]
+    },
+    {
+        "patrol_id": "lifegen_app_shunned_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "lg_app4",
+        "min_cats": 1,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You restlessly tap a paw against the ground as you watch the other apprentices leave camp for a hunting trip with their mentors. It's a long shot, you know, but you wonder if you'd be allowed to join them, just this once.",
+        "decline_text": "Womp womp.",
+        "chance_of_success": 30,
+        "success_outcomes": [
+            {
+                "text": "You call out to the group and ask as politely as possible if they have room for one more on their trip. A few group members look at you sceptically, but after a tentative nod of approval from your leader, they allow you out of camp for the first time since your punishment began.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "When you call out to the group and ask to join them, they look at you with disgust. One Clanmate snarkily remarks that they couldn't trust you to remember to kill the prey and not the cats. You drop your head onto your paws as they leave. Maybe next time.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
     }
 ]

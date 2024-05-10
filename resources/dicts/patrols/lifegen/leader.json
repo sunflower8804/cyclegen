@@ -243,5 +243,42 @@
                 "weight": 20
             }
         ]
+    },
+    {
+        "patrol_id": "lifegen_leader_shunned_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The Clan leader-- your replacement-- is giving an announcement to the Clan about a recent gathering. They share a decision that you don't really agree with, but wonder if anycat would listen to your opinion anymore.",
+        "decline_text": "Womp womp.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "Ready to get shot down, you raise your voice above the crowd and express your disagreement with the leader's plan. The entire Clan looks to them to see whether or not they'll shoot you down. To your surprise, though, they do not, and instead acknowledge your opinion with a curt nod, and a mutter about how they'll consider it. It's not much, but it's better than nothing.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You can barely finish your sentence before the leader silences you with a hiss. They let you know very clearly that your opinion is of the least concern to the Clan right now, and you can't help but feel offended that your Clanmate would treat you this way.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
     }
 ]

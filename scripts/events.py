@@ -2836,7 +2836,7 @@ class Events:
                 # is being promoted too.
                 valid_living_former_mentors = []
                 for c in cat.former_mentor:
-                    if not (Cat.fetch_cat(c).dead or Cat.fetch_cat(c).outside):
+                    if not (Cat.fetch_cat(c).dead or Cat.fetch_cat(c).outside or Cat.fetch_cat(c).shunned > 0):
                         if promoted_to in mentor_type:
                             if Cat.fetch_cat(c).status in mentor_type[promoted_to]:
                                 valid_living_former_mentors.append(c)
