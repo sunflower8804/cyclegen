@@ -863,7 +863,7 @@ class ProfileScreen(Screens):
 
 
         self.placeholder_tab_3 = UIImageButton(scale(pygame.Rect((800, 1244), (352, 60))), "",
-                                            object_id="#cat_tab_3_blank_button", starting_height=1, manager=MANAGER)
+                                            object_id="#faith_tab_button", starting_height=1, manager=MANAGER)
         # self.placeholder_tab_3.disable()
 
         self.accessories_tab_button = UIImageButton(scale(pygame.Rect((1152, 1244), (352, 60))), "",
@@ -1200,7 +1200,7 @@ class ProfileScreen(Screens):
             self.placeholder_tab_3.kill()
             self.placeholder_tab_3 = None
             self.placeholder_tab_3 = UIImageButton(scale(pygame.Rect((800, 1244), (352, 60))), "",
-                                            object_id="#cat_tab_3_blank_button", starting_height=1, manager=MANAGER)
+                                            object_id="#faith_tab_button", starting_height=1, manager=MANAGER)
 
 
         if self.the_cat.status == 'leader' and not self.the_cat.dead:
@@ -2452,11 +2452,11 @@ class ProfileScreen(Screens):
         if self.faith_bar:
             self.faith_bar.kill()
             self.faith_text.kill()
-        self.faith_bar = pygame_gui.elements.UIImage(scale(pygame.Rect((390, 1030), (842, 78))),
+        self.faith_bar = pygame_gui.elements.UIImage(scale(pygame.Rect((350, 1000), (842, 78))),
                                                                 image_cache.load_image(f"resources/images/faith{self.the_cat.faith}.png").convert_alpha())
         self.faith_bar.disable()
         self.faith_text = UITextBoxTweaked(self.get_faith_text(self.the_cat.faith),
-                                                        scale(pygame.Rect((410, 1100), (850, 298))),
+                                                        scale(pygame.Rect((370, 1070), (850, 298))),
                                                         object_id="#text_box_26_horizleft_pad_10_14",
                                                         line_spacing=1, manager=MANAGER)
         
