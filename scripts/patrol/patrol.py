@@ -1432,13 +1432,6 @@ class Patrol():
                     return ""
                 text = text.replace("mentor1", str(Cat.fetch_cat(game.clan.your_cat.mentor).name))
                 text = text.replace("m_n", str(Cat.fetch_cat(game.clan.your_cat.mentor).name))
-            if "o_c" in text:
-                other_clan = random.choice(game.clan.all_clans)
-                if not other_clan:
-                    return ""
-                text = text.replace("o_c", str(other_clan.name))
-            if "c_n" in text:
-                text = text.replace("c_n", str(game.clan.name))
             if "w_c" in text:
                 if game.clan.war.get("at_war", False):
                     return ""
