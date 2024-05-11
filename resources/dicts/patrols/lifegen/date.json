@@ -438,13 +438,12 @@
             "Any"
         ],
         "types": [
-            "border"
+            "lifegen"
         ],
         "tags": [
             "date",
             "you_med"
         ],
-        "tags": [],
         "patrol_art": "date_default",
         "min_cats": 2,
         "max_cats": 2,
@@ -777,13 +776,12 @@
             "Any"
         ],
         "types": [
-            "border"
+            "lifegen"
         ],
         "tags": [
             "date",
             "df"
         ],
-        "tags": [],
         "patrol_art": "df_training",
         "min_cats": 2,
         "max_cats": 2,
@@ -816,13 +814,12 @@
             "Any"
         ],
         "types": [
-            "border"
+            "lifegen"
         ],
         "tags": [
             "date",
             "df"
         ],
-        "tags": [],
         "patrol_art": "date_default",
         "min_cats": 2,
         "max_cats": 2,
@@ -855,13 +852,12 @@
             "Any"
         ],
         "types": [
-            "border"
+            "lifegen"
         ],
         "tags": [
             "date",
             "df"
         ],
-        "tags": [],
         "patrol_art": "date_default",
         "min_cats": 2,
         "max_cats": 2,
@@ -1055,6 +1051,80 @@
         "fail_outcomes": [
             {
                 "text": "You, r_c, and o_c1 did not have a good time.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "shunned_date_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "date_default",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You want to spend some time with r_c, but you don't know how they'll react to you asking them out, given what you've done.",
+        "decline_text": "You decide against it, knowing that their rejection is likely inevitable.",
+        "chance_of_success": 30,
+        "success_outcomes": [
+            {
+                "text": "When you shyly ask r_c if they'd like to spend some time with you, to your surprise, they say yes! While you're not allowed to leave camp, you two lay in the sun together, tails entwined, ignoring the stares your Clanmates give you.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You approach r_c to ask them out, but before you can even finish speaking, they react with a 'no' so loud that a few Clanmates turn to look. You quickly retreat, returning to your nest and tryign to get the humiliation out of your mind.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "shunned_poly_date_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "date_default",
+        "min_cats": 3,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You see r_c and o_c1 lingering by the camp entrance, seemingly preparing to head out. You'd love to join them, but you don't know if they'd be as open to that as they once were, given what you've done.",
+        "decline_text": "You decide against it, knowing that their rejection is likely inevitable.",
+        "chance_of_success": 30,
+        "success_outcomes": [
+            {
+                "text": "You approach the two, head low, expecting a rejection. However, when you ask if you can join them, they seem glad to have you! Since you're not allowed to leave camp, you, r_c and o_c1 spend some time in the clearing.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "When they see you approaching, r_c and o_c1 quickly stand up and rush out through the camp entrance, knowing you won't be allowed to follow them.",
                 "exp": 0,
                 "weight": 20
             }

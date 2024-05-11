@@ -664,7 +664,9 @@ class Patrol():
                     if game.clan.your_cat.status != 'medicine cat':
                         continue
                 if "df" in patrol.tags:
-                    if not game.clan.your_cat.joined_df:
+                    other_cat = self.patrol_cats[1]
+                    if not game.clan.your_cat.joined_df and not other_cat.joined_df:
+                        # need both cats to be trainees for goop romance
                         continue
                     
             #  correct button check
@@ -696,17 +698,18 @@ class Patrol():
                         if "fellowtrainee" not in patrol.tags:
                             continue
 
+                    if "shunned" in patrol.tags:
+                        if game.clan.your_cat.shunned == 0:
+                            continue
+
             if "lifegen" in patrol.types and "df" not in patrol.types:
                 if "shunned" in patrol.tags:
                     if game.clan.your_cat.shunned == 0:
                         continue
                 
-                if "shunned" not in patrol.tags:
+                if "shunned" not in patrol.tags and "df" not in patrol.tags: # shunned cats can still get regular goop romance patrols
                     if game.clan.your_cat.shunned > 0:
                         continue
-
-                print("CURRENT PATROL TAGS:", patrol.tags)
-                print("Shunned moons:", game.clan.your_cat.shunned)
 
 
             # cruel season tag check

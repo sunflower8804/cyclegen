@@ -491,7 +491,7 @@ class Cat():
                                 self.thought = "Is startled to find themselves wading in the muck of a shadowed forest"
                                 game.clan.add_to_darkforest(self)
                 if not self.df:
-                    if self.shunned > 0 and self.forgiven > 1:
+                    if self.shunned > 0 and self.forgiven > 0:
                         self.df = True
                         self.thought = "Is startled to find themselves wading in the muck of a shadowed forest"
                         game.clan.add_to_darkforest(self)
