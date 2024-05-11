@@ -3328,6 +3328,23 @@
             }
         }
     },
+    "#faith_tab_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/faith_tab.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/faith_tab_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/faith_tab_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/faith_tab_unavailable.png"
+            }
+        }
+    },
     "#cat_tab_3_blank_button": {
         "prototype": "#image_button",
         "images": {
