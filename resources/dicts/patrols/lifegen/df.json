@@ -1631,5 +1631,53 @@
                 }
             }
         ]
+    },
+    {
+        "patrol_id": "testfaithpatrol",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+        ],
+        "patrol_art": "df_default",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You want to alter r_c's faith.",
+        "decline_text": "You decide against it.",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "Their faith in StarClan has gone up!",
+                "exp": 15,
+                "weight": 20,
+                "faith_effects": [
+                    {
+                        "faith_cat": ["r_c"],
+                        "amount": 5
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Their faith in the Dark Forest has gone up.",
+                "exp": 0,
+                "weight": 20,
+                "faith_effects": [
+                    {
+                        "faith_cat": ["r_c"],
+                        "amount": -5
+                    }
+                ]
+            }
+        ]
     }
 ]

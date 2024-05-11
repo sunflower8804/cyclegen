@@ -1057,6 +1057,48 @@
         ]
     },
     {
+        "patrol_id": "poly_date_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+        ],
+        "patrol_art": "date_default",
+        "min_cats": 3,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You're bored around camp, and you notice that r_c and o_c1 are both in camp as well, looking equally bored. The flowers have bloomed-- you consider asking them both if they're like to spend some time with you.",
+        "decline_text": "You decide against it, the fear of rejection too strong to overpower.",
+        "chance_of_success": 60,
+        "success_outcomes": [
+            {
+                "text": "You ask both cats if they'd like to hang out with you, and to your delight, they agree! You, r_c and o_c1 settle in a bountiful flower field just outside of camp and decide to make each other some pretty accessories to wear out of the petals.",
+                "exp": 0,
+                "weight": 20,
+                "accessory": [
+                    {
+                        "cats": ["y_c","o_c1", "r_c"],
+                        "accessory": ["FLOWERCROWN"]
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You approach r_c first, but they tell you they'd rather stay alone today. o_c1 says the same, and you can't help but feel self conscious about the back-to-back rejection.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
         "patrol_id": "shunned_date_J1",
         "biome": [
             "Any"
