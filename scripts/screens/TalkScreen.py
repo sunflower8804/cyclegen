@@ -417,26 +417,28 @@ class TalkScreen(Screens):
             "you_clanfounder",
             "you_clanborn",
             "you_outsiderroots",
-            "you_half-Clan",
+            "you_half-clan",
             "you_formerlyloner",
             "you_formerlyrogue",
             "you_formerlykittypet",
             "you_formerlyoutsider",
             "you_originallyanotherclan",
             "you_orphaned",
-            "you_abandoned"
+            "you_abandoned",
+            "you_ancientspirit"
         ]
         they_backstory_list = ["they_clanfounder",
             "they_clanborn",
             "they_outsiderroots",
-            "they_half-Clan",
+            "they_half-clan",
             "they_formerlyloner",
             "they_formerlyrogue",
             "they_formerlykittypet",
             "they_formerlyoutsider",
             "they_originallyanotherclan",
             "they_orphaned",
-            "they_abandoned"
+            "they_abandoned",
+            "they_ancientspirit"
         ]
         skill_list = ['teacher', 'hunter', 'fighter', 'runner', 'climber', 'swimmer', 'speaker', 'mediator1', 'clever', 'insightful', 'sense', 'kit', 'story', 'lore', 'camp', 'healer', 'star', 'omen', 'dream', 'clairvoyant', 'prophet', 'ghost', 'explorer', 'tracker', 'artistan', 'guardian', 'tunneler', 'navigator', 'song', 'grace', 'clean', 'innovator', 'comforter', 'matchmaker', 'thinker', 'cooperative', 'scholar', 'time', 'treasure', 'fisher', 'language', 'sleeper']
         you_skill_list = ['you_teacher', 'you_hunter', 'you_fighter', 'you_runner', 'you_climber', 'you_swimmer', 'you_speaker', 'you_mediator1', 'you_clever', 'you_insightful', 'you_sense', 'you_kit', 'you_story', 'you_lore', 'you_camp', 'you_healer', 'you_star', 'you_omen', 'you_dream', 'you_clairvoyant', 'you_prophet', 'you_ghost', 'you_explorer', 'you_tracker', 'you_artistan', 'you_guardian', 'you_tunneler', 'you_navigator', 'you_song', 'you_grace', 'you_clean', 'you_innovator', 'you_comforter', 'you_matchmaker', 'you_thinker', 'you_cooperative', 'you_scholar', 'you_time', 'you_treasure', 'you_fisher', 'you_language', 'you_sleeper']
@@ -679,16 +681,13 @@ class TalkScreen(Screens):
 
             # Backstory tags
             if any(i in you_backstory_list for i in tags):
-                ts = you_backstory_list
-                for j in range(len(ts)):
-                    ts[j] = ts[j][4:]
-                if you.backstory not in ts:
+                bs_text = self.backstory_text(game.clan.your_cat).replace(" ", "").lower()
+                if f"you_{bs_text}" not in tags:
                     continue
+
             if any(i in they_backstory_list for i in tags):
-                ts = they_backstory_list
-                for j in range(len(ts)):
-                    ts[j] = ts[j][5:]
-                if cat.backstory not in ts:
+                bs_text = self.backstory_text(cat).replace(" ", "").lower()
+                if f"they_{bs_text}" not in tags:
                     continue
 
             # Skill tags
@@ -1914,3 +1913,21 @@ class TalkScreen(Screens):
             text = text.replace("w_c", str(game.clan.war["enemy"]))
 
         return text
+
+    def backstory_text(self, cat):
+        with open(f"resources/dicts/backstories.json", 'r') as read_file:
+            BACKSTORIES = ujson.loads(read_file.read())
+
+        backstory = cat.backstory
+        if backstory is None:
+            return ''
+        bs_category = None
+
+        for category in BACKSTORIES["backstory_categories"]:
+            if backstory in category:
+                bs_category = category
+                break
+        bs_display = BACKSTORIES["backstory_display"][bs_category]
+        if not bs_display:
+            return "clanfounder"
+        return bs_display
