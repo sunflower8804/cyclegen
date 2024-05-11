@@ -324,8 +324,8 @@ class MurderScreen(Screens):
         discover_chance = self.get_discover_chance(you, cat_to_murder, accomplice, accompliced)
         r_num = randint(1,100)
 
-        discover_chance = 2
-        r_num = 1
+        # discover_chance = 2
+        # r_num = 1
         # debug ^^
 
         discovered = False
