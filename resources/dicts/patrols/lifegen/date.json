@@ -1045,7 +1045,13 @@
             {
                 "text": "You, r_c, and o_c1 had a good time.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "accessory": [
+                    {
+                        "cats": ["y_c","o_c1", "r_c"],
+                        "accessory": ["FLOWERCROWN"]
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -1062,7 +1068,8 @@
             "Any"
         ],
         "season": [
-            "Any"
+            "newleaf",
+            "greenleaf"
         ],
         "types": [
             "lifegen"
