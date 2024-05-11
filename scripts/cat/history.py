@@ -683,6 +683,7 @@ class History:
         if cat.shunned == 0:
             cat.shunned = 1
             cat.thought = "Is upset that they have been shunned"
+            cat.faith -= 0.5
 
             if random.randint(1,4) == 1:
                 cat.get_injured("guilt")

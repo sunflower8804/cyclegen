@@ -591,12 +591,14 @@ class ProfileScreen(Screens):
                 self.change_screen('murder screen')
             elif event.ui_element == self.join_df_button:
                 game.clan.your_cat.joined_df = True
+                game.clan.your_cat.faith -=1
                 game.clan.your_cat.update_df_mentor()
                 self.join_df_button.disable()
                 self.clear_profile()
                 self.build_profile()
             elif event.ui_element == self.exit_df_button:
                 game.clan.your_cat.joined_df = False
+                game.clan.your_cat.faith += 1
                 try:
                     Cat.all_cats[game.clan.your_cat.df_mentor].df_apprentices.remove(game.clan.your_cat.ID)
                 except:
@@ -640,10 +642,18 @@ class ProfileScreen(Screens):
 
 
                     if self.the_cat.ID == game.clan.demon.ID and game.clan.followingsc == True:
-                                game.clan.followingsc = False
+                        game.clan.followingsc = False
+                        for i in game.clan.clan_cats:
+                            clan_cat = Cat.fetch_cat(i)
+                            if clan_cat:
+                                clan_cat.faith-=1
 
                     elif self.the_cat.ID == game.clan.instructor.ID and not game.clan.followingsc:
                         game.clan.followingsc = True
+                        for i in game.clan.clan_cats:
+                            clan_cat = Cat.fetch_cat(i)
+                            if clan_cat:
+                                clan_cat.faith+=1
 
 
 
@@ -1192,15 +1202,22 @@ class ProfileScreen(Screens):
         if self.the_cat.ID == game.clan.your_cat.ID and not game.clan.your_cat.dead and not game.clan.your_cat.outside:
             self.placeholder_tab_3.kill()
             self.profile_elements['your_tab'] = UIImageButton(scale(pygame.Rect((800, 1244), (352, 60))), "",
-                                               object_id="#your_tab", starting_height=1, manager=MANAGER)
+                                            object_id="#your_tab", starting_height=1, manager=MANAGER)
             self.your_tab = self.profile_elements['your_tab']
         else:
             if self.open_tab == 'your tab':
+                self.close_current_tab()
+            if self.open_tab == "faith" and (self.the_cat.dead  or self.the_cat.outside or self.the_cat.moons < 6):
                 self.close_current_tab()
             self.placeholder_tab_3.kill()
             self.placeholder_tab_3 = None
             self.placeholder_tab_3 = UIImageButton(scale(pygame.Rect((800, 1244), (352, 60))), "",
                                             object_id="#faith_tab_button", starting_height=1, manager=MANAGER)
+            if self.the_cat.dead or self.the_cat.outside or self.the_cat.moons < 6:
+                self.placeholder_tab_3.disable()
+            else:
+                self.placeholder_tab_3.enable()
+        
 
 
         if self.the_cat.status == 'leader' and not self.the_cat.dead:
@@ -2452,10 +2469,15 @@ class ProfileScreen(Screens):
         if self.faith_bar:
             self.faith_bar.kill()
             self.faith_text.kill()
+        cat_faith = round(self.the_cat.faith)
+        if cat_faith > 9:
+            cat_faith = 9
+        elif cat_faith < -9:
+            cat_faith = -9
         self.faith_bar = pygame_gui.elements.UIImage(scale(pygame.Rect((350, 1000), (842, 78))),
-                                                                image_cache.load_image(f"resources/images/faith{self.the_cat.faith}.png").convert_alpha())
+                                                                image_cache.load_image(f"resources/images/faith{cat_faith}.png").convert_alpha())
         self.faith_bar.disable()
-        self.faith_text = UITextBoxTweaked(self.get_faith_text(self.the_cat.faith),
+        self.faith_text = UITextBoxTweaked(self.get_faith_text(cat_faith),
                                                         scale(pygame.Rect((370, 1070), (850, 298))),
                                                         object_id="#text_box_26_horizleft_pad_10_14",
                                                         line_spacing=1, manager=MANAGER)

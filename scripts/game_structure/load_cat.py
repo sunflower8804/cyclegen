@@ -197,7 +197,7 @@ def json_load():
             new_cat.did_activity = cat["did_activity"] if "did_activity" in cat else False
             new_cat.df_mentor = cat["df_mentor"] if "df_mentor" in cat else None
             new_cat.df_apprentices = cat["df_apprentices"] if "df_apprentices" in cat else []
-            new_cat.faith = cat["faith"] if "faith" in cat else random.randint(-9,9)
+            new_cat.faith = cat["faith"] if "faith" in cat else random.randint(-3,3)
             if "died_by" in cat or "scar_event" in cat or "mentor_influence" in cat:
                 new_cat.convert_history(
                     cat["died_by"] if "died_by" in cat else [],

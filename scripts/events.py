@@ -148,6 +148,10 @@ class Events:
                   encoding="ascii") as read_file:
             disaster_text = ujson.loads(read_file.read())
         if not game.clan.disaster and random.randint(1,50) == 1:
+            for clan_cat in game.clan.clan_cats:
+                clan_cat_cat = Cat.fetch_cat(clan_cat)
+                if clan_cat_cat:
+                    clan_cat_cat.faith -= round(random.uniform(-1,0), 2)
             game.clan.disaster = random.choice(list(disaster_text.keys()))
             if "next_possible_disaster" in game.switches and game.switches["next_possible_disaster"]:
                 current_disaster =  disaster_text.get(game.switches["next_possible_disaster"])
@@ -159,6 +163,10 @@ class Events:
         if game.clan.disaster and game.clan.disaster != "":
             if "next_possible_disaster" in game.switches and game.clan.disaster == game.switches["next_possible_disaster"]:
                 game.switches["next_possible_disaster"] = None
+            for clan_cat in game.clan.clan_cats:
+                clan_cat_cat = Cat.fetch_cat(clan_cat)
+                if clan_cat_cat:
+                    clan_cat_cat.faith -= round(random.uniform(-0.1,0), 2)
             self.handle_disaster()
         
         for cat in Cat.all_cats.copy().values():
@@ -187,6 +195,7 @@ class Events:
                         game.cur_events_list.append(
                             Single_Event(_val[0], ["birth_death", "relation"],
                                         _val[1]))
+                        Cat.fetch_cat(cat_id).faith -= round(random.uniform(-1,0), 2)
             
             
                 
@@ -424,6 +433,10 @@ class Events:
         if game.clan.focus == "starving" and game.clan.freshkill_pile.total_amount > game.clan.freshkill_pile.amount_food_needed()*0.5:
             game.clan.focus = ""
             game.clan.focus_moons = 0
+            for clan_cat in game.clan.clan_cats:
+                clan_cat_cat = Cat.fetch_cat(clan_cat)
+                if clan_cat_cat:
+                    clan_cat_cat.faith -= round(random.uniform(-1,0), 2)
 
         # Handle lost focus for focuses that have set duration
         if game.clan.focus and dialogue_focuses[game.clan.focus]["duration"] != -1 and game.clan.focus_moons >= dialogue_focuses[game.clan.focus]["duration"]:
@@ -1462,6 +1475,7 @@ class Events:
                 r_clanmate = Cat.all_cats.get(random.choice(game.clan.clan_cats))
             
             r_clanmate.joined_df = True
+            r_clanmate.faith -= 1
             r_clanmate.update_df_mentor()
             evt_txt = random.choice(self.df_txt["clanmate"]).replace("c_m", str(r_clanmate.name))
             evt = Single_Event(evt_txt)
@@ -2378,6 +2392,7 @@ class Events:
                 return
 
         self.handle_murder(cat)
+        cat.faith += round(random.uniform(-0.2,0.2), 2)
 
         if cat.status == 'deputy' and cat.ID != game.clan.your_cat.ID and game.clan.your_cat.status == 'deputy' and not game.clan.your_cat.dead and not (game.clan.your_cat.outside or game.clan.your_cat.exiled):
             cat.status = 'warrior'
@@ -2512,6 +2527,7 @@ class Events:
                 game.clan.leader_lives = 9
                 text = ''
                 shunnedleader = cat.name if cat.shunned > 0 and cat.status == 'leader' and not cat.outside or cat.dead else None
+                
 
                 if cat.outside and not (cat.exiled or cat.df) and cat.status not in ['kittypet', 'loner', 'rogue','former Clancat']:
                     shuntext = ""
@@ -2988,11 +3004,12 @@ class Events:
                 elif tag == "dead1_parent" and involved_dead_parent:
                     involved_cats.append(involved_dead_parent.ID)
 
-            # # remove duplicates
+            # remove duplicates
             involved_cats = list(set(involved_cats))
             if cat.ID != game.clan.your_cat.ID and game.clan.your_cat.ID != cat.mentor:
                 game.cur_events_list.append(
                     Single_Event(f'{ceremony_text}', "ceremony", involved_cats))
+            cat.faith += round(random.uniform(0,2), 2)
             game.ceremony_events_list.append(f'{cat.name}{ceremony_text}')
 
 
@@ -3522,6 +3539,11 @@ class Events:
                     History.add_death(poor_little_meowmeow, 'This cat died to a heatwave.')
                 elif re.search("(die|dies) after the water dries up from drought.", event_string):
                     History.add_death(poor_little_meowmeow, 'This cat died to dehydration after a drought.')
+            
+            for clan_cat in game.clan.clan_cats:
+                clan_cat_cat = Cat.fetch_cat(clan_cat)
+                if clan_cat_cat:
+                    clan_cat_cat.faith -= round(random.uniform(-1,0), 2)
 
     def handle_disaster(self):
         if not game.clan.disaster:
