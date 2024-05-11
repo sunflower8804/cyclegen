@@ -171,6 +171,7 @@ class ProfileScreen(Screens):
         self.previous_search_text = "search"
         self.cat_list_buttons = None
         self.search_inventory = []
+        self.faith_text = None
 
     def handle_event(self, event):
 
