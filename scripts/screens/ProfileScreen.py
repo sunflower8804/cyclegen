@@ -2466,7 +2466,7 @@ class ProfileScreen(Screens):
             self.update_disabled_buttons_and_text()
 
     def open_faith_tab(self):
-        if self.faith_bar:
+        if self.faith_bar and self.faith_text:
             self.faith_bar.kill()
             self.faith_text.kill()
         cat_faith = round(self.the_cat.faith)
