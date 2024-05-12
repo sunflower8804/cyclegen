@@ -479,6 +479,10 @@ class TalkScreen(Screens):
 
             if "they_adult" in tags and cat.status in ['apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice", "kitten", "newborn"]:
                 continue
+
+            if "you_adult" in tags and you.status in ['apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice", "kitten", "newborn"]:
+                continue
+
             if "they_app" in tags and cat.status not in ['apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice"]:
                 continue
             
@@ -1927,7 +1931,11 @@ class TalkScreen(Screens):
             if backstory in category:
                 bs_category = category
                 break
-        bs_display = BACKSTORIES["backstory_display"][bs_category]
+        if bs_category is not None:
+            bs_display = BACKSTORIES["backstory_display"][bs_category]
+        else:
+            bs_display = None
+            print("ERROR: Backstory category was not found.")
         if not bs_display:
             return "clanfounder"
         return bs_display

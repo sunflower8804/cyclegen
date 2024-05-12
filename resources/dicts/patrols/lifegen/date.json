@@ -23,7 +23,16 @@
             {
                 "text": "They agree to it! You walk through the forest, tails entwined, when suddenly you feel a shower of ice hit your face! You look to r_c bewilderedly, realizing that they flicked snow at you! You have a snow battle that ends with the both of you dissolving into giggles.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 10
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -59,14 +68,32 @@
             {
                 "text": " r_c shies away from your gaze, but nods slowly and smiles.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "comfort"],
+                        "amount": 13
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
             {
                 "text": "r_c almost seems a little offended that you'd asked and declines hastily, making things awkward.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["y_c"],
+                        "cats_from": ["r_c"],
+                        "mutual": false,
+                        "values": ["romantic"],
+                        "amount": -5
+                    }
+                ]
             }
         ]
     },
@@ -92,16 +119,34 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You find them while they're getting some fresh kill and ask if they'd like to attend with you. They seem to be happy that you asked! You had a wonderful evening watching the stars with them.",
+                "text": "You find them while they're getting some fresh kill and ask if they'd like to attend with you. They seem to be happy that you asked! You have a wonderful evening watching the stars with them.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "They were talking to another cat, when you found them. They gently informed you that they were watching it with someone else. You slink off, embarrassed. You felt so bad that you didn't even go to see it.",
+                "text": "They're talking to another cat, when you find them. They gently inform you that they're watching it with someone else. You slink off, embarrassed. You feel so bad that you don't even go to see it.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": false,
+                        "values": ["comfort"],
+                        "amount": -5
+                    }
+                ]
             }
         ]
     },
@@ -129,7 +174,16 @@
             {
                 "text": "You're almost surprised when r_c's eyes light up with interest. You both spend time in the shelter of a Twoleg path, watching lightning arc out of the sky beautifully. r_c gets a bit spooked, and inches closer to you for shelter. You try to hide behind your whiskers.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["y_c"],
+                        "cats_from": ["r_c"],
+                        "mutual": false,
+                        "values": ["comfort", "platonic"],
+                        "amount": 10
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -164,14 +218,32 @@
             {
                 "text": "You gently lean into r_c, resting your head on their shoulder. You can hear a purr emanating from their throat, and they slowly lay their chin on the top of your head as you watch the sunrise together.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "comfort"],
+                        "amount": 10
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
             {
                 "text": "You slowly inch closer to r_c and lean your head on their shoulder, but they glare you down and scoot away uncomfortably. Ouch, that was awkward...",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["y_c"],
+                        "cats_from": ["r_c"],
+                        "mutual": false,
+                        "values": ["comfort"],
+                        "amount": -5
+                    }
+                ]
             }
         ]
     },
@@ -199,7 +271,16 @@
             {
                 "text": "They agree! Phew. The two of you have a wonderful day, jumping around in the waves and engaging in small water fights, and you feel like your connection has strengthened.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 10
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -244,6 +325,15 @@
                             "FLOWER"
                         ]
                     }
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 10
+                    }
                 ]
             }
         ],
@@ -280,7 +370,16 @@
             {
                 "text": "r_c happily agrees saying they'd love to go out with you. The two of you wander through c_n's territory and you find yourself staring at them for extended periods of time. How have you never noticed their beauty?",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": false,
+                        "values": ["romantic"],
+                        "amount": 13
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -315,14 +414,32 @@
             {
                 "text": "You lean against them and they let out a surprised purr, and thank you. They joked that they were getting cold, but now they're at the perfect temperature thanks to you.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "comfort"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
             {
                 "text": "They hiss a warning at you, asking what you're doing and you retreat immediately. The rest of the patrol is painfully awkward.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["comfort"],
+                        "amount": -8
+                    }
+                ]
             }
         ]
     },
@@ -350,7 +467,16 @@
             {
                 "text": "With a large sigh, you follow the path leading over to them. You both smile at each other and eventually you both entwine your tails together.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "comfort"],
+                        "amount": 10
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -385,7 +511,16 @@
             {
                 "text": "r_c seems surprised to see you when they open their eyes, but eventually get to their feet. As the morning sun turns orange with the dawn, the two of you watch in silence. The local hawk's nest has hatched, and every now and again, you catch a glimpse of a chick.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["comfort", "platonic"],
+                        "amount": 10
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -420,7 +555,16 @@
             {
                 "text": "You carefully ask r_c what's on their mind. They tell you about how they've been feeling worthless lately, and the dark, cloudy weather hasn't been helping. They splash the water in frustration. You give them a soft smile and reassure them of their worth, splashing some water back at them. The moment of sadness turns into a fun water fight.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["comfort", "platonic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -456,9 +600,18 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "r_c purred in amusement, telling you that you look very pretty yourself. You go the rest of your day holding your tail high in pride.",
+                "text": "r_c purres in amusement, telling you that you look very pretty yourself. You go the rest of your day holding your tail high in pride.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -494,7 +647,16 @@
             {
                 "text": "You nervously ask r_c and they look away, blushing a bit. They purr and tell you to just focus on the sky though you can't help but notice them glancing at you affectionately every now and then.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 12
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -527,9 +689,18 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You can't help but see what they are thinking and agree, watching as r_c creeps through some tall grass before leaping out and scaring the twoleg kit. On the way back, you and r_c joke about what happened and have a great new joke.",
+                "text": "You can't help but see what they are thinking and agree, watching as r_c creeps through some tall grass before leaping out and scaring the twoleg kit. On the way back, you and r_c laugh about what happened and have a great new inside joke.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["platonic"],
+                        "amount": 10
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -574,12 +745,21 @@
                             "PETALS"
                         ]
                     }
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 8
+                    }
                 ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "r_c just stands there as you begin to run and you slow to a stop, mewing confusedly at them. They glare at you, telling you to get back to work as they turn to continue on the intended patrol path... you can't help but shrink from how awkward that was.",
+                "text": "r_c just stands there as you begin to run and you slow to a stop, meowing confusedly at them. They glare at you, telling you to get back to work as they turn to continue on the intended patrol path... you can't help but shrink from how awkward that was.",
                 "exp": 0,
                 "weight": 20
             }
@@ -609,7 +789,16 @@
             {
                 "text": "You ask if they'd like to run through the field. Confused, they agree, and gasp once they do. Fireflies flew out of the long grass, swirling around the two of you like a spiral of lights. However, the only light that catches your eye is the joy in theirs.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -642,9 +831,18 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "Quickly grabbing r_c's attention with a playful mew, you dash towards the small oncoming wave and gracefully leap into it. r_c yelped in shock and waded slowly into the water to find you and make sure you were okay, until your soaked head popped out of the water with a colorful coquina clam in your jaws. r_c was confused for a moment until you started imitating a silly voice, doing your best to open and close the clam in sync with your words. They burst out in laughter, their warm smile back on their beautifully lit face from the dusk.",
+                "text": "Quickly grabbing r_c's attention with a playful mew, you dash towards the small oncoming wave and gracefully leap into it. r_c yelps in shock and wades slowly into the water to find you and make sure you're okay, until your soaked head pops out of the water with a colorful coquina clam in your jaws. r_c is confused for a moment until you start imitating a silly voice, doing your best to open and close the clam in sync with your words. They burst out in laughter, their warm smile back on their beautifully lit face from the dusk.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -679,7 +877,16 @@
             {
                 "text": "You gently brush your tail across r_c's shoulder blade, and they thank you with a purr that's a little too warm for the simplicity of the favor.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -712,7 +919,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You stood up and collected the prettiest of maple leaves, and after gathering a good load of them, you stepped over and showed r_c the leaves. They look joyous and gracefully receive the maple leaves from your paw, putting them on their ear.",
+                "text": "You stand up and collect the prettiest of maple leaves, and after gathering a good load of them, you step over and show r_c the leaves. They look joyous and gracefully receive the maple leaves from your paw, putting them on their ear.",
                 "exp": 0,
                 "weight": 20,
                 "accessory": [
@@ -724,12 +931,21 @@
                             "MAPLE LEAF"
                         ]
                     }
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 8
+                    }
                 ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "They saw you looking around for the leaves and asked what you were doing. You are unsure of what to reply, so you just say you were wandering around. They didn't ask you anything anymore, and you gave up, soon resuming the patrol.",
+                "text": "They see you looking around for the leaves and ask what you're doing. You are unsure of what to reply, so you just say you were wandering around. They don't ask you anything anymore, and you give up, soon resuming the patrol.",
                 "exp": 0,
                 "weight": 20
             }
@@ -752,19 +968,28 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You were told about the blue supermoon, and decided it will be a good opportunity to ask r_c out. You padded up to them, but hesitated. What if it doesn't go as planned?",
-        "decline_text": "You couldn't gather enough courage for this, so you stopped and turned away. Guess tonight you'll be enjoying it by yourself.",
+        "intro_text": "You were told about the blue supermoon, and decided it would be a good opportunity to ask r_c out. You pad up to them, but hesitate. What if it doesn't go as planned?",
+        "decline_text": "You can't gather enough courage for this, so you stop and turned away. Guess tonight you'll be enjoying it by yourself.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "They turned back, looking at you- and you successfully asked them without stuttering if they wanted to go see the blue supermoon tonight with you. They happily agreed, and when the time comes, you and them sit on top of a tall tree, gazing at the bright, massive, slightly blue-colored moon and the countless sparkly stars together. You felt extremely happy to hear r_c's soft purrs and see their face being lit up.",
+                "text": "They turn back, looking at you- and you successfully ask them without stuttering if they want to go see the blue supermoon tonight with you. They happily agree, and when the time comes, you and them sit on top of a tall tree, gazing at the bright, massive, slightly blue-colored moon and the countless sparkly stars together. You feel extremely happy to hear r_c's soft purrs and see their face being lit up.",
                 "exp": 20,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 6
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "They politely decline, saying that they had to go on a night patrol, and you weren't selected with them. Seems like tonight you two will be watching the moon from different parts of the territory... or it's only r_c that's watching.",
+                "text": "They politely decline, saying that they have to go on a night patrol, and you weren't selected with them. Seems like tonight you two will be watching the moon from different parts of the territory... or it'll only be r_c  watching.",
                 "exp": 0,
                 "weight": 20
             }
@@ -790,14 +1015,23 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You and r_c go out in the Dark Forest, away from the spirits and trainees. r_c - who you've been practicing with and secretly admiring - enthusiastically offers to teach you some of their forbidden moves. Should you practice with them?",
-        "decline_text": "You feel as if this were a bit too risky. You nervously decline r_c's offer.",
+        "intro_text": "You and r_c go out in the Dark Forest, away from the spirits and trainees. r_c - who you've been practicing with and admiring - enthusiastically offers to teach you some of their forbidden moves. Should you practice with them?",
+        "decline_text": "You feel as if this is a bit too risky. You nervously decline r_c's offer.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
                 "text": "You and r_c practice these forbidden moves together. You feel more confident and strong. Later, you and r_c later take a break in the muck, heavily breathing, lightly scratched, but your love and cooperation with r_c slowly growing.",
                 "exp": 20,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -833,9 +1067,18 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You decide to step up, and you approach the spirit who had been berating r_c. They angrily hiss at you and leap on you, and you give them a good fight before making them flee off. r_c thanks you, and they help lick your minor wounds clean, but you soon notice yourself leaning on them, tails twining.",
+                "text": "You decide to step up, and you approach the spirit who had been berating r_c. They angrily hiss at you and leap on you, and you give them a good fight before making them flee. r_c thanks you, and they help lick your minor wounds clean, but you soon notice yourself leaning on them, tails twining.",
                 "exp": 15,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -866,19 +1109,28 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "A Dark Forest cat whispers threats into your ear and taunts you. A fellow clanmate sees you and decides to help, chasing the spirit away. You feel your heart beating full of love, wanting to say something.",
-        "decline_text": "You walk away, hastily, dragging your tail through the muck. Maybe you weren't meant for them.",
+        "intro_text": "A Dark Forest cat whispers threats into your ear and taunts you. An unfamiliar Dark Forest clanmate sees you and decides to help, chasing the spirit away. You feel your heart beating full of affection, wanting to say something.",
+        "decline_text": "You decide to walk away, hastily, dragging your tail through the muck. Maybe you weren't meant for them.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You respond to the cat a simple thanks, and the cat introduces themself as r_c, which you immediately recognized was from your clan. They then talk to you for a bit, but you feel as if you are being watched behind your back by the residents of the Dark Forest.",
+                "text": "You respond to the cat a simple thanks, and the cat introduces themself as r_c, who you instantly recognize from your Clan. You two talk for a bit, though you feel as if you are being watched behind your back by the residents of the Dark Forest.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 5
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You awkwardly stutter a thanks to the cat, which they hesitantly introduce themselves as r_c, but after that, they quickly walk through the muck, away from your sight. Your ears feel hot from embarrassment.",
+                "text": "You awkwardly stutter a thanks to the cat, who you soon recognize to be r_c, but after that, they quickly walk through the muck, away from your sight. Your ears feel hot from embarrassment.",
                 "exp": 0,
                 "weight": 20
             }
@@ -908,7 +1160,16 @@
             {
                 "text": "As you stare over at them, they slowly swivel their head to see you gawking, and chuckle lightly before giving you a warm look. Your heart flutters!",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": false,
+                        "values": ["romantic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -943,7 +1204,16 @@
             {
                 "text": "You are thrilled when r_c happily agrees to help. Though the chore is boring, the two of you joke around and have fun, and before you know it, you're all done. The two of you continue messing around afterwards, and you feel a happy flutter in your chest.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -978,7 +1248,16 @@
             {
                 "text": "r_c agrees to walk with you out of camp, and you have to keep yourself from jumping in joy. In the soft morning light of early sunrise, you quietly admire their side profile to yourself, awed by how their fur looks under the golden lighting.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic", "platonic"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -1014,7 +1293,16 @@
             {
                 "text": "As r_c and you gather moss, you sheepishly express your love towards them, and they quickly turn their head towards you, and giggles a little, telling you how they have always known how you felt about them, but your shocked expression is full of joy and love. r_c and you manage to gather moss while talking and making jokes together, and when you return to camp, a new aura emerges from r_c.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 15
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -1058,6 +1346,15 @@
                     {
                         "cats": ["r_c", "y_c"],
                         "accessory": ["LUNAR MOTH"]
+                    }
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 10
                     }
                 ]
             }
@@ -1136,12 +1433,21 @@
             {
                 "text": "When you pick up the rock to show to o_c1, both they and r_c are delighted, agreeing that it looks just like o_c1's eyes. r_c rushes to the water to find a rock to match yours, and soon, all three of you are searching for your perfect match. You each keep someone else's matching rock with you when you head back to camp, and you sleep a little better that night with it by your nest.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["romantic", "platonic", "comfort"],
+                        "amount": 10
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You call out for r_c and o_c1 one to stop walking, but as you pick up the rock to show them, you lose your grasp on it and it falls into the river, quickly sinking out of sight. r_c and o_c1 giggle at your misfortunae, and you laugh along, but you're still disappointed to lose such a cute gift.",
+                "text": "You call out for r_c and o_c1 one to stop walking, but as you pick up the rock to show them, you lose your grasp on it and it falls into the river, quickly sinking out of sight. r_c and o_c1 giggle at your misfortune, and you laugh along, but you're still disappointed to lose such a cute gift.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1178,6 +1484,15 @@
                     {
                         "cats": ["y_c","o_c1", "r_c"],
                         "accessory": ["FLOWERCROWN"]
+                    }
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["romantic", "trust"],
+                        "amount": 8
                     }
                 ]
             }
@@ -1216,7 +1531,16 @@
             {
                 "text": "When you shyly ask r_c if they'd like to spend some time with you, to your surprise, they say yes! While you're not allowed to leave camp, you two lay in the sun together, tails entwined, ignoring the stares your Clanmates give you.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": false,
+                        "values": ["romantic", "trust", "comfort"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -1253,7 +1577,16 @@
             {
                 "text": "You approach the two, head low, expecting a rejection. However, when you ask if you can join them, they seem glad to have you! Since you're not allowed to leave camp, you, r_c and o_c1 spend some time in the clearing.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["romantic", "trust", "comfort"],
+                        "amount": 8
+                    }
+                ]
             }
         ],
         "fail_outcomes": [

@@ -711,7 +711,13 @@
                         "amount": 2
                     }
                 ],
-                "convert": ["r_c"]
+                "convert": ["r_c"],
+                "faith_effects": [
+                    {
+                        "faith_cat": ["r_c"],
+                        "amount": -1
+                    }
+                ]
             },
             {
                 "text": "You explain that you're both in the Dark Forest, where you can train to become stronger. You offer to bring them to the training area if they'd like to join you. r_c trusts you, so they eagerly follow your lead.",
@@ -727,7 +733,13 @@
                         "amount": 5
                     }
                 ],
-                "convert": ["r_c"]
+                "convert": ["r_c"],
+                "faith_effects": [
+                    {
+                        "faith_cat": ["r_c"],
+                        "amount": -2
+                    }
+                ]
             },
             {
                 "text": "You explain that you're both in the Dark Forest, where you can train to become stronger. You offer to bring them to the training area, if they'd like to join you. r_c hesitates before shaking their head in refusal. Their loss, you suppose. You let them find their own way out as you proceed to the training grounds.",
@@ -1456,7 +1468,7 @@
                 "weight": 20
             },
             {
-                "text": "As r_c manages to pull themselves up onto shore, you keep careful watch to make sure no hostile warriors pop out of the shadows to attack them while they can't see. Once they catch their breath and wipe the muck from their eyes, they look happy to see you, and thank you for saving them. When they asl where they are, you avoid answering the question, simply telling them not to worry, and that they'll wake up soon.",
+                "text": "As r_c manages to pull themselves up onto shore, you keep careful watch to make sure no hostile warriors pop out of the shadows to attack them while they can't see. Once they catch their breath and wipe the muck from their eyes, they look happy to see you, and thank you for saving them. When they ask where they are, you avoid answering the question, simply telling them not to worry, and that they'll wake up soon.",
                 "exp": 20,
                 "weight": 20
             }
@@ -1545,7 +1557,13 @@
                 "text": "You tell r_c that you're in the Dark Forest, where Clan cats can train to grow stronger. Though anxious at first, they begin to grow more comfortable as you show them around. After meeting with your mentor and several other Dark Forest warriors, they decide to stay!",
                 "exp": 20,
                 "weight": 10,
-                "convert": ["r_c"]
+                "convert": ["r_c"],
+                "faith_effects": [
+                    {
+                        "faith_cat": ["r_c"],
+                        "amount": -2
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -1629,54 +1647,6 @@
                 "history_text": {
                     "scar": "m_c was scarred by a Clanmate in the Dark Forest."
                 }
-            }
-        ]
-    },
-    {
-        "patrol_id": "testfaithpatrol",
-        "biome": [
-            "Any"
-        ],
-        "season": [
-            "Any"
-        ],
-        "types": [
-            "lifegen"
-        ],
-        "tags": [
-        ],
-        "patrol_art": "df_default",
-        "min_cats": 2,
-        "max_cats": 2,
-        "min_max_status": {},
-        "weight": 20,
-        "intro_text": "You want to alter r_c's faith.",
-        "decline_text": "You decide against it.",
-        "chance_of_success": 40,
-        "success_outcomes": [
-            {
-                "text": "Their faith in StarClan has gone up!",
-                "exp": 15,
-                "weight": 20,
-                "faith_effects": [
-                    {
-                        "faith_cat": ["r_c"],
-                        "amount": 5
-                    }
-                ]
-            }
-        ],
-        "fail_outcomes": [
-            {
-                "text": "Their faith in the Dark Forest has gone up.",
-                "exp": 0,
-                "weight": 20,
-                "faith_effects": [
-                    {
-                        "faith_cat": ["r_c"],
-                        "amount": -5
-                    }
-                ]
             }
         ]
     }
