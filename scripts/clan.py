@@ -407,6 +407,10 @@ class Clan():
             Cat.all_cats[leader.ID].status_change('leader')
             self.leader_predecessors += 1
             self.leader_lives = 9
+            for clan_cat in game.clan.clan_cats:
+                clan_cat_cat = Cat.fetch_cat(clan_cat)
+                if clan_cat_cat:
+                    clan_cat_cat.faith -= round(random.uniform(0,1), 2)
         game.switches['new_leader'] = None
 
     def new_deputy(self, deputy):

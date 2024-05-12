@@ -457,6 +457,10 @@ class Pregnancy_Events():
         # display event
         if kits_amount != 0:
             game.cur_events_list.append(Single_Event(print_event, ["health", "birth_death"], involved_cats))
+            for clan_cat in game.clan.clan_cats:
+                clan_cat_cat = Cat.fetch_cat(clan_cat)
+                if clan_cat_cat:
+                    clan_cat_cat.faith -= round(random.uniform(0,1), 2)
 
     # ---------------------------------------------------------------------------- #
     #                          check if event is triggered                         #

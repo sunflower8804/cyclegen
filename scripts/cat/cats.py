@@ -235,7 +235,7 @@ class Cat():
         self.did_activity = False
         self.df_mentor = None
         self.df_apprentices = []
-        self.faith = randint(-9, 9)
+        self.faith = randint(-3, 3)
         
         self.prevent_fading = False  # Prevents a cat from fading.
         self.faded_offspring = []  # Stores of a list of faded offspring, for family page purposes.
@@ -517,6 +517,7 @@ class Cat():
         self.exiled = True
         self.outside = True
         self.shunned = 0
+        self.faith -= 0.5
         self.status = 'exiled'
         if self.personality.trait == 'vengeful':
             self.thought = "Swears their revenge for being exiled"
@@ -918,6 +919,7 @@ class Cat():
         """ Makes a Clan cat an "outside" cat. Handles removing them from special positions, and removing
         mentors and apprentices. """
         self.outside = True
+        self.faith -= 0.3
         
         if self.status in ['leader', 'warrior']:
             self.status_change("warrior")
