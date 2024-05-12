@@ -522,6 +522,7 @@ class PatrolOutcome():
         for _cat in cats_to_convert:
             results.append(f"{_cat.name} has joined the Dark Forest.")
             _cat.joined_df = True
+            _cat.faith -= 1
             
         return " ".join(results)
     

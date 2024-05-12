@@ -401,17 +401,20 @@ class MurderScreen(Screens):
             txt = txt.replace('v_c', str(cat_to_murder.name))
             game.cur_events_list.insert(2, Single_Event(txt))
             you.shunned = 1
+            you.faith -= 0.5
         elif punishment_chance == 2:
             txt = f"{accomplice.name} is blamed for the murder of v_c. However, you were not caught."
             txt = txt.replace('v_c', str(cat_to_murder.name))
             game.cur_events_list.insert(2, Single_Event(txt))
             accomplice.shunned = 1
+            accomplice.faith -= 0.5
         else:
             txt = f"The unsettling truth of v_c's death is discovered, with you and {accomplice.name} responsible. The Clan decides both of your punishments."
             txt = txt.replace('v_c', str(cat_to_murder.name))
             game.cur_events_list.insert(2, Single_Event(txt))
             you.shunned = 1
             accomplice.shunned = 1
+            accomplice.faith -= 0.5
         
         if punishment_chance == 1 or punishment_chance == 3:
             kit_punishment = ["You are assigned counseling by the Clan's medicine cat to help you understand the severity of your actions and to guide you to make better decisions in the future.",
