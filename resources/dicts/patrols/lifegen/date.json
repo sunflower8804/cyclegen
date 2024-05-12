@@ -54,6 +54,7 @@
         "intro_text": "You and r_c go on a patrol alone, and it has gone wonderfully thus far. However, you feel the need to ask if the other considers this a date.",
         "decline_text": "Your nerves get to you, and you find yourself unable to speak.",
         "chance_of_success": 50,
+        "relationship_constraint": ["not_mates"],
         "success_outcomes": [
             {
                 "text": " r_c shies away from your gaze, but nods slowly and smiles.",
@@ -274,6 +275,7 @@
         "intro_text": "You ponder whether you should ask r_c on an evening patrol with just the two of you. The warm breeze blowing may stir up some hidden feelings.",
         "decline_text": "You decide not to. The thought of rejection is too overwhelming.",
         "chance_of_success": 50,
+        "relationship_constraint": ["not_mates"],
         "success_outcomes": [
             {
                 "text": "r_c happily agrees saying they'd love to go out with you. The two of you wander through c_n's territory and you find yourself staring at them for extended periods of time. How have you never noticed their beauty?",
@@ -487,6 +489,7 @@
         "intro_text": "You decide to take r_c to a lovely view in the early hours of dawn. The cliffs provide a stunning vision of the sun rising. After a while of staring, your tail brushes against r_c's and you wonder if now would be the time to ask them if they feel anything for you...",
         "decline_text": "No! No way in StarClan! You're too awkward for that! So you just sit in silence with them.",
         "chance_of_success": 50,
+        "relationship_constraint": ["not_mates"],
         "success_outcomes": [
             {
                 "text": "You nervously ask r_c and they look away, blushing a bit. They purr and tell you to just focus on the sky though you can't help but notice them glancing at you affectionately every now and then.",
@@ -1006,6 +1009,7 @@
         "intro_text": "You and r_c are assigned in a patrol together, knowing that this is your chance to express your feelings towards them.",
         "decline_text": "You decide to focus on your task instead.",
         "chance_of_success": 45,
+        "relationship_constraint": ["not_mates"],
         "success_outcomes": [
             {
                 "text": "As r_c and you gather moss, you sheepishly express your love towards them, and they quickly turn their head towards you, and giggles a little, telling you how they have always known how you felt about them, but your shocked expression is full of joy and love. r_c and you manage to gather moss while talking and making jokes together, and when you return to camp, a new aura emerges from r_c.",
@@ -1016,6 +1020,51 @@
         "fail_outcomes": [
             {
                 "text": "You stutter a lot while trying to express your love towards r_c, but they awkwardly turn their head to look at you, cringing. With their mouth full of moss, r_c doesn't talk to you after that patrol, and quickly continues their duties without interacting with you afterwards.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "butterfly_date_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "newleaf",
+            "greenleaf",
+            "leaf-fall"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+        ],
+        "patrol_art": "date_default",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "After a long stroll through the territory, you and r_c have settled in the grass to watch the clouds. You point out clouds to each other that look like flowers, rabbits and squirrels. The sun is beginning to set, and you know you should be getting back to camp soon, but you don't want to leave r_c's side yet.",
+        "decline_text": "You stand up and decide to head back to camp. You don't want to be late.",
+        "chance_of_success": 60,
+        "relationship_constraint": ["romantic_15"],
+        "success_outcomes": [
+            {
+                "text": "You decide that it shouldn't matter too much if you're a bit late back to camp, and r_c seems to agree. A pair of moths pay you a visit as the sun slips below the horizon, and you're beyond glad that you chose to stay out.",
+                "exp": 0,
+                "weight": 20,
+                "accessory": [
+                    {
+                        "cats": ["r_c", "y_c"],
+                        "accessory": ["LUNAR MOTH"]
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You decide to stay out, but a very indignant Clanmate quickly comes to find you two and lets you know that you should be back in camp. Reluctantly, you and r_c head back, the sun setting behind you.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1063,7 +1112,43 @@
         ]
     },
     {
-        "patrol_id": "poly_date_J1",
+        "patrol_id": "poly_date_J2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+        ],
+        "patrol_art": "date_default",
+        "min_cats": 3,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You, r_c and o_c1 are strolling along the riverbank. Suddenly, a stone catches your eye. The colour reminds you of o_c1's eyes, and you consider showing it to them.",
+        "decline_text": "You leave the stone and keep walking.",
+        "chance_of_success": 60,
+        "success_outcomes": [
+            {
+                "text": "When you pick up the rock to show to o_c1, both they and r_c are delighted, agreeing that it looks just like o_c1's eyes. r_c rushes to the water to find a rock to match yours, and soon, all three of you are searching for your perfect match. You each keep someone else's matching rock with you when you head back to camp, and you sleep a little better that night with it by your nest.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You call out for r_c and o_c1 one to stop walking, but as you pick up the rock to show them, you lose your grasp on it and it falls into the river, quickly sinking out of sight. r_c and o_c1 giggle at your misfortunae, and you laugh along, but you're still disappointed to lose such a cute gift.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "shunned_poly_date_J1",
         "biome": [
             "Any"
         ],
