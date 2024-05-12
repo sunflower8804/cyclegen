@@ -173,5 +173,43 @@
                 "weight": 20
             }
         ]
+    },
+    {
+        "patrol_id": "lg_mediator_shunned_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "lg_mediator_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Despite your leader barring you from doing your job as a mediator, two Clanmates stalk up to you one day, tails twitching. They ask you for your thoughts on a disagreement they've been having, and you wonder whether they really value your opinion.",
+        "decline_text": "You turn them away. Your Clan has made it very clear that they don't see you as equal-- why should you solve their problems for them?",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "You decide to listen to your Clanmates' problem, and once they've begun to see each other's point of view, you ask why they chose to come to you, given your situation. They say that they still respect your opinion as a mediator, despite everything, and you can't help but feel some fondness for the both of them.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "When you offer a solution that one warrior doesn't seem to agree with, they scoff and wonder aloud why they went to a murderer to solve their problems. When they stalk away, the other half of the argument follows them, and you just stare after them regretfully.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
     }
+    
 ]
