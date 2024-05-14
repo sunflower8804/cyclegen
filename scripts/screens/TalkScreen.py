@@ -422,7 +422,7 @@ class TalkScreen(Screens):
             "you_formerlyrogue",
             "you_formerlykittypet",
             "you_formerlyoutsider",
-            "you_originallyanotherclan",
+            "you_originallyfromanotherclan",
             "you_orphaned",
             "you_abandoned",
             "you_ancientspirit"
@@ -435,7 +435,7 @@ class TalkScreen(Screens):
             "they_formerlyrogue",
             "they_formerlykittypet",
             "they_formerlyoutsider",
-            "they_originallyanotherclan",
+            "they_originallyfromanotherclan",
             "they_orphaned",
             "they_abandoned",
             "they_ancientspirit"
@@ -1928,7 +1928,7 @@ class TalkScreen(Screens):
         bs_category = None
 
         for category in BACKSTORIES["backstory_categories"]:
-            if backstory in category:
+            if backstory in BACKSTORIES["backstory_categories"][category]:
                 bs_category = category
                 break
         if bs_category is not None:
