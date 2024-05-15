@@ -190,7 +190,7 @@
             "assertive",
             "cool",
             "unlawful",
-            "silly"
+            "brooding"
         ],
         [
             "*Sigh*. Hey, y_c. Come to ruin the fun again?",
@@ -1686,7 +1686,7 @@
             "d_c was a really special cat."
         ]
     ],
-    "assertive_jealous1": [
+    "retag_assertive_grieving_H1": [
         [
             "Any",
             "assertive",
@@ -17332,6 +17332,165 @@
             "Hey, I'm not saying anything poorly about it. This is a friendly reminder that actions have consequences, you know?",
             "Remember to stay aware of that for your future. Only you can decide how to navigate your life. And if it brings you here in death?",
             "That's all on you."
+        ]
+    ],
+    "retag_assertive_sibling_H1": [
+        [
+            "no_kit",
+            "any",
+            "sibling",
+            "half sibling",
+            "adopted_sibling",
+            "dislike",
+            "assertive"
+        ],
+        [
+            "What did I do in a past life to wind up related to you, y_c?",
+            "Must've been really terrible."
+        ]
+    ],
+    "broodingapp_toqueenapp_2": [
+        [
+            "no_kit",
+            "brooding",
+            "any"
+        ],
+        [
+            "[You notice t_c playing with some kits, a rare smile on their face.]",
+            "[They seem to notice your gaze, pausing and accidentally stumbling over a kit.]",
+            "[Nodding, you look away. It's good to see them having fun every once in a while.]"
+        ]
+    ],
+    "assertive_apprentice7": [
+        [
+            "no_kit",
+            "you_app",
+            "they_app",
+            "platonic_like",
+            "assertive",
+            "silly"
+        ],
+        [
+            "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
+            "What? It's totally real, they wouldn't lie to me like that! I prommissseee."
+        ]
+    ],
+    "assertive_retag1": [
+        [
+            "you_any",
+            "they_any",
+            "no_kit",
+            "assertive",
+            "stable",
+            "upstanding",
+            "unabashed",
+            "clan_has_kits"
+        ],
+        [
+            "HEY!!! You leave them alone!",
+            "Ugh. Can you believe how cruel some cats are, y_c? A bunch of apprentices were trying to convince these two kits to sneak into a badger den ... what a bunch of mouse-brains.",
+            "No matter what, don't let anyone try to pressure you into doing something you don't think is right. Go with your gut, and stick to your own values. That's what's really important."
+        ]
+    ],
+    "assertive_elder_3": [
+        [
+            "Any",
+            "no_kit",
+            "assertive",
+            "cool",
+            "unabashed"
+        ],
+        [
+            "Did you see r_c earlier today, y_c? Oh, StarClan, it was the funniest thing ever!",
+            "They mistook a twig for a snake and flew, like, five fox-lengths into the air! Hahahaha!"
+        ]
+    ],
+    "assertive_app29": [
+        [
+            "you_mediator",
+            "you_mediator_apprentice",
+            "no_kit",
+            "they_any",
+            "assertive",
+            "brooding",
+            "platonic_like",
+            "comfort",
+            "trust",
+            "from_parent",
+            "from_mate",
+            "sibling",
+            "adopted_sibling"
+        ],
+        [
+            "Tch. Did you see what a snake-heart r_c was acting like earlier? And over a piece of prey, no less!",
+            "Cat's so mouse-brained, probably can't even tell their own tail from a willow branch ...",
+            "... Whoa, what? Wait, you want me to apologize to them?",
+            "But they were in the wrong, not me! Why even entertain their behavior with an apology?",
+            "If they're mad, who cares! Let 'em stay mad! They can stay mad forever, for all I care!",
+            "Look, I know you're the mediator, and it's your job to resolve conflicts, or whatever, but ... you love me. Shouldn't you be on my side?",
+            "You'd really choose them over me?"
+        ]
+    ],
+    "assertive_app29_2": [
+        [
+            "you_mediator",
+            "you_mediator_apprentice",
+            "they_any",
+            "no_kit",
+            "dislike",
+            "assertive",
+            "brooding"
+        ],
+        [
+            "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
+            "I'll save you a few words - it's not gonna happen. Why's it always me that's gotta be in the wrong, huh? Why not force them to apologize?",
+            "Go find somebody else's problem to fix."
+        ]
+    ],
+    "assertivewarrior_deputy2": [
+        [
+            "you_deputy",
+            "you_leader",
+            "they_any",
+            "no_kit",
+            "assertive",
+            "unlawful",
+            "brooding",
+            "unabashed",
+            "dislike"
+        ],
+        [
+            "Yeah, right. Like I have to take orders from you!",
+            "You may think you're a warrior, but all you do is sit on your haunches and boss everyone around all day. That's no warrior. That's a coward.",
+            "Go find some other cat to impose on."
+        ]
+    ],
+    "assertive_jealous1_retag2": [
+        [
+            "no_kit",
+            "any",
+            "assertive",
+            "cool",
+            "jealousy"
+        ],
+        [
+            "Hey, so, remember when you cracked that joke today, and everybody laughed, and then I tried to be funny, and no one laughed?",
+            "... What was the deal with that?"
+        ]
+    ],
+    "neurotic_app2": [
+        [
+            "no_kit",
+            "you_any",
+            "they_app",
+            "neurotic",
+            "trust"
+        ],
+        [
+            "[t_c watches tm_n apprehensively from across camp.]",
+            "Do you think tm_n even likes me?",
+            "It seems like, every new skill they try and teach me, I always seem to mess it up somehow ...",
+            "I just hope I'm not making them look like a bad mentor."
         ]
     ]
 }

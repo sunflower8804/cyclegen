@@ -1,11 +1,14 @@
 {
     "queen_1": [
         [
+            "they_queen",
+            "they_queen's_apprentice",
+            "you_any",
+            "no_kit",
             "trust",
             "introspective",
             "stable",
-            "sweet",
-            "no_kit"
+            "sweet"
         ],
         [
             "Being a queen... it's a role filled with both joy and heartache. Every kit that's born, I feel an overwhelming surge of love and protectiveness. I watch them take their first breath, open their eyes, and explore the world.",
@@ -20,6 +23,7 @@
     "dep_132": [
         [
             "newborn",
+            "they_older",
             "insult"
         ],
         [
@@ -29,6 +33,8 @@
     "unabashed_queen": [
         [
             "unabashed",
+            "they_queen",
+            "you_any",
             "no_kit"
         ],
         [
@@ -42,12 +48,9 @@
     ],
     "queen_2": [
         [
-            "kitten",
-            "neurotic",
-            "sweet",
-            "assertive",
-            "stable",
-            "silly"
+            "you_kitten",
+            "they_queen",
+            "they_queen's_apprentice"
         ],
         [
             "Come here, little one. Your fur is so spiky!",
@@ -56,9 +59,11 @@
     ],
     "queen_3": [
         [
-            "kitten",
+            "you_kitten",
             "sweet",
-            "introspective"
+            "introspective",
+            "they_queen",
+            "they_queen's_apprentice"
         ],
         [
             "My dear kit, being a queen is a role woven from strands of love, sacrifice, and hope. When I look at you, so tiny and curious, my heart swells with dreams and wishes for your future.",
@@ -95,7 +100,8 @@
     ],
     "assertive_mentor11": [
         [
-            "queen's apprentice",
+            "you_queen's_apprentice",
+            "they_queen",
             "assertive",
             "silly",
             "cool",
@@ -109,7 +115,9 @@
     ],
     "assertive_mentor12": [
         [
-            "queen's apprentice",
+            "you_queen's_apprentice",
+            "they_queen",
+            "clan_has_kits",
             "assertive",
             "unabashed",
             "stable",
@@ -125,7 +133,8 @@
     ],
     "assertive_mentor92": [
         [
-            "queen's apprentice",
+            "you_queen's_apprentice",
+            "they_queen",
             "dislike",
             "assertive",
             "from_mentor",
@@ -140,7 +149,8 @@
     ],
     "assertive_mentor93": [
         [
-            "mediator apprentice",
+            "you_queen's_apprentice",
+            "they_queen",
             "dislike",
             "assertive",
             "from_mentor",
@@ -155,7 +165,8 @@
     ],
     "assertive_mentor4": [
         [
-            "mediator apprentice",
+            "you_queen's_apprentice",
+            "they_queen",
             "assertive",
             "from_mentor"
         ],
@@ -169,8 +180,9 @@
     ],
     "assertive_mentor3": [
         [
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice",
             "assertive",
             "from_mentor"
         ],
@@ -184,9 +196,8 @@
     ],
     "assertive_mentor": [
         [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
             "assertive",
             "unlawful",
             "from_mentor"
@@ -199,9 +210,9 @@
     ],
     "assertive_mentor1": [
         [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
             "assertive",
             "upstanding",
             "unabashed",
@@ -216,10 +227,7 @@
     ],
     "assertive_mentor2": [
         [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "you_app",
             "assertive",
             "sweet",
             "stable",
@@ -235,31 +243,11 @@
             "You're turning into a fine member of c_nClan already."
         ]
     ],
-    "assertive_jealous1": [
-        [
-            "Any",
-            "sibling",
-            "half sibling",
-            "kitten",
-            "adopted_sibling",
-            "half sibling",
-            "dislike",
-            "assertive"
-        ],
-        [
-            "What did I do in a past life to wind up related to you, y_c?",
-            "Must've been really terrible."
-        ]
-    ],
     "assertive_parent4": [
         [
             "assertive",
-            "dislike",
-            "neutral",
-            "cool",
-            "upstanding",
+            "hate",
             "brooding",
-            "stable",
             "kitten",
             "from_adopted_kit",
             "from_kit",
@@ -284,10 +272,10 @@
             "upstanding",
             "brooding",
             "neurotic",
-            "kitten",
             "from_adopted_kit",
             "from_kit",
-            "any"
+            "they_any",
+            "you_any"
         ],
         [
             "Ugh, StarClan, would you leave me alone?",
@@ -301,7 +289,8 @@
             "sweet",
             "upstanding",
             "stable",
-            "any"
+            "they_any",
+            "you_any"
         ],
         [
             "Sorry, y_c! No time to talk right now, I just got a task from d_n.",
@@ -310,7 +299,9 @@
     ],
     "assertivewarrior_mediatorapp1": [
         [
-            "kitten",
+            "they_app",
+            "no_kit",
+            "you_any",
             "from_adopted_kit",
             "from_kit",
             "platonic_like",
@@ -936,8 +927,12 @@
     "assertivewarriorapp_comfort": [
         [
             "no_kit",
+            "they_queen",
+            "they_queen's_apprentice",
             "assertive",
-            "comfort"
+            "comfort",
+            "platonic_love",
+            "clan_has_kits"
         ],
         [
             "Huh? Oh, nothing's wrong ...",
