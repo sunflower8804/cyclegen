@@ -457,6 +457,29 @@ class FlirtScreen(Screens):
             if "you_sc" in tags and you.df:
                 continue
 
+             # Relationships
+            # Family tags:
+            if any(i in ["from_mentor", "from_df_mentor", "from_your_apprentice", "from_df_apprentice", "from_mate"] for i in tags):
+
+                fam = False
+                if "from_mentor" in tags:
+                    if you.mentor == cat.ID:
+                        fam = True
+                if "from_df_mentor" in tags:
+                    if you.df_mentor == cat.ID:
+                        fam = True
+                if "from_your_apprentice" in tags:
+                    if cat.mentor == you.ID:
+                        fam = True
+                if "from_df_apprentice" in tags:
+                    if cat.df_mentor == you.ID:
+                        fam = True
+                if "from_mate" in tags:
+                    if cat.ID in you.mate:
+                        fam = True
+                if not fam:
+                    continue
+
             murdered_them = False
             if you.history:
                 if you.history.murder:
