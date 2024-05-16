@@ -26,6 +26,8 @@ from scripts.patrol.patrol_event import PatrolEvent
 from scripts.patrol.patrol_outcome import PatrolOutcome
 from scripts.cat.cats import Cat
 from scripts.special_dates import get_special_date, contains_special_date_tag
+from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, get_alive_kits, get_alive_cats, get_alive_apps, get_alive_meds, get_alive_mediators, get_alive_queens, get_alive_elders, get_alive_warriors, get_med_cats, ceremony_text_adjust, \
+    get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat, create_outside_cat
 
 # ---------------------------------------------------------------------------- #
 #                              PATROL CLASS START                              #
@@ -356,10 +358,9 @@ class Patrol():
                 possible_patrols.extend(self.generate_patrol_events(self.OTHER_CLAN_HOSTILE))
 
         if game.current_screen == 'patrol screen' or game.current_screen == 'patrol screen2' or game.current_screen =='patrol screen3' or game.current_screen =='patrol screen4':
-            # final_patrols, final_romance_patrols = self.get_filtered_patrols(possible_patrols, biome, camp, current_season,
-            #                                                                 patrol_type)
-            final_patrols, final_romance_patrols = self.get_filtered_patrols(possible_patrols, biome, current_season,
+            final_patrols, final_romance_patrols = self.get_filtered_patrols(possible_patrols, biome, camp, current_season,
                                                                             patrol_type)
+            
 
         # This is a debug option. If the patrol_id set isn "debug_ensure_patrol" is possible, 
         # make it the *only* possible patrol
@@ -1249,6 +1250,10 @@ class Patrol():
                             'red squirrels', 'gray squirrels', 'rats', ]
         text = text.replace('f_mp_p', str(fst_midprey_plural))
 
+        text2 = self.adjust_txt(text)
+        if text2:
+            text = text2
+
         text, senses, list_type = find_special_list_types(text)
         if list_type:
             sign_list = get_special_snippet_list(list_type, amount=randint(1, 3), sense_groups=senses)
@@ -1447,6 +1452,7 @@ class Patrol():
                 f"WARNING: No history found for {self.patrol_event.patrol_id}, it may not need one but double check please!")
         if scar and "scar" in self.patrol_event.history_text:
             adjust_text = self.patrol_event.history_text['scar']
+            adjust_text = adjust_text.replace("o_c_n", f"{str(self.other_clan.name)}Clan")
             adjust_text = adjust_text.replace("o_c_n", str(self.other_clan.name))
             adjust_text = process_text(adjust_text, {"r_c": (str(cat.name), choice(cat.pronouns))})
             if possible:
