@@ -67,11 +67,9 @@ class Patrol():
         final_patrols, final_romance_patrols = self.get_possible_patrols(
             str(game.clan.current_season).casefold(),
             str(game.clan.biome).casefold(),
-            str(game.clan.camp_bg).casefold(),
             patrol_type,
             game.clan.clan_settings['disasters']
         )
-        
         print(f'Total Number of Possible Patrols | normal: {len(final_patrols)}, romantic: {len(final_romance_patrols)} ')
         
         if final_patrols:
@@ -232,13 +230,12 @@ class Patrol():
         print("Patrol Leader:", str(self.patrol_leader.name))
         print("Random Cat:", str(self.patrol_random_cat.name))
 
-    def get_possible_patrols(self, current_season:str, biome:str, camp:str, patrol_type:str,
+    def get_possible_patrols(self, current_season:str, biome:str, patrol_type:str,
                              game_setting_disaster=None) -> Tuple[List[PatrolEvent]]:
         # ---------------------------------------------------------------------------- #
         #                                LOAD RESOURCES                                #
         # ---------------------------------------------------------------------------- #
         biome = biome.lower()
-        camp = camp.lower()
         game_setting_disaster = game_setting_disaster if game_setting_disaster is not None else \
                                 game.clan.clan_settings['disasters']
         season = current_season.lower()
@@ -363,6 +360,7 @@ class Patrol():
         if game.current_screen == 'patrol screen' or game.current_screen == 'patrol screen2' or game.current_screen =='patrol screen3' or game.current_screen =='patrol screen4':
             final_patrols, final_romance_patrols = self.get_filtered_patrols(possible_patrols, biome, camp, current_season,
                                                                             patrol_type)
+            
 
         # This is a debug option. If the patrol_id set isn "debug_ensure_patrol" is possible, 
         # make it the *only* possible patrol
@@ -393,7 +391,7 @@ class Patrol():
                       f'"{game.config["patrol_generation"]["debug_ensure_patrol_id"]}" '
                       "is not a possible romantic patrol.")
             
-        if game.current_screen == 'patrol screen2' or game.current_screen =='patrol screen3' or game.current_screen =='patrol screen4':
+        if game.current_screen == 'patrol screen2' or game.current_screen =='patrol screen3' or game.current_screen =='patrol screen4' or game.current_screen =='patrol screen':
             return final_patrols, final_romance_patrols
             
         return possible_patrols, []
@@ -608,7 +606,7 @@ class Patrol():
         print("final romance chance:", chance_of_romance_patrol)
         return not int(random.random() * chance_of_romance_patrol)
 
-    def _filter_patrols(self, possible_patrols: List[PatrolEvent], biome:str, camp:str, current_season:str, patrol_type:str):
+    def _filter_patrols(self, possible_patrols: List[PatrolEvent], biome:str, current_season:str, patrol_type:str):
         filtered_patrols = []
         romantic_patrols = []
         special_date = get_special_date()
@@ -651,8 +649,6 @@ class Patrol():
             
             if biome not in patrol.biome and "Any" not in patrol.biome:
                 continue
-            if camp not in patrol.camp and "Any" not in patrol.camp:
-                continue
             if current_season not in patrol.season and "Any" not in patrol.season:
                 continue
             if game.current_screen == 'patrol screen':
@@ -661,16 +657,6 @@ class Patrol():
                     continue
                 elif game.clan.your_cat.status != "kitten" and "kit_only" in patrol.tags:
                     continue
-
-                if game.clan.your_cat.shunned == 0:
-                    if "shunned" in patrol.tags:
-                        continue
-                elif game.clan.your_cat.shunned > 0:
-                    if "shunned" not in patrol.tags:
-                        print('not shunned patrol')
-                        continue
-                    else:
-                        print('shunned patrol')
 
                 if "bloodthirsty_only" in patrol.tags:
                     if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":
@@ -681,7 +667,9 @@ class Patrol():
                     if game.clan.your_cat.status != 'medicine cat':
                         continue
                 if "df" in patrol.tags:
-                    if not game.clan.your_cat.joined_df:
+                    other_cat = self.patrol_cats[1]
+                    if not game.clan.your_cat.joined_df and not other_cat.joined_df:
+                        # need both cats to be trainees for goop romance
                         continue
                     
             #  correct button check
@@ -713,6 +701,19 @@ class Patrol():
                         if "fellowtrainee" not in patrol.tags:
                             continue
 
+                    if "shunned" in patrol.tags:
+                        if game.clan.your_cat.shunned == 0:
+                            continue
+
+            if "lifegen" in patrol.types and "df" not in patrol.types:
+                if "shunned" in patrol.tags:
+                    if game.clan.your_cat.shunned == 0:
+                        continue
+                
+                if "shunned" not in patrol.tags and "df" not in patrol.tags: # shunned cats can still get regular goop romance patrols
+                    if game.clan.your_cat.shunned > 0:
+                        continue
+
 
             # cruel season tag check
             if "cruel_season" in patrol.tags:
@@ -730,16 +731,16 @@ class Patrol():
 
         return filtered_patrols, romantic_patrols
 
-    def get_filtered_patrols(self, possible_patrols, biome, camp, current_season, patrol_type):
+    def get_filtered_patrols(self, possible_patrols, biome, current_season, patrol_type):
         
-        filtered_patrols, romantic_patrols = self._filter_patrols(possible_patrols, biome, camp, current_season,
+        filtered_patrols, romantic_patrols = self._filter_patrols(possible_patrols, biome, current_season,
                                                                   patrol_type)
         
         if not filtered_patrols:
             print('No normal patrols possible. Repeating filter with used patrols cleared.')
             self.used_patrols.clear()
             print('used patrols cleared', self.used_patrols)
-            filtered_patrols, romantic_patrols = self._filter_patrols(possible_patrols, biome, camp,
+            filtered_patrols, romantic_patrols = self._filter_patrols(possible_patrols, biome,
                                                                       current_season, patrol_type)    
         
         return filtered_patrols, romantic_patrols
@@ -750,7 +751,6 @@ class Patrol():
             patrol_event = PatrolEvent(
                 patrol_id=patrol.get("patrol_id"),
                 biome=patrol.get("biome"),
-                camp=patrol.get("camp"),
                 season=patrol.get("season"),
                 tags=patrol.get("tags"),
                 weight=patrol.get("weight", 20),
@@ -1134,7 +1134,7 @@ class Patrol():
             "y_c": (str(game.clan.your_cat.name), choice(game.clan.your_cat.pronouns)),
         }
 
-        other_cats = [i for i in self.patrol_cats if i not in [self.patrol_leader, self.patrol_random_cat, game.clan.your_cat]]
+        other_cats = [i for i in self.patrol_cats if i not in [self.patrol_leader, self.patrol_random_cat]]
         if len(other_cats) >= 1:
             replace_dict['o_c1'] = (str(other_cats[0].name),
                                     choice(other_cats[0].pronouns))
@@ -1433,6 +1433,7 @@ class Patrol():
             return text
         except:
             return ""
+          
     # ---------------------------------------------------------------------------- #
     #                                   Handlers                                   #
     # ---------------------------------------------------------------------------- #
@@ -1452,6 +1453,7 @@ class Patrol():
         if scar and "scar" in self.patrol_event.history_text:
             adjust_text = self.patrol_event.history_text['scar']
             adjust_text = adjust_text.replace("o_c_n", f"{str(self.other_clan.name)}Clan")
+            adjust_text = adjust_text.replace("o_c_n", str(self.other_clan.name))
             adjust_text = process_text(adjust_text, {"r_c": (str(cat.name), choice(cat.pronouns))})
             if possible:
                 History.add_possible_history(cat, condition=condition, scar_text=adjust_text)
@@ -1461,7 +1463,7 @@ class Patrol():
             if cat.status == 'leader':
                 if "lead_death" in self.patrol_event.history_text:
                     adjust_text = self.patrol_event.history_text['lead_death']
-                    adjust_text = adjust_text.replace("o_c_n", f"{str(self.other_clan.name)}Clan")
+                    adjust_text = adjust_text.replace("o_c_n", str(self.other_clan.name))
                     adjust_text = process_text(adjust_text, {"r_c": (str(cat.name), choice(cat.pronouns))})
                     if possible:
                         History.add_possible_history(cat, condition=condition, death_text=adjust_text)
@@ -1470,7 +1472,7 @@ class Patrol():
             else:
                 if "reg_death" in self.patrol_event.history_text:
                     adjust_text = self.patrol_event.history_text['reg_death']
-                    adjust_text = adjust_text.replace("o_c_n", f"{str(self.other_clan.name)}Clan")
+                    adjust_text = adjust_text.replace("o_c_n", str(self.other_clan.name))
                     adjust_text = process_text(adjust_text, {"r_c": (str(cat.name), choice(cat.pronouns))})
                     if possible:
                         History.add_possible_history(cat, condition=condition, death_text=adjust_text)

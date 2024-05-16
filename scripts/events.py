@@ -1232,10 +1232,23 @@ class Events:
         if game.clan.your_cat.former_mentor:
             if Cat.all_cats[game.clan.your_cat.former_mentor[-1]].dead and game.clan.your_cat.status == 'medicine cat':
                 ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor'])
-            ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony'])
+
+            if game.clan.your_cat.forgiven < 10:
+                try:
+                    ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony forgiven'])
+                except:
+                    ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony'])
+            else:
+                ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony'])
             ceremony_txt = ceremony_txt.replace('m_n', str(Cat.all_cats[game.clan.your_cat.former_mentor[-1]].name))
         else:
-            ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor'])
+            if game.clan.your_cat.forgiven < 10:
+                try:
+                    ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor forgiven'])
+                except:
+                    ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor'])
+            else:
+                ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor'])
         
         ceremony_txt = ceremony_txt.replace('c_n', str(game.clan.name))
         ceremony_txt = ceremony_txt.replace('y_c', str(game.clan.your_cat.name))
@@ -2268,6 +2281,13 @@ class Events:
             cat.talked_to = False
             return
         
+        if cat.forgiven > 0:
+            cat.forgiven += 1
+            # reset forgiven back to zero when it hits max to it doesnt just count up forever lol
+            # that + 1 is because it technically starts at one
+            if cat.forgiven >= game.config["shunned_cat"]["max_forgiven_moons"] + 1:
+                cat.forgiven = 0
+        
         if cat.shunned > 0 and cat.status != "former Clancat":
             cat.shunned += 1
             if cat.shunned >3:
@@ -2283,7 +2303,7 @@ class Events:
         
         if cat.status == 'leader' and cat.shunned > 0 and cat.name.specsuffix_hidden is False:
             cat.name.specsuffix_hidden = True
-        
+
         # corrects the name if the leader is shunned but their special suffix isnt hidden
         
 
@@ -2839,7 +2859,7 @@ class Events:
                 # is being promoted too.
                 valid_living_former_mentors = []
                 for c in cat.former_mentor:
-                    if not (Cat.fetch_cat(c).dead or Cat.fetch_cat(c).outside):
+                    if not (Cat.fetch_cat(c).dead or Cat.fetch_cat(c).outside or Cat.fetch_cat(c).shunned > 0):
                         if promoted_to in mentor_type:
                             if Cat.fetch_cat(c).status in mentor_type[promoted_to]:
                                 valid_living_former_mentors.append(c)
@@ -3789,7 +3809,7 @@ class Events:
             # these numbers are kind of crazy but i wanted to keep the one randint
             if fate != 1:
                 cat.shunned = 0
-                cat.forgiven = game.clan.age
+                cat.forgiven = 1
                 cat.exiled = False
                 cat.outside = False
                 cat.add_to_clan()

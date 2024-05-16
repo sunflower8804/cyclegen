@@ -278,5 +278,42 @@
                 "weight": 20
             }
         ]
+    },
+    {
+        "patrol_id": "lg_mediatorapp_shunned_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "lg_mediatorapp_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Two Clanmates are having an argument in the clearing, and though you're not allowed to train as a mediator during your punishment, you can't help but listen in, trying to think about how you might solve their problem given the chance.",
+        "decline_text": "You turn away, deciding to mind your business.",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "A skilled mediator steps in, and you watch them work. While you can't actually train, you take note of their techniques, excited to apply them someplace in the future.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "One of the arguing cats notices you watching and lashes their tail, snapping at you and telling you to mind your own business. You flatten your ears to your head and turn away, embarrassed.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
     }
 ]

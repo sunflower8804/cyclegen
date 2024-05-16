@@ -2955,7 +2955,8 @@
             "they_sc"
         ],
         [
-            "You should still be in c_nClan's nursery, surrounded by soft moss and feathers."
+            "Oh, darling, you shouldn't be on that side of the border...",
+            "I don't know what to do."
         ]
     ],
     "sc_newborn3": [
@@ -2975,7 +2976,18 @@
             "they_df"
         ],
         [
-            "You should still be in c_nClan's nursery, surrounded by soft moss and feathers."
+            "What could you have done to be worthy of spending eternity here?",
+            "StarClan is cruel..."
+        ]
+    ],
+    "dead_newborn_J1": [
+        [
+            "newborn",
+            "you_dead"
+        ],
+        [
+            "I'm really sorry you're stuck being so... small in the afterlife.",
+            "Can you even understand me?"
         ]
     ],
     "dead_parent1": [
@@ -3546,6 +3558,28 @@
             "[t_c doesn't even react to your insult.]"
         ]
     ],
+    "shunned_insult_J4": [
+        [
+            "you_shunned",
+            "any",
+            "insult",
+            "they_older"
+        ],
+        [
+            "No need to lash out."
+        ]
+    ],
+    "shunned_insult_J5": [
+        [
+            "you_shunned",
+            "any",
+            "insult",
+            "they_kitten"
+        ],
+        [
+            "What?!"
+        ]
+    ],
     "you_kit_ur_J1": [
         [
             "they_ur",
@@ -4020,6 +4054,48 @@
             "Whoa ... this is them? They're so small!",
             "Hard to believe I was that small once ...",
             "Hm ..."
+        ]
+    ],
+    "newborn_to_shunned_J1": [
+        [
+            "they_shunned",
+            "newborn"
+        ],
+        [
+            "Careful."
+        ]
+    ],
+    "newborn_to_shunned_insult_J1": [
+        [
+            "they_shunned",
+            "newborn",
+            "insult"
+        ],
+        [
+            "What?"
+        ]
+    ],
+    "deadnewborn_to_grieving_J1": [
+        [
+            "they_grieving",
+            "newborn",
+            "you_dead"
+        ],
+        [
+            "[The distraught t_c tries their best to ignore you.]"
+        ]
+    ],
+    "deadnewborn_to_grieving_J2": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "newborn",
+            "you_dead"
+        ],
+        [
+            "y_c??",
+            "Oh, right... you're... a ghost?",
+            "[t_c sniffles.]"
         ]
     ]
 }

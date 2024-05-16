@@ -203,6 +203,12 @@
         "The silver glow of the moon casts a gentle light over the Clan as they come together in silent anticipation. With pride evident in their gaze, c_l beckons you forward. Each step you take resonates with purpose and commitment. c_l's tail sweeps around you in a protective embrace, sealing your pledge to always safeguard and nurture the Clan's future. The air is thick with emotions as you are hailed the new permanent queen of c_nClan -- y_c.",
         "In the gentle embrace of dawn, the Clan surrounds you, their eyes reflecting hope and expectation. c_l steps to your side, their presence reassuring. With a shared breath, a bond forged from mutual respect and understanding, you step into your new role. Recognized for your compassion, wisdom, and maternal instincts, the Clan bursts into cheers, celebrating the rise of their new permanent queen y_c."
     ],
+    "queen_ceremony forgiven": [
+        "Despite your rocky history with the Clan, c_l feels confident in granting you your full name. Beneath the Great Rock, they name you y_c, and honor you for your honor1."
+    ],
+    "queen_ceremony_no_mentor forgiven": [
+        "Despite your rocky history with the Clan, c_l feels confident in granting you your full name. Beneath the Great Rock, they name you y_c, and honor you for your honor1."
+    ],
     "warrior_ceremony": [
         "The Clan gathers around the Great Rock, their eyes watching you and your clan leader. As c_l ascends, a solemn silence falls. You step forward when the moment comes, a flurry of pride and nerves as the leader's muzzle touches your head. They honor your honor1 as you are now known as y_c.",
         "The Clan gathers in hushed anticipation. c_l takes their place atop the Great Rock. Your heart pounds as your name is called, a sign that it's time to step forward. Your leader's touch on your head, a tradition steeped in history, signals your transition from apprentice to full-fledged warrior. They honor your honor1 as you are now known as y_c.",
@@ -221,6 +227,12 @@
         "As the Clan congregates under Great Rock, the silence is broken only by the rustling of leaves. c_l's tail sweeps the ground as they ascend, their eyes filled with wisdom. As they call your name, your fur stands on end, and you approach c_l after a moment of hesitation. Their touch, a brief press of their muzzle against your forehead, sends shivers down your spine. For your honor1, you will henceforth be known as y_c.",
         "The Clan gathers, encircling the Great Rock. c_l's eyes are bright as they take their position on top of the stone. You advance towards your leader, the pride in your chest almost overwhelming. The touch of c_l's muzzle against your head sends a shock through you. With great honor for your honor1, you are now known as y_c."
     ],
+    "warrior_ceremony forgiven": [
+        "Despite your rocky history with the Clan, c_l feels confident in granting you a warrior name. Beneath the Great Rock, they name you y_c, and honor you for your honor1."
+    ],
+    "warrior_ceremony_no_mentor forgiven": [
+        "Despite your rocky history with the Clan, c_l feels confident in granting you a warrior name. Beneath the Great Rock, they name you y_c, and honor you for your honor1."
+    ],
     "medicine cat_ceremony": [
         "Under the celestial glow of the moon, you step forward, your heart pounding in your chest. The moonlight cascades over the clearing, casting long shadows that seem to dance in anticipation. m_n rests their muzzle gently upon your head, their shared warmth a testament to the knowledge passed and the bond forged. As you gaze up at the moon together, the silence embraces your shared promise to serve their clan, your futures intertwined. You will now be known as y_c, a full medicine cat of the Clan.",
         "In the serene tranquility of night, the silver orb of the moon hanging low in the sky, you await the pivotal moment. Your mentor, m_n, stands beside you, their coat gleaming under the moonlight. The touch of their muzzle on your head signals their approval and trust. As you touch noses and share a quiet moment, your commitment to healing and serving your clan is affirmed under the watchful gaze of your ancestors. You are now a full medicine cat of the Clan, y_c.",
@@ -234,6 +246,12 @@
         "Your eyes gleam in the luminescent glow of the moon, signaling the commencement of your new journey. Your paws resonate against the stone, an echo of the many who have walked this path before. You bow your head, acknowledging the weight of your new responsibility. Under the canvas of the moonlit sky, you make your silent pledge to heal and safeguard your clan. Your new title, y_c, signifies your status as a full medicine cat of the Clan.",
         "As the moon showers the earth with its ethereal glow, you stand alone, the moment of transition upon you. You lower your head, your breath ghosting over the cool stone, a silent homage to the shared wisdom of the past. Your gaze meets the moon's, and in that moment, a vow is made - a promise to your clan that you will serve them in sickness and health. Your new name, y_c, marks your position as a full medicine cat of the Clan.",
         "The time is now. You step forward, the earth humming beneath you, resonating with the echoes of countless ceremonies past. The cool stone brushes against your flank as you lower your muzzle in reverence. As your gaze ascends to meet the stars, a moment of silence is shared with the cosmos. Within this silence, a pact is formed, a promise to guide and heal your clan under the constant watch of the moon. From this day forward, you will be known as y_c, a full medicine cat of the Clan."
+    ],
+    "medicine cat_ceremony forgiven": [
+        "Tonight, under the calm glow of the moon, you feel at home. Despite your past, you've grown since your kithood, and you're ready to be a full medicine cat. Under the moon's watchful eye, you promise to use your power for healing, rather than hurting, and c_n welcomes you, y_c, as the newest medicine cat of the Clan."
+    ],
+    "medicine cat_ceremony_no_mentor forgiven": [
+        "Tonight, under the calm glow of the moon, you feel at home. Despite your past, you've grown since your kithood, and you're ready to be a full medicine cat. Under the moon's watchful eye, you promise to use your power for healing, rather than hurting, and c_n welcomes you, y_c, as the newest medicine cat of the Clan."
     ],
     "mediator_ceremony": [
         "As the sun dips below the horizon, painting the sky with hues of crimson and orange, the Clan gathers around you. c_l stands tall, their gaze meeting yours. A nod is exchanged, and you step forward, your paws feeling the weight of responsibility. With a sweep of c_l's tail over your shoulders, they acknowledge your empathy and understanding. Under the twilight sky, you are welcomed as the new mediator of the Clan.",
@@ -249,12 +267,22 @@
         "Beneath the gaze of the moon and the stars, the Clan assembles before you. The anticipation is thick in the air as you stride forward, your tail held high. With a soft nudge from c_l, a testament to your shared commitment, you are acknowledged for your peaceful approach and strong communication skills. You are honored as the Clan's new mediator -- y_c.",
         "In the quiet hush of early dawn, the Clan gathers around you. c_l stands at the center, their eyes gleaming with pride and expectation. As your name is called, you step forward into the circle, your heart echoing the rhythm of a new beginning. The touch of c_l's muzzle on your shoulder signifies a bond of trust and responsibility. For your exceptional ability to listen and bring harmony, you are celebrated as the new mediator of the Clan."
     ],
+    "mediator_ceremony forgiven": [
+        "Despite your rocky history with the Clan, c_l feels confident in granting you your full name. Beneath the Great Rock, they name you y_c, and honor you for your honor1."
+    ],
+    "mediator_ceremony_no_mentor forgiven": [
+        "Despite your rocky history with the Clan, c_l feels confident in granting you your full name. Beneath the Great Rock, they name you y_c, and honor you for your honor1."
+    ],
+    
     "elder_ceremony": [
         "As the sun dips below the horizon, casting long shadows over the Clan camp, your leader calls for a Clan meeting. With a warm glance in your direction, they announce your retirement from warrior duties. As an elder, you can now enjoy the rest, respect, and honor you have earned. The Clan's cheers echo in the evening air, a chorus of voices honoring your transition.",
         "The air buzzes with excitement as the Clan gathers under the Highrock. Your leader's voice rises above the murmur, announcing your retirement. As you step into the role of an elder, you feel a sense of pride in your past accomplishments and anticipation for the wisdom you will share. The Clan's cheers of your name fill the clearing, a resounding acceptance of your new status.",
         "Under the soft glow of the moon, the Clan comes together to honor your transition into an elder. Your leader's words of praise resonate in the quiet of the evening, a testament to your past as a warrior and your future as a guide and advisor. As the Clan cheers for you, a sense of peace washes over you, ready to embrace the wisdom and respect that comes with being an elder.",
         "As twilight descends, the Clan gathers to honor your transition from a warrior to an elder. Your leader's voice rings out clear and strong, acknowledging your past deeds and praising your commitment to the Clan. Their words are met with cheers from your Clanmates. As you step into the elders' den, you feel a sense of pride in your journey and anticipation for the wisdom you will pass on.",
         "The Clan meets under the towering Highrock. Your leader stands tall, their voice echoing across the clearing as they announce your retirement and transition into the role of an elder. The Clan's cheers fill the morning air, a testament to the respect and honor you've earned. Stepping into the elders' den, you look forward to sharing stories and wisdom with the younger generations."
+    ],
+    "elder_ceremony forgiven": [
+        "You've served your Clan for many moons, and though you've made some mistakes, c_l agrees that you've earned your rest. The Clan welcomes you into the elders' den."
     ],
     "deputy_ceremony": [
         "c_l's voice echoes across the clearing, announcing the need for a new deputy. With a heart-pounding surprise, you hear your own name called out. You step forward, feeling the weight of responsibility settle onto your shoulders.",
@@ -267,6 +295,9 @@
         "During a Clan meeting, c_l makes the shocking announcement - you are the new deputy. Nervous but resolute, you promise to serve your Clan with unwavering loyalty.",
         "As c_l's voice rises with the announcement of the new deputy, your heart leaps when you hear your name. Standing tall, you accept the position, pledging to always put your Clan first.",
         "At a gathering, c_l calls out your name as their new deputy. Amidst the cheers of your Clanmates, you step forward and pledge your duty to your Clan."
+    ],
+    "deputy_ceremony forgiven": [
+        "Despite your recent mistakes, c_l has called upon you to be the next deputy of c_nClan. You promise to server your Clan with dignity, and you will not let your past define you."
     ],
     "gain_app warrior": [
         "At the foot of the Great Rock, you stand with c_l who is ready to assign app1 to a mentor. The energy of the Clan is infectious, the anticipation in the air. When c_l calls out app1's name, the young cat steps forward with wide eyes. c_l turns to you, announcing your name to the Clan as app1's mentor. You dip your head, acknowledging the responsibility bestowed upon you. You reach out to app1, touching your nose to theirs.",

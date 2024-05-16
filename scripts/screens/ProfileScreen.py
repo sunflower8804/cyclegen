@@ -1234,7 +1234,7 @@ class ProfileScreen(Screens):
                 "",
                 object_id="#mediation_button", manager=MANAGER
             )
-            if self.the_cat.dead or self.the_cat.outside:
+            if self.the_cat.dead or self.the_cat.outside or self.the_cat.shunned > 0:
                 self.profile_elements["mediation"].disable()
         elif self.the_cat.status in ["queen", "queen's apprentice"]:
             self.profile_elements["queen"] = UIImageButton(scale(pygame.Rect(
@@ -1242,7 +1242,7 @@ class ProfileScreen(Screens):
                 "",
                 object_id="#queen_activity_button", manager=MANAGER
             )
-            if self.the_cat.dead or self.the_cat.outside:
+            if self.the_cat.dead or self.the_cat.outside or self.the_cat.shunned > 0:
                 self.profile_elements["queen"].disable()
         elif self.the_cat.status in ["medicine cat", "medicine cat apprentice"] and self.the_cat.ID == game.clan.your_cat.ID:
             self.profile_elements["halfmoon"] = UIImageButton(scale(pygame.Rect(
@@ -1252,7 +1252,7 @@ class ProfileScreen(Screens):
                 tool_tip_text= "You may attend the half-moon gathering every six moons",
                 manager=MANAGER
             )
-            if self.the_cat.dead or self.the_cat.outside or (game.clan.age % 6 != 0):
+            if self.the_cat.dead or self.the_cat.outside or (game.clan.age % 6 != 0) or self.the_cat.shunned > 0:
                 self.profile_elements["halfmoon"].disable()
             elif "attended half-moon" in game.switches and game.switches["attended half-moon"]:
                 self.profile_elements["halfmoon"].disable()

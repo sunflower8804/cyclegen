@@ -1686,9 +1686,9 @@
     ],
     "newborn_1new": [
         [
-            "newborn",
             "you_dead",
-            "they_dead"
+            "they_dead",
+            "any"
         ],
         [
             "Mew?"
@@ -1696,9 +1696,9 @@
     ],
     "newborn_2new": [
         [
-            "newborn",
             "you_dead",
-            "they_dead"
+            "they_dead",
+            "any"
         ],
         [
             "[t_c is rolling around in the grass.]"
@@ -1706,9 +1706,9 @@
     ],
     "newborn_3new": [
         [
-            "newborn",
             "you_dead",
-            "they_dead"
+            "they_dead",
+            "any"
         ],
         [
             "Purrrrr..."
@@ -1716,9 +1716,9 @@
     ],
     "newborn_4new": [
         [
-            "newborn",
             "you_dead",
-            "they_dead"
+            "they_dead",
+            "any"
         ],
         [
             "Mrow!"
@@ -1726,12 +1726,53 @@
     ],
     "newborn_5new": [
         [
-            "newborn",
             "you_dead",
-            "they_dead"
+            "they_dead",
+            "any"
         ],
         [
             "MROOOOOOOOW!!!!!!!!"
+        ]
+    ],
+    "newborn_sh_insult_J1": [
+        [
+            "insult",
+            "any",
+            "you_shunned"
+        ],
+        [
+            "MROOOOOOOOW!!!!!!!!"
+        ]
+    ],
+    "newborn_J1": [
+        [
+            "grievingthem",
+            "any",
+            "you_shunned",
+            "they_dead"
+        ],
+        [
+            "Purr......"
+        ]
+    ],
+    "newborn_J2": [
+        [
+            "grievingthem",
+            "any",
+            "they_dead"
+        ],
+        [
+            "Purr......"
+        ]
+    ],
+    "deadnewborns_J1": [
+        [
+            "they_dead",
+            "you_dead",
+            "newborn"
+        ],
+        [
+            "Mrrp?"
         ]
     ]
 }
