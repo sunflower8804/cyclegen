@@ -491,7 +491,7 @@ class Cat():
                                 self.thought = "Is startled to find themselves wading in the muck of a shadowed forest"
                                 game.clan.add_to_darkforest(self)
                 if not self.df:
-                    if self.shunned > 0 and self.forgiven > 1:
+                    if self.shunned > 0 and self.forgiven > 0:
                         self.df = True
                         self.thought = "Is startled to find themselves wading in the muck of a shadowed forest"
                         game.clan.add_to_darkforest(self)
@@ -2431,7 +2431,10 @@ class Cat():
         """
         
         try:
-            first_cousin_mates = game.clan.clan_settings["first cousin mates"]
+            if game.clan is not None:
+                first_cousin_mates = game.clan.clan_settings["first cousin mates"]
+            else:
+                print("NoneType Clan for is_potential_mate()")
         except:
             if 'unittest' not in sys.modules:
                 raise

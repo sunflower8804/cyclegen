@@ -441,14 +441,17 @@
 			"kitten": 45,
 			"adolescent": 20,
 			"young adult": 10,
-			"adult": 8,
+			"adult": 9,
+			"senior adult": 8,
 			"senior": 8	
 			},
 		"max_shunned_moons": 10,
 		"return_home_chance": 0,
+		"max_forgiven_moons": 10,
 		"comment": [
 		"Newborns have an exile_chance in case one of you sick freaks (/lhj) decides to save edit them to be shunned.",
-		"Leaving return_home_chance at zero will keep the game's default chances."
+		"Leaving return_home_chance at zero will keep the game's default chances.",
+		"max_forgiven_moons is how many moons after being forgiven the cat get 'forgiven'-tagged dialogue and events."
 	]
 	}
 }

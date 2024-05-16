@@ -52,7 +52,7 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "The leader asks for your opinion on a dispute between two warriors. You feel respected, knowing that your wisdom is still valued.",
-        "decline_text": "You politely decline, feeling unsure about your ability to resolve the issue. The leader respects your decision and turns to other clan members for advice.",
+        "decline_text": "You politely decline, feeling unsure about your ability to resolve the issue. The leader respects your decision and turns to other Clan members for advice.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
@@ -168,7 +168,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "You begin to work on sprucing up the camp, doubts shaken away as if they were a flea. The other cats seem annoyed by what you're doing, but you continue anyway until you're done. Once the clan gets home, they seem perturbed by the changes, and one of them even comes up and scolds you! Perhaps going back to bed would've been a better idea...",
+                "text": "You begin to work on sprucing up the camp, doubts shaken away as if they were a flea. The other cats seem annoyed by what you're doing, but you continue anyway until you're done. Once the Clan gets home, they seem perturbed by the changes, and one of them even comes up and scolds you! Perhaps going back to bed would've been a better idea...",
                 "exp": 0,
                 "weight": 20
             }
@@ -231,7 +231,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You move into action, quickly grabbing the snake by its tail. You drag it out of the camp where you let it free, watching it slither into the grasses as your clanmates let out a loud sigh of relief..",
+                "text": "You move into action, quickly grabbing the snake by its tail. You drag it out of the camp where you let it free, watching it slither into the grasses as your Clanmates let out a loud sigh of relief..",
                 "exp": 10,
                 "weight": 20
             }
@@ -266,14 +266,14 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You gently move the bushes, only to see a familiar face. It's one of your clanmates, who seemed to have come out on a walk as well. You two chat a little bit, and they seem to understand you a little better. You're glad to have come out here and, whilst it takes a little bit longer than usual, you are able to go back to sleep.",
+                "text": "You gently move the bushes, only to see a familiar face. It's one of your Clanmates, who seemed to have come out on a walk as well. You two chat a little bit, and they seem to understand you a little better. You're glad to have come out here and, whilst it takes a little bit longer than usual, you are able to go back to sleep.",
                 "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You yowl in surprise as a cat from one of the neighboring clans lunges out at you. They hiss at you, and you realize you accidentally had crossed the border. Luckily, they agree not to tell their or your clan about this, but you're left wishing you'd never left at all.",
+                "text": "You yowl in surprise as a cat from one of the neighboring Clans lunges out at you. They hiss at you, and you realize you accidentally had crossed the border. Luckily, they agree not to tell their or your Clan about this, but you're left wishing you'd never left at all.",
                 "exp": 0,
                 "weight": 20
             }
@@ -309,6 +309,43 @@
         "fail_outcomes": [
             {
                 "text": "You meticulously scheme all day and all night with your endless pool of free time, so much so that the idea turns more into a daydream than something actually achievable. When you pitch your idea to the deputy, they shake their head and tell you it's too ambitious. Indeed, none of the apprentices seem interested in the elaborate game you spent all that time preparing.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "lg_elder_shunned_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "lg_elder_default",
+        "min_cats": 1,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "A kit runs up to you and asks you to tell them a story. You'd love to-- it's been a while-- but will the queens be upset?",
+        "decline_text": "You turn the kit away, knowing that the rest of the Clan won't want to see you influencing the youth.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You accept and tell the kit a story, keeping your voice low. When you're done, they request another, and by the time you've finished the second story, the kit has fallen asleep. You manage to pick them up and leave them in the nursery without anyone spotting you.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You accept and begin telling a story to the kit, but partway through, a queen notices you and grabs them, hissing what a horrible influence you are.",
                 "exp": 0,
                 "weight": 20
             }

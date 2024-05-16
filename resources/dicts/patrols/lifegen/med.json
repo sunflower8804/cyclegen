@@ -243,5 +243,42 @@
                 "weight": 20
             }
         ]
+    },
+    {
+        "patrol_id": "lg_medcat_shunned_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "lg_medcat_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The Clan's medicine cats have gone out to fetch herbs, leaving a couple of sick and injured Clanmates in the medicine den. You notice a patient in pain, and you know exactly how to treat them, but you don't want to get in trouble for touching the herbs.",
+        "decline_text": "You decide to sit back and wait for the unshunned medicine cats to return.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You quietly sneak into the den, gathering the right herbs and delivering them to the patient. In their half-asleep, in pain state, they don't seem to notice that it's you, and they take the treatment gratefully.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Just as you poke your head into the medicine den, the patient lifts their head and notices you. Though half-asleep and in pain, they manage to yell at you to get out, and you flee to return to your nest without any other Clanmates taking notice.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
     }
 ]

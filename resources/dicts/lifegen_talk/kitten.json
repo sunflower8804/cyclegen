@@ -3462,7 +3462,8 @@
         [
             "they_shunned",
             "they_kitten",
-            "any"
+            "any",
+            "you_adult"
         ],
         [
             "[You feel awful for the poor kit. What they did was probably an accident, yet they're still being punished.]",
@@ -5271,6 +5272,38 @@
             "[You nearly forgot those rules don't apply here. It's a pleasant reminder.]",
             "I'm taking a nap... I'm taking a nap right here... You're nice and warm...",
             "[A tiny purr rumbles from t_c as they settle in at your side. In your gratitude for the company, you spend some time grooming mud from their fur.]"
+        ]
+    ],
+    "newborn_shunnedkit_J1": [
+        [
+            "they_shunned",
+            "they_kitten",
+            "newborn"
+        ],
+        [
+            "Oh, uh, hi, y_c.",
+            "You're not supposed to be talking to me. I'm a bad cat.",
+            "[They look nice enough. You're not sure what they mean.]"
+        ]
+    ],
+    "newborn_shunnedkit_insult_J1": [
+        [
+            "they_shunned",
+            "newborn",
+            "insult"
+        ],
+        [
+            "What?"
+        ]
+    ],
+    "deadnewborns_J1": [
+        [
+            "they_dead",
+            "you_dead",
+            "newborn"
+        ],
+        [
+            "Hey, there, little guy."
         ]
     ]
 }

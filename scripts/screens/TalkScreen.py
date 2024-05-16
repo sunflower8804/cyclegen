@@ -422,7 +422,7 @@ class TalkScreen(Screens):
             "you_formerlyrogue",
             "you_formerlykittypet",
             "you_formerlyoutsider",
-            "you_originallyanotherclan",
+            "you_originallyfromanotherclan",
             "you_orphaned",
             "you_abandoned",
             "you_ancientspirit"
@@ -435,7 +435,7 @@ class TalkScreen(Screens):
             "they_formerlyrogue",
             "they_formerlykittypet",
             "they_formerlyoutsider",
-            "they_originallyanotherclan",
+            "they_originallyfromanotherclan",
             "they_orphaned",
             "they_abandoned",
             "they_ancientspirit"
@@ -479,6 +479,10 @@ class TalkScreen(Screens):
 
             if "they_adult" in tags and cat.status in ['apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice", "kitten", "newborn"]:
                 continue
+
+            if "you_adult" in tags and you.status in ['apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice", "kitten", "newborn"]:
+                continue
+
             if "they_app" in tags and cat.status not in ['apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice"]:
                 continue
             
@@ -1062,12 +1066,12 @@ class TalkScreen(Screens):
             possible_texts = None
             with open(f"{resource_dir}general.json", 'r') as read_file:
                 possible_texts = ujson.loads(read_file.read())
-                clusters_1 = f"{cluster1} "
+                clusters_1 = f"{cluster3} "
                 if cluster2:
-                    clusters_1 += f"and {cluster2}"
-                clusters_2 = f"{cluster3} "
+                    clusters_1 += f"and {cluster4}"
+                clusters_2 = f"{cluster1} "
                 if cluster4:
-                    clusters_2 += f"and {cluster4}"
+                    clusters_2 += f"and {cluster2}"
                 try:
                     add_on = ""
                     add_on2 = ""
@@ -1924,10 +1928,14 @@ class TalkScreen(Screens):
         bs_category = None
 
         for category in BACKSTORIES["backstory_categories"]:
-            if backstory in category:
+            if backstory in BACKSTORIES["backstory_categories"][category]:
                 bs_category = category
                 break
-        bs_display = BACKSTORIES["backstory_display"][bs_category]
+        if bs_category is not None:
+            bs_display = BACKSTORIES["backstory_display"][bs_category]
+        else:
+            bs_display = None
+            print("ERROR: Backstory category was not found.")
         if not bs_display:
             return "clanfounder"
         return bs_display
