@@ -1066,12 +1066,12 @@ class TalkScreen(Screens):
             possible_texts = None
             with open(f"{resource_dir}general.json", 'r') as read_file:
                 possible_texts = ujson.loads(read_file.read())
-                clusters_1 = f"{cluster1} "
+                clusters_1 = f"{cluster3} "
                 if cluster2:
-                    clusters_1 += f"and {cluster2}"
-                clusters_2 = f"{cluster3} "
+                    clusters_1 += f"and {cluster4}"
+                clusters_2 = f"{cluster1} "
                 if cluster4:
-                    clusters_2 += f"and {cluster4}"
+                    clusters_2 += f"and {cluster2}"
                 try:
                     add_on = ""
                     add_on2 = ""
