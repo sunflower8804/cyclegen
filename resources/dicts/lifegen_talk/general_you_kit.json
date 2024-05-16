@@ -62,8 +62,9 @@
     ],
     "assertive_4": [
         [
-            "kitten",
-            "assertive"
+            "you_kitten",
+            "assertive",
+            "they_any"
         ],
         [
             "Whoa! Watch where you're going there, little pal! One wrong move, and you might get stepped on!",
@@ -85,8 +86,9 @@
     ],
     "assertive_tonewborn": [
         [
-            "newborn",
-            "assertive"
+            "you_newborn",
+            "assertive",
+            "any"
         ],
         [
             "Whoa! Hey there, little guy! Shouldn't you be in the nursery?",
@@ -96,8 +98,9 @@
     ],
     "assertive_tonewborn1": [
         [
-            "newborn",
-            "assertive"
+            "you_newborn",
+            "assertive",
+            "any"
         ],
         [
             "Aw ... little guy hasn't even gotten their eyes open yet!",
@@ -4056,6 +4059,32 @@
             "Hm ..."
         ]
     ],
+    "Introspective_queenapp_to_NB": [
+        [
+            "Newborn",
+            "they_queen's_apprentice",
+            "Introspective"
+        ],
+        [
+            "Oh, that's y_c! They've grown so quickly.",
+            "I remember you being born, you know, even if it wasn't that long ago. It'll be amazing watching you grow to provide for the Clan. I wonder what you'll grow up to do.",
+            "A big strong warrior, a gentle medicine cat, a wise mediator... or you could become a queen like I'm learning to right now.",
+            "But that doesn't matter right now. Just focus on enjoying your life. That's what I think."
+        ]
+    ],
+    "assertive_queensapp_5": [
+        [
+            "you_kitten",
+            "they_older",
+            "they_any",
+            "assertive",
+            "dislike"
+        ],
+        [
+            "What's the matter, kid? You hungry? Need somebody to take you to the dirtplace?",
+            "Well? Spit it out, we ain't got all day!"
+          ]
+      ],
     "newborn_to_shunned_J1": [
         [
             "they_shunned",
