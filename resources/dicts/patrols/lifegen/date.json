@@ -1427,12 +1427,12 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You, r_c and o_c1 are strolling along the riverbank. Suddenly, a stone catches your eye. The colour reminds you of o_c1's eyes, and you consider showing it to {PRONOUN/o_c1/object}.",
+        "intro_text": "You, r_c and o_c1 are strolling along the riverbank. Suddenly, a stone catches your eye. The colour reminds you of o_c1's eyes, and you consider showing it to the two.",
         "decline_text": "You leave the stone and keep walking.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "When you pick up the rock to show to o_c1, both {PRONOUN/o_c1/subject} and r_c are delighted, agreeing that it looks just like o_c1's eyes. r_c rushes to the water to find a rock to match yours, and soon, all three of you are searching for your perfect match. You each keep someone else's matching rock with you when you head back to camp, and you sleep a little better that night with it by your nest.",
+                "text": "When you pick up the rock to show to o_c1, both cats are delighted, agreeing that it looks just like o_c1's eyes. r_c rushes to the water to find a rock to match yours, and soon, all three of you are searching for your perfect match. You each keep someone else's matching rock with you when you head back to camp, and you sleep a little better that night with it by your nest.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
