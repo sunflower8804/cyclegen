@@ -661,6 +661,12 @@ class TalkScreen(Screens):
             if "they_grieving" in tags and "grief stricken" not in cat.illnesses and not cat.dead:
                 continue
 
+            if "they_recovering_from_birth" in tags and "recovering from birth" not in cat.injuries:
+                continue
+
+            if "you_recovering_from_birth" in tags and "recovering from birth" not in you.injuries:
+                continue
+
             if "you_not_kit" in tags and game.clan.your_cat.moons < 6:
                 continue
 
