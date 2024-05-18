@@ -971,7 +971,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The feeling won't leave you alone, rather increases. It feels like hundreds of ants are crawling in your fur, dragging you downwards into the mud. You turn around, yelping, and come face to face with r_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/grab/grabs} your scruff, dragging you out of the mud. When you turn to thank {PRONOUN/r_c/object}, {PRONOUN/r_c/poss} eyes are wide with horror as {PRONOUN/r_c/subject} {VERB/r_c/escape/escapes} your gaze, running away with {PRONOUN/r_c/poss} tail between {PRONOUN/r_c/pos} legs and the darkness slowly swallowing {PRONOUN/r_c/object}.",
+                "text": "The feeling won't leave you alone, rather increases. It feels like hundreds of ants are crawling in your fur, dragging you downwards into the mud. You turn around, yelping, and come face to face with r_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/grab/grabs} your scruff, dragging you out of the mud. When you turn to thank {PRONOUN/r_c/object}, {PRONOUN/r_c/poss} eyes are wide with horror as {PRONOUN/r_c/subject} {VERB/r_c/escape/escapes} your gaze, running away with {PRONOUN/r_c/poss} tail between {PRONOUN/r_c/poss} legs and the darkness slowly swallowing {PRONOUN/r_c/object}.",
                 "exp": 0,
                 "weight": 20,
                 "injury": [
