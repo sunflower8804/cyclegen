@@ -1587,7 +1587,10 @@ class TalkScreen(Screens):
             if "y_p" in self.cat_dict:
                 text = text.replace("y_p", self.cat_dict["y_p"])
             else:
-                parent = Cat.fetch_cat(choice(you.inheritance.get_parents()))
+                try:
+                    parent = Cat.fetch_cat(choice(you.inheritance.get_parents()))
+                except:
+                    return ""
                 if len(you.inheritance.get_parents()) == 0 or parent.outside or parent.dead or parent.ID == cat.ID:
                     return ""
                 self.cat_dict["y_p"] = str(parent.name)
