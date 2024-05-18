@@ -2923,6 +2923,18 @@
             "No one deserves what I'm being put through."
         ]
     ],
+    "they_shunned_grieving4": [
+        [
+            "any",
+            "both_shunned",
+            "they_grieving",
+            "you_grieving",
+            "insult"
+        ],
+        [
+            "That's mean, y_c. You're allowed to be upset, but please dont take it out on me."
+        ]
+    ],
     "sc_newborn": [
         [
             "newborn",
@@ -4125,6 +4137,42 @@
             "y_c??",
             "Oh, right... you're... a ghost?",
             "[t_c sniffles.]"
+        ]
+    ],
+    "kittentoshunned_J1": [
+        [
+            "you_dead",
+            "they_grieving",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[t_c doesn't notice you at all.]"
+        ]
+    ],
+    "kittentoshunned_J2": [
+        [
+            "you_dead",
+            "they_grieving",
+            "grievingyou",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[The sight of you makes t_c tear up. Maybe you'll visit later.]"
+        ]
+    ],
+    "kittentoshunned_J3": [
+        [
+            "you_dead",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "Do you get bored being dead?",
+            "Wait, you're so young... Do you know that you're..?",
+            "Ah, never mind. You're looking very nice today, y_c.",
+            "[What are they talking about?]"
         ]
     ]
 }

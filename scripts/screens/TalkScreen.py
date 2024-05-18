@@ -905,7 +905,7 @@ class TalkScreen(Screens):
                 if you.shunned == 0:
                     continue
             
-            if "both_shunned" in tags:
+            if "both_shunned" in tags or ("they_shunned" in tags and "you_shunned" in tags):
                 if cat.shunned == 0 or you.shunned == 0:
                     continue
 
