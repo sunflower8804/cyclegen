@@ -67,6 +67,7 @@ class Patrol():
         final_patrols, final_romance_patrols = self.get_possible_patrols(
             str(game.clan.current_season).casefold(),
             str(game.clan.biome).casefold(),
+            str(game.clan.camp_bg).casefold(),
             patrol_type,
             game.clan.clan_settings['disasters']
         )
@@ -230,7 +231,7 @@ class Patrol():
         print("Patrol Leader:", str(self.patrol_leader.name))
         print("Random Cat:", str(self.patrol_random_cat.name))
 
-    def get_possible_patrols(self, current_season:str, biome:str, patrol_type:str,
+    def get_possible_patrols(self, current_season:str, biome:str, camp:str, patrol_type:str,
                              game_setting_disaster=None) -> Tuple[List[PatrolEvent]]:
         # ---------------------------------------------------------------------------- #
         #                                LOAD RESOURCES                                #
@@ -240,6 +241,7 @@ class Patrol():
                                 game.clan.clan_settings['disasters']
         season = current_season.lower()
         biome_dir = f"{biome}/"
+        camp = camp.lower()
         leaf = f"{season}"
         self.update_resources(biome_dir, leaf)
 
@@ -606,7 +608,7 @@ class Patrol():
         print("final romance chance:", chance_of_romance_patrol)
         return not int(random.random() * chance_of_romance_patrol)
 
-    def _filter_patrols(self, possible_patrols: List[PatrolEvent], biome:str, current_season:str, patrol_type:str):
+    def _filter_patrols(self, possible_patrols: List[PatrolEvent], biome:str, camp:str, current_season:str, patrol_type:str):
         filtered_patrols = []
         romantic_patrols = []
         special_date = get_special_date()
@@ -648,6 +650,8 @@ class Patrol():
                 continue
             
             if biome not in patrol.biome and "Any" not in patrol.biome:
+                continue
+            if camp not in patrol.camp and "Any" not in patrol.camp:
                 continue
             if current_season not in patrol.season and "Any" not in patrol.season:
                 continue
@@ -731,16 +735,16 @@ class Patrol():
 
         return filtered_patrols, romantic_patrols
 
-    def get_filtered_patrols(self, possible_patrols, biome, current_season, patrol_type):
+    def get_filtered_patrols(self, possible_patrols, biome, camp, current_season, patrol_type):
         
-        filtered_patrols, romantic_patrols = self._filter_patrols(possible_patrols, biome, current_season,
+        filtered_patrols, romantic_patrols = self._filter_patrols(possible_patrols, biome, camp, current_season,
                                                                   patrol_type)
         
         if not filtered_patrols:
             print('No normal patrols possible. Repeating filter with used patrols cleared.')
             self.used_patrols.clear()
             print('used patrols cleared', self.used_patrols)
-            filtered_patrols, romantic_patrols = self._filter_patrols(possible_patrols, biome,
+            filtered_patrols, romantic_patrols = self._filter_patrols(possible_patrols, biome, camp,
                                                                       current_season, patrol_type)    
         
         return filtered_patrols, romantic_patrols
@@ -752,6 +756,7 @@ class Patrol():
                 patrol_id=patrol.get("patrol_id"),
                 biome=patrol.get("biome"),
                 season=patrol.get("season"),
+                camp=patrol.get("camp"),
                 tags=patrol.get("tags"),
                 weight=patrol.get("weight", 20),
                 types=patrol.get("types"),
@@ -1134,7 +1139,7 @@ class Patrol():
             "y_c": (str(game.clan.your_cat.name), choice(game.clan.your_cat.pronouns)),
         }
 
-        other_cats = [i for i in self.patrol_cats if i not in [self.patrol_leader, self.patrol_random_cat]]
+        other_cats = [i for i in self.patrol_cats if i not in [self.patrol_leader, self.patrol_random_cat, game.clan.your_cat]]
         if len(other_cats) >= 1:
             replace_dict['o_c1'] = (str(other_cats[0].name),
                                     choice(other_cats[0].pronouns))
