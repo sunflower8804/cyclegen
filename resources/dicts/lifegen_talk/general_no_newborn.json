@@ -1397,5 +1397,39 @@
             "Did you do it for me? Did you think I wanted this? Or was it for your own sick desires?!",
             "Whatever, I don't care. Don't even look at me. StarClan forbid I ever sink to the level where I love you again."
         ]
+    ],
+    "grievingyouinsult_J1": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "insult"
+        ],
+        [
+            "I know the real y_c would never say that.",
+            "I miss you so much I'm hallucinating you... Why are my hallucinations so mean?"
+        ]
+    ],
+    "grievingtheminsult_J1": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "insult"
+        ],
+        [
+            "It's really me, y_c. You're not insulting a hallucination."
+        ]
+    ],
+    "grievingthemalive_J1": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any"
+        ],
+        [
+            "Hi, y_c!",
+            "I missed you too. I'll stay a bit longer, this time, I promise."
+        ]
     ]
 }

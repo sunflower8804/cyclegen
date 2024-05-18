@@ -2430,5 +2430,49 @@
         [
             "Not the time or the place. Move along."
         ]
+    ],
+    "grievingyou_J1": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "any"
+        ],
+        [
+            "Wh-what?! y_c?!",
+            "I've finally lost my mind.",
+            "But, um... thank you, ghost."
+        ]
+    ],
+    "grievingyou_J2": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "reject"
+        ],
+        [
+            "I must be going insane. y_c is dead... they would never say that..."
+        ]
+    ],
+    "grievingthem_J1": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any"
+        ],
+        [
+            "I love and miss you too, y_c."
+        ]
+    ],
+    "grievingthem_J2": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "reject"
+        ],
+        [
+            "You're not thinking clearly right now..."
+        ]
     ]
 }
