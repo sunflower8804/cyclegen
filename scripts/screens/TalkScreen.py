@@ -1709,6 +1709,20 @@ class TalkScreen(Screens):
                 self.cat_dict["y_k"] = str(kit.name)
                 text = text.replace("y_k", str(kit.name))
 
+        # Your kit-- kitten age
+        if "y_kk" in text:
+            if "y_kk" in self.cat_dict:
+                text = text.replace("y_kk", self.cat_dict["y_kk"])
+            else:
+                if you.inheritance.get_children() is None or len(you.inheritance.get_children()) == 0:
+                    return ""
+                kit = Cat.fetch_cat(choice(you.inheritance.get_children()))
+                if kit.moons >= 6 or kit.outside or kit.dead or kit.ID == cat.ID:
+                    return ""
+                self.cat_dict["y_kk"] = str(kit.name)
+                text = text.replace("y_kk", str(kit.name))
+       
+
         # Random cat
         if "r_c" in text:
             if "r_c" in self.cat_dict:
