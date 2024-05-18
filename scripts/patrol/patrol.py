@@ -393,7 +393,7 @@ class Patrol():
                       f'"{game.config["patrol_generation"]["debug_ensure_patrol_id"]}" '
                       "is not a possible romantic patrol.")
             
-        if game.current_screen == 'patrol screen2' or game.current_screen =='patrol screen3' or game.current_screen =='patrol screen4' or game.current_screen =='patrol screen':
+        if game.current_screen == 'patrol screen2' or game.current_screen =='patrol screen3' or game.current_screen =='patrol screen4':
             return final_patrols, final_romance_patrols
             
         return possible_patrols, []
