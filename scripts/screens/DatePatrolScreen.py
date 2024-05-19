@@ -261,17 +261,17 @@ class DatePatrolScreen(Screens):
                                                                 object_id="#add_cat_button", manager=MANAGER)
 
             # Update start patrol button
-            if not self.current_patrol:
+            if len(self.current_patrol) <= 1:
                 self.elements['patrol_start'].disable()
             else:
                 self.elements['patrol_start'].enable()
 
             # Update add random cat buttons
             # Enable all the buttons, to reset them
-            self.elements['add_one'].disable()
-            self.elements['add_three'].disable()
+            self.elements['add_one'].enable()
+            self.elements['add_three'].enable()
             self.elements['add_six'].disable()
-            self.elements["random"].disable()
+            self.elements["random"].enable()
 
             # making sure meds don't get the option for other patrols
             if any((cat.status in ['medicine cat', 'medicine cat apprentice'] for cat in self.current_patrol)):
@@ -305,12 +305,12 @@ class DatePatrolScreen(Screens):
                     text = 'hunting'
                 elif self.patrol_type == 'med':
                     if self.current_patrol:
-                        text = 'herb gathering'
+                        text = 'date'
                         # self.elements['mouse'].disable()
                         # self.elements['claws'].disable()
                         # self.elements['paw'].disable()
                     else:
-                        text = 'herb gathering'
+                        text = 'date'
                 else:
                     text = ""
 
@@ -330,7 +330,7 @@ class DatePatrolScreen(Screens):
                 able_no_med = self.able_cats
             if len(able_no_med) == 0:
                 able_no_med = self.able_cats
-            if len(self.current_patrol) >= 2 or len(able_no_med) < 1:
+            if len(self.current_patrol) >= 3 or len(able_no_med) < 1:
                 self.elements['add_one'].disable()
                 self.elements["random"].disable()
             if len(self.current_patrol) > 0 or len(able_no_med) < 3:
@@ -487,8 +487,8 @@ class DatePatrolScreen(Screens):
                                                       object_id="#start_patrol_button", manager=MANAGER)
         self.elements['patrol_start'].disable()
 
-        if not game.clan.your_cat.dead and not game.clan.your_cat.outside:
-            self.current_patrol.append(game.clan.your_cat)
+        # if not game.clan.your_cat.dead and not game.clan.your_cat.outside:
+        #     self.current_patrol.append(game.clan.your_cat)
         self.update_cat_images_buttons()
         self.update_button()
 
@@ -655,8 +655,10 @@ class DatePatrolScreen(Screens):
         if 'patrolled' not in game.switches:
             game.switches['patrolled'] = []
         if not you.dead and "4" not in game.switches['patrolled'] and not you.outside and not you.not_working():
+            if you not in self.current_patrol and not you.not_working():
+                self.current_patrol.insert(0, you)
             for the_cat in Cat.all_cats_list:
-                if the_cat.in_camp and the_cat.ID not in game.patrolled and the_cat not in self.current_patrol and the_cat.is_dateable(game.clan.your_cat):
+                if the_cat.in_camp and the_cat.ID not in game.patrolled and the_cat not in self.current_patrol and not the_cat.not_working() and the_cat.is_dateable(game.clan.your_cat):
                     self.able_cats.append(the_cat)
 
         if not self.able_cats:
