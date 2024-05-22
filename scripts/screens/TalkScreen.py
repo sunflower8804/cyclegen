@@ -1040,13 +1040,13 @@ class TalkScreen(Screens):
                     continue
                 if cat.relationships[you.ID].dislike < 20 and 'dislike' in tags:
                     continue
-                if cat.relationships[you.ID].comfortable < 5 and 'comfort' in tags:
+                if cat.relationships[you.ID].comfortable < 40 and 'comfort' in tags:
                     continue
-                if cat.relationships[you.ID].admiration < 5 and 'respect' in tags:
+                if cat.relationships[you.ID].admiration < 40 and 'respect' in tags:
                     continue
-                if cat.relationships[you.ID].trust < 5 and 'trust' in tags:
+                if cat.relationships[you.ID].trust < 40 and 'trust' in tags:
                     continue
-                if (cat.relationships[you.ID].platonic_like > 10 or cat.relationships[you.ID].dislike > 10) and "neutral" in tags:
+                if (cat.relationships[you.ID].platonic_like > 30 or cat.relationships[you.ID].dislike > 30) and "neutral" in tags:
                     continue
             else:
                 if any(i in ["hate","romantic_like","platonic_like","jealousy","dislike","comfort","respect","trust"] for i in tags):
