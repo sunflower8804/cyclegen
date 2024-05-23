@@ -360,9 +360,7 @@ class Patrol():
                 possible_patrols.extend(self.generate_patrol_events(self.OTHER_CLAN_HOSTILE))
 
         if game.current_screen == 'patrol screen' or game.current_screen == 'patrol screen2' or game.current_screen =='patrol screen3' or game.current_screen =='patrol screen4':
-            # final_patrols, final_romance_patrols = self.get_filtered_patrols(possible_patrols, biome, camp, current_season,
-            #                                                                 patrol_type)
-            final_patrols, final_romance_patrols = self.get_filtered_patrols(possible_patrols, biome, current_season,
+            final_patrols, final_romance_patrols = self.get_filtered_patrols(possible_patrols, biome, camp, current_season,
                                                                             patrol_type)
             
 
