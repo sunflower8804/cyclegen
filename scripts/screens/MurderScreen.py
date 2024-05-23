@@ -313,9 +313,11 @@ class MurderScreen(Screens):
             ceremony_txt = choice(ceremony_txt)
         except:
             ceremony_txt = choice(self.m_txt["murder general"])
-
+            
+        other_clan = choice(game.clan.all_clans)
         ceremony_txt = ceremony_txt.replace('v_c', str(cat_to_murder.name))
         ceremony_txt = ceremony_txt.replace('c_n', game.clan.name)
+        ceremony_txt = ceremony_txt.replace("o_c", str(other_clan.name))
         if cat_to_murder.status == 'leader':
             game.clan.leader_lives = 0
         cat_to_murder.die()
