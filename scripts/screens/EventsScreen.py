@@ -298,7 +298,7 @@ class EventsScreen(Screens):
                                                      scale(pygame.Rect((200, 220), (1200, 80))),
                                                      object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                      manager=MANAGER)
-        self.season = pygame_gui.elements.UITextBox(f'Current season: {game.clan.current_season}',
+        self.season = pygame_gui.elements.UITextBox('',
                                                     scale(pygame.Rect((200, 280), (1200, 80))),
                                                     object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                     manager=MANAGER)
