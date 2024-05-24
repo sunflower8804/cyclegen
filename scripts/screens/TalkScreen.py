@@ -801,17 +801,12 @@ class TalkScreen(Screens):
             
             # Connected dialogue keys:
             if "~" in talk_key:
-                print(f"current connected_dialogue {cat.connected_dialogue}")
                 talk_key_split = talk_key.split("~")
                 if talk_key_split[0] in cat.connected_dialogue.keys():
                     if int(cat.connected_dialogue[talk_key_split[0]] + 1) != int(talk_key_split[1]):
-                        print(f"did not add {talk_key}")
                         continue
                 elif int(talk_key_split[1]) != 1:
-                    print(f"did not add {talk_key}")
                     continue
-                else:
-                    print(f"added {talk_key}")
 
             # Relationships
             # Family tags:
