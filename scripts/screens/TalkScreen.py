@@ -1032,7 +1032,7 @@ class TalkScreen(Screens):
                     continue
                 if cat.relationships[you.ID].romantic_love < 15 and 'romantic_like' in tags:
                     continue
-                if cat.relationships[you.ID].platonic_like < 15 and 'platonic_like' in tags:
+                if cat.relationships[you.ID].platonic_like < 25 and 'platonic_like' in tags:
                     continue
                 if cat.relationships[you.ID].platonic_like < 40 and 'platonic_love' in tags:
                     continue
@@ -1046,7 +1046,7 @@ class TalkScreen(Screens):
                     continue
                 if cat.relationships[you.ID].trust < 40 and 'trust' in tags:
                     continue
-                if (cat.relationships[you.ID].platonic_like > 30 or cat.relationships[you.ID].dislike > 30) and "neutral" in tags:
+                if (cat.relationships[you.ID].platonic_like > 20 or cat.relationships[you.ID].dislike > 20) and "neutral" in tags:
                     continue
             else:
                 if any(i in ["hate","romantic_like","platonic_like","jealousy","dislike","comfort","respect","trust"] for i in tags):
