@@ -1774,5 +1774,82 @@
         [
             "Mrrp?"
         ]
+    ],
+    "deadnewborns_J2": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "any",
+            "you_dead"
+        ],
+        [
+            "Um... hi, little fellow.",
+            "You probably shouldn't be here."
+        ]
+    ],
+    "deadnewborns_J3": [
+        [
+            "they_shunned",
+            "any",
+            "you_dead"
+        ],
+        [
+            "Um... hi, little fellow.",
+            "You probably shouldn't be here."
+        ]
+    ],
+    "deadnewborns_J4": [
+        [
+            "they_grieving",
+            "any",
+            "you_dead"
+        ],
+        [
+            "Um... hi, little fellow.",
+            "You probably shouldn't be here."
+        ]
+    ],
+    "deadnewborns_J5": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "grievingyou",
+            "you_dead",
+            "any"
+        ],
+        [
+            "Oh, y_c... It's torture to see you everywhere."
+        ]
+    ],
+    "deadnewborns_J6": [
+        [
+            "you_shunned",
+            "you_grieving",
+            "any",
+            "they_dead"
+        ],
+        [
+            "Mew? Mew? ... Mew?"
+        ]
+    ],
+    "deadnewborns_J7": [
+        [
+            "you_grieving",
+            "any",
+            "they_dead"
+        ],
+        [
+            "Mew? Mew? ... Mew?"
+        ]
+    ],
+    "deadnewborns_J8": [
+        [
+            "you_shunned",
+            "any",
+            "they_dead"
+        ],
+        [
+            "Mew? Mew? ... Mew?"
+        ]
     ]
 }

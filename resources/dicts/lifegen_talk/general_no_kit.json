@@ -12309,7 +12309,7 @@
             "only_you_deaf"
         ],
         [
-            "... ... .."
+            "... ... ..."
         ]
     ],
     "bothshunned_sh_J12": [
@@ -12319,7 +12319,7 @@
             "only_you_deaf"
         ],
         [
-            "... ... .."
+            "... ... ..."
         ]
     ],
     "bothshunned_sh_J13": [
@@ -12330,7 +12330,7 @@
             "only_they_deaf"
         ],
         [
-            "... ... .."
+            "... ... ..."
         ]
     ],
     "general_sh_J14": [
@@ -14744,7 +14744,7 @@
             "Is it true that some StarClan cats are powerful enough to make the moon cover the sun?"
         ]
     ],
-    "shunned_sc": [
+    "shunned_sc1": [
         [
             "you_sc",
             "any",
@@ -14756,7 +14756,32 @@
             "Ah, you wouldn't understand..."
         ]
     ],
-    "shunned_df": [
+    "shunned_sc2": [
+        [
+            "you_sc",
+            "any",
+            "they_shunned"
+        ],
+        [
+            "I'm still gonna be allowed to join you guys when I die, right?",
+            "... Right?!"
+        ]
+    ],
+    "shunned_sc3": [
+        [
+            "you_sc",
+            "any",
+            "they_shunned"
+        ],
+        [
+            "Oh! y_c.",
+            "Here to judge me? Tell me how I've failed? Or are you here to take me up to StarClan with you?",
+            "My stomach has been kind of upset today...",
+            "[You tell t_c that, no, they're not dying, and you're just here to visit.]",
+            "Oh. Okay. Fine."
+        ]
+    ],
+    "shunned_df1": [
         [
             "you_df",
             "any",
@@ -14766,6 +14791,33 @@
             "I've made some mistakes, I admit it.",
             "But do I deserve this? I don't!",
             "You would know, wouldn't you, y_c?"
+        ]
+    ],
+    "shunned_df2": [
+        [
+            "you_df",
+            "any",
+            "they_shunned"
+        ],
+        [
+            "Oh, hello, y_c.",
+            "You here to bring me to the Dark Forest with you?",
+            "My head has been a bit sore today...",
+            "[You tell t_c that, no, they're not dying, and you're just here to visit.]",
+            "Oh! Phew, thank StarClan.",
+            "I mean-- sorry. That's not offensive, is it?"
+        ]
+    ],
+    "shunned_df3": [
+        [
+            "you_df",
+            "any",
+            "they_shunned"
+        ],
+        [
+            "Am I gonna join you guys when I die?",
+            "You don't know? I thought dead cats were supposed to know everything.",
+            "Hmph. Fine. I guess we'll see, huh?"
         ]
     ],
     "they_shunned_grieving": [
@@ -14786,7 +14838,9 @@
             "you_sc"
         ],
         [
-            "No one deserves what I'm being put through."
+            "Are you punishing me, StarClan cat? Is that why..?",
+            "Well, it's working. I've never felt so awful.",
+            "Happy?"
         ]
     ],
     "they_shunned_grieving3": [
@@ -14797,7 +14851,9 @@
             "you_df"
         ],
         [
-            "No one deserves what I'm being put through."
+            "Got room in the Dark Forest for one more?",
+            "[t_c isn't thinking straight, in their grief. No sane cat would ask to join the Dark Forest.]",
+            "No? Oh, come on. Please? It can't be worse than here."
         ]
     ],
     "grieving_neruotic": [
@@ -14875,57 +14931,56 @@
         [
             "murderedthem",
             "any",
-            "they_sc",
+            "they_dead",
             "you_shunned"
         ],
         [
-            "I hope they exile you.",
-            "I'd say I hope they kill you, but I don't want you up here with me."
+            "You're getting what you deserve, you know."
         ]
     ],
     "murderedthem_J4": [
         [
             "murderedthem",
             "any",
-            "they_df",
+            "they_dead",
             "you_shunned"
         ],
         [
             "I hope they exile you.",
-            "I'd say I hope they kill you, but I don't want you up here with me."
+            "I'd say I hope they kill you, but I don't want here with me."
         ]
     ],
     "murderedthem_J5": [
         [
             "murderedthem",
             "any",
-            "they_sc",
+            "they_dead",
             "you_shunned",
             "you_grieving"
         ],
         [
-            "I hope they exile you.",
-            "I'd say I hope they kill you, but I don't want you up here with me."
+            "Oh? Has someone close to you died?",
+            "Only a truly evil cat would cause such a thing.",
+            "I hope you feel this way every day for the rest of your life after what you did to me."
         ]
     ],
     "murderedthem_J6": [
         [
             "murderedthem",
             "any",
-            "they_df",
+            "they_dead",
             "you_shunned",
             "you_grieving"
         ],
         [
-            "I hope they exile you.",
-            "I'd say I hope they kill you, but I don't want you up here with me."
+            "You don't deserve to ever recover, after what you did to me."
         ]
     ],
     "murderedthem_J7": [
         [
             "murderedthem",
             "any",
-            "they_sc",
+            "they_dead",
             "you_forgiven"
         ],
         [

@@ -5305,5 +5305,77 @@
         [
             "Hey, there, little guy."
         ]
+    ],
+    "deadkit_J1": [
+        [
+            "they_dead",
+            "you_grieving",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "You look really sad, y_c. What happened?",
+            "No, I do wanna know, I really do!",
+            "O-oh... well, you don't have to tell me, I guess...",
+            "I hope you feel better soon."
+        ]
+    ],
+    "deadkit_J2": [
+        [
+            "they_dead",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "I'm sorry they had to come to StarClan so soon.",
+            "But you can talk to us, can't you? Go find them, it'll be like they never left!",
+            "[You don't know how to explain that it's not the same.]"
+        ]
+    ],
+    "deadkit_J3": [
+        [
+            "they_dead",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "The other StarClan cats told me you might not be allowed here when you die. Did you do something bad?",
+            "I'll tell them they should reconsider. I'm super smart with words, they'll have to listen to me, just watch!",
+            "[t_c runs off.]"
+        ]
+    ],
+    "deadkit_J4": [
+        [
+            "you_dead",
+            "any",
+            "they_shunned",
+            "newborn"
+        ],
+        [
+            "Why are you here?"
+        ]
+    ],
+    "deadkit_J5": [
+        [
+            "you_dead",
+            "any",
+            "they_shunned",
+            "they_grieving",
+            "newborn"
+        ],
+        [
+            "Why are you here?"
+        ]
+    ],
+    "deadkit_J6": [
+        [
+            "you_dead",
+            "any",
+            "they_grieving",
+            "newborn"
+        ],
+        [
+            "Why are you here?"
+        ]
     ]
 }

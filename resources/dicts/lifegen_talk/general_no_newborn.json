@@ -1398,5 +1398,311 @@
             "Did you do it for me? Did you think I wanted this? Or was it for your own sick desires?!",
             "Whatever, I don't care. Don't even look at me. StarClan forbid I ever sink to the level where I love you again."
         ]
+    ],
+    "grievingyouinsult_J1": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "insult"
+        ],
+        [
+            "I know the real y_c would never say that.",
+            "I miss you so much I'm hallucinating you... Why are my hallucinations so mean?"
+        ]
+    ],
+    "grievingtheminsult_J1": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "insult"
+        ],
+        [
+            "It's really me, y_c. You're not insulting a hallucination."
+        ]
+    ],
+    "grievingthemalive_J1": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any"
+        ],
+        [
+            "Hi, y_c!",
+            "I missed you too. I'll stay a bit longer, this time, I promise."
+        ]
+    ],
+    "shunned_insult_J1": [
+        [
+            "insult",
+            "they_shunned",
+            "they_grieving",
+            "any"
+        ],
+        [
+            "[t_c just stares at you blankly.]"
+        ]
+    ],
+    "shunned_insult_J2": [
+        [
+            "insult",
+            "both_shunned",
+            "they_grieving",
+            "any"
+        ],
+        [
+            "What do you have to gain from being so mean?"
+        ]
+    ],
+    "shunned_insult_J3": [
+        [
+            "insult",
+            "both_shunned",
+            "they_grieving",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "I know you don't mean that."
+        ]
+    ],
+    "shunned_insult_J4": [
+        [
+            "insult",
+            "both_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any"
+        ],
+        [
+            "You must be confused."
+        ]
+    ],
+    "shunned_insult_J5": [
+        [
+            "insult",
+            "both_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any"
+        ],
+        [
+            "I know you don't mean that."
+        ]
+    ],
+    "shunned_insult_J6": [
+        [
+            "insult",
+            "both_shunned",
+            "you_grieving",
+            "they_grieving",
+            "grievingthem",
+            "any"
+        ],
+        [
+            "You must be confused."
+        ]
+    ],
+    "shunned_insult_J7": [
+        [
+            "insult",
+            "both_shunned",
+            "they_grieving",
+            "you_grieving",
+            "grievingyou",
+            "any"
+        ],
+        [
+            "I know you don't mean that."
+        ]
+    ],
+    "bothgrieving_J1": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "[You and t_c have been stuck together all day in a never-ending hug.]",
+            "I missed you, y_c.",
+            "[You know. They've told you a dozen times already.]",
+            "[You missed them, too, you tell them for the thirteenth time.]"
+        ]
+    ],
+    "bothgrieving_J2": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[You and t_c have been stuck together all day in a never-ending hug.]",
+            "I missed you, y_c.",
+            "[You know. They've told you a dozen times already.]",
+            "[You missed them, too, you tell them for the thirteenth time.]"
+        ]
+    ],
+    "bothgrieving_J3": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "[You and t_c have been stuck together all day in a never-ending hug.]",
+            "I missed you, y_c.",
+            "[You know. They've told you a dozen times already.]",
+            "[You missed them, too, you tell them for the thirteenth time.]"
+        ]
+    ],
+    "bothgrieving_J4": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "both_shunned",
+            "any"
+        ],
+        [
+            "[You and t_c have been stuck together all day in a never-ending hug.]",
+            "I missed you, y_c.",
+            "[You know. They've told you a dozen times already.]",
+            "[You missed them, too, you tell them for the thirteenth time.]"
+        ]
+    ],
+    "bothgrieving_insult_J1": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "What? y_c? Why would you say that?"
+        ]
+    ],
+    "bothgrieving_insult_J2": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "What? y_c? Why would you say that?"
+        ]
+    ],
+    "bothgrieving_insult_J3": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "What? y_c? Why would you say that?"
+        ]
+    ],
+    "bothgrieving_insult_J4": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "both_shunned",
+            "any"
+        ],
+        [
+            "What? y_c? Why would you say that?"
+        ]
+    ],
+    "deadtoshunned_J1": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "grievingyou",
+            "you_dead",
+            "any"
+        ],
+        [
+            "[t_c is sound asleep. You'd better not wake them.]"
+        ]
+    ],
+    "deadtoshunned_J2": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "you_dead",
+            "any"
+        ],
+        [
+            "[t_c is sound asleep. You'd better not wake them.]"
+        ]
+    ],
+    "deadtoshunned_J3": [
+        [
+            "you_shunned",
+            "you_grieving",
+            "they_dead",
+            "grievingthem",
+            "any"
+        ],
+        [
+            "You're a complicated cat, y_c."
+        ]
+    ],
+    "deadtoshunned_J4": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "you_dead",
+            "grievingyou",
+            "any"
+        ],
+        [
+            "I miss you a lot, y_c.",
+            "Everything in my life is going wrong. How did I miss everything up this badly?",
+            "If you were still here, I might be able to return to normal, but... without you...",
+            "I don't know. Nothing makes sense anymore.",
+            "What do I do?"
+        ]
+    ],
+    "bothgrieving_J5": [
+        [
+            "they_grieving",
+            "you_grieving",
+            "you_shunned",
+            "any",
+            "insult"
+        ],
+        [
+            "[t_c just stares into space, not hearing you.]"
+        ]
+    ],
+    "bothgrieving_J6": [
+        [
+            "they_grieving",
+            "you_grieving",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "You're evil, y_c."
+        ]
     ]
 }
