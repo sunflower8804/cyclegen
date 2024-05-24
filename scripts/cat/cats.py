@@ -236,6 +236,7 @@ class Cat():
         self.df_mentor = None
         self.df_apprentices = []
         self.faith = randint(-3, 3)
+        self.connected_dialogue = {}
         
         self.prevent_fading = False  # Prevents a cat from fading.
         self.faded_offspring = []  # Stores of a list of faded offspring, for family page purposes.
@@ -3390,7 +3391,8 @@ class Cat():
                 "did_activity": self.did_activity if self.did_activity else False,
                 "df_mentor": self.df_mentor if self.df_mentor else None,
                 "df_apprentices": self.df_apprentices if self.df_apprentices else [],
-                "faith": self.faith if self.faith else 0
+                "faith": self.faith if self.faith else 0,
+                "connected_dialogue": self.connected_dialogue if self.connected_dialogue else {}
             }
 
 

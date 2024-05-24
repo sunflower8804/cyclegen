@@ -467,6 +467,8 @@ class EventsScreen(Screens):
         del self.season
         self.leaf.kill()
         del self.leaf
+        self.heading.kill()
+        del self.heading
         self.event_container.kill()
         self.cat_icon.kill()
         del self.cat_icon

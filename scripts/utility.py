@@ -771,6 +771,8 @@ def change_relationship_values(cats_to: list,
         changed = True"""
 
     # pick out the correct cats
+    if not cats_from:
+        return
     for single_cat_from in cats_from:
         for single_cat_to_ID in cats_to:
             single_cat_to = single_cat_from.fetch_cat(single_cat_to_ID)

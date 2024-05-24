@@ -1,6 +1,7 @@
 from random import choice, choices, randint
 import pygame
 import ujson
+import re
 
 from scripts.utility import scale
 
@@ -58,6 +59,7 @@ class TalkScreen(Screens):
         self.choicepanel = False
         self.textbox_graphic = None
         self.cat_dict = {}
+        self.replaced_index = (False, 0)
 
 
     def screen_switches(self):
@@ -78,9 +80,9 @@ class TalkScreen(Screens):
                 (500, 870)),
             manager=MANAGER)
         self.profile_elements["cat_name"] = pygame_gui.elements.UITextBox(str(self.the_cat.name),
-                                                                       scale(pygame.Rect((300, 870), (-1, 80))),
-                                                                          object_id="#text_box_34_horizcenter_light",
-                                                                          manager=MANAGER)
+                                                                    scale(pygame.Rect((300, 870), (-1, 80))),
+                                                                        object_id="#text_box_34_horizcenter_light",
+                                                                        manager=MANAGER)
 
         self.text_type = ""
         self.texts = self.load_texts(self.the_cat)
@@ -210,7 +212,34 @@ class TalkScreen(Screens):
             else:
                 self.profile_elements["cat_image"].show()
                 # self.textbox_graphic.hide()
+            if "|r_c|" in self.texts[self.text_index] and not self.replaced_index[0]:
+                random_cat = self.find_cat_by_name(self.cat_dict["r_c"])
+                self.profile_elements["cat_name"].kill()
+                self.profile_elements["cat_name"] = pygame_gui.elements.UITextBox(str(random_cat.name),
+                                                                    scale(pygame.Rect((300, 870), (-1, 80))),
+                                                                        object_id="#text_box_34_horizcenter_light",
+                                                                        manager=MANAGER)
+                self.profile_elements["cat_image"].kill()
+                self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((70, 900), (400, 400))),
+                                                                        pygame.transform.scale(
+                                                                            generate_sprite(random_cat),
+                                                                            (400, 400)), manager=MANAGER)
+                self.texts[self.text_index] = self.texts[self.text_index].replace("|r_c|", "")
+                self.replaced_index = (True,self.text_index)
+            elif self.replaced_index[0] and self.text_index != self.replaced_index[1]:
+                self.profile_elements["cat_name"].kill()
+                self.profile_elements["cat_name"] = pygame_gui.elements.UITextBox(str(self.the_cat.name),
+                                                                    scale(pygame.Rect((300, 870), (-1, 80))),
+                                                                        object_id="#text_box_34_horizcenter_light",
+                                                                        manager=MANAGER)
+                self.profile_elements["cat_image"].kill()
+                self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((70, 900), (400, 400))),
+                                                                        pygame.transform.scale(
+                                                                            generate_sprite(self.the_cat),
+                                                                            (400, 400)), manager=MANAGER)
+                self.replaced_index = (False, self.text_index)
 
+        self.text_frames = [[text[:i+1] for i in range(len(text))] for text in self.texts]
         if self.text_index < len(self.text_frames):
             if now >= self.next_frame_time and self.frame_index < len(self.text_frames[self.text_index]) - 1:
                 self.frame_index += 1
@@ -399,7 +428,7 @@ class TalkScreen(Screens):
                 with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
                     possible_texts5 = ujson.loads(read_file.read())
                     possible_texts.update(possible_texts5)
-
+                    
         return self.filter_texts(cat, possible_texts)
 
 
@@ -769,7 +798,20 @@ class TalkScreen(Screens):
 
                 if not ill_injured:
                     continue
-
+            
+            # Connected dialogue keys:
+            if "~" in talk_key:
+                print(f"current connected_dialogue {cat.connected_dialogue}")
+                talk_key_split = talk_key.split("~")
+                if talk_key_split[0] in cat.connected_dialogue.keys():
+                    if int(cat.connected_dialogue[talk_key_split[0]] + 1) != int(talk_key_split[1]):
+                        print(f"did not add {talk_key}")
+                        continue
+                elif int(talk_key_split[1]) != 1:
+                    print(f"did not add {talk_key}")
+                    continue
+                else:
+                    print(f"added {talk_key}")
 
             # Relationships
             # Family tags:
@@ -1125,7 +1167,7 @@ class TalkScreen(Screens):
             weight = 1
             if any(i in weighted_tags for i in tags):
                 weight+=3
-            if "focus" in tags:
+            if "focus" in tags or "connected" in tags:
                 weight+=10
             weights2.append(weight)
 
@@ -1139,6 +1181,10 @@ class TalkScreen(Screens):
                     if "intro" in texts_list[text_chosen_key]:
                         self.text_type = "choices"
                         self.display_intro(cat, texts_list, text_chosen_key)
+                    if "~" in text_chosen_key:
+                        text_chosen_key_split = text_chosen_key.split("~")
+                        cat.connected_dialogue[text_chosen_key_split[0]] = int(text_chosen_key_split[1])
+                        print(f"current connected_dialogue {cat.connected_dialogue}")
                     return new_text
             else:
                 print("something's wrong")
@@ -1163,6 +1209,10 @@ class TalkScreen(Screens):
                 if "intro" in texts_list[text_chosen_key]:
                     self.text_type = "choices"
                     self.display_intro(cat, texts_list, text_chosen_key)
+                if "~" in text_chosen_key:
+                    text_chosen_key_split = text_chosen_key.split("~")
+                    cat.connected_dialogue[text_chosen_key_split[0]] = int(text_chosen_key_split[1])
+                    print(f"current connected_dialogue {cat.connected_dialogue}")
                 return new_text
 
             counter += 1
@@ -1225,6 +1275,11 @@ class TalkScreen(Screens):
                         print(e)
 
                 return possible_texts['general'][1]
+        
+        if "~" in text_chosen_key:
+            text_chosen_key_split = text_chosen_key.split("~")
+            cat.connected_dialogue[text_chosen_key_split[0]] = int(text_chosen_key_split[1])
+            print(f"current connected_dialogue {cat.connected_dialogue}")
         return new_text
 
     def get_adjusted_txt(self, text, cat):
@@ -1234,11 +1289,23 @@ class TalkScreen(Screens):
         text = [t1.replace("y_c", str(you.name)) for t1 in text]
         text = [t1.replace("t_c", str(cat.name)) for t1 in text]
 
+        # if "|" not in text:
+        #     self.profile_elements["cat_name"].kill()
+        #     self.profile_elements["cat_name"] = pygame_gui.elements.UITextBox(str(cat.name),
+        #                                                         scale(pygame.Rect((300, 870), (-1, 80))),
+        #                                                             object_id="#text_box_34_horizcenter_light",
+        #                                                             manager=MANAGER)
+        #     self.profile_elements["cat_image"].kill()
+        #     self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((70, 900), (400, 400))),
+        #                                                                                 pygame.transform.scale(
+        #                                                                                     generate_sprite(cat),
+        #                                                                                     (400, 400)), manager=MANAGER)
+
         for i in range(len(text)):
             text[i] = self.adjust_txt(text[i], cat)
             if text[i] == "":
                 return ""
-            
+        
         return text
 
     def get_living_cats(self):
@@ -1724,12 +1791,11 @@ class TalkScreen(Screens):
                     return ""
                 self.cat_dict["y_kk"] = str(kit.name)
                 text = text.replace("y_kk", str(kit.name))
-       
 
         # Random cat
         if "r_c" in text:
             if "r_c" in self.cat_dict:
-                text = text.replace("r_c", self.cat_dict["r_c"])
+                text = re.sub(r'(?<!\|)r_c(?!\|)', self.cat_dict["r_c"], text)
             else:
                 random_cat = choice(self.get_living_cats())
                 counter = 0
@@ -1739,7 +1805,7 @@ class TalkScreen(Screens):
                     random_cat = choice(self.get_living_cats())
                     counter +=1
                 self.cat_dict["r_c"] = str(random_cat.name)
-                text = text.replace("r_c", str(random_cat.name))
+                text = re.sub(r'(?<!\|)r_c(?!\|)', str(random_cat.name), text)
         
         # Other Clan
         if "o_c" in text:
@@ -1962,3 +2028,13 @@ class TalkScreen(Screens):
         if not bs_display:
             return "clanfounder"
         return bs_display
+    
+    def find_cat_by_name(self, name):
+        # Get rid of this because its horrible
+        # replace cat_dict with Cat objects not names
+        for cat in Cat.all_cats_list:
+            if str(cat.name) == name:
+                return cat
+        return None
+
+

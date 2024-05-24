@@ -198,6 +198,7 @@ def json_load():
             new_cat.df_mentor = cat["df_mentor"] if "df_mentor" in cat else None
             new_cat.df_apprentices = cat["df_apprentices"] if "df_apprentices" in cat else []
             new_cat.faith = cat["faith"] if "faith" in cat else random.randint(-3,3)
+            new_cat.connected_dialogue = cat["connected_dialogue"] if "connected_dialogue" in cat else {}
             if "died_by" in cat or "scar_event" in cat or "mentor_influence" in cat:
                 new_cat.convert_history(
                     cat["died_by"] if "died_by" in cat else [],
