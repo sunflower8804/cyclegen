@@ -1259,9 +1259,8 @@
     ],
     "silly_queen_stares": [
         [
-            "Any",
-            "silly",
             "no_kit",
+            "silly",
             "clan_has_kits",
             "trust"
         ],
@@ -1272,9 +1271,8 @@
     ],
     "silly_queen_1": [
         [
-            "Any",
-            "silly",
             "no_kit",
+            "silly",
             "clan_has_kits"
         ],
         [
@@ -1310,7 +1308,8 @@
     "silly_queen_stoneclan": [
         [
             "kitten",
-            "silly"
+            "silly",
+            "random_cat"
         ],
         [
             "Have you been playing StoneClan with r_k lately?",
