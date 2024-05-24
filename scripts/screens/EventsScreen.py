@@ -294,7 +294,7 @@ class EventsScreen(Screens):
         # On first open, update display events list
         self.update_display_events_lists()
 
-        self.heading = pygame_gui.elements.UITextBox("See which events are currently happening in the Clan.",
+        self.heading = pygame_gui.elements.UITextBox("",
                                                      scale(pygame.Rect((200, 220), (1200, 80))),
                                                      object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                      manager=MANAGER)
@@ -611,7 +611,7 @@ class EventsScreen(Screens):
     def update_events_display(self):
         
         self.leaf.set_text(f'Season: {game.clan.current_season} - Clan Age: {game.clan.age}')
-        self.season.set_text(str(game.clan.your_cat.name))
+        self.heading.set_text(str(game.clan.your_cat.name))
         if game.clan.your_cat.moons == -1:
             self.clan_age.set_text(f'Your age: Unborn')
         elif game.clan.your_cat.moons != 1:
