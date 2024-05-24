@@ -422,7 +422,7 @@ class TalkScreen(Screens):
             "you_formerlyrogue",
             "you_formerlykittypet",
             "you_formerlyoutsider",
-            "you_originallyanotherclan",
+            "you_originallyfromanotherclan",
             "you_orphaned",
             "you_abandoned",
             "you_ancientspirit"
@@ -435,7 +435,7 @@ class TalkScreen(Screens):
             "they_formerlyrogue",
             "they_formerlykittypet",
             "they_formerlyoutsider",
-            "they_originallyanotherclan",
+            "they_originallyfromanotherclan",
             "they_orphaned",
             "they_abandoned",
             "they_ancientspirit"
@@ -479,6 +479,10 @@ class TalkScreen(Screens):
 
             if "they_adult" in tags and cat.status in ['apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice", "kitten", "newborn"]:
                 continue
+
+            if "you_adult" in tags and you.status in ['apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice", "kitten", "newborn"]:
+                continue
+
             if "they_app" in tags and cat.status not in ['apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice"]:
                 continue
             
@@ -655,6 +659,12 @@ class TalkScreen(Screens):
             if "they_grieving" not in tags and "grief stricken" in cat.illnesses and not cat.dead:
                 continue
             if "they_grieving" in tags and "grief stricken" not in cat.illnesses and not cat.dead:
+                continue
+
+            if "they_recovering_from_birth" in tags and "recovering from birth" not in cat.injuries:
+                continue
+
+            if "you_recovering_from_birth" in tags and "recovering from birth" not in you.injuries:
                 continue
 
             if "you_not_kit" in tags and game.clan.your_cat.moons < 6:
@@ -895,7 +905,7 @@ class TalkScreen(Screens):
                 if you.shunned == 0:
                     continue
             
-            if "both_shunned" in tags:
+            if "both_shunned" in tags or ("they_shunned" in tags and "you_shunned" in tags):
                 if cat.shunned == 0 or you.shunned == 0:
                     continue
 
@@ -1028,7 +1038,7 @@ class TalkScreen(Screens):
                     continue
                 if cat.relationships[you.ID].romantic_love < 15 and 'romantic_like' in tags:
                     continue
-                if cat.relationships[you.ID].platonic_like < 15 and 'platonic_like' in tags:
+                if cat.relationships[you.ID].platonic_like < 25 and 'platonic_like' in tags:
                     continue
                 if cat.relationships[you.ID].platonic_like < 40 and 'platonic_love' in tags:
                     continue
@@ -1036,13 +1046,13 @@ class TalkScreen(Screens):
                     continue
                 if cat.relationships[you.ID].dislike < 20 and 'dislike' in tags:
                     continue
-                if cat.relationships[you.ID].comfortable < 5 and 'comfort' in tags:
+                if cat.relationships[you.ID].comfortable < 40 and 'comfort' in tags:
                     continue
-                if cat.relationships[you.ID].admiration < 5 and 'respect' in tags:
+                if cat.relationships[you.ID].admiration < 40 and 'respect' in tags:
                     continue
-                if cat.relationships[you.ID].trust < 5 and 'trust' in tags:
+                if cat.relationships[you.ID].trust < 40 and 'trust' in tags:
                     continue
-                if (cat.relationships[you.ID].platonic_like > 10 or cat.relationships[you.ID].dislike > 10) and "neutral" in tags:
+                if (cat.relationships[you.ID].platonic_like > 20 or cat.relationships[you.ID].dislike > 20) and "neutral" in tags:
                     continue
             else:
                 if any(i in ["hate","romantic_like","platonic_like","jealousy","dislike","comfort","respect","trust"] for i in tags):
@@ -1062,12 +1072,12 @@ class TalkScreen(Screens):
             possible_texts = None
             with open(f"{resource_dir}general.json", 'r') as read_file:
                 possible_texts = ujson.loads(read_file.read())
-                clusters_1 = f"{cluster1} "
+                clusters_1 = f"{cluster3} "
                 if cluster2:
-                    clusters_1 += f"and {cluster2}"
-                clusters_2 = f"{cluster3} "
+                    clusters_1 += f"and {cluster4}"
+                clusters_2 = f"{cluster1} "
                 if cluster4:
-                    clusters_2 += f"and {cluster4}"
+                    clusters_2 += f"and {cluster2}"
                 try:
                     add_on = ""
                     add_on2 = ""
@@ -1583,7 +1593,10 @@ class TalkScreen(Screens):
             if "y_p" in self.cat_dict:
                 text = text.replace("y_p", self.cat_dict["y_p"])
             else:
-                parent = Cat.fetch_cat(choice(you.inheritance.get_parents()))
+                try:
+                    parent = Cat.fetch_cat(choice(you.inheritance.get_parents()))
+                except:
+                    return ""
                 if len(you.inheritance.get_parents()) == 0 or parent.outside or parent.dead or parent.ID == cat.ID:
                     return ""
                 self.cat_dict["y_p"] = str(parent.name)
@@ -1698,6 +1711,20 @@ class TalkScreen(Screens):
                     return ""
                 self.cat_dict["y_k"] = str(kit.name)
                 text = text.replace("y_k", str(kit.name))
+
+        # Your kit-- kitten age
+        if "y_kk" in text:
+            if "y_kk" in self.cat_dict:
+                text = text.replace("y_kk", self.cat_dict["y_kk"])
+            else:
+                if you.inheritance.get_children() is None or len(you.inheritance.get_children()) == 0:
+                    return ""
+                kit = Cat.fetch_cat(choice(you.inheritance.get_children()))
+                if kit.moons >= 6 or kit.outside or kit.dead or kit.ID == cat.ID:
+                    return ""
+                self.cat_dict["y_kk"] = str(kit.name)
+                text = text.replace("y_kk", str(kit.name))
+       
 
         # Random cat
         if "r_c" in text:
@@ -1924,10 +1951,14 @@ class TalkScreen(Screens):
         bs_category = None
 
         for category in BACKSTORIES["backstory_categories"]:
-            if backstory in category:
+            if backstory in BACKSTORIES["backstory_categories"][category]:
                 bs_category = category
                 break
-        bs_display = BACKSTORIES["backstory_display"][bs_category]
+        if bs_category is not None:
+            bs_display = BACKSTORIES["backstory_display"][bs_category]
+        else:
+            bs_display = None
+            print("ERROR: Backstory category was not found.")
         if not bs_display:
             return "clanfounder"
         return bs_display

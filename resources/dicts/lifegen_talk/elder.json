@@ -1290,5 +1290,40 @@
         [
             "Get out of the way before I step on you, kit."
         ]
+    ],
+    "assertive_elder_retag5": [
+        [
+            "you_elder",
+            "they_elder",
+            "assertive",
+            "cool",
+            "silly",
+            "unlawful",
+            "platonic_like",
+            "romantic_like",
+            "from_mate"
+        ],
+        [
+            "Hey, furbag. I brought you something!",
+            "[t_c lays a colorful feather at your paws.",
+            "I know this is your favorite color, and you miss exploring the territory. So I knew I just had to bring it to you.",
+            "Yeah, yeah, don't get all soft on me, hehe. Wanna grab a meal together?"
+        ]
+    ],
+    "assertive_elder_move6": [
+        [
+            "you_any",
+            "they_elder",
+            "assertive",
+            "upstanding",
+            "stable",
+            "dislike",
+            "neutral",
+            "no_kit"
+        ],
+        [
+            "*Sigh* Can't you see I have more important things to do, y_c?",
+            "Go back to catching mice, or whatever."
+        ]
     ]
 }

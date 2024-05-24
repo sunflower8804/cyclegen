@@ -62,8 +62,9 @@
     ],
     "assertive_4": [
         [
-            "kitten",
-            "assertive"
+            "you_kitten",
+            "assertive",
+            "they_any"
         ],
         [
             "Whoa! Watch where you're going there, little pal! One wrong move, and you might get stepped on!",
@@ -85,8 +86,9 @@
     ],
     "assertive_tonewborn": [
         [
-            "newborn",
-            "assertive"
+            "you_newborn",
+            "assertive",
+            "any"
         ],
         [
             "Whoa! Hey there, little guy! Shouldn't you be in the nursery?",
@@ -96,8 +98,9 @@
     ],
     "assertive_tonewborn1": [
         [
-            "newborn",
-            "assertive"
+            "you_newborn",
+            "assertive",
+            "any"
         ],
         [
             "Aw ... little guy hasn't even gotten their eyes open yet!",
@@ -2893,7 +2896,7 @@
             "newborn"
         ],
         [
-            "No one deserves what I'm being put through."
+            "[t_c tucks their nose under their paws, ignoring you as you toddle up to them.]"
         ]
     ],
     "they_shunned_grieving2": [
@@ -2905,7 +2908,7 @@
             "newborn"
         ],
         [
-            "No one deserves what I'm being put through."
+            "You have it easy, little one."
         ]
     ],
     "they_shunned_grieving3": [
@@ -2917,7 +2920,21 @@
             "newborn"
         ],
         [
-            "No one deserves what I'm being put through."
+            "Oh, you poor thing.",
+            "Neither of us deserves what we're going through right now.",
+            "I hope you find StarClan one day, little kit."
+        ]
+    ],
+    "they_shunned_grieving4": [
+        [
+            "any",
+            "both_shunned",
+            "they_grieving",
+            "you_grieving",
+            "insult"
+        ],
+        [
+            "That's mean, y_c. You're allowed to be upset, but please dont take it out on me."
         ]
     ],
     "sc_newborn": [
@@ -2955,7 +2972,8 @@
             "they_sc"
         ],
         [
-            "You should still be in c_nClan's nursery, surrounded by soft moss and feathers."
+            "Oh, darling, you shouldn't be on that side of the border...",
+            "I don't know what to do."
         ]
     ],
     "sc_newborn3": [
@@ -2975,7 +2993,18 @@
             "they_df"
         ],
         [
-            "You should still be in c_nClan's nursery, surrounded by soft moss and feathers."
+            "What could you have done to be worthy of spending eternity here?",
+            "StarClan is cruel..."
+        ]
+    ],
+    "dead_newborn_J1": [
+        [
+            "newborn",
+            "you_dead"
+        ],
+        [
+            "I'm really sorry you're stuck being so... small in the afterlife.",
+            "Can you even understand me?"
         ]
     ],
     "dead_parent1": [
@@ -3546,6 +3575,28 @@
             "[t_c doesn't even react to your insult.]"
         ]
     ],
+    "shunned_insult_J4": [
+        [
+            "you_shunned",
+            "any",
+            "insult",
+            "they_older"
+        ],
+        [
+            "No need to lash out."
+        ]
+    ],
+    "shunned_insult_J5": [
+        [
+            "you_shunned",
+            "any",
+            "insult",
+            "they_kitten"
+        ],
+        [
+            "What?!"
+        ]
+    ],
     "you_kit_ur_J1": [
         [
             "they_ur",
@@ -4020,6 +4071,139 @@
             "Whoa ... this is them? They're so small!",
             "Hard to believe I was that small once ...",
             "Hm ..."
+        ]
+    ],
+    "Introspective_queenapp_to_NB": [
+        [
+            "Newborn",
+            "they_queen's_apprentice",
+            "Introspective"
+        ],
+        [
+            "Oh, that's y_c! They've grown so quickly.",
+            "I remember you being born, you know, even if it wasn't that long ago. It'll be amazing watching you grow to provide for the Clan. I wonder what you'll grow up to do.",
+            "A big strong warrior, a gentle medicine cat, a wise mediator... or you could become a queen like I'm learning to right now.",
+            "But that doesn't matter right now. Just focus on enjoying your life. That's what I think."
+        ]
+    ],
+    "assertive_queensapp_5": [
+        [
+            "you_kitten",
+            "they_older",
+            "they_any",
+            "assertive",
+            "dislike"
+        ],
+        [
+            "What's the matter, kid? You hungry? Need somebody to take you to the dirtplace?",
+            "Well? Spit it out, we ain't got all day!"
+          ]
+      ],
+    "newborn_to_shunned_J1": [
+        [
+            "they_shunned",
+            "newborn"
+        ],
+        [
+            "Careful."
+        ]
+    ],
+    "newborn_to_shunned_insult_J1": [
+        [
+            "they_shunned",
+            "newborn",
+            "insult"
+        ],
+        [
+            "What?"
+        ]
+    ],
+    "deadnewborn_to_grieving_J1": [
+        [
+            "they_grieving",
+            "newborn",
+            "you_dead"
+        ],
+        [
+            "[The distraught t_c tries their best to ignore you.]"
+        ]
+    ],
+    "deadnewborn_to_grieving_J2": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "newborn",
+            "you_dead"
+        ],
+        [
+            "y_c??",
+            "Oh, right... you're... a ghost?",
+            "[t_c sniffles.]"
+        ]
+    ],
+    "kittentoshunned_J1": [
+        [
+            "you_dead",
+            "they_grieving",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[t_c doesn't notice you at all.]"
+        ]
+    ],
+    "kittentoshunned_J2": [
+        [
+            "you_dead",
+            "they_grieving",
+            "grievingyou",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[The sight of you makes t_c tear up. Maybe you'll visit later.]"
+        ]
+    ],
+    "kittentoshunned_J3": [
+        [
+            "you_dead",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "Do you get bored being dead?",
+            "Wait, you're so young... Do you know that you're..?",
+            "Ah, never mind. You're looking very nice today, y_c.",
+            "[What are they talking about?]"
+        ]
+    ],
+    "kittentoshunned_J4": [
+        [
+            "you_dead",
+            "they_shunned",
+            "newborn",
+            "any"
+        ],
+        [
+            "Do you get bored being dead?",
+            "Wait, you're so young... Do you know that you're..?",
+            "Ah, never mind. You're looking very nice today, y_c.",
+            "[What are they talking about?]"
+        ]
+    ],
+    "kittentoshunned_J5": [
+        [
+            "you_dead",
+            "they_shunned",
+            "they_grieving",
+            "newborn",
+            "any"
+        ],
+        [
+            "Do you get bored being dead?",
+            "Wait, you're so young... Do you know that you're..?",
+            "Ah, never mind. You're looking very nice today, y_c.",
+            "[What are they talking about?]"
         ]
     ]
 }

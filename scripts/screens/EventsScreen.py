@@ -294,12 +294,12 @@ class EventsScreen(Screens):
         # On first open, update display events list
         self.update_display_events_lists()
 
-        if game.clan.game_mode != "classic":
-            self.freshkill_pile_button =  UIImageButton(scale(pygame.Rect((1270, 210), (282, 60))), "", object_id="#freshkill_pile_button"
-                                             , manager=MANAGER)
-
-        self.season = pygame_gui.elements.UITextBox(f'Season: {game.clan.current_season} - Clan Age: {game.clan.age} moons',
-                                                    scale(pygame.Rect((600, 220), (400, 80))),
+        self.heading = pygame_gui.elements.UITextBox("",
+                                                     scale(pygame.Rect((200, 220), (1200, 80))),
+                                                     object_id=get_text_box_theme("#text_box_30_horizcenter"),
+                                                     manager=MANAGER)
+        self.season = pygame_gui.elements.UITextBox('',
+                                                    scale(pygame.Rect((200, 280), (1200, 80))),
                                                     object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                     manager=MANAGER)
         self.clan_age = pygame_gui.elements.UITextBox("",
@@ -427,9 +427,6 @@ class EventsScreen(Screens):
         del self.timeskip_button
         if self.death_button:
             self.death_button.kill()
-        if game.clan.game_mode != "classic":
-            self.freshkill_pile_button.kill()
-            del self.freshkill_pile_button
         self.all_events_button.kill()
         del self.all_events_button
         self.ceremonies_events_button.kill()
@@ -614,7 +611,7 @@ class EventsScreen(Screens):
     def update_events_display(self):
         
         self.leaf.set_text(f'Season: {game.clan.current_season} - Clan Age: {game.clan.age}')
-        self.season.set_text(str(game.clan.your_cat.name))
+        self.heading.set_text(str(game.clan.your_cat.name))
         if game.clan.your_cat.moons == -1:
             self.clan_age.set_text(f'Your age: Unborn')
         elif game.clan.your_cat.moons != 1:
@@ -790,5 +787,6 @@ class EventsScreen(Screens):
 
     def make_events_container(self):
         """ In its own function so that there is only one place the box size is set"""
-        self.event_container = pygame_gui.elements.UIScrollingContainer(scale(pygame.Rect((432, 552), (1028, 700)))
-                                                                        , manager=MANAGER)
+        self.event_container = pygame_gui.elements.UIScrollingContainer(scale(pygame.Rect((432, 552), (1028, 700))),
+                                                                        allow_scroll_x=False,
+                                                                        manager=MANAGER)

@@ -22,7 +22,6 @@ from pygame_gui.elements import UIWindow
 
 from scripts.housekeeping.datadir import get_save_dir, get_cache_dir, get_saved_images_dir, get_data_dir
 from scripts.game_structure import image_cache
-from scripts.game_structure.game_essentials import game, screen_x, screen_y
 from scripts.game_structure.image_button import UIImageButton, UITextBoxTweaked
 from scripts.housekeeping.progress_bar_updater import UIUpdateProgressBar
 from scripts.housekeeping.update import self_update, UpdateChannel, get_latest_version_number
@@ -41,7 +40,8 @@ class SaveCheck(UIWindow):
         super().__init__(scale(pygame.Rect((500, 400), (600, 400))),
                          window_display_title='Save Check',
                          object_id='#save_check_window',
-                         resizable=False)
+                         resizable=False,
+                         always_on_top=True)
 
         self.clan_name = "UndefinedClan"
         if game.clan:
@@ -90,6 +90,7 @@ class SaveCheck(UIWindow):
             pygame.transform.scale(
                 image_cache.load_image('resources/images/save_clan_saved.png'),
                 (228, 60)),
+            starting_height=top_stack_menu_layer_height + 2,
             container=self)
         self.save_button_saved_state.hide()
         self.save_button_saving_state = pygame_gui.elements.UIImage(
@@ -98,6 +99,7 @@ class SaveCheck(UIWindow):
                 image_cache.load_image(
                     'resources/images/save_clan_saving.png'),
                 (228, 60)),
+            starting_height=top_stack_menu_layer_height + 1,
             container=self)
         self.save_button_saving_state.hide()
 
@@ -918,6 +920,7 @@ class ChangelogPopup(UIWindow):
 
         self.scrolling_container = pygame_gui.elements.UIScrollingContainer(
             scale(pygame.Rect((20, 130), (960, 650))),
+            allow_scroll_x=False,
             container=self,
             manager=MANAGER)
 
@@ -1468,7 +1471,8 @@ class DeathScreen(UIWindow):
                 game.clan.your_cat.revives +=1
                 game.clan.your_cat.dead = False
                 game.clan.your_cat.df = False
-                game.clan.your_cat.outside = False
+                if not game.clan.your_cat.outside:
+                    game.clan.your_cat.outside = False
                 game.clan.your_cat.dead_for = 0
                 game.clan.your_cat.moons+=1
                 game.clan.your_cat.update_mentor()

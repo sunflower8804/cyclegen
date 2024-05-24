@@ -1908,7 +1908,7 @@
             "you_deaf"
         ],
         [
-            "[t_c playfully taps you with their tail before pulling it away before anyone cat see.]"
+            "[t_c playfully taps you with their tail before pulling it away before anyone can see.]"
         ]
     ],
     "flirt_sh_J30": [
@@ -2120,6 +2120,46 @@
         ],
         [
             "Ugh..."
+        ]
+    ],
+    "flirt_sh_J43": [
+        [
+            "Any",
+            "both_shunned"
+        ],
+        [
+            "Hehe, I don't think that now is really the time..."
+        ]
+    ],
+    "flirt_sh_J44": [
+        [
+            "Any",
+            "both_shunned",
+            "reject"
+        ],
+        [
+            "Not the time, y_c."
+        ]
+    ],
+    "flirt_sh_J45": [
+        [
+            "Any",
+            "both_shunned",
+            "they_grieving",
+            "reject"
+        ],
+        [
+            "Um... no."
+        ]
+    ],
+    "flirt_sh_J46": [
+        [
+            "Any",
+            "both_shunned",
+            "they_grieving"
+        ],
+        [
+            "Maybe later, y_c."
         ]
     ],
     "flirting_shunned_SQ4": [
@@ -2429,6 +2469,179 @@
         ],
         [
             "Not the time or the place. Move along."
+        ]
+    ],
+    "grievingyou_J1": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "any"
+        ],
+        [
+            "Wh-what?! y_c?!",
+            "I've finally lost my mind.",
+            "But, um... thank you, ghost."
+        ]
+    ],
+    "grievingyou_J2": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "reject"
+        ],
+        [
+            "I must be going insane. y_c is dead... they would never say that..."
+        ]
+    ],
+    "grievingthem_J1": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any"
+        ],
+        [
+            "I love and missed you too, y_c."
+        ]
+    ],
+    "grievingthem_J2": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "reject"
+        ],
+        [
+            "You're not thinking clearly right now..."
+        ]
+    ],
+    "bothgrieving_flirt_J1": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "I don't know what's going on anymore."
+        ]
+    ],
+    "bothgrieving_flirt_J2": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "I don't know what's going on anymore."
+        ]
+    ],
+    "bothgrieving_flirt_J3": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "I don't know what's going on anymore."
+        ]
+    ],
+    "bothgrieving_flirt_J4": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "both_shunned",
+            "any"
+        ],
+        [
+            "I don't know what's going on anymore."
+        ]
+    ],
+    "bothgrieving_flirt_J5": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "any",
+            "reject"
+        ],
+        [
+            "I don't know what's going on anymore."
+        ]
+    ],
+    "bothgrieving_flirt_J6": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "they_shunned",
+            "any",
+            "reject"
+        ],
+        [
+            "I don't know what's going on anymore."
+        ]
+    ],
+    "bothgrieving_flirt_J7": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "you_shunned",
+            "any",
+            "reject"
+        ],
+        [
+            "I don't know what's going on anymore."
+        ]
+    ],
+    "bothgrieving_flirt_J8": [
+        [
+            "grievingyou",
+            "grievingthem",
+            "they_grieving",
+            "you_grieving",
+            "both_shunned",
+            "any",
+            "reject"
+        ],
+        [
+            "I don't know what's going on anymore."
+        ]
+    ],
+    "bothgrieving_flirt_J9": [
+        [
+            "they_grieving",
+            "you_grieving",
+            "you_shunned",
+            "any",
+            "reject"
+        ],
+        [
+            "Absolutely not, y_c. Neither of us are in any state for this. Especially you."
+        ]
+    ],
+    "bothgrieving_flirt_J10": [
+        [
+            "they_grieving",
+            "you_grieving",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "Come back later, y_c. Thank you, but I can't do this right now."
         ]
     ]
 }

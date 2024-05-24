@@ -2880,5 +2880,47 @@
             "I suppose it's not my problem anyways. Not something I'll ever have to deal with. See you.",
             "[... What just happened...?]"
         ]
+    ],
+    "assertiveapp_leader_retag1": [
+        [
+            "you_leader",
+            "they_app",
+            "assertive",
+            "upstanding"
+        ],
+        [
+            "I'll make you proud, y_c!",
+            "I'll make all of c_nClan proud!"
+        ]
+    ],
+    "assertive_queensapp2": [
+        [
+            "you_kitten",
+            "they_app",
+            "assertive",
+            "cool"
+        ],
+        [
+            "Hey, y_c! Wanna play a game? Let's do 'Leader of StoneClan!'",
+            "... What? Never heard of it?! Unbelievable! We used to play it all the time when I was young!",
+            "Kits these days, *tsk* so uneducated. Luckily, you have me to teach you!",
+            "Okay, so here's how it works ...",
+            "[t_c explains the game to you, eyes flashing with excitement. As you play together, it almost seems like they're enjoying it more than you are!]"
+        ]
+    ],
+    "assertive_apprentice4": [
+        [
+            "no_kit",
+            "they_app",
+            "you_app",
+            "platonic_like",
+            "assertive"
+        ],
+        [
+            "y_c! y_c! You gotta come check out this new part of the territory I found! It's, like, the coolest place ever!",
+            "Okay, first, we have to scale up these rocks, and they're sort of slippery, but it's okay, cuz I only fell, like, twice. Next, we have to cross a river, and I'm pretty sure there's snakes in there, so watch out! Then, we have to ...",
+            "Aw, c'mon, don't look all nervous. It'll be fun! What's life without a little danger, right?",
+            "Ready? Let's go!"
+        ]
     ]
 }

@@ -3136,5 +3136,42 @@
       "all_traits"
     ],
     "Time has taken its toll, and m_c has noticed {PRONOUN/m_c/self} slowing down. {PRONOUN/m_c/subject/CAP} {VERB/m_c/have/has} worked timelessly for many moons, but it is time for {PRONOUN/m_c/object} to retire. "
+  ],
+  "shunned_app1": [
+    [
+      "apprentice",
+      "yes_leader_mentor",
+      "general_parents",
+      "yes_leader",
+      "general_backstory",
+      "all_traits",
+      "shunned"
+    ],
+    "(mentor) has decided to mentor {PRONOUN/m_c/object} personally to keep an eye on them."
+  ],
+  "shunned_app2": [
+    [
+      "apprentice",
+      "yes_mentor",
+      "yes_leader_mentor",
+      "general_parents",
+      "general_leader",
+      "general_backstory",
+      "all_traits",
+      "shunned"
+    ],
+    "m_c has been assigned (mentor) as {PRONOUN/m_c/poss} mentor. Training will begin when-- and if-- {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been forgiven."
+  ],
+  "shunned_app3": [
+    [
+      "apprentice",
+      "no_mentor",
+      "general_parents",
+      "general_leader",
+      "general_backstory",
+      "all_traits",
+      "shunned"
+    ],
+    "m_c wishes {PRONOUN/m_c/subject} could be a real apprentice. For now, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} stuck waiting until {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} forgiven."
   ]
 }

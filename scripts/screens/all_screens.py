@@ -36,6 +36,7 @@ from .ClearingScreen import ClearingScreen
 from .QueenScreen import QueenScreen
 from .MoonplaceScreen import MoonplaceScreen
 from .WarriorDenScreen import WarriorDenScreen
+from .GiftScreen import GiftScreen
 
 # ---------------------------------------------------------------------------- #
 #                                  UI RULES                                    #
@@ -101,6 +102,7 @@ choose_reborn_screen = ChooseRebornScreen("choose reborn screen")
 affair_screen = AffairScreen("affair screen")
 queen_screen = QueenScreen("queen screen")
 moonplace_screen = MoonplaceScreen("moonplace screen")
+gift_screen = GiftScreen("gift screen")
 
 patrol_screen = PatrolScreen('patrol screen2')
 patrol_screen2 = LifeGenPatrolScreen('patrol screen')
