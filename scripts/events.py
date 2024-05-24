@@ -1233,7 +1233,7 @@ class Events:
             if Cat.all_cats[game.clan.your_cat.former_mentor[-1]].dead and game.clan.your_cat.status == 'medicine cat':
                 ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony_no_mentor'])
 
-            if game.clan.your_cat.forgiven < 10:
+            if game.clan.your_cat.forgiven < 10 and game.clan.your_cat.forgiven > 0:
                 try:
                     ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony forgiven'])
                 except:
