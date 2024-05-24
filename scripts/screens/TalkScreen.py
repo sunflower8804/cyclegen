@@ -661,6 +661,12 @@ class TalkScreen(Screens):
             if "they_grieving" in tags and "grief stricken" not in cat.illnesses and not cat.dead:
                 continue
 
+            if "they_recovering_from_birth" in tags and "recovering from birth" not in cat.injuries:
+                continue
+
+            if "you_recovering_from_birth" in tags and "recovering from birth" not in you.injuries:
+                continue
+
             if "you_not_kit" in tags and game.clan.your_cat.moons < 6:
                 continue
 
@@ -899,7 +905,7 @@ class TalkScreen(Screens):
                 if you.shunned == 0:
                     continue
             
-            if "both_shunned" in tags:
+            if "both_shunned" in tags or ("they_shunned" in tags and "you_shunned" in tags):
                 if cat.shunned == 0 or you.shunned == 0:
                     continue
 
@@ -1032,7 +1038,7 @@ class TalkScreen(Screens):
                     continue
                 if cat.relationships[you.ID].romantic_love < 15 and 'romantic_like' in tags:
                     continue
-                if cat.relationships[you.ID].platonic_like < 15 and 'platonic_like' in tags:
+                if cat.relationships[you.ID].platonic_like < 25 and 'platonic_like' in tags:
                     continue
                 if cat.relationships[you.ID].platonic_like < 40 and 'platonic_love' in tags:
                     continue
@@ -1040,13 +1046,13 @@ class TalkScreen(Screens):
                     continue
                 if cat.relationships[you.ID].dislike < 20 and 'dislike' in tags:
                     continue
-                if cat.relationships[you.ID].comfortable < 5 and 'comfort' in tags:
+                if cat.relationships[you.ID].comfortable < 40 and 'comfort' in tags:
                     continue
-                if cat.relationships[you.ID].admiration < 5 and 'respect' in tags:
+                if cat.relationships[you.ID].admiration < 40 and 'respect' in tags:
                     continue
-                if cat.relationships[you.ID].trust < 5 and 'trust' in tags:
+                if cat.relationships[you.ID].trust < 40 and 'trust' in tags:
                     continue
-                if (cat.relationships[you.ID].platonic_like > 10 or cat.relationships[you.ID].dislike > 10) and "neutral" in tags:
+                if (cat.relationships[you.ID].platonic_like > 20 or cat.relationships[you.ID].dislike > 20) and "neutral" in tags:
                     continue
             else:
                 if any(i in ["hate","romantic_like","platonic_like","jealousy","dislike","comfort","respect","trust"] for i in tags):
@@ -1587,7 +1593,10 @@ class TalkScreen(Screens):
             if "y_p" in self.cat_dict:
                 text = text.replace("y_p", self.cat_dict["y_p"])
             else:
-                parent = Cat.fetch_cat(choice(you.inheritance.get_parents()))
+                try:
+                    parent = Cat.fetch_cat(choice(you.inheritance.get_parents()))
+                except:
+                    return ""
                 if len(you.inheritance.get_parents()) == 0 or parent.outside or parent.dead or parent.ID == cat.ID:
                     return ""
                 self.cat_dict["y_p"] = str(parent.name)
@@ -1702,6 +1711,20 @@ class TalkScreen(Screens):
                     return ""
                 self.cat_dict["y_k"] = str(kit.name)
                 text = text.replace("y_k", str(kit.name))
+
+        # Your kit-- kitten age
+        if "y_kk" in text:
+            if "y_kk" in self.cat_dict:
+                text = text.replace("y_kk", self.cat_dict["y_kk"])
+            else:
+                if you.inheritance.get_children() is None or len(you.inheritance.get_children()) == 0:
+                    return ""
+                kit = Cat.fetch_cat(choice(you.inheritance.get_children()))
+                if kit.moons >= 6 or kit.outside or kit.dead or kit.ID == cat.ID:
+                    return ""
+                self.cat_dict["y_kk"] = str(kit.name)
+                text = text.replace("y_kk", str(kit.name))
+       
 
         # Random cat
         if "r_c" in text:

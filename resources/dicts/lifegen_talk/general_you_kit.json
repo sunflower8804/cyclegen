@@ -2909,7 +2909,7 @@
             "newborn"
         ],
         [
-            "No one deserves what I'm being put through."
+            "[t_c tucks their nose under their paws, ignoring you as you toddle up to them.]"
         ]
     ],
     "they_shunned_grieving2": [
@@ -2921,7 +2921,7 @@
             "newborn"
         ],
         [
-            "No one deserves what I'm being put through."
+            "You have it easy, little one."
         ]
     ],
     "they_shunned_grieving3": [
@@ -2933,7 +2933,21 @@
             "newborn"
         ],
         [
-            "No one deserves what I'm being put through."
+            "Oh, you poor thing.",
+            "Neither of us deserves what we're going through right now.",
+            "I hope you find StarClan one day, little kit."
+        ]
+    ],
+    "they_shunned_grieving4": [
+        [
+            "any",
+            "both_shunned",
+            "they_grieving",
+            "you_grieving",
+            "insult"
+        ],
+        [
+            "That's mean, y_c. You're allowed to be upset, but please dont take it out on me."
         ]
     ],
     "sc_newborn": [
@@ -4138,6 +4152,71 @@
             "y_c??",
             "Oh, right... you're... a ghost?",
             "[t_c sniffles.]"
+        ]
+    ],
+    "kittentoshunned_J1": [
+        [
+            "you_dead",
+            "they_grieving",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[t_c doesn't notice you at all.]"
+        ]
+    ],
+    "kittentoshunned_J2": [
+        [
+            "you_dead",
+            "they_grieving",
+            "grievingyou",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[The sight of you makes t_c tear up. Maybe you'll visit later.]"
+        ]
+    ],
+    "kittentoshunned_J3": [
+        [
+            "you_dead",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "Do you get bored being dead?",
+            "Wait, you're so young... Do you know that you're..?",
+            "Ah, never mind. You're looking very nice today, y_c.",
+            "[What are they talking about?]"
+        ]
+    ],
+    "kittentoshunned_J4": [
+        [
+            "you_dead",
+            "they_shunned",
+            "newborn",
+            "any"
+        ],
+        [
+            "Do you get bored being dead?",
+            "Wait, you're so young... Do you know that you're..?",
+            "Ah, never mind. You're looking very nice today, y_c.",
+            "[What are they talking about?]"
+        ]
+    ],
+    "kittentoshunned_J5": [
+        [
+            "you_dead",
+            "they_shunned",
+            "they_grieving",
+            "newborn",
+            "any"
+        ],
+        [
+            "Do you get bored being dead?",
+            "Wait, you're so young... Do you know that you're..?",
+            "Ah, never mind. You're looking very nice today, y_c.",
+            "[What are they talking about?]"
         ]
     ]
 }

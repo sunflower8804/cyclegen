@@ -69,7 +69,7 @@
         [
             "Any",
             "assertive",
-            "unlawful",
+            "silly",
             "leafbare",
             "they_blind",
             "you_blind"
@@ -148,7 +148,6 @@
         [
             "Any",
             "assertive",
-            "cool",
             "they_Clanfounder",
             "they_Clanborn",
             "they_outsiderroots",
@@ -157,7 +156,8 @@
             "they_abandoned",
             "newleaf",
             "greenleaf",
-            "leaffall"
+            "leaffall",
+            "platonic_like"
         ],
         [
             "Hey there, y_c! Not bad weather today, hm?",
@@ -193,11 +193,12 @@
             "half sibling",
             "adopted_sibling",
             "hate",
-            "assertive"
+            "assertive",
+            "cool"
         ],
         [
             "What did I do in a past life to wind up related to you, y_c?",
-            "Must've been really terrible."
+            "Must've been something really terrible."
         ]
     ],
     "assertive_dislike1": [
@@ -319,12 +320,12 @@
             "assertive",
             "upstanding",
             "stable",
-            "dislike",
+            "neutral",
             "no_kit"
         ],
         [
-            "*Sigh* Can't you see I have more important things to do, y_c?",
-            "Go back to catching mice, or whatever."
+            "*Sigh* Can't you see I have important things to do, y_c?",
+            "Go back to catching mice, or whatever it is you warriors do."
         ]
     ],
     "assertive_misc": [
@@ -337,7 +338,8 @@
             "you_neurotic",
             "you_introspective",
             "you_sweet",
-            "they_warrior"
+            "they_warrior",
+            "neutral"
         ],
         [
             "Yaknow, y_c, I never really found you all that convincing as a warrior.",
@@ -364,7 +366,8 @@
         [
             "mediator",
             "mediator apprentice",
-            "assertive"
+            "assertive",
+            "neutral"
         ],
         [
             "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
@@ -376,7 +379,6 @@
         [
             "no_kit",
             "assertive",
-            "cool",
             "jealousy"
         ],
         [
@@ -421,6 +423,7 @@
             "you_blind",
             "no_kit",
             "assertive"
+            "platonic_like"
         ],
         [
             "Man, you're insightful for an apprentice, y_c!",
@@ -501,9 +504,6 @@
         [
             "assertive",
             "silly",
-            "respect",
-            "trust",
-            "comfort",
             "platonic_love",
             "warrior",
             "apprentice",
@@ -580,7 +580,9 @@
             "they_older",
             "assertive",
             "cool",
-            "silly"
+            "silly",
+            "they_older",
+            "platonic_like"
         ],
         [
             "Working hard, y_c? Or, is it more like hardly working? Hehe.",
@@ -745,7 +747,7 @@
         [
             "[t_c hates leafbare, and they're prepared to make it everyone in c_nClan's problem.]",
             "[They zip around camp, skidding on patches of snow, exploding with pent-up energy.]",
-            "Watch out, o_cClan! Ahahahaha - woah!",
+            "Watch out, everybody! Ahahahaha - woah!",
             "[They slip on a patch of ice, slamming into the ground. Hopefully r_m won't have to patch that up later ...]"
         ]
     ],
@@ -855,7 +857,8 @@
             "introspective",
             "platonic_like",
             "comfort",
-            "trust"
+            "trust",
+            "non-mates"
         ],
         [
             "Oh, hey, y_c. What's wrong?",
@@ -904,7 +907,9 @@
             "introspective",
             "dislike",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "from_your_kit",
+            "from_adopted_kit"
         ],
         [
             "Please, y_c, leave me alone.",
@@ -916,7 +921,6 @@
             "Any",
             "assertive",
             "silly",
-            "unlawful",
             "platonic_like",
             "they_blind",
             "you_blind"
@@ -1027,7 +1031,7 @@
         [
             "no_kit",
             "assertive",
-            "platonic_like",
+            "platonic_love",
             "from_parent",
             "sweet",
             "introspective"
@@ -1070,7 +1074,7 @@
         [
             "no_kit",
             "assertive",
-            "platonic_like",
+            "platonic_love",
             "from_parent",
             "unabashed",
             "they_blind",
@@ -1108,7 +1112,6 @@
             "cool",
             "upstanding",
             "stable",
-            "sweet",
             "they_blind",
             "you_blind"
         ],
@@ -1140,7 +1143,6 @@
             "dislike",
             "from_parent",
             "cool",
-            "neurotic",
             "stable",
             "upstanding",
             "they_blind",
@@ -1244,8 +1246,7 @@
     "assertive_ill1": [
         [
             "Any",
-            "platonic_like",
-            "romantic_like",
+            "platonic_love",
             "assertive",
             "you_ill",
             "they_blind",
@@ -1260,10 +1261,7 @@
     "assertive_ill2": [
         [
             "Any",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
-            "from_parent",
+            "platonic_love",
             "assertive",
             "silly",
             "cool",
@@ -1282,10 +1280,7 @@
     "assertive_ill3": [
         [
             "Any",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
-            "from_parent",
+            "platonic_love",
             "assertive",
             "silly",
             "cool",
@@ -1303,10 +1298,7 @@
     "assertive_ill4": [
         [
             "Any",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
-            "from_parent",
+            "platonic_love",
             "assertive",
             "silly",
             "neurotic",
@@ -1325,10 +1317,7 @@
     "assertive_ill5": [
         [
             "Any",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
-            "from_parent",
+            "platonic_love",
             "assertive",
             "you_injured",
             "they_blind",
@@ -1342,10 +1331,7 @@
     "assertive_ill6": [
         [
             "Any",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
-            "from_parent",
+            "platonic_love",
             "you_injured",
             "you_ill",
             "they_blind",
@@ -1366,7 +1352,8 @@
             "cool",
             "you_ill",
             "you_injured",
-            "you_blind"
+            "you_blind",
+            "neutral"
         ],
         [
             "Yeesh ... you don't look too hot, y_c.",
@@ -1376,10 +1363,7 @@
     "assertive_theyyou_ill": [
         [
             "Any",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
-            "from_parent",
+            "platonic_love",
             "assertive",
             "silly",
             "they_injured",
@@ -1408,10 +1392,7 @@
     "assertive_theyill2": [
         [
             "Any",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
-            "from_parent",
+            "platonic_love",
             "assertive",
             "cool",
             "you_injured",
@@ -1427,10 +1408,7 @@
     "assertive_theyill4": [
         [
             "Any",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
-            "from_parent",
+            "platonic_love",
             "assertive",
             "silly",
             "you_injured",
@@ -1450,7 +1428,6 @@
         [
             "Any",
             "platonic_love",
-            "romantic_like",
             "assertive",
             "silly",
             "cool",
@@ -1496,8 +1473,7 @@
             "Any",
             "assertive",
             "you_grieving",
-            "platonic_like",
-            "romantic_like",
+            "platonic_love",
             "they_blind",
             "you_blind"
         ],
@@ -1512,8 +1488,6 @@
             "Any",
             "platonic_love",
             "assertive",
-            "sweet",
-            "stable",
             "they_grieving",
             "dead_close",
             "they_blind",
@@ -1531,7 +1505,7 @@
     "assertive_deadclose5": [
         [
             "Any",
-            "platonic_like",
+            "platonic_love",
             "assertive",
             "cool",
             "silly",
@@ -1554,6 +1528,7 @@
             "platonic_love",
             "assertive",
             "silly",
+            "cool",
             "they_grieving",
             "dead_close",
             "they_blind",
@@ -1591,7 +1566,8 @@
             "they_grieving",
             "dead_close",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "neutral"
         ],
         [
             "Hmph. Everyone always tells me they're sorry, just so sorry for my loss. Next time someone says that to me, I'll claw their throat out.",
@@ -1610,7 +1586,8 @@
             "dead_close",
             "cool",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "platonic_love"
         ],
         [
             "I'm strong. I can handle this, I - I should be able to handle this.",
@@ -1742,7 +1719,7 @@
         [
             "Any",
             "assertive",
-            "cool",
+            "brooding",
             "insult",
             "they_blind",
             "you_blind"
@@ -1756,7 +1733,8 @@
             "Any",
             "introspective",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "neutral"
         ],
         [
             "Hello, y_c. What do you think of the weather?",
@@ -1768,7 +1746,8 @@
     "introspective_2": [
         [
             "Any",
-            "introspective"
+            "introspective",
+            "neutral"
         ],
         [
             "Oh, hi, y_c. You wanted to speak to me?",
@@ -1790,7 +1769,8 @@
     "introspective_8": [
         [
             "any",
-            "introspective"
+            "introspective",
+            "neutral"
         ],
         [
             "Hm? Oh, hello, y_c.",
@@ -1802,7 +1782,8 @@
     "introspective_AJ": [
         [
             "any",
-            "introspective"
+            "introspective",
+            "platonic_like"
         ],
         [
             "Psst. y_c, come here. Careful! No sudden moves!",
@@ -1815,7 +1796,8 @@
     "Introspective_to_app": [
         [
             "Apprentice",
-            "Introspective"
+            "Introspective",
+            "platonic_like"
         ],
         [
             "y_c. Morning.",
@@ -1846,7 +1828,8 @@
             "Medicine Cat",
             "Medicine Cat Apprentice",
             "Introspective",
-            "you_blind"
+            "you_blind",
+            "platonic_like"
         ],
         [
             "Oh, y_c.",
@@ -1859,7 +1842,8 @@
     "introspective_leafbare_6": [
         [
             "any",
-            "introspective"
+            "introspective",
+            "leafbare"
         ],
         [
             "Would you look at that? It's snowing.",
@@ -1867,7 +1851,7 @@
             "Oh, that's a wonderful question! I have a few theories - personally, I think that, when it gets cold, the water inside the clouds freezes.",
             "Then, because frozen water is heavier than non-frozen water, the clouds can't carry the weight, and it snows.",
             "But then, why is snow soft and fluffy, like fur, and not hard and sharp, like ice? And why does it sometimes rain in leafbare?",
-            "Ah ... I'm sorry. I'm rambling.",
+            "Ah ... I'm sorry. I'm rambling, aren't I?",
             "The weather is just so fascinating!"
         ]
     ],
@@ -1876,13 +1860,14 @@
             "any",
             "introspective",
             "newleaf",
-            "you_blind"
+            "you_blind",
+            "platonic_like"
         ],
         [
             "y_c, good morning. It's nice to see you.",
             "It seems Leafbare has finally left us, I can feel the chill in the air starting to dissipate. It's nice.",
             "I'm looking forward to seeing the birds again, and the nice flowers that appear that smell wonderful.",
-            "Just... seeing live plants will be utterly wonderful, a great change of pace.",
+            "Just... seeing live plants again will be utterly wonderful, a great change of pace.",
             "I love the snow of Leafbare, but Newleaf's flowers make the territory a lovely place to be."
         ]
     ],
@@ -1896,7 +1881,8 @@
             "introspective",
             "newleaf",
             "you_blind",
-            "you_deaf"
+            "you_deaf",
+            "platonic_like"
         ],
         [
             "y_c, hello. The weather's lovely today.",
@@ -1910,13 +1896,14 @@
             "any",
             "introspective",
             "newleaf",
-            "you_blind"
+            "you_blind",
+            "neutral"
         ],
         [
             "Oh, y_c. Are you busy?",
-            "Yeah, since it's now newleaf, I thought I'd go see how much prey we'll have for the coming several moons.",
+            "Yeah, since it's now newleaf, I thought I'd go see how much prey we'll have for the coming moons.",
             "... Huh? Hunting as well, but primarily to watch. You don't want to catch prey when they're too young when you can grab them when they're older and feed more cats with the catch.",
-            "Patience is a virtue, y_c!"
+            "Patience is a virtue, you know!"
         ]
     ],
     "introspective_newleaf_3": [
@@ -1940,7 +1927,8 @@
             "introspective",
             "newleaf",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "neutral"
         ],
         [
             "Hey, y_c. I wouldn't advise getting in the water, it's still really cold.",
@@ -1954,7 +1942,8 @@
         [
             "any",
             "introspective",
-            "newleaf"
+            "newleaf",
+            "platonic_like"
         ],
         [
             "You know, I really like newleaf, y_c.",
@@ -1983,7 +1972,9 @@
         [
             "any",
             "introspective",
-            "leaffall"
+            "leaffall",
+            "platonic_like",
+            "random_cat"
         ],
         [
             "Good morning, y_c. It's lovely to see you.",
@@ -1998,7 +1989,8 @@
         [
             "any",
             "introspective",
-            "leaffall"
+            "leaffall",
+            "neutral"
         ],
         [
             "... y_c. Hello.",
@@ -2038,7 +2030,8 @@
             "Any",
             "introspective",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "neutral"
         ],
         [
             "y_c, hello. I didn't think anyone would come over here...",
@@ -2066,7 +2059,8 @@
             "Any",
             "introspective",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "platonic_like"
         ],
         [
             "Good morning, y_c. How are you today?",
@@ -2110,7 +2104,8 @@
             "Introspective",
             "platonic_like",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "platonic_like"
         ],
         [
             "Hello there, y_c!",
@@ -2122,10 +2117,8 @@
     "introspective_like_1": [
         [
             "Any",
-            "Introspective",
-            "platonic_like",
-            "romantic_like",
-            "from_mate"
+            "introspective",
+            "trust"
         ],
         [
             "Oh! Hello, y_c.",
@@ -2333,9 +2326,7 @@
         [
             "Any",
             "Introspective",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
+            "platonic_love",
             "they_blind",
             "you_blind"
         ],
