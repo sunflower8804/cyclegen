@@ -1147,7 +1147,7 @@ class ProfileScreen(Screens):
             cat_alive_skills_condition = cat_alive_condition_sc or cat_alive_condition_df or cat_alive_condition_ur
             
             if cat_dead_conditions or cat_alive_skills_condition:
-                if self.the_cat.status not in ['mediator', 'mediator apprentice', "queen", "queen's apprentice"]:
+                if self.the_cat.status not in ['leader', 'mediator', 'mediator apprentice', "queen", "queen's apprentice"]:
                     button_position = (726, 220)
                 else:
                     button_position = (662, 220)
