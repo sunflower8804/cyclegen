@@ -36,7 +36,7 @@ from .ClearingScreen import ClearingScreen
 from .QueenScreen import QueenScreen
 from .MoonplaceScreen import MoonplaceScreen
 from .WarriorDenScreen import WarriorDenScreen
-from .GiftScreen import import GiftScreen
+from .GiftScreen import GiftScreen
 
 # ---------------------------------------------------------------------------- #
 #                                  UI RULES                                    #

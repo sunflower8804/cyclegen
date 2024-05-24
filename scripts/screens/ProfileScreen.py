@@ -2148,7 +2148,7 @@ class ProfileScreen(Screens):
 
                 if found_murder and text is not None and not event["revealed"]:
                     text = event_text_adjust(Cat, event["unrevealed_text"], self.the_cat,
-                                             Cat.fetch_cat(death["involved"]))
+                                            Cat.fetch_cat(death["involved"]))
                 elif not found_murder:
                     # text = "This cat was murdered."
 
