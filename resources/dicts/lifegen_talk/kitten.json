@@ -226,7 +226,8 @@
     ],
     "assertive_tonewborn": [
         [
-            "newborn",
+            "you_newborn",
+            "they_kitten",
             "assertive",
             "sweet"
         ],
@@ -246,38 +247,6 @@
             "What do you mean I can't play with them yet?"
         ]
     ],
-    "assertive_apprentice7": [
-        [
-            "kitten",
-            "platonic_like",
-            "assertive",
-            "silly"
-        ],
-        [
-            "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
-            "What? It's totally real, they wouldn't lie to me like that! I prommissseee."
-        ]
-    ],
-    "assertive_6": [
-        [
-            "Any",
-            "dislike",
-            "you_brooding",
-            "you_sweet",
-            "you_upstanding",
-            "you_introspective",
-            "you_neurotic",
-            "you_stable",
-            "assertive",
-            "cool",
-            "unlawful",
-            "silly"
-        ],
-        [
-            "*Sigh*. Hey, y_c. Come to ruin the fun again?",
-            "Whatever. I'm going to go do something actually exciting. Don't wait up."
-        ]
-    ],
     "assertiveappkit_elder": [
         [
             "elder",
@@ -291,8 +260,12 @@
     ],
     "assertive_mediatorapp": [
         [
-            "mediator apprentice",
-            "mediator",
+            "you_mediator_apprentice",
+            "you_mediator",
+            "they_queen's_apprentice",
+            "they_apprentice",
+            "they_medicine_cat_apprentice",
+            "they_kitten",
             "assertive",
             "upstanding"
         ],
