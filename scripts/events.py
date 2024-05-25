@@ -502,37 +502,12 @@ class Events:
                 break
             acc = random.choice(acc_list)
         game.clan.your_cat.pelt.inventory.append(acc)
-        string = f"You found a new accessory, {self.accessory_display_name(acc)}! You choose to store it in a safe place for now."
+        ACC_DISPLAY = None
+        with open(f"resources/dicts/acc_display.json", 'r') as read_file:
+            ACC_DISPLAY = ujson.loads(read_file.read())
+        string = f"You found a new accessory, acc_singular! You choose to store it in a safe place for now."
+        string = string.replace("acc_singular", str(ACC_DISPLAY[acc]["singular"]))
         game.cur_events_list.insert(0, Single_Event(string, "alert"))
-
-    def accessory_display_name(self, accessory):
-        if accessory is None:
-            return ''
-        acc_display = accessory.lower()
-
-        if accessory in Pelt.collars:
-            collar_colors = {'crimson': 'red', 'blue': 'blue', 'yellow': 'yellow', 'cyan': 'cyan',
-                            'red': 'orange', 'lime': 'lime', 'green': 'green', 'rainbow': 'rainbow',
-                            'black': 'black', 'spikes': 'spiky', 'white': 'white', 'pink': 'pink',
-                            'purple': 'purple', 'multi': 'multi', 'indigo': 'indigo'}
-            collar_color = next((color for color in collar_colors if acc_display.startswith(color)), None)
-
-            if collar_color:
-                if acc_display.endswith('bow') and not collar_color == 'rainbow':
-                    acc_display = collar_colors[collar_color] + ' bow'
-                elif acc_display.endswith('bell'):
-                    acc_display = collar_colors[collar_color] + ' bell collar'
-                else:
-                    acc_display = collar_colors[collar_color] + ' collar'
-
-        elif accessory in Pelt.wild_accessories:
-            if acc_display == 'blue feathers':
-                acc_display = 'crow feathers'
-            elif acc_display == 'red feathers':
-                acc_display = 'cardinal feathers'
-
-        return acc_display
-
     
     def check_achievements(self):
         you = game.clan.your_cat
@@ -2627,10 +2602,26 @@ class Events:
                 if cat.status == 'kitten':
 
                     # change personality facets
-                    cat.personality.aggression = min(max(cat.personality.aggression + (-1*cat.courage)%2, 0), 15)
-                    cat.personality.sociability = min(max(cat.personality.sociability + (-1*cat.compassion)%2, 0), 15)
-                    cat.personality.lawfulness = min(max(cat.personality.lawfulness + (-1*cat.intelligence)%2, 0), 15)
-                    cat.personality.stability = min(max(cat.personality.stability + (-1*cat.empathy)%2, 0), 15)
+                    if cat.courage != 0:
+                        cat.personality.aggression = min(max(cat.personality.aggression + (1*cat.courage)%2, 0), 15)
+                        cat.personality.sociability = min(max(cat.personality.sociability + (1*cat.courage)%2, 0), 15)
+                        cat.personality.stability = min(max(cat.personality.stability + (-1*cat.courage)%2, 0), 15)
+                        cat.personality.lawfulness = min(max(cat.personality.lawfulness + (-1*cat.courage)%2, 0), 15)
+                    if cat.compassion != 0:
+                        cat.personality.aggression = min(max(cat.personality.aggression + (-1*cat.compassion)%2, 0), 15)
+                        cat.personality.sociability = min(max(cat.personality.sociability + (-1*cat.compassion)%2, 0), 15)
+                        cat.personality.stability = min(max(cat.personality.stability + (1*cat.compassion)%2, 0), 15)
+                        cat.personality.lawfulness = min(max(cat.personality.lawfulness + (1*cat.compassion)%2, 0), 15)
+                    if cat.intelligence != 0:
+                        cat.personality.aggression = min(max(cat.personality.aggression + (1*cat.intelligence)%2, 0), 15)
+                        cat.personality.sociability = min(max(cat.personality.sociability + (-1*cat.intelligence)%2, 0), 15)
+                        cat.personality.stability = min(max(cat.personality.stability + (1*cat.intelligence)%2, 0), 15)
+                        cat.personality.lawfulness = min(max(cat.personality.lawfulness + (-1*cat.intelligence)%2, 0), 15)
+                    if cat.empathy != 0:
+                        cat.personality.aggression = min(max(cat.personality.aggression + (-1*cat.empathy)%2, 0), 15)
+                        cat.personality.sociability = min(max(cat.personality.sociability + (1*cat.empathy)%2, 0), 15)
+                        cat.personality.stability = min(max(cat.personality.stability + (-1*cat.empathy)%2, 0), 15)
+                        cat.personality.lawfulness = min(max(cat.personality.lawfulness + (1*cat.empathy)%2, 0), 15)
 
                     med_cat_list = [i for i in Cat.all_cats_list if
                                     i.status in ["medicine cat", "medicine cat apprentice"] and not (
