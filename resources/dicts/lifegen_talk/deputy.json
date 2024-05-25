@@ -327,9 +327,7 @@
     ],
     "assertive_mentor": [
         [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "you_apprentice",
             "assertive",
             "unlawful",
             "from_mentor"
@@ -338,44 +336,6 @@
             "Hey, y_c! Ready to start the day? I was thinking we could ditch the training grounds today and, instead, practice more real-world applied stuff.",
             "Ah, don't look so worried. We don't have to do everything totally by the rules all the time! Sometimes, it's better to go off the beaten path.",
             "I'll meet you by the camp entrance, m'kay?"
-        ]
-    ],
-    "assertive_mentor1": [
-        [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "assertive",
-            "upstanding",
-            "unabashed",
-            "from_mentor",
-            "dislike"
-        ],
-        [
-            "What's going on, y_c? ... Hey, don't give me that nasty look! I can see you, you know!",
-            "For an apprentice, you sure have a lot of attitude. I get you've got spirit, but if this is gonna work out, the two of us have to work together.",
-            "So drop it. And I'd better not catch you looking at me like that again!"
-        ]
-    ],
-    "assertive_mentor2": [
-        [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
-            "assertive",
-            "sweet",
-            "stable",
-            "unabashed",
-            "unlawful",
-            "from_mentor",
-            "platonic_like",
-            "respect"
-        ],
-        [
-            "Alright, y_c! You're totally mastering that skill I taught you the other day ... you're improving so fast, pretty soon, you're gonna be outperforming me! Haha!",
-            "I have nothing to say, except for, I guess ... I'm proud of you.",
-            "You're turning into a fine member of c_nClan already."
         ]
     ],
     "assertive_jealous1": [
@@ -392,49 +352,6 @@
         [
             "What did I do in a past life to wind up related to you, y_c?",
             "Must've been really terrible."
-        ]
-    ],
-    "assertive_parent4": [
-        [
-            "assertive",
-            "dislike",
-            "neutral",
-            "cool",
-            "upstanding",
-            "brooding",
-            "stable",
-            "kitten",
-            "from_adopted_kit",
-            "from_kit",
-            "from_kit",
-            "sibling",
-            "adopted_sibling",
-            "half sibling",
-            "from_parent"
-        ],
-        [
-            "What do you want? Do you need something?",
-            "... You just want to talk? Why?",
-            "... Because we're family?",
-            "Do we still even count as family anymore?"
-        ]
-    ],
-    "assertive_parent4_2": [
-        [
-            "assertive",
-            "dislike",
-            "neutral",
-            "cool",
-            "upstanding",
-            "brooding",
-            "neurotic",
-            "from_kit",
-            "from_adopted_kit",
-            "any"
-        ],
-        [
-            "Ugh, StarClan, would you leave me alone?",
-            "Seriously, I don't know any other parent who bothers their grown kit this much!"
         ]
     ],
     "assertive_parent4_3": [
@@ -722,8 +639,10 @@
     ],
     "assertive_mediator3": [
         [
-            "mediator",
-            "mediator apprentice",
+            "you_mediator",
+            "you_mediator_apprentice",
+            "they_any",
+            "no_kit",
             "assertive",
             "dislike",
             "unabashed"
@@ -735,20 +654,11 @@
             "Maybe think about that the next time you try to make a compromise with the enemy."
         ]
     ],
-    "assertivewarrior_mediatorapp": [
-        [
-            "mediator apprentice",
-            "assertive"
-        ],
-        [
-            "Man, you're insightful for an apprentice, y_c!",
-            "When I was your age, all I thought about was smashing stuff and chasing after my crushes. But now, here you are! Sorting out problems with cats who've been around ten times longer than you!",
-            "That must take a lot of discipline. The whole Clan is proud of you!"
-        ]
-    ],
     "assertivewarrior_mediatorapp_2": [
         [
-            "mediator apprentice",
+            "you_mediator_apprentice",
+            "they_older",
+            "no_kit",
             "assertive",
             "cool",
             "upstanding",
@@ -857,7 +767,9 @@
     ],
     "assertive_medapp": [
         [
-            "medicine cat apprentice",
+            "you_medicine_cat_apprentice",
+            "they_any",
+            "they_older",
             "assertive",
             "unlawful",
             "unabashed"
@@ -866,21 +778,6 @@
             "How's it going, mini-medicine cat? Herbal life treating you well?",
             "Don't worry, I'm not going to run headfirst into trouble and injure myself today.",
             "As for tomorrow? Who knows!"
-        ]
-    ],
-    "assertive_warrior_or_elder_2": [
-        [
-            "apprentice",
-            "platonic_like",
-            "assertive",
-            "unabashed",
-            "silly"
-        ],
-        [
-            "Not always easy in the apprentice's den, huh? I remember those days. Sometimes cats can be so cliquey, especially the young ones ...",
-            "But, no matter what, you can never let fear hold you back from being who you are! Work hard, be friendly, and forget anyone who tries to get you down!",
-            "That's real bravery. Not just rushing into battle, but also standing up for what you believe in. And bravery is what makes a warrior who they are.",
-            "Heh, look at me, getting all wise ... Just my opinion, is all."
         ]
     ],
     "assertive_warrior": [
@@ -908,19 +805,6 @@
             "[t_c regales you with a daring story full of thrills, twists, and turns.]",
             "... And then I got the feather! Quite the adventure, no?",
             "Just wait until you're old enough. You'll be having plenty of adventures of your own before you know it!"
-        ]
-    ],
-    "assertive_warrior_or_elder": [
-        [
-            "apprentice",
-            "assertive",
-            "cool",
-            "silly"
-        ],
-        [
-            "Working hard, y_c? Or, is it more like hardly working? Hehe.",
-            "Y'know, it's good to contribute to the Clan, but make sure you take some time to grow up, too. Working isn't everything. Now's the time for you to get out and explore!",
-            "*Sigh* I sorta miss those days myself ..."
         ]
     ],
     "assertive_elder_10": [
@@ -1336,64 +1220,6 @@
             "[You brush your tail over t_c's scar, and they seem a little too thrilled by the gesture for it to just be friendly.]"
         ]
     ],
-    "assertive_rom1": [
-        [
-            "Any",
-            "assertive",
-            "cool",
-            "romantic_like",
-            "from_mate"
-        ],
-        [
-            "StarClan, y_c, it's ... it's like you don't even know how beautiful you are.",
-            "... Augh. Look what you've done! Now I'm getting all sappy!",
-            "Just don't let it get to your head, furbag. I'm hot stuff, too.",
-            "[t_c winks at you, and you laugh together.]"
-        ]
-    ],
-    "assertive_rom2": [
-        [
-            "no_kit",
-            "assertive",
-            "silly",
-            "romantic_like"
-        ],
-        [
-            "Hey, y_c! I just finished visiting the kits in the nursery. StarClan, they're cute!",
-            "I wouldn't mind being a parent ... having a few mini-me's running around, terrorizing the Clan.",
-            "How about you? Do you ever see yourself having kits someday? Not in, like, a weird way, of course! Just curious, hehe.",
-            "[t_c swishes their tail nervously.]"
-        ]
-    ],
-    "assertive_rom3": [
-        [
-            "Any",
-            "assertive",
-            "unabashed",
-            "romantic_like",
-            "from_mate"
-        ],
-        [
-            "Hey, y_c, what are your thoughts on feathers as a nesting material?",
-            "Why? Psh, don't play coy! We're basically sharing a nest at this point, with how often you sneak into mine. Haha!",
-            "Tell you what ... how about we ditch the formalities altogether and just make one, giant, super-nest!",
-            "Better start gathering moss! I know it's your favorite."
-        ]
-    ],
-    "assertive_rom4": [
-        [
-            "Any",
-            "assertive",
-            "unabashed",
-            "romantic_like"
-        ],
-        [
-            "What's that? One of the kits told you your ears are too big?",
-            "What a load of fox-dung! Those kits don't have functioning brains. Besides, I like your ears! I think it's cute, how big they are!",
-            "Er ... not cute in that way, mind you. Just, y'know ... ahem ...",
-            "[The blush on t_c's cheeks confirms that, yes, they did mean it in that way. And they're doing a terrible job of hiding it.]"
-        ]
-    ],
     "assertive_jealous1_2": [
         [
             "Any",
@@ -1410,7 +1236,8 @@
     ],
     "assertivewarriorapp_comfort": [
         [
-            "Any",
+            "you_any",
+            "they_deputy",
             "assertive",
             "platonic_love",
             "no_kit"
@@ -1424,20 +1251,6 @@
             "I just feel like such a failure. A liability. I can't help the way I am, but what if everyone's better off without me?",
             "[You offer t_c words of reassurance, but they seem troubled beyond comforting.]",
             "[Still, you sit with them through the night, hoping to stabilize them through whatever storm they might be weathering right now.]"
-        ]
-    ],
-    "assertive_elder_22": [
-        [
-            "Any",
-            "assertive",
-            "upstanding",
-            "stable",
-            "dislike",
-            "neutral"
-        ],
-        [
-            "*Sigh* Can't you see I have more important things to do, y_c?",
-            "Go back to catching mice, or whatever."
         ]
     ],
     "assertive_elder_23": [

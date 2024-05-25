@@ -62,8 +62,7 @@
             "you_kitten",
             "sweet",
             "introspective",
-            "they_queen",
-            "they_queen's_apprentice"
+            "they_queen"
         ],
         [
             "My dear kit, being a queen is a role woven from strands of love, sacrifice, and hope. When I look at you, so tiny and curious, my heart swells with dreams and wishes for your future.",
@@ -194,129 +193,12 @@
             "It's a tough thing to master, but I know you can do it!"
         ]
     ],
-    "assertive_mentor": [
-        [
-            "you_apprentice",
-            "you_medicine_cat_apprentice",
-            "assertive",
-            "unlawful",
-            "from_mentor"
-        ],
-        [
-            "Hey, y_c! Ready to start the day? I was thinking we could ditch the training grounds today and, instead, practice more real-world applied stuff.",
-            "Ah, don't look so worried. We don't have to do everything totally by the rules all the time! Sometimes, it's better to go off the beaten path.",
-            "I'll meet you by the camp entrance, m'kay?"
-        ]
-    ],
-    "assertive_mentor1": [
-        [
-            "you_apprentice",
-            "you_medicine_cat_apprentice",
-            "you_mediator_apprentice",
-            "assertive",
-            "upstanding",
-            "unabashed",
-            "from_mentor",
-            "dislike"
-        ],
-        [
-            "What's going on, y_c? ... Hey, don't give me that nasty look! I can see you, you know!",
-            "For an apprentice, you sure have a lot of attitude. I get you've got spirit, but if this is gonna work out, the two of us have to work together.",
-            "So drop it. And I'd better not catch you looking at me like that again!"
-        ]
-    ],
-    "assertive_mentor2": [
-        [
-            "you_app",
-            "assertive",
-            "sweet",
-            "stable",
-            "unabashed",
-            "unlawful",
-            "from_mentor",
-            "platonic_like",
-            "respect"
-        ],
-        [
-            "Alright, y_c! You're totally mastering that skill I taught you the other day ... you're improving so fast, pretty soon, you're gonna be outperforming me! Haha!",
-            "I have nothing to say, except for, I guess ... I'm proud of you.",
-            "You're turning into a fine member of c_nClan already."
-        ]
-    ],
-    "assertive_parent4": [
-        [
-            "assertive",
-            "hate",
-            "brooding",
-            "kitten",
-            "from_adopted_kit",
-            "from_kit",
-            "sibling",
-            "adopted_sibling",
-            "half sibling",
-            "from_parent"
-        ],
-        [
-            "What do you want? Do you need something?",
-            "... You just want to talk? Why?",
-            "... Because we're family?",
-            "Do we still even count as family anymore?"
-        ]
-    ],
-    "assertive_parent4_2": [
-        [
-            "assertive",
-            "dislike",
-            "neutral",
-            "cool",
-            "upstanding",
-            "brooding",
-            "neurotic",
-            "from_adopted_kit",
-            "from_kit",
-            "they_any",
-            "you_any"
-        ],
-        [
-            "Ugh, StarClan, would you leave me alone?",
-            "Seriously, I don't know any other parent who bothers their grown kit this much!"
-        ]
-    ],
-    "assertive_parent4_3": [
-        [
-            "assertive",
-            "platonic_like",
-            "sweet",
-            "upstanding",
-            "stable",
-            "they_any",
-            "you_any"
-        ],
-        [
-            "Sorry, y_c! No time to talk right now, I just got a task from d_n.",
-            "I'll be sure to catch up with you some other time, though!"
-        ]
-    ],
-    "assertivewarrior_mediatorapp1": [
-        [
-            "they_app",
-            "no_kit",
-            "you_any",
-            "from_adopted_kit",
-            "from_kit",
-            "platonic_like",
-            "assertive"
-        ],
-        [
-            "[Seeing the bold, daring, fierce cat that t_c has grown into fills your heart with pride.]",
-            "[Could they really have been your kit in the nursery a few moons ago?]"
-        ]
-    ],
     "assertive_parent4_4": [
         [
             "from_adopted_kit",
             "from_kit",
-            "kitten",
+            "you_any",
+            "they_app",
             "assertive"
         ],
         [
@@ -326,13 +208,17 @@
     ],
     "assertive_medapp2": [
         [
-            "medicine cat",
+            "you_medicine_cat_apprentice",
+            "they_queen",
+            "they_queen's_apprentice",
             "platonic_like",
             "romantic_like",
             "assertive",
             "sweet",
-            "unlawful",
+            "stable",
             "cool",
+            "comfort",
+            "platonic_like",
             "unabashed"
         ],
         [
@@ -340,53 +226,61 @@
             "Tell you what, if you ever get scared or cold in the night, just come over to my den. You can sleep in my nest, with me. Okay?"
         ]
     ],
-    "assertive_4": [
-        [
-            "kitten",
-            "assertive"
-        ],
-        [
-            "Whoa! Watch where you're going there, little pal! One wrong move, and you might get stepped on!",
-            "Ah, quit that, you don't need to apologize. Just be a bit more careful from now on, is all.",
-            "Or else, when you get bigger, it'll really become a problem. Hehe!"
-        ]
-    ],
-    "assertive_tonewborn": [
-        [
-            "newborn",
-            "assertive"
-        ],
-        [
-            "Whoa! Hey there, little guy! Shouldn't you be in the nursery?",
-            "Hehe. You've got an adventurous spirit. I like that about you.",
-            "But for now, you gotta stay where it's safe! C'mon. Let's go back to your parents."
-        ]
-    ],
-    "assertive_tonewborn1": [
-        [
-            "newborn",
-            "assertive"
-        ],
-        [
-            "Aw ... little guy hasn't even gotten their eyes open yet!",
-            "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
-        ]
-    ],
-    "assertive_apprentice7": [
+    "broodingapp_toqueenapp": [
         [
             "no_kit",
-            "platonic_like",
-            "assertive",
-            "silly"
+            "they_queen",
+            "they_queen's_apprentice",
+            "brooding",
+            "neutral",
+            "you_any"
         ],
         [
-            "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
-            "What? It's totally real, they wouldn't lie to me like that! I prommissseee."
+            "[You notice t_c playing with some kits, a rare smile on their face.]",
+            "[They seem to notice your gaze, pausing and accidentally stumbling over a kit.]",
+            "[Nodding, you look away. It's good to see them having fun every once in a while.]"
+        ]
+    ],
+    "introspective_queenapp_2": [
+        [
+            "you_any",
+            "they_queen's_apprentice",
+            "they_queen",
+            "no_kit",
+            "unabashed",
+            "clan_has_kits",
+            "introspective"
+        ],
+        [
+            "Hm? Oh hello, y_c. What's wrong?",
+            "Why am I out of the nursery? You know I'm not stuck in there, right? I can actually leave.",
+            "I needed a break from all the action in there. There's lots going on, I needed a breather.",
+            "Me getting irritated at all the noise, and then snapping at the kits seriously doesn't seem like a good idea, does it? It's not their fault that they're excited.",
+            "So out here, I am. It's much much quieter, since most are out of camp at this time."
+        ]
+    ],
+    "introspective_queenapp_5": [
+        [
+            "you_any",
+            "they_queen's_apprentice",
+            "they_queen",
+            "clan_has_kits",
+            "stable",
+            "introspective"
+        ],
+        [
+            "It'll be okay. I promise.",
+            "[t_c is talking to a upset kit curled up against their side.]",
+            "You don't need to try and force yourself to be something you're not. I get tired of talking to others too.",
+            "You're still a wonderful part of this Clan. Even if you need space sometimes... You'll always have cats who want to be around you, and see you.",
+            "[You notice t_c is looking at you. They smile pleasantly, then return their full attention to the kit.]",
+            "You'll never be forgotten, no matter what path your paws will lead you."
         ]
     ],
     "introspective_queen_to_NB": [
         [
-            "Newborn",
+            "you_newborn",
+            "they_queen",
             "Introspective"
         ],
         [
@@ -397,7 +291,9 @@
     ],
     "introspective_queen": [
         [
-            "any",
+            "you_any",
+            "no_kit",
+            "they_queen",
             "introspective"
         ],
         [
@@ -409,8 +305,8 @@
     ],
     "introspective_queen_1": [
         [
-            "any",
-            "no_kit",
+            "you_adult",
+            "you_queen",
             "introspective"
         ],
         [
@@ -423,7 +319,11 @@
     ],
     "introspective_queen_2": [
         [
-            "any",
+            "you_any",
+            "no_kit",
+            "they_queen",
+            "comfort",
+            "trust",
             "introspective"
         ],
         [
@@ -439,7 +339,10 @@
     ],
     "introspective_queen_3": [
         [
-            "any",
+            "you_any",
+            "no_kit",
+            "they_queen",
+            "platonic_like",
             "introspective"
         ],
         [
@@ -453,7 +356,10 @@
     ],
     "introspective_queen_4": [
         [
-            "any",
+            "you_any",
+            "no_kit",
+            "trust",
+            "they_queen",
             "introspective"
         ],
         [
@@ -466,7 +372,9 @@
     ],
     "introspective_queen_5": [
         [
-            "any",
+            "you_any",
+            "no_kit",
+            "they_queen",
             "introspective"
         ],
         [
@@ -478,80 +386,13 @@
             "Hawks may be very beautiful to watch, but they're no joke when it comes to kit safety, y_c."
         ]
     ],
-    "assertive_1": [
-        [
-            "Any",
-            "assertive",
-            "stable",
-            "upstanding",
-            "unabashed"
-        ],
-        [
-            "HEY!!! You leave them alone!",
-            "Ugh. Can you believe how cruel some cats are, y_c? A bunch of apprentices were trying to convince these two kits to sneak into a badger den ... what a bunch of mouse-brains.",
-            "No matter what, don't let anyone try to pressure you into doing something you don't think is right. Go with your gut, and stick to your own values. That's what's really important."
-        ]
-    ],
-    "assertive_6": [
-        [
-            "Any",
-            "dislike",
-            "you_brooding",
-            "you_sweet",
-            "you_upstanding",
-            "you_introspective",
-            "you_neurotic",
-            "you_stable",
-            "assertive",
-            "cool",
-            "unlawful",
-            "silly"
-        ],
-        [
-            "*Sigh*. Hey, y_c. Come to ruin the fun again?",
-            "Whatever. I'm going to go do something actually exciting. Don't wait up."
-        ]
-    ],
-    "assertive_queensapp": [
-        [
-            "queen",
-            "assertive"
-        ],
-        [
-            "You want me to stop roughhousing with the kits?",
-            "Psh, c'mon, y_c, loosen up! You worry too much!",
-            "These are the fearsome future warriors of c_nClan. They can withstand a little -",
-            "[One of the kits smacks facefirst into the nursery wall and starts crying.]",
-            "... Okay, that's the first time that's happened."
-        ]
-    ],
-    "assertive_queensapp_2": [
-        [
-            "kitten",
-            "assertive"
-        ],
-        [
-            "Hey! I'll race ya to the other side of the nursery!",
-            "[You and t_c line up at the wall, and at the signal, you break into a full sprint! t_c gets a head start and you're worried you won't make it ... Until, miraculously, you start gaining on them!]",
-            "Ahh, you beat me!!",
-            "Hehe, you'll be a great warrior yet!"
-        ]
-    ],
-    "assertive_queensapp_3": [
-        [
-            "queen",
-            "assertive"
-        ],
-        [
-            "r_w was in here earlier asking about kits ... I didn't know what to tell them. Sorta weird that they were asking, no?",
-            "What do you think it means?",
-            "Ooh! Maybe they're in a forbidden relationship! A star-crossed love that can never be, with a rugged yet good-looking rogue who would do anything to protect them!",
-            "*Sigh* ... Sorry, what was I talking about?"
-        ]
-    ],
     "assertive_warrior_or_elder": [
         [
-            "queen",
+            "they_queen",
+            "you_queen",
+            "you_queen's_apprentice",
+            "you_elder",
+            "you_warrior",
             "assertive",
             "platonic_like",
             "neutral"
@@ -565,7 +406,8 @@
     ],
     "assertive_elder": [
         [
-            "queen's apprentice",
+            "you_queen's_apprentice",
+            "they_queen",
             "assertive",
             "from_mentor"
         ],
@@ -578,6 +420,8 @@
         [
             "no_kit",
             "they_adult",
+            "they_queen",
+            "you_any",
             "clan_has_kits"
         ],
         [
@@ -587,8 +431,11 @@
     ],
     "assertive_elder_3": [
         [
-            "queen's apprentice",
-            "queen",
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_queen",
+            "you_queen's_apprentice",
+            "clan_has_kits",
             "assertive"
         ],
         [
@@ -599,7 +446,9 @@
     ],
     "assertive_elder_4": [
         [
-            "queen",
+            "they_queen",
+            "you_queen",
+            "clan_has_kits",
             "assertive"
         ],
         [
@@ -610,7 +459,8 @@
     ],
     "assertive_elder_5": [
         [
-            "queen's apprentice",
+            "you_queen's_apprentice",
+            "clan_has_kits",
             "from_mentor",
             "assertive",
             "brooding",
@@ -623,34 +473,13 @@
             "Maybe you can still make it to the medicine den if you hurry!"
         ]
     ],
-    "assertive_queensapp_4": [
-        [
-            "kitten",
-            "assertive",
-            "dislike"
-        ],
-        [
-            "What's the matter, kid? You hungry? Need somebody to take you to the dirtplace?",
-            "Well? Spit it out, we ain't got all day!"
-        ]
-    ],
-    "assertive_queensapp_5": [
-        [
-            "kitten",
-            "assertive",
-            "sweet",
-            "platonic_like"
-        ],
-        [
-            "y_c! I found something I think you're really gonna love!",
-            "[t_c drops a perfectly smooth, shiny pebble at your paws.]",
-            "Pretty, huh? Plus, it's perfect to play with! No sharp corners, see, so you can't get hurt.",
-            "Come find me later, and maybe we can play a game with it!"
-        ]
-    ],
     "assertive_queensapp1": [
         [
             "no_kit",
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_any",
+            "silly",
             "assertive"
         ],
         [
@@ -658,22 +487,11 @@
             "[They have so much energy, it's almost like they're still a kit themself!]"
         ]
     ],
-    "assertive_queensapp2": [
-        [
-            "kitten",
-            "assertive"
-        ],
-        [
-            "Hey, y_c! Wanna play a game? Let's do 'Leader of StoneClan!'",
-            "... What? Never heard of it?! Unbelievable! We used to play it all the time when I was young!",
-            "Kits these days, *tsk* so uneducated. Luckily, you have me to teach you!",
-            "Okay, so here's how it works ...",
-            "[t_c explains the game to you, eyes flashing with excitement. As you play together, it almost seems like they're enjoying it more than you are!]"
-        ]
-    ],
     "assertive_queensapp3": [
         [
-            "kitten",
+            "you_kitten",
+            "they_queen's_apprentice",
+            "they_queen",
             "assertive",
             "cool"
         ],
@@ -688,7 +506,11 @@
     "assertive_queensapp4": [
         [
             "no_kit",
-            "assertive"
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_any",
+            "assertive",
+            "silly"
         ],
         [
             "[t_c is currently being used as a climbing rock by all the kits in the nursery.]",
@@ -700,8 +522,10 @@
     ],
     "assertive_queensapp4_2": [
         [
-            "queen",
-            "queen's apprentice",
+            "you_queen",
+            "you_queen's_apprentice",
+            "they_queen's_apprentice",
+            "they_queen",
             "assertive"
         ],
         [
@@ -712,8 +536,13 @@
     ],
     "assertive_queensapp5": [
         [
-            "kitten",
-            "assertive"
+            "you_kitten",
+            "they_queen's_apprentice",
+            "they_queen",
+            "assertive",
+            "cool",
+            "unabashed",
+            "strange"
         ],
         [
             "Alright, alright, settle down! Time for a nap everybody, playtime's over!",
@@ -724,9 +553,147 @@
             "Now, do you wanna be Quietkit's next playmate? Or do you wanna put the moss-ball down and get in your nest?"
         ]
     ],
+    "queens_app_general_newborn": [
+        [
+            "newborn",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet",
+            "stable"
+        ],
+        [
+            "Hi there, sweet kit. You're so precious."
+        ]
+    ],
+    "upstanding_queenapp": [
+        [
+            "upstanding",
+            "clan_has_kits",
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_any",
+            "no_kit"
+        ],
+        [
+            "Oh, hey there y_c! What are you doing up this early?",
+            "Hm. I guess that camp is pretty nice when you have it all to yourself. As for me, I've been a little busy making a few things for the kits.",
+            "[t_c nodded to a pile of several carefully crafted playthings. Some are made out of feathers and twigs, others out of moss and leaves.]",
+            "Isn't it great? Sure, it was pretty hard to put those together, and yeah, it might have taken me all night, but it'll be so worth it once I see the looks on their faces!"
+        ]
+    ],
+    "upstanding_queenapp1": [
+        [
+            "upstanding",
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_kitten"
+        ],
+        [
+            "Hey! C'mere you little furball! What did I tell you about leaving the nursery at this hour?",
+            "Ah ah, no buts! Rules are rules, and those rules say you are going straight back to the nursery!"
+        ]
+    ],
+    "sweet_queenapp_4": [
+        [
+            "kitten",
+            "they_queen's_apprentice",
+            "they_queen",
+            "stable",
+            "sweet"
+        ],
+        [
+            "Hmhm, what do we have here? Oh, I couldn't possibly be stalked by a fearsome predator, could I?",
+            "Ah-! Oh, you got me! You were so stealthy, little one! Be careful jumping off of rocks like that though, you could get hurt!",
+            "Even the most fierce of warriors can get hurt by a big jump, so remember to take care of yourself!"
+        ]
+    ],
+    "sweet_queenapp_11": [
+        [
+            "you_any",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet"
+        ],
+        [
+            "Oh, y_c! Just the cat I've been looking for. r_k made a gift for you, and they wanted me to bring it to you!",
+            "[It's a small stone, with berry juice hastily splattered onto it. Truly artistic.]"
+        ]
+    ],
+    "sweet_queenapp_13": [
+        [
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_warrior",
+            "you_apprentice",
+            "sweet"
+        ],
+        [
+            "[You were just trying to go on patrol, when you suddenly find yourself pounced on.]",
+            "Ah, no no r_k! y_c is not pounce practice!",
+            "[They pluck the kitten off of you, giving you a sheepish look.]",
+            "Sorry about that! They've been pretty restless.",
+            "Hehe, I think someone needs some new toys to play with... so that the warriors don't become the toys."
+        ]
+    ],
+    "sweet_queenapp_17": [
+        [
+            "you_deputy",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet"
+        ],
+        [
+            "[You've been trying to get your duties done, but one of the kits has been trying to play all day.]",
+            "[They're very cute and you'd probably play with them any other day, but l_n was practically begging you to finish this as soon as possible.]",
+            "y_c! Ah!",
+            "[You hear t_c bouncing towards you, here to rescue you from the kit.]",
+            "Sorry about that! r_k lost their favorite toy and I went to go find it.",
+            "[As they carry the kitten away, you let out a sigh of relief. Finally, you can finish your task.]"
+        ]
+    ],
+    "sweet_queenapp_20": [
+        [
+            "you_leader",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet"
+        ],
+        [
+            "Hey y_c! Would you mind if I asked which kits are becoming which roles?",
+            "Why am I asking? ... I just want to make sure they're prepared for their roles so they can adjust well.",
+            "I felt pretty unprepared when I became a Queen's Apprentice, though I do love my job! I don't want that for them."
+        ]
+    ],
+    "sweet_queenapp_23": [
+        [
+            "you_elder",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet"
+        ],
+        [
+            "[You hear the cheer of kits, rushing into the den for storytime.]",
+            "[t_c bounds in after them, looking just as excited. They'd always loved storytime, ever since they were a kit.]",
+            "[Stories with a happy ending were always t_c's favorites.]",
+            "We're here for storytime!"
+        ]
+    ],
+    "sweet_queenapp_24": [
+        [
+            "you_elder",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet"
+        ],
+        [
+            "[t_c looks exhausted, r_k running circles around them as they lay on the ground.]",
+            "[You decide to call the kits over to you to give t_c a break, they give you a grateful look.]"
+        ]
+    ],
     "assertivewarrior_leader5": [
         [
-            "leader",
+            "you_leader",
+            "they_queen",
             "assertive",
             "unabashed",
             "stable"
@@ -738,39 +705,12 @@
             "Do keep in mind, will ya?"
         ]
     ],
-    "assertivewarrior_leader3": [
-        [
-            "leader",
-            "assertive",
-            "silly",
-            "unabashed"
-        ],
-        [
-            "Hey, boss! Come down to mingle with us common folk? Hehe.",
-            "Everything's going just fine around camp, as far as I can tell. There's a leak in the warrior's den that someone should probably get on ... wanna lend a paw?",
-            "... Really? Okay! I'll go grab the brambles!"
-        ]
-    ],
-    "assertivewarrior_deputy2": [
-        [
-            "deputy",
-            "leader",
-            "assertive",
-            "unlawful",
-            "brooding",
-            "unabashed",
-            "dislike"
-        ],
-        [
-            "Yeah, right. Like I have to take orders from you!",
-            "You may think you're a warrior, but all you do is sit on your haunches and boss everyone around all day. That's no warrior. That's a coward.",
-            "Go find some other cat to impose on."
-        ]
-    ],
     "assertive_mediator3": [
         [
-            "mediator",
-            "mediator apprentice",
+            "you_mediator",
+            "you_mediator_apprentice",
+            "they_any",
+            "no_kit",
             "assertive",
             "dislike",
             "unabashed"
@@ -782,20 +722,11 @@
             "Maybe think about that the next time you try to make a compromise with the enemy."
         ]
     ],
-    "assertivewarrior_mediatorapp": [
-        [
-            "mediator apprentice",
-            "assertive"
-        ],
-        [
-            "Man, you're insightful for an apprentice, y_c!",
-            "When I was your age, all I thought about was smashing stuff and chasing after my crushes. But now, here you are! Sorting out problems with cats who've been around ten times longer than you!",
-            "That must take a lot of discipline. The whole Clan is proud of you!"
-        ]
-    ],
     "assertivewarrior_mediatorapp_2": [
         [
-            "mediator apprentice",
+            "you_mediator_apprentice",
+            "they_older",
+            "no_kit",
             "assertive",
             "cool",
             "upstanding",
@@ -808,23 +739,29 @@
             "Let alone when they're barely out of the nursery."
         ]
     ],
-    "assertive_mediatorapp": [
+    "assertive_queensapp_9": [
         [
-            "mediator apprentice",
-            "mediator",
+            "you_queen",
+            "you_queen's_apprentice",
+            "they_queen's_apprentice",
+            "they_queen",
+            "clan_has_kits",
             "assertive",
-            "upstanding"
+            "sweet",
+            "silly"
         ],
         [
-            "Is it really true that you're allowed to just ... travel between the Clans as you please?",
-            "Whoa! That's so cool!!! I've always wanted to explore the other territories, but I've never been allowed.",
-            "Is it true that o_cClan cats can swim like fish? Or that their territory is full of snakes?",
-            "[You and t_c have a long conversation about the other Clans. With each detail you share, their eyes grow bigger and bigger.]"
+            "r_w was in here earlier asking about kits ... I didn't know what to tell them. Sorta weird that they were asking, no?",
+            "What do you think it means?",
+            "Ooh! Maybe they're in a forbidden relationship! A star-crossed love that can never be, with a rugged yet good-looking rogue who would do anything to protect them!",
+            "*Sigh* ... Sorry, what was I talking about?"
         ]
     ],
     "assertive_medapp": [
         [
-            "medicine cat apprentice",
+            "you_medicine_cat_apprentice",
+            "they_any",
+            "they_older",
             "assertive",
             "unlawful",
             "unabashed"
@@ -835,39 +772,12 @@
             "As for tomorrow? Who knows!"
         ]
     ],
-    "assertive_warrior_or_elder_2": [
-        [
-            "apprentice",
-            "platonic_like",
-            "assertive",
-            "unabashed",
-            "silly"
-        ],
-        [
-            "Not always easy in the apprentice's den, huh? I remember those days. Sometimes cats can be so cliquey, especially the young ones ...",
-            "But, no matter what, you can never let fear hold you back from being who you are! Work hard, be friendly, and forget anyone who tries to get you down!",
-            "That's real bravery. Not just rushing into battle, but also standing up for what you believe in. And bravery is what makes a warrior who they are.",
-            "Heh, look at me, getting all wise ... Just my opinion, is all."
-        ]
-    ],
-    "assertive_warrior_or_elder_2_2": [
-        [
-            "apprentice",
-            "assertive",
-            "cool",
-            "silly"
-        ],
-        [
-            "Working hard, y_c? Or, is it more like hardly working? Hehe.",
-            "Y'know, it's good to contribute to the Clan, but make sure you take some time to grow up, too. Working isn't everything. Now's the time for you to get out and explore!",
-            "*Sigh* I sorta miss those days myself ..."
-        ]
-    ],
     "assertive_warrior_or_elder_3": [
         [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "they_queen",
             "assertive",
             "stable",
             "sweet",
@@ -878,50 +788,6 @@
             "StarClan, y_c, look at you ... could you really have been one of my kits here in the nursery just a few moons ago?",
             "But, ah, no one can stay a kit forever, I suppose. And it's been such a joy, watching you grow.",
             "You're always welcome here any time you need!"
-        ]
-    ],
-    "assertive_rom1": [
-        [
-            "Any",
-            "assertive",
-            "cool",
-            "romantic_like",
-            "from_mate"
-        ],
-        [
-            "StarClan, y_c, it's ... it's like you don't even know how beautiful you are.",
-            "... Augh. Look what you've done! Now I'm getting all sappy!",
-            "Just don't let it get to your head, furbag. I'm hot stuff, too.",
-            "[t_c winks at you, and you laugh together.]"
-        ]
-    ],
-    "assertive_rom2": [
-        [
-            "no_kit",
-            "assertive",
-            "silly",
-            "romantic_like"
-        ],
-        [
-            "Hey, y_c! I just finished visiting the kits in the nursery. StarClan, they're cute!",
-            "I wouldn't mind being a parent ... having a few mini-me's running around, terrorizing the Clan.",
-            "How about you? Do you ever see yourself having kits someday? Not in, like, a weird way, of course! Just curious, hehe.",
-            "[t_c swishes their tail nervously.]"
-        ]
-    ],
-    "assertive_rom3": [
-        [
-            "Any",
-            "assertive",
-            "unabashed",
-            "romantic_like",
-            "from_mate"
-        ],
-        [
-            "Hey, y_c, what are your thoughts on feathers as a nesting material?",
-            "Why? Psh, don't play coy! We're basically sharing a nest at this point, with how often you sneak into mine. Haha!",
-            "Tell you what ... how about we ditch the formalities altogether and just make one, giant, super-nest!",
-            "Better start gathering moss! I know it's your favorite."
         ]
     ],
     "assertivewarriorapp_comfort": [
@@ -945,70 +811,13 @@
             "[Still, you sit with them through the night, hoping to stabilize them through whatever storm they might be weathering right now.]"
         ]
     ],
-    "assertive_comfort_2": [
-        [
-            "Any",
-            "assertive",
-            "neurotic",
-            "comfort",
-            "trust",
-            "romantic_like",
-            "platonic_like",
-            "from_mate"
-        ],
-        [
-            "Hey, y_c? Have you ever thought about, uh ...",
-            "What if something happens to you? Or something happens to me? Or something happens to the Clan, and we're both demolished in a fiery pit of nothingness!",
-            "Phew ... sorry, I know I'm not usually so grim. But I guess I'm just really worried.",
-            "What if something goes wrong, and I'm not there to protect you?",
-            "I won't let that happen ... I just won't!"
-        ]
-    ],
-    "assertive_rom4": [
-        [
-            "Any",
-            "assertive",
-            "unabashed",
-            "romantic_like"
-        ],
-        [
-            "What's that? One of the kits told you your ears are too big?",
-            "What a load of fox-dung! Those kits don't have functioning brains. Besides, I like your ears! I think it's cute, how big they are!",
-            "Er ... not cute in that way, mind you. Just, y'know ... ahem ...",
-            "[The blush on r_c's cheeks confirms that, yes, they did mean it in that way. And they're doing a terrible job of hiding it.]"
-        ]
-    ],
-    "assertive_elder_7": [
-        [
-            "Any",
-            "assertive",
-            "upstanding",
-            "stable",
-            "dislike",
-            "neutral",
-            "no_kit"
-        ],
-        [
-            "*Sigh* Can't you see I have more important things to do, y_c?",
-            "Go back to catching mice, or whatever."
-        ]
-    ],
-    "assertive_warrior_or_elder_4": [
-        [
-            "apprentice",
-            "assertive",
-            "cool",
-            "silly"
-        ],
-        [
-            "Working hard, y_c? Or, is it more like hardly working? Hehe.",
-            "Y'know, it's good to contribute to the Clan, but make sure you take some time to grow up, too. Working isn't everything. Now's the time for you to get out and explore!",
-            "*Sigh* I sorta miss those days myself ..."
-        ]
-    ],
     "brooding_queen3": [
         [
             "no_kit",
+            "they_queen",
+            "clan_has_kits",
+            "you_any",
+            "neutral",
             "brooding"
         ],
         [
@@ -1020,6 +829,9 @@
     "brooding_queen4": [
         [
             "no_kit",
+            "they_queen",
+            "clan_has_kits",
+            "you_any",
             "brooding"
         ],
         [
@@ -1031,6 +843,10 @@
         [
             "no_kit",
             "brooding",
+            "they_queen",
+            "you_any",
+            "trust",
+            "clan_has_kits",
             "platonic_like"
         ],
         [
@@ -1044,6 +860,8 @@
         [
             "no_kit",
             "brooding",
+            "they_queen",
+            "clan_has_kits",
             "romantic_like"
         ],
         [
@@ -1057,6 +875,9 @@
     "brooding_queen7": [
         [
             "no_kit",
+            "clan_has_kits",
+            "they_queen",
+            "neutral",
             "brooding",
             "assertive"
         ],
@@ -1068,13 +889,12 @@
     ],
     "brooding_queen8": [
         [
-            "apprentice",
-            "mediator apprentice",
-            "warrior",
-            "mediator",
-            "deputy",
-            "leader",
-            "elder"
+            "you_any",
+            "no_kit",
+            "clan_has_kits",
+            "brooding",
+            "they_queen",
+            "assertive"
         ],
         [
             "[r_k just puked in the nursery and it's total chaos.]",
@@ -1086,6 +906,8 @@
     "brooding_queen9": [
         [
             "no_kit",
+            "clan_has_kits",
+            "you_any",
             "brooding",
             "upstanding"
         ],
@@ -1096,7 +918,9 @@
     ],
     "brooding_queen10": [
         [
-            "kitten",
+            "you_kitten",
+            "they_queen",
+            "upstanding",
             "brooding"
         ],
         [
@@ -1106,8 +930,10 @@
     ],
     "brooding_queen11": [
         [
-            "kitten",
-            "brooding"
+            "you_kitten",
+            "they_queen",
+            "brooding",
+            "upstanding"
         ],
         [
             "HEY! No running in the nursery! Don't you know better?",
@@ -1117,7 +943,8 @@
     ],
     "brooding_queen12": [
         [
-            "kitten",
+            "you_kitten",
+            "they_queen",
             "brooding"
         ],
         [
@@ -1130,7 +957,9 @@
     ],
     "brooding_queen13": [
         [
-            "kitten",
+            "you_kitten",
+            "upstanding",
+            "they_queen",
             "brooding"
         ],
         [
@@ -1144,9 +973,11 @@
     ],
     "brooding_queen14": [
         [
-            "kitten",
+            "you_kitten",
+            "they_queen",
             "brooding",
             "introspective",
+            "neurotic",
             "platonic_like"
         ],
         [
@@ -1163,7 +994,9 @@
         [
             "unabashed",
             "silly",
-            "newborn"
+            "you_newborn",
+            "they_queen",
+            "they_medicine_cat"
         ],
         [
             "[t_c prods you with a paw, leaning forward to examine you.]",
@@ -1172,7 +1005,9 @@
     ],
     "cool_newborn": [
         [
-            "newborn"
+            "you_newborn",
+            "cool",
+            "they_queen"
         ],
         [
             "Little y_c. I wonder what type of cat you'll become one day."
@@ -1180,7 +1015,8 @@
     ],
     "cool_queen_1": [
         [
-            "Any",
+            "you_any",
+            "they_queen",
             "Cool",
             "neutral",
             "clan_has_kits"
@@ -1196,7 +1032,8 @@
     ],
     "cool_queen_2": [
         [
-            "Any",
+            "you_any",
+            "they_queen",
             "Cool",
             "clan_has_kits"
         ],
@@ -1209,7 +1046,8 @@
     "upstanding_queen": [
         [
             "upstanding",
-            "kitten"
+            "they_queen",
+            "you_kitten"
         ],
         [
             "Hey! C'mere you little furball! What did I tell you about leaving the nursery at this hour?",
@@ -1219,7 +1057,8 @@
     "upstanding_queen1": [
         [
             "upstanding",
-            "kitten"
+            "they_queen",
+            "you_kitten"
         ],
         [
             "Oh hey there y_c, didn't think I'd find you in here all by yourself. How about you go out into the clearing and play? There's plenty of space out there!",
@@ -1232,8 +1071,9 @@
     "upstanding_queen2": [
         [
             "upstanding",
+            "they_queen",
             "clan_has_kits",
-            "Any"
+            "you_any"
         ],
         [
             "[Throughout the day, t_c has been entertaining the kits with various different games such as Hunt the Pebble, Hide n' Seek, Guess the Sound, and more.]",
@@ -1246,7 +1086,9 @@
         [
             "upstanding",
             "clan_has_kits",
-            "no_kit"
+            "no_kit",
+            "you_any",
+            "they_queen"
         ],
         [
             "Watch out y_c!",
@@ -1259,8 +1101,10 @@
     ],
     "silly_queen_stares": [
         [
-            "no_kit",
+            "you_any",
             "silly",
+            "no_kit",
+            "they_queen",
             "clan_has_kits",
             "trust"
         ],
@@ -1271,6 +1115,8 @@
     ],
     "silly_queen_1": [
         [
+            "you_any",
+            "they_queen",
             "no_kit",
             "silly",
             "clan_has_kits"
@@ -1285,7 +1131,9 @@
     ],
     "silly_queen_fishClan": [
         [
-            "kitten",
+            "you_kitten",
+            "they_queen",
+            "neutral",
             "silly"
         ],
         [
@@ -1296,7 +1144,9 @@
     ],
     "silly_queen_quietkit": [
         [
-            "kitten",
+            "you_kitten",
+            "they_queen",
+            "platonic_like",
             "silly"
         ],
         [
@@ -1307,9 +1157,10 @@
     ],
     "silly_queen_stoneclan": [
         [
-            "kitten",
-            "silly",
-            "random_cat"
+            "you_kitten",
+            "they_queen",
+            "neutral",
+            "silly"
         ],
         [
             "Have you been playing StoneClan with r_k lately?",
@@ -1318,7 +1169,8 @@
     ],
     "silly_queen_kit4": [
         [
-            "kitten",
+            "you_kitten",
+            "they_queen",
             "silly"
         ],
         [
@@ -1329,9 +1181,11 @@
     ],
     "silly_queen_app1": [
         [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "they_queen",
+            "platonic_like",
             "silly"
         ],
         [
@@ -1341,7 +1195,9 @@
     ],
     "sweet_queen_1": [
         [
-            "newborn",
+            "you_newborn",
+            "they_older",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1351,7 +1207,9 @@
     ],
     "sweet_queen_2": [
         [
-            "kitten",
+            "you_kitten",
+            "comfort",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1362,7 +1220,10 @@
     ],
     "sweet_queen_3": [
         [
-            "kitten",
+            "you_kitten",
+            "they_queen",
+            "you_silly",
+            "you_unabashed",
             "sweet"
         ],
         [
@@ -1373,7 +1234,9 @@
     ],
     "sweet_queen_4": [
         [
-            "kitten",
+            "you_kitten",
+            "they_queen",
+            "neutral",
             "sweet"
         ],
         [
@@ -1383,10 +1246,9 @@
     ],
     "sweet_queen_5": [
         [
-            "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "you_app",
+            "they_queen",
+            "platonic_like",
             "sweet"
         ],
         [
@@ -1398,10 +1260,10 @@
     ],
     "sweet_queen_6": [
         [
-            "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "you_app",
+            "comfort",
+            "they_queen",
+            "platonic_like",
             "sweet"
         ],
         [
@@ -1412,7 +1274,10 @@
     ],
     "sweet_queen_7": [
         [
-            "apprentice",
+            "you_apprentice",
+            "you_mediator_apprentice",
+            "you_medicine_cat_apprentice",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1422,7 +1287,8 @@
     ],
     "sweet_queen_8": [
         [
-            "queen's apprentice",
+            "you_queen's_apprentice",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1432,7 +1298,10 @@
     ],
     "sweet_queen_9": [
         [
-            "medicine cat apprentice",
+            "you_medicine_cat_apprentice",
+            "comfort",
+            "platonic_love",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1442,7 +1311,8 @@
     ],
     "sweet_queen_10": [
         [
-            "mediator apprentice",
+            "you_mediator_apprentice",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1454,10 +1324,10 @@
     ],
     "sweet_queen_11": [
         [
-            "warrior",
-            "medicine cat",
-            "mediator",
-            "queen",
+            "you_adult",
+            "they_queen",
+            "platonic_like",
+            "clan_has_kits",
             "sweet"
         ],
         [
@@ -1469,10 +1339,9 @@
     ],
     "sweet_queen_12": [
         [
-            "warrior",
-            "medicine cat",
-            "mediator",
-            "queen",
+            "you_any",
+            "they_queen",
+            "clan_has_kits",
             "sweet"
         ],
         [
@@ -1483,7 +1352,9 @@
     ],
     "sweet_queen_13": [
         [
-            "warrior",
+            "you_warrior",
+            "they_queen",
+            "trust",
             "sweet"
         ],
         [
@@ -1494,7 +1365,9 @@
     ],
     "sweet_queen_14": [
         [
-            "medicine cat",
+            "you_medicine_cat",
+            "they_queen",
+            "platonic_like",
             "sweet"
         ],
         [
@@ -1505,7 +1378,8 @@
     ],
     "sweet_queen_15": [
         [
-            "mediator",
+            "you_mediator",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1516,7 +1390,9 @@
     ],
     "sweet_queen_16": [
         [
-            "queen",
+            "you_queen",
+            "they_queen",
+            "you_queen's_apprentice",
             "sweet"
         ],
         [
@@ -1527,7 +1403,8 @@
     ],
     "sweet_queen_17": [
         [
-            "deputy",
+            "you_deputy",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1538,7 +1415,8 @@
     ],
     "sweet_queen_18": [
         [
-            "deputy",
+            "you_deputy",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1550,7 +1428,10 @@
     ],
     "sweet_queen_19": [
         [
-            "deputy",
+            "you_deputy",
+            "they_queen",
+            "comfort",
+            "trust",
             "sweet"
         ],
         [
@@ -1568,7 +1449,8 @@
     ],
     "sweet_queen_20": [
         [
-            "leader",
+            "you_leader",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1580,7 +1462,9 @@
     ],
     "sweet_queen_21": [
         [
-            "leader",
+            "you_leader",
+            "they_queen",
+            "platonic_like",
             "sweet"
         ],
         [
@@ -1595,7 +1479,9 @@
     ],
     "sweet_queen_22": [
         [
-            "leader",
+            "you_leader",
+            "trust",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1608,7 +1494,9 @@
     ],
     "sweet_queen_23": [
         [
-            "elder",
+            "you_elder",
+            "trust",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1619,7 +1507,9 @@
     ],
     "sweet_queen_24": [
         [
-            "elder",
+            "you_elder",
+            "platonic_like",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1631,7 +1521,9 @@
     ],
     "sweet_queen_25": [
         [
-            "elder",
+            "you_elder",
+            "platonic_like",
+            "they_queen",
             "sweet"
         ],
         [
@@ -1643,6 +1535,8 @@
     "unabashed_queen1": [
         [
             "unabashed",
+            "you_any",
+            "they_queen",
             "no_kit",
             "dislike"
         ],
@@ -1653,9 +1547,10 @@
     ],
     "DF_queen_H1": [
         [
-            "you_DF",
-            "they_DF",
-            "queen"
+            "you_df",
+            "they_df",
+            "they_queen",
+            "you_any"
         ],
         [
             "A kitten has been mewling at the edge of the border, but I can't seem to find them.",
@@ -1668,9 +1563,10 @@
     "Df_queen_kitten": [
         [
             "they_df",
+            "they_queen",
             "you_sc",
-            "kitten",
-            "newborn"
+            "you_kitten",
+            "you_newborn"
         ],
         [
             "[t_c appears from the darkness, a snarl on their lips before they notice you.]",
@@ -1681,7 +1577,8 @@
     ],
     "stable_Queen_Gen_01": [
         [
-            "Any",
+            "you_any",
+            "they_queen",
             "stable"
         ],
         [
