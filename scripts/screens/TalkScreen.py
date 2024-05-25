@@ -986,6 +986,11 @@ class TalkScreen(Screens):
             if "only_they_blind" in tags:
                 continue
 
+            if "only_you_deaf" in tags:
+                continue
+            if "only_you_blind" in tags:
+                continue
+
             # remove when dialogue is implemented
 
 
