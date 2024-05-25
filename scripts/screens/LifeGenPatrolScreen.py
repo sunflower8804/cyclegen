@@ -32,7 +32,7 @@ class LifeGenPatrolScreen(Screens):
     current_patrol = []
     patrol_stage = 'choose_cats'  # Can be 'choose_cats' or 'patrol_events' Controls the stage of patrol.
     patrol_screen = 'patrol_cats'  # Can be "patrol_cats" or "skills". Controls the tab on the select_cats stage
-    patrol_type = 'general'  # Can be 'general' or 'border' or 'training' or 'med' or 'hunting'
+    patrol_type = 'lifegen'  # Can be 'general' or 'border' or 'training' or 'med' or 'hunting'
     current_page = 1
     elements = {}  # hold elements for sub-page
     cat_buttons = {}  # Hold cat image sprites.
@@ -314,24 +314,7 @@ class LifeGenPatrolScreen(Screens):
                     if self.patrol_type == 'med':
                         self.patrol_type = 'general'
 
-                if self.patrol_type == 'general':
-                    text = 'lifegen patrol'
-                elif self.patrol_type == 'training':
-                    text = 'training'
-                elif self.patrol_type == 'border':
-                    text = 'border'
-                elif self.patrol_type == 'hunting':
-                    text = 'hunting'
-                elif self.patrol_type == 'med':
-                    if self.current_patrol:
-                        text = 'herb gathering'
-                        # self.elements['mouse'].disable()
-                        # self.elements['claws'].disable()
-                        # self.elements['paw'].disable()
-                    else:
-                        text = 'herb gathering'
-                else:
-                    text = ""
+                text = "lifegen patrol"
 
                 self.elements['info'] = pygame_gui.elements.UITextBox(
                     text, scale(pygame.Rect((500, 1050), (600, 800))),

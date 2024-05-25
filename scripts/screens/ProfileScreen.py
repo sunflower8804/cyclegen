@@ -1210,14 +1210,17 @@ class ProfileScreen(Screens):
                         self.profile_elements["flirt"].enable()
 
         if self.the_cat.ID == game.clan.your_cat.ID and not game.clan.your_cat.dead and not game.clan.your_cat.outside:
+            if self.open_tab == "faith" and (self.the_cat.dead or self.the_cat.outside or self.the_cat.moons < 6):
+                self.close_current_tab()
             self.placeholder_tab_3.kill()
             self.profile_elements['your_tab'] = UIImageButton(scale(pygame.Rect((800, 1244), (352, 60))), "",
                                             object_id="#your_tab", starting_height=1, manager=MANAGER)
             self.your_tab = self.profile_elements['your_tab']
+            
         else:
             if self.open_tab == 'your tab':
                 self.close_current_tab()
-            if self.open_tab == "faith" and (self.the_cat.dead  or self.the_cat.outside or self.the_cat.moons < 6):
+            if self.open_tab == "faith" and (self.the_cat.dead or self.the_cat.outside or self.the_cat.moons < 6):
                 self.close_current_tab()
             self.placeholder_tab_3.kill()
             self.placeholder_tab_3 = None
