@@ -1133,14 +1133,14 @@ def event_text_adjust(Cat,
         cat_dict["m_c"] = (str(cat.name), choice(cat.pronouns))
         cat_dict["p_l"] = cat_dict["m_c"]
     if "acc_plural" in text:
-        if cat.pelt.accessory and cat.pelt.accessory not in cat.pelt.accessories:
-            cat.pelt.accessories.append(cat.pelt.accessory)
-        acc = cat.pelt.accessories[-1]
+        if cat.pelt.inventory and cat.pelt.accessory not in cat.pelt.inventory:
+            cat.pelt.inventory.append(cat.pelt.accessory)
+        acc = cat.pelt.inventory[-1]
         text = text.replace("acc_plural", str(ACC_DISPLAY[acc]["plural"]))
     if "acc_singular" in text:
-        if cat.pelt.accessory and cat.pelt.accessory not in cat.pelt.accessories:
-            cat.pelt.accessories.append(cat.pelt.accessory)
-        acc = cat.pelt.accessories[-1]
+        if cat.pelt.inventory and cat.pelt.accessory not in cat.pelt.inventory:
+            cat.pelt.inventory.append(cat.pelt.accessory)
+        acc = cat.pelt.inventory[-1]
         text = text.replace("acc_singular", str(ACC_DISPLAY[acc]["singular"]))
 
     # if murder_reveal:
