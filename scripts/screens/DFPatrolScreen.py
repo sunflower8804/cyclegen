@@ -95,7 +95,7 @@ class DFPatrolScreen(Screens):
             if self.selected_cat.ID == self.cat_id:
                 if self.selected_cat in self.current_patrol:
                     self.current_patrol.remove(self.selected_cat)
-                else:
+                elif len(self.current_patrol) < 3:
                     self.current_patrol.append(self.selected_cat)
                 self.update_cat_images_buttons()
                 self.update_button()
