@@ -1572,7 +1572,7 @@ class Cat():
         
         if old_age != self.age:
             # Things to do if the age changes
-            self.personality.facet_wobble(max=2)
+            self.personality.facet_wobble(max=1)
         
         # Set personality to correct type
         self.personality.set_kit(self.is_baby())
@@ -3613,7 +3613,15 @@ class Personality():
             possible_traits.append(trait)
             
         if possible_traits:
-            self.trait = choice(possible_traits)
+            for i in range(5):
+                new_trait = choice(possible_traits)
+                new_trait_cluster1, new_trait_cluster2 = get_cluster(new_trait)
+                trait_cluster1, trait_cluster2 = get_cluster(self.trait)
+                if any(cluster in [trait_cluster1, trait_cluster2] for cluster in [new_trait_cluster1, new_trait_cluster2]):
+                    break
+                else:
+                    new_trait = choice(possible_traits)
+            self.trait = new_trait
         else:
             print("No possible traits! Using 'strange'")
             self.trait = "strange"
