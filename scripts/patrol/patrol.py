@@ -654,11 +654,6 @@ class Patrol():
                 continue
             if game.current_screen == 'patrol screen':
 
-                if game.clan.your_cat.status == "kitten" and "kit_only" not in patrol.tags:
-                    continue
-                elif game.clan.your_cat.status != "kitten" and "kit_only" in patrol.tags:
-                    continue
-
                 if "bloodthirsty_only" in patrol.tags:
                     if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":
                         continue
