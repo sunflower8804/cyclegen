@@ -215,7 +215,6 @@ class Cat():
         self.permanent_condition = {}
         self.df = False
         self.experience_level = None
-        self.no_kits = False
         self.w_done = False
         self.talked_to = False
         self.insulted = False
@@ -227,6 +226,7 @@ class Cat():
         self.no_kits = False
         self.no_mates = False
         self.no_retire = False
+        self.no_faith = False
         self.backstory_str = ""
         self.courage = 0
         self.compassion = 0
@@ -3392,6 +3392,7 @@ class Cat():
                 "df_mentor": self.df_mentor if self.df_mentor else None,
                 "df_apprentices": self.df_apprentices if self.df_apprentices else [],
                 "faith": self.faith if self.faith else 0,
+                "no_faith": self.no_faith if self.no_faith else False,
                 "connected_dialogue": self.connected_dialogue if self.connected_dialogue else {}
             }
 
