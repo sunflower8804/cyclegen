@@ -410,7 +410,10 @@ class Clan():
             for clan_cat in game.clan.clan_cats:
                 clan_cat_cat = Cat.fetch_cat(clan_cat)
                 if clan_cat_cat:
-                    clan_cat_cat.faith -= round(random.uniform(0,1), 2)
+                    if game.clan.followingsc:
+                        clan_cat_cat.faith += round(random.uniform(0,1), 2)
+                    else:
+                        clan_cat_cat.faith -= round(random.uniform(0,1), 2)
         game.switches['new_leader'] = None
 
     def new_deputy(self, deputy):

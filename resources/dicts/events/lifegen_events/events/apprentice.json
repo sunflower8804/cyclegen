@@ -27,32 +27,66 @@
         "d_n paises your progress and states that they've only heard good things from m_n.",
         "d_n suggests that putting in more effort into your training would be beneficial for you.",
         "y_p reminisces about your time in the nursery and how you used to be no bigger than their paw.",
-        "You and r_a roll your eyes when r_e rambles on and on about the 'olden' days."
+        "You and r_a roll your eyes when r_e rambles on and on about the 'olden' days.",
+        "You accidentally scare off a rabbit while out hunting with m_n. They sigh in exasperation but patiently explain how to avoid making noise next time.",
+        "r_a confides in you about their worries of becoming a warrior.",
+        "While battle training, you execute a complex move perfectly on your first try. m_n praises you enthusiastically in front of the other apprentices.",
+        "You spend an enjoyable afternoon playing mossball with the r_k and teaching them some basic hunting crouches.",
+        "y_p pulls you aside to give you advice before an assessment. Their eyes shine with pride as they nuzzle you affectionately."
     ],
     "apprentice assertive": [
         "You ask m_n if they can teach you a specific lesson on battle moves this moon.",
         "You ask m_n if they can teach you a specific lesson on hunting birds this moon.",
         "r_d gives you a quick lesson on mediation and you boldly test out their techniques the next time your denmates argue.",
-        "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. Eager to prove your worth, you confidently chime in with your own observations."
-
+        "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. Eager to prove your worth, you confidently chime in with your own observations.",
+        "You boldly suggest a new hunting strategy during a patrol. m_n is impressed by your creativity and initiative."
     ],
     "apprentice brooding": [
         "r_d gives you a quick lesson on mediation but you don't bother to listen. Their techniques don't work, anyway.",
-        "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. You listen in silence, occassionally giving a curt nod."
+        "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. You listen in silence, occassionally giving a curt nod.",
+        "You sulk in your nest, questioning whether you're truly cut out to be a warrior after a mistake during training.",
+        "Jealousy swells in your chest as you watch m_n praising r_a. You wonder bitterly if you'll ever be good enough."
     ],
     "apprentice cool": [
         "You wonder if you look cool and mysterious to other cats while you strut across the camp clearing.",
         "r_d gives you a quick lesson on mediation but you feel like you already know all of what they're lecturing.",
-        "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. While you doubt you'll ever use the knowledge, you listen with practiced nonchalance."
-
+        "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. While you doubt you'll ever use the knowledge, you listen with practiced nonchalance.",
+        "Trotting into camp with an impressive catch, you accept your Clanmates' compliments with a flick of your tail."
     ],
     "apprentice upstanding": [
         "r_d gives you a quick lesson on mediation and you listen to the lecture with the same diligence as any other training session.",
-        "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. You sit upright, your posture rigid, determination etched on your face as you absorb every word with unwavering focus."
+        "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. You sit upright, your posture rigid, determination etched on your face as you absorb every word with unwavering focus.",
+        "Despite your exhaustion, you volunteer for an extra dawn patrol to ensure the Clan's safety."
     ],
-    "apprentice introspective": [],
-    "apprentice neurotic": [],
-    "apprentice silly": [],
+    "apprentice introspective": [
+        "When m_n pushes you harder in training, you take it in stride, knowing they only want to help you improve.",
+        "During a quiet moment, you find yourself pondering the meaning of the warrior code and your place within the Clan.",
+        "You have a thoughtful discussion with r_e about the nature of life and death.",
+        "You spend time observing the medicine cat, r_m, and contemplate the importance of their role in the Clan.",
+        "You find yourself drawn to stargazing, finding peace in the vastness of Silverpelt."
+    ],
+    "apprentice neurotic": [
+        "You start a daily routine of practicing relaxation techniques.",
+        "You wake up in a cold sweat, convinced that you forgot to do an important task for m_n, only to realize it was just a dream.",
+        "During battle training, you become so anxious about making a mistake that you freeze up, missing an easy dodge.",
+        "You obsess over a small comment r_c made, convincing yourself that they secretly hate you and are plotting against you.",
+        "After a less than perfect hunting session, you spiral into self-doubt, wondering if you're cut out to be a warrior at all.",
+        "You constantly second-guess your decisions, worrying that your choices will lead to disaster for the Clan.",
+        "m_n praises your attention to detail and dilligence.",
+        "You lie awake at night, replaying every interaction you had that day.",
+        "When r_m asks about a minor injury, you convince yourself that you have a life-threatening illness.",
+        "After a successful hunting patrol, you realize that your fears about being a bad hunter were unfounded, and you start to trust your skills more.",
+        "You open up to y_p about your insecurities, and they share stories of their own struggles as an apprentice, helping you feel less alone.",
+        "When you make a mistake during training, m_n gently encourages you to keep trying, emphasizing that failure is a normal part of the learning process.",
+        "You realize that your attention to detail and tendency to double-check your work makes you a thorough and reliable apprentice, and you start to appreciate these qualities in yourself."
+    ],
+    "apprentice silly": [
+        "You put a beetle in r_a's nest as a prank, giggling uncontrollably when they leap up in surprise.",
+        "During a hunting lesson, you pounce on a leaf, pretending it's the fiercest prey in the forest.",
+        "You convince the other apprentices to join you in a game of 'catch the falling feather,' leaping and tumbling around the camp.",
+        "You make up silly nicknames for all your Clanmates, like 'Fluffy' for r_w and 'Grumpywhiskers' for r_e.",
+        "When r_m is stressed, you volunteer to help sort herbs, making up silly songs about each plant to lighten the mood."
+    ],
     "apprentice stable": [
         "You hope this headache is short lived so you can get back to training. You've already been stuck in your nest long enough.",
         "You groom your fur carefully hoping to impress your crush.",
@@ -68,9 +102,19 @@
         "With a cautious gaze, you watch as m_n talks with your parents. Anxiety tugs at your chest... Oh StarClan, what are they saying?",
         "You leave some prey you caught in y_p's nest as a gift. Later they come up to you and gently rest their head on yours, you snuggle into their warm embrace."
     ],
-    "apprentice sweet": [],
+    "apprentice sweet": [
+        "You make a point to compliment your denmates every day.",
+        "You leave little gifts like pretty feathers or smooth stones in your Clanmates' nests to brighten their day.",
+        "You spend your free time making moss beds for the elders, ensuring they have the softest nests in the Clan.",
+        "When r_a is feeling down, you sit with them all night, offering a listening ear.",
+        "You always make sure to thank m_n for their lessons, even when you're exhausted from training.",
+        "After a hard day of training, you offer to groom r_a's pelt, knowing how much they appreciate a little pampering.",
+        "When r_a is struggling with a battle move, you offer to practice with them, patiently walking them through the steps until they get it right."
+    ],
     "apprentice unabashed": [
-        "You hide in the bushes then stick out a foreleg and trip r_w on purpose."
+        "You hide in the bushes then stick out a foreleg and trip r_w on purpose.",
+        "During a Gathering, you boast about your hunting skills to apprentices from other Clans.",
+        "Much to m_n's horror, you boldly ask the l_n if you can lead the next patrol."
     ],
     "apprentice unlawful": [
         "You kill some prey on o_cClan's territory on purpose.",
@@ -79,6 +123,7 @@
     "apprentice rare": [
         "While hunting with r_a, you catch a squirrel and find a whole nest after looking in the tree they came from! You and r_a bring back plenty of prey.",
         "You wonder if becoming a warrior is truly the path you are destined for.",
-        "After an arguement between you and m_n, you find yourself crying yourself to sleep that night."
+        "After an arguement between you and m_n, you find yourself crying yourself to sleep that night.",
+        "When a dog threatens the camp, you tap into a hidden courage, luring it away from the nursery despite your fear."
     ]
 }

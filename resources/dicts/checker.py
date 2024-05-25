@@ -11,9 +11,9 @@ you_backstory_list = [
     "you_outsiderroots",
     "you_half-Clan",
     "you_formerlyloner",
-    "you_formerlyrogue",
-    "you_formerlykittypet",
-    "you_formerlyoutsider",
+    "you_formerlyarogue",
+    "you_formerlyakittypet",
+    "you_formerlyaoutsider",
     "you_originallyanotherclan",
     "you_orphaned",
     "you_abandoned"

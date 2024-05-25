@@ -150,6 +150,7 @@ def json_load():
             new_cat.no_kits = cat["no_kits"] if "no_kits" in cat else False
             new_cat.no_mates = cat["no_mates"] if "no_mates" in cat else False
             new_cat.no_retire = cat["no_retire"] if "no_retire" in cat else False
+            new_cat.no_faith = cat["no_faith"] if "no_faith" in cat else False
             new_cat.exiled = cat["exiled"]
             new_cat.shunned = cat["shunned"]
 
@@ -198,6 +199,7 @@ def json_load():
             new_cat.df_mentor = cat["df_mentor"] if "df_mentor" in cat else None
             new_cat.df_apprentices = cat["df_apprentices"] if "df_apprentices" in cat else []
             new_cat.faith = cat["faith"] if "faith" in cat else random.randint(-3,3)
+            new_cat.connected_dialogue = cat["connected_dialogue"] if "connected_dialogue" in cat else {}
             if "died_by" in cat or "scar_event" in cat or "mentor_influence" in cat:
                 new_cat.convert_history(
                     cat["died_by"] if "died_by" in cat else [],

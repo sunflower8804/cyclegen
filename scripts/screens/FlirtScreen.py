@@ -361,9 +361,9 @@ class FlirtScreen(Screens):
             "you_outsiderroots",
             "you_half-Clan",
             "you_formerlyloner",
-            "you_formerlyrogue",
-            "you_formerlykittypet",
-            "you_formerlyoutsider",
+            "you_formerlyarogue",
+            "you_formerlyakittypet",
+            "you_formerlyaoutsider",
             "you_originallyanotherclan",
             "you_orphaned",
             "you_abandoned"
@@ -478,6 +478,10 @@ class FlirtScreen(Screens):
                     if cat.ID in you.mate:
                         fam = True
                 if not fam:
+                    continue
+            
+            if "has_mate" in tags:
+                if not cat.mate:
                     continue
 
             murdered_them = False

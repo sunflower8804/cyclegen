@@ -30,6 +30,31 @@
             "Thanks y_c, it means a lot!"
         ]
     },
+    "flower~2": {
+        "tags": [
+            "Any",
+            "connected"
+        ],
+        "intro": [
+            "Hey... What's your favorite color between purple and golden?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Purple.",
+                "next_scene": "purple"
+            },
+            "choice2": {
+                "text": "Golden.",
+                "next_scene": "golden"
+            }
+        },
+        "purple": [
+            "Alright! Purple!"
+        ],
+        "golden": [
+            "Alright! Golden!"
+        ]
+    },
     "leader_inquiry": {
         "tags": [
             "no_kit",
@@ -1491,7 +1516,8 @@
     },
     "assertivewarrior_leader3": {
         "tags": [
-            "leader",
+            "you_leader",
+            "they_any",
             "assertive",
             "silly",
             "unabashed",

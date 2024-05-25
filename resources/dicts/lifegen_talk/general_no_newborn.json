@@ -1704,5 +1704,54 @@
         [
             "You're evil, y_c."
         ]
+    ],
+    "flower~1": [
+        [
+            "Any"
+        ],
+        [
+            "I'm going to go collect some flowers!"
+        ]
+    ],
+    "flower~3": [
+        [
+            "Any",
+            "connected"
+        ],
+        [
+            "Remember when I said I was going to collect some flowers? And asked you what your favorite color is?",
+            "[t_c holds out a flower crown of your preferred color.]",
+            "I made you this!"
+        ]
+    ],
+    "flower~4": [
+        [
+            "Any",
+            "connected"
+        ],
+        [
+            "Still have that flower crown I gave you?",
+            "Oh! You do! I'm so happy!"
+        ]
+    ],
+    "flower~5": [
+        [
+            "Any",
+            "connected"
+        ],
+        [
+            "Ah... the flower crown is wilting.",
+            "Don't worry! I'll make another one!"
+        ]
+    ],
+    "multi_character": [
+        [
+            "Any"
+        ],
+        [
+            "Hey y_c! Me and r_c were just talking to each other.",
+            "|r_c|Hi, y_c!",
+            "Want to join us?"
+        ]
     ]
 }

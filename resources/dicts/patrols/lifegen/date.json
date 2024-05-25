@@ -1380,7 +1380,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "poly date",
+        "patrol_art": "poly_date_default",
         "min_cats": 3,
         "max_cats": 3,
         "min_max_status": {},
@@ -1403,7 +1403,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "You, r_c, and o_c1 did not have a good time.",
+                "text": "You, r_c, and o_c1 did not have a good time. ",
                 "exp": 0,
                 "weight": 20
             }
@@ -1422,7 +1422,7 @@
         ],
         "tags": [
         ],
-        "patrol_art": "date_default",
+        "patrol_art": "poly_date_default",
         "min_cats": 3,
         "max_cats": 3,
         "min_max_status": {},
@@ -1455,6 +1455,52 @@
         ]
     },
     {
+        "patrol_id": "poly_date_J3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "poly_date_default",
+        "min_cats": 3,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "oc_1 and r_c are settling down for an afternoon nap together. It looks cosy-- you wonder if they'd let you join them.",
+        "decline_text": "You decide instead to settle down on your own, knowing they probably wouldn't want to be seen cuddling with you.",
+        "chance_of_success": 60,
+        "success_outcomes": [
+            {
+                "text": "You shyly approach the two, and, through a yawn, r_c says the more the merrier, and o_c1 agrees. As you settle down, you feel a tail wrap around your back, and you fall asleep with a smile.",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 10
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You approach them and ask if there's room for one more, but they share an awkward glance and tell you that three cats in one pile would get too warm, or something like that.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
         "patrol_id": "shunned_poly_date_J1",
         "biome": [
             "Any"
@@ -1468,7 +1514,7 @@
         ],
         "tags": [
         ],
-        "patrol_art": "date_default",
+        "patrol_art": "poly_date_default",
         "min_cats": 3,
         "max_cats": 3,
         "min_max_status": {},
@@ -1501,6 +1547,52 @@
         "fail_outcomes": [
             {
                 "text": "You approach r_c first, but {PRONOUN/r_c/subject} {VERB/r_c/tell/tells} you {PRONOUN/r_c/subject}'d rather stay alone today. o_c1 says the same, and you can't help but feel self conscious about the back-to-back rejection.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "shunned_poly_date_J2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "poly_date_default",
+        "min_cats": 3,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "oc_1 and r_c are settling down for an afternoon nap together. It looks cosy-- you wonder if they'd let you join them.",
+        "decline_text": "You decide instead to settle down on your own, knowing they probably wouldn't want to be seen cuddling with you.",
+        "chance_of_success": 60,
+        "success_outcomes": [
+            {
+                "text": "You shyly approach the two, and, through a yawn, r_c says the more the merrier, and o_c1 agrees. As you settle down, you feel a tail wrap around your back, and you fall asleep with a smile.",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 10
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You approach them and ask if there's room for one more, but they share an awkward glance and tell you that you probably shouldn't be sleeping anywhere but your nest at the edge of camp.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1547,6 +1639,142 @@
         "fail_outcomes": [
             {
                 "text": "You approach r_c to ask {PRONOUN/r_c/object} out, but before you can even finish speaking, {PRONOUN/r_c/subject} {VERB/r_c/react/reacts} with a 'no' so loud that a few Clanmates turn to look. You quickly retreat, returning to your nest and trying to get the humiliation out of your mind.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "shunned_date_J2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "date_default",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "In a rare moment of joy during your punishment, you and r_c are in the camp clearing, rolling around in the sun and laughing together. You think {PRONOUN/r_c/poss} fur is so beautiful when the sun hits it just right, but you think it might be weird to tell them that.",
+        "decline_text": "You look away. Now isn't the time.",
+        "chance_of_success": 60,
+        "relationship_constraint": ["not_mates"],
+        "success_outcomes": [
+            {
+                "text": "When you tell r_c how beautiful {PRONOUN/r_c/subject} {VERB/r_c/look/looks}, {PRONOUN/r_c/subject} {VERB/r_c/laugh/laughs} flustered, and {VERB/r_c/tell/tells} you that you look the same.",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 10
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You tell r_c how beautiful {PRONOUN/r_c/subject} {VERB/r_c/look/looks}, but upon hearing it, {PRONOUN/r_c/subject} {VERB/r_c/stand/stands} up and {VERB/r_c/step/steps} into the shade. {PRONOUN/r_c/subject/CAP} {VERB/r_c/say/says} that you shouldn't be advancing on anycat like that, given your situation.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "When you tell {PRONOUN/r_c/object} how you feel, r_c rolls away, suddenly avoiding eye contact. You can see {PRONOUN/r_c/object} hiding a smile, but, noticing the stares of a few nearby Clanmates, {PRONOUN/r_c/subject} {VERB/r_c/stand/stands} and {VERB/r_c/run/runs} away without a word. {PRONOUN/r_c/subject/CAP} must be embarrassed to be recieving affection from a killer.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "shunned_date_J3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "date_default",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Not a lot of cats will spend time with you these days, but r_c is still here. At the edge of camp, you've become a single bundle of fur as r_c licks the top of your head. No one has seen you here yet, but you're worried that, if they do, r_c will get in trouble for being so kind to you.",
+        "decline_text": "Though you appreciate the comfort, you seperate yourself from r_c from about a tail length so that {PRONOUN/r_c/subject} won't get in trouble if you're spotted. You're much colder now, and {PRONOUN/r_c/subject} {VERB/r_c/look/looks} a bit sad.",
+        "chance_of_success": 50,
+        "relationship_constraint": ["mates"],
+        "success_outcomes": [
+            {
+                "text": "You can't bring yourself to tear yourself away from {PRONOUN/r_c/subject}. You fall asleep, cradled by r_c, and when you wake up again, it's been several hours and r_c is still here. None of your Clanmates must feel the need to seperate you.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You begin falling asleep, cradled by r_c, but just as you're drifting off, you hear a Clanmate call out, wondering where r_c is. Though you understand, you're saddened when {PRONOUN/r_c/subject} {VERB/r_c/have/has} to get up and join the rest of {PRONOUN/r_c/poss} unshunned Clanmates.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "shunned_date_J4",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "date_default",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "It's been ages since you've been able to leave the camp, but you want to see the sunset again. You express this want to r_c as you sit together by the edge of camp, and {PRONOUN/r_c/subject} {VERB/r_c/tell/tells} you that {PRONOUN/r_c/subject} can help you climb up into a tree for a better view, if you'd like.",
+        "decline_text": "You decline, worried that you jumping into a tree at the edge of camp might appear as though you're trying to escape. You want to stay on the Clan's good side right now.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You agree to the idea, and r_c leads you to a thick tree in the corner of camp. {PRONOUN/r_c/subject/CAP} {VERB/r_c/jump/jumps} onto a low branch, and you follow {PRONOUN/r_c/subject} up the trunk until you're at the top of the world. A Clanmate from the ground asks r_c what {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} doing, but {PRONOUN/r_c/subject} {VERB/r_c/dismiss/dismisses} them and {VERB/r_c/give/gives} your cheek a lick as you gawk at the colourful clouds. You tell r_c how beautiful you think it is, and {PRONOUN/r_c/subject} {VERB/r_c/reply/replies} that {PRONOUN/r_c/subject} {VERB/r_c/think/thinks} you're prettier.",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 10
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You agree, but as r_c leads you to a tree in the corner of camp, r_w calls out to you, requesting that you don't go anywhere they can't keep an eye on you. You sigh and follow r_c back into the centre of the camp, where you spend the sunset trying to catch a glimpse of it through the trees.",
                 "exp": 0,
                 "weight": 20
             }

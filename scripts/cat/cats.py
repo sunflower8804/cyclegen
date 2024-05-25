@@ -215,7 +215,6 @@ class Cat():
         self.permanent_condition = {}
         self.df = False
         self.experience_level = None
-        self.no_kits = False
         self.w_done = False
         self.talked_to = False
         self.insulted = False
@@ -227,6 +226,7 @@ class Cat():
         self.no_kits = False
         self.no_mates = False
         self.no_retire = False
+        self.no_faith = False
         self.backstory_str = ""
         self.courage = 0
         self.compassion = 0
@@ -236,6 +236,7 @@ class Cat():
         self.df_mentor = None
         self.df_apprentices = []
         self.faith = randint(-3, 3)
+        self.connected_dialogue = {}
         
         self.prevent_fading = False  # Prevents a cat from fading.
         self.faded_offspring = []  # Stores of a list of faded offspring, for family page purposes.
@@ -1571,7 +1572,7 @@ class Cat():
         
         if old_age != self.age:
             # Things to do if the age changes
-            self.personality.facet_wobble(max=2)
+            self.personality.facet_wobble(max=1)
         
         # Set personality to correct type
         self.personality.set_kit(self.is_baby())
@@ -3390,7 +3391,9 @@ class Cat():
                 "did_activity": self.did_activity if self.did_activity else False,
                 "df_mentor": self.df_mentor if self.df_mentor else None,
                 "df_apprentices": self.df_apprentices if self.df_apprentices else [],
-                "faith": self.faith if self.faith else 0
+                "faith": self.faith if self.faith else 0,
+                "no_faith": self.no_faith if self.no_faith else False,
+                "connected_dialogue": self.connected_dialogue if self.connected_dialogue else {}
             }
 
 
@@ -3610,7 +3613,15 @@ class Personality():
             possible_traits.append(trait)
             
         if possible_traits:
-            self.trait = choice(possible_traits)
+            for i in range(5):
+                new_trait = choice(possible_traits)
+                new_trait_cluster1, new_trait_cluster2 = get_cluster(new_trait)
+                trait_cluster1, trait_cluster2 = get_cluster(self.trait)
+                if any(cluster in [trait_cluster1, trait_cluster2] for cluster in [new_trait_cluster1, new_trait_cluster2]):
+                    break
+                else:
+                    new_trait = choice(possible_traits)
+            self.trait = new_trait
         else:
             print("No possible traits! Using 'strange'")
             self.trait = "strange"

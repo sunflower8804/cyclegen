@@ -295,11 +295,11 @@ class EventsScreen(Screens):
         self.update_display_events_lists()
 
         self.heading = pygame_gui.elements.UITextBox("",
-                                                     scale(pygame.Rect((200, 220), (1200, 80))),
+                                                     scale(pygame.Rect((600, 220), (400, 80))),
                                                      object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                      manager=MANAGER)
         self.season = pygame_gui.elements.UITextBox('',
-                                                    scale(pygame.Rect((200, 280), (1200, 80))),
+                                                    scale(pygame.Rect((600, 280), (400, 80))),
                                                     object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                     manager=MANAGER)
         self.clan_age = pygame_gui.elements.UITextBox("",
@@ -307,7 +307,7 @@ class EventsScreen(Screens):
                                                       object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                       manager=MANAGER)
         self.leaf = pygame_gui.elements.UITextBox("leafbare",
-                                                      scale(pygame.Rect((400, 340), (800, 80))),
+                                                      scale(pygame.Rect((500, 340), (600, 80))),
                                                       object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                       manager=MANAGER)
  
@@ -467,6 +467,8 @@ class EventsScreen(Screens):
         del self.season
         self.leaf.kill()
         del self.leaf
+        self.heading.kill()
+        del self.heading
         self.event_container.kill()
         self.cat_icon.kill()
         del self.cat_icon

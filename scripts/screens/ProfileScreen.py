@@ -12,7 +12,7 @@ from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 
 import ujson
 
-from scripts.utility import event_text_adjust, scale, ACC_DISPLAY, process_text, chunks
+from scripts.utility import event_text_adjust, scale, ACC_DISPLAY, process_text, chunks, get_cluster
 
 from .Screens import Screens
 
@@ -1210,14 +1210,17 @@ class ProfileScreen(Screens):
                         self.profile_elements["flirt"].enable()
 
         if self.the_cat.ID == game.clan.your_cat.ID and not game.clan.your_cat.dead and not game.clan.your_cat.outside:
+            if self.open_tab == "faith":
+                self.close_current_tab()
             self.placeholder_tab_3.kill()
             self.profile_elements['your_tab'] = UIImageButton(scale(pygame.Rect((800, 1244), (352, 60))), "",
                                             object_id="#your_tab", starting_height=1, manager=MANAGER)
             self.your_tab = self.profile_elements['your_tab']
+            
         else:
             if self.open_tab == 'your tab':
                 self.close_current_tab()
-            if self.open_tab == "faith" and (self.the_cat.dead  or self.the_cat.outside or self.the_cat.moons < 6):
+            if self.open_tab == "faith" and (self.the_cat.dead or self.the_cat.outside or self.the_cat.moons < 6):
                 self.close_current_tab()
             self.placeholder_tab_3.kill()
             self.placeholder_tab_3 = None
@@ -2473,6 +2476,8 @@ class ProfileScreen(Screens):
         if self.faith_bar and self.faith_text:
             self.faith_bar.kill()
             self.faith_text.kill()
+        if self.the_cat.no_faith:
+            self.the_cat.faith = 0
         cat_faith = round(self.the_cat.faith)
         if cat_faith > 9:
             cat_faith = 9
@@ -2487,28 +2492,13 @@ class ProfileScreen(Screens):
                                                         line_spacing=1, manager=MANAGER)
         
     def get_faith_text(self, faith):
-        faith_dict = {
-            "-9": "This cat's devotion to the Dark Forest is unshakable and absolute.",
-            "-8": "Nearly all devotion has been redirected towards the Dark Forest. This cat sees StarClan's ways as hopelessly weak and obsolete.",
-            "-7": "Lured in by the Dark Forest's promises of power, this cat willingly walks its terrible path.",
-            "-6": "This cat believes the Dark Forest's teachings will help them gain strength and security for their Clan, even if the methods make them uneasy.",
-            "-5": "Driven by the Dark Forest's pull, this cat lives in an moral crisis, constantly wavering between noble and dark impulses.",
-            "-4": "A growing doubt in their mind makes this cat question if the Dark Forest's ways could be justified as merely a different path.",
-            "-3": "In moments of weakness, this cat fantasizes about the strength and freedom the Dark Forest could offer.",
-            "-2": "Curiosity about the Dark Forest's power nags at the back of this cat's mind from time to time.",
-            "-1": "While not fully convinced, this cat sometimes wonders if the Dark Forest exists to tempt them away from the warrior code.",
-            "0": "This cat has no belief or reverence for StarClan or the Dark Forest.",
-            "1": "While not actively disbelieving, this cat is highly skeptical of StarClan's existence. They follow Clan rituals out of tradition rather than true faith.",
-            "2": "This cat is undecided on whether StarClan is truly watching over them. They keep an open mind but need more proof to be fully convinced.",
-            "3": "There are times this cat feels StarClan's presence. Their faith waxes and wanes periodically.",
-            "4": "This cat leans towards believing in StarClan more often than not.",
-            "5": "This cat holds a steady faith that StarClan watches over the Clans. This cat often looks for signs their ancestors are guiding them.",
-            "6": "A firmly devout believer, this cat has faith that StarClan exists.",
-            "7": "Beyond just believing, this cat actively searches for signs and omens from StarClan to guide their actions and that of their Clanmates",
-            "8": "StarClan's wisdom and approval guide every aspect of this cat's life.",
-            "9": "This cat's devotion to StarClan is unshakable and absolute."
-        }
-        return faith_dict[str(faith)]
+        faith_dict = {}
+        with open("resources/dicts/faith_display.json", "r") as read_file:
+            faith_dict = ujson.loads(read_file.read())
+            cluster1, cluster2 = get_cluster(self.the_cat.personality.trait)
+        if faith == 0:
+            return faith_dict[str(faith)]["All"]
+        return faith_dict[str(faith)][str(cluster1)]
     
     def toggle_accessories_tab(self):
         """Opens accessories tab"""

@@ -359,8 +359,7 @@ class Patrol():
             elif clan_hostile:
                 possible_patrols.extend(self.generate_patrol_events(self.OTHER_CLAN_HOSTILE))
 
-        if game.current_screen == 'patrol screen' or game.current_screen == 'patrol screen2' or game.current_screen =='patrol screen3' or game.current_screen =='patrol screen4':
-            final_patrols, final_romance_patrols = self.get_filtered_patrols(possible_patrols, biome, camp, current_season,
+        final_patrols, final_romance_patrols = self.get_filtered_patrols(possible_patrols, biome, camp, current_season,
                                                                             patrol_type)
             
 
@@ -393,10 +392,8 @@ class Patrol():
                       f'"{game.config["patrol_generation"]["debug_ensure_patrol_id"]}" '
                       "is not a possible romantic patrol.")
             
-        if game.current_screen == 'patrol screen2' or game.current_screen =='patrol screen3' or game.current_screen =='patrol screen4':
-            return final_patrols, final_romance_patrols
+        return final_patrols, final_romance_patrols
             
-        return possible_patrols, []
 
     def _check_constraints(self, patrol: PatrolEvent) -> bool:
         if not self._filter_relationship(patrol):
@@ -649,18 +646,13 @@ class Patrol():
             if flag:
                 continue
             
-            if biome not in patrol.biome and "any" not in patrol.biome:
+            if biome not in patrol.biome and "any" not in patrol.biome and "Any" not in patrol.biome:
                 continue
-            if camp not in patrol.camp and "any" not in patrol.camp:
+            if camp not in patrol.camp and "any" not in patrol.camp and "Any" not in patrol.camp:
                 continue
-            if current_season not in patrol.season and "any" not in patrol.season:
+            if current_season not in patrol.season and "any" not in patrol.season and "Any" not in patrol.season:
                 continue
             if game.current_screen == 'patrol screen':
-
-                if game.clan.your_cat.status == "kitten" and "kit_only" not in patrol.tags:
-                    continue
-                elif game.clan.your_cat.status != "kitten" and "kit_only" in patrol.tags:
-                    continue
 
                 if "bloodthirsty_only" in patrol.tags:
                     if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":
@@ -1140,6 +1132,8 @@ class Patrol():
         }
 
         other_cats = [i for i in self.patrol_cats if i not in [self.patrol_leader, self.patrol_random_cat, game.clan.your_cat]]
+        if game.current_screen == "patrol screen4":
+            other_cats = [i for i in self.patrol_cats if i not in [self.patrol_random_cat, game.clan.your_cat]]
         if len(other_cats) >= 1:
             replace_dict['o_c1'] = (str(other_cats[0].name),
                                     choice(other_cats[0].pronouns))
