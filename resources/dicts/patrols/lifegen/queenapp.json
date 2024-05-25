@@ -1,6 +1,6 @@
 [
     {
-        "patrol_id": "gen_queen_apprentice70",
+        "patrol_id": "life_qapp_og1",
         "biome": [
             "Any"
         ],
@@ -22,7 +22,7 @@
         "success_outcomes": [
             {
                 "text": "Your soothing lullaby calms the distressed kits, allowing them to sleep peacefully. The Clan praises your caring nature.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -35,7 +35,7 @@
         ]
     },
     {
-        "patrol_id": "gen_queen_apprentice66",
+        "patrol_id": "life_qapp_og2",
         "biome": [
             "Any"
         ],
@@ -46,7 +46,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_queenapp_default",
+        "patrol_art": "life_queenapp_og2",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -70,7 +70,7 @@
         ]
     },
     {
-        "patrol_id": "gen_queen_apprentice67",
+        "patrol_id": "life_qapp_og3",
         "biome": [
             "Any"
         ],
@@ -105,7 +105,7 @@
         ]
     },
     {
-        "patrol_id": "gen_queen_apprentice68",
+        "patrol_id": "life_qapp_og4",
         "biome": [
             "Any"
         ],
