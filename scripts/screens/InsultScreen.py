@@ -402,7 +402,7 @@ class InsultScreen(Screens):
             "you_formerlyaloner",
             "you_formerlyarogue",
             "you_formerlyakittypet",
-            "you_formerlyoutsider",
+            "you_formerlyaoutsider",
             "you_originallyanotherclan",
             "you_orphaned",
             "you_abandoned"
@@ -411,10 +411,10 @@ class InsultScreen(Screens):
             "they_clanborn",
             "they_outsiderroots",
             "they_half-Clan",
-            "they_formerlyloner",
-            "they_formerlyrogue",
-            "they_formerlykittypet",
-            "they_formerlyoutsider",
+            "they_formerlyaloner",
+            "they_formerlyarogue",
+            "they_formerlyakittypet",
+            "they_formerlyaoutsider",
             "they_originallyanotherclan",
             "they_orphaned",
             "they_abandoned"
