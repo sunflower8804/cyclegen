@@ -2497,7 +2497,7 @@ class ProfileScreen(Screens):
             faith_dict = ujson.loads(read_file.read())
             cluster1, cluster2 = get_cluster(self.the_cat.personality.trait)
         if faith == 0:
-            faith_dict[str(faith)]["All"]
+            return faith_dict[str(faith)]["All"]
         return faith_dict[str(faith)][str(cluster1)]
     
     def toggle_accessories_tab(self):
