@@ -51,24 +51,6 @@
             "[Still, you sit with them through the night, hoping to stabilize them through whatever storm they might be weathering right now.]"
         ]
     ],
-    "assertive_apprentice8": [
-        [
-            "they_app",
-            "you_app",
-            "platonic_like",
-            "assertive",
-            "silly",
-            "sibling",
-            "adopted_sibling"
-        ],
-        [
-            "Hey, when do you think we'll be getting our full names?",
-            "D'you think, if we ask, the leader would give us matching suffixes? That happens sometimes with siblings, y'know!",
-            "How about ... -cloud for me, and -sneeze for you?",
-            "Or, -mouse for me, and -dung for you!",
-            "[You and t_c dissolve into a fit of giggles.]"
-        ]
-    ],
     "queen_2": [
         [
             "you_kitten",
@@ -78,20 +60,6 @@
         [
             "Come here, little one. Your fur is so spiky!",
             "Hey! Don't run away from me!"
-        ]
-    ],
-    "queen_3": [
-        [
-            "you_kitten",
-            "sweet",
-            "introspective",
-            "they_queen",
-            "they_queen's_apprentice"
-        ],
-        [
-            "My dear kit, being a queen is a role woven from strands of love, sacrifice, and hope. When I look at you, so tiny and curious, my heart swells with dreams and wishes for your future.",
-            "But there's more to being in the nursery than just cuddles and playtime. We queens tell stories, teach values, and instill courage. We prepare little ones like you for the big world outside, with its challenges and triumphs.",
-            "Some nights, when the moon is high and you're nestled close, I wonder what kind of warrior you'll become. Will you be fierce and brave, or wise and gentle? Maybe a mix of both, like the stars in the sky."
         ]
     ],
     "queen_3d": [
@@ -114,6 +82,8 @@
             "sweet",
             "stable",
             "cool",
+            "comfort",
+            "platonic_like",
             "unabashed"
         ],
         [
@@ -127,6 +97,7 @@
             "they_queen",
             "they_queen's_apprentice",
             "brooding",
+            "neutral",
             "you_any"
         ],
         [
@@ -139,7 +110,6 @@
         [
             "no_kit",
             "brooding",
-            "they_queen",
             "they_queen's_apprentice",
             "platonic_love"
         ],
@@ -172,6 +142,7 @@
             "they_queen's_apprentice",
             "you_any",
             "not-related",
+            "neutral",
             "introspective"
         ],
         [
@@ -188,7 +159,6 @@
         [
             "you_any",
             "they_queen's_apprentice",
-            "they_queen",
             "no_kit",
             "clan_has_kits",
             "introspective"
@@ -224,7 +194,6 @@
             "you_any",
             "no_kit",
             "they_queen's_apprentice",
-            "they_queen",
             "clan_has_kits",
             "introspective"
         ],
@@ -242,7 +211,6 @@
             "you_any",
             "no_kit",
             "they_queen's_apprentice",
-            "they_queen",
             "silly",
             "clan_has_kits",
             "introspective"
@@ -277,7 +245,6 @@
             "you_any",
             "assertive",
             "they_queen's_apprentice",
-            "they_queen",
             "neutral",
             "platonic_like"
         ],
@@ -289,9 +256,8 @@
     ],
     "assertive_elder_2": [
         [
-            "you_any",
+            "you_elder",
             "they_queen's_apprentice",
-            "they_queen",
             "assertive",
             "platonic_like",
             "clan_has_kits"
@@ -388,6 +354,10 @@
         [
             "you_mediator_apprentice",
             "you_mediator",
+            "they_queen's_apprentice",
+            "they_apprentice",
+            "they_medicine_cat_apprentice",
+            "they_kitten",
             "assertive",
             "upstanding"
         ],
@@ -429,7 +399,6 @@
     ],
     "assertive_queensapp_8": [
         [
-            "no_kit",
             "clan_has_kits",
             "they_queen's_apprentice",
             "you_queen",
@@ -602,7 +571,6 @@
         [
             "upstanding",
             "they_queen's_apprentice",
-            "they_queen",
             "you_kitten"
         ],
         [
@@ -617,7 +585,6 @@
         [
             "you_newborn",
             "they_queen's_apprentice",
-            "they_queen",
             "sweet"
         ],
         [
@@ -640,7 +607,6 @@
         [
             "you_kitten",
             "they_queen's_apprentice",
-            "they_queen",
             "sweet"
         ],
         [
@@ -677,7 +643,6 @@
     "sweet_queenapp_6": [
         [
             "they_queen's_apprentice",
-            "they_queen",
             "you_any",
             "sweet"
         ],
@@ -692,6 +657,7 @@
             "you_app",
             "they_queen's_apprentice",
             "platonic_like",
+            "comfort",
             "sweet"
         ],
         [
@@ -704,7 +670,8 @@
     "sweet_queenapp_8": [
         [
             "they_queen's_apprentice",
-            "you_any",
+            "you_queen's_apprentice",
+            "platonic_like",
             "no_kit",
             "sweet"
         ],
@@ -782,7 +749,6 @@
     "sweet_queenapp_14": [
         [
             "they_queen's_apprentice",
-            "they_queen",
             "you_medicine_cat_apprentice",
             "you_medicine_cat",
             "sweet"
@@ -884,7 +850,6 @@
         [
             "you_leader",
             "they_queen's_apprentice",
-            "they_queen",
             "sweet"
         ],
         [
@@ -899,7 +864,6 @@
         [
             "you_leader",
             "they_queen's_apprentice",
-            "they_queen",
             "sensitive",
             "sweet"
         ],
@@ -981,7 +945,6 @@
             "no_kit",
             "clan_has_kits",
             "they_queen's_apprentice",
-            "they_queen",
             "you_any",
             "silly",
             "cool"
@@ -997,7 +960,7 @@
             "no_kit",
             "clan_has_kits",
             "they_queen's_apprentice",
-            "they_queen",
+            "platonic_like",
             "you_any",
             "silly"
         ],
@@ -1012,7 +975,6 @@
         [
             "you_kitten",
             "they_queen's_apprentice",
-            "they_queen",
             "silly",
             "unlawful"
         ],
@@ -1026,6 +988,7 @@
         [
             "you_kitten",
             "they_queen's_apprentice",
+            "neutral",
             "silly"
         ],
         [

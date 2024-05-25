@@ -416,20 +416,6 @@
             "Haha, don't look so stressed! I was just joking."
         ]
     ],
-    "assertive_medapp2": [
-        [
-            "medicine cat apprentice",
-            "platonic_like",
-            "romantic_like",
-            "assertive",
-            "sweet",
-            "unabashed"
-        ],
-        [
-            "Hey, y_c ... do you ever get lonely sleeping here in the medicine den all by yourself? I know I would ...",
-            "Tell you what, if you ever get scared or cold in the night, just come over to my den. You can sleep in my nest, with me. Okay?"
-        ]
-    ],
     "assertive_app": [
         [
             "Any",
@@ -506,22 +492,6 @@
             "I'll make all of c_nClan proud!"
         ]
     ],
-    "assertiveapp_leader1": [
-        [
-            "deputy",
-            "leader",
-            "assertive",
-            "unlawful",
-            "brooding",
-            "unabashed",
-            "dislike"
-        ],
-        [
-            "Yeah, right. Like I have to take orders from you!",
-            "You may think you're a warrior, but all you do is sit on your haunches and boss everyone around all day. That's no warrior. That's a coward.",
-            "Go find some other cat to impose on."
-        ]
-    ],
     "assertive_queensapp": [
         [
             "queen's apprentice",
@@ -555,10 +525,12 @@
             "Have fun hanging out with the queens. *Snrk*"
         ]
     ],
-    "assertive_mediator1": [
+    "assertive_mediator3": [
         [
-            "mediator",
-            "mediator apprentice",
+            "you_mediator",
+            "you_mediator_apprentice",
+            "they_any",
+            "no_kit",
             "assertive",
             "dislike",
             "unabashed"
@@ -572,8 +544,12 @@
     ],
     "assertive_mediatorapp": [
         [
-            "mediator apprentice",
-            "mediator",
+            "you_mediator_apprentice",
+            "you_mediator",
+            "they_queen's_apprentice",
+            "they_apprentice",
+            "they_medicine_cat_apprentice",
+            "they_kitten",
             "assertive",
             "upstanding"
         ],
@@ -778,20 +754,20 @@
     ],
     "assertive_apprentice8": [
         [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "kitten",
-            "dislike",
+            "they_app",
+            "you_app",
+            "platonic_like",
             "assertive",
-            "cool",
-            "unlawful"
+            "silly",
+            "sibling",
+            "adopted_sibling"
         ],
         [
-            "Hey, y_c, I dare you to stick your paw into that snakehole!",
-            "What, are you scared?",
-            "Oh StarClan, you're totally scared, aren't you? Hahahaha!",
-            "Hey, everyone! y_c is a total scaredy-cat! Ahahaa!"
+            "Hey, when do you think we'll be getting our full names?",
+            "D'you think, if we ask, the leader would give us matching suffixes? That happens sometimes with siblings, y'know!",
+            "How about ... -cloud for me, and -sneeze for you?",
+            "Or, -mouse for me, and -dung for you!",
+            "[You and t_c dissolve into a fit of giggles.]"
         ]
     ],
     "assertive_apprentice8_2": [
@@ -1239,20 +1215,6 @@
         [
             "Hey, y_c. You're looking smaller than usual. Maybe it's time to catch up on your training.",
             "*Snrk.*"
-        ]
-    ],
-    "assertive_elder": [
-        [
-            "Any",
-            "assertive",
-            "upstanding",
-            "stable",
-            "dislike",
-            "neutral"
-        ],
-        [
-            "*Sigh* Can't you see I have more important things to do, y_c?",
-            "Go back to catching mice, or whatever."
         ]
     ],
     "assertive_apprentice4_2": [
