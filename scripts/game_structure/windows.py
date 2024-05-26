@@ -1437,6 +1437,8 @@ class DeathScreen(UIWindow):
         self.mediator_button.enable()
         if game.clan.your_cat.revives < 5:
             self.mediator_button2.enable()
+        if (game.clan.your_cat.dead_for >= game.config["fading"]["age_to_fade"]) and game.clan.your_cat.prevent_fading == False:
+            self.mediator_button2.disable()
         self.mediator_button3.enable()
 
     def process_event(self, event):
