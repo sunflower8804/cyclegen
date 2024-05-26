@@ -56,9 +56,9 @@
             "no_kit"
         ],
         [
-            "[t_c butts their ghostly head against yours.]",
-            "[You can't tell if being able to see them as a ghost makes you more happy or sad.]",
-            "[Their pelt is translucent, lacking any colour or feeling...]",
+            "[t_c butts {PRONOUN/t_c/poss} ghostly head against yours.]",
+            "[You can't tell if being able to see {PRONOUN/t_c/object} as a ghost makes you more happy or sad.]",
+            "[{PRONOUN/t_c/poss/CAP} pelt is translucent, lacking any colour or feeling...]",
             "[You miss the living t_c. So, so much.]"
         ]
     ],
@@ -207,8 +207,8 @@
         ],
         [
             "Aah!",
-            "[You turn your head when you hear a small yelp. t_c is slowly floating towards you, nearly a tail-length off of the ground. Their paws are swinging wildly in the air as they try to ground themselves.]",
-            "[Though you weren't sure it would, their ghostly pelt reacts to your touch and you're able to gently push them back onto the ground.]",
+            "[You turn your head when you hear a small yelp. t_c is slowly floating towards you, nearly a tail-length off of the ground. {PRONOUN/t_c/poss/CAP} paws are swinging wildly in the air as {PRONOUN/t_c/subject} {VERB/t_c/try/tries} to ground {PRONOUN/t_c/self}.]",
+            "[Though you weren't sure it would, {PRONOUN/t_c/poss} ghostly pelt reacts to your touch and you're able to gently push {PRONOUN/t_c/object} back onto the ground.]",
             "Whoa! Thanks, Clancat! That was super scary.",
             "It was kind of fun, though... I'm gonna try again."
         ]
@@ -261,7 +261,7 @@
         [
             "Die! Die! Die! Die! Die!",
             "[Alarmed, you sprint over to where the commotion is.]",
-            "[You find t_c stomping on an ant colony, but their paws pass harmlessly through them.]"
+            "[You find t_c stomping on an ant colony, but {PRONOUN/t_c/poss} paws pass harmlessly through them.]"
         ]
     ],
     "alive_urourside_c": [
@@ -339,9 +339,9 @@
         ],
         [
             "[A queen has noticed a strange newborn amongst the regulars. You already knew t_c was there.]",
-            "[You snuggle closer to them, laying your tiny head on the small of their back.]",
+            "[You snuggle closer to {PRONOUN/t_c/object}, laying your tiny head on the small of {PRONOUN/t_c/poss} back.]",
             "[t_c yawns cutely.]",
-            "[The queen can't bring themselves to separate you two for the moment.]"
+            "[The queen can't bring themself to separate you two for the moment.]"
         ]
     ],
     "sckit_urnew_R3": [
@@ -354,8 +354,8 @@
         ],
         [
             "Mew. Mew. Mew. Mew. Mew. Mew. Meeeew.",
-            "[Is that... t_c? Aren't they a kittypet? You heard one of the queens say that before.]",
-            "[They're mewing with each step as they go past. Maybe they're counting...?]",
+            "[Is that... t_c? {VERB/t_c/Aren't/Isn't} {PRONOUN/t_c/subject} a kittypet? You heard one of the queens say that before.]",
+            "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} mewing with each step as {PRONOUN/t_c/subject} {VERB/t_c/go/goes} past. Maybe {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} counting...?]",
             "[... Can newborns count?]",
             "[t_c toddles off, unaware of the existential thoughts going through your head because of them.]"
         ]
@@ -372,8 +372,8 @@
             "[In the middle of a scavenger hunt, you stumble across t_c!]",
             "[... Well... It wouldn't hurt to have a friend to join you!]",
             "Mew?",
-            "[You pick up t_c and help them tag along for the game. You don't win, but they seemed to have had lots of fun, and that makes it worth it!]",
-            "[You take them back to the border with a cheerful goodbye.]",
+            "[You pick up t_c and help {PRONOUN/t_c/object} tag along for the game. You don't win, but {PRONOUN/t_c/subject} seemed to have had lots of fun, and that makes it worth it!]",
+            "[You take {PRONOUN/t_c/object} back to the border with a cheerful goodbye.]",
             "Mew mew! Meeew!"
         ]
     ],
@@ -386,10 +386,10 @@
             "they_kittypet"
         ],
         [
-            "[One of the queens asks you for a favor since they're alone with the newborns right now. t_c has wandered in, but it's time for them to go home.]",
-            "[The little kittypet wriggles as you struggle to carry them to the border.]",
+            "[One of the queens asks you for a favor since they're alone with the newborns right now. t_c has wandered in, but it's time for {PRONOUN/t_c/object} to go home.]",
+            "[The little kittypet wriggles as you struggle to carry {PRONOUN/t_c/object} to the border.]",
             "Meeeww! Meeewwww! Mew! Mew! Meerroooow!",
-            "[They're certainly grumpy today!]"
+            "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} certainly grumpy today!]"
         ]
     ],
     "dead_outsider_J17": [
@@ -408,7 +408,7 @@
         ],
         [
             "Oh, hey there! You're cute.",
-            "[You wonder what t_c is doing here when they don't smell like a Clan cat.]"
+            "[You wonder what t_c is doing here when {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} smell like a Clan cat.]"
         ]
     ],
     "you_living_they_outsider_sc_CM1": [
@@ -417,9 +417,9 @@
             "any"
         ],
         [
-            "[t_c is staring around them, their eyes wide as they watch starry-pelted cats walk by. Suddenly, they turn to you, seeming surprised.]",
+            "[t_c is staring at {PRONOUN/t_c/poss} surroundings, eyes wide as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} starry-pelted cats walk by. Suddenly, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to you, seemingly surprised.]",
             "Oh! t_c! Are you -- No, it's not your time yet.",
-            "[You slowly recognize that this is a cat that you've never seen nor heard of before. You gently question why they're here.]",
+            "[You slowly recognize that this is a cat that you've never seen nor heard of before. You gently question why {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} here.]",
             "I don't know, but no one seems to mind.",
             "No matter that I wasn't one of you in life, if I ended up here... It must be my duty to protect you.",
             "So I will."
