@@ -149,15 +149,15 @@
         "thoughts": [
             "Knows {PRONOUN/m_c/subject} didn't need anyone's assistance to become leader",
             "Feels a sense of pride in Clanmates respecting and admiring {PRONOUN/m_c/object}",
-            "Is flustered by tripping over {PRONOUN/m_c/poss} paws",
-            "Puffing up {PRONOUN/m_c/poss} chest, declearing {PRONOUN/m_c/subject}{VERB/m_c/'s/'re} better than anyone",
+            "Is flustered after tripping over {PRONOUN/m_c/poss} paws",
+            "Is puffing up {PRONOUN/m_c/poss} chest, declaring that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} better than anyone",
             "Isn't ashamed threatening Clanmates that with a flick of a paw, they can be exiled",
             "Wants to make sure everyone ask {PRONOUN/m_c/object} permission before doing anything",
             "Demands to get the best moss and first pick of the prey pile",
-            "Believes {PRONOUN/m_c/poss} Clan is better because {PRONOUN/m_c/subject} {VERB/m_c/is/are} the leader",
+            "Believes {PRONOUN/m_c/poss} Clan is better because {PRONOUN/m_c/subject} {VERB/m_c/are/is} the leader",
             "Proposes stealing neighboring Clans' territories and prey for {PRONOUN/m_c/self}",
             "Hisses whenever somecat has the last word",
-            "Claims {PRONOUN/m_c/subject}{VERB/m_c/'s/'re} untouchable",
+            "Claims {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} untouchable",
             "Knows {PRONOUN/m_c/poss} legacy will be the greatest in the entire Clan's history!",
             "Has a mouth faster than {PRONOUN/m_c/poss} claws",
             "Knows {PRONOUN/m_c/poss} words are law"
@@ -242,7 +242,7 @@
             "Often picks up trivial details",
             "Has a dedicated timeslot to root through the prey pile for possible implanted deathberries",
             "Proposes to have quintuple patrols a day",
-            "Has a daily training sessions to recognize if {PRONOUN/m_c/subject} {VERB/m_c/is/are} really prepared for leading the Clan",
+            "Has a daily training sessions to recognize if {PRONOUN/m_c/subject} {VERB/m_c/are/is} really prepared for leading the Clan",
             "Ponders about moving camps when a fox was scented nearby",
             "Is delaying ceremonies, fearing the apprentices might endanger themselves",
             "Has a second prey pile in cause of prey scarcity",
@@ -278,7 +278,7 @@
             "Pranks r_c by switching their fresh-kill with crowfood",
             "is often confused for not being the leaderof c_n by the other Clans",
             "Isn't gonna let {PRONOUN/m_c/poss} rank stop {PRONOUN/m_c/object} from cracking jokes",
-            "Jokingly told Clanmates {PRONOUN/m_c/subject} {VERB/m_c/has/have} eleven lives",
+            "Jokingly told Clanmates {PRONOUN/m_c/subject} {VERB/m_c/have/has} eleven lives",
             "Is bragging about {PRONOUN/m_c/poss} rank",
             "Would rather be playing pranks on {PRONOUN/m_c/poss} Clanmates than supervising c_n",
             "Hid a crushed stinkbug in r_c's nest",
@@ -364,8 +364,8 @@
             "Doesn't feel very hungry today",
             "Has a soft-spoken voice during Clan meetings",
             "Can find more peace in solitude than with Clanmates",
-            "Knows {PRONOUN/m_c/subject} {VERB/m_c/has/have} beloved friends and kin, but overthinks about trouble harming them",
-            "Knows {PRONOUN/m_c/subject} {VERB/m_c/is/are} beloved, but has a hard time telling {PRONOUN/m_c/self} that",
+            "Knows {PRONOUN/m_c/subject} {VERB/m_c/have/has} beloved friends and kin, but overthinks about trouble harming them",
+            "Knows {PRONOUN/m_c/subject} {VERB/m_c/are/is} beloved, but has a hard time telling {PRONOUN/m_c/self} that",
             "Fears death is near"
         ],
         "main_trait_constraint": [
@@ -386,7 +386,7 @@
             "Is bashful at every victory",
             "Would rather let a Clanmate take the spotlight",
             "Feels as if the other Clans trample over {PRONOUN/m_c/object}",
-            "Was told by a rude Clanmate {PRONOUN/m_c/subject}{VERB/m_c/'s/'re} a stick in the mud"
+            "Was told by a rude Clanmate {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a stick in the mud"
         ],
         "main_trait_constraint": [
             "humble"
@@ -408,7 +408,7 @@
             "Prefers quietly observing {PRONOUN/m_c/poss} surroundings than maintaining the Clan",
             "Doesn't want to defy order and traditions depsite wanting c_n to improve",
             "Is willing to prove to both c_n and {PRONOUN/m_c/poss} deserve recongnition",
-            "Hides behind {PRONOUN/m_c/poss} whiskers whenever {PRONOUN/m_c/subject} {VERB/m_c/is/are} given vaildation"
+            "Hides behind {PRONOUN/m_c/poss} whiskers whenever {PRONOUN/m_c/subject} {VERB/m_c/are/is} given vaildation"
         ],
         "main_trait_constraint": [
             "insecure"
@@ -456,7 +456,7 @@
             "Claims calamities derive from disloyal Clanmates",
             "Believes {PRONOUN/m_c/poss} voice surpasses others",
             "Will not abolish traditions even if they don't suit {PRONOUN/m_c/poss} needs",
-            "Will not proceed a situation if {PRONOUN/m_c/subject} {VERB/m_c/doesn't/don't} have the final word",
+            "Will not proceed a situation if {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} have the final word",
             "Ban warriors from hunting in different territories",
             "Loathes lying to or going against StarClan",
             "Is willing to lie down {PRONOUN/m_c/poss} life for c_n",
@@ -536,8 +536,8 @@
     {
         "id": "nervous_leader",
         "thoughts": [
-            "Feels as if {PRONOUN/m_c/subject}{VERB/m_c/'s/'re} a constant target",
-            "Doesn't feel like {PRONOUN/m_c/subject} {VERB/m_c/has/have} nine lives",
+            "Feels as if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a constant target",
+            "Doesn't feel like {PRONOUN/m_c/subject} {VERB/m_c/have/has} nine lives",
             "Wants to improve c_n, but doesn't know how",
             "Is distraught {PRONOUN/m_c/subject} might accidently initiate a war",
             "Has organized today's workload, but an inconvience startled {PRONOUN/m_c/object}",

@@ -789,7 +789,9 @@
         "types": [
             "lifegen"
         ],
-        "tags": [],
+        "tags": [
+            "shunned"
+        ],
         "patrol_art": "lg_warrior_default",
         "min_cats": 1,
         "max_cats": 1,

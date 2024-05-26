@@ -3,7 +3,7 @@
         "id": "kit_dead_kit",
         "thoughts": [
             "Is wondering if r_c would have been {PRONOUN/m_c/poss} friend",
-            "Is playing with r_c, not minding that {PRONOUN/r_c/subject}{VERB/r_c/'s/'re} hard to grab, being clear"
+            "Is playing with r_c, not minding that {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} hard to grab, being clear"
         ],
         "random_status_constraint": [
             "kitten"
@@ -581,7 +581,7 @@
             "Is cowering from the rest of the Clan",
             "Is feeling isolated from others, even if {PRONOUN/m_c/subject} tries {PRONOUN/m_c/poss} best to fit in",
             "Is trying to put on a brave face today",
-            "Feels as if {PRONOUN/m_c/subject}{VERB/m_c/'s/'re} not growing big and strong enough to become an apprentice"
+            "Feels as if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not growing big and strong enough to become an apprentice"
         ],
         "main_trait_constraint": [
             "insecure"
