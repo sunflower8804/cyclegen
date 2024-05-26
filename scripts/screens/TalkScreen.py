@@ -1197,7 +1197,7 @@ class TalkScreen(Screens):
             tags = item["tags"] if "tags" in item else item[0]
             weights.append(len(tags))
         text_chosen_key = choices(list(texts_list.keys()), weights=weights)[0]
-        text = texts_list[text_chosen_key].get(1)
+        text = texts_list[text_chosen_key][1]
         if text is None:
             text = self.load_and_replace_placeholders(f"{resource_dir}general.json", cat, you)[1]
 
