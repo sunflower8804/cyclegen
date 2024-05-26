@@ -328,8 +328,6 @@ class TalkScreen(Screens):
         return chosen_text_intro
 
     def create_choice_buttons(self):
-
-
         y_pos = 0
         if f"{self.current_scene}_choices" not in self.possible_texts[self.chosen_text_key]:
             self.paw.visible = True
