@@ -19,7 +19,7 @@
         [
             "Aw. hello there, little one.",
             "How did you get so far away from the nursery? Where's your parent?",
-            "Hm... You need to go back there, they'll be worrying about you."
+            "Hm... You need to go back there, they will be worrying about you."
         ]
     ],
     "sweet_6": [
@@ -104,8 +104,8 @@
             "assertive"
         ],
         [
-            "Aw ... little guy hasn't even gotten their eyes open yet!",
-            "They're gonna be a killer, though. I can already tell. See those little paws? This kit's got fight in 'em!"
+            "Aw ... little guy hasn't even gotten {PRONOUN/y_c/poss} eyes open yet!",
+            "{PRONOUN/y_c/subject} {VERB/y_c/are/is} gonna be a killer, though. I can already tell. See {PRONOUN/y_c/poss} little paws? This kit's got fight in {PRONOUN/y_c/object}!"
         ]
     ],
     "assertive_tonewborn_2": [
@@ -167,7 +167,7 @@
         ],
         [
             "O- Oh! Oh, you want a story, little one? A... About d_c...",
-            "Okay.. I'm.. I'm sorry if I get a little... teary... but I don't want them to be forgotten. Let me tell you about one of the most wonderful cats in the Clans."
+            "Okay.. I'm.. I'm sorry if I get a little... teary... but I don't want {PRONOUN/d_c/object} to be forgotten. Let me tell you about one of the most wonderful cats in the Clans."
         ]
     ],
     "assertive_insult1": [
@@ -408,9 +408,9 @@
         ],
         [
             "...",
-            "[t_c is sat in the corner, with a clump of snow on their head.]",
-            "[They... haven't noticed?]",
-            "[You decide to leave them to it...?]"
+            "[t_c is sat in the corner, with a clump of snow on {PRONOUN/t_c/poss} head.]",
+            "[{PRONOUN/t_c/subject}... {VERB/t_c/have/has}n't noticed?]",
+            "[You decide to leave {PRONOUN/t_c/object} to it...?]"
         ]
     ],
     "assertive_yougrief1": [
@@ -423,12 +423,12 @@
             "dead_close"
         ],
         [
-            "[When you ask t_c what happened to d_c, and if you'll ever see them again, something on their face breaks.]",
+            "[When you ask t_c what happened to d_c, and if you'll ever see {PRONOUN/d_c/object} again, something on {PRONOUN/t_c/poss} face breaks.]",
             "Ah ... Ah, kid, I'm so sorry ...",
             "It ain't right, what happened to d_c ...",
-            "But, mark my words, you haven't seen the last of them. Though, it may be a while. They're up in StarClan now, with our warrior ancestors.",
-            "One day, you'll reunite again. But until then, just know they're up there watching over you, helping you grow strong and healthy.",
-            "Can you try to grow up strong and healthy for them?"
+            "But, mark my words, you haven't seen the last of {PRONOUN/d_c/object}. Though, it may be a while. {PRONOUN/d_c/subject} {VERB/d_c/are/is} up in StarClan now, with our warrior ancestors.",
+            "One day, you'll reunite again. But until then, just know {PRONOUN/d_c/subject} {VERB/d_c/are/is} up there watching over you, helping you grow strong and healthy.",
+            "Can you try to grow up strong and healthy for {PRONOUN/d_c/object}?"
         ]
     ],
     "assertive_parent1_1": [
@@ -1962,12 +1962,12 @@
         [
             "[t_c trots into the nursery and drops a mossball into the nest.]",
             "See this, y_c? This is called a mossball and you should remember that! You bat it around with your paws like this, see? And you use it to play really fun games! You're going to love it!",
-            "[r_c snickers and reminds t_c that you're a newborn, far younger than they are and that you probably don't understand a word they said. t_c puffs out their little chest.]",
-            "Well, yeah, I know that! But I thought that maybe they'd like to see one for the first time because then that way they'll like playing games with me!",
-            "[r_c states that it's a nice gesture and lovely thought but maybe y_p wouldn't want their kittens playing with such a big toy until you're a little older.]",
-            "[y_p laughs it off and pushes the ball towards t_c and asks if they want to play.]",
+            "[r_c snickers and reminds t_c that you're a newborn, far younger than {PRONOUN/t_c/subject} {VERB/t_c/are/is} and that you probably don't understand a word {PRONOUN/t_c/subject} said. t_c puffs out {PRONOUN/t_c/poss} little chest.]",
+            "Well, yeah, I know that! But I thought that maybe {PRONOUN/y_c/subject}'d like to see one for the first time because then that way {PRONOUN/y_c/subject}'ll like playing games with me!",
+            "[r_c states that it's a nice gesture and lovely thought but maybe y_p wouldn't want {PRONOUN/y_p/poss} kittens playing with such a big toy until {PRONOUN/y_c/subject} {VERB/y_c/are/is} a little older.]",
+            "[y_p laughs it off and pushes the ball towards t_c and asks if {PRONOUN/t_c/subject} {VERB/t_c/want/wants} to play.]",
             "Really? YES!",
-            "[You squint as you watch your loving parent paw the ball back and forth, your whiskers twitch eagerly, maybe when you're older this will be a fun game! You will remember this.]"
+            "[You squint as you watch your loving parent paw the ball back and forth, your whiskers twitch eagerly, maybe when you are older this will be a fun game! You will remember this.]"
         ]
     ],
     "stable_kit_younewborn_4": [
@@ -4110,8 +4110,8 @@
         [
             "What's the matter, kid? You hungry? Need somebody to take you to the dirtplace?",
             "Well? Spit it out, we ain't got all day!"
-          ]
-      ],
+        ]
+    ],
     "newborn_to_shunned_J1": [
         [
             "they_shunned",
