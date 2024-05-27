@@ -362,6 +362,9 @@
     "While climbing trees with v_c, you \"accidentally\" bump into them and send them hurtling towards the forest floor.",
     "During a playful race, you nudge v_c off a steep embankment. They don't survive the fall."
   ],
+  "any any murder accident plains": [
+    "You got the plains text!"
+  ],
   "any any murder predator": [
     "When you and v_c spot a snake, you block their path to run away. The snake lunges, sinking its fangs into v_c's throat, and you escape, satisfied.",
     "v_c is a problem- always getting in the way, never quite fitting into Clan life in the way they should. All you want to do is restore the balance of the Clan, and as v_c runs face first into the angry badger you've lured to their location, you can only hope this does it."
@@ -370,7 +373,7 @@
     "You attack and kill v_c, but not without a few scratches from the fight."
   ],
   "any any murder poison injury":[
-    "You slip v_c some poisoned prey that kills them."
+    "You slip v_c some poisoned prey that kills them, but your close proximity to the poison also makes you sick."
   ],
   "any any murder accident injury": [
     "While climbing trees with v_c, you \"accidentally\" bump into them and send them hurtling towards the forest floor, though they leave you with a scratch as they fall."
@@ -391,7 +394,7 @@
     "When a large fox confronts the two of you, you shove v_c into its face, but the creature manages to catch and kill the both of you."
   ],
   "any kitten murder attack": [
-    ""
+    "You attack and kill v_c."
   ],
   "any kitten murder poison": [
     "You encourage v_c to eat some shiny red berries you've found, saying that they're super tasty - better than freshkill even! Happily, they thank you for the snack. v_c is later found, already having joined StarClan."
@@ -399,11 +402,8 @@
   "any kitten murder poison camp": [
     "After taking a piece of poisoned prey from the fresh-kill pile, you run to the nursery to present it to v_c, claiming that it's from a super special kind of squirrel. You then challenge them to eat it. v_c doesn't wake up later after being rushed to the medicine den."
   ],
-  "any kitten murder accident": [
-    ""
-  ],
   "any kitten murder predator": [
-    ""
+    "v_c is stolen by a hawk! You tell the Clan you don't have any idea how they could have climbed their way up into that nest."
   ],
   "any kitten murder predator territory": [
     "You tell v_c to follow you, saying that you want to show them a shiny treasure you found recently. They happily agree and the two of you sneak out of camp. You lead v_c to a foxes' den, and they never come back out.",
@@ -443,7 +443,7 @@
     "You convince v_c to demonstrate a dangerous leap across a gorge. As they leap, you 'accidentally' startle them with a loud yowl, causing them to lose focus and fall."
   ],
   "kitten any murder predator": [
-    ""
+    "You methodically lure a snake to v_c, and they attack it, heroically saving you and dying in the process."
   ],
   "kitten kitten murder attack": [
     "You and v_c always play-fight, and today was no different. You decide to be the evil badger whilst v_c is the fearless warrior. After you make one fierce play-tackle, your playtime is brought to an abrupt end, and v_c doesn't wake up again."
@@ -827,5 +827,8 @@
   ],
   "warrior leader murder accident territory": [
     "v_c isn't fit to lead anymore. Following them out into the territory, you don't hesitate to push them out onto the Thunderpath, turning away before you see what happens. v_c is found later, having all of their remaining lives stripped away from them."
+  ],
+  "elder kitten murder accident border night plains": [
+    "border night plains worked"
   ]
 }
