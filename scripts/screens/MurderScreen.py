@@ -2,6 +2,7 @@ import pygame.transform
 import pygame_gui.elements
 from random import choice, randint
 import ujson
+import math
 
 from scripts.cat_relations.inheritance import Inheritance
 from scripts.cat.history import History
@@ -885,6 +886,9 @@ class MurderScreen(Screens):
         if cat_to_murder.moons > 12:
             chance += 2
 
+        if cat_to_murder.moons < 6:
+            chance = math.floor(chance / 2)
+
         return chance
 
     def get_risk_chance(self, cat_to_murder, accomplice, accompliced):
@@ -1521,7 +1525,7 @@ class MurderScreen(Screens):
     def handle_murder_fail(self, you, cat_to_murder, accomplice, accompliced):
         c_m = str(cat_to_murder.name)
 
-        victim_injury_chance = randint(1,5)
+        victim_injury_chance = 6
 
         discover_chance = randint(1,2)
         fail_texts = []
@@ -1533,6 +1537,8 @@ class MurderScreen(Screens):
                             "Despite your best efforts, "+ c_m + " remained unscathed. They continued on, blissfully ignorant of your lethal plan.",
                             "Your attempt to kill "+ c_m + " proved futile, and they stayed clueless about your ominous intentions."]
         else:
+            # victim_injury_chance = randint(1,5)
+            victim_injury_chance = 1
             if accomplice and accompliced:
                 fail_texts = [f"You attempted to murder {c_m}, but your plot was unsuccessful. They appear to be slightly wary of you and {accomplice.name} now.",
                                 f"Your effort to end {c_m}'s life was thwarted, and they now seem a bit more cautious around you and {accomplice.name}.",
@@ -1574,7 +1580,11 @@ class MurderScreen(Screens):
                 owie = choice(["bite-wound", "broken bone", "torn pelt", "mangled leg", "mangled tail"])
 
             cat_to_murder.get_injured(owie)
-            text = text + "However, your attempt on their life has left c_m hurt."
+
+            if self.method == "poison":
+                text = text + f" Your attempt on their life has left {c_m} ill."
+            else:
+                text = text + f" Your attempt on their life has left {c_m} injured."
 
         game.cur_events_list.insert(0, Single_Event(text))
         
@@ -1844,6 +1854,12 @@ class MurderScreen(Screens):
                 chance -= 10
             if cat_to_murder.skills.meets_skill_requirement(SkillPath.LANGUAGE):
                 chance -= 15
+
+        if you.moons < 6:
+            chance = chance * (2/3)
+
+        if cat_to_murder.moons < 6:
+            chance = chance * (4/3)
 
         if chance <= 0:
             chance = 5
