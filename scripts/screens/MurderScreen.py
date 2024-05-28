@@ -88,8 +88,9 @@ class MurderScreen(Screens):
         self.method = choice(["attack", "poison", "accident", "predator"])
         self.location = choice(["camp", "territory", "border"])
         self.time = choice(["dawn", "day", "night"])
-        
+
     def handle_event(self, event):
+       
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.confirm_mentor and self.selected_cat and self.stage == 'choose murder cat':
                 if not self.selected_cat.dead:
@@ -402,7 +403,7 @@ class MurderScreen(Screens):
                                                 (300, 300)), manager=MANAGER)
             
             self.methodtext = pygame_gui.elements.UITextBox("Method:",
-                                                        scale(pygame.Rect((1090, 155), (200, 80))),
+                                                        scale(pygame.Rect((1110, 155), (200, 80))),
                                                         object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
         
@@ -539,7 +540,7 @@ class MurderScreen(Screens):
             
 
             self.methodtext = pygame_gui.elements.UITextBox("Method:",
-                                                        scale(pygame.Rect((1090, 155), (200, 80))),
+                                                        scale(pygame.Rect((1110, 155), (200, 80))),
                                                         object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
         
@@ -915,6 +916,7 @@ class MurderScreen(Screens):
             self.next_cat = 0
 
     def print_chances(self, cat_to_murder, accomplice):
+        
 
         if self.selected_cat:
             hypothetical_agree = False
@@ -1009,6 +1011,7 @@ class MurderScreen(Screens):
             self.choose_murder_text(you, cat_to_murder, accomplice, accompliced)
         else:
             self.handle_murder_fail(you, cat_to_murder, accomplice, accompliced)
+        self.selected_cat = None
 
         game.switches['cur_screen'] = "events screen"
     
@@ -1288,17 +1291,17 @@ class MurderScreen(Screens):
                 print("------------------------------------------")
                 print("1 Looking for:", status)
 
-                ceremony_txt = self.m_txt[f"{status} murder {self.method} {self.location} {self.time}{risk}{lives} {biome}"]
+                ceremony_txt = self.m_txt[f"{status} murder {self.method} {self.location} {self.time}{risk}{lives}"]
                 
 
                 # this is checking through status/any combinations again,
                 # because at this point in the try loop, we're stuck with one
-                
                 statusesagain = [
-                     f"{insert} {insert2}",
+                        f"{insert} {insert2}"
                         f"{insert} any",
-                        "any any",
                         f"any {insert2}"
+                        # "any any",
+                        # i want less generic ones if a specific one is found,, can be uncommented though
                        ]
                 
                 for each in statusesagain:
@@ -1308,11 +1311,13 @@ class MurderScreen(Screens):
 
                     extension3 = f"{each} murder {self.method} {self.location}{risk}{lives} {biome}"
                     extension4 = f"{each} murder {self.method}{risk}{lives} {biome}"
+                    # biomes are seperate, optional extensions
 
                     if extension1 in self.m_txt and self.m_txt[extension1]:
                         ceremony_txt.extend(self.m_txt[extension1])
                     else:
                         print("Empty key: ", extension1)
+                        # printing empty keys to help the writers find them!
 
                     if extension2 in self.m_txt and self.m_txt[extension2]:
                         ceremony_txt.extend(self.m_txt[extension2])
@@ -1341,6 +1346,7 @@ class MurderScreen(Screens):
                 print("1 Success!")
             except:
                 try:
+                    print(f"Warning: No unique murder events found for '{status} murder {self.method} {self.location} {self.time}{risk}{lives}'")
                     print("2 Looking for:", status)
                     ceremony_txt = self.m_txt[f"{status} murder {self.method} {self.location}{risk}{lives}"]
                     
@@ -1371,6 +1377,7 @@ class MurderScreen(Screens):
                     ceremony_txt = choice(ceremony_txt)
                     print("2 Success!")
                 except:
+                    print(f"Warning: No unique murder events found for '{status} murder {self.method} {self.location}{risk}{lives}'")
                     print("3 Looking for:", status)
                     try:
                         ceremony_txt = self.m_txt[f"{status} murder {self.method}{risk}{lives}"]
@@ -1719,7 +1726,6 @@ class MurderScreen(Screens):
 
         victim_injury_chance = 6
 
-        print("FINAL CHANCES:")
         self.print_chances(cat_to_murder, accomplice)
 
         discover_chance = randint(1,2)
