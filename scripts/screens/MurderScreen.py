@@ -40,6 +40,7 @@ class MurderScreen(Screens):
         self.previous_page_button = None
         self.current_mentor_warning = None
         self.confirm_mentor = None
+        self.randomiser_button = None
         self.back_button = None
         self.next_cat_button = None
         self.previous_cat_button = None
@@ -67,6 +68,7 @@ class MurderScreen(Screens):
         self.the_cat = None
         self.murder_cat = None
         self.next = None
+        self.prev = None
         self.method = "attack"
         self.location = "camp"
         self.time = "day"
@@ -80,6 +82,12 @@ class MurderScreen(Screens):
         self.victim_sprite = None
         self.victim_info = None
         self.victim_name = None
+        self.chancetext = None
+        self.willingnesstext = None
+
+        self.method = choice(["attack", "poison", "accident", "predator"])
+        self.location = choice(["camp", "territory", "border"])
+        self.time = choice(["dawn", "day", "night"])
         
     def handle_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
@@ -87,16 +95,42 @@ class MurderScreen(Screens):
                 if not self.selected_cat.dead:
                     self.exit_screen()
                     self.cat_to_murder = self.selected_cat
+
                     self.stage = 'choose murder method'
                     self.screen_switches()
                     self.print_chances(self.selected_cat, accomplice=None)
 
             elif event.ui_element in self.cat_list_buttons.values():
-                self.selected_cat = event.ui_element.return_cat_object()
+                if self.stage == "choose accomplice":
+                    self.update_chance_text(self.cat_to_murder, accomplice=self.selected_cat)
+                else:
+                    self.update_chance_text(self.selected_cat, accomplice=None)
+                if event.ui_element.return_cat_object() == self.selected_cat:
+                    self.print_chances(self.cat_to_murder, accomplice=None)
+                    self.selected_cat = None
+                    self.confirm_mentor.disable()
+                    if self.willingnesstext:
+                        self.willingnesstext.hide()
+                    if self.chancetext:
+                        self.chancetext.hide()
+                else:
+                    if self.stage == "choose accomplice":
+                        self.update_chance_text(self.cat_to_murder, accomplice=self.selected_cat)
+                    else:
+                        self.update_chance_text(self.selected_cat, accomplice=None)
+                    self.confirm_mentor.enable()
+                    self.selected_cat = event.ui_element.return_cat_object()
+                    if self.willingnesstext:
+                        self.willingnesstext.hide()
+                    if self.chancetext:
+                        self.chancetext.hide()
+
                 if self.stage == "choose murder cat":
+                    self.chancetext = None
                     self.update_selected_cat()
                     self.print_chances(self.selected_cat, accomplice=None)
                 elif self.stage == "choose accomplice":
+                    self.chancetext = None
                     self.update_selected_cat2()
                     self.print_chances(self.cat_to_murder, accomplice=self.selected_cat)
             
@@ -106,6 +140,17 @@ class MurderScreen(Screens):
                     self.stage = 'choose accomplice'
                     self.screen_switches()
                     self.selected_cat = None
+                    self.confirm_mentor.disable()
+
+            elif event.ui_element == self.randomiser_button and self.stage == "choose murder method":
+                self.method = choice(["attack", "poison", "accident", "predator"])
+                self.location = choice(["camp", "territory", "border"])
+                self.time = choice(["dawn", "day", "night"])
+
+                self.update_murder_buttons()
+                self.update_method_info()
+                self.update_chance_text(self.cat_to_murder, accomplice=None)
+                self.print_chances(self.selected_cat, accomplice=None)
             
             elif event.ui_element == self.confirm_mentor and self.selected_cat:
                 r = randint(1,100)
@@ -123,16 +168,9 @@ class MurderScreen(Screens):
                     else:
                         game.switches['accomplices'] = []
                         game.switches['accomplices'].append(self.selected_cat.ID)
-                    self.print_chances(self.selected_cat, accomplice=None)
-                    print("AGREED")
-                else:
-                    self.print_chances(self.selected_cat, accomplice=None)
-                    print("DIDN'T AGREE")
-                
                                             
                 self.change_cat(self.murder_cat, self.selected_cat, accompliced)
                 self.stage = 'choose murder cat'
-                
 
             elif self.stage == 'choose murder method' and event.ui_element == self.next:
                 self.change_cat(self.murder_cat, None, None)
@@ -142,6 +180,16 @@ class MurderScreen(Screens):
                 self.change_cat(self.murder_cat, None, None)
                 self.stage = 'choose murder method'
             
+            elif event.ui_element == self.prev:
+                if self.stage == "choose murder method":
+                    self.stage = "choose murder cat"
+                    self.exit_screen()
+                    self.screen_switches()
+                elif self.stage == "choose accomplice":
+                    self.stage = "choose murder method"
+                    self.exit_screen()
+                    self.screen_switches()
+
             elif event.ui_element == self.back_button:
                 self.change_screen('profile screen')
                 self.stage = 'choose murder cat'
@@ -261,6 +309,57 @@ class MurderScreen(Screens):
                 self.current_page -= 1
                 self.update_cat_list()
 
+    def update_murder_buttons(self):
+        """ updates the method, location and time buttons for the randomiser to work """
+        if self.method == "attack":
+            self.attackmethod.disable()
+            self.poisonmethod.enable()
+            self.accidentmethod.enable()
+            self.predatormethod.enable()
+        elif self.method == "poison":
+            self.attackmethod.enable()
+            self.poisonmethod.disable()
+            self.accidentmethod.enable()
+            self.predatormethod.enable()
+        elif self.method == "accident":
+            self.attackmethod.enable()
+            self.poisonmethod.enable()
+            self.accidentmethod.disable()
+            self.predatormethod.enable()
+        elif self.method == "predator":
+            self.attackmethod.enable()
+            self.poisonmethod.enable()
+            self.accidentmethod.enable()
+            self.predatormethod.disable()
+
+        if self.location == "camp":
+            self.camplocation.disable()
+            self.territorylocation.enable()
+            self.borderlocation.enable()
+        elif self.location == "territory":
+            self.camplocation.enable()
+            self.territorylocation.disable()
+            self.borderlocation.enable()
+        elif self.location == "border":
+            self.camplocation.enable()
+            self.territorylocation.enable()
+            self.borderlocation.disable()
+
+        if self.time == "dawn":
+            self.dawntime.disable()
+            self.daytime.enable()
+            self.nighttime.enable()
+        elif self.time == "day":
+            self.dawntime.enable()
+            self.daytime.disable()
+            self.nighttime.enable()
+        elif self.time == "night":
+            self.dawntime.enable()
+            self.daytime.enable()
+            self.nighttime.disable()
+
+        
+
     def screen_switches(self):
 
         if self.stage == 'choose murder cat':
@@ -268,6 +367,7 @@ class MurderScreen(Screens):
             self.mentor = Cat.fetch_cat(self.the_cat.mentor)
             self.selected_cat = None
             self.next = None
+            self.prev = None
             self.methodheading = None
             self.methodinfo = None
             self.locationinfo = None
@@ -278,6 +378,9 @@ class MurderScreen(Screens):
             self.victim_sprite = None
             self.victim_info = None
             self.victim_name = None
+            self.randomiser_button = None
+            self.chancetext = None
+            self.willingnesstext = None
 
             self.list_frame = pygame.transform.scale(image_cache.load_image("resources/images/choosing_frame.png").convert_alpha(),
                                         (1300 / 1600 * screen_x, 452 / 1400 * screen_y))
@@ -297,41 +400,44 @@ class MurderScreen(Screens):
                                             scale(pygame.Rect((650, 360), (300, 300))),
                                             pygame.transform.scale(
                                                 self.the_cat.sprite,
-                                                (270, 270)), manager=MANAGER)
+                                                (300, 300)), manager=MANAGER)
             
             self.methodtext = pygame_gui.elements.UITextBox("Method:",
                                                         scale(pygame.Rect((1090, 155), (200, 80))),
                                                         object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
         
-            self.attackmethod = pygame_gui.elements.UIImage(scale(pygame.Rect((967, 220), (110, 110))),
+            self.attackmethod = pygame_gui.elements.UIImage(scale(pygame.Rect((987, 220), (110, 110))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
                                                                     "resources/images/attackmethod_grey.png").convert_alpha(),
                                                                 (110,110)), manager=MANAGER)
             
-            self.poisonmethod = UIImageButton(scale(pygame.Rect((1085, 220), (110, 110))), "P",
-                                                tool_tip_text= "Poison", object_id="", manager=MANAGER)
-            self.accidentmethod = UIImageButton(scale(pygame.Rect((1200, 220), (110, 110))), "AC",
+            self.poisonmethod = pygame_gui.elements.UIImage(scale(pygame.Rect((1105, 220), (110, 110))),
+                                                            pygame.transform.scale(
+                                                                image_cache.load_image(
+                                                                    "resources/images/poisonmethod_grey.png").convert_alpha(),
+                                                                (110,110)), manager=MANAGER)
+            
+            self.accidentmethod = UIImageButton(scale(pygame.Rect((1220, 220), (110, 110))), "AC",
                                                 tool_tip_text= "Accident", object_id="", manager=MANAGER)
-            self.predatormethod = UIImageButton(scale(pygame.Rect((1315, 220), (110, 110))), "PR",
+            self.predatormethod = UIImageButton(scale(pygame.Rect((1335, 220), (110, 110))), "PR",
                                                 tool_tip_text= "Predator", object_id="", manager=MANAGER)
             
-            
-            self.poisonmethod.disable()
             self.accidentmethod.disable()
             self.predatormethod.disable()
+           
 
             self.locationtext = pygame_gui.elements.UITextBox("Location:",
-                                                        scale(pygame.Rect((1090, 335), (200, 80))),
+                                                        scale(pygame.Rect((1110, 335), (200, 80))),
                                                         object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
 
-            self.camplocation = UIImageButton(scale(pygame.Rect((1025, 400), (110, 110))), "C",
+            self.camplocation = UIImageButton(scale(pygame.Rect((1045, 400), (110, 110))), "C",
                                                 tool_tip_text= "Camp", object_id="", manager=MANAGER)
-            self.territorylocation = UIImageButton(scale(pygame.Rect((1145, 400), (110, 110))), "T",
+            self.territorylocation = UIImageButton(scale(pygame.Rect((1165, 400), (110, 110))), "T",
                                                 tool_tip_text= "Territory", object_id="", manager=MANAGER)
-            self.borderlocation = UIImageButton(scale(pygame.Rect((1265, 400), (110, 110))), "B",
+            self.borderlocation = UIImageButton(scale(pygame.Rect((1285, 400), (110, 110))), "B",
                                                 tool_tip_text= "Border", object_id="", manager=MANAGER)
             
             self.camplocation.disable()
@@ -339,37 +445,47 @@ class MurderScreen(Screens):
             self.borderlocation.disable()
 
             self.timetext = pygame_gui.elements.UITextBox("Time:",
-                                                        scale(pygame.Rect((1090, 515), (200, 80))),
+                                                        scale(pygame.Rect((1110, 515), (200, 80))),
                                                         object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
 
-            self.dawntime = pygame_gui.elements.UIImage(scale(pygame.Rect((1025, 580), (110, 110))),
+            self.dawntime = pygame_gui.elements.UIImage(scale(pygame.Rect((1045, 580), (110, 110))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
                                                                     "resources/images/dawntime_grey.png").convert_alpha(),
                                                                 (110,110)), manager=MANAGER)
             
-            self.daytime = pygame_gui.elements.UIImage(scale(pygame.Rect((1145, 580), (110, 110))),
+            self.daytime = pygame_gui.elements.UIImage(scale(pygame.Rect((1165, 580), (110, 110))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
                                                                     "resources/images/daytime_grey.png").convert_alpha(),
                                                                 (110,110)), manager=MANAGER)
             
-            self.nighttime = pygame_gui.elements.UIImage(scale(pygame.Rect((1265, 580), (110, 110))),
+            self.nighttime = pygame_gui.elements.UIImage(scale(pygame.Rect((1285, 580), (110, 110))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
                                                                     "resources/images/nighttime_grey.png").convert_alpha(),
                                                                 (110,110)), manager=MANAGER)
             
-            
             self.back_button = UIImageButton(scale(pygame.Rect((50, 1290), (204, 60))), "", object_id="#back_button")
-            self.confirm_mentor = UIImageButton(scale(pygame.Rect((700, 670), (208, 52))), "",
+
+            self.confirm_mentor = UIImageButton(scale(pygame.Rect((696, 688), (208, 52))), "",
                                                 object_id="#continue_button_small")
         
             self.previous_page_button = UIImageButton(scale(pygame.Rect((630, 1229), (68, 68))), "",
                                                     object_id="#relation_list_previous", manager=MANAGER)
             self.next_page_button = UIImageButton(scale(pygame.Rect((902, 1229), (68, 68))), "",
                                                 object_id="#relation_list_next", manager=MANAGER)
+            
+            self.next = UIImageButton(scale(pygame.Rect((942, 680), (68, 68))), "",
+                                                tool_tip_text= "Proceed without an accomplice.",
+                                                object_id="#arrow_right_button", manager=MANAGER)
+            
+            self.prev = UIImageButton(scale(pygame.Rect((590, 680), (68, 68))), "",
+                                                object_id="#arrow_left_button", manager=MANAGER)
+            
+            self.prev.disable()
+            self.next.disable()
 
             self.update_selected_cat()  # Updates the image and details of selected cat
             self.update_cat_list()
@@ -389,6 +505,8 @@ class MurderScreen(Screens):
             self.victim_sprite = None
             self.victim_info = None
             self.victim_name = None
+            self.willingnesstext = None
+            self.chancetext = None
 
             self.list_frame = None
 
@@ -409,37 +527,13 @@ class MurderScreen(Screens):
                                             pygame.transform.scale(
                                                 self.selected_cat.sprite,
                                                 (270, 270)), manager=MANAGER)
-            
-            
-            if game.settings['dark mode']:
-                self.selected_details["chance"] = pygame_gui.elements.UITextBox("success chance: ...",
-                                                                                        scale(pygame.Rect((248, 610),
-                                                                                                            (210, 250))),
-                                                                                        object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
-                                                                                        manager=MANAGER)
-
-            else:
-                self.selected_details["chance"] = pygame_gui.elements.UITextBox("success chance: ...",
-                                                                                    scale(pygame.Rect((248, 610),
-                                                                                                        (210, 250))),
-                                                                                    object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
-                                                                                    manager=MANAGER)
-                
-            if (game.clan.your_cat.skills.meets_skill_requirement(SkillPath.PROPHET) or\
-                game.clan.your_cat.skills.meets_skill_requirement(SkillPath.CLEVER) or\
-                game.clan.your_cat.skills.meets_skill_requirement(SkillPath.SENSE) or\
-                game.clan.your_cat.skills.meets_skill_requirement(SkillPath.OMEN) or\
-                game.clan.your_cat.skills.meets_skill_requirement(SkillPath.INSIGHTFUL)):
-                self.selected_details["chance"].show()
-            else:
-                self.selected_details["chance"].hide()
            
             
             self.your_sprite = pygame_gui.elements.UIImage(
                                             scale(pygame.Rect((650, 360), (300, 300))),
                                             pygame.transform.scale(
                                                 self.the_cat.sprite,
-                                                (270, 270)), manager=MANAGER)
+                                                (300, 300)), manager=MANAGER)
             
 
             self.methodtext = pygame_gui.elements.UITextBox("Method:",
@@ -447,55 +541,45 @@ class MurderScreen(Screens):
                                                         object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
         
-            self.attackmethod = UIImageButton(scale(pygame.Rect((967, 220), (110, 110))), "",
+            self.attackmethod = UIImageButton(scale(pygame.Rect((987, 220), (110, 110))), "",
                                                 tool_tip_text= "Attack", object_id="#attack_method_button", manager=MANAGER)
-            self.poisonmethod = UIImageButton(scale(pygame.Rect((1085, 220), (110, 110))), "P",
-                                                tool_tip_text= "Poison", object_id="", manager=MANAGER)
-            self.accidentmethod = UIImageButton(scale(pygame.Rect((1200, 220), (110, 110))), "AC",
+            self.poisonmethod = UIImageButton(scale(pygame.Rect((1105, 220), (110, 110))), "",
+                                                tool_tip_text= "Poison", object_id="#poison_method_button", manager=MANAGER)
+            self.accidentmethod = UIImageButton(scale(pygame.Rect((1220, 220), (110, 110))), "AC",
                                                 tool_tip_text= "Accident", object_id="", manager=MANAGER)
-            self.predatormethod = UIImageButton(scale(pygame.Rect((1315, 220), (110, 110))), "PR",
+            self.predatormethod = UIImageButton(scale(pygame.Rect((1335, 220), (110, 110))), "PR",
                                                 tool_tip_text= "Predator", object_id="", manager=MANAGER)
-            
-            self.attackmethod.disable()
-            self.poisonmethod.enable()
-            self.accidentmethod.enable()
-            self.predatormethod.enable()
-
+      
             self.locationtext = pygame_gui.elements.UITextBox("Location:",
-                                                        scale(pygame.Rect((1090, 335), (200, 80))),
+                                                        scale(pygame.Rect((1110, 335), (200, 80))),
                                                         object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
 
-            self.camplocation = UIImageButton(scale(pygame.Rect((1025, 400), (110, 110))), "C",
+            self.camplocation = UIImageButton(scale(pygame.Rect((1045, 400), (110, 110))), "C",
                                                 tool_tip_text= "Camp", object_id="", manager=MANAGER)
-            self.territorylocation = UIImageButton(scale(pygame.Rect((1145, 400), (110, 110))), "T",
+            self.territorylocation = UIImageButton(scale(pygame.Rect((1165, 400), (110, 110))), "T",
                                                 tool_tip_text= "Territory", object_id="", manager=MANAGER)
-            self.borderlocation = UIImageButton(scale(pygame.Rect((1265, 400), (110, 110))), "B",
+            self.borderlocation = UIImageButton(scale(pygame.Rect((1285, 400), (110, 110))), "B",
                                                 tool_tip_text= "Border", object_id="", manager=MANAGER)
             
-            self.camplocation.disable()
-            self.territorylocation.enable()
-            self.borderlocation.enable()
-
             self.timetext = pygame_gui.elements.UITextBox("Time:",
-                                                        scale(pygame.Rect((1090, 515), (200, 80))),
+                                                        scale(pygame.Rect((1110, 515), (200, 80))),
                                                         object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
 
-            self.dawntime = UIImageButton(scale(pygame.Rect((1025, 580), (110, 110))), "",
+            self.dawntime = UIImageButton(scale(pygame.Rect((1045, 580), (110, 110))), "",
                                                 tool_tip_text= "Dawn", object_id="#dawntime_button", manager=MANAGER)
-            self.daytime = UIImageButton(scale(pygame.Rect((1145, 580), (110, 110))), "",
+            self.daytime = UIImageButton(scale(pygame.Rect((1165, 580), (110, 110))), "",
                                                 tool_tip_text= "Day", object_id="#daytime_button", manager=MANAGER)
-            self.nighttime = UIImageButton(scale(pygame.Rect((1265, 580), (110, 110))), "",
+            self.nighttime = UIImageButton(scale(pygame.Rect((1285, 580), (110, 110))), "",
                                                 tool_tip_text= "Night", object_id="#nighttime_button", manager=MANAGER)
             
-            self.dawntime.enable()
-            self.daytime.disable()
-            self.nighttime.enable()
-
+            self.randomiser_button = UIImageButton(scale(pygame.Rect((773, 270), (68, 68))), "",
+                                           object_id="#random_dice_button",
+                                           manager=MANAGER)
             
             self.back_button = UIImageButton(scale(pygame.Rect((50, 1290), (204, 60))), "", object_id="#back_button")
-            self.confirm_mentor = UIImageButton(scale(pygame.Rect((700, 670), (208, 52))), "",
+            self.confirm_mentor = UIImageButton(scale(pygame.Rect((696, 688), (208, 52))), "",
                                                 object_id="#continue_button_small")
         
             self.previous_page_button = UIImageButton(scale(pygame.Rect((630, 1229), (68, 68))), "",
@@ -503,10 +587,20 @@ class MurderScreen(Screens):
             self.next_page_button = UIImageButton(scale(pygame.Rect((902, 1229), (68, 68))), "",
                                                 object_id="#relation_list_next", manager=MANAGER)
             
+            self.next = UIImageButton(scale(pygame.Rect((942, 680), (68, 68))), "",
+                                                tool_tip_text= "Proceed without an accomplice.",
+                                                object_id="#arrow_right_button", manager=MANAGER)
+            
+            self.prev = UIImageButton(scale(pygame.Rect((590, 680), (68, 68))), "",
+                                                object_id="#arrow_left_button", manager=MANAGER)
+            
             self.previous_page_button.hide()
             self.next_page_button.hide()
 
+            self.next.disable()
+
             self.update_method_info()
+            self.update_murder_buttons()
 
             self.update_selected_cat()  # Updates the image and details of selected cat
             # self.update_cat_list()
@@ -514,7 +608,6 @@ class MurderScreen(Screens):
             self.the_cat = game.clan.your_cat
             self.mentor = Cat.fetch_cat(self.the_cat.mentor)
             # self.selected_cat = None
-            self.next = None
             self.methodheading = None
             self.methodinfo = None
             self.locationinfo = None
@@ -541,6 +634,11 @@ class MurderScreen(Screens):
             self.locationtext = None
             self.timetext = None
 
+            self.chancetext = None
+            self.willingnesstext = None
+
+            self.randomiser_button = None
+
             self.list_frame = pygame.transform.scale(image_cache.load_image("resources/images/choosing_frame.png").convert_alpha(),
                                         (1300 / 1600 * screen_x, 452 / 1400 * screen_y))
 
@@ -557,38 +655,16 @@ class MurderScreen(Screens):
                                                                     "resources/images/victim_panel.png").convert_alpha(),
                                                                 (569, 399)), manager=MANAGER)
             
-            self.accomplice_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((1035, 175), (400, 540))),
+            self.accomplice_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((1050, 175), (400, 540))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
                                                                     "resources/images/accomplice_panel.png").convert_alpha(),
                                                                 (569, 399)), manager=MANAGER)
-            if game.settings['dark mode']:
-                self.selected_details["chance2"] = pygame_gui.elements.UITextBox("success chance: ...",
-                                                                                        scale(pygame.Rect((248, 610),
-                                                                                                            (210, 250))),
-                                                                                        object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
-                                                                                        manager=MANAGER)
-
-            else:
-                self.selected_details["chance2"] = pygame_gui.elements.UITextBox("success chance: ...",
-                                                                                    scale(pygame.Rect((248, 610),
-                                                                                                        (210, 250))),
-                                                                                    object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
-                                                                                    manager=MANAGER)
-            if (game.clan.your_cat.skills.meets_skill_requirement(SkillPath.PROPHET) or\
-                game.clan.your_cat.skills.meets_skill_requirement(SkillPath.CLEVER) or\
-                game.clan.your_cat.skills.meets_skill_requirement(SkillPath.SENSE) or\
-                game.clan.your_cat.skills.meets_skill_requirement(SkillPath.OMEN) or\
-                game.clan.your_cat.skills.meets_skill_requirement(SkillPath.INSIGHTFUL)):
-                self.selected_details["chance2"].show()
-            else:
-                self.selected_details["chance2"].hide()
-            
             self.your_sprite = pygame_gui.elements.UIImage(
                                             scale(pygame.Rect((650, 360), (300, 300))),
                                             pygame.transform.scale(
                                                 self.the_cat.sprite,
-                                                (270, 270)), manager=MANAGER)
+                                                (300, 300)), manager=MANAGER)
             
             self.victim_sprite = pygame_gui.elements.UIImage(
                                             scale(pygame.Rect((210, 190), (270, 270))),
@@ -622,7 +698,8 @@ class MurderScreen(Screens):
                 object_id="#text_box_34_horizcenter", manager=MANAGER)
 
             self.back_button = UIImageButton(scale(pygame.Rect((50, 1290), (204, 60))), "", object_id="#back_button")
-            self.confirm_mentor = UIImageButton(scale(pygame.Rect((700, 670), (208, 52))), "",
+            
+            self.confirm_mentor = UIImageButton(scale(pygame.Rect((696, 688), (208, 52))), "",
                                                 object_id="#continue_button_small")
         
             self.previous_page_button = UIImageButton(scale(pygame.Rect((630, 1229), (68, 68))), "",
@@ -630,16 +707,18 @@ class MurderScreen(Screens):
             self.next_page_button = UIImageButton(scale(pygame.Rect((902, 1229), (68, 68))), "",
                                                 object_id="#relation_list_next", manager=MANAGER)
             
-            self.next = UIImageButton(scale(pygame.Rect((950, 680), (68, 68))), "",
+            self.next = UIImageButton(scale(pygame.Rect((942, 680), (68, 68))), "",
                                                 tool_tip_text= "Proceed without an accomplice.",
                                                 object_id="#arrow_right_button", manager=MANAGER)
+            self.prev = UIImageButton(scale(pygame.Rect((590, 680), (68, 68))), "",
+                                                object_id="#arrow_left_button", manager=MANAGER)
             
             self.previous_page_button.show()
             self.next_page_button.show()
 
-            selected_cat = None
 
             self.update_selected_cat2()  # Updates the image and details of selected cat
+            # self.update_chance_text(accomplice=None)
             self.update_cat_list2()
 
 
@@ -765,9 +844,21 @@ class MurderScreen(Screens):
             self.back_button.kill()
             del self.back_button
 
+        if self.chancetext:
+            self.chancetext.kill()
+            del self.chancetext
+
+        if self.willingnesstext:
+            self.willingnesstext.kill()
+            del self.willingnesstext
+
         if self.confirm_mentor:
             self.confirm_mentor.kill()
             del self.confirm_mentor
+
+        if self.randomiser_button:
+            self.randomiser_button.kill()
+            del self.randomiser_button
 
         if self.previous_page_button:
             self.previous_page_button.kill()
@@ -780,6 +871,10 @@ class MurderScreen(Screens):
         if self.next:
             self.next.kill()
             del self.next
+
+        if self.prev:
+            self.prev.kill()
+            del self.prev
 
     def find_next_previous_cats(self):
         """Determines where the previous and next buttons lead"""
@@ -837,7 +932,7 @@ class MurderScreen(Screens):
                 hypdiscover_chance = self.get_discover_chance(self.cat_to_murder, accomplice=accomplice, accompliced=True)
                 hypdeath_chance = self.get_death_chance(cat_to_murder, accomplice=accomplice, accompliced=True)
                 if cat_to_murder.status == "leader":
-                    leader_death_chance = self.leader_death_chance(cat_to_murder, accomplice=accomplice, accompliced=None)
+                    hypleader_death_chance = self.leader_death_chance(cat_to_murder, accomplice=accomplice, accompliced=None)
 
             else:
                 # prints chances when selecting a victim
@@ -846,7 +941,7 @@ class MurderScreen(Screens):
                 discover_chance = self.get_discover_chance(cat_to_murder, accomplice=accomplice, accompliced=None)
                 death_chance = self.get_death_chance(cat_to_murder, accomplice=None, accompliced=None)
                 if cat_to_murder.status == "leader":
-                    hypleader_death_chance = self.leader_death_chance(cat_to_murder, accomplice=None, accompliced=None)
+                    leader_death_chance = self.leader_death_chance(cat_to_murder, accomplice=None, accompliced=None)
 
 
             if not accomplice:
@@ -874,7 +969,7 @@ class MurderScreen(Screens):
                     print(F"MC Death Chance: {hypdeath_chance}/100")
 
                     if cat_to_murder.status == "leader":
-                        print(F"LEADER ALL LIVES CHANCE: {leader_death_chance}/100")
+                        print(F"LEADER ALL LIVES CHANCE: {hypleader_death_chance}/100")
 
                 print("----------------------------")
                 print("IF ACCOMPLICE REFUSES:")
@@ -1740,7 +1835,6 @@ class MurderScreen(Screens):
         if you.experience > cat_to_murder.experience:
             chance += 5
         if accomplice and accompliced:
-            print(accomplice.name)
             chance += 15
             if accomplice.personality.trait == "bloodthirsty":
                 chance += 10
@@ -1883,7 +1977,7 @@ class MurderScreen(Screens):
 
         if self.method == "accident":
             # raises chances
-            if accomplice:
+            if accomplice and accompliced:
                 chance += 10
 
             if you.skills.meets_skill_requirement(SkillPath.EXPLORER):
@@ -1960,7 +2054,7 @@ class MurderScreen(Screens):
         if cat_to_murder.moons < 6:
             chance = chance * math.ceil(4/3)
 
-        if accomplice:
+        if accomplice and accompliced:
             chance = chance * math.floor(6/5)
 
         if chance <= 0:
@@ -2111,77 +2205,111 @@ class MurderScreen(Screens):
                                                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                 manager=MANAGER)
             
-    def update_chance_text(self):
+    def update_chance_text(self, cat_to_murder, accomplice):
+        if self.chancetext:
+            self.chancetext.kill()
+            del self.chancetext
+
+        if self.willingnesstext:
+            self.willingnesstext.kill()
+            del self.willingnesstext
+
         if self.selected_cat:
-            if (not self.selected_cat.dead and not self.selected_cat.outside) or (not self.cat_to_murder.dead and not self.cat_to_murder.outside):
+            if (not self.selected_cat.dead and not self.selected_cat.outside):
                 if (game.clan.your_cat.skills.meets_skill_requirement(SkillPath.PROPHET) or\
                     game.clan.your_cat.skills.meets_skill_requirement(SkillPath.CLEVER) or\
                     game.clan.your_cat.skills.meets_skill_requirement(SkillPath.SENSE) or\
                     game.clan.your_cat.skills.meets_skill_requirement(SkillPath.OMEN) or\
                     game.clan.your_cat.skills.meets_skill_requirement(SkillPath.INSIGHTFUL)):
-                
                     c_text = ""
-                    chance = self.get_kill(game.clan.your_cat, self.selected_cat, None, False)
+                    if accomplice:
+                        chance = self.get_kill(game.clan.your_cat, self.cat_to_murder, self.selected_cat, True)
+                    else:
+                        chance = self.get_kill(game.clan.your_cat, cat_to_murder, None, False)
+
                     risk_chance = self.get_risk_chance(self.selected_cat, accomplice=None, accompliced=None)
                     discover_chance = self.get_discover_chance(self.selected_cat, accomplice=None, accompliced=False)
+
                     if chance < 20:
                         c_text = "very low"
                     elif chance < 30:
                         c_text = "low"
-                    elif chance < 40:
+                    elif chance < 50:
                         c_text = "average"
-                    elif chance < 70:
+                    elif chance < 80:
                         c_text = "high"
                     else:
                         c_text = "very high"
+
+                    insert = ""
+
+                    if accomplice:
+                        insert = "possible success chance: "
+                    else:
+                        insert = "success chance: "
+
+
                     if game.settings['dark mode']:
-                        self.selected_details["chance"] = pygame_gui.elements.UITextBox("success chance: " + c_text,
-                                                                                                scale(pygame.Rect((248, 610),
-                                                                                                                    (210, 250))),
-                                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
-                                                                                                manager=MANAGER)
+                        self.chancetext = pygame_gui.elements.UITextBox(insert + c_text, scale(pygame.Rect((248, 610),(210, 250))),
+                                                                        object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark", manager=MANAGER)
 
                     else:
-                        self.selected_details["chance"] = pygame_gui.elements.UITextBox("success chance: " + c_text,
-                                                                                            scale(pygame.Rect((248, 610),
-                                                                                                                (210, 250))),
-                                                                                            object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
-                                                                                            manager=MANAGER)
-            if self.stage == "choose accomplice":
-                if not self.selected_cat.dead and not self.selected_cat.outside:
-                    c_text = ""
-                    chance = self.get_kill(game.clan.your_cat, self.selected_cat, None, False)
-                    risk_chance = self.get_risk_chance(self.selected_cat, accomplice=None, accompliced=None)
+                        self.chancetext = pygame_gui.elements.UITextBox(insert + c_text, scale(pygame.Rect((248, 610),(210, 250))),
+                                                                        object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
+                                                                        manager=MANAGER)
+                        
+                if self.stage == "choose accomplice":
+                    a_text = ""
+                    chance = self.get_kill(game.clan.your_cat, self.cat_to_murder, accomplice=self.selected_cat, accompliced=False)
+                    risk_chance = self.get_risk_chance(self.cat_to_murder, accomplice=self.selected_cat, accompliced=False)
                     discover_chance = self.get_discover_chance(self.cat_to_murder, accomplice=self.selected_cat, accompliced=None)
                     if game.config["accomplice_chance"] != -1:
                         try:
                             chance = game.config["accomplice_chance"]
                         except:
                             pass
-                    if chance < 30:
-                        c_text = "very low"
-                    elif chance < 40:
-                        c_text = "low"
+                    if chance < 20:
+                        a_text = "very low"
+                    elif chance < 30:
+                        a_text = "low"
                     elif chance < 50:
-                        c_text = "average"
-                    elif chance < 70:
-                        c_text = "high"
+                        a_text = "average"
+                    elif chance < 80:
+                        a_text = "high"
                     else:
-                        c_text = "very high"
+                        a_text = "very high"
                     if game.settings['dark mode']:
-                        self.selected_details["willingness"] = pygame_gui.elements.UITextBox("willingness: " + c_text,
+                        self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
                                                                                                 scale(pygame.Rect((1145, 610),
                                                                                                                     (210, 250))),
                                                                                                 object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
                                                                                                 manager=MANAGER)
 
                     else:
-                        self.selected_details["willingness"] = pygame_gui.elements.UITextBox("willingness: " + c_text,
+                        self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
                                                                                             scale(pygame.Rect((1145, 610),
                                                                                                                 (210, 250))),
                                                                                             object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
                                                                                             manager=MANAGER)
-    
+                else:
+                    if game.settings['dark mode']:
+                        self.willingnesstext = pygame_gui.elements.UITextBox("" ,
+                                                                                                scale(pygame.Rect((1145, 610),
+                                                                                                                    (210, 250))),
+                                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
+                                                                                                manager=MANAGER)
+
+                    else:
+                        self.willingnesstext = pygame_gui.elements.UITextBox("",
+                                                                                            scale(pygame.Rect((1145, 610),
+                                                                                                                (210, 250))),
+                                                                                            object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
+                                                                                            manager=MANAGER)
+        else:
+            print("this is what worked btw")
+            self.willingnesstext = None
+            self.chancetext = None
+
     def update_selected_cat(self):
         """Updates the image and information on the currently selected mentor"""
         for ele in self.selected_details:
@@ -2222,7 +2350,7 @@ class MurderScreen(Screens):
                 name,
                 object_id="#text_box_34_horizcenter", manager=MANAGER)
             
-            self.update_chance_text()
+            self.update_chance_text(self.selected_cat, accomplice=None)
         elif self.selected_cat and self.selected_cat.dead:
             self.stage = "choose murder cat"
             self.confirm_mentor.disable()
@@ -2262,7 +2390,7 @@ class MurderScreen(Screens):
 
         if self.selected_cat and self.selected_cat.ID != self.cat_to_murder.ID and not self.selected_cat.dead:
             self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
-                scale(pygame.Rect((1100, 190), (270, 270))),
+                scale(pygame.Rect((1120, 190), (270, 270))),
                 pygame.transform.scale(
                     self.selected_cat.sprite,
                     (300, 300)), manager=MANAGER)
@@ -2276,7 +2404,7 @@ class MurderScreen(Screens):
                 info += self.selected_cat.skills.skill_string(short=True)
             
             self.selected_details["selected_info_acc"] = pygame_gui.elements.UITextBox(info,
-                                                                                   scale(pygame.Rect((1088, 475),
+                                                                                   scale(pygame.Rect((1102, 475),
                                                                                                      (300, 250))),
                                                                                    object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
                                                                                    manager=MANAGER)
@@ -2286,11 +2414,12 @@ class MurderScreen(Screens):
                 short_name = str(name)[0:15]
                 name = short_name + '...'
             self.selected_details["mentor_name"] = pygame_gui.elements.ui_label.UILabel(
-                scale(pygame.Rect((1085, 472), (300, 60))),
+                scale(pygame.Rect((1105, 472), (300, 60))),
                 name,
                 object_id="#text_box_34_horizcenter", manager=MANAGER)
-            
-        self.update_chance_text()
+        
+        if self.selected_cat:
+            self.update_chance_text(self.cat_to_murder, accomplice=self.selected_cat)
             
             
 
