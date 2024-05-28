@@ -4417,7 +4417,7 @@
                 "path": "resources/images/buttons/attackmethod_hover.png"
             },
             "selected_image": {
-                "path": "resources/images/buttons/attackmethod_hover.png"
+                "path": "resources/images/buttons/attackmethod_unavailable.png"
             },
             "disabled_image": {
                 "path": "resources/images/buttons/attackmethod_unavailable.png"
@@ -4434,10 +4434,27 @@
                 "path": "resources/images/buttons/poisonmethod_hover.png"
             },
             "selected_image": {
-                "path": "resources/images/buttons/poisonmethod_hover.png"
+                "path": "resources/images/buttons/poisonmethod_unavailable.png"
             },
             "disabled_image": {
                 "path": "resources/images/buttons/poisonmethod_unavailable.png"
+            }
+        }
+    },
+    "#camp_location_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/camplocation.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/camplocation_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/camplocation_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/camplocation_unavailable.png"
             }
         }
     },
@@ -4451,7 +4468,7 @@
                 "path": "resources/images/buttons/dawntime_hover.png"
             },
             "selected_image": {
-                "path": "resources/images/buttons/dawntime_hover.png"
+                "path": "resources/images/buttons/dawntime_unavailable.png"
             },
             "disabled_image": {
                 "path": "resources/images/buttons/dawntime_unavailable.png"
@@ -4468,7 +4485,7 @@
                 "path": "resources/images/buttons/daytime_hover.png"
             },
             "selected_image": {
-                "path": "resources/images/buttons/daytime_hover.png"
+                "path": "resources/images/buttons/daytime_unavailable.png"
             },
             "disabled_image": {
                 "path": "resources/images/buttons/daytime_unavailable.png"
@@ -4485,7 +4502,7 @@
                 "path": "resources/images/buttons/nighttime_hover.png"
             },
             "selected_image": {
-                "path": "resources/images/buttons/nighttime_hover.png"
+                "path": "resources/images/buttons/nighttime_unavailable.png"
             },
             "disabled_image": {
                 "path": "resources/images/buttons/nighttime_unavailable.png"
