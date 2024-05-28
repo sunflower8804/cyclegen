@@ -106,7 +106,6 @@ class MurderScreen(Screens):
                 else:
                     self.update_chance_text(self.selected_cat, accomplice=None)
                 if event.ui_element.return_cat_object() == self.selected_cat:
-                    self.print_chances(self.cat_to_murder, accomplice=None)
                     self.selected_cat = None
                     self.confirm_mentor.disable()
                     if self.willingnesstext:
@@ -2309,7 +2308,6 @@ class MurderScreen(Screens):
                                                                                             object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
                                                                                             manager=MANAGER)
         else:
-            print("this is what worked btw")
             self.willingnesstext = None
             self.chancetext = None
 
