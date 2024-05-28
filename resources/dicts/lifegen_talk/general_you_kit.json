@@ -4218,5 +4218,20 @@
             "Ah, never mind. You're looking very nice today, y_c.",
             "[What are they talking about?]"
         ]
+    ],
+       "ur_you_newborn_CM1": [
+        [
+            "newborn",
+            "you_ur",
+            "they_ur",
+            "they_older"
+        ],
+        [
+            "[Every time you've tried to open your eyes, the world has been a dizzying haze of mist and shimmers. This time, you catch a brief glimpse of t_c.]",
+            "Well, hello there, little one.",
+            "What a shame to see you here.",
+            "[{PRONOUN/t_c/subject/CAP} gently {VERB/t_c/nudge/nudges} you with {PRONOUN/t_c/poss} muzzle, and you squirm, {PRONOUN/t_c/poss} touch feeling like wisps of wind.]",
+            "I'll leave you be, I'm sure somecat is looking for you."
+        ]
     ]
 }
