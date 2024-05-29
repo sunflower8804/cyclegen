@@ -10,7 +10,7 @@ from scripts.event_class import Single_Event
 from scripts.events import events_class
 
 from .Screens import Screens
-from scripts.utility import get_personality_compatibility, get_text_box_theme, scale, scale_dimentions, shorten_text_to_fit
+from scripts.utility import get_personality_compatibility, get_text_box_theme, scale, scale_dimentions, shorten_text_to_fit, process_text
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from scripts.cat.pelts import Pelt
@@ -1031,7 +1031,8 @@ class MurderScreen(Screens):
         if self.method == "attack":
             chance += 5
         elif self.method == "poison":
-            chance += 1
+            if you.status not in ["medicine cat", "medicine cat apprentice"]:
+                chance += 1
         elif self.method == "accident":
             chance += 8
         elif self.method == "predator":
@@ -1059,7 +1060,6 @@ class MurderScreen(Screens):
 
         if cat_to_murder.moons < 6 or self.method == "poison":
             chance = math.floor(chance / 2)
-
 
         return chance
 
@@ -1420,12 +1420,35 @@ class MurderScreen(Screens):
                     except:
                         ceremony_txt = choice(self.m_txt["any any murder"])
                         print(f"Final Warning: No unique murder events found for '{status} murder {self.method}{risk}{lives}'")
-            
-        
+
         other_clan = choice(game.clan.all_clans)
-        ceremony_txt = ceremony_txt.replace('v_c', str(cat_to_murder.name))
+        # ceremony_txt = ceremony_txt.replace('v_c', str(cat_to_murder.name))
         ceremony_txt = ceremony_txt.replace('c_n', game.clan.name)
         ceremony_txt = ceremony_txt.replace("o_c", str(other_clan.name))
+    
+        medcats = []
+
+        for cat in Cat.all_cats_list:
+            if cat.status == "medicine cat":
+                medcats.append(cat)
+
+        if len(medcats) > 0:
+            random_medcat = choice(medcats)
+            random_medcat_name = str(random_medcat.name)
+            random_medcat_prns = choice(random_medcat.pronouns)
+        else:
+            random_medcat_name = "the medicine cat"
+            random_medcat_prns = [Cat.default_pronouns[0].copy()]
+            # ^^ replaces r_m with something generic if theres no medcat. id rather r_m text not be chooseable if there's no medcat but im a bit too lazy for that rn
+
+        replace_dict = {
+            "v_c": (str(self.cat_to_murder.name), choice(self.cat_to_murder.pronouns)),
+            "l_n": (str(game.clan.leader.name), choice(game.clan.leader.pronouns)),
+            "y_c": (str(game.clan.your_cat.name), choice(game.clan.your_cat.pronouns)),
+            "r_m": (random_medcat_name, random_medcat_prns)
+        }
+
+        ceremony_txt = process_text(ceremony_txt, replace_dict)
 
         if cat_to_murder.status == 'leader' and all_leader_lives:
             game.clan.leader_lives = 0
@@ -1515,7 +1538,8 @@ class MurderScreen(Screens):
                     game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + " at the cost of your own life. It seems that no cat knows the truth."))
                 else:
                     game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + ". It seems no one is aware of your actions."))
-        
+
+        self.stage = "choose murder cat"
         
           
     def choose_discover_punishment(self, you, cat_to_murder, accomplice, accompliced):
@@ -1921,6 +1945,8 @@ class MurderScreen(Screens):
         if cat_to_murder.skills.meets_skill_requirement(SkillPath.PROPHET):
             chance -= 5
         if cat_to_murder.skills.meets_skill_requirement(SkillPath.SENSE):
+            chance -= 5
+        if cat_to_murder.skills.meets_skill_requirement(SkillPath.HEALER):
             chance -= 5
         
         if cat_to_murder.skills.meets_skill_requirement(SkillPath.CAMP) and self.location != "camp":
