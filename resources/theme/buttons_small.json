@@ -4458,6 +4458,23 @@
             }
         }
     },
+    "#border_location_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/borderlocation.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/borderlocation_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/borderlocation_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/borderlocation_unavailable.png"
+            }
+        }
+    },
     "#dawntime_button": {
         "prototype": "#image_button",
         "images": {
