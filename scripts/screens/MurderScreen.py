@@ -1421,31 +1421,42 @@ class MurderScreen(Screens):
                         ceremony_txt = choice(self.m_txt["any any murder"])
                         print(f"Final Warning: No unique murder events found for '{status} murder {self.method}{risk}{lives}'")
 
+        # ceremony_txt = choice(self.m_txt["murder event key"])
+        # uncomment + add in the key to get a specific one for testing
+
         other_clan = choice(game.clan.all_clans)
-        # ceremony_txt = ceremony_txt.replace('v_c', str(cat_to_murder.name))
         ceremony_txt = ceremony_txt.replace('c_n', game.clan.name)
         ceremony_txt = ceremony_txt.replace("o_c", str(other_clan.name))
     
         medcats = []
-
         for cat in Cat.all_cats_list:
-            if cat.status == "medicine cat":
+            if cat.status == "medicine cat" and not cat.dead and not cat.outside and cat.status != you.status:
+                medcats.append(cat)
+
+        warriors = []
+        for cat in Cat.all_cats_list:
+            if cat.status == "warrior" and not cat.dead and not cat.outside and cat.status != you.status:
                 medcats.append(cat)
 
         if len(medcats) > 0:
             random_medcat = choice(medcats)
-            random_medcat_name = str(random_medcat.name)
             random_medcat_prns = choice(random_medcat.pronouns)
+        elif len(warriors) > 0:
+            random_medcat = choice(warriors)
+            random_medcat_prns = choice(random_medcat.pronouns)
+        elif game.clan.leader and game.clan.leader.ID != you.ID:
+            random_medcat = game.clan.leader
+            random_medcat_prns = choice(game.clan.leader.pronouns)
         else:
-            random_medcat_name = "the medicine cat"
-            random_medcat_prns = [Cat.default_pronouns[0].copy()]
-            # ^^ replaces r_m with something generic if theres no medcat. id rather r_m text not be chooseable if there's no medcat but im a bit too lazy for that rn
+            random_medcat = self.cat_to_murder
+            random_medcat_prns = choice(self.cat_to_murder.pronouns)
+            # just trying to avoid errors if theres no medcats or anyone else in the clan lol. for that one event that mentions a medcat
 
         replace_dict = {
             "v_c": (str(self.cat_to_murder.name), choice(self.cat_to_murder.pronouns)),
             "l_n": (str(game.clan.leader.name), choice(game.clan.leader.pronouns)),
             "y_c": (str(game.clan.your_cat.name), choice(game.clan.your_cat.pronouns)),
-            "r_m": (random_medcat_name, random_medcat_prns)
+            "r_m": (str(random_medcat.name), random_medcat_prns)
         }
 
         ceremony_txt = process_text(ceremony_txt, replace_dict)
