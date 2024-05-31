@@ -2596,7 +2596,7 @@
                 "next_scene": "ReportFail"
             },
             "choice2": {
-                "text": "Yes, I think they're at the medicine den.",
+                "text": "They're at the medicine den.",
                 "next_scene": "ReportFound"
             }
         },
@@ -3151,7 +3151,8 @@
         "tags": [
             "medicine cat apprentice",
             "medicine cat",
-            "brooding"
+            "brooding",
+            "no_kit"
         ],
         "intro": [
             "Erm ... Hi.",
