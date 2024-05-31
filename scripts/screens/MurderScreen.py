@@ -179,7 +179,7 @@ class MurderScreen(Screens):
             
             elif self.stage == 'choose accomplice' and event.ui_element == self.next:
                 self.change_cat(self.murder_cat, None, None)
-                # self.stage = 'choose murder cat'
+                self.stage = 'choose murder cat'
             
             elif event.ui_element == self.prev:
                 if self.stage == "choose murder method":
