@@ -69,9 +69,9 @@ class MurderScreen(Screens):
         self.murder_cat = None
         self.next = None
         self.prev = None
-        self.method = "attack"
-        self.location = "camp"
-        self.time = "day"
+        self.method = None
+        self.location = None
+        self.time = None
         self.methodinfo = None
         self.methodheading = None
         self.locationinfo = None
@@ -85,10 +85,6 @@ class MurderScreen(Screens):
         self.chancetext = None
         self.willingnesstext = None
 
-        self.method = choice(["attack", "poison", "accident", "predator"])
-        self.location = choice(["camp", "territory", "border"])
-        self.time = choice(["dawn", "day", "night"])
-
     def handle_event(self, event):
        
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
@@ -98,6 +94,11 @@ class MurderScreen(Screens):
                     self.cat_to_murder = self.selected_cat
 
                     self.stage = 'choose murder method'
+
+                    self.method = choice(["attack", "poison", "accident", "predator"])
+                    self.location = choice(["camp", "territory", "border"])
+                    self.time = choice(["dawn", "day", "night"])
+
                     self.screen_switches()
                     self.print_chances(self.selected_cat, accomplice=None)
 
@@ -178,11 +179,14 @@ class MurderScreen(Screens):
             
             elif self.stage == 'choose accomplice' and event.ui_element == self.next:
                 self.change_cat(self.murder_cat, None, None)
-                self.stage = 'choose murder method'
+                # self.stage = 'choose murder cat'
             
             elif event.ui_element == self.prev:
                 if self.stage == "choose murder method":
                     self.stage = "choose murder cat"
+                    self.method = None 
+                    self.location = None
+                    self.time = None
                     self.exit_screen()
                     self.screen_switches()
                 elif self.stage == "choose accomplice":
@@ -599,6 +603,7 @@ class MurderScreen(Screens):
                                                 object_id="#arrow_right_button", manager=MANAGER)
             
             self.prev = UIImageButton(scale(pygame.Rect((590, 680), (68, 68))), "",
+                                                tool_tip_text= "Going back a step will re-randomise your plan.",
                                                 object_id="#arrow_left_button", manager=MANAGER)
             
             self.previous_page_button.hide()
@@ -956,8 +961,8 @@ class MurderScreen(Screens):
                 print(f"Victim: {cat_to_murder.name}")
                 print("")
                 print(F"Success Chance: {successchance}/100")
-                print(F"Discovery Chance: {discover_chance}/10")
-                print(F"MC Injury Chance: {risk_chance}/12")
+                print(F"Discovery Chance: {discover_chance}/100")
+                print(F"MC Injury Chance: {risk_chance}/100")
                 print(F"MC Death Chance: {death_chance}/100")
 
                 if cat_to_murder.status == "leader":
@@ -971,8 +976,8 @@ class MurderScreen(Screens):
                     print("IF ACCOMPLICE AGREES:")
                     print("")
                     print(F"Success Chance: {hypsuccesschance}/100")
-                    print(F"Discovery Chance: {hypdiscover_chance}/10")
-                    print(F"MC Injury Chance: {hyprisk_chance}/12")
+                    print(F"Discovery Chance: {hypdiscover_chance}/100")
+                    print(F"MC Injury Chance: {hyprisk_chance}/100")
                     print(F"MC Death Chance: {hypdeath_chance}/100")
 
                     if cat_to_murder.status == "leader":
@@ -982,15 +987,15 @@ class MurderScreen(Screens):
                 print("IF ACCOMPLICE REFUSES:")
                 print("")
                 print(F"Success Chance: {successchance}/100")
-                print(F"Discovery Chance: {discover_chance}/10")
-                print(F"MC Injury Chance: {risk_chance}/12")
+                print(F"Discovery Chance: {discover_chance}/100")
+                print(F"MC Injury Chance: {risk_chance}/100")
                 print(F"MC Death Chance: {death_chance}/100")
 
                 if cat_to_murder.status == "leader":
                     print(F"LEADER ALL LIVES CHANCE: {leader_death_chance}/100")
 
             if cat_to_murder.status == "leader":
-                print(f"Discovery chances will go up if the leader doesn't lose all of their lives.")
+                print("Discovery chances will go up if the leader doesn't lose all of their lives.")
 
         
 
@@ -1024,6 +1029,7 @@ class MurderScreen(Screens):
     RESOURCE_DIR = "resources/dicts/events/lifegen_events/"
 
     def get_death_chance(self, cat_to_murder, accomplice, accompliced):
+        """ chance for mc to bite the dust """
         # x/100
         you = game.clan.your_cat
         chance = 0
@@ -1064,6 +1070,7 @@ class MurderScreen(Screens):
         return chance
 
     def get_risk_chance(self, cat_to_murder, accomplice, accompliced):
+        """calculates chance for mc to be injured in the murder. out of 100"""
         you = game.clan.your_cat
         chance = 0
 
@@ -1071,147 +1078,181 @@ class MurderScreen(Screens):
 
         cat_healthy = not cat_to_murder.is_ill() and not cat_to_murder.is_injured()
 
+        your_skills = []
+        if you.skills.primary:
+            your_skills.append(you.skills.primary.skill)
+        if you.skills.secondary:
+                your_skills.append(you.skills.secondary.skill)
+
+        their_skills = []
+        if cat_to_murder.skills.primary:
+            their_skills.append(cat_to_murder.skills.primary.skill)
+        if cat_to_murder.skills.secondary:
+            their_skills.append(cat_to_murder.skills.secondary.skill)
+
         # GENERAL
-        # lowers chances
         if you.joined_df:
-            chance -= 4
+            chance -= 32
         if you.age != cat_to_murder.age and you.moons > cat_to_murder.moons:
-            chance -= 2
+            chance -= 16
         if cat_to_murder.age == "senior":
-            chance -= 2
+            chance -= 16
         if you.status == cat_to_murder.status:
-            chance -= 1
-        if not cat_healthy:
-            chance -= 5
+            chance -= 16
         if you.experience > cat_to_murder.experience:
-            chance -= 2
+            chance -= 16
         if accomplice and accompliced:
-            chance -= 3
+            chance -= 24
 
         if self.location == "camp":
-            chance -= 3
+            chance -= 24
         
         if self.time == "day":
-            chance -= 3
+            chance -= 24
 
-        # raises chances
         if self.location == "border":
-            chance += 4
+            chance += 32
         if self.time == "night":
-            chance += 5
+            chance += 40
 
         if cat_to_murder.joined_df:
-            chance += 4
+            chance += 32
         if cat_to_murder.moons >= you.moons + 4:
-            chance += 2
+            chance += 16
         if not you_healthy:
-            chance += 2
+            chance += 16
         
         if cat_to_murder.status == "leader":
             if game.clan.leader_lives > 1:
-                chance += 5
+                chance += 40
             else:
-                chance += 2
+                chance += 16
 
         if cat_to_murder.experience > you.experience:
-            chance += 2
+            chance += 16
 
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.GUARDIAN):
-            chance += 1
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.COOPERATIVE):
-            chance += 1
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.OMEN):
-            chance += 2
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.PROPHET):
-            chance += 2
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.SENSE):
-            chance += 2
+        victim_skills_lvl1 = ["watchful", "lives in groups", "interested in oddities", "fascinated by prophecies"]
+        victim_skills_lvl2 = ["good guard", "good sport", "omen seeker", "prophecy seeker"]
+        victim_skills_lvl3 = ["great guard", "team player", "omen sense", "prophecy interpreter"]
+        victim_skills_lvl4 = ["guardian", "insider", "omen sight", "prophet"]
+
+        if any(skill in victim_skills_lvl1 for skill in their_skills):
+            chance -= 5
+        if any(skill in victim_skills_lvl2 for skill in their_skills):
+            chance -= 10
+        if any(skill in victim_skills_lvl3 for skill in their_skills):
+            chance -= 15
+        if any(skill in victim_skills_lvl4 for skill in their_skills):
+            chance -= 20
 
         if self.method == "attack":
-            # raises chances
             if you.joined_df:
-                chance -= 5
-            if you.skills.meets_skill_requirement(SkillPath.HUNTER):
-                chance -= 4
-            if you.skills.meets_skill_requirement(SkillPath.FIGHTER):
-                chance -= 4
-            if you.skills.meets_skill_requirement(SkillPath.GRACE):
-                chance -= 4
-            if you.status == "warrior" and you_healthy:
+                chance -= 35
+            if ("steps lightly" or "mossball hunter") in your_skills:
                 chance -= 3
+            if ("graceful" or "good hunter") in your_skills:
+                chance -= 7
+            if ("elegant" or "great hunter") in your_skills:
+                chance -= 11
+            if ("radiates elegance" or "renowned hunter") in your_skills:
+                chance -= 15
+            if you.status == "warrior" and you_healthy:
+                chance -= 23
             if you.age != cat_to_murder.age and you.moons > cat_to_murder.moons:
-                chance -= 2
+                chance -= 16
 
             if self.location == "border":
-                chance -= 1
+                chance -= 8
 
             if you.personality.trait == "bloodthirsty":
-                chance -= 2
+                chance -= 16
 
-            # lowers chances
             if cat_to_murder.status == "warrior" and cat_healthy:
-                chance += 3
+                chance += 24
             if you.status in ["mediator", "mediator apprentice", "queen", "queen's apprentice", "medicine cat", "medicine cat apprentice", "kitten"]:
-                chance += 4
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.FIGHTER):
-                chance += 5
+                chance += 32
+
+            if self.method == "attack":
+                if "avid play-fighter" in their_skills:
+                    chance += 8
+                if "good fighter" in their_skills:
+                    chance += 12
+                if "formidable fighter" in their_skills:
+                    chance += 18
+                if "unusually strong fighter" in their_skills:
+                    chance += 25
+
             if self.location == "camp":
-                chance += 1
+                chance += 8
             if cat_to_murder.personality.trait == "bloodthirsty":
-                chance += 4
+                chance += 16
 
         if self.method == "accident":
-            # raises chances
-            if you.skills.meets_skill_requirement(SkillPath.EXPLORER):
-                chance -= 4
-            if you.skills.meets_skill_requirement(SkillPath.NAVIGATOR):
-                chance -= 4
-            if you.skills.meets_skill_requirement(SkillPath.CLIMBER):
-                chance -= 4
+            acc_skills_lvl_1 = ["curious wanderer", "good with directions", "constantly climbing"]
+            acc_skills_lvl_2 = ["knowledgeable explorer", "good navigator", "good climber"]
+            acc_skills_lvl_3 = ["brave pathfinder", "great navigator", "great climber"]
+            acc_skills_lvl_4 = ["master of territories", "pathfinder", "impressive climber"]
+
+            if any(skill in acc_skills_lvl_1 for skill in your_skills):
+                chance += 5
+            if any(skill in acc_skills_lvl_2 for skill in your_skills):
+                chance += 10
+            if any(skill in acc_skills_lvl_3 for skill in your_skills):
+                chance += 15
+            if any(skill in acc_skills_lvl_4 for skill in your_skills):
+                chance += 20
 
             if self.location == "camp":
-                chance -= 4
-
-            # lowers chances
+                chance -= 20
 
             if game.clan.biome == "Mountainous":
-                chance += 4
+                chance += 20
             if cat_to_murder.status in ["warrior", "deputy", "leader"] and cat_healthy:
-                chance += 3
+                chance += 15
 
         if self.method == "predator":
 
-            # raises chances
-            if you.skills.meets_skill_requirement(SkillPath.LANGUAGE):
+            if "other-cat-ly whisperer" in your_skills:
                 chance -= 5
+            if "dog-whisperer" in your_skills:
+                chance -= 10
+            if "multilingual" in your_skills:
+                chance -= 15
+            if "listener of all voices" in your_skills:
+                chance -= 20
+
             if self.location == "camp":
-                chance -= 4
+                chance -= 35
 
-            # lowers chances
             if cat_to_murder.status in ["warrior", "deputy", "leader"] and cat_healthy:
-                chance += 3
+                chance += 24
             if you.status in ["queen", "mediator", "kitten", "medicine cat", "queen's apprentice", "mediator apprentice", "medicine cat apprentice"]:
-                chance += 3
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.GUARDIAN):
-                chance += 4
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.FIGHTER):
-                chance += 4
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.LANGUAGE):
-                chance += 2
+                chance += 24
 
-        if chance > 10:
-            chance = 10
-        elif chance < 0:
-            chance = 0
+            if "avid play-fighter" in their_skills:
+                chance += 8
+            if "good fighter" in their_skills:
+                chance += 12
+            if "formidable fighter" in their_skills:
+                chance += 18
+            if "unusually strong fighter" in their_skills:
+                chance += 25
 
-        # lowest possible risk chance for predator is 3, meaning a 1/4 chance, no matter how many other positive factors they have.
-        if chance < 3 and self.method == "predator":
-            chance = 3
+        if chance >= 195:
+            chance = 95
+        elif chance <= 5:
+            chance = 5
+
+        # lowest possible risk chance for predator is 25, meaning a 1/4 chance, no matter how many other positive factors they have.
+        if chance < 25 and self.method == "predator":
+            chance = 25
 
         return chance
     
 
     def choose_murder_text(self, you, cat_to_murder, accomplice, accompliced):
+        """chooses murder text. nuff said also chooses whether the mc is injured or dies"""
+
         with open(f"{self.RESOURCE_DIR}murder.json",
                 encoding="ascii") as read_file:
             self.m_txt = ujson.loads(read_file.read())
@@ -1230,7 +1271,7 @@ class MurderScreen(Screens):
                 all_leader_lives = True
 
 
-        risk = randint(1,12)
+        risk = randint(1,100)
         risk_chance = self.get_risk_chance(cat_to_murder, accomplice=accomplice, accompliced=accompliced)
 
         deathrisk = randint(1,100)
@@ -1554,6 +1595,7 @@ class MurderScreen(Screens):
         
           
     def choose_discover_punishment(self, you, cat_to_murder, accomplice, accompliced):
+        """determines punishment text, shunned and guilt outcomes"""
         # 1 = you punished, 2 = accomplice punished, 3 = both punished
         if game.clan.your_cat.dead:
             if randint (1,2) == 1:
@@ -1670,7 +1712,7 @@ class MurderScreen(Screens):
                     game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
 
     def leader_death_chance(self, cat_to_murder, accomplice, accompliced):
-        # x/100
+        """calculates chance for leader to lose all of their lives if the murder succeeds. out of 100"""
         chance = 50
         if cat_to_murder.status != "leader":
             return
@@ -1691,90 +1733,92 @@ class MurderScreen(Screens):
         
     
     def get_discover_chance(self, cat_to_murder, accomplice, accompliced):
-        chance = 2
+        """calculates chance for murder discovery out of 100"""
+        chance = 20
         # location chances
         if self.location == "camp":
-            chance += 1
+            chance += 10
             if self.method == "attack":
-                chance +=1
+                chance += 10
 
             if self.method == "poison":
                 if game.clan.your_cat.status == "medicine cat":
                     chance += 0
                 else:
-                    chance += 2
+                    chance += 20
             if self.method == "accident":
-                chance += 3
+                chance += 30
             if self.method == "predator":
-                chance += 3
+                chance += 30
 
             if self.time == "day":
-                chance -= 1
+                chance -= 10
 
         elif self.location == "territory":
-            chance -= 1
+            chance -= 10
             if self.method == "attack":
-                chance += 1
+                chance += 10
             if self.method == "poison":
                 if game.clan.your_cat.status == "medicine cat":
-                    chance += 2
+                    chance += 20
                 else:
-                    chance += 3
+                    chance += 30
             if self.method == "accident":
                 chance -= 1
             if self.method == "predator":
-                chance -= 3
+                chance -= 30
 
         elif self.location == "border":
-            chance -= 3
+            chance -= 30
             if self.method == "attack":
-                chance -= 2 
+                chance -= 20
             if self.method == "poison":
-                chance += 3
+                chance += 30
             if self.method == "accident":
-                chance -= 3
+                chance -= 30
             if self.method == "predator":
-                chance -= 4
+                chance -= 40
 
             if game.clan.war.get("at_war", True):
-                chance -= 3
+                chance -= 30
 
         if self.time == "dawn":
             if self.method == "attack":
-                chance += 3
+                chance += 30
             if self.method == "accident":
-                chance += 2
+                chance += 20
             if self.method == "predator":
-                chance -= 2
+                chance -= 20
 
         if self.time == "day":
             if self.method == "attack":
-                chance += 6
+                chance += 60
             if self.method == "poison":
                 if game.clan.your_cat.status != "medicine cat":
-                    chance += 3
+                    chance += 30
             if self.method == "accident":
-                chance += 1
+                chance += 10
             if self.method == "predator":
-                chance += 2
+                chance += 20
 
         if self.time == "night":
             if self.method == "attack":
-                chance += 2
+                chance += 20
             if self.method == "predator":
-                chance += 1
+                chance += 10
 
-        if chance < 0:
-            chance = 0
-        if chance >= 10:
-            chance = 9
+        if chance < 5:
+            chance = 5
+        if chance >= 95:
+            chance = 95
 
         return chance
 
     def handle_murder_fail(self, you, cat_to_murder, accomplice, accompliced):
+        """ handles murders failing and victims becoming accidentally injured/sick as a result """
         c_m = str(cat_to_murder.name)
 
-        victim_injury_chance = 6
+        victim_injury_chance = 8
 
         self.print_chances(cat_to_murder, accomplice)
 
@@ -1840,44 +1884,43 @@ class MurderScreen(Screens):
         game.cur_events_list.insert(0, Single_Event(text))
         
     
-    # status_chances = {
-    #     'warrior': 40,
-    #     'medicine cat': 40,
-    #     'mediator': 35,
-    #     'apprentice': 30,
-    #     'medicine cat apprentice': 25,
-    #     'mediator apprentice': 20,
-    #     "queen": 25,
-    #     "queen's apprentice": 20,
-    #     'deputy': 50,
-    #     'leader': 60,
-    #     'elder': 25,
-    #     'kitten': 10,
-    # }
+    status_chances = {
+        'warrior': 20,
+        'medicine cat': 20,
+        'mediator': 17,
+        'apprentice': 15,
+        'medicine cat apprentice': 13,
+        'mediator apprentice': 10,
+        "queen": 13,
+        "queen's apprentice": 13,
+        'deputy': 25,
+        'leader': 30,
+        'elder': 13,
+        'kitten': 5,
+    }
 
-    # skill_chances = {
-    #     'warrior': -5,
-    #     'medicine cat': -5,
-    #     'mediator': 0,
-    #     'apprentice': 5,
-    #     'medicine cat apprentice': 5,
-    #     'mediator apprentice': 5,
-    #     "queen's apprentice": 10,
-    #     'queen': 5,
-    #     'deputy': -10,
-    #     'leader': -15,
-    #     'elder': 5,
-    #     'kitten': 30
-    # }
+    skill_chances = {
+        'warrior': -5,
+        'medicine cat': -5,
+        'mediator': 0,
+        'apprentice': 5,
+        'medicine cat apprentice': 5,
+        'mediator apprentice': 5,
+        "queen's apprentice": 10,
+        'queen': 5,
+        'deputy': -10,
+        'leader': -15,
+        'elder': 5,
+        'kitten': 30
+    }
 
-    # murder_skills = ["quick witted", "avid play-fighter", "oddly observant","never sits still"]
-    # good_murder_skills = ["clever", "good fighter", "natural intuition","fast runner"]
-    # great_murder_skills = ["very clever", "formidable fighter", "keen eye","incredible runner"]
-    # best_murder_skills = ["incredibly clever", "unusually strong fighter", "unnatural senses","fast as the wind"]
-
+    murder_skills = ["quick witted", "avid play-fighter", "oddly observant","never sits still"]
+    good_murder_skills = ["clever", "good fighter", "natural intuition","fast runner"]
+    great_murder_skills = ["very clever", "formidable fighter", "keen eye","incredible runner"]
+    best_murder_skills = ["incredibly clever", "unusually strong fighter", "unnatural senses","fast as the wind"]
 
     def get_kill(self, you, cat_to_murder, accomplice, accompliced):
-        chance = 30
+        chance = self.status_chances.get(you.status, 0)
 
         you_healthy = not you.is_ill() and not you.is_injured()
         if accomplice:
@@ -1885,6 +1928,47 @@ class MurderScreen(Screens):
         cat_healthy = not cat_to_murder.is_ill() and not cat_to_murder.is_injured()
 
         # GENERAL CHANCES
+        # skill chances from original murderscreen
+        your_skills = []
+        if you.skills.primary:
+            your_skills.append(you.skills.primary.skill)
+        if you.skills.secondary:
+                your_skills.append(you.skills.secondary.skill)
+
+        their_skills = []
+        if cat_to_murder.skills.primary:
+            their_skills.append(cat_to_murder.skills.primary.skill)
+        if cat_to_murder.skills.secondary:
+            their_skills.append(cat_to_murder.skills.secondary.skill)
+
+        accomp_skills = []
+        if accomplice:
+            if accomplice.skills.primary:
+                accomp_skills.append(accomplice.skills.primary.skill)
+            if accomplice.skills.secondary:
+                accomp_skills.append(accomplice.skills.secondary.skill)
+
+        if any(skill in self.murder_skills for skill in your_skills):
+            chance += 5
+        if any(skill in self.good_murder_skills for skill in your_skills):
+            chance += 10
+        if any(skill in self.great_murder_skills for skill in your_skills):
+            chance += 15
+        if any(skill in self.best_murder_skills for skill in your_skills):
+            chance += 20
+
+        chance += self.skill_chances.get(cat_to_murder.status, 0)
+        
+        if any(skill in self.murder_skills for skill in their_skills):
+            chance -= 5
+        if any(skill in self.good_murder_skills for skill in their_skills):
+            chance -= 10
+        if any(skill in self.great_murder_skills for skill in their_skills):
+            chance -= 15
+        if any(skill in self.best_murder_skills for skill in their_skills):
+            chance -= 20
+
+        # new stuff
         # raises chances:
         if you.joined_df:
             chance += 15
@@ -1893,7 +1977,7 @@ class MurderScreen(Screens):
         if cat_to_murder.age == "senior":
             chance += 10
         if you.status == cat_to_murder.status:
-            chance += 10
+            chance += 5
         if not cat_healthy:
             chance += 10
         if you.experience > cat_to_murder.experience:
@@ -1924,8 +2008,6 @@ class MurderScreen(Screens):
         if self.time == "night":
             chance += 10
 
-        # lowers chances:
-
         if cat_to_murder.joined_df:
             chance -= 10
         if cat_to_murder.moons >= you.moons + 4:
@@ -1947,21 +2029,29 @@ class MurderScreen(Screens):
         if cat_to_murder.experience > you.experience:
             chance -= 5
 
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.GUARDIAN):
+        victim_skills_lvl1 = ["watchful", "lives in groups", "interested in oddities", "fascinated by prophecies"]
+        victim_skills_lvl2 = ["good guard", "good sport", "omen seeker", "prophecy seeker"]
+        victim_skills_lvl3 = ["great guard", "team player", "omen sense", "prophecy interpreter"]
+        victim_skills_lvl4 = ["guardian", "insider", "omen sight", "prophet"]
+
+        if any(skill in victim_skills_lvl1 for skill in their_skills):
             chance -= 5
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.COOPERATIVE):
-            chance -= 5
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.OMEN):
-            chance -= 5
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.PROPHET):
-            chance -= 5
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.SENSE):
-            chance -= 5
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.HEALER):
-            chance -= 5
-        
-        if cat_to_murder.skills.meets_skill_requirement(SkillPath.CAMP) and self.location != "camp":
-            chance -= 5
+        if any(skill in victim_skills_lvl2 for skill in their_skills):
+            chance -= 10
+        if any(skill in victim_skills_lvl3 for skill in their_skills):
+            chance -= 15
+        if any(skill in victim_skills_lvl4 for skill in their_skills):
+            chance -= 20
+            
+        if self.location != "camp":
+            if "picky nest builder" in their_skills:
+                chance -= 3
+            if "steady paws" in their_skills:
+                chance -= 7
+            if "den builder" in their_skills:
+                chance -= 11
+            if "campkeeper" in their_skills:
+                chance -= 15
 
         if cat_to_murder.status in ["queen", "queen's apprentice", "medicine cat", "medicine cat apprentice", "kitten"] and self.location != "camp":
             chance -= 8
@@ -1987,12 +2077,16 @@ class MurderScreen(Screens):
             # raises chances
             if you.joined_df:
                 chance += 15
-            if you.skills.meets_skill_requirement(SkillPath.HUNTER):
-                chance += 10
-            if you.skills.meets_skill_requirement(SkillPath.FIGHTER):
-                chance += 10
-            if you.skills.meets_skill_requirement(SkillPath.GRACE):
-                chance += 10
+
+            if ("steps lightly" or "mossball hunter") in your_skills:
+                chance += 3
+            if ("graceful" or "good hunter") in your_skills:
+                chance += 7
+            if ("elegant" or "great hunter") in your_skills:
+                chance += 11
+            if ("radiates elegance" or "renowned hunter") in your_skills:
+                chance += 15
+
             if you.status == "warrior":
                 chance += 10
             if you.age != cat_to_murder.age and you.moons > cat_to_murder.moons:
@@ -2010,8 +2104,16 @@ class MurderScreen(Screens):
                 chance -= 10
             if you.status in ["mediator", "mediator apprentice", "queen", "queen's apprentice", "medicine cat", "medicine cat apprentice", "kitten"]:
                 chance -= 10
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.FIGHTER):
-                chance -= 10
+            
+            if "avid play-fighter" in their_skills:
+                chance -= 3
+            if "good fighter" in their_skills:
+                chance -= 7
+            if "formidable fighter" in their_skills:
+                chance -= 11
+            if "unusually strong fighter" in their_skills:
+                chance -= 15
+
             if self.location == "camp":
                 chance -= 15
             if cat_to_murder.personality.trait == "bloodthirsty":
@@ -2032,8 +2134,6 @@ class MurderScreen(Screens):
             # lowers chances
             if cat_to_murder.status in ["medicine cat", "medicine cat apprentice"]:
                 chance -= 15
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.HEALER):
-                chance -= 5
             if not cat_to_murder.is_ill() and not cat_to_murder.is_injured():
                 chance -= 10
             if you.status not in ["medicine cat", "medicine cat apprentice"]:
@@ -2047,12 +2147,20 @@ class MurderScreen(Screens):
             if accomplice and accompliced:
                 chance += 10
 
-            if you.skills.meets_skill_requirement(SkillPath.EXPLORER):
+            acc_skills_lvl_1 = ["curious wanderer", "good with directions", "constantly climbing"]
+            acc_skills_lvl_2 = ["knowledgeable explorer", "good navigator", "good climber"]
+            acc_skills_lvl_3 = ["brave pathfinder", "great navigator", "great climber"]
+            acc_skills_lvl_4 = ["master of territories", "pathfinder", "impressive climber"]
+
+            if any(skill in acc_skills_lvl_1 for skill in your_skills):
+                chance += 5
+            if any(skill in acc_skills_lvl_2 for skill in your_skills):
+                chance += 10
+            if any(skill in acc_skills_lvl_3 for skill in your_skills):
                 chance += 15
-            if you.skills.meets_skill_requirement(SkillPath.NAVIGATOR):
-                chance += 15
-            if you.skills.meets_skill_requirement(SkillPath.CLIMBER):
-                chance += 15
+            if any(skill in acc_skills_lvl_4 for skill in your_skills):
+                chance += 20
+
             if cat_to_murder.status in ["kitten", "queen", "apprentice", "queen's apprentice", "medicine cat apprentice", "mediator apprentice"] and \
                 not cat_to_murder.skills.meets_skill_requirement(SkillPath.EXPLORER) and\
                 not cat_to_murder.skills.meets_skill_requirement(SkillPath.NAVIGATOR) and\
@@ -2068,12 +2176,14 @@ class MurderScreen(Screens):
                 chance += 15
 
             # lowers chances
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.EXPLORER):
+            if any(skill in acc_skills_lvl_1 for skill in their_skills):
+                chance -= 5
+            if any(skill in acc_skills_lvl_2 for skill in their_skills):
+                chance -= 10
+            if any(skill in acc_skills_lvl_3 for skill in their_skills):
                 chance -= 15
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.NAVIGATOR):
-                chance -= 15
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.SENSE):
-                chance -= 15
+            if any(skill in acc_skills_lvl_4 for skill in their_skills):
+                chance -= 20
             
             if cat_to_murder.status in ["warrior", "deputy", "leader"]:
                 chance -= 15
@@ -2088,15 +2198,27 @@ class MurderScreen(Screens):
             chance += 20
             if accomplice and accompliced:
                 chance += 10
-                if accomplice.skills.meets_skill_requirement(SkillPath.LANGUAGE):
+                if "other-cat-ly whisperer" in accomp_skills:
+                    chance += 5
+                if "dog-whisperer" in accomp_skills:
                     chance += 10
+                if "multilingual" in accomp_skills:
+                    chance += 15
+                if "listener of all voices" in accomp_skills:
+                    chance += 20
 
 
             if cat_to_murder.moons < 6:
                 chance += 20
             if self.location in ["territory", "border"]:
                 chance += 15
-            if you.skills.meets_skill_requirement(SkillPath.LANGUAGE):
+            if "other-cat-ly whisperer" in your_skills:
+                chance += 5
+            if "dog-whisperer" in your_skills:
+                chance += 10
+            if "multilingual" in your_skills:
+                chance += 15
+            if "listener of all voices" in your_skills:
                 chance += 20
 
             # lowers chances
@@ -2106,14 +2228,36 @@ class MurderScreen(Screens):
                 chance -= 10
             if you.status in ["queen", "mediator", "kitten", "medicine cat", "queen's apprentice", "mediator apprentice", "medicine cat apprentice"]:
                 chance -= 15
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.GUARDIAN):
-                chance -= 15
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.FIGHTER):
-                chance -= 15
+
+            if "watchful" in their_skills:
+                chance -= 7
+            if "good guard" in their_skills:
+                chance -= 11
+            if "great guard" in their_skills:
+                chance -= 16
+            if "guardian" in their_skills:
+                chance -= 23
+
+            if "avid play-fighter" in their_skills:
+                chance -= 3
+            if "good fighter" in their_skills:
+                chance -= 8
+            if "formidable fighter" in their_skills:
+                chance -= 13
+            if "unusually strong fighter" in their_skills:
+                chance -= 18
+
             if self.location == "camp":
                 chance -= 10
-            if cat_to_murder.skills.meets_skill_requirement(SkillPath.LANGUAGE):
-                chance -= 15
+
+            if "other-cat-ly whisperer" in their_skills:
+                chance += 5
+            if "dog-whisperer" in their_skills:
+                chance += 10
+            if "multilingual" in their_skills:
+                chance += 15
+            if "listener of all voices" in their_skills:
+                chance += 20
 
         if you.moons < 6:
             chance = chance * math.ceil(2/3)
