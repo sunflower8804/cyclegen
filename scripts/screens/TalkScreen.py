@@ -328,8 +328,6 @@ class TalkScreen(Screens):
         return chosen_text_intro
 
     def create_choice_buttons(self):
-
-
         y_pos = 0
         if f"{self.current_scene}_choices" not in self.possible_texts[self.chosen_text_key]:
             self.paw.visible = True
@@ -450,7 +448,7 @@ class TalkScreen(Screens):
             "you_formerlyaloner",
             "you_formerlyarogue",
             "you_formerlyakittypet",
-            "you_formerlyoutsider",
+            "you_formerlyaoutsider",
             "you_originallyfromanotherclan",
             "you_orphaned",
             "you_abandoned",
@@ -463,7 +461,7 @@ class TalkScreen(Screens):
             "they_formerlyaloner",
             "they_formerlyarogue",
             "they_formerlyakittypet",
-            "they_formerlyoutsider",
+            "they_formerlyaoutsider",
             "they_originallyfromanotherclan",
             "they_orphaned",
             "they_abandoned",
@@ -497,7 +495,7 @@ class TalkScreen(Screens):
             #     continue
 
             # Status tags
-            if you.status not in tags and f"you_{you.status}" not in tags and "any" not in tags and "young elder" not in tags and "no_kit" not in tags and "you_any" not in tags:
+            if you.status not in tags and f"you_{you.status}" not in tags and f"you_{you.status.replace('' '', '_')}" not in tags and "any" not in tags and "young elder" not in tags and "no_kit" not in tags and "you_any" not in tags:
                 continue
             elif "young elder" in tags and cat.status == 'elder' and cat.moons >= 100:
                 continue
@@ -1197,7 +1195,7 @@ class TalkScreen(Screens):
             tags = item["tags"] if "tags" in item else item[0]
             weights.append(len(tags))
         text_chosen_key = choices(list(texts_list.keys()), weights=weights)[0]
-        text = texts_list[text_chosen_key].get(1)
+        text = texts_list[text_chosen_key]["intro"] if "intro" in texts_list[text_chosen_key] else texts_list[text_chosen_key][1]
         if text is None:
             text = self.load_and_replace_placeholders(f"{resource_dir}general.json", cat, you)[1]
 
@@ -1206,7 +1204,7 @@ class TalkScreen(Screens):
             if new_text:
                 break
             text_chosen_key = choices(list(texts_list.keys()), weights=weights)[0]
-            text = texts_list[text_chosen_key][1]
+            text = texts_list[text_chosen_key]["intro"] if "intro" in texts_list[text_chosen_key] else texts_list[text_chosen_key][1]
             new_text = self.get_adjusted_txt(text, cat)
         else:
             text = self.load_and_replace_placeholders(f"{resource_dir}general.json", cat, you)[1]

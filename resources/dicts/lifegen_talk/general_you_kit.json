@@ -47,7 +47,6 @@
     "assertive_5": [
         [
             "kitten",
-            "dislike",
             "assertive",
             "cool",
             "unlawful",
@@ -58,6 +57,21 @@
             "Hey, mouse-brain! Watch where you're going!",
             "Wait, I recognize you. You're one of the new kits, right? Shouldn't you be in the nursery?",
             "Hmph. Whatever. Just stay outta the real warriors' way, before someone squishes you."
+        ]
+    ],
+     "assertive_tokit_2": [
+        [
+            "kitten",
+            "platonic_like",
+            "assertive"
+        ],
+        [
+            "Hey, y_c! I brought you back something from my last patrol. Take a look!",
+            "[t_c drops a colorful feather at your paws.]",
+            "You wanna know how I found it? Oh, it's a crazy story. I was on a hunting patrol, when I found this huge bird, and ...",
+            "[t_c regales you with a daring story full of thrills, twists, and turns.]",
+            "... And then I got the feather! Quite the adventure, no?",
+            "Just wait until you're old enough. You'll be having plenty of adventures of your own before you know it!"
         ]
     ],
     "assertive_4": [
@@ -89,7 +103,8 @@
         [
             "you_newborn",
             "they_any",
-            "assertive"
+            "assertive",
+            "non-related"
         ],
         [
             "Whoa! Hey there, little guy! Shouldn't you be in the nursery?",
@@ -111,7 +126,7 @@
     "assertive_tonewborn_2": [
         [
             "you_newborn",
-            "they_any",
+            "they_medicine_cat",
             "assertive"
         ],
         [
@@ -1818,7 +1833,7 @@
     "sweet_11": [
         [
             "newborn",
-            "they_formerlykittypet",
+            "they_formerlyakittypet",
             "sweet"
         ],
         [

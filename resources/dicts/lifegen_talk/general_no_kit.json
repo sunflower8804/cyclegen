@@ -92,6 +92,19 @@
             "But don't try to get me to watch my tongue. If someone's acting like a stupid piece of fox-dung, I'm gonna call them a stupid piece of fox-dung!!!"
         ]
     ],
+      "assertive_warrior": [
+        [
+            "apprentice",
+            "assertive",
+            "unlawful",
+            "they_older"
+        ],
+        [
+            "Heads up, y_c! Moss in the elders' den needs changing!",
+            "Guess being a warrior's not always fighting battles and scaring off kittypets, huh?",
+            "But there's still plenty of that, too, if you're lucky. Hehehe."
+        ]
+    ],
     "assertivewarrior_mediatorapp3": [
         [
             "mediator apprentice",
@@ -16122,9 +16135,9 @@
             "they_ur",
             "you_ur",
             "any",
-            "they_formerlyloner",
-            "they_formerlyoutsider",
-            "they_formerlyrogue"
+            "they_formerlyaloner",
+            "they_formerlyaoutsider",
+            "they_formerlyarogue"
         ],
         [
             "I knew I would end up here.",
@@ -16135,9 +16148,9 @@
         [
             "they_ur",
             "you_ur",
-            "they_formerlyloner",
-            "they_formerlyoutsider",
-            "they_formerlyrogue",
+            "they_formerlyaloner",
+            "they_formerlyaoutsider",
+            "they_formerlyarogue",
             "any",
             "no_kit"
         ],
@@ -17219,7 +17232,7 @@
         [
             "they_ur",
             "any",
-            "they_formerlyloner",
+            "they_formerlyaloner",
             "you_shunned",
             "no_kit"
         ],
@@ -17386,19 +17399,6 @@
             "HEY!!! You leave them alone!",
             "Ugh. Can you believe how cruel some cats are, y_c? A bunch of apprentices were trying to convince these two kits to sneak into a badger den ... what a bunch of mouse-brains.",
             "No matter what, don't let anyone try to pressure you into doing something you don't think is right. Go with your gut, and stick to your own values. That's what's really important."
-        ]
-    ],
-    "assertive_elder_3": [
-        [
-            "Any",
-            "no_kit",
-            "assertive",
-            "cool",
-            "unabashed"
-        ],
-        [
-            "Did you see r_c earlier today, y_c? Oh, StarClan, it was the funniest thing ever!",
-            "They mistook a twig for a snake and flew, like, five fox-lengths into the air! Hahahaha!"
         ]
     ],
     "assertive_app29": [

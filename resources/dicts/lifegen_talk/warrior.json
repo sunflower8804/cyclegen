@@ -2062,10 +2062,10 @@
             "Any",
             "they_outsiderroots",
             "they_half-Clan",
-            "they_formerlyloner",
-            "they_formerlyrogue",
-            "they_formerlykittypet",
-            "they_formerlyoutsider",
+            "they_formerlyaloner",
+            "they_formerlyarogue",
+            "they_formerlyakittypet",
+            "they_formerlyaoutsider",
             "they_originallyanotherclan",
             "comfort",
             "respect",
@@ -2775,7 +2775,7 @@
     "stable_warriortoKITTEN_20": [
         [
             "Kitten",
-            "they_formerlykittypet",
+            "they_formerlyakittypet",
             "stable"
         ],
         [
