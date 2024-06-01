@@ -4018,6 +4018,28 @@
             "S-so, why do you look so scary?"
         ]
     ],
+    "revived_grievingkit_J1": [
+        [
+            "any",
+            "grievingyou",
+            "they_grievingyou"
+        ],
+        [
+            "[Upon seeing you, t_c stumbles up to you, in tears, and grabs your leg, refusing to let go.]",
+            "I-- I thought-- *hic*-- I thought you were gone, y_c! *hic* Don't do that again!"
+        ]
+    ],
+    "revived_grievingkit_J2": [
+        [
+            "any",
+            "grievingyou",
+            "they_grievingyou"
+        ],
+        [
+            "[You've been told that t_c has tuckered themselves out after crying for so long over your death...]",
+            "[You settle down next to them. They do look exhausted. You'll let them rest for a bit before reuniting.]"
+        ]
+    ],
     "sc_sc_kitten_1": [
         [
             "they_sc",

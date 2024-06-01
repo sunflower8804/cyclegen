@@ -89,11 +89,13 @@ class ChooseRebornScreen(Screens):
                     print("invalid previous cat", self.previous_cat)
             elif event.ui_element == self.dead_tab:
                 self.current_list = "dead"
+                self.current_page = 1
                 self.alive_tab.enable()
                 self.dead_tab.disable()
                 self.update_cat_list()
             elif event.ui_element == self.alive_tab:
                 self.current_list = "alive"
+                self.current_page = 1
                 self.alive_tab.disable()
                 self.dead_tab.enable()
                 self.update_cat_list()
@@ -280,6 +282,7 @@ class ChooseRebornScreen(Screens):
         else:
             self.previous_page_button.enable()
             self.next_page_button.enable()
+        print(self.current_page)
         display_cats = []
         if valid_mentors:
             display_cats = valid_mentors[self.current_page - 1]
