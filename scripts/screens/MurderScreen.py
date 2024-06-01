@@ -1460,7 +1460,7 @@ class MurderScreen(Screens):
                         ceremony_txt = choice(ceremony_txt)
                     except:
                         ceremony_txt = choice(self.m_txt["any any murder"])
-                        print(f"Final Warning: No unique murder events found for '{status} murder {self.method}{risk}{lives}'")
+                        print("ERROR: Falling back to general murder text.")
 
         # ceremony_txt = choice(self.m_txt["murder event key"])
         # uncomment + add in the key to get a specific one for testing
