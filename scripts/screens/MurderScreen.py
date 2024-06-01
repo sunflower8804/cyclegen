@@ -2207,11 +2207,11 @@ class MurderScreen(Screens):
                 if "listener of all voices" in accomp_skills:
                     chance += 20
 
-
             if cat_to_murder.moons < 6:
                 chance += 20
             if self.location in ["territory", "border"]:
                 chance += 15
+
             if "other-cat-ly whisperer" in your_skills:
                 chance += 5
             if "dog-whisperer" in your_skills:

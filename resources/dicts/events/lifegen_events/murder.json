@@ -116,11 +116,17 @@
   "any kitten murder attack": [
     "You attack and kill v_c."
   ],
+  "any kitten murder attack camp night": [
+    "During an overnight rainstorm, you notice v_c sitting just outside the nursery, watching puddles dance in the clearing. You approach the kit, telling {PRONOUN/v_c/object} you saw something interesting at the bottom of the huge puddle in the centre of the camp. Intrigued, v_c bounces up to the water and dips {PRONOUN/v_c/poss} head towards it, trying to inspect the bottom in the moonlight. When they do so, you plant a paw on the back of {PRONOUN/v_c/poss} head and push {PRONOUN/v_c/poss} head under. The heavy rain blocks out the noise of {PRONOUN/v_c/poss} struggle, and when {PRONOUN/v_c/subject} finally {VERB/v_c/stop/stops} fighting, you leave {PRONOUN/v_c/object} there and return to your den. You move your nest under one of the leaks in the den roof to explain your wet pelt."
+  ],
   "any kitten murder poison": [
     "You encourage v_c to eat some shiny red berries you've found, saying that {PRONOUN/v_c/subject}{VERB/v_c/'re/'s} super tasty - better than freshkill even! Happily, {PRONOUN/v_c/subject} thank you for the snack. v_c is later found, already having joined StarClan."
   ],
   "any kitten murder poison camp": [
     "After taking a piece of poisoned prey from the fresh-kill pile, you run to the nursery to present it to v_c, claiming that it's from a super special kind of squirrel. You then challenge {PRONOUN/v_c/object} to eat it. v_c doesn't wake up later after being rushed to the medicine den."
+  ],
+  "any kitten murder accident camp night": [
+    "During an overnight rainstorm, you notice v_c sitting just outside the nursery, watching puddles dance in the clearing. You approach the kit, telling {PRONOUN/v_c/object} you saw something interesting at the bottom of the huge puddle in the centre of the camp. Intrigued, v_c bounces up to the water and dips {PRONOUN/v_c/poss} head towards it, trying to inspect the bottom in the moonlight. When they do so, you plant a paw on the back of {PRONOUN/v_c/poss} head and push {PRONOUN/v_c/poss} head under. The heavy rain blocks out the noise of {PRONOUN/v_c/poss} struggle, and when {PRONOUN/v_c/subject} finally {VERB/v_c/stop/stops} fighting, you leave {PRONOUN/v_c/object} there and return to your den. You move your nest under one of the leaks in the den roof to explain your wet pelt."
   ],
   "any kitten murder accident territory": [
     "You offer to take v_c on a grand and exciting adventure out of the nursery. You help v_c sneak out and the two of you run into the woods. When you're far enough from camp, you suddenly speed up, leaving v_c behind. You loop back to camp, alone, and no one asks where you've been.",
@@ -132,13 +138,13 @@
   "any kitten murder predator territory": [
     "You tell v_c to follow you, saying that you want to show {PRONOUN/v_c/object} a shiny treasure you found recently. {PRONOUN/v_c/subject/CAP} happily agree and the two of you sneak out of camp. You lead v_c to a foxes' den, and {PRONOUN/v_c/subject} never come back out.",
     "You tell v_c to follow you, saying that you want to show {PRONOUN/v_c/object} a shiny treasure you found recently. {PRONOUN/v_c/subject/CAP} happily agree and the two of you sneak out of camp. You lead v_c to a foxes' den, and {PRONOUN/v_c/subject} ask you what the smell is with a wrinkled nose. You tell {PRONOUN/v_c/object} not to worry about it and push {PRONOUN/v_c/object} forward, saying that the treasure is inside. With an anxious look at you, {PRONOUN/v_c/subject} slowly head in. You don't stay to listen to the foxes feasting.",
-    "v_c's existence defies the clan's natural order, and you often find yourself wondering how StarClan could allow {PRONOUN/v_c/object} to stay alive this long. Whatever the case, you decide that it's time to take matters into your own paws. You trick v_c into an 'abandoned' fox burrow, then block the entrance, leaving {PRONOUN/v_c/object} to die.",
+    "v_c's existence defies the Clan's natural order, and you often find yourself wondering how StarClan could allow {PRONOUN/v_c/object} to stay alive this long. Whatever the case, you decide that it's time to take matters into your own paws. You trick v_c into an 'abandoned' fox burrow, then block the entrance, leaving {PRONOUN/v_c/object} to die.",
     "You tell v_c to follow you, saying that you want to show {PRONOUN/v_c/object} a shiny treasure you found recently. {PRONOUN/v_c/subject/CAP} happily agree and the two of you sneak out of camp. You lead v_c to a foxes' den, and {PRONOUN/v_c/subject} ask you what the smell is with a wrinkled nose. You tell {PRONOUN/v_c/object} not to worry about it and push {PRONOUN/v_c/object} forward, saying that the treasure is inside. With an anxious look at you, {PRONOUN/v_c/subject} slowly head in, and never come back out."
   ],
   "any kitten murder predator border": [
     "You tell v_c to follow you, saying that you want to show {PRONOUN/v_c/object} a shiny treasure you found recently. {PRONOUN/v_c/subject/CAP} happily agree and the two of you sneak out of camp. You lead v_c to a foxes' den, and {PRONOUN/v_c/subject} never come back out.",
     "You tell v_c to follow you, saying that you want to show {PRONOUN/v_c/object} a shiny treasure you found recently. {PRONOUN/v_c/subject/CAP} happily agree and the two of you sneak out of camp. You lead v_c to a foxes' den, and {PRONOUN/v_c/subject} ask you what the smell is with a wrinkled nose. You tell {PRONOUN/v_c/object} not to worry about it and push {PRONOUN/v_c/object} forward, saying that the treasure is inside. With an anxious look at you, {PRONOUN/v_c/subject} slowly head in. You don't stay to listen to the foxes feasting.",
-    "v_c's existence defies the clan's natural order, and you often find yourself wondering how StarClan could allow {PRONOUN/v_c/object} to stay alive this long. Whatever the case, you decide that it's time to take matters into your own paws. You trick v_c into an 'abandoned' fox burrow, then block the entrance, leaving {PRONOUN/v_c/object} to die."
+    "v_c's existence defies the Clan's natural order, and you often find yourself wondering how StarClan could allow {PRONOUN/v_c/object} to stay alive this long. Whatever the case, you decide that it's time to take matters into your own paws. You trick v_c into an 'abandoned' fox burrow, then block the entrance, leaving {PRONOUN/v_c/object} to die."
   ],
   "any apprentice murder attack": [
     "{PRONOUN/v_c/poss/CAP} continuous teasing and mockery push you over the edge. The Clan will find v_c, but {PRONOUN/v_c/subject}'ll never hear {PRONOUN/v_c/poss} laughter again."
@@ -151,7 +157,7 @@
     "v_c is always worried about the future of the Clan, so you decide that {PRONOUN/v_c/subject} shouldn't be a part of it."
   ],
   "any mediator murder poison camp": [
-    "You tell v_c that the mediator from o_cClan just dropped off some herbs to help with {PRONOUN/v_c/poss} running nose, a gift from {PRONOUN/v_c/poss} clan to yours. v_c happily laps up the flowers ... which, little do {PRONOUN/v_c/subject} know, is water hemlock. {PRONOUN/v_c/subject/CAP} die just hours later."
+    "You tell v_c that the mediator from o_cClan just dropped off some herbs to help with {PRONOUN/v_c/poss} running nose, a gift from {PRONOUN/v_c/poss} Clan to yours. v_c happily laps up the flowers ... which, little do {PRONOUN/v_c/subject} know, is water hemlock. {PRONOUN/v_c/subject/CAP} die just hours later."
   ],
   "any medicinecat murder": [
     "You hate how faithful v_c is to StarClan, so you decide to put an end to {PRONOUN/v_c/object}. Now, will the stars save you?",
@@ -178,6 +184,9 @@
   "kitten any murder predator": [
     "You methodically lure a snake to v_c, and {PRONOUN/v_c/subject} attack it, heroically saving you and dying in the process."
   ],
+  "medicinecatapprentice any murder attack": [
+    "You attack and kill v_c, who never saw it coming. No one will suspect the medicine cat of such a violent attack, will they?"
+  ],
   "medicinecatapprentice any murder poison": [
     "It was the will of StarClan. That's what you tell yourself as you stand over v_c's frothing, twitching body. StarClan needed this to happen. For the good of the Clan."
   ],
@@ -187,8 +196,11 @@
   "medicinecat any murder poison injury": [
     "Stuffing all of those deathberries into the mouth of that squirrel was difficult, and cleaning up the juice was even harder. Your hard work pays off when v_c gratefully takes the prey and succumbs to the poison before {PRONOUN/v_c/subject} can comment on the strange taste. Paranoid, you avoid washing your paws for as long as you can, but when you finally do, some of the left over juice makes it into your system and you're left ill."
   ],
+  "medicinecat any murder attack": [
+    "You attack and kill v_c, who never saw it coming. No one will suspect the medicine cat of such a violent attack, will they?"
+  ],
   "medicinecat any murder predator": [
-    "v_c's existence defies the clan's natural order, and you often find yourself wondering how StarClan could allow {PRONOUN/v_c/object} to stay alive this long. Whatever the case, you decide that it's time to take matters into your own paws. You trick v_c into an 'abandoned' fox burrow, then block the entrance, leaving {PRONOUN/v_c/object} to die."
+    "v_c's existence defies the Clan's natural order, and you often find yourself wondering how StarClan could allow {PRONOUN/v_c/object} to stay alive this long. Whatever the case, you decide that it's time to take matters into your own paws. You trick v_c into an 'abandoned' fox burrow, then block the entrance, leaving {PRONOUN/v_c/object} to die."
   ],
   "leader any murder attack": [
     "You feel like v_c has been getting too close to catching onto your plans, so you decide to stop {PRONOUN/v_c/object} before it's too late."
@@ -244,7 +256,7 @@
   ],
   "kitten mediatorapprentice murder accident border": [
     "You race up to v_c, squealing that a group of bloodthirsty o_cClan warriors just kidnapped one of your denmates, and since {PRONOUN/v_c/subject}{VERB/v_c/'re/'s} the only one that knows the other Clan territories, {PRONOUN/v_c/subject} need to save {PRONOUN/v_c/object} right now! Needless to say, the rival warriors of o_cClan aren't too keen on v_c's accusations ... though when the apprentice's cold body appears on the border the next day, no one knows where {PRONOUN/v_c/subject} could've gotten that ridiculous idea.",
-    "You insist to v_c that {PRONOUN/v_c/poss} mentor is waiting for {PRONOUN/v_c/object} in o_cClan's camp for a routine check-in. Knowing o_cClan isn't keen on trespassers, v_c is reluctant to believe you ... until you bring up that {PRONOUN/v_c/subject}{VERB/v_c/'re/'s} already running late, and {PRONOUN/v_c/subject} don't want to keep a whole clan waiting. You don't know exactly what the warriors of o_cClan did to the apprentice, but regardless, you never see {PRONOUN/v_c/object} again."
+    "You insist to v_c that {PRONOUN/v_c/poss} mentor is waiting for {PRONOUN/v_c/object} in o_cClan's camp for a routine check-in. Knowing o_cClan isn't keen on trespassers, v_c is reluctant to believe you ... until you bring up that {PRONOUN/v_c/subject}{VERB/v_c/'re/'s} already running late, and {PRONOUN/v_c/subject} don't want to keep a whole Clan waiting. You don't know exactly what the warriors of o_cClan did to the apprentice, but regardless, you never see {PRONOUN/v_c/object} again."
   ],
   "kitten warrior murder accident camp": [
     "During a severe storm, you beg v_c to help you retrieve a 'lost mossball' up a tree. As {PRONOUN/v_c/subject} climb the tree to help, {PRONOUN/v_c/subject} slip, causing {PRONOUN/v_c/object} to plummet to {PRONOUN/v_c/poss} death."
@@ -381,7 +393,7 @@
   "medicinecatapprentice medicinecatapprentice murder poison camp": [
     "v_c approaches you to see if you recognize an herb {PRONOUN/v_c/subject} found. You tell {PRONOUN/v_c/object} it's completely safe to eat and watch {PRONOUN/v_c/object} have it as a snack. It's yew berries and v_c is later found dead from the poison.",
     "Everyone always seemed to favor v_c over you, even StarClan  ... {PRONOUN/v_c/subject/CAP} get all the important omens, the most interesting dreams, the best prophecies. When you slip poison into v_c's prey, you're almost glad you have yet to hear word from any StarClan cats. You don't need the dead medicine cat apprentice appearing in your dreams to guilt you later.",
-    "v_c is nothing like a proper medicine cat apprentice should be. {PRONOUN/v_c/subject/CAP}{VERB/v_c/'re/'s} always late, always lazy, always disrespecting {PRONOUN/v_c/poss} patients. When you sprinkle foxglove seeds over {PRONOUN/v_c/poss} food, you tell yourself you're doing the clan a favor. One who so flagrantly disrespects {PRONOUN/v_c/poss} duties doesn't deserve to live."
+    "v_c is nothing like a proper medicine cat apprentice should be. {PRONOUN/v_c/subject/CAP}{VERB/v_c/'re/'s} always late, always lazy, always disrespecting {PRONOUN/v_c/poss} patients. When you sprinkle foxglove seeds over {PRONOUN/v_c/poss} food, you tell yourself you're doing the Clan a favor. One who so flagrantly disrespects {PRONOUN/v_c/poss} duties doesn't deserve to live."
   ],
   "medicinecatapprentice mediatorapprentice murder attack": [
     "v_c always gets all the praise -- while you have to sit on the sidelines changing old nests and helping the elders with {PRONOUN/v_c/poss} ticks. One day, you can't take it anymore and attack {PRONOUN/v_c/object}. v_c is caught off guard and the fight ends with {PRONOUN/v_c/object} on the ground, motionless."
@@ -421,13 +433,13 @@
   ],
   "medicinecatapprentice elder murder poison camp": [
     "You tell v_c about a new herb to ease {PRONOUN/v_c/poss} aches and ask {PRONOUN/v_c/object} to try it. It's actually water hemlock. Within hours, v_c succumbs to the poison.",
-    "Sure, v_c had the right to be a tad bit crabby after {PRONOUN/v_c/poss} service to the clan, but you just couldn't stand it anymore. Always being snapped for herbs being 'too bitter' or treatment not 'working fast enough', there's only so much a cat can take. The final straw was when v_c demanded to have a 'real' medicine cat tend to {PRONOUN/v_c/object} instead of a half-trained apprentice. Later, v_c's body is found in {PRONOUN/v_c/poss} nest, deemed to have passed from mysterious circumstances."
+    "Sure, v_c had the right to be a tad bit crabby after {PRONOUN/v_c/poss} service to the Clan, but you just couldn't stand it anymore. Always being snapped for herbs being 'too bitter' or treatment not 'working fast enough', there's only so much a cat can take. The final straw was when v_c demanded to have a 'real' medicine cat tend to {PRONOUN/v_c/object} instead of a half-trained apprentice. Later, v_c's body is found in {PRONOUN/v_c/poss} nest, deemed to have passed from mysterious circumstances."
   ],
   "medicinecatapprentice elder murder poison territory": [
     "You point out a pile of mysterious powder you found on the territory to v_c, insisting it must be sent by StarClan for its mystical properties. The next morning, you tell the deputy you have no idea why v_c would eat something that's so obviously rat poison ... Maybe {PRONOUN/v_c/subject} {VERB/v_c/were/was} less sound in the head than you would've thought?"
   ],
   "medicinecatapprentice elder murder accident camp": [
-    "Sure, v_c had the right to be a tad bit crabby after {PRONOUN/v_c/poss} service to the clan, but you just couldn't stand it anymore. Always being snapped for herbs being 'too bitter' or treatment not 'working fast enough', there's only so much a cat can take. The final straw was when v_c demanded to have a 'real' medicine cat tend to {PRONOUN/v_c/object} instead of a half-trained apprentice. Later, v_c's body is found in {PRONOUN/v_c/poss} nest, deemed to have passed from mysterious circumstances."
+    "Sure, v_c had the right to be a tad bit crabby after {PRONOUN/v_c/poss} service to the Clan, but you just couldn't stand it anymore. Always being snapped for herbs being 'too bitter' or treatment not 'working fast enough', there's only so much a cat can take. The final straw was when v_c demanded to have a 'real' medicine cat tend to {PRONOUN/v_c/object} instead of a half-trained apprentice. Later, v_c's body is found in {PRONOUN/v_c/poss} nest, deemed to have passed from mysterious circumstances."
   ],
   "mediatorapprentice kitten murder predator territory": [
     "As you come to realize how easily your voice can control others, you test this out on a simple-minded kit - v_c, to be precise! Lately, the young kit has had a case of the zoomies, and you propose {PRONOUN/v_c/subject} expend {PRONOUN/v_c/poss} energy in a burrow not far from camp. You sweeten the deal by telling {PRONOUN/v_c/object} {PRONOUN/v_c/subject} can play as much as {PRONOUN/v_c/subject} want there with no supervision! With a bright smile and a pep in {PRONOUN/v_c/poss} step, v_c thanks you and heads into the burrow. You say your goodbyes, turning away with the knowledge that the kit wouldn't be coming back out.",
@@ -440,7 +452,7 @@
     "You had always felt a stab of jealousy every time v_c had brought up {PRONOUN/v_c/poss} past success with healing a patient's injury or sickness, silently loathing as {PRONOUN/v_c/subject} relayed all of the praise that {PRONOUN/v_c/subject} had received. Thankfully, you managed to slip v_c the location of a new 'herb patch' just beyond a remote location in the territory. When v_c's body is found covered in wounds, you try your best to acquire your Clanmate's sympathy, wailing that you never meant for this to happen. After all, you couldn't have possibly known that a fox den would conveniently be located in the same spot you had mentioned the herbs were, right?"
   ],
   "mediatorapprentice medicinecatapprentice murder accident border": [
-    "v_c doesn't know about the extent of the ongoing tension with the enemy clans. You persuade {PRONOUN/v_c/object} to cross the border to pick some herbs, and {PRONOUN/v_c/subject} don't return."
+    "v_c doesn't know about the extent of the ongoing tension with the enemy Clans. You persuade {PRONOUN/v_c/object} to cross the border to pick some herbs, and {PRONOUN/v_c/subject} don't return."
   ],
   "mediatorapprentice mediatorapprentice murder accident": [
     "During a staged argument near the river, you push v_c into the rapid currents while pretending to lose your balance. The apprentice is swept away, never to be seen again."
@@ -458,7 +470,7 @@
     "v_c has been nothing but cold whenever {PRONOUN/v_c/subject}{VERB/v_c/'ve/'s} treated you. You've tried to use your mediation skills to convince {PRONOUN/v_c/object} to like you or at least respond kindly to you but nothing seems to work. Heart bitter and claws unsheathed, you pad into the medicine den. v_c is surprised and annoyed when you come in with a plump mouse at the ready. {PRONOUN/v_c/subject/CAP} brush you off saying {PRONOUN/v_c/subject} don't have time to sit around with an apprentice. Trying to keep your fur from bristling, you insist that {PRONOUN/v_c/subject} at least eat the extra tasty mouse you brought {PRONOUN/v_c/object}. You smirk when you later hear of {PRONOUN/v_c/poss} death and try to hide your joy when you see {PRONOUN/v_c/poss} cold lifeless body in the clearing that night."
   ],
   "mediatorapprentice medicinecat murder accident border": [
-    "v_c doesn't know about the extent of the ongoing tension with the enemy clans. You persuade {PRONOUN/v_c/object} to cross the border to pick some herbs, and {PRONOUN/v_c/subject} don't return."
+    "v_c doesn't know about the extent of the ongoing tension with the enemy Clans. You persuade {PRONOUN/v_c/object} to cross the border to pick some herbs, and {PRONOUN/v_c/subject} don't return."
   ],
   "mediatorapprentice mediator murder attack": [
     "v_c is always kind, understanding, and patient when {PRONOUN/v_c/subject} train you, but you feel like {PRONOUN/v_c/subject}{VERB/v_c/'re/'s} treating you like that to mock you for your ignorance. You've had enough, and while you two are having a mock argument away from the eyes of your Clanmates, you attack {PRONOUN/v_c/object}. Although v_c is older than you, it seems you know more about battle than {PRONOUN/v_c/subject} do, since you witness the light slowly leave v_c's eyes."
@@ -598,7 +610,7 @@
     "As you enter the elder's den, you greet v_c with a smile, and {PRONOUN/v_c/subject} smile back at you and ask for help with ticks. You oblige, moving forward despite v_c questioning if you need some sort of herbs for that. Silently, you snap {PRONOUN/v_c/poss} neck, a quick and painless kill as you dart out of the den before anyone sees."
   ],
   "warrior queen murder accident territory": [
-    "You always knew v_c had a habit of stepping out of line, getting involved in warrior business when it was none of {PRONOUN/v_c/poss} concern as a queen. Something had to be done, you chuckle at the thought knowing the Clan will be better off with {PRONOUN/v_c/object}. You stumble across a secret on the territory and smirk, this is it. You tell v_c that you found a kitten wandering the territory, and {PRONOUN/v_c/subject} immediately leap to action and ask you to lead the way. So you do. Through the territory, you run, run, run, then you jump. v_c runs, runs, runs and snaps. Behind you there's a sickening clank and shrill into the night. You turn around to find the devoted queen in the jaws of a bear trap."
+    "You always knew v_c had a habit of stepping out of line, getting involved in warrior business when it was none of {PRONOUN/v_c/poss} concern as a queen. Something had to be done, you chuckle at the thought knowing the Clan will be better off with {PRONOUN/v_c/object}. You stumble across a secret on the territory and smirk, this is it. You tell v_c that you found a kitten wandering the territory, and {PRONOUN/v_c/subject} immediately leap to action and ask you to lead the way. So you do. Through the territory, you run, run, run, then you jump. v_c runs, runs, runs and snaps. Behind you there's a sickening Clank and shrill into the night. You turn around to find the devoted queen in the jaws of a bear trap."
   ],
   "medicinecat kitten murder accident territory night": [
     "You take v_c out of camp to stargaze with you, because no kit can resist getting to leave camp! As you watch the sky and explain to v_c how those are all your ancestors, you spot a shooting star. You convince v_c that if {PRONOUN/v_c/subject} chase it and find where it fell, {PRONOUN/v_c/subject} might be able to see a real ancestor cat! {PRONOUN/v_c/subject/CAP} run toward where it was going, and as {PRONOUN/v_c/subject} pass close to a river, you push {PRONOUN/v_c/object} in."
@@ -836,10 +848,10 @@
     "v_c challenges your authority once too often. In a secluded part of the territory, you show {PRONOUN/v_c/object} why that was {PRONOUN/v_c/poss} gravest mistake."
   ],
   "leader mediatorapprentice murder attack": [
-    "A leader's word is the Warrior Code. This is the most basic rule all Clan kits are taught. Yet v_c acts like {PRONOUN/v_c/subject} are above the law, poking {PRONOUN/v_c/poss} nose into business that {PRONOUN/v_c/subject} aren't meant to hear, as well as speaking out of turn. {PRONOUN/v_c/poss/CAP} nosiness might one day be {PRONOUN/v_c/poss} downfall... and perhaps that 'one day' is now, you think, as you watch the life leave v_c's eyes, after hearing something {PRONOUN/v_c/subject} weren't supposed to."
+    "A leader's word is the warrior code. This is the most basic rule all Clan kits are taught. Yet v_c acts like {PRONOUN/v_c/subject} are above the law, poking {PRONOUN/v_c/poss} nose into business that {PRONOUN/v_c/subject} aren't meant to hear, as well as speaking out of turn. {PRONOUN/v_c/poss/CAP} nosiness might one day be {PRONOUN/v_c/poss} downfall... and perhaps that 'one day' is now, you think, as you watch the life leave v_c's eyes, after hearing something {PRONOUN/v_c/subject} weren't supposed to."
   ],
   "leader mediatorapprentice murder attack territory": [
-    "You overhear v_c sharing secrets with another clan, and in a fit of rage and betrayal, you confront {PRONOUN/v_c/object}. {PRONOUN/v_c/subject/CAP} never leave that secluded clearing.",
+    "You overhear v_c sharing secrets with another Clan, and in a fit of rage and betrayal, you confront {PRONOUN/v_c/object}. {PRONOUN/v_c/subject/CAP} never leave that secluded clearing.",
     "v_c challenges your authority once too often. In a secluded part of the territory, you show {PRONOUN/v_c/object} why that was {PRONOUN/v_c/poss} gravest mistake."
   ],
   "leader mediatorapprentice murder attack border": [
@@ -861,7 +873,7 @@
     "v_c has been challenging your authority lately, so one night you take {PRONOUN/v_c/object} out on a border patrol with intent to kill. You don't get the surprise strike you'd hoped for, though, and a rough battle ensues, leaving you both heavily battered. After the dust settles, you find yourself momentarily among the stars of Silverpelt before you return just in time to see the life fade from v_c's eyes. You may have lost a life to ensure {PRONOUN/v_c/poss} death, but it was a price you were willing to pay, you tell yourself as you limp back to camp to get your wounds treated."
   ],
   "leader warrior murder attack territory": [
-    "You overhear v_c sharing secrets with another clan, and in a fit of rage and betrayal, you confront {PRONOUN/v_c/object}. {PRONOUN/v_c/subject/CAP} never leave that secluded clearing.",
+    "You overhear v_c sharing secrets with another Clan, and in a fit of rage and betrayal, you confront {PRONOUN/v_c/object}. {PRONOUN/v_c/subject/CAP} never leave that secluded clearing.",
     "v_c challenges your authority once too often. In a secluded part of the territory, you show {PRONOUN/v_c/object} why that was {PRONOUN/v_c/poss} gravest mistake."
   ],
   "leader medicinecat murder accident territory": [
@@ -908,7 +920,7 @@
     "It appears the apprentices are no longer willing to care for {PRONOUN/v_c/poss} elders, and it's time to serve some punishment. One day, you request the assistance of v_c as you wander the territory. As you near the raging river, you 'accidentally' stumble, shoving v_c into the river. The apprentice is swept away, never to be seen again."
   ],
   "elder apprentice murder": [
-    "Doesn't the Warrior Code tell Clan cats that elders are supposed to be respected? To eat first before any warrior or apprentice? That {PRONOUN/v_c/poss} wisdom and guidance are needed? Then why do cats like v_c act like it's such a chore to take care of you? You decide to teach the young apprentice what happens when the Warrior Code is broken. You utter a few words at v_c's vigil, though no word is genuine."
+    "Doesn't the warrior code tell Clan cats that elders are supposed to be respected? To eat first before any warrior or apprentice? That {PRONOUN/v_c/poss} wisdom and guidance are needed? Then why do cats like v_c act like it's such a chore to take care of you? You decide to teach the young apprentice what happens when the warrior code is broken. You utter a few words at v_c's vigil, though no word is genuine."
   ],
   "elder apprentice murder attack": [
     "You hate how v_c seems to always view you like a burr in {PRONOUN/v_c/poss} fur. Treating you like some menial task that could be done haphazardly. Each time v_c carelessly dumps damp moss into your nest or 'forgets' to help you remove your ticks, opting to go on patrols instead, it only fuels your feelings of anger and resentment towards the young cat. You decide that you've had enough. Finally, the perfect opportunity arises, leaving both you and v_c alone and away from prying eyes. You strike {PRONOUN/v_c/object} down with little hesitation, watching {PRONOUN/v_c/object} crumple to the ground. Seems like the battle moves you have long since retired still came in handy after all!"
@@ -918,10 +930,10 @@
     "v_c is constantly on your nerves, holding 'mediating' sessions so often that you can barely get your naps in. When you've had enough, you catch v_c off guard and silence {PRONOUN/v_c/object} forever."
   ],
   "elder warrior murder attack territory": [
-    "The Warrior Code commands that elders are to be respected. And yet here v_c is, rolling {PRONOUN/v_c/poss} eyes whenever you speak, laughing about you behind your back. You've even heard {PRONOUN/v_c/object} muttering with {PRONOUN/v_c/poss} friends about how useless you are! You politely ask v_c on a walk. When you return to camp, the other cats assume the broad smile on your lips are from the nice weather, not from the feeling of your claws tearing through v_c's pelt."
+    "The warrior code commands that elders are to be respected. And yet here v_c is, rolling {PRONOUN/v_c/poss} eyes whenever you speak, laughing about you behind your back. You've even heard {PRONOUN/v_c/object} muttering with {PRONOUN/v_c/poss} friends about how useless you are! You politely ask v_c on a walk. When you return to camp, the other cats assume the broad smile on your lips are from the nice weather, not from the feeling of your claws tearing through v_c's pelt."
   ],
   "elder warrior murder attack border": [
-    "The Warrior Code commands that elders are to be respected. And yet here v_c is, rolling {PRONOUN/v_c/poss} eyes whenever you speak, laughing about you behind your back. You've even heard {PRONOUN/v_c/object} muttering with {PRONOUN/v_c/poss} friends about how useless you are! You politely ask v_c on a walk. When you return to camp, the other cats assume the broad smile on your lips are from the nice weather, not from the feeling of your claws tearing through v_c's pelt."
+    "The warrior code commands that elders are to be respected. And yet here v_c is, rolling {PRONOUN/v_c/poss} eyes whenever you speak, laughing about you behind your back. You've even heard {PRONOUN/v_c/object} muttering with {PRONOUN/v_c/poss} friends about how useless you are! You politely ask v_c on a walk. When you return to camp, the other cats assume the broad smile on your lips are from the nice weather, not from the feeling of your claws tearing through v_c's pelt."
   ],
   "elder medicinecat murder attack": [
     "v_c is always treating you poorly - and frankly, you like {PRONOUN/v_c/poss} apprentice a lot more. The younger cat would be better for the Clan anyways, so you decide to take care of the matter yourself."
