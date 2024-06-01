@@ -1749,7 +1749,7 @@ class TalkScreen(Screens):
                 return ""
         # Their mentor
         if "t_mn" in text or "tm_n" in text:
-            if cat.mentor is None:
+            if cat.mentor is None or cat.mentor == you.ID:
                 return ""
             text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
             text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
