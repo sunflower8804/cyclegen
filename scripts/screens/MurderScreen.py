@@ -1344,14 +1344,13 @@ class MurderScreen(Screens):
 
                 ceremony_txt = self.m_txt[f"{status} murder {self.method} {self.location} {self.time}{risk}{lives}"]
                 
-
                 # this is checking through status/any combinations again,
                 # because at this point in the try loop, we're stuck with one
                 statusesagain = [
                         f"{insert} {insert2}"
                         f"{insert} any",
                         f"any {insert2}"
-                        # "any any",
+                        # "any any"
                         # i want less generic ones if a specific one is found,, can be uncommented though
                        ]
                 

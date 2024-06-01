@@ -69,7 +69,7 @@
     "You slip v_c some poisoned prey that kills {PRONOUN/v_c/object}.",
     "You persuade v_c to try a 'new' herb, claiming it helps with clarity and decision making. It's yew leaves, and before long, v_c succumbs to the deadly poison."
   ],
-  "any any murder poison night camp": [
+  "any any murder poison camp night": [
     "During the night, you sneak some deathberries from the far back corner of the medicine den. Staying as silent as possible, you find v_c where {PRONOUN/v_c/subject} {VERB/v_c/sleep/sleeps} and squeeze some of the juice into {PRONOUN/v_c/poss} sleeping mouth. Just as {PRONOUN/v_c/subject} {VERB/v_c/begin/begins} to twitch, you flee the den, as silent as a shadow."
   ],
   "any any murder poison territory": [
@@ -78,9 +78,6 @@
   "any any murder accident": [
     "While climbing trees with v_c, you \"accidentally\" bump into {PRONOUN/v_c/object} and send {PRONOUN/v_c/object} hurtling towards the forest floor.",
     "During a playful race, you nudge v_c off a steep embankment. {PRONOUN/v_c/subject/CAP} don't survive the fall."
-  ],
-  "any any murder accident plains": [
-    "You got the plains text!"
   ],
   "any any murder predator": [
     "When you and v_c spot a snake, you block {PRONOUN/v_c/poss} path to run away. The snake lunges, sinking its fangs into v_c's throat, and you escape, satisfied.",
@@ -93,7 +90,7 @@
     "You slip v_c some poisoned prey that kills {PRONOUN/v_c/object}, but your close proximity to the poison also makes you sick."
   ],
   "any any murder poison night camp injury": [
-    "During the night, you sneak some deathberries from the far back corner of the medicine den. Staying as silent as possible, you find v_c where {PRONOUN/v_c/subject} sleep and squeeze some of the juice into {PRONOUN/v_c/poss} sleeping mouth. Just as {PRONOUN/v_c/subject} begin to twitch, you flee the den, as silent as a shadow. However, despite how thoroughly you thought you'd washed your paws, your proximity to the deadly berries has left you myseriously ill."
+    "During the night, you sneak some deathberries from the far back corner of the medicine den. Staying as silent as possible, you find v_c where {PRONOUN/v_c/subject} {VERB/v_c/sleep/sleeps} and squeeze some of the juice into {PRONOUN/v_c/poss} mouth. Just as {PRONOUN/v_c/subject} begin to twitch, you flee the den, as silent as a shadow. However, despite how thoroughly you thought you'd washed your paws, your proximity to the deadly berries has left you mysteriously ill."
   ],
   "any any murder accident injury": [
     "While climbing trees with v_c, you \"accidentally\" bump into {PRONOUN/v_c/object} and send {PRONOUN/v_c/object} hurtling towards the ground, though {PRONOUN/v_c/subject} leave you with a scratch as {PRONOUN/v_c/subject} fall."
