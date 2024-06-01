@@ -234,111 +234,6 @@
             "C'mon, you can't deny you love a little gossip now and then!"
         ]
     },
-    "caught_intheact": {
-        "tags": [
-            "dislike",
-            "no_kit",
-            "you_shunned"
-        ],
-        "intro": [
-            "You killed them, didn't you?"
-        ],
-        "intro_choices": {
-            "choice1": {
-                "text": "[Inquire]",
-                "next_scene": "inquire"
-            },
-            "choice2": {
-                "text": "[Play dumb]",
-                "next_scene": "play_dumb"
-            },
-            "choice3": {
-                "text": "[Threaten]",
-                "next_scene": "threaten"
-            }
-        },
-        "inquire": [
-            "[You ask t_c what could have given them that idea.]",
-            "I don't know ... Call it a hunch.",
-            "You certainly didn't seem too torn up when they died, that's for sure."
-        ],
-        "inquire_choices": {
-            "choice11": {
-                "text": "I was mourning secretly.",
-                "next_scene": "mourning_secretly"
-            },
-            "choice12": {
-                "text": "That doesn't prove anything.",
-                "next_scene": "no_proof"
-            }
-        },
-        "play_dumb": [
-            "['What are you talking about?']",
-            "Come on, don't be coy. I think we both know what I'm referring to, here."
-        ],
-        "play_dumb_choices": {
-            "choice21": {
-                "text": "[Play dumber]",
-                "next_scene": "play_dumber"
-            },
-            "choice22": {
-                "text": "[Inquire]",
-                "next_scene": "inquire"
-            },
-            "choice23": {
-                "text": "[Threaten]",
-                "next_scene": "threaten"
-            }
-        },
-        "threaten": [
-            "[You subtly unsheath your claws and bare your teeth at t_c, hoping they'll get the message.]",
-            "... Is that supposed to intimidate me, or something?"
-        ],
-        "threaten_choices": {
-            "choice31": {
-                "text": "[Back off]",
-                "next_scene": "back_off"
-            },
-            "choice32": {
-                "text": "[Overt threat]",
-                "next_scene": "overt_threat"
-            }
-        },
-        "mourning_secretly": [
-            "Oh ... Oh, y_c, I'm so sorry. I didn't realize ...",
-            "They say we all process grief differently, but I guess I never really believed it.",
-            "I can't believe I accused you of something so horrible ...",
-            "I guess I'm just still not over their death myself, yet.",
-            "If you ever want to talk about it with someone, I'm here. They really were a special cat.",
-            "[t_c head-bumps you gently before walking off. That was way too close, but it seems they're none the wiser.]"
-        ],
-        "no_proof": [
-            "Maybe not ... But, still, I don't know any cat to not at least be shaken by the loss of their own Clanmate.",
-            "I might not be able to prove anything yet, but I've got my eye on you, y_c. Mark my words, soon enough, you will get what's coming to you.",
-            "[t_c stalks off, tail lashing. Better make sure your tracks are well covered ...]"
-        ],
-        "play_dumber": [
-            "['Still don't know what you're talking about ...']",
-            "Really? But - uh ... Ah ...",
-            "This was supposed to be a big 'gotcha' moment ... But, if you really don't know what I'm talking about, then ...",
-            "My apologies, y_c. I think I've gotten the wrong cat.",
-            "[t_c turns around and slinks away, embarrassed. Still, they must be on your trail.]",
-            "[Best keep an eye on them, lest they ever come back with more proof.]"
-        ],
-        "back_off": [
-            "['Intimidating? No ...']",
-            "Good, because it isn't working. If anything, you've only now further cemented your guilt in my mind.",
-            "I might not be able to prove anything yet, but I've got my eye on you, y_c. Mark my words, soon enough, you will get what's coming to you.",
-            "[t_c stalks off, tail lashing. Better make sure your tracks are well covered ...]"
-        ],
-        "overt_threat": [
-            "['You better drop this, now, or you'll be next.']",
-            "Ehm ...",
-            "[t_c looks away and swallows hard.]",
-            "Right ... Just forget I said anything, then.",
-            "[t_c trips over their paws a bit as they stumble out of the den. Best keep an eye on them to make sure they don't squeal ...]"
-        ]
-    },
     "stable_4": {
         "tags": [
             "no_kit",
@@ -2918,9 +2813,9 @@
     },
     "brooding_tomedappAJ1": {
         "tags": [
-            "no_kit",
-            "medicine cat apprentice",
-            "medicine cat",
+            "they_adult",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
             "brooding"
         ],
         "intro": [
@@ -2948,7 +2843,7 @@
     },
     "brooding_bullyAJ": {
         "tags": [
-            "kitten",
+            "you_kitten",
             "they_kitten",
             "brooding",
             "assertive",
@@ -3016,6 +2911,7 @@
     },
     "brooding_shredAJ": {
         "tags": [
+            "you_adult",
             "they_kitten",
             "brooding",
             "unlawful",
