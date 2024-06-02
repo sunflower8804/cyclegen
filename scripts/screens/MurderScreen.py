@@ -425,8 +425,11 @@ class MurderScreen(Screens):
             
             self.accidentmethod = UIImageButton(scale(pygame.Rect((1220, 220), (110, 110))), "AC",
                                                 tool_tip_text= "Accident", object_id="", manager=MANAGER)
-            self.predatormethod = UIImageButton(scale(pygame.Rect((1335, 220), (110, 110))), "PR",
-                                                tool_tip_text= "Predator", object_id="", manager=MANAGER)
+            self.predatormethod = pygame_gui.elements.UIImage(scale(pygame.Rect((1335, 220), (110, 110))),
+                                                            pygame.transform.scale(
+                                                                image_cache.load_image(
+                                                                    "resources/images/predatormethod_grey.png").convert_alpha(),
+                                                                (110,110)), manager=MANAGER)
             
             self.accidentmethod.disable()
             self.predatormethod.disable()
@@ -558,8 +561,8 @@ class MurderScreen(Screens):
                                                 tool_tip_text= "Poison", object_id="#poison_method_button", manager=MANAGER)
             self.accidentmethod = UIImageButton(scale(pygame.Rect((1220, 220), (110, 110))), "AC",
                                                 tool_tip_text= "Accident", object_id="", manager=MANAGER)
-            self.predatormethod = UIImageButton(scale(pygame.Rect((1335, 220), (110, 110))), "PR",
-                                                tool_tip_text= "Predator", object_id="", manager=MANAGER)
+            self.predatormethod = UIImageButton(scale(pygame.Rect((1335, 220), (110, 110))), "",
+                                                tool_tip_text= "Predator", object_id="#predator_method_button", manager=MANAGER)
       
             self.locationtext = pygame_gui.elements.UITextBox("Location:",
                                                         scale(pygame.Rect((1110, 335), (200, 80))),
