@@ -109,6 +109,7 @@ class ChooseRebornScreen(Screens):
 
     def screen_switches(self):
         self.the_cat = game.clan.your_cat
+        self.current_page = 1
         self.mentor = Cat.fetch_cat(self.the_cat.mentor)
 
         self.heading = pygame_gui.elements.UITextBox("",
@@ -282,7 +283,6 @@ class ChooseRebornScreen(Screens):
         else:
             self.previous_page_button.enable()
             self.next_page_button.enable()
-        print(self.current_page)
         display_cats = []
         if valid_mentors:
             display_cats = valid_mentors[self.current_page - 1]

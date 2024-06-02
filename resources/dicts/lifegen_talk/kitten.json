@@ -2028,19 +2028,6 @@
             "Y- You don't think I'm annoying, do you?"
         ]
     ],
-    "neurotic_kit__18": [
-        [
-            "any",
-            "neurotic"
-        ],
-        [
-            "Hey... y_c? W- What if l_n doesn't make me a Warrior because I'm too much of a fraidy cat, like r_c said?",
-            "[t_c starts to tear up, trembling in place.]",
-            "What if- what if I'm not good enough? What if-",
-            "[You gently reassure t_c that they'll be the best warrior ever, and that you'll make them a Warrior yourself if you have to. It seems to make them calm down a bit, and they smile at you.]",
-            "T.. Thanks... It really means a lot, y_c."
-        ]
-    ],
     "neurotic_kit__19": [
         [
             "any",
@@ -4023,7 +4010,7 @@
         [
             "any",
             "grievingyou",
-            "they_grievingyou"
+            "they_grieving"
         ],
         [
             "[Upon seeing you, t_c stumbles up to you, in tears, and grabs your leg, refusing to let go.]",
@@ -4034,7 +4021,7 @@
         [
             "any",
             "grievingyou",
-            "they_grievingyou"
+            "they_grieving"
         ],
         [
             "[You've been told that t_c has tuckered themselves out after crying for so long over your death...]",
