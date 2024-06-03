@@ -678,9 +678,10 @@
             "lifegen"
         ],
         "tags": [
-            "border"
+            "border",
+            "shunned"
         ],
-        "patrol_art": "Art_ID",
+        "patrol_art": "lg_kit_default",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -702,7 +703,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "You race out of the nursery, only to have the guard block your escape. You bounce off of them and land in a heap. Luckily you aren't injured, but you steel yourself for another lecture.",
+                "text": "You race out of the nursery, only to have the guard block your escape. You bounce off of them and land in a heap. Luckily, you aren't injured, but you steel yourself for another lecture.",
                 "exp": 0,
                 "weight": 20,
                 "injury": [
