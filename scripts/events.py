@@ -2824,6 +2824,7 @@ class Events:
 
             if cat.shunned > 0:
                 possible_ceremonies = possible_ceremonies.intersection(self.ceremony_id_by_tag["shunned"])
+            
             if cat.shunned == 0 and cat.forgiven > 0 and cat.forgiven < 5 and cat.status in ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"]:
                 possible_ceremonies = possible_ceremonies.intersection(self.ceremony_id_by_tag["forgiven"])
 
@@ -2884,8 +2885,16 @@ class Events:
                 temp.update(
                     possible_ceremonies.intersection(
                         self.ceremony_id_by_tag[t]))
+                
+            if cat.forgiven == 0:
+                keys_to_remove = {key for key in temp if "forgiven" in key}
+                for key in keys_to_remove:
+                    temp.remove(key)
+            # this works to remove "forgiven" ceremonies from cats to whom that doesnt apply
+            # idk why the initial sorting doesnt work . this works for now
 
             possible_ceremonies = temp
+            print(cat.name, ":", temp)
 
             # Gather for parents ---------------------------------------------------------
             for p in [cat.parent1, cat.parent2]:
