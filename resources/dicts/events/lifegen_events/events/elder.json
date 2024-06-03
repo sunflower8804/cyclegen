@@ -5,9 +5,20 @@
         "You take a moment to think about how much the clan has changed.",
         "You find yourself longing for the time when your biggest worries were catching butterflies and trying to figure out which nest in the nursery had the softest moss.",
         "You attract a small crowd as you tell a thrilling story, leading your audience through many unexpected twists and turns.",
-        "You accidentally cause an apprentice to get side-tracked by telling them tales from your own apprentice days."
+        "You accidentally cause an apprentice to get side-tracked by telling them tales from your own apprentice days.",
+        "Soaking up the rays in camp seems like a grand plan. r_k ends up joining you, and soon you find yourself snuggled up with the Clan's kits in the bright warmth of the sun.",
+        "r_q asks you to do a story-telling session for the kits! By the end of the day, some apprentices, warriors, and even d_n have come to listen as well.",
+        "r_e and you spend time sharing tongues in the camp clearing. The two of you swap drama and stories wihout a care in the world.",
+        "A storm blowing through makes your joints ache. r_m sympathizes and gives you some honey-laced herbs.",
+        "Old age gets the best of everyone. You're no different - and you ponder that while sunbathing."
     ],
-    "elder assertive": [],
+    "elder assertive": ["d_n asks where you're going as you amble towards the camp's exit. You tell them to mind their own business and that you'll be back by nightfall. With an amused huff they remind you not to go too far or get into trouble.",
+    "When r_k trods on your leg, you cuff their ear lightly. Before they can cry or apologize however you're on your feet with a proposition to play a different game... One that makes sure you'll be left in peace for a while.",
+    "You're quite happy soaking up a patch of sun until clouds begin to cover the sky. With a huff you get to your paws and search for a better spot. l_n seems to have already laid claim to a warm rock... so you demand the spot. They huff at you but give in without a fuss.",
+    "r_d approaches you for a bit of advice. Since you're self-assured, they ask you how that came to be over your many moons. You ramble on and on... and on and on... and on... Until r_d politely excuses themself.",
+    "As you head out of camp for the day, r_w calls out to stop you. They say it could be dangerous if you left the camp alone. You remind them sternly that you're well aware after all your moons - and have chosen to go alone anyways.",
+    "r_a is complaining loudly about you. Apparently you're either always wandering off alone, or being 'mean'. r_w, to their credit, does attempt to warn r_a before you saunter by with your head held high towards d_n. r_a will be cleaning your den personally for a moon!"
+    ],
     "elder brooding": [],
     "elder cool": [],
     "elder upstanding": [],
@@ -28,6 +39,8 @@
     "elder unabashed": [],
     "elder unlawful": [],
     "elder rare": [
-        "You wake up to the medicine cat and a handful of friends gathered around you in a hush, discovering that you had scared r_e by not waking up when shaken. You shake it off, but your mind keeps wandering back to what would have happened if you didn't awaken."
+        "You wake up to the medicine cat and a handful of friends gathered around you in a hush, discovering that you had scared r_e by not waking up when shaken. You shake it off, but your mind keeps wandering back to what would have happened if you didn't awaken.",
+        "Gazing out over the camp, you ponder about your long life. Things could have been so different... But would you have changed them for anything else?",
+        "One night, deep in sleep, you look around to notice yourself between a star-shimmering territory and a shadow-soaked forest. You can feel eyes on you from both sides as you stand in the grey between. Then, you gasp awake in your nest, r_e glancing at you worriedly."
     ]
 }
