@@ -43,7 +43,6 @@ class MurderScreen(Screens):
         self.randomiser_button = None
         self.back_button = None
         self.next_cat_button = None
-        self.previous_cat_button = None
         self.mentor_icon = None
         self.app_frame = None
         self.mentor_frame = None
@@ -297,21 +296,18 @@ class MurderScreen(Screens):
                     # self.update_buttons()
                 else:
                     print("invalid next cat", self.next_cat)
-            elif event.ui_element == self.previous_cat_button:
-                if isinstance(Cat.fetch_cat(self.previous_cat), Cat):
-                    game.switches['cat'] = self.previous_cat
-                    self.update_cat_list()
-                    self.update_selected_cat()
-                    self.print_chances(self.selected_cat, accomplice=None)
-                    # self.update_buttons()
-                else:
-                    print("invalid previous cat", self.previous_cat)
             elif event.ui_element == self.next_page_button:
                 self.current_page += 1
-                self.update_cat_list()
+                if self.stage == "choose murder cat":
+                    self.update_cat_list()
+                else:
+                    self.update_cat_list2()
             elif event.ui_element == self.previous_page_button:
                 self.current_page -= 1
-                self.update_cat_list()
+                if self.stage == "choose murder cat":
+                    self.update_cat_list()
+                else:
+                    self.update_cat_list2()
 
     def update_murder_buttons(self):
         """ updates the method, location and time buttons for the randomiser to work """
@@ -2735,9 +2731,8 @@ class MurderScreen(Screens):
 
     def get_valid_cats2(self):
         valid_mentors = []
-
         for cat in Cat.all_cats_list:
-            if not cat.dead and not cat.outside and not cat.ID == game.clan.your_cat.ID and not cat.ID == self.cat_to_murder.ID and not cat.moons == 0:
+            if not cat.dead and not cat.outside and cat.ID != game.clan.your_cat.ID and cat.ID != self.cat_to_murder.ID and not cat.moons == 0:
                 valid_mentors.append(cat)
         
         return valid_mentors
