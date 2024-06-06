@@ -1117,7 +1117,7 @@ class Events:
                     encoding="ascii") as read_file:
                 all_events = ujson.loads(read_file.read())
         
-        if game.clan.your_cat.status not in ["newborn", "kitten"] and game.clan.your_cat.shunned == 0:
+        if game.clan.your_cat.status not in ["newborn", "kitten"] and game.clan.your_cat.shunned == 0 and not game.clan.your_cat.dead:
             with open(f"{resource_dir}general_no_kit.json", encoding="ascii") as read_file:
                 general_no_kit_events = ujson.loads(read_file.read())
 
