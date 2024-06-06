@@ -516,12 +516,16 @@ def create_new_cat(Cat,
         history.add_beginning(new_cat)
 
         if new_cat.df:
-            new_cat.dead_for = randint(90,190)
+            if new_cat.parent2 != game.clan.your_cat.ID:
+                new_cat.dead_for = randint(50,140)
             new_cat.dead = True
             new_cat.status = status
 
+            if new_cat.parent2 == game.clan.your_cat.ID:
+                new_cat.thought = "Just met their parent!"
+
         if new_cat.dead and not new_cat.df and not new_cat.outside:
-            new_cat.dead_for = randint(90,190)
+            new_cat.dead_for = randint(50,140)
             new_cat.status = status
      
 

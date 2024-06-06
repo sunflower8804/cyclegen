@@ -310,6 +310,8 @@ class Romantic_Events():
         """Handles moving on from dead or outside mates """
         for mate_id in cat.mate:
             if mate_id not in Cat.all_cats:
+                if cat.joined_df and mate_id.df:
+                    return
                 print(f"WARNING: Cat #{cat} has a invalid mate. It will be removed.")
                 cat.mate.remove(mate_id)
                 continue
