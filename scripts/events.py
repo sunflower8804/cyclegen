@@ -378,7 +378,7 @@ class Events:
                 if game.clan.your_cat.shunned == 0:
                     self.check_retire()
 
-            if random.randint(1,2) == 1:
+            if random.randint(1,15) == 1:
                 self.gain_acc()
 
         elif game.clan.your_cat.dead and game.clan.your_cat.dead_for == 0:
