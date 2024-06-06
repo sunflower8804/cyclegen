@@ -1137,7 +1137,7 @@ class Events:
         except:
             pass
         possible_events += general_events["general general"]
-        if game.clan.your_cat.status not in ["newborn", "kitten"] and game.clan.your_cat.shunned == 0:
+        if game.clan.your_cat.status not in ["newborn", "kitten"] and game.clan.your_cat.shunned == 0 and not game.clan.your_cat.dead:
             possible_events += general_no_kit_events["general general"]
 
         # Add old events
