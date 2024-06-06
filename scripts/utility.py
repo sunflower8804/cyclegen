@@ -523,6 +523,7 @@ def create_new_cat(Cat,
 
             if new_cat.parent2 == game.clan.your_cat.ID:
                 new_cat.thought = "Just met their parent!"
+                new_cat.dead_for = new_cat.moons
 
         if new_cat.dead and not new_cat.df and not new_cat.outside:
             new_cat.dead_for = randint(50,140)
