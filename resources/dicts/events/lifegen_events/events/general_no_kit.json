@@ -1,21 +1,29 @@
 {
-    "general_no_kit general": [
-        "It's a great day to lie down and soak up the sun's rays. You take advantage of it."
+    "general general": [
+        "It's a great day to lie down and soak up the sun's rays. You take advantage of it.",
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
     ],
-    "general_no_kit assertive": [],
-    "general_no_kit brooding": [],
-    "general_no_kit cool": [],
-    "general_no_kit upstanding": [],
-    "general_no_kit introspective": [],
-    "general_no_kit neurotic": [],
-    "general_no_kit silly": [],
-    "general_no_kit stable": [],
-    "general_no_kit sweet": [
+    "general assertive": [],
+    "general brooding": [],
+    "general cool": [],
+    "general upstanding": [],
+    "general introspective": [],
+    "general neurotic": [],
+    "general silly": [],
+    "general stable": [],
+    "general sweet": [
         "You take the time to sort through the fresh-kill pile, making sure to throw away any old or rotting pieces of prey."
     ],
-    "general_no_kit unabashed": [],
-    "general_no_kit unlawful": [
+    "general unabashed": [],
+    "general unlawful": [
         "You take the last piece of fresh-kill from the pile before r_k could get to it."
     ],
-    "general_no_kit rare": []
+    "general rare": []
 }
