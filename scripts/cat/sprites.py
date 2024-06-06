@@ -476,19 +476,21 @@ class Sprites():
         # wilds accessories redone sheets by moipa and jay
         for a, i in enumerate([
             "LILYPAD", "LARGE DEATHBERRY", "SMALL DEATHBERRY", "ACORN2", "PINECONE", "VINE"]):
-            self.make_group('wildaccs_1', (a, 0), f'acc_wild{i}')
+            self.make_group('wildaccs_1', (a, 0), f'acc_herbs{i}')
         
         for a, i in enumerate([
-            "CHERRY2", "BLEEDING HEARTS", "SHELL PACK", "FERNS", "GOLD FERNS"]):
-            self.make_group('wildaccs_1', (a, 1), f'acc_wild{i}')
+            "CHERRY2", "BLEEDING HEARTS2", "SHELL PACK", "FERNS", "GOLD FERNS"]):
+            self.make_group('wildaccs_1', (a, 1), f'acc_herbs{i}')
 
         for a, i in enumerate([
             "WHEAT", "BLACK WHEAT"]):
-            self.make_group('wildaccs_1', (a, 2), f'acc_wild{i}')
+            self.make_group('wildaccs_1', (a, 2), f'acc_herbs{i}')
+        
+        # -------------------------------------------------------------------------
         
         for a, i in enumerate([
-            "BERRIES", "CLOVERS", "CLOVER", "MOSS", "FLOWER MOSS", "MUSHROOMS"]):
-            self.make_group('wildaccs_2', (a, 0), f'acc_wild{i}')
+            "BERRIES", "CLOVERS", "CLOVER2", "MOSS2", "FLOWER MOSS", "MUSHROOMS"]):
+            self.make_group('wildaccs_2', (a, 0), f'acc_herbs{i}')
 
         for a, i in enumerate([
             "LARGE LUNA", "LARGE COMET", "SMALL LUNA", "SMALL COMET", "LADYBUG"]):
