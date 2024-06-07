@@ -1234,7 +1234,10 @@ class TalkScreen(Screens):
         for abbrev in process_text_dict.keys():
             abbrev_cat = process_text_dict[abbrev]
             process_text_dict[abbrev] = (abbrev_cat, choice(abbrev_cat.pronouns))
-
+        
+        process_text_dict["y_c", choice(game.clan.your_cat.pronouns)]
+        process_text_dict["t_c", choice(game.clan.your_cat.pronouns)]
+        
         for i in range(len(text)):
             text[i] = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False),
                                                                 text[i])
