@@ -715,7 +715,7 @@
         ],
         [
             "Uh ... hehe! How sweet of you.",
-            "I'll be sure to tell that one to my mate later. They'll definitely love it.",
+            "I'll be sure to tell that one to my mate later. {PRONOUN/t_m/subject/CAP}'ll definitely love it.",
             "Ahem, and just to repeat it one more time ... my mate. Who I am in a very committed relationship with."
         ]
     ],
@@ -867,7 +867,7 @@
     "crush": [
         [
             "Any",
-            "mate"
+            "from_mate"
         ],
         [
             "Ha, I remember when you first tried that line out on me.",
@@ -1908,7 +1908,7 @@
             "you_deaf"
         ],
         [
-            "[t_c playfully taps you with their tail before pulling it away before anyone can see.]"
+            "[t_c playfully taps you with {PRONOUN/t_c/poss} tail before pulling it away before anyone can see.]"
         ]
     ],
     "flirt_sh_J30": [
@@ -2041,7 +2041,7 @@
         [
             "...... What?",
             "y_c, oh, y_c. You know what I've done. You can't - we can't... oh no..",
-            "[t_c curls up on the ground, burying their face into their pelt as their muzzle turns red.]"
+            "[t_c curls up on the ground, burying {PRONOUN/t_c/poss} face into {PRONOUN/t_c/poss} pelt as {PRONOUN/t_c/poss} muzzle turns red.]"
         ]
     ],
     "flirting_shunned_CM2": [
@@ -2051,7 +2051,7 @@
             "reject"
         ],
         [
-            "[t_c frowns at you, their claws pressing out.]",
+            "[t_c frowns at you, {PRONOUN/t_c/poss} claws pressing out.]",
             "You're not supposed to be talking to me, nevermind saying stupid things like that."
         ]
     ],
@@ -2064,7 +2064,7 @@
         [
             "No.",
             "Now get lost before I tell l_n all about what you just said to me.",
-            "I'm sure their face would be hilarious."
+            "I'm sure {PRONOUN/l_n/poss} face would be hilarious."
         ]
     ],
     "flirting_shunned_Ren1": [
@@ -2073,7 +2073,7 @@
             "they_shunned"
         ],
         [
-            "[You approached t_c, quietly starting to flirt with them.]",
+            "[You approached t_c, quietly starting to flirt with {PRONOUN/t_c/object}.]",
             "y_c. I murdered our Clanmate. Why are you talking to me, let alone like this?",
             "[You tell t_c that you never liked that Clanmate anyway, and maybe you like a little danger too.]"
         ]
@@ -2085,9 +2085,9 @@
             "reject"
         ],
         [
-            "[You decide to start flirting with t_c in an attempt to see where it leads. They do not seem amused.]",
+            "[You decide to start flirting with t_c in an attempt to see where it leads. {PRONOUN/t_c/subject/CAP} {VERB/t_c/do/does} not seem amused.]",
             "y_c. I murdered our Clanmate. I'm not afraid to go after you too if you keep at it.",
-            "[You try one more time, but t_c lashes out at you, not afraid to get more blood on their claws. It seems they aren't too fond of you.]"
+            "[You try one more time, but t_c lashes out at you, not afraid to get more blood on their claws. It seems {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} too fond of you.]"
         ]
     ],
     "flirting_shunned_SQ3": [
@@ -2097,7 +2097,7 @@
             "reject"
         ],
         [
-            "[t_c backs away, their fur bristling.]",
+            "[t_c backs away, {PRONOUN/t_c/poss} fur bristling.]",
             "You aren't allowed to <i>talk</i> to me, let alone say something like that.",
             "I might not be a murderer, but I still know how to use these claws.",
             "Remember that next time you even <i>think</i> about opening your mouth."
@@ -2168,10 +2168,10 @@
             "you_shunned"
         ],
         [
-            "[You call softly to t_c as they pass, and they stop in their tracks.]",
+            "[You call softly to t_c as {PRONOUN/t_c/subject} {VERB/t_c/pass/passes}, and {PRONOUN/t_c/subject} {VERB/t_c/stop/stops} in {PRONOUN/t_c/poss} tracks.]",
             "I... y_c?",
-            "[Across the camp, l_n pulls away from a discussion with r_w and strides towards you, their eyes narrowed.]",
-            "[t_c hastily backs away as they also notice l_n, though you see them trying to hide their smile.]"
+            "[Across the camp, l_n pulls away from a discussion with r_w and strides towards you, {PRONOUN/l_n/poss} eyes narrowed.]",
+            "[t_c hastily backs away as {PRONOUN/t_c/subject} also {VERB/t_c/notice/notices} l_n, though you see {PRONOUN/t_c/object} trying to hide {PRONOUN/t_c/poss} smile.]"
         ]
     ],
     "flirting_shunned_CM4": [
@@ -2193,9 +2193,9 @@
             "reject"
         ],
         [
-            "[t_c stares as you for a second, their tail lashing.]",
+            "[t_c stares as you for a second, {PRONOUN/t_c/poss} tail lashing.]",
             "What is wrong with you? Do you think this is some kind of opportunity? Just because the Clan hates us doesn't mean I have to... <i>like</i> you.",
-            "[They turn away, hissing over their shoulder.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} away, hissing over {PRONOUN/t_c/poss} shoulder.]",
             "I have other things to worry about, y_c. You should probably get your priorities straight, too."
         ]
     ],
@@ -2205,10 +2205,10 @@
             "both_shunned"
         ],
         [
-            "[Long after sundown, you and t_c are curled up in your makeshift nests at the edge of camp, but from their constant shifting, it's clear they're having trouble sleeping.]",
-            "[You lean over and rest your head on t_c, whispering to them. For a moment, they seem frozen, but then they press closer.]",
+            "[Long after sundown, you and t_c are curled up in your makeshift nests at the edge of camp, but from {PRONOUN/t_c/poss} constant shifting, it's clear {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} having trouble sleeping.]",
+            "[You lean over and rest your head on t_c, whispering to {PRONOUN/t_c/object}. For a moment, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} frozen, but then {PRONOUN/t_c/subject} {PRONOUN/t_c/press/presses} closer.]",
             "You... mean that? Even now?",
-            "[They curl their tail around you, and you do the same. You stay like that for a while, listening to t_c's breathing and sounds from the camp where neither of you are welcome.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/curl/curls} {PRONOUN/t_c/poss} tail around you, and you do the same. You stay like that for a while, listening to t_c's breathing and sounds from the camp where neither of you are welcome.]"
         ]
     ],
     "grieving_flirt_CM1": [
@@ -2219,7 +2219,7 @@
             "dead_close"
         ],
         [
-            "[t_c barely looks up at you, choking out a sob as they tremble.]",
+            "[t_c barely looks up at you, choking out a sob as {PRONOUN/t_c/subject} {VERB/t_c/tremble/trembles}.]",
             "y_c, y_c I'm sorry. I- <i>hic</i> I can't...",
             "I can't love anyone like I did d_c.",
             "It.. if I lost you... it would destroy me if I did."
@@ -2319,7 +2319,7 @@
             "reject"
         ],
         [
-            "[t_c opens their maws and snarls at you]",
+            "[t_c opens {PRONOUN/t_c/poss} maws and snarls at you]",
             "How <b>dare</b> you y_c. How dare you think you can replace d_c!"
         ]
     ],
@@ -2425,7 +2425,7 @@
             "reject"
         ],
         [
-            "[t_c opens their maws and snarls at you]",
+            "[t_c opens {PRONOUN/t_c/poss} maws and snarls at you]",
             "How <b>dare</b> you y_c. How dare you think you can replace d_c!"
         ]
     ],
@@ -2491,7 +2491,7 @@
             "reject"
         ],
         [
-            "I must be going insane. y_c is dead... they would never say that..."
+            "I must be going insane. y_c is dead... {PRONOUN/y_c/subject} would never say that..."
         ]
     ],
     "grievingthem_J1": [

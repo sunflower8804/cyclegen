@@ -119,7 +119,7 @@
             "littermate"
         ],
         [
-            "[You flop on top of t_c and they let out an annoyed squeak.]"
+            "[You flop on top of t_c and {PRONOUN/t_c/poss} {VERB/t_c/let/lets} out an annoyed squeak.]"
         ]
     ],
     "assertive_newborn1": [
@@ -129,7 +129,7 @@
         ],
         [
             "Mroww...",
-            "[t_c seems to already be trying to squirm their way out of the nest!]"
+            "[t_c seems to already be trying to squirm {PRONOUN/t_c/poss} way out of the nest!]"
         ]
     ],
     "assertive_newborn2": [
@@ -149,7 +149,7 @@
         ],
         [
             "Prrr...",
-            "[t_c noses their siblings out of the way to nurse.]"
+            "[t_c noses {PRONOUN/t_c/poss} siblings out of the way to nurse.]"
         ]
     ],
     "introspective_NB": [
@@ -159,8 +159,8 @@
         ],
         [
             "Mew!",
-            "[You turn to see a newborn crawling around on their own outside the nursery. How on earth did they get here?]",
-            "[You pick them up, and carry them back to the nursery.]",
+            "[You turn to see a newborn crawling around on {PRONOUN/t_c/poss} own outside the nursery. How on earth did {PRONOUN/t_c/subject} get here?]",
+            "[You pick {PRONOUN/t_c/object} up and carry {PRONOUN/t_c/object} back to the nursery.]",
             "[You turn around to have a chat with a Clanmate for five minutes.]",
             "Meeewww!",
             "[The kitten has somehow escaped again.]",
@@ -173,8 +173,8 @@
             "introspective"
         ],
         [
-            "[You walk into the nursery to check on how the kittens were.]",
-            "[A queen smiles and gestures to a Newborn tucked into their side, gently snoring]",
+            "[You walk into the nursery to check on the kittens.]",
+            "[r_q smiles and gestures to a newborn tucked into {PRONOUN/r_q/poss} side, gently snoring]",
             "...zzzz...",
             "[You politely smile at the queen and leave.]"
         ]
@@ -188,7 +188,7 @@
             "[You're sat grooming yourself in the clearing.]",
             "[A little newborn stumbles into you.]",
             "Squeak! Meow!",
-            "[They turn around and stumble away. You're too surprised to grab them before they crawl back to the nursery. Seems at the minimum that they have a good sense of direction?]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} around and {VERB/t_c/stumble/stumbles} away. You're too surprised to grab {PRONOUN/t_c/object} before {PRONOUN/t_c/subject} {VERB/t_c/crawl/crawls} back to the nursery. Seems at the minimum that {PRONOUN/t_c/subject} {VERB/t_c/have/has} a good sense of direction?]"
         ]
     ],
     "introspective_NB_3": [
@@ -200,7 +200,7 @@
             "Mew?",
             "[t_c walks into your side when wandering around the nursery.]",
             "Meow! Prrr...",
-            "[They flop over and lay against you, seemingly satisfied with where they are.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/flop/flops} over and {VERB/t_c/lay/lays} against you, seemingly satisfied with where {PRONOUN/t_c/subject} {VERB/t_c/are/is}.]",
             "[Guess you're not moving any time soon.]"
         ]
     ],
@@ -212,7 +212,7 @@
         [
             "[You notice a newborn kitten... t_c? t_c sits in the corner.]",
             "...",
-            "[They don't look distressed so you decide to leave them there.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} look distressed so you decide to leave {PRONOUN/t_c/object} there.]"
         ]
     ],
     "introspective_NB_5": [
@@ -222,7 +222,7 @@
         ],
         [
             "Mewww???",
-            "[A newborn kitten yells at you from the nursery. You walk over and flick your tail over their face]",
+            "[A newborn kitten yells at you from the nursery. You walk over and flick your tail over {PRONOUN/t_c/poss} face.]",
             "Meow!"
         ]
     ],
@@ -232,7 +232,7 @@
             "sweet"
         ],
         [
-            "[t_c seems to cuddle closer to you, purring]"
+            "[t_c seems to cuddle closer to you, purring.]"
         ]
     ],
     "sweet_newborn_2": [
@@ -241,7 +241,7 @@
             "sweet"
         ],
         [
-            "[t_c seems to reach their tiny little paw up, placing it on your nose with what you could swear is an itty bitty smile]"
+            "[t_c reaches {PRONOUN/t_c/poss} tiny little paw up, placing it on your nose with what you could swear is an itty bitty smile.]"
         ]
     ],
     "silly_newborn_1": [
@@ -259,7 +259,7 @@
             "silly"
         ],
         [
-            "[t_c mews even louder than the rest of their litter, as if it were a competition.]"
+            "[t_c mews even louder than the rest of {PRONOUN/t_c/poss} litter, as if it were a competition.]"
         ]
     ],
     "silly_newborn_3": [
@@ -328,7 +328,7 @@
         ],
         [
             "Mew mew.",
-            "[They bury their nose into their little paws.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/bury/buries} {PRONOUN/t_c/poss} nose into {PRONOUN/t_c/poss} little paws.]"
         ]
     ],
     "stable_newborn_02": [
@@ -338,7 +338,7 @@
         ],
         [
             "Mreow?",
-            "[They shift in their sleep, chest rising and falling slowly]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/shift/shifts} in {PRONOUN/t_c/poss} sleep, chest rising and falling slowly.]"
         ]
     ],
     "stable_newborn_03": [
@@ -348,7 +348,7 @@
         ],
         [
             "Meep...",
-            "[They press into your belly, snuggling closer.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/press/presses} into your belly, snuggling closer.]"
         ]
     ],
     "stable_newborn_04": [
@@ -357,7 +357,7 @@
             "stable"
         ],
         [
-            "[They kick their legs in their sleep in a running motion.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/kick/kicks} {PRONOUN/t_c/poss} legs in {PRONOUN/t_c/poss} sleep in a running motion.]"
         ]
     ],
     "stable_newborn_05": [
@@ -367,7 +367,7 @@
         ],
         [
             "MMMMAAAARRRRRWWOOOOO!",
-            "[They wail at the top of their lungs.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/wail/wails} at the top of {PRONOUN/t_c/poss} lungs.]"
         ]
     ],
     "stable_newborn_06": [
@@ -377,7 +377,7 @@
         ],
         [
             "Meowel...",
-            "[They rest against their siblings and purr. It seems they have already made an unbreakable promise of protection- far earlier then what you would have expected!]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/rest/rests} against {PRONOUN/t_c/poss} siblings and {VERB/t_c/purr/purrs}. It seems {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} already made an unbreakable promise of protection- far earlier then what you would have expected!]"
         ]
     ],
     "stable_newborn_07": [
@@ -387,7 +387,7 @@
         ],
         [
             "...",
-            "[They lay still and quiet, you press your nose to them in fear to make sure they're okay, seems they're just a quiet one...]"
+            "[{PRONOUN/t_c/subject} {VERB/t_c/lay/lays} still and quiet. You press your nose to {PRONOUN/t_c/object} in fear to make sure {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} okay, seems {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} just a quiet one...]"
         ]
     ],
     "stable_newborn_08": [
@@ -397,7 +397,7 @@
         ],
         [
             "Maow!",
-            "[They squirm up to you and place their paws on your nose, holding you as close as they can.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/squirm/squirms} up to you and {VERB/t_c/place/places} {PRONOUN/t_c/poss} paws on your nose, holding you as close as {PRONOUN/t_c/subject} can.]"
         ]
     ],
     "stable_newborn_09": [
@@ -407,7 +407,7 @@
         ],
         [
             "Meow.",
-            "[Never did you think a kitten could say meow' so bluntly but here you are.]"
+            "[Never did you think a kitten could say meow' so bluntly, but here you are.]"
         ]
     ],
     "stable_newborn_10": [
@@ -417,7 +417,7 @@
         ],
         [
             "Mew wow ow.",
-            "[They puff out their little chest as they peep in protest of staying still in the nest- it seems they want to explore before they can even see!]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/puff/puffs} out {PRONOUN/t_c/poss} little chest as {PRONOUN/t_c/subject} {VERB/t_c/peep/peeps} in protest of staying still in the nest- it seems {PRONOUN/t_c/subject} {VERB/t_c/want/wants} to explore before {PRONOUN/t_c/subject} can even see!]"
         ]
     ],
     "stable_newborn_11": [
@@ -427,7 +427,7 @@
         ],
         [
             "Meow, me mow.",
-            "[They shake their head at you disapprovingly. They have so much to learn...]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head at you disapprovingly. {PRONOUN/t_c/subject/CAP} {VERB/t_c/have/has} so much to learn...]"
         ]
     ],
     "stable_newborn_112": [
@@ -446,7 +446,7 @@
             "stable"
         ],
         [
-            "[You watch curiously as t_c opens their little mouth again and again making a small popping sound. They're so cute!!!]"
+            "[You watch curiously as t_c opens {PRONOUN/t_c/poss} little mouth again and again making a small popping sound. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} so cute!!!]"
         ]
     ],
     "stable_newborn_14": [
@@ -457,7 +457,7 @@
         ],
         [
             "Meep!",
-            "[t_c boops your nose as you roll into them.]"
+            "[t_c boops your nose as you roll into {PRONOUN/t_c/object}.]"
         ]
     ],
     "stable_newborn_15": [
@@ -468,8 +468,8 @@
         ],
         [
             "Mraow. Mew?",
-            "[You climb on top of t_c's back and begin to purr as their tiny body settles. The two of you seem comfortable despite the distant yowling of your parents in worry. y_p attempts to separate the two of you.]",
-            "[To their disdain a few moments you both are in the same spot but this time t_c sleeps on your back.]"
+            "[You climb on top of t_c's back and begin to purr as {PRONOUN/t_c/poss} tiny body settles. The two of you seem comfortable despite the distant yowling of your parents in worry. y_p attempts to separate the two of you.]",
+            "[To {PRONOUN/y_p/poss} disdain, in a few moments you both are in the same spot, but this time t_c sleeps on your back.]"
         ]
     ],
     "stable_newborn_16": [
@@ -491,7 +491,7 @@
         ],
         [
             "Mehehe mew.",
-            "[t_c cheekily giggles as they roll around the nest, you and y_l purr in tiny laughter as you squint watching their little form.]"
+            "[t_c cheekily giggles as {PRONOUN/t_c/subject} {VERB/t_c/roll/rolls} around the nest. You and y_l purr in tiny laughter as you squint, watching {PRONOUN/t_c/poss} little form.]"
         ]
     ],
     "stable_newborn_18": [
@@ -502,7 +502,7 @@
         ],
         [
             "MEOW!",
-            "[You flinch back as t_c yowls in your little ear- well there's always one.]"
+            "[You flinch back as t_c yowls in your little ear.]"
         ]
     ],
     "stable_newborn_19": [
@@ -512,7 +512,7 @@
             "stable"
         ],
         [
-            "[You and t_c snuggle together in a pile of feathers that r_q gave y_p as a present. You both smile as you knead the soft texture. t_c seems like they're especially enjoying it.]"
+            "[You and t_c snuggle together in a pile of feathers that r_q gave y_p as a present. You both smile as you knead the soft texture. t_c seems like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} especially enjoying it!]"
         ]
     ],
     "stable_newborn_20": [
@@ -535,9 +535,9 @@
             "stable"
         ],
         [
-            "[You curl against y_p and shiver slightly as a cool breeze enters the nursery. Despite their small size, t_c takes notice.]",
+            "[You curl against y_p and shiver slightly as a cool breeze enters the nursery. Despite {PRONOUN/t_c/poaa} small size, t_c takes notice.]",
             "Meow!",
-            "[y_p stares in shock at the little kitten who spoke so clearly only to see tiny t_c pointing at you with their little paws. y_p immediately pulls you both closer and purrs loudly.]"
+            "[y_p stares in shock at the little kitten who spoke so clearly only to see tiny t_c pointing at you with {PRONOUN/t_c/poss} little paws. y_p immediately pulls you both closer and purrs loudly.]"
         ]
     ],
     "unabashed_newborn": [
@@ -547,7 +547,7 @@
         ],
         [
             "Mew! Meoow! Mrrrrow!",
-            "[They paw at you playfully.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/paw/paws} at you playfully.]"
         ]
     ],
     "unabashed_newborn1": [
@@ -556,7 +556,7 @@
             "newborn"
         ],
         [
-            "[You spot t_c crawling around in circles when they suddenly bite r_c's leg.]"
+            "[You spot t_c crawling around in circles, before suddenly biting r_c's leg.]"
         ]
     ],
     "cool_newborn_1": [
@@ -565,8 +565,8 @@
             "cool"
         ],
         [
-            "[t_c mewls in response to you saying their name.]",
-            "[It appears as if they're already trying to puff out the fur of their chest.]"
+            "[t_c mewls in response to you saying {PRONOUN/t_c/poss} name.]",
+            "[It appears as if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} already trying to puff out the fur of {PRONOUN/t_c/poss} chest.]"
         ]
     ],
     "cool_newborn_2": [
@@ -575,8 +575,8 @@
             "cool"
         ],
         [
-            "[t_c wobbles their little paws out in front of themself, mewling loudly]",
-            "[Fresh to the world, it seems like they're already trying to find steady ground to explore.]"
+            "[t_c wobbles {PRONOUN/t_c/poss} little paws out in front of {PRONOUN/t_c/self}, mewling loudly.]",
+            "[Fresh to the world, it seems like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} already trying to find steady ground to explore.]"
         ]
     ],
     "upstanding_newborn": [
@@ -597,7 +597,7 @@
         ],
         [
             "MROW!",
-            "[t_c mewls angrily as they're shoved out of their nest.]"
+            "[t_c mewls angrily as {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} shoved out of {PRONOUN/t_c/poss} nest.]"
         ]
     ],
     "upstanding_newborn2": [
@@ -606,7 +606,7 @@
             "Any"
         ],
         [
-            "[t_c is hard at work, kneading their nest with itty-bitty paws.]"
+            "[t_c is hard at work, kneading {PRONOUN/t_c/poss} nest with itty-bitty paws.]"
         ]
     ],
     "neurotic_newborn": [
@@ -623,7 +623,7 @@
         ],
         [
             "Eep!",
-            "[t_c buries themself deep into the fluff of t_p's tail.]"
+            "[t_c buries {PRONOUN/t_c/self} deep into the fluff of t_p's tail.]"
         ]
     ],
     "neurotic_newborn2": [
@@ -632,7 +632,7 @@
         ],
         [
             "Mrow!",
-            "[t_c is buried under a pile of their siblings!]"
+            "[t_c is buried under a pile of {PRONOUN/t_c/poss} siblings!]"
         ]
     ],
     "neurotic_newborn3": [
@@ -641,7 +641,7 @@
             "neurotic"
         ],
         [
-            "[You can barely make out t_c, they're so deeply buried in their parent's nest.]"
+            "[You can barely make out t_c, they're so deeply buried in {PRONOUN/t_c/poss} parent's nest.]"
         ]
     ],
     "newborn_yourkit": [
@@ -652,7 +652,7 @@
         ],
         [
             "[t_c snuggles deep into your belly fur.]",
-            "[You wrap your tail around them, shielding them from the cold.]"
+            "[You wrap your tail around {PRONOUN/t_c/object}, shielding {PRONOUN/t_c/object} from the cold.]"
         ]
     ],
     "newborn_yourkit1": [
@@ -663,7 +663,7 @@
         ],
         [
             "[t_c squirms at your side, mewling frantically.]",
-            "[You lick the top of their head, quieting their cries.]"
+            "[You lick the top of {PRONOUN/t_c/poss} head, quieting {PRONOUN/t_c/poss} cries.]"
         ]
     ],
     "newborn_yourkit2": [
@@ -674,7 +674,7 @@
         ],
         [
             "[t_c presses against your side, sound asleep.]",
-            "[You breathe in their milky scent, swearing to love them forever.]"
+            "[You breathe in {PRONOUN/t_c/poss} milky scent, swearing to love {PRONOUN/t_c/object} forever.]"
         ]
     ],
     "newborn_yourkit3": [
@@ -694,7 +694,7 @@
             "unlawful"
         ],
         [
-            "[t_c reaches up and bats at you. Their tiny claws prick your nose.]",
+            "[t_c reaches up and bats at you. {PRONOUN/t_c/poss/CAP} tiny claws prick your nose.]",
             "[You reel back with a yelp.]"
         ]
     ],
@@ -703,7 +703,7 @@
             "any"
         ],
         [
-            "[t_c managed to wiggle their way out of their nest and is trying to make their way out of the nursery.]",
+            "[t_c has managed to wiggle {PRONOUN/t_c/poss} way out of {PRONOUN/t_c/poss} nest and is trying to make {PRONOUN/t_c/poss} way out of the nursery.]",
             "[t_p doesn't seem to notice.]"
         ]
     ],
@@ -714,7 +714,7 @@
         ],
         [
             "Squeak!",
-            "[t_c is already trying to crawl out of the nest!]"
+            "[t_c is already trying to crawl out of {PRONOUN/t_c/poss} nest!]"
         ]
     ],
     "newborn_unlawful1": [
@@ -725,7 +725,7 @@
         [
             "[What's this newborn doing outside of the nursery?]",
             "Mew?",
-            "[You pick up the kit and return it to r_q. t_c is gonna be a troublemaker, you can already tell.]"
+            "[You pick up the kit and return {PRONOUN/t_c/object} to r_q. t_c is gonna be a troublemaker, you can already tell.]"
         ]
     ],
     "newborn_unabashed1": [
@@ -735,7 +735,7 @@
         ],
         [
             "[t_c looks up at you, seeming confused and almost wary.]",
-            "[...did they just make a face of disgust?]",
+            "[...did {PRONOUN/t_c/subject} just make a face of disgust?]",
             "[You want to feel offended, but it's kind of hilarious to see that expression on a newborn's face.]"
         ]
     ],
@@ -746,7 +746,7 @@
         ],
         [
             "[t_c is making a ruckus.]",
-            "[They seem pretty proud of themself when they disturb one of the other kits. What a little nuisance!]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} pretty proud of {PRONOUN/t_c/self} when {PRONOUN/t_c/subject} {VERB/t_c/disturb/disturbs} one of the other kits. What a little nuisance!]"
         ]
     ],
     "newborn_unabashed3": [
@@ -755,7 +755,7 @@
             "Any"
         ],
         [
-            "[t_c is shoving all the other kits out of their way. How can a newborn be this unstoppable?!]"
+            "[t_c is shoving all the other kits out of {PRONOUN/t_c/poss} way. How can a newborn be this unstoppable?!]"
         ]
     ],
     "newborn_unabashed4": [
@@ -765,7 +765,7 @@
         ],
         [
             "[t_c is squirming and shoving poor t_l around.]",
-            "[...It looks like t_l has just accepted their fate.]"
+            "[...It looks like t_l has just accepted {PRONOUN/t_c/poss} fate.]"
         ]
     ],
     "stable_newborn_12": [
@@ -784,7 +784,7 @@
             "stable"
         ],
         [
-            "[You watch curiously as t_c opens their little mouth again and again making a small popping sound. They're so cute!!!]"
+            "[You watch curiously as t_c opens {PRONOUN/t_c/poss} little mouth again and again making a small popping sound. {PRONOUN/t_c/poss/CAP}{VERB/t_c/'re/'s} so cute!!!]"
         ]
     ],
     "newborn_fromlittermate": [
@@ -818,7 +818,7 @@
             "neurotic"
         ],
         [
-            "[You mew at t_c, and they turn to stare at you.]",
+            "[You mew at t_c, and {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to stare at you.]",
             "[...they don't reply.]"
         ]
     ],
@@ -831,7 +831,7 @@
             "assertive"
         ],
         [
-            "[You mew at t_c, and they turn to stare at you, before squeaking back a reply.]",
+            "[You mew at t_c, and {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to stare at you, before squeaking back a reply.]",
             "[This turns into a meow war, that ends with you winning by mewling far louder than t_c- and promptly getting shushed by the queens.]",
             "[...Worth it.]"
         ]
@@ -845,7 +845,7 @@
             "unlawful"
         ],
         [
-            "[You step on t_c's tail, and they bite you in return. The two of you get into a fight, and have to be separated.]"
+            "[You step on t_c's tail, and {PRONOUN/t_c/subject} {VERB/t_c/bite/bites} you in return. The two of you get into a fight, and have to be separated.]"
         ]
     ],
     "newborn_fromlittermate6": [
@@ -868,7 +868,7 @@
         ],
         [
             "Meep!",
-            "[t_c boops your nose as you roll into them.]"
+            "[t_c boops your nose as you roll into {PRONOUN/t_c/object}.]"
         ]
     ],
     "stable_newborn_littermate2": [
@@ -879,8 +879,8 @@
         ],
         [
             "Mraow. Mew?",
-            "[You climb on top of t_c's back and begin to purr as their tiny body settles. The two of you seem comfortable despite the distant yowling of your parents in worry. y_p attempts to separate the two of you.]",
-            "[To their disdain a few moments you both are in the same spot but this time t_c sleeps on your back.]"
+            "[You climb on top of t_c's back and begin to purr as {PRONOUN/t_c/poss} tiny body settles. The two of you seem comfortable despite the distant yowling of your parents in worry. y_p attempts to separate the two of you.]",
+            "[To their disdain, a few moments you both are in the same spot, but this time t_c sleeps on your back.]"
         ]
     ],
     "stable_newborn_littermate3": [
@@ -902,7 +902,7 @@
         ],
         [
             "Mehehe mew.",
-            "[t_c cheekily giggles as they roll around the nest, you and y_l purr in tiny laughter as you squint watching their little form.]"
+            "[t_c cheekily giggles as {PRONOUN/t_c/subject} {VERB/t_c/roll/rolls} around the nest. You and y_l purr in tiny laughter as you squint, watching {PRONOUN/t_c/poss} little form.]"
         ]
     ],
     "stable_newborn_littermate5": [
@@ -913,7 +913,7 @@
         ],
         [
             "MEOW!",
-            "[You flinch back as t_c yowls in your little ear- well there's always one.]"
+            "[You flinch back as t_c yowls in your little ear.]"
         ]
     ],
     "stable_newborn_littermate6": [
@@ -923,7 +923,7 @@
             "stable"
         ],
         [
-            "[You and t_c snuggle together in a pile of feathers that r_q gave y_p as a present. You both smile as you knead the soft texture. t_c seems like their especially enjoying it.]"
+            "[You and t_c snuggle together in a pile of feathers that r_q gave y_p as a present. You both smile as you knead the soft texture. t_c seems like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} especially enjoying it.]"
         ]
     ],
     "stable_newborn_littermate7": [
@@ -946,9 +946,9 @@
             "stable"
         ],
         [
-            "[You curl against y_p and shiver slightly as a cool breeze enters the nursery. Despite their small size, t_c takes notice.]",
+            "[You curl against y_p and shiver slightly as a cool breeze enters the nursery. Despite {PRONOUN/t_c/poss} small size, t_c takes notice.]",
             "Meow!",
-            "[y_p stares in shock at the little kitten who spoke so clearly only to see tiny t_c pointing at you with their little paws. y_p immediately pulls you both closer and purrs loudly.]"
+            "[y_p stares in shock at the little kitten who spoke so clearly only to see tiny t_c pointing at you with {PRONOUN/t_c/poss} little paws. y_p immediately pulls you both closer and purrs loudly.]"
         ]
     ],
     "sweet_newborn_3": [
@@ -977,10 +977,10 @@
             "sweet"
         ],
         [
-            "[You weren't having a good day, sighing as you lay down on a rock close to the Nursery.]",
+            "[You're not having a good day, sighing as you lay down on a rock close to the nursery.]",
             "Mew!",
-            "[You feel the small t_c plop down on your tail. You have no idea how they got here.]",
-            "[They seemed drawn to you though, and kept snuggling you... and you start to feel better.]"
+            "[You feel the small t_c plop down on your tail. You have no idea how {PRONOUN/t_c/subject} got here.]",
+            "[{PRONOUN/t_c/subject/CAP} seems drawn to you though, and keeps snuggling you... and you start to feel better.]"
         ]
     ],
     "upstanding_newborn3": [
@@ -989,7 +989,7 @@
             "Any"
         ],
         [
-            "[t_c has somehow managed to shift all of the moss in their nest to one side and is now lying in the center of a small mossy fort.]"
+            "[t_c has somehow managed to shift all of the moss in {PRONOUN/t_c/poss} nest to one side and is now lying in the center of a small mossy fort.]"
         ]
     ],
     "upstanding_newborn4": [
@@ -998,7 +998,7 @@
             "newborn"
         ],
         [
-            "[t_c has somehow managed to shift all of the moss in their nest to one side and is now lying in the center of a small mossy fort.]"
+            "[t_c has somehow managed to shift all of the moss in {PRONOUN/t_c/poss} nest to one side and is now lying in the center of a small mossy fort.]"
         ]
     ],
     "upstanding_newborn5": [
@@ -1008,7 +1008,7 @@
         ],
         [
             "MROW!",
-            "[t_c mewls angrily as they're shoved out of their nest.]"
+            "[t_c mewls angrily as {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} shoved out of {PRONOUN/t_c/poss} nest.]"
         ]
     ],
     "upstanding_newborn6": [
@@ -1017,7 +1017,7 @@
             "newborn"
         ],
         [
-            "[t_c is hard at work, kneading their nest with itty-bitty paws.]"
+            "[t_c is hard at work, kneading {PRONOUN/t_c/poss} nest with itty-bitty paws.]"
         ]
     ],
     "newborn_shunned1": [
@@ -1026,7 +1026,7 @@
             "any"
         ],
         [
-            "[r_q picks up t_c and pulls them away as you approach.]"
+            "[r_q picks up t_c and pulls {PRONOUN/t_c/object} away as you approach.]"
         ]
     ],
     "newborn_shunned2": [
@@ -1035,7 +1035,7 @@
             "any"
         ],
         [
-            "[t_p has their whole body wrapped around t_c, shielding them from you.]"
+            "[t_p has {PRONOUN/t_c/poss} whole body wrapped around t_c, shielding {PRONOUN/t_c/object} from you.]"
         ]
     ],
     "newborn_shunned3": [
@@ -1044,7 +1044,7 @@
             "any"
         ],
         [
-            "[r_c quickly grabs t_c and carries them away as they stumble curiously towards you.]"
+            "[r_c quickly grabs t_c and carries {PRONOUN/t_c/object} away as {PRONOUN/t_c/poss} {VERB/t_c/stumble/stumbles} curiously towards you.]"
         ]
     ],
     "newborn_shunned4": [
@@ -1065,7 +1065,7 @@
         [
             "[From across camp, you stare at one of the only members of c_nClan who doesn't know what you did.]",
             "[r_q sees you staring and steps in front of t_c to block your view.]",
-            "[You sigh. It won't be long before someone lets them know.]"
+            "[You sigh. It won't be long before someone lets {PRONOUN/t_c/object} know.]"
         ]
     ],
     "starclannewborn": [
@@ -1074,7 +1074,7 @@
             "newborn"
         ],
         [
-            "[t_c limply bats at the stars glimmering around them.]"
+            "[t_c limply bats at the stars glimmering around {PRONOUN/t_c/object}.]"
         ]
     ],
     "starclannewborn1": [
@@ -1084,7 +1084,7 @@
             "Any"
         ],
         [
-            "[t_c purrs softly as they bask in the starlit grass.]"
+            "[t_c purrs softly as {PRONOUN/t_c/subject} {VERB/t_c/bask/basks} in the starlit grass.]"
         ]
     ],
     "starclannewborn2": [
@@ -1097,7 +1097,7 @@
             "[You find yourself wandering close to the Dark Forest border when you spot movement out of the corner of your eye.]",
             "[You turn your head to see... is that- is that t_c?!]",
             "MEEEW!",
-            "[With a jolt you realize that t_c is stumbling right towards the border. You lunge forward and grab the kit, ignoring it's mewls of protest as you carry it back towards Starclan's hunting grounds.]"
+            "[With a jolt you realize that t_c is stumbling right towards the border. You lunge forward and grab the kit, ignoring {PRONOUN/t_c/poss} mewls of protest as you carry {PRONOUN/t_c/object} back towards Starclan's hunting grounds.]"
         ]
     ],
     "starclannewborn3": [
@@ -1110,7 +1110,7 @@
             "Meeew!",
             "[t_c has somehow managed to climb onto a large rock.]",
             "MEW!",
-            "[Should you... should you help them down?]"
+            "[Should you... should you help {PRONOUN/t_c/object} down?]"
         ]
     ],
     "dfnewborn": [
@@ -1119,7 +1119,7 @@
             "newborn"
         ],
         [
-            "[t_c yowls as you come near, their little voice shaking.]"
+            "[t_c yowls as you come near, {PRONOUN/t_c/poss} little voice shaking.]"
         ]
     ],
     "youstarclannewborn": [
@@ -1449,7 +1449,7 @@
         ],
         [
             "Mew!",
-            "[Oh, it's t_c. Should they be over here? Their family is probably looking for them.]"
+            "[Oh, it's t_c. Should {PRONOUN/t_c/subject} be over here? {PRONOUN/t_c/poss/CAP} family is probably looking for {PRONOUN/t_c/object}.]"
         ]
     ],
     "df_df_kit_R1": [
@@ -1463,7 +1463,7 @@
         ],
         [
             "Mewwww...",
-            "[t_c is whining for comfort again. They should know better by now that it's not coming.]"
+            "[t_c is whining for comfort again. {PRONOUN/t_c/subject/CAP} should know better by now that it's not coming.]"
         ]
     ],
     "ur_they_newborn_CM1": [
@@ -1476,23 +1476,8 @@
         [
             "[You see t_c rolling in the misty fields, the tiny kitten angrily flopping around.]",
             "MEW!!!!",
-            "[They squeal, stomping their little paws onto the ground.]",
-            "[Is.. is this what a tantrum from them looks like?]"
-        ]
-    ],
-    "ur_you_newborn_CM1": [
-        [
-            "newborn",
-            "you_ur",
-            "they_ur",
-            "they_older"
-        ],
-        [
-            "[Every time you've tried to open your eyes, the world has been a dizzying haze of mist and shimmers. This time, you catch a brief glimpse of t_c.]",
-            "Well, hello there little one.",
-            "What a shame to see you here.",
-            "[They gently nudge you with their muzzle, and you squirm, their touch feeling like wisps of wind.]",
-            "I'll leave you be, I'm sure somecat is looking for you."
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/squeal/squeals}, stomping {PRONOUN/t_c/poss} little paws onto the ground.]",
+            "[Is.. is this what a tantrum from {PRONOUN/t_c/object} looks like?]"
         ]
     ],
     "newborn_1dead_dead": [
