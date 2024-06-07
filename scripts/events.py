@@ -378,7 +378,7 @@ class Events:
                 if game.clan.your_cat.shunned == 0:
                     self.check_retire()
 
-            if random.randint(1,2) == 1:
+            if random.randint(1,15) == 1:
                 self.gain_acc()
 
         elif game.clan.your_cat.dead and game.clan.your_cat.dead_for == 0:
@@ -1117,6 +1117,10 @@ class Events:
                     encoding="ascii") as read_file:
                 all_events = ujson.loads(read_file.read())
         
+        if game.clan.your_cat.status not in ["newborn", "kitten"] and game.clan.your_cat.shunned == 0 and not game.clan.your_cat.dead:
+            with open(f"{resource_dir}general_no_kit.json", encoding="ascii") as read_file:
+                general_no_kit_events = ujson.loads(read_file.read())
+
         with open(f"{resource_dir}general.json",
                 encoding="ascii") as read_file:
             general_events = ujson.loads(read_file.read())
@@ -1133,6 +1137,8 @@ class Events:
         except:
             pass
         possible_events += general_events["general general"]
+        if game.clan.your_cat.status not in ["newborn", "kitten"] and game.clan.your_cat.shunned == 0 and not game.clan.your_cat.dead:
+            possible_events += general_no_kit_events["general general"]
 
         # Add old events
         if not all_events:
