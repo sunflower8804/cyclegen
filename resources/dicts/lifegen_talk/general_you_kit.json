@@ -14,7 +14,9 @@
     "introspective_to_NB": [
         [
             "newborn",
-            "introspective"
+            "introspective",
+            "non-related"
+
         ],
         [
             "Aw. hello there, little one.",
@@ -47,7 +49,6 @@
     "assertive_5": [
         [
             "kitten",
-            "dislike",
             "assertive",
             "cool",
             "unlawful",
@@ -58,6 +59,21 @@
             "Hey, mouse-brain! Watch where you're going!",
             "Wait, I recognize you. You're one of the new kits, right? Shouldn't you be in the nursery?",
             "Hmph. Whatever. Just stay outta the real warriors' way, before someone squishes you."
+        ]
+    ],
+     "assertive_tokit_2": [
+        [
+            "kitten",
+            "platonic_like",
+            "assertive"
+        ],
+        [
+            "Hey, y_c! I brought you back something from my last patrol. Take a look!",
+            "[t_c drops a colorful feather at your paws.]",
+            "You wanna know how I found it? Oh, it's a crazy story. I was on a hunting patrol, when I found this huge bird, and ...",
+            "[t_c regales you with a daring story full of thrills, twists, and turns.]",
+            "... And then I got the feather! Quite the adventure, no?",
+            "Just wait until you're old enough. You'll be having plenty of adventures of your own before you know it!"
         ]
     ],
     "assertive_4": [
@@ -89,7 +105,8 @@
         [
             "you_newborn",
             "they_any",
-            "assertive"
+            "assertive",
+            "non-related"
         ],
         [
             "Whoa! Hey there, little guy! Shouldn't you be in the nursery?",
@@ -111,7 +128,7 @@
     "assertive_tonewborn_2": [
         [
             "you_newborn",
-            "they_any",
+            "they_medicine_cat",
             "assertive"
         ],
         [
@@ -453,6 +470,35 @@
         [
             "*Gasp* Oh, look, t_m! y_c has your nose!",
             "Heh ... Our perfect little family."
+        ]
+    ],
+    "assertive_parent5": [
+        [
+            "kitten",
+            "assertive",
+            "cool",
+            "platonic_like",
+            "from_parent"
+        ],
+        [
+            "y_c? What's going on?",
+            "Wait a second, I know that face. You're ready for your nap, aren't you?",
+            "Alright, c'mere little guy. Off to dreamland.",
+            "[You snuggle into t_c's fur and doze off, comforted by their scent.]"
+        ]
+    ],
+    "assertive_parent6": [
+        [
+            "kitten",
+            "assertive",
+            "cool",
+            "platonic_like",
+            "from_parent"
+        ],
+        [
+            "Alright, kiddo, time for your bath.",
+            "Nope, I don't wanna hear any 'ifs', 'ands', or 'buts' about it. Even the strongest of warriors have to keep their pelts shiny!",
+            "[t_c spends several minutes grooming your fur before you can wriggle away and get back to playing!]"
         ]
     ],
     "assertive_parent7": [
@@ -1704,7 +1750,7 @@
     "sweet_11": [
         [
             "newborn",
-            "they_formerlykittypet",
+            "they_formerlyakittypet",
             "sweet"
         ],
         [
@@ -2542,6 +2588,20 @@
         [
             "Oh, darling kit...",
             "I'm sorry you ended up here."
+        ]
+    ],
+    "general_sh_J7": [
+        [
+            "you_shunned",
+            "they_kitten",
+            "any"
+        ],
+        [
+            "Um, um...",
+            "[t_c glances around quickly as you approach.]",
+            "r_q!",
+            "[At t_c's call, a queen rushes from the nursery and scoops the little kit up, flashing you a dirty look as they head back inside.]",
+            "[You just wanted to speak with somecat who didn't understand the situation, but it seems there are none.]"
         ]
     ],
     "assertive_tokit5": [
@@ -4094,6 +4154,26 @@
             "What a shame to see you here.",
             "[{PRONOUN/t_c/subject/CAP} gently {VERB/t_c/nudge/nudges} you with {PRONOUN/t_c/poss} muzzle, and you squirm, {PRONOUN/t_c/poss} touch feeling like wisps of wind.]",
             "I'll leave you be, I'm sure somecat is looking for you."
+        ]
+    ],
+    "newborninsult_J1": [
+        [
+            "newborn",
+            "they_older",
+            "insult"
+        ],
+        [
+            "Um... hello..?"
+        ]
+    ],
+    "newborninsult_J2": [
+        [
+            "newborn",
+            "they_older",
+            "insult"
+        ],
+        [
+            "Wha.. What was that?"
         ]
     ]
 }

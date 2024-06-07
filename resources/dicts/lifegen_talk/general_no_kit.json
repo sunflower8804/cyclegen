@@ -92,6 +92,19 @@
             "But don't try to get me to watch my tongue. If someone's acting like a stupid piece of fox-dung, I'm gonna call them a stupid piece of fox-dung!!!"
         ]
     ],
+      "assertive_warrior": [
+        [
+            "apprentice",
+            "assertive",
+            "unlawful",
+            "they_older"
+        ],
+        [
+            "Heads up, y_c! Moss in the elders' den needs changing!",
+            "Guess being a warrior's not always fighting battles and scaring off kittypets, huh?",
+            "But there's still plenty of that, too, if you're lucky. Hehehe."
+        ]
+    ],
     "assertivewarrior_mediatorapp3": [
         [
             "mediator apprentice",
@@ -2897,7 +2910,7 @@
             "greenleaf"
         ],
         [
-            "Well, if it isn't m_c! My favorite cat. Nice weather today, isn't it?",
+            "Well, if it isn't y_c! My favorite cat. Nice weather today, isn't it?",
             "Almost makes you feel like things aren't so bad here, ah?",
             "[t_c grins at you, and you're shocked by just how entrancing their smile is.]"
         ]
@@ -5597,19 +5610,6 @@
             "Heh. That actually sounds kinda fun.",
             "Maybe I'll join in sometime.",
             "Seeya around, y_c."
-        ]
-    ],
-    "brooding_tomedapp": [
-        [
-            "medicine cat apprentice",
-            "medicine cat",
-            "brooding",
-            "they_blind"
-        ],
-        [
-            "Have you heard anything from StarClan lately?",
-            "Hmph. Of course not. How typical.",
-            "Any longer and I'll start to believe our ancestors have given up on us."
         ]
     ],
     "broodingapp_toqueenapp1": [
@@ -8654,7 +8654,7 @@
             "they_blind"
         ],
         [
-            "Hey, look out for y_s in the apprentice's den, alright?",
+            "Hey, look out for y_l in the apprentice's den, alright?",
             "The two of you are family. That's important. No one can ever take that from you.",
             "Now that you're older, it's more vital now than ever that the two of you support each other."
         ]
@@ -11052,7 +11052,8 @@
             "silly",
             "assertive",
             "cool",
-            "unabashed"
+            "unabashed",
+            "non-mates"
         ],
         [
             "Hey, have you seen my new litter yet? I swear, t_kk has got to be the cutest, smartest kit in the entire Clan!",
@@ -13509,6 +13510,17 @@
         ],
         [
             "[You and t_c are both too sad to try to speak.]"
+        ]
+    ],
+    "grieving_sh_J36": [
+        [
+            "Any",
+            "you_shunned",
+            "they_grieving",
+            "insult"
+        ],
+        [
+            "You must be truly evil."
         ]
     ],
     "starClan_default": [
@@ -16103,9 +16115,9 @@
             "they_ur",
             "you_ur",
             "any",
-            "they_formerlyloner",
-            "they_formerlyoutsider",
-            "they_formerlyrogue"
+            "they_formerlyaloner",
+            "they_formerlyaoutsider",
+            "they_formerlyarogue"
         ],
         [
             "I knew I would end up here.",
@@ -16116,9 +16128,9 @@
         [
             "they_ur",
             "you_ur",
-            "they_formerlyloner",
-            "they_formerlyoutsider",
-            "they_formerlyrogue",
+            "they_formerlyaloner",
+            "they_formerlyaoutsider",
+            "they_formerlyarogue",
             "any",
             "no_kit"
         ],
@@ -17200,7 +17212,7 @@
         [
             "they_ur",
             "any",
-            "they_formerlyloner",
+            "they_formerlyaloner",
             "you_shunned",
             "no_kit"
         ],

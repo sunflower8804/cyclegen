@@ -1,1 +1,27 @@
-{}
+{
+    "valentines_1": {
+        "tags": [
+            "no_kit",
+            "focus"
+        ],
+        "intro": [
+            "Love is in the air, y_c! Have anyone that you.... you know... like?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Yeah.",
+                "next_scene": "yea"
+            },
+            "choice2": {
+                "text": "Nope.",
+                "next_scene": "no"
+            }
+        },
+        "yea": [
+            "Oooh, I see!"
+        ],
+        "no": [
+            "Ah. Maybe next year."
+        ]
+    }
+}

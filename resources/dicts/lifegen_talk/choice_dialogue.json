@@ -2519,7 +2519,7 @@
                 "next_scene": "ReportFail"
             },
             "choice2": {
-                "text": "Yes, I think they're at the medicine den.",
+                "text": "They're at the medicine den.",
                 "next_scene": "ReportFound"
             }
         },
@@ -2843,9 +2843,9 @@
     },
     "brooding_tomedappAJ1": {
         "tags": [
-            "no_kit",
-            "medicine cat apprentice",
-            "medicine cat",
+            "they_adult",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
             "brooding"
         ],
         "intro": [
@@ -2873,7 +2873,7 @@
     },
     "brooding_bullyAJ": {
         "tags": [
-            "kitten",
+            "you_kitten",
             "they_kitten",
             "brooding",
             "assertive",
@@ -2941,6 +2941,7 @@
     },
     "brooding_shredAJ": {
         "tags": [
+            "you_adult",
             "they_kitten",
             "brooding",
             "unlawful",
@@ -3078,7 +3079,8 @@
             "no_kit",
             "medicine cat apprentice",
             "medicine cat",
-            "brooding"
+            "brooding",
+            "no_kit"
         ],
         "intro": [
             "Erm ... Hi.",

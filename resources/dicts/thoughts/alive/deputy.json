@@ -117,7 +117,7 @@
     {  
         "id": "insecure_deputy_leader",
         "thoughts": [
-            "Keeps confirming with the leader that the patrols {PRONOUN/m_c/subject}{VERB/m_c/'s/'re} organizing sound right"
+            "Keeps confirming with the leader that the patrols {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} organizing sound right"
         ],
         "main_trait_constraint":[
             "insecure"
@@ -247,7 +247,7 @@
             "Is mouthing off the other cats that they weren't important enough to be the leader's commander",
             "Is being smug that one day {PRONOUN/m_c/subject} will lead the Clan",
             "Brags that StarClan choose {PRONOUN/m_c/object} as deputy because {PRONOUN/m_c/subject} were destined",
-            "Believes c_n will thrive for generations when {PRONOUN/m_c/subject}{VERB/m_c/'s/'re} in charge",
+            "Believes c_n will thrive for generations when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} in charge",
             "Muzzle flushed red when a Clanmate bested {PRONOUN/m_c/object}",
             "Knows someday {PRONOUN/m_c/subject}'ll lead c_n better than previous leaders",
             "Can't wait to test out a strategy {PRONOUN/m_c/subject} made to capture more prey"
@@ -309,7 +309,7 @@
             "Is defending a Clanmate from being accused of crossing borders into another Clan",
             "Is willing to punish codebreakers",
             "Is giving out clear and detailed reports to {PRONOUN/m_c/poss} leader",
-            "Is willing to help r_c, only because {PRONOUN/r_c/subject}{VERB/r_c/'s/'re} a Clanmate",
+            "Is willing to help r_c, only because {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} a Clanmate",
             "Orders Clanmates to defend c_n's borders with their lives"
         ],
         "main_trait_constraint": [

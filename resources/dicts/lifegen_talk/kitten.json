@@ -57,6 +57,20 @@
             "Uh, sorry! The queens told me to stay away from you."
         ]
     ],
+    "general_sh_J7": [
+        [
+            "you_shunned",
+            "they_kitten",
+            "any"
+        ],
+        [
+            "Um, um...",
+            "[t_c glances around quickly as you approach.]",
+            "r_q!",
+            "[At t_c's call, a queen rushes from the nursery and scoops the little kit up, flashing you a dirty look as they head back inside.]",
+            "[You just wanted to speak with somecat who didn't understand the situation, but it seems there are none.]"
+        ]
+    ],
     "kit_129": [
         [
             "Any",
@@ -1750,19 +1764,6 @@
         [
             "Hey, y_c, did your ears get bigger? Hahahaha!",
             "Big ears! Big ears!"
-        ]
-    ],
-    "broodingnewborn_16": [
-        [
-            "kitten",
-            "brooding",
-            "neutral"
-        ],
-        [
-            "What's the matter, y_c? Missing something?",
-            "[t_c holds your favorite moss-ball high above your head.]",
-            "What are you gonna do about it? Come take it from me?",
-            "Hahahaha!"
         ]
     ],
     "broodingnewborn_17": [
@@ -4032,7 +4033,7 @@
             "S-so, why do you look so scary?"
         ]
     ],
-     "revived_grievingkit_J1": [
+    "revived_grievingkit_J1": [
         [
             "any",
             "grievingyou",
@@ -5303,6 +5304,16 @@
         ],
         [
             "What?"
+        ]
+    ],
+    "dep_132": [
+        [
+            "newborn",
+            "they_older",
+            "insult"
+        ],
+        [
+            "Wha.. What was that?"
         ]
     ],
     "deadnewborns_J1": [

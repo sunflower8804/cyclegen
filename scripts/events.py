@@ -1117,6 +1117,10 @@ class Events:
                     encoding="ascii") as read_file:
                 all_events = ujson.loads(read_file.read())
         
+        if game.clan.your_cat.status not in ["newborn", "kitten"] and game.clan.your_cat.shunned == 0 and not game.clan.your_cat.dead:
+            with open(f"{resource_dir}general_no_kit.json", encoding="ascii") as read_file:
+                general_no_kit_events = ujson.loads(read_file.read())
+
         with open(f"{resource_dir}general.json",
                 encoding="ascii") as read_file:
             general_events = ujson.loads(read_file.read())
@@ -1133,6 +1137,8 @@ class Events:
         except:
             pass
         possible_events += general_events["general general"]
+        if game.clan.your_cat.status not in ["newborn", "kitten"] and game.clan.your_cat.shunned == 0 and not game.clan.your_cat.dead:
+            possible_events += general_no_kit_events["general general"]
 
         # Add old events
         if not all_events:
@@ -2822,6 +2828,12 @@ class Events:
             # Get all the ceremonies for the role ----------------------------------------
             possible_ceremonies.update(self.ceremony_id_by_tag[promoted_to])
 
+            if cat.shunned > 0:
+                possible_ceremonies = possible_ceremonies.intersection(self.ceremony_id_by_tag["shunned"])
+            
+            if cat.shunned == 0 and cat.forgiven > 0 and cat.forgiven < 5 and cat.status in ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"]:
+                possible_ceremonies = possible_ceremonies.intersection(self.ceremony_id_by_tag["forgiven"])
+
             # Get ones for prepared status ----------------------------------------------
             if promoted_to in ["warrior", "medicine cat", "mediator", "queen"]:
                 possible_ceremonies = possible_ceremonies.intersection(
@@ -2839,9 +2851,6 @@ class Events:
                 mentor = Cat.fetch_cat(cat.mentor)
             else:
                 tags.append("no_mentor")
-
-            if cat.shunned > 0:
-                tags.append("shunned")
 
             for c in reversed(cat.former_mentor):
                 if Cat.fetch_cat(c) and Cat.fetch_cat(c).dead:
@@ -2882,6 +2891,13 @@ class Events:
                 temp.update(
                     possible_ceremonies.intersection(
                         self.ceremony_id_by_tag[t]))
+                
+            if cat.forgiven == 0:
+                keys_to_remove = {key for key in temp if "forgiven" in key}
+                for key in keys_to_remove:
+                    temp.remove(key)
+            # this works to remove "forgiven" ceremonies from cats to whom that doesnt apply
+            # idk why the initial sorting doesnt work . this works for now
 
             possible_ceremonies = temp
 
@@ -2957,10 +2973,6 @@ class Events:
             temp = possible_ceremonies.intersection(
                 self.ceremony_id_by_tag["all_traits"])
             
-            if cat.shunned:
-                temp.update(possible_ceremonies.intersection(
-                self.ceremony_id_by_tag["shunned"]))
-
             if cat.personality.trait in self.ceremony_id_by_tag:
                 temp.update(
                     possible_ceremonies.intersection(
@@ -3875,7 +3887,7 @@ class Events:
 
                 elif cat.status != "leader":
                     if cat.status in ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"]:
-                        if cat.moons >= 30:
+                        if cat.moons >= 15:
                             if cat.status == "medicine cat apprentice":
                                 self.ceremony(cat, "medicine cat")
                             elif cat.status == "mediator apprentice":
@@ -3884,8 +3896,16 @@ class Events:
                                 self.ceremony(cat, "queen")
                             else:
                                 self.ceremony(cat, "warrior")
-                        else:
-                            cat.name.status = cat.status
+                        elif cat.moons >= 6:
+                            if cat.status == "medicine cat apprentice":
+                                self.ceremony(cat, "medicine cat")
+                            elif cat.status == "mediator apprentice apprentice":
+                                self.ceremony(cat, "mediator apprentice")
+                            elif cat.status == "queen's apprentice":
+                                self.ceremony(cat, "queen's apprentice")
+                            else:
+                                self.ceremony(cat, "apprentice")
+                            
                     elif cat.status in ["kitten", "newborn"] and cat.moons >= 6:
                         self.ceremony(cat, "apprentice") 
                         cat.name.status = cat.status

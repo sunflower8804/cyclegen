@@ -328,8 +328,6 @@ class TalkScreen(Screens):
         return chosen_text_intro
 
     def create_choice_buttons(self):
-
-
         y_pos = 0
         if f"{self.current_scene}_choices" not in self.possible_texts[self.chosen_text_key]:
             self.paw.visible = True
@@ -450,7 +448,7 @@ class TalkScreen(Screens):
             "you_formerlyaloner",
             "you_formerlyarogue",
             "you_formerlyakittypet",
-            "you_formerlyoutsider",
+            "you_formerlyaoutsider",
             "you_originallyfromanotherclan",
             "you_orphaned",
             "you_abandoned",
@@ -463,7 +461,7 @@ class TalkScreen(Screens):
             "they_formerlyaloner",
             "they_formerlyarogue",
             "they_formerlyakittypet",
-            "they_formerlyoutsider",
+            "they_formerlyaoutsider",
             "they_originallyfromanotherclan",
             "they_orphaned",
             "they_abandoned",
@@ -497,7 +495,7 @@ class TalkScreen(Screens):
             #     continue
 
             # Status tags
-            if you.status not in tags and f"you_{you.status}" not in tags and "any" not in tags and "young elder" not in tags and "no_kit" not in tags and "you_any" not in tags:
+            if you.status not in tags and f"you_{you.status}" not in tags and f"you_{you.status.replace('' '', '_')}" not in tags and "any" not in tags and "young elder" not in tags and "no_kit" not in tags and "you_any" not in tags:
                 continue
             elif "young elder" in tags and cat.status == 'elder' and cat.moons >= 100:
                 continue
@@ -631,20 +629,11 @@ class TalkScreen(Screens):
             youreforgiven = False
             theyreforgiven = False
 
-
-            if game.clan.age < you.forgiven + 10: # after ten moons, 100% regular dialogue returns
-                if you.history:
-                    if you.history.murder:
-                        if "is_murderer" in you.history.murder:
-                            if len(you.history.murder["is_murderer"]) > 0 and you.shunned == 0 and not you.dead and "you_forgiven" in tags:
-                                youreforgiven = True
+            if you.forgiven < 11 and you.forgiven > 0: 
+                youreforgiven = True
                                 
-            if game.clan.age < cat.forgiven + 10:
-                if cat.history:
-                    if cat.history.murder:
-                        if "is_murderer" in cat.history.murder:
-                            if len(cat.history.murder["is_murderer"]) > 0 and cat.shunned == 0 and not cat.dead and  "they_forgiven" in tags:
-                                theyreforgiven = True
+            if cat.forgiven < 11 and cat.forgiven > 0:
+                theyreforgiven = True
             
             if "you_forgiven" in tags and (you.shunned > 0 or not youreforgiven):
                 continue
@@ -810,7 +799,7 @@ class TalkScreen(Screens):
 
             # Relationships
             # Family tags:
-            if any(i in ["from_your_parent", "from_adopted_parent", "adopted_parent", "half sibling", "littermate", "siblings_mate", "cousin", "adopted_sibling", "parents_siblings", "from_mentor", "from_your_kit", "from_your_apprentice", "from_mate", "from_parent", "adopted_parent", "from_kit", "sibling", "from_adopted_kit"] for i in tags):
+            if any(i in ["from_your_parent", "from_adopted_parent", "adopted_parent", "half sibling", "littermate", "siblings_mate", "cousin", "adopted_sibling", "parents_siblings", "from_mentor", "from_df_mentor", "from_your_kit", "from_your_apprentice", "from_df_apprentice", "from_mate", "from_parent", "adopted_parent", "from_kit", "sibling", "from_adopted_kit"] for i in tags):
 
                 fam = False
                 if "from_mentor" in tags:
@@ -986,6 +975,11 @@ class TalkScreen(Screens):
             if "only_they_blind" in tags:
                 continue
 
+            if "only_you_deaf" in tags:
+                continue
+            if "only_you_blind" in tags:
+                continue
+
             # remove when dialogue is implemented
 
 
@@ -1145,7 +1139,7 @@ class TalkScreen(Screens):
             game.clan.talks.clear()
 
         # Assign weights based on tags
-        weighted_tags = ["you_pregnant", "they_pregnant", "from_mentor", "from_your_parent", "from_adopted_parent", "adopted_parent", "half sibling", "littermate", "siblings_mate", "cousin", "adopted_sibling", "parents_siblings", "from_mentor", "from_your_kit", "from_your_apprentice", "from_mate", "from_parent", "adopted_parent", "from_kit", "sibling", "from_adopted_kit", "they_injured", "they_ill", "you_injured", "you_ill", "you_grieving", "you_forgiven", "they_forgiven", "murderedyou", "murderedthem"] # List of tags that increase the weight
+        weighted_tags = ["you_pregnant", "they_pregnant", "from_mentor", "from_your_parent", "from_adopted_parent", "adopted_parent", "half sibling", "littermate", "siblings_mate", "cousin", "adopted_sibling", "parents_siblings", "from_df_mentor", "from_your_kit", "from_your_apprentice", "from_df_apprentice", "from_mate", "from_parent", "adopted_parent", "from_kit", "sibling", "from_adopted_kit", "they_injured", "they_ill", "you_injured", "you_ill", "you_grieving", "you_forgiven", "they_forgiven", "murderedyou", "murderedthem"] # List of tags that increase the weight
         weights = []
         for item in texts_list.values():
             tags = item["tags"] if "tags" in item else item[0]
@@ -1201,7 +1195,7 @@ class TalkScreen(Screens):
             tags = item["tags"] if "tags" in item else item[0]
             weights.append(len(tags))
         text_chosen_key = choices(list(texts_list.keys()), weights=weights)[0]
-        text = texts_list[text_chosen_key].get(1)
+        text = texts_list[text_chosen_key]["intro"] if "intro" in texts_list[text_chosen_key] else texts_list[text_chosen_key][1]
         if text is None:
             text = self.load_and_replace_placeholders(f"{resource_dir}general.json", cat, you)[1]
 
@@ -1210,7 +1204,7 @@ class TalkScreen(Screens):
             if new_text:
                 break
             text_chosen_key = choices(list(texts_list.keys()), weights=weights)[0]
-            text = texts_list[text_chosen_key][1]
+            text = texts_list[text_chosen_key]["intro"] if "intro" in texts_list[text_chosen_key] else texts_list[text_chosen_key][1]
             new_text = self.get_adjusted_txt(text, cat)
         else:
             text = self.load_and_replace_placeholders(f"{resource_dir}general.json", cat, you)[1]
@@ -1749,13 +1743,13 @@ class TalkScreen(Screens):
 
         # Your DF Mentor
         if "df_m_n" in text:
-            if you.joined_df and not you.dead and you.df_mentor:
+            if you.joined_df and not you.dead and you.df_mentor and cat.ID != you.df_mentor:
                 text = text.replace("df_m_n", str(Cat.all_cats.get(you.df_mentor).name))
             else:
                 return ""
         # Their mentor
         if "t_mn" in text or "tm_n" in text:
-            if cat.mentor is None:
+            if cat.mentor is None or cat.mentor == you.ID:
                 return ""
             text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
             text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
