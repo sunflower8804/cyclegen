@@ -89,7 +89,7 @@ class AffairScreen(Screens):
         self.mentor_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((200, 216), (596, 440))),
                                                         pygame.transform.scale(
                                                             image_cache.load_image(
-                                                                "resources/images/affair_select.PNG").convert_alpha(),
+                                                                "resources/images/affair_select.png").convert_alpha(),
                                                             (596, 440)), manager=MANAGER)
 
         self.back_button = UIImageButton(
