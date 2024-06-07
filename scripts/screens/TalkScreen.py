@@ -7,7 +7,7 @@ from scripts.utility import scale
 
 from .Screens import Screens
 
-from scripts.utility import generate_sprite, get_cluster, get_alive_kits, get_alive_cats, get_alive_apps, get_alive_meds, get_alive_mediators, get_alive_queens, get_alive_elders, get_alive_warriors
+from scripts.utility import generate_sprite, get_cluster, get_alive_kits, get_alive_cats, get_alive_apps, get_alive_meds, get_alive_mediators, get_alive_queens, get_alive_elders, get_alive_warriors, process_text
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 import pygame_gui
@@ -213,7 +213,7 @@ class TalkScreen(Screens):
                 self.profile_elements["cat_image"].show()
                 # self.textbox_graphic.hide()
             if "|r_c|" in self.texts[self.text_index] and not self.replaced_index[0]:
-                random_cat = self.find_cat_by_name(self.cat_dict["r_c"])
+                random_cat = self.cat_dict["r_c"]
                 self.profile_elements["cat_name"].kill()
                 self.profile_elements["cat_name"] = pygame_gui.elements.UITextBox(str(random_cat.name),
                                                                     scale(pygame.Rect((300, 870), (-1, 80))),
@@ -1229,6 +1229,8 @@ class TalkScreen(Screens):
             if text[i] == "":
                 return ""
         
+        text = process_text(text, self.cat_dict)
+        
         return text
 
     def get_living_cats(self):
@@ -1244,10 +1246,13 @@ class TalkScreen(Screens):
         COUNTER_LIM = 30
         you = game.clan.your_cat
 
-        # Crushes
         if "your_crush" in text:
             if "your_crush" in self.cat_dict:
-                text = text.replace("your_crush", self.cat_dict["your_crush"])
+                words = text.split()
+                for i, word in enumerate(words):
+                    if word == "your_crush" and (i == 0 or words[i-1][-1] != "{"):
+                        words[i] = str(self.cat_dict["your_crush"].name)
+                text = " ".join(words)
             else:
                 if len(you.mate) > 0 or you.no_mates:
                     return ""
@@ -1262,13 +1267,18 @@ class TalkScreen(Screens):
                         crush = c
                         break
                 if crush:
-                    self.cat_dict["your_crush"] = str(crush.name)
-                    text = text.replace("your_crush", self.cat_dict["your_crush"])
+                    self.cat_dict["your_crush"] = crush
+                    text = re.sub(r'(?<!\{)your_crush(?!\})', str(crush.name), text)
                 else:
                     return ""
+
         if "their_crush" in text:
             if "their_crush" in self.cat_dict:
-                text = text.replace("their_crush", self.cat_dict["their_crush"])
+                words = text.split()
+                for i, word in enumerate(words):
+                    if word == "their_crush" and (i == 0 or words[i-1][-1] != "{"):
+                        words[i] = str(self.cat_dict["their_crush"].name)
+                text = " ".join(words)
             else:
                 if len(cat.mate) > 0 or cat.no_mates:
                     return ""
@@ -1283,8 +1293,8 @@ class TalkScreen(Screens):
                         crush = c
                         break
                 if crush:
-                    self.cat_dict["their_crush"] = str(crush.name)
-                    text = text.replace("their_crush", self.cat_dict["their_crush"])
+                    self.cat_dict["their_crush"] = crush
+                    text = re.sub(r'(?<!\{)their_crush(?!\})', str(crush.name), text)
                 else:
                     return ""
 
@@ -1294,39 +1304,47 @@ class TalkScreen(Screens):
             r_c_str = f"r_c{i}"
             if r_c_str in text:
                 if r_c_str in self.cat_dict:
-                    text = text.replace(r_c_str, self.cat_dict[r_c_str])
+                    words = text.split()
+                    for j, word in enumerate(words):
+                        if word == r_c_str and (j == 0 or words[j-1][-1] != "{"):
+                            words[j] = str(self.cat_dict[r_c_str].name)
+                    text = " ".join(words)
                     continue
                 alive_cats = self.get_living_cats()
                 if len(alive_cats) < 3:
                     return ""
                 alive_cat = choice(alive_cats)
                 counter = 0
-                while alive_cat.ID == you.ID or alive_cat.ID == cat.ID or str(alive_cat.name) in list(self.cat_dict.values()):
+                while alive_cat.ID == you.ID or alive_cat.ID == cat.ID or alive_cat in list(self.cat_dict.values()):
                     alive_cat = choice(alive_cats)
-                    counter+=1
+                    counter += 1
                     if counter > COUNTER_LIM:
                         return ""
-                self.cat_dict[r_c_str] = str(alive_cat.name)
-                text = text.replace(r_c_str, self.cat_dict[r_c_str])
+                self.cat_dict[r_c_str] = alive_cat
+                text = re.sub(rf'(?<!\{{r_c_str}(?!\})', str(self.cat_dict[r_c_str].name), text)
 
             # Random warriors
             r_w_str = f"r_w{i}"
             if r_w_str in text:
                 if r_w_str in self.cat_dict:
-                    text = text.replace(r_w_str, self.cat_dict[r_w_str])
+                    words = text.split()
+                    for j, word in enumerate(words):
+                        if word == r_w_str and (j == 0 or words[j-1][-1] != "{"):
+                            words[j] = str(self.cat_dict[r_w_str].name)
+                    text = " ".join(words)
                     continue
                 alive_cats = get_alive_warriors(Cat)
                 if len(alive_cats) < 3:
                     return ""
                 alive_cat = choice(alive_cats)
                 counter = 0
-                while alive_cat.ID == you.ID or alive_cat.ID == cat.ID or str(alive_cat.name) in list(self.cat_dict.values()):
+                while alive_cat.ID == you.ID or alive_cat.ID == cat.ID or alive_cat in self.cat_dict.values():
                     alive_cat = choice(alive_cats)
-                    counter+=1
+                    counter += 1
                     if counter > COUNTER_LIM:
                         return ""
-                self.cat_dict[r_w_str] = str(alive_cat.name)
-                text = text.replace(r_w_str, self.cat_dict[r_w_str])
+                self.cat_dict[r_w_str] = alive_cat
+                text = re.sub(rf'(?<!\{{r_w_str}(?!\})', str(self.cat_dict[r_w_str].name), text)
 
         # Random cats who are potential mates 
         if "n_r1" in text:
@@ -1349,7 +1367,11 @@ class TalkScreen(Screens):
         # Random kit
         if "r_k" in text:
             if "r_k" in self.cat_dict:
-                text = text.replace("r_k", self.cat_dict["r_k"])
+                words = text.split()
+                for i, word in enumerate(words):
+                    if word == "r_k" and (i == 0 or words[i-1][-1] != "{"):
+                        words[i] = str(self.cat_dict["r_k"].name)
+                text = " ".join(words)
             else:
                 alive_kits = get_alive_kits(Cat)
                 if len(alive_kits) <= 1:
@@ -1357,17 +1379,17 @@ class TalkScreen(Screens):
                 alive_kit = choice(alive_kits)
                 counter = 0
                 while alive_kit.ID == you.ID or alive_kit.ID == cat.ID:
-                    counter+=1
-                    if counter==30:
+                    counter += 1
+                    if counter == 30:
                         return ""
                     alive_kit = choice(alive_kits)
-                self.cat_dict["r_k"] = str(alive_kit.name)
-                text = text.replace("r_k", str(alive_kit.name))
+                self.cat_dict["r_k"] = alive_kit
+                text = re.sub(r'(?<!\{)r_k(?!\})', str(alive_kit.name), text)
         
         # Random warrior apprentice
         if "r_a" in text:
             if "r_a" in self.cat_dict:
-                text = text.replace("r_a", self.cat_dict["r_a"])
+                text = text.replace("r_a", str(self.cat_dict["r_a"].name))
             else:
                 alive_apps = get_alive_apps(Cat)
                 if len(alive_apps) <= 1:
@@ -1379,13 +1401,13 @@ class TalkScreen(Screens):
                     if counter == 30:
                         return ""
                     alive_app = choice(alive_apps)
-                self.cat_dict["r_a"] = str(alive_app.name)
+                self.cat_dict["r_a"] = alive_app
                 text = text.replace("r_a", str(alive_app.name))
         
         # Random warrior
         if "r_w" in text:
             if "r_w" in self.cat_dict:
-                text = text.replace("r_w", self.cat_dict["r_w"])
+                text = text.replace("r_w", str(self.cat_dict["r_w"].name))
             else:
                 alive_apps = get_alive_warriors(Cat)
                 if len(alive_apps) <= 1:
@@ -1397,13 +1419,13 @@ class TalkScreen(Screens):
                     if counter == 30:
                         return ""
                     alive_app = choice(alive_apps)
-                self.cat_dict["r_w"] = str(alive_app.name)
+                self.cat_dict["r_w"] = alive_app
                 text = text.replace("r_w", str(alive_app.name))
         
         # Random medicine cat or medicine cat apprentice
         if "r_m" in text:
             if "r_m" in self.cat_dict:
-                text = text.replace("r_m", self.cat_dict["r_m"])
+                text = text.replace("r_m", str(self.cat_dict["r_m"].name))
             else:
                 alive_apps = get_alive_meds(Cat)
                 if len(alive_apps) <= 1:
@@ -1416,12 +1438,12 @@ class TalkScreen(Screens):
                         return ""
                     alive_app = choice(alive_apps)
                 text = text.replace("r_m", str(alive_app.name))
-                self.cat_dict["r_m"] = str(alive_app.name)
+                self.cat_dict["r_m"] = alive_app
             
         # Random mediator or mediator apprentice
         if "r_d" in text:
             if "r_d" in self.cat_dict:
-                text = text.replace("r_d", self.cat_dict["r_d"])
+                text = text.replace("r_d", str(self.cat_dict["r_d"].name))
             else:
                 alive_apps = get_alive_mediators(Cat)
                 if len(alive_apps) <= 1:
@@ -1434,12 +1456,12 @@ class TalkScreen(Screens):
                         return ""
                     alive_app = choice(alive_apps)
                 text = text.replace("r_d", str(alive_app.name))
-                self.cat_dict["r_d"] = str(alive_app.name)
+                self.cat_dict["r_d"] = alive_app
 
         # Random queen or queen's apprentice
         if "r_q" in text:
             if "r_q" in self.cat_dict:
-                text = text.replace("r_q", self.cat_dict["r_q"])
+                text = text.replace("r_q", str(self.cat_dict["r_q"].name))
             else:
                 alive_apps = get_alive_queens(Cat)
                 if len(alive_apps) <= 1:
@@ -1452,12 +1474,12 @@ class TalkScreen(Screens):
                         return ""
                     alive_app = choice(alive_apps)
                 text = text.replace("r_q", str(alive_app.name))
-                self.cat_dict["r_q"] = str(alive_app.name)
+                self.cat_dict["r_q"] = alive_app
             
         # Random elder
         if "r_e" in text:
             if "r_e" in self.cat_dict:
-                text = text.replace("r_e", self.cat_dict["r_e"])
+                text = text.replace("r_e", str(self.cat_dict["r_e"].name))
             else:
                 alive_apps = get_alive_elders(Cat)
                 if len(alive_apps) <= 1:
@@ -1470,12 +1492,12 @@ class TalkScreen(Screens):
                     if counter==30:
                         return ""
                 text = text.replace("r_e", str(alive_app.name))
-                self.cat_dict["r_e"] = str(alive_app.name)
+                self.cat_dict["r_e"] = alive_app
         
         # Random sick cat
         if "r_s" in text:
             if "r_s" in self.cat_dict:
-                text = text.replace("r_s", self.cat_dict["r_s"])
+                text = text.replace("r_s", str(self.cat_dict["r_s"].name))
             else:
                 alive_apps = get_alive_cats(Cat)
                 if len(alive_apps) <= 1:
@@ -1488,12 +1510,12 @@ class TalkScreen(Screens):
                     if counter == 30:
                         return ""
                 text = text.replace("r_s", str(alive_app.name))
-                self.cat_dict["r_s"] = str(alive_app.name)
+                self.cat_dict["r_s"] = alive_app
         
         # Random injured cat
         if "r_i" in text:
             if "r_i" in self.cat_dict:
-                text = text.replace("r_i", self.cat_dict["r_i"])
+                text = text.replace("r_i", str(self.cat_dict["r_i"].name))
             else:
                 alive_apps = get_alive_cats(Cat)
                 if len(alive_apps) <= 1:
@@ -1506,14 +1528,14 @@ class TalkScreen(Screens):
                     if counter == 30:
                         return ""
                 text = text.replace("r_i", str(alive_app.name))
-                self.cat_dict["r_i"] = str(alive_app.name)
+                self.cat_dict["r_i"] = alive_app
         
         # Your sibling
         if "y_s" in text or "y_l" in text:
             if "y_s" in self.cat_dict:
-                text = text.replace("y_s", self.cat_dict["y_s"])
+                text = text.replace("y_s", str(self.cat_dict["y_s"].name))
             if "y_l" in self.cat_dict:
-                text = text.replace("y_l", self.cat_dict["y_l"])
+                text = text.replace("y_l", str(self.cat_dict["y_l"].name))
             if "y_s" not in self.cat_dict or "y_l" not in self.cat_dict:
                 if len(you.inheritance.get_siblings()) == 0:
                     return ""
@@ -1525,17 +1547,17 @@ class TalkScreen(Screens):
                         return ""
                     sibling = Cat.fetch_cat(choice(you.inheritance.get_siblings()))
                 if sibling.moons == you.moons:
-                    self.cat_dict["y_s"] = str(sibling.name)
+                    self.cat_dict["y_s"] = sibling
                     text = text.replace("y_l", str(sibling.name))
-                self.cat_dict["y_l"] = str(sibling.name)
+                self.cat_dict["y_l"] = sibling
                 text = text.replace("y_s", str(sibling.name))
 
         # Their sibling
         if "t_s" in text or "t_l" in text:
             if "t_s" in self.cat_dict:
-                text = text.replace("t_s", self.cat_dict["t_s"])
+                text = text.replace("t_s", str(self.cat_dict["t_s"].name))
             if "t_l" in self.cat_dict:
-                text = text.replace("t_l", self.cat_dict["t_l"])
+                text = text.replace("t_l", str(self.cat_dict["t_l"].name))
             if "t_s" not in self.cat_dict or "t_l" not in self.cat_dict:
                 if len(cat.inheritance.get_siblings()) == 0:
                     return ""
@@ -1547,41 +1569,41 @@ class TalkScreen(Screens):
                         return ""
                     sibling = Cat.fetch_cat(choice(cat.inheritance.get_siblings()))
                 if sibling.moons == cat.moons:
-                    self.cat_dict["t_s"] = str(sibling.name)
+                    self.cat_dict["t_s"] = sibling
                     text = text.replace("t_l", str(sibling.name))
-                self.cat_dict["t_l"] = str(sibling.name)
+                self.cat_dict["t_l"] = sibling
                 text = text.replace("t_s", str(sibling.name))
 
         # Your apprentice
         if "y_a" in text:
             if "y_a" in self.cat_dict:
-                text = text.replace("y_a", self.cat_dict["y_a"])
+                text = text.replace("y_a", str(self.cat_dict["y_a"].name))
             else:
                 if len(you.apprentice) == 0:
                     return ""
                 your_app = Cat.fetch_cat(choice(you.apprentice))
                 if your_app.ID == cat.ID:
                     return ""
-                self.cat_dict["y_a"] = str(your_app.name)
-                text = text.replace("y_a", self.cat_dict["y_a"])
+                self.cat_dict["y_a"] = your_app
+                text = text.replace("y_a", str(your_app.name))
 
         # Their apprentice
         if "t_a" in text:
             if "t_a" in self.cat_dict:
-                text = text.replace("t_a", self.cat_dict["t_a"])
+                text = text.replace("t_a", str(self.cat_dict["t_a"].name))
             else:
                 if len(cat.apprentice) == 0:
                     return ""
                 their_app = Cat.fetch_cat(choice(cat.apprentice))
                 if their_app.ID == you.ID:
                     return ""
-                self.cat_dict["t_a"] = str(their_app.name)
-                text = text.replace("t_a", self.cat_dict["t_a"])
+                self.cat_dict["t_a"] = their_app
+                text = text.replace("t_a", str(their_app.name))
 
         # Your parent
         if "y_p" in text:
             if "y_p" in self.cat_dict:
-                text = text.replace("y_p", self.cat_dict["y_p"])
+                text = text.replace("y_p", str(self.cat_dict["y_p"].name))
             else:
                 try:
                     parent = Cat.fetch_cat(choice(you.inheritance.get_parents()))
@@ -1589,18 +1611,18 @@ class TalkScreen(Screens):
                     return ""
                 if len(you.inheritance.get_parents()) == 0 or parent.outside or parent.dead or parent.ID == cat.ID:
                     return ""
-                self.cat_dict["y_p"] = str(parent.name)
+                self.cat_dict["y_p"] = parent
                 text = text.replace("y_p", str(parent.name))
 
 
         # Their parent
         if "t_p_positive" in text or "t_p_negative" in text or "t_p" in text:
             if "t_p_positive" in self.cat_dict:
-                text = text.replace("t_p_positive", self.cat_dict["t_p_positive"])
+                text = text.replace("t_p_positive", str(self.cat_dict["t_p_positive"].name))
             if "t_p_negative" in self.cat_dict:
-                text = text.replace("t_p_negative", self.cat_dict["t_p_negative"])
+                text = text.replace("t_p_negative", str(self.cat_dict["t_p_negative"].name))
             if "t_p" in self.cat_dict:
-                text = text.replace("t_p", self.cat_dict["t_p"])
+                text = text.replace("t_p", str(self.cat_dict["t_p"].name))
             if "t_p_positive" not in self.cat_dict or "t_p_negative" not in self.cat_dict or "t_p" not in self.cat_dict:
                 if len(cat.inheritance.get_parents()) == 0:
                     return ""
@@ -1612,113 +1634,113 @@ class TalkScreen(Screens):
                         return ""
                     parent = Cat.fetch_cat(choice(cat.inheritance.get_parents()))
                 if parent.relationships and cat.ID in parent.relationships and parent.relationships[cat.ID].dislike > 10 and "t_p_negative" in text:
-                    self.cat_dict["t_p_negative"] = str(parent.name)
+                    self.cat_dict["t_p_negative"] = parent
                     text = text.replace("t_p_negative", str(parent.name))
                 else:
                     return ""
                 if parent.relationships and cat.ID in parent.relationships and parent.relationships[cat.ID].platonic_like > 10 and "t_p_positive" in text:
-                    self.cat_dict["t_p_positive"] = str(parent.name)
+                    self.cat_dict["t_p_positive"] = parent
                     text = text.replace("t_p_positive", str(parent.name))
                 else:
                     return ""
-                self.cat_dict["t_p"] = str(parent.name)
+                self.cat_dict["t_p"] = parent
                 text = text.replace("t_p", str(parent.name))
         
         # Your mate
         if "y_m" in text:
             if "y_m" in self.cat_dict:
-                text = text.replace("y_m", self.cat_dict["y_m"])
+                text = text.replace("y_m", str(self.cat_dict["y_m"].name))
             else:
                 if you.mate is None or len(you.mate) == 0 or cat.ID in you.mate:
                     return ""
                 mate = Cat.fetch_cat(choice(you.mate))
                 if mate.dead or mate.outside:
                     return ""
-                self.cat_dict["y_m"] = str(mate.name)
+                self.cat_dict["y_m"] = mate
                 text = text.replace("y_m", str(mate.name))
     
         # Their mate
         if "t_m" in text:
             if "t_m" in self.cat_dict:
-                text = text.replace("t_m", self.cat_dict["t_m"])
+                text = text.replace("t_m", str(self.cat_dict["t_m"].name))
             else:
                 if cat.mate is None or len(cat.mate) == 0 or cat.ID in you.mate:
                     return ""
                 mate1 = Cat.fetch_cat(choice(cat.mate))
                 if mate1.outside or mate1.dead:
                     return ""
-                self.cat_dict["t_m"] = str(mate1.name)
+                self.cat_dict["t_m"] = mate1
                 text = text.replace("t_m", str(mate1.name))
 
         # Their adult kit
         if "t_ka" in text:
             if "t_ka" in self.cat_dict:
-                text = text.replace("t_ka", self.cat_dict["t_ka"])
+                text = text.replace("t_ka", str(self.cat_dict["t_ka"].name))
             else:
                 if cat.inheritance.get_children() is None or len(cat.inheritance.get_children()) == 0:
                     return ""
                 kit = Cat.fetch_cat(choice(cat.inheritance.get_children()))
                 if kit.moons < 12 or kit.outside or kit.dead or kit.ID == you.ID:
                     return ""
-                self.cat_dict["t_ka"] = str(kit.name)
+                self.cat_dict["t_ka"] = kit
                 text = text.replace("t_ka", str(kit.name))
 
         # Their kitten kit
         if "t_kk" in text:
             if "t_kk" in self.cat_dict:
-                text = text.replace("t_kk", self.cat_dict["t_kk"])
+                text = text.replace("t_kk", str(self.cat_dict["t_kk"].name))
             else:
                 if cat.inheritance.get_children() is None or len(cat.inheritance.get_children()) == 0:
                     return ""
                 kit = Cat.fetch_cat(choice(cat.inheritance.get_children()))
                 if kit.moons >= 6 or kit.outside or kit.dead or kit.ID == you.ID:
                     return ""
-                self.cat_dict["t_kk"] = str(kit.name)
+                self.cat_dict["t_kk"] = kit
                 text = text.replace("t_kk", str(kit.name))
 
         # Their kit
         if "t_k" in text:
             if "t_k" in self.cat_dict:
-                text = text.replace("t_k", self.cat_dict["t_k"])
+                text = text.replace("t_k", str(self.cat_dict["t_k"].name))
             else:
                 if cat.inheritance.get_children() is None or len(cat.inheritance.get_children()) == 0:
                     return ""
                 kit = Cat.fetch_cat(choice(cat.inheritance.get_children()))
                 if kit.outside or kit.dead or kit.ID == you.ID:
                     return ""
-                self.cat_dict["t_k"] = str(kit.name)
+                self.cat_dict["t_k"] = kit
                 text = text.replace("t_k", str(kit.name))
 
         # Your kit
         if "y_k" in text:
             if "y_k" in self.cat_dict:
-                text = text.replace("y_k", self.cat_dict["y_k"])
+                text = text.replace("y_k", str(self.cat_dict["y_k"].name))
             else:
                 if you.inheritance.get_children() is None or len(you.inheritance.get_children()) == 0:
                     return ""
                 kit = Cat.fetch_cat(choice(you.inheritance.get_children()))
                 if kit.outside or kit.dead or kit.ID == cat.ID:
                     return ""
-                self.cat_dict["y_k"] = str(kit.name)
+                self.cat_dict["y_k"] = kit
                 text = text.replace("y_k", str(kit.name))
 
         # Your kit-- kitten age
         if "y_kk" in text:
             if "y_kk" in self.cat_dict:
-                text = text.replace("y_kk", self.cat_dict["y_kk"])
+                text = text.replace("y_kk", str(self.cat_dict["y_kk"].name))
             else:
                 if you.inheritance.get_children() is None or len(you.inheritance.get_children()) == 0:
                     return ""
                 kit = Cat.fetch_cat(choice(you.inheritance.get_children()))
                 if kit.moons >= 6 or kit.outside or kit.dead or kit.ID == cat.ID:
                     return ""
-                self.cat_dict["y_kk"] = str(kit.name)
+                self.cat_dict["y_kk"] = kit
                 text = text.replace("y_kk", str(kit.name))
 
         # Random cat
         if "r_c" in text:
             if "r_c" in self.cat_dict:
-                text = re.sub(r'(?<!\|)r_c(?!\|)', self.cat_dict["r_c"], text)
+                text = re.sub(r'(?<!\|)r_c(?!\|)', str(self.cat_dict["r_c"].name), text)
             else:
                 random_cat = choice(self.get_living_cats())
                 counter = 0
@@ -1727,18 +1749,18 @@ class TalkScreen(Screens):
                         return ""
                     random_cat = choice(self.get_living_cats())
                     counter +=1
-                self.cat_dict["r_c"] = str(random_cat.name)
+                self.cat_dict["r_c"] = random_cat
                 text = re.sub(r'(?<!\|)r_c(?!\|)', str(random_cat.name), text)
         
         # Other Clan
         if "o_c" in text:
             if "o_c" in self.cat_dict:
-                text = text.replace("o_c", self.cat_dict["o_c"])
+                text = text.replace("o_c", str(self.cat_dict["o_c"].name))
             else:
                 other_clan = choice(game.clan.all_clans)
                 if not other_clan:
                     return ""
-                self.cat_dict["o_c"] = str(other_clan.name)
+                self.cat_dict["o_c"] = other_clan
                 text = text.replace("o_c", str(other_clan.name))
 
         # Your DF Mentor
@@ -1801,13 +1823,13 @@ class TalkScreen(Screens):
         
         if "d_c" in text:
             if "d_c" in self.cat_dict:
-                text = text.replace("d_c", self.cat_dict["d_c"])
+                text = text.replace("d_c", str(self.cat_dict["d_c"].name))
             else:
                 try:
                     dead_cat = Cat.all_cats.get(game.clan.starclan_cats[-1])
                     if not dead_cat:
                         return ""
-                    self.cat_dict["d_c"] = str(dead_cat.name)
+                    self.cat_dict["d_c"] = dead_cat
                     text = text.replace("d_c", str(dead_cat.name))
                 except:
                     return ""
@@ -1952,12 +1974,4 @@ class TalkScreen(Screens):
             return "clanfounder"
         return bs_display
     
-    def find_cat_by_name(self, name):
-        # Get rid of this because its horrible
-        # replace cat_dict with Cat objects not names
-        for cat in Cat.all_cats_list:
-            if str(cat.name) == name:
-                return cat
-        return None
-
 
