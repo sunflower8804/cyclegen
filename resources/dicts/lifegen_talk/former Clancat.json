@@ -56,9 +56,9 @@
             "no_kit"
         ],
         [
-            "[t_c butts their ghostly head against yours.]",
-            "[You can't tell if being able to see them as a ghost makes you more happy or sad.]",
-            "[Their pelt is translucent, lacking any colour or feeling...]",
+            "[t_c butts {PRONOUN/t_c/poss} ghostly head against yours.]",
+            "[You can't tell if being able to see {PRONOUN/t_c/object} as a ghost makes you more happy or sad.]",
+            "[{PRONOUN/t_c/poss/CAP} pelt is translucent, lacking any colour or feeling...]",
             "[You miss the living t_c. So, so much.]"
         ]
     ],
