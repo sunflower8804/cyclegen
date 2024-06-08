@@ -60,11 +60,12 @@ class TalkScreen(Screens):
         self.textbox_graphic = None
         self.cat_dict = {}
         self.replaced_index = (False, 0)
-
+        self.other_dict = {}
 
     def screen_switches(self):
         self.the_cat = Cat.all_cats.get(game.switches['cat'])
         self.cat_dict.clear()
+        self.other_dict.clear()
         self.update_camp_bg()
         self.hide_menu_buttons()
         self.text_index = 0
@@ -1332,9 +1333,12 @@ class TalkScreen(Screens):
                     if counter > COUNTER_LIM:
                         return ""
                 self.cat_dict[r_c_str] = alive_cat
-                text = re.sub(r'(?<!\/)r_c1(?!\/)', str(alive_cat.name), text)
-                text = re.sub(r'(?<!\/)r_c2(?!\/)', str(alive_cat.name), text)
-                text = re.sub(r'(?<!\/)r_c3(?!\/)', str(alive_cat.name), text)
+                if i == 1:
+                    text = re.sub(r'(?<!\/)r_c1(?!\/)', str(alive_cat.name), text)
+                elif i == 2:
+                    text = re.sub(r'(?<!\/)r_c2(?!\/)', str(alive_cat.name), text)
+                elif i == 3:
+                    text = re.sub(r'(?<!\/)r_c3(?!\/)', str(alive_cat.name), text)
             # Random warriors
             r_w_str = f"r_w{i}"
             if r_w_str in text:
@@ -1356,9 +1360,12 @@ class TalkScreen(Screens):
                     if counter > COUNTER_LIM:
                         return ""
                 self.cat_dict[r_w_str] = alive_cat
-                text = re.sub(r'(?<!\/)r_w1(?!\/)', str(alive_cat.name), text)
-                text = re.sub(r'(?<!\/)r_w2(?!\/)', str(alive_cat.name), text)
-                text = re.sub(r'(?<!\/)r_w3(?!\/)', str(alive_cat.name), text)
+                if i == 1:
+                    text = re.sub(r'(?<!\/)r_w1(?!\/)', str(alive_cat.name), text)
+                elif i == 2:
+                    text = re.sub(r'(?<!\/)r_w2(?!\/)', str(alive_cat.name), text)
+                elif i == 3:
+                    text = re.sub(r'(?<!\/)r_w3(?!\/)', str(alive_cat.name), text)
 
         # Random cats who are potential mates 
         if "n_r1" in text:
@@ -1799,21 +1806,17 @@ class TalkScreen(Screens):
                     random_cat = choice(self.get_living_cats())
                     counter += 1
                 self.cat_dict["r_c"] = random_cat
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_c" and (i == 0 or words[i-1][-1] not in ["{", "|"]):
-                        words[i] = str(random_cat.name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_c(?!\/)', str(random_cat.name), text)
 
         # Other Clan
         if "o_c" in text:
-            if "o_c" in self.cat_dict:
-                text = re.sub(r'(?<!\/)o_c(?!\/)', str(self.cat_dict["o_c"].name), text)
+            if "o_c" in self.other_dict:
+                text = re.sub(r'(?<!\/)o_c(?!\/)', str(self.other_dict["o_c"].name), text)
             else:
                 other_clan = choice(game.clan.all_clans)
                 if not other_clan:
                     return ""
-                self.cat_dict["o_c"] = other_clan
+                self.other_dict["o_c"] = other_clan
                 text = re.sub(r'(?<!\/)o_c(?!\/)', str(other_clan.name), text)
 
         # Your DF Mentor
@@ -1856,6 +1859,7 @@ class TalkScreen(Screens):
                 return ""
             text = text.replace("l_n", str(game.clan.leader.name))
             self.cat_dict["l_n"] = game.clan.leader
+            text = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.leader.name), text)
 
         # Deputy's name
         if "d_n" in text:
@@ -1865,6 +1869,7 @@ class TalkScreen(Screens):
                 return ""
             text = text.replace("d_n", str(game.clan.deputy.name))
             self.cat_dict["d_n"] = game.clan.deputy
+            text = re.sub(r'(?<!\/)d_n(?!\/)', str(game.clan.deputy.name), text)
 
         # d_c is the cat you/they are grieving
         if "grief stricken" in cat.illnesses:
@@ -1875,6 +1880,7 @@ class TalkScreen(Screens):
                     if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
                         words[i] = str(dead_cat.name)
                 text = " ".join(words)
+                text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
                 self.cat_dict["d_c"] = dead_cat
             except:
                 return ""
@@ -1886,6 +1892,7 @@ class TalkScreen(Screens):
                     if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
                         words[i] = str(dead_cat.name)
                 text = " ".join(words)
+                text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
                 self.cat_dict["d_c"] = dead_cat
             except:
                 return ""
@@ -1897,6 +1904,7 @@ class TalkScreen(Screens):
                     if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
                         words[i] = str(self.cat_dict["d_c"].name)
                 text = " ".join(words)
+                text = re.sub(r'(?<!\/)d_c(?!\/)', str(self.cat_dict["d_c"].name), text)
             else:
                 try:
                     dead_cat = Cat.all_cats.get(game.clan.starclan_cats[-1])
@@ -1908,6 +1916,7 @@ class TalkScreen(Screens):
                         if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
                             words[i] = str(dead_cat.name)
                     text = " ".join(words)
+                    text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
                 except:
                     return ""
         
