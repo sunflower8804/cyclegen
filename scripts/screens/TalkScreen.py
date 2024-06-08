@@ -60,11 +60,12 @@ class TalkScreen(Screens):
         self.textbox_graphic = None
         self.cat_dict = {}
         self.replaced_index = (False, 0)
-
+        self.other_dict = {}
 
     def screen_switches(self):
         self.the_cat = Cat.all_cats.get(game.switches['cat'])
         self.cat_dict.clear()
+        self.other_dict.clear()
         self.update_camp_bg()
         self.hide_menu_buttons()
         self.text_index = 0
@@ -1813,13 +1814,13 @@ class TalkScreen(Screens):
 
         # Other Clan
         if "o_c" in text:
-            if "o_c" in self.cat_dict:
-                text = re.sub(r'(?<!\/)o_c(?!\/)', str(self.cat_dict["o_c"].name), text)
+            if "o_c" in self.other_dict:
+                text = re.sub(r'(?<!\/)o_c(?!\/)', str(self.other_dict["o_c"].name), text)
             else:
                 other_clan = choice(game.clan.all_clans)
                 if not other_clan:
                     return ""
-                self.cat_dict["o_c"] = other_clan
+                self.other_dict["o_c"] = other_clan
                 text = re.sub(r'(?<!\/)o_c(?!\/)', str(other_clan.name), text)
 
         # Your DF Mentor
