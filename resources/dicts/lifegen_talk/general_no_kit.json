@@ -2106,9 +2106,9 @@
             "Any",
             "introspective",
             "you_outsiderroots",
-            "you_formerlykittypet",
-            "you_formerlyloner",
-            "you_formerlyrogue",
+            "you_formerlyakittypet",
+            "you_formerlyaloner",
+            "you_formerlyarogue",
             "they_Clanfounder",
             "they_Clanborn",
             "they_half-Clan",
@@ -8609,7 +8609,7 @@
             "Introspective",
             "calm",
             "gloomy",
-            "murder"
+            "they_shunned"
         ],
         [
             "[As you approach t_c, {PRONOUN/t_c/subject} {VERB/t_c/stare/stares} at you with tired and embittered eyes.]",
@@ -16554,7 +16554,6 @@
     "Living_strange_H2": [
         [
             "strange",
-            "they_living",
             "you_df",
             "no_kit",
             "any"

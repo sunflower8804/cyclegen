@@ -1824,7 +1824,6 @@ class TalkScreen(Screens):
             if you.joined_df and not you.dead and you.df_mentor and cat.ID != you.df_mentor:
                 self.cat_dict["df_m_n"] = Cat.all_cats.get(you.df_mentor)
                 text = re.sub(r'(?<!\/)df_m_n(?!\/)', str(Cat.all_cats.get(you.df_mentor).name), text)
-
             else:
                 return ""
             
