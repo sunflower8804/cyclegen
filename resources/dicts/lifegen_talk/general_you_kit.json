@@ -233,7 +233,7 @@
             "Stop right there, Clan cat! Where do you think you're going? I, leader of the rogues, will stop you! Muahahaha!",
             "Wait, stop! What are you doing? AHHH!!!!",
             "Too ... powerful ... bleeegh!",
-            "[t_c flops over on the ground dramatically. You clamber up onto their body and tug on their ears, giggling hysterically.]"
+            "[t_c flops over on the ground dramatically. You clamber up onto {PRONOUN/t_c/poss} body and tug on {PRONOUN/t_c/poss} ears, giggling hysterically.]"
         ]
     ],
     "upstanding_general1": [
@@ -781,26 +781,6 @@
             "Hm? You ... want me to give your tips on your hunting crouch?",
             "Tch, you're too young for all that. Try not to take life so seriously. You'll have plenty of time to worry about hunting when you're an apprentice.",
             "Until then, just try to enjoy your kithood."
-        ]
-    ],
-    "assertive_parent3_2": [
-        [
-            "kitten",
-            "assertive",
-            "platonic_like",
-            "from_parent",
-            "silly",
-            "sweet",
-            "stable",
-            "unabashed"
-        ],
-        [
-            "What's that, y_c? You wanna play? Sure! You can be the leader, and I'll be the rogue.",
-            "Ahem ...",
-            "Stop right there, Clan cat! Where do you think you're going? I, leader of the rogues, will stop you! Muahahaha!",
-            "Wait, stop! What are you doing? AHHH!!!!",
-            "Too ... powerful ... bleeegh!",
-            "[t_c flops over on the ground dramatically. You clamber up onto {PRONOUN/t_c/poss} body and tug on {PRONOUN/t_c/poss} ears, giggling hysterically.]"
         ]
     ],
     "assertive_parent4_2": [
