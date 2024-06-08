@@ -67,7 +67,7 @@
             "Um, um...",
             "[t_c glances around quickly as you approach.]",
             "r_q!",
-            "[At t_c's call, a queen rushes from the nursery and scoops the little kit up, flashing you a dirty look as they head back inside.]",
+            "[At t_c's call, a queen rushes from the nursery and scoops the little kit up, flashing you a dirty look as {PRONOUN/r_q/subject} {VERB/t_c/head/heads} back inside.]",
             "[You just wanted to speak with somecat who didn't understand the situation, but it seems there are none.]"
         ]
     ],
@@ -118,7 +118,7 @@
             "y_c, help! I'm playing hide and seek with my den mates, and I need to hide, quick!",
             "Yes, I know that there are some really good hiding spots over by the medicine den, but, erm, I'm kind of not allowed over there after the incident a few days ago.",
             "Hey, don't you get started on me as well! I didn't know that those brightly colored plants that I used for hunting practice were marigolds! And how was I supposed to know that the cobwebs were supposed to be stacked up like that?",
-            "If you tell me, I actually did the medicine cat a favor! That den looked like it needed to be reorganized anyways, so I gave them a reason to! They didn't seem to appreciate my work though..",
+            "If you tell me, I actually did r_m a favor! That den looked like it needed to be reorganized anyways, so I gave {PRONOUN/r_m/object} a reason to! {PRONOUN/r_m/subject/CAP} didn't seem to appreciate my work though..",
             "Uh oh. I think I'm running out of time to hide. I gotta go! I'll see you later y_c, maybe you can tell me another story later!"
         ]
     ],
@@ -365,7 +365,7 @@
         [
             "y_c, y_c, come quick! r_c is hurt!!!",
             "[You rush out into the clearing to discover the supposedly injured cat lazing on a rock, perfectly fine.]",
-            "[When you confront t_c about it, they look away guiltily].",
+            "[When you confront t_c about it, {PRONOUN/t_c/subject} {VERB/t_c/look/looks} away guiltily].",
             "Er ... It was just part of a game of pretend I was playing!",
             "[You let {PRONOUN/t_c/object} off with a stern warning to only come find you if it's a real emergency.]"
         ]
@@ -665,7 +665,7 @@
             "I'm gonna catch you! Hahaha!",
             "[While you and t_c are playing, you accidentally trip and destroy half of the nest, moss and feathers flying everywhere.]",
             "...",
-            "... Okay, what are we gonna tell y_p when they get back?",
+            "... Okay, what are we gonna tell y_p when {PRONOUN/y_p/subject} {VERB/y_p/get/gets} back?",
             "[The two of you spend several minutes devising an elaborate story where a bird flew into the nursery and destroyed the nest.]",
             "[y_p doesn't buy it at all, but it was still a nice experience working together with your {PRONOUN/t_c/sibling}.]"
         ]
@@ -893,7 +893,7 @@
         ],
         [
             "y_c!! Hiii!! I have a question for you, if you don't mind answering?",
-            "I worked really hard and weaved flowers into r_c's nest, but I'm worried they won't like it! I don't wanna make them sad...",
+            "I worked really hard and weaved flowers into r_c's nest, but I'm worried {PRONOUN/r_c/subject} won't like it! I don't wanna make {PRONOUN/r_c/object} sad...",
             "Can you take a look at it?? I don't mind undoing it all if it makes them happier!"
         ]
     ],
@@ -906,7 +906,7 @@
             "[t_c doesn't seem to notice you at first, sniffling quietly]",
             "O-Oh! y_c! Um... I didn't want you to see me like this..",
             "I'm sorry- I just... r_c stepped on a poor little bug, and I feel so bad for it!! And then I burst out into tears in front of everyone and now I'm super embarrassed..",
-            "I hope they apologize to the poor little guy."
+            "I hope {PRONOUN/r_c/subject} {VERB/r_c/apolose/apologises} to the poor little guy."
         ]
     ],
     "sweet_kit_3": [
@@ -1191,7 +1191,7 @@
         ],
         [
             "Heya y_c! ... I have a small question.",
-            "I hear other cats complain about the thought of being stuck in the Elder's Den, and that they wouldn't retire until their legs couldn't move anymore.. But... Am I weird for not agreeing?",
+            "I hear other cats complain about the thought of being stuck in the elder's den, and that they wouldn't retire until their legs couldn't move anymore.. But... Am I weird for not agreeing?",
             "I just really like the idea of telling everyone stories and giving them guidance and flowers! That's pretty much what I do anyway, hehe.",
             "Plus, then I'd be denmates with you, and you're the coolest elder ever!"
         ]
@@ -1502,9 +1502,9 @@
             "they_injured"
         ],
         [
-            "[You butt your tiny little nose into the medicine den, where you see t_c sitting up, completely unbothered, on a broken nest formerly made from intricately woven sticks. It seems as though some of them have been pulled out and laid on the floor to play sticks with the medicine cat.]",
+            "[You butt your tiny little nose into the medicine den, where you see t_c sitting up, completely unbothered, on a broken nest formerly made from intricately woven sticks. It seems as though some of them have been pulled out and laid on the floor to play sticks with r_m.]",
             "Oh-my-gosh! Hi, y_c! I haven't seen you since, woah.. One, two, three, four hours ago? That's, oh my goodness... That's the first time I ever counted that high! Oh, I wanna go climb stuff with you so bad...",
-            "[The medicine cat gives t_c a tentative but affectionate look, as if to say 'Not again!' They lean down and whisper something in t_c's ear.]",
+            "[The medicine cat gives t_c a tentative but affectionate look, as if to say 'Not again!' {PRONOUN/r_m/subject/CAP} {VERB/t_c/lean/leans} down and {VERB/t_c/whisper/whispers} something in t_c's ear.]",
             "Oh, they said that's not a good idea. Awh, okay...",
             "Well, wanna play sticks with us instead?"
         ]
@@ -3010,10 +3010,10 @@
             "sweet"
         ],
         [
-            "y_c, I made a friend! {PRONOUN/d_c/subject}{VERB/d_c/'re/'s}super cool and helped me help so many cats!",
+            "y_c, I made a friend! {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} super cool and helped me help so many cats!",
             "{PRONOUN/d_c/subject/CAP}{VERB/d_c/'ve/'s} got a really shiny pelt, and {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} seethrough! Isn't that cool?",
             "You wanna know {PRONOUN/d_c/poss} name?",
-            "Well, they said {PRONOUN/d_c/poss} name was d_c!"
+            "Well, {PRONOUN/d_c/subject} said {PRONOUN/d_c/poss} name was d_c!"
         ]
     ],
     "sweet_kit_33": [
@@ -3703,7 +3703,7 @@
         ],
         [
             "[You feel sad to see a kit in the Dark Forest.]",
-            "[But as you notice the zeal with which they tear up the grass around them, you start to realise why {PRONOUN/t_c/subject} might be here.]"
+            "[But as you notice the zeal with which {PRONOUN/t_c/subject} {VERB/t_c/tear/tears} up the grass around {PRONOUN/t_c/object}, you start to realise why {PRONOUN/t_c/subject} might be here.]"
         ]
     ],
     "sc_kit_kit_littermates": [
@@ -3878,7 +3878,7 @@
             "any"
         ],
         [
-            "[t_c runs away when they see you.]"
+            "[t_c runs away when {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you.]"
         ]
     ],
     "dfkit2": [
@@ -3900,7 +3900,7 @@
             "any"
         ],
         [
-            "[t_c runs away when they see you.]"
+            "[t_c runs away when {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you.]"
         ]
     ],
     "dfkit4": [
@@ -4865,7 +4865,7 @@
         ],
         [
             "Aah!",
-            "[t_c turns to run as soon as they see you.]"
+            "[t_c turns to run as soon as {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you.]"
         ]
     ],
     "they_ur_J10": [
@@ -5347,8 +5347,8 @@
             "any"
         ],
         [
-            "I'm sorry they had to come to StarClan so soon.",
-            "But you can talk to us, can't you? Go find them, it'll be like they never left!",
+            "I'm sorry {PRONOUN/d_c/subject} had to come to StarClan so soon.",
+            "But you can talk to us, can't you? Go find them, it'll be like {PRONOUN/d_c/subject} never left!",
             "[You don't know how to explain that it's not the same.]"
         ]
     ],
