@@ -1190,6 +1190,7 @@ class PatrolOutcome():
                 stddev = (145 - 3) / 6 
                 age = int(random.gauss(mean, stddev))
                 age = max(3, min(145, age))
+                return age
             
             if age:
 
@@ -1318,8 +1319,7 @@ class PatrolOutcome():
                 if status == "kitten":
                     thought = "Was startled by a new trainee"
                 else:
-                    if thought == None:
-                        thought = "Is curious about the trainee they just met"
+                    thought = "Is curious about the trainee they just met"
 
         if "newstarcat" in attribute_list:
             alive = False

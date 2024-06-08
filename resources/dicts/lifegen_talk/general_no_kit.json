@@ -14724,13 +14724,67 @@
             "Your choice, though, of course."
         ]
     ],
-    "sc_living_kitten": [
+    "sc_living": [
         [
             "you_sc",
             "any"
         ],
         [
             "Is it true that some StarClan cats are powerful enough to make the moon cover the sun?"
+        ]
+    ],
+    "sc_living_J2": [
+        [
+            "you_sc",
+            "any"
+        ],
+        [
+            "What do you do up there all day?"
+        ]
+    ],
+    "sc_living_J3": [
+        [
+            "you_sc",
+            "any",
+            "neurotic",
+            "silly",
+            "stable"
+        ],
+        [
+            "You know, every time you show up here, I get scared that you're here to take me to StarClan.",
+            "You're not, though, right?"
+        ]
+    ],
+    "sc_living_J4": [
+        [
+            "you_sc",
+            "any"
+        ],
+        [
+            "Oh, hey, y_c, I have a question.",
+            "I saw those clouds getting close to the moon at the last Gathering... what was that for? Did we do something wrong?"
+        ]
+    ],
+    "sc_living_J5": [
+        [
+            "you_sc",
+            "any",
+            "leaffall"
+        ],
+        [
+            "The leaves are changing colours. They're so pretty.",
+            "Is it you guys who do that?"
+        ]
+    ],
+    "sc_living_J6": [
+        [
+            "you_sc",
+            "any"
+        ],
+        [
+            "Hey, y_c. What's up?",
+            "Eh, nothing here. Same old, you know?",
+            "[You wonder why a cat with such a gift would choose to use it to make small talk with a StarClan cat.]"
         ]
     ],
     "shunned_sc": [
@@ -14757,6 +14811,55 @@
             "You would know, wouldn't you, y_c?"
         ]
     ],
+    "df_living_J1": [
+        [
+            "you_df",
+            "any",
+            "they_not_dftrainee"
+        ],
+        [
+            "Hi, y_c. What's up?",
+            "[You're confused-- and admittedly a bit annoyed-- that t_c isn't scared of you.]"
+        ]
+    ],
+    "df_living_J2": [
+        [
+            "you_df",
+            "any",
+            "they_dftrainee",
+            "neurotic",
+            "stable",
+            "unabashed"
+        ],
+        [
+            "y_c! What are you doing here?",
+            "[t_c glances around wildly, fur puffed up in anxiety. {PRONOUN/t_c/subject/CAP} only {VERB/t_c/relax/relaxes} when you remind {PRONOUN/t_c/object} that not everycat can see you.]",
+            "Oh. Right. Sorry. I just... don't want anyone knowing that I'm, uh...",
+            "Sorry. I should probably go. I'll see you tonight."
+        ]
+    ],
+    "df_living_J3": [
+        [
+            "you_df",
+            "any",
+            "platonic_like"
+        ],
+        [
+            "You look a lot scarier than you are, you know.",
+            "It's all that... goop around you. You're not any scarier than you were when you were alive.",
+            "Haha, don't be offended! Not every Dark Forest cat can be the scariest. They need you to balance them out!"
+        ]
+    ],
+    "df_living_J4": [
+        [
+            "you_df",
+            "any"
+        ],
+        [
+            "Where... <i>is</i> the Dark Forest? Are you, like, neighbours with StarClan? Can you, like, visit them?",
+            "Oh, yeah, I guess it makes sense you wouldn't be able to do that, haha."
+        ]
+    ],
     "they_shunned_grieving": [
         [
             "any",
@@ -14775,7 +14878,9 @@
             "you_sc"
         ],
         [
-            "No one deserves what I'm being put through."
+            "Are you here to take me?",
+            "No? Hm...",
+            "[t_c looks almost disappointed.]"
         ]
     ],
     "they_shunned_grieving3": [
@@ -14786,7 +14891,7 @@
             "you_df"
         ],
         [
-            "No one deserves what I'm being put through."
+            "I don't want to see you right now."
         ]
     ],
     "grieving_neruotic": [

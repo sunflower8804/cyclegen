@@ -244,7 +244,7 @@ class Cat():
         self.faded = faded  # This is only used to flag cat that are faded, but won't be added to the faded list until
         # the next save.
 
-        self.favourite = False
+        self.favourite = 0
 
         self.specsuffix_hidden = specsuffix_hidden
         self.inheritance = None
@@ -327,10 +327,10 @@ class Cat():
             else:
                 self.genderalign = self.gender
 
-            # """if self.genderalign in ["female", "trans female"]:
-            #     self.pronouns = [self.default_pronouns[1].copy()]
-            # elif self.genderalign in ["male", "trans male"]:
-            #     self.pronouns = [self.default_pronouns[2].copy()]"""
+            if self.genderalign in ["female", "trans female"]:
+                self.pronouns = [self.default_pronouns[1].copy()]
+            elif self.genderalign in ["male", "trans male"]:
+                self.pronouns = [self.default_pronouns[2].copy()]
 
             # APPEARANCE
             self.pelt = Pelt.generate_new_pelt(self.gender, [Cat.fetch_cat(i) for i in (self.parent1, self.parent2) if i], self.age)
@@ -3318,7 +3318,7 @@ class Cat():
                 "specsuffix_hidden": self.name.specsuffix_hidden,
                 "gender": self.gender,
                 "gender_align": self.genderalign,
-                #"pronouns": self.pronouns,
+                "pronouns": self.pronouns,
                 "birth_cooldown": self.birth_cooldown,
                 "status": self.status,
                 "backstory": self.backstory if self.backstory else None,
@@ -3374,7 +3374,7 @@ class Cat():
                 "faded_offspring": self.faded_offspring,
                 "opacity": self.pelt.opacity,
                 "prevent_fading": self.prevent_fading,
-                "favourite": self.favourite,
+                "favourite": self.favourite if self.favourite else 0,
                 "w_done": self.w_done if self.w_done else False,
                 "talked_to": self.talked_to if self.talked_to else False,
                 "insulted": self.insulted if self.insulted else False,

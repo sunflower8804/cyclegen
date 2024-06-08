@@ -2956,6 +2956,23 @@
             }
         }
     },
+    "#fav_star_2": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fav_star_2.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fav_star_2_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fav_star_2_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fav_star_unavailable.png"
+            }
+        }
+    },
     "#not_fav_star": {
         "prototype": "#image_button",
         "images": {

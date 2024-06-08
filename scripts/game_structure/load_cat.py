@@ -61,6 +61,11 @@ def json_load():
             if "revealed" in cat:
                 cat["forgiven"] = cat["revealed"]
 
+            if cat["favourite"] is False:
+                cat["favourite"] = 0
+            elif cat["favourite"] is True:
+                cat["favourite"] = 1
+
             new_cat = Cat(ID=cat["ID"],
                         prefix=cat["name_prefix"],
                         suffix=cat["name_suffix"],
@@ -182,7 +187,7 @@ def json_load():
             new_cat.outside = cat["outside"] if "outside" in cat else False
             new_cat.faded_offspring = cat["faded_offspring"] if "faded_offspring" in cat else []
             new_cat.prevent_fading = cat["prevent_fading"] if "prevent_fading" in cat else False
-            new_cat.favourite = cat["favourite"] if "favourite" in cat else False
+            new_cat.favourite = cat["favourite"] if "favourite" in cat else 0
             new_cat.w_done = cat["w_done"] if "w_done" in cat else False
             new_cat.talked_to = cat["talked_to"] if "talked_to" in cat else False
             new_cat.insulted = cat["insulted"] if "insulted" in cat else False
@@ -206,7 +211,7 @@ def json_load():
                     cat["scar_event"] if "scar_event" in cat else []
                 )
 
-            # new_cat.pronouns = cat["pronouns"] if "pronouns" in cat else [new_cat.default_pronouns[0].copy()]
+            new_cat.pronouns = cat["pronouns"] if "pronouns" in cat else [new_cat.default_pronouns[0].copy()]
             all_cats.append(new_cat)
 
         except KeyError as e:

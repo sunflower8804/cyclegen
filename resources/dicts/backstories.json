@@ -149,12 +149,18 @@
     "dead_cat_backstories": "ancient spirit",
     "starclan_backstories": "ancient spirit",
     "df_backstories": "ancient spirit",
-    "dark_forest_kits": "from the Dark Forest"
+    "dark_forest_kits": "from the Dark Forest",
+    "oldstarclan_backstories": "ancient spirit"
   },
   "backstory_categories": {
     "dark_forest_kits": [
       "dfkit1",
       "dfkit2"
+    ],
+    "oldstarclan_backstories": [
+      "oldstarclan1",
+      "oldstarclan2",
+      "oldstarclan3"
     ],
     "dead_cat_backstories": [
       "dead1",
