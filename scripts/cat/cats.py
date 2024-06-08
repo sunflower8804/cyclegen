@@ -94,7 +94,9 @@ class Cat():
             "poss": "their",
             "inposs": "theirs",
             "self": "themself",
-            "conju": 1
+            "conju": 1,
+            "parent": "parent",
+            "sibling": "sibling"
         },
         {
             "subject": "she",
@@ -102,7 +104,9 @@ class Cat():
             "poss": "her",
             "inposs": "hers",
             "self": "herself",
-            "conju": 2
+            "conju": 2,
+            "parent": "mother",
+            "sibling": "sister"
         },
         {
             "subject": "he",
@@ -110,7 +114,9 @@ class Cat():
             "poss": "his",
             "inposs": "his",
             "self": "himself",
-            "conju": 2
+            "conju": 2,
+            "parent": "father",
+            "sibling": "brother"
         }
     ]
 
