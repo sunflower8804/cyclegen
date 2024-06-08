@@ -1332,9 +1332,12 @@ class TalkScreen(Screens):
                     if counter > COUNTER_LIM:
                         return ""
                 self.cat_dict[r_c_str] = alive_cat
-                text = re.sub(r'(?<!\/)r_c1(?!\/)', str(alive_cat.name), text)
-                text = re.sub(r'(?<!\/)r_c2(?!\/)', str(alive_cat.name), text)
-                text = re.sub(r'(?<!\/)r_c3(?!\/)', str(alive_cat.name), text)
+                if i == 1:
+                    text = re.sub(r'(?<!\/)r_c1(?!\/)', str(alive_cat.name), text)
+                elif i == 2:
+                    text = re.sub(r'(?<!\/)r_c2(?!\/)', str(alive_cat.name), text)
+                elif i == 3:
+                    text = re.sub(r'(?<!\/)r_c3(?!\/)', str(alive_cat.name), text)
             # Random warriors
             r_w_str = f"r_w{i}"
             if r_w_str in text:
@@ -1356,9 +1359,12 @@ class TalkScreen(Screens):
                     if counter > COUNTER_LIM:
                         return ""
                 self.cat_dict[r_w_str] = alive_cat
-                text = re.sub(r'(?<!\/)r_w1(?!\/)', str(alive_cat.name), text)
-                text = re.sub(r'(?<!\/)r_w2(?!\/)', str(alive_cat.name), text)
-                text = re.sub(r'(?<!\/)r_w3(?!\/)', str(alive_cat.name), text)
+                if i == 1:
+                    text = re.sub(r'(?<!\/)r_w1(?!\/)', str(alive_cat.name), text)
+                elif i == 2:
+                    text = re.sub(r'(?<!\/)r_w2(?!\/)', str(alive_cat.name), text)
+                elif i == 3:
+                    text = re.sub(r'(?<!\/)r_w3(?!\/)', str(alive_cat.name), text)
 
         # Random cats who are potential mates 
         if "n_r1" in text:
