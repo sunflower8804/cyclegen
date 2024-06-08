@@ -1190,7 +1190,6 @@ class PatrolOutcome():
                 stddev = (145 - 3) / 6 
                 age = int(random.gauss(mean, stddev))
                 age = max(3, min(145, age))
-                return age
             
             if age:
 
