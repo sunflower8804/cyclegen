@@ -1689,11 +1689,7 @@ class TalkScreen(Screens):
                 else:
                     return ""
                 self.cat_dict["t_p"] = parent
-<<<<<<< HEAD
-                text = re.sub(r'(?<!\{)t_p(?!\})', str(parent.name), text)
-=======
                 text = re.sub(r'(?<!\/)t_p(?!\/)', str(parent.name), text)
->>>>>>> 93d4850e63118f0c55a75e531ee6b2d2222ef26f
         
         # Your mate
         if "y_m" in text:
