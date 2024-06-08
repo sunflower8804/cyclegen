@@ -1822,8 +1822,9 @@ class TalkScreen(Screens):
         # Your DF Mentor
         if "df_m_n" in text:
             if you.joined_df and not you.dead and you.df_mentor and cat.ID != you.df_mentor:
-                text = text.replace("df_m_n", str(Cat.all_cats.get(you.df_mentor).name))
                 self.cat_dict["df_m_n"] = Cat.all_cats.get(you.df_mentor)
+                text = re.sub(r'(?<!\/)df_m_n(?!\/)', str(Cat.all_cats.get(you.df_mentor).name), text)
+
             else:
                 return ""
             
@@ -1831,23 +1832,23 @@ class TalkScreen(Screens):
         if "t_mn" in text or "tm_n" in text:
             if cat.mentor is None or cat.mentor == you.ID:
                 return ""
-            text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
-            text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
             self.cat_dict["t_mn"] = Cat.fetch_cat(cat.mentor)
             self.cat_dict["tm_n"] = Cat.fetch_cat(cat.mentor)
+            text = re.sub(r'(?<!\/)t_mn(?!\/)', str(Cat.fetch_cat(cat.mentor).name), text)
+            text = re.sub(r'(?<!\/)tm_n(?!\/)', str(Cat.fetch_cat(cat.mentor).name), text)
 
         # Your mentor
         if "m_n" in text:
             if you.mentor is None or you.mentor == cat.ID:
                 return ""
-            text = text.replace("m_n", str(Cat.fetch_cat(you.mentor).name))
             self.cat_dict["m_n"] = Cat.fetch_cat(you.mentor)
+            text = re.sub(r'(?<!\/)m_n(?!\/)', str(Cat.fetch_cat(you.mentor).name), text)
 
         # Their DF metnor
         if "t_df_mn" in text:
             if cat.joined_df and not cat.dead and cat.df_mentor:
-                text = text.replace("t_df_m_n", str(Cat.all_cats.get(cat.df_mentor).name))
                 self.cat_dict["t_df_mn"] = Cat.all_cats.get(cat.df_mentor)
+                text = re.sub(r'(?<!\/)t_df_mn(?!\/)', str(Cat.all_cats.get(cat.df_mentor).name), text)
             else:
                 return ""
         
@@ -1857,7 +1858,6 @@ class TalkScreen(Screens):
                 return ""
             if game.clan.leader.dead or game.clan.leader.outside or game.clan.leader.ID == you.ID or game.clan.leader.ID == cat.ID:
                 return ""
-            text = text.replace("l_n", str(game.clan.leader.name))
             self.cat_dict["l_n"] = game.clan.leader
             text = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.leader.name), text)
 
@@ -1867,7 +1867,6 @@ class TalkScreen(Screens):
                 return ""
             if game.clan.deputy.dead or game.clan.deputy.outside or game.clan.deputy.ID == you.ID or game.clan.deputy.ID == cat.ID:
                 return ""
-            text = text.replace("d_n", str(game.clan.deputy.name))
             self.cat_dict["d_n"] = game.clan.deputy
             text = re.sub(r'(?<!\/)d_n(?!\/)', str(game.clan.deputy.name), text)
 
