@@ -1859,6 +1859,7 @@ class TalkScreen(Screens):
                 return ""
             text = text.replace("l_n", str(game.clan.leader.name))
             self.cat_dict["l_n"] = game.clan.leader
+            text = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.leader.name), text)
 
         # Deputy's name
         if "d_n" in text:
@@ -1868,6 +1869,7 @@ class TalkScreen(Screens):
                 return ""
             text = text.replace("d_n", str(game.clan.deputy.name))
             self.cat_dict["d_n"] = game.clan.deputy
+            text = re.sub(r'(?<!\/)d_n(?!\/)', str(game.clan.deputy.name), text)
 
         # d_c is the cat you/they are grieving
         if "grief stricken" in cat.illnesses:
@@ -1878,6 +1880,7 @@ class TalkScreen(Screens):
                     if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
                         words[i] = str(dead_cat.name)
                 text = " ".join(words)
+                text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
                 self.cat_dict["d_c"] = dead_cat
             except:
                 return ""
@@ -1889,6 +1892,7 @@ class TalkScreen(Screens):
                     if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
                         words[i] = str(dead_cat.name)
                 text = " ".join(words)
+                text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
                 self.cat_dict["d_c"] = dead_cat
             except:
                 return ""
@@ -1900,6 +1904,7 @@ class TalkScreen(Screens):
                     if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
                         words[i] = str(self.cat_dict["d_c"].name)
                 text = " ".join(words)
+                text = re.sub(r'(?<!\/)d_c(?!\/)', str(self.cat_dict["d_c"].name), text)
             else:
                 try:
                     dead_cat = Cat.all_cats.get(game.clan.starclan_cats[-1])
@@ -1911,6 +1916,7 @@ class TalkScreen(Screens):
                         if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
                             words[i] = str(dead_cat.name)
                     text = " ".join(words)
+                    text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
                 except:
                     return ""
         
