@@ -1235,8 +1235,8 @@ class TalkScreen(Screens):
             abbrev_cat = process_text_dict[abbrev]
             process_text_dict[abbrev] = (abbrev_cat, choice(abbrev_cat.pronouns))
         
-        process_text_dict["y_c", choice(game.clan.your_cat.pronouns)]
-        process_text_dict["t_c", choice(game.clan.your_cat.pronouns)]
+        process_text_dict["y_c"] = (game.clan.your_cat, choice(game.clan.your_cat.pronouns))
+        process_text_dict["t_c"] = (cat, choice(cat.pronouns))
         
         for i in range(len(text)):
             text[i] = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False),
@@ -1332,8 +1332,9 @@ class TalkScreen(Screens):
                     if counter > COUNTER_LIM:
                         return ""
                 self.cat_dict[r_c_str] = alive_cat
-                text = re.sub(rf'(?<!\{{{r_c_str}}}(?!\}})', str(self.cat_dict[r_c_str].name), text)
-
+                text = re.sub(r'(?<!\{)r_c1(?!\})', str(alive_cat.name), text)
+                text = re.sub(r'(?<!\{)r_c2(?!\})', str(alive_cat.name), text)
+                text = re.sub(r'(?<!\{)r_c3(?!\})', str(alive_cat.name), text)
             # Random warriors
             r_w_str = f"r_w{i}"
             if r_w_str in text:
@@ -1355,7 +1356,9 @@ class TalkScreen(Screens):
                     if counter > COUNTER_LIM:
                         return ""
                 self.cat_dict[r_w_str] = alive_cat
-                text = re.sub(rf'(?<!\{{{r_w_str}}}(?!\}})', str(self.cat_dict[r_w_str].name), text)
+                text = re.sub(r'(?<!\{)r_w1(?!\})', str(alive_cat.name), text)
+                text = re.sub(r'(?<!\{)r_w2(?!\})', str(alive_cat.name), text)
+                text = re.sub(r'(?<!\{)r_w3(?!\})', str(alive_cat.name), text)
 
         # Random cats who are potential mates 
         if "n_r1" in text:
