@@ -1806,11 +1806,7 @@ class TalkScreen(Screens):
                     random_cat = choice(self.get_living_cats())
                     counter += 1
                 self.cat_dict["r_c"] = random_cat
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_c" and (i == 0 or words[i-1][-1] not in ["{", "|"]):
-                        words[i] = str(random_cat.name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_c(?!\/)', str(random_cat.name), text)
 
         # Other Clan
         if "o_c" in text:
