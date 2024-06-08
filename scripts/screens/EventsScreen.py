@@ -71,8 +71,6 @@ class EventsScreen(Screens):
 
         self.first_opened = False
 
-        # checks if theres any cats in the favourite groups so dont display useless buttons
-        
     def handle_event(self, event):
         if game.switches['window_open']:
             return
@@ -577,9 +575,9 @@ class EventsScreen(Screens):
         self.check_faves()
 
     def update_favourite_filters(self):
+        """ Updates relations events based on the applied favourite filters. """
         self.relation_events = []
         if self.yc_pressed:
-            print("------------------------------------")
             if self.f1_pressed:
                 for i in game.other_events_list:
                     for c in game.clan.clan_cats:
@@ -635,7 +633,8 @@ class EventsScreen(Screens):
             self.relation_events = [x for x in (game.other_events_list + game.cur_events_list) if "relation" in x.types]
         
 
-    def check_faves(self): 
+    def check_faves(self):
+        """ Checks if each favourite group is populated and disables the appropriate button if it's not."""
         self.faves1 = False
         self.faves2 = False
         self.faves3 = False
@@ -643,19 +642,16 @@ class EventsScreen(Screens):
             cat = Cat.all_cats.get(c)
             if cat.favourite == 1:
                 self.faves1 = True
-                print("theres fav 1s")
                 break
         for c in game.clan.clan_cats:
             cat = Cat.all_cats.get(c)
             if cat.favourite == 2:
                 self.faves2 = True
-                print("theres fav 2s")
                 break
         for c in game.clan.clan_cats:
             cat = Cat.all_cats.get(c)
             if cat.favourite == 3:
                 self.faves3 = True
-                print("theres fav 3s")
                 break
 
         if not self.faves1:
