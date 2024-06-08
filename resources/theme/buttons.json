@@ -2969,7 +2969,126 @@
                 "path": "resources/images/buttons/fav_star_2_hover.png"
             },
             "disabled_image": {
-                "path": "resources/images/buttons/fav_star_unavailable.png"
+                "path": "resources/images/buttons/fav_star_2_unavailable.png"
+            }
+        }
+    },
+    "#fav_star_3": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fav_star_3.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fav_star_3_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fav_star_3_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fav_star_3_unavailable.png"
+            }
+        }
+    },
+    "#fave_filter_1": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fave_filter_1.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fave_filter_1_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fave_filter_1_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fave_filter_1_unavailable.png"
+            }
+        }
+    },
+    "#fave_filter_2": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fave_filter_2.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fave_filter_2_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fave_filter_2_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fave_filter_2_unavailable.png"
+            }
+        }
+    },
+    "#fave_filter_3": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fave_filter_3.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fave_filter_3_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fave_filter_3_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fave_filter_3_unavailable.png"
+            }
+        }
+    },
+    "#fave_filter_1_selected": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fave_filter_1_selected.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fave_filter_1_selected_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fave_filter_1_selected_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fave_filter_1_selected_hover.png"
+            }
+        }
+    },
+    "#fave_filter_2_selected": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fave_filter_2_selected.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fave_filter_2_selected_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fave_filter_2_selected_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fave_filter_2_selected_hover.png"
+            }
+        }
+    },
+    "#fave_filter_3_selected": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fave_filter_3_selected.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fave_filter_3_selected_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fave_filter_3_selected_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fave_filter_3_selected_hover.png"
             }
         }
     },
