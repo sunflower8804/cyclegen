@@ -583,7 +583,7 @@ class EventsScreen(Screens):
                     for c in game.clan.clan_cats:
                         if Cat.all_cats.get(c).favourite == 1:
                             if str(Cat.all_cats.get(c).name) in i.text:
-                                print(Cat.all_cats.get(c).name, "is in f1 event text")
+                                print(Cat.all_cats.get(c).name, "F1 Event")
                                 self.relation_events.append(i)
                                 break
                 self.display_events = self.relation_events
@@ -594,7 +594,7 @@ class EventsScreen(Screens):
                     for c in game.clan.clan_cats:
                         if Cat.all_cats.get(c).favourite == 2:
                             if str(Cat.all_cats.get(c).name) in i.text:
-                                print(Cat.all_cats.get(c).name, "is in f2 event text")
+                                print(Cat.all_cats.get(c).name, "F2 Event")
                                 self.relation_events.append(i)
                                 break
                 self.display_events = self.relation_events
@@ -605,7 +605,7 @@ class EventsScreen(Screens):
                     for c in game.clan.clan_cats:
                         if Cat.all_cats.get(c).favourite == 3:
                             if str(Cat.all_cats.get(c).name) in i.text:
-                                print(Cat.all_cats.get(c).name, "is in f3 event text")
+                                print(Cat.all_cats.get(c).name, "F3 Event")
                                 self.relation_events.append(i)
                                 break
                 self.display_events = self.relation_events
