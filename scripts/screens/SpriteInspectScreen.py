@@ -115,30 +115,30 @@ class SpriteInspectScreen(Screens):
                 
                 self.make_cat_image()
                 self.update_checkboxes()
-            elif event.ui_element == self.profile_elements["favourite_button"]:
-                self.profile_elements["favourite_button"].hide()
-                self.profile_elements["favourite_button_2"].show()
-                self.profile_elements["favourite_button_3"].hide()
-                self.profile_elements["not_favourite_button"].hide()
+            elif event.ui_element == self.cat_elements["favourite_button"]:
+                self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].show()
+                self.cat_elements["favourite_button_3"].hide()
+                self.cat_elements["not_favourite_button"].hide()
                 self.the_cat.favourite = 2
-            elif event.ui_element == self.profile_elements["favourite_button_2"]:
-                self.profile_elements["favourite_button"].hide()
-                self.profile_elements["favourite_button_2"].hide()
-                self.profile_elements["favourite_button_3"].show()
-                self.profile_elements["not_favourite_button"].hide()
+            elif event.ui_element == self.cat_elements["favourite_button_2"]:
+                self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].show()
+                self.cat_elements["not_favourite_button"].hide()
                 self.the_cat.favourite = 3
-            elif event.ui_element == self.profile_elements["favourite_button_3"]:
-                self.profile_elements["favourite_button"].hide()
-                self.profile_elements["favourite_button_2"].hide()
-                self.profile_elements["favourite_button_3"].hide()
-                self.profile_elements["not_favourite_button"].show()
+            elif event.ui_element == self.cat_elements["favourite_button_3"]:
+                self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].hide()
+                self.cat_elements["not_favourite_button"].show()
                 self.the_cat.favourite = 0
-            elif event.ui_element == self.profile_elements["not_favourite_button"]:
+            elif event.ui_element == self.cat_elements["not_favourite_button"]:
                 self.the_cat.favourite = 1
-                self.profile_elements["favourite_button"].show()
-                self.profile_elements["favourite_button_2"].hide()
-                self.profile_elements["favourite_button_3"].hide()
-                self.profile_elements["not_favourite_button"].hide()
+                self.cat_elements["favourite_button"].show()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].hide()
+                self.cat_elements["not_favourite_button"].hide()
     
         return super().handle_event(event)
     
@@ -289,7 +289,7 @@ class SpriteInspectScreen(Screens):
                                                                   manager=MANAGER,
                                                                   tool_tip_text='Move to favourite group 3',
                                                                   starting_height=2)
-        self.profile_elements["favourite_button_3"] = UIImageButton(scale(pygame.Rect
+        self.cat_elements["favourite_button_3"] = UIImageButton(scale(pygame.Rect
                                                                         ((x_pos, 287), (56, 56))),
                                                                   "",
                                                                   object_id="#fav_star_3",
@@ -307,25 +307,25 @@ class SpriteInspectScreen(Screens):
                                                                  starting_height=2)  
         if self.the_cat.favourite != 0:
             if self.the_cat.favourite == 1:
-                self.profile_elements["favourite_button"].show()
-                self.profile_elements["favourite_button_2"].hide()
-                self.profile_elements["favourite_button_3"].hide()
-                self.profile_elements["not_favourite_button"].hide()
+                self.cat_elements["favourite_button"].show()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].hide()
+                self.cat_elements["not_favourite_button"].hide()
             elif self.the_cat.favourite == 2:
-                self.profile_elements["favourite_button"].hide()
-                self.profile_elements["favourite_button_2"].show()
-                self.profile_elements["favourite_button_3"].hide()
-                self.profile_elements["not_favourite_button"].hide()
+                self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].show()
+                self.cat_elements["favourite_button_3"].hide()
+                self.cat_elements["not_favourite_button"].hide()
             elif self.the_cat.favourite == 3:
-                self.profile_elements["favourite_button"].hide()
-                self.profile_elements["favourite_button_2"].hide()
-                self.profile_elements["favourite_button_3"].show()
-                self.profile_elements["not_favourite_button"].hide()
+                self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].show()
+                self.cat_elements["not_favourite_button"].hide()
         else:
-            self.profile_elements["favourite_button"].hide()
-            self.profile_elements["favourite_button_2"].hide()
-            self.profile_elements["favourite_button_3"].hide()
-            self.profile_elements["not_favourite_button"].show()
+            self.cat_elements["favourite_button"].hide()
+            self.cat_elements["favourite_button_2"].hide()
+            self.cat_elements["favourite_button_3"].hide()
+            self.cat_elements["not_favourite_button"].show()
         
         
         # Write the checkboxes. The text is set up in switch_screens.  
