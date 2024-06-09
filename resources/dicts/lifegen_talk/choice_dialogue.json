@@ -285,7 +285,7 @@
                 "next_scene": "they_love_it"
             },
             "choice2": {
-                "text": "I don't think {PRONOUN/t_p_positive/y_c/subject}'d like it.",
+                "text": "I don't think {PRONOUN/t_p_positive/subject}'d like it.",
                 "next_scene": "they_dont_like_it"
             }
         },
