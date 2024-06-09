@@ -283,10 +283,6 @@ class SkillPath(Enum):
                            i not in exclude and i not in uncommon_paths]
             return random.choice(common_paths)
     
-    @staticmethod
-    def get_skill_from_string(string):
-        """Returns a SkillPath given a string skill"""
-        pass
 
 class HiddenSkillEnum(Enum):
     ROGUE = "rogue's knowledge"
@@ -454,6 +450,15 @@ class Skill():
     def get_save_string(self):
         '''Gets the string that is saved in the cat data'''
         return f"{self.path.name},{self.points},{self.interest_only}"
+    
+    def get_skill_from_string(self, string):
+        """Returns a SkillPath given a string skill"""
+        for skill in SkillPath:
+            if string in skill.value:
+                index = skill.value.index(string) + 1
+                return self.generate_from_save_string(f"{skill.name},{self.set_points_to_tier(index),None}")
+            
+        return "String not found in any Enum"
 
 class CatSkills:
     """

@@ -8,6 +8,7 @@ from scripts.utility import get_text_box_theme, scale, generate_sprite
 from scripts.housekeeping.version import get_version_info
 from scripts.clan import Clan
 from scripts.cat.cats import create_example_cats, Cat, Personality
+from scripts.cat.skills import Skill, SkillPath
 from scripts.cat.pelts import Pelt
 from scripts.cat.names import names
 from re import sub
@@ -1797,6 +1798,8 @@ class MakeClanScreen(Screens):
                 elif event.ui_element == self.elements['elder pose']:
                     self.elder_pose = int(event.text)
                     self.update_sprite()
+                elif event.ui_element == self.elements['skills']:
+                    self.skill = event.text
 
         
         elif event.type == pygame_gui.UI_BUTTON_START_PRESS:
@@ -1841,6 +1844,7 @@ class MakeClanScreen(Screens):
                     self.your_cat.permanent_condition['born without a leg']['born_with'] = True
                 self.your_cat.accessory = self.accessory
                 self.your_cat.personality = Personality(trait=self.personality, kit_trait=True)
+                self.skills.primary = Skill.get_skill_from_string(Skill, self.skill)
                 self.selected_cat = None
                 self.open_name_cat()
             elif event.ui_element == self.elements['previous_step']:
