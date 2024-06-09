@@ -279,9 +279,9 @@
             "Introspective"
         ],
         [
-            "[You, while stumbling around outside the nursery, trip over t_c's tail, and faceplant at their feet.]",
+            "[You, while stumbling around outside the nursery, trip over t_c's tail, and faceplant at {PRONOUN/t_c/poss} feet.]",
             "...",
-            "[They don't seem to notice you, so you blindly stumble off.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} seem to notice you, so you blindly stumble off.]",
             "... Did a bird just land on my tail?"
         ]
     ],
@@ -544,7 +544,7 @@
             "adopted_parent"
         ],
         [
-            "Hello there, little one. I'm your parent, t_c.",
+            "Hello there, little one. I'm your {PRONOUN/t_c/parent}, t_c.",
             "Can you say my name yet?",
             "[You let out a squeak and t_c smiles amusedly.]",
             "Close enough."
@@ -569,7 +569,7 @@
         [
             "Soft kitty, warm kitty, little ball of fur...",
             "Happy kitty, sleepy kitty, purr purr purr...",
-            "[You fall asleep to your parent's gentle humming.]"
+            "[You fall asleep to your {PRONOUN/t_c/parent}'s gentle humming.]"
         ]
     ],
     "you_newborn2": [
@@ -1021,9 +1021,9 @@
             "platonic_like"
         ],
         [
-            "[r_q caught you being naughty and demanded to meet with your parent, t_c, about it.]",
+            "[r_q caught you being naughty and demanded to meet with your {PRONOUN/t_c/parent}, t_c, about it.]",
             "Alright ... what'd you do this time, y_c?",
-            "You ... called r_c a mange-face because they were ignoring you?",
+            "You ... called r_c a mange-face because {PRONOUN/r_c/subject} {VERB/t_c/were/was} ignoring you?",
             "*Snrk*",
             "I mean, uh -- That was very bad of you, y_c! Never do it again!",
             "[t_c leads you away giggling uncontrollably]",
@@ -1454,7 +1454,7 @@
         [
             "Um. Hello ...",
             "What do you need?",
-            "[Even though {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} your own parent, t_c clearly has no idea how to talk to you.]"
+            "[Even though {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} your own {PRONOUN/t_c/parent}, t_c clearly has no idea how to talk to you.]"
         ]
     ],
     "unabashed_general": [
@@ -1878,7 +1878,7 @@
             "[r_c states that it's a nice gesture and lovely thought but maybe y_p wouldn't want {PRONOUN/y_p/poss} kittens playing with such a big toy until {PRONOUN/y_c/subject} {VERB/y_c/are/is} a little older.]",
             "[y_p laughs it off and pushes the ball towards t_c and asks if {PRONOUN/t_c/subject} {VERB/t_c/want/wants} to play.]",
             "Really? YES!",
-            "[You squint as you watch your loving parent paw the ball back and forth, your whiskers twitch eagerly, maybe when you are older this will be a fun game! You will remember this.]"
+            "[You squint as you watch your loving {PRONOUN/y_p/parent} paw the ball back and forth, your whiskers twitch eagerly. Maybe when you are older this will be a fun game! You will remember this.]"
         ]
     ],
     "warrior_to_newborn": [
@@ -3016,7 +3016,7 @@
         ],
         [
             "You're the only kit who isn't scared of me, you know?",
-            "Not scared of anything. Just like your parent, huh?",
+            "Not scared of anything. Just like your {PRONOUN/t_c/parent}, huh?",
             "Haha. My strong little y_c. You'll grow up to be amazing, I just know it."
         ]
     ],

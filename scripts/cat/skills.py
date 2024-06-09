@@ -282,8 +282,9 @@ class SkillPath(Enum):
             common_paths = [i for i in list(SkillPath) if 
                            i not in exclude and i not in uncommon_paths]
             return random.choice(common_paths)
-        
-    def get_skill_from_string(string): 
+    
+    @staticmethod
+    def get_skill_from_string(string):
         """Returns a SkillPath given a string skill"""
         pass
 
