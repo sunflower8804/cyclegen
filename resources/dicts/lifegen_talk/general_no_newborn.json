@@ -409,7 +409,7 @@
         [
             "no_kit",
             "sibling",
-            "adoptive_sibling",
+            "adopted_sibling",
             "platonic_like",
             "cool",
             "assertive",
@@ -1150,7 +1150,7 @@
     "cool_tomediator": [
         [
             "mediator",
-            "mediator's apprentice",
+            "mediator apprentice",
             "cool"
         ],
         [
@@ -1286,7 +1286,7 @@
         ],
         [
             "[Late at night, you swear you can overhear t_c ... praying?]",
-            "[You're sure you must be mistaken. t_c has never been one to pray, let alone in earshot of their Clanmates.]",
+            "[You're sure you must be mistaken. t_c has never been one to pray, let alone in earshot of {PRONOUN/t_c/poss} Clanmates.]",
             "[But, sure enough, you can hear {PRONOUN/t_c/object} whispering a prayer into the slippery night air outside {PRONOUN/t_c/poss} den.]",
             "Uh ... Hey, StarClan. I know it's been a while ... It's t_c, in case you've forgotten.",
             "Look, I know I haven't exactly been the best cat ... But I could really use some help. Or, guidance, or whatever.",

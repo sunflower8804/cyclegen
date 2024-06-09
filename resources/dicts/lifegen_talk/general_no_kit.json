@@ -2106,9 +2106,9 @@
             "Any",
             "introspective",
             "you_outsiderroots",
-            "you_formerlykittypet",
-            "you_formerlyloner",
-            "you_formerlyrogue",
+            "you_formerlyakittypet",
+            "you_formerlyaloner",
+            "you_formerlyarogue",
             "they_Clanfounder",
             "they_Clanborn",
             "they_half-Clan",
@@ -2998,7 +2998,7 @@
         [
             "y_c, what in StarClan's name are you doing just lazing around camp? You should be out training! Or taking extra patrols! Or - Or ...",
             "*Sigh*. I'm sorry. I guess I'm just more stressed than usual lately. I shouldn't take it out on you. Maybe a walk to clear my head is what I need.",
-            "And on my walk, maybe I can check the twolegplace border, and harvest from the herb gardens for r_m, and help restock the prey pile ...",
+            "And on my walk, maybe I can check the Twolegplace border, and harvest from the herb gardens for r_m, and help restock the prey pile ...",
             "... What? Nothing wrong with multitasking!"
         ]
     ],
@@ -8609,7 +8609,7 @@
             "Introspective",
             "calm",
             "gloomy",
-            "murder"
+            "they_shunned"
         ],
         [
             "[As you approach t_c, {PRONOUN/t_c/subject} {VERB/t_c/stare/stares} at you with tired and embittered eyes.]",
@@ -16659,7 +16659,6 @@
     "Living_strange_H2": [
         [
             "strange",
-            "they_living",
             "you_df",
             "no_kit",
             "any"
