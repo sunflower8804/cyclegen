@@ -2934,12 +2934,13 @@
         [
             "Any",
             "cool",
-            "romantic_like"
+            "romantic_like",
+            "non-mates"
         ],
         [
             "So, y_c, I hear you want romantic advice, huh? Well, you've come to the right cat. Everybody seems to fall head over paws for me, and I can't quite figure out why ...",
             "Whatever the case, it's all about confidence. And coolness. You gotta be smooth, play hard to get ...",
-            "Ah, who am I kidding. You're such a catch, m_c, I'm sure you could have any cat in the whole clan you wanted.",
+            "Ah, who am I kidding. You're such a catch, y_c, I'm sure you could have any cat in the whole clan you wanted.",
             "And, uh, I'm not just saying that either, y'know. I ... I really mean it.",
             "[t_c hits you with one of {PRONOUN/t_c/poss} trademark grins, but for some reason, it seems a bit deeper this time. A bit more pained.]"
         ]
