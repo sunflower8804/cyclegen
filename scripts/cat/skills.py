@@ -456,7 +456,7 @@ class Skill():
         for skill in SkillPath:
             if string in skill.value:
                 index = skill.value.index(string) + 1
-                return self.generate_from_save_string(f"{skill.name},{self.set_points_to_tier(index),None}")
+                return self.generate_from_save_string(f"{skill.name},{Skill.set_points_to_tier(self, tier=index),None}")
             
         return "String not found in any Enum"
 
