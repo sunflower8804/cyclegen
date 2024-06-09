@@ -69,6 +69,7 @@ def test():
         "t_a": _r,
         "parent": _r,
         "parent1": _r,
+        "parent2": _r,
         "sibling": _r,
         "t_s": _r,
         "t_k": _r,
@@ -98,7 +99,9 @@ def test():
         "df_y_a": _r,
         "r_c_sc": _r,
         "a_n": _r,
-        "t_q": _r
+        "t_q": _r,
+        "k_k": _r,
+        "m_c": _r
     }
     
     for x in range(0, 11):

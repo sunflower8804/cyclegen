@@ -1231,7 +1231,7 @@
             "sweet"
         ],
         [
-            "[t_c seems to look at you with concern, you don't know why until {VERB/t_c/subject} {VERB/t_c/approach/approaches} you.]",
+            "[t_c seems to look at you with concern, you don't know why until {PRONOUN/t_c/subject} {VERB/t_c/approach/approaches} you.]",
             "Um.. y_c? You look really tired... Was the leak in the Warriors Den waking you up?",
             "Well... if you'd like, you can take my nest until we get that fixed. I don't mind! It's in a dry spot, so you should get plenty of rest.",
             "The deputy of c_nClan needs to be awake, after all!"
@@ -1616,7 +1616,7 @@
             "y_c! y_c! Are you busy right now?",
             "No? That's great! What do you think about going out on a patrol with me?",
             "Well yeah, another one! I heard d_n say that {PRONOUN/d_n/subject}{VERB/d_n/'re/'s} a bit short on paws, and I thought I could help! And you were the first cat I thought to ask! And...",
-            "[t_c paused, scuffling {PRONOUN./t_c/poss} paws on the ground as {PRONOUN/t_c/subject} {VERB/t_c/avoid/avoids} your eyes.]",
+            "[t_c paused, scuffling {PRONOUN/t_c/poss} paws on the ground as {PRONOUN/t_c/subject} {VERB/t_c/avoid/avoids} your eyes.]",
             "I dunno... you're just cool to hang out with n' stuff."
         ]
     ],
