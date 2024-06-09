@@ -819,7 +819,7 @@
         ],
         [
             "[You mew at t_c, and {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to stare at you.]",
-            "[...they don't reply.]"
+            "[...{PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} reply.]"
         ]
     ],
     "newborn_fromlittermate4": [
@@ -880,7 +880,7 @@
         [
             "Mraow. Mew?",
             "[You climb on top of t_c's back and begin to purr as {PRONOUN/t_c/poss} tiny body settles. The two of you seem comfortable despite the distant yowling of your parents in worry. y_p attempts to separate the two of you.]",
-            "[To their disdain, a few moments you both are in the same spot, but this time t_c sleeps on your back.]"
+            "[To {PRONOUN/y_p/poss} disdain, a few moments you both are in the same spot, but this time t_c sleeps on your back.]"
         ]
     ],
     "stable_newborn_littermate3": [
