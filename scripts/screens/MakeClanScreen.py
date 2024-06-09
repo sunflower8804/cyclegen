@@ -1844,7 +1844,7 @@ class MakeClanScreen(Screens):
                     self.your_cat.permanent_condition['born without a leg']['born_with'] = True
                 self.your_cat.accessory = self.accessory
                 self.your_cat.personality = Personality(trait=self.personality, kit_trait=True)
-                self.skills.primary = Skill.get_skill_from_string(Skill, self.skill)
+                self.your_cat.skills.primary = Skill.get_skill_from_string(Skill, self.skill)
                 self.selected_cat = None
                 self.open_name_cat()
             elif event.ui_element == self.elements['previous_step']:
