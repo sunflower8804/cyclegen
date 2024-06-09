@@ -98,7 +98,8 @@ def test():
         "df_y_a": _r,
         "r_c_sc": _r,
         "a_n": _r,
-        "t_q": _r
+        "t_q": _r,
+        "k_k": _r
     }
     
     for x in range(0, 11):
