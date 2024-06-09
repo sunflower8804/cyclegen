@@ -1221,13 +1221,20 @@ class Events:
                         (parents == 2 and game.clan.your_cat.parent1 and game.clan.your_cat.parent2 and not Cat.all_cats[game.clan.your_cat.parent1].dead and not Cat.all_cats[game.clan.your_cat.parent1].outside and not Cat.all_cats[game.clan.your_cat.parent2].dead and not Cat.all_cats[game.clan.your_cat.parent2].outside):
                             kit_event1 = random.choice(self.c_txt[f"moon_{moons}_{parents_txt[parents]}"])
                             if game.clan.your_cat.parent1:
-                                kit_event1 = kit_event1.replace("parent1", str(Cat.all_cats[game.clan.your_cat.parent1].name))
+                                kit_event1 = re.sub(r'(?<!\/)parent1(?!\/)', str(Cat.all_cats[game.clan.your_cat.parent1].name), kit_event1)
+                                self.cat_dict["parent1"] = Cat.all_cats[game.clan.your_cat.parent1]
                             if game.clan.your_cat.parent2:
-                                kit_event1 = kit_event1.replace("parent2", str(Cat.all_cats[game.clan.your_cat.parent2].name))
+                                kit_event1 = re.sub(r'(?<!\/)parent2(?!\/)', str(Cat.all_cats[game.clan.your_cat.parent2].name), kit_event1)
+                                self.cat_dict["parent2"] = Cat.all_cats[game.clan.your_cat.parent2]
 
                             kit_event = Single_Event(kit_event1)
                             
                             if kit_event not in game.cur_events_list:
+                                process_text_dict = self.cat_dict.copy()
+                                for abbrev in process_text_dict.keys():
+                                    abbrev_cat = process_text_dict[abbrev]
+                                    process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+                                kit_event = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), kit_event)
                                 game.cur_events_list.append(kit_event)
                             break
 
@@ -1244,12 +1251,16 @@ class Events:
                     ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + ' ceremony no mentor'])
             ceremony_txt = ceremony_txt.replace('c_n', str(game.clan.name))
             ceremony_txt = ceremony_txt.replace('y_c', str(game.clan.your_cat.name))
-            try:
-                ceremony_txt = ceremony_txt.replace('c_l', str(game.clan.leader.name))
-            except:
-                ceremony_txt = ceremony_txt.replace('c_l', "a cat")
+            if game.clan.leader and not game.clan.leader.dead and not game.clan.leader.outside:
+                ceremony_txt = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.leader.name), ceremony_txt)
+                self.cat_dict["l_n"] = game.clan.leader
+            elif game.clan.deputy and not game.clan.deputy.dead and not game.clan.deputy.outside:
+                ceremony_txt = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.deputy.name), ceremony_txt)
+                self.cat_dict["l_n"] = game.clan.deputy
             if game.clan.your_cat.mentor:
-                ceremony_txt = ceremony_txt.replace('m_n', str(Cat.all_cats[game.clan.your_cat.mentor].name))
+                ceremony_txt = re.sub(r'(?<!\/)m_n(?!\/)', str(Cat.all_cats[game.clan.your_cat.mentor].name), ceremony_txt)
+                self.cat_dict["m_n"] = Cat.all_cats[game.clan.your_cat.mentor]
+            
             game.cur_events_list.append(Single_Event(ceremony_txt))
         except:
             print("ERROR with app ceremony")
@@ -1266,7 +1277,9 @@ class Events:
                     ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony'])
             else:
                 ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + '_ceremony'])
-            ceremony_txt = ceremony_txt.replace('m_n', str(Cat.all_cats[game.clan.your_cat.former_mentor[-1]].name))
+            former_mentor = Cat.all_cats[game.clan.your_cat.former_mentor[-1]]
+            ceremony_txt = re.sub(r'(?<!\/)m_n(?!\/)', str(former_mentor.name), ceremony_txt)
+            self.cat_dict["m_n"] = former_mentor
         else:
             if game.clan.your_cat.forgiven < 10:
                 try:
@@ -1278,12 +1291,14 @@ class Events:
         
         ceremony_txt = ceremony_txt.replace('c_n', str(game.clan.name))
         ceremony_txt = ceremony_txt.replace('y_c', str(game.clan.your_cat.name))
+        
+        if game.clan.leader and not game.clan.leader.dead and not game.clan.leader.outside:
+            ceremony_txt = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.leader.name), ceremony_txt)
+            self.cat_dict["l_n"] = game.clan.leader
+        elif game.clan.deputy and not game.clan.deputy.dead and not game.clan.deputy.outside:
+            ceremony_txt = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.deputy.name), ceremony_txt)
+            self.cat_dict["l_n"] = game.clan.deputy
 
-        try:
-            ceremony_txt = ceremony_txt.replace('c_l', str(game.clan.leader.name))
-            ceremony_txt = ceremony_txt.replace('c_l', str(game.clan.deputy.name))
-        except:
-            ceremony_txt = ceremony_txt.replace('c_l', "a cat")
 
         random_honor = None
         resource_dir = "resources/dicts/events/ceremonies/"
@@ -1302,10 +1317,12 @@ class Events:
         ceremony_txt = random.choice(self.b_txt['elder_ceremony'])
         ceremony_txt = ceremony_txt.replace('c_n', str(game.clan.name))
         ceremony_txt = ceremony_txt.replace('y_c', str(game.clan.your_cat.name))
-        try:
-            ceremony_txt = ceremony_txt.replace('c_l', str(game.clan.leader.name))
-        except:
-            ceremony_txt = ceremony_txt.replace('c_l', "a cat")
+        if game.clan.leader and not game.clan.leader.dead and not game.clan.leader.outside:
+            ceremony_txt = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.leader.name), ceremony_txt)
+            self.cat_dict["l_n"] = game.clan.leader
+        elif game.clan.deputy and not game.clan.deputy.dead and not game.clan.deputy.outside:
+            ceremony_txt = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.deputy.name), ceremony_txt)
+            self.cat_dict["l_n"] = game.clan.deputy
         game.cur_events_list.append(Single_Event(ceremony_txt))
     
     
@@ -1318,9 +1335,15 @@ class Events:
                     encoding="ascii") as read_file:
                 self.d_txt = ujson.loads(read_file.read())
             ceremony_txt = random.choice(self.d_txt['gain_app ' + game.clan.your_cat.status])
-            if game.clan.leader:
-                ceremony_txt = ceremony_txt.replace('c_l', str(game.clan.leader.name))
-            ceremony_txt = ceremony_txt.replace('app1', str(Cat.all_cats[game.clan.your_cat.apprentice[-1]].name))
+            if game.clan.leader and not game.clan.leader.dead and not game.clan.leader.outside:
+                ceremony_txt = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.leader.name), ceremony_txt)
+                self.cat_dict["l_n"] = game.clan.leader
+            elif game.clan.deputy and not game.clan.deputy.dead and not game.clan.deputy.outside:
+                ceremony_txt = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.deputy.name), ceremony_txt)
+                self.cat_dict["l_n"] = game.clan.deputy
+            app = Cat.all_cats[game.clan.your_cat.apprentice[-1]]
+            self.cat_dict["app1"] = app
+            ceremony_txt = re.sub(r'(?<!\/)app1(?!\/)', str(app.name), ceremony_txt)
             game.cur_events_list.insert(0, Single_Event(ceremony_txt))
 
     def check_gain_mate(self, checks):
@@ -1335,8 +1358,9 @@ class Events:
                     ceremony_txt = random.choice(self.d_txt["gain_mate " + game.clan.your_cat.status.replace(" ", "") + " " + Cat.all_cats[game.clan.your_cat.mate[-1]].status.replace(" ", "")])
                 except:
                     ceremony_txt = random.choice(self.d_txt["gain_mate general"])
-
-                ceremony_txt = ceremony_txt.replace('mate1', str(Cat.all_cats[game.clan.your_cat.mate[-1]].name))
+                mate = Cat.all_cats[game.clan.your_cat.mate[-1]]
+                self.cat_dict["mate1"] = mate
+                ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate.name), ceremony_txt)
                 game.cur_events_list.insert(0, Single_Event(ceremony_txt))
             except:
                 print("You gained a new mate but an event could not be shown1")
@@ -1350,8 +1374,9 @@ class Events:
                     ceremony_txt = random.choice(self.d_txt["gain_mate " + game.clan.your_cat.status.replace(" ", "") + " " + Cat.all_cats[game.clan.your_cat.mate[-1]].status.replace(" ", "")])
                 except:
                     ceremony_txt = random.choice(self.d_txt["gain_mate general"])
-
-                ceremony_txt = ceremony_txt.replace('mate1', str(Cat.all_cats[game.clan.your_cat.mate[-1]].name))
+                mate = Cat.all_cats[game.clan.your_cat.mate[-1]]
+                self.cat_dict["mate1"] = mate
+                ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate.name), ceremony_txt)
                 game.cur_events_list.insert(0, Single_Event(ceremony_txt))
                 game.switches['accept'] = False
                 checks[1] = len(game.clan.your_cat.mate)
@@ -1378,7 +1403,9 @@ class Events:
                     game.clan.your_cat.relationships[game.switches['new_mate'].ID].dislike += 10
 
                 ceremony_txt = random.choice(self.f_txt['reject' + str(r)])
-                ceremony_txt = ceremony_txt.replace('mate1', str(game.switches['new_mate'].name))
+                mate = game.switches['new_mate']
+                self.cat_dict["mate1"] = mate
+                ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate.name), ceremony_txt)
                 game.cur_events_list.insert(0, Single_Event(ceremony_txt))
                 game.switches['reject'] = False
             except:
@@ -1391,42 +1418,11 @@ class Events:
             elif checks[3] != game.clan.leader.ID and game.clan.your_cat.status == 'leader' and game.clan.your_cat.shunned == 0:
                 game.switches['windows_dict'].append('deputy')
             
-            
     def check_gain_kits(self, checks):
         if len(game.clan.your_cat.inheritance.get_blood_kits()) > checks[2] and not game.switches['window_open']:
             NameKitsWindow('events screen')
         elif len(game.clan.your_cat.inheritance.get_blood_kits()) > checks[2]:
             game.switches['windows_dict'].append('name kits')
-            # self.checks[2] = len(game.clan.your_cat.inheritance.get_blood_kits())
-            # insert_kits = []
-            # for kit in game.clan.your_cat.inheritance.get_blood_kits():
-            #     kit_cat = Cat.all_cats.get(kit)
-            #     if kit_cat.moons == 0:
-            #         insert_kits.append(str(kit_cat.name))
-            # resource_dir = "resources/dicts/events/lifegen_events/"
-            # with open(f"{resource_dir}ceremonies.json",
-            #         encoding="ascii") as read_file:
-            #     self.z_txt = ujson.loads(read_file.read())
-            # mate_status = "no mate"
-            # if len(game.clan.your_cat.mate) == 1:
-            #     mate_status = "mate"
-            # elif len(game.clan.your_cat.mate) > 1:
-            #     mate_status = "mates"
-            
-            # ceremony_txt = random.choice(self.z_txt['have_kits ' + mate_status])
-            # kit_names = ""
-            # if len(insert_kits) == 1:
-            #     kit_names = insert_kits[0]
-            # elif len(insert_kits) == 2:
-            #     kit_names = insert_kits[0] + " and " + insert_kits[1]
-            # else:
-            #     for i in range(len(insert_kits)):
-            #         if i == len(insert_kits) - 1:
-            #             kit_names += "and " + insert_kits[i]
-            #         else:
-            #             kit_names += insert_kits[i] + ", "
-            # ceremony_txt = ceremony_txt.replace('insert_kits', kit_names)
-            # game.cur_events_list.insert(0, Single_Event(ceremony_txt))
 
     def generate_mate_events(self):
         if len(game.clan.your_cat.mate) > 0:
@@ -1435,7 +1431,8 @@ class Events:
                 if mate1.dead or mate1.outside:
                     return
                 ceremony_txt = random.choice(self.c_txt['mate_events'])
-                ceremony_txt = ceremony_txt.replace("mate1", str(mate1.name))
+                self.cat_dict["mate1"] = mate1
+                ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate1.name), ceremony_txt)
                 game.cur_events_list.insert(1, Single_Event(ceremony_txt))
             if game.clan.clan_settings['affair']:
                 if random.randint(1,50) == 1:
@@ -1443,7 +1440,8 @@ class Events:
                     if mate1.dead or mate1.outside:
                         return
                     ceremony_txt = random.choice(self.c_txt['affair_events'])
-                    ceremony_txt = ceremony_txt.replace("mate1", str(mate1.name))
+                    self.cat_dict["mate1"] = mate1
+                    ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate1.name), ceremony_txt)
                     game.cur_events_list.insert(1, Single_Event(ceremony_txt))
         if random.randint(1,30) == 1:
             if (len(game.clan.your_cat.mate) > 0 and game.clan.clan_settings['affair']) or (len(game.clan.your_cat.mate) == 0):
@@ -1461,7 +1459,8 @@ class Events:
                     c = Cat.all_cats.get(random.choice(game.clan.clan_cats))
                     counter+=1
                 ceremony_txt = random.choice(self.c_txt['crush_events'])
-                ceremony_txt = ceremony_txt.replace("crush1", str(c.name))
+                self.cat_dict["crush1"] = c
+                ceremony_txt = re.sub(r'(?<!\/)crush1(?!\/)', str(c.name), ceremony_txt)
                 game.cur_events_list.insert(1, Single_Event(ceremony_txt))
                 
     def check_retire(self):
@@ -1516,7 +1515,8 @@ class Events:
             r_clanmate.joined_df = True
             r_clanmate.faith -= 1
             r_clanmate.update_df_mentor()
-            evt_txt = random.choice(self.df_txt["clanmate"]).replace("c_m", str(r_clanmate.name))
+            self.cat_dict["c_m"] = r_clanmate
+            evt_txt = re.sub(r'(?<!\/)c_m(?!\/)', str(r_clanmate.name), evt_txt)
             evt = Single_Event(evt_txt)
             if evt not in game.cur_events_list:
                 game.cur_events_list.append(evt)

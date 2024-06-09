@@ -1260,11 +1260,7 @@ class TalkScreen(Screens):
 
         if "your_crush" in text:
             if "your_crush" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "your_crush" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["your_crush"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)your_crush(?!\/)', str(self.cat_dict["your_crush"].name), text)
             else:
                 if len(you.mate) > 0 or you.no_mates:
                     return ""
@@ -1286,11 +1282,7 @@ class TalkScreen(Screens):
 
         if "their_crush" in text:
             if "their_crush" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "their_crush" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["their_crush"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)their_crush(?!\/)', str(self.cat_dict["their_crush"].name), text)
             else:
                 if len(cat.mate) > 0 or cat.no_mates:
                     return ""
@@ -1316,11 +1308,12 @@ class TalkScreen(Screens):
             r_c_str = f"r_c{i}"
             if r_c_str in text:
                 if r_c_str in self.cat_dict:
-                    words = text.split()
-                    for j, word in enumerate(words):
-                        if word == r_c_str and (j == 0 or words[j-1][-1] != "{"):
-                            words[j] = str(self.cat_dict[r_c_str].name)
-                    text = " ".join(words)
+                    if i == 1:
+                        text = re.sub(r'(?<!\/)r_c1(?!\/)', str(self.cat_dict[r_c_str].name), text)
+                    elif i == 2:
+                        text = re.sub(r'(?<!\/)r_c2(?!\/)', str(self.cat_dict[r_c_str].name), text)
+                    elif i == 3:
+                        text = re.sub(r'(?<!\/)r_c3(?!\/)', str(self.cat_dict[r_c_str].name), text)
                     continue
                 alive_cats = self.get_living_cats()
                 if len(alive_cats) < 3:
@@ -1343,11 +1336,12 @@ class TalkScreen(Screens):
             r_w_str = f"r_w{i}"
             if r_w_str in text:
                 if r_w_str in self.cat_dict:
-                    words = text.split()
-                    for j, word in enumerate(words):
-                        if word == r_w_str and (j == 0 or words[j-1][-1] != "{"):
-                            words[j] = str(self.cat_dict[r_w_str].name)
-                    text = " ".join(words)
+                    if i == 1:
+                        text = re.sub(r'(?<!\/)r_w1(?!\/)', str(self.cat_dict[r_w_str].name), text)
+                    elif i == 2:
+                        text = re.sub(r'(?<!\/)r_w2(?!\/)', str(self.cat_dict[r_w_str].name), text)
+                    elif i == 3:
+                        text = re.sub(r'(?<!\/)r_w3(?!\/)', str(self.cat_dict[r_w_str].name), text)
                     continue
                 alive_cats = get_alive_warriors(Cat)
                 if len(alive_cats) < 3:
@@ -1388,11 +1382,7 @@ class TalkScreen(Screens):
         # Random kit
         if "r_k" in text:
             if "r_k" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_k" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["r_k"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_k(?!\/)', str(self.cat_dict["r_k"].name), text)
             else:
                 alive_kits = get_alive_kits(Cat)
                 if len(alive_kits) <= 1:
@@ -1410,11 +1400,7 @@ class TalkScreen(Screens):
         # Random warrior apprentice
         if "r_a" in text:
             if "r_a" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_a" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["r_a"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_a(?!\/)', str(self.cat_dict["r_a"].name), text)
             else:
                 alive_apps = get_alive_apps(Cat)
                 if len(alive_apps) <= 1:
@@ -1432,11 +1418,7 @@ class TalkScreen(Screens):
         # Random warrior
         if "r_w" in text:
             if "r_w" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_w" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["r_w"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_w(?!\/)', str(self.cat_dict["r_w"].name), text)
             else:
                 alive_apps = get_alive_warriors(Cat)
                 if len(alive_apps) <= 1:
@@ -1454,11 +1436,7 @@ class TalkScreen(Screens):
         # Random medicine cat or medicine cat apprentice
         if "r_m" in text:
             if "r_m" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_m" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["r_m"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_m(?!\/)', str(self.cat_dict["r_m"].name), text)
             else:
                 alive_apps = get_alive_meds(Cat)
                 if len(alive_apps) <= 1:
@@ -1476,11 +1454,7 @@ class TalkScreen(Screens):
         # Random mediator or mediator apprentice
         if "r_d" in text:
             if "r_d" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_d" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["r_d"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_d(?!\/)', str(self.cat_dict["r_d"].name), text)
             else:
                 alive_apps = get_alive_mediators(Cat)
                 if len(alive_apps) <= 1:
@@ -1498,11 +1472,7 @@ class TalkScreen(Screens):
         # Random queen or queen's apprentice
         if "r_q" in text:
             if "r_q" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_q" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["r_q"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_q(?!\/)', str(self.cat_dict["r_q"].name), text)
             else:
                 alive_apps = get_alive_queens(Cat)
                 if len(alive_apps) <= 1:
@@ -1520,11 +1490,7 @@ class TalkScreen(Screens):
         # Random elder
         if "r_e" in text:
             if "r_e" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_e" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["r_e"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_e(?!\/)', str(self.cat_dict["r_e"].name), text)
             else:
                 alive_apps = get_alive_elders(Cat)
                 if len(alive_apps) <= 1:
@@ -1542,11 +1508,7 @@ class TalkScreen(Screens):
         # Random sick cat
         if "r_s" in text:
             if "r_s" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_s" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["r_s"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_s(?!\/)', str(self.cat_dict["r_s"].name), text)
             else:
                 alive_apps = get_alive_cats(Cat)
                 if len(alive_apps) <= 1:
@@ -1564,11 +1526,7 @@ class TalkScreen(Screens):
         # Random injured cat
         if "r_i" in text:
             if "r_i" in self.cat_dict:
-                words = text.split()
-                for i, word in enumerate(words):
-                    if word == "r_i" and (i == 0 or words[i-1][-1] != "{"):
-                        words[i] = str(self.cat_dict["r_i"].name)
-                text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_i(?!\/)', str(self.cat_dict["r_i"].name), text)
             else:
                 alive_apps = get_alive_cats(Cat)
                 if len(alive_apps) <= 1:
@@ -1797,6 +1755,7 @@ class TalkScreen(Screens):
                     if word == "r_c" and (i == 0 or words[i-1][-1] not in ["{", "|"]):
                         words[i] = str(self.cat_dict["r_c"].name)
                 text = " ".join(words)
+                text = re.sub(r'(?<!\/)r_c(?!\/)', str(self.cat_dict["r_c"].name), text)
             else:
                 random_cat = choice(self.get_living_cats())
                 counter = 0
