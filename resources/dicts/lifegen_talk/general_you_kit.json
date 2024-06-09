@@ -279,9 +279,9 @@
             "Introspective"
         ],
         [
-            "[You, while stumbling around outside the nursery, trip over t_c's tail, and faceplant at their feet.]",
+            "[You, while stumbling around outside the nursery, trip over t_c's tail, and faceplant at {PRONOUN/t_c/poss} feet.]",
             "...",
-            "[They don't seem to notice you, so you blindly stumble off.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} seem to notice you, so you blindly stumble off.]",
             "... Did a bird just land on my tail?"
         ]
     ],
