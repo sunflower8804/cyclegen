@@ -17582,5 +17582,151 @@
             "Everything's going just fine around camp, as far as I can tell. There's a leak in the warrior's den that someone should probably get on ... wanna lend a paw?",
             "... Really? Okay! I'll go grab the brambles!"
         ]
+    ],
+
+    "you_dftrainee_Guy1": [
+        [
+            "Any",
+	        "you_dftrainee",
+            "they_not_dftrainee",
+            "they_unlawful"
+        ],
+        [
+            "So, you've joined the Dark Forest?",
+            "Don't give me that look, y_c. I see you wake up with injuries, you're a better fighter than most seemingly overnight...",
+            "No. I wouldn't join. I'm sure that surprises you - some in this clan think I already have.",
+            "But I don't see how being coated in muck forever is appealing.",
+            "[t_c leaves without another word.]"
+        ]
+    ],
+    "you_dftrainee_Guy2": [
+        [
+            "Any",
+	        "you_dftrainee",
+            "they_dftrainee",
+            "they_unlawful"
+        ],
+        [
+            "Ah, y_c! You're here too. Didn't think you'd be the type, to be honest.",
+            "Oh, don't mind the muck or the company.",
+            "It's only forever, not long at all."
+        ]
+    ],
+    "both_dftrainee_SQ1": [
+        [
+            "Any",
+            "you_dftrainee",
+            "they_dftrainee",
+            "newleaf",
+            "greenleaf"
+        ],
+        [
+            "[For the past few days, it's been pouring. You snag a piece of fresh-kill and find a somewhat-sheltered space to eat. t_c joins you.]",
+            "[A patrol stumbles back into camp, sodden and dirty. The patrol leader begins reporting the terrible conditions to d_n, emphasizing how muddy the territory is.]",
+            "[You and t_c exchange a glance. It's no worse than the muck of the Dark Forest.]"
+        ]
+    ],
+    "both_dftrainee_SQ2": [
+        [
+            "Any",
+            "you_dftrainee",
+            "they_dftrainee",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice"
+        ],
+        [
+            "[t_c rushes into your den first thing in the morning, holding their paw over a nasty claw wound.]",
+            "Can you treat this, and hide it? I didn't dodge quickly enough last night, and...",
+            "[One look at the injury tells you it's at risk of infection. You do your best to treat it and obscure it beneath bandaging.]",
+            "Thank you, y_c. Now I just need to come up with a story about what happened..."
+        ]
+    ],
+    "both_dftrainee_SQ3": [
+        [
+            "Any",
+            "you_dftrainee",
+            "they_dftrainee",
+            "platonic_love"
+        ],
+        [
+           "[When t_c first sees you one morning, they rush up and press themselves against you, whispering.]",
+            "I saw you almost fall into that pool of muck last night. Please be careful, okay?",
+            "I don't know what I'd do if you... you know... didn't wake up."
+        ]
+    ],
+    "both_dftrainee_SQ4": [
+        [
+            "Any",
+            "you_dftrainee",
+            "they_dftrainee",
+            "dislike"
+        ],
+        [
+           "[As you're heading to the fresh-kill pile, t_c leans over and mutters in your ear.]",
+            "I heard you were thrashing around in your nest last night. Keep it up and everyone's going to know what's going on.",
+            "[They walk away, shooting you one last disparaging look.]"
+        ]
+    ],
+    "both_dftrainee_SQ5": [
+        [
+            "Any",
+            "you_dftrainee",
+            "they_dftrainee",
+            "from_mentor",
+            "they_neurotic"
+        ],
+        [
+           "Um, y_c? I know it's hard, but could you try to be careful when you're training... you know... at night?",
+            "If you keep getting unexplained injuries, everyone's going to think that it's... me."
+        ]
+    ],
+    "both_dftrainee_SQ6": [
+        [
+            "Any",
+            "you_dftrainee",
+            "they_dftrainee",
+            "platonic_like",
+            "they_neurotic"
+        ],
+        [
+           "Do you think the Clan suspects that I've been training in the Dark Forest?",
+            "It feels like everyone's been watching me a lot, lately...", 
+            "What if they're already planning to exile me?"
+        ]
+    ],
+    "both_dftrainee_SQ7": [
+        [
+            "Any",
+            "you_dftrainee",
+            "they_dftrainee",
+            "from_mentor",
+            "they_neurotic"
+        ],
+        [
+           "[You and t_c have crossed paths in the Dark Forest, but you haven't really talked about it. t_c quietly slides up to you one day as you're leaving your den.]", 
+            "Hey, y_c, can I ask you something? I watched you in the Dark Forest last night. You looked good.",
+            "[They force a smile.]",
+            "Of course I understand your choice to train there, but I've been... wondering.",
+            "Why did you? Was I... was I not good enough?"
+        ]
+    ],
+    "both_dftrainee_SQ8": [
+        [
+            "you_dftrainee",
+            "they_dftrainee",
+            "they_apprentice",
+            "they_warrior",
+            "they_neurotic",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "platonic_like",
+            "trust"
+        ],
+        [
+           "[t_c awkwardly pads into the medicine den, poorly hiding a long scratch with one paw.]",
+            "Can I stay here for a bit? And could you tell the rest of the Clan that I'm not feeling well?",
+            "[t_c moves their paw, revealing their injury. It's minor, but bound to raise questions.]",
+            "I... I'm really not up for trying to explain this."
+        ]
     ]
 }

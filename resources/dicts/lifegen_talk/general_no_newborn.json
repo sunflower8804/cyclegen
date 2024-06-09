@@ -1753,5 +1753,182 @@
             "|r_c|Hi, y_c!",
             "Want to join us?"
         ]
+    ],
+    "ur_sc_Guy1": [
+        [
+	        "you_ur",
+            "they_sc",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+	        "It's odd for someone who's not a Clancat to express so much interest in us.",
+            "Oh, no, you're not unwelcome here, y_c. It's just... unusual."
+        ]
+    ],
+    "ur_sc_Guy2": [
+        [
+            "you_ur",
+            "they_sc",
+            "any",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_k notices you and smiles.]",
+            "[You've come to realize that the 'scary warriors' are just cats, the same as you.]"
+        ]
+    ],
+   "ur_sc_Guy3": [
+        [
+            "you_ur",
+            "they_sc"
+        ],
+        [
+            "Still watching over y_k?",
+            "... yeah I know that they're your kit, no matter who raises them.",
+            "[t_c bumps their head against your side.]",
+            "Just don't forget that they're one of us, too. We protect our own."
+        ]
+    ],
+    "they_df_CM1": [
+        [
+            "any",
+            "they_df",
+            "you_ur"
+        ],
+        [
+            "[Somehow, you've found yourself strolling across the border into a shadowed forest. Before you can fully cross the threshold between it and your own world, you catch sight of t_c, their eyes wide and pupils dilatated.]",
+            "Get out.",
+            "[Their tone isn't aggressive. In fact, they almost sound like they're... begging you?]",
+            "Get out! I'd do anything, anything to be like you - out there, able to watch over my loved ones without them fearing me.",
+            "Look at me! Look at my paws, at my pelt. Look around you, oh for -- tsh! This isn't a place that you get to explore all carefree, not when you're free to go anywhere else.",
+            "Please, just go. Before you get dragged in with me."
+        ]
+    ],
+    "livekit_sc_Guy1": [
+        [
+            "you_kitten",
+            "they_sc"
+        ],
+        [
+            "We're all watching over you, little one.",
+            "Don't grow up too quickly. You have plenty of time."
+        ]
+    ],
+   "livekit_sc_Guy2": [
+        [
+            "you_kitten",
+            "they_sc"
+        ],
+        [
+            "I can see the stars in your eyes y_c.",
+            "You are blessed by us, but you should not worry about that yet."
+        ]
+    ],
+   "livekit_sc_Guy3": [
+        [
+            "you_kitten",
+            "they_sc",
+            "they_queen",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_c smiles warmly at you. Despite the chill of their star-speckled pelt you let them nestle you into their fur.]"
+        ]
+    ],
+   "livekit_sc_Guy4": [
+        [
+            "you_kitten",
+            "they_sc"
+        ],
+        [
+            "[You chase after a mossball and almost faceplant into the StarClan cat.]",
+            "You aren't one of ours, are you? Ah, you're from the Clans under us.",
+            "Star-touched. That's what cats like you were called long ago...",
+            "[t_c touches their nose to your forehead, releasing a puff of stardust.]",
+            "Run along, little star. You'll never be alone among us."
+        ]
+    ],
+   "livekit_sc_Guy5": [
+        [
+            "you_kitten",
+            "they_sc",
+            "they_elder"
+        ],
+        [
+            "You want a story? Hm... have you ever heard of one of the fiercest warriors the Clans ever had?",
+            "They were born small, not expected to survive at all.",
+            "There was a terrible war between two Clans. Leafbares were even more hungry than they are now...",
+            "They stood between the two Clans, on the border. They invented a plan that would provide enough food for all of them.",
+            "And that was how the Clans came to have mediators. They've long since faded, but their legacy will last as long as there are cats who wish for peace."
+        ]
+    ],
+   "shunned_sc_Guy1": [
+        [
+            "Any",
+	        "you_shunned",
+            "they_sc",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_c refuses to look at you.]"
+        ]
+    ],
+   "shunned_sc_Guy2": [
+        [
+            "Any",
+	        "you_shunned",
+            "they_sc",
+            "unlawful"
+        ],
+        [
+            "You say they compelled you to do it?",
+            "[t_c's laugh is hollow, their eyes alight with a sharpness you did not expect from the star-pelted spirits.]",
+            "No wonder you couldn't lie your way out of it."
+        ]
+    ],
+   "shunned_sc_Guy3": [
+        [
+            "kitten",
+	        "you_shunned",
+            "they_sc",
+            "they_queen"
+        ],
+        [
+            "There once was a kitten cursed by the starless's paw.",
+            "Built with cruelness in heart, only able to claw.",
+            "It did not take long for the kit to be swallowed by the dark's maw.",
+            "[The queen finishes their song, the sweet tune hanging in the air.]"
+        ]
+    ],
+   "shunned_sc_Guy4": [
+        [
+            "no_kit",
+	        "you_shunned",
+            "they_sc"
+        ],
+        [
+            "Are you really so weak that you believed this was an option?",
+            "That you felt you would be welcomed?",
+            "Then allow me to tell you clearly. You. Are. Not. Welcome. Here.",
+            "[The cat turns away from you without another word. It seems you are not even worth escorting.]"
+        ]
+    ],
+   "shunned_sc_Guy5": [
+        [
+	        "you_shunned",
+            "they_sc",
+            "you_medicinecat"
+        ],
+        [
+            "We watched over you. We guided you. We <i>chose</i> you.",
+            "And you killed another cat. You <b>desecrated</b> the code you swore to us.",
+            "[y_c spits at your paws. The fury in their eyes is something greater, something more ancient than your Clanmate's.]",
+            "Find your own stars-damned path. I will not guide you again."
+        ]
     ]
 }

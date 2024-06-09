@@ -2643,5 +2643,373 @@
         [
             "Come back later, y_c. Thank you, but I can't do this right now."
         ]
+    ],
+    "flirt_success_H9": [
+        [
+            "flirt",
+            "they_forgiven",
+            "any"
+        ],
+        [
+            "After all this time... you'll still speak to me so sweetly? Even after everything I've done?",
+            "You're a wonderful cat, y_c. I cannot thank you enough for your forgiveness."
+        ]
+    ],
+    "flirt_reject_H6": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "they_shunned"
+        ],
+        [
+            "Do you have a death wish, or is this just to humiliate me?"
+        ]
+    ],
+    "flirt_reject_H7": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "they_shunned"
+        ],
+        [
+            "Get lose, I'm serious.",
+            "[t_c hisses in your direction, their tail lashing and claws extending.]"
+        ]
+    ],
+    "flirt_reject_H8": [
+        [
+            "reject",
+            "any",
+            "from_mate",
+            "flirt",
+            "they_shunned"
+        ],
+        [
+            "You're going to get in trouble, you know that."
+        ]
+    ],
+    "flirt_reject_H9": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "they_shunned"
+        ],
+        [
+            "I'm a murderer and you're still trying to get with me?",
+            "You have some dedication.",
+            "Not-- No, that's not a compliment!"
+        ]
+    ],
+   "flirt_reject_H15": [
+        [
+            "flirt",
+            "reject",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "You know, I would be flattered if there was some freshkill sent my way.",
+            "... No? Then you're not worth my time."
+        ]
+    ],
+    "flirt_success_H6": [
+        [
+            "flirt",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "Hmm... you amuse me, I'll give you that."
+        ]
+    ],
+    "flirt_success_H7": [
+        [
+            "flirt",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "I'll admit, you have bravery saying those things under these circumstances.",
+            "I can't help but feel a bit flattered."
+        ]
+    ],
+    "flirt_success_H8": [
+        [
+            "flirt",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[t_c looks away, flustered.]",
+            "[Mission accomplished.]"
+        ]
+    ],
+   "flirt_reject_H16": [
+        [
+            "flirt",
+            "they_shunned",
+            "heartbroken",
+            "any"
+        ],
+        [
+            "I cannot deal with this. Not while my life crumbles so quickly.",
+            "... Is this my karma?"
+        ]
+    ],
+    "flirting_shunned_SQ5": [
+        [
+            "Any",
+            "they_shunned",
+            "non-mates",
+            "reject"    
+        ],
+        [
+            "[t_c hisses at you.]",
+            "I'm not even allowed to talk with t_m.",
+            "What makes you think I'd want to talk with you?"
+        ]
+    ],
+    "flirt_reject_H17": [
+        [
+            "flirt",
+            "reject",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "You must be a fool to believe I would take kindly to that.",
+            "Scram."
+        ]
+    ],
+   "flirt_reject_H18": [
+        [
+            "flirt",
+            "reject",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "I'd consider this an insult."
+        ]
+    ],
+    "flirt_reject_H10": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "dead_close",
+            "they_grieving"
+        ],
+        [
+            "d_c just died and you're trying to flirt with me?",
+            "... You need to get your priorities in order, y_c. Seriously."
+        ]
+    ],
+   "flirt_reject_H13": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "they_grieving"
+        ],
+        [
+            "[t_c's tail lashes angrily and they turn the other way.]",
+            "[Your flirting is not welcome, it seems.]"
+        ]
+    ],
+    "flirt_Guy1": [
+        [
+            "unlawful",
+            "brooding",
+            "introspective",
+            "reject"    
+        ],
+        [
+            "[t_c rolls their eyes and scoffs.]",
+            "Words said so often that they lack any meaning."
+        ]
+    ],
+    "flirting_neurotic_SQ1":[
+        [
+            "neurotic",
+            "Any",
+            "reject"
+        ],
+        [
+            "[t_c shrinks back. They narrow their eyes at their paws.]",
+            "Are you making fun of me? That’s not nice, y_c."
+	    ]
+	],
+    "flirting_neurotic_SQ2":[
+        [
+            "neurotic",
+            "any"
+        ],
+        [
+            "...me?",
+            "[t_c’s fur fluffs. Their eyes dart from side to side, never quite meeting yours, as if they’re looking for another cat you might have been addressing.]",
+            "T-thank you?"
+        ]
+	],
+  "flirt_success_H1": [
+        [
+            "flirt",
+            "they_app",
+            "you_app"
+        ],
+        [
+            "Heh, you... you mean that?",
+            "Wow..."
+        ]
+    ],
+    "flirt_success_H2": [
+        [
+            "flirt",
+            "they_app",
+            "you_app"
+        ],
+        [
+            "[t_c's ears go red and their eyes light up in awe.]",
+            "[You seem to have broken them slightly with your awkward flirting.]"
+        ]
+    ],
+    "flirt_success_H3": [
+        [
+            "flirt",
+            "they_app",
+            "you_app",
+            "platonic_love"
+        ],
+        [
+            "I thought we were just friends.",
+            "Heh, just kidding. I think you're really cute too."
+        ]
+    ],
+    "flirt_success_H4": [
+        [
+            "flirt",
+            "they_app",
+            "you_app",
+            "platonic_love"
+        ],
+        [
+            "You're joking with me.",
+            "N-no? You're not?",
+            "Am I dreaming or is this the luckiest day of my life?"
+        ]
+    ],
+  "flirt_reject_H1": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt"
+        ],
+        [
+            "Oh, wrap it up."
+        ]
+    ],
+    "flirt_reject_H2": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "dislike"
+        ],
+        [
+            "No, thanks."
+        ]
+    ],
+    "flirt_reject_H3": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt"
+        ],
+        [
+            "... And what am I supposed to do with this information, exactly?"
+        ]
+    ],
+    "flirt_reject_H4": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt"
+        ],
+        [
+            "... Right, that made no sense.",
+            "You should work on your flirting a little more before you come back for more."
+        ]
+    ],
+    "flirt_reject_H5": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "they_leader",
+            "they_deputy"
+        ],
+        [
+            "Uh, sorry I think I just heard r_w calling for me.",
+            "Time to do my duties! Haha... ha...",
+            "[t_c skitters off in a hurry. Was your flirting really that bad?]"
+        ]
+    ],
+   "flirt_reject_H11": [
+        [
+            "reject",
+            "any",
+            "flirt"
+        ],
+        [
+            "Hm? What?",
+            "Sorry, I couldn't hear you."
+        ]
+    ],
+    "flirt_reject_H12": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "platonic_love",
+            "leafbare"
+        ],
+        [
+            "What are you doing outside? It's cold!",
+            "[t_c coaks you back to somewhere warm and alas, your attempt at flirting either went over their head... or was ignored.]",
+            "[You can't decide which one is worse.]"
+        ]
+    ],
+   "flirt_reject_H14": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "heartbroken"
+        ],
+        [
+            "[t_c's tail lashes angrily and they turn the other way.]",
+            "[Your flirting is not welcome, it seems.]"
+        ]
+    ],
+   "flirt_reject_H19": [
+        [
+            "flirt",
+            "reject",
+            "any",
+            "has_mate"
+        ],
+        [
+            "You have some nerve..."
+        ]
     ]
 }
