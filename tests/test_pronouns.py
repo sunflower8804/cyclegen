@@ -100,8 +100,7 @@ def test():
         "r_c_sc": _r,
         "a_n": _r,
         "t_q": _r,
-        "k_k": _r,
-        "m_c": _r
+        "k_k": _r
     }
     
     for x in range(0, 11):
