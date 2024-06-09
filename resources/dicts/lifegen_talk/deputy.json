@@ -2025,7 +2025,7 @@
         ],
         [
             "[You're exhausted, r_k has been having nightmares and keeps waking you up.]",
-            "[Finally, it seems you could get some sleep... until you awaken in the morning, and {PRONOUN/r_k/subject}{PRONOUN/r_k/'re/'s} gone.]",
+            "[Finally, it seems you could get some sleep... until you awaken in the morning, and {PRONOUN/r_k/subject}{VERB/r_k/'re/'s} gone.]",
             "[At last, you enter the warrior's den, and find {PRONOUN/r_k/object} curled up by the deputy, who seems exhausted.]",
             "{PRONOUN/r_k/subject/CAP} had a nightmare... {PRONOUN/r_k/subject} ran into the den and tried to hide under my nest.",
             "I finally got {PRONOUN/r_k/object} to sleep 20 minutes ago, you can take {PRONOUN/r_k/object} if you'd like.",
