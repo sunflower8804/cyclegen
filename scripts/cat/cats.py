@@ -94,7 +94,9 @@ class Cat():
             "poss": "their",
             "inposs": "theirs",
             "self": "themself",
-            "conju": 1
+            "conju": 1,
+            "parent": "parent",
+            "sibling": "sibling"
         },
         {
             "subject": "she",
@@ -102,7 +104,9 @@ class Cat():
             "poss": "her",
             "inposs": "hers",
             "self": "herself",
-            "conju": 2
+            "conju": 2,
+            "parent": "mother",
+            "sibling": "sister"
         },
         {
             "subject": "he",
@@ -110,7 +114,9 @@ class Cat():
             "poss": "his",
             "inposs": "his",
             "self": "himself",
-            "conju": 2
+            "conju": 2,
+            "parent": "father",
+            "sibling": "brother"
         }
     ]
 
@@ -244,7 +250,7 @@ class Cat():
         self.faded = faded  # This is only used to flag cat that are faded, but won't be added to the faded list until
         # the next save.
 
-        self.favourite = False
+        self.favourite = 0
 
         self.specsuffix_hidden = specsuffix_hidden
         self.inheritance = None
@@ -3318,7 +3324,7 @@ class Cat():
                 "specsuffix_hidden": self.name.specsuffix_hidden,
                 "gender": self.gender,
                 "gender_align": self.genderalign,
-                #"pronouns": self.pronouns,
+                # "pronouns": self.pronouns,
                 "birth_cooldown": self.birth_cooldown,
                 "status": self.status,
                 "backstory": self.backstory if self.backstory else None,
@@ -3374,7 +3380,7 @@ class Cat():
                 "faded_offspring": self.faded_offspring,
                 "opacity": self.pelt.opacity,
                 "prevent_fading": self.prevent_fading,
-                "favourite": self.favourite,
+                "favourite": self.favourite if self.favourite else 0,
                 "w_done": self.w_done if self.w_done else False,
                 "talked_to": self.talked_to if self.talked_to else False,
                 "insulted": self.insulted if self.insulted else False,

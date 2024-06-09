@@ -62,6 +62,10 @@ class EventsScreen(Screens):
         self.events_thread = None
         self.you = None
 
+        self.faves1 = False
+        self.faves2 = False
+        self.faves3 = False
+
         # Stores the involved cat button that currently has its cat profile buttons open
         self.open_involved_cat_button = None
 
@@ -102,6 +106,14 @@ class EventsScreen(Screens):
                 # Save the start time, so the loading animation can be
                 # set to only show up if timeskip is taking a good amount of time. 
                 self.events_thread = self.loading_screen_start_work(events_class.one_moon)
+                self.update_favourite_filters()
+                self.fav_group_1.hide()
+                self.fav_group_1_selected.hide()
+                self.fav_group_2.hide()
+                self.fav_group_2_selected.hide()
+                self.fav_group_3.hide()
+                self.fav_group_3_selected.hide()
+                self.cat_icon.hide()
             
             elif game.clan.game_mode != "classic" and event.ui_element == self.freshkill_pile_button:
                 self.change_screen('clearing screen')
@@ -112,6 +124,12 @@ class EventsScreen(Screens):
                     self.scroll_height[self.event_display_type] = self.event_container.vert_scroll_bar.scroll_position / self.event_container.vert_scroll_bar.scrollable_height
                 self.event_display_type = "all events"
                 self.cat_icon.hide()
+                self.fav_group_1.hide()
+                self.fav_group_2.hide()
+                self.fav_group_3.hide()
+                self.fav_group_1_selected.hide()
+                self.fav_group_2_selected.hide()
+                self.fav_group_3_selected.hide()
                 # Update Display
                 self.update_list_buttons(self.all_events_button)
                 self.display_events = self.all_events
@@ -122,6 +140,12 @@ class EventsScreen(Screens):
                 self.event_display_type = "ceremony events"
                 self.ceremonies_events_button.disable()
                 self.cat_icon.hide()
+                self.fav_group_1.hide()
+                self.fav_group_2.hide()
+                self.fav_group_3.hide()
+                self.fav_group_1_selected.hide()
+                self.fav_group_2_selected.hide()
+                self.fav_group_3_selected.hide()
 
                 # Update Display
                 self.update_list_buttons(self.ceremonies_events_button, self.ceremony_alert)
@@ -133,6 +157,12 @@ class EventsScreen(Screens):
                 self.event_display_type = "birth death events"
                 self.birth_death_events_button.enable()
                 self.cat_icon.hide()
+                self.fav_group_1.hide()
+                self.fav_group_2.hide()
+                self.fav_group_3.hide()
+                self.fav_group_1_selected.hide()
+                self.fav_group_2_selected.hide()
+                self.fav_group_3_selected.hide()
 
                 # Update Display
                 self.update_list_buttons(self.birth_death_events_button, self.birth_death_alert)
@@ -144,6 +174,7 @@ class EventsScreen(Screens):
                 self.event_display_type = "relationship events"
                 self.relationship_events_button.enable()
                 self.cat_icon.show()
+                self.relation_events = [x for x in (game.other_events_list + game.cur_events_list) if "relation" in x.types]
                 # Update Display
                 self.update_list_buttons(self.relationship_events_button, self.relation_alert)
                 self.display_events = self.relation_events
@@ -154,6 +185,12 @@ class EventsScreen(Screens):
                 self.event_display_type = "health events"
                 self.health_events_button.disable()
                 self.cat_icon.hide()
+                self.fav_group_1.hide()
+                self.fav_group_2.hide()
+                self.fav_group_3.hide()
+                self.fav_group_1_selected.hide()
+                self.fav_group_2_selected.hide()
+                self.fav_group_3_selected.hide()
                 # Update Display
                 self.update_list_buttons(self.health_events_button, self.health_alert)
                 self.display_events = self.health_events
@@ -164,6 +201,12 @@ class EventsScreen(Screens):
                 self.event_display_type = "other clans events"
                 self.other_clans_events_button.disable()
                 self.cat_icon.hide()
+                self.fav_group_1.hide()
+                self.fav_group_2.hide()
+                self.fav_group_3.hide()
+                self.fav_group_1_selected.hide()
+                self.fav_group_2_selected.hide()
+                self.fav_group_3_selected.hide()
                 # Update Display
                 self.update_list_buttons(self.other_clans_events_button, self.other_clans_alert)
                 self.display_events = self.other_clans_events
@@ -174,29 +217,93 @@ class EventsScreen(Screens):
                 self.event_display_type = "misc events"
                 self.misc_events_button.disable()
                 self.cat_icon.hide()
+                self.fav_group_1.hide()
+                self.fav_group_2.hide()
+                self.fav_group_3.hide()
+                self.fav_group_1_selected.hide()
+                self.fav_group_2_selected.hide()
+                self.fav_group_3_selected.hide()
                 # Update Display
                 self.update_list_buttons(self.misc_events_button, self.misc_alert)
                 self.display_events = self.misc_events
                 self.update_events_display()
             elif event.ui_element == self.cat_icon:
-                if self.yc_pressed:
+                if not self.yc_pressed:
+                    
+                    if self.faves1:
+                        self.fav_group_1.show()
+                    if self.faves2:
+                        self.fav_group_2.show()
+                    if self.faves3:
+                        self.fav_group_3.show()
+
+                    self.fav_group_1_selected.hide()
+                    self.fav_group_2_selected.hide()
+                    self.fav_group_3_selected.hide()
+
+                    self.f1_pressed = False
+                    self.f2_pressed = False
+                    self.f3_pressed = False
+                    self.relation_events = [x for x in (game.other_events_list + game.cur_events_list) if "relation" in x.types]
+                    self.display_events = self.relation_events
+                    self.update_events_display()
+                    self.yc_pressed = True
+                    self.update_favourite_filters()
+                else:
+                    self.fav_group_1.hide()
+                    self.fav_group_2.hide()
+                    self.fav_group_3.hide()
+                    self.fav_group_1_selected.hide()
+                    self.fav_group_2_selected.hide()
+                    self.fav_group_3_selected.hide()
                     self.relation_events = [x for x in (game.other_events_list + game.cur_events_list) if "relation" in x.types]
                     self.display_events = self.relation_events
                     self.update_events_display()
                     self.yc_pressed = False
-                else:
-                    self.relation_events = [x for x in (game.cur_events_list) if "relation" in x.types]
-                    for i in game.other_events_list:
-                        for c in game.clan.clan_cats:
-                            if Cat.all_cats.get(c).favourite:
-                                if str(Cat.all_cats.get(c).name) in i.text:
-                                    self.relation_events.append(i)
-                                    break
-                                  
-                    self.display_events = self.relation_events
-                    self.update_events_display()
-                    self.yc_pressed = True
-                
+                    # self.update_favourite_filters()
+
+            elif event.ui_element == self.fav_group_1_selected:
+                self.relation_events = [x for x in (game.other_events_list + game.cur_events_list) if "relation" in x.types]
+                self.display_events = self.relation_events
+                self.update_events_display()
+                self.f1_pressed = False
+                self.update_favourite_filters()
+
+            elif event.ui_element == self.fav_group_1:
+                self.relation_events = [x for x in (game.cur_events_list) if "relation" in x.types]
+                self.display_events = self.relation_events
+                self.update_events_display()
+                self.f1_pressed = True
+                self.update_favourite_filters()
+                    
+            elif event.ui_element == self.fav_group_2_selected:
+                self.relation_events = [x for x in (game.other_events_list + game.cur_events_list) if "relation" in x.types]
+                self.display_events = self.relation_events
+                self.update_events_display()
+                self.f2_pressed = False
+                self.update_favourite_filters()
+
+            elif event.ui_element == self.fav_group_2:
+                self.relation_events = [x for x in (game.cur_events_list) if "relation" in x.types]
+                self.display_events = self.relation_events
+                self.update_events_display()
+                self.f2_pressed = True
+                self.update_favourite_filters()
+
+            elif event.ui_element == self.fav_group_3_selected:
+                self.relation_events = [x for x in (game.other_events_list + game.cur_events_list) if "relation" in x.types]
+                self.display_events = self.relation_events
+                self.update_events_display()
+                self.f3_pressed = False
+                self.update_favourite_filters()
+
+            elif event.ui_element == self.fav_group_3:
+                self.relation_events = [x for x in (game.cur_events_list) if "relation" in x.types]
+                self.display_events = self.relation_events
+                self.update_events_display()
+                self.f3_pressed = True
+                self.update_favourite_filters()
+                    
             elif event.ui_element in self.involved_cat_buttons:
                 self.make_cat_buttons(event.ui_element)
             elif event.ui_element in self.cat_profile_buttons:
@@ -316,7 +423,10 @@ class EventsScreen(Screens):
                                                             "resources/images/event_page_frame.png").convert_alpha()
                                                         , manager=MANAGER)
         self.events_frame.disable()
-        self.yc_pressed = True
+        self.yc_pressed = False
+        self.f1_pressed = False
+        self.f2_pressed = False
+        self.f3_pressed = False
         if not game.clan.your_cat:
             print("Are you playing a normal ClanGen save? Switch to a LifeGen save or create a new cat!")
             print("Choosing random cat to play...")
@@ -365,12 +475,55 @@ class EventsScreen(Screens):
             scale(pygame.Rect((120, 872), (300, 60))),
             "",
             object_id="#relationship_events_button")
+        
         self.cat_icon = UIImageButton(
-            scale(pygame.Rect((75, 875), (50, 50))),
-            "",
-            tool_tip_text="Show your cat/favorited cat relationship events",
-            object_id="#events_cat_button")
+                scale(pygame.Rect((75, 875), (50, 50))),
+                "",
+                object_id="#events_cat_button")
+    
         self.cat_icon.hide()
+
+        
+        self.fav_group_1 = UIImageButton(
+            scale(pygame.Rect((75, 926), (50, 62))),
+            "",
+            tool_tip_text="Toggle events from favourite group 1",
+            object_id="#fave_filter_1")
+        self.fav_group_2 = UIImageButton(
+            scale(pygame.Rect((75, 988), (50, 62))),
+            "",
+            tool_tip_text="Toggle events from favourite group 2",
+            object_id="#fave_filter_2")
+        self.fav_group_3 = UIImageButton(
+            scale(pygame.Rect((75, 1050), (50, 62))),
+            "",
+            tool_tip_text="Toggle events from favourite group 3",
+            object_id="#fave_filter_3")
+        
+        self.fav_group_1_selected = UIImageButton(
+            scale(pygame.Rect((75, 926), (50, 62))),
+            "",
+            tool_tip_text="Show events from favourite group 1",
+            object_id="#fave_filter_1_selected")
+        self.fav_group_2_selected = UIImageButton(
+            scale(pygame.Rect((75, 988), (50, 62))),
+            "",
+            tool_tip_text="Show events from favourite group 2",
+            object_id="#fave_filter_2_selected")
+        self.fav_group_3_selected = UIImageButton(
+            scale(pygame.Rect((75, 1050), (50, 62))),
+            "",
+            tool_tip_text="Show events from favourite group 3",
+            object_id="#fave_filter_3_selected")
+        
+        self.fav_group_1.hide()
+        self.fav_group_2.hide()
+        self.fav_group_3.hide()
+
+        self.fav_group_1_selected.hide()
+        self.fav_group_2_selected.hide()
+        self.fav_group_3_selected.hide()
+        
         self.health_events_button = UIImageButton(
             scale(pygame.Rect((120, 972), (300, 60))),
             "",
@@ -419,6 +572,94 @@ class EventsScreen(Screens):
         self.update_heading_text(f'{game.clan.name}Clan')
         self.show_menu_buttons()
         self.update_events_display()
+        self.check_faves()
+
+    def update_favourite_filters(self):
+        """ Updates relations events based on the applied favourite filters. """
+        self.relation_events = []
+        if self.yc_pressed:
+            if self.f1_pressed:
+                for i in game.other_events_list:
+                    for c in game.clan.clan_cats:
+                        if Cat.all_cats.get(c).favourite == 1:
+                            if str(Cat.all_cats.get(c).name) in i.text:
+                                print(Cat.all_cats.get(c).name, "F1 Event")
+                                self.relation_events.append(i)
+                                break
+                self.display_events = self.relation_events
+                self.update_events_display()
+
+            if self.f2_pressed:
+                for i in game.other_events_list:
+                    for c in game.clan.clan_cats:
+                        if Cat.all_cats.get(c).favourite == 2:
+                            if str(Cat.all_cats.get(c).name) in i.text:
+                                print(Cat.all_cats.get(c).name, "F2 Event")
+                                self.relation_events.append(i)
+                                break
+                self.display_events = self.relation_events
+                self.update_events_display()
+
+            if self.f3_pressed:
+                for i in game.other_events_list:
+                    for c in game.clan.clan_cats:
+                        if Cat.all_cats.get(c).favourite == 3:
+                            if str(Cat.all_cats.get(c).name) in i.text:
+                                print(Cat.all_cats.get(c).name, "F3 Event")
+                                self.relation_events.append(i)
+                                break
+                self.display_events = self.relation_events
+                self.update_events_display()
+
+            if self.f1_pressed:
+                self.fav_group_1.hide()
+                self.fav_group_1_selected.show()
+            else:
+                self.fav_group_1.show()
+                self.fav_group_1_selected.hide()
+            if self.f2_pressed:
+                self.fav_group_2.hide()
+                self.fav_group_2_selected.show()
+            else:
+                self.fav_group_2.show()
+                self.fav_group_2_selected.hide()
+            if self.f3_pressed:
+                self.fav_group_3.hide()
+                self.fav_group_3_selected.show()
+            else:
+                self.fav_group_3.show()
+                self.fav_group_3_selected.hide()
+        else:
+            self.relation_events = [x for x in (game.other_events_list + game.cur_events_list) if "relation" in x.types]
+        
+
+    def check_faves(self):
+        """ Checks if each favourite group is populated and disables the appropriate button if it's not."""
+        self.faves1 = False
+        self.faves2 = False
+        self.faves3 = False
+        for c in game.clan.clan_cats:
+            cat = Cat.all_cats.get(c)
+            if cat.favourite == 1:
+                self.faves1 = True
+                break
+        for c in game.clan.clan_cats:
+            cat = Cat.all_cats.get(c)
+            if cat.favourite == 2:
+                self.faves2 = True
+                break
+        for c in game.clan.clan_cats:
+            cat = Cat.all_cats.get(c)
+            if cat.favourite == 3:
+                self.faves3 = True
+                break
+
+        if not self.faves1:
+            self.fav_group_1.disable()
+        if not self.faves2:
+            self.fav_group_2.disable()
+        if not self.faves3:
+            self.fav_group_3.disable()
 
     def exit_screen(self):
         self.open_involved_cat_button = None
@@ -472,6 +713,18 @@ class EventsScreen(Screens):
         self.event_container.kill()
         self.cat_icon.kill()
         del self.cat_icon
+        self.fav_group_1.kill()
+        del self.fav_group_1
+        self.fav_group_2.kill()
+        del self.fav_group_2
+        self.fav_group_3.kill()
+        del self.fav_group_3
+        self.fav_group_1_selected.kill()
+        del self.fav_group_1_selected
+        self.fav_group_2_selected.kill()
+        del self.fav_group_2_selected
+        self.fav_group_3_selected.kill()
+        del self.fav_group_3_selected
         if self.you:
             self.you.kill()
         for ele in self.display_events_elements:
@@ -501,6 +754,12 @@ class EventsScreen(Screens):
         
         if self.event_display_type != 'relationship events':
             self.cat_icon.hide()
+            self.fav_group_1.hide()
+            self.fav_group_2.hide()
+            self.fav_group_3.hide()
+            self.fav_group_1_selected.hide()
+            self.fav_group_2_selected.hide()
+            self.fav_group_3_selected.hide()
 
         self.update_display_events_lists()
 

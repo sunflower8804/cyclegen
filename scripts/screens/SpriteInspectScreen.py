@@ -116,12 +116,28 @@ class SpriteInspectScreen(Screens):
                 self.make_cat_image()
                 self.update_checkboxes()
             elif event.ui_element == self.cat_elements["favourite_button"]:
-                self.the_cat.favourite = False
                 self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].show()
+                self.cat_elements["favourite_button_3"].hide()
+                self.cat_elements["not_favourite_button"].hide()
+                self.the_cat.favourite = 2
+            elif event.ui_element == self.cat_elements["favourite_button_2"]:
+                self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].show()
+                self.cat_elements["not_favourite_button"].hide()
+                self.the_cat.favourite = 3
+            elif event.ui_element == self.cat_elements["favourite_button_3"]:
+                self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].hide()
                 self.cat_elements["not_favourite_button"].show()
+                self.the_cat.favourite = 0
             elif event.ui_element == self.cat_elements["not_favourite_button"]:
-                self.the_cat.favourite = True
+                self.the_cat.favourite = 1
                 self.cat_elements["favourite_button"].show()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].hide()
                 self.cat_elements["not_favourite_button"].hide()
     
         return super().handle_event(event)
@@ -263,8 +279,23 @@ class SpriteInspectScreen(Screens):
                                                               "",
                                                               object_id="#fav_star",
                                                               manager=MANAGER,
-                                                              tool_tip_text='Remove favorite status',
+                                                              tool_tip_text='Move to favourite group 2',
                                                               starting_height=2)
+        
+        self.cat_elements["favourite_button_2"] = UIImageButton(scale(pygame.Rect
+                                                                        ((x_pos, 127), (56, 56))),
+                                                                  "",
+                                                                  object_id="#fav_star_2",
+                                                                  manager=MANAGER,
+                                                                  tool_tip_text='Move to favourite group 3',
+                                                                  starting_height=2)
+        self.cat_elements["favourite_button_3"] = UIImageButton(scale(pygame.Rect
+                                                                        ((x_pos, 127), (56, 56))),
+                                                                  "",
+                                                                  object_id="#fav_star_3",
+                                                                  manager=MANAGER,
+                                                                  tool_tip_text='Remove favorite status',
+                                                                  starting_height=2)
 
         self.cat_elements["not_favourite_button"] = UIImageButton(scale(pygame.Rect
                                                                     ((x_pos, 127),
@@ -274,11 +305,26 @@ class SpriteInspectScreen(Screens):
                                                                  manager=MANAGER,
                                                                  tool_tip_text='Mark as favorite',
                                                                  starting_height=2)  
-        if self.the_cat.favourite:
-            self.cat_elements["favourite_button"].show()
-            self.cat_elements["not_favourite_button"].hide()
+        if self.the_cat.favourite != 0:
+            if self.the_cat.favourite == 1:
+                self.cat_elements["favourite_button"].show()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].hide()
+                self.cat_elements["not_favourite_button"].hide()
+            elif self.the_cat.favourite == 2:
+                self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].show()
+                self.cat_elements["favourite_button_3"].hide()
+                self.cat_elements["not_favourite_button"].hide()
+            elif self.the_cat.favourite == 3:
+                self.cat_elements["favourite_button"].hide()
+                self.cat_elements["favourite_button_2"].hide()
+                self.cat_elements["favourite_button_3"].show()
+                self.cat_elements["not_favourite_button"].hide()
         else:
             self.cat_elements["favourite_button"].hide()
+            self.cat_elements["favourite_button_2"].hide()
+            self.cat_elements["favourite_button_3"].hide()
             self.cat_elements["not_favourite_button"].show()
         
         

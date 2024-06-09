@@ -467,12 +467,28 @@ class ProfileScreen(Screens):
             elif "halfmoon" in self.profile_elements and event.ui_element == self.profile_elements["halfmoon"]:
                 self.change_screen('moonplace screen')
             elif event.ui_element == self.profile_elements["favourite_button"]:
-                self.the_cat.favourite = False
                 self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].show()
+                self.profile_elements["favourite_button_3"].hide()
+                self.profile_elements["not_favourite_button"].hide()
+                self.the_cat.favourite = 2
+            elif event.ui_element == self.profile_elements["favourite_button_2"]:
+                self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].show()
+                self.profile_elements["not_favourite_button"].hide()
+                self.the_cat.favourite = 3
+            elif event.ui_element == self.profile_elements["favourite_button_3"]:
+                self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].hide()
                 self.profile_elements["not_favourite_button"].show()
+                self.the_cat.favourite = 0
             elif event.ui_element == self.profile_elements["not_favourite_button"]:
-                self.the_cat.favourite = True
+                self.the_cat.favourite = 1
                 self.profile_elements["favourite_button"].show()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].hide()
                 self.profile_elements["not_favourite_button"].hide()
             else:
                 self.handle_tab_events(event)
@@ -1044,6 +1060,20 @@ class ProfileScreen(Screens):
                                                                   "",
                                                                   object_id="#fav_star",
                                                                   manager=MANAGER,
+                                                                  tool_tip_text='Move to favourite group 2',
+                                                                  starting_height=2)
+        self.profile_elements["favourite_button_2"] = UIImageButton(scale(pygame.Rect
+                                                                        ((x_pos, 287), (56, 56))),
+                                                                  "",
+                                                                  object_id="#fav_star_2",
+                                                                  manager=MANAGER,
+                                                                  tool_tip_text='Move to favourite group 3',
+                                                                  starting_height=2)
+        self.profile_elements["favourite_button_3"] = UIImageButton(scale(pygame.Rect
+                                                                        ((x_pos, 287), (56, 56))),
+                                                                  "",
+                                                                  object_id="#fav_star_3",
+                                                                  manager=MANAGER,
                                                                   tool_tip_text='Remove favorite status',
                                                                   starting_height=2)
 
@@ -1056,11 +1086,26 @@ class ProfileScreen(Screens):
                                                                       tool_tip_text='Mark as favorite',
                                                                       starting_height=2)
 
-        if self.the_cat.favourite:
-            self.profile_elements["favourite_button"].show()
-            self.profile_elements["not_favourite_button"].hide()
+        if self.the_cat.favourite != 0:
+            if self.the_cat.favourite == 1:
+                self.profile_elements["favourite_button"].show()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].hide()
+                self.profile_elements["not_favourite_button"].hide()
+            elif self.the_cat.favourite == 2:
+                self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].show()
+                self.profile_elements["favourite_button_3"].hide()
+                self.profile_elements["not_favourite_button"].hide()
+            elif self.the_cat.favourite == 3:
+                self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].show()
+                self.profile_elements["not_favourite_button"].hide()
         else:
             self.profile_elements["favourite_button"].hide()
+            self.profile_elements["favourite_button_2"].hide()
+            self.profile_elements["favourite_button_3"].hide()
             self.profile_elements["not_favourite_button"].show()
 
         if self.accessory_tab_button:

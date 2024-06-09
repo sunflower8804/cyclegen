@@ -1318,8 +1318,7 @@ class PatrolOutcome():
                 if status == "kitten":
                     thought = "Was startled by a new trainee"
                 else:
-                    if thought == None:
-                        thought = "Is curious about the trainee they just met"
+                    thought = "Is curious about the trainee they just met"
 
         if "newstarcat" in attribute_list:
             alive = False
