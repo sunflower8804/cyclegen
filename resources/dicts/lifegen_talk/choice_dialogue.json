@@ -1748,12 +1748,12 @@
         },
         "compliment": [
             "Ohh ... You really think so?",
-            "*Sigh* I guess I should probably go apologize to {PRONOUN/r_c/subject} for how I reacted, then ...",
+            "*Sigh* I guess I should probably go apologize to {PRONOUN/r_c/object} for how I reacted, then ...",
             "If I gave a cat a compliment and {PRONOUN/t_c/subject} ran away crying, I'd probably be a little confused."
         ],
         "not_compliment": [
             "Ohh ... You really think so?",
-            "*Sigh* I guess I should probably go apologize to r_c for how I reacted, then ...",
+            "*Sigh* I guess I should probably go apologize to {PRONOUN/r_c/object} for how I reacted, then ...",
             "If I gave a cat a compliment and {PRONOUN/t_c/subject} ran away crying, I'd probably be a little confused."
         ]
     },

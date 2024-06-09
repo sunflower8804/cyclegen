@@ -210,22 +210,22 @@ def json_load():
                     cat["died_by"] if "died_by" in cat else [],
                     cat["scar_event"] if "scar_event" in cat else []
                 )
-
-            # if "sibling" not in cat["pronouns"][0]:
-            #     if new_cat.genderalign in ["male", "trans male"]:
-            #         cat["pronouns"][0]["sibling"] = "brother"
-            #     elif new_cat.genderalign in ["female", "trans female"]:
-            #         cat["pronouns"][0]["sibling"] = "sister"
-            #     else:
-            #         cat["pronouns"][0]["sibling"] = "sibling"
-
-            # if "parent" not in cat["pronouns"][0]:
-            #     if new_cat.genderalign in ["male", "trans male"]:
-            #         cat["pronouns"][0]["parent"] = "father"
-            #     elif new_cat.genderalign in ["female", "trans female"]:
-            #         cat["pronouns"][0]["parent"] = "mother"
-            #     else:
-            #         cat["pronouns"][0]["parent"] = "parent"
+            # if "pronouns" in cat:
+                # if "sibling" not in cat["pronouns"][0]:
+                #     if new_cat.genderalign in ["male", "trans male"]:
+                #         cat["pronouns"][0]["sibling"] = "brother"
+                #     elif new_cat.genderalign in ["female", "trans female"]:
+                #         cat["pronouns"][0]["sibling"] = "sister"
+                #     else:
+                #         cat["pronouns"][0]["sibling"] = "sibling"
+    
+                # if "parent" not in cat["pronouns"][0]:
+                #     if new_cat.genderalign in ["male", "trans male"]:
+                #         cat["pronouns"][0]["parent"] = "father"
+                #     elif new_cat.genderalign in ["female", "trans female"]:
+                #         cat["pronouns"][0]["parent"] = "mother"
+                #     else:
+                #         cat["pronouns"][0]["parent"] = "parent"
 
             # new_cat.pronouns = cat["pronouns"] if "pronouns" in cat else [new_cat.default_pronouns[0].copy()]
             all_cats.append(new_cat)
