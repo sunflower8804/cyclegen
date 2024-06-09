@@ -946,7 +946,7 @@
         [
             "Playing by yourself?",
             "Here. I'll play with you. Roll the pebble over to me.",
-            "[You roll the stone to t_c. {PRONOUN/t_c/subject/CAP} {VERB/t_c/catch/catches} it and gently {VREB/t_c/roll/roolls} it back to you with {PRONOUN/t_c/poss} paw.]",
+            "[You roll the stone to t_c. {PRONOUN/t_c/subject/CAP} {VERB/t_c/catch/catches} it and gently {VERB/t_c/roll/roolls} it back to you with {PRONOUN/t_c/poss} paw.]",
             "Y'know, I had a hard time making friends, too, at your age ...",
             "Life isn't always easy for sensitive cats like us.",
             "But you'll find your place in c_nClan, don't you worry.",
@@ -1373,7 +1373,7 @@
             "sweet"
         ],
         [
-            "[t_c is proudly walking around camp with r_k in tow, seems {PRONOUN/t_c/subject}{VERB/t_c/'ve's} been decorating.]",
+            "[t_c is proudly walking around camp with r_k in tow, seems {PRONOUN/t_c/subject} {VERB/t_c/'ve's} been decorating.]",
             "[The kitten bounds towards you, snuggling a flower within your fur.]",
             "Oh no! We don't need to decorate the deputy!",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/are/is} doing {PRONOUN/t_c/poss} best to be a good role model, but you can tell {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} trying very hard not to giggle at the kit's shenanigans.]"

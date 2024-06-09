@@ -50,7 +50,7 @@
         [
             "[You feel eyes peering at you from the fog, wandering near the border of stars and mist.]",
             "[Briefly, you spot the ghost of a rogue, looking at your star-sewn pelt in awe.]",
-            "[Though, once {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you've spotted {PRONOUN/t_c/him}, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} tail and {VERB/t_c/run/runs}.]"
+            "[Though, once {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you've spotted {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} tail and {VERB/t_c/run/runs}.]"
         ]
     ],
     "sc_urrogue_ps_2": [

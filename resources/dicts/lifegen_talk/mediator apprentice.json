@@ -1631,7 +1631,7 @@
             "Ah, y_c! What are you doing up so early? You need your rest!",
             "Well- yeah- I know I'm up this early too- did I sleep?",
             "No, but I assure you, I had a good reason.",
-            "[You tell {PRONOUN/t_c/object} that you won't sleep unless {PRONOUN/t_c/subject} {PRONOUN/t_c/do/does}.]",
+            "[You tell {PRONOUN/t_c/object} that you won't sleep unless {PRONOUN/t_c/subject} {VERB/t_c/do/does}.]",
             "Wait- no- ah fine. You're right. I need to start taking better care of myself.",
             "[It's about time! That leader spends so much time caring for the Clan that {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} usually care for {PRONOUN/t_c/self}!]"
         ]

@@ -2037,7 +2037,7 @@
             "Hey... y_c? W- What if l_n doesn't make me a Warrior because I'm too much of a fraidy cat, like r_c said?",
             "[t_c starts to tear up, trembling in place.]",
             "What if- what if I'm not good enough? What if-",
-            "[You gently reassure t_c that {PRONOUN/t_c/suject}'ll be the best warrior ever, and that you'll make {PRONOUN/t_c/object} a Warrior yourself if you have to. It seems to make {PRONOUN/t_c/object} calm down a bit, and {PRONOUN/t_c/subject} {VERB/t_c/smile/smiles} at you.]",
+            "[You gently reassure t_c that {PRONOUN/t_c/subject}'ll be the best warrior ever, and that you'll make {PRONOUN/t_c/object} a Warrior yourself if you have to. It seems to make {PRONOUN/t_c/object} calm down a bit, and {PRONOUN/t_c/subject} {VERB/t_c/smile/smiles} at you.]",
             "T.. Thanks... It really means a lot, y_c."
         ]
     ],
@@ -2532,7 +2532,7 @@
         ],
         [
             "y_c! You'll never believe what r_k tried to do!",
-            "I caught {PRONOUN/r_k/object} trying to sneak out of camp! Can you believe that? {PRONOUN/r_k/subject/CAP} {PRONOUN/r_k/were/was} breaking the rules on purpose!",
+            "I caught {PRONOUN/r_k/object} trying to sneak out of camp! Can you believe that? {PRONOUN/r_k/subject/CAP} {VERB/r_k/were/was} breaking the rules on purpose!",
             "Why would {PRONOUN/r_k/subject} even do that? {VERB/r_k/don't/doesn't/CAP} {PRONOUN/r_k/subject} want to be a good c_nClan cat? It doesn't make any sense.",
             "Anyway, that's all! I'm going to go back to playing now. If anyone else isn't following the rules, I'll come back and tell you!"
         ]

@@ -68,6 +68,7 @@ def test():
         "r_k": _r,
         "t_a": _r,
         "parent": _r,
+        "parent1": _r,
         "sibling": _r,
         "t_s": _r,
         "t_k": _r,
@@ -82,12 +83,22 @@ def test():
         "r_q": _r,
         "r_k": _r,
         "r_e": _r,
+        "crush1": _r,
         "their_crush": _r,
         "your_crush": _r,
         "mate1": _r,
         "t_cc": _r,
         "r_w": _r,
-        "y_a": _r
+        "y_a": _r,
+        "r_s": _r,
+        "r_i": _r,
+        "y_s": _r,
+        "y_l": _r,
+        "r_d": _r,
+        "df_y_a": _r,
+        "r_c_sc": _r,
+        "a_n": _r,
+        "t_q": _r
     }
     
     for x in range(0, 11):

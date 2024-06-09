@@ -696,7 +696,7 @@
             "Seriously. I'm not the kind of cat to exercise my physical muscles. I much prefer to exercise my mental ones.",
             "I get to come up with and practice new ideas almost every day. There's a level of innovation with this job that I just adore compared to the monotonous life of a warrior.",
             "Sure, I could be a mediator or a permanent queen, but even if I still had the option, even if I were still an apprentice, I'd still choose the medicine den life any day.",
-            "...Even though it means I have to explain to r_c that {PRONOUN/r_c/subject} {PRONOUN/r_c/don't/doesn't} have moons of experience, and the herbs {PRONOUN/r_c/subject} tried to feed someone are permanent sleep herbs, not temporary sleep herbs.",
+            "...Even though it means I have to explain to r_c that {PRONOUN/r_c/subject} {VERB/r_c/don't/doesn't} have moons of experience, and the herbs {PRONOUN/r_c/subject} tried to feed someone are permanent sleep herbs, not temporary sleep herbs.",
             "And by \"permanent sleep herbs\" I mean water hemlock.",
             "But other than a little bit of life-or-death education, I love it!"
         ]
@@ -713,7 +713,7 @@
             "[You tell t_c that you'd love to, but you have something to do today.]",
             "What if I taught you how to fake a minor illness so you don't have to? I won't tell!",
             "[Sure, maybe you could keep that knowledge for later. You allow t_c to teach you, and spend the day spectating in the den.]",
-            "[While there, t_c tells you all {PRONOUN/t_c/subject} {PRONOUN/t_c/know/knows} about traveling herbs. This counts as productivity, right?]"
+            "[While there, t_c tells you all {PRONOUN/t_c/subject} {VERB/t_c/know/knows} about traveling herbs. This counts as productivity, right?]"
         ]
     ],
     "silly_med_burdock": [
@@ -1214,7 +1214,7 @@
         ],
         [
             "[t_c talks to some cat out of view.]",
-            "y_c is just the perfect little thing, {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} growing well for {PRONOUN/y_c/poss} age and I'm sure {PRONOUN/y_c/subject} {PRONOUN/y_c/are/is} going to be the greatest warrior someday. "
+            "y_c is just the perfect little thing, {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} growing well for {PRONOUN/y_c/poss} age and I'm sure {PRONOUN/y_c/subject} {VERB/y_c/are/is} going to be the greatest warrior someday. "
         ]
     ],
     "newborn_omen": [
