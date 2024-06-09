@@ -53,7 +53,18 @@ def test():
         "p2": _r,
         "(deadmentor)": _r,
         "(previous_mentor)": _r,
-        "mur_c": _r
+        "mur_c": _r,
+        "t_c": _r,
+        "y_c": _r,
+        "d_c": _r,
+        "d_n": _r,
+        "r_a": _r, 
+        "r_m": _r,
+        "y_p": _r,
+        "tm_n": _r,
+        "t_l": _r, 
+        "t_m": _r, 
+        "t_p": _r
     }
     
     for x in range(0, 11):
