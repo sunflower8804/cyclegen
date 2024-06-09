@@ -1136,7 +1136,7 @@ class TalkScreen(Screens):
         if not texts_list:
             texts_list['general'] = self.load_and_replace_placeholders(f"{resource_dir}general.json", cat, you)
 
-        if len(game.clan.talks) > 50:
+        if len(game.clan.talks) > 100:
             game.clan.talks.clear()
 
         # Assign weights based on tags
@@ -1214,7 +1214,6 @@ class TalkScreen(Screens):
         if "~" in text_chosen_key:
             text_chosen_key_split = text_chosen_key.split("~")
             cat.connected_dialogue[text_chosen_key_split[0]] = int(text_chosen_key_split[1])
-            print(f"current connected_dialogue {cat.connected_dialogue}")
         game.clan.talks.append(text_chosen_key)
         return new_text
 

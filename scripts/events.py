@@ -69,6 +69,7 @@ class Events:
         self.d_txt = None
         self.checks = [-1,-1,-1]
         self.cat_dict = {}
+        self.current_events = []
 
     def one_moon(self):
         """
@@ -393,6 +394,7 @@ class Events:
         game.clan.affair = False
         game.clan.exile_return = False
         
+        self.current_events.clear()
         self.check_achievements()
         self.generate_dialogue_focus()
         self.checks = [len(game.clan.your_cat.apprentice), len(game.clan.your_cat.mate), len(game.clan.your_cat.inheritance.get_blood_kits()), None]
@@ -1200,11 +1202,14 @@ class Events:
 
         for i in range(random.randint(0,5)):
             if possible_events:
-                current_event = self.adjust_txt(random.choice(possible_events))
+                event = random.choice(possible_events)
+                current_event = self.adjust_txt(event)
                 while current_event == "":
-                    current_event = self.adjust_txt(random.choice(possible_events))
+                    event = random.choice(possible_events)
+                    current_event = self.adjust_txt(event)
                 current_event = Single_Event(current_event)
-                if current_event not in game.cur_events_list:
+                if event not in self.current_events:
+                    self.current_events.append(event)
                     game.cur_events_list.append(current_event)
             else:
                 print('No possible events?') # im too lazy to figure out why this is happening but i wanna stop crashing
