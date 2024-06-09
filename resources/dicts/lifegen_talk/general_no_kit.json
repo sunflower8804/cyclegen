@@ -5399,7 +5399,7 @@
             "they_blind"
         ],
         [
-            "[t_c doesn't say anything when you try to talk to them. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} just playing with {PRONOUN/t_c/pos} plants - or whatever {PRONOUN/t_c/subject} {VERB/t_c/do/does} at this point. You don't care to figure it out.]"
+            "[t_c doesn't say anything when you try to talk to them. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} just playing with {PRONOUN/t_c/poss} plants - or whatever {PRONOUN/t_c/subject} {VERB/t_c/do/does} at this point. You don't care to figure it out.]"
         ]
     ],
     "silly_hate_nemesis": [
@@ -6613,7 +6613,7 @@
         ],
         [
             "[t_c just stares at you for a second, saying nothing.]",
-            "[Finally, {PRONOUN/t_c/subject} {PRONOUN/t_c/walk/walks} up to you, grabbing you with {PRONOUN/t_c/poss} claws and yanking you inches from {PRONOUN/t_c/poss} face.]",
+            "[Finally, {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} up to you, grabbing you with {PRONOUN/t_c/poss} claws and yanking you inches from {PRONOUN/t_c/poss} face.]",
             "Say that again."
         ]
     ],
@@ -13932,7 +13932,7 @@
             "Any"
         ],
         [
-            "[t_c is on the border between StarClan and the Dark Forest. You watch {PRONOUN/t_c/objecg} curiously.]",
+            "[t_c is on the border between StarClan and the Dark Forest. You watch {PRONOUN/t_c/object} curiously.]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/reach/reaches} out a paw to step onto the starry ground, but quickly {VERB/t_c/pull/pulls} back as if burned.]"
         ]
     ],
@@ -15381,7 +15381,7 @@
             "they_deaf"
         ],
         [
-            "[You find t_c sticking {PRONOUN/t_c/pos} ghostly paw through the trunk of a tree, watching curiously.]",
+            "[You find t_c sticking {PRONOUN/t_c/poss} ghostly paw through the trunk of a tree, watching curiously.]",
             "[When {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, you both crack up.]",
             "Hahahaha!",
             "[It looks silly, but you can't pretend you've never done the same.]"
@@ -16334,7 +16334,7 @@
         ],
         [
             "[You arrive in the Dark Forest early, unsurprisingly unable to find your mentor.]",
-            "[You search, eventually finding {PRONOUN/t_c/objecr}... alone... sobbing.]",
+            "[You search, eventually finding {PRONOUN/t_c/object}... alone... sobbing.]",
             "[You decide to leave. When you return to your training spot later, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to act chipper and sweet as always.]",
             "[You wonder what that was about.]"
         ]

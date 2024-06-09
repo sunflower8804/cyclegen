@@ -68,9 +68,7 @@ def test():
         "r_k": _r,
         "t_a": _r,
         "parent": _r,
-        "pos": _r,
         "sibling": _r,
-        "walk": _r,
         "t_s": _r,
         "t_k": _r,
         "t_ka": _r,
@@ -80,20 +78,16 @@ def test():
         "t_p_pos": _r,
         "t_p_negative": _r,
         "m_n": _r,
-        "objecg": _r,
-        "objecr": _r,
         "t_mn": _r,
         "r_q": _r,
         "r_k": _r,
         "r_e": _r,
-        "press": _r,
         "their_crush": _r,
         "your_crush": _r,
-        "do": _r,
-        "poaa": _r,
-        "seem": _r,
-        "subkect": _r,
-        "mate1": _r
+        "mate1": _r,
+        "t_cc": _r,
+        "r_w": _r,
+        "y_a": _r
     }
     
     for x in range(0, 11):

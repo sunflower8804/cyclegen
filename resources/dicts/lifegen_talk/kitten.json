@@ -103,7 +103,7 @@
             "It was a good thing I caught it too, it'll make a great toy for my new game! That cat over there gave me the idea, {PRONOUN/d_c/subject} even helped me find the feather too!",
             "...What do you mean? That cat over there, the one by that pile of stones! {PRONOUN/d_c/subject/CAP} said that {PRONOUN/d_c/poss} name is d_c. {PRONOUN/d_c/subject/CAP} {VERB/d_c/don't/doesn't} look that familiar, but no one else has questioned it so I haven't either.",
             "Your face is kind of funny, it's like you've just seen a ghost! Oh, and before I forget, that cat wanted me to tell you that {PRONOUN/d_c/subject} {VERB/t_c/don't/doesn't} blame you for not making {PRONOUN/d_c/object} better and that it was {PRONOUN/d_c/poss} time to go.",
-            "I dunno where {PRONOUN/d_c/subject} went, but {PRONOUN/d_c/subject} {PRONOUN/d_c/seem/seems} pretty happy! Anyways, I really have to start setting up my new game, do you want to play it with me?",
+            "I dunno where {PRONOUN/d_c/subject} went, but {PRONOUN/d_c/subject} {VERB/d_c/seem/seems} pretty happy! Anyways, I really have to start setting up my new game, do you want to play it with me?",
             "Huh. You don't look busy, but ok! Maybe later then. Bye!"
         ]
     ],
@@ -1520,7 +1520,7 @@
             "Oh, y_c, what do I do?",
             "[You promise t_c you'll wake {PRONOUN/t_c/object} up just in time to play with {PRONOUN/t_c/poss} friend.]",
             "You will? y_c, thank you, thank you, thank you! This is why we're the bestest of friends!",
-            "[t_c dramatically falls into {PRONOUN/t_c/poss} nest in the nursery. {PRONOUN/t_c/subkect/CAP}{VERB/t_c/'re/'s} out as soon as {PRONOUN/t_c/subject} {VERB/t_c/hit/hits} the moss.]",
+            "[t_c dramatically falls into {PRONOUN/t_c/poss} nest in the nursery. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} out as soon as {PRONOUN/t_c/subject} {VERB/t_c/hit/hits} the moss.]",
             "...",
             "[As promised, you slowly nudge t_c awake at sunhigh and remind {PRONOUN/t_c/object} of {PRONOUN/t_c/poss} playdate. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps} up happily and {VERB/t_c/run/runs} to {PRONOUN/t_c/poss} friend with wonder and joy in {PRONOUN/t_c/poss} eyes - though not without tripping over {PRONOUN/t_c/poss} own paws.]"
         ]
@@ -1595,7 +1595,7 @@
         [
             "[You finish chiding t_c for {PRONOUN/t_c/poss} latest bit of mischief.]",
             "Yes, y_c. Understood, y_c.",
-            "[{PRONOUN/t_c/subkect/CAP} {VERB/t_c/stalk/stalks} off to the other side of the nursery, seemingly having learned {PRONOUN/t_c/poss} lesson.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/stalk/stalks} off to the other side of the nursery, seemingly having learned {PRONOUN/t_c/poss} lesson.]",
             "[But an evil glint in {PRONOUN/t_c/poss} eye betrays that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} already planning {PRONOUN/t_c/poss} next trick.]"
         ]
     ],
@@ -2155,7 +2155,7 @@
         ],
         [
             "y_c, question of the day, incoming! In, 3! 2! 1!",
-            "Why does r_c stink so badly, it's like {PRONOUN/r_c/subject} {PRONOUN/t_c/haven't/hasn't} had a bath in a moon.",
+            "Why does r_c stink so badly, it's like {PRONOUN/r_c/subject} {VERB/t_c/haven't/hasn't} had a bath in a moon.",
             "Hey, I said it was a question, not that I had an answer."
         ]
     ],
@@ -2379,7 +2379,7 @@
         ],
         [
             "y_c! y_c! r_k told me I had Deathcough!! Am I gonna die? Please tell me!",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/start/starts} to tear up, but you quickly reassure {PRONOUN/t_c/oobject} that no- {PRONOUN/t_c/subject} {VERB/t_c/are/is} not going to die.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/start/starts} to tear up, but you quickly reassure {PRONOUN/t_c/object} that no- {PRONOUN/t_c/subject} {VERB/t_c/are/is} not going to die.]",
             "So... {PRONOUN/r_k/subject} tricked me again?"
         ]
     ],
@@ -2556,7 +2556,7 @@
         [
             "y_c!",
             "[As you step out of the nursery, you find yourself face-to-face with a very annoyed t_c.]",
-            "y_c, r_k keeps cheating at play hide-and-seek. {PRONOUN/r-k/subject/CAP} won't stop peeking while we're trying to hide, so {PRONOUN/r_k/subject} already {VERB/r_k/know/knows} where to find us! It's not fair!",
+            "y_c, r_k keeps cheating at play hide-and-seek. {PRONOUN/r_k/subject/CAP} won't stop peeking while we're trying to hide, so {PRONOUN/r_k/subject} already {VERB/r_k/know/knows} where to find us! It's not fair!",
             "Can you tell {PRONOUN/r_k/object} to stop? I don't know if I want to keep playing with someone who won't follow the rules of the game."
         ]
     ],
@@ -2914,7 +2914,7 @@
             "[r_c snickers and reminds t_c that you're a newborn, far younger than {PRONOUN/t_c/subject} are and that you probably don't understand a word {PRONOUN/t_c/subject} said. t_c puffs out {PRONOUN/t_c/poss} little chest.]",
             "Well, yeah, I know that! But I thought that maybe {PRONOUN/y_c/subject}'d like to see one for the first time because then that way {PRONOUN/y_c/subject}'ll like playing games with me!",
             "[r_c states that it's a nice gesture and lovely thought but maybe y_p wouldn't want {PRONOUN/y_p/poss} kittens playing with such a big toy until you're a little older.]",
-            "[y_p laughs it off and pushes the ball towards t_c and asks if {PRONOUN/t_c/posssubject} {VERB/t_c/want/wants} to play.]",
+            "[y_p laughs it off and pushes the ball towards t_c and asks if {PRONOUN/t_c/poss/subject} {VERB/t_c/want/wants} to play.]",
             "Really? YES!",
             "[You squint as you watch your loving {PRONOUN/t_c/parent} paw the ball back and forth, your whiskers twitch eagerly, maybe when you're older this will be a fun game! You will remember this.]"
         ]
@@ -4891,7 +4891,7 @@
         [
             "Aah! Dark Forest cat! Get out of the waking world, now!",
             "[In your adventures through the world you once called home, a ghost seems to have scented you.]",
-            "[You feel a hollow, ghostly claw rake your muzzle before you can react, and with a hiss, {PRONOUN/t_c/subkect} {VERB/t_c/flee/flees}.]"
+            "[You feel a hollow, ghostly claw rake your muzzle before you can react, and with a hiss, {PRONOUN/t_c/subject} {VERB/t_c/flee/flees}.]"
         ]
     ],
     "they_ur_J12": [
