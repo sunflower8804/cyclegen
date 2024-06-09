@@ -4163,5 +4163,25 @@
         [
             "You're really scary looking, for being so small..."
         ]
+    ],
+    "sckitten_J1": [
+        [
+            "you_sc",
+            "any"
+        ],
+        [
+            "Hey, there, little guy!",
+            "You should probably get back up to StarClan. You're not supposed to be here anymore.",
+            "[What {VERB/t_c/do/does} {PRONOUN/t_c/subject} mean?]"
+        ]
+    ],
+    "urkitten_J1": [
+        [
+            "you_dead",
+            "any"
+        ],
+        [
+            "[t_c looks sad to see you.]"
+        ]
     ]
 }
