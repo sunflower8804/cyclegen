@@ -290,7 +290,7 @@ class SpriteInspectScreen(Screens):
                                                                   tool_tip_text='Move to favourite group 3',
                                                                   starting_height=2)
         self.cat_elements["favourite_button_3"] = UIImageButton(scale(pygame.Rect
-                                                                        ((x_pos, 287), (56, 56))),
+                                                                        ((x_pos, 127), (56, 56))),
                                                                   "",
                                                                   object_id="#fav_star_3",
                                                                   manager=MANAGER,
