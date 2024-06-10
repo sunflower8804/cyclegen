@@ -63,7 +63,7 @@
         ],
         "intro": [
             "l_n... What do you think of {PRONOUN/l_n/object}?",
-            "{PRONOUN/l_n/poss} leadership style, the choices {PRONOUN/m_c/subject} {VERB/l_n/have/has} made ... Would you have done it differently, if you were in that position?",
+            "{PRONOUN/l_n/poss/CAP} leadership style, the choices {PRONOUN/l_n/subject}{VERB/l_n/'ve/'s} made ... Would you have done it differently, if you were in that position?",
             "I'm just curious. What you think of who's in charge could reveal a lot about your character."
         ],
         "intro_choices": {
@@ -2515,7 +2515,7 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "No, I haven't seen {PRONOUN/d_n/subject}.",
+                "text": "No, I haven't seen {PRONOUN/d_n/object}.",
                 "next_scene": "ReportFail"
             },
             "choice2": {
