@@ -9901,7 +9901,7 @@
             "they_deaf"
         ],
         [
-            "[You go to talk to t_c, but right as you open your mouth, {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} t_m across camp and {PRONOUN/t_c/rush/rushes} to greet them.]",
+            "[You go to talk to t_c, but right as you open your mouth, {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} t_m across camp and {PRONOUN/t_c/rush/rushes} to greet {PRONOUN/t_m/object}.]",
             "[The two cats intertwine their tails and quickly rush off to share a meal together. Clearly, they're too busy with couple time to pay you any mind ...]"
         ]
     ],
