@@ -48,22 +48,8 @@
         ],
         [
             "[t_c stares at their_crush talking with r_w across camp, expression filled with pain.]",
-            "[When their_crush laughs and bats at them, t_c digs their claws into the soil.]",
-            "[Yeesh ... probably best to give them some space.]"
-        ]
-    ],
-    "gen_crush5_apprentice": [
-        [
-            "no_kit",
-            "they_app",
-            "brooding",
-            "assertive",
-            "unlawful"
-        ],
-        [
-            "[t_c stares at their_crush talking with r_a across camp, expression filled with pain.]",
-            "[When their_crush laughs and bats at them, t_c digs their claws into the soil.]",
-            "[Yeesh ... probably best to give them some space.]"
+            "[When their_crush laughs and bats at {PRONOUN/r_w/object}, t_c digs {PRONOUN/t_c/poss} claws into the soil.]",
+            "[Yeesh ... probably best to give {PRONOUN/t_c/object} some space.]"
         ]
     ],
     "trust_crush": [
