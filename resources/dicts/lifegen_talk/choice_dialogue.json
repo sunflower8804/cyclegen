@@ -1631,7 +1631,7 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "{PRONOUN/r_w/subject} obviously {VERB/r_w/hate/hates} you!",
+                "text": "{PRONOUN/r_w/subject/CAP} obviously {VERB/r_w/hate/hates} you!",
                 "next_scene": "obviously_hate_you"
             },
             "choice2": {
