@@ -25,7 +25,7 @@
         ],
         [
             "Yeah, I gave r_w nasty herbs on purpose.",
-            "What? They deserved it! {PRONOUN/r_w/subject/CAP}{VERB/r_w/'ve/'s} really been getting on my nerves lately. And it's not like {PRONOUN/r_w/subject}'ll ever know...",
+            "What? {PRONOUN/r_w/subject/CAP} deserved it! {PRONOUN/r_w/subject/CAP}{VERB/r_w/'ve/'s} really been getting on my nerves lately. And it's not like {PRONOUN/r_w/subject}'ll ever know...",
             "Come on! Don't be such a buzz-kill. It was fun. Maybe I'll even invite you to come see {PRONOUN/r_w/poss} face next time.. It was hilarious!"
         ]
     ],
@@ -201,7 +201,7 @@
             "Okay. Ya got me. Truth is, I've been struggling a little lately because ... Well, I don't exactly feel like I know what I'm doing here.",
             "My Clanmates' lives are in my paws ... I'm responsible for interpreting signs from StarClan ... What if I miss something? What if there's some crucial clue or omen I overlook because I'm too busy doing ... I dunno, anything else?",
             "It's just a lot, knowing that one small mistake on my part could cost a cat their life! Does every cat experience this kind of pressure, or is it just me?",
-            "[You assure t_c that StarClan wouldn't set {PRONOUN/t_c/object} up to fail, and you'll always be by {PRONOUN/t_c/poss} side to back them up.]",
+            "[You assure t_c that StarClan wouldn't set {PRONOUN/t_c/object} up to fail, and you'll always be by {PRONOUN/t_c/poss} side to back {PRONOUN/t_c/object} up.]",
             "... Thanks, y_c. I needed to hear that."
         ]
     ],
@@ -490,7 +490,7 @@
             "You mind if I join you?",
             "Hm... look over there. r_c's looking shifty next to the fresh kill pile... Oh!",
             "Oh jeez, {PRONOUN/r_c/subject} just launched that mouse across camp! How did no one else see that?",
-            "I, uh... Guess people get their entertainment from somewhere? At least {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} retrieving it?"
+            "I, uh... Guess cats get their entertainment from somewhere? At least {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} retrieving it?"
         ]
     ],
     "introspective_Med_2": [
@@ -654,10 +654,10 @@
             "Gathering herbs, sorting them, tending to those who need tended to, not to mention all the things that aren't part of the job that I want to accomplish. Oh, if only I could clone myself.",
             "Well, maybe...",
             "No. Bad idea. What happens if the t_c clones clone themselves ...",
-            "And then those t_c clones clone themselves, until there are Too Many t_cs ...",
-            "And we'd have to have the leader force us all to watch the leaves change colors...",
-            "Until they find out which one is really me?",
-            "[t_c exhales dramatically after finishing the long sentence, but still seems like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} debating the impossible idea.]"
+            "And then those t_c clones clone themselves, until there are too many t_cs ...",
+            "And we'd have to have l_n force us all to watch the leaves change colors...",
+            "Until {PRONOUN/l_n/subject} {VERB/l_n/find/finds} out which one is really me?",
+            "[t_c exhales dramatically after finishing the long sentence, but it still seems like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} debating the impossible idea.]"
         ]
     ],
     "silly_med_dream": [
@@ -903,9 +903,9 @@
             "Leaffall"
         ],
         [
-            "[You say something to t_c but they don't seem to realize.]",
+            "[You say something to t_c but {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} seem to realize.]",
             "What, huh? Oh, sorry y_c, but I'm really busy right now.",
-            "c_nclan is always so sick during these seasons. I'm stressed out trying to get last-minute herbs and remedies prepared.",
+            "c_nClan is always so sick during these seasons. I'm stressed out trying to get last-minute herbs and remedies prepared.",
             "[t_c looks guilty, but {PRONOUN/t_c/subject} {VERB/t_c/continue/continues} {PRONOUN/t_c/poss} work.]"
         ]
     ],
@@ -952,7 +952,7 @@
         ],
         [
             "Hm..? Oh hello, y_c! Today is your day off, right? Do you think you could help me with something real fast?",
-            "I need to do a check up on r_c, can you go and get them for me? I have some berries to give you for your work!"
+            "I need to do a check up on r_c, can you go and get {PRONOUN/r_c/object} for me? I have some berries to give you for your work!"
         ]
     ],
     "sweet_meddie_6": [
@@ -1009,7 +1009,7 @@
             "Oh, y_c! What happened?",
             "You tried to mediate something in o_cClan and they attacked you?",
             "At least it isn't too serious... here, have these. They should make you feel better. Just try to take it easy, okay?",
-            "I'll talk to their Medicine Cat at the next meeting, I promise."
+            "I'll talk to their medicine cat at the next meeting, I promise."
         ]
     ],
     "sweet_meddie_11": [
@@ -1024,9 +1024,9 @@
         [
             "[t_c's gaze seems fixated on the sky, unwavering. Something must be bugging {PRONOUN/t_c/object}, you think.]",
             "There has to be something we can do...",
-            "[You feel your heart stop as they mention a certain cat...]",
+            "[You feel your heart stop as {PRONOUN/t_c/subject} {VERB/t_c/mention/mentions} a certain cat...]",
             "d_c... What did all of that mean? What did you mean... Why did you tell me this? I have to help... I have to.",
-            "[You decide it's best to leave {PRONOUN/t_c/object} to it. You know they'd immediately give up trying to figure /whatever that is/ out, just to make sure you're doing alright.. but it sounds like this is important.]"
+            "[You decide it's best to leave {PRONOUN/t_c/object} to it. You know {PRONOUN/t_c/subject}'d immediately give up trying to figure out whatever that is, just to make sure you're doing alright.. but it sounds like this is important.]"
         ]
     ],
     "sweet_meddie_12": [
@@ -1089,7 +1089,7 @@
             "y_c! I brought the herbs for r_k.",
             "[t_c gives you a smile, settling down next to you as you gently help the little one eat {PRONOUN/r_k/poss} herbs.]",
             "You know, I never saw our roles as that different. Like- of course, there's differences, but at the end of the day... we're caring for our Clanmates. We guide them, and we help them when they fall down.",
-            "[The sweet cat has a playful smile appear on {PRONOUN/t_c/poss} face as they glance at you.]",
+            "[The sweet cat has a playful smile appear on {PRONOUN/t_c/poss} face as {PRONOUN/t_c/subject} {VERB/t_c/glance/glances} at you.]",
             "Although, your patients are way cuter when they're being stubborn."
         ]
     ],
@@ -1284,7 +1284,7 @@
         [
             "[While the rest of the Clan is fast asleep in their nests, you are woken up by a paw poking you in the side.]",
             "Rise and shine y_c! C'mon, up! Up! Up! Let's go! I want to try and get an early start on today's lesson.",
-            "[t_c is certainly an excellent mentor, there's no doubt about that. However, as you sleepily follow them out of camp, you wish that they were slightly less enthusiastic when it comes to training.]"
+            "[t_c is certainly an excellent mentor, there's no doubt about that. However, as you sleepily follow {PRONOUN/t_c/object} out of camp, you wish that {PRONOUN/t_c/subject} {VERB/t_c/were/was} slightly less enthusiastic when it comes to training.]"
         ]
     ],
     "general_sh_J4": [
@@ -1327,7 +1327,7 @@
             "y_c!",
             "[t_c screeches and quickly stands, fur on end and startled by the sudden nightly appearance.]",
             "I, ha, wasn't expecting a visitor! y_c, I apologize but it is too late to heal you today. How about you go back to your den and--",
-            "[Your sudden movement cuts {PRONOUN/t_c/object} off, circling their figure to take some cobwebs for yourself. t_c watches from the sidelines with an unreadable, yet nervous expression.]",
+            "[Your sudden movement cuts {PRONOUN/t_c/object} off, circling {PRONOUN/t_c/poss} figure to take some cobwebs for yourself. t_c watches from the sidelines with an unreadable, yet nervous expression.]",
             "Well-- okay. My point still stands and-- ah. And y_c leaves.",
             "[t_c watches your retreat with a look that can be passed as pity, but you know {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} just as afraid. Just as hesitant...]"
         ]
@@ -1407,7 +1407,7 @@
         ],
         [
             "So sorry, y_c. Could we have that private session tomorrow? Something's come up and I have to re-organize the medicine den.",
-            "... Despite the fact that was r_m's job... What am I going to do with them?"
+            "... Despite the fact that was r_m's job... What am I going to do with {PRONOUN/r_m/object}?"
         ]
     ],
     "stable_Medicine_Cat_Gen_02": [
@@ -1447,8 +1447,8 @@
         [
             "Oh! Hello, there, y_c. Is everything alright?",
             "Heh, you noticed, huh? Yeah, I'm having a bit of trouble here.",
-            "You wouldn't happen to know the best way to treat r_s, would you? They're not responding to the usual methods...",
-            "[You and t_c have a lengthy conversation, debating possible rememdies for their ill patient.]"
+            "You wouldn't happen to know the best way to treat r_s, would you? {PRONOUN/r_s/subject/CAP}{VERB/r_s/'re/'s} not responding to the usual methods...",
+            "[You and t_c have a lengthy conversation, debating possible remedies for {PRONOUN/t_c/poss} ill patient.]"
         ]
     ],
     "trainee_living_2c": [
@@ -1461,7 +1461,7 @@
         [
             "[t_c visits your den once again. {PRONOUN/t_c/poss/CAP} pelt is looking ragged, with clumps of fur missing from {PRONOUN/t_c/poss} shoulder.]",
             "I got these from some thorns I found in my nest. I must not have sorted through the moss properly...",
-            "[... You don't believe them.]"
+            "[... You don't believe {PRONOUN/t_c/object}.]"
         ]
     ],
     "trainee_living_4c": [
