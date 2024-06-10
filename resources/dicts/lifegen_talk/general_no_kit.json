@@ -17447,7 +17447,8 @@
         [
             "no_kit",
             "brooding",
-            "any"
+            "any",
+	    "clan_has_kits"
         ],
         [
             "[You notice t_c playing with some kits, a rare smile on {PRONOUN/t_c/poss} face.]",
