@@ -3007,6 +3007,57 @@
             }
         }
     },
+    "#yourcat_filter": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/yourcat_filter.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/yourcat_filter_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/yourcat_filter_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/yourcat_filter_unavailable.png"
+            }
+        }
+    },
+    "#yourcat_filter_selected": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/yourcat_filter_selected.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/yourcat_filter_selected_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/yourcat_filter_selected_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/yourcat_filter_selected_unavailable.png"
+            }
+        }
+    },
+    "#faves_dropdown": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/faves_dropdown.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/faves_dropdown_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/faves_dropdown_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/faves_dropdown_unavailable.png"
+            }
+        }
+    },
     "#fave_filter_2": {
         "prototype": "#image_button",
         "images": {
