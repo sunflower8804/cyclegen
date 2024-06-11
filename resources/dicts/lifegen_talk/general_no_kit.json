@@ -6163,7 +6163,7 @@
             "they_blind"
         ],
         [
-            "[t_c seems to relax into your side as {PRONOUN/t_c/subject} {VERB/settle/settles} down next to you, watching the sun set.]",
+            "[t_c seems to relax into your side as {PRONOUN/t_c/subject} {VERB/t_c/settle/settles} down next to you, watching the sun set.]",
             "You know... I love moments like these, just you and me... and the sunset...",
             "It's the only time I can really... truly... relax...",
             "[Looks like t_c fell asleep leaning on your shoulder... Welp, looks like you're stuck there.]"
@@ -9901,7 +9901,7 @@
             "they_deaf"
         ],
         [
-            "[You go to talk to t_c, but right as you open your mouth, {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} t_m across camp and {PRONOUN/t_c/rush/rushes} to greet {PRONOUN/t_m/object}.]",
+            "[You go to talk to t_c, but right as you open your mouth, {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} t_m across camp and {VERB/t_c/rush/rushes} to greet {PRONOUN/t_m/object}.]",
             "[The two cats intertwine their tails and quickly rush off to share a meal together. Clearly, they're too busy with couple time to pay you any mind ...]"
         ]
     ],
