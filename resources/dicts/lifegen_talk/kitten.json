@@ -844,7 +844,7 @@
         [
             "Hey, y_c?",
             "How come everyone else seems to have so many more friends than me?",
-            "What? I have to go out of my way to talk to people, to get them to become my friend?",
+            "What? I have to go out of my way to talk to othe cats to get them to become my friend?",
             "... Is that seriously how it works?"
         ]
     ],
@@ -894,7 +894,7 @@
         [
             "y_c!! Hiii!! I have a question for you, if you don't mind answering?",
             "I worked really hard and weaved flowers into r_c's nest, but I'm worried {PRONOUN/r_c/subject} won't like it! I don't wanna make {PRONOUN/r_c/object} sad...",
-            "Can you take a look at it?? I don't mind undoing it all if it makes them happier!"
+            "Can you take a look at it?? I don't mind undoing it all if it makes {PRONOUN/r_c/object} happier!"
         ]
     ],
     "sweet_kit_2": [
@@ -1108,9 +1108,9 @@
             "sweet"
         ],
         [
-            "y_c! Can you put me on a patrol, pretty please? I wanna go and get some flowers for the Nursery!",
+            "y_c! Can you put me on a patrol, pretty please? I wanna go and get some flowers for the nursery!",
             "No? Why not? I'll be good! ... Because I'm a kit? Oh... I forgot about that, hehe.",
-            "Well uh... Could you please get me some flowers for the Nursery? One of my denmates was feeling down and I wanna make them feel better, hehe.",
+            "Well uh... Could you please get me some flowers for the nursery? r_k was feeling down and I wanna make {PRONOUN/r_k/object} feel better, hehe.",
             "Thanks a bunch!"
         ]
     ],
@@ -1505,7 +1505,7 @@
             "[You butt your tiny little nose into the medicine den, where you see t_c sitting up, completely unbothered, on a broken nest formerly made from intricately woven sticks. It seems as though some of them have been pulled out and laid on the floor to play sticks with r_m.]",
             "Oh-my-gosh! Hi, y_c! I haven't seen you since, woah.. One, two, three, four hours ago? That's, oh my goodness... That's the first time I ever counted that high! Oh, I wanna go climb stuff with you so bad...",
             "[The medicine cat gives t_c a tentative but affectionate look, as if to say 'Not again!' {PRONOUN/r_m/subject/CAP} {VERB/t_c/lean/leans} down and {VERB/t_c/whisper/whispers} something in t_c's ear.]",
-            "Oh, they said that's not a good idea. Awh, okay...",
+            "Oh, {PRONOUN/r_m/subject} said that's not a good idea. Awh, okay...",
             "Well, wanna play sticks with us instead?"
         ]
     ],
@@ -1570,7 +1570,7 @@
             "y_c!",
             "Do you think I could climb up that big rock wall up there? What do you think is on the other side?",
             "Maybe it's that thing that turns cats into leaders, like the founder c_nClan cat found when they bested that tyrannical old cat!",
-            "You know that one? I think it's the same one l_n used. Maybe I'll ask them about it."
+            "You know that one? I think it's the same one l_n used. Maybe I'll ask {PRONOUN/l_n/object} about it."
         ]
     ],
     "broodingnewborn": [
@@ -2507,7 +2507,7 @@
         ],
         [
             "[Everyone sure seems to pay t_c a lot of attention ...]",
-            "[Cats are constantly visiting them in the nursery, showering {PRONOUN/t_c/object} with gifts and praise.]",
+            "[Cats are constantly visiting {PRONOUN/t_c/object} in the nursery, showering {PRONOUN/t_c/object} with gifts and praise.]",
             "[But when {PRONOUN/t_c/subject} {VERB/t_c/catch/catches} you eyeing {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/cross/crosses} the nursery and {VERB/t_c/cuddle/cuddles} up against you with a purr.]",
             "Hi, y_c!",
             "[Suddenly, you see why {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} so popular.]"
@@ -5150,7 +5150,7 @@
         ],
         [
             "I told r_m about you, but {PRONOUN/r_m/subject} said I was lying.",
-            "No one is allowed to see ghosts besides them, I guess.",
+            "No one is allowed to see ghosts besides {PRONOUN/r_m/object}, I guess.",
             "Does that mean I have to become a medicine cat?"
         ]
     ],
