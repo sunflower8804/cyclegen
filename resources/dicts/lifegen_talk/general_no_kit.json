@@ -9009,7 +9009,7 @@
         ],
         [
             "y_c, I just caught r_c looking at you funny. Are {PRONOUN/r_c/subject} giving you a hard time?",
-            "No? Good. Because if they were, I swear to StarClan ...",
+            "No? Good. Because if {PRONOUN/r_c/subject} {VERB/r_c/were/was}, I swear to StarClan ...",
             "[t_c trails off, lashing {PRONOUN/t_c/poss} tail in anger.]"
         ]
     ],
