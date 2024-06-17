@@ -386,47 +386,51 @@ class TalkScreen(Screens):
         resource_dir = "resources/dicts/lifegen_talk/"
         possible_texts = {}
 
-        if cat.status != 'exiled':
-            with open(f"{resource_dir}{cat.status}.json", 'r') as read_file:
-                possible_texts = ujson.loads(read_file.read())
+        # test
+        with open(f"{resource_dir}test.json", 'r') as read_file:
+                possible_texts = (ujson.loads(read_file.read()))
 
-        if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled']:
-            with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
-                possible_texts.update(ujson.loads(read_file.read()))
+        # if cat.status != 'exiled':
+        #     with open(f"{resource_dir}{cat.status}.json", 'r') as read_file:
+        #         possible_texts = ujson.loads(read_file.read())
 
-        if cat.status in ["rogue", "loner", "kittypet"]:
-            # former clancats only get their own file so we can write general dialogue about not knowing what a clan is
-            with open(f"{resource_dir}general_outsider.json", 'r') as read_file:
-                possible_texts4 = ujson.loads(read_file.read())
-                possible_texts.update(possible_texts4)
-        else:
-            with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
-                possible_texts.update(ujson.loads(read_file.read()))
+        # if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled']:
+        #     with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
+        #         possible_texts.update(ujson.loads(read_file.read()))
 
-            if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
-                with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
-                    possible_texts2 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts2)
+        # if cat.status in ["rogue", "loner", "kittypet"]:
+        #     # former clancats only get their own file so we can write general dialogue about not knowing what a clan is
+        #     with open(f"{resource_dir}general_outsider.json", 'r') as read_file:
+        #         possible_texts4 = ujson.loads(read_file.read())
+        #         possible_texts.update(possible_texts4)
+        # else:
+        #     with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
+        #         possible_texts.update(ujson.loads(read_file.read()))
 
-            if cat.status not in ["newborn"] and you.status not in ['newborn']:
-                with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
-                    possible_texts4 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts4)
+        #     if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
+        #         with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
+        #             possible_texts2 = ujson.loads(read_file.read())
+        #             possible_texts.update(possible_texts2)
 
-            if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
-                with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
-                    possible_texts3 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts3)
+        #     if cat.status not in ["newborn"] and you.status not in ['newborn']:
+        #         with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
+        #             possible_texts4 = ujson.loads(read_file.read())
+        #             possible_texts.update(possible_texts4)
 
-            if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
-                with open(f"{resource_dir}crush.json", 'r') as read_file:
-                    possible_texts3 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts3)
+        #     if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
+        #         with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
+        #             possible_texts3 = ujson.loads(read_file.read())
+        #             possible_texts.update(possible_texts3)
 
-            if game.clan.focus:
-                with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
-                    possible_texts5 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts5)
+        #     if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
+        #         with open(f"{resource_dir}crush.json", 'r') as read_file:
+        #             possible_texts3 = ujson.loads(read_file.read())
+        #             possible_texts.update(possible_texts3)
+
+        #     if game.clan.focus:
+        #         with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
+        #             possible_texts5 = ujson.loads(read_file.read())
+        #             possible_texts.update(possible_texts5)
                     
         return self.filter_texts(cat, possible_texts)
 
@@ -1127,6 +1131,7 @@ class TalkScreen(Screens):
 
             # Relationship conditions
             if you.ID in cat.relationships:
+                # intial relationship stuff
                 if cat.relationships[you.ID].dislike < 30 and 'hate' in tags:
                     continue
                 if cat.relationships[you.ID].romantic_love < 15 and 'romantic_like' in tags:
@@ -1147,8 +1152,135 @@ class TalkScreen(Screens):
                     continue
                 if (cat.relationships[you.ID].platonic_like > 20 or cat.relationships[you.ID].dislike > 20) and "neutral" in tags:
                     continue
+
+                # new relationship stuff!
+                skip_rel = False
+                for tag in tags:
+                    if tag.startswith("min_platonic_"):
+                        min_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].platonic_like < min_value:
+                            skip_rel = True
+                            break
+                    elif tag.startswith("max_platonic_"):
+                        max_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].platonic_like > max_value:
+                            skip_rel = True
+                            break
+
+                    if tag.startswith("min_romantic_"):
+                        min_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].romantic_love < min_value:
+                            skip_rel = True
+                            break
+                    elif tag.startswith("max_romantic_"):
+                        max_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].romantic_love > max_value:
+                            skip_rel = True
+                            break
+
+                    if tag.startswith("min_dislike_"):
+                        min_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].dislike < min_value:
+                            skip_rel = True
+                            break
+                    elif tag.startswith("max_dislike_"):
+                        max_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].dislike > max_value:
+                            skip_rel = True
+                            break
+
+                    if tag.startswith("min_jealousy_"):
+                        min_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].jealousy < min_value:
+                            skip_rel = True
+                            break
+                    elif tag.startswith("max_jealousy_"):
+                        max_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].jealousy > max_value:
+                            skip_rel = True
+                            break
+
+                    if tag.startswith("min_trust_"):
+                        min_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].trust < min_value:
+                            skip_rel = True
+                            break
+                    elif tag.startswith("max_trust_"):
+                        max_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].trust > max_value:
+                            skip_rel = True
+                            break
+
+                    if tag.startswith("min_comfort_"):
+                        min_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].comfortable < min_value:
+                            skip_rel = True
+                            break
+                    elif tag.startswith("max_comfort_"):
+                        max_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].comfortable > max_value:
+                            skip_rel = True
+                            break
+
+                    if tag.startswith("min_respect_"):
+                        min_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].admiration < min_value:
+                            skip_rel = True
+                            break
+                    elif tag.startswith("max_respect_"):
+                        max_value = int(tag.split("_")[-1])
+                        if cat.relationships[you.ID].admiration > max_value:
+                            skip_rel = True
+                            break
+                if skip_rel:
+                    continue
             else:
                 if any(i in ["hate","romantic_like","platonic_like","jealousy","dislike","comfort","respect","trust"] for i in tags):
+                    continue
+                values = ["platonic", "romantic", "dislike", "jealousy", "comfort", "trust", "respect"]
+                for v in values:
+                    if tag.startswith(f"max_{v}_"):
+                        continue
+                    if tag.startswith(f"min_{v}_"):
+                        continue
+
+            # dead moons tags!
+            if you.dead or cat.dead:
+                fadedage = game.config["fading"]["age_to_fade"]
+                
+                skip_processing = False
+
+                if you.dead:
+                    for tag in tags:
+                        if tag.startswith("min_you_deadfor_"):
+                            min_value = int(tag.split("_")[-1])
+                            if you.dead_for < min_value:
+                                print(f"Skipping due to {tag}")
+                                skip_processing = True
+                                break
+                        elif tag.startswith("max_you_deadfor_"):
+                            max_value = int(tag.split("_")[-1])
+                            if you.dead_for > max_value:
+                                print(f"Skipping due to {tag}")
+                                skip_processing = True
+                                break
+
+                if cat.dead and not skip_processing:
+                    for tag in tags:
+                        if tag.startswith("min_they_deadfor_"):
+                            min_value = int(tag.split("_")[-1])
+                            if cat.dead_for < min_value:
+                                print(f"Skipping due to {tag}")
+                                skip_processing = True
+                                break
+                        elif tag.startswith("max_they_deadfor_"):
+                            max_value = int(tag.split("_")[-1])
+                            if cat.dead_for > max_value:
+                                print(f"Skipping due to {tag}")
+                                skip_processing = True
+                                break
+
+                if skip_processing:
                     continue
 
             texts_list[talk_key] = talk
