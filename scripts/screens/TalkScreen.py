@@ -478,9 +478,12 @@ class TalkScreen(Screens):
             if "insult" in tags:
                 continue
 
-            # bc i dont wanna remove my deaf dialogue rn lol
-
             if you.moons == 0 and "newborn" not in tags:
+                continue
+
+            if "sc_faith" in tags and cat.faith < 0:
+                continue
+            if "df_faith" in tags and cat.faith > 0:
                 continue
 
             # if "deaf" in cat.permanent_condition and "they_deaf" not in tags:
