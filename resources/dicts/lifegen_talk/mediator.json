@@ -262,18 +262,18 @@
             "Just another reason why it's great to be a Clan cat."
         ]
     ],
-        "assertivemediatorapp_AJ6": [
+    "assertivemediatorapp_AJ6": [
 	[
-		"any",
-		"assertive",
-        "unabashed",
-		"min_platonic_45"
+	     "any",
+	     "assertive",
+             "unabashed",
+	     "min_platonic_45"
 	],
 	[
-		"Hey! I brought ya back a little gift from o_cClan’s territory.",
-		"[t_c brandishes a colorful, exotic flower and lays it at your paws.]",
-		"‘Innit cool? I knew you’d like it!",
-		"I saw this other cool plant, too, but didn’t get the chance to snag it … Next time, I’ll make sure to bring it back!"
+	     "Hey! I brought ya back a little gift from o_cClan’s territory.",
+	     "[t_c brandishes a colorful, exotic flower and lays it at your paws.]",
+	     "‘Innit cool? I knew you’d like it!",
+	     "I saw this other cool plant, too, but didn’t get the chance to snag it … Next time, I’ll make sure to bring it back!"
 	]
     ],
 
@@ -420,57 +420,16 @@
             "I'll make all of c_nClan proud!"
         ]
     ],
-    "assertive_elder": [
-        [
-            "Any",
-            "assertive",
-            "neutral",
-            "platonic_like"
-        ],
-        [
-            "y_c, can you believe it? I actually got to mediate a real, serious argument today! Eeee, so cool!!!",
-            "I mean, uh, definitely not cool. I'm definitely very serious and respectful towards my sacred duty to my Clan.",
-            "... Is tm_n still there?"
-        ]
-    ],
-    "assertive_elder_2": [
-        [
-            "Any",
-            "assertive",
-            "platonic_like"
-        ],
-        [
-            "Er, sorry, y_c. I can't chat right now ...",
-            "tm_n really needs me to mediate this argument, and I kinda actually have to focus.",
-            "I'll come and find you as soon as I'm free, though, okay?"
-        ]
-    ],
     "assertive_elder_3": [
         [
             "mediator",
+	    "mediator apprentice",
             "assertive"
         ],
         [
             "Knowing what we know from mediating their conflicts, if everyone in camp got into a fight ... Who d'you think would win?",
             "Can be mental. Or physical. Either option would be interesting.",
             "Personally, I'm betting on r_c ... in both categories."
-        ]
-    ],
-    "assertiveapp_30": [
-        [
-            "Any",
-            "assertive",
-            "silly",
-            "unlawful",
-            "kitten",
-            "from_adopted_kit",
-            "from_kit",
-            "from_your_apprentice"
-        ],
-        [
-            "[t_c stumbles across camp to you, soaking wet and covered in mud.]",
-            "y_c! Before you get mad, I didn't do it!",
-            "[The very peeved-off looking deputy locks eyes with you and storms in your direction. What mischief did t_c get into this time?]"
         ]
     ],
     "assertive_elder_4": [
@@ -544,17 +503,6 @@
             "And if you mess up, I'll be right here to help you. It is my job, after all! *Wink*"
         ]
     ],
-    "assertivemediatorapp_2": [
-        [
-            "Any",
-            "assertive"
-        ],
-        [
-            "I have my first meeting with another Clan today ... wish me luck, will ya?",
-            "When I get back, I'll tell you all about the other Clan's territory! Their leader, their prey ... Everything you've ever wondered about!",
-            "Don't wait up, huh? I'll be back before you know it!"
-        ]
-    ],
     "assertivemedapp_3": [
         [
             "kitten",
@@ -603,35 +551,6 @@
             "But don't get too cocky. I'm armed and dangerous with conflict resolution skills! Haha!"
         ]
     ],
-    "assertivemediatorapp_6": [
-        [
-            "Any",
-            "assertive",
-            "from_your_apprentice"
-        ],
-        [
-            "Hey, y_c! When do we get to visit o_cClan territory? Can we go right now?",
-            "Are we allowed to just cross the borders as we please or is there some sort of warning system involved?",
-            "Does the o_cClan mediator know about me yet?",
-            "Ah, whatever. I'm sure I'll find out when I get there. Let's go!!!",
-            "[t_c takes off across camp. You aren't quite sure how to tell {PRONOUN/t_c/object} there wasn't even a o_cClan visit scheduled for today.]"
-        ]
-    ],
-    "assertivemediatorapp_7": [
-        [
-            "Any",
-            "assertive",
-            "from_your_apprentice"
-        ],
-        [
-            "y_c? I might've ... goofed something up.",
-            "Two warriors were fighting, and I tried using the de-escalation strategies you taught me, but they wouldn't listen! They just kept on arguing louder and louder!",
-            "... Did I talk over them?",
-            "Yeah, maybe a little. But it's not my fault! They wouldn't stop arguing!",
-            "[You explain to your apprentice the importance of making all parties feel heard and understood while mediating a conflict.]",
-            "Thanks, y_c. Next time, I won't let you down!"
-        ]
-    ],
     "assertivemediatorapp_8": [
         [
             "mediator",
@@ -640,19 +559,6 @@
         [
             "*Sigh* Looks like the warriors are fighting again ...",
             "Do you wanna handle this one, or should I?"
-        ]
-    ],
-    "assertive_dislike": [
-        [
-            "Any",
-            "assertive",
-            "cool",
-            "silly",
-            "hate"
-        ],
-        [
-            "Hey y_c. Why don't you jump off a cliff? It's a new thing every cat in the Clan is trying.",
-            "[t_c is staring at you resentfully.]"
         ]
     ],
     "assertive_dislike1": [
@@ -718,7 +624,8 @@
         [
             "platonic_like",
             "assertive",
-            "Any"
+            "Any",
+	    "they_sameage"
         ],
         [
             "Guess who just got told to go to the Dark Forest ... for the third time today.",
