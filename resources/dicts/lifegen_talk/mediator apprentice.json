@@ -1806,8 +1806,8 @@
     "assertivemediatorapp_AJ4":  [
 	[
 		"any",
-        "assertive",
-        "min_platonic_40"
+        	"assertive",
+        	"min_platonic_40"
 	],
 	[
 		"I have my first meeting with another clan today … wish me luck, will ya?",
@@ -1830,10 +1830,10 @@
 	],
 	[
 		"[You ask t_c why {PRONOUN/t_c/subject} chose to become a mediator, given {PRONOUN/t_c/poss} adventurous personality.]",
-        "Ah, well, that’s easy … Mediation is full of adventure!",
-        "I get to explore far and wide, collaborating with mediators across territories, and get to know all sorts of different cats! That’s plenty of excitement, no?",
-        "You might think you know life-or-death situations on the battlefield, but when you’re a mediator, the stakes are even higher. My decisions could be the difference between peace among the clans, or bloody mayhem. It’s terrifying … but thrilling, too!",
-        "There’s lots of different paths a cat can take in this world, but I know this is the path for me. Can you say the same?"
+        	"Ah, well, that’s easy … Mediation is full of adventure!",
+        	"I get to explore far and wide, collaborating with mediators across territories, and get to know all sorts of different cats! That’s plenty of excitement, no?",
+       		"You might think you know life-or-death situations on the battlefield, but when you’re a mediator, the stakes are even higher. My decisions could be the difference between peace among the clans, or bloody mayhem. It’s terrifying … but thrilling, too!",
+        	"There’s lots of different paths a cat can take in this world, but I know this is the path for me. Can you say the same?"
 	]
     ],
 
@@ -1841,7 +1841,7 @@
 	[
 		"any",
 		"assertive",
-        "unabashed",
+        	"unabashed",
 		"min_platonic_45"
 	],
 	[
@@ -1877,10 +1877,10 @@
 	],
 	[
 	    "Hey, y_c! When do we get to visit o_cClan territory? Can we go right now?",
-		"Are we allowed to just cross the borders as we please or is there some sort of warning system involved?",
-		"Does the o_cClan mediator know about me yet?",
-		"Ah, whatever. I’m sure I’ll find out when I get there. Let’s go!!!",
-		"[t_c takes off across camp. You aren’t quite sure how to tell {PRONOUN/t_c/object} there wasn’t even a o_c visit scheduled for today.]"
+	    "Are we allowed to just cross the borders as we please or is there some sort of warning system involved?",
+	    "Does the o_cClan mediator know about me yet?",
+	    "Ah, whatever. I’m sure I’ll find out when I get there. Let’s go!!!",
+	    "[t_c takes off across camp. You aren’t quite sure how to tell {PRONOUN/t_c/object} there wasn’t even a o_c visit scheduled for today.]"
 	]
     ],
 
@@ -1895,7 +1895,7 @@
 		"y_c? I might’ve … goofed something up.",
 		"d_n and r_w were fighting, and I tried using the de-escalation strategies you taught me, but they wouldn’t listen! They just kept on arguing louder and louder!",
 		"... Did I talk over them?",
-	    "Yeah, maybe a little. But it’s not my fault! They wouldn’t stop arguing!",
+	    	"Yeah, maybe a little. But it’s not my fault! They wouldn’t stop arguing!",
 		"[You explain to your apprentice the importance of making all parties feel heard and understood while mediating a conflict.]",
 		"Thanks, y_c. Next time, I won’t let you down!"
 	]
@@ -1917,7 +1917,7 @@
 	[
 		"platonic_like",
 		"assertive",
-        "they_sameage"
+        	"they_sameage"
 	],
 	[
 		"Guess who just got told to go to the Dark Forest … for the third time today.",
@@ -1941,7 +1941,7 @@
     "assertive_warrior_or_elder": [
 	[
 		"mediator",
-        "mediator apprentice",
+        	"mediator apprentice",
 		"assertive",
 		"platonic_like"
 	],
