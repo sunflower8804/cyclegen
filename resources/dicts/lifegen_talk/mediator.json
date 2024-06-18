@@ -262,6 +262,37 @@
             "Just another reason why it's great to be a Clan cat."
         ]
     ],
+        "assertivemediatorapp_AJ6": [
+	[
+		"any",
+		"assertive",
+        "unabashed",
+		"min_platonic_45"
+	],
+	[
+		"Hey! I brought ya back a little gift from o_cClan’s territory.",
+		"[t_c brandishes a colorful, exotic flower and lays it at your paws.]",
+		"‘Innit cool? I knew you’d like it!",
+		"I saw this other cool plant, too, but didn’t get the chance to snag it … Next time, I’ll make sure to bring it back!"
+	]
+    ],
+
+    "mediator_like_AJ": [
+	[
+		"no_kit",
+		"they_mediator",
+		"they_mediator_apprentice",
+		"min_platonic_30",
+		"they_assertive",
+		"they_unabashed"
+	],
+	[
+		"Ugh, it's sooo boring today. Everything's way too calm and peaceful -- how am I supposed to do my job?",
+		"Hey, why don't you go pick a fight with r_c, and then I can swoop in and mediate it?",
+		"Or, maybe we could get into a fight? C'mon, take a jab at me!",
+		"But don't get too cocky! I'm armed and dangerous with conflict resolution skills! Haha!"
+	]
+	],
     "introspective_MdtorApp": [
         [
             "any",
