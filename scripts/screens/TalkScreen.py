@@ -15,7 +15,8 @@ from scripts.game_structure.image_button import UIImageButton
 from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER, screen
 from enum import Enum  # pylint: disable=no-name-in-module
 from scripts.housekeeping.version import VERSION_NAME
-
+# pylint: disable=consider-using-dict-items
+# pylint: disable=consider-using-enumerate
 
 class RelationType(Enum):
     """An enum representing the possible age groups of a cat"""
@@ -386,51 +387,47 @@ class TalkScreen(Screens):
         resource_dir = "resources/dicts/lifegen_talk/"
         possible_texts = {}
 
-        # test
-        with open(f"{resource_dir}test.json", 'r') as read_file:
-                possible_texts = (ujson.loads(read_file.read()))
+        if cat.status != 'exiled':
+            with open(f"{resource_dir}{cat.status}.json", 'r') as read_file:
+                possible_texts = ujson.loads(read_file.read())
 
-        # if cat.status != 'exiled':
-        #     with open(f"{resource_dir}{cat.status}.json", 'r') as read_file:
-        #         possible_texts = ujson.loads(read_file.read())
+        if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled']:
+            with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
+                possible_texts.update(ujson.loads(read_file.read()))
 
-        # if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled']:
-        #     with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
-        #         possible_texts.update(ujson.loads(read_file.read()))
+        if cat.status in ["rogue", "loner", "kittypet"]:
+            # former clancats only get their own file so we can write general dialogue about not knowing what a clan is
+            with open(f"{resource_dir}general_outsider.json", 'r') as read_file:
+                possible_texts4 = ujson.loads(read_file.read())
+                possible_texts.update(possible_texts4)
+        else:
+            with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
+                possible_texts.update(ujson.loads(read_file.read()))
 
-        # if cat.status in ["rogue", "loner", "kittypet"]:
-        #     # former clancats only get their own file so we can write general dialogue about not knowing what a clan is
-        #     with open(f"{resource_dir}general_outsider.json", 'r') as read_file:
-        #         possible_texts4 = ujson.loads(read_file.read())
-        #         possible_texts.update(possible_texts4)
-        # else:
-        #     with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
-        #         possible_texts.update(ujson.loads(read_file.read()))
+            if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
+                with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
+                    possible_texts2 = ujson.loads(read_file.read())
+                    possible_texts.update(possible_texts2)
 
-        #     if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
-        #         with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
-        #             possible_texts2 = ujson.loads(read_file.read())
-        #             possible_texts.update(possible_texts2)
+            if cat.status not in ["newborn"] and you.status not in ['newborn']:
+                with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
+                    possible_texts4 = ujson.loads(read_file.read())
+                    possible_texts.update(possible_texts4)
 
-        #     if cat.status not in ["newborn"] and you.status not in ['newborn']:
-        #         with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
-        #             possible_texts4 = ujson.loads(read_file.read())
-        #             possible_texts.update(possible_texts4)
+            if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
+                with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
+                    possible_texts3 = ujson.loads(read_file.read())
+                    possible_texts.update(possible_texts3)
 
-        #     if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
-        #         with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
-        #             possible_texts3 = ujson.loads(read_file.read())
-        #             possible_texts.update(possible_texts3)
+            if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
+                with open(f"{resource_dir}crush.json", 'r') as read_file:
+                    possible_texts3 = ujson.loads(read_file.read())
+                    possible_texts.update(possible_texts3)
 
-        #     if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
-        #         with open(f"{resource_dir}crush.json", 'r') as read_file:
-        #             possible_texts3 = ujson.loads(read_file.read())
-        #             possible_texts.update(possible_texts3)
-
-        #     if game.clan.focus:
-        #         with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
-        #             possible_texts5 = ujson.loads(read_file.read())
-        #             possible_texts.update(possible_texts5)
+            if game.clan.focus:
+                with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
+                    possible_texts5 = ujson.loads(read_file.read())
+                    possible_texts.update(possible_texts5)
                     
         return self.filter_texts(cat, possible_texts)
 
@@ -1239,10 +1236,11 @@ class TalkScreen(Screens):
                     continue
                 values = ["platonic", "romantic", "dislike", "jealousy", "comfort", "trust", "respect"]
                 for v in values:
-                    if tag.startswith(f"max_{v}_"):
-                        continue
-                    if tag.startswith(f"min_{v}_"):
-                        continue
+                    for tag in tags:
+                        if tag.startswith(f"max_{v}_"):
+                            continue
+                        if tag.startswith(f"min_{v}_"):
+                            continue
 
             # dead moons tags!
             if you.dead or cat.dead:
@@ -1255,13 +1253,11 @@ class TalkScreen(Screens):
                         if tag.startswith("min_you_deadfor_"):
                             min_value = int(tag.split("_")[-1])
                             if you.dead_for < min_value:
-                                print(f"Skipping due to {tag}")
                                 skip_processing = True
                                 break
                         elif tag.startswith("max_you_deadfor_"):
                             max_value = int(tag.split("_")[-1])
                             if you.dead_for > max_value:
-                                print(f"Skipping due to {tag}")
                                 skip_processing = True
                                 break
 
@@ -1270,13 +1266,11 @@ class TalkScreen(Screens):
                         if tag.startswith("min_they_deadfor_"):
                             min_value = int(tag.split("_")[-1])
                             if cat.dead_for < min_value:
-                                print(f"Skipping due to {tag}")
                                 skip_processing = True
                                 break
                         elif tag.startswith("max_they_deadfor_"):
                             max_value = int(tag.split("_")[-1])
                             if cat.dead_for > max_value:
-                                print(f"Skipping due to {tag}")
                                 skip_processing = True
                                 break
 
@@ -1412,14 +1406,13 @@ class TalkScreen(Screens):
 
     def get_adjusted_txt(self, text, cat):
         you = game.clan.your_cat
-
         for i in range(len(text)):
             text[i] = self.adjust_txt(text[i], cat)
             if text[i] == "":
                 return ""
 
         process_text_dict = self.cat_dict.copy()
-
+    
         for abbrev in process_text_dict.keys():
             abbrev_cat = process_text_dict[abbrev]
             process_text_dict[abbrev] = (abbrev_cat, choice(abbrev_cat.pronouns))
@@ -1428,8 +1421,7 @@ class TalkScreen(Screens):
         process_text_dict["t_c"] = (cat, choice(cat.pronouns))
         
         for i in range(len(text)):
-            text[i] = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False),
-                                                                text[i])
+            text[i] = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), text[i])
         
         text = [t1.replace("c_n", game.clan.name) for t1 in text]
         text = [t1.replace("y_c", str(you.name)) for t1 in text]
@@ -1451,14 +1443,46 @@ class TalkScreen(Screens):
         you = game.clan.your_cat
 
         if "your_crush" in text:
-            if "your_crush" in self.cat_dict:
-                text = re.sub(r'(?<!\/)your_crush(?!\/)', str(self.cat_dict["your_crush"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'your_crush(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)your_crush', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            if f"your_crush_{x}" in self.cat_dict or "your_crush" in self.cat_dict or f"{r}_your_crush" in self.cat_dict or f"{r}_your_crush_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_your_crush_{x}(?!\/)', str(self.cat_dict[f"{r}_your_crush_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)your_crush_{x}(?!\/)', str(self.cat_dict[f"your_crush_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_your_crush_(?!\/)', str(self.cat_dict[f"{r}_your_crush"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)your_crush(?!\/)', str(self.cat_dict["your_crush"].name), text)
             else:
                 if len(you.mate) > 0 or you.no_mates:
                     return ""
                 crush = None
                 for c in self.get_living_cats():
-                    if c.ID == you.ID or c.ID == cat.ID or c.ID in cat.mate or c.ID in you.mate or c.age != you.age:
+                    if c.ID == you.ID or c.ID == cat.ID or c.ID in cat.mate or c.ID in you.mate or c.age != you.age or\
+                    (cluster and x not in get_cluster(c.personality.trait)) or (rel and (c.ID not in cat.relationships) or\
+                    (r == "plike" and cat.relationships[c.ID].platonic_like < 20) or\
+                    (r == "plove" and cat.relationships[c.ID].platonic_like < 50) or\
+                    (r == "rlike" and cat.relationships[c.ID].romantic_love < 10) or\
+                    (r == "rlove" and cat.relationships[c.ID].romantic_love < 50) or\
+                    (r == "dislike" and cat.relationships[c.ID].dislike < 15) or\
+                    (r == "jealous" and cat.relationships[c.ID].jeaousy < 20) or\
+                    (r == "trust" and cat.relationships[c.ID].trust < 20) or\
+                    (r == "comfort" and cat.relationships[c.ID].comfortable < 20) or \
+                    (r == "respect" and cat.relationships[c.ID].admiration < 20) or\
+                    (r == "neutral" and (cat.relationships[c.ID].platonic_like > 20) or (cat.relationships[c.ID].romantic_love > 20) or (cat.relationships[c.ID].dislike > 20) or (cat.relationships[c.ID].jealousy > 20) or (cat.relationships[c.ID].trust > 20) or (cat.relationships[c.ID].comfortable > 20) or (cat.relationships[c.ID].admiration > 20))):
                         continue
                     relations = you.relationships.get(c.ID)
                     if not relations:
@@ -1467,20 +1491,62 @@ class TalkScreen(Screens):
                         crush = c
                         break
                 if crush:
-                    self.cat_dict["your_crush"] = crush
-                    text = re.sub(r'(?<!\/)your_crush(?!\/)', str(crush.name), text)
+                    if cluster and rel:
+                        self.cat_dict[f"{r}_your_crush_{x}"] = crush
+                        text = re.sub(fr'(?<!\/){r}_your_crush_{x}(?!\/)', str(crush.name), text)
+                    elif cluster and not rel:
+                        self.cat_dict[f"your_crush_{x}"] = crush
+                        text = re.sub(fr'(?<!\/)your_crush_{x}(?!\/)', str(crush.name), text)
+                    elif rel and not cluster:
+                        self.cat_dict[f"{r}_your_crush"] = crush
+                        text = re.sub(fr'(?<!\/){r}_your_crush(?!\/)', str(crush.name), text)
+                    else:
+                        self.cat_dict["your_crush"] = crush
+                        text = re.sub(r'(?<!\/)your_crush(?!\/)', str(crush.name), text)
                 else:
                     return ""
 
         if "their_crush" in text:
-            if "their_crush" in self.cat_dict:
-                text = re.sub(r'(?<!\/)their_crush(?!\/)', str(self.cat_dict["their_crush"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'their_crush(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)their_crush', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            if f"their_crush_{x}" in self.cat_dict or "their_crush" in self.cat_dict or f"{r}_their_crush" in self.cat_dict or f"{r}_their_crush_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_their_crush_{x}(?!\/)', str(self.cat_dict[f"{r}_their_crush_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)their_crush_{x}(?!\/)', str(self.cat_dict[f"their_crush_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_their_crush_(?!\/)', str(self.cat_dict[f"{r}_their_crush"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)their_crush(?!\/)', str(self.cat_dict["their_crush"].name), text)
             else:
                 if len(cat.mate) > 0 or cat.no_mates:
                     return ""
                 crush = None
                 for c in self.get_living_cats():
-                    if c.ID == you.ID or c.ID == cat.ID or c.ID in cat.mate or c.ID in you.mate or c.age != cat.age:
+                    if c.ID == you.ID or c.ID == cat.ID or c.ID in cat.mate or c.ID in you.mate or c.age != cat.age or\
+                    (cluster and x not in get_cluster(c.personality.trait)) or (rel and (c.ID not in cat.relationships) or\
+                    (r == "plike" and cat.relationships[c.ID].platonic_like < 20) or\
+                    (r == "plove" and cat.relationships[c.ID].platonic_like < 50) or\
+                    (r == "rlike" and cat.relationships[c.ID].romantic_love < 10) or\
+                    (r == "rlove" and cat.relationships[c.ID].romantic_love < 50) or\
+                    (r == "dislike" and cat.relationships[c.ID].dislike < 15) or\
+                    (r == "jealous" and cat.relationships[c.ID].jeaousy < 20) or\
+                    (r == "trust" and cat.relationships[c.ID].trust < 20) or\
+                    (r == "comfort" and cat.relationships[c.ID].comfortable < 20) or \
+                    (r == "respect" and cat.relationships[c.ID].admiration < 20) or\
+                    (r == "neutral" and (cat.relationships[c.ID].platonic_like > 20) or (cat.relationships[c.ID].romantic_love > 20) or (cat.relationships[c.ID].dislike > 20) or (cat.relationships[c.ID].jealousy > 20) or (cat.relationships[c.ID].trust > 20) or (cat.relationships[c.ID].comfortable > 20) or (cat.relationships[c.ID].admiration > 20))):
                         continue
                     relations = cat.relationships.get(c.ID)
                     if not relations:
@@ -1489,78 +1555,214 @@ class TalkScreen(Screens):
                         crush = c
                         break
                 if crush:
-                    self.cat_dict["their_crush"] = crush
-                    text = re.sub(r'(?<!\/)their_crush(?!\/)', str(crush.name), text)
+                    if cluster and rel:
+                        self.cat_dict[f"{r}_their_crush_{x}"] = crush
+                        text = re.sub(fr'(?<!\/){r}_their_crush_{x}(?!\/)', str(crush.name), text)
+                    elif cluster and not rel:
+                        self.cat_dict[f"their_crush_{x}"] = crush
+                        text = re.sub(fr'(?<!\/)their_crush_{x}(?!\/)', str(crush.name), text)
+                    elif rel and not cluster:
+                        self.cat_dict[f"{r}_their_crush"] = crush
+                        text = re.sub(fr'(?<!\/){r}_their_crush(?!\/)', str(crush.name), text)
+                    else:
+                        self.cat_dict["their_crush"] = crush
+                        text = re.sub(r'(?<!\/)their_crush(?!\/)', str(crush.name), text)
                 else:
                     return ""
 
         # Multiple random cats
-        for i in range(3):
+        for i in range(0,4):
             # Random cats
             r_c_str = f"r_c{i}"
             if r_c_str in text:
-                if r_c_str in self.cat_dict:
-                    if i == 1:
-                        text = re.sub(r'(?<!\/)r_c1(?!\/)', str(self.cat_dict[r_c_str].name), text)
-                    elif i == 2:
-                        text = re.sub(r'(?<!\/)r_c2(?!\/)', str(self.cat_dict[r_c_str].name), text)
-                    elif i == 3:
-                        text = re.sub(r'(?<!\/)r_c3(?!\/)', str(self.cat_dict[r_c_str].name), text)
+                cluster = False
+                rel = False
+                match = re.search(fr'r_c{i}(\w+)', text)
+                if match:
+                    x = match.group(1).strip("_")
+                    cluster = True
+                else:
+                    x = ""
+
+                match2 = re.search(fr'(\w+)r_c{i}', text)
+                if match2:
+                    r = match2.group(1).strip("_")
+                    rel = True
+                else:
+                    r = ""
+
+                if f"r_c{i}_{x}" in self.cat_dict or f"r_c{i}" in self.cat_dict or f"{r}_r_c{i}" in self.cat_dict or f"{r}_r_c{i}_{x}" in self.cat_dict:
+                    if cluster and rel:
+                        text = re.sub(fr'(?<!\/){r}_r_c{i}_{x}(?!\/)', str(self.cat_dict[f"{r}_r_c{i}_{x}"].name), text)
+                    elif cluster and not rel:
+                        text = re.sub(fr'(?<!\/)r_c{i}_{x}(?!\/)', str(self.cat_dict[f"r_c{i}_{x}"].name), text)
+                    elif rel and not cluster:
+                        text = re.sub(fr'(?<!\/){r}_r_c{i}_(?!\/)', str(self.cat_dict[f"{r}_r_c{i}"].name), text)
+                    else:
+                        text = re.sub(fr'(?<!\/)r_c{i}(?!\/)', str(self.cat_dict[f"r_c{i}"].name), text)
                     continue
-                alive_cats = self.get_living_cats()
-                if len(alive_cats) < 3:
-                    return ""
-                alive_cat = choice(alive_cats)
-                counter = 0
-                while alive_cat.ID == you.ID or alive_cat.ID == cat.ID or alive_cat in list(self.cat_dict.values()):
-                    alive_cat = choice(alive_cats)
-                    counter += 1
-                    if counter > COUNTER_LIM:
+                else:
+                    alive_cats = self.get_living_cats()
+                    if len(alive_cats) < 3:
                         return ""
-                self.cat_dict[r_c_str] = alive_cat
-                if i == 1:
-                    text = re.sub(r'(?<!\/)r_c1(?!\/)', str(alive_cat.name), text)
-                elif i == 2:
-                    text = re.sub(r'(?<!\/)r_c2(?!\/)', str(alive_cat.name), text)
-                elif i == 3:
-                    text = re.sub(r'(?<!\/)r_c3(?!\/)', str(alive_cat.name), text)
+                    alive_cat = choice(alive_cats)
+                    counter = 0
+                    while (alive_cat.ID == you.ID or alive_cat.ID == cat.ID or (cluster and x not in get_cluster(alive_cat.personality.trait)) or (rel and (alive_cat.ID not in cat.relationships) or\
+                    (r == "plike" and cat.relationships[alive_cat.ID].platonic_like < 20) or\
+                    (r == "plove" and cat.relationships[alive_cat.ID].platonic_like < 50) or\
+                    (r == "rlike" and cat.relationships[alive_cat.ID].romantic_love < 10) or\
+                    (r == "rlove" and cat.relationships[alive_cat.ID].romantic_love < 50) or\
+                    (r == "dislike" and cat.relationships[alive_cat.ID].dislike < 15) or\
+                    (r == "jealous" and cat.relationships[alive_cat.ID].jeaousy < 20) or\
+                    (r == "trust" and cat.relationships[alive_cat.ID].trust < 20) or\
+                    (r == "comfort" and cat.relationships[alive_cat.ID].comfortable < 20) or \
+                    (r == "respect" and cat.relationships[alive_cat.ID].admiration < 20) or\
+                    (r == "neutral" and (cat.relationships[alive_cat.ID].platonic_like > 20) or (cat.relationships[alive_cat.ID].romantic_love > 20) or (cat.relationships[alive_cat.ID].dislike > 20) or (cat.relationships[alive_cat.ID].jealousy > 20) or (cat.relationships[alive_cat.ID].trust > 20) or (cat.relationships[alive_cat.ID].comfortable > 20) or (cat.relationships[alive_cat.ID].admiration > 20))) or alive_cat in list(self.cat_dict.values())):
+                        alive_cat = choice(alive_cats)
+                        counter += 1
+                        if counter >= 30:
+                            print("counter crazu")
+                            return ""
+                        
+                    self.cat_dict[f"r_c{i}"] = alive_cat
+                    print(i, alive_cat.name)
+
+                    if cluster and rel:
+                        self.cat_dict[f"{r}_r_c{i}_{x}"] = alive_cat
+                        text = re.sub(fr'(?<!\/){r}_r_c{i}_{x}(?!\/)', str(alive_cat.name), text)
+                    elif cluster and not rel:
+                        self.cat_dict[f"r_c{i}_{x}"] = alive_cat
+                        text = re.sub(fr'(?<!\/)r_c{i}_{x}(?!\/)', str(alive_cat.name), text)
+                    elif rel and not cluster:
+                        self.cat_dict[f"{r}_r_c{i}"] = alive_cat
+                        text = re.sub(fr'(?<!\/){r}_r_c{i}(?!\/)', str(alive_cat.name), text)
+                    else:
+                        self.cat_dict[f"r_c{i}"] = alive_cat
+                        text = re.sub(fr'(?<!\/)r_c{i}(?!\/)', str(alive_cat.name), text)
             # Random warriors
             r_w_str = f"r_w{i}"
             if r_w_str in text:
-                if r_w_str in self.cat_dict:
-                    if i == 1:
-                        text = re.sub(r'(?<!\/)r_w1(?!\/)', str(self.cat_dict[r_w_str].name), text)
-                    elif i == 2:
-                        text = re.sub(r'(?<!\/)r_w2(?!\/)', str(self.cat_dict[r_w_str].name), text)
-                    elif i == 3:
-                        text = re.sub(r'(?<!\/)r_w3(?!\/)', str(self.cat_dict[r_w_str].name), text)
+                cluster = False
+                rel = False
+                match = re.search(fr'r_w{i}(\w+)', text)
+                if match:
+                    x = match.group(1).strip("_")
+                    cluster = True
+                else:
+                    x = ""
+
+                match2 = re.search(fr'(\w+)r_w{i}', text)
+                if match2:
+                    r = match2.group(1).strip("_")
+                    rel = True
+                else:
+                    r = ""
+
+                if f"r_w{i}_{x}" in self.cat_dict or f"r_w{i}" in self.cat_dict or f"{r}_r_w{i}" in self.cat_dict or f"{r}_r_w{i}_{x}" in self.cat_dict:
+                    if cluster and rel:
+                        text = re.sub(fr'(?<!\/){r}_r_w{i}_{x}(?!\/)', str(self.cat_dict[f"{r}_r_w{i}_{x}"].name), text)
+                    elif cluster and not rel:
+                        text = re.sub(fr'(?<!\/)r_w{i}_{x}(?!\/)', str(self.cat_dict[f"r_w{i}_{x}"].name), text)
+                    elif rel and not cluster:
+                        text = re.sub(fr'(?<!\/){r}_r_w{i}_(?!\/)', str(self.cat_dict[f"{r}_r_w{i}"].name), text)
+                    else:
+                        text = re.sub(fr'(?<!\/)r_w{i}(?!\/)', str(self.cat_dict[f"r_w{i}"].name), text)
                     continue
                 alive_cats = get_alive_warriors(Cat)
                 if len(alive_cats) < 3:
                     return ""
                 alive_cat = choice(alive_cats)
                 counter = 0
-                while alive_cat.ID == you.ID or alive_cat.ID == cat.ID or alive_cat in self.cat_dict.values():
+                while (alive_cat.ID == you.ID or alive_cat.ID == cat.ID or (cluster and x not in get_cluster(alive_cat.personality.trait)) or (rel and (alive_cat.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_cat.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_cat.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_cat.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_cat.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_cat.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_cat.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_cat.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_cat.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_cat.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_cat.ID].platonic_like > 20) or (cat.relationships[alive_cat.ID].romantic_love > 20) or (cat.relationships[alive_cat.ID].dislike > 20) or (cat.relationships[alive_cat.ID].jealousy > 20) or (cat.relationships[alive_cat.ID].trust > 20) or (cat.relationships[alive_cat.ID].comfortable > 20) or (cat.relationships[alive_cat.ID].admiration > 20))) or alive_cat in list(self.cat_dict.values())):
                     alive_cat = choice(alive_cats)
                     counter += 1
                     if counter > COUNTER_LIM:
                         return ""
-                self.cat_dict[r_w_str] = alive_cat
-                if i == 1:
-                    text = re.sub(r'(?<!\/)r_w1(?!\/)', str(alive_cat.name), text)
-                elif i == 2:
-                    text = re.sub(r'(?<!\/)r_w2(?!\/)', str(alive_cat.name), text)
-                elif i == 3:
-                    text = re.sub(r'(?<!\/)r_w3(?!\/)', str(alive_cat.name), text)
+                self.cat_dict[f"r_w{i}"] = alive_cat
+                print(i, alive_cat.name)
 
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_w{i}_{x}"] = alive_cat
+                    text = re.sub(fr'(?<!\/){r}_r_w{i}_{x}(?!\/)', str(alive_cat.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_w{i}_{x}"] = alive_cat
+                    text = re.sub(fr'(?<!\/)r_w{i}_{x}(?!\/)', str(alive_cat.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_w{i}"] = alive_cat
+                    text = re.sub(fr'(?<!\/){r}_r_w{i}(?!\/)', str(alive_cat.name), text)
+                else:
+                    self.cat_dict[f"r_w{i}"] = alive_cat
+                    text = re.sub(fr'(?<!\/)r_w{i}(?!\/)', str(alive_cat.name), text)
+        
         # Random cats who are potential mates 
         if "n_r1" in text:
             if "n_r2" not in text:
                 return ""
+            cluster1 = False
+            rel1 = False
+            cluster2 = False
+            rel2 = False
+            match = re.search(fr'n_r1{i}(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster1 = True
+            else:
+                x = ""
+            match2 = re.search(fr'(\w+)n_r1{i}', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel1 = True
+            else:
+                r = ""
+            match3 = re.search(fr'n_r2{i}(\w+)', text)
+            if match:
+                x = match3.group(1).strip("_")
+                cluster2 = True
+            else:
+                x = ""
+            match4 = re.search(fr'(\w+)n_r2{i}', text)
+            if match2:
+                r = match4.group(1).strip("_")
+                rel2 = True
+            else:
+                r = ""
+
             random_cat1 = choice(self.get_living_cats())
             random_cat2 = choice(self.get_living_cats())
             counter = 0
-            while not random_cat1.is_potential_mate(random_cat2) or random_cat2.age != random_cat1.age:
+            # this is so ugly help
+            while (random_cat1.ID == you.ID or random_cat1.ID == cat.ID or (cluster1 and x not in get_cluster(random_cat1.personality.trait)) or (rel1 and (random_cat1.ID not in cat.relationships) or\
+            (r == "plike" and cat.relationships[random_cat1.ID].platonic_like < 20) or\
+            (r == "plove" and cat.relationships[random_cat1.ID].platonic_like < 50) or\
+            (r == "rlike" and cat.relationships[random_cat1.ID].romantic_love < 10) or\
+            (r == "rlove" and cat.relationships[random_cat1.ID].romantic_love < 50) or\
+            (r == "dislike" and cat.relationships[random_cat1.ID].dislike < 15) or\
+            (r == "jealous" and cat.relationships[random_cat1.ID].jeaousy < 20) or\
+            (r == "trust" and cat.relationships[random_cat1.ID].trust < 20) or\
+            (r == "comfort" and cat.relationships[random_cat1.ID].comfortable < 20) or \
+            (r == "respect" and cat.relationships[random_cat1.ID].admiration < 20) or\
+            (r == "neutral" and (cat.relationships[random_cat1.ID].platonic_like > 20) or (cat.relationships[random_cat1.ID].romantic_love > 20) or (cat.relationships[random_cat1.ID].dislike > 20) or (cat.relationships[random_cat1.ID].jealousy > 20) or (cat.relationships[random_cat1.ID].trust > 20) or (cat.relationships[random_cat1.ID].comfortable > 20) or (cat.relationships[random_cat1.ID].admiration > 20))) or not random_cat1.is_potential_mate(random_cat2) or random_cat2.age != random_cat1.age) or \
+            (random_cat2.ID == you.ID or random_cat2.ID == cat.ID or (cluster2 and x not in get_cluster(random_cat2.personality.trait)) or (rel2 and (random_cat2.ID not in cat.relationships) or\
+            (r == "plike" and cat.relationships[random_cat2.ID].platonic_like < 20) or\
+            (r == "plove" and cat.relationships[random_cat2.ID].platonic_like < 50) or\
+            (r == "rlike" and cat.relationships[random_cat2.ID].romantic_love < 10) or\
+            (r == "rlove" and cat.relationships[random_cat2.ID].romantic_love < 50) or\
+            (r == "dislike" and cat.relationships[random_cat2.ID].dislike < 15) or\
+            (r == "jealous" and cat.relationships[random_cat2.ID].jeaousy < 20) or\
+            (r == "trust" and cat.relationships[random_cat2.ID].trust < 20) or\
+            (r == "comfort" and cat.relationships[random_cat2.ID].comfortable < 20) or \
+            (r == "respect" and cat.relationships[random_cat2.ID].admiration < 20) or\
+            (r == "neutral" and (cat.relationships[random_cat2.ID].platonic_like > 20) or (cat.relationships[random_cat2.ID].romantic_love > 20) or (cat.relationships[random_cat2.ID].dislike > 20) or (cat.relationships[random_cat2.ID].jealousy > 20) or (cat.relationships[random_cat2.ID].trust > 20) or (cat.relationships[random_cat2.ID].comfortable > 20) or (cat.relationships[random_cat1.ID].admiration > 20))) or not random_cat2.is_potential_mate(random_cat1)):
                 random_cat1 = choice(self.get_living_cats())
                 random_cat2 = choice(self.get_living_cats())
                 counter +=1
@@ -1568,170 +1770,577 @@ class TalkScreen(Screens):
                     return ""
             if random_cat1.ID == you.ID or random_cat1.ID == cat.ID or random_cat2.ID == you.ID or random_cat2.ID == cat.ID:
                 return ""
-            text = text.replace("n_r1", str(random_cat1.name))
-            text = text.replace("n_r2", str(random_cat2.name))
+            if cluster1 and rel1:
+                self.cat_dict[f"{r}_n_r1_{x}"] = random_cat1
+                text = re.sub(fr'(?<!\/){r}_n_r1_{x}(?!\/)', str(random_cat1.name), text)
+            elif cluster1 and not rel1:
+                self.cat_dict[f"n_r1{i}_{x}"] = random_cat1
+                text = re.sub(fr'(?<!\/)n_r1_{x}(?!\/)', str(random_cat1.name), text)
+            elif rel1 and not cluster1:
+                self.cat_dict[f"{r}_n_r1"] = random_cat1
+                text = re.sub(fr'(?<!\/){r}_n_r1(?!\/)', str(random_cat1.name), text)
+            else:
+                self.cat_dict["n_r1"] = random_cat1
+                text = re.sub(r'(?<!\/)n_r1(?!\/)', str(random_cat1.name), text)
 
+            if cluster2 and rel2:
+                self.cat_dict[f"{r}_n_r2_{x}"] = random_cat2
+                text = re.sub(fr'(?<!\/){r}_n_r2_{x}(?!\/)', str(random_cat2.name), text)
+            elif cluster2 and not rel2:
+                self.cat_dict[f"n_r2{i}_{x}"] = random_cat2
+                text = re.sub(fr'(?<!\/)n_r2_{x}(?!\/)', str(random_cat2.name), text)
+            elif rel2 and not cluster2:
+                self.cat_dict[f"{r}_n_r2"] = random_cat2
+                text = re.sub(fr'(?<!\/){r}_n_r2(?!\/)', str(random_cat2.name), text)
+            else:
+                self.cat_dict["n_r2"] = random_cat2
+                text = re.sub(r'(?<!\/)n_r2(?!\/)', str(random_cat2.name), text)
         # Random kit
         if "r_k" in text:
-            if "r_k" in self.cat_dict:
-                text = re.sub(r'(?<!\/)r_k(?!\/)', str(self.cat_dict["r_k"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'r_k(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
             else:
-                alive_kits = get_alive_kits(Cat)
-                if len(alive_kits) <= 1:
+                x = ""
+
+            match2 = re.search(r'(\w+)r_k', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+
+            if f"r_k_{x}" in self.cat_dict or "r_k" in self.cat_dict or f"{r}_r_k" in self.cat_dict or f"{r}_r_k_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_k_{x}(?!\/)', str(self.cat_dict[f"{r}_r_k_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_k_{x}(?!\/)', str(self.cat_dict[f"r_k_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_k_(?!\/)', str(self.cat_dict[f"{r}_r_k"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_k(?!\/)', str(self.cat_dict["r_k"].name), text)
+            else:
+                alive_apps = get_alive_kits(Cat)
+                if len(alive_apps) <= 1:
                     return ""
-                alive_kit = choice(alive_kits)
+
+                alive_app = choice(alive_apps)
+
                 counter = 0
-                while alive_kit.ID == you.ID or alive_kit.ID == cat.ID:
+                # lord forgive me there must be a less disgusting way to do this sorry
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20)))):
                     counter += 1
-                    if counter == 30:
+                    if counter >= 30:
                         return ""
-                    alive_kit = choice(alive_kits)
-                self.cat_dict["r_k"] = alive_kit
-                text = re.sub(r'(?<!\/)r_k(?!\/)', str(alive_kit.name), text)
+                    alive_app = choice(alive_apps)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_k_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_k_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_k_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)r_k_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_k"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_k(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["r_k"] = alive_app
+                    text = re.sub(r'(?<!\/)r_k(?!\/)', str(alive_app.name), text)
         
         # Random warrior apprentice
         if "r_a" in text:
-            if "r_a" in self.cat_dict:
-                text = re.sub(r'(?<!\/)r_a(?!\/)', str(self.cat_dict["r_a"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'r_a(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+
+            match2 = re.search(r'(\w+)r_a', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+
+            if f"r_a_{x}" in self.cat_dict or "r_a" in self.cat_dict or f"{r}_r_a" in self.cat_dict or f"{r}_r_a_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_a_{x}(?!\/)', str(self.cat_dict[f"{r}_r_a_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_a_{x}(?!\/)', str(self.cat_dict[f"r_a_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_a_(?!\/)', str(self.cat_dict[f"{r}_r_a"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_a(?!\/)', str(self.cat_dict["r_a"].name), text)
             else:
                 alive_apps = get_alive_apps(Cat)
                 if len(alive_apps) <= 1:
                     return ""
+
                 alive_app = choice(alive_apps)
+
                 counter = 0
-                while alive_app.ID == you.ID or alive_app.ID == cat.ID:
+                # lord forgive me there must be a less disgusting way to do this sorry
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20)))):
                     counter += 1
-                    if counter == 30:
+                    if counter >= 30:
                         return ""
                     alive_app = choice(alive_apps)
-                self.cat_dict["r_a"] = alive_app
-                text = re.sub(r'(?<!\/)r_a(?!\/)', str(alive_app.name), text)
-
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_a_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_a_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_a_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)r_a_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_a"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_a(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["r_a"] = alive_app
+                    text = re.sub(r'(?<!\/)r_a(?!\/)', str(alive_app.name), text)
+        
         # Random warrior
-        if "r_w" in text:
-            if "r_w" in self.cat_dict:
-                text = re.sub(r'(?<!\/)r_w(?!\/)', str(self.cat_dict["r_w"].name), text)
+        if "r_w" in text and "r_w1" not in text and "r_w2" not in text and "r_w3" not in text:
+            cluster = False
+            rel = False
+            match = re.search(r'r_w(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+
+            match2 = re.search(r'(\w+)r_w', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+
+            if f"r_w_{x}" in self.cat_dict or "r_w" in self.cat_dict or f"{r}_r_w" in self.cat_dict or f"{r}_r_w_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_w_{x}(?!\/)', str(self.cat_dict[f"{r}_r_w_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_w_{x}(?!\/)', str(self.cat_dict[f"r_w_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_w_(?!\/)', str(self.cat_dict[f"{r}_r_w"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_w(?!\/)', str(self.cat_dict["r_w"].name), text)
             else:
                 alive_apps = get_alive_warriors(Cat)
                 if len(alive_apps) <= 1:
                     return ""
+
                 alive_app = choice(alive_apps)
+
                 counter = 0
-                while alive_app.ID == you.ID or alive_app.ID == cat.ID:
+                # lord forgive me there must be a less disgusting way to do this sorry
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20)))):
                     counter += 1
-                    if counter == 30:
+                    if counter >= 30:
                         return ""
                     alive_app = choice(alive_apps)
-                self.cat_dict["r_w"] = alive_app
-                text = re.sub(r'(?<!\/)r_w(?!\/)', str(alive_app.name), text)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_w_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_w_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_w_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)r_w_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_w"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_w(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["r_w"] = alive_app
+                    text = re.sub(r'(?<!\/)r_w(?!\/)', str(alive_app.name), text)
 
         # Random medicine cat or medicine cat apprentice
         if "r_m" in text:
-            if "r_m" in self.cat_dict:
-                text = re.sub(r'(?<!\/)r_m(?!\/)', str(self.cat_dict["r_m"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'r_m(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)r_m', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+
+            if f"r_m_{x}" in self.cat_dict or "r_m" in self.cat_dict or f"{r}_r_m" in self.cat_dict or f"{r}_r_m_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_m_{x}(?!\/)', str(self.cat_dict[f"{r}_r_m_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_m_{x}(?!\/)', str(self.cat_dict[f"r_m_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_m_(?!\/)', str(self.cat_dict[f"{r}_r_m"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_m(?!\/)', str(self.cat_dict["r_m"].name), text)
             else:
                 alive_apps = get_alive_meds(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
                 counter = 0
-                while alive_app.ID == you.ID or alive_app.ID == cat.ID:
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20)))):
                     counter += 1
                     if counter == 30:
                         return ""
                     alive_app = choice(alive_apps)
-                self.cat_dict["r_m"] = alive_app
-                text = re.sub(r'(?<!\/)r_m(?!\/)', str(alive_app.name), text)
 
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_m_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_m_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_m_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)r_m_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_m"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_m(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["r_m"] = alive_app
+                    text = re.sub(r'(?<!\/)r_m(?!\/)', str(alive_app.name), text)
         # Random mediator or mediator apprentice
         if "r_d" in text:
-            if "r_d" in self.cat_dict:
-                text = re.sub(r'(?<!\/)r_d(?!\/)', str(self.cat_dict["r_d"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'r_d(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)r_d', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            if f"r_d_{x}" in self.cat_dict or "r_d" in self.cat_dict or f"{r}_r_d" in self.cat_dict or f"{r}_r_d_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_d_{x}(?!\/)', str(self.cat_dict[f"{r}_r_d_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_d_{x}(?!\/)', str(self.cat_dict[f"r_d_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_d_(?!\/)', str(self.cat_dict[f"{r}_r_d"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_d(?!\/)', str(self.cat_dict["r_d"].name), text)
             else:
                 alive_apps = get_alive_mediators(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
                 counter = 0
-                while alive_app.ID == you.ID or alive_app.ID == cat.ID:
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20)))):
                     counter += 1
                     if counter == 30:
                         return ""
                     alive_app = choice(alive_apps)
-                self.cat_dict["r_d"] = alive_app
-                text = re.sub(r'(?<!\/)r_d(?!\/)', str(alive_app.name), text)
-
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_d_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_d_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_d_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)r_d_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_d"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_d(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["r_d"] = alive_app
+                    text = re.sub(r'(?<!\/)r_d(?!\/)', str(alive_app.name), text)
         # Random queen or queen's apprentice
         if "r_q" in text:
-            if "r_q" in self.cat_dict:
-                text = re.sub(r'(?<!\/)r_q(?!\/)', str(self.cat_dict["r_q"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'r_q(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)r_q', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+
+            if f"r_q_{x}" in self.cat_dict or "r_q" in self.cat_dict or f"{r}_r_q" in self.cat_dict or f"{r}_r_q_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_q_{x}(?!\/)', str(self.cat_dict[f"{r}_r_q_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_q_{x}(?!\/)', str(self.cat_dict[f"r_q_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_q_(?!\/)', str(self.cat_dict[f"{r}_r_q"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_q(?!\/)', str(self.cat_dict["r_q"].name), text)
             else:
                 alive_apps = get_alive_queens(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
                 counter = 0
-                while alive_app.ID == you.ID or alive_app.ID == cat.ID:
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20)))):
                     counter += 1
                     if counter == 30:
                         return ""
                     alive_app = choice(alive_apps)
-                self.cat_dict["r_q"] = alive_app
-                text = re.sub(r'(?<!\/)r_q(?!\/)', str(alive_app.name), text)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_q_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_q_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_q_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)r_q_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_q"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_q(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["r_q"] = alive_app
+                    text = re.sub(r'(?<!\/)r_q(?!\/)', str(alive_app.name), text)
 
         # Random elder
         if "r_e" in text:
-            if "r_e" in self.cat_dict:
-                text = re.sub(r'(?<!\/)r_e(?!\/)', str(self.cat_dict["r_e"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'r_e(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)r_e', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            if f"r_e_{x}" in self.cat_dict or "r_e" in self.cat_dict or f"{r}_r_e" in self.cat_dict or f"{r}_r_e_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_e_{x}(?!\/)', str(self.cat_dict[f"{r}_r_e_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_e_{x}(?!\/)', str(self.cat_dict[f"r_e_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_e_(?!\/)', str(self.cat_dict[f"{r}_r_e"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_e(?!\/)', str(self.cat_dict["r_e"].name), text)
             else:
                 alive_apps = get_alive_elders(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
                 counter = 0
-                while alive_app.ID == you.ID or alive_app.ID == cat.ID:
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20)))):
                     alive_app = choice(alive_apps)
                     counter += 1
                     if counter == 30:
                         return ""
-                self.cat_dict["r_e"] = alive_app
-                text = re.sub(r'(?<!\/)r_e(?!\/)', str(alive_app.name), text)
-
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_e_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_e_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_e_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)r_e_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_e"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_e(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["r_e"] = alive_app
+                    text = re.sub(r'(?<!\/)r_e(?!\/)', str(alive_app.name), text)
+        
         # Random sick cat
         if "r_s" in text:
-            if "r_s" in self.cat_dict:
-                text = re.sub(r'(?<!\/)r_s(?!\/)', str(self.cat_dict["r_s"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'r_s(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)r_s', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            if f"r_s_{x}" in self.cat_dict or "r_s" in self.cat_dict or f"{r}_r_s" in self.cat_dict or f"{r}_r_s_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_s_{x}(?!\/)', str(self.cat_dict[f"{r}_r_s_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_s_{x}(?!\/)', str(self.cat_dict[f"r_s_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_s_(?!\/)', str(self.cat_dict[f"{r}_r_s"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_s(?!\/)', str(self.cat_dict["r_s"].name), text)
             else:
                 alive_apps = get_alive_cats(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
                 counter = 0
-                while alive_app.ID == you.ID or alive_app.ID == cat.ID or not alive_app.is_ill():
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20))) or not alive_app.is_ill()):
                     alive_app = choice(alive_apps)
                     counter += 1
                     if counter == 30:
                         return ""
-                self.cat_dict["r_s"] = alive_app
-                text = re.sub(r'(?<!\/)r_s(?!\/)', str(alive_app.name), text)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_s_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_s_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_s_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)r_s_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_s"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_s(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["r_s"] = alive_app
+                    text = re.sub(r'(?<!\/)r_s(?!\/)', str(alive_app.name), text)
 
         # Random injured cat
         if "r_i" in text:
-            if "r_i" in self.cat_dict:
-                text = re.sub(r'(?<!\/)r_i(?!\/)', str(self.cat_dict["r_i"].name), text)
+            cluster = False
+            rel = False
+            match = re.search(r'r_i(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)r_i', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            if f"r_i_{x}" in self.cat_dict or "r_i" in self.cat_dict or f"{r}_r_i" in self.cat_dict or f"{r}_r_i_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_i_{x}(?!\/)', str(self.cat_dict[f"{r}_r_i_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_i_{x}(?!\/)', str(self.cat_dict[f"r_i_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_i_(?!\/)', str(self.cat_dict[f"{r}_r_i"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_i(?!\/)', str(self.cat_dict["r_i"].name), text)
             else:
                 alive_apps = get_alive_cats(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
                 counter = 0
-                while alive_app.ID == you.ID or alive_app.ID == cat.ID or not alive_app.is_injured():
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20))) or not alive_app.is_injured()):
                     alive_app = choice(alive_apps)
                     counter += 1
                     if counter == 30:
                         return ""
-                self.cat_dict["r_i"] = alive_app
-                text = re.sub(r'(?<!\/)r_i(?!\/)', str(alive_app.name), text)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_i_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_i_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_i_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)r_i_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_i"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_r_i(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["r_i"] = alive_app
+                    text = re.sub(r'(?<!\/)r_i(?!\/)', str(alive_app.name), text)
 
         # Your sibling
         if "y_s" in text or "y_l" in text:
@@ -1938,27 +2547,69 @@ class TalkScreen(Screens):
                     return ""
                 self.cat_dict["y_kk"] = kit
                 text = re.sub(r'(?<!\/)y_kk(?!\/)', str(kit.name), text)
-
         # Random cat
-        if "r_c" in text:
-            if "r_c" in self.cat_dict:
+
+        if "r_c" in text and "r_c1" not in text and "r_c2" not in text and "r_c3" not in text:
+            cluster = False
+            rel = False
+            match = re.search(r'r_c(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)r_c', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+           
+            if f"r_c_{x}" in self.cat_dict or "r_c" in self.cat_dict or f"{r}_r_c" in self.cat_dict or f"{r}_r_c_{x}" in self.cat_dict:
                 words = text.split()
                 for i, word in enumerate(words):
                     if word == "r_c" and (i == 0 or words[i-1][-1] not in ["{", "|"]):
                         words[i] = str(self.cat_dict["r_c"].name)
                 text = " ".join(words)
-                text = re.sub(r'(?<!\/)r_c(?!\/)', str(self.cat_dict["r_c"].name), text)
+
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_r_c_{x}(?!\/)', str(self.cat_dict[f"{r}_r_c_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)r_c_{x}(?!\/)', str(self.cat_dict[f"r_c_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_r_c_(?!\/)', str(self.cat_dict[f"{r}_r_c"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)r_c(?!\/)', str(self.cat_dict["r_c"].name), text)
             else:
                 random_cat = choice(self.get_living_cats())
                 counter = 0
-                while random_cat.ID == you.ID or random_cat.ID == cat.ID:
+                while (random_cat.ID == you.ID or random_cat.ID == cat.ID or (cluster and x not in get_cluster(random_cat.personality.trait)) or (rel and (random_cat.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[random_cat.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[random_cat.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[random_cat.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[random_cat.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[random_cat.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[random_cat.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[random_cat.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[random_cat.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[random_cat.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[random_cat.ID].platonic_like > 20) or (cat.relationships[random_cat.ID].romantic_love > 20) or (cat.relationships[random_cat.ID].dislike > 20) or (cat.relationships[random_cat.ID].jealousy > 20) or (cat.relationships[random_cat.ID].trust > 20) or (cat.relationships[random_cat.ID].comfortable > 20) or (cat.relationships[random_cat.ID].admiration > 20)))):
                     if counter == 30:
                         return ""
                     random_cat = choice(self.get_living_cats())
                     counter += 1
-                self.cat_dict["r_c"] = random_cat
-                text = re.sub(r'(?<!\/)r_c(?!\/)', str(random_cat.name), text)
-
+                if cluster and rel:
+                    self.cat_dict[f"{r}_r_c_{x}"] = random_cat
+                    text = re.sub(fr'(?<!\/){r}_r_c_{x}(?!\/)', str(random_cat.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"r_c_{x}"] = random_cat
+                    text = re.sub(fr'(?<!\/)r_c_{x}(?!\/)', str(random_cat.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_r_c"] = random_cat
+                    text = re.sub(fr'(?<!\/){r}_r_c(?!\/)', str(random_cat.name), text)
+                else:
+                    self.cat_dict["r_c"] = random_cat
+                    text = re.sub(r'(?<!\/)r_c(?!\/)', str(random_cat.name), text)
         # Other Clan
         if "o_c" in text:
             if "o_c" in self.other_dict:
@@ -2047,121 +2698,527 @@ class TalkScreen(Screens):
                 return ""
 
         if "d_c" in text:
-            if "d_c" in self.cat_dict:
+            cluster = False
+            rel = False
+            match = re.search(r'd_c(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)d_c', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            if f"d_c_{x}" in self.cat_dict or "d_c" in self.cat_dict or f"{r}_d_c" in self.cat_dict or f"{r}_d_c_{x}" in self.cat_dict:
                 words = text.split()
                 for i, word in enumerate(words):
                     if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
                         words[i] = str(self.cat_dict["d_c"].name)
                 text = " ".join(words)
-                text = re.sub(r'(?<!\/)d_c(?!\/)', str(self.cat_dict["d_c"].name), text)
+
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_d_c_{x}(?!\/)', str(self.cat_dict[f"{r}_d_c_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)d_c_{x}(?!\/)', str(self.cat_dict[f"d_c_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_d_c_(?!\/)', str(self.cat_dict[f"{r}_d_c"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)d_c(?!\/)', str(self.cat_dict["d_c"].name), text)
             else:
-                try:
-                    dead_cat = Cat.all_cats.get(game.clan.starclan_cats[-1])
-                    if not dead_cat:
+                dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
+                counter = 0
+                while (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or (cluster and x not in get_cluster(dead_cat.personality.trait)) or (rel and (dead_cat.ID not in cat.relationships) or (dead_cat.ID in cat.relationships and (
+                (r == "plike" and cat.relationships[dead_cat.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[dead_cat.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[dead_cat.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[dead_cat.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[dead_cat.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[dead_cat.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[dead_cat.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[dead_cat.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[dead_cat.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[dead_cat.ID].platonic_like > 20) or (cat.relationships[dead_cat.ID].romantic_love > 20) or (cat.relationships[dead_cat.ID].dislike > 20) or (cat.relationships[dead_cat.ID].jealousy > 20) or (cat.relationships[dead_cat.ID].trust > 20) or (cat.relationships[dead_cat.ID].comfortable > 20) or (cat.relationships[dead_cat.ID].admiration > 20)))))):
+                    if counter == 30:
                         return ""
+                    dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
+                    counter += 1
+                self.cat_dict["d_c"] = dead_cat
+                words = text.split()
+                for i, word in enumerate(words):
+                    if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
+                        words[i] = str(dead_cat.name)
+                text = " ".join(words)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_d_c_{x}"] = dead_cat
+                    text = re.sub(fr'(?<!\/){r}_d_c_{x}(?!\/)', str(dead_cat.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"d_c_{x}"] = dead_cat
+                    text = re.sub(fr'(?<!\/)d_c_{x}(?!\/)', str(dead_cat.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_d_c"] = dead_cat
+                    text = re.sub(fr'(?<!\/){r}_d_c(?!\/)', str(dead_cat.name), text)
+                else:
                     self.cat_dict["d_c"] = dead_cat
-                    words = text.split()
-                    for i, word in enumerate(words):
-                        if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
-                            words[i] = str(dead_cat.name)
-                    text = " ".join(words)
                     text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
-                except:
-                    return ""
         
         if "rsh_c" in text:
-            random_cat = choice(self.get_living_cats())
-            counter = 0
-            while random_cat.ID == you.ID or random_cat.ID == cat.ID or not random_cat.shunned:
-                if counter == 30:
-                    return ""
+            cluster = False
+            rel = False
+            match = re.search(r'rsh_c(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)rsh_c', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            if f"rsh_c_{x}" in self.cat_dict or "rsh_c" in self.cat_dict or f"{r}_rsh_c" in self.cat_dict or f"{r}_rsh_c_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_rsh_c_{x}(?!\/)', str(self.cat_dict[f"{r}_rsh_c_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)rsh_c_{x}(?!\/)', str(self.cat_dict[f"rsh_c_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_rsh_c_(?!\/)', str(self.cat_dict[f"{r}_rsh_c"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)rsh_c(?!\/)', str(self.cat_dict["rsh_c"].name), text)
+            else:
                 random_cat = choice(self.get_living_cats())
-                counter +=1
-            text = text.replace("rsh_c", str(random_cat.name))
+                counter = 0
+                while (random_cat.ID == you.ID or random_cat.ID == cat.ID or (cluster and x not in get_cluster(random_cat.personality.trait)) or (rel and (random_cat.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[random_cat.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[random_cat.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[random_cat.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[random_cat.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[random_cat.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[random_cat.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[random_cat.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[random_cat.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[random_cat.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[random_cat.ID].platonic_like > 20) or (cat.relationships[random_cat.ID].romantic_love > 20) or (cat.relationships[random_cat.ID].dislike > 20) or (cat.relationships[random_cat.ID].jealousy > 20) or (cat.relationships[random_cat.ID].trust > 20) or (cat.relationships[random_cat.ID].comfortable > 20) or (cat.relationships[random_cat.ID].admiration > 20))) or random_cat.shunned == 0):
+                    if counter == 30:
+                        return ""
+                    random_cat = choice(self.get_living_cats())
+                    counter +=1
+                if cluster and rel:
+                    self.cat_dict[f"{r}_rsh_c_{x}"] = random_cat
+                    text = re.sub(fr'(?<!\/){r}_rsh_c_{x}(?!\/)', str(random_cat.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"rsh_c_{x}"] = random_cat
+                    text = re.sub(fr'(?<!\/)rsh_c_{x}(?!\/)', str(random_cat.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_rsh_c"] = random_cat
+                    text = re.sub(fr'(?<!\/){r}_rsh_c(?!\/)', str(random_cat.name), text)
+                else:
+                    self.cat_dict["rsh_c"] = random_cat
+                    text = re.sub(r'(?<!\/)rsh_c(?!\/)', str(random_cat.name), text)
+
         if "rsh_k" in text:
+            cluster = False
+            rel = False
+            match = re.search(r'rsh_k(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)rsh_k', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+
             alive_kits = get_alive_kits(Cat)
             if len(alive_kits) < 1:
                 return ""
-            alive_kit = choice(alive_kits)
-            counter = 0
-            while alive_kit.ID == you.ID or alive_kit.ID == cat.ID or not alive_kit.shunned:
+            if f"rsh_k_{x}" in self.cat_dict or "rsh_k" in self.cat_dict or f"{r}_rsh_k" in self.cat_dict or f"{r}_rsh_k_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_rsh_k_{x}(?!\/)', str(self.cat_dict[f"{r}_rsh_k_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)rsh_k_{x}(?!\/)', str(self.cat_dict[f"rsh_k_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_rsh_k_(?!\/)', str(self.cat_dict[f"{r}_rsh_k"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)rsh_k(?!\/)', str(self.cat_dict["rsh_k"].name), text)
+            else:
                 alive_kit = choice(alive_kits)
-                counter+=1
-                if counter == 30:
-                    return ""
-            text = text.replace("rsh_k", str(alive_kit.name))
+                counter = 0
+                while (alive_kit.ID == you.ID or alive_kit.ID == cat.ID or (cluster and x not in get_cluster(alive_kit.personality.trait)) or (rel and (alive_kit.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_kit.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_kit.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_kit.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_kit.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_kit.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_kit.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_kit.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_kit.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_kit.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_kit.ID].platonic_like > 20) or (cat.relationships[alive_kit.ID].romantic_love > 20) or (cat.relationships[alive_kit.ID].dislike > 20) or (cat.relationships[alive_kit.ID].jealousy > 20) or (cat.relationships[alive_kit.ID].trust > 20) or (cat.relationships[alive_kit.ID].comfortable > 20) or (cat.relationships[alive_kit.ID].admiration > 20))) or alive_kit.shunned == 0):
+                    alive_kit = choice(alive_kits)
+                    counter+=1
+                    if counter == 30:
+                        return ""
+                if cluster and rel:
+                    self.cat_dict[f"{r}_rsh_k_{x}"] = alive_kit
+                    text = re.sub(fr'(?<!\/){r}_rsh_k_{x}(?!\/)', str(alive_kit.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"rsh_k_{x}"] = alive_kit
+                    text = re.sub(fr'(?<!\/)rsh_k_{x}(?!\/)', str(alive_kit.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_rsh_k"] = alive_kit
+                    text = re.sub(fr'(?<!\/){r}_rsh_k(?!\/)', str(alive_kit.name), text)
+                else:
+                    self.cat_dict["rsh_k"] = alive_kit
+                    text = re.sub(r'(?<!\/)rsh_k(?!\/)', str(alive_kit.name), text)
         if "rsh_a" in text:
+            cluster = False
+            rel = False
+            match = re.search(r'rsh_a(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)rsh_a', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
             alive_apps = get_alive_apps(Cat)
             if len(alive_apps) < 1:
                 return ""
-            alive_app = choice(alive_apps)
-            counter = 0
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or not alive_app.shunned:
-                counter+=1
-                if counter == 30:
-                    return ""
+            if f"rsh_a_{x}" in self.cat_dict or "rsh_a" in self.cat_dict or f"{r}_rsh_a" in self.cat_dict or f"{r}_rsh_a_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_rsh_a_{x}(?!\/)', str(self.cat_dict[f"{r}_rsh_a_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)rsh_a_{x}(?!\/)', str(self.cat_dict[f"rsh_a_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_rsh_a_(?!\/)', str(self.cat_dict[f"{r}_rsh_a"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)rsh_a(?!\/)', str(self.cat_dict["rsh_a"].name), text)
+            else:
                 alive_app = choice(alive_apps)
-            text = text.replace("rsh_a", str(alive_app.name))
+                counter = 0
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20))) or alive_app.shunned == 0):
+                    counter+=1
+                    if counter == 30:
+                        return ""
+                    alive_app = choice(alive_apps)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_rsh_k_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_k_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"rsh_k_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)rsh_k_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_rsh_k"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_k(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["rsh_k"] = alive_app
+                    text = re.sub(r'(?<!\/)rsh_k(?!\/)', str(alive_app.name), text)
         if "rsh_w" in text:
+            cluster = False
+            rel = False
+            match = re.search(r'rsh_w(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)rsh_w', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
             alive_apps = get_alive_warriors(Cat)
             if len(alive_apps) < 1:
                 return ""
-            alive_app = choice(alive_apps)
-            counter = 0
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or not alive_app.shunned:
-                counter+=1
-                if counter == 30:
-                    return ""
+            if f"rsh_w_{x}" in self.cat_dict or "rsh_w" in self.cat_dict or f"{r}_rsh_w" in self.cat_dict or f"{r}_rsh_w_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_rsh_w_{x}(?!\/)', str(self.cat_dict[f"{r}_rsh_a_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)rsh_w_{x}(?!\/)', str(self.cat_dict[f"rsh_w_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_rsh_w_(?!\/)', str(self.cat_dict[f"{r}_rsh_w"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)rsh_w(?!\/)', str(self.cat_dict["rsh_w"].name), text)
+            else:
                 alive_app = choice(alive_apps)
-            text = text.replace("rsh_w", str(alive_app.name))
+                counter = 0
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20))) or alive_app.shunned == 0):
+                    counter+=1
+                    if counter == 30:
+                        return ""
+                    alive_app = choice(alive_apps)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_rsh_w_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_w_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"rsh_w_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)rsh_w_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_rsh_w"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_w(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["rsh_w"] = alive_app
+                    text = re.sub(r'(?<!\/)rsh_w(?!\/)', str(alive_app.name), text)
         if "rsh_m" in text:
+            cluster = False
+            rel = False
+            match = re.search(r'rsh_m(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)rsh_m', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
             alive_apps = get_alive_meds(Cat)
             if len(alive_apps) < 1:
                 return ""
-            alive_app = choice(alive_apps)
-            counter = 0
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or not alive_app.shunned:
-                counter+=1
-                if counter == 30:
-                    return ""
+            if f"rsh_a_{x}" in self.cat_dict or "rsh_m" in self.cat_dict or f"{r}_rsh_m" in self.cat_dict or f"{r}_rsh_m_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_rsh_m_{x}(?!\/)', str(self.cat_dict[f"{r}_rsh_m_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)rsh_m_{x}(?!\/)', str(self.cat_dict[f"rsh_m_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_rsh_m_(?!\/)', str(self.cat_dict[f"{r}_rsh_m"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)rsh_m(?!\/)', str(self.cat_dict["rsh_m"].name), text)
+            else:
                 alive_app = choice(alive_apps)
-            text = text.replace("rsh_m", str(alive_app.name))
+                counter = 0
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20))) or alive_app.shunned == 0):
+                    counter+=1
+                    if counter == 30:
+                        return ""
+                    alive_app = choice(alive_apps)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_rsh_m_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_m_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"rsh_m_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)rsh_m_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_rsh_m"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_m(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["rsh_m"] = alive_app
+                    text = re.sub(r'(?<!\/)rsh_m(?!\/)', str(alive_app.name), text)
         if "rsh_d" in text:
+            cluster = False
+            rel = False
+            match = re.search(r'rsh_d(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)rsh_d', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
             alive_apps = get_alive_mediators(Cat)
             if len(alive_apps) < 1:
                 return ""
-            alive_app = choice(alive_apps)
-            counter = 0
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or not alive_app.shunned:
-                counter+=1
-                if counter == 30:
-                    return ""
+            if f"rsh_d_{x}" in self.cat_dict or "rsh_d" in self.cat_dict or f"{r}_rsh_d" in self.cat_dict or f"{r}_rsh_d_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_rsh_d_{x}(?!\/)', str(self.cat_dict[f"{r}_rsh_d_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)rsh_d_{x}(?!\/)', str(self.cat_dict[f"rsh_d_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_rsh_d_(?!\/)', str(self.cat_dict[f"{r}_rsh_d"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)rsh_d(?!\/)', str(self.cat_dict["rsh_d"].name), text)
+            else:
                 alive_app = choice(alive_apps)
-            text = text.replace("rsh_d", str(alive_app.name))
+                counter = 0
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20))) or alive_app.shunned == 0):
+                    counter+=1
+                    if counter == 30:
+                        return ""
+                    alive_app = choice(alive_apps)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_rsh_d_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_d_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"rsh_d_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)rsh_d_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_rsh_d"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_d(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["rsh_d"] = alive_app
+                    text = re.sub(r'(?<!\/)rsh_d(?!\/)', str(alive_app.name), text)
         if "rsh_q" in text:
+            cluster = False
+            rel = False
+            match = re.search(r'rsh_q(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)rsh_q', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
             alive_apps = get_alive_queens(Cat)
             if len(alive_apps) < 1:
                 return ""
-            alive_app = choice(alive_apps)
-            counter = 0
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or not alive_app.shunned:
-                counter+=1
-                if counter == 30:
-                    return ""
+            if f"rsh_q_{x}" in self.cat_dict or "rsh_q" in self.cat_dict or f"{r}_rsh_q" in self.cat_dict or f"{r}_rsh_q_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_rsh_q_{x}(?!\/)', str(self.cat_dict[f"{r}_rsh_q_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)rsh_q_{x}(?!\/)', str(self.cat_dict[f"rsh_q_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_rsh_q_(?!\/)', str(self.cat_dict[f"{r}_rsh_q"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)rsh_q(?!\/)', str(self.cat_dict["rsh_q"].name), text)
+            else:
                 alive_app = choice(alive_apps)
-            text = text.replace("rsh_q", str(alive_app.name))
+                counter = 0
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20))) or alive_app.shunned == 0):
+                    counter+=1
+                    if counter == 30:
+                        return ""
+                    alive_app = choice(alive_apps)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_rsh_q_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_q_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"rsh_q_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)rsh_q_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_rsh_q"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_q(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["rsh_q"] = alive_app
+                    text = re.sub(r'(?<!\/)rsh_q(?!\/)', str(alive_app.name), text)
         if "rsh_e" in text:
+            cluster = False
+            rel = False
+            match = re.search(r'rsh_e(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)rsh_e', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
             alive_apps = get_alive_elders(Cat)
             if len(alive_apps) < 1:
                 return ""
-            alive_app = choice(alive_apps)
-            counter = 0
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or not alive_app.shunned:
+            if f"rsh_e_{x}" in self.cat_dict or "rsh_e" in self.cat_dict or f"{r}_rsh_e" in self.cat_dict or f"{r}_rsh_e_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_rsh_e_{x}(?!\/)', str(self.cat_dict[f"{r}_rsh_e_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)rsh_e_{x}(?!\/)', str(self.cat_dict[f"rsh_e_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_rsh_e_(?!\/)', str(self.cat_dict[f"{r}_rsh_e"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)rsh_e(?!\/)', str(self.cat_dict["rsh_e"].name), text)
+            else:
                 alive_app = choice(alive_apps)
-                counter+=1
-                if counter==30:
-                    return ""
-            text = text.replace("rsh_e", str(alive_app.name))
+                counter = 0
+                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
+                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
+                (r == "neutral" and (cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20))) or alive_app.shunned == 0):
+                    counter+=1
+                    if counter == 30:
+                        return ""
+                    alive_app = choice(alive_apps)
+                if cluster and rel:
+                    self.cat_dict[f"{r}_rsh_e_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_e_{x}(?!\/)', str(alive_app.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"rsh_e_{x}"] = alive_app
+                    text = re.sub(fr'(?<!\/)rsh_e_{x}(?!\/)', str(alive_app.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_rsh_e"] = alive_app
+                    text = re.sub(fr'(?<!\/){r}_rsh_e(?!\/)', str(alive_app.name), text)
+                else:
+                    self.cat_dict["rsh_e"] = alive_app
+                    text = re.sub(r'(?<!\/)rsh_e(?!\/)', str(alive_app.name), text)
         if "sh_d" in text:
             random_cat = choice(self.get_living_cats())
             counter = 0
@@ -2180,7 +3237,7 @@ class TalkScreen(Screens):
                 random_cat = choice(self.get_living_cats())
                 counter +=1
             text = text.replace("sh_l", str(random_cat.name))
-        if "w_c" in text:
+        if "w_cClan" in text:
             if game.clan.war.get("at_war", False):
                 return ""
             text = text.replace("w_c", str(game.clan.war["enemy"]))
@@ -2208,5 +3265,3 @@ class TalkScreen(Screens):
         if not bs_display:
             return "clanfounder"
         return bs_display
-    
-
