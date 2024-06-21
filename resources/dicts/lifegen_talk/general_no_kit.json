@@ -11993,7 +11993,7 @@
         [
             "[t_c smiles at you.]",
             "Hello, y_c! Wanna come sit with me?",
-            "[You sit next to {PRONOUN/t_c/poss}. {PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses} for a second, looking at you.]",
+            "[You sit next to {PRONOUN/t_c/object}. {PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses} for a second, looking at you.]",
             "Whenever we talk, I feel like there's a lot more going on inside you than you ever let anyone see.",
             "Is that true?"
         ]
@@ -17646,8 +17646,8 @@
         [
             "[t_c watches tm_n apprehensively from across camp.]",
             "Do you think tm_n even likes me?",
-            "It seems like, every new skill {PRONOUN/t_mn/subject} {VERB/t_mn/try/tries} and {VERB/t_mn/teach/teaches} me, I always seem to mess it up somehow ...",
-            "I just hope I'm not making {PRONOUN/t_mn/object} look like a bad mentor."
+            "It seems like, every new skill {PRONOUN/tm_n/subject} {VERB/tm_n/try/tries} and {VERB/tm_n/teach/teaches} me, I always seem to mess it up somehow ...",
+            "I just hope I'm not making {PRONOUN/tm_n/object} look like a bad mentor."
         ]
     ],
     "assertive_mentor1": [

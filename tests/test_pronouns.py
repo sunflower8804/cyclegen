@@ -80,7 +80,7 @@ def test():
         "t_p_pos": _r,
         "t_p_negative": _r,
         "m_n": _r,
-        "t_mn": _r,
+        "tm_n": _r,
         "r_q": _r,
         "r_k": _r,
         "r_e": _r,

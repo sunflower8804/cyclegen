@@ -1787,9 +1787,9 @@
         ],
         [
             "Still watching over y_k?",
-            "... yeah I know that they're your kit, no matter who raises them.",
-            "[t_c bumps their head against your side.]",
-            "Just don't forget that they're one of us, too. We protect our own."
+            "... yeah I know that {PRONOUN/y_k/subject}{VERB/y_k/'re/'s} your kit, no matter who raises {PRONOUN/y_k/object}.",
+            "[t_c bumps {PRONOUN/t_c/poss} head against your side.]",
+            "Just don't forget that {PRONOUN/y_k/subject}{VERB/y_k/'re/'s} one of us, too. We protect our own."
         ]
     ],
     "they_df_CM1": [
@@ -1801,7 +1801,7 @@
         [
             "[Somehow, you've found yourself strolling across the border into a shadowed forest. Before you can fully cross the threshold between it and your own world, you catch sight of t_c, their eyes wide and pupils dilatated.]",
             "Get out.",
-            "[Their tone isn't aggressive. In fact, they almost sound like they're... begging you?]",
+            "[{PRONOUN/t_c/poss/CAP} tone isn't aggressive. In fact, {PRONOUN/t_c/subject} almost {VERB/t_c/sound/sounds} like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s}... begging you?]",
             "Get out! I'd do anything, anything to be like you - out there, able to watch over my loved ones without them fearing me.",
             "Look at me! Look at my paws, at my pelt. Look around you, oh for -- tsh! This isn't a place that you get to explore all carefree, not when you're free to go anywhere else.",
             "Please, just go. Before you get dragged in with me."
@@ -1929,6 +1929,118 @@
             "And you killed another cat. You <b>desecrated</b> the code you swore to us.",
             "[y_c spits at your paws. The fury in their eyes is something greater, something more ancient than your Clanmate's.]",
             "Find your own stars-damned path. I will not guide you again."
+        ]
+    ],
+    "deaf_J1": [
+        [
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "only_you_blind",
+            "any"
+        ],
+        [
+            "[You smell t_c approach, but {PRONOUN/t_c/subject} {VERB/t_c/bump/bumps} into you before {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} the same.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/give/gives} your side an apologetic tap before {PRONOUN/t_c/subject} {VERB/t_c/continue/continues} on {PRONOUN/t_c/poss} way.]"
+        ]
+    ],
+    "deaf_J2": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[You can't tell if t_c's scent has a hint of blood to it now, or if you're just imagining that.]"
+        ]
+    ],
+    "deaf_J3": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "[t_c never gets as close to you as {PRONOUN/t_c/subject} used to.]"
+        ]
+    ],
+    "deaf_J4": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "both_shunned",
+            "any"
+        ],
+        [
+            "[t_c is the only cat who will lay next to you anymore.]"
+        ]
+    ],
+    "deaf_J5": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_dead",
+            "any"
+        ],
+        [
+            "[t_c seems confused at your presence.]"
+        ]
+    ],
+    "deaf_J6": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "they_dead",
+            "any"
+        ],
+        [
+            "[t_c's ghostly presence kind of freaks you out.]"
+        ]
+    ],
+    "deaf_J7": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_dead",
+            "they_dead",
+            "any"
+        ],
+        [
+            "[t_c brushes {PRONOUN/t_c/poss} ghostly pelt against yours.]"
+        ]
+    ],
+    "deaf_J8": [
+        [
+            "any",
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You and t_c roll around in the sun together.]"
+        ]
+    ],
+    "testdialogue": [
+        [
+            "any"
+        ],
+        [
+            "t_kk is a kit."
         ]
     ]
 }

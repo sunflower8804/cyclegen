@@ -1578,10 +1578,10 @@ class FlirtScreen(Screens):
             else:
                 return ""
         # Their mentor
-        if "t_mn" in text or "tm_n" in text:
+        if "tm_n" in text or "tm_n" in text:
             if cat.mentor is None:
                 return ""
-            text = text.replace("t_mn", str(Cat.fetch_cat(cat.mentor).name))
+            text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
             text = text.replace("tm_n", str(Cat.fetch_cat(cat.mentor).name))
             
         # Your mentor

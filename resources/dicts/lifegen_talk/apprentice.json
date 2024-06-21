@@ -845,7 +845,7 @@
         [
             "Ugh, I can't believe my mentor gave me tick duty again.",
             "This is so unfair! I'm supposed to be doing cool stuff, like hunting and fighting in battles! Not eating mousebile and cleaning old fleabags!",
-            "Um ... please don't tell t_mn I said that, though. Hehe."
+            "Um ... please don't tell tm_n I said that, though. Hehe."
         ]
     ],
     "assertive_apprentice5": [
@@ -2949,9 +2949,9 @@
             "Gah, stupid, stupid, so stupid, t_c ...",
             "Wuh - y_c? How long have you been standing there?",
             "Why was I talking to myself ...?",
-            "*Sigh* It's, like, the dumbest thing ever. t_mn gave me this surprise assessment today, and I totally flunked it!",
+            "*Sigh* It's, like, the dumbest thing ever. tm_n gave me this surprise assessment today, and I totally flunked it!",
             "How could I have answered that the best way to catch a fish is by swimming up to it? It doesn't even make any sense!",
-            "I just know that t_mn is still laughing at me ... the whole Clan probably is.",
+            "I just know that tm_n is still laughing at me ... the whole Clan probably is.",
             "[You tell t_c not to be so hard on {PRONOUN/t_c/self}.]",
             "But, if I'm not hard on myself, then how will I ever become stronger?",
             "I refuse to be an embarrassment to my Clan and mentor. I'll pass that assessment next time ... Whatever it takes!"
@@ -3181,7 +3181,9 @@
             "they_app",
             "any",
             "you_dftrainee",
-            "they_df"
+            "they_df",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, there you are, y_c. Do you have a moment?",
@@ -3217,7 +3219,9 @@
             "you_leader",
             "they_app",
             "assertive",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'll make you proud, y_c!",
@@ -3252,6 +3256,17 @@
             "Okay, first, we have to scale up these rocks, and they're sort of slippery, but it's okay, cuz I only fell, like, twice. Next, we have to cross a river, and I'm pretty sure there's snakes in there, so watch out! Then, we have to ...",
             "Aw, c'mon, don't look all nervous. It'll be fun! What's life without a little danger, right?",
             "Ready? Let's go!"
+        ]
+    ],
+    "deafapp_1": [
+        [
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "any"
+        ],
+        [
+            "[t_c races around camp, playfully chasing some of {PRONOUN/t_c/poss} fellow apprentices as they wait to head out for training.]"
         ]
     ]
 }

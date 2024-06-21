@@ -3,7 +3,9 @@
         [
             "they_dead",
             "you_dead",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "This isn't what I expected from the afterlife. Was this what you were hoping for?"
@@ -12,7 +14,9 @@
     "dead_outsider_J2": [
         [
             "they_dead",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't know why you can see me. It kind of freaks me out."
@@ -22,7 +26,9 @@
         [
             "they_sc",
             "you_ur",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't think it's fair that I'm over here, and you're not.",
@@ -38,7 +44,9 @@
             "any",
             "they_blind",
             "you_blind",
-            "no_kit"
+            "no_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Clans are cruel. This wouldn't be happening to you if you just left."
@@ -53,7 +61,10 @@
             "they_deaf",
             "they_blind",
             "you_deaf",
-            "no_kit"
+            "no_kit",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c butts {PRONOUN/t_c/poss} ghostly head against yours.]",
@@ -69,7 +80,9 @@
             "any",
             "they_blind",
             "you_blind",
-            "no_kit"
+            "no_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm sorry for your loss, y_c.",
@@ -82,7 +95,9 @@
             "any",
             "no_kit",
             "you_blind",
-            "they_blind"
+            "they_blind",
+            "they_blind",
+            "you_blind"
         ],
         [
             "How awful must I have been, to end up in the hell for a belief that I didn't even hold?",
@@ -96,7 +111,9 @@
             "you_sc",
             "no_kit",
             "you_blind",
-            "they_blind"
+            "they_blind",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Do you StarClan cats think this is funny? You enjoy sending helpless cats to purgatory forever, even when they're not from a Clan?",
@@ -109,7 +126,9 @@
             "you_ur",
             "no_kit",
             "you_blind",
-            "they_blind"
+            "they_blind",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, Clancat.",
@@ -203,7 +222,8 @@
             "they_ur",
             "any",
             "they_kitten",
-            "you_not_kit"
+            "you_not_kit",
+            "they_blind"
         ],
         [
             "Aah!",
@@ -281,7 +301,9 @@
             "they_newborn",
             "you_sc",
             "they_ur",
-            "they_kittypet"
+            "they_kittypet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Meewwww!",
@@ -350,14 +372,16 @@
             "they_newborn",
             "you_sc",
             "they_ur",
-            "they_kittypet"
+            "they_kittypet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Mew. Mew. Mew. Mew. Mew. Mew. Meeeew.",
             "[Is that... t_c? {VERB/t_c/Aren't/Isn't} {PRONOUN/t_c/subject} a kittypet? You heard one of the queens say that before.]",
             "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} mewing with each step as {PRONOUN/t_c/subject} {VERB/t_c/go/goes} past. Maybe {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} counting...?]",
             "[... Can newborns count?]",
-            "[t_c toddles off, unaware of the existential thoughts going through your head because of them.]"
+            "[t_c toddles off, unaware of the existential thoughts going through your head because of {PRONOUN/t_c/object}.]"
         ]
     ],
     "sckit_urnew_R4": [
@@ -366,7 +390,9 @@
             "they_newborn",
             "you_sc",
             "they_ur",
-            "they_kittypet"
+            "they_kittypet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[In the middle of a scavenger hunt, you stumble across t_c!]",
@@ -383,7 +409,9 @@
             "they_newborn",
             "you_sc",
             "they_ur",
-            "they_kittypet"
+            "they_kittypet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[One of the queens asks you for a favor since they're alone with the newborns right now. t_c has wandered in, but it's time for {PRONOUN/t_c/object} to go home.]",
@@ -395,7 +423,10 @@
     "dead_outsider_J17": [
         [
             "they_sc",
-            "kitten"
+            "kitten",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c is frolicking through stardust.]"
@@ -404,7 +435,8 @@
     "dead_outsider_J18": [
         [
             "they_sc",
-            "kitten"
+            "kitten",
+            "you_blind"
         ],
         [
             "Oh, hey there! You're cute.",
@@ -429,7 +461,9 @@
         [
             "they_dead",
             "you_dead",
-            "newborn"
+            "newborn",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, goodness...",
