@@ -1705,5 +1705,252 @@
             "Nine lives I was given, and you deemed yourself important enough to take the last of them.",
             "I hope you never join me here. I'll see you in the Dark Forest one day, I promise you."
         ]
+    ],
+    "assertive_mediatorapp_AJ":  [
+	[
+		"any",
+		"assertive",
+		"platonic_like"
+	],
+	[
+		"y_c, can you believe it? I actually got to mediate a real, serious argument today! Eeee, so cool!!!",
+		"I mean, uh, definitely not cool. I’m definitely very serious and respectful towards my sacred duty to my clan.",
+		"... Is tm_n still there?"
+	]
+    ],
+
+    "assertive_mediatorapp_AJ1":  [
+	[
+		"any",
+		"assertive",
+        "silly",
+		"neutral"
+	],
+	[
+		"Er, sorry, y_c. I can’t chat right now …",
+		"tm_n really needs me to mediate this argument right now, and I kinda actually have to focus.",
+		"I’ll come and find you as soon as I’m free, though, okay?"
+	]
+    ],
+
+    "assertive_mediatorapp_AJ2":  [
+	[
+		"mediator",
+		"assertive",
+        "cool"
+	],
+	[
+		"Knowing what we know from mediating their conflicts, if everyone in camp got into a fight … Who d’you think would win?",
+		"Can be mental. Or physical. Either option would be interesting.",
+		"Personally, I’m betting on r_c … in both categories."
+	]
+    ],
+
+    "assertivemediatorapp_AJ3":  [
+	[
+		"any",
+		"assertive",
+		"silly",
+		"unlawful",
+        "from_your_kit",
+        "from_adopted_kit",
+        "from_your_apprentice"
+	],
+	[
+		"[t_c stumbles across camp to you, soaking wet and covered in mud.]",
+		"y_c! Before you get mad, I didn’t do it!",
+		"[The very peeved-off looking deputy locks eyes with you and storms in your direction. What mischief did t_c get into this time?]"
+	]
+    ],
+
+    "assertivemediator_toqueen_AJ":  [
+	[
+		"queen’s apprentice",
+		"queen",
+		"assertive",
+		"silly",
+		"cool",
+		"stable",
+		"upstanding",
+		"sweet"
+	],
+	[
+		"Kits bickering again? *Sigh* I hear ya …",
+		"Hard to reason with cats whose brains are basically still mush. But kits are actually a lot more emotionally aware than you may realize.",
+		"All they want is to feel seen and understood, just like you or I or any other cat. When you don’t take the time to listen to them, that’s when they really lash out.",
+		"Try speaking to them like adults, respecting their feelings, and keeping in mind that they won’t be able to communicate as well as we can.",
+		"You got it, y_c!"
+	]   
+    ],
+
+
+    "assertivemediator_toqueen_AJ1":  [
+	[
+		"queen’s apprentice",
+		"queen",
+		"assertive",
+		"silly",
+		"cool",
+		"stable",
+		"upstanding",
+		"sweet"
+	],
+	[
+		"y_c, I know the kits fight a lot, but maybe you don’t have to come to me for everything?",
+		"Part of being a queen is understanding kit development, after all. You need to know how to navigate their emotions in order to help them grow into the best cats they can be!",
+		"How about, just this once, you try helping the kits resolve their quarrels on your own?",
+		"And if you mess up, I’ll be right here to help you. It is my job, after all! *Wink*"
+	]
+    ],
+
+    "assertivemediatorapp_AJ4":  [
+	[
+		"any",
+        	"assertive",
+        	"min_platonic_40"
+	],
+	[
+		"I have my first meeting with another clan today … wish me luck, will ya?",
+		"When I get back, I’ll tell you all about the other clan’s territory! Their leader, their prey … Everything you’ve ever wondered about!",
+		"Don’t wait up, huh? I’ll be back before you know it!"
+	]
+    ],
+
+    "assertivemediatorapp_AJ5": [
+	[
+		"you_kitten",
+		"you_apprentice",
+		"you_warrior",
+		"you_elder",
+		"you_deputy",
+		"you_leader",
+		"you_queen",
+		"you_queen’s_apprentice",
+		"assertive"
+	],
+	[
+		"[You ask t_c why {PRONOUN/t_c/subject} chose to become a mediator, given {PRONOUN/t_c/poss} adventurous personality.]",
+        	"Ah, well, that’s easy … Mediation is full of adventure!",
+        	"I get to explore far and wide, collaborating with mediators across territories, and get to know all sorts of different cats! That’s plenty of excitement, no?",
+       		"You might think you know life-or-death situations on the battlefield, but when you’re a mediator, the stakes are even higher. My decisions could be the difference between peace among the clans, or bloody mayhem. It’s terrifying … but thrilling, too!",
+        	"There’s lots of different paths a cat can take in this world, but I know this is the path for me. Can you say the same?"
+	]
+    ],
+
+    "assertivemediatorapp_AJ6": [
+	[
+		"any",
+		"assertive",
+        	"unabashed",
+		"min_platonic_45"
+	],
+	[
+		"Hey! I brought ya back a little gift from o_cClan’s territory.",
+		"[t_c brandishes a colorful, exotic flower and lays it at your paws.]",
+		"‘Innit cool? I knew you’d like it!",
+		"I saw this other cool plant, too, but didn’t get the chance to snag it … Next time, I’ll make sure to bring it back!"
+	]
+    ],
+
+    "mediator_like_AJ": [
+	[
+		"no_kit",
+		"they_mediator",
+		"they_mediator_apprentice",
+		"min_platonic_30",
+		"they_assertive",
+		"they_unabashed"
+	],
+	[
+		"Ugh, it's sooo boring today. Everything's way too calm and peaceful -- how am I supposed to do my job?",
+		"Hey, why don't you go pick a fight with r_c, and then I can swoop in and mediate it?",
+		"Or, maybe we could get into a fight? C'mon, take a jab at me!",
+		"But don't get too cocky! I'm armed and dangerous with conflict resolution skills! Haha!"
+	]
+	],
+
+    "assertivemediatorapp_AJ7": [
+	[
+		"any",
+		"assertive",
+		"from_your_apprentice"
+	],
+	[
+	    "Hey, y_c! When do we get to visit o_cClan territory? Can we go right now?",
+	    "Are we allowed to just cross the borders as we please or is there some sort of warning system involved?",
+	    "Does the o_cClan mediator know about me yet?",
+	    "Ah, whatever. I’m sure I’ll find out when I get there. Let’s go!!!",
+	    "[t_c takes off across camp. You aren’t quite sure how to tell {PRONOUN/t_c/object} there wasn’t even a o_c visit scheduled for today.]"
+	]
+    ],
+
+    "assertivemediatorapp_AJ8": [
+	[
+		"any",
+		"assertive",
+		"from_your_apprentice",
+		"random_cat"
+	],
+	[
+		"y_c? I might’ve … goofed something up.",
+		"d_n and r_w were fighting, and I tried using the de-escalation strategies you taught me, but they wouldn’t listen! They just kept on arguing louder and louder!",
+		"... Did I talk over them?",
+	    	"Yeah, maybe a little. But it’s not my fault! They wouldn’t stop arguing!",
+		"[You explain to your apprentice the importance of making all parties feel heard and understood while mediating a conflict.]",
+		"Thanks, y_c. Next time, I won’t let you down!"
+	]
+    ],
+
+    "assertivemediatorapp_AJ9": [
+	[
+		"mediator",
+		"mediator apprentice",
+		"random_cat"
+	],
+	[
+		"*Sigh* Looks like r_c and r_w are fighting again …",
+		"Do you wanna handle this one, or should I?"
+	]
+    ],
+
+    "assertivemediatorapp_AJ10": [
+	[
+		"platonic_like",
+		"assertive",
+        	"they_sameage"
+	],
+	[
+		"Guess who just got told to go to the Dark Forest … for the third time today.",
+		"Tell me you’re having an easier time than me, y_c. Helping others all day can be the best thing in the world, but other times, it’s just awful.",
+		"Still, the feeling I get when I successfully patch things up between two siblings, or help an elder reconnect with their kits … it makes it all worth it."
+	]
+    ],
+    
+    "assertivemediatorapp_AJ11": [
+	[
+		"any",
+		"assertive"
+	],
+	[
+		"Look, y_c, if you have a problem with somebody, you can’t be shy about it!",
+		"Honesty is key! It doesn’t help anyone to keep everything all bottled up inside. You have a voice, so you gotta use it!",
+		"Sure, my job is keeping the peace, but sometimes the best way to resolve a conflict is to start it. Y’know?"
+	]
+    ],
+
+    "assertive_warrior_or_elder": [
+	[
+		"mediator",
+        	"mediator apprentice",
+		"assertive",
+		"platonic_like"
+	],
+	[
+		"*Sigh* StarClan, today was hard …",
+		"Arguments in the nursery, medicine den, and warriors’ den, all at the same time … Is there something in the air?",
+		"Without you here, y_c, I genuinely don’t know what I would’ve done. Died, probably. Like, actually died.",
+		"... Thanks for having my back."
+	]
     ]
+
 }

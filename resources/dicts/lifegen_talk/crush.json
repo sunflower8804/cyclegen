@@ -81,11 +81,11 @@
             "you_blind"
         ],
         [
-            "[You ask t_c if the rumors about them and their_crush are true.]",
+            "[You ask t_c if the rumors about {PRONOUN/t_c/object} and their_crush are true.]",
             "What? Me and their_crush? C'mon, don't be ridiculous! Why would I ever like their_crush?",
-            "Sure, I guess {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} kinda pretty, and - and smart, and {PRONOUN/t_c/subject} {VERB/t_c/make/makes} me laugh like no one else can ...",
-            "Not to mention talented ... and hardworking ... and {PRONOUN/t_c/poss} smile, great StarClan, there's nothing else like it ...",
-            "... But - But it's not like I like {PRONOUN/t_c/object}, or anything!",
+            "Sure, I guess {PRONOUN/their_crush/subject}{VERB/their_crush/'re/'s} kinda pretty, and - and smart, and {PRONOUN/their_crush/subject} {VERB/their_crush/make/makes} me laugh like no one else can ...",
+            "Not to mention talented ... and hardworking ... and {PRONOUN/their_crush/poss} smile, great StarClan, there's nothing else like it ...",
+            "... But - But it's not like I like {PRONOUN/their_crush/object}, or anything!",
             "*Blush*"
         ]
     ],
