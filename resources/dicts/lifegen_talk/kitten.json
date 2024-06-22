@@ -325,7 +325,8 @@
             "greenleaf",
             "leaffall",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "y_c, we should go swimming! I heard some other cats do it all the time!",
@@ -1176,7 +1177,8 @@
             "Any",
             "sweet",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Hey y_c! Can I tell you a story?",
@@ -1261,7 +1263,8 @@
             "apprentice",
             "sweet",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "y_c!! y_c!! Are you okay??",
@@ -1380,7 +1383,8 @@
             "queen",
             "sweet",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Hey um... y_c?",
@@ -1461,7 +1465,8 @@
             "leader",
             "sweet",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Hey um... y_c? Um... are you okay?",
@@ -1473,7 +1478,8 @@
         [
             "elder",
             "sweet",
-            "silly"
+            "silly",
+            "they_hearing"
         ],
         [
             "y_c!! y_c!! Good morning!!",
@@ -1486,7 +1492,8 @@
             "elder",
             "sweet",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Heya y_c! ... I have a small question.",
@@ -2915,7 +2922,8 @@
             "unabashed",
             "any",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "[You notice t_c standing on a large rock.]",
@@ -3572,7 +3580,8 @@
             "upstanding",
             "newborn",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "You're so small... I wonder what plans you'll have for the future. What kind of goals will you want to meet? What will you be interested in?",
@@ -3625,7 +3634,8 @@
             "upstanding",
             "no_kit",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "[While the other kits are playing out in the clearing, t_c is in the nursery, trying to tidy up the moss that was tossed aside and scattered across the den floor.]",
@@ -3726,7 +3736,8 @@
             "no_kit",
             "cool",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "[The other kits are gathered around t_c, seemingly enthralled at {PRONOUN/t_c/poss} every word.]",
@@ -4144,7 +4155,8 @@
             "you_sc",
             "any",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "It's fun being up here and all, but when can we go back to c_nClan?",
@@ -4395,7 +4407,8 @@
             "they_kitten",
             "platonic_like",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "I heard that you messed up bad, and did something mean.",
@@ -5465,7 +5478,8 @@
             "they_blind",
             "you_blind",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Sometimes, I'm glad to still be on the ground, rather than up in the clouds in my afterlife.",
@@ -5854,7 +5868,8 @@
             "you_shunned",
             "they_kitten",
             "any",
-            "they_df"
+            "they_df",
+            "they_hearing"
         ],
         [
             "[t_c is staring at your paws. After an uncomfortable moment you ask why.]",

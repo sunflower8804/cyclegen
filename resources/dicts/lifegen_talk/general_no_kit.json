@@ -29,9 +29,7 @@
     "shunned1": [
         [
             "Any",
-            "they_shunned",
-            "they_blind",
-            "you_blind"
+            "they_shunned"
         ],
         [
             "...",
@@ -43,7 +41,9 @@
     "shunned2": [
         [
             "Any",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey... here.",

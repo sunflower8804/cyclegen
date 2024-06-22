@@ -2796,7 +2796,10 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)y_m(?!\/)', str(self.cat_dict["y_m"].name), text)
             else:
-                mate0 = Cat.fetch_cat(choice(you.mate))
+                if you.mate:
+                    mate0 = Cat.fetch_cat(choice(you.mate))
+                else:
+                    return ""
                 if you.mate is None or len(you.mate) == 0 or you.ID in cat.mate or\
                 (cluster and x not in get_cluster(mate0.personality.trait)) or (rel and (mate0.ID not in cat.relationships) or\
                 (r == "plike" and cat.relationships[mate0.ID].platonic_like < 20) or\
@@ -2852,7 +2855,10 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)t_m(?!\/)', str(self.cat_dict["t_m"].name), text)
             else:
-                mate1 = Cat.fetch_cat(choice(cat.mate))
+                if cat.mate:
+                    mate1 = Cat.fetch_cat(choice(cat.mate))
+                else:
+                    return ""
                 if cat.mate is None or len(cat.mate) == 0 or cat.ID in you.mate or\
                 (cluster and x not in get_cluster(mate1.personality.trait)) or (rel and (mate1.ID not in cat.relationships) or\
                 (r == "plike" and cat.relationships[mate1.ID].platonic_like < 20) or\
