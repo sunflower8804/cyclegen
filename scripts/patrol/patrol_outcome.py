@@ -190,7 +190,6 @@ class PatrolOutcome:
                     faith_effects = _d.get("faith_effects"),
                     accessory=_d.get("accessory"),
                     lost_cats=_d.get("lost_cats"),
-                    injury=_d.get("injury"),
                     history_leader_death=(
                         _d["history_text"].get("lead_death")
                         if isinstance(_d.get("history_text"), dict)

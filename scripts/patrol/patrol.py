@@ -32,8 +32,8 @@ from scripts.patrol.patrol_event import PatrolEvent
 from scripts.patrol.patrol_outcome import PatrolOutcome
 from scripts.cat.cats import Cat
 from scripts.special_dates import get_special_date, contains_special_date_tag
-from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, get_alive_kits, get_alive_cats, get_alive_apps, get_alive_meds, get_alive_mediators, get_alive_queens, get_alive_elders, get_alive_warriors, get_med_cats, ceremony_text_adjust, \
-    get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat, create_outside_cat
+from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, ceremony_text_adjust, \
+    get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat
 
 # ---------------------------------------------------------------------------- #
 #                              PATROL CLASS START                              #

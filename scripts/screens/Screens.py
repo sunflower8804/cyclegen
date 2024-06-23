@@ -4,7 +4,6 @@ from scripts.utility import update_sprite, scale
 from scripts.cat.cats import Cat
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
 from scripts.game_structure import image_cache
-from scripts.game_structure.image_button import UIImageButton
 import pygame_gui
 from scripts.game_structure.windows import SaveCheck, EventLoading, RetireScreen, DeputyScreen, NameKitsWindow, MateScreen
 from scripts.game_structure.propagating_thread import PropagatingThread

@@ -7,7 +7,7 @@ from scripts.cat.cats import Cat
 from scripts.cat.history import History
 from scripts.cat.pelts import Pelt
 from scripts.conditions import medical_cats_condition_fulfilled, get_amount_cat_for_one_medic
-from scripts.utility import event_text_adjust, get_med_cats, change_relationship_values, change_clan_relations, \
+from scripts.utility import event_text_adjust, change_relationship_values, change_clan_relations, \
     history_text_adjust
 from scripts.game_structure.game_essentials import game
 from scripts.events_module.scar_events import Scar_Events

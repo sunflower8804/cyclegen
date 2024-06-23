@@ -7,7 +7,7 @@ import pygame
 
 from ..cat.history import History
 from ..housekeeping.datadir import get_save_dir
-from ..game_structure.windows import ChangeCatName, SpecifyCatGender, KillCat, ChangeCatToggles
+from ..game_structure.windows import ChangeCatName, KillCat, ChangeCatToggles
 from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 
 import ujson
@@ -26,7 +26,6 @@ from scripts.cat.skills import SkillPath
 
 import math
 from scripts.cat.sprites import sprites
-from scripts.game_structure.image_button import UIImageButton, UITextBoxTweaked
 from scripts.game_structure.game_essentials import game, MANAGER
 from random import choice
 from re import sub

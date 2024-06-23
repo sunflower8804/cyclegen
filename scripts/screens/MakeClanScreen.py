@@ -17,7 +17,6 @@ from scripts.cat.cats import create_example_cats, create_cat, Cat
 from scripts.cat.names import names
 from scripts.clan import Clan
 from scripts.game_structure import image_cache
-from scripts.game_structure.image_button import UIImageButton, UISpriteButton, UITextBoxTweaked
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
 from scripts.patrol.patrol import Patrol
 from scripts.cat.skills import SkillPath
