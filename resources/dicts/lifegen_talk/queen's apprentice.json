@@ -135,7 +135,7 @@
             "I just like keeping kits safe."
         ]
     ],
-    "introspective_queenapp_to_Queen": [
+    "introspective_queenapp_to_queen": [
         [
             "you_queen",
             "they_queen's_apprentice",
@@ -163,10 +163,10 @@
         ],
         [
             "y_c? Oh hello. Are you lost?",
-            "You're in the Nursery. Cats don't generally go out of their way to come here.",
+            "You're in the nursery. Cats don't generally go out of their way to come here.",
             "Huh? You've come to see me? Oh that's lovely, thank you.",
             "It makes me happy that you've come to see me. I don't... often get to see cats who aren't kits, you know? Or tm_n.",
-            "I love being a Queen, it's the reason I chose to train to be one permanently, but it does make you feel a little...",
+            "I love being a queen, it's the reason I chose to train to be one permanently, but it does make you feel a little...",
             "Disconnected. You know?",
             "Thank you for coming out of your way. Want to play with the kits? They love seeing different faces!"
         ]
@@ -305,7 +305,7 @@
         [
             "Ugh, do I really have to hold all these dumb rule-teaching sessions all the time?",
             "It's so stuffy and boring ... It's like we're brainwashing kits into thinking the same way we do!",
-            "What if, instead of holding lessons, we organized a gauntlet of games to help teach the kits warrior code! Or - Or maybe we could have, like, interactive storytelling sessions, where we ask the kits what they think is right and wrong?",
+            "What if, instead of holding lessons, we organized a gauntlet of games to help teach the kits Warrior Code! Or - Or maybe we could have, like, interactive storytelling sessions, where we ask the kits what they think is right and wrong?",
             "I dunno! But anything beats sitting around and memorizing!"
         ]
     ],
@@ -699,7 +699,7 @@
         ],
         [
             "Ah, y_c! How have you been, has m_n been good to you? Ah- I'm sorry, I know I worry too much.",
-            "Just make sure you're taking care of yourself, okay? Being a Queen's Apprentice... I've learned a lot about cats bottling up their stress just to 'do things right'.",
+            "Just make sure you're taking care of yourself, okay? Being a queen's apprentice... I've learned a lot about cats bottling up their stress just to 'do things right'.",
             "I'm rooting for you! Now go get some rest, hehe, before m_n takes my fur off for distracting you!"
         ]
     ],
@@ -713,7 +713,7 @@
         ],
         [
             "Another good day in c_nClan, right y_c? Ah- I'm sorry, I didn't mean to startle you!",
-            "I've finally got a break, being a Queen is no easy task! What about you, how has today been?",
+            "I've finally got a break, being a queen is no easy task! What about you, how has today been?",
             "Wait- Let's go grab something to eat first, gotta make sure we're well fed and ready for the day!"
         ]
     ],
@@ -743,7 +743,7 @@
             "they_blind"
         ],
         [
-            "You know, it's kinda lonely in here... it feels cramped at times, and whilst I love being a Queen's Apprentice and helping out with the kits, I sometimes miss the companionship Warriors have.",
+            "You know, it's kinda lonely in here... it feels cramped at times, and whilst I love being a queen's apprentice and helping out with the kits, I sometimes miss the companionship warriors have.",
             "[t_c sighs, then smiles at you.]",
             "I'm glad you're here too... And that you put up with me and my sappy self."
         ]
@@ -892,7 +892,7 @@
             "[You ask {PRONOUN/t_c/object} to tell you what's going on and {PRONOUN/t_c/subject} move some leaves, revealing an injured kittypet.]",
             "... r_m and I found this kittypet out in the territory... {PRONOUN/t_c/subject/CAP} were pretty badly hurt.",
             "[You ask where r_m is, sighing softly.]",
-            "They're out gathering herbs... we were out getting stuff for the Nursery together.",
+            "They're out gathering herbs... we were out getting stuff for the nursery together.",
             "You won't tell l_n will you? ... I just want to make sure this cat makes it home safely.",
             "[You sigh, agreeing only under the condition that you supervise.]",
             "T- Thank you! Thank you so much! I'll make it up to you, I promise."
@@ -922,7 +922,7 @@
         [
             "Hey y_c! Would you mind if I asked which kits are becoming which roles?",
             "Why am I asking? ... I just want to make sure they're prepared for their roles so they can adjust well.",
-            "I felt pretty unprepared when I became a Queen's Apprentice, though I do love my job! I don't want that for them."
+            "I felt pretty unprepared when I became a queen's apprentice, though I do love my job! I don't want that for them."
         ]
     ],
     "sweet_queenapp_21": [
@@ -997,7 +997,7 @@
             "they_blind"
         ],
         [
-            "[You were expecting prey from one of the Warrior Apprentices, but today it's t_c who pops in with some prey.]",
+            "[You were expecting prey from one of the warrior apprentices, but today it's t_c who pops in with some prey.]",
             "[r_k trails behind {PRONOUN/t_c/object}, trying to play with {PRONOUN/t_c/poss} tail as {PRONOUN/t_c/subject} plop the piece of prey down right in front of you.]",
             "Hey y_c! r_a was supposed to bring you this, but {PRONOUN/r_a/subject} needed a day off so I decided to!",
             "Do you need anything, y_c?"

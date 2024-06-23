@@ -1810,7 +1810,7 @@
         [
             "Hm? Oh, hello, y_c.",
             "What was I thinking about? Oh, nothing in particular.",
-            "Just the nature of the warrior code, the meaning of existence, the purpose of our lives, the origin of the cosmos ...",
+            "Just the nature of the Warrior Code, the meaning of existence, the purpose of our lives, the origin of the cosmos ...",
             "... Trivial stuff like that."
         ]
     ],
@@ -5390,7 +5390,7 @@
             "hate"
         ],
         [
-            "[You try to make small talk with t_c, telling {PRONOUN/t_c/object} about a bird you saw a while ago. {PRONOUN/t_c/subject} {VERB/t_c/begin/begins} looking around frantically, checking under rocks, leaves, and the like.]",
+            "[You try to make small talk with t_c, telling {PRONOUN/t_c/object} about a bird you saw a while ago. {PRONOUN/t_c/subject/CAP} {VERB/t_c/begin/begins} looking around frantically, checking under rocks, leaves, and the like.]",
             "Oh, y_c, sorry. I'm not ignoring you. I'm just looking for something.",
             "I'm looking for who in StarClan asked... so far, I'm not having any luck!"
         ]
@@ -6227,7 +6227,7 @@
         [
             "[t_c seems to have kits clinging onto them, clearly having wanted to go out on a patrol... Seems these kits had other plans, though.]",
             "Help-",
-            "[As you pluck each and every kit off of {PRONOUN/t_c/object} and send them scurrying back to the Nursery, you can't help but notice {PRONOUN/t_c/object} staring at you in wonder out of the corner of your eye.]",
+            "[As you pluck each and every kit off of {PRONOUN/t_c/object} and send them scurrying back to the nursery, you can't help but notice {PRONOUN/t_c/object} staring at you in wonder out of the corner of your eye.]",
             "[However, when you look towards {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} quickly {VERB/t_c/shake/shakes} that look off of {PRONOUN/t_c/poss} face.]",
             "Thanks, y_c! I thought I'd never make it to the patrol on time."
         ]
@@ -6239,7 +6239,7 @@
             "sweet"
         ],
         [
-            "[t_c is humming a quiet tune as {PRONOUN/t_c/subject} {VERB/t_c/set/sets} up {PRONOUN/t_c/poss} nest in the Nursery, weaving flowers into {PRONOUN/t_c/poss} nest.]",
+            "[t_c is humming a quiet tune as {PRONOUN/t_c/subject} {VERB/t_c/set/sets} up {PRONOUN/t_c/poss} nest in the nursery, weaving flowers into {PRONOUN/t_c/poss} nest.]",
             "[As {PRONOUN/t_c/subject} {VERB/t_c/settle/settles} down, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to notice you watching. {PRONOUN/t_c/subject/CAP} {VERB/t_c/give/gives} you a smile and a gentle nod, happiness written all over {PRONOUN/t_c/poss} face. No words need to be exchanged for {PRONOUN/t_c/poss} excitement to be obvious.]"
         ]
     ],
@@ -6388,7 +6388,7 @@
             "they_blind"
         ],
         [
-            "Oh, y_c!! Do you need any help settling into the Nursery?",
+            "Oh, y_c!! Do you need any help settling into the nursery?",
             "I caught something extra today just for you, and I can go and get some moss too! Anything to make you more comfortable."
         ]
     ],
@@ -6438,7 +6438,7 @@
         ],
         [
             "[A soft purring sound can be heard from t_c as {PRONOUN/t_c/subject} {VERB/t_c/make/makes} your nest for you, despite you saying you could do it yourself.]",
-            "[Honestly, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} perfectly at ease with the world, just helping you settle into the Nursery.]",
+            "[Honestly, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} perfectly at ease with the world, just helping you settle into the nursery.]",
             "There you go, love. Let me know if you need anything at all, alright? I'd fight all of o_cClan if I have to...",
             "Though, I really hope I don't. That would be pretty mean, hehe~."
         ]
@@ -6479,7 +6479,7 @@
             "sweet"
         ],
         [
-            "[t_c gently enters the Nursery, seeming happy to see you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} at you, giving you a gentle nod.]",
+            "[t_c gently enters the nursery, seeming happy to see you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} at you, giving you a gentle nod.]",
             "I'm really proud of you, y_c... and I can't wait to meet my grandkits... I know they'll be just as amazing as you are."
         ]
     ],
@@ -6495,7 +6495,7 @@
             "they_hearing"
         ],
         [
-            "[t_c enters the Nursery, it seems {PRONOUN/t_c/subject} {VERB/t_c/were/was} looking for you.]",
+            "[t_c enters the nursery, it seems {PRONOUN/t_c/subject} {VERB/t_c/were/was} looking for you.]",
             "Hey, y_c! I heard about your kits, and I just wanted to offer you a helping paw.",
             "I know kits are a lot of work, and I know you well enough that being around others for too long can be exhausting...",
             "Just know that I'm here for you, okay?"
@@ -11673,8 +11673,8 @@
         ],
         [
             "[You threaten to report t_c to the deputy unless {PRONOUN/t_c/subject} {VERB/t_c/return/returns} an item {PRONOUN/t_c/subject} stole to you.]",
-            "Hey, go right ahead. There's nothing in the warrior code against petty theft.",
-            "... Yes, of course I have the entire warrior code memorized! Do you have any idea how many loopholes in it I've been able to exploit over the moons?",
+            "Hey, go right ahead. There's nothing in the Warrior Code against petty theft.",
+            "... Yes, of course I have the entire Warrior Code memorized! Do you have any idea how many loopholes in it I've been able to exploit over the moons?",
             "Only an amateur wouldn't know about the rules they're trying to break."
         ]
     ],
@@ -14051,7 +14051,7 @@
             "Any"
         ],
         [
-            "StarClan clings to the warrior code like a kit to its mother.",
+            "StarClan clings to the Warrior Code like a kit to its mother.",
             "They'll never get to understand real freedom like we do."
         ]
     ],
@@ -17093,7 +17093,7 @@
             "they_blind"
         ],
         [
-            "[You're watching t_c train. {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} panting hard, repeating the moves you've taught {PRONOUN/t_c/object} over and over again.]",
+            "[You're watching t_c train. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} panting hard, repeating the moves you've taught {PRONOUN/t_c/object} over and over again.]",
             "Can we... take... a break?",
             "[You growl and state that the enemy will never stop to give {PRONOUN/t_c/object} a break in the middle of a battle.]",
             "[t_c's ears droop, but {PRONOUN/t_c/subject} {VERB/t_c/go/goes} back to practice. You know you push {PRONOUN/t_c/object} hard, but it's for {PRONOUN/t_c/poss} own good.]",

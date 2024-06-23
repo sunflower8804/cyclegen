@@ -123,7 +123,7 @@
         ],
         [
             "Ahh! There's this new treatment I learned from this wandering healer that we've just gotta try ...",
-            "[t_c's eyes flash as {PRONOUN/t_c/subject} {VERB/t_c/explain/explains} the method. {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} always wanting to try out new and experimental herb combinations and procedures.]",
+            "[t_c's eyes flash as {PRONOUN/t_c/subject} {VERB/t_c/explain/explains} the method. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} always wanting to try out new and experimental herb combinations and procedures.]",
             "[You try to entertain {PRONOUN/t_c/poss} crazy ideas because, more often than not, they actually end up working!]"
         ]
     ],
@@ -466,8 +466,8 @@
             "they_blind"
         ],
         [
-            "Hey, there you are! What do you need today? Something to cure your ills? I got everything you need, hehe ...",
-            "[t_c is still cracking jokes, but {PRONOUN/t_c/poss} voice is strained, clearly tainted with the memory of d_c ... {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} seem to be taking the loss well.]"
+            "Hey, there you are! What do you need today? Something to cure your ills? I got everything you need, hehe...",
+            "[t_c is still cracking jokes, but {PRONOUN/t_c/poss} voice is strained, clearly tainted with the memory of d_c... {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} seem to be taking the loss well.]"
         ]
     ],
     "assertivewarrior_leader5": [
@@ -1183,7 +1183,7 @@
         ],
         [
             "Oh, y_c! Just the cat I was looking for!",
-            "[Smiling, t_c bounds over to you with a soft purr. {PRONOUN/t_c/subject} {VERB/t_c/give/gives} you a friendly headbutt as a greeting, walking by your side.]",
+            "[Smiling, t_c bounds over to you with a soft purr. {PRONOUN/t_c/subject/CAP} {VERB/t_c/give/gives} you a friendly headbutt as a greeting, walking by your side.]",
             "There was a training accident between some of the warriors, and we're out of herbs. Would you like to come with me to get more?",
             "You're the best! Come on, let's go."
         ]
@@ -1257,7 +1257,7 @@
         [
             "Hello y_c! I need to speak with l_n, if that's alright?",
             "It's a bit sudden, I know, but I think I finally figured out the solution to a problem we'd been having.",
-            "You can come in and sit with us, if you'd like! You /are/ the deputy, after all~."
+            "You can come in and sit with us, if you'd like! You <i>are</i> the deputy, after all~."
         ]
     ],
     "sweet_meddie_20": [
@@ -1310,7 +1310,7 @@
         ],
         [
             "y_c? I've got some herbs for you. I also brought you some prey and fresh moss, just to your liking!",
-            "No, you can't get out of taking your herbs by telling a story- /sigh/.",
+            "No, you can't get out of taking your herbs by telling a story- <i>sigh</i>.",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/give/gives} you an amused smile, settling down.]",
             "Alright, I'll listen to one, but only if you take your herbs first."
         ]

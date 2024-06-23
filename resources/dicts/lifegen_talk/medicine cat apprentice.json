@@ -182,7 +182,7 @@
         ],
         [
             "Ahh! There's this new treatment I learned from this wandering healer that we've just gotta try ...",
-            "[t_c's eyes flash as {PRONOUN/t_c/subject} {VERB/t_c/explain/explains} the method. {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} always wanting to try out new and experimental herb combinations and procedures.]",
+            "[t_c's eyes flash as {PRONOUN/t_c/subject} {VERB/t_c/explain/explains} the method. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} always wanting to try out new and experimental herb combinations and procedures.]",
             "[You try to entertain {PRONOUN/t_c/poss} crazy ideas because, more often than not, they actually end up working!]"
         ]
     ],
@@ -832,7 +832,7 @@
             "Oh hey there, little buddy! Would you like to learn about this herb?",
             "It's called poppy seed. It helps when you're feeling super bad, and need a little bit of rest. Don't take it without supervision, okay?",
             "And this one is garlic! It gets rid of nasty stuff when you're bitten by things... but it smells super bad!",
-            "Oh, and this is- ... oh, you fell asleep. Hehe, let's get you back to the Nursery, then."
+            "Oh, and this is- ... oh, you fell asleep. Hehe, let's get you back to the nursery, then."
         ]
     ],
     "sweet_medapp_4": [
@@ -983,7 +983,7 @@
         ],
         [
             "Oh y_c, I have a question if that's alright?",
-            "I've always kinda wondered... Why'd you choose to become a Medicine Cat? I know why I chose to, I don't like the thought of hurting anyone and have always had a love for herbs, but... what about you?"
+            "I've always kinda wondered... Why'd you choose to become a medicine cat? I know why I chose to, I don't like the thought of hurting anyone and have always had a love for herbs, but... what about you?"
         ]
     ],
     "sweet_medapp_15": [
@@ -1344,7 +1344,7 @@
             "you_blind"
         ],
         [
-            "[t_c tends to r_c as you sit in the Medicine Den, humming as {PRONOUN/t_c/subject} {VERB/t_c/work/works}. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'ve/'s} really grown into {PRONOUN/t_c/poss} role, even in the short time. It was pretty impressive, honestly.]",
+            "[t_c tends to r_c as you sit in the medicine den, humming as {PRONOUN/t_c/subject} {VERB/t_c/work/works}. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'ve/'s} really grown into {PRONOUN/t_c/poss} role, even in the short time. It was pretty impressive, honestly.]",
             "Aaaaalright! That should be all! Now y_c, what seems to be the problem today?",
             "[You explain what your issues are, and then question where tm_n is.]",
             "We had a bit of a wasp problem, and tm_n is checking the warriors who dealt with it. I'm on regular tasks until then! Now then, let me see what I have for that..."
@@ -1499,7 +1499,7 @@
             "All medicine cats need to take part in basic battle training lessons.",
             "Nervous? Don't worry, you'll hopefully never have to use these skills. It's just a precaution!",
             "Alright, now let me show you a basic battle stance.",
-            "[t_c moves into a battle stance. {PRONOUN/t_c/poss} form is sloppy -- df_m_n would never allow that.]",
+            "[t_c moves into a battle stance. {PRONOUN/t_c/poss/CAP} form is sloppy -- df_m_n would never allow that.]",
             "[You settle in and prepare yourself for a long day of learning things you already know.]"
         ]
     ],

@@ -711,7 +711,7 @@
         ],
         [
             "When you grow up, y_c, you'll see that sometimes breaking the rules can lead you to greater truths.",
-            "The warrior code isn't everything. Keep an open mind, okay?"
+            "The Warrior Code isn't everything. Keep an open mind, okay?"
         ]
     ],
     "you_kitten_9": [
@@ -2214,7 +2214,7 @@
             "you_blind"
         ],
         [
-            "Another soul chained by the Clan's traditions... and warrior code.",
+            "Another soul chained by the Clan's traditions... and Warrior Code.",
             "Maybe, just maybe, {PRONOUN/y_c/subject}'ll be the one to break free, to see the world for what it really is."
         ]
     ],
@@ -4682,6 +4682,43 @@
         ],
         [
             "[t_c looks sad to see you.]"
+        ]
+    ],
+    "dftokit_J9": [
+        [
+            "you_kitten",
+            "dark",
+            "they_older",
+            "you_dark"
+        ],
+        [
+            "[You notice t_c across camp, talking to one of those scary Dark Forest cats. They look upset, so you run up to make sure that the spirit isn't being too mean.]",
+            "Aah! y_c, what do you need? You shouldn't be this close to the edge of camp.",
+            "... What are you talking about? There's... there's no other cat...",
+            "Um...",
+            "[Their voice drops to a whisper.]",
+            "You see {PRONOUN/rdf_c/object}, too?",
+            "Wait for me by the nursery. I'll be back to camp shortly.",
+            "Go."
+        ]
+    ],
+    "dftokit_J10": [
+        [
+            "you_kitten",
+            "they_dftrainee",
+            "they_older",
+            "you_dark",
+            "any"
+        ],
+        [
+            "[You notice t_c across camp, talking to one of those scary Dark Forest cats. They look upset, so you run up to make sure that the spirit isn't being too mean.]",
+            "Aah! y_c, what do you need? You shouldn't be this close to the edge of camp.",
+            "... What are you talking about? There's... there's no other cat...",
+            "Um...",
+            "[Their voice drops to a whisper.]",
+            "You see {PRONOUN/rdf_c/object}, too?",
+            "Wait for me by the nursery. I'll be back to camp shortly.",
+            "Go."
         ]
     ]
 }

@@ -21,12 +21,12 @@
         },
         "purple": [
             "Oh, really? Let me put them up here and see how they look...",
-            "Oh, wow, they look fantastic! They make the Leader's Den look quite regal!",
+            "Oh, wow, they look fantastic! They make the leader's den look quite regal!",
             "Thanks y_c, it means a lot!"
         ],
         "golden": [
             "Oh, really? Let me put them up here and see how they look...",
-            "Oh, I see now! These golden flowers on the Medicine Cat's den really give it this bright but comforting look.",
+            "Oh, I see now! These golden flowers on the medicine cat's den really give it this bright but comforting look.",
             "Thanks y_c, it means a lot!"
         ]
     },
@@ -627,7 +627,7 @@
             "Don't wanna be a warrior? Like ... You wanna be a meddy cat, or something?",
             "Why in StarClan's name would you want that?! Do you just wanna be trapped inside of camp forever?",
             "Fine, then. I'll go find someone else to help me, if that's how you feel!",
-            "[t_c scampers off. {PRONOUN/t_c/subject} probably won't try to involve you in any more of {PRONOUN/t_c/poss} schemes any time soon.]"
+            "[t_c scampers off. {PRONOUN/t_c/subject/CAP} probably won't try to involve you in any more of {PRONOUN/t_c/poss} schemes any time soon.]"
         ]
     },
     "assertivekit_9": {
@@ -1350,7 +1350,7 @@
         ],
         "intro": [
             "Ugh, StarClan, I wish t_p would get off my back all the time!",
-            "It's always 't_c, you have to start taking things more seriously', 't_c, listen to the warrior code', 't_c, don't put that in your mouth' -- Like, just let me live my life! StarClan!"
+            "It's always 't_c, you have to start taking things more seriously', 't_c, listen to the Warrior Code', 't_c, don't put that in your mouth' -- Like, just let me live my life! StarClan!"
         ],
         "intro_choices": {
             "choice1": {
@@ -1427,7 +1427,7 @@
         ],
         "intro": [
             "Hey, who d'ya think's gonna be deputy once d_n is leader?",
-            "I guess probably r_w ... {PRONOUN/t_c/subject}'d probably be good for the job."
+            "I guess probably r_w... {PRONOUN/t_c/subject}'d probably be good for the job."
         ],
         "intro_choices": {
             "choice1": {
@@ -1956,7 +1956,7 @@
             }
         },
         "praise_apprentice": [
-            "[You compliment t_c on {PRONOUN/t_c/poss} initiative. {PRONOUN/t_c/subject} {VERB/t_c/blink/blinks}, surprised, then {VERB/t_c/break/breaks} into a rare smile.]",
+            "[You compliment t_c on {PRONOUN/t_c/poss} initiative. {PRONOUN/t_c/subject/CAP} {VERB/t_c/blink/blinks}, surprised, then {VERB/t_c/break/breaks} into a rare smile.]",
             "Guess I'll just put this on the freshkill pile, then. Heh."
         ],
         "scold_apprentice": [
@@ -2428,10 +2428,10 @@
         ],
         "intro": [
             "Oh, y_c...",
-            "[You slip out of the den one night and head for where t_c has been banished to sleep at the edge of camp. {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} asleep, and you chirp quietly to get {PRONOUN/t_c/poss} attention.]",
-            "[t_c's eyes shoot open and {PRONOUN/t_c/subject} practically {VERB/t_c/leap/leaps} out of their nest. {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} both ways to check that no cats are watching, then {VERB/t_c/rush/rushes} forward to bury {PRONOUN/t_c/poss} head in your shoulder.]",
+            "[You slip out of the den one night and head for where t_c has been banished to sleep at the edge of camp. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} asleep, and you chirp quietly to get {PRONOUN/t_c/poss} attention.]",
+            "[t_c's eyes shoot open and {PRONOUN/t_c/subject} practically {VERB/t_c/leap/leaps} out of their nest. {PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} both ways to check that no cats are watching, then {VERB/t_c/rush/rushes} forward to bury {PRONOUN/t_c/poss} head in your shoulder.]",
             "No cat's spoken to me all day... it sucks that you can only visit me at night.",
-            "[You give {PRONOUN/t_c/object} an affectionate lick on {PRONOUN/t_c/poss} shoulder, telling {PRONOUN/t_c/object} that this won't last forever. {PRONOUN/t_c/subject} lift {PRONOUN/t_c/poss} head from your fur.]",
+            "[You give {PRONOUN/t_c/object} an affectionate lick on {PRONOUN/t_c/poss} shoulder, telling {PRONOUN/t_c/object} that this won't last forever. {PRONOUN/t_c/subject/CAP} {VERB/t_c/lift/lifts} {PRONOUN/t_c/poss} head from your fur.]",
             "I know, I know...",
             "... Do you think you could slip away from the den tonight? It's so cold sleeping on my own out here..."
         ],
@@ -2480,7 +2480,7 @@
         },
         "shunnedtalk_stop": [
             "[You call out to r_c, reminding {PRONOUN/r_c/object} that {PRONOUN/r_c/subject} shouldn't be interacting with shunned cats.]",
-            "[When r_c jumps and quickly retreats at your warning, t_c looks confused. {PRONOUN/t_c/subject} {VERB/t_c/glance/glances} around a bit before {PRONOUN/t_c/poss} eyes land on you.]",
+            "[When r_c jumps and quickly retreats at your warning, t_c looks confused. {PRONOUN/t_c/subject/CAP} {VERB/t_c/glance/glances} around a bit before {PRONOUN/t_c/poss} eyes land on you.]",
             "... ... ...",
             "[{PRONOUN/t_c/subject} {VERB/t_c/dip/dips} {PRONOUN/t_c/object} head in apology.]"
         ],
@@ -2888,7 +2888,7 @@
         ],
         "intro": [
             "[Hot, humid, and too uncomfortable to sleep, you wander around c_nClan camp in hopes of growing tired enough to rest.]",
-            "[In the distance, you see a dark figure sitting under the night sky. {PRONOUN/t_c/subject} {VERB/t_c/sit/sits} there, shuffling through the freshkill in nothing but a blanket of darkness in {PRONOUN/t_c/poss} wake.]"
+            "[In the distance, you see a dark figure sitting under the night sky. {PRONOUN/t_c/subject/CAP} {VERB/t_c/sit/sits} there, shuffling through the freshkill in nothing but a blanket of darkness in {PRONOUN/t_c/poss} wake.]"
         ],
         "intro_choices": {
             "choice1": {
@@ -3040,7 +3040,7 @@
             "Lemme go! Get your paws off me!",
             "[As you pull {PRONOUN/t_c/object} off, a tuft of your fur goes with {PRONOUN/t_c/object}, like unhooking a little burr.]",
             "Hahaha! I got you good!",
-            "[You sit t_c down and force {PRONOUN/t_c/object} to explain to you what happened. {PRONOUN/t_c/subject} {VERB/t_c/whine/whines} and {VERB/t_c/pout/pouts}.]",
+            "[You sit t_c down and force {PRONOUN/t_c/object} to explain to you what happened. {PRONOUN/t_c/subject/CAP} {VERB/t_c/whine/whines} and {VERB/t_c/pout/pouts}.]",
             "Ugh ... It just isn't fair! I was just trying to get back at r_q, is all!",
             "['Get back at {PRONOUN/r_q/object} for what?']",
             "For being a giant dung-faced mouse-brain, that's what.",
@@ -3273,7 +3273,7 @@
         ],
         "intro": [
             "Earning your full name is about much more than learning new skills. You have to understand what it means to be a full member of c_nClan, and do whatever it takes to uphold our values.",
-            "So, that being said ... Have you memorized the warrior code?"
+            "So, that being said ... Have you memorized the Warrior Code?"
         ],
         "intro_choices": {
             "choice1": {

@@ -495,13 +495,10 @@
         [
             "focus",
             "Any",
-<<<<<<< HEAD
-=======
-	    "they_warrior",
-	    "they_deputy",
-	    "they_leader",
-	    "they_apprentice",
->>>>>>> 5909dbe74007bd745bb32396e95be7023417c3bd
+            "they_warrior",
+            "they_deputy",
+            "they_leader",
+            "they_apprentice",
             "they_hunter",
             "they_blind",
             "you_deaf",
@@ -1880,8 +1877,4 @@
             "[Did {PRONOUN/t_c/subject} even hear what you said?]"
         ]
     ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 5909dbe74007bd745bb32396e95be7023417c3bd

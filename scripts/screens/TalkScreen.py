@@ -1281,7 +1281,6 @@ class TalkScreen(Screens):
 
                 if skip_processing:
                     continue
-
             texts_list[talk_key] = talk
 
         return self.choose_text(cat, texts_list)
@@ -3459,6 +3458,63 @@ class TalkScreen(Screens):
                 else:
                     self.cat_dict["d_c"] = dead_cat
                     text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
+
+        if "rdf_c" in text:
+            cluster = False
+            rel = False
+            match = re.search(r'rdf_c(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)rdf_c', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            if f"rdf_c_{x}" in self.cat_dict or "rdf_c" in self.cat_dict or f"{r}_rdf_c" in self.cat_dict or f"{r}_rdf_c_{x}" in self.cat_dict:
+                if cluster and rel:
+                    text = re.sub(fr'(?<!\/){r}_rdf_c_{x}(?!\/)', str(self.cat_dict[f"{r}_rdf_c_{x}"].name), text)
+                elif cluster and not rel:
+                    text = re.sub(fr'(?<!\/)rdf_c_{x}(?!\/)', str(self.cat_dict[f"rdf_c_{x}"].name), text)
+                elif rel and not cluster:
+                    text = re.sub(fr'(?<!\/){r}_rdf_c_(?!\/)', str(self.cat_dict[f"{r}_rdf_c"].name), text)
+                else:
+                    text = re.sub(r'(?<!\/)rdf_c(?!\/)', str(self.cat_dict["rdf_c"].name), text)
+            else:
+                random_cat = Cat.all_cats.get(choice(game.clan.darkforest_cats))
+                counter = 0
+                while (random_cat.ID == you.ID or random_cat.ID == cat.ID or (cluster and x not in get_cluster(random_cat.personality.trait)) or (rel and (random_cat.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[random_cat.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[random_cat.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[random_cat.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[random_cat.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[random_cat.ID].dislike < 15) or\
+                (r == "hate" and cat.relationships[random_cat.ID].dislike < 50) or\
+                (r == "jealous" and cat.relationships[random_cat.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[random_cat.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[random_cat.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[random_cat.ID].admiration < 20) or\
+                (r == "neutral" and ((cat.relationships[random_cat.ID].platonic_like > 20) or (cat.relationships[random_cat.ID].romantic_love > 20) or (cat.relationships[random_cat.ID].dislike > 20) or (cat.relationships[random_cat.ID].jealousy > 20) or (cat.relationships[random_cat.ID].trust > 20) or (cat.relationships[random_cat.ID].comfortable > 20) or (cat.relationships[random_cat.ID].admiration > 20))))):
+                    if counter == 30:
+                        print("counter moment")
+                        return ""
+                    random_cat = Cat.all_cats.get(choice(game.clan.darkforest_cats))
+                    counter +=1
+                if cluster and rel:
+                    self.cat_dict[f"{r}_rdf_c_{x}"] = random_cat
+                    text = re.sub(fr'(?<!\/){r}_rdf_c_{x}(?!\/)', str(random_cat.name), text)
+                elif cluster and not rel:
+                    self.cat_dict[f"rdf_c_{x}"] = random_cat
+                    text = re.sub(fr'(?<!\/)rdf_c_{x}(?!\/)', str(random_cat.name), text)
+                elif rel and not cluster:
+                    self.cat_dict[f"{r}_rdf_c"] = random_cat
+                    text = re.sub(fr'(?<!\/){r}_rdf_c(?!\/)', str(random_cat.name), text)
+                else:
+                    self.cat_dict["rdf_c"] = random_cat
+                    text = re.sub(r'(?<!\/)rdf_c(?!\/)', str(random_cat.name), text)
         
         if "rsh_c" in text:
             cluster = False

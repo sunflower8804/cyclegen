@@ -852,7 +852,7 @@
             "But, their wish came with a price.",
             "They say the leader became what we fear: a mountain lion. A lion that tore through the woods and destroyed everything in their path, including their Clan. It's rumored that the leader never returned to these lands, ashamed of their actions.",
             "It's a legend of lesson-- be careful of what you wish for.",
-            "I always felt bad for them. Leadership is not always a good thing. But, it was a lesson we all needed to hear as loners. Our wishes were sometimes unreachable, selfish, or even vengeful. I would never want to become what that Leader ended up being."
+            "I always felt bad for them. Leadership is not always a good thing. But, it was a lesson we all needed to hear as loners. Our wishes were sometimes unreachable, selfish, or even vengeful. I would never want to become what that leader ended up being."
         ]
     ],
     "legends_H2": [
@@ -1200,7 +1200,7 @@
         ],
         [
             "Listen up, kid, and I'll let you in on a little secret.",
-            "All this crap they're pumping into you about 'the warrior code' and 'doing your part for the Clan' ... In the long run, none of it actually matters.",
+            "All this crap they're pumping into you about 'the Warrior Code' and 'doing your part for the Clan' ... In the long run, none of it actually matters.",
             "The secret to life is figuring out what other cats want, and then giving it to them.",
             "Once you know how to do that, then you can practically get the entire Clan to eat out of the sole of your paw, and you don't even have to lift a toe.",
             "You can go about things whatever way you wish, I'm just telling you, this way's easiest.",
@@ -1984,6 +1984,68 @@
         ],
         [
             "[You and t_c roll around in the sun together.]"
+        ]
+    ],
+    "df_to_trainee_connected_J1~1": [
+        [
+            "they_df",
+            "you_kitten",
+            "they_older",
+            "they_cool",
+            "they_ancientspirit",
+            "connected",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey, there, kit. What's your name?",
+            "y_c? That's a great name. A nice, strong name.",
+            "Do you know where you are?",
+            "Mhm. Yes, you're in the Dark Forest.",
+            "You're very smart for knowing that, little kit. Do your Clanmates know how smart you are?",
+            "They probably don't. Those living Clan cats don't know anything.",
+            "You're different than them, though. You'd do well here.",
+            "Not yet, though. Come back when you're a bit older, and I'll show you around, okay?"
+        ]
+    ],
+    "df_to_trainee_connected_J1~2": [
+        [
+            "they_df",
+            "you_dftrainee",
+            "they_cool",
+            "from_df_mentor",
+            "they_ancientspirit",
+            "connected",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey, there, kit! I knew you'd come back!",
+            "Or, I guess you're not a kit anymore, eh?",
+            "Well, you might as well be, here.",
+            "Let's start training."
+        ]
+    ],
+    "df_to_trainee_connected_J1~3": [
+        [
+            "they_df",
+            "you_dftrainee",
+            "they_cool",
+            "from_df_mentor",
+            "they_ancientspirit",
+            "connected",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Get back up! Again!",
+            "[After falling to the ground during training, t_c swipes {PRONOUN/t_c/poss} claws over your ears and hisses at you to get back up.]",
+            "[You're more exhausted than you thought was possible. If you could just fall asleep, you could wake up back in the Clan...]",
+            "Eyes open, apprentice! Try again!",
+            "[You wobble to your paws, ready to practice this battle move one more time.]",
+            "[t_c isn't as nice to you now as {PRONOUN/t_c/subject} {VERB/t_c/were/was} when you were a kit...]"
         ]
     ]
 }

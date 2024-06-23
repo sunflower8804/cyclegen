@@ -1539,7 +1539,7 @@
             "they_blind"
         ],
         [
-            "Hey there, y_c! What are you doing so far from the Nursery?",
+            "Hey there, y_c! What are you doing so far from the nursery?",
             "Heyyy, I'm not uptight, silly fella! It's just dangerous outside, even for a big cat like me!",
             "How about this, you go back there, and I'll come with and show you how to do a front paw swipe?"
         ]
@@ -1861,7 +1861,7 @@
         ],
         [
             "y_c! I've been looking for you! I've been thinking all day about this... I've been begging for a cat to bounce ideas off of.",
-            "So, I think I wanna do something funny to r_c. Like a prank. {PRONOUN/r_c/subject}{VERB/t_c/'ve/'s} been having a rough time recently and I wanna do something funny to cheer {PRONOUN/r_c/object} up.",
+            "So, I think I wanna do something funny to r_c. Like a prank. {PRONOUN/r_c/subject/CAP}{VERB/t_c/'ve/'s} been having a rough time recently and I wanna do something funny to cheer {PRONOUN/r_c/object} up.",
             "But I don't have the slightest clue what I wanna do... everything I can think of either hasn't worked or would just upset them further.",
             "I wanted to put a frog pet in their den, since I love looking for cool frogs, but couldn't find one {PRONOUN/r_c/subject} would like.",
             "Then, I tried looking for flowers to give them, but apparently the ones I found were called foxgloves, and they're really dangerous.",
