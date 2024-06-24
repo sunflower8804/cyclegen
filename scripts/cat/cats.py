@@ -1781,6 +1781,8 @@ class Cat:
         """Handles a moon skip for an alive cat."""
         old_age = self.age
         self.moons += 1
+        if self.moons == 0 and self.status != "newborn":
+            self.status = "newborn"
         if self.moons == 1 and self.status == "newborn":
             self.status = "kitten"
         self.in_camp = 1

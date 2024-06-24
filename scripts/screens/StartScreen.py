@@ -180,7 +180,7 @@ class StartScreen(Screens):
         self.continue_button = UIImageButton(
             scale(pygame.Rect((140, 620), (384, 70))),
             "",
-            object_id="#continue_main_button",
+            object_id="#continue_button",
             manager=MANAGER)
         self.switch_clan_button = UIImageButton(
             scale(pygame.Rect((140, 710), (384, 70))),

@@ -252,7 +252,7 @@ class PatrolOutcome:
         results.append(self._handle_faith_changes(patrol))
         results.append(self._handle_condition_and_scars(patrol))
         results.append(unpack_rel_block(Cat, self.relationship_effects, patrol, stat_cat=self.stat_cat))
-        results.append(self._handle_rep_changes())
+        results.append(self._handle_rep_changes(patrol))
         results.append(self._handle_other_clan_relations(patrol))
         results.append(self._handle_prey(patrol))
         results.append(self._handle_herbs(patrol))
