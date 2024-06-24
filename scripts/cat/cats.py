@@ -986,7 +986,7 @@ class Cat:
                 # grief the cat
                 if game.clan.game_mode != "classic":
                     cat.get_ill(
-                        "grief stricken", event_triggered=True, severity="major"
+                        "grief stricken", event_triggered=True, severity="major", grief_cat=self
                     )
 
             # If major grief fails, but there are still very_high or high values,
@@ -1781,6 +1781,8 @@ class Cat:
         """Handles a moon skip for an alive cat."""
         old_age = self.age
         self.moons += 1
+        if self.moons == 0 and self.status != "newborn":
+            self.status = "newborn"
         if self.moons == 1 and self.status == "newborn":
             self.status = "kitten"
         self.in_camp = 1
@@ -2124,7 +2126,7 @@ class Cat:
     #                                  conditions                                  #
     # ---------------------------------------------------------------------------- #
 
-    def get_ill(self, name, event_triggered=False, lethal=True, severity="default"):
+    def get_ill(self, name, event_triggered=False, lethal=True, severity="default", grief_cat=None):
         """Add an illness to this cat.
 
         :param name: name of the illness (str)

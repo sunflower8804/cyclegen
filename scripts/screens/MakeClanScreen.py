@@ -273,6 +273,14 @@ class MakeClanScreen(Screens):
             self.elements['new'].disable()
             self.clan_age = "new"
     
+    def random_clan_name(self):
+        clan_names = names.names_dict["normal_prefixes"] + names.names_dict["clan_prefixes"]
+        while True:
+            chosen_name = choice(clan_names)
+            if chosen_name.casefold() not in [clan.casefold() for clan in game.switches['clan_list']]:
+                return chosen_name
+            print("Generated clan name was already in use! Rerolling...")
+    
     def handle_name_clan_key(self, event):
         if event.key == pygame.K_ESCAPE:
             self.change_screen("start screen")
@@ -2213,7 +2221,7 @@ class MakeClanScreen(Screens):
         )
         self.text["leader"] = pygame_gui.elements.UILabel(
             scale(pygame.Rect((0, 90), (-1, -1))),
-            text=f"Leader name: {self.leader.name.prefix}star",
+            text=f"Your name: {game.clan.your_cat.name}",
             container=self.elements["text_container"],
             object_id=get_text_box_theme("#text_box_30_horizleft"),
             manager=MANAGER,
@@ -2326,6 +2334,78 @@ class MakeClanScreen(Screens):
                 visible=False,
             )
             self.refresh_symbol_list()
+    
+    def refresh_symbol_list(self):
+        # get symbol list
+        symbol_list = sprites.clan_symbols.copy()
+        symbol_attributes = sprites.symbol_dict
+
+        # filtering out tagged symbols
+        for symbol in sprites.clan_symbols:
+            index = symbol[-1]
+            name = symbol.strip("symbol1234567890")
+            tags = symbol_attributes[name.capitalize()][f"tags{index}"]
+            for tag in tags:
+                if tag in game.switches["disallowed_symbol_tags"]:
+                    if symbol in symbol_list:
+                        symbol_list.remove(symbol)
+
+        # separate list into chunks for pages
+        symbol_chunks = self.chunks(symbol_list, 45)
+
+        # clamp current page to a valid page number
+        self.current_page = max(1, min(self.current_page, len(symbol_chunks)))
+
+        # handles which arrow buttons are clickable
+        if len(symbol_chunks) <= 1:
+            self.elements["page_left"].disable()
+            self.elements["page_right"].disable()
+        elif self.current_page >= len(symbol_chunks):
+            self.elements["page_left"].enable()
+            self.elements["page_right"].disable()
+        elif self.current_page == 1 and len(symbol_chunks) > 1:
+            self.elements["page_left"].disable()
+            self.elements["page_right"].enable()
+        else:
+            self.elements["page_left"].enable()
+            self.elements["page_right"].enable()
+
+        display_symbols = []
+        if symbol_chunks:
+            display_symbols = symbol_chunks[self.current_page - 1]
+
+        # Kill all currently displayed symbols
+        symbol_images = [ele for ele in self.elements if ele in sprites.clan_symbols]
+        for ele in symbol_images:
+            self.elements[ele].kill()
+            if self.symbol_buttons:
+                self.symbol_buttons[ele].kill()
+
+        x_pos = 192
+        y_pos = 540
+        for symbol in display_symbols:
+            self.elements[f"{symbol}"] = pygame_gui.elements.UIImage(
+                scale(pygame.Rect((x_pos, y_pos), (100, 100))),
+                sprites.sprites[symbol],
+                object_id=f"#{symbol}",
+                starting_height=3,
+                manager=MANAGER,
+            )
+            self.symbol_buttons[f"{symbol}"] = UIImageButton(
+                scale(pygame.Rect((x_pos - 24, y_pos - 24), (148, 148))),
+                "",
+                object_id=f"#symbol_select_button",
+                starting_height=4,
+                manager=MANAGER,
+            )
+            x_pos += 140
+            if x_pos >= 1431:
+                x_pos = 192
+                y_pos += 140
+
+        if self.symbol_selected in self.symbol_buttons:
+            self.symbol_buttons[self.symbol_selected].disable()
+
 
     def open_clan_saved_screen(self):
         self.clear_all_page()
@@ -2346,13 +2426,13 @@ class MakeClanScreen(Screens):
                                                                     pygame.transform.scale(
                                                                         self.your_cat.sprite,
                                                                         (200, 200)), manager=MANAGER)
-        self.elements["continue"] = UIImageButton(scale(pygame.Rect((692, 500), (204, 60))), "",
+        self.elements["continue"] = UIImageButton(scale(pygame.Rect((692, 600), (204, 60))), "",
                                                   object_id="#continue_button_small")
         self.elements["save_confirm"] = pygame_gui.elements.UITextBox('Welcome to the world, ' + self.your_cat.name.prefix + 'kit!',
-                                                                      scale(pygame.Rect((200, 270), (1200, 60))),
-                                                                      object_id=get_text_box_theme(
-                                                                          "#text_box_30_horizcenter"),
-                                                                      manager=MANAGER)
+                                                                    scale(pygame.Rect((200, 470), (1200, 60))),
+                                                                    object_id=get_text_box_theme(
+                                                                        "#text_box_30_horizcenter"),
+                                                                    manager=MANAGER)
 
     def save_clan(self):
         self.handle_create_other_cats()
@@ -2363,18 +2443,19 @@ class MakeClanScreen(Screens):
         Patrol.used_patrols.clear()
         convert_camp = {1: 'camp1', 2: 'camp2', 3: 'camp3', 4: 'camp4', 5: 'camp5', 6: 'camp6'}
         self.your_cat.create_inheritance_new_cat()
-        game.clan = Clan(self.clan_name,
-                         self.leader,
-                         self.deputy,
-                         self.med_cat,
-                         self.biome_selected,
-                         convert_camp[self.selected_camp_tab],
-                         self.game_mode, self.members,
-                         starting_season=self.selected_season,
-                         your_cat=self.your_cat)
+        game.clan = Clan(name = self.clan_name,
+                        leader = self.leader,
+                        deputy = self.deputy,
+                        medicine_cat = self.med_cat,
+                        biome = self.biome_selected,
+                        camp_bg = convert_camp[self.selected_camp_tab],
+                        symbol=self.symbol_selected,
+                        game_mode="expanded",
+                        starting_members=self.members,
+                        starting_season=self.selected_season,
+                        your_cat=self.your_cat)
         game.clan.your_cat.moons = -1
         game.clan.create_clan()
-        # game.clan.starclan_cats.clear()
         game.cur_events_list.clear()
         game.herb_events_list.clear()
         Cat.grief_strings.clear()

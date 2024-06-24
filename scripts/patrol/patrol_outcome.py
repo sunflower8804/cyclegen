@@ -56,6 +56,10 @@ class PatrolOutcome:
         dead_cats: List[str] = None,
         lost_cats: List[str] = None,
         injury: List[Dict] = None,
+        murder: List[str] = None,
+        convert: List[str] = None,
+        faith_effects: List[str] = None,
+        accessory: List[Dict] = None,
         history_reg_death: str = None,
         history_leader_death: str = None,
         history_scar: str = None,
@@ -68,7 +72,7 @@ class PatrolOutcome:
         relationship_constraints: List[str] = None,
         outcome_art: Union[str, None] = None,
         outcome_art_clean: Union[str, None] = None,
-        stat_cat: Cat = None,
+        stat_cat: Cat = None
     ):
 
         self.success = success
@@ -248,7 +252,7 @@ class PatrolOutcome:
         results.append(self._handle_faith_changes(patrol))
         results.append(self._handle_condition_and_scars(patrol))
         results.append(unpack_rel_block(Cat, self.relationship_effects, patrol, stat_cat=self.stat_cat))
-        results.append(self._handle_rep_changes())
+        results.append(self._handle_rep_changes(patrol))
         results.append(self._handle_other_clan_relations(patrol))
         results.append(self._handle_prey(patrol))
         results.append(self._handle_herbs(patrol))

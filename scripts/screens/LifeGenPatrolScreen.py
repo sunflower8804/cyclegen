@@ -8,6 +8,7 @@ from scripts.patrol.patrol import Patrol
 from scripts.cat.cats import Cat
 from scripts.game_structure.game_essentials import game, MANAGER
 from scripts.game_structure.propagating_thread import PropagatingThread
+from scripts.game_structure.ui_elements import IDImageButton, UIImageButton, UISpriteButton
 
 
 class LifeGenPatrolScreen(Screens):

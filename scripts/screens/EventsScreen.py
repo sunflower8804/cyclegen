@@ -5,7 +5,7 @@ from scripts.event_class import Single_Event
 from scripts.events import events_class
 from scripts.utility import get_living_clan_cat_count, get_text_box_theme, scale, shorten_text_to_fit
 from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER
-from scripts.game_structure.ui_elements import IDImageButton, UIImageButton
+from scripts.game_structure.ui_elements import IDImageButton, UIImageButton, UISpriteButton
 from scripts.game_structure.windows import GameOver
 from scripts.utility import (
     get_living_clan_cat_count,
@@ -502,6 +502,14 @@ class EventsScreen(Screens):
     def screen_switches(self):
         # On first open, update display events list
         self.update_display_events_lists()
+
+        self.clan_symbol = pygame_gui.elements.UIImage(
+            scale(pygame.Rect((255, 220), (200, 200))),
+            pygame.transform.scale(clan_symbol_sprite(game.clan), (200, 200)),
+            object_id=f"clan_symbol",
+            starting_height=1,
+            manager=MANAGER,
+        )
 
         self.heading = pygame_gui.elements.UITextBox("",
                                                      scale(pygame.Rect((600, 220), (400, 80))),

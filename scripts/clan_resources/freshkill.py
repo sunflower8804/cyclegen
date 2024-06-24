@@ -145,7 +145,7 @@ class FreshkillPile:
             [
                 PREY_REQUIREMENT[cat.status]
                 for cat in living_cats
-                if cat.status not in ["newborn", "kitten", "exiled"] and not cat.outside
+                if cat.status not in ["newborn", "kitten", "exiled", "loner", "rogue", "kittypet", "former Clancat"] and not cat.outside
             ]
         )
         # increase the number for sick cats
