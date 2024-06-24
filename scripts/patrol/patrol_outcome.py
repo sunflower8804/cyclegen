@@ -56,6 +56,10 @@ class PatrolOutcome:
         dead_cats: List[str] = None,
         lost_cats: List[str] = None,
         injury: List[Dict] = None,
+        murder: List[str] = None,
+        convert: List[str] = None,
+        faith_effects: List[str] = None,
+        accessory: List[Dict] = None,
         history_reg_death: str = None,
         history_leader_death: str = None,
         history_scar: str = None,
@@ -68,7 +72,7 @@ class PatrolOutcome:
         relationship_constraints: List[str] = None,
         outcome_art: Union[str, None] = None,
         outcome_art_clean: Union[str, None] = None,
-        stat_cat: Cat = None,
+        stat_cat: Cat = None
     ):
 
         self.success = success
