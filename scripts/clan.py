@@ -99,18 +99,19 @@ class Clan:
     all_clans = []
 
     def __init__(self,
-                 name="",
-                 leader=None,
-                 deputy=None,
-                 medicine_cat=None,
-                 biome='Forest',
-                 camp_bg=None,
-                 game_mode='classic',
-                 starting_members=[],
-                 starting_season='Newleaf',
-                 followingsc=True,
-                 your_cat=None,
-                 self_run_init_functions = False):
+                name="",
+                leader=None,
+                deputy=None,
+                medicine_cat=None,
+                biome='Forest',
+                camp_bg=None,
+                symbol=None,
+                game_mode='classic',
+                starting_members=[],
+                starting_season='Newleaf',
+                followingsc=True,
+                your_cat=None,
+                self_run_init_functions = False):
         self.history = History()
         self.your_cat = your_cat
         if name == "":

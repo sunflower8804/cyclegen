@@ -12,6 +12,7 @@ import traceback
 from collections import Counter
 
 import ujson
+import re
 
 from scripts.cat.cats import Cat, cat_class
 from scripts.clan import Clan

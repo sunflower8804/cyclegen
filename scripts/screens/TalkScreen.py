@@ -10,6 +10,7 @@ from .Screens import Screens
 from scripts.utility import generate_sprite, get_cluster, pronoun_repl
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
+from scripts.game_structure.ui_elements import IDImageButton, UIImageButton, UISpriteButton
 import pygame_gui
 from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER, screen
 from enum import Enum  # pylint: disable=no-name-in-module
@@ -828,7 +829,7 @@ class TalkScreen(Screens):
                         if you.parent2 == cat.ID:
                             fam = True
                 if "adopted_parent" in tags or "from adopted_parent" in tags or "from_adopted_parent" in tags:
-                    if cat.ID in you.inheritance.get_no_blood_parents():
+                    if cat.ID in you.inheritance.get_adoptive_parents():
                         fam = True
                 if "from_kit" in tags or "from_your_kit" in tags:
                     if cat.ID in you.inheritance.get_blood_kits():
