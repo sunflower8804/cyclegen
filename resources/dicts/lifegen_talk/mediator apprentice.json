@@ -1457,5 +1457,19 @@
             "Honesty is key! It doesn't help anyone to keep everything all bottled up inside. You have a voice, so you gotta use it!",
             "Sure, my job is keeping the peace, but sometimes the best way to resolve a conflict is to start it. Y'know?"
         ]
+    ],
+    "assertive_warrior_or_elder2": [
+        [
+            "mediator",
+            "mediator apprentice",
+            "assertive",
+            "platonic_like"
+        ],
+        [
+            "*Sigh* StarClan, today was hard ...",
+            "Arguments in the nursery, medicine den, and warriors' den, all at the same time ... Is there something in the air?",
+            "Without you here, y_c, I genuinely don't know what I would've done. Died, probably. Like, actually died.",
+            "... Thanks for having my back."
+        ]
     ]
 }

@@ -1630,17 +1630,17 @@ def change_relationship_values(
 def get_cluster(trait):
         # Mapping traits to their respective clusters
         trait_to_clusters = {
-            "assertive": ["fierce", "bold", "daring", "confident", "adventurous", "arrogant", "competitive", "smug", "impulsive", "noisy"],
-            "brooding": ["bloodthirsty", "cold", "strict", "vengeful", "grumpy", "bullying", "secretive", "aloof", "stoic", "reserved"],
-            "cool": ["charismatic", "sneaky", "cunning", "arrogant", "charming", "manipulative", "leader-like", "passionate", "witty", "flexible", "mellow"],
+            "assertive": ["bloodthirsty", "fierce", "bold", "daring", "confident", "arrogant", "competitive", "smug", "impulsive", "noisy"],
+            "brooding": ["bloodthirsty", "cold", "gloomy", "strict", "vengeful", "grumpy", "bullying", "secretive", "aloof", "stoic", "reserved"],
+            "cool": ["charismatic", "cunning", "arrogant", "charming", "manipulative", "leader-like", "passionate", "witty", "flexible", "mellow", "flamboyant"],
             "upstanding": ["righteous", "ambitious", "strict", "competitive", "responsible", "bossy", "know-it-all", "leader-like", "smug", "loyal", "justified", "methodical"],
-            "introspective": ["lonesome", "righteous", "calm", "gloomy", "wise", "thoughtful", "quiet", "daydreamer", "flexible", "mellow"],
-            "neurotic": ["nervous", "insecure", "lonesome", "quiet", "secretive", "careful", "meek", "cowardly", "reserved", "emotional"],
+            "introspective": ["lonesome", "righteous", "calm", "wise", "thoughtful", "quiet", "daydreamer", "flexible", "mellow"],
+            "neurotic": ["nervous", "insecure", "lonesome", "quiet", "secretive", "careful", "meek", "cowardly", "emotional"],
             "silly": ["troublesome", "childish", "playful", "strange", "noisy", "attention-seeker", "rebellious", "bouncy", "energetic", "spontaneous"],
             "stable": ["loyal", "responsible", "wise", "faithful", "polite", "disciplined", "patient", "passionate", "witty", "trusting"],
             "sweet": ["compassionate", "faithful", "loving", "oblivious", "sincere", "sweet", "polite", "daydreamer", "trusting", "humble", "emotional"],
             "unabashed": ["childish", "confident", "bold", "shameless", "strange", "oblivious", "flamboyant", "impulsive", "noisy", "honest", "spontaneous"],
-            "unlawful": ["bloodthirsty", "sneaky", "rebellious", "manipulative", "obsessive", "aloof", "stoic", "cunning", "troublesome"]
+            "unlawful": ["adventurous", "sneaky", "rebellious", "manipulative", "obsessive", "aloof", "stoic", "cunning", "troublesome"]
         }
         clusters = [key for key, values in trait_to_clusters.items() if trait in values]
 

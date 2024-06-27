@@ -17747,11 +17747,10 @@
             "... Really? Okay! I'll go grab the brambles!"
         ]
     ],
-
     "you_dftrainee_Guy1": [
         [
             "Any",
-	        "you_dftrainee",
+            "you_dftrainee",
             "they_not_dftrainee",
             "they_unlawful",
             "you_blind"
@@ -17767,7 +17766,7 @@
     "you_dftrainee_Guy2": [
         [
             "Any",
-	        "you_dftrainee",
+            "you_dftrainee",
             "they_dftrainee",
             "they_unlawful",
             "they_blind",
@@ -17834,7 +17833,7 @@
             "they_hearing"
         ],
         [
-           "[As you're heading to the fresh-kill pile, t_c leans over and mutters in your ear.]",
+            "[As you're heading to the fresh-kill pile, t_c leans over and mutters in your ear.]",
             "I heard you were thrashing around in your nest last night. Keep it up and everyone's going to know what's going on.",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/walk/walks} away, shooting you one last disparaging look.]"
         ]
@@ -17850,7 +17849,7 @@
             "you_blind"
         ],
         [
-           "Um, y_c? I know it's hard, but could you try to be careful when you're training... you know... at night?",
+            "Um, y_c? I know it's hard, but could you try to be careful when you're training... you know... at night?",
             "If you keep getting unexplained injuries, everyone's going to think that it's... me."
         ]
     ],
@@ -17866,7 +17865,7 @@
         ],
         [
             "Do you think the Clan suspects that I've been training in the Dark Forest?",
-            "It feels like everyone's been watching me a lot, lately...", 
+            "It feels like everyone's been watching me a lot, lately...",
             "What if they're already planning to exile me?"
         ]
     ],

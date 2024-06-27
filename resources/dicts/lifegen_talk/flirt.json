@@ -3096,7 +3096,7 @@
             "Not-- No, that's not a compliment!"
         ]
     ],
-   "flirt_reject_H15": [
+    "flirt_reject_H15": [
         [
             "flirt",
             "reject",
@@ -3148,7 +3148,7 @@
             "[Mission accomplished.]"
         ]
     ],
-   "flirt_reject_H16": [
+    "flirt_reject_H16": [
         [
             "flirt",
             "they_shunned",
@@ -3191,7 +3191,7 @@
             "Scram."
         ]
     ],
-   "flirt_reject_H18": [
+    "flirt_reject_H18": [
         [
             "flirt",
             "reject",
@@ -3219,7 +3219,7 @@
             "... You need to get your priorities in order, y_c. Seriously."
         ]
     ],
-   "flirt_reject_H13": [
+    "flirt_reject_H13": [
         [
             "reject",
             "any",
@@ -3239,14 +3239,14 @@
             "unlawful",
             "brooding",
             "introspective",
-            "reject"    
+            "reject"
         ],
         [
             "[t_c rolls {PRONOUN/t_c/poss} eyes and scoffs.]",
             "Words said so often that they lack any meaning."
         ]
     ],
-    "flirting_neurotic_SQ1":[
+    "flirting_neurotic_SQ1": [
         [
             "neurotic",
             "Any",
@@ -3255,9 +3255,9 @@
         [
             "[t_c shrinks back. {PRONOUN/t_c/subject/CAP} {VERB/t_c/narrow/narrows} {PRONOUN/t_c/poss} eyes at {PRONOUN/t_c/poss} paws.]",
             "Are you making fun of me? That's not nice, y_c."
-	    ]
-	],
-    "flirting_neurotic_SQ2":[
+        ]
+    ],
+    "flirting_neurotic_SQ2": [
         [
             "neurotic",
             "any"
@@ -3267,8 +3267,8 @@
             "[t_c's fur fluffs. {PRONOUN/t_c/poss/CAP} eyes dart from side to side, never quite meeting yours, as if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} looking for another cat you might have been addressing.]",
             "T-thank you?"
         ]
-	],
-  "flirt_success_H1": [
+    ],
+    "flirt_success_H1": [
         [
             "flirt",
             "they_app",
@@ -3323,7 +3323,7 @@
             "Am I dreaming or is this the luckiest day of my life?"
         ]
     ],
-  "flirt_reject_H1": [
+    "flirt_reject_H1": [
         [
             "reject",
             "any",
@@ -3395,7 +3395,7 @@
             "[t_c skitters off in a hurry. Was your flirting really that bad?]"
         ]
     ],
-   "flirt_reject_H11": [
+    "flirt_reject_H11": [
         [
             "reject",
             "any",
@@ -3425,7 +3425,7 @@
             "[You can't decide which one is worse.]"
         ]
     ],
-   "flirt_reject_H14": [
+    "flirt_reject_H14": [
         [
             "reject",
             "any",
@@ -3437,7 +3437,7 @@
             "[Your flirting is not welcome, it seems.]"
         ]
     ],
-   "flirt_reject_H19": [
+    "flirt_reject_H19": [
         [
             "flirt",
             "reject",
