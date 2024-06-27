@@ -220,7 +220,7 @@
             "Is there something going on that I should know about?",
             "[t_c grins and bats {PRONOUN/t_c/poss} eyelashes at you. Though you vehemently deny, you know {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} got your number.]",
             "It's okay. Your secret's safe with me, hehe!",
-            "[{PRONOUN/t_c/subject/CAP} {PRONOUN/t_c/dash/dashes} off. Knowing t_c, the whole Clan will probably know about your crush on your_crush by tomorrow.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/dash/dashes} off. Knowing t_c, the whole Clan will probably know about your crush on your_crush by tomorrow.]"
         ]
     ],
     "inform_yourcrush": [
@@ -478,7 +478,7 @@
         [
             "[As you sit next to t_c, you smell your_crush approach and lay down next to you.]",
             "[{PRONOUN/your_crush/poss/CAP} scent is comforting, and when {PRONOUN/your_crush/poss} fur brushes yours, you feel your face grow hot.]",
-            "[t_c smacks your haunches teasingly with {PRONOUN/t_c/poss} tail, and you reach out a hind leg to kick {PRONOUN/t_c/obhect}. Against you, your_crush's body shakes with laughter.]"
+            "[t_c smacks your haunches teasingly with {PRONOUN/t_c/poss} tail, and you reach out a hind leg to kick {PRONOUN/t_c/object}. Against you, your_crush's body shakes with laughter.]"
         ]
     ]
 }
