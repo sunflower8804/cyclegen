@@ -1917,62 +1917,51 @@ class Events:
         """
         TODO: DOCS
         """
-        if game.clan.game_mode == "classic":
-            herbs = game.clan.herbs.copy()
-            for herb in herbs:
-                adjust_by = random.choices([-2, -1, 0, 1, 2], [1, 2, 3, 2, 1], k=1)
-                game.clan.herbs[herb] += adjust_by[0]
-                if game.clan.herbs[herb] <= 0:
-                    game.clan.herbs.pop(herb)
-            if not int(random.random() * 5):
-                new_herb = random.choice(HERBS)
-                game.clan.herbs.update({new_herb: 1})
-        else:
-            event_list = []
-            meds_available = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"], working=True,
-                                                   sort=True)
-            for med in meds_available:
-                if game.clan.current_season in ["Newleaf", "Greenleaf"]:
-                    amount = random.choices([0, 1, 2, 3], [1, 2, 2, 2], k=1)
-                elif game.clan.current_season == "Leaf-fall":
-                    amount = random.choices([0, 1, 2], [3, 2, 1], k=1)
-                else:
-                    amount = random.choices([0, 1], [3, 1], k=1)
-                if amount[0] != 0:
-                    herbs_found = random.sample(HERBS, k=amount[0])
-                    herb_display = []
-                    for herb in herbs_found:
-                        if herb in ["blackberry"]:
-                            continue
-                        if game.clan.current_season in ["Newleaf", "Greenleaf"]:
-                            amount = random.choices([1, 2, 3], [3, 3, 1], k=1)
-                        else:
-                            amount = random.choices([1, 2], [4, 1], k=1)
-                        if herb in game.clan.herbs:
-                            game.clan.herbs[herb] += amount[0]
-                        else:
-                            game.clan.herbs.update({herb: amount[0]})
-                        herb_display.append(herb.replace("_", " "))
-                else:
-                    herbs_found = []
-                    herb_display = []
-                if not herbs_found:
-                    event_list.append(f"{med.name} could not find any herbs this moon.")
-                else:
-                    try:
-                        if len(herbs_found) == 1:
-                            insert = f"{herb_display[0]}"
-                        elif len(herbs_found) == 2:
-                            insert = f"{herb_display[0]} and {herb_display[1]}"
-                        else:
-                            insert = f"{', '.join(herb_display[:-1])}, and {herb_display[-1]}"
-                        event_list.append(f"{med.name} gathered {insert} this moon.")
-                    except IndexError:
-                        event_list.append(
-                            f"{med.name} could not find any herbs this moon."
-                        )
-                        return
-            game.herb_events_list.extend(event_list)
+        event_list = []
+        meds_available = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"], working=True,
+                                                sort=True)
+        for med in meds_available:
+            if game.clan.current_season in ["Newleaf", "Greenleaf"]:
+                amount = random.choices([0, 1, 2, 3], [1, 2, 2, 2], k=1)
+            elif game.clan.current_season == "Leaf-fall":
+                amount = random.choices([0, 1, 2], [3, 2, 1], k=1)
+            else:
+                amount = random.choices([0, 1], [3, 1], k=1)
+            if amount[0] != 0:
+                herbs_found = random.sample(HERBS, k=amount[0])
+                herb_display = []
+                for herb in herbs_found:
+                    if herb in ["blackberry"]:
+                        continue
+                    if game.clan.current_season in ["Newleaf", "Greenleaf"]:
+                        amount = random.choices([1, 2, 3], [3, 3, 1], k=1)
+                    else:
+                        amount = random.choices([1, 2], [4, 1], k=1)
+                    if herb in game.clan.herbs:
+                        game.clan.herbs[herb] += amount[0]
+                    else:
+                        game.clan.herbs.update({herb: amount[0]})
+                    herb_display.append(herb.replace("_", " "))
+            else:
+                herbs_found = []
+                herb_display = []
+            if not herbs_found:
+                event_list.append(f"{med.name} could not find any herbs this moon.")
+            else:
+                try:
+                    if len(herbs_found) == 1:
+                        insert = f"{herb_display[0]}"
+                    elif len(herbs_found) == 2:
+                        insert = f"{herb_display[0]} and {herb_display[1]}"
+                    else:
+                        insert = f"{', '.join(herb_display[:-1])}, and {herb_display[-1]}"
+                    event_list.append(f"{med.name} gathered {insert} this moon.")
+                except IndexError:
+                    event_list.append(
+                        f"{med.name} could not find any herbs this moon."
+                    )
+                    return
+        game.herb_events_list.extend(event_list)
 
     def handle_focus(self):
         """
@@ -3450,9 +3439,6 @@ class Events:
                 list(range(ran[0][0], ran[0][1] + 1))
                 + list(range(ran[1][0], ran[1][1] + 1))
             )
-
-            if game.clan.game_mode == "classic":
-                exp += random.randint(0, 3)
 
             cat.experience += max(exp * mentor_modifier, 1)
 
