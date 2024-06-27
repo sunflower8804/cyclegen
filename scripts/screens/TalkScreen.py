@@ -7,11 +7,11 @@ from scripts.utility import scale
 
 from .Screens import Screens
 
-from scripts.utility import generate_sprite, get_cluster, pronoun_repl, get_alive_cats, get_alive_status_cats
+from scripts.utility import generate_sprite, get_cluster, get_alive_kits, get_alive_cats, get_alive_apps, get_alive_meds, get_alive_mediators, get_alive_queens, get_alive_elders, get_alive_warriors, pronoun_repl
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
-from scripts.game_structure.ui_elements import IDImageButton, UIImageButton, UISpriteButton
 import pygame_gui
+from scripts.game_structure.image_button import UIImageButton
 from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER, screen
 from enum import Enum  # pylint: disable=no-name-in-module
 from scripts.housekeeping.version import VERSION_NAME
@@ -1670,7 +1670,7 @@ class TalkScreen(Screens):
                     else:
                         text = re.sub(fr'(?<!\/)r_w{i}(?!\/)', str(self.cat_dict[f"r_w{i}"].name), text)
                     continue
-                alive_cats = get_alive_status_cats(Cat, ["warrior"])
+                alive_cats = get_alive_warriors(Cat)
                 if len(alive_cats) < 3:
                     return ""
                 alive_cat = choice(alive_cats)
@@ -1825,7 +1825,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_k(?!\/)', str(self.cat_dict["r_k"].name), text)
             else:
-                alive_kits = get_alive_status_cats(Cat, ["kitten","newborn"])
+                alive_kits = get_alive_kits(Cat)
                 if len(alive_kits) <= 1:
                     return ""
 
@@ -1890,7 +1890,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_a(?!\/)', str(self.cat_dict["r_a"].name), text)
             else:
-                alive_apps = get_alive_status_cats(Cat, ["apprentice"])
+                alive_apps = get_alive_apps(Cat)
                 if len(alive_apps) <= 1:
                     return ""
 
@@ -1955,7 +1955,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_w(?!\/)', str(self.cat_dict["r_w"].name), text)
             else:
-                alive_apps = get_alive_status_cats(Cat, ["warrior"])
+                alive_apps = get_alive_warriors(Cat)
                 if len(alive_apps) <= 1:
                     return ""
 
@@ -2019,7 +2019,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_m(?!\/)', str(self.cat_dict["r_m"].name), text)
             else:
-                alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
+                alive_apps = get_alive_meds(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -2078,7 +2078,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_d(?!\/)', str(self.cat_dict["r_d"].name), text)
             else:
-                alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
+                alive_apps = get_alive_mediators(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -2138,7 +2138,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_q(?!\/)', str(self.cat_dict["r_q"].name), text)
             else:
-                alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
+                alive_apps = get_alive_queens(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -2198,7 +2198,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_e(?!\/)', str(self.cat_dict["r_e"].name), text)
             else:
-                alive_apps = get_alive_status_cats(Cat, ["elder"])
+                alive_apps = get_alive_elders(Cat)
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -3588,7 +3588,7 @@ class TalkScreen(Screens):
             else:
                 r = ""
 
-            alive_kits = get_alive_status_cats(Cat, ["kitten","newborn"])
+            alive_kits = get_alive_kits(Cat)
             if len(alive_kits) < 1:
                 return ""
             if f"rsh_k_{x}" in self.cat_dict or "rsh_k" in self.cat_dict or f"{r}_rsh_k" in self.cat_dict or f"{r}_rsh_k_{x}" in self.cat_dict:
@@ -3646,7 +3646,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_status_cats(Cat, ["apprentice"])
+            alive_apps = get_alive_apps(Cat)
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_a_{x}" in self.cat_dict or "rsh_a" in self.cat_dict or f"{r}_rsh_a" in self.cat_dict or f"{r}_rsh_a_{x}" in self.cat_dict:
@@ -3704,7 +3704,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_status_cats(Cat, ["warrior"])
+            alive_apps = get_alive_warriors(Cat)
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_w_{x}" in self.cat_dict or "rsh_w" in self.cat_dict or f"{r}_rsh_w" in self.cat_dict or f"{r}_rsh_w_{x}" in self.cat_dict:
@@ -3762,7 +3762,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
+            alive_apps = get_alive_meds(Cat)
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_a_{x}" in self.cat_dict or "rsh_m" in self.cat_dict or f"{r}_rsh_m" in self.cat_dict or f"{r}_rsh_m_{x}" in self.cat_dict:
@@ -3820,7 +3820,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
+            alive_apps = get_alive_mediators(Cat)
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_d_{x}" in self.cat_dict or "rsh_d" in self.cat_dict or f"{r}_rsh_d" in self.cat_dict or f"{r}_rsh_d_{x}" in self.cat_dict:
@@ -3878,7 +3878,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
+            alive_apps = get_alive_queens(Cat)
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_q_{x}" in self.cat_dict or "rsh_q" in self.cat_dict or f"{r}_rsh_q" in self.cat_dict or f"{r}_rsh_q_{x}" in self.cat_dict:
@@ -3936,7 +3936,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_status_cats(Cat, ["elder"])
+            alive_apps = get_alive_elders(Cat)
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_e_{x}" in self.cat_dict or "rsh_e" in self.cat_dict or f"{r}_rsh_e" in self.cat_dict or f"{r}_rsh_e_{x}" in self.cat_dict:
