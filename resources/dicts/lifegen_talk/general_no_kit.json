@@ -17448,7 +17448,7 @@
             "no_kit",
             "brooding",
             "any",
-	    "clan_has_kits"
+            "clan_has_kits"
         ],
         [
             "[You notice t_c playing with some kits, a rare smile on {PRONOUN/t_c/poss} face.]",
@@ -17689,11 +17689,10 @@
             "... Really? Okay! I'll go grab the brambles!"
         ]
     ],
-
     "you_dftrainee_Guy1": [
         [
             "Any",
-	        "you_dftrainee",
+            "you_dftrainee",
             "they_not_dftrainee",
             "they_unlawful"
         ],
@@ -17708,7 +17707,7 @@
     "you_dftrainee_Guy2": [
         [
             "Any",
-	        "you_dftrainee",
+            "you_dftrainee",
             "they_dftrainee",
             "they_unlawful"
         ],
@@ -17755,7 +17754,7 @@
             "platonic_love"
         ],
         [
-           "[When t_c first sees you one morning, they rush up and press themselves against you, whispering.]",
+            "[When t_c first sees you one morning, they rush up and press themselves against you, whispering.]",
             "I saw you almost fall into that pool of muck last night. Please be careful, okay?",
             "I don't know what I'd do if you... you know... didn't wake up."
         ]
@@ -17768,7 +17767,7 @@
             "dislike"
         ],
         [
-           "[As you're heading to the fresh-kill pile, t_c leans over and mutters in your ear.]",
+            "[As you're heading to the fresh-kill pile, t_c leans over and mutters in your ear.]",
             "I heard you were thrashing around in your nest last night. Keep it up and everyone's going to know what's going on.",
             "[They walk away, shooting you one last disparaging look.]"
         ]
@@ -17782,7 +17781,7 @@
             "they_neurotic"
         ],
         [
-           "Um, y_c? I know it's hard, but could you try to be careful when you're training... you know... at night?",
+            "Um, y_c? I know it's hard, but could you try to be careful when you're training... you know... at night?",
             "If you keep getting unexplained injuries, everyone's going to think that it's... me."
         ]
     ],
@@ -17795,8 +17794,8 @@
             "they_neurotic"
         ],
         [
-           "Do you think the Clan suspects that I've been training in the Dark Forest?",
-            "It feels like everyone's been watching me a lot, lately...", 
+            "Do you think the Clan suspects that I've been training in the Dark Forest?",
+            "It feels like everyone's been watching me a lot, lately...",
             "What if they're already planning to exile me?"
         ]
     ],
@@ -17809,7 +17808,7 @@
             "they_neurotic"
         ],
         [
-           "[You and t_c have crossed paths in the Dark Forest, but you haven't really talked about it. t_c quietly slides up to you one day as you're leaving your den.]", 
+            "[You and t_c have crossed paths in the Dark Forest, but you haven't really talked about it. t_c quietly slides up to you one day as you're leaving your den.]",
             "Hey, y_c, can I ask you something? I watched you in the Dark Forest last night. You looked good.",
             "[They force a smile.]",
             "Of course I understand your choice to train there, but I've been... wondering.",
@@ -17829,7 +17828,7 @@
             "trust"
         ],
         [
-           "[t_c awkwardly pads into the medicine den, poorly hiding a long scratch with one paw.]",
+            "[t_c awkwardly pads into the medicine den, poorly hiding a long scratch with one paw.]",
             "Can I stay here for a bit? And could you tell the rest of the Clan that I'm not feeling well?",
             "[t_c moves their paw, revealing their injury. It's minor, but bound to raise questions.]",
             "I... I'm really not up for trying to explain this."
