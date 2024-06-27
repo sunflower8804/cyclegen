@@ -9,7 +9,6 @@ from scripts.game_structure.ui_elements import UIImageButton, UIDropDownContaine
 from scripts.screens.Screens import Screens
 from scripts.utility import scale, get_text_box_theme
 
-
 class ListScreen(Screens):
     current_page = 1
     previous_search_text = ""
@@ -212,6 +211,7 @@ class ListScreen(Screens):
             container=self.cat_list_bar,
             tool_tip_text="hide favorite cat indicators" if game.clan.clan_settings["show fav"]
             else "show favorite cat indicators",
+            manager=MANAGER,
             starting_height=1
         )
 
@@ -242,7 +242,7 @@ class ListScreen(Screens):
             tool_tip_text="view cats in the afterlife" if self.death_status != "dead"
             else "view cats in the living world",
             manager=MANAGER,
-            starting_height=1,
+            starting_height=1
         )
 
         if self.death_status != "dead" and game.sort_type == "death":

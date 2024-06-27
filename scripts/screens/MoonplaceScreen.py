@@ -13,6 +13,8 @@ import pygame_gui
 from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER, screen
 from enum import Enum  # pylint: disable=no-name-in-module
 from scripts.cat.names import names, Name
+from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked
+
 
 class RelationType(Enum):
     """An enum representing the possible age groups of a cat"""
