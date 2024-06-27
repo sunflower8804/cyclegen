@@ -9,7 +9,6 @@ from scripts.game_structure.ui_elements import UIImageButton, UIDropDownContaine
 from scripts.screens.Screens import Screens
 from scripts.utility import scale, get_text_box_theme
 
-
 class ListScreen(Screens):
     current_page = 1
     previous_search_text = ""
@@ -212,6 +211,7 @@ class ListScreen(Screens):
             container=self.cat_list_bar,
             tool_tip_text="hide favorite cat indicators" if game.clan.clan_settings["show fav"]
             else "show favorite cat indicators",
+            manager=MANAGER,
             starting_height=1
         )
 
@@ -242,7 +242,7 @@ class ListScreen(Screens):
             tool_tip_text="view cats in the afterlife" if self.death_status != "dead"
             else "view cats in the living world",
             manager=MANAGER,
-            starting_height=1,
+            starting_height=1
         )
 
         if self.death_status != "dead" and game.sort_type == "death":
@@ -371,6 +371,41 @@ class ListScreen(Screens):
 
         self.sort_by_dropdown.close()
 
+        # BG IMAGES
+        self.sc_bg = pygame_gui.elements.UIImage(
+            scale(pygame.Rect((0, 0), (1600, 1400))),
+            pygame.transform.scale(
+                pygame.image.load("resources/images/starclanbg.png").convert_alpha(),
+                (1600, 1400)),
+            container=self.list_screen_container,
+            starting_height=1,
+            object_id="#starclan_bg",
+            visible=False,
+            manager=MANAGER
+        )
+        self.ur_bg = pygame_gui.elements.UIImage(
+            scale(pygame.Rect((0, 0), (1600, 1400))),
+            pygame.transform.scale(
+                pygame.image.load("resources/images/urbg.png").convert_alpha(),
+                (1600, 1400)),
+            container=self.list_screen_container,
+            starting_height=1,
+            object_id="#unknown_residence_bg",
+            visible=False,
+            manager=MANAGER
+        )
+        self.df_bg = pygame_gui.elements.UIImage(
+            scale(pygame.Rect((0, 0), (1600, 1400))),
+            pygame.transform.scale(
+                pygame.image.load("resources/images/darkforestbg.png").convert_alpha(),
+                (1600, 1400)),
+            container=self.list_screen_container,
+            starting_height=1,
+            object_id="#dark_forest_bg",
+            visible=False,
+            manager=MANAGER
+        )
+
         # CAT DISPLAY
         # first/prev/next/last page buttons
         self.display_container_elements["first_page_button"] = UIImageButton(
@@ -420,40 +455,7 @@ class ListScreen(Screens):
             manager=MANAGER,
         )  # Text will be filled in later
 
-        # BG IMAGES
-        self.sc_bg = pygame_gui.elements.UIImage(
-            scale(pygame.Rect((0, 0), (1600, 1400))),
-            pygame.transform.scale(
-                pygame.image.load("resources/images/starclanbg.png").convert_alpha(),
-                (1600, 1400)),
-            container=self.list_screen_container,
-            starting_height=1,
-            object_id="#starclan_bg",
-            visible=False,
-            manager=MANAGER
-        )
-        self.ur_bg = pygame_gui.elements.UIImage(
-            scale(pygame.Rect((0, 0), (1600, 1400))),
-            pygame.transform.scale(
-                pygame.image.load("resources/images/urbg.png").convert_alpha(),
-                (1600, 1400)),
-            container=self.list_screen_container,
-            starting_height=1,
-            object_id="#unknown_residence_bg",
-            visible=False,
-            manager=MANAGER
-        )
-        self.df_bg = pygame_gui.elements.UIImage(
-            scale(pygame.Rect((0, 0), (1600, 1400))),
-            pygame.transform.scale(
-                pygame.image.load("resources/images/darkforestbg.png").convert_alpha(),
-                (1600, 1400)),
-            container=self.list_screen_container,
-            starting_height=1,
-            object_id="#dark_forest_bg",
-            visible=False,
-            manager=MANAGER
-        )
+
 
         # Determine the starting list of cats.
         self.get_cat_list()
@@ -476,29 +478,22 @@ class ListScreen(Screens):
                     self.current_page = int(self.display_container_elements["page_entry"].get_text())
                     self.update_cat_list(self.cat_list_bar_elements["search_bar_entry"].get_text())
 
-    def get_your_clan_cats(self):
-        self.current_group = 'clan'
-        self.death_status = 'living'
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside and the_cat.moons != -1:
-                self.full_cat_list.append(the_cat)
-
-    def get_cotc_cats(self):
-        self.current_group = 'cotc'
-        self.death_status = 'living'
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and the_cat.outside:
-                self.full_cat_list.append(the_cat)
-
     def get_sc_cats(self):
-        self.current_group = 'sc'
-        self.death_status = 'dead'
+        """
+        grabs starclan cats
+        """
+        self.current_group = "sc"
+        self.death_status = "dead"
         self.full_cat_list = []
         for the_cat in Cat.all_cats_list:
-            if the_cat.dead and the_cat.ID != game.clan.instructor.ID and not the_cat.outside and not the_cat.df and \
-                    not the_cat.faded:
+            if (
+                    the_cat.dead
+                    and the_cat.ID != game.clan.instructor.ID
+                    and the_cat.ID != game.clan.demon.ID
+                    and not the_cat.outside
+                    and not the_cat.df
+                    and not the_cat.faded
+            ):
                 self.full_cat_list.append(the_cat)
 
     def get_df_cats(self):
@@ -507,7 +502,7 @@ class ListScreen(Screens):
         self.full_cat_list = []
 
         for the_cat in Cat.all_cats_list:
-            if the_cat.dead and the_cat.ID != game.clan.instructor.ID and the_cat.df and \
+            if the_cat.dead and the_cat.ID != game.clan.demon.ID and the_cat.ID != game.clan.instructor.ID and the_cat.df and \
                     not the_cat.faded:
                 self.full_cat_list.append(the_cat)
 
@@ -661,12 +656,13 @@ class ListScreen(Screens):
                 self.full_cat_list.append(the_cat)
 
                 # update_sprite(cat)
-                if game.clan.clan_settings["show fav"] and cat.favourite != 0:
+                if game.clan.clan_settings["show fav"] and the_cat.favourite != 0:
 
                     _temp = pygame.transform.scale(
                         pygame.image.load(
-                            f"resources/images/fav_marker_{cat.favourite}.png").convert_alpha(),
+                            f"resources/images/fav_marker_{the_cat.favourite}.png").convert_alpha(),
                         (100, 100))
+                    
     def get_cotc_cats(self):
         """
         grabs cats outside the clan
@@ -678,51 +674,3 @@ class ListScreen(Screens):
             if not the_cat.dead and the_cat.outside and not the_cat.driven_out:
                 self.full_cat_list.append(the_cat)
 
-    def get_sc_cats(self):
-        """
-        grabs starclan cats
-        """
-        self.current_group = "sc"
-        self.death_status = "dead"
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if (
-                    the_cat.dead
-                    and the_cat.ID != game.clan.instructor.ID
-                    and not the_cat.outside
-                    and not the_cat.df
-                    and not the_cat.faded
-            ):
-                self.full_cat_list.append(the_cat)
-
-    def get_df_cats(self):
-        """
-        grabs dark forest cats
-        """
-        self.current_group = "df"
-        self.death_status = "dead"
-        self.full_cat_list = []
-
-        for the_cat in Cat.all_cats_list:
-            if (
-                    the_cat.dead
-                    and the_cat.ID != game.clan.instructor.ID
-                    and the_cat.df
-                    and not the_cat.faded
-            ):
-                self.full_cat_list.append(the_cat)
-
-    def get_ur_cats(self):
-        """
-        grabs unknown residence cats
-        """
-        self.current_group = "ur"
-        self.death_status = "dead"
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if (
-                    the_cat.ID in game.clan.unknown_cats
-                    and not the_cat.faded
-                    and not the_cat.driven_out
-            ):
-                self.full_cat_list.append(the_cat)

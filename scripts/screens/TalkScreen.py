@@ -7,7 +7,7 @@ from scripts.utility import scale
 
 from .Screens import Screens
 
-from scripts.utility import generate_sprite, get_cluster, pronoun_repl
+from scripts.utility import generate_sprite, get_cluster, pronoun_repl, get_alive_cats, get_alive_status_cats
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from scripts.game_structure.ui_elements import IDImageButton, UIImageButton, UISpriteButton
@@ -1670,7 +1670,7 @@ class TalkScreen(Screens):
                     else:
                         text = re.sub(fr'(?<!\/)r_w{i}(?!\/)', str(self.cat_dict[f"r_w{i}"].name), text)
                     continue
-                alive_cats = get_alive_warriors(Cat)
+                alive_cats = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_cats) < 3:
                     return ""
                 alive_cat = choice(alive_cats)
@@ -1825,42 +1825,42 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_k(?!\/)', str(self.cat_dict["r_k"].name), text)
             else:
-                alive_apps = get_alive_kits(Cat)
-                if len(alive_apps) <= 1:
+                alive_kits = get_alive_status_cats(Cat, ["kitten","newborn"])
+                if len(alive_kits) <= 1:
                     return ""
 
-                alive_app = choice(alive_apps)
+                alive_kit = choice(alive_kits)
 
                 counter = 0
                 # lord forgive me there must be a less disgusting way to do this sorry
-                while (alive_app.ID == you.ID or alive_app.ID == cat.ID or (cluster and x not in get_cluster(alive_app.personality.trait)) or (rel and (alive_app.ID not in cat.relationships) or\
-                (r == "plike" and cat.relationships[alive_app.ID].platonic_like < 20) or\
-                (r == "plove" and cat.relationships[alive_app.ID].platonic_like < 50) or\
-                (r == "rlike" and cat.relationships[alive_app.ID].romantic_love < 10) or\
-                (r == "rlove" and cat.relationships[alive_app.ID].romantic_love < 50) or\
-                (r == "dislike" and cat.relationships[alive_app.ID].dislike < 15) or\
-                (r == "hate" and cat.relationships[alive_app.ID].dislike < 50) or\
-                (r == "jealous" and cat.relationships[alive_app.ID].jeaousy < 20) or\
-                (r == "trust" and cat.relationships[alive_app.ID].trust < 20) or\
-                (r == "comfort" and cat.relationships[alive_app.ID].comfortable < 20) or \
-                (r == "respect" and cat.relationships[alive_app.ID].admiration < 20) or\
-                (r == "neutral" and ((cat.relationships[alive_app.ID].platonic_like > 20) or (cat.relationships[alive_app.ID].romantic_love > 20) or (cat.relationships[alive_app.ID].dislike > 20) or (cat.relationships[alive_app.ID].jealousy > 20) or (cat.relationships[alive_app.ID].trust > 20) or (cat.relationships[alive_app.ID].comfortable > 20) or (cat.relationships[alive_app.ID].admiration > 20))))):
+                while (alive_kit.ID == you.ID or alive_kit.ID == cat.ID or (cluster and x not in get_cluster(alive_kit.personality.trait)) or (rel and (alive_kit.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[alive_kit.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[alive_kit.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[alive_kit.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[alive_kit.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[alive_kit.ID].dislike < 15) or\
+                (r == "hate" and cat.relationships[alive_kit.ID].dislike < 50) or\
+                (r == "jealous" and cat.relationships[alive_kit.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[alive_kit.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[alive_kit.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[alive_kit.ID].admiration < 20) or\
+                (r == "neutral" and ((cat.relationships[alive_kit.ID].platonic_like > 20) or (cat.relationships[alive_kit.ID].romantic_love > 20) or (cat.relationships[alive_kit.ID].dislike > 20) or (cat.relationships[alive_kit.ID].jealousy > 20) or (cat.relationships[alive_kit.ID].trust > 20) or (cat.relationships[alive_kit.ID].comfortable > 20) or (cat.relationships[alive_kit.ID].admiration > 20))))):
                     counter += 1
                     if counter >= 30:
                         return ""
-                    alive_app = choice(alive_apps)
+                    alive_kit = choice(alive_kits)
                 if cluster and rel:
-                    self.cat_dict[f"{r}_r_k_{x}"] = alive_app
-                    text = re.sub(fr'(?<!\/){r}_r_k_{x}(?!\/)', str(alive_app.name), text)
+                    self.cat_dict[f"{r}_r_k_{x}"] = alive_kit
+                    text = re.sub(fr'(?<!\/){r}_r_k_{x}(?!\/)', str(alive_kit.name), text)
                 elif cluster and not rel:
-                    self.cat_dict[f"r_k_{x}"] = alive_app
-                    text = re.sub(fr'(?<!\/)r_k_{x}(?!\/)', str(alive_app.name), text)
+                    self.cat_dict[f"r_k_{x}"] = alive_kit
+                    text = re.sub(fr'(?<!\/)r_k_{x}(?!\/)', str(alive_kit.name), text)
                 elif rel and not cluster:
-                    self.cat_dict[f"{r}_r_k"] = alive_app
-                    text = re.sub(fr'(?<!\/){r}_r_k(?!\/)', str(alive_app.name), text)
+                    self.cat_dict[f"{r}_r_k"] = alive_kit
+                    text = re.sub(fr'(?<!\/){r}_r_k(?!\/)', str(alive_kit.name), text)
                 else:
-                    self.cat_dict["r_k"] = alive_app
-                    text = re.sub(r'(?<!\/)r_k(?!\/)', str(alive_app.name), text)
+                    self.cat_dict["r_k"] = alive_kit
+                    text = re.sub(r'(?<!\/)r_k(?!\/)', str(alive_kit.name), text)
         
         # Random warrior apprentice
         if "r_a" in text:
@@ -1890,7 +1890,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_a(?!\/)', str(self.cat_dict["r_a"].name), text)
             else:
-                alive_apps = get_alive_apps(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
 
@@ -1955,7 +1955,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_w(?!\/)', str(self.cat_dict["r_w"].name), text)
             else:
-                alive_apps = get_alive_warriors(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_apps) <= 1:
                     return ""
 
@@ -2019,7 +2019,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_m(?!\/)', str(self.cat_dict["r_m"].name), text)
             else:
-                alive_apps = get_alive_meds(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -2078,7 +2078,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_d(?!\/)', str(self.cat_dict["r_d"].name), text)
             else:
-                alive_apps = get_alive_mediators(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -2138,7 +2138,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_q(?!\/)', str(self.cat_dict["r_q"].name), text)
             else:
-                alive_apps = get_alive_queens(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -2198,7 +2198,7 @@ class TalkScreen(Screens):
                 else:
                     text = re.sub(r'(?<!\/)r_e(?!\/)', str(self.cat_dict["r_e"].name), text)
             else:
-                alive_apps = get_alive_elders(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["elder"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -3588,7 +3588,7 @@ class TalkScreen(Screens):
             else:
                 r = ""
 
-            alive_kits = get_alive_kits(Cat)
+            alive_kits = get_alive_status_cats(Cat, ["kitten","newborn"])
             if len(alive_kits) < 1:
                 return ""
             if f"rsh_k_{x}" in self.cat_dict or "rsh_k" in self.cat_dict or f"{r}_rsh_k" in self.cat_dict or f"{r}_rsh_k_{x}" in self.cat_dict:
@@ -3646,7 +3646,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_apps(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["apprentice"])
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_a_{x}" in self.cat_dict or "rsh_a" in self.cat_dict or f"{r}_rsh_a" in self.cat_dict or f"{r}_rsh_a_{x}" in self.cat_dict:
@@ -3704,7 +3704,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_warriors(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["warrior"])
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_w_{x}" in self.cat_dict or "rsh_w" in self.cat_dict or f"{r}_rsh_w" in self.cat_dict or f"{r}_rsh_w_{x}" in self.cat_dict:
@@ -3762,7 +3762,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_meds(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_a_{x}" in self.cat_dict or "rsh_m" in self.cat_dict or f"{r}_rsh_m" in self.cat_dict or f"{r}_rsh_m_{x}" in self.cat_dict:
@@ -3820,7 +3820,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_mediators(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_d_{x}" in self.cat_dict or "rsh_d" in self.cat_dict or f"{r}_rsh_d" in self.cat_dict or f"{r}_rsh_d_{x}" in self.cat_dict:
@@ -3878,7 +3878,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_queens(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_q_{x}" in self.cat_dict or "rsh_q" in self.cat_dict or f"{r}_rsh_q" in self.cat_dict or f"{r}_rsh_q_{x}" in self.cat_dict:
@@ -3936,7 +3936,7 @@ class TalkScreen(Screens):
                 rel = True
             else:
                 r = ""
-            alive_apps = get_alive_elders(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["elder"])
             if len(alive_apps) < 1:
                 return ""
             if f"rsh_e_{x}" in self.cat_dict or "rsh_e" in self.cat_dict or f"{r}_rsh_e" in self.cat_dict or f"{r}_rsh_e_{x}" in self.cat_dict:

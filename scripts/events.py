@@ -27,7 +27,7 @@ from scripts.events_module.outsider_events import OutsiderEvents
 from scripts.event_class import Single_Event
 from scripts.game_structure.game_essentials import game
 from scripts.cat_relations.relationship import Relationship
-from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, ceremony_text_adjust, get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat, pronoun_repl
+from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, ceremony_text_adjust, get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat, pronoun_repl, get_alive_status_cats, get_alive_cats
 from scripts.events_module.generate_events import GenerateEvents
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.history import History
@@ -1032,7 +1032,7 @@ class Events:
                 text = re.sub(r'(?<!\/)r_c(?!\/)', str(alive_cat.name), text)
                 self.cat_dict["r_c"] = alive_cat
             if "r_k" in text:
-                alive_kits = get_alive_kits(Cat)
+                alive_kits = get_alive_status_cats(Cat, ["kitten","newborn"])
                 if len(alive_kits) <= 1:
                     return ""
                 alive_kit = random.choice(alive_kits)
@@ -1041,7 +1041,7 @@ class Events:
                 text = re.sub(r'(?<!\/)r_k(?!\/)', str(alive_kit.name), text)
                 self.cat_dict["r_k"] = alive_kit
             if "r_a" in text:
-                alive_apps = get_alive_apps(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1050,7 +1050,7 @@ class Events:
                 text = re.sub(r'(?<!\/)r_a(?!\/)', str(alive_app.name), text)
                 self.cat_dict["r_a"] = alive_app
             if "r_w1" in text:
-                alive_apps = get_alive_warriors(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_apps) <= 2:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1072,7 +1072,7 @@ class Events:
                     text = re.sub(r'(?<!\/)r_w3(?!\/)', str(alive_app3.name), text)
                     self.cat_dict["r_w3"] = alive_app3
             if "r_w" in text:
-                alive_apps = get_alive_warriors(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1081,7 +1081,7 @@ class Events:
                 text = re.sub(r'(?<!\/)r_w(?!\/)', str(alive_app.name), text)
                 self.cat_dict["r_w"] = alive_app
             if "r_m" in text:
-                alive_apps = get_alive_meds(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1090,7 +1090,7 @@ class Events:
                 text = re.sub(r'(?<!\/)r_m(?!\/)', str(alive_app.name), text)
                 self.cat_dict["r_m"] = alive_app
             if "r_d" in text:
-                alive_apps = get_alive_mediators(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1099,7 +1099,7 @@ class Events:
                 text = re.sub(r'(?<!\/)r_d(?!\/)', str(alive_app.name), text)
                 self.cat_dict["r_d"] = alive_app
             if "r_q" in text:
-                alive_apps = get_alive_queens(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1108,7 +1108,7 @@ class Events:
                 text = re.sub(r'(?<!\/)r_q(?!\/)', str(alive_app.name), text)
                 self.cat_dict["r_q"] = alive_app
             if "r_e" in text:
-                alive_apps = get_alive_elders(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["elder"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1917,62 +1917,51 @@ class Events:
         """
         TODO: DOCS
         """
-        if game.clan.game_mode == "classic":
-            herbs = game.clan.herbs.copy()
-            for herb in herbs:
-                adjust_by = random.choices([-2, -1, 0, 1, 2], [1, 2, 3, 2, 1], k=1)
-                game.clan.herbs[herb] += adjust_by[0]
-                if game.clan.herbs[herb] <= 0:
-                    game.clan.herbs.pop(herb)
-            if not int(random.random() * 5):
-                new_herb = random.choice(HERBS)
-                game.clan.herbs.update({new_herb: 1})
-        else:
-            event_list = []
-            meds_available = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"], working=True,
-                                                   sort=True)
-            for med in meds_available:
-                if game.clan.current_season in ["Newleaf", "Greenleaf"]:
-                    amount = random.choices([0, 1, 2, 3], [1, 2, 2, 2], k=1)
-                elif game.clan.current_season == "Leaf-fall":
-                    amount = random.choices([0, 1, 2], [3, 2, 1], k=1)
-                else:
-                    amount = random.choices([0, 1], [3, 1], k=1)
-                if amount[0] != 0:
-                    herbs_found = random.sample(HERBS, k=amount[0])
-                    herb_display = []
-                    for herb in herbs_found:
-                        if herb in ["blackberry"]:
-                            continue
-                        if game.clan.current_season in ["Newleaf", "Greenleaf"]:
-                            amount = random.choices([1, 2, 3], [3, 3, 1], k=1)
-                        else:
-                            amount = random.choices([1, 2], [4, 1], k=1)
-                        if herb in game.clan.herbs:
-                            game.clan.herbs[herb] += amount[0]
-                        else:
-                            game.clan.herbs.update({herb: amount[0]})
-                        herb_display.append(herb.replace("_", " "))
-                else:
-                    herbs_found = []
-                    herb_display = []
-                if not herbs_found:
-                    event_list.append(f"{med.name} could not find any herbs this moon.")
-                else:
-                    try:
-                        if len(herbs_found) == 1:
-                            insert = f"{herb_display[0]}"
-                        elif len(herbs_found) == 2:
-                            insert = f"{herb_display[0]} and {herb_display[1]}"
-                        else:
-                            insert = f"{', '.join(herb_display[:-1])}, and {herb_display[-1]}"
-                        event_list.append(f"{med.name} gathered {insert} this moon.")
-                    except IndexError:
-                        event_list.append(
-                            f"{med.name} could not find any herbs this moon."
-                        )
-                        return
-            game.herb_events_list.extend(event_list)
+        event_list = []
+        meds_available = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"], working=True,
+                                                sort=True)
+        for med in meds_available:
+            if game.clan.current_season in ["Newleaf", "Greenleaf"]:
+                amount = random.choices([0, 1, 2, 3], [1, 2, 2, 2], k=1)
+            elif game.clan.current_season == "Leaf-fall":
+                amount = random.choices([0, 1, 2], [3, 2, 1], k=1)
+            else:
+                amount = random.choices([0, 1], [3, 1], k=1)
+            if amount[0] != 0:
+                herbs_found = random.sample(HERBS, k=amount[0])
+                herb_display = []
+                for herb in herbs_found:
+                    if herb in ["blackberry"]:
+                        continue
+                    if game.clan.current_season in ["Newleaf", "Greenleaf"]:
+                        amount = random.choices([1, 2, 3], [3, 3, 1], k=1)
+                    else:
+                        amount = random.choices([1, 2], [4, 1], k=1)
+                    if herb in game.clan.herbs:
+                        game.clan.herbs[herb] += amount[0]
+                    else:
+                        game.clan.herbs.update({herb: amount[0]})
+                    herb_display.append(herb.replace("_", " "))
+            else:
+                herbs_found = []
+                herb_display = []
+            if not herbs_found:
+                event_list.append(f"{med.name} could not find any herbs this moon.")
+            else:
+                try:
+                    if len(herbs_found) == 1:
+                        insert = f"{herb_display[0]}"
+                    elif len(herbs_found) == 2:
+                        insert = f"{herb_display[0]} and {herb_display[1]}"
+                    else:
+                        insert = f"{', '.join(herb_display[:-1])}, and {herb_display[-1]}"
+                    event_list.append(f"{med.name} gathered {insert} this moon.")
+                except IndexError:
+                    event_list.append(
+                        f"{med.name} could not find any herbs this moon."
+                    )
+                    return
+        game.herb_events_list.extend(event_list)
 
     def handle_focus(self):
         """
@@ -3450,9 +3439,6 @@ class Events:
                 list(range(ran[0][0], ran[0][1] + 1))
                 + list(range(ran[1][0], ran[1][1] + 1))
             )
-
-            if game.clan.game_mode == "classic":
-                exp += random.randint(0, 3)
 
             cat.experience += max(exp * mentor_modifier, 1)
 

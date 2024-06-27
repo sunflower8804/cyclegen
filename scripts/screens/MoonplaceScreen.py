@@ -6,13 +6,15 @@ from scripts.utility import scale
 
 from .Screens import Screens
 
-from scripts.utility import generate_sprite, get_cluster, get_alive_status_cats
+from scripts.utility import generate_sprite, get_cluster, get_alive_status_cats, get_alive_cats
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 import pygame_gui
 from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER, screen
 from enum import Enum  # pylint: disable=no-name-in-module
 from scripts.cat.names import names, Name
+from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked
+
 
 class RelationType(Enum):
     """An enum representing the possible age groups of a cat"""
@@ -496,7 +498,7 @@ class MoonplaceScreen(Screens):
                             return ""
                     text = text.replace("r_c3", str(alive_app3.name))
             if "r_k" in text:
-                alive_kits = get_alive_kits(Cat)
+                alive_kits = get_alive_status_cats(Cat, ["kitten","newborn"])
                 if len(alive_kits) <= 1:
                     return ""
                 alive_kit = choice(alive_kits)
@@ -508,7 +510,7 @@ class MoonplaceScreen(Screens):
                     alive_kit = choice(alive_kits)
                 text = text.replace("r_k", str(alive_kit.name))
             if "r_a" in text:
-                alive_apps = get_alive_apps(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -520,7 +522,7 @@ class MoonplaceScreen(Screens):
                     alive_app = choice(alive_apps)
                 text = text.replace("r_a", str(alive_app.name))
             if "r_w1" in text:
-                alive_apps = get_alive_warriors(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_apps) <= 2:
                     return ""
                 alive_app = choice(alive_apps)
@@ -551,7 +553,7 @@ class MoonplaceScreen(Screens):
                         alive_app3 = choice(alive_apps)
                     text = text.replace("r_w3", str(alive_app3.name))
             if "r_w" in text:
-                alive_apps = get_alive_warriors(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -563,7 +565,7 @@ class MoonplaceScreen(Screens):
                     alive_app = choice(alive_apps)
                 text = text.replace("r_w", str(alive_app.name))
             if "r_m" in text:
-                alive_apps = get_alive_meds(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -575,7 +577,7 @@ class MoonplaceScreen(Screens):
                     alive_app = choice(alive_apps)
                 text = text.replace("r_m", str(alive_app.name))
             if "r_d" in text:
-                alive_apps = get_alive_mediators(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -587,7 +589,7 @@ class MoonplaceScreen(Screens):
                     alive_app = choice(alive_apps)
                 text = text.replace("r_d", str(alive_app.name))
             if "r_q" in text:
-                alive_apps = get_alive_queens(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -599,7 +601,7 @@ class MoonplaceScreen(Screens):
                     alive_app = choice(alive_apps)
                 text = text.replace("r_q", str(alive_app.name))
             if "r_e" in text:
-                alive_apps = get_alive_elders(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["elder"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)

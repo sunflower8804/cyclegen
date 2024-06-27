@@ -9,7 +9,7 @@ TODO: Docs
 import logging
 import re
 from itertools import combinations
-from random import choice, choices, randint, random, sample, randrange
+from random import choice, choices, randint, random, sample, randrange, gauss
 from sys import exit as sys_exit
 from typing import List
 
@@ -70,58 +70,6 @@ def get_alive_clan_queens(living_cats):
                 queen_dict[parents[1].ID] = [cat]
                 living_kits.remove(cat)
     return queen_dict, living_kits
-
-def get_alive_apps(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  i.status == 'apprentice' and not i.dead and not i.outside]
-
-    return alive_apps
-
-def get_alive_warriors(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  i.status == 'warrior' and not i.dead and not i.outside]
-
-    return alive_apps
-
-def get_alive_meds(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  (i.status == 'medicine cat' or i.status == 'medicine cat apprentice') and not i.dead and not i.outside]
-
-    return alive_apps
-
-def get_alive_mediators(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                   (i.status == 'mediator' or i.status == 'mediator apprentice') and not i.dead and not i.outside]
-
-    return alive_apps
-
-def get_alive_queens(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  (i.status == 'queen' or i.status == "queen's apprentice") and not i.dead and not i.outside]
-    return alive_apps
-
-def get_alive_elders(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  i.status == 'elder' and not i.dead and not i.outside]
-    return alive_apps
 
 def get_alive_status_cats(Cat, get_status: list, working: bool = False, sort: bool = False) -> list:
     """
@@ -470,6 +418,44 @@ def create_new_cat_block(
         elif status == "elder":
             age = randint(Cat.age_moons["senior"][0], Cat.age_moons["senior"][1])
 
+    if "newdfcat" in attribute_list:
+        # gives a random status if none was specified in the patrol. kitten cannot be chosen randomly
+            if status is None and age is None:
+                mean = (3 + 145) / 2 
+                stddev = (145 - 3) / 6 
+                age = int(gauss(mean, stddev))
+                age = max(3, min(145, age))
+            
+            if age:
+
+                if age < 1:
+                    status = "newborn"
+                elif age < 6:
+                    status = "kitten"
+                elif age < 13:
+                    status = choice(["apprentice", "apprentice", "apprentice", "mediator apprentice", "medicine cat apprentice", "queen's apprentice"])
+                elif age < 119:
+                    status = choice(["warrior", "warrior", "medicine cat", "mediator", "queen", "warrior", "warrior", "medicine cat", "medicine cat", "mediator", "deputy", "leader"])
+                else:
+                    status = choice(["elder", "elder", "elder", "elder", "elder", "elder", "elder", "elder", "leader", "deputy"])
+
+    if "newstarcat" in attribute_list:
+        # gives a random status if none was specified in the patrol. kitten cannot be chosen randomly
+        if status is None:
+            status = choice(["elder", "elder", "elder", "elder", "elder", "apprentice", "warrior", "warrior", "warrior", "warrior", "warrior", "warrior", "mediator apprentice", "mediator", "mediator", "medicine cat apprentice", "medicine cat", "medicine cat", "medicine cat", "medicine cat", "queen's apprentice", "queen", "queen", "queen", "queen","leader"])
+
+        #and age, dependant on status
+        if status in "kitten":
+            age = randint(1,5)
+        elif status in ["apprentice", "mediator apprentice", "medicine cat apprentice", "queen's apprentice"]:
+            age = randint (6,11)
+        elif status in ["warrior", "medicine cat", "mediator", "queen"]:
+            age = randint (12, 119)
+        elif status in ["deputy", "leader"]:
+            age = randint(25,119)
+        else:
+            age = randint (120, 201)
+
     if "kittypet" in attribute_list:
         cat_type = "kittypet"
     elif "rogue" in attribute_list:
@@ -478,6 +464,10 @@ def create_new_cat_block(
         cat_type = "loner"
     elif "clancat" in attribute_list:
         cat_type = "former Clancat"
+    elif "newdfcat" in attribute_list:
+            cat_type = status
+    elif "newstarcat" in attribute_list:
+        cat_type = status
     else:
         cat_type = choice(['kittypet', 'loner', 'former Clancat'])
 

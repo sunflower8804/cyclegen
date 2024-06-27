@@ -17,6 +17,8 @@ from scripts.game_structure.windows import GameOver, PickPath, DeathScreen
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
 from scripts.game_structure.windows import RelationshipLog
 from scripts.game_structure.propagating_thread import PropagatingThread
+from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked, UISpriteButton
+
 
 class GiftScreen(Screens):
     selected_cat = None
