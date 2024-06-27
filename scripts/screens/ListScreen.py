@@ -478,22 +478,6 @@ class ListScreen(Screens):
                     self.current_page = int(self.display_container_elements["page_entry"].get_text())
                     self.update_cat_list(self.cat_list_bar_elements["search_bar_entry"].get_text())
 
-    def get_your_clan_cats(self):
-        self.current_group = 'clan'
-        self.death_status = 'living'
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside and the_cat.moons != -1:
-                self.full_cat_list.append(the_cat)
-
-    def get_cotc_cats(self):
-        self.current_group = 'cotc'
-        self.death_status = 'living'
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and the_cat.outside:
-                self.full_cat_list.append(the_cat)
-
     def get_sc_cats(self):
         self.current_group = 'sc'
         self.death_status = 'dead'
@@ -669,6 +653,7 @@ class ListScreen(Screens):
                         pygame.image.load(
                             f"resources/images/fav_marker_{cat.favourite}.png").convert_alpha(),
                         (100, 100))
+                    
     def get_cotc_cats(self):
         """
         grabs cats outside the clan
