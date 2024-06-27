@@ -71,58 +71,6 @@ def get_alive_clan_queens(living_cats):
                 living_kits.remove(cat)
     return queen_dict, living_kits
 
-def get_alive_apps(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  i.status == 'apprentice' and not i.dead and not i.outside]
-
-    return alive_apps
-
-def get_alive_warriors(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  i.status == 'warrior' and not i.dead and not i.outside]
-
-    return alive_apps
-
-def get_alive_meds(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  (i.status == 'medicine cat' or i.status == 'medicine cat apprentice') and not i.dead and not i.outside]
-
-    return alive_apps
-
-def get_alive_mediators(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                   (i.status == 'mediator' or i.status == 'mediator apprentice') and not i.dead and not i.outside]
-
-    return alive_apps
-
-def get_alive_queens(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  (i.status == 'queen' or i.status == "queen's apprentice") and not i.dead and not i.outside]
-    return alive_apps
-
-def get_alive_elders(Cat):
-    """
-    returns a list of IDs for all living apps in the clan
-    """
-    alive_apps = [i for i in Cat.all_cats.values() if
-                  i.status == 'elder' and not i.dead and not i.outside]
-    return alive_apps
-
 def get_alive_status_cats(Cat, get_status: list, working: bool = False, sort: bool = False) -> list:
     """
     returns a list of cat objects for all living cats of get_status in Clan

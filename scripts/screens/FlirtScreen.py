@@ -6,7 +6,7 @@ from scripts.utility import scale
 
 from .Screens import Screens
 
-from scripts.utility import generate_sprite, get_cluster
+from scripts.utility import generate_sprite, get_cluster, get_alive_cats
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 import pygame_gui
@@ -1162,7 +1162,7 @@ class FlirtScreen(Screens):
                 if r_w_str in self.cat_dict:
                     text = text.replace(r_w_str, self.cat_dict[r_w_str])
                     continue
-                alive_cats = get_alive_warriors(Cat)
+                alive_cats = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_cats) < 3:
                     return ""
                 alive_cat = choice(alive_cats)
@@ -1198,7 +1198,7 @@ class FlirtScreen(Screens):
             if "r_k" in self.cat_dict:
                 text = text.replace("r_k", self.cat_dict["r_k"])
             else:
-                alive_kits = get_alive_kits(Cat)
+                alive_kits = get_alive_status_cats(Cat, ["kitten","newborn"])
                 if len(alive_kits) <= 1:
                     return ""
                 alive_kit = choice(alive_kits)
@@ -1216,7 +1216,7 @@ class FlirtScreen(Screens):
             if "r_a" in self.cat_dict:
                 text = text.replace("r_a", self.cat_dict["r_a"])
             else:
-                alive_apps = get_alive_apps(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -1234,7 +1234,7 @@ class FlirtScreen(Screens):
             if "r_w" in self.cat_dict:
                 text = text.replace("r_w", self.cat_dict["r_w"])
             else:
-                alive_apps = get_alive_warriors(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -1252,7 +1252,7 @@ class FlirtScreen(Screens):
             if "r_m" in self.cat_dict:
                 text = text.replace("r_m", self.cat_dict["r_m"])
             else:
-                alive_apps = get_alive_meds(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -1270,7 +1270,7 @@ class FlirtScreen(Screens):
             if "r_d" in self.cat_dict:
                 text = text.replace("r_d", self.cat_dict["r_d"])
             else:
-                alive_apps = get_alive_mediators(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -1288,7 +1288,7 @@ class FlirtScreen(Screens):
             if "r_q" in self.cat_dict:
                 text = text.replace("r_q", self.cat_dict["r_q"])
             else:
-                alive_apps = get_alive_queens(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -1306,7 +1306,7 @@ class FlirtScreen(Screens):
             if "r_e" in self.cat_dict:
                 text = text.replace("r_e", self.cat_dict["r_e"])
             else:
-                alive_apps = get_alive_elders(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["elder"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = choice(alive_apps)
@@ -1639,7 +1639,7 @@ class FlirtScreen(Screens):
                 counter +=1
             text = text.replace("rsh_c", str(random_cat.name))
         if "rsh_k" in text:
-            alive_kits = get_alive_kits(Cat)
+            alive_kits = get_alive_status_cats(Cat, ["kitten","newborn"])
             if len(alive_kits) < 1:
                 return ""
             alive_kit = choice(alive_kits)
@@ -1651,7 +1651,7 @@ class FlirtScreen(Screens):
                     return ""
             text = text.replace("rsh_k", str(alive_kit.name))
         if "rsh_a" in text:
-            alive_apps = get_alive_apps(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["apprentice"])
             if len(alive_apps) < 1:
                 return ""
             alive_app = choice(alive_apps)
@@ -1663,7 +1663,7 @@ class FlirtScreen(Screens):
                 alive_app = choice(alive_apps)
             text = text.replace("rsh_a", str(alive_app.name))
         if "rsh_w" in text:
-            alive_apps = get_alive_warriors(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["warrior"])
             if len(alive_apps) < 1:
                 return ""
             alive_app = choice(alive_apps)
@@ -1675,7 +1675,7 @@ class FlirtScreen(Screens):
                 alive_app = choice(alive_apps)
             text = text.replace("rsh_w", str(alive_app.name))
         if "rsh_m" in text:
-            alive_apps = get_alive_meds(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
             if len(alive_apps) < 1:
                 return ""
             alive_app = choice(alive_apps)
@@ -1687,7 +1687,7 @@ class FlirtScreen(Screens):
                 alive_app = choice(alive_apps)
             text = text.replace("rsh_m", str(alive_app.name))
         if "rsh_d" in text:
-            alive_apps = get_alive_mediators(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
             if len(alive_apps) < 1:
                 return ""
             alive_app = choice(alive_apps)
@@ -1699,7 +1699,7 @@ class FlirtScreen(Screens):
                 alive_app = choice(alive_apps)
             text = text.replace("rsh_d", str(alive_app.name))
         if "rsh_q" in text:
-            alive_apps = get_alive_queens(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
             if len(alive_apps) < 1:
                 return ""
             alive_app = choice(alive_apps)
@@ -1711,7 +1711,7 @@ class FlirtScreen(Screens):
                 alive_app = choice(alive_apps)
             text = text.replace("rsh_q", str(alive_app.name))
         if "rsh_e" in text:
-            alive_apps = get_alive_elders(Cat)
+            alive_apps = get_alive_status_cats(Cat, ["elder"])
             if len(alive_apps) < 1:
                 return ""
             alive_app = choice(alive_apps)

@@ -25,6 +25,7 @@ from scripts.utility import (
     find_special_list_types,
     filter_relationship_type,
     get_special_snippet_list,
+    get_alive_cats
 )
 from scripts.game_structure.game_essentials import game
 from itertools import combinations
@@ -1286,7 +1287,7 @@ class Patrol:
                     counter+=1
                 text = text.replace("r_c_sc", str(alive_app.name))
             if "r_k" in text:
-                alive_kits = get_alive_kits(Cat)
+                alive_kits = get_alive_status_cats(Cat, ["kitten","newborn"])
                 if len(alive_kits) <= 1:
                     return ""
                 alive_kit = random.choice(alive_kits)
@@ -1294,7 +1295,7 @@ class Patrol:
                     alive_kit = random.choice(alive_kits)
                 text = text.replace("r_k", str(alive_kit.name))
             if "r_a" in text:
-                alive_apps = get_alive_apps(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1302,7 +1303,7 @@ class Patrol:
                     alive_app = random.choice(alive_apps)
                 text = text.replace("r_a", str(alive_app.name))
             if "r_w1" in text:
-                alive_apps = get_alive_warriors(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_apps) <= 2:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1321,7 +1322,7 @@ class Patrol:
                         alive_app3 = random.choice(alive_apps)
                     text = text.replace("r_w3", str(alive_app3.name))
             if "r_w" in text:
-                alive_apps = get_alive_warriors(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["warrior"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1329,7 +1330,7 @@ class Patrol:
                     alive_app = random.choice(alive_apps)
                 text = text.replace("r_w", str(alive_app.name))
             if "r_m" in text:
-                alive_apps = get_alive_meds(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1337,7 +1338,7 @@ class Patrol:
                     alive_app = random.choice(alive_apps)
                 text = text.replace("r_m", str(alive_app.name))
             if "r_d" in text:
-                alive_apps = get_alive_mediators(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1345,7 +1346,7 @@ class Patrol:
                     alive_app = random.choice(alive_apps)
                 text = text.replace("r_d", str(alive_app.name))
             if "r_q" in text:
-                alive_apps = get_alive_queens(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
@@ -1353,7 +1354,7 @@ class Patrol:
                     alive_app = random.choice(alive_apps)
                 text = text.replace("r_q", str(alive_app.name))
             if "r_e" in text:
-                alive_apps = get_alive_elders(Cat)
+                alive_apps = get_alive_status_cats(Cat, ["elder"])
                 if len(alive_apps) <= 1:
                     return ""
                 alive_app = random.choice(alive_apps)
