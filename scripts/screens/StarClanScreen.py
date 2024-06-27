@@ -8,7 +8,7 @@ from scripts.cat.cats import Cat
 from scripts.utility import scale, shorten_text_to_fit
 from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
-from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked
+from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked, UISpriteButton
 
 class StarClanScreen(Screens):
     list_page = 1
