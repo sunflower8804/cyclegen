@@ -1387,6 +1387,11 @@ class Events:
                 mate = Cat.all_cats[game.clan.your_cat.mate[-1]]
                 self.cat_dict["mate1"] = mate
                 ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate.name), ceremony_txt)
+                process_text_dict = self.cat_dict.copy()
+                for abbrev in process_text_dict.keys():
+                    abbrev_cat = process_text_dict[abbrev]
+                    process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+                ceremony_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), ceremony_txt)
                 game.cur_events_list.insert(0, Single_Event(ceremony_txt))
             except:
                 print("You gained a new mate but an event could not be shown1")
@@ -1403,6 +1408,11 @@ class Events:
                 mate = Cat.all_cats[game.clan.your_cat.mate[-1]]
                 self.cat_dict["mate1"] = mate
                 ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate.name), ceremony_txt)
+                process_text_dict = self.cat_dict.copy()
+                for abbrev in process_text_dict.keys():
+                    abbrev_cat = process_text_dict[abbrev]
+                    process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+                ceremony_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), ceremony_txt)
                 game.cur_events_list.insert(0, Single_Event(ceremony_txt))
                 game.switches['accept'] = False
                 checks[1] = len(game.clan.your_cat.mate)
@@ -1432,6 +1442,11 @@ class Events:
                 mate = game.switches['new_mate']
                 self.cat_dict["mate1"] = mate
                 ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate.name), ceremony_txt)
+                process_text_dict = self.cat_dict.copy()
+                for abbrev in process_text_dict.keys():
+                    abbrev_cat = process_text_dict[abbrev]
+                    process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+                ceremony_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), ceremony_txt)
                 game.cur_events_list.insert(0, Single_Event(ceremony_txt))
                 game.switches['reject'] = False
             except:
@@ -1459,6 +1474,11 @@ class Events:
                 ceremony_txt = random.choice(self.c_txt['mate_events'])
                 self.cat_dict["mate1"] = mate1
                 ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate1.name), ceremony_txt)
+                process_text_dict = self.cat_dict.copy()
+                for abbrev in process_text_dict.keys():
+                    abbrev_cat = process_text_dict[abbrev]
+                    process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+                ceremony_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), ceremony_txt)
                 game.cur_events_list.insert(1, Single_Event(ceremony_txt))
             if game.clan.clan_settings['affair']:
                 if random.randint(1,50) == 1:
@@ -1468,6 +1488,11 @@ class Events:
                     ceremony_txt = random.choice(self.c_txt['affair_events'])
                     self.cat_dict["mate1"] = mate1
                     ceremony_txt = re.sub(r'(?<!\/)mate1(?!\/)', str(mate1.name), ceremony_txt)
+                    process_text_dict = self.cat_dict.copy()
+                    for abbrev in process_text_dict.keys():
+                        abbrev_cat = process_text_dict[abbrev]
+                        process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+                    ceremony_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), ceremony_txt)
                     game.cur_events_list.insert(1, Single_Event(ceremony_txt))
         if random.randint(1,30) == 1:
             if (len(game.clan.your_cat.mate) > 0 and game.clan.clan_settings['affair']) or (len(game.clan.your_cat.mate) == 0):
@@ -1487,7 +1512,13 @@ class Events:
                 ceremony_txt = random.choice(self.c_txt['crush_events'])
                 self.cat_dict["crush1"] = c
                 ceremony_txt = re.sub(r'(?<!\/)crush1(?!\/)', str(c.name), ceremony_txt)
+                process_text_dict = self.cat_dict.copy()
+                for abbrev in process_text_dict.keys():
+                    abbrev_cat = process_text_dict[abbrev]
+                    process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+                ceremony_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), ceremony_txt)
                 game.cur_events_list.insert(1, Single_Event(ceremony_txt))
+                
                 
     def check_retire(self):
         if 'retire' in game.switches:
@@ -1543,6 +1574,11 @@ class Events:
             r_clanmate.update_df_mentor()
             self.cat_dict["c_m"] = r_clanmate
             evt_txt = re.sub(r'(?<!\/)c_m(?!\/)', str(r_clanmate.name), evt_txt)
+            process_text_dict = self.cat_dict.copy()
+            for abbrev in process_text_dict.keys():
+                abbrev_cat = process_text_dict[abbrev]
+                process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+            evt_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), evt_txt)
             evt = Single_Event(evt_txt)
             if evt not in game.cur_events_list:
                 game.cur_events_list.append(evt)
@@ -1559,7 +1595,7 @@ class Events:
                 dispute_type = random.choice(
                     ["hunting", "border", "personal", "herb-gathering"])
                 text = f"{cat.name} travels to {clan} to " \
-                       f"resolve some recent {dispute_type} disputes. "
+                    f"resolve some recent {dispute_type} disputes. "
                 if increase > 4:
                     text += f"The meeting goes better than expected, and " \
                             f"{cat.name} returns with a plan to solve the " \
