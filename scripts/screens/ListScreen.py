@@ -479,12 +479,21 @@ class ListScreen(Screens):
                     self.update_cat_list(self.cat_list_bar_elements["search_bar_entry"].get_text())
 
     def get_sc_cats(self):
-        self.current_group = 'sc'
-        self.death_status = 'dead'
+        """
+        grabs starclan cats
+        """
+        self.current_group = "sc"
+        self.death_status = "dead"
         self.full_cat_list = []
         for the_cat in Cat.all_cats_list:
-            if the_cat.dead and the_cat.ID != game.clan.instructor.ID and not the_cat.outside and not the_cat.df and \
-                    not the_cat.faded:
+            if (
+                    the_cat.dead
+                    and the_cat.ID != game.clan.instructor.ID
+                    and the_cat.ID != game.clan.demon.ID
+                    and not the_cat.outside
+                    and not the_cat.df
+                    and not the_cat.faded
+            ):
                 self.full_cat_list.append(the_cat)
 
     def get_df_cats(self):
@@ -493,7 +502,7 @@ class ListScreen(Screens):
         self.full_cat_list = []
 
         for the_cat in Cat.all_cats_list:
-            if the_cat.dead and the_cat.ID != game.clan.instructor.ID and the_cat.df and \
+            if the_cat.dead and the_cat.ID != game.clan.demon.ID and the_cat.ID != game.clan.instructor.ID and the_cat.df and \
                     not the_cat.faded:
                 self.full_cat_list.append(the_cat)
 
@@ -647,11 +656,11 @@ class ListScreen(Screens):
                 self.full_cat_list.append(the_cat)
 
                 # update_sprite(cat)
-                if game.clan.clan_settings["show fav"] and cat.favourite != 0:
+                if game.clan.clan_settings["show fav"] and the_cat.favourite != 0:
 
                     _temp = pygame.transform.scale(
                         pygame.image.load(
-                            f"resources/images/fav_marker_{cat.favourite}.png").convert_alpha(),
+                            f"resources/images/fav_marker_{the_cat.favourite}.png").convert_alpha(),
                         (100, 100))
                     
     def get_cotc_cats(self):
@@ -665,51 +674,3 @@ class ListScreen(Screens):
             if not the_cat.dead and the_cat.outside and not the_cat.driven_out:
                 self.full_cat_list.append(the_cat)
 
-    def get_sc_cats(self):
-        """
-        grabs starclan cats
-        """
-        self.current_group = "sc"
-        self.death_status = "dead"
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if (
-                    the_cat.dead
-                    and the_cat.ID != game.clan.instructor.ID
-                    and not the_cat.outside
-                    and not the_cat.df
-                    and not the_cat.faded
-            ):
-                self.full_cat_list.append(the_cat)
-
-    def get_df_cats(self):
-        """
-        grabs dark forest cats
-        """
-        self.current_group = "df"
-        self.death_status = "dead"
-        self.full_cat_list = []
-
-        for the_cat in Cat.all_cats_list:
-            if (
-                    the_cat.dead
-                    and the_cat.ID != game.clan.instructor.ID
-                    and the_cat.df
-                    and not the_cat.faded
-            ):
-                self.full_cat_list.append(the_cat)
-
-    def get_ur_cats(self):
-        """
-        grabs unknown residence cats
-        """
-        self.current_group = "ur"
-        self.death_status = "dead"
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if (
-                    the_cat.ID in game.clan.unknown_cats
-                    and not the_cat.faded
-                    and not the_cat.driven_out
-            ):
-                self.full_cat_list.append(the_cat)

@@ -704,7 +704,7 @@ class History:
                 cat.get_injured("guilt")
 
             for app in cat.apprentice:
-                fetched_cat = Cat.fetch_cat(app)
+                fetched_cat = cat_class.fetch_cat(app)
                 if fetched_cat:
                     fetched_cat.update_mentor()
                 cat.update_mentor()

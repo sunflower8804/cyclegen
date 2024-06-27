@@ -1,7 +1,7 @@
 import logging
 import os
 from math import floor
-from random import choice
+from random import choice, randint
 
 import ujson
 
@@ -254,7 +254,7 @@ def json_load():
             new_cat.did_activity = cat["did_activity"] if "did_activity" in cat else False
             new_cat.df_mentor = cat["df_mentor"] if "df_mentor" in cat else None
             new_cat.df_apprentices = cat["df_apprentices"] if "df_apprentices" in cat else []
-            new_cat.faith = cat["faith"] if "faith" in cat else random.randint(-3,3)
+            new_cat.faith = cat["faith"] if "faith" in cat else randint(-3,3)
             new_cat.connected_dialogue = cat["connected_dialogue"] if "connected_dialogue" in cat else {}
             if "died_by" in cat or "scar_event" in cat or "mentor_influence" in cat:
                 new_cat.convert_history(
