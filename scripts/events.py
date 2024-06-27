@@ -1265,6 +1265,12 @@ class Events:
             if game.clan.your_cat.mentor:
                 ceremony_txt = re.sub(r'(?<!\/)m_n(?!\/)', str(Cat.all_cats[game.clan.your_cat.mentor].name), ceremony_txt)
                 self.cat_dict["m_n"] = Cat.all_cats[game.clan.your_cat.mentor]
+
+            process_text_dict = self.cat_dict.copy()
+            for abbrev in process_text_dict.keys():
+                abbrev_cat = process_text_dict[abbrev]
+                process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+            ceremony_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), ceremony_txt)
             
             game.cur_events_list.append(Single_Event(ceremony_txt))
         except:
