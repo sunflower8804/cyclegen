@@ -2396,7 +2396,7 @@ class ProfileScreen(Screens):
             name = UITextBoxTweaked(
                 con[0],
                 scale(pygame.Rect((x_pos, 26), (272, -1))),
-                line_spacing=.90,
+                line_spacing=1,
                 object_id="#text_box_30_horizcenter",
                 container=self.condition_container, manager=MANAGER)
 
