@@ -1573,6 +1573,7 @@ class Events:
             r_clanmate.faith -= 1
             r_clanmate.update_df_mentor()
             self.cat_dict["c_m"] = r_clanmate
+            evt_txt = random.choice(self.df_txt["clanmate"])
             evt_txt = re.sub(r'(?<!\/)c_m(?!\/)', str(r_clanmate.name), evt_txt)
             process_text_dict = self.cat_dict.copy()
             for abbrev in process_text_dict.keys():
