@@ -25,7 +25,8 @@ from scripts.utility import (
     find_special_list_types,
     filter_relationship_type,
     get_special_snippet_list,
-    get_alive_cats
+    get_alive_cats,
+    get_alive_status_cats
 )
 from scripts.game_structure.game_essentials import game
 from itertools import combinations
