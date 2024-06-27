@@ -423,7 +423,7 @@ def create_new_cat_block(
             if status is None and age is None:
                 mean = (3 + 145) / 2 
                 stddev = (145 - 3) / 6 
-                age = int(random.gauss(mean, stddev))
+                age = int(gauss(mean, stddev))
                 age = max(3, min(145, age))
             
             if age:
