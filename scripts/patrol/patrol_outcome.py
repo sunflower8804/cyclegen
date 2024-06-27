@@ -3,7 +3,7 @@
 import random
 import re
 from os.path import exists as path_exists
-from random import choice, choices
+from random import choice, choices, gauss
 from typing import List, Dict, Union, TYPE_CHECKING
 
 import pygame

@@ -191,8 +191,6 @@ class MakeClanScreen(Screens):
             object_id="#main_menu_button",
             manager=MANAGER,
         )
-        self.main_menu = UIImageButton(scale(pygame.Rect((100, 100), (306, 60))), "", object_id="#main_menu_button"
-                                       , manager=MANAGER)
         create_example_cats()
         self.open_name_clan()
 

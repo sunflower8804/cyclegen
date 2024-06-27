@@ -7,7 +7,7 @@ from scripts.utility import scale
 
 from .Screens import Screens
 
-from scripts.utility import generate_sprite, get_cluster, pronoun_repl, get_alive_cats
+from scripts.utility import generate_sprite, get_cluster, pronoun_repl, get_alive_cats, get_alive_status_cats
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from scripts.game_structure.ui_elements import IDImageButton, UIImageButton, UISpriteButton

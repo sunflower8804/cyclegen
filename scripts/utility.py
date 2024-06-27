@@ -9,7 +9,7 @@ TODO: Docs
 import logging
 import re
 from itertools import combinations
-from random import choice, choices, randint, random, sample, randrange
+from random import choice, choices, randint, random, sample, randrange, gauss
 from sys import exit as sys_exit
 from typing import List
 
