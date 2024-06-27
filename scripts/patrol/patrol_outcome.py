@@ -1231,6 +1231,7 @@ class PatrolOutcome:
 
         chosen_acc = choice(acc_list)
         if chosen_acc not in cat.pelt.inventory:
+            cat.pelt.inventory.append(chosen_acc)
             cat.pelt.accessories.append(chosen_acc)
 
         return chosen_acc
