@@ -443,20 +443,22 @@ class Events:
 
         # Handle lost focus for focuses that have set duration
         if game.clan.focus and dialogue_focuses[game.clan.focus]["duration"] != -1 and game.clan.focus_moons >= dialogue_focuses[game.clan.focus]["duration"]:
+            game.cur_events_list.append(Single_Event(self.adjust_txt(random.choice(dialogue_focuses[game.clan.focus]["focus_loss"])), "misc"))
             game.clan.focus = ""
             game.clan.focus_moons = 0
-            game.cur_events_list.append(Single_Event(self.adjust_txt(random.choice(dialogue_focuses[game.clan.focus]["focus_loss"])), "misc"))
-
+            
         if not game.clan.focus:
             if game.clan.war.get("at_war", True):
                 game.clan.focus = "war"
             elif game.clan.freshkill_pile.total_amount < game.clan.freshkill_pile.amount_food_needed()*0.5:
                 game.clan.focus = "starving"
-            elif random.randint(1,30) == 1:
-                possible_focuses = ["valentines"]
+            elif random.randint(1,1) == 1:
+                possible_focuses = ["valentines", "hailstorm"]
                 if not game.clan.leader.dead and not game.clan.leader.outside and game.clan.leader.ID != game.clan.your_cat.ID:
                     possible_focuses.append("leader")
-                game.clan.focus = random.choice(possible_focuses)
+                focus_chosen = random.choice(possible_focuses)
+                if dialogue_focuses[focus_chosen]["season"] != "Any" and dialogue_focuses[focus_chosen]["season"] == game.clan.current_season:
+                    game.clan.focus = focus_chosen
 
         if game.clan.focus:
             game.clan.focus_moons += 1
