@@ -111,19 +111,6 @@
             "[For such a young cat, t_c sure doesn't mince words ...]"
         ]
     ],
-    "brooding_mediatorapp_2": [
-        [
-            "brooding",
-            "any",
-            "platonic_like"
-        ],
-        [
-            "What is it, y_c? I was just about to leave with tm_n on a visit to c_nClan ...",
-            "You're upset with somecat?",
-            "[t_c casts a glance at {PRONOUN/t_c/poss} mentor over {PRONOUN/t_c/poss} shoulder, then turns back to you with a rare smile.]",
-            "It's okay. tm_n can wait. Now, tell me what's wrong."
-        ]
-    ],
     "brooding_mediatorapp_3": [
         [
             "brooding",
@@ -331,23 +318,6 @@
             "When you grow up, you won't cause any problems for me, right y_c?"
         ]
     ],
-    "introspective_MdtorApp_2": [
-        [
-            "any",
-            "introspective"
-        ],
-        [
-            "[t_c is sitting in the corner of camp, staring off into space]",
-            "...",
-            "y_c...? How long have you been there for?",
-            "What's wrong? It's nothing. Really.",
-            "I'm just working through some advice my mentor gave to me earlier. It... makes sense in concept, I'm just having difficulty really wrapping my mind around it.",
-            "Huh? Oh, they told me that, in order for me to be able to help cats get along, I need to taste my own medicine and try to get along with people too.",
-            "I didn't think that I really... didn't get along with other cats. I care about the other cats in the Clan! It's my job!",
-            "... You think that's my problem? That I view others as people to help, rather than as friends? Is that what my mentor meant?",
-            "I never thought about that. I'll have to try getting to know other cats, try and make some friends. Thank you for your thoughts, y_c."
-        ]
-    ],
     "introspective_MdtorApp_5": [
         [
             "any",
@@ -360,20 +330,6 @@
             "'The more I hear, the more I know. The more I know, the further I go.' If I'm making a phrase about it.",
             "That's advice I can give to you, no matter what. You'll only know if you try it, y_c.",
             "Unless it's breaking the warrior code. Please don't do that."
-        ]
-    ],
-    "introspective_MdtorApp_3": [
-        [
-            "any",
-            "introspective"
-        ],
-        [
-            "[t_c is pacing back and forth near the camp entrance.]",
-            "... Huh? Oh hi there. Sorry, I'll get out of the way.",
-            "... No, no. I'm okay. Just preparing to go to o_cClan. My mentor asked me to go discuss with their mediator about an agreement we've been having about borders.",
-            "I know they sent me, because they know I'm completely capable, and o_cClan is mostly willing to cooperate in this manner, but I'm still worried about it.",
-            "I just need to do it. I need to go do my job as a mediator, and go solve this problem. Take the sparrow by the wings, so to speak.",
-            "Standing here wearing my paws into the floor is only giving me sore paw pads and a future trip to the medicine den. I'll see you later, y_c."
         ]
     ],
     "introspective_MdtorApp_4": [
@@ -989,24 +945,6 @@
             "Today's been super peaceful, so I've decided to bring you guys something to eat and take care of your ticks!",
             "Hope you all don't mind!",
             "[You feel like this is the only time you've seen an apprentice that was /thrilled/ to take care of you. It was a pretty nice feeling.]"
-        ]
-    ],
-    "neurotic_app4": [
-        [
-            "no_kit",
-            "neurotic",
-            "upstanding"
-        ],
-        [
-            "Gah, stupid, stupid, so stupid, t_c ...",
-            "Wuh - y_c? How long have you been standing there?",
-            "Why was I talking to myself ...?",
-            "*Sigh* It's, like, the dumbest thing ever. t_mn gave me this surprise assessment today, and I totally flunked it!",
-            "How could I have answered that the fastest way to o_cClan is by swimming up to the border? It doesn't even make any sense!",
-            "I just know that t_mn is still laughing at me ... the whole Clan probably is.",
-            "[You tell t_c not to be so hard on {PRONOUN/t_c/self}.]",
-            "But, if I'm not hard on myself, then how will I ever become stronger?",
-            "I refuse to be an embarrassment to my Clan and mentor. I'll pass that assessment next time ... Whatever it takes!"
         ]
     ]
 }
