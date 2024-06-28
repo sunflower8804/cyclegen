@@ -100,9 +100,9 @@ class TalkScreen(Screens):
                                         object_id="#back_button", manager=MANAGER)
         self.scroll_container = pygame_gui.elements.UIScrollingContainer(scale(pygame.Rect((500, 970), (900, 300))))
         self.text = pygame_gui.elements.UITextBox("",
-                                                  scale(pygame.Rect((0, 0), (900, -100))),
-                                                  object_id="#text_box_30_horizleft",
-                                                  container=self.scroll_container,
+                                                scale(pygame.Rect((0, 0), (900, -100))),
+                                                object_id="#text_box_30_horizleft",
+                                                container=self.scroll_container,
                                                 manager=MANAGER)
 
         self.textbox_graphic = pygame_gui.elements.UIImage(
@@ -818,7 +818,7 @@ class TalkScreen(Screens):
                         if you.parent2 == cat.ID:
                             fam = True
                 if "adopted_parent" in tags or "from adopted_parent" in tags or "from_adopted_parent" in tags:
-                    if cat.ID in you.inheritance.get_adoptive_parents():
+                    if cat.ID in you.inheritance.get_no_blood_parents():
                         fam = True
                 if "from_kit" in tags or "from_your_kit" in tags:
                     if cat.ID in you.inheritance.get_blood_kits():
