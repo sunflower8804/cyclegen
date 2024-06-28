@@ -17833,5 +17833,15 @@
             "[t_c moves their paw, revealing their injury. It's minor, but bound to raise questions.]",
             "I... I'm really not up for trying to explain this."
         ]
+    ],
+    "halfsib_Guy1": [
+        [
+            "any",
+            "half sibling"
+        ],
+        [
+            "I don't know why y_p says we're half siblings.",
+            "You feel like a full {PRONOUN/y_c/sibling} to me!"
+        ]
     ]
 }

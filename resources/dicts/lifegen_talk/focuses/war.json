@@ -29,5 +29,146 @@
             "[t_c sits down with a sigh, looking almost alive under the moon's glow.]",
             "Remember when the biggest worry was just a border skirmish? Seems like moons ago."
         ]
+    ],
+    "war_kitten_H1": [
+        [
+            "focus",
+            "they_kitten",
+            "healer",
+            "you_warrior",
+            "you_injured"
+        ],
+        [
+            "[t_c's eyes hold an unnerving understanding as you limp around camp.]",
+            "You are injured. Why hasn't r_m treated you yet?",
+            "{VERB/r_m/Are/Is} {PRONOUN/r_m/subject} busy? That's fine. I'm not a medicine cat, but I can help!"
+        ]
+    ],
+    "war_app_H1": [
+        [
+            "focus",
+            "they_apprentice",
+            "you_any",
+            "trust",
+            "comfort",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Does war really mean anything? This just seems petty, but tm_n keeps telling me it's a lesson to be learned.",
+            "If it was true... I wish the lessons were less bloody and painful.",
+            "I'm sorry to bother you with my thoughts, y_c. I just needed to speak to someone that wasn't a puddle or tm_n. {PRONOUN/tm_n/subject/CAP} {VERB/tm_n/hover/hovers}, and now it makes me uncomfortable beyond belief.",
+            "It would take a long time before I would be comfortable with some cat standing behind me."
+        ]
+    ],
+    "war_kitten_H2": [
+        [
+            "focus",
+            "they_kitten",
+            "you_any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "No one is telling me anything! I know something bad is happening, I just know it."
+        ]
+    ],
+    "war_queen_H1": [
+        [
+            "focus",
+            "they_queen",
+            "you_any",
+            "clan_has_kits"
+        ],
+        [
+            "[t_c looks tired, yet {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} up and about watching over the kits.]",
+            "War is so unpredictable. I need to watch over them, I need to.",
+            "I always feel like the moment I turn away, something is going to happen.",
+            "It <i>feels</i> irrational but... is it, really?"
+        ]
+    ],
+    "war_kitten_H3": [
+        [
+            "focus",
+            "they_kitten",
+            "you_any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You find t_c mumbling to {PRONOUN/t_c/self} in the nursery.]",
+            "This is not scary, not at all! Every cat is going to come back safe...",
+            "Breathe in and out, in and out, like r_q says."
+        ]
+    ],
+    "war_kitten_H4": [
+        [
+            "focus",
+            "they_kitten",
+            "you_any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Why can't l_n just call off the war? Why is it taking so long to stop it?",
+            "No... It feels unfair. r_d says we should be talking about our feelings instead of fighting about it!",
+            "That's what w_cClan and c_nClan are doing, right? Fighting about something?"
+        ]
+    ],
+    "war_kitten_H5": [
+        [
+            "focus",
+            "they_kitten",
+            "you_any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I am going to be as big and strong as r_w! So I can help!"
+        ]
+    ],
+
+    "war_pregnant_AJ": [
+        [
+            "focus",
+            "they_pregnant",
+            "no_kit"
+        ],
+        [
+            "I'm excited for my kits to be born, I really am, but ...",
+	"[t_c casts a worried glance towards w_cClan camp.]",
+	"I can't help but worry what will become of them."
+        ]
+    ],
+
+    "war_silly_AJ": [
+        [
+            "focus",
+"no_kit",
+            "silly",
+            "they_blind"
+        ],
+        [
+            "[t_c is fruitlessly trying to make the warriors laugh.]",
+	"C'mon, guys! Hey, how about this one? A w_cClan cat walks into a creek ...",
+	"[One of the warriors tosses a stick at {PRONOUN/t_c/object}, snapping at {PRONOUN/t_c/object} to give it a rest.]",
+	"[It seems like no one in c_nClan is in much of a laughing mood. Defeated, t_c slinks back to {PRONOUN/t_c/poss} nest.]"
+        ]
+    ],
+
+    "war_silly_AJ1": [
+        [
+            "focus",
+"no_kit",
+            "silly",
+	"unabashed",
+	"assertive",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Psh, w_cClan isn't so scary.",
+	"Try dealing with brooding_t_l when the last of {PRONOUN/brooding_t_l/poss} favorite prey is stolen from the pile. Now <i>that's</i> scary."
+        ]
     ]
 }

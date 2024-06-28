@@ -1246,6 +1246,15 @@ class TalkScreen(Screens):
                             continue
                         if tag.startswith(f"min_{v}_"):
                             continue
+            
+            if game.clan.focus and game.clan.focus == "leader" and "focus" in tags:
+                leader_id = game.clan.leader.ID
+                if leader_id not in cat.relationships or cat.ID == leader_id:
+                    continue
+                if talk_key.startswith("good_opinion") and cat.relationships[leader_id].platonic_like < 30:
+                    continue
+                elif talk_key.startswith("bad_opinion") and cat.relationships[leader_id].dislike < 30:
+                    continue
 
             # dead moons tags!
             if you.dead or cat.dead:
