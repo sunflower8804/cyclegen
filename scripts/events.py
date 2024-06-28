@@ -452,12 +452,12 @@ class Events:
                 game.clan.focus = "war"
             elif game.clan.freshkill_pile.total_amount < game.clan.freshkill_pile.amount_food_needed()*0.5:
                 game.clan.focus = "starving"
-            elif random.randint(1,1) == 1:
+            elif random.randint(1,30) == 1:
                 possible_focuses = ["valentines", "hailstorm"]
                 if not game.clan.leader.dead and not game.clan.leader.outside and game.clan.leader.ID != game.clan.your_cat.ID:
                     possible_focuses.append("leader")
                 focus_chosen = random.choice(possible_focuses)
-                if dialogue_focuses[focus_chosen]["season"] != "Any" and dialogue_focuses[focus_chosen]["season"] == game.clan.current_season:
+                if dialogue_focuses[focus_chosen]["season"] == "Any" or dialogue_focuses[focus_chosen]["season"] == game.clan.current_season:
                     game.clan.focus = focus_chosen
 
         if game.clan.focus:
