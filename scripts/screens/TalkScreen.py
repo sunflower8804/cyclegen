@@ -182,7 +182,7 @@ class TalkScreen(Screens):
                 else:
                     platform_dir = "resources/images/starclanbg.png"
             elif self.the_cat.dead and not self.the_cat.outside and self.the_cat.df:
-                platform_dir = "resources/images/darkforestbg.png"
+                platform_dir = "resources/images/df camp ecpilse.png"
             else:
                 platform_dir = f'{camp_bg_base_dir}/{biome}/{leaf}_{camp_nr}_{light_dark}.png'
             all_backgrounds.append(platform_dir)
