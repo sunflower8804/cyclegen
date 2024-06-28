@@ -112,9 +112,9 @@ class TalkScreen(Screens):
         # self.textbox_graphic.hide()
 
         self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((70, 900), (400, 400))),
-                                                                         pygame.transform.scale(
-                                                                             generate_sprite(self.the_cat),
-                                                                             (400, 400)), manager=MANAGER)
+                                                                        pygame.transform.scale(
+                                                                            generate_sprite(self.the_cat),
+                                                                            (400, 400)), manager=MANAGER)
         self.paw = pygame_gui.elements.UIImage(
                 scale(pygame.Rect((1370, 1180), (30, 30))),
                 image_cache.load_image("resources/images/cursor.png").convert_alpha()
