@@ -155,7 +155,11 @@ class Sprites():
 
             "moipa",
 
-            "moipa2"
+            "moipa2",
+
+            "eggs",
+
+            "pumpkinbatharness"
 
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
@@ -584,6 +588,14 @@ class Sprites():
         for a, i in enumerate([
             "JAYFEATHER", "EAGLEFEATHER"]):
             self.make_group('moipa2', (a, 1), f'acc_wild{i}')
+
+        for a, i in enumerate([
+            "EGG"]):
+            self.make_group('eggs', (a, 0), f'acc_wild{i}')
+
+        for a, i in enumerate([
+            "BATHARNESS"]):
+            self.make_group('pumpkinbatharness', (a, 0), f'acc_crafted{i}')
         
 # CREATE INSTANCE
 sprites = Sprites()
