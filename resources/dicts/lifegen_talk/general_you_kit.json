@@ -19,8 +19,8 @@
         ],
         [
             "Aw. hello there, little one.",
-            "How did you get so far away from the nursery? Where's your parent?",
-            "Hm... You need to go back there, they will be worrying about you."
+            "How did you get so far away from the nursery? Where's your {PRONOUN/t_p/parent}?",
+            "Hm... You need to go back there, {PRONOUN/t_p/subject} will be worrying about you."
         ]
     ],
     "sweet_6": [
