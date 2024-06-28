@@ -1651,7 +1651,7 @@
         ]
     },
     {
-        "patrol_id": "littertest",
+        "patrol_id": "life_df_RBribe",
         "biome": [
             "Any"
         ],
@@ -1671,30 +1671,100 @@
         "min_max_status": {
             "normal adult": [1, 6]
         },
-        "weight": 10,
-        "intro_text": "You have goop kittens.",
-        "decline_text": "aw",
-        "chance_of_success": 50,
+        "weight": 50,
+        "intro_text": "You slip into the dark depths of the forest alone. Training can wait - you have more important matters to attend to tonight. A single pair of eyes flash ahead in the darkness, affixed on you.",
+        "decline_text": "Thinking back, this is a bad idea. You turn tail and return to training.",
+        "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "Say hello to your goop children!",
+                "text": "You surge forward to greet your secret mate. They purr out a greeting, and call out to someone in the darkness. Oh! Your kits! You greet each of them with a purr loud as thunder. Before you know it, it's time to say good-bye to your family, and you wake in your nest with a bitter-sweet ache in your chest.",
                 "exp": 15,
-                "weight": 20,
+                "weight": 10,
                 "new_cat": [
                     ["newdfcat", "age:mate_with_kits", "mate:p_l"],
                     ["newdfcat", "your_litter", "parent:0", "status:kitten", "backstory:dfkit1"]
+                ]
+            },
+            {
+                "text": "You don't hesitate. You've met this cat before, emotions having blossomed into something more between you as you spent more and more nights within this place. Yet... There is still time. Still time to decide whether or not you should take the leap. Your heart is heavy as you part ways with a final twine of tails - before dispersing into the darkness once again alone.",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "The darkness shifts ahead - revealing a beloved form. The spirit surges forward with a trill of happiness to meet with you again. Should anyone know of your foolish feelings they would surely belittle you both. For now though, sheltered in the murk of this forest, you can be together until you awaken.",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "You surge forward to greet your secret mate, but they don't reciprocate. It's time to part ways despite your aching hearts. They whisk your confused kits forward and you choke out a goodbye as your love walks away with a hanging head. You need to get the little ones into a warm nest now. Now the question is, what to tell your clanmates?",
+                "exp": 15,
+                "weight": 5,
+                "new_cat": [
+                    ["newdfcat", "age:mate_with_kits", "mate:p_l"],
+                    ["your_litter", "parent:0", "status:kitten", "backstory:dfkit2"]
+                ]
+            },
+            {
+                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the dark forest before they surge forward to bunt heads with a purr. Perhaps it isn't meant to be in the waking world... but in this place it is true and real to both of you.",
+                "exp": 15,
+                "weight": 5,
+                "new_cat": [
+                    ["meeting", "age:mate", "mate:p_l", "backstory:ostracized_warrior"]
+                ]
+            },
+            {
+                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the dark forest before they surge forward to bunt heads with a purr. Perhaps it could never be in the waking world... but in this place it is true and real to both of you whilst you sleep.",
+                "exp": 15,
+                "weight": 5,
+                "new_cat": [
+                    ["newdfcat", "age:mate", "mate:p_l"]
                 ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Say hello to your goop children! They're coming home with you!",
+                "text": "You stop and hesitate before finding your resolve. The cat before you does not hold your heart as you hoped, and you inform them. They seem... relieved. It seems both of you had wanted to end things this evening. With that out of the way you both decide to remain friends.",
+                "exp": 0,
+                "weight": 10
+            },
+            {
+                "text": "Ambush! You're forced to fight off two cats a once. It's a whirlwind of blood, fur, claws, and teeth, but somehow you escape with your life.",
                 "exp": 0,
                 "weight": 20,
-                "new_cat": [
-                    ["newdfcat", "age:mate_with_kits", "mate:p_l"],
-                    ["your_litter", "parent:0", "status:kitten", "backstory:dfkit2"]
-                ]
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["battle_injury"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was scarred by a Dark Forest warrior."
+                }
+            },
+            {
+                "text": "That isn't who it should be. Before any cat can attack you, you turn tail and flee. Not today, Dark Forest warriors!",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Ambush! The odds aren't in your favor but that doesn't stop you. It never has before. Your deadly training kicks in as you fight with fury. You escape, leaving destruction behind with a smirk.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "ambitious",
+                    "bloodthirsty",
+                    "bold",
+                    "confident",
+                    "daring",
+                    "fierce",
+                    "vengeful"
+                ],
+                "stat_skill": ["FIGHTER,1", "GUARDIAN,1", "DARK,1","CLEVER,1"]
+            },
+            {
+                "text": "Nothing but a trick of the light... There's no one there, even though there should be... ",
+                "exp": 0,
+                "weight": 20
             }
         ]
     }
