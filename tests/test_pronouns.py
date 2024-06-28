@@ -65,7 +65,6 @@ def test():
         "t_l": _r, 
         "t_m": _r, 
         "t_p": _r,
-        "r_k": _r,
         "t_a": _r,
         "parent": _r,
         "parent1": _r,
@@ -100,7 +99,7 @@ def test():
         "r_c_sc": _r,
         "a_n": _r,
         "t_q": _r,
-        "k_k": _r
+        "brooding_t_l": _r
     }
     
     for x in range(0, 11):
