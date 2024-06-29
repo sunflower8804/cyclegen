@@ -1,6 +1,6 @@
 [
     {
-        "patrol_id": "gen_your_cat70",
+        "patrol_id": "life_lead_og1",
         "biome": [
             "Any"
         ],
@@ -35,7 +35,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_X",
+        "patrol_id": "life_lead_og2",
         "biome": [
             "Any"
         ],
@@ -70,7 +70,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat71",
+        "patrol_id": "life_lead_og3",
         "biome": [
             "Any"
         ],
@@ -105,7 +105,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_X",
+        "patrol_id": "life_lead_og4",
         "biome": [
             "Any"
         ],
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat72",
+        "patrol_id": "life_lead_og5",
         "biome": [
             "Any"
         ],
@@ -175,7 +175,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat73",
+        "patrol_id": "life_lead_og6",
         "biome": [
             "Any"
         ],
@@ -210,7 +210,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat74",
+        "patrol_id": "life_lead_og7",
         "biome": [
             "Any"
         ],
@@ -276,6 +276,51 @@
         "fail_outcomes": [
             {
                 "text": "You can barely finish your sentence before the leader silences you with a hiss. They let you know very clearly that your opinion is of the least concern to the Clan right now, and you can't help but feel offended that your Clanmate would treat you this way.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_CZ1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The constant management of leading the Clan has left you exhausted, but you've promised the kits that you would visit them in the nursery and share a meal days ago, and you feel somewhat guilty for having waited so long.",
+        "decline_text": "You decide that resting in your den is more important. You won't be of any use to your Clan if you're too tired to think; you spend the evening relaxing in solitude, promising to yourself that you would visit the kits tomorrow.",
+        "chance_of_success": 70,
+        "success_outcomes": [
+            {
+                "text": "It wouldn't hurt to do one last errand. You slip into the nursery with a mouse held in your jaws, only to find that all of the kits are asleep. So, you instead share the mouse with one of the queens and have a lovely and insightful conversation with them.",
+                "exp": 10,
+                "weight": 20
+            },
+            {
+                "text": "The kits are energetic, but not overwhelming. As you share a thrush with them, you answer all of their questions and delight in their bright-eyed curiosity. You leave feeling happy and reinvigorated for your work to continue tomorrow.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "As soon as you enter the nursery, you're swarmed by hyperactive kits and a constant stream of questions. You do your best to hold conversation with them, but the queens recognize your fatigue and usher the kits aside, allowing you to escape to the peace and quiet of your den.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You do your best to concentrate on your conversation with the Clan's young ones, but even the kits can tell that you're beginning to nod off halfway through the conversation. None of your Clanmates blame you for excusing yourself early, but you feel guilt begin to writhe in your chest as you make your way out.",
                 "exp": 0,
                 "weight": 20
             }
