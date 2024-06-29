@@ -99,9 +99,41 @@ def test():
         "r_c_sc": _r,
         "a_n": _r,
         "t_q": _r,
-        "brooding_t_l": _r
+        "brooding_t_l": _r,
     }
     
+    cluster_addons = [
+        "_upstanding",
+        "_brooding",
+        "_sweet",
+        "_cool",
+        "_unlawful",
+        "_silly",
+        "_neurotic",
+        "_introspective"
+    ]
+
+    rel_addons = [
+        "plike_",
+        "plove_",
+        "rlike_",
+        "rlove_",
+        "dislike_",
+        "hate_",
+        "neutral_",
+        "trust_",
+        "comfort_",
+        "respect_"
+    ]
+    
+    for abbrev in list(replacement_dict.keys()):
+        for r in rel_addons:
+            for x in cluster_addons:
+                replacement_dict[f"{r}{abbrev}{x}"] = _r
+                replacement_dict[f"{abbrev}{x}"] = _r
+                replacement_dict[f"{r}{abbrev}"] = _r
+
+
     for x in range(0, 11):
         replacement_dict[f"n_c:{x}"] = _r
     
