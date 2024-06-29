@@ -78,7 +78,7 @@
         ],
         "intro": [
             "I bet the first pick of the freshkill pile that you'll have three kits!",
-            "r_c thinks there'll be five though. Hehe, what do you think?"
+            "plike_r_c thinks there'll be five though. Hehe, what do you think?"
         ],
         "intro_choices": {
             "choice1": {
@@ -86,7 +86,7 @@
                 "next_scene": "agree_tc"
             },
             "choice2": {
-                "text": "[Agree with r_c]",
+                "text": "[Agree with plike_r_c]",
                 "next_scene": "agree_rc"
             },
             "choice3": {
@@ -335,7 +335,7 @@
             "they_younger"
         ],
         "intro": [
-            "Listen, I'm not the type of cat who likes to rake up old bones, but r_w totally cheated on {PRONOUN/r_w/poss} warrior assessment!"
+            "Listen, I'm not the type of cat who likes to rake up old bones, but dislike_r_w totally cheated on {PRONOUN/dislike_r_w/poss} warrior assessment!"
         ],
         "intro_choices": {
             "choice1": {
@@ -352,16 +352,16 @@
             }
         },
         "how_do_you_know": [
-            "Just call it a hunch. That assessment isn't easy, there's no way {PRONOUN/r_w/subject} could've passed legitimately.",
-            "Even six-moon-old apprentices are more qualified than {PRONOUN/r_w/subject} {VERB/r_w/are/is}!"
+            "Just call it a hunch. That assessment isn't easy, there's no way {PRONOUN/dislike_r_w/subject} could've passed legitimately.",
+            "Even six-moon-old apprentices are more qualified than {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/are/is}!"
         ],
         "no_way": [
             "Fine, whatever, keep living in ignorance. I'm just trying to state the facts."
         ],
         "i_agree": [
-            "Right?! How do you think {PRONOUN/r_w/subject} did it, because I have a few theories.",
-            "I think {PRONOUN/r_w/subject} somehow convinced d_n to give {PRONOUN/r_w/object} a way easier assessment than usual. Or, maybe {PRONOUN/r_w/subject} stole a bunch of prey from the freshkill pile and pretended it was {PRONOUN/r_w/poss}.",
-            "Whatever the case, I know what {PRONOUN/r_w/subject} {VERB/r_w/are/is} ... Glad to know you do, too."
+            "Right?! How do you think {PRONOUN/dislike_r_w/subject} did it, because I have a few theories.",
+            "I think {PRONOUN/dislike_r_w/subject} somehow convinced d_n to give {PRONOUN/dislike_r_w/object} a way easier assessment than usual. Or, maybe {PRONOUN/dislike_r_w/subject} stole a bunch of prey from the freshkill pile and pretended it was {PRONOUN/dislike_r_w/poss}.",
+            "Whatever the case, I know exactly what type of cat {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/are/is} ... Glad to know you do, too."
         ]
     },
     "assertive_gensib1": {
@@ -374,18 +374,18 @@
             "platonic_love"
         ],
         "intro": [
-            "*Sigh* I feel like t_s is upset about something, but {PRONOUN/t_s/subject} won't tell me what it is. Is there something I'm missing?",
-            "I've been looking out for {PRONOUN/t_s/object} my whole life. I know it's not my job, but I just can't help myself. ",
+            "*Sigh* I feel like plove_t_s is upset about something, but {PRONOUN/plove_t_s/subject} won't tell me what it is. Is there something I'm missing?",
+            "I've been looking out for {PRONOUN/plove_t_s/object} my whole life. I know it's not my job, but I just can't help myself. ",
             "What's the point of strength if you can't use it to protect the ones you love?",
             "I don't know ... What do you think, y_c?"
         ],
         "intro_choices": {
             "choice1": {
-                "text": "You should talk to t_s!",
+                "text": "You should talk to plove_t_s!",
                 "next_scene": "talk"
             },
             "choice2": {
-                "text": "You should give t_s some space.",
+                "text": "You should give plove_t_s some space.",
                 "next_scene": "give_space"
             },
             "choice3": {
@@ -402,9 +402,9 @@
             "[You don't know what exactly goes on, but they return to camp with their tails entwined, clearly having grown a lot closer.]"
         ],
         "give_space": [
-            "Maybe you're right. But it just kills me to know {PRONOUN/t_s/subject} might have some problem I can't fix.",
-            "I just hope {PRONOUN/t_s/subject} {VERB/t_s/know/knows} that {PRONOUN/t_s/subject} can come to me with anything.",
-            "{PRONOUN/t_s/subject} {VERB/t_s/are/is} my sibling. Nothing matters more than that."
+            "Maybe you're right. But it just kills me to know {PRONOUN/plove_t_s/subject} might have some problem I can't fix.",
+            "I just hope {PRONOUN/plove_t_s/subject} {VERB/plove_t_s/know/knows} that {PRONOUN/plove_t_s/subject} can come to me with anything.",
+            "{PRONOUN/plove_t_s/subject} {VERB/plove_t_s/are/is} my {PRONOUN/plove_t_s/sibling}. Nothing matters more than that."
         ],
         "dont_know": [
             "*Sigh* That's fair. Sorry to bother you with all this family stuff.",
@@ -467,7 +467,7 @@
         "dare": [
             "Hehehe! Alright!",
             "[With a devilish grin, t_c scrabbles up the warrior's den and careens off with a flying leap, tail helicoptering.]",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/land/lands} right on top of a pile of moss r_c had been meticulously gathering, sparking an argument.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/land/lands} right on top of a pile of moss r_c_upstanding had been meticulously gathering, sparking an argument.]",
             "[Yeesh ... Better leave the scene before you get roped into this!]"
         ],
         "refuse": [
@@ -511,7 +511,7 @@
             "Tsh. Fine, whatever.",
             "I thought you were cooler than this, but if you want to live out the rest of your life on c_nClan territory, that's good with me.",
             "[t_c stalks away, tail lashing.]",
-            "[Later that night, you see {PRONOUN/t_c/object} slip out of the camp with r_c, apparently having replaced you as a travel companion.]",
+            "[Later that night, you see {PRONOUN/t_c/object} slip out of the camp with plike_r_c, apparently having replaced you as a travel companion.]",
             "[Stupid cave system probably isn't even that cool anyways ...]"
         ]
     },
@@ -553,7 +553,7 @@
         "decline": [
             "What? You don't want to?!",
             "Hmph! Meanie! I'll go find someone else to play with, then!",
-            "[t_c sticks {PRONOUN/t_c/poss} tongue out at you for good measure before bounding off to go bother r_c for a ride.]",
+            "[t_c sticks {PRONOUN/t_c/poss} tongue out at you for good measure before bounding off to go bother plike_r_w for a ride.]",
             "[For such a small cat, {PRONOUN/t_c/subject} {VERB/t_c/are/is} certainly not lacking in attitude.]"
         ]
     },
@@ -895,8 +895,8 @@
             "cool"
         ],
         "intro": [
-            "Did you see r_c earlier today, y_c? Oh, StarClan, it was the funniest thing ever!",
-            "{PRONOUN/r_c/subject/CAP} mistook a twig for a snake and flew, like, five fox-lengths into the air! Hahahaha!"
+            "Did you see r_c_neurotic earlier today, y_c? Oh, StarClan, it was the funniest thing ever!",
+            "{PRONOUN/r_c_neurotic/subject/CAP} mistook a twig for a snake and flew, like, five fox-lengths into the air! Hahahaha!"
         ],
         "intro_choices": {
             "choice1": {
@@ -910,8 +910,8 @@
         },
         "hilarious": [
             "Hahaha, I knew you'd appreciate it!",
-            "Say, I know this place out on the territory with some huge sticks ... Think we can make {PRONOUN/r_c/object} do it again?",
-            "Maybe {PRONOUN/r_c/subject}'ll go six fox-lengths this time!"
+            "Say, I know this place out on the territory with some huge sticks ... Think we can make {PRONOUN/r_c_neurotic/object} do it again?",
+            "Maybe {PRONOUN/r_c_neurotic/subject}'ll go six fox-lengths this time!"
         ],
         "not_very_funny": [
             "No? Since when were you above that type of humor?",
@@ -1350,7 +1350,7 @@
         "ask_about_joke": [
             "Oh, hey, y_c!",
             "You wanna know what I was laughing at? Oh, StarClan, was I being that obvious? I didn't think anyone was gonna notice!",
-            "r_c told me this hilarious joke earlier, it was like - *snrk* - 'What type of plant sneaks up on you?'",
+            "plike_r_c told me this hilarious joke earlier, it was like - *snrk* - 'What type of plant sneaks up on you?'",
             "An AMBUSH! AHAHAHAHA!",
             "What, you don't think that's funny? Psh, you're no fun!"
         ],
@@ -1370,7 +1370,7 @@
         ],
         "intro": [
             "Hey, who d'ya think's gonna be deputy once d_n is leader?",
-            "I guess probably r_w ... {PRONOUN/t_c/subject}'d probably be good for the job."
+            "I guess probably r_w_upstanding ... {PRONOUN/t_c/subject}'d probably be good for the job."
         ],
         "intro_choices": {
             "choice1": {
@@ -1387,7 +1387,7 @@
             }
         },
         "agree_with_you": [
-            "Right? {PRONOUN/r_w/subject}{VERB/t_p/'re/'s} just such a great fit.",
+            "Right? {PRONOUN/r_w_upstanding/subject}{VERB/r_w_upstanding/'re/'s} just such a great fit.",
             "Kinda crazy to think that d_n's gonna be leader one day, though ... I'm not sure if I'm ready for that yet."
         ],
         "you_good_deputy": [
@@ -1600,17 +1600,17 @@
             "platonic_like"
         ],
         "intro": [
-            "Hey, do you think r_w is mad at me?",
+            "Hey, do you think plike_r_w is mad at me?",
             "[You ask t_c why {PRONOUN/t_c/subject} {VERB/t_c/think/thinks} the warrior could possibly have a problem with {PRONOUN/t_c/object}.]",
-            "Well, when {PRONOUN/r_w/subject} greeted me this morning, {PRONOUN/r_w/subject} said 'Hello' instead of 'Hi', like {PRONOUN/r_w/subject} usually {VERB/r_w/do/does}!"
+            "Well, when {PRONOUN/plike_r_w/subject} greeted me this morning, {PRONOUN/plike_r_w/subject} said 'Hello' instead of 'Hi', like {PRONOUN/plike_r_w/subject} usually {VERB/plike_r_w/do/does}!"
         ],
         "intro_choices": {
             "choice1": {
-                "text": "{PRONOUN/r_w/subject/CAP} obviously {VERB/r_w/hate/hates} you!",
+                "text": "{PRONOUN/plike_r_w/subject/CAP} obviously {VERB/plike_r_w/hate/hates} you!",
                 "next_scene": "obviously_hate_you"
             },
             "choice2": {
-                "text": "Of course {PRONOUN/r_w/subject} {VERB/r_w/don't/doesn't} hate you.",
+                "text": "Of course {PRONOUN/plike_r_w/subject} {VERB/plike_r_w/don't/doesn't} hate you.",
                 "next_scene": "dont_hate_you"
             }
         },
@@ -1634,7 +1634,7 @@
         ],
         "no_silly": [
             "Phew ... Well, that's a relief.",
-            "So, you don't think {PRONOUN/r_w/subject} {VERB/t_c/hate/hates} me?"
+            "So, you don't think {PRONOUN/plike_r_w/subject} {VERB/t_c/hate/hates} me?"
         ],
         "no_silly_choices": {
             "choice121": {
@@ -1907,7 +1907,7 @@
             "they_adult"
         ],
         "intro": [
-            "Hey, y_c, I'll give you a badger ride if you go up to r_w and call {PRONOUN/r_w/object} a huge piece of fox dung."
+            "Hey, y_c, I'll give you a badger ride if you go up to trust_r_w and call {PRONOUN/trust_r_w/object} a huge piece of fox dung."
         ],
         "intro_choices": {
             "choice1": {
@@ -1921,7 +1921,7 @@
         },
         "okay": [
             "Great! Remember, it's 'Huge piece of fox-dung.' Sound it out. Perfect! Now, go!",
-            "[You do as you're told, repeating the words to r_w as t_c dies of laughter on the other end of camp.]",
+            "[You do as you're told, repeating the words to trust_r_w as t_c dies of laughter on the other end of camp.]",
             "Ahh, that is just too good! Hehehehe!"
         ],
         "why": [
@@ -2054,7 +2054,7 @@
         "helping": [
             "Woah! See, y_c, this is why you're a cool cat.",
             "You're always going around and helping cats. That's, like, really admirable!",
-            "Last time I tried to help r_c I fell on my face."
+            "Last time I tried to help plike_r_c I fell on my face."
         ],
         "murder": [
             "Hehe. You've gotta teach me how to be so convincing sometime, y_c. I'm really glad you're kidding, though!",
@@ -2316,7 +2316,7 @@
             "Oh, my love! Good morning! How are you feeling today? Hopefully well?",
             "I actually have a question, if you wouldn't mind?",
             "Do you think I'm a little too... nice sometimes? I- I know I don't need to worry about it but...",
-            "r_w has been saying I'm a total pushover and... I suppose it got to me."
+            "r_w_assertive has been saying I'm a total pushover and... I suppose it got to me."
         ],
         "intro_choices": {
             "choice1": {
