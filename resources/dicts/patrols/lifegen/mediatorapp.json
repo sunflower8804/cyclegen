@@ -1,6 +1,6 @@
 [
     {
-        "patrol_id": "gen_your_cat55",
+        "patrol_id": "life_mediapp_og1",
         "biome": [
             "Any"
         ],
@@ -22,7 +22,7 @@
         "success_outcomes": [
             {
                 "text": "You listen to both sides and propose a fair solution. Both apprentices agree and thank you for your help. Your skills as a mediator are improving.",
-                "exp": 25,
+                "exp": 15,
                 "weight": 20
             }
         ],
@@ -35,7 +35,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat56",
+        "patrol_id": "life_mediapp_og2",
         "biome": [
             "Any"
         ],
@@ -57,7 +57,7 @@
         "success_outcomes": [
             {
                 "text": "You step in and help defuse the argument. The warriors appreciate your diplomatic approach, and the camp atmosphere returns to normal.",
-                "exp": 30,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -70,7 +70,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat57",
+        "patrol_id": "life_mediapp_og3",
         "biome": [
             "Any"
         ],
@@ -92,7 +92,7 @@
         "success_outcomes": [
             {
                 "text": "You talk to both the apprentice and the warrior separately. You help the warrior understand the apprentice's perspective, and the training becomes more balanced.",
-                "exp": 35,
+                "exp": 15,
                 "weight": 20
             }
         ],
@@ -105,7 +105,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat58",
+        "patrol_id": "life_mediapp_og4",
         "biome": [
             "Any"
         ],
@@ -127,7 +127,7 @@
         "success_outcomes": [
             {
                 "text": "You organise a story session where the elder shares their tales, and the younger cats listen intently. The elder feels appreciated, and the younger cats learn valuable lessons.",
-                "exp": 40,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat59",
+        "patrol_id": "life_mediapp_og5",
         "biome": [
             "Any"
         ],
@@ -175,7 +175,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_X",
+        "patrol_id": "life_mediapp_og6",
         "biome": [
             "Any"
         ],
@@ -210,7 +210,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_X",
+        "patrol_id": "life_mediapp_og7",
         "biome": [
             "Any"
         ],
@@ -245,7 +245,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat515",
+        "patrol_id": "life_mediapp_og8",
         "biome": [
             "Any"
         ],
