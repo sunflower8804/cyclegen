@@ -28,9 +28,9 @@
             "silly"
         ],
         [
-            "I went on a hunting patrol with r_w the other day and found THE cutest mouse I think I've ever seen. It had big, innocent eyes and it was snacking on a blackberry!",
-            "It was large, so r_w wanted to catch it for c_nClan, but I couldn't bear to see it killed.",
-            "I, ah, ended up scaring it off to save it from being caught. That... really didn't make r_w happy at all. But it was worth it! You should've seen the little thing!"
+            "I went on a hunting patrol with plike_r_w the other day and found THE cutest mouse I think I've ever seen. It had big, innocent eyes and it was snacking on a blackberry!",
+            "It was large, so plike_r_w wanted to catch it for c_nClan, but I couldn't bear to see it killed.",
+            "I, ah, ended up scaring it off to save it from being caught. That... really didn't make plike_r_w happy at all. But it was worth it! You should've seen the little thing!"
         ]
     ],
     "introspective_comf_2": [
@@ -127,9 +127,9 @@
         [
             "Hi y_c.",
             "[You notice that t_c is sitting, muscles bunched up and tail flicking irritably.]",
-            "What's wrong? Oh I got into a fight with r_c. {PRONOUN/r_c/object}{VERB/r_c/'re/'s} an utter mousebrain. {PRONOUN/r_c/subject/CAP} tried to get me to cross the Clan border after a rabbit! It's utterly ridiculous.",
-            "We can't be running across the border, there'd be no point in it being there otherwise! We need to be respectful of our borders, and I can't believe {PRONOUN/r_c/subject} {VERB/r_c/don't/doesn't} see that.",
-            "... sorry for yelling at you like that, y_c. I appreciate you listening to me. Thank you."
+            "What's wrong? Oh I got into a fight with r_w_assertive. {PRONOUN/r_w_assertive/object}{VERB/r_w_assertive/'re/'s} an utter mousebrain. {PRONOUN/r_w_assertive/subject/CAP} tried to get me to cross the Clan border after a rabbit! It's utterly ridiculous.",
+            "We can't be running across the border, there'd be no point in it being there otherwise! We need to be respectful of our borders, and I can't believe {PRONOUN/r_w_assertive/subject} {VERB/r_w_assertive/don't/doesn't} see that.",
+            "... Sorry for yelling at you like that, y_c. I appreciate you listening to me. Thank you."
         ]
     ],
     "introspective_app_3": [
@@ -1477,7 +1477,7 @@
         [
             "[As you mew out {PRONOUN/t_c/poss} name, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to jolt, startled.]",
             "Oh, hello there, y_c! I didn't see you.",
-            "I was given today off, so I'm using it to help decorate the camp with r_c. Would you like to help me?"
+            "I was given today off, so I'm using it to help decorate the camp with plike_r_c. Would you like to help me?"
         ]
     ],
     "sweet_apprentice_16": [
@@ -1514,7 +1514,7 @@
             "y_c!! Ah- erm- uh- I'm not- I'm not upset-",
             "Mmmnmnnnn- Fine, you caught me... I just... I didn't wanna worry you...",
             "See... r_c said something that I really... really don't agree with, you know? And I don't know how to tell them... every time I go to, it feels like the words die in my throat, and I wonder if I'm the one in the wrong.",
-            "... Can you help me, please? It um.. It really hurt my feelings, and I don't wanna be rude at all... but I need to tell them."
+            "... Can you help me, please? It um.. It really hurt my feelings, and I don't wanna be rude at all... but I need to tell {PRONOUN/r_c/object}."
         ]
     ],
     "sweet_apprentice_19": [
@@ -1533,7 +1533,7 @@
             "sweet"
         ],
         [
-            "y_c!! You looked so cool at the gathering!! The way you stopped the fight between the o_cClan warrior and r_c was so amazing! I wish it never had happened in the first place though...",
+            "y_c!! You looked so cool at the gathering!! The way you stopped the fight between the o_cClan warrior and r_w was so amazing! I wish it never had happened in the first place though...",
             "I know everyone was pretty spooked after what happened though... Are you feeling okay after it? I'd be happy to hunt for you if not!",
             "Oh right- I have training today- uhmmm- I'll do it for you after training!! Hehe, oops."
         ]
@@ -1643,9 +1643,9 @@
         ],
         [
             "y_c! I've been looking for you! I've been thinking all day about this... I've been begging for a cat to bounce ideas off of.",
-            "So, I think I wanna do something funny to r_c. Like a prank. {PRONOUN/r_c/subject}{VERB/t_c/'ve/'s} been having a rough time recently and I wanna do something funny to cheer {PRONOUN/r_c/object} up.",
+            "So, I think I wanna do something funny to plike_r_c. Like a prank. {PRONOUN/plike_r_c/subject}{VERB/plike_r_c/'ve/'s} been having a rough time recently and I wanna do something funny to cheer {PRONOUN/r_c/object} up.",
             "But I don't have the slightest clue what I wanna do... everything I can think of either hasn't worked or would just upset them further.",
-            "I wanted to put a frog pet in their den, since I love looking for cool frogs, but couldn't find one {PRONOUN/r_c/subject} would like.",
+            "I wanted to put a frog pet in their den, since I love looking for cool frogs, but couldn't find one {PRONOUN/plike_r_c/subject} would like.",
             "Then, I tried looking for flowers to give them, but apparently the ones I found were called foxgloves, and they're really dangerous.",
             "PLEASE tell me if you think of something! I think I've thought so hard about this I could probably consider myself a, uh... what are the thinky cats called again? I know there's a name, come on...",
             "...Like the ones who come up with really big ideas that fundamentally change how their Clan operates? Like that one cat from o_cClan? Please? It's a real thing, it's on the tip of my jaw, I swear!"
@@ -1661,8 +1661,8 @@
             "[You enter camp after an utterly boring border patrol and see this apprentice's mortifying attempt at a greeting through what seems like hysterical laughter.]",
             "y_c! HAH! You just missed- *giggle* You just missed the FUNNIEST thing I've ever seen!",
             "There was- there was a frog on the leader's den, and- hahaHAHAHA- and then it- and then it- oh my goodness, the frog- it did-",
-            "IT DID A BACKFLIP AND- It landed on r_c's HEAD!",
-            "[Indeed, r_c is all the way across the camp, refusing to look over at the apprentice laughing over {PRONOUN/r_c/poss} embarrassing stunt only a few fox-tails away. You can feel the red-hot fur on {PRONOUN/r_c/poss} pelt even from here.]"
+            "IT DID A BACKFLIP AND- It landed on r_c_upstanding's HEAD!",
+            "[Indeed, r_c_upstanding is all the way across the camp, refusing to look over at the apprentice laughing over {PRONOUN/r_c_upstanding/poss} embarrassing stunt only a few fox-tails away. You can feel the red-hot fur on {PRONOUN/r_c_upstanding/poss} pelt even from here.]"
         ]
     ],
     "silly_app_gift": [
@@ -1671,7 +1671,7 @@
             "silly"
         ],
         [
-            "y_c! I made something cool, do you think r_c would like it? I made it with a thick water reed and some rocks.",
+            "y_c! I made something cool, do you think plike_r_c would like it? I made it with a thick water reed and some rocks.",
             "It's sort of like an, uh... Like, you can tilt it, and it makes a cool noise.",
             "Here, try it. Just pick it up with your jaws and tilt your head around.",
             "[You do as t_c orders. When you tilt the reed, you hear many pebbles hitting its walls in a way that sounds like the pitter-patter of rain, then resting against the tightly-shut ends.",
@@ -1972,7 +1972,7 @@
         [
             "Hey! How's training been going for you?",
             "Good to hear! Glad to see at least one other apprentice is taking their training seriously. I mean, have you seen r_a lately? {PRONOUN/r_a/subject/CAP} always {VERB/r_a/seem/seems} to be goofing off about one thing or another.",
-            "I really feel like {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} going to fall behind in their apprenticeship if {PRONOUN/r_a/subject} {VERB/r_a/don't/doesn't} start shaping up, y'know? I'd hate for {PRONOUN/r_a/object} to have to receive {PRONOUN/r_a/poss} name late.",
+            "I really feel like {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} going to fall behind in {PRONUN/r_a/poss} apprenticeship if {PRONOUN/r_a/subject} {VERB/r_a/don't/doesn't} start shaping up, y'know? I'd hate for {PRONOUN/r_a/object} to have to receive {PRONOUN/r_a/poss} name late.",
             "Don't get involved in any of {PRONOUN/r_a/poss} antics, ok? c_nClan needs reliable cats who we can depend on."
         ]
     ],
@@ -2096,7 +2096,7 @@
             "Golly, this kind of weather is exactly what I need to be energised for the day! The heat on your back. The wind brushing through your fur.",
             "Oh and the smells, fresh air! Way better than the stuffy stench from the camp.",
             "Oh, the other apprentices are calling for me, damn- I was hoping to have more of a break. But, oh well, that's what's asked of me. That's just the way it is.",
-            "[r_a stands off the side gathered with the other apprentices. {PRONOUN/r_a/subject/CAP} {VERB/r_a/call/calls} out once more, {PRONOUN/r_a/poss} fur spiking with irritation as {PRONOUN/r_a/subject} grow impatient.]",
+            "[r_a stands off the side gathered with the other apprentices. {PRONOUN/r_a/subject/CAP} {VERB/r_a/call/calls} out once more, {PRONOUN/r_a/poss} fur spiking with irritation as {PRONOUN/r_a/subject} {VERB/r_a/grow/grows} impatient.]",
             "AH! Oh! Yes, yes! I'm coming, I'm coming!",
             "[t_c bounces to {PRONOUN/t_c/poss} paws and begins to run in the direction of the other apprentices who twitch their whiskers, their tail fur bristling.]",
             "[The young group meets your gaze and blinks before nodding, some smiling others scowling.]",
@@ -2398,8 +2398,8 @@
             "Good tidings y_c, gosh, your fur is looking glossy today, absolutely splendid, did you go for a bath recently, because you look fire!",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/beam/beams} at you, {PRONOUN/t_c/poss} ears shaking as {PRONOUN/t_c/subject} {VERB/t_c/realise/realises} you aren't buying it.]",
             "Okay look, yes, r_a did get hurt while we were out on patrol, and to be fair, that was kinda-",
-            "[r_a stares at {PRONOUN/t_c/object} coldly]",
-            "It was absolutely my fault! Could you please take a look at them and help them? I promise I'll do whatever I can to help!"
+            "[r_a stares at {PRONOUN/t_c/object} coldly.]",
+            "It was absolutely my fault! Could you please take a look at {PRONOUN/r_a/object} and help {PRONOUN/r_a/object}? I promise I'll do whatever I can to help!"
         ]
     ],
     "stable_apprentice_27": [
@@ -2408,7 +2408,7 @@
             "stable"
         ],
         [
-            "Woah, look at that... [You pad over beside t_c and sit beside them, staring up at silverpelt.]",
+            "Woah, look at that... [You pad over beside t_c and sit beside {PRONOUN/t_c/object}, staring up at silverpelt.]",
             "Wonder what's up there, I know our ancestors, but, what else? What other secrets of the past is c_nClan hiding up in the stars, behind those lights?",
             "Prophecies? Omens? Other Clans? Were we always c_nClan, or someone else long ago?",
             "This might be strange to ask, but can you tell me about the stars? I know as a medicine cat, you can read them, could you teach me? Please?"
@@ -2673,7 +2673,7 @@
         ],
         [
             "[You're just about to bite into a tasty-looking mouse when you see t_c stomping towards you, {PRONOUN/t_c/poss} pelt ruffled and {PRONOUN/t_c/poss} tail flicking irritably. What happened this time?]",
-            "y_c. I need you to tell r_a that {PRONOUN/r_a/subject} can't just leave me alone to clean out the entire elders den because {PRONOUN/r_a/subject} 'needed to fetch more moss.' {PRONOUN/r_a/subject/CAP} {VERB/t_c/were/was} in the medicine den until sunhigh!",
+            "y_c. I need you to tell r_a that {PRONOUN/r_a/subject} can't just leave me alone to clean out the entire elders' den because {PRONOUN/r_a/subject} 'needed to fetch more moss.' {PRONOUN/r_a/subject/CAP} {VERB/t_c/were/was} in the medicine den until sunhigh!",
             "[You haul yourself to your paws and stare longingly at your mouse as t_c drags you to the opposite side of the clearing.]"
         ]
     ],
