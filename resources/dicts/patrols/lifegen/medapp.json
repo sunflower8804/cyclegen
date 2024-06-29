@@ -1,6 +1,6 @@
 [
     {
-        "patrol_id": "gen_your_cat45",
+        "patrol_id": "life_medapp_og1",
         "biome": [
             "Any"
         ],
@@ -35,7 +35,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_X",
+        "patrol_id": "life_medapp_og2",
         "biome": [
             "Any"
         ],
@@ -70,7 +70,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat46",
+        "patrol_id": "life_medapp_og3",
         "biome": [
             "Any"
         ],
@@ -105,7 +105,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat47",
+        "patrol_id": "life_medapp_og4",
         "biome": [
             "Any"
         ],
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat48",
+        "patrol_id": "life_medapp_og5",
         "biome": [
             "Any"
         ],
@@ -175,7 +175,7 @@
         ]
     },
     {
-        "patrol_id": "gen_your_cat49",
+        "patrol_id": "life_medapp_og6",
         "biome": [
             "Any"
         ],
@@ -186,7 +186,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_medcatapp_default",
+        "patrol_art": "life_medapp_og6",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},

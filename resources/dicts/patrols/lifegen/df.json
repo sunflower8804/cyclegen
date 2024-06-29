@@ -1651,7 +1651,7 @@
         ]
     },
     {
-        "patrol_id": "littertest",
+        "patrol_id": "life_df_RBribe",
         "biome": [
             "Any"
         ],
@@ -1665,36 +1665,386 @@
             "new_cat",
             "newdfcat"
         ],
-        "patrol_art": "df_default",
+        "patrol_art": "bribe patrol",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
             "normal adult": [1, 6]
         },
-        "weight": 10,
-        "intro_text": "You have goop kittens.",
-        "decline_text": "aw",
-        "chance_of_success": 50,
+        "weight": 50,
+        "intro_text": "You slip into the dark depths of the forest alone. Training can wait - you have more important matters to attend to tonight. A single pair of eyes flash ahead in the darkness, affixed on you.",
+        "decline_text": "Thinking back, this is a bad idea. You turn tail and return to training.",
+        "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "Say hello to your goop children!",
+                "text": "You surge forward to greet your secret mate. They purr out a greeting, and call out to someone in the darkness. Oh! Your kits! You greet each of them with a purr loud as thunder. Before you know it, it's time to say good-bye to your family, and you wake in your nest with a bitter-sweet ache in your chest.",
                 "exp": 15,
-                "weight": 20,
+                "weight": 10,
                 "new_cat": [
                     ["newdfcat", "age:mate_with_kits", "mate:p_l"],
                     ["newdfcat", "your_litter", "parent:0", "status:kitten", "backstory:dfkit1"]
+                ]
+            },
+            {
+                "text": "You don't hesitate. You've met this cat before, emotions having blossomed into something more between you as you spent more and more nights within this place. Yet... There is still time. Still time to decide whether or not you should take the leap. Your heart is heavy as you part ways with a final twine of tails - before dispersing into the darkness once again alone.",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "The darkness shifts ahead - revealing a beloved form. The spirit surges forward with a trill of happiness to meet with you again. Should anyone know of your foolish feelings they would surely belittle you both. For now though, sheltered in the murk of this forest, you can be together until you awaken.",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "You surge forward to greet your secret mate, but they don't reciprocate. It's time to part ways despite your aching hearts. They whisk your confused kits forward and you choke out a goodbye as your love walks away with a hanging head. You need to get the little ones into a warm nest now. Now the question is, what to tell your clanmates?",
+                "exp": 15,
+                "weight": 5,
+                "new_cat": [
+                    ["newdfcat", "age:mate_with_kits", "mate:p_l"],
+                    ["your_litter", "parent:0", "status:kitten", "backstory:dfkit2"]
+                ]
+            },
+            {
+                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the dark forest before they surge forward to bunt heads with a purr. Perhaps it isn't meant to be in the waking world... but in this place it is true and real to both of you.",
+                "exp": 15,
+                "weight": 5,
+                "new_cat": [
+                    ["meeting", "age:mate", "mate:p_l", "backstory:ostracized_warrior"]
+                ]
+            },
+            {
+                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the dark forest before they surge forward to bunt heads with a purr. Perhaps it could never be in the waking world... but in this place it is true and real to both of you whilst you sleep.",
+                "exp": 15,
+                "weight": 5,
+                "new_cat": [
+                    ["newdfcat", "age:mate", "mate:p_l"]
                 ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Say hello to your goop children! They're coming home with you!",
+                "text": "You stop and hesitate before finding your resolve. The cat before you does not hold your heart as you hoped, and you inform them. They seem... relieved. It seems both of you had wanted to end things this evening. With that out of the way you both decide to remain friends.",
+                "exp": 0,
+                "weight": 10
+            },
+            {
+                "text": "Ambush! You're forced to fight off two cats a once. It's a whirlwind of blood, fur, claws, and teeth, but somehow you escape with your life.",
                 "exp": 0,
                 "weight": 20,
-                "new_cat": [
-                    ["newdfcat", "age:mate_with_kits", "mate:p_l"],
-                    ["your_litter", "parent:0", "status:kitten", "backstory:dfkit2"]
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["battle_injury"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was scarred by a Dark Forest warrior."
+                }
+            },
+            {
+                "text": "That isn't who it should be. Before any cat can attack you, you turn tail and flee. Not today, Dark Forest warriors!",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Ambush! The odds aren't in your favor but that doesn't stop you. It never has before. Your deadly training kicks in as you fight with fury. You escape, leaving destruction behind with a smirk.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "ambitious",
+                    "bloodthirsty",
+                    "bold",
+                    "confident",
+                    "daring",
+                    "fierce",
+                    "vengeful"
+                ],
+                "stat_skill": ["FIGHTER,1", "GUARDIAN,1", "DARK,1","CLEVER,1"]
+            },
+            {
+                "text": "Nothing but a trick of the light... There's no one there, even though there should be... ",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_df_R1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df",
+            "fellowtrainee"
+        ],
+        "tags": [],
+        "patrol_art": "df_Clanmate",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The darkness of the forest looms eerily around the clearing as cats train in pairs. You're with r_c today - and {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} more experienced than you anticipated. You've only recently seen {PRONOUN/r_c/object} around so how {VERB/r_c/are/is} {PRONOUN/r_c/subject} this good? Are you missing something?",
+        "decline_text": "Better not to think about it. You focus on the sparring instead of silly questions.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "As the two of you catch your breath, you decide to ask how {PRONOUN/r_c/subject} became so skilled so swiftly. r_c snickers and reminds you that the forest doesn't always let cats interact. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'ve/'d} been here long before you it turns out. It makes sense now as to how r_c is so skilled - and so favored by the ancient spirits living here.",
+                "exp": 10,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": true,
+                        "values": ["respect"],
+                        "amount": 5
+                    }
                 ]
+            },
+            {
+                "text": "You attempt to ask while you both take a break but r_c cuts you off with a grin. Some secrets are worth keeping. You get the feeling that {PRONOUN/r_c/subject} {VERB/r_c/are/is} hiding more than you thought in the waking world. r_c tells you that if you keep up at this pace {PRONOUN/r_c/subject} might be willing to share later... It's a promise.",
+                "exp": 10,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": true,
+                        "values": ["respect"],
+                        "amount": 10
+                    }
+                ]
+            },
+            {
+                "text": "When you work up the courage to ask as you catch your breath, r_c looks quite smug. You duck a playful swipe before {PRONOUN/r_c/subject} {VERB/r_c/ask/asks} how you think you got here in the first place. Did r_c have something to do with that...",
+                "exp": 10,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["y_c"],
+                        "cats_from": ["r_c"],
+                        "mutual": false,
+                        "values": ["trust"],
+                        "amount": 10
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "When you get the chance to ask, r_c lands a swipe across your face, {PRONOUN/r_c/poss} face neutral. You stumble back to recover as your fur bristles up in surprise. That was going to leave a mark... r_c barks at you to focus and the sparring continues.",
+                "exp": 0,
+                "weight": 20,
+                "injury": [ 
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["minor_injury"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was scarred by a Dark Forest warrior.",
+                    "reg_death": "m_c was killed by a Dark Forest warrior.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a Dark Forest warrior"
+                }
+            },
+            {
+                "text": "Before you can get a chance to mention it one of the slimy ancient warriors cuts in to hiss at you to focus. They berate you for your inattention as r_c smirks and watches...",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": false,
+                        "values": ["dislike"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "You don't get the chance to ponder any longer as r_c takes you by surprise due to your inattention. {PRONOUN/r_c/subject/CAP} {VERB/r_c/land/lands} a harsh blow as the two of you roll across the clearing. Before you know it, you're awake in your nest, a clanmate frantically calling for the medicine cat.",
+                "exp": 0,
+                "weight": 20,
+                "injury": [ 
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["battle_injury"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was scarred by a fellow Dark Forest warrior.",
+                    "reg_death": "m_c was killed by a fellow Dark Forest warrior.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a fellow Dark Forest warrior"
+                }
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_df_R2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df",
+            "fellowtrainee"
+        ],
+        "tags": [],
+        "patrol_art": "life_df_og11",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "There's a chill in the air today - something is off. Your fur bristles in anticipation for what's coming. What should you do...?",
+        "decline_text": "You stay put, frozen and low to the ground. The feeling passes and you continue on hesitantly.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You jump out of your fur as r_c lands beside you and narrowly avoid attacking {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} {VERB/r_c/appologize/appologizes} profusely and say {PRONOUN/r_c/subject}{VERB/r_c/'ve/'d} been following you from the trees so that {PRONOUN/r_c/subject} could speak to you without watching eyes. r_c does get a laugh out of the accidental scare however, before the two of you spend time talking in the quiet of the forest.",
+                "exp": 10,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": true,
+                        "values": ["respect","comfort"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "A voice calls out right as a half-faded ancient warrior appears before you to attack. Before the foul claws can strike, a blur tackles them away. It's r_c! Between the two of you it's an easy task to end the old spirit. Your heart pounds as you gratefully thank r_c for the save. {PRONOUN/r_c/subject/CAP} {VERB/r_c/bunt/bunts} {PRONOUN/r_c/poss} head against you comfortingly and remind you that you're clanmates. You would do it for {PRONOUN/r_c/object}, wouldn't you?",
+                "exp": 15,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": true,
+                        "values": ["respect","comfort","trust","platonic_love"],
+                        "amount": 5
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Your nerves get the better of you. You creep backwards while staying low to the ground. You pause in your retreat as a laugh rings out. It's r_c! From {PRONOUN/r_c/poss} place in the dead tree {PRONOUN/r_c/subject} call you a coward who doesn't belong here. Your pelt burns with shame before you turn tail and race away from {PRONOUN/r_c/poss} jeering...",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": true,
+                        "values": ["dislike"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "Your fur bristles up right before teeth sink into your tail. An ancient warrior sneers at you with your tail in their maw before they put all their strength into shaking you by the limb. Your yowl thankfully brings assistance - it's r_c to the rescue! The two of you manage to battle off the foul, dark warrior, but your tail has seen better days...",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": true,
+                        "values": ["trust"],
+                        "amount": 5
+                    }
+                ],
+                "injury": [ 
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["mangled_tail"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was scarred by a Dark Forest warrior.",
+                    "reg_death": "m_c was killed by a Dark Forest warrior.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a Dark Forest warrior"
+                }
+            }
+        ],
+        "antag_success_outcomes": [
+            {
+                "text": "Courage surges in you. You're not going to be cowed by a mere unsettling feeling! You yowl your challenge into the dark mists of the forest. As your gaze scans up you realize, with embarassment hot on your pelt, that it's just r_c. You remember that {PRONOUN/r_c/subject} wanted to speak to you now that you see {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} clearly aren't interested anymore, however, as {PRONOUN/r_c/subject} hold back mirth at your paranoia...",
+                "exp": 10,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["y_c"],
+                        "cats_from": ["r_c"],
+                        "mutual": false,
+                        "values": ["respect"],
+                        "amount": -5
+                    }
+                ]
+            },
+            {
+                "text": "Your ears prick as you hear claws against bark. Your gaze spots a shadow in the tree above you. Remembering a trick from an ancient mentor, you spring at the tree and rush up - only to meet the startled face of r_c! Thankfully you registered it was {PRONOUN/r_c/object} before you could finish your attack. {PRONOUN/r_c/subject/CAP} {VERB/r_c/are/is} stunned for a moment before begging you to show {PRONOUN/r_c/object} the move you'd just done. You and r_c spend the rest of the night practicing.",
+                "exp": 15,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": true,
+                        "values": ["respect","trust"],
+                        "amount": 10
+                    }
+                ]
+            }
+        ],
+        "antag_fail_outcomes": [
+            {
+                "text": "You aren't about to let anything sneak up on you. The moment you see a shadow, you spring with claws unsheathed. Blood sprays as your strike finds the target - and to your horror you realize it's r_c. The wound isn't fatal but it's enough to send {PRONOUN/r_c/object} back to the waking world in a hurry. When {PRONOUN/r_c/subject} {VERB/r_c/see/sees} you in camp later, there is anger in {PRONOUN/r_c/poss} eyes...",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": true,
+                        "values": ["dislike"],
+                        "amount": 10
+                    }
+                ],
+                "injury": [ 
+                    {
+                        "cats": ["r_c"],
+                        "injuries": ["battle_injury"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was scarred by a fellow Dark Forest warrior.",
+                    "reg_death": "m_c was killed by a fellow Dark Forest warrior.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a fellow Dark Forest warrior"
+                }
+            },
+            {
+                "text": "Your claws unsheathe as you prepare. It's too late - you hear the whistle of wind above you and try to move from your position. You're too slow. Your attacker lands upon you as your yowl is cut off. Your gaze manages to catch on your assailant. r_c's eyes gleam in the low light before {PRONOUN/r_c/poss} fangs meet your throat. In the morning, the clan is horrified to find your cold body in your nest...",
+                "exp": 0,
+                "weight": 20,
+                "dead cats": ["y_c"],
+                "murder": [
+                    {
+                        "murderer": ["r_c"],
+                        "victim": ["y_c"]
+                    }
+                ],
+                "history_text": {
+                    "reg_death": "m_c was killed by a fellow Dark Forest warrior.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a fellow Dark Forest warrior"
+                }
             }
         ]
     }
