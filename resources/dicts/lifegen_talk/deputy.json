@@ -123,9 +123,9 @@
             "silly"
         ],
         [
-            "I went on a hunting patrol with r_w the other day and found THE cutest mouse I think I've ever seen. It had big, innocent eyes and it was snacking on a blackberry!",
-            "It was large, so r_w wanted to catch it for c_nClan, but I couldn't bear to see it killed.",
-            "I, ah, ended up scaring it off to save it from being caught. That... really didn't make r_w happy at all. But it was worth it! You should've seen the little thing!"
+            "I went on a hunting patrol with neutral_r_w the other day and found THE cutest mouse I think I've ever seen. It had big, innocent eyes and it was snacking on a blackberry!",
+            "It was large, so neutral_r_w wanted to catch it for c_nClan, but I couldn't bear to see it killed.",
+            "I, ah, ended up scaring it off to save it from being caught. That... really didn't make neutral_r_w happy at all. But it was worth it! You should've seen the little thing!"
         ]
     ],
     "introspective_comf_2": [
@@ -463,34 +463,6 @@
             "[The sight of {PRONOUN/t_c/object} standing alongside l_n fills your heart with pride!]"
         ]
     ],
-    "assertivewarrior_mediatorapp1_3": [
-        [
-            "mediator apprentice",
-            "mediator",
-            "assertive",
-            "unabashed"
-        ],
-        [
-            "Oh no you don't, y_c. Don't even try to convince me to make nice with r_c - it's not gonna happen. {PRONOUN/r_c/subject/CAP} totally stole the last fish from the freshkill pile! {VERB/r_c/Don't/Doesn't} {PRONOUN/r_c/subject} know that it's my favorite?",
-            "Okay, okay ... if you insist, I guess I can try talking to {PRONOUN/r_c/object} again.",
-            "But don't try to get me to watch my tongue. If someone's acting like a stupid piece of fox-dung, I'm gonna call them a stupid piece of fox-dung!!!"
-        ]
-    ],
-    "assertivewarrior_mediatorapp2": [
-        [
-            "mediator apprentice",
-            "mediator",
-            "assertive",
-            "silly",
-            "unlawful",
-            "cool"
-        ],
-        [
-            "Look, I know I can be reckless and headstrong and foolish and stubborn ...",
-            "But I didn't mean to steal r_c's catch! Seriously! And now {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} acting all huffy about it ...",
-            "Any chance you could help me talk it out with {PRONOUN/r_c/object}?"
-        ]
-    ],
     "assertive_5": [
         [
             "kitten",
@@ -498,7 +470,6 @@
             "assertive",
             "cool",
             "unlawful",
-            "neutral",
             "non-related"
         ],
         [
@@ -553,41 +524,6 @@
             "Well, why in StarClan's name would you not tell me that?!",
             "Now I gotta ... Just ... Ugh!",
             "[t_c stalks away muttering curses. You can't tell if you resent {PRONOUN/t_c/poss} disrespectful attitude, or respect it.]"
-        ]
-    ],
-    "assertive_app29": [
-        [
-            "mediator",
-            "mediator apprentice",
-            "assertive",
-            "platonic_like",
-            "comfort",
-            "trust",
-            "from_parent",
-            "from_mate",
-            "sibling",
-            "adopted_sibling"
-        ],
-        [
-            "Tch. Did you see what a snake-heart r_c was acting like earlier? And over a piece of prey, no less!",
-            "Cat's so mouse-brained, probably can't even tell {PRONOUN/r_c/poss} own tail from a willow branch ...",
-            "... Whoa, what? Wait, you want me to apologize to {PRONOUN/r_c/object}?",
-            "But {PRONOUN/r_c/subject} {VERB/r_c/were/was} in the wrong, not me! Why even entertain {PRONOUN/r_c/poss} behavior with an apology?",
-            "If {PRONOUN/r_c/subject}{VERB/t_c/'re/'s} mad, who cares! Let {PRONOUN/t_c/object} stay mad! {PRONOUN/t_c/subject/CAP} can stay mad forever, for all I care!",
-            "Look, I know you're the mediator, and it's your job to resolve conflicts, or whatever, but ... you love me. Shouldn't you be on my side?",
-            "You'd really choose {PRONOUN/t_c/object} over me?"
-        ]
-    ],
-    "assertive_app29_2": [
-        [
-            "mediator",
-            "mediator apprentice",
-            "assertive"
-        ],
-        [
-            "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
-            "I'll save you a few words - it's not gonna happen. Why's it always me that's gotta be in the wrong, huh? Why not force {PRONOUN/t_c/object} to apologize?",
-            "Go find somebody else's problem to fix."
         ]
     ],
     "assertive_elder_5": [
@@ -1479,7 +1415,7 @@
             "cool"
         ],
         [
-            "Recently I've been thinking about the best way to talk to r_c.",
+            "Recently I've been thinking about the best way to talk to neutral_r_c.",
             "We'll say hi to each other now and then, but I can never say anything to get the conversation going.",
             "Hmm... Maybe I'll ask 'em to try climbing the big oak with me!"
         ]
@@ -1746,7 +1682,7 @@
         ],
         [
             "Oh, hi y_c! I had a question for you, actually.",
-            "Well... is it mean to send r_w on a border patrol if I know {PRONOUN/r_w/subject} {VERB/t_c/don't/doesn't} like them?",
+            "Well... is it mean to send r_w_brooding on a border patrol if I know {PRONOUN/r_w/subject} {VERB/t_c/don't/doesn't} like them?",
             "{PRONOUN/r_w/subject/CAP} told me I was as helpful as a Twoleg kit chasing prey, and I'm feeling extra petty today."
         ]
     ],
@@ -1993,7 +1929,7 @@
         ],
         [
             "Oh, y_c, you need someone to go herb-gathering with you? I'm free right now, so I can go if you'd like.",
-            "I know I'm the deputy, but l_n and r_w told me to take today off from deputy duties as a gift.",
+            "I know I'm the deputy, but l_n and plike_r_w told me to take today off from deputy duties as a gift.",
             "I want to pay that kindness forward, so I'm happy to help!"
         ]
     ],
