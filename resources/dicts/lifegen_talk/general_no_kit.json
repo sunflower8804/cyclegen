@@ -87,8 +87,8 @@
             "unabashed"
         ],
         [
-            "Oh no you don't, y_c. Don't even try to convince me to make nice with r_c - it's not gonna happen. {PRONOUN/r_c/subject/CAP} totally stole the last fish from the freshkill pile! {VERB/r_c/don't/doesn't/CAP} {PRONOUN/r_c/subject} know that it's my favorite?",
-            "Okay, okay ... if you insist, I guess I can try talking to {PRONOUN/r_c/object} again.",
+            "Oh no you don't, y_c. Don't even try to convince me to make nice with dislike_r_c - it's not gonna happen. {PRONOUN/dislike_r_c/subject/CAP} totally stole the last fish from the freshkill pile! {VERB/dislike_r_c/don't/doesn't/CAP} {PRONOUN/dislike_r_c/subject} know that it's my favorite?",
+            "Okay, okay ... if you insist, I guess I can try talking to {PRONOUN/dislike_r_c/object} again.",
             "But don't try to get me to watch my tongue. If someone's acting like a stupid piece of fox-dung, I'm gonna call them a stupid piece of fox-dung!!!"
         ]
     ],
@@ -116,8 +116,8 @@
         ],
         [
             "Look, I know I can be reckless and headstrong and foolish and stubborn ...",
-            "But I didn't mean to steal r_c's catch! Seriously! And now {PRONOUN/r_c/subject}{VERB/t_c/'re/'s} acting all huffy about it ...",
-            "Any chance you could help me talk it out with {PRONOUN/r_c/object}?"
+            "But I didn't mean to steal r_w's catch! Seriously! And now {PRONOUN/r_w/subject}{VERB/r_w/'re/'s} acting all huffy about it ...",
+            "Any chance you could help me talk it out with {PRONOUN/r_w/object}?"
         ]
     ],
     "assertive_mentor2": [
@@ -146,8 +146,8 @@
             "they_sameage"
         ],
         [
-            "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
-            "What? It's totally real, {PRONOUN/r_c/subject} wouldn't lie to me like that! I prommissseee."
+            "y_c. Buddy. Best friend. We've GOTTA TRY this. trust_r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
+            "What? It's totally real, {PRONOUN/trust_r_c/subject} wouldn't lie to me like that! I prommissseee."
         ]
     ],
     "assertive_app2": [
@@ -389,7 +389,7 @@
             "neutral"
         ],
         [
-            "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
+            "Let me guess. You've come to patch things up between me and neutral_r_c, 'cause of the fight we had earlier. That right?",
             "I'll save you a few words - it's not gonna happen. Why's it always me that's gotta be in the wrong, huh? Why not force them to apologize?",
             "Go find somebody else's problem to fix."
         ]
@@ -459,7 +459,7 @@
         ],
         [
             "Hey, furbag. I brought you something!",
-            "[r_c lays a colorful feather at your paws.]",
+            "[t_c lays a colorful feather at your paws.]",
             "I know this is your favorite color, and you miss exploring the territory. So I knew I just had to bring it to you.",
             "Yeah, yeah, don't get all soft on me, hehe. Wanna grab a meal together?"
         ]
@@ -749,9 +749,9 @@
         [
             "Hey, flea-brain. I've been looking for you all over, what's --",
             "Wait. Something's up. I can tell you're upset about something.",
-            "Was someone mean to you? Was it r_c? I swear to StarClan, I'll --",
+            "Was someone mean to you? Was it dislike_r_c? I swear to StarClan, I'll --",
             "No one was mean to you?",
-            "Well, okay ... but I'll still shoot them a few dirty looks, just for good measure."
+            "Well, okay ... but I'll still shoot {PRONOUN/dislike_r_c/object} a few dirty looks, just for good measure."
         ]
     ],
     "assertive_love_2": [
@@ -791,13 +791,13 @@
             "platonic_love"
         ],
         [
-            "Tch. Did you see what a snake-heart r_c was acting like earlier? And over a piece of prey, no less!",
-            "Cat's so mouse-brained, probably can't even tell {PRONOUN/r_c/poss} own tail from a willow branch ...",
-            "... Whoa, what? Wait, you want me to apologize to {PRONOUN/r_c/object}?",
-            "But {PRONOUN/r_c/subject} {VERB/r_c/were/was} in the wrong, not me! Why even entertain {PRONOUN/r_c/poss} behavior with an apology?",
-            "If {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} mad, who cares! Let {PRONOUN/r_c/object} stay mad! {PRONOUN/r_c/subject/CAP} can stay mad forever, for all I care!",
+            "Tch. Did you see what a snake-heart dislike_r_c was acting like earlier? And over a piece of prey, no less!",
+            "Cat's so mouse-brained, probably can't even tell {PRONOUN/dislike_r_c/poss} own tail from a willow branch ...",
+            "... Whoa, what? Wait, you want me to apologize to {PRONOUN/dislike_r_c/object}?",
+            "But {PRONOUN/dislike_r_c/subject} {VERB/dislike_r_c/were/was} in the wrong, not me! Why even entertain {PRONOUN/dislike_r_c/poss} behavior with an apology?",
+            "If {PRONOUN/dislike_r_c/subject}{VERB/dislike_r_c/'re/'s} mad, who cares! Let {PRONOUN/dislike_r_c/object} stay mad! {PRONOUN/dislike_r_c/subject/CAP} can stay mad forever, for all I care!",
             "Look, I know you're the mediator, and it's your job to resolve conflicts, or whatever, but ... you love me. Shouldn't you be on my side?",
-            "You'd really choose {PRONOUN/r_c/object} over me?"
+            "You'd really choose {PRONOUN/dislike_r_c/object} over me?"
         ]
     ],
     "assertive_comfort": [
@@ -958,7 +958,7 @@
             "you_blind"
         ],
         [
-            "r_c just told me the funniest joke ever!",
+            "plike_r_c just told me the funniest joke ever!",
             "It went like - heehee - how did the *snrk* - how did the - AHAHAHA!!!",
             "[t_c can't even seem to get through {PRONOUN/t_c/poss} own joke without dissolving into a fit of giggles!]"
         ]
@@ -2554,7 +2554,7 @@
         ],
         [
             "Hey, y_c!",
-            "Are you okay? I noticed r_c was chatting your ears off... That's a lot of attention, it's a big deal.",
+            "Are you okay? I noticed r_c_unabashed was chatting your ears off... That's a lot of attention, it's a big deal.",
             "It isn't? Oh okay..."
         ]
     ],
@@ -2748,7 +2748,7 @@
             "I'm absolutely okay, I'm not up to much here, just catwatching, as usual.",
             "Huh? You think I should get to know the other cats, instead of watching?",
             "Oh, I'm just fine here, I don't talk to the others, it's just how it is...!",
-            "You think I'd get on with r_c? You think?",
+            "You think I'd get on with neutral_r_c? You think?",
             "... Hm. I suppose I'll have to go and talk to them then, at some point.",
             "You've never guided me wrong."
         ]
@@ -2763,7 +2763,7 @@
         ],
         [
             "Hey... y_c? Can I ask for your advice on something?",
-            "I was having an argument with r_c a couple of days ago. I was giving them some advice on something, and they told me that I talk like I'm better than everyone. Do you think...?",
+            "I was having an argument with r_c_brooding a couple of days ago. I was giving {PRONOUN/r_c_brooding/object} some advice on something, and {PRONOUN/r_c_brooding/subject} told me that I talk like I'm better than everyone. Do you think...?",
             "No? That's good. That's absolutely not my intention. I want to help, but not to be more important than any other cat.",
             "Thank you, y_c. I know that no matter what, you'll always tell me what I need to hear."
         ]
@@ -2796,7 +2796,7 @@
         ],
         [
             "Huh, y_c? You were looking for me?",
-            "Yes, I got into an argument with r_c this morning. I'm not sure what the issue is. They always keep telling me that I need to speak up more, and then get angry at me when I do.",
+            "Yes, I got into an argument with r_c_assertive this morning. I'm not sure what the issue is. {PRONOUN/r_c/subject/CAP} always {VERB/r_c/keep/keeps} telling me that I need to speak up more, and then {VERB/t_c/get/gets} angry at me when I do.",
             "I swear. This is the reason why you're one of the only cats I talk to. You make sense, you're reasonable.",
             "I'm going to bed, y_c. I'll speak to you in the morning."
         ]
@@ -5114,7 +5114,7 @@
         ],
         [
             "Hey, y_c!",
-            "Are you okay? I noticed r_c was chatting your ears off... That's a lot of attention, it's a big deal.",
+            "Are you okay? I noticed r_c_unabashed was chatting your ears off... That's a lot of attention, it's a big deal.",
             "It isn't? Oh okay..."
         ]
     ],
@@ -5174,10 +5174,10 @@
         ],
         [
             "Greetings, y_c! So, I've been working on this BIG plan of mine, and I need feedback...",
-            "I want to throw a party for r_w! I'll go out of my way to catch as much juicy fresh-kill for {PRONOUN/r_w/object} as possible, and then collect some plants to decorate the camp with.",
+            "I want to throw a party for plike_r_w! I'll go out of my way to catch as much juicy fresh-kill for {PRONOUN/plike_r_w/object} as possible, and then collect some plants to decorate the camp with.",
             "Oh, and then for GAMES! I'll draw a mouse in the ground and we'll use this twig I found for a tail, and then I'll cover someone's eyes with my tail and we'll play pin the tail on the mouse!",
             "...",
-            "d_n isn't invited though. {PRONOUN/d_n/subject/CAP} {VERB/d_n/were/was} rude to me yesterday."
+            "dislike_r_c isn't invited though. {PRONOUN/dislike_r_c/subject/CAP} {VERB/dislike_r_c/were/was} rude to me yesterday."
         ]
     ],
     "silly_gen_reed": [
@@ -5455,7 +5455,7 @@
         ],
         [
             "Brr... it's so cold out here, y_c.",
-            "I know I should be \"more productive during leaf-bare\" like r_c always tells me, but come on! How does ANYONE work in this weather, let alone {PRONOUN/r_c/object}?"
+            "I know I should be \"more productive during leaf-bare\" like r_c_upstanding always tells me, but come on! How does ANYONE work in this weather, let alone {PRONOUN/r_c_upstanding/object}?"
         ]
     ],
     "silly_leafbare_fish": [
@@ -5496,20 +5496,6 @@
             "With t_c in the lead with a whopping 147 catches, we're looking at the most exciting mouse-hunt game of the season!",
             "[Then, t_c stops, looking you directly in the eye. You can't tell if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} embarrassed or waiting for a response, so you give {PRONOUN/t_c/object} a yelp of encouragement. That seems to be what {PRONOUN/t_c/subject} wanted.]",
             "And the crowd goes WILD!"
-        ]
-    ],
-    "brooding_tomed": [
-        [
-            "medicine cat apprentice",
-            "medicine cat",
-            "brooding"
-        ],
-        [
-            "Erm ... Hi.",
-            "Maybe you should check in on r_c sometime. Do you do check-ins? I don't actually know.",
-            "Um, anyways, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} worrying me a little lately ... sort of walking with a limp. I don't know if it's just in my head, or if {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} really hurt.",
-            "Either way, you should check.",
-            "Uh ... Okay. Goodbye, then."
         ]
     ],
     "brooding_mate": [
@@ -5638,7 +5624,7 @@
             "they_blind"
         ],
         [
-            "Yes, I know r_c is mad at me.",
+            "Yes, I know dislike_r_c is mad at me.",
             "And no, I do not care.",
             "Move along, please."
         ]
@@ -5862,7 +5848,7 @@
         ],
         [
             "Hi. Um.",
-            "I'd like to patrol with r_w today, if that's alright.",
+            "I'd like to patrol with plike_r_w today, if that's alright.",
             "Thanks."
         ]
     ],
@@ -6028,8 +6014,8 @@
             "platonic_love"
         ],
         [
-            "[You watch r_a try again and again to make t_c laugh.]",
-            "[{PRONOUN/r_a/subject/CAP} {VERB/r_a/tell/tells} all sorts of jokes, make funny faces, fall over on {PRONOUN/r_a/poss} paws ...]",
+            "[You watch r_a_silly try again and again to make t_c laugh.]",
+            "[{PRONOUN/r_a_silly/subject/CAP} {VERB/r_a_silly/tell/tells} all sorts of jokes, {VERB/r_a_silly/make/makes} funny faces, {VERB/r_a_silly/fall/falls} over on {PRONOUN/r_a/poss} paws ...]",
             "[Nothing can break that stony glare.]",
             "[But one look at you and t_c breaks out into a huge smile!]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/trot/trots} over to greet you as the defeated apprentice slinks away.]"
@@ -6663,7 +6649,7 @@
         ],
         [
             "Huh? Is that really true?",
-            "Who else agrees with you? Did r_c tell you to say that?",
+            "Who else agrees with you? Did neutral_r_c tell you to say that?",
             "[t_c rushes off in a panic.]"
         ]
     ],
@@ -6968,10 +6954,11 @@
             "any",
             "insult",
             "unlawful",
-            "they_blind"
+            "they_blind",
+            "non-related"
         ],
         [
-            "...You're lucky that r_c is here. Otherwise, I don't think you'd want to know what I would do to you."
+            "...You're lucky that plike_r_c is here. Otherwise, I don't think you'd want to know what I would do to you."
         ]
     ],
     "unlawful_insult_3": [
@@ -7325,24 +7312,6 @@
             "Ahem ..."
         ]
     ],
-    "brooding_like_2_2": [
-        [
-            "any",
-            "brooding",
-            "platonic_like",
-            "comfort",
-            "trust",
-            "romantic_like",
-            "from_mate"
-        ],
-        [
-            "[You watch r_a try again and again to make t_c laugh.]",
-            "[{PRONOUN/r_a/subject/CAP} {VERB/t_a/tell/tells} all sorts of jokes, make funny faces, fall over on {PRONOUN/t_c/poss} paws ...]",
-            "[Nothing can break that stony glare.]",
-            "[But one look at you and t_c breaks out into a huge smile!]",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/trot/trots} over to greet you as the defeated apprentice slinks away.]"
-        ]
-    ],
     "brooding_like_3_2": [
         [
             "no_kit",
@@ -7389,11 +7358,11 @@
             "brooding"
         ],
         [
-            "[You're chatting with r_c when t_c races up to you, huge grin on {PRONOUN/t_c/poss} face.]",
+            "[You're chatting with neutral_r_c when t_c races up to you, huge grin on {PRONOUN/t_c/poss} face.]",
             "y_c, where have you been? I've been waiting for ages to tell you what happened to me today - oh.",
-            "[As soon as t_c sees r_c, {PRONOUN/t_c/subject} {VERB/t_c/stop/stops} talking and {VERB/t_c/hand/hands} total control of the conversation over to r_c.]",
+            "[As soon as t_c sees neutral_r_c, {PRONOUN/t_c/subject} {VERB/t_c/stop/stops} talking and {VERB/t_c/hand/hands} total control of the conversation over to r_c.]",
             "[The most {PRONOUN/t_c/subject} {VERB/t_c/contribute/contributes} to the conversation are a few polite nods and grunts.]",
-            "[As soon as r_c leaves, the light wicks back into t_c's eyes and a huge smile takes back over {PRONOUN/t_c/poss} face.]",
+            "[As soon as neutral_r_c leaves, the light wicks back into t_c's eyes and a huge smile takes back over {PRONOUN/t_c/poss} face.]",
             "[It seems like knowing this version of {PRONOUN/t_c/object} is a privilege that isn't reserved for all your Clanmates.]"
         ]
     ],
@@ -7435,7 +7404,7 @@
             "brooding"
         ],
         [
-            "[You're telling r_c a story from earlier, with t_c close by.]",
+            "[You're telling neutral_r_c a story from earlier, with t_c close by.]",
             "[At a particularly harrowing part of the story, you swear you hear a soft gasp from t_c's nest.]",
             "[You make eye contact and {PRONOUN/t_c/subject} quickly {VERB/t_c/look/looks} away, flushed.]",
             "[You smile and continue telling the story, a little louder so you know t_c will be able to hear.]"
@@ -7824,15 +7793,15 @@
         [
             "apprentice",
             "unabashed",
-            "from_mentor",
-            "dislike"
+            "brooding",
+            "from_mentor"
         ],
         [
             "No, that hunter's crouch was horrible.",
-            "r_w, what-",
-            "[r_w whispers something in t_c's ear.]",
+            "r_w_sweet, what-",
+            "[r_w_sweet whispers something in t_c's ear.]",
             "Ahem, I mean, that- what now?- I mean, you could work a bit on that hunting position of yours.",
-            "Yes, r_w, I said it nicely!"
+            "Yes, r_w_sweet, I said it nicely!"
         ]
     ],
     "unabashed_leaffall": [
@@ -8168,7 +8137,7 @@
         ],
         [
             "Have you heard what people are saying about r_w and d_n?",
-            "They say that r_w is trying to replace d_n by any means possible...",
+            "They say that r_w is trying to replace {PRONOUN/d_n/subject} by any means possible...",
             "I wonder if it's true?",
             "[You tell t_c that {PRONOUN/t_c/subject} shouldn't buy into petty gossip.]",
             "Oh, come on! Even if it isn't true, it's always fun to talk about."
@@ -8192,10 +8161,10 @@
             "platonic_love"
         ],
         [
-            "[t_c catches you eyeing a juicy mouse r_w brought in from across camp.]",
+            "[t_c catches you eyeing a juicy mouse neutral_r_w brought in from across camp.]",
             "Do you want that mouse, y_c?",
             "Wait right here.",
-            "[t_c crosses camp to go smooth-talk r_w. After a short conversation, {PRONOUN/t_c/subject} {VERB/t_c/return/returns} to you, mouse dangling from {PRONOUN/t_c/poss} jaws.]",
+            "[t_c crosses camp to go smooth-talk neutral_r_w. After a short conversation, {PRONOUN/t_c/subject} {VERB/t_c/return/returns} to you, mouse dangling from {PRONOUN/t_c/poss} jaws.]",
             "Your meal is served. Hehehe!"
         ]
     ],
@@ -8207,8 +8176,8 @@
             "you_blind"
         ],
         [
-            "Did you hear what happened with r_c earlier?",
-            "I can't believe {PRONOUN/r_c/subject} had the guts to do something so out of line! Personally, I wouldn't be caught dead doing something like that."
+            "Did you hear what happened with r_c_unabashed earlier?",
+            "I can't believe {PRONOUN/r_c_unabashed/subject} had the guts to do something so out of line! Personally, I wouldn't be caught dead doing something like that."
         ]
     ],
     "upstanding_general2": [
@@ -9008,8 +8977,8 @@
             "platonic_love"
         ],
         [
-            "y_c, I just caught r_c looking at you funny. Are {PRONOUN/r_c/subject} giving you a hard time?",
-            "No? Good. Because if {PRONOUN/r_c/subject} {VERB/r_c/were/was}, I swear to StarClan ...",
+            "y_c, I just caught dislike_r_c looking at you funny. {VERB/dislike_r_c/Are/Is} {PRONOUN/dislike_r_c/subject} giving you a hard time?",
+            "No? Good. Because if {PRONOUN/dislike_r_c/subject} {VERB/dislike_r_c/were/was}, I swear to StarClan ...",
             "[t_c trails off, lashing {PRONOUN/t_c/poss} tail in anger.]"
         ]
     ],
@@ -9290,8 +9259,8 @@
             "platonic_love"
         ],
         [
-            "Hey ... I saw you hanging out with r_c earlier. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} a fun cat, huh?",
-            "It was good, seeing {PRONOUN/r_c/object} make you laugh so hard, heh ...",
+            "Hey ... I saw you hanging out with neutral_r_c earlier. {PRONOUN/neutral_r_c/subject/CAP}{VERB/neutral_r_c/'re/'s} a fun cat, huh?",
+            "It was good, seeing {PRONOUN/neutral_r_c/object} make you laugh so hard, heh ...",
             "Way harder than I ever could ...",
             "[t_c smiles, but you swear you see {PRONOUN/t_c/poss} eyes flash with something potent and fearful.]"
         ]
@@ -9408,7 +9377,7 @@
         [
             "[t_c seemingly shrinks into {PRONOUN/t_c/poss} own pelt as soon as you approach.]",
             "y_c ... Hello ...",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} wildly uncomfortable the whole conversation, and as soon as it's done, {PRONOUN/t_c/subject} {VERB/t_c/shoot/shoots} across camp to r_w, who gives you a death glare.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} wildly uncomfortable the whole conversation, and as soon as it's done, {PRONOUN/t_c/subject} {VERB/t_c/shoot/shoots} across camp to comfort_r_w, who gives you a death glare.]",
             "[What's all that about ...?]"
         ]
     ],
@@ -10636,7 +10605,7 @@
             "So how's it been between you and r_a recently?",
             "C'mon, give me that juicy apprentice drama! It gets so boring when you graduate sometimes. All the stuff there is to worry about is serious stuff.",
             "[t_c laughs, looking off to the side as if remembering something.]",
-            "I mean, ya can create it, sure. But that feels mean. And also, r_c scares me sometimes."
+            "I mean, ya can create it, sure. But that feels mean. And also, r_c_brooding scares me sometimes."
         ]
     ],
     "silly_mentor_cobwebs": [
@@ -10650,7 +10619,7 @@
         [
             "y_c, I came up with a cool experiment for us to try!",
             "So, you understand the use of cobwebs, right? They bind wounds.",
-            "What do you think about going into the territory together with r_w and looking for other substances that might also work as binders?",
+            "What do you think about going into the territory together with plike_r_w and looking for other substances that might also work as binders?",
             "Then, we'll compare their effects on binding tree sap to, like, a tree or something... sounds fun, right?"
         ]
     ],
@@ -11426,7 +11395,7 @@
             "Tch. Seems like practically every cat I talk to these days is all about 'patrols' and 'busywork'. Doesn't anyone have anything more interesting to say?",
             "We already waste, like, over half our lives doing mindless chores ... Do we have to talk about it in our free time, too?",
             "Why don't we dedicate our precious time to discussing something more meaningful?",
-            "Like, for example, how patchy r_w's fur is looking lately."
+            "Like, for example, how patchy neutral_r_w's fur is looking lately."
         ]
     ],
     "cool_8": [
@@ -12016,7 +11985,7 @@
         ],
         [
             "[t_c just got done absolutely drilling you in a brutal training session.]",
-            "[You're about to slink back to your nest, defeated, when you overhear {PRONOUN/t_c/object} talking with r_c across camp.]",
+            "[You're about to slink back to your nest, defeated, when you overhear {PRONOUN/t_c/object} talking with plike_r_c across camp.]",
             "{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} sloppy and green. Too hard on {PRONOUN/t_c/self} ... No one's gonna take {PRONOUN/t_c/object} seriously.",
             "That's how my mentor described me as an apprentice. I hope y_c never has to feel that way.",
             "The kid is coming into {PRONOUN/y_c/object} own so fast ... I can barely keep up.",
@@ -12142,10 +12111,11 @@
             "upstanding",
             "no_kit",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "neutral"
         ],
         [
-            "Hey, um... remember that party you held for r_c the other day?",
+            "Hey, um... remember that party you held for plike_r_c the other day?",
             "Well, I'm just curious. Why wasn't I invited?",
             "Don't get me wrong, I wasn't going to go either way, but...",
             "It's nice to know others are thinking about you."
@@ -17487,45 +17457,6 @@
             "No matter what, don't let anyone try to pressure you into doing something you don't think is right. Go with your gut, and stick to your own values. That's what's really important."
         ]
     ],
-    "assertive_elder_3": [
-        [
-            "Any",
-            "no_kit",
-            "assertive",
-            "cool",
-            "unabashed"
-        ],
-        [
-            "Did you see r_c earlier today, y_c? Oh, StarClan, it was the funniest thing ever!",
-            "{PRONOUN/r_c/subject/CAP} mistook a twig for a snake and flew, like, five fox-lengths into the air! Hahahaha!"
-        ]
-    ],
-    "assertive_app29": [
-        [
-            "you_mediator",
-            "you_mediator_apprentice",
-            "no_kit",
-            "they_any",
-            "assertive",
-            "brooding",
-            "platonic_like",
-            "comfort",
-            "trust",
-            "from_parent",
-            "from_mate",
-            "sibling",
-            "adopted_sibling"
-        ],
-        [
-            "Tch. Did you see what a snake-heart r_c was acting like earlier? And over a piece of prey, no less!",
-            "Cat's so mouse-brained, probably can't even tell {PRONOUN/r_c/poss} own tail from a willow branch ...",
-            "... Whoa, what? Wait, you want me to apologize to {PRONOUN/r_c/object}?",
-            "But {PRONOUN/r_c/subject} {VERB/r_c/were/was} in the wrong, not me! Why even entertain {PRONOUN/r_c/poss} behavior with an apology?",
-            "If {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} mad, who cares! Let 'em stay mad! {PRONOUN/r_c/subject/CAP} can stay mad forever, for all I care!",
-            "Look, I know you're the mediator, and it's your job to resolve conflicts, or whatever, but ... you love me. Shouldn't you be on my side?",
-            "You'd really choose them over me?"
-        ]
-    ],
     "assertive_app29_2": [
         [
             "you_mediator",
@@ -17537,7 +17468,7 @@
             "brooding"
         ],
         [
-            "Let me guess. You've come to patch things up between me and r_c, 'cause of the fight we had earlier. That right?",
+            "Let me guess. You've come to patch things up between me and dislike_r_c, 'cause of the fight we had earlier. That right?",
             "I'll save you a few words - it's not gonna happen. Why's it always me that's gotta be in the wrong, huh? Why not force {PRONOUN/r_c/object} to apologize?",
             "Go find somebody else's problem to fix."
         ]
