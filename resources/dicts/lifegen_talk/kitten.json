@@ -321,7 +321,7 @@
             "upstanding"
         ],
         [
-            "y_c! y_c! y_c! Look at this feather r_c brought me!",
+            "y_c! y_c! y_c! Look at this feather plike_r_c brought me!",
             "It's soooo pretty. And it came from a real, live bird out on the territory!",
             "I can't wait until I can get out and explore the territory myself! Then, I can have all the feathers I want ..."
         ]
@@ -893,7 +893,7 @@
         ],
         [
             "y_c!! Hiii!! I have a question for you, if you don't mind answering?",
-            "I worked really hard and weaved flowers into r_c's nest, but I'm worried {PRONOUN/r_c/subject} won't like it! I don't wanna make {PRONOUN/r_c/object} sad...",
+            "I worked really hard and weaved flowers into plike_r_c's nest, but I'm worried {PRONOUN/r_c/subject} won't like it! I don't wanna make {PRONOUN/r_c/object} sad...",
             "Can you take a look at it?? I don't mind undoing it all if it makes {PRONOUN/r_c/object} happier!"
         ]
     ],
@@ -1052,7 +1052,7 @@
             "sweet"
         ],
         [
-            "Hey y_c! I made you this little thingy, r_c says it's called a trinket.",
+            "Hey y_c! I made you this little thingy, plike_r_c says it's called a trinket.",
             "I hope you like it! I made sure to get your favorite flowers and everything!",
             "I just had seen you were feeling sad today, and I said 'no more sad'!"
         ]
@@ -1086,7 +1086,7 @@
         ],
         [
             "Hey y_c! Cats keep telling me you're the cat to go to if I have issues!",
-            "Um... I wanna give r_c a gift, but I'm really worried that {PRONOUN/r_c/subject} won't like it! I dunno, I want it to be perfect for {PRONOUN/t_c/object}.",
+            "Um... I wanna give plike_r_c a gift, but I'm really worried that {PRONOUN/r_c/subject} won't like it! I dunno, I want it to be perfect for {PRONOUN/t_c/object}.",
             "What should I say...? Thank you!! You're super cool!"
         ]
     ],
@@ -2028,19 +2028,6 @@
             "Y- You don't think I'm annoying, do you?"
         ]
     ],
-    "neurotic_kit__18": [
-        [
-            "any",
-            "neurotic"
-        ],
-        [
-            "Hey... y_c? W- What if l_n doesn't make me a Warrior because I'm too much of a fraidy cat, like r_c said?",
-            "[t_c starts to tear up, trembling in place.]",
-            "What if- what if I'm not good enough? What if-",
-            "[You gently reassure t_c that {PRONOUN/t_c/subject}'ll be the best warrior ever, and that you'll make {PRONOUN/t_c/object} a Warrior yourself if you have to. It seems to make {PRONOUN/t_c/object} calm down a bit, and {PRONOUN/t_c/subject} {VERB/t_c/smile/smiles} at you.]",
-            "T.. Thanks... It really means a lot, y_c."
-        ]
-    ],
     "neurotic_kit__19": [
         [
             "any",
@@ -2137,11 +2124,12 @@
     "stable_kit_06": [
         [
             "kitten",
-            "stable"
+            "stable",
+            "unabashed"
         ],
         [
             "y_c, question of the day, incoming! In, 3! 2! 1!",
-            "Why does r_c stink so badly, it's like {PRONOUN/r_c/subject} {VERB/t_c/haven't/hasn't} had a bath in a moon.",
+            "Why does dislike_r_c stink so badly, it's like {PRONOUN/r_c/subject} {VERB/t_c/haven't/hasn't} had a bath in a moon.",
             "Hey, I said it was a question, not that I had an answer."
         ]
     ],
@@ -2196,7 +2184,8 @@
     "stable_kit_11": [
         [
             "kitten",
-            "stable"
+            "stable",
+            "unabashed"
         ],
         [
             "Sorry, did you say something?",
@@ -2393,7 +2382,6 @@
             "I - I better get r_m! And l_n, too!",
             "*Gasp* But ... Oh, no - What if they exile me?",
             "Well ... I guess that's a risk I'll have to take. For your health, y_c, and for the safety of c_nClan.",
-            "Maybe everyone would be better off without a destructive force like me running around ...",
             "I - I'll be right back! Try not to move!"
         ]
     ],
@@ -2517,7 +2505,7 @@
             "queen's apprentice"
         ],
         [
-            "y_c! You'll never believe what r_k tried to do!",
+            "y_c! You'll never believe what r_k_unlawful tried to do!",
             "I caught {PRONOUN/r_k/object} trying to sneak out of camp! Can you believe that? {PRONOUN/r_k/subject/CAP} {VERB/r_k/were/was} breaking the rules on purpose!",
             "Why would {PRONOUN/r_k/subject} even do that? {VERB/r_k/don't/doesn't/CAP} {PRONOUN/r_k/subject} want to be a good c_nClan cat? It doesn't make any sense.",
             "Anyway, that's all! I'm going to go back to playing now. If anyone else isn't following the rules, I'll come back and tell you!"
@@ -2750,8 +2738,8 @@
             "from_adopted_kit"
         ],
         [
-            "y_c, r_c just explained to me what 'dying' means.",
-            "{PRONOUN/r_c/subject/CAP} said that it's what happens to our prey, and to the plants in leafbare.",
+            "y_c, trust_r_c just explained to me what 'dying' means.",
+            "{PRONOUN/trust_r_c/subject/CAP} said that it's what happens to our prey, and to the plants in leafbare.",
             "But that's never gonna happen to you, right? Or y_m?",
             "[You gently explain to t_c that, yes, you and y_m will both die one day, but it will hopefully be a long, long time until that happens, and {PRONOUN/t_c/subject}'ll be all grownup by then.]",
             "...",
@@ -3056,8 +3044,8 @@
             "[You hear the soft pitter-patter of small paw steps near the entrance of your den. You turn and see t_c holding a large mouse by the tail, looking ecstatic as {PRONOUN/t_c/subject} {VERB/t_c/drag/drags} the creature into the den.]",
             "Special delivery! One freshly caught mouse, straight from the fresh-kill pile!",
             "Can you believe it? I'm finally doing real apprentice jobs!",
-            "r_a said that I could help {PRONOUN/r_a/object} give out fresh-kill to the elders and anyone else who is too busy to get some, and {PRONOUN/r_a/subject} even turned it into a competition. Right now I'm beating {PRONOUN/r_a/object} by a landslide!",
-            "[... You should probably have a word with r_a's mentor about this.]"
+            "r_a_cool said that I could help {PRONOUN/r_a_cool/object} give out fresh-kill to the elders and anyone else who is too busy to get some, and {PRONOUN/r_a_cool/subject} even turned it into a competition. Right now I'm beating {PRONOUN/r_a_cool/object} by a landslide!",
+            "[... You should probably have a word with r_a_cool's mentor about this.]"
         ]
     ],
     "upstanding_kit17": [
@@ -3079,7 +3067,7 @@
         [
             "[While the other kits are playing out in the clearing, t_c is in the nursery, trying to tidy up the moss that was tossed aside and scattered across the den floor.]",
             "[Curious, you ask t_c why {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} playing outside with the other kits.]",
-            "Oh! Well, I overheard r_a mention that the nursery was always a huge mess everytime {PRONOUN/r_a/subject} come in to change the moss in the nests, so I thought I could help out and clean up a bit!"
+            "Oh! Well, I overheard r_a mention that the nursery was always a huge mess everytime {PRONOUN/r_a/subject} {VERB/r_a/come/comes} in to change the moss in the nests, so I thought I could help out and clean up a bit!"
         ]
     ],
     "stable_kitten": [
@@ -3361,7 +3349,7 @@
     "upstanding_kit20": [
         [
             "upstanding",
-            "warrior"
+            "you_warrior"
         ],
         [
             "y_c! Can you make me an apprentice early? Please please pleeeeease! I'm more than ready, I swear!",
@@ -3417,8 +3405,8 @@
         [
             "Are we bad cats?",
             "[You don't have an answer. When you fail to reply, t_c looks sad.]",
-            "I know we are... r_c said so...",
-            "But will {PRONOUN/r_c/subject} forgive us, one day, do you think?",
+            "I know we are... r_c_stable said so...",
+            "But will {PRONOUN/r_c_stable/subject} forgive us, one day, do you think?",
             "[You just nod. t_c looks a little bit happier at that.]"
         ]
     ],
