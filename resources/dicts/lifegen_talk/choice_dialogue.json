@@ -3276,5 +3276,49 @@
         "ignore": [
             "[You don't care what t_c does. You have to worry about yourself.]"
         ]
+    },
+    "neurotic_skill_SQ1": {
+        "tags": [
+            "neurotic",
+            "no_kit",
+            "they_song",
+            "neutral",
+            "newleaf",
+            "greenleaf"
+        ],
+        "intro": [
+            "[Beneath the gentle drumming of raindrops against the ground, you hear t_c softly humming.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/tip/tips} {PRONOUN/t_c/poss} head back and forth, {PRONOUN/t_c/poss} eyes closed.]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "[Leave {PRONOUN/t_c/object} alone.]",
+                "next_scene": "alone"
+            },
+            "choice2": {
+                "text": "[Compliment {PRONOUN/t_c/poss} singing.]",
+                "next_scene": "compliment"
+            },
+            "choice3": {
+                "text": "[Ask {PRONOUN/t_c/object} to stop.]",
+                "next_scene": "stop"
+            }
+        },
+        "alone": [
+            "[You slip away. Knowing t_c, {PRONOUN/t_c/poss} song is for {PRONOUN/t_c/object} and {PRONOUN/t_c/object} alone.]"
+        ],
+        "compliment": [
+            "[t_c's melody ends mid-note as {PRONOUN/t_c/subject} {VERB/t_c/jump/jumps}, {PRONOUN/t_c/poss} eyes flying open.]",
+            "O-oh, hi, y_c. You really like it?",
+            "I, um, really only sing or hum when it's raining, so it's harder to hear me.",
+            "I don't want to bother anyone, and I don't think I'm good or anything...",
+            "But thank you! You're, um, really kind."
+        ],
+        "stop": [
+            "[t_c's melody ends mid-note as {PRONOUN/t_c/subject} {VERB/t_c/jump/jumps}, {PRONOUN/t_c/poss} eyes flying open.]",
+            "Oh, y_c! I'm sorry... I didn't realize you were there, or that anyone could hear me over the rain...",
+            "But, um, of course I'll stop! I don't want to annoy anyone.",
+            "[t_c smiles nervously and scurries away.]"
+        ]
     }
 }

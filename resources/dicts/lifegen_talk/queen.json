@@ -1557,5 +1557,45 @@
             "[Thankfully {PRONOUN/t_c/poss} safe zone isn't too far. You place the quiet kit in the so-called nest of dead grass.]",
             "I know it's not much, but... I can't get rid of old habits. Young spirits like them could have changed. They shouldn't have been judged so fast nor so harshly. And... Thank you. I appreciate the help. I owe you."
         ]
+    ],
+    "neurotic_queen_SQ1": [
+        [
+            "they_queen",
+            "they_neurotic",
+            "no_kit",
+            "neutral"
+        ],
+        [
+            "[t_c is diligently removing spiny weeds and sharp stones from the area right outside the nursery.]",
+            "Sorry, can we talk later? I want to get these out of the way before someone gets hurt."
+        ]
+    ],
+    "neurotic_queen_SQ2": [
+        [
+            "they_queen",
+            "they_neurotic",
+            "no_kit",
+            "neutral",
+            "clan_has_kits"
+        ],
+        [
+            "[t_c nibbles a finch, watching the nursery entrance. {PRONOUN/t_c/subject/CAP} {VERB/t_c/sigh/sighs}.]",
+            "Kits are so energetic and tiny... it feels like only a matter of time before I lose track of one of them."
+        ]
+    ],
+    "neurotic_queen_SQ3": [
+        [
+            "they_queen",
+            "they_neurotic",
+            "neutral",
+            "you_kitten"
+        ],
+        [
+            "[As you run outside to play, t_c stops you for a quick lesson.]",
+            "Remember to pay attention to your surroundings, y_c!",
+            "[t_c sticks {PRONOUN/t_c/poss} head out of the nursery and pretends to scan the camp. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} back at you to make sure you're watching.]",
+            "Whenever you leave the nursery, look around for anything that might be dangerous, okay?",
+            "And make sure to check the sky, too! There might be hawks up there."
+        ]
     ]
 }

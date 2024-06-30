@@ -3004,5 +3004,17 @@
             "[You settle into your nest, preparing yourself for a night of Dark Forest training.]",
             "[Next to you, t_c is snoring loudly.]"
         ]
+    ],
+    "neurotic_warrior_SQ1": [
+        [
+            "no_kit",
+            "they_warrior",
+            "neurotic",
+            "platonic_like"
+        ],
+        [
+            "d_n assigned me to another dawn patrol. Do you think that's {PRONOUN/d_n/poss} way of saying I need to make up for not working hard enough?",
+            "[You assure t_c that dawn patrols are a fact of life and not a way for d_n to send a message, but {PRONOUN/t_c/subject} don't seem convinced.]"
+        ]
     ]
 }

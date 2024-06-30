@@ -1494,5 +1494,45 @@
             "[t_c prods you with a paw, leaning forward to examine you.]",
             "Hmm... Is it me or is this kit's head abnormally big?"
         ]
+    ],
+    "neurotic_medcat_SQ1": [
+        [
+            "they_medicine_cat",
+            "they_neurotic",
+            "no_kit",
+            "greenleaf",
+            "platonic_like"
+        ],
+        [
+            "[You find t_c digging through {PRONOUN/t_c/poss} stores, cleaning out herbs that have been shriveled past the point of usefulness by the greenleaf heat.]",
+            "Nobody's taking this weather as seriously as they could.",
+            "y_c, could you <i>please</i> remind everyone to drink water? I don't think they're listening to me."
+        ]
+    ],
+    "neurotic_medcat_SQ2": [
+        [
+            "they_medicine_cat",
+            "they_neurotic",
+            "no_kit",
+            "platonic_like",
+            "trust"
+        ],
+        [
+            "I really need advice, y_c. It looks like someone's thoroughly picked one of my herb patches.",
+            "It might have been rogues, or loners, but I'm worried it was o_cClan, since the herb patch is so close to the border...",
+            "Should I let l_n know? I don't want to cause trouble without proof..."
+        ]
+    ],
+    "neurotic_medcat_SQ3": [
+        [
+            "they_medicine_cat",
+            "they_neurotic",
+            "no_kit",
+            "platonic_like"
+        ],
+        [
+            "I need to gather some herbs close to the o_cClan border.",
+            "Could you come with? I'd be much more comfortable not going alone."
+        ]
     ]
 }

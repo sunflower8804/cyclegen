@@ -1008,5 +1008,33 @@
             "Woah... that sounds like a really cool idea. You should lemme help you with it!",
             "Once I'm finished fixing this nest, I'll help you gather the stuff."
         ]
+    ],
+    "neurotic_queenapp_SQ1": [
+        [
+            "neurotic",
+            "they_queen's_apprentice",
+            "you_queen's_apprentice",
+            "no_kit",
+            "platonic_like"
+        ],
+        [
+            "[t_c watches over the nursery, tail twitching anxiously.]",
+            "t_mn says that we're important because we're role models for the kits. But what if I'm not a good role model? What if I accidentally model something bad?"
+        ]
+    ],
+    "neurotic_queenapp_SQ2": [
+        [
+            "neurotic",
+            "no_kit",
+            "they_queen's_apprentice",
+            "platonic_like",
+            "clan_has_kits"
+        ],
+        [
+            "The kits are doing well! t_mn is showing me how to build their confidence through stories and games.",
+            "I hope they grow up to be self-assured, and stick up for themselves, and...",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses} and {VERB/t_c/duck/ducks} {PRONOUN/t_c/poss} head, suddenly mumbling.]",
+            "...you know. Not like me."
+        ]
     ]
 }

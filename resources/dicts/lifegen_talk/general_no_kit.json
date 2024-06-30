@@ -18187,5 +18187,175 @@
         [
             "Heh. They'll start treating you like me if that's how you 'solve problems'."
         ]
+    ],
+    "neurotic_general_SQ1": [
+        [
+            "no_kit",
+            "neurotic",
+            "neutral"
+        ],
+        [
+            "[You're leaving camp at the same time t_c is entering. When {PRONOUN/t_c/subject} see you, {PRONOUN/t_c/subject} {VERB/t_c/jump/jumps} aside.]",
+            "Sorry! You go first."
+        ]
+    ],
+    "neurotic_gen_Guy1": [
+        [
+            "no_kit",
+            "neurotic",
+            "you_medicine_cat"
+        ],
+        [
+            "Oh- hi y_c... is something wrong?",
+            "[t_c glances around for a moment. {PRONOUN/t_c/poss/CAP} gaze lands on the bundle of flowers you are holding.]",
+            "What is that for? Are you busy with a patient? I'm in the way, aren't I-",
+            "[You cut off t_c and explain that you are worried about {PRONOUN/t_c/object}. You believe rest will make {PRONOUN/t_c/object} feel better.]",
+            "Oh! I think so too but-",
+            "[You nudge the bundle of herbs to the poor cat, explaining that t_c can add {PRONOUN/t_c/object} to {PRONOUN/t_c/poss} nest and see if it helps {PRONOUN/t_c/object} relax.]",
+            "[t_c comes back later asking for more!]"
+        ]
+    ],
+    "from_mate_SQ1": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_warrior",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_queen",
+            "you_elder",
+            "from_mate",
+            "newleaf"
+        ],
+        [
+            "[You walk in on t_c standing in your nest, midway through weaving flowers into it. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps} as you enter and {VERB/t_c/look/looks} guiltily at the flowers strewn around {PRONOUN/t_c/poss} paws.]",
+            "H-hi, y_c. Is this okay? I wanted this to be a surprise.",
+            "I found a beautiful patch of flowers on patrol today, and I just thought...",
+            "...Since you don't leave camp as often as some of us do, I wanted to make sure you saw them, too.",
+            "Maybe... maybe we could also take a walk to see them, tomorrow?"
+        ]
+    ],
+    "from_mate_SQ2": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "from_mate",
+            "greenleaf"
+        ],
+        [
+            "Good morning, love. Try to stick to the shade today, okay?",
+            "I can already tell it's going to get hot."
+        ]
+    ],
+    "from_mate_SQ3": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "from_mate",
+            "platonic_love"
+        ],
+        [
+            "You know, y_c, everything used to feel so... impermanent. Friendships, peace, even c_nClan itself.",
+            "[t_c laughs bashfully.]",
+            "But ever since we became mates, everything's felt so much more solid.",
+            "I look at you and somehow, I can convince myself that you're always going to be here.",
+            "I really, really love you for that."
+        ]
+    ],
+    "neurotic_aboutkk_SQ1": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "you_adult",
+            "platonic_like"
+        ],
+        [
+            "I can't help but worry about t_kk.",
+            "[t_c looks towards the nursery. You glimpse a flash of t_kk's fur amid the moss nests.]",
+            "It's a hard world, and there are too many ways {PRONOUN/t_kk/subject} could get hurt... or worse."
+        ]
+    ],
+    "neurotic_aboutkk_SQ2": [
+        [
+            "they_any",
+            "they_neurotic",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice"
+        ],
+        [
+            "[t_c sticks {PRONOUN/t_c/poss} head into the medicine cat den, blinking in the sudden dimness.]",
+            "t_kk just sneezed. Could you come to the nursery to check on {PRONOUN/t_kk/object}?",
+            "{PRONOUN/t_kk/object/CAP} said it was just the moss tickling {PRONOUN/t_kk/poss} nose, but I want to make sure."
+        ]
+    ],
+    "neurotic_aboutkk_SQ3": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "trust",
+            "platonic_like",
+            "you_warrior",
+            "you_apprentice"
+        ],
+        [
+            "You'll watch over t_kk if {PRONOUN/t_kk/subject} decide to become a warrior apprentice, won't you?",
+            "I don't want them to think I'm always hovering over {PRONOUN/t_kk/object}, but I need {PRONOUN/t_kk/object} to stay safe."
+        ]
+    ],
+    "neurotic_you_injured_SQ1": [
+        [
+            "they_neurotic",
+            "platonic_love",
+            "no_kit",
+            "you_injured"
+        ],
+        [
+            "[You notice t_c watching you through the entrance of the medicine cat den, half-hidden by the shadows outside.]",
+            "[After a minute of this, you motion {PRONOUN/t_c/object} over. t_c's eyes widen as {PRONOUN/t_c/subject} {VERB/t_c/creep/creeps} inside.]",
+            "I'm sorry! I didn't realize you were awake.",
+            "I'm just... I'm really worried about you, so I came over to see how you were doing.",
+            "And then I got here, and you looked so small... and all I could think about was you not getting better.",
+            "[{PRONOUN/t_c/subject/CAP} gently {VERB/t_c/press/presses}  {PRONOUN/t_c/poss} face into your fur, and you feel t_c trying to steady {PRONOUN/t_c/poss} uneven breaths.]",
+            "I'm sorry. I'm supposed to be the one reassuring you, right?"
+        ]
+    ],
+    "neurotic_theygrieving_SQ1": [
+        [
+            "they_grieving",
+            "neurotic",
+            "any"
+        ],
+        [
+            "[It's near midnight. The camp is silent, save for a few snores coming from the warriors' den. Still, you notice t_c sitting at the edge of camp, gazing at the star-speckled sky. Your ears prick as {PRONOUN/t_c/subject} shakily {VERB/t_c/whisper/whispers} upwards.]",
+            "d_c? Are... are you there? Can you hear me?",
+            "[{PRONOUN/t_c/subject/CAPP} {VERB/t_c/take/takes} a quivering breath.]",
+            "Could you give me some kind of sign, so I can at least pretend you're with me?",
+            "You know I can't do this without you. I... I'm not brave enough alone."
+        ]
+    ],
+    "neurotic_insult_SQ1": [
+        [
+            "they_neurotic",
+            "they_any",
+            "you_any",
+            "insult"
+        ],
+        [
+            "What? The whole Clan doesn't really think that... right?",
+            "[t_c nervously glances around, as if expecting everyone nearby to be watching and agreeing with your words.]"
+        ]
+    ],
+    "neurotic_insult_SQ2": [
+        [
+            "they_neurotic",
+            "they_any",
+            "you_any",
+            "platonic_like",
+            "insult"
+        ],
+        [
+            "Why would you say that? Did I do something wrong?",
+            "[t_c takes a step back, unable to meet your eyes. After a moment of silence, {PRONOUN/t_c/subject}  {VERB/t_c/turn/turns} and {VERB/t_c/scurry/scurries} away.]"
+        ]
     ]
 }

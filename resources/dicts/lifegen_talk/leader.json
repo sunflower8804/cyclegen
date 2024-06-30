@@ -1693,5 +1693,21 @@
             "Nine lives I was given, and you deemed yourself important enough to take the last of them.",
             "I hope you never join me here. I'll see you in the Dark Forest one day, I promise you."
         ]
+    ],
+    "neurotic_leader_SQ1": [
+        [
+            "you_adult",
+            "they_leader",
+            "they_neurotic",
+            "platonic_like",
+            "trust"
+        ],
+        [
+            "[You poke your head into t_c's den to find {PRONOUN/t_c/object} pacing back and forth, thinking out loud.]",
+            "I wouldn't mind mentoring {PRONOUN/r_k/object}, but I don't think I'm the best fit... maybe r_w?",
+            "An apprentice's mentor has a big impact on {PRONOUN/r_k/object}! The right mentor can help an apprentice flourish... and the wrong one could really tear {PRONOUN/r_k/object} down...",
+            "[t_c stops pacing and turns to you.]",
+            "Do you have any thoughts on who a good mentor for r_k would be? I've been thinking in circles for the last hour."
+        ]
     ]
 }

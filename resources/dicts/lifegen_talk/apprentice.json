@@ -2917,5 +2917,65 @@
             "Aw, c'mon, don't look all nervous. It'll be fun! What's life without a little danger, right?",
             "Ready? Let's go!"
         ]
+    ],
+    "neurotic_warriorapprentice_SQ1": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "you_elder"
+        ],
+        [
+            "[t_c cautiously pads into the elders' den.]",
+            "Is there anything I can help with in here? Moss, fresh-kill, or even, um, ticks?",
+            "I...I just want to make sure I'm being helpful enough."
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ2": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "from_your_apprentice",
+            "you_warrior",
+            "platonic_like"
+        ],
+        [
+            "[You tell t_c that you're planning to take {PRONOUN/t_c/object} to explore some of the more distant reaches of c_nClan's territory tomorrow.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/nod/nods}, but from the way {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} meet your eyes, it's clear {PRONOUN/t_c/subject} {VERB/t_c/'re/'s} uneasy.]",
+            "[You ask t_c if it would help for you to walk {PRONOUN/t_c/object} through what to expect tomorrow, and {PRONOUN/t_c/poss} eyes widen.]",
+            "I... yeah, I think it would. Is that okay?",
+            "[You spend a bit going step-by-step through your plans for the places you're going tomorrow, and what {PRONOUN/t_c/subject} should expect to see at each location. When you're finished, t_c seems much more relaxed.]",
+            "Thank you, y_c. I really, really appreciate it."
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ3": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "you_apprentice"
+        ],
+        [
+            "[Under m_n's oversight, you and t_c are practicing a simple battle technique where you dodge out of the way of an attack, and then lunge forward while your opponent is following through with their failed blow.]",
+            "[t_c springs out of the way of your swipes, but when it comes time for a counterattack, {PRONOUN/t_c/subject} {VERB/t_c/remain/remains} at least a tail-length away, batting at empty air.]",
+            "[You remind t_c that the goal is to hit {PRONOUN/t_c/poss} opponent. m_n points out that everyone's claws are sheathed, so no one is going to get hurt.]",
+            "R-right! I've got it!",
+            "[t_c nods, {PRONOUN/t_c/poss} fur fluffing at the attention, but when you resume the drill, {PRONOUN/t_c/poss}attacks haven't gotten any closer.]",
+            "[{PRONOUN/t_c/subject/CAP}'ll get it eventually, right?]"
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ4": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "you_warrior",
+            "you_apprentice",
+            "platonic_like",
+            "comfort"
+        ],
+        [
+            "[You and t_c have been assigned to the same night patrol. The darkness presses into your pelts as you depart.]",
+            "[t_c stares upwards, wide-eyed, as haunting calls resonate from above.]",
+            "It's so... different out here at night.",
+            "[t_c presses against you and doesn't pull away until you're back at camp.]"
+        ]
     ]
 }
