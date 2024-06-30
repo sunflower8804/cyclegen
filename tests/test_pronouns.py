@@ -110,7 +110,9 @@ def test():
         "_unlawful",
         "_silly",
         "_neurotic",
-        "_introspective"
+        "_introspective",
+        "_unabashed",
+        "_assertive"
     ]
 
     rel_addons = [
@@ -123,15 +125,18 @@ def test():
         "neutral_",
         "trust_",
         "comfort_",
-        "respect_"
+        "respect_",
+        "jealous_"
     ]
     
     for abbrev in list(replacement_dict.keys()):
         for r in rel_addons:
-            for x in cluster_addons:
+            replacement_dict[f"{r}{abbrev}"] = _r
+        for x in cluster_addons:
+            replacement_dict[f"{abbrev}{x}"] = _r
+            for r in rel_addons:
                 replacement_dict[f"{r}{abbrev}{x}"] = _r
-                replacement_dict[f"{abbrev}{x}"] = _r
-                replacement_dict[f"{r}{abbrev}"] = _r
+                
 
 
     for x in range(0, 11):
