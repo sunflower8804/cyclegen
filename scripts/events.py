@@ -430,7 +430,7 @@ class Events:
             dialogue_focuses = ujson.loads(read_file.read())
         
         # Handle lost focus for conditional focuses that have no set duration
-        if game.clan.focus == "war" and game.clan.war.get("at_war", False):
+        if game.clan.focus == "war" and not game.clan.war.get("at_war"):
             game.clan.focus = ""
             game.clan.focus_moons = 0
         if game.clan.focus == "starving" and game.clan.freshkill_pile.total_amount > game.clan.freshkill_pile.amount_food_needed()*0.5:
@@ -449,7 +449,7 @@ class Events:
             game.clan.focus_moons = 0
             
         if not game.clan.focus:
-            if game.clan.war.get("at_war", True):
+            if game.clan.war.get("at_war"):
                 game.clan.focus = "war"
             elif game.clan.freshkill_pile.total_amount < game.clan.freshkill_pile.amount_food_needed()*0.5:
                 game.clan.focus = "starving"
