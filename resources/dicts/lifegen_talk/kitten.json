@@ -893,8 +893,8 @@
         ],
         [
             "y_c!! Hiii!! I have a question for you, if you don't mind answering?",
-            "I worked really hard and weaved flowers into plike_r_c's nest, but I'm worried {PRONOUN/r_c/subject} won't like it! I don't wanna make {PRONOUN/r_c/object} sad...",
-            "Can you take a look at it?? I don't mind undoing it all if it makes {PRONOUN/r_c/object} happier!"
+            "I worked really hard and weaved flowers into plike_r_c's nest, but I'm worried {PRONOUN/plike_r_c/subject} won't like it! I don't wanna make {PRONOUN/plike_r_c/object} sad...",
+            "Can you take a look at it?? I don't mind undoing it all if it makes {PRONOUN/plike_r_c/object} happier!"
         ]
     ],
     "sweet_kit_2": [
@@ -1086,7 +1086,7 @@
         ],
         [
             "Hey y_c! Cats keep telling me you're the cat to go to if I have issues!",
-            "Um... I wanna give plike_r_c a gift, but I'm really worried that {PRONOUN/r_c/subject} won't like it! I dunno, I want it to be perfect for {PRONOUN/t_c/object}.",
+            "Um... I wanna give plike_r_c a gift, but I'm really worried that {PRONOUN/plike_r_c/subject} won't like it! I dunno, I want it to be perfect for {PRONOUN/plike_r_c/object}.",
             "What should I say...? Thank you!! You're super cool!"
         ]
     ],

@@ -390,7 +390,7 @@
         ],
         [
             "Let me guess. You've come to patch things up between me and neutral_r_c, 'cause of the fight we had earlier. That right?",
-            "I'll save you a few words - it's not gonna happen. Why's it always me that's gotta be in the wrong, huh? Why not force them to apologize?",
+            "I'll save you a few words - it's not gonna happen. Why's it always me that's gotta be in the wrong, huh? Why not force {PRONOUN/neutral_r_c/object} to apologize?",
             "Go find somebody else's problem to fix."
         ]
     ],
@@ -2749,7 +2749,7 @@
             "Huh? You think I should get to know the other cats, instead of watching?",
             "Oh, I'm just fine here, I don't talk to the others, it's just how it is...!",
             "You think I'd get on with neutral_r_c? You think?",
-            "... Hm. I suppose I'll have to go and talk to them then, at some point.",
+            "... Hm. I suppose I'll have to go and talk to {PRONOUN/neutral_r_c/object} then, at some point.",
             "You've never guided me wrong."
         ]
     ],
