@@ -112,7 +112,8 @@ def test():
         "_neurotic",
         "_introspective",
         "_unabashed",
-        "_assertive"
+        "_assertive",
+        "_stable"
     ]
 
     rel_addons = [
@@ -128,16 +129,18 @@ def test():
         "respect_",
         "jealous_"
     ]
+
+    addons = {}
     
     for abbrev in list(replacement_dict.keys()):
         for r in rel_addons:
-            replacement_dict[f"{r}{abbrev}"] = _r
+            addons[f"{r}{abbrev}"] = _r
         for x in cluster_addons:
-            replacement_dict[f"{abbrev}{x}"] = _r
+            addons[f"{abbrev}{x}"] = _r
             for r in rel_addons:
-                replacement_dict[f"{r}{abbrev}{x}"] = _r
-                
+                addons[f"{r}{abbrev}{x}"] = _r
 
+    replacement_dict.update(addons)
 
     for x in range(0, 11):
         replacement_dict[f"n_c:{x}"] = _r
