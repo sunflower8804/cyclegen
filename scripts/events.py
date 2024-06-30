@@ -843,12 +843,17 @@ class Events:
             replacements["y_c"] = str(game.clan.your_cat.name)
             birth_value = birth_type.value
             if parent1 and not parent1.dead:
+                self.cat_dict["parent1"] = parent1
                 replacements["parent1"] = str(parent1.name)
             if parent2 and not parent2.dead:
+                self.cat_dict["parent2"] = parent1
                 replacements["parent2"] = str(parent2.name)
             if len(adoptive_parents) == 1:
+                self.cat_dict["parent1"] = Cat.all_cats.get(adoptive_parents[0])
                 replacements["parent1"] = str(Cat.all_cats.get(adoptive_parents[0]).name)
             if len(adoptive_parents) == 2:
+                self.cat_dict["parent1"] = Cat.all_cats.get(adoptive_parents[0])
+                self.cat_dict["parent2"] = Cat.all_cats.get(adoptive_parents[1])
                 replacements["parent1"] = str(Cat.all_cats.get(adoptive_parents[0]).name)
                 replacements["parent2"] = str(Cat.all_cats.get(adoptive_parents[1]).name)
             if siblings:
