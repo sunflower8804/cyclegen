@@ -789,5 +789,34 @@
             "l_n is not my leader ... {PRONOUN/l_n/subject/CAP} never {VERB/l_n/have/has} been.",
             "It's only a matter of time until StarClan realizes what a mistake it's made and strips all nine of l_n's lives away."
         ]
+    ],
+    "neutral_opinion_E2": [
+        [
+            "upstanding",
+            "focus",
+            "you_blind",
+            "they_mediator",
+            "they_blind",
+            "no_kit"
+        ],
+        [
+            "All of this l_n drama is really ruffling my fur. It'll be a miracle if half my pelt isn't covered in gray hairs by the time I settle all of the arguments around camp.",
+            "What do I think about l_n..?",
+            "Well... sure, {PRONOUN/l_n/subject}{VERB/t_c/'ve/'s} made some... rocky decisions in the past but {PRONOUN/l_n/subject}{VERB/t_c/'ve/'s} led the Clan this far {VERB/l_n/haven't/hasn't} {PRONOUN/l_n/subject}? How can we expect {PRONOUN/l_n/object} to improve if we tear {PRONOUN/l_n/object} down whenever {PRONOUN/l_n/subject} {VERB/l_n/slip/slips} up?",
+            "I think things are fine just the way they are. l_n is learning, and that's just something the others will have to realize eventually."
+        ]
+    ],
+    "neutral_opinion_E": [
+        [
+            "upstanding",
+            "focus",
+            "you_blind",
+            "they_blind",
+            "no_kit"
+        ],
+        [
+            "What's up with everycat nowadays? All I've been hearing around camp is 'l_n this', 'l_n that', 'Did you hear what l_n told r_w earlier?'.",
+            "Seriously! If these cats spend as much time hunting as they do gossiping, the fresh-kill pile would be filled by sunhigh!"
+        ]
     ]
 }
