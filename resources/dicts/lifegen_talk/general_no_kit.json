@@ -17774,5 +17774,28 @@
             "I don't know why y_p says we're half siblings.",
             "You feel like a full {PRONOUN/y_c/sibling} to me!"
         ]
+    ],
+    "theyblind_J1": [
+        [
+            "Only_they_blind",
+            "Forest",
+            "Silly",
+            "Sweet",
+            "Leaf-fall",
+            "greenleaf",
+            "unabashed",
+            "any"
+        ],
+        [
+            "[After a recent windstorm, t_c has {PRONOUN/t_c/poss} nose to the ground, using {PRONOUN/t_c/poss} whiskers to navigate around all of the branches that have fallen into the clearing.]",
+            "[Focussed on the debris underpaw, {PRONOUN/t_c/subject}{VERB/t_c/stop/stops} shorter of you than {PRONOUN/t_c/subject} normally would.]",
+            "Oops! Hi, y_c. Almost didn't notice you there!",
+            "That storm was something, huh? I barely know where I'm going anymore!",
+            "[You ensure {PRONOUN/t_c/object} that everyone is hard at work to clear the camp.]",
+            "Oh, that's fine. Take your time!",
+            "While it's all messy out here, I can finally convince plike_r_w to go fetch my prey for me.",
+            "I just have to say, 'Oh, please, I couldn't possibly make it there myself with all of the branches in the way!'",
+            "Just don't tell {PRONOUN/plike_r_w/object} I said that, hehe."
+        ]
     ]
 }

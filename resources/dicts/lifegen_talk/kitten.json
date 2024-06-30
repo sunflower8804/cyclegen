@@ -5371,5 +5371,59 @@
         [
             "Why are you here?"
         ]
+    ],
+    "allergies_H2": [
+        [
+            "you_allergies",
+            "kitten",
+            "song",
+            "newleaf",
+            "they_blind"
+        ],
+        [
+            "[It's the start of newleaf, and it's like every day you have a sneezing fit. This time it happens to start when t_c is sitting near.]",
+            "[t_c hums to the beat of your sneezes, bouncing {PRONOUN/t_c/poss} head side-to-side with a sunny smile.]",
+            "y_c! Your sneezes make the best rhythm sometimes. Can you do that more? Please, pretty please!",
+            "... What do you mean you can't control it? But I want to sing to it more!"
+        ]
+    ],
+    "ParalyzedKit_Guy1": [
+        [
+            "they_kitten",
+            "you_queen's_apprentice",
+            "you_queen",
+            "they_paralyzed"
+        ],
+        [
+            "[You notice t_c is watching the other kits chase each other. Just when you are about to suggest a new game that {PRONOUN/t_c/subject} can be included in, t_c pounces on r_k!]",
+            "I win again!",
+            "[r_k asks you if t_c is a descendant of LeopardClan, like in your stories.]"
+        ]
+    ],
+    "JointpainKit_Guy1": [
+        [
+            "they_kitten",
+            "you_queen's_apprentice",
+            "you_queen",
+            "they_jointpain"
+        ],
+        [
+            "[You notice t_c is watching the other kits chase each other. Just when you are about to suggest a new game that {PRONOUN/t_c/subject} can be included in, t_c pounces on r_k!]",
+            "I win again!",
+            "[r_k asks you if t_c is a descendant of LeopardClan, like in your stories.]"
+        ]
+    ],
+    "RaspylungsKit_Guy1": [
+        [
+            "they_kitten",
+            "you_queen's_apprentice",
+            "you_queen",
+            "they_raspylungs"
+        ],
+        [
+            "[You notice t_c is watching the other kits chase each other. Just when you are about to suggest a new game that {PRONOUN/t_c/subject} can be included in, t_c pounces on r_k!]",
+            "I win again!",
+            "[r_k asks you if t_c is a descendant of LeopardClan, like in your stories.]"
+        ]
     ]
 }
