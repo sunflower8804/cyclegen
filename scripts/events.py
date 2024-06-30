@@ -430,7 +430,7 @@ class Events:
             dialogue_focuses = ujson.loads(read_file.read())
         
         # Handle lost focus for conditional focuses that have no set duration
-        if game.clan.focus == "war" and game.clan.war.get("at_war", False):
+        if game.clan.focus == "war" and not game.clan.war.get("at_war"):
             game.clan.focus = ""
             game.clan.focus_moons = 0
         if game.clan.focus == "starving" and game.clan.freshkill_pile.total_amount > game.clan.freshkill_pile.amount_food_needed()*0.5:
@@ -449,7 +449,7 @@ class Events:
             game.clan.focus_moons = 0
             
         if not game.clan.focus:
-            if game.clan.war.get("at_war", True):
+            if game.clan.war.get("at_war"):
                 game.clan.focus = "war"
             elif game.clan.freshkill_pile.total_amount < game.clan.freshkill_pile.amount_food_needed()*0.5:
                 game.clan.focus = "starving"
@@ -843,12 +843,17 @@ class Events:
             replacements["y_c"] = str(game.clan.your_cat.name)
             birth_value = birth_type.value
             if parent1 and not parent1.dead:
+                self.cat_dict["parent1"] = parent1
                 replacements["parent1"] = str(parent1.name)
             if parent2 and not parent2.dead:
+                self.cat_dict["parent2"] = parent1
                 replacements["parent2"] = str(parent2.name)
             if len(adoptive_parents) == 1:
+                self.cat_dict["parent1"] = Cat.all_cats.get(adoptive_parents[0])
                 replacements["parent1"] = str(Cat.all_cats.get(adoptive_parents[0]).name)
             if len(adoptive_parents) == 2:
+                self.cat_dict["parent1"] = Cat.all_cats.get(adoptive_parents[0])
+                self.cat_dict["parent2"] = Cat.all_cats.get(adoptive_parents[1])
                 replacements["parent1"] = str(Cat.all_cats.get(adoptive_parents[0]).name)
                 replacements["parent2"] = str(Cat.all_cats.get(adoptive_parents[1]).name)
             if siblings:

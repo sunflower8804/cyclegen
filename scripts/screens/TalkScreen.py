@@ -290,6 +290,9 @@ class TalkScreen(Screens):
     def get_cluster_list(self):
         return ["assertive", "brooding", "cool", "upstanding", "introspective", "neurotic", "silly", "stable", "sweet", "unabashed", "unlawful"]
 
+    def get_cluster_list_they(self):
+        return ["they_assertive", "they_brooding", "they_cool", "they_upstanding", "they_introspective", "they_neurotic", "they_silly", "they_stable", "they_sweet", "they_unabashed", "they_unlawful"]
+
     def get_cluster_list_you(self):
         return ["you_assertive", "you_brooding", "you_cool", "you_upstanding", "you_introspective", "you_neurotic", "you_silly", "you_stable", "you_sweet", "you_unabashed", "you_unlawful"]
 
@@ -476,6 +479,9 @@ class TalkScreen(Screens):
             for i in range(len(tags)):
                 tags[i] = tags[i].lower()
 
+            if "focus" in tags:
+                pass
+
             if "insult" in tags:
                 continue
 
@@ -488,7 +494,7 @@ class TalkScreen(Screens):
                 continue
 
             # Status tags
-            if you.status not in tags and f"you_{you.status}" not in tags and f"you_{you.status.replace('' '', '_')}" not in tags and "any" not in tags and "young elder" not in tags and "no_kit" not in tags and "you_any" not in tags:
+            if you.status not in tags and f"you_{you.status}" not in tags and f"you_{you.status.replace(' ', '_')}" not in tags and "any" not in tags and "young elder" not in tags and "no_kit" not in tags and "you_any" not in tags:
                 continue
             elif "young elder" in tags and cat.status == 'elder' and cat.moons >= 100:
                 continue
@@ -523,6 +529,14 @@ class TalkScreen(Screens):
                 continue
             if "they_loner" in tags and not cat.status == "loner":
                 continue
+
+            # Cluster tags
+            if any(i in self.get_cluster_list() for i in tags) or any(i in self.get_cluster_list_they() for i in tags):
+                if cluster1 not in tags and cluster2 not in tags and (("they_"+cluster1) not in tags) and (("they_"+cluster2) not in tags):
+                    continue
+            if any(i in self.get_cluster_list_you() for i in tags):
+                if ("you_"+cluster3) not in tags and ("you_"+cluster4) not in tags:
+                    continue
 
             # if "they_kittypet" not in tags and cat.status == "kittypet":
             #     continue
@@ -681,13 +695,6 @@ class TalkScreen(Screens):
             if "you_not_kit" in tags and game.clan.your_cat.moons < 6:
                 continue
 
-            # Cluster tags
-            if any(i in self.get_cluster_list() for i in tags):
-                if cluster1 not in tags and cluster2 not in tags and ("they_"+cluster1 not in tags) and ("they_"+cluster2 not in tags):
-                    continue
-            if any(i in self.get_cluster_list_you() for i in tags):
-                if ("you_"+cluster3) not in tags and ("you_"+cluster4) not in tags:
-                    continue
 
             # Trait tags
             if any(i in you_trait_list for i in tags):
