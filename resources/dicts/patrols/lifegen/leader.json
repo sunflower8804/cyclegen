@@ -51,19 +51,19 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "As you ponder over a tough decision to make for the clan, you wonder if it would be wise to confide some of your clan members and ask for their opinions and advice.",
-        "decline_text": "You decide not to confide in your clanmates, confident in your ability to make decisions on your own.",
+        "intro_text": "As you ponder over a tough decision to make for the Clan, you wonder if it would be wise to confide some of your Clan members and ask for their opinions and advice.",
+        "decline_text": "You decide not to confide in your Clanmates, confident in your ability to make decisions on your own.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You cave in and decide to ask the senior warriors what they think about your decision. You and your clanmates are able to have a serious conversation, going over the advantages and disadvantages of your plan and how it could affect the clan's future. You are able to walk away confident in both your decision and the opinions of your clanmates.",
+                "text": "You cave in and decide to ask the senior warriors what they think about your decision. You and your Clanmates are able to have a serious conversation, going over the advantages and disadvantages of your plan and how it could affect the Clan's future. You are able to walk away confident in both your decision and the opinions of your Clanmates.",
                 "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You cave in and decide to ask the senior warriors what they think about your decision. Unfortunately, each of your clanmates seem to have a different opinion from one another and are unable to see each other eye to eye. You break up the conversation and stalk back to your den, your time wasted and your mind split with indecision.",
+                "text": "You cave in and decide to ask the senior warriors what they think about your decision. Unfortunately, each of your Clanmates seem to have a different opinion from one another and are unable to see each other eye to eye. You break up the conversation and stalk back to your den, your time wasted and your mind split with indecision.",
                 "exp": 0,
                 "weight": 20
             }
@@ -121,19 +121,19 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "During a moment of downtime, a clan member approaches you. They inform you that they have a few concerns regarding a decision that you recently made for the clan, and they would like to give their input",
-        "decline_text": "You tell your clanmate that they can voice their concerns in a private conversation later.",
+        "intro_text": "During a moment of downtime, a Clan member approaches you. They inform you that they have a few concerns regarding a decision that you recently made for the Clan, and they would like to give their input",
+        "decline_text": "You tell your Clanmate that they can voice their concerns in a private conversation later.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You make sure to listen fully to your clanmate's concerns, allowing them to voice out their full opinion and give their own insight on how this decision may affect the clan in the future. You thank them for their decision to confide in you and promise to have a word with the clan's senior warriors and elders to see what they think.",
+                "text": "You make sure to listen fully to your Clanmate's concerns, allowing them to voice out their full opinion and give their own insight on how this decision may affect the Clan in the future. You thank them for their decision to confide in you and promise to have a word with the Clan's senior warriors and elders to see what they think.",
                 "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You lash out at your clanmate with your teeth bared, harshly telling them that they do not have the right to question your orders and defy you so openly. Your clanmate scrambles away, their expression unreadable and their claws tugging at the ground.",
+                "text": "You lash out at your Clanmate with your teeth bared, harshly telling them that they do not have the right to question your orders and defy you so openly. Your Clanmate scrambles away, their expression unreadable and their claws tugging at the ground.",
                 "exp": 0,
                 "weight": 20
             }

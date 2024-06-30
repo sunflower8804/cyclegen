@@ -373,7 +373,7 @@
                 "exp": 20,
                 "weight": 20,
                 "new_cat": [
-                    ["newdfcat", "oldstarclan"]
+                    ["newdfcat", "oldstarClan"]
                 ]
             }
         ],
@@ -1696,7 +1696,7 @@
                 "weight": 20
             },
             {
-                "text": "You surge forward to greet your secret mate, but they don't reciprocate. It's time to part ways despite your aching hearts. They whisk your confused kits forward and you choke out a goodbye as your love walks away with a hanging head. You need to get the little ones into a warm nest now. Now the question is, what to tell your clanmates?",
+                "text": "You surge forward to greet your secret mate, but they don't reciprocate. It's time to part ways despite your aching hearts. They whisk your confused kits forward and you choke out a goodbye as your love walks away with a hanging head. You need to get the little ones into a warm nest now. Now the question is, what to tell your Clanmates?",
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
@@ -1865,7 +1865,7 @@
                 ]
             },
             {
-                "text": "You don't get the chance to ponder any longer as r_c takes you by surprise due to your inattention. {PRONOUN/r_c/subject/CAP} {VERB/r_c/land/lands} a harsh blow as the two of you roll across the clearing. Before you know it, you're awake in your nest, a clanmate frantically calling for the medicine cat.",
+                "text": "You don't get the chance to ponder any longer as r_c takes you by surprise due to your inattention. {PRONOUN/r_c/subject/CAP} {VERB/r_c/land/lands} a harsh blow as the two of you roll across the clearing. Before you know it, you're awake in your nest, a Clanmate frantically calling for the medicine cat.",
                 "exp": 0,
                 "weight": 20,
                 "injury": [ 
@@ -1919,7 +1919,7 @@
                 ]
             },
             {
-                "text": "A voice calls out right as a half-faded ancient warrior appears before you to attack. Before the foul claws can strike, a blur tackles them away. It's r_c! Between the two of you it's an easy task to end the old spirit. Your heart pounds as you gratefully thank r_c for the save. {PRONOUN/r_c/subject/CAP} {VERB/r_c/bunt/bunts} {PRONOUN/r_c/poss} head against you comfortingly and remind you that you're clanmates. You would do it for {PRONOUN/r_c/object}, wouldn't you?",
+                "text": "A voice calls out right as a half-faded ancient warrior appears before you to attack. Before the foul claws can strike, a blur tackles them away. It's r_c! Between the two of you it's an easy task to end the old spirit. Your heart pounds as you gratefully thank r_c for the save. {PRONOUN/r_c/subject/CAP} {VERB/r_c/bunt/bunts} {PRONOUN/r_c/poss} head against you comfortingly and remind you that you're Clanmates. You would do it for {PRONOUN/r_c/object}, wouldn't you?",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -2031,7 +2031,7 @@
                 }
             },
             {
-                "text": "Your claws unsheathe as you prepare. It's too late - you hear the whistle of wind above you and try to move from your position. You're too slow. Your attacker lands upon you as your yowl is cut off. Your gaze manages to catch on your assailant. r_c's eyes gleam in the low light before {PRONOUN/r_c/poss} fangs meet your throat. In the morning, the clan is horrified to find your cold body in your nest...",
+                "text": "Your claws unsheathe as you prepare. It's too late - you hear the whistle of wind above you and try to move from your position. You're too slow. Your attacker lands upon you as your yowl is cut off. Your gaze manages to catch on your assailant. r_c's eyes gleam in the low light before {PRONOUN/r_c/poss} fangs meet your throat. In the morning, the Clan is horrified to find your cold body in your nest...",
                 "exp": 0,
                 "weight": 20,
                 "dead cats": ["y_c"],

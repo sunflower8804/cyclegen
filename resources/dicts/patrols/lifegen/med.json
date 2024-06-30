@@ -87,11 +87,11 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "There is a shortage of a particular herb in the camp. You consider whether you should risk going out to find more.",
-        "decline_text": "You decide not to risk going out, hoping to make do with what you have. Your clanmates understand your decision and trust your judgement.",
+        "decline_text": "You decide not to risk going out, hoping to make do with what you have. Your Clanmates understand your decision and trust your judgement.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You decide to venture out and are successful in finding the herb. Your clanmates appreciate your dedication and commitment to your role.",
+                "text": "You decide to venture out and are successful in finding the herb. Your Clanmates appreciate your dedication and commitment to your role.",
                 "exp": 40,
                 "weight": 20
             }
@@ -226,19 +226,19 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "While resting in your den, you hear a small greeting from the entrance. You look up to see a clan member standing there, sheepishly asking you if you can help them figure out a recent dream that has been plaguing them for the last few days.",
+        "intro_text": "While resting in your den, you hear a small greeting from the entrance. You look up to see a Clan member standing there, sheepishly asking you if you can help them figure out a recent dream that has been plaguing them for the last few days.",
         "decline_text": "You quickly chalk it up to a nightmare, reassuring them that it will go away in a few days' time.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You invite the warrior in with a flick of your tail, asking them to sit down. The two of you have an in-depth conversation as you try to help them figure out the dreams' potential meanings and the action that should be taken. After the two of you have finished, your clanmate gratefully thanks you for your help and walks out of your den feeling validated, and with a newfound confidence that wasn't present before your discussion.",
+                "text": "You invite the warrior in with a flick of your tail, asking them to sit down. The two of you have an in-depth conversation as you try to help them figure out the dreams' potential meanings and the action that should be taken. After the two of you have finished, your Clanmate gratefully thanks you for your help and walks out of your den feeling validated, and with a newfound confidence that wasn't present before your discussion.",
                 "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "After having your clanmate describe the dream, you attempt to have a conversation, offering what you think is helpful insight and potential ideas as to what the dream could be about. To your dismay, your clanmate seems to become more and more worried as you go on, concerned that the dream was some indistinct warning that they were supposed to interpret. You offer some quick words of reassurance as they quickly leave the den, but it seems to go right over their head.",
+                "text": "After having your Clanmate describe the dream, you attempt to have a conversation, offering what you think is helpful insight and potential ideas as to what the dream could be about. To your dismay, your Clanmate seems to become more and more worried as you go on, concerned that the dream was some indistinct warning that they were supposed to interpret. You offer some quick words of reassurance as they quickly leave the den, but it seems to go right over their head.",
                 "exp": 0,
                 "weight": 20
             }
@@ -390,7 +390,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You slip away to the resting place of the clan to think alone.",
+        "intro_text": "You slip away to the resting place of the Clan to think alone.",
         "decline_text": "You shake your head and leave. No reason to disturb the dead with your rambling.",
         "chance_of_success": 50,
         "success_outcomes": [
@@ -400,7 +400,7 @@
                 "weight": 20
             },
   {
-                "text": "You look out over the graves, a place of peace you will one day join... Yet it is your job to keep the members of your clan - your family - out of. At least for as long as StarClan wills it.",
+                "text": "You look out over the graves, a place of peace you will one day join... Yet it is your job to keep the members of your Clan - your family - out of. At least for as long as StarClan wills it.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["CLAIRVOYANT,1", "GHOST,1", "LORE,1", "OMEN,1", "STAR,1", "HEALER,1"]
@@ -410,7 +410,7 @@
                 "exp": 10,
                 "weight": 5,
                 "stat_skill": ["DARK,1"],
-                "new_cat":["newdfcat", "backstory: oldstarclan2"]
+                "new_cat":["newdfcat", "backstory: oldstarClan2"]
             }
         ],
         "fail_outcomes": [
@@ -444,7 +444,7 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "o_cClan's medicine cat comes to you after a halfmoon meeting, requesting advice.",
-        "decline_text": "You don't have the time to care for cats from another clan.",
+        "decline_text": "You don't have the time to care for cats from another Clan.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
@@ -462,7 +462,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "After a few minutes of pointless complaining, you tell the medicine cat to shut up. It's a part of the job to mend unruly clanmates, and it is a mediator's job to settle the arguments.",
+                "text": "After a few minutes of pointless complaining, you tell the medicine cat to shut up. It's a part of the job to mend unruly Clanmates, and it is a mediator's job to settle the arguments.",
                 "exp": 0,
                 "weight": 20
             },

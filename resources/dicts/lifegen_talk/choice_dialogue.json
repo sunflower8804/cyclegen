@@ -2516,8 +2516,8 @@
             }
         },
         "YouHelp": [
-            "[t_c needs your help, this is an urgent matter that requires your assistance, for the sake of the clan! You get off your paws and begin to question the cats around you. Some more helpful than others.]",
-            "[After endless rounds of asking your clanmates, t_c approaches you out of break and tired. Much to {PRONOUN/t_c/poss} surprise, you look the same.]",
+            "[t_c needs your help, this is an urgent matter that requires your assistance, for the sake of the Clan! You get off your paws and begin to question the cats around you. Some more helpful than others.]",
+            "[After endless rounds of asking your Clanmates, t_c approaches you out of break and tired. Much to {PRONOUN/t_c/poss} surprise, you look the same.]",
             "Thank you for helping me, y_c. Looks like some others are also asking around. You should see r_m, they're like a kitten with a mossball.",
             "StarClan, where is d_n? It's like {PRONOUN/d_n/subject} just up and disappeared-",
             "[As if on cue, d_n enters the camp with a mouse in {PRONOUN/d_n/poss} jaw. Beside {PRONOUN/d_n/object} is l_n, who looks relaxed until {PRONOUN/l_n/subject} {VERB/l_n/see/sees} the utter disarray the camp is in.]",
@@ -3078,12 +3078,12 @@
             }
         },
         "compliment": [
-            "[You compliment t_c on {PRONOUN/t_c/poss} consideration for {PRONOUN/t_c/poss} fellow clanmate.]",
+            "[You compliment t_c on {PRONOUN/t_c/poss} consideration for {PRONOUN/t_c/poss} fellow Clanmate.]",
             "Tch. Is this really so unusual? I'm just doing what any c_nClan cat would do.",
             "[{PRONOUN/t_c/poss} tone is cold, but you can't help but notice a slight purr as {PRONOUN/t_c/subject} {VERB/t_c/look/looks} away, clearly pleased.]"
         ],
         "tease": [
-            "[You gently tease that it's cute how t_c is concerned for {PRONOUN/t_c/poss} fellow clanmate.]",
+            "[You gently tease that it's cute how t_c is concerned for {PRONOUN/t_c/poss} fellow Clanmate.]",
             "Whuh - Cute? I'm not cute!",
             "Just - forget it, alright? And if this gets out to anyone else in the Clan, trust me, I'll find out about it!",
             "You'll see who's 'cute' then ..."
@@ -3210,7 +3210,7 @@
         ],
         "defend": [
             "Heh. Well done.",
-            "I can already tell you'll make a great clanmate."
+            "I can already tell you'll make a great Clanmate."
         ],
         "no": [
             "... As much as I loathe to pay you a compliment for disrespecting the code ...",

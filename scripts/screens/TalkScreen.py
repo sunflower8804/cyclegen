@@ -694,7 +694,7 @@ class TalkScreen(Screens):
                 ts = you_trait_list
                 for j in range(len(ts)):
                     ts[j] = ts[j][3:]
-                if you.personality.trait == "sweet" and "sweet_trait" not in ts:
+                if you.personality.trait == "sweet" and "you_sweet_trait" not in ts:
                     continue
                 if you.personality.trait not in ts:
                     continue
