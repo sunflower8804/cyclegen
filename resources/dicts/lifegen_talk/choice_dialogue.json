@@ -3250,5 +3250,31 @@
             "[t_c angrily rubs {PRONOUN/t_c/poss} nose with a paw, {PRONOUN/t_c/poss} grumbling only being broken up by the occasional sneeze.]",
             "Stupid Newleaf- ACHOO- stupid pollen..."
         ]
+    },
+    "starving_unlawful_Guy2": {
+        "tags": [
+            "no_kit",
+            "unlawful",
+            "they_starving"
+        ],
+        "intro": [
+            "[You notice t_c slip out of camp again. Should you follow {PRONOUN/t_c/object}?]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "[Follow the cat.]",
+                "next_scene": "follow"
+            },
+            "choice2": {
+                "text": "[Ignore the behavior.]",
+                "next_scene": "ignore"
+            }
+        },
+        "follow": [
+            "[You follow the cat all the way to a Twoleg nest. {PRONOUN/t_c/subject/CAP}  {VERB/t_c/mew/mews}at the door, and {VERB/t_c/are/is} let inside.]"
+        ],
+        "ignore": [
+            "[You don't care what t_c does. You have to worry about yourself.]"
+        ]
     }
 }

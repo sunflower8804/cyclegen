@@ -2263,5 +2263,64 @@
         [
             "Rude!"
         ]
+    ],
+    "bioparent_unlawfulGuy1": [
+        [
+            "from_parent",
+            "unlawful",
+            "any"
+        ],
+        [
+            "[t_c glances around briefly. After making sure you are the only one that could hear {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} catch your gaze and hold it there.]",
+            "The Clan won't choose you over their petty wars, but I will. You share my blood and that is all that matters."
+        ]
+    ],
+    "adoptparent_unlawfulGuy1": [
+        [
+            "adopted_parent",
+            "unlawful",
+            "no_kit"
+        ],
+        [
+            "[You trot to your nest after a particularly exhausting day of carrying out your duties.]",
+            "[It seems to be lined with a soft material only made by Twolegs, and it smells strongly of t_c]",
+            "[You're reminded of when you were adopted by {PRONOUN/t_c/object}, how safe and welcomed you felt. You can't remember the last time you slept so well.]"
+        ]
+    ],
+    "biosib_unlawfulGuy1": [
+        [
+            "sibling",
+            "unlawful",
+            "no_kit"
+        ],
+        [
+            "[t_c glances around briefly. After making sure you are the only one that could hear {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} catch your gaze and hold it there.]",
+            "The Clan won't choose you over their petty wars, but I will. You share my blood and that is all that matters."
+        ]
+    ],
+    "biokit_unlawfulGuy1": [
+        [
+            "from_your_kit",
+            "unlawful",
+            "no_kit"
+        ],
+        [
+            "[t_c glances around briefly. After making sure you are the only one that could hear {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} catch your gaze and hold it there.]",
+            "The Clan won't choose you over their petty wars, but I will. You share my blood, and that is all that matters."
+        ]
+    ],
+    "sc_sc_Guy": [
+        [
+            "you_sc",
+            "they_sc",
+            "unlawful",
+            "any"
+        ],
+        [
+            "[You notice t_c sitting near the border with a pile of mice.]",
+            "Ah, y_c! Wanna see what I do for entertainment?",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/throw/throws} one of the mice into the Dark Forest. You watch as a shadow slinks forward... and more shadows gather...]",
+            "[t_c whoops and hollers at the fighting.]"
+        ]
     ]
 }

@@ -127,7 +127,6 @@
             "I am going to be as big and strong as r_w! So I can help!"
         ]
     ],
-
     "war_pregnant_AJ": [
         [
             "focus",
@@ -136,39 +135,61 @@
         ],
         [
             "I'm excited for my kits to be born, I really am, but ...",
-	"[t_c casts a worried glance towards w_cClan camp.]",
-	"I can't help but worry what will become of them."
+            "[t_c casts a worried glance towards w_cClan camp.]",
+            "I can't help but worry what will become of them."
         ]
     ],
-
     "war_silly_AJ": [
         [
             "focus",
-"no_kit",
+            "no_kit",
             "silly",
             "they_blind"
         ],
         [
             "[t_c is fruitlessly trying to make the warriors laugh.]",
-	"C'mon, guys! Hey, how about this one? A w_cClan cat walks into a creek ...",
-	"[One of the warriors tosses a stick at {PRONOUN/t_c/object}, snapping at {PRONOUN/t_c/object} to give it a rest.]",
-	"[It seems like no one in c_nClan is in much of a laughing mood. Defeated, t_c slinks back to {PRONOUN/t_c/poss} nest.]"
+            "C'mon, guys! Hey, how about this one? A w_cClan cat walks into a creek ...",
+            "[One of the warriors tosses a stick at {PRONOUN/t_c/object}, snapping at {PRONOUN/t_c/object} to give it a rest.]",
+            "[It seems like no one in c_nClan is in much of a laughing mood. Defeated, t_c slinks back to {PRONOUN/t_c/poss} nest.]"
         ]
     ],
-
     "war_silly_AJ1": [
         [
             "focus",
-"no_kit",
+            "no_kit",
             "silly",
-	"unabashed",
-	"assertive",
+            "unabashed",
+            "assertive",
             "you_blind",
             "they_blind"
         ],
         [
             "Psh, w_cClan isn't so scary.",
-	"Try dealing with brooding_t_l when the last of {PRONOUN/brooding_t_l/poss} favorite prey is stolen from the pile. Now <i>that's</i> scary."
+            "Try dealing with brooding_t_l when the last of {PRONOUN/brooding_t_l/poss} favorite prey is stolen from the pile. Now <i>that's</i> scary."
+        ]
+    ],
+    "unlawful_war1": [
+        [
+            "Any",
+            "focus",
+            "unlawful",
+            "war"
+        ],
+        [
+            "[t_c slashes at the ground menacingly, mumbling to {PRONOUN/t_c/self} about the war.]",
+            "If any of those fox-hearts put even <i>one<i/> whisker over the border, I'll kill their leader myself as many times as it takes... they'll learn not to mess with c_nClan."
+        ]
+    ],
+    "unlawful_warGuy1": [
+        [
+            "no_kit",
+            "focus",
+            "unlawful",
+            "war"
+        ],
+        [
+            "I expect you to do anything we ask of you, y_c.",
+            "Even if it goes against the code, we will not let those mouse-dung eating w_cClan cats hurt our kits."
         ]
     ]
 }
