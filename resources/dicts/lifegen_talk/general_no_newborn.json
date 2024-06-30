@@ -2510,5 +2510,45 @@
             "*Puuuurrrrrr...* *Snoooorrreee...*",
             "[It's a lazy day today.]"
         ]
+    ],
+    "youdeaf_J3": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind",
+            "they_grieving",
+            "any"
+        ],
+        [
+            "... ... ..."
+        ]
+    ],
+    "youdeaf_J4": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind",
+            "they_grieving",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "... ... ..."
+        ]
+    ],
+    "youdeaf_J5": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "... ... ..."
+        ]
     ]
 }
