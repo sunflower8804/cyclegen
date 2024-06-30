@@ -4753,5 +4753,26 @@
         [
             "[t_c gives you a polite smile as you walk past.]"
         ]
+    ],
+    "youkit_deaf_J2": [
+        [
+            "they_deaf",
+            "you_deaf",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[It's sunny outside today! You can feel t_c's purrs through the ground from several tail-lengths away as {PRONOUN/t_c/subject} {VERB/t_c/laze/lazes} in the clearing.]"
+        ]
+    ],
+    "youkit_deaf_J3": [
+        [
+            "you_deaf",
+            "you_kitten"
+        ],
+        [
+            "[You can see t_c's mouth moving. Apparently, most cats can understand what they're saying when they communicate that way, but you can't.]",
+            "[When they notice you staring, t_c waves a paw at you.]"
+        ]
     ]
 }

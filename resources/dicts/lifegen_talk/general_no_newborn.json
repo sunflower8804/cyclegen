@@ -2488,5 +2488,27 @@
             "[You wobble to your paws, ready to practice this battle move one more time.]",
             "[t_c isn't as nice to you now as {PRONOUN/t_c/subject} {VERB/t_c/were/was} when you were a kit...]"
         ]
+    ],
+    "youdeaf_J1": [
+        [
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[You watch t_c's mouth moving from across camp. You wonder what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} saying.]"
+        ]
+    ],
+    "youdeaf_J2": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind",
+            "any"
+        ],
+        [
+            "*Puuuurrrrrr...* *Snoooorrreee...*",
+            "[It's a lazy day today.]"
+        ]
     ]
 }
