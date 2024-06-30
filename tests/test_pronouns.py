@@ -112,7 +112,8 @@ def test():
         "_neurotic",
         "_introspective",
         "_unabashed",
-        "_assertive"
+        "_assertive",
+        "_stable"
     ]
 
     rel_addons = [
