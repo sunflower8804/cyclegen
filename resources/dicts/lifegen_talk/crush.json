@@ -19,7 +19,8 @@
             "assertive",
             "cool",
             "unlawful",
-            "unabashed"
+            "unabashed",
+            "they_blind"
         ],
         [
             "[t_c and their_crush laugh hysterically together in the middle of the clearing, howls careening off the camp walls.]",
@@ -29,7 +30,9 @@
     "gen_crush4": [
         [
             "no_kit",
-            "introspective"
+            "introspective",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c sits alone at the edge of camp, grinning from ear to ear with a dreamy look in their eyes.]",
@@ -44,7 +47,9 @@
             "they_adult",
             "brooding",
             "assertive",
-            "unlawful"
+            "unlawful",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c stares at their_crush talking with r_w across camp, expression filled with pain.]",
@@ -72,7 +77,8 @@
             "assertive",
             "unlawful",
             "brooding",
-            "cool"
+            "cool",
+            "you_blind"
         ],
         [
             "[You ask t_c if the rumors about {PRONOUN/t_c/object} and their_crush are true.]",
@@ -86,7 +92,8 @@
     "crush_moveon": [
         [
             "no_kit",
-            "platonic_love"
+            "platonic_love",
+            "they_blind"
         ],
         [
             "Ah - maybe I just gotta face it, y_c. There's no way I'm gonna end up with their_crush, not in a million moons.",
@@ -102,7 +109,10 @@
             "upstanding",
             "stable",
             "introspective",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "[t_c is talking in {PRONOUN/t_c/poss} sleep.]",
@@ -117,7 +127,10 @@
             "unabashed",
             "cool",
             "assertive",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "You talk in your sleep, y'know, y_c? It woke me up last night",
@@ -146,7 +159,8 @@
             "they_app",
             "assertive",
             "cool",
-            "unabashed"
+            "unabashed",
+            "they_blind"
         ],
         [
             "And then, tm_n told me I had to do tick duty because r_a was out battle training, like, how is that fair?!",
@@ -161,7 +175,9 @@
     "hater_yourcrush": [
         [
             "any",
-            "dislike"
+            "dislike",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You don't stand a chance with your_crush ... You know that, don't you?",
@@ -176,7 +192,9 @@
             "cool",
             "unlawful",
             "unabashed",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Rumor around camp is that you have a thing for your_crush. Isn't that a laugh?",
@@ -191,7 +209,8 @@
             "assertive",
             "cool",
             "unabashed",
-            "silly"
+            "silly",
+            "they_went_blind"
         ],
         [
             "Hey, flea-brain! Wanna go on a walk later?",
@@ -201,7 +220,7 @@
             "Is there something going on that I should know about?",
             "[t_c grins and bats {PRONOUN/t_c/poss} eyelashes at you. Though you vehemently deny, you know {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} got your number.]",
             "It's okay. Your secret's safe with me, hehe!",
-            "[{PRONOUN/t_c/subject/CAP} dash off. Knowing t_c, the whole Clan will probably know about your crush on your_crush by tomorrow.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/dash/dashes} off. Knowing t_c, the whole Clan will probably know about your crush on your_crush by tomorrow.]"
         ]
     ],
     "inform_yourcrush": [
@@ -210,7 +229,9 @@
             "platonic_like",
             "assertive",
             "cool",
-            "respect"
+            "respect",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Look, y_c. You wanna get your_crush to like you - which, don't even try to deny, it's embarrassingly obvious - you need to work on your flirting skills.",
@@ -228,7 +249,9 @@
         [
             "any",
             "introspective",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "So, you and your_crush, hm? Interesting ...",
@@ -242,7 +265,9 @@
             "any",
             "neurotic",
             "sweet",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ah, y_c, you and your_crush are just so cute together. I'm so happy for the two of you.",
@@ -286,7 +311,8 @@
         [
             "any",
             "from_parent",
-            "adopted_parent"
+            "adopted_parent",
+            "you_blind"
         ],
         [
             "I've been seeing you and your_crush around together a lot ... am I gonna be getting some grandkits soon?",
@@ -298,7 +324,8 @@
         [
             "any",
             "from_parent",
-            "adopted_parent"
+            "adopted_parent",
+            "you_blind"
         ],
         [
             "Ah, seeing you and your_crush really takes me back ... The two of you are just like me and t_m were at your age!",
@@ -331,7 +358,9 @@
             "unlawful",
             "assertive",
             "cool",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Say, when are you and your_crush finally gonna make it official? I'm dying to have some little nieces and nephews to play with!",
@@ -363,7 +392,9 @@
             "they_app",
             "unabashed",
             "assertive",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Psst, y_c!",
@@ -400,7 +431,8 @@
             "cool",
             "sweet",
             "stable",
-            "upstanding"
+            "upstanding",
+            "you_blind"
         ],
         [
             "Is it just me, or has your_crush been coming into the medicine den an awful lot lately?",
@@ -418,6 +450,35 @@
             "[t_c catches you watching your_crush sharing tongues across camp.]",
             "Aw, buddy.",
             "Never gonna happen. Not now."
+        ]
+    ],
+    "deaf_crush_J1": [
+        [
+            "any",
+            "you_deaf",
+            "only_they_deaf",
+            "no_kit"
+        ],
+        [
+            "[As you stare at your_crush from across camp, t_c waves {PRONOUN/t_c/poss} tail in front of your face.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/cock/cocks} {PRONOUN/t_c/poss} head, but after glancing between you and your_crush, {VERB/t_c/seem/seems} to come to a realisation.]",
+            "..! *Wink*",
+            "[Ugh. You turn your focus elsewhere.]"
+        ]
+    ],
+    "deaf_crush_J2": [
+        [
+            "any",
+            "you_deaf",
+            "they_deaf",
+            "they_blind",
+            "only_you_blind",
+            "no_kit"
+        ],
+        [
+            "[As you sit next to t_c, you smell your_crush approach and lay down next to you.]",
+            "[{PRONOUN/your_crush/poss/CAP} scent is comforting, and when {PRONOUN/your_crush/poss} fur brushes yours, you feel your face grow hot.]",
+            "[t_c smacks your haunches teasingly with {PRONOUN/t_c/poss} tail, and you reach out a hind leg to kick {PRONOUN/t_c/object}. Against you, your_crush's body shakes with laughter.]"
         ]
     ]
 }

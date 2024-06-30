@@ -3,7 +3,9 @@
         [
             "they_dead",
             "any",
-            "you_dead"
+            "you_dead",
+            "you_blind",
+            "they_blind"
         ],
         [
             "My housefolk got a dog recently.",
@@ -13,7 +15,9 @@
     "live_df_ps_1": [
         [
             "they_df",
-            "any"
+            "any",
+            "you_blind",
+            "they_blind"
         ],
         [
             "How curious... a creature, roaming these rooted confinements.",
@@ -23,7 +27,9 @@
     "live_df_ps_2": [
         [
             "they_df",
-            "any"
+            "any",
+            "you_blind",
+            "they_blind"
         ],
         [
             "It seems you are lost in more ways than one.",
@@ -33,7 +39,9 @@
     "live_df_ps_3": [
         [
             "they_df",
-            "any"
+            "any",
+            "you_blind",
+            "they_blind"
         ],
         [
             "You can run as much as you'd like.",
@@ -44,7 +52,8 @@
     "live_df_ps_4": [
         [
             "they_df",
-            "any"
+            "any",
+            "you_blind"
         ],
         [
             "I've seen wondrous lands, even whilst alone and afraid.",
@@ -55,7 +64,9 @@
     "live_df_ps_5": [
         [
             "they_df",
-            "any"
+            "any",
+            "you_blind",
+            "they_blind"
         ],
         [
             "You can't trust anyone, I learnt that out there.",
@@ -66,7 +77,9 @@
         [
             "they_df",
             "any",
-            "no_kit"
+            "no_kit",
+            "you_blind",
+            "they_blind"
         ],
         [
             "How awful must I have been, to end up in the hell for a belief that I didn't even hold?",
@@ -79,7 +92,9 @@
             "they_ur",
             "they_kittypet",
             "kitten",
-            "newborn"
+            "newborn",
+            "you_blind",
+            "they_blind"
         ],
         [
             "Do you have a family, little one?",
@@ -104,7 +119,8 @@
             "kitten",
             "they_ur",
             "any",
-            "from_parent"
+            "from_parent",
+            "you_blind"
         ],
         [
             "Look, look! t_m!",
@@ -150,7 +166,9 @@
             "they_ur",
             "any",
             "no_kit",
-            "they_kittypet"
+            "they_kittypet",
+            "you_blind",
+            "they_blind"
         ],
         [
             "You know, the way you Clan cats live your lives is... interesting.",
@@ -163,7 +181,9 @@
             "they_ur",
             "any",
             "they_kitten",
-            "they_kittypet"
+            "they_kittypet",
+            "you_blind",
+            "they_blind"
         ],
         [
             "Hi! Um, I think I lost my housefolk. You wouldn't know where they are, would you?",
@@ -239,13 +259,15 @@
             "they_newborn",
             "you_sc",
             "they_ur",
-            "they_kittypet"
+            "they_kittypet",
+            "you_blind",
+            "they_blind"
         ],
         [
             "Mewwww...",
             "[Oh! A tiny kittypet kit has wandered to the border you were playing at.]",
             "Mew? Mew!",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/toddle/toddles} as fast as {PRONOUN/t_c/subject} can to your side and cuddle in. Maybe {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not a StarClan cat... But you can give {PRONOUN/t_c/object} some company!]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/toddle/toddles} as fast as {PRONOUN/t_c/subject} can to your side and {VERB/t_c/cuddle/cuddles} in. Maybe {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not a StarClan cat... But you can give {PRONOUN/t_c/object} some company!]",
             "[t_c drifts to sleep. Soon enough, so do you. When a queen finds you all alone later you don't mention the strange little visitor.]"
         ]
     ],
@@ -255,7 +277,8 @@
             "they_newborn",
             "you_sc",
             "they_ur",
-            "they_kittypet"
+            "they_kittypet",
+            "they_blind"
         ],
         [
             "[You're retrieving a moss-ball from near the border when you notice a newborn kittypet kit with transparent, misty fur that waves softly.]",
@@ -270,7 +293,8 @@
             "you_df",
             "they_kittypet",
             "they_ur",
-            "any"
+            "any",
+            "they_blind"
         ],
         [
             "[t_c approaches you, tail high and eyes bright.]",
@@ -283,11 +307,13 @@
             "you_df",
             "they_kittypet",
             "they_ur",
-            "any"
+            "any",
+            "you_blind",
+            "they_blind"
         ],
         [
             "What's on my agenda today... Hm...",
-            "Well, I was going to go visit my Housefolk, see how they're doing. I think they've been lonely without me bothering them all day, haha! Someone's got to take care of them.",
+            "Well, I was going to go visit my housefolk, see how they're doing. I think they've been lonely without me bothering them all day, haha! Someone's got to take care of them.",
             "After that, I'll go say hi to the kits, and take a nap by the old oak. Or maybe I should go to the river instead? What do you think? I like the oak better but-",
             "[You growl for this kittypet to just <i>stop talking</i>, but {PRONOUN/t_c/subject} {VERB/t_c/ignore/ignores} you and {VERB/t_c/continue/continues} rambling on.]"
         ]
@@ -297,7 +323,8 @@
             "they_ur",
             "you_ur",
             "they_kittypet",
-            "any"
+            "any",
+            "you_blind"
         ],
         [
             "I think I'm struggling a bit without the Twolegs that took care of me.",
@@ -309,8 +336,6 @@
             "you_ur",
             "they_ur",
             "they_kittypet",
-            "you_blind",
-            "they_blind",
             "any"
         ],
         [

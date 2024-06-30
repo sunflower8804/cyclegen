@@ -852,7 +852,7 @@
             "But, their wish came with a price.",
             "They say the leader became what we fear: a mountain lion. A lion that tore through the woods and destroyed everything in their path, including their Clan. It's rumored that the leader never returned to these lands, ashamed of their actions.",
             "It's a legend of lesson-- be careful of what you wish for.",
-            "I always felt bad for them. Leadership is not always a good thing. But, it was a lesson we all needed to hear as loners. Our wishes were sometimes unreachable, selfish, or even vengeful. I would never want to become what that Leader ended up being."
+            "I always felt bad for them. Leadership is not always a good thing. But, it was a lesson we all needed to hear as loners. Our wishes were sometimes unreachable, selfish, or even vengeful. I would never want to become what that leader ended up being."
         ]
     ],
     "legends_H2": [
@@ -1200,7 +1200,7 @@
         ],
         [
             "Listen up, kid, and I'll let you in on a little secret.",
-            "All this crap they're pumping into you about 'the warrior code' and 'doing your part for the Clan' ... In the long run, none of it actually matters.",
+            "All this crap they're pumping into you about 'the Warrior Code' and 'doing your part for the Clan' ... In the long run, none of it actually matters.",
             "The secret to life is figuring out what other cats want, and then giving it to them.",
             "Once you know how to do that, then you can practically get the entire Clan to eat out of the sole of your paw, and you don't even have to lift a toe.",
             "You can go about things whatever way you wish, I'm just telling you, this way's easiest.",
@@ -1738,9 +1738,9 @@
         ],
         [
             "Still watching over y_k?",
-            "... yeah I know that they're your kit, no matter who raises them.",
-            "[t_c bumps their head against your side.]",
-            "Just don't forget that they're one of us, too. We protect our own."
+            "... yeah I know that {PRONOUN/y_k/subject}{VERB/y_k/'re/'s} your kit, no matter who raises {PRONOUN/y_k/object}.",
+            "[t_c bumps {PRONOUN/t_c/poss} head against your side.]",
+            "Just don't forget that {PRONOUN/y_k/subject}{VERB/y_k/'re/'s} one of us, too. We protect our own."
         ]
     ],
     "they_df_CM1": [
@@ -1752,7 +1752,7 @@
         [
             "[Somehow, you've found yourself strolling across the border into a shadowed forest. Before you can fully cross the threshold between it and your own world, you catch sight of t_c, their eyes wide and pupils dilatated.]",
             "Get out.",
-            "[Their tone isn't aggressive. In fact, they almost sound like they're... begging you?]",
+            "[{PRONOUN/t_c/poss/CAP} tone isn't aggressive. In fact, {PRONOUN/t_c/subject} almost {VERB/t_c/sound/sounds} like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s}... begging you?]",
             "Get out! I'd do anything, anything to be like you - out there, able to watch over my loved ones without them fearing me.",
             "Look at me! Look at my paws, at my pelt. Look around you, oh for -- tsh! This isn't a place that you get to explore all carefree, not when you're free to go anywhere else.",
             "Please, just go. Before you get dragged in with me."
@@ -2321,6 +2321,172 @@
             "Ah, y_c! Wanna see what I do for entertainment?",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/throw/throws} one of the mice into the Dark Forest. You watch as a shadow slinks forward... and more shadows gather...]",
             "[t_c whoops and hollers at the fighting.]"
+        ]
+    ],
+    "deaf_J1": [
+        [
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "only_you_blind",
+            "any"
+        ],
+        [
+            "[You smell t_c approach, but {PRONOUN/t_c/subject} {VERB/t_c/bump/bumps} into you before {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} the same.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/give/gives} your side an apologetic tap before {PRONOUN/t_c/subject} {VERB/t_c/continue/continues} on {PRONOUN/t_c/poss} way.]"
+        ]
+    ],
+    "deaf_J2": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "[You can't tell if t_c's scent has a hint of blood to it now, or if you're just imagining that.]"
+        ]
+    ],
+    "deaf_J3": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "[t_c never gets as close to you as {PRONOUN/t_c/subject} used to.]"
+        ]
+    ],
+    "deaf_J4": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "both_shunned",
+            "any"
+        ],
+        [
+            "[t_c is the only cat who will lay next to you anymore.]"
+        ]
+    ],
+    "deaf_J5": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_dead",
+            "any"
+        ],
+        [
+            "[t_c seems confused at your presence.]"
+        ]
+    ],
+    "deaf_J6": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "they_dead",
+            "any"
+        ],
+        [
+            "[t_c's ghostly presence kind of freaks you out.]"
+        ]
+    ],
+    "deaf_J7": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_dead",
+            "they_dead",
+            "any"
+        ],
+        [
+            "[t_c brushes {PRONOUN/t_c/poss} ghostly pelt against yours.]"
+        ]
+    ],
+    "deaf_J8": [
+        [
+            "any",
+            "only_you_deaf",
+            "they_deaf",
+            "only_you_blind",
+            "they_blind"
+        ],
+        [
+            "[You and t_c roll around in the sun together.]"
+        ]
+    ],
+    "df_to_trainee_connected_J1~1": [
+        [
+            "they_df",
+            "you_kitten",
+            "they_older",
+            "they_cool",
+            "they_ancientspirit",
+            "connected",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey, there, kit. What's your name?",
+            "y_c? That's a great name. A nice, strong name.",
+            "Do you know where you are?",
+            "Mhm. Yes, you're in the Dark Forest.",
+            "You're very smart for knowing that, little kit. Do your Clanmates know how smart you are?",
+            "They probably don't. Those living Clan cats don't know anything.",
+            "You're different than them, though. You'd do well here.",
+            "Not yet, though. Come back when you're a bit older, and I'll show you around, okay?"
+        ]
+    ],
+    "df_to_trainee_connected_J1~2": [
+        [
+            "they_df",
+            "you_dftrainee",
+            "they_cool",
+            "from_df_mentor",
+            "they_ancientspirit",
+            "connected",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey, there, kit! I knew you'd come back!",
+            "Or, I guess you're not a kit anymore, eh?",
+            "Well, you might as well be, here.",
+            "Let's start training."
+        ]
+    ],
+    "df_to_trainee_connected_J1~3": [
+        [
+            "they_df",
+            "you_dftrainee",
+            "they_cool",
+            "from_df_mentor",
+            "they_ancientspirit",
+            "connected",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Get back up! Again!",
+            "[After falling to the ground during training, t_c swipes {PRONOUN/t_c/poss} claws over your ears and hisses at you to get back up.]",
+            "[You're more exhausted than you thought was possible. If you could just fall asleep, you could wake up back in the Clan...]",
+            "Eyes open, apprentice! Try again!",
+            "[You wobble to your paws, ready to practice this battle move one more time.]",
+            "[t_c isn't as nice to you now as {PRONOUN/t_c/subject} {VERB/t_c/were/was} when you were a kit...]"
         ]
     ]
 }

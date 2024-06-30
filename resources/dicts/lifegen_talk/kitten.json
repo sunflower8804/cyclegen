@@ -7,7 +7,9 @@
             "silly",
             "sweet",
             "cool",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, do you want to play warriors?",
@@ -21,7 +23,9 @@
         [
             "leaffall",
             "any",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Yay! Leaffall!",
@@ -33,7 +37,9 @@
     "kit_insult_1": [
         [
             "any",
-            "insult"
+            "insult",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Well you're... you're dumb!"
@@ -42,16 +48,166 @@
     "kit_insult_2": [
         [
             "any",
-            "insult"
+            "insult",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Well, you should... leave the shutting up... to you! Stupid!"
         ]
     ],
+    "kit_insult_3": [
+        [
+            "any",
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind"
+        ],
+        [
+            "[t_c hisses at you.]"
+        ]
+    ],
+    "kit_insult_4": [
+        [
+            "any",
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "they_shunned"
+        ],
+        [
+            "[t_c hisses at you.]"
+        ]
+    ],
+    "kit_insult_5": [
+        [
+            "any",
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_shunned"
+        ],
+        [
+            "[t_c hisses at you.]"
+        ]
+    ],
+    "kit_insult_6": [
+        [
+            "any",
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "both_shunned"
+        ],
+        [
+            "[t_c hisses at you.]"
+        ]
+    ],
+    "kitten_deaf_J1": [
+        [
+            "any",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind"
+        ],
+        [
+            "[t_c is rolling around in the sunshine.]"
+        ]
+    ],
+    "kitten_deaf_J2": [
+        [
+            "any",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "they_shunned"
+        ],
+        [
+            "[t_c is playing with a leaf.]"
+        ]
+    ],
+    "kitten_deaf_J3": [
+        [
+            "any",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_shunned"
+        ],
+        [
+            "[t_c flees as soon as {PRONOUN/t_c/subject} {VERB/t_c/smell/smells} you.]"
+        ]
+    ],
+    "kitten_deaf_J4": [
+        [
+            "any",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "both_shunned"
+        ],
+        [
+            "[You and t_c are taking a nap together.]"
+        ]
+    ],
+    "kitten_deaf_J5": [
+        [
+            "any",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "they_dead"
+        ],
+        [
+            "[t_c is rolling around in the grass.]"
+        ]
+    ],
+    "kitten_deaf_J6": [
+        [
+            "any",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_dead"
+        ],
+        [
+            "[t_c is playing with a pebble.]"
+        ]
+    ],
+    "kitten_deaf_J7": [
+        [
+            "any",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_dead",
+            "they_dead"
+        ],
+        [
+            "[t_c is chasing {PRONOUN/t_c/poss} tail.]"
+        ]
+    ],
     "kit_121": [
         [
             "Any",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Uh, sorry! The queens told me to stay away from you."
@@ -74,7 +230,9 @@
     "kit_129": [
         [
             "Any",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "r_c says you have a secret... Can you tell me? Please?"
@@ -84,11 +242,13 @@
         [
             "newborn",
             "sweet",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oops-! Careful there y_c! I don't think you're supposed to leave the nursery just yet, you're just a bit too young",
-            "The older cats wouldn't be too happy if they found out I let you out into the camp, but hey! There are tons of things to do here! We could play moss ball, Hunt the Feather, Invasion, anything!",
+            "The older cats wouldn't be too happy if they found out I let you out into the camp, but hey! There are tons of things to do here! We could play moss-ball, Hunt the Feather, Invasion, anything!",
             "You might be a little shaky on your paws, but that's alright! You're still getting used to them. Don't worry, I was like that too once. You'll find your balance soon enough, maybe you can go outside by then!",
             "There's a lot that I want to show you. What do you want to play first?"
         ]
@@ -96,7 +256,10 @@
     "kit2314": [
         [
             "medicine cat",
-            "talk_dead"
+            "talk_dead",
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hi there! I wasn't expecting to see you around right now, I thought you would be in your den or something with all those herbs. But look at the cool feather I found!",
@@ -112,7 +275,8 @@
             "no_kit",
             "unlawful",
             "assertive",
-            "brooding"
+            "brooding",
+            "you_blind"
         ],
         [
             "y_c, help! I'm playing hide and seek with my den mates, and I need to hide, quick!",
@@ -141,7 +305,9 @@
     "kit_16": [
         [
             "Any",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I love listening to the elders' stories. They're so exciting!",
@@ -157,7 +323,10 @@
             "unabashed",
             "newleaf",
             "greenleaf",
-            "leaffall"
+            "leaffall",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "y_c, we should go swimming! I heard some other cats do it all the time!",
@@ -169,7 +338,9 @@
     "kit_183": [
         [
             "elder",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Wow, you're so old... Are you going to join StarClan soon?"
@@ -180,7 +351,9 @@
             "any",
             "assertive",
             "silly",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c! y_c! y_c! y_c! y_c!",
@@ -190,7 +363,9 @@
     "kit_182": [
         [
             "elder",
-            "unabashed"
+            "you_unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Wow, you're so old... Are you going to join the Dark Forest soon? The queens say that's where grumpy cats go!"
@@ -202,7 +377,9 @@
             "silly",
             "unabashed",
             "unlawful",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hurry and open your eyes! It's getting really, really boring!",
@@ -213,7 +390,9 @@
     "app_321": [
         [
             "insult",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Waaahhh!!!!!!!!!"
@@ -223,7 +402,9 @@
         [
             "insult",
             "Any",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You don't really mean that... do you?"
@@ -232,7 +413,9 @@
     "app_321321": [
         [
             "insult",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "That's- That's not nice!"
@@ -243,7 +426,9 @@
             "you_newborn",
             "they_kitten",
             "assertive",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Awww, {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} so cute!! And little!!!",
@@ -254,17 +439,20 @@
         [
             "newborn",
             "assertive",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Yay! A new playmate!",
-            "What do you mean I can't play with them yet?"
+            "What do you mean I can't play with {PRONOUN/y_c/object} yet?"
         ]
     ],
     "assertiveappkit_elder": [
         [
             "elder",
-            "assertive"
+            "assertive",
+            "they_blind"
         ],
         [
             "y_c! y_c! Please, please, pleeeease could I get a story?",
@@ -294,7 +482,9 @@
         [
             "queen's apprentice",
             "silly",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, why aren't you out training with the other apprentices?",
@@ -305,7 +495,9 @@
     "assertivekit_01": [
         [
             "no_kit",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Bwahhhh! Hahahaha!",
@@ -330,7 +522,9 @@
         [
             "queen's apprentice",
             "assertive",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Come play with me, y_c!!!",
@@ -344,7 +538,9 @@
             "medicine cat apprentice",
             "assertive",
             "silly",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, what is it like being a mezidine cat? Is it fun?",
@@ -360,7 +556,9 @@
             "medicine cat apprentice",
             "assertive",
             "silly",
-            "unlawful"
+            "unlawful",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, y_c, come quick! r_c is hurt!!!",
@@ -373,7 +571,9 @@
     "assertivekit_6": [
         [
             "any",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c tackles you with a squeal.]",
@@ -390,7 +590,9 @@
             "mediator",
             "queen's apprentice",
             "queen",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, can you show me some battle moves? I want to be big and strong when I grow up, just like you!!!",
@@ -403,7 +605,9 @@
             "Any",
             "assertive",
             "unabashed",
-            "dislike"
+            "dislike",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hmph. You're no fun to play with.",
@@ -414,7 +618,9 @@
         [
             "insult",
             "assertive",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Go away, you big meanie!!!"
@@ -428,7 +634,9 @@
             "upstanding",
             "platonic_like",
             "comfort",
-            "trust"
+            "trust",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, no fair! I totally would've won that game! You cheated!",
@@ -441,7 +649,9 @@
             "warrior",
             "deputy",
             "leader",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, can I pleeeease come on patrol with you today? Please please please?",
@@ -452,7 +662,9 @@
     "assertivekit_18": [
         [
             "kitten",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, there's a fish on the freshkill pile! Wanna share it?",
@@ -478,7 +690,9 @@
         [
             "kitten",
             "assertive",
-            "unlawful"
+            "unlawful",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ugh, I'm sooo bored! There's nothing to do here!",
@@ -494,7 +708,9 @@
             "you_introspective",
             "you_neurotic",
             "you_sweet",
-            "you_upstanding"
+            "you_upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hmph. You're so boring, y_c. Why are you so quiet? It's like you never want to play, or break rules or do anything fun!",
@@ -505,7 +721,9 @@
         [
             "leader",
             "assertive",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You don't actually have nine lives, do you?",
@@ -517,11 +735,13 @@
         [
             "no_kit",
             "assertive",
-            "unlawful"
+            "unlawful",
+            "they_blind",
+            "you_blind"
         ],
         [
             "RAHHHH!",
-            "[t_c suddenly charges and pounces on your tail, tearing it to shreds with {PRONOUN/t_c/poss} little claws.]",
+            "[t_c suddenly charges and pounces on your tail, attempting to tear it to shreds with {PRONOUN/t_c/poss} little claws.]",
             "[You quickly chase {PRONOUN/t_c/object} off. Where do some kits find the nerve?]"
         ]
     ],
@@ -533,7 +753,9 @@
             "upstanding",
             "silly",
             "sibling",
-            "adopted_sibling"
+            "adopted_sibling",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, y_p says it's my turn with the moss-ball! You have to give it back!",
@@ -548,7 +770,9 @@
             "brooding",
             "platonic_like",
             "sibling",
-            "adopted_sibling"
+            "adopted_sibling",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey!!! Was someone picking on you?",
@@ -562,7 +786,9 @@
             "assertive",
             "platonic_like",
             "sibling",
-            "adopted_sibling"
+            "adopted_sibling",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I just talked to y_p, and we're allowed to play outside today!!!",
@@ -577,7 +803,9 @@
             "brooding",
             "platonic_like",
             "sibling",
-            "adopted_sibling"
+            "adopted_sibling",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ughhh, y_p says we're not allowed to leave the nursery today!",
@@ -592,7 +820,9 @@
             "Any",
             "platonic_like",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "*Yaaawwn*",
@@ -609,7 +839,9 @@
             "unabashed",
             "platonic_like",
             "sibling",
-            "adopted_sibling"
+            "adopted_sibling",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Raaahhh!",
@@ -642,7 +874,9 @@
             "assertive",
             "unlawful",
             "brooding",
-            "littermate"
+            "littermate",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, wanna play leader and deputy?",
@@ -659,7 +893,9 @@
             "brooding",
             "sibling",
             "adopted_sibling",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm gonna catch you! Hahaha!",
@@ -675,7 +911,9 @@
             "Any",
             "kitten",
             "from_adopted_kit",
-            "from_kit"
+            "from_kit",
+            "you_deaf",
+            "they_deaf"
         ],
         [
             "[You spot t_c talking with the elders across camp, {PRONOUN/t_c/poss} little eyes shining with excitement.]",
@@ -688,7 +926,9 @@
             "kitten",
             "assertive",
             "from_adopted_kit",
-            "from_kit"
+            "from_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, when I'm a warrior, you'll never have to worry again!",
@@ -706,7 +946,9 @@
             "sweet",
             "platonic_like",
             "from_adopted_kit",
-            "from_kit"
+            "from_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c!!!!",
@@ -724,7 +966,9 @@
             "sweet",
             "platonic_like",
             "from_adopted_kit",
-            "from_kit"
+            "from_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c! y_c! I had the most funnest day ever today!",
@@ -741,7 +985,8 @@
             "unlawful",
             "platonic_like",
             "from_adopted_kit",
-            "from_kit"
+            "from_kit",
+            "they_blind"
         ],
         [
             "[t_c stumbles across camp to you, soaking wet and covered in mud.]",
@@ -755,7 +1000,10 @@
             "kitten",
             "platonic_like",
             "from_adopted_kit",
-            "from_kit"
+            "from_kit",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c wakes up from {PRONOUN/t_c/poss} nap with fur so spiky, {PRONOUN/t_c/subject} {VERB/t_c/look/looks} like a little porcupine!]",
@@ -783,7 +1031,8 @@
             "kitten",
             "platonic_like",
             "from_adopted_kit",
-            "from_kit"
+            "from_kit",
+            "you_went_blind"
         ],
         [
             "[t_c is throwing a tantrum. You decide to try out a trick that r_q taught you.]",
@@ -802,7 +1051,9 @@
             "unlawful",
             "platonic_like",
             "from_adopted_kit",
-            "from_kit"
+            "from_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c accidentally drops {PRONOUN/t_c/poss} moss-ball while playing.]",
@@ -818,7 +1069,9 @@
             "silly",
             "unlawful",
             "upstanding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "r_c just told me the funniest joke ever!",
@@ -829,7 +1082,9 @@
     "introspective_kit": [
         [
             "Any",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Huh? You think I should ask some of the other cats if they want to play?",
@@ -839,7 +1094,9 @@
     "introspective_kit_1": [
         [
             "any",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c?",
@@ -851,7 +1108,9 @@
     "introspective_kit_2": [
         [
             "kitten",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[You decide to eavesdrop onto one of t_c's games.]",
@@ -880,7 +1139,11 @@
         [
             "kitten",
             "Introspective",
-            "dislike"
+            "dislike",
+            "they_blind",
+            "you_blind",
+            "you_deaf",
+            "they_deaf"
         ],
         [
             "[t_c seems to be pretending that you aren't there.]"
@@ -912,12 +1175,16 @@
     "sweet_kit_3": [
         [
             "Any",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Hey y_c! Can I tell you a story?",
             "I promise you'll like it! I heard it and I just knew I had to tell you too!!",
-            "One day, there was this super big mama deer. The mama deer protected her babies from wolves and bears and even snakes!! Cause she loved her babies!! And then they all made it to a huge field of flowers and were super duper happy!",
+            "One day, there was this super big mama deer. The mama deer protected her babies from wolves and bears and even snakes!! Cause she loved her babies!!",
+            "And then they all made it to a huge field of flowers and were super duper happy!",
             "Hehe, do you like it?"
         ]
     ],
@@ -937,7 +1204,9 @@
     "sweet_kit_5": [
         [
             "kitten",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hiya, y_c! I brought you these flowers, I really really hope you like them! They were really hard to get, hehe.",
@@ -948,7 +1217,9 @@
     "sweet_kit_6": [
         [
             "kitten",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c!! y_c!! Hi! Do you wanna race with me?",
@@ -962,7 +1233,9 @@
             "queen's apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Whoa!! That was super cool, y_c!! Can you show me that move again?",
@@ -976,7 +1249,9 @@
             "queen's apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hiya y_c!! What's it like having a mentor?",
@@ -987,18 +1262,23 @@
     "sweet_kit_9": [
         [
             "apprentice",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "y_c!! y_c!! Are you okay??",
             "r_c told me you had a minor accident in training, I heard you fell and hurt your paw!!",
-            "Oh thank goodness you're okay, please please go visit the Meddy Cat just in case!!"
+            "Oh thank goodness you're okay, please please go visit the meddy cat just in case!!"
         ]
     ],
     "sweet_kit_101": [
         [
             "medicine cat apprentice",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey y_c! r_c has a bellyache so I told {PRONOUN/r_c/object} I'd come and get you!",
@@ -1009,7 +1289,8 @@
     "sweet_kit_102": [
         [
             "mediator apprentice",
-            "sweet"
+            "sweet",
+            "you_blind"
         ],
         [
             "y_c, how do you get people to stop fighting all the time? I see it a lot and it makes me very sad.",
@@ -1020,7 +1301,9 @@
     "sweet_kit_103": [
         [
             "queen's apprentice",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hiya y_c!! I made sure to clean up my nest just for you!",
@@ -1038,7 +1321,7 @@
         ],
         [
             "Whoaaaa!! y_c, come and see this!",
-            "I'm not normally allowed out of the Nursery so late, what's that in the sky?",
+            "I'm not normally allowed out of the nursery so late, what's that in the sky?",
             "A sunset? I get to see this every single day?",
             "That's so cool!!! Thank you so much for showing me this! I gotta go tell everyone!"
         ]
@@ -1049,7 +1332,9 @@
             "medicine cat",
             "mediator",
             "queen",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey y_c! I made you this little thingy, plike_r_c says it's called a trinket.",
@@ -1071,7 +1356,9 @@
     "sweet_kit_14": [
         [
             "medicine cat",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh y_c!! The other kits came in here and kept messing up your herbs! I tried to stop them but they wouldn't listen...",
@@ -1082,7 +1369,9 @@
     "sweet_kit_15": [
         [
             "mediator",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey y_c! Cats keep telling me you're the cat to go to if I have issues!",
@@ -1093,7 +1382,10 @@
     "sweet_kit_16": [
         [
             "queen",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Hey um... y_c?",
@@ -1105,7 +1397,9 @@
     "sweet_kit_17": [
         [
             "deputy",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c! Can you put me on a patrol, pretty please? I wanna go and get some flowers for the nursery!",
@@ -1117,7 +1411,9 @@
     "sweet_kit_18": [
         [
             "deputy",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey y_c? What's being a deputy like?",
@@ -1129,7 +1425,9 @@
         [
             "deputy",
             "sweet",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hiya y_c!! Another day of deputying? Whaddya gotta do today?",
@@ -1141,7 +1439,9 @@
         [
             "leader",
             "sweet",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ah ah- I'm not following you around- I'm just walking in the same direction.. Um... not purposefully!!",
@@ -1164,7 +1464,10 @@
     "sweet_kit_22": [
         [
             "leader",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Hey um... y_c? Um... are you okay?",
@@ -1176,7 +1479,8 @@
         [
             "elder",
             "sweet",
-            "silly"
+            "silly",
+            "they_hearing"
         ],
         [
             "y_c!! y_c!! Good morning!!",
@@ -1187,7 +1491,10 @@
     "sweet_kit_24": [
         [
             "elder",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Heya y_c! ... I have a small question.",
@@ -1201,7 +1508,9 @@
             "Any",
             "assertive",
             "they_grieving",
-            "dead_close"
+            "dead_close",
+            "they_blind",
+            "you_blind"
         ],
         [
             "*Sniffle* What happened to d_c? I miss {PRONOUN/d_c/object} ...",
@@ -1228,7 +1537,9 @@
             "Any",
             "assertive",
             "they_grieving",
-            "dead_close"
+            "dead_close",
+            "they_blind",
+            "you_blind"
         ],
         [
             "*Sniffle* What happened to d_c? I miss {PRONOUN/d_c/object} ...",
@@ -1243,7 +1554,9 @@
             "no_kit",
             "assertive",
             "silly",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "d_c's not really gone, right?",
@@ -1255,7 +1568,10 @@
         [
             "dead_close",
             "they_grieving",
-            "any"
+            "any",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c is curled up in {PRONOUN/t_c/poss} nest, clinging to a scrap of fur that d_c left behind ...]",
@@ -1267,7 +1583,11 @@
             "any",
             "introspective",
             "dead_close",
-            "you_grieving"
+            "you_grieving",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c just quietly sat down next to you.]",
@@ -1279,7 +1599,9 @@
         [
             "dead_close",
             "they_grieving",
-            "any"
+            "any",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c's gaze is fixed on the corner of camp where d_c used to spend the most time.]",
@@ -1289,7 +1611,9 @@
     "theygrief_3": [
         [
             "they_grieving",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "No, no, no ...",
@@ -1300,7 +1624,9 @@
     "theygrief_4": [
         [
             "they_grieving",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c shifts and twitches restlessly in {PRONOUN/t_c/poss} sleep. {PRONOUN/t_c/subject/CAP} must be having a nightmare.]",
@@ -1351,7 +1677,9 @@
             "they_grieving",
             "dislike",
             "sweet",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[Out of seemingly nowhere, t_c breaks down crying. {PRONOUN/t_c/subject/CAP} {VERB/t_c/press/presses} {PRONOUN/t_c/poss} head into your shoulder, mumbling out a soft mew.]",
@@ -1362,7 +1690,10 @@
         [
             "dead_close",
             "they_grieving",
-            "any"
+            "any",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c seems to be cleaning out a nest... d_c's nest...]",
@@ -1374,7 +1705,9 @@
             "any",
             "introspective",
             "dead_close",
-            "they_grieving"
+            "they_grieving",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c stares off into the distance, an oddly blank look on {PRONOUN/t_c/poss} face.]",
@@ -1386,7 +1719,9 @@
             "any",
             "introspective",
             "dead_close",
-            "they_grieving"
+            "they_grieving",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "...",
@@ -1401,7 +1736,9 @@
         [
             "any",
             "dead_close",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Leave me alone ..."
@@ -1411,7 +1748,10 @@
         [
             "any",
             "dead_close",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c clutches one of d_c's trinkets close to {PRONOUN/t_c/poss} chest.]",
@@ -1422,7 +1762,9 @@
         [
             "any",
             "dead_close",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c seems to be whispering to {PRONOUN/t_c/self} in {PRONOUN/t_c/poss} nest.]",
@@ -1449,7 +1791,10 @@
         [
             "any",
             "dead_close",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c tucks {PRONOUN/t_c/poss} nose under {PRONOUN/t_c/poss} paw, completely dead to the world.]",
@@ -1460,7 +1805,10 @@
         [
             "any",
             "dead_close",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[While taking a nap, t_c instinctually reaches for d_c's nest with {PRONOUN/t_c/poss} paw.]",
@@ -1487,7 +1835,9 @@
         [
             "any",
             "dead_close",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[You think t_c is actually taking d_c's death pretty well, all things considered ...]",
@@ -1499,7 +1849,8 @@
         [
             "kitten",
             "silly",
-            "they_injured"
+            "they_injured",
+            "they_blind"
         ],
         [
             "[You butt your tiny little nose into the medicine den, where you see t_c sitting up, completely unbothered, on a broken nest formerly made from intricately woven sticks. It seems as though some of them have been pulled out and laid on the floor to play sticks with r_m.]",
@@ -1512,7 +1863,9 @@
     "silly_kit_sleepy": [
         [
             "Any",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c... I'm so... sleepy... [yawn]",
@@ -1528,7 +1881,9 @@
     "silly_kit_howling": [
         [
             "Any",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "AWOO! AW-AW-AWOOO!",
@@ -1578,7 +1933,11 @@
             "any",
             "brooding",
             "unlawful",
-            "from_kit"
+            "from_kit",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[You catch t_c in the middle of a plot to prank the newborns.]",
@@ -1605,7 +1964,9 @@
             "brooding",
             "comfort",
             "trust",
-            "from_kit"
+            "from_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c trudges over from the opposite side of the nursery and slumps over at your side.]",
@@ -1619,7 +1980,9 @@
         [
             "any",
             "brooding",
-            "platonic_love"
+            "platonic_love",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hmph. I swear, y_c, you're the only cat in all of c_nClan who I like to play with at all.",
@@ -1631,7 +1994,9 @@
         [
             "any",
             "brooding",
-            "unlawful"
+            "unlawful",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c! Wanna play?",
@@ -1645,7 +2010,9 @@
             "any",
             "brooding",
             "upstanding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Wake up, y_c! Wake up, wake up, wake up!!!",
@@ -1665,7 +2032,9 @@
             "deputy",
             "brooding",
             "neutral",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Who are you? What are you doing in the nursery?",
@@ -1677,7 +2046,9 @@
             "any",
             "brooding",
             "neutral",
-            "dislike"
+            "dislike",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You smell like crowfood! Hahahaha!"
@@ -1688,7 +2059,9 @@
             "medicine cat",
             "medicine cat apprentice",
             "brooding",
-            "neutral"
+            "neutral",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Eughh ... What's that weird smell?",
@@ -1700,7 +2073,9 @@
         [
             "any",
             "brooding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c! Come squish bugs with me!",
@@ -1712,7 +2087,9 @@
         [
             "any",
             "brooding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, d'you think if we told r_k to go call l_n a mange-ridden fuzz-brain, {PRONOUN/r_k/subject}'d do it?",
@@ -1736,7 +2113,9 @@
         [
             "any",
             "brooding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c? What's wrong? Are you sad?",
@@ -1747,7 +2126,9 @@
         [
             "kitten",
             "brooding",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Tch. Moss-ball? That babyish game?",
@@ -1769,7 +2150,9 @@
     "broodingnewborn_17": [
         [
             "kitten",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "No, mouse-brain, you can't play with me!",
@@ -1779,7 +2162,9 @@
     "broodingnewborn_18": [
         [
             "kitten",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "*Sniffle* *Sob*",
@@ -1790,7 +2175,9 @@
     "broodingnewborn_19": [
         [
             "any",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c is running around squishing all the bugs around the nursery.]",
@@ -1801,7 +2188,11 @@
         [
             "no_kit",
             "brooding",
-            "unlawful"
+            "unlawful",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c is tearing all the moss in r_q's nest to shreds.]",
@@ -1811,7 +2202,10 @@
     "broodingnewborn_21": [
         [
             "any",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[You spot t_c sharpening {PRONOUN/t_c/poss} little claws in the corner.]",
@@ -1821,7 +2215,11 @@
     "broodingnewborn_22": [
         [
             "any",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "...",
@@ -1831,7 +2229,9 @@
     "neurotic_kit_": [
         [
             "warrior",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, y_c, I have a question.",
@@ -1842,7 +2242,9 @@
         [
             "any",
             "neurotic",
-            "non-related"
+            "non-related",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh... I'm really sorry, I think I forgot your name."
@@ -1852,7 +2254,11 @@
         [
             "any",
             "neurotic",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[As soon as t_c notices you approach, {PRONOUN/t_c/subject} {VERB/t_c/squeal/squeals} in fear and {VERB/t_c/race/races} away.]"
@@ -1913,7 +2319,9 @@
     "neurotic_kit__8": [
         [
             "no_kit",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Every time I try to play with the other kits... I just keep thinking... What if I mess up?",
@@ -1923,7 +2331,8 @@
     "neurotic_kit__9": [
         [
             "any",
-            "neurotic"
+            "neurotic",
+            "they_blind"
         ],
         [
             "[t_c sniffles as {PRONOUN/t_c/subject} {VERB/t_c/curl/curls} up underneath {PRONOUN/t_c/poss} nest, jumping as you grow close.]",
@@ -1948,7 +2357,9 @@
             "any",
             "neurotic",
             "from_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "r_k said that {PRONOUN/r_k/subject} were going to sneak into the warrior's den... But I was too scared.",
@@ -1959,7 +2370,9 @@
         [
             "any",
             "from_kit",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... H- Hey, I'm gonna be a good warrior, right? Like you said?",
@@ -1972,7 +2385,9 @@
         [
             "any",
             "trust",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Quick! The scary monster is gonna get me!",
@@ -1997,7 +2412,9 @@
         [
             "any",
             "neurotic",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Teehee! y_c! Come play with me!",
@@ -2022,7 +2439,9 @@
     "neurotic_kit__17": [
         [
             "kitten",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Y- You don't think I'm annoying, do you?"
@@ -2032,7 +2451,10 @@
         [
             "any",
             "dislike",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[Before you can even get close, t_c tears up and runs away from you.]"
@@ -2056,7 +2478,9 @@
             "queen's apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um, y_c? What are you doing? Can I.. um.. h-... help?",
@@ -2067,7 +2491,9 @@
     "stable_kit_01": [
         [
             "Any",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hello there, y_c!",
@@ -2089,7 +2515,9 @@
     "stable_kit_03": [
         [
             "no_kit",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, hi y_c... Yeah, I'm okay.",
@@ -2113,7 +2541,9 @@
             "Any",
             "stable",
             "sweet",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c, can I share some of me fabulous wisdem?",
@@ -2125,11 +2555,13 @@
         [
             "kitten",
             "stable",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, question of the day, incoming! In, 3! 2! 1!",
-            "Why does dislike_r_c stink so badly, it's like {PRONOUN/r_c/subject} {VERB/t_c/haven't/hasn't} had a bath in a moon.",
+            "Why does r_c stink so badly? It's like {PRONOUN/r_c/subject} {VERB/t_c/haven't/hasn't} had a bath in a moon.",
             "Hey, I said it was a question, not that I had an answer."
         ]
     ],
@@ -2172,7 +2604,9 @@
     "stable_kit_10": [
         [
             "kitten",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey! Hey!",
@@ -2185,7 +2619,9 @@
         [
             "kitten",
             "stable",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Sorry, did you say something?",
@@ -2200,7 +2636,9 @@
             "mediator apprentice",
             "medicine cat apprentice",
             "queen's apprentice",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Being an apprentice must be hard, having so many responsibilities. Can't wait until I train beside you!",
@@ -2214,7 +2652,8 @@
             "mediator apprentice",
             "medicine cat apprentice",
             "queen's apprentice",
-            "stable"
+            "stable",
+            "you_blind"
         ],
         [
             "Your mentor just gave you an earful, that was hard to watch.",
@@ -2225,7 +2664,9 @@
     "stable_kit_14": [
         [
             "apprentice",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Wowza! You looked soooo cool just now y_c! That was such a cool and slick move! Can you teach me?",
@@ -2239,7 +2680,8 @@
             "mediator apprentice",
             "medicine cat apprentice",
             "queen's apprentice",
-            "stable"
+            "stable",
+            "you_blind"
         ],
         [
             "You've grown a lot stronger since you left the nursery. I wonder what it's like, to be so small then suddenly get so big and cool!",
@@ -2268,18 +2710,22 @@
             "mediator apprentice",
             "medicine cat apprentice",
             "queen's apprentice",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "HEY! Don't think I didn't see you sneak an extra mouse from the freshkill pile this morning!",
             "y_c, tsk, tsk, tsk. You're not that smart, y'know. Look at you, just because you're big, you think you're soooooo sneaky and can get away with anything? Hmph!",
-            "If I were an apprentice, I'd never go against the warrior code."
+            "If I were an apprentice, I'd never go against the Warrior Code."
         ]
     ],
     "stable_kit_18": [
         [
             "Any",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh! Hello y_c!"
@@ -2288,7 +2734,11 @@
     "stable_kit_19": [
         [
             "Any",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[You watch as t_c chases {PRONOUN/t_c/poss} tail while the other kits laugh hysterically.]"
@@ -2297,7 +2747,9 @@
     "stable_kit_20": [
         [
             "Any",
-            "stable"
+            "stable",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c looks up at you and nods respectfully.]"
@@ -2306,7 +2758,8 @@
     "stable_kit_21": [
         [
             "warrior",
-            "stable"
+            "stable",
+            "you_blind"
         ],
         [
             "Wowie! When I grow up I cannot wait to be as big as you! Look at your long claws, and your teeth! I hope my fangs will be that sharp someday!"
@@ -2315,11 +2768,13 @@
     "stable_kit_22": [
         [
             "warrior",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Can I ask you a question, y_c?",
-            "Why do we follow the warrior code? It just sounds strange because why do we let cats of the past tell us who we have to be? I get it but- I just hope StarClan has a plan for me, a great one!",
+            "Why do we follow the Warrior Code? It just sounds strange because why do we let cats of the past tell us who we have to be? I get it but- I just hope StarClan has a plan for me, a great one!",
             "Maybe I'll be a leader? Someone who you can rely on. Or a deputy, proud to serve the Clan! Maybe a warrior, strong like you. Or what about a medicine cat? Or a queen?",
             "I don't know yet, but when I do, I'll tell you! And, you'll be there to help me, right?"
         ]
@@ -2327,7 +2782,9 @@
     "neurotic_kit__22": [
         [
             "kitten",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c seems to be crying, curled up in a ball. r_k seems to be picking on {PRONOUN/t_c/object}, though it's hard to tell if it's intentional or not. Regardless, you step in and scare {PRONOUN/r_k/object} off.]",
@@ -2350,7 +2807,9 @@
         [
             "medicine cat",
             "medicine cat apprentice",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c! y_c! r_k told me I had Deathcough!! Am I gonna die? Please tell me!",
@@ -2361,7 +2820,8 @@
     "neurotic_kit__25": [
         [
             "no_kit",
-            "neurotic"
+            "neurotic",
+            "you_blind"
         ],
         [
             "o_cClan cats!!",
@@ -2371,7 +2831,9 @@
     "neurotic_kit__26": [
         [
             "any",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c slams into you a little too hard while playing.]",
@@ -2401,10 +2863,11 @@
         [
             "queen",
             "queen's apprentice",
-            "neurotic"
+            "neurotic",
+            "they_blind"
         ],
         [
-            "[It's raining outside and, as you watch over the Nursery dutifully, you feel something small press against your side.]",
+            "[It's raining outside and, as you watch over the nursery dutifully, you feel something small press against your side.]",
             "[It's t_c, quivering quietly and trying to mask {PRONOUN/t_c/poss} sobbing. It seems the rain is scaring {PRONOUN/t_c/object}, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} too nervous to say anything.]",
             "[You curl your tail over {PRONOUN/t_c/object} to comfort {PRONOUN/t_c/object}, and {PRONOUN/t_c/subject} {VERB/t_c/snuggle/snuggles} closer to you. It seems {PRONOUN/t_c/subject} {VERB/t_c/appreciate/appreciates} the gesture, and eventually {PRONOUN/t_c/subject} {VERB/t_c/fall/falls} asleep in your safe embrace.]"
         ]
@@ -2416,7 +2879,9 @@
             "you_stable",
             "you_upstanding",
             "you_cool",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[You've started to notice how much t_c seems to hang around you, even if you don't usually talk when {PRONOUN/t_c/subject} {VERB/t_c/do/does}.]",
@@ -2428,7 +2893,10 @@
     "unabashed kit3": [
         [
             "unabashed",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "[You notice t_c standing on a large rock.]",
@@ -2443,7 +2911,9 @@
         [
             "kitten",
             "brooding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c, do you remember that time when I tripped r_k and {PRONOUN/r_k/subject} fell in that mud puddle?",
@@ -2490,7 +2960,9 @@
     "upstanding_kit": [
         [
             "upstanding",
-            "kitten"
+            "kitten",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I decided that I'm going to be the greatest c_nClan cat ever!",
@@ -2502,7 +2974,9 @@
         [
             "upstanding",
             "queen",
-            "queen's apprentice"
+            "queen's apprentice",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c! You'll never believe what r_k_unlawful tried to do!",
@@ -2515,7 +2989,9 @@
         [
             "upstanding",
             "queen",
-            "queen's apprentice"
+            "queen's apprentice",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c! y_c! r_k is getting into trouble again!"
@@ -2525,7 +3001,9 @@
         [
             "upstanding",
             "queen",
-            "queen's apprentice"
+            "queen's apprentice",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c!",
@@ -2539,7 +3017,9 @@
             "any",
             "upstanding",
             "from_kit",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c is stumbling after r_m, holding a couple of herbs in {PRONOUN/t_c/poss} mouth. As you catch {PRONOUN/t_c/poss} eye, {PRONOUN/t_c/subject} {VERB/t_c/perk/perks} up and {VERB/t_c/call/calls} out to you.]",
@@ -2555,10 +3035,12 @@
         [
             "upstanding",
             "queen",
-            "queen's apprentice"
+            "queen's apprentice",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[Since sunhigh, you have been trying to convince t_c to take a nap, going back and forth with the kit who outright refused to lie down.]",
+            "[Since sunhigh, you have been trying to convince t_c to take a nap, going back and forth with the kit who outright refuses to lie down.]",
             "But I can't take a nap! I need to become the best warrior in c_nClan, and warriors don't take naps!",
             "Besides, I... I can help you and stuff! Warriors... *yawn* warriors help cats all the time! So why can't I...",
             "[t_c's sentence is cut off by a yawn as {PRONOUN/t_c/subject} {VERB/t_c/slump/slumps} down into {PRONOUN/t_c/poss} nest.]",
@@ -2595,7 +3077,9 @@
         [
             "upstanding",
             "insult",
-            "kitten"
+            "kitten",
+            "they_blind",
+            "you_blind"
         ],
         [
             "H-hey! You can't just say that! r_q!"
@@ -2605,7 +3089,9 @@
         [
             "Any",
             "neurotic",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Eek!",
@@ -2618,7 +3104,9 @@
             "Any",
             "neurotic",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "...",
@@ -2628,7 +3116,8 @@
     ],
     "neurotic_kit2": [
         [
-            "Any"
+            "Any",
+            "they_deaf"
         ],
         [
             "Heehee!",
@@ -2652,7 +3141,11 @@
         [
             "any",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c presses against your side, sound asleep.]",
@@ -2663,7 +3156,10 @@
         [
             "any",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[While t_c sleeps, you like to make a game out of counting all the toes on {PRONOUN/t_c/poss} paws.]",
@@ -2675,10 +3171,13 @@
         [
             "any",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "you_blind",
+            "they_deaf"
         ],
         [
-            "[t_c chases t_s around the nursery, squealing with laughter.]",
+            "[t_c chases t_l around the nursery, squealing with laughter.]",
             "[Seems like the two siblings have become fast friends!]"
         ]
     ],
@@ -2686,7 +3185,9 @@
         [
             "any",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "*Sniffle* *Sniffle*",
@@ -2702,7 +3203,10 @@
         [
             "any",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c and t_s play a game of moss-ball, racing back and forth across the nursery.]",
@@ -2723,7 +3227,11 @@
         [
             "any",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c walks over and flops down against your side.]",
@@ -2735,7 +3243,9 @@
         [
             "any",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, trust_r_c just explained to me what 'dying' means.",
@@ -2751,7 +3261,9 @@
         [
             "any",
             "from_adopted_kit",
-            "they_abandoned"
+            "they_abandoned",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c catches a feather, then beams at you with that adorable little smile of {PRONOUN/t_c/inposs}.]",
@@ -2762,7 +3274,11 @@
         [
             "any",
             "from_adopted_kit",
-            "they_abandoned"
+            "they_abandoned",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[As t_c snuggles at your side, you think about {PRONOUN/t_c/poss} real parents, if they're out looking somewhere for {PRONOUN/t_c/object}.]",
@@ -2789,7 +3305,9 @@
         [
             "upstanding",
             "mediator",
-            "mediator apprentice"
+            "mediator apprentice",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, I have a job for you.",
@@ -2803,7 +3321,9 @@
             "upstanding",
             "no_kit",
             "platonic_like",
-            "leader"
+            "leader",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[You catch t_c peering at you from the nursery. From the far side of the camp, you can just make out {PRONOUN/t_c/poss} determined expression.]"
@@ -2813,7 +3333,8 @@
         [
             "newborn",
             "brooding",
-            "unabashed"
+            "unabashed",
+            "you_blind"
         ],
         [
             "... Why's it so small and ugly looking?",
@@ -2824,7 +3345,8 @@
         [
             "newborn",
             "introspective",
-            "neurotic"
+            "neurotic",
+            "you_blind"
         ],
         [
             "...",
@@ -2837,7 +3359,8 @@
         [
             "newborn",
             "assertive",
-            "silly"
+            "silly",
+            "you_blind"
         ],
         [
             "Okay, y_c. I know none of the other cats think you can talk yet, but they're not here now! It's just you and me.",
@@ -2849,7 +3372,8 @@
     "newborn_fromkit3": [
         [
             "newborn",
-            "sweet"
+            "sweet",
+            "you_blind"
         ],
         [
             "[t_c takes one look at you and immediately bursts into tears.]",
@@ -2859,7 +3383,8 @@
     "stable_kit_younewborn_1": [
         [
             "newborn",
-            "stable"
+            "stable",
+            "you_blind"
         ],
         [
             "Wowza, look at y_c! Aww, {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} so tiny, like a miniature version of you, y_p!",
@@ -2880,7 +3405,8 @@
     ],
     "stable_kit_younewborn_3": [
         [
-            "newborn"
+            "newborn",
+            "they_blind"
         ],
         [
             "[t_c trots into the nursery and drops a mossball into the nest.]",
@@ -2890,7 +3416,7 @@
             "[r_c states that it's a nice gesture and lovely thought but maybe y_p wouldn't want {PRONOUN/y_p/poss} kittens playing with such a big toy until you're a little older.]",
             "[y_p laughs it off and pushes the ball towards t_c and asks if {PRONOUN/t_c/poss/subject} {VERB/t_c/want/wants} to play.]",
             "Really? YES!",
-            "[You squint as you watch your loving {PRONOUN/t_c/parent} paw the ball back and forth, your whiskers twitch eagerly, maybe when you're older this will be a fun game! You will remember this.]"
+            "[You squint as you watch your loving {PRONOUN/y_p/parent} and t_c paw the ball back and forth, and your whiskers twitch eagerly. Maybe when you're older this will be a fun game! You will remember this.]"
         ]
     ],
     "stable_kit_younewborn_4": [
@@ -2914,7 +3440,7 @@
         [
             "Hello y_c! Welcome to c_nClan! It's so very nice to meet you!",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/plop/plops} down next to you, forming the smallest loaf as {PRONOUN/t_c/subject} {VERB/t_c/start/starts} to purr.]",
-            "I'm t_c! That over there is the Leader's Den, and that's the Warrior's Den, and-!",
+            "I'm t_c! That over there is the leader's den, and that's the warrior's den, and-!",
             "[r_w approaches, letting t_c know that you can't really hear {PRONOUN/t_c/object} yet.]",
             "Oh, I don't mind repeating myself! We're gonna be denmates and so I gotta be a good role mobile!",
             "It's model? Whoops, hehehe."
@@ -2934,10 +3460,12 @@
     "sweet_kit_28": [
         [
             "newborn",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[You let out a wail, the cold is just too... cold! You are also much too small to do anything else about it.]",
+            "[You let out a wail; the cold is just too... cold! You are also much too small to do anything else about it.]",
             "y_c? Are you okay?",
             "[Ah, your big denmate! Perhaps you can convince {PRONOUN/t_c/object} to chase the cold away with eloquent words.]",
             "[In other words, you scream again.]",
@@ -2949,7 +3477,9 @@
     "sweet_kit_29": [
         [
             "Any",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, do you know how to befriend birds?",
@@ -2969,7 +3499,9 @@
     "sweet_kit_31": [
         [
             "Any",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "r_c said you weren't taking enough breaks, why?",
@@ -2981,7 +3513,8 @@
         [
             "Any",
             "talk_dead",
-            "sweet"
+            "sweet",
+            "you_blind"
         ],
         [
             "y_c, I made a friend! {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} super cool and helped me help so many cats!",
@@ -2994,7 +3527,9 @@
         [
             "kitten",
             "you_sleeper",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hi y_c! Are you taking a nap?",
@@ -3005,7 +3540,9 @@
     "upstanding_kit13": [
         [
             "upstanding",
-            "newborn"
+            "newborn",
+            "they_blind",
+            "you_blind"
         ],
         [
             "r_q, r_k is trying to hide thorns in y_c's nest!"
@@ -3014,7 +3551,10 @@
     "upstanding_kit14": [
         [
             "upstanding",
-            "newborn"
+            "newborn",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "You're so small... I wonder what plans you'll have for the future. What kind of goals will you want to meet? What will you be interested in?",
@@ -3038,7 +3578,8 @@
         [
             "upstanding",
             "medicine cat",
-            "medicine cat apprentice"
+            "medicine cat apprentice",
+            "they_blind"
         ],
         [
             "[You hear the soft pitter-patter of small paw steps near the entrance of your den. You turn and see t_c holding a large mouse by the tail, looking ecstatic as {PRONOUN/t_c/subject} {VERB/t_c/drag/drags} the creature into the den.]",
@@ -3051,7 +3592,9 @@
     "upstanding_kit17": [
         [
             "upstanding",
-            "apprentice"
+            "apprentice",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, I need you to teach me some battle moves.",
@@ -3062,7 +3605,10 @@
     "upstanding_kit18": [
         [
             "upstanding",
-            "no_kit"
+            "no_kit",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "[While the other kits are playing out in the clearing, t_c is in the nursery, trying to tidy up the moss that was tossed aside and scattered across the den floor.]",
@@ -3074,7 +3620,9 @@
         [
             "stable",
             "sweet",
-            "newborn"
+            "newborn",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, I can't wait for you to grow up, y_c! We'll have so much fun playing together!"
@@ -3083,7 +3631,9 @@
     "grieving": [
         [
             "they_grieving",
-            "newborn"
+            "newborn",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c smiles for the first time this moon, watching you.]",
@@ -3093,7 +3643,11 @@
     "brooding": [
         [
             "newborn",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[You wriggle closer to t_c.]",
@@ -3115,7 +3669,9 @@
     "newborn_silly_warrior": [
         [
             "newborn",
-            "brooding"
+            "brooding",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[r_q beckons t_c to come closer to meet you.]",
@@ -3126,7 +3682,9 @@
         [
             "newborn",
             "brooding",
-            "unlawful"
+            "unlawful",
+            "they_blind",
+            "you_blind"
         ],
         [
             "When you're older, I'll show you the BEST spots for spying on the warriors."
@@ -3149,7 +3707,10 @@
     "cool_kit_3": [
         [
             "no_kit",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "[The other kits are gathered around t_c, seemingly enthralled at {PRONOUN/t_c/poss} every word.]",
@@ -3162,7 +3723,9 @@
     "cool_kit_4": [
         [
             "Any",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c is giving a performance in the middle of the clearing, singing and dancing {PRONOUN/t_c/poss} little heart out.]",
@@ -3177,7 +3740,9 @@
             "cool",
             "brooding",
             "unlawful",
-            "non-related"
+            "non-related",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Psh, can you believe some kits still play moss-ball? That game is, like, totally for babies.",
@@ -3191,7 +3756,9 @@
             "any",
             "they_grieving",
             "dead_close",
-            "they_kitten"
+            "they_kitten",
+            "they_blind",
+            "you_blind"
         ],
         [
             "*Sniffle* What happened to d_c? I miss {PRONOUN/d_c/object} ...",
@@ -3223,7 +3790,9 @@
             "brooding",
             "cool",
             "unabashed",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c is yelling at a hapless r_q, who tries desperately to manage the situation.]",
@@ -3240,7 +3809,8 @@
             "they_kitten",
             "neurotic",
             "sweet",
-            "introspective"
+            "introspective",
+            "they_blind"
         ],
         [
             "[t_c clings to a scrap of moss, claws unsheathed, eyes wide and fearful.]",
@@ -3252,7 +3822,8 @@
             "any",
             "they_injured",
             "they_ill",
-            "they_kitten"
+            "they_kitten",
+            "you_blind"
         ],
         [
             "*Cough* *Cough*",
@@ -3288,7 +3859,9 @@
             "any",
             "they_injured",
             "they_ill",
-            "they_kitten"
+            "they_kitten",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Owie ...",
@@ -3301,7 +3874,10 @@
             "any",
             "they_injured",
             "they_ill",
-            "they_kitten"
+            "they_kitten",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c's little chest rises and falls, rises and falls ...]",
@@ -3315,7 +3891,9 @@
             "they_ill",
             "they_kitten",
             "from_your_kit",
-            "from_adopted_kit"
+            "from_adopted_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm tired of staying in the medicine den, y_c. I wanna go home.",
@@ -3340,7 +3918,9 @@
     "upstanding_kit19": [
         [
             "upstanding",
-            "warrior"
+            "warrior",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[While showing r_a a few battle moves, you spot t_c out of the corner of your eye, doing {PRONOUN/t_c/poss} best to copy you on unsteady paws.]"
@@ -3349,7 +3929,9 @@
     "upstanding_kit20": [
         [
             "upstanding",
-            "you_warrior"
+            "you_warrior",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c! Can you make me an apprentice early? Please please pleeeeease! I'm more than ready, I swear!",
@@ -3361,7 +3943,8 @@
             "upstanding",
             "elder",
             "platonic_like",
-            "neutral"
+            "neutral",
+            "they_blind"
         ],
         [
             "[You hear a small trill at the entrance of the den and look over to see t_c trotting in, dragging a squirrel by the scruff of it's neck.]",
@@ -3374,7 +3957,8 @@
             "they_younger",
             "respect",
             "you_shunned",
-            "any"
+            "any",
+            "you_blind"
         ],
         [
             "I-I looked up to you! How could you do such a thing?!"
@@ -3388,7 +3972,9 @@
             "you_upstanding",
             "platonic_like",
             "neutral",
-            "respect"
+            "respect",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Guess what! Guess what! Guess what!",
@@ -3414,7 +4000,9 @@
         [
             "you_shunned",
             "they_kitten",
-            "any"
+            "any",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c yelps when {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you approach and turns tail to sprint for the nursery.]"
@@ -3425,7 +4013,9 @@
             "they_shunned",
             "they_kitten",
             "any",
-            "you_adult"
+            "you_adult",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[You feel awful for the poor kit. What {PRONOUN/t_c/subject} did was probably an accident, yet {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} still being punished.]",
@@ -3458,7 +4048,11 @@
         [
             "they_shunned",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c is playing moss-ball all alone.]"
@@ -3514,7 +4108,9 @@
         [
             "you_df",
             "they_df",
-            "queen"
+            "queen",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c?... Do I deserve to be here? Am I- was I- a bad kit?",
@@ -3530,7 +4126,10 @@
         [
             "they_sc",
             "you_sc",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "It's fun being up here and all, but when can we go back to c_nClan?",
@@ -3542,7 +4141,9 @@
         [
             "they_sc",
             "you_sc",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "The moss-balls here are so sparkly!",
@@ -3554,7 +4155,10 @@
             "Any",
             "they_shunned",
             "they_grieving",
-            "they_kitten"
+            "they_kitten",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c is laying on the ground, completely still, the shallow rising and falling of {PRONOUN/t_c/poss} chest the only indicator that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} still alive.]",
@@ -3566,7 +4170,9 @@
             "Any",
             "they_shunned",
             "you_grieving",
-            "they_kitten"
+            "they_kitten",
+            "they_blind",
+            "you_blind"
         ],
         [
             "H-hey, are you sad? I'm sad, too.",
@@ -3579,7 +4185,9 @@
             "Any",
             "you_shunned",
             "you_grieving",
-            "they_kitten"
+            "they_kitten",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c avoids looking at you completely.]"
@@ -3590,7 +4198,11 @@
             "Any",
             "you_shunned",
             "they_grieving",
-            "they_kitten"
+            "they_kitten",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_Deaf"
         ],
         [
             "[t_c starts to cry when you get close.]"
@@ -3601,7 +4213,11 @@
             "Any",
             "both_shunned",
             "they_grieving",
-            "they_kitten"
+            "they_kitten",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "Sigh..."
@@ -3612,7 +4228,9 @@
             "Any",
             "both_shunned",
             "you_grieving",
-            "they_kitten"
+            "they_kitten",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c just sits near you, not attempting to speak.]"
@@ -3624,7 +4242,11 @@
             "both_shunned",
             "you_grieving",
             "they_grieving",
-            "they_kitten"
+            "they_kitten",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[The air is thick with sadness as you lay near t_c.]"
@@ -3646,7 +4268,9 @@
             "they_df",
             "you_df",
             "Any",
-            "they_kitten"
+            "they_kitten",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c is sharpening {PRONOUN/t_c/poss} little claws on a tree.]"
@@ -3672,7 +4296,8 @@
             "they_df",
             "you_sc",
             "Any",
-            "They_kitten",
+            "they_kitten",
+            "they_blind",
             "they_blind"
         ],
         [
@@ -3698,7 +4323,9 @@
         [
             "any",
             "introspective",
-            "leaffall"
+            "leaffall",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I wonder why all the leaves fall down in leaffall. Are they tired from holding onto the trees for so long?",
@@ -3723,7 +4350,9 @@
             "any",
             "you_shunned",
             "they_kitten",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Don't worry, y_c, I'm sure you'll be out of time-out in no time.",
@@ -3735,7 +4364,8 @@
             "any",
             "you_shunned",
             "they_kitten",
-            "platonic_love"
+            "platonic_love",
+            "they_blind"
         ],
         [
             "[t_c dashes out of the nursery and clings to your leg as the hapless queens shout after {PRONOUN/t_c/object}.]",
@@ -3748,7 +4378,10 @@
             "any",
             "you_shunned",
             "they_kitten",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "I heard that you messed up bad, and did something mean.",
@@ -3761,7 +4394,9 @@
         [
             "you_shunned",
             "they_kitten",
-            "kitten"
+            "kitten",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c!",
@@ -3774,7 +4409,9 @@
             "you_sc",
             "kitten",
             "newborn",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Who are you?",
@@ -3786,7 +4423,9 @@
             "you_df",
             "kitten",
             "newborn",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "W-who are you?",
@@ -3797,7 +4436,9 @@
         [
             "they_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hi there!",
@@ -3809,7 +4450,9 @@
         [
             "they_df",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hi, Clan cat!",
@@ -3823,7 +4466,9 @@
             "they_sc",
             "you_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c, come play with me!",
@@ -3835,7 +4480,9 @@
             "they_df",
             "you_df",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c is tearing clumps of dirt from the ground beneath {PRONOUN/t_c/object}. You ask why.]",
@@ -3849,7 +4496,9 @@
             "they_sc",
             "you_df",
             "they_kitten",
-            "any"
+            "any",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c runs away when {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you.]"
@@ -3871,7 +4520,9 @@
         [
             "you_df",
             "they_kitten",
-            "any"
+            "any",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c runs away when {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you.]"
@@ -3907,7 +4558,9 @@
         [
             "they_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You guys sure thank StarClan a lot!",
@@ -3918,7 +4571,9 @@
         [
             "they_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "It's really nice up here, but I miss the nursery.",
@@ -3929,7 +4584,9 @@
         [
             "kitten",
             "you_sc",
-            "they_sc"
+            "they_sc",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hi, y_c! Wanna play?"
@@ -3943,14 +4600,16 @@
         ],
         [
             "I bet I'm a brighter star than you are!",
-            "[You ask t_c what {PRONOUN/t_c/subject} mean.]",
+            "[You ask t_c what {PRONOUN/t_c/subject} {VERB/t_c/mean/means}.]",
             "Well, we all appear as stars to c_nClan cats, right?"
         ]
     ],
     "sc_kitten3": [
         [
             "any",
-            "they_sc"
+            "they_sc",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I wish I had more time with c_nClan...",
@@ -3962,7 +4621,9 @@
             "any",
             "you_sc",
             "they_kitten",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "A StarClan cat? Are you taking me too? Where's d_c?",
@@ -3974,7 +4635,9 @@
             "any",
             "you_df",
             "they_kitten",
-            "they_grieving"
+            "they_grieving",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c doesn't look scared of you at all. Maybe {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} too sad to feel fear.]"
@@ -3986,7 +4649,9 @@
             "you_sc",
             "they_kitten",
             "they_grieving",
-            "grievingyou"
+            "grievingyou",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c!",
@@ -4000,7 +4665,8 @@
             "you_df",
             "they_kitten",
             "they_grieving",
-            "grievingyou"
+            "grievingyou",
+            "you_blind"
         ],
         [
             "y_c! Are you really here? The queens told me you went to StarClan!",
@@ -4022,7 +4688,11 @@
         [
             "any",
             "grievingyou",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[You've been told that t_c has tuckered {PRONOUN/t_c/self} out after crying for so long over your death...]",
@@ -4034,7 +4704,9 @@
             "they_sc",
             "you_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "We have an eternity to play together!"
@@ -4097,7 +4769,9 @@
             "they_sc",
             "you_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Do you think there's any cats that are looking down at us?",
@@ -4111,7 +4785,9 @@
             "they_sc",
             "you_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I had fun playing with the o_cClan kits the other day!",
@@ -4125,7 +4801,9 @@
             "you_sc",
             "they_kitten",
             "kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[You ask t_c if {PRONOUN/t_c/subject} {VERB/t_c/want/wants} to play a game of 'warriors'.]",
@@ -4139,7 +4817,8 @@
             "they_sc",
             "you_sc",
             "they_kitten",
-            "any"
+            "any",
+            "you_blind"
         ],
         [
             "It's almost time to watch the Gathering, y_c!",
@@ -4150,7 +4829,9 @@
         [
             "they_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Eek! You scared me, y_c!",
@@ -4186,7 +4867,8 @@
         [
             "they_sc",
             "they_kitten",
-            "any"
+            "any",
+            "you_blind"
         ],
         [
             "You might not see me, but I'm always here! Watching you!",
@@ -4197,7 +4879,9 @@
         [
             "they_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "What's it like in StarClan, you ask?",
@@ -4209,7 +4893,9 @@
             "they_sc",
             "you_df",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Eek! Get away from me, stinky!"
@@ -4220,7 +4906,9 @@
             "they_sc",
             "you_df",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Someone told me you're strong because you're scary. But my {PRONOUN/t_p/parent} says being kind is the real strong. Maybe you got it mixed up?"
@@ -4231,7 +4919,9 @@
             "they_sc",
             "you_df",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "The queens told me you have ten eyes and six paws! And you eat kits for breakfast!",
@@ -4243,7 +4933,9 @@
             "they_sc",
             "you_df",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "The elders of StarClan say there's good in every cat, even if it's buried deep like a tick. Maybe your good is just really, really, really deep down?"
@@ -4254,7 +4946,9 @@
             "they_sc",
             "you_df",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Even if you're in the Dark Forest now, it doesn't mean you have to stay there forever, right?"
@@ -4265,7 +4959,9 @@
             "they_df",
             "you_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "If StarClan is so powerful, why let bad things happen at all?"
@@ -4276,7 +4972,9 @@
             "they_df",
             "you_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Why do you help those who don't listen? I've seen cats from c_nClan ignore your signs and then blame you when things go wrong. Why bother?"
@@ -4287,7 +4985,9 @@
             "they_df",
             "you_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Is it true you can forgive anyone? Even someone who's done... a lot of bad things? I'm just asking... for a friend."
@@ -4311,7 +5011,8 @@
             "they_df",
             "you_sc",
             "they_kitten",
-            "any"
+            "any",
+            "they_blind"
         ],
         [
             "How do you join StarClan?",
@@ -4324,7 +5025,9 @@
         [
             "you_sc",
             "any",
-            "they_shunned"
+            "they_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "It's not fair! It's not fair!"
@@ -4334,7 +5037,9 @@
         [
             "you_df",
             "any",
-            "they_shunned"
+            "they_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "It's not fair! It's not fair!",
@@ -4345,7 +5050,9 @@
         [
             "murderedthem",
             "any",
-            "they_sc"
+            "they_sc",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Did I do something wrong?"
@@ -4355,7 +5062,9 @@
         [
             "murderedthem",
             "any",
-            "they_df"
+            "they_df",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Did I do something wrong?"
@@ -4366,7 +5075,9 @@
             "murderedthem",
             "any",
             "they_sc",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Did I do something wrong?"
@@ -4377,7 +5088,9 @@
             "murderedthem",
             "any",
             "they_df",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Did I do something wrong?"
@@ -4389,7 +5102,9 @@
             "any",
             "they_sc",
             "you_shunned",
-            "you_grieving"
+            "you_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Did I do something wrong?"
@@ -4401,7 +5116,9 @@
             "any",
             "they_df",
             "you_shunned",
-            "you_grieving"
+            "you_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Did I do something wrong?"
@@ -4412,20 +5129,9 @@
             "murderedthem",
             "any",
             "they_sc",
-            "littermate"
-        ],
-        [
-            "We were supposed to grow up together!",
-            "Why did you do that to me, y_c?"
-        ]
-    ],
-    "murderedthemkit_J8": [
-        [
-            "murderedthem",
-            "any",
-            "they_sc",
             "littermate",
-            "you_shunned"
+            "they_blind",
+            "you_blind"
         ],
         [
             "We were supposed to grow up together!",
@@ -4438,7 +5144,9 @@
             "any",
             "they_sc",
             "littermate",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I wish we could've played together some more...",
@@ -4457,7 +5165,9 @@
             "queen",
             "deputy",
             "leader",
-            "elder"
+            "elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I've been here a really long time...",
@@ -4468,18 +5178,9 @@
         [
             "murderedyou",
             "any",
-            "you_sc"
-        ],
-        [
-            "Wait, you're still here?",
-            "[Startled, t_c rushes away to the nursery]"
-        ]
-    ],
-    "kitmurderedyou_J2": [
-        [
-            "murderedyou",
-            "any",
-            "you_df"
+            "you_dead",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Wait, you're still here?",
@@ -4490,65 +5191,37 @@
         [
             "murderedyou",
             "any",
-            "you_sc",
-            "they_df"
+            "you_dead",
+            "they_dead",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hi, y_c.",
             "Are you still mad at me?"
-        ]
-    ],
-    "kitmurderedyou_J4": [
-        [
-            "murderedyou",
-            "any",
-            "you_df",
-            "they_df"
-        ],
-        [
-            "Hi, y_c.",
-            "Are you still mad at me?"
-        ]
-    ],
-    "kitmurderedyou_J5": [
-        [
-            "murderedyou",
-            "any",
-            "you_df",
-            "they_sc"
-        ],
-        [
-            "I'm sorry. I really am."
         ]
     ],
     "kitmurderedyou_J6": [
         [
             "murderedyou",
             "any",
-            "you_sc",
-            "they_sc"
+            "you_dead",
+            "they_dead",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm sorry. I really am."
         ]
     ],
-    "murderedyoukit_J7": [
+    "murderedyoukit_J1": [
         [
             "murderedyou",
             "any",
-            "you_sc",
-            "they_grieving"
-        ],
-        [
-            "I'm sorry. I really am."
-        ]
-    ],
-    "murderedyoukit_J8": [
-        [
-            "murderedyou",
-            "any",
-            "you_df",
-            "they_grieving"
+            "you_dead",
+            "they_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm sorry. I really am."
@@ -4557,7 +5230,11 @@
     "youforgiven_J1": [
         [
             "you_forgiven",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_dead",
+            "you_dead"
         ],
         [
             "... ... ...",
@@ -4567,7 +5244,9 @@
     "youforgiven_J2": [
         [
             "you_forgiven",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, r_q told me I don't have to be scared of you anymore!",
@@ -4580,7 +5259,11 @@
         [
             "you_forgiven",
             "they_forgiven",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "... ... ..."
@@ -4590,7 +5273,9 @@
         [
             "you_forgiven",
             "they_shunned",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "They're not mad at you anymore, y_c?",
@@ -4600,18 +5285,12 @@
     "youforgiven_J5": [
         [
             "you_forgiven",
-            "they_sc",
-            "any"
-        ],
-        [
-            "... ... ..."
-        ]
-    ],
-    "youforgiven_J6": [
-        [
-            "you_forgiven",
-            "they_df",
-            "any"
+            "they_dead",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "... ... ..."
@@ -4622,7 +5301,9 @@
             "you_forgiven",
             "they_sc",
             "murderedthem",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm glad c_nClan forgave you. I'm sorry I made you mad."
@@ -4633,69 +5314,23 @@
             "you_forgiven",
             "they_df",
             "murderedthem",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Is c_nClan really forgiving you?",
             "You're a bad cat. They shouldn't do that!"
         ]
     ],
-    "they_forgiven_J1": [
-        [
-            "they_forgiven",
-            "any"
-        ],
-        [
-            ""
-        ]
-    ],
-    "they_forgiven_J2": [
-        [
-            "they_forgiven",
-            "you_shunned",
-            "any"
-        ],
-        [
-            ""
-        ]
-    ],
     "they_forgiven_J3": [
         [
             "they_forgiven",
-            "you_sc",
-            "any"
-        ],
-        [
-            "[t_c looks guilty.]"
-        ]
-    ],
-    "they_forgiven_J4": [
-        [
-            "they_forgiven",
-            "you_df",
-            "any"
-        ],
-        [
-            "[t_c looks guilty.]"
-        ]
-    ],
-    "they_forgiven_J5": [
-        [
-            "they_forgiven",
-            "you_df",
-            "murderedyou",
-            "any"
-        ],
-        [
-            "[t_c looks guilty.]"
-        ]
-    ],
-    "they_forgiven_J6": [
-        [
-            "they_forgiven",
-            "you_sc",
-            "murderedyou",
-            "any"
+            "you_dead",
+            "any",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c looks guilty.]"
@@ -4705,7 +5340,11 @@
         [
             "they_shunned",
             "any",
-            "insult"
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c doesn't even react to your insult.]"
@@ -4715,7 +5354,11 @@
         [
             "you_shunned",
             "any",
-            "insult"
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c doesn't even react to your insult.]"
@@ -4725,7 +5368,11 @@
         [
             "both_shunned",
             "any",
-            "insult"
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c doesn't even react to your insult.]"
@@ -4745,7 +5392,9 @@
         [
             "they_ur",
             "you_shunned",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Aw, y_c.",
@@ -4757,7 +5406,9 @@
         [
             "they_ur",
             "you_grieving",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Aw. It'll all be better soon, y_c."
@@ -4768,7 +5419,9 @@
             "they_ur",
             "you_grieving",
             "you_shunned",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Aw, y_c.",
@@ -4780,7 +5433,9 @@
         [
             "they_ur",
             "you_ur",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Good morning, y_c! I'm feeling really good, today! I'm feeling alive enough to climb a tree!",
@@ -4794,7 +5449,10 @@
             "you_ur",
             "any",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Sometimes, I'm glad to still be on the ground, rather than up in the clouds in my afterlife.",
@@ -4835,7 +5493,9 @@
         [
             "they_ur",
             "you_df",
-            "any"
+            "any",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "Aah!",
@@ -5131,7 +5791,9 @@
     "bossy_kit": [
         [
             "Any",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hi, y_c! Wanna play pretend with me?",
@@ -5144,7 +5806,9 @@
     "verbose_kit": [
         [
             "Any",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Salutations, y_c! The climate today is exceedingly tepid! I anticipate substantial amount of perspiration later!",
@@ -5177,7 +5841,8 @@
             "you_shunned",
             "they_kitten",
             "any",
-            "they_df"
+            "they_df",
+            "they_hearing"
         ],
         [
             "[t_c is staring at your paws. After an uncomfortable moment you ask why.]",
@@ -5262,7 +5927,8 @@
         [
             "they_shunned",
             "they_kitten",
-            "newborn"
+            "newborn",
+            "they_blind"
         ],
         [
             "Oh, uh, hi, y_c.",
@@ -5274,7 +5940,9 @@
         [
             "they_shunned",
             "newborn",
-            "insult"
+            "insult",
+            "they_blind",
+            "you_blind"
         ],
         [
             "What?"
@@ -5284,7 +5952,9 @@
         [
             "newborn",
             "they_older",
-            "insult"
+            "insult",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Wha.. What was that?"
@@ -5294,7 +5964,9 @@
         [
             "they_dead",
             "you_dead",
-            "newborn"
+            "newborn",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, there, little guy."
@@ -5305,7 +5977,8 @@
             "they_dead",
             "you_grieving",
             "you_shunned",
-            "any"
+            "any",
+            "you_blind"
         ],
         [
             "You look really sad, y_c. What happened?",
@@ -5318,7 +5991,9 @@
         [
             "they_dead",
             "you_grieving",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm sorry {PRONOUN/d_c/subject} had to come to StarClan so soon.",
@@ -5330,7 +6005,9 @@
         [
             "they_dead",
             "you_shunned",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "The other StarClan cats told me you might not be allowed here when you die. Did you do something bad?",
@@ -5343,7 +6020,9 @@
             "you_dead",
             "any",
             "they_shunned",
-            "newborn"
+            "newborn",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Why are you here?"
@@ -5355,7 +6034,9 @@
             "any",
             "they_shunned",
             "they_grieving",
-            "newborn"
+            "newborn",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Why are you here?"
@@ -5366,7 +6047,9 @@
             "you_dead",
             "any",
             "they_grieving",
-            "newborn"
+            "newborn",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Why are you here?"
