@@ -59,7 +59,7 @@ class InsultScreen(Screens):
         self.choicepanel = False
         self.textbox_graphic = None
         self.cat_dict = {}
-
+        self.other_dict = {}
 
     def screen_switches(self):
         self.the_cat = Cat.all_cats.get(game.switches['cat'])

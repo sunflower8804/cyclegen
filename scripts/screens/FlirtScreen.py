@@ -47,6 +47,7 @@ class FlirtScreen(Screens):
         self.choicepanel = False
         self.textbox_graphic = None
         self.cat_dict = {}
+        self.other_dict = {}
 
 
     def screen_switches(self):
