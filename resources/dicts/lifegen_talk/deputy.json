@@ -2201,5 +2201,71 @@
             "Do you happen to know... {VERB/r_w/were/was} {PRONOUN/r_w/subject} just frustrated about the patrol, or {VERB/r_w/are/is} {PRONOUN/r_w/subject} upset with me?",
             "It's kind of hard to detangle the two, sometimes."
         ]
+    ],
+    "deputyshunned_H1": [
+        [
+            "they_shunned",
+            "they_deputy",
+            "no_kit",
+            "you_any"
+        ],
+        [
+            "Quite a choice to come up to me, isn't it?",
+            "Oh, whatever, I learned my lesson. There is no need to act like I didn't.",
+            "Sometimes you just have to recognize that you failed and take that failure in stride."
+        ]
+    ],
+    "deputyshunned_H2": [
+        [
+            "they_shunned",
+            "they_deputy",
+            "they_leader",
+            "you_kitten"
+        ],
+        [
+            "Hello, little one. Where are your parents?",
+            "Hm. You shouldn't be running around idly, that is how you get hurt.",
+            "... Shoo."
+        ]
+    ],
+    "deputyshunned_H3": [
+        [
+            "they_shunned",
+            "they_deputy",
+            "you_any",
+            "platonic_like"
+        ],
+        [
+            "Your bravery never failed to surprise me, even now.",
+            "Are you not afraid of the repercussions you will get? Speaking to me?",
+            "... You are one strange cat."
+        ]
+    ],
+    "deputyshunned_H4": [
+        [
+            "they_shunned",
+            "they_deputy",
+            "you_any",
+            "no_kit",
+            "hate"
+        ],
+        [
+            "[t_c looks down upon you with a scowl, baring teeth.]",
+            "Must you bother me when I have no duty, nothing to lose? You may think being shunned will stop me but...",
+            "I'm not afraid to admit that it does the opposite."
+        ]
+    ],
+    "deputyshunned_H5": [
+        [
+            "they_shunned",
+            "they_deputy",
+            "you_any",
+            "no_kit",
+	"neutral"
+        ],
+        [
+            "[t_c closes {PRONOUN/t_c/poss} eyes. {PRONOUN/t_c/subject/CAP} must be ignoring you.]",
+            "[... Or the whole Clan.]"
+        ]
     ]
 }

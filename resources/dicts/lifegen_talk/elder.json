@@ -1087,5 +1087,40 @@
             "*Sigh* Can't you see I have more important things to do, y_c?",
             "Go back to catching mice, or whatever."
         ]
+    ],
+    "eldershunned_H1": [
+        [
+            "they_shunned",
+            "they_elder",
+            "you_any"
+        ],
+        [
+            "To shun me in my old age... How dare they? Such little respect."
+        ]
+    ],
+    "eldershunned_H2": [
+        [
+            "they_shunned",
+            "they_elder",
+            "you_any",
+            "you_younger",
+            "dislike"
+        ],
+        [
+            "My bones might be croaking and my health might be deteriorating, but that won't stop me from hurting you, youngling."
+        ]
+    ],
+    "eldershunned_H3": [
+        [
+            "they_shunned",
+            "they_elder",
+            "you_any"
+        ],
+        [
+            "Ughh, finally, I was granted peace and quiet away from these offending o_cClan members.",
+            "And yet you still bother me.",
+            "Scram!"
+        ]
     ]
+
 }

@@ -23,5 +23,139 @@
         "no": [
             "Ah. Maybe next year."
         ]
-    }
+    },
+    "valen_introspective_H1": [
+        [
+            "focus",
+            "they_introspective",
+            "they_neurotic",
+            "Any",
+            "trust"
+        ],
+        [
+            "[t_c paws at a few plucked flowers, {PRONOUN/t_c/poss} eyes following their_crush around camp.]",
+            "I wanted to give these to their_crush but, I don't know.",
+            "Maybe next time."
+        ]
+    ],
+    "valen_introspective_H2": [
+        [
+            "focus",
+            "they_introspective",
+            "Any",
+            "comfort"
+        ],
+        [
+            "One moon, I'll be able to celebrate with their_crush and understand the joy it brings."
+        ]
+    ],
+   "valen_introspective_H3": [
+        [
+            "focus",
+            "they_introspective",
+            "they_kitten",
+            "they_app",
+            "from_your_kit"
+        ],
+        [
+            "{PRONOUN/y_c/parent}... Did you forget what day it is?",
+            "Welllll, t_p has been looking really mad this moon. Are you <i>sure</i> you didn't forget anything?"
+        ]
+    ],
+    "valen_introspective_H4": [
+        [
+            "focus",
+            "they_introspective",
+            "they_kitten",
+            "from_your_kit"
+        ],
+        [
+            "I'm going to give flowers to r_k today!",
+            "... It's gift a flower moon, right?"
+        ]
+    ],
+   "valen_shunned_H1": [
+        [
+            "focus",
+            "they_shunned",
+            "you_any"
+        ],
+        [
+            "Leave me alone."
+        ]
+    ],
+    "valen_shunned_H2": [
+        [
+            "focus",
+            "they_shunned",
+            "you_any"
+        ],
+        [
+            "[While everyone is celebrating, t_c sits in a corner away from the commotion.]",
+            "[... {PRONOUN/t_c/subject/CAP} look really lonely.]"
+        ]
+    ],
+    "valen_shunned_H3": [
+        [
+            "focus",
+            "they_shunned",
+            "you_any",
+            "dislike"
+        ],
+        [
+            "Why are you coming over here to speak to me when you could be celebrating with your <i>precious</i> y_m?",
+            "Enjoy it while you still can."
+        ]
+    ],
+    "valen_shunned_H4": [
+        [
+            "focus",
+            "they_shunned",
+            "they_introspective",
+            "from_mate",
+            "you_any"
+        ],
+        [
+            "... y_c.",
+            "[t_c gently drops a mouse at your paws.]",
+            "Here. I... wanted to get flowers, as usual, but I didn't want to be caught sneaking back into camp. I hope this is okay.",
+            "[t_c's ear flickers at the sound of movement and swiftly moves away, out of sight.]"
+        ]
+    ],
+    "valen_shunned_H5": [
+        [
+            "focus",
+            "they_shunned",
+            "from_mate",
+            "you_shunned"
+        ],
+        [
+            "Don't worry, we can still celebrate together. They can't take that away from us."
+        ]
+    ],
+    "valen_shunned_H6": [
+        [
+            "focus",
+            "you_shunned",
+            "no_kit",
+            "they_any",
+            "dislike"
+        ],
+        [
+            "[You watch t_c exchange trinkets with y_m with a burning jealousy.]"
+        ]
+    ],
+    "valen_shunned_H7": [
+        [
+            "focus",
+            "you_shunned",
+            "no_kit",
+            "they_any",
+            "dislike"
+        ],
+        [
+            "Oh, what are those flowers for? your_crush?",
+            "HAH! As if they'd accept them! I'd like to see you try."
+        ]
+    ]
 }

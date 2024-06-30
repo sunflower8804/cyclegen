@@ -191,5 +191,131 @@
             "I expect you to do anything we ask of you, y_c.",
             "Even if it goes against the code, we will not let those mouse-dung eating w_cClan cats hurt our kits."
         ]
+    ],
+    "war_mckitten_H1": [
+        [
+            "focus",
+            "you_kitten",
+            "they_older",
+            "they_any",
+            "non-related"
+        ],
+        [
+            "Huh? I don't need to tell you nothin'!",
+            "You're too young anyway, I'm not gonna be responsible for a kittens nightmares.",
+            "[With a flick of a tail, t_c huffs and turns away.]"
+        ]
+    ],
+    "war_mckitten_H2": [
+        [
+            "focus",
+            "you_kitten",
+            "they_older",
+            "they_any",
+            "non-related"
+        ],
+        [
+            "[You ask t_c what war is and why every cat is making a big deal about it.]",
+            "That sounds like something your {PRONOUN/y_c/parent} should explain to you, not me."
+        ]
+    ],
+    "war_mckitten_H3": [
+        [
+            "focus",
+            "you_kitten",
+            "they_queen",
+            "non-related"
+        ],
+        [
+            "The world is cruel, sweet kit. It stops for no one.",
+            "Especially during times like this."
+        ]
+    ],
+    "war_mckitten_H4": [
+        [
+            "focus",
+            "you_kitten",
+            "from_parent"
+        ],
+        [
+            "Well- war is, um...",
+            "[Your {PRONOUN/y_c/parent} seems to stiffen up, looking awfully uncomfortable.]",
+            "War is uhh...",
+            "You're too young to know!"
+        ]
+    ],
+    "war_faith_H1": [
+        [
+            "focus",
+            "sc_faith",
+            "Any"
+        ],
+        [
+            "Oh, StarClan, save us!"
+        ]
+    ],
+    "war_faith_H2": [
+        [
+            "focus",
+            "sc_faith",
+            "they_elder",
+            "you_kitten"
+        ],
+        [
+            "Oh, don't worry about the war!",
+            "I heard r_w got a promising prophecy from StarClan, that's all I need to know we're in good hands."
+        ]
+    ],
+    "war_faith_H3": [
+        [
+            "focus",
+            "sc_faith",
+            "Any"
+        ],
+        [
+            "Humf! l_n must be speaking to the Dark Forest to get these awful ideas during a time like this!"
+        ]
+    ],
+   "war_neuroticmate_H1": [
+        [
+            "focus",
+            "from_mate",
+            "they_neurotic",
+            "you_warrior",
+            "romantic_like",
+            "trust"
+        ],
+        [
+            "Be careful on your patrol, I have a bad feeling.",
+            "No-- yes, I know I say that every time but still! I have a bad feeling, I always have a bad feeling.",
+            "I just don't want you to get hurt."
+        ]
+    ],
+    "war_neuroticmate_H2": [
+        [
+            "focus",
+            "from_mate",
+            "they_neurotic",
+            "you_queen",
+            "you_mediator",
+            "you_medicine_cat"
+        ],
+        [
+            "You're going to be fine while I'm gone on patrol, right? Don't get too close to the border, make sure to stay in the dens, stay around r_w--",
+            "[You cut t_c off and tell {PRONOUN/t_c/object} that you'll be fine.]",
+            "Are you sure? Really sure? It's always nice to take precautions!"
+        ]
+    ],
+    "war_neuroticmate_H3": [
+        [
+            "focus",
+            "from_mate",
+            "they_neurotic",
+            "they_introspective",
+            "you_warrior"
+        ],
+        [
+            "Stay safe for me, please."
+        ]
     ]
 }
