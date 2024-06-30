@@ -443,7 +443,8 @@ class Events:
 
         # Handle lost focus for focuses that have set duration
         if game.clan.focus and dialogue_focuses[game.clan.focus]["duration"] != -1 and game.clan.focus_moons >= dialogue_focuses[game.clan.focus]["duration"]:
-            game.cur_events_list.append(Single_Event(self.adjust_txt(random.choice(dialogue_focuses[game.clan.focus]["focus_loss"])), "misc"))
+            if "focus_loss" in dialogue_focuses[game.clan.focus]:
+                game.cur_events_list.append(Single_Event(self.adjust_txt(random.choice(dialogue_focuses[game.clan.focus]["focus_loss"])), "misc"))
             game.clan.focus = ""
             game.clan.focus_moons = 0
             

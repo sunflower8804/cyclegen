@@ -440,8 +440,8 @@ class TalkScreen(Screens):
         cluster1, cluster2 = get_cluster(cat.personality.trait)
         cluster3, cluster4 = get_cluster(you.personality.trait)
 
-        their_trait_list = ['adventurous', 'aloof', 'ambitious', 'arrogant', 'bloodthirsty', 'bold', 'bouncy', 'calm', 'careful', 'confident', 'competitive', 'cold', 'charismatic', 'cunning', 'cowardly', 'childish', 'compassionate', 'daring', 'emotional', 'energetic', 'fierce', 'flexible', 'faithful', 'flamboyant', 'grumpy', 'gloomy', 'humble', 'insecure', 'justified', 'loyal', 'lonesome', 'loving', 'meek', 'mellow', 'methodical', 'nervous', 'oblivious', 'obsessive', 'playful', 'reserved', 'righteous', 'responsible', 'rebellious', 'strict', 'stoic', 'sneaky', 'strange', 'sincere', 'shameless', 'spontaneous', 'thoughful', 'troublesome', 'trusting', 'vengeful', 'witty', 'wise', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug']
-        you_trait_list = ['you_adventurous', 'you_aloof', 'you_ambitious', 'you_arrogant', 'you_bloodthirsty', 'you_bold', 'you_bouncy', 'you_calm', 'you_careful', 'you_confident', 'you_competitive', 'you_cold', 'you_charismatic', 'you_cunning', 'you_cowardly', 'you_childish', 'you_compassionate', 'you_daring', 'you_emotional', 'you_energetic', 'you_fierce', 'you_flexible', 'you_faithful', 'you_flamboyant', 'you_grumpy', 'you_gloomy', 'you_humble', 'you_insecure', 'you_justified', 'you_loyal', 'you_lonesome', 'you_loving', 'you_meek', 'you_mellow', 'you_methodical', 'you_nervous', 'you_oblivious', 'you_obsessive', 'you_playful', 'you_reserved', 'you_righteous', 'you_responsible', 'you_rebellious', 'you_strict', 'you_stoic', 'you_sneaky', 'you_strange', 'you_sincere', 'you_shameless', 'you_spontaneous', 'you_thoughful', 'you_troublesome', 'you_trusting', 'you_vengeful', 'you_witty', 'you_wise', 'you_impulsive', 'you_bullying', 'you_attention-seeker', 'you_charming', 'you_daring', 'you_noisy', 'you_daydreamer', 'you_sweet', 'you_polite', 'you_know-it-all', 'you_bossy', 'you_disciplined', 'you_patient', 'you_manipulative', 'you_secretive', 'you_rebellious', 'you_passionate', 'you_honest', 'you_leader-like', 'you_smug']
+        their_trait_list = ['adventurous', 'aloof', 'ambitious', 'arrogant', 'bloodthirsty', 'bold', 'bouncy', 'calm', 'careful', 'confident', 'competitive', 'cold', 'charismatic', 'cunning', 'cowardly', 'childish', 'compassionate', 'daring', 'emotional', 'energetic', 'fierce', 'flexible', 'faithful', 'flamboyant', 'grumpy', 'gloomy', 'humble', 'insecure', 'justified', 'loyal', 'lonesome', 'loving', 'meek', 'mellow', 'methodical', 'nervous', 'oblivious', 'obsessive', 'playful', 'reserved', 'righteous', 'responsible', 'rebellious', 'strict', 'stoic', 'sneaky', 'strange', 'sincere', 'shameless', 'spontaneous', 'thoughful', 'troublesome', 'trusting', 'vengeful', 'witty', 'wise', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'daydreamer', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug', "sweet_trait"]
+        you_trait_list = ['you_adventurous', 'you_aloof', 'you_ambitious', 'you_arrogant', 'you_bloodthirsty', 'you_bold', 'you_bouncy', 'you_calm', 'you_careful', 'you_confident', 'you_competitive', 'you_cold', 'you_charismatic', 'you_cunning', 'you_cowardly', 'you_childish', 'you_compassionate', 'you_daring', 'you_emotional', 'you_energetic', 'you_fierce', 'you_flexible', 'you_faithful', 'you_flamboyant', 'you_grumpy', 'you_gloomy', 'you_humble', 'you_insecure', 'you_justified', 'you_loyal', 'you_lonesome', 'you_loving', 'you_meek', 'you_mellow', 'you_methodical', 'you_nervous', 'you_oblivious', 'you_obsessive', 'you_playful', 'you_reserved', 'you_righteous', 'you_responsible', 'you_rebellious', 'you_strict', 'you_stoic', 'you_sneaky', 'you_strange', 'you_sincere', 'you_shameless', 'you_spontaneous', 'you_thoughful', 'you_troublesome', 'you_trusting', 'you_vengeful', 'you_witty', 'you_wise', 'you_impulsive', 'you_bullying', 'you_attention-seeker', 'you_charming', 'you_daring', 'you_noisy', 'you_daydreamer', 'you_polite', 'you_know-it-all', 'you_bossy', 'you_disciplined', 'you_patient', 'you_manipulative', 'you_secretive', 'you_rebellious', 'you_passionate', 'you_honest', 'you_leader-like', 'you_smug', 'you_sweet_trait']
         you_backstory_list = [
             "you_clanfounder",
             "you_clanborn",
@@ -694,10 +694,13 @@ class TalkScreen(Screens):
                 ts = you_trait_list
                 for j in range(len(ts)):
                     ts[j] = ts[j][3:]
+                if you.personality.trait == "sweet" and "sweet_trait" not in ts:
+                    continue
                 if you.personality.trait not in ts:
                     continue
+
             if any(i in their_trait_list for i in tags):
-                if cat.personality.trait not in tags:
+                if cat.personality.trait not in tags or (cat.personality.trait == "sweet" and "sweet_trait" not in tags):
                     continue
 
             # Backstory tags
@@ -1348,7 +1351,7 @@ class TalkScreen(Screens):
             if any(tag in weighted_tags for tag in tags):
                 weight += 3
             if "focus" in tags or "connected" in tags:
-                weight += 10
+                weight += 8
             weights.append(weight)
 
         # Check for debug mode
