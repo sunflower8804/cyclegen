@@ -4183,5 +4183,66 @@
         [
             "[t_c looks sad to see you.]"
         ]
+    ],
+    "unlawful_tonewborn1": [
+        [
+            "newborn",
+            "unlawful"
+        ],
+        [
+            "Welcome to the world, y_c.",
+            "We'll make a useful clan member out of you yet."
+        ]
+    ],
+    "unlawful_tonewGuy1": [
+        [
+            "newborn",
+            "unlawful"
+        ],
+        [
+            "Don't worry little one. This clan will force you to do their bidding soon enough."
+        ]
+    ],
+    "unlawful_tonewborn_neg1": [
+        [
+            "insult",
+            "newborn",
+            "unlawful"
+        ],
+        [
+            "You've got a lot to say for such a small scrap of fur, huh?"
+        ]
+    ],
+    "unlawful_tokit1": [
+        [
+            "kitten",
+            "unlawful"
+        ],
+        [
+            "You're still learning that silly 'warrior code', aren't you?",
+            "Take all of that with a grain of sand, if you ask me. There's a lot more to being a respectable clanmate than <i>codes<i/>.",
+            "Sometimes it's better to take matters into your own paws."
+        ]
+    ],
+    "unlawful_tokitGuy1": [
+        [
+            "kitten",
+            "unlawful"
+        ],
+        [
+            "r_q told you to not listen to me?",
+            "You should listen to r_q."
+        ]
+    ],
+    "unlawful_tokit_neg1": [
+        [
+            "insult",
+            "kitten",
+            "unlawful"
+        ],
+        [
+            "Best to use those words sparingly.",
+            "The world will be much more difficult for you if you do, I should know."
+        ]
     ]
 }

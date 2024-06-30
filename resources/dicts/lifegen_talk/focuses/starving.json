@@ -337,5 +337,17 @@
             "[{PRONOUN/t_c/poss/CAP} voice hitches and {PRONOUN/t_c/subject} {VERB/t_c/sniff/sniffs} quietly to {PRONOUN/t_c/self}.]",
             "This... why would StarClan do this to us...?"
         ]
+    ],
+    "starving_unlawful_Guy1": [
+        [
+            "Any",
+            "you_starving",
+            "unlawful"
+        ],
+        [
+            "Psst, y_c.",
+            "[You gather the strength to look at t_c, and notice that {PRONOUN/t_c/subject}  {VERB/t_c/have/has} somehow found a skinny vole.",
+            "It was supposed to be l_n's... but you need it more."
+        ]
     ]
 }

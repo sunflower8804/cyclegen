@@ -17774,5 +17774,418 @@
             "I don't know why y_p says we're half siblings.",
             "You feel like a full {PRONOUN/y_c/sibling} to me!"
         ]
+    ],
+    "theyblind_J1": [
+        [
+            "Only_they_blind",
+            "Forest",
+            "Silly",
+            "Sweet",
+            "Leaf-fall",
+            "greenleaf",
+            "unabashed",
+            "any"
+        ],
+        [
+            "[After a recent windstorm, t_c has {PRONOUN/t_c/poss} nose to the ground, using {PRONOUN/t_c/poss} whiskers to navigate around all of the branches that have fallen into the clearing.]",
+            "[Focussed on the debris underpaw, {PRONOUN/t_c/subject}{VERB/t_c/stop/stops} shorter of you than {PRONOUN/t_c/subject} normally would.]",
+            "Oops! Hi, y_c. Almost didn't notice you there!",
+            "That storm was something, huh? I barely know where I'm going anymore!",
+            "[You ensure {PRONOUN/t_c/object} that everyone is hard at work to clear the camp.]",
+            "Oh, that's fine. Take your time!",
+            "While it's all messy out here, I can finally convince plike_r_w to go fetch my prey for me.",
+            "I just have to say, 'Oh, please, I couldn't possibly make it there myself with all of the branches in the way!'",
+            "Just don't tell {PRONOUN/plike_r_w/object} I said that, hehe."
+        ]
+    ],
+    "unlawful_gen_Guy1": [
+        [
+            "Any",
+            "unlawful"
+        ],
+        [
+            "[t_c glances around camp before slipping into... the wall?]",
+            "[You follow and find an exit you didn't even know existed. t_c's ear flicks, but {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} turn to face you.]",
+            "You should always have more than one way out, y_c."
+        ]
+    ],
+    "unlawful_toappGuy1": [
+        [
+            "you_apprentice",
+            "unlawful"
+        ],
+        [
+            "Remember, the rules only affect you as much as you let them.",
+            "Well, that's why you don't get caught.",
+            "[t_c winks and slinks off.]"
+        ]
+    ],
+    "unlawful_towarriorGuy1": [
+        [
+            "you_warrior",
+            "unlawful"
+        ],
+        [
+            "Hey y_c. Have you seen t_a?",
+            "Why would I not know where {PRONOUN/t_a/subject} went? Oh, I just sent 'em off to sort something out...",
+            "Don't worry about it."
+        ]
+    ],
+    "unlawful_tomedcatappGuy1": [
+        [
+            "you_medicine_cat_apprentice",
+            "unlawful"
+        ],
+        [
+            "y_c! Can you look at this?",
+            "Oh, no need to get tm_n... I know <i>you</i> need practice."
+        ]
+    ],
+    "unlawful_tomedcatGuy1": [
+        [
+            "you_medicine_cat",
+            "unlawful"
+        ],
+        [
+            "Where did the catmint go? Why'd you think I had something to do with it?",
+            "[t_c wobbles back and forth in place. Probably best to just let {PRONOUN/t_c/object} sleep it off...]"
+        ]
+    ],
+    "unlawful_tomediatorappGuy1": [
+        [
+            "you_mediator_apprentice",
+            "unlawful"
+        ],
+        [
+            "Trying to make me apologize? Didn't you hear me the first time? They <i>deserved it</i>.",
+            "Yeah, go whine to tm_n again!"
+        ]
+    ],
+    "unlawful_tomediatorGuy1": [
+        [
+            "you_mediator",
+            "unlawful"
+        ],
+        [
+            "Still trying to mediate my relationships? You've certainly lasted longer than the last one to attempt that."
+        ]
+    ],
+    "unlawful_toqueenappGuy1": [
+        [
+            "you_queen's_apprentice",
+            "unlawful"
+        ],
+        [
+            "r_q told you to tell me to stop teaching the kits how to cuss?",
+            "[t_c laughs and smiles roguishly]",
+            "Alright, I'll settle for making r_q cuss at <i>me</i>!"
+        ]
+    ],
+    "unlawful_toqueenGuy1": [
+        [
+            "you_queen",
+            "unlawful",
+            "they_formerlyakittypet"
+        ],
+        [
+            "Ah, hello your highness!",
+            "[t_c sweeps {PRONOUN/t_c/self} into a bow.]",
+            "How are the peasants doing? Oh, they're staging an uprising... and you think that I had something to do with it?",
+            "Heheh... would you look at that - I think I need to be somewhere else!",
+            "[You turn around to see a mob of kittens heading right for you. You'll get t_c back somehow...]"
+        ]
+    ],
+    "unlawful_todepGuy1": [
+        [
+            "you_deputy",
+            "unlawful"
+        ],
+        [
+            "I was totally about to join the patrol, I just-",
+            "[You cut off the cat and say that {PRONOUN/t_c/subject} are not needed on patrol today.]",
+            "Oh! Perfect, I have things to do...",
+            "[You continue, and tell t_c that r_m wanted {PRONOUN/t_c/object} to fix the mess {PRONOUN/t_c/subject} made in the medicine den.]",
+            "... are you <i>sure</i> I can't join the patrol?"
+        ]
+    ],
+    "unlawful_toleadGuy1": [
+        [
+            "you_leader",
+            "unlawful"
+        ],
+        [
+            "Our illustrious leader has time for me? How kind.",
+            "[You tell t_c that r_w noticed {PRONOUN/t_c/subject} were missing last night.]",
+            "'Missing'? Nah... I knew exactly where I was, hah!"
+        ]
+    ],
+    "unlawful_toelderGuy1": [
+        [
+            "you_elder",
+            "unlawful"
+        ],
+        [
+            "Psst, y_c.",
+            "I need your help with something. Don't worry, your job isn't difficult.",
+            "I just need you to do what you normally do... talk r_c to sleep! Hahaha!"
+        ]
+    ],
+    "unlawful_neutralGuy1": [
+        [
+            "neutral",
+            "unlawful"
+        ],
+        [
+            "No, I don't know anything about all of r_c's things being covered in cobwebs.",
+            "You weren't coming to ask about that?"
+        ]
+    ],
+    "unlawful_platlikeGuy1": [
+        [
+            "platonic_like",
+            "unlawful"
+        ],
+        [
+            "Good morning, y_c.",
+            "You might want to consider using another way to exit the camp."
+        ]
+    ],
+    "unlawful_platloveGuy1": [
+        [
+            "platonic_love",
+            "unlawful"
+        ],
+        [
+            "[t_c's eyes widen when they spot you, and {PRONOUN/t_c/subject} cover something with {PRONOUN/t_c/poss} body.]",
+            "Oh y_c don't look! I know you're a terrible liar and I really don't want you to get in trouble for this one!"
+        ]
+    ],
+    "unlawful_platloveGuy2": [
+        [
+            "platonic_love",
+            "unlawful"
+        ],
+        [
+            "Thanks for covering for me again.",
+            "l_n actually bought it!"
+        ]
+    ],
+    "mate_unlawfulGuy1": [
+        [
+            "mate",
+            "you_warrior",
+            "unlawful"
+        ],
+        [
+            "[t_c leans against you, and whispers...]",
+            "I hid d_n's entire nest. Dawn patrol has been called off for tomorrow, which means you can sleep in.",
+            "[t_c winks and slinks off. What a cat.]"
+        ]
+    ],
+    "shunned_unlawful_Guy1": [
+        [
+            "Any",
+            "you_shunned",
+            "unlawful"
+        ],
+        [
+            "You could have at least killed a cat from o_cClan instead of your own blood.",
+            "What's stopping you from murdering the rest of us?"
+        ]
+    ],
+    "shunned_unlawful_Guy2": [
+        [
+            "Any",
+            "you_shunned",
+            "they_forgiven",
+            "unlawful"
+        ],
+        [
+            "Heheheh...",
+            "It's nice to see someone getting treated like I was."
+        ]
+    ],
+    "shunned_unlawful_Guy3": [
+        [
+            "Any",
+            "you_shunned",
+            "unlawful"
+        ],
+        [
+            "Hah! Even I'm not <i>stupid</i> enough to do that."
+        ]
+    ],
+    "shunned_unlawful_Guy4": [
+        [
+            "you_shunned",
+            "no_kit",
+            "comfort",
+            "unlawful"
+        ],
+        [
+            "[You drag yourself into the piles of rocks and discarded twigs that make up your nest.]",
+            "[Just when you're about to drift off into a fitful slumber, t_c appears from nowhere.]",
+            "Hello, y_c. I wanted to bring you something.",
+            "Don't worry about the Clan finding out - I have my ways."
+        ]
+    ],
+    "unlawful_yougriefGuy1": [
+        [
+            "you_grieving",
+            "unlawful"
+        ],
+        [
+            "[t_c has been watching you for a while. You are finally fed up enough to confront {PRONOUN/t_c/object}.]",
+            "It's just that... a lot of you believe in StarClan, that your loved ones are there for you...",
+            "Do you think d_c wants to see you like this?"
+        ]
+    ],
+    "unlawful_theygriefGuy1": [
+        [
+            "they_grieving",
+            "unlawful"
+        ],
+        [
+            "Get away from me, y_c.",
+            "[t_c snarls and swipes half-heartedly at you.]",
+            "d_c should be here- I don't want <i>you</i>."
+        ]
+    ],
+    "unlawful_theygriefGuy2": [
+        [
+            "they_grieving",
+            "unlawful"
+        ],
+        [
+            "[t_c doesn't look at you, just at the main exit of the camp.]",
+            "d_c was why I stayed... but how can I leave now that {PRONOUN/d_c/poss}body is still here?"
+        ]
+    ],
+    "unlawful_bothgriefGuy1": [
+        [
+            "they_grieving",
+            "you_grieving",
+            "unlawful"
+        ],
+        [
+            "... I don't feel like causing any trouble, y_c.",
+            "If d_c isn't around to scold us what's the point?"
+        ]
+    ],
+    "unlawful_youpregGuy1": [
+        [
+            "you_pregnant",
+            "unlawful"
+        ],
+        [
+            "[t_c blatantly mimics l_n]",
+            "'More young warriors, ready to join the Clan and do everything I say all of the time.'",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/wink/winks}at you.]"
+        ]
+    ],
+    "unlawful_youpregGuy2": [
+        [
+            "you_pregnant",
+            "unlawful"
+        ],
+        [
+            "Oh come on, what's so wrong with naming one Badkit?",
+            "It's what I was called most of my kithood!"
+        ]
+    ],
+    "unlawful_theypregGuy1": [
+        [
+            "unlawful",
+            "they_pregnant"
+        ],
+        [
+            "[t_c winces at a particularly painful kick.]",
+            "These kittens are too much like me - they're already causing trouble!"
+        ]
+    ],
+    "unlawful_theypregGuy2": [
+        [
+            "unlawful",
+            "they_pregnant",
+            "you_kitten"
+        ],
+        [
+            "[t_c looks lovingly at {PRONOUN/t_c/poss} belly. {PRONOUN/t_c/subject/CAP}  {VERB/t_c/notice/notices} you and {VERB/t_c/smile/smiles}.]",
+            "I think they'll be cuter than you.",
+            "[t_c cackles when y_p's head snaps up.]"
+        ]
+    ],
+    "unlawful_tomediator_negGuy1": [
+        [
+            "insult",
+            "you_mediator",
+            "unlawful"
+        ],
+        [
+            "I wonder how you plan on being a mediator with no tongue?"
+        ]
+    ],
+    "unlawful_negGuy1": [
+        [
+            "insult",
+            "Any",
+            "unlawful"
+        ],
+        [
+            "Heh. Why don't you go tell that one to l_n."
+        ]
+    ],
+    "unlawful_toapp_negGuy1": [
+        [
+            "insult",
+            "you_apprentice",
+            "unlawful"
+        ],
+        [
+            "Careful. We both know I'm stronger than you, and your behavior tells me everything I could need to know about your wit."
+        ]
+    ],
+    "unlawful_towarrior_negGuy1": [
+        [
+            "insult",
+            "you_warrior",
+            "they_warrior",
+            "unlawful"
+        ],
+        [
+            "Have you been on patrol recently, t_c? I'm sure d_n would be glad to let us mark the border together. Alone.",
+            "[Was that... a threat?]"
+        ]
+    ],
+    "unlawful_tomedcatapp_negGuy1": [
+        [
+            "insult",
+            "you_medicine_cat_apprentice",
+            "unlawful"
+        ],
+        [
+            "Aw, what are you gonna do, go crying to the stars for help?"
+        ]
+    ],
+    "unlawful_tomedcat_negGuy1": [
+        [
+            "insult",
+            "you_medicine_cat",
+            "unlawful"
+        ],
+        [
+            "Hah! I don't need you- I don't need <i>any of you</i>.",
+            "I can hunt my own prey and win any fight... why should I care what you have to say?"
+        ]
+    ],
+    "unlawful_tomediatorapp_negGuy1": [
+        [
+            "insult",
+            "you_mediator_apprentice",
+            "unlawful"
+        ],
+        [
+            "Heh. They'll start treating you like me if that's how you 'solve problems'."
+        ]
     ]
 }

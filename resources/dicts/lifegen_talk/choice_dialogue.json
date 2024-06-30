@@ -3218,5 +3218,63 @@
             "You're not such a bad cat, y_c.",
             "Just make sure to put the work in next time. Don't let me catch you lacking again, got it?"
         ]
+    },
+    "theyallergies_SL2": {
+        "tags": [
+            "they_allergies",
+            "no_kit",
+            "assertive",
+            "Newleaf"
+        ],
+        "intro": [
+            "Ugh!",
+            "[t_c lets out an irritated groan before suddenly breaking out into a sneezing fit.]",
+            "I hate newleaf! Why does it have to make everything so... so... itchy?!"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "What about the flowers?",
+                "next_scene": "flowers"
+            },
+            "choice2": {
+                "text": "Yeah, it's not fun.",
+                "next_scene": "newleaf hate"
+            }
+        },
+        "flowers": [
+            "What about them? Sure, they're pretty, but I swear their pollen just ruins it!",
+            "[t_c stomps off all angry, intentionally stepping on a blooming flower just out of spite.]"
+        ],
+        "newleaf hate": [
+            "At least some cat gets it.",
+            "[t_c angrily rubs {PRONOUN/t_c/poss} nose with a paw, {PRONOUN/t_c/poss} grumbling only being broken up by the occasional sneeze.]",
+            "Stupid Newleaf- ACHOO- stupid pollen..."
+        ]
+    },
+    "starving_unlawful_Guy2": {
+        "tags": [
+            "no_kit",
+            "unlawful",
+            "they_starving"
+        ],
+        "intro": [
+            "[You notice t_c slip out of camp again. Should you follow {PRONOUN/t_c/object}?]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "[Follow the cat.]",
+                "next_scene": "follow"
+            },
+            "choice2": {
+                "text": "[Ignore the behavior.]",
+                "next_scene": "ignore"
+            }
+        },
+        "follow": [
+            "[You follow the cat all the way to a Twoleg nest. {PRONOUN/t_c/subject/CAP}  {VERB/t_c/mew/mews}at the door, and {VERB/t_c/are/is} let inside.]"
+        ],
+        "ignore": [
+            "[You don't care what t_c does. You have to worry about yourself.]"
+        ]
     }
 }
