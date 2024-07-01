@@ -30,6 +30,40 @@
             "Thanks y_c, it means a lot!"
         ]
     },
+
+    "sweet_elder_9": {
+        "tags": [
+            "you_mediator_apprentice",
+            "random_cat",
+             "sweet"
+        ],
+        "intro": [
+            "[A fight broke out in camp this morning, r_c1 had said something unnecessarily rude to t_c.]",
+            "[r_c2 scolded r_c1 for it, and their argument required mediator intervention. You decided to check on t_c after it all.]",
+            "Oh, y_c, I’m so sorry all of that happened! I can’t imagine how stressful it must’ve been on you."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "[Ask how {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing.]",
+                "next_scene": "askstatus"
+            },
+            "choice2": {
+                "text": "[Say that it isn't a big deal.]",
+                "next_scene": "nobigdeal"
+            }
+        },
+        "askstatus": [
+          "Oh, I’m doing alright. I suppose I’m a little spooked that everything happened that way...",
+	  "But, I promise, I’m fine. I’ve been through many disagreements through the moons.",
+	  "As long as everyone is happy, I’m more than willing to go through many more."
+        ],
+        "nobigdeal": [
+	"But you didn’t deserve to go through that... you should be focusing on training, not a petty argument.",
+	"[You say that they also didn’t deserve it, and that dealing with petty arguments was your job.]",
+	"I suppose you’re right... Still, if you want to stay in here to de-stress, that’s perfectly alright with me."
+
+        ]
+    },	
     "leader_inquiry": {
         "tags": [
             "no_kit",
