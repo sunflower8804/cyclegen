@@ -3378,5 +3378,26 @@
             "d_n assigned me to another dawn patrol. Do you think that's {PRONOUN/d_n/poss} way of saying I need to make up for not working hard enough?",
             "[You assure t_c that dawn patrols are a fact of life and not a way for d_n to send a message, but {PRONOUN/t_c/subject} don't seem convinced.]"
         ]
+    ],
+    "silly_trust_song": [
+        [
+            "warrior",
+            "trust",
+            "platonic_love",
+            "random_cat",
+            "they_song",
+            "silly",
+            "they_went_blind",
+            "you_blind"
+        ],
+        [
+	        "[t_c sings to {PRONOUN/t_c/self} while the two of you sit alone in the warriors' den, sunlight glistening through the holes in the construction. Everyone else has long since started their day, except for you and t_c.]",
+            "Ever so slightly, daily and nightly, in little ways...",
+            "[t_c looks over to see you awake, {PRONOUN/t_c/poss} calm song turning into a wide smile.]",
+            "Oh! Morning, y_c!",
+            "I was just singing... gotta practice, you know?",
+            "So... how'd you sleep? Eavesdrop on r_w and d_n talking when they didn't think you were awake last night? Weird dreams? Ooh, was there that one with the big red scaly snake that could breathe fire again?",
+            "I hear that hearing other cats talk can influence your dreams... I'll have to sing about only good stuff when you're asleep, then! And maybe songs about big red scaly snakes. That guy sounded cool."
+        ]
     ]
 }

@@ -1897,5 +1897,72 @@
             "[t_c stops pacing and turns to you.]",
             "Do you have any thoughts on who a good mentor for r_k would be? I've been thinking in circles for the last hour."
         ]
+    ],
+    "silly_leader_plotting": [
+        [
+            "you_deputy",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Ah, y_c! I wanted to request something of you.",
+            "Can you survey the Clan and figure out what their favorite kinds of prey are? I want to know.",
+            "Hah- what am I planning this time? Nothing, I'm just curious, of course! Not... planning anything at all!"
+        ]
+    ],
+    "silly_leader_overthrown": [
+        [
+            "Any",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c! Have you been well? Figured out your plot to overthrow me yet?",
+            "Wait, are you actually planning to overthrow me?",
+            "[You can't tell if t_c is being serious.]"
+        ]
+    ],
+    "silly_leader_drawing": [
+        [
+            "Any",
+            "silly"
+        ],
+        [
+            "[You walk into the leader's den, needing to ask {PRONOUN/t_c/object} an important question. When you find t_c clawing some kind of masterpiece onto the soft ground of the den, {PRONOUN/t_c/subject} quickly {VERB/t_c/step/steps} in front of it to obscure your view.]",	
+            "y_c! What did you need me for? Oh- what was I doing?",
+            "Illustrating my grand plan, of course! It's my dutiful responsibility as the humble leader of c_nClan!",
+            "[Really? At this time of the moon, at this time of day, in this part of c_nClan, localized entirely inside a drawing on these two fox-tails of ground? Now that you're intrigued, you ask to see it.]",
+            "No."
+        ]
+    ],
+    "silly_leader_accomplishment": [
+        [
+            "Any",
+            "silly",
+            "sweet",
+            "no_kit",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hello, y_c! What've you been up to?",
+            "...Oh dear, that question feels so loaded now that I'm a leader. I don't expect you to have single-pawedly defeated c_nClan's greatest threat, I know I certainly haven't!",
+            "Nobody in c_nClan is perfect. That's why we all work together, right?"
+        ]
+    ],
+    "silly_leader_decoration": [
+        [
+            "Any",
+            "silly",
+            "random_cat"
+        ],
+        [
+            "Hello, good day, greetings and salutations, y_c!",
+            "What do you think of these decorations I've been making?",
+            "[You look to t_c's paws and find a long string made from ivy and leaves tied together, unsure of its usage.]",
+            "Oh, why are we doing this? Well, I wanted to congratulate r_c on a recent achievement, and decided to decorate the camp as part of it!"
+        ]
     ]
 }

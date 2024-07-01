@@ -3329,5 +3329,26 @@
             "It's so... different out here at night.",
             "[t_c presses against you and doesn't pull away until you're back at camp.]"
         ]
+    ],
+    "silly_app_huntingcompetition": [
+        [
+            "they_apprentice",
+            "you_warrior",
+            "you_apprentice",
+            "they_silly",
+            "sibling"
+        ],
+        [
+            "y_c! y_c! y_c!",
+            "I have a game for us!",
+            "So, as your {PRONOUN/t_c/sibling}, I wanna have a hunting competition with you!",
+            "Whoever catches the most food for the Clan before sundown is objectively the best at everything, ever. And they get bragging rights.",
+            "So, the stakes are pretty low! I'll consider it practice for my assessment, and you can, uhh... consider it a challenge, too.",
+            "[You ask t_c when the competition starts.]",
+            "Uh... well...",
+            "It starts now! Seeya, y_c!",
+            "[t_c bolts out of camp before you can process {PRONOUN/t_c/poss} response. Once it clicks, you chase {PRONOUN/t_c/object} faster than you've chased any rabbit before.]"
+        ]
     ]
+
 }

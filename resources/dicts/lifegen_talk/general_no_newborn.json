@@ -2550,5 +2550,257 @@
         [
             "... ... ..."
         ]
+    ],
+    "silly_like_sibdance": [
+        [
+            "silly",
+            "platonic_like",
+            "sibling",
+            "they_song",
+            "they_app",
+            "they_kit",
+            "You_sameage",
+            "they_blind"
+        ],
+        [
+            "Hey! Hey, hey, y_c! Hey!",
+            "We should do something together sometime! Like... a sibling song! After all...",
+            "[t_c whips out the confident pose {PRONOUN/t_c/subject} always {VERB/t_c/do/does} when {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} about to start singing.]",
+            "We are siblings, and we care for each other!"
+        ]
+    ],
+    "silly_like_song": [
+        [
+            "Any",
+            "silly",
+            "platonic_like",
+            "they_song",
+            "they_app",
+            "they_kit",
+            "You_sameage",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I had an idea for a new song! Wanna hear it?",
+            "What? 'I'm busy'? Well, that's perfect! Unwilling listeners are the best kind!",
+            "Ah-hem...",
+            "[t_c begins to sing one of {PRONOUN/t_c/poss} usual goofy songs. You don't understand how {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} managed to make a song so catchy when it's about being unable to taste a moon made of mice.]"
+        ]
+    ],
+    "silly_comfort_1": [
+        [
+            "Any",
+            "silly",
+            "comfort"
+        ],
+        [
+            "[t_c snuggles up next to you with a piece of prey in {PRONOUN/t_c/poss} mouth, dropping it between you two. It's fairly large, just enough to feed two cats.]",
+            "Here, I brought enough to share, y_c! Can't get enough good ol' bonding time these days. Heh, but it can't be worse than whatever's going on with o_cClan's leader, right?",
+            "...Man.",
+            "[t_c sighs, taking a bite of the prey. {PRONOUN/t_c/subject} {VERB/t_c/let/lets} it sit in {PRONOUN/t_c/poss} mouth for a moment as {PRONOUN/t_c/subject} {VERB/t_c/chew/chews} it, seeming to have trouble with the giant piece {PRONOUN/t_c/subject} took.",
+            "Then, {PRONOUN/t_c/poss} eyes widen massively, and for a moment you're worried {PRONOUN/t_c/subject} might be choking...]",
+            "[...nope. t_c is just about to talk with {PRONOUN/t_c/poss} mouth full.]",
+            "Oh! Mmm-mm, y_c! You woulfn't guess what I saw ta' other day!",
+            "So, out in 'da territory, mhm? 'N there was a tiny... a lil' buf! A stickbuf!",
+            "[t_c finally swallows, taking another big breath of fresh air.]",
+            "And he was, like, that big! And he did a little dance, and it was funny, and I named him Goofter."
+        ]
+    ],
+    "silly_trust_theone": [
+        [
+            "Any",
+            "silly",
+            "trust",
+            "non-related"
+        ],
+        [
+            "Oh, StarClan... How do I say this?",
+            "Whenever I look into your eyes, y_c, I see my favorite cat. Your smile. That voice I'm so envious of. Your delicate gait. The way you silently slink into a hunting crouch, the way you so consistently avoid your least favorite fresh-kill...",
+            "The way you do everything so... perfectly. It captivates me. Really, it does. I think you might be...",
+            "...the one.",
+            "...To randomly receive a frog from the second coolest cat of all time, t_c!",
+            "[t_c perfectly places a frog on your head, then steps back and laughs. You're dumbfounded.]"
+        ]
+    ],
+    "silly_trust_eaves": [
+        [
+            "Any",
+            "silly",
+            "unlawful",
+            "trust",
+            "random_cat",
+            "you_blind",
+            "they_went_blind"
+        ],
+        [
+            "Sometimes I like to climb onto the highest surfaces of the camp in the middle of the night when only the guards can see.",
+            "It's really peaceful, actually. Every cat in c_nClan is in their dens, and it's completely quiet, save for the murmurs of the guards and the night animals.",
+            "Actually, speaking of \"the murmurs of the guards,\" do you want to hear some info I caught on r_c while eavesdropping? Don't worry, it's not incriminating."
+        ]
+    ],
+    "silly_trust_abstraction": [
+        [
+            "Any",
+            "silly",
+            "trust",
+            "random_cat"
+        ],
+        [
+            "Wanna know something weird I've noticed lately?",
+            "Isn't it always so weird when your head does the thing when you get a bunch of positive feedback, but then there's The One Thing and you always get hung up on The One Thing?",
+            "I don't wanna name names, but I've also been noticing it with this one other cat lately, too! Even if they're normally so good against criticism.",
+            "Heck, if even that cat feels that way sometimes, maybe we should come up with a name for it! Like, uh...",
+            "[t_c looks around, and {PRONOUN/t_c/poss} eyes fixate on a decaying leaf that's fallen from a tree.]",
+            "Maybe we should ask that leaf! They look like they have good ideas."
+        ]
+    ],
+    "silly_trust_porcupine": [
+        [
+            "Any",
+            "silly",
+            "trust",
+            "random_cat"
+        ],
+        [
+            "Can I tell ya something, y_c? You gotta promise not to tell any other cat. This matter is between us and the porcupine.",
+            "Last night, I couldn't sleep, so I was out on a walk. And there was this little guy... I dunno who he was, but he was like, a little porcupine, or something.",
+            "And I asked him for his name! But I think that might've translated to an insult in porcupine language, because he got really defensive all of a sudden! About to attack me and everything.",
+            "So I ran away. I didn't mean to offend him at all, but I didn't want to get hurt! I went out again this morning to try and apologize, but I couldn't find him anywhere.",
+            "So if you see a little porcupine, about the size of three paws, brown and white? That one? Would you please tell him I didn't mean to offend him?"
+        ]
+    ],
+    "silly_murder_goose": [
+        [
+            "Any",
+            "silly",
+            "you_shunned",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I'm not a silly enough mouse for this!"
+        ]
+    ],
+    "silly_murder_forgiveness": [
+        [
+            "Any",
+            "silly",
+            "you_shunned",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Don't worry, y_c. I believe in second chances.",
+            "BUT.",
+            "Not when I'm supposed to forgive you for ending a cat's life!"
+        ]
+    ],
+    "silly_murder_shoulder": [
+        [
+            "Any",
+            "silly",
+            "you_shunned",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c, I know you have a Dark Forest cat on your shoulder, but what in StarClan happened to the other?"
+        ]
+    ],
+    "silly_murder_caution": [
+        [
+            "Any",
+            "silly",
+            "you_shunned"
+        ],
+        [
+            "Uh... so... y_c. How's your day?",
+            "Catch any... fresh-kill?",
+            "[t_c's eyes dart around like dragonflies. {PRONOUN/t_c/subject/CAP} {VERB/t_c/aren't/isn't} good at hiding when {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} nervous, {VERB/t_c/are/is} {PRONOUN/t_c/subject}?]"
+        ]
+    ],
+    "silly_murder_thunderpath": [
+        [
+            "Any",
+            "silly",
+            "you_shunned",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Sounds like no cat's slowing you down on the Thunderpath to the Dark Forest, are they?"
+        ]
+    ],
+    "silly_youinjured_den": [
+        [
+            "Any",
+            "silly",
+            "you_injured",
+            "platonic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c! How are you doing?",
+	        "...Hey, what do you mean, 'Surprised it's not you in here, t_c'?"
+        ]
+    ],
+    "silly_youinjured_invite": [
+        [
+            "Any",
+            "silly",
+            "you_silly",
+            "you_injured",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c, what did you do this time? And why didn't you invite me?"
+        ]
+    ],
+    "silly_youhurt_see": [
+        [
+            "Any",
+            "silly",
+            "you_injured",
+            "you_ill",
+            "you_blind"
+        ],
+        [
+            "y_c! It's good to see you in here-",
+	        "Well, it's not good to see you in here, but it's good to see you, like, in general."
+        ]
+    ],
+    "silly_youill_gift": [
+        [
+            "Any",
+            "silly",
+            "sweet",
+            "you_ill",
+            "you_blind",
+            "they_blind",
+            "they_hearing"
+        ],
+        [
+            "Hi, y_c! I heard you were sick, so I brought you this...",
+            "[t_c places a daisy on your head.]",
+            "I dunno, it seemed like something you'd like. I hope you get well soon!"
+        ]
+    ],
+    "silly_youill_toad": [
+        [
+            "Any",
+            "silly",
+            "you_ill",
+            "random_cat",
+            "they_blind"
+        ],
+        [
+            "[t_c runs into the medicine den with an exasperated look on {PRONOUN/t_c/poss} face.]",
+            "y_c! y_c, what do you call a frog with stumpy legs that lives in dry environments?",
+            "You call that a toad! You call that a TOAD, but r_c doesn't seem to get that!",
+            "...Oh. Oh, you're croaking like one too, are you okay?"
+        ]
     ]
 }

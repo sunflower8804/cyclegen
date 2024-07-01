@@ -1217,7 +1217,9 @@
         [
             "they_shunned",
             "they_elder",
-            "you_any"
+            "you_any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "To shun me in my old age... How dare they? Such little respect."
@@ -1229,7 +1231,9 @@
             "they_elder",
             "you_any",
             "you_younger",
-            "dislike"
+            "dislike",
+            "they_blind",
+            "you_blind"
         ],
         [
             "My bones might be croaking and my health might be deteriorating, but that won't stop me from hurting you, youngling."
@@ -1239,13 +1243,63 @@
         [
             "they_shunned",
             "they_elder",
-            "you_any"
+            "you_any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ughh, finally, I was granted peace and quiet away from these offending o_cClan members.",
             "And yet you still bother me.",
             "Scram!"
         ]
+    ],
+    "silly_elder_greetings": [
+        [
+            "Any",
+            "they_elder",
+            "you_younger",
+            "silly",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Oh, hi, y_c! It's been a while since you've said hello to me.",
+            "Well, whatcha been up to? Heroically defeat any large dogs recently?",
+            "Hmm... no? What about overthrowing a corrupt o_cClan? Banishing a mew-levolent Dark Forest cat?",
+            "Oh, your life is so boring, y_c!"
+        ]
+    ],
+    "silly_elder_yawn": [
+        [
+            "Any",
+            "they_elder",
+            "you_younger",
+            "silly",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Yawn... I don't want to get up... y_c, would you bring me a mouse from the fresh-kill pile?",
+            "Why'd I say \"yawn\" out loud, you ask?",
+            "Well, because I'm- *yawn*",
+            "Fox-dung! I'm trying to think about yawning without actually yawning! And I clearly failed! I need a failure mouse right now, y_c! Bring me my failure mouse! Your elders command you!"
+        ]
+    ],
+    "silly_elder_bossy": [
+        [
+            "Any",
+            "silly",
+            "they_elder",
+            "assertive",
+            "they_blind"
+        ],
+        [
+            "Maybe it's nice to be an elder, after all. At first it was boring, but now I've learned to finally take advantage of it!",
+            "I get to tell people to do whatever I want them to, and they actually go through with it because I'm an elder!",
+            "'Bring me my fresh-kill!' ,'Get these ticks off my back!'",
+            "Maybe the apprentices think I'm bossy and argumentative, but when they're elders, they'll finally realize I was right all along. Because I was.",
+            "[t_c puffs out their chest in victory.]"
+        ]
     ]
-
 }

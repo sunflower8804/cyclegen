@@ -6149,7 +6149,7 @@
             "they_neurotic"
         ],
         [
-            "[You notice t_c sitting in the nursery entrance, watching the camp. When {PRONOUN/t_c/subject} see you, t_c straightens and nervously motions you over.]",
+            "[You notice t_c sitting in the nursery entrance, watching the camp. When {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, t_c straightens and nervously motions you over.]",
             "Um... could you sing that song you sang to me yesterday? Please?",
             "I really liked it. It kind of made everything feel... safe?",
             "[You oblige, leaning close to t_c as you sing {PRONOUN/t_c/object} a lullaby.]",
@@ -6163,7 +6163,8 @@
             "they_kitten",
             "they_neurotic",
             "greenleaf",
-            "newleaf"
+            "newleaf",
+            "they_blind"
         ],
         [
             "[After an all-night rainstorm, you emerge from the nursery to see puddles all over camp.]",
@@ -6218,7 +6219,9 @@
             "you_any",
             "leafbare",
             "they_kitten",
-            "they_neurotic"
+            "they_neurotic",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c creeps out of the nursery just far enough to touch {PRONOUN/t_c/poss} tiny nose to a patch of snow.]",
@@ -6230,7 +6233,9 @@
             "you_apprentice",
             "platonic_like",
             "they_kitten",
-            "they_neurotic"
+            "they_neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "What's it like being an apprentice? Is the territory scary? Is m_n mean?",
@@ -6254,5 +6259,21 @@
             "[Realizing the entire patrol is looking at {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/huddle/huddles} against your side and {VERB/t_c/continue/continues} in a whisper.]",
             "Promise you'll come back soon, please? It's scary when you're not here."
         ]
+    ],
+    "silly_kit_crowfood": [
+        [
+            "you_any",
+            "they_silly",
+            "they_kitten",
+            "you_older",
+            "they_blind"
+        ],
+        [
+            "[While leaving your den you spot a heap of crowfood right in the middle of camp.]",
+            "[You head over to remove the rotten prey, but t_c's sudden shriek almost makes you jump out of your pelt.]",
+            "Crowfood touch! y_c has crowfood touch!",
+            "[Before you know it, you're the talk of the nursery, and for the rest of the day t_c and the other kits avoid you like the plague.]"
+        ]
     ]
+
 }

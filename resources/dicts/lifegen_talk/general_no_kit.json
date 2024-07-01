@@ -18713,5 +18713,260 @@
             "[t_c's eyes widen and you swear you can see a look of guilt on {PRONOUN/t_c/poss} face as {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} and {VERB/t_c/scamper/scampers} off into the darkness.]",
             "[You wonder what could have pushed {PRONOUN/t_c/object} to come to such a place.]"
         ]
+    ],
+    "silly_romantic_forgot": [
+        [
+            "Any",
+            "silly",
+            "romantic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c! y_c! y_c!",
+            "Are you a, uh, are you an uh,",
+            "Oh, come on! I forgot what the line was...",
+            "Man, I was really proud of that line."
+        ]
+    ],
+    "silly_romantic_questing": [
+        [
+            "Any",
+            "silly",
+            "romantic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I love border patrols. Well, I don't love them, but I love pretending I'm on a quest to save c_nClan from badgers and threatening cats!",
+            "Maybe we could go questing sometime. I mean, if you wanted... just the two of us."
+        ]
+    ],
+    "silly_romantic_softer": [
+        [
+            "Any",
+            "silly",
+            "romantic_like",
+            "you_brooding",
+            "you_unlawful",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Woah... you're, like, really intimidating all the time, you know that?",
+            "How do you do it? You can just stand up to cats like it's nothing.",
+            "It makes you seem so cool.... Hey, am I the only one who's noticed you seem to act a little differently around me? Like, softer?"
+        ]
+    ],
+    "silly_romantic_investigate": [
+        [
+            "you_deputy",
+            "silly",
+            "random_cat",
+            "romantic_like"
+        ],
+        [
+            "Hey, deputy cat- uh, y_c.",
+            "There's a really big scary thing on the edge of camp...",
+            "But you can't send anyone else out to look at it! It's not safe for them! We should go.",
+            "Uh, together. But nobody else. They'll, uh, get hurt.",
+            "Oh, r_w told me this would work. I hope it does.",
+            "Wait. Wait, did you... did I say that out loud? Uh... no I didn't! It must've been the wind!"
+        ]
+    ],
+    "silly_jealousy_lifethings": [
+        [
+            "Any",
+            "silly",
+            "jealousy",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "So... how's your... life going? All those... things... that you get to do all the time? And those people you get to see? How are they?"
+        ]
+    ],
+    "silly_leafbare_swimming": [
+        [
+            "Any",
+            "leafbare",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You know what I miss, y_c?",
+            "Swimming! It's just not as fun when the water's iced over.",
+            "Ooh! Now that I think about it, that one river close to o_cClan territory might still be fine. Or at least, the ice is thin enough to break with my paws!",
+            "Wanna go check?"
+        ]
+    ],
+    "silly_leafbare_skaters": [
+        [
+            "Any",
+            "leafbare",
+            "silly",
+            "they_formerlykittypet",
+            "they_went_blind"
+        ],
+        [
+            "My Twolegs would always do this thing every leafbare where they'd run around on the ice. On purpose!",
+            "They had protective paw coverings that would prevent them from slipping. But then they slipped anyway. It was weird. But it looked fun.",
+            "[t_c thinks for a moment, then lets out a large gasp as their eyes twinkle mischievously.]",
+            "Maybe we could make our own paw coverings and try it ourselves!"
+        ]
+    ],
+    "silly_leafbare_xmastree": [
+        [
+            "Any",
+            "leafbare",
+            "silly",
+            "they_formerlykittypet",
+            "you_blind",
+            "they_went_blind"
+        ],
+        [
+            "Man... sometimes I miss being in my old Twolegs' den.",
+            "Around this time every year, they'd set up a tree inside their house with all these pretty lights and stuff.",
+            "It was really fun to play with! I always loved to catch the little red balls they'd put on it because they made fun sounds when they hit the floor, but then I used all of them up, and they stopped putting them on."
+        ]
+    ],
+    "silly_leafbare_menorah": [
+        [
+            "Any",
+            "leafbare",
+            "silly",
+            "they_formerlykittypet",
+            "you_blind",
+            "they_went_blind"
+        ],
+        [
+            "Man... sometimes I miss being in my old Twolegs' den.",
+            "Around this time every year, they'd set this tree-looking thing with nine branches on fire, but only one branch at a time. It looked really pretty, but they'd never let me touch it.",
+            "One leafbare, I almost got up there, but then one of the kits grabbed me. I mean, I know fire is dangerous, but these were small fires. They didn't spread like the stuff out here!"
+        ]
+    ],
+  "silly_newleaf_easter": [
+        [
+            "Any",
+            "silly",
+            "newleaf",
+            "from_mate",
+            "you_brooding",
+            "you_unlawful",
+            "you_blind"
+        ],
+        [
+            "y_c, feel the sweet newleaf air!",
+            "I wonder what Twolegs do this time of year. Do they spend time with their loved ones, too?",
+            "Yesterday, I saw a couple of Twoleg kits hunting these big, colorful pebbles. I tried to snatch one as a gift for you, but it broke open and there was this weird sweet stuff in it.",
+            "Hard exterior with a sweet center... hey, just like you, dear!"
+        ]
+    ],
+    "silly_newleaf_easterplatonic": [
+        [
+            "Any",
+            "silly",
+            "newleaf",
+            "platonic_love",
+            "random_cat",
+            "you_blind"
+        ],
+        [
+            "y_c, feel the wonderful newleaf air!",
+            "Just as fun as that one time we spooked r_a together.",
+            "Yesterday, I saw a couple of Twoleg kits hunting big colorful pebbles. If you were there, I bet we would've joined right in!"
+        ]
+    ],
+    "silly_newleaf_valday": [
+        [
+            "Any",
+            "silly",
+            "newleaf",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Newleaf! It's all bright and sunny and stuff now.",
+            "I heard one time that Twolegs usually dedicate one of the days this season to honoring their mates.",
+            "But then I also heard that day was in leafbare. So I dunno.",
+            "I also dunno what the Twolegs without mates do that day. Like, it seems kind of mean to them,. right? What if they don't want a mate?",
+            "What if you make the Twolegs without mates anxious about it? Dedicating a day to Twolegs with mates would probably, like, make some Twolegs feel like they HAVE to have a mate. And that's not true, right?",
+            "I also heard that I overthink this stuff and that it's none of my business what Twolegs do with their time. But I'm right! I'm right and you know it!"
+        ]
+    ],
+    "silly_leaffall_halloween": [
+        [
+            "Any",
+            "silly",
+            "leaffall",
+            "they_formerlykittypet",
+            "they_went_blind"
+        ],
+        [
+            "Around this time of year, my old Twolegs would always dress in these silly looking extra pelts and give out prey to other Twolegs.",
+            "Like, one year, one of their kits dressed up as a big yellow bird! It must've been some sort of festivity to show kindness, or something.",
+            "I wish we had something like that in the Clans, too! I wanna try dressing up as the red thing.",
+            "You know, like the red thing that you always see with the big yellow bird? With the orange nose and the big eyes?",
+            "[You have absolutely no idea what t_c is talking about.]"
+        ]
+    ],
+    "silly_dc_flower": [
+        [
+            "Any",
+            "silly",
+            "platonic_like",
+            "dead_close",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Awh. d_c would have loved this flower.",
+            "[t_c sits in silence for a moment, contemplating something.]",
+            "Well, maybe you can have it instead! You have the same impeccable taste as {PRONOUN/d_c/subject} did."
+        ]
+    ],
+    "silly_dc_whimsical": [
+        [
+            "Any",
+            "silly",
+            "dead_close",
+            "you_blind"
+        ],
+        [
+            "I miss d_c. Every time I go out on patrol, I find myself looking at all the flowers and rocks and plump prey and wishing d_c were still here to see it all.",
+            "...Do you think {PRONOUN/d_c/subject} made it to Silverpelt? Maybe {PRONOUN/d_c/subject} found some other ghost cat and now {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} going on a whimsical adventure to save the world together...",
+            "Haha, yeah. I like that. That sounds like something d_c would do. I hope {PRONOUN/d_c/subject} {VERB/d_c/get/gets} to tell me all about it when we meet again."
+        ]
+    ],
+    "silly_dc_hunting": [
+        [
+            "Any",
+            "silly",
+            "dead_close",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey... y_c?",
+            "What do you think d_c is doing right now? Surely {PRONOUN/d_c/subject}{VERB/d_c/'ve/'s} made {PRONOUN/d_c/poaa} way to Silverpelt, right? Who do you think {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} talking to? Could {PRONOUN/d_c/subject} be watching us right now?",
+            "Please don't tell me d_c was watching me this morning, I'm embarrassed enough as it is..."
+        ]
+    ],
+    "silly_dc_ashamed": [
+        [
+            "Any",
+            "silly",
+            "hate",
+            "dead_close",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+	        "[t_c lowers {PRONOUN/t_c/poss} voice when you try to speak to {PRONOUN/t_c/object}, for once in {PRONOUN/t_c/poss} life.]",
+            "y_c. I know, it's terrible, I know, I should feel so much worse saying this. Maybe I should just forgive you, but it's hard, and I've never been one to keep my mouth shut.",
+	        "Ah... sometimes I wish it was you instead of d_c."
+        ]
     ]
+
 }
