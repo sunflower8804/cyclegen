@@ -2994,6 +2994,87 @@
 	"When I was your age, I'd never be caught dead shirking my duties."
         ]
     ],
+
+	"cool_neutralAJ": [
+        [
+            "Any",
+	    "cool",
+	    "max_platonic_15",
+	    "non-related",
+	    "they_blind",
+	    "you_blind"
+        ],
+        [
+            "Eh ... y_c, how's it going?",
+	    "Any real reason you wanna chat, or do you just enjoy pulling me away from my duties?",
+	    "Gotta be a great power trip, huh? Maybe I should give it a try sometime."
+        ]
+    ],
+
+	"cool_neutralAJ1": [
+        [
+            "Any",
+	    "cool",
+	    "neutral",
+	    "non-related",
+	    "they_blind"
+        ],
+        [
+            "Well, if it isn't chats-a-lot. I gotta say, y_c, you are one talkative feline.",
+	"It's okay. If I were you, I'd be fascinated by me, too.",
+	"[The gleam in t_c's eye tells you {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} only half serious.]"
+        ]
+    ],
+
+    "cool_about_kit": [
+        [
+            "Any",
+            "cool",
+	    "upstanding",
+	    "from_mate",
+	    "random_cat",
+	    "they_blind",
+	    "you_blind"
+        ],
+        [
+            "Hey, can you help me with grooming t_kk? {PRONOUN/t_kk/subject/CAP}{VERB/t_kk/'ve/'s} had an upset stomach today and could use the extra comfort.",
+	    "... Aughh, did I seriously just say that? I totally sound like one of those lame parents!",
+	    "Look at what you've done to me, t_c. I used to be young and hip, but now, it's like I'm turning into my {PRONOUN/t_p/parent}! Hahaha!"
+        ]
+    ],
+
+	"cool_you_shunned": [
+        [
+            "Any",
+            "cool",
+	    "you_shunned",
+	    "platonic_love",
+	    "they_blind",
+	    "you_blind"
+        ],
+        [
+            "You really stepped in it now, huh, y_c?",
+	    "[t_c shakes their head and sighs softly, {PRONOUN/t_c/poss} tone uncharacteristically tender, as if they were talking to a kit.]",
+	    "How could you do this? Didn't you know what a stupid idea it was gonna be?"
+        ]
+    ],
+
+	"cool_youcondition": [
+        [
+            "any",
+            "cool",
+	    "you_injured",
+	    "you_ill",
+	    "min_platonic_40",
+	    "you_blind"
+        ],
+        [
+            "y_c ... You look ...",
+	    "[A shadow briefly passes over t_c's face before {PRONOUN/t_c/subject} {VERB/t_c/resume/resumes} {PRONOUN/t_c/poss} signature grin.]",
+	    "You look amazing. c_nClan better watch out, because any day now, no doubt you'll be back in the action."
+        ]
+    ],
+
 	
     "brooding_1": [
         [
@@ -4075,6 +4156,43 @@
             "How long have you been watching me?"
         ]
     ],
+	"cool_grief2_AJ": [
+        [
+            "no_kit",
+            "cool",
+	"random_cat",
+	"they_grieving",
+	"neutral",
+	"dead_close"
+        ],
+        [
+            "[t_c shuffles into camp with {PRONOUN/t_c/poss} face hidden beneath a paw. It seems like {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} been crying.]",
+	"Oh, hey, y_c! What? Crying? Me? No, it's just - ah - allergies. You know how it always gets this time of year. That pollen is killer.",
+	"What? d_c? Oh, yeah, so sad, what happened to {PRONOUN/d_c/object}. But, y'know. What can you do? Everyone's gotta go eventuall-ah. Ahem.",
+	"[t_c's voice breaks, but {PRONOUN/t_c/subject} {VERB/t_c/do/does} {PRONOUN/t_c/poss} best to disguise it as a sudden cough.]",
+	"Oh, well, if you'll excuse me, I should probably get going now. But this was just a great talk. Really great.",
+	"[t_c dashes away, face reconcealed beneath {PRONOUN/t_c/poss} paw.]"
+        ]
+    ],
+
+"cool_grief3_AJ": [
+        [
+            "no_kit",
+            "cool",
+	"they_grieving",
+	"trust",
+	"dead_close",
+	"they_blind",
+	"you_blind"
+        ],
+        [
+            "If I hear one more cat talk about what a kind, loving soul d_c was, how {PRONOUN/d_c/subject} always knew how to light up the camp with {PRONOUN/d_c/poss} smile, or whatever, I swear to StarClan, I'm gonna lose it.",
+	"Once you die, suddenly, it's like everycat loves you. If d_c was such a saint, why didn't everybody say so while {PRONOUN/d_c/subject} {VERB/d_c/were/was} still alive?",
+	"I'll tell you the truth about d_c: {PRONOUN/d_c/subject} {VERB/d_c/were/was} a real piece of work. Annoyed me to the Dark Forest and back.",
+	"That's the version of d_c it hurts to miss. The pain-in-the-tail version. The true version. Not the cat that everybody else suddenly claims to know."
+        ]
+    ],
+
     "sweetgrieving_1": [
         [
             "dead_close",
@@ -6830,6 +6948,85 @@
             "Please. I've heard worse from the kits in the nursery."
         ]
     ],
+
+	"cool_insult3": [
+        [
+            "Any",
+	    "insult",
+            "cool",
+	    "you_blind",
+	    "they_blind"
+        ],
+        [
+            "StarClan, I can barely hear you over the sound of your raging insecurity."
+        ]
+    ],
+
+	"cool_insult4": [
+        [
+            "Any",
+	    "insult",
+            "cool",
+	    "you_blind",
+	    "they_blind"
+        ],
+        [
+            "Well, aren't you just a little ray of sunshine?"
+        ]
+    ],
+
+	"cool_insult5": [
+        [
+            "Any",
+	    "insult",
+            "cool",
+	    "you_blind",
+	    "they_blind",
+	    "you_deaf"
+        ],
+        [
+            "You're too sweet."
+        ]
+    ],
+
+	"cool_insult6": [
+        [
+            "Any",
+	    "insult",
+            "cool",
+	    "you_blind",
+	    "they_blind"
+        ],
+        [
+            "Aww, so you do think of me! ~"
+        ]
+    ],
+
+	"cool_insult7": [
+        [
+            "Any",
+	    "insult",
+            "cool",
+	    "you_blind",
+	    "they_blind"
+        ],
+        [
+            "Try not to burst a blood vessel."
+        ]
+    ],
+
+	"cool_insult8": [
+        [
+            "Any",
+	    "insult",
+            "cool",
+	    "you_blind"
+        ],
+        [
+            "Sorry, could you move a couple steps to the left? You're blocking my light."
+        ]
+    ],
+
     "sweet_insult_1": [
         [
             "any",
