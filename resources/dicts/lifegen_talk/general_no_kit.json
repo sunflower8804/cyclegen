@@ -3075,6 +3075,20 @@
         ]
     ],
 
+	"cool_dftrainee_AJ": [
+        [
+            "Any",
+	    "you_dftrainee",
+            "they_not_dftrainee",
+            "cool"
+        ],
+        [
+            "[t_c catches a glimpse of your paws, thick with Dark Forest murk from your training session there last night, as they're grooming.]",
+	    "Awfully poor hygiene there, y_c.",
+	    "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} at you, eyes narrow and imploring, as {PRONOUN/t_c/subject} slowly {VERB/t_c/draw/draws} {PRONOUN/t_c/poss} tongue across {PRONOUN/t_c/poss} paw.]"
+        ]
+    ],
+
 	
     "brooding_1": [
         [
