@@ -1155,5 +1155,51 @@
             "What kind of contribution, you ask? Well, a tiny morsel of fresh-kill delivered right to my den, of course!",
             "[t_c puffs out their chest, satisfied with their hard work.]"
         ]
+    ],
+    "Introspective_mentor_H8": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_mediator",
+            "you_mediator_apprentice",
+            "neutral",
+            "clan_has_kits"
+        ],
+        [
+            "Hey, hey, hey... what happened? What's wrong? You were doing so well meditating those kits, then just froze.",
+            "You got nervous?",
+            "Oh, well that's fine! Don't beat yourself up about it. We've all gotten nervous in our apprentice days!"
+        ]
+    ],
+    "Introspective_mentor_H9": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_mediator",
+            "you_mediator_apprentice",
+            "dislike"
+        ],
+        [
+            "I understand it's hard to meditate sometimes, but did you really have to yell at poor r_a like that?",
+            "{PRONOUN/r_a/subject/CAP} were already having a bad day--",
+            "Oh, forget it for now. I'll speak to you later once I fix this."
+        ]
+    ],
+    "Introspective_mentor_H10": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_mediator",
+            "you_mediator_apprentice",
+            "platonic_like"
+        ],
+        [
+            "[t_c has been sitting around, {PRONOUN/t_c/poss} eyes watching l_n and d_n curiosity from a distance.]",
+            "Shhh, y_c. I suppose I can make this a teaching lesson of some sort... Look closely.",
+            "Do you see how d_n's tail is swishing around while l_n talks? They're not agreeing on something. Now, if I remember correctly, on the third swish of a tail...",
+            "[d_n makes a remark you didn't quite make out but from the look on l_n's face, it must have been shocking indeed.]",
+            "I was correct! This is why you always observe, y_c. It'll help you tremendously when meditating, I promise.",
+            "Now, if you'll excuse me... I must know what happened. I can be a bit nosy."
+        ]
     ]
 }

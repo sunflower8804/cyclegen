@@ -3399,5 +3399,99 @@
             "So... how'd you sleep? Eavesdrop on r_w and d_n talking when they didn't think you were awake last night? Weird dreams? Ooh, was there that one with the big red scaly snake that could breathe fire again?",
             "I hear that hearing other cats talk can influence your dreams... I'll have to sing about only good stuff when you're asleep, then! And maybe songs about big red scaly snakes. That guy sounded cool."
         ]
+    ],
+    "Introspective_mentor_H1": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_warrior",
+            "you_apprentince",
+            "platonic_love"
+        ],
+        [
+            "[t_c has had you training ever since sunrise but today you just can't get your pounce right. Eyes filled with frustrated tears, you try again... but fail.]",
+            "Chin up, let me help. All it takes is practice. You're allowed mistakes because that's how we learn.",
+            "One paw out... There you go.",
+            "See? Look at that! You're doing it wonderfully.",
+            "...All it takes is some practice and guidance. I know you'll be a wonderful warrior one day -- but you have to believe in yourself too."
+        ]
+    ],
+    "Introspective_mentor_H2": [
+        [
+            "they_introspective",
+            "they_brooding",
+            "from_mentor",
+            "they_warrior",
+            "you_apprentince",
+            "dislike"
+        ],
+        [
+            "[t_c has been quiet these past few moons, {PRONOUN/t_c/poss} eyes filled with an emotion you can't explain. Not yet, anyway.]",
+            "We're training in the rain today. Come, y_c.",
+            "It is said that harsh environments build character. StarClan knows you need it."
+        ]
+    ],
+   "Introspective_mentor_H13": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_warrior",
+            "you_apprentice",
+            "platonic_like"
+        ],
+        [
+            "Hey, y_c! You did well on your patrol earlier.",
+            "I'm really proud of you! You've grown a lot since the first time we went out on a patrol together.",
+            "Keep it up! Keep your head high."
+        ]
+    ],
+    "Introspective_mentor_H14": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_warrior",
+            "you_apprentice",
+            "neutral",
+            "greenleaf"
+        ],
+        [
+            "[t_c frowns as you trip again, distracted by your_crush just across camp.]",
+            "y_c, you need a break. Is the sun too much or have we been training for too long? Probably both...",
+            "[t_c coaxes you to lay under the shade, either ignoring your apparent distraction or continuing to be oblivious.]",
+            "Apprentices these days... You need to tell me if we're training too much, y_c! Especially in this weather."
+        ]
+    ],
+    "Introspective_mentor_H15": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_warrior",
+            "you_apprentice",
+            "neutral"
+        ],
+        [
+            "Hey, y_c! Sorry to ask, but can you wait for me? I just need to do something with r_w real quick and then we'll get right back with training!",
+            "I'll just be gone for like, a few minutes okay?",
+            "[t_c scatters out of view and you sit there, waiting... and waiting... and...]",
+            "[{PRONOUN/t_c/subject/CAP} totally forgot about you, didn't {PRONOUN/t_c/subject}?]"
+        ]
+    ],
+    "unabashed_bestie_H1": [
+        [
+            "platonic_love",
+        	"they_unabashed",
+        	"they_silly",
+            "greenleaf",
+            "they_warrior",
+            "you_queen",
+        	"you_mediator",
+            "you_medicine_cat"
+        ],
+        [
+            "Hi, y_c! StarClan, it's scorching outside!",
+            "You must have been inside all day, huh? Ugh, luckyyy!",
+            "d_n set me on a few patrols to make up for r_s, the poor cat.",
+            "Anyway! Tell me about your day. Please? I need the distraction from this heat."
+        ]
     ]
 }

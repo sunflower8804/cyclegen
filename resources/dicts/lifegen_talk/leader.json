@@ -1964,5 +1964,33 @@
             "[You look to t_c's paws and find a long string made from ivy and leaves tied together, unsure of its usage.]",
             "Oh, why are we doing this? Well, I wanted to congratulate r_c on a recent achievement, and decided to decorate the camp as part of it!"
         ]
+    ],
+    "shunned_sc_leader_H2": [
+        [
+            "you_leader",
+            "they_leader",
+            "they_sc",
+            "you_shunned"
+        ],
+        [
+            "We had the same destiny, yet different paths.",
+            "You decided to destroy your trust within the clan. A decision such as that, to murder one of your own...",
+            "I have little sympathy for you.",
+            "I wish for the Dark Forest to swallow you whole for your crimes, y_c."
+        ]
+    ],
+    "yourecovering_H2": [
+        [
+            "you_recovering_from_birth",
+            "they_leader",
+            "they_deputy",
+            "from_mate",
+            "you_any"
+        ],
+        [
+            "y_c, do you feel any better today? I can refrain from doing my duties for a little while and watch over you.",
+            "... No? The clan needs me more? Don't be ridiculous, y_c.",
+            "You're always going to come first."
+        ]
     ]
 }
