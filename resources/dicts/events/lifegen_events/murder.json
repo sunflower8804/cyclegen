@@ -62,9 +62,6 @@
   "any any murder attack territory": [
     "You attack and kill v_c while away from camp."
   ],
-  "any any murder attack border": [
-    "You murder v_c and leave {PRONOUN/v_c/poss} body on the border, sparking wild controversy with o_cClan."
-  ],
   "any any murder poison":[
     "You slip v_c some poisoned prey that kills {PRONOUN/v_c/object}.",
     "You persuade v_c to try a 'new' herb, claiming it helps with clarity and decision making. It's yew leaves, and before long, v_c succumbs to the deadly poison."
@@ -1006,6 +1003,6 @@
     "You love your job, but v_c just makes it harder than it should be. Your close proximity to the kits means you have little issue when taking one out."
   ],
   "queen kitten murder predator territory": [
-    "You snatch v_c and race out of camp before anyone can see you. Confused, {PRONOUN/v_c/subject} stay silent through your entire journey, up until you've climbed a tree and sat {PRONOUN/v_c/object} in a hawk's nest. When {PRONOUN/v_c/subject} {VERB/v_c/ask/asks} what you're doing, you tell {PRONOUN/v_c/object} to be right back. When a patrol later finds scraps of v_c's fur beneath the tree, they slowly put the pieces together."
+    "You snatch v_c and race out of camp before anyone can see you. Confused, {PRONOUN/v_c/subject} {VERB/v_c/stay/stays} silent through your entire journey, up until you've climbed a tree and sat {PRONOUN/v_c/object} in a hawk's nest. When {PRONOUN/v_c/subject} {VERB/v_c/ask/asks} what you're doing, you tell {PRONOUN/v_c/object} you'll be right back. When a patrol later finds scraps of v_c's fur beneath the tree, they slowly put the pieces together."
   ]
 }
