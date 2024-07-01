@@ -10610,6 +10610,48 @@
             "No matter what happens, I'll never give up on you, either."
         ]
     ],
+	"brooding_frommate_AJ5~1": [
+	[
+		"any",
+		"brooding",
+		"from_mate"
+	],
+	[
+		"[On a particularly bright afternoon, you purr to your mate, t_c, just how much you love them.]",
+		"...",
+		"... Thanks.",
+		"['... Aren't you going to say it back?']",
+		"...",
+		"... Look, if you wanted a mate who was going to get into all this touchy feely stuff, you really should have chosen someone else."
+	]
+	],
+
+	"brooding_frommate_AJ5~3": [
+	[
+		"any",
+		"brooding",
+		"from_mate",
+		"connected",
+		"random_cat"
+	],
+	[
+		"[You and t_c have been in a bit of a rough patch recently.]",
+		"[After two days of not talking, {PRONOUN/t_c/subject} sheepishly {VERB/t_c/pad/pads} up to you with a flower in {PRONOUN/t_c/poss} jaws.]",
+		"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/place/places} the flower at your feet, refusing to meet your gaze.]",
+		"Hey ... So, I talked with r_d.",
+		"And I just wanted to say ... I'm sorry. I've been selfish.",
+		"My whole life, I've been afraid of feeling anything too deeply. Afraid of getting hurt.",
+		"But I can't keep letting my life be ruled by fear. It isn't fair to you. You deserve touchy-feely. You deserve someone who's willing to be brave for you.",
+		"So ... Oh, StarClan. Here goes.",
+		"I love you, y_c.",
+		"So much.",
+		"[Shyly, t_c finally meets your eye.]",
+		"Promise me you'll never forget?"
+	]
+	],
+
+
+
     "silly_mentor_grown": [
         [
             "apprentice",
