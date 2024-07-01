@@ -1017,7 +1017,7 @@
         ],
         [
             "[You mew at t_c, and {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to stare at you.]",
-            "[...{PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} reply.]"
+            "[...{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} reply.]"
         ]
     ],
     "newborn_fromlittermate4": [
