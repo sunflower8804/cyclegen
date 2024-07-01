@@ -874,6 +874,226 @@
             "Until then, just try to enjoy your kithood."
         ]
     ],
+    "cool_you_kit_AJ": [
+        [
+            "newborn",
+            "cool",
+	        "neutral",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Echh. Y'know, I never much cared for the little tykes. Between you and me, they always carry a bit of a smell ..."
+        ]
+    ],
+
+"cool_you_kit_AJ1": [
+        [
+            "newborn",
+            "cool",
+	        "neutral"
+        ],
+        [
+            "[t_c observes you with an air of disinterest.]",
+	        "Yippee, another little mouth to feed. Can I go now?"
+        ]
+    ],
+
+"cool_you_kit_AJ2": [
+        [
+            "newborn",
+            "cool",
+	        "random_cat",
+	        "you_clanborn",
+	        "non-related",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Aw man. y_p used to be so cool and lively ... Now {PRONOUN/y_p/subject}{VERB/y_p/'re/'s} gonna be too preoccupied chasing moss-balls and singing lullabies all day to have any fun."
+        ]
+    ],
+
+"cool_you_newborn_AJ": [
+        [
+            "newborn",
+            "cool",
+	        "non-related",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Kits. Because who wouldn't want a little parasite mooching off 'em for six moons?",
+	        "Might as well get a tapeworm, if you ask me."
+        ]
+    ],
+"cool_you_kit_6_AJ": [
+        [
+            "kitten",
+            "cool",
+	        "random_cat",
+	        "you_blind",
+	        "they_blind",
+	        "neutral"
+        ],
+        [
+            "Heh. Lookit this, r_w. Little tyke wants to be my friend.",
+	        "What's up, y_c? Hey, I heard that their_crush has a thing about kits. Wanna go see if I can make {PRONOUN/their_crush/subject} swoon?",
+	        "You can be like my little wingman -- Er, kit."
+        ]
+    ],
+
+    "cool_you_kit_7_AJ~1": [
+        [
+            "kitten",
+            "cool",
+	        "non-related",
+	        "they_adult",
+	        "they_app",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "[One of the warriors brings you back a rabbit's foot from the hunting patrol. You bat it around in the clearing, where t_c is trying to sunbathe]",
+	        "[After one too many times trampling {PRONOUN/t_c/poss} tail, {PRONOUN/t_c/subject} finally {VERB/t_c/snap/snaps}, trapping the rabbit's foot beneath {PRONOUN/t_c/poss} paw.]",
+	        "Hey, kit. This is a pretty cool toy, huh? Wanna hear a fun story about rabbits' feet?",
+	        "Once upon a time there was a kit named y_c. No relation to you, of course.",
+            "Little y_c thought {PRONOUN/y_c/poss} shiny new rabbit's foot was the greatest thing ever. And who wouldn't? It's such a fun toy!",
+            "But one fateful night, y_c woke up in the middle of the night to a peculiar thumping sound at the nursery entrance.",
+            "Slowly, very slowly, y_c crept outside ...",
+            "Taking first one step ... And then another step ...",
+            "And as the disgusting stench of rabbit filled y_c's nostrils, the pit in {PRONOUN/y_c/poss} stomach grew larger, and larger ... UNTIL --",
+            "[t_c suddenly taps your shoulder with {PRONOUN/t_c/poss} tail, making you jump.]",
+            "It GOT {PRONOUN/y_c/subject}!!! Hahaha!",
+            "Better sleep with one eye open tonight, y_c! That rabbit's gonna want its foot back! Ahahahaha!"
+        ]
+    ],
+
+        "cool_you_kit_7_AJ~2": [
+        [
+            "kitten",
+            "cool",
+	        "they_adult",
+	        "they_app",
+	        "random_cat",
+	        "you_blind",
+	        "they_blind",
+            "connected"
+        ],
+        [
+            "[t_c's story about the rabbit's foot scared you so much, you cried for three days straight.]",
+	        "[After figuring out what happened, r_q chewed out t_c in front of the whole camp for {PRONOUN/t_c/poss} cruel prank.]",
+	        "Augh, c'mon, r_q. Could you lighten up a little? It was just a little fun.",
+	        "[r_q practically drags t_c into the nursery to talk to you.]",
+	        "Look, kit, the story was fake, alright? There is no three legged rabbit wandering the territory waiting to enact its revenge. I made it all up.",
+	        "[You still can't stop crying. The rabbit's deadly fangs and beady eyes feel way too real.]",
+	        "[r_q shoots t_c a glare sharp enough to kill.]",
+        	"... *Sighhhhh*",
+	        "C'mere, y_c. You wanna know a secret?",
+	        "... I actually had a rabbit's foot, just like that when I was a kid. Some jerk warrior told me the same story to get me to leave him alone.",
+	        "I was so terrified, I couldn't sleep in my own nest until I left the nursery.",
+        	"Once I lost the -kit and gained the -paw, I swore to myself that I would never get freaked out like that again.",
+	        "But ... Between you and me, I'm always scared. Everycat is. We grownups wish we could be crying all the time, just like you kits. We just don't show it.",
+	        "We live in a terrifying place. There's freaks and terrors of all types waiting to jump out at you around every corner.",
+            "But,  y'know ... It's not all bad, really. Because, if everycat is terrified, at least you never have to be terrified alone.",
+        	"Leave the worrying to the grownups, squirt. StarClan knows we do enough of it.",
+        	"And, uh ... Do me a favor and don't go blabbing about that rabbit's foot story I told you to anybody around camp?",
+        	"Ah, who am I kidding? Nobody would believe you, anyway. Heh."
+        ]
+    ],
+
+        "cool_you_kit_8_AJ": [
+        [
+            "kitten",
+            "cool",
+        	"from_parent",
+        	"they_blind"
+        ],
+        [
+            "Hm? What is it, kit? You wanna know if you can go outside and play?",
+        	"Sure! Why not? Just don't do anything stupid, and try not to wake me up when you come back into the nursery.",
+	        "[Other kits watch enviously as you dash outside, totally unsupervised, to do whatever you please. Your {PRONOUN/t_c/parent} is so cool!]"
+        ]
+    ],
+
+"cool_you_kit_9_AJ": [
+        [
+            "kitten",
+            "cool",
+        	"from_parent",
+        	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "[After a small accident while playing, you wait hours for t_c to come and pick you up from the medicine den.]",
+        	"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} come until long after dusk has fallen, and even then, they {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} distracted.]",
+        	"Sorry, squirt. Got busy catching up with a bunch of friends.",
+        	"What happened? Scrape yourself a little? Tch, that's no big deal, don't worry. It'll heal itself up in no time.",
+        	"[Usually, it's cool how carefree t_c is ... But, still, it'd be nice to see {PRONOUN/t_c/object} worry about you every once in a while.]"
+        ]
+    ],
+
+        "cool_you_kit_10_AJ": [
+        [
+            "kitten",
+            "cool",
+        	"unlawful",
+        	"from_parent",
+        	"random_cat"
+        ],
+        [
+            "[After getting caught making mischief in the medicine den, r_m chides you in front of your parent, t_c, who nods along sternly.]",
+        	"Of course, r_m, I completely understand. Needless to say, transgressions like this are not taken lightly in our family.",
+        	"Come along, y_c. We'll deal with this back at the nursery.",
+        	"[As t_c shepherds you away from the medicine den, {PRONOUN/t_c/poss} 'disapproving parent' act slowly slips away into giddy excitement.]",
+        	"Wow, kid! Your first act of rebellion. I was starting to think you didn't have it in you!",
+        	"What was it that caught your attention?",
+        	"[You offer up a sprig of pretty yellow flowers that you managed to sneak away from r_m.]",
+        	"Haha, that's great! We'll make a little rebel out of you, yet.",
+        	"Just ... try not to get caught next time. Hehehe."
+        ]
+    ],
+
+        "cool_you_kit_11_AJ": [
+        [
+            "kitten",
+            "cool",
+        	"platonic_like",
+        	"random_cat",
+        	"they_warrior",
+        	"they_blind"
+        ],
+        [
+            "[r_q catches you in the middle of a plot to sneak into the warrior's den, and is about to start scolding you, when t_c walks by.]",
+        	"Oh, hey, r_q. What seems to be the problem?",
+        	"Sneaking in? Nah, I invited {PRONOUN/y_c/object} into the warrior's den. Needed somebody to change my moss for me, and those apprentices always have the nastiest attitudes.",
+        	"[r_q sighs and tells t_c that they're not supposed to let <i>any</i> non-warriors into the warrior's den, but with that charming smile and those gleaming eyes, it'd be hard for anyone to stay mad at {PRONOUN/t_c/object} for long.]",
+        	"[r_q quickly pads away, letting you off the hook. You thank t_c for {PRONOUN/t_c/poss} help, and {PRONOUN/t_c/subject} {VERB/t_c/chuckle/chuckles}, flicking {PRONOUN/t_c/poss} tail.]",
+	        "Heh. Don't mention it, kit.",
+        	"Just, next time I get put on an early patrol, be sure to mention to d_n how you had a scary nightmare that only your best friend, t_c, can help soothe. *Wink*"
+        ]
+    ],
+
+        "cool_you_kit_12_AJ": [
+        [
+            "kitten",
+            "cool",
+	        "random_cat",
+	        "neutral",
+	        "they_blind"
+        ],
+        [
+            "[After t_p refuses to give you a badger ride, you go out into the clearing, searching for someone else to play with you.]",
+        	"[t_c is lazing in the middle of a sunbeam ... The perfect target!]",
+        	"[Without any warning, you latch yourself onto {PRONOUN/t_c/poss} leg and scramble up {PRONOUN/t_c/poss} pelt.]",
+        	"Whuh - Hey, hey! What are you doing? Are you crazy?",
+        	"[t_c quickly stands up and shakes you off.]",
+        	"Aw, man, it took me, like, two hours to get my pelt just right!",
+        	"*Sigh* Kits ... little dark forest spawn, if you ask me.",
+        	"[Seems like t_c is a bit of a reluctant playmate...]"
+        ]
+    ],
+
     "assertive_parent4_2": [
         [
             "newborn",
@@ -4768,7 +4988,8 @@
     "youkit_deaf_J3": [
         [
             "you_deaf",
-            "you_kitten"
+            "you_kitten",
+            "only_you_deaf"
         ],
         [
             "[You can see t_c's mouth moving. Apparently, most cats can understand what they're saying when they communicate that way, but you can't.]",
