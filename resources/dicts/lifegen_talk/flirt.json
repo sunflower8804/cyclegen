@@ -1205,6 +1205,156 @@
             "... But, I don't exactly hate it, either. ~"
         ]
     ],
+
+    "cool_flirt_AJ": [
+        [
+            "Any",
+            "cool",
+        	"reject",
+        	"random_cat",
+        	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "Echh. Someone get r_m. That was so sincere, I think it's causing an allergic reaction."
+        ]
+    ],
+
+    "cool_flirt_AJ1": [
+        [
+            "Any",
+            "cool",
+	        "reject",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Cute. Can I go now?"
+        ]
+    ],
+
+    "cool_flirt_AJ2": [
+        [
+            "Any",
+            "cool",
+        	"reject",
+	        "random_cat",
+	        "they_blind",
+	        "you_blind"
+        ],
+        [
+            "Hey, r_q? Remind me how you teach the kits to spell 'Out of your league'?"
+        ]
+    ],
+
+    "cool_flirt_AJ3": [
+        [
+            "Any",
+            "cool",
+          	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "Y'know, if I didn't know any better, I'd say you were flirting with me, y_c.~",
+	        "Well, why'd you stop? I never said I didn't like it!"
+        ]
+    ],
+
+    "cool_flirt_AJ4": [
+        [
+            "Any",
+            "cool",
+        	"brooding",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "That was. So lame. Ha.",
+	    "[t_c looks away, blushing.]"
+        ]
+    ],
+
+"cool_flirt_AJ5": [
+        [
+            "Any",
+            "cool",
+        	"platonic_like",
+        	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "Huh. Y'know, that really wasn't half bad.",
+    	    "Who taught you that line? Was it me?"
+        ]
+    ],
+
+    "cool_flirt_AJ6": [
+        [
+            "Any",
+            "cool",
+	        "reject",
+	        "you_blind",
+	        "they_blind",
+            "min_platonic_30"
+        ],
+        [
+            "Hey, didn't I teach you that line?"
+        ]
+    ],
+
+    "cool_flirt_AJ7": [
+        [
+            "Any",
+            "cool",
+        	"assertive",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Testy. I like it."
+        ]
+    ],
+
+"cool_flirt_AJ8": [
+        [
+            "Any",
+            "cool",
+	        "from_mate",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Feeling's mutual, babe!~"
+        ]
+    ],
+
+    "cool_flirt_AJ9": [
+        [
+            "Any",
+            "cool",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Heh. Always loved that line."
+        ]
+    ],
+
+    "cool_flirt_AJ10": [
+        [
+            "Any",
+            "cool",
+        	"they_blind",
+        	"you_blind"
+        ],
+        [
+            "Uhm - What is this feeling?",
+        	"I'm actually getting ... nervous?",
+	        "Is this how regular cats feel all the time?"
+        ]
+    ],
+
+
     "h5d6xs9": [
         [
             "Any",
