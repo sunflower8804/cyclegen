@@ -8163,7 +8163,7 @@
         ],
         [
             "Have you heard what people are saying about r_w and d_n?",
-            "They say that r_w is trying to replace {PRONOUN/d_n/subject} by any means possible...",
+            "They say that r_w is trying to replace {PRONOUN/d_n/object} by any means possible...",
             "I wonder if it's true?",
             "[You tell t_c that {PRONOUN/t_c/subject} shouldn't buy into petty gossip.]",
             "Oh, come on! Even if it isn't true, it's always fun to talk about."
@@ -18709,7 +18709,7 @@
             "they_deaf"
         ],
         [
-            "[While making your way over to your usual training spot, you find t_c  touching up on a few battle moves in a nearby hollow. You decide to approach {PRONOUN/t_c/object} and offer to help with {PRONOUN/t_c/poss} training.]",
+            "[While making your way over to your usual training spot, you find t_c touching up on a few battle moves in a nearby hollow. You decide to approach {PRONOUN/t_c/object} and offer to help with {PRONOUN/t_c/poss} training.]",
             "[t_c's eyes widen and you swear you can see a look of guilt on {PRONOUN/t_c/poss} face as {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} and {VERB/t_c/scamper/scampers} off into the darkness.]",
             "[You wonder what could have pushed {PRONOUN/t_c/object} to come to such a place.]"
         ]

@@ -468,6 +468,8 @@ class Events:
 
                 
     def gain_acc(self):
+        if game.clan.clan_settings["all accessories"]:
+            return
         possible_accs = ["WILD", "PLANT", "COLLAR", "FLOWER", "PLANT2", "SNAKE", "SMALLANIMAL", "DEADINSECT", "ALIVEINSECT", "FRUIT", "CRAFTED", "TAIL2"]
         acc_list = []
         if "WILD" in possible_accs:
@@ -3173,6 +3175,9 @@ class Events:
             return
 
         if cat.dead or cat.outside:
+            return
+        
+        if game.clan.clan_settings['all accessories']:
             return
 
         # check if cat already has acc
