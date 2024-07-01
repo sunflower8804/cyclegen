@@ -12517,6 +12517,27 @@
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} and {VERB/t_c/shake/shakes} {PRONOUN/t_c/object} head, forcing you to dart out of earshot before {PRONOUN/t_c/subject} can catch you eavesdropping.]"
         ]
     ],
+	"brooding_mentorAJ": [
+	[
+		"you_apprentice",
+		"you_medicine_cat_apprentice",
+		"you_queen's_apprentice",
+		"you_mediator_apprentice",
+		"brooding",
+		"platonic_like",
+		"they_older",
+		"random_cat"
+	],
+	[
+		"y_c. I know it's not easy being young.",
+		"But, no matter what, you should never let anyone else make you feel like you're worthless.",
+		"You have a place in this Clan, and you're valued, no matter how uncertain or out of place you might feel. c_nClan needs you. You have no reason to doubt.",
+		"[You ask t_c if {PRONOUN/t_c/subject} ever felt the same way, when {PRONOUN/t_c/subject} {VERB/t_c/were/was} young. {PRONOUN/t_c/poss/CAP} gaze suddenly darkens into a brooding scowl.]",
+		"I never feel anything. Ever.",
+		"Now don't ask me about it again."
+	]
+	],
+
     "brooding_mentor": [
         [
             "apprentice",
