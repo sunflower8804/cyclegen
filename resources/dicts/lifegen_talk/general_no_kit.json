@@ -3148,6 +3148,102 @@
             "... What? Nothing wrong with multitasking!"
         ]
     ],
+	"brooding_aboutsweet_AJ": [
+	[
+		"any",
+		"brooding"
+	],
+	[
+		"[t_c coldly stalks past you with a pelt covered in flowers, petals shuddering off their fur with every step.]",
+		"... r_c_sweet thought {PRONOUN/r_c_sweet/subject} could 'turn my frown upside down.'",
+		"It didn't work." 
+	]
+	],
+
+	"brooding_abouttkk_AJ1": [
+	[
+		"any",
+		"brooding"		
+	],
+	[
+		"[As t_kk curls up at {PRONOUN/t_c/poss} side, t_c's body erupts in a rare purr.]",
+		"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/do/does} it so rarely, you forgot purring was something even possible for t_c to do.]"
+	]
+	],
+
+	"brooding_theyconditionAJ": [
+	[
+		"any",
+		"brooding",
+		"they_ill",
+		"they_injured",
+		"dislike"
+	],
+	[
+		"What are you doing here? Come to gawk at me at my lowest?",
+		"Get out of the medicine den! You aren't welcome here."
+	]
+	],
+
+	"brooding_theyconditionAJ1": [
+	[
+		"any",
+		"brooding",
+		"they_ill",
+		"they_injured"
+	],
+	[
+		"[t_c is trying to push {PRONOUN/t_c/self} to {PRONOUN/t_c/poss} paws, legs trembling like weak, spindly sticks underneath {PRONOUN/t_c/object}.]",
+		"I can walk ... Don't need help ... AH --",
+		"[{PRONOUN/t_c/poss/CAP} legs collapse, sending {PRONOUN/t_c/poss} slamming back into their nest as an exasperated r_m rushes over to help {PRONOUN/t_c/object}.]"
+	]
+	],
+
+	"brooding_yougrief_AJ": [
+	[
+		"any",
+		"brooding",
+		"platonic_love",
+		"you_grieving"
+	],
+	[
+		"[In the middle of the clearing, you're washed with a wave of grief so intense and devastating, it makes you weak in the knees.]",
+		"[t_c rushes forward and catches you with {PRONOUN/t_c/poss} side before you can hit the ground.]",
+		"I know it hurts.",
+		"Just ... lean on me. I'll keep you safe."
+	]
+	],
+
+	"brooding_yougrief_AJ2": [
+	[
+		"any",
+		"brooding",
+		"platonic_love",
+		"you_grieving",
+		"dead_close"
+	],
+	[
+		"[t_c stands guard over d_c's grave whenever you're not around to watch it.]",
+		"Don't you worry, y_c. Nothing is going to disturb d_c as long as I'm around.",
+		"Now, both of you can get the peace you deserve."
+	]
+	],
+
+	"brooding_theygrief_AJ": [
+	[
+		"any",
+		"brooding",
+		"they_grieving",
+		"dead_close",
+		"neutral"
+	],
+	[
+		"[t_c stares at d_c's old nest, eyes trembling.]",
+		"I ... I feel ...",
+		"[When {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} you watching {PRONOUN/t_c/object}, {PRONOUN/t_c/poss} gaze suddenly hardens.]",
+		"I feel nothing."
+	]
+	],
     "neurotic_1": [
         [
             "Any",
@@ -5762,6 +5858,54 @@
             "Thank you for protecting them."
         ]
     ],
+	"brooding_loveAJ": [
+	[
+		"platonic_love",
+		"brooding",
+		"non-related",
+		"they_older"
+	],
+	[
+		"You've been doing well for yourself in your training, y_c. StarClan, it's been almost scary to see you grow.",
+		"Maybe you won't be such a terrible Clanmate after all.",
+		"... That was a joke. Sorry if it wasn't very funny."
+	]
+	],
+
+	"brooding_loveAJ1": [
+	[
+		"platonic_love",
+		"brooding"
+	],
+	[
+		"Hey, y_c. What did the flower say after it lied to its friend?",
+		"I was just 'pollen' your leg.",
+		"... That was a joke. Could you tell? Did you like it?"
+	]
+	],
+
+	"brooding_loveAJ2": [
+	[
+		"platonic_love",
+		"brooding"
+	],
+	[
+		"You're looking well this moon, y_c.",
+		"Have you done something different with your ... Um ... paws?",
+		"... Sorry. I'm not the best at giving compliments. If you couldn't tell."
+	]
+	],
+
+	"brooding_likeAJ": [
+	[
+		"min_trust_30",
+		"brooding"
+	],
+	[
+		"This Clan is full of idiots.",
+		"And anyone who can't see that is, themself, also an idiot."
+	]
+	],
     "broodingapp_toqueenapp12": [
         [
             "queen's apprentice",
@@ -7038,6 +7182,61 @@
             "Say that again."
         ]
     ],
+	"brooding_insultAJ": [
+	[
+		"any",
+		"brooding",
+		"insult"
+	],
+	[
+		"Is that all?"
+	]
+	],
+
+	"brooding_insultAJ1": [
+	[
+		"any",
+		"brooding",
+		"insult"
+	],
+	[
+		"Quit buzzing in my ear."
+	]
+	],
+
+	"brooding_insultAJ2": [
+	[
+		"any",
+		"brooding",
+		"insult"
+	],
+	[
+		"Pathetic."
+	]
+	],
+
+	"brooding_insultAJ3": [
+	[
+		"any",
+		"brooding",
+		"insult"
+	],
+	[
+		"Cry about it."
+	]
+	],
+	
+	"brooding_insultAJ4": [
+	[
+		"any",
+		"brooding",
+		"insult"
+	],
+	[
+		"..."
+	]
+	],
+
     "neurotic_insult_1": [
         [
             "any",
