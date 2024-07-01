@@ -19996,5 +19996,97 @@
             "I need you to fix my relationship with t_p_negative, please.",
             "And- and only you! I don't want r_d to do it. I trust you more."
         ]
+    ],
+    "neurotic_shunned_CM1": [
+        [
+            "Any",
+            "they_shunned",
+            "neurotic" 
+        ],
+        [
+            "[t_c is looking around wildly.]",
+            "Ah ... y_c. W-where are you going?"
+        ]
+    ],
+    "hate_insult_shunned_CM1": [
+        [
+            "no_kit",
+            "you_shunned",
+            "hate",
+            "any",
+            "insult"
+        ],
+        [
+            "... No. You know what, y_c?",
+            "Nothing could describe just how much I hate you. If I could repeat that sentence for as long as I live, it would still not equal half of the hatred I have for you.",
+            "You're a murderer, nothing but a pile of dirt waiting to blow away in the breeze. Mouse-dung waiting to be buried.",
+            "I am thrilled to see you finally getting what you deserve after all these moons.",
+            "And now everycat can hate you, <i>does</i> hate you, but it will still never be equal to the rage I get from your very existence.",
+            "Sad, isn't it?" 
+        ]
+    ],
+    "from_mate_u_shunned_CM1": [
+        [
+            "Any",
+            "from_mate",
+            "you_shunned"
+        ],
+        [
+            "[As dusk sets, t_c finds you in your half-built, scrappy 'nest' at the edge of camp.]",
+            "I brought you some fresh moss, y_c.",
+            "No, no -- I'm still upset with you. But I love you, and I don't want you to suffer.",
+            "I just hope that suffering isn't the only way to teach you a lesson." 
+        ]
+    ],
+    "from_mate_u_shunned_CM2": [
+        [
+            "Any",
+            "from_mate",
+            "you_shunned"
+        ],
+        [
+            ".....",
+            "Hello, y_c.",
+            "Let's not talk here. Not now.",
+            "[t_c walks away slowly, entangling {PRONOUN/t_c/poss} tail around yours as  {PRONOUN/t_c/subject} pass.]" 
+        ]
+    ],
+    "from_mate_u_shunned_CM3": [
+        [
+            "Any",
+            "from_mate",
+            "you_shunned", 
+            "romantic_love" 
+        ],
+        [
+            "[In the middle of the night, you feel a sudden warmth at your side.]",
+            "[Opening your eyes, you see t_c settling next to you.]",
+            "Shhh. I… know I shouldn't be doing this.", 
+            "I just can't stand you looking so alone. Sometimes, I wish I could be there for you. Other times, I know this is what you deserve. Even if it hurts.", 
+            "Just tonight. Let's just have this for tonight.", 
+            "[Eventually, you both drift back to sleep, intertwined together. When you finally awaken, you find t_c gone, but having seemingly left a small flower near your resting spot.]"
+        ]
+    ],
+    "mate_they_shunned_CM1": [
+        [
+            "Any",
+            "from_mate",
+            "they_shunned"
+        ],
+        [
+            "I'm sorry, love. I really am.",
+            "[t_c looks at you with an indescribable amount of sadness and longing in {PRONOUN/t_c/poss} eyes. It takes a lot of willpower to walk away from {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "mate_they_shunned_CM2": [
+        [
+            "Any",
+            "from_mate",
+            "they_shunned"
+        ],
+        [
+            "[You spot t_c from across the camp, your eyes meeting for a long moment.]", 
+            "[r_w nudges your side as {PRONOUN/r_w/subject} pass, breaking your focus on your mate. When you look back, t_c is gone. Maybe some other time…]" 
+        ]
     ]
 }

@@ -5051,5 +5051,19 @@
             "Yeah! What do you wanna play? Moss ball? Or maybe splash in the river nearby? I'm sure r_m wouldn't mind if I go out for a little bit.",
             "What? No, no I'm fine! I swear! Don't worry about me- I want to play too."
         ]
+    ],
+    "kitten_shunned_CM1": [
+        [
+            "you_kitten",
+            "you_shunned",
+            "they_older",
+            "brooding",
+            "unabashed" 
+        ],
+        [
+            "[t_c scowls down at you as you approach {PRONOUN/t_c/object}.]",
+            "Stars, you should have never been born.",
+            "Scram, before I do what y_p failed to do."
+        ]
     ]
 }

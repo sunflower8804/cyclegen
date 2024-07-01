@@ -6402,5 +6402,18 @@
             "I need you to fix my relationship with t_p_negative, please.",
             "And- and only you! I don't want r_d to do it. I trust you more."
         ]
+    ],
+    "kitten_shunned_CM2": [
+        [
+            "they_kitten",
+            "they_shunned",
+            "you_older"
+        ],
+        [
+            "It's so unfair!",
+            "[You hear t_c squeal across the camp, to no answer other than flicked ears.]",
+            "t_p told me that c_nClan would always love and protect me!",
+            "[You don't have the heart to tell {PRONOUN/t_c/object} that, maybe, even t_p wouldn't anymore...]"
+        ]
     ]
 }
