@@ -2954,6 +2954,47 @@
             "[t_c hits you with one of {PRONOUN/t_c/poss} trademark grins, but for some reason, it seems a bit deeper this time. A bit more pained.]"
         ]
     ],
+
+	"cool_tomediatorAJ": [
+        [
+            "mediator",
+	"mediator's apprentice",
+            "cool",
+	"assertive",
+	"unabashed",
+	"brooding",
+	"stable",
+	"max_platonic_15",
+	"random_cat",	
+	"you_blind",
+	"they_blind"
+        ],
+        [
+            "Huh? Oh, I don't really need any mediation. Thanks."
+        ]
+    ],
+
+"adult_toappAJ": [
+        [
+            "apprentice",
+	"mediator's apprentice",
+	"queen's apprentice",
+	"medicine cat apprentice",
+            "upstanding",
+	"assertive",
+	"brooding",
+	"stable",
+	"max_platonic_10",
+	"random_cat",
+	"they_blind",
+	"you_blind"
+        ],
+        [
+            "Shouldn't you be out with m_n ...?",
+	"When I was your age, I'd never be caught dead shirking my duties."
+        ]
+    ],
+	
     "brooding_1": [
         [
             "Any",
