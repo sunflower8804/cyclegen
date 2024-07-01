@@ -2803,5 +2803,28 @@
             "You call that a toad! You call that a TOAD, but r_c doesn't seem to get that!",
             "...Oh. Oh, you're croaking like one too, are you okay?"
         ]
+    ],
+    "shunned_sc_H1": [
+        [
+            "any",
+            "you_shunned",
+            "they_sc"
+        ],
+        [
+            "[t_c looks at you with narrowed eyes and huffs.]",
+            "Go back to where you came from. You're not welcome here."
+        ]
+    ],
+    "shunned_sc_H2": [
+        [
+            "any",
+            "you_shunned",
+            "they_sc"
+        ],
+        [
+            "There is so much hate within your presence, it darkens our pure clouds.",
+            "c_nClan was right to shun you, y_c.",
+            "You must realize that to be at peace."
+        ]
     ]
 }

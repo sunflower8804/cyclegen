@@ -349,5 +349,35 @@
             "[You gather the strength to look at t_c, and notice that {PRONOUN/t_c/subject}  {VERB/t_c/have/has} somehow found a skinny vole.",
             "It was supposed to be l_n's... but you need it more."
         ]
+    ],
+    "starve_shunned_CM1": [
+        [
+            "no_kit",
+            "you_shunned",
+            "starving",
+            "focus"
+        ],
+        [
+            "[t_c looks down at your pelt, dull and thin from what feels like moons of endless hunger.]",
+            "Preparing for the Dark Forest early, y_c?",
+            "Serves you right, coward."
+        ]
+    ],
+    "starve_shunned_CM2": [
+        [
+            "no_kit",
+            "you_shunned",
+            "platonic_love",
+            "starving",
+            "focus"
+        ],
+        [
+            "[Since the Clan has been so low on prey recently, you've had even rarer meals than you would have before. The days spent stuck in camp are long and hard. And yet...]", 
+            ".. y_c? Are you there?",
+            "[t_c approaches you with a small, scrawny mouse in {PRONOUN/t_c/poss} jaws, looking around to check that no cat notices when {PRONOUN/t_c/subject} drop it in front of you.]", 
+            "You have to eat too. Some of our Clanmates don't think it's worth it to feed you anymore." , 
+             "But I've seen the real you, y_c, I know what kind of cat you are, and you need to survive this.", 
+              "I believe in you, and I know that you'll hold on." 
     ]
+]
 }

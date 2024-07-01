@@ -2174,7 +2174,7 @@
 	        "[With a loud sigh, d_n concedes that maybe t_c can be let off of den mending duty, just this once.]",
         	"[As soon as {PRONOUN/d_n/subject} {VERB/d_n/leave/leaves} the nursery, t_c beams at you.]",
         	"y_c, that was amazing! Where did you learn how to act like that? StarClan, you almost had <i>me</i> convinced!",
-	        "Whatever you do, don't lose that spark, kit! With your powers and mine combined together, we'll never have to work a day in our lives!",
+	        "Whatever you do, don't lose that spark, kit! With your powers and mine combined together, we'll never have to work a day in our lives!"
         ],
         "snitch": [
             "[You step away from t_c and state bluntly that everything {PRONOUN/t_c/subject} just said was a lie.]",
@@ -2235,7 +2235,6 @@
         	"Yeah, well, it can't all be glitz and glamor! And stop making me look bad in front of the kit! Everyone knows I have an image to maintain~.",
         	"Y'know, y_c, if the thankless, grueling life of hunting and fighting doesn't sound like your style, you could do a lot worse than the life of a mediator!",
         "Give it a try, if you're interested. I could always use another impressionable mind to show my ways to."
-        ],
         ]
     },
 
@@ -2279,7 +2278,6 @@
             "Eugh, what is that? Do you need to make dirt, or something?",
 	        "On second thought, can I get one of your siblings in on this? r_q! Get me the cutest one from this litter!",
 	        "[t_c parades t_l out to meet the o_cClan cats while you sit and seethe back in the nursery.]"
-        ],
         ]
     },
 
@@ -2324,7 +2322,6 @@
 	        "G-Guys?",
 	        "[t_c desperately looks to their posse, but it's too late. All the kits have already started to disperse. Success! The liar is dethroned!]",
 	        "[But, when you see t_c sobbing in {PRONOUN/t_c/poss} nest later, refusing any comfort from r_q, you start to wonder if you really made the right decision after all ...]"
-        ],
         ]
     },
     "silly_leafbare_game": {
@@ -3470,7 +3467,7 @@
 	        "choice3": {
 	            "text": "[Talk to t_c yourself]",
 	               "next_scene": "help"
-	        },
+	        }
             },
         "other": [
             "[You decide to tell neutral_r_w about t_c's predicament.]",
@@ -3493,6 +3490,7 @@
 	        "[You bury your face in t_c's chest fur.]",
 	        "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/tense/tenses} at first, then slowly {VERB/t_c/relax/relaxes} into your touch.]",
 	        "[In this silent embrace, your truest sentiments seem to be communicated: just because t_c wants to wait forever, doesn't mean {PRONOUN/t_c/subject} {VERB/t_c/need/needs} to wait alone.]"
+        ]
         },
 
          "brooding_frommate_AJ5~2": {
@@ -3515,7 +3513,7 @@
             "choice2": {
                 "text": "... What way is that, exactly?",
                 "next_scene": "press"
-            },
+            }
         },
         "accept": [
             "Heh. You're welcome.",
@@ -3529,7 +3527,7 @@
 	        "Look, I know I'm not good at this 'feelings' stuff, but I'm trying, okay? Can't that be enough?",
 	        "*Sigh* Whatever. Be like that, then. I don't care.",
             "[t_c looks away bitterly, tail lashing and lip trembling. Right. This is how {PRONOUN/t_c/subject} {VERB/t_c/look/looks} when {PRONOUN/t_c/subject} <i>{VERB/t_c/don't/doesn't}</i> care.]"
-        ],
+        ]
     },
 
     "cool_likeAJ": {
@@ -3892,6 +3890,178 @@
             "Oh, y_c! I'm sorry... I didn't realize you were there, or that anyone could hear me over the rain...",
             "But, um, of course I'll stop! I don't want to annoy anyone.",
             "[t_c smiles nervously and scurries away.]"
+        ]
+    },
+    "Neurotic_mates_H1": {
+        "tags": [
+            "from_mate",
+            "they_neurotic",
+            "they_any",
+            "you_any",
+            "comfort"
+        ],
+        "intro": [
+            "... r_c says I follow you around like a duckling to its mother.",
+            "I think they're kinda right, but you don't mind that, do you?",
+            "If you do mind..."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "No, it's fine.",
+                "next_scene": "itsfine"
+            },
+            "choice2": {
+                "text": "I do mind.",
+                "next_scene": "domind"
+            }
+        },
+        "itsfine": [
+            "Oh-- really?",
+            "Okay, if you're fine with it. Tell me when it gets overbearing or overwhelming, please?",
+            "The last thing I want to do is make you uncomfortable, y_c."
+        ],
+        "domind": [
+            "Oh... okay, that's alright.",
+            "[t_c scooches away a little and smiles hesitantly, testing the waters.]",
+            "Is this a good distance? I promise I'll try to be more independent in the future.",
+            "Ah, maybe I should do my camp duties instead."
+        ]
+    },
+    "Introspective_mate_H1": {
+        "tags": [
+            "they_introspective",
+            "they_stable",
+            "you_silly",
+            "you_unabashed",
+            "you_assertive",
+            "from_mate",
+            "they_any",
+            "you_any",
+            "romantic_like",
+            "comfort"
+        ],
+        "intro": [
+            "[t_c plops down next to you, {PRONOUN/t_c/poss} eyes watching y_kk play unwaveringly just a few paws away. y_kk lets out a ferocious meow and bounces around the moss ball, startling another kit from their slumber.]",
+            "{PRONOUN/y_kk/subject/CAP} {VERB/y_kk/get/gets} it from you.",
+            "[t_c giggles and rolls the moss ball back in y_kk's direction when it's pushed {PRONOUN/t_c/poss} way.]"
+        ],
+        "into_choices": {
+            "choice1": {
+                "text": "Hey!",
+                "next_scene": "hey"
+            },
+            "choice2": {
+                "text": "[Laugh.]",
+                "next_scene": "laugh"
+            },
+            "choice3": {
+                "text": "No, they take after you.",
+                "next_scene": "takeafter"
+            },
+            "choice4": {
+                "text": "[Question your kithood.]",
+                "next_scene": "kithood"
+            }
+        },
+        "hey": [
+            "Hey, what?",
+            "Haha, it was a compliment, dear. Yes, {PRONOUN/y_kk/subject} may be a bit rough around the edges, but that's what makes {PRONOUN/y_kk/object} interesting!",
+            "Besides, {PRONOUN/y_kk/subject} also {VERB/y_kk/remind/reminds} me of you. y_kk just has that charm I fell in love with."
+        ],
+        "laugh": [
+            "[t_c laughs along with you, leaning {PRONOUN/t_c/poss} body weight onto yours.]",
+            "No, but, seriously. {PRONOUN/y_kk/subject/CAP} {VERB/y_kk/carry/carries} the same charm I saw in you. It just makes me love y_kk even more.",
+            "{PRONOUN/y_kk/subject/CAP} will grow up to be just like you, I'm sure of it."
+        ],
+        "takeafter": [
+            "Oh, really?",
+            "[t_c snorts, but {PRONOUN/t_c/subject} {VERB/t_c/smile/smiles} gently after a moment.]",
+            "... No, I think {PRONOUN/y_kk/subject} {VERB/y_kk/take/takes} after you the most, dear. All that energy... Oh, beats me, I could never.",
+            "As a kit, I was more interested in how the flowers bloomed in Newleaf than playing."
+        ],
+        "kithood": [
+            "Huh? Oh, yes, I remember you being rambunctious when we were young. Always moving, always having some sort of energy.",
+            "And that wasn't a bad thing, not at all. I think t_p expected us to clash, but I fell in love with you for your energy.",
+            "Oh, don't give me that look. Of course, I did, dear. Why wouldn't I? It is very easy to love."
+        ]
+    },
+    "Introspective_mate_H2": {
+        "tags": [
+            "they_introspective",
+            "they_any",
+            "you_leader",
+            "from_mate",
+            "comfort",
+            "romantic_like"
+        ],
+        "intro": [
+            "[t_c presses into your side and purrs.]",
+            "... You're muttering."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I do not mutter.",
+                "next_scene": "nomutter"
+            },
+            "choice2": {
+                "text": "You know me too well.",
+                "next_scene": "toowell"
+            }
+        },
+        "nomutter": [
+            "Ah, you do mutter. You mutter when you're thinking. Or well, when you're bothered by something.",
+            "So what's wrong, y_c? You can speak to me, I promise.",
+            "I know being a leader is hard. r_d says you should be outspoken about your feelings or take breaks.",
+            "Well-- at least that's what r_d says to me."
+        ],
+        "toowell": [
+            "Hm, of course, I do!",
+            "You mutter when you're thinking about something that's bothering you greatly. And since you're c_nClan's leader, that can be anything.",
+            "I'm here to listen. I promise letting out your thoughts or frustrations would not do any cat harm.",
+            "But I will not force you, y_c."
+        ]
+    },
+    "clouds_kitten_H1": {
+        "tags": [
+            "plains",
+            "mountainous",
+            "they_kitten",
+            "you_formerlyakittypet",
+            "you_any",
+            "you_older",
+            "platonic_like"
+        ],
+        "intro": [
+            "I saw white, fluffy things today!! It looked like walking clouds.",
+            "A two-leg was guiding them through the fields, maybe a bit too close but the clouds didn't seem to mind like we do!"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "That's dangerous, y_c.",
+                "next_scene": "danger"
+            },
+            "choice2": {
+                "text": "Those are called sheep.",
+                "next_scene": "sheep"
+            },
+            "choice3": {
+                "text": "I think those are goats.",
+                "next_scene": "goat"
+            }
+        },
+        "danger": [
+            "But, but! It wasn't like I was really close to them!",
+            "r_q said observing things we don't understand is a great way to learn about it. So... why can't I watch two-legs?",
+            "You were a kittypet once, you should understand me!"
+        ],
+        "sheep": [
+            "Really?? You're so cool y_c!",
+            "I know it's not suppose to interest me and I'll get in trouble for it but you won't tell on me, right?",
+            "Pretty pleaseeeee??"
+        ],
+        "goat": [
+            "Hmm, you don't sound so sure either, y_c...",
+            "It's okay! I'll just call them walking clouds for now. They don't need a fancy name for me to know they're fluffy and hang out with two-legs!"
         ]
     }
 }
