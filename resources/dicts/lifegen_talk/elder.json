@@ -466,6 +466,69 @@
             "At least come up with an original question."
         ]
     ],
+    "brooding_elder12_AJ": [
+	[
+		"Any",
+		"brooding",
+		"neutral",
+		"you_apprentice",
+		"you_queen's_apprentice",
+		"you_medicine_cat_apprentice",
+		"you_mediator_apprentice"
+	],
+	[
+		"You! Apprentice! Bring me some fresh moss!",
+		"I swear, this new generation just has no manners at all ... Cats used to respect their elders. In my time, we never would've let it get this bad in the first place."
+	]
+	],
+
+    "brooding_elder13_AJ": [
+	[
+		"Any",
+		"brooding",
+		"neutral",
+		"you_apprentice",
+		"you_queen's_apprentice",
+		"you_medicine_cat_apprentice",
+		"you_mediator_apprentice"
+	],
+	[
+		"Oh, and there goes y_c. I swear, each apprentice these days is even more useless than the last.",
+		"Well? Are you going to bring me some fresh kill, y_c, or just stand there gawking?"
+	]
+	],
+
+    "brooding_elder14_AJ": [
+	[
+		"Any",
+		"brooding",
+		"neutral",
+		"you_adult",
+		"they_older"
+	],
+	[
+		"Hmph. You there, y_c! Why haven't you checked me for ticks yet today?",
+		"I don't care that you're not an apprentice anymore! You're still practically a child in my eyes, and every child is to have deference towards their elders!"
+	]
+	],
+
+    "brooding_elder15_AJ": [
+	[
+		"Any",
+		"brooding",
+		"platonic_love"
+	],
+	[
+		"[t_c sits in the darkest corner of the den, eyes seemingly screwed up in concentration.]",
+		"[When {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you enter, {PRONOUN/t_c/poss} expression softens a little.]",
+		"Joint pain ... Wouldn't wish it on anybody.",
+		"[As you gently move to rub {PRONOUN/t_c/poss} legs, {PRONOUN/t_c/subject} {VERB/t_c/groan/groans} weakly in protest, but reluctantly {VERB/t_c/concede/concedes}, relaxing into your touch.]",
+		"Once, I was the fiercest warrior in the Clan, now I'm getting pampered like some kittypet.",
+		"... Do come back again, will you, y_c?"
+	]
+	],
+
+
     "neurotic_elder": [
         [
             "Any",
