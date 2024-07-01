@@ -3189,6 +3189,40 @@
             "[Relieved it isn't a creature sneaking into the camp, you turn back to the den. t_c is a strange cat, that is for sure.]"
         ]
     },
+	"brooding_sibling_AJ": {
+        "tags": [
+	    "no_kit",
+	    "they_app",
+	    "brooding",
+	    "sibling",
+	    "adopted_sibling",
+	    "half sibling",
+            "they_blind"
+        ],
+        "intro": [
+	    "[t_c approaches you outside your nest one day, looking shy and a little embarrassed.]",
+	    "Will you <i>please</i> tell t_p to stop asking other cats to be my friends?",
+	    "I've tried and tried to tell {PRONOUN/t_p/object} I'm fine on my own, but ... I dunno, you've always been better with the feelings stuff. Maybe {PRONOUN/t_p/subject}'ll listen to you."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I'll try!",
+                "next_scene": "try"
+            },
+            "choice2": {
+                "text": "t_p is right.",
+                "next_scene": "parenting"
+            }
+        },
+        "try": [
+            "... Thank you."
+        ],
+        "no": [
+            "Tch. What, are you my {PRONOUN/t_p/parent} now?",
+	    "Whatever. I'll just get someone else to do it."
+        ]
+    },
+
     "brooding_tomedappAJ1": {
         "tags": [
             "they_warrior",
