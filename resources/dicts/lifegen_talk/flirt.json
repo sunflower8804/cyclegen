@@ -1192,6 +1192,118 @@
             "Oh, you're so cute sometimes! Do tell me more, hehe."
         ]
     ],
+	"brooding_flirt_AJ": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "No."
+        ]
+    ],
+
+	"brooding_flirt_AJ1": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "...",
+	    "...*Blush*"
+        ]
+    ],
+
+	"brooding_flirt_AJ2": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "... You're very sweet. To say that."
+        ]
+    ],
+
+	"brooding_flirt_AJ3": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "Uhm. Why?"
+        ]
+    ],
+
+	"brooding_flirt_AJ4": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "[t_c buries their face in their paws shyly.]"
+        ]
+    ],
+
+	"brooding_flirt_AJ5": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "[t_c starts to purr.]"
+        ]
+    ],
+
+	"brooding_flirt_AJ6": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "Do you think I'm so shallow ...?"
+        ]
+    ],
+
+	"brooding_flirt_AJ7": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "[t_c narrows their eyes suspiciously.]",
+	    "What's your angle?"
+        ]
+    ],
+
+	"brooding_flirt_AJ8": [
+        [
+            "Any",
+            "brooding",
+	    "reject",
+	    "non-mates",
+	    "neutral"
+        ],
+        [
+            "Uhm ... Have you considered seeing r_d?",
+	    "If you're seriously interested in me, you probably have some issues to work through."
+        ]
+    ],
+
+	"brooding_flirt_AJ9": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "[t_c allows the faintest hint of a smile to crack over {PRONOUN/t_c/poss} face.]",
+	    "... Thank you."
+        ]
+    ],
+
+
     "cool_flirt": [
         [
             "Any",
