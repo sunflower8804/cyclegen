@@ -5848,6 +5848,217 @@
             "Go try your stupid tricks on somebody else."
         ]
     ],
+	"brooding_tomedapp1_AJ": [
+	[
+		"medicine cat apprentice",
+		"brooding",
+		"they_warrior",
+		"they_apprentice",
+		"max_respect_10",
+		"max_platonic_10",
+            	"you_blind",
+            	"they_blind"
+	],
+	[
+		"Hmph. Looks like they're just letting any cat become a medicine cat, now.",
+		"Aren't you supposed to have some kind of special connection to StarClan?",	
+		"Even I could probably sit around sorting herbs all day ..."
+	]
+	],
+
+	"assertive_nose_AJ": [
+	[
+		"no_kit",
+		"assertive",
+		"silly",
+		"unabashed",
+		"sibling",
+            	"you_blind",
+            	"they_went_blind"
+	],
+	[
+		"Hey, there you are! I've been looking for you all over!",
+		"Can't escape from me so easily, huh? I have an enhanced nose with elite tracking capabilities!",
+		"[You collapse into laughter. All day, you and t_c swap jokes about {PRONOUN/t_c/poss} 'enhanced nose' while other cats look on in confusion.]"
+	]
+	],
+
+	"grieving_med_AJ": [
+	[
+		"no_kit",
+		"they_grieving",
+		"they_medicine_cat",
+		"they_medicine_cat_apprentice",
+            	"you_blind",
+            	"they_blind"
+	],
+	[
+		"I couldn't save them ...",
+		"Oh, StarClan, I ...",
+		"..."
+	]
+	],
+
+	"assertive_kittypet_AJ": [
+	[
+		"no_kit",
+		"they_formerlyakittypet",
+		"they_assertive",
+		"they_cool",
+            	"you_blind",
+            	"they_blind"
+	],
+	[
+		"Sure, I used to be a kittypet, but I'm no softpaw!",
+		"Free meals, no work ... Wasn't such a bad arrangement, really. But my loyalty is with c_nClan now, fully and completely.",
+		"Even if it means I'll never again taste those delicious treats I so loved from my housefolk ... *Sigh*"
+	]
+	],
+
+	"assertive_rogue_AJ": [
+	[
+		"no_kit",
+		"they_formerlyarogue",
+		"they_assertive",
+            	"you_blind",
+            	"they_blind"
+	],
+	[
+		"Hard to believe I'm a c_nClan cat now ... We used to dream about killing you guys.",
+		"Now, if any rogues came storming in, threatening camp, I'd jump into battle no question!",
+		"Funny how life works, huh?"
+	]
+	],
+
+	"brooding_mediator_AJ": [
+	[
+		"no_kit",
+		"brooding",
+		"they_mediator",
+		"they_mediator_apprentice",
+            	"you_blind",
+            	"they_blind"
+	],
+	[
+		"[You finish a rant to t_c, the mediator, about how you annoyed you are at something that r_c did earlier.]",
+		"... Okay. Have you tried talking to {PRONOUN/r_c/object} about it?",
+		"[... You concede that you have yet to.]",
+		"*Sigh*. Useless. Everyone in this Clan is so terrified of confrontation all of a sudden.",
+		"r_c is never going to change if {PRONOUN/r_c/subject}{VERB/r_c/don't/doesn't} know how you feel, y_c. You need to be direct. No cat has ever been killed by some brutal honesty.",
+		"If you spend your whole life worrying about trodding on the toes of others, you'll never get anything done.",
+		"Now, do you want me to help you work out what you'll say?"
+	]
+	],
+
+	"brooding_toqueen_AJ": [
+	[
+		"you_queen",
+		"you_queen's_aprentice",
+		"brooding",
+		"they_apprentice",
+		"they_warrior",
+		"they_medicine_cat",
+		"they_medicine_cat_apprentice",
+		"they_deputy",
+            	"they_blind"
+	],
+	[
+		"[The nursery entrance shudders open, revealing little r_k dangling from t_c's mouth, mewling and squirming in protest.]",
+		"[t_c sets {PRONOUN/r_k/object} on the ground, and the kit bounds towards you, cowering behind your leg at t_c's cold glare.]",
+		"I found {PRONOUN/r_k/object} trying to sneak into the warrior's den. You really need to keep better track of the kits in here.",
+		"Next time, the one to discover them might not be as nice as I am."
+	]
+	],
+
+	"brooding_toqueen_AJ1": [
+	[
+		"you_queen",
+		"you_queen's_aprentice",
+		"brooding",
+		"they_apprentice",
+		"they_warrior",
+		"they_medicine_cat",
+		"they_medicine_cat_apprentice",
+		"they_deputy",
+		"clan_has_kits"
+	],
+	[
+		"[t_c steps inside the nursery on an uncharacteristic visit, wincing at the squeals of the kits.]",
+		"Hey, r_w asked me to come and tell you that -- Augh!",
+		"[A stray mossball pelts t_c on the side of the head. {PRONOUN/t_c/subject/CAP} {VERB/t_c/swipe/swipes} at {PRONOUN/t_c/poss} face, hissing in outrage, then {VERB/t_c/glare/glares} at the offending kit, who has already moved on to a different game.]",
+		"Ugh, forget it. You can go talk to r_w yourself."
+	]
+	],
+
+	"brooding_medcat_AJ": [
+	[
+		"no_kit",
+		"brooding",
+		"they_medicine_cat",
+		"they_medicine_cat_apprentice"
+	],
+	[
+		"[After stepping on a thorn, you go to visit t_c in the medicine den. Swiftly and precisely, {PRONOUN/t_c/subject}  {VERB/t_c/pull/pulls} it out and {VERB/t_c/bandage/bandages} the wound.]",
+		"Try not to put too much weight on that paw for the next few days.",
+		"[You thank t_c warmly for {PRONOUN/t_c/poss} help, and {PRONOUN/t_c/subject}  {VERB/t_c/roll/rolls} {PRONOUN/t_c/poss} eyes, impatient.]",
+		"I'm only doing my job. Nothing personal about it.",
+		"Now, get out of the medicine den. I need to help my next patient."
+	]
+	],
+
+	"brooding_medcat_AJ1": [
+	[
+		"no_kit",
+		"brooding",
+		"they_medicine_cat",
+		"they_medicine_cat_apprentice",
+		"you_injured",
+		"you_ill",
+            	"they_blind"
+	],
+	[
+		"[Throughout your stay in the medicine den, you've been visited by countless cats, all of them assuring you on how strong you look and how recovery must be just around the corner.]",
+		"[But, late one night, after all the visitors have gone, you quietly ask t_c if it really is true that you're going to get better.]",
+		"... You could. But you also might not. It's not a guarantee. There's still a good chance you'll die.",
+		"Anyone who tells you otherwise is only being nice.",
+		"[t_c says it so bluntly and unflinchingly, as if {PRONOUN/t_c/subject}  {VERB/t_c/were/was} stating a simple fact, {PRONOUN/t_c/subject} could almost have just as easily been saying 'the sky is blue' or 'the grass is green.']",
+		"[But, still, as {PRONOUN/t_c/subject} busy {PRONOUN/t_c/self} with organizing the herb stores, you feel the edge of {PRONOUN/t_c/poss} tail brush against your spine, so subtle it could've been a mistake.]",
+		"... But I'll do everything in my power to stop that from happening.",
+		"I promise." 
+	]
+	],
+
+	"brooding_joke_AJ": [
+	[
+		"no_kit",
+		"brooding",
+		"cool",
+		"platonic_love"
+	],
+	[
+		"[A snake died in the middle of camp. You and t_c look on as the warriors carefully move it towards the entrance, bug eyes and goofy face flopping in the wind.]",
+		"... It kinda looks like you.",
+		"[You shove t_c's shoulder as {PRONOUN/t_c/subject} {VERB/t_c/laugh/laughs} playfully.]" 
+	]
+	],
+
+	"brooding_joke_AJ1": [
+	[
+		"no_kit",
+		"cool",
+		"assertive",
+		"platonic_love",
+            	"you_blind",
+            	"they_blind"
+	],
+	[
+		"[l_n is addressing the Clan, sharing reports of a hideous, foul-smelling, grotesque unknown creature found in o_cClan territory.]",
+		"[t_c taps you on the shoulder and leans in to mutter in your ear: ]",
+		"I didn't know you liked to spend time in o_cClan.",
+		"[You shove {PRONOUN/t_c/object} off, fighting desperately to hold in your laughter as l_n shoots both of you a strange look.]" 
+	]
+	],
+
     "brooding_tomedapp5": [
         [
             "medicine cat apprentice",
@@ -5865,6 +6076,36 @@
             "If it's between dying and you saving my life, well ... that's a choice I'll have to consider carefully."
         ]
     ],
+	"cool_sibling_AJ": [
+	[
+		"any",
+		"cool",
+		"sibling",
+            	"they_blind"
+	],
+	[
+		"I call dibs on the sparrow!!!",
+		"[Just as soon as t_c's cry rings out across camp, you and y_s descend upon the sparrow, fighting and tussling in a flurry of paws and feathers.]",
+		"[In the midst of the fray, out of the corner of your eye, you catch t_c slinking towards {PRONOUN/t_c/poss} nest with a huge thrush, clearly superior to the sparrow in every way. Was ... Was the sparrow just a distraction all along?]"
+	]
+	],
+
+	"brooding_queen_AJ": [
+	[
+		"no_kit",
+		"brooding",
+		"they_queen",
+		"they_queen's_apprentice"
+	],
+	[
+		"[t_c is huddled in the darkest, most secluded corner of camp, seemingly trying to make {PRONOUN/t_c/self} as small as possible.]",
+		"[You go to check on {PRONOUN/t_c/object}, hoping {PRONOUN/t_c/subject} {VERB/t_c/'re/'s} not in the middle of another brooding session, when, out of nowhere, r_k rushes up to {PRONOUN/t_c/object} and prods them with a paw.]",
+		"[t_c rises to {PRONOUN/t_c/poss} paws and smiles softly at r_k, then covers {PRONOUN/t_c/poss} eyes as r_k rushes to hide.]",
+		"[Seems they were just in the middle of a game of hide and seek!]"
+	]
+	],
+
+
     "brooding_tomedapp4": [
         [
             "medicine cat apprentice",
