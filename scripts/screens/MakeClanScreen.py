@@ -136,7 +136,7 @@ class MakeClanScreen(Screens):
         self.white_patches_tint="None"
         self.kitten_sprite=0
         self.reverse=False
-        self.skill = None
+        self.skill = "Random"
         self.accessories=[]
         self.sex = "male"
         self.personality = "troublesome"
