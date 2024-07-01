@@ -6415,5 +6415,159 @@
             "t_p told me that c_nClan would always love and protect me!",
             "[You don't have the heart to tell {PRONOUN/t_c/object} that, maybe, even t_p wouldn't anymore...]"
         ]
-    ]
+    ],
+    "deadkitgreeting_connected_J1~1": {
+        "tags": [
+            "max_you_deadfor_2",
+            "min_they_deadfor_30",
+            "they_kitten",
+            "non-related",
+            "you_adult",
+            "any",
+            "connected",
+            "silly",
+            "stable",
+            "unabashed"
+        ],
+        "intro": [
+            "[You open your eyes to an endless stretch of starry grass.]",
+            "y_c!",
+            "[You turn to face the high-pitched voice that came from behind you. What greets you is a small kit.]",
+            "Hi, there, y_c! You're awake!",
+            "I know you're probably very confused, but don't worry, you're in StarClan! Want me to show you around?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Yes",
+                "next_scene": "showaround_yes"
+            },
+            "choice2": {
+                "text": "No",
+                "next_scene": "showaround_no"
+            }
+        },
+        "showaround_yes": [
+            "Really? Oh, great! Come on, let's go!",
+            "[You slowly wobble to your feet as t_c turns to run into StarClan territory. You're excited for the tour!]"
+        ],
+        "showaround_no": [
+            "[Dazed, you just stare at the tiny kit. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} so small, but so eloquently spoken. You're not sure what to do.]",
+            "It's okay. I can come back in a little bit once you're ready.",
+            "[t_c turns, and you watch {PRONOUN/t_c/poss} tiny body toddle off into the distance until {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} disappeared into the fog.]",
+            "[You drop your head back into your paws to go back to sleep. Maybe this is all a dream.]"
+        ]
+    },
+    "deadkitgreeting_connected_J1~2": {
+        "tags": [
+            "min_you_deadfor_2",
+            "min_they_deadfor_30",
+            "they_kitten",
+            "non-related",
+            "you_adult",
+            "any",
+            "connected",
+            "silly",
+            "stable",
+            "unabashed"
+        ],
+        "intro": [
+            "[Every day, t_c finds a new piece of StarClan territory to show you as part of your welcoming tour.]",
+            "[Today, it's a specific flower patch in the centre of a large tree grove.]",
+            "Look at all of the different flowers! There's way more colours than we had back in c_nClan, isn't there?",
+            "Which one is your favourite?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "The black roses",
+                "next_scene": "blackroses"
+            },
+            "choice2": {
+                "text": "The blue lillies",
+                "next_scene": "bluelilles"
+            },
+            "choice3": {
+                "text": "The yellow tulips",
+                "next_scene": "yellowtulips"
+            }
+        },
+        "blackroses": [
+            "Oh, the roses?",
+            "They look kind of scary to me... like they're from the Dark Forest, or something.",
+            "I can see how you find them kind of pretty, though!"
+        ],
+        "bluelilles": [
+            "Those are my favourite, too!",
+            "They're such a nice colour... like the sky, or a lake...",
+            "You have great taste, y_c!"
+        ],
+        "yellowtulips": [
+            "Those are super pretty.",
+            "They're so bright yellow, it almost hurts my eyes, but I can't stop looking!"
+        ]
+    },
+    "deadkitgreeting_connected_J1~3": [
+        [
+            "min_you_deadfor_3",
+            "min_they_deadfor_30",
+            "they_kitten",
+            "non-related",
+            "you_adult",
+            "any",
+            "connected",
+            "silly",
+            "stable",
+            "unabashed"
+        ],
+        [
+            "I think I'm almost out of stuff to show you, y_c!",
+            "Here's the last thing, but it's also the coolest! Come here.",
+            "[You join t_c where {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} standing in front of a large pool. Stars dance across its surface, and you can't see the bottom.]",
+            "[When you position yourself in front of the pool, t_c nudges your paws until you're standing in just the right place.]",
+            "There. Now, try to look at the bottom.",
+            "[You lean forwards and squint into the murky blue water. After a moment, an image starts to reveal itself, and soon, you're seeing a clear picture of your Clan from above!]",
+            "[r_w1 and r_w2 are sharing tongues by the warrior's den while r_a is doing some sparring with a tree at the edge of camp. r_m, d_n and l_n are heading out of camp, in deep conversation.]",
+            "[It's bittersweet to watch your Clan mill about like ants, unaware that you can even see them.]",
+            "You can come here anytime to check what c_nClan is up to. So you don't miss them too much!",
+            "[You give t_c a hug. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'ve/'s} been a great tour guide, and, with {PRONOUN/t_c/object} here with you, you know you'll never feel as lonely as you thought you would.]"
+        ]
+    ],
+    "dfskill_kit_J1": {
+        "tags": [
+            "they_dark",
+            "you_dftrainee",
+            "they_kitten",
+            "any",
+            "you_blind"
+        ],
+        "intro": [
+            "I've seen you talking to those scary ghost cats.",
+            "Are they nice?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Sometimes",
+                "next_scene": "df_nice_sometimes"
+            },
+            "choice2": {
+                "text": "No",
+                "next_scene": "df_nice_no"
+            },
+            "choice3": {
+                "text": "Yes",
+                "next_scene": "df_nice_yes"
+            }
+        },
+        "df_nice_sometimes": [
+            "Oh, well, maybe they're just upset sometimes because they're ghosts.",
+            "I'd probably be pretty sad if I was a ghost, too.",
+            "But I'd be happy if I still got to talk to you!"
+        ],
+        "df_nice_no": [
+            "Oh, no! Are they mean? Why do you still talk to them?"
+        ],
+        "df_nice_yes": [
+            "Oh, yay!",
+            "Can you introduce me, next time? They seem really cool! And I promise not to tell!"
+        ]
+    }
 }

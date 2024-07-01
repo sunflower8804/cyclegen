@@ -5065,5 +5065,126 @@
             "Stars, you should have never been born.",
             "Scram, before I do what y_p failed to do."
         ]
+    ],
+    "dftokit_J1": [
+        [
+            "you_kitten",
+            "they_df",
+            "they_older",
+            "they_blind"
+        ],
+        [
+            "[t_c lunges towards you with a snarl, looking confused when you don't flinch.]",
+            "You're a strange one."
+        ]
+    ],
+    "dftokit_J2": [
+        [
+            "you_kitten",
+            "they_df",
+            "they_older"
+        ],
+        [
+            "What are you looking at?"
+        ]
+    ],
+    "dftokit_J3": [
+        [
+            "you_kitten",
+            "they_df",
+            "they_older",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Do your parents know you're here?"
+        ]
+    ],
+    "dftokit_J4": [
+        [
+            "you_kitten",
+            "they_df",
+            "they_older",
+            "they_deaf",
+            "you_deaf",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[t_c avoids you completely.]"
+        ]
+    ],
+    "dftokit_J5": [
+        [
+            "you_kitten",
+            "they_df",
+            "they_older",
+            "you_blind",
+            "they_blind",
+            "stable"
+        ],
+        [
+            "[t_c shoves you aside as you wander a bit too close to a large puddle of muck.]",
+            "You shouldn't be here, kit.",
+            "Wake up."
+        ]
+    ],
+    "dftokit_J6": [
+        [
+            "you_kitten",
+            "they_df",
+            "they_older",
+            "neurotic"
+        ],
+        [
+            "Whoa! Stop!",
+            "[As you wander close to a mysterious black puddle, t_c rushes out of the shadows to stop you, almost startling you into falling forwards in the process.]",
+            "That puddle is very dangerous, little kit. You'd never have to strength to swim through it.",
+            "Go back to sleep. y_p will be worried if you wake up with an injury.",
+            "[Perhaps {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} right...]",
+            "[Wait, how {VERB/t_c/do/does} {PRONOUN/t_c/subject} know your {PRONOUN/y_p/parent}'s name?]"
+        ]
+    ],
+    "dftokit_J7": [
+        [
+            "you_kitten",
+            "they_df",
+            "they_older",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Whoa, hey, hey, hey, don't be scared. I've just come to visit you.",
+            "Yeah, I can visit the Clan when I want to. You're the only one who can see me, though, so don't tell anyone, okay?",
+            "Promise?",
+            "[You reach your paw out and t_c taps it, solidifying your promise. You feel cold as {PRONOUN/t_c/poss} ghostly paw comes into contact with yours.]"
+        ]
+    ],
+    "dftokit_J8": [
+        [
+            "they_df",
+            "they_older",
+            "you_kitten"
+        ],
+        [
+            "You're very special for being able to see me, y_c.",
+            "You should come join us when you're a little bit older."
+        ]
+    ],
+    "kitten_dfcat_J1": [
+        [
+            "you_kitten",
+            "dark",
+            "they_kitten",
+            "you_dark"
+        ],
+        [
+            "[You always see Dark Forest cats prowling around the edges of camp, rarely ever coming to say hello.]",
+            "[Today, you've spotted rdf_c, halfway hidden behind a tree.]",
+            "[You turn your head to your denmate. r_k can see {PRONOUN/rdf_c/object}, too. {PRONOUN/t_c/subject/CAP} {VERB/t_c/notice/notices} you, and {PRONOUN/t_c/poss} eyes light up.]",
+            "Psst, y_c! Can you see that scary cat over there, too?",
+            "Wow, that's so cool! I thought I was the only one.",
+            "Should we go say hello?"
+        ]
     ]
 }

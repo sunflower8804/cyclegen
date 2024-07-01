@@ -2826,5 +2826,178 @@
             "c_nClan was right to shun you, y_c.",
             "You must realize that to be at peace."
         ]
+    ],
+    "shunned_connected_J1~1": {
+        "tags": [
+            "no_kit",
+            "you_shunned",
+            "any",
+            "min_platonic_30",
+            "you_blind",
+            "they_blind"
+        ],
+        "intro": [
+            "Where do you think you'll go when you die?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "The Dark Forest",
+                "next_scene": "death_df"
+            },
+            "choice2": {
+                "text": "StarClan",
+                "next_scene": "death_sc"
+            }
+        },
+        "death_df": [
+            "Really? Don't be so hard on yourself.",
+            "I'm sure StarClan will forgive you...",
+            "[{VERB/t_c/Do/Does} {PRONOUN/t_c/subject} really believe that?]"
+        ],
+        "death_sc": [
+            "I'm glad! I think so too."
+        ]
+    },
+    "shunned_connected_J1~2": [
+        [
+            "no_kit",
+            "they_dead",
+            "any",
+            "min_platonic_30",
+            "you_sc",
+            "connected",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey, didn't I tell you you'd wind up in StarClan?",
+            "I guess you weren't as evil as you thought, hehe."
+        ]
+    ],
+    "dead_skill_J1": [
+        [
+            "they_song",
+            "they_sc",
+            "you_sc",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[t_c harmonises with the birdsong around you.]",
+            "[Your life in StarClan always has a soundtrack!]"
+        ]
+    ],
+    "dfcat_J1~1": [
+        [
+            "you_kitten",
+            "they_dftrainee",
+            "they_older",
+            "you_dark",
+            "neurotic",
+            "upstanding",
+            "assertive",
+            "silly"
+        ],
+        [
+            "[You notice t_c across camp, talking to one of those scary Dark Forest cats. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} upset, so you run up to make sure that the spirit isn't being too mean.]",
+            "Aah! y_c, what do you need? You shouldn't be this close to the edge of camp.",
+            "... What are you talking about? There's... there's no other cat...",
+            "Um...",
+            "[{PRONOUN/t_c/poss/CAP} voice drops to a whisper.]",
+            "You see {PRONOUN/rdf_c/object}, too?",
+            "Wait for me by the nursery. I'll be back in camp shortly.",
+            "Go."
+        ]
+    ],
+    "dfcat_J1~2": [
+        [
+            "you_kitten",
+            "they_dftrainee",
+            "they_older",
+            "you_dark",
+            "neurotic",
+            "upstanding",
+            "assertive",
+            "silly",
+            "connected"
+        ],
+        [
+            "[You notice the mysterious shadow of a Dark Forest cat at the edge of camp. Intrigued, you begin walking towards it.]",
+            "[Suddenly, though, t_c has swept you aside, sending you tumbling onto the ground. When you sit up, the shadow is gone.]",
+            "[t_c speaks to you in a hushed, urgent voice.]",
+            "Don't talk to them, y_c, do you hear me? They're dangerous. No matter how nice they are, don't listen.",
+            "[t_c finally notices the Clanmates staring at {PRONOUN/t_c/object}.]",
+            "Ahem. Sorry. Thought I saw the shadow of a hawk..."
+        ]
+    ],
+    "dfcat_J1~3": [
+        [
+            "any",
+            "they_dftrainee",
+            "you_dftrainee",
+            "they_older",
+            "you_dark",
+            "neurotic",
+            "upstanding",
+            "assertive",
+            "silly",
+            "connected"
+        ],
+        [
+            "[Anytime t_c sees you in the Dark Forest, {PRONOUN/t_c/subject} {VERB/t_c/look/looks} disappointed that you didn't take {PRONOUN/t_c/poss} advice.]",
+            "[But you can't feel too bad, as if {PRONOUN/t_c/subject} really believed it, {PRONOUN/t_c/subject} wouldn't be here {PRONOUN/t_c/self}, would {PRONOUN/t_c/subject}?]"
+        ]
+    ],
+    "parent_gift_J1~1": [
+        [
+            "from_parent",
+            "neutral",
+            "you_kitten",
+            "brooding",
+            "assertive",
+            "neurotic",
+            "newleaf",
+            "greenleaf"
+        ],
+        [
+            "[You race up to your {PRONOUN/t_c/parent} with a bright yellow flower in your mouth.]",
+            "Hm? Oh, y_c.",
+            "... No, thank you. I don't really have anywhere to put that.",
+            "Maybe r_m would like it."
+        ]
+    ],
+    "parent_gift_J1~2": [
+        [
+            "from_parent",
+            "you_kitten",
+            "brooding",
+            "assertive",
+            "neurotic",
+            "connected"
+        ],
+        [
+            "[Since t_c didn't like the flower you tried to give {PRONOUN/t_c/object} before, you approach {PRONOUN/t_c/object} this time with a different gift.]",
+            "What's this? A feather?",
+            "Did you get that from the fresh-kill pile? You're not supposed to be getting your own prey.",
+            "[t_c must not understand what a gift is...]"
+        ]
+    ],
+    "parent_gift_J1~3": [
+        [
+            "from_parent",
+            "brooding",
+            "max_dislike_10",
+            "assertive",
+            "neurotic",
+            "connected"
+        ],
+        [
+            "Hello, y_c. I, uh, I got you something.",
+            "[t_c turns around and pulls out a small, shiny snail shell from where it was hidden behind {PRONOUN/t_c/object}.]",
+            "r_d says you told {PRONOUN/r_d/object} about the gift you got me before. I guess I should've just... taken it, even if it wasn't necessarily practical.",
+            "So, I got you one too. It can't be used for anything, but it looks pretty, and you can keep it by your nest, or something.",
+            "You're a good kit. Sorry for not doing very well at telling you that."
+        ]
     ]
 }
