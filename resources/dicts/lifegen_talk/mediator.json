@@ -72,6 +72,18 @@
             "Sorry. Couldn't tell you. You'll have to go see for yourself."
         ]
     ],
+	"brooding_mediator_aboutneurotic": [
+	[
+		"brooding",
+		"no_kit",
+		"min_trust_30"
+	],
+	[
+		"I swear to StarClan, next time r_w_neurotic comes to me asking for assurance that some random cat doesn't hate {PRONOUN/r_w_neurotic/object}, I just might have to claw my own ears off.",
+		"I tell {PRONOUN/r_w_neurotic/object} over and over, 'all you have to do is ask', but {PRONOUN/r_w_neurotic/subject} never {VERB/r_w_neurotic/do/does}. Just {VERB/r_w_neurotic/apologize/apologizes} over and over for stuff {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/don't/doesn't} know {PRONOUN/r_w_neurotic/subject} even did.",
+		"How can any cat outside of the nursery possibly be so debilitatingly insecure?"
+	]
+	],
     "brooding_medapp": [
         [
             "Any",
