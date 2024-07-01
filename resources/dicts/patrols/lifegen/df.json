@@ -1835,7 +1835,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "When you get the chance to ask, r_c lands a swipe across your face, {PRONOUN/r_c/poss} face neutral. You stumble back to recover as your fur bristles up in surprise. That was going to leave a mark... r_c barks at you to focus and the sparring continues.",
+                "text": "When you get the chance to ask, r_c lands a swipe across your face, {PRONOUN/r_c/poss} face neutral. You stumble back to recover as your fur bristles up in surprise. That's going to leave a mark... r_c barks at you to focus and the sparring continues.",
                 "exp": 0,
                 "weight": 20,
                 "injury": [ 
@@ -1851,7 +1851,7 @@
                 }
             },
             {
-                "text": "Before you can get a chance to mention it one of the slimy ancient warriors cuts in to hiss at you to focus. They berate you for your inattention as r_c smirks and watches...",
+                "text": "Before you can get a chance to mention it, one of the slimy ancient warriors cuts in to hiss at you to focus. They berate you for your inattention as r_c smirks and watches...",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1905,7 +1905,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You jump out of your fur as r_c lands beside you and narrowly avoid attacking {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} {VERB/r_c/appologize/appologizes} profusely and say {PRONOUN/r_c/subject}{VERB/r_c/'ve/'d} been following you from the trees so that {PRONOUN/r_c/subject} could speak to you without watching eyes. r_c does get a laugh out of the accidental scare however, before the two of you spend time talking in the quiet of the forest.",
+                "text": "You jump out of your fur as r_c lands beside you and narrowly avoid attacking {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} {VERB/r_c/appologize/appologizes} profusely and {VERB/r_c/say/says} {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} been following you from the trees so that {PRONOUN/r_c/subject} could speak to you without watching eyes. r_c does get a laugh out of the accidental scare however, before the two of you spend time talking in the quiet of the forest.",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
@@ -1919,7 +1919,7 @@
                 ]
             },
             {
-                "text": "A voice calls out right as a half-faded ancient warrior appears before you to attack. Before the foul claws can strike, a blur tackles them away. It's r_c! Between the two of you it's an easy task to end the old spirit. Your heart pounds as you gratefully thank r_c for the save. {PRONOUN/r_c/subject/CAP} {VERB/r_c/bunt/bunts} {PRONOUN/r_c/poss} head against you comfortingly and remind you that you're Clanmates. You would do it for {PRONOUN/r_c/object}, wouldn't you?",
+                "text": "A voice calls out right as a half-faded ancient warrior appears before you to attack. Before the foul claws can strike, a blur tackles them away. It's r_c! Between the two of you it's an easy task to end the old spirit. Your heart pounds as you gratefully thank r_c for the save. {PRONOUN/r_c/subject/CAP} {VERB/r_c/bunt/bunts} {PRONOUN/r_c/poss} head against you comfortingly and {VERB/r_c/remind/reminds} you that you're Clanmates. You would do it for {PRONOUN/r_c/object}, wouldn't you?",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -1935,7 +1935,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Your nerves get the better of you. You creep backwards while staying low to the ground. You pause in your retreat as a laugh rings out. It's r_c! From {PRONOUN/r_c/poss} place in the dead tree {PRONOUN/r_c/subject} call you a coward who doesn't belong here. Your pelt burns with shame before you turn tail and race away from {PRONOUN/r_c/poss} jeering...",
+                "text": "Your nerves get the better of you. You creep backwards while staying low to the ground. You pause in your retreat as a laugh rings out. It's r_c! From {PRONOUN/r_c/poss} place in the dead tree {PRONOUN/r_c/subject} {VERB/r_c/call/calls} you a coward who doesn't belong here. Your pelt burns with shame before you turn tail and race away from {PRONOUN/r_c/poss} jeering...",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
