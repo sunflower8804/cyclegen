@@ -1067,6 +1067,32 @@
             "Move. r_s needs treatment."
         ]
     ],
+	 "brooding_medappAJ": [
+	[
+		"Any",
+		"you_injured",
+		"brooding"
+	],
+	[
+		"*Sigh* What did you do to yourself this time, y_c?",
+		"Hold still … Tell me where it hurts.",
+		"[For {PRONOUN/t_c/poss} brooding and stoic demeanor, t_c's touch is surprisingly gentle …]"
+	]
+	],
+
+    "brooding_med_youcondition": [
+	[
+		"Any",
+		"you_ill",
+		"you_injured",
+		"brooding"
+	],
+	[
+		"Here ... Take. Drink.",
+		"[t_c places a scrap of wader-laden moss in front of you.]",
+		"You need to stay hydrated if you want to get better."
+	]
+	],
     "brooding_medapp_2": [
         [
             "kitten",
