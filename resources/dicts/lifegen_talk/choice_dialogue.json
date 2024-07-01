@@ -2174,7 +2174,7 @@
 	        "[With a loud sigh, d_n concedes that maybe t_c can be let off of den mending duty, just this once.]",
         	"[As soon as {PRONOUN/d_n/subject} {VERB/d_n/leave/leaves} the nursery, t_c beams at you.]",
         	"y_c, that was amazing! Where did you learn how to act like that? StarClan, you almost had <i>me</i> convinced!",
-	        "Whatever you do, don't lose that spark, kit! With your powers and mine combined together, we'll never have to work a day in our lives!",
+	        "Whatever you do, don't lose that spark, kit! With your powers and mine combined together, we'll never have to work a day in our lives!"
         ],
         "snitch": [
             "[You step away from t_c and state bluntly that everything {PRONOUN/t_c/subject} just said was a lie.]",
@@ -2235,7 +2235,6 @@
         	"Yeah, well, it can't all be glitz and glamor! And stop making me look bad in front of the kit! Everyone knows I have an image to maintain~.",
         	"Y'know, y_c, if the thankless, grueling life of hunting and fighting doesn't sound like your style, you could do a lot worse than the life of a mediator!",
         "Give it a try, if you're interested. I could always use another impressionable mind to show my ways to."
-        ],
         ]
     },
 
@@ -2279,7 +2278,6 @@
             "Eugh, what is that? Do you need to make dirt, or something?",
 	        "On second thought, can I get one of your siblings in on this? r_q! Get me the cutest one from this litter!",
 	        "[t_c parades t_l out to meet the o_cClan cats while you sit and seethe back in the nursery.]"
-        ],
         ]
     },
 
@@ -2324,7 +2322,6 @@
 	        "G-Guys?",
 	        "[t_c desperately looks to their posse, but it's too late. All the kits have already started to disperse. Success! The liar is dethroned!]",
 	        "[But, when you see t_c sobbing in {PRONOUN/t_c/poss} nest later, refusing any comfort from r_q, you start to wonder if you really made the right decision after all ...]"
-        ],
         ]
     },
     "silly_leafbare_game": {
@@ -3443,7 +3440,7 @@
         },
 
 
-         "brooding_nest_loveAJ": {
+    "brooding_nest_loveAJ": {
         "tags": [
 	        "no_kit",
             "they_grieving",
@@ -3470,7 +3467,7 @@
 	        "choice3": {
 	            "text": "[Talk to t_c yourself]",
 	               "next_scene": "help"
-	        },
+	        }
             },
         "other": [
             "[You decide to tell neutral_r_w about t_c's predicament.]",
@@ -3493,9 +3490,10 @@
 	        "[You bury your face in t_c's chest fur.]",
 	        "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/tense/tenses} at first, then slowly {VERB/t_c/relax/relaxes} into your touch.]",
 	        "[In this silent embrace, your truest sentiments seem to be communicated: just because t_c wants to wait forever, doesn't mean {PRONOUN/t_c/subject} {VERB/t_c/need/needs} to wait alone.]"
+        ]
         },
 
-         "brooding_frommate_AJ5~2": {
+        "brooding_frommate_AJ5~2": {
         "tags": [
 	        "any",
 	        "brooding",
@@ -3515,7 +3513,7 @@
             "choice2": {
                 "text": "... What way is that, exactly?",
                 "next_scene": "press"
-            },
+            }
         },
         "accept": [
             "Heh. You're welcome.",
@@ -3529,9 +3527,8 @@
 	        "Look, I know I'm not good at this 'feelings' stuff, but I'm trying, okay? Can't that be enough?",
 	        "*Sigh* Whatever. Be like that, then. I don't care.",
             "[t_c looks away bitterly, tail lashing and lip trembling. Right. This is how {PRONOUN/t_c/subject} {VERB/t_c/look/looks} when {PRONOUN/t_c/subject} <i>{VERB/t_c/don't/doesn't}</i> care.]"
-        ],
+        ]
     },
-
     "cool_likeAJ": {
         "tags": [
             "no_kit",
