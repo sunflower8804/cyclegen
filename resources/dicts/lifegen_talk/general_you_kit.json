@@ -4995,5 +4995,61 @@
             "[You can see t_c's mouth moving. Apparently, most cats can understand what they're saying when they communicate that way, but you can't.]",
             "[When they notice you staring, t_c waves a paw at you.]"
         ]
+    ],
+    "shunned_sc_kit_H1": [
+        [
+            "you_shunned",
+            "they_sc",
+	        "they_older",
+            "you_kitten"
+        ],
+        [
+            "Are you here to ask to be forgiven?",
+            "I'm sorry, little one, but that is not my choice to make.",
+            "Go back to c_nClan."
+        ]
+    ],
+    "injury_kit_H1": [
+        [
+            "from_parent",
+            "they_injured",
+            "they_ill",
+            "they_any",
+            "you_kitten"
+        ],
+        [
+            "Oh, well, hello there, little y_c.",
+            "I can't play today, but maybe later? I promise I'll make it up to you.",
+            "I promise."
+        ]
+    ],
+    "injury_kit_H2": [
+        [
+            "they_app",
+            "you_app",
+            "you_kitten",
+            "they_ill",
+            "they_injured"
+        ],
+        [
+            "You- you want to play? Sure...",
+            "[t_c shakily stands from {PRONOUN/t_c/poss} nest, having some difficulty. Yet, t_c keeps a big smile on {PRONOUN/t_c/poss} face to avoid worrying you.]",
+            "Yeah! What do you wanna play? Moss ball? Or maybe splash in the river nearby? I'm sure r_m wouldn't mind if I go out for a little bit.",
+            "What? No, no I'm fine! I swear! Don't worry about me- I want to play too."
+        ]
+    ],
+    "injury_kit_H3": [
+        [
+            "they_app",
+            "you_app",
+            "you_kitten",
+            "they_wastingdisease"
+        ],
+        [
+            "You- you want to play? Sure...",
+            "[t_c shakily stands from {PRONOUN/t_c/poss} nest, having some difficulty. Yet, t_c keeps a big smile on {PRONOUN/t_c/poss} face to avoid worrying you.]",
+            "Yeah! What do you wanna play? Moss ball? Or maybe splash in the river nearby? I'm sure r_m wouldn't mind if I go out for a little bit.",
+            "What? No, no I'm fine! I swear! Don't worry about me- I want to play too."
+        ]
     ]
 }

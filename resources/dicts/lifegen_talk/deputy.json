@@ -2534,5 +2534,19 @@
             "[t_c closes {PRONOUN/t_c/poss} eyes. {PRONOUN/t_c/subject/CAP} must be ignoring you.]",
             "[... Or the whole Clan.]"
         ]
+    ],
+    "yourecovering_H2": [
+        [
+            "you_recovering_from_birth",
+            "they_leader",
+            "they_deputy",
+            "from_mate",
+            "you_any"
+        ],
+        [
+            "y_c, do you feel any better today? I can refrain from doing my duties for a little while and watch over you.",
+            "... No? The clan needs me more? Don't be ridiculous, y_c.",
+            "You're always going to come first."
+        ]
     ]
 }

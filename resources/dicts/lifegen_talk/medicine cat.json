@@ -2038,5 +2038,71 @@
             "[t_c looks around the den before discreetly treating your injury. {PRONOUN/t_c/subject/CAP} could get in trouble for this, yet t_c does it anyway.]",
             "You won't say anything, right? Promise me."
         ]
+    ],
+    "yourecovering_H3": [
+        [
+            "you_recovering_from_birth",
+            "they_medicine_cat",
+            "you_any"
+        ],
+        [
+            "Hey, whoa whoa, what do you think you're doing?",
+            "Standing up like that while you're recovering! y_c, please, lay back down and take the needed rest."
+        ]
+    ],
+    "Introspective_mentor_H6": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "dislike"
+        ],
+        [
+            "y_c, can't you see I am quite busy?",
+            "One of these moons, you're going to have to take charge of tasks yourself. Treat r_s or even r_i, just don't expect me to hold your paw."
+        ]
+    ],
+    "Introspective_mentor_H7": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "neutral"
+        ],
+        [
+            "Oh, y_c, there you are! r_d just dropped off a bunch of herbs from {PRONOUN/r_m/poss} herb exchange with in o_cClan.",
+            "Would you be a dear and go through those for me?"
+        ]
+    ],
+   "Introspective_mentor_H11": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "comfort"
+        ],
+        [
+            "I don't know if I told you this, but you remind me of when I was a little apprentice.",
+            "Always bustling around, asking for orders, volunteering to gather herbs...",
+            "I think you'll surpass me one day. I'm a bit jealous, haha!"
+        ]
+    ],
+    "Introspective_mentor_H12": [
+        [
+            "they_introspective",
+            "from_mentor",
+            "they_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "jealousy",
+        	"clan_has_kits"
+        ],
+        [
+            "You do really well with r_k. Well, with all the kittens really.",
+            "I suppose I'm asking how you're able to do it. How are you able to make them take the herbs or stay still without complaint?",
+            "Even with all my experience and tricks, I could never hope to achieve this level of ease with kits. I'll admit that I am a bit jealous of you, y_c."
+        ]
     ]
 }
