@@ -5570,6 +5570,56 @@
             "I can tell it's you by just the sound of your pawsteps, dummy! Hahaha!"
         ]
     ],
+	"brooding_loveAJ": [
+	[
+		"platonic_love",
+		"brooding",
+		"non-related",
+		"they_older"
+	],
+	[
+		"You've been doing well for yourself in your training, y_c. StarClan, it's been almost scary to see you grow.",
+		"Maybe you won't be such a terrible Clanmate after all.",
+		"... That was a joke. Sorry if it wasn't very funny."
+	]
+	],
+
+	"brooding_loveAJ1": [
+	[
+		"platonic_love",
+		"brooding"
+	],
+	[
+		"Hey, y_c. What did the flower say after it lied to its friend?",
+		"I was just 'pollen' your leg.",
+		"... That was a joke. Could you tell? Did you like it?"
+	]
+	],
+
+	"brooding_loveAJ2": [
+	[
+		"platonic_love",
+		"brooding"
+	],
+	[
+		"You're looking well this moon, y_c.",
+		"Have you done something different with your ... Um ... paws?",
+		"... Sorry. I'm not the best at giving compliments. If you couldn't tell."
+	]
+	],
+
+	"brooding_likeAJ": [
+	[
+		"min_trust_30",
+		"brooding"
+	],
+	[
+		"This Clan is full of idiots.",
+		"And anyone who can't see that is, themself, also an idiot."
+	]
+	],
+
+	
     "broodingapp_toqueenapp11": [
         [
             "queen's apprentice",
