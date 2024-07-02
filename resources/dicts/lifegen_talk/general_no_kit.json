@@ -20165,5 +20165,32 @@
             "I've been stargazing up here for years. Of course I've seen the purple one.",
             "There's a red one that shows itself every once in a while. I'll come get you when I see it next."
         ]
+    ],
+    "gnk_youdeaf_J1": [
+        [
+            "only_you_deaf",
+            "you_warrior",
+            "they_deputy",
+            "they_warrior"
+        ],
+        [
+            "... ?",
+            "[t_c flicks {PRONOUN/t_c/poss} tail towards the camp entrance and looks at you imporingly, asking if you'd like to join {PRONOUN/t_c/poss} patrol.]",
+            "[You cock your head. What type?]",
+            "[t_c crouches and smacks one of {PRONOUN/t_c/poss} paws overtop of the other.]",
+            "[The sign for hunting! You give {PRONOUN/t_c/object} a nod and quickly stand up to join.]"
+        ]
+    ],
+    "gnk_youdeaf_J2": [
+        [
+            "only_you_born_deaf",
+            "any"
+        ],
+        [
+            "[As you sit in camp one day, watching the trees blow idly in the wind, you suddenly recieve a smack to the side of your head.]",
+            "[You stumble and, tail lashing, turn to face your attacker, t_c.]",
+            "[t_c lowers {PRONOUN/t_c/poss} head as you turn to them. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} apologetic and quickly {VERB/t_c/sign/signs} to you that there was a wasp by your ear.]",
+            "[Oh. You let your anger resign and give t_c a thankful nod.]"
+        ]
     ]
 }
