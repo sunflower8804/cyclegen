@@ -317,6 +317,428 @@
             "Stay safe for me, please."
         ]
     ],
+
+    "warfocus_SQ1":[
+        [
+            "focus",
+"they_kitten",
+	"they_neurotic"
+        ],
+        [
+"[t_c, crouched outside the nursery, has made {PRONOUN/t_c/self} even smaller than usual.]",
+"[{PRONOUN/t_c/poss/CAP} eyes are wide as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} r_w reinforce the camp wall and l_n review battle plans.]",
+"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/meet/meets} your gaze and {VERB/t_c/blink/blinks}, but {VERB/t_c/say/says} nothing.]"
+        ]
+    ],
+
+"warfocus_SQ2":[
+        [
+            "focus",
+"they_kitten",
+	"they_neurotic",
+	"you_queen",
+	"you_queen's_apprentice",
+	"platonic_like",
+	"trust"
+        ],
+        [
+"Um, y_c?",
+"[t_c presses close to you, fidgeting with {PRONOUN/t_c/poss} tiny paws.]",
+"The... the scary cats everyone's talking about? The ones they're fighting?",
+"T-they won't come here, right?"
+        ]
+    ],
+
+"warfocus_SQ3":[
+        [
+            "focus",
+"they_kitten",
+	"they_neurotic",
+	"you_medicine_cat",
+	"you_medicine_cat_apprentice",
+	"platonic_like"
+        ],
+        [
+"[Long after dusk, you're organizing your herbs in the medicine den when you hear tiny paws at the entrance.]",
+"[t_c creeps in, {PRONOUN/t_c/poss} eyes wide and fur fluffed. When {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, {PRONOUN/t_c/subject} {VERB/t_c/gasp/gasps}.]",
+"I- I'm sorry! I know I'm not supposed to be here!",
+"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/shuffle/shuffles} {PRONOUN/t_c/poss} paws, not meeting your eyes.]",
+"I c-couldn't sleep. I just wanted to ask...",
+"...everyone's talking about the war, and they tell me that it'll be okay, and that StarClan will protect us, but...",
+"Y-you talk to StarClan, right?",
+"Are they really watching? Are they... are they really going to keep us safe?"
+        ]
+    ],
+
+"warfocus_SQ4":[
+        [
+            "focus",
+"they_kitten",
+	"they_neurotic",
+	"you_adult",
+	"you_app",
+	"platonic_love"
+        ],
+        [
+"[You hear a scuffle coming from inside the nursery. You peer inside to see t_c alone, swinging {PRONOUN/t_c/poss} little paws at empty air.]",
+"Grr!",
+"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/lunge/lunges} into the air, batting at nothing, but upon landing {PRONOUN/t_c/subject} {VERB/t_c/slip/slips} and {VERB/t_c/tumble/tumbles} unceremoniously in a ball of fluff.]",
+"Ah!",
+"[For a moment, t_c lies still, sniffling. You pad into the nursery and ask if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} all right.]",
+"*sniff* y_c?",
+"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/blink/blinks} up at you, then suddenly {VERB/t_c/burst/bursts} into tears.]",
+"I- I'm trying to learn how to fight, s-so I can help! But I can't figure it out!",
+"What if w_cClan attacks the camp? I want to be useful! I don't want to hide while everyone gets hurt!",
+"[t_c buries {PRONOUN/t_c/poss} face in your side, wailing, as you try to calm {PRONOUN/t_c/object} down.]"
+        ]
+    ],
+
+"warfocus_SQ5":[
+        [
+            "focus",
+"they_kitten",
+	"they_neurotic",
+	"you_kitten",
+	"you_queen",
+	"you_queen's_apprentice"
+        ],
+        [
+"[You suggest playing mossball with t_c, but {PRONOUN/t_c/subject} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head.]", 
+"Can we play hide-and-seek again? I wanna try out some new hiding spots.",
+"If they're good, I can use them when... um, <i>if<i/> w_cClan comes here."
+        ]
+    ],
+
+"warfocus_SQ6":[
+        [
+            "focus",
+"they_kitten",
+	"they_neurotic",
+	"you_kitten",
+	"platonic_love",
+	"you_assertive",
+	"you_unlawful"
+        ],
+        [
+"[You're half asleep in the nursery when t_c's whisper wakes you up.]",
+"Hey, y_c?",
+"If w_cClan comes here, you'll hide with me, right?",
+"Please promise me you're not gonna try to fight!"
+        ]
+    ],
+
+"warfocus_SQ7": [
+[
+	"focus",
+	"they_kitten",
+	"they_neurotic",
+	"you_adult",
+	"platonic_like",
+	"trust"
+],
+[
+	"I heard r_w saying something like, 'this war's gonna go on forever'.",
+"Is... is that true? Is it never, ever going to end?"
+]
+],
+
+"warfocus_SQ8": [
+[
+	"focus",
+	"they_kitten",
+	"they_neurotic",
+	"you_warrior",
+	"you_apprentice",
+	"you_deputy",
+	"you_leader",
+	"platonic_like",
+	"trust"
+],
+[
+	"...y_c? Could... could you teach me how to fight?",
+"Just one move, in case w_cClan comes here, and everyone else is gone, and I hide but they find me, and...",
+"[t_c starts sniffling. You quickly distract {PRONOUN/t_c/object} with a nearby feather.]"
+]
+],
+
+"warfocus_SQ9": [
+[
+	"focus",
+	"they_kitten",
+	"they_neurotic",
+	"you_kitten",
+	"littermate",
+	"platonic_like"
+],
+[
+	"I had a dream last night where w_cClan was gone.",
+"We didn't have to worry about anything anymore, so t_p took us just outside camp to show us a really pretty tree.",
+"It was nice. I hope I have that dream again."
+]
+],
+
+"warfocus_SQ10": [
+[
+	"focus",
+	"they_kitten",
+	"they_neurotic",
+	"you_kitten",
+	"littermate",
+	"platonic_like"
+],
+[
+	"We don't have to worry about anything happening to t_p_positive, right?",
+"Even with the war, {PRONOUN/t_p_positive/subject}{VERB/t_p_positive/'re/'s} gonna be okay, right?"
+]
+],
+
+"warfocus_SQ11": [
+[
+	"focus",
+	"they_kitten",
+	"they_neurotic",
+	"you_queen",
+	"you_queen's_apprentice",
+	"platonic_like"
+],
+[
+	"[t_c has been especially quiet since the war started, so you put together a game to distract {PRONOUN/t_c/object}.]",
+"[As {PRONOUN/t_c/subject} {VERB/t_c/dash/dashes} around the nursery, hunting for the colorful feathers you hid, you hear {PRONOUN/t_c/object} laugh for the first time in a while.]"
+]
+],
+
+"warfocus_SQ12": [
+[
+	"focus",
+	"they_neurotic",
+	"you_any",
+	"platonic_love",
+	"littermate"
+],
+[
+	"[After overhearing l_n and d_n discussing the war, t_c has curled up in one corner of {PRONOUN/t_c/poss} den, not talking to anyone.]",
+"[Your {PRONOUN/t_c/sibling}'s eyes are closed, but {PRONOUN/t_c/poss} ears prick at your approach.]",
+"[You curl around {PRONOUN/t_c/object} and gently lick the top of {PRONOUN/t_c/poss} head, like y_p used to do when you were kits.]",
+"[After a moment, you hear a weak giggle.]"
+]
+],
+
+"neurotic_warfocus_SQ13":[
+        [
+"focus",
+"they_not_dftrainee",
+"they_neurotic",
+	"no_kit",
+	"platonic_like",
+	"trust",
+	"comfort"
+        ],
+        [
+"[It's midday, but you find y_c curled up in {PRONOUN/t_c/poss} nest. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} open {PRONOUN/t_c/poss} eyes when you approach.]",
+"Hi, y_c. I'm not feeling great.",
+"I'll be okay, and I don't want to bother r_m when {PRONOUN/r_m/subject}{VERB/r_m/'re/'s} so busy already.",
+"I just... I'm thinking about the war, and everything that will happen before it's over...",
+"...cats I care about being hurt, and fighting other cats for real...",
+"...I'm so scared, y_c. I'm so scared, I feel sick."
+        ]
+    ],
+
+
+"neurotic_warfocus_SQ14":[
+        [
+"focus",
+"they_queen",
+"they_queen's_apprentice",
+"they_neurotic",
+	"no_kit",
+	"clan_has_kits"
+        ],
+        [
+"r_k keeps asking about the war, and I'm not sure what to tell {PRONOUN/r_k/object}.",
+"I don't want to scare {PRONOUN/r_k/object}, but I don't want to pretend everything's fine, either.",
+"And I also don't want {PRONOUN/r_k/object} to grow up thinking violence is the only answer...",
+"I hope all of this ends soon."
+        ]
+    ],
+
+"neurotic_warfocus_SQ15":[
+        [
+"focus",
+"they_queen",
+"they_queen's_apprentice",
+"they_neurotic",
+	"no_kit",
+	"clan_has_kits"
+        ],
+        [
+"[t_c sits outside of the nursery like a guard, anxiously scanning the edge of camp. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps} when r_k prods them with one paw.]",
+"Oh, hello! I'll come play in a moment.",
+"What am I doing? Just... keeping watch for a bit. Go back inside, okay?"
+        ]
+    ],
+
+"neurotic_warfocus_SQ16":[
+        [
+"focus",
+"they_queen",
+"they_queen's_apprentice",
+"they_neurotic",
+	"you_medicine_cat",
+"you_medicine_cat_apprentice"	
+        ],
+        [
+"I'm really sorry, but could you come check on r_k? {PRONOUN/r_k/subject/CAP} tripped when playing and got a bit scraped up.",
+"I know you're busy and saving your supplies for the war, but I want to make sure {PRONOUN/r_k/subject/CAP}{VERB/r_k/'re/'s} okay."
+        ]
+    ],
+
+"neurotic_warfocus_SQ17":[
+        [
+"focus",
+"they_queen",
+"they_queen's_apprentice",
+"they_neurotic",
+	"you_kitten"	
+        ],
+        [
+"And what do you do if you see a cat you don't recognize around camp?",
+"You don't talk to them, right? You find me or another adult, even if we're busy or asleep.", 
+"[Besides you, r_k kicks at a pebble. t_c's eyes narrow.]",
+"It's important you listen to this, okay? I need you to stay safe."
+        ]
+    ],
+
+"neurotic_warfocus_SQ18":[
+        [
+"focus",
+"they_queen",
+"they_queen's_apprentice",
+"they_neurotic",
+	"you_adult",
+"platonic_like",
+"clan_has_kits"	
+        ],
+        [
+"[t_c's gaze flicks from the nursery to the camp entrance, and back again.]",
+"Even if they attacked the camp, w_cClan wouldn't hurt kits, right? Right?",
+"[Something about t_c's wide eyes tells you that {PRONOUN/t_c/subject}'ll worry regardless of your answer.]"
+        ]
+    ],
+
+"neurotic_warfocus_SQ19":[
+        [
+            "focus",
+"they_mediator_apprentice",
+	"they_neurotic",
+	"no_kit",
+	"platonic_like"
+        ],
+        [
+"[You find t_c slumped on the edge of camp, {PRONOUN/t_c/poss} tail flicking as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} l_n and d_n discuss the ongoing war.]",
+"It's my job to help end this war.",
+"But... but I just started! I don't know anything! I really think I'll just make things worse."
+        ]
+    ],
+    "war_focusdf_SQ1": [
+        [
+            "focus",
+"they_not_dftrainee",
+	"you_dftrainee",
+	"no_kit",
+	"you_warrior",
+	"you_apprentice",
+"you_deputy",
+"you_leader",
+"platonic_love"
+        ],
+        [
+           "[You've seen some w_cClan warriors training in the Dark Forest. You bristle at the thought of those tactics being used against cats like t_c.]",
+"[...you'll just have to make sure those warriors never get the chance.]"
+        ]
+    ],
+
+"war_focusdf_SQ2": [
+        [
+"focus",
+ 	"they_dftrainee",
+	"you_not_dftrainee",
+	"they_warrior",
+	"they_apprentice",
+	"you_warrior",
+	"you_apprentice",
+"you_deputy",
+"you_leader",
+"random_cat"
+        ],
+        [
+           "[On patrol with t_c and r_w today, you were ambushed by a small group of w_cClan warriors.]",
+"[One of the w_cClan cats seemed... familiar with t_c, mocking {PRONOUN/t_c/object} and almost exclusively targeting {PRONOUN/t_c/object}.]",
+"[You wonder what that's all about.]"
+        ]
+    ],
+
+"war_focusdf_SQ3": [
+        [
+            "focus",            
+"they_dftrainee",
+	"you_dftrainee",
+	"no_kit"
+        ],
+        [
+           "[t_c slides {PRONOUN/t_c/poss} claws in and out.]",
+"War with w_cClan. This is what we've been training for.",
+"[From {PRONOUN/t_c/poss} knowing glance your way, you don't think {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} talking about ordinary training.]"
+        ]
+    ],
+
+"war_focusdf_SQ4": [
+        [
+            "focus",           
+"they_dftrainee",
+	"you_dftrainee",
+	"no_kit",
+	"platonic_like"
+        ],
+        [
+           "Be careful training tonight. I really think some of those w_cClan warriors are out for blood.",
+"[In the Dark Forest, w_cClan trainees have been even rougher than usual.]", 
+"[You think your mentors are pairing you against each other on purpose, just to see what happens.]" 
+        ]
+    ],
+
+"war_focusdf_SQ5": [
+        [
+            "focus",            
+"they_not_dftrainee",
+	"you_dftrainee",
+	"you_apprentice",
+	"you_warrior",
+	"you_deputy",
+	"you_leader",
+	"platonic_like"
+        ],
+        [
+           "[t_c stares at your scratches from last night's Dark Forest training.]",
+"Are those from w_cClan? What happened?!",
+"[The war is a unexpectedly good cover for your unexplained injuries...]"
+        ]
+    ],
+
+"war_focusdf_SQ6": [
+        [
+            "focus",
+"any",
+"they_dftrainee",
+"they_neurotic",
+	"you_dftrainee",
+	"platonic_like",
+	"trust"
+        ],
+        [
+"When I started training in the Dark Forest, I told myself I was going to learn to be brave there.",
+"And I think... I think I'm braver now, but it's obviously not enough, is it?",
+"I'm still scared of this war."]],
+
     "war_focus_J1": [
         [
             "focus",
