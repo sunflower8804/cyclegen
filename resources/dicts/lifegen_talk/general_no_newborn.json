@@ -2999,5 +2999,20 @@
             "So, I got you one too. It can't be used for anything, but it looks pretty, and you can keep it by your nest, or something.",
             "You're a good kit. Sorry for not doing very well at telling you that."
         ]
+    ],
+    "gnn_youdeaf_J6": [
+        [
+            "only_you_went_deaf",
+            "any",
+            "they_hearing",
+            "they_silly",
+            "they_unabashed"
+        ],
+        [
+            "[While lazing around in camp, you hum idly to yourself. Though you can't hear it, the vibrations feel nice in your throat.]",
+            "[You notice some movement out of the corner of your eye and find t_c, their body jostling with laughter.]",
+            "[t_C points up to their ear, then to you, as they continue laughing. There must be something funny about how your voice sounds!]",
+            "[You continue humming with a smile as t_c continues to listen, thoroughly entertained.]"
+        ]
     ]
 }
