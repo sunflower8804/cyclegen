@@ -2002,7 +2002,7 @@ class TalkScreen(Screens):
                 elif cluster and not rel:
                     text = re.sub(fr'(?<!\/)r_w_{x}(?!\/)', str(self.cat_dict[f"r_w_{x}"].name), text)
                 elif rel and not cluster:
-                    text = re.sub(fr'(?<!\/){r}_r_w_(?!\/)', str(self.cat_dict[f"{r}_r_w"].name), text)
+                    text = re.sub(fr'(?<!\/){r}_r_w(?!\/)', str(self.cat_dict[f"{r}_r_w"].name), text)
                 else:
                     text = re.sub(r'(?<!\/)r_w(?!\/)', str(self.cat_dict["r_w"].name), text)
             else:
