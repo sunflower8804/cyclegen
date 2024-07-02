@@ -3624,8 +3624,7 @@
             "no_kit",
             "you_medicine_cat_apprentice",
             "you_medicine_cat",
-            "brooding",
-            "no_kit"
+            "brooding"
         ],
         "intro": [
             "Erm ... Hi.",
@@ -3650,7 +3649,7 @@
         "compliment": [
             "[You compliment t_c on {PRONOUN/t_c/poss} consideration for {PRONOUN/t_c/poss} fellow Clanmate.]",
             "Tch. Is this really so unusual? I'm just doing what any c_nClan cat would do.",
-            "[{PRONOUN/t_c/poss} tone is cold, but you can't help but notice a slight purr as {PRONOUN/t_c/subject} {VERB/t_c/look/looks} away, clearly pleased.]"
+            "[{PRONOUN/t_c/poss/CAP} tone is cold, but you can't help but notice a slight purr as {PRONOUN/t_c/subject} {VERB/t_c/look/looks} away, clearly pleased.]"
         ],
         "tease": [
             "[You gently tease that it's cute how t_c is concerned for {PRONOUN/t_c/poss} fellow Clanmate.]",

@@ -479,8 +479,9 @@ class TalkScreen(Screens):
             for i in range(len(tags)):
                 tags[i] = tags[i].lower()
 
-            if "focus" in tags:
-                pass
+            if "debug_ensure_dialogue" in game.config and game.config["debug_ensure_dialogue"]:
+                if game.config["debug_ensure_dialogue"] == talk_key:
+                    pass
 
             if "insult" in tags:
                 continue
@@ -494,7 +495,7 @@ class TalkScreen(Screens):
                 continue
 
             # Status tags
-            if you.status not in tags and f"you_{you.status}" not in tags and f"you_{you.status.replace(' ', '_')}" not in tags and "any" not in tags and "young elder" not in tags and "no_kit" not in tags and "you_any" not in tags:
+            if you.status not in tags and "any" not in tags and "young elder" not in tags and "no_kit" not in tags and "you_any" not in tags:
                 continue
             elif "young elder" in tags and cat.status == 'elder' and cat.moons >= 100:
                 continue
@@ -647,7 +648,38 @@ class TalkScreen(Screens):
 
             if "they_forgiven" in tags and (cat.shunned > 0 or not theyreforgiven):
                 continue
-
+            
+            roles = ["you_kitten", "you_apprentice", "you_medicine_cat_apprentice", "you_mediator_apprentice", "you_queen's_apprentice", "you_warrior", "you_mediator", "you_medicine_cat", "you_queen", "you_deputy", "you_leader", "you_elder", "you_newborn"]
+            if any(r in roles for r in tags):
+                has_role = False
+                if "you_kitten" in tags and you.status == "kitten":
+                    has_role = True
+                elif "you_apprentice" in tags and you.status == "apprentice":
+                    has_role = True
+                elif "you_medicine_cat_apprentice" in tags and you.status == "medicine cat apprentice":
+                    has_role = True
+                elif "you_mediator_apprentice" in tags and you.status == "mediator apprentice":
+                    has_role = True
+                elif "you_queen's_apprentice" in tags and you.status == "queen's apprentice":
+                    has_role = True
+                elif "you_warrior" in tags and you.status == "warrior":
+                    has_role = True
+                elif "you_mediator" in tags and you.status == "mediator":
+                    has_role = True
+                elif "you_medicine_cat" in tags and you.status == "medicine cat":
+                    has_role = True
+                elif "you_queen" in tags and you.status == "queen":
+                    has_role = True
+                elif "you_deputy" in tags and you.status == "deputy":
+                    has_role = True
+                elif "you_leader" in tags and you.status == "leader":
+                    has_role = True
+                elif "you_elder" in tags and you.status == "elder":
+                    has_role = True
+                elif "you_newborn" in tags and you.status == "newborn":
+                    has_role = True
+                if not has_role:
+                    continue
 
             roles = ["they_kitten", "they_apprentice", "they_medicine_cat_apprentice", "they_mediator_apprentice", "they_queen's_apprentice", "they_warrior", "they_mediator", "they_medicine_cat", "they_queen", "they_deputy", "they_leader", "they_elder", "they_newborn"]
             if any(r in roles for r in tags):
