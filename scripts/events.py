@@ -1079,7 +1079,7 @@ class Events:
             if "l_n" in text:
                 if game.clan.leader is None:
                     return ""
-                if game.clan.leader.dead or game.clan.leader.outside or game.clan.leader.shunned > 0:
+                if game.clan.leader.dead or game.clan.leader.outside or game.clan.leader.shunned > 0 or game.clan.leader.ID == game.clan.your_cat.ID:
                     return ""
                 text = re.sub(r'(?<!\/)l_n(?!\/)', str(game.clan.leader.name), text)
                 self.cat_dict["l_n"] = game.clan.leader
