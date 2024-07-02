@@ -118,7 +118,11 @@ def test():
         "plove_t_s": _r,
         "r_c_neurotic": _r,
         "y_kk": _r,
-        "trust_r_w": _r
+        "trust_r_w": _r,
+        "rdf_c": _r,
+        "plike_r_c": _r,
+        "r_c_stable": _r,
+        "r_w_assertive": _r
     }
     
     cluster_addons = [
