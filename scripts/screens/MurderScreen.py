@@ -419,8 +419,11 @@ class MurderScreen(Screens):
                                                                     "resources/images/poisonmethod_grey.png").convert_alpha(),
                                                                 (110,110)), manager=MANAGER)
             
-            self.accidentmethod = UIImageButton(scale(pygame.Rect((1220, 220), (110, 110))), "AC",
-                                                tool_tip_text= "Accident", object_id="", manager=MANAGER)
+            self.accidentmethod = pygame_gui.elements.UIImage(scale(pygame.Rect((1220, 220), (110, 110))),
+                                                            pygame.transform.scale(
+                                                                image_cache.load_image(
+                                                                    "resources/images/accidentmethod_grey.png").convert_alpha(),
+                                                                (110,110)), manager=MANAGER)
             self.predatormethod = pygame_gui.elements.UIImage(scale(pygame.Rect((1335, 220), (110, 110))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
@@ -558,8 +561,8 @@ class MurderScreen(Screens):
                                                 tool_tip_text= "Attack", object_id="#attack_method_button", manager=MANAGER)
             self.poisonmethod = UIImageButton(scale(pygame.Rect((1105, 220), (110, 110))), "",
                                                 tool_tip_text= "Poison", object_id="#poison_method_button", manager=MANAGER)
-            self.accidentmethod = UIImageButton(scale(pygame.Rect((1220, 220), (110, 110))), "AC",
-                                                tool_tip_text= "Accident", object_id="", manager=MANAGER)
+            self.accidentmethod = UIImageButton(scale(pygame.Rect((1220, 220), (110, 110))), "",
+                                                tool_tip_text= "Accident", object_id="#accident_method_button", manager=MANAGER)
             self.predatormethod = UIImageButton(scale(pygame.Rect((1335, 220), (110, 110))), "",
                                                 tool_tip_text= "Predator", object_id="#predator_method_button", manager=MANAGER)
       
@@ -570,8 +573,10 @@ class MurderScreen(Screens):
 
             self.camplocation = UIImageButton(scale(pygame.Rect((1045, 400), (110, 110))), "",
                                                 tool_tip_text= "Camp", object_id="#camp_location_button", manager=MANAGER)
+            
             self.territorylocation = UIImageButton(scale(pygame.Rect((1165, 400), (110, 110))), "",
-                                                tool_tip_text= "Territory", object_id="territory_location_button", manager=MANAGER)
+                                                tool_tip_text= "Territory", object_id="#territory_location_button", manager=MANAGER)
+            
             self.borderlocation = UIImageButton(scale(pygame.Rect((1285, 400), (110, 110))), "",
                                                 tool_tip_text= "Border", object_id="#border_location_button", manager=MANAGER)
             
@@ -2375,7 +2380,7 @@ class MurderScreen(Screens):
                                                 object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                 manager=MANAGER)
             self.methodinfo = pygame_gui.elements.UITextBox("For those who aren't afraid to use their claws.",
-                                                scale(pygame.Rect((250, 840), (1100, 300))),
+                                                scale(pygame.Rect((250, 820), (1100, 300))),
                                                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                 manager=MANAGER)
         elif self.method == "poison":
@@ -2384,7 +2389,7 @@ class MurderScreen(Screens):
                                                 object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                 manager=MANAGER)
             self.methodinfo = pygame_gui.elements.UITextBox("Those familiar with medicine may want to consider using their skills for evil.",
-                                                scale(pygame.Rect((250, 840), (1100, 300))),
+                                                scale(pygame.Rect((250, 820), (1100, 300))),
                                                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                 manager=MANAGER)
     
@@ -2394,7 +2399,7 @@ class MurderScreen(Screens):
                                                 object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                 manager=MANAGER)
             self.methodinfo = pygame_gui.elements.UITextBox("A strategy for those who are great at feigning innocence.",
-                                                scale(pygame.Rect((250, 840), (1100, 300))),
+                                                scale(pygame.Rect((250, 820), (1100, 300))),
                                                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                 manager=MANAGER)
 
@@ -2404,7 +2409,7 @@ class MurderScreen(Screens):
                                                 object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                 manager=MANAGER)
             self.methodinfo = pygame_gui.elements.UITextBox("A risky technique for those who don't want to get their own paws dirty.",
-                                                scale(pygame.Rect((250, 840), (1100, 300))),
+                                                scale(pygame.Rect((250, 820), (1100, 300))),
                                                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                 manager=MANAGER)
         # LOCATION INFO
