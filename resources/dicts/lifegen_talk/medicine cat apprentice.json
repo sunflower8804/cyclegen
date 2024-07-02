@@ -1775,5 +1775,45 @@
             "Is it true that o_cClan cats can swim like fish? Or that their territory is full of snakes?",
             "[You and t_c have a long conversation about the other Clans. With each detail you share, {PRONOUN/t_c/poss} eyes grow bigger and bigger.]"
         ]
+    ],
+    "deadmed_connected_J1~1": [
+        [
+            "they_brooding",
+            "they_medicine_cat",
+            "any",
+            "connected",
+            "you_sc",
+            "they_sc",
+            "min_they_deadfor_40",
+            "max_you_deadfor_10",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You're in pain, and you don't know why. Wasn't this supposed to stop in StarClan? You find the nearest medicine cat.]",
+            "Hello, y_c.",
+            "Pain? That's completely normal. You've experienced death-- your brain isn't quite caught up to the fact that you're here.",
+            "We all go through it. You'll feel better in a little bit.",
+            "[You suppose you should take {PRONOUN/t_c/poss} word for it... That wasn't very effective treatment, though.]"
+        ]
+    ],
+    "deadmed_connected_J1~2": [
+        [
+            "they_brooding",
+            "they_medicine_cat",
+            "any",
+            "connected",
+            "you_sc",
+            "they_sc",
+            "min_they_deadfor_40",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey there, y_c. Feeling better?",
+            "[You remember when you told r_m that you were feeling some pain left over from your death.]",
+            "[But now, you've been here long enough for it to go away.]",
+            "Gone? Good. That's good to hear."
+        ]
     ]
 }

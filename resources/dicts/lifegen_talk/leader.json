@@ -1992,5 +1992,74 @@
             "... No? The clan needs me more? Don't be ridiculous, y_c.",
             "You're always going to come first."
         ]
+    ],
+    "deaddeputy_connected_J1~1": [
+        [
+            "they_deputy",
+	"they_leader",
+            "they_sc",
+            "you_sc",
+            "min_you_deadfor_40",
+            "max_they_deadfor_6",
+            "you_adult",
+            "connected",
+            "they_upstanding",
+            "you_cool",
+            "they_blind"
+        ],
+        [
+            "y_c! y_c, you have to help me.",
+            "[t_c sprints up to you, skidding to a stop just short of you and kicking up a cloud of stardust.]",
+            "You've been here a while, right? So, there has to be a way out, doesn't there?",
+            "No, no, don't tell me it's not possible. The Clan still needs me-- I wasn't supposed to go yet.",
+            "Who's going to do the dawn patrols without me? o_cClan will be taking over our borders in no time!",
+            "Fine. If you can't help me, I'll find somecat who can.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} and {VERB/t_c/run/runs} away. You'll have to keep your eye on {PRONOUN/t_c/object}...]"
+        ]
+    ],
+    "deaddeputy_connected_J1~2": [
+        [
+            "they_deputy",
+            "they_sc",
+            "you_sc",
+            "min_you_deadfor_40",
+            "min_they_deadfor_10",
+            "you_adult",
+            "connected",
+            "they_upstanding",
+            "you_cool",
+            "they_blind"
+        ],
+        [
+            "[It's been a while since you've heard of t_c's escape attempts... Maybe {PRONOUN/t_c/subject} actually succeeded, you joke to yourself.]",
+            "Hi, y_c.",
+            "[Never mind. Here t_c is, looking just as starry as before.]",
+            "If you're here to make fun of me, save it. I couldn't find any way to get back to the Clan.",
+            "And I'm not saying you're right-- I just haven't figured it out yet.",
+            "Now, go away. I'm thinking."
+        ]
+    ],
+    "deaddeputy_connected_J1~3": [
+        [
+            "they_deputy",
+            "they_sc",
+            "you_sc",
+            "min_you_deadfor_40",
+            "min_they_deadfor_10",
+            "you_adult",
+            "connected",
+            "they_upstanding",
+            "you_cool",
+            "they_blind"
+        ],
+        [
+            "y_c, y_c! Oh, guess what!",
+            "[t_c looks ecstatic!]",
+            "The half-moon meeting for the Clans was yesterday, and I got to visit r_m's dreams!",
+            "Yeah, I do still miss living with the Clan, but...",
+            "You never told me being a StarClan cat could be so fun!",
+            "I'm gonna go ask d_c how {PRONOUN/d_c/subject} {VERB/d_c/make/makes} omens... I'm thinking of sending d_n a sign that r_w should be put on more patrols.",
+            "[Looks like {PRONOUN/t_c/subject} found some more work to do!]"
+        ]
     ]
 }

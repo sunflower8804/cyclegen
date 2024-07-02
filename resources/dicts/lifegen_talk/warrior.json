@@ -3493,5 +3493,29 @@
             "d_n set me on a few patrols to make up for r_s, the poor cat.",
             "Anyway! Tell me about your day. Please? I need the distraction from this heat."
         ]
+    ],
+    "deaddeputy_J1": [
+        [
+            "they_warrior",
+            "they_deputy",
+            "they_sc",
+            "you_sc",
+            "min_you_deadfor_40",
+            "max_they_deadfor_8",
+            "you_adult",
+            "they_upstanding"
+        ],
+        [
+            "[By now, you've learned that new additions to StarClan tend to be very confused. You decide to check on t_c.]",
+            "[When you find {PRONOUN/t_c/object}, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} sitting in a sparse clearing, crouched and focussed on something at {PRONOUN/t_c/poss} paws. You ask what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing.]",
+            "Hm? Oh, hi, y_c.",
+            "[As you approach, you notice what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} looking at. There's a small, fuzzy caterpillar in the starry grass.]",
+            "You know who this caterpillar reminds me of?",
+            "r_w_upstanding. Its fuzz looks just like {VERB/r_w_upstanding/poss} pelt.",
+            "{PRONOUN/r_w_upstanding/subject/CAP} {VERB/r_w_upstanding/were/was} always so great at dawn patrols. Always woke up on time, never late...",
+            "Maybe this little guy is out for the caterpillar border patrol, haha!",
+            "[You remark that t_c can't seem to unplug from {PRONOUN/t_c/poss} work, even now that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} in StarClan. You tell {PRONOUN/t_c/object} {PRONOUN/t_c/subject} should relax.]",
+            "... But what if I don't want to?"
+        ]
     ]
 }

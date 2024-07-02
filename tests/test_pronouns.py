@@ -131,17 +131,17 @@ def test():
         "jealous_"
     ]
 
-    addons = {}
+    # addons = {}
     
-    for abbrev in list(replacement_dict.keys()):
-        for r in rel_addons:
-            addons[f"{r}{abbrev}"] = _r
-        for x in cluster_addons:
-            addons[f"{abbrev}{x}"] = _r
-            for r in rel_addons:
-                addons[f"{r}{abbrev}{x}"] = _r
+    # for abbrev in list(replacement_dict.keys()):
+    #     for r in rel_addons:
+    #         addons[f"{r}{abbrev}"] = _r
+    #     for x in cluster_addons:
+    #         addons[f"{abbrev}{x}"] = _r
+    #         for r in rel_addons:
+    #             addons[f"{r}{abbrev}{x}"] = _r
 
-    replacement_dict.update(addons)
+    # replacement_dict.update(addons)
 
     for x in range(0, 11):
         replacement_dict[f"n_c:{x}"] = _r

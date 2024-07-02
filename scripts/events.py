@@ -884,7 +884,13 @@ class Events:
                     birth_txt = self.adjust_txt(birth_txt)
                     if birth_txt:
                         break
-                
+            process_text_dict = self.cat_dict.copy()
+            for abbrev in process_text_dict.keys():
+                abbrev_cat = process_text_dict[abbrev]
+                process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+
+            birth_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), birth_txt)
+            
             game.cur_events_list.append(Single_Event(birth_txt))
 
         birth_type, parent1, parent2, adoptive_parents = get_parents(birth_type)

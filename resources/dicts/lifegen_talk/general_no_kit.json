@@ -20088,5 +20088,82 @@
             "[You spot t_c from across the camp, your eyes meeting for a long moment.]", 
             "[r_w nudges your side as {PRONOUN/r_w/subject} pass, breaking your focus on your mate. When you look back, t_c is gone. Maybe some other time...]" 
         ]
+    ],
+    "praying_connected_J1~1": [
+        [
+            "you_sc",
+            "any",
+            "no_kit",
+            "they_shunned",
+            "stable",
+            "cool",
+            "sc_faith",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[y_c is praying, and you're the StarClan cat who has happened to hear it.]",
+            "Um, hey, StarClan... Can you hear me?",
+            "I messed up, StarClan... and, I guess I was just wondering if you'd be willing to forgive me.",
+            "I get it if you're not, but...",
+            "Let me know?"
+        ]
+    ],
+    "praying_connected_J1~2": [
+        [
+            "you_sc",
+            "any",
+            "no_kit",
+            "they_forgiven",
+            "stable",
+            "cool",
+            "sc_faith",
+            "connected",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You listen in to t_c as {PRONOUN/t_c/subject} {VERB/t_c/pray/prays} once more.]",
+            "Hey, StarClan. Me again.",
+            "I've been let back into the Clan! I don't know if you guys had anything to do with that, but, uh, thanks, if so.",
+            "I'm gonna try to do better now."
+        ]
+    ],
+    "praying_connected_J1~3": [
+        [
+            "you_sc",
+            "any",
+            "no_kit",
+            "stable",
+            "cool",
+            "sc_faith",
+            "connected",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Whoa, y_c! Hi! What are you doing here?",
+            "Oh, you heard me praying before? I guess that makes sense...",
+            "That's a bit embarrassing, though.",
+            "Well, thanks for listening, anyway. I guess it worked, huh?",
+            "Make sure you save me a spot up in StarClan!"
+        ]
+    ],
+    "longdead_J1": [
+        [
+            "min_they_deadfor_100",
+            "max_you_deadfor_20",
+            "you_sc",
+            "they_sc",
+            "any",
+            "they_adult",
+            "they_brooding"
+        ],
+        [
+            "[While stargazing with t_c, you point out a bright purple dot to them.]",
+            "Don't point out the planets to me, rookie. You think I haven't seen them before?",
+            "I've been stargazing up here for years. Of course I've seen the purple one.",
+            "There's a red one that shows itself every once in a while. I'll come get you when I see it next."
+        ]
     ]
 }
