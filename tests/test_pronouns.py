@@ -100,7 +100,25 @@ def test():
         "a_n": _r,
         "t_q": _r,
         "brooding_t_l": _r,
-        "y_k": _r
+        "y_k": _r,
+        "dislike_r_c": _r,
+        "trust_r_c": _r,
+        "neutral_r_c": _r,
+        "r_c_brooding": _r,
+        "r_c_sweet": _r,
+        "plike_r_w": _r,
+        "r_c_upstanding": _r,
+        "r_a_silly": _r,
+        "r_c_unabashed": _r,
+        "plike_r_a": _r,
+        "r_w_upstanding": _r,
+        "r_a_cool": _r,
+        "r_w_neurotic": _r,
+        "dislike_r_w": _r,
+        "plove_t_s": _r,
+        "r_c_neurotic": _r,
+        "y_kk": _r,
+        "trust_r_w": _r
     }
     
     cluster_addons = [

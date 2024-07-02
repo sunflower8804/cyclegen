@@ -19184,7 +19184,7 @@
 	],
 	[
 		"Man, I wonder what kinda cat t_kk is gonna grow up to be?",
-		"{PRONOUN/t_kk/CAP} could be a historic medicine cat, or an influential mediator, or - hey, who knows? Even leader of the Clan!",
+		"{PRONOUN/t_kk/subject/CAP} could be a historic medicine cat, or an influential mediator, or - hey, who knows? Even leader of the Clan!",
  		"[You ask t_c why {PRONOUN/t_c/subject} didn't mention the path of a regular warrior?]",
 		"Yeah, like my kit's just gonna end up as some generic patrol member. No way I'm gonna let that happen!",
 		"Just you wait, t_c! t_kk's gonna go down in history!" 
@@ -19710,7 +19710,7 @@
         ],
         [
             "Hey... y_c?",
-            "What do you think d_c is doing right now? Surely {PRONOUN/d_c/subject}{VERB/d_c/'ve/'s} made {PRONOUN/d_c/poaa} way to Silverpelt, right? Who do you think {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} talking to? Could {PRONOUN/d_c/subject} be watching us right now?",
+            "What do you think d_c is doing right now? Surely {PRONOUN/d_c/subject}{VERB/d_c/'ve/'s} made {PRONOUN/d_c/poss} way to Silverpelt, right? Who do you think {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} talking to? Could {PRONOUN/d_c/subject} be watching us right now?",
             "Please don't tell me d_c was watching me this morning, I'm embarrassed enough as it is..."
         ]
     ],
