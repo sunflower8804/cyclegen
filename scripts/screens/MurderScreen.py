@@ -441,8 +441,11 @@ class MurderScreen(Screens):
                                                                 image_cache.load_image(
                                                                     "resources/images/camplocation_grey.png").convert_alpha(),
                                                                 (110,110)), manager=MANAGER)
-            self.territorylocation = UIImageButton(scale(pygame.Rect((1165, 400), (110, 110))), "T",
-                                                tool_tip_text= "Territory", object_id="", manager=MANAGER)
+            self.territorylocation = pygame_gui.elements.UIImage(scale(pygame.Rect((1165, 400), (110, 110))),
+                                                            pygame.transform.scale(
+                                                                image_cache.load_image(
+                                                                    "resources/images/territorylocation_grey.png").convert_alpha(),
+                                                                (110,110)), manager=MANAGER)
             self.borderlocation = pygame_gui.elements.UIImage(scale(pygame.Rect((1285, 400), (110, 110))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
@@ -567,8 +570,8 @@ class MurderScreen(Screens):
 
             self.camplocation = UIImageButton(scale(pygame.Rect((1045, 400), (110, 110))), "",
                                                 tool_tip_text= "Camp", object_id="#camp_location_button", manager=MANAGER)
-            self.territorylocation = UIImageButton(scale(pygame.Rect((1165, 400), (110, 110))), "T",
-                                                tool_tip_text= "Territory", object_id="", manager=MANAGER)
+            self.territorylocation = UIImageButton(scale(pygame.Rect((1165, 400), (110, 110))), "",
+                                                tool_tip_text= "Territory", object_id="territory_location_button", manager=MANAGER)
             self.borderlocation = UIImageButton(scale(pygame.Rect((1285, 400), (110, 110))), "",
                                                 tool_tip_text= "Border", object_id="#border_location_button", manager=MANAGER)
             
