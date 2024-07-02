@@ -2502,14 +2502,50 @@
     "gnn_youdeaf_J2": [
         [
             "you_deaf",
+            "only_they_deaf",
+            "you_blind",
+            "they_blind",
+            "any"
+        ],
+        [
+            "[You and t_c both sit outside during some light rain, enjoying the cool mist on your faces.]"
+        ]
+    ],
+    "gnn_youdeaf_J2_2": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "only_they_blind",
+            "any"
+        ],
+        [
+            "*Puuuurrrrrr...* *Snoooorrreee...*",
+            "[It's a lazy day today.]"
+        ]
+    ],
+    "gnn_youdeaf_J2_3": [
+        [
+            "only_you_deaf",
             "they_deaf",
             "you_blind",
             "they_blind",
             "any"
         ],
         [
-            "*Puuuurrrrrr...* *Snoooorrreee...*",
-            "[It's a lazy day today.]"
+            "[t_c trips as you walk side by side through camp. You feel {PRONOUN/t_c/poss} body shaking with laughter as you help {PRONOUN/t_c/object} up.]"
+        ]
+    ],
+    "gnn_youdeaf_J2_4": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "only_you_blind",
+            "they_blind",
+            "any"
+        ],
+        [
+            "... ... ..."
         ]
     ],
     "gnn_youdeaf_J3": [
