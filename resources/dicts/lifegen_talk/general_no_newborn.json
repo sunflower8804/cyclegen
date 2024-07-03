@@ -2415,6 +2415,20 @@
             "[t_c brushes {PRONOUN/t_c/poss} ghostly pelt against yours.]"
         ]
     ],
+    "deaf_J7_2": [
+        [
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_dead",
+            "they_dead",
+            "any"
+        ],
+        [
+            "[t_c accidentally runs into you, but your bodies simply pass through each other.]"
+        ]
+    ],
     "deaf_J8": [
         [
             "any",

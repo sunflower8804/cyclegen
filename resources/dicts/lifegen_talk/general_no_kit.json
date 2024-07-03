@@ -14249,7 +14249,9 @@
         [
             "they_sc",
             "you_sc",
-            "any"
+            "any",
+            "cool",
+            "brooding"
         ],
         [
             "Do you miss being in c_nClan?",
@@ -14263,7 +14265,9 @@
         [
             "they_sc",
             "you_sc",
-            "any"
+            "any",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c is grooming {PRONOUN/t_c/poss} pelt, sending stardust scattering across the grass with every rasp of {PRONOUN/t_c/poss} tongue.]"
@@ -14299,7 +14303,7 @@
             "any"
         ],
         [
-            "A gathering is approaching.",
+            "A Gathering is approaching.",
             "Let's hope the living cats know to behave themselves. Or else we might have to intervene."
         ]
     ],
@@ -19036,12 +19040,23 @@
     "dead_deaf_J3": [
         [
             "any",
-            "you_deaf",
+            "only_you_deaf",
             "they_deaf",
             "they_dead"
         ],
         [
-            "[t_c smiles at you.]"
+            "[t_c's ghostly form vanishes as soon as you catch a glimpse of {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "dead_deaf_J4": [
+        [
+            "any",
+            "you_deaf",
+            "only_they_deaf",
+            "they_dead"
+        ],
+        [
+            "[You watch t_c as {PRONOUN/t_c/subject} wistfully {VERB/t_c/watch/watches} the birds fluttering through the trees that surround c_nClan camp.]"
         ]
     ],
     "neurotic_general_SQ1": [
