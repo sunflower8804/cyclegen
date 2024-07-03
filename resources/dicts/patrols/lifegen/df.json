@@ -29,7 +29,7 @@
                 "weight": 20
             },
             {
-                "text": "A shadow shoots out of the trees, right towards you. But you're quick-- you spin around, ducking underneath your assailant and jumping up to pin them to the ground. Claws on your attackers throat, you snarl, but the attacker just blinks up at you, amused. They compliment you on your skills, introduce themself, and remark that the two of you should train together sometime.",
+                "text": "A shadow shoots out of the trees, right towards you. But you're quick-- you spin around, ducking underneath your assailant and jumping up to pin them to the ground. Claws on your attackers throat, you snarl, but the attacker just blinks up at you, amused. {PRONOUN/n_c:0/subject} {VERB/n_c:0/compliment/compliments} you on your skills, {VERB/n_c:0/introduce/introduces} {PRONOUN/n_c:0/self}, and {VERB/n_c:0/remark/remarks} that the two of you should train together sometime.",
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
@@ -171,7 +171,7 @@
                 "weight": 20
             },
             {
-                "text": "You accept the training, and the ghostly warrior is impressed that you can keep up with them.",
+                "text": "You accept the training, and the ghostly warrior is impressed that you can keep up with {PRONOUN/n_c:0/object}.",
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
@@ -313,7 +313,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You step forward to explore, but a small Dark Forest cat bounds out of the shadows to stop you. They tell you that this place is dangerous, and that the truths hidden here are not for the eyes of living cats. They turn you away before you can get a good look, and you can feel their glowing eyes following you for the rest of the night.",
+                "text": "You step forward to explore, but a small Dark Forest cat bounds out of the shadows to stop you. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/tell/tells} you that this place is dangerous, and that the truths hidden here are not for the eyes of living cats. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/turn/turns} you away before you can get a good look, and you can feel {PRONOUN/n_c:0/poss} glowing eyes following you for the rest of the night.",
                 "exp": 5,
                 "weight": 20,
                 "new_cat": [
@@ -369,11 +369,11 @@
                 "stat_skill": ["COMFORTER,1", "DREAM,1", "GUARDIAN,1", "NAVIGATOR,1", "STAR, 1", "TRACKER,1"]
             },
             {
-                "text": "There's no need for them to be afraid. You coax them into joining you and your mentor. Although they are hesitant at first, you soon meet them on more and more nights, now confident with a pelt of muck.",
+                "text": "There's no need for {PRONOUN/n_c:0/object} to be afraid. You coax {PRONOUN/n_c:0/object} into joining you and your mentor. Although {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} hesitant at first, you soon meet {PRONOUN/n_c:0/object} on more and more nights, now confident with a pelt of muck.",
                 "exp": 20,
                 "weight": 20,
                 "new_cat": [
-                    ["newdfcat", "oldstarClan"]
+                    ["newdfcat", "oldstarclan"]
                 ]
             }
         ],
@@ -430,7 +430,7 @@
             },
 
             {
-                "text": "You try to pull yourself up, but the inky depths are stronger than you. Your head slips under, and your limbs start to burn. Just as you decide to give in and accept your fate, you feel a tug from above and air hits your fur once more. The cat lays you on solid ground once more, and when you open your eyes, they introduce themself with a smile.",
+                "text": "You try to pull yourself up, but the inky depths are stronger than you. Your head slips under, and your limbs start to burn. Just as you decide to give in and accept your fate, you feel a tug from above and air hits your fur once more. The cat lays you on solid ground once more, and when you open your eyes, {PRONOUN/n_c:0/subject} {VERB/n_c:0/introduce/introduces} {PRONOUN/n_c:0/self} with a smile.",
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
@@ -1048,7 +1048,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "From behind a tree, you hear a small <i>psst</i>. You turn towards the noise, defensively, but sheathe your claws when you see a small kit wobble out into the open. They tell you that they're lost, and you lead the little kitten back into a more populated area of the Dark Forest, where they run up to a very thankful Dark Forest queen.",
+                "text": "From behind a tree, you hear a small <i>psst</i>. You turn towards the noise, defensively, but sheathe your claws when you see a small kit wobble out into the open. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/tell/tells} you that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} lost, and you lead the little kitten back into a more populated area of the Dark Forest, where {PRONOUN/n_c:0/subject} {VERB/n_c:0/run/runs} up to a very thankful Dark Forest queen.",
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
@@ -1129,14 +1129,17 @@
         "patrol_art": "df_default",
         "min_cats": 1,
         "max_cats": 1,
-        "min_max_status": {},
+        "min_max_status": {
+            "medicine cat apprentice": [1, 6],
+            "medicine cat": [1, 6]
+        },
         "weight": 20,
         "intro_text": "While wandering the Dark Forest, you hear a hiss of pain from within a thick clump of trees. You wonder if it's safe to investigate.",
         "decline_text": "You can't risk it. Though your heart urges you to do otherwise as a medicine cat, you turn away from the noise, pretending you heard nothing.",
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "You approach the shadows and creep towards the noise. In the trees, you find a Dark Forest cat, heavily injured and curled up beneath a bush. They have a large wound from which they're losing a lot of blood, and you can see the ground beneath them through their pelt. You rush away to find some cobwebs, moss, and herbs, and when you return, the cat begrudgingly accepts your help.",
+                "text": "You approach the shadows and creep towards the noise. In the trees, you find a Dark Forest cat, heavily injured and curled up beneath a bush. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/have/has} a large wound from which {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} losing a lot of blood, and you can see the ground beneath {PRONOUN/n_c:0/object} through {PRONOUN/n_c:0/poss} pelt. You rush away to find some cobwebs, moss, and herbs, and when you return, the cat begrudgingly accepts your help.",
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
@@ -1149,7 +1152,7 @@
                 "weight": 20
             },
             {
-                "text": "You stalk into the trees, tensing for a fight, but the Dark Forest cat you find isn't aggressive. Though they seem to have a large amount of scars, they assure you that they're fine, and they walk with you out of the trees and back into familiar Dark Forest terrain.",
+                "text": "You stalk into the trees, tensing for a fight, but the Dark Forest cat you find isn't aggressive. Though {PRONOUN/n_c:0/subject} {VERB/n_c:0/seem/seems} to have a large amount of scars, {PRONOUN/n_c:0/subject} {VERB/n_c:0/assure/assures} you that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} fine, and {PRONOUN/n_c:0/subject} {VERB/n_c:0/walk/walks} with you out of the trees and back into familiar Dark Forest terrain.",
                 "exp": 30,
                 "weight": 10,
                 "new_cat": [
@@ -1218,7 +1221,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "Weaving through the group of trainees around you, you approach r_c. {PRONOUN/r_c/subject/CAP} greet you with a smile, and {PRONOUN/r_c/poss} new Dark Forest friend dips their head and introduces themself. Thankfully, it seems that they're friendly!",
+                "text": "Weaving through the group of trainees around you, you approach r_c. {PRONOUN/r_c/subject/CAP} greet you with a smile, and {PRONOUN/r_c/poss} new Dark Forest friend dips {PRONOUN/n_c:0/poss} head and introduces {PRONOUN/n_c:0/self}. Thankfully, it seems that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} friendly!",
                 "exp": 30,
                 "weight": 10,
                 "new_cat": [
@@ -1677,7 +1680,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "You surge forward to greet your secret mate. They purr out a greeting, and call out to someone in the darkness. Oh! Your kits! You greet each of them with a purr loud as thunder. Before you know it, it's time to say good-bye to your family, and you wake in your nest with a bitter-sweet ache in your chest.",
+                "text": "You surge forward to greet your secret mate. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/purr/purrs} out a greeting, and {VERB/n_c:0/call/calls} out to someone in the darkness. Oh! Your kits! You greet each of them with a purr loud as thunder. Before you know it, it's time to say good-bye to your family, and you wake in your nest with a bitter-sweet ache in your chest.",
                 "exp": 15,
                 "weight": 10,
                 "new_cat": [
@@ -1696,7 +1699,7 @@
                 "weight": 20
             },
             {
-                "text": "You surge forward to greet your secret mate, but they don't reciprocate. It's time to part ways despite your aching hearts. They whisk your confused kits forward and you choke out a goodbye as your love walks away with a hanging head. You need to get the little ones into a warm nest now. Now the question is, what to tell your Clanmates?",
+                "text": "You surge forward to greet your secret mate, but {PRONOUN/n_c:0/subject} {VERB/n_c:0/don't/doesn't} reciprocate. It's time to part ways despite your aching hearts. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/whisk/whisks} your confused kits forward and you choke out a goodbye as your love walks away with a hanging head. You need to get the little ones into a warm nest now. Now the question is, what to tell your Clanmates?",
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
@@ -1705,7 +1708,7 @@
                 ]
             },
             {
-                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the dark forest before they surge forward to bunt heads with a purr. Perhaps it isn't meant to be in the waking world... but in this place it is true and real to both of you.",
+                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the Dark Forest before {PRONOUN/n_c:0/subject} {VERB/n_c:0/surge/surges} forward to bunt heads with a purr. Perhaps it isn't meant to be in the waking world... but in this place it is true and real to both of you.",
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
@@ -1713,7 +1716,7 @@
                 ]
             },
             {
-                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the dark forest before they surge forward to bunt heads with a purr. Perhaps it could never be in the waking world... but in this place it is true and real to both of you whilst you sleep.",
+                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the Dark Forest before {PRONOUN/n_c:0/subject} {VERB/n_c:0/surge/surges} forward to bunt heads with a purr. Perhaps it could never be in the waking world... but in this place it is true and real to both of you whilst you sleep.",
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
