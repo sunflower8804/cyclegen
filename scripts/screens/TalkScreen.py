@@ -1518,7 +1518,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)your_crush_{x}(?!\/)', str(self.cat_dict[f"your_crush_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_your_crush_(?!\/)', str(self.cat_dict[f"{r}_your_crush"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_your_crush(?!\/)', str(self.cat_dict[f"{r}_your_crush"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)your_crush(?!\/)', str(self.cat_dict["your_crush"].name), text)
                 else:
@@ -1583,7 +1583,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)their_crush_{x}(?!\/)', str(self.cat_dict[f"their_crush_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_their_crush_(?!\/)', str(self.cat_dict[f"{r}_their_crush"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_their_crush(?!\/)', str(self.cat_dict[f"{r}_their_crush"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)their_crush(?!\/)', str(self.cat_dict["their_crush"].name), text)
                 else:
@@ -1654,7 +1654,7 @@ class TalkScreen(Screens):
                         elif cluster and not rel:
                             text = re.sub(fr'(?<!\/)r_c{i}_{x}(?!\/)', str(self.cat_dict[f"r_c{i}_{x}"].name), text)
                         elif rel and not cluster:
-                            text = re.sub(fr'(?<!\/){r}_r_c{i}_(?!\/)', str(self.cat_dict[f"{r}_r_c{i}"].name), text)
+                            text = re.sub(fr'(?<!\/){r}_r_c{i}(?!\/)', str(self.cat_dict[f"{r}_r_c{i}"].name), text)
                         else:
                             text = re.sub(fr'(?<!\/)r_c{i}(?!\/)', str(self.cat_dict[f"r_c{i}"].name), text)
                         continue
@@ -1717,7 +1717,7 @@ class TalkScreen(Screens):
                         elif cluster and not rel:
                             text = re.sub(fr'(?<!\/)r_w{i}_{x}(?!\/)', str(self.cat_dict[f"r_w{i}_{x}"].name), text)
                         elif rel and not cluster:
-                            text = re.sub(fr'(?<!\/){r}_r_w{i}_(?!\/)', str(self.cat_dict[f"{r}_r_w{i}"].name), text)
+                            text = re.sub(fr'(?<!\/){r}_r_w{i}(?!\/)', str(self.cat_dict[f"{r}_r_w{i}"].name), text)
                         else:
                             text = re.sub(fr'(?<!\/)r_w{i}(?!\/)', str(self.cat_dict[f"r_w{i}"].name), text)
                         continue
@@ -1872,7 +1872,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_k_{x}(?!\/)', str(self.cat_dict[f"r_k_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_k_(?!\/)', str(self.cat_dict[f"{r}_r_k"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_k(?!\/)', str(self.cat_dict[f"{r}_r_k"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_k(?!\/)', str(self.cat_dict["r_k"].name), text)
                 else:
@@ -1937,7 +1937,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_a_{x}(?!\/)', str(self.cat_dict[f"r_a_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_a_(?!\/)', str(self.cat_dict[f"{r}_r_a"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_a(?!\/)', str(self.cat_dict[f"{r}_r_a"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_a(?!\/)', str(self.cat_dict["r_a"].name), text)
                 else:
@@ -2066,7 +2066,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_m_{x}(?!\/)', str(self.cat_dict[f"r_m_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_m_(?!\/)', str(self.cat_dict[f"{r}_r_m"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_m(?!\/)', str(self.cat_dict[f"{r}_r_m"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_m(?!\/)', str(self.cat_dict["r_m"].name), text)
                 else:
@@ -2125,7 +2125,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_d_{x}(?!\/)', str(self.cat_dict[f"r_d_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_d_(?!\/)', str(self.cat_dict[f"{r}_r_d"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_d(?!\/)', str(self.cat_dict[f"{r}_r_d"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_d(?!\/)', str(self.cat_dict["r_d"].name), text)
                 else:
@@ -2185,7 +2185,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_q_{x}(?!\/)', str(self.cat_dict[f"r_q_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_q_(?!\/)', str(self.cat_dict[f"{r}_r_q"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_q(?!\/)', str(self.cat_dict[f"{r}_r_q"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_q(?!\/)', str(self.cat_dict["r_q"].name), text)
                 else:
@@ -2245,7 +2245,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_e_{x}(?!\/)', str(self.cat_dict[f"r_e_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_e_(?!\/)', str(self.cat_dict[f"{r}_r_e"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_e(?!\/)', str(self.cat_dict[f"{r}_r_e"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_e(?!\/)', str(self.cat_dict["r_e"].name), text)
                 else:
@@ -2305,7 +2305,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_s_{x}(?!\/)', str(self.cat_dict[f"r_s_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_s_(?!\/)', str(self.cat_dict[f"{r}_r_s"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_s(?!\/)', str(self.cat_dict[f"{r}_r_s"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_s(?!\/)', str(self.cat_dict["r_s"].name), text)
                 else:
@@ -2365,7 +2365,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_i_{x}(?!\/)', str(self.cat_dict[f"r_i_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_i_(?!\/)', str(self.cat_dict[f"{r}_r_i"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_i(?!\/)', str(self.cat_dict[f"{r}_r_i"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_i(?!\/)', str(self.cat_dict["r_i"].name), text)
                 else:
@@ -2424,7 +2424,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_g_{x}(?!\/)', str(self.cat_dict[f"r_g_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_g_(?!\/)', str(self.cat_dict[f"{r}_r_g"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_g(?!\/)', str(self.cat_dict[f"{r}_r_g"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_g(?!\/)', str(self.cat_dict["r_g"].name), text)
                 else:
@@ -2484,7 +2484,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)y_s_{x}(?!\/)', str(self.cat_dict[f"y_s_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_y_s_(?!\/)', str(self.cat_dict[f"{r}_y_s"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_y_s(?!\/)', str(self.cat_dict[f"{r}_y_s"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)y_s(?!\/)', str(self.cat_dict["t_s"].name), text)
                 else:
@@ -2545,7 +2545,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)y_l_{x}(?!\/)', str(self.cat_dict[f"y_l_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_y_l_(?!\/)', str(self.cat_dict[f"{r}_y_l"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_y_l(?!\/)', str(self.cat_dict[f"{r}_y_l"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)y_l(?!\/)', str(self.cat_dict["y_l"].name), text)
                 else:
@@ -2606,7 +2606,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)t_s_{x}(?!\/)', str(self.cat_dict[f"t_s_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_t_s_(?!\/)', str(self.cat_dict[f"{r}_t_s"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_t_s(?!\/)', str(self.cat_dict[f"{r}_t_s"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)t_s(?!\/)', str(self.cat_dict["t_s"].name), text)
                 else:
@@ -2667,7 +2667,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)t_l_{x}(?!\/)', str(self.cat_dict[f"t_l_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_t_l_(?!\/)', str(self.cat_dict[f"{r}_t_l"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_t_l(?!\/)', str(self.cat_dict[f"{r}_t_l"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)t_l(?!\/)', str(self.cat_dict["t_l"].name), text)
                 else:
@@ -2754,7 +2754,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)y_p_{x}(?!\/)', str(self.cat_dict[f"y_p_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_y_p_(?!\/)', str(self.cat_dict[f"{r}_y_p"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_y_p(?!\/)', str(self.cat_dict[f"{r}_y_p"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)y_p(?!\/)', str(self.cat_dict["y_p"].name), text)
                 else:
@@ -2842,7 +2842,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)y_m_{x}(?!\/)', str(self.cat_dict[f"y_m_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_y_m_(?!\/)', str(self.cat_dict[f"{r}_y_m"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_y_m(?!\/)', str(self.cat_dict[f"{r}_y_m"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)y_m(?!\/)', str(self.cat_dict["y_m"].name), text)
                 else:
@@ -2901,7 +2901,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)t_m_{x}(?!\/)', str(self.cat_dict[f"t_m_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_t_m_(?!\/)', str(self.cat_dict[f"{r}_t_m"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_t_m(?!\/)', str(self.cat_dict[f"{r}_t_m"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)t_m(?!\/)', str(self.cat_dict["t_m"].name), text)
                 else:
@@ -2960,7 +2960,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)t_ka_{x}(?!\/)', str(self.cat_dict[f"t_ka_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_t_ka_(?!\/)', str(self.cat_dict[f"{r}_t_ka"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_t_ka(?!\/)', str(self.cat_dict[f"{r}_t_ka"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)t_ka(?!\/)', str(self.cat_dict["t_ka"].name), text)
                 else:
@@ -3016,7 +3016,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)t_kk_{x}(?!\/)', str(self.cat_dict[f"t_kk_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_t_kk_(?!\/)', str(self.cat_dict[f"{r}_t_kk"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_t_kk(?!\/)', str(self.cat_dict[f"{r}_t_kk"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)t_kk(?!\/)', str(self.cat_dict["t_kk"].name), text)
                 else:
@@ -3072,7 +3072,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)t_k_{x}(?!\/)', str(self.cat_dict[f"t_k_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_t_k_(?!\/)', str(self.cat_dict[f"{r}_t_k"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_t_k(?!\/)', str(self.cat_dict[f"{r}_t_k"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)t_k(?!\/)', str(self.cat_dict["t_k"].name), text)
                 else:
@@ -3128,7 +3128,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)y_k_{x}(?!\/)', str(self.cat_dict[f"y_k_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_y_k_(?!\/)', str(self.cat_dict[f"{r}_y_k"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_y_k(?!\/)', str(self.cat_dict[f"{r}_y_k"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)y_k(?!\/)', str(self.cat_dict["y_k"].name), text)
                 else:
@@ -3184,7 +3184,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)y_kk_{x}(?!\/)', str(self.cat_dict[f"y_kk_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_y_kk_(?!\/)', str(self.cat_dict[f"{r}_y_kk"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_y_kk(?!\/)', str(self.cat_dict[f"{r}_y_kk"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)y_kk(?!\/)', str(self.cat_dict["y_kk"].name), text)
                 else:
@@ -3247,7 +3247,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)r_c_{x}(?!\/)', str(self.cat_dict[f"r_c_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_r_c_(?!\/)', str(self.cat_dict[f"{r}_r_c"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_r_c(?!\/)', str(self.cat_dict[f"{r}_r_c"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)r_c(?!\/)', str(self.cat_dict["r_c"].name), text)
                 else:
@@ -3469,7 +3469,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)d_c_{x}(?!\/)', str(self.cat_dict[f"d_c_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_d_c_(?!\/)', str(self.cat_dict[f"{r}_d_c"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_d_c(?!\/)', str(self.cat_dict[f"{r}_d_c"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)d_c(?!\/)', str(self.cat_dict["d_c"].name), text)
                 else:
@@ -3531,7 +3531,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)rdf_c_{x}(?!\/)', str(self.cat_dict[f"rdf_c_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_rdf_c_(?!\/)', str(self.cat_dict[f"{r}_rdf_c"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_rdf_c(?!\/)', str(self.cat_dict[f"{r}_rdf_c"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)rdf_c(?!\/)', str(self.cat_dict["rdf_c"].name), text)
                 else:
@@ -3588,7 +3588,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)rsh_c_{x}(?!\/)', str(self.cat_dict[f"rsh_c_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_rsh_c_(?!\/)', str(self.cat_dict[f"{r}_rsh_c"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_rsh_c(?!\/)', str(self.cat_dict[f"{r}_rsh_c"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)rsh_c(?!\/)', str(self.cat_dict["rsh_c"].name), text)
                 else:
@@ -3648,7 +3648,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)rsh_k_{x}(?!\/)', str(self.cat_dict[f"rsh_k_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_rsh_k_(?!\/)', str(self.cat_dict[f"{r}_rsh_k"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_rsh_k(?!\/)', str(self.cat_dict[f"{r}_rsh_k"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)rsh_k(?!\/)', str(self.cat_dict["rsh_k"].name), text)
                 else:
@@ -3706,7 +3706,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)rsh_a_{x}(?!\/)', str(self.cat_dict[f"rsh_a_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_rsh_a_(?!\/)', str(self.cat_dict[f"{r}_rsh_a"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_rsh_a(?!\/)', str(self.cat_dict[f"{r}_rsh_a"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)rsh_a(?!\/)', str(self.cat_dict["rsh_a"].name), text)
                 else:
@@ -3764,7 +3764,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)rsh_w_{x}(?!\/)', str(self.cat_dict[f"rsh_w_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_rsh_w_(?!\/)', str(self.cat_dict[f"{r}_rsh_w"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_rsh_w(?!\/)', str(self.cat_dict[f"{r}_rsh_w"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)rsh_w(?!\/)', str(self.cat_dict["rsh_w"].name), text)
                 else:
@@ -3822,7 +3822,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)rsh_m_{x}(?!\/)', str(self.cat_dict[f"rsh_m_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_rsh_m_(?!\/)', str(self.cat_dict[f"{r}_rsh_m"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_rsh_m(?!\/)', str(self.cat_dict[f"{r}_rsh_m"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)rsh_m(?!\/)', str(self.cat_dict["rsh_m"].name), text)
                 else:
@@ -3880,7 +3880,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)rsh_d_{x}(?!\/)', str(self.cat_dict[f"rsh_d_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_rsh_d_(?!\/)', str(self.cat_dict[f"{r}_rsh_d"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_rsh_d(?!\/)', str(self.cat_dict[f"{r}_rsh_d"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)rsh_d(?!\/)', str(self.cat_dict["rsh_d"].name), text)
                 else:
@@ -3938,7 +3938,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)rsh_q_{x}(?!\/)', str(self.cat_dict[f"rsh_q_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_rsh_q_(?!\/)', str(self.cat_dict[f"{r}_rsh_q"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_rsh_q(?!\/)', str(self.cat_dict[f"{r}_rsh_q"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)rsh_q(?!\/)', str(self.cat_dict["rsh_q"].name), text)
                 else:
@@ -3996,7 +3996,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)rsh_e_{x}(?!\/)', str(self.cat_dict[f"rsh_e_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_rsh_e_(?!\/)', str(self.cat_dict[f"{r}_rsh_e"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_rsh_e(?!\/)', str(self.cat_dict[f"{r}_rsh_e"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)rsh_e(?!\/)', str(self.cat_dict["rsh_e"].name), text)
                 else:
@@ -4148,7 +4148,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)l_c_{x}(?!\/)', str(self.cat_dict[f"l_c_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_l_c_(?!\/)', str(self.cat_dict[f"{r}_l_c"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_l_c(?!\/)', str(self.cat_dict[f"{r}_l_c"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)l_c(?!\/)', str(self.cat_dict["l_c"].name), text)
                 else:
@@ -4209,7 +4209,7 @@ class TalkScreen(Screens):
                     elif cluster and not rel:
                         text = re.sub(fr'(?<!\/)e_c_{x}(?!\/)', str(self.cat_dict[f"e_c_{x}"].name), text)
                     elif rel and not cluster:
-                        text = re.sub(fr'(?<!\/){r}_e_c_(?!\/)', str(self.cat_dict[f"{r}_e_c"].name), text)
+                        text = re.sub(fr'(?<!\/){r}_e_c(?!\/)', str(self.cat_dict[f"{r}_e_c"].name), text)
                     else:
                         text = re.sub(r'(?<!\/)e_c(?!\/)', str(self.cat_dict["e_c"].name), text)
                 else:
