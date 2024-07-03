@@ -2802,7 +2802,7 @@
         ],
         [
             "Huh, y_c? You were looking for me?",
-            "Yes, I got into an argument with r_c_assertive this morning. I'm not sure what the issue is. {PRONOUN/r_c/subject/CAP} always {VERB/r_c/keep/keeps} telling me that I need to speak up more, and then {VERB/t_c/get/gets} angry at me when I do.",
+            "Yes, I got into an argument with r_c_assertive this morning. I'm not sure what the issue is. {PRONOUN/r_c/subject/CAP} always {VERB/r_c_assertive/keep/keeps} telling me that I need to speak up more, and then {VERB/r_c_assertive/get/gets} angry at me when I do.",
             "I swear. This is the reason why you're one of the only cats I talk to. You make sense, you're reasonable.",
             "I'm going to bed, y_c. I'll speak to you in the morning."
         ]
