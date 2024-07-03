@@ -122,7 +122,8 @@ def test():
         "rdf_c": _r,
         "plike_r_c": _r,
         "r_c_stable": _r,
-        "r_w_assertive": _r
+        "r_w_assertive": _r,
+        "r_c_assertive": _r
     }
     
     cluster_addons = [
