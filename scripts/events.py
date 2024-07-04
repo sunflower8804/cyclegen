@@ -3126,9 +3126,6 @@ class Events:
         if cat.status in ["warrior", "medicine cat", "mediator", "queen"]:
             History.add_app_ceremony(cat, random_honor)
         
-        print("----------------------")
-        print(cat.name,":")
-        print(cat.status, "ceremonies:", possible_ceremonies)
         ceremony_tags, ceremony_text = self.CEREMONY_TXT[random.choice(list(possible_ceremonies))]
 
         # This is a bit strange, but it works. If there is
