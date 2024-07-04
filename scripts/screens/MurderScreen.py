@@ -63,6 +63,7 @@ class MurderScreen(Screens):
         self.current_mentor_text = None
         self.info = None
         self.heading = None
+        self.subtitle = None
         self.mentor = None
         self.the_cat = None
         self.murder_cat = None
@@ -385,9 +386,14 @@ class MurderScreen(Screens):
             self.list_frame = pygame.transform.scale(image_cache.load_image("resources/images/choosing_frame.png").convert_alpha(),
                                         (1300 / 1600 * screen_x, 452 / 1400 * screen_y))
             
-            self.heading = pygame_gui.elements.UITextBox("Choose your target",
+            self.heading = pygame_gui.elements.UITextBox("<b>Your target</b>",
                                                         scale(pygame.Rect((300, 50), (1000, 80))),
                                                         object_id=get_text_box_theme("#text_box_34_horizcenter"),
+                                                        manager=MANAGER)
+            
+            self.subtitle = pygame_gui.elements.UITextBox("Who will be your victim?",
+                                                        scale(pygame.Rect((300, 90), (1000, 80))),
+                                                        object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
             
             # Layout Images:
@@ -526,9 +532,13 @@ class MurderScreen(Screens):
 
             self.list_frame = None
 
-            self.heading = pygame_gui.elements.UITextBox("Choose your plan",
+            self.heading = pygame_gui.elements.UITextBox("<b>Your plan</b>",
                                                         scale(pygame.Rect((300, 50), (1000, 80))),
                                                         object_id=get_text_box_theme("#text_box_34_horizcenter"),
+                                                        manager=MANAGER)
+            self.subtitle = pygame_gui.elements.UITextBox("Choose wisely, or you could end up dead.",
+                                                        scale(pygame.Rect((300, 90), (1000, 80))),
+                                                        object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
            
             # Layout Images:
@@ -662,9 +672,13 @@ class MurderScreen(Screens):
                                         (1300 / 1600 * screen_x, 452 / 1400 * screen_y))
 
 
-            self.heading = pygame_gui.elements.UITextBox("Choose an accomplice",
+            self.heading = pygame_gui.elements.UITextBox("<b>Your accomplice</b>",
                                                         scale(pygame.Rect((300, 50), (1000, 80))),
                                                         object_id=get_text_box_theme("#text_box_34_horizcenter"),
+                                                        manager=MANAGER)
+            self.subtitle = pygame_gui.elements.UITextBox("Will you need help?",
+                                                        scale(pygame.Rect((300, 90), (1000, 80))),
+                                                        object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                         manager=MANAGER)
             
             # Layout Images:
@@ -758,6 +772,10 @@ class MurderScreen(Screens):
         if self.heading:
             self.heading.kill()
             del self.heading
+
+        if self.subtitle:
+            self.subtitle.kill()
+            del self.subtitle 
 
         if self.mentor_frame:
             self.mentor_frame.kill()
@@ -2379,7 +2397,7 @@ class MurderScreen(Screens):
                                                 scale(pygame.Rect((250, 770), (1100, 100))),
                                                 object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                 manager=MANAGER)
-            self.methodinfo = pygame_gui.elements.UITextBox("For those who aren't afraid to use their claws.",
+            self.methodinfo = pygame_gui.elements.UITextBox("A flashy choice for those who aren't afraid to use their claws.",
                                                 scale(pygame.Rect((250, 820), (1100, 300))),
                                                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                 manager=MANAGER)
@@ -2388,7 +2406,7 @@ class MurderScreen(Screens):
                                                 scale(pygame.Rect((250, 770), (1100, 100))),
                                                 object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                 manager=MANAGER)
-            self.methodinfo = pygame_gui.elements.UITextBox("Those familiar with medicine may want to consider using their skills for evil.",
+            self.methodinfo = pygame_gui.elements.UITextBox("A simple, discreet method, as long as you have the knowledge to pull it off.",
                                                 scale(pygame.Rect((250, 820), (1100, 300))),
                                                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                 manager=MANAGER)
@@ -2398,7 +2416,7 @@ class MurderScreen(Screens):
                                                 scale(pygame.Rect((250, 770), (1100, 100))),
                                                 object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                 manager=MANAGER)
-            self.methodinfo = pygame_gui.elements.UITextBox("A strategy for those who are great at feigning innocence.",
+            self.methodinfo = pygame_gui.elements.UITextBox("A rough strategy for those who are great at feigning innocence.",
                                                 scale(pygame.Rect((250, 820), (1100, 300))),
                                                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                 manager=MANAGER)
