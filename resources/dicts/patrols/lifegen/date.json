@@ -1015,7 +1015,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You and r_c go out in the Dark Forest, away from the spirits and trainees. r_c - who you've been practicing with and admiring - enthusiastically offers to teach you some of {PRONOUN/r_c/poss} forbidden moves. Should you practice with {PRONOUN/r_c/poss}?",
+        "intro_text": "You and r_c go out in the Dark Forest, away from the spirits and trainees. r_c - who you've been practicing with and admiring - enthusiastically offers to teach you some of {PRONOUN/r_c/poss} forbidden moves. Should you practice with {PRONOUN/r_c/object}?",
         "decline_text": "You feel as if this is a bit too risky. You nervously decline r_c's offer.",
         "chance_of_success": 50,
         "success_outcomes": [

@@ -455,7 +455,7 @@ class Events:
                 game.clan.focus = "starving"
             elif random.randint(1,30) == 1:
                 possible_focuses = ["valentines", "hailstorm"]
-                if not game.clan.leader.dead and not game.clan.leader.outside and game.clan.leader.ID != game.clan.your_cat.ID:
+                if game.clan.leader and not game.clan.leader.dead and not game.clan.leader.outside and game.clan.leader.ID != game.clan.your_cat.ID:
                     possible_focuses.append("leader")
                 focus_chosen = random.choice(possible_focuses)
                 if dialogue_focuses[focus_chosen]["season"] == "Any" or dialogue_focuses[focus_chosen]["season"] == game.clan.current_season:
@@ -848,7 +848,7 @@ class Events:
                 self.cat_dict["parent1"] = parent1
                 replacements["parent1"] = str(parent1.name)
             if parent2 and not parent2.dead:
-                self.cat_dict["parent2"] = parent1
+                self.cat_dict["parent2"] = parent2
                 replacements["parent2"] = str(parent2.name)
             if len(adoptive_parents) == 1:
                 self.cat_dict["parent1"] = Cat.all_cats.get(adoptive_parents[0])
