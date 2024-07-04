@@ -380,7 +380,7 @@ class Events:
                 if game.clan.your_cat.shunned == 0:
                     self.check_retire()
 
-            if random.randint(1,15) == 1:
+            if random.randint(1,15) == 1 and game.clan.your_cat.status != "newborn":
                 self.gain_acc()
 
         elif game.clan.your_cat.dead and game.clan.your_cat.dead_for == 0:
@@ -3126,8 +3126,10 @@ class Events:
         if cat.status in ["warrior", "medicine cat", "mediator", "queen"]:
             History.add_app_ceremony(cat, random_honor)
         
-        ceremony_tags, ceremony_text = self.CEREMONY_TXT[random.choice(
-            list(possible_ceremonies))]
+        print("----------------------")
+        print(cat.name,":")
+        print(cat.status, "ceremonies:", possible_ceremonies)
+        ceremony_tags, ceremony_text = self.CEREMONY_TXT[random.choice(list(possible_ceremonies))]
 
         # This is a bit strange, but it works. If there is
         # only one parent involved, but more than one living
@@ -3288,7 +3290,7 @@ class Events:
             
         if cat.status in [
             "apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"
-        ]:
+        ] and cat.shunned == 0:
 
             if cat.not_working() and int(random.random() * 3):
                 return
@@ -3979,7 +3981,6 @@ class Events:
             else:
                 fate = random.randint(1, int(game.config["shunned_cat"]["exile_chance"][cat.age]))
 
-            # these numbers are kind of crazy but i wanted to keep the one randint
             if fate != 1:
                 cat.shunned = 0
                 cat.forgiven = 1
@@ -4030,7 +4031,7 @@ class Events:
                         elif cat.moons >= 6:
                             if cat.status == "medicine cat apprentice":
                                 self.ceremony(cat, "medicine cat")
-                            elif cat.status == "mediator apprentice apprentice":
+                            elif cat.status == "mediator apprentice":
                                 self.ceremony(cat, "mediator apprentice")
                             elif cat.status == "queen's apprentice":
                                 self.ceremony(cat, "queen's apprentice")
@@ -4038,7 +4039,7 @@ class Events:
                                 self.ceremony(cat, "apprentice")
                             
                     elif cat.status in ["kitten", "newborn"] and cat.moons >= 6:
-                        self.ceremony(cat, "apprentice") 
+                        self.ceremony(cat, "medicine cat apprentice")
                         cat.name.status = cat.status
                     else:
                         if cat.moons == 0:
@@ -4050,7 +4051,7 @@ class Events:
                         elif cat.moons < 120:
                             cat.status_change('warrior')
                         else:
-                            cat.status_change('elder')   
+                            cat.status_change('elder')
                 
                 elif cat.status == 'leader':
                     if random.randint(1,4) == 1:
@@ -4064,7 +4065,7 @@ class Events:
                         if game.clan.leader:
                             game.clan.leader.status_change('deputy')
                         cat.status_change('leader')
-                        cat.name.status = cat.status
+                        # cat.name.status = cat.status
                     else:
                         if cat.ID == game.clan.your_cat.ID:
                             text = text + " You will not return as the Clan's leader."

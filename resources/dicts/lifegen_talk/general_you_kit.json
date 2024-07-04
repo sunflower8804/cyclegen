@@ -5186,5 +5186,108 @@
             "Wow, that's so cool! I thought I was the only one.",
             "Should we go say hello?"
         ]
+    ],
+    "df_shunnedkit_J1": [
+        [
+            "they_df",
+            "you_shunned",
+            "they_older",
+            "you_kitten"
+        ],
+        [
+            "You're a bit crazy, y_c. Not a lot of kits would go for a kill like that.",
+            "No, no, it's a good thing."
+        ]
+    ],
+    "df_shunnedkit_J2": [
+        [
+            "they_df",
+            "you_shunned",
+            "they_older",
+            "they_any",
+            "you_kitten"
+        ],
+        [
+            "I don't know if you should be talking to us so often.",
+            "You've made a mistake. You're young. There's time for you to get better.",
+            "This isn't a fun place to be, y_c."
+        ]
+    ],
+    "df_shunnedkit_J3": [
+        [
+            "they_df",
+            "you_shunned",
+            "they_kitten"
+        ],
+        [
+           "That was really cool.",
+           "That cat you killed, I mean! Can you show me how you did it?" 
+        ]
+    ],
+    "df_shunnedkit_J4": [
+        [
+            "they_df",
+            "you_shunned",
+            "they_kitten"
+        ],
+        [
+            "You're super cool for being able to talk to us. Is it because of the cat you killed? Do you have to be bad to see us?"
+        ]
+    ],
+    "youdeaf_newborn_J1": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind",
+            "you_newborn",
+            "they_any"
+        ],
+        [
+            "[t_c purrs when you waddle up to {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "youdeaf_newborn_J2": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind",
+            "you_newborn",
+            "they_any",
+            "they_grieving"
+        ],
+        [
+            "[t_c doesn't react when you poke {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "youdeaf_newborn_J3": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind",
+            "you_newborn",
+            "they_any",
+            "they_grieving",
+            "they_shunned"
+        ],
+        [
+            "[When you walk up to {PRONOUN/t_c/object}, t_c gently pushes you away with one paw.]"
+        ]
+    ],
+    "youdeaf_newborn_J4": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind",
+            "you_newborn",
+            "they_any",
+            "they_shunned"
+        ],
+        [
+            "[When you walk up to {PRONOUN/t_c/object}, t_c gently pushes you away with one paw.]"
+        ]
     ]
 }

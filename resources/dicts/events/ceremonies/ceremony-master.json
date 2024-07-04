@@ -3244,5 +3244,35 @@
       "forgiven"
     ],
     "Since {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been forgiven, under close supervision, m_c will be allowed to train to be a queen."
+  ],
+  "forgiven_app6": [
+    [
+      "apprentice",
+      "no_mentor",
+      "queen's apprentice",
+      "mediator apprentice",
+      "medicine cat apprentice",
+      "general_parents",
+      "general_leader",
+      "general_backstory",
+      "all_traits",
+      "forgiven"
+    ],
+    "m_c is glad to finally begin training after being forgiven by the Clan."
+  ],
+  "forgiven_app7": [
+    [
+      "apprentice",
+      "yes_mentor",
+      "queen's apprentice",
+      "mediator apprentice",
+      "medicine cat apprentice",
+      "general_parents",
+      "general_leader",
+      "general_backstory",
+      "all_traits",
+      "forgiven"
+    ],
+    "m_c is glad to finally begin training after being forgiven by the Clan."
   ]
 }

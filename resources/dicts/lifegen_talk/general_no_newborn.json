@@ -3064,5 +3064,17 @@
             "[t_C points up to their ear, then to you, as they continue laughing. There must be something funny about how your voice sounds!]",
             "[You continue humming with a smile as t_c continues to listen, thoroughly entertained.]"
         ]
+    ],
+    "df_shunned_J1": [
+        [
+            "they_df",
+            "you_shunned",
+            "they_kitten"
+        ],
+        [
+           "Are you gonna stay here forever?",
+           "Wh... what do you mean no? Your Clan threw you out, didn't they?",
+           "Don't leave me!"
+        ]
     ]
 }
