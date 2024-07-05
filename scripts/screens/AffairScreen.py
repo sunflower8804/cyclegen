@@ -53,6 +53,9 @@ class AffairScreen(Screens):
                 if not self.selected_cat.dead:
                     self.update_selected_cat()
                     self.change_cat(self.selected_cat)
+                    
+                    # resetting selected cat so theyre not still in the box when reentering the affair screen next moon
+                    self.selected_cat = None
             elif event.ui_element == self.back_button:
                 self.change_screen('events screen')
             elif event.ui_element == self.next_cat_button:
@@ -256,23 +259,25 @@ class AffairScreen(Screens):
             elif Cat.fetch_cat(i).relationships.get(game.clan.your_cat.ID).trust < 10:
                 chance +=5
         if affair_cat.relationships.get(game.clan.your_cat.ID).dislike > 10:
-                chance += 10
+            chance += 10
         if affair_cat.relationships.get(game.clan.your_cat.ID).romantic_love > 20:
-                chance -= 10
+            chance -= 10
         elif affair_cat.relationships.get(game.clan.your_cat.ID).romantic_love < 10:
-                chance += 10
+            chance += 10
         if affair_cat.relationships.get(game.clan.your_cat.ID).comfortable > 20:
-                chance -= 10
+            chance -= 10
         elif affair_cat.relationships.get(game.clan.your_cat.ID).comfortable < 10:
-                chance += 10
+            chance += 10
         if affair_cat.relationships.get(game.clan.your_cat.ID).trust > 20:
-                chance -= 10
+            chance -= 10
         elif affair_cat.relationships.get(game.clan.your_cat.ID).trust < 10:
-                chance += 10
+            chance += 10
         if affair_cat.relationships.get(game.clan.your_cat.ID).admiration > 20:
-                chance -= 10
+            chance -= 10
         elif affair_cat.relationships.get(game.clan.your_cat.ID).admiration < 10:
-                chance += 10
+            chance += 10
+        if chance < 0:
+            chance = 0
         if randint(0, chance + randint(-10,10)) == 0:
             return True
         return False
