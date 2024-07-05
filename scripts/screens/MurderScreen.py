@@ -1342,7 +1342,7 @@ class MurderScreen(Screens):
         else: 
             risk = ""
 
-        if all_leader_lives and cat_to_murder.status == "leader":
+        if (all_leader_lives and cat_to_murder.status == "leader") or (not all_leader_lives and cat_to_murder.status == "leader" and game.clan.leader_lives == 1):
             lives = " all_lives"
         else:
             lives = ""
@@ -1353,6 +1353,8 @@ class MurderScreen(Screens):
             accomp = " accomplice_agreed"
         elif accomplice:
             accomp = " accomplice_refused"
+        elif not accomplice and not accompliced:
+            accomp = " alone"
         else:
             accomp = ""
 
@@ -1578,11 +1580,13 @@ class MurderScreen(Screens):
 
         replace_dict = {
             "v_c": (str(self.cat_to_murder.name), choice(self.cat_to_murder.pronouns)),
-            "a_n": (str(accomplice.name), choice(accomplice.pronouns)),
             "l_n": (str(game.clan.leader.name), choice(game.clan.leader.pronouns)),
             "y_c": (str(game.clan.your_cat.name), choice(game.clan.your_cat.pronouns)),
             "r_m": (str(random_medcat.name), random_medcat_prns)
         }
+
+        if accomplice:
+            replace_dict.update({"a_n": (str(accomplice.name), choice(accomplice.pronouns))})
 
         ceremony_txt = process_text(ceremony_txt, replace_dict)
 
@@ -1710,7 +1714,6 @@ class MurderScreen(Screens):
                 else:
                     txt = choice(self.mu_txt["murder_discovered general"])
             txt = txt.replace('v_c', str(cat_to_murder.name))
-            txt = txt.replace('a_n', str(accomplice.name))
             game.cur_events_list.insert(2, Single_Event(txt))
             you.shunned = 1
             you.faith -= 0.5
@@ -1720,14 +1723,12 @@ class MurderScreen(Screens):
             else:
                 txt = f"{accomplice.name} is blamed for the murder of v_c. However, you were not caught."
             txt = txt.replace('v_c', str(cat_to_murder.name))
-            txt = txt.replace('a_n', str(accomplice.name))
             game.cur_events_list.insert(2, Single_Event(txt))
             accomplice.shunned = 1
             accomplice.faith -= 0.5
         else:
             txt = f"The unsettling truth of v_c's death is discovered, with you and {accomplice.name} responsible. The Clan decides both of your punishments."
             txt = txt.replace('v_c', str(cat_to_murder.name))
-            txt = txt.replace('a_n', str(accomplice.name))
             game.cur_events_list.insert(2, Single_Event(txt))
             you.shunned = 1
             accomplice.shunned = 1
