@@ -11,7 +11,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 4,
         "min_max_status": {},
@@ -46,7 +46,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 4,
         "min_max_status": {},
@@ -81,7 +81,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 4,
         "min_max_status": {},
@@ -116,7 +116,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 4,
         "min_max_status": {},
@@ -151,7 +151,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 4,
         "min_max_status": {},
@@ -186,7 +186,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -221,7 +221,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -256,7 +256,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -291,7 +291,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -326,7 +326,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -361,7 +361,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -396,7 +396,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -431,7 +431,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -468,7 +468,7 @@
         "tags": [
             "shunned"
         ],
-        "patrol_art": "lg_deputy_default",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -486,6 +486,43 @@
         "fail_outcomes": [
             {
                 "text": "You start to voice your opinion, but the deputy hits you with a disgusted glare that stops you in your tracks. It seems any scrap of authority you had left has been lost.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "lg_deputy_shunned_J2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "DefaultDeputy",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "A couple of warriors approach you one morning and ask if you'd like to patrol with them. They say they need some extra paws. Your leader sits several fox lengths away, ears swivelled towards you. Is this some sort of test?",
+        "decline_text": "You can't risk it; you tell the warriors to find someone else.",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "Excited for a chance to redeem yourself, you agree, and you recieve no objections from your leader as you pass to leave camp. You catch a good amount of prey with your Clanmates and feel pride for the first time in a while as you drop it on the fresh-kill pile.",
+                "exp": 20,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You instantly stand up and agree, excited at the chance to redeem yourself, but when your leader hears this, they turn their head to glare at the two warriors. Your Clanmates sheepishly apologise for asking, and turn to join their leader, who looks ready to give them a scolding for ignoring your shun.",
                 "exp": 0,
                 "weight": 20
             }

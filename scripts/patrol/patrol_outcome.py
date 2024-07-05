@@ -190,11 +190,13 @@ class PatrolOutcome():
         format: (Outcome text, results text, outcome art (might be None))
         """        
         results = []
+        # This must be done before text processing so that the new cat's pronouns are generated first
+        results.append(self._handle_new_cats(patrol))
+
         # the text has to be processed before - otherwise leader might be referenced with their warrior name
         processed_text = patrol.process_text(self.text, self.stat_cat)
         
         # This order is important. 
-        results.append(self._handle_new_cats(patrol))
         results.append(self._handle_accessories(patrol))
         results.append(self._handle_death(patrol))
         results.append(self._handle_lost(patrol))
@@ -1026,8 +1028,13 @@ class PatrolOutcome():
             
             for cat in patrol.new_cats[-1]:
                 if cat.dead:
-                    if cat.dead_for > 10:
-                        results.append(f"You have met {cat.name}.")
+                    if not cat.outside:
+                        if cat.ID in game.clan.your_cat.mate:
+                            cat.thought = f"Is missing {game.clan.your_cat.name}"
+                            # theres probably a better place to do this LOL but it worked here........
+                            results.append(f"You have spoken with {cat.name}.")
+                        else:
+                            results.append(f"You have met {cat.name}.")
                     else:
                         results.append(f"{cat.name}'s ghost now wanders.")
                 elif cat.outside:
@@ -1165,9 +1172,10 @@ class PatrolOutcome():
                 break
             
             # Set same as first mate.
-            if match.group(1) == "mate" and give_mates:
+            if match.group(1) in ["mate", "mate_with_kits"] and give_mates:
                 age = randint(Cat.age_moons[give_mates[0].age][0], 
                               Cat.age_moons[give_mates[0].age][1])
+
                 break
                 
             if match.group(1) == "has_kits":
@@ -1179,8 +1187,24 @@ class PatrolOutcome():
             
         if "newdfcat" in attribute_list:
         # gives a random status if none was specified in the patrol. kitten cannot be chosen randomly
-            if status is None:
-                status = choice(["elder", "elder", "elder", "elder", "elder", "apprentice", "warrior", "warrior", "warrior", "warrior", "warrior", "warrior", "mediator apprentice", "mediator", "mediator", "medicine cat apprentice", "medicine cat", "medicine cat", "medicine cat", "medicine cat", "queen's apprentice", "queen", "queen", "queen", "queen","leader"])
+            if status is None and age is None:
+                mean = (3 + 145) / 2 
+                stddev = (145 - 3) / 6 
+                age = int(random.gauss(mean, stddev))
+                age = max(3, min(145, age))
+            
+            if age:
+
+                if age < 1:
+                    status = "newborn"
+                elif age < 6:
+                    status = "kitten"
+                elif age < 13:
+                    status = choice(["apprentice", "apprentice", "apprentice", "mediator apprentice", "medicine cat apprentice", "queen's apprentice"])
+                elif age < 119:
+                    status = choice(["warrior", "warrior", "medicine cat", "mediator", "queen", "warrior", "warrior", "medicine cat", "medicine cat", "mediator", "deputy", "leader"])
+                else:
+                    status = choice(["elder", "elder", "elder", "elder", "elder", "elder", "elder", "elder", "leader", "deputy"])
 
         if "newstarcat" in attribute_list:
         # gives a random status if none was specified in the patrol. kitten cannot be chosen randomly
@@ -1222,6 +1246,15 @@ class PatrolOutcome():
             litter = True
             if status not in ("kitten", "newborn"):
                 status = "kitten"
+        elif "your_litter" in attribute_list:
+            litter = True
+            if status not in ("kitten", "newborn"):
+                status = "kitten"
+
+            if parent1 is not None:
+                parent2 = game.clan.your_cat
+            else:
+                parent1 = game.clan.your_cat
         
         # CHOOSE DEFAULT BACKSTORY BASED ON CAT TYPE, STATUS.
       

@@ -6,7 +6,8 @@
             "assertive",
             "stable",
             "non-mates",
-            "platonic_like"
+            "platonic_like",
+            "you_blind"
         ],
         [
             "Er, sorry, y_c ... But I don't see you that way."
@@ -16,7 +17,9 @@
         [
             "Any",
             "reject",
-            "platonic_love"
+            "platonic_love",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Uh, you meant that in, like, a 'best friends' way ... right?"
@@ -26,7 +29,9 @@
         [
             "Any",
             "reject",
-            "platonic_love"
+            "platonic_love",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ehh ... Good one, bestie! Heh ..."
@@ -48,7 +53,9 @@
             "Any",
             "silly",
             "sweet",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh wow, that was funny!",
@@ -59,7 +66,9 @@
         [
             "Any",
             "reject",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, honey ...",
@@ -73,7 +82,9 @@
             "reject",
             "neurotic",
             "sweet",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Sorry, I... already like someone else?"
@@ -83,7 +94,9 @@
         [
             "Any",
             "reject",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Huh? Oh, um... thank you? *Snrk*"
@@ -94,7 +107,9 @@
             "Any",
             "reject",
             "sweet",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "That's... nice of you to say."
@@ -105,7 +120,10 @@
             "Any",
             "reject",
             "sweet",
-            "silly"
+            "silly",
+            "they_hearing",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Haha! That's the funniest joke I've heard all season!"
@@ -116,7 +134,9 @@
             "Any",
             "reject",
             "brooding",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "...That's a joke, right?"
@@ -129,7 +149,9 @@
             "assertive",
             "brooding",
             "unabashed",
-            "unlawful"
+            "unlawful",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You've got to be joking."
@@ -139,7 +161,9 @@
         [
             "Any",
             "reject",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Eh, hehehe ... Might wanna rethink that one a little y_c."
@@ -149,7 +173,9 @@
         [
             "Any",
             "reject",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Whatever."
@@ -161,7 +187,9 @@
             "reject",
             "brooding",
             "unabashed",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... Is that the best you could do?"
@@ -171,7 +199,9 @@
         [
             "Any",
             "reject",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Stop that, it's not getting you anywhere."
@@ -181,7 +211,9 @@
         [
             "Any",
             "reject",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "What is it going to take in order for you to leave me alone?"
@@ -192,10 +224,13 @@
             "Any",
             "reject",
             "unabashed",
-            "silly"
+            "silly",
+            "they_hearing",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "Congratulaions, y_c!",
+            "Congratulations, y_c!",
             "That might just be the worst attempt at flirting I've heard in moons!"
         ]
     ],
@@ -204,7 +239,9 @@
             "Any",
             "reject",
             "cool",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... Okay?"
@@ -217,7 +254,9 @@
             "unabashed",
             "upstanding",
             "cool",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... Ew."
@@ -230,7 +269,9 @@
             "unabashed",
             "upstanding",
             "silly",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ew. No."
@@ -244,7 +285,9 @@
             "unabashed",
             "cool",
             "upstanding",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Not a chance in StarClan."
@@ -254,7 +297,9 @@
         [
             "medicine cat",
             "medicine cat apprentice",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I think StarClan gave me an omen warning me about this."
@@ -266,7 +311,9 @@
             "reject",
             "assertive",
             "upstanding",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You are <i>so</i> not my type."
@@ -277,7 +324,9 @@
             "Any",
             "reject",
             "stable",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... y_c, was that supposed to be an insult, or an attempt at flirting?",
@@ -291,7 +340,9 @@
             "silly",
             "upstanding",
             "unabashed",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um... No. You're not even on my playing field."
@@ -303,7 +354,9 @@
             "reject",
             "upstanding",
             "unabashed",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ew. I'm too good for you..."
@@ -314,7 +367,9 @@
             "Any",
             "reject",
             "upstanding",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Sorry, but I just don't see how this factors into my 20-moon plan."
@@ -327,7 +382,9 @@
             "sweet",
             "stable",
             "introspective",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... What are you trying to do?"
@@ -339,7 +396,9 @@
             "reject",
             "silly",
             "assertive",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I think I'd rather take my chances with a Dark Forest cat."
@@ -349,7 +408,9 @@
         [
             "Any",
             "platonic_like",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hehe! That was so funny, y_c!",
@@ -360,7 +421,9 @@
         [
             "Any",
             "reject",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... Are you trying to start a fight?"
@@ -370,7 +433,9 @@
         [
             "Any",
             "reject",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um, was that sarcasm?"
@@ -382,7 +447,9 @@
             "reject",
             "introspective",
             "sweet",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "...No. I'm sorry but just... no."
@@ -396,7 +463,9 @@
             "sweet",
             "introspective",
             "stable",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Uh- me? Sorry, you aren't exactly my type..."
@@ -409,7 +478,9 @@
             "sweet",
             "introspective",
             "neurotic",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um... no."
@@ -421,7 +492,9 @@
             "reject",
             "brooding",
             "non-mates",
-            "dislike"
+            "dislike",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Don't talk to me."
@@ -433,7 +506,9 @@
             "reject",
             "sweet",
             "stable",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Just...no."
@@ -446,7 +521,9 @@
             "sweet",
             "stable",
             "introspective",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Uhm, I'd rather... not."
@@ -456,7 +533,9 @@
         [
             "Any",
             "reject",
-            "neutral"
+            "neutral",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Do I know you?"
@@ -466,7 +545,9 @@
         [
             "Any",
             "reject",
-            "neutral"
+            "neutral",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Uh, what's your name again?"
@@ -476,7 +557,9 @@
         [
             "Any",
             "reject",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ahahahahahaha! That was too good!",
@@ -487,7 +570,9 @@
         [
             "warrior",
             "reject",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, uh I'm sorry, but I think I have to go..."
@@ -498,7 +583,9 @@
             "Any",
             "reject",
             "brooding",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "...",
@@ -511,7 +598,9 @@
         [
             "Any",
             "reject",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um, what made you think I'd ever say yes?"
@@ -522,7 +611,9 @@
             "Any",
             "reject",
             "unabashed",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "*Snrk* Did a badger teach you how to flirt?"
@@ -532,7 +623,9 @@
         [
             "Any",
             "reject",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Stop."
@@ -542,7 +635,9 @@
         [
             "Any",
             "reject",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You're... you're kidding, right?"
@@ -554,7 +649,9 @@
             "reject",
             "unabashed",
             "upstanding",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You're delusional if you think you're good enough for me."
@@ -564,7 +661,9 @@
         [
             "Any",
             "reject",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh! Um, I'm gonna go..."
@@ -573,7 +672,9 @@
     "d8f5xs2": [
         [
             "Any",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Sorry, I... just remembered something I have to do. Bye."
@@ -585,7 +686,9 @@
             "reject",
             "neurotic",
             "assertive",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... What's that supposed to mean?"
@@ -596,7 +699,8 @@
             "Any",
             "reject",
             "platonic_love",
-            "non-mates"
+            "non-mates",
+            "you_blind"
         ],
         [
             "Sorry, but I just see us as friends."
@@ -607,7 +711,9 @@
             "Any",
             "reject",
             "cool",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh dear. Let me teach you how to flirt."
@@ -620,7 +726,9 @@
             "stable",
             "upstanding",
             "unabashed",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Uh... sorry, but that was... horrible."
@@ -631,7 +739,8 @@
             "Any",
             "reject",
             "sweet",
-            "introspective"
+            "introspective",
+            "you_blind"
         ],
         [
             "... You've got a little something on your face..."
@@ -641,7 +750,9 @@
         [
             "Any",
             "reject",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ugh... I'm not that shallow."
@@ -653,7 +764,9 @@
             "reject",
             "silly",
             "unabashed",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Frankly, I'd rather eat all our Clan's dirt left in the dirtplace."
@@ -664,7 +777,9 @@
             "Any",
             "reject",
             "brooding",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hmph. Not interested."
@@ -674,7 +789,9 @@
         [
             "Any",
             "reject",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um ... oof, this is awkward.",
@@ -685,7 +802,9 @@
         [
             "Any",
             "reject",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Aww, isn't that cute?",
@@ -700,7 +819,9 @@
             "upstanding",
             "unabashed",
             "assertive",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Okay, I'm gonna stop you right there. I can see what you're doing and I'll save you the embarrassment in two simple words:",
@@ -711,11 +832,13 @@
         [
             "Any",
             "reject",
-            "has_mate"
+            "has_mate",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Uh ... hehe! How sweet of you.",
-            "I'll be sure to tell that one to my mate later. They'll definitely love it.",
+            "I'll be sure to tell that one to my mate later. {PRONOUN/t_m/subject/CAP}'ll definitely love it.",
             "Ahem, and just to repeat it one more time ... my mate. Who I am in a very committed relationship with."
         ]
     ],
@@ -724,7 +847,9 @@
             "Any",
             "reject",
             "cool",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hehe. Thanks, cutie. But I just don't like you like that.",
@@ -736,7 +861,9 @@
             "Any",
             "reject",
             "cool",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, dear ... Um, why don't you just stick to admiring me from afar?"
@@ -751,7 +878,9 @@
             "unabashed",
             "silly",
             "unlawful",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hahaha! That one got me laughing!",
@@ -764,7 +893,10 @@
             "Any",
             "reject",
             "brooding",
-            "stable"
+            "stable",
+            "they_hearing",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... For your own sake, I better have misheard you."
@@ -777,7 +909,9 @@
             "sweet",
             "stable",
             "non-mates",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Aw, bestie! That's sweet, but no. My heart belongs to another."
@@ -788,7 +922,9 @@
             "Any",
             "reject",
             "brooding",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... You don't wanna be with a cat like me. Trust me."
@@ -799,7 +935,9 @@
             "Any",
             "reject",
             "unabashed",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Woah... Your breath stinks..."
@@ -811,7 +949,9 @@
             "reject",
             "introspective",
             "sweet",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Eh ... Have you washed today..?"
@@ -823,7 +963,9 @@
             "reject",
             "silly",
             "assertive",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm sorry, y_c... We just ain't got that chemistry, you feel me?"
@@ -838,7 +980,9 @@
             "stable",
             "upstanding",
             "assertive",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ha! Very funny y_c!",
@@ -848,7 +992,9 @@
     "d4f2xs46453": [
         [
             "Any",
-            "from_mate"
+            "from_mate",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[t_c purrs and presses into your pelt.]",
@@ -858,7 +1004,9 @@
     "d4f2xs4919191": [
         [
             "Any",
-            "from_mate"
+            "from_mate",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh ... That one took me back to our courtship days. ~"
@@ -867,7 +1015,9 @@
     "crush": [
         [
             "Any",
-            "mate"
+            "from_mate",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ha, I remember when you first tried that line out on me.",
@@ -882,7 +1032,9 @@
             "assertive",
             "brooding",
             "unabashed",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "If I act like I'm interested will it get you to stop?"
@@ -891,7 +1043,9 @@
     "f6d8xs6": [
         [
             "Any",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "W-whatever..."
@@ -903,7 +1057,9 @@
             "cool",
             "from_mate",
             "stable",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "As much as I like you, we have got to work on your flirting ability, dear."
@@ -925,7 +1081,8 @@
         [
             "Any",
             "neurotic",
-            "non-mates"
+            "non-mates",
+            "they_blind"
         ],
         [
             "Ha ha. Very funny. No way a cat like you would ever flirt with me.",
@@ -938,7 +1095,8 @@
         [
             "Any",
             "neurotic",
-            "non-mates"
+            "non-mates",
+            "they_blind"
         ],
         [
             "Eep!",
@@ -950,7 +1108,9 @@
         [
             "Any",
             "sweet",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Y- You really think so? Ah- thank you so much!"
@@ -969,7 +1129,9 @@
             "cool",
             "silly",
             "unlawful",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Were you always this charming?",
@@ -985,7 +1147,8 @@
             "cool",
             "sweet",
             "introspective",
-            "assertive"
+            "assertive",
+            "you_blind"
         ],
         [
             "Your pelt looks lovely in this lighting!"
@@ -996,7 +1159,9 @@
             "Any",
             "sweet",
             "stable",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Aw, that's so nice of you!"
@@ -1019,30 +1184,298 @@
         [
             "Any",
             "cool",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, you're so cute sometimes! Do tell me more, hehe."
         ]
     ],
+	"brooding_flirt_AJ": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "No."
+        ]
+    ],
+
+	"brooding_flirt_AJ1": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "...",
+	    "...*Blush*"
+        ]
+    ],
+
+	"brooding_flirt_AJ2": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "... You're very sweet. To say that."
+        ]
+    ],
+
+	"brooding_flirt_AJ3": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "Uhm. Why?"
+        ]
+    ],
+
+	"brooding_flirt_AJ4": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "[t_c buries their face in their paws shyly.]"
+        ]
+    ],
+
+	"brooding_flirt_AJ5": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "[t_c starts to purr.]"
+        ]
+    ],
+
+	"brooding_flirt_AJ6": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "Do you think I'm so shallow ...?"
+        ]
+    ],
+
+	"brooding_flirt_AJ7": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "[t_c narrows their eyes suspiciously.]",
+	    "What's your angle?"
+        ]
+    ],
+
+	"brooding_flirt_AJ8": [
+        [
+            "Any",
+            "brooding",
+	    "reject",
+	    "non-mates",
+	    "neutral"
+        ],
+        [
+            "Uhm ... Have you considered seeing r_d?",
+	    "If you're seriously interested in me, you probably have some issues to work through."
+        ]
+    ],
+
+	"brooding_flirt_AJ9": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "[t_c allows the faintest hint of a smile to crack over {PRONOUN/t_c/poss} face.]",
+	    "... Thank you."
+        ]
+    ],
+
+
     "cool_flirt": [
         [
             "Any",
             "cool",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Never took you for such a smooth talker, y_c. It's a little unnerving.",
             "... But, I don't exactly hate it, either. ~"
         ]
     ],
+
+    "cool_flirt_AJ": [
+        [
+            "Any",
+            "cool",
+        	"reject",
+        	"random_cat",
+        	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "Echh. Someone get r_m. That was so sincere, I think it's causing an allergic reaction."
+        ]
+    ],
+
+    "cool_flirt_AJ1": [
+        [
+            "Any",
+            "cool",
+	        "reject",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Cute. Can I go now?"
+        ]
+    ],
+
+    "cool_flirt_AJ2": [
+        [
+            "Any",
+            "cool",
+        	"reject",
+	        "random_cat",
+	        "they_blind",
+	        "you_blind"
+        ],
+        [
+            "Hey, r_q? Remind me how you teach the kits to spell 'Out of your league'?"
+        ]
+    ],
+
+    "cool_flirt_AJ3": [
+        [
+            "Any",
+            "cool",
+          	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "Y'know, if I didn't know any better, I'd say you were flirting with me, y_c.~",
+	        "Well, why'd you stop? I never said I didn't like it!"
+        ]
+    ],
+
+    "cool_flirt_AJ4": [
+        [
+            "Any",
+            "cool",
+        	"brooding",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "That was. So lame. Ha.",
+	    "[t_c looks away, blushing.]"
+        ]
+    ],
+
+"cool_flirt_AJ5": [
+        [
+            "Any",
+            "cool",
+        	"platonic_like",
+        	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "Huh. Y'know, that really wasn't half bad.",
+    	    "Who taught you that line? Was it me?"
+        ]
+    ],
+
+    "cool_flirt_AJ6": [
+        [
+            "Any",
+            "cool",
+	        "reject",
+	        "you_blind",
+	        "they_blind",
+            "min_platonic_30"
+        ],
+        [
+            "Hey, didn't I teach you that line?"
+        ]
+    ],
+
+    "cool_flirt_AJ7": [
+        [
+            "Any",
+            "cool",
+        	"assertive",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Testy. I like it."
+        ]
+    ],
+
+"cool_flirt_AJ8": [
+        [
+            "Any",
+            "cool",
+	        "from_mate",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Feeling's mutual, babe!~"
+        ]
+    ],
+
+    "cool_flirt_AJ9": [
+        [
+            "Any",
+            "cool",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Heh. Always loved that line."
+        ]
+    ],
+
+    "cool_flirt_AJ10": [
+        [
+            "Any",
+            "cool",
+        	"they_blind",
+        	"you_blind"
+        ],
+        [
+            "Uhm - What is this feeling?",
+        	"I'm actually getting ... nervous?",
+	        "Is this how regular cats feel all the time?"
+        ]
+    ],
+
+
     "h5d6xs9": [
         [
             "Any",
             "sweet",
             "stable",
             "upstanding",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Y-You deserve compliments much more than I do!"
@@ -1052,7 +1485,9 @@
         [
             "Any",
             "silly",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Awee, me? No way, you deserve all these compliments!"
@@ -1061,7 +1496,9 @@
     "j7g6xs1": [
         [
             "Any",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Heh... Thanks..."
@@ -1071,7 +1508,9 @@
         [
             "Any",
             "sweet",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Aw, thank you! That's so sweet of you!"
@@ -1093,7 +1532,9 @@
     "j8g7xs4": [
         [
             "Any",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Is that so? Well, go on. Tell me more about how wonderful I am."
@@ -1115,7 +1556,9 @@
     "f8d9xs6": [
         [
             "Any",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "hGK- Oh my goodness-",
@@ -1127,7 +1570,9 @@
             "Any",
             "sweet",
             "stable",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "AWW!! That's so sweet of you!! You really think of me that way?"
@@ -1148,7 +1593,9 @@
             "Any",
             "silly",
             "unabashed",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Finally! Someone who noticed."
@@ -1169,7 +1616,9 @@
             "Any",
             "unlawful",
             "unabashed",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Obviously."
@@ -1190,7 +1639,9 @@
         [
             "Any",
             "neurotic",
-            "non-mates"
+            "non-mates",
+            "they_blind",
+            "you_blind"
         ],
         [
             "R-Really... me? ...",
@@ -1203,7 +1654,9 @@
             "reject",
             "assertive",
             "cool",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "..That was an awful attempt at flirting, but you are cute, so I'll let it slide."
@@ -1212,7 +1665,10 @@
     "f1d2gf5": [
         [
             "Any",
-            "brooding"
+            "brooding",
+            "they_hearing",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... Thanks. I needed to hear that."
@@ -1221,7 +1677,9 @@
     "j3g4df9": [
         [
             "from_mate",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ah- I love you so much."
@@ -1233,7 +1691,9 @@
             "cool",
             "silly",
             "assertive",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "...Hahaha! At least you're funny."
@@ -1244,7 +1704,9 @@
             "reject",
             "upstanding",
             "stable",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Sorry, I just don't have time for something like this right now."
@@ -1264,7 +1726,8 @@
         [
             "Any",
             "silly",
-            "unabashed"
+            "unabashed",
+            "you_blind"
         ],
         [
             "Hehe! You've got something on your face.. Here I'll get it!"
@@ -1285,12 +1748,14 @@
     "f6d7gf4": [
         [
             "Any",
-            "mate",
+            "from_mate",
             "assertive",
             "sweet",
             "silly",
             "stable",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Aw! I love you, too!"
@@ -1299,7 +1764,9 @@
     "j7g6xs5": [
         [
             "from_mate",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You're still just as good at flirting as when we first got together, you know?"
@@ -1311,7 +1778,10 @@
             "Any",
             "assertive",
             "introspective",
-            "neurotic"
+            "neurotic",
+            "they_hearing",
+            "they_blind",
+            "you_blind"
         ],
         [
             "What's your secret? You always know what I need to hear before I do."
@@ -1321,7 +1791,9 @@
         [
             "Any",
             "introspective",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Do you have some sort of secret StarClan cat in your dreams telling you how to woo me?",
@@ -1332,7 +1804,9 @@
         [
             "Any",
             "sweet",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Awww!! Thank you!"
@@ -1341,7 +1815,9 @@
     "f8d9xs0": [
         [
             "Any",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Wait! Let me try one!",
@@ -1369,7 +1845,9 @@
             "Any",
             "stable",
             "introspective",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "If StarClan came for me tomorrow, I would be ready to go, knowing that I got to spend time with a cat as wonderful as you."
@@ -1382,7 +1860,9 @@
             "stable",
             "introspective",
             "sweet",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You know, I never knew that I'd end up with a cat like you... but now that I'm here, I wouldn't have it any other way."
@@ -1393,7 +1873,9 @@
             "Any",
             "stable",
             "introspective",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "O-Oh! Wow, you're wonderful, you know that, right?"
@@ -1406,7 +1888,9 @@
             "silly",
             "cool",
             "unabashed",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I must have sand in my ears... What was that again?"
@@ -1416,7 +1900,9 @@
         [
             "forest",
             "Any",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Mmm! You smell wonderful, like the forest just after rain!"
@@ -1437,7 +1923,9 @@
             "Any",
             "introspective",
             "silly",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Uh- you smell good too! Like- catmint and lavender!"
@@ -1457,7 +1945,9 @@
         [
             "reject",
             "cool",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, didn't I teach you that line?"
@@ -1468,7 +1958,9 @@
             "Any",
             "neurotic",
             "sweet",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "What- uh, thanks! That's really nice of you."
@@ -1480,7 +1972,9 @@
             "brooding",
             "unlawful",
             "upstanding",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "...",
@@ -1535,7 +2029,9 @@
     "j7g4df5": [
         [
             "Any",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Your compliments are like a ray of sunshine in my bleak world."
@@ -1569,7 +2065,8 @@
         [
             "Any",
             "silly",
-            "neurotic"
+            "neurotic",
+            "you_blind"
         ],
         [
             "Arrggh, stop making me feel weird! It feels like there's butterflies in my belly whenever I see you as is!"
@@ -1581,7 +2078,9 @@
             "from_mate",
             "cool",
             "stable",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I knew it. I've got the best mate EVER!"
@@ -1594,7 +2093,9 @@
             "stable",
             "cool",
             "assertive",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Thanks, honey. That was really cute even though it was kind of lame..."
@@ -1607,7 +2108,9 @@
             "silly",
             "sweet",
             "cool",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Don't worry! You'll get better one day."
@@ -1617,7 +2120,9 @@
         [
             "Any",
             "from_mate",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Thank you! I really appreciate it...",
@@ -1633,7 +2138,9 @@
             "cool",
             "silly",
             "unlawful",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You really suck at that, you know? Hah."
@@ -1644,7 +2151,9 @@
             "Any",
             "from_mate",
             "brooding",
-            "unlawful"
+            "unlawful",
+            "they_blind",
+            "you_blind"
         ],
         [
             "... Oh, stop it. ~"
@@ -1653,7 +2162,9 @@
     "j9g8ddf1": [
         [
             "Any",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "About that, I'm sorry for being so..",
@@ -1666,7 +2177,9 @@
             "Any",
             "heartbroken",
             "introspective",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "It's kind of you to say that, but my heart is elsewhere."
@@ -1679,7 +2192,9 @@
             "assertive",
             "upstanding",
             "introspective",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I appreciate the gesture, but I'm not ready for this."
@@ -1690,7 +2205,9 @@
             "Any",
             "heartbroken",
             "brooding",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Right now, my emotions are too raw for anything more."
@@ -1702,7 +2219,9 @@
             "heartbroken",
             "upstanding",
             "stable",
-            "sweet"
+            "sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I need some time to heal. Please understand."
@@ -1715,7 +2234,9 @@
             "assertive",
             "upstanding",
             "introspective",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Now's not a good time for me. I hope you get that."
@@ -1726,7 +2247,9 @@
             "Any",
             "heartbroken",
             "assertive",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "It's not about you, it's about where my heart is right now."
@@ -1736,7 +2259,9 @@
         [
             "Any",
             "heartbroken",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um, thank you... but I'm... I'm still processing things."
@@ -1747,7 +2272,9 @@
             "Any",
             "heartbroken",
             "assertive",
-            "unlawful"
+            "unlawful",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Not the time or the place. Move along."
@@ -1759,7 +2286,9 @@
             "heartbroken",
             "cool",
             "silly",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Well, that's just what I needed. More complicated feelings!"
@@ -1771,7 +2300,9 @@
             "heartbroken",
             "cool",
             "silly",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "That's cool, but I've got other things on my mind."
@@ -1782,7 +2313,9 @@
             "Any",
             "heartbroken",
             "unlawful",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Life's strange, isn't it? I'm still trying to recover from my last relationship, and here you are."
@@ -1794,7 +2327,9 @@
             "heartbroken",
             "cool",
             "stable",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Kind words, but I'm walking a solitary path for now."
@@ -1806,7 +2341,9 @@
             "heartbroken",
             "assertive",
             "upstanding",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Why now? Why me?"
@@ -1818,7 +2355,9 @@
             "heartbroken",
             "stable",
             "assertive",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Trust is earned. Let's keep things as they are."
@@ -1830,7 +2369,9 @@
             "heartbroken",
             "silly",
             "unabashed",
-            "neurotic"
+            "neurotic",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Tempting, but I'm playing hard to get right now."
@@ -1842,7 +2383,9 @@
             "heartbroken",
             "neurotic",
             "sweet",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm... taking things slow right now."
@@ -1854,7 +2397,9 @@
             "you_shunned",
             "they_blind",
             "you_blind",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ew. Why would you say that to anycat, given your situation?",
@@ -1867,7 +2412,9 @@
             "you_shunned",
             "they_blind",
             "you_blind",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Please don't say that to me right now."
@@ -1908,7 +2455,7 @@
             "you_deaf"
         ],
         [
-            "[t_c playfully taps you with their tail before pulling it away before anyone can see.]"
+            "[t_c playfully taps you with {PRONOUN/t_c/poss} tail before pulling it away before anyone can see.]"
         ]
     ],
     "flirt_sh_J30": [
@@ -2036,12 +2583,13 @@
     "flirting_shunned_CM1": [
         [
             "any",
-            "they_shunned"
+            "they_shunned",
+            "they_blind"
         ],
         [
             "...... What?",
             "y_c, oh, y_c. You know what I've done. You can't - we can't... oh no..",
-            "[t_c curls up on the ground, burying their face into their pelt as their muzzle turns red.]"
+            "[t_c curls up on the ground, burying {PRONOUN/t_c/poss} face into {PRONOUN/t_c/poss} pelt as {PRONOUN/t_c/poss} muzzle turns red.]"
         ]
     ],
     "flirting_shunned_CM2": [
@@ -2051,7 +2599,7 @@
             "reject"
         ],
         [
-            "[t_c frowns at you, their claws pressing out.]",
+            "[t_c frowns at you, {PRONOUN/t_c/poss} claws pressing out.]",
             "You're not supposed to be talking to me, nevermind saying stupid things like that."
         ]
     ],
@@ -2059,21 +2607,25 @@
         [
             "any",
             "they_shunned",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "No.",
             "Now get lost before I tell l_n all about what you just said to me.",
-            "I'm sure their face would be hilarious."
+            "I'm sure {PRONOUN/l_n/poss} face would be hilarious."
         ]
     ],
     "flirting_shunned_Ren1": [
         [
             "any",
-            "they_shunned"
+            "they_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[You approached t_c, quietly starting to flirt with them.]",
+            "[You approached t_c, quietly starting to flirt with {PRONOUN/t_c/object}.]",
             "y_c. I murdered our Clanmate. Why are you talking to me, let alone like this?",
             "[You tell t_c that you never liked that Clanmate anyway, and maybe you like a little danger too.]"
         ]
@@ -2082,22 +2634,26 @@
         [
             "any",
             "they_shunned",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[You decide to start flirting with t_c in an attempt to see where it leads. They do not seem amused.]",
+            "[You decide to start flirting with t_c in an attempt to see where it leads. {PRONOUN/t_c/subject/CAP} {VERB/t_c/do/does} not seem amused.]",
             "y_c. I murdered our Clanmate. I'm not afraid to go after you too if you keep at it.",
-            "[You try one more time, but t_c lashes out at you, not afraid to get more blood on their claws. It seems they aren't too fond of you.]"
+            "[You try one more time, but t_c lashes out at you, not afraid to get more blood on their claws. It seems {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} too fond of you.]"
         ]
     ],
     "flirting_shunned_SQ3": [
         [
             "Any",
             "you_shunned",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[t_c backs away, their fur bristling.]",
+            "[t_c backs away, {PRONOUN/t_c/poss} fur bristling.]",
             "You aren't allowed to <i>talk</i> to me, let alone say something like that.",
             "I might not be a murderer, but I still know how to use these claws.",
             "Remember that next time you even <i>think</i> about opening your mouth."
@@ -2107,7 +2663,9 @@
         [
             "Any",
             "reject",
-            "they_shunned"
+            "they_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ugh..."
@@ -2116,7 +2674,9 @@
     "flirt_sh_J42": [
         [
             "Any",
-            "they_shunned"
+            "they_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ugh..."
@@ -2125,7 +2685,9 @@
     "flirt_sh_J43": [
         [
             "Any",
-            "both_shunned"
+            "both_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hehe, I don't think that now is really the time..."
@@ -2135,7 +2697,9 @@
         [
             "Any",
             "both_shunned",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Not the time, y_c."
@@ -2146,7 +2710,9 @@
             "Any",
             "both_shunned",
             "they_grieving",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um... no."
@@ -2156,7 +2722,9 @@
         [
             "Any",
             "both_shunned",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Maybe later, y_c."
@@ -2165,19 +2733,23 @@
     "flirting_shunned_SQ4": [
         [
             "Any",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[You call softly to t_c as they pass, and they stop in their tracks.]",
+            "[You call softly to t_c as {PRONOUN/t_c/subject} {VERB/t_c/pass/passes}, and {PRONOUN/t_c/subject} {VERB/t_c/stop/stops} in {PRONOUN/t_c/poss} tracks.]",
             "I... y_c?",
-            "[Across the camp, l_n pulls away from a discussion with r_w and strides towards you, their eyes narrowed.]",
-            "[t_c hastily backs away as they also notice l_n, though you see them trying to hide their smile.]"
+            "[Across the camp, l_n pulls away from a discussion with r_w and strides towards you, {PRONOUN/l_n/poss} eyes narrowed.]",
+            "[t_c hastily backs away as {PRONOUN/t_c/subject} also {VERB/t_c/notice/notices} l_n, though you see {PRONOUN/t_c/object} trying to hide {PRONOUN/t_c/poss} smile.]"
         ]
     ],
     "flirting_shunned_CM4": [
         [
             "any",
-            "both_shunned"
+            "both_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             ".. That gives me an idea, y_c.",
@@ -2193,22 +2765,24 @@
             "reject"
         ],
         [
-            "[t_c stares as you for a second, their tail lashing.]",
+            "[t_c stares as you for a second, {PRONOUN/t_c/poss} tail lashing.]",
             "What is wrong with you? Do you think this is some kind of opportunity? Just because the Clan hates us doesn't mean I have to... <i>like</i> you.",
-            "[They turn away, hissing over their shoulder.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} away, hissing over {PRONOUN/t_c/poss} shoulder.]",
             "I have other things to worry about, y_c. You should probably get your priorities straight, too."
         ]
     ],
     "flirting_shunned_SQ2": [
         [
             "Any",
-            "both_shunned"
+            "both_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[Long after sundown, you and t_c are curled up in your makeshift nests at the edge of camp, but from their constant shifting, it's clear they're having trouble sleeping.]",
-            "[You lean over and rest your head on t_c, whispering to them. For a moment, they seem frozen, but then they press closer.]",
+            "[Long after sundown, you and t_c are curled up in your makeshift nests at the edge of camp, but from {PRONOUN/t_c/poss} constant shifting, it's clear {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} having trouble sleeping.]",
+            "[You lean over and rest your head on t_c, whispering to {PRONOUN/t_c/object}. For a moment, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} frozen, but then {PRONOUN/t_c/subject} {VERB/t_c/press/presses} closer.]",
             "You... mean that? Even now?",
-            "[They curl their tail around you, and you do the same. You stay like that for a while, listening to t_c's breathing and sounds from the camp where neither of you are welcome.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/curl/curls} {PRONOUN/t_c/poss} tail around you, and you do the same. You stay like that for a while, listening to t_c's breathing and sounds from the camp where neither of you are welcome.]"
         ]
     ],
     "grieving_flirt_CM1": [
@@ -2216,10 +2790,12 @@
             "Any",
             "they_grieving",
             "reject",
-            "dead_close"
+            "dead_close",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[t_c barely looks up at you, choking out a sob as they tremble.]",
+            "[t_c barely looks up at you, choking out a sob as {PRONOUN/t_c/subject} {VERB/t_c/tremble/trembles}.]",
             "y_c, y_c I'm sorry. I- <i>hic</i> I can't...",
             "I can't love anyone like I did d_c.",
             "It.. if I lost you... it would destroy me if I did."
@@ -2231,7 +2807,9 @@
             "they_grieving",
             "brooding",
             "introspective",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Right now, my emotions are too raw for anything more."
@@ -2244,7 +2822,9 @@
             "upstanding",
             "stable",
             "sweet",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I need some time to heal. Please understand."
@@ -2258,7 +2838,9 @@
             "upstanding",
             "introspective",
             "stable",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Now's not a good time for me. I hope you get that."
@@ -2267,7 +2849,9 @@
     "grieving_flirt_reuse4": [
         [
             "Any",
-            "they_grieving"
+            "they_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um, thank you... but I'm... I'm still processing things."
@@ -2279,7 +2863,9 @@
             "they_grieving",
             "assertive",
             "unlawful",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Not the time or the place. Move along."
@@ -2292,7 +2878,9 @@
             "cool",
             "silly",
             "unabashed",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Well, that's just what I needed. More complicated feelings!"
@@ -2305,7 +2893,9 @@
             "assertive",
             "upstanding",
             "brooding",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Why now? Why me?"
@@ -2316,10 +2906,12 @@
             "Any",
             "they_grieving",
             "dead_close",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[t_c opens their maws and snarls at you]",
+            "[t_c opens {PRONOUN/t_c/poss} maws and snarls at you]",
             "How <b>dare</b> you y_c. How dare you think you can replace d_c!"
         ]
     ],
@@ -2330,7 +2922,9 @@
             "you_grieving",
             "brooding",
             "introspective",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Right now, my emotions are too raw for anything more."
@@ -2344,7 +2938,9 @@
             "upstanding",
             "stable",
             "sweet",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I need some time to heal. Please understand."
@@ -2359,7 +2955,9 @@
             "upstanding",
             "introspective",
             "stable",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Now's not a good time for me. I hope you get that."
@@ -2369,7 +2967,9 @@
         [
             "Any",
             "they_grieving",
-            "you_grieving"
+            "you_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um, thank you... but I'm... I'm still processing things."
@@ -2382,7 +2982,9 @@
             "you_grieving",
             "assertive",
             "unlawful",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Not the time or the place. Move along."
@@ -2396,7 +2998,9 @@
             "cool",
             "silly",
             "unabashed",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Well, that's just what I needed. More complicated feelings!"
@@ -2410,7 +3014,9 @@
             "assertive",
             "upstanding",
             "brooding",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Why now? Why me?"
@@ -2422,10 +3028,12 @@
             "they_grieving",
             "you_grieving",
             "dead_close",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "[t_c opens their maws and snarls at you]",
+            "[t_c opens {PRONOUN/t_c/poss} maws and snarls at you]",
             "How <b>dare</b> you y_c. How dare you think you can replace d_c!"
         ]
     ],
@@ -2433,7 +3041,9 @@
         [
             "Any",
             "they_grieving",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um, thank you... but I'm... I'm still processing things."
@@ -2444,7 +3054,9 @@
             "Any",
             "they_grieving",
             "you_shunned",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Not the time or the place. Move along."
@@ -2454,7 +3066,9 @@
         [
             "Any",
             "they_shunned",
-            "you_grieving"
+            "you_grieving",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Um, thank you... but I'm... I'm still processing things."
@@ -2465,7 +3079,9 @@
             "Any",
             "they_shunned",
             "you_grieving",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Not the time or the place. Move along."
@@ -2475,7 +3091,9 @@
         [
             "they_grieving",
             "grievingyou",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Wh-what?! y_c?!",
@@ -2488,17 +3106,21 @@
             "they_grieving",
             "grievingyou",
             "any",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "I must be going insane. y_c is dead... they would never say that..."
+            "I must be going insane. y_c is dead... {PRONOUN/y_c/subject} would never say that..."
         ]
     ],
     "grievingthem_J1": [
         [
             "you_grieving",
             "grievingthem",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I love and missed you too, y_c."
@@ -2509,7 +3131,9 @@
             "you_grieving",
             "grievingthem",
             "any",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "You're not thinking clearly right now..."
@@ -2521,7 +3145,9 @@
             "grievingthem",
             "they_grieving",
             "you_grieving",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't know what's going on anymore."
@@ -2534,7 +3160,9 @@
             "they_grieving",
             "you_grieving",
             "they_shunned",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't know what's going on anymore."
@@ -2547,7 +3175,9 @@
             "they_grieving",
             "you_grieving",
             "you_shunned",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't know what's going on anymore."
@@ -2560,7 +3190,9 @@
             "they_grieving",
             "you_grieving",
             "both_shunned",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't know what's going on anymore."
@@ -2573,7 +3205,9 @@
             "they_grieving",
             "you_grieving",
             "any",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't know what's going on anymore."
@@ -2587,7 +3221,9 @@
             "you_grieving",
             "they_shunned",
             "any",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't know what's going on anymore."
@@ -2601,7 +3237,9 @@
             "you_grieving",
             "you_shunned",
             "any",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't know what's going on anymore."
@@ -2615,7 +3253,9 @@
             "you_grieving",
             "both_shunned",
             "any",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I don't know what's going on anymore."
@@ -2627,7 +3267,9 @@
             "you_grieving",
             "you_shunned",
             "any",
-            "reject"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Absolutely not, y_c. Neither of us are in any state for this. Especially you."
@@ -2638,10 +3280,865 @@
             "they_grieving",
             "you_grieving",
             "you_shunned",
-            "any"
+            "any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Come back later, y_c. Thank you, but I can't do this right now."
+        ]
+    ],
+    "flirt_success_H9": [
+        [
+            "flirt",
+            "they_forgiven",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "After all this time... you'll still speak to me so sweetly? Even after everything I've done?",
+            "You're a wonderful cat, y_c. I cannot thank you enough for your forgiveness."
+        ]
+    ],
+    "flirt_reject_H6": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "they_shunned",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Do you have a death wish, or is this just to humiliate me?"
+        ]
+    ],
+    "flirt_reject_H7": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "they_shunned",
+            "they_blind"
+        ],
+        [
+            "Get lost, I'm serious.",
+            "[t_c hisses in your direction, {PRONOUN/t_c/poss} tail lashing and claws extending.]"
+        ]
+    ],
+    "flirt_reject_H8": [
+        [
+            "reject",
+            "any",
+            "from_mate",
+            "flirt",
+            "they_shunned",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You're going to get in trouble, you know that."
+        ]
+    ],
+    "flirt_reject_H9": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "they_shunned",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I'm a murderer and you're still trying to get with me?",
+            "You have some dedication.",
+            "Not-- No, that's not a compliment!"
+        ]
+    ],
+    "flirt_reject_H15": [
+        [
+            "flirt",
+            "reject",
+            "they_shunned",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You know, I would be flattered if there was some freshkill sent my way.",
+            "... No? Then you're not worth my time."
+        ]
+    ],
+    "flirt_success_H6": [
+        [
+            "flirt",
+            "they_shunned",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Hmm... you amuse me, I'll give you that."
+        ]
+    ],
+    "flirt_success_H7": [
+        [
+            "flirt",
+            "they_shunned",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I'll admit, you have bravery saying those things under these circumstances.",
+            "I can't help but feel a bit flattered."
+        ]
+    ],
+    "flirt_success_H8": [
+        [
+            "flirt",
+            "they_shunned",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c looks away, flustered.]",
+            "[Mission accomplished.]"
+        ]
+    ],
+    "flirt_reject_H16": [
+        [
+            "flirt",
+            "they_shunned",
+            "heartbroken",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I cannot deal with this. Not while my life crumbles so quickly.",
+            "... Is this my karma?"
+        ]
+    ],
+    "flirting_shunned_SQ5": [
+        [
+            "Any",
+            "they_shunned",
+            "non-mates",
+            "reject",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c hisses at you.]",
+            "I'm not even allowed to talk with t_m.",
+            "What makes you think I'd want to talk with you?"
+        ]
+    ],
+    "flirt_reject_H17": [
+        [
+            "flirt",
+            "reject",
+            "you_shunned",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You must be a fool to believe I would take kindly to that.",
+            "Scram."
+        ]
+    ],
+    "flirt_reject_H18": [
+        [
+            "flirt",
+            "reject",
+            "you_shunned",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I'd consider this an insult."
+        ]
+    ],
+    "flirt_reject_H10": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "dead_close",
+            "they_grieving",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "d_c just died and you're trying to flirt with me?",
+            "... You need to get your priorities in order, y_c. Seriously."
+        ]
+    ],
+    "flirt_reject_H13": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "they_grieving",
+            "they_blind",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_c's tail lashes angrily and {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} the other way.]",
+            "[Your flirting is not welcome, it seems.]"
+        ]
+    ],
+    "flirt_Guy1": [
+        [
+            "unlawful",
+            "brooding",
+            "introspective",
+            "reject"
+        ],
+        [
+            "[t_c rolls {PRONOUN/t_c/poss} eyes and scoffs.]",
+            "Words said so often that they lack any meaning."
+        ]
+    ],
+    "flirting_neurotic_SQ1": [
+        [
+            "neurotic",
+            "Any",
+            "reject"
+        ],
+        [
+            "[t_c shrinks back. {PRONOUN/t_c/subject/CAP} {VERB/t_c/narrow/narrows} {PRONOUN/t_c/poss} eyes at {PRONOUN/t_c/poss} paws.]",
+            "Are you making fun of me? That's not nice, y_c."
+        ]
+    ],
+    "flirting_neurotic_SQ2": [
+        [
+            "neurotic",
+            "any"
+        ],
+        [
+            "...me?",
+            "[t_c's fur fluffs. {PRONOUN/t_c/poss/CAP} eyes dart from side to side, never quite meeting yours, as if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} looking for another cat you might have been addressing.]",
+            "T-thank you?"
+        ]
+    ],
+    "flirt_success_H1": [
+        [
+            "flirt",
+            "they_app",
+            "you_app",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Heh, you... you mean that?",
+            "Wow..."
+        ]
+    ],
+    "flirt_success_H2": [
+        [
+            "flirt",
+            "they_app",
+            "you_app",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c's ears go red and {PRONOUN/t_c/poss} eyes light up in awe.]",
+            "[You seem to have broken {PRONOUN/t_c/object} slightly with your awkward flirting.]"
+        ]
+    ],
+    "flirt_success_H3": [
+        [
+            "flirt",
+            "they_app",
+            "you_app",
+            "platonic_love",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I thought we were just friends.",
+            "Heh, just kidding. I think you're really cute too."
+        ]
+    ],
+    "flirt_success_H4": [
+        [
+            "flirt",
+            "they_app",
+            "you_app",
+            "platonic_love",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You're joking with me.",
+            "N-no? You're not?",
+            "Am I dreaming or is this the luckiest day of my life?"
+        ]
+    ],
+    "flirt_reject_H1": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Oh, wrap it up."
+        ]
+    ],
+    "flirt_reject_H2": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "dislike",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "No, thanks."
+        ]
+    ],
+    "flirt_reject_H3": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "... And what am I supposed to do with this information, exactly?"
+        ]
+    ],
+    "flirt_reject_H4": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "... Right, that made no sense.",
+            "You should work on your flirting a little more before you come back for more."
+        ]
+    ],
+    "flirt_reject_H5": [
+        [
+            "reject",
+            "any",
+            "non-mates",
+            "flirt",
+            "they_leader",
+            "they_deputy",
+            "they_hearing",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Uh, sorry I think I just heard r_w calling for me.",
+            "Time to do my duties! Haha... ha...",
+            "[t_c skitters off in a hurry. Was your flirting really that bad?]"
+        ]
+    ],
+    "flirt_reject_H11": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
+        ],
+        [
+            "Hm? What?",
+            "Sorry, I couldn't hear you."
+        ]
+    ],
+    "flirt_reject_H12": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "platonic_love",
+            "leafbare",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What are you doing outside? It's so cold!",
+            "[t_c coaxes you back to somewhere warm and alas, your attempt at flirting either went over {PRONOUN/t_c/poss} head... or was ignored.]",
+            "[You can't decide which one is worse.]"
+        ]
+    ],
+    "flirt_reject_H14": [
+        [
+            "reject",
+            "any",
+            "flirt",
+            "heartbroken"
+        ],
+        [
+            "[t_c's tail lashes angrily and {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} the other way.]",
+            "[Your flirting is not welcome, it seems.]"
+        ]
+    ],
+    "flirt_reject_H19": [
+        [
+            "flirt",
+            "reject",
+            "any",
+            "has_mate",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You have some nerve..."
+        ]
+    ],
+    "deafflirt_J1": [
+        [
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[While laying next to t_c in camp, you reach your paw towards {PRONOUN/t_c/inposs}.]",
+            "[{PRONOUN/t_c/poss/CAP} blush is so strong that you can feel it!]"
+        ]
+    ],
+    "deafflirt_J2": [
+        [
+            "any",
+            "reject",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[While laying next to t_c in camp, you reach your paw towards {PRONOUN/t_c/inposs}.]",
+            "[{PRONOUN/t_c/subject/CAP} quickly {VERB/t_c/flinch/flinches} and {VERB/t_c/shuffle/shuffles} away from you.]"
+        ]
+    ],
+    "hasmate_success_H1": [
+        [
+            "flirt",
+            "has_mate",
+            "Any",
+            "romantic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Don't tell t_m, but your flirting is a lot better than {PRONOUN/t_m/inposs}."
+        ]
+    ],
+    "hasmate_success_H2": [
+        [
+            "flirt",
+            "dislike",
+            "romantic_like",
+            "has_mate",
+            "any",
+            "they_blind"
+        ],
+        [
+            "You have a lot of nerve.",
+            "[Despite t_c's words, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to hide a smile.]"
+        ]
+    ],
+   "hasmate_success_H3": [
+        [
+            "flirt",
+            "has_mate",
+	 "romantic_like",
+	 "Any"
+        ],
+        [
+            "[t_c looks away, flustered by your flirting.]",
+            "[Just over {PRONOUN/t_c/poss} shoulder, you see t_m watching from the distance, {PRONOUN/t_m/poss} tail lashing.]",
+            "[... Whoops.]"
+        ]
+    ],
+    "hasmate_success_H4": [
+        [
+            "flirt",
+            "has_mate",
+            "romantic_like",
+            "Any",
+            "they_blind"
+        ],
+        [
+            "Oh, do you mean that?",
+            "[t_m calls for t_c in the distance. t_c almost jumps out of {PRONOUN/t_c/poss} fur in guilty surprise.]",
+            "Sorry, gotta go! I'll talk to you later!"
+        ]
+    ],
+    "hasmate_success_H5": [
+        [
+            "flirt",
+            "has_mate",
+            "romantic_like",
+            "Any",
+            "they_blind"
+        ],
+        [
+            "Does every cat want a piece of me, or what?",
+            "[t_c's chest puffs out, smug from all the attention.]"
+        ]
+    ],
+    "hasmate_success_H6": [
+        [
+            "flirt",
+            "has_mate",
+            "from_mate",
+            "romantic_like",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh, t_m beat you to it! Maybe next moon *wink*."
+        ]
+    ],
+    "flirt_reject_H20": [
+        [
+            "flirt",
+            "reject",
+            "any"
+        ],
+        [
+            "Oh, y_c! Thank you! Do you know who else has gorgeous eyes?",
+            "their_crush!~",
+            "[t_c sighs blissfully.]"
+        ]
+    ],
+    "flirt_reject_H21": [
+        [
+            "flirt",
+            "reject",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh, I wish their_crush spoke to me like that!"
+        ]
+    ],
+    "flirt_reject_H22": [
+        [
+            "flirt",
+            "reject",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You're really nice, y_c, but...",
+            "I can't get over their_crush. I hope you understand!"
+        ]
+    ],
+   "flirt_reject_H23": [
+        [
+            "flirt",
+            "reject",
+            "any",
+            "you_blind"
+        ],
+        [
+            "Sorry, y_c but... I have my eyes set out for their_crush."
+        ]
+    ],
+    "flirt_reject_H24": [
+        [
+            "flirt",
+            "reject",
+            "they_medicine_cat",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I would rather chew on ragwort than flirt with you."
+        ]
+    ],
+    "flirt_reject_H25": [
+        [
+            "flirt",
+            "reject",
+            "they_queen",
+	"clan_has_kits",
+            "platonic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I'm really busy with the kits right now , sorry! I'll talk to you later?"
+        ]
+    ],
+    "flirt_reject_H26": [
+        [
+            "flirt",
+            "reject",
+            "they_mediator",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "... This is a weird way to ask for mediation."
+        ]
+    ],
+    "flirt_reject_H27": [
+        [
+            "flirt",
+            "reject",
+            "they_warrior",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "StarClan, do I need to ask d_n to set me out on more patrols so you'll stop flirting with me?"
+        ]
+    ],
+   "hasmate_reject_H1": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "That was a nice attempt, but I am very happy with t_m."
+        ]
+    ],
+    "hasmate_reject_H2": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "platonic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[t_c laughs loudly at your flirting.]",
+            "Haha, good one, y_c! Oh, I can't wait to pass your joke to t_m!"
+        ]
+    ],
+    "hasmate_reject_H3": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Are you joking? You must be joking.",
+            "... you know I'm happily in a relationship with t_m... right?"
+        ]
+    ],
+    "hasmate_reject_H4": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Back off before I call t_m over."
+        ]
+    ],
+    "hasmate_reject_H5": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[t_c hisses at you, unamused with your flirting.]",
+            "Stop that! Don't you know I'm with t_m?"
+        ]
+    ],
+    "hasmate_reject_H6": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Sorry, you're definitely not my type of cat."
+        ]
+    ],
+    "hasmate_reject_H7": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "reject",
+	 "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "What?",
+            "Oh. Sorry, you're nothing like the <i>love of my life</i>.",
+            "Do you get the hint, or..."
+        ]
+    ],
+    "hasmate_reject_H8": [
+        [
+            "flirt",
+	 "Any",
+            "has_mate",
+            "non-mates",
+            "reject"
+        ],
+        [
+            "Look, y_c, do you not see how happy I am with t_m?",
+            "You can't separate me from {PRONOUN/t_m/object}, but good luck trying."
+        ]
+    ],
+    "hasmate_reject_H9": [
+        [
+            "flirt",
+	 "Any",
+            "has_mate",
+            "non-mates",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh uh, I just remembered that I need to do something!",
+            "With t_m, yup!",
+            "[t_c skitters off in a hurry.]"
+        ]
+    ],
+    "hasmate_reject_H10": [
+        [
+            "flirt",
+	 "Any",
+            "has_mate",
+            "non-mates",
+            "reject",
+            "they_deputy"
+        ],
+        [
+            "[t_c narrows {PRONOUN/t_c/poss} eyes at you, thoughtful.]",
+            "y_c, you are very brave, I'll give you that.",
+            "Oh, you know what? Since you're so brave, how about I place you on more border patrols?"
+        ]
+    ],
+   "frommate_reject_H1": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "dislike",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c, I'm not in the mood."
+        ]
+    ],
+    "frommate_reject_H2": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c... is it just me or did your flirting become worse over the moons we've been together?",
+            "Oh... Yes, I am totally joking! Haha... ha..."
+        ]
+    ],
+    "frommate_reject_H3": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "Any",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You must not mean that."
+        ]
+    ],
+    "frommate_reject_H4": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Awh! I can tell you've been... practicing that one!",
+            "Oh. You didn't? Uhem.",
+            "Ah -- Of course, I knew that! You're very... good. At flirting."
+        ]
+    ],
+    "frommate_reject_H5": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I'm going to be honest.",
+            "That was the worst, y_c."
         ]
     ]
 }

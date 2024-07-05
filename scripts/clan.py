@@ -217,7 +217,7 @@ class Clan():
                               )
         self.instructor.dead = True
         self.instructor.dead_for = randint(20, 200)
-        self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["dead_cat_backstories"])
+        self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
         self.add_cat(self.instructor)
         self.add_to_starclan(self.instructor)
         self.all_clans = []
@@ -909,6 +909,15 @@ class Clan():
         
         if "your_cat" in clan_data:
             game.clan.your_cat = Cat.all_cats[clan_data["your_cat"]]
+
+        if "murdered" in clan_data:
+            game.clan.murdered = clan_data["murdered"]
+
+        if "affair" in clan_data:
+            game.clan.murdered = clan_data["affair"]
+
+        if "exile_return" in clan_data:
+            game.clan.murdered = clan_data["exile_return"]
         
         if "achievements" in clan_data:
             game.clan.achievements = clan_data["achievements"]

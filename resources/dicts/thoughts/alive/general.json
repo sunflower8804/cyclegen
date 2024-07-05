@@ -2207,16 +2207,16 @@
             "Wonders what lies just beyond the horizon",
             "Thinks about what it'd be like to explore underwater",
             "Wishes {PRONOUN/m_c/subject} could travel far and wide",
-            "Longs to find out what's beyond the clans",
+            "Longs to find out what's beyond the Clans",
             "Has found an unknown stream",
-            "Considers trespassing on another clan's territory to see what it's like",
+            "Considers trespassing on another Clan's territory to see what it's like",
             "Listens to a Loner discuss land outside their borders",
             "Listens to a kittypet talk about the Twolegplace",
             "Searches under every tree root",
             "Looks for hidden tunnels",
             "Fell into an unknown river while exploring and got wet!",
             "Scraped up their paws while exploring the wilderness",
-            "Snuck outside clan territory to explore",
+            "Snuck outside Clan territory to explore",
             "Found an abandoned twoleg den"
         ],
         "main_age_constraint": [
@@ -2243,7 +2243,7 @@
             "Tracks r_c across the entire territory",
             "Enjoys the familiar smell of {PRONOUN/m_c/poss} territory",
             "Thinks that r_c smells nice",
-            "Wonders what the trees smell like in the other clan's territories",
+            "Wonders what the trees smell like in the other Clan's territories",
             "Takes a deep breath before {PRONOUN/m_c/subject} start {PRONOUN/m_c/poss} day",
             "Tracks a fox all the way back to its den"
         ],
@@ -2354,7 +2354,7 @@
             "Can hear muffled footsteps while in a tunnel",
             "Enjoys the smell of the tunnels",
             "Perfectly maps a portion of the tunnels",
-            "Wonders what it would be like if the whole clan lived in the tunnels",
+            "Wonders what it would be like if the whole Clan lived in the tunnels",
             "Thought they heard footsteps",
             "Hears the faint rushing of groundwater",
             "Gets tangled in some roots"
@@ -2519,12 +2519,12 @@
     {
         "id": "COMFORTER",
         "thoughts": [
-            "Is reassuring a clanmate after a missed catch",
+            "Is reassuring a Clanmate after a missed catch",
             "Gently bumps {PRONOUN/m_c/poss} head on a Clanmate's shoulder after a heated argument",
-            "Validates another clanmates worries ",
+            "Validates another Clanmates worries ",
             "Comforts r_c after a nightmare",
             "Voices {PRONOUN/m_c/poss} support for r_c",
-            "Comforts a clanmate after a hard loss",
+            "Comforts a Clanmate after a hard loss",
             "Visits the sick in the medicine den",
             "Seems to put everyone at ease",
             "Wraps r_c in a comforting hug",
@@ -2571,7 +2571,7 @@
             "Winks at r_c when {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} talking to {PRONOUN/r_c/poss} crush",
             "Tries to convince r_c to ask {PRONOUN/r_c/poss} crush on a date",
             "Silently cheers when {PRONOUN/m_c/poss} favourite couple gets together",
-            "Is pairing up cats in other clans, fully aware that it is a bad idea",
+            "Is pairing up cats in other Clans, fully aware that it is a bad idea",
             "Jokes about pushing r_c into a river so a pretty cat can save {PRONOUN/r_c/object}",
             "Sighs when {PRONOUN/m_c/subject} realise that this Clan is full of mousebrains refusing to admit their feelings",
             "Is certain {PRONOUN/m_c/subject} know who r_c likes"
@@ -2629,7 +2629,7 @@
         "thoughts": [
             "Congratulates r_c on successfully cornering the prey for {PRONOUN/m_c/object} to catch",
             "Is content to bring fresh-kill to the elders den",
-            "Wants to help {PRONOUN/m_c/poss} clanmates",
+            "Wants to help {PRONOUN/m_c/poss} Clanmates",
             "Happily agrees to patrol with r_c",
             "Volunteers to guard the camp during a Gathering",
             "Purposely loses a prey for r_c to catch instead",
@@ -2725,7 +2725,7 @@
         "id": "TREASURE",
         "thoughts": [
             "Is showing off {PRONOUN/m_c/poss} finds",
-            "Is giving out pebbles to {PRONOUN/m_c/poss} clanmates",
+            "Is giving out pebbles to {PRONOUN/m_c/poss} Clanmates",
             "Spends the whole day collecting small trinkets",
             "Parades around {PRONOUN/m_c/poss} favorite trinket all day",
             "Stores {PRONOUN/m_c/poss} treasures in a super secret place",
@@ -2805,7 +2805,7 @@
             "Complains that dogs have zero manners!",
             "Is glaring at a piece of fresh kill like it personally insulted {PRONOUN/m_c/poss} parents",
             "Asks a lark where the nearest patch of marigold is",
-            "Convinces a bee colony to not make {PRONOUN/m_c/poss} nest in the clan clearing",
+            "Convinces a bee colony to not make {PRONOUN/m_c/poss} nest in the Clan clearing",
             "Huffs into a badger's den, hoping for an answer"
         ],
         "main_age_constraint": [
@@ -2827,7 +2827,7 @@
         "thoughts": [
             "Takes time to relax",
             "Is getting a nap in before {PRONOUN/m_c/poss} patrol",
-            "Invites clanmates to rest with {PRONOUN/m_c/object} in the center of camp",
+            "Invites Clanmates to rest with {PRONOUN/m_c/object} in the center of camp",
             "Tells the elders the best place to take a nap",
             "Is dozing off",
             "Falls asleep on top of {PRONOUN/m_c/poss} prey!",
@@ -2847,7 +2847,7 @@
             "Snuggles deeper into {PRONOUN/m_c/poss} nest",
             "Looks for materials to make a better nest",
             "Hides in a tree to sleep unbothered",
-            "Sleeps in other clanmate's nests to find the comfiest one",
+            "Sleeps in other Clanmate's nests to find the comfiest one",
             "Has discovered r_c has a soft nest!",
             "Wonders if r_c would be nice to sleep on",
             "Finds a bug in {PRONOUN/m_c/poss} nest! But continues to sleep anyways.",

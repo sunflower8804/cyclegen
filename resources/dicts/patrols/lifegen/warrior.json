@@ -1,6 +1,6 @@
 [
     {
-        "patrol_id": "lifegen_warrior1",
+        "patrol_id": "life_warrior_og1",
         "biome": [
             "Any"
         ],
@@ -35,7 +35,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior2",
+        "patrol_id": "life_warrior_og2",
         "biome": [
             "Any"
         ],
@@ -70,7 +70,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior3",
+        "patrol_id": "life_warrior_og3",
         "biome": [
             "Any"
         ],
@@ -105,7 +105,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior4",
+        "patrol_id": "life_warrior_og4",
         "biome": [
             "Any"
         ],
@@ -126,7 +126,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "You join the patrol and do an excellent job securing the clan's borders. Your vigilance is noted.",
+                "text": "You join the patrol and do an excellent job securing the Clan's borders. Your vigilance is noted.",
                 "exp": 25,
                 "weight": 20
             }
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior5",
+        "patrol_id": "life_warrior_og5",
         "biome": [
             "Any"
         ],
@@ -175,7 +175,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior6",
+        "patrol_id": "life_warrior_og6",
         "biome": [
             "Any"
         ],
@@ -210,7 +210,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior7",
+        "patrol_id": "life_warrior_og7",
         "biome": [
             "Any"
         ],
@@ -245,7 +245,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior8",
+        "patrol_id": "life_warrior_og8",
         "biome": [
             "Any"
         ],
@@ -261,12 +261,12 @@
         "max_cats": 5,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The clan leader assigns you to lead a hunting patrol. It's your chance to prove your leadership skills and help provide for the clan.",
+        "intro_text": "The Clan leader assigns you to lead a hunting patrol. It's your chance to prove your leadership skills and help provide for the Clan.",
         "decline_text": "Feeling uncertain, you suggest another warrior lead the patrol instead. The leader respects your decision, promising future opportunities.",
         "chance_of_success": 65,
         "success_outcomes": [
             {
-                "text": "You successfully lead the patrol, coordinating your team to bring down various prey. Your leadership is praised and the clan appreciates the fresh-kill.",
+                "text": "You successfully lead the patrol, coordinating your team to bring down various prey. Your leadership is praised and the Clan appreciates the fresh-kill.",
                 "exp": 30,
                 "weight": 20
             }
@@ -280,7 +280,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior9",
+        "patrol_id": "life_warrior_og9",
         "biome": [
             "Any"
         ],
@@ -291,7 +291,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior9",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -315,7 +315,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior10",
+        "patrol_id": "life_warrior_og10",
         "biome": [
             "Any"
         ],
@@ -331,7 +331,7 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You notice an unfamiliar scent on your clan's borders. It's your responsibility to investigate and ensure the clan's safety.",
+        "intro_text": "You notice an unfamiliar scent on your Clan's borders. It's your responsibility to investigate and ensure the Clan's safety.",
         "decline_text": "Feeling unsure, you decide to report the scent to your leader and let them handle the situation. You trust their judgement in these matters.",
         "chance_of_success": 70,
         "success_outcomes": [
@@ -350,7 +350,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior11",
+        "patrol_id": "life_warrior_og11",
         "biome": [
             "Any"
         ],
@@ -371,7 +371,7 @@
         "chance_of_success": 55,
         "success_outcomes": [
             {
-                "text": "You captivate the clan with your tale, filling their eyes with wonder. They appreciate your storytelling and the kits beg for more stories in the future.",
+                "text": "You captivate the Clan with your tale, filling their eyes with wonder. They appreciate your storytelling and the kits beg for more stories in the future.",
                 "exp": 20,
                 "weight": 20
             }
@@ -385,7 +385,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior12",
+        "patrol_id": "life_warrior_og12",
         "biome": [
             "Any"
         ],
@@ -401,7 +401,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The medicine cat runs out of marigold and asks for your help to find some. It's a chance to help the clan and learn more about herbs.",
+        "intro_text": "The medicine cat runs out of marigold and asks for your help to find some. It's a chance to help the Clan and learn more about herbs.",
         "decline_text": "You respectfully decline, not feeling confident in your knowledge of herbs. The medicine cat understands and decides to search themselves.",
         "chance_of_success": 65,
         "success_outcomes": [
@@ -420,7 +420,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior13",
+        "patrol_id": "life_warrior_og13",
         "biome": [
             "Any"
         ],
@@ -455,7 +455,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior14",
+        "patrol_id": "life_warrior_og14",
         "biome": [
             "Any"
         ],
@@ -490,7 +490,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior15",
+        "patrol_id": "life_warrior_og15",
         "biome": [
             "Any"
         ],
@@ -525,7 +525,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior16",
+        "patrol_id": "life_warrior_og16",
         "biome": [
             "Any"
         ],
@@ -560,7 +560,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior17",
+        "patrol_id": "life_warrior_og17",
         "biome": [
             "Any"
         ],
@@ -595,7 +595,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior_18",
+        "patrol_id": "life_warrior_og18",
         "biome": [
             "Any"
         ],
@@ -616,21 +616,21 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You leap onto the path, snagging a bird with your claws- your clanmates are impressed with your catch.",
+                "text": "You leap onto the path, snagging a bird with your claws- your Clanmates are impressed with your catch.",
                 "exp": 15,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You leap towards the path, but miss the landing slamming into one of the boards- scaring all the birds away. Your clanmates are happy you're okay but are unimpressed by your fall.",
+                "text": "You leap towards the path, but miss the landing slamming into one of the boards- scaring all the birds away. Your Clanmates are happy you're okay but are unimpressed by your fall.",
                 "exp": 0,
                 "weight": 20
             }
         ]
     },
     {
-        "patrol_id": "lifegen_warrior_19",
+        "patrol_id": "life_warrior_og19",
         "biome": [
             "Beach"
         ],
@@ -674,7 +674,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior_20",
+        "patrol_id": "life_warrior_og20",
         "biome": [
             "Beach"
         ],
@@ -691,7 +691,7 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "As you walk across the shore, you notice a few twolegs clustered around. They are all holding long, brown rods. Next to them is a blue-and-white box with a tantalizing scent wafting from it.",
-        "decline_text": "Twolegs are bad news. You quickly and quietly leave the area, making a mental note to warn the clan of their presence.",
+        "decline_text": "Twolegs are bad news. You quickly and quietly leave the area, making a mental note to warn the Clan of their presence.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
@@ -709,7 +709,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior_21",
+        "patrol_id": "life_warrior_og21",
         "biome": [
             "Beach"
         ],
@@ -744,7 +744,7 @@
         ]
     },
     {
-        "patrol_id": "lifegen_warrior_22",
+        "patrol_id": "life_warrior_og22",
         "biome": [
             "Beach"
         ],
