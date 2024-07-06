@@ -6575,5 +6575,24 @@
             "Oh, yay!",
             "Can you introduce me, next time? They seem really cool! And I promise not to tell!"
         ]
-    }
+    },
+    "theyseizures_J1": [
+        [
+            "they_seizureprone",
+	        "kitten"
+        ],
+        [
+           "[t_c has had another seizure. R_q sent you to get some water for the poor kit, and as you return with the soaked clump of moss, you hope that everything's alright.]",
+            "Y_c!",
+            "[The little kit squeaks your name as you poke your head into the den. When you set the ”moss at {PRONOUN/t_c/poss} paws, {PRONOUN/t_c/subject} {VERB/t_c/bounce/bounces} forward to lap up some water.]",
+            "[You ask if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} okay.]",
+            "Yeah, I'm okay! R_q put some soft moss under my head so I didn't hit it on the ground like last time.",
+            "I wish I hadn't missed the sunset, though.",
+            "[You sigh sympathetically. When t_c had fallen into {PRONOUN/t_c/poss} fit, the sun was low in the sky, and when {PRONOUN/t_c/subject} woke up, it was past dusk.]",
+            "That's okay. I'll just watch it tomorrow!",
+            "[You can't help but smile. It seems that t_c is the least worried in the whole Clan about {PRONOUN/t_c/poss} condition!]",
+            "[You hope it stays that way.]"
+        ]
+    ]
+
 }
