@@ -5289,5 +5289,61 @@
         [
             "[When you walk up to {PRONOUN/t_c/object}, t_c gently pushes you away with one paw.]"
         ]
+    ],
+    "youdeafkit_R10": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_any"
+        ],
+        [
+            "[t_c is talking to you, forgetting you can't actually hear {PRONOUN/t_c/object}. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} close enough though that you can feel the vibration of {PRONOUN/t_c/poss} voice.]",
+            "[Despite not understanding a thing, you bask in the soothing rumble.]",
+            "[{PRONOUN/t_c/subject/CAP} eventually {VERB/t_c/realise/realises} {PRONOUN/t_c/poss} mistake and {VERB/t_c/apologise/apologises} but you shake it off with a smile.]",
+            "[It was fun to 'listen' anyways!]"
+        ]
+    ],
+    "youdeafkit_R9": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_kitten"
+        ],
+        [
+            "[t_c is talking with r_q. The two keep looking back at you.]",
+            "[Your fur prickles subconsciously. Have you done something wrong? You don't remember anything...]",
+            "[Finally t_c runs up to you, sliding to a stop before you! You blink as {PRONOUN/t_c/subject} {VERB/t_c/begin/begins} to sign clumsily.]",
+            "[Oh! You're being asked to play leader and deputy! {PRONOUN/t_c/subject/CAP} {VERB/t_c/want/wants} you as {PRONOUN/t_c/poss} deputy! What an honor!]",
+            "[You agree enthusiastically. The game is a blast! t_c isn't the best at signing, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} more than willing to learn on the go with you.]",
+            "[What a great day!]"
+        ]
+    ],
+    "youdeafkit_R8": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_kitten",
+            "they_hearing",
+            "they_blind"
+        ],
+        [
+            "[t_c and r_k are arguing it seems. The two turn to you suddenly, fur bristled as they each say something before both pausing.]",
+            "[... They forgot you didn't understand their conversation, didn't they?]",
+            "[The three of you break out into giggles and the argument is forgotten swiftly!]",
+            "[You all race off to get into mischief together.]"
+        ] 
+    ],
+    "youdeaf_R7": [
+        [
+            "you_deaf",
+            "you_kitten",
+            "they_kitten",
+            "they_deaf"
+        ],
+        [
+            "[A moss-ball rolls in front of you. t_c is looking expectantly at you!]",
+            "[You bat it back eagerly and the game is on. r_q watches the game with a smile.]",
+            "[In the end, you're exhausted, and t_c flops against you with {PRONOUN/t_c/poss} whole body vibrating with a purr!]"
+        ]
     ]
 }
