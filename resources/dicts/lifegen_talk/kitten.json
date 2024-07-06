@@ -6636,5 +6636,71 @@
             "[You bat it back eagerly and the game is on. r_q watches the game with a smile.]",
             "[In the end, you're exhausted, and t_c flops against you with {PRONOUN/t_c/poss} whole body vibrating with a purr!]"
         ]
+    ],
+    "coolkit_newborn_H1": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten"
+        ],
+        [
+            "You're going to look up to me, I just know it!"
+        ]
+    ],
+    "coolkit_newborn_H2": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten",
+            "sibling",
+            "adopted_sibling",
+            "half sibling",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c rolls a moss ball to you, hitting the side of your head.]",
+            "Hey, wait don't--",
+            "[You let out a piercing wail from the offending hit.]",
+            "Shh! Shhh! Shhhhh!",
+            "I didn't mean to! You can stop crying!",
+            "Ohhh, mouse-dung..."
+        ]
+    ],
+    "coolkit_newborn_H3": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten",
+            "platonic_like"
+        ],
+        [
+            "[t_c grumbles to {PRONOUN/t_c/self} as {PRONOUN/t_c/subject} paw around the moss ball.]",
+            "'You can't play with y_c yet, {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} too small'! When I was your size, I was going around playing just fine!",
+            "You need to grow up fast, okay?"
+        ]
+    ],
+    "coolkit_newborn_H4": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten",
+            "dislike"
+        ],
+        [
+            "Stop taking away all the attention!"
+        ]
+    ],
+    "coolkit_newborn_H5": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten"
+        ],
+        [
+            "[t_c lays down to your level, looking you over with a curious eye.]",
+            "Do you... even do anything? Except steal attention, eat, and sleep, that is.",
+            "No response? ... Are you broken? t_p, I think {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} broken."
+        ]
     ]
 }
