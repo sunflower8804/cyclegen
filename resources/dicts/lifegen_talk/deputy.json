@@ -2641,5 +2641,21 @@
             "[You remark that t_c can't seem to unplug from {PRONOUN/t_c/poss} work, even now that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} in StarClan. You tell {PRONOUN/t_c/object} {PRONOUN/t_c/subject} should relax.]",
             "... But what if I don't want to?"
         ]
+    ],
+    "gnk_youdeaf_J1": [
+        [
+            "only_you_deaf",
+            "you_warrior",
+            "no_kit",
+            "they_deputy",
+            "they_warrior"
+        ],
+        [
+            "... ?",
+            "[t_c flicks {PRONOUN/t_c/poss} tail towards the camp entrance and looks at you imporingly, asking if you'd like to join {PRONOUN/t_c/poss} patrol.]",
+            "[You cock your head. What type?]",
+            "[t_c crouches and smacks one of {PRONOUN/t_c/poss} paws overtop of the other.]",
+            "[The sign for hunting! You give {PRONOUN/t_c/object} a nod and quickly stand up to join.]"
+        ]
     ]
 }
