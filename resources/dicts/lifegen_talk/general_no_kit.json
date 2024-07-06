@@ -4135,7 +4135,8 @@
             "any",
             "they_pregnant",
             "unabashed",
-            "they_blind"
+            "they_blind",
+            "from_mate"
         ],
         [
             "You know, I'm gonna be the coolest {PRONOUN/t_c/parent} around. Our kits will grow up knowing that they can always be themselves, no matter what."
@@ -20220,7 +20221,7 @@
             "[The kit has finally seemed to catch on to the pattern. {PRONOUN/r_k/subject/CAP} {VERB/r_k/lunge/lunges} one way then leap the other to catch t_c right as {PRONOUN/t_c/subject} {VERB/t_c/swerve/swerves} sideways once more. {PRONOUN/r_k/subject/CAP} {VERB/r_k/wrap/wraps} {PRONOUN/r_k/poss} paws around t_c's leg, taking a mouthful of fur and kicking at it with {PRONOUN/r_k/poss} tiny little legs.]",
             "Hahahahahaha!",
             "[t_c bursts out in laughter at the scene.]",
-            "[You can't help but smile. You love t_c's laugh– you wish {PRONOUN/t_c/subject} could hear it, too.]"
+            "[You can't help but smile. You love t_c's laugh-- you wish {PRONOUN/t_c/subject} could hear it, too.]"
         ]
     ],
     "youdeaf_R1": [
@@ -20658,7 +20659,7 @@
             "they_older"
         ],
         [
-            "[t_c sucks in a deep breath as {PRONOUN/t_c/subject }{VERB/t_c/sit/sits} next to you, {PRONOUN/t_c/poss} snout scrunched in pain. Your ears flatten slightly at the sight of {PRONOUN/t_c/poss} discomfort. {PRONOUN/t_c/subject/CAP} {VERB/t_c/catch/catches} your gaze and {VERB/t_c/chuckle/chuckles} .]",
+            "[t_c sucks in a deep breath as {PRONOUN/t_c/subject} {VERB/t_c/sit/sits} next to you, {PRONOUN/t_c/poss} snout scrunched in pain. Your ears flatten slightly at the sight of {PRONOUN/t_c/poss} discomfort. {PRONOUN/t_c/subject/CAP} {VERB/t_c/catch/catches} your gaze and {VERB/t_c/chuckle/chuckles}.]",
             "Yeah, it's not pleasant, sometimes it can hurt more than normal. But hey, I'll show you a little something.",
             "[You watch in curiosity as t_c pulls over a large leaf that holds a small pool of water. In the middle of the water is a bundle of moss. {PRONOUN/t_c/subject/CAP} carefully {VERB/t_c/pick/picks} it up and {VERB/t_c/apply/applies} it to {PRONOUN/t_c/poss} joints.]",
             "Every morning I always leave a bit of water out in the sun to warm up, then I dip some moss in it. By this time, the water is already warm. Then I put it wherever the pain is.",
