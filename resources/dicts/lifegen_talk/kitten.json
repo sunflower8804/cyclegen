@@ -6675,8 +6675,8 @@
             "platonic_like"
         ],
         [
-            "[t_c grumbles to {PRONOUNS/t_c/self} as {PRONOUNS/t_c/subject} paw around the moss ball.]",
-            "'You can't play with y_c yet, {PRONOUNS/y_c/subject}{VERB/y_c/'re/'s} too small'! When I was your size, I was going around playing just fine!",
+            "[t_c grumbles to {PRONOUN/t_c/self} as {PRONOUN/t_c/subject} paw around the moss ball.]",
+            "'You can't play with y_c yet, {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} too small'! When I was your size, I was going around playing just fine!",
             "You need to grow up fast, okay?"
         ]
     ],
@@ -6700,7 +6700,7 @@
         [
             "[t_c lays down to your level, looking you over with a curious eye.]",
             "Do you... even do anything? Except steal attention, eat, and sleep, that is.",
-            "No response? ... Are you broken? t_p, I think {PRONOUNS/y_c/subject}{VERB/y_c/'re/'s} broken."
+            "No response? ... Are you broken? t_p, I think {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} broken."
         ]
     ]
 }
