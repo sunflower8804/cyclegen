@@ -974,29 +974,29 @@ class TalkScreen(Screens):
                 continue
 
             if "only_you_born_deaf" in tags:
-                if "deaf" not in you.illnesses:
+                if "deaf" not in you.permanent_condition:
                     continue
-                if "deaf" in you.illnesses and you.permanent_condition["deaf"]["born_with"] is False:
+                if "deaf" in you.permanent_condition and you.permanent_condition["deaf"]["born_with"] is False:
                     continue
             if "only_you_went_deaf" in tags:
-                if "deaf" not in you.illnesses:
+                if "deaf" not in you.permanent_condition:
                     continue
-                if "deaf" in you.illnesses and you.permanent_condition["deaf"]["born_with"] is True:
+                if "deaf" in you.permanent_condition and you.permanent_condition["deaf"]["born_with"] is True:
                     continue
-            if "only_you_deaf" in tags and "deaf" not in you.illnesses:
+            if "only_you_deaf" in tags and "deaf" not in you.permanent_condition:
                 continue
 
             if "only_you_born_blind" in tags:
-                if "blind" not in you.illnesses:
+                if "blind" not in you.permanent_condition:
                     continue
-                if "blind" in you.illnesses and you.permanent_condition["blind"]["born_with"] is False:
+                if "blind" in you.permanent_condition and you.permanent_condition["blind"]["born_with"] is False:
                     continue
             if "only_you_went_blind" in tags:
-                if "blind" not in you.illnesses:
+                if "blind" not in you.permanent_condition:
                     continue
-                if "blind" in you.illnesses and you.permanent_condition["blind"]["born_with"] is True:
+                if "blind" in you.permanent_condition and you.permanent_condition["blind"]["born_with"] is True:
                     continue
-            if "only_you_blind" in tags and "blind" not in you.illnesses:
+            if "only_you_blind" in tags and "blind" not in you.permanent_condition:
                 continue
 
             # non-exclusive deaf/blind
