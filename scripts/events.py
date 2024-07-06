@@ -873,23 +873,32 @@ class Events:
                     replacements["insert_siblings"] = f"{siblings[0].name}, {siblings[1].name}, {siblings[2].name}, {siblings[3].name}, and {siblings[4].name}"
             
             birth_txt = random.choice(self.b_txt[birth_value])
+
+            process_text_dict = self.cat_dict.copy()
+            for abbrev in process_text_dict.keys():
+                abbrev_cat = process_text_dict[abbrev]
+                process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+            birth_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), birth_txt)
+
             birth_txt = self.adjust_txt(birth_txt)
+
             for key, value in replacements.items():
                 birth_txt = birth_txt.replace(key, str(value))
+
             MAX_ATTEMPTS = 10
             if not birth_txt:
                 for _ in range(MAX_ATTEMPTS):
+                    birth_txt = random.choice(self.b_txt[birth_value])
+                    process_text_dict = self.cat_dict.copy()
+                    for abbrev in process_text_dict.keys():
+                        abbrev_cat = process_text_dict[abbrev]
+                        process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+                    birth_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), birth_txt)
                     for key, value in replacements.items():
                         birth_txt = birth_txt.replace(key, str(value))
                     birth_txt = self.adjust_txt(birth_txt)
                     if birth_txt:
                         break
-            process_text_dict = self.cat_dict.copy()
-            for abbrev in process_text_dict.keys():
-                abbrev_cat = process_text_dict[abbrev]
-                process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
-
-            birth_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), birth_txt)
             
             game.cur_events_list.append(Single_Event(birth_txt))
 
