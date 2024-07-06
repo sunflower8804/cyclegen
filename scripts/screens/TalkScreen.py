@@ -1062,38 +1062,38 @@ class TalkScreen(Screens):
             if "deaf" in you.permanent_condition:
                 if you.permanent_condition["deaf"]["born_with"] is True:
                     if "you_born_deaf" not in tags and "only_you_born_deaf" not in tags:
-                        if "you_deaf" not in tags:
+                        if "you_deaf" not in tags and "only_you_deaf" not in tags:
                             continue
                 else:
                     if "you_born_deaf" in tags or "only_you_born_deaf" in tags:
                         continue
                     if "you_went_deaf" not in tags and "only_you_went_deaf" not in tags:
-                        if "you_deaf" not in tags:
+                        if "you_deaf" not in tags and "only_you_deaf" not in tags:
                             continue
             
             # blind
             if "blind" in cat.permanent_condition:
                 if cat.permanent_condition["blind"]["born_with"] is True:
                     if "they_born_blind" not in tags and "only_they_born_blind" not in tags:
-                        if "they_blind" not in tags:
+                        if "they_blind" not in tags and "only_they_blind" not in tags:
                             continue
                 else:
                     if "they_born_blind" in tags or "only_they_born_blind" in tags:
                         continue
                     if "they_went_blind" not in tags and "only_they_went_blind" not in tags:
-                        if "they_blind" not in tags:
+                        if "they_blind" not in tags and "only_they_blind" not in tags:
                             continue
 
             if "blind" in you.permanent_condition:
                 if you.permanent_condition["blind"]["born_with"] is True:
                     if "you_born_blind" not in tags and "only_you_born_blind" not in tags:
-                        if "you_blind" not in tags:
+                        if "you_blind" not in tags and "only_you_blind" not in tags:
                             continue
                 else:
                     if "you_born_blind" in tags or "only_you_born_blind" in tags:
                         continue
                     if "you_went_blind" not in tags and "only_you_went_blind" not in tags:
-                        if "you_blind" not in tags:
+                        if "you_blind" not in tags and "only_you_blind" not in tags:
                             continue
 
             if "you_allergies" in tags and "allergies" not in you.permanent_condition:
