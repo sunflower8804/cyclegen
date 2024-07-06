@@ -4224,11 +4224,7 @@ class Events:
                                     ])
                                 elif game.clan.deputy.shunned == 2:
                                     previous_deputy_mention = f"Since {game.clan.deputy.name}'s crime was revealed, a new cat must be chosen to take their place."
-                                
-
-                                else:
-                                    text = "Error!"
-                                    previous_deputy_mention = "Report as bug."
+                                    
                                 involved_cats.append(game.clan.deputy.ID)
 
                                 if game.clan.deputy.outside or game.clan.deputy.dead:
