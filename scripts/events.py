@@ -4325,7 +4325,7 @@ class Events:
                                         f"They don't know if {game.clan.deputy.name} would approve, "
                                         f"but life must go on. "
                                     ])
-                                elif game.clan.deputy.shunned == 2:
+                                if game.clan.deputy.shunned == 2:
                                     previous_deputy_mention = f"Since {game.clan.deputy.name}'s crime was revealed, a new cat must be chosen to take their place."
                                     
                                 involved_cats.append(game.clan.deputy.ID)
@@ -4334,10 +4334,13 @@ class Events:
                                     text = f"{game.clan.leader.name} chooses " \
                                         f"{random_cat.name} to take over " \
                                         f"as deputy. " + previous_deputy_mention
-                                elif game.clan.deputy.shunned == 2:
+                                if game.clan.deputy.shunned == 2:
                                     text = previous_deputy_mention + f" {game.clan.leader.name} chooses " \
                                         f"{random_cat.name} to take over " \
                                         f"as deputy."
+                                    
+                            if not previous_deputy_mention:
+                                previous_deputy_mention = ""
 
                             text = (
                                 f"{game.clan.leader.name} chooses "

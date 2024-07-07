@@ -269,6 +269,7 @@ def json_load():
                         cat["pronouns"][0]["sibling"] = "sister"
                     else:
                         cat["pronouns"][0]["sibling"] = "sibling"
+
     
                 if "parent" not in cat["pronouns"][0]:
                     if new_cat.genderalign in ["male", "trans male"]:

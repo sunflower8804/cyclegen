@@ -1,12 +1,13 @@
 from random import choice, choices, randint
 import pygame
 import ujson
+import re
 
 from scripts.utility import scale
 
 from .Screens import Screens
 
-from scripts.utility import generate_sprite, get_cluster, get_alive_cats, get_alive_status_cats
+from scripts.utility import generate_sprite, get_cluster, get_alive_cats, get_alive_status_cats, pronoun_repl
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 import pygame_gui
