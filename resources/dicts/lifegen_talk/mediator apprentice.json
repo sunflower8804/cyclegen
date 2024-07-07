@@ -77,6 +77,18 @@
           
         ]
     ],
+    "brooding_mediator_aboutneurotic": [
+	[
+		"brooding",
+		"no_kit",
+		"min_trust_30"
+	],
+	[
+		"I swear to StarClan, next time r_w_neurotic comes to me asking for assurance that some random cat doesn't hate {PRONOUN/r_w_neurotic/object}, I just might have to claw my own ears off.",
+		"I tell {PRONOUN/r_w_neurotic/object} over and over, 'all you have to do is ask', but {PRONOUN/r_w_neurotic/subject} never {VERB/r_w_neurotic/do/does}. Just {VERB/r_w_neurotic/apologize/apologizes} over and over for stuff {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/don't/doesn't} know {PRONOUN/r_w_neurotic/subject} even did.",
+		"How can any cat outside of the nursery possibly be so debilitatingly insecure?"
+	]
+	],
     "brooding_medapp": [
         [
             "Any",
@@ -1221,7 +1233,7 @@
         ],
         [
             "y_c, can you believe it? I actually got to mediate a real, serious argument today! Eeee, so cool!!!",
-            "I mean, uh, definitely not cool. I'm definitely very serious and respectful towards my sacred duty to my clan.",
+            "I mean, uh, definitely not cool. I'm definitely very serious and respectful towards my sacred duty to my Clan.",
             "... Is tm_n still there?"
         ]
     ],
@@ -1324,8 +1336,8 @@
             "you_blind"
         ],
         [
-            "I have my first meeting with another clan today ... wish me luck, will ya?",
-            "When I get back, I'll tell you all about the other clan's territory! Their leader, their prey ... Everything you've ever wondered about!",
+            "I have my first meeting with another Clan today ... wish me luck, will ya?",
+            "When I get back, I'll tell you all about the other Clan's territory! Their leader, their prey ... Everything you've ever wondered about!",
             "Don't wait up, huh? I'll be back before you know it!"
         ]
     ],
@@ -1347,7 +1359,7 @@
             "[You ask t_c why {PRONOUN/t_c/subject} chose to become a mediator, given {PRONOUN/t_c/poss} adventurous personality.]",
             "Ah, well, that's easy ... Mediation is full of adventure!",
             "I get to explore far and wide, collaborating with mediators across territories, and get to know all sorts of different cats! That's plenty of excitement, no?",
-            "You might think you know life-or-death situations on the battlefield, but when you're a mediator, the stakes are even higher. My decisions could be the difference between peace among the clans, or bloody mayhem. It's terrifying ... but thrilling, too!",
+            "You might think you know life-or-death situations on the battlefield, but when you're a mediator, the stakes are even higher. My decisions could be the difference between peace among the Clans, or bloody mayhem. It's terrifying ... but thrilling, too!",
             "There's lots of different paths a cat can take in this world, but I know this is the path for me. Can you say the same?"
         ]
     ],
@@ -1470,6 +1482,63 @@
             "Arguments in the nursery, medicine den, and warriors' den, all at the same time ... Is there something in the air?",
             "Without you here, y_c, I genuinely don't know what I would've done. Died, probably. Like, actually died.",
             "... Thanks for having my back."
+        ]
+    ],
+    "silly_mediatorapp_hysterical": [
+        [
+            "Any",
+            "no_kit",
+            "silly"
+        ],
+        [
+            "[You enter camp after an utterly uneventful hunting patrol and see t_c's charming attempt at a greeting through what seems like hysterical laughter.]",
+            "y_c! HAH! You just missed- *giggle* You just missed the FUNNIEST thing I've ever seen!",
+            "There was- there was a frog on the camp edge, and- hahaHAHAHA- and then it- and then it... oh Silverpelt, the frog- it...",
+            "It did a backflip and landed on my head!",
+            "[Indeed, there is an adorable looking frog on t_c's tail. t_c seems to have made an easy companion out of the passive creature.]"
+
+        ]
+    ],
+    "silly_mediatorapp_costume": [
+        [
+            "Any",
+            "silly",
+            "random_cat"
+        ],
+        [
+            "[The mediator apprentice has been walking around all day in some sort of disguise, decorating themself in leaves and twigs that seem to have at least some rhyme or reason. Intrigued, you come up to them to ask why they've decorated their pelt today.]",
+            "Oh! Well, y_c, r_c was feeling down, so I wanted to cheer them up by dressing myself up!",
+            "They told someone else about... uh...",
+            "...Nevermind, I can't say that! I refuse to admit that I'm nosy! Bye, y_c!",
+            "[t_c shimmies away in their leafy fire hazard.]"
+
+        ]
+    ],
+    "silly_mediatorapp_plan": [
+        [
+            "Any",
+            "silly",
+            "random_cat"
+        ],
+        [
+            "y_c! You see r_c arguing with d_n over there about c_nClan's fresh-kill stock? Well, I wasn't sure how to help resolve the situation, but now I think I have the perfect plan!",
+            "...Hey, don't \"oh no\" me! I'm not asking for your opinion, I just need you to watch me in case it all goes wrong!",
+            "[t_c struts over to the two bristling cats, not-so-quietly singing \"This is the greatest plaaan!\" to themself as they approach. Unsurprisingly, the apprentice's bubbly approach returns nothing... shouldn't someone know to stop them by now?]"
+
+        ]
+    ],
+    "silly_mediatorapp_ideas": [
+        [
+            "Any",
+            "silly",
+            "random_cat"
+        ],
+        [
+            "Oh dear... y_c, I dunno what to do!",
+            "d_n is having this issue with r_c and I don't wanna tell you exactly what it is but I'm stuck between offering them two different solutions...",
+            "One of them is a little less conventional but I think it would work better. But they'd probably accept the more conventional one more easily.",
+            "[After thinking for a moment, you offer t_c your best advice.]",
+            "Oh... thank you, y_c! I'll try that, then."
         ]
     ]
 }

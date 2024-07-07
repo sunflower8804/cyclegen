@@ -234,7 +234,7 @@ class Clan:
                               )
         self.instructor.dead = True
         self.instructor.dead_for = randint(20, 200)
-        self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["dead_cat_backstories"])
+        self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
         self.add_cat(self.instructor)
         self.add_to_starclan(self.instructor)
         self.all_clans = []

@@ -469,5 +469,42 @@
             "Oh, goodness...",
             "I'm sorry you have to be here, little guy."
         ]
+    ],
+    "oshunned_deaf_J1": [
+        [
+            "you_shunned",
+            "they_dead",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c looks at you very curiously, but makes no attempt to communicate.]"
+        ]
+    ],
+    "oshunned_deaf_J2": [
+        [
+            "you_shunned",
+            "they_dead",
+            "they_deaf",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c is looking at you with pity.]",
+            "[You flash them a harsh glare. A ghost shouldn't be sympathising with a killer.]"
+        ]
+    ],
+    "oshunned_deaf_J3": [
+        [
+            "you_shunned",
+            "they_ur",
+            "they_dead",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c is looking at you with pity.]",
+            "[You flash them a harsh glare. A ghost shouldn't be sympathising with a killer.]"
+        ]
     ]
 }

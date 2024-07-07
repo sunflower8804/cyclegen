@@ -1192,6 +1192,118 @@
             "Oh, you're so cute sometimes! Do tell me more, hehe."
         ]
     ],
+	"brooding_flirt_AJ": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "No."
+        ]
+    ],
+
+	"brooding_flirt_AJ1": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "...",
+	    "...*Blush*"
+        ]
+    ],
+
+	"brooding_flirt_AJ2": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "... You're very sweet. To say that."
+        ]
+    ],
+
+	"brooding_flirt_AJ3": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "Uhm. Why?"
+        ]
+    ],
+
+	"brooding_flirt_AJ4": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "[t_c buries their face in their paws shyly.]"
+        ]
+    ],
+
+	"brooding_flirt_AJ5": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "[t_c starts to purr.]"
+        ]
+    ],
+
+	"brooding_flirt_AJ6": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "Do you think I'm so shallow ...?"
+        ]
+    ],
+
+	"brooding_flirt_AJ7": [
+        [
+            "Any",
+            "brooding",
+	    "reject"
+        ],
+        [
+            "[t_c narrows their eyes suspiciously.]",
+	    "What's your angle?"
+        ]
+    ],
+
+	"brooding_flirt_AJ8": [
+        [
+            "Any",
+            "brooding",
+	    "reject",
+	    "non-mates",
+	    "neutral"
+        ],
+        [
+            "Uhm ... Have you considered seeing r_d?",
+	    "If you're seriously interested in me, you probably have some issues to work through."
+        ]
+    ],
+
+	"brooding_flirt_AJ9": [
+        [
+            "Any",
+            "brooding"
+        ],
+        [
+            "[t_c allows the faintest hint of a smile to crack over {PRONOUN/t_c/poss} face.]",
+	    "... Thank you."
+        ]
+    ],
+
+
     "cool_flirt": [
         [
             "Any",
@@ -1205,6 +1317,156 @@
             "... But, I don't exactly hate it, either. ~"
         ]
     ],
+
+    "cool_flirt_AJ": [
+        [
+            "Any",
+            "cool",
+        	"reject",
+        	"random_cat",
+        	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "Echh. Someone get r_m. That was so sincere, I think it's causing an allergic reaction."
+        ]
+    ],
+
+    "cool_flirt_AJ1": [
+        [
+            "Any",
+            "cool",
+	        "reject",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Cute. Can I go now?"
+        ]
+    ],
+
+    "cool_flirt_AJ2": [
+        [
+            "Any",
+            "cool",
+        	"reject",
+	        "random_cat",
+	        "they_blind",
+	        "you_blind"
+        ],
+        [
+            "Hey, r_q? Remind me how you teach the kits to spell 'Out of your league'?"
+        ]
+    ],
+
+    "cool_flirt_AJ3": [
+        [
+            "Any",
+            "cool",
+          	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "Y'know, if I didn't know any better, I'd say you were flirting with me, y_c.~",
+	        "Well, why'd you stop? I never said I didn't like it!"
+        ]
+    ],
+
+    "cool_flirt_AJ4": [
+        [
+            "Any",
+            "cool",
+        	"brooding",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "That was. So lame. Ha.",
+	    "[t_c looks away, blushing.]"
+        ]
+    ],
+
+"cool_flirt_AJ5": [
+        [
+            "Any",
+            "cool",
+        	"platonic_like",
+        	"you_blind",
+        	"they_blind"
+        ],
+        [
+            "Huh. Y'know, that really wasn't half bad.",
+    	    "Who taught you that line? Was it me?"
+        ]
+    ],
+
+    "cool_flirt_AJ6": [
+        [
+            "Any",
+            "cool",
+	        "reject",
+	        "you_blind",
+	        "they_blind",
+            "min_platonic_30"
+        ],
+        [
+            "Hey, didn't I teach you that line?"
+        ]
+    ],
+
+    "cool_flirt_AJ7": [
+        [
+            "Any",
+            "cool",
+        	"assertive",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Testy. I like it."
+        ]
+    ],
+
+"cool_flirt_AJ8": [
+        [
+            "Any",
+            "cool",
+	        "from_mate",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Feeling's mutual, babe!~"
+        ]
+    ],
+
+    "cool_flirt_AJ9": [
+        [
+            "Any",
+            "cool",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Heh. Always loved that line."
+        ]
+    ],
+
+    "cool_flirt_AJ10": [
+        [
+            "Any",
+            "cool",
+        	"they_blind",
+        	"you_blind"
+        ],
+        [
+            "Uhm - What is this feeling?",
+        	"I'm actually getting ... nervous?",
+	        "Is this how regular cats feel all the time?"
+        ]
+    ],
+
+
     "h5d6xs9": [
         [
             "Any",
@@ -3475,6 +3737,408 @@
         [
             "[While laying next to t_c in camp, you reach your paw towards {PRONOUN/t_c/inposs}.]",
             "[{PRONOUN/t_c/subject/CAP} quickly {VERB/t_c/flinch/flinches} and {VERB/t_c/shuffle/shuffles} away from you.]"
+        ]
+    ],
+    "hasmate_success_H1": [
+        [
+            "flirt",
+            "has_mate",
+            "Any",
+            "romantic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Don't tell t_m, but your flirting is a lot better than {PRONOUN/t_m/inposs}."
+        ]
+    ],
+    "hasmate_success_H2": [
+        [
+            "flirt",
+            "dislike",
+            "romantic_like",
+            "has_mate",
+            "any",
+            "they_blind"
+        ],
+        [
+            "You have a lot of nerve.",
+            "[Despite t_c's words, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to hide a smile.]"
+        ]
+    ],
+   "hasmate_success_H3": [
+        [
+            "flirt",
+            "has_mate",
+	 "romantic_like",
+	 "Any"
+        ],
+        [
+            "[t_c looks away, flustered by your flirting.]",
+            "[Just over {PRONOUN/t_c/poss} shoulder, you see t_m watching from the distance, {PRONOUN/t_m/poss} tail lashing.]",
+            "[... Whoops.]"
+        ]
+    ],
+    "hasmate_success_H4": [
+        [
+            "flirt",
+            "has_mate",
+            "romantic_like",
+            "Any",
+            "they_blind"
+        ],
+        [
+            "Oh, do you mean that?",
+            "[t_m calls for t_c in the distance. t_c almost jumps out of {PRONOUN/t_c/poss} fur in guilty surprise.]",
+            "Sorry, gotta go! I'll talk to you later!"
+        ]
+    ],
+    "hasmate_success_H5": [
+        [
+            "flirt",
+            "has_mate",
+            "romantic_like",
+            "Any",
+            "they_blind"
+        ],
+        [
+            "Does every cat want a piece of me, or what?",
+            "[t_c's chest puffs out, smug from all the attention.]"
+        ]
+    ],
+    "hasmate_success_H6": [
+        [
+            "flirt",
+            "has_mate",
+            "from_mate",
+            "romantic_like",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh, t_m beat you to it! Maybe next moon *wink*."
+        ]
+    ],
+    "flirt_reject_H20": [
+        [
+            "flirt",
+            "reject",
+            "any"
+        ],
+        [
+            "Oh, y_c! Thank you! Do you know who else has gorgeous eyes?",
+            "their_crush!~",
+            "[t_c sighs blissfully.]"
+        ]
+    ],
+    "flirt_reject_H21": [
+        [
+            "flirt",
+            "reject",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh, I wish their_crush spoke to me like that!"
+        ]
+    ],
+    "flirt_reject_H22": [
+        [
+            "flirt",
+            "reject",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You're really nice, y_c, but...",
+            "I can't get over their_crush. I hope you understand!"
+        ]
+    ],
+   "flirt_reject_H23": [
+        [
+            "flirt",
+            "reject",
+            "any",
+            "you_blind"
+        ],
+        [
+            "Sorry, y_c but... I have my eyes set out for their_crush."
+        ]
+    ],
+    "flirt_reject_H24": [
+        [
+            "flirt",
+            "reject",
+            "they_medicine_cat",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I would rather chew on ragwort than flirt with you."
+        ]
+    ],
+    "flirt_reject_H25": [
+        [
+            "flirt",
+            "reject",
+            "they_queen",
+	"clan_has_kits",
+            "platonic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I'm really busy with the kits right now , sorry! I'll talk to you later?"
+        ]
+    ],
+    "flirt_reject_H26": [
+        [
+            "flirt",
+            "reject",
+            "they_mediator",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "... This is a weird way to ask for mediation."
+        ]
+    ],
+    "flirt_reject_H27": [
+        [
+            "flirt",
+            "reject",
+            "they_warrior",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "StarClan, do I need to ask d_n to set me out on more patrols so you'll stop flirting with me?"
+        ]
+    ],
+   "hasmate_reject_H1": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "That was a nice attempt, but I am very happy with t_m."
+        ]
+    ],
+    "hasmate_reject_H2": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "platonic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[t_c laughs loudly at your flirting.]",
+            "Haha, good one, y_c! Oh, I can't wait to pass your joke to t_m!"
+        ]
+    ],
+    "hasmate_reject_H3": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Are you joking? You must be joking.",
+            "... you know I'm happily in a relationship with t_m... right?"
+        ]
+    ],
+    "hasmate_reject_H4": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Back off before I call t_m over."
+        ]
+    ],
+    "hasmate_reject_H5": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[t_c hisses at you, unamused with your flirting.]",
+            "Stop that! Don't you know I'm with t_m?"
+        ]
+    ],
+    "hasmate_reject_H6": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "Any",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Sorry, you're definitely not my type of cat."
+        ]
+    ],
+    "hasmate_reject_H7": [
+        [
+            "flirt",
+            "has_mate",
+            "non-mates",
+            "reject",
+	 "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "What?",
+            "Oh. Sorry, you're nothing like the <i>love of my life</i>.",
+            "Do you get the hint, or..."
+        ]
+    ],
+    "hasmate_reject_H8": [
+        [
+            "flirt",
+	 "Any",
+            "has_mate",
+            "non-mates",
+            "reject"
+        ],
+        [
+            "Look, y_c, do you not see how happy I am with t_m?",
+            "You can't separate me from {PRONOUN/t_m/object}, but good luck trying."
+        ]
+    ],
+    "hasmate_reject_H9": [
+        [
+            "flirt",
+	 "Any",
+            "has_mate",
+            "non-mates",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh uh, I just remembered that I need to do something!",
+            "With t_m, yup!",
+            "[t_c skitters off in a hurry.]"
+        ]
+    ],
+    "hasmate_reject_H10": [
+        [
+            "flirt",
+	 "Any",
+            "has_mate",
+            "non-mates",
+            "reject",
+            "they_deputy"
+        ],
+        [
+            "[t_c narrows {PRONOUN/t_c/poss} eyes at you, thoughtful.]",
+            "y_c, you are very brave, I'll give you that.",
+            "Oh, you know what? Since you're so brave, how about I place you on more border patrols?"
+        ]
+    ],
+   "frommate_reject_H1": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "dislike",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c, I'm not in the mood."
+        ]
+    ],
+    "frommate_reject_H2": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c... is it just me or did your flirting become worse over the moons we've been together?",
+            "Oh... Yes, I am totally joking! Haha... ha..."
+        ]
+    ],
+    "frommate_reject_H3": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "Any",
+            "dislike",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You must not mean that."
+        ]
+    ],
+    "frommate_reject_H4": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Awh! I can tell you've been... practicing that one!",
+            "Oh. You didn't? Uhem.",
+            "Ah -- Of course, I knew that! You're very... good. At flirting."
+        ]
+    ],
+    "frommate_reject_H5": [
+        [
+            "flirt",
+            "reject",
+            "from_mate",
+            "Any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I'm going to be honest.",
+            "That was the worst, y_c."
         ]
     ]
 }

@@ -68,7 +68,6 @@ def test():
         "t_l": _r, 
         "t_m": _r, 
         "t_p": _r,
-        "r_k": _r,
         "t_a": _r,
         "parent": _r,
         "parent1": _r,
@@ -103,8 +102,72 @@ def test():
         "r_c_sc": _r,
         "a_n": _r,
         "t_q": _r,
-        "k_k": _r
+        "brooding_t_l": _r,
+        "y_k": _r,
+        "dislike_r_c": _r,
+        "trust_r_c": _r,
+        "neutral_r_c": _r,
+        "r_c_brooding": _r,
+        "r_c_sweet": _r,
+        "plike_r_w": _r,
+        "r_c_upstanding": _r,
+        "r_a_silly": _r,
+        "r_c_unabashed": _r,
+        "plike_r_a": _r,
+        "r_w_upstanding": _r,
+        "r_a_cool": _r,
+        "r_w_neurotic": _r,
+        "dislike_r_w": _r,
+        "plove_t_s": _r,
+        "r_c_neurotic": _r,
+        "y_kk": _r,
+        "trust_r_w": _r,
+        "rdf_c": _r,
+        "plike_r_c": _r,
+        "r_c_stable": _r,
+        "r_w_assertive": _r,
+        "r_c_assertive": _r
     }
+    
+    cluster_addons = [
+        "_upstanding",
+        "_brooding",
+        "_sweet",
+        "_cool",
+        "_unlawful",
+        "_silly",
+        "_neurotic",
+        "_introspective",
+        "_unabashed",
+        "_assertive",
+        "_stable"
+    ]
+
+    rel_addons = [
+        "plike_",
+        "plove_",
+        "rlike_",
+        "rlove_",
+        "dislike_",
+        "hate_",
+        "neutral_",
+        "trust_",
+        "comfort_",
+        "respect_",
+        "jealous_"
+    ]
+
+    # addons = {}
+    
+    # for abbrev in list(replacement_dict.keys()):
+    #     for r in rel_addons:
+    #         addons[f"{r}{abbrev}"] = _r
+    #     for x in cluster_addons:
+    #         addons[f"{abbrev}{x}"] = _r
+    #         for r in rel_addons:
+    #             addons[f"{r}{abbrev}{x}"] = _r
+
+    # replacement_dict.update(addons)
 
     for x in range(0, 11):
         replacement_dict[f"n_c:{x}"] = _r

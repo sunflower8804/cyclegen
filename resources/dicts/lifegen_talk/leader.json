@@ -63,20 +63,6 @@
             "Come and find me sometime, and I'll show you."
         ]
     ],
-    "brooding_tomedapp": [
-        [
-            "medicine cat apprentice",
-            "medicine cat",
-            "brooding",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Have you heard anything from StarClan lately?",
-            "Hmph. Of course not. How typical.",
-            "Any longer and I'll start to believe our ancestors have given up on us."
-        ]
-    ],
     "brooding_leader": [
         [
             "kit",
@@ -1894,6 +1880,186 @@
             "How dare you speak to me in StarClan when you have such disrespect for your ancestors?",
             "Nine lives I was given, and you deemed yourself important enough to take the last of them.",
             "I hope you never join me here. I'll see you in the Dark Forest one day, I promise you."
+        ]
+    ],
+    "neurotic_leader_SQ1": [
+        [
+            "you_adult",
+            "they_leader",
+            "they_neurotic",
+            "platonic_like",
+            "trust"
+        ],
+        [
+            "[You poke your head into t_c's den to find {PRONOUN/t_c/object} pacing back and forth, thinking out loud.]",
+            "I wouldn't mind mentoring {PRONOUN/r_k/object}, but I don't think I'm the best fit... maybe r_w?",
+            "An apprentice's mentor has a big impact on {PRONOUN/r_k/object}! The right mentor can help an apprentice flourish... and the wrong one could really tear {PRONOUN/r_k/object} down...",
+            "[t_c stops pacing and turns to you.]",
+            "Do you have any thoughts on who a good mentor for r_k would be? I've been thinking in circles for the last hour."
+        ]
+    ],
+    "silly_leader_plotting": [
+        [
+            "you_deputy",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Ah, y_c! I wanted to request something of you.",
+            "Can you survey the Clan and figure out what their favorite kinds of prey are? I want to know.",
+            "Hah- what am I planning this time? Nothing, I'm just curious, of course! Not... planning anything at all!"
+        ]
+    ],
+    "silly_leader_overthrown": [
+        [
+            "Any",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c! Have you been well? Figured out your plot to overthrow me yet?",
+            "Wait, are you actually planning to overthrow me?",
+            "[You can't tell if t_c is being serious.]"
+        ]
+    ],
+    "silly_leader_drawing": [
+        [
+            "Any",
+            "silly"
+        ],
+        [
+            "[You walk into the leader's den, needing to ask {PRONOUN/t_c/object} an important question. When you find t_c clawing some kind of masterpiece onto the soft ground of the den, {PRONOUN/t_c/subject} quickly {VERB/t_c/step/steps} in front of it to obscure your view.]",	
+            "y_c! What did you need me for? Oh- what was I doing?",
+            "Illustrating my grand plan, of course! It's my dutiful responsibility as the humble leader of c_nClan!",
+            "[Really? At this time of the moon, at this time of day, in this part of c_nClan, localized entirely inside a drawing on these two fox-tails of ground? Now that you're intrigued, you ask to see it.]",
+            "No."
+        ]
+    ],
+    "silly_leader_accomplishment": [
+        [
+            "Any",
+            "silly",
+            "sweet",
+            "no_kit",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hello, y_c! What've you been up to?",
+            "...Oh dear, that question feels so loaded now that I'm a leader. I don't expect you to have single-pawedly defeated c_nClan's greatest threat, I know I certainly haven't!",
+            "Nobody in c_nClan is perfect. That's why we all work together, right?"
+        ]
+    ],
+    "silly_leader_decoration": [
+        [
+            "Any",
+            "silly",
+            "random_cat"
+        ],
+        [
+            "Hello, good day, greetings and salutations, y_c!",
+            "What do you think of these decorations I've been making?",
+            "[You look to t_c's paws and find a long string made from ivy and leaves tied together, unsure of its usage.]",
+            "Oh, why are we doing this? Well, I wanted to congratulate r_c on a recent achievement, and decided to decorate the camp as part of it!"
+        ]
+    ],
+    "shunned_sc_leader_H2": [
+        [
+            "you_leader",
+            "they_leader",
+            "they_sc",
+            "you_shunned"
+        ],
+        [
+            "We had the same destiny, yet different paths.",
+            "You decided to destroy your trust within the clan. A decision such as that, to murder one of your own...",
+            "I have little sympathy for you.",
+            "I wish for the Dark Forest to swallow you whole for your crimes, y_c."
+        ]
+    ],
+    "yourecovering_H2": [
+        [
+            "you_recovering_from_birth",
+            "they_leader",
+            "they_deputy",
+            "from_mate",
+            "you_any"
+        ],
+        [
+            "y_c, do you feel any better today? I can refrain from doing my duties for a little while and watch over you.",
+            "... No? The clan needs me more? Don't be ridiculous, y_c.",
+            "You're always going to come first."
+        ]
+    ],
+    "deaddeputy_connected_J1~1": [
+        [
+            "they_deputy",
+	"they_leader",
+            "they_sc",
+            "you_sc",
+            "min_you_deadfor_40",
+            "max_they_deadfor_6",
+            "you_adult",
+            "connected",
+            "they_upstanding",
+            "you_cool",
+            "they_blind"
+        ],
+        [
+            "y_c! y_c, you have to help me.",
+            "[t_c sprints up to you, skidding to a stop just short of you and kicking up a cloud of stardust.]",
+            "You've been here a while, right? So, there has to be a way out, doesn't there?",
+            "No, no, don't tell me it's not possible. The Clan still needs me-- I wasn't supposed to go yet.",
+            "Who's going to do the dawn patrols without me? o_cClan will be taking over our borders in no time!",
+            "Fine. If you can't help me, I'll find somecat who can.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} and {VERB/t_c/run/runs} away. You'll have to keep your eye on {PRONOUN/t_c/object}...]"
+        ]
+    ],
+    "deaddeputy_connected_J1~2": [
+        [
+            "they_deputy",
+            "they_sc",
+            "you_sc",
+            "min_you_deadfor_40",
+            "min_they_deadfor_10",
+            "you_adult",
+            "connected",
+            "they_upstanding",
+            "you_cool",
+            "they_blind"
+        ],
+        [
+            "[It's been a while since you've heard of t_c's escape attempts... Maybe {PRONOUN/t_c/subject} actually succeeded, you joke to yourself.]",
+            "Hi, y_c.",
+            "[Never mind. Here t_c is, looking just as starry as before.]",
+            "If you're here to make fun of me, save it. I couldn't find any way to get back to the Clan.",
+            "And I'm not saying you're right-- I just haven't figured it out yet.",
+            "Now, go away. I'm thinking."
+        ]
+    ],
+    "deaddeputy_connected_J1~3": [
+        [
+            "they_deputy",
+            "they_sc",
+            "you_sc",
+            "min_you_deadfor_40",
+            "min_they_deadfor_10",
+            "you_adult",
+            "connected",
+            "they_upstanding",
+            "you_cool",
+            "they_blind"
+        ],
+        [
+            "y_c, y_c! Oh, guess what!",
+            "[t_c looks ecstatic!]",
+            "The half-moon meeting for the Clans was yesterday, and I got to visit r_m's dreams!",
+            "Yeah, I do still miss living with the Clan, but...",
+            "You never told me being a StarClan cat could be so fun!",
+            "I'm gonna go ask d_c how {PRONOUN/d_c/subject} {VERB/d_c/make/makes} omens... I'm thinking of sending d_n a sign that r_w should be put on more patrols.",
+            "[Looks like {PRONOUN/t_c/subject} found some more work to do!]"
         ]
     ]
 }

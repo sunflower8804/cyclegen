@@ -560,7 +560,7 @@
           "virtue": ["devotion", "determination", "honesty", "justice"]
         },
         {
-          "text": "Tail lashing excitedly, m_c dips {PRONOUN/m_c/poss} head to r_c as {PRONOUN/r_c/subject} walk up. r_c returns the gesture and offers a life for [virtue], adding that {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} not sure {PRONOUN/m_c/subject} {VERB/m_c/need/needs} it, but it can't hurt.",
+          "text": "Tail lashing excitedly, m_c dips {PRONOUN/m_c/poss} head to r_c as {PRONOUN/r_c/subject} {VERB/r_c/walk/walks} up. r_c returns the gesture and offers a life for [virtue], adding that {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} not sure {PRONOUN/m_c/subject} {VERB/m_c/need/needs} it, but it can't hurt.",
           "virtue": ["devotion", "courage in the face of hardship", "compassion", "honor"]
         }
       ]
@@ -1027,7 +1027,7 @@
       "rank": [],
       "life_giving": [
         {
-          "text": "r_c sniffs that they don't know what sick, twisted turn of events led to you becoming leader of c_n, but rest assured, there will never be a place for you in StarClan. Still, they reluctantly give you a life for [virtue], if only for the good of the clanmates that they were stolen away from. They stalk back into the crowd muttering curses to your name.",
+          "text": "r_c sniffs that they don't know what sick, twisted turn of events led to you becoming leader of c_n, but rest assured, there will never be a place for you in StarClan. Still, they reluctantly give you a life for [virtue], if only for the good of the Clanmates that they were stolen away from. They stalk back into the crowd muttering curses to your name.",
           "virtue": ["morality", "righteousness", "strength"]
         }
       ]

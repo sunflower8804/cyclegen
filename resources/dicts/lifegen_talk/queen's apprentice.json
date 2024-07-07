@@ -319,7 +319,7 @@
             "clan_has_kits"
         ],
         [
-            "r_k's crying again. {PRONOUN/r_k/subject/CAP}{VERB/k_k/'ve/'s} been having such a hard time lately ...",
+            "r_k's crying again. {PRONOUN/r_k/subject/CAP}{VERB/r_k/'ve/'s} been having such a hard time lately ...",
             "Why haven't I comforted them?",
             "I dunno, I was waiting for you.",
             "I ... guess I was worried I'd mess it up somehow.",
@@ -1101,6 +1101,34 @@
             "[As soon as you see t_c, you run up to {PRONOUN/t_c/object} on your tiny little paws, asking {PRONOUN/t_c/object} about your new biggest, greatest, and possibly stupidest idea you've ever had.]",
             "Woah... that sounds like a really cool idea. You should lemme help you with it!",
             "Once I'm finished fixing this nest, I'll help you gather the stuff."
+        ]
+    ],
+    "neurotic_queenapp_SQ1": [
+        [
+            "neurotic",
+            "they_queen's_apprentice",
+            "you_queen's_apprentice",
+            "no_kit",
+            "platonic_like"
+        ],
+        [
+            "[t_c watches over the nursery, tail twitching anxiously.]",
+            "t_mn says that we're important because we're role models for the kits. But what if I'm not a good role model? What if I accidentally model something bad?"
+        ]
+    ],
+    "neurotic_queenapp_SQ2": [
+        [
+            "neurotic",
+            "no_kit",
+            "they_queen's_apprentice",
+            "platonic_like",
+            "clan_has_kits"
+        ],
+        [
+            "The kits are doing well! t_mn is showing me how to build their confidence through stories and games.",
+            "I hope they grow up to be self-assured, and stick up for themselves, and...",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses} and {VERB/t_c/duck/ducks} {PRONOUN/t_c/poss} head, suddenly mumbling.]",
+            "...you know. Not like me."
         ]
     ]
 }
