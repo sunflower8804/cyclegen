@@ -802,7 +802,7 @@ class UICatListDisplay(UIContainer):
         self.show_names = show_names
 
         self._favor_circle = pygame.transform.scale(
-            pygame.image.load(f"resources/images/fav_marker.png").convert_alpha(),
+            pygame.image.load(f"resources/images/fav_marker_1.png").convert_alpha(),
             (100, 100),
         )
         if game.settings["dark mode"]:

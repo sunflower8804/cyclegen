@@ -748,14 +748,6 @@ class ListScreen(Screens):
         self.full_cat_list = [
             cat for cat in Cat.all_cats_list if not cat.dead and not cat.outside
         ]
-
-        # update_sprite(cat)
-        if game.clan.clan_settings["show fav"] and the_cat.favourite != 0:
-
-            _temp = pygame.transform.scale(
-                pygame.image.load(
-                    f"resources/images/fav_marker_{the_cat.favourite}.png").convert_alpha(),
-                (100, 100))
                     
     def get_cotc_cats(self):
         """
