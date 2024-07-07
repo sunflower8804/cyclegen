@@ -601,7 +601,7 @@ class Patrol:
             if flag:
                 continue
 
-            if biome not in patrol.biome and "any" not in patrol.biome:
+            if biome not in patrol.biome and "any" not in patrol.biome and "Any" not in patrol.biome:
                 continue
             if camp not in patrol.camp and "any" not in patrol.camp and "Any" not in patrol.camp:
                 continue
