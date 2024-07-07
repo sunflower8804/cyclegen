@@ -313,6 +313,8 @@ class Screens():
                     button.show()
                 elif not game.clan.clan_settings["moons and seasons"] and game.switches['cur_screen'] != 'camp screen':
                     button.show()
+                else:
+                    button.hide()
             if name in ['moons_n_seasons', 'moons_n_seasons_arrow', 'dens', 'med_cat_den', 'lead_den', 'clearing', 'warrior_den',
                         'dens_bar']:
                 continue
