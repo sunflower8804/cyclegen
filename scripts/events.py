@@ -4332,15 +4332,20 @@ class Events:
 
                             else:
                                 previous_deputy_mention = ""
-                            
-                            if game.clan.deputy.shunned == 0:
+
+                            if game.clan.deputy:
+                                if game.clan.deputy.shunned == 0:
+                                    text = f"{game.clan.leader.name} chooses " \
+                                        f"{random_cat.name} to take over " \
+                                        f"as deputy. " + previous_deputy_mention
+                                elif game.clan.deputy.shunned == 2:
+                                    text = previous_deputy_mention + f" {game.clan.leader.name} chooses " \
+                                        f"{random_cat.name} to take over " \
+                                        f"as deputy."
+                            else:
                                 text = f"{game.clan.leader.name} chooses " \
-                                    f"{random_cat.name} to take over " \
-                                    f"as deputy. " + previous_deputy_mention
-                            elif game.clan.deputy.shunned == 2:
-                                text = previous_deputy_mention + f" {game.clan.leader.name} chooses " \
-                                    f"{random_cat.name} to take over " \
-                                    f"as deputy."
+                                        f"{random_cat.name} to take over " \
+                                        f"as deputy. " + previous_deputy_mention
 
                             involved_cats.append(game.clan.leader.ID)
                     elif leader_status == "not_here" and deputy_status == "here":
