@@ -4338,6 +4338,9 @@ class Events:
                                     text = previous_deputy_mention + f" {game.clan.leader.name} chooses " \
                                         f"{random_cat.name} to take over " \
                                         f"as deputy."
+                                    
+                            if not previous_deputy_mention:
+                                previous_deputy_mention = ""
 
                             text = (
                                 f"{game.clan.leader.name} chooses "
