@@ -2,9 +2,10 @@ import pygame.transform
 import pygame_gui.elements
 from random import choice, randint
 import ujson
+import re
 from scripts.event_class import Single_Event
 from .Screens import Screens
-from scripts.utility import get_text_box_theme, scale
+from scripts.utility import get_text_box_theme, scale, pronoun_repl
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
@@ -51,6 +52,9 @@ class AffairScreen(Screens):
                 if not self.selected_cat.dead:
                     self.update_selected_cat()
                     self.change_cat(self.selected_cat)
+                    
+                    # resetting selected cat so theyre not still in the box when reentering the affair screen next moon
+                    self.selected_cat = None
             elif event.ui_element == self.back_button:
                 self.change_screen('events screen')
             elif event.ui_element == self.next_cat_button:
@@ -254,23 +258,25 @@ class AffairScreen(Screens):
             elif Cat.fetch_cat(i).relationships.get(game.clan.your_cat.ID).trust < 10:
                 chance +=5
         if affair_cat.relationships.get(game.clan.your_cat.ID).dislike > 10:
-                chance += 10
+            chance += 10
         if affair_cat.relationships.get(game.clan.your_cat.ID).romantic_love > 20:
-                chance -= 10
+            chance -= 10
         elif affair_cat.relationships.get(game.clan.your_cat.ID).romantic_love < 10:
-                chance += 10
+            chance += 10
         if affair_cat.relationships.get(game.clan.your_cat.ID).comfortable > 20:
-                chance -= 10
+            chance -= 10
         elif affair_cat.relationships.get(game.clan.your_cat.ID).comfortable < 10:
-                chance += 10
+            chance += 10
         if affair_cat.relationships.get(game.clan.your_cat.ID).trust > 20:
-                chance -= 10
+            chance -= 10
         elif affair_cat.relationships.get(game.clan.your_cat.ID).trust < 10:
-                chance += 10
+            chance += 10
         if affair_cat.relationships.get(game.clan.your_cat.ID).admiration > 20:
-                chance -= 10
+            chance -= 10
         elif affair_cat.relationships.get(game.clan.your_cat.ID).admiration < 10:
-                chance += 10
+            chance += 10
+        if chance < 0:
+            chance = 0
         if randint(0, chance + randint(-10,10)) == 0:
             return True
         return False
@@ -279,11 +285,9 @@ class AffairScreen(Screens):
         return randint(0, 1)
 
     def adjust_txt(self, txt, affair_cat):
-        txt = txt.replace("a_n", str(affair_cat.name))
         random_mate = Cat.fetch_cat(choice(game.clan.your_cat.mate))
         while random_mate.dead or random_mate.outside:
             random_mate = Cat.fetch_cat(choice(game.clan.your_cat.mate))
-        txt = txt.replace("m_n", str(random_mate.name))
         random_warrior = Cat.fetch_cat(choice(game.clan.clan_cats))
         counter = 0
         while random_warrior.status != "warrior" or random_warrior.dead or random_warrior.outside or random_warrior.ID == affair_cat.ID or random_warrior.ID in game.clan.your_cat.mate or random_warrior.ID == game.clan.your_cat.ID:
@@ -291,6 +295,18 @@ class AffairScreen(Screens):
             counter += 1
             if counter > 30:
                 break
+
+        process_text_dict = {}
+        
+        process_text_dict["y_c"] = (game.clan.your_cat, choice(game.clan.your_cat.pronouns))
+        process_text_dict["a_n"] = (affair_cat, choice(affair_cat.pronouns))
+        process_text_dict["m_n"] = (random_mate, choice(random_mate.pronouns))
+        process_text_dict["r_w"] = (random_warrior, choice(random_warrior.pronouns))
+
+        txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), txt)
+
+        txt = txt.replace("a_n", str(affair_cat.name))
+        txt = txt.replace("m_n", str(random_mate.name))
         txt = txt.replace("r_w", str(random_warrior.name))
         return txt
 

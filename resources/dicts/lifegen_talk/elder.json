@@ -2,7 +2,9 @@
     "warrior_22193": [
         [
             "Any",
-            "you_shunned"
+            "you_shunned",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Your paws... they reek of blood."
@@ -11,7 +13,9 @@
     "dep_132": [
         [
             "newborn",
-            "insult"
+            "insult",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Wha.. What was that?"
@@ -21,42 +25,33 @@
         [
             "unabashed",
             "elder",
-            "no_kit"
+            "no_kit",
+            "you_blind"
         ],
         [
             "Have you noticed how annoyingly 'cool' the young cats have to be today?",
-            "Like, r_a is always out to impress everyone and act like {PRONOUN/r_a/subject}{VERB/t_c/'re/'s} better than others.",
+            "Like, r_a_cool is always out to impress everyone and act like {PRONOUN/r_a_cool/subject}{VERB/r_a_cool/'re/'s} better than others.",
             "What happened to being unique? Showing yourself instead of hiding beneath a facade?",
-            "Honestly, r_a looked dumb showing off that kick. Would never be suited for battle.",
+            "Honestly, r_a_cool looked dumb showing off that kick. Would never be suited for battle.",
             "[t_c dissolves into laughter.]",
-            "No, I think r_a's just darling when {PRONOUN/r_a/subject}{VERB/t_c/'re/'s} not busy being 'cool'."
+            "No, I think r_a_cool's just darling when {PRONOUN/r_a/subject}{VERB/t_c/'re/'s} not busy being 'cool'."
         ]
     ],
     "elder_1": [
         [
             "Any",
-            "you_shunned"
+            "you_shunned",
+            "you_blind"
         ],
         [
             "Your eyes hold the weight of a life taken."
         ]
     ],
-    "brooding_tomedapp": [
-        [
-            "medicine cat apprentice",
-            "medicine cat",
-            "brooding"
-        ],
-        [
-            "Have you heard anything from StarClan lately?",
-            "Hmph. Of course not. How typical.",
-            "Any longer and I'll start to believe our ancestors have given up on us."
-        ]
-    ],
     "elder_10": [
         [
             "Any",
-            "you_shunned"
+            "you_shunned",
+            "you_blind"
         ],
         [
             "The cats of StarClan. I can see them. They shudder in the wake of your transgression."
@@ -66,7 +61,9 @@
         [
             "kitten",
             "brooding",
-            "neutral"
+            "neutral",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Ugh. A kit. Get out, you little vermin. I'm trying to get some rest here. Tsk. Never any peace or quiet with kits around... ",
@@ -77,7 +74,9 @@
         [
             "kitten",
             "insult",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Watch your tongue, kit."
@@ -87,7 +86,9 @@
         [
             "Any",
             "insult",
-            "brooding"
+            "brooding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Watch your tongue!"
@@ -97,7 +98,9 @@
         [
             "Any",
             "insult",
-            "cool"
+            "cool",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Pfft... You make me laugh."
@@ -110,7 +113,9 @@
             "unabashed",
             "sweet",
             "unlawful",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Do I ever wish I could explore the territory with the rest of my Clanmates?",
@@ -126,7 +131,9 @@
             "unlawful",
             "unabashed",
             "silly",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Get me a piece of prey from the freshkill pile, wouldja, y_c? I'm practically starving to death over here.",
@@ -143,7 +150,9 @@
             "cool",
             "platonic_like",
             "from_parent",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c! Get over here and do some exercises with me, won't ya? If the medicine cat wants me to stay cooped up in this den all day, they'll have to drag me back in themselves!",
@@ -160,7 +169,10 @@
             "sweet",
             "stable",
             "platonic_like",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "Hey, y_c! How was your day? ",
@@ -176,7 +188,8 @@
             "assertive",
             "unlawful",
             "unabashed",
-            "young elder"
+            "young elder",
+            "you_blind"
         ],
         [
             "Psst. y_c.",
@@ -190,7 +203,9 @@
             "Any",
             "cool",
             "from_mate",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "There's my beautiful mate. How've you been, gorgeous? Survive another day of work without me?",
@@ -207,7 +222,9 @@
             "unlawful",
             "unabashed",
             "silly",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "The smell of this den ... StarClan, I can hardly stand it!",
@@ -219,7 +236,9 @@
         [
             "Any",
             "introspective",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Somehow, even as a kit, I've always felt like the elders' denis where I most belonged.",
@@ -235,7 +254,9 @@
             "unlawful",
             "brooding",
             "dislike",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hmph. Come to mock me again?",
@@ -248,10 +269,12 @@
             "assertive",
             "silly",
             "unlawful",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
-            "Hey, y_c, come and help me to my paws. I wanna play a prank on r_c.",
+            "Hey, y_c, come and help me to my paws. I wanna play a prank on plove_r_c.",
             "What? You mean you refuse to help a poor, helpless elder find a little harmless joy in {PRONOUN/t_c/poss} life? Hmph. How heartless!",
             "Guess who just landed {PRONOUN/y_c/self} a spot on my 'next-to-prank' list?"
         ]
@@ -264,7 +287,11 @@
             "stable",
             "sweet",
             "neurotic",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind",
+            "they_raspylungs",
+            "they_paralyzed"
         ],
         [
             "Hi, y_c. Want to try out this new training exercise the medicine cat just taught me?",
@@ -282,7 +309,8 @@
             "stable",
             "sweet",
             "neurotic",
-            "young elder"
+            "young elder",
+            "you_blind"
         ],
         [
             "Twenty-six, twenty-seven ...",
@@ -299,7 +327,9 @@
             "upstanding",
             "silly",
             "stable",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, y_c, it's so good to see you!",
@@ -313,7 +343,9 @@
             "Any",
             "sweet",
             "from_mate",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "y_c! There you are! How was your day, sweetheart?",
@@ -333,7 +365,8 @@
             "brooding",
             "upstanding",
             "cool",
-            "young elder"
+            "young elder",
+            "you_blind"
         ],
         [
             "All these pitying looks ... I just can't stand it!",
@@ -352,7 +385,9 @@
             "brooding",
             "upstanding",
             "cool",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "I'm so sick and tired of cats asking me why I chose to retire rather than doing something 'useful'.",
@@ -368,7 +403,9 @@
             "assertive",
             "sweet",
             "silly",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c! My denmates are the best storytellers... they just told me this really cool one, how did it go again?",
@@ -383,7 +420,9 @@
             "silly",
             "cool",
             "unlawful",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "How'd I end up retired? Oh well, it's a funny story...",
@@ -396,7 +435,9 @@
         [
             "kitten",
             "silly",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "How'd I end up retired? Oh well, it's a funny story ...",
@@ -409,7 +450,9 @@
         [
             "Any",
             "upstanding",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "What do you need, y_c? I'm very busy. I have a full schedule today!",
@@ -445,7 +488,9 @@
             "upstanding",
             "stable",
             "neurotic",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "C'mon, just one more bite!",
@@ -458,7 +503,9 @@
         [
             "Any",
             "brooding",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "How'd I end up in the elder's den?",
@@ -466,7 +513,7 @@
             "At least come up with an original question."
         ]
     ],
-    "brooding_elder12_AJ": [
+      "brooding_elder12_AJ": [
 	[
 		"Any",
 		"brooding",
@@ -528,7 +575,6 @@
 	]
 	],
 
-
     "neurotic_elder": [
         [
             "Any",
@@ -547,7 +593,9 @@
             "introspective",
             "sweet",
             "stable",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "How'd I end up in the elder's den?",
@@ -561,7 +609,9 @@
             "Any",
             "silly",
             "unlawful",
-            "young elder"
+            "young elder",
+            "they_blind",
+            "you_blind"
         ],
         [
             "How did I end up in the elders' den?",
@@ -571,7 +621,9 @@
     "assertivewarrior_leader2": [
         [
             "leader",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Oh, what I'd give for nine lives!",
@@ -585,7 +637,9 @@
             "assertive",
             "cool",
             "sweet",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Heya, y_c! How are the little ones today?",
@@ -597,7 +651,9 @@
             "queen's apprentice",
             "queen",
             "assertive",
-            "upstanding"
+            "upstanding",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c! How are the kits today?",
@@ -616,7 +672,9 @@
             "brooding",
             "unabashed",
             "unlawful",
-            "dislike"
+            "dislike",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hehe. Of course you'd never leave the nursery, y_c.",
@@ -628,7 +686,9 @@
     "assertivewarrior_mediatorapp": [
         [
             "mediator apprentice",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Man, you're insightful for an apprentice, y_c!",
@@ -641,7 +701,9 @@
             "medicine cat apprentice",
             "assertive",
             "unlawful",
-            "unabashed"
+            "unabashed",
+            "they_blind",
+            "you_blind"
         ],
         [
             "How's it going, mini-medicine cat? Herbal life treating you well?",
@@ -654,7 +716,9 @@
             "apprentice",
             "assertive",
             "cool",
-            "silly"
+            "silly",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Working hard, y_c? Or, is it more like hardly working? Hehe.",
@@ -666,7 +730,9 @@
         [
             "kitten",
             "apprentice",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey there, y_c! Stop by for a story? StarClan knows I got plenty to go around!",
@@ -678,7 +744,9 @@
     "assertive_elder_4": [
         [
             "assertive",
-            "Any"
+            "Any",
+            "they_blind",
+            "you_blind"
         ],
         [
             "*Cough* *Cough* ... Oh, hey, young'un! What brings you by the elders' den?",
@@ -703,7 +771,9 @@
     "assertive_elder_6": [
         [
             "elder",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Look at us, huh? Old bags of fur.",
@@ -718,7 +788,8 @@
             "you_brooding",
             "you_neurotic",
             "you_unlawful",
-            "you_assertive"
+            "you_assertive",
+            "you_blind"
         ],
         [
             "Ah, no need to look so grumpy, you old bag of bones, we got plenty to smile about!",
@@ -729,7 +800,9 @@
     "assertive_elder_8": [
         [
             "Any",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c, come walk some laps with me!",
@@ -749,7 +822,9 @@
             "queen",
             "deputy",
             "leader",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "So, you've stopped by the elders' den for a bit of wisdom, ah?",
@@ -766,7 +841,9 @@
             "mediator apprentice",
             "queen's apprentice",
             "warrior",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, kit, come change my moss, will ya? I'm chafing something unreal.",
@@ -782,7 +859,9 @@
             "queen's apprentice",
             "assertive",
             "platonic_like",
-            "respect"
+            "respect",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Tell ya what, kid, you're much smarter than I ever was at your age.",
@@ -793,7 +872,9 @@
         [
             "medicine cat apprentice",
             "medicine cat",
-            "assertive"
+            "assertive",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, y_c, you got anything to make my joints less stiff?",
@@ -808,7 +889,9 @@
             "cool",
             "unabashed",
             "unlawful",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Don't let anybody tell ya that we elders can't defend ourselves. In my prime, I could take down a whole o_cClan patrol ... With my leg broken!",
@@ -822,7 +905,9 @@
             "cool",
             "unabashed",
             "unlawful",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Tell ya what, there's one secret to me living this long: plain, dumb luck.",
@@ -832,7 +917,9 @@
     "introspective_elder_2": [
         [
             "any",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Good morning, y_c. It's a bright day out there, why are you still here in camp?",
@@ -846,7 +933,10 @@
         [
             "any",
             "introspective",
-            "they_jointpain"
+            "they_jointpain",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
         ],
         [
             "y_c. It's nice to see you, what seems to be the problem?",
@@ -875,7 +965,8 @@
     "introspective_elder_3": [
         [
             "any",
-            "introspective"
+            "introspective",
+            "they_blind"
         ],
         [
             "[t_c is batting at a leaf that had landed on {PRONOUN/t_c/object}.]",
@@ -888,7 +979,9 @@
     "introspective_elder_4": [
         [
             "any",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hm...? Oh good afternoon, y_c. You enjoying the day too?",
@@ -902,7 +995,9 @@
     "introspective_elder_5": [
         [
             "any",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "...",
@@ -921,7 +1016,9 @@
             "unabashed",
             "you_neurotic",
             "you_introspective",
-            "you_sweet"
+            "you_sweet",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Yaknow, y_c, I never really found you all that convincing as a warrior.",
@@ -949,7 +1046,9 @@
         [
             "Any",
             "cool",
-            "introspective"
+            "introspective",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Just an average day in c_nClan!",
@@ -961,7 +1060,10 @@
         [
             "kitten",
             "brooding",
-            "neutral"
+            "neutral",
+            "they_blind",
+            "you_deaf",
+            "they_deaf"
         ],
         [
             "[You normally like visiting with the older cats in the Clan, but t_c has always scared you a little.]",
@@ -973,7 +1075,9 @@
             "kitten",
             "brooding",
             "neutral",
-            "non-related"
+            "non-related",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Augh ... Who let the little nuisance into the elder's den again?",
@@ -984,7 +1088,9 @@
         [
             "kitten",
             "brooding",
-            "neutral"
+            "neutral",
+            "they_blind",
+            "you_blind"
         ],
         [
             "What is it, y_c? You want a story?",
@@ -996,7 +1102,9 @@
         [
             "kitten",
             "brooding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[You ask t_c if {PRONOUN/t_c/subject} {VERB/t_c/have/has} any cool stories from {PRONOUN/t_c/poss} youth {PRONOUN/t_c/subject} can tell you.]",
@@ -1012,30 +1120,22 @@
             "mediator apprentice",
             "queen's apprentice",
             "brooding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Growing up fast, huh, y_c?",
             "Everyone's in such a hurry. Just try and hold onto your innocence as long as you can ... I can guarantee, you'll miss it when it's gone."
         ]
     ],
-    "brooding_elder5": [
-        [
-            "no_kit",
-            "brooding",
-            "platonic_like"
-        ],
-        [
-            "Hmph. My advice to you, y_c: don't ever get old.",
-            "I used to be one of the most valuable warriors in this Clan. Now, everyone just talks about me like I'm obsolete. A nobody.",
-            "My entire life was my purpose to my Clan ... what do I do now that that purpose is over?"
-        ]
-    ],
     "brooding_elder6": [
         [
             "no_kit",
             "brooding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hmph. My advice to you, y_c: don't ever get old.",
@@ -1048,7 +1148,9 @@
             "no_kit",
             "brooding",
             "assertive",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "If a battle ever made its way into c_nClan camp, don't count on me just lazing around the elder's den.",
@@ -1087,7 +1189,9 @@
         [
             "Any",
             "brooding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "My advice? Try not to let yourself get too attached to anyone.",
@@ -1098,17 +1202,315 @@
         [
             "Any",
             "brooding",
-            "platonic_like"
+            "platonic_like",
+            "they_blind",
+            "you_blind"
         ],
         [
             "All these young cats milling about ... Politics, drama ... It's all just play to me now.",
             "When you've been around as long as I have, you start to realize just how little stuff like that matters."
         ]
     ],
+"sweet_elder_1": [
+        [
+            "newborn",
+             "sweet"
+        ],
+        [
+            "Welcome to c_nClan, y_c! Ah, I remember being a little kit like you... Well, not <i>as<i/> little as you, of course!",
+            "You'll be someone future cats tell stories about, I can already tell... until then, you better be ready for all the teasing you can get~."
+        ]
+    ],
+"sweet_elder_2": [
+        [
+            "kitten",
+             "sweet"
+        ],
+        [
+            "Oh, hello, y_c! How are you doing this fine day? Eating well, I presume? You've grown so much when I last saw you!",
+            "Would you like to hear a story? I've got one I'd love to tell, if you're interested. Get comfortable, it's a long one! It all started way back thousands of moons ago..."
+        ]
+    ],
+"sweet_elder_3": [
+        [
+            "kitten",
+             "sweet"
+        ],
+        [
+            "What was it like in my day? Well, it was much different. Many cats you'd never even know used to guide my path.",
+            "There are things I miss, some I don't, but I'd never change the way things went. Otherwise there's a chance I might never have met you, and you're one of the brightest lights in the Clan. Never forget that."
+        ]
+    ],
+"sweet_elder_4": [
+        [
+            "kitten",
+             "sweet"
+        ],
+        [
+            "Hahaha, good morning to you too, y_c! Did you have a good night's sleep?",
+            "Come on, let's go get something to eat. You can tell me more about the story you were mentioning yesterday, if you'd like.",
+            "Will I tell other kits? If you would like me to, I can! But, I understand that some stories aren't meant for sharing."
+        ]
+    ],
+"sweet_elder_5": [
+        [
+            "you_app",
+             "sweet"
+        ],
+        [
+            "Oh, y_c! It's so nice to see you, what brings you here today?",
+            "You want to hear a story? Oh my! Most cats don't really want to hear stories once they become apprentices...",
+            "Well then, go get something to eat and settle down. I have one that I think you'll love."
+        ]
+    ],
+"sweet_elder_6": [
+        [
+            "you_app",
+	     "trust",
+             "sweet"
+        ],
+        [
+            "Oh, y_c, what are you doing up so late? ... A nightmare? I see..",
+            "Come here and watch the stars with me, trust me.",
+            "[As a shooting star darts across the sky, lighting up the night as it passes, t_c looks at you.]",
+            "That was a shooting star. Back when I was a kit, they used to say that if you saw a shooting star, a StarClan cat was telling you they were looking after you.",
+            "Looks like you're not so alone in this battle after all."
+        ]
+    ],
+"sweet_elder_7": [
+        [
+            "apprentice",
+             "sweet"
+        ],
+        [
+            "Greetings, y_c! Have you come to change our moss?",
+            "Well, how about I tell you a story while you do that, hm? Just to help pass the time, I know these tasks can be tedious."
+        ]
+    ],
+"sweet_elder_8": [
+        [
+            "you_queen's_apprentice",
+	    "trust",
+            "random_cat",
+             "sweet"
+        ],
+        [
+            "Hey y_c! Come sit with me, I need to tell you something.",
+            "While you were out gathering moss for the nursery, you had r_w looking over the kits, yes?",
+            "Now, I'm not the type to usually call someone out, but {PRONOUN/r_w/subject}never actually watched over them.",
+            "I'm really not sure why, but {PRONOUN/r_w/subject} left the kits in my care and left camp.",
+            "I just figured you'd want to know, I know as well as any other cat that kits shouldn't go unattended."
+        ]
+    ],
+"sweet_elder_10": [
+        [
+            "warrior",
+            "medicine cat",
+            "mediator",
+            "queen",
+             "sweet"
+        ],
+        [
+            "Hello, y_c! I have a question for you.",
+            "Have you ever heard of what's at the end of a rainbow?",
+            "Cats say it glimmers brighter than a thousand stars... but nothing else.",
+            "I like to think that's where StarClan kits have touched the ground to play in soft clovers.",
+            "I spent my whole youth wondering what it truly was but I was never brave enough to go.",
+            "What do you think?"
+        ]
+    ],
+"sweet_elder_11": [
+        [
+            "warrior",
+            "medicine cat",
+            "mediator",
+            "queen",
+             "sweet"
+        ],
+        [
+            "[You've had a question nagging at the back of your mind, and you decided to ask y_c, but..]",
+            "[You see the elder with {PRONOUN/t_c/poss} gaze fixated on the sky, unwavering.]",
+            "[You decide to ask another time.]"
+        ]
+    ],
+"sweet_elder_12": [
+        [
+            "warrior",
+            "you_clanfounder",
+            "you_clanborn",
+            "they_clanfounder",
+            "they_clanborn",
+             "sweet"
+        ],
+        [
+            "[You spot t_c looking at you with a happy look on {PRONOUN/t_c/poss} face. {PRONOUN/t_c/subject/CAP} smile and wave at you.]",
+            "Sorry if I scared you! I'm just so proud of seeing how much this clan has grown.",
+            "You, especially, have grown into a fine warrior."
+        ]
+    ],
+"sweet_elder_13": [
+        [
+            "you_medicine_cat",
+	    "comfort",
+             "sweet"
+        ],
+        [
+            "[It's t_c's monthly checkup day, but {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} a little quieter than usual.]",
+            "[You ask {PRONOUN/t_c/object} what's wrong, you usually can't escape from a story but {PRONOUN/t_c/subject} haven't said a word.]",
+            "I apologize... I just worry. I've spent many moons on this earth, wonderful and painful.",
+            "But I worry... There's only so many moons left for me. What will happen to c_nClan?",
+            "What if I can't be here to take care of you all?",
+            "[You gently nudge the elder, giving them a reassuring look. You promise to {PRONOUN/t_c/object} that everything will be okay.]",
+            "[t_c gives you a smile, still saddened but definitely looking much better.]",
+            "Thank you... I do believe I owe you a story."
+        ]
+    ],
+"sweet_elder_14": [
+        [
+            "you_mediator",
+	"platonic_like",
+             "sweet"
+        ],
+        [
+            "[Today has been rough, cats are fighting left and right and you haven't caught a break.]",
+            "[You collapse onto a warm rock, desperately trying to get some rest and unaware of the cat you almost just laid on.]",
+            "Well, hello there. Are you alright? You look like you've aged a hundred moons?",
+            "[You'd recognize the voice of the ever-kind elder anywhere, feeling {PRONOUN/t_c/poss} tail drape over your side.]",
+            "[You explain to {PRONOUN/t_c/object} through frustrated breaths how your day has gone, and t_c gives you an empathetic look.]",
+            "Oh dear... You should take some time off.",
+            "[You go to protest, that you need to be on the lookout in case anyone else starts fighting.]",
+            "Well, perhaps I could use someone to talk to, right here on these warm stones."
+        ]
+    ],
+"sweet_elder_15": [
+        [
+            "queen",
+            "random_cat",
+             "sweet"
+        ],
+        [
+            "[You and one of the kits are playing hide and seek, and you decide to check the Elder's Den.]",
+            "[You spot t_c, paws tucked under {PRONOUN/t_c/object} with a small bundle of fur underneath their tail.]",
+            "[Your gaze fixated on the small bundle of fur giggling underneath t_c's tail, you ask if {PRONOUN/t_c/subject} have seen the kit.]",
+            "r_k? Hmm, no, I don't think I have.",
+            "[If the smile on {PRONOUN/t_c/poss} face didn't give {PRONOUN/t_c/object} away, the amused squeals from the mystery tail lump sure did.]"
+        ]
+    ],
+"sweet_elder_16": [
+        [
+             "deputy",
+             "sweet"
+        ],
+        [
+            "[You stare at the leader's den, nervousness in your throat. Will that really be yours someday?]",
+            "[You feel someone move up next to you, t_c's tail wrapping comfortingly around you.]",
+            "You've got this."
+        ]
+    ],
+"sweet_elder_17": [
+        [
+             "deputy",
+            "random_cat",
+             "sweet"
+        ],
+        [
+            "Hey y_c! I hope you don't mind me bringing up a concern, know this isn't your fault at all.",
+            "[t_c settles down beside you with a gentle purr, {PRONOUN/t_c/poss} tail curling around {PRONOUN/t_c/object}.]",
+            "r_a has been doing an incredible amount of work lately, especially for their age, but...",
+            "I'm starting to worry. {PRONOUN/r_a/subject/CAP} don't play as much anymore and seem so focused on everything...",
+            "Could you talk to them? Or stop sending {PRONOUN/r_a/object} on patrols for a little while to catch up.",
+            "Ultimately, it's your decision, I'm just worried for them."
+        ]
+    ],
+"sweet_elder_18": [
+        [
+             "deputy",
+             "sweet"
+        ],
+        [
+            "Hey y_c, I have a favor to ask of you, if you don't mind?",
+            "If you wouldn't mind walking with me, I'd like to go outside and see the birds.",
+            "I've heard rumors from the Warriors about a nest nearby... I'd like to see one again.",
+            "Of course, I understand if you don't want to do that. It's entirely up to you."
+        ]
+    ],
+"sweet_elder_19": [
+        [
+             "leader",
+             "sweet"
+        ],
+        [
+            "y_c, I have something very important to tell you, if you wouldn't mind.",
+            "[t_c nods {PRONOUN/t_c/poss} head towards the stack of prey near the center of the camp.]",
+            "I feel like the prey is turning into crowfood at an... alarming rate. I'm not sure of what to do.",
+            "One of the younger cats brought it to me in tears... It broke my heart. So I thought I'd bring it to you."
+        ]
+    ],
+"sweet_elder_20": [
+        [
+             "leader",
+	"platonic_like",
+             "sweet"
+        ],
+        [
+            "[t_c purrs, welcoming your presence and dipping {PRONOUN/t_c/poss} head respectfully.]",
+            "y_c! Good to see you today!",
+            "[Even as a leader, it's always nice to be greeted by the ever-friendly elder.]"
+        ]
+    ],
+"sweet_elder_21": [
+        [
+             "leader",
+             "sweet"
+        ],
+        [
+            "Hey y_c, do you mind if I ask a question?",
+            "Mm...",
+            "When you got your lives, did you see... ah- nevermind, I don't want to spring this on you out of the blue."
+        ]
+    ],
+"sweet_elder_22": [
+        [
+             "elder",
+             "sweet"
+        ],
+        [
+            "[You stretch out on a sunny rock, happening to share it with t_c.]",
+            "Am I in your way? Hang on...",
+            "[The other elder shuffles around to give you more room, purring away.]"
+        ]
+    ],
+"sweet_elder_23": [
+        [
+             "elder",
+             "sweet"
+        ],
+        [
+            "[You feel a paw feebly nudging your side.]",
+            "Hey, y_c? I've got a surprise for you!",
+            "[{PRONOUN/t_c/subject/CAP} place a very fresh piece of prey at your paws, smiling proudly at you.]",
+            "The very first thing the clan caught this morning. Enjoy!"
+        ]
+    ],
+"sweet_elder_24": [
+        [
+             "elder",
+             "random_cat",
+             "sweet"
+        ],
+        [
+            "[You've been feeling really exhausted lately, it's been hard to be in good spirits.]",
+            "[Even so, r_k seems determined to get a story out of you, prodding you and asking repeatedly.]",
+            "Hey there! Would you like a story? I think I've got a fun one to tell!",
+            "[t_c winks at you, mouthing 'get some rest' before turning to tell the kit {PRONOUN/t_c/poss} story.]"
+        ]
+    ],
     "stable_Elder_Gen_01": [
         [
             "Any",
-            "stable"
+            "stable",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Arg, back in my day-",
@@ -1122,7 +1524,9 @@
         [
             "you_sc",
             "they_df",
-            "kitten"
+            "kitten",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Get out of the way before I step on you, kit."
@@ -1156,11 +1560,119 @@
             "stable",
             "dislike",
             "neutral",
-            "no_kit"
+            "no_kit",
+            "they_blind",
+            "you_blind"
         ],
         [
             "*Sigh* Can't you see I have more important things to do, y_c?",
             "Go back to catching mice, or whatever."
+        ]
+    ],
+    "eldershunned_H1": [
+        [
+            "they_shunned",
+            "they_elder",
+            "you_any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "To shun me in my old age... How dare they? Such little respect."
+        ]
+    ],
+    "eldershunned_H2": [
+        [
+            "they_shunned",
+            "they_elder",
+            "you_any",
+            "you_younger",
+            "dislike",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "My bones might be croaking and my health might be deteriorating, but that won't stop me from hurting you, youngling."
+        ]
+    ],
+    "eldershunned_H3": [
+        [
+            "they_shunned",
+            "they_elder",
+            "you_any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Ughh, finally, I was granted peace and quiet away from these offending o_cClan members.",
+            "And yet you still bother me.",
+            "Scram!"
+        ]
+    ],
+    "silly_elder_greetings": [
+        [
+            "Any",
+            "they_elder",
+            "you_younger",
+            "silly",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Oh, hi, y_c! It's been a while since you've said hello to me.",
+            "Well, whatcha been up to? Heroically defeat any large dogs recently?",
+            "Hmm... no? What about overthrowing a corrupt o_cClan? Banishing a mew-levolent Dark Forest cat?",
+            "Oh, your life is so boring, y_c!"
+        ]
+    ],
+    "silly_elder_yawn": [
+        [
+            "Any",
+            "they_elder",
+            "you_younger",
+            "silly",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Yawn... I don't want to get up... y_c, would you bring me a mouse from the fresh-kill pile?",
+            "Why'd I say \"yawn\" out loud, you ask?",
+            "Well, because I'm- *yawn*",
+            "Fox-dung! I'm trying to think about yawning without actually yawning! And I clearly failed! I need a failure mouse right now, y_c! Bring me my failure mouse! Your elders command you!"
+        ]
+    ],
+    "silly_elder_bossy": [
+        [
+            "Any",
+            "silly",
+            "they_elder",
+            "assertive",
+            "they_blind"
+        ],
+        [
+            "Maybe it's nice to be an elder, after all. At first it was boring, but now I've learned to finally take advantage of it!",
+            "I get to tell people to do whatever I want them to, and they actually go through with it because I'm an elder!",
+            "'Bring me my fresh-kill!' ,'Get these ticks off my back!'",
+            "Maybe the apprentices think I'm bossy and argumentative, but when they're elders, they'll finally realize I was right all along. Because I was.",
+            "[t_c puffs out their chest in victory.]"
+        ]
+    ],
+    "youdeaf_R19": [
+        [
+            "only_you_deaf",
+            "you_leader",
+            "no_kit",
+            "they_warrior",
+            "they_elder",
+            "they_mediator"
+            
+        ],
+        [
+            "[t_c comes to sit with you as you watch the Clan. Everything is going well and you bask in that knowledge.]",
+            "[But after a moment, {PRONOUN/t_c/subject} {VERB/t_c/bring/brings} up a good point with a quick signal. You need to think about a dog that was recently spotted on the territory.]",
+            "[You sign to t_c for {PRONOUN/t_c/poss} opinion. Between the two of you, you come up with a solid plan to drive off the dog.]",
+            "[Your head lifts as your ears wriggle and your whiskers twitch in the sign for 'thank you' before getting up to visit d_n and tell {PRONOUN/d_n/object} the plan.]"
         ]
     ]
 }
