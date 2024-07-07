@@ -4318,35 +4318,29 @@ class Events:
                             # No additional involved cats
                         else:
                             if game.clan.deputy:
-                                if game.clan.deputy.outside or game.clan.deputy.dead:
+                                if game.clan.deputy.shunned == 0:
                                     previous_deputy_mention = random.choice([
                                         f"They know that {game.clan.deputy.name} would approve.",
                                         f"They hope that {game.clan.deputy.name} would approve.",
                                         f"They don't know if {game.clan.deputy.name} would approve, "
                                         f"but life must go on. "
                                     ])
-                                if game.clan.deputy.shunned == 2:
+                                elif game.clan.deputy.shunned == 2:
                                     previous_deputy_mention = f"Since {game.clan.deputy.name}'s crime was revealed, a new cat must be chosen to take their place."
                                     
                                 involved_cats.append(game.clan.deputy.ID)
 
-                                if game.clan.deputy.outside or game.clan.deputy.dead:
-                                    text = f"{game.clan.leader.name} chooses " \
-                                        f"{random_cat.name} to take over " \
-                                        f"as deputy. " + previous_deputy_mention
-                                if game.clan.deputy.shunned == 2:
-                                    text = previous_deputy_mention + f" {game.clan.leader.name} chooses " \
-                                        f"{random_cat.name} to take over " \
-                                        f"as deputy."
-                                    
-                            if not previous_deputy_mention:
+                            else:
                                 previous_deputy_mention = ""
-
-                            text = (
-                                f"{game.clan.leader.name} chooses "
-                                f"{random_cat.name} to take over "
-                                f"as deputy. " + previous_deputy_mention
-                            )
+                            
+                            if game.clan.deputy.shunned == 0:
+                                text = f"{game.clan.leader.name} chooses " \
+                                    f"{random_cat.name} to take over " \
+                                    f"as deputy. " + previous_deputy_mention
+                            elif game.clan.deputy.shunned == 2:
+                                text = previous_deputy_mention + f" {game.clan.leader.name} chooses " \
+                                    f"{random_cat.name} to take over " \
+                                    f"as deputy."
 
                             involved_cats.append(game.clan.leader.ID)
                     elif leader_status == "not_here" and deputy_status == "here":
