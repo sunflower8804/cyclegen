@@ -855,7 +855,7 @@ class Clan:
                 self.all_clans.append(OtherClan())
             return
 
-        game.switches["error_message"] = "There was an error loading the clan.json"
+        game.switches["error_message"] = "There was an error loading the clan.json - json error"
         with open(
             get_save_dir() + "/" + game.switches["clan_list"][0] + "clan.json",
             "r",
@@ -880,6 +880,7 @@ class Clan:
         else:
             med_cat = None
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check clanname/biome/camp_bg/gamemode"
         game.clan = Clan(
             name=clan_data["clanname"],
             leader=leader,
@@ -898,7 +899,9 @@ class Clan:
             game.clan.followingsc = True
         game.clan.reputation = int(clan_data["reputation"])
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check clan age"
         game.clan.age = clan_data["clanage"]
+        game.switches["error_message"] = "Error loading ---clan.json. Check season"
         game.clan.starting_season = (
             clan_data["starting_season"]
             if "starting_season" in clan_data
@@ -906,10 +909,13 @@ class Clan:
         )
         get_current_season()
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check Leader related info"
         game.clan.leader_lives = leader_lives
         game.clan.leader_predecessors = clan_data["leader_predecessors"]
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check Deputy related info"
         game.clan.deputy_predecessors = clan_data["deputy_predecessors"]
+        game.switches["error_message"] = "Error loading ---clan.json. Check Medcat related info"
         game.clan.med_cat_predecessors = clan_data["med_cat_predecessors"]
         game.clan.med_cat_number = clan_data["med_cat_number"]
         # Allows for the custom pronouns to show up in the add pronoun list after the game has closed and reopened.
@@ -939,12 +945,13 @@ class Clan:
             game.clan.add_cat(game.clan.demon)
             game.clan.demon.df = True
    
-        game.clan.leader_lives = leader_lives
-        game.clan.leader_predecessors = clan_data["leader_predecessors"]
+        ##Commented this out because I don't know why it's in here twice. If lead/dep/med stuff starts sobbing... ye ##
+        # game.clan.leader_lives = leader_lives
+        # game.clan.leader_predecessors = clan_data["leader_predecessors"]
 
-        game.clan.deputy_predecessors = clan_data["deputy_predecessors"]
-        game.clan.med_cat_predecessors = clan_data["med_cat_predecessors"]
-        game.clan.med_cat_number = clan_data["med_cat_number"]
+        # game.clan.deputy_predecessors = clan_data["deputy_predecessors"]
+        # game.clan.med_cat_predecessors = clan_data["med_cat_predecessors"]
+        # game.clan.med_cat_number = clan_data["med_cat_number"]
 
         # check for symbol
         if "clan_symbol" in clan_data:
@@ -978,21 +985,27 @@ class Clan:
                 game.clan.add_to_unknown(Cat.all_cats[cat])
             else:
                 print("WARNING: Cat not found:", cat)
+                game.switches["error_message"] = "Error loading ---clan.json. Cat not found:", cat
+        game.switches["error_message"] = "Error loading ---clan.json. Check War related info"
         if "war" in clan_data:
             game.clan.war = clan_data["war"]
 
+        game.switches["error_message"] = "Error loading ---clan.json. Faded cat error"
         if "faded_cats" in clan_data:
             if clan_data["faded_cats"].strip():  # Check for empty string
                 for cat in clan_data["faded_cats"].split(","):
                     game.clan.faded_ids.append(cat)
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check Clan focus info"
         game.clan.last_focus_change = clan_data.get("last_focus_change")
         game.clan.clans_in_focus = clan_data.get("clans_in_focus", [])
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check Patrolled_Cats"
         # Patrolled cats
         if "patrolled_cats" in clan_data:
             game.patrolled = clan_data["patrolled_cats"]
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check Mediated"
         # Mediated flag
         if "mediated" in clan_data:
             if not isinstance(clan_data["mediated"], list):
@@ -1000,13 +1013,19 @@ class Clan:
             else:
                 game.mediated = clan_data["mediated"]
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check Pregnancy.json"
         self.load_pregnancy(game.clan)
+        game.switches["error_message"] = "Error loading ---clan.json. Check Herbs.json"
         self.load_herbs(game.clan)
+        game.switches["error_message"] = "Error loading ---clan.json. Check Disasters jsons"
         self.load_disaster(game.clan)
+        game.switches["error_message"] = "Error loading ---clan.json. Accessories???"
         self.load_accessories()
+        game.switches["error_message"] = "Error loading ---clan.json. Check freshkill_pile.json"
         if game.clan.game_mode != "classic":
             self.load_freshkill_pile(game.clan)
         
+        game.switches["error_message"] = "Error loading ---clan.json. Check player cat info"
         if "your_cat" in clan_data:
             game.clan.your_cat = Cat.all_cats[clan_data["your_cat"]]
 
@@ -1019,24 +1038,29 @@ class Clan:
         if "exile_return" in clan_data:
             game.clan.murdered = clan_data["exile_return"]
         
+        game.switches["error_message"] = "Error loading ---clan.json. Check achievements"
         if "achievements" in clan_data:
             game.clan.achievements = clan_data["achievements"]
         
+        game.switches["error_message"] = "Error loading ---clan.json. Check talks"
         if "talks" in clan_data:
             game.clan.talks = clan_data["talks"]
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check Disaster info"
         if "disaster" in clan_data:
             game.clan.disaster = clan_data["disaster"]
         
         if "disaster_moon" in clan_data:
             game.clan.disaster_moon = clan_data["disaster_moon"]
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check Focus info"
         if "focus" in clan_data:
             game.clan.focus = clan_data["focus"]
 
         if "focus_moons" in clan_data:
             game.clan.focus_moons = clan_data["focus_moons"]
 
+        game.switches["error_message"] = "Error loading ---clan.json. Check other clan meds(?)"
         if "other_med" in clan_data:
             other_med = []
             for c in clan_data["other_med"]:
