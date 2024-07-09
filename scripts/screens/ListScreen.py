@@ -746,7 +746,7 @@ class ListScreen(Screens):
         self.current_group = "clan"
         self.death_status = "living"
         self.full_cat_list = [
-            cat for cat in Cat.all_cats_list if not cat.dead and not cat.outside
+            cat for cat in Cat.all_cats_list if not cat.dead and not cat.outside and cat.moons >= 0
         ]
                     
     def get_cotc_cats(self):
