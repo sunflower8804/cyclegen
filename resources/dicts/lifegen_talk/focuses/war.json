@@ -522,7 +522,6 @@
 "[After a moment, you hear a weak giggle.]"
 ]
 ],
-
 "neurotic_warfocus_SQ123":[
         [
 "focus",
@@ -542,122 +541,6 @@
 "...I'm so scared, y_c. I'm so scared, I feel sick."
         ]
     ],
-
-
-"neurotic_warfocus_SQ124":[
-        [
-"focus",
-"they_queen",
-"they_queen's_apprentice",
-"they_neurotic",
-	"no_kit",
-	"clan_has_kits"
-        ],
-        [
-"r_k keeps asking about the war, and I'm not sure what to tell {PRONOUN/r_k/object}.",
-"I don't want to scare {PRONOUN/r_k/object}, but I don't want to pretend everything's fine, either.",
-"And I also don't want {PRONOUN/r_k/object} to grow up thinking violence is the only answer...",
-"I hope all of this ends soon."
-        ]
-    ],
-
-"neurotic_warfocus_SQ125":[
-        [
-"focus",
-"they_queen",
-"they_queen's_apprentice",
-"they_neurotic",
-	"no_kit",
-	"clan_has_kits"
-        ],
-        [
-"[t_c sits outside of the nursery like a guard, anxiously scanning the edge of camp. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps} when r_k prods them with one paw.]",
-"Oh, hello! I'll come play in a moment.",
-"What am I doing? Just... keeping watch for a bit. Go back inside, okay?"
-        ]
-    ],
-"war_focusdf_SQ0": [
-        [
-"focus",
- 	"they_dftrainee",
-	"you_not_dftrainee",
-	"they_warrior",
-	"they_apprentice",
-	"you_warrior",
-	"you_apprentice",
-"you_deputy",
-"you_leader"
-
-        ],
-        [
-           "[On patrol with t_c and r_w today, you were ambushed by a small group of w_cClan warriors.]",
-"[One of the w_cClan cats seemed... familiar with t_c, mocking {PRONOUN/t_c/object} and almost exclusively targeting {PRONOUN/t_c/object}.]",
-"[You wonder what that's all about.]"
-        ]
-    ],
-
-"war_focusdf_SQ13": [
-        [
-            "focus",            
-"they_dftrainee",
-	"you_dftrainee",
-	"no_kit"
-        ],
-        [
-           "[t_c slides {PRONOUN/t_c/poss} claws in and out.]",
-"War with w_cClan. This is what we've been training for.",
-"[From {PRONOUN/t_c/poss} knowing glance your way, you don't think {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} talking about ordinary training.]"
-        ]
-    ],
-
-"war_focusdf_SQ14": [
-        [
-            "focus",           
-"they_dftrainee",
-	"you_dftrainee",
-	"no_kit",
-	"platonic_like"
-        ],
-        [
-           "Be careful training tonight. I really think some of those w_cClan warriors are out for blood.",
-"[In the Dark Forest, w_cClan trainees have been even rougher than usual.]", 
-"[You think your mentors are pairing you against each other on purpose, just to see what happens.]" 
-        ]
-    ],
-
-"war_focusdf_SQ8": [
-        [
-            "focus",            
-"they_not_dftrainee",
-	"you_dftrainee",
-	"you_apprentice",
-	"you_warrior",
-	"you_deputy",
-	"you_leader",
-	"platonic_like"
-        ],
-        [
-           "[t_c stares at your scratches from last night's Dark Forest training.]",
-"Are those from w_cClan? What happened?!",
-"[The war is a unexpectedly good cover for your unexplained injuries...]"
-        ]
-    ],
-
-"war_focusdf_SQ7": [
-        [
-            "focus",
-"any",
-"they_dftrainee",
-"they_neurotic",
-	"you_dftrainee",
-	"platonic_like",
-	"trust"
-        ],
-        [
-"When I started training in the Dark Forest, I told myself I was going to learn to be brave there.",
-"And I think... I think I'm braver now, but it's obviously not enough, is it?",
-"I'm still scared of this war."]],
-
     "war_focus_J1": [
         [
             "focus",
@@ -1828,26 +1711,6 @@
             "I'm still scared of this war."
         ]
     ],
-    "neurotic_warfocus_SQ13":[
-        [
-            "focus",
-            "they_not_dftrainee",
-            "they_neurotic",
-            "no_kit",
-            "platonic_like",
-            "trust",
-            "comfort"
-        ],
-        [
-            "[It's midday, but you find y_c curled up in {PRONOUN/t_c/poss} nest. {PRONOUN/t_c/poss/CAP} {VERB/t_c/don't/doesn't} open {PRONOUN/t_c/poss} eyes when you approach.]",
-            "Hi, y_c. I'm not feeling great.",
-            "I'll be okay, and I don't want to bother r_m when they're so busy already.",
-            "I just... I'm thinking about the war, and everything that will happen before it's over...",
-            "...cats I care about being hurt, and fighting other cats for real...",
-            "...I'm so scared, y_c. I'm so scared, I feel sick."
-        ]
-    ],
-
     "neurotic_warfocus_SQ14":[
         [
             "focus",
