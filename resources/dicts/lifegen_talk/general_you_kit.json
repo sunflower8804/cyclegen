@@ -175,7 +175,7 @@
         [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "queen's apprentice",
             "assertive",
@@ -212,7 +212,7 @@
         [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "queen's apprentice",
             "assertive",
@@ -903,7 +903,7 @@
         [
             "newborn",
             "cool",
-	        "random_cat",
+	        
 	        "you_clanborn",
 	        "non-related",
 	        "you_blind",
@@ -931,7 +931,7 @@
         [
             "kitten",
             "cool",
-	        "random_cat",
+	        
 	        "you_blind",
 	        "they_blind",
 	        "neutral"
@@ -975,7 +975,7 @@
             "cool",
 	        "they_adult",
 	        "they_app",
-	        "random_cat",
+	        
 	        "you_blind",
 	        "they_blind",
             "connected"
@@ -1039,7 +1039,7 @@
             "cool",
         	"unlawful",
         	"from_parent",
-        	"random_cat"
+        	
         ],
         [
             "[After getting caught making mischief in the medicine den, r_m chides you in front of your parent, t_c, who nods along sternly.]",
@@ -1059,7 +1059,7 @@
             "kitten",
             "cool",
         	"platonic_like",
-        	"random_cat",
+        	
         	"they_warrior",
         	"they_blind"
         ],
@@ -1078,7 +1078,7 @@
         [
             "kitten",
             "cool",
-	        "random_cat",
+	        
 	        "neutral",
 	        "they_blind"
         ],
@@ -1442,7 +1442,7 @@
             "introspective",
             "from_parent",
             "platonic_like",
-            "random_cat",
+            
             "they_blind",
             "you_blind"
         ],
@@ -1990,7 +1990,7 @@
         [
             "kitten",
             "neurotic",
-            "random_cat",
+            
             "they_blind",
             "you_blind"
         ],
@@ -2346,7 +2346,7 @@
             "sweet",
             "cool",
             "stable",
-            "random_cat"
+            
         ],
         [
             "Look how tiny {PRONOUN/y_c/subject} {VERB/y_c/are/is}, plike_r_c!",
@@ -2478,7 +2478,7 @@
         [
             "newborn",
             "upstanding",
-            "random_cat"
+            
         ],
         [
             "[t_c looks solemn as {PRONOUN/t_c/subject} {VERB/t_c/stand/stands} over you.]",
@@ -3653,7 +3653,7 @@
             "any",
             "they_blind",
             "you_blind",
-            "random_cat"
+            
         ],
         [
             "...",

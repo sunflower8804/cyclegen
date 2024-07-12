@@ -241,9 +241,9 @@
     "assertive_medapp1": [
    
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "medicine cat",
             "assertive",
             "unlawful",
@@ -259,9 +259,9 @@
     "assertiveapp_medapp3": [
    
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "medicine cat",
             "assertive",
             "silly",
@@ -647,7 +647,7 @@
             "deputy",
             "leader",
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "queen",
             "queen's apprentice",
             "assertive",
@@ -837,7 +837,7 @@
     "cool_2": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "cool",
             "introspective",
             "they_blind",
@@ -906,7 +906,7 @@
         [
             "apprentice",
             "queen's apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "sweet",
             "they_blind",
@@ -921,7 +921,7 @@
         [
             "apprentice",
             "queen's apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "sweet",
             "they_blind",
@@ -962,7 +962,7 @@
     ],
     "sweet_mediapp_9": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1418,7 +1418,7 @@
             "any",
             "assertive",
             "from_your_apprentice",
-            "random_cat",
+            
             "they_blind",
             "you_blind"
         ],
@@ -1435,7 +1435,7 @@
         [
             "mediator",
             "mediator apprentice",
-            "random_cat",
+            
             "you_blind"
         ],
         [
@@ -1503,7 +1503,7 @@
         [
             "Any",
             "silly",
-            "random_cat"
+            
         ],
         [
             "[The mediator apprentice has been walking around all day in some sort of disguise, decorating themself in leaves and twigs that seem to have at least some rhyme or reason. Intrigued, you come up to them to ask why they've decorated their pelt today.]",
@@ -1518,7 +1518,7 @@
         [
             "Any",
             "silly",
-            "random_cat"
+            
         ],
         [
             "y_c! You see r_c arguing with d_n over there about c_nClan's fresh-kill stock? Well, I wasn't sure how to help resolve the situation, but now I think I have the perfect plan!",
@@ -1531,7 +1531,7 @@
         [
             "Any",
             "silly",
-            "random_cat"
+            
         ],
         [
             "Oh dear... y_c, I dunno what to do!",

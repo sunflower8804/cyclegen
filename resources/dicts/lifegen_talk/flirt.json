@@ -296,7 +296,7 @@
     "j5h3sd7": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "reject",
             "they_blind",
             "you_blind"
@@ -1323,7 +1323,7 @@
             "Any",
             "cool",
         	"reject",
-        	"random_cat",
+        	
         	"you_blind",
         	"they_blind"
         ],
@@ -1350,7 +1350,7 @@
             "Any",
             "cool",
         	"reject",
-	        "random_cat",
+	        
 	        "they_blind",
 	        "you_blind"
         ],

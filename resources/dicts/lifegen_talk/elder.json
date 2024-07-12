@@ -698,7 +698,7 @@
     ],
     "assertive_medapp": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "unlawful",
             "unabashed",
@@ -814,7 +814,7 @@
         [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "medicine cat",
             "mediator apprentice",
             "mediator",
@@ -837,7 +837,7 @@
     "assertive_elder_10": [
         [
             "apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "queen's apprentice",
             "warrior",
@@ -854,7 +854,7 @@
         [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "queen's apprentice",
             "assertive",
@@ -870,7 +870,7 @@
     ],
     "assertive_elder_12": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "medicine cat",
             "assertive",
             "they_blind",
@@ -1116,7 +1116,7 @@
     "brooding_elder4": [
         [
             "apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "queen's apprentice",
             "brooding",
@@ -1291,7 +1291,7 @@
         [
             "you_queen's_apprentice",
 	    "trust",
-            "random_cat",
+            
              "sweet"
         ],
         [
@@ -1385,7 +1385,7 @@
 "sweet_elder_15": [
         [
             "queen",
-            "random_cat",
+            
              "sweet"
         ],
         [
@@ -1410,7 +1410,7 @@
 "sweet_elder_17": [
         [
              "deputy",
-            "random_cat",
+            
              "sweet"
         ],
         [
@@ -1495,7 +1495,7 @@
 "sweet_elder_24": [
         [
              "elder",
-             "random_cat",
+             
              "sweet"
         ],
         [

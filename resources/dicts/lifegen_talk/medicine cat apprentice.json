@@ -175,7 +175,7 @@
     "assertive_elder_3": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "you_blind",
             "they_blind"
@@ -189,7 +189,7 @@
     "assertive_elder_4": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "platonic_like",
             "you_blind",
@@ -1079,7 +1079,7 @@
         [
             "apprentice",
             "queen's apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "sweet"
         ],
@@ -1092,7 +1092,7 @@
         [
             "apprentice",
             "queen's apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "sweet",
             "you_blind",
@@ -1129,7 +1129,7 @@
     ],
     "sweet_medapp_9": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "sweet",
             "they_blind",
             "clan_has_kits"
@@ -1739,7 +1739,7 @@
     ],
     "trainee_living_3c": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "you_dftrainee",
             "they_not_dftrainee",
             "from_mentor",

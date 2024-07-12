@@ -35,7 +35,7 @@
     ],
     "assertive_mentor5": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "from_mentor",
             "you_blind",
@@ -51,7 +51,7 @@
     ],
     "assertive_mentor6": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "platonic_like",
             "from_mentor",
@@ -67,7 +67,7 @@
     ],
     "assertive_mentor3": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "from_mentor",
             "you_blind"
@@ -97,7 +97,7 @@
     "assertive_elder_2": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "cool",
             "you_blind",
@@ -118,7 +118,7 @@
     "assertive_elder_3": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive"
         ],
         [
@@ -130,7 +130,7 @@
     "assertive_elder_4": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "platonic_love",
             "you_blind",
@@ -158,7 +158,7 @@
     "assertive_elder_6": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "you_blind",
             "they_blind"
@@ -182,7 +182,7 @@
     "assertive_elder_8": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "platonic_like",
             "you_blind",
@@ -233,7 +233,7 @@
     "assertive_elder_11": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "you_upstanding",
             "you_stable",
@@ -253,7 +253,7 @@
     "assertive_elder_12": [
         [
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "platonic_like",
             "they_younger"
@@ -768,7 +768,7 @@
         [
             "any",
             "introspective",
-            "random_cat"
+            
         ],
         [
             "Yes, y_c? Do you need something?",
@@ -855,7 +855,7 @@
         [
             "queen's apprentice",
             "queen",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "silly",
             "stable",
@@ -887,7 +887,7 @@
     "assertivemedcat_queensapp3": [
         [
             "queen's apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "silly",
             "you_blind",
@@ -903,7 +903,7 @@
     "assertivemedcat_queensapp3_2": [
         [
             "queen's apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "silly",
             "you_blind",
@@ -1313,7 +1313,7 @@
         [
             "apprentice",
             "queen's apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "sweet",
             "you_blind",
@@ -1328,7 +1328,7 @@
         [
             "apprentice",
             "queen's apprentice",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "mediator apprentice",
             "sweet",
             "you_blind"
@@ -1365,7 +1365,7 @@
     ],
     "sweet_meddie_9": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "sweet",
             "you_blind"
         ],
@@ -1495,7 +1495,7 @@
         [
             "deputy",
             "sweet",
-            "random_cat"
+            
         ],
         [
             "[t_c is sorting {PRONOUN/t_c/poss} herbs, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} a bit worried about something. {PRONOUN/t_c/subject/CAP} {VERB/t_c/nod/nods} as {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, {PRONOUN/t_c/poss} voice quiet.]",
@@ -1537,7 +1537,7 @@
         [
             "leader",
             "sweet",
-            "random_cat",
+            
             "they_blind",
             "they_deaf",
             "you_deaf"
@@ -1552,7 +1552,7 @@
         [
             "leader",
             "sweet",
-            "random_cat",
+            
             "you_blind"
         ],
         [
@@ -1716,7 +1716,7 @@
     ],
     "stable_shunned_you_Apprentice_MedicineCat_02": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "you_shunned",
             "stable",
             "they_medicine_cat",
@@ -1825,7 +1825,7 @@
         [
             "Any",
             "stable",
-            "random_cat",
+            
             "you_blind",
             "they_blind"
         ],
@@ -1869,7 +1869,7 @@
             "you_sc",
             "any",
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "you_blind",
             "they_blind"
         ],
@@ -1884,7 +1884,7 @@
         [
             "they_dftrainee",
             "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "they_blind",
             "they_blind"
         ],
