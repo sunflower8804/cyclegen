@@ -1445,6 +1445,7 @@
             "choice2": {
                 "text": "[Agree]",
                 "next_scene": "agree"
+	    }
         },
         "object": [
             "[You puff your chest out and tell t_c that you'd gladly die for your Clan.]",
@@ -1456,7 +1457,6 @@
             "Or, maybe just another coward. Really, who's to say?",
             "Hey, wanna cut the next border patrol with me? I've been faking sick since I was in the nursery ... Maybe you could use a few pointers."
         ]
-        }
     },
 
    "war_focus_AJ28": [
