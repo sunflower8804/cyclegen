@@ -230,7 +230,8 @@ class Patrol:
                     self.patrol_leader = choice(self.patrol_cats)
         else:
             # for DF patrols, lifegen patrols and dates, only your cat can be the leader.
-            self.patrol_leader = game.clan.your_cat
+            # self.patrol_leader = game.clan.your_cat
+            pass
 
         if clan.all_clans and len(clan.all_clans) > 0:
             self.other_clan = choice(clan.all_clans)
