@@ -94,9 +94,7 @@ class DFPatrolScreen(Screens):
             self.selected_cat = event.ui_element.return_cat_object()
             if self.selected_cat.ID == self.cat_id:
                 if self.selected_cat in self.current_patrol:
-                    if self.selected_cat.ID == game.clan.your_cat.ID:
-                        print("cant remove urself from the df patrol jackass")
-                    else:
+                    if self.selected_cat.ID != game.clan.your_cat.ID:
                         self.current_patrol.remove(self.selected_cat)
                 elif len(self.current_patrol) < 3:
                     self.current_patrol.append(self.selected_cat)
@@ -114,9 +112,7 @@ class DFPatrolScreen(Screens):
             self.update_button()
         elif event.ui_element == self.elements["add_remove_cat"]:
             if self.selected_cat in self.current_patrol:
-                if self.selected_cat.ID == game.clan.your_cat.ID:
-                    print("cant remove urself from the df patrol jackass")
-                else:
+                if self.selected_cat.ID != game.clan.your_cat.ID:
                     self.current_patrol.remove(self.selected_cat)
             else:
                 self.current_patrol.append(self.selected_cat)

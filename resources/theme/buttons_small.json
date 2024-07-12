@@ -3606,16 +3606,16 @@
         "prototype": "#image_button",
         "images": {
             "normal_image": {
-                "path": "resources/images/buttons/filter_ID.png"
+                "path": "resources/images/buttons/filter_id.png"
             },
             "hovered_image": {
-                "path": "resources/images/buttons/filter_ID_hover.png"
+                "path": "resources/images/buttons/filter_id_hover.png"
             },
             "selected_image": {
-                "path": "resources/images/buttons/filter_ID.png"
+                "path": "resources/images/buttons/filter_id.png"
             },
             "disabled_image": {
-                "path": "resources/images/buttons/filter_ID_hover.png"
+                "path": "resources/images/buttons/filter_id_hover.png"
             }
         }
     },
