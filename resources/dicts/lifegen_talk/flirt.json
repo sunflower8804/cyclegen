@@ -3770,8 +3770,10 @@
         [
             "flirt",
             "has_mate",
-	 "romantic_like",
-	 "Any"
+            "romantic_like",
+            "Any",
+            "they_deaf",
+            "you_deaf"
         ],
         [
             "[t_c looks away, flustered by your flirting.]",
@@ -3886,7 +3888,7 @@
             "flirt",
             "reject",
             "they_queen",
-	"clan_has_kits",
+	        "clan_has_kits",
             "platonic_like",
             "you_blind",
             "they_blind"
@@ -4016,7 +4018,7 @@
             "has_mate",
             "non-mates",
             "reject",
-	 "Any",
+	        "Any",
             "you_blind",
             "they_blind"
         ],
@@ -4029,7 +4031,7 @@
     "hasmate_reject_H8": [
         [
             "flirt",
-	 "Any",
+	        "Any",
             "has_mate",
             "non-mates",
             "reject"
@@ -4042,7 +4044,7 @@
     "hasmate_reject_H9": [
         [
             "flirt",
-	 "Any",
+	        "Any",
             "has_mate",
             "non-mates",
             "reject",
@@ -4058,7 +4060,7 @@
     "hasmate_reject_H10": [
         [
             "flirt",
-	 "Any",
+	        "Any",
             "has_mate",
             "non-mates",
             "reject",

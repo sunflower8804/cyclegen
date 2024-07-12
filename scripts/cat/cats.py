@@ -586,7 +586,7 @@ class Cat:
 
         # Deal with leader death
         text = ""
-        darkforest = game.clan.instructor.df
+        darkforest = True if game.clan.followingsc is False else False
         isoutside = self.outside
         if self.status == 'leader':
             if game.clan.leader_lives > 0:

@@ -2044,7 +2044,7 @@ class ProfileScreen(Screens):
     def get_living_cats(self):
         living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside:
+            if not the_cat.dead and not the_cat.outside and not the_cat.moons == -1:
                 living_cats.append(the_cat)
         return living_cats
 

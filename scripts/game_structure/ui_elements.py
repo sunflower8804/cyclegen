@@ -801,12 +801,14 @@ class UICatListDisplay(UIContainer):
 
         self.show_names = show_names
 
-        self._favor_circle = pygame.transform.scale(
-            pygame.image.load(f"resources/images/fav_marker_1.png").convert_alpha(),
-            (100, 100),
-        )
-        if game.settings["dark mode"]:
-            self._favor_circle.set_alpha(150)
+        # for cat in cat_list:
+        #     self._favor_circle = pygame.transform.scale(
+        #         pygame.image.load(f"resources/images/fav_marker_{cat.favourite}.png").convert_alpha(),
+        #         (100, 100),
+        #     )
+
+        # if game.settings["dark mode"]:
+        #     self._favor_circle.set_alpha(150)
 
         cell_width = floor(self.relative_rect.width / self.columns)
         cell_height = floor(self.relative_rect.height / self.rows)
@@ -891,7 +893,13 @@ class UICatListDisplay(UIContainer):
                         kitty = display_cats[i]
                     except IndexError:
                         break
-                    if kitty.favourite:
+                    if kitty.favourite > 0:
+                        self._favor_circle = pygame.transform.scale(
+                                pygame.image.load(f"resources/images/fav_marker_{kitty.favourite}.png").convert_alpha(),
+                                (100, 100),
+                            )
+                        if game.settings["dark mode"]:
+                            self._favor_circle.set_alpha(150)
                         self.create_favor_indicator(i, container)
 
         # CAT SPRITE

@@ -3246,11 +3246,52 @@
         [
             "they_lastinggrief",
             "they_grieving",
-            "Any"
+            "Any",
+            "they_deaf",
+            "you_deaf"
         ],
         [
-            "[t_c has a far off look in their eye.]",
-            "[It's best to leave them alone.]"
+            "[t_c has a far off look in {PRONOUN/t_c/poss} eye.]",
+            "[It's best to leave {PRONOUN/t_c/object} alone.]"
+        ]
+    ],
+    "lastinggrief_H2_J1": [
+        [
+            "they_grieving",
+            "Any",
+            "they_deaf",
+            "you_deaf",
+            "they_shunned"
+        ],
+        [
+            "[t_c has a far off look in {PRONOUN/t_c/poss} eye.]",
+            "[It's best to leave {PRONOUN/t_c/object} alone.]"
+        ]
+    ],
+    "lastinggrief_H2_J2": [
+        [
+            "they_grieving",
+            "Any",
+            "they_deaf",
+            "you_deaf",
+            "you_shunned"
+        ],
+        [
+            "[t_c has a far off look in {PRONOUN/t_c/poss} eye.]",
+            "[It's best to leave {PRONOUN/t_c/object} alone.]"
+        ]
+    ],
+    "lastinggrief_H2_J3": [
+        [
+            "they_grieving",
+            "Any",
+            "they_deaf",
+            "you_deaf",
+            "both_shunned"
+        ],
+        [
+            "[t_c has a far off look in {PRONOUN/t_c/poss} eye.]",
+            "[It's best to leave {PRONOUN/t_c/object} alone.]"
         ]
     ]
 }

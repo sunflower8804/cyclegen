@@ -1056,7 +1056,8 @@ class TalkScreen(Screens):
                             continue
                 else:
                     if "they_born_deaf" in tags or "only_they_born_deaf" not in tags:
-                        continue
+                        if "they_deaf" not in tags:
+                            continue
                 if "they_hearing" in tags:
                     continue
                 # cats who went deaf later in life can get pretty much all normal dialogue, as they're able to talk regularly.
@@ -1494,7 +1495,7 @@ class TalkScreen(Screens):
     def get_living_cats(self):
         living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside:
+            if not the_cat.dead and not the_cat.outside and not the_cat.moons == -1:
                 living_cats.append(the_cat)
         return living_cats
 
