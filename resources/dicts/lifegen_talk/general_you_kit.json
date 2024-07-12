@@ -176,8 +176,8 @@
             "kitten",
             "apprentice",
             "medicine_cat_apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "assertive",
             "unlawful",
             "unabashed",
@@ -213,8 +213,8 @@
             "kitten",
             "apprentice",
             "medicine_cat_apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "assertive",
             "insult",
             "unlawful",
@@ -1035,10 +1035,11 @@
 
         "cool_you_kit_10_AJ": [
         [
-            "kitten",
+            "you_kitten",
             "cool",
         	"unlawful",
         	"from_parent",
+            "any"
         	
         ],
         [
@@ -2346,6 +2347,8 @@
             "sweet",
             "cool",
             "stable",
+            "you_newborn",
+            "they_warrior"
             
         ],
         [
@@ -2476,8 +2479,10 @@
     ],
     "upstanding_newborn3": [
         [
-            "newborn",
+            "you_newborn",
+            "you_kitten",
             "upstanding",
+            "they_any"
             
         ],
         [
@@ -3652,7 +3657,7 @@
             "grievingyou",
             "any",
             "they_blind",
-            "you_blind",
+            "you_blind"
             
         ],
         [

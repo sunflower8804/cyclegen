@@ -913,7 +913,7 @@
     "assertiveapp_medapp3": {
         "tags": [
             "medicine_cat_apprentice",
-            "medicine cat",
+            "medicine_cat",
             "assertive",
             "silly",
             "upstanding",
@@ -1063,8 +1063,8 @@
         "tags": [
             "apprentice",
             "medicine_cat_apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "platonic_like",
             "assertive",
             "they_apprentice",
@@ -1529,7 +1529,7 @@
     },
     "assertivemedcat_queen": {
         "tags": [
-            "queen's apprentice",
+            "queen's_apprentice",
             "queen",
             "assertive",
             "cool",
@@ -2586,8 +2586,8 @@
             "upstanding",
             "apprentice",
             "medicine_cat_apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "they_kitten"
         ],
         "intro": [
@@ -3739,8 +3739,8 @@
             "stable",
             "apprentice",
             "medicine_cat_apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "they_older"
         ],
         "intro": [
