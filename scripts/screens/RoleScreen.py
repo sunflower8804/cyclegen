@@ -598,7 +598,7 @@ class RoleScreen(Screens):
         if self.the_cat.dead and game.clan.instructor.ID == self.the_cat.ID:
             is_instructor = True
         is_demon = False
-        if self.the_cat.dead and game.clan.is_demon.ID == self.the_cat.ID:
+        if self.the_cat.dead and game.clan.demon.ID == self.the_cat.ID:
             is_demon = True
 
         previous_cat = 0
