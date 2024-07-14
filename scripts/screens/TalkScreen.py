@@ -634,6 +634,8 @@ class TalkScreen(Screens):
                     else:
                         if dead_cat.name == cat.name:
                             continue
+                else:
+                    continue
             
             # FORGIVEN TAGS
 
@@ -718,7 +720,7 @@ class TalkScreen(Screens):
 
             if "they_grieving" not in tags and "grief stricken" in cat.illnesses and not cat.dead:
                 continue
-            if "they_grieving" in tags and "grief stricken" not in cat.illnesses and not cat.dead:
+            if "you_grieving" in tags and "grief stricken" not in you.illnesses and not you.dead:
                 continue
 
             if "they_recovering_from_birth" in tags and "recovering from birth" not in cat.injuries:
@@ -788,6 +790,8 @@ class TalkScreen(Screens):
                 continue
 
             if "grief stricken" not in you.illnesses and "you_grieving" in tags and not you.dead:
+                continue
+            if "grief stricken" not in cat.illnesses and "they_grieving" in tags and not cat.dead:
                 continue
 
             if "starving" not in you.illnesses and "you_starving" in tags:
@@ -1052,7 +1056,8 @@ class TalkScreen(Screens):
                             continue
                 else:
                     if "they_born_deaf" in tags or "only_they_born_deaf" not in tags:
-                        continue
+                        if "they_deaf" not in tags:
+                            continue
                 if "they_hearing" in tags:
                     continue
                 # cats who went deaf later in life can get pretty much all normal dialogue, as they're able to talk regularly.
@@ -1385,7 +1390,7 @@ class TalkScreen(Screens):
             game.clan.talks.clear()
 
         # Assign weights based on tags
-        weighted_tags = ["you_pregnant", "they_pregnant", "from_mentor", "from_your_parent", "from_adopted_parent", "adopted_parent", "half sibling", "littermate", "siblings_mate", "cousin", "adopted_sibling", "parents_siblings", "from_df_mentor", "from_your_kit", "from_your_apprentice", "from_df_apprentice", "from_mate", "from_parent", "adopted_parent", "from_kit", "sibling", "from_adopted_kit", "they_injured", "they_ill", "you_injured", "you_ill", "you_grieving", "you_forgiven", "they_forgiven", "murderedyou", "murderedthem"] # List of tags that increase the weight
+        weighted_tags = ["you_pregnant", "they_pregnant", "from_mentor", "from_your_parent", "from_adopted_parent", "adopted_parent", "half sibling", "littermate", "siblings_mate", "cousin", "adopted_sibling", "parents_siblings", "from_df_mentor", "from_your_kit", "from_your_apprentice", "from_df_apprentice", "from_mate", "from_parent", "adopted_parent", "from_kit", "sibling", "from_adopted_kit", "they_injured", "they_ill", "you_injured", "you_ill", "you_grieving", "they_grieving", "you_forgiven", "they_forgiven", "murderedyou", "murderedthem"] # List of tags that increase the weight
         weights = []
         for item in texts_list.values():
             tags = item["tags"] if "tags" in item else item[0]
@@ -1490,7 +1495,7 @@ class TalkScreen(Screens):
     def get_living_cats(self):
         living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside:
+            if not the_cat.dead and not the_cat.outside and not the_cat.moons == -1:
                 living_cats.append(the_cat)
         return living_cats
 
@@ -3431,7 +3436,11 @@ class TalkScreen(Screens):
                     text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
                     self.cat_dict["d_c"] = dead_cat
                 except:
-                    return ""
+                    if "lasting grief" in cat.permanent_condition:
+                        # cats w lasting grief are allowed to have no grief cat
+                        pass
+                    else:
+                        return ""
             elif "grief stricken" in you.illnesses:
                 try:
                     dead_cat = Cat.all_cats.get(you.illnesses['grief stricken'].get("grief_cat"))
@@ -3443,7 +3452,10 @@ class TalkScreen(Screens):
                     text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
                     self.cat_dict["d_c"] = dead_cat
                 except:
-                    return ""
+                    if "lasting grief" in you.permanent_condition:
+                        pass
+                    else:
+                        return ""
 
             if "d_c" in text:
                 cluster = False

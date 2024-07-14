@@ -606,9 +606,12 @@ class ListScreen(Screens):
 
         # adding in the guide if necessary, this ensures the guide isn't affected by sorting as we always want them to
         # be the first cat on the list
-        if (self.current_group == "df" and game.clan.instructor.df) or (
-            self.current_group == "sc" and not game.clan.instructor.df
-        ):
+    
+        if self.current_group == "df":
+            if game.clan.demon in self.full_cat_list:
+                self.full_cat_list.remove(game.clan.demon)
+            self.full_cat_list.insert(0, game.clan.demon)
+        elif self.current_group == "sc":
             if game.clan.instructor in self.full_cat_list:
                 self.full_cat_list.remove(game.clan.instructor)
             self.full_cat_list.insert(0, game.clan.instructor)

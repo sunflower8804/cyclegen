@@ -1666,7 +1666,7 @@ def get_leader_life_notice() -> str:
     if lives > 0:
         text = f"The leader has {int(lives)} lives left."
     elif lives <= 0:
-        if game.clan.instructor.df is False:
+        if game.clan.followingsc:
             text = 'The leader has no lives left and has travelled to StarClan.'
         else:
             text = 'The leader has no lives left and has travelled to the Dark Forest.'
