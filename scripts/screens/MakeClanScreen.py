@@ -2221,7 +2221,7 @@ class MakeClanScreen(Screens):
         )
         self.text["leader"] = pygame_gui.elements.UILabel(
             scale(pygame.Rect((0, 90), (-1, -1))),
-            text=f"Your name: {game.clan.your_cat.name}",
+            text=f"Your name: {self.your_cat.name}",
             container=self.elements["text_container"],
             object_id=get_text_box_theme("#text_box_30_horizleft"),
             manager=MANAGER,
