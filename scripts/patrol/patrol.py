@@ -193,40 +193,45 @@ class Patrol:
 
         # DETERMINE PATROL LEADER
         # sets medcat as leader if they're in the patrol
-        if "medicine cat" in self.patrol_status_list:
-            index = self.patrol_status_list.index("medicine cat")
-            self.patrol_leader = self.patrol_cats[index]
-        # If there is no medicine cat, but there is a medicine cat apprentice, set them as the patrol leader.
-        # This prevents warrior from being treated as medicine cats in medicine cat patrols.
-        elif "medicine cat apprentice" in self.patrol_status_list:
-            index = self.patrol_status_list.index("medicine cat apprentice")
-            self.patrol_leader = self.patrol_cats[index]
-            # then we just make sure that this app will also be app1
-            self.patrol_apprentices.remove(self.patrol_leader)
-            self.patrol_apprentices = [self.patrol_leader] + self.patrol_apprentices
-        # sets leader as patrol leader
-        elif "leader" in self.patrol_status_list:
-            index = self.patrol_status_list.index("leader")
-            self.patrol_leader = self.patrol_cats[index]
-        elif "deputy" in self.patrol_status_list:
-            index = self.patrol_status_list.index("deputy")
-            self.patrol_leader = self.patrol_cats[index]
-        else:
-            # Get the oldest cat
-            possible_leader = [
-                i
-                for i in self.patrol_cats
-                if i.status not in ["medicine cat apprentice", "apprentice"]
-            ]
-            if possible_leader:
-                # Flip a coin to pick the most experience, or oldest.
-                if randint(0, 1):
-                    possible_leader.sort(key=lambda x: x.moons)
-                else:
-                    possible_leader.sort(key=lambda x: x.experience)
-                self.patrol_leader = possible_leader[-1]
+        if game.current_screen == 'patrol screen2':
+            if "medicine cat" in self.patrol_status_list:
+                index = self.patrol_status_list.index("medicine cat")
+                self.patrol_leader = self.patrol_cats[index]
+            # If there is no medicine cat, but there is a medicine cat apprentice, set them as the patrol leader.
+            # This prevents warrior from being treated as medicine cats in medicine cat patrols.
+            elif "medicine cat apprentice" in self.patrol_status_list:
+                index = self.patrol_status_list.index("medicine cat apprentice")
+                self.patrol_leader = self.patrol_cats[index]
+                # then we just make sure that this app will also be app1
+                self.patrol_apprentices.remove(self.patrol_leader)
+                self.patrol_apprentices = [self.patrol_leader] + self.patrol_apprentices
+            # sets leader as patrol leader
+            elif "leader" in self.patrol_status_list:
+                index = self.patrol_status_list.index("leader")
+                self.patrol_leader = self.patrol_cats[index]
+            elif "deputy" in self.patrol_status_list:
+                index = self.patrol_status_list.index("deputy")
+                self.patrol_leader = self.patrol_cats[index]
             else:
-                self.patrol_leader = choice(self.patrol_cats)
+                # Get the oldest cat
+                possible_leader = [
+                    i
+                    for i in self.patrol_cats
+                    if i.status not in ["medicine cat apprentice", "apprentice"]
+                ]
+                if possible_leader:
+                    # Flip a coin to pick the most experience, or oldest.
+                    if randint(0, 1):
+                        possible_leader.sort(key=lambda x: x.moons)
+                    else:
+                        possible_leader.sort(key=lambda x: x.experience)
+                    self.patrol_leader = possible_leader[-1]
+                else:
+                    self.patrol_leader = choice(self.patrol_cats)
+        else:
+            # for DF patrols, lifegen patrols and dates, only your cat can be the leader.
+            # self.patrol_leader = game.clan.your_cat
+            pass
 
         if clan.all_clans and len(clan.all_clans) > 0:
             self.other_clan = choice(clan.all_clans)
@@ -242,6 +247,8 @@ class Patrol:
                     break
         elif len(patrol_cats) > 1 and game.current_screen == 'patrol screen3':
             possible_random_cats = [i for i in patrol_cats if i.ID != game.clan.your_cat.ID]
+            for i in possible_random_cats:
+                print(i.name, "possible r_c")
             self.patrol_random_cat = choice(possible_random_cats)
         else:
             if len(patrol_cats) > 1:

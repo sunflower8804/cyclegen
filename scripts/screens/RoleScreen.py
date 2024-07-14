@@ -597,10 +597,13 @@ class RoleScreen(Screens):
         is_instructor = False
         if self.the_cat.dead and game.clan.instructor.ID == self.the_cat.ID:
             is_instructor = True
+        is_demon = False
+        if self.the_cat.dead and game.clan.demon.ID == self.the_cat.ID:
+            is_demon = True
 
         previous_cat = 0
         next_cat = 0
-        if self.the_cat.dead and not is_instructor and self.the_cat.df == game.clan.instructor.df and \
+        if self.the_cat.dead and not is_instructor and not is_demon and self.the_cat.df != game.clan.followingsc and \
                 not (self.the_cat.outside or self.the_cat.exiled):
             previous_cat = game.clan.instructor.ID
 
@@ -612,12 +615,12 @@ class RoleScreen(Screens):
                 next_cat = 1
             else:
                 if next_cat == 0 and check_cat.ID != self.the_cat.ID and check_cat.dead == self.the_cat.dead \
-                        and check_cat.ID != game.clan.instructor.ID and check_cat.outside == self.the_cat.outside and \
+                        and check_cat.ID != game.clan.instructor.ID and check_cat.ID != game.clan.demon.ID and check_cat.outside == self.the_cat.outside and \
                         check_cat.df == self.the_cat.df and not check_cat.faded:
                     previous_cat = check_cat.ID
 
                 elif next_cat == 1 and check_cat != self.the_cat.ID and check_cat.dead == self.the_cat.dead \
-                        and check_cat.ID != game.clan.instructor.ID and check_cat.outside == self.the_cat.outside and \
+                        and check_cat.ID != game.clan.instructor.ID and check_cat.ID != game.clan.demon.ID and check_cat.outside == self.the_cat.outside and \
                         check_cat.df == self.the_cat.df and not check_cat.faded:
                     next_cat = check_cat.ID
 

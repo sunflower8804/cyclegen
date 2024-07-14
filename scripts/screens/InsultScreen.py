@@ -853,35 +853,115 @@ class InsultScreen(Screens):
             if "guilty" in tags and "guilt" not in cat.illnesses:
                 continue
 
-
-
             # PERMANENT CONDITIONS
-            # to be un-commented with the actual permacondition dialogue implementation
+            # the exclusive deaf/blind ones
 
-            # if "deaf" in cat.illnesses and "they_deaf" not in tags:
-            #     continue
-            # if "blind" in cat.illnesses and "they_blind" not in tags:
-            #     continue
-            # if "deaf" in you.illnesses and "you_deaf" not in tags:
-            #     continue
-            # if "blind" in you.illnesses and "you_blind" not in tags:
-            #     continue
-
-            # if "only_they_deaf" in tags and "deaf" not in cat.illnesses:
-            #     continue
-            # if "only_they_blind" in tags and "blind" not in cat.illnesses:
-            #     continue
-            # if "only_you_deaf" in tags and "deaf" not in cat.illnesses:
-            #     continue
-            # if "only_you_blind" in tags and "blind" not in cat.illnesses:
-            #     continue
-
-            if "only_they_deaf" in tags:
-                continue
-            if "only_they_blind" in tags:
+            if "only_they_born_deaf" in tags:
+                if "deaf" not in cat.permanent_condition:
+                    continue
+                if "deaf" in cat.permanent_condition and cat.permanent_condition["deaf"]["born_with"] is False:
+                    continue
+            if "only_they_went_deaf" in tags:
+                if "deaf" not in cat.permanent_condition:
+                    continue
+                if "deaf" in cat.permanent_condition and cat.permanent_condition["deaf"]["born_with"] is True:
+                    continue
+            if "only_they_deaf" in tags and "deaf" not in cat.permanent_condition:
                 continue
 
-            # remove when dialogue is implemented
+            if "only_they_born_blind" in tags:
+                if "blind" not in cat.permanent_condition:
+                    continue
+                if "blind" in cat.illnesses and cat.permanent_condition["blind"]["born_with"] is False:
+                    continue
+
+            if "only_they_went_blind" in tags:
+                if "blind" not in cat.permanent_condition:
+                    continue
+                if "blind" in cat.permanent_condition and cat.permanent_condition["blind"]["born_with"] is True:
+                    continue
+
+            if "only_they_blind" in tags and "blind" not in cat.permanent_condition:
+                continue
+
+            if "only_you_born_deaf" in tags:
+                if "deaf" not in you.permanent_condition:
+                    continue
+                if "deaf" in you.permanent_condition and you.permanent_condition["deaf"]["born_with"] is False:
+                    continue
+            if "only_you_went_deaf" in tags:
+                if "deaf" not in you.permanent_condition:
+                    continue
+                if "deaf" in you.permanent_condition and you.permanent_condition["deaf"]["born_with"] is True:
+                    continue
+            if "only_you_deaf" in tags and "deaf" not in you.permanent_condition:
+                continue
+
+            if "only_you_born_blind" in tags:
+                if "blind" not in you.permanent_condition:
+                    continue
+                if "blind" in you.permanent_condition and you.permanent_condition["blind"]["born_with"] is False:
+                    continue
+            if "only_you_went_blind" in tags:
+                if "blind" not in you.permanent_condition:
+                    continue
+                if "blind" in you.permanent_condition and you.permanent_condition["blind"]["born_with"] is True:
+                    continue
+            if "only_you_blind" in tags and "blind" not in you.permanent_condition:
+                continue
+
+            # non-exclusive deaf/blind
+            if "deaf" in cat.permanent_condition:
+                if cat.permanent_condition["deaf"]["born_with"] is True:
+                    if "they_born_deaf" not in tags and "only_they_born_deaf" not in tags:
+                        if "they_deaf" not in tags:
+                            continue
+                else:
+                    if "they_born_deaf" in tags or "only_they_born_deaf" not in tags:
+                        if "they_deaf" not in tags:
+                            continue
+                if "they_hearing" in tags:
+                    continue
+                # cats who went deaf later in life can get pretty much all normal dialogue, as they're able to talk regularly.
+                # they_hearing is for dialogue that explicitly mentions that t_c can hear, so it can be filtered out for cats who went deaf.
+                # "did you hear that?" "i just heard..." "r_k is so loud!" yanno
+
+            if "deaf" in you.permanent_condition:
+                if you.permanent_condition["deaf"]["born_with"] is True:
+                    if "you_born_deaf" not in tags and "only_you_born_deaf" not in tags:
+                        if "you_deaf" not in tags and "only_you_deaf" not in tags:
+                            continue
+                else:
+                    if "you_born_deaf" in tags or "only_you_born_deaf" in tags:
+                        continue
+                    if "you_went_deaf" not in tags and "only_you_went_deaf" not in tags:
+                        if "you_deaf" not in tags and "only_you_deaf" not in tags:
+                            continue
+            
+            # blind
+            if "blind" in cat.permanent_condition:
+                if cat.permanent_condition["blind"]["born_with"] is True:
+                    if "they_born_blind" not in tags and "only_they_born_blind" not in tags:
+                        if "they_blind" not in tags and "only_they_blind" not in tags:
+                            continue
+                else:
+                    if "they_born_blind" in tags or "only_they_born_blind" in tags:
+                        continue
+                    if "they_went_blind" not in tags and "only_they_went_blind" not in tags:
+                        if "they_blind" not in tags and "only_they_blind" not in tags:
+                            continue
+
+            if "blind" in you.permanent_condition:
+                if you.permanent_condition["blind"]["born_with"] is True:
+                    if "you_born_blind" not in tags and "only_you_born_blind" not in tags:
+                        if "you_blind" not in tags and "only_you_blind" not in tags:
+                            continue
+                else:
+                    if "you_born_blind" in tags or "only_you_born_blind" in tags:
+                        continue
+                    if "you_went_blind" not in tags and "only_you_went_blind" not in tags:
+                        if "you_blind" not in tags and "only_you_blind" not in tags:
+                            continue
 
 
             if "you_allergies" in tags and "allergies" not in you.illnesses:
@@ -1183,7 +1263,7 @@ class InsultScreen(Screens):
     def get_living_cats(self):
         living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside:
+            if not the_cat.dead and not the_cat.outside and not the_cat.moons == -1:
                 living_cats.append(the_cat)
         return living_cats
 

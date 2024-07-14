@@ -396,7 +396,7 @@ class Events:
                     f"{game.clan.name}Clan does not have enough healthy medicine cats! Cats will be sick/hurt "
                     f"for longer and have a higher chance of dying. "
                 )
-                game.cur_events_list.insert(0, Single_Event(string, "health"))
+                game.cur_events_list.insert(0, Single_Event(string, ["health", "alert"]))
         else:
             has_med = any(
                 str(cat.status) in {"medicine cat", "medicine cat apprentice"}
@@ -1025,7 +1025,7 @@ class Events:
     def get_living_cats(self):
         living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside:
+            if not the_cat.dead and not the_cat.outside and not the_cat.moons == -1:
                 living_cats.append(the_cat)
         return living_cats
 
@@ -4423,7 +4423,7 @@ class Events:
 
             else:
                 game.cur_events_list.insert(
-                    0, Single_Event(f"{game.clan.name}Clan has no deputy!")
+                    0, Single_Event(f"{game.clan.name}Clan has no deputy!", "alert")
                 )
 
 

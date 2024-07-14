@@ -3334,16 +3334,16 @@
         "prototype": "#image_button",
         "images": {
             "normal_image": {
-                "path": "resources/images/buttons/filter_ID.png"
+                "path": "resources/images/buttons/filter_id.png"
             },
             "hovered_image": {
-                "path": "resources/images/buttons/filter_ID_hover.png"
+                "path": "resources/images/buttons/filter_id_hover.png"
             },
             "selected_image": {
-                "path": "resources/images/buttons/filter_ID.png"
+                "path": "resources/images/buttons/filter_id.png"
             },
             "disabled_image": {
-                "path": "resources/images/buttons/filter_ID_hover.png"
+                "path": "resources/images/buttons/filter_id_hover.png"
             }
         }
     },
@@ -4574,6 +4574,40 @@
             },
             "disabled_image": {
                 "path": "resources/images/buttons/continue_dead_unavailable.png"
+            }
+        }
+    },
+    "#dead_select_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/dead_select.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/dead_select_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/dead_select.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/dead_select_unavaliable.png"
+            }
+        }
+    },
+    "#alive_select_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/alive_select.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/alive_select_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/alive_select.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/alive_select_unavaliable.png"
             }
         }
     }

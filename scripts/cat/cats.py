@@ -586,7 +586,7 @@ class Cat:
 
         # Deal with leader death
         text = ""
-        darkforest = game.clan.instructor.df
+        darkforest = True if game.clan.followingsc is False else False
         isoutside = self.outside
         if self.status == 'leader':
             if game.clan.leader_lives > 0:
@@ -2726,10 +2726,7 @@ class Cat:
         """
 
         try:
-            if game.clan is not None:
-                first_cousin_mates = game.clan.clan_settings["first cousin mates"]
-            else:
-                print("NoneType Clan for is_potential_mate()")
+            first_cousin_mates = game.clan.clan_settings["first cousin mates"]
         except:
             if "unittest" not in sys.modules:
                 raise
