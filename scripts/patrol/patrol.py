@@ -189,49 +189,41 @@ class Patrol:
 
             game.patrolled.append(cat.ID)
 
-        # PATROL LEADER AND RANDOM CAT CAN NOT CHANGE AFTER SET-UP
+        #PATROL LEADER AND RANDOM CAT CAN NOT CHANGE AFTER SET-UP
 
         # DETERMINE PATROL LEADER
         # sets medcat as leader if they're in the patrol
-        if game.current_screen == 'patrol screen2':
-            if "medicine cat" in self.patrol_status_list:
-                index = self.patrol_status_list.index("medicine cat")
-                self.patrol_leader = self.patrol_cats[index]
-            # If there is no medicine cat, but there is a medicine cat apprentice, set them as the patrol leader.
-            # This prevents warrior from being treated as medicine cats in medicine cat patrols.
-            elif "medicine cat apprentice" in self.patrol_status_list:
-                index = self.patrol_status_list.index("medicine cat apprentice")
-                self.patrol_leader = self.patrol_cats[index]
-                # then we just make sure that this app will also be app1
-                self.patrol_apprentices.remove(self.patrol_leader)
-                self.patrol_apprentices = [self.patrol_leader] + self.patrol_apprentices
-            # sets leader as patrol leader
-            elif "leader" in self.patrol_status_list:
-                index = self.patrol_status_list.index("leader")
-                self.patrol_leader = self.patrol_cats[index]
-            elif "deputy" in self.patrol_status_list:
-                index = self.patrol_status_list.index("deputy")
-                self.patrol_leader = self.patrol_cats[index]
-            else:
-                # Get the oldest cat
-                possible_leader = [
-                    i
-                    for i in self.patrol_cats
-                    if i.status not in ["medicine cat apprentice", "apprentice"]
-                ]
-                if possible_leader:
-                    # Flip a coin to pick the most experience, or oldest.
-                    if randint(0, 1):
-                        possible_leader.sort(key=lambda x: x.moons)
-                    else:
-                        possible_leader.sort(key=lambda x: x.experience)
-                    self.patrol_leader = possible_leader[-1]
-                else:
-                    self.patrol_leader = choice(self.patrol_cats)
+        if "medicine cat" in self.patrol_status_list:
+            index = self.patrol_status_list.index("medicine cat")
+            self.patrol_leader = self.patrol_cats[index]
+        # If there is no medicine cat, but there is a medicine cat apprentice, set them as the patrol leader.
+        # This prevents warrior from being treated as medicine cats in medicine cat patrols.
+        elif "medicine cat apprentice" in self.patrol_status_list:
+            index = self.patrol_status_list.index("medicine cat apprentice")
+            self.patrol_leader = self.patrol_cats[index]
+            # then we just make sure that this app will also be app1
+            self.patrol_apprentices.remove(self.patrol_leader)
+            self.patrol_apprentices = [self.patrol_leader] + self.patrol_apprentices
+        # sets leader as patrol leader
+        elif "leader" in self.patrol_status_list:
+            index = self.patrol_status_list.index("leader")
+            self.patrol_leader = self.patrol_cats[index]
+        elif "deputy" in self.patrol_status_list:
+            index = self.patrol_status_list.index("deputy")
+            self.patrol_leader = self.patrol_cats[index]
         else:
-            # for DF patrols, lifegen patrols and dates, only your cat can be the leader.
-            # self.patrol_leader = game.clan.your_cat
-            pass
+            # Get the oldest cat
+            possible_leader = [i for i in self.patrol_cats if i.status not in 
+                               ["medicine cat apprentice", "apprentice"]]
+            if possible_leader:
+                # Flip a coin to pick the most experience, or oldest. 
+                if randint(0, 1):
+                    possible_leader.sort(key=lambda x: x.moons)
+                else:
+                    possible_leader.sort(key=lambda x: x.experience)
+                self.patrol_leader = possible_leader[-1]
+            else:
+                self.patrol_leader = choice(self.patrol_cats)
 
         if clan.all_clans and len(clan.all_clans) > 0:
             self.other_clan = choice(clan.all_clans)
@@ -243,29 +235,17 @@ class Patrol:
         if game.current_screen == 'patrol screen4':
             for date_cat in patrol_cats:
                 if date_cat.ID != game.clan.your_cat.ID:
-                    self.patrol_random_cat = date_cat
+                    self.random_cat = date_cat
                     break
         elif len(patrol_cats) > 1 and game.current_screen == 'patrol screen3':
             possible_random_cats = [i for i in patrol_cats if i.ID != game.clan.your_cat.ID]
-            for i in possible_random_cats:
-                print(i.name, "possible r_c")
-            self.patrol_random_cat = choice(possible_random_cats)
+            self.random_cat = choice(possible_random_cats)
         else:
             if len(patrol_cats) > 1:
-                self.patrol_random_cat = choice([i for i in patrol_cats if i != self.patrol_leader])
+                self.random_cat = choice([i for i in patrol_cats if i != self.patrol_leader])
             else:
-                self.patrol_random_cat = choice(patrol_cats)
+                self.random_cat = choice(patrol_cats)
             
-
-        # DETERMINE RANDOM CAT
-        # Find random cat
-        if len(patrol_cats) > 1:
-            self.random_cat = choice(
-                [i for i in patrol_cats if i != self.patrol_leader]
-            )
-        else:
-            self.random_cat = choice(patrol_cats)
-
         print("Patrol Leader:", str(self.patrol_leader.name))
         print("Random Cat:", str(self.random_cat.name))
 
@@ -792,19 +772,19 @@ class Patrol:
 
         if success and game.current_screen == "patrol screen4":
             try:
-                game.clan.your_cat.relationships[self.patrol_random_cat.ID].romantic_love += randint(1,5)
-                game.clan.your_cat.relationships[self.patrol_random_cat.ID].trust += randint(1,5)
-                game.clan.your_cat.relationships[self.patrol_random_cat.ID].comfortable += randint(1,5)
-                self.patrol_random_cat.relationships[game.clan.your_cat.ID].romantic_love += randint(1,5)
-                self.patrol_random_cat.relationships[game.clan.your_cat.ID].trust += randint(1,5)
-                self.patrol_random_cat.relationships[game.clan.your_cat.ID].comfortable += randint(1,5)
+                game.clan.your_cat.relationships[self.random_cat.ID].romantic_love += randint(1,5)
+                game.clan.your_cat.relationships[self.random_cat.ID].trust += randint(1,5)
+                game.clan.your_cat.relationships[self.random_cat.ID].comfortable += randint(1,5)
+                self.random_cat.relationships[game.clan.your_cat.ID].romantic_love += randint(1,5)
+                self.random_cat.relationships[game.clan.your_cat.ID].trust += randint(1,5)
+                self.random_cat.relationships[game.clan.your_cat.ID].comfortable += randint(1,5)
             except:
                 print("ERROR: handling relationship changes in date patrol")
         elif not success and game.current_screen == "patrol screen4":
             try:
-                self.patrol_random_cat.relationships[game.clan.your_cat.ID].romantic_love -= randint(1,5)
-                self.patrol_random_cat.relationships[game.clan.your_cat.ID].trust -= randint(1,5)
-                self.patrol_random_cat.relationships[game.clan.your_cat.ID].comfortable -= randint(1,5)
+                self.random_cat.relationships[game.clan.your_cat.ID].romantic_love -= randint(1,5)
+                self.random_cat.relationships[game.clan.your_cat.ID].trust -= randint(1,5)
+                self.random_cat.relationships[game.clan.your_cat.ID].comfortable -= randint(1,5)
             except:
                 print("ERROR: handling relationship changes in date patrol")
         print(f"PATROL ID: {self.patrol_event.patrol_id} | SUCCESS: {success}")
@@ -1337,6 +1317,8 @@ class Patrol:
                 while alive_app.ID == game.clan.your_cat.ID:
                     alive_app = random.choice(alive_apps)
                 text = text.replace("r_w", str(alive_app.name))
+                print("YOUR LIKE FOR THEM:", game.clan.your_cat.relationships[alive_app.ID].platonic_like)
+                print("THEIR DISLIKE FOR YOU:", alive_app.relationships[game.clan.your_cat.ID].dislike)
             if "r_m" in text:
                 alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
                 if len(alive_apps) <= 1:
@@ -1454,6 +1436,7 @@ class Patrol:
                 text = text.replace("w_c", str(game.clan.war["enemy"]))
             return text
         except:
+            print("adjust txt flop")
             return ""
           
     # ---------------------------------------------------------------------------- #
