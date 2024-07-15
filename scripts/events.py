@@ -406,7 +406,7 @@ class Events:
             )
             if not has_med:
                 string = f"{game.clan.name}Clan has no medicine cat!"
-                game.cur_events_list.insert(0, Single_Event(string, "health"))
+                game.cur_events_list.insert(0, Single_Event(string, ["health", "alert"]))
 
         # Clear the list of cats that died this moon.
         game.just_died.clear()
@@ -534,6 +534,7 @@ class Events:
                 game.cur_events_list.append(Single_Event(self.adjust_txt(random.choice(dialogue_focuses[game.clan.focus]["focus_loss"])), "misc"))
             game.clan.focus = ""
             game.clan.focus_moons = 0
+            game.clan.focus_cat = None
             
         if not game.clan.focus:
             if game.clan.war.get("at_war"):

@@ -1305,6 +1305,12 @@ class TalkScreen(Screens):
                     continue
                 elif talk_key.startswith("bad_opinion") and cat.relationships[leader_id].dislike < 30:
                     continue
+            
+            if game.clan.focus_cat:
+                if "you_focuscat" in tags and game.clan.focus_cat.ID != game.clan.your_cat.ID:
+                    continue
+                if "they_focuscat" in tags and cat.ID != game.clan.focus_cat.ID:
+                    continue
 
             # dead moons tags!
             if you.dead or cat.dead:
@@ -3392,23 +3398,21 @@ class TalkScreen(Screens):
                     rel = True
                 else:
                     r = ""
-                if game.clan.leader is None:
-                    return ""
                 if game.clan.deputy is None:
                     return ""
                 if game.clan.deputy.dead or game.clan.deputy.outside or game.clan.deputy.ID == you.ID or game.clan.deputy.ID == cat.ID or\
-                (rel and (game.clan.leader.ID not in cat.relationships) or\
-                (r == "plike" and cat.relationships[game.clan.leader.ID].platonic_like < 20) or\
-                (r == "plove" and cat.relationships[game.clan.leader.ID].platonic_like < 50) or\
-                (r == "rlike" and cat.relationships[game.clan.leader.ID].romantic_love < 10) or\
-                (r == "rlove" and cat.relationships[game.clan.leader.ID].romantic_love < 50) or\
-                (r == "dislike" and cat.relationships[game.clan.leader.ID].dislike < 15) or\
-                (r == "hate" and cat.relationships[game.clan.leader.ID].dislike < 50) or\
-                (r == "jealous" and cat.relationships[game.clan.leader.ID].jeaousy < 20) or\
-                (r == "trust" and cat.relationships[game.clan.leader.ID].trust < 20) or\
-                (r == "comfort" and cat.relationships[game.clan.leader.ID].comfortable < 20) or \
-                (r == "respect" and cat.relationships[game.clan.leader.ID].admiration < 20) or\
-                (r == "neutral" and ((cat.relationships[game.clan.leader.ID].platonic_like > 20) or (cat.relationships[game.clan.leader.ID].romantic_love > 20) or (cat.relationships[game.clan.leader.ID].dislike > 20) or (cat.relationships[game.clan.leader.ID].jealousy > 20) or (cat.relationships[game.clan.leader.ID].trust > 20) or (cat.relationships[game.clan.leader.ID].comfortable > 20) or (cat.relationships[game.clan.leader.ID].admiration > 20)))):
+                (rel and (game.clan.deputy.ID not in cat.relationships) or\
+                (r == "plike" and cat.relationships[game.clan.deputy.ID].platonic_like < 20) or\
+                (r == "plove" and cat.relationships[game.clan.deputy.ID].platonic_like < 50) or\
+                (r == "rlike" and cat.relationships[game.clan.deputy.ID].romantic_love < 10) or\
+                (r == "rlove" and cat.relationships[game.clan.deputy.ID].romantic_love < 50) or\
+                (r == "dislike" and cat.relationships[game.clan.deputy.ID].dislike < 15) or\
+                (r == "hate" and cat.relationships[game.clan.deputy.ID].dislike < 50) or\
+                (r == "jealous" and cat.relationships[game.clan.deputy.ID].jeaousy < 20) or\
+                (r == "trust" and cat.relationships[game.clan.deputy.ID].trust < 20) or\
+                (r == "comfort" and cat.relationships[game.clan.deputy.ID].comfortable < 20) or \
+                (r == "respect" and cat.relationships[game.clan.deputy.ID].admiration < 20) or\
+                (r == "neutral" and ((cat.relationships[game.clan.deputy.ID].platonic_like > 20) or (cat.relationships[game.clan.deputy.ID].romantic_love > 20) or (cat.relationships[game.clan.deputy.ID].dislike > 20) or (cat.relationships[game.clan.deputy.ID].jealousy > 20) or (cat.relationships[game.clan.deputy.ID].trust > 20) or (cat.relationships[game.clan.deputy.ID].comfortable > 20) or (cat.relationships[game.clan.deputy.ID].admiration > 20)))):
                     return ""
                 if cluster and rel:
                     self.cat_dict[f"{r}_d_n_{x}"] = game.clan.deputy
@@ -4267,6 +4271,54 @@ class TalkScreen(Screens):
                     else:
                         self.cat_dict["e_c"] = alive_app
                         text = re.sub(r'(?<!\/)e_c(?!\/)', str(alive_app.name), text)
+
+            if game.clan.focus_cat is not None:
+                if "fc_c" in text:
+                    print("FOCUS CAT:", game.clan.focus_cat.name)
+                    cluster = False
+                    rel = False
+                    match = re.search(r'fc_c(\w+)', text)
+                    if match:
+                        x = match.group(1).strip("_")
+                        cluster = True
+                    else:
+                        x = ""
+                    match2 = re.search(r'(\w+)fc_c', text)
+                    if match2:
+                        r = match2.group(1).strip("_")
+                        rel = True
+                    else:
+                        r = ""
+                    if game.clan.focus_cat.ID == cat.ID or game.clan.focus_cat.ID == game.clan.your_cat.ID or \
+                    (cluster and x not in get_cluster(game.clan.focus_cat.personality.trait)) or \
+                    (rel and (game.clan.focus_cat.ID not in cat.relationships) or\
+                    (r == "plike" and cat.relationships[game.clan.focus_cat.ID].platonic_like < 20) or\
+                    (r == "plove" and cat.relationships[game.clan.focus_cat.ID].platonic_like < 50) or\
+                    (r == "rlike" and cat.relationships[game.clan.focus_cat.ID].romantic_love < 10) or\
+                    (r == "rlove" and cat.relationships[game.clan.focus_cat.ID].romantic_love < 50) or\
+                    (r == "dislike" and cat.relationships[game.clan.focus_cat.ID].dislike < 15) or\
+                    (r == "hate" and cat.relationships[game.clan.focus_cat.ID].dislike < 50) or\
+                    (r == "jealous" and cat.relationships[game.clan.focus_cat.ID].jeaousy < 20) or\
+                    (r == "trust" and cat.relationships[game.clan.focus_cat.ID].trust < 20) or\
+                    (r == "comfort" and cat.relationships[game.clan.focus_cat.ID].comfortable < 20) or \
+                    (r == "respect" and cat.relationships[game.clan.focus_cat.ID].admiration < 20) or\
+                    (r == "neutral" and ((cat.relationships[game.clan.focus_cat.ID].platonic_like > 20) or (cat.relationships[game.clan.focus_cat.ID].romantic_love > 20) or (cat.relationships[game.clan.focus_cat.ID].dislike > 20) or (cat.relationships[game.clan.focus_cat.ID].jealousy > 20) or (cat.relationships[game.clan.focus_cat.ID].trust > 20) or (cat.relationships[game.clan.focus_cat.ID].comfortable > 20) or (cat.relationships[game.clan.focus_cat.ID].admiration > 20)))):
+                        return ""
+                    if cluster and rel:
+                        self.cat_dict[f"{r}_fc_c_{x}"] = game.clan.focus_cat
+                        text = re.sub(fr'(?<!\/){r}_fc_c_{x}(?!\/)', str(game.clan.focus_cat.name), text)
+                    elif cluster and not rel:
+                        self.cat_dict[f"fc_c_{x}"] = game.clan.focus_cat
+                        text = re.sub(fr'(?<!\/)fc_c_{x}(?!\/)', str(game.clan.focus_cat.name), text)
+                    elif rel and not cluster:
+                        self.cat_dict[f"{r}_fc_c"] = game.clan.focus_cat
+                        text = re.sub(fr'(?<!\/){r}_fc_c(?!\/)', str(game.clan.focus_cat.name), text)
+                    else:
+                        self.cat_dict["fc_c"] = game.clan.focus_cat
+                        text = re.sub(r'(?<!\/)fc_c(?!\/)', str(game.clan.focus_cat.name), text)
+                else:
+                    print("focus cat type", type(game.clan.focus_cat))
+                    print("deputy type", type(game.clan.deputy))
         except:
             return ""
         
