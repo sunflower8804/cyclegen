@@ -1354,11 +1354,18 @@ class TalkScreen(Screens):
     def load_and_replace_placeholders(self, file_path, cat, you):
         with open(file_path, 'r') as read_file:
             possible_texts = ujson.loads(read_file.read())
+
+            y_c_text = f"y_c: {you.status} "
+            t_c_text = f"t_c: {cat.status} "
+
             cluster1, cluster2 = get_cluster(cat.personality.trait)
             cluster3, cluster4 = get_cluster(you.personality.trait)
-            clusters_1 = f"{cluster3} and {cluster4}" if cluster4 else f"{cluster3}"
-            clusters_2 = f"{cluster1} and {cluster2}" if cluster2 else f"{cluster1}"
-            
+            clusters_1 = f"{cluster3}, {cluster4}" if cluster4 else f"{cluster3}"
+            clusters_2 = f"{cluster1}, {cluster2}" if cluster2 else f"{cluster1}"
+
+            y_c_text += clusters_1
+            t_c_text += clusters_2
+
             add_on_map = {
                 (True, True): " df",
                 (True, False, False): " sc",
@@ -1369,18 +1376,28 @@ class TalkScreen(Screens):
                 add_on += " g"
             if you.shunned > 0:
                 add_on += " sh"
-            
+            if "blind" in you.permanent_condition:
+                add_on += " b"
+            if "deaf" in you.permanent_condition:
+                add_on += " d"
+            y_c_text += add_on
             add_on2 = add_on_map.get((cat.dead, cat.df, cat.outside), "")
             if "grief stricken" in cat.illnesses:
                 add_on2 += " g"
             if cat.shunned > 0:
                 add_on2 += " sh"
-            add_on2 += f" {VERSION_NAME}"
+            if "blind" in cat.permanent_condition:
+                add_on2 += " b"
+            if "deaf" in cat.permanent_condition:
+                add_on2 += " d"
+            t_c_text += add_on2
+            possible_texts['general'][1][0] += f" {VERSION_NAME}"
+            possible_texts['general'][1][0] += "\n"
+            possible_texts['general'][1][0] += y_c_text + f" {you.moons}"
+            possible_texts['general'][1][0] += "\n"
+            possible_texts['general'][1][0] += t_c_text + f" {cat.moons}"
+            possible_texts['general'][1][0] += "\n"
             
-            possible_texts['general'][1][0] = possible_texts['general'][1][0].replace("c_1", clusters_1)
-            possible_texts['general'][1][0] = possible_texts['general'][1][0].replace("c_2", clusters_2)
-            possible_texts['general'][1][0] = possible_texts['general'][1][0].replace("r_1", you.status + add_on)
-            possible_texts['general'][1][0] = possible_texts['general'][1][0].replace("r_2", cat.status + add_on2)
             
         return possible_texts['general']
 
