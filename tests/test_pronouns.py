@@ -82,7 +82,6 @@ def test():
         "t_p_pos": _r,
         "t_p_negative": _r,
         "m_n": _r,
-        "tm_n": _r,
         "r_q": _r,
         "r_k": _r,
         "r_e": _r,
@@ -126,7 +125,8 @@ def test():
         "plike_r_c": _r,
         "r_c_stable": _r,
         "r_w_assertive": _r,
-        "r_c_assertive": _r
+        "r_c_assertive": _r,
+        "fc_c": _r
     }
     
     cluster_addons = [

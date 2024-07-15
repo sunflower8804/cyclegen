@@ -996,9 +996,9 @@ class PatrolOutcome:
                     continue
 
                 if parent1 is None:
-                    parent1 = event.new_cats[index][0]
+                    parent1 = patrol.new_cats[index][0]
                 else:
-                    parent2 = event.new_cats[index][0]
+                    parent2 = patrol.new_cats[index][0]
             break
 
         # GATHER MATES
@@ -1034,7 +1034,7 @@ class PatrolOutcome:
                 if index >= i:
                     continue
 
-                give_mates.extend(event.new_cats[index])
+                give_mates.extend(patrol.new_cats[index])
 
         # determine gender
         if "male" in attribute_list:
