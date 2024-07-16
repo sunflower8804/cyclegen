@@ -329,7 +329,7 @@ class EventsScreen(Screens):
                 self.update_favourite_filters()
 
             elif event.ui_element == self.yourcat_filter:
-                self.relation_events = [x for x in (game.cur_events_list) if "relation" in x.types]
+                self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
                 self.display_events = self.relation_events
                 self.update_events_display()
                 self.yourcat_pressed = True
@@ -721,7 +721,7 @@ class EventsScreen(Screens):
                 for i in (game.other_events_list + game.cur_events_list):
                     for c in game.clan.clan_cats:
                         if Cat.all_cats.get(c).ID == game.clan.your_cat.ID:
-                            if str(Cat.all_cats.get(c).name) in i.text:
+                            if str(Cat.all_cats.get(c).name) in i.text and "relation" in i.types:
                                 self.relation_events.append(i)
                                 break
                 self.display_events = self.relation_events
@@ -730,7 +730,7 @@ class EventsScreen(Screens):
                 for i in (game.other_events_list + game.cur_events_list):
                     for c in game.clan.clan_cats:
                         if Cat.all_cats.get(c).favourite == 1:
-                            if str(Cat.all_cats.get(c).name) in i.text:
+                            if str(Cat.all_cats.get(c).name) in i.text and "relation" in i.types:
                                 self.relation_events.append(i)
                                 break
                 self.display_events = self.relation_events
@@ -740,7 +740,7 @@ class EventsScreen(Screens):
                 for i in (game.other_events_list + game.cur_events_list):
                     for c in game.clan.clan_cats:
                         if Cat.all_cats.get(c).favourite == 2:
-                            if str(Cat.all_cats.get(c).name) in i.text:
+                            if str(Cat.all_cats.get(c).name) in i.text and "relation" in i.types:
                                 self.relation_events.append(i)
                                 break
                 self.display_events = self.relation_events
@@ -750,7 +750,7 @@ class EventsScreen(Screens):
                 for i in (game.other_events_list + game.cur_events_list):
                     for c in game.clan.clan_cats:
                         if Cat.all_cats.get(c).favourite == 3:
-                            if str(Cat.all_cats.get(c).name) in i.text:
+                            if str(Cat.all_cats.get(c).name) in i.text and "relation" in i.types:
                                 self.relation_events.append(i)
                                 break
                 self.display_events = self.relation_events
@@ -1233,9 +1233,9 @@ class EventsScreen(Screens):
             self.you.kill()
         if game.clan.your_cat.moons != -1:
             self.you = UISpriteButton(scale(pygame.Rect((1050, 200), (200, 200))),
-                                   game.clan.your_cat.sprite,
-                                   cat_object=game.clan.your_cat,
-                                   manager=MANAGER)
+                                game.clan.your_cat.sprite,
+                                cat_object=game.clan.your_cat,
+                                manager=MANAGER)
             
     def make_cat_buttons(self, button_pressed):
         """Makes the buttons that take you to the profile."""
