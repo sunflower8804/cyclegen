@@ -1361,7 +1361,8 @@ class TalkScreen(Screens):
             t_c_text += clusters_2
 
             add_on_map = {
-                (True, True): " df",
+                (True, True, False): " df",
+                (True, True, True): " df",
                 (True, False, False): " sc",
                 (True, False, True): " ur"
             }
