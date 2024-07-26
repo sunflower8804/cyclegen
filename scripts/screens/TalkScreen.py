@@ -2512,7 +2512,7 @@ class TalkScreen(Screens):
                     elif rel and not cluster:
                         text = re.sub(fr'(?<!\/){r}_y_s(?!\/)', str(self.cat_dict[f"{r}_y_s"].name), text)
                     else:
-                        text = re.sub(r'(?<!\/)y_s(?!\/)', str(self.cat_dict["t_s"].name), text)
+                        text = re.sub(r'(?<!\/)y_s(?!\/)', str(self.cat_dict["y_s"].name), text)
                 else:
                     if len(you.inheritance.get_siblings()) == 0:
                         return ""
