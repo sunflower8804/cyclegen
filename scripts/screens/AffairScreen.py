@@ -275,8 +275,8 @@ class AffairScreen(Screens):
             chance -= 10
         elif affair_cat.relationships.get(game.clan.your_cat.ID).admiration < 10:
             chance += 10
-        if chance < 0:
-            chance = 0
+        if chance < 1:
+            chance = 1
         if randint(0, chance + randint(-10,10)) == 0:
             return True
         return False
