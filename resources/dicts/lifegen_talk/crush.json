@@ -298,7 +298,7 @@
             "So, uh ... are the rumors about you and your_crush true, then? It's all anyone around camp is talking about.",
             "They are?",
             "Oh ...",
-            "Um, what do you see in them, if you don't mind me asking?",
+            "Um, what do you see in {PRONOUN/your_crush/object}, if you don't mind me asking?",
             "Mm ... I see ...",
             "{PRONOUN/your_crush/subject/CAP} {VERB/your_crush/make/makes} you happy, then?",
             "Well ... I guess that's all that really matters.",
