@@ -873,7 +873,7 @@ class Events:
                                 parent1.genderalign = "male"
                             else:
                                 parent1.gender = "female"
-                                parent2.genderalign = "female"
+                                parent1.genderalign = "female"
                     parent2.backstory = random.choice(["refugee2", "refugee3", "refugee4"])
 
                 elif birth_type == BirthType.ONE_OUTSIDER_PARENT:
