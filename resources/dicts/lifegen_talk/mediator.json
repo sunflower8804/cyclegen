@@ -126,7 +126,7 @@
             "queen",
             "deputy",
             "leader",
-            "medicine cat",
+            "medicine_cat",
             "you_blind",
             "they_blind"
         ],
@@ -212,8 +212,8 @@
     ],
     "assertive_medapp1": [
         [
-            "medicine cat apprentice",
-            "medicine cat",
+            "medicine_cat_apprentice",
+            "medicine_cat",
             "assertive",
             "unlawful",
             "silly",
@@ -226,8 +226,8 @@
     ],
     "assertiveapp_medapp3": [
         [
-            "medicine cat apprentice",
-            "medicine cat",
+            "medicine_cat_apprentice",
+            "medicine_cat",
             "assertive",
             "silly",
             "upstanding",
@@ -438,7 +438,7 @@
     "assertive_elder_3": [
         [
             "mediator",
-            "mediator apprentice",
+            "mediator_apprentice",
             "assertive",
             "you_blind",
             "they_blind"
@@ -489,7 +489,7 @@
     ],
     "assertivemediator_toqueen": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "queen",
             "assertive",
             "silly",
@@ -511,7 +511,7 @@
     ],
     "assertivemediator_toqueen_2": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "queen",
             "assertive",
             "silly",
@@ -537,10 +537,10 @@
             "elder",
             "deputy",
             "leader",
-            "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "queen",
-            "queen's apprentice",
+            "queen's_apprentice",
             "assertive",
             "you_blind",
             "they_blind"
@@ -586,7 +586,7 @@
     "assertivemediatorapp_8": [
         [
             "mediator",
-            "mediator apprentice",
+            "mediator_apprentice",
             "you_blind"
         ],
         [
@@ -719,8 +719,8 @@
     ],
     "cool_2": [
         [
-            "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "cool",
             "introspective",
             "you_blind",
@@ -802,9 +802,9 @@
     "sweet_mediapp_5": [
         [
             "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "sweet",
             "you_blind",
             "they_blind"
@@ -817,9 +817,9 @@
     "sweet_mediapp_6": [
         [
             "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "sweet",
             "you_blind",
             "they_blind"
@@ -845,7 +845,7 @@
     ],
     "sweet_mediapp_8": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "sweet",
             "you_blind",
             "they_blind"
@@ -859,7 +859,7 @@
     ],
     "sweet_mediapp_9": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "sweet",
             "you_blind",
             "they_blind"
@@ -874,7 +874,7 @@
     ],
     "sweet_mediapp_10": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "sweet",
             "you_blind",
             "they_blind"
@@ -887,7 +887,7 @@
     "sweet_mediapp_11": [
         [
             "warrior",
-            "medicine cat",
+            "medicine_cat",
             "mediator",
             "queen",
             "sweet",
@@ -903,7 +903,7 @@
     "sweet_mediapp_12": [
         [
             "warrior",
-            "medicine cat",
+            "medicine_cat",
             "mediator",
             "queen",
             "sweet",
@@ -934,7 +934,7 @@
     ],
     "sweet_mediapp_14": [
         [
-            "medicine cat",
+            "medicine_cat",
             "sweet",
             "you_blind",
             "they_blind"
@@ -1105,7 +1105,7 @@
         [
             "warrior",
             "silly",
-            "random_cat",
+            
             "they_went_blind"
         ],
         [
@@ -1200,6 +1200,23 @@
             "[d_n makes a remark you didn't quite make out but from the look on l_n's face, it must have been shocking indeed.]",
             "I was correct! This is why you always observe, y_c. It'll help you tremendously when meditating, I promise.",
             "Now, if you'll excuse me... I must know what happened. I can be a bit nosy."
+        ]
+    ],
+    "youdeaf_R19": [
+        [
+            "only_you_deaf",
+            "you_leader",
+            "no_kit",
+            "they_warrior",
+            "they_elder",
+            "they_mediator"
+            
+        ],
+        [
+            "[t_c comes to sit with you as you watch the Clan. Everything is going well and you bask in that knowledge.]",
+            "[But after a moment, {PRONOUN/t_c/subject} {VERB/t_c/bring/brings} up a good point with a quick signal. You need to think about a dog that was recently spotted on the territory.]",
+            "[You sign to t_c for {PRONOUN/t_c/poss} opinion. Between the two of you, you come up with a solid plan to drive off the dog.]",
+            "[Your head lifts as your ears wriggle and your whiskers twitch in the sign for 'thank you' before getting up to visit d_n and tell {PRONOUN/d_n/object} the plan.]"
         ]
     ]
 }

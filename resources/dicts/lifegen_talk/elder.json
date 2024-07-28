@@ -632,7 +632,7 @@
     ],
     "assertive_queen": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "queen",
             "assertive",
             "cool",
@@ -648,7 +648,7 @@
     ],
     "assertive_queensapp2": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "queen",
             "assertive",
             "upstanding",
@@ -666,7 +666,7 @@
     ],
     "assertive_queensapp1": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "assertive",
             "cool",
             "brooding",
@@ -685,7 +685,7 @@
     ],
     "assertivewarrior_mediatorapp": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "assertive",
             "they_blind",
             "you_blind"
@@ -698,7 +698,7 @@
     ],
     "assertive_medapp": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "assertive",
             "unlawful",
             "unabashed",
@@ -814,11 +814,11 @@
         [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
-            "medicine cat",
-            "mediator apprentice",
+            "medicine_cat_apprentice",
+            "medicine_cat",
+            "mediator_apprentice",
             "mediator",
-            "queen's apprentice",
+            "queen's_apprentice",
             "queen",
             "deputy",
             "leader",
@@ -837,9 +837,9 @@
     "assertive_elder_10": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "warrior",
             "assertive",
             "they_blind",
@@ -854,9 +854,9 @@
         [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "assertive",
             "platonic_like",
             "respect",
@@ -870,8 +870,8 @@
     ],
     "assertive_elder_12": [
         [
-            "medicine cat apprentice",
-            "medicine cat",
+            "medicine_cat_apprentice",
+            "medicine_cat",
             "assertive",
             "they_blind",
             "you_blind"
@@ -1116,9 +1116,9 @@
     "brooding_elder4": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "brooding",
             "platonic_like",
             "they_blind",
@@ -1217,7 +1217,7 @@
              "sweet"
         ],
         [
-            "Welcome to c_nClan, y_c! Ah, I remember being a little kit like you... Well, not <i>as<i/> little as you, of course!",
+            "Welcome to c_nClan, y_c! Ah, I remember being a little kit like you... Well, not <i>as</i> little as you, of course!",
             "You'll be someone future cats tell stories about, I can already tell... until then, you better be ready for all the teasing you can get~."
         ]
     ],
@@ -1291,7 +1291,7 @@
         [
             "you_queen's_apprentice",
 	    "trust",
-            "random_cat",
+            
              "sweet"
         ],
         [
@@ -1305,7 +1305,7 @@
 "sweet_elder_10": [
         [
             "warrior",
-            "medicine cat",
+            "medicine_cat",
             "mediator",
             "queen",
              "sweet"
@@ -1322,7 +1322,7 @@
 "sweet_elder_11": [
         [
             "warrior",
-            "medicine cat",
+            "medicine_cat",
             "mediator",
             "queen",
              "sweet"
@@ -1385,7 +1385,7 @@
 "sweet_elder_15": [
         [
             "queen",
-            "random_cat",
+            
              "sweet"
         ],
         [
@@ -1410,7 +1410,7 @@
 "sweet_elder_17": [
         [
              "deputy",
-            "random_cat",
+            
              "sweet"
         ],
         [
@@ -1495,7 +1495,7 @@
 "sweet_elder_24": [
         [
              "elder",
-             "random_cat",
+             
              "sweet"
         ],
         [
@@ -1656,6 +1656,23 @@
             "'Bring me my fresh-kill!' ,'Get these ticks off my back!'",
             "Maybe the apprentices think I'm bossy and argumentative, but when they're elders, they'll finally realize I was right all along. Because I was.",
             "[t_c puffs out their chest in victory.]"
+        ]
+    ],
+    "youdeaf_R19": [
+        [
+            "only_you_deaf",
+            "you_leader",
+            "no_kit",
+            "they_warrior",
+            "they_elder",
+            "they_mediator"
+            
+        ],
+        [
+            "[t_c comes to sit with you as you watch the Clan. Everything is going well and you bask in that knowledge.]",
+            "[But after a moment, {PRONOUN/t_c/subject} {VERB/t_c/bring/brings} up a good point with a quick signal. You need to think about a dog that was recently spotted on the territory.]",
+            "[You sign to t_c for {PRONOUN/t_c/poss} opinion. Between the two of you, you come up with a solid plan to drive off the dog.]",
+            "[Your head lifts as your ears wriggle and your whiskers twitch in the sign for 'thank you' before getting up to visit d_n and tell {PRONOUN/d_n/object} the plan.]"
         ]
     ]
 }

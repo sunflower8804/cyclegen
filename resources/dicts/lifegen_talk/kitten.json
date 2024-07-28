@@ -480,7 +480,7 @@
     ],
     "assertivekit_queensapp1": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "silly",
             "introspective",
             "they_blind",
@@ -520,7 +520,7 @@
     ],
     "assertivekit_3": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "assertive",
             "upstanding",
             "they_blind",
@@ -534,8 +534,8 @@
     ],
     "assertivekit_4": [
         [
-            "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "assertive",
             "silly",
             "sweet",
@@ -552,8 +552,8 @@
     ],
     "assertivekit_5": [
         [
-            "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "assertive",
             "silly",
             "unlawful",
@@ -584,11 +584,11 @@
     ],
     "assertivekit_8": [
         [
-            "medicine cat",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "mediator",
-            "queen's apprentice",
+            "queen's_apprentice",
             "queen",
             "assertive",
             "they_blind",
@@ -677,7 +677,7 @@
         [
             "assertive",
             "queen",
-            "queen's apprentice"
+            "queen's_apprentice"
         ],
         [
             "Hey, y_c! Look over there! A flying squirrel!!!",
@@ -1230,9 +1230,9 @@
     "sweet_kit_7": [
         [
             "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1246,9 +1246,9 @@
     "sweet_kit_8": [
         [
             "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1275,7 +1275,7 @@
     ],
     "sweet_kit_101": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1288,7 +1288,7 @@
     ],
     "sweet_kit_102": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "sweet",
             "you_blind"
         ],
@@ -1300,7 +1300,7 @@
     ],
     "sweet_kit_103": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1314,7 +1314,7 @@
     "sweet_kit_11": [
         [
             "warrior",
-            "medicine cat",
+            "medicine_cat",
             "mediator",
             "queen",
             "sweet"
@@ -1329,7 +1329,7 @@
     "sweet_kit_12": [
         [
             "warrior",
-            "medicine cat",
+            "medicine_cat",
             "mediator",
             "queen",
             "sweet",
@@ -1355,7 +1355,7 @@
     ],
     "sweet_kit_14": [
         [
-            "medicine cat",
+            "medicine_cat",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2027,7 +2027,7 @@
         [
             "apprentice",
             "warrior",
-            "mediator apprentice",
+            "mediator_apprentice",
             "mediator",
             "deputy",
             "brooding",
@@ -2056,8 +2056,8 @@
     ],
     "broodingnewborn_9": [
         [
-            "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "brooding",
             "neutral",
             "they_blind",
@@ -2475,9 +2475,9 @@
     "neurotic_kit__21": [
         [
             "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "neurotic",
             "they_blind",
             "you_blind"
@@ -2633,9 +2633,9 @@
     "stable_kit_12": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "stable",
             "they_blind",
             "you_blind"
@@ -2649,9 +2649,9 @@
     "stable_kit_13": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "stable",
             "you_blind"
         ],
@@ -2677,9 +2677,9 @@
     "stable_kit_15": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "stable",
             "you_blind"
         ],
@@ -2707,9 +2707,9 @@
     "stable_kit_17": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "stable",
             "they_blind",
             "you_blind"
@@ -2805,8 +2805,8 @@
     ],
     "neurotic_kit__24": [
         [
-            "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "neurotic",
             "they_blind",
             "you_blind"
@@ -2862,7 +2862,7 @@
     "neurotic_kit__28": [
         [
             "queen",
-            "queen's apprentice",
+            "queen's_apprentice",
             "neurotic",
             "they_blind"
         ],
@@ -2980,7 +2980,7 @@
             "cool",
         	"unlawful",
         	"platonic_like",
-        	"random_cat",
+        	
         	"you_blind"
         ],
         [
@@ -3000,7 +3000,7 @@
             "you_kitten",
             "cool",
         	"platonic_like",
-        	"random_cat",
+        	
 	        "you_blind",
 	        "they_blind"
           ],
@@ -3016,7 +3016,7 @@
         [
             "you_kitten",
             "cool",
-        	"random_cat",
+        	
         	"you_blind"
         ],
         [
@@ -3086,7 +3086,7 @@
         [
             "upstanding",
             "queen",
-            "queen's apprentice",
+            "queen's_apprentice",
             "they_blind",
             "you_blind"
         ],
@@ -3101,7 +3101,7 @@
         [
             "upstanding",
             "queen",
-            "queen's apprentice",
+            "queen's_apprentice",
             "they_blind",
             "you_blind"
         ],
@@ -3113,7 +3113,7 @@
         [
             "upstanding",
             "queen",
-            "queen's apprentice",
+            "queen's_apprentice",
             "they_blind",
             "you_blind"
         ],
@@ -3147,7 +3147,7 @@
         [
             "upstanding",
             "queen",
-            "queen's apprentice",
+            "queen's_apprentice",
             "they_blind",
             "you_blind"
         ],
@@ -3417,7 +3417,7 @@
         [
             "upstanding",
             "mediator",
-            "mediator apprentice",
+            "mediator_apprentice",
             "they_blind",
             "you_blind"
         ],
@@ -3689,8 +3689,8 @@
     "upstanding_kit16": [
         [
             "upstanding",
-            "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "they_blind"
         ],
         [
@@ -5272,7 +5272,7 @@
             "they_sc",
             "littermate",
             "warrior",
-            "medicine cat",
+            "medicine_cat",
             "mediator",
             "queen",
             "deputy",
@@ -6575,5 +6575,132 @@
             "Oh, yay!",
             "Can you introduce me, next time? They seem really cool! And I promise not to tell!"
         ]
-    }
+    },
+    "theyseizures_J1": [
+        [
+            "they_seizureprone",
+	        "kitten"
+        ],
+        [
+           "[t_c has had another seizure. R_q sent you to get some water for the poor kit, and as you return with the soaked clump of moss, you hope that everything's alright.]",
+            "Y_c!",
+            "[The little kit squeaks your name as you poke your head into the den. When you set the moss at {PRONOUN/t_c/poss} paws, {PRONOUN/t_c/subject} {VERB/t_c/bounce/bounces} forward to lap up some water.]",
+            "[You ask if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} okay.]",
+            "Yeah, I'm okay! R_q put some soft moss under my head so I didn't hit it on the ground like last time.",
+            "I wish I hadn't missed the sunset, though.",
+            "[You sigh sympathetically. When t_c had fallen into {PRONOUN/t_c/poss} fit, the sun was low in the sky, and when {PRONOUN/t_c/subject} woke up, it was past dusk.]",
+            "That's okay. I'll just watch it tomorrow!",
+            "[You can't help but smile. It seems that t_c is the least worried in the whole Clan about {PRONOUN/t_c/poss} condition!]",
+            "[You hope it stays that way.]"
+        ]
+    ],
+    "youdeafkit_R9": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_kitten"
+        ],
+        [
+            "[t_c is talking with r_q. The two keep looking back at you.]",
+            "[Your fur prickles subconsciously. Have you done something wrong? You don't remember anything...]",
+            "[Finally t_c runs up to you, sliding to a stop before you! You blink as {PRONOUN/t_c/subject} {VERB/t_c/begin/begins} to sign clumsily.]",
+            "[Oh! You're being asked to play leader and deputy! {PRONOUN/t_c/subject/CAP} {VERB/t_c/want/wants} you as {PRONOUN/t_c/poss} deputy! What an honor!]",
+            "[You agree enthusiastically. The game is a blast! t_c isn't the best at signing, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} more than willing to learn on the go with you.]",
+            "[What a great day!]"
+        ]
+    ],
+    "youdeafkit_R8": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_kitten",
+            "they_hearing",
+            "they_blind"
+        ],
+        [
+            "[t_c and r_k are arguing it seems. The two turn to you suddenly, fur bristled as they each say something before both pausing.]",
+            "[... They forgot you didn't understand their conversation, didn't they?]",
+            "[The three of you break out into giggles and the argument is forgotten swiftly!]",
+            "[You all race off to get into mischief together.]"
+        ] 
+    ],
+    "youdeaf_R7": [
+        [
+            "you_deaf",
+            "you_kitten",
+            "they_kitten",
+            "they_deaf"
+        ],
+        [
+            "[A moss-ball rolls in front of you. t_c is looking expectantly at you!]",
+            "[You bat it back eagerly and the game is on. r_q watches the game with a smile.]",
+            "[In the end, you're exhausted, and t_c flops against you with {PRONOUN/t_c/poss} whole body vibrating with a purr!]"
+        ]
+    ],
+    "coolkit_newborn_H1": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten"
+        ],
+        [
+            "You're going to look up to me, I just know it!"
+        ]
+    ],
+    "coolkit_newborn_H2": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten",
+            "sibling",
+            "adopted_sibling",
+            "half sibling",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c rolls a moss ball to you, hitting the side of your head.]",
+            "Hey, wait don't--",
+            "[You let out a piercing wail from the offending hit.]",
+            "Shh! Shhh! Shhhhh!",
+            "I didn't mean to! You can stop crying!",
+            "Ohhh, mouse-dung..."
+        ]
+    ],
+    "coolkit_newborn_H3": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten",
+            "platonic_like"
+        ],
+        [
+            "[t_c grumbles to {PRONOUN/t_c/self} as {PRONOUN/t_c/subject} paw around the moss ball.]",
+            "'You can't play with y_c yet, {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} too small'! When I was your size, I was going around playing just fine!",
+            "You need to grow up fast, okay?"
+        ]
+    ],
+    "coolkit_newborn_H4": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten",
+            "dislike"
+        ],
+        [
+            "Stop taking away all the attention!"
+        ]
+    ],
+    "coolkit_newborn_H5": [
+        [
+            "you_newborn",
+            "they_cool",
+            "they_kitten"
+        ],
+        [
+            "[t_c lays down to your level, looking you over with a curious eye.]",
+            "Do you... even do anything? Except steal attention, eat, and sleep, that is.",
+            "No response? ... Are you broken? t_p, I think {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} broken."
+        ]
+    ]
 }
