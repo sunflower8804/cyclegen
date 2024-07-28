@@ -833,7 +833,7 @@ class Events:
                         if parent1.gender == parent2.gender:
                             if parent1.gender == "female":
                                 parent1.gender = "male"
-                                parent1.generalign = "male"
+                                parent1.genderalign = "male"
                             else:
                                 parent1.gender = "female"
                                 parent1.genderalign = "female"
