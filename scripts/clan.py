@@ -1045,7 +1045,8 @@ class Clan:
             game.clan.focus_moons = clan_data["focus_moons"]
 
         if "focus_cat" in clan_data:
-            game.clan.focus_cat = Cat.all_cats[clan_data["focus_cat"]]
+            if game.clan.focus_cat is not None:
+                game.clan.focus_cat = Cat.all_cats[clan_data["focus_cat"]]
         else:
             clan_data["focus_cat"] = None
 

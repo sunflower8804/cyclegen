@@ -406,34 +406,38 @@ class TalkScreen(Screens):
                 possible_texts4 = ujson.loads(read_file.read())
                 possible_texts.update(possible_texts4)
         else:
-            if cat.status != "newborn":
+            if cat.status == "newborn":
+                # newborns will no longer participate in nuanced discussion (focus + choices)
+                with open(f"{resource_dir}newborn.json", 'r') as read_file:
+                    possible_texts.update(ujson.loads(read_file.read()))
+            else:
                 with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
                     possible_texts.update(ujson.loads(read_file.read()))
 
-            if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
-                with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
-                    possible_texts2 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts2)
+                if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
+                    with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
+                        possible_texts2 = ujson.loads(read_file.read())
+                        possible_texts.update(possible_texts2)
 
-            if cat.status not in ["newborn"] and you.status not in ['newborn']:
-                with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
-                    possible_texts4 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts4)
+                if cat.status not in ["newborn"] and you.status not in ['newborn']:
+                    with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
+                        possible_texts4 = ujson.loads(read_file.read())
+                        possible_texts.update(possible_texts4)
 
-            if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
-                with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
-                    possible_texts3 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts3)
+                if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
+                    with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
+                        possible_texts3 = ujson.loads(read_file.read())
+                        possible_texts.update(possible_texts3)
 
-            if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
-                with open(f"{resource_dir}crush.json", 'r') as read_file:
-                    possible_texts3 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts3)
+                if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
+                    with open(f"{resource_dir}crush.json", 'r') as read_file:
+                        possible_texts3 = ujson.loads(read_file.read())
+                        possible_texts.update(possible_texts3)
 
-            if game.clan.focus:
-                with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
-                    possible_texts5 = ujson.loads(read_file.read())
-                    possible_texts.update(possible_texts5)
+                if game.clan.focus:
+                    with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
+                        possible_texts5 = ujson.loads(read_file.read())
+                        possible_texts.update(possible_texts5)
                     
         return self.filter_texts(cat, possible_texts)
 

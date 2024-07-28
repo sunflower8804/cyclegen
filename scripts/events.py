@@ -3159,6 +3159,17 @@ class Events:
             # Get all the ceremonies for the role ----------------------------------------
             possible_ceremonies.update(self.ceremony_id_by_tag[promoted_to])
 
+            # remove the shunned and forgiven ceremonies if they dont apply
+            if cat.shunned == 0:
+                for ceremony_id in possible_ceremonies.copy():
+                    if "shunned" in ceremony_id:
+                        possible_ceremonies.remove(ceremony_id)
+
+            if cat.forgiven == 0:
+                for ceremony_id in possible_ceremonies.copy():
+                    if "forgiven" in ceremony_id:
+                        possible_ceremonies.remove(ceremony_id)
+
             if cat.shunned > 0:
                 possible_ceremonies = possible_ceremonies.intersection(self.ceremony_id_by_tag["shunned"])
             
