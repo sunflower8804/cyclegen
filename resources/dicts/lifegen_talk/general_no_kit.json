@@ -9055,8 +9055,9 @@
         [
             "[You shuffle inside the den, your nose poking through the entrance. You see t_c curled up in a nest, {PRONOUN/t_c/poss} breathing is choppy and {PRONOUN/t_c/poss} nose is scrunched up.]",
             "[It pains you to see {PRONOUN/t_c/object} like this... You move inside swiftly and rest beside {PRONOUN/t_c/object}, your tail curling around {PRONOUN/t_c/object}.]",
-            "Hmm... y_c, is that you?...........Love, you shouldn't be here........... [t_c's eyes are still shut as {PRONOUN/t_c/subject} {VERB/t_c/whisper/whispers}.]",
-            "[You hold them tighter and watch as {PRONOUN/t_c/subject} {VERB/t_c/smile/smiles}.]",
+            "Hmm... y_c, is that you? Love, you shouldn't be here...",
+	    "[t_c's eyes are still shut as {PRONOUN/t_c/subject} {VERB/t_c/whisper/whispers}.]",
+            "[You hold {PRONOUN/t_c/object} tighter and watch as {PRONOUN/t_c/subject} {VERB/t_c/smile/smiles}.]",
             "... Okay... I love you, y_c... You can stay here, even if it's only for a little while..."
         ]
     ],
@@ -9075,7 +9076,7 @@
         [
             "Love, darling- y_c, please, please honey calm down- it's not that bad... Really, I'm in good paws, though I do appreciate your concern, I assure you, I'm fi-",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/wince/winces} and shutter slightly, you move to catch {PRONOUN/t_c/object}.]",
-            "Oh Love, what would I do without you?"
+            "Oh, love, what would I do without you?"
         ]
     ],
     "stable_mate_8": [
