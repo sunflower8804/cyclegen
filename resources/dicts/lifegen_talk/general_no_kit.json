@@ -3196,7 +3196,7 @@
 	[
 		"[t_c is trying to push {PRONOUN/t_c/self} to {PRONOUN/t_c/poss} paws, legs trembling like weak, spindly sticks underneath {PRONOUN/t_c/object}.]",
 		"I can walk ... Don't need help ... AH --",
-		"[{PRONOUN/t_c/poss/CAP} legs collapse, sending {PRONOUN/t_c/poss} slamming back into their nest as an exasperated r_m rushes over to help {PRONOUN/t_c/object}.]"
+		"[{PRONOUN/t_c/poss/CAP} legs collapse, sending {PRONOUN/t_c/object} slamming back into {PRONOUN/t_c/poss} nest as an exasperated r_m rushes over to help {PRONOUN/t_c/object}.]"
 	]
 	],
 
@@ -9163,7 +9163,7 @@
             "silly"
         ],
         [
-            "[You sit happily in the sun in the clearing, you watch as cats go about their day. t_c sits beside you, following your line of sight. {PRONOUN/t_c/subject/CAP} {VERB/t_c/chickle/chuckles} to {PRONOUN/t_c/self} as {PRONOUN/t_c/subject} {VERB/t_c/point/points} to a group of kittens playing across the clearing.]",
+            "[You sit happily in the sun in the clearing, you watch as cats go about their day. t_c sits beside you, following your line of sight. {PRONOUN/t_c/subject/CAP} {VERB/t_c/chuckle/chuckles} to {PRONOUN/t_c/self} as {PRONOUN/t_c/subject} {VERB/t_c/point/points} to a group of kittens playing across the clearing.]",
             "Who knew they could be so cute when they weren't bugging me. Kittens, they're strange aren't they, love? I can see us with our own some day actually...",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/begin/begins} to blush madly and you try to hide your laughter as t_c abruptly gets up and shuffles away. You bounce to your paws and chase after {PRONOUN/t_c/object}.]",
             "y_c! No! Please I didn't mean it like that! Someone help meeeee!!!!"
@@ -12714,9 +12714,9 @@
             "[You're about to slink back to your nest, defeated, when you overhear {PRONOUN/t_c/object} talking with plike_r_c across camp.]",
             "{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} sloppy and green. Too hard on {PRONOUN/t_c/self} ... No one's gonna take {PRONOUN/t_c/object} seriously.",
             "That's how my mentor described me as an apprentice. I hope y_c never has to feel that way.",
-            "The kid is coming into {PRONOUN/y_c/object} own so fast ... I can barely keep up.",
+            "The kid is coming into {PRONOUN/y_c/poss} own so fast ... I can barely keep up.",
             "A smart little cat, that one is.",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} and {VERB/t_c/shake/shakes} {PRONOUN/t_c/object} head, forcing you to dart out of earshot before {PRONOUN/t_c/subject} can catch you eavesdropping.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} and {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head, forcing you to dart out of earshot before {PRONOUN/t_c/subject} can catch you eavesdropping.]"
         ]
     ],
 	"brooding_mentorAJ": [
@@ -20253,7 +20253,7 @@
         ],
         [
             "[You're sleeping peacefully in your nest when a trickle of air wakes you.]",
-            "[The familiar sensation has you lift your head with a small start, blinking at seeing an amused t_c. {PRONOUN/t_c/subject/CAP} smiles softly at you.]",
+            "[The familiar sensation has you lift your head with a small start, blinking at seeing an amused t_c. {PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} softly at you.]",
             "[The vibration of {PRONOUN/t_c/poss} purr is soothing, and you bunt your head against {PRONOUN/t_c/object} with a smile of your own.]",
             "[What a nice way to wake up!]"
         ]
