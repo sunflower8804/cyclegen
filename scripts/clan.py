@@ -111,6 +111,7 @@ class Clan:
                 starting_season='Newleaf',
                 followingsc=True,
                 your_cat=None,
+                focus_cat=None,
                 self_run_init_functions = False):
         self.history = History()
         self.your_cat = your_cat
@@ -152,6 +153,7 @@ class Clan:
         self.talks = []
         self.focus = ""
         self.focus_moons = 0
+        self.focus_cat = focus_cat
         
         self.custom_pronouns = []
 
@@ -265,7 +267,7 @@ class Clan:
                     self.medicine_cat and Cat.all_cats[i] != \
                     self.deputy and Cat.all_cats[i] != \
                     self.instructor and Cat.all_cats[i] != \
-                    self.demon \
+                    self.demon and Cat.all_cats[i] != self.focus_cat \
                     and not_found:
                 Cat.all_cats[i].example = True
                 self.remove_cat(Cat.all_cats[i].ID)
@@ -529,7 +531,7 @@ class Clan:
             "murdered": self.murdered,
             "exile_return": self.exile_return,
             "affair": self.affair,
-            "custom_pronouns": self.custom_pronouns,
+            "custom_pronouns": self.custom_pronouns
         }
 
         # LEADER DATA
@@ -584,6 +586,11 @@ class Clan:
         clan_data["disaster_moon"] = self.disaster_moon
         clan_data["focus"] = self.focus
         clan_data["focus_moons"] = self.focus_moons
+
+        if self.focus_cat:
+            clan_data["focus_cat"] = self.focus_cat.ID
+        else:
+            clan_data["focus_cat"] = None
 
         if "other_med" in game.switches:
             other_med = []
@@ -1036,6 +1043,12 @@ class Clan:
 
         if "focus_moons" in clan_data:
             game.clan.focus_moons = clan_data["focus_moons"]
+
+        if "focus_cat" in clan_data:
+            if game.clan.focus_cat is not None:
+                game.clan.focus_cat = Cat.all_cats[clan_data["focus_cat"]]
+        else:
+            clan_data["focus_cat"] = None
 
         if "other_med" in clan_data:
             other_med = []

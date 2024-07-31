@@ -529,23 +529,25 @@ class InsultScreen(Screens):
 
             if "grief stricken" in cat.illnesses:
                 dead_cat = Cat.all_cats.get(cat.illnesses['grief stricken'].get("grief_cat"))
-                if "grievingyou" in tags:
-                    # if not game.clan.your_cat.dead:
-                    #     cat.illnesses.remove('grief stricken')
-                    if dead_cat.name != game.clan.your_cat.name:
-                        continue
-                else:
-                    if dead_cat.name == game.clan.your_cat.name:
-                        continue
+                if dead_cat:
+                    if "grievingyou" in tags:
+                        # if not game.clan.your_cat.dead:
+                        #     cat.illnesses.remove('grief stricken')
+                        if dead_cat.name != game.clan.your_cat.name:
+                            continue
+                    else:
+                        if dead_cat.name == game.clan.your_cat.name:
+                            continue
 
             if "grief stricken" in you.illnesses:
                 dead_cat = Cat.all_cats.get(you.illnesses['grief stricken'].get("grief_cat"))
-                if "grievingthem" in tags:
-                    if dead_cat.name != cat.name:
-                        continue
-                else:
-                    if dead_cat.name == cat.name:
-                        continue
+                if dead_cat:
+                    if "grievingthem" in tags:
+                        if dead_cat.name != cat.name:
+                            continue
+                    else:
+                        if dead_cat.name == cat.name:
+                            continue
             
             # FORGIVEN TAGS
 

@@ -1389,8 +1389,8 @@
              "sweet"
         ],
         [
-            "[You and one of the kits are playing hide and seek, and you decide to check the Elder's Den.]",
-            "[You spot t_c, paws tucked under {PRONOUN/t_c/object} with a small bundle of fur underneath their tail.]",
+            "[You and one of the kits are playing hide and seek, and you decide to check the elder's den.]",
+            "[You spot t_c, paws tucked under {PRONOUN/t_c/object} with a small bundle of fur underneath {PRONOUN/t_c/poss} tail.]",
             "[Your gaze fixated on the small bundle of fur giggling underneath t_c's tail, you ask if {PRONOUN/t_c/subject} have seen the kit.]",
             "r_k? Hmm, no, I don't think I have.",
             "[If the smile on {PRONOUN/t_c/poss} face didn't give {PRONOUN/t_c/object} away, the amused squeals from the mystery tail lump sure did.]"
@@ -1416,7 +1416,7 @@
         [
             "Hey y_c! I hope you don't mind me bringing up a concern, know this isn't your fault at all.",
             "[t_c settles down beside you with a gentle purr, {PRONOUN/t_c/poss} tail curling around {PRONOUN/t_c/object}.]",
-            "r_a has been doing an incredible amount of work lately, especially for their age, but...",
+            "r_a has been doing an incredible amount of work lately, especially for {PRONOUN/r_a/poss} age, but...",
             "I'm starting to worry. {PRONOUN/r_a/subject/CAP} don't play as much anymore and seem so focused on everything...",
             "Could you talk to them? Or stop sending {PRONOUN/r_a/object} on patrols for a little while to catch up.",
             "Ultimately, it's your decision, I'm just worried for them."
@@ -1652,10 +1652,10 @@
         ],
         [
             "Maybe it's nice to be an elder, after all. At first it was boring, but now I've learned to finally take advantage of it!",
-            "I get to tell people to do whatever I want them to, and they actually go through with it because I'm an elder!",
+            "I get to tell anycat to do whatever I want them to, and they actually go through with it because I'm an elder!",
             "'Bring me my fresh-kill!' ,'Get these ticks off my back!'",
             "Maybe the apprentices think I'm bossy and argumentative, but when they're elders, they'll finally realize I was right all along. Because I was.",
-            "[t_c puffs out their chest in victory.]"
+            "[t_c puffs out {PRONOUN/t_c/poss} chest in victory.]"
         ]
     ],
     "youdeaf_R19": [

@@ -22,7 +22,6 @@ from scripts.utility import (
     create_new_cat,
     unpack_rel_block,
     event_text_adjust,
-    create_new_cat_block,
     gather_cat_objects
 )
 from scripts.game_structure.game_essentials import game
@@ -973,6 +972,368 @@ class PatrolOutcome:
             results = f"A {amount_text} amount of prey is brought to camp."
 
         return results
+    
+    def __create_new_cat_block(self, i:int, attribute_list: List[str], patrol:'Patrol') -> List[Cat]: 
+        """Creates a single new_cat block """
+        
+        thought = choice(["Is looking around the camp with wonder", "Is getting used to their new home"])
+
+        # GATHER BIO PARENTS
+        parent1 = None
+        parent2 = None
+        for tag in attribute_list:
+            match = re.match(r"parent:([,0-9]+)", tag)
+            if not match:
+                continue
+
+            parent_indexes = match.group(1).split(",")
+            if not parent_indexes:
+                continue
+
+            parent_indexes = [int(index) for index in parent_indexes]
+            for index in parent_indexes:
+                if index >= i:
+                    continue
+
+                if parent1 is None:
+                    parent1 = patrol.new_cats[index][0]
+                else:
+                    parent2 = patrol.new_cats[index][0]
+            break
+
+        # GATHER MATES
+        in_patrol_cats = {
+            "p_l": patrol.patrol_leader,
+            "r_c": patrol.patrol_random_cat,
+        }
+        if self.stat_cat:
+            in_patrol_cats["s_c"] = self.stat_cat
+        give_mates = []
+        for tag in attribute_list:
+            match = re.match(r"mate:([_,0-9a-zA-Z]+)", tag)
+            if not match:
+                continue
+
+            mate_indexes = match.group(1).split(",")
+
+            # TODO: make this less ugly
+            for index in mate_indexes:
+                if index in in_patrol_cats:
+                    if in_patrol_cats[index] in ["apprentice", "medicine cat apprentice", "mediator apprentice"]:
+                        print("Can't give apprentices mates")
+                        continue
+
+                    give_mates.append(in_patrol_cats[index])
+
+                try:
+                    index = int(index)
+                except ValueError:
+                    print(f"mate-index not correct: {index}")
+                    continue
+
+                if index >= i:
+                    continue
+
+                give_mates.extend(patrol.new_cats[index])
+
+        # determine gender
+        if "male" in attribute_list:
+            gender = "male"
+        elif "female" in attribute_list:
+            gender = "female"
+        elif "can_birth" in attribute_list and not game.clan.clan_settings["same sex birth"]:
+            gender = "female"
+        else:
+            gender = None
+
+        # will the cat get a new name?
+        if "new_name" in attribute_list:
+            new_name = True
+        elif "old_name" in attribute_list:
+            new_name = False
+        else:
+            new_name = choice([True, False])
+
+        # STATUS - must be handled before backstories
+        status = None
+        for _tag in attribute_list:
+            match = re.match(r"status:(.+)", _tag)
+            if not match:
+                continue
+
+            if match.group(1) in ["newborn", "kitten", "elder", "apprentice", "warrior",
+                                "mediator apprentice", "mediator", "medicine cat apprentice",
+                                "medicine cat"]:
+                status = match.group(1)
+                break
+
+        # SET AGE
+        age = None
+        for _tag in attribute_list:
+            match = re.match(r"age:(.+)", _tag)
+            if not match:
+                continue
+
+            if match.group(1) in Cat.age_moons:
+                age = random.randint(Cat.age_moons[match.group(1)][0], Cat.age_moons[match.group(1)][1])
+                break
+
+            # Set same as first mate
+            if match.group(1) in ["mate", "mate_with_kits"] and give_mates:
+                age = random.randint(Cat.age_moons[give_mates[0].age][0],
+                            Cat.age_moons[give_mates[0].age][1])
+                break
+
+            if match.group(1) == "has_kits":
+                age = random.randint(19, 120)
+                break
+
+        # if status and not age:
+        #     if status in ["apprentice", "mediator apprentice", "medicine cat apprentice"]:
+        #         age = random.randint(Cat.age_moons["adolescent"][0], Cat.age_moons["adolescent"][1])
+        #     elif status in ["warrior", "mediator", "medicine cat"]:
+        #         age = random.randint(Cat.age_moons["young adult"][0], Cat.age_moons["senior adult"][1])
+        #     elif status == "elder":
+        #         age = random.randint(Cat.age_moons["senior"][0], Cat.age_moons["senior"][1])
+
+        if "newdfcat" in attribute_list:
+            # gives a random status if none was specified in the patrol. kitten cannot be chosen randomly
+            if status is None and age is None:
+                mean = (3 + 145) / 2 
+                stddev = (145 - 3) / 6 
+                age = int(gauss(mean, stddev))
+                age = max(3, min(145, age))
+            
+            if age:
+
+                if age < 1:
+                    status = "newborn"
+                elif age < 6:
+                    status = "kitten"
+                elif age < 13:
+                    status = choice(["apprentice", "apprentice", "apprentice", "mediator apprentice", "medicine cat apprentice", "queen's apprentice"])
+                elif age < 119:
+                    status = choice(["warrior", "warrior", "medicine cat", "mediator", "queen", "warrior", "warrior", "medicine cat", "medicine cat", "mediator", "deputy", "leader"])
+                else:
+                    status = choice(["elder", "elder", "elder", "elder", "elder", "elder", "elder", "elder", "leader", "deputy"])
+
+        if "newstarcat" in attribute_list:
+            # gives a random status if none was specified in the patrol. kitten cannot be chosen randomly
+            if status is None:
+                status = choice(["elder", "elder", "elder", "elder", "elder", "apprentice", "warrior", "warrior", "warrior", "warrior", "warrior", "warrior", "mediator apprentice", "mediator", "mediator", "medicine cat apprentice", "medicine cat", "medicine cat", "medicine cat", "medicine cat", "queen's apprentice", "queen", "queen", "queen", "queen","leader"])
+
+            #and age, dependant on status
+            if status in "kitten":
+                age = random.randint(1,5)
+            elif status in ["apprentice", "mediator apprentice", "medicine cat apprentice", "queen's apprentice"]:
+                age = random.randint (6,11)
+            elif status in ["warrior", "medicine cat", "mediator", "queen"]:
+                age = random.randint (12, 119)
+            elif status in ["deputy", "leader"]:
+                age = random.randint(25,119)
+            else:
+                age = random.randint (120, 201)
+
+        if "kittypet" in attribute_list:
+            cat_type = "kittypet"
+        elif "rogue" in attribute_list:
+            cat_type = "rogue"
+        elif "loner" in attribute_list:
+            cat_type = "loner"
+        elif "clancat" in attribute_list:
+            cat_type = "former Clancat"
+        elif "newdfcat" in attribute_list:
+                cat_type = status
+        elif "newstarcat" in attribute_list:
+            cat_type = status
+        else:
+            cat_type = choice(['kittypet', 'loner', 'former Clancat'])
+
+        # LITTER
+        litter = False
+        if "litter" in attribute_list:
+            litter = True
+            if status not in ["kitten", "newborn"]:
+                status = "kitten"
+
+        # CHOOSE DEFAULT BACKSTORY BASED ON CAT TYPE, STATUS
+        if "newdfcat" in attribute_list:
+            if "oldstarclan" in attribute_list:
+                    chosen_backstory = choice(["oldstarclan1", "oldstarclan2", "oldstarclan3"])
+            else:
+                chosen_backstory = choice(BACKSTORIES["backstory_categories"]["df_backstories"])
+        elif "newstarcat" in attribute_list:
+            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
+        else:
+            if status in ("kitten", "newborn"):
+                chosen_backstory = choice(BACKSTORIES["backstory_categories"]["abandoned_backstories"])
+            if status == "medicine cat":
+                if cat_type == "former Clancat":
+                    chosen_backstory = choice(["medicine_cat", "disgraced1"])
+                else:
+                    chosen_backstory = choice(["wandering_healer1", "wandering_healer2"])
+            if cat_type == "former Clancat":
+                x = "former_clancat"
+            else:
+                x = cat_type
+            chosen_backstory = choice(BACKSTORIES["backstory_categories"].get(f"{x}_backstories", ["outsider1"]))
+
+        # OPTION TO OVERRIDE DEFAULT BACKSTORY
+        for _tag in attribute_list:
+            match = re.match(r"backstory:(.+)", _tag)
+            if match:
+                stor = [x for x in match.group(1).split(",") if x in BACKSTORIES["backstories"]]
+                if not stor:
+                    continue
+                chosen_backstory = choice(stor)
+                break
+
+        # KITTEN THOUGHT
+        if status in ["kitten", "newborn"]:
+            thought = "Is snuggled safe in the nursery"
+
+        # MEETING - DETERMINE IF THIS IS AN OUTSIDE CAT
+        outside = False
+        if "meeting" in attribute_list:
+            outside = True
+            status = cat_type
+            new_name = False
+            thought = "Is wondering about those new cats they just met"
+
+        # IS THE CAT DEAD?
+        alive = True
+        if "dead" in attribute_list:
+            alive = False
+            thought = "Explores a new starry world"
+
+        # # check if we can use an existing cat here
+        # chosen_cat = None
+        # if "exists" in attribute_list:
+        #     existing_outsiders = [i for i in Cat.all_cats.values() if i.outside and not i.dead]
+        #     possible_outsiders = []
+        #     for cat in existing_outsiders:
+        #         if stor and cat.backstory not in stor:
+        #             continue
+        #         if cat_type != cat.status:
+        #             continue
+        #         if gender and gender != cat.gender:
+        #             continue
+        #         if age and age not in Cat.age_moons[cat.age]:
+        #             continue
+        #         possible_outsiders.append(cat)
+
+        #     if possible_outsiders:
+        #         chosen_cat = choice(possible_outsiders)
+        #         game.clan.add_to_clan(chosen_cat)
+        #         chosen_cat.status = status
+        #         chosen_cat.outside = outside
+        #         if not alive:
+        #             chosen_cat.die()
+
+        #         if new_name:
+        #             name = f"{chosen_cat.name.prefix}"
+        #             spaces = name.count(" ")
+        #             if choice([1, 2]) == 1 and spaces > 0:  # adding suffix to OG name
+        #                 # make a list of the words within the name, then add the OG name back in the list
+        #                 words = name.split(" ")
+        #                 words.append(name)
+        #                 new_prefix = choice(words)  # pick new prefix from that list
+        #                 name = new_prefix
+        #                 chosen_cat.name.prefix = name
+        #                 chosen_cat.name.give_suffix(
+        #                     pelt=chosen_cat.pelt,
+        #                     biome=game.clan.biome,
+        #                     tortiepattern=chosen_cat.pelt.tortiepattern
+        #                 )
+        #             else:  # completely new name
+        #                 chosen_cat.name.give_prefix(
+        #                     eyes=chosen_cat.pelt.eye_colour,
+        #                     colour=chosen_cat.pelt.colour,
+        #                     biome=game.clan.biome
+        #                 )
+        #                 chosen_cat.name.give_suffix(
+        #                     pelt=chosen_cat.pelt.colour,
+        #                     biome=game.clan.biome,
+        #                     tortiepattern=chosen_cat.pelt.tortiepattern
+        #                 )
+
+        #         new_cats = [chosen_cat]
+
+        # Now we generate the new cat
+        # This is a bit of a pain, but I can't re-write this function
+        new_cats = create_new_cat(Cat,
+                                new_name=new_name,
+                                loner=cat_type in ["loner", "rogue"],
+                                kittypet=cat_type == "kittypet",
+                                other_clan=cat_type == 'former Clancat',
+                                kit=False if litter else status in ["kitten", "newborn"], # this is for singular kits, litters need this to be false
+                                litter=litter,
+                                backstory=chosen_backstory,
+                                status=status,
+                                age=age,
+                                gender=gender,
+                                thought=thought,
+                                alive=alive,
+                                outside=outside,
+                                parent1=parent1.ID if parent1 else None,
+                                parent2=parent2.ID if parent2 else None
+                                )
+
+        # Add relations to biological parents, if needed
+        # Also relations to cat generated in the same block - they are littermates
+        # Also make mates
+        # DON'T ADD RELATION TO CATS IN THE PATROL
+        # That is done in the relationships block of the patrol, to give control for writing. 
+
+        for n_c in new_cats:
+
+            # Set Mates
+            for inter_cat in give_mates:
+                if n_c == inter_cat or n_c.ID in inter_cat.mate:
+                    continue
+
+                # this is some duplicate work, since this triggers inheritance re-calcs
+                # TODO: Optimize
+                n_c.set_mate(inter_cat)
+
+            #Relations to cats in the same block (littermates)
+            for inter_cat in new_cats:
+                if n_c == inter_cat:
+                    continue
+
+                y = random.randrange(0, 20)
+                start_relation = Relationship(n_c, inter_cat, False, True)
+                start_relation.platonic_like += 30 + y
+                start_relation.comfortable = 10 + y
+                start_relation.admiration = 15 + y
+                start_relation.trust = 10 + y
+                n_c.relationships[inter_cat.ID] = start_relation
+
+            # Relations to bio parents.
+            for par in (parent1, parent2):
+                if not par:
+                    continue
+
+                y = random.randrange(0, 20)
+                start_relation = Relationship(par, n_c, False, True)
+                start_relation.platonic_like += 30 + y
+                start_relation.comfortable = 10 + y
+                start_relation.admiration = 15 + y
+                start_relation.trust = 10 + y
+                par.relationships[n_c.ID] = start_relation
+
+                y = random.randrange(0, 20)
+                start_relation = Relationship(n_c, par, False, True)
+                start_relation.platonic_like += 30 + y
+                start_relation.comfortable = 10 + y
+                start_relation.admiration = 15 + y
+                start_relation.trust = 10 + y
+                n_c.relationships[par.ID] = start_relation
+
+            # UPDATE INHERITANCE
+            n_c.create_inheritance_new_cat()
+
+        return new_cats
 
     def _handle_new_cats(self, patrol: "Patrol") -> str:
         """Handles creating a new cat. Add any new cats to patrol.new_cats"""
@@ -981,17 +1342,17 @@ class PatrolOutcome:
             return ""
 
         results = []
-        in_event_cats = {
+        in_patrol_cats  = {
             "p_l": patrol.patrol_leader,
             "r_c": patrol.random_cat,
         }
         if self.stat_cat:
-            in_event_cats["s_c"] = self.stat_cat
+            in_patrol_cats ["s_c"] = self.stat_cat
 
         for i, attribute_list in enumerate(self.new_cat):
 
-            patrol.new_cats.append(create_new_cat_block(Cat, Relationship, patrol, in_event_cats, i, attribute_list))
-
+            patrol.new_cats.append(self.__create_new_cat_block(i, attribute_list,  
+                                                               patrol)) 
             for cat in patrol.new_cats[-1]:
                 if cat.dead:
                     if not cat.outside:
