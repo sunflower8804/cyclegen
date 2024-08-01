@@ -682,20 +682,21 @@ class History:
         return cat.history.murder
 
     @staticmethod
-    def reveal_murder(cat, other_cat, cat_class, victim, murder_index):
+    def reveal_murder(cat, other_cat, cat_class, victim, murder_index, shunned):
         """ Reveals the murder properly in all associated history text.
 
         :param cat: The murderer
         :param other_cat: The cat who discovers the truth about the murder
         :param cat_class: The cat class
         :param victim: The victim whose murder is being revealed
-        :param murder_index: Index of the murder"""
+        :param murder_index: Index of the murder
+        :param shunned: LIFEGEN: determines if the cat will be shunned from the reveal"""
 
         victim = cat_class.fetch_cat(victim)
         murder_history = History.get_murders(cat)
         victim_history = History.get_murders(victim)
 
-        if cat.shunned == 0:
+        if cat.shunned == 0 and shunned:
             cat.shunned = 1
             cat.thought = "Is upset that they have been shunned"
             cat.faith -= 0.5
