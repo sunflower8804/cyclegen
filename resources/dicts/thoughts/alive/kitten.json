@@ -26,9 +26,6 @@
         ],
         "random_status_constraint": [
             "elder"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -149,9 +146,6 @@
         ],
         "main_trait_constraint": [
             "bouncy"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -182,9 +176,6 @@
         ],
         "main_trait_constraint": [
             "bullying"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -209,9 +200,6 @@
         ],
         "main_trait_constraint": [
             "charming"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -231,7 +219,7 @@
             "Is sure {PRONOUN/m_c/subject} could fight a badger",
             "Is sneaking into the leader's den",
             "Sticks {PRONOUN/m_c/poss} paw into an old snake hole",
-            "Isn't afraid of the dark at all",
+            "Isn't afraid of the dark",
             "Is planning to escape bathtime",
             "Was caught before taking a paw outside of camp",
             "Pretending r_c is the latest mountain {PRONOUN/m_c/subject} must climb",
@@ -242,10 +230,7 @@
             "Makes another failed attempt at trying to escape the camp"
         ],
         "main_trait_constraint": [
-            "fearless"
-        ],
-        "random_living_status": [
-            "living"
+            "daring"
         ]
     },
     {
@@ -280,9 +265,6 @@
         ],
         "main_trait_constraint": [
             "daydreamer"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -382,13 +364,11 @@
             "Asks r_c if it's safe",
             "Is checking on r_c",
             "Hopes there is enough fresh-kill for every cat",
-            "Has a lot on {PRONOUN/m_c/poss} mind"
+            "Has a lot on {PRONOUN/m_c/poss} mind",
+            "Is sadly a victim of another prank"
         ],
         "main_trait_constraint": [
-            "skittish"
-        ],
-        "random_living_status": [
-            "living"
+            "nervous"
         ]
     },
     {
@@ -419,9 +399,6 @@
         ],
         "main_trait_constraint": [
             "quiet"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -470,9 +447,6 @@
         ],
         "main_trait_constraint": [
             "sweet"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -499,7 +473,7 @@
             "Is up to no good... again",
             "Splashes around in a puddle, getting r_c all wet",
             "Is not allowed to leave the nursery for the rest of the day after pranking r_c",
-            "Tries to scare r_c",
+            "Is trying to scare r_c",
             "Is covered in mud",
             "Is stealing other kits' toys",
             "Tries to intimidate the other kits",
@@ -508,10 +482,7 @@
             "Is spitting and being spicy"
         ],
         "main_trait_constraint": [
-            "unruly"
-        ],
-        "random_living_status": [
-            "living"
+            "troublesome"
         ]
     },
     {
@@ -535,10 +506,7 @@
             "Enjoys watching other cats stroll by"
         ],
         "main_trait_constraint": [
-            "shy"
-        ],
-        "random_living_status": [
-            "living"
+            "lonesome"
         ]
     },
     {
@@ -558,9 +526,6 @@
         ],
         "main_trait_constraint": [
             "attention-seeker"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -595,9 +560,6 @@
         ],
         "main_trait_constraint": [
             "noisy"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -622,10 +584,7 @@
             "Feels as if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not growing big and strong enough to become an apprentice"
         ],
         "main_trait_constraint": [
-            "self-conscious"
-        ],
-        "random_living_status": [
-            "living"
+            "insecure"
         ]
     },
     {
@@ -644,9 +603,6 @@
         ],
         "main_trait_constraint": [
             "polite"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -672,9 +628,6 @@
         ],
         "main_trait_constraint": [
             "know-it-all"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -696,9 +649,6 @@
         ],
         "main_trait_constraint": [
             "bossy"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {

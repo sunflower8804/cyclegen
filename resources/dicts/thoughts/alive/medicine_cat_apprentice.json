@@ -125,9 +125,6 @@
             "apprentice",
             "mediator apprentice",
             "medicine cat apprentice"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -145,9 +142,6 @@
         ],
         "random_status_constraint": [
             "elder"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -165,9 +159,6 @@
         ],
         "random_status_constraint": [
             "medicine cat"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -439,9 +430,6 @@
         ],
         "random_status_constraint": [
             "medicine cat"
-        ],
-        "random_living_status": [
-            "living"
         ]
     },
     {
@@ -470,9 +458,6 @@
             "cold",
             "vengeful",
             "fierce"
-        ],
-        "random_living_status": [
-            "living"
         ]
     }
 ]
