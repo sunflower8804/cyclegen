@@ -646,12 +646,14 @@ class ProfileScreen(Screens):
                     relation.handle_having_kits(game.clan.your_cat, game.clan)
                     game.switches['have kits'] = False
                     self.have_kits_button.disable()
-            if event.ui_element == self.request_apprentice_button:
+            elif event.ui_element == self.request_apprentice_button:
                 if 'request apprentice' not in game.switches:
                     game.switches['request apprentice'] = False
                 if not game.switches['request apprentice']:
                     game.switches['request apprentice'] = True
                     self.request_apprentice_button.disable()
+            elif event.ui_element == self.gift_accessory_button:
+                self.change_screen("gift screen")
         # Dangerous Tab
         elif self.open_tab == "dangerous":
             if event.ui_element == self.kill_cat_button:
@@ -2999,7 +3001,7 @@ class ProfileScreen(Screens):
             self.open_tab = 'your tab'
             self.have_kits_button = None
             self.request_apprentice_button = None
-            # self.change_accessory_button = None
+            self.gift_accessory_button = None
             self.update_disabled_buttons_and_text()
 
     def toggle_roles_tab(self):
@@ -3274,7 +3276,7 @@ class ProfileScreen(Screens):
             # self.change_accessory_button = UIImageButton(scale(pygame.Rect((804, 1100), (344, 72))), "",
             #                                      starting_height=2, object_id="#change_accessory_button",
             #                                      manager=MANAGER)
-            if self.the_cat.status in ['leader', 'deputy', 'medicine cat', 'mediator', 'queen', 'warrior']:
+            if self.the_cat.status in ['leader', 'deputy', 'medicine cat', 'mediator', 'queen', 'warrior'] and not self.the_cat.dead and not self.the_cat.outside:
                 self.request_apprentice_button = UIImageButton(scale(pygame.Rect((804, 1100), (344, 72))), "",
                                                                tool_tip_text='You will be more likely to recieve an apprentice.',
                                                     starting_height=2, object_id="#request_apprentice_button",
@@ -3285,6 +3287,17 @@ class ProfileScreen(Screens):
                                                     tool_tip_text='You will be more likely to recieve an apprentice.', object_id="#request_apprentice_button",
                                                     manager=MANAGER)
                 self.request_apprentice_button.disable()
+            
+            if self.the_cat.moons > 0 and not self.the_cat.dead and not self.the_cat.outside:
+                self.gift_accessory_button = UIImageButton(scale(pygame.Rect((804, 1028), (344, 72))), "",
+                                                    starting_height=2, object_id="#gift_clanmate_button",
+                                                    manager=MANAGER)
+            else:
+                self.gift_accessory_button = UIImageButton(scale(pygame.Rect((804, 1028), (344, 72))), "",
+                                                    starting_height=2, object_id="#gift_clanmate_button",
+                                                    manager=MANAGER)
+                self.gift_accessory_button.disable()
+
             if 'request apprentice' in game.switches:
                 if game.switches['request apprentice']:
                     self.request_apprentice_button.disable()
@@ -3579,10 +3592,10 @@ class ProfileScreen(Screens):
         elif self.open_tab == 'your tab':
             if self.have_kits_button:
                 self.have_kits_button.kill()
-            # if self.change_accessory_button:
-            #     self.change_accessory_button.kill()
             if self.request_apprentice_button:
                 self.request_apprentice_button.kill()
+            if self.gift_accessory_button:
+                self.gift_accessory_button.kill()
         elif self.open_tab == 'conditions':
             self.left_conditions_arrow.kill()
             self.right_conditions_arrow.kill()
