@@ -1,6 +1,6 @@
 [
     {
-      "id": "elder_gen_to_dead_gen",
+        "id": "elder_gen_to_dead_gen",
         "thoughts": [
             "Is telling stories about r_c",
             "Wishes that r_c were still alive",
@@ -56,13 +56,13 @@
         ]
     },
     {
-      "id": "elder_to_alive_younger_cats",
+        "id": "elder_to_alive_younger_cats",
         "thoughts": [
-          "Is giving advice to the younger cats",
-          "Is bossing the younger cats around",
+            "Is giving advice to the younger cats",
+            "Is bossing the younger cats around",
             "Is telling scary stories to the younger cats",
-          "Is sharing wisdom with the younger cats that is... less than helpful",
-          "Is recounting daring expeditions for the younger cats",
+            "Is sharing wisdom with the younger cats that is... less than helpful",
+            "Is recounting daring expeditions for the younger cats",
             "Is telling a rather tall tale to any cat who will listen"
         ],
         "main_age_constraint": [
@@ -76,7 +76,7 @@
         ]
     },
     {
-      "id": "elder_to_alive_apprentice",
+        "id": "elder_to_alive_apprentice",
         "thoughts": [
             "Is requesting an apprentice's help with {PRONOUN/m_c/poss} ticks",
             "Is asking apprentices to help check {PRONOUN/m_c/object} for ticks"
@@ -112,10 +112,10 @@
         "main_age_constraint": [
             "senior"
         ],
-        "random_living_status":[
+        "random_living_status": [
             "starclan"
         ],
-        "relationship_constraint":[
+        "relationship_constraint": [
             "mates"
         ]
     },
@@ -177,8 +177,11 @@
         "main_status_constraint": [
             "elder"
         ],
-        "random_status_constraint":[
+        "random_status_constraint": [
             "medicine cat"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -197,8 +200,11 @@
         "main_status_constraint": [
             "elder"
         ],
-        "random_status_constraint":[
+        "random_status_constraint": [
             "kitten"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -218,6 +224,9 @@
         "random_status_constraint": [
             "medicine cat apprentice",
             "medicine cat"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -276,6 +285,9 @@
         ],
         "random_age_constraint": [
             "any"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -320,9 +332,11 @@
         "random_status_constraint": [
             "medicine cat apprentice",
             "medicine cat"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
-
     {
         "id": "blind_gen_retired_to_alive_notkit",
         "thoughts": [
@@ -342,6 +356,9 @@
             "adult",
             "senior adult",
             "senior"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -366,6 +383,9 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -387,6 +407,9 @@
         "random_status_constraint": [
             "medicine cat apprentice",
             "medicine cat"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -426,6 +449,9 @@
         "random_status_constraint": [
             "medicine cat apprentice",
             "medicine cat"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -496,6 +522,9 @@
         ],
         "random_status_constraint": [
             "any"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -539,6 +568,9 @@
         ],
         "random_status_constraint": [
             "any"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -560,6 +592,9 @@
         ],
         "random_status_constraint": [
             "kitten"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -599,6 +634,9 @@
         ],
         "random_status_constraint": [
             "any"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -619,6 +657,9 @@
         ],
         "random_status_constraint": [
             "kitten"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -640,6 +681,9 @@
         ],
         "random_status_constraint": [
             "newborn"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -658,6 +702,9 @@
         ],
         "random_status_constraint": [
             "any"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -700,6 +747,9 @@
         ],
         "random_status_constraint": [
             "kitten"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -723,6 +773,9 @@
         ],
         "random_status_constraint": [
             "apprentice"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -742,6 +795,9 @@
         ],
         "random_status_constraint": [
             "kitten"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -797,6 +853,9 @@
         "random_status_constraint": [
             "medicine cat",
             "medicine cat apprentice"
+        ],
+        "random_living_status": [
+            "living"
         ]
     }
 ]
