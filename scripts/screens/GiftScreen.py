@@ -332,6 +332,10 @@ class GiftScreen(Screens):
 
     def change_cat(self, new_mentor=None, accomplice=None, accompliced=None):
         game.clan.your_cat.pelt.inventory.remove(self.selected_accessory.tool_tip_text)
+        if self.selected_accessory.tool_tip_text in game.clan.your_cat.pelt.accessories:
+            game.clan.your_cat.pelt.accessories.remove(self.selected_accessory.tool_tip_text)
+        if self.selected_accessory.tool_tip_text == game.clan.your_cat.pelt.accessory:
+            game.clan.your_cat.pelt.accessory = None
         self.selected_cat.pelt.inventory.append(self.selected_accessory.tool_tip_text)
         self.exit_screen()
         game.switches['cur_screen'] = "events screen"
@@ -410,6 +414,9 @@ class GiftScreen(Screens):
                 self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_tail2' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
 
             info = self.selected_accessory.tool_tip_text
+
+            if self.selected_accessory.tool_tip_text in game.clan.your_cat.pelt.accessories:
+                info += "\nCurrently worn"
             
             self.selected_details["selected_info"] = pygame_gui.elements.UITextBox(info,
                                                                                 scale(pygame.Rect((540, 325),
@@ -569,21 +576,11 @@ class GiftScreen(Screens):
                 except:
                     continue
 
-
     def get_valid_cats(self):
         valid_mentors = []
 
         for cat in Cat.all_cats_list:
             if not cat.dead and not cat.outside and not cat.ID == game.clan.your_cat.ID and not cat.moons == 0:
-                valid_mentors.append(cat)
-        
-        return valid_mentors
-
-    def get_valid_cats2(self):
-        valid_mentors = []
-
-        for cat in Cat.all_cats_list:
-            if not cat.dead and not cat.outside and not cat.ID == game.clan.your_cat.ID and not cat.ID == self.cat_to_murder.ID and not cat.moons == 0:
                 valid_mentors.append(cat)
         
         return valid_mentors
