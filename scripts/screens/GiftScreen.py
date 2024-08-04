@@ -65,12 +65,18 @@ class GiftScreen(Screens):
         self.cat_list_buttons = {}
         self.search_inventory = []
         self.accessory_buttons = {}
+        self.selected_accessory = None
+        self.cat_sprite = None
         
     def handle_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element in self.cat_list_buttons.values():
                 self.selected_cat = event.ui_element.return_cat_object()
                 self.update_selected_cat()
+            
+            elif event.ui_element in self.accessory_buttons.values():
+                self.selected_accessory = event.ui_element
+                self.update_selected_cat2()
 
             elif event.ui_element == self.confirm_mentor and self.selected_cat and self.stage == 'choose murder cat':
                 if not self.selected_cat.dead:
@@ -99,11 +105,7 @@ class GiftScreen(Screens):
                                                 
                     self.change_cat(self.murder_cat, self.selected_cat, accompliced)
                     self.stage = 'choose murder cat'
-                
 
-            elif self.stage == 'choose accomplice' and event.ui_element == self.next:
-                    self.change_cat(self.murder_cat, None, None)
-                    self.stage = 'choose murder cat'
             
             elif event.ui_element == self.back_button:
                 self.change_screen('profile screen')
@@ -308,8 +310,6 @@ class GiftScreen(Screens):
         if self.search_bar:
             self.search_bar.kill()
 
-        
-        
         if self.next:
             self.next.kill()
             del self.next
@@ -352,296 +352,9 @@ class GiftScreen(Screens):
 
     def change_cat(self, new_mentor=None, accomplice=None, accompliced=None):
         self.exit_screen()
-        r = randint(0,100)
-        r2 = randint(-10, 10)
-        chance = self.get_kill(game.clan.your_cat, self.cat_to_murder, accomplice, accompliced)
-        if game.config["murder_chance"] != -1:
-            try:
-                chance = game.config["murder_chance"]
-            except:
-                pass
-        murdered = r < max(5, chance + r2)
-        you = game.clan.your_cat
-        cat_to_murder = self.cat_to_murder
-        game.clan.murdered = True
-        if murdered:
-            self.choose_murder_text(you, cat_to_murder, accomplice, accompliced)
-        else:
-            self.handle_murder_fail(you, cat_to_murder, accomplice, accompliced)
 
         game.switches['cur_screen'] = "events screen"
     
-    RESOURCE_DIR = "resources/dicts/events/lifegen_events/"
-    def choose_murder_text(self, you, cat_to_murder, accomplice, accompliced):
-        with open(f"{self.RESOURCE_DIR}murder.json",
-                encoding="ascii") as read_file:
-            self.m_txt = ujson.loads(read_file.read())
-        with open(f"{self.RESOURCE_DIR}murder_unsuccessful.json",
-                encoding="ascii") as read_file:
-            self.mu_txt = ujson.loads(read_file.read())
-            
-        try:
-            ceremony_txt = self.m_txt["murder " + game.clan.your_cat.status.replace(" ", "") + " " + cat_to_murder.status.replace(" ", "")]
-            ceremony_txt.extend(self.m_txt["murder general"])
-            ceremony_txt = choice(ceremony_txt)
-        except:
-            ceremony_txt = choice(self.m_txt["murder general"])
-
-        ceremony_txt = ceremony_txt.replace('v_c', str(cat_to_murder.name))
-        ceremony_txt = ceremony_txt.replace('c_n', game.clan.name)
-        if cat_to_murder.status == 'leader':
-            game.clan.leader_lives = 0
-        cat_to_murder.die()
-        game.cur_events_list.insert(0, Single_Event(ceremony_txt))
-
-        discover_chance = self.get_discover_chance(you, cat_to_murder, accomplice, accompliced)
-        r_num = randint(1,100)
-
-        # discover_chance = 2
-        # r_num = 1
-        # debug ^^
-
-        discovered = False
-        if r_num < discover_chance:
-            discovered = True
-        else:
-            discovered = False
-            
-        if discovered:
-            if accomplice and accompliced:
-                game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + " with the help of " + str(accomplice.name) + "."))
-                History.add_death(cat_to_murder, f"{you.name} and {accomplice.name} murdered this cat.")
-                History.add_murders(cat_to_murder, accomplice, True, f"{you.name} murdered this cat along with {accomplice.name}.")
-                History.add_murders(cat_to_murder, you, True, f"{you.name} murdered this cat with the help of {accomplice.name}.")
-                
-                accguiltchance = randint(1,2)
-                if accguiltchance == 1:
-                    accomplice.get_injured("guilt")
-
-                youguiltchance = randint(1,4)
-                if youguiltchance == 1:
-                    accomplice.get_injured("guilt")
-
-            else:
-                game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + "."))
-                History.add_death(cat_to_murder, f"{you.name} murdered this cat.")
-                History.add_murders(cat_to_murder, you, True, f"{you.name} murdered this cat.")
-            self.choose_discover_punishment(you, cat_to_murder, accomplice, accompliced)
-        else:
-            if accomplice:
-                if accompliced:
-                    History.add_death(cat_to_murder, f"{you.name} and {accomplice.name} murdered this cat.")
-                    History.add_murders(cat_to_murder, you, True, f"{you.name} murdered this cat along with {accomplice.name}.")
-                    History.add_murders(cat_to_murder, accomplice, True, f"{you.name} murdered this cat along with {accomplice.name}.")
-                    game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + " along with " + str(accomplice.name) + ". It seems no one is aware of your actions."))
-
-                    accguiltchance = randint(1,4)
-                    if accguiltchance == 1:
-                        accomplice.get_injured("guilt")
-
-                    youguiltchance = randint(1,6)
-                    if youguiltchance == 1:
-                        accomplice.get_injured("guilt")
-
-
-                else:
-                    History.add_death(cat_to_murder, f"{you.name} murdered this cat.")
-                    History.add_murders(cat_to_murder, you, True, f"{you.name} murdered this cat.")
-                    game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + " but " + str(accomplice.name) + " chose not to help. It seems no one is aware of your actions."))
-            else:
-                History.add_death(cat_to_murder, f"{you.name} murdered this cat.")
-                History.add_murders(cat_to_murder, you, True, f"{you.name} murdered this cat.")
-                game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + ". It seems no one is aware of your actions."))
-        
-        
-          
-    def choose_discover_punishment(self, you, cat_to_murder, accomplice, accompliced):
-        # 1 = you punished, 2 = accomplice punished, 3 = both punished
-        punishment_chance = randint(1,3)
-        if not accomplice or not accompliced:
-            punishment_chance = 1
-        if punishment_chance == 1:
-            if accomplice and not accompliced:
-                a_s = randint(1,2)
-                if a_s == 1 and accomplice.status != "leader":
-                    game.cur_events_list.insert(2, Single_Event(f"Shocked at your request to be an accomplice to murder, {accomplice.name} reports your actions to the Clan leader."))
-                you.shunned = 1
-            txt = ""
-            if game.clan.your_cat.status in ['kitten', 'leader', 'deputy', 'medicine cat']:
-                txt = choice(self.mu_txt["murder_discovered " + game.clan.your_cat.status])
-            else:
-                txt = choice(self.mu_txt["murder_discovered general"])
-            txt = txt.replace('v_c', str(cat_to_murder.name))
-            game.cur_events_list.insert(2, Single_Event(txt))
-            you.shunned = 1
-            you.faith -= 0.5
-        elif punishment_chance == 2:
-            txt = f"{accomplice.name} is blamed for the murder of v_c. However, you were not caught."
-            txt = txt.replace('v_c', str(cat_to_murder.name))
-            game.cur_events_list.insert(2, Single_Event(txt))
-            accomplice.shunned = 1
-            accomplice.faith -= 0.5
-        else:
-            txt = f"The unsettling truth of v_c's death is discovered, with you and {accomplice.name} responsible. The Clan decides both of your punishments."
-            txt = txt.replace('v_c', str(cat_to_murder.name))
-            game.cur_events_list.insert(2, Single_Event(txt))
-            you.shunned = 1
-            accomplice.shunned = 1
-            accomplice.faith -= 0.5
-        
-        if punishment_chance == 1 or punishment_chance == 3:
-            kit_punishment = ["You are assigned counseling by the Clan's medicine cat to help you understand the severity of your actions and to guide you to make better decisions in the future.",
-                                "You are to be kept in the nursery under the watchful eye of the queens at all times until you become an apprentice."]
-            gen_punishment = ["You are assigned counseling by the Clan's medicine cat to help you understand the severity of your actions and to guide you to make better decisions in the future.",
-                                "You will be required to take meals last and are forced to sleep in a separate den away from your clanmates.",
-                                "You are assigned to several moons of tasks that include cleaning out nests, checking elders for ticks, and other chores alongside your normal duties.",
-                                "You are assigned a mentor who will better educate you about the Warrior Code and the sacredness of life."]
-            # demote_leader = ["Your lives will be stripped away and you will be demoted to a warrior, no longer trusted to be the Clan's leader."]
-            # demote_deputy = ["The Clan decides that you will be demoted to a warrior, no longer trusting you as their deputy."]
-            # demote_medicine_cat = ["The Clan decides that you will be demoted to a warrior, no longer trusting you as their medicine cat."]
-            # exiled = ["The Clan decides that they no longer feel safe with you as a Clanmate. You will be exiled from the Clan."]
-            
-            if you.status == 'kitten' or you.status == 'newborn':
-                game.cur_events_list.insert(3, Single_Event(choice(kit_punishment)))
-            elif you.status == 'leader':
-                lead_choice = randint(1,3)
-                if lead_choice == 1:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
-            elif you.status == 'deputy':
-                lead_choice = randint(1,3)
-                if lead_choice == 1:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
-            elif you.status == 'medicine cat':
-                lead_choice = randint(1,3)
-                if lead_choice == 1:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
-            else:
-                lead_choice = randint(1,5)
-                if lead_choice in [1, 2, 3, 4]:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
-        
-        if accomplice and accompliced and (punishment_chance == 2 or punishment_chance == 3):
-            a_n = str(accomplice.name)
-            kit_punishment = [f"{a_n} is assigned counseling by the Clan's medicine cat to help them understand the severity of their actions and to guide them to make better decisions in the future.",
-                            f"{a_n} is to be kept in the nursery under the watchful eye of the queens at all times until they become an apprentice."]
-            gen_punishment = [f"{a_n} is assigned counseling by the Clan's medicine cat to help them understand the severity of their actions and to guide them to make better decisions in the future.",
-                                f"{a_n} is required to take meals last and is forced to sleep in a separate den away from their clanmates.",
-                                f"{a_n} is assigned to several moons of tasks that include cleaning out nests, checking elders for ticks, and other chores alongside their normal duties.",
-                                f"{a_n} is assigned a mentor who will better educate them about the Warrior Code and the sacredness of life."]
-            
-            # demote_leader = [f"{a_n}'s lives will be stripped away and they will be demoted to a warrior, no longer trusted to be the Clan's leader."]
-            # demote_deputy = [f"The Clan decides that {a_n} will be demoted to a warrior, no longer trusting them as their deputy."]
-            # demote_medicine_cat = [f"The Clan decides that {a_n} will be demoted to a warrior, no longer trusting them as their medicine cat."]
-            # exiled = [f"The Clan decides that they no longer feel safe with {a_n} as a Clanmate. They will be exiled from the Clan."]
-
-            if accomplice.status == 'kitten' or accomplice.status == 'newborn':
-                game.cur_events_list.insert(3, Single_Event(choice(kit_punishment)))
-            elif accomplice.status == 'leader':
-                lead_choice = randint(1,3)
-                if lead_choice == 1:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
-                
-            elif accomplice.status == 'deputy':
-                lead_choice = randint(1,3)
-                if lead_choice == 1:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
-               
-            elif accomplice.status == 'medicine cat':
-                lead_choice = randint(1,3)
-                if lead_choice == 1:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
-                
-            else:
-                lead_choice = randint(1,5)
-                if lead_choice in [1, 2, 3, 4]:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
-    
-
-    def handle_murder_fail(self, you, cat_to_murder, accomplice, accompliced):
-        c_m = str(cat_to_murder.name)
-        discover_chance = randint(1,2)
-        fail_texts = []
-        if discover_chance == 1:
-            fail_texts = ["You attempted to murder "+ c_m + ", but were unsuccessful. They were oblivious of your attempt.",
-                            "You attempted to murder "+ c_m + ", but they sidestepped the peril you'd arranged. They remained oblivious to your intent.",
-                            "You made an effort to end "+ c_m + "'s life, but fortune favored them. They were none the wiser of your deadly plot.",
-                            "Your plot to murder "+ c_m + " fell through, and they went about their day, unaware of the fate you'd intended for them.",
-                            "Despite your best efforts, "+ c_m + " remained unscathed. They continued on, blissfully ignorant of your lethal plan.",
-                            "Your attempt to kill "+ c_m + " proved futile, and they stayed clueless about your ominous intentions."]
-        else:
-            if accomplice and accompliced:
-                fail_texts = [f"You attempted to murder {c_m}, but your plot was unsuccessful. They appear to be slightly wary of you and {accomplice.name} now.",
-                                f"Your effort to end {c_m}'s life was thwarted, and they now seem a bit more cautious around you and {accomplice.name}.",
-                                f"Despite your intent to murder {c_m}, they remained unscathed. They now look at you and {accomplice.name} with a hint of suspicion.",
-                                f"You and {accomplice.name} tried to kill {c_m}, but they survived. They now seem to watch you both with wary eyes.",
-                                f"Your plot to murder {c_m} fell through, and they remain alive, now showing signs of mild suspicion towards you and {accomplice.name}."]
-                cat_to_murder.relationships[you.ID].dislike += randint(1,20)
-                cat_to_murder.relationships[you.ID].platonic_like -= randint(1,15)
-                cat_to_murder.relationships[you.ID].comfortable -= randint(1,15)
-                cat_to_murder.relationships[you.ID].trust -= randint(1,15)
-                cat_to_murder.relationships[you.ID].admiration -= randint(1,15)
-                cat_to_murder.relationships[accomplice.ID].dislike += randint(1,20)
-                cat_to_murder.relationships[accomplice.ID].platonic_like -= randint(1,15)
-                cat_to_murder.relationships[accomplice.ID].comfortable -= randint(1,15)
-                cat_to_murder.relationships[accomplice.ID].trust -= randint(1,15)
-                cat_to_murder.relationships[accomplice.ID].admiration -= randint(1,15)                
-            else:
-                fail_texts = ["You attempted to murder "+ c_m + ", but your plot was unsuccessful. They appear to be slightly wary now.",
-                                "Your effort to end "+ c_m + "'s life was thwarted, and they now seem a bit more cautious around you.",
-                                "Despite your intent to murder "+ c_m + ", they remained unscathed. They look at you now with a hint of suspicion.",
-                                "You tried to kill "+ c_m + ", but they survived. They now seem to watch you with wary eyes.",
-                                "Your plot to murder "+ c_m + " fell through, and they remain alive, now showing signs of mild suspicion towards you."]
-                cat_to_murder.relationships[you.ID].dislike += randint(1,20)
-                cat_to_murder.relationships[you.ID].platonic_like -= randint(1,15)
-                cat_to_murder.relationships[you.ID].comfortable -= randint(1,15)
-                cat_to_murder.relationships[you.ID].trust -= randint(1,15)
-                cat_to_murder.relationships[you.ID].admiration -= randint(1,15)
-        game.cur_events_list.insert(0, Single_Event(choice(fail_texts)))
-        
-    
-
-
-    def get_kill(self, you, cat_to_murder, accomplice, accompliced):
-        chance = self.status_chances.get(you.status, 0)
-        your_skills = []
-        if you.skills.primary:
-            your_skills.append(you.skills.primary.skill)
-        if you.skills.secondary:
-            your_skills.append(you.skills.secondary.skill)
-        if any(skill in self.murder_skills for skill in your_skills):
-            chance += 5
-        if any(skill in self.good_murder_skills for skill in your_skills):
-            chance += 10
-        if any(skill in self.great_murder_skills for skill in your_skills):
-            chance += 15
-        if any(skill in self.best_murder_skills for skill in your_skills):
-            chance += 20
-        
-        chance += self.skill_chances.get(cat_to_murder.status, 0)
-        
-        their_skills = []
-        if cat_to_murder.skills.primary:
-            their_skills.append(cat_to_murder.skills.primary.skill)
-        if cat_to_murder.skills.secondary:
-            their_skills.append(cat_to_murder.skills.secondary.skill)
-        if any(skill in self.murder_skills for skill in their_skills):
-            chance -= 5
-        if any(skill in self.good_murder_skills for skill in their_skills):
-            chance -= 10
-        if any(skill in self.great_murder_skills for skill in their_skills):
-            chance -= 15
-        if any(skill in self.best_murder_skills for skill in their_skills):
-            chance -= 20
-        
-        if you.is_ill() or you.is_injured():
-            chance -= 20
-        if cat_to_murder.is_ill() or cat_to_murder.is_injured():
-            chance += 20
-            
-        if accomplice and accompliced:
-            chance += 20
-        
-        return chance
     
     def update_selected_cat(self):
         """Updates the image and information on the currently selected mentor"""
@@ -679,42 +392,53 @@ class GiftScreen(Screens):
                 name,
                 object_id="#text_box_34_horizcenter", manager=MANAGER)
             
-                        
-
                     
     def update_selected_cat2(self):
         """Updates the image and information on the currently selected mentor"""
         for ele in self.selected_details:
             self.selected_details[ele].kill()
-        self.selected_details = {}
-        if self.selected_cat:
-            self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
-                scale(pygame.Rect((440, 300), (300, 300))),
-                pygame.transform.scale(
-                    self.selected_cat.sprite,
-                    (300, 300)), manager=MANAGER)
 
-            info = self.selected_cat.status + "\n" + \
-                   self.selected_cat.genderalign + "\n" + self.selected_cat.personality.trait + "\n"
+        self.selected_details = {}
+        if self.selected_accessory:
+            cat = game.clan.your_cat
+            accessory = self.selected_accessory.tool_tip_text
             
-            if self.selected_cat.moons < 1:
-                info += "???"
-            else:
-                info += self.selected_cat.skills.skill_string(short=True)
+            if accessory in cat.pelt.plant_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_herbs' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.wild_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_wild' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.collars:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['collars' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.flower_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_flower' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.plant2_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_plant2' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.snake_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_snake' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.smallAnimal_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_smallAnimal' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.deadInsect_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_deadInsect' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.aliveInsect_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_aliveInsect' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.fruit_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_fruit' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.crafted_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_crafted' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+            elif accessory in cat.pelt.tail2_accessories:
+                self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_tail2' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
+
+            info = self.selected_accessory.tool_tip_text
             
             self.selected_details["selected_info"] = pygame_gui.elements.UITextBox(info,
-                                                                                   scale(pygame.Rect((540, 325),
-                                                                                                     (210, 250))),
-                                                                                   object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
-                                                                                   manager=MANAGER)
+                                                                                scale(pygame.Rect((540, 325),
+                                                                                                    (210, 250))),
+                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
+                                                                                manager=MANAGER)
 
-            name = str(self.selected_cat.name)  # get name
-            if 11 <= len(name):  # check name length
-                short_name = str(name)[0:9]
-                name = short_name + '...'
             self.selected_details["mentor_name"] = pygame_gui.elements.ui_label.UILabel(
-                scale(pygame.Rect((890, 230), (220, 60))),
-                name,
+                scale(pygame.Rect((260, 230), (220, 60))),
+                "Gift",
                 object_id="#text_box_34_horizcenter", manager=MANAGER)
             
 
@@ -766,30 +490,30 @@ class GiftScreen(Screens):
         """Updates the cat sprite buttons. """
         cat = self.the_cat
         age = cat.age
-        cat_sprite = str(cat.pelt.cat_sprites[cat.age])
+        self.cat_sprite = str(cat.pelt.cat_sprites[cat.age])
 
         # setting the cat_sprite (bc this makes things much easier)
         if cat.not_working() and age != 'newborn' and game.config['cat_sprites']['sick_sprites']:
             if age in ['kitten', 'adolescent']:
-                cat_sprite = str(19)
+                self.cat_sprite = str(19)
             else:
-                cat_sprite = str(18)
+                self.cat_sprite = str(18)
         elif cat.pelt.paralyzed and age != 'newborn':
             if age in ['kitten', 'adolescent']:
-                cat_sprite = str(17)
+                self.cat_sprite = str(17)
             else:
                 if cat.pelt.length == 'long':
-                    cat_sprite = str(16)
+                    self.cat_sprite = str(16)
                 else:
-                    cat_sprite = str(15)
+                    self.cat_sprite = str(15)
         else:
             if age == 'elder' and not game.config['fun']['all_cats_are_newborn']:
                 age = 'senior'
 
             if game.config['fun']['all_cats_are_newborn']:
-                cat_sprite = str(cat.pelt.cat_sprites['newborn'])
+                self.cat_sprite = str(cat.pelt.cat_sprites['newborn'])
             else:
-                cat_sprite = str(cat.pelt.cat_sprites[age])
+                self.cat_sprite = str(cat.pelt.cat_sprites[age])
 
         pos_x = 20
         pos_y = 250
@@ -830,34 +554,31 @@ class GiftScreen(Screens):
             for a, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len)], start = start_index):
                 try:
                     if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
-                        if accessory in cat.pelt.accessories:
-                            self.accessory_buttons[str(i)] = UIImageButton(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), "", object_id="#fav_marker")
-                        else:
-                            self.accessory_buttons[str(i)] = UIImageButton(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), "", object_id="#blank_button")
+                        self.accessory_buttons[str(i)] = UIImageButton(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), "", tool_tip_text=accessory, object_id="#blank_button")
                         if accessory in cat.pelt.plant_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_herbs' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_herbs' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.wild_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_wild' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_wild' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.collars:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['collars' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['collars' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.flower_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_flower' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_flower' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.plant2_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_plant2' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_plant2' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.snake_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_snake' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_snake' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.smallAnimal_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_smallAnimal' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_smallAnimal' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.deadInsect_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_deadInsect' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_deadInsect' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.aliveInsect_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_aliveInsect' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_aliveInsect' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.fruit_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_fruit' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_fruit' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.crafted_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_crafted' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_crafted' + accessory + self.cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.tail2_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_tail2' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_tail2' + accessory + self.cat_sprite], manager=MANAGER)
                         self.accessories_list.append(accessory)
                         pos_x += 120
                         if pos_x >= 1200:
