@@ -56,7 +56,6 @@ class GiftScreen(Screens):
         self.murderimg = None
         self.page = 0
         self.max_pages = 1
-        self.clear_accessories = None
         self.search_bar_image = None
         self.search_bar = None
         self.previous_page_button = None
@@ -65,6 +64,7 @@ class GiftScreen(Screens):
         self.previous_search_text = "search"
         self.cat_list_buttons = {}
         self.search_inventory = []
+        self.accessory_buttons = {}
         
     def handle_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
@@ -126,11 +126,53 @@ class GiftScreen(Screens):
                 else:
                     print("invalid previous cat", self.previous_cat)
             elif event.ui_element == self.next_page_button:
-                self.current_page += 1
-                self.update_cat_list()
+                if self.stage == "choose murder cat":
+                    self.current_page += 1
+                    self.update_cat_list()
+                elif self.stage == "choose accomplice":
+                    self.page += 1
+                    
+                    if self.page == 0 and self.max_pages in [0, 1]:
+                        self.previous_page_button.disable()
+                        self.next_page_button.disable()
+                    elif self.page == 0:
+                        self.previous_page_button.disable()
+                        self.next_page_button.enable()
+                    elif self.page == self.max_pages - 1:
+                        self.previous_page_button.enable()
+                        self.next_page_button.disable()
+                    else:
+                        self.previous_page_button.enable()
+                        self.next_page_button.enable()
+                    for i in self.cat_list_buttons:
+                        self.cat_list_buttons[i].kill()
+                    for i in self.accessory_buttons:
+                        self.accessory_buttons[i].kill()
+                    self.update_cat_list2()
             elif event.ui_element == self.previous_page_button:
-                self.current_page -= 1
-                self.update_cat_list()
+                if self.stage == "choose murder cat":
+                    self.current_page -= 1
+                    self.update_cat_list()
+
+                elif self.stage == "choose accomplice":
+                    self.page -= 1
+                    if self.page == 0 and self.max_pages in [0, 1]:
+                        self.previous_page_button.disable()
+                        self.next_page_button.disable()
+                    elif self.page == 0:
+                        self.previous_page_button.disable()
+                        self.next_page_button.enable()
+                    elif self.page == self.max_pages - 1:
+                        self.previous_page_button.enable()
+                        self.next_page_button.disable()
+                    else:
+                        self.previous_page_button.enable()
+                        self.next_page_button.enable()
+                    for i in self.cat_list_buttons:
+                        self.cat_list_buttons[i].kill()
+                    for i in self.accessory_buttons:
+                        self.accessory_buttons[i].kill()
+                    self.update_cat_list2()
 
     def screen_switches(self):
 
@@ -148,7 +190,7 @@ class GiftScreen(Screens):
             self.mentor_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((200, 226), (569, 399))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
-                                                                    "resources/images/murder_select.png").convert_alpha(),
+                                                                "resources/images/choosing_cat1_frame_ment.png").convert_alpha(),
                                                                 (569, 399)), manager=MANAGER)
             self.murderimg = pygame_gui.elements.UIImage(scale(pygame.Rect((850, 150), (446, 494))),
                                                             pygame.transform.scale(
@@ -182,7 +224,7 @@ class GiftScreen(Screens):
             self.mentor_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((200, 226), (569, 399))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
-                                                                    "resources/images/murder_select.png").convert_alpha(),
+                                                                    "resources/images/choosing_cat1_frame_ment.png").convert_alpha(),
                                                                 (569, 399)), manager=MANAGER)
 
             
@@ -193,31 +235,20 @@ class GiftScreen(Screens):
                                                                 (446, 494)), manager=MANAGER)
 
             self.back_button = UIImageButton(scale(pygame.Rect((50, 1290), (210, 60))), "", object_id="#back_button")
-            self.confirm_mentor = UIImageButton(scale(pygame.Rect((235, 610), (208, 52))), "",
+            self.confirm_mentor = UIImageButton(scale(pygame.Rect((270, 610), (208, 52))), "",
                                                 object_id="#patrol_select_button")
         
             self.previous_page_button = UIImageButton(scale(pygame.Rect((630, 1155), (68, 68))), "",
                                                     object_id="#relation_list_previous", manager=MANAGER)
             self.next_page_button = UIImageButton(scale(pygame.Rect((902, 1155), (68, 68))), "",
                                                 object_id="#relation_list_next", manager=MANAGER)
-            
-            self.next = UIImageButton(scale(pygame.Rect((450, 595), (68, 68))), "",
-                                                tool_tip_text= "Proceed without an accomplice.",
-                                                object_id="#relation_list_next", manager=MANAGER)
-            
-            self.previous_page_button = UIImageButton(scale(pygame.Rect((110, 1000), (68, 68))), "",
-                                              object_id="#arrow_left_button"
-                                              , manager=MANAGER)
-            self.next_page_button = UIImageButton(scale(pygame.Rect((1418, 1000), (68, 68))), "",
-                                                  object_id="#arrow_right_button", manager=MANAGER)
-            self.clear_accessories = UIImageButton(scale(pygame.Rect((1418, 1160), (68, 68))), "",
-                                                  object_id="#exit_window_button", tool_tip_text="Remove all worn accessories", manager=MANAGER)
 
-            self.search_bar_image = pygame_gui.elements.UIImage(scale(pygame.Rect((239, 910), (236, 68))),
+
+            self.search_bar_image = pygame_gui.elements.UIImage(scale(pygame.Rect((219, 680), (236, 68))),
                                                             pygame.image.load(
                                                                 "resources/images/search_bar.png").convert_alpha(),
                                                             manager=MANAGER)
-            self.search_bar = pygame_gui.elements.UITextEntryLine(scale(pygame.Rect((259, 915), (205, 55))),
+            self.search_bar = pygame_gui.elements.UITextEntryLine(scale(pygame.Rect((239, 685), (205, 55))),
                                                               object_id="#search_entry_box",
                                                               initial_text="search",
                                                               manager=MANAGER)
@@ -240,6 +271,10 @@ class GiftScreen(Screens):
         for ele in self.selected_details:
             self.selected_details[ele].kill()
         self.selected_details = {}
+
+        for ele in self.accessory_buttons:
+            self.accessory_buttons[ele].kill()
+        self.accessory_buttons = {}
         
         if self.heading:
             self.heading.kill()
@@ -266,6 +301,14 @@ class GiftScreen(Screens):
         if self.next_page_button:
             self.next_page_button.kill()
             del self.next_page_button
+        
+        if self.search_bar_image:
+            self.search_bar_image.kill()
+        
+        if self.search_bar:
+            self.search_bar.kill()
+
+        
         
         if self.next:
             self.next.kill()
@@ -513,23 +556,6 @@ class GiftScreen(Screens):
                 if lead_choice in [1, 2, 3, 4]:
                     game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
     
-    def get_discover_chance(self, you, cat_to_murder, accomplice=None, accompliced=None):
-        chance = 30
-        if you.status == 'kitten':
-            chance += 40
-        elif you.age == 'adolescent':
-            chance += 30
-        if you.experience >= 100:
-            chance -= 10
-        elif you.experience <= 30:
-            chance += 20
-        if cat_to_murder.status in ['leader', 'deputy', 'medicine cat']:
-            chance += 20
-        if you.status in ['leader', 'deputy', 'medicine cat']:
-            chance -= 10
-        if accomplice and accompliced:
-            chance -= 10
-        return chance + randint(-10,10)
 
     def handle_murder_fail(self, you, cat_to_murder, accomplice, accompliced):
         c_m = str(cat_to_murder.name)
@@ -573,40 +599,6 @@ class GiftScreen(Screens):
         game.cur_events_list.insert(0, Single_Event(choice(fail_texts)))
         
     
-    status_chances = {
-        'warrior': 40,
-        'medicine cat': 40,
-        'mediator': 35,
-        'apprentice': 30,
-        'medicine cat apprentice': 25,
-        'mediator apprentice': 20,
-        "queen": 25,
-        "queen's apprentice": 20,
-        'deputy': 50,
-        'leader': 60,
-        'elder': 25,
-        'kitten': 10,
-    }
-
-    skill_chances = {
-        'warrior': -5,
-        'medicine cat': -5,
-        'mediator': 0,
-        'apprentice': 5,
-        'medicine cat apprentice': 5,
-        'mediator apprentice': 5,
-        "queen's apprentice": 10,
-        'queen': 5,
-        'deputy': -10,
-        'leader': -15,
-        'elder': 5,
-        'kitten': 30
-    }
-
-    murder_skills = ["quick witted", "avid play-fighter", "oddly observant","never sits still"]
-    good_murder_skills = ["clever", "good fighter", "natural intuition","fast runner"]
-    great_murder_skills = ["very clever", "formidable fighter", "keen eye","incredible runner"]
-    best_murder_skills = ["incredibly clever", "unusually strong fighter", "unnatural senses","fast as the wind"]
 
 
     def get_kill(self, you, cat_to_murder, accomplice, accompliced):
@@ -665,7 +657,7 @@ class GiftScreen(Screens):
                     (270, 270)), manager=MANAGER)
 
             info = self.selected_cat.status + "\n" + \
-                   self.selected_cat.genderalign + "\n" + self.selected_cat.personality.trait + "\n"
+                self.selected_cat.genderalign + "\n" + self.selected_cat.personality.trait + "\n"
 
             if self.selected_cat.moons < 1:
                 info += "???"
@@ -673,10 +665,10 @@ class GiftScreen(Screens):
                 info += self.selected_cat.skills.skill_string(short=True)
             
             self.selected_details["selected_info"] = pygame_gui.elements.UITextBox(info,
-                                                                                   scale(pygame.Rect((540, 325),
-                                                                                                     (210, 250))),
-                                                                                   object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
-                                                                                   manager=MANAGER)
+                                                                                scale(pygame.Rect((540, 325),
+                                                                                                    (210, 250))),
+                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
+                                                                                manager=MANAGER)
 
             name = str(self.selected_cat.name)  # get name
             if 11 <= len(name):  # check name length
@@ -686,89 +678,9 @@ class GiftScreen(Screens):
                 scale(pygame.Rect((260, 230), (220, 60))),
                 name,
                 object_id="#text_box_34_horizcenter", manager=MANAGER)
-            if self.stage == 'choose murder cat':
-                if not self.selected_cat.dead and not self.selected_cat.outside:
-                    c_text = ""
-                    chance = self.get_kill(game.clan.your_cat, self.selected_cat, None, False)
-                    if chance < 20:
-                        c_text = "very low"
-                    elif chance < 30:
-                        c_text = "low"
-                    elif chance < 40:
-                        c_text = "average"
-                    elif chance < 70:
-                        c_text = "high"
-                    else:
-                        c_text = "very high"
-                    if game.settings['dark mode']:
-                        self.selected_details["chance"] = pygame_gui.elements.UITextBox("murder chance: " + c_text,
-                                                                                                scale(pygame.Rect((540, 500),
-                                                                                                                    (210, 250))),
-                                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
-                                                                                                manager=MANAGER)
-
-                    else:
-                        self.selected_details["chance"] = pygame_gui.elements.UITextBox("murder chance: " + c_text,
-                                                                                            scale(pygame.Rect((540, 500),
-                                                                                                                (210, 250))),
-                                                                                            object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
-                                                                                            manager=MANAGER)
-            else:
-                if not self.selected_cat.dead and not self.selected_cat.outside:
-                    c_text = ""
-                    chance = self.get_accomplice_chance(game.clan.your_cat, self.selected_cat)
-                    if game.config["accomplice_chance"] != -1:
-                        try:
-                            chance = game.config["accomplice_chance"]
-                        except:
-                            pass
-                    if chance < 30:
-                        c_text = "very low"
-                    elif chance < 40:
-                        c_text = "low"
-                    elif chance < 50:
-                        c_text = "average"
-                    elif chance < 70:
-                        c_text = "high"
-                    else:
-                        c_text = "very high"
-                    if game.settings['dark mode']:
-                        self.selected_details["chance"] = pygame_gui.elements.UITextBox("willingness: " + c_text,
-                                                                                                scale(pygame.Rect((540, 500),
-                                                                                                                    (210, 250))),
-                                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
-                                                                                                manager=MANAGER)
-
-                    else:
-                        self.selected_details["chance"] = pygame_gui.elements.UITextBox("willingness: " + c_text,
-                                                                                            scale(pygame.Rect((540, 500),
-                                                                                                                (210, 250))),
-                                                                                            object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
-                                                                                            manager=MANAGER)
+            
                         
-    def get_accomplice_chance(self, you, accomplice):
-        chance = 10
-        if accomplice.relationships[you.ID].platonic_like > 10:
-            chance += 10
-        if accomplice.relationships[you.ID].dislike < 10:
-            chance += 10
-        if accomplice.relationships[you.ID].romantic_love > 10:
-            chance += 10
-        if accomplice.relationships[you.ID].comfortable > 10:
-            chance += 10
-        if accomplice.relationships[you.ID].trust > 10:
-            chance += 10
-        if accomplice.relationships[you.ID].admiration > 10:
-            chance += 10
-        if you.status in ['medicine cat', 'mediator', 'deputy', 'leader']:
-            chance += 10
-        if accomplice.status in ['medicine cat', 'mediator', 'deputy', 'leader']:
-            chance -= 20
-        if accomplice.ID in game.clan.your_cat.mate:
-            chance += 50
-        if game.clan.your_cat.is_related(accomplice, False):
-            chance += 30
-        return chance
+
                     
     def update_selected_cat2(self):
         """Updates the image and information on the currently selected mentor"""
@@ -886,8 +798,8 @@ class GiftScreen(Screens):
         self.cat_list_buttons = {}
         self.accessory_buttons = {}
         self.accessories_list = []
-        start_index = self.page * 18
-        end_index = start_index + 18
+        start_index = self.page * 30
+        end_index = start_index + 30
 
         if cat.pelt.accessory:
             if cat.pelt.accessory not in cat.pelt.inventory:
@@ -907,7 +819,7 @@ class GiftScreen(Screens):
                 if self.search_bar.get_text().lower() in ac.lower():
                     inventory_len+=1
                     new_inv.append(ac)
-        self.max_pages = math.ceil(inventory_len/18)
+        self.max_pages = math.ceil(inventory_len/30)
         
         if (self.max_pages == 1 or self.max_pages == 0):
             self.previous_page_button.disable()
@@ -919,38 +831,36 @@ class GiftScreen(Screens):
                 try:
                     if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
                         if accessory in cat.pelt.accessories:
-                            self.accessory_buttons[str(i)] = UIImageButton(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), "", object_id="#fav_marker")
+                            self.accessory_buttons[str(i)] = UIImageButton(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), "", object_id="#fav_marker")
                         else:
-                            self.accessory_buttons[str(i)] = UIImageButton(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), "", object_id="#blank_button")
+                            self.accessory_buttons[str(i)] = UIImageButton(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), "", object_id="#blank_button")
                         if accessory in cat.pelt.plant_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_herbs' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_herbs' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.wild_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_wild' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_wild' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.collars:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['collars' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['collars' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.flower_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_flower' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_flower' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.plant2_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_plant2' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_plant2' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.snake_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_snake' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_snake' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.smallAnimal_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_smallAnimal' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_smallAnimal' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.deadInsect_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_deadInsect' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_deadInsect' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.aliveInsect_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_aliveInsect' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_aliveInsect' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.fruit_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_fruit' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_fruit' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.crafted_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_crafted' + accessory + cat_sprite], manager=MANAGER)
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_crafted' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.tail2_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), sprites.sprites['acc_tail2' + accessory + cat_sprite], manager=MANAGER)
-
-
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((200 + pos_x, 500 + pos_y), (100, 100))), sprites.sprites['acc_tail2' + accessory + cat_sprite], manager=MANAGER)
                         self.accessories_list.append(accessory)
                         pos_x += 120
-                        if pos_x >= 1100:
+                        if pos_x >= 1200:
                             pos_x = 0
                             pos_y += 120
                         i += 1
@@ -1002,6 +912,8 @@ class GiftScreen(Screens):
                         self.cat_list_buttons[i].kill()
                     for i in self.accessory_buttons:
                         self.accessory_buttons[i].kill()
+                
+                self.update_cat_list2()
 
                 if self.page == 0 and self.max_pages in [0, 1]:
                     self.previous_page_button.disable()
