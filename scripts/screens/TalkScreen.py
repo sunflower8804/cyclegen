@@ -1315,6 +1315,29 @@ class TalkScreen(Screens):
                     continue
                 if "they_focuscat" in tags and cat.ID != game.clan.focus_cat.ID:
                     continue
+                if game.clan.focus == "unknown_murder":
+                    focus_cat = game.clan.focus_cat
+                    murdered_them = False
+                    if you.history:
+                        if you.history.murder:
+                            if "is_murderer" in you.history.murder:
+                                for murder_event in you.history.murder["is_murderer"]:
+                                    if focus_cat.ID == murder_event.get("victim"):
+                                        murdered_them = True
+                                        break
+                                    else:
+                                        murdered_them = False
+                            else:
+                                murdered_them = False
+                        else:
+                            murdered_them = False
+                    else:
+                        murdered_them = False
+
+                    if "you_murderer" in tags and murdered_them is False:
+                        continue
+                    elif "you_not_murderer" in tags and murdered_them:
+                        continue
 
             # dead moons tags!
             if you.dead or cat.dead:
@@ -4338,9 +4361,10 @@ class TalkScreen(Screens):
                     else:
                         self.cat_dict["fc_c"] = game.clan.focus_cat
                         text = re.sub(r'(?<!\/)fc_c(?!\/)', str(game.clan.focus_cat.name), text)
-                else:
-                    print("focus cat type", type(game.clan.focus_cat))
-                    print("deputy type", type(game.clan.deputy))
+            else:
+                if "fc_c" in text:
+                    print(game.clan.focus_cat)
+                    return ""
         except:
             return ""
         
