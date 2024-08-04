@@ -1342,6 +1342,7 @@ class MurderScreen(Screens):
             lives = ""
         
         biome = game.clan.biome.lower()
+        camp = game.clan.camp_bg
 
         if accomplice and accompliced:
             accomp = " accomplice_agreed"
@@ -1378,8 +1379,8 @@ class MurderScreen(Screens):
                         f"{insert} {insert2}"
                         f"{insert} any",
                         f"any {insert2}"
-                        "any any"
-                        # i want less generic ones if a specific one is found,, can be uncommented though
+                        # "any any"
+                        # I want less generic ones if a specific one is found. Can be uncommented though.
                        ]
                 
                 for each in statusesagain:
@@ -1387,16 +1388,22 @@ class MurderScreen(Screens):
                     extension1 = f"{each} murder {self.method} {self.location}{risk}{lives}"
                     extension2 = f"{each} murder {self.method}{risk}{lives}"
 
+                    # biomes are seperate, optional extensions
                     extension3 = f"{each} murder {self.method} {self.location}{risk}{lives} {biome}"
                     extension4 = f"{each} murder {self.method}{risk}{lives} {biome}"
-                    # biomes are seperate, optional extensions
 
+                    # accomplice addons are also optional
                     extension5 = f"{each} murder {self.method} {self.location}{risk}{lives}{accomp}"
                     extension6 = f"{each} murder {self.method}{risk}{lives}{accomp}"
 
                     extension7 = f"{each} murder {self.method} {self.location}{risk}{lives} {biome}{accomp}"
                     extension8 = f"{each} murder {self.method}{risk}{lives} {biome}{accomp}"
-                    # accomplice addons are also optional
+
+                    # camps are optional too! but only come if theres a biome as well
+                    extension9 = f"{each} murder {self.method} {self.location}{risk}{lives} {biome} {camp}"
+                    extension10 = f"{each} murder {self.method}{risk}{lives} {biome} {camp}"
+                    extension11 = f"{each} murder {self.method} {self.location}{risk}{lives} {biome} {camp}{accomp}"
+                    extension12 = f"{each} murder {self.method}{risk}{lives} {biome} {camp}{accomp}"
 
                     if extension1 in self.m_txt and self.m_txt[extension1]:
                         ceremony_txt.extend(self.m_txt[extension1])
@@ -1439,6 +1446,26 @@ class MurderScreen(Screens):
                     else:
                         print("Empty key: ", extension8)
 
+                    if extension9 in self.m_txt and self.m_txt[extension9]:
+                        ceremony_txt.extend(self.m_txt[extension9])
+                    else:
+                        print("Empty key: ", extension9)
+
+                    if extension10 in self.m_txt and self.m_txt[extension10]:
+                        ceremony_txt.extend(self.m_txt[extension10])
+                    else:
+                        print("Empty key: ", extension10)
+
+                    if extension11 in self.m_txt and self.m_txt[extension11]:
+                        ceremony_txt.extend(self.m_txt[extension11])
+                    else:
+                        print("Empty key: ", extension11)
+
+                    if extension12 in self.m_txt and self.m_txt[extension12]:
+                        ceremony_txt.extend(self.m_txt[extension12])
+                    else:
+                        print("Empty key: ", extension12)
+
                 found = True
                
                 if len(ceremony_txt) > 1:
@@ -1456,8 +1483,8 @@ class MurderScreen(Screens):
                     statusesagain = [
                         f"{insert} {insert2}",
                             f"{insert} any",
-                            "any any",
                             f"any {insert2}"
+                            # "any any"
                         ]
                     
                     for each in statusesagain:
@@ -1467,6 +1494,9 @@ class MurderScreen(Screens):
 
                         extension3 = f"{each} murder {self.method}{risk}{lives}{accomp}"
                         extension4 = f"{each} murder {self.method}{risk}{lives} {biome}{accomp}"
+
+                        extension5 = f"{each} murder {self.method}{risk}{lives} {biome} {camp}"
+                        extension6 = f"{each} murder {self.method}{risk}{lives} {biome} {camp}{accomp}"
 
                         if extension1 in self.m_txt and self.m_txt[extension1]:
                             ceremony_txt.extend(self.m_txt[extension1])
@@ -1487,6 +1517,16 @@ class MurderScreen(Screens):
                             ceremony_txt.extend(self.m_txt[extension4])
                         else:
                             print("Empty key: ", extension4)
+
+                        if extension5 in self.m_txt and self.m_txt[extension5]:
+                            ceremony_txt.extend(self.m_txt[extension5])
+                        else:
+                            print("Empty key: ", extension5)
+
+                        if extension6 in self.m_txt and self.m_txt[extension6]:
+                            ceremony_txt.extend(self.m_txt[extension6])
+                        else:
+                            print("Empty key: ", extension6)
                 
                     found = True
 
@@ -1501,8 +1541,8 @@ class MurderScreen(Screens):
                         statusesagain = [
                             f"{insert} {insert2}",
                                 f"{insert} any",
-                                "any any",
                                 f"any {insert2}"
+                                # "any any"
                             ]
                         
                         for each in statusesagain:
@@ -1512,6 +1552,9 @@ class MurderScreen(Screens):
 
                             extension3 = f"{each} murder{risk}{lives}{accomp}"
                             extension4 = f"{each} murder{risk}{lives} {biome}{accomp}"
+
+                            extension5 = f"{each} murder{risk}{lives} {biome} {camp}"
+                            extension6 = f"{each} murder{risk}{lives} {biome} {camp}{accomp}"
 
                             if extension1 in self.m_txt and self.m_txt[extension1]:
                                 ceremony_txt.extend(self.m_txt[extension1])
@@ -1533,6 +1576,16 @@ class MurderScreen(Screens):
                             else:
                                 print("Empty key: ", extension4)
 
+                            if extension5 in self.m_txt and self.m_txt[extension5]:
+                                ceremony_txt.extend(self.m_txt[extension5])
+                            else:
+                                print("Empty key: ", extension5)
+
+                            if extension6 in self.m_txt and self.m_txt[extension6]:
+                                ceremony_txt.extend(self.m_txt[extension6])
+                            else:
+                                print("Empty key: ", extension6)
+
                         found = True
                         print("3 Success!")
 
@@ -1541,7 +1594,7 @@ class MurderScreen(Screens):
                         ceremony_txt = choice(self.m_txt["any any murder"])
                         print("ERROR: Falling back to general murder text.")
 
-        # ceremony_txt = choice(self.m_txt["any any murder event key"])
+        # ceremony_txt = choice(self.m_txt["any any murder plains camp5"])
         # uncomment + add in the key to get a specific one for testing
 
         other_clan = choice(game.clan.all_clans)
@@ -1916,8 +1969,7 @@ class MurderScreen(Screens):
                             "Despite your best efforts, "+ c_m + " remained unscathed. They continued on, blissfully ignorant of your lethal plan.",
                             "Your attempt to kill "+ c_m + " proved futile, and they stayed clueless about your ominous intentions."]
         else:
-            # victim_injury_chance = randint(1,5)
-            victim_injury_chance = 1
+            victim_injury_chance = randint(1,5)
             if accomplice and accompliced:
                 fail_texts = [f"You attempted to murder {c_m}, but your plot was unsuccessful. They appear to be slightly wary of you and {accomplice.name} now.",
                                 f"Your effort to end {c_m}'s life was thwarted, and they now seem a bit more cautious around you and {accomplice.name}.",
@@ -1952,9 +2004,9 @@ class MurderScreen(Screens):
             if self.method == "attack":
                 owie = choice(["claw-wound", "torn pelt", "scrapes"])
             elif self.method == "poison":
-                owie = "poisoned"
+                owie = choice(["poisoned", "stomachache", "diarrhea"])
             elif self.method == "accident":
-                owie = choice(["broken bone","broken bone","sprain", "sore", "bruises", "scrapes"])
+                owie = choice(["broken bone","broken bone", "sprain", "sore", "bruises", "scrapes"])
             elif self.method == "predator":
                 owie = choice(["bite-wound", "broken bone", "torn pelt", "mangled leg", "mangled tail"])
 
