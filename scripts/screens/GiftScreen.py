@@ -82,31 +82,13 @@ class GiftScreen(Screens):
                 if not self.selected_cat.dead:
                     self.exit_screen()
                     self.update_selected_cat()
-                    self.cat_to_murder = self.selected_cat
                     self.stage = 'choose accomplice'
                     self.screen_switches()
             
-            elif event.ui_element == self.confirm_mentor and self.selected_cat:
-                    r = randint(1,100)
-                    accompliced = False
-                    chance = self.get_accomplice_chance(game.clan.your_cat, self.selected_cat)
-                    if game.config["accomplice_chance"] != -1:
-                        try:
-                            chance = game.config["accomplice_chance"]
-                        except:
-                            pass
-                    if r < chance:
-                        accompliced = True
-                        if 'accomplices' in game.switches:
-                            game.switches['accomplices'].append(self.selected_cat.ID)
-                        else:
-                            game.switches['accomplices'] = []
-                            game.switches['accomplices'].append(self.selected_cat.ID)
-                                                
-                    self.change_cat(self.murder_cat, self.selected_cat, accompliced)
+            elif event.ui_element == self.confirm_mentor and self.selected_accessory:             
+                    self.change_cat(self.murder_cat, self.selected_cat)
                     self.stage = 'choose murder cat'
 
-            
             elif event.ui_element == self.back_button:
                 self.change_screen('profile screen')
                 self.stage = 'choose murder cat'
@@ -116,7 +98,6 @@ class GiftScreen(Screens):
                     game.switches['cat'] = self.next_cat
                     self.update_cat_list()
                     self.update_selected_cat()
-                    # self.update_buttons()
                 else:
                     print("invalid next cat", self.next_cat)
             elif event.ui_element == self.previous_cat_button:
@@ -124,7 +105,6 @@ class GiftScreen(Screens):
                     game.switches['cat'] = self.previous_cat
                     self.update_cat_list()
                     self.update_selected_cat()
-                    # self.update_buttons()
                 else:
                     print("invalid previous cat", self.previous_cat)
             elif event.ui_element == self.next_page_button:
@@ -214,8 +194,6 @@ class GiftScreen(Screens):
             self.update_cat_list()
         else:
             self.the_cat = game.clan.your_cat
-            self.mentor = Cat.fetch_cat(self.the_cat.mentor)
-            self.selected_cat = None
 
             self.heading = pygame_gui.elements.UITextBox("Choose what to gift",
                                                         scale(pygame.Rect((300, 50), (1000, 80))),
@@ -251,17 +229,19 @@ class GiftScreen(Screens):
                                                                 "resources/images/search_bar.png").convert_alpha(),
                                                             manager=MANAGER)
             self.search_bar = pygame_gui.elements.UITextEntryLine(scale(pygame.Rect((239, 685), (205, 55))),
-                                                              object_id="#search_entry_box",
-                                                              initial_text="search",
-                                                              manager=MANAGER)
+                                                            object_id="#search_entry_box",
+                                                            initial_text="search",
+                                                            manager=MANAGER)
 
             self.update_selected_cat2()  # Updates the image and details of selected cat
             self.update_cat_list2()
 
 
     def exit_screen(self):
+        self.selected_accessory = None
+        self.previous_search_text = "search"
+        self.cat_sprite = None
 
-       
         for ele in self.cat_list_buttons:
             self.cat_list_buttons[ele].kill()
         self.cat_list_buttons = {}
@@ -351,8 +331,9 @@ class GiftScreen(Screens):
             self.next_cat = 0
 
     def change_cat(self, new_mentor=None, accomplice=None, accompliced=None):
+        game.clan.your_cat.pelt.inventory.remove(self.selected_accessory.tool_tip_text)
+        self.selected_cat.pelt.inventory.append(self.selected_accessory.tool_tip_text)
         self.exit_screen()
-
         game.switches['cur_screen'] = "events screen"
     
     
