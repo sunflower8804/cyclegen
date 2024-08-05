@@ -1,46 +1,46 @@
 {
     "assertive": {
-        "like": [],
-        "dislike": []
+        "like": ["STRAWMANE"],
+        "dislike": ["BROWN SNAIL"]
     },
     "brooding": {
-        "like": [],
-        "dislike": []
+        "like": ["BLACKBIRD"],
+        "dislike": ["PINKFLOWERCROWN"]
     },
     "cool": {
-        "like": [],
-        "dislike": []
+        "like": ["LAUREL"],
+        "dislike": ["SEAWEED"]
     },
     "upstanding": {
-        "like": [],
-        "dislike": []
+        "like": ["REEDS"],
+        "dislike": ["WORM"]
     },
     "introspective": {
-        "like": [],
-        "dislike": []
+        "like": ["CHERRYBLOSSOM"],
+        "dislike": ["DOGWOOD"]
     },
     "neurotic": {
-        "like": [],
-        "dislike": []
+        "like": ["WHITE"],
+        "dislike": ["MUD PAWS"]
     },
     "silly": {
-        "like": [],
-        "dislike": []
+        "like": ["LILYPADCROWN"],
+        "dislike": ["KINGSNAKE"]
     },
     "stable": {
-        "like": [],
-        "dislike": []
+        "like": ["MARIGOLD"],
+        "dislike": ["EGGSHELLS"]
     },
     "sweet": {
-        "like": [],
-        "dislike": []
+        "like": ["FLOWERCROWN"],
+        "dislike": ["SMALL DEATHBERRY"]
     },
     "unabashed": {
-        "like": [],
-        "dislike": []
+        "like": ["MOSS PELT"],
+        "dislike": ["MUSHROOMS"]
     },
     "unlawful": {
-        "like": [],
-        "dislike": []
+        "like": ["BLUE RACER"],
+        "dislike": ["GRAY SQUIRREL"]
     }
 }
