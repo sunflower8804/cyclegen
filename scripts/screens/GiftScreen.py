@@ -19,7 +19,8 @@ from scripts.game_structure.propagating_thread import PropagatingThread
 from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked, UISpriteButton
 from scripts.cat.sprites import sprites
 
-
+with open(f"resources/dicts/acc_display.json", "r") as read_file:
+    ACC_DISPLAY = ujson.loads(read_file.read())
 
 class GiftScreen(Screens):
     selected_cat = None
@@ -160,9 +161,9 @@ class GiftScreen(Screens):
 
         if self.stage == 'choose murder cat':
             self.the_cat = game.clan.your_cat
-            self.mentor = Cat.fetch_cat(self.the_cat.mentor)
             self.selected_cat = None
-            self.next = None
+            self.selected_accessory = None
+
             self.heading = pygame_gui.elements.UITextBox("Choose who to gift",
                                                         scale(pygame.Rect((300, 50), (1000, 80))),
                                                         object_id=get_text_box_theme("#text_box_34_horizcenter"),
@@ -337,6 +338,7 @@ class GiftScreen(Screens):
         if self.selected_accessory.tool_tip_text == game.clan.your_cat.pelt.accessory:
             game.clan.your_cat.pelt.accessory = None
         self.selected_cat.pelt.inventory.append(self.selected_accessory.tool_tip_text)
+        
         self.exit_screen()
         game.switches['cur_screen'] = "events screen"
     
@@ -413,7 +415,7 @@ class GiftScreen(Screens):
             elif accessory in cat.pelt.tail2_accessories:
                 self.selected_details["selected_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((240, 250), (300, 300))), pygame.transform.scale(sprites.sprites['acc_tail2' + accessory + self.cat_sprite], (300,300)), manager=MANAGER)
 
-            info = self.selected_accessory.tool_tip_text
+            info = ACC_DISPLAY[self.selected_accessory.tool_tip_text]["default"]
 
             if self.selected_accessory.tool_tip_text in game.clan.your_cat.pelt.accessories:
                 info += "\nCurrently worn"
