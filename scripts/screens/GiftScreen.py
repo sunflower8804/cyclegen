@@ -3,12 +3,13 @@ import pygame_gui.elements
 from random import choice, randint
 import ujson
 import math
+import re
 
 from scripts.cat.history import History
 from scripts.event_class import Single_Event
 
 from .Screens import Screens
-from scripts.utility import get_personality_compatibility, get_text_box_theme, scale, scale_dimentions, shorten_text_to_fit
+from scripts.utility import get_personality_compatibility, get_text_box_theme, scale, scale_dimentions, shorten_text_to_fit, get_cluster, pronoun_repl
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from scripts.cat.pelts import Pelt
@@ -21,6 +22,12 @@ from scripts.cat.sprites import sprites
 
 with open(f"resources/dicts/acc_display.json", "r") as read_file:
     ACC_DISPLAY = ujson.loads(read_file.read())
+
+with open(f"resources/dicts/events/lifegen_events/gift.json", "r") as read_file:
+    ACC_REACTION_TXT = ujson.loads(read_file.read())
+
+with open(f"resources/dicts/accessory_preferences.json", "r") as read_file:
+    ACC_REACTION = ujson.loads(read_file.read())
 
 class GiftScreen(Screens):
     selected_cat = None
@@ -87,7 +94,7 @@ class GiftScreen(Screens):
                     self.screen_switches()
             
             elif event.ui_element == self.confirm_mentor and self.selected_accessory:             
-                    self.change_cat(self.murder_cat, self.selected_cat)
+                    self.gift_acc()
                     self.stage = 'choose gift cat'
 
             elif event.ui_element == self.back_button:
@@ -331,16 +338,48 @@ class GiftScreen(Screens):
         if self.next_cat == 1:
             self.next_cat = 0
 
-    def change_cat(self, new_mentor=None, accomplice=None, accompliced=None):
-        game.clan.your_cat.pelt.inventory.remove(self.selected_accessory.tool_tip_text)
-        if self.selected_accessory.tool_tip_text in game.clan.your_cat.pelt.accessories:
-            game.clan.your_cat.pelt.accessories.remove(self.selected_accessory.tool_tip_text)
-        if self.selected_accessory.tool_tip_text == game.clan.your_cat.pelt.accessory:
-            game.clan.your_cat.pelt.accessory = None
-        self.selected_cat.pelt.inventory.append(self.selected_accessory.tool_tip_text)
+    def gift_acc(self):
+        acc = self.selected_accessory.tool_tip_text
+        cluster1, cluster2 = get_cluster(self.selected_cat.personality.trait)
+        if cluster1 and cluster2:
+            cluster = choice([cluster1, cluster2])
+        else:
+            cluster = cluster1
+
+        reaction = "accept_neutral"
+        if acc in self.selected_cat.pelt.inventory:
+            reaction = "already_have"
+        elif acc in ACC_REACTION[cluster]["like"]:
+            reaction = "accept_like"
+        elif acc in ACC_REACTION[cluster]["dislike"]:
+            reaction = "accept_dislike"
+
+        if reaction != "already_have":
+            game.clan.your_cat.pelt.inventory.remove(acc)
+            if acc in game.clan.your_cat.pelt.accessories:
+                game.clan.your_cat.pelt.accessories.remove(acc)
+            if acc == game.clan.your_cat.pelt.accessory:
+                game.clan.your_cat.pelt.accessory = None
+            self.selected_cat.pelt.inventory.append(acc)
         
+        reaction_txt = choice(ACC_REACTION_TXT["general"][reaction] + ACC_REACTION_TXT[cluster][reaction])
+        game.cur_events_list.insert(0, Single_Event(self.adjust_txt(reaction_txt)))
+
         self.exit_screen()
         game.switches['cur_screen'] = "events screen"
+
+    def adjust_txt(self, txt):
+        process_text_dict = {}
+        
+        process_text_dict["y_c"] = (game.clan.your_cat, choice(game.clan.your_cat.pronouns))
+        process_text_dict["t_c"] = (self.selected_cat, choice(self.selected_cat.pronouns))
+
+        txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), txt)
+
+        txt = txt.replace("y_c", str(game.clan.your_cat.name))
+        txt = txt.replace("t_c", str(self.selected_cat.name))
+        txt = txt.replace("y_g", str(ACC_DISPLAY[self.selected_accessory.tool_tip_text]["default"]))
+        return txt
     
     
     def update_selected_cat(self):

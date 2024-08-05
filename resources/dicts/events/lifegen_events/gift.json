@@ -1,8 +1,20 @@
 {
-    "assertive": {
+    "general": {
         "accept_like": [
-            ""
+            "t_c loves your gift (y_g)!"
         ],
+        "accept_neutral": [
+            "t_c thanks you for your gift (y_g)."
+        ],
+        "accept_dislike": [
+            "t_c takes your gift (y_g) with a frown."
+        ],
+        "already_have": [
+            "t_c thanks you, but they already have the accessory you've given them (y_g)."
+        ]
+    },
+    "assertive": {
+        "accept_like": [],
         "accept_neutral": [],
         "accept_dislike": [],
         "already_have": []
