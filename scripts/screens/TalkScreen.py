@@ -3278,7 +3278,7 @@ class TalkScreen(Screens):
                         text = re.sub(r'(?<!\/)y_kk(?!\/)', str(kit.name), text)
             
             # Random cat
-            if "r_c" in text and "r_c1" not in text and "r_c2" not in text and "r_c3" not in text:
+            if "r_c" in text and "r_c1" not in text and "r_c2" not in text and "r_c3" not in text and "r_c4" not in text:
                 cluster = False
                 rel = False
                 match = re.search(r'r_c(\w+)', text)

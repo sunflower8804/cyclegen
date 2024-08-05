@@ -203,11 +203,12 @@ class HandleShortEvents:
                 shunned = True
             else:
                 other_cat = self.random_cat
-                if not int(random.random() * 2):
-                    shunned = True
-                    self.additional_event_text = f"{other_cat.name} has told the Clan about {self.main_cat.name}'s crime."
-                else:
-                    self.additional_event_text = f"{other_cat.name} has decided to keep {self.main_cat.name}'s secret."
+                if "LIFEGEN_no_shun" not in self.chosen_event.tags:
+                    if not int(random.random() * 2):
+                        shunned = True
+                        self.additional_event_text = f"{other_cat.name} has told the Clan about {self.main_cat.name}'s crime."
+                    else:
+                        self.additional_event_text = f"{other_cat.name} has decided to keep {self.main_cat.name}'s secret."
 
             History.reveal_murder(
                 cat=self.main_cat,
