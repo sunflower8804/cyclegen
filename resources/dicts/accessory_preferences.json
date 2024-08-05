@@ -1,0 +1,46 @@
+{
+    "assertive": {
+        "like": ["STRAWMANE"],
+        "dislike": ["BROWN SNAIL"]
+    },
+    "brooding": {
+        "like": ["BLACKBIRD"],
+        "dislike": ["PINKFLOWERCROWN"]
+    },
+    "cool": {
+        "like": ["LAUREL"],
+        "dislike": ["SEAWEED"]
+    },
+    "upstanding": {
+        "like": ["REEDS"],
+        "dislike": ["WORM"]
+    },
+    "introspective": {
+        "like": ["CHERRYBLOSSOM"],
+        "dislike": ["DOGWOOD"]
+    },
+    "neurotic": {
+        "like": ["WHITE"],
+        "dislike": ["MUD PAWS"]
+    },
+    "silly": {
+        "like": ["LILYPADCROWN"],
+        "dislike": ["KINGSNAKE"]
+    },
+    "stable": {
+        "like": ["MARIGOLD"],
+        "dislike": ["EGGSHELLS"]
+    },
+    "sweet": {
+        "like": ["FLOWERCROWN"],
+        "dislike": ["SMALL DEATHBERRY"]
+    },
+    "unabashed": {
+        "like": ["MOSS PELT"],
+        "dislike": ["MUSHROOMS"]
+    },
+    "unlawful": {
+        "like": ["BLUE RACER"],
+        "dislike": ["GRAY SQUIRREL"]
+    }
+}

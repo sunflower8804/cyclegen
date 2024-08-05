@@ -3026,7 +3026,7 @@ class TalkScreen(Screens):
                     if cat.inheritance.get_children() is None or len(cat.inheritance.get_children()) == 0:
                         return ""
                     kit = Cat.fetch_cat(choice(cat.inheritance.get_children()))
-                    if kit.moons < 12 or kit.outside or kit.dead or kit.ID == cat.ID or\
+                    if kit.moons < 12 or kit.outside or kit.dead or kit.ID == cat.ID or kit.ID == you.ID or\
                     (cluster and x not in get_cluster(kit.personality.trait)) or (rel and (kit.ID not in cat.relationships) or\
                     (r == "plike" and cat.relationships[kit.ID].platonic_like < 20) or\
                     (r == "plove" and cat.relationships[kit.ID].platonic_like < 50) or\

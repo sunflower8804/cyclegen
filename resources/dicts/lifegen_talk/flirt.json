@@ -1241,7 +1241,7 @@
             "brooding"
         ],
         [
-            "[t_c buries their face in their paws shyly.]"
+            "[t_c buries {PRONOUN/t_c/poss} face in {PRONOUN/t_c/poss} paws shyly.]"
         ]
     ],
 
@@ -1273,7 +1273,7 @@
 	    "reject"
         ],
         [
-            "[t_c narrows their eyes suspiciously.]",
+            "[t_c narrows {PRONOUN/t_c/poss} eyes suspiciously.]",
 	    "What's your angle?"
         ]
     ],

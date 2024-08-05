@@ -5409,5 +5409,39 @@
                 "path": "resources/images/buttons/alive_select_unavaliable.png"
             }
         }
+    },
+    "#gift_clanmate_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/gift_accessory.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/gift_accessory_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/gift_accessory_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/gift_accessory_unavaliable.png"
+            }
+        }
+    },
+    "#your_faith": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/your_faith.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/your_faith_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/your_faith_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/your_faith_unavailable.png"
+            }
+        }
     }
 }
