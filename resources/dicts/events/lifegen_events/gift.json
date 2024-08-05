@@ -1,11 +1,72 @@
 {
-    "reject": [
-        "g_c turns down your gift with a roll of their eyes."
-    ],
-    "reject_already_have": [
-        "g_c thanks you for the offer, but they already have a [acc]."
-    ],
-    "accept": [
-        "g_c graciously accepts the [acc]."
-    ]
+    "assertive": {
+        "accept_like": [
+            ""
+        ],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "brooding": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "cool": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "upstanding": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "introspective": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "neurotic": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "silly": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "stable": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "sweet": {
+        "accept_like": [],
+        "accept_neutral": [
+            "t_c accepts your gift (y_g) with a polite thank you."
+        ],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "unabashed": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    },
+    "unlawful": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": []
+    }
 }
