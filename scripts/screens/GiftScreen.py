@@ -30,7 +30,7 @@ class GiftScreen(Screens):
     apprentice_details = {}
     selected_details = {}
     cat_list_buttons = {}
-    stage = 'choose murder cat'
+    stage = 'choose gift cat'
 
     def __init__(self, name=None):
         super().__init__(name)
@@ -79,20 +79,20 @@ class GiftScreen(Screens):
                 self.selected_accessory = event.ui_element
                 self.update_selected_cat2()
 
-            elif event.ui_element == self.confirm_mentor and self.selected_cat and self.stage == 'choose murder cat':
+            elif event.ui_element == self.confirm_mentor and self.selected_cat and self.stage == 'choose gift cat':
                 if not self.selected_cat.dead:
                     self.exit_screen()
                     self.update_selected_cat()
-                    self.stage = 'choose accomplice'
+                    self.stage = 'choose gift'
                     self.screen_switches()
             
             elif event.ui_element == self.confirm_mentor and self.selected_accessory:             
                     self.change_cat(self.murder_cat, self.selected_cat)
-                    self.stage = 'choose murder cat'
+                    self.stage = 'choose gift cat'
 
             elif event.ui_element == self.back_button:
                 self.change_screen('profile screen')
-                self.stage = 'choose murder cat'
+                self.stage = 'choose gift cat'
 
             elif event.ui_element == self.next_cat_button:
                 if isinstance(Cat.fetch_cat(self.next_cat), Cat):
@@ -109,10 +109,10 @@ class GiftScreen(Screens):
                 else:
                     print("invalid previous cat", self.previous_cat)
             elif event.ui_element == self.next_page_button:
-                if self.stage == "choose murder cat":
+                if self.stage == "choose gift cat":
                     self.current_page += 1
                     self.update_cat_list()
-                elif self.stage == "choose accomplice":
+                elif self.stage == "choose gift":
                     self.page += 1
                     
                     if self.page == 0 and self.max_pages in [0, 1]:
@@ -133,11 +133,11 @@ class GiftScreen(Screens):
                         self.accessory_buttons[i].kill()
                     self.update_cat_list2()
             elif event.ui_element == self.previous_page_button:
-                if self.stage == "choose murder cat":
+                if self.stage == "choose gift cat":
                     self.current_page -= 1
                     self.update_cat_list()
 
-                elif self.stage == "choose accomplice":
+                elif self.stage == "choose gift":
                     self.page -= 1
                     if self.page == 0 and self.max_pages in [0, 1]:
                         self.previous_page_button.disable()
@@ -159,7 +159,7 @@ class GiftScreen(Screens):
 
     def screen_switches(self):
 
-        if self.stage == 'choose murder cat':
+        if self.stage == 'choose gift cat':
             self.the_cat = game.clan.your_cat
             self.selected_cat = None
             self.selected_accessory = None
@@ -428,7 +428,7 @@ class GiftScreen(Screens):
 
             self.selected_details["mentor_name"] = pygame_gui.elements.ui_label.UILabel(
                 scale(pygame.Rect((260, 230), (220, 60))),
-                "Gift",
+                "Accessory",
                 object_id="#text_box_34_horizcenter", manager=MANAGER)
             
 
