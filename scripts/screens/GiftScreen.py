@@ -1,6 +1,6 @@
 import pygame.transform
 import pygame_gui.elements
-from random import choice, randint
+from random import choice
 import ujson
 import math
 import re
@@ -9,15 +9,11 @@ from scripts.cat.history import History
 from scripts.event_class import Single_Event
 
 from .Screens import Screens
-from scripts.utility import get_personality_compatibility, get_text_box_theme, scale, scale_dimentions, shorten_text_to_fit, get_cluster, pronoun_repl
+from scripts.utility import get_text_box_theme, scale, get_cluster, pronoun_repl
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
-from scripts.cat.pelts import Pelt
-from scripts.game_structure.windows import GameOver, PickPath, DeathScreen
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
-from scripts.game_structure.windows import RelationshipLog
-from scripts.game_structure.propagating_thread import PropagatingThread
-from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked, UISpriteButton
+from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
 from scripts.cat.sprites import sprites
 
 with open(f"resources/dicts/acc_display.json", "r") as read_file:
@@ -84,7 +80,7 @@ class GiftScreen(Screens):
             
             elif event.ui_element in self.accessory_buttons.values():
                 self.selected_accessory = event.ui_element
-                self.update_selected_cat2()
+                self.update_selected_accessory()
 
             elif event.ui_element == self.confirm_mentor and self.selected_cat and self.stage == 'choose gift cat':
                 if not self.selected_cat.dead:
@@ -138,7 +134,7 @@ class GiftScreen(Screens):
                         self.cat_list_buttons[i].kill()
                     for i in self.accessory_buttons:
                         self.accessory_buttons[i].kill()
-                    self.update_cat_list2()
+                    self.update_accessory_list()
             elif event.ui_element == self.previous_page_button:
                 if self.stage == "choose gift cat":
                     self.current_page -= 1
@@ -162,7 +158,7 @@ class GiftScreen(Screens):
                         self.cat_list_buttons[i].kill()
                     for i in self.accessory_buttons:
                         self.accessory_buttons[i].kill()
-                    self.update_cat_list2()
+                    self.update_accessory_list()
 
     def screen_switches(self):
 
@@ -241,8 +237,8 @@ class GiftScreen(Screens):
                                                             initial_text="search",
                                                             manager=MANAGER)
 
-            self.update_selected_cat2()  # Updates the image and details of selected cat
-            self.update_cat_list2()
+            self.update_selected_accessory()  # Updates the image and details of selected cat
+            self.update_accessory_list()
 
 
     def exit_screen(self):
@@ -419,8 +415,8 @@ class GiftScreen(Screens):
                 object_id="#text_box_34_horizcenter", manager=MANAGER)
             
                     
-    def update_selected_cat2(self):
-        """Updates the image and information on the currently selected mentor"""
+    def update_selected_accessory(self):
+        """Updates the image and information on the currently selected accessory"""
         for ele in self.selected_details:
             self.selected_details[ele].kill()
 
@@ -515,7 +511,7 @@ class GiftScreen(Screens):
                 pos_y += 120
             i += 1
             
-    def update_cat_list2(self):
+    def update_accessory_list(self):
         """Updates the cat sprite buttons. """
         cat = self.the_cat
         age = cat.age
@@ -629,7 +625,7 @@ class GiftScreen(Screens):
     def on_use(self):
         # Due to a bug in pygame, any image with buttons over it must be blited
         screen.blit(self.list_frame, (150 / 1600 * screen_x, 720 / 1400 * screen_y))
-        if self.search_bar:
+        if self.search_bar and self.stage == "choose gift":
             if self.search_bar.is_focused and self.search_bar.get_text() == "search":
                 self.search_bar.set_text("")
                 self.page = 0
@@ -653,7 +649,7 @@ class GiftScreen(Screens):
                     for i in self.accessory_buttons:
                         self.accessory_buttons[i].kill()
                 
-                self.update_cat_list2()
+                self.update_accessory_list()
 
                 if self.page == 0 and self.max_pages in [0, 1]:
                     self.previous_page_button.disable()
