@@ -453,7 +453,7 @@ class GiftScreen(Screens):
             info = ACC_DISPLAY[self.selected_accessory.tool_tip_text]["default"]
 
             if self.selected_accessory.tool_tip_text in game.clan.your_cat.pelt.accessories:
-                info += "\nCurrently worn"
+                info += "\ncurrently worn"
             
             self.selected_details["selected_info"] = pygame_gui.elements.UITextBox(info,
                                                                                 scale(pygame.Rect((540, 325),

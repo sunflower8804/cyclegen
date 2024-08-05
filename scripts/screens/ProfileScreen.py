@@ -654,6 +654,8 @@ class ProfileScreen(Screens):
                     self.request_apprentice_button.disable()
             elif event.ui_element == self.gift_accessory_button:
                 self.change_screen("gift screen")
+            elif event.ui_element == self.your_faith_button:
+                self.toggle_faith_tab()
         # Dangerous Tab
         elif self.open_tab == "dangerous":
             if event.ui_element == self.kill_cat_button:
@@ -3002,6 +3004,7 @@ class ProfileScreen(Screens):
             self.have_kits_button = None
             self.request_apprentice_button = None
             self.gift_accessory_button = None
+            self.your_faith_button = None
             self.update_disabled_buttons_and_text()
 
     def toggle_roles_tab(self):
@@ -3297,6 +3300,17 @@ class ProfileScreen(Screens):
                                                     starting_height=2, object_id="#gift_clanmate_button",
                                                     manager=MANAGER)
                 self.gift_accessory_button.disable()
+
+            if self.the_cat.status not in ["newborn", "kitten"] and not self.the_cat.dead and not self.the_cat.outside:
+                self.your_faith_button = UIImageButton(scale(pygame.Rect((804, 956), (352, 72))), "",
+                                                    starting_height=2, object_id="#your_faith_button",
+                                                    manager=MANAGER)
+            else:
+                self.your_faith_button = UIImageButton(scale(pygame.Rect((804, 956), (352, 72))), "",
+                                                    starting_height=2, object_id="#your_faith_button",
+                                                    manager=MANAGER)
+                self.your_faith_button.disable()
+            
 
             if 'request apprentice' in game.switches:
                 if game.switches['request apprentice']:
@@ -3596,6 +3610,8 @@ class ProfileScreen(Screens):
                 self.request_apprentice_button.kill()
             if self.gift_accessory_button:
                 self.gift_accessory_button.kill()
+            if self.your_faith_button:
+                self.your_faith_button.kill()
         elif self.open_tab == 'conditions':
             self.left_conditions_arrow.kill()
             self.right_conditions_arrow.kill()
