@@ -590,7 +590,6 @@ class Clan:
         if self.focus_cat:
             clan_data["focus_cat"] = self.focus_cat.ID
         else:
-            print("herebruh")
             clan_data["focus_cat"] = None
 
         if "other_med" in game.switches:
