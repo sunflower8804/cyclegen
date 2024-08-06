@@ -121,7 +121,7 @@ class Sprites:
         del width, height  # unneeded
 
         for x in [
-            'lineart', 'lineartdf', 'lineartdead',
+            'lineart', 'lineartdf', 'lineartdead', "lineartur",
             'eyes', 'eyes2', 'skin',
             'scars', 'missingscars',
             'medcatherbs',
@@ -188,7 +188,7 @@ class Sprites:
 
         self.make_group('lineartdead', (0, 0), 'lineartdead')
         self.make_group('lineartdf', (0, 0), 'lineartdf')
-
+        self.make_group('lineartur', (0, 0), 'lineartur')
         # Fading Fog
         for i in range(0, 3):
             self.make_group('fademask', (i, 0), f'fademask{i}')
