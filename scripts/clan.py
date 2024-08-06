@@ -243,8 +243,8 @@ class Clan:
         self.all_clans = []
         
         self.demon = Cat(status=choice(["apprentice", "mediator apprentice", "medicine cat apprentice", "warrior",
-                                             "medicine cat", "leader", "mediator", "queen", "queen's apprentice", "deputy", "elder"]),
-                              )
+                                            "medicine cat", "leader", "mediator", "queen", "queen's apprentice", "deputy", "elder"]),
+                            )
         self.demon.df = True
         self.demon.dead = True
         self.demon.dead_for = randint(20, 200)
@@ -303,8 +303,6 @@ class Clan:
         self.save_clan()
         game.save_clanlist(self.name)
         game.switches["clan_list"] = game.read_clans()
-        # if map_available:
-        #    save_map(game.map_info, game.clan.name)
 
         # CHECK IF CAMP BG IS SET -fail-safe in case it gets set to None-
         if game.switches["camp_bg"] is None:
@@ -316,8 +314,6 @@ class Clan:
         if game.switches["game_mode"] is None:
             game.switches["game_mode"] = "classic"
             self.game_mode = "classic"
-        # if game.switches['game_mode'] == 'cruel_season':
-        #    game.settings['disasters'] = True
 
         # set the starting season
         season_index = self.seasons.index(self.starting_season)
