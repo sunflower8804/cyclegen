@@ -620,16 +620,13 @@ class GiftScreen(Screens):
             if acc == game.clan.your_cat.pelt.accessory:
                 game.clan.your_cat.pelt.accessory = None
             self.selected_cat.pelt.inventory.append(acc)
-<<<<<<< HEAD
-=======
 
         if acc in ACC_REACTION_TXT["unique_gifts"].keys():
             if reaction in ACC_REACTION_TXT["unique_gifts"][acc].keys():
                 reaction_txt = ACC_REACTION_TXT["unique_gifts"][acc][reaction]
         else:
             reaction_txt = choice(ACC_REACTION_TXT["general"][reaction] + ACC_REACTION_TXT[cluster][reaction])
-        game.cur_events_list.insert(0, Single_Event(self.adjust_txt(reaction_txt)))
->>>>>>> 165f399644e3f5d3b8e81f963d4a823478a2edef
+        # game.cur_events_list.insert(0, Single_Event(self.adjust_txt(reaction_txt)))
 
         reaction_txt = choice(ACC_REACTION_TXT["general"][reaction] + ACC_REACTION_TXT[cluster][reaction])
 
