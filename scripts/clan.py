@@ -18,7 +18,7 @@ import ujson
 
 from scripts.game_structure.game_essentials import game
 from scripts.housekeeping.version import get_version_info, SAVE_VERSION_NUMBER
-from scripts.utility import update_sprite, get_current_season, quit  # pylint: disable=redefined-builtin
+from scripts.utility import update_sprite, get_current_season, quit, get_free_possible_mates  # pylint: disable=redefined-builtin
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.pelts import Pelt
 from scripts.cat.cats import Cat, cat_class
@@ -112,6 +112,7 @@ class Clan:
                 followingsc=True,
                 your_cat=None,
                 focus_cat=None,
+                clan_age=None,
                 self_run_init_functions = False):
         self.history = History()
         self.your_cat = your_cat
@@ -154,7 +155,7 @@ class Clan:
         self.focus = ""
         self.focus_moons = 0
         self.focus_cat = focus_cat
-        
+        self.clan_age = clan_age if clan_age else "established"
         self.custom_pronouns = []
 
         # Init Settings
@@ -242,8 +243,8 @@ class Clan:
         self.all_clans = []
         
         self.demon = Cat(status=choice(["apprentice", "mediator apprentice", "medicine cat apprentice", "warrior",
-                                             "medicine cat", "leader", "mediator", "queen", "queen's apprentice", "deputy", "elder"]),
-                              )
+                                            "medicine cat", "leader", "mediator", "queen", "queen's apprentice", "deputy", "elder"]),
+                            )
         self.demon.df = True
         self.demon.dead = True
         self.demon.dead_for = randint(20, 200)
@@ -285,6 +286,9 @@ class Clan:
                 Cat.all_cats.get(cat_id).status_change('medicine cat apprentice')
             Cat.all_cats.get(cat_id).thoughts()
 
+        if self.clan_age == "established":
+            self.generate_mates()
+
         game.save_cats()
         number_other_clans = randint(3, 5)
         for _ in range(number_other_clans):
@@ -299,8 +303,6 @@ class Clan:
         self.save_clan()
         game.save_clanlist(self.name)
         game.switches["clan_list"] = game.read_clans()
-        # if map_available:
-        #    save_map(game.map_info, game.clan.name)
 
         # CHECK IF CAMP BG IS SET -fail-safe in case it gets set to None-
         if game.switches["camp_bg"] is None:
@@ -312,12 +314,43 @@ class Clan:
         if game.switches["game_mode"] is None:
             game.switches["game_mode"] = "classic"
             self.game_mode = "classic"
-        # if game.switches['game_mode'] == 'cruel_season':
-        #    game.settings['disasters'] = True
 
         # set the starting season
         season_index = self.seasons.index(self.starting_season)
         self.current_season = self.seasons[season_index]
+    
+    def generate_mates(self):
+        """Generates up to three pairs of mates."""
+
+        def get_adult_mateless_cat():
+            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 14 and not i.dead and not i.outside and not i.mate]
+            if alive_cats:
+                return random.choice(alive_cats)
+            return None
+
+        num_mates = random.randint(0,3)
+
+        for i in range(num_mates):
+            random_cat = get_adult_mateless_cat()
+            if random_cat:
+                same_age_cats = get_free_possible_mates(random_cat)
+
+            if same_age_cats:
+                random_mate_cat = random.choice(same_age_cats)
+                if random_cat.is_potential_mate(random_mate_cat):
+                    random_cat.set_mate(random_mate_cat)
+
+    def generate_families(self):
+        pass
+
+    def populate_starclan(self):
+        pass 
+
+    def populate_ur(self):
+        pass
+
+    def populate_df(self):
+        pass
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """Adds cat into the list of clan cats"""
@@ -531,7 +564,8 @@ class Clan:
             "murdered": self.murdered,
             "exile_return": self.exile_return,
             "affair": self.affair,
-            "custom_pronouns": self.custom_pronouns
+            "custom_pronouns": self.custom_pronouns,
+            "clan_age": self.clan_age
         }
 
         # LEADER DATA
@@ -1006,6 +1040,8 @@ class Clan:
                 game.mediated = []
             else:
                 game.mediated = clan_data["mediated"]
+
+        game.clan.clan_age = clan_data["clan_age"] if "clan_age" in clan_data else "established"
 
         self.load_pregnancy(game.clan)
         self.load_herbs(game.clan)

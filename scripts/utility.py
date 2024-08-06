@@ -2632,6 +2632,8 @@ def generate_sprite(
             new_sprite.blit(sprites.sprites["lines" + cat_sprite], (0, 0))
         elif cat.df:
             new_sprite.blit(sprites.sprites["lineartdf" + cat_sprite], (0, 0))
+        elif cat.dead and cat.outside:
+            new_sprite.blit(sprites.sprites["lineartur" + cat_sprite], (0, 0))
         elif dead:
             new_sprite.blit(sprites.sprites["lineartdead" + cat_sprite], (0, 0))
         # draw skin and scars2

@@ -80,5 +80,16 @@
         "accept_neutral": [],
         "accept_dislike": [],
         "already_have": []
+    },
+    "unique_gifts": {
+        "STICK": {
+            "accept_dislike": "t_c wonders why you've gifted them such a mundane accessory. Do you think that they are Jayfeather from the elders' tales?"
+        },
+        "LARGE DEATHBERRY": {
+            "accept_like": "t_c takes the accessory with a glint in their eyes. Perhaps this gift can be useful."
+        },
+        "SMALL DEATHBERRY": {
+            "accept_like": "t_c takes the accessory with a glint in their eyes. Perhaps this gift can be useful."
+        }
     }
 }
