@@ -10,7 +10,7 @@
             "t_c takes your gift (y_g) with a frown."
         ],
         "already_have": [
-            "t_c thanks you, but they already have the accessory you've given them (y_g)."
+            "t_c thanks you, but {PRONOUN/t_c/subject} already {VERB/t_c/have/has} the accessory you've given {PRONOUN/t_c/object} (y_g)."
         ]
     },
     "assertive": {

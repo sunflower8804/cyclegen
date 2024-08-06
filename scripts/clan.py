@@ -1081,10 +1081,10 @@ class Clan:
             game.clan.focus_moons = clan_data["focus_moons"]
 
         if "focus_cat" in clan_data:
-            if game.clan.focus_cat is not None:
+            if clan_data["focus_cat"] is None:
+                game.clan.focus_cat = None
+            else:
                 game.clan.focus_cat = Cat.all_cats[clan_data["focus_cat"]]
-        else:
-            clan_data["focus_cat"] = None
 
         if "other_med" in clan_data:
             other_med = []
