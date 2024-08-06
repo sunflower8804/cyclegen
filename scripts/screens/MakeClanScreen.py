@@ -2453,9 +2453,12 @@ class MakeClanScreen(Screens):
                         game_mode="expanded",
                         starting_members=self.members,
                         starting_season=self.selected_season,
-                        your_cat=self.your_cat)
+                        your_cat=self.your_cat,
+                        clan_age=self.clan_age)
         game.clan.your_cat.moons = -1
         game.clan.create_clan()
+        if self.clan_age == "established":
+            game.clan.leader_lives = random.randint(1,9)
         game.cur_events_list.clear()
         game.herb_events_list.clear()
         Cat.grief_strings.clear()

@@ -112,6 +112,7 @@ class Clan:
                 followingsc=True,
                 your_cat=None,
                 focus_cat=None,
+                clan_age=None,
                 self_run_init_functions = False):
         self.history = History()
         self.your_cat = your_cat
@@ -154,7 +155,7 @@ class Clan:
         self.focus = ""
         self.focus_moons = 0
         self.focus_cat = focus_cat
-        
+        self.clan_age = clan_age if clan_age else "established"
         self.custom_pronouns = []
 
         # Init Settings
@@ -531,7 +532,8 @@ class Clan:
             "murdered": self.murdered,
             "exile_return": self.exile_return,
             "affair": self.affair,
-            "custom_pronouns": self.custom_pronouns
+            "custom_pronouns": self.custom_pronouns,
+            "clan_age": self.clan_age
         }
 
         # LEADER DATA
@@ -1006,6 +1008,8 @@ class Clan:
                 game.mediated = []
             else:
                 game.mediated = clan_data["mediated"]
+
+        game.clan.clan_age = clan_data["clan_age"] if "clan_age" in clan_data else "established"
 
         self.load_pregnancy(game.clan)
         self.load_herbs(game.clan)

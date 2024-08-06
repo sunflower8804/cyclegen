@@ -1031,6 +1031,21 @@ class Events:
         game.clan.your_cat.w_done = False
         game.clan.your_cat.age = "newborn"
         game.switches['continue_after_death'] = False
+
+    def generate_mates(self):
+        pass
+
+    def generate_families(self):
+        pass
+
+    def populate_starclan(self):
+        pass 
+
+    def populate_ur(self):
+        pass
+
+    def populate_df(self):
+        pass
         
     def get_living_cats(self):
         living_cats = []
