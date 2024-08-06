@@ -18,7 +18,7 @@ import ujson
 
 from scripts.game_structure.game_essentials import game
 from scripts.housekeeping.version import get_version_info, SAVE_VERSION_NUMBER
-from scripts.utility import update_sprite, get_current_season, quit  # pylint: disable=redefined-builtin
+from scripts.utility import update_sprite, get_current_season, quit, get_free_possible_mates  # pylint: disable=redefined-builtin
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.pelts import Pelt
 from scripts.cat.cats import Cat, cat_class
@@ -286,6 +286,9 @@ class Clan:
                 Cat.all_cats.get(cat_id).status_change('medicine cat apprentice')
             Cat.all_cats.get(cat_id).thoughts()
 
+        if self.clan_age == "established":
+            self.generate_mates()
+
         game.save_cats()
         number_other_clans = randint(3, 5)
         for _ in range(number_other_clans):
@@ -319,6 +322,39 @@ class Clan:
         # set the starting season
         season_index = self.seasons.index(self.starting_season)
         self.current_season = self.seasons[season_index]
+    
+    def generate_mates(self):
+        """Generates up to three pairs of mates."""
+
+        def get_adult_mateless_cat():
+            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 14 and not i.dead and not i.outside and not i.mate]
+            if alive_cats:
+                return random.choice(alive_cats)
+            return None
+
+        num_mates = random.randint(0,3)
+
+        for i in range(num_mates):
+            random_cat = get_adult_mateless_cat()
+            if random_cat:
+                same_age_cats = get_free_possible_mates(random_cat)
+
+            if same_age_cats:
+                random_mate_cat = random.choice(same_age_cats)
+                if random_cat.is_potential_mate(random_mate_cat):
+                    random_cat.set_mate(random_mate_cat)
+
+    def generate_families(self):
+        pass
+
+    def populate_starclan(self):
+        pass 
+
+    def populate_ur(self):
+        pass
+
+    def populate_df(self):
+        pass
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """Adds cat into the list of clan cats"""
