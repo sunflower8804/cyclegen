@@ -510,7 +510,7 @@ class PatrolOutcome:
             
             for _cat in cat_list:
                 if _cat == "r_c":
-                    out_set.add(patrol.patrol_random_cat)
+                    out_set.add(patrol.random_cat)
                 elif _cat == "p_l":
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
@@ -556,7 +556,7 @@ class PatrolOutcome:
             
             for _cat in cat_list:
                 if _cat == "r_c":
-                    out_set.add(patrol.patrol_random_cat)
+                    out_set.add(patrol.random_cat)
                 elif _cat == "p_l":
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
@@ -614,7 +614,7 @@ class PatrolOutcome:
             
             for _cat in cat_list:
                 if _cat == "r_c":
-                    out_set.add(patrol.patrol_random_cat)
+                    out_set.add(patrol.random_cat)
                 elif _cat == "p_l":
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
@@ -757,7 +757,7 @@ class PatrolOutcome:
             
             for _cat in cat_list:
                 if _cat == "r_c":
-                    out_set.add(patrol.patrol_random_cat)
+                    out_set.add(patrol.random_cat)
                 elif _cat == "p_l":
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
@@ -1004,7 +1004,7 @@ class PatrolOutcome:
         # GATHER MATES
         in_patrol_cats = {
             "p_l": patrol.patrol_leader,
-            "r_c": patrol.patrol_random_cat,
+            "r_c": patrol.random_cat,
         }
         if self.stat_cat:
             in_patrol_cats["s_c"] = self.stat_cat
