@@ -216,14 +216,14 @@ class GiftScreen(Screens):
                 object_id="#back_button"
             )
             self.select_button = UIImageButton(
-                scale(pygame.Rect((250, 610), (208, 60))),
+                scale(pygame.Rect((250, 610), (208, 52))),
                 "",
                 object_id="#gift_select_button"
             )
             self.gift_again_button = UIImageButton(
-                scale(pygame.Rect((1140, 610), (208, 52))),
+                scale(pygame.Rect((1160, 610), (208, 52))),
                 "",
-                object_id=""
+                object_id="#gift_again_button"
             )
 
             self.previous_page_button = UIImageButton(
@@ -287,14 +287,14 @@ class GiftScreen(Screens):
                 object_id="#back_button"
             )
             self.select_button = UIImageButton(
-                scale(pygame.Rect((250, 610), (208, 60))),
+                scale(pygame.Rect((250, 610), (208, 52))),
                 "",
-                object_id="#gift_select_button"
+                object_id="#give_gift_button"
             )
             self.gift_again_button = UIImageButton(
                 scale(pygame.Rect((1160, 610), (208, 52))),
                 "",
-                object_id=""
+                object_id="#gift_again_button"
             )
             self.previous_page_button = UIImageButton(
                 scale(pygame.Rect((630, 1155), (68, 68))),
@@ -405,14 +405,14 @@ class GiftScreen(Screens):
                 object_id="#back_button"
             )
             self.select_button = UIImageButton(
-                scale(pygame.Rect((250, 610), (208, 60))),
+                scale(pygame.Rect((250, 610), (208, 52))),
                 "",
-                object_id="#gift_select_button"
+                object_id="#give_gift_button"
             )
             self.gift_again_button = UIImageButton(
-                scale(pygame.Rect((1160, 610), (208, 60))),
-                "gift again",
-                object_id=""
+                scale(pygame.Rect((1160, 610), (208, 52))),
+                "",
+                object_id="#gift_again_button"
             )
             self.previous_page_button = UIImageButton(
                 scale(pygame.Rect((630, 1155), (68, 68))),
@@ -608,9 +608,9 @@ class GiftScreen(Screens):
         reaction = "accept_neutral"
         if acc in self.selected_cat.pelt.inventory:
             reaction = "already_have"
-        elif acc in ACC_REACTION[cluster]["like"]:
+        elif acc in ACC_REACTION[cluster1]["like"] or (cluster2 and acc in ACC_REACTION[cluster2]["like"]):
             reaction = "accept_like"
-        elif acc in ACC_REACTION[cluster]["dislike"]:
+        elif acc in ACC_REACTION[cluster1]["dislike"] or (cluster2 and acc in ACC_REACTION[cluster2]["dislike"]):
             reaction = "accept_dislike"
 
         if reaction != "already_have":
@@ -620,15 +620,16 @@ class GiftScreen(Screens):
             if acc == game.clan.your_cat.pelt.accessory:
                 game.clan.your_cat.pelt.accessory = None
             self.selected_cat.pelt.inventory.append(acc)
+            if acc in ACC_REACTION[cluster1]["like"] or (cluster2 and acc in ACC_REACTION[cluster2]["like"]):
+                if len(self.selected_cat.pelt.accessories) <= 4:
+                    self.selected_cat.pelt.accessories.append(acc)
+                    self.update_selected_cat()
 
         if acc in ACC_REACTION_TXT["unique_gifts"].keys():
             if reaction in ACC_REACTION_TXT["unique_gifts"][acc].keys():
                 reaction_txt = ACC_REACTION_TXT["unique_gifts"][acc][reaction]
         else:
             reaction_txt = choice(ACC_REACTION_TXT["general"][reaction] + ACC_REACTION_TXT[cluster][reaction])
-        # game.cur_events_list.insert(0, Single_Event(self.adjust_txt(reaction_txt)))
-
-        reaction_txt = choice(ACC_REACTION_TXT["general"][reaction] + ACC_REACTION_TXT[cluster][reaction])
 
         return reaction_txt, reaction, acc
 
