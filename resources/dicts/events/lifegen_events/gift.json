@@ -90,6 +90,10 @@
         },
         "SMALL DEATHBERRY": {
             "accept_like": "t_c takes the accessory with a glint in their eyes. Perhaps this gift can be useful."
+        },
+        "RAINBOWBOW": {
+            "accept_like": "t_c thanks you and takes the colourful bow with a smile!",
+            "accept_dislike": "t_c eyes you strangely and stuffs the bow under {PRONOUN/t_c/poss} nest before anycat can see it."
         }
     }
 }

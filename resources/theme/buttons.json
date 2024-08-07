@@ -4661,5 +4661,39 @@
                 "path": "resources/images/buttons/gift_select_unavailable.png"
             }
         }
+    },
+    "#give_gift_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/give_gift.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/give_gift_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/give_gift_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/give_gift_unavailable.png"
+            }
+        }
+    },
+    "#gift_again_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/gift_again.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/gift_again_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/gift_again_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/gift_again_unavailable.png"
+            }
+        }
     }
 }

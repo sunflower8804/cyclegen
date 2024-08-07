@@ -164,6 +164,7 @@ class MakeClanScreen(Screens):
         self.reverse=False
         self.skill = "Random"
         self.accessories=[]
+        self.inventory = []
         self.sex = "male"
         self.personality = "troublesome"
         self.accessory = None
@@ -1377,7 +1378,7 @@ class MakeClanScreen(Screens):
             tortiepattern=Pelt.sprites_names.get(self.tortiepattern),
             vitiligo=self.vitiligo,
             points=self.points,
-            accessory=self.accessory,
+            accessory=None,
             paralyzed=self.paralyzed,
             scars=self.scars,
             tint=self.tint,
@@ -1388,7 +1389,8 @@ class MakeClanScreen(Screens):
             adult_sprite=self.adult_pose if self.adult_pose > 2 else self.adult_pose + 6,
             senior_sprite=self.elder_pose if self.elder_pose > 2 else self.elder_pose + 12,
             reverse=self.reverse,
-            accessories=[self.accessory] if self.accessory else []
+            accessories=[self.accessory] if self.accessory else [],
+            inventory=[self.accessory] if self.accessory else []
         )
         if self.length == 'long' and self.adult_pose < 9:
             pelt2.cat_sprites['young adult'] = self.adult_pose + 9
@@ -2013,7 +2015,8 @@ class MakeClanScreen(Screens):
                     self.your_cat.permanent_condition['born without a leg']["moons_until"] = 1
                     self.your_cat.permanent_condition['born without a leg']["moons_with"] = -1
                     self.your_cat.permanent_condition['born without a leg']['born_with'] = True
-                self.your_cat.accessory = self.accessory
+                self.your_cat.accessories = [self.accessory]
+                self.your_cat.inventory = [self.accessory]
                 self.your_cat.personality = Personality(trait=self.personality, kit_trait=True)
                 if self.skill == "Random":
                     self.skill = random.choice(self.skills)
@@ -2037,7 +2040,7 @@ class MakeClanScreen(Screens):
             tortiepattern=Pelt.sprites_names.get(self.tortiepattern),
             vitiligo=self.vitiligo,
             points=self.points,
-            accessory=self.accessory,
+            accessory=None,
             paralyzed=self.paralyzed,
             scars=self.scars,
             tint=self.tint,
@@ -2048,7 +2051,8 @@ class MakeClanScreen(Screens):
             adult_sprite=self.adult_pose if self.adult_pose > 2 else self.adult_pose + 6,
             senior_sprite=self.elder_pose if self.elder_pose > 2 else self.elder_pose + 12,
             reverse=self.reverse,
-            accessories=[self.accessory] if self.accessory else []
+            accessories=[self.accessory] if self.accessory else [],
+            inventory=[self.accessory] if self.accessory else []
         )
         if self.length == 'long' and self.adult_pose < 9:
             pelt2.cat_sprites['young adult'] = self.adult_pose + 9
