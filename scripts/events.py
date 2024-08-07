@@ -789,7 +789,8 @@ class Events:
                 adoptive_parents = []
                 if birth_type == BirthType.NO_PARENTS:
                     thought = "Is glad that their kits are safe"
-                    parent1 = create_new_cat(Cat, Relationship,
+                    parent1 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
@@ -816,14 +817,16 @@ class Events:
                     adoptive_parent1 = pick_valid_parent()
                     adoptive_parents = [adoptive_parent1.ID]
                     thought = "Is glad that their kits are safe"
-                    parent1 = create_new_cat(Cat, Relationship,
+                    parent1 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
                                                 age=random.randint(15,120),
                                                 outside=True)[0]
                     parent1.backstory = random.choice(["refugee2", "refugee3", "refugee4"])
-                    parent2 = create_new_cat(Cat, Relationship,
+                    parent2 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
@@ -853,14 +856,16 @@ class Events:
                     adoptive_parent1.set_mate(adoptive_parent2)
                     adoptive_parents = [adoptive_parent1.ID, adoptive_parent2.ID]
                     thought = "Is glad that their kits are safe"
-                    parent1 = create_new_cat(Cat, Relationship,
+                    parent1 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
                                                 age=random.randint(15,120),
                                                 outside=True)[0]
                     parent1.backstory = random.choice(["refugee2", "refugee3", "refugee4"])
-                    parent2 = create_new_cat(Cat, Relationship,
+                    parent2 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
@@ -877,7 +882,7 @@ class Events:
                     parent2.backstory = random.choice(["refugee2", "refugee3", "refugee4"])
 
                 elif birth_type == BirthType.ONE_OUTSIDER_PARENT:
-                    parent1 = create_new_cat(Cat, Relationship,
+                    parent1 = create_new_cat(Cat,
                                                 status="warrior",
                                                 alive=True,
                                                 age=random.randint(15,120),
@@ -885,13 +890,13 @@ class Events:
                     parent1.backstory = random.choice(["loner1", "loner2", "loner4", "kittypet1", "kittypet2", "kittypet3", "kittypet4", "kittypet6", "rogue1", "rogue2", "rogue3", "rogue5", "rogue8", "refugee2", "refugee3", "refugee4"])
 
                 elif birth_type == BirthType.TWO_OUTSIDER_PARENTS:
-                    parent1 = create_new_cat(Cat, Relationship,
+                    parent1 = create_new_cat(Cat,
                                                 status="warrior",
                                                 alive=True,
                                                 age=random.randint(15,120),
                                                 outside=False)[0]
                     parent1.backstory = random.choice(["loner1", "loner2", "loner4", "kittypet1", "kittypet2", "kittypet3", "kittypet4", "kittypet6", "rogue1", "rogue2", "rogue3", "rogue5", "rogue8", "refugee2", "refugee3", "refugee4"])
-                    parent2 = create_new_cat(Cat, Relationship,
+                    parent2 = create_new_cat(Cat,
                                                 status="warrior",
                                                 alive=True,
                                                 age=parent1.moons + random.randint(1,5),
