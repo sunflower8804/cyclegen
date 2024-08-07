@@ -15,10 +15,10 @@ from random import choice, randint
 
 import pygame
 import ujson
-
+from scripts.cat_relations.inheritance import Inheritance
 from scripts.game_structure.game_essentials import game
 from scripts.housekeeping.version import get_version_info, SAVE_VERSION_NUMBER
-from scripts.utility import update_sprite, get_current_season, quit, get_free_possible_mates  # pylint: disable=redefined-builtin
+from scripts.utility import update_sprite, get_current_season, quit, get_free_possible_mates, get_alive_status_cats  # pylint: disable=redefined-builtin
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.pelts import Pelt
 from scripts.cat.cats import Cat, cat_class
@@ -288,6 +288,7 @@ class Clan:
 
         if self.clan_age == "established":
             self.generate_mates()
+            self.generate_families()
 
         game.save_cats()
         number_other_clans = randint(3, 5)
@@ -341,7 +342,84 @@ class Clan:
                     random_cat.set_mate(random_mate_cat)
 
     def generate_families(self):
-        pass
+
+        def get_kit_parent():
+            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 20 and i.moons <= 100 and not i.dead and not i.outside]
+
+            for cat in alive_cats:
+                if not cat.inheritance:
+                    cat.inheritance = Inheritance(cat)
+
+            alive_cats = [i for i in alive_cats if not i.inheritance.get_blood_kits()]
+
+            if alive_cats:
+                return random.choice(alive_cats)
+            return None
+
+        def get_app_parent():
+            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 40 and i.moons <= 100 and not i.dead and not i.outside]
+
+            for cat in alive_cats:
+                if not cat.inheritance:
+                    cat.inheritance = Inheritance(cat)
+
+            alive_cats = [i for i in alive_cats if not i.inheritance.get_blood_kits()]
+
+            if alive_cats:
+                return random.choice(alive_cats)
+            return None
+        
+        clan_kits = get_alive_status_cats(Cat, ["newborn", "kitten"])
+        clan_apps = get_alive_status_cats(Cat, ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"])
+
+        if not clan_kits and not clan_apps:
+            return
+        
+        if clan_kits:
+            for kit in clan_kits:
+                if not kit.inheritance:
+                    kit.inheritance = Inheritance(kit)
+                if kit.ID != game.clan.your_cat.ID and kit.backstory == "clanborn" and not kit.parent1:
+                    parent = get_kit_parent()
+                    if parent:
+                        kit.parent1 = parent.ID
+                        parent.inheritance.update_inheritance()
+
+                        if parent.mate:
+                            kit.parent2 = choice(parent.mate)
+                            if not Cat.all_cats.get(kit.parent2).inheritance:
+                                Cat.all_cats.get(kit.parent2).inheritance = Inheritance(Cat.all_cats.get(kit.parent2))
+                            Cat.all_cats.get(kit.parent2).inheritance.update_inheritance()
+
+                        for other_kit in clan_kits:
+                            if other_kit.ID != kit.ID and other_kit.ID != game.clan.your_cat.ID and kit.moons == other_kit.moons and not other_kit.parent1 and other_kit.backstory == "clanborn":
+                                other_kit.parent1 = parent.ID
+                                parent.inheritance.update_inheritance()
+                                if kit.parent2:
+                                    other_kit.parent2 = kit.parent2
+                                    Cat.all_cats.get(kit.parent2).inheritance.update_inheritance()
+                                    if not other_kit.inheritance:
+                                        other_kit.inheritance = Inheritance(other_kit)
+                kit.inheritance.update_inheritance()
+
+
+
+        if clan_apps:
+            for app in clan_apps:
+                if app.backstory == "clanborn":
+                    parent = get_app_parent()
+                    if parent:
+                        app.parent1 = parent.ID
+                        if not app.inheritance:
+                            app.inheritance = Inheritance(app)
+                        app.inheritance.update_inheritance()
+                        parent.inheritance.update_inheritance()
+                        if parent.mate:
+                            app.parent2 = choice(parent.mate)
+                            if not Cat.all_cats.get(app.parent2).inheritance:
+                                Cat.all_cats.get(app.parent2).inheritance = Inheritance(Cat.all_cats.get(app.parent2))
+                            app.inheritance.update_inheritance()
+                            Cat.all_cats.get(app.parent2).inheritance.update_inheritance()
 
     def populate_starclan(self):
         pass 
