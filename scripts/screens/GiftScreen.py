@@ -365,7 +365,7 @@ class GiftScreen(Screens):
             neutral = False
             neg = False
 
-            if reaction in ["accept_like"]:
+            if reaction in ["accept_like", "accept_favourite"]:
                 icon_png = "giftreaction_pos"
                 pos = True
             elif reaction in ["accept_neutral", "already_have"]:
@@ -582,6 +582,9 @@ class GiftScreen(Screens):
                 neg = True
             elif reaction == "accept_neutral":
                 neutral = True
+            elif reaction == "accept_favourite":
+                pos = True
+                cat.relationships(you.ID).platonic_like += randint(10,30)
 
     def get_reaction_display(self, pos, neutral, neg):
         """ Display text for relationship changes """
@@ -613,6 +616,10 @@ class GiftScreen(Screens):
         elif acc in ACC_REACTION[cluster1]["dislike"] or (cluster2 and acc in ACC_REACTION[cluster2]["dislike"]):
             reaction = "accept_dislike"
 
+        if self.selected_cat.personality.trait in ACC_REACTION["favourites"]:
+            if acc in ACC_REACTION["favourites"][self.selected_cat.personality.trait]:
+                reaction = "accept_favourite"
+
         if reaction != "already_have":
             game.clan.your_cat.pelt.inventory.remove(acc)
             if acc in game.clan.your_cat.pelt.accessories:
@@ -620,7 +627,7 @@ class GiftScreen(Screens):
             if acc == game.clan.your_cat.pelt.accessory:
                 game.clan.your_cat.pelt.accessory = None
             self.selected_cat.pelt.inventory.append(acc)
-            if acc in ACC_REACTION[cluster1]["like"] or (cluster2 and acc in ACC_REACTION[cluster2]["like"]):
+            if (acc in ACC_REACTION[cluster1]["like"] or (cluster2 and acc in ACC_REACTION[cluster2]["like"])) or reaction == "accept_favourite":
                 if len(self.selected_cat.pelt.accessories) <= 4:
                     self.selected_cat.pelt.accessories.append(acc)
                     self.update_selected_cat()
