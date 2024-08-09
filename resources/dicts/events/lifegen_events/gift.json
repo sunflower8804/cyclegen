@@ -31,7 +31,7 @@
             "t_c isn't sure what to do with this, but {PRONOUN/t_c/subject} can take it off your paws."
         ],
         "accept_dislike": [
-            "t_c takes the gift, but {PRONOUN/t_c/subject} {PRONOUN/t_c/don't/doesn't} look too happy about it..."
+            "t_c takes the gift, but {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} look too happy about it..."
         ],
         "already_have": [
             "t_c wonders why you think {PRONOUN/t_c/subject}'d need two of the same thing."
