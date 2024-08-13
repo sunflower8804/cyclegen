@@ -690,7 +690,7 @@ class TalkScreen(Screens):
                 if not has_role:
                     continue
 
-            roles = ["they_kitten", "they_apprentice", "they_medicine_cat_apprentice", "they_mediator_apprentice", "they_queen's_apprentice", "they_warrior", "they_mediator", "they_medicine_cat", "they_queen", "they_deputy", "they_leader", "they_elder", "they_newborn"]
+            roles = ["they_kitten", "they_apprentice", "they_medicine_cat_apprentice", "they_mediator_apprentice", "they_queen's_apprentice", "they_warrior", "they_mediator", "they_medicine_cat", "they_queen", "they_deputy", "they_leader", "they_elder", "they_newborn", "they_guide"]
             if any(r in roles for r in tags):
                 has_role = False
                 if "they_kitten" in tags and cat.status == "kitten":
@@ -718,6 +718,8 @@ class TalkScreen(Screens):
                 elif "they_elder" in tags and cat.status == "elder":
                     has_role = True
                 elif "they_newborn" in tags and cat.status == "newborn":
+                    has_role = True
+                elif "they_guide" in tags and (game.clan.instructor.ID == cat.ID or game.clan.demon.ID == cat.ID):
                     has_role = True
                 if not has_role:
                     continue
@@ -912,8 +914,11 @@ class TalkScreen(Screens):
                 if "siblings_mate" in tags:
                     if cat.ID in you.inheritance.get_siblings_mates():
                         fam = True
-                if "grandparent" in tags:
+                if "they_grandparent" in tags:
                     if cat.is_grandparent(game.clan.your_cat):
+                        fam = True
+                if "they_grandchild" in tags:
+                    if game.clan.your_cat.is_grandparent(cat):
                         fam = True
                 if not fam:
                     continue

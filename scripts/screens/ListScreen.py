@@ -217,6 +217,7 @@ class ListScreen(Screens):
 
     def screen_switches(self):
         self.clan_name = game.clan.name + "Clan"
+        self.death_status = "living"
 
         self.set_disabled_menu_buttons(["catlist_screen"])
         self.show_menu_buttons()
