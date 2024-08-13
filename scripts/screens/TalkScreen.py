@@ -690,7 +690,7 @@ class TalkScreen(Screens):
                 if not has_role:
                     continue
 
-            roles = ["they_kitten", "they_apprentice", "they_medicine_cat_apprentice", "they_mediator_apprentice", "they_queen's_apprentice", "they_warrior", "they_mediator", "they_medicine_cat", "they_queen", "they_deputy", "they_leader", "they_elder", "they_newborn"]
+            roles = ["they_kitten", "they_apprentice", "they_medicine_cat_apprentice", "they_mediator_apprentice", "they_queen's_apprentice", "they_warrior", "they_mediator", "they_medicine_cat", "they_queen", "they_deputy", "they_leader", "they_elder", "they_newborn", "they_guide"]
             if any(r in roles for r in tags):
                 has_role = False
                 if "they_kitten" in tags and cat.status == "kitten":
@@ -718,6 +718,8 @@ class TalkScreen(Screens):
                 elif "they_elder" in tags and cat.status == "elder":
                     has_role = True
                 elif "they_newborn" in tags and cat.status == "newborn":
+                    has_role = True
+                elif "they_guide" in tags and (game.clan.instructor.ID == cat.ID or game.clan.demon.ID == cat.ID):
                     has_role = True
                 if not has_role:
                     continue
