@@ -1002,7 +1002,7 @@ class Events:
                     if birth_txt:
                         break
             
-            game.cur_events_list.append(Single_Event(birth_txt, "alert"))
+            game.cur_events_list.append(Single_Event(birth_txt, ["alert", "birth_death"]))
 
         birth_type, parent1, parent2, adoptive_parents = get_parents(birth_type)
         siblings = create_siblings(parent1, parent2, adoptive_parents) if random.randint(1,4) != 1 else []
