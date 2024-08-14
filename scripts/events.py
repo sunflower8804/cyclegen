@@ -306,10 +306,12 @@ class Events:
                             severity="minor",
                         )
 
-                        if len(shaken_cats) == 1:
-                            extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
-                        else:
-                            extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
+                    insert = adjust_list_text(shaken_cat_names)
+
+                    if len(shaken_cats) == 1:
+                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
+                    else:
+                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
 
                 else:
                     event = f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their " \
@@ -1002,7 +1004,7 @@ class Events:
                     if birth_txt:
                         break
             
-            game.cur_events_list.append(Single_Event(birth_txt, "alert"))
+            game.cur_events_list.append(Single_Event(birth_txt, ["alert", "birth_death"]))
 
         birth_type, parent1, parent2, adoptive_parents = get_parents(birth_type)
         siblings = create_siblings(parent1, parent2, adoptive_parents) if random.randint(1,4) != 1 else []

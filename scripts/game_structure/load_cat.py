@@ -262,22 +262,23 @@ def json_load():
                     cat["scar_event"] if "scar_event" in cat else [],
                 )
             if "pronouns" in cat:
-                if "sibling" not in cat["pronouns"][0]:
-                    if new_cat.genderalign in ["male", "trans male"]:
-                        cat["pronouns"][0]["sibling"] = "brother"
-                    elif new_cat.genderalign in ["female", "trans female"]:
-                        cat["pronouns"][0]["sibling"] = "sister"
-                    else:
-                        cat["pronouns"][0]["sibling"] = "sibling"
+                for i in cat["pronouns"]:
+                    if "sibling" not in i:
+                        if new_cat.genderalign in ["male", "trans male"]:
+                            i["sibling"] = "brother"
+                        elif new_cat.genderalign in ["female", "trans female"]:
+                            i["sibling"] = "sister"
+                        else:
+                            i["sibling"] = "sibling"
 
-    
-                if "parent" not in cat["pronouns"][0]:
-                    if new_cat.genderalign in ["male", "trans male"]:
-                        cat["pronouns"][0]["parent"] = "father"
-                    elif new_cat.genderalign in ["female", "trans female"]:
-                        cat["pronouns"][0]["parent"] = "mother"
-                    else:
-                        cat["pronouns"][0]["parent"] = "parent"
+        
+                    if "parent" not in i:
+                        if new_cat.genderalign in ["male", "trans male"]:
+                            i["parent"] = "father"
+                        elif new_cat.genderalign in ["female", "trans female"]:
+                            i["parent"] = "mother"
+                        else:
+                            i["parent"] = "parent"
 
             all_cats.append(new_cat)
 
