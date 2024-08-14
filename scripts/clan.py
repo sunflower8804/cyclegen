@@ -424,6 +424,7 @@ class Clan:
                             app.inheritance.update_inheritance()
                             Cat.all_cats.get(app.parent2).inheritance.update_inheritance()
 
+    #TODO: fix backstories, dead_for for UR cats
     def populate_sc(self):
         for i in range(randint(0,5)):
             create_new_cat(Cat, new_name=True, alive=False)
