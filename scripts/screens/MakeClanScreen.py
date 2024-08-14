@@ -872,12 +872,12 @@ class MakeClanScreen(Screens):
         elif self.biome_selected == 'Beach':
             self.tabs["tab1"] = UIImageButton(scale(pygame.Rect((152, 360), (308, 60))), "", object_id="#tidepool_tab"
                                             , manager=MANAGER)
-        self.tabs["tab2"] = UIImageButton(scale(pygame.Rect((130, 430), (308, 60))), "", object_id="#tidal_cave_tab"
-                                            , manager=MANAGER)
-        self.tabs["tab3"] = UIImageButton(scale(pygame.Rect((140, 500), (308, 60))), "", object_id="#shipwreck_tab"
-                                            , manager=MANAGER)
-        self.tabs["tab4"] = UIImageButton(scale(pygame.Rect((95, 570), (308, 60))), "", object_id="#tropical_island_tab"
-                                            , manager=MANAGER)
+            self.tabs["tab2"] = UIImageButton(scale(pygame.Rect((130, 430), (308, 60))), "", object_id="#tidal_cave_tab"
+                                                , manager=MANAGER)
+            self.tabs["tab3"] = UIImageButton(scale(pygame.Rect((140, 500), (308, 60))), "", object_id="#shipwreck_tab"
+                                                , manager=MANAGER)
+            self.tabs["tab4"] = UIImageButton(scale(pygame.Rect((95, 570), (308, 60))), "", object_id="#tropical_island_tab"
+                                                , manager=MANAGER)
 
         if self.selected_camp_tab == 1:
             self.tabs["tab1"].disable()
@@ -1994,6 +1994,14 @@ class MakeClanScreen(Screens):
                 new_cat.pelt = self.custom_cat.pelt
                 new_cat.gender = self.sex
                 new_cat.genderalign = self.sex
+
+                if new_cat.genderalign == "male":
+                    new_cat.pronouns = [Cat.default_pronouns[2].copy()]
+                elif new_cat.genderalign == "female":
+                    new_cat.pronouns = [Cat.default_pronouns[1].copy()]
+                else:
+                    new_cat.pronouns = [Cat.default_pronouns[0].copy()]
+                    
                 self.your_cat = new_cat
                 if self.permanent_condition is not None and self.permanent_condition != 'paralyzed':
                     self.your_cat.get_permanent_condition(self.permanent_condition, born_with=True)
