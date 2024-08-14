@@ -18,7 +18,7 @@ import ujson
 from scripts.cat_relations.inheritance import Inheritance
 from scripts.game_structure.game_essentials import game
 from scripts.housekeeping.version import get_version_info, SAVE_VERSION_NUMBER
-from scripts.utility import update_sprite, get_current_season, quit, get_free_possible_mates, get_alive_status_cats  # pylint: disable=redefined-builtin
+from scripts.utility import update_sprite, get_current_season, quit, get_free_possible_mates, get_alive_status_cats, create_new_cat  # pylint: disable=redefined-builtin
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.pelts import Pelt
 from scripts.cat.cats import Cat, cat_class
@@ -289,6 +289,9 @@ class Clan:
         if self.clan_age == "established":
             self.generate_mates()
             self.generate_families()
+            self.populate_sc()
+            self.populate_ur()
+            self.populate_df()
 
         game.save_cats()
         number_other_clans = randint(3, 5)
@@ -421,22 +424,18 @@ class Clan:
                             app.inheritance.update_inheritance()
                             Cat.all_cats.get(app.parent2).inheritance.update_inheritance()
 
-    def populate_starclan(self):
-        for i in range(0,5):
-            starclan_cat = Cat()
-            starclan_cat.dead = True
+    def populate_sc(self):
+        for i in range(randint(0,5)):
+            create_new_cat(Cat, new_name=True, alive=False)
 
     def populate_ur(self):
-        for i in range(0,5):
-            ur_cat = Cat()
-            ur_cat.dead = True
-            ur_cat.outside = True
+        for i in range(randint(0,5)):
+            status = random.choice(["loner","kittypet"])
+            create_new_cat(Cat, alive=False, status = status, loner=True if status == "loner" else False, kittypet=True if status == "kittypet" else False, outside=True)
 
     def populate_df(self):
-        for i in range(0,5):
-            df_cat = Cat()
-            df_cat.dead = True
-            df_cat.outside = True
+        for i in range(randint(0,5)):
+            create_new_cat(Cat, new_name=True, alive=False, df=True)
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """Adds cat into the list of clan cats"""
