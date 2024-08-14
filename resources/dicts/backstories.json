@@ -4,6 +4,7 @@
     "clanborn": "This cat was born into the Clan where {PRONOUN/m_c/subject} currently {VERB/m_c/reside/resides}.",
     "halfclan1": "This cat was born into the Clan, but one of {PRONOUN/m_c/poss} parents resides in another Clan.",
     "halfclan2": "This cat was born in another Clan, but chose to come to this Clan to be with {PRONOUN/m_c/poss} other parent.",
+    "halfclan3": "One of this cat's parents is a mediator in another Clan, and {PRONOUN/m_c/subject} {VERB/m_c/have/has} never met them.",
     "halfclan4": "One of this cat's parents is a mediator in another Clan, and {PRONOUN/m_c/subject} visit regularly.",
     "halfclan5": "One of this cat's parents is the leader of another Clan, but {PRONOUN/m_c/subject} {VERB/m_c/have/has} never met them.",
     "halfclan6": "One of this cat's parents is the deputy of another Clan, but {PRONOUN/m_c/subject} {VERB/m_c/have/has} never met them",

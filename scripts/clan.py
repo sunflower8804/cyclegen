@@ -422,13 +422,21 @@ class Clan:
                             Cat.all_cats.get(app.parent2).inheritance.update_inheritance()
 
     def populate_starclan(self):
-        pass 
+        for i in range(0,5):
+            starclan_cat = Cat()
+            starclan_cat.dead = True
 
     def populate_ur(self):
-        pass
+        for i in range(0,5):
+            ur_cat = Cat()
+            ur_cat.dead = True
+            ur_cat.outside = True
 
     def populate_df(self):
-        pass
+        for i in range(0,5):
+            df_cat = Cat()
+            df_cat.dead = True
+            df_cat.outside = True
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """Adds cat into the list of clan cats"""
