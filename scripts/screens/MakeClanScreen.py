@@ -1994,6 +1994,14 @@ class MakeClanScreen(Screens):
                 new_cat.pelt = self.custom_cat.pelt
                 new_cat.gender = self.sex
                 new_cat.genderalign = self.sex
+
+                if new_cat.genderalign == "male":
+                    new_cat.pronouns = Cat.default_pronouns[1].copy()
+                elif new_cat.genderalign == "female":
+                    new_cat.pronouns = Cat.default_pronouns[2].copy()
+                else:
+                    new_cat.pronouns = Cat.default_pronouns[0].copy()
+                    
                 self.your_cat = new_cat
                 if self.permanent_condition is not None and self.permanent_condition != 'paralyzed':
                     self.your_cat.get_permanent_condition(self.permanent_condition, born_with=True)
