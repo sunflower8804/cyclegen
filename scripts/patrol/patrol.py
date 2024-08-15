@@ -651,16 +651,7 @@ class Patrol:
                 if "shunned" not in patrol.tags and "df" not in patrol.tags: # shunned cats can still get regular goop romance patrols
                     if game.clan.your_cat.shunned > 0:
                         continue
-
-            if "hunting" not in patrol.types and patrol_type == "hunting":
-                continue
-            elif "border" not in patrol.types and patrol_type == "border":
-                continue
-            elif "training" not in patrol.types and patrol_type == "training":
-                continue
-            elif "herb_gathering" not in patrol.types and patrol_type == "med":
-                continue
-
+                        
             # cruel season tag check
             if "cruel_season" in patrol.tags:
                 if game.clan and game.clan.game_mode != "cruel_season":
