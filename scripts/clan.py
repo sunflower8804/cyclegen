@@ -424,19 +424,50 @@ class Clan:
                             app.inheritance.update_inheritance()
                             Cat.all_cats.get(app.parent2).inheritance.update_inheritance()
 
-    #TODO: fix backstories, dead_for for UR cats
     def populate_sc(self):
         for i in range(randint(0,5)):
-            create_new_cat(Cat, new_name=True, alive=False)
+            random_backstory = choice(["dead1",
+                "dead3",
+                "dead4",
+                "dead6",
+                "dead8",
+                "dead10",
+                "dead12",
+                "dead15"])
+            sc_cats = create_new_cat(Cat, new_name=True, alive=False, backstory=random_backstory, thought="Watches over the Clan")
+            sc_cats[0].history.beginning = None
 
     def populate_ur(self):
         for i in range(randint(0,5)):
+            random_backstory = choice(["dead1",
+                "dead2",
+                "dead3",
+                "dead4",
+                "dead5",
+                "dead6",
+                "dead8",
+                "dead9",
+                "dead10",
+                "dead11",
+                "dead12"])
             status = random.choice(["loner","kittypet"])
-            create_new_cat(Cat, alive=False, status = status, loner=True if status == "loner" else False, kittypet=True if status == "kittypet" else False, outside=True)
+            ur_cats = create_new_cat(Cat, alive=False, status = status, loner=True if status == "loner" else False, kittypet=True if status == "kittypet" else False, outside=True, backstory=random_backstory, thought="Wanders the Unknown Residence")
+            ur_cats[0].history.beginning = None
+            ur_cats[0].dead_for = randint(1,100)
 
     def populate_df(self):
         for i in range(randint(0,5)):
-            create_new_cat(Cat, new_name=True, alive=False, df=True)
+            random_backstory = choice(["dead2",
+                "dead5",
+                "dead7",
+                "dead8",
+                "dead9",
+                "dead11",
+                "dead12",
+                "dead13",
+                "dead14"])
+            df_cats = create_new_cat(Cat, new_name=True, alive=False, df=True, backstory=random_backstory, thought="Watches the Clan from the gloom")
+            df_cats[0].history.beginning = None
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """Adds cat into the list of clan cats"""
