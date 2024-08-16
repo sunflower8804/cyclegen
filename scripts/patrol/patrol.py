@@ -1199,7 +1199,9 @@ class Patrol:
 
         text = process_text(text, replace_dict)
         text = adjust_prey_abbr(text)
-        text = self.adjust_txt(text)
+        
+        if game.current_screen == 'patrol screen':
+            text = self.adjust_txt(text)
 
         other_clan_name = self.other_clan.name
         s = 0
