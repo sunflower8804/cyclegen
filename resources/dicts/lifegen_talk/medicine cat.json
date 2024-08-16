@@ -1105,7 +1105,7 @@
         [
             "[t_c glances at you, tail flicking in annoyance.]",
             "The medicine den is no place for kits like you. Go back to the nursery.",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/turn/turns} back to {PRONOUN/t_c/poss} herbs, shuffling through the stores. It stays quiet for a couple moments as you make no efforts to move.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} back to {PRONOUN/t_c/poss} herbs, shuffling through the stores. It stays quiet for a couple moments as you make no efforts to move.]",
             "*Sigh* ... Fine. I guess you can stay.",
             "But absolutely no touching the herbs!"
         ]

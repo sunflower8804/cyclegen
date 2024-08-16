@@ -827,6 +827,7 @@ class MakeClanScreen(Screens):
 
     def refresh_selected_camp(self):
         """Updates selected camp image and tabs"""
+
         self.tabs["tab1"].kill()
         self.tabs["tab2"].kill()
         self.tabs["tab3"].kill()

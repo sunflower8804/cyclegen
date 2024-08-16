@@ -42,7 +42,7 @@
             "Wonders if r_c gets to venture out of the tunnels in StarClan",
             "Thought {PRONOUN/m_c/subject} saw r_c playing with the roots of the tree, but sadly shakes off the thought",
             "Was surprised to find r_c's spot in the nursery warm, despite {PRONOUN/r_c/object} being with the stars now",
-            "Is pondering if r_c would stay in tunnels or go out an explore the territory in StarClan",
+            "Is pondering if r_c would stay in tunnels or go out and explore the territory in StarClan",
             "Wonders if the newborns in StarClan will ever get to play and run across open fields",
             "Prays to StarClan that the passed newborn kits get to feel the wind across their pelt"
         ],
@@ -175,10 +175,10 @@
             "Is frightened about {PRONOUN/m_c/poss} role, but even more frightened about ever switching to a warrior",
             "Feels like StarClan made a mistake picking {PRONOUN/m_c/object} for this role",
             "Scurries out of the medicine den at the sight of blood",
-            "Is worrying about misinterpretating a sign that might endanger the Clan",
+            "Is worrying about misinterpreting a sign that might endanger the Clan",
             "Is frightened by the constant ghostly voices",
             "Was overthinking hoarding herbs for a hypothetical crisis",
-            "Was startled awake from a frightening dream of an unfamilair landscape"
+            "Was startled awake from a frightening dream of an unfamiliar landscape"
         ],
         "main_trait_constraint": [
             "insecure",
@@ -285,7 +285,7 @@
             "Was taste-testing berries",
             "Proposes dragging the Moonstone to the medicine den",
             "Asks {PRONOUN/m_c/poss} mentor if cats reincarnate as snails",
-            "Asks {PRONOUN/m_c/poss} mentor if {PRONOUN/m_c/subject} could still be their apprentince if {PRONOUN/m_c/subject} turned into a worm"
+            "Asks {PRONOUN/m_c/poss} mentor if {PRONOUN/m_c/subject} could still be their apprentice if {PRONOUN/m_c/subject} turned into a worm"
         ],
         "main_trait_constraint": [
             "strange"
@@ -307,11 +307,11 @@
     {
         "id": "mellow_medicine_cat_apprentice",
         "thoughts": [
-            "Is giving an injuried Clanmate company with small talk",
+            "Is giving an injured Clanmate company with small talk",
             "Can easily wrap a wound in a single blink",
             "Wraps {PRONOUN/m_c/poss} tail around a Clanmate's shoulder, reassuring them with a smile",
             "Is loafing in front of the medicine den, purring",
-            "Is hoping to create a comfortable atomphere for cats to visit the medicine den"
+            "Is hoping to create a comfortable atmosphere for cats to visit the medicine den"
         ],
         "main_trait_constraint": [
             "mellow"
@@ -361,7 +361,7 @@
         "thoughts": [
             "Isn't seem bothered by the sick cats, very sure they'll be healed",
             "Doesn't twitch a whisker while witnessing a Clanmate writhe in pain",
-            "Tells a Clanmate {PRONOUN/m_c/subject} will hold them down if requried"
+            "Tells a Clanmate {PRONOUN/m_c/subject} will hold them down if required"
         ],
         "main_trait_constraint": [
             "stoic"
