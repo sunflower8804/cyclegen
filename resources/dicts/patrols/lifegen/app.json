@@ -11,19 +11,36 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app1",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your mentor suggests an additional training session focusing on tracking skills. An opportunity to sharpen your senses and improve your hunting prowess.",
+        "intro_text": "m_n suggests an additional training session focusing on tracking skills. It's an opportunity to sharpen your senses and improve your hunting prowess.",
         "decline_text": "You opt to skip the training for the day and instead, decide to rest and rejuvenate your energy for the challenges ahead.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You graciously accept the extra training and astoundingly track a mouse using its scent alone. Your mentor observes with a sense of pride and nods approvingly at your progress.",
-                "exp": 20,
+                "text": "You graciously accept the extra training and track a mouse using its scent alone. m_n observes with a sense of pride and nods approvingly at your progress.",
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Accepting the challenge, you track m_n's trail throughout the territory with ease. You beam with pride as you manage to find {PRONOUN/m_n/object} again and again.",
+                "exp": 15,
+                "weight": 15,
+                "stat_trait": [
+                    "ambitious",
+                    "confident",
+                    "careful",
+                    "competitive",
+                    "cunning",
+                    "responsible",
+                    "thoughtful",
+                    "flexible",
+                    "energetic"
+                ],
+                "stat_skill": ["EXPLORER,1", "NAVIGATOR,1", "TRACKER,1", "SENSE,1"]
             }
         ],
         "fail_outcomes": [
@@ -46,24 +63,24 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app2",
         "min_cats": 1,
         "max_cats": 5,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The deputy selects you to go on a dawn patrol.",
-        "decline_text": "You try to decline the task. The deputy raises an eyebrow, stating that you have to go unless you're sick or injured. Everyone must do their part in the Clan. Tail drooping, you head for the camp entrance.",
+        "intro_text": "d_n selects you to go on a dawn patrol. When the time comes, the patrol is gathering near the entrance of the camp.",
+        "decline_text": "You try to decline the task. d_n raises an eyebrow, stating that you have to go unless you're sick or injured. Everyone must do their part in the Clan. Tail drooping, you head for the camp entrance.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "You participate in the patrol and successfully scout the Clan borders. Your keen sense of alertness impresses everyone around.",
-                "exp": 20,
+                "text": "You participate in the patrol and successfully scout the Clan borders. Your keen sense of alertness impresses everyone around. m_n has nothing but praise for you when d_n asks after you.",
+                "exp": 15,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "During the patrol, an unsuspecting twig snaps under your paw, alerting a potential prey. The experience serves as a reminder to tread more carefully in the future.",
+                "text": "During the patrol, an unsuspecting twig snaps under your paw, alerting a potential prey. The experience serves as a reminder to tread more carefully in the future. d_n seems less tthan thrilled after hearing about it...",
                 "exp": 0,
                 "weight": 20
             }
@@ -91,9 +108,32 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "You agree to share your meal with the elders, who, in return, share fascinating tales from their youth.",
-                "exp": 15,
+                "text": "You agree to share your meal with the elders, who, in return, share fascinating tales from their youth. r_e has some particularly interesting stories!",
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Your prey is a bit small to be shared with them. r_e notices and encourages you despite it. You and the elders split prey amongst yourselves as fantastical tales get underway from the older cats. You share a story of your own, having them breathless with laughter soon enough.",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": [
+                    "flexible",
+                    "energetic",
+                    "playful",
+                    "confident",
+                    "mellow",
+                    "charismatic",
+                    "witty",
+                    "loyal",
+                    "spontaneous",
+                    "trusting",
+                    "loving",
+                    "sincere",
+                    "flamboyant",
+                    "compassionate"
+                ],
+                "stat_skill": ["CLEVER,1", "COOPERATIVE,1", "STORY,1", "SPEAKER,1"]
+                
             }
         ],
         "fail_outcomes": [
@@ -126,7 +166,7 @@
         "chance_of_success": 55,
         "success_outcomes": [
             {
-                "text": "With a quick jump and a swipe, you manage to snag the leaf. Your agility surprises even you.",
+                "text": "With a quick jump and a swipe, you manage to snag the leaf. Your agility surprises even you. It's a moment you don't want to forget so you decide to take the leaf with you.",
                 "exp": 15,
                 "weight": 20,
                 "accessory": [
@@ -143,7 +183,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "You leap for the leaf but miss, landing in a heap on the ground. Your mentor teases you but encourages you to try again.",
+                "text": "You leap for the leaf but miss, landing in a heap on the ground. m_n teases you good-naturedly for a moment but encourages you to try again.",
                 "exp": 0,
                 "weight": 20
             }
@@ -166,14 +206,29 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You spot a lone crow sitting on a branch. It screeches at you irritatingly.",
+        "intro_text": "You spot a lone crow sitting on a branch. It croaks at you irritatingly.",
         "decline_text": "You decide not to bother with the crow and focus on your other tasks.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You successfully chase the crow away, demonstrating your courage and determination.",
-                "exp": 20,
+                "text": "You successfully chase the crow away, demonstrating your courage and determination. That crow will think twice before bothering to mess with c_nClan!",
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "You bunch your haunches and prepare yourself - resulting in a massive leap that startles you and the crow. It screeches at you as you manage to get a paw full of feathers before it takes off. You've earned a prize to show m_n!",
+                "exp": 15,
+                "weight": 15,
+                "accessory": [
+                    {
+                        "cats": [
+                            "p_l"
+                        ],
+                        "accessory": [
+                            "BLUE FEATHERS"
+                        ]
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -201,21 +256,48 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your mentor suggests that it's time to hone your climbing skills. You see a tall tree nearby, its branches waving invitingly in the wind.",
+        "intro_text": "m_n suggests that it's time to hone your climbing skills. You see a tall tree nearby, its branches waving invitingly in the wind.",
         "decline_text": "You choose not to climb the tree, deciding that it's a bit too daunting for now. You promise yourself to try again another day when you feel more prepared.",
         "chance_of_success": 55,
         "success_outcomes": [
             {
-                "text": "Summoning your courage, you ascend the tree swiftly and smoothly. From the top, you enjoy a bird's-eye view of the forest. Your mentor gazes up in admiration, praising your agility and bravery.",
+                "text": "Summoning your courage, you ascend the tree swiftly and smoothly. From the top, you enjoy a bird's-eye view of the forest. m_n gazes up in admiration, praising your agility and bravery.",
                 "exp": 15,
+                "weight": 20,
+                "stat_trait": [
+                    "ambitious",
+                    "confident",
+                    "competitive",
+                    "cunning",
+                    "flexible",
+                    "energetic",
+                    "bold",
+                    "arrogant",
+                    "daring",
+                    "careful",
+                    "oblivious",
+                    "obsessive",
+                    "adventurous"
+                ],
+                "stat_skill": ["CLIMBER,1", "CLEVER,1", "GRACE,1"]
+            },
+            {
+                "text": "With m_n's encouragement, you start up the tree. Halfway up, however, you lose your nerves. m_n calls out to assure you before {PRONOUN/m_n/subject} {VERB/m_n/climb/climbs} up to coax you the rest of the way up. You're grateful to {PRONOUN/m_n/object} as you catch your breath at the top.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You muster your courage and make an attempt to climb, but a slippery branch leads to a minor mishap. You land softly on the ground, a bit bruised but largely unscathed. Your mentor reminds you that failure is the stepping stone to success.",
+                "text": "You muster your courage and make an attempt to climb, but a slippery branch leads to a minor mishap. You land softly on the ground, a bit bruised but largely unscathed. m_n reminds you that failure is the stepping stone to success.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["bruises"]
+                    }
+                ]
             }
         ]
     },
@@ -236,19 +318,37 @@
         "max_cats": 5,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "An emergency gathering has been called, suspecting an invasion by the rival Clan. You're asked to participate in the border patrol.",
+        "intro_text": "An emergency meeting has been called, suspecting an invasion by the rival Clan. You're asked to participate in the border patrol.",
         "decline_text": "You decide to decline the task, feeling a bit overwhelmed. You resolve to support your Clan in other ways.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "You accept the task and, with your keen senses, you successfully spot traces of the rival Clan. The Clan praises your vigilance, which has helped avert a potential crisis.",
-                "exp": 20,
+                "text": "You accept the task and, with your keen senses, you successfully spot traces of the rival Clan. The Clan praises your vigilance, which has helped avert a potential crisis. l_n seems quite pleased with you!",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": [
+                    "ambitious",
+                    "confident",
+                    "careful",
+                    "competitive",
+                    "strict",
+                    "cunning",
+                    "responsible",
+                    "righteous",
+                    "thoughtful",
+                    "loyal"
+                ],
+                "stat_skill": ["EXPLORER,1", "NAVIGATOR,1", "TRACKER,1", "SENSE,1"]
+            },
+            {
+                "text": "You're not the best tracker, but you give it your all. You lead r_w and m_n to a suspicious spot and the two more experienced cats take over quickly. r_w finds traces thanks to you!",
+                "exp": 5,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Despite your best efforts, you fail to notice any signs of the rival Clan. You return to your Clan feeling a bit downcast, but your Clanmates appreciate your effort and reassure you for the future.",
+                "text": "Despite your best efforts, you fail to notice any signs of the rival Clan. You return to the c_nClan camp feeling a bit downcast, but your Clanmates appreciate your effort and reassure you for the future.",
                 "exp": 0,
                 "weight": 20
             }
@@ -277,7 +377,12 @@
         "success_outcomes": [
             {
                 "text": "You bravely volunteer and embark on the journey. Navigating through unfamiliar territory, you successfully deliver the message and return unscathed, gaining your leader's admiration.",
-                "exp": 25,
+                "exp": 15,
+                "weight": 10
+            },
+            {
+                "text": "You admit to m_n that you'd like the experience, but are not yet confident in your ability alone. {PRONOUN/m_n/subject} had no intentions of going originally but offers to go with you. The two of you take on the task and succeed without issue.",
+                "exp": 1,
                 "weight": 20
             }
         ],
@@ -312,8 +417,25 @@
         "success_outcomes": [
             {
                 "text": "You dive into the creek and, after some initial struggles, manage to swim. Your mentor cheers from the bank, happy with your progress.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Swimming! You're a master at that! Without hesitation you dive in and show off your skills. m_n laughs softly before calling you back. {PRONOUN/m_n/subject} {VERB/m_n/joke/jokes} that {PRONOUN/m_n/subject} should learn from you instead of teaching you!",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": [
+                    "ambitious",
+                    "confident",
+                    "competitive",
+                    "bold",
+                    "daring",
+                    "playful",
+                    "energetic",
+                    "adventurous",
+                    "spontaneous"
+                ],
+                "stat_skill": ["SWIMMER,1", "FISHER,1"]
             }
         ],
         "fail_outcomes": [
@@ -346,8 +468,23 @@
         "chance_of_success": 45,
         "success_outcomes": [
             {
-                "text": "Braving the fog, you proceed to investigate and successfully identify the unusual scent as a harmless raccoon. Your Clan appreciates your bravery and keen senses.",
-                "exp": 20,
+                "text": "Braving the fog, you proceed to investigate and successfully identify the unusual scent as a raccoon. Since you're alone, you are sure to not let it spot you and head home. Your Clan appreciates your bravery and keen senses.",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": [
+                    "ambitious",
+                    "confident",
+                    "careful",
+                    "strict",
+                    "cunning",
+                    "responsible",
+                    "loyal"
+                ],
+                "stat_skill": ["EXPLORER,1", "NAVIGATOR,1", "TRACKER,1", "SENSE,1"]
+            },
+            {
+                "text": "Setting out with a few warriors, the fog makes it incredibly difficult to track. m_n has difficulty as well, but r_w manages to pick up a scent - identifying it as a raccoon. Since it's harmless to a group of cats, m_n suggests you both take the time to understand the scent and learn from this.",
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -376,19 +513,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "An elder invites you to share a meal. It's a chance to bond and hear stories from their past.",
-        "decline_text": "You politely decline the elder's invitation, deciding to focus on your training instead.",
+        "intro_text": "r_w1 and r_w2 invite you to share a meal. It's a chance to bond and learn more about your clanmates.",
+        "decline_text": "You politely decline the warrior's invitation, deciding to focus on your training instead.",
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "You accept the invitation and enjoy an afternoon filled with captivating tales of the Clan's history. The elder cat appreciates your company, and you gain a newfound respect for their wisdom.",
-                "exp": 15,
+                "text": "You accept the invitation and enjoy an afternoon filled with captivating tales of the Clan's adventures and skills. The older cats appreciates your company, and you gain a newfound respect for their abilities.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You join the elder, but your conversation is cut short by an unexpected disturbance in the camp. Despite the interruption, the elder appreciates your intent.",
+                "text": "You join the warriors, but your conversation is cut short by an unexpected disturbance in the camp. All three of you are quick to abandon your meal in favor of focusing on the issue.",
                 "exp": 0,
                 "weight": 20
             }
@@ -411,13 +548,13 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "A fellow apprentice challenges you to a friendly sparring match. It's a great way to practice combat skills.",
+        "intro_text": "r_a challenges you to a friendly sparring match. It's a great way to practice combat skills.",
         "decline_text": "You decide to decline the challenge and choose to focus on your individual training instead. There will be other opportunities for friendly sparring.",
         "chance_of_success": 55,
         "success_outcomes": [
             {
                 "text": "You accept the challenge and emerge victorious. Both of you enjoy the match, and your relationship with the other apprentice strengthens.",
-                "exp": 20,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -451,7 +588,7 @@
         "chance_of_success": 65,
         "success_outcomes": [
             {
-                "text": "You agree and keep a careful eye on the playful kits. The queen returns and thanks you for your help, appreciating your kindness and responsibility.",
+                "text": "You agree and keep a careful eye on the playful kits. You manage to entertain them until you're fully tired out. They're cuddled up to your side when the queen returns and thanks you for your help, appreciating your kindness and responsibility.",
                 "exp": 15,
                 "weight": 20
             }
@@ -481,19 +618,40 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "A warrior asks you to join them on nighttime guard duty.",
-        "decline_text": "You decide to decline the vigil and choose to rest instead.",
+        "intro_text": "r_w asks you to join {PRONOUN/r_w/object} on nighttime guard duty. It seems {PRONOUN/r_w/subject} could use some company for the long night ahead",
+        "decline_text": "You decide to decline the duty and choose to rest instead.",
         "chance_of_success": 65,
         "success_outcomes": [
             {
-                "text": "You join the warrior and spend the night listening to their wisdom and experiences while keeping the Clan safe. The shared vigil strengthens your bond and deepens your understanding of the Clan's values.",
-                "exp": 20,
+                "text": "You join r_w and spend the night listening to {PRONOUN/r_w/poss} wisdom and experiences while keeping the Clan safe. The shared time strengthens your bond and deepens your understanding of the Clan's values.",
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "There's still plenty of energy left in you so you happily agree to join {PRONOUN/r_w/object} for the duty. The two of you spend some time talking and bonding, but you hear something unusual. r_w catches on and picks up on it as well from your bristled fur before covering you wth {PRONOUN/r_w/poss} body. An owl! It was swooping for you, but r_w's swipe scares it off. You thank r_w heartily for the save and return to your nest a bit shaken.",
+                "exp": 15,
+                "weight": 10,
+                "stat_trait": [
+                    "flexible",
+                    "responsible",
+                    "methodical",
+                    "calm",
+                    "thoughtful",
+                    "wise",
+                    "nervous",
+                    "careful",
+                    "emotional",
+                    "bouncy",
+                    "energetic",
+                    "trusting",
+                    "faithful"
+                ],
+                "stat_skill": ["CLAIRVOYANT,1", "GUARD,1", "SENSE,1"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You attempt to join the vigil but struggle to stay awake. After a while, the warrior nudges you and urges you to go back to your den.",
+                "text": "You attempt to join r_w but struggle to stay awake. After a while, {PRONOUN/r_w/subject} {VERB/r_w/nudge/nudges} you and urges you to go back to your den.",
                 "exp": 0,
                 "weight": 20
             }
@@ -516,19 +674,47 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You notice a fellow apprentice looking nervous as they approach you. They awkwardly ask if you would share a meal with them.",
+        "intro_text": "You notice r_a looking nervous as {PRONOUN/r_a/subject} {VERB/r_a/approach/approaches} you. {PRONOUN/r_a/subject} awkwardly {VERB/r_a/ask/asks} if you would share a meal with {PRONOUN/r_a/object}.",
         "decline_text": "Feeling too shy, you politely decline the offer.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Despite feeling a little shy, you accept the invitation. Both of you enjoy the meal and share a few laughs, leaving you with a warm feeling.",
+                "text": "Despite feeling a little shy, you accept the invitation. r_a settles in beside you to eat with a smile. Both of you enjoy the meal and share a few laughs, leaving you with a warm feeling.",
                 "exp": 15,
+                "weight": 20,
+                "stat_trait": [
+                    "aloof",
+                    "strange",
+                    "humble",
+                    "emotional",
+                    "compassionate",
+                    "loyal",
+                    "lonesome",
+                    "nervous",
+                    "insecure",
+                    "meek",
+                    "cowardly",
+                    "gloomy",
+                    "flexible",
+                    "grumpy",
+                    "reserved"
+                ],
+                "stat_skill": ["COMFORTER,1", "COOPERATIVE,1", "INSIGHTFUL,1"]
+            },
+            {
+                "text": "r_a looks relieved when you agree. Conversation starts a bit stilted, but you both ease into it and end up bonding over the meal until it's time to retire to your nests.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
                 "text": "You feel a rush of nervousness and end up stuttering a refusal. Later, you regret your reaction but hope to make it up to them.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You're in a hurry and don't have the time to chat over your meal. m_n is waiting for you. r_a nods in understanding, although seems a bit upset after..",
                 "exp": 0,
                 "weight": 20
             }
@@ -686,7 +872,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app1",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -756,7 +942,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app1",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -1001,7 +1187,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app29",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -1036,7 +1222,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app1",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -1071,7 +1257,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app1",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
