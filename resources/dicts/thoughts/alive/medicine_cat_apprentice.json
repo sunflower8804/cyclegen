@@ -320,11 +320,16 @@
     {
         "id": "flamboyant_medicine_cat_apprentice",
         "thoughts": [
-            "Can't seem to get rid of the putrid scent of onions from {PRONOUN/m_c/poss} coat",
-            "Told r_c {PRONOUN/m_c/subject} won't argue with {PRONOUN/r_c/object} as {PRONOUN/r_c/subject} can leave if {PRONOUN/r_c/subject} {VERB/r_c/are/is} just going to refuse the herbs",
-            "Groans as {PRONOUN/m_c/subject} {VERB/m_c/have/has} to collect damp foliage",
-            "Teasingly told r_c {PRONOUN/m_c/subject} can see into {PRONOUN/r_c/poss} future, but will withhold from telling {PRONOUN/r_c/object}",
-            "Tidily reorganizes the herb stock so the den looks pretty"
+            "Proudly claims {PRONOUN/m_c/subject} can see r_c's future yet loudly vows silence.",
+            "Is embellishing the epic tale of how {PRONOUN/m_c/subject} snuck honey from right under a hoard of angry bees",
+            "Is demanding r_c follow {PRONOUN/m_c/object} into the medicine den for a check up for all to witness",
+            "Can distract an unhappy kit with {PRONOUN/m_c/poss} funny antics",
+            "Dramatically mimics a grouchy patient",
+            "Was definitely working diligently to sort herbs and certainly not playing around",
+            "Has the elders wrapped around {PRONOUN/m_c/poss} paw with {PRONOUN/m_c/poss} dramatics",
+            "Winks as {PRONOUN/m_c/subject} {VERB/m_c/sneak/sneaks} some honey into a bitter mixture for a fussy kit",
+            "Proclaims that there is no need to check {PRONOUN/m_c/poss} organization since it's perfect...ly messy",
+            "Whines about an early morning wake up to harvest herbs"
         ],
         "main_trait_constraint": [
             "flamboyant"
