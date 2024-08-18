@@ -286,13 +286,6 @@ class Clan:
                 Cat.all_cats.get(cat_id).status_change('medicine cat apprentice')
             Cat.all_cats.get(cat_id).thoughts()
 
-        if self.clan_age == "established":
-            self.generate_mates()
-            self.generate_families()
-            self.populate_sc()
-            self.populate_ur()
-            self.populate_df()
-
         game.save_cats()
         number_other_clans = randint(3, 5)
         for _ in range(number_other_clans):
@@ -307,6 +300,16 @@ class Clan:
         self.save_clan()
         game.save_clanlist(self.name)
         game.switches["clan_list"] = game.read_clans()
+
+        if self.clan_age == "established":
+            self.generate_mates()
+            self.generate_families()
+            self.populate_sc()
+            self.populate_ur()
+            self.populate_df()
+
+        game.save_cats()
+        self.save_clan()
 
         # CHECK IF CAMP BG IS SET -fail-safe in case it gets set to None-
         if game.switches["camp_bg"] is None:

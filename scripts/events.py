@@ -253,7 +253,7 @@ class Events:
                     ghost_names.append(str(ghost.name))
                 else:
                     continue # keeps encountered DF cats out of death events
-            insert = ""
+            insert = "zero cats"
             if ghost_names:
                 insert = adjust_list_text(ghost_names)
             if insert:
