@@ -1362,7 +1362,7 @@ class ProfileScreen(Screens):
                 tool_tip_text="Leader Ceremony",
                 manager=MANAGER,
             )
-        elif self.the_cat.status in ["mediator", "mediator apprentice"]:
+        elif self.the_cat.status in ["mediator", "mediator apprentice"] and self.the_cat.moons >= 6:
             self.profile_elements["mediation"] = UIImageButton(scale(pygame.Rect(
                 (746, 220), (68, 68))),
                 "",
@@ -1371,7 +1371,7 @@ class ProfileScreen(Screens):
             )
             if self.the_cat.dead or self.the_cat.outside or self.the_cat.shunned > 0:
                 self.profile_elements["mediation"].disable()
-        elif self.the_cat.status in ["queen", "queen's apprentice"]:
+        elif self.the_cat.status in ["queen", "queen's apprentice"] and self.the_cat.moons >= 6:
             self.profile_elements["queen"] = UIImageButton(scale(pygame.Rect(
                 (746, 220), (68, 68))),
                 "",
@@ -1379,7 +1379,7 @@ class ProfileScreen(Screens):
             )
             if self.the_cat.dead or self.the_cat.outside or self.the_cat.shunned > 0:
                 self.profile_elements["queen"].disable()
-        elif self.the_cat.status in ["medicine cat", "medicine cat apprentice"] and self.the_cat.ID == game.clan.your_cat.ID:
+        elif self.the_cat.status in ["medicine cat", "medicine cat apprentice"] and self.the_cat.ID == game.clan.your_cat.ID and self.the_cat.moons >= 6:
             self.profile_elements["halfmoon"] = UIImageButton(scale(pygame.Rect(
                 (746, 220), (68, 68))),
                 "",
@@ -1391,7 +1391,7 @@ class ProfileScreen(Screens):
                 self.profile_elements["halfmoon"].disable()
             elif "attended half-moon" in game.switches and game.switches["attended half-moon"]:
                 self.profile_elements["halfmoon"].disable()
-        elif self.the_cat.status in ["queen's apprentice", "mediator apprentice", "apprentice"] and self.the_cat.ID == game.clan.your_cat.ID:
+        elif self.the_cat.status in ["queen's apprentice", "mediator apprentice", "apprentice"] and self.the_cat.ID == game.clan.your_cat.ID and self.the_cat.moons >= 6:
             if self.the_cat.status == "apprentice":
                 self.profile_elements["halfmoon"] = UIImageButton(scale(pygame.Rect(
                     (746, 220), (68, 68))),
