@@ -28,6 +28,7 @@ class ChooseMateScreen(Screens):
 
     def __init__(self, name=None):
         super().__init__(name)
+        self.fav = {}
         self.next_cat = None
         self.previous_cat = None
         self.next_cat_button = None
@@ -423,6 +424,15 @@ class ChooseMateScreen(Screens):
         pos_y = 0
         i = 0
         for _mate in display_cats:
+            if game.clan.clan_settings["show fav"] and _mate.favourite != 0:
+                self.fav[str(i)] = pygame_gui.elements.UIImage(
+                    scale(pygame.Rect((pos_x, pos_y), (100, 100))),
+                    pygame.transform.scale(
+                        pygame.image.load(
+                            f"resources/images/fav_marker_{_mate.favourite}.png").convert_alpha(),
+                        (100, 100))
+                )
+                self.fav[str(i)].disable()
             self.mates_cat_buttons["cat" + str(i)] = UISpriteButton(
                 scale(pygame.Rect((pos_x, pos_y), (100, 100))),
                 _mate.sprite,
@@ -673,6 +683,10 @@ class ChooseMateScreen(Screens):
         for ele in self.current_cat_elements:
             self.current_cat_elements[ele].kill()
         self.current_cat_elements = {}
+
+        for marker in self.fav:
+            self.fav[marker].kill()
+        self.fav = {}
 
         for ele in self.selected_cat_elements:
             self.selected_cat_elements[ele].kill()
