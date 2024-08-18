@@ -14,6 +14,7 @@ class FamilyTreeScreen(Screens):
 
     def __init__(self, name=None):
         super().__init__(name)
+        self.fav = {}
         self.next_cat = None
         self.previous_cat = None
         self.grandkits_tab = None
@@ -529,6 +530,16 @@ class FamilyTreeScreen(Screens):
                     info_text += "\n"
                     info_text += ", ".join(add_info)
 
+            if game.clan.clan_settings["show fav"] and kitty.favourite != 0:
+                self.fav[str(i)] = pygame_gui.elements.UIImage(
+                    scale(pygame.Rect((649 + pos_x, 970 + pos_y), (100, 100))),
+                    pygame.transform.scale(
+                        pygame.image.load(
+                            f"resources/images/fav_marker_{kitty.favourite}.png").convert_alpha(),
+                        (100, 100))
+                )
+                self.fav[str(i)].disable()
+
             self.relation_elements["cat" + str(i)] = UISpriteButton(
                 scale(pygame.Rect((649 + pos_x, 970 + pos_y), (100, 100))),
                 _kitty.sprite,
@@ -752,6 +763,10 @@ class FamilyTreeScreen(Screens):
         for ele in self.cat_elements:
             self.cat_elements[ele].kill()
         self.cat_elements = {}
+
+        for marker in self.fav:
+            self.fav[marker].kill()
+        self.fav = {}
 
         for ele in self.relation_elements:
             self.relation_elements[ele].kill()
