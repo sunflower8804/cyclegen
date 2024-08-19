@@ -1,11 +1,123 @@
 {
-    "reject": [
-        "g_c turns down your gift with a roll of their eyes."
-    ],
-    "reject_already_have": [
-        "g_c thanks you for the offer, but they already have a [acc]."
-    ],
-    "accept": [
-        "g_c graciously accepts the [acc]."
-    ]
+    "general": {
+        "accept_like": [
+            "t_c loves your gift!"
+        ],
+        "accept_neutral": [
+            "t_c thanks you for your gift."
+        ],
+        "accept_dislike": [
+            "t_c takes your gift with a frown."
+        ],
+        "already_have": [
+            "t_c thanks you, but {PRONOUN/t_c/subject} already {VERB/t_c/have/has} the accessory you've given {PRONOUN/t_c/object}."
+        ],
+        "accept_favourite": [
+            "t_c is overjoyed at your gift!"
+        ]
+    },
+    "assertive": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "brooding": {
+        "accept_like": [
+            "t_c nods and accepts your gift, commending your good taste."
+        ],
+        "accept_neutral": [
+            "t_c isn't sure what to do with this, but {PRONOUN/t_c/subject} can take it off your paws."
+        ],
+        "accept_dislike": [
+            "t_c takes the gift, but {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} look too happy about it..."
+        ],
+        "already_have": [
+            "t_c wonders why you think {PRONOUN/t_c/subject}'d need two of the same thing."
+        ],
+        "accept_favourite": [
+            "t_c accepts your gift, trying poorly to hide the excitement in {PRONOUN/t_c/poss} eyes."
+        ]
+    },
+    "cool": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "upstanding": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "introspective": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "neurotic": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "silly": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "stable": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "sweet": {
+        "accept_like": [],
+        "accept_neutral": [
+            "t_c accepts your gift (y_g) with a polite thank you."
+        ],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "unabashed": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "unlawful": {
+        "accept_like": [],
+        "accept_neutral": [],
+        "accept_dislike": [],
+        "already_have": [],
+        "accept_favourite": []
+    },
+    "unique_gifts": {
+        "STICK": {
+            "accept_dislike": "t_c wonders why you've gifted them such a mundane accessory. Do you think that they are Jayfeather from the elders' tales?"
+        },
+        "LARGE DEATHBERRY": {
+            "accept_like": "t_c takes the accessory with a glint in their eyes. Perhaps this gift can be useful."
+        },
+        "SMALL DEATHBERRY": {
+            "accept_like": "t_c takes the accessory with a glint in their eyes. Perhaps this gift can be useful."
+        },
+        "RAINBOWBOW": {
+            "accept_like": "t_c thanks you and takes the colourful bow with a smile!",
+            "accept_dislike": "t_c eyes you strangely and stuffs the bow under {PRONOUN/t_c/poss} nest before anycat can see it."
+        }
+    }
 }

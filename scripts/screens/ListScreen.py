@@ -217,6 +217,7 @@ class ListScreen(Screens):
 
     def screen_switches(self):
         self.clan_name = game.clan.name + "Clan"
+        self.death_status = "living"
 
         self.set_disabled_menu_buttons(["catlist_screen"])
         self.show_menu_buttons()
@@ -606,9 +607,12 @@ class ListScreen(Screens):
 
         # adding in the guide if necessary, this ensures the guide isn't affected by sorting as we always want them to
         # be the first cat on the list
-        if (self.current_group == "df" and game.clan.instructor.df) or (
-            self.current_group == "sc" and not game.clan.instructor.df
-        ):
+    
+        if self.current_group == "df":
+            if game.clan.demon in self.full_cat_list:
+                self.full_cat_list.remove(game.clan.demon)
+            self.full_cat_list.insert(0, game.clan.demon)
+        elif self.current_group == "sc":
             if game.clan.instructor in self.full_cat_list:
                 self.full_cat_list.remove(game.clan.instructor)
             self.full_cat_list.insert(0, game.clan.instructor)
@@ -746,7 +750,7 @@ class ListScreen(Screens):
         self.current_group = "clan"
         self.death_status = "living"
         self.full_cat_list = [
-            cat for cat in Cat.all_cats_list if not cat.dead and not cat.outside
+            cat for cat in Cat.all_cats_list if not cat.dead and not cat.outside and cat.moons >= 0
         ]
                     
     def get_cotc_cats(self):
@@ -758,53 +762,4 @@ class ListScreen(Screens):
         self.full_cat_list = []
         for the_cat in Cat.all_cats_list:
             if not the_cat.dead and the_cat.outside and not the_cat.driven_out:
-                self.full_cat_list.append(the_cat)
-
-    def get_sc_cats(self):
-        """
-        grabs starclan cats
-        """
-        self.current_group = "sc"
-        self.death_status = "dead"
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if (
-                the_cat.dead
-                and the_cat.ID != game.clan.instructor.ID
-                and not the_cat.outside
-                and not the_cat.df
-                and not the_cat.faded
-            ):
-                self.full_cat_list.append(the_cat)
-
-    def get_df_cats(self):
-        """
-        grabs dark forest cats
-        """
-        self.current_group = "df"
-        self.death_status = "dead"
-        self.full_cat_list = []
-
-        for the_cat in Cat.all_cats_list:
-            if (
-                the_cat.dead
-                and the_cat.ID != game.clan.instructor.ID
-                and the_cat.df
-                and not the_cat.faded
-            ):
-                self.full_cat_list.append(the_cat)
-
-    def get_ur_cats(self):
-        """
-        grabs unknown residence cats
-        """
-        self.current_group = "ur"
-        self.death_status = "dead"
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if (
-                the_cat.ID in game.clan.unknown_cats
-                and not the_cat.faded
-                and not the_cat.driven_out
-            ):
                 self.full_cat_list.append(the_cat)

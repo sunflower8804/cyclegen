@@ -1150,7 +1150,7 @@
     "cool_tomediator": [
         [
             "mediator",
-            "mediator apprentice",
+            "mediator_apprentice",
             "cool"
         ],
         [
@@ -1191,9 +1191,9 @@
     "cool_older": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
-            "mediator apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
+            "mediator_apprentice",
             "cool",
             "platonic_like",
             "they_older"
@@ -2767,7 +2767,7 @@
             "silly",
             "unlawful",
             "trust",
-            "random_cat",
+            
             "you_blind",
             "they_went_blind"
         ],
@@ -2781,8 +2781,8 @@
         [
             "Any",
             "silly",
-            "trust",
-            "random_cat"
+            "trust"
+            
         ],
         [
             "Wanna know something weird I've noticed lately?",
@@ -2797,8 +2797,8 @@
         [
             "Any",
             "silly",
-            "trust",
-            "random_cat"
+            "trust"
+            
         ],
         [
             "Can I tell ya something, y_c? You gotta promise not to tell any other cat. This matter is between us and the porcupine.",
@@ -2931,7 +2931,7 @@
             "Any",
             "silly",
             "you_ill",
-            "random_cat",
+            
             "they_blind"
         ],
         [
@@ -3246,11 +3246,100 @@
         [
             "they_lastinggrief",
             "they_grieving",
-            "Any"
+            "Any",
+            "they_deaf",
+            "you_deaf"
         ],
         [
-            "[t_c has a far off look in their eye.]",
-            "[It's best to leave them alone.]"
+            "[t_c has a far off look in {PRONOUN/t_c/poss} eye.]",
+            "[It's best to leave {PRONOUN/t_c/object} alone.]"
+        ]
+    ],
+    "lastinggrief_H2_J1": [
+        [
+            "they_grieving",
+            "Any",
+            "they_deaf",
+            "you_deaf",
+            "they_shunned"
+        ],
+        [
+            "[t_c has a far off look in {PRONOUN/t_c/poss} eye.]",
+            "[It's best to leave {PRONOUN/t_c/object} alone.]"
+        ]
+    ],
+    "lastinggrief_H2_J2": [
+        [
+            "they_grieving",
+            "Any",
+            "they_deaf",
+            "you_deaf",
+            "you_shunned"
+        ],
+        [
+            "[t_c has a far off look in {PRONOUN/t_c/poss} eye.]",
+            "[It's best to leave {PRONOUN/t_c/object} alone.]"
+        ]
+    ],
+    "lastinggrief_H2_J3": [
+        [
+            "they_grieving",
+            "Any",
+            "they_deaf",
+            "you_deaf",
+            "both_shunned"
+        ],
+        [
+            "[t_c has a far off look in {PRONOUN/t_c/poss} eye.]",
+            "[It's best to leave {PRONOUN/t_c/object} alone.]"
+        ]
+    ],
+    "you_shunned_c": [
+        [
+            "you_shunned",
+            "Any",
+            "from_parent",
+            "from_adopted_parent"
+        ],
+        [
+            "[t_c seems conflicted when you catch {PRONOUN/t_c/poss} eye. {PRONOUN/t_c/subject/CAP} hesitate for a moment.]",
+            "[Then {PRONOUN/t_c/subject} seem to make up {PRONOUN/t_c/poss} mind and rush toward you.]",
+            "I don't care what they say, t_c.",
+            "Despite everything, it's still you. And you'll always be my kit."
+        ]
+    ],
+    "starclan_guide_c": [
+        [
+            "any",
+            "they_sc",
+            "they_guide"
+        ],
+        [
+            "How long have I been here?",
+            "I dont know. Longer than I was alive."
+        ]
+    ],
+    "df_guide_c": [
+        [
+            "any",
+            "they_df",
+            "they_guide"
+        ],
+        [
+            "How long have I been here?",
+            "I dont know. Longer than I was alive."
+        ]
+    ],
+    "df_guide2_c": [
+        [
+            "any",
+            "they_df",
+            "they_guide"
+        ],
+        [
+            "[They say that the spirits of this forest will fade away once everyone's forgotten them.]",
+            "[Yet it's been many, many moons and t_c is still around.]",
+            "[Perhaps they've done something so horrible that they will be forced to walk these dark grounds forever.]"
         ]
     ]
 }

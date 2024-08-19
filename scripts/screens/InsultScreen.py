@@ -7,7 +7,7 @@ from scripts.utility import scale
 
 from .Screens import Screens
 
-from scripts.utility import generate_sprite, get_cluster, get_alive_cats, get_alive_status_cats
+from scripts.utility import generate_sprite, get_cluster, get_alive_cats, get_alive_status_cats, pronoun_repl
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 import pygame_gui
@@ -396,8 +396,8 @@ class InsultScreen(Screens):
         cluster1, cluster2 = get_cluster(cat.personality.trait)
         cluster3, cluster4 = get_cluster(you.personality.trait)
 
-        their_trait_list = ['adventurous', 'aloof', 'ambitious', 'arrogant', 'bloodthirsty', 'bold', 'bouncy', 'calm', 'careful', 'confident', 'competitive', 'cold', 'charismatic', 'cunning', 'cowardly', 'childish', 'compassionate', 'daring', 'emotional', 'energetic', 'fierce', 'flexible', 'faithful', 'flamboyant', 'grumpy', 'gloomy', 'humble', 'insecure', 'justified', 'loyal', 'lonesome', 'loving', 'meek', 'mellow', 'methodical', 'nervous', 'oblivious', 'obsessive', 'playful', 'reserved', 'righteous', 'responsible', 'rebellious', 'strict', 'stoic', 'sneaky', 'strange', 'sincere', 'shameless', 'spontaneous', 'thoughful', 'troublesome', 'trusting', 'vengeful', 'witty', 'wise', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug']
-        you_trait_list = ['you_adventurous', 'you_aloof', 'you_ambitious', 'you_arrogant', 'you_bloodthirsty', 'you_bold', 'you_bouncy', 'you_calm', 'you_careful', 'you_confident', 'you_competitive', 'you_cold', 'you_charismatic', 'you_cunning', 'you_cowardly', 'you_childish', 'you_compassionate', 'you_daring', 'you_emotional', 'you_energetic', 'you_fierce', 'you_flexible', 'you_faithful', 'you_flamboyant', 'you_grumpy', 'you_gloomy', 'you_humble', 'you_insecure', 'you_justified', 'you_loyal', 'you_lonesome', 'you_loving', 'you_meek', 'you_mellow', 'you_methodical', 'you_nervous', 'you_oblivious', 'you_obsessive', 'you_playful', 'you_reserved', 'you_righteous', 'you_responsible', 'you_rebellious', 'you_strict', 'you_stoic', 'you_sneaky', 'you_strange', 'you_sincere', 'you_shameless', 'you_spontaneous', 'you_thoughful', 'you_troublesome', 'you_trusting', 'you_vengeful', 'you_witty', 'you_wise', 'you_impulsive', 'you_bullying', 'you_attention-seeker', 'you_charming', 'you_daring', 'you_noisy', 'you_daydreamer', 'you_sweet', 'you_polite', 'you_know-it-all', 'you_bossy', 'you_disciplined', 'you_patient', 'you_manipulative', 'you_secretive', 'you_rebellious', 'you_passionate', 'you_honest', 'you_leader-like', 'you_smug']
+        their_trait_list = ['adventurous', 'aloof', 'ambitious', 'arrogant', 'bloodthirsty', 'bold', 'bouncy', 'calm', 'careful', 'confident', 'competitive', 'cold', 'charismatic', 'cunning', 'cowardly', 'childish', 'compassionate', 'daring', 'emotional', 'energetic', 'fierce', 'flexible', 'faithful', 'flamboyant', 'grumpy', 'gloomy', 'humble', 'insecure', 'justified', 'loyal', 'lonesome', 'loving', 'meek', 'mellow', 'methodical', 'nervous', 'oblivious', 'obsessive', 'playful', 'reserved', 'righteous', 'responsible', 'rebellious', 'strict', 'stoic', 'sneaky', 'strange', 'sincere', 'shameless', 'spontaneous', 'thoughtful', 'troublesome', 'trusting', 'vengeful', 'witty', 'wise', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug']
+        you_trait_list = ['you_adventurous', 'you_aloof', 'you_ambitious', 'you_arrogant', 'you_bloodthirsty', 'you_bold', 'you_bouncy', 'you_calm', 'you_careful', 'you_confident', 'you_competitive', 'you_cold', 'you_charismatic', 'you_cunning', 'you_cowardly', 'you_childish', 'you_compassionate', 'you_daring', 'you_emotional', 'you_energetic', 'you_fierce', 'you_flexible', 'you_faithful', 'you_flamboyant', 'you_grumpy', 'you_gloomy', 'you_humble', 'you_insecure', 'you_justified', 'you_loyal', 'you_lonesome', 'you_loving', 'you_meek', 'you_mellow', 'you_methodical', 'you_nervous', 'you_oblivious', 'you_obsessive', 'you_playful', 'you_reserved', 'you_righteous', 'you_responsible', 'you_rebellious', 'you_strict', 'you_stoic', 'you_sneaky', 'you_strange', 'you_sincere', 'you_shameless', 'you_spontaneous', 'you_thoughtful', 'you_troublesome', 'you_trusting', 'you_vengeful', 'you_witty', 'you_wise', 'you_impulsive', 'you_bullying', 'you_attention-seeker', 'you_charming', 'you_daring', 'you_noisy', 'you_daydreamer', 'you_sweet', 'you_polite', 'you_know-it-all', 'you_bossy', 'you_disciplined', 'you_patient', 'you_manipulative', 'you_secretive', 'you_rebellious', 'you_passionate', 'you_honest', 'you_leader-like', 'you_smug']
         you_backstory_list = [
             "you_clanfounder",
             "you_clanborn",
@@ -529,23 +529,25 @@ class InsultScreen(Screens):
 
             if "grief stricken" in cat.illnesses:
                 dead_cat = Cat.all_cats.get(cat.illnesses['grief stricken'].get("grief_cat"))
-                if "grievingyou" in tags:
-                    # if not game.clan.your_cat.dead:
-                    #     cat.illnesses.remove('grief stricken')
-                    if dead_cat.name != game.clan.your_cat.name:
-                        continue
-                else:
-                    if dead_cat.name == game.clan.your_cat.name:
-                        continue
+                if dead_cat:
+                    if "grievingyou" in tags:
+                        # if not game.clan.your_cat.dead:
+                        #     cat.illnesses.remove('grief stricken')
+                        if dead_cat.name != game.clan.your_cat.name:
+                            continue
+                    else:
+                        if dead_cat.name == game.clan.your_cat.name:
+                            continue
 
             if "grief stricken" in you.illnesses:
                 dead_cat = Cat.all_cats.get(you.illnesses['grief stricken'].get("grief_cat"))
-                if "grievingthem" in tags:
-                    if dead_cat.name != cat.name:
-                        continue
-                else:
-                    if dead_cat.name == cat.name:
-                        continue
+                if dead_cat:
+                    if "grievingthem" in tags:
+                        if dead_cat.name != cat.name:
+                            continue
+                    else:
+                        if dead_cat.name == cat.name:
+                            continue
             
             # FORGIVEN TAGS
 
@@ -853,35 +855,115 @@ class InsultScreen(Screens):
             if "guilty" in tags and "guilt" not in cat.illnesses:
                 continue
 
-
-
             # PERMANENT CONDITIONS
-            # to be un-commented with the actual permacondition dialogue implementation
+            # the exclusive deaf/blind ones
 
-            # if "deaf" in cat.illnesses and "they_deaf" not in tags:
-            #     continue
-            # if "blind" in cat.illnesses and "they_blind" not in tags:
-            #     continue
-            # if "deaf" in you.illnesses and "you_deaf" not in tags:
-            #     continue
-            # if "blind" in you.illnesses and "you_blind" not in tags:
-            #     continue
-
-            # if "only_they_deaf" in tags and "deaf" not in cat.illnesses:
-            #     continue
-            # if "only_they_blind" in tags and "blind" not in cat.illnesses:
-            #     continue
-            # if "only_you_deaf" in tags and "deaf" not in cat.illnesses:
-            #     continue
-            # if "only_you_blind" in tags and "blind" not in cat.illnesses:
-            #     continue
-
-            if "only_they_deaf" in tags:
-                continue
-            if "only_they_blind" in tags:
+            if "only_they_born_deaf" in tags:
+                if "deaf" not in cat.permanent_condition:
+                    continue
+                if "deaf" in cat.permanent_condition and cat.permanent_condition["deaf"]["born_with"] is False:
+                    continue
+            if "only_they_went_deaf" in tags:
+                if "deaf" not in cat.permanent_condition:
+                    continue
+                if "deaf" in cat.permanent_condition and cat.permanent_condition["deaf"]["born_with"] is True:
+                    continue
+            if "only_they_deaf" in tags and "deaf" not in cat.permanent_condition:
                 continue
 
-            # remove when dialogue is implemented
+            if "only_they_born_blind" in tags:
+                if "blind" not in cat.permanent_condition:
+                    continue
+                if "blind" in cat.illnesses and cat.permanent_condition["blind"]["born_with"] is False:
+                    continue
+
+            if "only_they_went_blind" in tags:
+                if "blind" not in cat.permanent_condition:
+                    continue
+                if "blind" in cat.permanent_condition and cat.permanent_condition["blind"]["born_with"] is True:
+                    continue
+
+            if "only_they_blind" in tags and "blind" not in cat.permanent_condition:
+                continue
+
+            if "only_you_born_deaf" in tags:
+                if "deaf" not in you.permanent_condition:
+                    continue
+                if "deaf" in you.permanent_condition and you.permanent_condition["deaf"]["born_with"] is False:
+                    continue
+            if "only_you_went_deaf" in tags:
+                if "deaf" not in you.permanent_condition:
+                    continue
+                if "deaf" in you.permanent_condition and you.permanent_condition["deaf"]["born_with"] is True:
+                    continue
+            if "only_you_deaf" in tags and "deaf" not in you.permanent_condition:
+                continue
+
+            if "only_you_born_blind" in tags:
+                if "blind" not in you.permanent_condition:
+                    continue
+                if "blind" in you.permanent_condition and you.permanent_condition["blind"]["born_with"] is False:
+                    continue
+            if "only_you_went_blind" in tags:
+                if "blind" not in you.permanent_condition:
+                    continue
+                if "blind" in you.permanent_condition and you.permanent_condition["blind"]["born_with"] is True:
+                    continue
+            if "only_you_blind" in tags and "blind" not in you.permanent_condition:
+                continue
+
+            # non-exclusive deaf/blind
+            if "deaf" in cat.permanent_condition:
+                if cat.permanent_condition["deaf"]["born_with"] is True:
+                    if "they_born_deaf" not in tags and "only_they_born_deaf" not in tags:
+                        if "they_deaf" not in tags:
+                            continue
+                else:
+                    if "they_born_deaf" in tags or "only_they_born_deaf" not in tags:
+                        if "they_deaf" not in tags:
+                            continue
+                if "they_hearing" in tags:
+                    continue
+                # cats who went deaf later in life can get pretty much all normal dialogue, as they're able to talk regularly.
+                # they_hearing is for dialogue that explicitly mentions that t_c can hear, so it can be filtered out for cats who went deaf.
+                # "did you hear that?" "i just heard..." "r_k is so loud!" yanno
+
+            if "deaf" in you.permanent_condition:
+                if you.permanent_condition["deaf"]["born_with"] is True:
+                    if "you_born_deaf" not in tags and "only_you_born_deaf" not in tags:
+                        if "you_deaf" not in tags and "only_you_deaf" not in tags:
+                            continue
+                else:
+                    if "you_born_deaf" in tags or "only_you_born_deaf" in tags:
+                        continue
+                    if "you_went_deaf" not in tags and "only_you_went_deaf" not in tags:
+                        if "you_deaf" not in tags and "only_you_deaf" not in tags:
+                            continue
+            
+            # blind
+            if "blind" in cat.permanent_condition:
+                if cat.permanent_condition["blind"]["born_with"] is True:
+                    if "they_born_blind" not in tags and "only_they_born_blind" not in tags:
+                        if "they_blind" not in tags and "only_they_blind" not in tags:
+                            continue
+                else:
+                    if "they_born_blind" in tags or "only_they_born_blind" in tags:
+                        continue
+                    if "they_went_blind" not in tags and "only_they_went_blind" not in tags:
+                        if "they_blind" not in tags and "only_they_blind" not in tags:
+                            continue
+
+            if "blind" in you.permanent_condition:
+                if you.permanent_condition["blind"]["born_with"] is True:
+                    if "you_born_blind" not in tags and "only_you_born_blind" not in tags:
+                        if "you_blind" not in tags and "only_you_blind" not in tags:
+                            continue
+                else:
+                    if "you_born_blind" in tags or "only_you_born_blind" in tags:
+                        continue
+                    if "you_went_blind" not in tags and "only_you_went_blind" not in tags:
+                        if "you_blind" not in tags and "only_you_blind" not in tags:
+                            continue
 
 
             if "you_allergies" in tags and "allergies" not in you.illnesses:
@@ -1183,7 +1265,7 @@ class InsultScreen(Screens):
     def get_living_cats(self):
         living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside:
+            if not the_cat.dead and not the_cat.outside and not the_cat.moons == -1:
                 living_cats.append(the_cat)
         return living_cats
 

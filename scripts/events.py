@@ -27,7 +27,7 @@ from scripts.events_module.outsider_events import OutsiderEvents
 from scripts.event_class import Single_Event
 from scripts.game_structure.game_essentials import game
 from scripts.cat_relations.relationship import Relationship
-from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, ceremony_text_adjust, get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat, pronoun_repl, get_alive_status_cats, get_alive_cats
+from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, ceremony_text_adjust, get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat, pronoun_repl, get_alive_status_cats, get_alive_cats, get_cats_same_age
 from scripts.events_module.generate_events import GenerateEvents
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.history import History
@@ -306,10 +306,12 @@ class Events:
                             severity="minor",
                         )
 
-                        if len(shaken_cats) == 1:
-                            extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
-                        else:
-                            extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
+                    insert = adjust_list_text(shaken_cat_names)
+
+                    if len(shaken_cats) == 1:
+                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
+                    else:
+                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
 
                 else:
                     event = f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their " \
@@ -396,7 +398,7 @@ class Events:
                     f"{game.clan.name}Clan does not have enough healthy medicine cats! Cats will be sick/hurt "
                     f"for longer and have a higher chance of dying. "
                 )
-                game.cur_events_list.insert(0, Single_Event(string, "health"))
+                game.cur_events_list.insert(0, Single_Event(string, ["health", "alert"]))
         else:
             has_med = any(
                 str(cat.status) in {"medicine cat", "medicine cat apprentice"}
@@ -406,7 +408,7 @@ class Events:
             )
             if not has_med:
                 string = f"{game.clan.name}Clan has no medicine cat!"
-                game.cur_events_list.insert(0, Single_Event(string, "health"))
+                game.cur_events_list.insert(0, Single_Event(string, ["health", "alert"]))
 
         # Clear the list of cats that died this moon.
         game.just_died.clear()
@@ -534,6 +536,7 @@ class Events:
                 game.cur_events_list.append(Single_Event(self.adjust_txt(random.choice(dialogue_focuses[game.clan.focus]["focus_loss"])), "misc"))
             game.clan.focus = ""
             game.clan.focus_moons = 0
+            game.clan.focus_cat = None
             
         if not game.clan.focus:
             if game.clan.war.get("at_war"):
@@ -788,12 +791,14 @@ class Events:
                 adoptive_parents = []
                 if birth_type == BirthType.NO_PARENTS:
                     thought = "Is glad that their kits are safe"
-                    parent1 = create_new_cat(Cat, Relationship,
+                    parent1 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
                                                 age=random.randint(15,120),
                                                 outside=True)[0]
+                    parent1.backstory = random.choice(["refugee2", "refugee3", "refugee4"])
                     
                 elif birth_type == BirthType.ONE_PARENT:
                     parent1 = pick_valid_parent()
@@ -814,13 +819,16 @@ class Events:
                     adoptive_parent1 = pick_valid_parent()
                     adoptive_parents = [adoptive_parent1.ID]
                     thought = "Is glad that their kits are safe"
-                    parent1 = create_new_cat(Cat, Relationship,
+                    parent1 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
                                                 age=random.randint(15,120),
                                                 outside=True)[0]
-                    parent2 = create_new_cat(Cat, Relationship,
+                    parent1.backstory = random.choice(["refugee2", "refugee3", "refugee4"])
+                    parent2 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
@@ -830,8 +838,11 @@ class Events:
                         if parent1.gender == parent2.gender:
                             if parent1.gender == "female":
                                 parent1.gender = "male"
+                                parent1.genderalign = "male"
                             else:
                                 parent1.gender = "female"
+                                parent1.genderalign = "female"
+                    parent2.backstory = random.choice(["refugee2", "refugee3", "refugee4"])
                 
 
                 elif birth_type == BirthType.TWO_ADOPTIVE_PARENTS:
@@ -846,14 +857,17 @@ class Events:
                                 break
                     adoptive_parent1.set_mate(adoptive_parent2)
                     adoptive_parents = [adoptive_parent1.ID, adoptive_parent2.ID]
-                    thought = f"Is glad that their kits are safe"
-                    parent1 = create_new_cat(Cat, Relationship,
+                    thought = "Is glad that their kits are safe"
+                    parent1 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
                                                 age=random.randint(15,120),
                                                 outside=True)[0]
-                    parent2 = create_new_cat(Cat, Relationship,
+                    parent1.backstory = random.choice(["refugee2", "refugee3", "refugee4"])
+                    parent2 = create_new_cat(Cat,
+                                                loner=True,
                                                 status=random.choice(["loner", "kittypet"]),
                                                 alive=False,
                                                 thought=thought,
@@ -863,11 +877,14 @@ class Events:
                         if parent1.gender == parent2.gender:
                             if parent1.gender == "female":
                                 parent1.gender = "male"
+                                parent1.genderalign = "male"
                             else:
                                 parent1.gender = "female"
+                                parent1.genderalign = "female"
+                    parent2.backstory = random.choice(["refugee2", "refugee3", "refugee4"])
 
                 elif birth_type == BirthType.ONE_OUTSIDER_PARENT:
-                    parent1 = create_new_cat(Cat, Relationship,
+                    parent1 = create_new_cat(Cat,
                                                 status="warrior",
                                                 alive=True,
                                                 age=random.randint(15,120),
@@ -875,13 +892,13 @@ class Events:
                     parent1.backstory = random.choice(["loner1", "loner2", "loner4", "kittypet1", "kittypet2", "kittypet3", "kittypet4", "kittypet6", "rogue1", "rogue2", "rogue3", "rogue5", "rogue8", "refugee2", "refugee3", "refugee4"])
 
                 elif birth_type == BirthType.TWO_OUTSIDER_PARENTS:
-                    parent1 = create_new_cat(Cat, Relationship,
+                    parent1 = create_new_cat(Cat,
                                                 status="warrior",
                                                 alive=True,
                                                 age=random.randint(15,120),
                                                 outside=False)[0]
                     parent1.backstory = random.choice(["loner1", "loner2", "loner4", "kittypet1", "kittypet2", "kittypet3", "kittypet4", "kittypet6", "rogue1", "rogue2", "rogue3", "rogue5", "rogue8", "refugee2", "refugee3", "refugee4"])
-                    parent2 = create_new_cat(Cat, Relationship,
+                    parent2 = create_new_cat(Cat,
                                                 status="warrior",
                                                 alive=True,
                                                 age=parent1.moons + random.randint(1,5),
@@ -987,7 +1004,7 @@ class Events:
                     if birth_txt:
                         break
             
-            game.cur_events_list.append(Single_Event(birth_txt))
+            game.cur_events_list.append(Single_Event(birth_txt, ["alert", "birth_death"]))
 
         birth_type, parent1, parent2, adoptive_parents = get_parents(birth_type)
         siblings = create_siblings(parent1, parent2, adoptive_parents) if random.randint(1,4) != 1 else []
@@ -1025,7 +1042,7 @@ class Events:
     def get_living_cats(self):
         living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside:
+            if not the_cat.dead and not the_cat.outside and not the_cat.moons == -1:
                 living_cats.append(the_cat)
         return living_cats
 
@@ -3149,6 +3166,17 @@ class Events:
             # Get all the ceremonies for the role ----------------------------------------
             possible_ceremonies.update(self.ceremony_id_by_tag[promoted_to])
 
+            # remove the shunned and forgiven ceremonies if they dont apply
+            if cat.shunned == 0:
+                for ceremony_id in possible_ceremonies.copy():
+                    if "shunned" in ceremony_id:
+                        possible_ceremonies.remove(ceremony_id)
+
+            if cat.forgiven == 0:
+                for ceremony_id in possible_ceremonies.copy():
+                    if "forgiven" in ceremony_id:
+                        possible_ceremonies.remove(ceremony_id)
+
             if cat.shunned > 0:
                 possible_ceremonies = possible_ceremonies.intersection(self.ceremony_id_by_tag["shunned"])
             
@@ -4318,7 +4346,7 @@ class Events:
                             # No additional involved cats
                         else:
                             if game.clan.deputy:
-                                if game.clan.deputy.outside or game.clan.deputy.dead:
+                                if game.clan.deputy.shunned == 0:
                                     previous_deputy_mention = random.choice([
                                         f"They know that {game.clan.deputy.name} would approve.",
                                         f"They hope that {game.clan.deputy.name} would approve.",
@@ -4330,7 +4358,11 @@ class Events:
                                     
                                 involved_cats.append(game.clan.deputy.ID)
 
-                                if game.clan.deputy.outside or game.clan.deputy.dead:
+                            else:
+                                previous_deputy_mention = ""
+
+                            if game.clan.deputy:
+                                if game.clan.deputy.shunned == 0:
                                     text = f"{game.clan.leader.name} chooses " \
                                         f"{random_cat.name} to take over " \
                                         f"as deputy. " + previous_deputy_mention
@@ -4338,12 +4370,10 @@ class Events:
                                     text = previous_deputy_mention + f" {game.clan.leader.name} chooses " \
                                         f"{random_cat.name} to take over " \
                                         f"as deputy."
-
-                            text = (
-                                f"{game.clan.leader.name} chooses "
-                                f"{random_cat.name} to take over "
-                                f"as deputy. " + previous_deputy_mention
-                            )
+                            else:
+                                text = f"{game.clan.leader.name} chooses " \
+                                        f"{random_cat.name} to take over " \
+                                        f"as deputy. " + previous_deputy_mention
 
                             involved_cats.append(game.clan.leader.ID)
                     elif leader_status == "not_here" and deputy_status == "here":
@@ -4421,7 +4451,7 @@ class Events:
 
             else:
                 game.cur_events_list.insert(
-                    0, Single_Event(f"{game.clan.name}Clan has no deputy!")
+                    0, Single_Event(f"{game.clan.name}Clan has no deputy!", "alert")
                 )
 
 

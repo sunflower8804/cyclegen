@@ -81,7 +81,7 @@
     ],
     "assertivewarrior_mediatorapp01": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "mediator",
             "assertive",
             "unabashed"
@@ -107,7 +107,7 @@
     ],
     "assertivewarrior_mediatorapp3": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "mediator",
             "assertive",
             "silly",
@@ -384,7 +384,7 @@
     "assertive_tomedapp33": [
         [
             "mediator",
-            "mediator apprentice",
+            "mediator_apprentice",
             "assertive",
             "neutral"
         ],
@@ -466,7 +466,7 @@
     ],
     "assertivewarrior_mediatorapp": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "assertive",
             "they_older",
             "they_blind",
@@ -585,9 +585,9 @@
     "assertive_warrior_or_elder_1": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "platonic_like",
             "assertive",
             "sweet",
@@ -607,9 +607,9 @@
     "assertive_warrior_or_elder1": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "assertive",
             "cool",
             "silly",
@@ -624,7 +624,7 @@
     ],
     "assertive_mediatorapp3": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "assertive",
             "unabashed",
             "brooding",
@@ -787,7 +787,7 @@
     "assertive_love4": [
         [
             "mediator",
-            "mediator apprentice",
+            "mediator_apprentice",
             "assertive",
             "platonic_love"
         ],
@@ -1027,9 +1027,9 @@
     "assertive_mentor10": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "assertive",
             "silly",
             "from_mentor",
@@ -1045,9 +1045,9 @@
     ],
     "assertive_parent": [
         [
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "dislike",
             "assertive",
             "brooding",
@@ -1844,7 +1844,7 @@
     "introspective_to _mdtor": [
         [
             "Mediator",
-            "Mediator apprentice",
+            "mediator_apprentice",
             "Introspective",
             "Dislike",
             "Jealousy",
@@ -1860,8 +1860,8 @@
     ],
     "introspective_to_Med": [
         [
-            "Medicine Cat",
-            "Medicine Cat Apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "Introspective",
             "you_blind",
             "platonic_like"
@@ -2009,7 +2009,8 @@
             "introspective",
             "leaffall",
             "platonic_like",
-            "random_cat"
+            "they_queen"
+            
         ],
         [
             "Good morning, y_c. It's lovely to see you.",
@@ -2048,7 +2049,7 @@
     ],
     "introspective_to_MedApp": [
         [
-            "Medicine Cat Apprentice",
+            "medicine_cat_apprentice",
             "Introspective",
             "they_blind",
             "you_blind"
@@ -2536,7 +2537,7 @@
     ],
     "introspective_mate2": [
         [
-            "medicine cat",
+            "medicine_cat",
             "Introspective",
             "from_mate",
             "you_blind"
@@ -2965,7 +2966,7 @@
 	"brooding",
 	"stable",
 	"max_platonic_15",
-	"random_cat",	
+		
 	"you_blind",
 	"they_blind"
         ],
@@ -2978,14 +2979,14 @@
         [
             "apprentice",
 	"mediator's apprentice",
-	"queen's apprentice",
-	"medicine cat apprentice",
+	"queen's_apprentice",
+	"medicine_cat_apprentice",
             "upstanding",
 	"assertive",
 	"brooding",
 	"stable",
 	"max_platonic_10",
-	"random_cat",
+	
 	"they_blind",
 	"you_blind"
         ],
@@ -3032,7 +3033,7 @@
             "cool",
 	    "upstanding",
 	    "from_mate",
-	    "random_cat",
+	    
 	    "they_blind",
 	    "you_blind"
         ],
@@ -3104,9 +3105,9 @@
     "broodingadult_toappx": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "brooding",
             "platonic_like",
             "they_older",
@@ -3195,7 +3196,7 @@
 	[
 		"[t_c is trying to push {PRONOUN/t_c/self} to {PRONOUN/t_c/poss} paws, legs trembling like weak, spindly sticks underneath {PRONOUN/t_c/object}.]",
 		"I can walk ... Don't need help ... AH --",
-		"[{PRONOUN/t_c/poss/CAP} legs collapse, sending {PRONOUN/t_c/poss} slamming back into their nest as an exasperated r_m rushes over to help {PRONOUN/t_c/object}.]"
+		"[{PRONOUN/t_c/poss/CAP} legs collapse, sending {PRONOUN/t_c/object} slamming back into {PRONOUN/t_c/poss} nest as an exasperated r_m rushes over to help {PRONOUN/t_c/object}.]"
 	]
 	],
 
@@ -3521,7 +3522,7 @@
     "sweet_3": [
         [
             "queen",
-            "queen's apprentice",
+            "queen's_apprentice",
             "sweet",
             "you_blind"
         ],
@@ -4271,7 +4272,7 @@
         [
             "no_kit",
             "cool",
-	"random_cat",
+	
 	"they_grieving",
 	"neutral",
 	"dead_close"
@@ -4517,9 +4518,9 @@
     "sweetgrief_yougrief7": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "sweet",
             "from_parent",
             "you_grieving",
@@ -4560,9 +4561,9 @@
     "sweetgrief_yougrief10": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "sweet",
             "from_mentor",
             "you_grieving",
@@ -5047,8 +5048,8 @@
     ],
     "silly_theyinjured_2": [
         [
-            "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "silly",
             "they_injured",
             "they_blind"
@@ -5097,8 +5098,8 @@
     "upstanding_they_injured": [
         [
             "upstanding",
-            "medicine cat",
-            "medicine cat apprentice",
+            "medicine_cat",
+            "medicine_cat_apprentice",
             "they_ill",
             "they_injured"
         ],
@@ -5367,7 +5368,7 @@
     ],
     "introspective_mate_2": [
         [
-            "medicine cat",
+            "medicine_cat",
             "Introspective",
             "from_mate"
         ],
@@ -5847,7 +5848,7 @@
     ],
     "broodingapp_toqueenapp11": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "queen",
             "brooding",
             "platonic_like",
@@ -5909,7 +5910,7 @@
 	],
     "broodingapp_toqueenapp12": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "brooding",
             "they_blind"
         ],
@@ -5921,7 +5922,7 @@
     ],
     "broodingapp_toqueenapp13": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "queen",
             "brooding",
             "comfort",
@@ -5938,7 +5939,7 @@
     ],
     "broodingapp_toqueenapp1": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "mediator",
             "brooding",
             "they_blind"
@@ -5954,7 +5955,7 @@
     ],
     "broodingapp_toqueenapp2": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "mediator",
             "brooding",
             "unabashed",
@@ -5968,7 +5969,7 @@
     ],
     "broodingapp_toqueenapp3": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "mediator",
             "brooding",
             "they_blind"
@@ -5981,7 +5982,7 @@
     ],
     "brooding_tomediator": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "mediator",
             "brooding",
             "dislike",
@@ -5995,7 +5996,7 @@
     ],
 	"brooding_tomedapp1_AJ": [
 	[
-		"medicine cat apprentice",
+		"medicine_cat_apprentice",
 		"brooding",
 		"they_warrior",
 		"they_apprentice",
@@ -6206,8 +6207,8 @@
 
     "brooding_tomedapp5": [
         [
-            "medicine cat apprentice",
-            "medicine cat",
+            "medicine_cat_apprentice",
+            "medicine_cat",
             "brooding",
             "unabashed",
             "introspective",
@@ -6253,8 +6254,8 @@
 
     "brooding_tomedapp4": [
         [
-            "medicine cat apprentice",
-            "medicine cat",
+            "medicine_cat_apprentice",
+            "medicine_cat",
             "brooding",
             "upstanding",
             "romantic_like",
@@ -6270,8 +6271,8 @@
     ],
     "brooding_tomedapp3": [
         [
-            "medicine cat apprentice",
-            "medicine cat",
+            "medicine_cat_apprentice",
+            "medicine_cat",
             "brooding",
             "neutral"
         ],
@@ -6284,8 +6285,8 @@
     ],
     "brooding_tomedapp2": [
         [
-            "medicine cat apprentice",
-            "medicine cat",
+            "medicine_cat_apprentice",
+            "medicine_cat",
             "brooding",
             "they_blind"
         ],
@@ -6298,8 +6299,8 @@
     ],
     "brooding_tomedapp1": [
         [
-            "medicine cat apprentice",
-            "medicine cat",
+            "medicine_cat_apprentice",
+            "medicine_cat",
             "brooding",
             "unlawful",
             "they_blind"
@@ -6738,9 +6739,9 @@
         [
             "upstanding",
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "romantic_like",
             "non-mates"
         ],
@@ -6899,9 +6900,9 @@
     "sweet_expecting_10": [
         [
             "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "from_parent",
             "they_pregnant",
             "sweet",
@@ -7759,8 +7760,8 @@
     ],
     "brooding_tomedapp51": [
         [
-            "medicine cat apprentice",
-            "medicine cat",
+            "medicine_cat_apprentice",
+            "medicine_cat",
             "brooding",
             "they_grieving",
             "dead_close",
@@ -8075,7 +8076,7 @@
         [
             "[You're chatting with neutral_r_c when t_c races up to you, huge grin on {PRONOUN/t_c/poss} face.]",
             "y_c, where have you been? I've been waiting for ages to tell you what happened to me today - oh.",
-            "[As soon as t_c sees neutral_r_c, {PRONOUN/t_c/subject} {VERB/t_c/stop/stops} talking and {VERB/t_c/hand/hands} total control of the conversation over to r_c.]",
+            "[As soon as t_c sees neutral_r_c, {PRONOUN/t_c/subject} {VERB/t_c/stop/stops} talking and {VERB/t_c/hand/hands} total control of the conversation over to {PRONOUN/neutral_r_c/object}.]",
             "[The most {PRONOUN/t_c/subject} {VERB/t_c/contribute/contributes} to the conversation are a few polite nods and grunts.]",
             "[As soon as neutral_r_c leaves, the light wicks back into t_c's eyes and a huge smile takes back over {PRONOUN/t_c/poss} face.]",
             "[It seems like knowing this version of {PRONOUN/t_c/object} is a privilege that isn't reserved for all your Clanmates.]"
@@ -9054,8 +9055,9 @@
         [
             "[You shuffle inside the den, your nose poking through the entrance. You see t_c curled up in a nest, {PRONOUN/t_c/poss} breathing is choppy and {PRONOUN/t_c/poss} nose is scrunched up.]",
             "[It pains you to see {PRONOUN/t_c/object} like this... You move inside swiftly and rest beside {PRONOUN/t_c/object}, your tail curling around {PRONOUN/t_c/object}.]",
-            "Hmm... y_c, is that you?...........Love, you shouldn't be here........... [t_c's eyes are still shut as {PRONOUN/t_c/subject} {VERB/t_c/whisper/whispers}.]",
-            "[You hold them tighter and watch as {PRONOUN/t_c/subject} {VERB/t_c/smile/smiles}.]",
+            "Hmm... y_c, is that you? Love, you shouldn't be here...",
+	    "[t_c's eyes are still shut as {PRONOUN/t_c/subject} {VERB/t_c/whisper/whispers}.]",
+            "[You hold {PRONOUN/t_c/object} tighter and watch as {PRONOUN/t_c/subject} {VERB/t_c/smile/smiles}.]",
             "... Okay... I love you, y_c... You can stay here, even if it's only for a little while..."
         ]
     ],
@@ -9074,7 +9076,7 @@
         [
             "Love, darling- y_c, please, please honey calm down- it's not that bad... Really, I'm in good paws, though I do appreciate your concern, I assure you, I'm fi-",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/wince/winces} and shutter slightly, you move to catch {PRONOUN/t_c/object}.]",
-            "Oh Love, what would I do without you?"
+            "Oh, love, what would I do without you?"
         ]
     ],
     "stable_mate_8": [
@@ -9161,7 +9163,7 @@
             "silly"
         ],
         [
-            "[You sit happily in the sun in the clearing, you watch as cats go about their day. t_c sits beside you, following your line of sight. {PRONOUN/t_c/subject/CAP} {VERB/t_c/chickle/chuckles} to {PRONOUN/t_c/self} as {PRONOUN/t_c/subject} {VERB/t_c/point/points} to a group of kittens playing across the clearing.]",
+            "[You sit happily in the sun in the clearing, you watch as cats go about their day. t_c sits beside you, following your line of sight. {PRONOUN/t_c/subject/CAP} {VERB/t_c/chuckle/chuckles} to {PRONOUN/t_c/self} as {PRONOUN/t_c/subject} {VERB/t_c/point/points} to a group of kittens playing across the clearing.]",
             "Who knew they could be so cute when they weren't bugging me. Kittens, they're strange aren't they, love? I can see us with our own some day actually...",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/begin/begins} to blush madly and you try to hide your laughter as t_c abruptly gets up and shuffles away. You bounce to your paws and chase after {PRONOUN/t_c/object}.]",
             "y_c! No! Please I didn't mean it like that! Someone help meeeee!!!!"
@@ -9322,9 +9324,9 @@
     "genparent_toapp": [
         [
             "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "from_parent",
             "adopted_parent"
         ],
@@ -9337,9 +9339,9 @@
     "genparent_toapp1": [
         [
             "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "from_parent",
             "they_blind"
         ],
@@ -9352,9 +9354,9 @@
     "genparent_toapp2": [
         [
             "apprentice",
-            "queen's apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
             "from_parent",
             "they_blind"
         ],
@@ -9393,9 +9395,9 @@
     "genparent_toadult01": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
-            "mediator apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
+            "mediator_apprentice",
             "from_parent",
             "adopted_parent"
         ],
@@ -10899,7 +10901,7 @@
             "leader",
             "deputy",
             "warrior",
-            "medicine cat",
+            "medicine_cat",
             "platonic_like",
             "romantic_like",
             "they_blind"
@@ -11253,9 +11255,9 @@
     "silly_mentor_grown": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "silly",
             "from_mentor"
         ],
@@ -11267,9 +11269,9 @@
     "silly_mentor_practice": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "silly",
             "from_mentor",
             "they_blind"
@@ -11283,9 +11285,9 @@
     "silly_mentor_perfect": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "silly",
             "from_mentor",
             "they_blind"
@@ -11316,9 +11318,9 @@
     "silly_mentor_drama": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "silly",
             "from_mentor"
         ],
@@ -11331,8 +11333,8 @@
     ],
     "silly_mentor_cobwebs": [
         [
-            "queen's apprentice",
-            "medicine cat apprentice",
+            "queen's_apprentice",
+            "medicine_cat_apprentice",
             "silly",
             "from_mentor",
             "they_blind"
@@ -11347,11 +11349,11 @@
     "silly_parent_spikednest": [
         [
             "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
             "warrior",
-            "medicine cat",
+            "medicine_cat",
             "mediator",
             "queen",
             "silly",
@@ -12260,7 +12262,7 @@
     ],
     "unlawful_gen7": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "mediator",
             "unlawful"
         ],
@@ -12613,7 +12615,7 @@
             "you_blind"
         ],
         [
-            "[You watch as t_c flicks {PRONOUN/t_c/poss} tail behind {PRONOUN/t_c/object}, swatting at the bugs that infest {PRONOUN/t_c/poss} nest]!",
+            "[You watch as t_c flicks {PRONOUN/t_c/poss} tail behind {PRONOUN/t_c/object}, swatting at the bugs that infest {PRONOUN/t_c/poss} nest.]",
             "SHOO! GO AWAY! YOU WILL BOTHER ME NO MORE! I SHAN'T HAVE IT! THERE WILL BE NO BUGS HITHER!",
             "[A small fly buzzes up from the nest and lands softly onto t_c's nose. {PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses} for a second and {VERB/t_c/stare/stares} at it, {PRONOUN/t_c/poss} brows begin to crease in a furious rage. {PRONOUN/t_c/subject/CAP} {VERB/t_c/swipe/swipes} at it and {VERB/t_c/leap/leaps} into the air!]",
             "NOOOOO! LEAVE ME ALONE YOU BACKBONE SHELL! STARCLAN GIVE ME PEACE!"
@@ -12633,9 +12635,9 @@
     "genparent_toadult02": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice",
-            "mediator apprentice",
+            "medicine_cat_apprentice",
+            "queen's_apprentice",
+            "mediator_apprentice",
             "from_parent",
             "adopted_parent"
         ],
@@ -12712,9 +12714,9 @@
             "[You're about to slink back to your nest, defeated, when you overhear {PRONOUN/t_c/object} talking with plike_r_c across camp.]",
             "{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} sloppy and green. Too hard on {PRONOUN/t_c/self} ... No one's gonna take {PRONOUN/t_c/object} seriously.",
             "That's how my mentor described me as an apprentice. I hope y_c never has to feel that way.",
-            "The kid is coming into {PRONOUN/y_c/object} own so fast ... I can barely keep up.",
+            "The kid is coming into {PRONOUN/y_c/poss} own so fast ... I can barely keep up.",
             "A smart little cat, that one is.",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} and {VERB/t_c/shake/shakes} {PRONOUN/t_c/object} head, forcing you to dart out of earshot before {PRONOUN/t_c/subject} can catch you eavesdropping.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} and {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head, forcing you to dart out of earshot before {PRONOUN/t_c/subject} can catch you eavesdropping.]"
         ]
     ],
 	"brooding_mentorAJ": [
@@ -12726,7 +12728,8 @@
 		"brooding",
 		"platonic_like",
 		"they_older",
-		"random_cat"
+        "from_mentor"
+		
 	],
 	[
 		"y_c. I know it's not easy being young.",
@@ -12945,7 +12948,7 @@
             "No_kit",
             "warrior",
             "apprentice",
-            "medicine cat",
+            "medicine_cat",
             "mediator",
             "queen",
             "elder",
@@ -13484,9 +13487,9 @@
     "stable_shunned_you_Apprentice_02": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "you_shunned",
             "stable",
             "introspective",
@@ -13505,9 +13508,9 @@
     "stable_shunned_you_Apprentice_03": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "you_shunned",
             "stable",
             "unabashed",
@@ -13525,9 +13528,9 @@
     "stable_shunned_you_Apprentice_04": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "sweet",
             "introspective",
             "you_shunned",
@@ -13547,9 +13550,9 @@
     "stable_shunned_you_Apprentice_05": [
         [
             "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "you_shunned",
             "stable",
             "introspective",
@@ -13567,7 +13570,7 @@
     ],
     "stable_shunned_you_Apprentice_MedicineCat_01": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "you_shunned",
             "stable",
             "neurotic",
@@ -13585,7 +13588,7 @@
     ],
     "stable_shunned_you_Apprentice_MedicineCat_03": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "you_shunned",
             "stable",
             "brooding",
@@ -13599,7 +13602,7 @@
     ],
     "stable_shunned_you_Apprentice_MedicineCat_05": [
         [
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "you_shunned",
             "stable",
             "they_blind",
@@ -13612,7 +13615,7 @@
     ],
     "stable_shunned_you_Apprentice_Mediator_01": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "you_shunned",
             "stable",
             "they_blind",
@@ -13655,7 +13658,7 @@
     ],
     "stable_shunned_you_Apprentice_Mediator_04": [
         [
-            "mediator apprentice",
+            "mediator_apprentice",
             "you_shunned",
             "stable",
             "they_blind",
@@ -13670,7 +13673,7 @@
     "stable_shunned_you_Apprentice_Mediator_05": [
         [
             "any",
-            "mediator apprentice",
+            "mediator_apprentice",
             "you_shunned",
             "stable",
             "you_blind"
@@ -13683,7 +13686,7 @@
     ],
     "stable_shunned_you_Apprentice_Queen_01": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "you_shunned",
             "stable",
             "they_hearing"
@@ -13700,7 +13703,7 @@
     ],
     "stable_shunned_you_Apprentice_Queen_02": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "you_shunned",
             "stable",
             "introspective",
@@ -13718,7 +13721,7 @@
     ],
     "stable_shunned_you_Apprentice_Queen_03": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "you_shunned",
             "stable",
             "dislike"
@@ -13736,7 +13739,7 @@
     ],
     "stable_shunned_you_Apprentice_Queen_04": [
         [
-            "queen's apprentice",
+            "queen's_apprentice",
             "you_shunned",
             "stable",
             "silly",
@@ -13861,7 +13864,7 @@
     ],
     "stable_shunned_you_MedicineCat_01": [
         [
-            "medicine cat",
+            "medicine_cat",
             "you_shunned",
             "stable",
             "introspective",
@@ -13875,7 +13878,7 @@
     ],
     "stable_shunned_you_MedicineCat_02": [
         [
-            "medicine cat",
+            "medicine_cat",
             "you_shunned",
             "stable",
             "introspective",
@@ -13891,7 +13894,7 @@
     ],
     "stable_shunned_you_MedicineCat_03": [
         [
-            "medicine cat",
+            "medicine_cat",
             "you_shunned",
             "stable",
             "unlawful",
@@ -13907,7 +13910,7 @@
     ],
     "stable_shunned_you_MedicineCat_04": [
         [
-            "medicine cat",
+            "medicine_cat",
             "you_shunned",
             "stable",
             "neurotic",
@@ -13924,7 +13927,7 @@
     ],
     "stable_shunned_you_MedicineCat_05": [
         [
-            "medicine cat",
+            "medicine_cat",
             "you_shunned",
             "they_blind",
             "you_blind"
@@ -15408,10 +15411,10 @@
         [
             "they_df",
             "you_shunned",
-            "medicine cat apprentice",
+            "medicine_cat_apprentice",
             "apprentice",
-            "mediator apprentice",
-            "queen's apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
             "they_older"
         ],
         [
@@ -18800,7 +18803,7 @@
     ],
     "mate_unlawfulGuy1": [
         [
-            "mate",
+            "from_mate",
             "you_warrior",
             "unlawful"
         ],
@@ -19179,7 +19182,7 @@
 		"Any",
 		"assertive",
 		"upstanding",
-		"random_cat",
+		
 		"non-related"
 	],
 	[
@@ -19195,7 +19198,7 @@
 		"Any",
 		"assertive",
 		"upstanding",
-		"random_cat",
+		
 		"non-related"
 	],
 	[
@@ -19212,7 +19215,7 @@
 		"Any",
 		"assertive",
 		"upstanding",
-		"random_cat",
+		
 		"from_mate"
 	],
 	[
@@ -19248,7 +19251,7 @@
         [
             "[It's near midnight. The camp is silent, save for a few snores coming from the warriors' den. Still, you notice t_c sitting at the edge of camp, gazing at the star-speckled sky. Your ears prick as {PRONOUN/t_c/subject} shakily {VERB/t_c/whisper/whispers} upwards.]",
             "d_c? Are... are you there? Can you hear me?",
-            "[{PRONOUN/t_c/subject/CAPP} {VERB/t_c/take/takes} a quivering breath.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/take/takes} a quivering breath.]",
             "Could you give me some kind of sign, so I can at least pretend you're with me?",
             "You know I can't do this without you. I... I'm not brave enough alone."
         ]
@@ -19539,7 +19542,7 @@
         [
             "you_deputy",
             "silly",
-            "random_cat",
+            
             "romantic_like"
         ],
         [
@@ -19646,7 +19649,7 @@
             "silly",
             "newleaf",
             "platonic_love",
-            "random_cat",
+            
             "you_blind"
         ],
         [
@@ -19794,7 +19797,7 @@
         ],
         [
             "[t_c huffs and heaves in {PRONOUN/t_c/poss} nest.]",
-            "[<i>Maybe</i> it's not the best idea to make conversation. You should leave before r_m scolds you for disrupting one of {PRONOUN/r_m/poss} patients.]"
+            "[Maybe it's not the best idea to make conversation. You should leave before r_m scolds you for disrupting one of {PRONOUN/r_m/poss} patients.]"
         ]
     ],
     "yourecovering_H4": [
@@ -20250,7 +20253,7 @@
         ],
         [
             "[You're sleeping peacefully in your nest when a trickle of air wakes you.]",
-            "[The familiar sensation has you lift your head with a small start, blinking at seeing an amused t_c. {PRONOUN/t_c/subject/CAP} smiles softly at you.]",
+            "[The familiar sensation has you lift your head with a small start, blinking at seeing an amused t_c. {PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} softly at you.]",
             "[The vibration of {PRONOUN/t_c/poss} purr is soothing, and you bunt your head against {PRONOUN/t_c/object} with a smile of your own.]",
             "[What a nice way to wake up!]"
         ]

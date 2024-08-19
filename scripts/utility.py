@@ -401,7 +401,7 @@ def create_new_cat_block(
             break
 
         # Set same as first mate
-        if match.group(1) == "mate" and give_mates:
+        if match.group(1) in ["mate", "mate_with_kits"] and give_mates:
             age = randint(Cat.age_moons[give_mates[0].age][0],
                           Cat.age_moons[give_mates[0].age][1])
             break
@@ -479,13 +479,21 @@ def create_new_cat_block(
             status = "kitten"
 
     # CHOOSE DEFAULT BACKSTORY BASED ON CAT TYPE, STATUS
-    if status in ("kitten", "newborn"):
-        chosen_backstory = choice(BACKSTORIES["backstory_categories"]["abandoned_backstories"])
-    elif status == "medicine cat" and cat_type == "former Clancat":
-        chosen_backstory = choice(["medicine_cat", "disgraced1"])
-    elif status == "medicine cat":
-        chosen_backstory = choice(["wandering_healer1", "wandering_healer2"])
+    if "newdfcat" in attribute_list:
+        if "oldstarclan" in attribute_list:
+                chosen_backstory = choice(["oldstarclan1", "oldstarclan2", "oldstarclan3"])
+        else:
+            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["df_backstories"])
+    elif "newstarcat" in attribute_list:
+        chosen_backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
     else:
+        if status in ("kitten", "newborn"):
+            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["abandoned_backstories"])
+        if status == "medicine cat":
+            if cat_type == "former Clancat":
+                chosen_backstory = choice(["medicine_cat", "disgraced1"])
+            else:
+                chosen_backstory = choice(["wandering_healer1", "wandering_healer2"])
         if cat_type == "former Clancat":
             x = "former_clancat"
         else:
@@ -1666,7 +1674,7 @@ def get_leader_life_notice() -> str:
     if lives > 0:
         text = f"The leader has {int(lives)} lives left."
     elif lives <= 0:
-        if game.clan.instructor.df is False:
+        if game.clan.followingsc:
             text = 'The leader has no lives left and has travelled to StarClan.'
         else:
             text = 'The leader has no lives left and has travelled to the Dark Forest.'
@@ -2624,6 +2632,8 @@ def generate_sprite(
             new_sprite.blit(sprites.sprites["lines" + cat_sprite], (0, 0))
         elif cat.df:
             new_sprite.blit(sprites.sprites["lineartdf" + cat_sprite], (0, 0))
+        elif cat.dead and cat.outside:
+            new_sprite.blit(sprites.sprites["lineartur" + cat_sprite], (0, 0))
         elif dead:
             new_sprite.blit(sprites.sprites["lineartdead" + cat_sprite], (0, 0))
         # draw skin and scars2

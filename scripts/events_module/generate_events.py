@@ -709,6 +709,9 @@ class GenerateEvents:
                 if discard:
                     continue
 
+            # if event.sub_type and "murder_reveal" in event.sub_type:
+            #     print("MURDER REVEAL", event)
+
             final_events.append(event)
 
         for notice in incorrect_format:

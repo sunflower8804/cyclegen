@@ -31,6 +31,7 @@ class MurderScreen(Screens):
 
     def __init__(self, name=None):
         super().__init__(name)
+        self.fav = {}
         self.list_page = None
         self.next_cat = None
         self.previous_cat = None
@@ -203,6 +204,10 @@ class MurderScreen(Screens):
             self.cat_list_buttons[ele].kill()
         self.cat_list_buttons = {}
 
+        for marker in self.fav:
+            self.fav[marker].kill()
+        self.fav = {}
+
         for ele in self.apprentice_details:
             self.apprentice_details[ele].kill()
         self.apprentice_details = {}
@@ -326,8 +331,8 @@ class MurderScreen(Screens):
         discover_chance = self.get_discover_chance(you, cat_to_murder, accomplice, accompliced)
         r_num = randint(1,100)
 
-        # discover_chance = 2
-        # r_num = 1
+        discover_chance = 2
+        r_num = 3
         # debug ^^
 
         discovered = False
@@ -357,6 +362,8 @@ class MurderScreen(Screens):
                 History.add_murders(cat_to_murder, you, True, f"{you.name} murdered this cat.")
             self.choose_discover_punishment(you, cat_to_murder, accomplice, accompliced)
         else:
+            game.clan.focus = "unknown_murder"
+            game.clan.focus_cat = cat_to_murder
             if accomplice:
                 if accompliced:
                     History.add_death(cat_to_murder, f"{you.name} and {accomplice.name} murdered this cat.")
@@ -809,10 +816,23 @@ class MurderScreen(Screens):
             self.cat_list_buttons[ele].kill()
         self.cat_list_buttons = {}
 
+        for marker in self.fav:
+            self.fav[marker].kill()
+        self.fav = {}
+
         pos_x = 0
         pos_y = 40
         i = 0
         for cat in display_cats:
+            if game.clan.clan_settings["show fav"] and cat.favourite != 0:
+                self.fav[str(i)] = pygame_gui.elements.UIImage(
+                    scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
+                    pygame.transform.scale(
+                        pygame.image.load(
+                            f"resources/images/fav_marker_{cat.favourite}.png").convert_alpha(),
+                        (100, 100))
+                )
+                self.fav[str(i)].disable()
             self.cat_list_buttons["cat" + str(i)] = UISpriteButton(
                 scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
                 cat.sprite, cat_object=cat, manager=MANAGER)
@@ -853,10 +873,23 @@ class MurderScreen(Screens):
             self.cat_list_buttons[ele].kill()
         self.cat_list_buttons = {}
 
+        for marker in self.fav:
+            self.fav[marker].kill()
+        self.fav = {}
+
         pos_x = 0
         pos_y = 40
         i = 0
         for cat in display_cats:
+            if game.clan.clan_settings["show fav"] and cat.favourite != 0:
+                self.fav[str(i)] = pygame_gui.elements.UIImage(
+                    scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
+                    pygame.transform.scale(
+                        pygame.image.load(
+                            f"resources/images/fav_marker_{cat.favourite}.png").convert_alpha(),
+                        (100, 100))
+                )
+                self.fav[str(i)].disable()
             self.cat_list_buttons["cat" + str(i)] = UISpriteButton(
                 scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
                 cat.sprite, cat_object=cat, manager=MANAGER)

@@ -383,10 +383,10 @@ class SpriteInspectScreen(Screens):
         )
 
         # "Show accessories"
-        if self.the_cat.pelt.accessories or self.the_cat.pelt.accessory:
-            self.make_one_checkbox(
-                (1000, 1150), "acc_shown", self.acc_shown, self.the_cat.pelt.accessory
-            )
+        # if self.the_cat.pelt.accessories or self.the_cat.pelt.accessory:
+        self.make_one_checkbox(
+            (1000, 1150), "acc_shown", self.acc_shown, self.the_cat.pelt.accessories
+        )
             
         # "Show as living"
         self.make_one_checkbox(
@@ -472,7 +472,7 @@ class SpriteInspectScreen(Screens):
         if (
             self.the_cat.dead
             and not is_instructor
-            and self.the_cat.df == game.clan.instructor.df
+            and self.the_cat.df != game.clan.followingsc
             and not (self.the_cat.outside or self.the_cat.exiled)
         ):
             previous_cat = game.clan.instructor.ID

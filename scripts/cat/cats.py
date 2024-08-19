@@ -586,7 +586,7 @@ class Cat:
 
         # Deal with leader death
         text = ""
-        darkforest = game.clan.instructor.df
+        darkforest = True if game.clan.followingsc is False else False
         isoutside = self.outside
         if self.status == 'leader':
             if game.clan.leader_lives > 0:
@@ -2726,10 +2726,7 @@ class Cat:
         """
 
         try:
-            if game.clan is not None:
-                first_cousin_mates = game.clan.clan_settings["first cousin mates"]
-            else:
-                print("NoneType Clan for is_potential_mate()")
+            first_cousin_mates = game.clan.clan_settings["first cousin mates"]
         except:
             if "unittest" not in sys.modules:
                 raise
@@ -4092,14 +4089,14 @@ class Personality:
             possible_traits.append(trait)
 
         if possible_traits:
-            for i in range(5):
-                new_trait = choice(possible_traits)
-                new_trait_cluster1, new_trait_cluster2 = get_cluster(new_trait)
-                trait_cluster1, trait_cluster2 = get_cluster(self.trait)
-                if any(cluster in [trait_cluster1, trait_cluster2] for cluster in [new_trait_cluster1, new_trait_cluster2]):
-                    break
-                else:
-                    new_trait = choice(possible_traits)
+            # for i in range(5):
+            new_trait = choice(possible_traits)
+                # new_trait_cluster1, new_trait_cluster2 = get_cluster(new_trait)
+                # trait_cluster1, trait_cluster2 = get_cluster(self.trait)
+                # if any(cluster in [trait_cluster1, trait_cluster2] for cluster in [new_trait_cluster1, new_trait_cluster2]):
+                #     break
+                # else:
+                #     new_trait = choice(possible_traits)
             self.trait = new_trait
         else:
             print("No possible traits! Using 'strange'")
