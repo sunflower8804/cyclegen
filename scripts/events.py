@@ -27,7 +27,7 @@ from scripts.events_module.outsider_events import OutsiderEvents
 from scripts.event_class import Single_Event
 from scripts.game_structure.game_essentials import game
 from scripts.cat_relations.relationship import Relationship
-from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, ceremony_text_adjust, get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat, pronoun_repl, get_alive_status_cats, get_alive_cats, get_cats_same_age
+from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, ceremony_text_adjust, get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat, pronoun_repl, get_alive_status_cats, get_alive_cats, get_cats_same_age, adjust_txt
 from scripts.events_module.generate_events import GenerateEvents
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.history import History
@@ -533,7 +533,7 @@ class Events:
         # Handle lost focus for focuses that have set duration
         if game.clan.focus and dialogue_focuses[game.clan.focus]["duration"] != -1 and game.clan.focus_moons >= dialogue_focuses[game.clan.focus]["duration"]:
             if "focus_loss" in dialogue_focuses[game.clan.focus]:
-                game.cur_events_list.append(Single_Event(self.adjust_txt(random.choice(dialogue_focuses[game.clan.focus]["focus_loss"])), "misc"))
+                game.cur_events_list.append(Single_Event(self.process_text(random.choice(dialogue_focuses[game.clan.focus]["focus_loss"])), "misc"))
             game.clan.focus = ""
             game.clan.focus_moons = 0
             game.clan.focus_cat = None
@@ -554,7 +554,7 @@ class Events:
         if game.clan.focus:
             game.clan.focus_moons += 1
             if game.clan.focus_moons == 1 and dialogue_focuses[game.clan.focus]["moon_event"]:
-                game.cur_events_list.append(Single_Event(self.adjust_txt(random.choice(dialogue_focuses[game.clan.focus]["moon_event"])), "misc"))
+                game.cur_events_list.append(Single_Event(self.process_text(random.choice(dialogue_focuses[game.clan.focus]["moon_event"])), "misc"))
 
                 
     def gain_acc(self):
@@ -984,7 +984,7 @@ class Events:
                 process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
             birth_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), birth_txt)
 
-            birth_txt = self.adjust_txt(birth_txt)
+            birth_txt = self.process_text(birth_txt)
 
             for key, value in replacements.items():
                 birth_txt = birth_txt.replace(key, str(value))
@@ -1000,7 +1000,7 @@ class Events:
                     birth_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), birth_txt)
                     for key, value in replacements.items():
                         birth_txt = birth_txt.replace(key, str(value))
-                    birth_txt = self.adjust_txt(birth_txt)
+                    birth_txt = self.process_text(birth_txt)
                     if birth_txt:
                         break
             
@@ -1046,9 +1046,9 @@ class Events:
                 living_cats.append(the_cat)
         return living_cats
 
-    def adjust_txt(self, text):
+    def process_text(self, text):
         self.cat_dict.clear()
-        text = self.adjust_abbrevs(text)
+        text = adjust_txt(Cat, text, game.clan.your_cat, self.cat_dict)
 
         process_text_dict = self.cat_dict.copy()
         for abbrev in process_text_dict.keys():
@@ -1336,10 +1336,10 @@ class Events:
         for i in range(random.randint(0,5)):
             if possible_events:
                 event = random.choice(possible_events)
-                current_event = self.adjust_txt(event)
+                current_event = self.process_text(event)
                 while current_event == "":
                     event = random.choice(possible_events)
-                    current_event = self.adjust_txt(event)
+                    current_event = self.process_text(event)
                 current_event = Single_Event(current_event)
                 if event not in self.current_events:
                     self.current_events.append(event)
@@ -1688,7 +1688,7 @@ class Events:
             
     def generate_df_events(self):
         if random.randint(1,3) == 1:
-            evt = self.adjust_txt(random.choice(self.df_txt["general"]))
+            evt = self.process_text(random.choice(self.df_txt["general"]))
             if evt:
                 evt = Single_Event(evt)
                 if evt not in game.cur_events_list:
