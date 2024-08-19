@@ -805,12 +805,12 @@ class GiftScreen(Screens):
         self.cat_sprite = str(cat.pelt.cat_sprites[cat.age])
 
         # setting the cat_sprite (bc this makes things much easier)
-        if cat.not_working() and age != 'newborn' and game.config['cat_sprites']['sick_sprites']:
-            if age in ['kitten', 'adolescent']:
-                self.cat_sprite = str(19)
-            else:
-                self.cat_sprite = str(18)
-        elif cat.pelt.paralyzed and age != 'newborn':
+        # if cat.not_working() and age != 'newborn' and game.config['cat_sprites']['sick_sprites']:
+        #     if age in ['kitten', 'adolescent']:
+        #         self.cat_sprite = str(19)
+        #     else:
+        #         self.cat_sprite = str(18)
+        if cat.pelt.paralyzed and age != 'newborn':
             if age in ['kitten', 'adolescent']:
                 self.cat_sprite = str(17)
             else:
