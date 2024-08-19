@@ -301,16 +301,6 @@ class Clan:
         game.save_clanlist(self.name)
         game.switches["clan_list"] = game.read_clans()
 
-        # this must be done after saving the first time!
-        if self.clan_age == "established":
-            self.generate_mates()
-            self.generate_families()
-            self.populate_sc()
-            self.populate_ur()
-            self.populate_df()
-        game.save_cats()
-        self.save_clan()
-
         # this has to be done after saving the first time
         # doing this without any previous clans will cause a crash otherwise
         if self.clan_age == "established":
