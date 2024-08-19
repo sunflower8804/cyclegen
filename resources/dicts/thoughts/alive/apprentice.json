@@ -463,18 +463,19 @@
     {
         "id": "flamboyant_warrior_apprentice",
         "thoughts": [
-            "Isn't keen on getting {PRONOUN/m_c/poss} coat dirty just after shining it",
-            "Is extravagant in {PRONOUN/m_c/poss} fighting style",
             "Would rather show off flashy and impractical moves than actually train",
-            "Is hunting a prey {PRONOUN/m_c/subject} don't have to struggle for",
-            "Is adamant {PRONOUN/m_c/poss} problems is everycats' problem",
             "Offering insight to the other apprentices",
-            "Gifted r_c a present, a gesture of goodwill and not at all for praise",
-            "Dotted r_c's coat with alluring flowers and trinkets",
-            "Surprisingly complimented r_c's coat",
             "Wants to look {PRONOUN/m_c/poss} absolute best before going out",
             "Isn't bashful being {PRONOUN/m_c/self}",
-            "Has the most eccentric appearance"
+            "Has the most stylish appearance",
+            "Admires r_c's knowledge and skills and begs to be taught by {PRONOUN/m_c/object}",
+            "Pretends to dramatically die when training",
+            "Embellishes the tale of a boring patrol into an epic adventure",
+            "Happily directs a few other cats into a game disguised as training",
+            "Is showing off {PRONOUN/m_c/poss} amazing impression of a fox during training",
+            "Flaunts how many birdcalls {PRONOUN/m_c/subject} can do",
+            "Loudly boasts about how much they believe in r_c's abilities",
+            "Is so distracted skylarking about while hunting that {PRONOUN/m_c/subject} {VERB/m_c/miss/misses} {PRONOUN/m_c/poss} prey"
         ],
         "main_trait_constraint": [
             "flamboyant"
