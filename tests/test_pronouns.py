@@ -126,7 +126,10 @@ def test():
         "r_c_stable": _r,
         "r_w_assertive": _r,
         "r_c_assertive": _r,
-        "fc_c": _r
+        "fc_c": _r,
+        "v_c": _r,
+        "l_c": _r,
+        "e_c": _r
     }
     
     cluster_addons = [
