@@ -150,7 +150,7 @@ class MurderScreen(Screens):
             elif event.ui_element == self.confirm_mentor and self.selected_cat:
                 r = randint(1,100)
                 accompliced = False
-                chance = self.get_accomplice_chance(game.clan.your_cat, self.selected_cat)
+                chance = self.get_accomplice_chance(game.clan.your_cat, self.selected_cat, self.cat_to_murder)
                 if game.config["accomplice_chance"] != -1:
                     try:
                         chance = game.config["accomplice_chance"]
@@ -2608,8 +2608,9 @@ class MurderScreen(Screens):
                 if self.stage == "choose accomplice":
                     a_text = ""
                     chance = self.get_kill(game.clan.your_cat, self.cat_to_murder, accomplice=self.selected_cat, accompliced=False)
-                    risk_chance = self.get_risk_chance(self.cat_to_murder, accomplice=self.selected_cat, accompliced=False)
-                    discover_chance = self.get_discover_chance(self.cat_to_murder, accomplice=self.selected_cat, accompliced=None)
+
+                    chance = self.get_accomplice_chance(game.clan.your_cat, self.selected_cat, self.cat_to_murder)
+                    
                     if game.config["accomplice_chance"] != -1:
                         try:
                             chance = game.config["accomplice_chance"]
@@ -2625,6 +2626,8 @@ class MurderScreen(Screens):
                         a_text = "high"
                     else:
                         a_text = "very high"
+
+                    print("ACCOMP CHANCE:", a_text)
                     if game.settings['dark mode']:
                         self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
                                                                                                 scale(pygame.Rect((1145, 610),
@@ -2704,28 +2707,37 @@ class MurderScreen(Screens):
             self.confirm_mentor.disable()
             
 
-    def get_accomplice_chance(self, you, accomplice):
+    def get_accomplice_chance(self, you, accomplice, cat_to_murder):
         chance = 10
-        if accomplice.relationships[you.ID].platonic_like > 10:
-            chance += 10
-        if accomplice.relationships[you.ID].dislike < 10:
-            chance += 10
-        if accomplice.relationships[you.ID].romantic_love > 10:
-            chance += 10
-        if accomplice.relationships[you.ID].comfortable > 10:
-            chance += 10
-        if accomplice.relationships[you.ID].trust > 10:
-            chance += 10
-        if accomplice.relationships[you.ID].admiration > 10:
-            chance += 10
-        if you.status in ['medicine cat', 'mediator', 'deputy', 'leader']:
-            chance += 10
-        if accomplice.status in ['medicine cat', 'mediator', 'deputy', 'leader']:
-            chance -= 20
-        if accomplice.ID in game.clan.your_cat.mate:
-            chance += 50
-        if game.clan.your_cat.is_related(accomplice, False):
-            chance += 30
+        if accomplice is not None:
+            if accomplice.relationships[you.ID].platonic_like > 10:
+                chance += 10
+            if accomplice.relationships[you.ID].dislike < 10:
+                chance += 10
+            if accomplice.relationships[you.ID].romantic_love > 10:
+                chance += 10
+            if accomplice.relationships[you.ID].comfortable > 10:
+                chance += 10
+            if accomplice.relationships[you.ID].trust > 10:
+                chance += 10
+            if accomplice.relationships[you.ID].admiration > 10:
+                chance += 10
+            if you.status in ['medicine cat', 'mediator', 'deputy', 'leader']:
+                chance += 10
+            if accomplice.status in ['medicine cat', 'mediator', 'deputy', 'leader']:
+                chance -= 20
+            if accomplice.ID in game.clan.your_cat.mate:
+                chance += 50
+            if game.clan.your_cat.is_related(accomplice, False):
+                chance += 30
+
+            #relationship to the victim
+            # TODO: make these chances better lol
+            if cat_to_murder.ID in accomplice.relationships:
+                chance += accomplice.relationships[self.cat_to_murder.ID].dislike / 2
+                chance -= accomplice.relationships[self.cat_to_murder.ID].platonic_like
+                chance -= accomplice.relationships[self.cat_to_murder.ID].romantic_love
+
         return chance
                     
     def update_selected_cat2(self):
