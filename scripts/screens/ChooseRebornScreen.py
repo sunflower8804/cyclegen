@@ -226,6 +226,13 @@ class ChooseRebornScreen(Screens):
         self.exit_screen()
         game.cur_events_list.clear()
         game.clan.your_cat = new_mentor
+
+        # resetting talked_to so the new MC can talk to a cat
+        # the old one previously talked to in the same moon
+        for cat in Cat.all_cats_list:
+            if cat.talked_to is True:
+                cat.talked_to = False
+
         game.switches["attended half-moon"] = False
         if game.clan.your_cat.status not in ['newborn', 'kitten', 'apprentice', 'medicine cat apprentice', 'mediator apprentice', "queen's apprentice"]:
             game.clan.your_cat.w_done = True
