@@ -1003,6 +1003,7 @@ class Events:
                     birth_txt = self.process_text(birth_txt)
                     if birth_txt:
                         break
+
             
             game.cur_events_list.append(Single_Event(birth_txt, ["alert", "birth_death"]))
 
@@ -1056,6 +1057,12 @@ class Events:
             process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
 
         text = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), text)
+
+        text = text.replace("c_n", str(game.clan.name))
+        if "w_c" in text:
+            if game.clan.war.get("at_war", True):
+                text = text.replace("w_c", str(game.clan.war["enemy"]))
+
         return text
 
     def adjust_abbrevs(self, text):
