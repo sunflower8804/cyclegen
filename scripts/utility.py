@@ -1706,50 +1706,32 @@ def pronoun_repl(m, cat_pronouns_dict, raise_exception=False):
         return m.group(0)
 
     inner_details = m.group(1).split("/")
-    # print("INNER DETAILS", inner_details)
 
-    d = cat_pronouns_dict[inner_details[1]][1]
-    if inner_details[0].upper() == "PRONOUN":
-        pro = d[inner_details[2]]
-        if inner_details[-1] == "CAP":
-            pro = pro.capitalize()
-        return pro
-    elif inner_details[0].upper() == "VERB":
-        return inner_details[d["conju"] + 1]
+    try:
+        d = cat_pronouns_dict[inner_details[1]][1]
+        if inner_details[0].upper() == "PRONOUN":
+            pro = d[inner_details[2]]
+            if inner_details[-1] == "CAP":
+                pro = pro.capitalize()
+            return pro
+        elif inner_details[0].upper() == "VERB":
+            return inner_details[d["conju"] + 1]
 
-    if raise_exception:
-        raise KeyError(
-            f"Pronoun tag: {m.group(1)} is not properly"
-            "indicated as a PRONOUN or VERB tag."
-        )
+        if raise_exception:
+            raise KeyError(
+                f"Pronoun tag: {m.group(1)} is not properly"
+                "indicated as a PRONOUN or VERB tag."
+            )
 
-    print("Failed to find pronoun:", m.group(1))
-    return "error1"
-    # try:
-    #     d = cat_pronouns_dict[inner_details[1]][1]
-    #     if inner_details[0].upper() == "PRONOUN":
-    #         pro = d[inner_details[2]]
-    #         if inner_details[-1] == "CAP":
-    #             pro = pro.capitalize()
-    #         return pro
-    #     elif inner_details[0].upper() == "VERB":
-    #         return inner_details[d["conju"] + 1]
+        print("Failed to find pronoun:", m.group(1))
+        return "error1"
+    except (KeyError, IndexError) as e:
+        if raise_exception:
+            raise
 
-    #     if raise_exception:
-    #         raise KeyError(
-    #             f"Pronoun tag: {m.group(1)} is not properly"
-    #             "indicated as a PRONOUN or VERB tag."
-    #         )
-
-    #     print("Failed to find pronoun:", m.group(1))
-    #     return "error1"
-    # except (KeyError, IndexError) as e:
-    #     if raise_exception:
-    #         raise
-
-    #     logger.exception("Failed to find pronoun: " + m.group(1))
-    #     print("Failed to find pronoun:", m.group(1))
-    #     return "error2"
+        logger.exception("Failed to find pronoun: " + m.group(1))
+        print("Failed to find pronoun:", m.group(1))
+        return "error2"
 
 
 def name_repl(m, cat_dict):
