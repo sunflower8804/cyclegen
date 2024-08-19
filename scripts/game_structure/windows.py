@@ -247,7 +247,6 @@ class SaveCheck(UIWindow):
             object_id="#text_box_30_horizcenter",
             container=self,
         )
-
         self.save_button = UIImageButton(
             scale(pygame.Rect((186, 230), (228, 60))),
             "",
@@ -739,7 +738,7 @@ class PronounCreation(UIWindow):
         # Add UITextBox for the sample text to the sub-container
         self.sample_text_box = pygame_gui.elements.UITextBox(
             self.get_sample_text(self.the_cat.pronouns[0]),
-            scale(pygame.Rect((18, 120), (394, 556))),
+            scale(pygame.Rect((18, 120), (394, 340))),
             object_id="#text_box_30_horizcenter",
             manager=MANAGER,
             container=self.demo_container,
@@ -756,7 +755,7 @@ class PronounCreation(UIWindow):
         # Adjusted positions for labels
         self.box_labels["subject"] = pygame_gui.elements.UITextBox(
             "Subject",
-            scale(pygame.Rect((175, 230), (200, 60))),
+            scale(pygame.Rect((175, 220), (200, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -764,7 +763,7 @@ class PronounCreation(UIWindow):
 
         self.box_labels["object"] = pygame_gui.elements.UITextBox(
             "Object",
-            scale(pygame.Rect((425, 230), (200, 60))),
+            scale(pygame.Rect((425, 220), (200, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -772,15 +771,15 @@ class PronounCreation(UIWindow):
 
         self.box_labels["poss"] = pygame_gui.elements.UITextBox(
             "Possessive",
-            scale(pygame.Rect((50, 410), (200, 60))),
+            scale(pygame.Rect((50, 340), (200, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
         )
 
         self.box_labels["inposs"] = pygame_gui.elements.UITextBox(
-            "Independent<br>Possessive",
-            scale(pygame.Rect((250, 370), (300, 120))),
+            "Ind. Possessive",
+            scale(pygame.Rect((250, 340), (300, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -788,21 +787,38 @@ class PronounCreation(UIWindow):
 
         self.box_labels["self"] = pygame_gui.elements.UITextBox(
             "Reflexive",
-            scale(pygame.Rect((550, 410), (200, 60))),
+            scale(pygame.Rect((550, 340), (200, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
         )
+        
+        self.box_labels["parent"] = pygame_gui.elements.UITextBox(
+            "Parent",
+            scale(pygame.Rect((175, 460), (200, 60))),
+            object_id="#text_box_30_horizcenter_spacing_95",
+            manager=MANAGER,
+            container=self,
+        )
+
+        self.box_labels["sibling"] = pygame_gui.elements.UITextBox(
+            "Sibling",
+            scale(pygame.Rect((425, 460), (200, 60))),
+            object_id="#text_box_30_horizcenter_spacing_95",
+            manager=MANAGER,
+            container=self,
+        )
+
         self.checkbox_label["singular_label"] = pygame_gui.elements.UITextBox(
             "Singular",
-            scale(pygame.Rect((255, 570), (200, 60))),
+            scale(pygame.Rect((255, 580), (200, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
         )
         self.checkbox_label["plural_label"] = pygame_gui.elements.UITextBox(
             "Plural",
-            scale(pygame.Rect((470, 570), (200, 60))),
+            scale(pygame.Rect((470, 580), (200, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -810,14 +826,14 @@ class PronounCreation(UIWindow):
 
         # Row 1
         self.boxes["subject"] = pygame_gui.elements.UITextEntryLine(
-            scale(pygame.Rect((180, 290), (200, 60))),
+            scale(pygame.Rect((180, 280), (200, 60))),
             placeholder_text=self.the_cat.pronouns[0]["subject"],
             manager=MANAGER,
             container=self,
         )
 
         self.boxes["object"] = pygame_gui.elements.UITextEntryLine(
-            scale(pygame.Rect((430, 290), (200, 60))),
+            scale(pygame.Rect((430, 280), (200, 60))),
             placeholder_text=self.the_cat.pronouns[0]["object"],
             manager=MANAGER,
             container=self,
@@ -825,22 +841,36 @@ class PronounCreation(UIWindow):
 
         # Row 2
         self.boxes["poss"] = pygame_gui.elements.UITextEntryLine(
-            scale(pygame.Rect((50, 470), (200, 60))),
+            scale(pygame.Rect((50, 400), (200, 60))),
             placeholder_text=self.the_cat.pronouns[0]["poss"],
             manager=MANAGER,
             container=self,
         )
 
         self.boxes["inposs"] = pygame_gui.elements.UITextEntryLine(
-            scale(pygame.Rect((300, 470), (200, 60))),
+            scale(pygame.Rect((300, 400), (200, 60))),
             placeholder_text=self.the_cat.pronouns[0]["inposs"],
             manager=MANAGER,
             container=self,
         )
 
         self.boxes["self"] = pygame_gui.elements.UITextEntryLine(
-            scale(pygame.Rect((550, 470), (200, 60))),
+            scale(pygame.Rect((550, 400), (200, 60))),
             placeholder_text=self.the_cat.pronouns[0]["self"],
+            manager=MANAGER,
+            container=self,
+        )
+
+        self.boxes["parent"] = pygame_gui.elements.UITextEntryLine(
+            scale(pygame.Rect((180, 520), (200, 60))),
+            placeholder_text=self.the_cat.pronouns[0]["parent"],
+            manager=MANAGER,
+            container=self,
+        )
+
+        self.boxes["sibling"] = pygame_gui.elements.UITextEntryLine(
+            scale(pygame.Rect((430, 520), (200, 60))),
+            placeholder_text=self.the_cat.pronouns[0]["sibling"],
             manager=MANAGER,
             container=self,
         )
@@ -866,7 +896,7 @@ class PronounCreation(UIWindow):
         )
         # Creating Checkmarks
         self.buttons["singular_unchecked"] = UIImageButton(
-            scale(pygame.Rect((225, 570), (68, 68))),
+            scale(pygame.Rect((225, 580), (68, 68))),
             "",
             object_id="#unchecked_checkbox",
             starting_height=2,
@@ -875,7 +905,7 @@ class PronounCreation(UIWindow):
             container=self,
         )
         self.buttons["singular_checked"] = UIImageButton(
-            scale(pygame.Rect((225, 570), (68, 68))),
+            scale(pygame.Rect((225, 580), (68, 68))),
             "",
             object_id="#checked_checkbox",
             starting_height=2,
@@ -885,7 +915,7 @@ class PronounCreation(UIWindow):
         )
 
         self.buttons["plural_unchecked"] = UIImageButton(
-            scale(pygame.Rect((455, 570), (68, 68))),
+            scale(pygame.Rect((455, 580), (68, 68))),
             "",
             object_id="#unchecked_checkbox",
             starting_height=2,
@@ -894,7 +924,7 @@ class PronounCreation(UIWindow):
             container=self,
         )
         self.buttons["plural_checked"] = UIImageButton(
-            scale(pygame.Rect((455, 570), (68, 68))),
+            scale(pygame.Rect((455, 580), (68, 68))),
             "",
             object_id="#checked_checkbox",
             starting_height=2,
@@ -931,6 +961,8 @@ class PronounCreation(UIWindow):
             "inposs": "",
             "self": "",
             "conju": 1,
+            "parent": "",
+            "sibling": ""
         }
 
         if sub(r"[^A-Za-z0-9 ]+", "", self.boxes["subject"].get_text()) != "":
@@ -953,6 +985,14 @@ class PronounCreation(UIWindow):
             pronoun_template["self"] = sub(
                 r"[^A-Za-z0-9 ]+", "", self.boxes["self"].get_text()
             )
+        if sub(r"[^A-Za-z0-9 ]+", "", self.boxes["parent"].get_text()) != "":
+            pronoun_template["parent"] = sub(
+                r"[^A-Za-z0-9 ]+", "", self.boxes["parent"].get_text()
+            )
+        if sub(r"[^A-Za-z0-9 ]+", "", self.boxes["sibling"].get_text()) != "":
+            pronoun_template["sibling"] = sub(
+                r"[^A-Za-z0-9 ]+", "", self.boxes["sibling"].get_text()
+            )
         if self.conju == 2:
             pronoun_template["conju"] = 2
         # if save button or add to cat is pressed, set 'name' as a counting number thing as an invisible identifier
@@ -973,6 +1013,8 @@ class PronounCreation(UIWindow):
         values.append(self.is_box_full(self.boxes["poss"]))
         values.append(self.is_box_full(self.boxes["inposs"]))
         values.append(self.is_box_full(self.boxes["self"]))
+        values.append(self.is_box_full(self.boxes["parent"]))
+        values.append(self.is_box_full(self.boxes["sibling"]))
         for value in values:
             if value is False:
                 return False
@@ -989,6 +1031,7 @@ class PronounCreation(UIWindow):
                 self.kill()
             elif event.ui_element == self.buttons["save_pronouns"]:
                 if self.are_boxes_full():
+                    print("SAVED")
                     new_pronouns = self.get_new_pronouns()
                     game.clan.custom_pronouns.append(new_pronouns)
                     self.pronoun_added.show()
@@ -1026,6 +1069,10 @@ class PronounCreation(UIWindow):
         text += poss.capitalize()
         text += f"That den is {pronouns['inposs']}. <br>"
         text += f"This cat hunts by {pronouns['self']}.<br>"
+
+        text += f"This cat wants to be a {pronouns['parent']} someday.<br>"
+        text += f"This cat is a good {pronouns['sibling']}.<br>"
+
         # Full Sentence Example, doesn't fit.
         """sentence = f"{pronouns['poss']} keen sense alerted {pronouns['object']} to prey and {pronouns['subject']} decided to treat {pronouns['self']} by catching prey that would be {pronouns['inposs']} alone to eat. "
         if pronouns["conju"] == 2:

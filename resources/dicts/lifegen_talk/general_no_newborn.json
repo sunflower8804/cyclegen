@@ -3293,5 +3293,53 @@
             "[t_c has a far off look in {PRONOUN/t_c/poss} eye.]",
             "[It's best to leave {PRONOUN/t_c/object} alone.]"
         ]
+    ],
+    "you_shunned_c": [
+        [
+            "you_shunned",
+            "Any",
+            "from_parent",
+            "from_adopted_parent"
+        ],
+        [
+            "[t_c seems conflicted when you catch {PRONOUN/t_c/poss} eye. {PRONOUN/t_c/subject/CAP} hesitate for a moment.]",
+            "[Then {PRONOUN/t_c/subject} seem to make up {PRONOUN/t_c/poss} mind and rush toward you.]",
+            "I don't care what they say, t_c.",
+            "Despite everything, it's still you. And you'll always be my kit."
+        ]
+    ],
+    "starclan_guide_c": [
+        [
+            "any",
+            "they_sc",
+            "they_guide"
+        ],
+        [
+            "How long have I been here?",
+            "I dont know. Longer than I was alive."
+        ]
+    ],
+    "df_guide_c": [
+        [
+            "any",
+            "they_df",
+            "they_guide"
+        ],
+        [
+            "How long have I been here?",
+            "I dont know. Longer than I was alive."
+        ]
+    ],
+    "df_guide2_c": [
+        [
+            "any",
+            "they_df",
+            "they_guide"
+        ],
+        [
+            "[They say that the spirits of this forest will fade away once everyone's forgotten them.]",
+            "[Yet it's been many, many moons and t_c is still around.]",
+            "[Perhaps they've done something so horrible that they will be forced to walk these dark grounds forever.]"
+        ]
     ]
 }

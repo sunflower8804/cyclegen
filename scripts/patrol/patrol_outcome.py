@@ -22,7 +22,8 @@ from scripts.utility import (
     create_new_cat,
     unpack_rel_block,
     event_text_adjust,
-    gather_cat_objects
+    gather_cat_objects,
+    adjust_txt
 )
 from scripts.game_structure.game_essentials import game
 from scripts.cat.skills import SkillPath
@@ -229,10 +230,15 @@ class PatrolOutcome:
         # This must be done before text processing so that the new cat's pronouns are generated first
         results = [self._handle_new_cats(patrol)]
 
+        # lifegen random abbrev processing!
+        lifegen_abbrev_text = adjust_txt(Cat, self.text, patrol.patrol_leader, patrol.patrol_cat_dict)
+
         # the text has to be processed before - otherwise leader might be referenced with their warrior name
         processed_text = event_text_adjust(Cat,
-                                           self.text,
+                                           lifegen_abbrev_text,
                                            patrol_leader=patrol.patrol_leader,
+                                           # LIFEGEN ^^ pls don't remove
+                                           patrol_cat_dict=patrol.patrol_cat_dict,
                                            random_cat=patrol.random_cat,
                                            stat_cat=self.stat_cat,
                                            patrol_cats=patrol.patrol_cats,
@@ -510,7 +516,7 @@ class PatrolOutcome:
             
             for _cat in cat_list:
                 if _cat == "r_c":
-                    out_set.add(patrol.patrol_random_cat)
+                    out_set.add(patrol.random_cat)
                 elif _cat == "p_l":
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
@@ -556,7 +562,7 @@ class PatrolOutcome:
             
             for _cat in cat_list:
                 if _cat == "r_c":
-                    out_set.add(patrol.patrol_random_cat)
+                    out_set.add(patrol.random_cat)
                 elif _cat == "p_l":
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
@@ -614,7 +620,7 @@ class PatrolOutcome:
             
             for _cat in cat_list:
                 if _cat == "r_c":
-                    out_set.add(patrol.patrol_random_cat)
+                    out_set.add(patrol.random_cat)
                 elif _cat == "p_l":
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
@@ -757,7 +763,7 @@ class PatrolOutcome:
             
             for _cat in cat_list:
                 if _cat == "r_c":
-                    out_set.add(patrol.patrol_random_cat)
+                    out_set.add(patrol.random_cat)
                 elif _cat == "p_l":
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
@@ -1004,7 +1010,7 @@ class PatrolOutcome:
         # GATHER MATES
         in_patrol_cats = {
             "p_l": patrol.patrol_leader,
-            "r_c": patrol.patrol_random_cat,
+            "r_c": patrol.random_cat,
         }
         if self.stat_cat:
             in_patrol_cats["s_c"] = self.stat_cat

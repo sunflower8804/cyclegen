@@ -195,17 +195,28 @@ class HandleShortEvents:
         self.handle_injury()
 
         # handle murder reveals
+        clanwide = False
+        shunned = False
         if "murder_reveal" in self.chosen_event.sub_type:
             if "clan_wide" in self.chosen_event.tags:
                 other_cat = None
+                shunned = True
             else:
                 other_cat = self.random_cat
+                if "LIFEGEN_no_shun" not in self.chosen_event.tags:
+                    if not int(random.random() * 2):
+                        shunned = True
+                        self.additional_event_text = f"{other_cat.name} has told the Clan about {self.main_cat.name}'s crime."
+                    else:
+                        self.additional_event_text = f"{other_cat.name} has decided to keep {self.main_cat.name}'s secret."
+
             History.reveal_murder(
                 cat=self.main_cat,
                 other_cat=other_cat,
                 cat_class=Cat,
                 victim=self.victim_cat,
-                murder_index=self.murder_index)
+                murder_index=self.murder_index,
+                shunned=shunned)
 
         # change outsider rep
         if self.chosen_event.outsider:
@@ -231,6 +242,10 @@ class HandleShortEvents:
 
         if "clan_wide" in self.chosen_event.tags:
             self.involved_cats.clear()
+
+        # if "murder" in self.chosen_event.sub_type:
+        #     self.additional_event_text = f"MURDER MURDER MURDER"
+        #     ig uncomment and add shit when. murder events are showing up?? i think thats clangen
 
         # adjust text again to account for info that wasn't available when we do rel changes
         self.text = event_text_adjust(Cat, self.chosen_event.text,
