@@ -1592,7 +1592,7 @@ class MurderScreen(Screens):
                         ceremony_txt = choice(ceremony_txt)
                     except:
                         ceremony_txt = choice(self.m_txt["any any murder"])
-                        print("ERROR: Falling back to general murder text.")
+                        print("WARNING: Falling back to general murder text.")
 
         # ceremony_txt = choice(self.m_txt["any any murder plains camp5"])
         # uncomment + add in the key to get a specific one for testing
@@ -1694,7 +1694,7 @@ class MurderScreen(Screens):
                     History.add_murders(cat_to_murder, accomplice, True, f"{you.name} murdered this cat along with {accomplice.name}.")
                     
                     if game.clan.your_cat.dead:
-                        game.cur_events_list.insert(1, Single_Event("You and " + str(accomplice.name) + " successfully murdered " + str(accomplice.name) + " at the cost of your own life. It seems that no cat knows the truth."))
+                        game.cur_events_list.insert(1, Single_Event("You and " + str(accomplice.name) + " successfully murdered " + str(self.cat_to_murder.name) + " at the cost of your own life. It seems that no cat knows the truth."))
                     else:
                         game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + " along with " + str(accomplice.name) + ". It seems no one is aware of your actions."))
 
