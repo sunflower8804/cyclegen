@@ -457,6 +457,30 @@
     "main_trait_constraint": [
       "childish"
     ]
+  },{
+    "id": "flamboyant_warrior",
+    "thoughts": [
+      "Shows off a dramatic new battle move",
+      "Reminds r_c that by being {PRONOUN/r_c/self}, {PRONOUN/r_c/subject} can never go wrong",
+      "Trots into camp with {PRONOUN/m_c/poss} head high after a great hunt",
+      "Is skilled in the art of dramatics",
+      "Swears up and down that {PRONOUN/m_c/subject} didn't take the last piece of freshkill",
+      "Demands to know what r_c is doing because it looks like fun!",
+      "Was the loudest when chasing off a predator",
+      "Wonders if {PRONOUN/m_c/subject} should have been a queen because {PRONOUN/m_c/subject} {VERB/m_c/love/loves} to entertain kits",
+      "Has created a new trend without even trying!",
+      "Is entertaining apprentices who should be focused on their mentors",
+      "Bemoans the medicine cat's bitter herb mixture for everyone to hear",
+      "Demands to lead the patrol since {PRONOUN/m_c/subject}'ll lead it in style!",
+      "Claims several tall tales actually happened to {PRONOUN/m_c/object}",
+      "Convinces r_c to pay attention to {PRONOUN/m_c/object} with ease",
+      "Needs more attention immediately!",
+      "Fake cries to get out of the dawn patrol",
+      "Did not fool r_c with {PRONOUN/m_c/poss} dramatic antics"
+    ],
+    "main_trait_constraint": [
+      "flamboyant"
+    ]
   },
   {
     "id": "cold_warrior",

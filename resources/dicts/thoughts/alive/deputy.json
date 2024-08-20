@@ -203,6 +203,32 @@
         "main_trait_constraint": [
             "gloomy"
         ]
+    },{
+        "id": "flamboyant_deputy",
+        "thoughts": [
+            "Is telling r_c to add 'star' to {PRONOUN/m_c/poss} name to know how it sounds",
+            "Dislikes how {PRONOUN/m_c/poss} name sounds with 'star'",
+            "Has the clan's attention despite the leader having called the meeting for a more important matter",
+            "Theatrically regales a tale of {PRONOUN/m_c/poss} apprenticeship to wide-eyed kits",
+            "Is practicing a leader-like speech",
+            "Boosts the confidence of {PRONOUN/m_c/poss} Clanmates in themselves",
+            "Is crowing triumphantly about a mundane accomplishment",
+            "Tells r_c to lead a patrol because {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} the most stylish today",
+            "Organizes the patrols with a funny voice to entertain everyone",
+            "Proclaims that yes, {PRONOUN/m_c/subject} {VERB/m_c/do/does} have a favorite clanmate, but won't share who",
+            "Lets kits pounce on {PRONOUN/m_c/object} before falling over with a poetic final speech",
+            "Is certainly not playing games with the apprentices instead of training them",
+            "Has the elders entertained with {PRONOUN/m_c/poss} tomfoolery rather than listening to their stories",
+            "Is making funny faces at the medicine cat's wisdom {PRONOUN/m_c/subject} should be listening to",
+            "Recounts the latest drama {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} overheard for all to hear",
+            "Reenacts a fight despite r_c saying it didn't actually happen that way"
+        ],
+        "random_status_constraint": [
+            "warrior"
+        ],
+        "main_trait_constraint": [
+            "flamboyant"
+        ]
     },
     {
         "id": "grumpy_deputy",

@@ -4883,6 +4883,176 @@
             }
         }
     },
+    "#attack_method_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/attackmethod.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/attackmethod_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/attackmethod_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/attackmethod_unavailable.png"
+            }
+        }
+    },
+    "#poison_method_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/poisonmethod.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/poisonmethod_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/poisonmethod_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/poisonmethod_unavailable.png"
+            }
+        }
+    },
+    "#accident_method_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/accidentmethod.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/accidentmethod_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/accidentmethod_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/accidentmethod_unavailable.png"
+            }
+        }
+    },
+    "#predator_method_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/predatormethod.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/predatormethod_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/predatormethod_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/predatormethod_unavailable.png"
+            }
+        }
+    },
+    "#camp_location_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/camplocation.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/camplocation_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/camplocation_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/camplocation_unavailable.png"
+            }
+        }
+    },
+    "#territory_location_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/territorylocation.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/territorylocation_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/territorylocation_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/territorylocation_unavailable.png"
+            }
+        }
+    },
+    "#border_location_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/borderlocation.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/borderlocation_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/borderlocation_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/borderlocation_unavailable.png"
+            }
+        }
+    },
+    "#dawntime_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/dawntime.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/dawntime_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/dawntime_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/dawntime_unavailable.png"
+            }
+        }
+    },
+    "#daytime_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/daytime.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/daytime_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/daytime_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/daytime_unavailable.png"
+            }
+        }
+    },
+    "#nighttime_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/nighttime.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/nighttime_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/nighttime_unavailable.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/nighttime_unavailable.png"
+            }
+        }
+    },
     "#lead_den_button": {
         "prototype": "#image_button",
         "images": {
