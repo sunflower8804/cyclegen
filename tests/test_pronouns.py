@@ -91,6 +91,9 @@ def test():
         "mate1": _r,
         "t_cc": _r,
         "r_w": _r,
+        "r_w1": _r,
+        "r_w2": _r,
+        "r_w3": _r,
         "y_a": _r,
         "r_s": _r,
         "r_i": _r,
@@ -107,16 +110,69 @@ def test():
         "fc_c": _r,
         "v_c": _r,
         "l_c": _r,
-        "e_c": _r
+        "e_c": _r,
+        "rsh_c": _r,
+        "rsh_w": _r,
+        "rsh_e": _r,
+        "rsh_a": _r,
+        "rsh_d": _r,
+        "rsh_m": _r,
+        "rsh_k": _r,
+        "sh_d": _r,
+        "sh_l": _r
+
     }
 
     # LIFEGEN ADDONS
+    file_names = [
+        "apprentice",
+        "choice_dialogue",
+        "crush",
+        "deputy",
+        "elder",
+        "exiled",
+        "flirt",
+        "former Clancat",
+        "general_no_kit",
+        "general_no_newborn",
+        "general_outsider",
+        "general",
+        "kitten",
+        "kittypet",
+        "leader",
+        "loner",
+        "mediator apprentice",
+        "mediator",
+        "medicine cat apprentice",
+        "medicine cat",
+        "newborn",
+        "queen",
+        "queen's apprentice",
+        "rogue",
+        "warrior",
+        "focuses/hailstorm",
+        "focuses/leader",
+        "focuses/starving",
+        "focuses/unknown_murder",
+        "focuses/valentines",
+        "focuses/war"
+    ]
+    
     addon_json = None
     with open(f"resources/dicts/abbrev_list.json", 'r') as read_file:
         addon_json = ujson.loads(read_file.read())
+
+    lifegen_files = {}
+    for file in file_names:
+        file_json = None
+        with open(f"resources/dicts/lifegen_talk/{file}.json", 'r') as read_file:
+            file_json = ujson.loads(read_file.read())
+        lifegen_files[file] = file_json
     
-    for i in addon_json:
-        replacement_dict[f"{i}"] = _r
+        for i in addon_json:
+            if i in str(file_json):
+                print(i, "in", file)
+                replacement_dict[f"{i}"] = _r
     
 
     for x in range(0, 11):

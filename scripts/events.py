@@ -249,10 +249,10 @@ class Events:
             shaken_cats = []
             extra_event = None
             for ghost in Cat.dead_cats:
-                if not ghost.dead_for > 1:
+                if not ghost.dead_for > 0:
                     ghost_names.append(str(ghost.name))
                 else:
-                    continue # keeps encountered DF cats out of death events
+                    continue # keeps cats who generate as dead out of death events
             insert = "zero cats"
             if ghost_names:
                 insert = adjust_list_text(ghost_names)

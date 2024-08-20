@@ -67,7 +67,7 @@
             "Whoa! y_c, lower your voice!",
             "[t_c whips around, in the least inconspicuous way possible, to see if the leader was within earshot. It appears that {PRONOUN/l_n/subject}{VERB/l_n/'re/'s} not even in camp.]",
             "You need to be more careful, y_c. You can't just throw out an accusation like that.",
-            "[But... {PRONOUN/t_c/aren't/isn't} {PRONOUN/t_c/subject} the one that asked?!]"
+            "[But... {VERB/t_c/aren't/isn't} {PRONOUN/t_c/subject} the one that asked?!]"
         ]
     },
     "unkmurder_focus_SQ1": [
@@ -839,9 +839,9 @@
         ],
         [
             "[t_c fidgets with {PRONOUN/t_c/poss} paws beside the medicine den. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} watching everyone, but {VERB/t_c/are/is} {PRONOUN/t_c/subject} staring at you more?]",
-            "[After a bit of this, you ask what {[PRONOUN/t_c/subject}{VERB/t_c/'re/'s} thinking about. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps}.]",
+            "[After a bit of this, you ask what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} thinking about. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps}.]",
             "Oh, uh, nothing much! I just... I think I might have had a vision from StarClan last night?",
-            "{[PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} definitely averting {PRONOUN/t_c/poss} eyes. What {VERB/t_c/do/does} {PRONOUN/t_c/subject} know? Did StarClan reveal... no. They couldn't have.]",
+            "{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} definitely averting {PRONOUN/t_c/poss} eyes. What {VERB/t_c/do/does} {PRONOUN/t_c/subject} know? Did StarClan reveal... no. They couldn't have.]",
             "I'm just trying to figure out what it means, or if it means anything at all. Dreams are confusing!",
             "[t_c gives you a weak smile and then goes back to looking away. You ask {PRONOUN/t_c/subject} for more details, but {PRONOUN/t_c/subject} just {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head.]",
             "[...You'll have to keep an eye on {PRONOUN/t_c/object}.]"
