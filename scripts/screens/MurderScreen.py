@@ -1167,13 +1167,13 @@ class MurderScreen(Screens):
         if self.method == "attack":
             if you.joined_df:
                 chance -= 35
-            if ("steps lightly" or "mossball hunter") in your_skills:
+            if ("steps lightly" or "mossball hunter" or "avid play-fighter") in your_skills:
                 chance -= 3
-            if ("graceful" or "good hunter") in your_skills:
+            if ("graceful" or "good hunter" or "good fighter") in your_skills:
                 chance -= 7
-            if ("elegant" or "great hunter") in your_skills:
+            if ("elegant" or "great hunter" or "formidable fighter") in your_skills:
                 chance -= 11
-            if ("radiates elegance" or "renowned hunter") in your_skills:
+            if ("radiates elegance" or "renowned hunter" or "unusually strong fighter") in your_skills:
                 chance -= 15
             if you.status == "warrior" and you_healthy:
                 chance -= 23
@@ -1231,14 +1231,19 @@ class MurderScreen(Screens):
 
         if self.method == "predator":
 
-            if "other-cat-ly whisperer" in your_skills:
-                chance -= 5
-            if "dog-whisperer" in your_skills:
-                chance -= 10
-            if "multilingual" in your_skills:
-                chance -= 15
-            if "listener of all voices" in your_skills:
-                chance -= 20
+            pred_skills_lvl_1 = ["other-cat-ly whisperer", "mossball hunter"]
+            pred_skills_lvl_2 = ["dog-whisperer", "good hunter"]
+            pred_skills_lvl_3 = ["multilingual", "great hunter"]
+            pred_skills_lvl_4 = ["listener of all voices", "renowned hunter"]
+
+            if any(skill in pred_skills_lvl_1 for skill in your_skills):
+                chance += 5
+            if any(skill in pred_skills_lvl_2 for skill in your_skills):
+                chance += 10
+            if any(skill in pred_skills_lvl_3 for skill in your_skills):
+                chance += 15
+            if any(skill in pred_skills_lvl_4 for skill in your_skills):
+                chance += 20
 
             if self.location == "camp":
                 chance -= 35
@@ -2069,7 +2074,7 @@ class MurderScreen(Screens):
         if you.skills.primary:
             your_skills.append(you.skills.primary.skill)
         if you.skills.secondary:
-                your_skills.append(you.skills.secondary.skill)
+            your_skills.append(you.skills.secondary.skill)
 
         their_skills = []
         if cat_to_murder.skills.primary:
@@ -2214,13 +2219,13 @@ class MurderScreen(Screens):
             if you.joined_df:
                 chance += 15
 
-            if ("steps lightly" or "mossball hunter") in your_skills:
+            if ("steps lightly" or "mossball hunter" or "avid play-fighter") in your_skills:
                 chance += 3
-            if ("graceful" or "good hunter") in your_skills:
+            if ("graceful" or "good hunter" or "good fighter") in your_skills:
                 chance += 7
-            if ("elegant" or "great hunter") in your_skills:
+            if ("elegant" or "great hunter" or "formidable fighter") in your_skills:
                 chance += 11
-            if ("radiates elegance" or "renowned hunter") in your_skills:
+            if ("radiates elegance" or "renowned hunter" or "unusually strong fighter") in your_skills:
                 chance += 15
 
             if you.status == "warrior":
