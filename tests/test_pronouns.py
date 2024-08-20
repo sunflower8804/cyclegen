@@ -162,6 +162,9 @@ def test():
     with open(f"resources/dicts/abbrev_list.json", 'r') as read_file:
         addon_json = ujson.loads(read_file.read())
 
+    # this will go through lifegen's dialogue files and search for abbrevswith addons.
+    # if theyre there, they get added to the dict.
+    # this avoids the 2 hour pronoun test when we try to check for literally all of them lol
     lifegen_files = {}
     for file in file_names:
         file_json = None
@@ -171,7 +174,7 @@ def test():
     
         for i in addon_json:
             if i in str(file_json):
-                print(i, "in", file)
+                # print(i, "in", file)
                 replacement_dict[f"{i}"] = _r
     
 
