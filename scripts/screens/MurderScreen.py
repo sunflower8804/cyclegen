@@ -132,9 +132,9 @@ class MurderScreen(Screens):
             elif event.ui_element == self.confirm_mentor and self.method and self.location and self.time and self.stage == 'choose murder method':
                 if not self.selected_cat.dead:
                     self.exit_screen()
+                    self.selected_cat = None
                     self.stage = 'choose accomplice'
                     self.screen_switches()
-                    self.selected_cat = None
                     self.confirm_mentor.disable()
 
             elif event.ui_element == self.randomiser_button and self.stage == "choose murder method":
@@ -699,13 +699,13 @@ class MurderScreen(Screens):
                                                 self.cat_to_murder.sprite,
                                                 (270, 270)), manager=MANAGER)
             
-            info = self.selected_cat.status + "\n" + \
-                   self.selected_cat.genderalign + "\n" + self.selected_cat.personality.trait + "\n"
+            info = self.cat_to_murder.status + "\n" + \
+                   self.cat_to_murder.genderalign + "\n" + self.cat_to_murder.personality.trait + "\n"
 
-            if self.selected_cat.moons < 1:
+            if self.cat_to_murder.moons < 1:
                 info += "???"
             else:
-                info += self.selected_cat.skills.skill_string(short=True)
+                info += self.cat_to_murder.skills.skill_string(short=True)
 
             # vicinfo
 
@@ -2611,41 +2611,44 @@ class MurderScreen(Screens):
                                                                         manager=MANAGER)
                         
                 if self.stage == "choose accomplice":
-                    a_text = ""
-                    chance = self.get_kill(game.clan.your_cat, self.cat_to_murder, accomplice=self.selected_cat, accompliced=False)
+                    if self.selected_cat is not None:
+                        print(self.selected_cat.name)
+                        print(self.cat_to_murder.name)
+                        a_text = ""
+                        chance = self.get_kill(game.clan.your_cat, self.cat_to_murder, accomplice=self.selected_cat, accompliced=False)
 
-                    chance = self.get_accomplice_chance(game.clan.your_cat, self.selected_cat, self.cat_to_murder)
-                    
-                    if game.config["accomplice_chance"] != -1:
-                        try:
-                            chance = game.config["accomplice_chance"]
-                        except:
-                            pass
-                    if chance < 20:
-                        a_text = "very low"
-                    elif chance < 30:
-                        a_text = "low"
-                    elif chance < 50:
-                        a_text = "average"
-                    elif chance < 80:
-                        a_text = "high"
-                    else:
-                        a_text = "very high"
+                        chance = self.get_accomplice_chance(game.clan.your_cat, self.selected_cat, self.cat_to_murder)
+                        
+                        if game.config["accomplice_chance"] != -1:
+                            try:
+                                chance = game.config["accomplice_chance"]
+                            except:
+                                pass
+                        if chance < 20:
+                            a_text = "very low"
+                        elif chance < 30:
+                            a_text = "low"
+                        elif chance < 50:
+                            a_text = "average"
+                        elif chance < 80:
+                            a_text = "high"
+                        else:
+                            a_text = "very high"
 
-                    print("ACCOMP CHANCE:", a_text)
-                    if game.settings['dark mode']:
-                        self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
+                        print("ACCOMP CHANCE:", a_text)
+                        if game.settings['dark mode']:
+                            self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
+                                                                                                    scale(pygame.Rect((1145, 610),
+                                                                                                                        (210, 250))),
+                                                                                                    object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
+                                                                                                    manager=MANAGER)
+
+                        else:
+                            self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
                                                                                                 scale(pygame.Rect((1145, 610),
                                                                                                                     (210, 250))),
-                                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
+                                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
                                                                                                 manager=MANAGER)
-
-                    else:
-                        self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
-                                                                                            scale(pygame.Rect((1145, 610),
-                                                                                                                (210, 250))),
-                                                                                            object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
-                                                                                            manager=MANAGER)
                 else:
                     if game.settings['dark mode']:
                         self.willingnesstext = pygame_gui.elements.UITextBox("" ,
