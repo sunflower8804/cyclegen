@@ -4147,29 +4147,23 @@ class Events:
                         cat.status_change(newstatus)
 
                 elif cat.status != "leader":
-                    if cat.status in ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"]:
-                        if cat.moons >= 15:
-                            if cat.status == "medicine cat apprentice":
-                                self.ceremony(cat, "medicine cat")
-                            elif cat.status == "mediator apprentice":
-                                self.ceremony(cat, "mediator")
-                            elif cat.status == "queen's apprentice":
-                                self.ceremony(cat, "queen")
-                            else:
-                                self.ceremony(cat, "warrior")
-                        elif cat.moons >= 6:
-                            if cat.status == "medicine cat apprentice":
-                                self.ceremony(cat, "medicine cat")
-                            elif cat.status == "mediator apprentice":
-                                self.ceremony(cat, "mediator apprentice")
-                            elif cat.status == "queen's apprentice":
-                                self.ceremony(cat, "queen's apprentice")
-                            else:
-                                self.ceremony(cat, "apprentice")
-                            
+                    if cat.status in [
+                        "apprentice",
+                        "medicine cat apprentice",
+                        "mediator apprentice",
+                        "queen's apprentice",
+                        "warrior",
+                        "medicine cat",
+                        "mediator",
+                        "queen",
+                        ]:
+                        print("exile_or_forgive ceremony for", cat.name, ",", cat.status)
+                        self.ceremony(cat, cat.status)
+
                     elif cat.status in ["kitten", "newborn"] and cat.moons >= 6:
-                        self.ceremony(cat, "medicine cat apprentice")
-                        cat.name.status = cat.status
+                        self.ceremony(cat, "apprentice")
+                        print("exile_or_forgive ceremony for", cat.name, ",", cat.status)
+                        
                     else:
                         if cat.moons == 0:
                             cat.status = 'newborn'
