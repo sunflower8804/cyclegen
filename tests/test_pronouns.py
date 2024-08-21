@@ -91,6 +91,9 @@ def test():
         "mate1": _r,
         "t_cc": _r,
         "r_w": _r,
+        "r_w1": _r,
+        "r_w2": _r,
+        "r_w3": _r,
         "y_a": _r,
         "r_s": _r,
         "r_i": _r,
@@ -101,76 +104,79 @@ def test():
         "r_c_sc": _r,
         "a_n": _r,
         "t_q": _r,
-        "brooding_t_l": _r,
         "y_k": _r,
-        "dislike_r_c": _r,
-        "trust_r_c": _r,
-        "neutral_r_c": _r,
-        "r_c_brooding": _r,
-        "r_c_sweet": _r,
-        "plike_r_w": _r,
-        "r_c_upstanding": _r,
-        "r_a_silly": _r,
-        "r_c_unabashed": _r,
-        "plike_r_a": _r,
-        "r_w_upstanding": _r,
-        "r_a_cool": _r,
-        "r_w_neurotic": _r,
-        "dislike_r_w": _r,
-        "plove_t_s": _r,
-        "r_c_neurotic": _r,
         "y_kk": _r,
-        "trust_r_w": _r,
         "rdf_c": _r,
-        "plike_r_c": _r,
-        "r_c_stable": _r,
-        "r_w_assertive": _r,
-        "r_c_assertive": _r,
         "fc_c": _r,
         "v_c": _r,
         "l_c": _r,
-        "e_c": _r
+        "e_c": _r,
+        "rsh_c": _r,
+        "rsh_w": _r,
+        "rsh_e": _r,
+        "rsh_a": _r,
+        "rsh_d": _r,
+        "rsh_m": _r,
+        "rsh_k": _r,
+        "sh_d": _r,
+        "sh_l": _r
+
     }
-    
-    cluster_addons = [
-        "_upstanding",
-        "_brooding",
-        "_sweet",
-        "_cool",
-        "_unlawful",
-        "_silly",
-        "_neurotic",
-        "_introspective",
-        "_unabashed",
-        "_assertive",
-        "_stable"
+
+    # LIFEGEN ADDONS
+    file_names = [
+        "apprentice",
+        "choice_dialogue",
+        "crush",
+        "deputy",
+        "elder",
+        "exiled",
+        "flirt",
+        "former Clancat",
+        "general_no_kit",
+        "general_no_newborn",
+        "general_outsider",
+        "general",
+        "kitten",
+        "kittypet",
+        "leader",
+        "loner",
+        "mediator apprentice",
+        "mediator",
+        "medicine cat apprentice",
+        "medicine cat",
+        "newborn",
+        "queen",
+        "queen's apprentice",
+        "rogue",
+        "warrior",
+        "focuses/hailstorm",
+        "focuses/leader",
+        "focuses/starving",
+        "focuses/unknown_murder",
+        "focuses/valentines",
+        "focuses/war"
     ]
-
-    rel_addons = [
-        "plike_",
-        "plove_",
-        "rlike_",
-        "rlove_",
-        "dislike_",
-        "hate_",
-        "neutral_",
-        "trust_",
-        "comfort_",
-        "respect_",
-        "jealous_"
-    ]
-
-    # addons = {}
     
-    # for abbrev in list(replacement_dict.keys()):
-    #     for r in rel_addons:
-    #         addons[f"{r}{abbrev}"] = _r
-    #     for x in cluster_addons:
-    #         addons[f"{abbrev}{x}"] = _r
-    #         for r in rel_addons:
-    #             addons[f"{r}{abbrev}{x}"] = _r
+    addon_json = None
+    with open(f"resources/dicts/abbrev_list.json", 'r') as read_file:
+        addon_json = ujson.loads(read_file.read())
 
-    # replacement_dict.update(addons)
+    # this will go through lifegen's dialogue files and search for abbrevs with addons.
+    # if theyre there, they get added to the dict.
+    # this avoids the 2 hour pronoun test when we try to check for literally all of them lol
+    lifegen_files = {}
+    for file in file_names:
+        file_json = None
+        with open(f"resources/dicts/lifegen_talk/{file}.json", 'r') as read_file:
+            file_json = ujson.loads(read_file.read())
+        lifegen_files[file] = file_json
+    
+        for i in addon_json:
+            if i in str(file_json):
+                # print(i, "in", file)
+                replacement_dict[f"{i}"] = _r
+    
 
     for x in range(0, 11):
         replacement_dict[f"n_c:{x}"] = _r

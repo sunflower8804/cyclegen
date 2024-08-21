@@ -132,9 +132,9 @@ class MurderScreen(Screens):
             elif event.ui_element == self.confirm_mentor and self.method and self.location and self.time and self.stage == 'choose murder method':
                 if not self.selected_cat.dead:
                     self.exit_screen()
+                    self.selected_cat = None
                     self.stage = 'choose accomplice'
                     self.screen_switches()
-                    self.selected_cat = None
                     self.confirm_mentor.disable()
 
             elif event.ui_element == self.randomiser_button and self.stage == "choose murder method":
@@ -699,13 +699,13 @@ class MurderScreen(Screens):
                                                 self.cat_to_murder.sprite,
                                                 (270, 270)), manager=MANAGER)
             
-            info = self.selected_cat.status + "\n" + \
-                   self.selected_cat.genderalign + "\n" + self.selected_cat.personality.trait + "\n"
+            info = self.cat_to_murder.status + "\n" + \
+                   self.cat_to_murder.genderalign + "\n" + self.cat_to_murder.personality.trait + "\n"
 
-            if self.selected_cat.moons < 1:
+            if self.cat_to_murder.moons < 1:
                 info += "???"
             else:
-                info += self.selected_cat.skills.skill_string(short=True)
+                info += self.cat_to_murder.skills.skill_string(short=True)
 
             # vicinfo
 
@@ -1167,13 +1167,13 @@ class MurderScreen(Screens):
         if self.method == "attack":
             if you.joined_df:
                 chance -= 35
-            if ("steps lightly" or "mossball hunter") in your_skills:
+            if ("steps lightly" or "mossball hunter" or "avid play-fighter") in your_skills:
                 chance -= 3
-            if ("graceful" or "good hunter") in your_skills:
+            if ("graceful" or "good hunter" or "good fighter") in your_skills:
                 chance -= 7
-            if ("elegant" or "great hunter") in your_skills:
+            if ("elegant" or "great hunter" or "formidable fighter") in your_skills:
                 chance -= 11
-            if ("radiates elegance" or "renowned hunter") in your_skills:
+            if ("radiates elegance" or "renowned hunter" or "unusually strong fighter") in your_skills:
                 chance -= 15
             if you.status == "warrior" and you_healthy:
                 chance -= 23
@@ -1231,14 +1231,19 @@ class MurderScreen(Screens):
 
         if self.method == "predator":
 
-            if "other-cat-ly whisperer" in your_skills:
-                chance -= 5
-            if "dog-whisperer" in your_skills:
-                chance -= 10
-            if "multilingual" in your_skills:
-                chance -= 15
-            if "listener of all voices" in your_skills:
-                chance -= 20
+            pred_skills_lvl_1 = ["other-cat-ly whisperer", "mossball hunter"]
+            pred_skills_lvl_2 = ["dog-whisperer", "good hunter"]
+            pred_skills_lvl_3 = ["multilingual", "great hunter"]
+            pred_skills_lvl_4 = ["listener of all voices", "renowned hunter"]
+
+            if any(skill in pred_skills_lvl_1 for skill in your_skills):
+                chance += 5
+            if any(skill in pred_skills_lvl_2 for skill in your_skills):
+                chance += 10
+            if any(skill in pred_skills_lvl_3 for skill in your_skills):
+                chance += 15
+            if any(skill in pred_skills_lvl_4 for skill in your_skills):
+                chance += 20
 
             if self.location == "camp":
                 chance -= 35
@@ -1592,7 +1597,7 @@ class MurderScreen(Screens):
                         ceremony_txt = choice(ceremony_txt)
                     except:
                         ceremony_txt = choice(self.m_txt["any any murder"])
-                        print("ERROR: Falling back to general murder text.")
+                        print("WARNING: Falling back to general murder text.")
 
         # ceremony_txt = choice(self.m_txt["any any murder plains camp5"])
         # uncomment + add in the key to get a specific one for testing
@@ -1694,7 +1699,7 @@ class MurderScreen(Screens):
                     History.add_murders(cat_to_murder, accomplice, True, f"{you.name} murdered this cat along with {accomplice.name}.")
                     
                     if game.clan.your_cat.dead:
-                        game.cur_events_list.insert(1, Single_Event("You and " + str(accomplice.name) + " successfully murdered " + str(accomplice.name) + " at the cost of your own life. It seems that no cat knows the truth."))
+                        game.cur_events_list.insert(1, Single_Event("You and " + str(accomplice.name) + " successfully murdered " + str(self.cat_to_murder.name) + " at the cost of your own life. It seems that no cat knows the truth."))
                     else:
                         game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + " along with " + str(accomplice.name) + ". It seems no one is aware of your actions."))
 
@@ -2069,7 +2074,7 @@ class MurderScreen(Screens):
         if you.skills.primary:
             your_skills.append(you.skills.primary.skill)
         if you.skills.secondary:
-                your_skills.append(you.skills.secondary.skill)
+            your_skills.append(you.skills.secondary.skill)
 
         their_skills = []
         if cat_to_murder.skills.primary:
@@ -2214,13 +2219,13 @@ class MurderScreen(Screens):
             if you.joined_df:
                 chance += 15
 
-            if ("steps lightly" or "mossball hunter") in your_skills:
+            if ("steps lightly" or "mossball hunter" or "avid play-fighter") in your_skills:
                 chance += 3
-            if ("graceful" or "good hunter") in your_skills:
+            if ("graceful" or "good hunter" or "good fighter") in your_skills:
                 chance += 7
-            if ("elegant" or "great hunter") in your_skills:
+            if ("elegant" or "great hunter" or "formidable fighter") in your_skills:
                 chance += 11
-            if ("radiates elegance" or "renowned hunter") in your_skills:
+            if ("radiates elegance" or "renowned hunter" or "unusually strong fighter") in your_skills:
                 chance += 15
 
             if you.status == "warrior":
@@ -2606,41 +2611,44 @@ class MurderScreen(Screens):
                                                                         manager=MANAGER)
                         
                 if self.stage == "choose accomplice":
-                    a_text = ""
-                    chance = self.get_kill(game.clan.your_cat, self.cat_to_murder, accomplice=self.selected_cat, accompliced=False)
+                    if self.selected_cat is not None:
+                        print(self.selected_cat.name)
+                        print(self.cat_to_murder.name)
+                        a_text = ""
+                        chance = self.get_kill(game.clan.your_cat, self.cat_to_murder, accomplice=self.selected_cat, accompliced=False)
 
-                    chance = self.get_accomplice_chance(game.clan.your_cat, self.selected_cat, self.cat_to_murder)
-                    
-                    if game.config["accomplice_chance"] != -1:
-                        try:
-                            chance = game.config["accomplice_chance"]
-                        except:
-                            pass
-                    if chance < 20:
-                        a_text = "very low"
-                    elif chance < 30:
-                        a_text = "low"
-                    elif chance < 50:
-                        a_text = "average"
-                    elif chance < 80:
-                        a_text = "high"
-                    else:
-                        a_text = "very high"
+                        chance = self.get_accomplice_chance(game.clan.your_cat, self.selected_cat, self.cat_to_murder)
+                        
+                        if game.config["accomplice_chance"] != -1:
+                            try:
+                                chance = game.config["accomplice_chance"]
+                            except:
+                                pass
+                        if chance < 20:
+                            a_text = "very low"
+                        elif chance < 30:
+                            a_text = "low"
+                        elif chance < 50:
+                            a_text = "average"
+                        elif chance < 80:
+                            a_text = "high"
+                        else:
+                            a_text = "very high"
 
-                    print("ACCOMP CHANCE:", a_text)
-                    if game.settings['dark mode']:
-                        self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
+                        print("ACCOMP CHANCE:", a_text)
+                        if game.settings['dark mode']:
+                            self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
+                                                                                                    scale(pygame.Rect((1145, 610),
+                                                                                                                        (210, 250))),
+                                                                                                    object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
+                                                                                                    manager=MANAGER)
+
+                        else:
+                            self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
                                                                                                 scale(pygame.Rect((1145, 610),
                                                                                                                     (210, 250))),
-                                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95_dark",
+                                                                                                object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
                                                                                                 manager=MANAGER)
-
-                    else:
-                        self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
-                                                                                            scale(pygame.Rect((1145, 610),
-                                                                                                                (210, 250))),
-                                                                                            object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
-                                                                                            manager=MANAGER)
                 else:
                     if game.settings['dark mode']:
                         self.willingnesstext = pygame_gui.elements.UITextBox("" ,

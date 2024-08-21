@@ -802,7 +802,7 @@ class GiftScreen(Screens):
         """Updates the cat sprite buttons. """
         cat = self.the_cat
         age = cat.age
-        self.cat_sprite = str(cat.pelt.cat_sprites[cat.age])
+        # self.cat_sprite = str(cat.pelt.cat_sprites[cat.age])
 
         # setting the cat_sprite (bc this makes things much easier)
         # if cat.not_working() and age != 'newborn' and game.config['cat_sprites']['sick_sprites']:
