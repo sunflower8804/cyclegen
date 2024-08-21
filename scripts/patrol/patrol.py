@@ -672,7 +672,7 @@ class Patrol:
 
                     skip = False
                     for i in tests:
-                        test_runs[i] = adjust_txt(Cat, i, self.patrol_leader, self.patrol_cat_dict)
+                        test_runs[i] = adjust_txt(Cat, i, self.patrol_leader, self.patrol_cat_dict, r_c_allowed=False)
                         if test_runs[i] == "":
                             skip = True
                     if skip is True:
@@ -1230,7 +1230,7 @@ class Patrol:
 
         # adjusting text for lifegen abbrevs + adding to replace dict
         if game.current_screen == 'patrol screen':
-            text = adjust_txt(Cat, text, self.patrol_leader, self.patrol_cat_dict)
+            text = adjust_txt(Cat, text, self.patrol_leader, self.patrol_cat_dict, r_c_allowed=False)
             for cat in self.patrol_cat_dict.items():
                 replace_dict[cat[0]] = (str(cat[1].name), choice(cat[1].pronouns))
 

@@ -231,7 +231,7 @@ class PatrolOutcome:
         results = [self._handle_new_cats(patrol)]
 
         # lifegen random abbrev processing!
-        lifegen_abbrev_text = adjust_txt(Cat, self.text, patrol.patrol_leader, patrol.patrol_cat_dict)
+        lifegen_abbrev_text = adjust_txt(Cat, self.text, patrol.patrol_leader, patrol.patrol_cat_dict, r_c_allowed=False)
 
         # the text has to be processed before - otherwise leader might be referenced with their warrior name
         processed_text = event_text_adjust(Cat,

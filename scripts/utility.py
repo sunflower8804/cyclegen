@@ -2930,8 +2930,14 @@ def cat_dict_check(abbrev, cluster, x, rel, r, text, cat_dict):
     return text, in_dict
 
 other_dict = {}   
-def adjust_txt(Cat, text, cat, cat_dict):
-    """ Adjusts dialogue text by replacing abbreviations with cat names"""
+def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed):
+    """ Adjusts dialogue text by replacing abbreviations with cat names
+    :param Cat Cat: Cat class
+    :param list text: The text being processed 
+    :param Cat cat: The object of the cat to whom relationship addons will apply
+    :param Dict cat_dict: the dict of cat objects
+    :param bool r_c_allowed: Whether or not r_c will be tried for. True for dialogue, False for patrols
+    """
 
     COUNTER_LIM = 30
     you = game.clan.your_cat
@@ -3952,37 +3958,38 @@ def adjust_txt(Cat, text, cat, cat_dict):
                 text = add_to_cat_dict("y_kk", cluster, x, rel, r, kit, text, cat_dict)
         
         # Random cat
-        if "r_c" in text and "r_c1" not in text and "r_c2" not in text and "r_c3" not in text and "r_c4" not in text:
-            cluster = False
-            rel = False
-            match = re.search(r'r_c(\w+)', text)
-            if match:
-                x = match.group(1).strip("_")
-                cluster = True
-            else:
-                x = ""
-            match2 = re.search(r'(\w+)r_c', text)
-            if match2:
-                r = match2.group(1).strip("_")
-                rel = True
-            else:
-                r = ""
-        
-            text, in_dict = cat_dict_check("r_c", cluster, x, rel, r, text, cat_dict)
+        if r_c_allowed is True:
+            if "r_c" in text and "r_c1" not in text and "r_c2" not in text and "r_c3" not in text and "r_c4" not in text:
+                cluster = False
+                rel = False
+                match = re.search(r'r_c(\w+)', text)
+                if match:
+                    x = match.group(1).strip("_")
+                    cluster = True
+                else:
+                    x = ""
+                match2 = re.search(r'(\w+)r_c', text)
+                if match2:
+                    r = match2.group(1).strip("_")
+                    rel = True
+                else:
+                    r = ""
+            
+                text, in_dict = cat_dict_check("r_c", cluster, x, rel, r, text, cat_dict)
 
-            if in_dict is False:
-                random_cat = choice(get_alive_cats(Cat))
-                addon_check = abbrev_addons(cat, random_cat, cluster, x, rel, r)
-
-                counter = 0
-                while random_cat.ID == you.ID or random_cat.ID == cat.ID or addon_check is False:
-                    if counter == 30:
-                        return ""
+                if in_dict is False:
                     random_cat = choice(get_alive_cats(Cat))
                     addon_check = abbrev_addons(cat, random_cat, cluster, x, rel, r)
-                    counter += 1
 
-                text = add_to_cat_dict("r_c", cluster, x, rel, r, random_cat, text, cat_dict)
+                    counter = 0
+                    while random_cat.ID == you.ID or random_cat.ID == cat.ID or addon_check is False:
+                        if counter == 30:
+                            return ""
+                        random_cat = choice(get_alive_cats(Cat))
+                        addon_check = abbrev_addons(cat, random_cat, cluster, x, rel, r)
+                        counter += 1
+
+                    text = add_to_cat_dict("r_c", cluster, x, rel, r, random_cat, text, cat_dict)
         # Other Clan
         if "o_c" in text:
             if "o_c" in other_dict:

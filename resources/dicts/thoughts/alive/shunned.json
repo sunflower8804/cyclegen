@@ -62,5 +62,31 @@
             "vengeful",
             "bloodthirsty"
         ]
+    },
+    {
+        "id": "shunned_flamboyant",
+        "thoughts": [
+            "Acts as if {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} care about being shunned",
+            "Begs for any scrap of attention",
+            "Hates being ignored more than anything",
+            "Yowls about the Clan turning their backs on {PRONOUN/m_c/object}",
+            "Refuses to hide away",
+            "Darkly enjoys the new kind of attention",
+            "Proclaims that shunning {PRONOUN/m_c/object} is the worst that could ever happen to {PRONOUN/m_c/object}",
+            "Feels like a fool",
+            "Refuses to admit {PRONOUN/m_c/subject} did wrong",
+            "Demands to be forgiven even if {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} deserve it",
+            "Yowls about this being a cruel and unusual punishment",
+            "Is glad {PRONOUN/m_c/subject} {VERB/m_c/weren't/wasn't} exiled",
+            "Feels incredibly unseen",
+            "Misses when {PRONOUN/m_c/subject} {VERB/m_c/were/was} given positive attention",
+            "Misses when {PRONOUN/m_c/subject} {VERB/m_c/were/was} the most stylish cat around",
+            "Is no longer setting trends daily",
+            "Isn't seen as fun or stylish anymore",
+            "Is glad {PRONOUN/m_c/poss} getting attention still even if it is negative"
+        ],
+        "main_trait_constraint": [
+            "flamboyant"
+        ]    
     }
 ]
