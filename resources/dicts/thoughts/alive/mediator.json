@@ -97,6 +97,28 @@
         ]
     },
     {
+        "id": "flamboyant_mediator",
+        "thoughts": [
+          "Is the loudest supporter of r_c",
+          "Tries to understand a clanmate that doesn't like to be a team player through acting",
+          "Helps r_c with an issue by playing out the moment with {PRONOUN/r_c/object}",
+          "Sets a new trend in communication",
+          "Has influenced another clan to follow {PRONOUN/m_c/poss} style trends",
+          "Enacts a recent mediation with another clan for all to watch",
+          "Is happy with all the attention {PRONOUN/m_c/subject} {VERB/m_c/get/gets} in this role",
+          "Was too loud in a talk and made r_c upset when {PRONOUN/r_c/subject} overheard",
+          "Is very, very, very, very, veryyyyyy sorry for speaking too loudly...",
+          "Enjoys being a pivotal part of Clan social life",
+          "Heckles a fellow mediator to be more bold and attention grabbing when speaking!",
+          "Says that there are fewer problems when {PRONOUN/m_c/subject} {VERB/m_c/have/has} the Clan's attention",
+          "Quotes a poetic kittypet {PRONOUN/m_c/subject} met once",
+          "Brings a new trend from another Clan."
+        ],
+        "main_trait_constraint": [
+          "flamboyant"
+        ]
+      },
+    {
         "id": "cold_mediator",
         "thoughts": [
             "Is judging two Clanmates for their foolish argument",
