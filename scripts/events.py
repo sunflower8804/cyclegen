@@ -1049,7 +1049,7 @@ class Events:
 
     def process_text(self, text):
         self.cat_dict.clear()
-        text = adjust_txt(Cat, text, game.clan.your_cat, self.cat_dict)
+        text = adjust_txt(Cat, text, game.clan.your_cat, self.cat_dict, r_c_allowed=True)
 
         process_text_dict = self.cat_dict.copy()
         for abbrev in process_text_dict.keys():
