@@ -102,7 +102,7 @@
     "You sneak v_c some deathberries in {PRONOUN/v_c/poss} meal without realising that you got juice on your paws. You collapse while grooming your paws in the clearing and don't wake up."
   ],
   "any any murder accident death": [
-    "You attempt to shove v_c off of a cliff, but {PRONOUN/v_c/subject} take you with {PRONOUN/v_c/object}, killing you both."
+    "You attempt to shove v_c off of a cliff, but {PRONOUN/v_c/subject} {VERB/v_c/take/takes} you with {PRONOUN/v_c/object}, killing you both."
   ],
   "any any murder predator death": [
     "When a large fox confronts the two of you, you shove v_c into its face, but the creature manages to catch and kill the both of you."
@@ -238,7 +238,7 @@
   ],
   "kitten kitten murder poison camp": [
     "After taking a piece of poisoned prey from the fresh-kill pile, you run back to the nursery to present it to v_c, claiming that it's from a super special kind of squirrel. You then challenge {PRONOUN/v_c/object} to eat it. v_c doesn't wake up later after being rushed to the medicine den.",
-    "You and v_c have often tried sneaking into the medicine den, every time getting shooed away with a scolding. This time you are successful. While the medicine cat is gone, the two of you have the perfect opportunity to make a mess of {PRONOUN/v_c/poss} herbs. You challenge v_c to eat one, and {PRONOUN/v_c/subject} oblige, {PRONOUN/v_c/poss} lack of knowledge sealing {PRONOUN/v_c/poss} fate."
+    "You and v_c have often tried sneaking into the medicine den, every time getting shooed away with a scolding. This time you are successful. While the medicine cat is gone, the two of you have the perfect opportunity to make a mess of {PRONOUN/v_c/poss} herbs. You challenge v_c to eat one, and {PRONOUN/v_c/subject} {VERB/v_c/oblige/obliges}, {PRONOUN/v_c/poss} lack of knowledge sealing {PRONOUN/v_c/poss} fate."
   ],
   "kitten kitten murder accident": [
     "You successfuly killed v_c and made it look like an accident."

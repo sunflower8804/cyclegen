@@ -7,12 +7,12 @@
             "Doesn't like sleeping at the edge of camp",
             "Considers pleading insanity",
             "Is hiding behind a tree",
-            "Hopes they'll get into StarClan",
+            "Hopes {PRONOUN/m_c/subject}'ll get into StarClan",
             "Is looking sad",
             "Had to sleep in the rain last night",
             "Draws in the dirt with their claws",
             "Got a dirty look from r_c",
-            "Tries to enjoy the stale prey they've been granted",
+            "Tries to enjoy the stale prey {PRONOUN/m_c/subject}{VERB/m_c/'s/'ve} been granted",
             "Is dreading the future",
             "Is cursing the consequences of their actions",
             "Wants to share tongues with their Clanmates again",
@@ -29,13 +29,13 @@
             "Isn't handling this well",
             "Is bored!",
             "Tried to sneak some fresh prey",
-            "Wonders if they'd be accepted into another Clan",
+            "Wonders if {PRONOUN/m_c/subject}'d be accepted into another Clan",
             "Begs r_c to look at them, please just look at them",
-            "Wonders how long until they'll be accepted back into the Clan",
+            "Wonders how long until {PRONOUN/m_c/subject}'ll be accepted back into the Clan",
             "Is growing to resent their Clanmates",
-            "Will never forget how they've been treated by their own Clanmates",
+            "Will never forget how {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been treated by their own Clanmates",
             "Is given a piece of prey that r_c spat in",
-            "Wishes they had the courage to become a rogue"
+            "Wishes {PRONOUN/m_c/subject} had the courage to become a rogue"
         ]
     },
     {
@@ -43,7 +43,7 @@
         "thoughts": [
             "Is planning, plotting, observing...",
             "Digs their claws into the dirt as r_c walks by",
-            "Thinks they did nothing wrong"
+            "Thinks {PRONOUN/m_c/subject} did nothing wrong"
         ],
         "main_trait_constraint": [
             "vengeful",
@@ -55,8 +55,8 @@
         "thoughts": [
             "Feels a pit of guilt in their stomach",
             "Is pleading for forgiveness to any cat who would listen",
-            "Had a nightmare about what they did",
-            "Insists, deep down, they're not a bad cat"
+            "Had a nightmare about what {PRONOUN/m_c/subject} did",
+            "Insists, deep down, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not a bad cat"
         ],
         "not_main_trait_constraint": [
             "vengeful",

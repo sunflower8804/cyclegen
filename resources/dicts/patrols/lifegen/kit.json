@@ -653,7 +653,7 @@
         "chance_of_success": 95,
         "success_outcomes": [
             {
-                "text": "You pick up the moss-ball with your mouth and bring it over to the group. When you drop it and paw it in r_k's direction, they hit it back, and soon all three of you are playing together like nothing has even changed.",
+                "text": "You pick up the moss-ball with your mouth and bring it over to the group. When you drop it and paw it in r_k's direction, {PRONOUN/r_k/subject} hit it back, and soon all three of you are playing together like nothing has even changed.",
                 "exp": 0,
                 "weight": 20
             }
