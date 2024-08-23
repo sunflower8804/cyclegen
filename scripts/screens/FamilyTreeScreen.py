@@ -530,12 +530,12 @@ class FamilyTreeScreen(Screens):
                     info_text += "\n"
                     info_text += ", ".join(add_info)
 
-            if game.clan.clan_settings["show fav"] and kitty.favourite != 0:
+            if game.clan.clan_settings["show fav"] and _kitty.favourite != 0:
                 self.fav[str(i)] = pygame_gui.elements.UIImage(
                     scale(pygame.Rect((649 + pos_x, 970 + pos_y), (100, 100))),
                     pygame.transform.scale(
                         pygame.image.load(
-                            f"resources/images/fav_marker_{kitty.favourite}.png").convert_alpha(),
+                            f"resources/images/fav_marker_{_kitty.favourite}.png").convert_alpha(),
                         (100, 100))
                 )
                 self.fav[str(i)].disable()

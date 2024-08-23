@@ -1426,6 +1426,14 @@ class MurderScreen(Screens):
                         ):
                         continue
 
+                if "your_apprentice" in murder_dict["relationship"]:
+                    if cat_to_murder.mentor != game.clan.your_cat.ID:
+                        continue
+                
+                if "your_mentor" in murder_dict["relationship"]:
+                    if game.clan.your_cat.mentor != cat_to_murder.ID:
+                        continue
+
                         
 
             if "biome" in murder_dict and murder_dict["biome"]:

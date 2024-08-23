@@ -256,86 +256,74 @@ class Events:
             insert = "zero cats"
             if ghost_names:
                 insert = adjust_list_text(ghost_names)
-            if insert:
-                if len(Cat.dead_cats) > 1 and game.clan.game_mode != 'classic':
-                    event = f"The past moon, {insert} have taken their place in StarClan. {game.clan.name}Clan mourns their " \
-                            f"loss, and their Clanmates will miss where they had been in their lives. Moments of their " \
-                            f"lives are shared in stories around the circle of mourners as those that were closest to them " \
-                            f"take them to their final resting place."
 
-            if len(Cat.dead_cats) > 1 and game.clan.game_mode != "classic":
-                event = (
-                    f"The past moon, {insert} have taken their place in StarClan. {game.clan.name}Clan mourns their "
-                    f"loss, and their Clanmates will miss where they had been in their lives. Moments of their "
-                    f"lives are shared in stories around the circle of mourners as those that were closest to them "
-                    f"take them to their final resting place."
-                )
-
-                if len(ghost_names) > 2:
-                    alive_cats = list(
-                        filter(
-                            lambda kitty: (
-                                kitty.status != "leader"
-                                and not kitty.dead
-                                and not kitty.outside
-                                and not kitty.exiled
-                            ),
-                            Cat.all_cats.values(),
-                        )
+                if len(Cat.dead_cats) > 1 and game.clan.game_mode != "classic":
+                    event = (
+                        f"The past moon, {insert} have taken their place in StarClan. {game.clan.name}Clan mourns their "
+                        f"loss, and their Clanmates will miss where they had been in their lives. Moments of their "
+                        f"lives are shared in stories around the circle of mourners as those that were closest to them "
+                        f"take them to their final resting place."
                     )
-                    # finds a percentage of the living Clan to become shaken
 
-                    if len(alive_cats) == 0:
-                        return
-                    else:
-                        shaken_cats = random.sample(
-                            alive_cats,
-                            k=max(
-                                int((len(alive_cats) * random.choice([4, 5, 6])) / 100),
-                                1,
-                            ),
+                    if len(ghost_names) > 2:
+                        alive_cats = list(
+                            filter(
+                                lambda kitty: (
+                                    kitty.status != "leader"
+                                    and not kitty.dead
+                                    and not kitty.outside
+                                    and not kitty.exiled
+                                ),
+                                Cat.all_cats.values(),
+                            )
                         )
+                        # finds a percentage of the living Clan to become shaken
 
-                    shaken_cat_names = []
-                    for cat in shaken_cats:
-                        shaken_cat_names.append(str(cat.name))
-                        cat.get_injured(
-                            "shock",
-                            event_triggered=False,
-                            lethal=False,
-                            severity="minor",
-                        )
+                        if len(alive_cats) == 0:
+                            return
+                        else:
+                            shaken_cats = random.sample(
+                                alive_cats,
+                                k=max(
+                                    int((len(alive_cats) * random.choice([4, 5, 6])) / 100),
+                                    1,
+                                ),
+                            )
 
-                    insert = adjust_list_text(shaken_cat_names)
+                        shaken_cat_names = []
+                        for cat in shaken_cats:
+                            shaken_cat_names.append(str(cat.name))
+                            cat.get_injured(
+                                "shock",
+                                event_triggered=False,
+                                lethal=False,
+                                severity="minor",
+                            )
 
-                    if len(shaken_cats) == 1:
-                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
-                    else:
-                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
+                        insert = adjust_list_text(shaken_cat_names)
+
+                        if len(shaken_cats) == 1:
+                            extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
+                        else:
+                            extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
 
                 else:
-                    event = f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their " \
-                            f"loss, and their Clanmates will miss the spot they took up in their lives. Moments of their " \
-                            f"life are shared in stories around the circle of mourners as those that were closest to them " \
-                            f"take them to their final resting place."
-
-            else:
-                event = (
-                    f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their "
-                    f"loss, and their Clanmates will miss the spot they took up in their lives. Moments of their "
-                    f"life are shared in stories around the circle of mourners as those that were closest to them "
-                    f"take them to their final resting place."
-                )
-
-            game.cur_events_list.append(
-                Single_Event(event, ["birth_death"], [i.ID for i in Cat.dead_cats])
-            )
-            if extra_event:
-                game.cur_events_list.append(
-                    Single_Event(
-                        extra_event, ["birth_death"], [i.ID for i in shaken_cats]
+                    event = (
+                        f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their "
+                        f"loss, and their Clanmates will miss the spot they took up in their lives. Moments of their "
+                        f"life are shared in stories around the circle of mourners as those that were closest to them "
+                        f"take them to their final resting place."
                     )
+
+                game.cur_events_list.append(
+                    Single_Event(event, ["birth_death"], [i.ID for i in Cat.dead_cats])
                 )
+                if extra_event:
+                    game.cur_events_list.append(
+                        Single_Event(
+                            extra_event, ["birth_death"], [i.ID for i in shaken_cats]
+                        )
+                    )
             Cat.dead_cats.clear()
 
         if game.clan.game_mode in ['expanded', 'cruel season'] and game.clan.freshkill_pile:

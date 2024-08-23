@@ -4101,7 +4101,13 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed):
             text, in_dict = cat_dict_check("d_c", cluster, x, rel, r, text, cat_dict)
 
             if in_dict is False:
-                dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
+                if "grief stricken" in cat.illnesses:
+                    dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
+                    try:
+                        dead_cat = Cat.all_cats.get(cat.illnesses['grief stricken'].get("grief_cat"))
+                    except:
+                        pass
+
                 addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
 
                 counter = 0
@@ -4119,19 +4125,6 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed):
                 # text = " ".join(words)
 
                 text = add_to_cat_dict("d_c", cluster, x, rel, r, dead_cat, text, cat_dict)
-
-                if cluster and rel:
-                    cat_dict[f"{r}_d_c_{x}"] = dead_cat
-                    text = re.sub(fr'(?<!\/){r}_d_c_{x}(?!\/)', str(dead_cat.name), text)
-                elif cluster and not rel:
-                    cat_dict[f"d_c_{x}"] = dead_cat
-                    text = re.sub(fr'(?<!\/)d_c_{x}(?!\/)', str(dead_cat.name), text)
-                elif rel and not cluster:
-                    cat_dict[f"{r}_d_c"] = dead_cat
-                    text = re.sub(fr'(?<!\/){r}_d_c(?!\/)', str(dead_cat.name), text)
-                else:
-                    cat_dict["d_c"] = dead_cat
-                    text = re.sub(r'(?<!\/)d_c(?!\/)', str(dead_cat.name), text)
 
         # Random dark forest cat
         if "rdf_c" in text:

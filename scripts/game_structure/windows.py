@@ -2114,6 +2114,9 @@ class DeathScreen(UIWindow):
                 game.clan.your_cat.df = False
                 if not game.clan.your_cat.outside:
                     game.clan.your_cat.outside = False
+                if game.clan.your_cat.status in ["rogue", "kittypet", "former Clancat", "loner"]:
+                    game.clan.your_cat.status = "exiled"
+                    # cant play as an outsider yet gotta cheese it for now
                 game.clan.your_cat.dead_for = 0
                 game.clan.your_cat.moons+=1
                 game.clan.your_cat.update_mentor()
