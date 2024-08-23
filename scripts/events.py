@@ -249,11 +249,11 @@ class Events:
             shaken_cats = []
             extra_event = None
             for ghost in Cat.dead_cats:
-                if not ghost.dead_for > 0:
+                if not ghost.dead_for > 1:
                     ghost_names.append(str(ghost.name))
                 else:
                     continue # keeps cats who generate as dead out of death events
-            insert = "zero cats"
+            insert = ""
             if ghost_names:
                 insert = adjust_list_text(ghost_names)
 
@@ -264,7 +264,7 @@ class Events:
                         f"lives are shared in stories around the circle of mourners as those that were closest to them "
                         f"take them to their final resting place."
                     )
-
+    
                     if len(ghost_names) > 2:
                         alive_cats = list(
                             filter(
@@ -278,7 +278,7 @@ class Events:
                             )
                         )
                         # finds a percentage of the living Clan to become shaken
-
+    
                         if len(alive_cats) == 0:
                             return
                         else:
@@ -289,7 +289,7 @@ class Events:
                                     1,
                                 ),
                             )
-
+    
                         shaken_cat_names = []
                         for cat in shaken_cats:
                             shaken_cat_names.append(str(cat.name))
@@ -299,9 +299,9 @@ class Events:
                                 lethal=False,
                                 severity="minor",
                             )
-
+    
                         insert = adjust_list_text(shaken_cat_names)
-
+    
                         if len(shaken_cats) == 1:
                             extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
                         else:
@@ -4151,7 +4151,7 @@ class Events:
                     elif cat.status in ["kitten", "newborn"] and cat.moons >= 6:
                         self.ceremony(cat, "apprentice")
                         print("exile_or_forgive ceremony for", cat.name, ",", cat.status)
-
+                        
                     else:
                         if cat.moons == 0:
                             cat.status = 'newborn'
