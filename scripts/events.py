@@ -321,15 +321,15 @@ class Events:
                         f"take them to their final resting place."
                     )
 
-            game.cur_events_list.append(
-                Single_Event(event, ["birth_death"], [i.ID for i in Cat.dead_cats])
-            )
-            if extra_event:
                 game.cur_events_list.append(
-                    Single_Event(
-                        extra_event, ["birth_death"], [i.ID for i in shaken_cats]
-                    )
+                    Single_Event(event, ["birth_death"], [i.ID for i in Cat.dead_cats])
                 )
+                if extra_event:
+                    game.cur_events_list.append(
+                        Single_Event(
+                            extra_event, ["birth_death"], [i.ID for i in shaken_cats]
+                        )
+                    )
             Cat.dead_cats.clear()
 
         if game.clan.game_mode in ['expanded', 'cruel season'] and game.clan.freshkill_pile:
