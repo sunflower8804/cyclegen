@@ -2011,6 +2011,7 @@ def event_text_adjust(
     handles finding abbreviations in the text and replacing them appropriately, returns the adjusted text
     :param Cat Cat: always pass the Cat class
     :param str text: the text being adjusted
+    "param dict patrol_cat_dict: LIFEGEN: dict to hold random cat abbrevs in LG patrols
     :param Cat patrol_leader: Cat object for patrol_leader (p_l), if present
     :param Cat main_cat: Cat object for main_cat (m_c), if present
     :param Cat random_cat: Cat object for random_cat (r_c), if present
@@ -2930,13 +2931,14 @@ def cat_dict_check(abbrev, cluster, x, rel, r, text, cat_dict):
     return text, in_dict
 
 other_dict = {}   
-def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed):
+def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
     """ Adjusts dialogue text by replacing abbreviations with cat names
     :param Cat Cat: Cat class
     :param list text: The text being processed 
     :param Cat cat: The object of the cat to whom relationship addons will apply
     :param Dict cat_dict: the dict of cat objects
     :param bool r_c_allowed: Whether or not r_c will be tried for. True for dialogue, False for patrols
+    :param bool o_c_allowed: Whether or not o_c will be tried for. True for dialogue, False for patrols
     """
 
     COUNTER_LIM = 30
@@ -3568,16 +3570,16 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed):
             text, in_dict = cat_dict_check("y_l", cluster, x, rel, r, text, cat_dict)
 
             if in_dict is False:
-                if len(cat.inheritance.get_siblings()) == 0:
+                if len(you.inheritance.get_siblings()) == 0:
                     return ""
                 counter = 0
-                sibling = Cat.fetch_cat(choice(cat.inheritance.get_siblings()))
+                sibling = Cat.fetch_cat(choice(you.inheritance.get_siblings()))
                 addon_check = abbrev_addons(cat, sibling, cluster, x, rel, r)
-                while sibling.outside or sibling.dead or sibling.ID == game.clan.your_cat.ID or sibling.ID == cat.ID or sibling.moons != cat.moons or addon_check is False:
+                while sibling.outside or sibling.dead or sibling.ID == you.ID or sibling.ID == cat.ID or sibling.moons != cat.moons or addon_check is False:
                     counter += 1
                     if counter > COUNTER_LIM:
                         return ""
-                    sibling = Cat.fetch_cat(choice(cat.inheritance.get_siblings()))
+                    sibling = Cat.fetch_cat(choice(you.inheritance.get_siblings()))
                     addon_check = abbrev_addons(cat, sibling, cluster, x, rel, r)
 
                 text = add_to_cat_dict("y_l", cluster, x, rel, r, sibling, text, cat_dict)
@@ -3991,15 +3993,16 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed):
 
                     text = add_to_cat_dict("r_c", cluster, x, rel, r, random_cat, text, cat_dict)
         # Other Clan
-        if "o_c" in text:
-            if "o_c" in other_dict:
-                text = re.sub(r'(?<!\/)o_c(?!\/)', str(other_dict["o_c"].name), text)
-            else:
-                other_clan = choice(game.clan.all_clans)
-                if not other_clan:
-                    return ""
-                other_dict["o_c"] = other_clan
-                text = re.sub(r'(?<!\/)o_c(?!\/)', str(other_clan.name), text)
+        if o_c_allowed is True:
+            if "o_c" in text:
+                if "o_c" in other_dict:
+                    text = re.sub(r'(?<!\/)o_c(?!\/)', str(other_dict["o_c"].name), text)
+                else:
+                    other_clan = choice(game.clan.all_clans)
+                    if not other_clan:
+                        return ""
+                    other_dict["o_c"] = other_clan
+                    text = re.sub(r'(?<!\/)o_c(?!\/)', str(other_clan.name), text)
 
         # Your DF Mentor
         if "df_m_n" in text:

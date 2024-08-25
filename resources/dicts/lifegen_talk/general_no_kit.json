@@ -19415,5 +19415,30 @@
             "[Clanmates smile at the sight and even r_m joins you and teaches you techniques for t_c's specific condition. It isn't long before t_c falls asleep and the medicine cat bows {PRONOUN/r_m/poss} head gratefully.]",
             "[{PRONOUN/r_m/poss/CAP}  {VERB/t_c/thank/thanks} you for taking the time to care for your Clanmate and it's the little things like this that make the biggest difference. Sometimes it's just being there for someone. You think of t_c's smile, the glowing grin of joy. You can't help but agree.]"
         ]
+    ],
+    "gnn_youdeaf_J2_3": [
+        [
+            "only_you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind",
+            "any"
+        ],
+        [
+            "[t_c trips as you walk side by side through camp. You feel {PRONOUN/t_c/poss} body shaking with laughter as you help {PRONOUN/t_c/object} up.]"
+        ]
+    ],
+    "gnn_youdeaf_J2_4": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "only_you_blind",
+            "they_blind",
+            "any"
+        ],
+        [
+            "[t_c helps you navigate the camp after a storm has left the clearing covered in puddles.]",
+            "[The two of you delicately dodge the puddles, grab a meal from the fresh kill pile, and return to a safe, dry den to eat.]"
+        ]
     ]
 }

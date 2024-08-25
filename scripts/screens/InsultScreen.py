@@ -1259,7 +1259,7 @@ class InsultScreen(Screens):
         text = [t1.replace("t_c", str(cat.name)) for t1 in text]
 
         for i in range(len(text)):
-            text[i] = adjust_txt(Cat, text[i], cat, self.cat_dict, r_c_allowed=True)
+            text[i] = adjust_txt(Cat, text[i], cat, self.cat_dict, r_c_allowed=True, o_c_allowed=True)
             if text[i] == "":
                 return ""
             
