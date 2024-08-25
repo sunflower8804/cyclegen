@@ -20295,7 +20295,7 @@
             "[For a moment you think back, trying to remember anything you could have done to upset or bother {PRONOUN/t_c/object}. What did you do!?]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/hesitate/hesitates} before slumping a little and signing out the issue with care.]",
             "[... Moss makes noise? t_c has just informed you that apparently you are very noisy when getting in your nest!]",
-            "[You are stunned for several moments before apologising swiftly and repeatedly. You had no idea!!]",
+            "[You are stunned for several moments before apologizing swiftly and repeatedly. You had no idea!!]",
             "[t_c appears relieved that you're not upset about {PRONOUN/t_c/poss} complaint, and is more than a little amused. You sign that you'll be more careful in the future!]"
         ]
     ],
@@ -20544,7 +20544,7 @@
             "no_kit"
         ],
         [
-            "[The darkness hides so much... but with your lack of hearing comes a sharpness in your sight.]",
+            "[The darkness hides so much... but with your lack of hearing comes a heightened understanding of hidden dangers.]",
             "[t_c bursts from the undergrowth in an explosion of dead leaves and a spray of reddish-mud.]",
             "[You're ready for {PRONOUN/t_c/object} though. No time is wasted in kicking {PRONOUN/t_c/object} off of you.]",
             "[The wrestling continues for several heart-pounding minutes before t_c wrenches {PRONOUN/t_c/self} away to race into the darkness of the forest.]",
@@ -20717,7 +20717,7 @@
     "youdeaf_R52": [
         [
             "only_you_deaf",
-            "shunned",
+            "you_shunned",
             "no_kit",
             "they_deaf",
             "any",
@@ -20733,7 +20733,7 @@
     "youdeaf_R53": [
         [
             "only_you_deaf",
-            "shunned",
+            "you_shunned",
             "they_deaf",
             "any",
             "max_platonic_25"
@@ -20746,7 +20746,7 @@
     "youdeaf_R54": [
         [
             "only_you_deaf",
-            "from mate",
+            "from_mate",
             "they_hearing",
             "any"
         ],
@@ -20763,7 +20763,7 @@
     "youdeaf_R55": [
         [
             "only_you_deaf",
-            "from mate",
+            "from_mate",
             "they_deaf",
             "any"
         ],
