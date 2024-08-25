@@ -1810,5 +1810,32 @@
             "You do realize you're hurting their feelings, correct? Brushing off their pleads for playtime, ignoring the requests for stories...",
             "y_c, let it be known. I have no patience for queens who ignore their duties within this Clan."
         ]
+    ],
+    "youdeaf_R67": [
+        [
+            "only_you_deaf",
+            "newborn",
+            "they_queen",
+            "they_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c is ensuring you're not overwhelmed by curious Clanmates greeting the newest kitten.]"
+        ]
+    ],
+    "youdeaf_R68": [
+        [
+            "you_deaf",
+            "newborn",
+            "they_queen",
+            "they_queen'sapprentice",
+            "brooding",
+            "cool"
+        ],
+        [
+            "[t_c appears less than impressed with you.]",
+            "[You give your loudest mewl in defiance, and seemingly amuse {PRONOUN/t_c/object} with your audacity.]"
+        ]
     ]
 }

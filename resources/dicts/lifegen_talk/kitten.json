@@ -6702,5 +6702,64 @@
             "Do you... even do anything? Except steal attention, eat, and sleep, that is.",
             "No response? ... Are you broken? t_p, I think {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} broken."
         ]
+    ],
+    "youdeaf_R33": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "you_kitten",
+            "they_kitten",
+            "min_platonic_30",
+            "any",
+            "silly",
+            "stable",
+            "unabashed"
+        ],
+        [
+            "[You engage in a staring contest with t_c. You're not about to back down first.]",
+            "[What feels like ages later, you both break at the same time, rubbing your burning eyes.]",
+            "[When you look back up {PRONOUN/t_c/subject} {VERB/t_c/are/is} laughing hysterically. You can feel an amused purr rumbling up in your own chest.]"
+        ]
+    ],
+    "youdeaf_df_R48": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_deaf",
+            "any",
+            "you_dftrainee",
+            "they_df"
+        ],
+        [
+            "[t_c is following you as you trot through the Dark Forest.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/have/has} decided to be your guard for tonight it seems.]"
+        ]
+    ],
+    "youdeaf_R51": [
+        [
+            "only_you_deaf",
+            "shunned",
+            "they_hearing",
+            "any"
+        ],
+        [
+            "[t_c doesn't look at you as you try to sign to {PRONOUN/t_c/object}.]",
+            "[Out of frustration, you muster up what you hope is a loud yowl, the sound reverberating in your chest. t_c whirls to look at you in surprise, fur bristled.]",
+            "[Now {PRONOUN/t_c/subject} {VERB/t_c/look/looks} mad. You're forced to retreat as r_w1 and r_w2 approach to find out what the issue was...]"
+        ]
+    ],
+    "youdeaf_R66": [
+        [
+            "only_you_deaf",
+            "newborn",
+            "they_kitten",
+            "silly",
+            "unabashed"
+        ],
+        [
+            "[t_c is watching you curiously.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/poke/pokes} you when the queens turn away for just a moment.]",
+            "[Quickly, t_c is shooed away after you mewl.]"
+        ]
     ]
 }
