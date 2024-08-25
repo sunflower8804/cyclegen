@@ -4997,8 +4997,8 @@
             "only_you_deaf"
         ],
         [
-            "[You can see t_c's mouth moving. Apparently, most cats can understand what they're saying when they communicate that way, but you can't.]",
-            "[When they notice you staring, t_c waves a paw at you.]"
+            "[You can see t_c's mouth moving. Apparently, most cats can understand what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} saying when {PRONOUN/t_c/subject} {VERB/t_c/communicate/communicates} that way, but you can't.]",
+            "[When {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} you staring, t_c waves a paw at you.]"
         ]
     ],
     "shunned_sc_kit_H1": [
@@ -5387,7 +5387,7 @@
         [
             "[You're batting a pebble when you lose control over it and it tumbles away. It rolls to a halt before t_c.]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/roll/rolls} it back after ensuring your attention was on {PRONOUN/t_c/object}. Thus begins an epic game!]",
-            "[You're both mesmerized by the back and forth until your duties call each of you away. You'll have to play with t_c again sometime.]"
+            "[You're both mesmerized by the back and forth until your Clanmates call each of you away. You'll have to play with t_c again sometime.]"
         ]
     ],
     "youdeaf_df_R49": [
@@ -5438,7 +5438,7 @@
         ],
         [
             "[You feel a rumble as t_c settles beside you.]",
-            "[{PRONOUN/t_c/subject/CAP} touch you, and you can feel something strange that makes you mew.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/touch/touches} you, and you can feel a strange vibration on your whiskers that makes you mew.]",
             "[t_c attempts to soothe you with softer rumbles.]"
         ]
     ],
@@ -5470,7 +5470,7 @@
         ],
         [
             "[You mew as t_c bothers you. {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} poking and prodding you!]",
-            "[Finally you take an opportunity to chomp down on {PRONOUN/t_c/poss} paw - leading to a rumbling purr that spooks you]",
+            "[Finally you take an opportunity to chomp down on {PRONOUN/t_c/poss} paw - leading to a rumbling purr that spooks you.]",
             "[t_c leaves soon after and you snuggle in your nest.]"
         ]
     ],
@@ -5496,7 +5496,7 @@
         [
             "[t_c appears to laugh as you scamper past. You stop and bounce around {PRONOUN/t_c/object}. You're not quite sure how to ask {PRONOUN/t_c/object} to play with you.]",
             "[Luckily, t_c gets the hint, and takes the time to playfully chase you through the camp. It's great fun - and soon r_w1 and r_w2 have joined in!]",
-            "[Eventually, d_n calls them all away, but t_c takes a moment to bruch {PRONOUN/t_c/poss} tongue over your forehead, and you take it as a promise of more games later!]"
+            "[Eventually, d_n calls them all away, but t_c takes a moment to brush {PRONOUN/t_c/poss} tongue over your forehead, and you take it as a promise of more games later!]"
         ]
     ],
     "youdeaf_R71": [
