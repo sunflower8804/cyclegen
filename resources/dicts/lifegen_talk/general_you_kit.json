@@ -5350,5 +5350,227 @@
             "[You bat it back eagerly and the game is on. r_q watches the game with a smile.]",
             "[In the end, you're exhausted, and t_c flops against you with {PRONOUN/t_c/poss} whole body vibrating with a purr!]"
         ]
+    ],
+    "youdeaf_R31": [
+        [
+            "only_you_deaf",
+            "from_parent",
+            "min_plike_20",
+            "any",
+            "they_blind"
+        ],
+        [
+            "[t_c licks your forehead absently.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} mind as you watch {PRONOUN/t_c/poss} mouth.]",
+            "[You enjoy watching {PRONOUN/t_c/object} speak. You'll never tire of learning from {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "youdeaf_R34": [
+        [
+            "only_you_deaf",
+            "they_hearing",
+            "they_blind",
+            "you_kitten",
+            "they_older"
+        ],
+        [
+            "[You're practicing speaking with t_c. Mostly, you are wondering how loud you are.]",
+            "[As {PRONOUN/t_c/subject} {VERB/t_c/wince/winces}, you figure that's probably too loud. It takes effort but the next attempt seems more promising as t_c nods!]"
+        ]
+    ],
+    "youdeaf_R35": [
+        [
+            "only_you_deaf",
+            "they_older",
+            "you_kitten"
+        ],
+        [
+            "[You're batting a pebble when you lose control over it and it tumbles away. It rolls to a halt before t_c.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/roll/rolls} it back after ensuring your attention was on {PRONOUN/t_c/object}. Thus begins an epic game!]",
+            "[You're both mesmerized by the back and forth until your duties call each of you away. You'll have to play with t_c again sometime.]"
+        ]
+    ],
+    "youdeaf_df_R49": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "dark",
+            "they_df",
+            "they_deaf",
+            "they_blind",
+            "you_blind",
+            "any"
+        ],
+        [
+            "[You're not the sneakiest of kits... t_c plucks you out of the murky undergrowth without warning.]",
+            "[You can feel a noise of surprise escape you as you swing from {PRONOUN/t_c/poss} jaws.]",
+            "[Is this it!? Is this the end!?]",
+            "[... t_c puts you down before {PRONOUN/t_c/object}. It's your lucky day, you're not going to be eaten after all!]"
+        ]
+    ],
+    "youdeaf_df_R50": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_df",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[When you fall asleep and awaken to the sight of the murky forest of your dreams, it's a source of joy. t_c is here!]",
+            "[You scamper up to {PRONOUN/t_c/object} with a wide smile. {PRONOUN/t_c/subject/CAP} {VERB/t_c/pretend/pretends} not to notice as {PRONOUN/t_c/subject} {VERB/t_c/ignore/ignores} you.]",
+            "[You're smart though - you can see the smile {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} trying to hide!]"
+        ]
+    ],
+    "youdeaf_R61": [
+        [
+            "only_you_deaf",
+            "newborn"
+        ],
+        [
+            "[Through blurry eyes you see t_c's mouth moving as {PRONOUN/t_c/subject} {VERB/t_c/talk/talks} to you.]"
+        ]
+    ],
+    "youdeaf_R62": [
+        [
+            "only_you_deaf",
+            "newborn"
+        ],
+        [
+            "[You feel a rumble as t_c settles beside you.]",
+            "[{PRONOUN/t_c/subject/CAP} touch you, and you can feel something strange that makes you mew.]",
+            "[t_c attempts to soothe you with softer rumbles.]"
+        ]
+    ],
+    "youdeaf_R63": [
+        [
+            "only_you_deaf",
+            "newborn"
+        ],
+        [
+            "[t_c can be seen making a face at you through your unfocused gaze.]"
+        ]
+    ],
+    "youdeaf_R64": [
+        [
+            "only_you_deaf",
+            "newborn",
+            "you_blind"
+        ],
+        [
+            "[t_c gently carries you back to the nursery after you'd wiggled out from under the queen's watch.]",
+            "[You can feel {PRONOUN/t_c/object} purring.]"
+        ]
+    ],
+    "youdeaf_R65": [
+        [
+            "only_you_deaf",
+            "newborn",
+            "they_medicine_cat"
+        ],
+        [
+            "[You mew as t_c bothers you. {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} poking and prodding you!]",
+            "[Finally you take an opportunity to chomp down on {PRONOUN/t_c/poss} paw - leading to a rumbling purr that spooks you]",
+            "[t_c leaves soon after and you snuggle in your nest.]"
+        ]
+    ],
+    "youdeaf_R69": [
+        [
+            "only_you_deaf",
+            "newborn",
+            "they_deaf",
+            "upstanding",
+            "assertive",
+            "stable"
+        ],
+        [
+            "[After wriggling out of your nest, t_c discovers you.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/set/sets} you back in your nest before grooming some dirt and dust off of you. Once you're all clean after your adventure, t_c leaves with {PRONOUN/t_c/poss} head high.]"
+        ]
+    ],
+    "youdeaf_R70": [
+        [
+            "only_you_deaf",
+            "you_kitten"
+        ],
+        [
+            "[t_c appears to laugh as you scamper past. You stop and bounce around {PRONOUN/t_c/object}. You're not quite sure how to ask {PRONOUN/t_c/object} to play with you.]",
+            "[Luckily, t_c gets the hint, and takes the time to playfully chase you through the camp. It's great fun - and soon r_w1 and r_w2 have joined in!]",
+            "[Eventually, d_n calls them all away, but t_c takes a moment to bruch {PRONOUN/t_c/poss} tongue over your forehead, and you take it as a promise of more games later!]"
+        ]
+    ],
+    "youdeaf_R71": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_queen",
+            "they_queen'sapprentice",
+            "they_deaf"
+        ],
+        [
+            "[t_c works with you on learning a few new signs. Today is prey!]",
+            "[{PRONOUN/t_c/subject} {VERB/t_c/quiz/quizzes} you with a smile on each type from the freshkill pile.]",
+            "[When {PRONOUN/t_c/subject} {VERB/t_c/wiggle/wiggles} {PRONOUN/t_c/poss} ears up and down, you swiftly point to the first bird you see before mimicking the sign.]",
+            "[Then, t_c taps {PRONOUN/t_c/poss} forepaws together before moving one paw back while shaking it. This one stumps you a moment before you think about what it resembles.]",
+            "[Squirrel! You quickly point to the prey on the pile and once again sign for it yourself.]",
+            "[t_c seems pleased before wiggling a forepaw up and down. This one isn't familiar.]",
+            "[It doesn't seem to bother {PRONOUN/t_c/object} that you don't know as you shrug your shoulders in defeat. {PRONOUN/t_c/subject/CAP} {VERB/t_c/point/points} to a fish, and you feel a bit silly for not catching on.]",
+            "[That ends the lesson for the day, though, as t_c signs that {PRONOUN/t_c/subject} {VERB/t_c/need/needs} to go.]"
+        ]
+    ],
+    "deaf_newborn_J1": [
+        [
+            "only_you_deaf",
+            "they_deaf",
+            "they_blind",
+            "newborn",
+            "non-related"
+        ],
+        [
+            "[t_c crouches down in front of you, slowly reaching {PRONOUN/t_c/poss} nose forward to give you a sniff.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} hesitant at first, but after a few moments, you can feel the tremors of the ground beneath you as {PRONOUN/t_c/subject} {VERB/t_c/begin/begins} to purr.]"
+        ]
+    ],
+    "deaf_newborn_J2": [
+        [
+            "only_you_deaf",
+            "they_deaf",
+            "they_blind",
+            "you_blind",
+            "you_newborn"
+        ],
+        [
+            "[You can feel the presence of so many big cats around you!]",
+            "[Worried they might step on you, you begin rolling around. The ground begins to vibrate with laughter as a large paw steadies you.]"
+        ]
+    ],
+    "deaf_newborn_J3": [
+        [
+            "you_deaf",
+            "they_deaf",
+            "they_older",
+            "newborn",
+            "sweet",
+            "stable"
+        ],
+        [
+            "[It's so bright in this new world!]",
+            "[t_c sees you squinting at the sun and moves to sit in front of you, casting a shadow for you to sit in.]"
+        ]
+    ],
+    "deaf_newborn_J4": [
+        [
+            "newborn",
+            "you_deaf",
+            "you_blind",
+            "they_deaf",
+            "they_blind",
+            "from_adopted_parent",
+            "from_parent"
+        ],
+        [
+            "[As you rest in between t_c's forelegs, {PRONOUN/t_c/subject} {VERB/t_c/rest/rests} {PRONOUN/t_c/poss} head on your back and {VERB/t_c/begin/begins} to hum.]",
+            "[The vibrations soothe you to sleep.]"
+        ]
     ]
 }

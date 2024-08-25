@@ -3341,5 +3341,92 @@
             "[Yet it's been many, many moons and t_c is still around.]",
             "[Perhaps they've done something so horrible that they will be forced to walk these dark grounds forever.]"
         ]
+    ],
+    "youdeaf_R42": [
+        [
+            "only_you_deaf",
+            "littermate",
+            "min_trust_20",
+            "any"
+        ],
+        [
+            "[While others struggle to speak to you, your littermates have never had such a problem. t_c knows just how you feel and what you'd want to say if your voice was the same as {PRONOUN/t_c/inposs}.]",
+            "[That's why you trust {PRONOUN/t_c/object} to use {PRONOUN/t_c/object} voice as your own when needed.]"
+        ]
+    ],
+    "youdeaf_R43": [
+        [
+            "only_you_deaf",
+            "littermate",
+            "min_comfort_20",
+            "any",
+            "they_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[Words aren't something that come easily to you. That's okay thought - t_c doesn't need them.]",
+            "[You're comfortable together. There's no need for idle chatter when you can enjoy each other's company.]"
+        ]
+    ],
+    "youdeaf_R44": [
+        [
+            "only_you_deaf",
+            "littermate",
+            "they_deaf",
+            "they_blind",
+            "any"
+        ],
+        [
+            "[All eyes are on t_c today. It must not have been a good day for {PRONOUN/t_c/object}.]",
+            "[You watch {PRONOUN/t_c/object} for a bit longer before getting to your paws to approach.]",
+            "[Tension rises around you, but you merely flop down beside t_c and begin washing your paw comfortably.]",
+            "[The silent, supportive company is enough to let t_c relax. {PRONOUN/t_c/subject/CAP} {VERB/t_c/settle/settles} down and before long, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} fast asleep.]"
+        ]
+    ],
+    "youdeaf_R45": [
+        [
+            "only_you_deaf",
+            "littermate",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[t_c realizes you're watching {PRONOUN/t_c/object} and begins to make funny faces at you.]"
+        ]
+    ],
+    "youdeaf_R46~1": [
+        [
+            "only_you_deaf",
+            "littermate",
+            "they_unlawful",
+            "they_unabashed",
+            "they_assertive",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[t_c walks right up to your side, and you turn to look to see if {PRONOUN/t_c/subject} {VERB/t_c/are/is} about to sign to you.]",
+            "[Instead, {PRONOUN/t_c/subject} {VERB/t_c/flop/flops} on you, knocking you over under {PRONOUN/t_c/poss} body.]",
+            "[t_c pretends not to see you signing for freedom.]"
+        ]
+    ],
+    "youdeaf_R46~2": [
+        [
+            "only_you_deaf",
+            "littermate",
+            "they_unlawful",
+            "they_unabashed",
+            "they_assertive",
+            "connected",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[t_c is up to something... You haven't seen {PRONOUN/t_c/object} in a few.]",
+            "[That's okay. When {PRONOUN/t_c/subject} {VERB/t_c/do/does} try to sneak up on you, you're ready.]",
+            "[You tackle t_c before {PRONOUN/t_c/subject} can get you, and sit on {PRONOUN/t_c/object} mercilessly.]",
+            "[Revenge is sweet.]"
+        ]
     ]
 }
