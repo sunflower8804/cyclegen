@@ -14,9 +14,6 @@ from .AchievementScreen import AchievementScreen
 from .MurderScreen import MurderScreen
 from .DeputyScreen import DeputyScreen
 from .NameKitsScreen import NameKitsScreen
-from .LifeGenPatrolScreen import LifeGenPatrolScreen
-from .DFPatrolScreen import DFPatrolScreen
-from .DatePatrolScreen import DatePatrolScreen
 from .AffairScreen import AffairScreen
 from .ClearingScreen import ClearingScreen
 from .QueenScreen import QueenScreen
@@ -109,8 +106,5 @@ queen_screen = QueenScreen("queen screen")
 moonplace_screen = MoonplaceScreen("moonplace screen")
 gift_screen = GiftScreen("gift screen")
 
-patrol_screen = PatrolScreen('patrol screen2')
-patrol_screen2 = LifeGenPatrolScreen('patrol screen')
-patrol_screen3 = DFPatrolScreen('patrol screen3')
-patrol_screen4 = DatePatrolScreen('patrol screen4')
+patrol_screen = PatrolScreen('patrol screen')
 
