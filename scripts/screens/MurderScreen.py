@@ -1270,9 +1270,6 @@ class MurderScreen(Screens):
         if chance < 25 and self.method == "predator":
             chance = 25
 
-        chance = 100
-        # debug
-
         return chance
     
 
@@ -2357,9 +2354,7 @@ class MurderScreen(Screens):
 
         if chance > 95:
             chance = 95
-        
-        chance = 100
-        # debug
+
         return chance
     
     def update_method_info(self):
