@@ -9,7 +9,7 @@ from scripts.event_class import Single_Event
 
 from .Screens import Screens
 from scripts.utility import get_text_box_theme, scale, process_text
-from scripts.cat.cats import Cat
+from scripts.cat.cats import Cat, INJURIES
 from scripts.game_structure import image_cache
 from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
@@ -1130,9 +1130,9 @@ class MurderScreen(Screens):
             chance -= 24
 
         if self.location == "border":
-            chance += 32
+            chance += 22
         if self.time == "night":
-            chance += 40
+            chance += 30
 
         if cat_to_murder.joined_df:
             chance += 32
@@ -1187,19 +1187,18 @@ class MurderScreen(Screens):
                 chance -= 16
 
             if cat_to_murder.status == "warrior" and cat_healthy:
-                chance += 24
+                chance += 15
             if you.status in ["mediator", "mediator apprentice", "queen", "queen's apprentice", "medicine cat", "medicine cat apprentice", "kitten"]:
-                chance += 32
+                chance += 10
 
-            if self.method == "attack":
-                if "avid play-fighter" in their_skills:
-                    chance += 8
-                if "good fighter" in their_skills:
-                    chance += 12
-                if "formidable fighter" in their_skills:
-                    chance += 18
-                if "unusually strong fighter" in their_skills:
-                    chance += 25
+            if "avid play-fighter" in their_skills:
+                chance += 8
+            if "good fighter" in their_skills:
+                chance += 12
+            if "formidable fighter" in their_skills:
+                chance += 18
+            if "unusually strong fighter" in their_skills:
+                chance += 25
 
             if self.location == "camp":
                 chance += 8
@@ -1213,21 +1212,21 @@ class MurderScreen(Screens):
             acc_skills_lvl_4 = ["master of territories", "pathfinder", "impressive climber"]
 
             if any(skill in acc_skills_lvl_1 for skill in your_skills):
-                chance += 5
+                chance -= 5
             if any(skill in acc_skills_lvl_2 for skill in your_skills):
-                chance += 10
+                chance -= 10
             if any(skill in acc_skills_lvl_3 for skill in your_skills):
-                chance += 15
+                chance -= 15
             if any(skill in acc_skills_lvl_4 for skill in your_skills):
-                chance += 20
-
-            if self.location == "camp":
                 chance -= 20
 
+            if self.location == "camp":
+                chance -= 15
+
             if game.clan.biome == "Mountainous":
-                chance += 20
+                chance += 10
             if cat_to_murder.status in ["warrior", "deputy", "leader"] and cat_healthy:
-                chance += 15
+                chance += 11
 
         if self.method == "predator":
 
@@ -1249,9 +1248,9 @@ class MurderScreen(Screens):
                 chance -= 35
 
             if cat_to_murder.status in ["warrior", "deputy", "leader"] and cat_healthy:
-                chance += 24
+                chance += 10
             if you.status in ["queen", "mediator", "kitten", "medicine cat", "queen's apprentice", "mediator apprentice", "medicine cat apprentice"]:
-                chance += 24
+                chance += 15
 
             if "avid play-fighter" in their_skills:
                 chance += 8
@@ -1312,6 +1311,7 @@ class MurderScreen(Screens):
         
         if death and not injury:
             you.die()
+
         if injury and not death:
             if self.method == "attack":
                 owie = choice(["claw-wound", "bite-wound", "torn pelt", "sprain", "sore", "bruises", "scrapes"])
@@ -1332,275 +1332,215 @@ class MurderScreen(Screens):
                 if randint(1,4) == 1:
                     accomplice.get_injured(owie2)
 
-            you.get_injured(owie)
-
-        if injury:
-            risk = " injury"
-        elif death:
-            risk = " death"
-        else: 
-            risk = ""
-
-        if (all_leader_lives and cat_to_murder.status == "leader") or (not all_leader_lives and cat_to_murder.status == "leader" and game.clan.leader_lives == 1):
-            lives = " all_lives"
-        else:
-            lives = ""
+            # you.get_injured(owie)
         
+        # CHOOSING TEXT
         biome = game.clan.biome.lower()
         camp = game.clan.camp_bg
 
-        if accomplice and accompliced:
-            accomp = " accomplice_agreed"
-        elif accomplice:
-            accomp = " accomplice_refused"
-        elif not accomplice and not accompliced:
-            accomp = " alone"
-        else:
-            accomp = ""
+        ceremony_txt = []
+        possible_keys = []
 
-        insert = you.status.replace(" ", "")
-        insert2 = cat_to_murder.status.replace(" ", "")
+        murder_events = {}
 
-        statuses = [
-             f"{insert} {insert2}",
-             f"any {insert2}",
-             f"{insert} any",
-             "any any"
-           ]
-        
-        found = False
-        for status in statuses:
-            if found:
-                break
-            try:
-                print("------------------------------------------")
-                print("1 Looking for:", status)
+        methods = ["attack", "poison", "accident", "predator"]
 
-                ceremony_txt = self.m_txt[f"{status} murder {self.method} {self.location} {self.time}{risk}{lives}"]
+        locations = ["camp", "territory", "border"]
+
+        times = ["day", "night", "dawn"]
+
+        camps = ["camp1", "camp2", "camp3", "camp4", "camp5", "camp6"]
+
+
+        for i in self.m_txt.items():
+            key = i[0]
+            murder_dict = i[1]
+
+            if "your_status" in murder_dict:
+                if "adult" in murder_dict["your_status"]:
+                    if you.moons < 12:
+                        continue
+
+                elif "no_kit" in murder_dict["your_status"]:
+                    if you.moons < 6:
+                        continue
+
+                elif "all_apprentices" in murder_dict["your_status"]:
+                    if you.moons > 12 or you.moons < 6:
+                        continue
+
+                elif "healer_cat" in murder_dict["your_status"]:
+                    if you.status not in ["medicine cat", "medicine cat apprentice"]:
+                        continue
                 
-                # this is checking through status/any combinations again,
-                # because at this point in the try loop, we're stuck with one
-                statusesagain = [
-                        f"{insert} {insert2}"
-                        f"{insert} any",
-                        f"any {insert2}"
-                        # "any any"
-                        # I want less generic ones if a specific one is found. Can be uncommented though.
-                       ]
+                elif you.status not in murder_dict["your_status"]:
+                    if "any" not in murder_dict["your_status"]:
+                        continue
+
+            if "victim_status" in murder_dict:
+                if "adult" in murder_dict["victim_status"]:
+                    if cat_to_murder.moons < 12:
+                        continue
+
+                elif "no_kit" in murder_dict["victim_status"]:
+                    if cat_to_murder.moons < 6:
+                        continue
+
+                elif "all_apprentices" in murder_dict["victim_status"]:
+                    if cat_to_murder.moons > 12 or cat_to_murder.moons < 6:
+                        continue
+
+                elif "healer_cat" in murder_dict["victim_status"]:
+                    if cat_to_murder.status not in ["medicine cat", "medicine cat apprentice"]:
+                        continue
                 
-                for each in statusesagain:
+                elif cat_to_murder.status not in murder_dict["victim_status"]:
+                    if "any" not in murder_dict["victim_status"]:
+                        continue
+
+            if "relatonship" in murder_dict and murder_dict["relationship"]:
+                if "mates" in murder_dict["relationship"]:
+                    if cat_to_murder not in you.mates:
+                        continue
+                if "siblings" in murder_dict["relationship"]:
+                    if cat_to_murder.ID not in you.inheritance.get_siblings():
+                        continue
+
+                if "your_parent" in murder_dict["relationship"]:
+                    if you.parent1:
+                        if cat_to_murder.ID != you.parent1:
+                            continue
+                    if you.parent2:
+                        if cat_to_murder.ID != you.parent2:
+                            continue
+                    if cat_to_murder.ID not in you.inheritance.get_adoptive_parents():
+                        continue
+
+                if "your_kit" in murder_dict["relationship"]:
+                    if (
+                        cat_to_murder.ID not in you.inheritance.get_blood_kits() and
+                        cat_to_murder.ID not in you.inheritance.get_not_blood_kits()
+                        ):
+                        continue
+
+                if "your_apprentice" in murder_dict["relationship"]:
+                    if cat_to_murder.mentor != game.clan.your_cat.ID:
+                        continue
                 
-                    extension1 = f"{each} murder {self.method} {self.location}{risk}{lives}"
-                    extension2 = f"{each} murder {self.method}{risk}{lives}"
+                if "your_mentor" in murder_dict["relationship"]:
+                    if game.clan.your_cat.mentor != cat_to_murder.ID:
+                        continue
 
-                    # biomes are seperate, optional extensions
-                    extension3 = f"{each} murder {self.method} {self.location}{risk}{lives} {biome}"
-                    extension4 = f"{each} murder {self.method}{risk}{lives} {biome}"
+                        
 
-                    # accomplice addons are also optional
-                    extension5 = f"{each} murder {self.method} {self.location}{risk}{lives}{accomp}"
-                    extension6 = f"{each} murder {self.method}{risk}{lives}{accomp}"
+            if "biome" in murder_dict and murder_dict["biome"]:
+                if biome and biome not in murder_dict["biome"]:
+                    continue
+                if any(i in tags for i in camps) and camp not in murder_dict["biome"]:
+                    continue
 
-                    extension7 = f"{each} murder {self.method} {self.location}{risk}{lives} {biome}{accomp}"
-                    extension8 = f"{each} murder {self.method}{risk}{lives} {biome}{accomp}"
+            if "strategy" in murder_dict and murder_dict["strategy"]:
+                tags = [i for i in murder_dict["strategy"]]
 
-                    # camps are optional too! but only come if theres a biome as well
-                    extension9 = f"{each} murder {self.method} {self.location}{risk}{lives} {biome} {camp}"
-                    extension10 = f"{each} murder {self.method}{risk}{lives} {biome} {camp}"
-                    extension11 = f"{each} murder {self.method} {self.location}{risk}{lives} {biome} {camp}{accomp}"
-                    extension12 = f"{each} murder {self.method}{risk}{lives} {biome} {camp}{accomp}"
+                if any(i in tags for i in methods) and self.method not in murder_dict["strategy"]:
+                    continue
+                if any(i in tags for i in locations) and self.location not in murder_dict["strategy"]:
+                    continue
+                if any(i in tags for i in times) and self.time not in murder_dict["strategy"]:
+                    continue
 
-                    if extension1 in self.m_txt and self.m_txt[extension1]:
-                        ceremony_txt.extend(self.m_txt[extension1])
-                    else:
-                        print("Empty key: ", extension1)
-                        # printing empty keys to help the writers find them!
-
-                    if extension2 in self.m_txt and self.m_txt[extension2]:
-                        ceremony_txt.extend(self.m_txt[extension2])
-                    else:
-                        print("Empty key: ", extension2)
-                    
-                    if extension3 in self.m_txt and self.m_txt[extension3]:
-                        ceremony_txt.extend(self.m_txt[extension3])
-                    else:
-                        print("Empty key: ", extension3)
-
-                    if extension4 in self.m_txt and self.m_txt[extension4]:
-                        ceremony_txt.extend(self.m_txt[extension4])
-                    else:
-                        print("Empty key: ", extension4)
-
-                    if extension5 in self.m_txt and self.m_txt[extension5]:
-                        ceremony_txt.extend(self.m_txt[extension5])
-                    else:
-                        print("Empty key: ", extension5)
-
-                    if extension6 in self.m_txt and self.m_txt[extension6]:
-                        ceremony_txt.extend(self.m_txt[extension6])
-                    else:
-                        print("Empty key: ", extension6)
-                    
-                    if extension7 in self.m_txt and self.m_txt[extension7]:
-                        ceremony_txt.extend(self.m_txt[extension7])
-                    else:
-                        print("Empty key: ", extension7)
-
-                    if extension8 in self.m_txt and self.m_txt[extension8]:
-                        ceremony_txt.extend(self.m_txt[extension8])
-                    else:
-                        print("Empty key: ", extension8)
-
-                    if extension9 in self.m_txt and self.m_txt[extension9]:
-                        ceremony_txt.extend(self.m_txt[extension9])
-                    else:
-                        print("Empty key: ", extension9)
-
-                    if extension10 in self.m_txt and self.m_txt[extension10]:
-                        ceremony_txt.extend(self.m_txt[extension10])
-                    else:
-                        print("Empty key: ", extension10)
-
-                    if extension11 in self.m_txt and self.m_txt[extension11]:
-                        ceremony_txt.extend(self.m_txt[extension11])
-                    else:
-                        print("Empty key: ", extension11)
-
-                    if extension12 in self.m_txt and self.m_txt[extension12]:
-                        ceremony_txt.extend(self.m_txt[extension12])
-                    else:
-                        print("Empty key: ", extension12)
-
-                found = True
-               
-                if len(ceremony_txt) > 1:
-                    ceremony_txt = choice(ceremony_txt)
+            # tags!
+            # this includes all_lives, accomplice tags, and injury/death tags.
+            # perhaps skills and clusters in the future.
+            if "tags" in murder_dict and murder_dict["tags"]:
+                if (
+                    (all_leader_lives and cat_to_murder.status == "leader")
+                    or (not all_leader_lives and cat_to_murder.status == "leader"and game.clan.leader_lives == 1)
+                    ):
+                    if "all_lives" not in murder_dict["tags"]:
+                        continue
                 else:
-                    ceremony_txt = ceremony_txt[0]
+                    if "all_lives" in murder_dict["tags"]:
+                        continue
 
-                print("1 Success!")
-            except:
-                try:
-                    print(f"No unique murder events found for '{status} murder {self.method} {self.location} {self.time}{risk}{lives}'")
-                    print("2 Looking for:", status)
-                    ceremony_txt = self.m_txt[f"{status} murder {self.method} {self.location}{risk}{lives}"]
-                    
-                    statusesagain = [
-                        f"{insert} {insert2}",
-                            f"{insert} any",
-                            f"any {insert2}"
-                            # "any any"
-                        ]
-                    
-                    for each in statusesagain:
-                    
-                        extension1 = f"{each} murder {self.method}{risk}{lives}"
-                        extension2 = f"{each} murder {self.method}{risk}{lives} {biome}"
-
-                        extension3 = f"{each} murder {self.method}{risk}{lives}{accomp}"
-                        extension4 = f"{each} murder {self.method}{risk}{lives} {biome}{accomp}"
-
-                        extension5 = f"{each} murder {self.method}{risk}{lives} {biome} {camp}"
-                        extension6 = f"{each} murder {self.method}{risk}{lives} {biome} {camp}{accomp}"
-
-                        if extension1 in self.m_txt and self.m_txt[extension1]:
-                            ceremony_txt.extend(self.m_txt[extension1])
-                        else:
-                            print("Empty key: ", extension1)
-
-                        if extension2 in self.m_txt and self.m_txt[extension2]:
-                            ceremony_txt.extend(self.m_txt[extension2])
-                        else:
-                            print("Empty key: ", extension2)
-                        
-                        if extension3 in self.m_txt and self.m_txt[extension3]:
-                            ceremony_txt.extend(self.m_txt[extension3])
-                        else:
-                            print("Empty key: ", extension3)
-
-                        if extension4 in self.m_txt and self.m_txt[extension4]:
-                            ceremony_txt.extend(self.m_txt[extension4])
-                        else:
-                            print("Empty key: ", extension4)
-
-                        if extension5 in self.m_txt and self.m_txt[extension5]:
-                            ceremony_txt.extend(self.m_txt[extension5])
-                        else:
-                            print("Empty key: ", extension5)
-
-                        if extension6 in self.m_txt and self.m_txt[extension6]:
-                            ceremony_txt.extend(self.m_txt[extension6])
-                        else:
-                            print("Empty key: ", extension6)
+                if injury:
+                    if "injury" not in murder_dict["tags"]:
+                        continue
+                elif death:
+                    if "death" not in murder_dict["tags"]:
+                        continue
                 
-                    found = True
+                if not injury and not death:
+                    if "injury" in murder_dict["tags"]:
+                        continue
+                    if "death" in murder_dict["tags"]:
+                        continue
 
-                    ceremony_txt = choice(ceremony_txt)
-                    print("2 Success!")
-                except:
-                    print(f"No unique murder events found for '{status} murder {self.method} {self.location}{risk}{lives}'")
-                    print("3 Looking for:", status)
-                    try:
-                        ceremony_txt = self.m_txt[f"{status} murder {self.method}{risk}{lives}"]
+                if accomplice and accompliced:
+                    if "alone" in murder_dict["tags"]:
+                        continue
+                    if "accomplice_refused" in murder_dict["tags"]:
+                        continue
 
-                        statusesagain = [
-                            f"{insert} {insert2}",
-                                f"{insert} any",
-                                f"any {insert2}"
-                                # "any any"
-                            ]
-                        
-                        for each in statusesagain:
-                        
-                            extension1 = f"{each} murder{risk}{lives}"
-                            extension2 = f"{each} murder{risk}{lives} {biome}"
+                elif accomplice:
+                    if "alone" in murder_dict["tags"]:
+                        continue
+                    if "accomplice_agreed" in murder_dict["tags"]:
+                        continue
 
-                            extension3 = f"{each} murder{risk}{lives}{accomp}"
-                            extension4 = f"{each} murder{risk}{lives} {biome}{accomp}"
+                elif not accomplice and not accompliced:
+                    if "accomplice_refused" in murder_dict["tags"]:
+                        continue
+                    if "accomplice_agreed" in murder_dict["tags"]:
+                        continue
 
-                            extension5 = f"{each} murder{risk}{lives} {biome} {camp}"
-                            extension6 = f"{each} murder{risk}{lives} {biome} {camp}{accomp}"
+            elif "tags" in murder_dict and not murder_dict["tags"]:
+            # injury and death outcomes cannot get events with empty tags
+                if injury:
+                    continue
+                if death:
+                    continue
 
-                            if extension1 in self.m_txt and self.m_txt[extension1]:
-                                ceremony_txt.extend(self.m_txt[extension1])
-                            else:
-                                print("Empty key: ", extension1)
 
-                            if extension2 in self.m_txt and self.m_txt[extension2]:
-                                ceremony_txt.extend(self.m_txt[extension2])
-                            else:
-                                print("Empty key: ", extension2)
+            possible_keys.append(key)
 
-                            if extension3 in self.m_txt and self.m_txt[extension3]:
-                                ceremony_txt.extend(self.m_txt[extension3])
-                            else:
-                                print("Empty key: ", extension3)
+            # if "texts" in murder_dict and murder_dict["texts"]:
+            #     for event in murder_dict["texts"]:
+            #         ceremony_txt.append(event)
+            
+            murder_events.update({key: murder_dict})
 
-                            if extension4 in self.m_txt and self.m_txt[extension4]:
-                                ceremony_txt.extend(self.m_txt[extension4])
-                            else:
-                                print("Empty key: ", extension4)
 
-                            if extension5 in self.m_txt and self.m_txt[extension5]:
-                                ceremony_txt.extend(self.m_txt[extension5])
-                            else:
-                                print("Empty key: ", extension5)
+        print("POSSIBLE KEYS:", possible_keys)
 
-                            if extension6 in self.m_txt and self.m_txt[extension6]:
-                                ceremony_txt.extend(self.m_txt[extension6])
-                            else:
-                                print("Empty key: ", extension6)
+        options = []
+        for i in murder_events.items():
+            options.append(i)
 
-                        found = True
-                        print("3 Success!")
+        chosen_event = choice(options)
 
-                        ceremony_txt = choice(ceremony_txt)
-                    except:
-                        ceremony_txt = choice(self.m_txt["any any murder"])
-                        print("WARNING: Falling back to general murder text.")
+        if "texts" in chosen_event[1]:
+            if chosen_event[1]["texts"]:
+                for event in chosen_event[1]["texts"]:
+                    ceremony_txt.append(event)
+            else:
+                print("Blank murder text for", chosen_event[0])
+                return
+            
+        if injury:
+            if "tags" in chosen_event[1] and chosen_event[1]["tags"]:
+                if injury:
+                    for t in chosen_event[1]["tags"]:
+                        if any(t in chosen_event[1] for t in INJURIES):
+                            if t in INJURIES:
+                                you.get_injured(t)
+                        else:
+                            print("No defined injury for", chosen_event[0])
+                            you.get_injured(owie)
 
-        # ceremony_txt = choice(self.m_txt["any any murder plains camp5"])
-        # uncomment + add in the key to get a specific one for testing
+        ceremony_txt = choice(ceremony_txt)
+
+
 
         other_clan = choice(game.clan.all_clans)
         ceremony_txt = ceremony_txt.replace('c_n', game.clan.name)
@@ -2414,7 +2354,7 @@ class MurderScreen(Screens):
 
         if chance > 95:
             chance = 95
-        
+
         return chance
     
     def update_method_info(self):

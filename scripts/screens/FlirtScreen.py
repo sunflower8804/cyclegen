@@ -1135,7 +1135,7 @@ class FlirtScreen(Screens):
     def get_adjusted_txt(self, text, cat):
         you = game.clan.your_cat
         for i in range(len(text)):
-            text[i] = adjust_txt(Cat, text[i], cat, self.cat_dict, r_c_allowed=True)
+            text[i] = adjust_txt(Cat, text[i], cat, self.cat_dict, r_c_allowed=True, o_c_allowed=True)
             if text[i] == "":
                 return ""
 

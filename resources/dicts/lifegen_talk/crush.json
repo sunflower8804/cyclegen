@@ -464,20 +464,19 @@
     "cool_tomedcat": [
         [
             "you_medicine_cat",
-	        "you_medicine_cat_apprentice",
+            "you_medicine_cat_apprentice",
             "cool",
-	        "min_platonic_40"
+            "min_platonic_40"
         ],
         [
             "[You notice aloud to t_c that your_crush has been sick an awful lot recently ...]",
-	        "Psh, yeah, no doubt they're sick. {PRONOUN/your_crush/subject/CAP}{VERB/your_crush/'ve/'s}  got a horrible case of y_c fever.",
-	        "[You blush, looking away. Surely your_crush doesn't actually feel that way about you ... right?]",
-	        "[Sensing your hesitation, t_c rolls {PRONOUN/t_c/poss} eyes.]",
-	        "I swear, y_c, you're so blind, there has got to be some mole blood in your ancestry.",
-	        "If I have to see the two of you pining after each other any longer, I just might have to take matters into my own paws!"
+            "Psh, yeah, no doubt they're sick. {PRONOUN/your_crush/subject/CAP}{VERB/your_crush/'ve/'s}  got a horrible case of y_c fever.",
+            "[You blush, looking away. Surely your_crush doesn't actually feel that way about you ... right?]",
+            "[Sensing your hesitation, t_c rolls {PRONOUN/t_c/poss} eyes.]",
+            "I swear, y_c, you're so blind, there has got to be some mole blood in your ancestry.",
+            "If I have to see the two of you pining after each other any longer, I just might have to take matters into my own paws!"
         ]
     ],
-
     "deaf_crush_J2": [
         [
             "any",

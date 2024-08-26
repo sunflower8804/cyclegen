@@ -59,17 +59,6 @@
             "Grr..."
         ]
     ],
-    "newborn_7": [
-        [
-            "Any",
-            "insult",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Grr..."
-        ]
-    ],
     "newborn_11": [
         [
             "newborn",
@@ -123,17 +112,6 @@
     "newborn_16": [
         [
             "newborn",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Grr..."
-        ]
-    ],
-    "newborn_17": [
-        [
-            "newborn",
-            "insult",
             "they_blind",
             "you_blind"
         ],
@@ -1896,20 +1874,6 @@
             "Grr..."
         ]
     ],
-    "newborn_7dead_dead": [
-        [
-            "Any",
-            "insult",
-            "you_dead",
-            "they_dead",
-            "they_outside",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Grr..."
-        ]
-    ],
     "newborn_11dead_dead": [
         [
             "any",
@@ -2097,18 +2061,6 @@
             "you_dead",
             "they_dead",
             "any",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "MROOOOOOOOW!!!!!!!!"
-        ]
-    ],
-    "newborn_sh_insult_J1": [
-        [
-            "insult",
-            "any",
-            "you_shunned",
             "they_blind",
             "you_blind"
         ],

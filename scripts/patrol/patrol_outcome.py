@@ -231,11 +231,16 @@ class PatrolOutcome:
         results = [self._handle_new_cats(patrol)]
 
         # lifegen random abbrev processing!
-        lifegen_abbrev_text = adjust_txt(Cat, self.text, patrol.patrol_leader, patrol.patrol_cat_dict, r_c_allowed=False)
+        lifegen_abbrev_text = adjust_txt(Cat, self.text, patrol.patrol_leader, patrol.patrol_cat_dict, r_c_allowed=False, o_c_allowed=False)
+
+        text = lifegen_abbrev_text
+        if lifegen_abbrev_text in [None, ""]:
+            print("No text!")
+            text = self.text
 
         # the text has to be processed before - otherwise leader might be referenced with their warrior name
         processed_text = event_text_adjust(Cat,
-                                           lifegen_abbrev_text,
+                                           text,
                                            patrol_leader=patrol.patrol_leader,
                                            # LIFEGEN ^^ pls don't remove
                                            patrol_cat_dict=patrol.patrol_cat_dict,
@@ -521,10 +526,12 @@ class PatrolOutcome:
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
                     out_set.add(self.stat_cat)
+                # lifegen ------------------
                 elif _cat == "y_c":
                     out_set.add(game.clan.your_cat)
                 elif _cat == "o_c1":
                     out_set.add(patrol.patrol_cats[2])
+                # --------------------------
                 elif _cat == "app1" and len(patrol.patrol_apprentices) >= 1:
                     out_set.add(patrol.patrol_apprentices[0])
                 elif _cat == "app2" and len(patrol.patrol_apprentices) >= 2:
@@ -768,10 +775,12 @@ class PatrolOutcome:
                     out_set.add(patrol.patrol_leader)
                 elif _cat == "s_c":
                     out_set.add(self.stat_cat)
+                # lifegen ------------------
                 elif _cat == "y_c":
                     out_set.add(game.clan.your_cat)
                 elif _cat == "o_c1":
                     out_set.add(patrol.patrol_cats[2])
+                # --------------------------
                 elif _cat == "app1" and len(patrol.patrol_apprentices) >= 1:
                     out_set.add(patrol.patrol_apprentices[0])
                 elif _cat == "app2" and len(patrol.patrol_apprentices) >= 2:

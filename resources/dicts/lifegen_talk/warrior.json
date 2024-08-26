@@ -12,17 +12,6 @@
             "..."
         ]
     ],
-    "dep_132": [
-        [
-            "newborn",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Wha.. What was that?"
-        ]
-    ],
     "cool_1": [
         [
             "Any",
@@ -230,16 +219,6 @@
             "... d_c, where are you?"
         ]
     ],
-    "warrior_1d6": [
-        [
-            "kitten",
-            "insult",
-            "you_blind"
-        ],
-        [
-            "Oh, a kit with a warrior's spirit, I see."
-        ]
-    ],
     "brooding_medapp": [
         [
             "apprentice",
@@ -312,137 +291,6 @@
             "I can't wait for you to open your eyes; you'll have a lot of fun out here, I'm sure.",
             "I have high hopes for you, my little warrior. You're going to be great some day; I know it.",
             "I hope you won't disappoint me."
-        ]
-    ],
-    "app_32a1": [
-        [
-            "insult",
-            "warrior",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Careful, your jealousy is showing."
-        ]
-    ],
-    "app_32da1": [
-        [
-            "insult",
-            "warrior",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "I'd be more offended if I respected your opinion."
-        ]
-    ],
-    "app_32afa1": [
-        [
-            "insult",
-            "warrior",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Is that the best you can do?"
-        ]
-    ],
-    "app_32fax1": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Your words do not define me. I know who I am and where my loyalties lie."
-        ]
-    ],
-    "app_32fca1": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Oh, a playful jab, huh? Good thing warriors are tough!"
-        ]
-    ],
-    "app_32fab1": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "It's easy to criticize, harder to understand. I hope one day you'll see the strength in empathy."
-        ]
-    ],
-    "app_32fa21": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Your words may sting, but they won't deter me from my duty."
-        ]
-    ],
-    "app_32faf1": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Insults are a warrior's last resort. Let's show each other respect."
-        ]
-    ],
-    "app_32faa1": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Every cat can spit fire when they're riled up. But it's the one who remains cool who wins the fight."
-        ]
-    ],
-    "app_32fad1": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "We may not always see eye to eye, but we're part of the same Clan. Let's put our differences aside."
-        ]
-    ],
-    "app_32fa1": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind",
-            "you_deaf",
-            "they_deaf"
-        ],
-        [
-            "..."
         ]
     ],
     "warrior2134": [
@@ -2125,19 +1973,6 @@
             "[t_c immediately rushes to guard the camp entrance after hearing word of a fox roaming about the territory, glaring at every leaf, tree, and bush that so much as rustles in the wind.]"
         ]
     ],
-    "upstanding_warrior17": [
-        [
-            "upstanding",
-            "from_mentor",
-            "insult",
-            "any",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Looks like someone is one step closer to missing out on the upcoming Gathering."
-        ]
-    ],
     "upstanding_warrior18": [
         [
             "upstanding",
@@ -3384,14 +3219,13 @@
             "warrior",
             "trust",
             "platonic_love",
-            
             "they_song",
             "silly",
             "they_went_blind",
             "you_blind"
         ],
         [
-	        "[t_c sings to {PRONOUN/t_c/self} while the two of you sit alone in the warriors' den, sunlight glistening through the holes in the construction. Everyone else has long since started their day, except for you and t_c.]",
+            "[t_c sings to {PRONOUN/t_c/self} while the two of you sit alone in the warriors' den, sunlight glistening through the holes in the construction. Everyone else has long since started their day, except for you and t_c.]",
             "Ever so slightly, daily and nightly, in little ways...",
             "[t_c looks over to see you awake, {PRONOUN/t_c/poss} calm song turning into a wide smile.]",
             "Oh! Morning, y_c!",
@@ -3431,7 +3265,7 @@
             "It is said that harsh environments build character. StarClan knows you need it."
         ]
     ],
-   "Introspective_mentor_H13": [
+    "Introspective_mentor_H13": [
         [
             "they_introspective",
             "from_mentor",
@@ -3479,12 +3313,12 @@
     "unabashed_bestie_H1": [
         [
             "platonic_love",
-        	"they_unabashed",
-        	"they_silly",
+            "they_unabashed",
+            "they_silly",
             "greenleaf",
             "they_warrior",
             "you_queen",
-        	"you_mediator",
+            "you_mediator",
             "you_medicine_cat"
         ],
         [
@@ -3527,18 +3361,18 @@
             "they_warrior"
         ],
         [
-	    "[You're aware of a session in the nursery and decide to engage today as encouraged by both l_n and d_n. t_c sits calmly in the nursery, surrounded by the kits and apprentices. r_q briefly thanks them all for being so polite and gestures for t_c to start.]",
-	    "Thank you and all that you do here for the nursery. Before I begin, my name is t_c, I am a warrior and one of your fellow Clanmates here in c_nClan. But as some of you may already know, I have a bit of trouble with my joints.",
-	    "Sometimes they ache a little, other times they hurt quite a lot and I'll need to sit down for the day. r_q was kind enough to invite me here today to teach you young ones about my condition. I think it's very important that as a clan we educate each other on these topics.",
-	    "I was an apprentice at six moons and then became a warrior. I'm sure you've all heard it before but training is very hard work. But I persevered, as will all of you. When I was diagnosed, it was like my world turned upside down.",
-	    "To be told that you won't be able to perform to the best of your abilities is rough. Knowing that it was something I had to live with, was rougher. But, it changed my perspective on things. On life.",
-	    "I learned that while there are things I couldn't do, I learned there were things I could do differently. I learned how to adapt, change and better myself. I didn't choose this, no one chooses their conditions.",
-        "That's all the more reason to fight back. Earn your place and do so with pride. For example, on days where my joints are sore; a little fern warmed in the sun wrapped tightly helps relieve that stress. By stretching every morning I can stay flexible and of course, the medicine den is always there to support me.",
-        "If you are going to take anything away from this today; take away the fact there is no right way. Yes, there are things I can't do, I can't climb as well or jump as high. To compensate, I learnt to swim. Thanks to that, I can still hunt. I still serve c_nClan my way.",
-        "You kits are our future, it will be your duty to support each other, regardless of the limits of your bodies. Don't give up, give things a go and if something is absolutely out of your ability, it's okay to be upset. It's okay to second guess yourself, but don't be afraid to reach out for help and think differently.",
-        "I could ramble on and on but, I think that's enough from me. Now, I'm about to go hunting, I'm sure r_q would be kind enough to let you all see how I do things.",
-        "[The queen nods and gathers a couple of warriors, together the group trots out of camp towards the nearby stream. t_c casts a cheeky grin over {PRONOUN/t_c/poss} shoulder as r_q leads the way.]",
-        "Now, challenge for the kits and apprentices, who here can find the most aerodynamic stone? I think some fresh sparrow sounds lovely."
+            "[You're aware of a session in the nursery and decide to engage today as encouraged by both l_n and d_n. t_c sits calmly in the nursery, surrounded by the kits and apprentices. r_q briefly thanks them all for being so polite and gestures for t_c to start.]",
+            "Thank you and all that you do here for the nursery. Before I begin, my name is t_c, I am a warrior and one of your fellow Clanmates here in c_nClan. But as some of you may already know, I have a bit of trouble with my joints.",
+            "Sometimes they ache a little, other times they hurt quite a lot and I'll need to sit down for the day. r_q was kind enough to invite me here today to teach you young ones about my condition. I think it's very important that as a clan we educate each other on these topics.",
+            "I was an apprentice at six moons and then became a warrior. I'm sure you've all heard it before but training is very hard work. But I persevered, as will all of you. When I was diagnosed, it was like my world turned upside down.",
+            "To be told that you won't be able to perform to the best of your abilities is rough. Knowing that it was something I had to live with, was rougher. But, it changed my perspective on things. On life.",
+            "I learned that while there are things I couldn't do, I learned there were things I could do differently. I learned how to adapt, change and better myself. I didn't choose this, no one chooses their conditions.",
+            "That's all the more reason to fight back. Earn your place and do so with pride. For example, on days where my joints are sore; a little fern warmed in the sun wrapped tightly helps relieve that stress. By stretching every morning I can stay flexible and of course, the medicine den is always there to support me.",
+            "If you are going to take anything away from this today; take away the fact there is no right way. Yes, there are things I can't do, I can't climb as well or jump as high. To compensate, I learnt to swim. Thanks to that, I can still hunt. I still serve c_nClan my way.",
+            "You kits are our future, it will be your duty to support each other, regardless of the limits of your bodies. Don't give up, give things a go and if something is absolutely out of your ability, it's okay to be upset. It's okay to second guess yourself, but don't be afraid to reach out for help and think differently.",
+            "I could ramble on and on but, I think that's enough from me. Now, I'm about to go hunting, I'm sure r_q would be kind enough to let you all see how I do things.",
+            "[The queen nods and gathers a couple of warriors, together the group trots out of camp towards the nearby stream. t_c casts a cheeky grin over {PRONOUN/t_c/poss} shoulder as r_q leads the way.]",
+            "Now, challenge for the kits and apprentices, who here can find the most aerodynamic stone? I think some fresh sparrow sounds lovely."
         ]
     ],
     "youdeaf_R19": [
@@ -3549,7 +3383,6 @@
             "they_warrior",
             "they_elder",
             "they_mediator"
-            
         ],
         [
             "[t_c comes to sit with you as you watch the Clan. Everything is going well and you bask in that knowledge.]",

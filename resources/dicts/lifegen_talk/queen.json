@@ -21,18 +21,6 @@
             "For I know, I've played a part in shaping the Clan's future, one kit at a time."
         ]
     ],
-    "dep_132": [
-        [
-            "newborn",
-            "they_older",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Wha.. What was that?"
-        ]
-    ],
     "unabashed_queen": [
         [
             "unabashed",
@@ -76,39 +64,6 @@
             "Some nights, when the moon is high and you're nestled close, I wonder what kind of warrior you'll become. Will you be fierce and brave, or wise and gentle? Maybe a mix of both, like the stars in the sky."
         ]
     ],
-    "queen_3_2": [
-        [
-            "insult",
-            "Any",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Where are your manners?"
-        ]
-    ],
-    "queen_3_2_2": [
-        [
-            "insult",
-            "Any",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Haven't I taught you better?"
-        ]
-    ],
-    "queen_3_2_3": [
-        [
-            "insult",
-            "Any",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "That's it, no more moss-ball for today!"
-        ]
-    ],
     "assertive_mentor11": [
         [
             "you_queen's_apprentice",
@@ -118,7 +73,6 @@
             "cool",
             "unlawful",
             "from_mentor",
-            
             "you_blind",
             "they_blind"
         ],
@@ -309,7 +263,7 @@
     ],
     "introspective_queen_to_NB": [
         [
-            "you_newborn",
+            "newborn",
             "they_queen",
             "Introspective",
             "you_blind",
@@ -482,7 +436,6 @@
             "you_queen's_apprentice",
             "clan_has_kits",
             "assertive",
-            
             "you_blind",
             "they_blind",
             "they_hearing"
@@ -568,7 +521,6 @@
             "you_any",
             "assertive",
             "silly",
-            
             "you_blind",
             "they_blind"
         ],
@@ -710,7 +662,6 @@
             "they_queen's_apprentice",
             "they_queen",
             "sweet",
-            
             "you_blind",
             "they_blind"
         ],
@@ -1060,7 +1011,7 @@
         [
             "unabashed",
             "silly",
-            "you_newborn",
+            "newborn",
             "they_queen",
             "they_medicine_cat",
             "you_blind",
@@ -1073,7 +1024,7 @@
     ],
     "cool_newborn": [
         [
-            "you_newborn",
+            "newborn",
             "cool",
             "they_queen",
             "you_blind",
@@ -1090,7 +1041,6 @@
             "Cool",
             "neutral",
             "clan_has_kits",
-            
             "you_blind"
         ],
         [
@@ -1273,7 +1223,7 @@
     ],
     "sweet_queen_1": [
         [
-            "you_newborn",
+            "newborn",
             "they_older",
             "they_queen",
             "sweet",
@@ -1681,7 +1631,7 @@
             "they_queen",
             "you_sc",
             "you_kitten",
-            "you_newborn",
+            "newborn",
             "you_blind",
             "they_blind"
         ],

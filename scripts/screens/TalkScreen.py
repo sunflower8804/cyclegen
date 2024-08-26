@@ -553,8 +553,14 @@ class TalkScreen(Screens):
                 continue
 
             # Status tags
-            if you.status not in tags and "any" not in tags and f"you_{you.status}" not in tags\
-            and "young elder" not in tags and "no_kit" not in tags and "you_any" not in tags:
+            if (
+                you.status not in tags
+                and "any" not in tags
+                and f"you_{you.status}" not in tags
+                and "young elder" not in tags
+                and "no_kit" not in tags
+                and "you_any" not in tags
+                ):
                 continue
             elif "young elder" in tags and cat.status == 'elder' and cat.moons >= 100:
                 continue
@@ -1124,11 +1130,11 @@ class TalkScreen(Screens):
             if "deaf" in cat.permanent_condition:
                 if cat.permanent_condition["deaf"]["born_with"] is True:
                     if "they_born_deaf" not in tags and "only_they_born_deaf" not in tags:
-                        if "they_deaf" not in tags:
+                        if "they_deaf" not in tags and "only_they_deaf" not in tags:
                             continue
                 else:
                     if "they_born_deaf" in tags or "only_they_born_deaf" not in tags:
-                        if "they_deaf" not in tags:
+                        if "they_deaf" not in tags and "only_they_deaf" not in tags:
                             continue
                 if "they_hearing" in tags:
                     continue
@@ -1602,7 +1608,7 @@ class TalkScreen(Screens):
     def get_adjusted_txt(self, text, cat):
         you = game.clan.your_cat
         for i in range(len(text)):
-            text[i] = adjust_txt(Cat, text[i], cat, self.cat_dict, r_c_allowed=True)
+            text[i] = adjust_txt(Cat, text[i], cat, self.cat_dict, r_c_allowed=True, o_c_allowed=True)
             if text[i] == "":
                 return ""
 

@@ -21,18 +21,6 @@
             "For I know, I've played a part in shaping the Clan's future, one kit at a time."
         ]
     ],
-    "dep_132": [
-        [
-            "newborn",
-            "they_older",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Wha.. What was that?"
-        ]
-    ],
     "assertivewarriorapp_comfort": [
         [
             "no_kit",
@@ -67,17 +55,6 @@
         [
             "Come here, little one. Your fur is so spiky!",
             "Hey! Don't run away from me!"
-        ]
-    ],
-    "queen_3d": [
-        [
-            "insult",
-            "Any",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Where are your manners?"
         ]
     ],
     "assertive_medapp2": [
@@ -637,7 +614,7 @@
     ],
     "sweet_queenapp_1": [
         [
-            "you_newborn",
+            "newborn",
             "they_queen's_apprentice",
             "sweet",
             "you_blind"

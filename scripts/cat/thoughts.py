@@ -4,6 +4,8 @@ from random import choice
 import ujson
 from scripts.game_structure.game_essentials import game
 
+from scripts.utility import get_cluster
+
 
 class Thoughts:
     @staticmethod
@@ -161,6 +163,61 @@ class Thoughts:
         if 'random_backstory_constraint' in thought:
             if random_cat and random_cat.backstory not in thought['random_backstory_constraint']:
                 return False
+            
+        # LIFEGEN CONSTRAINTS
+        if 'main_faith_constraint' in thought:
+            if "low_sc" in thought['main_faith_constraint']:
+                if (not main_cat.faith < 3 and main_cat.faith > 0):
+                    return False
+            elif "mid_sc" in thought['main_faith_constraint']:
+                if (not main_cat.faith < 6 and main_cat.faith > 3):
+                    return False
+            elif "high_sc" in thought['main_faith_constraint']:
+                if (not main_cat.faith < 10 and main_cat.faith > 6):
+                    return False
+                
+            if "low_df" in thought['main_faith_constraint']:
+                if (not main_cat.faith < 0 and main_cat.faith > -3):
+                    return False
+            elif "mid_df" in thought['main_faith_constraint']:
+                if (not main_cat.faith < -3 and main_cat.faith > -6):
+                    return False
+            elif "high_df" in thought['main_faith_constraint']:
+                if (not main_cat.faith < -6 and main_cat.faith > -10):
+                    return False
+                
+        if 'random_faith_constraint' in thought:
+            if "low_sc" in thought['random_faith_constraint']:
+                if (not random_cat.faith < 3 and random_cat.faith > 0):
+                    return False
+            elif "mid_sc" in thought['random_faith_constraint']:
+                if (not random_cat.faith < 6 and random_cat.faith > 3):
+                    return False
+            elif "high_sc" in thought['random_faith_constraint']:
+                if (not random_cat.faith < 10 and random_cat.faith > 6):
+                    return False
+                
+            if "low_df" in thought['random_faith_constraint']:
+                if (not random_cat.faith < 0 and random_cat.faith > -3):
+                    return False
+            elif "mid_df" in thought['random_faith_constraint']:
+                if (not random_cat.faith < -3 and random_cat.faith > -6):
+                    return False
+            elif "high_df" in thought['random_faith_constraint']:
+                if (not random_cat.faith < -6 and random_cat.faith > -10):
+                    return False
+                
+        if "main_cluster_constraint" in thought:
+            cluster, cluster2 = get_cluster(main_cat.personality.trait)
+            if cluster not in thought["main_cluster_constraint"] and (cluster2 and cluster2 not in thought["main_cluster_constraint"]):
+                return False
+        
+        if "random_cluster_constraint" in thought and random_cat:
+            cluster, cluster2 = get_cluster(random_cat.personality.trait)
+            if cluster not in thought["random_cluster_constraint"] and (cluster2 and cluster2 not in thought["random_cluster_constraint"]):
+                return False
+                    
+        
 
         # Filter for the living status of the random cat. The living status of the main cat
         # is taken into account in the thought loading process.
