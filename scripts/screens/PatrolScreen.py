@@ -62,7 +62,7 @@ class PatrolScreen(Screens):
     def handle_event(self, event):
         if game.switches["window_open"]:
             return
-
+        
         if event.type == pygame_gui.UI_BUTTON_DOUBLE_CLICKED:
             if self.patrol_stage == "choose_cats":
                 self.handle_choose_cats_events(event)
@@ -156,7 +156,6 @@ class PatrolScreen(Screens):
             self.selected_cat = event.ui_element.return_cat_object()
             self.update_selected_cat()
             self.update_button()
-
             # Checks if the event was a double click, if it was it add/removes the cat from the patrol as long as the patrol isn't full (6 cats).
             if event.type == pygame_gui.UI_BUTTON_DOUBLE_CLICKED:
                 if self.selected_cat in self.current_patrol:
@@ -165,7 +164,6 @@ class PatrolScreen(Screens):
                     self.current_patrol.append(self.selected_cat)
                 self.update_cat_images_buttons()
                 self.update_button()
-
         elif event.ui_element == self.elements["add_remove_cat"]:
             if self.selected_cat in self.current_patrol:
                 self.current_patrol.remove(self.selected_cat)
