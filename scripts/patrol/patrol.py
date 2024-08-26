@@ -216,7 +216,7 @@ class Patrol:
         else:
             # Get the oldest cat
             possible_leader = [i for i in self.patrol_cats if i.status not in 
-                               ["medicine cat apprentice", "apprentice"]]
+                            ["medicine cat apprentice", "apprentice"]]
             if possible_leader:
                 # Flip a coin to pick the most experience, or oldest. 
                 if randint(0, 1):
@@ -234,12 +234,12 @@ class Patrol:
             
         # DETERMINE RANDOM CAT
         #Find random cat
-        if game.switches["patrol_category"] == 'date':
+        if "patrol_category" in game.switches and game.switches["patrol_category"] == 'date':
             for date_cat in patrol_cats:
                 if date_cat.ID != game.clan.your_cat.ID:
                     self.random_cat = date_cat
                     break
-        elif len(patrol_cats) > 1 and game.switches["patrol_category"] == 'df':
+        elif "patrol_category" in game.switches and len(patrol_cats) > 1 and game.switches["patrol_category"] == 'df':
             possible_random_cats = [i for i in patrol_cats if i.ID != game.clan.your_cat.ID]
             self.random_cat = choice(possible_random_cats)
         else:
