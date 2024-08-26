@@ -1,26 +1,4 @@
 {
-    "leader_16": [
-        [
-            "kitten",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Such strong words from such a small cat! But remember, young one, respect is the cornerstone of our Clan."
-        ]
-    ],
-    "dep_132": [
-        [
-            "newborn",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Wha.. What was that?"
-        ]
-    ],
     "leader_4d": [
         [
             "Any",
@@ -183,66 +161,6 @@
         ],
         [
             "In the eyes of StarClan, you are a murderer."
-        ]
-    ],
-    "leader_1ax5": [
-        [
-            "Any",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Careful now."
-        ]
-    ],
-    "leader_1ax5w": [
-        [
-            "Any",
-            "no_kit",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Huh, I never took you for one to mince words."
-        ]
-    ],
-    "leader_1axs5": [
-        [
-            "Any",
-            "no_kit",
-            "insult",
-            "you_blind",
-            "they_blind",
-            "they_hearing"
-        ],
-        [
-            "Your anger is heard, as are your words. We shall speak again when emotions have cooled."
-        ]
-    ],
-    "leader_1agx5": [
-        [
-            "Any",
-            "no_kit",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Your words carry weight, but they do not change who I am as a leader."
-        ]
-    ],
-    "leader_1ax5x": [
-        [
-            "Any",
-            "they_kitten",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Calm yourself, little one."
         ]
     ],
     "assertive_mentor3": [
@@ -1930,7 +1848,7 @@
             "silly"
         ],
         [
-            "[You walk into the leader's den, needing to ask {PRONOUN/t_c/object} an important question. When you find t_c clawing some kind of masterpiece onto the soft ground of the den, {PRONOUN/t_c/subject} quickly {VERB/t_c/step/steps} in front of it to obscure your view.]",	
+            "[You walk into the leader's den, needing to ask {PRONOUN/t_c/object} an important question. When you find t_c clawing some kind of masterpiece onto the soft ground of the den, {PRONOUN/t_c/subject} quickly {VERB/t_c/step/steps} in front of it to obscure your view.]",
             "y_c! What did you need me for? Oh- what was I doing?",
             "Illustrating my grand plan, of course! It's my dutiful responsibility as the humble leader of c_nClan!",
             "[Really? At this time of the moon, at this time of day, in this part of c_nClan, localized entirely inside a drawing on these two fox-tails of ground? Now that you're intrigued, you ask to see it.]",
@@ -1957,7 +1875,6 @@
             "Any",
             "silly",
             "they_leader"
-            
         ],
         [
             "Hello, good day, greetings and salutations, y_c!",
@@ -1997,7 +1914,7 @@
     "deaddeputy_connected_J1~1": [
         [
             "they_deputy",
-	"they_leader",
+            "they_leader",
             "they_sc",
             "you_sc",
             "min_you_deadfor_40",

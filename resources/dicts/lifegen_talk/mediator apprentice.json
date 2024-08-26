@@ -1,29 +1,4 @@
 {
-    "medi_11": [
-    
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Is something the matter?"
-         
-        ]
-    ],
-    "dep_132": [
-        [
-            "newborn",
-            "insult",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Wha.. What was that?"
-        ]
-    ],
     "unabashed_mediator_apprentice1": [
         [
             "unabashed",
@@ -60,11 +35,9 @@
             "I just feel like such a failure. A liability. Everyone in the Clan is depending on me, but what if I keep falling short?",
             "[You offer t_c words of reassurance, but {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} troubled beyond comforting.]",
             "[Still, you sit with {PRONOUN/t_c/object} through the night, hoping to stabilize {PRONOUN/t_c/object} through whatever storm {PRONOUN/t_c/subject} might be weathering right now.]"
-    
         ]
     ],
     "brooding_mediator": [
-    
         [
             "no_kit",
             "Any",
@@ -74,21 +47,20 @@
             "Oh, y_c. l_n has been wanting to see you about your performance.",
             "Is it good or bad ...?",
             "Sorry. Couldn't tell you. You'll have to go see for yourself."
-          
         ]
     ],
     "brooding_mediator_aboutneurotic": [
-	[
-		"brooding",
-		"no_kit",
-		"min_trust_30"
-	],
-	[
-		"I swear to StarClan, next time r_w_neurotic comes to me asking for assurance that some random cat doesn't hate {PRONOUN/r_w_neurotic/object}, I just might have to claw my own ears off.",
-		"I tell {PRONOUN/r_w_neurotic/object} over and over, 'all you have to do is ask', but {PRONOUN/r_w_neurotic/subject} never {VERB/r_w_neurotic/do/does}. Just {VERB/r_w_neurotic/apologize/apologizes} over and over for stuff {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/don't/doesn't} know {PRONOUN/r_w_neurotic/subject} even did.",
-		"How can any cat outside of the nursery possibly be so debilitatingly insecure?"
-	]
-	],
+        [
+            "brooding",
+            "no_kit",
+            "min_trust_30"
+        ],
+        [
+            "I swear to StarClan, next time r_w_neurotic comes to me asking for assurance that some random cat doesn't hate {PRONOUN/r_w_neurotic/object}, I just might have to claw my own ears off.",
+            "I tell {PRONOUN/r_w_neurotic/object} over and over, 'all you have to do is ask', but {PRONOUN/r_w_neurotic/subject} never {VERB/r_w_neurotic/do/does}. Just {VERB/r_w_neurotic/apologize/apologizes} over and over for stuff {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/don't/doesn't} know {PRONOUN/r_w_neurotic/subject} even did.",
+            "How can any cat outside of the nursery possibly be so debilitatingly insecure?"
+        ]
+    ],
     "brooding_medapp": [
         [
             "Any",
@@ -109,7 +81,6 @@
         ]
     ],
     "brooding_medapp_2": [
-  
         [
             "Any",
             "from_your_apprentice",
@@ -148,7 +119,6 @@
         ]
     ],
     "brooding_mediatorapp_2": [
-   
         [
             "brooding",
             "any",
@@ -161,11 +131,9 @@
             "You're upset with somecat?",
             "[t_c casts a glance at {PRONOUN/t_c/poss} mentor over {PRONOUN/t_c/poss} shoulder, then turns back to you with a rare smile.]",
             "It's okay. tm_n can wait. Now, tell me what's wrong."
-           
         ]
     ],
     "brooding_mediatorapp_3": [
-  
         [
             "brooding",
             "dislike",
@@ -194,32 +162,6 @@
             "[For a mediator, t_c sure doesn't seem to talk much.]"
         ]
     ],
-    "medi_11x": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Words can be like claws, they can leave marks. Be careful with yours."
-        ]
-    ],
-    "medi_12": [
-        [
-            "insult",
-            "kitten",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Hey! Wait... this is the perfect time to use my training!",
-            "What caused you to act this way?",
-            "How about you take a deep breath. Inhale, then exhale.",
-            "Now lets reflect on your actions... hey! Don't just walk away from me!"
-        ]
-    ],
     "assertive_jealous1": [
         [
             "Any",
@@ -239,7 +181,6 @@
         ]
     ],
     "assertive_medapp1": [
-   
         [
             "medicine_cat_apprentice",
             "medicine_cat",
@@ -253,11 +194,9 @@
         [
             "Hey, what does this herb do? Can I eat it?",
             "Haha, don't look so stressed! I was just joking."
-           
         ]
     ],
     "assertiveapp_medapp3": [
-   
         [
             "medicine_cat_apprentice",
             "medicine_cat",
@@ -277,7 +216,6 @@
         ]
     ],
     "assertive_apprentice7": [
-    
         [
             "no_kit",
             "platonic_like",
@@ -346,7 +284,6 @@
             "Makes me almost regret being a mediator. I hate talking to other cats, they're just utterly full of problems they create for themselves, and they refuse to listen to obvious solutions.",
             "But, I suppose I became a mediator apprentice to help other cats with their problems too. I suppose I've caught my mouse and I need to eat it.",
             "Thank you for listening to me, y_c. I'll keep thinking of another solution they'll like."
-           
         ]
     ],
     "introspective_MdtorApp_1": [
@@ -1223,7 +1160,7 @@
             "I refuse to be an embarrassment to my Clan and mentor. I'll pass that assessment next time ... Whatever it takes!"
         ]
     ],
-    "assertive_mediatorapp_AJ":  [
+    "assertive_mediatorapp_AJ": [
         [
             "any",
             "assertive",
@@ -1237,8 +1174,7 @@
             "... Is tm_n still there?"
         ]
     ],
-
-    "assertive_mediatorapp_AJ1":  [
+    "assertive_mediatorapp_AJ1": [
         [
             "any",
             "assertive",
@@ -1253,8 +1189,7 @@
             "I'll come and find you as soon as I'm free, though, okay?"
         ]
     ],
-
-    "assertive_mediatorapp_AJ2":  [
+    "assertive_mediatorapp_AJ2": [
         [
             "mediator",
             "assertive",
@@ -1268,7 +1203,7 @@
             "Personally, I'm betting on r_c ... in both categories."
         ]
     ],
-    "assertivemediatorapp_AJ3":  [
+    "assertivemediatorapp_AJ3": [
         [
             "any",
             "assertive",
@@ -1285,7 +1220,7 @@
             "[The very peeved-off looking deputy locks eyes with you and storms in your direction. What mischief did t_c get into this time?]"
         ]
     ],
-    "assertivemediator_toqueen_AJ":  [
+    "assertivemediator_toqueen_AJ": [
         [
             "queen's_apprentice",
             "queen",
@@ -1305,9 +1240,9 @@
             "All they want is to feel seen and understood, just like you or I or any other cat. When you don't take the time to listen to them, that's when they really lash out.",
             "Try speaking to them like adults, respecting their feelings, and keeping in mind that they won't be able to communicate as well as we can.",
             "You got it, y_c!"
-        ]   
+        ]
     ],
-    "assertivemediator_toqueen_AJ1":  [
+    "assertivemediator_toqueen_AJ1": [
         [
             "queen's_apprentice",
             "queen",
@@ -1327,7 +1262,7 @@
             "And if you mess up, I'll be right here to help you. It is my job, after all! *Wink*"
         ]
     ],
-    "assertivemediatorapp_AJ4":  [
+    "assertivemediatorapp_AJ4": [
         [
             "any",
             "assertive",
@@ -1410,7 +1345,7 @@
             "Are we allowed to just cross the borders as we please or is there some sort of warning system involved?",
             "Does the o_cClan mediator know about me yet?",
             "Ah, whatever. I'm sure I'll find out when I get there. Let's go!!!",
-            "[t_c takes off across camp. You aren't quite sure how to tell {PRONOUN/t_c/object} there wasn't even a o_c visit scheduled for today.]"
+            "[t_c takes off across camp. You aren't quite sure how to tell {PRONOUN/t_c/object} there wasn't even a o_cClan visit scheduled for today.]"
         ]
     ],
     "assertivemediatorapp_AJ8": [
@@ -1418,7 +1353,6 @@
             "any",
             "assertive",
             "from_your_apprentice",
-            
             "they_blind",
             "you_blind"
         ],
@@ -1435,7 +1369,6 @@
         [
             "mediator",
             "mediator_apprentice",
-            
             "you_blind"
         ],
         [
@@ -1496,7 +1429,6 @@
             "There was- there was a frog on the camp edge, and- hahaHAHAHA- and then it- and then it... oh Silverpelt, the frog- it...",
             "It did a backflip and landed on my head!",
             "[Indeed, there is an adorable looking frog on t_c's tail. t_c seems to have made an easy companion out of the passive creature.]"
-
         ]
     ],
     "silly_mediatorapp_costume": [
@@ -1504,7 +1436,6 @@
             "Any",
             "silly",
             "they_mediator_apprentice"
-            
         ],
         [
             "[The mediator apprentice has been walking around all day in some sort of disguise, decorating themself in leaves and twigs that seem to have at least some rhyme or reason. Intrigued, you come up to them to ask why they've decorated their pelt today.]",
@@ -1512,7 +1443,6 @@
             "They told someone else about... uh...",
             "...Nevermind, I can't say that! I refuse to admit that I'm nosy! Bye, y_c!",
             "[t_c shimmies away in their leafy fire hazard.]"
-
         ]
     ],
     "silly_mediatorapp_plan": [
@@ -1520,13 +1450,11 @@
             "Any",
             "silly",
             "they_mediator_apprentice"
-            
         ],
         [
             "y_c! You see r_c arguing with d_n over there about c_nClan's fresh-kill stock? Well, I wasn't sure how to help resolve the situation, but now I think I have the perfect plan!",
             "...Hey, don't \"oh no\" me! I'm not asking for your opinion, I just need you to watch me in case it all goes wrong!",
             "[t_c struts over to the two bristling cats, not-so-quietly singing \"This is the greatest plaaan!\" to themself as they approach. Unsurprisingly, the apprentice's bubbly approach returns nothing... shouldn't someone know to stop them by now?]"
-
         ]
     ],
     "silly_mediatorapp_ideas": [
@@ -1534,7 +1462,6 @@
             "Any",
             "silly",
             "they_mediator_apprentice"
-            
         ],
         [
             "Oh dear... y_c, I dunno what to do!",

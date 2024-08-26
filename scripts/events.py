@@ -306,12 +306,6 @@ class Events:
                             extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
                         else:
                             extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
-    
-                    else:
-                        event = f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their " \
-                                f"loss, and their Clanmates will miss the spot they took up in their lives. Moments of their " \
-                                f"life are shared in stories around the circle of mourners as those that were closest to them " \
-                                f"take them to their final resting place."
 
                 else:
                     event = (
@@ -1043,7 +1037,7 @@ class Events:
 
     def process_text(self, text):
         self.cat_dict.clear()
-        text = adjust_txt(Cat, text, game.clan.your_cat, self.cat_dict, r_c_allowed=True)
+        text = adjust_txt(Cat, text, game.clan.your_cat, self.cat_dict, r_c_allowed=True, o_c_allowed=True)
 
         process_text_dict = self.cat_dict.copy()
         for abbrev in process_text_dict.keys():

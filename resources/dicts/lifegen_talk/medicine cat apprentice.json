@@ -51,27 +51,6 @@
             "... Some cats have things to do."
         ]
     ],
-    "dep_132": [
-        [
-            "newborn",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Wha.. What was that?"
-        ]
-    ],
-    "medapp_1s5s": [
-        [
-            "kitten",
-            "insult",
-            "you_blind"
-        ],
-        [
-            "You're full of spirit, aren't you? I can't wait to see the cat you'll become."
-        ]
-    ],
     "assertive_jealous1": [
         [
             "Any",
@@ -725,159 +704,150 @@
         [
             "no_kit",
             "cool",
-	        "max_platonic_50",
-	        "you_blind",
-	        "they_blind"
+            "max_platonic_50",
+            "you_blind",
+            "they_blind"
         ],
         [
             "[You're visiting the medicine den for a routine checkup, at t_c's insistence.]",
-	        "Okay, say 'ahh'!",
-	        "[You obey, opening your mouth as t_c examines your paws, pelt, and tail.]",
-        	"Looks right as rain! You're good to go.",
-        	"[You mumble around your tongue that t_c forgot to check your mouth.]",
-        	"Oh, your mouth's fine. I was just checking to see how long I could get you to stick your tongue out before you got annoyed. *Snrk*"
+            "Okay, say 'ahh'!",
+            "[You obey, opening your mouth as t_c examines your paws, pelt, and tail.]",
+            "Looks right as rain! You're good to go.",
+            "[You mumble around your tongue that t_c forgot to check your mouth.]",
+            "Oh, your mouth's fine. I was just checking to see how long I could get you to stick your tongue out before you got annoyed. *Snrk*"
         ]
     ],
-
     "cool_medcat_AJ1~1": [
         [
             "no_kit",
             "cool",
-        	"you_blind"
+            "you_blind"
         ],
         [
             "Hey, y_c. I just got a message from StarClan. They told me that you need to pass me that scrap of moss over there.",
-	        "[You pass the moss to t_c.]",
-        	"c_nClan has been saved!"
+            "[You pass the moss to t_c.]",
+            "c_nClan has been saved!"
         ]
     ],
-
     "cool_medcat_AJ1~2": [
         [
             "no_kit",
             "cool",
-        	"connected",
-	        "you_blind"
+            "connected",
+            "you_blind"
         ],
         [
             "It's the will of StarClan that you scoot over a few mouse lengths so that I can lay in the sun.",
-	        "[You begrudgingly inch over as t_c splays out beside you, totally hogging the warmth.]"
+            "[You begrudgingly inch over as t_c splays out beside you, totally hogging the warmth.]"
         ]
     ],
-
     "cool_medcat_AJ1~3": [
         [
             "no_kit",
             "cool",
-        	"connected",
-        	"you_blind"
+            "connected",
+            "you_blind"
         ],
         [
             "[You warn t_c that invoking the name of StarClan for every mundane thing is eventually going to catch up with {PRONOUN/t_c/object}.]",
-        	"*Sigh* Y'know what? Maybe you're right, y_c. I'm so sorry.",
-        	"I really need to have more respect for our warrior ancestors, and take my duties as a medicine cat more seriousl .... Ah.",
-        	"[t_c squints up at the sky, ears pricking.]",
-        	"What was that? ... Uh-huh ... Mhm, yes, I see .....",
-        	"Scratch everything I just said, y_c. StarClan just gave me a new message. They tell me you're jealous of my gift."
+            "*Sigh* Y'know what? Maybe you're right, y_c. I'm so sorry.",
+            "I really need to have more respect for our warrior ancestors, and take my duties as a medicine cat more seriousl .... Ah.",
+            "[t_c squints up at the sky, ears pricking.]",
+            "What was that? ... Uh-huh ... Mhm, yes, I see .....",
+            "Scratch everything I just said, y_c. StarClan just gave me a new message. They tell me you're jealous of my gift."
         ]
     ],
-
     "cool_medcat_AJ4": [
         [
             "no_kit",
             "cool",
-        	"they_blind"
+            "they_blind"
         ],
         [
             "[You point out to t_c that the herb pile seems to need sorting.]",
-        	"Huh? Why? It's plenty organized.",
-    	    "[You look behind {PRONOUN/t_c/object} at the chaotic, hodgepodge assortment of sticks, leaves, and roots jumbled together on the floor of the medicine den, random herbs sticking out at odd angles.]",
-        	"... Look, it makes perfect sense to me, alright?"
+            "Huh? Why? It's plenty organized.",
+            "[You look behind {PRONOUN/t_c/object} at the chaotic, hodgepodge assortment of sticks, leaves, and roots jumbled together on the floor of the medicine den, random herbs sticking out at odd angles.]",
+            "... Look, it makes perfect sense to me, alright?"
         ]
     ],
-
     "cool_medcat_AJ5": [
         [
             "any",
             "cool",
-	        "they_blind"
+            "they_blind"
         ],
         [
             "[Fussy r_k is in the medicine den with a bellyache, refusing to take {PRONOUN/r_k/poss} medicine.]",
-	        "[r_m curses, struggling to hold the squirming kit still, when t_c strides by with a smug look on {PRONOUN/t_c/poss} face.]",
-	        "I don't know why you're trying so hard, r_m. All the more chervil for us!",
-        	"[The kit falls quiet, ears pricking in interest.]",
-        	"I always loved eating these, and since we get to have them so rarely ...",
-        	"[t_c scoops up a small scrap of the chervil root and pops it in their mouth, grinning as {PRONOUN/t_c/subject} {VERB/t_c/savor/savors} the taste.]",
-        	"Mmm. Tastes like fresh honey. Just like I remembered.",
-        	"[r_k eyes the root suspiciously, but t_c guards it with a paw.]",
-        	"Hey, none for you! You had your chance. This is all mine now.",
-        	"[r_k pouts and whines that {PRONOUN/r_k/subject} {VERB/r_k/deserve/deserves} a taste.]",
-        	"Well, alright ..... But only if you eat them all in one bite! Promise?",
-        	"[The kit nods eagerly, lapping up the herbs then recoiling at their bitter flavor.]",
-        	"Don't taste right? Huh, that's weird. Must be bad luck.",
-        	"[t_c smiles and winks in your direction.]"
+            "[r_m curses, struggling to hold the squirming kit still, when t_c strides by with a smug look on {PRONOUN/t_c/poss} face.]",
+            "I don't know why you're trying so hard, r_m. All the more chervil for us!",
+            "[The kit falls quiet, ears pricking in interest.]",
+            "I always loved eating these, and since we get to have them so rarely ...",
+            "[t_c scoops up a small scrap of the chervil root and pops it in their mouth, grinning as {PRONOUN/t_c/subject} {VERB/t_c/savor/savors} the taste.]",
+            "Mmm. Tastes like fresh honey. Just like I remembered.",
+            "[r_k eyes the root suspiciously, but t_c guards it with a paw.]",
+            "Hey, none for you! You had your chance. This is all mine now.",
+            "[r_k pouts and whines that {PRONOUN/r_k/subject} {VERB/r_k/deserve/deserves} a taste.]",
+            "Well, alright ..... But only if you eat them all in one bite! Promise?",
+            "[The kit nods eagerly, lapping up the herbs then recoiling at their bitter flavor.]",
+            "Don't taste right? Huh, that's weird. Must be bad luck.",
+            "[t_c smiles and winks in your direction.]"
         ]
     ],
-
     "cool_medcat_AJ6": [
         [
             "any",
             "cool",
-	        "they_blind"
+            "they_blind"
         ],
         [
             "AHHH!!! WHO DID THIS?",
-	        "[You rush into the medicine den, bracing yourself for something horrible, only to discover t_c stooping over {PRONOUN/t_c/poss} perfectly organized herb pile.]",
-        	"My herbs ... My beautiful herbs have been ... <i>alphabetized!</i>",
-        "How am I supposed to find anything now?!" 
+            "[You rush into the medicine den, bracing yourself for something horrible, only to discover t_c stooping over {PRONOUN/t_c/poss} perfectly organized herb pile.]",
+            "My herbs ... My beautiful herbs have been ... <i>alphabetized!</i>",
+            "How am I supposed to find anything now?!"
         ]
     ],
-
     "cool_medcat_AJ7": [
         [
             "any",
             "cool",
-	        "you_injured",
-	        "you_ill",
-	        "you_blind",
-	        "they_blind"
+            "you_injured",
+            "you_ill",
+            "you_blind",
+            "they_blind"
         ],
         [
             "[Throughout your stay in the medicine den, you've been visited by countless cats, all of them assuring you on how strong you look and how recovery must be just around the corner.]",
-	        "[But, late one night, after all the visitors have gone, you quietly ask t_c if it really is true that you're going to get better.]",
-	        "[t_c flinches briefly, almost imperceptibly, at the question before quickly resuming {PRONOUN/t_c/poss} charismatic demeanor.]",
-        	"C'mon, y_c, what kinda mousebrained question is that? What, you think I'd just let you die on me and mess up my reputation?",
-        	"Do you really think so little of me? I'm a miracle worker, you know. I have <i>StarClan</i> on my side.",
-        	"Take it from me, y_c, you've got a long, happy life ahead of you. You're going to live to three-hundred and twenty. You're going to live so long and so happily, you'll get sick of it.",
-        	"Then, when you're all old and shriveled in your nest, you'll close your eyes and think back to the wonderful promise that darling t_c made to you.",
-        	"So don't get used to the medicine den anytime soon, okay?",
-        	"I .... I'll get you out of here.",
-        	"You don't have to be scared."
+            "[But, late one night, after all the visitors have gone, you quietly ask t_c if it really is true that you're going to get better.]",
+            "[t_c flinches briefly, almost imperceptibly, at the question before quickly resuming {PRONOUN/t_c/poss} charismatic demeanor.]",
+            "C'mon, y_c, what kinda mousebrained question is that? What, you think I'd just let you die on me and mess up my reputation?",
+            "Do you really think so little of me? I'm a miracle worker, you know. I have <i>StarClan</i> on my side.",
+            "Take it from me, y_c, you've got a long, happy life ahead of you. You're going to live to three-hundred and twenty. You're going to live so long and so happily, you'll get sick of it.",
+            "Then, when you're all old and shriveled in your nest, you'll close your eyes and think back to the wonderful promise that darling t_c made to you.",
+            "So don't get used to the medicine den anytime soon, okay?",
+            "I .... I'll get you out of here.",
+            "You don't have to be scared."
         ]
     ],
-
     "cool_medcat_AJ8~1": [
         [
             "any",
             "cool",
-	        "min_plat_35",
-	        "they_blind"
+            "min_plat_35",
+            "they_blind"
         ],
         [
             "[t_c hurries a bundle of herbs into the medicine den, brow furrowed and ears pinned back in concentration.]",
-        	"[You call after {PRONOUN/t_c/object}, trying to crack a joke, but {PRONOUN/t_c/subject} simply {VERB/t_c/brush/brushes} right by, slipping into the medicine den without a word.]",
-        	"[It's weird to see t_c so serious!]"
+            "[You call after {PRONOUN/t_c/object}, trying to crack a joke, but {PRONOUN/t_c/subject} simply {VERB/t_c/brush/brushes} right by, slipping into the medicine den without a word.]",
+            "[It's weird to see t_c so serious!]"
         ]
     ],
-
     "cool_medcat_AJ8~2": [
         [
             "any",
             "cool",
-        	"min_plat_35",
-        	"connected",
-        	"they_blind"
+            "min_plat_35",
+            "connected",
+            "they_blind"
         ],
         [
             "[In a moment of relaxation, you mention to t_c how weird it was to see {PRONOUN/t_c/object} so focused earlier.]",
@@ -887,21 +857,19 @@
             "Let me let you in on a little secret, y_c: it's all just a ploy for fame. Cats never forget the face of their savior! *Wink*"
         ]
     ],
-
     "cool_medcat_AJ9": [
         [
             "any",
             "cool",
-        	"you_blind",
-        	"they_blind"
+            "you_blind",
+            "they_blind"
         ],
         [
             "[r_i is apprehensive about {PRONOUN/r_i/poss} stay in the medicine den, but t_c keeps {PRONOUN/r_i/object} entertained with {PRONOUN/t_c/poss} charismatic jokes and stories.]",
-        	"You're a rockstar, r_i, seriously. My favorite patient ever. I'm going to have to start sneaking brambles into your nest so that you can stop by here more often!",
-        	"[Before long, r_i is laughing and joking alongside t_c, completely with ease.]"
+            "You're a rockstar, r_i, seriously. My favorite patient ever. I'm going to have to start sneaking brambles into your nest so that you can stop by here more often!",
+            "[Before long, r_i is laughing and joking alongside t_c, completely with ease.]"
         ]
     ],
-
     "cool_medcat_AJ10": [
         [
             "any",
@@ -909,45 +877,42 @@
         ],
         [
             "[t_c is passing out little trinkets to cats who stop by the medicine den.]",
-        	"Oh, hey, y_c! Shells for checkups! Let me examine your health, and I'll give you a shell of your very own to take back to your nest!",
-        	"Something, something, making the medicine den a more welcoming place for all, building a sense of community, et cetera. Really, tm_n just gathered a bunch of junk off the riverbank and is looking to hawk it off.",
-        	"[t_c holds up a tiny scallop, dappled with pinks and pearls.]",
-        	"Lookit. Innit so cute, you could just die?",
-        	"I'll tell you a secret, if you go around again, you can get a second one. I won't tell.",
-        	"You can even take a third, if you want it! In fact, take four! I don't want them!"
+            "Oh, hey, y_c! Shells for checkups! Let me examine your health, and I'll give you a shell of your very own to take back to your nest!",
+            "Something, something, making the medicine den a more welcoming place for all, building a sense of community, et cetera. Really, tm_n just gathered a bunch of junk off the riverbank and is looking to hawk it off.",
+            "[t_c holds up a tiny scallop, dappled with pinks and pearls.]",
+            "Lookit. Innit so cute, you could just die?",
+            "I'll tell you a secret, if you go around again, you can get a second one. I won't tell.",
+            "You can even take a third, if you want it! In fact, take four! I don't want them!"
         ]
     ],
-
     "cool_medcat_AJ11": [
         [
             "you_medicine_cat",
             "cool",
-        	"they_younger"
+            "they_younger"
         ],
         [
             "[t_c is using the medicine den as {PRONOUN/t_c/poss} own personal hangout space again.]",
-        	"[{PRONOUN/t_c/subject/CAP} and plike_r_a splay out over the herb stores, chatting and gossiping about all the other cats in the Clan.]",
-        	"[You interrupt their conversation, scolding t_c that {PRONOUN/t_c/subject} {VERB/t_c/need/needs} to take {PRONOUN/t_c/poss} duties more seriously.]",
-        	"Aw, c'mon, y_c. plike_r_a was feeling a little faint today. I'm just <i>observing</i> {PRONOUN/plike_r_a/object} to make sure {PRONOUN/plike_r_a/subject}{VERB/plike_r_a/'re/'s} okay.",
-        	"[plike_r_a nods along, rolling {PRONOUN/plike_r_a/poss} eyes back into {PRONOUN/plike_r_a/poss} head in a dramatic fainting motion. t_c stifles a laugh, and you stalk off with a huff. Apprentices!]"
+            "[{PRONOUN/t_c/subject/CAP} and plike_r_a splay out over the herb stores, chatting and gossiping about all the other cats in the Clan.]",
+            "[You interrupt their conversation, scolding t_c that {PRONOUN/t_c/subject} {VERB/t_c/need/needs} to take {PRONOUN/t_c/poss} duties more seriously.]",
+            "Aw, c'mon, y_c. plike_r_a was feeling a little faint today. I'm just <i>observing</i> {PRONOUN/plike_r_a/object} to make sure {PRONOUN/plike_r_a/subject}{VERB/plike_r_a/'re/'s} okay.",
+            "[plike_r_a nods along, rolling {PRONOUN/plike_r_a/poss} eyes back into {PRONOUN/plike_r_a/poss} head in a dramatic fainting motion. t_c stifles a laugh, and you stalk off with a huff. Apprentices!]"
         ]
     ],
-
     "cool_medcat_AJ2": [
         [
             "Any",
             "cool",
-        	"platonic_like",
-	        "they_sameage",
-	        "they_blind",
-        	"you_blind"
+            "platonic_like",
+            "they_sameage",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Sorry, fuzzface. As much as I'd love to talk today, the medicine den is totally swamped with patients!",
-	        "Come back later and you can distract me from my medicinal duties all you want, but until then, I have poultices to chew and paws to bandage. Duty calls!"
+            "Come back later and you can distract me from my medicinal duties all you want, but until then, I have poultices to chew and paws to bandage. Duty calls!"
         ]
     ],
-
     "silly_medapp_hysterical": [
         [
             "Any",
@@ -1266,32 +1231,31 @@
             "Move. r_s needs treatment."
         ]
     ],
-	 "brooding_medappAJ": [
-	[
-		"Any",
-		"you_injured",
-		"brooding"
-	],
-	[
-		"*Sigh* What did you do to yourself this time, y_c?",
-		"Hold still... Tell me where it hurts.",
-		"[For {PRONOUN/t_c/poss} brooding and stoic demeanor, t_c's touch is surprisingly gentle...]"
-	]
-	],
-
+    "brooding_medappAJ": [
+        [
+            "Any",
+            "you_injured",
+            "brooding"
+        ],
+        [
+            "*Sigh* What did you do to yourself this time, y_c?",
+            "Hold still... Tell me where it hurts.",
+            "[For {PRONOUN/t_c/poss} brooding and stoic demeanor, t_c's touch is surprisingly gentle...]"
+        ]
+    ],
     "brooding_med_youcondition": [
-	[
-		"Any",
-		"you_ill",
-		"you_injured",
-		"brooding"
-	],
-	[
-		"Here ... Take. Drink.",
-		"[t_c places a scrap of wader-laden moss in front of you.]",
-		"You need to stay hydrated if you want to get better."
-	]
-	],
+        [
+            "Any",
+            "you_ill",
+            "you_injured",
+            "brooding"
+        ],
+        [
+            "Here ... Take. Drink.",
+            "[t_c places a scrap of wader-laden moss in front of you.]",
+            "You need to stay hydrated if you want to get better."
+        ]
+    ],
     "brooding_medapp_2": [
         [
             "kitten",

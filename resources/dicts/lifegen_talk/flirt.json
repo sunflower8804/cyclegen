@@ -1192,29 +1192,27 @@
             "Oh, you're so cute sometimes! Do tell me more, hehe."
         ]
     ],
-	"brooding_flirt_AJ": [
+    "brooding_flirt_AJ": [
         [
             "Any",
             "brooding",
-	    "reject"
+            "reject"
         ],
         [
             "No."
         ]
     ],
-
-	"brooding_flirt_AJ1": [
+    "brooding_flirt_AJ1": [
         [
             "Any",
             "brooding"
         ],
         [
             "...",
-	    "...*Blush*"
+            "...*Blush*"
         ]
     ],
-
-	"brooding_flirt_AJ2": [
+    "brooding_flirt_AJ2": [
         [
             "Any",
             "brooding"
@@ -1223,19 +1221,17 @@
             "... You're very sweet. To say that."
         ]
     ],
-
-	"brooding_flirt_AJ3": [
+    "brooding_flirt_AJ3": [
         [
             "Any",
             "brooding",
-	    "reject"
+            "reject"
         ],
         [
             "Uhm. Why?"
         ]
     ],
-
-	"brooding_flirt_AJ4": [
+    "brooding_flirt_AJ4": [
         [
             "Any",
             "brooding"
@@ -1244,8 +1240,7 @@
             "[t_c buries {PRONOUN/t_c/poss} face in {PRONOUN/t_c/poss} paws shyly.]"
         ]
     ],
-
-	"brooding_flirt_AJ5": [
+    "brooding_flirt_AJ5": [
         [
             "Any",
             "brooding"
@@ -1254,56 +1249,50 @@
             "[t_c starts to purr.]"
         ]
     ],
-
-	"brooding_flirt_AJ6": [
+    "brooding_flirt_AJ6": [
         [
             "Any",
             "brooding",
-	    "reject"
+            "reject"
         ],
         [
             "Do you think I'm so shallow ...?"
         ]
     ],
-
-	"brooding_flirt_AJ7": [
+    "brooding_flirt_AJ7": [
         [
             "Any",
             "brooding",
-	    "reject"
+            "reject"
         ],
         [
             "[t_c narrows {PRONOUN/t_c/poss} eyes suspiciously.]",
-	    "What's your angle?"
+            "What's your angle?"
         ]
     ],
-
-	"brooding_flirt_AJ8": [
+    "brooding_flirt_AJ8": [
         [
             "Any",
             "brooding",
-	    "reject",
-	    "non-mates",
-	    "neutral"
+            "reject",
+            "non-mates",
+            "neutral"
         ],
         [
             "Uhm ... Have you considered seeing r_d?",
-	    "If you're seriously interested in me, you probably have some issues to work through."
+            "If you're seriously interested in me, you probably have some issues to work through."
         ]
     ],
-
-	"brooding_flirt_AJ9": [
+    "brooding_flirt_AJ9": [
         [
             "Any",
             "brooding"
         ],
         [
             "[t_c allows the faintest hint of a smile to crack over {PRONOUN/t_c/poss} face.]",
-	    "... Thank you."
+            "... Thank you."
         ]
     ],
-
-
     "cool_flirt": [
         [
             "Any",
@@ -1317,156 +1306,141 @@
             "... But, I don't exactly hate it, either. ~"
         ]
     ],
-
     "cool_flirt_AJ": [
         [
             "Any",
             "cool",
-        	"reject",
-        	
-        	"you_blind",
-        	"they_blind"
+            "reject",
+            "you_blind",
+            "they_blind"
         ],
         [
             "Echh. Someone get r_m. That was so sincere, I think it's causing an allergic reaction."
         ]
     ],
-
     "cool_flirt_AJ1": [
         [
             "Any",
             "cool",
-	        "reject",
-	        "you_blind",
-	        "they_blind"
+            "reject",
+            "you_blind",
+            "they_blind"
         ],
         [
             "Cute. Can I go now?"
         ]
     ],
-
     "cool_flirt_AJ2": [
         [
             "Any",
             "cool",
-        	"reject",
-	        
-	        "they_blind",
-	        "you_blind"
+            "reject",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Hey, r_q? Remind me how you teach the kits to spell 'Out of your league'?"
         ]
     ],
-
     "cool_flirt_AJ3": [
         [
             "Any",
             "cool",
-          	"you_blind",
-        	"they_blind"
+            "you_blind",
+            "they_blind"
         ],
         [
             "Y'know, if I didn't know any better, I'd say you were flirting with me, y_c.~",
-	        "Well, why'd you stop? I never said I didn't like it!"
+            "Well, why'd you stop? I never said I didn't like it!"
         ]
     ],
-
     "cool_flirt_AJ4": [
         [
             "Any",
             "cool",
-        	"brooding",
-	        "you_blind",
-	        "they_blind"
+            "brooding",
+            "you_blind",
+            "they_blind"
         ],
         [
             "That was. So lame. Ha.",
-	    "[t_c looks away, blushing.]"
+            "[t_c looks away, blushing.]"
         ]
     ],
-
-"cool_flirt_AJ5": [
+    "cool_flirt_AJ5": [
         [
             "Any",
             "cool",
-        	"platonic_like",
-        	"you_blind",
-        	"they_blind"
+            "platonic_like",
+            "you_blind",
+            "they_blind"
         ],
         [
             "Huh. Y'know, that really wasn't half bad.",
-    	    "Who taught you that line? Was it me?"
+            "Who taught you that line? Was it me?"
         ]
     ],
-
     "cool_flirt_AJ6": [
         [
             "Any",
             "cool",
-	        "reject",
-	        "you_blind",
-	        "they_blind",
+            "reject",
+            "you_blind",
+            "they_blind",
             "min_platonic_30"
         ],
         [
             "Hey, didn't I teach you that line?"
         ]
     ],
-
     "cool_flirt_AJ7": [
         [
             "Any",
             "cool",
-        	"assertive",
-	        "you_blind",
-	        "they_blind"
+            "assertive",
+            "you_blind",
+            "they_blind"
         ],
         [
             "Testy. I like it."
         ]
     ],
-
-"cool_flirt_AJ8": [
+    "cool_flirt_AJ8": [
         [
             "Any",
             "cool",
-	        "from_mate",
-	        "you_blind",
-	        "they_blind"
+            "from_mate",
+            "you_blind",
+            "they_blind"
         ],
         [
             "Feeling's mutual, babe!~"
         ]
     ],
-
     "cool_flirt_AJ9": [
         [
             "Any",
             "cool",
-	        "you_blind",
-	        "they_blind"
+            "you_blind",
+            "they_blind"
         ],
         [
             "Heh. Always loved that line."
         ]
     ],
-
     "cool_flirt_AJ10": [
         [
             "Any",
             "cool",
-        	"they_blind",
-        	"you_blind"
+            "they_blind",
+            "you_blind"
         ],
         [
             "Uhm - What is this feeling?",
-        	"I'm actually getting ... nervous?",
-	        "Is this how regular cats feel all the time?"
+            "I'm actually getting ... nervous?",
+            "Is this how regular cats feel all the time?"
         ]
     ],
-
-
     "h5d6xs9": [
         [
             "Any",
@@ -3766,7 +3740,7 @@
             "[Despite t_c's words, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to hide a smile.]"
         ]
     ],
-   "hasmate_success_H3": [
+    "hasmate_success_H3": [
         [
             "flirt",
             "has_mate",
@@ -3859,7 +3833,7 @@
             "I can't get over their_crush. I hope you understand!"
         ]
     ],
-   "flirt_reject_H23": [
+    "flirt_reject_H23": [
         [
             "flirt",
             "reject",
@@ -3888,7 +3862,7 @@
             "flirt",
             "reject",
             "they_queen",
-	        "clan_has_kits",
+            "clan_has_kits",
             "platonic_like",
             "you_blind",
             "they_blind"
@@ -3922,7 +3896,7 @@
             "StarClan, do I need to ask d_n to set me out on more patrols so you'll stop flirting with me?"
         ]
     ],
-   "hasmate_reject_H1": [
+    "hasmate_reject_H1": [
         [
             "flirt",
             "has_mate",
@@ -4018,7 +3992,7 @@
             "has_mate",
             "non-mates",
             "reject",
-	        "Any",
+            "Any",
             "you_blind",
             "they_blind"
         ],
@@ -4031,7 +4005,7 @@
     "hasmate_reject_H8": [
         [
             "flirt",
-	        "Any",
+            "Any",
             "has_mate",
             "non-mates",
             "reject"
@@ -4044,7 +4018,7 @@
     "hasmate_reject_H9": [
         [
             "flirt",
-	        "Any",
+            "Any",
             "has_mate",
             "non-mates",
             "reject",
@@ -4060,7 +4034,7 @@
     "hasmate_reject_H10": [
         [
             "flirt",
-	        "Any",
+            "Any",
             "has_mate",
             "non-mates",
             "reject",
@@ -4072,7 +4046,7 @@
             "Oh, you know what? Since you're so brave, how about I place you on more border patrols?"
         ]
     ],
-   "frommate_reject_H1": [
+    "frommate_reject_H1": [
         [
             "flirt",
             "reject",

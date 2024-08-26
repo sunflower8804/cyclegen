@@ -1,26 +1,4 @@
 {
-    "dep_1a6": [
-        [
-            "kitten",
-            "insult",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Your courage is commendable, but your manners could use some work."
-        ]
-    ],
-    "dep_132": [
-        [
-            "newborn",
-            "insult",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Wha.. What was that?"
-        ]
-    ],
     "unabashed_deputy": [
         [
             "unabashed",
@@ -225,18 +203,6 @@
         ],
         [
             "... Some cats have things to do."
-        ]
-    ],
-    "dep_15af": [
-        [
-            "Any",
-            "no_kit",
-            "insult",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Say that again and you'll regret it."
         ]
     ],
     "dep_32": [
@@ -2527,7 +2493,7 @@
             "they_deputy",
             "you_any",
             "no_kit",
-	"neutral"
+            "neutral"
         ],
         [
             "[t_c closes {PRONOUN/t_c/poss} eyes. {PRONOUN/t_c/subject/CAP} must be ignoring you.]",
@@ -2551,7 +2517,7 @@
     "deaddeputy_connected_J1~1": [
         [
             "they_deputy",
-	"they_leader",
+            "they_leader",
             "they_sc",
             "you_sc",
             "min_you_deadfor_40",

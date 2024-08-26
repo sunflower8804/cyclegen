@@ -357,33 +357,36 @@ class InsultScreen(Screens):
         resource_dir = "resources/dicts/lifegen_talk/"
         possible_texts = {}
 
-        if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled']:
-            with open(f"{resource_dir}{cat.status}.json", 'r') as read_file:
-                possible_texts = ujson.loads(read_file.read())
+        # if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled']:
+        #     with open(f"{resource_dir}{cat.status}.json", 'r') as read_file:
+        #         possible_texts = ujson.loads(read_file.read())
                 
-        if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled']:
-            with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
-                possible_texts.update(ujson.loads(read_file.read()))
+        # if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled']:
+        #     with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
+        #         possible_texts.update(ujson.loads(read_file.read()))
 
-        if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
-            with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
-                possible_texts2 = ujson.loads(read_file.read())
-                possible_texts.update(possible_texts2)
+        # if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
+        #     with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
+        #         possible_texts2 = ujson.loads(read_file.read())
+        #         possible_texts.update(possible_texts2)
         
-        if cat.status not in ["newborn"] and you.status not in ['newborn']:
-            with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
-                possible_texts4 = ujson.loads(read_file.read())
-                possible_texts.update(possible_texts4)
+        # if cat.status not in ["newborn"] and you.status not in ['newborn']:
+        #     with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
+        #         possible_texts4 = ujson.loads(read_file.read())
+        #         possible_texts.update(possible_texts4)
 
-        if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
-            with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
-                possible_texts3 = ujson.loads(read_file.read())
-                possible_texts.update(possible_texts3)
+        # if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
+        #     with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
+        #         possible_texts3 = ujson.loads(read_file.read())
+        #         possible_texts.update(possible_texts3)
 
-        if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
-            with open(f"{resource_dir}crush.json", 'r') as read_file:
-                possible_texts3 = ujson.loads(read_file.read())
-                possible_texts.update(possible_texts3)
+        # if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
+        #     with open(f"{resource_dir}crush.json", 'r') as read_file:
+        #         possible_texts3 = ujson.loads(read_file.read())
+        #         possible_texts.update(possible_texts3)
+
+        with open(f"{resource_dir}insults.json", 'r') as read_file:
+            possible_texts = ujson.loads(read_file.read())
 
         return self.filter_texts(cat, possible_texts)
 
@@ -1256,7 +1259,7 @@ class InsultScreen(Screens):
         text = [t1.replace("t_c", str(cat.name)) for t1 in text]
 
         for i in range(len(text)):
-            text[i] = adjust_txt(Cat, text[i], cat, self.cat_dict, r_c_allowed=True)
+            text[i] = adjust_txt(Cat, text[i], cat, self.cat_dict, r_c_allowed=True, o_c_allowed=True)
             if text[i] == "":
                 return ""
             

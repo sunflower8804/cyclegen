@@ -1399,29 +1399,6 @@
             "Whatever, I don't care. Don't even look at me. StarClan forbid I ever sink to the level where I love you again."
         ]
     ],
-    "grievingyouinsult_J1": [
-        [
-            "they_grieving",
-            "grievingyou",
-            "any",
-            "insult"
-        ],
-        [
-            "I know the real y_c would never say that.",
-            "I miss you so much I'm hallucinating you... Why are my hallucinations so mean?"
-        ]
-    ],
-    "grievingtheminsult_J1": [
-        [
-            "you_grieving",
-            "grievingthem",
-            "any",
-            "insult"
-        ],
-        [
-            "It's really me, y_c. You're not insulting a hallucination."
-        ]
-    ],
     "grievingthemalive_J1": [
         [
             "you_grieving",
@@ -1431,90 +1408,6 @@
         [
             "Hi, y_c!",
             "I missed you too. I'll stay a bit longer, this time, I promise."
-        ]
-    ],
-    "shunned_insult_J1": [
-        [
-            "insult",
-            "they_shunned",
-            "they_grieving",
-            "any"
-        ],
-        [
-            "[t_c just stares at you blankly.]"
-        ]
-    ],
-    "shunned_insult_J2": [
-        [
-            "insult",
-            "both_shunned",
-            "they_grieving",
-            "any"
-        ],
-        [
-            "What do you have to gain from being so mean?"
-        ]
-    ],
-    "shunned_insult_J3": [
-        [
-            "insult",
-            "both_shunned",
-            "they_grieving",
-            "you_grieving",
-            "any"
-        ],
-        [
-            "I know you don't mean that."
-        ]
-    ],
-    "shunned_insult_J4": [
-        [
-            "insult",
-            "both_shunned",
-            "you_grieving",
-            "grievingthem",
-            "any"
-        ],
-        [
-            "You must be confused."
-        ]
-    ],
-    "shunned_insult_J5": [
-        [
-            "insult",
-            "both_shunned",
-            "they_grieving",
-            "grievingyou",
-            "any"
-        ],
-        [
-            "I know you don't mean that."
-        ]
-    ],
-    "shunned_insult_J6": [
-        [
-            "insult",
-            "both_shunned",
-            "you_grieving",
-            "they_grieving",
-            "grievingthem",
-            "any"
-        ],
-        [
-            "You must be confused."
-        ]
-    ],
-    "shunned_insult_J7": [
-        [
-            "insult",
-            "both_shunned",
-            "they_grieving",
-            "you_grieving",
-            "grievingyou",
-            "any"
-        ],
-        [
-            "I know you don't mean that."
         ]
     ],
     "bothgrieving_J1": [
@@ -1680,18 +1573,6 @@
             "If you were still here, I might be able to return to normal, but... without you...",
             "I don't know. Nothing makes sense anymore.",
             "What do I do?"
-        ]
-    ],
-    "bothgrieving_J5": [
-        [
-            "they_grieving",
-            "you_grieving",
-            "you_shunned",
-            "any",
-            "insult"
-        ],
-        [
-            "[t_c just stares into space, not hearing you.]"
         ]
     ],
     "bothgrieving_J6": [
@@ -1880,388 +1761,6 @@
             "And you killed another cat. You <b>desecrated</b> the code you swore to us.",
             "[y_c spits at your paws. The fury in their eyes is something greater, something more ancient than your Clanmate's.]",
             "Find your own stars-damned path. I will not guide you again."
-        ]
-    ],
-    "insult_shunned_CM1": [
-        [
-            "insult",
-            "you_shunned",
-            "no_kit"
-        ],
-        [
-            "Despicable.",
-            "Care to try anything else, traitor?"
-        ]
-    ],
-    "insult_shunned_CM2": [
-        [
-            "insult",
-            "you_shunned",
-            "no_kit"
-        ],
-        [
-            "Your claws are clearly sharper than your tongue."
-        ]
-    ],
-    "insult_shunned_CM3": [
-        [
-            "insult",
-            "you_shunned",
-            "they_injured",
-            "no_kit"
-        ],
-        [
-            "Come to finish me off?",
-            "StarClan forbid the day you face them."
-        ]
-    ],
-    "insult_shunned_CM4": [
-        [
-            "insult",
-            "you_shunned",
-            "they_kitten"
-        ],
-        [
-            "Eep! Go away! Go away!"
-        ]
-    ],
-    "insult_shunned_CM5": [
-        [
-            "insult",
-            "you_shunned",
-            "they_newborn"
-        ],
-        [
-            "[t_c spits at you, and t_p quickly returns, swiping you away from their precious kit.]"
-        ]
-    ],
-    "insult_shunned_CM6": [
-        [
-            "insult",
-            "you_shunned",
-            "they_kitten"
-        ],
-        [
-            "t_p told me never, ever to listen to you! Because, uh, uhmm...",
-            "You are! The evilest! And stupid! And you REALLY stink!!!"
-        ]
-    ],
-    "insult_shunned_CM7": [
-        [
-            "insult",
-            "you_shunned",
-            "they_kitten",
-            "silly",
-            "unabashed"
-        ],
-        [
-            "Blehhhhh!!!",
-            "[t_c sticks their tongue out at you and makes a strange, scowling face.]",
-            "That's how you look! Haha!"
-        ]
-    ],
-    "insult_shunned_CM8": [
-        [
-            "insult",
-            "you_shunned",
-            "they_kitten"
-        ],
-        [
-            "Wahhhhh!!!!!!",
-            "I'm telling r_w!",
-            "You're gonna get in SOOOO much trouble!"
-        ]
-    ],
-    "insult_shunned_CM9": [
-        [
-            "insult",
-            "you_shunned",
-            "they_grieving"
-        ],
-        [
-            "[t_c doesn't even look up at you.]"
-        ]
-    ],
-    "insult_shunned_CM10": [
-        [
-            "insult",
-            "you_shunned",
-            "they_grieving"
-        ],
-        [
-            "How. Dare. You.",
-            "After everything I've gone through. You of all cats... How I wait for the day you're gone from this Clan forever.",
-            "I won't be the one mourning you."
-        ]
-    ],
-    "insult_shunned_CM11": [
-        [
-            "insult",
-            "you_shunned",
-            "they_grieving"
-        ],
-        [
-            "Get... away from me..."
-        ]
-    ],
-    "insult_shunned_CM12": [
-        [
-            "insult",
-            "you_shunned",
-            "they_grieving",
-            "sweet"
-        ],
-        [
-            "I never wanted to think you were a bad cat, y_c.",
-            "I don't know what to do when you just keep proving me wrong."
-        ]
-    ],
-    "insult_shunned_CM13": [
-        [
-            "insult",
-            "you_shunned",
-            "they_grieving",
-            "unlawful",
-            "dead_close"
-        ],
-        [
-            "Hah! Hahaha!",
-            "Come on, y_c, my claws still work! I'll fight ya! d_c's honor!"
-        ]
-    ],
-    "insult_shunned_CM14": [
-        [
-            "insult",
-            "you_shunned",
-            "no_kit"
-        ],
-        [
-            "I hope you're happy with yourself.",
-            "You've made it clear you don't care about what you've done.",
-            "Maybe l_n will take the hint and exile you already."
-        ]
-    ],
-    "gen_forgiven_insult_H1": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any",
-            "dislike"
-        ],
-        [
-            "[t_c clicks their tongue and looks the other way.]",
-            "I thought I was forgiven for my crimes. Do you <i>still</i> hate me?"
-        ]
-    ],
-    "gen_forgiven_insult_H2": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any"
-        ],
-        [
-            "Yeah, yeah, yeah, you don't like me. You don't like that I was forgiven.",
-            "Do you have anything else to say or is your brain just that small?"
-        ]
-    ],
-    "gen_forgiven_insult_H3": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_newborn"
-        ],
-        [
-            "Err. You have a ferocious mew, y_c. I suppose?"
-        ]
-    ],
-    "gen_forgiven_insult_H4": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any",
-            "hate"
-        ],
-        [
-            "Ugh, would murdering you be worth getting shunned again..."
-        ]
-    ],
-    "gen_forgiven_insult_H5": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any",
-            "no_kit"
-        ],
-        [
-            "Oh, what did you say? I couldn't hear you over my very loud murderous thoughts.",
-            "Just kidding...",
-            "Maybe."
-        ]
-    ],
-    "gen_forgiven_insult_H6": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any",
-            "beach",
-            "dislike"
-        ],
-        [
-            "It would be a shame if some cat found you in the ocean, wouldn't you say?"
-        ]
-    ],
-    "gen_forgiven_insult_H7": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any",
-            "platonic_like"
-        ],
-        [
-            "I can't tell if that's a joke.",
-            "I'm going to choose to be blissfully unaware and assume it is."
-        ]
-    ],
-    "gen_forgiven_insult_H8": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_younger",
-            "you_any"
-        ],
-        [
-            "Can a cat not enjoy a day unshunned to themselves?",
-            "Kids, these days..."
-        ]
-    ],
-    "gen_forgiven_insult_H9": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any"
-        ],
-        [
-            "Breathe in, breathe out..."
-        ]
-    ],
-    "gen_forgiven_insult_H10": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any",
-            "dislike"
-        ],
-        [
-            "Ouch, I would have thought with so much venom in your tone, you'd be better at this by now."
-        ]
-    ],
-    "gen_forgiven_insult_Guy1": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any"
-        ],
-        [
-            "What was it r_c said?",
-            "'Practice makes perfect.'"
-        ]
-    ],
-    "unlawful_forgiven_insult_Guy2": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_unlawful",
-            "you_kit"
-        ],
-        [
-            "[t_c suddenly looms over you.]",
-            "Little kit... did you think the stories r_q told you weren't real?",
-            "I may be 'forgiven', but you should never forget."
-        ]
-    ],
-    "gen_forgiven_insult_Guy3": [
-        [
-            "insult",
-            "they_forgiven",
-            "they_any",
-            "you_any",
-            "no_kit"
-        ],
-        [
-            "Tell me y_c... how many cats do you think I killed?",
-            "[t_c laughs while they watch your reaction.]"
-        ]
-    ],
-    "gen_youforgiven_insult_H1": [
-        [
-            "insult",
-            "you_forgiven",
-            "they_any",
-            "you_any",
-            "no_kit",
-            "platonic_like"
-        ],
-        [
-            "You can't be serious.",
-            "Please, for your sake and mine, just... don't insult cats while you're forgiven.",
-            "Are you asking to be shunned again??"
-        ]
-    ],
-    "gen_youforgiven_insult_H2": [
-        [
-            "insult",
-            "you_forgiven",
-            "they_any",
-            "you_any"
-        ],
-        [
-            "Oh, the lesson wasn't learned, huh?"
-        ]
-    ],
-    "gen_youforgiven_insult_H3": [
-        [
-            "insult",
-            "you_forgiven",
-            "they_any",
-            "you_any",
-            "no_kit"
-        ],
-        [
-            "I suppose you still need a learning experience."
-        ]
-    ],
-    "gen_youforgiven_insult_H4": [
-        [
-            "insult",
-            "you_forgiven",
-            "they_any",
-            "you_any",
-            "no_kit"
-        ],
-        [
-            "There goes the hope that you'd learn from your mistakes."
-        ]
-    ],
-    "gen_youforgiven_insult_H5": [
-        [
-            "insult",
-            "you_forgiven",
-            "they_any",
-            "you_any"
-        ],
-        [
-            "Rude!"
         ]
     ],
     "bioparent_unlawfulGuy1": [
@@ -2624,31 +2123,6 @@
             "[It's a lazy day today.]"
         ]
     ],
-    "gnn_youdeaf_J2_3": [
-        [
-            "only_you_deaf",
-            "they_deaf",
-            "you_blind",
-            "they_blind",
-            "any"
-        ],
-        [
-            "[t_c trips as you walk side by side through camp. You feel {PRONOUN/t_c/poss} body shaking with laughter as you help {PRONOUN/t_c/object} up.]"
-        ]
-    ],
-    "gnn_youdeaf_J2_4": [
-        [
-            "you_deaf",
-            "they_deaf",
-            "only_you_blind",
-            "they_blind",
-            "any"
-        ],
-        [
-            "[t_c helps you navigate the camp after a storm has left the clearing covered in puddles.]",
-            "[The two of you delicately dodge the puddles, grab a meal from the fresh kill pile, and return to a safe, dry den to eat.]"
-        ]
-    ],
     "gnn_youdeaf_J3": [
         [
             "you_deaf",
@@ -2767,7 +2241,6 @@
             "silly",
             "unlawful",
             "trust",
-            
             "you_blind",
             "they_went_blind"
         ],
@@ -2782,7 +2255,6 @@
             "Any",
             "silly",
             "trust"
-            
         ],
         [
             "Wanna know something weird I've noticed lately?",
@@ -2798,7 +2270,6 @@
             "Any",
             "silly",
             "trust"
-            
         ],
         [
             "Can I tell ya something, y_c? You gotta promise not to tell any other cat. This matter is between us and the porcupine.",
@@ -2881,7 +2352,7 @@
         ],
         [
             "y_c! How are you doing?",
-	        "...Hey, what do you mean, 'Surprised it's not you in here, t_c'?"
+            "...Hey, what do you mean, 'Surprised it's not you in here, t_c'?"
         ]
     ],
     "silly_youinjured_invite": [
@@ -2907,7 +2378,7 @@
         ],
         [
             "y_c! It's good to see you in here-",
-	        "Well, it's not good to see you in here, but it's good to see you, like, in general."
+            "Well, it's not good to see you in here, but it's good to see you, like, in general."
         ]
     ],
     "silly_youill_gift": [
@@ -2931,7 +2402,6 @@
             "Any",
             "silly",
             "you_ill",
-            
             "they_blind"
         ],
         [
@@ -3160,9 +2630,9 @@
             "you_any"
         ],
         [
-           "Are you gonna stay here forever?",
-           "Wh... what do you mean no? Your Clan threw you out, didn't they?",
-           "Don't leave me!"
+            "Are you gonna stay here forever?",
+            "Wh... what do you mean no? Your Clan threw you out, didn't they?",
+            "Don't leave me!"
         ]
     ],
     "shunned_deaf_J1": [
