@@ -6761,5 +6761,29 @@
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/poke/pokes} you when the queens turn away for just a moment.]",
             "[Quickly, t_c is shooed away after you mewl.]"
         ]
-    ]
+    ],
+    "youdeaf_R86": [
+        [
+            "only_you_deaf",
+            "newborn",
+            "they_kitten"
+            
+        ],
+        [
+            "[t_c pushes some more moss into your nest before sitting to watch you snuggle in.]"
+        ]
+        ],
+
+    "youdeaf_R87": [
+        [
+            "only_you_deaf",
+            "newborn",
+            "they_kitten"
+            
+        ],
+        [
+            "[Thumping of the ground startles you away with a mew. t_c is jumping up and down next to your nest!]",
+            "[A queen shoos {PRONOUN/t_c/object} away after you start wailing.]"
+        ]
+]
 }
