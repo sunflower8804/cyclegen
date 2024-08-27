@@ -856,7 +856,10 @@ class Pregnancy_Events:
                     kit.relationships[the_cat.ID] = Relationship(kit, the_cat)
 
             #### REMOVE ACCESSORY ######
-            kit.pelt.accessory = None
+            # kit.pelt.accessory = None
+            kit.pelt.accessories = []
+            kit.pelt.inventory = []
+            
             clan.add_cat(kit)
 
             #### GIVE HISTORY ######
