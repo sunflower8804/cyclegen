@@ -60,7 +60,7 @@
             "Feels a pit of guilt in {PRONOUN/m_c/poss} stomach",
             "Is pleading for forgiveness to any cat who will listen",
             "Had a nightmare about what {PRONOUN/m_c/subject} did",
-            "Insists, deep down, {PRONOUN/m_c/subject}'re not a bad cat"
+            "Insists, deep down, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not a bad cat"
         ],
         "not_main_trait_constraint": [
             "vengeful",
