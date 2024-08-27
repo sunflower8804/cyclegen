@@ -613,7 +613,7 @@
             "they_kitten",
             "you_queen",
             "you_queen's_apprentice",
-            "GHOST"
+            "they_ghost"
         ],
         [
             "y_c? I got lost yesterday. I was looking for the lilies r_e said {PRONOUN/r_e/subject} liked.",
@@ -842,7 +842,7 @@
             "you_any",
             "they_formerlyaloner",
             "platonic_like",
-            "lore",
+            "they_lore",
             "no_kit",
             "you_blind",
             "they_blind"
@@ -2897,6 +2897,15 @@
             "[That's okay. When {PRONOUN/t_c/subject} {VERB/t_c/do/does} try to sneak up on you, you're ready.]",
             "[You tackle t_c before {PRONOUN/t_c/subject} can get you, and sit on {PRONOUN/t_c/object} mercilessly.]",
             "[Revenge is sweet.]"
+        ]
+    ],
+    "skilltest": [
+        [
+            "they_dark",
+            "any"
+        ],
+        [
+            "they dark forest skill"
         ]
     ]
 }
