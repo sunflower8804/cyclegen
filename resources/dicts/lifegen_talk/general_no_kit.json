@@ -1824,7 +1824,6 @@
             "introspective",
             "newleaf",
             "you_blind",
-            "you_deaf",
             "platonic_like"
         ],
         [
@@ -19093,7 +19092,7 @@
             "[For a moment you think back, trying to remember anything you could have done to upset or bother {PRONOUN/t_c/object}. What did you do!?]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/hesitate/hesitates} before slumping a little and signing out the issue with care.]",
             "[... Moss makes noise? t_c has just informed you that apparently you are very noisy when getting in your nest!]",
-            "[You are stunned for several moments before apologising swiftly and repeatedly. You had no idea!!]",
+            "[You are stunned for several moments before apologizing swiftly and repeatedly. You had no idea!!]",
             "[t_c appears relieved that you're not upset about {PRONOUN/t_c/poss} complaint, and is more than a little amused. You sign that you'll be more careful in the future!]"
         ]
     ],
@@ -19183,7 +19182,7 @@
         [
             "[m_n has asked you to meet with t_c. When you spot {PRONOUN/t_c/object}, though, it's clear {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} in the mood to talk.]",
             "[That's fine by you. You lay beside t_c comfortably.]",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} seem thrilled... but before long {PRONOUN/t_c/subject} {VERB/t_c/relax/relaxes} and {VERB/t_c/settle/settles} in beside you.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} seem thrilled... but before long {PRONOUN/t_c/subject} {VERB/t_c/relax/relaxes} and {VERB/t_c/settle/settles} in beside you.]",
             "[Mediating doesn't always require communication!]"
         ]
     ],
@@ -19197,7 +19196,7 @@
         ],
         [
             "[You've just interrupted a conversation that appeared to be getting heated. You take t_c aside first and {PRONOUN/t_c/subject} {VERB/t_c/are/is} quick to begin ranting verbally.]",
-            "[Seeing that t_c needs to just get it off {PRONOUN/t_c/poss} chest you let it happen with a small smile.]",
+            "[Seeing that t_c needs to just get it off {PRONOUN/t_c/poss} chest, you let it happen with a small smile.]",
             "[As {PRONOUN/t_c/subject} {VERB/t_c/begin/begins} to calm down, it seems {PRONOUN/t_c/subject} {VERB/t_c/realise/realises} the mistake. A simple apology is signed to you now that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} calm.]",
             "[You accept it smoothly and begin to do your job now that things have levelled out a bit. t_c appreciates it!]"
         ]
@@ -19340,7 +19339,7 @@
             "no_kit"
         ],
         [
-            "[The darkness hides so much... but with your lack of hearing comes a sharpness in your sight.]",
+            "[The darkness hides so much... but with your lack of hearing comes a heightened understanding of hidden dangers.]",
             "[t_c bursts from the undergrowth in an explosion of dead leaves and a spray of reddish-mud.]",
             "[You're ready for {PRONOUN/t_c/object} though. No time is wasted in kicking {PRONOUN/t_c/object} off of you.]",
             "[The wrestling continues for several heart-pounding minutes before t_c wrenches {PRONOUN/t_c/self} away to race into the darkness of the forest.]",
@@ -19540,7 +19539,7 @@
     "youdeaf_R52": [
         [
             "only_you_deaf",
-            "shunned",
+            "you_shunned",
             "no_kit",
             "they_deaf",
             "any",
@@ -19556,7 +19555,7 @@
     "youdeaf_R53": [
         [
             "only_you_deaf",
-            "shunned",
+            "you_shunned",
             "they_deaf",
             "any",
             "max_platonic_25"
@@ -19569,7 +19568,7 @@
     "youdeaf_R54": [
         [
             "only_you_deaf",
-            "from mate",
+            "from_mate",
             "they_hearing",
             "any"
         ],
@@ -19586,7 +19585,7 @@
     "youdeaf_R55": [
         [
             "only_you_deaf",
-            "from mate",
+            "from_mate",
             "they_deaf",
             "any"
         ],
@@ -19609,8 +19608,8 @@
         ],
         [
             "[t_c has had some recent trouble with r_c. You approach to see how you can help.]",
-            "[With a cross expression, {PRONOUN/t_c/subject} {VERB/t_c/doesn't/don't} seem keen on your presence. That's too bad for {PRONOUN/t_c/object} - this is the role you've chosen.]",
-            "[Though {PRONOUN/t_c/subject} {VERB/t_c/try/tries} to ignore your signing, you start to make faces at {PRONOUN/t_c/object} that {PRONOUN/t_c/subject} can't ignore. You watch {PRONOUN/t_c/poss} body shake slightly with the laughter {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} suppressing]",
+            "[With a cross expression, {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} seem keen on your presence. That's too bad for {PRONOUN/t_c/object} - this is the role you've chosen.]",
+            "[Though {PRONOUN/t_c/subject} {VERB/t_c/try/tries} to ignore your signing, you start to make faces at {PRONOUN/t_c/object} that {PRONOUN/t_c/subject} can't ignore. You watch {PRONOUN/t_c/poss} body shake slightly with the laughter {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} suppressing.]",
             "[Finally t_c gives in with a laugh, and is more open to signing with you about r_c.]",
             "[t_c is grateful by the time you're both done signing about r_c, and {PRONOUN/t_c/subject} {VERB/t_c/offer/offers} a head bunt of appreciation for your efforts.]",
             "[Perhaps your job is harder without your hearing, but that doesn't mean it's harder to understand your Clanmates.]"

@@ -595,7 +595,6 @@ class MakeClanScreen(Screens):
         return super().exit_screen()
 
     def on_use(self):
-
         # Don't allow someone to enter no name for their clan
         if self.sub_screen == "name clan":
             if self.elements["name_entry"].get_text() == "":
@@ -993,14 +992,23 @@ class MakeClanScreen(Screens):
             if "cat" + str(u) in self.elements:
                 self.elements["cat" + str(u)].kill()
             if game.choose_cats[u] == selected:
-                self.elements["cat" + str(u)] = self.elements["cat" + str(u)] = UISpriteButton(
-                    scale(pygame.Rect((540, 350), (300, 300))),
+                self.elements["cat" + str(u)] = self.elements[
+                    "cat" + str(u)
+                ] = UISpriteButton(
+                    scale(pygame.Rect((540, 400), (300, 300))),
                     pygame.transform.scale(game.choose_cats[u].sprite, (300, 300)),
-                    cat_object=game.choose_cats[u])
-            elif game.choose_cats[u] in [self.leader, self.deputy, self.med_cat] + self.members:
-                self.elements["cat" + str(u)] = UISpriteButton(scale(pygame.Rect((1300, 300 + 100 * u), (100, 100))),
-                                                               game.choose_cats[u].sprite,
-                                                               cat_object=game.choose_cats[u], manager=MANAGER)
+                    cat_object=game.choose_cats[u],
+                )
+            elif (
+                game.choose_cats[u]
+                in [self.leader, self.deputy, self.med_cat] + self.members
+            ):
+                self.elements["cat" + str(u)] = UISpriteButton(
+                    scale(pygame.Rect((1300, 250 + 100 * u), (100, 100))),
+                    game.choose_cats[u].sprite,
+                    cat_object=game.choose_cats[u],
+                    manager=MANAGER,
+                )
                 self.elements["cat" + str(u)].disable()
             else:
                 self.elements["cat" + str(u)] = UISpriteButton(
