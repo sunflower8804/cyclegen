@@ -1232,15 +1232,19 @@ class ProfileScreen(Screens):
             # TALK
             cant_talk = False
             dead_talk = self.get_dead_cat_talk()
+            print(dead_talk)
 
             if (
                 self.the_cat.outside or
                 game.clan.your_cat.moons < 0 or
                 self.the_cat.ID == game.clan.your_cat.ID or
-                (game.clan.your_cat.dead is True or self.the_cat.dead is True and
-                dead_talk is False)
+                ((game.clan.your_cat.dead or self.the_cat.dead) and dead_talk is False)
             ):
                 cant_talk = True
+
+            # if cant_talk is True and dead_talk is True:
+            #     print("ughghgh")
+            #     cant_talk = True
                 
             self.profile_elements["talk"] = UIImageButton(scale(pygame.Rect(
                 (746, 220), (68, 68))),
@@ -1249,7 +1253,7 @@ class ProfileScreen(Screens):
                 tool_tip_text="Talk to this Cat",
                 manager=MANAGER
             )
-            if self.the_cat.talked_to or cant_talk:
+            if self.the_cat.talked_to or cant_talk is True:
                 self.profile_elements["talk"].disable()
             else:
                 self.profile_elements["talk"].enable()
@@ -3748,12 +3752,40 @@ class ProfileScreen(Screens):
             self.the_cat.moons >= 1))
             )
 
-        if not (cat_dead_condition_sc or cat_dead_condition_df or cat_dead_condition_ur):
-            return False
-        if not (cat_alive_condition_sc or cat_alive_condition_df or cat_alive_condition_ur):
-            return False
-        return True
-
+        if self.the_cat.dead and not self.the_cat.outside and not self.the_cat.df:
+            if not cat_dead_condition_sc:
+                return False
+            else:
+                return True
+            
+        if self.the_cat.dead and self.the_cat.outside and not self.the_cat.df:
+            if not cat_dead_condition_ur:
+                return False
+            else:
+                return True
+            
+        if self.the_cat.dead and not self.the_cat.outside and self.the_cat.df:
+            if not cat_dead_condition_df:
+                return False
+            else:
+                return True
+            
+        if game.clan.your_cat.dead:
+            if game.clan.your_cat.df:
+                if not cat_alive_condition_df:
+                    return False
+                else:
+                    return True
+            elif game.clan.your_cat.outside:
+                if not cat_alive_condition_ur:
+                    return False
+                else:
+                    return True
+            else:
+                if not cat_alive_condition_sc:
+                    return False
+                else:
+                    return True
     def on_use(self):
         if self.search_bar:
             if self.search_bar.is_focused and self.search_bar.get_text() == "search":
