@@ -2358,16 +2358,32 @@ class Cat:
             return
 
         # remove accessories if need be
-        if 'NOTAIL' in self.pelt.scars and self.pelt.accessory in ['RED FEATHERS', 'BLUE FEATHERS', 'JAY FEATHERS', "SEAWEED", "DAISY CORSAGE", "GULL FEATHERS",
-            "SPARROW FEATHERS",
-            "CLOVER",
-            "DAISY"]:
-            self.pelt.accessory = None
-        if 'HALFTAIL' in self.pelt.scars and self.pelt.accessory in ['RED FEATHERS', 'BLUE FEATHERS', 'JAY FEATHERS', "SEAWEED", "DAISY CORSAGE", "GULL FEATHERS",
-            "SPARROW FEATHERS",
-            "CLOVER",
-            "DAISY"]:
-            self.pelt.accessory = None
+        # if 'NOTAIL' in self.pelt.scars and self.pelt.accessory in ['RED FEATHERS', 'BLUE FEATHERS', 'JAY FEATHERS', "SEAWEED", "DAISY CORSAGE", "GULL FEATHERS",
+        #     "SPARROW FEATHERS",
+        #     "CLOVER",
+        #     "DAISY"]:
+        #     self.pelt.accessory = None
+        # if 'HALFTAIL' in self.pelt.scars and self.pelt.accessory in ['RED FEATHERS', 'BLUE FEATHERS', 'JAY FEATHERS', "SEAWEED", "DAISY CORSAGE", "GULL FEATHERS",
+        #     "SPARROW FEATHERS",
+        #     "CLOVER",
+        #     "DAISY"]:
+        #     self.pelt.accessory = None
+
+        # clangen ^^
+        # lifegen vv
+
+        if 'NOTAIL' in self.pelt.scars or 'HALFTAIL' in self.pelt.scars:
+            for acc in [
+                'RED FEATHERS', 'BLUE FEATHERS',
+                'JAY FEATHERS', "SEAWEED",
+                "DAISY CORSAGE", "GULL FEATHERS",
+                "SPARROW FEATHERS", "CLOVER",
+                "DAISY"
+                ]:
+                if acc in self.pelt.accessories:
+                    self.pelt.inventory.remove(acc)
+                if acc in self.pelt.inventory:
+                    self.pelt.inventory.remove(acc)
 
         condition = PERMANENT[name]
         new_condition = False

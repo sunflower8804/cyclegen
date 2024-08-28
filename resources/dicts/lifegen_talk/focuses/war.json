@@ -34,14 +34,14 @@
         [
             "focus",
             "they_kitten",
-            "healer",
+            "they_healer",
             "you_warrior",
             "you_injured"
         ],
         [
             "[t_c's eyes hold an unnerving understanding as you limp around camp.]",
             "You are injured. Why hasn't r_m treated you yet?",
-            "{VERB\/r_m\/Are\/Is} {PRONOUN\/r_m\/subject} busy? That's fine. I'm not a medicine cat, but I can help!"
+            "{VERB/r_m/Are/Is} {PRONOUN/r_m/subject} busy? That's fine. I'm not a medicine cat, but I can help!"
         ]
     ],
     "war_app_H1": [
@@ -57,7 +57,7 @@
         [
             "Does war really mean anything? This just seems petty, but tm_n keeps telling me it's a lesson to be learned.",
             "If it was true... I wish the lessons were less bloody and painful.",
-            "I'm sorry to bother you with my thoughts, y_c. I just needed to speak to someone that wasn't a puddle or tm_n. {PRONOUN\/tm_n\/subject\/CAP} {VERB\/tm_n\/hover\/hovers}, and now it makes me uncomfortable beyond belief.",
+            "I'm sorry to bother you with my thoughts, y_c. I just needed to speak to someone that wasn't a puddle or tm_n. {PRONOUN/tm_n/subject/CAP} {VERB/tm_n/hover/hovers}, and now it makes me uncomfortable beyond belief.",
             "It would take a long time before I would be comfortable with some cat standing behind me."
         ]
     ],
@@ -81,10 +81,10 @@
             "clan_has_kits"
         ],
         [
-            "[t_c looks tired, yet {PRONOUN\/t_c\/subject}{VERB\/t_c\/'re\/'s} up and about watching over the kits.]",
+            "[t_c looks tired, yet {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} up and about watching over the kits.]",
             "War is so unpredictable. I need to watch over them, I need to.",
             "I always feel like the moment I turn away, something is going to happen.",
-            "It <i>feels<\/i> irrational but... is it, really?"
+            "It <i>feels</i> irrational but... is it, really?"
         ]
     ],
     "war_kitten_H3": [
@@ -96,7 +96,7 @@
             "they_blind"
         ],
         [
-            "[You find t_c mumbling to {PRONOUN\/t_c\/self} in the nursery.]",
+            "[You find t_c mumbling to {PRONOUN/t_c/self} in the nursery.]",
             "This is not scary, not at all! Every cat is going to come back safe...",
             "Breathe in and out, in and out, like r_q says."
         ]
@@ -149,8 +149,8 @@
         [
             "[t_c is fruitlessly trying to make the warriors laugh.]",
             "C'mon, guys! Hey, how about this one? A w_cClan cat walks into a creek ...",
-            "[One of the warriors tosses a stick at {PRONOUN\/t_c\/object}, snapping at {PRONOUN\/t_c\/object} to give it a rest.]",
-            "[It seems like no one in c_nClan is in much of a laughing mood. Defeated, t_c slinks back to {PRONOUN\/t_c\/poss} nest.]"
+            "[One of the warriors tosses a stick at {PRONOUN/t_c/object}, snapping at {PRONOUN/t_c/object} to give it a rest.]",
+            "[It seems like no one in c_nClan is in much of a laughing mood. Defeated, t_c slinks back to {PRONOUN/t_c/poss} nest.]"
         ]
     ],
     "war_silly_AJ1": [
@@ -165,7 +165,7 @@
         ],
         [
             "Psh, w_cClan isn't so scary.",
-            "Try dealing with t_l_brooding when the last of {PRONOUN\/t_l_brooding\/poss} favorite prey is stolen from the pile. Now <i>that's<\/i> scary."
+            "Try dealing with t_l_brooding when the last of {PRONOUN/t_l_brooding/poss} favorite prey is stolen from the pile. Now <i>that's</i> scary."
         ]
     ],
     "unlawful_war1": [
@@ -176,8 +176,8 @@
             "war"
         ],
         [
-            "[t_c slashes at the ground menacingly, mumbling to {PRONOUN\/t_c\/self} about the war.]",
-            "If any of those fox-hearts put even <i>one<\/i> whisker over the border, I'll kill their leader myself as many times as it takes... they'll learn not to mess with c_nClan."
+            "[t_c slashes at the ground menacingly, mumbling to {PRONOUN/t_c/self} about the war.]",
+            "If any of those fox-hearts put even <i>one</i> whisker over the border, I'll kill their leader myself as many times as it takes... they'll learn not to mess with c_nClan."
         ]
     ],
     "unlawful_warGuy1": [
@@ -215,7 +215,7 @@
         ],
         [
             "[You ask t_c what war is and why every cat is making a big deal about it.]",
-            "That sounds like something your {PRONOUN\/y_p\/parent} should explain to you, not me."
+            "That sounds like something your {PRONOUN/y_p/parent} should explain to you, not me."
         ]
     ],
     "war_mckitten_H3": [
@@ -238,7 +238,7 @@
         ],
         [
             "Well- war is, um...",
-            "[Your {PRONOUN\/y_c\/parent} seems to stiffen up, looking awfully uncomfortable.]",
+            "[Your {PRONOUN/y_c/parent} seems to stiffen up, looking awfully uncomfortable.]",
             "War is uhh...",
             "You're too young to know!"
         ]
@@ -301,7 +301,7 @@
         ],
         [
             "You're going to be fine while I'm gone on patrol, right? Don't get too close to the border, make sure to stay in the dens, stay around r_w--",
-            "[You cut t_c off and tell {PRONOUN\/t_c\/object} that you'll be fine.]",
+            "[You cut t_c off and tell {PRONOUN/t_c/object} that you'll be fine.]",
             "Are you sure? Really sure? It's always nice to take precautions!"
         ]
     ],
@@ -324,9 +324,9 @@
             "they_neurotic"
         ],
         [
-            "[t_c, crouched outside the nursery, has made {PRONOUN\/t_c\/self} even smaller than usual.]",
-            "[{PRONOUN\/t_c\/poss\/CAP} eyes are wide as {PRONOUN\/t_c\/subject} {VERB\/t_c\/watch\/watches} r_w reinforce the camp wall and l_n review battle plans.]",
-            "[{PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/meet\/meets} your gaze and {VERB\/t_c\/blink\/blinks}, but {VERB\/t_c\/say\/says} nothing.]"
+            "[t_c, crouched outside the nursery, has made {PRONOUN/t_c/self} even smaller than usual.]",
+            "[{PRONOUN/t_c/poss/CAP} eyes are wide as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} r_w reinforce the camp wall and l_n review battle plans.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/meet/meets} your gaze and {VERB/t_c/blink/blinks}, but {VERB/t_c/say/says} nothing.]"
         ]
     ],
     "warfocus_SQ2": [
@@ -341,7 +341,7 @@
         ],
         [
             "Um, y_c?",
-            "[t_c presses close to you, fidgeting with {PRONOUN\/t_c\/poss} tiny paws.]",
+            "[t_c presses close to you, fidgeting with {PRONOUN/t_c/poss} tiny paws.]",
             "The... the scary cats everyone's talking about? The ones they're fighting?",
             "T-they won't come here, right?"
         ]
@@ -357,9 +357,9 @@
         ],
         [
             "[Long after dusk, you're organizing your herbs in the medicine den when you hear tiny paws at the entrance.]",
-            "[t_c creeps in, {PRONOUN\/t_c\/poss} eyes wide and fur fluffed. When {PRONOUN\/t_c\/subject} {VERB\/t_c\/see\/sees} you, {PRONOUN\/t_c\/subject} {VERB\/t_c\/gasp\/gasps}.]",
+            "[t_c creeps in, {PRONOUN/t_c/poss} eyes wide and fur fluffed. When {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, {PRONOUN/t_c/subject} {VERB/t_c/gasp/gasps}.]",
             "I- I'm sorry! I know I'm not supposed to be here!",
-            "[{PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/shuffle\/shuffles} {PRONOUN\/t_c\/poss} paws, not meeting your eyes.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/shuffle/shuffles} {PRONOUN/t_c/poss} paws, not meeting your eyes.]",
             "I c-couldn't sleep. I just wanted to ask...",
             "...everyone's talking about the war, and they tell me that it'll be okay, and that StarClan will protect us, but...",
             "Y-you talk to StarClan, right?",
@@ -376,16 +376,16 @@
             "platonic_love"
         ],
         [
-            "[You hear a scuffle coming from inside the nursery. You peer inside to see t_c alone, swinging {PRONOUN\/t_c\/poss} little paws at empty air.]",
+            "[You hear a scuffle coming from inside the nursery. You peer inside to see t_c alone, swinging {PRONOUN/t_c/poss} little paws at empty air.]",
             "Grr!",
-            "[{PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/lunge\/lunges} into the air, batting at nothing, but upon landing {PRONOUN\/t_c\/subject} {VERB\/t_c\/slip\/slips} and {VERB\/t_c\/tumble\/tumbles} unceremoniously in a ball of fluff.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/lunge/lunges} into the air, batting at nothing, but upon landing {PRONOUN/t_c/subject} {VERB/t_c/slip/slips} and {VERB/t_c/tumble/tumbles} unceremoniously in a ball of fluff.]",
             "Ah!",
-            "[For a moment, t_c lies still, sniffling. You pad into the nursery and ask if {PRONOUN\/t_c\/subject}{VERB\/t_c\/'re\/'s} all right.]",
+            "[For a moment, t_c lies still, sniffling. You pad into the nursery and ask if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} all right.]",
             "*sniff* y_c?",
-            "[{PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/blink\/blinks} up at you, then suddenly {VERB\/t_c\/burst\/bursts} into tears.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/blink/blinks} up at you, then suddenly {VERB/t_c/burst/bursts} into tears.]",
             "I- I'm trying to learn how to fight, s-so I can help! But I can't figure it out!",
             "What if w_cClan attacks the camp? I want to be useful! I don't want to hide while everyone gets hurt!",
-            "[t_c buries {PRONOUN\/t_c\/poss} face in your side, wailing, as you try to calm {PRONOUN\/t_c\/object} down.]"
+            "[t_c buries {PRONOUN/t_c/poss} face in your side, wailing, as you try to calm {PRONOUN/t_c/object} down.]"
         ]
     ],
     "warfocus_SQ5": [
@@ -398,9 +398,9 @@
             "you_queen's_apprentice"
         ],
         [
-            "[You suggest playing mossball with t_c, but {PRONOUN\/t_c\/subject} {VERB\/t_c\/shake\/shakes} {PRONOUN\/t_c\/poss} head.]",
+            "[You suggest playing mossball with t_c, but {PRONOUN/t_c/subject} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head.]",
             "Can we play hide-and-seek again? I wanna try out some new hiding spots.",
-            "If they're good, I can use them when... um, <i>if<\/i> w_cClan comes here."
+            "If they're good, I can use them when... um, <i>if</i> w_cClan comes here."
         ]
     ],
     "warfocus_SQ6": [
@@ -449,7 +449,7 @@
         [
             "...y_c? Could... could you teach me how to fight?",
             "Just one move, in case w_cClan comes here, and everyone else is gone, and I hide but they find me, and...",
-            "[t_c starts sniffling. You quickly distract {PRONOUN\/t_c\/object} with a nearby feather.]"
+            "[t_c starts sniffling. You quickly distract {PRONOUN/t_c/object} with a nearby feather.]"
         ]
     ],
     "warfocus_SQ9": [
@@ -478,7 +478,7 @@
         ],
         [
             "We don't have to worry about anything happening to t_p_positive, right?",
-            "Even with the war, {PRONOUN\/t_p_positive\/subject}{VERB\/t_p_positive\/'re\/'s} gonna be okay, right?"
+            "Even with the war, {PRONOUN/t_p_positive/subject}{VERB/t_p_positive/'re/'s} gonna be okay, right?"
         ]
     ],
     "warfocus_SQ11": [
@@ -491,8 +491,8 @@
             "platonic_like"
         ],
         [
-            "[t_c has been especially quiet since the war started, so you put together a game to distract {PRONOUN\/t_c\/object}.]",
-            "[As {PRONOUN\/t_c\/subject} {VERB\/t_c\/dash\/dashes} around the nursery, hunting for the colorful feathers you hid, you hear {PRONOUN\/t_c\/object} laugh for the first time in a while.]"
+            "[t_c has been especially quiet since the war started, so you put together a game to distract {PRONOUN/t_c/object}.]",
+            "[As {PRONOUN/t_c/subject} {VERB/t_c/dash/dashes} around the nursery, hunting for the colorful feathers you hid, you hear {PRONOUN/t_c/object} laugh for the first time in a while.]"
         ]
     ],
     "warfocus_SQ12": [
@@ -504,9 +504,9 @@
             "littermate"
         ],
         [
-            "[After overhearing l_n and d_n discussing the war, t_c has curled up in one corner of {PRONOUN\/t_c\/poss} den, not talking to anyone.]",
-            "[Your {PRONOUN\/t_c\/sibling}'s eyes are closed, but {PRONOUN\/t_c\/poss} ears prick at your approach.]",
-            "[You curl around {PRONOUN\/t_c\/object} and gently lick the top of {PRONOUN\/t_c\/poss} head, like y_p used to do when you were kits.]",
+            "[After overhearing l_n and d_n discussing the war, t_c has curled up in one corner of {PRONOUN/t_c/poss} den, not talking to anyone.]",
+            "[Your {PRONOUN/t_c/sibling}'s eyes are closed, but {PRONOUN/t_c/poss} ears prick at your approach.]",
+            "[You curl around {PRONOUN/t_c/object} and gently lick the top of {PRONOUN/t_c/poss} head, like y_p used to do when you were kits.]",
             "[After a moment, you hear a weak giggle.]"
         ]
     ],
@@ -521,9 +521,9 @@
             "comfort"
         ],
         [
-            "[It's midday, but you find y_c curled up in {PRONOUN\/t_c\/poss} nest. {PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/don't\/doesn't} open {PRONOUN\/t_c\/poss} eyes when you approach.]",
+            "[It's midday, but you find y_c curled up in {PRONOUN/t_c/poss} nest. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} open {PRONOUN/t_c/poss} eyes when you approach.]",
             "Hi, y_c. I'm not feeling great.",
-            "I'll be okay, and I don't want to bother r_m when {PRONOUN\/r_m\/subject}{VERB\/r_m\/'re\/'s} so busy already.",
+            "I'll be okay, and I don't want to bother r_m when {PRONOUN/r_m/subject}{VERB/r_m/'re/'s} so busy already.",
             "I just... I'm thinking about the war, and everything that will happen before it's over...",
             "...cats I care about being hurt, and fighting other cats for real...",
             "...I'm so scared, y_c. I'm so scared, I feel sick."
@@ -543,7 +543,7 @@
             "[t_c notices you wandering close to the camp entrance and scoops you up, hastily dropping you closer to the nursery.]",
             "Whoa, y_c! You can't be that close to the entrance. It's not safe.",
             "There's bad guys out there. You have to stay inside so you can get big and strong to help us fight them, okay?",
-            "[You agree, and t_c heads off on a patrol. You can't wait to be like {PRONOUN\/t_c\/object} when you grow up!]"
+            "[You agree, and t_c heads off on a patrol. You can't wait to be like {PRONOUN/t_c/object} when you grow up!]"
         ]
     ],
     "war_focus_J2": [
@@ -662,7 +662,7 @@
             "they_deaf"
         ],
         [
-            "[Every time t_c leaves camp now, you say an extra prayer to StarClan, terrified that this might be the time {PRONOUN\/t_c\/subject} won't make it back alive.]"
+            "[Every time t_c leaves camp now, you say an extra prayer to StarClan, terrified that this might be the time {PRONOUN/t_c/subject} won't make it back alive.]"
         ]
     ],
     "war_focus_AJ6": [
@@ -679,9 +679,9 @@
             "they_blind"
         ],
         [
-            "[You rush to t_c as soon as {PRONOUN\/t_c\/subject}{VERB\/t_c\/'re\/'s} back from patrol, pressing your nose into {PRONOUN\/t_c\/poss} pelt and pulling {PRONOUN\/t_c\/object} close to you.]",
+            "[You rush to t_c as soon as {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} back from patrol, pressing your nose into {PRONOUN/t_c/poss} pelt and pulling {PRONOUN/t_c/object} close to you.]",
             "Tch ... I'm alright, y'know, y_c ... You don't have to do this every time. It's not like there are w_cClan warriors lurking everywhere I turn.",
-            "[Still, in the slight tremble in {PRONOUN\/t_c\/poss} voice, you can tell that {PRONOUN\/t_c\/subject} secretly {VERB\/t_c\/appreciate\/appreciates} you worrying after {PRONOUN\/t_c\/object}.]"
+            "[Still, in the slight tremble in {PRONOUN/t_c/poss} voice, you can tell that {PRONOUN/t_c/subject} secretly {VERB/t_c/appreciate/appreciates} you worrying after {PRONOUN/t_c/object}.]"
         ]
     ],
     "war_focus_assertive7_AJ": [
@@ -752,7 +752,7 @@
             "they_hearing"
         ],
         [
-            "[t_c is grinning ear to ear, looking as pleased as {PRONOUN\/t_c\/subject}{VERB\/t_c\/'ve\/'s} ever been, like {PRONOUN\/t_c\/subject} could paw the white out of the moon.]",
+            "[t_c is grinning ear to ear, looking as pleased as {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} ever been, like {PRONOUN/t_c/subject} could paw the white out of the moon.]",
             "I just heard a rumor that the w_cClan cats have started using 'the fearsome t_c' as a nursery tale to scare their kits into sleeping ...",
             "*Sniff* Ah, it's almost enough to bring a tear to my eye."
         ]
@@ -769,7 +769,7 @@
             "they_sameage"
         ],
         [
-            "[t_c is arranging some things around {PRONOUN\/t_c\/poss} nest.]",
+            "[t_c is arranging some things around {PRONOUN/t_c/poss} nest.]",
             "Oh, hey, y_c! Come to admire my collection?",
             "I like to keep little trophies from all of my past battles. Call me sentimental, but it helps me to remember what I'm fighting for.",
             "Over there's the tooth r_m pulled out of my shoulder after I attacked that dog on the border patrol. StarClan, they almost passed out on me!",
@@ -792,13 +792,13 @@
         ],
         [
             "Hey, y_c, uh ... C-Could I talk to you for a second?",
-            "[t_c looks unusually uncertain and on-edge. You take {PRONOUN\/t_c\/object} to a private part of camp and ask what's wrong.]",
+            "[t_c looks unusually uncertain and on-edge. You take {PRONOUN/t_c/object} to a private part of camp and ask what's wrong.]",
             "Uh ...",
             "[t_c refuses to meet your gaze.]",
             "I don't exactly know how to ... Uhm ...",
             "... Today, there was a scrap at the border with w_cClan. Same as always.",
             "And I was working through their warriors. Same as always.",
-            "There's this shout for help, and I look over and r_w has this <i>apprentice<\/i> on 'em.",
+            "There's this shout for help, and I look over and r_w has this <i>apprentice</i> on 'em.",
             "I guess my instincts just took over. I pulled 'em off, and I swear, I didn't mean to be so rough, but then ...",
             "I think the kid was seriously hurt.",
             "[t_c's eyes suddenly glaze over.]",
@@ -823,7 +823,7 @@
             "[t_c is staring at r_a dozing in front of the apprentice's den.]",
             "StarClan, the apprentices sure look young, don't they ...?",
             "If any cat were ever to lay a paw on them ...",
-            "[t_c bites the inside of {PRONOUN\/t_c\/poss} cheek and looks away, visions of the w_cClan apprentice undoubtedly flashing through {PRONOUN\/t_c\/poss} mind.]"
+            "[t_c bites the inside of {PRONOUN/t_c/poss} cheek and looks away, visions of the w_cClan apprentice undoubtedly flashing through {PRONOUN/t_c/poss} mind.]"
         ]
     ],
     "war_focus_AJ11~4": [
@@ -839,14 +839,14 @@
             "they_sameage"
         ],
         [
-            "[t_c is pondering {PRONOUN\/t_c\/poss} trophy collection, brow furrowed, tail flicking idly from side-to-side.]",
-            "[Gently, {PRONOUN\/t_c\/subject} {VERB\/t_c\/ghost\/ghosts} {PRONOUN\/t_c\/poss} paw over a series of mementos from battles against w_cClan ... Teeth and claws, scraps of fur, trampled foliage.]",
+            "[t_c is pondering {PRONOUN/t_c/poss} trophy collection, brow furrowed, tail flicking idly from side-to-side.]",
+            "[Gently, {PRONOUN/t_c/subject} {VERB/t_c/ghost/ghosts} {PRONOUN/t_c/poss} paw over a series of mementos from battles against w_cClan ... Teeth and claws, scraps of fur, trampled foliage.]",
             "All of these used to belong to cats, once ...",
             "If some w_cClan cat were to keep pieces of me in their nest to use as motivation, I'm not sure how I'd feel.",
             "I guess I'd just wonder how they could be so blind.",
             "I'm not just another faceless enemy, am I? I have real thoughts and feelings! I have a story! I feel pain!",
             "Do the w_cClan cats really feel the same way, too ...?",
-            "[t_c turns {PRONOUN\/t_c\/poss} gaze back onto {PRONOUN\/t_c\/poss} trophies.]",
+            "[t_c turns {PRONOUN/t_c/poss} gaze back onto {PRONOUN/t_c/poss} trophies.]",
             "The cats I took these from ... I wonder what their stories are like.",
             "They'd probably have some pretty good ones to tell."
         ]
@@ -864,18 +864,18 @@
             "they_sameage"
         ],
         [
-            "[You catch t_c slipping out of {PRONOUN\/t_c\/poss} den early one morning, carrying {PRONOUN\/t_c\/poss} w_cClan trophies outside of camp.]",
+            "[You catch t_c slipping out of {PRONOUN/t_c/poss} den early one morning, carrying {PRONOUN/t_c/poss} w_cClan trophies outside of camp.]",
             "Oh, hey, y_c ... I was just about to go bury this stuff. Wanna help me?",
             "[The two of you pad out into the dewy, springy air, wrapped in a pleasant, ponderous silence.]",
-            "[t_c selects a private spot near the border to bury {PRONOUN\/t_c\/poss} things, and hollows out a small hole in the earth with {PRONOUN\/t_c\/poss} paw, then carefully places everything inside.]",
-            "[{PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/pause\/pauses} at a small tuft of black-and-white fur, hovering over it with {PRONOUN\/t_c\/poss} paw.]",
+            "[t_c selects a private spot near the border to bury {PRONOUN/t_c/poss} things, and hollows out a small hole in the earth with {PRONOUN/t_c/poss} paw, then carefully places everything inside.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses} at a small tuft of black-and-white fur, hovering over it with {PRONOUN/t_c/poss} paw.]",
             "Y'know, I remember every warrior I've ever fought. This one was a real tough fight. It was a senior warrior of w_cClan, I think. StarClan, she was fierce.",
             "I think the two of us had a lot in common. Maybe, if she were born just a few tail-lengths across the border, we could've been best friends.",
             "... I really wish I didn't feel this way, y_c. Things were so much less confusing back when I just saw everyone in w_cClan as nothing more than an enemy.",
             "But, things were also harder, too. My world felt a lot smaller.",
             "I wonder where that she-cat is now ...",
             "[t_c's gaze trails sideways across the border, fixated on the rising sun, washing the world in an anxious, watery light. Another day of fighting is about to begin.]",
-            "[With a deep breath, {PRONOUN\/t_c\/subject} {VERB\/t_c\/push\/pushes} the tuft of fur into the hole and {VERB\/t_c\/cover\/covers} it with a thin layer of soil, never again to resurface.]"
+            "[With a deep breath, {PRONOUN/t_c/subject} {VERB/t_c/push/pushes} the tuft of fur into the hole and {VERB/t_c/cover/covers} it with a thin layer of soil, never again to resurface.]"
         ]
     ],
     "war_focus_AJ12": [
@@ -896,8 +896,8 @@
             "So there I was, backed into a corner -- sheer fifteen fox-length drop in front of me, legion of w_cClan warriors behind.",
             "I thought for sure that I was toast. Even started praying to my warrior ancestors for help.",
             "But then, just in the nick of time, who comes to my rescue but our very own r_w?",
-            "[The other warriors laugh and jostle r_w's shoulders, teasing that {PRONOUN\/t_c\/subject} should've left t_c to die if {PRONOUN\/t_c\/subject} knew what was good for {PRONOUN\/t_c\/object}.]",
-            "Ahaha, okay, okay! My stories aren't <i>so<\/i> boring, you know.",
+            "[The other warriors laugh and jostle r_w's shoulders, teasing that {PRONOUN/t_c/subject} should've left t_c to die if {PRONOUN/t_c/subject} knew what was good for {PRONOUN/t_c/object}.]",
+            "Ahaha, okay, okay! My stories aren't <i>so</i> boring, you know.",
             "Oh, hey, y_c! Wanna get in on this? I was just about to start the tale of how I tricked a w_cClan warrior into thinking I was a kittypet!"
         ]
     ],
@@ -925,7 +925,7 @@
         [
             "[t_c looks across the groups of warriors, boasting and sharing stories, with a slightly sad expression.]",
             "Do you ever feel like some inextricable part of our identities is being lost in all of this ...?",
-            "We used to be artists, dreamers, children and parents. We used to be <i>individuals.<\/i>",
+            "We used to be artists, dreamers, children and parents. We used to be <i>individuals.</i>",
             "Now it's like we're just faceless weapons, waiting to be used and thrown away. Nothing matters except fighting w_cClan anymore.",
             "y_c, promise me that, no matter what happens, you'll never let this war make you forget who you are.",
             "You're so much more than just an instrument for violence ... No matter what some cats might lead you to believe."
@@ -967,8 +967,8 @@
         ],
         [
             "[The prey pile has been looking a little scarce lately, what with so many warriors out to battle.]",
-            "[But t_c, the Clan's best hunter, has been working {PRONOUN\/t_c\/self} to the point of exhaustion to ensure that the Clan is fed.]",
-            "[{PRONOUN\/t_c\/subject\/CAP} may not know the fame and glory of battle, but as {PRONOUN\/t_c\/subject} {VERB\/t_c\/add\/adds} five birds to the dwindling freshkill pile, you hope that t_c knows just how essential and valued {PRONOUN\/t_c\/poss} contributions really are.]"
+            "[But t_c, the Clan's best hunter, has been working {PRONOUN/t_c/self} to the point of exhaustion to ensure that the Clan is fed.]",
+            "[{PRONOUN/t_c/subject/CAP} may not know the fame and glory of battle, but as {PRONOUN/t_c/subject} {VERB/t_c/add/adds} five birds to the dwindling freshkill pile, you hope that t_c knows just how essential and valued {PRONOUN/t_c/poss} contributions really are.]"
         ]
     ],
     "war_focus_AJ18": [
@@ -983,9 +983,9 @@
         ],
         [
             "[A w_cClan warrior scraped you up a little on border patrol; nothing major, but still a bit scary-looking.]",
-            "[When you re-enter camp for the first time and t_c sees you, {PRONOUN\/t_c\/subject} {VERB\/t_c\/freeze\/freezes}, eyes wide.]",
+            "[When you re-enter camp for the first time and t_c sees you, {PRONOUN/t_c/subject} {VERB/t_c/freeze/freezes}, eyes wide.]",
             "What happened? Who did this to you?",
-            "[{PRONOUN\/t_c\/poss\/CAP} gaze suddenly darkens.]",
+            "[{PRONOUN/t_c/poss/CAP} gaze suddenly darkens.]",
             "I swear to StarClan, y_c, if this gets any worse ... All of w_cClan is going to have me to answer to."
         ]
     ],
@@ -1020,10 +1020,10 @@
             "they_blind"
         ],
         [
-            "[You rouse t_c from {PRONOUN\/t_c\/poss} sleep in the middle of the night.]",
+            "[You rouse t_c from {PRONOUN/t_c/poss} sleep in the middle of the night.]",
             "What is it? You had a nightmare?",
             "C'mere.",
-            "[t_c opens {PRONOUN\/t_c\/poss} arms and you crawl into {PRONOUN\/t_c\/poss} nest, enveloped by {PRONOUN\/t_c\/object}, shielded from the cold by {PRONOUN\/t_c\/poss} fur.]",
+            "[t_c opens {PRONOUN/t_c/poss} arms and you crawl into {PRONOUN/t_c/poss} nest, enveloped by {PRONOUN/t_c/object}, shielded from the cold by {PRONOUN/t_c/poss} fur.]",
             "I know the war is scary ... But I'm not going to let anything happen to you.",
             "Nothing's gonna hurt you on my watch. I'm here. You don't have to be afraid."
         ]
@@ -1110,14 +1110,14 @@
             ],
             "sympathy": [
                 "Hard doesn't even begin to describe it ...",
-                "[t_c scoots closer to you, pressing {PRONOUN\/t_c\/poss} side into your fur.]",
+                "[t_c scoots closer to you, pressing {PRONOUN/t_c/poss} side into your fur.]",
                 "I just don't know what to do anymore, y_c.",
                 "All I want is to take away everyone's pain. All the suffering our Clanmates have endured at the paws of w_cClan ... How much more can this community take?",
                 "It's my job to maintain peace. To stop the war. But everything I ever learned in my training has failed. Logic has failed us. Reason has failed us.",
                 "StarClan ....",
                 "Well, I just don't know what to think about StarClan anymore.",
                 "I'm just tired. I want it to be over ...",
-                "[t_c sighs, burying {PRONOUN\/t_c\/poss} head into your pelt as if {PRONOUN\/t_c\/subject} can hide away there forever.]"
+                "[t_c sighs, burying {PRONOUN/t_c/poss} head into your pelt as if {PRONOUN/t_c/subject} can hide away there forever.]"
             ]
         }
     },
@@ -1143,7 +1143,7 @@
             "platonic_like"
         ],
         [
-            "Doesn't d_n know what {PRONOUN\/d_n\/subject}{VERB\/d_n\/'re\/'s} risking by putting me on the border patrol?",
+            "Doesn't d_n know what {PRONOUN/d_n/subject}{VERB/d_n/'re/'s} risking by putting me on the border patrol?",
             "How ever will the brave little soldiers of c_nClan get by without my beautiful face as moral support?~"
         ]
     ],
@@ -1161,7 +1161,7 @@
             "I overheard r_w comparing w_cClan to a bunch of monsters earlier. Couldn't believe my ears. I mean, are we all still in the nursery?",
             "They're not monsters. They're just a bunch of sorry scraps of fur, as pathetic and desperate as the rest of us.",
             "I'm sure they don't want to march out there getting killed any more than we do.",
-            "And I know I <i>really<\/i> don't want to."
+            "And I know I <i>really</i> don't want to."
         ]
     ],
     "war_focus_AJ27~1": {
@@ -1217,9 +1217,9 @@
             "[After coming down with a slight cold, you beg your mentor to let you skip the border patrol, afraid of infecting any of the warriors with your sickness.]",
             "[Just as m_n tells you that having the sniffles is no excuse to get out of your duties, t_c steps in.]",
             "I can go.",
-            "[m_n asks if {PRONOUN\/t_c\/subject}{VERB\/t_c\/'re\/'s} sure.]",
-            "This cat is young, and sick. {PRONOUN\/y_c\/subject\/CAP} {VERB\/y_c\/have\/has} no business being on the front lines. What type of warrior would I be if I allowed {PRONOUN\/y_c\/object} to go in my stead?",
-            "[Just as you begin to stammer out your thanks, t_c silences you with a flick of {PRONOUN\/t_c\/poss} tail.]",
+            "[m_n asks if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} sure.]",
+            "This cat is young, and sick. {PRONOUN/y_c/subject/CAP} {VERB/y_c/have/has} no business being on the front lines. What type of warrior would I be if I allowed {PRONOUN/y_c/object} to go in my stead?",
+            "[Just as you begin to stammer out your thanks, t_c silences you with a flick of {PRONOUN/t_c/poss} tail.]",
             "Don't get used to it. Just focus on getting well."
         ]
     ],
@@ -1248,9 +1248,9 @@
             "they_sameage"
         ],
         [
-            "[d_n is swatting at t_c, insisting that {PRONOUN\/d_n\/poss} {VERB\/d_n\/know\/knows} {PRONOUN\/t_c\/subject}{VERB\/t_c\/'re\/'s} not really sick, and {PRONOUN\/d_n\/subject} {VERB\/d_n\/need\/needs} all the warriors {PRONOUN\/d_n\/subject} can get for the next border patrol.]",
-            "Y'know, have you tried yelling just a little louder? I feel like that'd <i>really<\/i> convince me.",
-            "[With a grunt of effort, t_c sluggishly rises to {PRONOUN\/t_c\/poss} paws and shakes scraps of moss out of {PRONOUN\/t_c\/poss} fur.]",
+            "[d_n is swatting at t_c, insisting that {PRONOUN/d_n/poss} {VERB/d_n/know/knows} {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not really sick, and {PRONOUN/d_n/subject} {VERB/d_n/need/needs} all the warriors {PRONOUN/d_n/subject} can get for the next border patrol.]",
+            "Y'know, have you tried yelling just a little louder? I feel like that'd <i>really</i> convince me.",
+            "[With a grunt of effort, t_c sluggishly rises to {PRONOUN/t_c/poss} paws and shakes scraps of moss out of {PRONOUN/t_c/poss} fur.]",
             "c_nClan's bravest little warrior. Reporting for duty.",
             "Let's just get this over with so I can go back to napping."
         ]
@@ -1268,8 +1268,8 @@
         ],
         [
             "[The camp is alive with whisperings of a skirmish on the latest border patrol, the same one that d_n forced t_c to participate in.]",
-            "[As the warriors file in through the camp entrance, battered and bruised, t_c rushes in with {PRONOUN\/t_c\/poss} tail tucked between {PRONOUN\/t_c\/poss} legs, seemingly unharmed.]",
-            "[You approach {PRONOUN\/t_c\/object}, expecting some pithy remark or witty comment about how pointless it was, but instead {PRONOUN\/t_c\/subject} simply {VERB\/t_c\/brush\/brushes} past you and dart straight into {PRONOUN\/t_c\/poss} den.]",
+            "[As the warriors file in through the camp entrance, battered and bruised, t_c rushes in with {PRONOUN/t_c/poss} tail tucked between {PRONOUN/t_c/poss} legs, seemingly unharmed.]",
+            "[You approach {PRONOUN/t_c/object}, expecting some pithy remark or witty comment about how pointless it was, but instead {PRONOUN/t_c/subject} simply {VERB/t_c/brush/brushes} past you and dart straight into {PRONOUN/t_c/poss} den.]",
             "[What was that all about?]"
         ]
     ],
@@ -1286,17 +1286,17 @@
         ],
         "intro": [
             "[Ever since the incident with the border patrol, t_c's been acting differently than usual.]",
-            "[Instead of primping and preening and making snide comments about cats around camp, {PRONOUN\/t_c\/subject} {VERB\/t_c\/spend\/spends} most of {PRONOUN\/t_c\/poss} time in {PRONOUN\/t_c\/poss} nest, despite the fact that {PRONOUN\/t_c\/subject} somehow didn't gain a single scratch in battle.]",
+            "[Instead of primping and preening and making snide comments about cats around camp, {PRONOUN/t_c/subject} {VERB/t_c/spend/spends} most of {PRONOUN/t_c/poss} time in {PRONOUN/t_c/poss} nest, despite the fact that {PRONOUN/t_c/subject} somehow didn't gain a single scratch in battle.]",
             "[You're curious about what happened, but don't know how to broach the subject.]",
             "[What should you do?]"
         ],
         "intro_choices": {
             "choice1": {
-                "text": "[Confront {PRONOUN\/t_c\/object} head-on.]",
+                "text": "[Confront {PRONOUN/t_c/object} head-on.]",
                 "next_scene": "confront"
             },
             "choice2": {
-                "text": "[Ask {PRONOUN\/t_c\/object} subtly.]",
+                "text": "[Ask {PRONOUN/t_c/object} subtly.]",
                 "next_scene": "subtle"
             },
             "choice3": {
@@ -1304,18 +1304,18 @@
                 "next_scene": "gossip"
             },
             "confront": [
-                "[As t_c drags a piece of freshkill into {PRONOUN\/t_c\/poss} nest, you decide to ask {PRONOUN\/t_c\/object}, head-on, what happened on the border patrol.]",
-                "... I was forced to kill a nosy cat who was too stupid to mind {PRONOUN\/t_c\/poss} own business. Now leave me alone.",
-                "[{PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/pick\/picks} up {PRONOUN\/t_c\/poss} piece of freshkill and {VERB\/t_c\/curl\/curls} into a tight ball, closing {PRONOUN\/t_c\/self} off from the world. Clearly, whatever happened, {PRONOUN\/t_c\/subject} {VERB\/t_c\/don't\/doesn't} want to talk about it.]"
+                "[As t_c drags a piece of freshkill into {PRONOUN/t_c/poss} nest, you decide to ask {PRONOUN/t_c/object}, head-on, what happened on the border patrol.]",
+                "... I was forced to kill a nosy cat who was too stupid to mind {PRONOUN/t_c/poss} own business. Now leave me alone.",
+                "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pick/picks} up {PRONOUN/t_c/poss} piece of freshkill and {VERB/t_c/curl/curls} into a tight ball, closing {PRONOUN/t_c/self} off from the world. Clearly, whatever happened, {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} want to talk about it.]"
             ],
             "subtle": [
-                "[As t_c drags a piece of freshkill into {PRONOUN\/t_c\/poss} nest, you casually attempt to bring up that you heard something strange happened on the border patrol.]",
+                "[As t_c drags a piece of freshkill into {PRONOUN/t_c/poss} nest, you casually attempt to bring up that you heard something strange happened on the border patrol.]",
                 "... Was that your attempt at subtlety? Or are you really just so mouse-brained that you think you can pull one over on a master manipulator?",
-                "Nothing happened on that patrol that's of any interest to <i>you<\/i> at all, y_c. Now leave me alone.",
-                "[{PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/pick\/picks} up {PRONOUN\/t_c\/poss} piece of freshkill and {VERB\/t_c\/curl\/curls} into a tight ball, closing {PRONOUN\/t_c\/self} off from the world. Clearly, whatever happened, {PRONOUN\/t_c\/subject} {VERB\/t_c\/don't\/doesn't} want to talk about it.]"
+                "Nothing happened on that patrol that's of any interest to <i>you</i> at all, y_c. Now leave me alone.",
+                "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pick/picks} up {PRONOUN/t_c/poss} piece of freshkill and {VERB/t_c/curl/curls} into a tight ball, closing {PRONOUN/t_c/self} off from the world. Clearly, whatever happened, {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} want to talk about it.]"
             ],
             "gossip": [
-                "[You decide to ask r_w, another warrior on the patrol, what happened with t_c. {PRONOUN\/r_w\/subject\/CAP} {VERB\/r_w\/tell\/tells} you that {PRONOUN\/r_w\/subject}{VERB\/r_w\/'re\/'s} busy, but will have a conversation with you at the prey pile before nightfall.]",
+                "[You decide to ask r_w, another warrior on the patrol, what happened with t_c. {PRONOUN/r_w/subject/CAP} {VERB/r_w/tell/tells} you that {PRONOUN/r_w/subject}{VERB/r_w/'re/'s} busy, but will have a conversation with you at the prey pile before nightfall.]",
                 "[However, as the sky darkens overhead, it's not r_w you find at the prey pile, but t_c!]",
                 "Never took you for such a gossip, y_c.",
                 "I have pull with practically every cat in this entire Clan. Did you seriously think something like this wouldn't get back to me?",
@@ -1336,9 +1336,9 @@
         ],
         [
             "[Shortly after t_c confronts you about the patrol, a Clan meeting is called to discuss the war.]",
-            "[l_n updates everyone on territories, borders, and diplomacy, making scathing comments all the while about what a disappointing lack of loyalty <i>certain<\/i> warriors have shown to their Clan.]",
-            "[Even though you can't be sure, you're sure {PRONOUN\/l_n\/subject}{VERB\/l_n\/'re\/'s} looking right at t_c while {PRONOUN\/l_n\/subject}{VERB\/l_n\/'re\/'s} doing it.]",
-            "[After the meeting ends, t_c slinks out of camp with {PRONOUN\/t_c\/poss} head held low, shame rippling off {PRONOUN\/t_c\/poss} pelt like brutal waves of greenleaf heat.]"
+            "[l_n updates everyone on territories, borders, and diplomacy, making scathing comments all the while about what a disappointing lack of loyalty <i>certain</i> warriors have shown to their Clan.]",
+            "[Even though you can't be sure, you're sure {PRONOUN/l_n/subject}{VERB/l_n/'re/'s} looking right at t_c while {PRONOUN/l_n/subject}{VERB/l_n/'re/'s} doing it.]",
+            "[After the meeting ends, t_c slinks out of camp with {PRONOUN/t_c/poss} head held low, shame rippling off {PRONOUN/t_c/poss} pelt like brutal waves of greenleaf heat.]"
         ]
     ],
     "war_focus_AJ27~6": [
@@ -1354,18 +1354,18 @@
         ],
         [
             "[After the Clan meeting, you find t_c sulking in a tree near the w_cClan border.]",
-            "[Though {PRONOUN\/t_c\/subject} {VERB\/t_c\/acknowledge\/acknowledges} you with a flick of {PRONOUN\/t_c\/poss} tail, {PRONOUN\/t_c\/subject} {VERB\/t_c\/seem\/seems} unaffected by your presence.]",
+            "[Though {PRONOUN/t_c/subject} {VERB/t_c/acknowledge/acknowledges} you with a flick of {PRONOUN/t_c/poss} tail, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} unaffected by your presence.]",
             "Sure are one persistent little mouse-brain, aren't you? Don't you have your own life to worry about?",
             "[t_c looks down at the border bitterly.]",
             "... Y'know, this is where it happened.",
-            "d_n really should've listened to me when I told {PRONOUN\/d_n\/object} I wasn't good to patrol. At the first sign of fighting, I dashed right up this tree like an apprentice dodging tick duty.",
+            "d_n really should've listened to me when I told {PRONOUN/d_n/object} I wasn't good to patrol. At the first sign of fighting, I dashed right up this tree like an apprentice dodging tick duty.",
             "Even as cats were dying ... Even as I heard my Clanmates' cries for help ... Right here is where I stayed.",
             "I'm not an idiot. I know I'm no saint.",
             "But, my whole life, I always thought the selfish, manipulative jerk was just a costume I was wearing to protect myself. I thought I'd be able to show up for others when it really mattered.",
             "But ... I guess it isn't true. That selfish, manipulative jerk is just really who I am. There is no costume anymore.",
             "Maybe there never was one.",
             "Why am I like this?",
-            "[You're unsure who t_c is asking: you, or {PRONOUN\/t_c\/self}.]"
+            "[You're unsure who t_c is asking: you, or {PRONOUN/t_c/self}.]"
         ]
     ],
     "war_focus_AJ27~7": [
@@ -1381,12 +1381,12 @@
         ],
         [
             "[It's been a few days since your conversation with t_c at the tree. Since then, things have mostly seemed to go back to normal. t_c is guarded when it matters, witty when it doesn't.]",
-            "[But sometimes, in idle moments, you catch {PRONOUN\/t_c\/object} slinking out of the elder's den, face guarded beneath a paw, or repairing the warrior's den, pelt tangled with brambles.]",
-            "[Once, after delighting the kits with a wild fantasy about {PRONOUN\/t_c\/poss} past, r_q purrs what a selfless cat {PRONOUN\/t_c\/subject} {VERB\/t_c\/are\/is} to take the time out of {PRONOUN\/t_c\/poss} day to visit the nursery.]",
+            "[But sometimes, in idle moments, you catch {PRONOUN/t_c/object} slinking out of the elder's den, face guarded beneath a paw, or repairing the warrior's den, pelt tangled with brambles.]",
+            "[Once, after delighting the kits with a wild fantasy about {PRONOUN/t_c/poss} past, r_q purrs what a selfless cat {PRONOUN/t_c/subject} {VERB/t_c/are/is} to take the time out of {PRONOUN/t_c/poss} day to visit the nursery.]",
             "Ah ... You really don't need to mention it. I just do what I can.",
-            "[In this moment, you swear you see {PRONOUN\/t_c\/poss} eyes flash with a fear so potent and powerful, it almost knocks you off your paws.]",
-            "[Something has changed in t_c ... or maybe something has just changed in how you see {PRONOUN\/t_c\/object}.]",
-            "[Underneath all the glitz and glamor and callous disinterest, something exists deep inside {PRONOUN\/t_c\/object}, something small and terrified as the prey you hunt in newleaf.]",
+            "[In this moment, you swear you see {PRONOUN/t_c/poss} eyes flash with a fear so potent and powerful, it almost knocks you off your paws.]",
+            "[Something has changed in t_c ... or maybe something has just changed in how you see {PRONOUN/t_c/object}.]",
+            "[Underneath all the glitz and glamor and callous disinterest, something exists deep inside {PRONOUN/t_c/object}, something small and terrified as the prey you hunt in newleaf.]",
             "[You only see it in glimpses, but when you do, all you can do is fear for it, just as t_c does.]",
             "[Maybe, if you had to live with that, you would've clung to that tree branch, too.]"
         ]
@@ -1512,7 +1512,7 @@
             "they_blind"
         ],
         [
-            "[t_c quickly moves into your den, dropping some herbs {PRONOUN\/t_c\/subject}'d helped gather whilst on the way back.]",
+            "[t_c quickly moves into your den, dropping some herbs {PRONOUN/t_c/subject}'d helped gather whilst on the way back.]",
             "There was almost a fight at the border... I managed to deescalate before anyone got hurt.",
             "...",
             "y_c...",
@@ -1558,7 +1558,7 @@
         ],
         [
             "[On patrol with t_c and r_w today, you were ambushed by a small group of w_cClan warriors.]",
-            "[One of the w_cClan cats seemed... familiar with t_c, mocking {PRONOUN\/t_c\/object} and almost exclusively targeting {PRONOUN\/t_c\/object}.]",
+            "[One of the w_cClan cats seemed... familiar with t_c, mocking {PRONOUN/t_c/object} and almost exclusively targeting {PRONOUN/t_c/object}.]",
             "[You wonder what that's all about.]"
         ]
     ],
@@ -1573,9 +1573,9 @@
             "no_kit"
         ],
         [
-            "[t_c slides {PRONOUN\/t_c\/poss} claws in and out.]",
+            "[t_c slides {PRONOUN/t_c/poss} claws in and out.]",
             "War with w_cClan. This is what we've been training for.",
-            "[From {PRONOUN\/t_c\/poss} knowing glance your way, you don't think {PRONOUN\/t_c\/subject}{VERB\/t_c\/'re\/'s} talking about ordinary training.]"
+            "[From {PRONOUN/t_c/poss} knowing glance your way, you don't think {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} talking about ordinary training.]"
         ]
     ],
     "war_focusdf_SQ4": [
@@ -1641,9 +1641,9 @@
             "they_blind"
         ],
         [
-            "r_k keeps asking about the war, and I'm not sure what to tell {PRONOUN\/r_k\/object}.",
-            "I don't want to scare {PRONOUN\/r_k\/object}, but I don't want to pretend everything's fine, either.",
-            "And I also don't want {PRONOUN\/r_k\/object} to grow up thinking violence is the only answer...",
+            "r_k keeps asking about the war, and I'm not sure what to tell {PRONOUN/r_k/object}.",
+            "I don't want to scare {PRONOUN/r_k/object}, but I don't want to pretend everything's fine, either.",
+            "And I also don't want {PRONOUN/r_k/object} to grow up thinking violence is the only answer...",
             "I hope all of this ends soon."
         ]
     ],
@@ -1657,7 +1657,7 @@
             "clan_has_kits"
         ],
         [
-            "[t_c sits outside of the nursery like a guard, anxiously scanning the edge of camp. {PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/jump\/jumps} when r_k prods {PRONOUN\/t_c\/object} with one paw.]",
+            "[t_c sits outside of the nursery like a guard, anxiously scanning the edge of camp. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps} when r_k prods {PRONOUN/t_c/object} with one paw.]",
             "Oh, hello! I'll come play in a moment.",
             "What am I doing? Just... keeping watch for a bit. Go back inside, okay?"
         ]
@@ -1707,7 +1707,7 @@
         [
             "[t_c's gaze flicks from the nursery to the camp entrance, and back again.]",
             "Even if they attacked the camp, w_cClan wouldn't hurt kits, right? Right?",
-            "[Something about t_c's wide eyes tells you that {PRONOUN\/t_c\/subject}'ll worry regardless of your answer.]"
+            "[Something about t_c's wide eyes tells you that {PRONOUN/t_c/subject}'ll worry regardless of your answer.]"
         ]
     ],
     "neurotic_warfocus_SQ19": [
@@ -1719,7 +1719,7 @@
             "platonic_like"
         ],
         [
-            "[You find t_c slumped on the edge of camp, {PRONOUN\/t_c\/poss} tail flicking as {PRONOUN\/t_c\/subject} {VERB\/t_c\/watch\/watches} l_n and d_n discuss the ongoing war.]",
+            "[You find t_c slumped on the edge of camp, {PRONOUN/t_c/poss} tail flicking as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} l_n and d_n discuss the ongoing war.]",
             "It's my job to help end this war.",
             "But... but I just started! I don't know anything! I really think I'll just make things worse."
         ]
@@ -1735,8 +1735,8 @@
             "you_deaf"
         ],
         [
-            "[You notice t_c in the nursery, {PRONOUN\/t_c\/poss} ears pricked as {PRONOUN\/t_c\/subject} {VERB\/t_c\/listen\/listens} to l_n and d_n discuss battle plans on the other side of the wall.]",
-            "[As t_c wraps {PRONOUN\/t_c\/poss} tail around r_k, you realize {PRONOUN\/t_c\/subject}{VERB\/t_c\/'re\/'s} shaking.]"
+            "[You notice t_c in the nursery, {PRONOUN/t_c/poss} ears pricked as {PRONOUN/t_c/subject} {VERB/t_c/listen/listens} to l_n and d_n discuss battle plans on the other side of the wall.]",
+            "[As t_c wraps {PRONOUN/t_c/poss} tail around r_k, you realize {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} shaking.]"
         ]
     ],
     "war_focus_sh_J1": [
@@ -1755,7 +1755,7 @@
         [
             "[t_c stumbles into camp after a border patrol, covered in fresh scratches.]",
             "Three more warriors to the w_cClan border!",
-            "[At {PRONOUN\/t_c\/poss} call, several on-guard warriors rush out the entrance to help with the skirmish. You lift your head, but t_c's gaze shoots you down.]",
+            "[At {PRONOUN/t_c/poss} call, several on-guard warriors rush out the entrance to help with the skirmish. You lift your head, but t_c's gaze shoots you down.]",
             "No, not you, y_c.",
             "I'd like to send you out there, but l_n can't trust you to stay on our side.",
             "Though, maybe you could use the war as a chance to redeem yourself...",
@@ -1775,7 +1775,7 @@
         [
             "[Since you're not allowed to work right now, you're sat at the edge of camp, watching the medicine den from afar as injured warriors mill in and out.]",
             "Hey, y_c?",
-            "[You turn your head. t_c hops up to you with a wound on {PRONOUN\/t_c\/poss} foreleg.]",
+            "[You turn your head. t_c hops up to you with a wound on {PRONOUN/t_c/poss} foreleg.]",
             "The medicine den is totally full... can you help me?",
             "Hm? Yes, of course I trust you. You're still a medicine cat.",
             "[You know it's not the time, so you stifle your smile as you examine t_c's injury.]"
@@ -1828,7 +1828,7 @@
         [
             "[t_c stumbles into camp, out of breath and bleeding.]",
             "You're, uh... you're lucky you get to skip out on this, y_c.",
-            "[You watch sadly as {PRONOUN\/t_c\/subject} {VERB\/t_c\/stumble\/stumbles} to the medicine den.]"
+            "[You watch sadly as {PRONOUN/t_c/subject} {VERB/t_c/stumble/stumbles} to the medicine den.]"
         ]
     ],
     "war_focus_sh_J6": [
@@ -1884,7 +1884,7 @@
         ],
         "intro": [
             "y_c, this is so hard! Can we please stay in camp today?",
-            "[t_c, still sore from a skirmish yesterday, sounds like {PRONOUN\/t_c\/subject}{VERB\/t_c\/'re\/'s} about to cry. {PRONOUN\/t_c\/subject\/CAP} really {VERB\/t_c\/look\/looks} like {PRONOUN\/t_c\/subject} {VERB\/t_c\/want\/wants} to ditch the border patrol.]"
+            "[t_c, still sore from a skirmish yesterday, sounds like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} about to cry. {PRONOUN/t_c/subject/CAP} really {VERB/t_c/look/looks} like {PRONOUN/t_c/subject} {VERB/t_c/want/wants} to ditch the border patrol.]"
         ],
         "intro_choices": {
             "choice1": {
@@ -1897,12 +1897,12 @@
             }
         },
         "war_apprentice_skippatrol_yes": [
-            "[You tell t_c that you'll try to find another Clanmate to take {PRONOUN\/t_c\/poss} place in the patrol.]",
+            "[You tell t_c that you'll try to find another Clanmate to take {PRONOUN/t_c/poss} place in the patrol.]",
             "Really? Oh, thank you, t_c! I've just been fighting so much lately...",
-            "[{PRONOUN\/t_c\/poss\/CAP} {VERB\/t_c\/wobble\/wobbles} back towards the apprentice's den and you see {PRONOUN\/t_c\/object} collapse into {PRONOUN\/t_c\/poss} nest. {PRONOUN\/t_c\/subject\/CAP} {VERB\/t_c\/were\/was} right-- {PRONOUN\/t_c\/subject} should get some sleep.]"
+            "[{PRONOUN/t_c/poss/CAP} {VERB/t_c/wobble/wobbles} back towards the apprentice's den and you see {PRONOUN/t_c/object} collapse into {PRONOUN/t_c/poss} nest. {PRONOUN/t_c/subject/CAP} {VERB/t_c/were/was} right-- {PRONOUN/t_c/subject} should get some sleep.]"
         ],
         "war_apprentice_skippatrol_no": [
-            "[You feel bad doing it, but you tell {PRONOUN\/t_c\/object} that you have to go fight, as no cat else is able.]",
+            "[You feel bad doing it, but you tell {PRONOUN/t_c/object} that you have to go fight, as no cat else is able.]",
             "I knew I should've become a queen..."
         ]
     },
@@ -1936,7 +1936,7 @@
             "Oh, r_m also needs a patrol escort to collect some more herbs.",
             "|r_c|y_c! There's hardly any prey left, where's d_n?",
             "[Suddenly, half a dozen cats are crowded around you, asking questions and demanding action.]",
-            "[Overwhelmed, you stammer out a response to t_c and race to your den before {PRONOUN\/t_c\/subject} can follow up.]",
+            "[Overwhelmed, you stammer out a response to t_c and race to your den before {PRONOUN/t_c/subject} can follow up.]",
             "[You feel as though this war has aged you twenty moons.]"
         ]
     ],
@@ -2017,7 +2017,7 @@
         [
             "Whoa, y_c! Are you okay?",
             "[t_c stops you as you waltz back into camp after a fight with a patrol from w_cClan, covered in blood.]",
-            "[You let {PRONOUN\/t_c\/object} know that it's not yours.]",
+            "[You let {PRONOUN/t_c/object} know that it's not yours.]",
             "O-oh... alright. Glad you're okay."
         ]
     ],
@@ -2052,7 +2052,7 @@
         [
             "[t_c is in an involved conversation with l_n about war strategies. You try to interject with an idea.]",
             "y_c, I can't talk. We're busy.",
-            "[Did {PRONOUN\/t_c\/subject} even hear what you said?]"
+            "[Did {PRONOUN/t_c/subject} even hear what you said?]"
         ]
     ]
 }

@@ -520,18 +520,18 @@ class TalkScreen(Screens):
             'camp', 'healer', 'star', 'omen', 'dream', 'clairvoyant', 'prophet',
             'ghost', 'explorer', 'tracker', 'artistan', 'guardian', 'tunneler', 'navigator',
             'song', 'grace', 'clean', 'innovator', 'comforter', 'matchmaker', 'thinker',
-            'cooperative', 'scholar', 'time', 'treasure', 'fisher', 'language', 'sleeper'
+            'cooperative', 'scholar', 'time', 'treasure', 'fisher', 'language', 'sleeper', 'dark'
         ]
-        you_skill_list = [
-            'you_teacher', 'you_hunter', 'you_fighter', 'you_runner', 'you_climber', 'you_swimmer',
-            'you_speaker', 'you_mediator1', 'you_clever', 'you_insightful', 'you_sense', 'you_kit',
-            'you_story', 'you_lore', 'you_camp', 'you_healer', 'you_star', 'you_omen', 'you_dream',
-            'you_clairvoyant', 'you_prophet', 'you_ghost', 'you_explorer', 'you_tracker',
-            'you_artistan', 'you_guardian', 'you_tunneler', 'you_navigator', 'you_song', 'you_grace',
-            'you_clean', 'you_innovator', 'you_comforter', 'you_matchmaker', 'you_thinker',
-            'you_cooperative', 'you_scholar', 'you_time', 'you_treasure', 'you_fisher',
-            'you_language', 'you_sleeper'
-        ]
+        # you_skill_list = [
+        #     'you_teacher', 'you_hunter', 'you_fighter', 'you_runner', 'you_climber', 'you_swimmer',
+        #     'you_speaker', 'you_mediator1', 'you_clever', 'you_insightful', 'you_sense', 'you_kit',
+        #     'you_story', 'you_lore', 'you_camp', 'you_healer', 'you_star', 'you_omen', 'you_dream',
+        #     'you_clairvoyant', 'you_prophet', 'you_ghost', 'you_explorer', 'you_tracker',
+        #     'you_artistan', 'you_guardian', 'you_tunneler', 'you_navigator', 'you_song', 'you_grace',
+        #     'you_clean', 'you_innovator', 'you_comforter', 'you_matchmaker', 'you_thinker',
+        #     'you_cooperative', 'you_scholar', 'you_time', 'you_treasure', 'you_fisher',
+        #     'you_language', 'you_sleeper', 'you_dark'
+        # ]
         for talk_key, talk in possible_texts.items():
             tags = talk["tags"] if "tags" in talk else talk[0]
             for i in range(len(tags)):
@@ -557,9 +557,14 @@ class TalkScreen(Screens):
                 you.status not in tags
                 and "any" not in tags
                 and f"you_{you.status}" not in tags
+                and f"you_{(you.status).replace(' ', '_')}" not in tags
                 and "young elder" not in tags
                 and "no_kit" not in tags
                 and "you_any" not in tags
+                and "they_app" not in tags
+                and "you_app" not in tags
+                and "they_adult" not in tags
+                and "you_adult" not in tags
                 ):
                 continue
             elif "young elder" in tags and cat.status == 'elder' and cat.moons >= 100:
@@ -582,6 +587,12 @@ class TalkScreen(Screens):
                 continue
 
             if "they_app" in tags and cat.status not in [
+                'apprentice', 'medicine cat apprentice',
+                'mediator apprentice', "queen's apprentice"
+                ]:
+                continue
+
+            if "you_app" in tags and you.status not in [
                 'apprentice', 'medicine cat apprentice',
                 'mediator apprentice', "queen's apprentice"
                 ]:
@@ -731,6 +742,9 @@ class TalkScreen(Screens):
                 "you_leader", "you_elder", "you_newborn"
             ]
 
+            # does this do anything???
+            # line 556 seems to make this obsolete
+
             if any(r in roles for r in tags):
                 has_role = False
                 if "you_kitten" in tags and you.status == "kitten":
@@ -842,20 +856,29 @@ class TalkScreen(Screens):
                     continue
 
             # Skill tags
-            if any(i in you_skill_list for i in tags):
-                ts = you_skill_list
-                for j in range(len(ts)):
-                    ts[j] = ts[j][3:]
-                    ts[j] = ''.join([q for q in ts[j] if not q.isdigit()])
-                if (you.skills.primary.path not in ts) or (you.skills.secondary.path not in ts):
-                    continue
-            if any(i in skill_list for i in tags):
-                ts = skill_list
-                for j in range(len(ts)):
-                    ts[j] = ''.join([q for q in ts[j] if not q.isdigit()])
-                if (cat.skills.primary.path not in ts) or (cat.skills.secondary.path not in ts):
-                    continue
-
+            skip = False
+            for i in skill_list:
+                if i == "mediator1":
+                    skill = "mediator"
+                else:
+                    skill = i
+                if (
+                    f"you_{i}" in tags
+                    and skill.upper() not in str(you.skills.primary.path)
+                    and you.skills.secondary
+                    and skill.upper() not in str(you.skills.secondary.path)
+                    ):
+                    skip = True
+                if (
+                    f"they_{i}" in tags
+                    and skill.upper() not in str(cat.skills.primary.path)
+                    and cat.skills.secondary
+                    and skill.upper() not in str(cat.skills.secondary.path)
+                    ):
+                    skip = True
+            if skip is True:
+                continue
+            
             # Season tags
             if ('leafbare' in tags and game.clan.current_season != 'Leaf-bare') or ('newleaf' in tags and game.clan.current_season != 'Newleaf') or ('leaffall' in tags and game.clan.current_season != 'Leaf-fall') or ('greenleaf' in tags and game.clan.current_season != 'Greenleaf'):
                 continue

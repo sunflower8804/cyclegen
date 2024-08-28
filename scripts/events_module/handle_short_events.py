@@ -397,7 +397,12 @@ class HandleShortEvents:
                         acc_list.remove(acc)
 
         if acc_list:
-            self.main_cat.pelt.accessory = random.choice(acc_list)
+            # self.main_cat.pelt.accessory = random.choice(acc_list)
+            # clangen ^^
+            # lifegen vv
+            new_acc = random.choice(acc_list)
+            self.main_cat.pelt.accessories.append(new_acc)
+            self.main_cat.pelt.inventory.append(new_acc)
 
     def handle_death(self):
         """

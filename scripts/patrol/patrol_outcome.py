@@ -1158,7 +1158,7 @@ class PatrolOutcome:
         elif "clancat" in attribute_list:
             cat_type = "former Clancat"
         elif "newdfcat" in attribute_list:
-                cat_type = status
+            cat_type = status
         elif "newstarcat" in attribute_list:
             cat_type = status
         else:
@@ -1221,58 +1221,76 @@ class PatrolOutcome:
             alive = False
             thought = "Explores a new starry world"
 
-        # # check if we can use an existing cat here
-        # chosen_cat = None
-        # if "exists" in attribute_list:
-        #     existing_outsiders = [i for i in Cat.all_cats.values() if i.outside and not i.dead]
-        #     possible_outsiders = []
-        #     for cat in existing_outsiders:
-        #         if stor and cat.backstory not in stor:
-        #             continue
-        #         if cat_type != cat.status:
-        #             continue
-        #         if gender and gender != cat.gender:
-        #             continue
-        #         if age and age not in Cat.age_moons[cat.age]:
-        #             continue
-        #         possible_outsiders.append(cat)
+        if "newdfcat" in attribute_list:
+            alive = False
+            outside = False
+            new_name = True
+            if "oldstarclan" in attribute_list:
+                thought ="Is having fun with their new Dark Forest friends"
+            else: 
+                if status == "kitten":
+                    thought = "Was startled by a new trainee"
+                else:
+                    thought = "Is curious about the trainee they just met"
 
-        #     if possible_outsiders:
-        #         chosen_cat = choice(possible_outsiders)
-        #         game.clan.add_to_clan(chosen_cat)
-        #         chosen_cat.status = status
-        #         chosen_cat.outside = outside
-        #         if not alive:
-        #             chosen_cat.die()
+        if "newstarcat" in attribute_list:
+            alive = False
+            outside = False
+            new_name = True
+            thought = "Is curious about the living cat they just met"
 
-        #         if new_name:
-        #             name = f"{chosen_cat.name.prefix}"
-        #             spaces = name.count(" ")
-        #             if choice([1, 2]) == 1 and spaces > 0:  # adding suffix to OG name
-        #                 # make a list of the words within the name, then add the OG name back in the list
-        #                 words = name.split(" ")
-        #                 words.append(name)
-        #                 new_prefix = choice(words)  # pick new prefix from that list
-        #                 name = new_prefix
-        #                 chosen_cat.name.prefix = name
-        #                 chosen_cat.name.give_suffix(
-        #                     pelt=chosen_cat.pelt,
-        #                     biome=game.clan.biome,
-        #                     tortiepattern=chosen_cat.pelt.tortiepattern
-        #                 )
-        #             else:  # completely new name
-        #                 chosen_cat.name.give_prefix(
-        #                     eyes=chosen_cat.pelt.eye_colour,
-        #                     colour=chosen_cat.pelt.colour,
-        #                     biome=game.clan.biome
-        #                 )
-        #                 chosen_cat.name.give_suffix(
-        #                     pelt=chosen_cat.pelt.colour,
-        #                     biome=game.clan.biome,
-        #                     tortiepattern=chosen_cat.pelt.tortiepattern
-        #                 )
+        # check if we can use an existing cat here
+        chosen_cat = None
+        if "exists" in attribute_list:
+            existing_outsiders = [i for i in Cat.all_cats.values() if i.outside and not i.dead]
+            possible_outsiders = []
+            for cat in existing_outsiders:
+                if stor and cat.backstory not in stor:
+                    continue
+                if cat_type != cat.status:
+                    continue
+                if gender and gender != cat.gender:
+                    continue
+                if age and age not in Cat.age_moons[cat.age]:
+                    continue
+                possible_outsiders.append(cat)
 
-        #         new_cats = [chosen_cat]
+            if possible_outsiders:
+                chosen_cat = choice(possible_outsiders)
+                game.clan.add_to_clan(chosen_cat)
+                chosen_cat.status = status
+                chosen_cat.outside = outside
+                if not alive:
+                    chosen_cat.die()
+
+                if new_name:
+                    name = f"{chosen_cat.name.prefix}"
+                    spaces = name.count(" ")
+                    if choice([1, 2]) == 1 and spaces > 0:  # adding suffix to OG name
+                        # make a list of the words within the name, then add the OG name back in the list
+                        words = name.split(" ")
+                        words.append(name)
+                        new_prefix = choice(words)  # pick new prefix from that list
+                        name = new_prefix
+                        chosen_cat.name.prefix = name
+                        chosen_cat.name.give_suffix(
+                            pelt=chosen_cat.pelt,
+                            biome=game.clan.biome,
+                            tortiepattern=chosen_cat.pelt.tortiepattern
+                        )
+                    else:  # completely new name
+                        chosen_cat.name.give_prefix(
+                            eyes=chosen_cat.pelt.eye_colour,
+                            colour=chosen_cat.pelt.colour,
+                            biome=game.clan.biome
+                        )
+                        chosen_cat.name.give_suffix(
+                            pelt=chosen_cat.pelt.colour,
+                            biome=game.clan.biome,
+                            tortiepattern=chosen_cat.pelt.tortiepattern
+                        )
+
+                new_cats = [chosen_cat]
 
         # Now we generate the new cat
         # This is a bit of a pain, but I can't re-write this function
@@ -1289,6 +1307,7 @@ class PatrolOutcome:
                                 gender=gender,
                                 thought=thought,
                                 alive=alive,
+                                df= True if "newdfcat" in attribute_list else False,
                                 outside=outside,
                                 parent1=parent1.ID if parent1 else None,
                                 parent2=parent2.ID if parent2 else None
