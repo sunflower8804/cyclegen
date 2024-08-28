@@ -856,43 +856,29 @@ class TalkScreen(Screens):
                     continue
 
             # Skill tags
-            if any(i in skill_list for i in tags):
-                skip = False
-                for i in skill_list:
-                    if i == "mediator1":
-                        skill = "mediator1"
-                    else:
-                        skill = i
-                    if (
-                        f"you_{i}" in tags
-                        and skill.upper() not in str(you.skills.primary.path)
-                        and you.skills.secondary
-                        and skill.upper() not in str(you.skills.secondary.path)
-                        ):
-                        skip = True
-                    if (
-                        f"they_{i}" in tags
-                        and skill.upper() not in str(cat.skills.primary.path)
-                        and cat.skills.secondary
-                        and skill.upper() not in str(cat.skills.secondary.path)
-                        ):
-                        skip = True
-                if skip is True:
-                    continue
-
-                # ts = you_skill_list
-                # for j in range(len(ts)):
-                #     ts[j] = ts[j][3:]
-                #     ts[j] = ''.join([q for q in ts[j] if not q.isdigit()])
-                # if (you.skills.primary.path not in ts) or (you.skills.secondary.path not in ts):
-                #     continue
-            # if any(i in skill_list for i in tags):
-            #     ts = skill_list
-            #     for j in range(len(ts)):
-            #         ts[j] = ''.join([q for q in ts[j] if not q.isdigit()])
-            #     if (cat.skills.primary.path not in ts) or (cat.skills.secondary.path not in ts):
-            #         continue
-
+            skip = False
+            for i in skill_list:
+                if i == "mediator1":
+                    skill = "mediator"
+                else:
+                    skill = i
+                if (
+                    f"you_{i}" in tags
+                    and skill.upper() not in str(you.skills.primary.path)
+                    and you.skills.secondary
+                    and skill.upper() not in str(you.skills.secondary.path)
+                    ):
+                    skip = True
+                if (
+                    f"they_{i}" in tags
+                    and skill.upper() not in str(cat.skills.primary.path)
+                    and cat.skills.secondary
+                    and skill.upper() not in str(cat.skills.secondary.path)
+                    ):
+                    skip = True
+            if skip is True:
+                continue
+            
             # Season tags
             if ('leafbare' in tags and game.clan.current_season != 'Leaf-bare') or ('newleaf' in tags and game.clan.current_season != 'Newleaf') or ('leaffall' in tags and game.clan.current_season != 'Leaf-fall') or ('greenleaf' in tags and game.clan.current_season != 'Greenleaf'):
                 continue
