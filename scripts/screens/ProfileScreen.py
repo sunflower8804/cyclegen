@@ -1232,7 +1232,6 @@ class ProfileScreen(Screens):
             # TALK
             cant_talk = False
             dead_talk = self.get_dead_cat_talk()
-            print(dead_talk)
 
             if (
                 self.the_cat.outside or
@@ -1241,10 +1240,6 @@ class ProfileScreen(Screens):
                 ((game.clan.your_cat.dead or self.the_cat.dead) and dead_talk is False)
             ):
                 cant_talk = True
-
-            # if cant_talk is True and dead_talk is True:
-            #     print("ughghgh")
-            #     cant_talk = True
                 
             self.profile_elements["talk"] = UIImageButton(scale(pygame.Rect(
                 (746, 220), (68, 68))),
