@@ -2898,5 +2898,156 @@
             "[You tackle t_c before {PRONOUN/t_c/subject} can get you, and sit on {PRONOUN/t_c/object} mercilessly.]",
             "[Revenge is sweet.]"
         ]
+    ],
+    "nightsky_R1~1": [
+        [
+            "you_kitten",
+            "they_df",
+            "you_star",
+            "you_dark",
+            "connected"
+        ],
+        [
+            "Ah, you've crossed the border again, little kit. Impressive.",
+            "It's easy you say? Ha! Truly a special kit you are. Have you not understood your gifts?",
+            "You are a bridge from the stars to the night. I wonder where you'll rest in the end.",
+            "There's many a moon to come before you find out. Your journey will be one I want to watch from start to finish though. Come to visit often, no matter how those blinded stars will tell you not to."
+        ]
+    ],
+    "nightsky_R1~2": [
+        [
+            "you_kitten",
+            "they_df",
+            "you_star",
+            "you_dark",
+            "connected"
+        ],
+        [
+            "You're back again little y_c. Have those blinded stars told you to stay away yet?",
+            "Ignore them. Your power is greater than theirs. They can't walk in your pawsteps, tiny as they are, so they have no say on what you can or can't do.",
+            "Blaze a new path in the night sky, y_c, and never let anyone extinguish you."
+        ]
+    ],
+    "youdarkstar_R4": [
+        [
+            "kitten",
+            "you_dark",
+            "they_df",
+            "you_star"
+        ],
+        [
+            "Little kit, many a challenge awaits you. Do you feel ready to walk the night sky?",
+            "No? Well, that's alright. I didn't expect you to be ready. StarClan may not see how wonderful you are for your gifts but we do, here in the darkness.",
+            "Through it all, you'll prosper. Don't ever let anyone stop you."
+        ]
+    ],
+    "youdarkstar_R5": [
+        [
+            "any",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "you_not_dftrainee"
+        ],
+        [
+            "Turn your back on the darkness, y_c. Please. For your sake.",
+            "However you gained these gifts... It was cruel to allow you to cross the borders. Stay in our starshine, and never return to their night.",
+            "We don't want to see you hurt."
+        ]
+    ],
+    "youdarkstar_R6": [
+        [
+            "any",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "you_not_dftrainee"
+        ],
+        [
+            "Stop speaking with those shadows. They don't have your best interests at heart. They only have their own.",
+            "Stay in our starshine. They earned their places without the light, don't earn the same as them by your end."
+        ]
+    ],
+    "youdarkstar_R8": [
+        [
+            "kitten",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "you_not_dftrainee"
+        ],
+        [
+            "Little y_c... Please. You must never go into that shadow of StarClan again.",
+            "The cats there... They're very, very bad cats, little star. You could get hurt. Or you could... No.",
+            "As much as I want you to stay safe, I can't scare you with what could happen. I wish I has the faith that you seem to that those shades wouldn't hurt you.",
+            "Please, please stay safe, little dark star..."
+        ]
+    ],
+    "youdarkstar_R9~1": [
+        [
+            "kitten",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "connected"
+        ],
+        [
+            "Hello little star! How are you today? Are you enjoying your dreams?",
+            "Oh, you didn't dream of StarClan last night...? What did you dream of?",
+            "... A murky forest full of darkness... Oh dear.",
+            "Little star, I think you may have dreamed of the Dark Forest. You must avoid that place, it's dangerous. The cats there are not nice.",
+            "If you ever find yourself there again, follow any light you see. Come back to the stars, little y_c, and be safe amongst our glow.",
+            "StarClan will do our best to keep you protected."
+        ]
+    ],
+
+    "youdarkstar_R9~2": [
+        [
+            "kitten",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "connected"
+        ],
+        [
+            "[t_c nods to you, seeming to not realize how close you are to the border. You fearlessly step into the Dark Forest. There's a menacing glow of eyes from the murk soon enough though.]",
+            "[A soft blue glow creeps into your vision, and you remember what you were told. t_c must be watching over you even if you disobeyed. The butterfly is such a pretty light! ]",
+            "[The Dark Forest cat pauses seeing the butterfly. Their hiss is disgusted, seemingly just at the sight of it. Now their pelt is bristled up. It's like they're afraid of it!]",
+            "[It begins to fly off, and you follow it eagerly, knowing it will lead you back to t_c.]",
+            "[The murky warrior doesn't follow, rooted to the spot with wide eyes following that blue butterfly.]"
+        ]
+    ],
+    "youdarkstar_R9~3": [
+        [
+            "kitten",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "connected"
+        ],
+        [
+            "y_c! I saw you run from the border! Are you alright? Did anyone hurt you?",
+            "A blue butterfly..? A shiny blue butterfly led you out?",
+            "... No, I didn't send that. That wasn't something from StarClan, little one. I'm... not sure what that was. And it appeared to you in the Dark Forest?",
+            "It saved you from a bad cat and guided you to StarClan again. Well, I don't know what it was, but it sounds helpful!",
+            "How lucky, little star. I'm glad you're safe."
+        ]
+    ],
+    "warrior2321": [
+        [
+            "kitten",
+            "assertive",
+            "they_df",
+            "you_dark",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hello, y_c. You're quite a talented little one, aren't you? I saw you earlier, playing with your siblings. I've been keeping an eye on you.",
+            "I can tell you're going to be a great warrior already. So much potential, and so young. You know, I can help you. I'm a warrior myself, and a rather good one at that. Say, here's a tip; one warrior to another.",
+            "Next time you roughhouse with your siblings, try using your claws. It'll only hurt a bit for them, but it'll make you all into better warriors. In a real battle, an enemy isn't going to hold back like your littermates do.",
+            "They're making you soft. A real enemy's going to come at you with everything they've got.",
+            "If you really want to prepare, you have to do the same. Use your claws. Go for the throat. Remember, when you're a warrior, it's kill or be killed. You'll be doing your siblings a favor. You can thank me when you're older."
+        ]
     ]
 }
