@@ -22,25 +22,26 @@
         "success_outcomes": [
             {
                 "text": "You graciously accept the extra training and track a mouse using its scent alone. m_n observes with a sense of pride and nods approvingly at your progress.",
-                "exp": 10,
+                "exp": 5,
                 "weight": 20
             },
             {
                 "text": "Accepting the challenge, you track m_n's trail throughout the territory with ease. You beam with pride as you manage to find {PRONOUN/m_n/object} again and again.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 15,
-                "stat_trait": [
-                    "ambitious",
-                    "confident",
-                    "careful",
-                    "competitive",
-                    "cunning",
-                    "responsible",
-                    "thoughtful",
-                    "flexible",
-                    "energetic"
-                ],
                 "stat_skill": ["EXPLORER,1", "NAVIGATOR,1", "TRACKER,1", "SENSE,1"]
+            },
+            {
+                "text": "You're y_c - you never give less than your absolute best! m_n is found again and again and again... Until {PRONOUN/m_n/subject}{VERB/m_n/'re/'s} more worn out than you. Your held is held high on the way back to camp. You can't wait to tell your denmates all about your skills again!",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "It's time to put your best detective nose on! You startle m_n a few times - including once with a mouse {PRONOUN/m_n/subject} never saw you catch. You even tucked a flower into {PRONOUN/m_n/poss} fur at one point without {PRONOUN/m_n/object} noticing! It's safe to say you passed this training with flying colors.",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait":["flamboyant"]
             }
         ],
         "fail_outcomes": [
@@ -48,6 +49,18 @@
                 "text": "You give your best shot at tracking a squirrel but end up going in circles. Nevertheless, you learnt something from this experience.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "Failure usually isn't in your future. At least, you never plan for it, since you always give your everything. Today was no different but your tracking skills really needed the brush up - you hardly found m_n at all today. It's alright though. You gave it your all - and that's all m_n ever asks from you. And all you ask from yourself.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "You try to stay on task, you really do, but your nose leads you to an absolutely gorgeous patch of flowers! m_n and hunting is swiftly forgotten until {PRONOUN/m_n/subject} {VERB/m_n/show/shows} up with annoyance plain on {PRONOUN/m_n/poss} face...",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait":["flamboyant"]
             }
         ]
     },
@@ -68,14 +81,26 @@
         "max_cats": 5,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "d_n selects you to go on a dawn patrol. When the time comes, the patrol is gathering near the entrance of the camp.",
+        "intro_text": "d_n selects you to go on a dawn patrol. When the time comes, the patrol is gathering near the entrance of the camp. You're all quite sleepy though.",
         "decline_text": "You try to decline the task. d_n raises an eyebrow, stating that you have to go unless you're sick or injured. Everyone must do their part in the Clan. Tail drooping, you head for the camp entrance.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "You participate in the patrol and successfully scout the Clan borders. Your keen sense of alertness impresses everyone around. m_n has nothing but praise for you when d_n asks after you.",
-                "exp": 15,
+                "text": "You head out with r_w1, r_w2, and m_n. The early morning doesn't stop you from successfully scouting the Clan borders. Your keen sense of alertness impresses the patrol all around. m_n has nothing but praise for you when d_n asks after you.",
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Your sleepiness swiftly disolves in favor of being out in the territory with your paws itching. r_w1 and m_n have to herd you back into formation once or twice as r_w2 sleepily lags behind. {PRONOUN/r_w2/subject/CAP}{VERB/r_w2/'re/'s} sooooo slow though!!! You're bouncing behind {PRONOUN/r_w2/object} the whole way.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "Early bird gets the worm! You chatter at every bird you see, and trill a song. You energy is infectious this early, and even the sleepy r_w seems to perk up a bit by the end of the patrol. Once back, m_n says you did well, but reminds you to be a bit quieter next time.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait":["flamboyant"]
             }
         ],
         "fail_outcomes": [
@@ -83,6 +108,18 @@
                 "text": "During the patrol, an unsuspecting twig snaps under your paw, alerting a potential prey. The experience serves as a reminder to tread more carefully in the future. d_n seems less tthan thrilled after hearing about it...",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "It's waaaaay too early, and you complain loudly to m_n the whole way. r_w1 starts to tiredly agree with you but r_w2 nudges {PRONOUN/r_w1/object} to stay quiet. Half the trip ends up with you being scolded by your mentor...",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "You theatrically drag your feet in a passive rebellion. Your beauty sleep - interrupted! m_n rolls {PRONOUN/m_n/poss} eyes at you and scolds you lightly to just get on with patrol without the drama.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait":["flamboyant"]
             }
         ]
     },
@@ -103,7 +140,7 @@
         "max_cats": 4,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The wise elders ask if you would be willing to share your fresh-kill with them. Would you like to partake in this meal-sharing tradition?",
+        "intro_text": "The wise elders ask if you would be willing to share your fresh-kill with them as you go to move past to your denmates. Would you like to partake in this meal-sharing tradition with r_e?",
         "decline_text": "You decide to graciously decline the offer, preferring to enjoy your meal in solitude.",
         "chance_of_success": 70,
         "success_outcomes": [
@@ -120,7 +157,6 @@
                     "flexible",
                     "energetic",
                     "playful",
-                    "confident",
                     "mellow",
                     "charismatic",
                     "witty",
@@ -134,6 +170,12 @@
                 ],
                 "stat_skill": ["CLEVER,1", "COOPERATIVE,1", "STORY,1", "SPEAKER,1"]
                 
+            },
+            {
+                "text": "Eagerly you settle in with r_e and beg to hear the story of {PRONOUN/r_e/poss} part in the battle with o_cClan",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
             }
         ],
         "fail_outcomes": [
@@ -674,7 +716,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You notice r_a looking nervous as {PRONOUN/r_a/subject} {VERB/r_a/approach/approaches} you. {PRONOUN/r_a/subject} awkwardly {VERB/r_a/ask/asks} if you would share a meal with {PRONOUN/r_a/object}.",
+        "intro_text": "You notice r_a looking nervous as {PRONOUN/r_a/subject} {VERB/r_a/approach/approaches} you. {PRONOUN/r_a/subject/CAP} awkwardly {VERB/r_a/ask/asks} if you would share a meal with {PRONOUN/r_a/object}.",
         "decline_text": "Feeling too shy, you politely decline the offer.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -737,17 +779,40 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "During a shared training session, another apprentice accidentally stumbles into you. Both of you fall to the ground in a tangle of limbs. They blush and stammer an apology.",
+        "intro_text": "During a shared training session, r_a accidentally stumbles right into you. Both of you tumble to the ground in a heap of limbs. {PRONOUN/r_a/subject} {VERB/r_a/blush/blushes} and {VERB/r_a/stammer/stammers} out an apology as {PRONOUN/r_a/subject} {VERB/r_a/try/tries} to untangle from you without trodding on anything.",
         "decline_text": "You decide to continue with your training, shaking off the moment.",
         "chance_of_success": 55,
         "success_outcomes": [
             {
-                "text": "You reassure them that it's okay and manage to share a good laugh about it. The training session turns out to be a fun one, and your bond with them grows.",
-                "exp": 20,
+                "text": "You reassure r_a that it's alright and the two of you manage to share a good laugh about it. After your mentors are ready for you to continue, the training session turns out to be a fun one! Your bond with {PRONOUN/r_a/subject} grows even if you're both exhausted in the end.",
+                "exp": 5,
                 "weight": 20
+            },
+            {
+                "text": "You moan and groan dramatically about the accident, pretending to be soooo injured! r_a starts to fret a moment before {PRONOUN/r_a/subject} {VERB/r_a/realize/realizes} you're messing around. m_n is already sighing in amusement before telling you to stop being dramatic. At least r_a is giggling and is far less fussed about the mistake!",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": ["flamboyant"]
+            },
+            {
+                "text": "You accidentally bowl r_a over in your haste to get back to your paws. No time for distractions! You brush off {PRONOUN/r_a/poss} apologies in favor of getting back to training with m_n. Before r_a can even get back to {PRONOUN/r_a/poss} paws proper, you're swiping at your mentor again and again, trying to perfect this move.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "You reassure r_a that it's alright. It's a good learning opportunity for you both, and you politely explain that much to {PRONOUN/r_a/object}. Before your mentors can even try to get back on track, you're walking r_a through the mistake. It's easy for you to teach {PRONOUN/r_a/object} where {PRONOUN/r_a/subject} went wrong. In no time at all {PRONOUN/r_a/subject} {VERB/r_a/are/is} fluidly preforming the move again - without any accidents.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["COOPERATIVE,1", "INSIGHTFUL,1", "MEDIATOR,1","SPEAKER,1", "TEACHER"]
             }
         ],
         "fail_outcomes": [
+            {
+                "text": "Caught off guard, you react awkwardly, which makes them feel more embarrassed. You wish you had handled the situation better.",
+                "exp": 0,
+                "weight": 20
+            },
             {
                 "text": "Caught off guard, you react awkwardly, which makes them feel more embarrassed. You wish you had handled the situation better.",
                 "exp": 0,

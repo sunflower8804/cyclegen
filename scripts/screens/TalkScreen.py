@@ -516,7 +516,7 @@ class TalkScreen(Screens):
         ]
         skill_list = [
             'teacher', 'hunter', 'fighter', 'runner', 'climber', 'swimmer', 'speaker',
-            'mediator1', 'clever', 'insightful', 'sense', 'kit', 'story', 'lore',
+            'mediator1', 'clever', 'insightful', 'sense', 'kitsitter', 'story', 'lore',
             'camp', 'healer', 'star', 'omen', 'dream', 'clairvoyant', 'prophet',
             'ghost', 'explorer', 'tracker', 'artistan', 'guardian', 'tunneler', 'navigator',
             'song', 'grace', 'clean', 'innovator', 'comforter', 'matchmaker', 'thinker',

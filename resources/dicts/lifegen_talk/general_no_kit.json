@@ -19674,5 +19674,66 @@
             "[You watch the Clan in the clearing and notice t_c waving for your attention.]",
             "[Trotting over, t_c smiles, and begins to sign about a patrol {PRONOUN/t_c/subject} {VERB/t_c/were/was} on today. It's more akin to idle chatter than a report.]"
         ]
+    ],
+    "youdarkstar_R7": [
+        [
+            "any",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "you_not_dftrainee"
+        ],
+        [
+            "If you keep speaking with those foul-pelted shades you'll lose your way to the stars eventually."
+        ]
+    ],
+    "youdarkstar_R3": [
+        [
+            "you_not_dftrainee",
+            "you_dark",
+            "they_df",
+            "you_star",
+            "any"
+        ],
+        [
+            "Have you ever considered never speaking to the spirits again, altogether? I imagine it must be quite a hassle.",
+            "Mmm? Oh, no, I won't tell you to stop talking to your silly stars. I'm not about to ask you to deny a core part of yourself no matter how much I dislike it.",
+            "Besides, you hold the power of the night sky in your paws - why would you deny one part of it for another?",
+            "What is the night without stars?",
+            "What is the dark without light?",
+            "Not everything is black and white. You're awash in the grey of it all - a perfect mix."
+        ]
+    ],
+    "youdarkstar_R1": [
+        [
+            "you_not_dftrainee",
+            "you_dark",
+            "they_df",
+            "you_star",
+            "any"
+        ],
+        [
+            "Do you ever consider joining us to leave those foolish stars behind?",
+            "None of them see that your gifts, powerful and encompasing as they are, can benefit both the stars and the dark for the better.",
+            "Pitiful, really. Star-blind and mad with their own self-righteousness, they'll only ever seen the other half of your abilities as the greatest stain on their paws.",
+            "But you... You see us as your gifts. Your special power. You wouldn't give it up for anything, would you?",
+            "Mmm... Yes. That's why I like you, y_c.",
+            "Don't change from your middling path. Keep your paws in the night sky, grasping both the stars and the darkness, never letting either overtake you."
+        ]
+    ],
+    "youdarkstar_R2": [
+        [
+            "you_not_dftrainee",
+            "you_dark",
+            "they_df",
+            "you_star",
+            "any"
+        ],
+        [
+            "Oh poor, poor y_c. Did those blinding pelted fools discourage your gifts again? Shame on them.",
+            "After all, it's not like you ever asked for this. Who would?",
+            "If a cat wants to see us, they'll come to us. So many have. You, however, are a casuality of fate it seems.",
+            "I'll spare you the 'join us' mockery. Something beyond the stars has given you enough problems."
+        ]
     ]
 }
