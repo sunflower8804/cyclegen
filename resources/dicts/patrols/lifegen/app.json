@@ -1012,19 +1012,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your mentor asks if you would like to check the borders with them",
+        "intro_text": "Your mentor asks if you would like to check the borders with {PRONOUN/m_n/object}.",
         "decline_text": "You decline the offer.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You jump to your paws excitedly, running after your mentor to explore the territory, they escort you through the scenery showing you places in the territory you never knew existed!",
+                "text": "You jump to your paws excitedly, running after m_n to explore the territory. {PRONOUN/m_n/subject/CAP} {VERB/m_n/escort/escorts} you through the scenery, showing you places in the territory you never knew existed!",
                 "exp": 20,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You jump to your paws and run after them. As you trek through the territory, you become excited and run off, your mentor's walking too slow anyway. After a moment you realize you don't recognise this part of the forest. Eventually your mentor finds you and leads you back to camp with a scolding about running off.",
+                "text": "You jump to your paws and run after {PRONOUN/m_n/object}. As you trek through the territory, you become excited and run off, your mentor's walking too slow anyway. After a moment you realize you don't recognise this part of the forest. Eventually, m_n finds you and leads you back to camp with a scolding about running off.",
                 "exp": 0,
                 "weight": 20
             }

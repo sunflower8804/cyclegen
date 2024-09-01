@@ -1234,7 +1234,7 @@ class ProfileScreen(Screens):
             dead_talk = self.get_dead_cat_talk()
 
             if (
-                self.the_cat.outside or
+                (not self.the_cat.dead and self.the_cat.outside) or
                 game.clan.your_cat.moons < 0 or
                 self.the_cat.ID == game.clan.your_cat.ID or
                 ((game.clan.your_cat.dead or self.the_cat.dead) and dead_talk is False)
@@ -3716,7 +3716,6 @@ class ProfileScreen(Screens):
             (game.clan.your_cat.skills.meets_skill_requirement(SkillPath.GHOST) and
             game.clan.your_cat.moons >=1))
             )
-
 
         # you SC
         cat_alive_condition_sc = (

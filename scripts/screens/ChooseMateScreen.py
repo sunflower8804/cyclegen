@@ -420,6 +420,10 @@ class ChooseMateScreen(Screens):
         else:
             display_cats = []
 
+        for marker in self.fav:
+            self.fav[marker].kill()
+        self.fav = {}
+
         pos_x = 30
         pos_y = 0
         i = 0
