@@ -3408,5 +3408,101 @@
             "[t_c crouches and smacks one of {PRONOUN/t_c/poss} paws overtop of the other.]",
             "[The sign for hunting! You give {PRONOUN/t_c/object} a nod and quickly stand up to join.]"
         ]
+    ],
+    "neurotic_warrior_SQ2": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_apprentice",
+            "from_mentor",
+            "forest",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Did you hear that windstorm last night? I think I heard a few trees fall, too.",
+            "Let's train close to camp today. I don't want to go too far, in case any more trees out there are unsteady."
+        ]
+    ],
+    "neurotic_warrior_SQ3": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_apprentice",
+            "you_assertive",
+            "you_silly",
+            "you_unabashed",
+            "from_mentor",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You've been pushing m_n to teach you something new! It feels like you've been practicing the same fighting moves for <i>ages.</i>]",
+            "I... I don't know. It's great you're excited to learn more, but, um, it's really important that you master the basics first.",
+            "If we move on too quickly, you might not have a solid base to build on, and you might learn later things wrong...",
+            "[At your obvious disappointment, t_c relents.]",
+            "H-how about this. Let's review for a bit longer, and then I'll teach you something new."
+        ]
+    ],
+    "neurotic_warrior_SQ4": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_adult",
+            "min_trust_15",
+            "min_platonic_20",
+            "you_blind",
+            "they_blind",
+            "you_warrior"
+        ],
+        [
+            "d_n assigned me to the dawn patrol tomorrow. Last time {PRONOUN/d_n/subject} did that, I was so worried about missing it that I stayed up all night.",
+            "I'm going to try to sleep this time, but if you're awake early tomorrow morning, could you make sure I'm up?",
+            "It's not your responsibility, of course! I'm just... taking precautions."
+        ]
+    ],
+    "neurotic_warrior_SQ5": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_deputy",
+            "min_platonic_20",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh! Hi, y_c. I'm so, so sorry for missing the patrol this morning. I had a stomachache, so r_m said I should stay in camp and rest.",
+            "I'm feeling much better now, though, so please put me on an extra patrol to make up for it! I didn't mean to cause trouble, and I promise I wasn't trying to get out of working!"
+        ]
+    ],
+    "neurotic_warrior_SQ6": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "min_platonic_10"
+        ],
+        [
+            "y_c, I need to tell you something. I'm really, really sorry!",
+            "When I was hunting today, I tripped and I think I fell into one of your herb patches. I didn't mean to, I swear, but I broke some of the stems. It looked like I might have killed them...",
+            "Where was this? Um, kind of near the big tree on the far side of the territory? You can see the o_cClan border from there.",
+            "Wait, that wasn't an herb patch? Oh... oh wow, okay! Thank you! I'm so, so sorry for bothering you!",
+            "[t_c scurries out of the medicine den, practically sagging with relief.]"
+        ]
+    ],
+    "neurotic_warrior_SQ7": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_adult",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "t_a's having trouble getting the hunting crouch down. It's such an important skill, and {PRONOUN/t_a/subject} can't be a warrior if {PRONOUN/t_a/subject} {VERB/t_a/don't/doesn't} master it.",
+            "I'm not sure what I'm doing wrong. Am I demonstrating it incorrectly? Maybe <i>I</i> don't know it as well as I should!"
+        ]
     ]
 }

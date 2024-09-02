@@ -5137,5 +5137,270 @@
             "Wow, that's so cool! I thought I was the only one.",
             "Should we go say hello?"
         ]
+    ],
+    "neurotic_sc_to_sc_SQ8": [
+        [
+            "they_neurotic",
+            "they_sc",
+            "you_sc",
+            "they_adult",
+            "you_kitten",
+            "max_they_deadfor_20"
+        ],
+        [
+            "Oh, y_c! Be careful, watch out for the...",
+            "[t_c looks around, blinking at the expanse of stars.]",
+            "W-well, for nothing in particular, I guess. Just... be careful."
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ9": [
+        [
+            "they_neurotic",
+            "they_sc",
+            "you_sc",
+            "they_adult",
+            "you_kitten"
+        ],
+        [
+            "[t_c smiles as {PRONOUN/t_c/subject} {VERB/t_c/lean/leans} down to lick you between the ears, but {PRONOUN/t_c/poss} eyes are somehow sad.]",
+            "It's not fair that you never got to be an apprentice, y_c. Maybe someone could somehow mentor you here?",
+            "No, not me! I wouldn't be any good at it, but, um...",
+            "[t_c's gaze flicks across the groups of star-pelted cats nearby.]",
+            "Actually, I don't know if we're really supposed to do that. I wouldn't want either of us to get in trouble."
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ10~1": [
+        [
+            "they_neurotic",
+            "they_sc",
+            "you_sc",
+            "they_adult",
+            "you_kitten"
+        ],
+        [
+            "[You've overheard some of the warriors talking about the 'Dark Forest', so the next time you see t_c, you ask {PRONOUN/t_c/object} about it. {PRONOUN/t_c/subject/CAP} {VERB/t_c/stiffen/stiffens}.]",
+            "Uhhh...",
+            "Well... y_c, see, the Dark Forest is a place where...",
+            "It's kind of hard to explain. How about you ask someone else!"
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ10~2": [
+        [
+            "they_neurotic",
+            "they_sc",
+            "you_sc",
+            "they_adult",
+            "you_kitten",
+            "connected"
+        ],
+        [
+            "[Once again, you ask t_c what the 'Dark Forest' is. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} at {PRONOUN/t_c/poss} paws for a long, long time.]",
+            "Um... okay. So, the Dark Forest is a dangerous place, where scary cats live.",
+            "It's not somewhere you ever want to go. If you go there, you can get really hurt. Just like when you were alive.",
+            "Don't think about it too much, okay? All you need to know is that if you're walking, and you see something that looks like really thick mud on the ground...",
+            "...You turn and run away as fast as you can. Can you do that for me?"
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ12": [
+        [
+            "they_neurotic",
+            "you_kitten",
+            "they_adult",
+            "they_sc",
+            "you_sc",
+            "littermate",
+            "max_they_deadfor_10"
+        ],
+        [
+            "Hey, y_c. I've wanted to say for a while now that I'm so, so sorry we didn't get to grow up together.",
+            "You... don't blame me, right? It feels so unfair that I got to live while you...",
+            "A-anyways. Do you want to go play something?" 
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ13": [
+        [
+            "they_neurotic",
+            "they_introspective",
+            "you_kitten",
+            "they_adult",
+            "they_sc",
+            "you_sc",
+            "littermate"
+        ],
+        [
+            "I thought about you a lot as I got older. Sometimes, I tried to imagine what you would be doing if you were there.",
+            "And that made me sad, because I realized I didn't really know.",
+            "In my imagination, you were always a kitten. You never got the chance to grow and change like everyone else."
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ14": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "from_parent",
+            "adoptive_parent",
+            "they_sc",
+            "you_sc",
+            "you_kitten"
+        ],
+        [
+            "[Sometimes, t_c's smile flickers when {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} how small you still are. {PRONOUN/t_c/subject/CAP} {VERB/t_c/lean/leans} close, pressing {PRONOUN/t_c/poss} face into your side.]",
+            "I tried so hard to keep you safe, y_c. I'm sorry that it wasn't enough."
+        ]
+    ],
+    "neurotic_tokit_SQ1": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "from_parent",
+            "adoptive_parent",
+            "you_assertive",
+            "you_silly",
+            "you_unabashed",
+            "you_unlawful",
+            "you_kitten",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "y_c, did I hear r_w right? Did you sneak into the warriors' den this morning?",
+            "I know you're excited to grow up, but you can't do things like that! It's important to stay out of trouble, and not bother other cats...",
+            "[y_c goes on for a bit about why it's important for you to be careful and quiet and <i>boring</i>.]"
+        ]
+    ],
+    "neurotic_tokit_SQ2": [
+        [
+            "you_kitten",
+            "they_neurotic",
+            "they_warrior",
+            "they_mediator",
+            "they_medicine_cat",
+            "they_deputy",
+            "they_leader",
+            "neutral",
+            "greenleaf"
+        ],
+        [
+            "Oh! Hey, y_c. Sorry, I don't really know how to deal with... uh...",
+            "[y_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
+            "Um... here! Play with that for a bit, maybe?"
+        ]
+    ],
+    "neurotic_tokit_SQ3": [
+        [
+            "you_kitten",
+            "they_neurotic",
+            "they_adult",
+            "min_platonic_20"
+        ],
+        [
+            "Don't try to grow up too quickly, okay?",
+            "There's so much out there to worry about... you're lucky you don't need to think about most of it yet."
+        ]
+    ],
+    "neurotic_tokit_SQ4": [
+        [
+            "you_kitten",
+            "they_neurotic",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "neutral"
+        ],
+        [
+            "[You creep up to t_c, watching {PRONOUN/t_c/object} lay herbs out to dry in the sun. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps} when {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} you.]",
+            "H-hi, y_c. Sorry, I need to keep an eye on these herbs so they don't blow away. That means I can't really watch you at the same ti- oh no!",
+            "[The wind picks up, sending t_c's carefully arranged leaves flying. t_c dashes after them, frantically trying to bat them out of the air.]" 
+        ]
+    ],
+    "neurotic_tokit_SQ7~1": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "you_kitten",
+            "min_platonic_20",
+            "you_assertive",
+            "you_silly",
+            "you_unabashed",
+            "you_unlawful",
+            "they_blind"
+        ],
+        [
+            "[You try to climb to the top of the nursery. It's exciting! As you climb higher, you can see more and more of the camp at once!]",
+            "[Suddenly, t_c dashes over. {PRONOUN/t_c/subject/CAP} {VERB/t_c/pluck/plucks} you off of the nursery wall and {VERB/t_c/deposit/deposits} you, wrigging, back on the ground. Aw! You were almost to the top!]",
+            "*huff* *huff* Don't do that, y_c! You could've fallen and gotten hurt, or an eagle could've spotted you up there...",
+            "[t_c goes on for <i>so long</i> about all the things that could've happened. What a worrier!]" 
+        ]
+    ],
+    "neurotic_tokit_SQ7~2": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "you_kitten",
+            "min_platonic_20",
+            "they_blind",
+            "connected"
+        ],
+        [
+            "[You haven't seen t_c for a few hours, so you make another attempt at climbing to the top of the nursery.]",
+            "[Like the first time, you're amazed by how far you can see! You can even see past the edge of camp!]",
+            "[But just as you're reaching the top, you see a flash of fur below you. t_c scrambles up, grabs you by the scruff, and once again brings you to the ground. Foiled again!]",
+            "I'm sorry, y_c, but that really is dangerous! You're too little to have to spend time in the medicine den!"
+        ]
+    ],
+    "neurotic_tokit_SQ7~3": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "you_kitten",
+            "min_platonic_20",
+            "connected"
+        ],
+        [
+            "[t_c sighs as {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you eyeing the nursery roof again. {PRONOUN/t_c/subject/CAP} {VERB/t_c/pad/pads} over and {VERB/t_c/sit/sits} beside you.]",
+            "I know it's exciting, y_c, I really do. And I know a lot of cats will let you get into trouble, thinking that you'll never get seriously hurt.",
+            "I... I can't be like that. I've seen cats get badly injured before, and even if there's only a tiny chance of that happening to you, I feel like I have to step in. Does... that make sense?",
+            "[You keep your eyes fixed on the top of the nursery. t_c sighs again.]",
+            "...You're just going to try, over and over, if I keep stopping you, right?",
+            "Okay. How about this? How about... you can climb it, just this once, with me watching to make sure nothing happens?",
+            "All right, wait here. Let me get r_m and r_w1 to help watch you, and maybe even r_w2..."
+        ]
+    ],
+    "neurotic_tokit_SQ8": [
+        [
+            "they_neurotic",
+            "they_clanborn",
+            "you_kitten",
+            "they_app",
+            "they_adult",
+            "min_platonic_20",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Have you thought about what kind of apprentice you want to be, y_c? You should think about it sooner rather than later.",
+            "Thinking about that decision stressed me out, so I put it off until the evening right before my apprentice ceremony! And then I was up all night trying to choose...",
+            "One of the worst nights of my life! So, uh... don't be like me!"
+        ]
+    ],
+    "neurotic_tokit_SQ9": [
+        [
+            "they_neurotic",
+            "you_kitten",
+            "they_adult",
+            "min_platonic_20",
+            "max_platonic_50",
+            "you_assertive",
+            "you_cool",
+            "you_silly",
+            "you_unabashed",
+            "you_unlawful",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You made up a new game? Okay, what are the rules?",
+            "We, uh, hide and jump out and try to scare each other?",
+            "...I think I'll pass on that one, y_c, sorry. Have you tried asking r_c_assertive?"
+        ]
     ]
 }

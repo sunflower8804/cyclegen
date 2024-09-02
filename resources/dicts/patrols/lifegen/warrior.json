@@ -814,5 +814,40 @@
                 "weight": 20
             }
         ]
+    },
+    {
+        "patrol_id": "testpatrol",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_warrior1",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "There are many abbreviations.dislike_r_a",
+        "decline_text": "Nvm",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "R_M r_m, R_W r_w, DISLIKE_R_A, dislike_r_a",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "R_M r_m, R_W r_w, DISLIKE_R_A, dislike_r_a",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
     }
 ]

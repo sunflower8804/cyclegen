@@ -1780,5 +1780,27 @@
             "[But now, you've been here long enough for it to go away.]",
             "Gone? Good. That's good to hear."
         ]
+    ],
+    "neurotic_medapp_SQ1": [
+        [
+            "they_neurotic",
+            "they_medicine_cat_apprentice",
+            "no_kit"
+        ],
+        [
+            "Catmint, goldenrod, tansy, thyme... no wait, rosemary! Catmint, goldenrod, tansy, rosemary.",
+            "[t_c's laid an array of herbs out on the ground and is going through them one at a time, murmuring their names under {PRONOUN/t_c/poss} breath.]"
+        ]
+    ],
+    "neurotic_medapp_SQ2": [
+        [
+            "they_neurotic",
+            "they_medicine_cat_apprentice",
+            "you_medicine_cat"
+        ],
+        [
+            "Um... could you show me how the herbs are organized, again?",
+            "I think I might've mixed up the places for marigold and tansy, and I can't find the raspberry anywhere..."
+        ]
     ]
 }

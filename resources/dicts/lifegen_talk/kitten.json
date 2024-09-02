@@ -6687,5 +6687,86 @@
             "{PRONOUN/r_q/subject/CAP} {VERB/t_c/were/was} laughing at me, I think? {PRONOUN/t_c/subject/CAP} said it was cute, and that's a good thing, right? But it made me feel weird.",
             "Can we play something? I don't wanna think about that anymore."
         ]
+    ],
+    "neurotic_fromparent_SQ1~1": [
+        [
+            "they_neurotic",
+            "from_parent",
+            "adoptive_parent",
+            "you_kitten",
+            "they_adult",
+            "min_platonic_50",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c, my sweet kit... after you become an apprentice, and start spending all day with your mentor and the other apprentices...",
+            "Make sure to come tell me how everything's going. I want to hear about your training, and if anyone's being mean to you, and if you noticed something scary...",
+            "Oh! And the good things, too, of course!"
+        ]
+    ],
+    "neurotic_aboutshunned_SQ3": [
+        [
+            "they_neurotic",
+            "they_kitten",
+            "you_adult",
+            "min_platonic_15"
+        ],
+        [
+            "[t_c creeps up to you, nervously glancing neutral_rsh_c's way.]",
+            "y_c? neutral_rsh_c did something really, really bad, didn't {PRONOUN/neutral_rsh_c/subject}? That's what everyone says...",
+            "S-so why {VERB/neutral_rsh_c/are/is} {PRONOUN/neutral_rsh_c/subject} still here? Everyone says we're safe in camp, but... but if we're safe, why do they <i>also</i> say it's dangerous to go near neutral_rsh_c?"
+        ]
+    ],
+    "neurotic_skillghost_SQ1~1": [
+        [
+            "they_neurotic",
+            "they_ghost",
+            "they_kitten",
+            "you_adult",
+            "min_platonic_30"
+        ],
+        [
+            "y_c, what's that?",
+            "[t_c stares at the nursery wall, {PRONOUN/t_c/poss} fur fluffed. {PRONOUN/t_c/subject/CAP} {VERB/t_c/run/runs} over and {VERB/t_c/hide/hides} in your fur.]",
+            "There was a cat there! Really! And I didn't know them... why were they in the nursery?",
+            "And then they weren't there anymore? Is there a secret hole in the wall?",
+            "[You inspect the wall and the area outside the nursery, but can't find any secret passageways or unfamiliar cats. t_c stays by your side and barely says anything for the rest of the evening.]"
+        ]
+    ],
+    "neurotic_skillghost_SQ1~2": [
+        [
+            "they_neurotic",
+            "they_ghost",
+            "they_kitten",
+            "you_adult",
+            "min_platonic_30",
+            "connected"
+        ],
+        [
+            "[Ever since {PRONOUN/t_c/subject} thought {PRONOUN/t_c/subject} spotted an unfamiliar cat in the nursery, t_c has avoided that side of the den.]",
+            "[It's a surprise one morning to see {PRONOUN/t_c/object} sitting beside the wall {PRONOUN/t_c/subject} {VERB/t_c/were/was} previously avoiding, and you ask {PRONOUN/t_c/object} if something happened.]",
+            "O-oh. Um... I saw that cat again, the one I didn't know? They walked through the wall again, even though there wasn't a hole!",
+            "And then they noticed I looked scared, and they seemed kind of scared, too? And surprised? I didn't really get it...",
+            "But... but they were nice, like you? And kind of nervous, like me? And they were actually really pretty, too...",
+            "So I'm trying not to be scared of them anymore. At least unless you think I should be?"
+        ]
+    ],
+    "neurotic_skilltreasure_SQ1": [
+        [
+            "they_neurotic",
+            "they_introspective",
+            "they_stable",
+            "they_treasure",
+            "they_kitten",
+            "you_adult",
+            "they_deaf",
+            "you_deaf",
+            "they_blind"
+        ],
+        [
+            "[You expect kits to play with feathers until they're ruffled and dirty, so it's a surprise to see t_c carefully carrying a bright red one in {PRONOUN/t_c/poss} mouth.]",
+            "[You watch {PRONOUN/t_c/subject} gently tuck it into {PRONOUN/t_c/poss} nest and fold some moss over it, protecting {PRONOUN/t_c/poss} new treasure.]"
+        ]
     ]
 }

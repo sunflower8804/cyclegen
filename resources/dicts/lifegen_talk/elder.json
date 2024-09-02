@@ -1618,5 +1618,51 @@
             "[You sign to t_c for {PRONOUN/t_c/poss} opinion. Between the two of you, you come up with a solid plan to drive off the dog.]",
             "[Your head lifts as your ears wriggle and your whiskers twitch in the sign for 'thank you' before getting up to visit d_n and tell {PRONOUN/d_n/object} the plan.]"
         ]
+    ],
+    "neurotic_elder_SQ1": [
+        [
+            "they_neurotic",
+            "they_elder",
+            "no_kit",
+            "platonic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I want to do something special for t_m, but I'm out of ideas.",
+            "I'm nervous to wander too far from camp these days, so it's not like I could just bring back a pretty flower... and that's been done before, anyways.",
+            "*sigh* t_m deserves so much, but I'm not very good at this." 
+        ]
+    ],
+    "neurotic_elder_SQ2": [
+        [
+            "they_neurotic",
+            "they_elder",
+            "they_clanborn",
+            "no_kit",
+            "platonic_like",
+            "you_blind"
+        ],
+        [
+            "The Clan's changed so much since I was a kit, and it's just going to keep changing...",
+            "It kind of scares me to think that one day, I might look down from the stars and not recognize what it's become."
+        ]
+    ],
+    "neurotic_elder_SQ3": [
+        [
+            "they_neurotic",
+            "they_elder",
+            "you_warrior",
+            "you_deputy",
+            "you_leader",
+            "min_platonic_15"
+        ],
+        [
+            "[t_c motions you over one evening as you're heading to your den. {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} watching the edge of camp, {PRONOUN/t_c/poss} tail flicking nervously.]",
+            "I'm sorry, y_c, but could you check over there for me? I think I saw something moving.",
+            "I'd take a look myself but... uh... honestly I don't know if I could fight off a threat anymore.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/laugh/laughs} awkwardly. You call over r_w1 and r_w2 and the three of you inspect the area, but find nothing. t_c doesn't meet your eyes when you report back to {PRONOUN/t_c/object}.]",
+            "Ah... all right. Sorry for wasting your time."
+        ]
     ]
 }
