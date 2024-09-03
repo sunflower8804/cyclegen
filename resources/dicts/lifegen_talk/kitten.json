@@ -6817,26 +6817,23 @@
             "only_you_deaf",
             "newborn",
             "they_kitten"
-            
         ],
         [
             "[t_c pushes some more moss into your nest before sitting to watch you snuggle in.]"
         ]
-        ],
-
+    ],
     "youdeaf_R87": [
         [
             "only_you_deaf",
             "newborn",
             "they_kitten"
-            
         ],
         [
             "[Thumping of the ground startles you away with a mew. t_c is jumping up and down next to your nest!]",
             "[A queen shoos {PRONOUN/t_c/object} away after you start wailing.]"
         ]
     ],
-    "Introspective_kitten_choice_H1~1": { 
+    "Introspective_kitten_choice_H1~1": {
         "tags": [
             "they_introspective",
             "they_kitten",
@@ -6878,5 +6875,59 @@
             "[Have {PRONOUN/t_c/subject} been watching you for a while? Or is t_c just this observant?]",
             "y_c, can I have more?"
         ]
-    }
+    },
+    "about_assertive_SQ2": [
+        [
+            "they_kitten",
+            "you_any",
+            "they_assertive",
+            "they_unabashed",
+            "they_unlawful",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Why does dislike_r_w_assertive always say they're gonna protect us?",
+            "I don't need protecting! I'm gonna protect myself from everything bad! I don't need them!"
+        ]
+    ],
+    "about_unlawful_SQ5": [
+        [
+            "they_kitten",
+            "you_adult",
+            "platonic_like",
+            "comfort"
+        ],
+        [
+            "[As soon as you enter the nursery, t_c scampers up to you, wailing.]",
+            "y_c! y_c!! r_k_unlawful keeps pulling my ear and it really, really, <i>really</i> hurts!!"
+        ]
+    ],
+    "about_unlawful_SQ6": [
+        [
+            "they_kitten",
+            "you_kitten",
+            "platonic_like",
+            "they_assertive",
+            "they_brooding",
+            "they_cool",
+            "they_unlawful"
+        ],
+        [
+            "Psst, y_c! Let's go ask if we can listen to one of r_e_unlawful's stories.",
+            "They always tell the good ones, the ones r_q says we're not allowed to hear!"
+        ]
+    ],
+    "about_neurotic_SQ10": [
+        [
+            "they_kitten",
+            "you_any",
+            "min_trust_15",
+            "you_blind"
+        ],
+        [
+            "y_c? Is neutral_r_w_neurotic scared of me?",
+            "Whenever I get close to them, they get really big eyes and back away!"
+        ]
+    ]
 }
