@@ -1780,5 +1780,39 @@
             "[But now, you've been here long enough for it to go away.]",
             "Gone? Good. That's good to hear."
         ]
+    ],
+"Introspective_kitten_choice_H1~2": {
+    "tags": [
+        "they_introspective",
+        "you_medicine_cat",
+        "they_medicine_cat_apprentice",
+        "platonic_like",
+        "from_your_apprentice",
+        "connected"
+    ],
+    "intro": [
+        "[t_c is sorting through the herb pile as instructed, completing the task with practiced ease.]",
+        "Hey, y_c? Remember when I asked to help organize the herb pile when I was a kitten?"
+    ],
+    "intro_choices": {
+        "choice1": {
+            "text": "Yes, I do.",
+            "next_scene": "Yup"
+        },
+        "choice2": {
+            "text": "I don't.",
+            "next_scene": "donot"
+        }
+    },
+    "Yup": [
+        "I was having a bit of nostalgia, haha! I was so curious about what you were doing back then.",
+        "And now look at me - I'm your apprentice and on the path of being a medicine cat.",
+        "It's funny how things work out, huh?"
+    ],
+    "donot": [
+        "Ah, hm. When I was a kitten, I wanted to help you sort through the herb pile.",
+        "No, you don't remember?",
+        "Your memory strikes again y_c, hehe. Forget it, I was feeling nostalgic!"
     ]
+}
 }

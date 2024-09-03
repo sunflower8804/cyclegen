@@ -2786,7 +2786,7 @@
         ],
         [
             "How long have I been here?",
-            "I dont know. Longer than I was alive."
+            "I don't know. Longer than I was alive."
         ]
     ],
     "df_guide_c": [
@@ -2797,7 +2797,7 @@
         ],
         [
             "How long have I been here?",
-            "I dont know. Longer than I was alive."
+            "I don't know. Longer than I was alive."
         ]
     ],
     "df_guide2_c": [
@@ -2809,7 +2809,7 @@
         [
             "[They say that the spirits of this forest will fade away once everyone's forgotten them.]",
             "[Yet it's been many, many moons and t_c is still around.]",
-            "[Perhaps they've done something so horrible that they will be forced to walk these dark grounds forever.]"
+            "[Perhaps {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} done something so horrible that {PRONOUN/t_c/subject} will be forced to walk these dark grounds forever.]"
         ]
     ],
     "youdeaf_R42": [
@@ -3049,5 +3049,34 @@
             "They're making you soft. A real enemy's going to come at you with everything they've got.",
             "If you really want to prepare, you have to do the same. Use your claws. Go for the throat. Remember, when you're a warrior, it's kill or be killed. You'll be doing your siblings a favor. You can thank me when you're older."
         ]
-    ]
+    ],
+      "BG3_DF_H1": [
+        [
+            "they_df",
+            "you_df",
+	        "Any",
+            "they_ancientspirit",
+            "they_dark"
+        ],
+        [
+            "[You catch t_c sitting along the bordering separating the Dark Forest and StarClan, the distant sound of kits laughter on the horizon.]",
+            "They're playing moss ball.",
+            "[t_c's fading tail flickers, a look of defeated worry along {PRONOUN/t_c/poss} face.]",
+            "Did I play games like that in my youth? ... Was I sweet once?"
+        ]
+    ],
+    "BG3_DF_H2": [
+        [
+            "they_df",
+	        "Any",
+            "they_ancientspirit",
+            "they_dark"
+        ],
+        [
+            "[You catch t_c sitting along the bordering separating the Dark Forest and StarClan, the distant sound of kits laughter on the horizon.]",
+            "They're playing moss ball.",
+            "[t_c's fading tail flickers, a look of defeated worry along {PRONOUN/t_c/poss} face.]",
+            "Did I play games like that in my youth? ... Was I sweet once?"
+	]
+   ]
 }

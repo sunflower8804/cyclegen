@@ -6835,5 +6835,48 @@
             "[Thumping of the ground startles you away with a mew. t_c is jumping up and down next to your nest!]",
             "[A queen shoos {PRONOUN/t_c/object} away after you start wailing.]"
         ]
-    ]
+    ],
+    "Introspective_kitten_choice_H1~1": { 
+        "tags": [
+            "they_introspective",
+            "they_kitten",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "neutral"
+        ],
+        "intro": [
+            "[While organizing the herb pile, you feel a presence at your side. There sits t_c, watching you work with curious eyes.]",
+            "Can I help? Please? It looks fun."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Sure",
+                "next_scene": "sure"
+            },
+            "choice2": {
+                "text": "You're too young.",
+                "next_scene": "tooyoung"
+            },
+            "choice3": {
+                "text": "[Push a few herbs their way.]",
+                "next_scene": "pushherb"
+            }
+        },
+        "sure": [
+            "Yay!",
+            "[t_c scoots closer and starts going through the pile with you, observing how you sort the herbs carefully.]",
+            "What are all their names? I know <i>that</i> one is cobweb. Ewww.",
+            "[t_c flashes wide, pleading eyes your way and you find yourself explaining all the herbs and what they're used for. t_c listens with an intense interest.]"
+        ],
+        "tooyoung": [
+            "Too young to do this, too young to do that. But no one tells me why I can't.",
+            "[t_c pouts and sulks to the side as you continue organizing.]",
+            "[Soon enough, t_c gets distracted by something else and wanders off.]"
+        ],
+        "pushherb": [
+            "[You watch in the corner of your eye as t_c paws at the herbs, sorting through them with a careful touch. {PRONOUN/t_c/subject/CAP} seem to know what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing.]",
+            "[Have {PRONOUN/t_c/subject} been watching you for a while? Or is t_c just this observant?]",
+            "y_c, can I have more?"
+        ]
+    }
 }

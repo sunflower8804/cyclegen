@@ -1784,5 +1784,121 @@
                 "weight": 20
             }
         ]
+    },
+    {
+        "patrol_id": "Life_alreadymates_date_H1",
+        "biome": [
+            "forest",
+            "mountainous",
+            "plains"
+        ],
+        "season": [
+            "newleaf",
+            "greenleaf"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "patrol_art": "date_flowerfield",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "While walking with r_c, you notice the small clearing in which you and r_c used to lay in to watch the stars. Blooming with wildflowers and the sun shining on the warm grass, you feel the urge to lay there and enjoy the sunset with r_c once more.",
+        "decline_text": "You realize you'd rather not lay in a pile of bees and itchy grass, and trot away to find a place that wouldn't make you or r_c itch for an eternity.",
+        "chance_of_success": 50,
+        "relationship_constraint": ["mates"],
+        "success_outcomes": [
+            {
+                "text": "r_c accepts and before you know it, {PRONOUN/r_c/subject}{VERB/r_c/'re/is} playfully chasing you through the wildflower fields. Just as the sun sets against the horizon, r_c tackles you into the clearing and rolls, wildflower petals floating through the air in a beautiful arrangement of color. You and r_c share a moment of laughter, enjoying yourself before you have to travel back to o_cClan.",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 10
+                    }
+                ]
+            },
+            {
+                "text": "r_c agrees and hops through the flower field with joyful glee, breaking the seeds from the flowers so they float to the sky. While {PRONOUN/r_c/subject}{VERB/r_c/'re/is} distracted, you pluck a few flowers from the stems and start to weave the stems together until it forms a circle. Proud of your work, you show it off to r_c as a gift. {PRONOUN/r_c/subject/CAP} accept it with a bunt of heads!",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 10
+                    }
+                ],
+                "accessory": [
+                    {
+                        "cats": ["r_c"],
+                        "accessory": ["FLOWERCROWN"]
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You perk up and imply the idea of going into the clearing to lay in the sun, hopeful that r_c would agree. r_c hesitates and shakes {PRONOUN/r_c/poss} head, stating {PRONOUN/r_c/subject} {VERB/r_c/have/has} more important things to do and cannot rest. You're left pouting, entering the clearing alone as r_c trots to the Clan.",
+                "exp": 0,
+                "weight": 15,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": false,
+                        "values": ["romantic"],
+                        "amount": -5
+                    }
+                ]
+            },
+            {
+                "text": "r_c agrees and follows you into the clearing, stepping over the wildflowers carefully. You hear a fearful yelp from behind and before you know it, r_c is racing off with a few dozen bees following {PRONOUN/r_c/poss} tail. You can't help but snicker into your paw at {PRONOUN/r_c/poss} misfortune, but quickly hide your amusement as r_c comes back with a few angry stings.",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 5
+                    }
+                ],
+                "injury": [
+                    {
+                        "cats": ["r_c"],
+                        "injuries": ["bee sting"]
+                    }
+                ]
+            },
+            {
+                "text": "r_c agrees and follows you into the clearing, stepping over the wildflowers carefully. You hear a fearful yelp from behind and before you know it, r_c is racing out of the field. You hear the familiar buzz of angry bees and run off yourself, the angry creatures redirecting their target onto you. Safe to say it <i>stung</i> to hear your mate's laughter.",
+                "exp": 0,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["romantic"],
+                        "amount": 5
+                    }
+                ],
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["bee sting"]
+                    }
+                ]
+            }
+        ]
     }
 ]
