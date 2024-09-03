@@ -26,7 +26,7 @@ class PatrolScreen(Screens):
                                     (100, 100))
     df_icon = pygame.transform.scale(pygame.image.load("resources/images/buttons/df_toggle2.png").convert_alpha(),
                                     (100, 100))
-    date_icon = pygame.transform.scale(pygame.image.load("resources/images/buttons/flirt.png").convert_alpha(),
+    date_icon = pygame.transform.scale(pygame.image.load("resources/images/buttons/date.png").convert_alpha(),
                                     (100, 100))
 
     current_patrol = []
@@ -582,7 +582,7 @@ class PatrolScreen(Screens):
         else:
             self.elements['df_icon'].disable()
         self.elements['date_icon'] = UIImageButton(scale(pygame.Rect((806, 1120), (68, 68))), "",
-                                                object_id="#flirt_button", manager=MANAGER)
+                                                object_id="#date_button", manager=MANAGER)
         if not game.clan.your_cat.dead and not game.clan.your_cat.outside and game.clan.your_cat.moons >= 14 and game.switches['patrol_category'] != 'date':
             self.elements['date_icon'].enable()
         else:
