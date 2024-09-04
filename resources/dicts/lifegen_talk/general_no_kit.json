@@ -22236,5 +22236,230 @@
             "Like... they don't care about the rules, at all. They'll bend them, break them... I'm nervous that they'll one day cross l_n, or the other Clans, or, I don't know, StarClan's will...",
             "But there's something comforting, I guess, about having a sibling who would cast aside the Warrior Code for you."
         ]
+    ],
+    "youdfskill_R1": [
+        [
+            "you_not_dftrainee",
+            "you_dark",
+            "they_df"
+        ],
+        [
+            "[t_c is watching you from the gloom. {PRONOUN/t_c/poss/CAP} gaze burns your pelt.]",
+            "You could be great, y_c. You truly could with your gifts. Consider it next time you visit."
+        ]
+    ],
+    "youdarkstar_R10": [
+        [
+            "any",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "you_not_dftrainee",
+            "they_assertive"
+        ],
+        [
+            "Forsake your silly stars, y_c. With our guidance, you could rule the night sky - and more."
+        ]
+    ],
+    "youdarkstar_R11": [
+        [
+            "any",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "you_not_dftrainee",
+            "they_assertive"
+        ],
+        [
+            "Join us, y_c. With you leading us... Not even StarClan could stop us. You could one day erase the border between the night and stars.",
+            "None of us would continue starving, stuck in this foul, muddy forest."
+        ]
+    ],
+    "youdarkstar_R12": [
+        [
+            "any",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "you_not_dftrainee"
+        ],
+        [
+            "Say... y_c. I was wondering... Since you can cross the border, would you consider bringing prey, here?",
+            "It's just - we're all so hungry. Since StarClan is plentiful it's not like they'd miss it there.",
+            "What do you say? You could even just sneak a morsel in for your favorite cats. Or create a loyal group of us, just for the lick of prey blood from your claws.",
+            "Just don't forget who gave you that idea."
+        ]
+    ],
+"youdarkstar_R13": [
+        [
+            "any",
+            "you_dark",
+            "they_sc",
+            "you_star",
+            "you_not_dftrainee",
+            "they_assertive"
+        ],
+        [
+            "Come on, y_c, join us!",
+            "[t_c swipes at you. You're forced to move fast to dodge it.]",
+            "Have those pathetic stars convinced you to stay weak? It's all for their own gain! They don't want you to be more powerful than them!",
+            "Snap out of it. Don't be foolish and weak! Learn to be great - to be stronger than the night skies themselves!",
+            "No?",
+            "Hah. You'll come around... eventually. They always do. You'll come begging for our skills when it all goes wrong.",
+            "You'll see."
+        ]
+    ],
+        "assertive_R1": [
+            [
+                "any",
+                "they_assertive"
+            ],
+            [
+                "[t_c is painstakingly perfecting a battle move in the training area. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} failing a bit without an enemy to work with.]",
+                "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/stop/stops} when {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, brightening quite a bit at the prospect of a sparring partner.]",
+                "Hah, y_c! Perfect timin'! Mind helping me out? I just need to make sure I have the landing for this belly rake down!",
+                "It won't take long, I swear to it. I got this. I'm sure of it!"
+            ]
+        ],
+        "assertive_R2": [
+            [
+                "any",
+                "they_assertive"
+            ],
+            [
+                "[t_c struts around camp with {PRONOUN/t_c/poss} head held high. Whatever {PRONOUN/t_c/subject} just did, {PRONOUN/t_c/subject} must be proud of it.]"
+            ]
+        ],
+        "assertive_R3": [
+            [
+                "any",
+                "they_assertive",
+                "they_swimmer"
+            ],
+            [
+                "Come on, y_c, join me!",
+                "[t_c doesn't bother to shed water from {PRONOUN/t_c/poss} coat as {PRONOUN/t_c/subject} exit the river to bump you closer to the bank.]",
+                "The water's perfect today! I've gotcha, I won't let you down! In y'go!",
+                "[Before you can protest, t_c has shoved you into the water. You sputter a moment before treading water.]",
+                "Haha! See? You're doin' great!",
+                "[t_c dives back into the water and pops back up next to you, grinning wildly.]",
+                "[... Well, no point in being mad now. t_c was right, this is kind of fun!]"
+            ]
+        ],
+        "assertive_R4": [
+            [
+                "any",
+                "assertive",
+                "they_swimmer"
+            ],
+            [
+                "[You're out in the territory with t_c and r_c_unlawful to get a drink of fresh river water.]",
+                "[A lucky catch of a mouse has been the highlight of your day. It practically walked into your paws!]",
+                "[Getting to the riverbank, you pause, ready to set down your catch so you can grab a refreshing drink - but the mouse is gone in a flash!]",
+                "[r_c_unlawful is a blur, mouse in {PRONOUN/r_c_unlawful/poss} mouth. t_c is just as fast, rearing up to shove you into the river.]",
+                "Haha! r_c_unlawful, that worked! You're brilliant! Hey y_c, the water nice today?",
+                "[You're thankful the water is shallow here on the bank, but you don't appreciate the sopping wet pelt. As revenge, you shake off beside the two miscreants.]",
+                "[r_c_unlawful shields the mouse, snickering, as t_c jumps into the water {PRONOUN/t_c/self}.]",
+                "Awww yeah! The water's great! Drop that mouse and c'mon in, r_c_unlawful!"
+            
+            ]
+        ],
+        "assertive_R5": [
+            [
+                "any",
+                "they_assertive",
+                "they_artistan"
+            ],
+            [
+                "[t_c is fiddling wth something. Walking around, you see {PRONOUN/t_c/subject} {VERB/t_c/have/has} made something particularly interesting.]",
+                "Woah, hey there! Gettin' a sneak peak of my big ideas?",
+                "Since you're here I guess I can show you something cool. How's about it?",
+                "[You watch as t_c steps on a stick on one part of the contraption - and a pebble flies into the air!]",
+                "I see y'got the same look I did when I figured this out. I think it'll be real fun to launch these at our rivals one day. They'll think the sky itself is fallin' on them!"
+            ]
+        ],
+        "assertive_R6": [
+            [
+                "any",
+                "they_assertive",
+                "they_camp"
+            ],
+            [
+                "[You watch as t_c drags a massive branch into camp, struggling every step. Somehow, though, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} still doing it {PRONOUN/t_c/self}.]",
+                "[Finally {PRONOUN/t_c/subject} {VERB/t_c/stop/stops}, looking proud as {PRONOUN/t_c/subject} {VERB/t_c/spot/spots} you watching.]",
+                "See how strong I am? Ha! This branch is nothin', really, just a light workout before some tasks later.",
+                "Anyways, wanna help me out? The warrior's den needs some extra cover. I gotta plan to spread some big leaves over this once the leaves die on it.",
+                "It'll last a while too! Worth the work it took t'get it here, y'know?",
+                "Oof, sounds like d_n is callin' you. Better see what {PRONOUN/d_n/subject} {VERB/d_n/want/wants} from you!",
+                "I'll be here if you wanna help after!"
+            ]
+        ],
+        "assertive_R7": [
+            [
+                "any",
+                "they_assertive",
+                "they_clairvoyant"
+            ],
+            [
+                "... And r_w was tellin' me about this deep burrow, absolutely terrified of it, an' I'm just tellin' {PRONOUN/r_w/object} to not be a mouse 'bout it.",
+                "Hey - hold on. Stop a moment, y_c..?",
+                "[Mid walk through the territory and telling a story, t_c stands still, {PRONOUN/t_c/poss} fur slowly standing on end. You have no idea why though.]",
+                "... I don't like this. We're goin' back to camp, fast.",
+                "Nope! No questions! We're leaving!",
+                "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/bunt/bunts} your hip to get you moving. The two of you get back to camp hastily, even if it leaves you confused.]",
+                "[Later you hear from d_n that three foxes had prowled through, just after the time you and t_c had gotten back to camp. A patrol had to shelter in the trees.]",
+                "[You didn't smell them, and you know t_c didn't. Something else had alerted {PRONOUN/t_c/object} - and you're grateful you listened when you had the chance.]",
+                "[You thank t_c later, and ask how {PRONOUN/t_c/subject} knew.]",
+                "I didn't have a clue, honest. Just a gut feelin' that somethin' was up. I've learned to follow that feelin' - and it saves my pelt more often than not.",
+                "So don't thank me, thank whatever looks out for me, y'know? I just learned how to interpret it."
+            ]
+        ],
+        "assertive_R8": [
+            [
+                "any",
+                "they_assertive",
+                "they_clean"
+            ],
+            [
+                "[r_w1 and r_w2 tumble through the camp clearing in a sparring match. Usually t_c is raring to go, egging them on, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} busy grooming.]",
+                "[The dust cloud being kicked up floats towards t_c - and {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} on {PRONOUN/t_c/poss}paws in no time, fur bristled.]",
+                "Oi! You fox-dung smellin' rabbit-brains are throwing dirt an' dust everywhere! I'm up to my ears in the stuff!",
+                "Out! Outta the camp with you two!",
+                "[A swipe sends r_w1 and r_w2 away, glancing back to make sure t_c wouldn't give chase.]",
+                "Can you believe that thistle-downed nonsense, y_c? Some cat's got no respect! None!",
+                "I gotta clean this camp up after that - then finish my coat.",
+                "[Despite the grumbles, t_c is in {PRONOUN/t_c/poss} element when it comes to cleaning up after the warriors.]"
+            ]
+        ],
+        "assertive_R10": [
+        [
+            "any",
+            "they_assertive",
+            "they_climber"
+        ],
+        [
+            "y_c! Heeeeeeey! y_c!",
+            "[You can hear t_c, but you can't see {PRONOUN/t_c/object}. Where..? Oh. You look up.]",
+            "[There's t_c, high above you in a tree!]",
+            "You found me! Haha, I thought I was gonna give you the slip for a minute there.",
+            "Wanna join me?",
+            "[It's dizzying even just looking up at how high {PRONOUN/t_c/subject} {VERB/t_c/are/is}.]",
+            "You're no fun, y_c! Let loose! Live a little!"
+        ]
+    ],
+    "assertive_R11": [
+        [
+            "any",
+            "they_assertive",
+            "they_comforter"
+        ],
+        [
+            "Well if it ain't y_c, how're you doin' today?",
+            "You sure don't look great. Too much to do?",
+            "Nightmares you say? Bah, I gotcha! I'll sleep next to you tonight and chase away anything darin' to bother you tonight! No nightmares when t_c is on the job! Works every time!",
+            "[You doubt t_c can fight off a nightmare, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} insistent.]",
+            "Swear on anythin', no more nightmares will bother you, y_c. You'll see!",
+            "[You cave eventually, and surprisingly, t_c was right. It's a peaceful night next to them.]"
+        ]
     ]
 }

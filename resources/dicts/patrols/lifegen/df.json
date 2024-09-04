@@ -1674,7 +1674,7 @@
         "min_max_status": {
             "normal adult": [1, 6]
         },
-        "weight": 10,
+        "weight": 1,
         "intro_text": "You slip into the dark depths of the forest alone. Training can wait - you have more important matters to attend to tonight. A single pair of eyes flash ahead in the darkness, affixed on you.",
         "decline_text": "Thinking back, this is a bad idea. You turn tail and return to training.",
         "chance_of_success": 30,
@@ -1682,7 +1682,7 @@
             {
                 "text": "You surge forward to greet your secret mate. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/purr/purrs} out a greeting, and {VERB/n_c:0/call/calls} out to someone in the darkness. Oh! Your kits! You greet each of them with a purr loud as thunder. Before you know it, it's time to say good-bye to your family, and you wake in your nest with a bitter-sweet ache in your chest.",
                 "exp": 15,
-                "weight": 10,
+                "weight": 1,
                 "new_cat": [
                     ["newdfcat", "age:mate_with_kits", "mate:p_l"],
                     ["newdfcat", "your_litter", "parent:0", "status:kitten", "backstory:dfkit1"]
@@ -1701,7 +1701,7 @@
             {
                 "text": "You surge forward to greet your secret mate, but {PRONOUN/n_c:0/subject} {VERB/n_c:0/don't/doesn't} reciprocate. It's time to part ways despite your aching hearts. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/whisk/whisks} your confused kits forward and you choke out a goodbye as your love walks away with a hanging head. You need to get the little ones into a warm nest now. Now the question is, what to tell your Clanmates?",
                 "exp": 15,
-                "weight": 5,
+                "weight": 1,
                 "new_cat": [
                     ["newdfcat", "age:mate_with_kits", "mate:p_l"],
                     ["your_litter", "parent:0", "status:kitten", "backstory:dfkit2"]
