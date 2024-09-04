@@ -1259,7 +1259,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "This is a stealth lesson, and you are the stealthiest cat today, you bring brack more prey than r_w1 and r_w2! When you see m_n, you're praised for your abilities. r_w2 says {PRONOUN/m_n/subject} taught you well, making {PRONOUN/m_n/object} lick {PRONOUN/poss} chest self-consciously before smiling.",
+                "text": "This is a stealth lesson, and you are the stealthiest cat today, you bring brack more prey than r_w1 and r_w2! When you see m_n, you're praised for your abilities. r_w2 says {PRONOUN/m_n/subject} taught you well, making {PRONOUN/m_n/object} lick {PRONOUN/m_n/poss} chest self-consciously before smiling.",
                 "exp": 10,
                 "weight": 20
             }
