@@ -4255,10 +4255,10 @@
             "min_platonic_40"
         ],
         "intro": [
-            "dislike_r_m isn't doing enough for love_r_s. I swear, every time I visit the medicine den, love_r_s looks worse.",
-            "If this keeps up, {PRONOUN/love_r_s/subject}{VERB/love_r_s/'re/'s} going to...",
+            "dislike_r_m isn't doing enough for plove_r_s. I swear, every time I visit the medicine den, plove_r_s looks worse.",
+            "If this keeps up, {PRONOUN/plove_r_s/subject}{VERB/plove_r_s/'re/'s} going to...",
             "[t_c breaks off and looks away, swallowing hard.]",
-            "dislike_r_m doesn't seem to care about {PRONOUN/love_r_s/object}, and I don't know what to do."
+            "dislike_r_m doesn't seem to care about {PRONOUN/plove_r_s/object}, and I don't know what to do."
         ],
         "intro_choices": {
             "choice1": {
@@ -4275,7 +4275,7 @@
             }
         },
         "defend": [
-            "[Just because dislike_r_m isn't at love_r_s's side every second doesn't mean {PRONOUN/dislike_r_m/subject} {VERB/dislike_r_m/aren't/isn't} trying, and it certainly doesn't mean {PRONOUN/dislike_r_m/subject} {VERB/dislike_r_m/don't/doesn't} care.]",
+            "[Just because dislike_r_m isn't at plove_r_s's side every second doesn't mean {PRONOUN/dislike_r_m/subject} {VERB/dislike_r_m/aren't/isn't} trying, and it certainly doesn't mean {PRONOUN/dislike_r_m/subject} {VERB/dislike_r_m/don't/doesn't} care.]",
             "[{PRONOUN/dislike_r_m/poss/CAP} job is to support their Clan, and you've never seen {PRONOUN/dislike_r_m/object} ignore that responsibility.]",
             "I guess. If you say so.",
             "[t_c doesn't meet your eyes as {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} away.]"

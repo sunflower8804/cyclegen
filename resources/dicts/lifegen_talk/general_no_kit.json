@@ -21923,8 +21923,8 @@
         ],
         [
             "plike_r_w_stable has been stopping by a lot recently.",
-            "They always ask if I need anything, and then stay to chat for at least an hour. They say they want to make sure I stay informed of Clan business.",
-            "It's nice to still feel included. I hope they're visiting because they want to, and not because they feel obligated."
+            "{PRONOUN/plike_r_w_stable/subject/CAP} always {VERB/plike_r_w_stable/ask/asks} if I need anything, and then {VERB/plike_r_w_stable/stay/stays} to chat for at least an hour. {PRONOUN/plike_r_w_stable/subject/CAP} {VERB/plike_r_w_stable/say/says} {PRONOUN/plike_r_w_stable/subject} {VERB/plike_r_w_stable/want/wants} to make sure I stay informed of Clan business.",
+            "It's nice to still feel included. I hope {PRONOUN/plike_r_w_stable/subject}{VERB/plike_r_w_stable/'re/'s} visiting because {PRONOUN/plike_r_w_stable/subject} {VERB/plike_r_w_stable/want/wants} to, and not because {PRONOUN/plike_r_w_stable/subject} {VERB/plike_r_w_stable/feel/feels} obligated."
         ]
     ],
     "about_sweet_AJ": [
@@ -21937,9 +21937,9 @@
             "min_trust_15"
         ],
         [
-            "Hmph. neutral_r_m_sweet is a decent healer, but when it comes to dealing with patients, they're ... soft. Weak.",
-            "They can sing lullabies and spout platitudes, but in the end, they don't have what it takes to stare death straight in the eyes and bare their teeth at it. Whenever we lose a patient, they run away, crying.",
-            "Maybe they would've been better suited for the life of a Queen .... In a place like this, there is absolutely no room for weakness."
+            "Hmph. neutral_r_m_sweet is a decent healer, but when it comes to dealing with patients, {PRONOUN/neutral_r_m_sweet/subject}{VERB/neutral_r_m_sweet/'re/'s} ... soft. Weak.",
+            "{PRONOUN/neutral_r_m_sweet/subject/CAP} can sing lullabies and spout platitudes, but in the end, {PRONOUN/neutral_r_m_sweet/subject} {VERB/neutral_r_m_sweet/don't/doesn't} have what it takes to stare death straight in the eyes and bare {PRONOUN/neutral_r_m_sweet/poss} teeth at it. Whenever we lose a patient, {PRONOUN/neutral_r_m_sweet/subject} {VERB/neutral_r_m_sweet/run/runs} away, crying.",
+            "Maybe {PRONOUN/neutral_r_m_sweet/subject} would've been better suited for the life of a queen .... In a place like this, there is absolutely no room for weakness."
         ]
     ],
     "about_sweet_SQ1": [
@@ -21953,7 +21953,7 @@
         ],
         [
             "Is it just me, or does dislike_r_c_sweet seem to think I can't take care of myself?",
-            "They've brought me mice from the fresh-kill pile several times now, and reminded me to get some sleep yesterday.",
+            "{PRONOUN/dislike_r_c_sweet/subject/CAP}{VERB/dislike_r_c_sweet/'ve/'s} brought me mice from the fresh-kill pile several times now, and reminded me to get some sleep yesterday.",
             "The Clan... knows I'm capable, right?"
         ]
     ],
@@ -21971,7 +21971,7 @@
         ],
         [
             "There was a lost kittypet wandering around the edge of the territory. They'd hurt their leg somehow... looked like they got it caught in something.",
-            "neutral_r_m_sweet was nearby, so they bandaged the kittypet's leg and gave them some herbs to help.",
+            "neutral_r_m_sweet was nearby, so {PRONOUN/neutral_r_m_sweet/subject} bandaged the kittypet's leg and gave them some herbs to help.",
             "It was nice, I guess, but why are we wasting our supplies on kittypets? Don't they have Twolegs for that kind of thing?"
         ]
     ],
@@ -21981,8 +21981,8 @@
             "they_brooding"
         ],
         [
-            "[t_c trudges across camp with their ears pinned back, squinting as if they were just buffeted by a particularly strong wind.]",
-            "r_c_upstanding just told me all about the 'secret bald spot' at the base of their tail.",
+            "[t_c trudges across camp with {PRONOUN/t_c/poss} ears pinned back, squinting as if {PRONOUN/t_c/subject} {VERB/t_c/were/was} just buffeted by a particularly strong wind.]",
+            "r_c_upstanding just told me all about the 'secret bald spot' at the base of {PRONOUN/r_c_upstanding/poss} tail.",
             "For nearly ten minutes. <i>Loudly.</i>"
         ]
     ],
@@ -21997,7 +21997,7 @@
         [
             "t_l_unabashed was telling everyone this super embarrassing story from when we were kits.",
             "Did you hear it? The one with the thunderstorm and me being half-asleep and... wait, if you haven't heard, I'm not going to say anything!",
-            "If t_l_unabashed wants to tell stories about themself, I'm not going to stop them, but I really wish they'd stop sharing stuff about me, too."
+            "If t_l_unabashed wants to tell stories about {PRONOUN/t_l_unabashed/self}, I'm not going to stop {PRONOUN/t_l_unabashed/object}, but I really wish {PRONOUN/t_l_unabashed/subject}'d stop sharing stuff about me, too."
         ]
     ],
     "about_unabashed_SQ2": [
@@ -22008,8 +22008,8 @@
             "min_trust_15"
         ],
         [
-            "neutral_r_w_unabashed was snoring super loudly last night. I'd be super embarrassed if I'd been doing that, but when I let them know, they just... laughed?",
-            "I really don't understand them."
+            "neutral_r_w_unabashed was snoring super loudly last night. I'd be super embarrassed if I'd been doing that, but when I let {PRONOUN/neutral_r_w_unabashed/object} know, {PRONOUN/neutral_r_w_unabashed/subject} just... laughed?",
+            "I really don't understand {PRONOUN/neutral_r_w_unabashed/object}."
         ]
     ],
     "about_unabashed_SQ3": [
@@ -22019,11 +22019,11 @@
             "min_trust_15"
         ],
         [
-            "[You find t_c curled up in their nest, their paws over their head.]",
+            "[You find t_c curled up in {PRONOUN/t_c/poss} nest, {PRONOUN/t_c/poss} paws over {PRONOUN/t_c/poss} head.]",
             "Ugh, I just had the most uncomfortable interaction with neutral_r_w_unabashed.",
-            "They invited me to eat together, and... I mean, it's not like we're close, but I agreed.",
-            "And it was fine at first, but then they, uh, started listing off their thoughts about everyone in the Clan, including some really unflattering ones, right there in the middle of camp!",
-            "Everyone was watching us, and I was so embarrassed! I ended up excusing myself and running  to hide in my nest.",
+            "{PRONOUN/neutral_r_w_unabashed/subject/CAP} invited me to eat together, and... I mean, it's not like we're close, but I agreed.",
+            "And it was fine at first, but then {PRONOUN/neutral_r_w_unabashed/subject}, uh, started listing off {PRONOUN/neutral_r_w_unabashed/poss} thoughts about everyone in the Clan, including some really unflattering ones, right there in the middle of camp!",
+            "Everyone was watching us, and I was so embarrassed! I ended up excusing myself and running to hide in my nest.",
             "I think I'm going to just... stay here for a bit. If that's okay."
         ]
     ],
@@ -22034,11 +22034,11 @@
             "they_cool"
         ],
         [
-            "[You notice that t_c is practically doubled over in laughter after a short conversation with r_c_unabashed.]",
-            "Oh my StarClan- *sniff* we need to put r_c_unabashed on lockdown.",
-            "They were telling me that r_c_assertive talks way too much. r_c_assertive was <i>right</i> there!",
-            "And the best part? When, r_c_assertive made themself known, r_c_unabashed didn't even care. Just repeated themself even <i>louder</i> and with a straight face.",
-            "[It seems as though the memory itself sparks another laughing fit in t_c. Only they would find such a thing hilarious.]"
+            "[You notice that t_c is practically doubled over in laughter after a short conversation with r_c1_unabashed.]",
+            "Oh my StarClan- *sniff* we need to put r_c1_unabashed on lockdown.",
+            "{PRONOUN/r_c1_unabashed/subject/CAP} {VERB/r_c1_unabashed/were/was} telling me that r_c2_assertive talks way too much. r_c2_assertive was <i>right</i> there!",
+            "And the best part? When, r_c2_assertive made {PRONOUN/r_c2_assertive/self} known, r_c1_unabashed didn't even care. Just repeated {PRONOUN/r_c1_unabashed/self} even <i>louder</i> and with a straight face.",
+            "[It seems as though the memory itself sparks another laughing fit in t_c. Only {PRONOUN/t_c/self} would find such a thing hilarious.]"
         ]
     ],
     "about_unabashed_V2": {
@@ -22051,7 +22051,7 @@
             "they_emotional"
         ],
         "intro": [
-            "[You notice t_c lingering at the edges of camp. They seem really upset.]"
+            "[You notice t_c lingering at the edges of camp. {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} really upset.]"
         ],
         "intro_choices": {
             "choice1": {
@@ -22066,11 +22066,11 @@
         "ask": [
             "[You approach t_c to ask them what's going on.]",
             "Oh, it's nothing. Really. *Sniff*",
-            "It's just that r_w_unabashed told the whole clan how I scared off a rabbit, and that I was too <i>loud<i> to go on hunting patrols.",
-            "Don't they know how embarrassing that was for me?"
+            "It's just that r_w_unabashed told the whole Clan how I scared off a rabbit, and that I was too <i>loud</i> to go on hunting patrols.",
+            "{VERB/r_w_unabashed/Don't/Doesn't} {PRONOUN/r_w_unabashed/subject} know how embarrassing that was for me?"
         ],
         "leave": [
-            "[You decide that it's probably for the best that you don't get involved and leave t_c to their lonesome.]"
+            "[You decide that it's probably for the best that you don't get involved and leave t_c to {PRONOUN/t_c/subject} lonesome.]"
         ]
     },
     "about_unlawful_SQ1": [
@@ -22085,7 +22085,7 @@
         ],
         [
             "Just so you know, I overheard dislike_r_w_unlawful planning to sneak out of camp tonight.",
-            "I don't know why they're so intent on causing trouble all the time, but if they keep flaunting the rules like this, they deserve to face consequences."
+            "I don't know why {PRONOUN/dislike_r_w_unlawful/subject}{VERB/dislike_r_w_unlawful/'re/'s} so intent on causing trouble all the time, but if {PRONOUN/dislike_r_w_unlawful/subject} {VERB/dislike_r_w_unlawful/keep/keeps} flaunting the rules like this, {PRONOUN/dislike_r_w_unlawful/subject} {VERB/dislike_r_w_unlawful/deserve/deserves} to face consequences."
         ]
     ],
     "about_unlawful_SQ2": [
@@ -22099,8 +22099,8 @@
         ],
         [
             "neutral_r_w_unlawful asked if I wanted to go hunt in o_cClan territory tomorrow...",
-            "I wasn't sure if they were joking, and I was kind of nervous to ask.",
-            "Why do they think I'd want to do that? The... the Clan doesn't think I'm a troublemaker, right?"
+            "I wasn't sure if {PRONOUN/neutral_r_w_unlawful/subject} {VERB/neutral_r_w_unlawful/were/was} joking, and I was kind of nervous to ask.",
+            "Why {VERB/neutral_r_w_unlawful/do/does} {PRONOUN/neutral_r_w_unlawful/subject} think I'd want to do that? The... the Clan doesn't think I'm a troublemaker, right?"
         ]
     ],
     "about_unlawful_SQ3": [
@@ -22110,8 +22110,8 @@
             "they_queen's_apprentice"
         ],
         [
-            "r_k_unlawful is such a troublemaker. I swear to StarClan, I look away for one moment, and they've already shredded my nest or snuck into the medicine den.",
-            "Whoever becomes their mentor will have their paws full!"
+            "r_k_unlawful is such a troublemaker. I swear to StarClan, I look away for one moment, and {PRONOUN/r_k_unlawful/subject}{VERB/r_k_unlawful/'ve/'s} already shredded my nest or snuck into the medicine den.",
+            "Whoever becomes {PRONOUN/r_k_unlawful/poss} mentor will have {PRONOUN/r_k_unlawful/poss} paws full!"
         ]
     ],
     "about_unlawful_SQ4": [
@@ -22123,7 +22123,7 @@
             "they_unabashed"
         ],
         [
-            "Someone's got to say it: everyone was expecting dislike_rsh_c_unlawful to do something like this. They've always enjoyed acting out a little too much.",
+            "Someone's got to say it: everyone was expecting dislike_rsh_c_unlawful to do something like this. {PRONOUN/dislike_rsh_c_unlawful/subject}{VERB/dislike_rsh_c_unlawful/'ve/'s} always enjoyed acting out a little too much.",
             "l_n better go ahead and get them out of c_nClan before they hurt anyone else."
         ]
     ],
@@ -22136,8 +22136,8 @@
         ],
         "intro": [
             "y_c!",
-            "[You jump as t_c marches over, their ears flattened.]",
-            "Have you seen dislike_r_c_unlawful? Someone filled my nest with ants, and they're the only one who would stoop so low."
+            "[You jump as t_c marches over, {PRONOUN/t_c/poss} ears flattened.]",
+            "Have you seen dislike_r_c_unlawful? Someone filled my nest with ants, and {PRONOUN/dislike_r_c_unlawful/subject}{VERB/dislike_r_c_unlawful/'re/'s} the only one who would stoop so low."
         ],
         "intro_choices": {
             "choice1": {
@@ -22151,12 +22151,12 @@
         },
         "cover": [
             "[You tell t_c that dislike_r_c_unlawful has been with you all day, completely ant-less. t_c deflates.]",
-            "Really? They didn't even leave your side for a moment?",
+            "Really? {PRONOUN/dislike_r_c_unlawful/subject/CAP} didn't even leave your side for a moment?",
             "Well... let me know if you have any idea who it could be, then. Ugh, it's going to take <i>ages</i> to clean my nest out..."
         ],
         "point_out": [
-            "[You motion towards dislike_r_c_unlawful, who's lazing by their den looking a bit too pleased with themself. t_c huffs.]",
-            "Thank you, y_c. Let's see what they have to say for themself..."
+            "[You motion towards dislike_r_c_unlawful, who's lazing by {PRONOUN/dislike_r_c_unlawful/poss} den looking a bit too pleased with {PRONOUN/dislike_r_c_unlawful/self}. t_c huffs.]",
+            "Thank you, y_c. Let's see what {PRONOUN/dislike_r_c_unlawful/subject} {VERB/dislike_r_c_unlawful/have/has} to say for {PRONOUN/dislike_r_c_unlawful/self}..."
         ]
     },
     "about_unlawful_SQ8": [
@@ -22181,7 +22181,7 @@
             "neutral"
         ],
         [
-            "[The Clan has settled down to eat an afternoon meal, and as you sit down near t_c, you notice how quick and short {PRONOUN/t_c/poss} bites seem to be. You ask why they're in such a hurry.]",
+            "[The Clan has settled down to eat an afternoon meal, and as you sit down near t_c, you notice how quick and short {PRONOUN/t_c/poss} bites seem to be. You ask why {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} in such a hurry.]",
             "Hm? Oh, I'm not. It's just, my lungs don't work the best, and I can't use my mouth to breathe while I'm chewing, so I have to be fast.",
             "Everycat else can just breathe through their nose, but that doesn't seem to be enough for me today.",
             "[You express your sympathy, but t_c doesn't seem too affected.]",
@@ -22199,7 +22199,7 @@
             "you_blind"
         ],
         [
-            "I don't know about neutral_l_n_unlawful. They're always making comments about how rules are made to be bent and broken... yet we're expected to follow theirs?"
+            "I don't know about neutral_l_n_unlawful. {PRONOUN/neutral_l_n_unlawful/subject}{VERB/neutral_l_n_unlawful/'re/'s} always making comments about how rules are made to be bent and broken... yet we're expected to follow {PRONOUN/neutral_l_n_unlawful/inposs}?"
         ]
     ],
     "about_unlawful_SQ10": [
