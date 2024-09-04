@@ -22,8 +22,23 @@
         "success_outcomes": [
             {
                 "text": "You quickly move the kits to a drier part of the nursery and gather extra moss to insulate them. Thanks to your quick thinking, the kits stay warm and safe.",
-                "exp": 5,
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "You are at a loss on what to do, and coax the kits to a dryer area in the nursery, sacrificing your own nest for the cause. You watch as the water seeps through and gets caught on the nest, taking a breath of relief as it stops the issue for now. A nest can always be remade.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "thoughtful",
+                    "calm",
+                    "flexible",
+                    "wise",
+                    "righteous",
+                    "lonesome",
+                    "gloomy",
+                    "mellow"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -31,6 +46,17 @@
                 "text": "Despite your best efforts, some kits still end up cold and wet.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "Freaking out, you do the first thing that comes to mind-- using your body to block the incoming water. You bark at the kits to stay within one area of the den as your pelt gets soaked, quickly realizing this was the worst idea ever. Despite your efforts, you and the kits end up wet anyway.",
+                "exp": 0,
+                "weight": 5,
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["running nose"]
+                    }
+                ]
             }
         ]
     },

@@ -2786,7 +2786,7 @@
         ],
         [
             "How long have I been here?",
-            "I dont know. Longer than I was alive."
+            "I don't know. Longer than I was alive."
         ]
     ],
     "df_guide_c": [
@@ -2797,7 +2797,7 @@
         ],
         [
             "How long have I been here?",
-            "I dont know. Longer than I was alive."
+            "I don't know. Longer than I was alive."
         ]
     ],
     "df_guide2_c": [
@@ -2809,7 +2809,7 @@
         [
             "[They say that the spirits of this forest will fade away once everyone's forgotten them.]",
             "[Yet it's been many, many moons and t_c is still around.]",
-            "[Perhaps they've done something so horrible that they will be forced to walk these dark grounds forever.]"
+            "[Perhaps {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} done something so horrible that {PRONOUN/t_c/subject} will be forced to walk these dark grounds forever.]"
         ]
     ],
     "youdeaf_R42": [
@@ -3000,7 +3000,6 @@
             "StarClan will do our best to keep you protected."
         ]
     ],
-
     "youdarkstar_R9~2": [
         [
             "kitten",
@@ -3050,6 +3049,137 @@
             "If you really want to prepare, you have to do the same. Use your claws. Go for the throat. Remember, when you're a warrior, it's kill or be killed. You'll be doing your siblings a favor. You can thank me when you're older."
         ]
     ],
+    "BG3_DF_H1": [
+        [
+            "they_df",
+            "you_df",
+            "Any",
+            "they_ancientspirit",
+            "they_dark"
+        ],
+        [
+            "[You catch t_c sitting along the bordering separating the Dark Forest and StarClan, the distant sound of kits laughter on the horizon.]",
+            "They're playing moss ball.",
+            "[t_c's fading tail flickers, a look of defeated worry along {PRONOUN/t_c/poss} face.]",
+            "Did I play games like that in my youth? ... Was I sweet once?"
+        ]
+    ],
+    "BG3_DF_H2": [
+        [
+            "they_df",
+            "Any",
+            "they_ancientspirit",
+            "they_dark"
+        ],
+        [
+            "[You catch t_c sitting along the bordering separating the Dark Forest and StarClan, the distant sound of kits laughter on the horizon.]",
+            "They're playing moss ball.",
+            "[t_c's fading tail flickers, a look of defeated worry along {PRONOUN/t_c/poss} face.]",
+            "Did I play games like that in my youth? ... Was I sweet once?"
+        ]
+    ],
+    "about_brooding_AJ": [
+        [
+            "no_kit",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "min_trust_15"
+        ],
+        [
+            "Oh, StarClan, did r_m_brooding call yet another patient a mousebrain? *Sigh* They sure tend to do that a lot ...",
+            "Try not to take it too personally, y_c. I know their methods may seem ... unorthodox, but r_m_brooding really isn't a bad cat. They just want to keep everyone safe.",
+            "And if scaring cats stiff out of the medicine den is what it takes ... Well, then that's just what they'll do."
+        ]
+    ],
+    "about_brooding_AJ1": [
+        [
+            "no_kit",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "min_trust_15"
+        ],
+        [
+            "Oh, StarClan, did r_d_brooding call yet another Clanmate a mousebrain? *Sigh* They sure tend to do that a lot ...",
+            "Try not to take it too personally, y_c. I know their methods may seem ... unorthodox, but r_d_brooding really isn't a bad cat. They just want to keep everyone safe.",
+            "And if scaring cats stiff into confronting their problems is what it takes ... Well, then that's just what they'll do."
+        ]
+    ],
+    "about_brooding_AJ2": [
+        [
+            "no_kit",
+            "they_queen",
+            "they_queen's_apprentice",
+            "min_trust_15"
+        ],
+        [
+            "Oh, StarClan, did r_q_brooding chase you out of the nursery again? *Sigh* They sure tend to do that a lot ...",
+            "Try not to take it too personally, y_c. I know their methods may seem ... unorthodox, but r_q_brooding really isn't a bad Queen. They just want to keep everyone safe.",
+            "And if scaring cats stiff into leaving the kits alone is what it takes ... Well, then that's just what they'll do."
+        ]
+    ],
+    "about_brooding_SQ1": [
+        [
+            "they_neurotic",
+            "they_app",
+            "you_any",
+            "min_platonic_20",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "It's really hard to tell whether neutral_tm_n_brooding thinks I'm doing a good job or not.",
+            "I think they've complimented me... once? But I asked if I was a bad apprentice, and they said I was fine?",
+            "*sigh* It's so hard to read them. Sometimes I wish they were more like r_c_unabashed. For good or bad, I always know what r_c_unabashed's thinking!"
+        ]
+    ],
+    "about_cool_AJ": [
+        [
+            "no_kit",
+            "assertive",
+            "stable",
+            "unabashed",
+            "silly",
+            "min_trust_15"
+        ],
+        [
+            "Y'know, r_m_cool's a decent healer and all, but if you ask me, their real talent is how they deal with their patients.",
+            "I swear, the cat's got a silver tongue ... They could probably talk a fox into eating deathberries and get it to thank them on the way out!",
+            "I wonder why they didn't choose to become a mediator? They're certainly skilled enough to!"
+        ]
+    ],
+    "about_cool_AJ1": [
+        [
+            "no_kit",
+            "assertive",
+            "stable",
+            "unabashed",
+            "silly",
+            "min_trust_15"
+        ],
+        [
+            "Y'know, r_w_cool's a decent hunter and fighter and all, but if you ask me, their real talent is how they deal with their Clanmates.",
+            "I swear, the cat's got a silver tongue ... They could probably talk a mouse into their claws and get it to thank them on the way out!",
+            "I wonder why they didn't choose to become a mediator? They're certainly skilled enough to!"
+        ]
+    ],
+    "about_cool_SQ1": [
+        [
+            "no_kit",
+            "they_warrior",
+            "they_deputy",
+            "they_leader",
+            "they_upstanding",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "dislike_r_w_cool spontaneously decided to challenge r_a to a tree-climbing contest this morning! As if we weren't in the middle of a border patrol!",
+            "But r_a went along with it, of course, because dislike_r_w_cool is dislike_r_w_cool and <i>everyone</i> listens to them...",
+            "Ugh! It held up the patrol, and we were close enough to the o_cClan border that some o_cClan cat probably saw them messing around.",
+            "dislike_r_w_cool never represents our Clan well."
+        ]
+    ],
     "youdeaf_R97": [
         [
             "only_you_deaf",
@@ -3067,9 +3197,7 @@
         [
             "only_you_deaf",
             "they_adult",
-            "they_deaf",
-            "they_blind",
-            "you_blind"
+            "they_deaf"
         ],
         [
             "[t_c's always seemed to have the heaviest gait. You swear you can feel {PRONOUN/t_c/object} from across the camp!]",
@@ -3084,6 +3212,418 @@
         ],
         [
             "[You watch t_c knead the ground. What's got {PRONOUN/t_c/object} so excited today?]"
+            
+        ]
+    ],
+    "about_cool_SQ2": [
+        [
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_upstanding",
+            "they_stable",
+            "they_unabashed",
+            "they_unlawful",
+            "min_platonic_25"
+        ],
+        [
+            "dislike_rsh_c_cool's finally gotten themself into a situation they can't smooth-talk their way out of.",
+            "Finally. I never thought I'd see the day."
+        ]
+    ],
+    "about_cool_SQ3": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_c sits at the edge of camp, carefully grooming their fur and sneaking glances at r_w_cool.]",
+            "[You understand why: r_w_cool always looks so effortlessly put-together!]"
+        ]
+    ],
+    "about_upstanding_AJ": [
+        [
+            "no_kit",
+            "they_warrior",
+            "they_deputy",
+            "they_apprentice",
+            "assertive",
+            "upstanding",
+            "unabashed",
+            "cool",
+            "min_trust_15"
+        ],
+        [
+            "Grrah! If r_w_upstanding corrects my hunting stance <i>one</i> more time on patrol, I am going to lose it!!!",
+            "Who do they think they are, the deputy or something? When did l_n suddenly declare them StarClan's special chosen warrior, superior to all?",
+            "Next time, I'll tell them directly to their face to shove off. They need to be humbled -- In fact, it's probably long overdue!"
+        ]
+    ],
+    "about_upstanding_AJ1": [
+        [
+            "no_kit",
+            "they_warrior",
+            "they_apprentice",
+            "neurotic",
+            "min_platonic_25"
+        ],
+        [
+            "r_w_upstanding's been helping me with my training these past few days, but I can't tell if they're doing it to be nice, or just to get l_n to notice them.",
+            "I hope I don't sound ungrateful, or anything. They're really skilled, and they've helped me improve a lot, but ...",
+            "I don't necessarily want to just be a stepping stone on their way to leader, either. If that makes any sense."
+        ]
+    ],
+    "about_upstanding_SQ1": [
+        [
+            "they_kitten",
+            "they_assertive",
+            "they_brooding",
+            "they_unlawful",
+            "you_any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "neutral_r_k_upstanding keeps telling on me! I'm not even doing anything wrong, promise!",
+            "y_c... you should help me get them back."
+        ]
+    ],
+    "about_introspective_AJ": [
+        [
+            "no_kit",
+            "they_asseritve",
+            "they_unabashed",
+            "they_silly",
+            "they_neurotic",
+            "min_platonic_25"
+        ],
+        [
+            "You ever notice how plike_r_c_introspective doesn't say much, but when they do it's, like, the smartest thing you've ever heard?",
+            "I swear, they're like a StarClan cat reincarnated, they're so wise. If I had a brain like that, I wouldn't be able to stand living in this Clan, every other cat would seem so mouse-brained!",
+            "Maybe that's why they're by themself so often ... They just can't stand all of the chatter."
+        ]
+    ],
+    "about_introspective_SQ1": [
+        [
+            "they_assertive",
+            "they_cool",
+            "they_unabashed",
+            "no_kit",
+            "min_trust_15"
+        ],
+        [
+            "[t_c looks especially sleepy this morning. They roll their eyes when you ask how they're doing.]",
+            "Real tired, and you know why? I got up in the middle of the night to make dirt, and when I was heading back, neutral_r_w_introspective called me over to look at the stars.",
+            "And then they kept talking about StarClan, and the moon, and comets, and their thoughts about our place in the world...",
+            "Like, I know you have <i>so many</i> deep thoughts, but maybe keep them to yourself?"
+        ]
+    ],
+    "about_introspective_SQ2": [
+        [
+            "no_kit",
+            "they_warrior",
+            "platonic_like"
+        ],
+        [
+            "I love going on patrol with plove_r_w_introspective.",
+            "They notice every little detail! Every flower, every interesting bug, every mushroom...",
+            "They point everything out, and describe things so uniquely, and think so <i>deeply</i>. It makes me see the world in a whole new way!"
+        ]
+    ],
+    "about_introspective_SQ3": [
+        [
+            "no_kit",
+            "they_assertive",
+            "they_cool",
+            "they_upstanding",
+            "they_neurotic",
+            "they_unabashed",
+            "min_platonic_25",
+            "newleaf",
+            "you_blind"
+        ],
+        [
+            "neutral_r_c_introspective was staring at a flower for like, an hour this morning.",
+            "They said something about how it was a reminder of the world's cycles, and how life always returns, and all that...",
+            "I'm not sure, y_c. Sometimes a flower's just a flower, you know?"
+        ]
+    ],
+    "about_introspective_SQ4": [
+        [
+            "they_adult",
+            "you_adult",
+            "they_neurotic",
+            "min_platonic_25",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "neutral_r_c_introspective was talking about the choices we make, and how those can lead to us walking completely different paths...",
+            "They were talking generally, of course, but it made me wonder if they were subtly questioning my life choices.",
+            "...It did make me think about my decisions, though. And I've made mistakes, of course, but I...  I think I've done an okay job. Right?"
+        ]
+    ],
+    "about_neurotic_AJ": [
+        [
+            "no_kit",
+            "they_brooding",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "upstanding",
+            "min_trust_15"
+        ],
+        [
+            "Hmph. neutral_r_m_neurotic is a decent healer, but when it comes to dealing with patients, they're ... soft. Weak.",
+            "They can sing lullabies and spout platitudes, but in the end, they don't have what it takes to stare death straight in the eyes and bare their teeth at it. Whenever we lose a patient, they run away, crying.",
+            "Maybe they would've been better suited for the life of a Queen .... In a place like this, there is absolutely no room for weakness."
+        ]
+    ],
+    "about_neurotic_AJ1": [
+        [
+            "no_kit",
+            "they_warrior",
+            "they_deputy",
+            "brooding",
+            "upstanding",
+            "unabashed",
+            "cool",
+            "assertive",
+            "min_trust_15"
+        ],
+        [
+            "StarClan, neutral_r_w_neurotic messed up my patrol <i>again!</i>",
+            "I don't get it! They were a whisker length away from that bird! Why not just pounce on it?",
+            "The whole 'scaredy nervous' routine might have been cute for a while, but once it starts interfering with Clan business, that's where I draw the line.",
+            "neutral_r_w_neurotic had better toughen up, quick, or else get back to the nursery."
+        ]
+    ],
+    "about_neurotic_SQ1": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "they_warrior",
+            "they_deputy",
+            "no_kit",
+            "platonic_like"
+        ],
+        [
+            "I don't really think plike_r_w1_neurotic and I work well together.",
+            "I like them well enough! It's just... well, yesterday we were on a hunting patrol together, just the two of us. I thought I saw a shadow in a bush, and I pointed it out.",
+            "Someone like r_w2_stable would tell me it's nothing, or go take a look, right? But plike_r_w1_neurotic kind of freaked out, and that made me even <i>more</i> nervous, and that made <i>them</i> more nervous, and...",
+            "[t_c chuckles, then sighs.]",
+            "So of course, we were both super spooked for the rest of the patrol. We came back early because neither of us was catching anything.",
+            "A-anyways. I hope plike_r_w1_neurotic doesn't hold that against me. We haven't had a chance to talk since then."
+        ]
+    ],
+    "about_neurotic_SQ2": [
+        [
+            "no_kit",
+            "trust",
+            "platonic_like"
+        ],
+        [
+            "I refuse to believe that plove_rsh_c_neurotic would murder someone.",
+            "They've always been so concerned about what the Clan thinks... so worried about doing something wrong...",
+            "It <i>had</i> to have been an accident."
+        ]
+    ],
+    "about_neurotic_SQ3~1": [
+        [
+            "they_apprentice",
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_upstanding",
+            "they_stable",
+            "they_unabashed",
+            "they_unlawful",
+            "min_platonic_25",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "dislike_r_a_neurotic is so... jumpy. We're not kits anymore, for StarClan's sake!",
+            "The next time they wake me up by squeaking at some odd-shaped shadow, I'm going to <i>snap.</i>"
+        ]
+    ],
+    "about_neurotic_SQ3~2": [
+        [
+            "they_apprentice",
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_upstanding",
+            "they_stable",
+            "they_unabashed",
+            "they_unlawful",
+            "min_platonic_25",
+            "they_blind",
+            "you_blind",
+            "connected"
+        ],
+        [
+            "Just as expected, dislike_r_a_neurotic woke me up last night. Something about a shadow looking like a snake?",
+            "I told them they had to stop yelping at every little thing, and they started crying. And it was impossible to not feel a little bad at that, but also they wake me up almost every other night?",
+            "I can't believe I have to share a den with them."
+        ]
+    ],
+    "about_neurotic_SQ4": [
+        [
+            "they_apprentice",
+            "they_warrior",
+            "they_deputy",
+            "they_leader",
+            "no_kit",
+            "min_platonic_25",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "StarClan, dislike_r_w_neurotic spent a full half-hour this morning reminding me to be careful. Stay away from the Thunderpath, don't investigate strange scents alone...'",
+            "I know what I'm doing, thank you very much! <i>I'm</i> not the one who got spooked last week and jumped straight into a thorn bush!"
+        ]
+    ],
+    "about_neurotic_SQ5": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_25",
+            "you_blind"
+        ],
+        [
+            "I'm worried about how nervous t_kk_neurotic is. It's important to be careful, of course, but I don't like seeing them so  <i>scared</i> all the time...",
+            "...Hm. They probably got that from me, huh?"
+        ]
+    ],
+    "about_neurotic_SQ6": [
+        [
+            "no_kit",
+            "they_assertive",
+            "they_cool",
+            "they_stable",
+            "they_unabashed",
+            "they_unlawful",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "dislike_l_n_neurotic is a little too... sensitive, don't you think?",
+            "Leaders should be strong! Unyielding! dislike_l_n_neurotic would lie down and let the other leaders walk all over them if they just asked.",
+            "They make c_nClan seem weak."
+        ]
+    ],
+    "about_neurotic_SQ7": [
+        [
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_cool",
+            "they_unabashed",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Sure, dislike_l_n_neurotic is doing a passable job right now, but don't tell me you think they wouldn't fall to pieces in an emergency.",
+            "They jump at their own shadow, like, daily! There's no way they could hold themselves together if something really bad happened.",
+            "I guess that's why plike_d_n is here."
+        ]
+    ],
+    "about_neurotic_SQ8": [
+        [
+            "no_kit",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I like having a leader who's a bit more cautious.",
+            "Leaders who jump into every decision paws-first are all well and good, but they leave more room for mistakes.",
+            "At least with trust_l_n_neurotic, I trust they've fully thought through whether a choice is best for c_nClan."
+        ]
+    ],
+    "about_neurotic_SQ9": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "no_kit",
+            "min_platonic_25",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "r_k_neurotic reminds me of myself when I was a kit.",
+            "Quiet, a little too nervous for their own good...",
+            "I hope they grow out of it. I never really did."
+        ]
+    ],
+    "livingkit_dfqueen_sing_Guy~1": [
+        [
+            "you_kitten",
+            "they_queen",
+            "they_df",
+            "they_song"
+        ],
+        [
+            "[t_c's eyes widen with fear.]",
+            "I know what they do to little ones. You must run, and never come back. I- I cannot bear to lose another."
+        ]
+    ],
+    "livingkit_dfqueen_sing_Guy~2": [
+        [
+            "you_kitten",
+            "they_queen",
+            "they_df",
+            "they_song",
+            "connected"
+        ],
+        [
+            "[You frolic around camp with glee, but halt when you see a shadow near the nursery.]",
+            "[t_c again? They seemed nice enough before... but they still seem sad now. You decide to listen to their ballad.]",
+            "I loved you, I loved you, my kittens long gone. I loved you, I loved you, even when wrong.",
+            "So I joined that guild of shadow, the forest dark, not shallow",
+            "For I knew our clan could not win, I could not see you taken.",
+            "But in the end that darkness had come, and my the cost a greater one.",
+            "I loved you, I loved you, my kittens long gone. I loved you, I loved you, even when wrong."
+        ]
+    ],
+    "kit_df_Guy~1": [
+        [
+            "you_kitten",
+            "they_df"
+        ],
+        [
+            "[t_c doesn't look up at you, but unlike your clanmates it does not appear like they are intentionally ignoring you...]",
+            "[You squeak in an attempt to be heard, and their head snaps up. Success!]",
+            "Oh... y_c. I was just wondering about your clan... is- is t_kk okay? I try to stay away in case they're like you, and I can't ask rdf_c.",
+            "[Seems like an adventure! You scamper off and keep their request in your mind.]"
+        ]
+    ],
+    "kit_df_Guy~2": [
+        [
+            "you_kitten",
+            "they_df",
+            "connected"
+        ],
+        [
+            "[You spend the entire day playing with t_kk, taking extra care to ensure they are included in everything.]"
+        ]
+    ],
+    "kit_df_Guy~3": [
+        [
+            "you_dead",
+            "they_df",
+            "connected"
+        ],
+        [
+            "... I never thanked you for that day, y_c.",
+            "Thank you. I only ever wanted what was best for my kits not... I saw...",
+            "[t_c looks away.]",
+            "I should've been there."
         ]
     ]
 }

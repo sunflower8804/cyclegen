@@ -3,12 +3,12 @@ import pygame_gui.elements
 from random import choice, randint
 import ujson
 import math
-
+import re
 from scripts.cat.history import History
 from scripts.event_class import Single_Event
 
 from .Screens import Screens
-from scripts.utility import get_text_box_theme, scale, process_text
+from scripts.utility import get_text_box_theme, scale, process_text, pronoun_repl
 from scripts.cat.cats import Cat, INJURIES
 from scripts.game_structure import image_cache
 from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
@@ -80,7 +80,6 @@ class MurderScreen(Screens):
         self.willingnesstext = None
 
     def handle_event(self, event):
-       
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.confirm_mentor and self.selected_cat and self.stage == 'choose murder cat':
                 if not self.selected_cat.dead:
@@ -1772,26 +1771,38 @@ class MurderScreen(Screens):
             # exiled = [f"The Clan decides that they no longer feel safe with {a_n} as a Clanmate. They will be exiled from the Clan."]
 
             if accomplice.status == 'kitten' or accomplice.status == 'newborn':
-                game.cur_events_list.insert(3, Single_Event(choice(kit_punishment)))
+                game.cur_events_list.insert(3, Single_Event(self.adjust_txt(choice(kit_punishment), accomplice, cat_to_murder)))
             elif accomplice.status == 'leader':
                 lead_choice = randint(1,3)
                 if lead_choice == 1:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
+                    game.cur_events_list.insert(3, Single_Event(self.adjust_txt(choice(gen_punishment), accomplice, cat_to_murder)))
                 
             elif accomplice.status == 'deputy':
                 lead_choice = randint(1,3)
                 if lead_choice == 1:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
+                    game.cur_events_list.insert(3, Single_Event(self.adjust_txt(choice(gen_punishment), accomplice, cat_to_murder)))
                
             elif accomplice.status == 'medicine cat':
                 lead_choice = randint(1,3)
                 if lead_choice == 1:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
+                    game.cur_events_list.insert(3, Single_Event(self.adjust_txt(choice(gen_punishment), accomplice, cat_to_murder)))
                 
             else:
                 lead_choice = randint(1,5)
                 if lead_choice in [1, 2, 3, 4]:
-                    game.cur_events_list.insert(3, Single_Event(choice(gen_punishment)))
+                    game.cur_events_list.insert(3, Single_Event(self.adjust_txt(choice(gen_punishment), accomplice, cat_to_murder)))
+
+    def adjust_txt(self, text, accomplice, victim):
+        process_text_dict = {}
+        process_text_dict["a_n"] = accomplice
+        process_text_dict["v_c"] = victim
+        for abbrev in process_text_dict.keys():
+            abbrev_cat = process_text_dict[abbrev]
+            process_text_dict[abbrev] = (abbrev_cat, choice(abbrev_cat.pronouns))
+        text = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), text)
+        text = text.replace("a_n", str(accomplice.name))
+        text = text.replace("v_c", str(victim.name))
+        return text
 
     def leader_death_chance(self, cat_to_murder, accomplice, accompliced):
         """calculates chance for leader to lose all of their lives if the murder succeeds. out of 100"""

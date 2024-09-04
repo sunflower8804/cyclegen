@@ -6609,6 +6609,64 @@
             "[A queen shoos {PRONOUN/t_c/object} away after you start wailing.]"
         ]
     ],
+    "Introspective_kitten_choice_H1~1": {
+        "tags": [
+            "they_introspective",
+            "they_kitten",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "neutral"
+        ],
+        "intro": [
+            "[While organizing the herb pile, you feel a presence at your side. There sits t_c, watching you work with curious eyes.]",
+            "Can I help? Please? It looks fun."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Sure",
+                "next_scene": "sure"
+            },
+            "choice2": {
+                "text": "You're too young.",
+                "next_scene": "tooyoung"
+            },
+            "choice3": {
+                "text": "[Push a few herbs their way.]",
+                "next_scene": "pushherb"
+            }
+        },
+        "sure": [
+            "Yay!",
+            "[t_c scoots closer and starts going through the pile with you, observing how you sort the herbs carefully.]",
+            "What are all their names? I know <i>that</i> one is cobweb. Ewww.",
+            "[t_c flashes wide, pleading eyes your way and you find yourself explaining all the herbs and what they're used for. t_c listens with an intense interest.]"
+        ],
+        "tooyoung": [
+            "Too young to do this, too young to do that. But no one tells me why I can't.",
+            "[t_c pouts and sulks to the side as you continue organizing.]",
+            "[Soon enough, t_c gets distracted by something else and wanders off.]"
+        ],
+        "pushherb": [
+            "[You watch in the corner of your eye as t_c paws at the herbs, sorting through them with a careful touch. {PRONOUN/t_c/subject/CAP} seem to know what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing.]",
+            "[Have {PRONOUN/t_c/subject} been watching you for a while? Or is t_c just this observant?]",
+            "y_c, can I have more?"
+        ]
+    },
+    "about_assertive_SQ2": [
+        [
+            "they_kitten",
+            "you_any",
+            "they_assertive",
+            "they_unabashed",
+            "they_unlawful",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Why does dislike_r_w_assertive always say they're gonna protect us?",
+            "I don't need protecting! I'm gonna protect myself from everything bad! I don't need them!"
+        ]
+    ],
     "neurotic_kitten_SQ11": [
         [
             "they_kitten",
@@ -6617,9 +6675,7 @@
             "you_assertive",
             "you_silly",
             "you_unabashed",
-            "dislike",
-            "they_blind",
-            "you_blind"
+            "dislike"
         ],
         [
             "[t_c's voice is the tiniest of whispers.]",
@@ -6808,6 +6864,46 @@
             "[t_c's hiding under a pile of moss in the back of the nursery. You try to coax {PRONOUN/t_c/object} out with a feather and the best piece of prey.]",
             "*sniffle* I don't wanna come out. If d_c's not there, then I don't ever wanna come out.",
             "If... if {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} not here, who's gonna protect me from the rogues, and the Dark Forest, and the monsters, and..."
+            
+        ]
+    ],
+    "about_unlawful_SQ5": [
+        [
+            "they_kitten",
+            "you_adult",
+            "platonic_like",
+            "comfort"
+        ],
+        [
+            "[As soon as you enter the nursery, t_c scampers up to you, wailing.]",
+            "y_c! y_c!! r_k_unlawful keeps pulling my ear and it really, really, <i>really</i> hurts!!"
+        ]
+    ],
+    "about_unlawful_SQ6": [
+        [
+            "they_kitten",
+            "you_kitten",
+            "platonic_like",
+            "they_assertive",
+            "they_brooding",
+            "they_cool",
+            "they_unlawful"
+        ],
+        [
+            "Psst, y_c! Let's go ask if we can listen to one of r_e_unlawful's stories.",
+            "They always tell the good ones, the ones r_q says we're not allowed to hear!"
+        ]
+    ],
+    "about_neurotic_SQ10": [
+        [
+            "they_kitten",
+            "you_any",
+            "min_trust_15",
+            "you_blind"
+        ],
+        [
+            "y_c? Is neutral_r_w_neurotic scared of me?",
+            "Whenever I get close to them, they get really big eyes and back away!"
         ]
     ]
 }
