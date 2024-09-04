@@ -788,14 +788,15 @@ class PatrolScreen(Screens):
             game.switches['patrolled'] = []
         if game.switches["patrol_category"] == "clangen":
             for the_cat in Cat.all_cats_list:
-                if not the_cat.dead and the_cat.in_camp and the_cat.ID not in game.patrolled and the_cat.status not in [
+                if the_cat.ID == game.clan.your_cat.ID:
+                    if "1" not in game.switches['patrolled'] and not the_cat.dead and the_cat.in_camp and the_cat.status not in [
+                    'elder', 'kitten', 'mediator', 'mediator apprentice', 'queen', "queen's apprentice", "newborn"
+                        ] and not the_cat.outside and the_cat not in self.current_patrol and not the_cat.not_working():
+                        self.able_cats.append(the_cat)
+                elif not the_cat.dead and the_cat.in_camp and the_cat.ID not in game.patrolled and the_cat.status not in [
                     'elder', 'kitten', 'mediator', 'mediator apprentice', 'queen', "queen's apprentice", "newborn"
                 ] and not the_cat.outside and the_cat not in self.current_patrol and not the_cat.not_working():
-                    if the_cat.ID == game.clan.your_cat.ID:
-                        if "1" not in game.switches['patrolled']:
-                            self.able_cats.append(the_cat)
-                    else:
-                        self.able_cats.append(the_cat)
+                    self.able_cats.append(the_cat)
 
         elif game.switches["patrol_category"] == "lifegen":
             the_cat = game.clan.your_cat
