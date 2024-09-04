@@ -4615,7 +4615,6 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         # Dialogue focus cat
         if game.clan.focus_cat is not None:
             if "fc_c" in text:
-                print("FOCUS CAT:", game.clan.focus_cat.name)
                 cluster = False
                 rel = False
                 match = re.search(r'fc_c(\w+)', text)

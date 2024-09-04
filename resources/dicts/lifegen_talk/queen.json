@@ -1788,5 +1788,70 @@
             "[t_c appears less than impressed with you.]",
             "[You give your loudest mewl in defiance, and seemingly amuse {PRONOUN/t_c/object} with your audacity.]"
         ]
+    ],
+    "neurotic_queen_SQ4": [
+        [
+            "they_neurotic",
+            "they_queen",
+            "you_warrior",
+            "you_apprentice",
+            "min_platonic_30",
+            "clan_has_kits",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I don't know if I should be asking this, but do you think you could teach the kits some basic fighting skills?",
+            "In case, you know, another Clan attacks, or something breaks into the nursery? They're so helpless...",
+            "But I don't want them to be overconfident... and I don't want them to hurt each other...",
+            "Never mind. I didn't think that through. Pretend I didn't say anything."
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ16": [
+        [
+            "they_neurotic",
+            "they_queen",
+            "they_queen's_apprentice",
+            "no_kit",
+            "they_sc",
+            "you_sc",
+            "you_blind"
+        ],
+        [
+            "One of the kits is starting to fade. It's just their paws for now... they seemed surprised, but not scared, when they first noticed.",
+            "Should I tell them what that means? Should I tell the other kits?",
+            "Maybe it's better that they don't know, but isn't it bad to hide things from them?"
+        ]
+    ],
+    "neurotic_youpregnant_SQ2": [
+        [
+            "they_neurotic",
+            "they_queen",
+            "they_queen's_apprentice",
+            "no_kit",
+            "you_adult",
+            "you_pregnant",
+            "min_platonic_20"
+        ],
+        [
+            "I'm really excited for the kits to come! You're going to be a great {PRONOUN/y_c/parent}.",
+            "And I promise I won't get between you and them, but I'm excited to help take care of them, too. Just let me know if I ever overstep."
+        ]
+    ],
+    "neurotic_youforgiven_SQ4": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "they_queen",
+            "they_queen's_apprentice",
+            "you_forgiven",
+            "neutral",
+            "they_blind"
+        ],
+        [
+            "[t_c blocks your way as you duck into the nursery.]",
+            "You're... here to see r_k? I don't know...",
+            "Wait here, all right? Or actually, wait by your den. I have to check that l_n says it's okay for you to visit."
+        ]
     ]
 }

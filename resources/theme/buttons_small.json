@@ -3534,6 +3534,23 @@
             }
         }
     },
+    "#date_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/date.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/date_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/date_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/date_unavailable.png"
+            }
+        }
+    },
     "#insult_button": {
         "prototype": "#image_button",
         "images": {

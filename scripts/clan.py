@@ -304,6 +304,7 @@ class Clan:
         # this has to be done after saving the first time
         # doing this without any previous clans will cause a crash otherwise
         if self.clan_age == "established":
+            self.generate_families()
             self.populate_sc()
             self.populate_ur()
             self.populate_df()

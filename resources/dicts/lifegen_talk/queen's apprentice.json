@@ -1108,5 +1108,38 @@
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses} and {VERB/t_c/duck/ducks} {PRONOUN/t_c/poss} head, suddenly mumbling.]",
             "...you know. Not like me."
         ]
+    ],
+    "neurotic_queenapp_SQ3": [
+        [
+            "they_neurotic",
+            "they_queen's_apprentice",
+            "you_adult",
+            "you_app",
+            "min_platonic_30",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "It feels really weird to become an apprentice, but still spend all my time in the same places I did when I was a kit.",
+            "Like, the warrior apprentices go explore the territory, and the medicine cat apprentices move to the medicine den and visit the herb patches... but I'm still in the nursery.",
+            "Sometimes, I'm scared I just decided to be a queen's apprentice 'cause I'm scared of things changing.",
+            "I... I don't think that's true, but maybe it is and I just don't realize it?"
+        ]
+    ],
+    "neurotic_queenapp_SQ4": [
+        [
+            "they_neurotic",
+            "they_queen's_apprentice",
+            "you_adult",
+            "you_app",
+            "min_platonic_30",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "r_k_unlawful said {PRONOUN/r_k_unlawful/subject} didn't have to listen to me, because I'm basically still a kit too...",
+            "I didn't know what to say. {PRONOUN/r_k_unlawful/subject}{VERB/r_k_unlawful/'re/'s} kind of right. I'm not that much older than {PRONOUN/r_k_unlawful/object}, and I have no idea what I'm doing.",
+            "I guess I just... hoped {PRONOUN/r_k_unlawful/subject}'d still respect me? That sounds stupid when I say it out loud."
+        ]
     ]
 }

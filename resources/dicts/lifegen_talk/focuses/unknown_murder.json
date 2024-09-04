@@ -1029,7 +1029,6 @@
             "focus",
             "brooding",
             "assertive",
-            "stable",
             "no_kit"
         ],
         "intro": [
@@ -1475,7 +1474,7 @@
     "strange_unkmur_H1": [
         [
             "focus",
-            "they_strange",
+            "strange",
             "no_kit",
             "any",
             "they_blind",
@@ -1491,17 +1490,17 @@
     "strange_unkmur_H2": {
         "tags": [
             "focus",
-            "they_strange",
+            "strange",
             "no_kit"
         ],
         "intro": [
             "Ohh, y_c~! I noticed every cat was playing a guessing game involving fc_c!",
-            "So, y_c, do <i>you</i> think I murdered fc_c??",
+            "So, y_c, do YOU think I murdered fc_c??",
             "Come on, come on, I wanna know!"
         ],
         "intro_choices": {
             "choice1": {
-                "text": "[Stare at t_c incredulously.]",
+                "text": "[Stare incredulously.]",
                 "next_scene": "incredulously"
             },
             "choice2": {

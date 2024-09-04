@@ -3264,7 +3264,6 @@
     ],
     "flirt_success_H9": [
         [
-            "flirt",
             "they_forgiven",
             "any",
             "they_blind",
@@ -3280,7 +3279,6 @@
             "reject",
             "any",
             "non-mates",
-            "flirt",
             "they_shunned",
             "they_blind",
             "you_blind"
@@ -3294,7 +3292,6 @@
             "reject",
             "any",
             "non-mates",
-            "flirt",
             "they_shunned",
             "they_blind"
         ],
@@ -3308,7 +3305,6 @@
             "reject",
             "any",
             "from_mate",
-            "flirt",
             "they_shunned",
             "they_blind",
             "you_blind"
@@ -3321,7 +3317,6 @@
         [
             "reject",
             "any",
-            "flirt",
             "they_shunned",
             "they_blind",
             "you_blind"
@@ -3334,7 +3329,6 @@
     ],
     "flirt_reject_H15": [
         [
-            "flirt",
             "reject",
             "they_shunned",
             "any",
@@ -3348,7 +3342,6 @@
     ],
     "flirt_success_H6": [
         [
-            "flirt",
             "they_shunned",
             "any",
             "they_blind",
@@ -3360,7 +3353,6 @@
     ],
     "flirt_success_H7": [
         [
-            "flirt",
             "they_shunned",
             "any",
             "they_blind",
@@ -3373,7 +3365,6 @@
     ],
     "flirt_success_H8": [
         [
-            "flirt",
             "they_shunned",
             "any",
             "they_deaf",
@@ -3386,7 +3377,6 @@
     ],
     "flirt_reject_H16": [
         [
-            "flirt",
             "they_shunned",
             "heartbroken",
             "any",
@@ -3415,7 +3405,6 @@
     ],
     "flirt_reject_H17": [
         [
-            "flirt",
             "reject",
             "you_shunned",
             "any",
@@ -3429,7 +3418,6 @@
     ],
     "flirt_reject_H18": [
         [
-            "flirt",
             "reject",
             "you_shunned",
             "any",
@@ -3444,7 +3432,6 @@
         [
             "reject",
             "any",
-            "flirt",
             "dead_close",
             "they_grieving",
             "they_blind",
@@ -3459,7 +3446,6 @@
         [
             "reject",
             "any",
-            "flirt",
             "they_grieving",
             "they_blind",
             "you_deaf",
@@ -3506,7 +3492,6 @@
     ],
     "flirt_success_H1": [
         [
-            "flirt",
             "they_app",
             "you_app",
             "they_blind",
@@ -3519,7 +3504,6 @@
     ],
     "flirt_success_H2": [
         [
-            "flirt",
             "they_app",
             "you_app",
             "they_deaf",
@@ -3532,7 +3516,6 @@
     ],
     "flirt_success_H3": [
         [
-            "flirt",
             "they_app",
             "you_app",
             "platonic_love",
@@ -3546,7 +3529,6 @@
     ],
     "flirt_success_H4": [
         [
-            "flirt",
             "they_app",
             "you_app",
             "platonic_love",
@@ -3564,7 +3546,6 @@
             "reject",
             "any",
             "non-mates",
-            "flirt",
             "they_blind",
             "you_blind"
         ],
@@ -3577,7 +3558,6 @@
             "reject",
             "any",
             "non-mates",
-            "flirt",
             "dislike",
             "they_blind",
             "you_blind"
@@ -3591,7 +3571,6 @@
             "reject",
             "any",
             "non-mates",
-            "flirt",
             "they_blind",
             "you_blind"
         ],
@@ -3604,7 +3583,6 @@
             "reject",
             "any",
             "non-mates",
-            "flirt",
             "they_blind",
             "you_blind"
         ],
@@ -3618,7 +3596,6 @@
             "reject",
             "any",
             "non-mates",
-            "flirt",
             "they_leader",
             "they_deputy",
             "they_hearing",
@@ -3635,7 +3612,6 @@
         [
             "reject",
             "any",
-            "flirt",
             "they_blind",
             "you_blind",
             "they_hearing"
@@ -3649,7 +3625,6 @@
         [
             "reject",
             "any",
-            "flirt",
             "platonic_love",
             "leafbare",
             "they_blind",
@@ -3665,7 +3640,6 @@
         [
             "reject",
             "any",
-            "flirt",
             "heartbroken"
         ],
         [
@@ -3675,7 +3649,6 @@
     ],
     "flirt_reject_H19": [
         [
-            "flirt",
             "reject",
             "any",
             "has_mate",
@@ -3715,7 +3688,6 @@
     ],
     "hasmate_success_H1": [
         [
-            "flirt",
             "has_mate",
             "Any",
             "romantic_like",
@@ -3728,7 +3700,6 @@
     ],
     "hasmate_success_H2": [
         [
-            "flirt",
             "dislike",
             "romantic_like",
             "has_mate",
@@ -3742,7 +3713,6 @@
     ],
     "hasmate_success_H3": [
         [
-            "flirt",
             "has_mate",
             "romantic_like",
             "Any",
@@ -3757,7 +3727,6 @@
     ],
     "hasmate_success_H4": [
         [
-            "flirt",
             "has_mate",
             "romantic_like",
             "Any",
@@ -3771,7 +3740,6 @@
     ],
     "hasmate_success_H5": [
         [
-            "flirt",
             "has_mate",
             "romantic_like",
             "Any",
@@ -3784,7 +3752,6 @@
     ],
     "hasmate_success_H6": [
         [
-            "flirt",
             "has_mate",
             "from_mate",
             "romantic_like",
@@ -3798,7 +3765,6 @@
     ],
     "flirt_reject_H20": [
         [
-            "flirt",
             "reject",
             "any"
         ],
@@ -3810,7 +3776,6 @@
     ],
     "flirt_reject_H21": [
         [
-            "flirt",
             "reject",
             "any",
             "you_blind",
@@ -3822,7 +3787,6 @@
     ],
     "flirt_reject_H22": [
         [
-            "flirt",
             "reject",
             "any",
             "you_blind",
@@ -3835,7 +3799,6 @@
     ],
     "flirt_reject_H23": [
         [
-            "flirt",
             "reject",
             "any",
             "you_blind"
@@ -3846,7 +3809,6 @@
     ],
     "flirt_reject_H24": [
         [
-            "flirt",
             "reject",
             "they_medicine_cat",
             "dislike",
@@ -3859,7 +3821,6 @@
     ],
     "flirt_reject_H25": [
         [
-            "flirt",
             "reject",
             "they_queen",
             "clan_has_kits",
@@ -3873,7 +3834,6 @@
     ],
     "flirt_reject_H26": [
         [
-            "flirt",
             "reject",
             "they_mediator",
             "you_blind",
@@ -3885,7 +3845,6 @@
     ],
     "flirt_reject_H27": [
         [
-            "flirt",
             "reject",
             "they_warrior",
             "dislike",
@@ -3898,7 +3857,6 @@
     ],
     "hasmate_reject_H1": [
         [
-            "flirt",
             "has_mate",
             "non-mates",
             "Any",
@@ -3912,7 +3870,6 @@
     ],
     "hasmate_reject_H2": [
         [
-            "flirt",
             "has_mate",
             "non-mates",
             "Any",
@@ -3928,7 +3885,6 @@
     ],
     "hasmate_reject_H3": [
         [
-            "flirt",
             "has_mate",
             "non-mates",
             "Any",
@@ -3943,7 +3899,6 @@
     ],
     "hasmate_reject_H4": [
         [
-            "flirt",
             "has_mate",
             "non-mates",
             "Any",
@@ -3958,7 +3913,6 @@
     ],
     "hasmate_reject_H5": [
         [
-            "flirt",
             "has_mate",
             "non-mates",
             "Any",
@@ -3974,7 +3928,6 @@
     ],
     "hasmate_reject_H6": [
         [
-            "flirt",
             "has_mate",
             "non-mates",
             "Any",
@@ -3988,7 +3941,6 @@
     ],
     "hasmate_reject_H7": [
         [
-            "flirt",
             "has_mate",
             "non-mates",
             "reject",
@@ -4004,7 +3956,6 @@
     ],
     "hasmate_reject_H8": [
         [
-            "flirt",
             "Any",
             "has_mate",
             "non-mates",
@@ -4017,7 +3968,6 @@
     ],
     "hasmate_reject_H9": [
         [
-            "flirt",
             "Any",
             "has_mate",
             "non-mates",
@@ -4033,7 +3983,6 @@
     ],
     "hasmate_reject_H10": [
         [
-            "flirt",
             "Any",
             "has_mate",
             "non-mates",
@@ -4048,7 +3997,6 @@
     ],
     "frommate_reject_H1": [
         [
-            "flirt",
             "reject",
             "from_mate",
             "dislike",
@@ -4062,7 +4010,6 @@
     ],
     "frommate_reject_H2": [
         [
-            "flirt",
             "reject",
             "from_mate",
             "Any",
@@ -4076,7 +4023,6 @@
     ],
     "frommate_reject_H3": [
         [
-            "flirt",
             "reject",
             "from_mate",
             "Any",
@@ -4090,7 +4036,6 @@
     ],
     "frommate_reject_H4": [
         [
-            "flirt",
             "reject",
             "from_mate",
             "Any",
@@ -4105,7 +4050,6 @@
     ],
     "frommate_reject_H5": [
         [
-            "flirt",
             "reject",
             "from_mate",
             "Any",
@@ -4115,6 +4059,245 @@
         [
             "I'm going to be honest.",
             "That was the worst, y_c."
+        ]
+    ],
+    "youdeaf_R81": [
+        [
+            "only_you_deaf",
+            "no_kit",
+            "min_romantic_10"
+        ],
+        [
+            "[t_c sees the flower you have and {PRONOUN/t_c/poss} eyes light up. {PRONOUN/t_c/subject/CAP} {VERB/t_c/motion/motions} the sign for 'thank you' with {PRONOUN/t_c/poss} head high, ears fluttering, and {PRONOUN/t_c/poss} whiskers twitching.]"
+        ]
+    ],
+    "youdeaf_R82": [
+        [
+            "only_you_deaf",
+            "they_deaf",
+            "they_blind",
+            "any"
+        ],
+        [
+            "[Flirting might be harder without words, but it's worth it.]",
+            "[At least, t_c seems to appreciate your efforts as you can feel the purr rumbling {PRONOUN/t_c/poss} chest!]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/walk/walks} away with {PRONOUN/t_c/poss} head held high after.]"
+        ]
+    ],
+    "youdeaf_R83": [
+        [
+            "only_you_deaf",
+            "they_deaf",
+            "any",
+            "neurotic",
+            "stable",
+            "silly"
+        ],
+        [
+            "[{PRONOUN/t_c/subject} {VERB/t_c/duck/ducks} {PRONOUN/t_c/poss} head shyly in response.]"
+        ]
+    ],
+    "youdeaf_R84": [
+        [
+            "only_you_deaf",
+            "reject",
+            "they_deaf"
+        ],
+        [
+            "[t_c frowns a little at your flirting attempt. {PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} away without a response.]"
+        ]
+    ],
+    "youdeaf_R85": [
+        [
+            "only_you_deaf",
+            "reject",
+            "any",
+            "they_deaf"
+        ],
+        [
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} seem to know how to respond.]"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_01": [
+        [
+            "stable",
+            "non-mates",
+            "they_app",
+            "you_app"  ,
+            "they_blind"
+        ],
+        [
+            "Oh... really? Huh, no one has ever said that to me before... Thank you- I'm sorry I don't really know what to say.",
+	        "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/let/lets} out a chuckle, {PRONOUN/t_c/poss} whiskers twitching slightly as {PRONOUN/t_c/subject} {VERB/t_c/try/tries} to hide {PRONOUN/t_c/poss} growing smile.]"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_02": [
+        [
+            "stable",
+            "non-mates",
+            "they_app",
+            "you_app",
+            "they_hearing",
+            "they_blind"
+        ],
+        [
+            "!!!",
+            "I think I hear my training calling me- foxdung! I meant my mentor! Because training is a task and you can't hear a task- that's so stupid! Hahaha! Yeah I hear my train- I mean my...",
+            "SEE YOU LATER!",
+            "[t_c darts away, {PRONOUN/t_c/poss} fur on end- you swear you can see the tips of {PRONOUN/t_c/poss} ears turn red.]"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_03": [
+        [
+            "stable",
+            "non-mates",
+            "they_app",
+            "you_app",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Did your mentor teach you to flirt like that? Maybe I should ask tm_n if {PRONOUN/tm_n/poss} {VERB/tm_n/have/has} any tips...Because that right there, that is a life skill."
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_04": [
+        [
+            "stable",
+            "non-mates",
+            "they_app",
+            "you_app",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Woah, is this how adults feel? When they have mates... I suddenly feel all light and hot all the sudden...",
+	        "Quickly! Say something else! I need to know if this is normal!"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_05": [
+        [
+            "stable",
+            "non-mates",
+            "they_app",
+            "platonic_like",
+            "you_app",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Maybe being friends can go somewhere else... that doesn't sound too bad... What do you think?"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_06": [
+        [
+            "stable",
+            "non-mates",
+            "they_app",
+            "min_platonic_50",
+            "you_app",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Since when did you get so smooth? I thought we were friends, you keeping these super cool and overpowered flirting skills a secret from me?"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_07": [
+        [
+            "they_stable",
+            "they_cool",
+            "they_upstanding",
+            "you_neurotic",
+            "you_introspective",
+            "non-mates",
+            "they_app",
+            "min_romantic_10",
+            "min_platonic_50",
+            "you_app"
+        ],
+        [
+            "If you think I'm pretty, take a look at yourself.",
+            "GAH!",
+            "I mean that as a friend in a platonic way because if that was meant to be romantic then... You know what? Forget it, you y_c, are beautiful like a ray of sunshine and it bothers me that you don't see it.",
+            "...",
+            "You're very pretty."
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_08": [
+        [
+            "stable",
+            "non-mates",
+            "they_app",
+            "min_platonic_30",
+            "you_app",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You're too kind, y_c... I'm so happy to be your friend and maybe... maybe one day, something... more..."
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_09": [
+        [
+            "stable",
+            "non-mates",
+            "they_app",
+            "min_platonic_40",
+            "you_app"
+        ],
+        [
+            "HA! Good one!",
+            "Wait- are you serious? You are?",
+            "[t_c's ears raise up higher, a grin on {PRONOUN/tm_n/poss} face as {PRONOUN/tm_n/poss} eyes light up.]",
+            "Thank you, y_c!"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_10": [
+        [
+            "stable",
+            "non-mates",
+            "they_app",
+            "min_platonic_20",
+            "you_app",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "If you distract my training with your sweet words then I'm going to steal your share of the freshkill later. I hate the fact that I love you.",
+            "...",
+            "AS A FRIEND!"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_11": [
+        [
+            "stable",
+            "cool",
+            "brooding",
+            "non-mates",
+            "they_app",
+            "min_platonic_30",
+            "you_app",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Please don't ever change, y_c."
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_GenApp_TheyNotMate_12": [
+        [
+            "stable",
+            "unabashed",
+            "non-mates",
+            "they_app",
+            "min_platonic_50",
+            "min_romantic_20",
+            "you_app",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Is this the origins of our love story? Please say yes!"
         ]
     ]
 }

@@ -509,7 +509,7 @@ class MakeClanScreen(Screens):
             if self.biome_selected == 'Forest':
                 self.selected_camp_tab = randrange(1, 7)
             elif self.biome_selected == "Mountainous":
-                self.selected_camp_tab = randrange(1, 6)
+                self.selected_camp_tab = randrange(1, 7)
             elif self.biome_selected == "Plains":
                 self.selected_camp_tab = randrange(1, 6)
             else:
@@ -858,6 +858,12 @@ class MakeClanScreen(Screens):
                                               , manager=MANAGER)
             self.tabs["tab5"] = UIImageButton(scale(pygame.Rect((85, 640), (308, 60))), "", object_id="#quarry_tab"
                                               , manager=MANAGER)
+            self.tabs["tab6"] = UIImageButton(
+                scale(pygame.Rect((215, 710), (308, 60))),
+                "",
+                object_id="#ruins_tab",
+                manager=MANAGER,
+            )
         elif self.biome_selected == 'Plains':
             self.tabs["tab1"] = UIImageButton(scale(pygame.Rect((128, 360), (308, 60))), "", object_id="#grasslands_tab"
                                               , manager=MANAGER, )
