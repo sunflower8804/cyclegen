@@ -2051,6 +2051,7 @@
     "deadmed_connected_J1~1": [
         [
             "they_brooding",
+            "they_cool",
             "they_medicine_cat",
             "any",
             "connected",
@@ -2072,6 +2073,7 @@
     "deadmed_connected_J1~2": [
         [
             "they_brooding",
+            "they_cool",
             "they_medicine_cat",
             "any",
             "connected",
@@ -2086,6 +2088,242 @@
             "[You remember when you told r_m that you were feeling some pain left over from your death.]",
             "[But now, you've been here long enough for it to go away.]",
             "Gone? Good. That's good to hear."
+        ]
+    ],
+    "neurotic_medcat_SQ4": [
+        [
+            "they_neurotic",
+            "they_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "min_platonic_20"
+        ],
+        [
+            "[t_c is going through the herb supplies, meticulously slicing off discolored or mold-speckled sections of leaves.]",
+            "It's important to sort through our supply regularly, y_c. Even the correct herb can make a cat feel much worse, if there's something wrong with it.",
+            "I'd hate to hurt someone because I wasn't careful enough."
+        ]
+    ],
+    "neurotic_medcat_SQ5": [
+        [
+            "they_neurotic",
+            "they_medicine_cat",
+            "you_medicine_cat_apprentice"
+        ],
+        [
+            "[t_c shows you how to remove a splinter from a paw pad, using an unfortunate r_c as a demonstration subject.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/apologize/apologizes} over and over to r_c for taking so long, but somehow {VERB/t_c/manage/manages} to meticulously extract the tiny needle of wood.]"
+        ]
+    ],
+    "neurotic_medcat_SQ6": [
+        [
+            "they_neurotic",
+            "they_medicine_cat",
+            "you_medicine_cat",
+            "they_younger",
+            "min_platonic_10",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I made some dividers out of sticks and rocks to keep the herbs separated! Oh, but if they're a problem, I can take them back out.",
+            "It's just that some of the herb piles kept mixing into each other, and I was worried that could be bad. I'd hate to accidentally grab the wrong leaf."
+        ]
+    ],
+    "neurotic_medcat_SQ7": [
+        [
+            "they_neurotic",
+            "they_medicine_cat",
+            "you_medicine_cat",
+            "min_trust_15",
+            "you_blind"
+        ],
+        [
+            "r_w_upstanding says {PRONOUN/r_w_upstanding/subject} collected some juniper berries while {PRONOUN/r_w_upstanding/subject} {VERB/r_w_upstanding/was/were} on patrol today. Could you check the berries before I add them to the herb stores?",
+            "Without seeing the bush they're from, I'm a lot less confident that I can confirm they're actually juniper."
+        ]
+    ],
+    "neurotic_medcat_SQ8": [
+        [
+            "they_neurotic",
+            "they_medicine_cat",
+            "you_adult",
+            "min_platonic_20",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "neutral_r_w_sweet offered to help me sort the medicine stores earlier today. I appreciated it, but I wasn't sure I trusted {PRONOUN/neutral_r_w_sweet/object} to help since {PRONOUN/neutral_r_w_sweet/subject}{VERB/neutral_r_w_sweet/'re/'s} not exactly familiar with herbs, so I said I was okay.",
+            "Let me know if I hurt {PRONOUN/neutral_r_w_sweet/poss} feelings, please? {PRONOUN/neutral_r_w_sweet/subject/CAP}{VERB/neutral_r_w_sweet/'re/'s} too nice to tell me directly."
+        ]
+    ],
+    "neurotic_medcat_SQ9": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_medicine_cat",
+            "they_formerlyaloner",
+            "min_platonic_30",
+            "min_trust_15"
+        ],
+        [
+            "[t_c gazes around the medicine den, admiring the stockpiled herbs. When {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, {PRONOUN/t_c/subject} {VERB/t_c/smile/smiles} self-consciously.]",
+            "When I was a loner, I collected some herbs, but never this many. I never stayed in one place for long, you know? And the one time I started a big collection, a gang of rogues took over my spot and stole them...",
+            "c_nClan just feels so much safer than being on my own. I love it a lot."
+        ]
+    ],
+    "neurotic_medcat_SQ10": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_medicine_cat",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I was helping r_m treat r_i's injury, but I think I might've overstepped. r_m was leading, you know?",
+            "But r_i asked for advice on a few things, and I answered, and r_m gave a <i>different</i> answer, and I felt bad.",
+            "I didn't mean to undermine {PRONOUN/r_m/poss} authority, or anything like that! I just wanted to be helpful.",
+            "*Sigh* Anyways, I'm going to wait outside the den for a bit, and then I guess I'll... go and talk to {PRONOUN/r_m/object} and clear things up."
+        ]
+    ],
+    "neurotic_medcat_SQ11": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_medicine_cat",
+            "min_platonic_20",
+            "leafbare",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "There's a cold draft blowing into the medicine den. Could you help me move some of the nests out of the way?",
+            "I usually wouldn't bother you, but I was having trouble doing it myself. And when cats are already sick or injured, it's especially important they aren't too cold!",
+            "It would be terrible if moving into the medicine den made them get worse."
+        ]
+    ],
+    "neurotic_medcat_SQ12": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_medicine_cat",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "min_platonic_30",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Whenever I gather herbs, I want to collect more than I think we'll need, in case there's an outbreak or an attack or anything else unexpected.",
+            "But then I'm worried I'll overharvest, and accidentally destroy our herb patches.",
+            "...That's why I'm glad you're here. I like having a second opinion when we go collecting."
+        ]
+    ],
+    "neurotic_about_r_s_SQ1": [
+        [
+            "they_neurotic",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "you_medicine_cat",
+            "leafbare",
+            "min_platonic_20",
+            "min_trust_15"
+        ],
+        [
+            "It's so cold today. I'm really worried it's going to make r_s's condition a lot worse.",
+            "I'm going to stay awake tonight and keep an eye on {PRONOUN/r_s/object}, okay? And I don't want to interrupt your sleep, but could I wake you up if I need help?"
+        ]
+    ],
+    "neurotic_about_r_s_SQ2": [
+        [
+            "they_neurotic",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "you_medicine_cat",
+            "min_platonic_20",
+            "min_trust_15"
+        ],
+        [
+            "Have you checked on r_s recently? I think {PRONOUN/r_s/subject}{VERB/r_s/'re/'s} looking all right, but I'd like your opinion.",
+            "I'd hate to miss any sign that {PRONOUN/r_s/subject}{VERB/r_s/'re/'s} getting worse!"
+        ]
+    ],
+    "neurotic_about_r_s_SQ3": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "they_ill",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat"
+        ],
+        [
+            "[When you bring some herbs over to t_c, {PRONOUN/t_c/subject} {VERB/t_c/lift/lifts} {PRONOUN/t_c/poss} head and {VERB/t_c/blink/blinks} blearily. {PRONOUN/t_c/subject/CAP} {VERB/t_c/lean/leans} away when {PRONOUN/t_c/subject} {VERB/t_c/realize/realizes} what you're carrying.]",
+            "Wait, y_c, don't waste those on me. Give them to plove_r_s first, <i>please</i>. I don't want to be the reason {PRONOUN/plove_r_s/subject} {VERB/plove_r_s/don't/doesn't} get better.",
+            "[You assure t_c that you have enough herbs for both {PRONOUN/t_c/object} and plove_r_s, and that {PRONOUN/t_c/subject} {VERB/t_c/deserve/deserves} treatment as much as any cat.]",
+            "[t_c relents, but keeps {PRONOUN/t_c/poss} eyes on plove_r_s's sleeping form.]"
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ1": [
+        [
+            "they_neurotic",
+            "they_sc",
+            "you_sc",
+            "no_kit",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "you_blind"
+        ],
+        [
+            "It makes me nervous to watch r_m sometimes. {PRONOUN/r_m/subject/CAP}{VERB/r_m/'re/'s} capable, but I'm still worried {PRONOUN/r_m/subject}{VERB/r_m/'re/'s} going to make a mistake while treating someone, and I'll be powerless to stop {PRONOUN/r_m/object}...",
+            "But... but somehow, I can't stop watching! When I'm not keeping an eye on {PRONOUN/r_m/object}, I'm even more stressed."
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ2": [
+        [
+            "they_neurotic",
+            "they_sc",
+            "you_sc",
+            "no_kit",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice"
+        ],
+        [
+            "[t_c is perched on a starry cliffside, gazing down at the medicine den. {PRONOUN/t_c/subject/CAP} {VERB/t_c/shift/shifts} back and forth worriedly.]",
+            "r_s seems to be getting worse, and I don't know if r_m has noticed. If I were closer, I'd be able to do something... I wish I could do something."
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ3": [
+        [
+            "they_neurotic",
+            "they_sc",
+            "you_sc",
+            "no_kit",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice"
+        ],
+        [
+            "[t_c paces as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} the medicine den.]",
+            "There's some more of the herbs r_m is using for r_s at the far back of the shelf.",
+            "I hope {PRONOUN/r_m/subject} {VERB/r_m/notice/notices}... I hope {PRONOUN/r_m/subject} {VERB/r_m/don't/doesn't} think {PRONOUN/r_m/subject}{VERB/r_m/'ve/'s} run out."
+        ]
+    ],
+    "neurotic_youforgiven_SQ2": [
+        [
+            "they_neurotic",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "no_kit",
+            "you_forgiven",
+            "neutral"
+        ],
+        [
+            "[You have a minor cut, so you find t_c to get it treated. As soon as {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, t_c runs over, blocking you from going any deeper into the medicine den.]",
+            "Hi, y_c! What can I help with? A cut? Okay, wait right there...",
+            "[t_c begins sorting through {PRONOUN/t_c/poss} supplies, but keeps looking back to make sure you haven't moved from the entrance.]",
+            "[It seems {PRONOUN/t_c/subject} still {VERB/t_c/don't/doesn't} trust you anywhere near {PRONOUN/t_c/poss} herb stores...]"
         ]
     ]
 }

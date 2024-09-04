@@ -2050,5 +2050,179 @@
                 }
             }
         ]
+    },
+    {
+        "patrol_id": "life_df_ant1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "df"
+        ],
+        "patrol_art": "life_df_og11",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You walk through the inky expanses of the Dark Forest, following the well-worn paths created by the residents here. Ahead of you, a sprawling mess of trails taper off in what seems like a thousand different directions, and you're not sure which one goes to the training grounds.",
+        "decline_text": "Honestly, it's too much of a hassle to bother trying to find your way there. The forest is an expansive place, with so much to discover. You spring into the bushes, knowing you can always come back and train another time--now is time to explore!",
+        "chance_of_success": 45,
+        "success_outcomes": [
+            {
+                "text": "Navigating through the Dark Forest is no easy feat--and you're sure your Clanmates would be completely lost if they found themselves in the misty stretches. You, however, know this place better than any other cat in c_nClan. Effortlessly making your way to the training grounds, you emerge from the shrubbery with your head held high.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You march down one of the paths, knowing surefire where you're going. The tug of thorns against your pelt a few minutes later makes you realize your mistake all too late--you chose the wrong path. After a couple moments of thrashing, thorns digging into your pelt, you finally free yourself and stumble away. Maybe it's best to hold off on training until you're more confident about your abilities...",
+                "exp": 0,
+                "weight": 20,
+                "injury": [ 
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["torn_pelt"],
+                        "scars": ["SNAKETWO"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was scarred after getting caught in thorns in the Dark Forest."
+                }
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_df_ant2", 
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "df"
+        ],
+        "patrol_art": "df_mentor",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You creep through the Dark Forest, your paws crunching on the dead leaves that litter the floor. After meandering for a bit, you come to a stop near a stream and bend down for a drink. As you glance up, you freeze as you see a shadowy figure watching you from the other side of the river.",
+        "decline_text": "The menacing glint you can see in the silhouette's eye tells a story of its own. You leap to your paws and rush away from the river as fast as you can. Not all dark spirits like to be messed with.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You flick your tail politely to the figure. They step out of the foliage and into your view, inclining their head to you in return. Before they turn and leap back into the bushes-- presumably to go find someone else to observe -- you even catch a small smile on their face. As it turns out, Dark Forest cats appreciate niceties too!",
+                "exp": 15,
+                "weight": 20,
+	            "new_cat": [
+                    ["newdfcat", "status:warrior"]
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You flick your tail politely to the figure. They snarl in response and leap out of the bushes, scowling as they beeline towards you. Once they get close enough for you to see their unsheathed claws, you scramble away from the river and back into the forest. You peek back at them from around a tree, but they stop at the water's edge before slinking away. Lucky you escaped that one!",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "antag_fail_outcomes": [
+            {
+                "text": "You feel a rush of annoyance. Who do they think they are, watching you from the forest like that? You leap into the river and wade across, your ears slanted back as you prowl towards them. Just before you get within range, they leap towards you with otherworldly speed, claws hitting you before you can react. You stumble back, shocked, and find that before you can return the gesture, the mysterious figure already left.",
+                "exp": 0,
+                "weight": 20,
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["battle_injury"],
+                        "scars": ["BELLY"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was scarred by a Dark Forest warrior."
+                }
+            }
+        ],
+        "antag_success_outcomes": [
+            {
+                "text": "You wait until the figure looks away before silently wading into the water and crossing the river. By keeping your belly low to the ground, you're able to creep up behind them. You yowl a battle cry before flinging yourself onto their back and clawing their pelt. They hiss in response and throw you off, glaring at you as they scurry off into the underbrush. That'll teach them to mind their own business!",
+                "exp": 45,
+                "weight": 15
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_df_ant3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "df"
+        ],
+        "patrol_art": "life_df_og11",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You race through the Dark Forest, leaping over twisted vines and roots as you zip towards the training grounds. You're late for training, and you know that df_m_n won't be happy about it...",
+        "decline_text": "Breathing heavily, you slow to a stop. You're already late, so what's the point of even going? You're probably just going to get yelled at by df_m_n anyway. Besides, you've wanted to explore this place for a while, and now's the perfect chance!",
+        "chance_of_success": 45,
+        "success_outcomes": [
+            {
+                "text": "You have to backtrack a couple times, but you make it there eventually. You casually walk over and join one of the training groups, hoping that no one noticed your absence. When df_m_n finally spots you, {PRONOUN/df_m_n/subject} {VERB/df_m_n/nod/nods} {PRONOUN/df_m_n/poss} head. Phew, {PRONOUN/df_m_n/subject} must not have seen you slink in halfway through the session!",
+                "exp": 15,
+                "weight": 20
+            },
+           {
+                "text": "You ignore the brambles that catch at your fur as you push your way into the clearing. Everyone else seems too focused to have noticed you, so you take a moment to rid your pelt of thorns. Once you've finished that, you pad over to the nearest pair of cats sparring and ask for a turn after them.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Your paws are barely touching the floor as you fly through the forest. You know you can make it on time if you're fast enough. Maybe you're going a little <i>too<i/> fast, because a few seconds later your paws catch on a particularly long root and you tumble to the ground. You hiss and recoil as you try to set your paw down, wondering how you'll explain this to r_m when you wake up.",
+                "exp": 0,
+                "weight": 20,
+                "injury": [ 
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["sprain"]
+                    }
+                ]
+             },
+             {
+                "text": "You're going as quickly as you can, but it's no use. You didn't look at where you were running and tumbled down a small slope, landing in a patch of brambles. Thorns clutch you in a vice-like grip as you wriggle to free yourself. By the time you emerge, you're in no mood for training.",
+                "exp": 0,
+                "weight": 20,
+                "injury": [ 
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["torn_pelt"],
+                        "scars": ["NECKBITE"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was scarred after getting caught in thorns in the Dark Forest."
+                }
+            }
+        ]
     }
-]
+] 

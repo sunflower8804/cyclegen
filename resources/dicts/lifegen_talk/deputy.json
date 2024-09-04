@@ -2622,5 +2622,82 @@
             "[t_c crouches and smacks one of {PRONOUN/t_c/poss} paws overtop of the other.]",
             "[The sign for hunting! You give {PRONOUN/t_c/object} a nod and quickly stand up to join.]"
         ]
+    ],
+    "neurotic_deputy_SQ9": [
+        [
+            "they_neurotic",
+            "they_grieving",
+            "you_leader",
+            "they_deputy",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "When I... <i>if</i> I become leader, do you think d_c will come to my leadership ceremony?",
+            "[t_c winces as soon as the words leave {PRONOUN/t_c/poss} mouth.]",
+            "I mean... I'm sorry, I know that's not what I should focus on, and I know there are many more important things to think about if I'm becoming leader, but...",
+            "I know you're not allowed to talk about your ceremony, y_c. And I promise I'm not asking for details.",
+            "It just... seems nice, I guess? To know for sure that cats you used to know are still watching. Still caring.",
+            "And... I'd really like a second chance to say goodbye to d_c."
+        ]
+    ],
+    "neurotic_deputy_SQ10": [
+        [
+            "they_neurotic",
+            "you_adult",
+            "they_deputy",
+            "min_platonic_30",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I wonder if the cats who gave l_n {PRONOUN/l_n/poss} nine lives made requests.",
+            "All of your Clanmates having such high expectations of you already sounds hard enough... I can't imagine knowing the stars themselves are watching with expectations, too.",
+            "I hope l_n stays around for a really long time. I'm not ready for that pressure yet."
+        ]
+    ],
+    "neurotic_sc_to_sc_SQ6": [
+        [
+            "they_neurotic",
+            "they_sc",
+            "you_sc",
+            "they_deputy",
+            "no_kit",
+            "max_they_deadfor_30",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "It's probably good that I didn't become leader. I mean, it was stressful enough being the deputy!",
+            "d_n is doing a much better job than I ever did."
+        ]
+    ],
+    "raspylungs_J2": [
+        [
+            "you_raspylungs",
+            "any",
+            "they_leader",
+            "they_deputy",
+            "warrior",
+            "mediator",
+            "medicine cat",
+            "queen",
+            "elder",
+            "they_blind",
+            "you_blind",
+            "silly",
+            "stable"
+        ],
+        [
+            "... and o_cClan hasn't been easy to deal with, lately, don't even get me started.",
+            "Did you-- I mean, you weren't there, but did r_w tell you about our run-in on the dusk patrol last night? StarClan, it--",
+            "[As t_c is speaking, you take a deep, dramatic-sounding breath in an attempt to satisfy your weakened lungs.]",
+            "What? Are you sighing at me? Am I boring you?",
+            "[Panicked, you ensure {PRONOUN/t_c/object} that, no, you're just trying to breathe, and you're very invested in what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} talking about.]",
+            "Oh, haha, sorry. Let me know if I do start boring you, okay?",
+            "Anyway, uh, yeah, their patrol leader was just beyond rude..."
+        ]
     ]
 }

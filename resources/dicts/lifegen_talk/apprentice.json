@@ -3279,5 +3279,182 @@
             "[With a smile you tell {PRONOUN/t_c/object} to ask r_w to take whichever patrol {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} want to do.]",
             "[t_c beams at you and nods before walking off with {PRONOUN/t_c/poss} head held high. Problem solved!]"
         ]
+    ],
+    "neurotic_warriorapprentice_SQ5": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_apprentice",
+            "neutral"
+        ],
+        [
+            "Do I smell like mouse bile? m_n had me on tick duty all morning, and I swear I washed my paws off, but I can still smell it...",
+            "Let me know if it's bothering you! I can leave!"
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ6~1": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "no_kit",
+            "min_trust_15",
+            "min_platonic_20"
+        ],
+        [
+            "I had a hunting assessment today. It... really didn't go well.",
+            "I get super nervous whenever someone watches me hunt! And worse, tm_n was supposed to be observing me from a hiding spot, so I was more focused on wondering where {PRONOUN/tm_n/subject} might be, instead of actually catching prey.",
+            "tm_n says that we'll try again another time, but it's not like I can erase the fact that I failed once... and now I'll be even more nervous next time...",
+            "[You ask t_c if you could do anything to help. {PRONOUN/t_c/subject/CAP} {VERB/t_c/tilt/tilts} {PRONOUN/t_c/poss} head.]",
+            "I... don't know, y_c. But thanks. I'll think about it."
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ6~2": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "no_kit",
+            "min_trust_15",
+            "min_platonic_20",
+            "connected"
+        ],
+        [
+            "[t_c follows you one morning as you retrieve a shrew from the fresh-kill pile and find a place to eat. You wait for {PRONOUN/t_c/object} to muster the courage to speak up.]",
+            "...y_c? Do you remember how I failed my hunting assessment? And you asked if you could do anything to help?",
+            "This is kind of a silly request, and I understand if you're busy, but...",
+            "Could you hide and follow me as I practice hunting, just like tm_n does during assessments? I think it would help me get used to someone watching.",
+            "Really? It doesn't have to be for long, but thank you! Thank you so much!"
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ6~3": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "no_kit",
+            "min_trust_15",
+            "min_platonic_20",
+            "connected"
+        ],
+        [
+            "[You've been helping t_c prepare for {PRONOUN/t_c/poss} hunting assessment, mostly by helping {PRONOUN/t_c/object} get used to the idea of someone observing {PRONOUN/t_c/object}. Today is the assessment day.]",
+            "[t_c and tm_n left early in the morning, and it's almost sunhigh. You're waiting at camp for them to return, unsure of what to expect. t_c's improved a lot, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} still so easily shaken...]",
+            "y_c! y_c!!",
+            "[t_c sprints into camp with tm_n following at a more leisurely pace. You barely have time to react before t_c runs into you and buries {PRONOUN/t_c/poss} face in your side, purring loudly.]",
+            "I... I did it! I passed! tm_n said I seemed a lot more confident...  and that I did a good job...",
+            "[t_c realizes how loud {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} being and shrinks self-consciously. {PRONOUN/t_c/subject/CAP} {VERB/t_c/lean/leans} close to whisper in your ear.]",
+            "It's... it's because of you, you know? Thank you so much, y_c."
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ7": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "you_adult",
+            "you_app",
+            "min_platonic_50",
+            "mountainous",
+            "they_blind"
+        ],
+        [
+            "[t_c slinks into your den with {PRONOUN/t_c/poss} tail between {PRONOUN/t_c/poss} legs. {PRONOUN/t_c/subject/CAP} {VERB/t_c/flop/flops} down beside you with a groan.]",
+            "[You ask if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} all right.]",
+            "Ugh... I'm fine.",
+            "[t_c pauses for so long that you assume {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} planning to share more. Then, {PRONOUN/t_c/subject} {VERB/t_c/sigh/sighs}.]",
+            "tm_n took me to that place on the mountainside with a lot of loose stones, to practice hunting? {PRONOUN/tm_n/subject/CAP} said prey likes to live in the spaces between the rocks.",
+            "It went okay at first, but then a bird of some kind gave an alarm call, and I got startled.",
+            "I slipped on some of the loose rock and slid a bit, and that scared me too, and I yowled kind of loud, and I think I scared all the prey away since we couldn't catch anything afterwards...",
+            "I just... don't know why I'm so easily spooked. I want to be useful, not a problem! Just like everyone else."
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ8": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "no_kit",
+            "min_platonic_20",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "m_n's sending me on a solo hunt tomorrow. I was relieved at first... it'll be nice to hunt without feeling like {PRONOUN/m_n/subject}{VERB/m_n/'re/'s} watching me.",
+            "But what if I get in trouble? I really, really don't think I could fight off a rogue or something on my own...",
+            "If I'm not back by sundown, please come look for me, okay?"
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ9": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "you_apprentice",
+            "min_platonic_20",
+            "min_comfort_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I asked tm_n if you and I could train together again today. Is that okay? I know maybe I should've asked you first.",
+            "I don't want to be clingy! I just... I feel a lot more confident when you're around."
+        ]
+    ],
+    "neurotic_warriorapprentice_S10": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "you_apprentice",
+            "min_platonic_10",
+            "mountainous"
+        ],
+        [
+            "[Today, m_n's showing you and t_c around the territory! You leap between boulders and skirt steep drops, always careful where to place your paws.]",
+            "[t_c always squeezes {PRONOUN/t_c/poss} eyes shut when you're right next to an edge. You and m_n repeatedly remind {PRONOUN/t_c/object} that closing their eyes in those situations is dangerous, but {PRONOUN/t_c/object} {VERB/t_c/keep/keeps} doing it.]",
+            "I know I'm not supposed to, but if I don't, then I freeze up when I see how far down it is...",
+            "I'm sorry. I'll work on it, I promise."
+        ]
+    ],
+    "neurotic_warriorapprentice_SQ11": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "from_your_apprentice",
+            "you_warrior",
+            "you_deputy",
+            "you_leader",
+            "min_platonic_20",
+            "they_blind"
+        ],
+        [
+            "y_c? I heard dislike_r_a saying that you go easy on me...",
+            "That's not true, right? I might not be as good as {PRONOUN/dislike_r_a/object}, but I really want to feel like I deserve to pass my assessments... and eventually get my warrior name...",
+            "[You assure t_c that dislike_r_a doesn't know what {PRONOUN/dislike_r_a/subject}{VERB/dislike_r_a/'re/'s} talking about, and that you treat {PRONOUN/t_c/object} like you'd treat any other apprentice. t_c looks relieved.]"
+        ]
+    ],
+    "neurotic_yougrieving_SQ2": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "you_grieving",
+            "from_your_apprentice",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Um, y_c... I promise I'm not trying to get out of training, or anything like that, but please rest until you feel ready.",
+            "I'll go join... uh... plike_r_w for the day, I guess?"
+        ]
+    ],
+    "raspylungs_J3": [
+        [
+            "they_raspylungs",
+            "from_your_apprentice",
+            "you_warrior",
+	        "they_blind"
+        ],
+        [
+            "[During some battle training, you knock an unfocussed t_c off {PRONOUN/t_c/poss} paws. {PRONOUN/t_c/subject/CAP} quickly {VERB/t_c/lift/lifts} {PRONOUN/t_c/self} back up, gasping for air. You didn't figure {PRONOUN/t_c/subject}'d fallen far enough to get so badly winded.]",
+            "Can we please stop, y_c? Breathing is kind of hard today...",
+            "[You briefly consider that {PRONOUN/t_c/subject} could be making up some excuse, but then recall what r_m has told you about t_c's health. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} standing still, gulping for air-- {PRONOUN/t_c/subject} should take it easy. You agree, and apologise for the hit.]",
+            "No problem, y_c, and thank you. I'll be better tomorrow, I promise.",
+            "[You tell {PRONOUN/t_c/object} it's fine if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not, and as {PRONOUN/t_c/subject} slowly {VERB/t_c/walk/walks} back to camp to avoid further strain, you walk with {PRONOUN/t_c/object} and discuss some battle techniques.]"
+        ]
     ]
 }

@@ -234,7 +234,7 @@ class PatrolOutcome:
         lifegen_abbrev_text = adjust_txt(Cat, self.text, patrol.patrol_leader, patrol.patrol_cat_dict, r_c_allowed=False, o_c_allowed=False)
 
         text = lifegen_abbrev_text
-        if lifegen_abbrev_text in [None, ""]:
+        if lifegen_abbrev_text == "":
             print("No text!")
             text = self.text
 

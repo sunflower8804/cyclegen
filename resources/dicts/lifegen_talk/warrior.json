@@ -3408,5 +3408,243 @@
             "[t_c crouches and smacks one of {PRONOUN/t_c/poss} paws overtop of the other.]",
             "[The sign for hunting! You give {PRONOUN/t_c/object} a nod and quickly stand up to join.]"
         ]
+    ],
+    "neurotic_warrior_SQ2": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_apprentice",
+            "from_mentor",
+            "forest",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Did you hear that windstorm last night? I think I heard a few trees fall, too.",
+            "Let's train close to camp today. I don't want to go too far, in case any more trees out there are unsteady."
+        ]
+    ],
+    "neurotic_warrior_SQ3": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_apprentice",
+            "you_assertive",
+            "you_silly",
+            "you_unabashed",
+            "from_mentor",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You've been pushing m_n to teach you something new! It feels like you've been practicing the same fighting moves for <i>ages.</i>]",
+            "I... I don't know. It's great you're excited to learn more, but, um, it's really important that you master the basics first.",
+            "If we move on too quickly, you might not have a solid base to build on, and you might learn later things wrong...",
+            "[At your obvious disappointment, t_c relents.]",
+            "H-how about this. Let's review for a bit longer, and then I'll teach you something new."
+        ]
+    ],
+    "neurotic_warrior_SQ4": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_adult",
+            "min_trust_15",
+            "min_platonic_20",
+            "you_blind",
+            "they_blind",
+            "you_warrior"
+        ],
+        [
+            "d_n assigned me to the dawn patrol tomorrow. Last time {PRONOUN/d_n/subject} did that, I was so worried about missing it that I stayed up all night.",
+            "I'm going to try to sleep this time, but if you're awake early tomorrow morning, could you make sure I'm up?",
+            "It's not your responsibility, of course! I'm just... taking precautions."
+        ]
+    ],
+    "neurotic_warrior_SQ5": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_deputy",
+            "min_platonic_20",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh! Hi, y_c. I'm so, so sorry for missing the patrol this morning. I had a stomachache, so r_m said I should stay in camp and rest.",
+            "I'm feeling much better now, though, so please put me on an extra patrol to make up for it! I didn't mean to cause trouble, and I promise I wasn't trying to get out of working!"
+        ]
+    ],
+    "neurotic_warrior_SQ6": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "min_platonic_10"
+        ],
+        [
+            "y_c, I need to tell you something. I'm really, really sorry!",
+            "When I was hunting today, I tripped and I think I fell into one of your herb patches. I didn't mean to, I swear, but I broke some of the stems. It looked like I might have killed them...",
+            "Where was this? Um, kind of near the big tree on the far side of the territory? You can see the o_cClan border from there.",
+            "Wait, that wasn't an herb patch? Oh... oh wow, okay! Thank you! I'm so, so sorry for bothering you!",
+            "[t_c scurries out of the medicine den, practically sagging with relief.]"
+        ]
+    ],
+    "neurotic_warrior_SQ7": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "you_adult",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "t_a's having trouble getting the hunting crouch down. It's such an important skill, and {PRONOUN/t_a/subject} can't be a warrior if {PRONOUN/t_a/subject} {VERB/t_a/don't/doesn't} master it.",
+            "I'm not sure what I'm doing wrong. Am I demonstrating it incorrectly? Maybe <i>I</i> don't know it as well as I should!"
+        ]
+    ],
+    "youdeaf_R88": [
+        [
+            "only_you_deaf",
+            "you_medicine_cat",
+            "they_warrior",
+            "they_deaf",
+            "max_dislike_10"
+        ],
+        [
+            "[t_c stops in the entryway of the medicine cat den, stomping twice to get your attention. In {PRONOUN/t_c/poss} mouth is a bundle of moss.]",
+            "[You can feel a thankful trill bubble up in your throat before you carefully take the offering.]",
+            "[Your confusion must have been on your face, since {PRONOUN/t_c/subject} {VERB/t_c/motion/motions} with a tap to {PRONOUN/t_c/poss} chest once, then once to {PRONOUN/t_c/poss} shoulder. Then, {PRONOUN/t_c/subject} {VERB/t_c/move/moves} the forepaw up to flex {PRONOUN/t_c/poss} claws.]",
+            "[It was training for the warrior apprentices it seems!]",
+            "[Thanking t_c by raising your head, wiggling your ears, and twitching your whiskers. {PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} and {VERB/t_c/dip/dips} {PRONOUN/t_c/poss} head to you before heading out.]"
+        ]
+    ],
+    "youdeaf_R90": [
+        [
+            "only_you_deaf",
+            "you_medicine_cat",
+            "they_warrior",
+            "they_deaf",
+            "min_platonic_20"
+        ],
+        [
+            "[You approach t_c to ask a favor, but {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} acknowledge you right away.]",
+            "[Finally {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to you with a wave of a paw before tilting {PRONOUN/t_c/poss} head to the right to ask what you need.]",
+            "[You put your left paw atop your right before bringing it up a bit. You need to go herb hunting! Pointing to t_c then yourself gets the point across that you need an escort before tilting your head right to see if {PRONOUN/t_c/subject} will come with you.]",
+            "[t_c smiles and dips {PRONOUN/t_c/poss} head in an affirmative, standing to follow you out for the task.]"
+        ]
+    ],
+    "youdeaf_R93~1": [
+        [
+            "only_you_deaf",
+            "you_apprentice",
+            "they_warrior",
+            "they_deaf"
+        ],
+        [
+            "[You're running through a few battle moves when t_c approaches and stomps for your attention. The vibration under your paws stops you to look at {PRONOUN/t_c/object}.]",
+            "[{PRONOUN/t_c/subject} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head before showing you a slightly different version. You note how {PRONOUN/t_c/subject} {VERB/t_c/stay/stays} light on {PRONOUN/t_c/poss} paws in the example.]",
+            "[Trying again, t_c once again shakes {PRONOUN/t_c/poss} head before guiding you through motion by motion.]",
+            "[Again and again the two of you work through the move until your muscles burn. You finally stop and shake your head before moving your paw to rest under your chin.]",
+            "[Seeing that you need to rest, t_c nods and gives your forehead a lick before heading off to other tasks.]"
+        ]
+    ],
+    "youdeaf_R93~2": [
+        [
+            "only_you_deaf",
+            "you_apprentice",
+            "they_warrior",
+            "connected",
+            "they_deaf"
+        ],
+        [
+            "[You spot t_c speaking with m_n. Worriedly, you try to read their mouths.]",
+            "[Your hard staring catches t_c's attention, though, and {PRONOUN/t_c/subject} {VERB/t_c/leave/leaves} m_n to come over to you. With a waving tail, {PRONOUN/t_c/subject} {VERB/t_c/greet/greets} you.]",
+            "[The right tilt of your head doesn't need clarification. t_c licks your forehead affectionately before sitting down to explain.]",
+            "[The sign for pride takes you off guard when {PRONOUN/t_c/subject} {VERB/t_c/point/points} to you after. t_c is proud of you?]",
+            "[Your whiskers pick up a purr from {PRONOUN/t_c/object} at your surprise. You receive a nod to confirm before {PRONOUN/t_c/subject} {VERB/t_c/point/points} away, signaling {PRONOUN/t_c/subject} {VERB/t_c/need/needs} to go.]",
+            "[t_c walks off, leaving you to consider what just happened.]",
+            "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} proud of you!]"
+        ]
+    ],
+    "neurotic_youforgiven_SQ5": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "they_apprentice",
+            "you_warrior",
+            "you_apprentice",
+            "you_deputy",
+            "you_leader",
+            "you_forgiven",
+            "platonic_like",
+            "max_trust_10",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You want to go on a hunting patrol together? Okay! Who else is going?",
+            "Oh... just us? Um... would it be okay if I asked trust_r_w to come with, too?"
+        ]
+    ],
+    "neurotic_youforgiven_SQ6": [
+        [
+            "they_neurotic",
+            "they_warrior",
+            "they_apprentice",
+            "you_warrior",
+            "you_apprentice",
+            "you_deputy",
+            "you_leader",
+            "you_forgiven",
+            "min_dislike_20",
+            "max_platonic_10",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You... want to know if I'm free to patrol with you? Is everyone else too busy?",
+            "Just... so you know, y_c, everyone knows that you don't really like me. So if something happens to me, especially when I'm with you, um...",
+            "On second thought, I'm busy right now, too."
+        ]
+    ],
+    "raspylungs_J1": [
+        [
+            "you_raspylungs",
+            "you_warrior",
+            "you_apprentice",
+            "they_warrior",
+            "min_platonic_40",
+	        "they_blind",
+            "stable",
+            "silly"
+        ],
+        [
+            "[You toss and turn in your nest as you have been all morning, trying to find the easiest position to breathe in.]",
+            "[Mouth wide open, you can't seem to take in enough air to satisfy your lungs.]",
+            "[t_c pokes {PRONOUN/t_c/poss} head into the den.]",
+            "There you are, y_c. Are you still asleep? d_n wants you for our sunhigh patrol, come on!",
+            "Oh, lungs giving you trouble? I'll tell d_n to find someone else.",
+            "This stuffy den air can't possibly be helping you, though. Let's go sit outside. It's really nice out today!",
+            "[Though this isn't anywhere near a solution to your problem, you can't deny that fresh air would be nice.]",
+            "[You follow t_c out into the sun, and though you continue to have trouble with your breathing, it's not so hard to deal with with t_c next to you.]"
+        ]
+    ],
+    "raspylungs_J5": [
+        [
+            "they_warrior",
+            "they_raspylungs",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Hi, y_c.",
+            "Oh, no, the rest of the patrol isn't back yet, I just came home early. I'm not breathing very well today, so they said I should rest.",
+            "[t_c sits down next to you.]",
+            "How's your afternoon been?"
+        ]
     ]
 }

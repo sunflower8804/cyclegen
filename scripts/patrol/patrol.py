@@ -82,6 +82,10 @@ class Patrol:
             game.settings.get("disasters"),
         )
 
+        print("Patrols:")
+        for i in final_patrols:
+            print(i.patrol_id)
+
         print(
             f"Total Number of Possible Patrols | normal: {len(final_patrols)}, romantic: {len(final_romance_patrols)} "
         )
@@ -607,11 +611,6 @@ class Patrol:
                 continue
             if current_season not in patrol.season and "any" not in patrol.season and "Any" not in patrol.season:
                 continue
-            if game.switches["patrol_category"] == 'lifegen':
-
-                if "bloodthirsty_only" in patrol.tags:
-                    if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":
-                        continue
 
             if game.switches["patrol_category"] == 'df':
                 if "you_med" in patrol.tags:
@@ -652,45 +651,53 @@ class Patrol:
                         if "fellowtrainee" not in patrol.tags:
                             continue
 
-                    if "shunned" in patrol.tags:
-                        if game.clan.your_cat.shunned == 0:
-                            continue
+                if "shunned" in patrol.tags:
+                    if game.clan.your_cat.shunned == 0:
+                        continue
 
-            if "lifegen" in patrol.types and "df" not in patrol.types:
+            if game.switches["patrol_category"] == 'lifegen':
+
+                if "bloodthirsty_only" in patrol.tags:
+                    if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":
+                        continue
+
                 if "shunned" in patrol.tags:
                     if game.clan.your_cat.shunned == 0:
                         continue
                 
-                if "shunned" not in patrol.tags and "df" not in patrol.tags: # shunned cats can still get regular goop romance patrols
+                if "shunned" not in patrol.tags and "df" not in patrol.tags:
                     if game.clan.your_cat.shunned > 0:
                         continue
 
-            try:
-                if game.switches["patrol_category"] == 'lifegen':
-                    # this is testing every piece of text in the patrol
-                    # to see if there's an abbrev that cant be fulfilled.
-                    # theres probably a better way to do it but.... patrols scare me. and this works
-                    tests = []
-                    test_runs = {}
-                    tests.append(patrol.intro_text)
-                    tests.append(patrol.decline_text)
-                    if len(patrol.antag_fail_outcomes) > 0:
-                        tests.append(i for i in patrol.antag_fail_outcomes)
-                    if len(patrol.antag_success_outcomes) > 0:
-                        tests.append(i for i in patrol.antag_success_outcomes)
-                    tests.append(i for i in patrol.success_outcomes)
-                    tests.append(i for i in patrol.fail_outcomes)
+                # this is testing every piece of text in the patrol
+                # to see if there's an abbrev that cant be fulfilled.
+                # theres probably a better way to do it but.... patrols scare me. and this works
+                tests = []
+                test_runs = {}
+                skip = False
 
-                    skip = False
-                    for i in tests:
-                        test_runs[i] = adjust_txt(Cat, i, self.patrol_leader, self.patrol_cat_dict, r_c_allowed=False, o_c_allowed=False)
-                        if test_runs[i] == "":
-                            skip = True
-                    if skip is True:
-                        continue
-            except:
-                print("adjust_txt failed. Rerolling patrol")
-                continue
+                tests.append(patrol.intro_text)
+                tests.append(patrol.decline_text)
+
+                if len(patrol.antag_fail_outcomes) > 0:
+                    tests.append(i for i in patrol.antag_fail_outcomes)
+                if len(patrol.antag_success_outcomes) > 0:
+                    tests.append(i for i in patrol.antag_success_outcomes)
+
+
+                tests.append(i["text"] for i in patrol.success_outcomes)
+                tests.append(i["text"] for i in patrol.fail_outcomes)
+
+                for i in tests:
+                    test_runs[i] = adjust_txt(Cat, i, self.patrol_leader, self.patrol_cat_dict, r_c_allowed=False, o_c_allowed=False)
+                    if test_runs[i] == "":
+                        skip = True
+                        print("Skipping", patrol.patrol_id)
+                        break
+                    else:
+                        print(i)
+                if skip is True:
+                    continue
                         
             # cruel season tag check
             if "cruel_season" in patrol.tags:
@@ -701,7 +708,7 @@ class Patrol:
                 romantic_patrols.append(patrol)
             else:
                 filtered_patrols.append(patrol)
-        
+            
         # make sure the hunting patrols are balanced
         if patrol_type == "hunting":
             filtered_patrols = self.balance_hunting(filtered_patrols)
