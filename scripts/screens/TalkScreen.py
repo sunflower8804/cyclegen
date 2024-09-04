@@ -522,16 +522,6 @@ class TalkScreen(Screens):
             'song', 'grace', 'clean', 'innovator', 'comforter', 'matchmaker', 'thinker',
             'cooperative', 'scholar', 'time', 'treasure', 'fisher', 'language', 'sleeper', 'dark'
         ]
-        # you_skill_list = [
-        #     'you_teacher', 'you_hunter', 'you_fighter', 'you_runner', 'you_climber', 'you_swimmer',
-        #     'you_speaker', 'you_mediator1', 'you_clever', 'you_insightful', 'you_sense', 'you_kit',
-        #     'you_story', 'you_lore', 'you_camp', 'you_healer', 'you_star', 'you_omen', 'you_dream',
-        #     'you_clairvoyant', 'you_prophet', 'you_ghost', 'you_explorer', 'you_tracker',
-        #     'you_artistan', 'you_guardian', 'you_tunneler', 'you_navigator', 'you_song', 'you_grace',
-        #     'you_clean', 'you_innovator', 'you_comforter', 'you_matchmaker', 'you_thinker',
-        #     'you_cooperative', 'you_scholar', 'you_time', 'you_treasure', 'you_fisher',
-        #     'you_language', 'you_sleeper', 'you_dark'
-        # ]
         for talk_key, talk in possible_texts.items():
             tags = talk["tags"] if "tags" in talk else talk[0]
             for i in range(len(tags)):

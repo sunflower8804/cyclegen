@@ -1231,5 +1231,23 @@
             "It's my job, after all, and I know relationships between mentors and apprentices sometimes take a while to figure out...",
             "Just an offer, of course! I'm sure you're doing fine on your own."
         ]
+    ],
+    "neurotic_youforgiven_SQ7": [
+        [
+            "they_neurotic",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "no_kit",
+            "you_forgiven",
+            "neutral",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[You accidentally bump into r_w on your way from the dirtplace. t_c practically teleports to your side.]",
+            "I just wanted to check... is there, um, tension between you and r_w that would be good to talk through?",
+            "No? Okay, sorry for assuming. It's my job, though, and I just want to make sure...",
+            "Well, I just want to make sure nothing bad happens to anyone! You, uh, you know."
+        ]
     ]
 }

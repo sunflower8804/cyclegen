@@ -3049,5 +3049,41 @@
             "They're making you soft. A real enemy's going to come at you with everything they've got.",
             "If you really want to prepare, you have to do the same. Use your claws. Go for the throat. Remember, when you're a warrior, it's kill or be killed. You'll be doing your siblings a favor. You can thank me when you're older."
         ]
+    ],
+    "youdeaf_R97": [
+        [
+            "only_you_deaf",
+            "min_platonic_40",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[You're watching the clouds when t_c comes to join you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/point/points} at one and then waves a paw side to side.]",
+            "[Looking closely, the cloud does resemble a fish indeed!]",
+            "[The two of you watch the clouds for a while, pointing out interesting shapes as either of you see fit.]"
+        ]
+    ],
+    "youdeaf_R98": [
+        [
+            "only_you_deaf",
+            "they_adult",
+            "they_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c's always seemed to have the heaviest gait. You swear you can feel {PRONOUN/t_c/object} from across the camp!]",
+            "[At least you always know when {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} around. You know {PRONOUN/t_c/poss} pawsteps too well.]"
+        ]
+    ],
+    "youdeaf_R99": [
+        [
+            "only_you_deaf",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[You watch t_c knead the ground. What's got {PRONOUN/t_c/object} so excited today?]"
+        ]
     ]
 }

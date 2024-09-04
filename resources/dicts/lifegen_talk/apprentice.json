@@ -3427,5 +3427,34 @@
             "That's not true, right? I might not be as good as {PRONOUN/dislike_r_a/object}, but I really want to feel like I deserve to pass my assessments... and eventually get my warrior name...",
             "[You assure t_c that dislike_r_a doesn't know what {PRONOUN/dislike_r_a/subject}{VERB/dislike_r_a/'re/'s} talking about, and that you treat {PRONOUN/t_c/object} like you'd treat any other apprentice. t_c looks relieved.]"
         ]
+    ],
+    "neurotic_yougrieving_SQ2": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "you_grieving",
+            "from_your_apprentice",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Um, y_c... I promise I'm not trying to get out of training, or anything like that, but please rest until you feel ready.",
+            "I'll go join... uh... plike_r_w for the day, I guess?"
+        ]
+    ],
+    "raspylungs_J3": [
+        [
+            "they_raspylungs",
+            "from_your_apprentice",
+            "you_warrior",
+	        "they_blind"
+        ],
+        [
+            "[During some battle training, you knock an unfocussed t_c off {PRONOUN/t_c/poss} paws. {PRONOUN/t_c/subject/CAP} quickly {VERB/t_c/lift/lifts} {PRONOUN/t_c/self} back up, gasping for air. You didn't figure {PRONOUN/t_c/subject}'d fallen far enough to get so badly winded.]",
+            "Can we please stop, y_c? Breathing is kind of hard today...",
+            "[You briefly consider that {PRONOUN/t_c/subject} could be making up some excuse, but then recall what r_m has told you about t_c's health. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} standing still, gulping for air-- {PRONOUN/t_c/subject} should take it easy. You agree, and apologise for the hit.]",
+            "No problem, y_c, and thank you. I'll be better tomorrow, I promise.",
+            "[You tell {PRONOUN/t_c/object} it's fine if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not, and as {PRONOUN/t_c/subject} slowly {VERB/t_c/walk/walks} back to camp to avoid further strain, you walk with {PRONOUN/t_c/object} and discuss some battle techniques.]"
+        ]
     ]
 }

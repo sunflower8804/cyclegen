@@ -2673,5 +2673,31 @@
             "It's probably good that I didn't become leader. I mean, it was stressful enough being the deputy!",
             "d_n is doing a much better job than I ever did."
         ]
+    ],
+    "raspylungs_J2": [
+        [
+            "you_raspylungs",
+            "any",
+            "they_leader",
+            "they_deputy",
+            "warrior",
+            "mediator",
+            "medicine cat",
+            "queen",
+            "elder",
+            "they_blind",
+            "you_blind",
+            "silly",
+            "stable"
+        ],
+        [
+            "... and o_cClan hasn't been easy to deal with, lately, don't even get me started.",
+            "Did you-- I mean, you weren't there, but did r_w tell you about our run-in on the dusk patrol last night? StarClan, it--",
+            "[As t_c is speaking, you take a deep, dramatic-sounding breath in an attempt to satisfy your weakened lungs.]",
+            "What? Are you sighing at me? Am I boring you?",
+            "[Panicked, you ensure {PRONOUN/t_c/object} that, no, you're just trying to breathe, and you're very invested in what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} talking about.]",
+            "Oh, haha, sorry. Let me know if I do start boring you, okay?",
+            "Anyway, uh, yeah, their patrol leader was just beyond rude..."
+        ]
     ]
 }

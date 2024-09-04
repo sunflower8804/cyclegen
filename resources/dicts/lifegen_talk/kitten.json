@@ -6768,5 +6768,46 @@
             "[You expect kits to play with feathers until they're ruffled and dirty, so it's a surprise to see t_c carefully carrying a bright red one in {PRONOUN/t_c/poss} mouth.]",
             "[You watch {PRONOUN/t_c/subject} gently tuck it into {PRONOUN/t_c/poss} nest and fold some moss over it, protecting {PRONOUN/t_c/poss} new treasure.]"
         ]
+    ],
+    "neurotic_theygrieving_SQ7": [
+        [
+            "they_neurotic",
+            "they_grieving",
+            "they_kitten",
+            "you_any",
+            "min_platonic_20"
+        ],
+        [
+            "*Sniff* I... I don't get it, y_c.",
+            "What does everyone mean, d_c's gone? What do they mean, {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} not coming back?",
+            "d_c was s'posed to stay! Forever and ever and ever."
+        ]
+    ],
+    "neurotic_theygrieving_SQ8": [
+        [
+            "they_neurotic",
+            "they_grieving",
+            "they_kitten",
+            "you_any",
+            "min_platonic_20"
+        ],
+        [
+            "d_c said everything would be okay, s'long as we were together.",
+            "But now {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} gone! That... means things aren't gonna be okay anymore, right?"
+        ]
+    ],
+    "neurotic_theygrieving_SQ9": [
+        [
+            "they_neurotic",
+            "they_grieving",
+            "they_kitten",
+            "you_adult",
+            "min_platonic_20"
+        ],
+        [
+            "[t_c's hiding under a pile of moss in the back of the nursery. You try to coax {PRONOUN/t_c/object} out with a feather and the best piece of prey.]",
+            "*sniffle* I don't wanna come out. If d_c's not there, then I don't ever wanna come out.",
+            "If... if {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} not here, who's gonna protect me from the rogues, and the Dark Forest, and the monsters, and..."
+        ]
     ]
 }

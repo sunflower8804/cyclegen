@@ -20584,7 +20584,7 @@
         ],
         [
             "Sometimes I think about my old Clan. I'm sure they gossip about me, you know?",
-            "I know I kind of chose that, since I left, but… I was close to some of them once.",
+            "I know I kind of chose that, since I left, but... I was close to some of them once.",
             "It kind of hurts to imagine what they might say about me now."
         ]
     ],
@@ -21192,6 +21192,471 @@
             "[Remembering the conversation you had with t_c when {PRONOUN/t_c/subject} {VERB/t_c/were/was} an apprentice, you ask {PRONOUN/t_c/object} if {PRONOUN/t_c/subject} {VERB/t_c/like/likes} {PRONOUN/t_c/poss} full name. {PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} shyly.]",
             "I... think so? I'm still getting used to it. I don't get how most cats switch over so easily... It still doesn't completely feel like mine.",
             "But don't worry. I remember what we talked about. I promise I won't keep it if I decide it isn't <i>me.</i>"
+        ]
+    ],
+    "youdeaf_R75": [
+        [
+            "only_you_deaf",
+            "you_adult",
+            "no_kit",
+            "max_platonic_50",
+            "max_dislike_10",
+            "they_deaf"
+        ],
+        [
+            "[t_c dips {PRONOUN/t_c/poss} head politely to you as {PRONOUN/t_c/subject} {VERB/t_c/pass/passes}.]",
+            "[You wave your tail back to {PRONOUN/t_c/object} to acknowledge the greeting before moving on.]"
+        ]
+    ],
+    "youdeaf_R89": [
+        [
+            "only_you_deaf",
+            "you_medicine_cat",
+            "they_deaf"
+        ],
+        [
+            "[You're mixing herbs when t_c comes in, blocking the light from the den entrance. You turn to {PRONOUN/t_c/object} to see what {PRONOUN/t_c/subject} {VERB/t_c/need/needs}.]",
+            "[t_c flattens {PRONOUN/t_c/poss} ears, and quickly blinks twice before pointing to {PRONOUN/t_c/poss} head.]",
+            "[{PRONOUN/t_c/subject} {VERB/t_c/hold/holds} {PRONOUN/t_c/self} as if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} in pain. Any light in {PRONOUN/t_c/poss} eyes appears to hurt.]",
+            "[You pat a nest for t_c to settle in and bring two poppy seeds. {PRONOUN/t_c/subject/CAP} {VERB/t_c/lap/laps} up the tiny seeds before settling in for a much needed nap.]"
+        ]
+    ],
+    "youdeaf_R91": [
+        [
+            "only_you_deaf",
+            "you_medicine_cat",
+            "they_deaf"
+        ],
+        [
+            "[t_c watches as you set herbs out to dry before going on to do {PRONOUN/t_c/poss} duties.]"
+        ]
+    ],
+    "youdeaf_R92": [
+        [
+            "only_you_deaf",
+            "you_medicine_cat",
+            "they_deaf",
+            "max_dislike_20"
+        ],
+        [
+            "[t_c catches up to you to give you some dock leaves you dropped!]",
+            "[You thank {PRONOUN/t_c/object} by raising your head, wiggling your ears, and twitching your whiskers.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/dip/dips} {PRONOUN/t_c/poss} head to you before trotting off again.]"
+        ]
+    ],
+    "youdeaf_R94": [
+        [
+            "only_you_deaf",
+            "you_apprentice",
+            "from_mentor",
+            "they_hearing"
+        ],
+        [
+            "[t_c is drilling you through a few battle moves. {PRONOUN/t_c/poss/CAP} movements are fast and a bit hard to keep up.]",
+            "[Finally you stop {PRONOUN/t_c/object} and motion 'slow' with a slow push of your forepaw against the ground. {PRONOUN/t_c/subject/CAP} {VERB/t_c/tilt/tilts} {PRONOUN/t_c/poss} head a moment before it clicks.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/rub/rubs} {PRONOUN/t_c/poss} paw in a circle over {PRONOUN/t_c/poss} chest to apologize before beginning again - much slower this time.]"
+        ]
+    ],
+    "youdeaf_R95": [
+        [
+            "only_you_born_deaf",
+            "you_apprentice",
+            "they_hearing"
+        ],
+        [
+            "[Hunting practice has always been hardest for you since you can't hear yourself or your surroundings. t_c is helping you through some practice by stomping a paw when you make a noise.]",
+            "[t_c seems to be stomping every few movements, however. Are you really that noisy?]",
+            "[You stop to ask, pointing to your ear and then yourself more generally before tilting your head. {PRONOUN/t_c/subject/CAP} {VERB/t_c/appear/appears} amused at the question.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/walk/walks} over to your tail to pat it gently then show how still {PRONOUN/t_c/poss} own is.]",
+            "[Oops! t_c gets a small laugh out of your expression at the realization that you forgot about your tail's movements.]"
+        ]
+    ],
+    "youdeaf_R96": [
+        [
+            "only_you_deaf",
+            "you_mediator_apprentice",
+            "they_hearing",
+            "min_platonic_25"
+        ],
+        [
+            "[t_c is looking down. After speaking with m_n, you walk over to {PRONOUN/t_c/object} and pat your ear.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/aren't/isn't} immediately willing to open up before pausing to give what you assume is a big sigh.]",
+            "[It's a bit clumsy, but t_c begins to share what's on {PRONOUN/t_c/poss} mind for you to learn!]"
+        ]
+    ],
+    "neurotic_youshunned_SQ1": [
+        [
+            "they_neurotic",
+            "you_shunned",
+            "no_kit",
+            "from_parent",
+            "adopted_parent",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What did I do wrong, y_c? I tried to raise you the best I could...",
+            "[t_c turns away before you can even think of a response.]"
+        ]
+    ],
+
+    "neurotic_youshunned_SQ2": [
+        [
+            "they_neurotic",
+            "you_shunned",
+            "no_kit",
+            "from_parent",
+            "adopted_parent",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "r_w_sweet keeps telling me it's not my fault, what you did. But that's not true, is it?",
+            "I... I failed as a {PRONOUN/t_c/parent}. And because of me, our Clanmate is dead, and... and you...",
+            "[t_c turns and flees.]"
+        ]
+    ],
+    "neurotic_theyshunned_SQ1": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "they_shunned",
+            "max_platonic_20"
+        ],
+        [
+            "[t_c doesn't meet your eyes. {PRONOUN/t_c/subject/CAP} {VERB/t_c/fixate/fixates} on {PRONOUN/t_c/poss} paws, shuffling them around until you turn away.]"
+        ]
+    ],
+    "neurotic_theyshunned_SQ2": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "they_shunned"
+        ],
+        [
+            "[Late one night, as you're heading to the dirtplace, you hear someone whispering at the edge of camp.]",
+            "[You crouch and creep towards the noise until you see t_c with {PRONOUN/t_c/poss} face tipped towards the stars. It sounds like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s}... pleading.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/fall/falls} silent before you can get close enough to make out any words.]"
+        ]
+    ],
+    "neurotic_theyshunned_SQ3": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "they_shunned",
+            "they_guilty",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c, alone in the corner, mumbles the same things over and over again.]",
+            "I didn't mean it. I didn't mean to do it...",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} to be trying to convince {PRONOUN/t_c/self}.]"
+        ]
+    ],
+    "neurotic_yougrieving_SQ1": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "you_grieving",
+            "neutral",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I'm so sorry, y_c. I'm not sure what to say, and I'm worried I'm just going to make you feel worse, so...",
+            "[t_c awkwardly presses against your side, then hurries away.]"
+        ]
+    ],
+    "neurotic_theygrieving_SQ2": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "min_platonic_50",
+            "they_grieving",
+            "they_blind"
+        ],  
+        [
+            "I can't do this, y_c. If d_c can die, just like that, it feels like anything can happen.",
+            "Everything could fall away overnight. I could lose you, lose plove_r_c, lose everyone...",
+            "[t_c turns away and curls into a ball, {PRONOUN/t_c/poss} breaths shaking.]"
+        ]
+    ],
+    "neurotic_theygrieving_SQ3": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "min_platonic_60",
+            "they_grieving"
+        ],
+        [
+            "[t_c has barely left {PRONOUN/t_c/poss} nest since d_c's death, so it's a surprise when {PRONOUN/t_c/subject} {VERB/t_c/appear/appears} a few tail-lengths away.]",
+            "[{PRONOUN/t_c/poss/CAP} eyes are red. {PRONOUN/t_c/subject/CAP} {VERB/t_c/sniffle/sniffles} a few times before {PRONOUN/t_c/subject} {VERB/t_c/manage/manages} to speak.]",
+            "P-promise me you'll be careful, y_c? <i>Really</i> careful. Please.",
+            "I'm so scared I'll look away for a moment, and you'll be gone, too."
+        ]
+    ],
+    "neurotic_theygrieving_SQ4": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "min_platonic_20",
+            "min_trust_15",
+            "they_grieving",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "y_c... you'd let me know if you heard anything from StarClan, right? Anything about d_c?",
+            "Even if {PRONOUN/d_c/subject} blamed me for letting {PRONOUN/d_c/object} go... even if {PRONOUN/d_c/subject} {VERB/d_c/were/was} mad at me... you'd tell me, right?"
+        ]
+    ],
+    "neurotic_theygrieving_SQ5": [
+        [
+            "they_neurotic",
+            "they_app",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "min_trust_15",
+            "they_grieving"
+        ],
+        [
+            "Um, y_c? Could you take a look at my paw? I hurt it.",
+            "[t_c stretches {PRONOUN/t_c/poss} paw out. It takes you a moment to find a tiny scratch.]",
+            "Is... is it going to be okay? It's not, um, infected, right?",
+            "[t_c averts {PRONOUN/t_c/poss} eyes, {PRONOUN/t_c/poss} voice suddenly tiny.]",
+            "I don't want something bad to happen to me, like it did with d_c."
+        ]
+    ],
+    "neurotic_theygrieving_SQ6": [
+        [
+            "they_neurotic",
+            "they_grieving",
+            "no_kit",
+            "min_platonic_20"
+        ],
+        [
+            "Do you think d_c is watching me from Silverpelt? {PRONOUN/d_c/subject/CAP}'d probably be disappointed in me for falling apart like this...",
+            "[t_c sniffles. {PRONOUN/t_c/subject/CAP} {VERB/t_c/blink/blinks} up at the stars.]",
+            "I'm sorry you have to see me like this, d_c. You should know by now I'm not very strong."
+        ]
+    ],
+    "neurotic_theygrieving_SQ10": [
+        [
+            "they_neurotic",
+            "they_grieving",
+            "they_pregnant",
+            "you_adult",
+            "they_adult",
+            "min_platonic_20",
+            "max_platonic_50",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What am I thinking? Having kits right after losing d_c?",
+            "Something's going to happen to these kits, too. I just know it.",
+            "[t_c curls up tighter, and nothing you say seems to get through to {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "neurotic_theygrieving_SQ11": [
+        [
+            "they_neurotic",
+            "they_grieving",
+            "you_adult",
+            "they_adult",
+            "min_platonic_40",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I don't know how to be a good {PRONOUN/t_c/parent} to t_kk. Not like this.",
+            "I'm trying to be there for {PRONOUN/t_kk/object}, but I just keep thinking about d_c. I miss {PRONOUN/d_c/object} so, so much.",
+            "What if I hurt t_kk like this? What if all {PRONOUN/t_kk/subject} {VERB/t_kk/remember/remembers} about {PRONOUN/t_kk/poss} kithood is how I was too upset to take care of {PRONOUN/t_kk/object}?"
+        ]
+    ],
+    "neurotic_theygrieving_SQ12": [
+        [
+            "they_neurotic",
+            "they_grieving",
+            "no_kit",
+            "min_platonic_20",
+            "min_comfort_15",
+            "sc_faith",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c's buried {PRONOUN/t_c/poss} head in {PRONOUN/t_c/poss} paws. {PRONOUN/t_c/poss/CAP} voice quivers.]",
+            "Do... do you think we're doing something wrong? Do you think <i>I'm</i> doing something wrong?",
+            "That's the only reason I can think of for... for why StarClan wouldn't have saved d_c."
+        ]
+    ],
+    "neurotic_youpregnant_SQ1": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "you_pregnant",
+            "min_platonic_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Let me know if t_kk bothers you at all while you're staying in the nursery.",
+            "I know kits can be a handful, and I really, really don't want {PRONOUN/t_kk/object} to cause you any trouble! Especially now... you deserve rest."
+        ]
+    ],
+    "neurotic_theypregnant_SQ1": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "they_pregnant",
+            "leafbare",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "min_platonic_20",
+            "min_trust_15"
+        ],
+        [
+            "I can't believe I'm expecting kits now, in leafbare... what was I thinking?",
+            "It's already so dangerous to have kits, but especially when it's so cold, and prey's scarce, and herbs aren't growing...",
+            "[You remind t_c that worrying isn't going to help the situation. {PRONOUN/t_c/subject/CAP} {VERB/t_c/blink/blinks} at you for a moment before slowly nodding.]",
+            "I... I know, y_c. I'm trying, I swear.",
+            "Just... take care of me when the time comes, okay? I'm really nervous, but I trust you."
+        ]
+    ],
+    "neurotic_theypregnant_SQ2": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "they_pregnant",
+            "min_platonic_50",
+            "min_trust_15"
+        ],
+        [
+            "Hey, y_c? I've been thinking about worst-case scenarios, and I wanted to ask...",
+            "If something happens to me when my kits come, you'll take care of them, right?",
+            "You'll keep them safe, and make sure they don't wander too far, and remind them to stick together?",
+            "I know you will, but it makes me feel better to hear you say it."
+        ]
+    ],
+    "neurotic_theypregnant_SQ3": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "they_pregnant",
+            "you_kitten",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What do you think about having new kits in the nursery with you soon?",
+            "No, I don't know how many there'll be, or what they'll be like. I don't know much of anything, really...",
+            "But I hope you'll be good friends! Or at least, I really hope you'll get along."
+        ]
+    ],
+    "neurotic_theypregnant_SQ4": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "they_pregnant",
+            "from_parent",
+            "you_any",
+            "min_platonic_20",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "y_c, when the new kits come, will you look after them? I'm sure they'll be excited to have a big {PRONOUN/y_c/sibling}.",
+            "You can teach them how c_nClan works, and about the warrior code, and about the things to watch out for.",
+            "It's scary to learn about the world on your own. I'm glad they'll have you."
+        ]
+    ],
+    "neurotic_theypregnant_SQ5": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "they_pregnant",
+            "from_parent",
+            "you_any",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Even after your new siblings arrive, you know I'll love you just as much as I do now, right?",
+            "I don't want you to be jealous, or worried that I'll focus on them more.",
+            "A bigger family just... means there's more of us to care about each other."
+        ]
+    ],
+    "neurotic_youforgiven_SQ1": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "you_forgiven",
+            "neutral",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[Upon noticing you by {PRONOUN/t_c/poss} side, t_c starts to leap away, then stops {PRONOUN/t_c/self}. {PRONOUN/t_c/subject/CAP} {VERB/t_c/force/forces} out a chuckle.]",
+            "Uh... hi, y_c! Sorry, I keep forgetting that we're supposed to talk with... I mean allowed to talk with... I mean...",
+            "Hi! Welcome back! Sorry! That's what I mean. I'll see you later!"
+        ]
+    ],
+    "neurotic_youforgiven_SQ3": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "you_forgiven",
+            "min_platonic_50",
+            "min_trust_15",
+            "they_blind"
+        ],
+        [
+            "[t_c was kinder than most cats during your shun, but {PRONOUN/t_c/subject} still {VERB/t_c/act/acts} jumpy around you now that you've been forgiven.]",
+            "[Today, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} especially stiff while sitting beside you, but {PRONOUN/t_c/subject} {VERB/t_c/give/gives} you an embarrassed smile and {VERB/t_c/relax/relaxes} once {PRONOUN/t_c/subject} {VERB/t_c/realize/realizes} you've noticed {PRONOUN/t_c/poss} discomfort.]",
+            "Sorry, y_c. I don't mean to be so tense. I'm not really sure why I am, to be honest...",
+            "[Slowly, slowly, {PRONOUN/t_c/subject} {VERB/t_c/rest/rests} {PRONOUN/t_c/poss} head against your side.]",
+            "I know you'd never hurt me. I <i>know</i> that."
+        ]
+    ],
+    "neurotic_bothdftrainee_SQ1": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "they_dftrainee",
+            "you_dftrainee",
+            "you_ill",
+            "min_platonic_30",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You're not going to train tonight, right? df_m_n wouldn't make you... not while you're like this?",
+            "Please be careful, y_c. Everyone's already worried enough about you as it is."
+        ]
+    ],
+    "raspylungs_J4": [
+        [
+            "they_raspylungs",
+            "any",
+            "no_kit",
+	        "they_blind",
+            "neutral"
+        ],
+        [
+            "[The Clan has settled down to eat an afternoon meal, and as you sit down near t_c, you notice how quick and short {PRONOUN/t_c/poss} bites seem to be. You ask why they're in such a hurry.]",
+            "Hm? Oh, I'm not. It's just, my lungs don't work the best, and I can't use my mouth to breathe while I'm chewing, so I have to be fast.",
+            "Everycat else can just breathe through their nose, but that doesn't seem to be enough for me today.",
+            "[You express your sympathy, but t_c doesn't seem too affected.]",
+            "It's fine. Some days I get to savour my prey, but not today, I guess.",
+            "Lucky you, though, because I left the better prey for those of you who have the time to taste it!"
         ]
     ]
 }

@@ -5402,5 +5402,74 @@
             "We, uh, hide and jump out and try to scare each other?",
             "...I think I'll pass on that one, y_c, sorry. Have you tried asking r_c_assertive?"
         ]
+    ],
+    "youdeaf_R71": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_blind",
+            "they_older"
+        ],
+        [
+            "[t_c lets you bounce around {PRONOUN/t_c/object} with amusement on {PRONOUN/t_c/poss} face.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} even seem to mind as you follow {PRONOUN/t_c/object} around the camp.]",
+            "[When r_q finally comes to herd you back to the nursery, speaking to t_c a moment with an exasperated expression, {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} bothered. Maybe {PRONOUN/t_c/subject} enjoyed you being {PRONOUN/t_c/poss} shadow today!]"
+        ]
+    ],
+    "youdeaf_R72": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "neutral",
+            "non-related"
+        ],
+        [
+            "[t_c walks awkwardly past you.]"
+        ]
+    ],
+    "youdeaf_R73": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "brooding",
+            "cool",
+            "stable",
+            "neutral",
+            "non-related",
+            "they_older"
+        ],
+        [
+            "[t_c is busy right now and tries to shoo you away.]",
+            "[You quietly sit next to {PRONOUN/t_c/object} however, and {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to sigh before continuing what {PRONOUN/t_c/subject} {VERB/t_c/were/was} doing before you arrived.]",
+            "[In the end, {PRONOUN/t_c/subject} no longer {VERB/t_c/seem/seems} bothered by your presence as you observe with minimal interruptions.]",
+            "[So this is why the queens make you do this sometimes!]"
+        ]
+    ],
+    "youdeaf_R74": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_older"
+        ],
+        [
+            "[When t_c trips over you, you look up to see {PRONOUN/t_c/poss} mouth moving quickly.]",
+            "[Given {PRONOUN/t_c/poss} expression - you can guess {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} apologizing!]",
+            "[You raise your head, wiggle your ears, and twitch your whiskers just as the queens taught you to say 'thank you' before scampering off again.]",
+            "[t_c seems a little confused when you look back at {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "youdeaf_R100": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "from_parent",
+            "they_deaf"
+        ],
+        [
+            "[t_c watches you intently even with the queen's keen gazes. It seems {PRONOUN/t_c/subject} {VERB/t_c/are/is} more wary given that you can't hear dangers and are still learning signs.]",
+            "[When you spot a bird's shadow on the ground, however, you're swift to race under t_c... Before looking up to see a little finch. {PRONOUN/t_c/subject} {VERB/t_c/laugh/laughs} softly, making your whiskers twitch and ears heat in embarrassment.]",
+            "[False alarm, but t_c is quite pleased that you've been keeping up with your lessons. {PRONOUN/t_c/subject/CAP} {VERB/t_c/lick/licks} the top of your head as {PRONOUN/t_c/poss} body rumbles with a deep purr.]",
+            "[Eventually, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} content to leave you to the queens given your level of vigilance]"
+        ]
     ]
 }

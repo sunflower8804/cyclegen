@@ -1821,5 +1821,36 @@
             "Should I tell them what that means? Should I tell the other kits?",
             "Maybe it's better that they don't know, but isn't it bad to hide things from them?"
         ]
+    ],
+    "neurotic_youpregnant_SQ2": [
+        [
+            "they_neurotic",
+            "they_queen",
+            "they_queen's_apprentice",
+            "no_kit",
+            "you_adult",
+            "you_pregnant",
+            "min_platonic_20"
+        ],
+        [
+            "I'm really excited for the kits to come! You're going to be a great {PRONOUN/y_c/parent}.",
+            "And I promise I won't get between you and them, but I'm excited to help take care of them, too. Just let me know if I ever overstep."
+        ]
+    ],
+    "neurotic_youforgiven_SQ4": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "they_queen",
+            "they_queen's_apprentice",
+            "you_forgiven",
+            "neutral",
+            "they_blind"
+        ],
+        [
+            "[t_c blocks your way as you duck into the nursery.]",
+            "You're... here to see r_k? I don't know...",
+            "Wait here, all right? Or actually, wait by your den. I have to check that l_n says it's okay for you to visit."
+        ]
     ]
 }

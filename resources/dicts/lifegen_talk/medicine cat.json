@@ -2309,5 +2309,21 @@
             "There's some more of the herbs r_m is using for r_s at the far back of the shelf.",
             "I hope {PRONOUN/r_m/subject} {VERB/r_m/notice/notices}... I hope {PRONOUN/r_m/subject} {VERB/r_m/don't/doesn't} think {PRONOUN/r_m/subject}{VERB/r_m/'ve/'s} run out."
         ]
+    ],
+    "neurotic_youforgiven_SQ2": [
+        [
+            "they_neurotic",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "no_kit",
+            "you_forgiven",
+            "neutral"
+        ],
+        [
+            "[You have a minor cut, so you find t_c to get it treated. As soon as {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, t_c runs over, blocking you from going any deeper into the medicine den.]",
+            "Hi, y_c! What can I help with? A cut? Okay, wait right there...",
+            "[t_c begins sorting through {PRONOUN/t_c/poss} supplies, but keeps looking back to make sure you haven't moved from the entrance.]",
+            "[It seems {PRONOUN/t_c/subject} still {VERB/t_c/don't/doesn't} trust you anywhere near {PRONOUN/t_c/poss} herb stores...]"
+        ]
     ]
 }

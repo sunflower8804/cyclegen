@@ -2529,5 +2529,228 @@
         [
             "Looks like someone is one step closer to missing out on the upcoming Gathering."
         ]
+    ],
+    "youdeaf_R76": [
+        [
+            "only_you_deaf",
+            "insult",
+            "no_kit",
+            "they_deaf"
+        ],
+        [
+            "[t_c frowns a bit at you before seemingly realizing your intent.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/scowl/scowls}, flexing {PRONOUN/t_c/poss} claws before looking away pointedly.]"
+        ]
+    ],
+    "youdeaf_R77": [
+        [
+            "only_you_deaf",
+            "insult",
+            "they_deaf",
+            "no_kit"
+        ],
+        [
+            "[As you sign your insult, t_c's face darkens slowly.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses}, however, before walking away without justifying you with a response.]",
+            "[t_c doesn't bother signing to you for the rest of the day.]"
+        ]
+    ],
+    "youdeaf_R78": [
+        [
+            "only_you_deaf",
+            "insult",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/didn't/doesn't} see your signs but motions for you to repeat it.]"
+        ]
+    ],
+    "youdeaf_R79": [
+        [
+            "only_you_deaf",
+            "insult",
+            "they_hearing",
+            "any"
+        ],
+        [
+            "[t_c flattens {PRONOUN/t_c/poss} ears as if you've just said something {PRONOUN/t_c/subject} didn't want to hear.]"
+        ]
+    ],
+    "youdeaf_R80": [
+        [
+            "only_you_deaf",
+            "insult",
+            "no_kit",
+            "max_platonic_20"
+        ],
+        [
+            "[With a roll of {PRONOUN/t_c/poss} eyes, t_c ignores what you've signed.]"
+        ]
+    ],
+    "neurotic_insult_SQ3": [
+        [
+            "they_neurotic",
+            "they_any",
+            "you_any",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I'm t-trying my best, y_c! Really, I swear I am!"
+        ]
+    ],
+    "neurotic_insult_SQ4": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "insult",
+            "they_blind"
+        ],
+        [
+            "[t_c leaps away from you, as if your words are a physical blow.]",
+            "What? I... why?"
+        ]
+    ],
+    "neurotic_insult_SQ5": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "insult",
+            "they_blind"
+        ],
+        [
+            "[t_c takes a long, deep breath, as if preparing a stinging comeback. You wait.]",
+            "[...t_c deflates and scurries away.]"
+        ]
+    ],
+    "neurotic_insult_SQ6": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "...That's cruel, y_c. You're... you're just a bully.",
+            "And I think, deep down, you know that too. Right?"
+        ]
+    ],
+    "neurotic_insult_SQ7": [
+        [
+            "they_neurotic",
+            "you_neurotic",
+            "no_kit",
+            "insult",
+            "neutral",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I thought we were similar, y_c. Both kind of quiet... both a little too cautious.",
+            "But I don't ever want to be like you if you say things like that."
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_01": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What is wrong with you?"
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_02": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind"
+        ],
+        [
+            "[t_c puffs out {PRONOUN/t_c/poss} chest and bites {PRONOUN/t_c/poss} lip for a second, they glare at you with angry eyes. {PRONOUN/t_c/subject/CAP} {VERB/t_c/click/clicks} {PRONOUN/t_c/poss} tongue and abruptly get up to leave, {PRONOUN/t_c/poss} shoulders tense.]",
+            "Just leave me alone. If you can't say anything worthwhile, y_c, then I don't want to hear it."
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_03": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Ignorance won't get you anywhere..."
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_04": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[{PRONOUN/t_c/subject/CAP} simply {VERB/t_c/look/looks} away, though the hair bristling at the back of {PRONOUN/t_c/poss} neck tells you a nerve was struck.]"
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_05": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I know you're better than that. So why are you acting this way?"
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_06": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Weren't you raised better than that? StarClan, learn some manners."
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_07": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Show some respect, who do you think you are saying things like that?! Even if you don't like me, at least do the right thing and keep it to yourself! StarClan's sake!"
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_08": [
+        [
+            "insult",
+            "no_kit",
+            "you_stable",
+            "min_platonic_30",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "?!",
+            "Really... I never expected that coming from you y_c... Did something bad happen? Are you okay?"
+        ]
     ]
 }
