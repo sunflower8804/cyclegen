@@ -3610,5 +3610,19 @@
             "[t_c looks away.]",
             "I should've been there."
         ]
+    ],
+    "dead_skill_J4": [
+        [
+            "they_ur",
+            "they_runner",
+            "any",
+            "silly",
+            "they_blind"
+        ],
+        [
+            "[t_c breezes past you, in hot pursuit of a living squirrel who is probably very confused.]",
+            "[A skilled runner, {PRONOUN/t_c/subject} {VERB/t_c/catch/catches} up in no time, {PRONOUN/t_c/poss} paws passing right through the creature. Out of breath, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to you.]",
+            "Hehe. It's the chasing that's the fun part."
+        ]
     ]
 }

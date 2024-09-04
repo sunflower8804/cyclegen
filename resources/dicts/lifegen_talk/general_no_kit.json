@@ -22236,5 +22236,270 @@
             "Like... they don't care about the rules, at all. They'll bend them, break them... I'm nervous that they'll one day cross l_n, or the other Clans, or, I don't know, StarClan's will...",
             "But there's something comforting, I guess, about having a sibling who would cast aside the Warrior Code for you."
         ]
+    ],
+    "dead_skill_J1": [
+        [
+            "they_sc",
+            "they_fisher",
+            "no_kit",
+            "cool",
+            "stable",
+            "min_they_deadfor_50",
+            "they_adult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You know, I used to be quite the fisher back when I was alive.",
+            "Mmhm! Best in the Clan.",
+            "Some useful skill that turned out to be, though. In StarClan, fish practically just leap into anycat's paws!",
+            "Maybe the Dark Forest would have some more challenging rivers...",
+            "Hehe. Just kidding."
+        ]
+    ],
+    "dead_skill_J2": [
+        [
+            "they_sc",
+            "you_dead",
+            "they_sleeper",
+            "no_kit",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c is fast asleep.]",
+            "[What part of living in StarClan could have {PRONOUN/t_c/object} so exhausted?]"
+        ]
+    ],
+    "dead_skill_J3": [
+        [
+            "they_dead",
+            "they_story",
+            "min_they_deadfor_80",
+            "any",
+            "they_adult",
+            "cool",
+            "stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "How 'bout a story, y_c?",
+            "C'mon. There has to be at least a couple I haven't told you...",
+            "Have I told you about the catmint garden? The bear attack? The time d_c fell into the river?",
+            "Huh. You've really heard all of my stories?",
+            "Maybe I should find someone new to pester."
+        ]
+    ],
+    "dead_skill_J5": [
+        [
+            "they_df",
+            "they_star",
+            "brooding",
+            "you_df",
+            "they_blind",
+            "you_blind",
+            "no_kit"
+        ],
+        [
+            "Those rotten StarClan cats are making fun of us again. I can feel it.",
+            "Don't laugh. I have some sort of connection to them, I swear.",
+            "It's gross."
+        ]
+    ],
+    "dead_skill_J6": [
+        [
+            "they_dark",
+            "they_sc",
+            "you_sc",
+            "stable",
+            "neurotic",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_older"
+        ],
+        [
+            "Aah!",
+            "[t_c wakes up from a nap with a jolt.]",
+            "Oh, phew. Sorry, y_c. Just another Dark Forest nightmare.",
+            "I wish I could shake this connection I have to them. Maybe I need to meditate more, or something.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/settle/settles} back into {PRONOUN/t_c/poss} nest.]",
+            "Okay, let's try this again. Wake me if I start to kick too much."
+        ]
+    ],
+    "dead_skill_J7": [
+        [
+            "they_sc",
+            "you_sc",
+            "any",
+            "no_kit",
+            "they_speaker",
+            "min_they_deadfor_30",
+            "cool",
+            "stable",
+            "assertive",
+            "upstanding"
+        ],
+        [
+            "[You walk with t_c back into the StarClan camp after watching {PRONOUN/t_c/object} deliver a prophecy at the Moonplace. {PRONOUN/t_c/subject/CAP} had such a way with words!]",
+            "It's easy, really. You have to talk to living cats a certain way, or they won't get it.",
+            "I can try to teach you sometime, if you want. I'm sure c_nClan wouldn't mind seeing another face.",
+            "[You pass up the offer. You'd rather watch t_c continue to captivate {PRONOUN/t_c/poss} audience!]"
+        ]
+    ],
+    "dead_skill_J8": [
+        [
+            "they_matchmaker",
+            "they_sc",
+            "you_sc",
+            "no_kit",
+            "silly",
+            "stable",
+            "cool"
+        ],
+        [
+            "Look, look. n_r1_brooding and n_r2_sweet. You think they look good together?",
+            "Sure, they're complete opposites, but opposites attract, right?",
+            "I'm brilliant at this stuff, okay? Trust me. They'll be together in five more moons, tops!"
+        ]
+    ],
+    "dead_skill_J9": [
+        [
+            "they_df",
+            "they_swimmer",
+            "you_dftrainee",
+            "cool",
+            "silly",
+            "stable",
+            "no_kit",
+            "min_they_deadfor_30",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c startles you by popping out of the inky river just behind you.]",
+            "Whoops! Sorry, t_c. Just taking a dip. I like to check for fish down there sometimes. Never found any, though, hehe.",
+            "No, no, don't try it, too. It'll suck you right in, and you won't wake up.",
+            "There's some shallower ponds deeper into the forest if you want to practice swimming!",
+            "[On second thought, maybe you'll pass.]"
+        ]
+    ],
+    "dead_skill_J10": [
+        [
+            "they_fighter",
+            "brooding",
+            "unlawful",
+            "assertive",
+            "they_sc",
+            "you_sc",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c hisses at a Dark Forest cat through the border wall, claws flexing as the cat taunts {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "skill_J1": {
+        "tags": [
+            "they_medicine_cat",
+            "you_ghost",
+            "you_warrior",
+            "you_deputy",
+            "you_apprentice",
+            "cool",
+            "stable",
+            "brooding",
+            "max_dislike_15",
+            "max_platonic_50"
+        ],
+        "intro": [
+            "I've seen you staring off into space sometimes, you know.",
+            "Well, I know you're not staring into space. You're seeing things, aren't you?",
+            "what do you see?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Ghosts.",
+                "next_scene": "see_ghosts"
+            },
+            "choice2": {
+                "text": "Nothing!",
+                "next_scene": "see_nothing"
+            }
+        },
+        "see_ghosts": [
+            "Hm. That's what I figured.",
+            "Not StarClan cats, are they? They're from... someplace else?",
+            "Interesting. I wonder why you have this ability..."
+        ],
+        "see_nothing": [
+            "... Okay. In that case, then, stop talking to air. You're freaking me out.",
+            "[t_c doesn't seem to believe you...]"
+        ]
+    },
+    "skill_J2": [
+        [
+            "they_kitsitter",
+            "brooding",
+            "min_platonic_20",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "...And r_w_upstanding was stepping on my tail all morning! Ugh. I think it's just because I ate that robin last night.",
+            "But {PRONOUN/r_w_upstanding/object} never claimed it! It's ridiculous...",
+            "[While t_c is ranting, a very excited r_k barrels into {PRONOUN/t_c/poss} side from across the camp, tugging on {PRONOUN/t_c/poss} leg and begging to come play.]",
+            "Agh. Hey, r_k. Um, I'm a little busy right now...",
+            "[You tell t_c that {PRONOUN/t_c/subject} should go play. Your conversation can wait.]",
+            "*Sigh* Okay. What are we playing today, r_k?",
+            "[You can't help but chuckle as r_k drags t_c away. For such a cold cat, {PRONOUN/t_c/subject} sure {VERB/t_c/have/has} a way with kits!]"
+        ]
+    ],
+    "skill_J3": [
+        [
+            "they_kitsitter",
+            "brooding",
+            "no_kit",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c lumbers past, r_k stuck onto {PRONOUN/t_c/poss} foreleg like a squirrel in a tree, giggling endlessly.]",
+            "[{PRONOUN/t_c/poss/CAP} cold glare tells you not to ask about it.]"
+        ]
+    ],
+    "skill_J5": [
+        [
+            "they_tracker",
+            "no_kit",
+            "you_mediator",
+            "you_mediator_apprentice",
+            "min_platonic_30",
+            "unabashed",
+            "silly",
+            "stable",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c! You walked through a catmint patch on your way home from o_cClan. I can smell it.",
+            "Yes, my nose is that good. Now, should me where it is!"
+        ]
+    ],
+    "skill_J6": [
+        [
+            "only_they_deaf",
+            "they_teacher",
+            "clan_has_kits",
+            "no_kit",
+            "you_deaf"
+        ],
+        [
+            "[t_c is teaching some new signs to a group of kits. You truly admire {PRONOUN/t_c/poss} patience.]"
+        ]
     ]
 }

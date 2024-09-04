@@ -5471,5 +5471,22 @@
             "[False alarm, but t_c is quite pleased that you've been keeping up with your lessons. {PRONOUN/t_c/subject/CAP} {VERB/t_c/lick/licks} the top of your head as {PRONOUN/t_c/poss} body rumbles with a deep purr.]",
             "[Eventually, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} content to leave you to the queens given your level of vigilance]"
         ]
+    ],
+    "skill_J4": [
+        [
+            "brooding",
+            "cool",
+            "they_kitsitter",
+            "you_kitten",
+            "min_platonic_10"
+        ],
+        [
+            "Hey, kiddo. Uh, I'm kind of busy right now. Could we play later?",
+            "[You persist.]",
+            "Okay. Um, here.",
+            "[t_c picks up a nearby stick, reels back, and chucks it across camp. You race after it to bring it back!]",
+            "[But when you turn around again, stick in your jaws, t_c has disappeared.]",
+            "[Hide and seek now, is it? t_c is so fun to play with!]"
+        ]
     ]
 }
