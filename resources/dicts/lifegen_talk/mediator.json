@@ -1218,5 +1218,36 @@
             "[You sign to t_c for {PRONOUN/t_c/poss} opinion. Between the two of you, you come up with a solid plan to drive off the dog.]",
             "[Your head lifts as your ears wriggle and your whiskers twitch in the sign for 'thank you' before getting up to visit d_n and tell {PRONOUN/d_n/object} the plan.]"
         ]
+    ],
+    "neurotic_mediator_SQ1": [
+        [
+            "they_neurotic",
+            "they_mediator",
+            "no_kit",
+            "min_platonic_20"
+        ],
+        [
+            "Hey, y_c. I don't mean to intrude, but let me know if I could ever help you and y_a talk through anything?",
+            "It's my job, after all, and I know relationships between mentors and apprentices sometimes take a while to figure out...",
+            "Just an offer, of course! I'm sure you're doing fine on your own."
+        ]
+    ],
+    "neurotic_youforgiven_SQ7": [
+        [
+            "they_neurotic",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "no_kit",
+            "you_forgiven",
+            "neutral",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[You accidentally bump into r_w on your way from the dirtplace. t_c practically teleports to your side.]",
+            "I just wanted to check... is there, um, tension between you and r_w that would be good to talk through?",
+            "No? Okay, sorry for assuming. It's my job, though, and I just want to make sure...",
+            "Well, I just want to make sure nothing bad happens to anyone! You, uh, you know."
+        ]
     ]
 }

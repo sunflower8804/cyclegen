@@ -41,11 +41,24 @@
         ]
     },
     "cool": {
-        "accept_like": [],
-        "accept_neutral": [],
-        "accept_dislike": [],
-        "already_have": [],
-        "accept_favourite": []
+        "accept_like": [
+            "t_c has a small glint of approval in {PRONOUN/t_c/poss} eye as {PRONOUN/t_c/subject} {VERB/t_c/accept/accepts} the accessory."
+        ],
+        "accept_neutral": [
+            "t_c huffs. Although it's not {PRONOUN/t_c/poss} preferred gift, t_c supposes {PRONOUN/t_c/subject}'ll take it off your paws."
+        ],
+        "accept_dislike": [
+            "t_c crinkles {PRONOUN/t_c/poss} nose at your gift, not even trying to hide {PRONOUN/t_c/poss} dislike.",
+            "t_c rudely asks what you expect {PRONOUN/t_c/object} to do with such a gift."
+        ],
+        "already_have": [
+            "t_c wordlessly shows you an identical gift already in {PRONOUN/t_c/poss} possession.",
+            "t_c raises an eyebrow, perplexed as to why you believe {PRONOUN/t_c/subject} {VERB/t_c/need/needs} two of the same thing."
+        ],
+        "accept_favourite": [
+            "t_c smiles in approval. {PRONOUN/t_c/subject/CAP} {VERB/t_c/boast/boasts} that you <i>do</i> know {PRONOUN/t_c/object}, after all.",
+            "t_c teasingly questions how you even knew {PRONOUN/t_c/poss} favorite gift as {PRONOUN/t_c/subject} {VERB/t_c/take/takes} the accessory with a hidden grin."
+        ]
     },
     "upstanding": {
         "accept_like": [],
@@ -55,25 +68,52 @@
         "accept_favourite": []
     },
     "introspective": {
-        "accept_like": [],
-        "accept_neutral": [],
-        "accept_dislike": [],
-        "already_have": [],
-        "accept_favourite": []
+        "accept_like": [
+            "t_c smiles and accepts your gift (y_g), commenting on how you seemed to know exactly what {PRONOUN/t_c/subject} {VERB/t_c/liked/likes}."
+        ],
+        "accept_neutral": [
+            "t_c nods, appreciative of your gesture.",
+            "t_c stares at the y_g with curiosity, stating it could be used for something, at least."
+        ],
+        "accept_dislike": [
+            "t_c almost looks... repulsed as {PRONOUN/t_c/subject} take the accessory from you with a fake smile.",
+            "Despite the deep frown, t_c thanks you for the gift (y_g)."
+        ],
+        "already_have": [
+            "t_c laughs and turns to show you an identical accessory. Seems like {PRONOUN/t_c/subject} already {VERB/t_c/have/has} one!",
+            "t_c tilts {PRONOUN/t_c/poss} head and comments how {PRONOUN/t_c/subject} {VERB/t_c/swear/swears} {PRONOUN/t_c/subject} already {VERB/t_c/have/has} a y_g."
+        ],
+        "accept_favourite": [
+            "t_c is at a loss of words, taking the accessory as if it's too fragile to handle. The look in {PRONOUN/t_c/poss} eyes is thanks enough.",
+            "t_c suddenly tears up, blabbering about how much {PRONOUN/t_c/subject} love your gift and how much it means to {PRONOUN/t_c/object}."
+        ]
     },
     "neurotic": {
-        "accept_like": [],
-        "accept_neutral": [],
-        "accept_dislike": [],
-        "already_have": [],
-        "accept_favourite": []
+        "accept_like": [
+            "t_c brightens as {PRONOUN/t_c/subject} {VERB/t_c/realize/realizes} what you're giving {PRONOUN/t_c/object}. {PRONOUN/t_c/poss/CAP} whiskers twitch as {PRONOUN/t_c/subject} {VERB/t_c/thank/thanks} you."
+        ],
+        "accept_neutral": [
+            "t_c seems surprised that you're giving {PRONOUN/t_c/object} a gift, but thanks you."
+        ],
+        "accept_dislike": [
+            "t_c frowns when {PRONOUN/t_c/subject} {VERB/t_c/see/sees} your gift, but {VERB/t_c/muster/musters} an uncertain 'thank you.'"
+        ],
+        "already_have": [
+            "t_c hesitantly confesses that {PRONOUN/t_c/subject} already {VERB/t_c/have/has} this gift, but appreciates the gesture."
+        ],
+        "accept_favourite": [
+            "t_c gasps loudly, then looks away in embarrassment. {PRONOUN/t_c/subject/CAP} shyly {VERB/t_c/accept/accepts} your gift!"
+        ]
     },
+
     "silly": {
         "accept_like": [],
         "accept_neutral": [],
         "accept_dislike": [],
         "already_have": [],
-        "accept_favourite": []
+        "accept_favourite": [
+            "t_c jumps up and down with a squeal, thanking you profusely for your gift!"
+        ]
     },
     "stable": {
         "accept_like": [],
@@ -85,7 +125,7 @@
     "sweet": {
         "accept_like": [],
         "accept_neutral": [
-            "t_c accepts your gift (y_g) with a polite thank you."
+            "t_c accepts your gift with a polite thank you."
         ],
         "accept_dislike": [],
         "already_have": [],
@@ -105,19 +145,80 @@
         "already_have": [],
         "accept_favourite": []
     },
-    "unique_gifts": {
+   "unique_gifts": {
         "STICK": {
-            "accept_dislike": "t_c wonders why you've gifted them such a mundane accessory. Do you think that they are Jayfeather from the elders' tales?"
+            "accept_dislike": "t_c wonders why you've gifted {PRONOUN/t_c/object} such a mundane accessory. Do you think that {PRONOUN/t_c/subject} are Jayfeather from the elders' tales?"
+        },
+        "STICKS": {
+            "accept_dislike": "t_c wonders why you've gifted {PRONOUN/t_c/object} such a mundane accessory. Do you think that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} Jayfeather from the elders' tales?"
         },
         "LARGE DEATHBERRY": {
-            "accept_like": "t_c takes the accessory with a glint in their eyes. Perhaps this gift can be useful."
+            "accept_like": "t_c takes the accessory with a glint in {PRONOUN/t_c/poss} eyes. Perhaps this gift can be useful.",
+            "accept_dislike": "t_c pales at the sight of your gift and stares at you incredulously. {PRONOUN/t_c/subject/CAP} don't seem to appreciate it..."
         },
         "SMALL DEATHBERRY": {
-            "accept_like": "t_c takes the accessory with a glint in their eyes. Perhaps this gift can be useful."
+            "accept_like": "t_c takes the accessory with a glint in {PRONOUN/t_c/poss} eyes. Perhaps this gift can be useful.",
+            "accept_dislike": "t_c pales at the sight of your gift and stares at you incredulously. {PRONOUN/t_c/subject/CAP} don't seem to appreciate it..."
         },
         "RAINBOWBOW": {
             "accept_like": "t_c thanks you and takes the colourful bow with a smile!",
             "accept_dislike": "t_c eyes you strangely and stuffs the bow under {PRONOUN/t_c/poss} nest before anycat can see it."
+        },
+        "SPIKES": {
+            "accept_like": "t_c admires the dangerous-looking spikes as {PRONOUN/t_c/subject} {VERB/t_c/accept/accepts} your gift.",
+            "accept_dislike": "t_c takes the collar gingerly, unsure of how to handle something with spikes like these."
+        },
+        "SPIKESNYLON": {
+            "accept_like": "t_c admires the dangerous-looking spikes as {PRONOUN/t_c/subject} {VERB/t_c/accept/accepts} your gift.",
+            "accept_dislike": "t_c takes the collar gingerly, unsure of how to handle something with spikes like these."
+        },
+        "SPIKESBOW": {
+            "accept_like": "t_c admires the dangerous-looking spikes as {PRONOUN/t_c/subject} {VERB/t_c/accept/accepts} your gift.",
+            "accept_dislike": "t_c takes the collar gingerly, unsure of how to handle something with spikes like these."
+        },
+        "TEETHCOLLAR": {
+            "accept_dislike": "t_c seems unnerved by the collar's teeth. {PRONOUN/t_c/subject/CAP} {VERB/t_c/take/takes} your gift, but {VERB/t_c/try/tries} not to look at it."
+        },
+        "GRAYWOOL": {
+            "accept_like": "t_c seems excited by the wool's softness. {PRONOUN/t_c/subject/CAP} {VERB/t_c/knead/kneads} {PRONOUN/t_c/poss} paws into it, purring {PRONOUN/t_c/poss} thanks."
+        },
+        "BLACKWOOL": {
+            "accept_like": "t_c seems excited by the wool's softness. {PRONOUN/t_c/subject/CAP} {VERB/t_c/knead/kneads} {PRONOUN/t_c/poss} paws into it, purring {PRONOUN/t_c/poss} thanks."
+        },
+        "CREAMWOOL": {
+            "accept_like": "t_c seems excited by the wool's softness. {PRONOUN/t_c/subject/CAP} {VERB/t_c/knead/kneads} {PRONOUN/t_c/poss} paws into it, purring {PRONOUN/t_c/poss} thanks."
+        },
+        "WHITEWOOL": {
+            "accept_like": "t_c seems excited by the wool's softness. {PRONOUN/t_c/subject/CAP} {VERB/t_c/knead/kneads} {PRONOUN/t_c/poss} paws into it, purring {PRONOUN/t_c/poss} thanks."
+        },
+        "STRAWMANE": {
+            "accept_dislike": "t_c crinkles {PRONOUN/t_c/poss} nose and comments that your gift looks extremely itchy."
+        },
+        "FAZBEAR": {
+            "accept_like": "t_c giggles and starts singing underneath {PRONOUN/t_c/poss} breath as {PRONOUN/t_c/subject} {VERB/t_c/accept/accepts} your gift. Hor hor hor hor..."
+        },
+        "TIDE": {
+            "accept_dislike": "t_c warily accepts your gift, glancing at the y_g with uncertainty."
+        },
+        "RAINCOAT": {
+            "accept_dislike": "t_c paws at the loud flimsy fabric, wondering how {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} supposed to use this."
+        },
+        "LAVENDER": {
+            "accept_like": "t_c smells the y_g with a slight smile, mentioning how the aroma calms {PRONOUN/t_c/poss} stress."
+        },
+        "WISTERIA": {
+            "accept_like": "t_c takes the accessory with a smile and asks if you know the symbolism behind y_g. Even if you don't know the answer, t_c is touched anyway."
+        },
+        "FIRBRANCHES": {
+            "accept_dislike": "t_c crinkles {PRONOUN/t_c/poss} nose and comments that your gift looks extremely itchy."
+        },
+        "CRAB": {
+            "accept_like": "Although the y_g snaps their claws at t_c, t_c giggles and states {PRONOUN/t_c/subject}'re going to be the best of friends!",
+            "accept_dislike": "t_c leans closer to look at the gift, only to yowl in pain as the y_g snaps at {PRONOUN/t_c/poss} nose! Ouch!"
+        },
+        "HONEYCOMB": {
+            "accept_like": "t_c takes the accessory with a glint in {PRONOUN/t_c/poss} eyes. You have a sinking feeling t_c is going to cause trouble...",
+            "accept_dislike": "t_c scoffs and accuses you of wanting to ruin {PRONOUN/t_c/poss} coat with the sticky gift!"
         }
     }
 }
