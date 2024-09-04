@@ -172,7 +172,7 @@
                 
             },
             {
-                "text": "Eagerly you settle in with r_e and beg to hear the story of {PRONOUN/r_e/poss} part in the battle with o_cClan",
+                "text": "Eagerly you settle in with r_e and beg to hear the story of {PRONOUN/r_e/poss} part in the battle with o_c! It's a tale full of bravery, danger, and r_e even shows off a skill from that battle for you!",
                 "exp": 15,
                 "weight": 20,
                 "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
@@ -183,6 +183,18 @@
                 "text": "You extend the offer to share your meal but unfortunately, you drop it in the dirt. The elders laugh good-naturedly and assure you it's alright.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "You have far better things to do than sit with the elders. You tell r_e that you'd rather talk battle tactics with the other apprentices and move on with your head held high.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "As much as you love hearing r_e's stories, they're just not told well enough for you. You make an excuse and hurry over to the apprentices to start up an even better storytelling session - in your opinion!",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait":["flamboyant"]
             }
         ]
     },
@@ -203,13 +215,13 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You notice a branch hanging low with a tempting leaf just out of reach.",
+        "intro_text": "You notice a branch hanging low with a tempting leaf just out of reach. It taunts you hanging there, swaying in the breeze, distracting you...",
         "decline_text": "You decide to leave the leaf alone and go back to your training.",
         "chance_of_success": 55,
         "success_outcomes": [
             {
                 "text": "With a quick jump and a swipe, you manage to snag the leaf. Your agility surprises even you. It's a moment you don't want to forget so you decide to take the leaf with you.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "accessory": [
                     {
@@ -221,6 +233,19 @@
                         ]
                     }
                 ]
+            },
+            {
+                "text": "This leaf is begging to be taken down! Claws unsheathed, you take a powerful leap up to the leaf. Your claws catch on the branch and you take the whole limb down! That lead had nothing on you!",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "Instead of leaping for it, you let your creative side take over. You sing with a flourish to this leaf waving in the breeze. It's poetry in motion - and everyone should know that thanks to you!",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": ["flamboyant"],
+                "stat_skill": ["SONG,1"]
             }
         ],
         "fail_outcomes": [
@@ -228,6 +253,19 @@
                 "text": "You leap for the leaf but miss, landing in a heap on the ground. m_n teases you good-naturedly for a moment but encourages you to try again.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "This leaf is begging to be taken down! Claws unsheathed, you take a powerful leap up to the leaf. Your claws catch on the branch though - and you end up stuck hanging there until m_n comes to help. Ouch, your pride...",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "Instead of leaping for it, you let your creative side take over. You sing with a flourish to this leaf waving in the breeze. m_n spots you however, and gives you a scolding for not focusing on your tasks. Oops...",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["flamboyant"],
+                "stat_skill": ["SONG,1"]
             }
         ]
     },
@@ -248,18 +286,18 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You spot a lone crow sitting on a branch. It croaks at you irritatingly.",
+        "intro_text": "You spot a lone crow sitting on a branch while out on a hunting patrol. It croaks at you irritatingly, mocking you, letting all the prey around know where you are. Should you chase it off to better focus on your hunt?",
         "decline_text": "You decide not to bother with the crow and focus on your other tasks.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You successfully chase the crow away, demonstrating your courage and determination. That crow will think twice before bothering to mess with c_nClan!",
+                "text": "You successfully chase the crow away, demonstrating your courage and determination. That crow will think twice before bothering to mess with c_n!",
                 "exp": 10,
                 "weight": 20
             },
             {
                 "text": "You bunch your haunches and prepare yourself - resulting in a massive leap that startles you and the crow. It screeches at you as you manage to get a paw full of feathers before it takes off. You've earned a prize to show m_n!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 15,
                 "accessory": [
                     {
@@ -271,6 +309,30 @@
                         ]
                     }
                 ]
+            },
+            {
+                "text": "You stalk a bit closer and mock the croaks back at the crow. Irritated, it flaps it's wings at you, and you pounce. Crows aren't normally on the freshkill pile, but it is today!",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
+                "stat_skill": ["HUNTER,1", "CLEVER,1"]
+            },
+            {
+                "text": "You have an idea... You croak encouragingly to the crow, who instead of irritating you, now looks interested in you! The two of you talk back and forth for a while before you move on. Later, you spot the same crow again, and they drop something shiny before you!",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": ["flamboyant"],
+                "stat_skill": ["LANGUAGE,1","SPEAKER,1","SONG,1"],
+                "accessory": [
+                    {
+                        "cats": [
+                            "p_l"
+                        ],
+                        "accessory": [
+                            "POPTABS"
+                        ]
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -278,6 +340,20 @@
                 "text": "You make a leap for the crow, but it flies away before you can get close. You land clumsily but unharmed.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "You stalk a bit closer and mock the croaks back at the crow. Irritated, it flaps it's wings at you, and you pounce - only to hit the tree instead. It's raucous caws make you wonder if it's laughing at you...",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
+                "stat_skill": ["HUNTER,1", "CLEVER,1"]
+            },
+            {
+                "text": "You have an idea... You croak encouragingly to the crow, but it shrieks back at you. It pecks at you before taking off in a hail of feathers.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["flamboyant"],
+                "stat_skill": ["LANGUAGE,1","SPEAKER,1","SONG,1"]
             }
         ]
     },
@@ -298,7 +374,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "m_n suggests that it's time to hone your climbing skills. You see a tall tree nearby, its branches waving invitingly in the wind.",
+        "intro_text": "m_n suggests that it's time to hone your climbing skills. {PRONOUN/m_n/subject} {VERB/m_n/guide/guides} you to a tall tree nearby, its branches waving invitingly in the wind.",
         "decline_text": "You choose not to climb the tree, deciding that it's a bit too daunting for now. You promise yourself to try again another day when you feel more prepared.",
         "chance_of_success": 55,
         "success_outcomes": [
@@ -306,22 +382,8 @@
                 "text": "Summoning your courage, you ascend the tree swiftly and smoothly. From the top, you enjoy a bird's-eye view of the forest. m_n gazes up in admiration, praising your agility and bravery.",
                 "exp": 15,
                 "weight": 20,
-                "stat_trait": [
-                    "ambitious",
-                    "confident",
-                    "competitive",
-                    "cunning",
-                    "flexible",
-                    "energetic",
-                    "bold",
-                    "arrogant",
-                    "daring",
-                    "careful",
-                    "oblivious",
-                    "obsessive",
-                    "adventurous"
-                ],
-                "stat_skill": ["CLIMBER,1", "CLEVER,1", "GRACE,1"]
+                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
+                "stat_skill": ["CLIMBER,1"]
             },
             {
                 "text": "With m_n's encouragement, you start up the tree. Halfway up, however, you lose your nerves. m_n calls out to assure you before {PRONOUN/m_n/subject} {VERB/m_n/climb/climbs} up to coax you the rest of the way up. You're grateful to {PRONOUN/m_n/object} as you catch your breath at the top.",
@@ -340,6 +402,13 @@
                         "injuries": ["bruises"]
                     }
                 ]
+            },
+            {
+                "text": "You're in your element - of course you can conquer this tree! Halfway up, however, you choose the wrong branch, and nearly go tumbling down to the ground below. You manage to catch yourself on the trunk. Your nerves get the better of you after that though...",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
+                "stat_skill": ["CLIMBER,1"]
             }
         ]
     },
@@ -360,7 +429,7 @@
         "max_cats": 5,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "An emergency meeting has been called, suspecting an invasion by the rival Clan. You're asked to participate in the border patrol.",
+        "intro_text": "An emergency meeting has been called, suspecting an invasion by o_c. You're asked to participate in the border patrol with m_n, r_w1, and r_w2. l_n seems to have faith that you can do this.",
         "decline_text": "You decide to decline the task, feeling a bit overwhelmed. You resolve to support your Clan in other ways.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -368,31 +437,57 @@
                 "text": "You accept the task and, with your keen senses, you successfully spot traces of the rival Clan. The Clan praises your vigilance, which has helped avert a potential crisis. l_n seems quite pleased with you!",
                 "exp": 15,
                 "weight": 20,
-                "stat_trait": [
-                    "ambitious",
-                    "confident",
-                    "careful",
-                    "competitive",
-                    "strict",
-                    "cunning",
-                    "responsible",
-                    "righteous",
-                    "thoughtful",
-                    "loyal"
-                ],
                 "stat_skill": ["EXPLORER,1", "NAVIGATOR,1", "TRACKER,1", "SENSE,1"]
             },
             {
-                "text": "You're not the best tracker, but you give it your all. You lead r_w and m_n to a suspicious spot and the two more experienced cats take over quickly. r_w finds traces thanks to you!",
+                "text": "You're not the best tracker, but you give it your all. You lead r_w1, r_w2 and m_n to a suspicious spot and the three more experienced cats take over quickly. r_w2 finds traces thanks to you! Later, l_n takes you aside to tell you that you did well.",
                 "exp": 5,
                 "weight": 20
+            },
+            {
+                "text": "Of course l_n has faith in you, you're y_c! You're not about to let o_c get the better of you either. Before m_n can stop you, you've charged ahead and catch two apprentices in the act. r_w1 is at your side and you send the interlopers packing with a good scratch to remember you by!",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "You agree to the patrol - it's a great opportunity after all! Your tail is high as you walk alongside m_n. {PRONOUN/m_n/subject/CAP} {VERB/m_n/stop/stops} as the patrol encounters o_c, but you're so engrossed in your merry-making that you decide not to stop with them. Somehow, your carefree fun diffuses tensions!",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": ["flamboyant"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Despite your best efforts, you fail to notice any signs of the rival Clan. You return to the c_nClan camp feeling a bit downcast, but your Clanmates appreciate your effort and reassure you for the future.",
+                "text": "Despite your best efforts, you fail to notice any signs of the rival Clan. You return to the c_n camp feeling a bit downcast, but your Clanmates appreciate your effort and reassure you for the future.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "No hesitation, go go go! You race ahead of the patrol with deaf ears to m_n's calls. Unfortunately, your attitude has consequences - you run head first into the o_c invasion. Alone. You're given a reminder of what your personality can mean for you if you don't think ahead before the rest of the patrol catches up to defend the territory... and you.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
+                "injury": [ 
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["minor_injury"]
+                    
+                    }
+                ]
+            },
+            {
+                "text": "Why not! You're engrossed in making sure you're still the star of the show despite m_n's hushing. When you do stumble upon the o_n invasion, you take it a bit literally. You fumble right over your own paws while showing off a fancy move you said you were going to use on them. The rival patrol bursts into laughter. Well... at least you remained the star!",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["flamboyant"],
+                "injury": [ 
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["minor_injury"]
+                    
+                    }
+                ]
             }
         ]
     },
@@ -413,18 +508,18 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The leader asks for a volunteer to deliver a message to the next Clan. The journey is long and fraught with potential danger.",
+        "intro_text": "l_n asks for a volunteer to deliver a message to the next Clan. The journey is long and fraught with potential danger, so {PRONOUN/l_n/subject} {VERB/l_n/don't/doesn't} want to force someone to undertake such a task. Are you the cat for the job?",
         "decline_text": "You choose to not volunteer for the task, as the journey feels too perilous. You decide to support the Clan in more familiar ways.",
         "chance_of_success": 65,
         "success_outcomes": [
             {
-                "text": "You bravely volunteer and embark on the journey. Navigating through unfamiliar territory, you successfully deliver the message and return unscathed, gaining your leader's admiration.",
+                "text": "You bravely volunteer and embark on the journey. Navigating through unfamiliar territory, you successfully deliver the message and return unscathed, gaining l_n's admiration.",
                 "exp": 15,
                 "weight": 10
             },
             {
                 "text": "You admit to m_n that you'd like the experience, but are not yet confident in your ability alone. {PRONOUN/m_n/subject} had no intentions of going originally but offers to go with you. The two of you take on the task and succeed without issue.",
-                "exp": 1,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -555,7 +650,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_w1 and r_w2 invite you to share a meal. It's a chance to bond and learn more about your clanmates.",
+        "intro_text": "r_w1 and r_w2 invite you to share a meal by the warrior's den. Neither seems to mind that you're still an apprentice. It's a chance to bond and learn more about your clanmates.",
         "decline_text": "You politely decline the warrior's invitation, deciding to focus on your training instead.",
         "chance_of_success": 70,
         "success_outcomes": [
@@ -590,7 +685,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_a challenges you to a friendly sparring match. It's a great way to practice combat skills.",
+        "intro_text": "r_a challenges you to a friendly sparring match with a playful swipe of a soft paw. It's a great way to practice combat skills and bond with your denmate.",
         "decline_text": "You decide to decline the challenge and choose to focus on your individual training instead. There will be other opportunities for friendly sparring.",
         "chance_of_success": 55,
         "success_outcomes": [
@@ -625,19 +720,29 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "A queen in the nursery asks you to watch over her kits while she fetches fresh moss. It's a chance to show your nurturing side.",
-        "decline_text": "You politely decline the queen's request, as you feel unprepared for the task.",
+        "intro_text": "r_q emerges from the nursery to ask you to watch over the kits while {PRONOUN/r_q/subject} {VERB/r_q/fetch/fetches} fresh moss for nests tonight. It's a chance to show your nurturing side.",
+        "decline_text": "You politely decline r_q's request, as you feel unprepared for the task.",
         "chance_of_success": 65,
         "success_outcomes": [
             {
-                "text": "You agree and keep a careful eye on the playful kits. You manage to entertain them until you're fully tired out. They're cuddled up to your side when the queen returns and thanks you for your help, appreciating your kindness and responsibility.",
+                "text": "You agree and keep a careful eye on the playful kits. You manage to entertain them until you're fully tired out. They're cuddled up to your side when r_q returns and thanks you for your help, appreciating your kindness and responsibility.",
                 "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "You agree with a little apprehension. It seems to go in your favor though - and you've engaged them in a game! The kits are still running around playfully when r_q comes back, purring gratitude to you for the help.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You try your best to watch the kits, but they prove too mischievous to handle. One attempts to climb on your back, while another sinks their tiny fangs into your tail. You screech, and the tired queen has to rush back to the nursery to help.",
+                "text": "You try your best to watch the kits, but they prove too mischievous to handle. One attempts to climb on your back, while another sinks their tiny fangs into your tail. You screech, and the tired r_q has to rush back to the nursery to help.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "How hard could it be? As it turns out, harder than you thought. r_q ducks back in with a mouthful of moss and finds you in a defeated heap - tired out long before the rambunctious kits... {PRONOUN/r_q/subject/CAP} {VERB/r_q/thank/thanks} you anyways and chuckles a bit as you head for your nest.",
                 "exp": 0,
                 "weight": 20
             }
@@ -814,9 +919,16 @@
                 "weight": 20
             },
             {
-                "text": "Caught off guard, you react awkwardly, which makes them feel more embarrassed. You wish you had handled the situation better.",
+                "text": "You gloat over r_a's mistake, loudly proclaiming that you would never do such a thing yourself! You're swift to untangle yourself and get back to your mentor. m_n scolds you for your behavior though. Sheesh, it's not your fault r_a was clumsy!",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "You moan and groan dramatically about the accident, pretending to be soooo injured! r_a starts to fret and doesn't seem to realize you're being playful. Uh oh, your act was too convincing and has upset {PRONOUN/r_a/object}. If m_n didn't know you better, you might have been bundled off to r_m...",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["flamboyant"]
             }
         ]
     },
@@ -837,7 +949,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You and another apprentice are tasked with collecting moss. As you work together, you can't help but notice how they look under the sunlight.",
+        "intro_text": "You and r_a are tasked with collecting moss. As you work together, you can't help but notice how they look under the sunlight.",
         "decline_text": "Feeling flustered, you decide to leave the task to them and assist elsewhere in the camp. You hope to handle your feelings better next time.",
         "chance_of_success": 50,
         "success_outcomes": [
@@ -872,14 +984,26 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "One of your fellow apprentices has a difficult time during training. Seeing them upset, you consider offering them comfort.",
+        "intro_text": "r_a seems to have had a difficult time during {PRONOUN/r_a/poss} last training session. {PRONOUN/r_a/poss/CAP} head is held low and {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} nursing a bruise. Seeing them upset, you consider offering them comfort.",
         "decline_text": "Feeling unsure about what to say, you decide not to approach them. You hope they'll feel better soon.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "You approach them and offer kind words of encouragement. They thank you for your support, and your relationship with them grows.",
-                "exp": 20,
+                "text": "You approach {PRONOUN/r_a/object} and offer kind words of encouragement. After a few moments of listening, r_a thank you for your support, giving you a small smile of appreciation. Taking the moment to be kind was worth it.",
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Comfort isn't your strong suit. There's still some things you can do though! You approach and ask r_a if {PRONOUN/r_a/subject} had trouble with a battle move. {PRONOUN/r_a/subject/CAP} {VERB/r_a/perk/perks} seeing your interest, knowing that if any help is needed, you're the cat for the job! It takes a few tries but r_a is happier once {PRONOUN/r_a/subject} {VERB/r_a/get/gets} the move down.",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "Sauntering up to r_a, you begin to purposefully make a fool of yourself, tripping and tumbling dramatically into the clearing! Seeing it makes {PRONOUN/r_a/object} laugh quietly. It doesn't take but a few more silly antics and jokes before {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} looking far more upbeat.",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": ["flamboyant"]
             }
         ],
         "fail_outcomes": [
@@ -887,6 +1011,18 @@
                 "text": "You try to comfort them, but your words come out clumsily, leading to an awkward silence. You feel bad but decide to learn from the experience.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "Comfort isn't your strong suit - clearly. Your overconfidence only seems to make r_a feel worse. You don't like admitting defeat but... At least you tried?",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "When you try your best to lighten the mood, r_a only seems to sour further. Making a fool of yourself to cheer {PRONOUN/r_a/object} up has backfired when you're accused of making fun of {PRONOUN/r_a/object}. Oops!",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["flamboyant"]
             }
         ]
     },
@@ -907,14 +1043,26 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "An apprentice you're close to accidentally trods over you as they leave the apprentice den. They're visibly embarrassed.",
+        "intro_text": "r_a isn't watching where {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} going and accidentally trods over you as they leave the apprentice den. They're visibly embarrassed, stammering an apology swiftly.",
         "decline_text": "Deciding to give them space, you quietly clean up and go about your duties elsewhere in the camp.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You chuckle, making light of the situation. They join in the laughter, and you both continue your duties in higher spirits.",
-                "exp": 15,
+                "text": "You brush it off easily as a small mistake and make light of the situation. They join in on your easy attitude, and you both continue your duties in higher spirits.",
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "You playfully swipe at {PRONOUN/r_a/object} with a soft paw, claiming that this makes you even! That seems to take r_a's mind off the little mistake long enough for you to suggest getting in some extra training!",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "Forsaken, you cry out! Your glorious tail, mangled, ruined! As you roll around making a playful fuss about how wounded you are laughter graces your ears. It brings a purr to you to know that you've cheered them up.",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": ["flamboyant"]
             }
         ],
         "fail_outcomes": [
@@ -922,6 +1070,18 @@
                 "text": "You react with surprise, which makes them feel even more embarrassed. You try to laugh it off, but the atmosphere remains awkward.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "More than a little cross, you swipe with a soft paw as you tell {PRONOUN/r_a/object} to mind {PRONOUN/r_a/poss} paws in the future. r_a bristles and jumps back before hurrying off.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "You just spent ages grooming, only to be stepped on! You try to downplay your frustration but r_a knows you better and swiftly slinks off as you begin your washing again to make sure the fur lays perfectly.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["flamboyant"]
             }
         ]
     },
@@ -942,19 +1102,31 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your mentor tasks you with hunting for the elders.",
+        "intro_text": "Since it's a nice day out, m_n tasks you with hunting for r_e. You're to go out alone and bring back extra if you can for the freshkill pile.",
         "decline_text": "You decide not to hunt for the elders and instead focus on your training.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
                 "text": "As you hunt, you find a mouse nest, you burrow down into the nest and catch any you can get your claws on, the elders will be pleased tonight!",
-                "exp": 20,
+                "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Of course you'll hunt for r_e - if you bring {PRONOUN/r_e/poss} favorite you might get to hear another story of great deeds in Clan history! You spend ages hunting down the best prey to exchange for a tale - and anything else you find along the way has filled the freshkill pile. r_e is more than happy to share a battle story for you when you deliver the prey.",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
+            },
+            {
+                "text": "r_e has the best stories and even does fun voices! Of course you'll catch something for {PRONOUN/r_e/object}! Catching a nice bird and two mice is plenty for your task. You deliver the bird to r_e with a flourish, telling the tale of slavering all sun-high for this grandiose meal - making {PRONOUN/r_e/object} laugh.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["flamboyant"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "The territory seems to be bare tonight, you can't catch a whiff of prey.",
+                "text": "The territory seems to be bare tonight, you can't catch a whiff of prey. With a heavy heart you report back to m_n.",
                 "exp": 0,
                 "weight": 20
             }
@@ -977,19 +1149,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You go out battle training with your mentor.",
-        "decline_text": "You decide not to go battle training so you hunt instead.",
+        "intro_text": "You go out battle training with your mentor. m_n circles you as you prepare to test out a move r_w taught you without your mentor knowing. {PRONOUN/r_w/subject/CAP} {VERB/r_w/watch/watches} with amusement.",
+        "decline_text": "You decide not to go battle training so you ask to hunt instead.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You have a blast! Your mentor shares their best moves with you and you even show them a couple of your own.",
-                "exp": 20,
+                "text": "You have a blast surprising m_n! Your mentor is caught off guard by the move, and r_w ends up laughing at how you beat m_n with {PRONOUN/r_w/poss} favorite trick.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You can't seem to put your paws were your mentor tells you and finally they decide its time to finish.",
+                "text": "You can't seem to put your paws where r_w showed you and finally m_n decide it's time to finish this session. r_w gets a mild scolding for teaching you a move that was too advanced...",
                 "exp": 0,
                 "weight": 20
             }
@@ -1012,19 +1184,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your mentor asks if you would like to check the borders with them",
+        "intro_text": "m_n asks if you would like to check the borders with {PRONOUN/m_n/object}, standing at the camp entrance with a smile. It's a lovely day out and it would be a good time to explore!",
         "decline_text": "You decline the offer.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You jump to your paws excitedly, running after your mentor to explore the territory, they escort you through the scenery showing you places in the territory you never knew existed!",
-                "exp": 20,
+                "text": "You jump to your paws excitedly, running after your mentor to explore the territory. {PRONOUN/m_n/subject/CAP} {VERB/m_n/escort/escorts} you through the scenery showing you places in the territory you never knew existed!",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You jump to your paws and run after them. As you trek through the territory, you become excited and run off, your mentor's walking too slow anyway. After a moment you realize you don't recognise this part of the forest. Eventually your mentor finds you and leads you back to camp with a scolding about running off.",
+                "text": "You jump to your paws and run after {PRONOUN/m_n/object}. As you trek through the territory, you become excited and run off - since m_n's walking too slow anyway. After a moment you realize you don't recognise this part of the forest. Eventually your mentor finds you and leads you back to camp with a scolding about running off.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1047,19 +1219,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You go out hunting with your mentor.",
+        "intro_text": "The freshkill pile is low, so it's time go out hunting with your mentor. It's a great chance to practice some new techniques you were taught by m_n!",
         "decline_text": "You decide not to go hunting so you practice your battle moves instead.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You have a blast! Your mentor shows you the best places for prey and you both come back with a hefty haul.",
-                "exp": 20,
+                "text": "You have a blast! m_n shows you the best places for prey at this time and you both come back with a hefty haul to fill the freshkill pile.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You can't seem to find any prey, your mentor comforts you, saying they wouldn't have had any hope of finding prey in this terrible weather either.",
+                "text": "You can't seem to find any prey. m_n comforts you, saying {PRONOUN/m_n/subject} wouldn't have had any hope of finding prey in this terrible weather either.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1082,19 +1254,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You go out hunting with your mentor.",
+        "intro_text": "You go out hunting with r_w1 and r_w2. You suspect m_n is likely overseeing from the shadows.",
         "decline_text": "You decide not to go hunting so you practice your battle moves instead.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "This is a stealth lesson, and you are the stealthiest cat today, you bring brack more prey than your mentor!",
-                "exp": 20,
+                "text": "This is a stealth lesson, and you are the stealthiest cat today, you bring brack more prey than r_w1 and r_w2! When you see m_n, you're praised for your abilities. r_w2 says {PRONOUN/m_n/subject} taught you well, making {PRONOUN/m_n/object} lick {PRONOUN/poss} chest self-consciously before smiling.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You can't seem to find any prey, the scents are all just muddled up today, you watch as a senior warrior pads past, their jaws full with freshly caught prey, maybe it was just bad luck.",
+                "text": "You can't seem to find any prey! The scents are all just muddled up today. You watch as r_w1 pads past, their jaws full with freshly caught prey, maybe it was just bad luck. Hopefully m_n isn't too disappointed in you.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1117,19 +1289,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You think about hunting by yourself, hoping it might impress your mentor.",
+        "intro_text": "You think about hunting by yourself, hoping it might impress your mentor. m_n is out with d_n and r_w, so the day is yours!",
         "decline_text": "You decide not to go hunting alone you'd rather not upset your mentor.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You go out alone, the peace and quiet gives you time to perfect your hunting crouch and you bring back an impressive amount of prey, your mentor watches as you enter the camp their eyes glowing with pride.",
+                "text": "You go out alone, the peace and quiet gives you time to perfect your hunting crouch and you bring back an impressive amount of prey! When m_n watches as you enter the camp, {PRONOUN/m_n/poss} eyes are glowing with pride.",
                 "exp": 20,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "As you head out, every creaking branch and swishing fern makes you jump, maybe hunting alone wasn't the best idea...",
+                "text": "As you head out, every creaking branch and swishing fern makes you jump, maybe hunting alone wasn't the best idea... When you return m_n finds out and scolds you for going alone but is thankful you didn't stay out.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1152,19 +1324,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You think about hunting by yourself, hoping it might impress your mentor.",
+        "intro_text": "You think about hunting by yourself. The time to think without m_n should be good for you, and if you bing back some prey? That's just a bonus.",
         "decline_text": "You decide not to go hunting alone you'd rather not upset your mentor.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You go out alone, the peace and quiet gives you confidence and you seem to be focusing better, you catch the most prey you've ever caught!",
-                "exp": 20,
+                "text": "You go out to reflect, and the peace and quiet gives you confidence. You seem to be focusing better now that you've gotten a chance to be alone with your thoughts. You make several great catches with the increased mindfulness! m_n doesn't seem to mind when you return and report your personal task, praising you for being aware of yourself.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "As you head out, the territory seems to grow into a maze, every tree and rock looks the same, as you begin to panic, a patrol of warriors stumble upon you looking surprised to see you alone, your mentor happens to be in the patrol and they scold you for being so reckless, immediately taking you home.",
+                "text": "As you head out the territory seems to grow into a maze. Every tree and rock looks the same! As you begin to panic, a patrol of warriors stumble upon you looking surprised to see you alone. m_n happens to be in the patrol and {PRONOUN/m_n/subject} {VERB/m_n/scold/scolds} you for being so reckless, immediately taking you home.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1187,19 +1359,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You decide to take some time to perfect your hunting technique.",
+        "intro_text": "You decide to take some time to perfect your hunting technique. r_w agrees to help since m_n is out on patrol.",
         "decline_text": "You decide that your battle skills need more work and practice on that instead.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Finding a quiet place not too far from camp, you work hard at your hunting crouch, practicing you stealth amongst some long grass and familiarise yourself with wind changes, you return to camp feeling pleased with your progress.",
-                "exp": 20,
+                "text": "Finding a quiet place not too far from camp, you work hard at your hunting crouch with r_w watching, Practicing your stealth amongst some long grass and familiarizing yourself with wind changes does you good. When you return to camp with r_w's praise on your mind, you feel pleased with your progress.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You can't seem to find anywhere to practice your moves that doesn't already have a cat, you can't think about anything with all the warriors trudging around in your space.",
+                "text": "You can't seem to find anywhere to practice your moves that doesn't already have a cat, you can't think about anything with all the warriors trudging around in your space. r_w gently suggests you wait for m_n to set some time aside to help you without so much distraction.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1222,19 +1394,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You decide to take some time to perfect your fighting techniques.",
+        "intro_text": "You decide to take some time to perfect your fighting techniques alone. The extra time to practice will hopefully give you some personal clarity on your skills.",
         "decline_text": "You decide that your hunting techniques need more work and you practice that instead.",
-        "chance_of_success": 40,
+        "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Finding a quiet place not too far from camp, you work hard at practicing ambushes, defensive and offensive attacks, even coming up with a brand new move to show your mentor! You return to camp feeling pleased with your progress.",
-                "exp": 20,
+                "text": "After finding a quiet place not too far from camp you work hard at practicing ambushes, defensive and offensive attacks. You even coming up with a brand new move to show m_n! You return to camp feeling pleased with your progress.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You can't seem to find anywhere to practice your moves that doesn't already have a cat, you can't think about anything with all the warriors trudging around in your space.",
+                "text": "There's no space that you feel is good enough that isn't already occupied. r_w shooes you back to camp after spotting you alone. Your plans for the day are foiled, and you return with a heavy heart.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1257,19 +1429,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The medicine cat asks you to collect some more moss for the herb storage.",
+        "intro_text": "r_m asks you to collect some more moss for the herb storage. It's running low, and the nests need to be changed. It's also good for soaking up water for ill cats. r_m is too busy to do it at the moment.",
         "decline_text": "Medicine cat duties! No way! You're training to be a warrior!",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You agree, and although moss collecting is one of the more boring duties, it is still an important task. You work hard to bring home a healthly collection of fresh moss, familiarizing yourself with the territory as you go.",
+                "text": "You agree, and although moss collecting is one of the more boring duties, it is still an important task. You work hard to bring home a healthly collection of fresh moss, familiarizing yourself with the territory as you go. r_m is incredibly grateful for the assistance.",
                 "exp": 20,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You agree, but as you pad through the territory a downpour of rain soils any moss that could have been collected, you return back empty pawed.",
+                "text": "You agree, but as you pad through the territory a downpour of rain soils any moss that could have been collected, you return back empty pawed. r_m sighs heavily as you return but looks up at the sky and knows you couldn't control that.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1292,21 +1464,27 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your mentor asks you to clean out the elders den.",
+        "intro_text": "Your mentor asks you to clean out the elders den for r_e. There is a budding outbreak of fleas, and this will help stop it quickly.",
         "decline_text": "Cleaning out the elders den? You slip away quietly saying your off to gather moss, but you curl up and take nap in a patch of warm sun.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Although being one of the worst duties and apprentice can be assigned, the task you have been given must be done, as you clean out the moss the elders tell you an enthralling tale of daring and courage keeping up the good spirits, it turns out that the task wasn't as bad as you thought.",
-                "exp": 20,
+                "text": "Although it's one of the worst duties an apprentice can be assigned, the task you have been given must be done. As you clean out the flea-infested moss r_e tell you an enthralling tale of daring acts and courageous moments to keep up your good spirits. It turns out that the task wasn't as bad as you thought! You thankfully don't bring any back with you either.",
+                "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Although grumbling and complaining you agree to do the task, but your bad mood makes the elders cranky and you begin a heated debate about were the softest moss should be placed, eventually they send you out stating they can do it themselves.",
+                "text": "Although grumbling and complaining you agree to do the task. Your bad mood makes the elders cranky and you begin a heated debate about were the softest moss should be placed. Eventually r_e send you out stating they can do it themselves. That evening you realize your pelt is full of fleas!",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["fleas"]
+                    }
+                ]
             }
         ]
     },
@@ -1327,19 +1505,19 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your mentor asks you to check the elders for ticks.",
+        "intro_text": "m_n tells you to check the elders for ticks before training. You're directed to get mousebile from r_m for the task.",
         "decline_text": "Checking the elders for ticks? Yuck!",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You agree, although moss collecting being one of the more boring duties, its still an important task and you work hard at bringing home a healthy collection of fresh moss, familiarising yourself with the territory as you go.",
+                "text": "You agree, and trudge to r_m to get the dreaded mousebile. {PRONOUN/r_m/subject} {VERB/r_m/seem/seems} sympathetic and gives you a bit of honey to cheer you up before your task. In the end there are actually fewer ticks than expected and you head out with m_n for training right away!",
                 "exp": 20,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Although grumbling and complaining you agree to do the task, dreading it with every hair on your pelt, but as you walk to the den, the mousebile in your jaws, you stumble, the foul stuff spilling all over your muzzle! It takes forever to get the smell out of your pelt and another apprentice has already done the task by the time your done.",
+                "text": "Although grumbling and complaining you agree to do the task, dreading it with every hair on your pelt. But as you walk to the den with the mousebile in your jaws, you stumble, and the foul stuff spills all over your chest and muzzle! It takes forever to get the smell out of your fur and mouth. Another apprentice has already done the task by the time you're done.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1364,21 +1542,33 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your mentor brings you out of camp for a training session. You crouch down, ready for a spar, and they tell you to keep your claws unsheathed for the fight.",
+        "intro_text": "m_n brings you out of camp for a training session. You crouch down, ready for a spar, and they tell you to keep your claws unsheathed for the fight. d_n is watching today.",
         "decline_text": "You hesitate, unsure if your leader would approve. They sense your unwillingness, and tell you to forget about it with a disappointed flick of their tail.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The two of you trade blows fiercely, aiming to draw blood. By the end, you're exhausted, panting and bleeding, but still standing. Your mentor looks at you proudly, sporting some scratches of their own, and says you'll make a fearsome warrior. ",
+                "text": "The two of you trade blows fiercely, aiming to draw blood. By the end, you're exhausted, panting and bleeding, but still standing. m_n looks at you proudly, sporting some scratches of {PRONOUN/m_n/poss} own, and says you'll make a fearsome warrior one day. d_n agrees with a smile.",
                 "exp": 20,
-                "weight": 20
+                "weight": 20,
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["scrapes"]
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You try your best to take their words to heart, but you can barely touch them anyway. Their claws score into your flank over and over again, until you're covered in scratches. They seem disappointed in you, and you limp back to the medicine cat's den, bruised and bleeding. ",
+                "text": "You try your best to take {PRONOUN/m_n/poss} words to heart, but you can barely touch {PRONOUN/m_n/object} anyway. {PRONOUN/m_n/poss/CAP} claws score into your flank over and over again, until you're covered in scratches. d_n seems disappointed in you, and you limp back to the medicine cat's den, bruised and bleeding. ",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["small_bite_injury"]
+                    }
+                ]
             }
         ]
     },
