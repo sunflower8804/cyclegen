@@ -24,6 +24,12 @@
                 "text": "You locate the mouse and begins to stalk. The mouse nibbles on a seed, unaware of the hunting cat. You waggle your haunches and leap, pinning the mouse beneath a paw as you make the killing bite.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "You start to stalk towards the smell, but pause when you realize it seems to be coming from multiple directions. You stop and focus. After a moment, you realize that the breeze is confusing you by dispersing the scent, and quickly pinpoint where the mouse <i>actually</i> is. You creep forward, and... yes! You easily catch the mouse and purr to yourself as you trot back towards camp.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["CLEVER,1", "HUNTER,1", "SENSE,1", "TRACKER,1"]
             }
         ],
         "fail_outcomes": [
@@ -31,6 +37,23 @@
                 "text": "You narrowly miss the mouse.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "You begin to creep towards the scent, but your paw catches on a trailing stem, and you trip. You hit the ground hard, and when you scramble back up, the mouse's scent has vanished.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You begin to stalk forward, but something moves behind you. You freeze, scanning your surroundings. After you've determined there's nothing there, you try to find the mouse again, but the scent has dissipated.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly"
+                ]
             }
         ]
     },
@@ -59,6 +82,24 @@
                 "text": "You successfully catch the squirrel and manage to get back to your territory without being spotted by o_c_n. Your Clan is pleased with the extra prey.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Not wanting your patrol to witness you breaking the Warrior Code, you wait until you're alone. You scan your surroundings, making sure no o_c_n warriors are nearby, then keep close to the undergrowth as you stalk and catch the squirrel. You retreat back across the border, your heart racing, before anyone notices your transgression.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly"
+                ]
+            },
+            {
+                "text": "It's probably unwise to cross the border, but that doesn't mean you have to give up! You spot some large nuts nearby and roll them towards the squirrel, making a trail back across the border. After a few moments, the squirrel notices and hops closer, stopping at and inspecting each nut. As soon as it's on your territory, you leap forward and quickly kill it. Success!",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["CLEVER,1", "INNOVATOR,1", "SCHOLAR,1", "THINKER,1"]
             }
         ],
         "fail_outcomes": [
@@ -66,7 +107,33 @@
                 "text": "You attempt to catch the squirrel, but a o_c_n patrol spots you. A fight ensues, and you return to your Clan empty-pawed.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "The squirrel would be a great catch, but what if someone from o_c_n sees you? You linger on the border, your mind running through the possibilities: increased tensions, maybe a skirmish, or even all-out war... When you snap yourself out of your thoughts, the squirrel is gone.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly"
+                ]
+            },
+            {
+                "text": "You wait at the edge of the hunting ground for a while, observing it. Once you're sure that all of the Twolegs are inside the Twolegplace and won't be able to easily chase you, you venture closer. You successfully catch as much prey as you can carry before quickly leaving the area.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "lonesome"
+                ]
             }
+
         ]
     },
     {
@@ -101,6 +168,43 @@
                 "text": "You hunt in the new area, but a Twoleg spots you. You manage to escape, but it's a close call.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "You sneak through the hunting ground, ready to bolt at the first sign of Twolegs. You keep to the shadows, never straying into the open, and the afternoon passes without incident. Unfortunately, you focus more on avoiding Twolegs than you focus on catching prey, and you return to camp empty-pawed.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly"
+                ]
+            },
+            {
+                "text": "Despite your caution, you've barely set paw in the new hunting grounds when  a pair of Twoleg kits spots you. They give chase, and you flee. It's easy to outrun them, but for the next few nights you're kept awake worrying that you've led Twolegs to your camp.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "emotional",
+	                "cowardly"
+                ]
+            },
+            {
+                "text": "You creep into the hunting ground, alert for any sign of Twolegs. When a pair of Twoleg kits run out of the Twolegplace, you're quick enough to jump into a nearby bush before you're spotted! Unfortunately, the kits stay outside until the sun starts to set, so you have to uncomfortably crouch in the bush for several hours. You finally escape and make it back to camp, disappointed with your lack of prey.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly"
+                ]
             }
         ]
     },
@@ -129,6 +233,33 @@
                 "text": "You join the patrol and do an excellent job securing the Clan's borders. Your vigilance is noted.",
                 "exp": 25,
                 "weight": 20
+            },
+            {
+                "text": "You volunteer, hoping that a patrol will help you get your mind off of some things. The familiar route is comforting, as is marking the same spots you've marked dozens of times before. The patrol passes without incident, and you return to camp calmer and confident that you've helped your Clan.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "reserved",
+	                "emotional",
+	                "lonesome"
+                ]
+            },
+            {
+                "text": "You decide to volunteer. You haven't encountered any of your ghostly cat acquaintances recently, and since they seem to spend more time outside of your Clan's territory  than within it, joining a border patrol would be a good opportunity to see if anyone is around. It's a beautiful day, and your patrol doesn't encounter any trouble. You notice a translucent kittypet perched on a post beside the Thunderpath, mist spilling off of their pelt. They nod politely and bound away before you can introduce yourself.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["GHOST,1"]
+            },
+            {
+                "text": "You volunteer and follow d_n,  r_w1, and r_w2 to the edge of the territory, but the patrol is derailed when you notice the scent of a dog crossing the border. Aware of your proficiency with tracking, d_n tells r_w1 and r_w2 to finish the patrol while you track the dog with {PRONOUN/d_n/object}. You successfully follow the scent trail through the territory until, to your relief, it crosses back over the border. Your Clanmates are grateful that you took the effort to make sure the territory was safe.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["TRACKER,1"]
             }
         ],
         "fail_outcomes": [
@@ -136,6 +267,21 @@
                 "text": "You volunteer for the patrol, but get distracted and miss making a scent marker. Your mistake is pointed out, but forgiven.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "You join the patrol but are unfortunately joined by r_w, who was rude to you earlier in the day. You hope you just misunderstood {PRONOUN/r_w/object}, but you're too nervous to ask. Your awkwardness distracts the rest of the patrol and makes the situation uncomfortable for everyone.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "reserved",
+	                "emotional",
+	                "lonesome"
+                ]
             }
         ]
     },
@@ -199,13 +345,50 @@
                 "text": "You remove the stale prey and prevent any potential sickness in the camp. The medicine cat thanks you.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Already imagining sickness sweeping through the camp, you quickly remove the offending piece, then diligently comb the rest of the fresh-kill pile and identify some more stale prey. l_n nods as {PRONOUN/l_n/subject} {VERB/l_n/pass/passes}, recognizing your effort.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "emotional"
+                ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You attempt to remove the stale prey, but accidentally knock over the fresh-kill pile in the process. How embarassing!",
+                "text": "You attempt to remove the stale prey, but accidentally knock over the fresh-kill pile in the process. How embarrassing!",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "You start to remove the piece of prey, but stop when you realize it looks like you're digging through the pile. Will your Clanmates think you're trying to take the best prey for yourself? You pause, frozen in thought. After a moment, r_w walks by, looks at you in confusion, and removes the stale prey {PRONOUN/r_w/self}.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly"
+                ]
+            },
+            {
+                "text": "You begin reaching for the prey, but recoil at the thought of touching stale food. What if it's already old enough to cause illness? You want to help your Clan, but you also want to keep your paws clean. Unsure of what to do, you leave the issue for someone else to take care of.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly"
+                ]
             }
         ]
     },
@@ -409,6 +592,44 @@
                 "text": "You manage to find a patch of marigold and return it to the medicine cat. They thank you, and you feel proud of your contribution.",
                 "exp": 20,
                 "weight": 20
+            },
+            {
+                "text": "You diligently search the areas that r_m directed you to and find several plants which could be marigold. You don't feel confident in deciding which is correct, so you bring leaves from each of them back to camp. r_m praises your care, identifies the marigold, and keeps the other leaves to use for bandages.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "reserved"
+                ]
+            },
+            {
+                "text": "You want to help, but aren't confident that you can successfully identify marigold. You confess this to r_m, expecting disappointment, but instead they take you on a short walk to show you nearby herb patches and teach you how to identify plants! r_m tells you they'll be sure to ask for your help in the future.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "reserved"
+                ]
+            },
+            {
+                "text": "You might not be a medicine cat, but for some reason, herb identification has always been easy for you. You remember seeing some flowers while on patrol yesterday, and sure enough, when you return to that spot, you find a thick patch of marigold! r_m is thrilled. There's even enough flowers for you to take one for yourself!",
+                "exp": 10,
+                "weight": 20,
+                "accessory": [
+                    {
+                        "cats": ["p_l"],
+                        "accessory": ["MARIGOLD"]
+                    }
+                ],
+                "stat_skill": ["HEALER,1"]
             }
         ],
         "fail_outcomes": [
@@ -451,6 +672,33 @@
                 "text": "You gather your courage to confess, but your words end up jumbled and unclear. They seem confused, and the conversation ends awkwardly.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "You're determined to confess your feelings, but when the time comes, you aren't brave enough to say your prepared speech. You sit in front of the other warrior for a few awkward minutes, struggling to speak, before you turn and flee.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "reserved",
+	                "emotional",
+	                "lonesome"
+                ]
+            },
+            {
+                "text": "You sit down beside the other warrior and try to express your feelings, but you realize you're trembling with nerves. When the other cat notices, they seem more concerned about your health than interested in listening to your confession. They end up escorting you to the medicine den, and your words go unsaid.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "emotional"
+                ]
             }
         ]
     },
@@ -584,6 +832,36 @@
                 "text": "They agree, and you both enjoy a peaceful walk, chatting and sharing stories. By the end of the evening, you feel a stronger connection between you.",
                 "exp": 25,
                 "weight": 20
+            },
+            {
+                "text": "They agree and meet you by the river that night. You spent the whole day preparing conversation topics in case the walk is awkward, but your_crush doesn't seem to mind your silences. You spend several hours strolling by the water, brushing against each other and pointing out the stars.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "reserved",
+	                "emotional",
+	                "lonesome"
+                ]
+            },
+            {
+                "text": "Of course you're nervous to take a walk with your_crush, but your anxiety slips away when you hear the river's familiar burbling. You take a deep breath, remembering other calm evenings at this very spot. The walk is peaceful, and you learn a lot about each other.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "reserved",
+	                "lonesome"
+                ],
+                "stat_skill": ["FISHER,1", "SWIMMER,1"]
             }
         ],
         "fail_outcomes": [
@@ -591,6 +869,21 @@
                 "text": "They agree, but the walk is awkward and filled with silence.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "Your nervousness only grows throughout the day, and by the time you meet  your_crush by the river, your stomach feels like you've eaten crowfood. When you become too anxious to form coherent sentences, you excuse yourself and head back to camp early.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "reserved",
+	                "emotional",
+	                "lonesome"
+                ]
             }
         ]
     },

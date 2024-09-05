@@ -330,6 +330,12 @@
                 "text": "You figure out that the kit simply needed a nap, and you manage to coax them into falling asleep. The parents thank you graciously, and get their own well-deserved rest.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "You decide to try to make a silly face, hoping it'll make them laugh. Luckily, it worked and they collapsed into a fit of giggles and stopped crying right away.",
+                "exp": 15,
+                "weight": 20,
+                "stat_trait": ["troublesome","childish","playful","strange","rebellious","spontaneous","energetic","bouncy"]
             }
         ],
         "fail_outcomes": [
@@ -337,6 +343,12 @@
                 "text": "No matter what you try or what you say, the kit just keeps on bawling. It's hopeless; all you can do is try to wait it out.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "You decide to try to make a silly face, in the hopes it'll make them laugh and stop crying. Unfortunately, your 'silly' face ended up being more scary than silly. Apparently, you need to practice your silly face more often.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["troublesome","childish","playful","strange","rebellious","spontaneous","energetic","bouncy"]
             }
         ]
     },
