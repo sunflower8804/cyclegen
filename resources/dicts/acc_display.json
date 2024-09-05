@@ -1580,11 +1580,6 @@
     "plural": "heart charms",
     "singular": "heart charms"
   },
-  "CHIMES": {
-    "default": "chimes",
-    "plural": "chimes",
-    "singular": "chimes"
-  },
   "SPRINGFLOWERCORSAGE": {
     "default": "spring flower corsage",
     "plural": "spring flower corsages",
@@ -1680,9 +1675,34 @@
     "plural": "toast",
     "singular": "toast"
   },
-  "STOAT": {
-    "default": "stoat",
-    "plural": "stoats",
-    "singular": "stoat"
+  "TOASTBERRY": {
+    "default": "berry toast",
+    "plural": "berry toasts",
+    "singular": "berry toast"
+  },
+  "TOASTGRAPE": {
+    "default": "grape toast",
+    "plural": "grape toasts",
+    "singular": "grape toast"
+  },
+  "TOASTNUTELLA": {
+    "default": "nutella toast",
+    "plural": "nutella toasts",
+    "singular": "nutella toast"
+  },
+  "TOASTPB": {
+    "default": "peanut butter toast",
+    "plural": "peanut butter toasts",
+    "singular": "peanut butter toast"
+  },
+  "WINTERSTOAT": {
+    "default": "winter stoat",
+    "plural": "winter stoats",
+    "singular": "winter stoat"
+  },
+  "BROWNSTOAT": {
+    "default": "brown stoat",
+    "plural": "brown stoats",
+    "singular": "brown stoat"
   }
 }
