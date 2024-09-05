@@ -22506,7 +22506,8 @@
         [
             "you_not_dftrainee",
             "you_dark",
-            "they_df"
+            "they_df",
+            "any"
         ],
         [
             "[t_c is watching you from the gloom. {PRONOUN/t_c/poss/CAP} gaze burns your pelt.]",
@@ -22517,7 +22518,7 @@
         [
             "any",
             "you_dark",
-            "they_sc",
+            "they_df",
             "you_star",
             "you_not_dftrainee",
             "they_assertive"
@@ -22530,7 +22531,7 @@
         [
             "any",
             "you_dark",
-            "they_sc",
+            "they_df",
             "you_star",
             "you_not_dftrainee",
             "they_assertive"
@@ -22544,7 +22545,7 @@
         [
             "any",
             "you_dark",
-            "they_sc",
+            "they_df",
             "you_star",
             "you_not_dftrainee"
         ],
@@ -22559,7 +22560,7 @@
         [
             "any",
             "you_dark",
-            "they_sc",
+            "they_df",
             "you_star",
             "you_not_dftrainee",
             "they_assertive"
@@ -22577,7 +22578,8 @@
         "assertive_R1": [
             [
                 "any",
-                "they_assertive"
+                "they_assertive",
+                "no_kit"
             ],
             [
                 "[t_c is painstakingly perfecting a battle move in the training area. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} failing a bit without an enemy to work with.]",
@@ -22589,7 +22591,10 @@
         "assertive_R2": [
             [
                 "any",
-                "they_assertive"
+                "they_assertive",
+                "they_deaf",
+                "they_blind",
+                "you_deaf"
             ],
             [
                 "[t_c struts around camp with {PRONOUN/t_c/poss} head held high. Whatever {PRONOUN/t_c/subject} just did, {PRONOUN/t_c/subject} must be proud of it.]"
@@ -22725,6 +22730,169 @@
             "[You doubt t_c can fight off a nightmare, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} insistent.]",
             "Swear on anythin', no more nightmares will bother you, y_c. You'll see!",
             "[You cave eventually, and surprisingly, t_c was right. It's a peaceful night next to them.]"
+        ]
+    ],
+    "dfskill_artistian_SQ1": [
+        [
+            "no_kit",
+            "they_df",
+            "they_artistian",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c is arranging brittle, blackened leaves in the semblance of a garland. {PRONOUN/t_c/subject/CAP} {VERB/t_c/try/tries} to hang them so they curl around one of the twisted trees, but the leaves keep cracking and falling to the ground.]",
+            "[When t_c notices you watching, {PRONOUN/t_c/subject} {VERB/t_c/glare/glares} at you and {VERB/t_c/stalk/stalks} away. The leaves crumble to dust as {PRONOUN/t_c/subject} {VERB/t_c/vanish/vanishes}.]"
+        ]
+    ],
+    "dfskill_fisher_SQ1": [
+        [
+            "no_kit",
+            "they_df",
+            "they_fisher",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[You almost run into t_c. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} crouched on a riverbank, hidden by undergrowth and shadows, staring into a sluggish, black river.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/hiss/hisses} at you and {VERB/t_c/spring/springs} to {PRONOUN/t_c/poss} paws, fur bristling. You leave {PRONOUN/t_c/object} be.]"
+        ]
+    ],
+
+    "dfskill_sleeper_SQ1": [
+        [
+            "no_kit",
+            "they_df",
+            "they_sleeper",
+            "they_blind",
+            "they_deaf"
+        ],
+        [
+            "[t_c sleeps more than other cats you've seen in the Dark Forest.]",
+            "[At first, you think it's {PRONOUN/t_c/poss} way of dreaming {PRONOUN/t_c/self} out of {PRONOUN/t_c/poss} situation, if only for a bit, but then you notice {PRONOUN/t_c/subject} always {VERB/t_c/twitch/twitches} and {VERB/t_c/cry/cries} out in {PRONOUN/t_c/poss} sleep.]"
+        ]
+    ],
+"dfskill_song_SQ1": [
+        [
+            "no_kit",
+            "they_df",
+            "they_song",
+            "any"
+        ],
+        [
+            "[t_c hasn't noticed you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/stare/stares} into the darkness, humming softly.]",
+            "[The song is eerily familiar, but you can't remember the words. Something about the haunting notes makes you shiver.]"
+        ]
+    ],
+    "dfskill_song_SQ2": [
+        [
+            "no_kit",
+            "they_df",
+            "they_song",
+            "min_they_deadfor_120",
+            "any"
+        ],
+        [
+            "[You often catch t_c humming pieces of an unfamiliar song. After a few instances of this, you ask what the song is.]",
+            "[Something flashes in t_c's eyes and you tense, but {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} seem hostile. {PRONOUN/t_c/subject/CAP} just {VERB/t_c/stare/stares} at you for a moment.]",
+            "You don't know this one? Do they not sing it anymore?",
+            "...Figures.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} away. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} seem like talking anymore.]"
+        ]
+    ],
+    "dfskill_song_SQ3": [
+        [
+            "no_kit",
+            "they_df",
+            "they_song",
+            "you_deaf",
+            "they_blind"
+        ],
+        [
+            "[When you see t_c singing, {PRONOUN/t_c/subject} almost always {VERB/t_c/have/has} {PRONOUN/t_c/poss} head tipped towards the shadowy canopy.]",
+            "[You wonder if, out of habit, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} singing to the stars that are no longer watching over {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "dfskill_treasure_SQ1": [
+        [
+            "no_kit",
+            "they_df",
+            "they_treasure",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[You're used to most Dark Forest cats hiding all signs of gentleness, so it's a surprise to see t_c carefully prying a wilted flower out of the muck.]",
+            "[Usually, those flowers disintegrate on contact, but somehow t_c manages to coax it from the ground and carefully pick it up in {PRONOUN/t_c/poss} mouth. {PRONOUN/t_c/subject/CAP} {VERB/t_c/glance/glances} around with narrowed eyes before vanishing into the shadows.]"
+        ]
+    ],
+    "dfskill_choice_SQ1": {
+        "tags": [
+	        "they_df",
+	        "no_kit",
+	        "they_artistian"
+        ],
+        "intro": [
+            "[t_c is decorating a mucky rock overhang. You creep forward to inspect {PRONOUN/t_c/poss} creation.]", 
+            "[All of the foul-smelling components seem wrong. Is that a tuft of fur? Why is that piece of wood dripping?]",
+            "[t_c notices you and narrows {PRONOUN/t_c/poss} eyes, daring you to comment.]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "This is nice.",
+                "next_scene": "nice"
+            },
+            "choice2": {
+                "text": "This looks horrible.",
+                "next_scene": "horrible"
+            },
+            "choice3": {
+                "text": "[Walk away.]",
+                "next_scene": "leave"
+            }
+        },
+        "nice": [
+            "[You compliment t_c's arrangement and {PRONOUN/t_c/poss} use of unique decorations. {PRONOUN/t_c/subject/CAP} {VERB/t_c/stare/stares} at you, seemingly trying to decide if you're being genuine.]",
+            "...Thanks.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} away without another word.]"
+        ],
+        "horrible": [
+            "[You barely get the words out before t_c lunges at you. You leap away just in time.]",
+            "Did I ask? Get out of my business before I make you."
+        ],
+        "leave": [
+            "[You turn away, ready to fight in case t_c takes the opportunity to attack you.]",
+            "[You feel {PRONOUN/t_c/poss} eyes on your back as you vanish into the shadows.]"
+        ]
+    },
+    "livingskill_treasure_SQ1~1": [
+        [
+            "no_kit",
+            "they_formerlyakittypet",
+            "they_treasure",
+            "min_platonic_50"
+        ],
+        [
+            "When I was a kittypet, I had a collection like I do now! My favorite item was a sparkly ball, kind of a red-orange color.",
+            "I miss it. It was really fun to bat around, and it made a really nice crunching noise when you stepped on it, but it didn't break.",
+            "I don't mean to reminisce too much, though! My collection here is good, too. I like the feather you gave me last moon."
+        ]
+    ],
+    "livingskill_treasure_SQ1~2": [
+        [
+            "no_kit",
+            "they_formerlyakittypet",
+            "they_treasure",
+            "min_platonic_50",
+            "connected"
+        ],
+        [
+            "[Remembering your conversation with t_c about {PRONOUN/t_c/poss} lost sparkly ball, you look out for anything that might be similar.]", 
+            "[You find a vibrant, red-orange feather caught in a bush and carefully bring it back to camp! When you next see t_c, you trot over and offer it to {PRONOUN/t_c/object}.]",
+            "Oh! Wow, this is beautiful. It reminds me of...",
+            "[t_c trails off, whiskers twitching. {PRONOUN/t_c/subject/CAP} {VERB/t_c/stare/stares} at the feather, then at you.]",
+            "You found this for me because I told you about my favorite toy, didn't you?",
+            "Wow. Thank you, y_c. It matches almost exactly."
         ]
     ]
 }

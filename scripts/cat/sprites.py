@@ -173,7 +173,11 @@ class Sprites:
 
             "eggs",
 
-            "pumpkinbatharness"
+            "pumpkinbatharness",
+
+            "toast",
+
+            "stoats"
 
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
@@ -438,7 +442,7 @@ class Sprites:
             self.make_group('chimes', (a, 0), f'acc_crafted{i}')
 
         for a, i in enumerate([
-            "FIDDLEHEADS", "LANTERNS", "HEARTCHARMS", "CHIMES"]):
+            "FIDDLEHEADS", "LANTERNS", "HEARTCHARMS"]):
             self.make_group('moipa', (a, 0), f'acc_crafted{i}')
 
         for a, i in enumerate([
@@ -446,8 +450,12 @@ class Sprites:
             self.make_group('moipa2', (a, 0), f'acc_flower{i}')
         
         for a, i in enumerate([
-            "JAYFEATHER", "EAGLEFEATHER"]):
+            "JAYFEATHER", "EAGLEFEATHER", "STARFLOWERS", "HEARTLEAVES", "YELLOWWISTERIA", "HOLLY2"]):
             self.make_group('moipa2', (a, 1), f'acc_wild{i}')
+
+        for a, i in enumerate([
+            "HOLLYVINES", "LAVENDERHEADPIECE", "LAVENDERTAILWRAP", "LAVENDERANKLET"]):
+            self.make_group('moipa2', (a, 2), f'acc_wild{i}')
 
         for a, i in enumerate([
             "EGG"]):
@@ -456,6 +464,14 @@ class Sprites:
         for a, i in enumerate([
             "BATHARNESS"]):
             self.make_group('pumpkinbatharness', (a, 0), f'acc_crafted{i}')
+
+        for a, i in enumerate([
+            "TOAST", "TOASTBERRY", "TOASTGRAPE", "TOASTNUTELLA", "TOASTPB"]):
+            self.make_group('toast', (a, 0), f'acc_crafted{i}')
+
+        for a, i in enumerate([
+            "WINTERSTOAT", "BROWNSTOAT"]):
+            self.make_group('stoats', (a, 0), f'acc_wild{i}')
         
         # Define scars
         scars_data = [
