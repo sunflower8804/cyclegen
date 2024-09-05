@@ -418,44 +418,6 @@ def create_new_cat_block(
         elif status == "elder":
             age = randint(Cat.age_moons["senior"][0], Cat.age_moons["senior"][1])
 
-    if "newdfcat" in attribute_list:
-        # gives a random status if none was specified in the patrol. kitten cannot be chosen randomly
-            if status is None and age is None:
-                mean = (3 + 145) / 2 
-                stddev = (145 - 3) / 6 
-                age = int(gauss(mean, stddev))
-                age = max(3, min(145, age))
-            
-            if age:
-
-                if age < 1:
-                    status = "newborn"
-                elif age < 6:
-                    status = "kitten"
-                elif age < 13:
-                    status = choice(["apprentice", "apprentice", "apprentice", "mediator apprentice", "medicine cat apprentice", "queen's apprentice"])
-                elif age < 119:
-                    status = choice(["warrior", "warrior", "medicine cat", "mediator", "queen", "warrior", "warrior", "medicine cat", "medicine cat", "mediator", "deputy", "leader"])
-                else:
-                    status = choice(["elder", "elder", "elder", "elder", "elder", "elder", "elder", "elder", "leader", "deputy"])
-
-    if "newstarcat" in attribute_list:
-        # gives a random status if none was specified in the patrol. kitten cannot be chosen randomly
-        if status is None:
-            status = choice(["elder", "elder", "elder", "elder", "elder", "apprentice", "warrior", "warrior", "warrior", "warrior", "warrior", "warrior", "mediator apprentice", "mediator", "mediator", "medicine cat apprentice", "medicine cat", "medicine cat", "medicine cat", "medicine cat", "queen's apprentice", "queen", "queen", "queen", "queen","leader"])
-
-        #and age, dependant on status
-        if status in "kitten":
-            age = randint(1,5)
-        elif status in ["apprentice", "mediator apprentice", "medicine cat apprentice", "queen's apprentice"]:
-            age = randint (6,11)
-        elif status in ["warrior", "medicine cat", "mediator", "queen"]:
-            age = randint (12, 119)
-        elif status in ["deputy", "leader"]:
-            age = randint(25,119)
-        else:
-            age = randint (120, 201)
-
     if "kittypet" in attribute_list:
         cat_type = "kittypet"
     elif "rogue" in attribute_list:
@@ -464,10 +426,35 @@ def create_new_cat_block(
         cat_type = "loner"
     elif "clancat" in attribute_list:
         cat_type = "former Clancat"
-    elif "newdfcat" in attribute_list:
+
+    # LIFEGEN: for encountered dead cats --
+    elif "clan_status" in attribute_list:
+        if status:
             cat_type = status
-    elif "newstarcat" in attribute_list:
-        cat_type = status
+        else:
+            if age:
+                if age < 6:
+                    cat_type = "kitten"
+                elif age < 12:
+                    cat_type = choice(
+                        [
+                            "apprentice", "medicine cat apprentice",
+                            "mediator apprentice", "queen's apprentice"
+                        ]
+                    )
+                elif age < 120:
+                    cat_type = choice(
+                        [
+                            "warrior", "medicine cat", "mediator", "queen"
+                        ]
+                    )
+                else:
+                    cat_type = "elder"
+            else:
+                age = randint(12,100)
+                cat_type = choice(["warrior", "medicine cat", "mediator", "queen"])
+    # -------------------------------------
+
     else:
         cat_type = choice(['kittypet', 'loner', 'former Clancat'])
 
@@ -479,26 +466,19 @@ def create_new_cat_block(
             status = "kitten"
 
     # CHOOSE DEFAULT BACKSTORY BASED ON CAT TYPE, STATUS
-    if "newdfcat" in attribute_list:
-        if "oldstarclan" in attribute_list:
-                chosen_backstory = choice(["oldstarclan1", "oldstarclan2", "oldstarclan3"])
-        else:
-            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["df_backstories"])
-    elif "newstarcat" in attribute_list:
-        chosen_backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
-    else:
-        if status in ("kitten", "newborn"):
-            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["abandoned_backstories"])
-        if status == "medicine cat":
-            if cat_type == "former Clancat":
-                chosen_backstory = choice(["medicine_cat", "disgraced1"])
-            else:
-                chosen_backstory = choice(["wandering_healer1", "wandering_healer2"])
+   
+    if status in ("kitten", "newborn"):
+        chosen_backstory = choice(BACKSTORIES["backstory_categories"]["abandoned_backstories"])
+    if status == "medicine cat":
         if cat_type == "former Clancat":
-            x = "former_clancat"
+            chosen_backstory = choice(["medicine_cat", "disgraced1"])
         else:
-            x = cat_type
-        chosen_backstory = choice(BACKSTORIES["backstory_categories"].get(f"{x}_backstories", ["outsider1"]))
+            chosen_backstory = choice(["wandering_healer1", "wandering_healer2"])
+    if cat_type == "former Clancat":
+        x = "former_clancat"
+    else:
+        x = cat_type
+    chosen_backstory = choice(BACKSTORIES["backstory_categories"].get(f"{x}_backstories", ["outsider1"]))
 
     # OPTION TO OVERRIDE DEFAULT BACKSTORY
     bs_override = False
@@ -530,6 +510,48 @@ def create_new_cat_block(
     if "dead" in attribute_list:
         alive = False
         thought = "Explores a new, starry world"
+
+    # LIFEGEN: encountered dead cat residences -----------------------
+    df = False
+    encountered_dead_df = False
+    encountered_dead_sc = False
+    encountered_dead_ur = False
+
+    for _tag in attribute_list:
+        match = re.match(r"residence:(.+)", _tag)
+        if not match:
+            continue
+        if match.group(1) == "ur":
+            outside = True
+            alive = False
+            thought = "Is intrigued by the living cat they just met"
+            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
+            encountered_dead_ur = True
+            break
+        elif match.group(1) == "df":
+            df = True
+            outside = False
+            alive = False
+            thought = "Is annoyed with the living cat they just met"
+            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["df_backstories"])
+            encountered_dead_df = True
+
+            new_name = True
+            # ^^ so they get a clan cat name
+            break
+        elif match.group(1) == "sc":
+            alive = False
+            outside = False
+            df = False
+            thought = "Is curious about the living cat they just met"
+            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
+            # its annoying i have to do this here but oh welp
+            encountered_dead_sc = True
+
+            new_name = True
+            # ^^ so they get a clan cat name
+            break
+    # ---------------------------------------------------------------------
 
     # check if we can use an existing cat here
     chosen_cat = None
@@ -612,6 +634,24 @@ def create_new_cat_block(
         # THIS DOES NOT ADD RELATIONS TO CATS IN THE EVENT, those are added within the relationships block of the event
 
         for n_c in new_cats:
+
+            # LIFEGEN: encountered dead cat stuff -----------------------------
+            beginning = History.get_beginning(n_c)
+            if encountered_dead_df or encountered_dead_sc or encountered_dead_ur:
+                beginning['encountered'] = True
+            else:
+                beginning['encountered'] = False
+
+            if beginning["encountered"] is True:
+                if n_c.parent2 != game.clan.your_cat.ID:
+                    n_c.dead_for = randint(50,140)
+                n_c.dead = True
+                n_c.status = status
+
+                if n_c.parent2 == game.clan.your_cat.ID:
+                    n_c.thought = "Just met their parent!"
+                    n_c.dead_for = n_c.moons
+            # ------------------------------------------------------------------
 
             # SET MATES
             for inter_cat in give_mates:
@@ -946,21 +986,6 @@ def create_new_cat(
         game.clan.add_cat(new_cat)
         history = History()
         history.add_beginning(new_cat)
-
-        if new_cat.df:
-            if new_cat.parent2 != game.clan.your_cat.ID:
-                new_cat.dead_for = randint(50,140)
-            new_cat.dead = True
-            new_cat.status = status
-
-            if new_cat.parent2 == game.clan.your_cat.ID:
-                new_cat.thought = "Just met their parent!"
-                new_cat.dead_for = new_cat.moons
-
-        if new_cat.dead and not new_cat.df and not new_cat.outside:
-            new_cat.dead_for = randint(50,140)
-            new_cat.status = status
-     
 
         # create relationships
         new_cat.create_relationships_new_cat()
