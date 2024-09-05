@@ -1604,7 +1604,7 @@ class MurderScreen(Screens):
         if discovered:
             if accomplice and accompliced:
                 if game.clan.your_cat.dead:
-                    game.cur_events_list.insert(1, Single_Event("You and " + str(accomplice.name) + "murdered " + str(cat_to_murder.name) + ", but only your accomplice made it out alive."))
+                    game.cur_events_list.insert(1, Single_Event("You and " + str(accomplice.name) + " murdered " + str(cat_to_murder.name) + ", but only your accomplice made it out alive."))
                 else:
                     game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + " with the help of " + str(accomplice.name) + "."))
                 History.add_death(cat_to_murder, f"{you.name} and {accomplice.name} murdered this cat.")

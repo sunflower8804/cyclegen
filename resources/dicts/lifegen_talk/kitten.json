@@ -6905,5 +6905,50 @@
             "y_c? Is neutral_r_w_neurotic scared of me?",
             "Whenever I get close to them, they get really big eyes and back away!"
         ]
+    ],
+    "they_deaf_shunned_J1": [
+        [
+            "they_kitten",
+            "you_adult",
+            "you_dead",
+            "they_shunned",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[You can't imagine how such a small cat could have ended a life.]"
+        ]
+    ],
+    "they_deaf_shunned_J2": [
+        [
+            "they_deaf",
+            "you_deaf",
+            "they_shunned",
+            "you_dead",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c gets excited everytime you come to visit {PRONOUN/t_c/object}.]",
+            "[{PRONOUN/t_c/poss/CAP} Clanmates must be especially cruel if {PRONOUN/t_c/subject} {VERB/t_c/have/has} to turn to the dead for companionship.]"
+        ]
+    ],
+    "they_deaf_shunned_J3": [
+        [
+            "they_deaf",
+            "you_deaf",
+            "they_shunned",
+            "you_dead",
+            "they_blind",
+            "you_blind",
+            "from_your_kit",
+            "from_adopted_kit"
+        ],
+        [
+            "[Your poor kit...]",
+            "[If you'd gotten more time to raise {PRONOUN/t_c/object}, maybe {PRONOUN/t_c/subject} wouldn't have done it.]"
+        ]
     ]
 }
