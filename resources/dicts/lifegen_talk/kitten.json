@@ -506,7 +506,7 @@
         [
             "y_c, y_c, come quick! r_c is hurt!!!",
             "[You rush out into the clearing to discover the supposedly injured cat lazing on a rock, perfectly fine.]",
-            "[When you confront t_c about it, {PRONOUN/t_c/subject} {VERB/t_c/look/looks} away guiltily].",
+            "[When you confront t_c about it, {PRONOUN/t_c/subject} {VERB/t_c/look/looks} away guiltily.]",
             "Er ... It was just part of a game of pretend I was playing!",
             "[You let {PRONOUN/t_c/object} off with a stern warning to only come find you if it's a real emergency.]"
         ]

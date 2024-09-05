@@ -22241,7 +22241,8 @@
         [
             "you_not_dftrainee",
             "you_dark",
-            "they_df"
+            "they_df",
+            "any"
         ],
         [
             "[t_c is watching you from the gloom. {PRONOUN/t_c/poss/CAP} gaze burns your pelt.]",
@@ -22252,7 +22253,7 @@
         [
             "any",
             "you_dark",
-            "they_sc",
+            "they_df",
             "you_star",
             "you_not_dftrainee",
             "they_assertive"
@@ -22265,7 +22266,7 @@
         [
             "any",
             "you_dark",
-            "they_sc",
+            "they_df",
             "you_star",
             "you_not_dftrainee",
             "they_assertive"
@@ -22279,7 +22280,7 @@
         [
             "any",
             "you_dark",
-            "they_sc",
+            "they_df",
             "you_star",
             "you_not_dftrainee"
         ],
@@ -22294,7 +22295,7 @@
         [
             "any",
             "you_dark",
-            "they_sc",
+            "they_df",
             "you_star",
             "you_not_dftrainee",
             "they_assertive"
@@ -22312,7 +22313,8 @@
         "assertive_R1": [
             [
                 "any",
-                "they_assertive"
+                "they_assertive",
+                "no_kit"
             ],
             [
                 "[t_c is painstakingly perfecting a battle move in the training area. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} failing a bit without an enemy to work with.]",
@@ -22324,7 +22326,10 @@
         "assertive_R2": [
             [
                 "any",
-                "they_assertive"
+                "they_assertive",
+                "they_deaf",
+                "they_blind",
+                "you_deaf"
             ],
             [
                 "[t_c struts around camp with {PRONOUN/t_c/poss} head held high. Whatever {PRONOUN/t_c/subject} just did, {PRONOUN/t_c/subject} must be proud of it.]"
