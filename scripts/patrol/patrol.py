@@ -680,13 +680,16 @@ class Patrol:
                 tests.append(patrol.decline_text)
 
                 if len(patrol.antag_fail_outcomes) > 0:
-                    tests.append(i for i in patrol.antag_fail_outcomes)
+                    for i in patrol.antag_fail_outcomes:
+                        tests.append(i)
                 if len(patrol.antag_success_outcomes) > 0:
-                    tests.append(i for i in patrol.antag_success_outcomes)
+                    for i in patrol.antag_success_outcomes:
+                        tests.append(i)
 
-
-                tests.append(i["text"] for i in patrol.success_outcomes)
-                tests.append(i["text"] for i in patrol.fail_outcomes)
+                for i in patrol.success_outcomes:
+                    tests.append(i.text)
+                for i in patrol.fail_outcomes:
+                    tests.append(i.text)
 
                 for i in tests:
                     test_runs[i] = adjust_txt(Cat, i, self.patrol_leader, self.patrol_cat_dict, r_c_allowed=False, o_c_allowed=False)
@@ -694,8 +697,8 @@ class Patrol:
                         skip = True
                         print("Skipping", patrol.patrol_id)
                         break
-                    else:
-                        print(i)
+                    # else:
+                    #     print(i)
                 if skip is True:
                     continue
                         
