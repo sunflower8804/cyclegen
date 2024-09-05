@@ -814,54 +814,5 @@
                 "weight": 20
             }
         ]
-    },
-    {
-        "patrol_id": "testpatrol",
-        "biome": [
-            "Any"
-        ],
-        "season": [
-            "Any"
-        ],
-        "types": [
-            "lifegen"
-        ],
-        "tags": [],
-        "patrol_art": "lg_warrior2",
-        "min_cats": 1,
-        "max_cats": 3,
-        "min_max_status": {},
-        "weight": 20,
-        "intro_text": "There's a dead guy",
-        "decline_text": "nvm",
-        "chance_of_success": 40,
-        "success_outcomes": [
-            {
-                "text": "oh my GOD. a GHOST",
-                "exp": 10,
-                "weight": 20,
-                "new_cat": [
-                    ["meeting", "residence:ur", "clan_status", "status:warrior"]
-                ]
-            },
-            {
-                "text": "oh my GOD. a STARCLAN CAT",
-                "exp": 10,
-                "weight": 20,
-                "new_cat": [
-                    ["meeting", "residence:sc", "clan_status", "age:kitten"]
-                ]
-            }
-        ],
-        "fail_outcomes": [
-            {
-                "text": "theres a FUCKING DEMON",
-                "exp": 0,
-                "weight": 20,
-                "new_cat": [
-                    ["meeting", "residence:df", "clan_status", "age:adolescent"]
-                ]
-            }
-        ]
     }
 ]

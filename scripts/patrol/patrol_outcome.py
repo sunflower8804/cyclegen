@@ -1014,6 +1014,12 @@ class PatrolOutcome:
                     parent1 = patrol.new_cats[index][0]
                 else:
                     parent2 = patrol.new_cats[index][0]
+
+                if parent1:
+                    print("parent1", parent1.name, index, i)
+                if not parent2:
+                    if parent1.df is True:
+                        parent2 = game.clan.your_cat
             break
 
         # GATHER MATES

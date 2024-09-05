@@ -258,7 +258,7 @@
 		"best_stat_modifier": 10,
 		"fail_stat_cat_modifier": -15,
 		"chance_of_romance_patrol": 16,
-		"debug_ensure_patrol_id": "testpatrol",
+		"debug_ensure_patrol_id": null,
 		"debug_override_patrol_stat_requirements": false,
 		"debug_ensure_patrol_outcome": null,
 		"comment": [
