@@ -1354,15 +1354,16 @@ class PatrolOutcome:
                 else:
                     beginning['encountered'] = False
 
-                if beginning["encountered"] is True:
-                    if n_c.parent2 != game.clan.your_cat.ID:
-                        n_c.dead_for = random.randint(50,140)
-                    n_c.dead = True
-                    n_c.status = status
+                if "encountered" in beginning:
+                    if beginning["encountered"] is True:
+                        if n_c.parent2 != game.clan.your_cat.ID:
+                            n_c.dead_for = random.randint(50,140)
+                        n_c.dead = True
+                        n_c.status = status
 
-                    if n_c.parent2 == game.clan.your_cat.ID:
-                        n_c.thought = "Just met their parent!"
-                        n_c.dead_for = n_c.moons
+                        if n_c.parent2 == game.clan.your_cat.ID:
+                            n_c.thought = "Just met their parent!"
+                            n_c.dead_for = n_c.moons
                 # ------------------------------------------------------------------
 
                 # Set Mates
@@ -1434,12 +1435,17 @@ class PatrolOutcome:
             for cat in patrol.new_cats[-1]:
                 if cat.dead:
                     # LIFEGEN --------------------------------------------------------------------------
-                    if cat.history and cat.history.beginning["encountered"] is True:
-                        # a different message for these guys so it doesnt imply they just died
+                    if (
+                        cat.history and
+                        cat.history.beginning and
+                        "encountered" in cat.history.beginning and
+                        cat.history.beginning["encountered"] is True
+                        ):
                         if cat.ID in game.clan.your_cat.mate:
                             cat.thought = f"Is missing {game.clan.your_cat.name}"
                             results.append(f"You have spoken with {cat.name}.")
                         else:
+                        # a different message for these guys so it doesnt imply they just died
                             results.append(f"You have met {cat.name}.")
                     # -----------------------------------------------------------------------------------
                     else:

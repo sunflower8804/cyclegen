@@ -642,15 +642,16 @@ def create_new_cat_block(
             else:
                 beginning['encountered'] = False
 
-            if beginning["encountered"] is True:
-                if n_c.parent2 != game.clan.your_cat.ID:
-                    n_c.dead_for = randint(50,140)
-                n_c.dead = True
-                n_c.status = status
+            if "encountered" in beginning:
+                if beginning["encountered"] is True:
+                    if n_c.parent2 != game.clan.your_cat.ID:
+                        n_c.dead_for = randint(50,140)
+                    n_c.dead = True
+                    n_c.status = status
 
-                if n_c.parent2 == game.clan.your_cat.ID:
-                    n_c.thought = "Just met their parent!"
-                    n_c.dead_for = n_c.moons
+                    if n_c.parent2 == game.clan.your_cat.ID:
+                        n_c.thought = "Just met their parent!"
+                        n_c.dead_for = n_c.moons
             # ------------------------------------------------------------------
 
             # SET MATES
