@@ -1979,5 +1979,23 @@
             "I'm gonna go ask d_c how {PRONOUN/d_c/subject} {VERB/d_c/make/makes} omens... I'm thinking of sending d_n a sign that r_w should be put on more patrols.",
             "[Looks like {PRONOUN/t_c/subject} found some more work to do!]"
         ]
+    ],
+    "neurotic_choice_foxtokit_SQ5~2": [
+        [
+            "you_kitten",
+            "they_neurotic",
+            "they_warrior",
+            "they_deputy",
+            "they_leader",
+            "min_platonic_20",
+            "connected"
+        ],
+        [
+            "[When t_c passes by the nursery, you ask {PRONOUN/t_c/object} if {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} seen any more signs of the fox on the territory.]",
+            "Oh! Don't worry, I think we're safe... or at least camp is safe... for now. We found its scent crossing over into o_cClan territory.",
+            "I hope it doesn't come back. I also hope o_cClan doesn't blame us...",
+            "[t_c pauses, staring off into space. One ear flicks anxiously.]",
+            "...I'm sure it'll be... fine? I'm sorry, y_c. I don't mean to scare you."
+        ]
     ]
 }

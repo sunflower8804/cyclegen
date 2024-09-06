@@ -135,7 +135,7 @@
         ],
         [
             "Aw ... little guy hasn't even gotten {PRONOUN/y_c/poss} eyes open yet!",
-            "{PRONOUN/y_c/subject} {VERB/y_c/are/is} gonna be a killer, though. I can already tell. See {PRONOUN/y_c/poss} little paws? This kit's got fight in {PRONOUN/y_c/object}!"
+            "{PRONOUN/y_c/subject/CAP} {VERB/y_c/are/is} gonna be a killer, though. I can already tell. See {PRONOUN/y_c/poss} little paws? This kit's got fight in {PRONOUN/y_c/object}!"
         ]
     ],
     "assertive_tonewborn_2": [
@@ -5265,7 +5265,7 @@
         [
             "y_c, did I hear r_w right? Did you sneak into the warriors' den this morning?",
             "I know you're excited to grow up, but you can't do things like that! It's important to stay out of trouble, and not bother other cats...",
-            "[y_c goes on for a bit about why it's important for you to be careful and quiet and <i>boring</i>.]"
+            "[t_c goes on for a bit about why it's important for you to be careful and quiet and <i>boring</i>.]"
         ]
     ],
     "neurotic_tokit_SQ2": [
@@ -5282,7 +5282,7 @@
         ],
         [
             "Oh! Hey, y_c. Sorry, I don't really know how to deal with... uh...",
-            "[y_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
+            "[t_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
             "Um... here! Play with that for a bit, maybe?"
         ]
     ],
