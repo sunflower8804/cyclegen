@@ -130,6 +130,9 @@ class EventsScreen(Screens):
                     self.events_thread = self.loading_screen_start_work(
                         events_class.one_moon
                     )
+            elif self.death_button and event.ui_element == self.death_button:
+                DeathScreen('events screen')
+                return
             elif element == self.you:
                 game.switches['cat'] = game.clan.your_cat.ID
                 self.change_screen("profile screen")
@@ -551,6 +554,9 @@ class EventsScreen(Screens):
 
         if self.you:
             self.you.kill()
+        
+        if self.death_button:
+            self.death_button.kill()
 
         for ele in self.fave_filter_elements:
             self.fave_filter_elements[ele].kill()
@@ -854,6 +860,10 @@ class EventsScreen(Screens):
                                 game.clan.your_cat.sprite,
                                 cat_object=game.clan.your_cat,
                                 manager=MANAGER)
+        if game.switches['continue_after_death'] and game.clan.your_cat.moons >= 0:
+            self.death_button.show()
+        else:
+            self.death_button.hide()
 
     def update_list_buttons(self):
         """
