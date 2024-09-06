@@ -944,6 +944,10 @@ class MurderScreen(Screens):
 
     def print_chances(self, cat_to_murder, accomplice):
         
+        dont_print = True
+        if dont_print is True:
+            return
+        # not deleting the function bc chances will need more tweaking in the future
 
         if self.selected_cat:
             hypothetical_agree = False
@@ -1468,7 +1472,7 @@ class MurderScreen(Screens):
                 elif death:
                     if "death" not in murder_dict["tags"]:
                         continue
-                
+
                 if not injury and not death:
                     if "injury" in murder_dict["tags"]:
                         continue
@@ -1500,15 +1504,9 @@ class MurderScreen(Screens):
                 if death:
                     continue
 
-
             possible_keys.append(key)
-
-            # if "texts" in murder_dict and murder_dict["texts"]:
-            #     for event in murder_dict["texts"]:
-            #         ceremony_txt.append(event)
             
             murder_events.update({key: murder_dict})
-
 
         print("POSSIBLE KEYS:", possible_keys)
 
@@ -1534,7 +1532,6 @@ class MurderScreen(Screens):
                             if t in INJURIES:
                                 you.get_injured(t)
                         else:
-                            print("No defined injury for", chosen_event[0])
                             you.get_injured(owie)
 
         ceremony_txt = choice(ceremony_txt)
@@ -1607,7 +1604,7 @@ class MurderScreen(Screens):
         if discovered:
             if accomplice and accompliced:
                 if game.clan.your_cat.dead:
-                    game.cur_events_list.insert(1, Single_Event("You and " + str(accomplice.name) + "murdered " + str(cat_to_murder.name) + ", but only your accomplice made it out alive."))
+                    game.cur_events_list.insert(1, Single_Event("You and " + str(accomplice.name) + " murdered " + str(cat_to_murder.name) + ", but only your accomplice made it out alive."))
                 else:
                     game.cur_events_list.insert(1, Single_Event("You successfully murdered "+ str(cat_to_murder.name) + " with the help of " + str(accomplice.name) + "."))
                 History.add_death(cat_to_murder, f"{you.name} and {accomplice.name} murdered this cat.")
@@ -2563,8 +2560,6 @@ class MurderScreen(Screens):
                         
                 if self.stage == "choose accomplice":
                     if self.selected_cat is not None:
-                        print(self.selected_cat.name)
-                        print(self.cat_to_murder.name)
                         a_text = ""
                         chance = self.get_kill(game.clan.your_cat, self.cat_to_murder, accomplice=self.selected_cat, accompliced=False)
 
@@ -2586,7 +2581,6 @@ class MurderScreen(Screens):
                         else:
                             a_text = "very high"
 
-                        print("ACCOMP CHANCE:", a_text)
                         if game.settings['dark mode']:
                             self.willingnesstext = pygame_gui.elements.UITextBox("willingness: " + a_text,
                                                                                                     scale(pygame.Rect((1145, 610),

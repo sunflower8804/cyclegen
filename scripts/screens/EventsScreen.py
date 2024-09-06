@@ -115,7 +115,6 @@ class EventsScreen(Screens):
             elif event.ui_element == self.timeskip_button:
                 # Save the start time, so the loading animation can be
                 # set to only show up if timeskip is taking a good amount of time. 
-                self.events_thread = self.loading_screen_start_work(events_class.one_moon)
                 self.update_favourite_filters()
                 self.yourcat_filter.hide()
                 self.yourcat_filter_selected.hide()
@@ -126,6 +125,7 @@ class EventsScreen(Screens):
                 self.fav_group_3.hide()
                 self.fav_group_3_selected.hide()
                 self.cat_icon.hide()
+                self.events_thread = self.loading_screen_start_work(events_class.one_moon)
             
             elif game.clan.game_mode != "classic" and event.ui_element == self.freshkill_pile_button:
                 self.change_screen('clearing screen')
@@ -497,6 +497,16 @@ class EventsScreen(Screens):
                 elif (game.clan.your_cat.dead_for == 1 or game.clan.your_cat.exiled):
                     DeathScreen('events screen')
                     return
+                self.update_favourite_filters()
+                self.yourcat_filter.hide()
+                self.yourcat_filter_selected.hide()
+                self.fav_group_1.hide()
+                self.fav_group_1_selected.hide()
+                self.fav_group_2.hide()
+                self.fav_group_2_selected.hide()
+                self.fav_group_3.hide()
+                self.fav_group_3_selected.hide()
+                self.cat_icon.hide()
                 self.events_thread = self.loading_screen_start_work(events_class.one_moon)
 
     def screen_switches(self):

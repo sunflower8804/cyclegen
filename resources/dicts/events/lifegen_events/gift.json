@@ -147,18 +147,18 @@
     },
    "unique_gifts": {
         "STICK": {
-            "accept_dislike": "t_c wonders why you've gifted {PRONOUN/t_c/object} such a mundane accessory. Do you think that {PRONOUN/t_c/subject} are Jayfeather from the elders' tales?"
+            "accept_dislike": "t_c wonders why you've gifted {PRONOUN/t_c/object} such a mundane accessory. Do you think that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} Jayfeather from the elders' tales?"
         },
         "STICKS": {
             "accept_dislike": "t_c wonders why you've gifted {PRONOUN/t_c/object} such a mundane accessory. Do you think that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} Jayfeather from the elders' tales?"
         },
         "LARGE DEATHBERRY": {
             "accept_like": "t_c takes the accessory with a glint in {PRONOUN/t_c/poss} eyes. Perhaps this gift can be useful.",
-            "accept_dislike": "t_c pales at the sight of your gift and stares at you incredulously. {PRONOUN/t_c/subject/CAP} don't seem to appreciate it..."
+            "accept_dislike": "t_c pales at the sight of your gift and stares at you incredulously. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} seem to appreciate it..."
         },
         "SMALL DEATHBERRY": {
             "accept_like": "t_c takes the accessory with a glint in {PRONOUN/t_c/poss} eyes. Perhaps this gift can be useful.",
-            "accept_dislike": "t_c pales at the sight of your gift and stares at you incredulously. {PRONOUN/t_c/subject/CAP} don't seem to appreciate it..."
+            "accept_dislike": "t_c pales at the sight of your gift and stares at you incredulously. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} seem to appreciate it..."
         },
         "RAINBOWBOW": {
             "accept_like": "t_c thanks you and takes the colourful bow with a smile!",
@@ -198,23 +198,23 @@
             "accept_like": "t_c giggles and starts singing underneath {PRONOUN/t_c/poss} breath as {PRONOUN/t_c/subject} {VERB/t_c/accept/accepts} your gift. Hor hor hor hor..."
         },
         "TIDE": {
-            "accept_dislike": "t_c warily accepts your gift, glancing at the y_g with uncertainty."
+            "accept_dislike": "t_c warily accepts your gift, glancing at the crab with uncertainty."
         },
         "RAINCOAT": {
             "accept_dislike": "t_c paws at the loud flimsy fabric, wondering how {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} supposed to use this."
         },
         "LAVENDER": {
-            "accept_like": "t_c smells the y_g with a slight smile, mentioning how the aroma calms {PRONOUN/t_c/poss} stress."
+            "accept_like": "t_c smells the lavender with a slight smile, mentioning how the aroma calms {PRONOUN/t_c/poss} stress."
         },
         "WISTERIA": {
-            "accept_like": "t_c takes the accessory with a smile and asks if you know the symbolism behind y_g. Even if you don't know the answer, t_c is touched anyway."
+            "accept_like": "t_c takes the accessory with a smile and asks if you know the symbolism behind wisteria. Even if you don't know the answer, t_c is touched anyway."
         },
         "FIRBRANCHES": {
             "accept_dislike": "t_c crinkles {PRONOUN/t_c/poss} nose and comments that your gift looks extremely itchy."
         },
         "CRAB": {
-            "accept_like": "Although the y_g snaps their claws at t_c, t_c giggles and states {PRONOUN/t_c/subject}'re going to be the best of friends!",
-            "accept_dislike": "t_c leans closer to look at the gift, only to yowl in pain as the y_g snaps at {PRONOUN/t_c/poss} nose! Ouch!"
+            "accept_like": "Although the crab snaps their claws at t_c, t_c giggles and states {PRONOUN/t_c/subject}'re going to be the best of friends!",
+            "accept_dislike": "t_c leans closer to look at the gift, only to yowl in pain as the crab snaps at {PRONOUN/t_c/poss} nose! Ouch!"
         },
         "HONEYCOMB": {
             "accept_like": "t_c takes the accessory with a glint in {PRONOUN/t_c/poss} eyes. You have a sinking feeling t_c is going to cause trouble...",

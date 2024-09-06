@@ -82,9 +82,10 @@ class Patrol:
             game.settings.get("disasters"),
         )
 
-        print("Patrols:")
-        for i in final_patrols:
-            print(i.patrol_id)
+        # lifegen: debug to print all possible patrols
+        # print("Patrols:")
+        # for i in final_patrols:
+        #     print(i.patrol_id)
 
         print(
             f"Total Number of Possible Patrols | normal: {len(final_patrols)}, romantic: {len(final_romance_patrols)} "
@@ -617,10 +618,11 @@ class Patrol:
                     if game.clan.your_cat.status != 'medicine cat':
                         continue
                 if "df" in patrol.tags:
-                    other_cat = self.patrol_cats[1]
-                    if not game.clan.your_cat.joined_df and not other_cat.joined_df:
-                        # need both cats to be trainees for goop romance
-                        continue
+                    if len(self.patrol_cats) > 1:
+                        other_cat = self.patrol_cats[1]
+                        if not game.clan.your_cat.joined_df and not other_cat.joined_df:
+                            # need both cats to be trainees for goop romance
+                            continue
                     
             #  correct button check
             if game.switches["patrol_category"] == 'clangen':

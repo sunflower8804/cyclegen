@@ -33,7 +33,7 @@
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
-                    ["newdfcat", "status:warrior"]
+                    ["meeting", "residence:df", "clan_status", "status:warrior"]
                 ],
                 "stat_trait": [
                     "ambitious",
@@ -175,7 +175,7 @@
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
-                    ["newdfcat", "status:warrior"]
+                    ["meeting", "residence:df", "clan_status", "status:warrior"]
                 ],
                 "stat_trait": [
                     "ambitious",
@@ -317,7 +317,7 @@
                 "exp": 5,
                 "weight": 20,
                 "new_cat": [
-                    ["newdfcat", "status:apprentice"]
+                    ["meeting", "residence:df", "clan_status", "age:adolescent"]
                 ]
             },
             {
@@ -373,7 +373,7 @@
                 "exp": 20,
                 "weight": 20,
                 "new_cat": [
-                    ["newdfcat", "oldstarclan"]
+                    ["meeting", "residence:df", "clan_status", "status:warrior", "backstory:oldstarclan1"]
                 ]
             }
         ],
@@ -434,7 +434,7 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    ["newdfcat"]
+                    ["meeting", "residence:df", "clan_status"]
                 ]
             },
             {
@@ -1052,7 +1052,7 @@
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
-                    ["newdfcat", "status:kitten"]
+                    ["meeting", "residence:df", "clan_status", "status:kitten"]
                 ]
             },
             {
@@ -1143,7 +1143,7 @@
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
-                    ["newdfcat"]
+                    ["meeting", "residence:df", "clan_status"]
                 ]
             },
             {
@@ -1156,7 +1156,7 @@
                 "exp": 30,
                 "weight": 10,
                 "new_cat": [
-                    ["newdfcat"]
+                    ["meeting", "residence:df", "clan_status"]
                 ]
             },
             {
@@ -1225,7 +1225,7 @@
                 "exp": 30,
                 "weight": 10,
                 "new_cat": [
-                    ["newdfcat"]
+                    ["meeting", "residence:df", "clan_status"]
                 ]
             },
             {
@@ -1665,14 +1665,13 @@
             "lifegen"
         ],
         "tags": [
-            "new_cat",
-            "newdfcat"
+            "new_cat"
         ],
         "patrol_art": "bribe patrol",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "normal adult": [1, 6]
+            "all apprentices": [-1, 0]
         },
         "weight": 1,
         "intro_text": "You slip into the dark depths of the forest alone. Training can wait - you have more important matters to attend to tonight. A single pair of eyes flash ahead in the darkness, affixed on you.",
@@ -1684,8 +1683,8 @@
                 "exp": 15,
                 "weight": 1,
                 "new_cat": [
-                    ["newdfcat", "age:mate_with_kits", "mate:p_l"],
-                    ["newdfcat", "your_litter", "parent:0", "status:kitten", "backstory:dfkit1"]
+                    ["meeting", "residence:df", "age:has_kits", "mate:p_l", "clan_status"],
+                    ["clan_status", "meeting", "litter", "residence:df", "parent:0", "backstory:dfkit1", "status:kitten"]
                 ]
             },
             {
@@ -1703,8 +1702,8 @@
                 "exp": 15,
                 "weight": 1,
                 "new_cat": [
-                    ["newdfcat", "age:mate_with_kits", "mate:p_l"],
-                    ["your_litter", "parent:0", "status:kitten", "backstory:dfkit2"]
+                    ["meeting", "residence:df", "age:mate", "mate:p_l", "clan_status"],
+                    ["clan_status", "litter", "parent:0", "backstory:dfkit2", "status:kitten"]
                 ]
             },
             {
@@ -1712,7 +1711,7 @@
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
-                    ["newdfcat", "meeting", "age:mate", "mate:p_l", "backstory:ostracized_warrior"]
+                    ["residence:df", "meeting", "clan_status", "age:mate", "mate:p_l", "backstory:ostracized_warrior"]
                 ]
             },
             {
@@ -1720,7 +1719,7 @@
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
-                    ["newdfcat", "age:mate", "mate:p_l"]
+                    ["meeting", "residence:df", "clan_status", "age:mate", "mate:p_l"]
                 ]
             }
         ],
@@ -1736,7 +1735,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["battle_injury"]
                     }
                 ],
@@ -2122,11 +2121,11 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You flick your tail politely to the figure. They step out of the foliage and into your view, inclining their head to you in return. Before they turn and leap back into the bushes-- presumably to go find someone else to observe -- you even catch a small smile on their face. As it turns out, Dark Forest cats appreciate niceties too!",
+                "text": "You flick your tail politely to the figure. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/step/steps} out of the foliage and into your view, inclining {PRONOUN/n_c:0/poss} head to you in return. Before {PRONOUN/n_c:0/subject} {VERB/n_c:0/turn/turns} and {VERB/n_c:0/leap/leaps} back into the bushes-- presumably to go find someone else to observe -- you even catch a small smile on {PRONOUN/n_c:0/poss} face. As it turns out, Dark Forest cats appreciate niceties too!",
                 "exp": 15,
                 "weight": 20,
 	            "new_cat": [
-                    ["newdfcat", "status:warrior"]
+                    ["meeting", "residence:df", "clan_status"]
                 ]
             }
         ],
