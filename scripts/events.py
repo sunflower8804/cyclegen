@@ -532,7 +532,7 @@ class Events:
         if game.clan.focus:
             game.clan.focus_moons += 1
             if game.clan.focus_moons == 1 and dialogue_focuses[game.clan.focus]["moon_event"]:
-                game.cur_events_list.append(Single_Event(self.process_text(random.choice(dialogue_focuses[game.clan.focus]["moon_event"])), "misc"))
+                game.cur_events_list.insert(0, Single_Event(self.process_text(random.choice(dialogue_focuses[game.clan.focus]["moon_event"])), "misc"))
 
                 
     def gain_acc(self):
@@ -983,7 +983,7 @@ class Events:
                         break
 
             
-            game.cur_events_list.append(Single_Event(birth_txt, ["alert", "birth_death"]))
+            game.cur_events_list.insert(0, Single_Event(birth_txt, ["alert", "birth_death"]))
 
         birth_type, parent1, parent2, adoptive_parents = get_parents(birth_type)
         siblings = create_siblings(parent1, parent2, adoptive_parents) if random.randint(1,4) != 1 else []
@@ -1669,7 +1669,7 @@ class Events:
     def generate_exile_event(self):
         evt = Single_Event(random.choice(self.c_txt["exiled"]))
         if evt not in game.cur_events_list:
-            game.cur_events_list.append(evt)
+            game.cur_events_list.insert(0, evt)
             
     def generate_df_events(self):
         if random.randint(1,3) == 1:
@@ -3855,7 +3855,7 @@ class Events:
             game.clan.disaster = ""
         
         event_string = ongoing_event_text_adjust(Cat, event_string)
-        game.cur_events_list.append(
+        game.cur_events_list.insert(0, 
                         Single_Event(event_string, "alert"))
         if game.clan.second_disaster:
             self.handle_second_disaster()
@@ -3893,7 +3893,7 @@ class Events:
                             History.add_death(cat, death_text=current_disaster["collateral_damage"]["deaths"]["history_text"]["reg_death"])
                         cat.die()
                         death_text = random.choice(current_disaster["collateral_damage"]["deaths"]["death_text"]).replace("m_c", str(cat.name)).replace("c_n", str(game.clan.name) + "Clan")
-                        game.cur_events_list.append(
+                        game.cur_events_list.insert(0,
                             Single_Event(death_text, "birth_death", cat.ID))
 
     def handle_second_disaster(self):
@@ -3908,14 +3908,14 @@ class Events:
             event_string = random.choice(current_disaster["progress_events"]["moon" + str(current_moon)])
             event_string = ongoing_event_text_adjust(Cat, event_string)
             game.clan.second_disaster_moon += 1
-            game.cur_events_list.append(
+            game.cur_events_list.insert(0,
                         Single_Event(event_string, "alert"))
         elif current_moon == current_disaster["duration"]:
             event_string = random.choice(current_disaster["conclusion_events"])
             game.clan.second_disaster_moon = 0
             game.clan.second_disaster = ""
             event_string = ongoing_event_text_adjust(Cat, event_string)
-            game.cur_events_list.append(
+            game.cur_events_list.insert(0,
                         Single_Event(event_string, "alert"))
 
     def handle_illnesses_or_illness_deaths(self, cat):
