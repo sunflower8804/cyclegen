@@ -677,13 +677,16 @@ class EventsScreen(Screens):
                 fnumlist.append(int(num))
 
             fav_cats = []
+            fav_events = []
 
             for kitty in Cat.all_cats_list:
                 for num in fnumlist:
                     if kitty.favourite == num:
                         fav_cats.append(kitty)
+                if kitty.ID == game.clan.your_cat.ID:
+                    if "yourcat_filter" in self.selected_fave_filter and kitty not in fav_cats:
+                        fav_cats.append(kitty)
 
-            fav_events = []
             for kitty in fav_cats:
                 for ev in game.cur_events_list:
                     if kitty.ID in ev.cats_involved:
