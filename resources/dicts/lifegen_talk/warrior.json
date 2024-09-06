@@ -2696,7 +2696,7 @@
             "[You let out a hiss and puff out your chest, without a moment's hesitation you launch yourself at t_c who falls flat on {PRONOUN/t_c/poss} back.]",
             "BY THE GRACE OF STARCLAN! IS IT POSSIBLE FOR ANOTHER WARRIOR TO BE STRONGER THAN THE LIKES OF I?!",
             "WOE TO ME! OH WOE TO ME! I AM AT YOUR MERCY OH GREAT ONE!",
-            "[Dramatically {PRONOUN/t_c/subject} {VERB/t_c/go/goes} limp and {VERB/t_c/play/plays} dead, you stand over {PRONOUN/t_c/object} cackling. Eventually {PRONOUN/t_c/subject} get up and laugh beside you.]",
+            "[Dramatically, {PRONOUN/t_c/subject} {VERB/t_c/go/goes} limp and {VERB/t_c/play/plays} dead and you stand over {PRONOUN/t_c/object} cackling. Eventually {PRONOUN/t_c/subject} get up and {VERB/t_c/laugh/laughs} beside you.]",
             "You did very well y_c, sort of caught me off guard with that jump. Keep at it. Good work."
         ]
     ],
@@ -3645,6 +3645,38 @@
             "Oh, no, the rest of the patrol isn't back yet, I just came home early. I'm not breathing very well today, so they said I should rest.",
             "[t_c sits down next to you.]",
             "How's your afternoon been?"
+        ]
+    ],
+    "neurotic_choice_foxtokit_SQ5~2": [
+        [
+            "you_kitten",
+            "they_neurotic",
+            "they_warrior",
+            "they_deputy",
+            "they_leader",
+            "min_platonic_20",
+            "connected"
+        ],
+        [
+            "[When t_c passes by the nursery, you ask {PRONOUN/t_c/object} if {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} seen any more signs of the fox on the territory.]",
+            "Oh! Don't worry, I think we're safe... or at least camp is safe... for now. We found its scent crossing over into o_cClan territory.",
+            "I hope it doesn't come back. I also hope o_cClan doesn't blame us...",
+            "[t_c pauses, staring off into space. One ear flicks anxiously.]",
+            "...I'm sure it'll be... fine? I'm sorry, y_c. I don't mean to scare you."
+        ]
+    ],
+    "neurotic_choices_siblingname_SQ16~2": [
+        [
+            "they_neurotic",
+            "littermate",
+            "you_warrior",
+            "they_warrior",
+            "connected"
+        ],
+        [
+            "Congratulations on becoming a warrior! You deserved it moons ago. And 'y_c' is a great name!",
+            "Don't let me get in your way, but... uh...",
+            "Do you want to go on a patrol together? Just the two of us, to celebrate? I can ask d_n if that's okay."
         ]
     ]
 }
