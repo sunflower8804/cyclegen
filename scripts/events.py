@@ -401,16 +401,6 @@ class Events:
         # Clear the list of cats that died this moon.
         game.just_died.clear()
 
-        new_list = []
-        other_list = []
-        for i in game.cur_events_list:
-            if (str(game.clan.your_cat.name) in i.text or "alert" in i.types) and i not in new_list:
-                new_list.append(i)
-            elif i not in other_list and i not in new_list:
-                other_list.append(i)
-        
-        game.cur_events_list = new_list
-        game.other_events_list = other_list
         resource_dir = "resources/dicts/events/lifegen_events/"
         with open(f"{resource_dir}ceremonies.json",
                   encoding="ascii") as read_file:
@@ -1337,8 +1327,8 @@ class Events:
                     current_event = self.process_text(event)
                 current_event = Single_Event(current_event)
                 if event not in self.current_events:
-                    self.current_events.append(event)
-                    game.cur_events_list.append(current_event)
+                    self.current_events.insert(0, event)
+                    game.cur_events_list.insert(0, current_event)
             else:
                 print('No possible events?') # im too lazy to figure out why this is happening but i wanna stop crashing
             
@@ -1368,7 +1358,7 @@ class Events:
                                     abbrev_cat = process_text_dict[abbrev]
                                     process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
                                 kit_event = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), kit_event)
-                                game.cur_events_list.append(kit_event)
+                                game.cur_events_list.insert(0, kit_event)
                             break
 
     def generate_app_ceremony(self):
@@ -1400,7 +1390,7 @@ class Events:
                 process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
             ceremony_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), ceremony_txt)
             
-            game.cur_events_list.append(Single_Event(ceremony_txt))
+            game.cur_events_list.insert(0, Single_Event(ceremony_txt))
         except:
             print("ERROR with app ceremony")
                 
@@ -1472,7 +1462,7 @@ class Events:
             abbrev_cat = process_text_dict[abbrev]
             process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
         ceremony_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), ceremony_txt)
-        game.cur_events_list.append(Single_Event(ceremony_txt))
+        game.cur_events_list.insert(0, Single_Event(ceremony_txt))
     
     
     def check_gain_app(self, checks):
@@ -1687,7 +1677,7 @@ class Events:
             if evt:
                 evt = Single_Event(evt)
                 if evt not in game.cur_events_list:
-                    game.cur_events_list.append(evt)
+                    game.cur_events_list.insert(0, evt)
         if random.randint(1,30) == 1:
             r_clanmate = Cat.all_cats.get(random.choice(game.clan.clan_cats))
             counter = 0
@@ -1710,7 +1700,7 @@ class Events:
             evt_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), evt_txt)
             evt = Single_Event(evt_txt)
             if evt not in game.cur_events_list:
-                game.cur_events_list.append(evt)
+                game.cur_events_list.insert(0, evt)
 
     def handle_lead_den_event(self):
         """
