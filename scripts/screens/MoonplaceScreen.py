@@ -420,18 +420,6 @@ class MoonplaceScreen(Screens):
             dead_cat = str(Cat.all_cats.get(game.clan.starclan_cats[-1]).name)
             text = [t1.replace("d_c", dead_cat) for t1 in text]
         return text
-    
-    def adjust_txt_pronouns(self, text):
-        process_text_dict = {}
-        process_text_dict["t_c"] = cat
-        # process_text_dict["t_q"] = self.the_cat
-        for abbrev in process_text_dict.keys():
-            abbrev_cat = process_text_dict[abbrev]
-            process_text_dict[abbrev] = (abbrev_cat, choice(abbrev_cat.pronouns))
-        text = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), text)
-        text = text.replace("t_k", str(self.selected_cat.name))
-        text = text.replace("t_q", str(self.the_cat.name))
-        return text
 
     def get_living_cats(self):
         living_cats = []
