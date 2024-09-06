@@ -3316,7 +3316,6 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 while alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False:
                     counter += 1
                     if counter >= 30:
-                        print("COUNTER MOMENT")
                         return ""
                     alive_app = choice(alive_apps)
                     addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
@@ -4208,7 +4207,6 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 counter = 0
                 while random_cat.ID == you.ID or random_cat.ID == cat.ID or addon_check is False:
                     if counter == 30:
-                        print("counter moment")
                         return ""
                     random_cat = Cat.all_cats.get(choice(game.clan.darkforest_cats))
                     addon_check = abbrev_addons(cat, random_cat, cluster, x, rel, r)
