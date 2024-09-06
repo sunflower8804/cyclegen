@@ -2067,7 +2067,7 @@ class ProfileScreen(Screens):
 
         beginning = History.get_beginning(self.the_cat)
         if beginning:
-            if self.the_cat.df == False:
+            if beginning['encountered'] is False:
                 if 'clan_born' in beginning and beginning['clan_born']:
                     text += " {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} born on Moon " + str(
                         beginning['moon']) + " during " + str(beginning['birth_season']) + "."
@@ -2077,7 +2077,7 @@ class ProfileScreen(Screens):
                 else:
                     text += "<br>You met {PRONOUN/m_c/object} on Moon " + str(beginning['moon']) + "."
             else:
-                text += "<br>You met {PRONOUN/m_c/object} on Moon " + str(beginning['moon']) + "."
+                text += "<br>You encountered {PRONOUN/m_c/object} on Moon " + str(beginning['moon']) + "."
 
         text = process_text(text, cat_dict)
         if "o_c" in text:

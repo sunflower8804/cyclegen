@@ -6822,7 +6822,7 @@
         ],
         [
             "[You expect kits to play with feathers until they're ruffled and dirty, so it's a surprise to see t_c carefully carrying a bright red one in {PRONOUN/t_c/poss} mouth.]",
-            "[You watch {PRONOUN/t_c/subject} gently tuck it into {PRONOUN/t_c/poss} nest and fold some moss over it, protecting {PRONOUN/t_c/poss} new treasure.]"
+            "[You watch {PRONOUN/t_c/object} gently tuck it into {PRONOUN/t_c/poss} nest and fold some moss over it, protecting {PRONOUN/t_c/poss} new treasure.]"
         ]
     ],
     "neurotic_theygrieving_SQ7": [
@@ -6923,5 +6923,50 @@
             "O-oh. Okay...",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/shuffle/shuffles} {PRONOUN/t_c/poss} paws and then, with a hesitant smile, {VERB/t_c/scurry/scurries} back to the nursery. You hope {PRONOUN/t_c/subject} {VERB/t_c/find/finds} a way to get along better with neutral_r_k on {PRONOUN/t_c/poss} own.]"
      ]
+    ],
+    "they_deaf_shunned_J1": [
+        [
+            "they_kitten",
+            "you_adult",
+            "you_dead",
+            "they_shunned",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[You can't imagine how such a small cat could have ended a life.]"
+        ]
+    ],
+    "they_deaf_shunned_J2": [
+        [
+            "they_deaf",
+            "you_deaf",
+            "they_shunned",
+            "you_dead",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c gets excited everytime you come to visit {PRONOUN/t_c/object}.]",
+            "[{PRONOUN/t_c/poss/CAP} Clanmates must be especially cruel if {PRONOUN/t_c/subject} {VERB/t_c/have/has} to turn to the dead for companionship.]"
+        ]
+    ],
+    "they_deaf_shunned_J3": [
+        [
+            "they_deaf",
+            "you_deaf",
+            "they_shunned",
+            "you_dead",
+            "they_blind",
+            "you_blind",
+            "from_your_kit",
+            "from_adopted_kit"
+        ],
+        [
+            "[Your poor kit...]",
+            "[If you'd gotten more time to raise {PRONOUN/t_c/object}, maybe {PRONOUN/t_c/subject} wouldn't have done it.]"
+        ]
     ]
 }
