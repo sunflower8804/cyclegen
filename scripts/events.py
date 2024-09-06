@@ -401,16 +401,6 @@ class Events:
         # Clear the list of cats that died this moon.
         game.just_died.clear()
 
-        new_list = []
-        other_list = []
-        for i in game.cur_events_list:
-            if (str(game.clan.your_cat.name) in i.text or "alert" in i.types) and i not in new_list:
-                new_list.append(i)
-            elif i not in other_list and i not in new_list:
-                other_list.append(i)
-        
-        game.cur_events_list = new_list
-        game.other_events_list = other_list
         resource_dir = "resources/dicts/events/lifegen_events/"
         with open(f"{resource_dir}ceremonies.json",
                   encoding="ascii") as read_file:
