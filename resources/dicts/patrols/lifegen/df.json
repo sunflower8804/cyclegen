@@ -1736,7 +1736,8 @@
                 "injury": [
                     {
                         "cats": ["p_l"],
-                        "injuries": ["battle_injury"]
+                        "injuries": ["battle_injury"],
+                        "scars": []
                     }
                 ],
                 "history_text": {
@@ -1873,7 +1874,8 @@
                 "injury": [ 
                     {
                         "cats": ["y_c"],
-                        "injuries": ["battle_injury"]
+                        "injuries": ["battle_injury"],
+                        "scars": []
                     }
                 ],
                 "history_text": {
@@ -1978,7 +1980,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "Courage surges in you. You're not going to be cowed by a mere unsettling feeling! You yowl your challenge into the dark mists of the forest. As your gaze scans up you realize, with embarassment hot on your pelt, that it's just r_c. You remember that {PRONOUN/r_c/subject} wanted to speak to you now that you see {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} clearly aren't interested anymore, however, as {PRONOUN/r_c/subject} hold back mirth at your paranoia...",
+                "text": "Courage surges in you. You're not going to be cowed by a mere unsettling feeling! You yowl your challenge into the dark mists of the forest. As your gaze scans up you realize, with embarassment hot on your pelt, that it's just r_c. You remember that {PRONOUN/r_c/subject} wanted to speak to you now that you see {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} clearly {VERB/r_c/isn't/aren't} interested anymore, however, as {PRONOUN/r_c/subject} {VERB/r_c/hold/holds} back mirth at your paranoia...",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
@@ -2023,7 +2025,8 @@
                 "injury": [ 
                     {
                         "cats": ["r_c"],
-                        "injuries": ["battle_injury"]
+                        "injuries": ["battle_injury"],
+                        "scars": []
                     }
                 ],
                 "history_text": {

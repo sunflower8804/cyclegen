@@ -604,6 +604,7 @@ class GiftScreen(Screens):
         """ Gives the accessory! """
         acc = self.selected_accessory.tool_tip_text
         cluster1, cluster2 = get_cluster(self.selected_cat.personality.trait)
+        reaction_txt = ""
         if cluster1 and cluster2:
             cluster = choice([cluster1, cluster2])
         else:
@@ -633,9 +634,8 @@ class GiftScreen(Screens):
                     self.selected_cat.pelt.accessories.append(acc)
                     self.update_selected_cat()
 
-        if acc in ACC_REACTION_TXT["unique_gifts"].keys():
-            if reaction in ACC_REACTION_TXT["unique_gifts"][acc].keys():
-                reaction_txt = ACC_REACTION_TXT["unique_gifts"][acc][reaction]
+        if acc in ACC_REACTION_TXT["unique_gifts"].keys() and reaction in ACC_REACTION_TXT["unique_gifts"][acc].keys():
+            reaction_txt = ACC_REACTION_TXT["unique_gifts"][acc][reaction]
         else:
             reaction_txt = choice(ACC_REACTION_TXT["general"][reaction] + ACC_REACTION_TXT[cluster][reaction])
 
