@@ -712,6 +712,23 @@ class EventsScreen(Screens):
             x for x in game.cur_events_list if "misc" in x.types
         ]
 
+        self.event_display_type = self.current_display
+
+        if self.event_display_type == "all":
+            self.display_events = self.all_events
+        elif self.event_display_type == "ceremony":
+            self.display_events = self.ceremony_events
+        elif self.event_display_type == "birth_death":
+            self.display_events = self.birth_death_events
+        elif self.event_display_type == "relationship":
+            self.display_events = self.relation_events
+        elif self.event_display_type == "health":
+            self.display_events = self.health_events
+        elif self.event_display_type == "other_clans":
+            self.display_events = self.other_clans_events
+        elif self.event_display_type == "misc":
+            self.display_events = self.misc_events
+
     def update_events_display(self):
         """
         Kills and recreates the event display, updates the clan info, sets the event display scroll position if it was
