@@ -4230,24 +4230,6 @@
             "Please, y_c. Don't try to be brave, not right now. I don't want anything to happen to you."
         ]
     },
-    "neurotic_choice_foxtokit_SQ5~2": [
-        [
-            "you_kitten",
-            "they_neurotic",
-            "they_warrior",
-            "they_deputy",
-            "they_leader",
-            "min_platonic_20",
-            "connected"
-        ],
-        [
-            "[When t_c passes by the nursery, you ask {PRONOUN/t_c/object} if {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} seen any more signs of the fox on the territory.]",
-            "Oh! Don't worry, I think we're safe... or at least camp is safe... for now. We found its scent crossing over into o_cClan territory.",
-            "I hope it doesn't come back. I also hope o_cClan doesn't blame us...",
-            "[t_c pauses, staring off into space. One ear flicks anxiously.]",
-            "...I'm sure it'll be... fine? I'm sorry, y_c. I don't mean to scare you."
-        ]
-    ],
     "neurotic_choices_aboutmed_SQ6": {
         "tags": [
             "no_kit",
@@ -4615,24 +4597,6 @@
             "[At the end, t_c seems excited to try again! You hope l_n lets {PRONOUN/t_c/object} go to this moon's meeting.]"
         ]
     },
-    "neurotic_choice_mediatoradvice_SQ14~2": [
-        [
-            "you_mediator",
-            "they_neurotic",
-            "they_app",
-            "min_platonic_20",
-            "they_blind",
-            "you_blind",
-            "connected"
-        ],
-        [
-            "At the Gathering, I got to try talking about some of the topics we practiced!",
-            "I sat by an apprentice from o_cClan, and we talked for a while. They actually seemed interested in what I was saying? And they were pretty nice...",
-            "Their name was... um... oh no. I forget what it was exactly, but it had something to do with water.",
-            "And as we were leaving, they said it was fun to talk to me. They were probably just being polite, but it was nice in the moment.",
-            "Thanks again for the help. You're really cool, you know?"
-        ]
-    ],
     "neurotic_choices_fireflies_SQ15": {
         "tags": [
             "they_neurotic",
@@ -4729,20 +4693,6 @@
             "I'm sorry, y_c! I really am."
         ]
     },
-    "neurotic_choices_siblingname_SQ16~2": [
-        [
-            "they_neurotic",
-            "littermate",
-            "you_warrior",
-            "they_warrior",
-            "connected"
-        ],
-        [
-            "Congratulations on becoming a warrior! You deserved it moons ago. And 'y_c' is a great name!",
-            "Don't let me get in your way, but... uh...",
-            "Do you want to go on a patrol together? Just the two of us, to celebrate? I can ask d_n if that's okay."
-        ]
-    ],
     "neurotic_choices_deputysnakerequest_SQ17": {
         "tags": [
             "they_neurotic",
@@ -5246,6 +5196,45 @@
             "[Sure, neutral_r_w_introspective asks some big questions, but those questions have never really... shaken you?]",
             "[You shrug. t_c seems unsure of what else to say.]",
             "Ah. Never mind, then. I guess I just wanted to ask... yeah. Never mind."
+        ]
+    },
+    "dfskill_choice_SQ1": {
+        "tags": [
+	        "they_df",
+	        "no_kit",
+	        "they_artistian"
+        ],
+        "intro": [
+            "[t_c is decorating a mucky rock overhang. You creep forward to inspect {PRONOUN/t_c/poss} creation.]", 
+            "[All of the foul-smelling components seem wrong. Is that a tuft of fur? Why is that piece of wood dripping?]",
+            "[t_c notices you and narrows {PRONOUN/t_c/poss} eyes, daring you to comment.]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "This is nice.",
+                "next_scene": "nice"
+            },
+            "choice2": {
+                "text": "This looks horrible.",
+                "next_scene": "horrible"
+            },
+            "choice3": {
+                "text": "[Walk away.]",
+                "next_scene": "leave"
+            }
+        },
+        "nice": [
+            "[You compliment t_c's arrangement and {PRONOUN/t_c/poss} use of unique decorations. {PRONOUN/t_c/subject/CAP} {VERB/t_c/stare/stares} at you, seemingly trying to decide if you're being genuine.]",
+            "...Thanks.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} away without another word.]"
+        ],
+        "horrible": [
+            "[You barely get the words out before t_c lunges at you. You leap away just in time.]",
+            "Did I ask? Get out of my business before I make you."
+        ],
+        "leave": [
+            "[You turn away, ready to fight in case t_c takes the opportunity to attack you.]",
+            "[You feel {PRONOUN/t_c/poss} eyes on your back as you vanish into the shadows.]"
         ]
     }
 }

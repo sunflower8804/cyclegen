@@ -6905,5 +6905,23 @@
             "y_c? Is neutral_r_w_neurotic scared of me?",
             "Whenever I get close to them, they get really big eyes and back away!"
         ]
+    ],
+    "neurotic_kitten_SQ21": [
+        [
+            "they_neurotic",
+            "they_kitten",
+            "you_mediator",
+            "you_mediator_apprentice"
+     ],
+     [
+            "Um... y_c?",
+            "[Even after you turn towards {PRONOUN/t_c/object}, t_c hesitates before continuing in a tiny voice.]",
+            "t_p says your job's to, um... to help cats become friends?",
+            "[You confirm that yes, helping cats improve their relationships is one of your roles as a mediator! The kitten nods seriously, then once again pauses nervously before continuing.]",
+            "So... so could you make me and neutral_r_k be friends? I... It's kinda scary to talk to {PRONOUN/neutral_r_k/object}, and {PRONOUN/neutral_r_k/subject} {VERB/neutral_r_k/don't/doesn't} listen good, and I think I'm doing the wrong things but I... but I...",
+            "[t_c pauses to take a breath, and you tell {PRONOUN/t_c/object} that you can't instantly make two cats be friends, but maybe you could help t_c figure out what to say to neutral_r_k! t_c instantly shrinks back.]",
+            "O-oh. Okay...",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/shuffle/shuffles} {PRONOUN/t_c/poss} paws and then, with a hesitant smile, {VERB/t_c/scurry/scurries} back to the nursery. You hope {PRONOUN/t_c/subject} {VERB/t_c/find/finds} a way to get along better with neutral_r_k on {PRONOUN/t_c/poss} own.]"
+     ]
     ]
 }
