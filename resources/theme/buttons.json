@@ -743,6 +743,74 @@
             }
         }
     },
+    "#arrow_right_button2": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/arrow_right2.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/arrow_right_hover2.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/arrow_right_hover2.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/arrow_right_unavailable2.png"
+            }
+        }
+    },
+    "#arrow_left_button2": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/arrow_left2.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/arrow_left_hover2.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/arrow_left_hover2.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/arrow_left_unavailable2.png"
+            }
+        }
+    },
+    "#arrow_double_right_button2": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/arrow_double_right2.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/arrow_double_right_hover2.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/arrow_double_right_hover2.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/arrow_double_right_unavailable2.png"
+            }
+        }
+    },
+    "#arrow_double_left_button2": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/arrow_double_left2.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/arrow_double_left_hover2.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/arrow_double_left_hover2.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/arrow_double_left_unavailable2.png"
+            }
+        }
+    },
     "#to_living_button": {
         "prototype": "#image_button",
         "images": {
