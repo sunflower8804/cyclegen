@@ -244,7 +244,7 @@ class Events:
                 
             Cat.grief_strings.clear()
 
-        if Cat.dead_cats and game.clan.age > 1:
+        if Cat.dead_cats:
             ghost_names = []
             shaken_cats = []
             extra_event = None
