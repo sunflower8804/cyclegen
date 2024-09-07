@@ -332,6 +332,96 @@
         ]
     },
     {
+        "patrol_id": "life_qapp_R1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_queenapp_default",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "It's time for a good old fashioned nursery clean out! There's plenty of moss already, so the first step is to clear out the den entirely! It's a little daunting, since it all falls to you.",
+        "decline_text": "You decide this can wait for another day.",
+        "chance_of_success": 55,
+        "success_outcomes": [
+            {
+                "text": "After removing all of the old bedding you make sure to dust out with a large leaf and your tail. New nests are made and lined with the softest moss, feathers, and fur. In the end the remade nursery looks great an you made great time as well! There's extra time to wash your pelt of any remaining mess.",
+                "exp": 10,
+                "weight": 20
+            },
+            {
+                "text": "It takes you a lot of time to remove all of the dust, dirt, old moss, and toys but you manage it! Now it's time to put fresh nests and toys in. By the time you finally finish it's dark out and you don't feel like cleaning the dust from your pelt... Thankfully, you left your old nest, and you can change it tomorrow.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "As you get started, it quickly becomes too much for one cat. All the dust and debris is dizzying in amount! You'll need to wait for help from somecat or another. Maybe this should be done more often...",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Just after you've finished clearing everything out, you realize all of the moss has gone! It seems someone else had the idea for a den cleanout day and now there's no moss to replace nests. You're forced to hurry out to gather more.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_qapp_R2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_queenapp_default",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You've got some free time today away from noisy kits, but that doesn't mean you don't have duties. The many toys could use a refresh. Or you can get creative and make new ones from scratch! First, though, you'll need to head out and gather materials.",
+        "decline_text": "You decide this can wait for another day.",
+        "chance_of_success": 55,
+        "success_outcomes": [
+            {
+                "text": "Out in the territory, you find shiny pebbles on the riverbank! With some clever leaf usage, you gather plenty up to take back.. There's a soft patch of moss on the way back as well. You stop to rake some up and tuck the bundle under your chin before heading to camp with your prizes in tow.",
+                "exp": 10,
+                "weight": 20
+            },
+            {
+                "text": "There's a bird on the freshkill pile! It's a great start to pluck out the feathers. The down can line nests while the larger feathers can be made into toys. You end up getting the idea to stick some feathers into a mossball, leading to new ideas for games!",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You don't have much luck tracking down anything but some sticks that you could find anywhere. Those aren't great toys on their own... And you can't think of anything to make with them, or games to play. Maybe another day will be more fruitful.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You gather up some moss to make new mossballs before noticing shiny stones in the river! As you reach in to grab them with a paw, though, you manage to drop your moss in your concentration. Mousedung! Catch it, catch it - You trip in the shallows with a splash. That's... That's enough for today. Definitely.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
         "patrol_id": "lg_queenapp_shunned_J1",
         "biome": [
             "Any"
