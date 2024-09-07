@@ -343,18 +343,5 @@
             "Have you seen the new housefolk that moved in to your old home?",
             "They brought a kitten with them!"
         ]
-    ],
-    "kittypet_sc_Guy1": [
-        [
-            "they_sc",
-            "they_kittypet",
-            "any",
-            "they_deaf",
-            "you_deaf",
-            "they_blind"
-        ],
-        [
-            "[t_c raises {PRONOUN/t_c/poss} sparkling tail in welcome.]"
-        ]
     ]
 }

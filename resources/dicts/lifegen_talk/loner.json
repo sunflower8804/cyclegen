@@ -204,18 +204,5 @@
             "Still wandering?",
             "... yeah, me too. I used to wonder what would happen after death. It's boring!"
         ]
-    ],
-    "loner_sc_Guy1": [
-        [
-            "they_sc",
-            "they_loner",
-            "any",
-            "they_deaf",
-            "you_deaf",
-            "they_blind"
-        ],
-        [
-            "[t_c raises {PRONOUN/t_c/poss} sparkling tail in welcome.]"
-        ]
     ]
 }
