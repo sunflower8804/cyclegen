@@ -3624,5 +3624,101 @@
             "[A skilled runner, {PRONOUN/t_c/subject} {VERB/t_c/catch/catches} up in no time, {PRONOUN/t_c/poss} paws passing right through the creature. Out of breath, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to you.]",
             "Hehe. It's the chasing that's the fun part."
         ]
+    ],
+    "grievingyou_shunned_J1": [
+        [
+            "both_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c gets up and runs as soon as you approach, {PRONOUN/t_c/poss} fear-scent hanging in the air.]",
+            "[Perhaps no one warned {PRONOUN/t_c/object} that you're back...]"
+        ]
+    ],
+    "grievingyou_shunned_J2": [
+        [
+            "both_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You smell t_c nearby while trying to get to sleep.]",
+            "[You don't lift your head. You must be hallucinating in your grief.]"
+        ]
+    ],
+    "grievingyou_shunned_J3": [
+        [
+            "you_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c gets up and runs as soon as you approach, {PRONOUN/t_c/poss} fear-scent hanging in the air.]",
+            "[Perhaps no one warned {PRONOUN/t_c/object} that you're back...]"
+        ]
+    ],
+    "grievingyou_shunned_J4": [
+        [
+            "you_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You smell t_c nearby while trying to get to sleep.]",
+            "[You don't lift your head. You must be hallucinating in your grief.]"
+        ]
+    ],
+    "grievingyou_shunned_J5": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c gets up and runs as soon as you approach, {PRONOUN/t_c/poss} fear-scent hanging in the air.]",
+            "[Perhaps no one warned {PRONOUN/t_c/object} that you're back...]"
+        ]
+    ],
+    "grievingyou_shunned_J6": [
+        [
+            "they_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You smell t_c nearby while trying to get to sleep.]",
+            "[You don't lift your head. You must be hallucinating in your grief.]"
+        ]
     ]
 }

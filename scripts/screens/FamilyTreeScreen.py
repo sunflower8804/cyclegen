@@ -488,6 +488,10 @@ class FamilyTreeScreen(Screens):
             self.relation_elements[ele].kill()
         self.relation_elements = {}
 
+        for marker in self.fav:
+            self.fav[marker].kill()
+        self.fav = {}
+
         self.update_tab()
         if not self.current_group:
             self.relation_elements["no_cats_notice"] = pygame_gui.elements.UITextBox(
