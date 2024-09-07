@@ -3157,9 +3157,9 @@
             "min_trust_15"
         ],
         [
-            "Y'know, r_w_cool's a decent hunter and fighter and all, but if you ask me, their real talent is how they deal with their Clanmates.",
-            "I swear, the cat's got a silver tongue ... They could probably talk a mouse into their claws and get it to thank them on the way out!",
-            "I wonder why they didn't choose to become a mediator? They're certainly skilled enough to!"
+            "Y'know, r_w_cool's a decent hunter and fighter and all, but if you ask me, {PRONOUN/r_w_cool/poss} real talent is how {PRONOUN/r_w_cool/subject} {VERB/r_w_cool/deal/deals} with {PRONOUN/r_w_cool/poss} Clanmates.",
+            "I swear, the cat's got a silver tongue ... {PRONOUN/r_w_cool/subject/CAP} could probably talk a mouse into {PRONOUN/r_w_cool/poss} claws and get it to thank {PRONOUN/r_w_cool/object} on the way out!",
+            "I wonder why {PRONOUN/r_w_cool/subject} didn't choose to become a mediator? {PRONOUN/r_w_cool/subject/CAP}{VERB/r_w_cool/'re/'s} certainly skilled enough to!"
         ]
     ],
     "about_cool_SQ1": [
