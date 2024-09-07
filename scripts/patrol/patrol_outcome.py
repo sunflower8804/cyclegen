@@ -673,6 +673,10 @@ class PatrolOutcome:
 
             results.append(f"{murderer_ob[-1].name} has murdered {victim_ob[-1].name}.")
             victim_ob[-1].die()
+
+            # add the murder to their history!
+            History.add_murders(victim_ob[-1], murderer_ob[-1], True, text=None, unrevealed_text=None)
+
         return " ".join(results)
           
     def _handle_condition_and_scars(self, patrol:'Patrol') -> str:
