@@ -2183,7 +2183,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_w r_a r_k l_n You race through the Dark Forest, leaping over twisted vines and roots as you zip towards the training grounds. You're late for training, and you know that df_m_n won't be happy about it...",
+        "intro_text": "You race through the Dark Forest, leaping over twisted vines and roots as you zip towards the training grounds. You're late for training, and you know that df_m_n won't be happy about it...",
         "decline_text": "Breathing heavily, you slow to a stop. You're already late, so what's the point of even going? You're probably just going to get yelled at by df_m_n anyway. Besides, you've wanted to explore this place for a while, and now's the perfect chance!",
         "chance_of_success": 45,
         "success_outcomes": [

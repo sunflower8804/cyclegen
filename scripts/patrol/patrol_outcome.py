@@ -235,7 +235,7 @@ class PatrolOutcome:
 
         text = lifegen_abbrev_text
         if lifegen_abbrev_text == "":
-            print("No text!")
+            print("Lifegen: No abbrevs to adjust")
             text = self.text
 
         # the text has to be processed before - otherwise leader might be referenced with their warrior name

@@ -657,7 +657,7 @@ class Patrol:
                     if game.clan.your_cat.shunned == 0:
                         continue
 
-            if game.switches["patrol_category"] == 'lifegen':
+            if game.switches["patrol_category"] in ['lifegen', 'df', 'date']:
 
                 if "bloodthirsty_only" in patrol.tags:
                     if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":

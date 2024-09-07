@@ -1395,6 +1395,10 @@ def gather_cat_objects(
             out_set.add(event.patrol_leader)
         elif abbr == "s_c":
             out_set.add(stat_cat)
+        # LG
+        elif abbr == "y_c":
+            out_set.add(game.clan.your_cat)
+        # ---
         elif abbr == "app1" and len(event.patrol_apprentices) >= 1:
             out_set.add(event.patrol_apprentices[0])
         elif abbr == "app2" and len(event.patrol_apprentices) >= 2:
