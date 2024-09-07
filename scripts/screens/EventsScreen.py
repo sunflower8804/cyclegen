@@ -130,6 +130,9 @@ class EventsScreen(Screens):
                     self.events_thread = self.loading_screen_start_work(
                         events_class.one_moon
                     )
+            elif self.death_button and event.ui_element == self.death_button:
+                DeathScreen('events screen')
+                return
             elif element == self.you:
                 game.switches['cat'] = game.clan.your_cat.ID
                 self.change_screen("profile screen")
@@ -551,6 +554,9 @@ class EventsScreen(Screens):
 
         if self.you:
             self.you.kill()
+        
+        if self.death_button:
+            self.death_button.kill()
 
         for ele in self.fave_filter_elements:
             self.fave_filter_elements[ele].kill()
@@ -712,6 +718,23 @@ class EventsScreen(Screens):
             x for x in game.cur_events_list if "misc" in x.types
         ]
 
+        self.event_display_type = self.current_display
+
+        if self.event_display_type == "all":
+            self.display_events = self.all_events
+        elif self.event_display_type == "ceremony":
+            self.display_events = self.ceremony_events
+        elif self.event_display_type == "birth_death":
+            self.display_events = self.birth_death_events
+        elif self.event_display_type == "relationship":
+            self.display_events = self.relation_events
+        elif self.event_display_type == "health":
+            self.display_events = self.health_events
+        elif self.event_display_type == "other_clans":
+            self.display_events = self.other_clans_events
+        elif self.event_display_type == "misc":
+            self.display_events = self.misc_events
+
     def update_events_display(self):
         """
         Kills and recreates the event display, updates the clan info, sets the event display scroll position if it was
@@ -837,6 +860,10 @@ class EventsScreen(Screens):
                                 game.clan.your_cat.sprite,
                                 cat_object=game.clan.your_cat,
                                 manager=MANAGER)
+        if game.switches['continue_after_death'] and game.clan.your_cat.moons >= 0:
+            self.death_button.show()
+        else:
+            self.death_button.hide()
 
     def update_list_buttons(self):
         """

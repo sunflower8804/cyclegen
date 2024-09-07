@@ -100,6 +100,19 @@
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1", "INNOVATOR,1", "SCHOLAR,1", "THINKER,1"]
+            },
+            {
+                "text": "You wait at the edge of the hunting ground for a while, observing it. Once you're sure that all of the Twolegs are inside the Twolegplace and won't be able to easily chase you, you venture closer. You successfully catch as much prey as you can carry before quickly leaving the area.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly",
+	                "lonesome"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -119,21 +132,7 @@
 	                "meek",
 	                "cowardly"
                 ]
-            },
-            {
-                "text": "You wait at the edge of the hunting ground for a while, observing it. Once you're sure that all of the Twolegs are inside the Twolegplace and won't be able to easily chase you, you venture closer. You successfully catch as much prey as you can carry before quickly leaving the area.",
-                "exp": 10,
-                "weight": 20,
-                "stat_trait": [
-                    "careful",
-	                "nervous",
-                    "insecure",
-	                "meek",
-	                "cowardly",
-	                "lonesome"
-                ]
             }
-
         ]
     },
     {

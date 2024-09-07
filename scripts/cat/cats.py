@@ -645,7 +645,7 @@ class Cat:
         ):
             self.grief(body)
 
-        if not self.outside:
+        if not self.outside and self.dead_for < 2:
             Cat.dead_cats.append(self)
             if self.history:
                 if self.history.murder:
