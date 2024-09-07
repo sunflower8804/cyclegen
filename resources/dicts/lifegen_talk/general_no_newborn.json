@@ -3157,9 +3157,9 @@
             "min_trust_15"
         ],
         [
-            "Y'know, r_w_cool's a decent hunter and fighter and all, but if you ask me, their real talent is how they deal with their Clanmates.",
-            "I swear, the cat's got a silver tongue ... They could probably talk a mouse into their claws and get it to thank them on the way out!",
-            "I wonder why they didn't choose to become a mediator? They're certainly skilled enough to!"
+            "Y'know, r_w_cool's a decent hunter and fighter and all, but if you ask me, {PRONOUN/r_w_cool/poss} real talent is how {PRONOUN/r_w_cool/subject} {VERB/r_w_cool/deal/deals} with {PRONOUN/r_w_cool/poss} Clanmates.",
+            "I swear, the cat's got a silver tongue ... {PRONOUN/r_w_cool/subject/CAP} could probably talk a mouse into {PRONOUN/r_w_cool/poss} claws and get it to thank {PRONOUN/r_w_cool/object} on the way out!",
+            "I wonder why {PRONOUN/r_w_cool/subject} didn't choose to become a mediator? {PRONOUN/r_w_cool/subject/CAP}{VERB/r_w_cool/'re/'s} certainly skilled enough to!"
         ]
     ],
     "about_cool_SQ1": [
@@ -3721,6 +3721,102 @@
         ],
         [
             "[You push into t_c's pelt, glad to have {PRONOUN/t_c/poss} warmth next to yours after t_c being cold for so long...]"
+        ]
+    ],
+    "grievingyou_shunned_J1": [
+        [
+            "both_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c gets up and runs as soon as you approach, {PRONOUN/t_c/poss} fear-scent hanging in the air.]",
+            "[Perhaps no one warned {PRONOUN/t_c/object} that you're back...]"
+        ]
+    ],
+    "grievingyou_shunned_J2": [
+        [
+            "both_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You smell t_c nearby while trying to get to sleep.]",
+            "[You don't lift your head. You must be hallucinating in your grief.]"
+        ]
+    ],
+    "grievingyou_shunned_J3": [
+        [
+            "you_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c gets up and runs as soon as you approach, {PRONOUN/t_c/poss} fear-scent hanging in the air.]",
+            "[Perhaps no one warned {PRONOUN/t_c/object} that you're back...]"
+        ]
+    ],
+    "grievingyou_shunned_J4": [
+        [
+            "you_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You smell t_c nearby while trying to get to sleep.]",
+            "[You don't lift your head. You must be hallucinating in your grief.]"
+        ]
+    ],
+    "grievingyou_shunned_J5": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c gets up and runs as soon as you approach, {PRONOUN/t_c/poss} fear-scent hanging in the air.]",
+            "[Perhaps no one warned {PRONOUN/t_c/object} that you're back...]"
+        ]
+    ],
+    "grievingyou_shunned_J6": [
+        [
+            "they_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You smell t_c nearby while trying to get to sleep.]",
+            "[You don't lift your head. You must be hallucinating in your grief.]"
         ]
     ]
 }

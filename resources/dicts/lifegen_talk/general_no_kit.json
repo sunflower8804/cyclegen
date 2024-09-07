@@ -1907,7 +1907,7 @@
             "Good morning, y_c. Nice weather, isn't it?",
             "[... t_c? What in StarClan?]",
             "Listen, I might as well. The kittens wanted to have fun, and I'm just sitting here. Might as well get buried by leaves.",
-            "[Since t_c seems unbothered, you leaf them to it.]"
+            "[Since t_c seems unbothered, you leaf {PRONOUN/t_c/object} to it.]"
         ]
     ],
     "introspective_queen_leaffall": [
@@ -1950,7 +1950,7 @@
             "[t_c is standing next to some leaves, pushing {PRONOUN/t_c/poss} paw into them.]",
             "... crunch those leaves, t_c...",
             "[ ... ]",
-            "[You don't really want to embarrass {PRONOUN/t_c/object}, so you leave them to it.]"
+            "[You don't really want to embarrass {PRONOUN/t_c/object}, so you leave {PRONOUN/t_c/object} to it.]"
         ]
     ],
     "introspective_to_MedApp": [
@@ -1963,7 +1963,7 @@
         [
             "Morning, y_c.",
             "I hope you're not busy. I was thinking about a conversation we had last week, about the uses of burdock root. You mentioned that they're specifically used on rat bites, right?",
-            "Well, I was listening to  r_c grumbling about a fox bite, and I was wondering why you can't use burdock on other types of bites?",
+            "Well, I was listening to r_c grumbling about a fox bite, and I was wondering why you can't use burdock on other types of bites?",
             "... You'll ask your mentor? Ah okay. Let me know when you find out, I'm curious."
         ]
     ],
@@ -3048,7 +3048,7 @@
             "brooding"
         ],
         [
-            "[t_c coldly stalks past you with a pelt covered in flowers, petals shuddering off their fur with every step.]",
+            "[t_c coldly stalks past you with a pelt covered in flowers, petals shuddering off {PRONOUN/t_c/poss} fur with every step.]",
             "... r_c_sweet thought {PRONOUN/r_c_sweet/subject} could 'turn my frown upside down.'",
             "It didn't work."
         ]
@@ -9722,7 +9722,7 @@
         ],
         [
             "Hey, y_c, you'll never guess what t_m did!",
-            "{PRONOUN/t_m/subject} took me out to this secret spot on the territory and we spent the whole night out there, just talking and laughing together ...",
+            "{PRONOUN/t_m/subject/CAP} took me out to this secret spot on the territory and we spent the whole night out there, just talking and laughing together ...",
             "Ah, StarClan, isn't t_m great? {PRONOUN/t_c/subject/CAP}{VERB/t_m/'re/'s} just so beautiful, and funny, and smart, and did I mention beautiful? Plus, brave and kind and courageous and --",
             "[You swear to StarClan, if you have to hear t_c talk about how much {PRONOUN/t_c/subject} {VERB/t_c/love/loves} {PRONOUN/t_c/poss} mate any more, it just might drive you insane.]"
         ]
@@ -21525,8 +21525,8 @@
         ],
         [
             "Someone keeps pelting me with acorns.",
-            "r_c_silly says the squirrels must not like me, but the way they said that... I just <i>know</i> they're somehow responsible.",
-            "Mark my words, I'm going to catch them in the act!"
+            "r_c_silly says the squirrels must not like me, but the way {PRONOUN/r_c_silly/subject} said that... I just <i>know</i> {PRONOUN/r_c_silly/subject}{VERB/r_c_silly/'re/'s} somehow responsible.",
+            "Mark my words, I'm going to catch {PRONOUN/r_c_silly/object} in the act!"
         ]
     ],
     "about_silly_SQ2~2": [
@@ -22064,13 +22064,13 @@
             }
         },
         "ask": [
-            "[You approach t_c to ask them what's going on.]",
+            "[You approach t_c to ask {PRONOUN/t_c/object} what's going on.]",
             "Oh, it's nothing. Really. *Sniff*",
             "It's just that r_w_unabashed told the whole Clan how I scared off a rabbit, and that I was too <i>loud</i> to go on hunting patrols.",
             "{VERB/r_w_unabashed/Don't/Doesn't} {PRONOUN/r_w_unabashed/subject} know how embarrassing that was for me?"
         ],
         "leave": [
-            "[You decide that it's probably for the best that you don't get involved and leave t_c to {PRONOUN/t_c/subject} lonesome.]"
+            "[You decide that it's probably for the best that you don't get involved and leave t_c to {PRONOUN/t_c/poss} lonesome.]"
         ]
     },
     "about_unlawful_SQ1": [

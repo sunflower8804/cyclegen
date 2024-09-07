@@ -875,6 +875,11 @@ class PronounCreation(UIWindow):
             container=self,
         )
 
+        # setting parent/sibling text right away
+        # so they can go unedited when creating new pronouns
+        self.boxes["parent"].set_text(self.the_cat.pronouns[0]["parent"])
+        self.boxes["sibling"].set_text(self.the_cat.pronouns[0]["sibling"])
+
         # Save Confirmation
         self.pronoun_added = pygame_gui.elements.UITextBox(
             f"Pronoun saved and added to presets!",

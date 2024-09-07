@@ -2000,7 +2000,7 @@
     },
     "cool_you_kit_3": {
         "tags": [
-            "kitten",
+            "you_kitten",
             "cool",
             "unlawful",
             "assertive",
@@ -2149,7 +2149,7 @@
         ],
         "intro": [
             "Well, I'm so sorry, d_n, but as much as I'd <i>love</i> to help fix the elder's den today, little y_c was just saying how much {PRONOUN/y_c/subject} {VERB/y_c/need/needs} me in the nursery.",
-            "Poor little kit's got a cough, and {PRONOUN/y_c/subject}{VERB/y_c/'ve/'s} been begging for a visit from good ol' t_c to keep them company. Just look at that little face. How can you say no?",
+            "Poor little kit's got a cough, and {PRONOUN/y_c/subject}{VERB/y_c/'ve/'s} been begging for a visit from good ol' t_c to keep {PRONOUN/y_c/object} company. Just look at that little face. How can you say no?",
             "[You do not, in fact, have a cough, nor have you asked t_c to visit you. What should you do?]"
         ],
         "intro_choices": {
@@ -2174,7 +2174,7 @@
         "snitch": [
             "[You step away from t_c and state bluntly that everything {PRONOUN/t_c/subject} just said was a lie.]",
             "Ah ... Hehe. Would you look at that? Kid's so poorly, {PRONOUN/y_c/subject}{VERB/y_c/'ve/'s} hallucinating.",
-            "[d_n growls that if t_c doesn't get their butt into the elder's den this second, {PRONOUN/t_c/subject}'ll be given tick duty for the next week.]",
+            "[d_n growls that if t_c doesn't get {PRONOUN/t_c/poss} butt into the elder's den this second, {PRONOUN/t_c/subject}'ll be given tick duty for the next week.]",
             "[When trudging out of the nursery, {PRONOUN/t_c/subject} {VERB/t_c/shoot/shoots} you an extra glare for good measure.]",
             "Last time I try to rely on someone who can't even make dirt on {PRONOUN/y_c/poss} own."
         ]
@@ -3612,7 +3612,7 @@
         "intro": [
             "Erm ... Hi.",
             "Maybe you should check in on r_c sometime. Do you do check-ins? I don't actually know.",
-            "Um, anyways, they're worrying me a little lately ... sort of walking with a limp. I don't know if it's just in my head, or if they're really hurt.",
+            "Um, anyways, {PRONOUN/r_c/poss}{VERB/r_c/'re/'s} worrying me a little lately ... sort of walking with a limp. I don't know if it's just in my head, or if {PRONOUN/r_c/poss}{VERB/r_c/'re/'s} really hurt.",
             "Either way, you should check."
         ],
         "intro_choices": {
