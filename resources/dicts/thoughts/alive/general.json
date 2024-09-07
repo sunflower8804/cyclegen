@@ -2582,7 +2582,7 @@
             "Licks r_c's ear after {PRONOUN/m_c/subject} see that {PRONOUN/r_c/subject}'re sad",
             "Tells r_c about a time that {PRONOUN/m_c/subject} struggled in a hunt",
             "Quietly listens while r_c vents ",
-            "Offers to move {PRONOUN/m_c/poss} nest closer to r_c's nest so {PRONOUN/r_c/subject} don't have to be alone",
+            "Offers to move {PRONOUN/m_c/poss} nest closer to r_c's nest so {PRONOUN/r_c/subject} {VERB/r_c/don't/doesn't} have to be alone",
             "Tells r_c to get some rest, and that {PRONOUN/m_c/subject}'ll replace {PRONOUN/m_c/object} on the patrol"
         ],
         "main_age_constraint": [
