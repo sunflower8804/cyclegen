@@ -2756,5 +2756,114 @@
             "?!",
             "Really... I never expected that coming from you y_c... Did something bad happen? Are you okay?"
         ]
+    ],
+    "i_grievingyou_shunned_J1": [
+        [
+            "both_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[t_c stumbles away, confused and scared.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J2": [
+        [
+            "both_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[You swipe a paw at what must be t_c's ghost, but your paw hits solid fur.]",
+            "[You turn and run away, confused and frightened.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J3": [
+        [
+            "you_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[t_c stumbles away, confused and scared.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J4": [
+        [
+            "you_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[You swipe a paw at what must be t_c's ghost, but your paw hits solid fur.]",
+            "[You turn and run away, confused and frightened.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J5": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[t_c stumbles away, confused and scared.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J6": [
+        [
+            "they_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[You swipe a paw at what must be t_c's ghost, but your paw hits solid fur.]",
+            "[You turn and run away, confused and frightened.]"
+        ]
+    ],
+    "newborn_insult_J1": [
+        [
+            "you_newborn",
+            "they_newborn",
+            "insult"
+        ],
+        [
+            "Grrr..."
+        ]
     ]
 }
