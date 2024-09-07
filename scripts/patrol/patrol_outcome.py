@@ -253,10 +253,10 @@ class PatrolOutcome:
                                            other_clan=patrol.other_clan)
 
         # This order is important. 
-        results.append(self._handle_accessories(patrol))
         results.append(self._handle_death(patrol))
         results.append(self._handle_lost(patrol))
         # LG
+        results.append(self._handle_accessories(patrol))
         results.append(self._handle_df_convert(patrol))
         results.append(self._handle_murder(patrol))
         results.append(self._handle_faith_changes(patrol))
