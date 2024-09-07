@@ -73,7 +73,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["battle_injury"],
                         "scars": ["ONE"]
                     }
@@ -90,7 +90,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"], 
+                        "cats": ["p_l"], 
                         "injuries": ["minor_injury"],
                         "scars": []
                     }
@@ -105,7 +105,7 @@
                 
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["battle_injury"],
                         "scars": ["ONE"]
                     }
@@ -159,7 +159,7 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "cats": ["y_c"], 
+                        "cats": ["p_l"], 
                         "injuries": ["minor_injury"],
                         "scars": []
                     }
@@ -217,7 +217,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["battle_injury"],
                         "scars": ["TWO"]
                     }
@@ -460,7 +460,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["poisoned"]
                     }
                 ],
@@ -475,7 +475,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["water in their lungs"]
                     }
                 ],
@@ -492,7 +492,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["water in their lungs", "poisoned"]
                     }
                 ],
@@ -505,7 +505,7 @@
                 "text": "It's no use. You can't tell which way is up or down, and fall deeper into the depths. Your body is cold in your nest when your Clanmates go to wake you, pelt soaked in black liquid.",
                 "exp": 0,
                 "weight": 10,
-                "dead_cats": ["y_c"],
+                "dead_cats": ["p_l"],
                 "history_text": {
                     "reg_death": "m_c died after ingesting too much Dark Forest water.",
                     "lead_death": "ingested too much Dark Forest water"
@@ -787,7 +787,7 @@
                 "injury": [
                     {
                         "cats": [
-                            "y_c"
+                            "p_l"
                         ],
                         "injuries": [
                             "claw-wound"
@@ -807,7 +807,7 @@
                 "dead_cats": ["r_c"],
                 "murder": [
                     {
-                        "murderer": ["y_c"],
+                        "murderer": ["p_l"],
                         "victim": ["r_c"]
                     }
                 ],
@@ -959,7 +959,7 @@
                 ],
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["poisoned"]
                     }
                 ],
@@ -976,7 +976,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["shock"]
                     }
                 ]
@@ -996,7 +996,7 @@
                 ],
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["poisoned"]
                     }
                 ],
@@ -1009,11 +1009,11 @@
                 "text": "The feeling won't leave you alone, rather increases. It feels like hundreds of ants are crawling in your fur, dragging you downwards into the mud. You turn around, yelping, and come face to face with r_c. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} merely standing there watching as the mud starts to swallow you. There's nothing you can do as you sink down and see r_c disappearing into the darkness. Mud cakes your pelt when the Clan makes the horrifying discovery in the morning.",
                 "exp": 0,
                 "weight": 10,
-                "dead_cats": ["y_c"],
+                "dead_cats": ["p_l"],
                 "murder": [
                     {
                         "murderer": ["r_c"],
-                        "victim": ["y_c"]
+                        "victim": ["p_l"]
                     }
                 ],
                 "history_text": {
@@ -1078,7 +1078,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["minor_injury"]
                     }
                 ],
@@ -1102,7 +1102,7 @@
                 "text": "You turn a corner to keep exploring, and your eyes land on a large group of Dark Forest cats in a huddle. Feeling unwelcome, you instantly turn to run, but the group has already noticed you. The ghostly warriors are on your heels in an instant, and the last thing you feel is a dozen pairs of claws tearing into your fur. When your Clanmates find you in the morning, your nest is in tatters and your body cannot be salvaged.",
                 "exp": 0,
                 "weight": 3,
-                "dead_cats": ["y_c"],
+                "dead_cats": ["p_l"],
                 "history_text": {
                     "reg_death": "{VERB/m_c/were/was} murdered in the Dark Forest.",
                     "lead_death": "{VERB/m_c/were/was} murdered in the Dark Forest."
@@ -1172,7 +1172,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["claw-wound"],
                         "scars": ["CHEEK"]
                     }
@@ -1246,7 +1246,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["claw-wound"],
                         "scars": ["FACE"]
                     }
@@ -1268,7 +1268,7 @@
                 "weight": 40,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["minor_injury"]
                     }
                 ],
@@ -1322,7 +1322,7 @@
                 "weight": 10,
                 "relationships": [
                     {
-                        "cats_to": ["y_c"],
+                        "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
                         "mutual": false,
                         "values": ["trust", "comfort"],
@@ -1338,7 +1338,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["claw-wound"],
                         "scars": ["FACE"]
                     }
@@ -1371,7 +1371,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["big_bite_injury"]
                     }
                 ]
@@ -1391,7 +1391,7 @@
                 ],
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["water in their lungs"]
                     }
                 ],
@@ -1426,7 +1426,7 @@
                 "dead_cats": ["r_c"],
                 "murder": [
                     {
-                        "murderer": ["y_c"],
+                        "murderer": ["p_l"],
                         "victim": ["r_c"]
                     }
                 ],
@@ -1549,7 +1549,7 @@
                 "relationships": [
                     {
                         "cats_to": ["r_c"],
-                        "cats_from": ["y_c"],
+                        "cats_from": ["p_l"],
                         "mutual": false,
                         "values": ["trust", "comfort"],
                         "amount": 10
@@ -1586,7 +1586,7 @@
                 },
                 "relationships": [
                     {
-                        "cats_to": ["y_c"],
+                        "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
                         "mutual": false,
                         "values": ["trust", "comfort"],
@@ -1616,7 +1616,7 @@
                 "weight": 20,
                 "relationships": [
                     {
-                        "cats_to": ["y_c"],
+                        "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
                         "mutual": false,
                         "values": ["trust", "comfort"],
@@ -1827,7 +1827,7 @@
                 "weight": 20,
                 "relationships": [
                     {
-                        "cats_to": ["y_c"],
+                        "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
                         "mutual": false,
                         "values": ["trust"],
@@ -1843,7 +1843,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["minor_injury"]
                     }
                 ],
@@ -1860,7 +1860,7 @@
                 "relationships": [
                     {
                         "cats_to": ["r_c"],
-                        "cats_from": ["y_c"],
+                        "cats_from": ["p_l"],
                         "mutual": false,
                         "values": ["dislike"],
                         "amount": 5
@@ -1873,7 +1873,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["battle_injury"],
                         "scars": []
                     }
@@ -1967,7 +1967,7 @@
                 ],
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["mangled_tail"]
                     }
                 ],
@@ -1985,7 +1985,7 @@
                 "weight": 20,
                 "relationships": [
                     {
-                        "cats_to": ["y_c"],
+                        "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
                         "mutual": false,
                         "values": ["respect"],
@@ -2039,11 +2039,11 @@
                 "text": "Your claws unsheathe as you prepare. It's too late - you hear the whistle of wind above you and try to move from your position. You're too slow. Your attacker lands upon you as your yowl is cut off. Your gaze manages to catch on your assailant. r_c's eyes gleam in the low light before {PRONOUN/r_c/poss} fangs meet your throat. In the morning, the Clan is horrified to find your cold body in your nest...",
                 "exp": 0,
                 "weight": 20,
-                "dead cats": ["y_c"],
+                "dead cats": ["p_l"],
                 "murder": [
                     {
                         "murderer": ["r_c"],
-                        "victim": ["y_c"]
+                        "victim": ["p_l"]
                     }
                 ],
                 "history_text": {
@@ -2089,7 +2089,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["torn_pelt"],
                         "scars": ["SNAKETWO"]
                     }
@@ -2146,7 +2146,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["battle_injury"],
                         "scars": ["BELLY"]
                     }
@@ -2205,7 +2205,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["sprain"]
                     }
                 ]
@@ -2216,7 +2216,7 @@
                 "weight": 20,
                 "injury": [ 
                     {
-                        "cats": ["y_c"],
+                        "cats": ["p_l"],
                         "injuries": ["torn_pelt"],
                         "scars": ["NECKBITE"]
                     }
