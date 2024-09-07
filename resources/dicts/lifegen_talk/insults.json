@@ -2756,5 +2756,28 @@
             "?!",
             "Really... I never expected that coming from you y_c... Did something bad happen? Are you okay?"
         ]
+    ],
+    "newborn_to_newborn_H1": [
+        [
+            "they_newborn",
+            "newborn",
+            "insult"
+        ],
+        [
+            "[You meow at t_c aggressively, flopping your paws around as if that'll do much.]",
+            "[t_c faces you with those beady blue eyes, unresponsive to your insulting.]"
+        ]
+    ],
+    "newborn_to_newborn_H2": [
+        [
+            "they_newborn",
+            "newborn",
+            "insult"
+        ],
+        [
+            "[Since you can't insult just yet, you flop onto t_c with a ferocious hiss.]",
+            "[r_q separates the two of you before you're able to do any real damage -- as if you could.]",
+            "[Rats!]"
+        ]
     ]
 }
