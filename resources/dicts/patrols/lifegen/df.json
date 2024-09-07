@@ -1980,7 +1980,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "Courage surges in you. You're not going to be cowed by a mere unsettling feeling! You yowl your challenge into the dark mists of the forest. As your gaze scans up you realize, with embarassment hot on your pelt, that it's just r_c. You remember that {PRONOUN/r_c/subject} wanted to speak to you now that you see {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} clearly {VERB/r_c/isn't/aren't} interested anymore, however, as {PRONOUN/r_c/subject} {VERB/r_c/hold/holds} back mirth at your paranoia...",
+                "text": "Courage surges in you. You're not going to be cowed by a mere unsettling feeling! You yowl your challenge into the dark mists of the forest. As your gaze scans up you realize, with embarassment hot on your pelt, that it's just r_c. You remember that {PRONOUN/r_c/subject} wanted to speak to you now that you see {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} clearly {VERB/r_c/aren't/isn't} interested anymore, however, as {PRONOUN/r_c/subject} {VERB/r_c/hold/holds} back mirth at your paranoia...",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
@@ -2039,7 +2039,7 @@
                 "text": "Your claws unsheathe as you prepare. It's too late - you hear the whistle of wind above you and try to move from your position. You're too slow. Your attacker lands upon you as your yowl is cut off. Your gaze manages to catch on your assailant. r_c's eyes gleam in the low light before {PRONOUN/r_c/poss} fangs meet your throat. In the morning, the Clan is horrified to find your cold body in your nest...",
                 "exp": 0,
                 "weight": 20,
-                "dead cats": ["y_c"],
+                "dead cats": ["p_l"],
                 "murder": [
                     {
                         "murderer": ["r_c"],
@@ -2077,7 +2077,7 @@
         "chance_of_success": 45,
         "success_outcomes": [
             {
-                "text": "Navigating through the Dark Forest is no easy feat--and you're sure your Clanmates would be completely lost if they found themselves in the misty stretches. You, however, know this place better than any other cat in c_nClan. Effortlessly making your way to the training grounds, you emerge from the shrubbery with your head held high.",
+                "text": "Navigating through the Dark Forest is no easy feat--and you're sure your Clanmates would be completely lost if they found themselves in the misty stretches. You, however, know this place better than any other cat in c_n. Effortlessly making your way to the training grounds, you emerge from the shrubbery with your head held high.",
                 "exp": 15,
                 "weight": 20
             }
@@ -2183,7 +2183,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You race through the Dark Forest, leaping over twisted vines and roots as you zip towards the training grounds. You're late for training, and you know that df_m_n won't be happy about it...",
+        "intro_text": "r_w r_a r_k l_n You race through the Dark Forest, leaping over twisted vines and roots as you zip towards the training grounds. You're late for training, and you know that df_m_n won't be happy about it...",
         "decline_text": "Breathing heavily, you slow to a stop. You're already late, so what's the point of even going? You're probably just going to get yelled at by df_m_n anyway. Besides, you've wanted to explore this place for a while, and now's the perfect chance!",
         "chance_of_success": 45,
         "success_outcomes": [

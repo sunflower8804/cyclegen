@@ -77,7 +77,7 @@ class FamilyTreeScreen(Screens):
                 self.change_screen("profile screen")
                 game.switches["root_cat"] = None
             elif event.ui_element == self.previous_cat_button:
-                if isinstance(Cat.fetch_cat(self.previous_cat), Cat):
+                if isinstance(Cat.fetch_cat(self.previous_cat), Cat) and Cat.fetch_cat(self.previous_cat).moons >= 0:
                     game.switches["cat"] = self.previous_cat
                     game.switches["root_cat"] = Cat.all_cats[self.previous_cat]
                     self.exit_screen()
@@ -85,7 +85,7 @@ class FamilyTreeScreen(Screens):
                 else:
                     print("invalid previous cat", self.previous_cat)
             elif event.ui_element == self.next_cat_button:
-                if isinstance(Cat.fetch_cat(self.next_cat), Cat):
+                if isinstance(Cat.fetch_cat(self.next_cat), Cat) and Cat.fetch_cat(self.next_cat).moons >= 0:
                     game.switches["cat"] = self.next_cat
                     game.switches["root_cat"] = Cat.all_cats[self.next_cat]
                     self.exit_screen()
@@ -727,6 +727,8 @@ class FamilyTreeScreen(Screens):
                     and check_cat.outside == self.the_cat.outside
                     and check_cat.df == self.the_cat.df
                     and not check_cat.faded
+                    # LG
+                    and not check_cat.moons < 0
                 ):
                     previous_cat = check_cat.ID
 
@@ -738,6 +740,8 @@ class FamilyTreeScreen(Screens):
                     and check_cat.outside == self.the_cat.outside
                     and check_cat.df == self.the_cat.df
                     and not check_cat.faded
+                    # LG
+                    and not check_cat.moons < 0
                 ):
                     next_cat = check_cat.ID
 

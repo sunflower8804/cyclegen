@@ -258,9 +258,9 @@
 		"best_stat_modifier": 10,
 		"fail_stat_cat_modifier": -15,
 		"chance_of_romance_patrol": 16,
-		"debug_ensure_patrol_id": null,
+		"debug_ensure_patrol_id": "life_df_R2",
 		"debug_override_patrol_stat_requirements": false,
-		"debug_ensure_patrol_outcome": null,
+		"debug_ensure_patrol_outcome": false,
 		"comment": [
 			"the Cruel Season difficulty modifier needs to have a space rather than an underscore,",
 			"due to how it's written in the save files. So don't try to 'fix' it."
@@ -443,7 +443,7 @@
 	"affair_relationship_change_ub": 30,
 	"murder_chance":-1,
 	"accomplice_chance":-1,
-	"debug_ensure_dialogue": "",
+	"debug_ensure_dialogue": "cool_you_kit_3",
 
 	"shunned_cat": {
 		"exile_chance": {
