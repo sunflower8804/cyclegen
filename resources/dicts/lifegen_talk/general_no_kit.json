@@ -1907,7 +1907,7 @@
             "Good morning, y_c. Nice weather, isn't it?",
             "[... t_c? What in StarClan?]",
             "Listen, I might as well. The kittens wanted to have fun, and I'm just sitting here. Might as well get buried by leaves.",
-            "[Since t_c seems unbothered, you leaf them to it.]"
+            "[Since t_c seems unbothered, you leaf {PRONOUN/t_c/object} to it.]"
         ]
     ],
     "introspective_queen_leaffall": [
@@ -1963,7 +1963,7 @@
         [
             "Morning, y_c.",
             "I hope you're not busy. I was thinking about a conversation we had last week, about the uses of burdock root. You mentioned that they're specifically used on rat bites, right?",
-            "Well, I was listening to  r_c grumbling about a fox bite, and I was wondering why you can't use burdock on other types of bites?",
+            "Well, I was listening to r_c grumbling about a fox bite, and I was wondering why you can't use burdock on other types of bites?",
             "... You'll ask your mentor? Ah okay. Let me know when you find out, I'm curious."
         ]
     ],
