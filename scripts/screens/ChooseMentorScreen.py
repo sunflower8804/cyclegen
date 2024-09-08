@@ -423,7 +423,7 @@ class ChooseMentorScreen(Screens):
                 and check_cat.ID != game.clan.instructor.ID
                 and not check_cat.exiled
                 and check_cat.status
-                in ["apprentice", "medicine cat apprentice", "mediator apprentice"]
+                in ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"]
                 and check_cat.df == self.the_cat.df
             ):
                 self.previous_cat = check_cat.ID
@@ -435,7 +435,7 @@ class ChooseMentorScreen(Screens):
                 and check_cat.ID != game.clan.instructor.ID
                 and not check_cat.exiled
                 and check_cat.status
-                in ["apprentice", "medicine cat apprentice", "mediator apprentice"]
+                in ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"]
                 and check_cat.df == self.the_cat.df
             ):
                 self.next_cat = check_cat.ID
@@ -711,7 +711,7 @@ class ChooseMentorScreen(Screens):
                 if is_valid:
                     valid_mediator_mentors.append(cat)
 
-            return potential_mediator_mentors
+            return valid_mediator_mentors
         
         elif self.the_cat.status == "queen's apprentice":
             for cat in potential_queen_mentors:
@@ -728,9 +728,9 @@ class ChooseMentorScreen(Screens):
 
                 # Add to valid or invalid list based on checks
                 if is_valid:
-                    potential_queen_mentors.append(cat)
+                    valid_queen_mentors.append(cat)
 
-            return potential_queen_mentors
+            return valid_queen_mentors
         
         return []
 

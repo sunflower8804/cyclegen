@@ -2325,5 +2325,115 @@
             "[t_c begins sorting through {PRONOUN/t_c/poss} supplies, but keeps looking back to make sure you haven't moved from the entrance.]",
             "[It seems {PRONOUN/t_c/subject} still {VERB/t_c/don't/doesn't} trust you anywhere near {PRONOUN/t_c/poss} herb stores...]"
         ]
-    ]
+    ],
+    "TinyTeddy_stable_theymedicine_youapp_01": [
+[
+"they_medicine_cat",
+"they_stable",
+"you_app"
+],
+[
+"Oh for the love- WHAT IN STARCLAN'S NAME DID YOU GET INTO THIS TIME?!",
+"['I just wanted to say hi!']",
+"My mistake then...",
+"Hello...?",
+"[...]",
+"['... Sooooooo, how's your day been?...']",
+"Good, good... Been very good. You?",
+"['It's been good...']",
+"That's good... yeah...",
+"['So anyways, I found funky looking rock, you wanna see?']",
+"YES PLEASE! I was wondering when you'd find something interesting to share with me!"
+ ]
+],
+"TinyTeddy_stable_theymedicine_youapp_02": [
+[
+"they_medicine_cat",
+"they_stable",
+"you_app"
+],
+[
+"Watch yourself out there, y_c. I don't want to see you in the medicine den."
+ ]
+],
+"TinyTeddy_stable_theymedicine_youapp_03": [
+[
+"they_medicine_cat",
+"they_stable",
+"you_app"
+],
+[
+"y_c, thank you for stopping by, I have a favour to ask, could you please give these to m_n? They were asking about them earlier but I didn't have a chance to catch up.",
+"Thank you, y_c. m_n has trained you well."
+ ]
+],
+"TinyTeddy_stable_theymedicine_mentor_youmedapp_01": [
+[
+"they_medicine_cat",
+"they_stable",
+"from_mentor",
+"you_medicine_cat_apprentice"
+],
+[
+"r_m commented on how well you organised the herb collection earlier, I know you're taking a break but I've been out all day and I wanted to see it for myself, please follow me.",
+"[You follow your mentor into the medicine cat den, you hold your breath as {PRONOUN/t_c/subject} inspect every plant with unbreakable focus. {PRONOUN/t_c/subject/CAP} click {PRONOUN/t_c/poss} tongue and turn back to you, nodding in approval.]",
+"Ha, it looks like r_m was right, this is perfect! Well done, y_c, very proud of your work today."
+ ]
+],
+"TinyTeddy_stable_theymedicine_mentor_youmedapp_02": [
+[
+"they_medicine_cat",
+"they_stable",
+"from_mentor",
+"you_medicine_cat_apprentice"
+],
+[
+"y_c could you please pass me the cobwebs?",
+"Thank you! I'm heading off, o_cClan asked for some assistance and I'll be out for a while. I trust that you can look after the medicine den. If you're unsure about anything, ask r_m for help and don't be afraid to ask t_m either.",
+"I made sure to teach them some tricks that will be very useful- Actually, make sure to tell them that I'm gone, they're currently out with l_n and d_n at the moment... I'm sorry, I need to go, y_c. "
+ ]
+],
+"TinyTeddy_stable_theymedicine_youadult_01": [
+[
+"they_medicine_cat",
+"they_stable",
+"you_ill",
+"you_adult"
+],
+[
+"Here, have some of this, it will help. Please don't worry, y_c, you're in good paws. You're going to get better. I won't let anything happen to you, I promise."
+]
+],
+"TinyTeddy_stable_theymedicine_youadult_02": [
+[
+"they_medicine_cat",
+"they_stable",
+"you_injured",
+"you_adult"
+],
+[
+"StarClan needs to watch our clanmates better, this should have never happened... Not to a cat like you...",
+"Would you like anything to eat?",
+"Okay, I can arrange that, you stay here. I'll be back in a moment."
+ ]
+],
+"TinyTeddy_stable_theymedicine_youadult_03": [
+[
+"they_medicine_cat",
+"they_stable",
+"you_pregnant",
+"you_adult"
+],
+[
+"Ah, ah, ah, ah! Sit back down, y_c! StarClan, don't you go pushing yourself. If you need something, you tell me, it's my job- NO!",
+"No, you are not bothering me by telling me what you need, why would you think that? So what is it that you're after?",
+"Some water? Pft, that can easily be arranged, I'll go get that for you now- AND DON'T YOU MOVE FROM THAT SPOT!",
+"[t_c bolts out of the den, you smirk to yourself as you lay back down, you decide to stretch out your paw to where it just rests outside of your nest. t_c shuffles back inside, clutching a scrap of wood that curves inwards, water ripples inside.]",
+"[{PRONOUN/t_c/subject/CAP} step forwards and rest it down before you, {PRONOUN/t_c/poss} eyes abruptly narrow, {PRONOUN/t_c/poss} tail flicks in annoyance.]",
+"...",
+"...",
+"...",
+"Oh you think you're funny, don't you?"
+ ]
+]
 }

@@ -5403,7 +5403,7 @@
             "...I think I'll pass on that one, y_c, sorry. Have you tried asking r_c_assertive?"
         ]
     ],
-    "youdeaf_R71": [
+    "youdeaf_R711": [
         [
             "only_you_deaf",
             "you_kitten",
@@ -5560,5 +5560,115 @@
         [
             "[t_c grabs y_l and hides {PRONOUN/y_l/object} underneath {PRONOUN/t_c/object} when you approach.]"
         ]
-    ]
+    ],
+    "TinyTeddy_stable_sibling_theyadult_youkitten_01": [
+[
+"they_adult",
+"they_stable",
+"you_kitten",
+"sibling",
+"half sibling",
+"adopted_sibling"
+],
+[
+"[t_c smiles as you follow behind {PRONOUN/t_c/object}, marching in sync. Other cats stop and stare at the pair of you strutting around camp. t_c chuckles to {PRONOUN/t_c/object}self.]",
+"One, two, three, one, two, three! That's right y_c! You're doing it perfectly! Just follow me!"
+ ]
+],
+"TinyTeddy_stable_sibling_theyadult_youkitten_02": [
+[
+"they_adult",
+"they_stable",
+"you_kitten",
+"sibling",
+"half sibling",
+"adopted_sibling"
+],
+[
+"High paw!",
+"[You bounce up and slap {PRONOUN/t_c/poss} paw, {PRONOUN/t_c/subject} smirks slightly- little did you know you fell right into {PRONOUN/t_c/poss} trap.]",
+"To the side! To the left! Up high again! Now down low!",
+"[You go to hit {PRONOUN/t_c/poss} paw but {PRONOUN/t_c/subject} snap it back, causing you to miss, you stumble losing balance. t_c's eyes widen in fear as you hit the ground with a soft thud... there's a moment of silence until-]",
+"y_c- wait... NO!",
+"[You burst into tears and flail on the ground catching the attention of r_q. {PRONOUN/r_q/subject} glance over to see a bundle of fur and t_c standing above, trying to shush your cries. A sharp voice cuts through the camp as r_q storms your way.]",
+"NO! r_q I didn't mean it! Hold on! I CAN EXPLAIN!",
+"[r_q cuts {PRONOUN/t_c/object} off and begins chewing out t_c, you giggle, your plan worked!]",
+"Wait a- y_c... Did you- fake it???",
+"[r_q turns to you, {PRONOUN/r_q/poss} eyes narrowing... Oh you are both so dead.]"
+ ]
+],
+"TinyTeddy_stable_sibling_theyadult_youkitten_03": [
+[
+"they_adult",
+"they_stable",
+"you_kitten",
+"sibling",
+"half sibling",
+"adopted_sibling"
+],
+[
+"Huh- look at that, there's a storm brewing.",
+"What's a storm? How do I explain that one, hmm... Well, y_c, a storm is... something that's out of our control. It can be very dangerous, dark and grim. It's all unknown territory. But strangely beautiful.",
+"In other words, it's what I used to be when I was your age- oh yeah! I was a storm in a kits body, that's what the queens say anyways.",
+"But I mellowed out and eventually just became a light drizzle... and none of this is actually answering your question huh? Look at me go, sibling of the moon. It's just, being honest, there's such a difference between you and I.",
+"It feels like we're oceans apart, see, no cat actually knows what a storm is- maybe the kittypets living west do, but we just say it's a gift from StarClan...",
+"As your older sibling I want to do everything I can to protect you and raise you. But, I don't really know how to approach this, I know how to talk to kits, that's understandable, but... my little sibling? That feels different...",
+"[You press into t_c's shoulder and purr. You remind {PRONOUN/t_c/object} that no matter the difference between you both, you're family. And family sticks together. You also say you love the way {PRONOUN/t_c/subject} see the world!]",
+"Oh! You do? Well then, can I ramble for a bit? I can?",
+"Thank you, y_c, I love you."
+ ]
+],
+"TinyTeddy_stable_theyparent_theyany_youkitten_01": [
+[
+"they_adult",
+"they_stable",
+"you_kitten",
+"from_parent"
+],
+[
+"Darling, where are you going?",
+"I'm sorry, but you can't go outside the nursery today- see outside, see the sparkly water that's coming from the sky.",
+"That's rain and it can be very cold, little kittens like you shouldn't be getting very wet, I don't want you getting sick. It's okay though, it's actually very peaceful to watch. Sit with me.",
+"See, incredible isn't it? Once you're all grown up, I can't wait to hear all the things you've seen out there. But for now, let's stay here."
+ ]
+],
+"TinyTeddy_stable_theyparent_theyany_youkitten_02": [
+[
+"they_adult",
+"they_stable",
+"you_kitten",
+"from_parent"
+],
+[
+"y_c.",
+"[t_c walks through the medicine den, {PRONOUN/t_c/poss} shoulders tense and {PRONOUN/t_c/poss} ears held back slightly. A frown creases {PRONOUN/t_c/poss} features as {PRONOUN/t_c/subject} stares you down. {PRONOUN/t_c/subject} calmly looks back to r_m who's fuming.]",
+"[You flinch as r_m coldly states that you tore up the fresh herbs {PRONOUN/r_m/subject} dug up this morning. t_c looks angry but eventually sighs and apologises, promising to find replacements and promising you'll be dealt with accordingly.]",
+"[You turn to go back to the nursery, t_c cuts in front of you and shakes {PRONOUN/t_c/poss} head.]",
+"No, you caused this mess, you're helping me clean it up. Come on, let's get a move on.",
+"What were you even doing in the medicine den? Looking for honey? y_c, I've told you countless times, that if you want some, all you have to do is ask.",
+"Look, I get it, kits your age are full of boundless energy and accidents can happen, I'm guessing you didn't mean to tear up those herbs, they're pretty fragile.",
+"['Am I going outside the camp? Is that safe?']",
+"Yes, whilst I'm here, it will be fine, besides, we're not going too far, I know exactly where to look.",
+"[t_c quickly informs the guards and then picks you up by the scruff, {PRONOUN/t_c/poss} grip firm. As {PRONOUN/t_c/subject} walks, it's silent, not even the birds or trees dared to move. {PRONOUN/t_c/subject} eventually sits you down and loom above you, {PRONOUN/t_c/poss} gaze full of love and worry.]",
+"Let me be clear, I don't want you in there without supervision, but it's done now. What we can do is learn from it and I trust that you will remember that. The medicine den can be a very dangerous place.",
+"[{PRONOUN/t_c/subject} nudges you forwards, {PRONOUN/t_c/poss} shadow cast over you to protect you from the sky. The two of you walk in silence once more.]",
+"The last thing I want is for you to get hurt. I love you, you're my kit. It's my job to protect you however, I can't always be there. What if you slipped? What if there was a poisonous herb?",
+"y_c, please be careful. I can't afford to lose you. Oh! There we are, this is the herb we're looking for, here, this is how you extract it.",
+"See, just like that. Now, once we get back to camp, you'll give this back to r_m. And you won't have any honey for a week. This isn't up for debate.",
+"[You nod sheepishly as t_c carries the herb. {PRONOUN/t_c/poss/CAP} tail rests on your head for a moment, a smile tugs at {PRONOUN/t_c/poss} lips before it disappears as {PRONOUN/t_c/subject} nudges you back in the direction towards camp.]"
+ ]
+],
+"TinyTeddy_stable_theyparent_theyany_youkitten_03": [
+[
+"they_adult",
+"they_stable",
+"you_kitten",
+"from_parent"
+],
+[
+"Aww, sweety, is that for me?",
+"[In your paws is a bundle of moss with black berries for eyes and a stick for a tail. You smile gleefully as you hand it over, t_c's eyes light up as {PRONOUN/t_c/subject} pulls it towards {PRONOUN/t_c/poss} chest.]",
+"My little one, I love you so, so, very much."
+ ]
+]
 }

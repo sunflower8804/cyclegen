@@ -554,6 +554,7 @@ class TalkScreen(Screens):
                 and "they_app" not in tags
                 and "you_app" not in tags
                 and "they_adult" not in tags
+                and "they_not_kit" not in tags
                 and "you_adult" not in tags
                 ):
                 continue
@@ -817,6 +818,9 @@ class TalkScreen(Screens):
                 continue
 
             if "you_not_kit" in tags and game.clan.your_cat.moons < 6:
+                continue
+
+            if "they_not_kit" in tags and cat.moons < 6:
                 continue
 
 

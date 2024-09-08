@@ -657,7 +657,7 @@ class Patrol:
                     if game.clan.your_cat.shunned == 0:
                         continue
 
-            if game.switches["patrol_category"] == 'lifegen':
+            if game.switches["patrol_category"] in ['lifegen', 'df', 'date']:
 
                 if "bloodthirsty_only" in patrol.tags:
                     if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":
@@ -697,7 +697,7 @@ class Patrol:
                     test_runs[i] = adjust_txt(Cat, i, self.patrol_leader, self.patrol_cat_dict, r_c_allowed=False, o_c_allowed=False)
                     if test_runs[i] == "":
                         skip = True
-                        print("Skipping", patrol.patrol_id)
+                        print("Lifegen abbrev repl failed: Skipping", patrol.patrol_id)
                         break
                     # else:
                     #     print(i)
@@ -1259,8 +1259,14 @@ class Patrol:
             replace_dict["s_c"] = (str(stat_cat.name), choice(stat_cat.pronouns))
 
         # adjusting text for lifegen abbrevs + adding to replace dict
-        if game.switches["patrol_category"] == 'lifegen':
+        if game.switches["patrol_category"] in ['lifegen', 'df', 'date']:
             text = adjust_txt(Cat, text, self.patrol_leader, self.patrol_cat_dict, r_c_allowed=False, o_c_allowed=False)
+            if text == "":
+                # This shouldn't ever happen naturally, as the abbrevs in the patrol are all tested during filtering
+                if isinstance(game.config["patrol_generation"]["debug_ensure_patrol_id"], str):
+                    text = "Mrrp? Lifegen abbreviations in debug patrol could not be fulfilled."
+                else:
+                    text = "Mrrp? Please report as a Lifegen bug!"
             for cat in self.patrol_cat_dict.items():
                 replace_dict[cat[0]] = (str(cat[1].name), choice(cat[1].pronouns))
 

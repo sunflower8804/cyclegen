@@ -235,7 +235,7 @@ class PatrolOutcome:
 
         text = lifegen_abbrev_text
         if lifegen_abbrev_text == "":
-            print("No text!")
+            print("Lifegen: No abbrevs to adjust")
             text = self.text
 
         # the text has to be processed before - otherwise leader might be referenced with their warrior name
@@ -253,11 +253,14 @@ class PatrolOutcome:
                                            other_clan=patrol.other_clan)
 
         # This order is important. 
-        results.append(self._handle_accessories(patrol))
         results.append(self._handle_death(patrol))
         results.append(self._handle_lost(patrol))
+        # LG
+        results.append(self._handle_accessories(patrol))
         results.append(self._handle_df_convert(patrol))
+        results.append(self._handle_murder(patrol))
         results.append(self._handle_faith_changes(patrol))
+        # ---
         results.append(self._handle_condition_and_scars(patrol))
         results.append(unpack_rel_block(Cat, self.relationship_effects, patrol, stat_cat=self.stat_cat))
         results.append(self._handle_rep_changes(patrol))
@@ -653,6 +656,7 @@ class PatrolOutcome:
                         out_set.update(patrol.new_cats[index])
             return list(out_set)
         
+        results = []
         for block in self.murder:
             murderer = block.get("murderer", ())
             victim = block.get("victim", ())
@@ -666,6 +670,14 @@ class PatrolOutcome:
                 murderer_ob.remove(None)
             if None in victim_ob:
                 victim_ob.remove(None)
+
+            results.append(f"{murderer_ob[-1].name} has murdered {victim_ob[-1].name}.")
+            victim_ob[-1].die()
+
+            # add the murder to their history!
+            History.add_murders(victim_ob[-1], murderer_ob[-1], True, text=None, unrevealed_text=None)
+
+        return " ".join(results)
           
     def _handle_condition_and_scars(self, patrol:'Patrol') -> str:
         """ Handle injuring cats, or giving scars """

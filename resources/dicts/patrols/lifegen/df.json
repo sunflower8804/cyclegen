@@ -1683,7 +1683,7 @@
                 "exp": 15,
                 "weight": 1,
                 "new_cat": [
-                    ["meeting", "residence:df", "age:has_kits", "mate:p_l", "clan_status"],
+                    ["meeting", "residence:df", "age:has_kits", "mate:y_c", "clan_status"],
                     ["clan_status", "meeting", "litter", "residence:df", "parent:0", "backstory:dfkit1", "status:kitten"]
                 ]
             },
@@ -1702,7 +1702,7 @@
                 "exp": 15,
                 "weight": 1,
                 "new_cat": [
-                    ["meeting", "residence:df", "age:mate", "mate:p_l", "clan_status"],
+                    ["meeting", "residence:df", "age:mate", "mate:y_c", "clan_status"],
                     ["clan_status", "litter", "parent:0", "backstory:dfkit2", "status:kitten"]
                 ]
             },
@@ -1711,7 +1711,7 @@
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
-                    ["residence:df", "meeting", "clan_status", "age:mate", "mate:p_l", "backstory:ostracized_warrior"]
+                    ["residence:df", "meeting", "clan_status", "age:mate", "mate:y_c", "backstory:ostracized_warrior"]
                 ]
             },
             {
@@ -1719,7 +1719,7 @@
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
-                    ["meeting", "residence:df", "clan_status", "age:mate", "mate:p_l"]
+                    ["meeting", "residence:df", "clan_status", "age:mate", "mate:y_c"]
                 ]
             }
         ],
@@ -1735,7 +1735,7 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["p_l"],
+                        "cats": ["y_c"],
                         "injuries": ["battle_injury"],
                         "scars": []
                     }
@@ -1980,7 +1980,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "Courage surges in you. You're not going to be cowed by a mere unsettling feeling! You yowl your challenge into the dark mists of the forest. As your gaze scans up you realize, with embarassment hot on your pelt, that it's just r_c. You remember that {PRONOUN/r_c/subject} wanted to speak to you now that you see {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} clearly {VERB/r_c/isn't/aren't} interested anymore, however, as {PRONOUN/r_c/subject} {VERB/r_c/hold/holds} back mirth at your paranoia...",
+                "text": "Courage surges in you. You're not going to be cowed by a mere unsettling feeling! You yowl your challenge into the dark mists of the forest. As your gaze scans up you realize, with embarassment hot on your pelt, that it's just r_c. You remember that {PRONOUN/r_c/subject} wanted to speak to you now that you see {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} clearly {VERB/r_c/aren't/isn't} interested anymore, however, as {PRONOUN/r_c/subject} {VERB/r_c/hold/holds} back mirth at your paranoia...",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
@@ -2039,7 +2039,7 @@
                 "text": "Your claws unsheathe as you prepare. It's too late - you hear the whistle of wind above you and try to move from your position. You're too slow. Your attacker lands upon you as your yowl is cut off. Your gaze manages to catch on your assailant. r_c's eyes gleam in the low light before {PRONOUN/r_c/poss} fangs meet your throat. In the morning, the Clan is horrified to find your cold body in your nest...",
                 "exp": 0,
                 "weight": 20,
-                "dead cats": ["y_c"],
+                "dead cats": ["p_l"],
                 "murder": [
                     {
                         "murderer": ["r_c"],
@@ -2077,7 +2077,7 @@
         "chance_of_success": 45,
         "success_outcomes": [
             {
-                "text": "Navigating through the Dark Forest is no easy feat--and you're sure your Clanmates would be completely lost if they found themselves in the misty stretches. You, however, know this place better than any other cat in c_nClan. Effortlessly making your way to the training grounds, you emerge from the shrubbery with your head held high.",
+                "text": "Navigating through the Dark Forest is no easy feat--and you're sure your Clanmates would be completely lost if they found themselves in the misty stretches. You, however, know this place better than any other cat in c_n. Effortlessly making your way to the training grounds, you emerge from the shrubbery with your head held high.",
                 "exp": 15,
                 "weight": 20
             }
