@@ -282,7 +282,7 @@ class AffairScreen(Screens):
             chance += 10
         if chance < 1:
             chance = 1
-        if randint(0, chance + randint(-10,10)) == 0:
+        if randint(1,100) < randint(0, max(0, chance + randint(-10,10))):
             return True
         return False
 
