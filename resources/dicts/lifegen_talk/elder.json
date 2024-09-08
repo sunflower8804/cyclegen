@@ -1664,5 +1664,28 @@
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/laugh/laughs} awkwardly. You call over r_w1 and r_w2 and the three of you inspect the area, but find nothing. t_c doesn't meet your eyes when you report back to {PRONOUN/t_c/object}.]",
             "Ah... all right. Sorry for wasting your time."
         ]
-    ]
+    ],
+    "TinyTeddy_stable_Elder_Gen_01": [
+[
+"they_elder",
+"they_stable",
+"any"
+ ],
+[
+"[t_c snores loudly from {PRONOUN/t_c/poss} den.]"
+ ]
+],
+"TinyTeddy_stable_Elder_Gen_02": [
+[
+"they_elder",
+"they_stable",
+"any"
+ ],
+[
+"Huh? What did you want???",
+"To say hello?",
+"...",
+"I'm not a big fan of small talk."
+ ]
+]
 }

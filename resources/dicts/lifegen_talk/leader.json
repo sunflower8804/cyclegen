@@ -1997,5 +1997,87 @@
             "[t_c pauses, staring off into space. One ear flicks anxiously.]",
             "...I'm sure it'll be... fine? I'm sorry, y_c. I don't mean to scare you."
         ]
-    ]
+    ],
+    "TinyTeddy_stable_theyleader_youapp_01": [
+[
+"they_leader",
+"they_stable",
+"you_app"
+],
+[
+"Hey y_c, for your ceremony, what would you like your name to be?",
+"I think it's a good thing to ask about, don't you? Your answer tells me a lot about you and I'll do what I can to ensure you're happy with your name.",
+"So, what was it that you were thinking?"
+ ]
+],
+"TinyTeddy_stable_theyleader_youapp_02": [
+[
+"they_leader",
+"they_stable",
+"you_app"
+],
+[
+"I remember when I was your age, that was so long ago... Savour this time of your life, y_c... Don't forget where you started, because you can only improve from there."
+ ]
+],
+"TinyTeddy_stable_theyleader_youapp_03": [
+[
+"they_leader",
+"they_stable",
+"you_app"
+],
+[
+"...",
+"...",
+"...",
+"You're doing well, young one."
+ ]
+],
+"TinyTeddy_stable_theyleader_youadult_01": [
+[
+"they_leader",
+"they_stable",
+"you_adult"
+],
+[
+"How are you feeling today?",
+"Hmmm, good. It's wonderful to hear that the Clan is in high spirits! Have an amazing day, y_c. May StarClan light your path."
+ ]
+],
+"TinyTeddy_stable_theyleader_youadult_02": [
+[
+"they_leader",
+"they_stable",
+"you_injured",
+"you_adult"
+],
+[
+"Get some rest and focus on recovering. You're one of my best. Please save your strength, you're in good paws."
+ ]
+],
+"TinyTeddy_stable_theyleader_youadult_03": [
+[
+"they_leader",
+"they_stable",
+"you_adult"
+],
+[
+"...",
+"A storm is brewing, we need to reinforce the camp... StarClan help us all."
+ ]
+],
+"TinyTeddy_stable_Leader_Gen_01": [
+[
+"they_leader",
+"they_stable",
+"no_kit"
+ ],
+[
+"Deep breaths, t_c, deep breaths- You'll be okay. You can do this! Just go out there and tell them- it will be okay! It will be fine, it will be- GAH!",
+"[You poke your head into the leader's den and stare at a bewildered t_c. {PRONOUN/t_c/subject/CAP} blink a couple of times, a silence looms in the air.]",
+"You scared me, y_c! Please remember to meow or something before you come in. Sorry, I'm just nervous. I have an announcement I need to make at the gathering. But, I'm not looking forward to it.",
+"o_cClan has once again, overstepped some boundaries, and look- I'm not one to shudder in fear when facing other leaders- but... The deputy just became leader. And are proving to be a rather big problem. No-",
+"No I'm sorry, I shouldn't be discussing this out loud. I just- I just want to guarantee the safety of c_nClan. No matter what."
+ ]
+]
 }
