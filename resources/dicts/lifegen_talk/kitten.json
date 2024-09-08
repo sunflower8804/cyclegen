@@ -7034,5 +7034,19 @@
             "I'll go tell r_q that I asked you about it, and that {PRONOUN/r_q/subject}{VERB/r_q/'re/'s} a liar.",
             "[You wonder if {PRONOUN/t_c/subject}'d still react so warmly if you told {PRONOUN/t_c/object} the truth.]"
         ]
-    }
+    },
+    "newborn_to_newborn_H3": [
+        [
+            "they_newborn",
+            "newborn",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind",
+            "insult"
+        ],
+        [
+            "[t_c does not respond to your insult.]"
+        ]
+    ]
 }

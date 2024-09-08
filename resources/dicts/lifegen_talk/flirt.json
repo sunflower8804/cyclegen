@@ -3995,6 +3995,59 @@
             "Oh, you know what? Since you're so brave, how about I place you on more border patrols?"
         ]
     ],
+    "frommate_grieving_H1": [
+        [
+            "from_mate",
+            "they_grieving",
+            "any",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I'm sorry, y_c, I'm... not in the mood right now."
+        ]
+    ],
+    "frommate_grieving_H2": [
+        [
+            "from_mate",
+            "they_grieving",
+            "any",
+            "flirt",
+            "they_blind"
+        ],
+        [
+            "Haha...",
+            "You always know what to say to cheer me up.",
+            "[t_c smiles, but you can still see the deep sadness in {PRONOUN/t_c/poss} eyes.]"
+        ]
+    ],
+    "frommate_grieving_H3": [
+        [
+            "from_mate",
+            "they_grieving",
+            "they_deaf",
+            "you_deaf",
+            "any",
+            "reject"
+        ],
+        [
+            "[t_c smiles at you, but it's clear {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not in the mood for flirting.]"
+        ]
+    ],
+    "grieving_H1": [
+        [
+            "they_grieving",
+            "any",
+            "reject",
+            "they_deaf",
+            "you_deaf",
+            "they_blind"
+        ],
+        [
+            "[t_c curls in a ball, ignoring your attempts to flirt.]"
+        ]
+    ],
     "frommate_reject_H1": [
         [
             "reject",
