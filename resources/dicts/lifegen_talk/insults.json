@@ -2955,7 +2955,8 @@
         [
             "they_newborn",
             "newborn",
-            "insult"
+            "insult",
+            "they_deaf"
         ],
         [
             "[You meow at t_c aggressively, flopping your paws around as if that'll do much.]",
@@ -3075,12 +3076,41 @@
     ],
     "newborn_insult_J1": [
         [
-            "you_newborn",
+            "newborn",
             "they_newborn",
             "insult"
         ],
         [
             "Grrr..."
+        ]
+    ],
+    "newborn_to_newborn_H3": [
+        [
+            "they_newborn",
+            "newborn",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind",
+            "insult"
+        ],
+        [
+            "[t_c does not respond to your insult.]"
+        ]
+    ],
+    "shunned_grieving_H1": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "any",
+            "insult",
+            "they_deaf",
+            "you_deaf",
+            "they_blind"
+        ],
+        [
+            "[t_c turns {PRONOUN/t_c/poss} head away from you.]",
+            "[Looks like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not in the mood for banter.]"
         ]
     ],
     "TinyTeddy_stable_neg_youkitten_theywarrior_01": [

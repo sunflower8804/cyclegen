@@ -4613,7 +4613,7 @@
             "they_deaf",
             "they_blind",
             "you_blind",
-            "you_newborn"
+            "newborn"
         ],
         [
             "[You can feel the presence of so many big cats around you!]",
@@ -5024,6 +5024,8 @@
     "cool_kit_AJ6": [
         [
             "you_kitten",
+            "they_kitten",
+            "they_older",
             "cool",
             "unlawful",
             "you_blind",
@@ -5039,6 +5041,7 @@
     "cool_kit_AJ7": [
         [
             "you_kitten",
+            "they_kitten",
             "cool",
             "unlawful",
             "platonic_like",
@@ -5058,6 +5061,7 @@
     "cool_kit_AJ8": [
         [
             "you_kitten",
+            "they_kitten",
             "cool",
             "platonic_like",
             "you_blind",
@@ -5073,6 +5077,7 @@
     "cool_kit_AJ9": [
         [
             "you_kitten",
+            "they_kitten",
             "cool",
             "you_blind"
         ],
@@ -5088,6 +5093,7 @@
     "cool_kit_AJ10~1": [
         [
             "you_kitten",
+            "they_kitten",
             "cool",
             "upstanding",
             "they_orphaned",
@@ -5107,6 +5113,7 @@
     "cool_kit_AJ10~2": [
         [
             "you_kitten",
+            "they_kitten",
             "cool",
             "upstanding",
             "they_orphaned",

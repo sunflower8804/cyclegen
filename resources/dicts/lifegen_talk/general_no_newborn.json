@@ -3818,5 +3818,61 @@
             "[You smell t_c nearby while trying to get to sleep.]",
             "[You don't lift your head. You must be hallucinating in your grief.]"
         ]
+    ],
+    "gen_grievingyou_H1": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "min_plike_20",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c looks up from {PRONOUN/t_c/poss} curled position. {PRONOUN/t_c/poss/CAP} eyes flash in surprise, and {PRONOUN/t_c/subject} quickly bump heads with you, happy to see you again.]"
+        ]
+    ],
+    "gen_grievingyou_H2": [
+        [
+            "they_grieving",
+            "they_dead",
+            "grievingyou",
+            "min_plike_20",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c looks up from {PRONOUN/t_c/poss} curled position. {PRONOUN/t_c/poss/CAP} eyes flash in surprise, and {PRONOUN/t_c/subject} quickly bunt heads with you, happy to see you again.]"
+        ]
+    ],
+    "gen_grievingthem_H1": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "min_plike_20",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You rush over to t_c, overjoyed to see {PRONOUN/t_c/object} alive and well.]",
+            "[You bunt heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
+        ]
+    ],
+    "gen_grievingthem_H2": [
+        [
+            "you_grieving",
+            "they_dead",
+            "grievingthem",
+            "any",
+            "min_plike_20",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You rush over to t_c, overjoyed to see {PRONOUN/t_c/object} alive and well.]",
+            "[You bunt heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
+        ]
     ]
 }
