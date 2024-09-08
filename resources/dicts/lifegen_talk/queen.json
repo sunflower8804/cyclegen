@@ -1853,5 +1853,176 @@
             "You're... here to see r_k? I don't know...",
             "Wait here, all right? Or actually, wait by your den. I have to check that l_n says it's okay for you to visit."
         ]
-    ]
+    ],
+    "you_shunnedsam2":{
+	"tags": [
+	"you_shunned",
+	"no_kit",
+	"they_queen"
+],
+"intro": [
+"[Since you've been shunned from the clan, t_c has guarded the kits more closely while you're around.]",
+"[Today, {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} decided to step it up a bit. There's now a woven blanket of leaves covering the entrance of the nursery, preventing you from seeing the kits.]",
+"[Of course, standing in front of the blanket of leaves is t_c. As you approach, t_c stiffens.]",
+"Password?"
+],
+"intro_choices": {
+	"choice1":{
+	"text": "Prey",
+	"next_scene": "wrong"
+},
+	"choice2":{
+	"text": "Kit",
+	"next_scene": "wrong"
+},
+	"choice3":{
+	"text": "Monster",
+	"next_scene": "wrong"
+},
+	"choice4":{
+	"text": "Dirtplace",
+	"next_scene": "right"
+},
+	"choice5":{
+	"text": "t_c",
+	"next_scene": "flatter"
+}
+},
+"wrong": [
+"Wrong. Go back to the edge of camp, and don't even <i>think</i> about going near the kits."
+],
+"right": [
+"How did you-",
+"N-nope, it's wrong.",
+"[t_c rushes away.]",
+"d_n, we have to change the password."
+],
+"flatter": [
+"I'm flattered, but no. You're not getting to see the kits, even if you try."
+]
+},
+"TinyTeddy_stable_theyqueen_youapp_01": [
+[
+"they_queen",
+"they_stable",
+"you_app"
+],
+[
+"What are you doing here today, y_c?",
+"A little too old to be lurking around the nursery, huh? Oh relax! I'm teasing!",
+"It is nice to see you back here again, do keep visiting if you find the time. It's so wonderful to see how you grow. You've come a long way, y_c, don't you forget it."
+ ]
+],
+"TinyTeddy_stable_theyqueen_youapp_02": [
+[
+"they_queen",
+"they_stable",
+"clan_has_kits",
+"you_app"
+],
+[
+"Sorry y_c, could you please come back another time? I'm sorry but I just got the kits to bed and I don't want them waking up."
+ ]
+],
+"TinyTeddy_stable_theyqueen_youapp_03": [
+[
+"they_queen",
+"they_stable",
+"you_app"
+],
+[
+"Please be careful, don't push yourself!",
+"I know, I know! I know that you're not a kit anymore but I still can't help but worry!",
+"Just... just be safe, okay?"
+ ]
+],
+"TinyTeddy_stable_theyqueen_mentor_youqueenapp_01": [
+[
+"they_queen",
+"they_stable",
+"from_mentor",
+"clan_has_kits",
+"you_queen's_apprentice"
+],
+[
+"[Feeling overwhelmed with the constant screaming and crying of the kits you quickly excuse yourself and stand outside the nursery. You take in a deep breath, your legs shake and your fur bristles.]",
+"y_c, are you okay? Can we talk please?",
+"[You nod hesitantly and follow t_c to a shaded area away from the nursery and any clanmates. Your ears are pinned back, your nose scrunched up as you hold your tongue, you fear that the words you'll say are... Not appropriate...]",
+"You looked really upset, I understand that this can be a lot, especially for someone who's learning. It's not easy by any means. You're expected to do so much so quickly and all at once.",
+"Could you please explain to me what happened? How you felt and what triggered that response?",
+"['I just got overwhelmed... There was so much going on and I couldn't take it... It was loud and- r_k was crying all while r_w was trying to give some report... You were helping somecat and then a kit teasing another...']",
+"['I just needed to breathe... I'm sorry.']",
+"Don't apologise for acting maturely and taking action to prevent the situation from getting worse. Don't apologise for feeling that way or talking about it. You-",
+"I'm proud of you, y_c. You did the right thing. You felt uncomfortable, you were worried that you might have snapped. That's exactly what I want to see in young cats. Maturity, discipline and awareness",
+"Don't ever feel ashamed to take a quick breather and start with a fresh mind. That's something that all cats should practise and something the kits should learn from. I'm very proud of you and thank you for your honesty.",
+"I'm going back inside, you're in no rush to get back to the nursery, take your time. I'll see you when you're ready."
+ ]
+],
+"TinyTeddy_stable_theyqueen_mentor_youqueenapp_02": [
+[
+"they_queen",
+"they_stable",
+"from_mentor",
+"clan_has_kits",
+"you_queen's_apprentice"
+],
+[
+"Oh StarClan!!! y_c could you please go get me r_m?! r_k threw up again!",
+"Hey, hey, it's okay little one! You're oka- OH NO!!! y_c hurry please!!!",
+"[You throw yourself out of the den and bolt across the camp. r_m scrambles to {PRONOUN/r_m/poss} paws at the sight of your frightened face driven by urgency. You both run back to the nursery which has exploded into chaos.]",
+"Thank goodness you're here, r_m, some help please? Than- r_k hey it's okay, just breathe! Did you eat something bad sweety? A beetle?! What did it look like?",
+"Mhm, alright... Okay...",
+"y_c!",
+"Get sketching!!! If this kind of bug causes this, then we need to know so we can avoid it! The roots and berries are near my nest! Go! Go! Go!",
+"['Gotta love this job, eh, t_c?']",
+"Haha! Yup! Everyday, y_c! No regrets over here! Hahaha! Now, get moving!!!"
+ ]
+],
+"TinyTeddy_stable_theyqueen_youadult_01": [
+[
+"they_queen",
+"they_stable",
+"clan_has_kits",
+"you_adult"
+],
+[
+"[t_c smiles warmly at you as you both cross paths, {PRONOUN/t_c/poss} fur a tangled mess of curls and fluff. A silly flower crown rests atop {PRONOUN/t_c/poss} head and feathers are woven through {PRONOUN/t_c/poss} tail. You snicker slightly, t_c shoulder nudges you with a little force.]",
+"Don't laugh, wait until the end of today when the kits throw their little show. They're having a competition of who's better decorated, it's me, r_q, r_m and r_w... They're just warming up...",
+"['I think you look beautiful!']",
+"Then please vote for me later today~"
+ ]
+],
+"TinyTeddy_stable_theyqueen_youadult_02": [
+[
+"they_queen",
+"they_stable",
+"clan_has_kits",
+"you_adult"
+],
+[
+"Hey, y_c, if it's no trouble could you please watch the kits for me while I grab something to eat with t_m? I'm so sorry to drop this so suddenly but we rarely get the time to talk and I'd like just one meal with them this moon-",
+"Actually, never mind, I'm so sorry, it's wrong of me to suddenly dump this onto you with no warning. That's no fair on you-",
+"['No, go, I'm not busy, it's okay! You've been working really hard recently and you deserve that break. Go on, I'll watch the nursery.']",
+"Thank you so much, y_c. I'll make it up to you, I promise!",
+"[{PRONOUN/t_c/subject/CAP} smile to themselves, {PRONOUN/t_c/poss} eyes full of love and gratitude. They bid you farewell with a purr. You can't help but laugh at the sight of t_c and t_m joyfully gossiping as they catch up after being separated for so long.]"
+ ]
+],
+"TinyTeddy_stable_theyqueen_youadult_03": [
+[
+"they_queen",
+"they_stable",
+"you_adult"
+],
+[
+"Woah, never in my life have I seen a kit so big!",
+"[You both laugh as you pass by the nursery.]",
+"Where are you going? The nursery is over here!!!",
+"['You can't tell me what to do!']",
+"Watch your tone, y_c! Or else it's time out for you!",
+"['OH NOOOO!!! NOT THE TIME OUT~']",
+"PFT- HAHAHA!!! Seeya, y_c, stay safe out there!",
+"['See you soon, t_c! Have a good day!']",
+"You as well."
+ ]
+]
 }

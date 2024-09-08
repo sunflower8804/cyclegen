@@ -3625,6 +3625,104 @@
             "Hehe. It's the chasing that's the fun part."
         ]
     ],
+    "shunned_ill_Guy1": [
+        [
+            "they_ill",
+            "they_injured",
+            "they_shunned",
+            "any",
+            "you_blind",
+            "they_blind",
+            "they_deaf"
+        ],
+        [
+            "[t_c groans pathetically. You didn't know that was possible.]"
+        ]
+    ],
+    "shunned_grieving_H1": [
+        [
+            "they_grieving",
+            "they_shunned",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You hear sniffling from t_c's sorry excuse of a nest.]",
+            "[... You feel bad for the poor cat. How many misfortunes must {PRONOUN/t_c/subject} be forsaken with?]"
+        ]
+    ],
+    "shunned_grievingyou_H1": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "they_shunned",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "... y_c? You're here?",
+            "I thought I was going to be alone forever.",
+            "... Please, don't leave me again."
+        ]
+    ],
+    "shunned_grievingyou_H2": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "Did you play some kind of sick joke on me?",
+            "Don't ever do that again!"
+        ]
+    ],
+    "shunned_grievingyou_Guy1": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "they_shunned",
+            "any"
+        ],
+        [
+            "y_c? You're alive?",
+            "... did even the Dark Forest kick you out? Does this mean I can't die either?"
+        ]
+    ],
+    "shunned_grievingthem_H1": [
+        [
+            "they_shunned",
+            "grievingthem",
+            "you_grieving",
+            "min_platonic_40",
+            "cool",
+            "unabashed",
+            "any"
+        ],
+        [
+            "[You rush over to t_c, almost convinced your eyes have forsaken you.]",
+            "Hey - Hey, what's up? I haven't see you this excited to me since I got shunned!",
+            "Don't tell me I have to diappear for you to care!"
+        ]
+    ],
+    "shunned_grievingthem_H2": [
+        [
+            "they_shunned",
+            "grievingthem",
+            "you_grieving",
+            "min_platonic_40",
+            "any",
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You push into t_c's pelt, glad to have {PRONOUN/t_c/poss} warmth next to yours after t_c being cold for so long...]"
+        ]
+    ],
     "grievingyou_shunned_J1": [
         [
             "both_shunned",
@@ -3719,6 +3817,62 @@
         [
             "[You smell t_c nearby while trying to get to sleep.]",
             "[You don't lift your head. You must be hallucinating in your grief.]"
+        ]
+    ],
+    "gen_grievingyou_H1": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "min_plike_20",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c looks up from {PRONOUN/t_c/poss} curled position. {PRONOUN/t_c/poss/CAP} eyes flash in surprise, and {PRONOUN/t_c/subject} quickly bump heads with you, happy to see you again.]"
+        ]
+    ],
+    "gen_grievingyou_H2": [
+        [
+            "they_grieving",
+            "they_dead",
+            "grievingyou",
+            "min_plike_20",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c looks up from {PRONOUN/t_c/poss} curled position. {PRONOUN/t_c/poss/CAP} eyes flash in surprise, and {PRONOUN/t_c/subject} quickly bunt heads with you, happy to see you again.]"
+        ]
+    ],
+    "gen_grievingthem_H1": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "min_plike_20",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You rush over to t_c, overjoyed to see {PRONOUN/t_c/object} alive and well.]",
+            "[You bunt heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
+        ]
+    ],
+    "gen_grievingthem_H2": [
+        [
+            "you_grieving",
+            "they_dead",
+            "grievingthem",
+            "any",
+            "min_plike_20",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You rush over to t_c, overjoyed to see {PRONOUN/t_c/object} alive and well.]",
+            "[You bunt heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
         ]
     ]
 }

@@ -1322,6 +1322,8 @@ class MurderScreen(Screens):
         
         if death and not injury:
             you.die()
+            if you.status == "leader":
+                game.clan.leader_lives -= 1
 
         if injury and not death:
             if self.method == "attack":
@@ -1595,6 +1597,7 @@ class MurderScreen(Screens):
         discovery_num = randint(1,10)
 
         if not all_leader_lives:
+            game.clan.leader_lives -= 1
             if discover_chance < 7:
                 discover_chance = randint(7,9)
         # if u kill the leader n they wake up like an hour later Yeah ur probably gonna get caught

@@ -584,5 +584,17 @@
             "[While laying in camp, trying your best to fall asleep, you feel your temperature drop.]",
             "[t_c must be walking past.]"
         ]
+    ],
+    "deaf_sc_Guy1": [
+        [
+            "they_sc",
+            "any",
+            "they_deaf",
+            "you_deaf",
+            "they_blind"
+        ],
+        [
+            "[t_c raises {PRONOUN/t_c/poss} sparkling tail in welcome.]"
+        ]
     ]
 }

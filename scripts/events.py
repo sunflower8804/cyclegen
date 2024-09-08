@@ -751,7 +751,7 @@ class Events:
                 if not game.clan.clan_settings["same sex birth"]:
                     is_gender_compatible = (other_parent_gender is None) or (cat.gender != other_parent_gender)
                 return (cat.ID != game.clan.your_cat.ID and cat.ID != other_parent_id and not cat.dead and not cat.outside
-                        and cat.age in ["young adult", "adult", "senior adult"] 
+                        and cat.age in ["young adult", "adult", "senior adult"] and cat.moons > 17
                         and "apprentice" not in cat.status and is_age_compatible and is_gender_compatible and is_relation_compatible)
 
             for _ in range(MAX_ATTEMPTS):
@@ -962,7 +962,7 @@ class Events:
                 process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
             birth_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), birth_txt)
 
-            birth_txt = self.process_text(birth_txt)
+            birth_txt = self.process_text_birth(birth_txt)
 
             for key, value in replacements.items():
                 birth_txt = birth_txt.replace(key, str(value))
@@ -976,9 +976,11 @@ class Events:
                         abbrev_cat = process_text_dict[abbrev]
                         process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
                     birth_txt = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), birth_txt)
+                    birth_txt = self.process_text_birth(birth_txt)
+
                     for key, value in replacements.items():
                         birth_txt = birth_txt.replace(key, str(value))
-                    birth_txt = self.process_text(birth_txt)
+                    
                     if birth_txt:
                         break
 
@@ -1017,6 +1019,7 @@ class Events:
         game.clan.your_cat.w_done = False
         game.clan.your_cat.age = "newborn"
         game.switches['continue_after_death'] = False
+        self.cat_dict.clear()
         
     def get_living_cats(self):
         living_cats = []
@@ -1024,6 +1027,20 @@ class Events:
             if not the_cat.dead and not the_cat.outside and not the_cat.moons == -1:
                 living_cats.append(the_cat)
         return living_cats
+
+    def process_text_birth(self, text):
+        process_text_dict = self.cat_dict.copy()
+        for abbrev in process_text_dict.keys():
+            abbrev_cat = process_text_dict[abbrev]
+            process_text_dict[abbrev] = (abbrev_cat, random.choice(abbrev_cat.pronouns))
+
+        text = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), text)
+
+        text = text.replace("c_n", str(game.clan.name))
+        if "w_c" in text:
+            if game.clan.war.get("at_war", True):
+                text = text.replace("w_c", str(game.clan.war["enemy"]))
+        return text
 
     def process_text(self, text):
         self.cat_dict.clear()

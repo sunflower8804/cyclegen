@@ -3995,6 +3995,59 @@
             "Oh, you know what? Since you're so brave, how about I place you on more border patrols?"
         ]
     ],
+    "frommate_grieving_H1": [
+        [
+            "from_mate",
+            "they_grieving",
+            "any",
+            "reject",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I'm sorry, y_c, I'm... not in the mood right now."
+        ]
+    ],
+    "frommate_grieving_H2": [
+        [
+            "from_mate",
+            "they_grieving",
+            "any",
+            "flirt",
+            "they_blind"
+        ],
+        [
+            "Haha...",
+            "You always know what to say to cheer me up.",
+            "[t_c smiles, but you can still see the deep sadness in {PRONOUN/t_c/poss} eyes.]"
+        ]
+    ],
+    "frommate_grieving_H3": [
+        [
+            "from_mate",
+            "they_grieving",
+            "they_deaf",
+            "you_deaf",
+            "any",
+            "reject"
+        ],
+        [
+            "[t_c smiles at you, but it's clear {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not in the mood for flirting.]"
+        ]
+    ],
+    "grieving_H1": [
+        [
+            "they_grieving",
+            "any",
+            "reject",
+            "they_deaf",
+            "you_deaf",
+            "they_blind"
+        ],
+        [
+            "[t_c curls in a ball, ignoring your attempts to flirt.]"
+        ]
+    ],
     "frommate_reject_H1": [
         [
             "reject",
@@ -4298,6 +4351,212 @@
         ],
         [
             "Is this the origins of our love story? Please say yes!"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_01": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "You're too nice, y_c... Wow, yeah... Way too nice- I don't deserve such wonderful words. You on the other paw, you deserve all the praise."
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_02": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "Thank you. That means a lot, your words will help me get through today. Thank you y_c."
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_03": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "...",
+	        "You... You shouldn't say such things...",
+	        "I cannot afford to get distracted... Not by a cat such as yourself...",
+	        "...",
+	        "You're- I need to go.",
+	        "[Before you can object, t_c stumbles away, {PRONOUN/t_c/poss} eyes lowered to the ground. You can't help but feel your words are going to stick with {PRONOUN/t_c/object} for a while.]"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_04": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "A cat like me doesn't deserve this praise.",
+	        "You're the beautiful one here, strong, intelligent, kind and capable... Beautiful..."
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_05": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "When did you become so... articulate?"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_06": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "platonic_like",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "Is that something normal for a friend to say?",
+	        "Because I feel that maybe you said that with- flirtatious intentions...",
+	        "But, we're friends though, aren't we?",
+	        "Unless... You want to be more?",
+	        "[{PRONOUN/t_c/poss/CAP} whiskers twitch slightly as {PRONOUN/t_c/subject} smile, {PRONOUN/t_c/poss} eyes full of unexplainable emotions... Maybe {PRONOUN/t_c/subject} also want to be more than friends? You both can't help but wonder what the future holds.]"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_07": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "platonic_like",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "I love you too, y_c! I always have and I always will.",
+	        "You look a little flushed there, don't worry- I meant what I said. I'll leave you to ponder that thought!"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_08": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "platonic_like",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "Oh- Stop it you! You're going to make me lose concentration!"
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_09": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "platonic_like",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "Says the cat with the stars in {PRONOUN/y_c/poss} eyes and paws as gentle as the river banks. You're the beautiful one here, y_c. Not even Silverpelt could compare to the sight you behold."
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_TheyNotMate_10": [
+        [
+           "stable",
+            "non-mates",
+            "flirt",
+            "platonic_love",
+            "they_adult",
+            "you_adult"  
+        ],
+        [
+            "... Say that again, please. I need to hear it to make sure I heard it correctly.",
+            "Oh... it was what I heard, I'm glad we share the same sentiment."
+        ]
+    ],
+    "TinyTeddy_stable_Flirting_Gen_From Mate_01": [
+        [
+           "stable",
+"from_mate",
+"flirt",
+"they_adult",
+"you_adult"  
+        ],
+        [
+             "Says the cat with the stars in {PRONOUN/y_c/poss} eyes and paws as gentle as the river banks. You're the beautiful one here, y_c. Not even Silverpelt could compare to the sight you behold."
+        ]
+    ],
+
+"TinyTeddy_stable_Flirting_Gen_From Mate_02": [
+        [
+           "stable",
+"from_mate",
+"flirt",
+"they_adult",
+"you_adult"  
+        ],
+        [
+            "Not a day goes past where I am not thankful to be welcomed by your embrace... You're perfect, mind, body and soul. I love you y_c."
+        ]
+    ],
+
+"TinyTeddy_stable_Flirting_Gen_From Mate_03": [
+        [
+           "stable",
+"from_mate",
+"flirt",
+"they_adult",
+"you_adult"  
+        ],
+        [
+            "Still as sharp as before we got together, aren't you, love?",
+	"Well, please don't stop there, surely there's more you have to say~ If not, I could talk for a little while."
+        ]
+    ],
+
+"TinyTeddy_stable_Flirting_Gen_From Mate_04": [
+        [
+           "stable",
+"from_mate",
+"flirt",
+"they_adult",
+"you_adult"  
+        ],
+        [
+            "Please, never leave my side y_c. I love you dearly, your words are a blessing to be heard. I never want that to be taken away from me.",
+	"[You assure t_c that you'll never leave {PRONOUN/t_c/poss} side. {PRONOUN/t_c/subject} curls closer to you in your shared bed and begins to purr. You groom {PRONOUN/t_c/poss} fur and whisper soft words of affection- soft enough so only the both of you can hear.]"
+        ]
+    ],
+
+"TinyTeddy_stable_Flirting_Gen_From Mate_05": [
+        [
+           "stable",
+"from_mate",
+"flirt",
+"they_adult",
+"you_adult"  
+        ],
+        [
+            "GAH-",
+	"Love, I- pft!",
+	"[t_c explodes into a fit of giggles]",
+	"You always know what to say."
         ]
     ]
 }

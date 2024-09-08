@@ -6968,5 +6968,85 @@
             "[Your poor kit...]",
             "[If you'd gotten more time to raise {PRONOUN/t_c/object}, maybe {PRONOUN/t_c/subject} wouldn't have done it.]"
         ]
+    ],
+    "you_shunnedsam1": {
+        "tags": [
+            "you_shunned",
+            "from_your_kit",
+            "they_kitten",
+            "they_blind",
+	        "you_blind"
+        ],
+        "intro": [
+            "y_c..? Why does r_q say you're dangerous?",
+            "{PRONOUN/r_q/subject/CAP} {VERB/r_q/say/says} that you did something bad, and that I should stay away from you. Even though I'm your kit.",
+            "Did you really do something bad?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Explain what you did",
+                "next_scene": "yes"
+            },
+            "choice2": {
+                "text": "No",
+                "next_scene": "no"
+            }
+        },
+        "yes": [
+            "Oh... okay. I still love you anyways!",
+            "I'm sure you had a good reason."
+        ],
+        "no": [
+            "Of course you didn't do anything! It was silly for me to even ask.",
+            "I'll go tell r_q that I asked you about it, and that {PRONOUN/r_q/subject}{VERB/r_q/'re/'s} a liar.",
+            "[You wonder if {PRONOUN/t_c/subject}'d still react so warmly if you told {PRONOUN/t_c/object} the truth.]"
+        ]
+    },
+    "you_forgivenam1": {
+        "tags": [
+            "you_forgiven",
+            "from_your_kit",
+            "they_kitten",
+            "they_blind",
+	        "you_blind"
+        ],
+        "intro": [
+            "y_c..? Why does r_q say you're dangerous?",
+            "{PRONOUN/r_q/subject/CAP} {VERB/r_q/say/says} that you did something bad, and that I should stay away from you. Even though I'm your kit.",
+            "Did you really do something bad?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Explain what you did",
+                "next_scene": "yes"
+            },
+            "choice2": {
+                "text": "No",
+                "next_scene": "no"
+            }
+        },
+        "yes": [
+            "Oh... okay. I still love you anyways!",
+            "I'm sure you had a good reason."
+        ],
+        "no": [
+            "Of course you didn't do anything! It was silly for me to even ask.",
+            "I'll go tell r_q that I asked you about it, and that {PRONOUN/r_q/subject}{VERB/r_q/'re/'s} a liar.",
+            "[You wonder if {PRONOUN/t_c/subject}'d still react so warmly if you told {PRONOUN/t_c/object} the truth.]"
+        ]
+    },
+    "newborn_to_newborn_H3": [
+        [
+            "they_newborn",
+            "newborn",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind",
+            "insult"
+        ],
+        [
+            "[t_c does not respond to your insult.]"
+        ]
     ]
 }
