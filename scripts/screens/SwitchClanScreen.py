@@ -151,7 +151,7 @@ class SwitchClanScreen(Screens):
             if os.path.exists(clan_cats_json_path):
                 with open(clan_cats_json_path, "r") as read_file:
                     clan_cats_json = ujson.loads(read_file.read())
-                your_name = None
+                your_name = ""
                 for item in clan_cats_json:
                     if item["ID"] == you:
                         # if theres a better way to do this Keep it to yourself
