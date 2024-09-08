@@ -435,6 +435,9 @@ class MakeClanScreen(Screens):
             elif game.choose_cats[a].moons == 0:
                 game.choose_cats[a].moons = choice([1, 2, 3, 4, 5])
 
+            # fucking inventory
+            game.choose_cats[a].pelt.inventory = []
+
             if self.clan_age == "new":
                 if game.choose_cats[a].status not in ['newborn', 'kitten']:
                     unique_backstories = ["clan_founder4", "clan_founder13", "clan_founder14", "clan_founder15"]
@@ -2038,8 +2041,8 @@ class MakeClanScreen(Screens):
                     self.your_cat.permanent_condition['born without a leg']["moons_until"] = 1
                     self.your_cat.permanent_condition['born without a leg']["moons_with"] = -1
                     self.your_cat.permanent_condition['born without a leg']['born_with'] = True
-                self.your_cat.accessories = [self.accessory]
-                self.your_cat.inventory = [self.accessory]
+                self.your_cat.pelt.accessories = [self.accessory]
+                self.your_cat.pelt.inventory = [self.accessory]
                 self.your_cat.personality = Personality(trait=self.personality, kit_trait=True)
                 if self.skill == "Random":
                     self.skill = random.choice(self.skills)

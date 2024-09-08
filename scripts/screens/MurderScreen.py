@@ -191,6 +191,10 @@ class MurderScreen(Screens):
                 self.change_screen('profile screen')
                 self.stage = 'choose murder cat'
 
+                # reset cats
+                self.selected_cat = None
+                self.cat_to_murder = None
+
             # Method buttons
             elif event.ui_element == self.attackmethod:
                 self.method = 'attack'
@@ -1047,6 +1051,10 @@ class MurderScreen(Screens):
         self.selected_cat = None
 
         game.switches['cur_screen'] = "events screen"
+
+        # reset cats
+        self.selected_cat = None
+        self.cat_to_murder = None
     
     RESOURCE_DIR = "resources/dicts/events/lifegen_events/"
 
