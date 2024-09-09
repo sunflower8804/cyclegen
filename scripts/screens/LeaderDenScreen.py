@@ -926,6 +926,9 @@ class LeaderDenScreen(Screens):
         for ele in self.outsider_cat_buttons:
             self.outsider_cat_buttons[ele].kill()
         self.outsider_cat_buttons = {}
+        for marker in self.fav:
+            self.fav[marker].kill()
+        self.fav = {}
 
         pos_x = 0
         pos_y = 0
