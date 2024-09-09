@@ -137,7 +137,7 @@ class EventsScreen(Screens):
                 game.switches['cat'] = game.clan.your_cat.ID
                 self.change_screen("profile screen")
 
-            elif element == self.fave_filter_elements["cat_icon"]:
+            elif "cat_icon" in self.fave_filter_elements and element == self.fave_filter_elements["cat_icon"]:
                 if self.filters_open is True:
                     self.filters_open = False
                 else:
