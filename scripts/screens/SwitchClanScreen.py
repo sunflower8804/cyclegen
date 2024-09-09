@@ -139,6 +139,7 @@ class SwitchClanScreen(Screens):
         i = 0
         y_pos = 378
         for clan in self.clan_list[1:]:
+            clan_age = ""
 
             # LIFEGEN: grabbing mc names for QOL display -------------------
             clan_json_path = f"{get_save_dir()}/{clan}clan.json"
