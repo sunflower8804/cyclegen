@@ -617,12 +617,6 @@ class Patrol:
                 if "you_med" in patrol.tags:
                     if game.clan.your_cat.status != 'medicine cat':
                         continue
-                if "df" in patrol.tags:
-                    if len(self.patrol_cats) > 1:
-                        other_cat = self.patrol_cats[1]
-                        if not game.clan.your_cat.joined_df and not other_cat.joined_df:
-                            # need both cats to be trainees for goop romance
-                            continue
                     
             #  correct button check
             if game.switches["patrol_category"] == 'clangen':
@@ -640,24 +634,25 @@ class Patrol:
                     elif 'herb_gathering' not in patrol.types and patrol_type == 'med':
                         continue
 
-            if "df" in patrol.types:
-                if len(self.patrol_cats) > 1:
-                    
-                    other_cat = self.patrol_cats[1]
-                    
-                    if not other_cat.joined_df:
-                        if "fellowtrainee" in patrol.tags: 
-                            continue
-                    
-                    else:
-                        if "fellowtrainee" not in patrol.tags:
-                            continue
-
-                if "shunned" in patrol.tags:
-                    if game.clan.your_cat.shunned == 0:
-                        continue
-
             if game.switches["patrol_category"] in ['lifegen', 'df', 'date']:
+                if game.switches["patrol_category"] == "df":
+                    if len(self.patrol_cats) > 1:
+                        other_cat = self.patrol_cats[1]
+                        
+                        if not other_cat.joined_df:
+                            if "fellowtrainee" in patrol.tags: 
+                                continue
+                        
+                        else:
+                            if "fellowtrainee" not in patrol.tags:
+                                continue
+                elif game.switches["patrol_category"] == "date":
+                    if "df" in patrol.tags:
+                        if len(self.patrol_cats) > 1:
+                            other_cat = self.patrol_cats[1]
+                            if not game.clan.your_cat.joined_df or not other_cat.joined_df:
+                                # need both cats to be trainees for goop romance
+                                continue
 
                 if "bloodthirsty_only" in patrol.tags:
                     if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":
