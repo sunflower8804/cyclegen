@@ -6,6 +6,7 @@ import pygame_gui
 # for lifegen
 import os
 import ujson
+from scripts.housekeeping.datadir import get_save_dir
 
 from scripts.clan import Clan
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
@@ -140,18 +141,18 @@ class SwitchClanScreen(Screens):
         for clan in self.clan_list[1:]:
 
             # LIFEGEN: grabbing mc names for QOL display -------------------
-            clan_json_path = f"saves/{clan}clan.json"
+            clan_json_path = f"{get_save_dir()}/{clan}clan.json"
             if os.path.exists(clan_json_path):
                 with open(clan_json_path, "r") as read_file:
                     clan_json = ujson.loads(read_file.read())
                     you = clan_json["your_cat"]
                     clan_age = clan_json["clanage"]
 
-            clan_cats_json_path = f"saves/{clan}/clan_cats.json"
+            clan_cats_json_path = f"{get_save_dir()}/{clan}/clan_cats.json"
+            your_name = ""
             if os.path.exists(clan_cats_json_path):
                 with open(clan_cats_json_path, "r") as read_file:
                     clan_cats_json = ujson.loads(read_file.read())
-                your_name = ""
                 for item in clan_cats_json:
                     if item["ID"] == you:
                         # if theres a better way to do this Keep it to yourself
