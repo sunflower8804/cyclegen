@@ -811,7 +811,15 @@
             "Isn't ashamed of {PRONOUN/m_c/poss} past",
             "Isn't living with a paw in each world"
         ],
-        "main_backstory_constraint": ["kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1"]
+        "main_backstory_constraint": [
+            "kittypet1",
+            "kittypet2",
+            "kittypet3",
+            "kittypet4",
+            "refugee3",
+            "tragedy_survivor3",
+            "guided1"
+        ]
     },
     {
         "id": "gen_former_kittypet_apprentice",
@@ -820,11 +828,21 @@
             "Trains all day long to prove {PRONOUN/m_c/self} to be as good as any other apprentice",
             "Is worried {PRONOUN/m_c/subject} will never fit in",
             "Refuses to let {PRONOUN/m_c/poss} past kittypet life hold {PRONOUN/m_c/object} back",
-            "Wants to play with {PRONOUN/r_c/poss} old kittypet toys",
+            "Wants to play with {PRONOUN/m_c/poss} old kittypet toys",
             "Avoids the Twoleg place to prove {PRONOUN/m_c/poss} loyalty"
         ],
-        "main_backstory_constraint": ["kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1"],
-        "main_status_constraint": ["apprentice"]
+        "main_backstory_constraint": [
+            "kittypet1",
+            "kittypet2",
+            "kittypet3",
+            "kittypet4",
+            "refugee3",
+            "tragedy_survivor3",
+            "guided1"
+        ],
+        "main_status_constraint": [
+            "apprentice"
+        ]
     },
     {
         "id": "gen_former_kittypet_apprentice_to_apprentice",
@@ -837,23 +855,46 @@
             "Is jealous of how well r_c fits in, just because of {PRONOUN/r_c/poss} Clan roots",
             "Patiently answers r_c's slightly rude questions about kittypet life"
         ],
-        "main_backstory_constraint": ["kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1"],
-        "main_status_constraint": ["apprentice"],
-        "random_status_constraint": ["apprentice"],
-        "random_backstory_constraint": ["clanborn"]
+        "main_backstory_constraint": [
+            "kittypet1",
+            "kittypet2",
+            "kittypet3",
+            "kittypet4",
+            "refugee3",
+            "tragedy_survivor3",
+            "guided1"
+        ],
+        "main_status_constraint": [
+            "apprentice"
+        ],
+        "random_status_constraint": [
+            "apprentice"
+        ],
+        "random_backstory_constraint": [
+            "clanborn"
+        ]
     },
     {
         "id": "gen_former_kittypet_medcat",
         "thoughts": [
-            "Uses knowledge from {PRONOUN/r_c/poss} time with Twolegs to improve a healing method",
-            "Wonders what {PRONOUN/r_c/poss} old vet would do for greencough",
+            "Uses knowledge from {PRONOUN/m_c/poss} time with Twolegs to improve a healing method",
+            "Wonders what {PRONOUN/m_c/poss} old vet would do for greencough",
             "Is annoyed by Clan gossip surrounding {PRONOUN/m_c/poss} past and {PRONOUN/m_c/poss} connection to StarClan",
             "Knows a great garden in the Twoleg place for gathering catmint",
             "Wishes {PRONOUN/m_c/subject} could get {PRONOUN/m_c/poss} paws on the wrappings the vet uses"
         ],
-        "main_backstory_constraint": ["kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1"],
+        "main_backstory_constraint": [
+            "kittypet1",
+            "kittypet2",
+            "kittypet3",
+            "kittypet4",
+            "refugee3",
+            "tragedy_survivor3",
+            "guided1"
+        ],
         "main_status_constraint": [
-            "medicine cat"]
+            "medicine cat"
+        ]
     },
     {
         "id": "gen_former_kittypet_deputy",
@@ -864,9 +905,18 @@
             "Wishes other cats would trust in the leader's choice of making {PRONOUN/m_c/object} deputy",
             "Wouldn't mind bragging about {PRONOUN/m_c/poss} position in the Clan to some old kittypet friends"
         ],
-        "main_backstory_constraint": ["kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1"],
+        "main_backstory_constraint": [
+            "kittypet1",
+            "kittypet2",
+            "kittypet3",
+            "kittypet4",
+            "refugee3",
+            "tragedy_survivor3",
+            "guided1"
+        ],
         "main_status_constraint": [
-            "deputy"]
+            "deputy"
+        ]
     },
     {
         "id": "gen_former_kittypet_leader",
@@ -878,9 +928,18 @@
             "Looks back on {PRONOUN/m_c/poss} life as a kittypet, amazed at how different things are now",
             "Thinks about taking in some kittypets as apprentices"
         ],
-        "main_backstory_constraint": ["kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1"],
+        "main_backstory_constraint": [
+            "kittypet1",
+            "kittypet2",
+            "kittypet3",
+            "kittypet4",
+            "refugee3",
+            "tragedy_survivor3",
+            "guided1"
+        ],
         "main_status_constraint": [
-            "leader"]
+            "leader"
+        ]
     },
     {
         "id": "med_cat_alive_kit",
@@ -2348,6 +2407,25 @@
         ]
     },
     {
+        "id": "constantly_dizzy_gen_to_alive_gen",
+        "thoughts": [
+            "Stood up too fast again",
+            "Assures r_c {PRONOUN/m_c/poss} dizzy spell will end in a moment",
+            "Ignores the fuzzy spots on the edge of {PRONOUN/m_c/poss} vision",
+            "Feels like the world is moving a little too fast",
+            "Tells r_c that {PRONOUN/m_c/subject} {VERB/m_c/need/needs} to sit down for a second",
+            "Finds the sun to be too bright today"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "constantly dizzy"
+            ]
+        },
+        "random_living_constraint": [
+            "living"
+        ]
+    },
+    {
         "id": "guardian",
         "thoughts": [
             "Stares intensely at the entrance of camp",
@@ -2730,7 +2808,6 @@
         "random_living_status": [
             "living"
         ]
-        
     },
     {
         "id": "TIME",
@@ -2912,7 +2989,23 @@
         "main_skill_constraint": [
             "SLEEPER,1"
         ],
-        "random_living_status": [
+        "random_living_constraint": [
+            "living"
+        ]
+    },
+    {
+        "id": "lasting_grief_gen_to_alive_gen",
+        "thoughts": [
+            "Worries about losing r_c too",
+            "Puts on a smile for r_c",
+            "Struggles to voice how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels}"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "lasting grief"
+            ]
+        },
+        "random_living_constraint": [
             "living"
         ]
     }
