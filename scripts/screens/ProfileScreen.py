@@ -2073,7 +2073,7 @@ class ProfileScreen(Screens):
                 if 'clan_born' in beginning and beginning['clan_born']:
                     text += " {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} born on Moon " + str(
                         beginning['moon']) + " during " + str(beginning['birth_season']) + "."
-                elif 'age' in beginning and beginning['age']:
+                elif 'age' in beginning and beginning['age'] and not self.the_cat.outside:
                     text += " {PRONOUN/m_c/subject/CAP} joined the Clan on Moon " + str(
                         beginning['moon']) + " at the age of " + str(beginning['age']) + " Moons."
                 else:
