@@ -149,7 +149,7 @@ class SwitchClanScreen(Screens):
                         you = clan_json["your_cat"]
                         clan_age = clan_json["clanage"]
             except:
-                print("WARNING: Could not find clan_age")
+                pass
 
             clan_cats_json_path = f"{get_save_dir()}/{clan}/clan_cats.json"
             your_name = ""
@@ -178,7 +178,7 @@ class SwitchClanScreen(Screens):
                             your_name = item["name_prefix"] + suffix
                             break
             except:
-                print("WARNING: Could not find your name")
+                pass
                 # if your_name:
                 #     print(your_name)
                 # else:
