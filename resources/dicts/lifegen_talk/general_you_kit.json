@@ -1,7 +1,7 @@
 {
     "you_kitten_1": [
         [
-            "newborn",
+            "you_newborn",
             "sweet",
             "stable",
             "introspective",
@@ -15,7 +15,7 @@
     ],
     "introspective_to_NB": [
         [
-            "newborn",
+            "you_newborn",
             "introspective",
             "non-related",
             "they_blind",
@@ -29,7 +29,7 @@
     ],
     "sweet_6": [
         [
-            "newborn",
+            "you_newborn",
             "sweet",
             "you_blind"
         ],
@@ -112,7 +112,7 @@
     ],
     "assertive_tonewborn": [
         [
-            "newborn",
+            "you_newborn",
             "they_any",
             "assertive",
             "non-related",
@@ -127,7 +127,7 @@
     ],
     "assertive_tonewborn1": [
         [
-            "newborn",
+            "you_newborn",
             "they_any",
             "assertive",
             "they_blind",
@@ -140,7 +140,7 @@
     ],
     "assertive_tonewborn_2": [
         [
-            "newborn",
+            "you_newborn",
             "they_medicine_cat",
             "assertive",
             "they_blind",
@@ -226,7 +226,7 @@
     "upstanding_general1": [
         [
             "upstanding",
-            "newborn",
+            "you_newborn",
             "you_outsiderroots",
             "you_abandoned",
             "you_orphaned",
@@ -240,7 +240,7 @@
     ],
     "sweet_7": [
         [
-            "newborn",
+            "you_newborn",
             "sweet",
             "stable",
             "they_blind",
@@ -254,7 +254,7 @@
     ],
     "sweet_8": [
         [
-            "newborn",
+            "you_newborn",
             "sweet",
             "stable",
             "they_blind",
@@ -268,7 +268,7 @@
     ],
     "introspective_to_NB_1": [
         [
-            "Newborn",
+            "you_newborn",
             "Introspective",
             "they_blind",
             "you_blind"
@@ -282,7 +282,7 @@
     ],
     "introspective_to_NB_2": [
         [
-            "Newborn",
+            "you_newborn",
             "Introspective",
             "non-related",
             "you_blind"
@@ -295,7 +295,7 @@
     ],
     "assertive_1": [
         [
-            "newborn",
+            "you_newborn",
             "assertive",
             "from_parent",
             "they_blind",
@@ -308,7 +308,7 @@
     ],
     "unlawful_newborn": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful",
             "you_blind"
         ],
@@ -318,7 +318,7 @@
     ],
     "stable_8": [
         [
-            "newborn",
+            "you_newborn",
             "stable",
             "silly",
             "sweet",
@@ -332,7 +332,7 @@
     ],
     "stable_9": [
         [
-            "newborn",
+            "you_newborn",
             "stable",
             "you_blind"
         ],
@@ -346,7 +346,7 @@
     ],
     "stable_9_2": [
         [
-            "newborn",
+            "you_newborn",
             "stable",
             "you_blind"
         ],
@@ -460,7 +460,7 @@
     ],
     "assertive_parent4": [
         [
-            "newborn",
+            "you_newborn",
             "assertive",
             "cool",
             "platonic_like",
@@ -475,7 +475,7 @@
     ],
     "assertive_parent41": [
         [
-            "newborn",
+            "you_newborn",
             "platonic_like",
             "from_parent",
             "you_blind"
@@ -533,7 +533,7 @@
     ],
     "you_newborn": [
         [
-            "newborn",
+            "you_newborn",
             "from_parent",
             "adopted_parent",
             "they_blind",
@@ -546,7 +546,7 @@
     ],
     "you_newborn_from_parent": [
         [
-            "newborn",
+            "you_newborn",
             "from_parent",
             "adopted_parent",
             "they_blind",
@@ -559,7 +559,7 @@
     ],
     "you_newborn_from_parent2": [
         [
-            "newborn",
+            "you_newborn",
             "from_parent",
             "adopted_parent",
             "they_blind",
@@ -574,7 +574,7 @@
     ],
     "you_newborn_from_parent3": [
         [
-            "newborn",
+            "you_newborn",
             "from_parent",
             "adopted_parent",
             "they_blind",
@@ -586,7 +586,7 @@
     ],
     "you_newborn_from_parent4": [
         [
-            "newborn",
+            "you_newborn",
             "from_parent",
             "adopted_parent",
             "they_blind",
@@ -600,7 +600,7 @@
     ],
     "you_newborn2": [
         [
-            "newborn",
+            "you_newborn",
             "silly",
             "you_blind"
         ],
@@ -769,7 +769,7 @@
     ],
     "cool_you_kit": [
         [
-            "newborn",
+            "you_newborn",
             "cool",
             "platonic_like",
             "you_blind"
@@ -780,7 +780,7 @@
     ],
     "cool_you_kit_1": [
         [
-            "newborn",
+            "you_newborn",
             "cool",
             "platonic_like",
             "you_blind"
@@ -792,7 +792,7 @@
     ],
     "cool_you_kit_2": [
         [
-            "newborn",
+            "you_newborn",
             "cool",
             "platonic_like",
             "they_blind",
@@ -835,7 +835,7 @@
     ],
     "cool_you_kit_AJ": [
         [
-            "newborn",
+            "you_newborn",
             "cool",
             "neutral",
             "you_blind",
@@ -847,7 +847,7 @@
     ],
     "cool_you_kit_AJ1": [
         [
-            "newborn",
+            "you_newborn",
             "cool",
             "neutral"
         ],
@@ -858,7 +858,7 @@
     ],
     "cool_you_kit_AJ2": [
         [
-            "newborn",
+            "you_newborn",
             "cool",
             "you_clanborn",
             "non-related",
@@ -871,7 +871,7 @@
     ],
     "cool_you_newborn_AJ": [
         [
-            "newborn",
+            "you_newborn",
             "cool",
             "non-related",
             "you_blind",
@@ -1039,7 +1039,7 @@
     ],
     "assertive_parent4_2": [
         [
-            "newborn",
+            "you_newborn",
             "assertive",
             "cool",
             "platonic_like",
@@ -1102,7 +1102,7 @@
     ],
     "brooding_newborn": [
         [
-            "newborn",
+            "you_newborn",
             "brooding",
             "you_blind"
         ],
@@ -1114,7 +1114,7 @@
     ],
     "brooding_newborn1": [
         [
-            "newborn",
+            "you_newborn",
             "brooding",
             "they_blind",
             "you_blind"
@@ -1126,7 +1126,7 @@
     ],
     "brooding_newborn2": [
         [
-            "newborn",
+            "you_newborn",
             "brooding",
             "neutral",
             "they_blind",
@@ -1138,7 +1138,7 @@
     ],
     "brooding_newborn3": [
         [
-            "newborn",
+            "you_newborn",
             "brooding",
             "from_parent",
             "they_blind",
@@ -1758,7 +1758,7 @@
     ],
     "sweet_9": [
         [
-            "newborn",
+            "you_newborn",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1769,7 +1769,7 @@
     ],
     "sweet_10": [
         [
-            "newborn",
+            "you_newborn",
             "sweet",
             "you_blind",
             "they_deaf",
@@ -1782,7 +1782,7 @@
     ],
     "sweet_11": [
         [
-            "newborn",
+            "you_newborn",
             "they_formerlyakittypet",
             "sweet",
             "you_blind"
@@ -1797,7 +1797,7 @@
             "cool",
             "silly",
             "unabashed",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -1810,7 +1810,7 @@
     "grieving": [
         [
             "they_grieving",
-            "newborn",
+            "you_newborn",
             "they_deaf",
             "you_deaf"
         ],
@@ -1820,7 +1820,7 @@
     ],
     "newborn_fromupstanding": [
         [
-            "newborn",
+            "you_newborn",
             "upstanding",
             "non-related",
             "they_blind",
@@ -1836,7 +1836,7 @@
     ],
     "newborn_fromcool": [
         [
-            "newborn",
+            "you_newborn",
             "cool",
             "non-related",
             "you_blind"
@@ -1848,7 +1848,7 @@
     ],
     "newborn_fromunabahsed": [
         [
-            "newborn",
+            "you_newborn",
             "unabashed",
             "non-related",
             "you_blind"
@@ -1861,7 +1861,7 @@
     ],
     "newborn_frombrooding": [
         [
-            "newborn",
+            "you_newborn",
             "non-related",
             "dislike",
             "they_blind",
@@ -1874,7 +1874,7 @@
     ],
     "newborn_dislike": [
         [
-            "newborn",
+            "you_newborn",
             "non-related",
             "dislike",
             "you_outsiderroots",
@@ -1890,7 +1890,7 @@
     ],
     "newborn_introspective": [
         [
-            "newborn",
+            "you_newborn",
             "introspective",
             "they_blind",
             "you_blind"
@@ -1904,7 +1904,7 @@
     ],
     "newborn_brooding": [
         [
-            "newborn",
+            "you_newborn",
             "brooding",
             "non-related",
             "you_blind"
@@ -1915,7 +1915,7 @@
     ],
     "stable_kit_younewborn_1": [
         [
-            "newborn",
+            "you_newborn",
             "stable",
             "you_blind"
         ],
@@ -1927,7 +1927,7 @@
     ],
     "stable_kit_younewborn_2": [
         [
-            "newborn",
+            "you_newborn",
             "stable"
         ],
         [
@@ -1938,7 +1938,7 @@
     ],
     "stable_kit_younewborn_3": [
         [
-            "newborn",
+            "you_newborn",
             "stable"
         ],
         [
@@ -1954,11 +1954,11 @@
     ],
     "warrior_to_newborn": [
         [
-            "newborn",
+            "you_newborn",
             "sweet",
             "cool",
             "stable",
-            "newborn",
+            "you_newborn",
             "they_warrior"
         ],
         [
@@ -1968,7 +1968,7 @@
     ],
     "unlawful_newborn1": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful",
             "they_blind",
             "you_blind"
@@ -1980,7 +1980,7 @@
     ],
     "unlawful_newborn2": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful",
             "you_blind"
         ],
@@ -1991,7 +1991,7 @@
     ],
     "unlawful_newborn3": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful",
             "they_blind",
             "you_blind"
@@ -2003,7 +2003,7 @@
     ],
     "unlawful_newborn4": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful",
             "they_formerlyarogue",
             "they_blind",
@@ -2015,7 +2015,7 @@
     ],
     "unlawful_newborn5": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful",
             "brooding",
             "they_blind",
@@ -2027,7 +2027,7 @@
     ],
     "unlawful_newborn6": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful",
             "brooding",
             "they_blind",
@@ -2041,7 +2041,7 @@
     ],
     "unlawful_newborn7": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful",
             "they_blind",
             "you_blind"
@@ -2053,7 +2053,7 @@
     ],
     "unlawful_newborn8": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful",
             "brooding",
             "they_blind",
@@ -2066,7 +2066,7 @@
     ],
     "upstanding_newborn": [
         [
-            "newborn",
+            "you_newborn",
             "upstanding",
             "they_blind",
             "you_blind"
@@ -2078,7 +2078,7 @@
     ],
     "upstanding_newborn2": [
         [
-            "newborn",
+            "you_newborn",
             "upstanding"
         ],
         [
@@ -2089,7 +2089,7 @@
     ],
     "upstanding_newborn3": [
         [
-            "newborn",
+            "you_newborn",
             "you_kitten",
             "upstanding",
             "they_any"
@@ -2102,7 +2102,7 @@
     ],
     "upstanding_newborn4": [
         [
-            "newborn",
+            "you_newborn",
             "upstanding",
             "unlawful",
             "brooding"
@@ -2114,7 +2114,7 @@
     ],
     "silly_newborn1": [
         [
-            "newborn",
+            "you_newborn",
             "silly",
             "they_blind",
             "you_blind"
@@ -2125,7 +2125,7 @@
     ],
     "silly_newborn2": [
         [
-            "newborn",
+            "you_newborn",
             "silly"
         ],
         [
@@ -2134,7 +2134,7 @@
     ],
     "silly_newborn3": [
         [
-            "newborn",
+            "you_newborn",
             "silly",
             "non-related"
         ],
@@ -2146,7 +2146,7 @@
     ],
     "newborn_prey": [
         [
-            "newborn",
+            "you_newborn",
             "non-related",
             "unlawful",
             "they_blind",
@@ -2477,7 +2477,7 @@
         [
             "they_df",
             "kitten",
-            "newborn",
+            "you_newborn",
             "you_sc",
             "they_blind",
             "you_blind"
@@ -2491,7 +2491,7 @@
             "they_df",
             "you_sc",
             "kitten",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "they_deaf",
             "you_deaf"
@@ -2505,7 +2505,7 @@
             "they_sc",
             "you_df",
             "kitten",
-            "newborn"
+            "you_newborn"
         ],
         [
             "[t_c steps forward and you bound closer to {PRONOUN/t_c/object}, curious about the shiny sparkles embedded in {PRONOUN/t_c/poss} pelt.]",
@@ -2618,7 +2618,7 @@
             "they_sc",
             "you_sc",
             "kitten",
-            "newborn"
+            "you_newborn"
         ],
         [
             "[t_c smiles at you as {PRONOUN/t_c/subject} {VERB/t_c/pass/passes}.]",
@@ -2659,7 +2659,7 @@
         [
             "they_sc",
             "kitten",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -2672,7 +2672,7 @@
         [
             "they_df",
             "kitten",
-            "newborn",
+            "you_newborn",
             "they_older",
             "they_blind",
             "you_blind"
@@ -2689,7 +2689,7 @@
             "they_adult",
             "you_sc",
             "kitten",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -2703,7 +2703,7 @@
             "they_sc",
             "you_sc",
             "kitten",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -2791,7 +2791,7 @@
     "sc_living_kitten": [
         [
             "you_sc",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -2803,7 +2803,7 @@
         [
             "you_sc",
             "any",
-            "newborn",
+            "you_newborn",
             "they_shunned",
             "they_blind",
             "you_blind"
@@ -2833,7 +2833,7 @@
             "any",
             "they_shunned",
             "they_grieving",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind",
             "they_deaf",
@@ -2849,7 +2849,7 @@
             "they_shunned",
             "they_grieving",
             "you_sc",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -2863,7 +2863,7 @@
             "they_shunned",
             "they_grieving",
             "you_df",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -2875,7 +2875,7 @@
     ],
     "sc_newborn": [
         [
-            "newborn",
+            "you_newborn",
             "you_sc",
             "they_blind",
             "you_blind"
@@ -2886,7 +2886,7 @@
     ],
     "df_newborn": [
         [
-            "newborn",
+            "you_newborn",
             "you_df",
             "they_blind",
             "you_blind"
@@ -2897,7 +2897,7 @@
     ],
     "sc_newborn2": [
         [
-            "newborn",
+            "you_newborn",
             "you_sc",
             "they_sc",
             "they_blind",
@@ -2909,7 +2909,7 @@
     ],
     "df_newborn2": [
         [
-            "newborn",
+            "you_newborn",
             "you_df",
             "they_sc",
             "they_blind",
@@ -2922,7 +2922,7 @@
     ],
     "sc_newborn3": [
         [
-            "newborn",
+            "you_newborn",
             "you_sc",
             "they_df",
             "they_blind",
@@ -2934,7 +2934,7 @@
     ],
     "df_newborn3": [
         [
-            "newborn",
+            "you_newborn",
             "you_df",
             "they_df",
             "they_blind",
@@ -2947,7 +2947,7 @@
     ],
     "dead_newborn_J1": [
         [
-            "newborn",
+            "you_newborn",
             "you_dead",
             "they_blind",
             "you_blind"
@@ -3953,7 +3953,7 @@
         [
             "they_ur",
             "you_ur",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -3965,7 +3965,7 @@
         [
             "you_sc",
             "they_ur",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -3977,7 +3977,7 @@
         [
             "you_df",
             "they_ur",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -3987,7 +3987,7 @@
     ],
     "assertive_tonewborn3": [
         [
-            "newborn",
+            "you_newborn",
             "assertive",
             "introspective",
             "neurotic",
@@ -4001,7 +4001,7 @@
     ],
     "Introspective_queenapp_to_NB": [
         [
-            "Newborn",
+            "you_newborn",
             "they_queen's_apprentice",
             "Introspective",
             "you_blind",
@@ -4032,7 +4032,7 @@
     "newborn_to_shunned_J1": [
         [
             "they_shunned",
-            "newborn",
+            "you_newborn",
             "they_blind",
             "you_blind"
         ],
@@ -4043,7 +4043,7 @@
     "deadnewborn_to_grieving_J1": [
         [
             "they_grieving",
-            "newborn",
+            "you_newborn",
             "you_dead",
             "they_blind",
             "you_blind",
@@ -4058,7 +4058,7 @@
         [
             "they_grieving",
             "grievingyou",
-            "newborn",
+            "you_newborn",
             "you_dead",
             "they_blind",
             "you_blind"
@@ -4116,7 +4116,7 @@
         [
             "you_dead",
             "they_shunned",
-            "newborn",
+            "you_newborn",
             "any",
             "you_blind"
         ],
@@ -4132,7 +4132,7 @@
             "you_dead",
             "they_shunned",
             "they_grieving",
-            "newborn",
+            "you_newborn",
             "any",
             "you_blind"
         ],
@@ -4145,7 +4145,7 @@
     ],
     "ur_you_newborn_CM1": [
         [
-            "newborn",
+            "you_newborn",
             "you_ur",
             "they_ur",
             "they_older",
@@ -4195,7 +4195,7 @@
     ],
     "unlawful_tonewborn1": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful"
         ],
         [
@@ -4205,7 +4205,7 @@
     ],
     "unlawful_tonewGuy1": [
         [
-            "newborn",
+            "you_newborn",
             "unlawful"
         ],
         [
@@ -4531,7 +4531,7 @@
             "they_deaf",
             "you_blind",
             "they_blind",
-            "newborn",
+            "you_newborn",
             "they_any"
         ],
         [
@@ -4544,7 +4544,7 @@
             "they_deaf",
             "you_blind",
             "they_blind",
-            "newborn",
+            "you_newborn",
             "they_any",
             "they_grieving"
         ],
@@ -4558,7 +4558,7 @@
             "they_deaf",
             "you_blind",
             "they_blind",
-            "newborn",
+            "you_newborn",
             "they_any",
             "they_grieving",
             "they_shunned"
@@ -4573,7 +4573,7 @@
             "they_deaf",
             "you_blind",
             "they_blind",
-            "newborn",
+            "you_newborn",
             "they_any",
             "they_shunned"
         ],
@@ -4599,7 +4599,7 @@
             "only_you_deaf",
             "they_deaf",
             "they_blind",
-            "newborn",
+            "you_newborn",
             "non-related"
         ],
         [
@@ -4613,7 +4613,7 @@
             "they_deaf",
             "they_blind",
             "you_blind",
-            "newborn"
+            "you_newborn"
         ],
         [
             "[You can feel the presence of so many big cats around you!]",
@@ -4625,7 +4625,7 @@
             "you_deaf",
             "they_deaf",
             "they_older",
-            "newborn",
+            "you_newborn",
             "sweet",
             "stable"
         ],
@@ -4636,7 +4636,7 @@
     ],
     "deaf_newborn_J4": [
         [
-            "newborn",
+            "you_newborn",
             "you_deaf",
             "you_blind",
             "they_deaf",
@@ -4755,7 +4755,7 @@
     "youdeaf_R61": [
         [
             "only_you_deaf",
-            "newborn"
+            "you_newborn"
         ],
         [
             "[Through blurry eyes you see t_c's mouth moving as {PRONOUN/t_c/subject} {VERB/t_c/talk/talks} to you.]"
@@ -4764,7 +4764,7 @@
     "youdeaf_R62": [
         [
             "only_you_deaf",
-            "newborn"
+            "you_newborn"
         ],
         [
             "[You feel a rumble as t_c settles beside you.]",
@@ -4775,7 +4775,7 @@
     "youdeaf_R63": [
         [
             "only_you_deaf",
-            "newborn"
+            "you_newborn"
         ],
         [
             "[t_c can be seen making a face at you through your unfocused gaze.]"
@@ -4784,7 +4784,7 @@
     "youdeaf_R64": [
         [
             "only_you_deaf",
-            "newborn",
+            "you_newborn",
             "you_blind"
         ],
         [
@@ -4795,7 +4795,7 @@
     "youdeaf_R65": [
         [
             "only_you_deaf",
-            "newborn",
+            "you_newborn",
             "they_medicine_cat"
         ],
         [
@@ -4807,7 +4807,7 @@
     "youdeaf_R69": [
         [
             "only_you_deaf",
-            "newborn",
+            "you_newborn",
             "they_deaf",
             "upstanding",
             "assertive",
