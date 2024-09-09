@@ -762,6 +762,9 @@ class InsultScreen(Screens):
             if "non-related" in tags:
                 if you.inheritance.get_exact_rel_type(cat.ID) == RelationType.RELATED:
                     continue
+            
+            if "they_not_kit" in tags and cat.moons < 6:
+                continue
 
             # If you have murdered someone and have been revealed
 
