@@ -1446,12 +1446,12 @@ class PatrolOutcome:
             return ""
 
         results = []
-        in_patrol_cats  = {
+        in_event_cats  = {
             "p_l": patrol.patrol_leader,
             "r_c": patrol.random_cat,
         }
         if self.stat_cat:
-            in_patrol_cats ["s_c"] = self.stat_cat
+            in_event_cats["s_c"] = self.stat_cat
 
         for i, attribute_list in enumerate(self.new_cat):
             patrol.new_cats.append(

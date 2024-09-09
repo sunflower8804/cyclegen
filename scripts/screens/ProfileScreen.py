@@ -2886,7 +2886,7 @@ class ProfileScreen(Screens):
             new_inv = cat.pelt.inventory
         else:
             for ac in cat.pelt.inventory:
-                if self.search_bar.get_text().lower() in ac.lower():
+                if ac and self.search_bar.get_text() and self.search_bar.get_text().lower() in ac.lower():
                     inventory_len+=1
                     new_inv.append(ac)
         self.max_pages = math.ceil(inventory_len/18)
