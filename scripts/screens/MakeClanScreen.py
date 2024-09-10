@@ -174,6 +174,7 @@ class MakeClanScreen(Screens):
         self.adolescent_pose = 0
         self.adult_pose = 0
         self.elder_pose = 0
+        self.faith = "flexible"
         game.choose_cats = {}
         self.skills = []
         for skillpath in SkillPath:
@@ -1373,7 +1374,7 @@ class MakeClanScreen(Screens):
         self.personality = choice(['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug'])
         self.accessory = choice(Pelt.plant_accessories + Pelt.wild_accessories + Pelt.collars + Pelt.flower_accessories + Pelt.plant2_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories) if random.randint(1,5) == 1 else None
         self.permanent_condition = choice(permanent_conditions) if random.randint(1,30) == 1 else None
-
+        self.faith = random.choice(["flexible", "starclan", "dark forest", "neutral"])
 
         self.kitten_sprite=random.randint(0,2)
         self.adolescent_pose = random.randint(0,2)
@@ -1425,7 +1426,7 @@ class MakeClanScreen(Screens):
         else:
             self.elements['left'].enable()
         
-        if self.page == 2:
+        if self.page == 3:
             self.elements['right'].disable()
         else:
             self.elements['right'].enable()
@@ -1786,11 +1787,23 @@ class MakeClanScreen(Screens):
                 self.elements['skills'] = pygame_gui.elements.UIDropDownMenu(["Random"] + self.skills, self.skill, scale(pygame.Rect((1150, y_pos[8]), (300, 70))), manager=MANAGER)
             else:
                 self.elements['skills'] = pygame_gui.elements.UIDropDownMenu(["Random"] + self.skills, "Random", scale(pygame.Rect((1150, y_pos[8]), (300, 70))), manager=MANAGER)
+
+        elif self.page == 3:
+            self.elements['faith text'] = pygame_gui.elements.UITextBox(
+                'Faith',
+                scale(pygame.Rect((column3_x, y_pos[1] ),(1200,-1))),
+                object_id=get_text_box_theme("#text_box_30_horizleft"), manager=MANAGER
+            )
+            
+            # page 2 dropdowns
+            
+            self.elements['faith'] = pygame_gui.elements.UIDropDownMenu(["flexible", "starclan", "neutral", "dark forest"], str(self.faith), scale(pygame.Rect((column3_x, y_pos[2]), (250, 70))), manager=MANAGER)
+
         
         self.elements['previous_step'] = UIImageButton(scale(pygame.Rect((506, 1250), (294, 60))), "",
-                                                       object_id="#previous_step_button", manager=MANAGER)
+                                                    object_id="#previous_step_button", manager=MANAGER)
         self.elements['next_step'] = UIImageButton(scale(pygame.Rect((800, 1250), (294, 60))), "",
-                                                   object_id="#next_step_button", manager=MANAGER)
+                                                    object_id="#next_step_button", manager=MANAGER)
         
 
                 
@@ -1917,7 +1930,6 @@ class MakeClanScreen(Screens):
                 elif event.ui_element == self.elements['elder pose']:
                     self.elder_pose = int(event.text)
                     self.update_sprite()
-             
                 
             elif self.page == 2:
                 
@@ -1991,7 +2003,9 @@ class MakeClanScreen(Screens):
                     self.update_sprite()
                 elif event.ui_element == self.elements['skills']:
                     self.skill = event.text
-
+            elif self.page == 3:
+                if event.ui_element == self.elements['faith']:
+                    self.faith = event.text
         
         elif event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.main_menu:
@@ -2047,6 +2061,7 @@ class MakeClanScreen(Screens):
                 if self.skill == "Random":
                     self.skill = random.choice(self.skills)
                 self.your_cat.skills.primary = Skill.get_skill_from_string(Skill, self.skill)
+                self.your_cat.lock_faith = self.faith
                 self.selected_cat = None
                 self.open_name_cat()
             elif event.ui_element == self.elements['previous_step']:
