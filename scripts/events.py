@@ -755,6 +755,10 @@ class Events:
                         and "apprentice" not in cat.status and is_age_compatible and is_gender_compatible and is_relation_compatible)
 
             for _ in range(MAX_ATTEMPTS):
+                if other_parent and other_parent.mate:
+                    candidate_id = random.choice(other_parent.mate)
+                    if is_valid_parent(candidate_id, other_parent.gender if other_parent else None, other_parent.ID if other_parent else None, other_parent.age if other_parent else None):
+                        return Cat.all_cats.get(candidate_id)
                 candidate_id = random.choice(Cat.all_cats_list).ID
                 if is_valid_parent(candidate_id, other_parent.gender if other_parent else None, other_parent.ID if other_parent else None, other_parent.age if other_parent else None):
                     return Cat.all_cats.get(candidate_id)
