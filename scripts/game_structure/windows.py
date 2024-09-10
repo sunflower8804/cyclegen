@@ -2028,7 +2028,7 @@ class PickPath(UIWindow):
                 
 class DeathScreen(UIWindow):
     def __init__(self, last_screen):
-        super().__init__(scale(pygame.Rect((400, 400), (780, 500))),
+        super().__init__(scale(pygame.Rect((400, 400), (980, 500))),
                          window_display_title='You have died',
                          object_id='#game_over_window',
                          resizable=False)
@@ -2038,7 +2038,7 @@ class DeathScreen(UIWindow):
         self.last_screen = last_screen
         self.pick_path_message = UITextBoxTweaked(
             f"What will you do now?",
-            scale(pygame.Rect((40, 40), (670, -1))),
+            scale(pygame.Rect((40, 40), (870, -1))),
             line_spacing=1,
             object_id="#text_box_30_horizcenter",
             container=self
@@ -2069,12 +2069,21 @@ class DeathScreen(UIWindow):
             tool_tip_text='Revive'
         )
 
+        self.mediator_button4 = UIImageButton(
+            scale(pygame.Rect((670, 140), (150, 150))),
+            "",
+            object_id="#queen_activity_button",
+            container=self,
+            tool_tip_text="Start a new life"
+        )
+
         self.mediator_button3 = UIImageButton(
-            scale(pygame.Rect((130, 330), (498, 96))),
+            scale(pygame.Rect((230, 330), (498, 96))),
             "",
             object_id="#continue_dead_button",
             container=self,
         )
+
         
 
         self.begin_anew_button.enable()
@@ -2084,12 +2093,13 @@ class DeathScreen(UIWindow):
         if (game.clan.your_cat.dead_for >= game.config["fading"]["age_to_fade"]) and game.clan.your_cat.prevent_fading == False:
             self.mediator_button2.disable()
         self.mediator_button3.enable()
+        self.mediator_button4.enable()
 
     def process_event(self, event):
         super().process_event(event)
 
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
-            if event.ui_element == self.begin_anew_button:
+            if event.ui_element == self.begin_anew_button: 
                 game.last_screen_forupdate = None
                 game.switches['window_open'] = False
                 game.switches['cur_screen'] = 'start screen'
@@ -2099,6 +2109,7 @@ class DeathScreen(UIWindow):
                 self.mediator_button.kill()
                 self.mediator_button2.kill()
                 self.mediator_button3.kill()
+                self.mediator_button4.kill()
                 self.kill()
                 game.all_screens['events screen'].exit_screen()
             elif event.ui_element == self.mediator_button:
@@ -2111,6 +2122,7 @@ class DeathScreen(UIWindow):
                 self.mediator_button.kill()
                 self.mediator_button2.kill()
                 self.mediator_button3.kill()
+                self.mediator_button4.kill()
                 self.kill()
                 game.all_screens['events screen'].exit_screen()
             elif event.ui_element == self.mediator_button2:
@@ -2157,6 +2169,7 @@ class DeathScreen(UIWindow):
                 self.mediator_button.kill()
                 self.mediator_button2.kill()
                 self.mediator_button3.kill()
+                self.mediator_button4.kill()
                 self.kill()
             elif event.ui_element == self.mediator_button3:
                 game.last_screen_forupdate = None
@@ -2168,14 +2181,28 @@ class DeathScreen(UIWindow):
                 self.mediator_button.kill()
                 self.mediator_button2.kill()
                 self.mediator_button3.kill()
+                self.mediator_button4.kill()
                 self.kill()
+            elif event.ui_element == self.mediator_button4:
+                game.last_screen_forupdate = None
+                game.switches['window_open'] = False
+                game.switches['cur_screen'] = "new life screen"
+                game.switches['continue_after_death'] = False
+                self.begin_anew_button.kill()
+                self.pick_path_message.kill()
+                self.mediator_button.kill()
+                self.mediator_button2.kill()
+                self.mediator_button3.kill()
+                self.mediator_button4.kill()
+                self.kill()
+                game.all_screens['events screen'].exit_screen()
                 
 class DeputyScreen(UIWindow):
     def __init__(self, last_screen):
         super().__init__(scale(pygame.Rect((500, 400), (600, 500))),
-                         window_display_title='Choose your deputy',
-                         object_id='#game_over_window',
-                         resizable=False)
+                        window_display_title='Choose your deputy',
+                        object_id='#game_over_window',
+                        resizable=False)
         self.set_blocking(True)
         game.switches['window_open'] = True
         self.clan_name = str(game.clan.name + 'Clan')

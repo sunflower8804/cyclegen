@@ -34,6 +34,7 @@ from .StartScreen import StartScreen
 from .SwitchClanScreen import SwitchClanScreen
 from .WarriorDenScreen import WarriorDenScreen
 from .GiftScreen import GiftScreen
+from .NewLifeScreen import NewLifeScreen
 
 # ---------------------------------------------------------------------------- #
 #                                  UI RULES                                    #
@@ -100,6 +101,6 @@ affair_screen = AffairScreen("affair screen")
 queen_screen = QueenScreen("queen screen")
 moonplace_screen = MoonplaceScreen("moonplace screen")
 gift_screen = GiftScreen("gift screen")
-
+new_life_screen = NewLifeScreen("new life screen")
 patrol_screen = PatrolScreen('patrol screen')
 
