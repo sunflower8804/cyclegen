@@ -309,6 +309,10 @@ class Clan:
             self.populate_sc()
             self.populate_ur()
             self.populate_df()
+        elif self.clan_age == "new":
+            self.generate_outsiders()
+            self.generate_outsider_families()
+
         game.save_cats()
         self.save_clan()
 
@@ -474,6 +478,12 @@ class Clan:
             df_cats = create_new_cat(Cat, new_name=True, alive=False, df=True, backstory=random_backstory, thought="Watches the Clan from the gloom")
             df_cats[0].history.beginning = None
             df_cats[0].dead_for = randint(20, 200)
+
+    def generate_outsiders(self):
+        pass
+
+    def generate_outsider_families(self):
+        pass
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """Adds cat into the list of clan cats"""
