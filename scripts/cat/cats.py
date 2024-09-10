@@ -640,7 +640,6 @@ class Cat:
         # if game.clan and game.clan.game_mode != 'classic' and not (self.outside or self.exiled) and body is not None:
         if (
             game.clan
-            and game.clan.game_mode != "classic"
             and not self.outside
             and not self.exiled
         ):
@@ -997,11 +996,9 @@ class Cat:
                 text += " " + choice(MINOR_MAJOR_REACTION["major"])
                 text = event_text_adjust(Cat, text=text, main_cat=self, random_cat=cat)
 
-                # grief the cat
-                if game.clan.game_mode != "classic":
-                    cat.get_ill(
-                        "grief stricken", event_triggered=True, severity="major", grief_cat=self
-                    )
+                cat.get_ill(
+                    "grief stricken", event_triggered=True, severity="major"
+                )
 
             # If major grief fails, but there are still very_high or high values,
             # it can fail to to minor grief. If they have a family relation, bypass the roll.
@@ -2225,9 +2222,6 @@ class Cat:
         :param severity: _description_, defaults to 'default'
         :type severity: str, optional
         """
-        if game.clan and game.clan.game_mode == "classic":
-            return
-
         if name not in INJURIES:
             if name not in INJURIES:
                 print(f"WARNING: {name} is not in the injuries collection.")
