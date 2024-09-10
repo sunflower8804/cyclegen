@@ -140,40 +140,45 @@ class SwitchClanScreen(Screens):
         y_pos = 378
         for clan in self.clan_list[1:]:
             clan_age = ""
-
-            # LIFEGEN: grabbing mc names for QOL display -------------------
-            clan_json_path = f"{get_save_dir()}/{clan}clan.json"
-            if os.path.exists(clan_json_path):
-                with open(clan_json_path, "r") as read_file:
-                    clan_json = ujson.loads(read_file.read())
-                    you = clan_json["your_cat"]
-                    clan_age = clan_json["clanage"]
+            try:
+                # LIFEGEN: grabbing mc names for QOL display -------------------
+                clan_json_path = f"{get_save_dir()}/{clan}clan.json"
+                if os.path.exists(clan_json_path):
+                    with open(clan_json_path, "r") as read_file:
+                        clan_json = ujson.loads(read_file.read())
+                        you = clan_json["your_cat"]
+                        clan_age = clan_json["clanage"]
+            except:
+                pass
 
             clan_cats_json_path = f"{get_save_dir()}/{clan}/clan_cats.json"
             your_name = ""
-            if os.path.exists(clan_cats_json_path):
-                with open(clan_cats_json_path, "r") as read_file:
-                    clan_cats_json = ujson.loads(read_file.read())
-                for item in clan_cats_json:
-                    if item["ID"] == you:
-                        # if theres a better way to do this Keep it to yourself
-                        if item["name_suffix"] != "":
-                            if item["status"] in ["kitten", "newborn"]:
-                                suffix = "kit"
-                            elif item["status"] in [
-                                "apprentice", "queen's apprentice",
-                                "mediator apprentice", "medicine cat apprentice"
-                                ]:
-                                suffix = "paw"
-                            elif item["status"] == "leader":
-                                suffix = "star"
+            try:
+                if os.path.exists(clan_cats_json_path):
+                    with open(clan_cats_json_path, "r") as read_file:
+                        clan_cats_json = ujson.loads(read_file.read())
+                    for item in clan_cats_json:
+                        if item["ID"] == you:
+                            # if theres a better way to do this Keep it to yourself
+                            if item["name_suffix"] != "":
+                                if item["status"] in ["kitten", "newborn"]:
+                                    suffix = "kit"
+                                elif item["status"] in [
+                                    "apprentice", "queen's apprentice",
+                                    "mediator apprentice", "medicine cat apprentice"
+                                    ]:
+                                    suffix = "paw"
+                                elif item["status"] == "leader":
+                                    suffix = "star"
+                                else:
+                                    suffix = item["name_suffix"]
                             else:
                                 suffix = item["name_suffix"]
-                        else:
-                            suffix = item["name_suffix"]
 
-                        your_name = item["name_prefix"] + suffix
-                        break
+                            your_name = item["name_prefix"] + suffix
+                            break
+            except:
+                pass
                 # if your_name:
                 #     print(your_name)
                 # else:
