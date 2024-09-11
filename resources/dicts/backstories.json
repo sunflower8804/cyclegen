@@ -138,7 +138,15 @@
     "oldstarclan2": "This cat was originally from StarClan, but after getting lost in the Dark Forest one day, {PRONOUN/m_c/subject} {VERB/m_c/were/was} unable to find {PRONOUN/m_c/poss} way back. Now, {PRONOUN/m_c/subject} belong to the Place of No Stars, resenting {PRONOUN/m_c/poss} StarClan family who never came to find {PRONOUN/m_c/object}.",
     "oldstarclan3" : "This cat belonged to StarClan once, but got lost outside of StarClan territory one day and has been bitterly wandering the Dark Forest ever since.",
     "dfkit1": "This cat was born in the Dark Forest, with one Dark Forest parent and one living one.",
-    "dfkit2": "This cat was born in the Dark Forest and taken to live with the Clan by {PRONOUN/m_c/poss} living parent."
+    "dfkit2": "This cat was born in the Dark Forest and taken to live with the Clan by {PRONOUN/m_c/poss} living parent.",
+    "newdfguide1": "This cat sensed darkness within the newly formed c_nClan and decided to live as their new Dark Forest guide.",
+    "newdfguide2": "Betrayed by their Clan in life, this ancient spirit now lures cats to the Dark Forest, promising the revenge they never achieved.",
+    "newdfguide3": "Consumed by ambition that led to murder, this cat now recruits like-minded souls to bolster the Dark Forest's ranks.",
+    "newdfguide4": "This cat fell to darkness after a devastating loss. Now they guide others who've lost their way to the Dark Forest.",
+    "newscguide1": "This cat was originally from an ancient group of cats but decided to watch and protect the newly formed c_nClan.",
+    "newscguide2": "Known for their unwavering fairness in life, this cat now guides others to StarClan, ensuring each spirit finds its rightful place.",
+    "newscguide3": "Having sacrificed their life to save their family, this cat now guides worthy cats to StarClan.",
+    "newscguide4": "A peacemaker in life, this cat now unites spirits from the new Clans in StarClan."
   },
   "backstory_display": {
     "clan_founder_backstories": "Clan founder",
@@ -156,7 +164,9 @@
     "starclan_backstories": "ancient spirit",
     "df_backstories": "ancient spirit",
     "dark_forest_kits": "from the Dark Forest",
-    "oldstarclan_backstories": "ancient spirit"
+    "oldstarclan_backstories": "ancient spirit",
+    "new_sc_guide_backstories": "ancient spirit",
+    "new_df_guide_backstories": "ancient spirit"
   },
   "backstory_categories": {
     "dark_forest_kits": [
@@ -167,6 +177,18 @@
       "oldstarclan1",
       "oldstarclan2",
       "oldstarclan3"
+    ],
+    "new_sc_guide_backstories": [
+      "newscguide1",
+      "newscguide2",
+      "newscguide3",
+      "newscguide4"
+    ],
+    "new_df_guide_backstories": [
+      "newdfguide1",
+      "newdfguide2",
+      "newdfguide3",
+      "newdfguide4"
     ],
     "dead_cat_backstories": [
       "dead1",

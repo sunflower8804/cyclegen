@@ -233,11 +233,14 @@ class Clan:
         the program starts
         """
         self.instructor = Cat(status=choice(["apprentice", "mediator apprentice", "medicine cat apprentice", "warrior",
-                                             "medicine cat", "leader", "mediator", "queen", "queen's apprentice", "deputy", "elder"]),
-                              )
+                                            "medicine cat", "leader", "mediator", "queen", "queen's apprentice", "deputy", "elder"]),
+                            )
         self.instructor.dead = True
         self.instructor.dead_for = randint(20, 200)
-        self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
+        if self.clan_age == "new":
+            self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["new_sc_guide_backstories"])
+        else:
+            self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
         self.add_cat(self.instructor)
         self.add_to_starclan(self.instructor)
         self.all_clans = []
@@ -248,7 +251,10 @@ class Clan:
         self.demon.df = True
         self.demon.dead = True
         self.demon.dead_for = randint(20, 200)
-        self.demon.backstory = choice(BACKSTORIES["backstory_categories"]["df_backstories"])
+        if self.clan_age == "new":
+            self.demon.backstory = choice(BACKSTORIES["backstory_categories"]["new_df_guide_backstories"])
+        else:
+            self.demon.backstory = choice(BACKSTORIES["backstory_categories"]["df_backstories"])
         self.add_cat(self.demon)
         self.add_to_darkforest(self.demon)
         self.all_clans = []
