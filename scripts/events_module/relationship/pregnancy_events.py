@@ -760,11 +760,11 @@ class Pregnancy_Events:
                         insert = "their kit is"
                     thought = f"Is glad that {insert} safe"
                     blood_parent = create_new_cat(Cat,
-                                                  status=random.choice(["loner", "kittypet"]),
-                                                  alive=False,
-                                                  thought=thought,
-                                                  age=randint(15, 120),
-                                                  outside=True)[0]
+                                                status=random.choice(["loner", "kittypet"]),
+                                                alive=False,
+                                                thought=thought,
+                                                age=randint(15, 120),
+                                                outside=True)[0]
                     blood_parent.thought = thought
 
                 kit = Cat(
