@@ -2087,6 +2087,12 @@ class ProfileScreen(Screens):
             else:
                 text += "<br>You encountered {PRONOUN/m_c/object} on Moon " + str(beginning['moon']) + "."
 
+        if self.the_cat.history and self.the_cat.history.wrong_placement and self.the_cat.dead and not self.the_cat.outside:
+            if self.the_cat.df:
+                text += f"<br>{self.the_cat.name} was wrongly placed in the Dark Forest."
+            else:
+                text += f"<br>{self.the_cat.name} was wrongly placed in StarClan."
+
         text = process_text(text, cat_dict)
         if "o_c" in text:
             if self.the_cat.backstory_str:

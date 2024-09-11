@@ -647,18 +647,31 @@ class Cat:
 
         if not self.outside and self.dead_for < 2:
             Cat.dead_cats.append(self)
-            if self.history:
-                if self.history.murder:
-                    if "is_murderer" in self.history.murder:
-                        if len(self.history.murder["is_murderer"]) > 2:
-                            self.df = True
-                            game.clan.add_to_darkforest(self)
-            if game.clan.followingsc is True:
-                self.df = False
-                game.clan.add_to_starclan(self)
-            elif game.clan.followingsc is False:
+            if self.history and self.history.murder and "is_murderer" in self.history.murder and len(self.history.murder["is_murderer"]) > 2:
                 self.df = True
                 game.clan.add_to_darkforest(self)
+            elif self.faith == -9:
+                self.df = True
+                game.clan.add_to_darkforest(self)
+            elif self.faith == 9:
+                self.df = False
+                game.clan.add_to_starclan(self)
+            elif randint(1,100) == 1 and self.history:
+                if game.clan.followingsc is True:
+                    self.df = True
+                    self.history.wrong_placement = True
+                    game.clan.add_to_darkforest(self)
+                elif game.clan.followingsc is False:
+                    self.df = False
+                    self.history.wrong_placement = True
+                    game.clan.add_to_starclan(self)
+            else:
+                if game.clan.followingsc is True:
+                    self.df = False
+                    game.clan.add_to_starclan(self)
+                elif game.clan.followingsc is False:
+                    self.df = True
+                    game.clan.add_to_darkforest(self)
         else:
             game.clan.add_to_unknown(self)
         
@@ -1383,6 +1396,7 @@ class Cat:
                         else []
                     ),
                     murder=history_data["murder"] if "murder" in history_data else {},
+                    wrong_placement=history_data["wrong_placement"] if "wrong_placement" in history_data else False,
                 )
         except:
             self.history = None
