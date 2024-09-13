@@ -1235,6 +1235,7 @@ class ProfileScreen(Screens):
 
             if (
                 (not self.the_cat.dead and self.the_cat.outside) or
+                (not self.the_cat.dead and not self.the_cat.outside and game.clan.your_cat.outside and not game.clan.your_cat.dead) or 
                 game.clan.your_cat.moons < 0 or
                 self.the_cat.ID == game.clan.your_cat.ID or
                 ((game.clan.your_cat.dead or self.the_cat.dead) and dead_talk is False)
@@ -1257,6 +1258,7 @@ class ProfileScreen(Screens):
             cant_insult = False
             if (
                 self.the_cat.outside or
+                (not self.the_cat.dead and not self.the_cat.outside and game.clan.your_cat.outside and not game.clan.your_cat.dead) or 
                 game.clan.your_cat.moons < 0 or
                 self.the_cat.ID == game.clan.your_cat.ID or
                 (game.clan.your_cat.dead is True or self.the_cat.dead is True and
@@ -1285,6 +1287,7 @@ class ProfileScreen(Screens):
                 self.the_cat.outside or
                 game.clan.your_cat.moons < 0 or
                 self.the_cat.ID == game.clan.your_cat.ID or
+                (not self.the_cat.dead and not self.the_cat.outside and game.clan.your_cat.outside and not game.clan.your_cat.dead) or 
                 (game.clan.your_cat.dead is True or self.the_cat.dead is True and
                 dead_talk is False) or
                 not self.the_cat.is_dateable(game.clan.your_cat) or
