@@ -1240,6 +1240,7 @@ class PatrolOutcome:
             if match.group(1) == "ur":
                 outside = True
                 alive = False
+                df = False
                 thought = "Is intrigued by the living cat they just met"
                 chosen_backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
                 encountered_dead_ur = True

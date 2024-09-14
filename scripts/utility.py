@@ -622,6 +622,7 @@ def create_new_cat_block(
                                   gender=gender,
                                   thought=thought,
                                   alive=alive,
+                                  df=df,
                                   outside=outside,
                                   parent1=parent1.ID if parent1 else None,
                                   parent2=parent2.ID if parent2 else None
@@ -880,7 +881,7 @@ def create_new_cat(
         if new_cat.age == "adolescent":
             new_cat.update_mentor()
 
-        if df:
+        if df is True:
             if status != "kitten":
                 scarchance = randint(1,5)
                 if scarchance == 1 or 2 or 3:
@@ -908,9 +909,6 @@ def create_new_cat(
                     scar = choice(Pelt.scars1)
                     new_cat.pelt.scars.append(scar)
             
-                
-                
-
         # Remove disabling scars on living cats, if they generated.
         if not df: 
             not_allowed = ['NOPAW', 'NOTAIL', 'HALFTAIL', 'NOEAR', 'BOTHBLIND', 'RIGHTBLIND', 
@@ -970,12 +968,11 @@ def create_new_cat(
         if not alive:
             new_cat.die()
 
-        if not alive and df:
+        if df:
             new_cat.df = True
-        else:
         # give apprentice aged cat a mentor
         # this is in a weird spot but DF cats were getting clancat mentors otherwise
-            if new_cat.age == 'adolescent':
+            if new_cat.age == 'adolescent' and not new_cat.dead:
                 new_cat.update_mentor()
 
         # newbie thought

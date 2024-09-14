@@ -488,7 +488,7 @@ class MurderScreen(Screens):
             self.back_button = UIImageButton(scale(pygame.Rect((50, 1290), (204, 60))), "", object_id="#back_button")
 
             self.confirm_mentor = UIImageButton(scale(pygame.Rect((696, 688), (208, 52))), "",
-                                                tool_tip_text= "Make your kill!",
+                                                tool_tip_text= "",
                                                 object_id="#continue_button_small")
         
             self.previous_page_button = UIImageButton(scale(pygame.Rect((630, 1229), (68, 68))), "",
