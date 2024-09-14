@@ -393,52 +393,59 @@ class TalkScreen(Screens):
         resource_dir = "resources/dicts/lifegen_talk/"
         possible_texts = {}
 
-        if cat.status != 'exiled':
-            with open(f"{resource_dir}{cat.status}.json", 'r') as read_file:
+        if game.switches["talk_category"] == "insult":
+            with open(f"{resource_dir}insults.json", 'r') as read_file:
                 possible_texts = ujson.loads(read_file.read())
-
-        # if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled', 'newborn']:
-        #     with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
-        #         possible_texts.update(ujson.loads(read_file.read()))
-
-        if cat.status in ["rogue", "loner", "kittypet"]:
-            # former clancats only get their own file so we can write general dialogue about not knowing what a clan is
-            with open(f"{resource_dir}general_outsider.json", 'r') as read_file:
-                possible_texts4 = ujson.loads(read_file.read())
-                possible_texts.update(possible_texts4)
+        elif game.switches["talk_category"] == "flirt":
+            with open(f"{resource_dir}flirt.json", 'r') as read_file:
+                possible_texts.update(ujson.loads(read_file.read()))
         else:
-            if cat.status == "newborn":
-                # newborns will no longer participate in nuanced discussion (focus + choices)
-                with open(f"{resource_dir}newborn.json", 'r') as read_file:
-                    possible_texts.update(ujson.loads(read_file.read()))
+            if cat.status != 'exiled':
+                with open(f"{resource_dir}{cat.status}.json", 'r') as read_file:
+                    possible_texts = ujson.loads(read_file.read())
+
+            # if cat.status not in ['loner', 'rogue', 'former Clancat', 'kittypet', 'exiled', 'newborn']:
+            #     with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
+            #         possible_texts.update(ujson.loads(read_file.read()))
+
+            if cat.status in ["rogue", "loner", "kittypet"]:
+                # former clancats only get their own file so we can write general dialogue about not knowing what a clan is
+                with open(f"{resource_dir}general_outsider.json", 'r') as read_file:
+                    possible_texts4 = ujson.loads(read_file.read())
+                    possible_texts.update(possible_texts4)
             else:
-                with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
-                    possible_texts.update(ujson.loads(read_file.read()))
+                if cat.status == "newborn":
+                    # newborns will no longer participate in nuanced discussion (focus + choices)
+                    with open(f"{resource_dir}newborn.json", 'r') as read_file:
+                        possible_texts.update(ujson.loads(read_file.read()))
+                else:
+                    with open(f"{resource_dir}choice_dialogue.json", 'r') as read_file:
+                        possible_texts.update(ujson.loads(read_file.read()))
 
-                if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
-                    with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
-                        possible_texts2 = ujson.loads(read_file.read())
-                        possible_texts.update(possible_texts2)
+                    if cat.status not in ['kitten', "newborn"] and you.status not in ['kitten', 'newborn']:
+                        with open(f"{resource_dir}general_no_kit.json", 'r') as read_file:
+                            possible_texts2 = ujson.loads(read_file.read())
+                            possible_texts.update(possible_texts2)
 
-                if cat.status not in ["newborn"] and you.status not in ['newborn']:
-                    with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
-                        possible_texts4 = ujson.loads(read_file.read())
-                        possible_texts.update(possible_texts4)
+                    if cat.status not in ["newborn"] and you.status not in ['newborn']:
+                        with open(f"{resource_dir}general_no_newborn.json", 'r') as read_file:
+                            possible_texts4 = ujson.loads(read_file.read())
+                            possible_texts.update(possible_texts4)
 
-                if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
-                    with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
-                        possible_texts3 = ujson.loads(read_file.read())
-                        possible_texts.update(possible_texts3)
+                    if cat.status not in ['kitten', "newborn"] and you.status in ['kitten', 'newborn']:
+                        with open(f"{resource_dir}general_you_kit.json", 'r') as read_file:
+                            possible_texts3 = ujson.loads(read_file.read())
+                            possible_texts.update(possible_texts3)
 
-                if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
-                    with open(f"{resource_dir}crush.json", 'r') as read_file:
-                        possible_texts3 = ujson.loads(read_file.read())
-                        possible_texts.update(possible_texts3)
+                    if cat.status not in ['kitten', 'newborn'] and you.status not in ['kitten', 'newborn'] and randint(1,3)==1:
+                        with open(f"{resource_dir}crush.json", 'r') as read_file:
+                            possible_texts3 = ujson.loads(read_file.read())
+                            possible_texts.update(possible_texts3)
 
-                if game.clan.focus:
-                    with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
-                        possible_texts5 = ujson.loads(read_file.read())
-                        possible_texts.update(possible_texts5)
+                    if game.clan.focus:
+                        with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
+                            possible_texts5 = ujson.loads(read_file.read())
+                            possible_texts.update(possible_texts5)
                     
         return self.filter_texts(cat, possible_texts)
 
@@ -531,7 +538,13 @@ class TalkScreen(Screens):
                 if game.config["debug_ensure_dialogue"] == talk_key:
                     pass
 
-            if "insult" in tags:
+            if game.switches["talk_category"] == "talk" and ("insult" in tags or "flirt" in tags):
+                continue
+
+            if game.switches["talk_category"] == "insult" and "insult" not in tags:
+                continue
+
+            if game.switches["talk_category"] == "flirt" and ("insult" in tags or ("reject" not in tags and "accept" not in tags)):
                 continue
 
             if you.moons == 0 and "newborn" not in tags:
@@ -541,6 +554,17 @@ class TalkScreen(Screens):
                 continue
             if "df_faith" in tags and cat.faith > 0:
                 continue
+
+            if game.switches["talk_category"] == "flirt":
+                success = self.is_flirt_success(cat)
+                if "heartbroken" not in cat.illnesses.keys() and "heartbroken" in tags:
+                    continue
+                elif not success and "reject" not in tags:
+                    continue
+                elif success and "reject" in tags:
+                    continue
+                elif not success and "reject" not in tags:
+                    continue
 
             # Status tags
             if (
@@ -1681,3 +1705,30 @@ class TalkScreen(Screens):
         if not bs_display:
             return "clanfounder"
         return bs_display
+
+    def is_flirt_success(self, cat):
+        cat_relationships = cat.relationships.get(game.clan.your_cat.ID)
+        chance = 40
+        if cat_relationships:
+            if cat_relationships.romantic_love > 10:
+                chance += 50
+            if cat_relationships.platonic_like > 10:
+                chance += 20
+            if cat_relationships.comfortable > 10:
+                chance += 20
+            if cat_relationships.admiration > 10:
+                chance += 20
+            if cat_relationships.dislike > 10:
+                chance -= 30
+            r = randint(1,100) < chance
+            if r:
+                cat.relationships.get(game.clan.your_cat.ID).romantic_love += randint(1,10)
+                game.clan.your_cat.relationships.get(cat.ID).romantic_love += randint(1,10)
+            else:
+                cat.relationships.get(game.clan.your_cat.ID).romantic_love -= randint(1,5)
+                cat.relationships.get(game.clan.your_cat.ID).comfortable -= randint(1,5)
+                cat.relationships.get(game.clan.your_cat.ID).dislike += randint(1,5)
+
+            return r
+        else:
+            return False

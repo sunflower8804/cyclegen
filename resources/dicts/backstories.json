@@ -26,6 +26,7 @@
     "loner4": "This cat joined the Clan after becoming weary of living alone.",
     "loner5":  "m_c wandered the world, aimless and free, but always alone.",
     "loner6": "m_c wandered the world, aimless and free, but always alone - until {PRONOUN/m_c/subject} found someone worth staying for.",
+    "loner7": "This cat was joined by r_c on {PRONOUN/m_c/poss} travels across the lands, and after seeing everything life has to offer, decided to settle down in c_nClan.",
     "kittypet1": "This cat joined the Clan by choice after living life with Twolegs as a kittypet.",
     "kittypet2": "This cat used to live on something called a 'boat' with Twolegs, but decided to join the Clan.",
     "kittypet3": "This cat used to be a kittypet. {PRONOUN/m_c/subject/CAP} got lost after wandering away, and when {PRONOUN/m_c/subject} returned home, {PRONOUN/m_c/subject} found {PRONOUN/m_c/poss} Twolegs were gone. {PRONOUN/m_c/subject/CAP} eventually found {PRONOUN/m_c/poss} way to the Clan.",
@@ -57,6 +58,9 @@
     "otherclan8": "This cat was sent by the leader of o_cClan to gather secrets and intel on the Clan.",
     "otherclan9": "This cat was stolen from a rival Clan due to underpopulation.",
     "otherclan10": "This cat was originally a member of o_cClan, but left because {PRONOUN/m_c/subject} couldn't stand the tragic loss of a loved one.",
+    "otherclan11": "When this cat became lost and tried to find {PRONOUN/m_c/poss} former Clan, r_c joined {PRONOUN/m_c/object} on their journey. However, they arrived too late and ultimately decided to make c_nClan their new home.",
+    "otherclan12": "This cat caused a tragedy in {PRONOUN/m_c/poss} former Clan, and fled to avoid facing the consequences from {PRONOUN/m_c/poss} former Clanmates.",
+    "otherclan13": "This cat left {PRONOUN/m_c/poss} former Clan to be with {PRONOUN/m_c/poss} lover, but {PRONOUN/m_c/poss} leader refused and chased them out of the territory, and into c_nClan's.",
     "disgraced1": "This cat was cast out of {PRONOUN/m_c/poss} old Clan for some transgression that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not keen on talking about.",
     "disgraced2": "This cat was exiled from {PRONOUN/m_c/poss} old Clan for something {PRONOUN/m_c/subject} didn't do and came here to seek safety.",
     "disgraced3": "This cat once held a high rank in another Clan but was exiled for reasons {PRONOUN/m_c/subject} {VERB/m_c/refuse/refuses} to share.",
@@ -69,6 +73,7 @@
     "refugee4": "This cat used to be in a rogue group, but joined the Clan after fleeing from the group's tyrannical leader.",
     "refugee5": "This cat got washed away from {PRONOUN/m_c/poss} former territory in a flood that destroyed {PRONOUN/m_c/poss} home but was glad to find a new home in {PRONOUN/m_c/poss} new Clan here.",
     "refugee6": "This cat used to be a kittypet, but joined the Clan after being found sick and weak after eating something {PRONOUN/m_c/subject} shouldn't have.",
+    "regugee7": "This cat saw something {PRONOUN/m_c/subject} shouldn't have and fled to c_nClan to lay low for a while.",
     "tragedy_survivor1": "Something horrible happened to this cat's previous Clan. {PRONOUN/m_c/subject/CAP} refuse to speak about it.",
     "tragedy_survivor2": "This cat used to be part of a rogue group, but joined the Clan after something terrible happened to it.",
     "tragedy_survivor3": "This cat used to be a kittypet, but joined the Clan after something terrible happened to {PRONOUN/m_c/poss} Twolegs.",
@@ -133,7 +138,15 @@
     "oldstarclan2": "This cat was originally from StarClan, but after getting lost in the Dark Forest one day, {PRONOUN/m_c/subject} {VERB/m_c/were/was} unable to find {PRONOUN/m_c/poss} way back. Now, {PRONOUN/m_c/subject} belong to the Place of No Stars, resenting {PRONOUN/m_c/poss} StarClan family who never came to find {PRONOUN/m_c/object}.",
     "oldstarclan3" : "This cat belonged to StarClan once, but got lost outside of StarClan territory one day and has been bitterly wandering the Dark Forest ever since.",
     "dfkit1": "This cat was born in the Dark Forest, with one Dark Forest parent and one living one.",
-    "dfkit2": "This cat was born in the Dark Forest and taken to live with the Clan by {PRONOUN/m_c/poss} living parent."
+    "dfkit2": "This cat was born in the Dark Forest and taken to live with the Clan by {PRONOUN/m_c/poss} living parent.",
+    "newdfguide1": "This cat sensed darkness within the newly formed c_nClan and decided to live as their new Dark Forest guide.",
+    "newdfguide2": "Betrayed by their Clan in life, this ancient spirit now lures cats to the Dark Forest, promising the revenge they never achieved.",
+    "newdfguide3": "Consumed by ambition that led to murder, this cat now recruits like-minded souls to bolster the Dark Forest's ranks.",
+    "newdfguide4": "This cat fell to darkness after a devastating loss. Now they guide others who've lost their way to the Dark Forest.",
+    "newscguide1": "This cat was originally from an ancient group of cats but decided to watch and protect the newly formed c_nClan.",
+    "newscguide2": "Known for their unwavering fairness in life, this cat now guides others to StarClan, ensuring each spirit finds its rightful place.",
+    "newscguide3": "Having sacrificed their life to save their family, this cat now guides worthy cats to StarClan.",
+    "newscguide4": "A peacemaker in life, this cat now unites spirits from the new Clans in StarClan."
   },
   "backstory_display": {
     "clan_founder_backstories": "Clan founder",
@@ -151,7 +164,9 @@
     "starclan_backstories": "ancient spirit",
     "df_backstories": "ancient spirit",
     "dark_forest_kits": "from the Dark Forest",
-    "oldstarclan_backstories": "ancient spirit"
+    "oldstarclan_backstories": "ancient spirit",
+    "new_sc_guide_backstories": "ancient spirit",
+    "new_df_guide_backstories": "ancient spirit"
   },
   "backstory_categories": {
     "dark_forest_kits": [
@@ -162,6 +177,18 @@
       "oldstarclan1",
       "oldstarclan2",
       "oldstarclan3"
+    ],
+    "new_sc_guide_backstories": [
+      "newscguide1",
+      "newscguide2",
+      "newscguide3",
+      "newscguide4"
+    ],
+    "new_df_guide_backstories": [
+      "newdfguide1",
+      "newdfguide2",
+      "newdfguide3",
+      "newdfguide4"
     ],
     "dead_cat_backstories": [
       "dead1",
@@ -253,11 +280,13 @@
       "loner4",
       "loner5",
       "loner6",
+      "loner7",
       "refugee2",
       "tragedy_survivor4",
       "guided3",
       "refugee5",
-      "wandering_healer2"
+      "wandering_healer2",
+      "refugee7"
     ],
     "rogue_backstories": [
       "rogue1",
@@ -300,6 +329,9 @@
       "otherclan8",
       "otherclan9",
       "otherclan10",
+      "otherclan11",
+      "otherclan12",
+      "otherclan13",
       "ostracized_warrior",
       "disgraced1",
       "disgraced2",
