@@ -901,9 +901,13 @@ class TalkScreen(Screens):
                 continue
 
             # Season tags
-            if ('leafbare' in tags and game.clan.current_season != 'Leaf-bare') or ('newleaf' in tags and game.clan.current_season != 'Newleaf') or ('leaffall' in tags and game.clan.current_season != 'Leaf-fall') or ('greenleaf' in tags and game.clan.current_season != 'Greenleaf'):
-                continue
+            # if ('leafbare' in tags and game.clan.current_season != 'Leaf-bare') or ('newleaf' in tags and game.clan.current_season != 'Newleaf') or ('leaffall' in tags and game.clan.current_season != 'Leaf-fall') or ('greenleaf' in tags and game.clan.current_season != 'Greenleaf'):
+            #     continue
 
+            if any(i in ["leafbare", "newleaf", "leaffall", "greenleaf"] for i in tags):
+                season = game.clan.current_season.replace("-", "")
+                if season.lower() not in tags:
+                    continue
             # Biome tags
             if any(i in ['beach', 'forest', 'plains', 'mountainous', 'wetlands', 'desert'] for i in tags):
                 if game.clan.biome.lower() not in tags:
