@@ -2942,8 +2942,6 @@ def abbrev_addons(t_c, r_c, cluster, x, rel, r):
         cluster and rel are booleans for if the addons are present.
     """
 
-    print("hey")
-
     if (cluster and x not in get_cluster(r_c.personality.trait)):
         return False
     
