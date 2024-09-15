@@ -233,11 +233,14 @@ class Clan:
         the program starts
         """
         self.instructor = Cat(status=choice(["apprentice", "mediator apprentice", "medicine cat apprentice", "warrior",
-                                             "medicine cat", "leader", "mediator", "queen", "queen's apprentice", "deputy", "elder"]),
-                              )
+                                            "medicine cat", "leader", "mediator", "queen", "queen's apprentice", "deputy", "elder"]),
+                            )
         self.instructor.dead = True
         self.instructor.dead_for = randint(20, 200)
-        self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
+        if self.clan_age == "new":
+            self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["new_sc_guide_backstories"])
+        else:
+            self.instructor.backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
         self.add_cat(self.instructor)
         self.add_to_starclan(self.instructor)
         self.all_clans = []
@@ -248,7 +251,10 @@ class Clan:
         self.demon.df = True
         self.demon.dead = True
         self.demon.dead_for = randint(20, 200)
-        self.demon.backstory = choice(BACKSTORIES["backstory_categories"]["df_backstories"])
+        if self.clan_age == "new":
+            self.demon.backstory = choice(BACKSTORIES["backstory_categories"]["new_df_guide_backstories"])
+        else:
+            self.demon.backstory = choice(BACKSTORIES["backstory_categories"]["df_backstories"])
         self.add_cat(self.demon)
         self.add_to_darkforest(self.demon)
         self.all_clans = []
@@ -309,6 +315,11 @@ class Clan:
             self.populate_sc()
             self.populate_ur()
             self.populate_df()
+        elif self.clan_age == "new":
+            self.generate_outsiders()
+            self.generate_outsider_mates()
+            self.generate_outsider_families()
+
         game.save_cats()
         self.save_clan()
 
@@ -474,6 +485,112 @@ class Clan:
             df_cats = create_new_cat(Cat, new_name=True, alive=False, df=True, backstory=random_backstory, thought="Watches the Clan from the gloom")
             df_cats[0].history.beginning = None
             df_cats[0].dead_for = randint(20, 200)
+
+    def generate_outsiders(self):
+        for i in range(randint(0,5)):
+            outsider = create_new_cat(Cat,
+                                        status=random.choice(["loner", "kittypet"]),
+                                        age=randint(15, 120),
+                                        outside=True)[0]
+            outsider.history.beginning = None
+
+    def generate_outsider_mates(self):
+        """Generates up to three pairs of mates."""
+
+        def get_adult_mateless_cat():
+            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 14 and not i.dead and not i.mate]
+            if alive_cats:
+                return random.choice(alive_cats)
+            return None
+
+        num_mates = random.randint(0,3)
+
+        for i in range(num_mates):
+            random_cat = get_adult_mateless_cat()
+            if random_cat:
+                same_age_cats = get_free_possible_mates(random_cat)
+
+            if same_age_cats:
+                random_mate_cat = random.choice(same_age_cats)
+                if random_cat.is_potential_mate(random_mate_cat):
+                    random_cat.set_mate(random_mate_cat)
+
+    def generate_outsider_families(self):
+        def get_kit_parent():
+            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 20 and i.moons <= 100 and not i.dead]
+
+            for cat in alive_cats:
+                if not cat.inheritance:
+                    cat.inheritance = Inheritance(cat)
+
+            alive_cats = [i for i in alive_cats if not i.inheritance.get_blood_kits()]
+
+            if alive_cats:
+                return random.choice(alive_cats)
+            return None
+
+        def get_app_parent():
+            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 40 and i.moons <= 100 and not i.dead]
+
+            for cat in alive_cats:
+                if not cat.inheritance:
+                    cat.inheritance = Inheritance(cat)
+
+            alive_cats = [i for i in alive_cats if not i.inheritance.get_blood_kits()]
+
+            if alive_cats:
+                return random.choice(alive_cats)
+            return None
+        
+        clan_kits = get_alive_status_cats(Cat, ["newborn", "kitten"])
+        clan_apps = get_alive_status_cats(Cat, ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"])
+
+        if not clan_kits and not clan_apps:
+            return
+        
+        if clan_kits:
+            for kit in clan_kits:
+                if not kit.inheritance:
+                    kit.inheritance = Inheritance(kit)
+                if kit.ID != game.clan.your_cat.ID and not kit.parent1:
+                    parent = get_kit_parent()
+                    if parent:
+                        kit.parent1 = parent.ID
+                        parent.inheritance.update_inheritance()
+
+                        if parent.mate:
+                            kit.parent2 = choice(parent.mate)
+                            if not Cat.all_cats.get(kit.parent2).inheritance:
+                                Cat.all_cats.get(kit.parent2).inheritance = Inheritance(Cat.all_cats.get(kit.parent2))
+                            Cat.all_cats.get(kit.parent2).inheritance.update_inheritance()
+
+                        for other_kit in clan_kits:
+                            if other_kit.ID != kit.ID and other_kit.ID != game.clan.your_cat.ID and kit.moons == other_kit.moons and not other_kit.parent1:
+                                other_kit.parent1 = parent.ID
+                                parent.inheritance.update_inheritance()
+                                if kit.parent2:
+                                    other_kit.parent2 = kit.parent2
+                                    Cat.all_cats.get(kit.parent2).inheritance.update_inheritance()
+                                    if not other_kit.inheritance:
+                                        other_kit.inheritance = Inheritance(other_kit)
+                kit.inheritance.update_inheritance()
+
+        if clan_apps:
+            for app in clan_apps:
+                parent = get_app_parent()
+                if parent:
+                    app.parent1 = parent.ID
+                    if not app.inheritance:
+                        app.inheritance = Inheritance(app)
+                    app.inheritance.update_inheritance()
+                    parent.inheritance.update_inheritance()
+                    if parent.mate:
+                        app.parent2 = choice(parent.mate)
+                        if not Cat.all_cats.get(app.parent2).inheritance:
+                            Cat.all_cats.get(app.parent2).inheritance = Inheritance(Cat.all_cats.get(app.parent2))
+                        app.inheritance.update_inheritance()
+                        Cat.all_cats.get(app.parent2).inheritance.update_inheritance()
+
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """Adds cat into the list of clan cats"""

@@ -622,6 +622,7 @@ def create_new_cat_block(
                                   gender=gender,
                                   thought=thought,
                                   alive=alive,
+                                  df=df,
                                   outside=outside,
                                   parent1=parent1.ID if parent1 else None,
                                   parent2=parent2.ID if parent2 else None
@@ -880,7 +881,7 @@ def create_new_cat(
         if new_cat.age == "adolescent":
             new_cat.update_mentor()
 
-        if df:
+        if df is True:
             if status != "kitten":
                 scarchance = randint(1,5)
                 if scarchance == 1 or 2 or 3:
@@ -908,9 +909,6 @@ def create_new_cat(
                     scar = choice(Pelt.scars1)
                     new_cat.pelt.scars.append(scar)
             
-                
-                
-
         # Remove disabling scars on living cats, if they generated.
         if not df: 
             not_allowed = ['NOPAW', 'NOTAIL', 'HALFTAIL', 'NOEAR', 'BOTHBLIND', 'RIGHTBLIND', 
@@ -920,63 +918,61 @@ def create_new_cat(
                     new_cat.pelt.scars.remove(scar)
 
         # chance to give the new cat a permanent condition, higher chance for found kits and litters
-        if game.clan.game_mode != "classic":
-            if kit or litter:
-                chance = int(
-                    game.config["cat_generation"]["base_permanent_condition"] / 11.25
-                )
-            else:
-                chance = game.config["cat_generation"]["base_permanent_condition"] + 10
-            if not int(random() * chance):
-                possible_conditions = []
-                for condition in PERMANENT:
-                    if (kit or litter) and PERMANENT[condition]["congenital"] not in [
-                        "always",
-                        "sometimes",
-                    ]:
-                        continue
-                    # next part ensures that a kit won't get a condition that takes too long to reveal
-                    age = new_cat.moons
-                    leeway = 5 - (PERMANENT[condition]["moons_until"] + 1)
-                    if age > leeway:
-                        continue
-                    possible_conditions.append(condition)
+        if kit or litter:
+            chance = int(
+                game.config["cat_generation"]["base_permanent_condition"] / 11.25
+            )
+        else:
+            chance = game.config["cat_generation"]["base_permanent_condition"] + 10
+        if not int(random() * chance):
+            possible_conditions = []
+            for condition in PERMANENT:
+                if (kit or litter) and PERMANENT[condition]["congenital"] not in [
+                    "always",
+                    "sometimes",
+                ]:
+                    continue
+                # next part ensures that a kit won't get a condition that takes too long to reveal
+                age = new_cat.moons
+                leeway = 5 - (PERMANENT[condition]["moons_until"] + 1)
+                if age > leeway:
+                    continue
+                possible_conditions.append(condition)
 
-                if possible_conditions:
-                    chosen_condition = choice(possible_conditions)
-                    born_with = False
-                    if PERMANENT[chosen_condition]["congenital"] in [
-                        "always",
-                        "sometimes",
-                    ]:
-                        born_with = True
+            if possible_conditions:
+                chosen_condition = choice(possible_conditions)
+                born_with = False
+                if PERMANENT[chosen_condition]["congenital"] in [
+                    "always",
+                    "sometimes",
+                ]:
+                    born_with = True
 
-                    new_cat.get_permanent_condition(chosen_condition, born_with)
-                    if (
-                            new_cat.permanent_condition[chosen_condition]["moons_until"]
-                            == 0
-                    ):
-                        new_cat.permanent_condition[chosen_condition][
-                            "moons_until"
-                        ] = -2
+                new_cat.get_permanent_condition(chosen_condition, born_with)
+                if (
+                        new_cat.permanent_condition[chosen_condition]["moons_until"]
+                        == 0
+                ):
+                    new_cat.permanent_condition[chosen_condition][
+                        "moons_until"
+                    ] = -2
 
-                    # assign scars
-                    if chosen_condition in ["lost a leg", "born without a leg"]:
-                        new_cat.pelt.scars.append("NOPAW")
-                    elif chosen_condition in ["lost their tail", "born without a tail"]:
-                        new_cat.pelt.scars.append("NOTAIL")
+                # assign scars
+                if chosen_condition in ["lost a leg", "born without a leg"]:
+                    new_cat.pelt.scars.append("NOPAW")
+                elif chosen_condition in ["lost their tail", "born without a tail"]:
+                    new_cat.pelt.scars.append("NOTAIL")
 
         if outside:
             new_cat.outside = True
         if not alive:
             new_cat.die()
 
-        if not alive and df:
+        if df:
             new_cat.df = True
-        else:
         # give apprentice aged cat a mentor
         # this is in a weird spot but DF cats were getting clancat mentors otherwise
-            if new_cat.age == 'adolescent':
+            if new_cat.age == 'adolescent' and not new_cat.dead:
                 new_cat.update_mentor()
 
         # newbie thought
