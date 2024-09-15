@@ -547,7 +547,7 @@ class TalkScreen(Screens):
             if game.switches["talk_category"] == "flirt" and ("insult" in tags or ("reject" not in tags and "accept" not in tags)):
                 continue
 
-            if you.moons == 0 and "newborn" not in tags:
+            if you.moons == 0 and "newborn" not in tags and "you_newborn" not in tags:
                 continue
 
             if "sc_faith" in tags and cat.faith < 0:
