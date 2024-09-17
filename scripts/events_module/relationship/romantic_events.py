@@ -354,14 +354,21 @@ class Romantic_Events:
                 return
 
             # Move on from dead mates
-            if cat_mate and "grief stricken" not in cat.illnesses and ((cat_mate.dead and cat_mate.dead_for >= 4) or cat_mate.outside) and not (cat.joined_df and cat_mate.df):
+            if cat_mate and "grief stricken" not in cat.illnesses and ((cat_mate.dead and cat_mate.dead_for >= 4) or cat_mate.outside):
+                if (cat.joined_df and cat_mate.df):
+                    if (
+                        (cat.moons - cat_mate.moons > 40 or
+                        cat_mate.moons - cat.moons > 40)
+                        ):
+                        text = f"{cat.name} has decided to move on from their Dark Forest romance with {cat_mate.name}."
+                else:
                 # randint is a slow function, don't call it unless we have to.
-                if not cat_mate.no_mates and random.random() > 0.5:
-                    text = f"{cat.name} will always love {cat_mate.name} but has decided to move on."
-                    game.cur_events_list.append(
-                        Single_Event(text, "relation", [cat.ID, cat_mate.ID])
-                    )
-                    cat.unset_mate(cat_mate)
+                    if not cat_mate.no_mates and random.random() > 0.5:
+                        text = f"{cat.name} will always love {cat_mate.name} but has decided to move on."
+                game.cur_events_list.append(
+                    Single_Event(text, "relation", [cat.ID, cat_mate.ID])
+                )
+                cat.unset_mate(cat_mate)
 
     @staticmethod
     def handle_new_mates(cat_from, cat_to) -> bool:
