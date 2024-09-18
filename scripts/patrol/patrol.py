@@ -236,6 +236,10 @@ class Patrol:
             self.other_clan = choice(clan.all_clans)
         else:
             self.other_clan = None
+
+        if "patrol_category" in game.switches and game.switches["patrol_category"] in ["df", "date", "lifegen"]:
+            self.patrol_leader = game.clan.your_cat
+            # youre always da leader here
             
         # DETERMINE RANDOM CAT
         #Find random cat
