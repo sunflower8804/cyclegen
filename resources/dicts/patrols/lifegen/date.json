@@ -1810,7 +1810,7 @@
         "relationship_constraint": ["mates"],
         "success_outcomes": [
             {
-                "text": "r_c accepts and before you know it, {PRONOUN/r_c/subject}{VERB/r_c/'re/is} playfully chasing you through the wildflower fields. Just as the sun sets against the horizon, r_c tackles you into the clearing and rolls, wildflower petals floating through the air in a beautiful arrangement of color. You and r_c share a moment of laughter, enjoying yourself before you have to travel back to o_cClan.",
+                "text": "r_c accepts and before you know it, {PRONOUN/r_c/subject}{VERB/r_c/'re/is} playfully chasing you through the wildflower fields. Just as the sun sets against the horizon, r_c tackles you into the clearing and rolls, wildflower petals floating through the air in a beautiful arrangement of color. You and r_c share a moment of laughter, enjoying yourself before you have to travel back to c_nClan.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [

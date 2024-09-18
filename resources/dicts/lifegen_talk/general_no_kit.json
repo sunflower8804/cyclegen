@@ -17668,7 +17668,7 @@
         ],
         [
             "Our illustrious leader has time for me? How kind.",
-            "[You tell t_c that r_w noticed {PRONOUN/t_c/subject} were missing last night.]",
+            "[You tell t_c that r_w noticed {PRONOUN/t_c/subject} {VERB/t_c/were/was} missing last night.]",
             "'Missing'? Nah... I knew exactly where I was, hah!"
         ]
     ],
@@ -23508,6 +23508,14 @@
             "I've got you, it's okay. You can let it all out. You should never feel ashamed to cry in front of me.",
             "[You bury your head into {PRONOUN/t_c/object} and begin to sob. It all just comes out, you feel like you can't stop it. t_c's tail pats you lightly, they hold you tight and don't let go.]",
             "Just because you're the leader, it doesn't mean you can't cry. Oh little one, I can't imagine the pain you're in. Or how you must have felt keeping it all hidden. But I've got you, and I'm not letting go."
+        ]
+    ],
+    "testdialogue": [
+        [
+            "any"
+        ],
+        [
+            "Hey, that random cat is r_c! And there's r_w_neurotic!!"
         ]
     ]
 }

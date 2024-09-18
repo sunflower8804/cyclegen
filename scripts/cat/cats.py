@@ -650,10 +650,10 @@ class Cat:
             if self.history and self.history.murder and "is_murderer" in self.history.murder and len(self.history.murder["is_murderer"]) > 2:
                 self.df = True
                 game.clan.add_to_darkforest(self)
-            elif self.faith == -9:
+            elif self.faith <= -9:
                 self.df = True
                 game.clan.add_to_darkforest(self)
-            elif self.faith == 9:
+            elif self.faith >= 9:
                 self.df = False
                 game.clan.add_to_starclan(self)
             elif randint(1,100) == 1 and self.history:

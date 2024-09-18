@@ -3719,29 +3719,61 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
 
     # Your apprentice
     if "y_a" in text:
-        if "y_a" in cat_dict:
-            text = re.sub(r'(?<!\/)y_a(?!\/)', str(cat_dict["y_a"].name), text)
+        cluster = False
+        rel = False
+        match = re.search(r'y_a(\w+)', text)
+        if match:
+            x = match.group(1).strip("_")
+            cluster = True
         else:
-            if len(you.apprentice) == 0:
-                return ""
-            your_app = Cat.fetch_cat(choice(you.apprentice))
-            if your_app.ID == cat.ID:
-                return ""
-            cat_dict["y_a"] = your_app
-            text = re.sub(r'(?<!\/)y_a(?!\/)', str(your_app.name), text)
+            x = ""
+        match2 = re.search(r'(\w+)y_a', text)
+        if match2:
+            r = match2.group(1).strip("_")
+            rel = True
+        else:
+            r = ""
+
+        if cat.mentor is None or cat.mentor == you.ID:
+            return ""
+        text, in_dict = cat_dict_check("y_a", cluster, x, rel, r, text, cat_dict)
+
+        your_app = Cat.fetch_cat(choice(you.apprentice))
+        cat_dict["y_a"] = your_app
+        addon_check = abbrev_addons(cat, your_app, cluster, x, rel, r)
+        if addon_check is False:
+            return ""
+
+        text = add_to_cat_dict("y_a", cluster, x, rel, r, your_app, text, cat_dict)
 
     # Their apprentice
     if "t_a" in text:
-        if "t_a" in cat_dict:
-            text = re.sub(r'(?<!\/)t_a(?!\/)', str(cat_dict["t_a"].name), text)
+        cluster = False
+        rel = False
+        match = re.search(r't_a(\w+)', text)
+        if match:
+            x = match.group(1).strip("_")
+            cluster = True
         else:
-            if len(cat.apprentice) == 0:
-                return ""
-            their_app = Cat.fetch_cat(choice(cat.apprentice))
-            if their_app.ID == you.ID:
-                return ""
-            cat_dict["t_a"] = their_app
-            text = re.sub(r'(?<!\/)t_a(?!\/)', str(their_app.name), text)
+            x = ""
+        match2 = re.search(r'(\w+)t_a', text)
+        if match2:
+            r = match2.group(1).strip("_")
+            rel = True
+        else:
+            r = ""
+
+        if cat.mentor is None or cat.mentor == you.ID:
+            return ""
+        text, in_dict = cat_dict_check("t_a", cluster, x, rel, r, text, cat_dict)
+
+        their_app = Cat.fetch_cat(choice(cat.apprentice))
+        cat_dict["t_a"] = their_app
+        addon_check = abbrev_addons(cat, their_app, cluster, x, rel, r)
+        if addon_check is False:
+            return ""
+
+        text = add_to_cat_dict("t_a", cluster, x, rel, r, their_app, text, cat_dict)
 
     # Your parent
     if "y_p" in text:
@@ -4071,13 +4103,13 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
     if "df_m_n" in text:
         cluster = False
         rel = False
-        match = re.search(r'tm_n(\w+)', text)
+        match = re.search(r'df_m_n(\w+)', text)
         if match:
             x = match.group(1).strip("_")
             cluster = True
         else:
             x = ""
-        match2 = re.search(r'(\w+)tm_n', text)
+        match2 = re.search(r'(\w+)df_m_n', text)
         if match2:
             r = match2.group(1).strip("_")
             rel = True
