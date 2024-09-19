@@ -193,6 +193,13 @@ class SwitchClanScreen(Screens):
                     object_id="#saved_clan",
                     manager=MANAGER))
 
+            if your_name != "" and clan_age != "":
+                tooltext = f"{your_name}<br>Clan age: {clan_age} moons"
+            else:
+                print("Can't find info for", clan)
+                print(your_name, clan_age)
+                tooltext = ""
+
             self.your_cat_buttons[-1].append(
                 pygame_gui.elements.UIButton(scale(
                     pygame.Rect((480, y_pos), (68, 68))),
