@@ -449,7 +449,13 @@ class Clan:
                 "dead10",
                 "dead12",
                 "dead15"])
-            sc_cats = create_new_cat(Cat, new_name=True, alive=False, backstory=random_backstory, thought="Watches over the Clan")
+            sc_cats = create_new_cat(
+                Cat,
+                new_name=True,
+                alive=False,
+                backstory=random_backstory,
+                thought="Watches over the Clan"
+                )
             sc_cats[0].history.beginning = None
             sc_cats[0].dead_for = randint(20, 200)
 
@@ -467,7 +473,16 @@ class Clan:
                 "dead11",
                 "dead12"])
             status = random.choice(["loner","kittypet"])
-            ur_cats = create_new_cat(Cat, alive=False, status = status, loner=True if status == "loner" else False, kittypet=True if status == "kittypet" else False, outside=True, backstory=random_backstory, thought="Wanders the Unknown Residence")
+            ur_cats = create_new_cat(
+                Cat,
+                alive=False,
+                status = status,
+                loner=True if status == "loner" else False,
+                kittypet=True if status == "kittypet" else False,
+                outside=True,
+                backstory=random_backstory,
+                thought="Wanders the Unknown Residence"
+                )
             ur_cats[0].history.beginning = None
             ur_cats[0].dead_for = randint(20,100)
 
@@ -482,16 +497,26 @@ class Clan:
                 "dead12",
                 "dead13",
                 "dead14"])
-            df_cats = create_new_cat(Cat, new_name=True, alive=False, df=True, backstory=random_backstory, thought="Watches the Clan from the gloom")
+            df_cats = create_new_cat(
+                Cat,
+                new_name=True,
+                alive=False,
+                df=True,
+                backstory=random_backstory,
+                thought="Watches the Clan from the gloom"
+                )
             df_cats[0].history.beginning = None
             df_cats[0].dead_for = randint(20, 200)
 
     def generate_outsiders(self):
         for i in range(randint(0,5)):
-            outsider = create_new_cat(Cat,
-                                        status=random.choice(["loner", "kittypet"]),
-                                        age=randint(15, 120),
-                                        outside=True)[0]
+            outsider = create_new_cat(
+                Cat,
+                status=random.choice(["loner", "kittypet"]),
+                age=randint(15, 120),
+                outside=True,
+                thought="Wanders around beyond the Clan's borders"
+                )[0]
             outsider.history.beginning = None
 
     def generate_outsider_mates(self):
