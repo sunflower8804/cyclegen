@@ -3113,6 +3113,100 @@
             "[Looks like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not in the mood for banter.]"
         ]
     ],
+    "they_kitten_H1": [
+        [
+            "they_kitten",
+            "insult",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Well - You - You're, uhh...",
+            "Stinky, like rotten fresh-kill!",
+            "Yeah! You need to bathe! Ewwww!!"
+        ]
+    ],
+    "they_kitten_H2": [
+        [
+            "insult",
+            "they_kitten",
+            "any",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c simply laughs in your face.]"
+        ]
+    ],
+    "they_kitten_H3": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "Hah! As if that affects me at all!",
+            "[You can definitely see the unshed tears in {PRONOUN/t_c/poss} eyes.]"
+        ]
+    ],
+    "they_kitten_H4": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "... Did you know you have a bald spot on your neck?",
+            "Everycat has been too nice to say anything."
+        ]
+    ],
+    "they_kitten_H5": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "You're so mean..."
+        ]
+    ],
+    "they_kitten_H6": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "Yeah? Well, your ears are too big for your face.",
+            "You look like a dirty mouse."
+        ]
+    ],
+    "they_kitten_H7": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "Well - Well I hope you run into those black and white cat wannabes with the stinky farts!"
+        ]
+    ],
+    "they_kitten_H8": [
+        [
+            "they_kitten",
+            "insult",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c stares at you intently.]",
+            "[... Minutes go past without a word. It's starting to become creepy.]"
+        ]
+    ],
     "TinyTeddy_stable_neg_youkitten_theywarrior_01": [
         [
             "insult",
