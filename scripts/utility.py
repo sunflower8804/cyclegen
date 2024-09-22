@@ -4086,7 +4086,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         if you.joined_df and not you.dead and you.df_mentor and cat.ID != you.df_mentor and not Cat.all_cats.get(you.df_mentor) is None:
             text, in_dict = cat_dict_check("df_m_n", cluster, x, rel, r, text, cat_dict)
             cat_dict["df_m_n"] = Cat.all_cats.get(you.df_mentor)
-            text = add_to_cat_dict("df_m_n", cluster, x, rel, r, Cat.fetch_cat(cat.mentor), text, cat_dict)
+            text = add_to_cat_dict("df_m_n", cluster, x, rel, r, Cat.fetch_cat(you.df_mentor), text, cat_dict)
         else:
             return ""
         
@@ -4166,7 +4166,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             addon_check = abbrev_addons(cat, Cat.fetch_cat(cat.df_mentor), cluster, x, rel, r)
         if addon_check is False:
             return ""
-        text = add_to_cat_dict("t_df_mn", cluster, x, rel, r, Cat.fetch_cat(cat.mentor), text, cat_dict)
+        text = add_to_cat_dict("t_df_mn", cluster, x, rel, r, Cat.fetch_cat(cat.df_mentor), text, cat_dict)
     
     # Clan leader's name
     if "l_n" in text:
