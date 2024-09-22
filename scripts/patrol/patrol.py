@@ -682,10 +682,10 @@ class Patrol:
 
                 if len(patrol.antag_fail_outcomes) > 0:
                     for i in patrol.antag_fail_outcomes:
-                        tests.append(i)
+                        tests.append(i.text)
                 if len(patrol.antag_success_outcomes) > 0:
                     for i in patrol.antag_success_outcomes:
-                        tests.append(i)
+                        tests.append(i.text)
 
                 for i in patrol.success_outcomes:
                     tests.append(i.text)
