@@ -88,6 +88,21 @@ class TalkScreen(Screens):
 
         self.text_type = ""
         self.texts = self.load_texts(self.the_cat)
+
+        if game.switches["talk_category"] == "flirt":
+            flirt_success = self.is_flirt_success(self.the_cat)
+            if flirt_success is True:
+                self.the_cat.relationships.get(game.clan.your_cat.ID).romantic_love += randint(1,10)
+                game.clan.your_cat.relationships.get(self.the_cat.ID).romantic_love += randint(1,10)
+            else:
+                if game.clan.your_cat.ID in self.the_cat.relationships:
+                    self.the_cat.relationships.get(game.clan.your_cat.ID).romantic_love -= randint(1,5)
+                    self.the_cat.relationships.get(game.clan.your_cat.ID).comfortable -= randint(1,5)
+                    self.the_cat.relationships.get(game.clan.your_cat.ID).dislike += randint(1,5)
+                else:
+                    print("no relationship :(")
+
+
         self.text_frames = [[text[:i+1] for i in range(len(text))] for text in self.texts]
         self.talk_box_img = image_cache.load_image("resources/images/talk_box.png").convert_alpha()
 
@@ -1726,13 +1741,8 @@ class TalkScreen(Screens):
                 chance -= 30
             r = randint(1,100) < chance
             if r:
-                cat.relationships.get(game.clan.your_cat.ID).romantic_love += randint(1,10)
-                game.clan.your_cat.relationships.get(cat.ID).romantic_love += randint(1,10)
+                return True
             else:
-                cat.relationships.get(game.clan.your_cat.ID).romantic_love -= randint(1,5)
-                cat.relationships.get(game.clan.your_cat.ID).comfortable -= randint(1,5)
-                cat.relationships.get(game.clan.your_cat.ID).dislike += randint(1,5)
-
-            return r
+                return False
         else:
             return False

@@ -696,7 +696,7 @@ class Patrol:
                     test_runs[i] = adjust_txt(Cat, str(i), self.patrol_leader, self.patrol_cat_dict, r_c_allowed=False, o_c_allowed=False)
                     if test_runs[i] == "":
                         skip = True
-                        print("Lifegen abbrev repl failed: Skipping", patrol.patrol_id)
+                        # print("Lifegen abbrev repl failed: Skipping", patrol.patrol_id)
                         break
                     # else:
                     #     print(i)

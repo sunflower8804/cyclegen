@@ -243,7 +243,7 @@ class Pregnancy_Events:
             severity = random.choices(["minor", "major"], [3, 1], k=1)
             cat.get_injured("pregnant", severity=severity[0])
             text += choice(Pregnancy_Events.PREGNANT_STRINGS[f"{severity[0]}_severity"])
-            text = event_text_adjust(Cat, text, cat, clan=clan)
+            text = event_text_adjust(Cat, text, main_cat=cat, clan=clan)
             game.cur_events_list.append(Single_Event(text, "birth_death", cat.ID))
         else:
             if not other_cat and cat.gender == "male":

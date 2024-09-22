@@ -2975,24 +2975,39 @@ def abbrev_addons(t_c, r_c, cluster, x, rel, r):
         ):
         print("abbrev addon failed")
         return False
+    return True
 
 def cat_dict_check(abbrev, cluster, x, rel, r, text, cat_dict):
     """ Checks if a cat is in the dict already.
     If so, it will reuse the name in later text.
     If not, it will find a cat for the abbrev."""
-
     in_dict = False
-    if f"{abbrev}_{x}" in cat_dict or f"{abbrev}" in cat_dict or f"{r}_{abbrev}" in cat_dict or f"{r}_{abbrev}_{x}" in cat_dict:
-        in_dict = True
-        if cluster and rel:
-            text = re.sub(fr'(?<!\/){r}_{abbrev}_{x}(?!\/)', str(cat_dict[f"{r}_{abbrev}_{x}"].name), text)
-        elif cluster and not rel:
-            text = re.sub(fr'(?<!\/){abbrev}_{x}(?!\/)', str(cat_dict[f"{abbrev}_{x}"].name), text)
-        elif rel and not cluster:
-            text = re.sub(fr'(?<!\/){r}_{abbrev}(?!\/)', str(cat_dict[f"{r}_{abbrev}"].name), text)
-        else:
-            text = re.sub(fr'(?<!\/){abbrev}(?!\/)', str(cat_dict[f"{abbrev}"].name), text)
+    try:
+        if f"{abbrev}_{x}" in cat_dict or f"{abbrev}" in cat_dict or f"{r}_{abbrev}" in cat_dict or f"{r}_{abbrev}_{x}" in cat_dict:
+            in_dict = True
+            if cluster and rel:
+                text = re.sub(fr'(?<!\/){r}_{abbrev}_{x}(?!\/)', str(cat_dict[f"{r}_{abbrev}_{x}"].name), text)
+            elif cluster and not rel:
+                text = re.sub(fr'(?<!\/){abbrev}_{x}(?!\/)', str(cat_dict[f"{abbrev}_{x}"].name), text)
+            elif rel and not cluster:
+                text = re.sub(fr'(?<!\/){r}_{abbrev}(?!\/)', str(cat_dict[f"{r}_{abbrev}"].name), text)
+            else:
+                text = re.sub(fr'(?<!\/){abbrev}(?!\/)', str(cat_dict[f"{abbrev}"].name), text)
+    except KeyError:
+        print("WARNING: Keyerror with", abbrev, ". Do you have dialogue debugged? If not, report as bug!")
     return text, in_dict
+
+def in_dict_check_2(chosen_cat, cat_dict):
+    """ Checks if a cat is already in the cat dict as another abbrev.
+    So r_c and r_w, for example, don't end up being the same cat. """
+
+    already_there = False
+    for item in cat_dict.items():
+        if item[1] == chosen_cat:
+            already_there = True
+            break
+
+    return already_there
 
 other_dict = {}   
 def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
@@ -3024,6 +3039,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         else:
             r = ""
         text, in_dict = cat_dict_check("your_crush", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if len(you.mate) > 0 or you.no_mates:
@@ -3031,8 +3047,14 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             crush = None
             for c in get_alive_cats(Cat):
                 addon_check = abbrev_addons(cat, c, cluster, x, rel, r)
+
+                skip = False
+                in_dict_2 = in_dict_check_2(c, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
                 if c.ID == you.ID or c.ID == cat.ID or c.ID in cat.mate or c.ID in you.mate or c.age != you.age or\
-                addon_check is False:
+                addon_check is False or skip is True:
                     continue
                 relations = you.relationships.get(c.ID)
                 if not relations:
@@ -3062,6 +3084,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
 
         text, in_dict = cat_dict_check("their_crush", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if len(cat.mate) > 0 or cat.no_mates:
@@ -3069,8 +3092,14 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             crush = None
             for c in get_alive_cats(Cat):
                 addon_check = abbrev_addons(cat, c, cluster, x, rel, r)
+
+                skip = False
+                in_dict_2 = in_dict_check_2(c, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
                 if c.ID == you.ID or c.ID == cat.ID or c.ID in cat.mate or c.ID in you.mate or c.age != cat.age or\
-                addon_check is False:
+                addon_check is False or skip is True:
                     continue
                 relations = cat.relationships.get(c.ID)
                 if not relations:
@@ -3112,12 +3141,22 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                     return ""
                 alive_cat = choice(alive_cats)
                 addon_check = abbrev_addons(cat, alive_cat, cluster, x, rel, r)
+                
+                skip = False
+                in_dict_2 = in_dict_check_2(c, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
                 counter = 0
 
                 while (alive_cat.ID == you.ID or alive_cat.ID == cat.ID or addon_check is False\
-                or alive_cat in list(cat_dict.values())):
+                or alive_cat in list(cat_dict.values())) or skip is True:
                     alive_cat = choice(alive_cats)
                     addon_check = abbrev_addons(cat, alive_cat, cluster, x, rel, r)
+                    skip = False
+                    in_dict_2 = in_dict_check_2(alive_cat, cat_dict)
+                    if in_dict_2 is True:
+                        skip = True
                     counter += 1
                     if counter >= 30:
                         return ""
@@ -3149,11 +3188,21 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 return ""
             alive_cat = choice(alive_cats)
             addon_check = abbrev_addons(cat, alive_cat, cluster, x, rel, r)
+            
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_cat, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
             while (alive_cat.ID == you.ID or alive_cat.ID == cat.ID or addon_check is False\
-            or alive_cat in list(cat_dict.values())):
+            or alive_cat in list(cat_dict.values())) or skip is True:
                 alive_cat = choice(alive_cats)
                 addon_check = abbrev_addons(cat, alive_cat, cluster, x, rel, r)
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_cat, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
                 counter += 1
                 if counter > COUNTER_LIM:
                     return ""
@@ -3197,17 +3246,39 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
 
         addon_check1 = abbrev_addons(cat, random_cat1, cluster1, x, rel1, r)
         addon_check2 = abbrev_addons(cat, random_cat2, cluster2, x, rel2, r)
+        
+        skip1 = False
+        in_dict_2 = in_dict_check_2(random_cat1, cat_dict)
+        if in_dict_2 is True:
+            skip1 = True
+        
+        skip2 = False
+        in_dict_2 = in_dict_check_2(random_cat2, cat_dict)
+        if in_dict_2 is True:
+            skip2 = True
+
+
         counter = 0
 
         while (random_cat1.ID == you.ID or random_cat1.ID == cat.ID or addon_check1 is False or\
         not random_cat1.is_potential_mate(random_cat2) or random_cat2.age != random_cat1.age) or \
         (random_cat2.ID == you.ID or random_cat2.ID == cat.ID or addon_check2 is False or\
-        not random_cat2.is_potential_mate(random_cat1)):
+        not random_cat2.is_potential_mate(random_cat1)) or skip1 is True or skip2 is True:
             
             random_cat1 = choice(get_alive_cats(Cat))
             random_cat2 = choice(get_alive_cats(Cat))
             addon_check1 = abbrev_addons(cat, random_cat1, cluster1, x, rel1, r)
             addon_check2 = abbrev_addons(cat, random_cat2, cluster2, x, rel2, r)
+
+            skip1 = False
+            in_dict_2 = in_dict_check_2(random_cat1, cat_dict)
+            if in_dict_2 is True:
+                skip1 = True
+            
+            skip2 = False
+            in_dict_2 = in_dict_check_2(random_cat2, cat_dict)
+            if in_dict_2 is True:
+                skip2 = True
 
             counter +=1
             if counter > 40:
@@ -3237,6 +3308,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
 
         text, in_dict = cat_dict_check("r_k", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_kits = get_alive_status_cats(Cat, ["kitten", "newborn"])
@@ -3246,12 +3318,23 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             alive_kit = choice(alive_kits)
             addon_check = abbrev_addons(cat, alive_kit, cluster, x, rel, r)
 
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_kit, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
-            # lord forgive me there must be a less disgusting way to do this sorry
-            while (alive_kit.ID == you.ID or alive_kit.ID == cat.ID or addon_check is False):
+
+            while (alive_kit.ID == you.ID or alive_kit.ID == cat.ID or addon_check is False) or skip is True:
                 counter += 1
                 alive_kit = choice(alive_kits)
                 addon_check = abbrev_addons(cat, alive_kit, cluster, x, rel, r)
+                
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_kit, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
                 if counter >= 30:
                     return ""
                 
@@ -3276,6 +3359,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
 
         text, in_dict = cat_dict_check("r_a", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_apps = get_alive_status_cats(Cat, ["apprentice"])
@@ -3284,14 +3368,26 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
 
             alive_app = choice(alive_apps)
             addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
             
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False:
+            while alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False or skip is True:
                 counter += 1
                 if counter >= 30:
                     return ""
                 alive_app = choice(alive_apps)
                 addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+                    
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
             
             text = add_to_cat_dict("r_a", cluster, x, rel, r, alive_app, text, cat_dict)
     
@@ -3315,6 +3411,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
 
         text, in_dict = cat_dict_check("r_w", cluster, x, rel, r, text, cat_dict)
         
+        
         if in_dict is False:
             alive_apps = get_alive_status_cats(Cat, ["warrior"])
             if len(alive_apps) <= 0:
@@ -3322,14 +3419,26 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
 
             alive_app = choice(alive_apps)
             addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+            
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
             
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False:
+            while alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False or skip is True:
                 counter += 1
                 if counter >= 30:
                     return ""
                 alive_app = choice(alive_apps)
                 addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+                    
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
 
             text = add_to_cat_dict("r_w", cluster, x, rel, r, alive_app, text, cat_dict)
 
@@ -3351,6 +3460,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
 
         text, in_dict = cat_dict_check("r_m", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_apps = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"])
@@ -3358,14 +3468,26 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 return ""
             alive_app = choice(alive_apps)
             addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+            
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
 
-            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False):
+            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False) or skip is True:
                 counter += 1
                 if counter == 30:
                     return ""
                 alive_app = choice(alive_apps)
                 addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+                
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
 
             text = add_to_cat_dict("r_m", cluster, x, rel, r, alive_app, text, cat_dict)
 
@@ -3387,6 +3509,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
         
         text, in_dict = cat_dict_check("r_d", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_apps = get_alive_status_cats(Cat, ["mediator", "mediator apprentice"])
@@ -3394,14 +3517,26 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 return ""
             alive_app = choice(alive_apps)
             addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+            
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
 
-            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False):
+            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False) or skip is True:
                 counter += 1
                 if counter == 30:
                     return ""
                 alive_app = choice(alive_apps)
                 addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+                
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
             
             text = add_to_cat_dict("r_d", cluster, x, rel, r, alive_app, text, cat_dict)
 
@@ -3423,6 +3558,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
 
         text, in_dict = cat_dict_check("r_q", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_apps = get_alive_status_cats(Cat, ["queen", "queen's apprentice"])
@@ -3430,14 +3566,26 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 return ""
             alive_app = choice(alive_apps)
             addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+            
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
 
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False:
+            while alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False or skip is True:
                 counter += 1
                 if counter == 30:
                     return ""
                 alive_app = choice(alive_apps)
                 addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+                
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
 
             text = add_to_cat_dict("r_q", cluster, x, rel, r, alive_app, text, cat_dict)
 
@@ -3459,6 +3607,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
         
         text, in_dict = cat_dict_check("r_e", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_apps = get_alive_status_cats(Cat, ["elder"])
@@ -3466,10 +3615,22 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 return ""
             alive_app = choice(alive_apps)
             addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+            
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
-            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False):
+            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False) or skip is True:
                 alive_app = choice(alive_apps)
                 addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+                    
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
                 counter += 1
                 if counter == 30:
                     return ""
@@ -3494,6 +3655,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
         
         text, in_dict = cat_dict_check("r_s", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_apps = get_alive_cats(Cat)
@@ -3501,10 +3663,22 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 return ""
             alive_app = choice(alive_apps)
             addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+            
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
-            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False or not alive_app.is_ill()):
+            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False or not alive_app.is_ill()) or skip is True:
                 alive_app = choice(alive_apps)
                 addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+                    
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
                 counter += 1
                 if counter == 30:
                     return ""
@@ -3528,6 +3702,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
         
         text, in_dict = cat_dict_check("r_i", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_apps = get_alive_cats(Cat)
@@ -3535,10 +3710,22 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 return ""
             alive_app = choice(alive_apps)
             addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+            
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
-            while alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False or not alive_app.is_injured():
+            while alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False or not alive_app.is_injured() or skip is True:
                 alive_app = choice(alive_apps)
                 addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+                
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
                 counter += 1
                 if counter == 30:
                     return ""
@@ -3561,6 +3748,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
         
         text, in_dict = cat_dict_check("r_g", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_apps = get_alive_cats(Cat)
@@ -3568,10 +3756,22 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 return ""
             alive_app = choice(alive_apps)
             addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+            
+            skip = False
+            in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+            if in_dict_2 is True:
+                skip = True
+
             counter = 0
-            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False or "grief stricken" not in alive_app.illnesses):
+            while (alive_app.ID == you.ID or alive_app.ID == cat.ID or addon_check is False or "grief stricken" not in alive_app.illnesses) or skip is True:
                 alive_app = choice(alive_apps)
                 addon_check = abbrev_addons(cat, alive_app, cluster, x, rel, r)
+                    
+                skip = False
+                in_dict_2 = in_dict_check_2(alive_app, cat_dict)
+                if in_dict_2 is True:
+                    skip = True
+
                 counter += 1
                 if counter == 40:
                     return ""
@@ -3595,6 +3795,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
         
         text, in_dict = cat_dict_check("y_s", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if len(you.inheritance.get_siblings()) == 0:
@@ -3631,6 +3832,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
         
         text, in_dict = cat_dict_check("y_l", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if len(you.inheritance.get_siblings()) == 0:
@@ -3665,6 +3867,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
         
         text, in_dict = cat_dict_check("t_s", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if len(cat.inheritance.get_siblings()) == 0:
@@ -3700,6 +3903,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
         
         text, in_dict = cat_dict_check("t_l", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if len(cat.inheritance.get_siblings()) == 0:
@@ -3737,6 +3941,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         if cat.mentor is None or cat.mentor == you.ID:
             return ""
         text, in_dict = cat_dict_check("y_a", cluster, x, rel, r, text, cat_dict)
+        
 
         your_app = Cat.fetch_cat(choice(you.apprentice))
         cat_dict["y_a"] = your_app
@@ -3766,6 +3971,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         if cat.mentor is None or cat.mentor == you.ID:
             return ""
         text, in_dict = cat_dict_check("t_a", cluster, x, rel, r, text, cat_dict)
+        
 
         their_app = Cat.fetch_cat(choice(cat.apprentice))
         cat_dict["t_a"] = their_app
@@ -3803,6 +4009,10 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
 
             if len(you.inheritance.get_parents()) == 0 or parent.outside or parent.dead or parent.ID == cat.ID or\
             addon_check is False:
+                return ""
+            
+            in_dict_2 = in_dict_check_2(parent, cat_dict)
+            if in_dict_2 is True:
                 return ""
             
             text = add_to_cat_dict("y_p", cluster, x, rel, r, parent, text, cat_dict)
@@ -3855,6 +4065,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         else:
             r = ""
         text, in_dict = cat_dict_check("y_m", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if you.mate:
@@ -3887,6 +4098,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         else:
             r = ""
         text, in_dict = cat_dict_check("t_m", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if cat.mate:
@@ -3919,6 +4131,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         else:
             r = ""
         text, in_dict = cat_dict_check("t_ka", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if cat.inheritance.get_children() is None or len(cat.inheritance.get_children()) == 0:
@@ -3981,6 +4194,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         else:
             r = ""
         text, in_dict = cat_dict_check("t_k", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if cat.inheritance.get_children() is None or len(cat.inheritance.get_children()) == 0:
@@ -4011,6 +4225,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         else:
             r = ""
         text, in_dict = cat_dict_check("y_k", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if you.inheritance.get_children() is None or len(you.inheritance.get_children()) == 0:
@@ -4041,6 +4256,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         else:
             r = ""
         text, in_dict = cat_dict_check("y_kk", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if you.inheritance.get_children() is None or len(you.inheritance.get_children()) == 0:
@@ -4118,7 +4334,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         if you.joined_df and not you.dead and you.df_mentor and cat.ID != you.df_mentor and not Cat.all_cats.get(you.df_mentor) is None:
             text, in_dict = cat_dict_check("df_m_n", cluster, x, rel, r, text, cat_dict)
             cat_dict["df_m_n"] = Cat.all_cats.get(you.df_mentor)
-            text = add_to_cat_dict("df_m_n", cluster, x, rel, r, Cat.fetch_cat(cat.mentor), text, cat_dict)
+            text = add_to_cat_dict("df_m_n", cluster, x, rel, r, Cat.fetch_cat(you.df_mentor), text, cat_dict)
         else:
             return ""
         
@@ -4142,6 +4358,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         if cat.mentor is None or cat.mentor == you.ID:
             return ""
         text, in_dict = cat_dict_check("tm_n", cluster, x, rel, r, text, cat_dict)
+        
 
         cat_dict["tm_n"] = Cat.fetch_cat(cat.mentor)
         addon_check = abbrev_addons(cat, Cat.fetch_cat(cat.mentor), cluster, x, rel, r)
@@ -4169,12 +4386,13 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         if you.mentor is None or you.mentor == cat.ID:
             return ""
         text, in_dict = cat_dict_check("m_n", cluster, x, rel, r, text, cat_dict)
+        
 
         cat_dict["m_n"] = Cat.fetch_cat(you.mentor)
         addon_check = abbrev_addons(cat, Cat.fetch_cat(you.mentor), cluster, x, rel, r)
         if addon_check is False:
             return ""
-        text = add_to_cat_dict("m_n", cluster, x, rel, r, Cat.fetch_cat(cat.mentor), text, cat_dict)
+        text = add_to_cat_dict("m_n", cluster, x, rel, r, Cat.fetch_cat(you.mentor), text, cat_dict)
 
     # Their DF metnor
     if "t_df_mn" in text:
@@ -4267,6 +4485,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
 
         text, in_dict = cat_dict_check("d_c", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             if "grief stricken" in cat.illnesses:
@@ -4312,6 +4531,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
 
         text, in_dict = cat_dict_check("rdf_c", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             random_cat = Cat.all_cats.get(choice(game.clan.darkforest_cats))
@@ -4345,6 +4565,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
 
         text, in_dict = cat_dict_check("rsh_c", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             random_cat = choice(get_alive_cats(Cat))
@@ -4382,6 +4603,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             return ""
         
         text, in_dict = cat_dict_check("rsh_k", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_kit = choice(alive_kits)
@@ -4418,6 +4640,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             return ""
         
         text, in_dict = cat_dict_check("rsh_a", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_app = choice(alive_apps)
@@ -4454,6 +4677,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             return ""
         
         text, in_dict = cat_dict_check("rsh_w", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_app = choice(alive_apps)
@@ -4490,6 +4714,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             return ""
         
         text, in_dict = cat_dict_check("rsh_a", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_app = choice(alive_apps)
@@ -4526,6 +4751,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             return ""
         
         text, in_dict = cat_dict_check("rsh_d", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_app = choice(alive_apps)
@@ -4562,6 +4788,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             return ""
         
         text, in_dict = cat_dict_check("rsh_q", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_app = choice(alive_apps)
@@ -4598,6 +4825,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             return ""
         
         text, in_dict = cat_dict_check("rsh_e", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_app = choice(alive_apps)
@@ -4694,6 +4922,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         else:
             r = ""
         text, in_dict = cat_dict_check("l_c", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_outside_cats = [i for i in Cat.all_cats.values() if not i.dead and i.outside and not i.exiled]
@@ -4730,6 +4959,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             r = ""
 
         text, in_dict = cat_dict_check("e_c", cluster, x, rel, r, text, cat_dict)
+        
 
         if in_dict is False:
             alive_outside_cats = [i for i in Cat.all_cats.values() if not i.dead and i.outside and i.exiled]
