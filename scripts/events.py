@@ -1338,11 +1338,6 @@ class Events:
         if second_cluster:
             possible_events = possible_events + all_events[f"{status} {second_cluster}"] + general_events[f"general {second_cluster}"]
 
-        # debug
-        possible_events = [
-            "y_p r_c",
-            "y_p r_w"
-        ]
         for i in range(random.randint(0,5)):
             if possible_events:
                 event = random.choice(possible_events)
