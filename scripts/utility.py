@@ -2960,7 +2960,7 @@ def abbrev_addons(t_c, r_c, cluster, x, rel, r):
                 (r == "comfort" and t_c.relationships[r_c.ID].comfortable < 20) or 
                 (r == "respect" and t_c.relationships[r_c.ID].admiration < 20) or
                 (r == "neutral" and
-                ( 
+                (
                     (t_c.relationships[r_c.ID].platonic_like > 20) or
                     (t_c.relationships[r_c.ID].romantic_love > 20) or
                     (t_c.relationships[r_c.ID].dislike > 20) or
@@ -2968,7 +2968,6 @@ def abbrev_addons(t_c, r_c, cluster, x, rel, r):
                     (t_c.relationships[r_c.ID].trust > 20) or
                     (t_c.relationships[r_c.ID].comfortable > 20) or
                     (t_c.relationships[r_c.ID].admiration > 20)
-                        
                     )
                 )
             )
@@ -2995,6 +2994,8 @@ def cat_dict_check(abbrev, cluster, x, rel, r, text, cat_dict):
                 text = re.sub(fr'(?<!\/){abbrev}(?!\/)', str(cat_dict[f"{abbrev}"].name), text)
     except KeyError:
         print("WARNING: Keyerror with", abbrev, ". Do you have dialogue debugged? If not, report as bug!")
+        text = ""
+        # returning an empty string to reroll for dialogue
     return text, in_dict
 
 def in_dict_check_2(chosen_cat, cat_dict):
@@ -4027,14 +4028,12 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             text = re.sub(r'(?<!\/)t_p(?!\/)', str(cat_dict["t_p"].name), text)
         if "t_p_positive" not in cat_dict or "t_p_negative" not in cat_dict or "t_p" not in cat_dict:
             if len(cat.inheritance.get_parents()) == 0:
-                print("here0")
                 return ""
             parent = Cat.fetch_cat(choice(cat.inheritance.get_parents()))
             counter = 0
             while parent.outside or parent.dead or parent.ID == you.ID:
                 counter += 1
                 if counter > COUNTER_LIM:
-                    print("here1")
                     return ""
                 parent = Cat.fetch_cat(choice(cat.inheritance.get_parents()))
             if parent.relationships and cat.ID in parent.relationships and parent.relationships[cat.ID].dislike > 10 and "t_p_negative" in text:
