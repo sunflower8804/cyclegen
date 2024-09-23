@@ -2955,7 +2955,7 @@ def abbrev_addons(t_c, r_c, cluster, x, rel, r):
                 (r == "rlove" and t_c.relationships[r_c.ID].romantic_love < 50) or
                 (r == "dislike" and t_c.relationships[r_c.ID].dislike < 15) or
                 (r == "hate" and t_c.relationships[r_c.ID].dislike < 50) or
-                (r == "jealous" and t_c.relationships[r_c.ID].jeaousy < 20) or
+                (r == "jealous" and t_c.relationships[r_c.ID].jeaolusy < 20) or
                 (r == "trust" and t_c.relationships[r_c.ID].trust < 20) or
                 (r == "comfort" and t_c.relationships[r_c.ID].comfortable < 20) or 
                 (r == "respect" and t_c.relationships[r_c.ID].admiration < 20) or
@@ -3919,7 +3919,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 sibling = Cat.fetch_cat(choice(cat.inheritance.get_siblings()))
                 addon_check = abbrev_addons(cat, sibling, cluster, x, rel, r)
 
-            text = add_to_cat_dict("t_l", cluster, x, rel, r, alive_app, text, cat_dict)
+            text = add_to_cat_dict("t_l", cluster, x, rel, r, sibling, text, cat_dict)
 
     # Your apprentice
     if "y_a" in text:
@@ -4027,12 +4027,14 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             text = re.sub(r'(?<!\/)t_p(?!\/)', str(cat_dict["t_p"].name), text)
         if "t_p_positive" not in cat_dict or "t_p_negative" not in cat_dict or "t_p" not in cat_dict:
             if len(cat.inheritance.get_parents()) == 0:
+                print("here0")
                 return ""
             parent = Cat.fetch_cat(choice(cat.inheritance.get_parents()))
             counter = 0
             while parent.outside or parent.dead or parent.ID == you.ID:
                 counter += 1
                 if counter > COUNTER_LIM:
+                    print("here1")
                     return ""
                 parent = Cat.fetch_cat(choice(cat.inheritance.get_parents()))
             if parent.relationships and cat.ID in parent.relationships and parent.relationships[cat.ID].dislike > 10 and "t_p_negative" in text:
@@ -4045,8 +4047,11 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 text = re.sub(r'(?<!\/)t_p_positive(?!\/)', str(parent.name), text)
             else:
                 return ""
-            cat_dict["t_p"] = parent
-            text = re.sub(r'(?<!\/)t_p(?!\/)', str(parent.name), text)
+            if parent.relationships and cat.ID in parent.relationships and parent.relationships[cat.ID].platonic_like > 10 and "t_o" in text:
+                cat_dict["t_p"] = parent
+                text = re.sub(r'(?<!\/)t_p(?!\/)', str(parent.name), text)
+            else:
+                return ""
     
     # Your mate
     if "y_m" in text:
@@ -4489,11 +4494,16 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
 
         if in_dict is False:
             if "grief stricken" in cat.illnesses:
-                dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
                 try:
                     dead_cat = Cat.all_cats.get(cat.illnesses['grief stricken'].get("grief_cat"))
+                    if dead_cat is None:
+                        if "lasting grief" not in cat.permanent_condition:
+                            print("Warning:", cat.name, "is grieving + has no grief cat?")
+                        dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
                 except:
-                    pass
+                    dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
+            else:
+                dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
 
             addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
 
