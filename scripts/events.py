@@ -1166,7 +1166,6 @@ class Events:
             if game.clan.your_cat.shunned != 0:
                 ceremony_txt = ceremony_txt = random.choice(self.b_txt['apprentice ceremony shunned'])
             else:
-                game.clan.your_cat.status_change(game.clan.your_cat.status)
                 if game.clan.your_cat.mentor:
                     ceremony_txt = random.choice(self.b_txt[game.clan.your_cat.status + ' ceremony'])
                 else:
@@ -2706,7 +2705,11 @@ class Events:
                 ):
                     if cat.status == "deputy":
                         game.clan.deputy = None
-                    self.ceremony(cat, "elder")
+                    if cat.shunned != 0:
+                        self.ceremony(cat, "elder", LG_TYPE="shunned")
+                    else:
+                        self.ceremony(cat, "elder", LG_TYPE="")
+
 
             # apprentice a kitten to either med or warrior
             if cat.moons == cat_class.age_moons["adolescent"][0]:
@@ -2799,14 +2802,22 @@ class Events:
                     if chance <= 0:
                         chance = 1
 
+                    # edited below here for LG shunned ceremonies
+                    self.ceremony_accessory = True
                     if not has_med_app and not int(random.random() * chance):
-                        self.ceremony(cat, "medicine cat apprentice")
-                        self.ceremony_accessory = True
-                        self.gain_accessories(cat)
+                        if cat.shunned != 0:
+                            self.ceremony(cat, "medicine cat apprentice", LG_TYPE="shunned")
+                        else:
+                            self.ceremony(cat, "medicine cat apprentice", LG_TYPE="")
+                            self.ceremony_accessory = True
+                            self.gain_accessories(cat)
                     elif random.randint(1,40 + (cat.compassion*-1)) == 1:
-                        self.ceremony(cat, "queen's apprentice")
-                        self.ceremony_accessory = True
-                        self.gain_accessories(cat)
+                        if cat.shunned != 0:
+                            self.ceremony(cat, "queen's apprentice", LG_TYPE="shunned")
+                        else:
+                            self.ceremony(cat, "queen's apprentice", LG_TYPE="")
+                            self.ceremony_accessory = True
+                            self.gain_accessories(cat)
                     else:
                         # Chance for mediator apprentice
                         mediator_list = list(
@@ -2847,13 +2858,19 @@ class Events:
                             and not has_mediator_apprentice
                             and not int(random.random() * chance)
                         ):
-                            self.ceremony(cat, "mediator apprentice")
-                            self.ceremony_accessory = True
-                            self.gain_accessories(cat)
+                            if cat.shunned != 0:
+                                self.ceremony(cat, "mediator apprentice", LG_TYPE="shunned")
+                            else:
+                                self.ceremony(cat, "mediator apprentice", LG_TYPE="")
+                                self.ceremony_accessory = True
+                                self.gain_accessories(cat)
                         else:
-                            self.ceremony(cat, "apprentice")
-                            self.ceremony_accessory = True
-                            self.gain_accessories(cat)
+                            if cat.shunned != 0:
+                                self.ceremony(cat, "apprentice", LG_TYPE="shunned")
+                            else:
+                                self.ceremony(cat, "apprentice", LG_TYPE="")
+                                self.ceremony_accessory = True
+                                self.gain_accessories(cat)
 
             # graduate
             if cat.status in [
@@ -2923,7 +2940,7 @@ class Events:
                 else:
                     self.ceremony_id_by_tag[tag] = {ID}
 
-    def ceremony(self, cat, promoted_to, preparedness="prepared"):
+    def ceremony(self, cat, promoted_to, preparedness="prepared", LG_TYPE=""):
         """
         promote cats and add to event list
         """
@@ -2952,23 +2969,6 @@ class Events:
         try:
             # Get all the ceremonies for the role ----------------------------------------
             possible_ceremonies.update(self.ceremony_id_by_tag[promoted_to])
-
-            # remove the shunned and forgiven ceremonies if they dont apply
-            if cat.shunned == 0:
-                for ceremony_id in possible_ceremonies.copy():
-                    if "shunned" in ceremony_id:
-                        possible_ceremonies.remove(ceremony_id)
-
-            if cat.forgiven == 0:
-                for ceremony_id in possible_ceremonies.copy():
-                    if "forgiven" in ceremony_id:
-                        possible_ceremonies.remove(ceremony_id)
-
-            if cat.shunned > 0:
-                possible_ceremonies = possible_ceremonies.intersection(self.ceremony_id_by_tag["shunned"])
-            
-            if cat.shunned == 0 and cat.forgiven > 0 and cat.forgiven < 5 and cat.status in ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"]:
-                possible_ceremonies = possible_ceremonies.intersection(self.ceremony_id_by_tag["forgiven"])
 
             # Get ones for prepared status ----------------------------------------------
             if promoted_to in ["warrior", "medicine cat", "mediator", "queen"]:
@@ -3028,13 +3028,6 @@ class Events:
                 temp.update(
                     possible_ceremonies.intersection(
                         self.ceremony_id_by_tag[t]))
-                
-            if cat.forgiven == 0:
-                keys_to_remove = {key for key in temp if "forgiven" in key}
-                for key in keys_to_remove:
-                    temp.remove(key)
-            # this works to remove "forgiven" ceremonies from cats to whom that doesnt apply
-            # idk why the initial sorting doesnt work . this works for now
 
             possible_ceremonies = temp
 
@@ -3144,9 +3137,48 @@ class Events:
         if cat.status in ["warrior", "medicine cat", "mediator", "queen"]:
             History.add_app_ceremony(cat, random_honor)
 
-        ceremony_tags, ceremony_text = self.CEREMONY_TXT[
-            random.choice(list(possible_ceremonies))
-        ]
+        # lifegen filtering for shunned/forgiven
+        # it's easier to do here lol
+        new_ceremonies = []
+        for ceremony in possible_ceremonies:
+            tags = self.CEREMONY_TXT[ceremony][0]
+            text = self.CEREMONY_TXT[ceremony][1]
+
+            if LG_TYPE == "shunned":
+                if "shunned" not in tags:
+                    continue
+            
+            elif LG_TYPE == "forgiven":
+                if "forgiven" not in tags:
+                    continue
+            
+            else:
+                if "forgiven" in tags or "shunned" in tags:
+                    continue
+            
+            new_ceremonies.append(ceremony)
+
+        if promoted_to in [
+            "apprentice",
+            "medicine cat apprentice",
+            "mediator apprentice",
+            "queen's apprentice"
+        ]:
+            try:
+                ceremony_tags, ceremony_text = self.CEREMONY_TXT[
+                    random.choice(list(new_ceremonies))
+                ]
+                # print("working ceremony for", cat.name, LG_TYPE)
+                # print(new_ceremonies)
+            except IndexError:
+                print("WARNING: A ceremony could not be chosen for", cat.name, LG_TYPE)
+                print(new_ceremonies)
+                return
+        else:
+        # -------------------
+            ceremony_tags, ceremony_text = self.CEREMONY_TXT[
+                random.choice(list(possible_ceremonies))
+            ]
 
         # This is a bit strange, but it works. If there is
         # only one parent involved, but more than one living
@@ -3882,6 +3914,7 @@ class Events:
             self.b_txt = ujson.loads(read_file.read())
         if cat.shunned > 2:
             involved_cats = []
+            involved_cats.append(cat.ID)
 
             if game.clan.your_cat.ID == cat.ID:
                 fate = random.randint(1, int((game.config["shunned_cat"]["exile_chance"][cat.age]) * 1.75))
@@ -3935,13 +3968,11 @@ class Events:
                         "mediator",
                         "queen",
                         ]:
-                        print("exile_or_forgive ceremony for", cat.name, ",", cat.status)
-                        self.ceremony(cat, cat.status)
+                        self.ceremony(cat, cat.status, LG_TYPE="forgiven")
 
                     elif cat.status in ["kitten", "newborn"] and cat.moons >= 6:
-                        self.ceremony(cat, "apprentice")
-                        print("exile_or_forgive ceremony for", cat.name, ",", cat.status)
-                        
+                        self.ceremony(cat, "apprentice", LG_TYPE="forgiven")
+
                     else:
                         if cat.moons == 0:
                             cat.status = 'newborn'
@@ -3966,7 +3997,6 @@ class Events:
                         if game.clan.leader:
                             game.clan.leader.status_change('deputy')
                         cat.status_change('leader')
-                        # cat.name.status = cat.status
                     else:
                         if cat.ID == game.clan.your_cat.ID:
                             text = text + " You will not return as the Clan's leader."
@@ -3976,7 +4006,6 @@ class Events:
                             cat.status_change('warrior')
                         else:
                             cat.status_change('elder')
-
 
                 game.cur_events_list.insert(0, Single_Event(text, "alert", involved_cats))
 

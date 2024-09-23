@@ -1990,39 +1990,36 @@ class PickPath(UIWindow):
                 if event.ui_element == self.begin_anew_button:
                     game.switches['window_open'] = False
                     if game.clan.your_cat.moons < 12:
-                        game.clan.your_cat.status = 'medicine cat apprentice'
+                        status = 'medicine cat apprentice'
                     else:
-                        game.clan.your_cat.status = 'medicine cat'
-                    self.kill()
+                        status = 'medicine cat'
                 elif event.ui_element == self.not_yet_button:
                     game.switches['window_open'] = False
                     if game.clan.your_cat.moons < 12:
-                        game.clan.your_cat.status = 'apprentice'
+                        status = 'apprentice'
                     else:
-                        game.clan.your_cat.status = 'warrior'
-                    self.kill()
+                        status = 'warrior'
                 elif event.ui_element == self.mediator_button:
                     game.switches['window_open'] = False
                     if game.clan.your_cat.moons < 12:
-                        game.clan.your_cat.status = 'mediator apprentice'
+                        status = 'mediator apprentice'
                     else:
-                        game.clan.your_cat.status = 'mediator'
-                    self.kill()
+                        status = 'mediator'
                 elif event.ui_element == self.queen_button:
                     game.switches['window_open'] = False
                     if game.clan.your_cat.moons < 12:
-                        game.clan.your_cat.status = "queen's apprentice"
+                        status = "queen's apprentice"
                     else:
-                        game.clan.your_cat.status = "queen"
-                    self.kill()
+                        status = "queen"
                 elif event.ui_element == self.random_button:
                     game.switches['window_open'] = False
                     if game.clan.your_cat.moons < 12:
-                        game.clan.your_cat.status = random.choice(['mediator apprentice','apprentice','medicine cat apprentice', "queen's apprentice"])
+                        status = random.choice(['mediator apprentice','apprentice','medicine cat apprentice', "queen's apprentice"])
                     else:
-                        game.clan.your_cat.status = random.choice(['mediator','warrior','medicine cat', "queen"])
-                    
-                    self.kill()
+                        status = random.choice(['mediator','warrior','medicine cat', "queen"])
+                
+                game.clan.your_cat.status_change(status)
+                self.kill()
         except:
             print('Error with PickPath window!')
                 
