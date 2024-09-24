@@ -3144,7 +3144,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 addon_check = abbrev_addons(cat, alive_cat, cluster, x, rel, r)
                 
                 skip = False
-                in_dict_2 = in_dict_check_2(c, cat_dict)
+                in_dict_2 = in_dict_check_2(alive_cat, cat_dict)
                 if in_dict_2 is True:
                     skip = True
 
