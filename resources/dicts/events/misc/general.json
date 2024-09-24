@@ -239,7 +239,7 @@
     "season": ["any"],
     "sub_type": ["murder_reveal"],
     "weight": 15,
-    "event_text": "r_c overheard m_c muttering in {PRONOUN/m_c/poss} sleep, claws slashing at the air. {PRONOUN/m_c/poss/CAP} muttering confirms what r_c always suspected -  m_c was the one responsible for mur_c's death.",
+    "event_text": "r_c overheard m_c muttering in {PRONOUN/m_c/poss} sleep, claws slashing at the air. {PRONOUN/m_c/poss/CAP} muttering confirms what r_c always suspected - m_c was the one responsible for mur_c's death.",
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -335,7 +335,7 @@
     "season": ["any"],
     "sub_type": ["murder_reveal","LIFEGEN_no_shun"],
     "weight": 5,
-    "event_text": "r_c snuck out of camp one night to find m_c sitting alone, muttering to {PRONOUN/m_c/self}. {PRONOUN/v_c/subject/CAP} hadn't noticed r_c yet, so {PRONOUN/r_c/subject} sat to listen. m_c was muttering about.. Murder? After listening further, r_c finds out that m_c murdered mur_c.",
+    "event_text": "r_c snuck out of camp one night to find m_c sitting alone, muttering to {PRONOUN/m_c/self}. {PRONOUN/m_c/subject/CAP} hadn't noticed r_c yet, so {PRONOUN/r_c/subject} sat to listen. m_c was muttering about.. Murder? After listening further, r_c finds out that m_c murdered mur_c.",
     "m_c": {
         "age": ["any"],
         "status": ["any"]
@@ -369,7 +369,7 @@
     "sub_type": ["murder_reveal"],
     "tags": ["clan_discovery"],
     "weight": 5,
-    "event_text": "Fed up with the Clan mourning, m_c yowls that {PRONOUN/m_c/subject} should've been exiled a long time ago, and that all m_c did was what l_n refused to do. {PRONOUN/m_c/subject/CAP} start to add that {PRONOUN/m_c/subject} would do it again, but r_c manages to shut {PRONOUN/m_c/object} up before {PRONOUN/m_c/subject} make it even worse...",
+    "event_text": "Fed up with the Clan mourning, m_c yowls that {PRONOUN/m_c/subject} should've been exiled a long time ago, and m_c only did what other cats refused. {PRONOUN/m_c/subject/CAP} start to add that {PRONOUN/m_c/subject} would do it again, but r_c manages to shut {PRONOUN/m_c/object} up before {PRONOUN/m_c/subject} make it even worse...",
     "m_c": {
         "age": ["any"],
         "status": ["any"],
@@ -439,7 +439,7 @@
     "sub_type": ["murder_reveal"],
     "tags": ["clan_discovery"],
     "weight": 5,
-    "event_text": "While walking along the border, r_c notices a trail of blood staining the snow. Assuming it's a hurt wild animal, r_c crouches low and follows the trail, only to shockingly find the culprit of mur_c's murder -- m_c. r_c quickly darts to l_n to report {PRONOUN/r_c/poss} findings before the evidence could be tainted.",
+    "event_text": "While walking along the border, r_c notices a trail of blood staining the snow. Assuming it's a hurt wild animal, r_c crouches low and follows the trail, only to shockingly find the culprit of mur_c's murder -- m_c. r_c quickly darts to the leader to report {PRONOUN/r_c/poss} findings before the evidence could be tainted.",
     "m_c": {
         "age": ["any"],
         "status": ["any"]
