@@ -118,18 +118,9 @@ class EventsScreen(Screens):
         elif event.type == pygame_gui.UI_BUTTON_PRESSED:  # everything else on button press to prevent blinking
             element = event.ui_element
             if element == self.timeskip_button:
-                if game.clan.your_cat.dead_for >= 1 and not game.switches['continue_after_death']:
-                    DeathScreen('events screen')
-                elif (game.clan.your_cat.moons == 5
-                     and game.clan.your_cat.status == 'kitten'
-                     and not game.clan.your_cat.outside
-                     and not game.clan.your_cat.dead
-                     ):
-                    PickPath('events screen')
-                else:
-                    self.events_thread = self.loading_screen_start_work(
-                        events_class.one_moon
-                    )
+                self.events_thread = self.loading_screen_start_work(
+                    events_class.one_moon
+                )
             elif self.death_button and event.ui_element == self.death_button:
                 DeathScreen('events screen')
                 return
@@ -663,30 +654,6 @@ class EventsScreen(Screens):
         Categorize events from game.cur_events_list into display categories for screen
         """
 
-        self.all_events = [
-            x for x in game.cur_events_list if "interaction" not in x.types
-        ]
-        self.ceremony_events = [
-            x for x in game.cur_events_list if "ceremony" in x.types
-        ]
-        self.birth_death_events = [
-            x for x in game.cur_events_list if "birth_death" in x.types
-        ]
-
-        self.relation_events = [
-            x for x in game.cur_events_list if "relation" in x.types
-        ]
-
-        self.health_events = [
-            x for x in game.cur_events_list if "health" in x.types
-        ]
-        self.other_clans_events = [
-            x for x in game.cur_events_list if "other_clans" in x.types
-        ]
-        self.misc_events = [
-            x for x in game.cur_events_list if "misc" in x.types
-        ]
-
         # LIFEGEN: changing all events based on fave filters
         if self.selected_fave_filter:
             fnumlist = []
@@ -708,7 +675,7 @@ class EventsScreen(Screens):
                         fav_cats.append(kitty)
 
             for kitty in fav_cats:
-                for ev in game.cur_events_list:
+                for ev in self.all_events:
                     if kitty.ID in ev.cats_involved:
                         fav_events.append(ev)
 
@@ -718,10 +685,31 @@ class EventsScreen(Screens):
         else:
         # ----------------------------------------------------------------
             self.all_events = [
-                x for x in game.cur_events_list
+                x for x in game.cur_events_list if "interaction" not in x.types
             ]
 
         self.event_display_type = self.current_display
+
+        self.ceremony_events = [
+            x for x in game.cur_events_list if "ceremony" in x.types
+        ]
+        self.birth_death_events = [
+            x for x in game.cur_events_list if "birth_death" in x.types
+        ]
+
+        self.relation_events = [
+            x for x in game.cur_events_list if "relation" in x.types
+        ]
+
+        self.health_events = [
+            x for x in game.cur_events_list if "health" in x.types
+        ]
+        self.other_clans_events = [
+            x for x in game.cur_events_list if "other_clans" in x.types
+        ]
+        self.misc_events = [
+            x for x in game.cur_events_list if "misc" in x.types
+        ]
 
         if self.event_display_type == "all":
             self.display_events = self.all_events
@@ -885,11 +873,18 @@ class EventsScreen(Screens):
 
         game.switches["saved_scroll_positions"] = {}
 
-        # lifegen
-        # self.selected_fave_filter = []
-
         if get_living_clan_cat_count(Cat) == 0:
             GameOver("events screen")
+        
+        # lifegen
+        if game.clan.your_cat.dead_for >= 2 and not game.switches['continue_after_death']:
+            DeathScreen('events screen')
+        elif (game.clan.your_cat.moons == 6
+                and not game.clan.your_cat.outside
+                and not game.clan.your_cat.dead
+                ):
+            PickPath('events screen')
+        # ---
 
         self.update_display_events_lists()
 

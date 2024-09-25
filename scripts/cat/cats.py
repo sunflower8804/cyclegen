@@ -1010,7 +1010,7 @@ class Cat:
                 text = event_text_adjust(Cat, text=text, main_cat=self, random_cat=cat)
 
                 cat.get_ill(
-                    "grief stricken", event_triggered=True, severity="major"
+                    "grief stricken", event_triggered=True, severity="major", grief_cat=self
                 )
 
             # If major grief fails, but there are still very_high or high values,
