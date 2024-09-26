@@ -1810,7 +1810,7 @@
         "relationship_constraint": ["mates"],
         "success_outcomes": [
             {
-                "text": "r_c accepts and before you know it, {PRONOUN/r_c/subject}{VERB/r_c/'re/is} playfully chasing you through the wildflower fields. Just as the sun sets against the horizon, r_c tackles you into the clearing and rolls, wildflower petals floating through the air in a beautiful arrangement of color. You and r_c share a moment of laughter, enjoying yourself before you have to travel back to c_nClan.",
+                "text": "r_c accepts and before you know it, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} playfully chasing you through the wildflower fields. Just as the sun sets against the horizon, r_c tackles you into the clearing and rolls, wildflower petals floating through the air in a beautiful arrangement of color. You and r_c share a moment of laughter, enjoying yourself before you have to travel back to c_n.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1824,7 +1824,7 @@
                 ]
             },
             {
-                "text": "r_c agrees and hops through the flower field with joyful glee, breaking the seeds from the flowers so they float to the sky. While {PRONOUN/r_c/subject}{VERB/r_c/'re/is} distracted, you pluck a few flowers from the stems and start to weave the stems together until it forms a circle. Proud of your work, you show it off to r_c as a gift. {PRONOUN/r_c/subject/CAP} accept it with a bunt of heads!",
+                "text": "r_c agrees and hops through the flower field with joyful glee, breaking the seeds from the flowers so they float to the sky. While {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} distracted, you pluck a few flowers from the stems and start to weave the stems together until it forms a circle. Proud of your work, you show it off to r_c as a gift. {PRONOUN/r_c/subject/CAP} {VERB/r_c/accept/accepts} it with a bunt of heads!",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
