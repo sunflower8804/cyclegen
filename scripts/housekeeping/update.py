@@ -131,7 +131,7 @@ def self_update(
         update_channel: UpdateChannel = UpdateChannel.DEVELOPMENT_TEST,
         progress_bar: UIUpdateProgressBar = None,
         announce_restart_callback: callable = None):
-    print("Updating Lifegen...")
+    print("Updating Pridegen...")
 
     platform_name = determine_platform_name()
 
@@ -199,7 +199,7 @@ def self_update(
         with zipfile.ZipFile("download.tmp") as zip_ref:
             zip_ref.extractall("Downloads")
         os.remove("download.tmp")
-        shutil.copy("./Downloads/Lifegen/_internal/resources/self_updater.exe", "./Downloads/self_updater.exe")
+        shutil.copy("./Downloads/Pridegen/_internal/resources/self_updater.exe", "./Downloads/self_updater.exe")
         announce_restart_callback()
         time.sleep(3)
         subprocess.Popen(
@@ -223,17 +223,17 @@ def self_update(
         with tempfile.TemporaryDirectory() as mountdir:
             progress_bar.advance()
 
-            os.system(f'hdiutil attach -nobrowse -mountpoint {mountdir} Downloads/Lifegen_macOS64.dmg')
+            os.system(f'hdiutil attach -nobrowse -mountpoint {mountdir} Downloads/Pridegen_macOS64.dmg')
             progress_bar.advance()
 
-            shutil.rmtree('/Applications/Lifegen.app.old', ignore_errors=True)
+            shutil.rmtree('/Applications/Pridegen.app.old', ignore_errors=True)
             progress_bar.advance()
 
-            if os.path.exists("/Applications/Lifegen.app"):
-                shutil.move('/Applications/Lifegen.app', '/Applications/Lifegen.app.old')
+            if os.path.exists("/Applications/Pridegen.app"):
+                shutil.move('/Applications/Pridegen.app', '/Applications/Pridegen.app.old')
             progress_bar.advance()
 
-            shutil.copytree(f'{mountdir}/Lifegen.app', '/Applications/Lifegen.app')
+            shutil.copytree(f'{mountdir}/Pridegen.app', '/Applications/Pridegen.app')
             progress_bar.advance()
 
             shutil.rmtree("Downloads", ignore_errors=True)
@@ -246,7 +246,7 @@ def self_update(
             progress_bar.advance()
         announce_restart_callback()
         time.sleep(3)
-        os.execv('/Applications/Lifegen.app/Contents/MacOS/Lifegen', sys.argv)
+        os.execv('/Applications/Pridegen.app/Contents/MacOS/Pridegen', sys.argv)
         quit()
 
     elif platform.system() == "Linux":
@@ -254,9 +254,9 @@ def self_update(
         with tarfile.open("download.tmp", "r") as tar_ref:
             tar_ref.extractall("Downloads")
         os.remove("download.tmp")
-        shutil.move("Downloads/Lifegen", "../lifegen_update")
+        shutil.move("Downloads/Pridegen", "../pridegen_update")
         shutil.rmtree(current_folder, ignore_errors=True)
-        shutil.move("../lifegen_update", current_folder)
-        os.chmod(current_folder + "/Lifegen", 0o755)
-        os.execv(current_folder + "/Lifegen", sys.argv)
+        shutil.move("../pridegen_update", current_folder)
+        os.chmod(current_folder + "/Pridegen", 0o755)
+        os.execv(current_folder + "/Pridegen", sys.argv)
         quit()
