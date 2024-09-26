@@ -456,7 +456,7 @@
     "season": ["any"],
     "sub_type": ["murder_reveal","LIFEGEN_no_shun"],
     "weight": 5,
-    "event_text": "r_c follows after a blue butterfly, batting at it playfully as {PRONOUN/r_c/subject} {VERB/r_c/run/runs} into the thick forest. Accidentally, t_c stumbles across m_c talking to what seems to be nothing, stating {PRONOUN/m_c/subject} murdered mur_c. r_c sneaks away before m_c could realize {PRONOUN/r_c/subject} {VERB/r_c/were/was} there, wondering if the blue butterfly really is an omen...",
+    "event_text": "r_c follows after a blue butterfly, batting at it playfully as {PRONOUN/r_c/subject} {VERB/r_c/run/runs} into the thick forest. Accidentally, r_c stumbles across m_c talking to what seems to be nothing, stating {PRONOUN/m_c/subject} murdered mur_c. r_c sneaks away before m_c could realize {PRONOUN/r_c/subject} {VERB/r_c/were/was} there, wondering if the blue butterfly really is an omen...",
     "m_c": {
         "age": ["any"],
         "status": ["any"],
