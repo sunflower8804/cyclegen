@@ -318,7 +318,7 @@
             "It's also an honor to even be a warrior, let alone deputy or leader... Oh, my mentor's calling me! Bye, have a good day!"
         ]
     ],
-    "app3123": [
+    "app3123_Rr": [
         [
             "apprentice",
             "you_bloodthirsty",
@@ -329,8 +329,8 @@
         ],
         [
             "Uh, hey, y_c. When we were out training the other day, you were really intense. I could barely keep up with you.",
-            "It was... aha... kind of scary. I'm definitely glad we're Clanmates, or else I might have to fight you for real one day. You're supposed to protect your Clan with your life! That's what we've always been told.",
-            "So that means you won't... ever really hurt me, right?"
+            "It was... aha... kind of scary. I'm definitely glad we're Clanmates, or else I might have to fight you for real one day!",
+            "I know you'd never hurt one of your Clanmates, but sheesh, o_cClan better watch out!"
         ]
     ],
     "assertive_medapp1": [
@@ -2705,7 +2705,7 @@
             "Ok! I'll see you soon, just call me when you're ready."
         ]
     ],
-    "bloodthirsty_pos": [
+    "bloodthirsty_pos_Rr": [
         [
             "Any",
             "platonic_love",
@@ -2716,42 +2716,42 @@
         ],
         [
             "Hey, y_c. You want to see this scar I got? It's new.",
-            "It happened during a training session. I was practicing my battle moves, and I guess I got carried away ...",
-            "Everyone tells me I take things too far. In reality, I don't think I take things far enough.",
-            "I'm going to be the strongest warrior this Clan has ever seen. Stronger than the strongest. I just have to figure out what I'm really capable of ..."
+            "It happened during a training session. I was practicing my battle moves, and I guess I got carried away...",
+            "Sometimes everyone assumes I'm vicious and I might hurt them, but I would never! Ever!",
+            "It's just that I'm going to be the strongest warrior this Clan has ever seen. Stronger than the strongest. I just have to figure out what I'm really capable of ..."
         ]
     ],
-    "bloodthirsty_pos1": [
+    "assertive_pos1_Rr": [
         [
             "apprentice",
             "warrior",
             "platonic_like",
             "brooding",
-            "competitive",
+            "assertive",
             "you_blind",
             "they_blind"
         ],
         [
             "Hey, y_c. Wanna spar?",
             "What's that? You're exhausted from yesterday's training?",
-            "... Hmph. Fine. Have it your way."
+            "Hmph. Better get some rest then."
         ]
     ],
-    "bloodthirsty_rom": [
+    "bloodthirsty_rom_Rr": [
         [
             "apprentice",
             "warrior",
             "romantic_like",
-            "brooding"
+            "bloodthirsty"
         ],
         [
             "Hey. I saw you practicing your fighting techniques earlier.",
             "They looked pretty good, but they could be better.",
-            "Your form is sloppy, unpracticed. It needs work. If you wanted, maybe I could ... show you sometime?",
+            "Your form is sloppy, unpracticed. It needs work. If you wanted, I could definitely show you how to fix it sometime.If you want.",
             "[If you didn't know any better, you'd think that t_c was blushing.]"
         ]
     ],
-    "bloodthirsty_love": [
+    "bloodthirsty_love_Rr": [
         [
             "Any",
             "platonic_like",
@@ -2761,10 +2761,11 @@
         ],
         [
             "Hey. I know this is your favorite prey, so I caught it for you. I hope you like it.",
-            "Don't mind the gore. I might've gotten a little carried away when bringing it down, but at least the good bits are mostly intact."
+            "[You notice that it's a remarkably clean kill, which t_c isn't known for.]",
+            "I wanted it to be perfect for you."
         ]
     ],
-    "bloodthirsty_kit": [
+    "bloodthirsty_kit_Rr": [
         [
             "Any",
             "from_your_kit",
@@ -2780,7 +2781,7 @@
             "Don't tell me you're afraid of your own kit!"
         ]
     ],
-    "bloodthirsty_kit1": [
+    "bloodthirsty_kit1_Rr": [
         [
             "Any",
             "from_your_kit",
