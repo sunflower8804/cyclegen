@@ -1684,7 +1684,7 @@
             "If you aren't able to teach your apprentice how to respect Clan boundaries, then I may need to have a word with l_n about this. Try not to let this happen again."
         ]
     ],
-    "bloodthirsty_pos": [
+    "bloodthirsty_pos_Rr": [
         [
             "Any",
             "platonic_love",
@@ -1697,11 +1697,11 @@
         [
             "Hey, y_c. You want to see this scar I got? It's new.",
             "It happened during a training session. I was practicing my battle moves, and I guess I got carried away ...",
-            "Everyone tells me I take things too far. In reality, I don't think I take things far enough.",
-            "I'm going to be the strongest warrior this Clan has ever seen. Stronger than the strongest. I just have to figure out what I'm really capable of ..."
+            "Sometimes everyone assumes I'm vicious and I might hurt them, but I would never! Ever!",
+            "It's just that I'm going to be the strongest warrior this Clan has ever seen. Stronger than the strongest. I just have to figure out what I'm really capable of ..."
         ]
     ],
-    "bloodthirsty_pos1": [
+    "bloodthirsty_pos1_Rr": [
         [
             "apprentice",
             "warrior",
@@ -1714,25 +1714,26 @@
         [
             "Hey, y_c. Wanna spar?",
             "What's that? You're exhausted from yesterday's training?",
-            "... Hmph. Fine. Have it your way."
+            "Hmph. Better get some rest then."
         ]
     ],
-    "bloodthirsty_rom": [
+    "bloodthirsty_rom_Rr": [
         [
             "apprentice",
             "warrior",
             "romantic_like",
             "brooding",
+            "assertive",
             "you_blind"
         ],
         [
             "Hey. I saw you practicing your fighting techniques earlier.",
             "They looked pretty good, but they could be better.",
-            "Your form is sloppy, unpracticed. It needs work. If you wanted, maybe I could ... show you sometime?",
+            "Your form is sloppy, unpracticed. It needs work. If you wanted, I could definitely show you how to fix it sometime.If you want.",
             "[If you didn't know any better, you'd think that t_c was blushing.]"
         ]
     ],
-    "bloodthirsty_love": [
+    "bloodthirsty_love_Rr": [
         [
             "Any",
             "platonic_like",
@@ -1742,10 +1743,11 @@
         ],
         [
             "Hey. I know this is your favorite prey, so I caught it for you. I hope you like it.",
-            "Don't mind the gore. I might've gotten a little carried away when bringing it down, but at least the good bits are mostly intact."
+            "[You notice that it's a remarkably clean kill, which t_c isn't known for.]",
+            "I wanted it to be perfect for you."
         ]
     ],
-    "bloodthirsty_kit": [
+    "bloodthirsty_kit_Rr": [
         [
             "Any",
             "from_your_kit",
@@ -1761,7 +1763,7 @@
             "Don't tell me you're afraid of your own kit!"
         ]
     ],
-    "bloodthirsty_kit1": [
+    "bloodthirsty_kit1_Rr": [
         [
             "Any",
             "from_your_kit",
@@ -3918,7 +3920,7 @@
 "There we go, safe and sound. I'm sorry, but can you handle it from here, I need to get back-",
 "['No you don't.' d_n purrs from behind, you and t_c yelp in shock, the deputy chuckles. 'Don't worry about patrols today, t_c, stay here and help y_c, it's more important.']",
 "Is- is this a punishment? I'm sorry, I know it was rude-",
-"['No! Not at all, it's good for our warriors to help other cats, in fact, I think it should be encouraged more. You two have fun- and don't worry y_c, t_c's a very hard worker. They'll be good to you.' d_n says, they then turn to exit leaving the two of you alone.]",
+"['No! Not at all, it's good for our warriors to help other cats, in fact, I think it should be encouraged more. You two have fun- and don't worry y_c, t_c's a very hard worker. {PRONOUN/t_c/subject}'ll be good to you.' d_n says, turning to leave the two of you alone.]",
 "Right, well, show me y_c, where do we start?"
  ]
 ],

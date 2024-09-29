@@ -2709,7 +2709,7 @@
         ],
         [
             "Huh, y_c? You were looking for me?",
-            "Yes, I got into an argument with r_c_assertive this morning. I'm not sure what the issue is. {PRONOUN/r_c/subject/CAP} always {VERB/r_c_assertive/keep/keeps} telling me that I need to speak up more, and then {VERB/r_c_assertive/get/gets} angry at me when I do.",
+            "Yes, I got into an argument with r_c_assertive this morning. I'm not sure what the issue is. {PRONOUN/r_c_assertive/subject/CAP} always {VERB/r_c_assertive/keep/keeps} telling me that I need to speak up more, and then {VERB/r_c_assertive/get/gets} angry at me when I do.",
             "I swear. This is the reason why you're one of the only cats I talk to. You make sense, you're reasonable.",
             "I'm going to bed, y_c. I'll speak to you in the morning."
         ]
@@ -8794,7 +8794,7 @@
             "[You swat at t_c's tail and the two of you give chase around camp, breathless with laughter.]"
         ]
     ],
-    "bloodthirsty_gen": [
+    "unlawful_gen_Rr": [
         [
             "Any",
             "unlawful"
@@ -8805,10 +8805,10 @@
             "... Trust me, you don't wanna know."
         ]
     ],
-    "bloodthirsty_gen1": [
+    "strange_gen1_Rr": [
         [
             "Any",
-            "bloodthirsty"
+            "strange"
         ],
         [
             "I wonder if our insides are similar to the insides of prey. We're all living creatures, after all.",
@@ -8816,17 +8816,18 @@
             "... Pretend I didn't say that."
         ]
     ],
-    "bloodthirsty_gen2": [
+    "bloodthirsty_gen2_Rr": [
         [
             "Any",
-            "bloodthirsty"
+            "bloodthirsty",
+            "fierce"
         ],
         [
-            "Hm? You want to know why I dismember my prey before eating it?",
-            "Yeah, and I wanna know why you don't mind your own business."
+            "Hm? You want to know why sometimes I dismember my prey before eating it?",
+            "Yeah, and I wanna know why sometimes you don't mind your own business ."
         ]
     ],
-    "bloodthirsty_pos1": [
+    "bloodthirsty_pos1_Rr": [
         [
             "no_kit",
             "bloodthirsty",
@@ -8838,10 +8839,11 @@
             "Cats die all the time, in accidents, on thunderpaths. Sometimes cats just vanish and are never heard from again.",
             "What if something happened to them? What if someone in our own Clan did something terrible, and no one even knows?",
             "A killer could be among our ranks right now ...",
-            "... Kind of scary, isn't it?"
+            "... Kind of scary, isn't it?",
+            "It's alright though. Even if that happened, I'd protect you."
         ]
     ],
-    "bloodthirsty_pos2": [
+    "bloodthirsty_pos2_Rr": [
         [
             "Any",
             "bloodthirsty",
@@ -8849,13 +8851,14 @@
             "they_blind"
         ],
         [
-            "y_c, sometimes I feel like you're the only one in c_nClan who isn't afraid of me.",
-            "Everyone else, they're all cowards. They don't see what I see. You at least take the time to chat with me. I'll remember that.",
-            "... Remember it for what?",
-            "Uh, it's just an expression."
+            "y_c, sometimes I feel like you're the only one in c_nClan who really gets me.",
+            "It's always assumed I'm violent just for the sake of violence. That I'm cruel or - heck even evil!.",
+            "But you actually know me.",
+            "I like action and violence for the thrill of it! The rush I get from it! Everyone's like that in some way or another!",
+            "Just because mine involves a little bloodshed doesn't mean anything!"
         ]
     ],
-    "bloodthirsty_neg": [
+    "brooding_neg_Rr": [
         [
             "Any",
             "brooding",
@@ -8866,7 +8869,18 @@
             "[t_c hits you with a glare so harsh, it almost stings.]"
         ]
     ],
-    "bloodthirsty_neg1": [
+    "bloodthirsty_neg_Rr": [
+        [
+            "Any",
+            "brooding",
+            "dislike",
+            "they_deaf"
+        ],
+        [
+            "[t_c doesn't tend to direct {PRONOUN/t_c/poss} menacing towards Clanmates. It almost stings to recieve that expression.]"
+        ]
+    ],
+    "mixed_neg1_Rr": [
         [
             "Any",
             "brooding",
@@ -8879,7 +8893,20 @@
             "[You want to laugh, but the flash in t_c's eyes tells you {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not joking.]"
         ]
     ],
-    "bloodthirsty_neg2": [
+    "bloodthirsty_neg1_Rr": [
+        [
+            "Any",
+            "brooding",
+            "assertive",
+            "unlawful",
+            "hate"
+        ],
+        [
+            "Come closer and find out how fast I'll send you to the medicine den.",
+            "[You want to laugh, but the flash in t_c's eyes tells you {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not joking.]"
+        ]
+    ],
+    "bloodthirsty_neg2_Rr": [
         [
             "Any",
             "bloodthirsty",
@@ -8893,7 +8920,7 @@
             "[t_c smiles at you for a little too long.]"
         ]
     ],
-    "bloodthirsty_love": [
+    "bloodthirsty_love_Rr": [
         [
             "Any",
             "brooding",
@@ -8906,7 +8933,7 @@
             "[t_c trails off, lashing {PRONOUN/t_c/poss} tail in anger.]"
         ]
     ],
-    "bloodthirsty_love1": [
+    "bloodthirsty_love1_Rr": [
         [
             "Any",
             "brooding",
@@ -8922,7 +8949,7 @@
             "I ... I'll keep you safe."
         ]
     ],
-    "bloodthirsty_love2": [
+    "bloodthirsty_love2_Rr": [
         [
             "Any",
             "bloodthirsty",
@@ -8936,7 +8963,7 @@
             "Otherwise, it might leave you with a guilty conscience."
         ]
     ],
-    "bloodthirsty_love3": [
+    "bloodthirsty_love3_Rr": [
         [
             "Any",
             "bloodthirsty",
@@ -8947,11 +8974,10 @@
         [
             "y_c, when I'm with you, the world seems a little bit less cold and cruel.",
             "When I hear your laugh, it feels like my chest can finally loosen.",
-            "Y'know what, maybe it'd be best if you just never left my side.",
-            "Ever."
+            "Y'know what, maybe it'd be best if you just never left my side again."
         ]
     ],
-    "bloodthirsty_mate": [
+    "bloodthirsty_mate_Rr": [
         [
             "Any",
             "bloodthirsty",
@@ -8960,13 +8986,13 @@
         ],
         [
             "Sometimes, I wonder if something is wrong with me.",
-            "All of these thoughts I have, these urges, they can't be normal.",
-            "y_c, if something terrible happens ... if I do something terrible ... what would happen? Would you stay by my side? ",
-            "Maybe I don't know what I'm talking about.",
-            "Thanks for listening to me, y_c."
+            "No one else gets the same rush from bloodshed as I do. From mastering a battle move, from protecting the Clan, from attacking outsiders...",
+            "y_c, if something terrible happens... if I make a horrible mistake... what would happen? Would you stay by my side? ",
+            "... That would probably never happen with you at my side.",
+            "You're the greatest thrill of them all."
         ]
     ],
-    "bloodthirsty_kit": [
+    "unlawful_kit_Rr": [
         [
             "Any",
             "unlawful",
