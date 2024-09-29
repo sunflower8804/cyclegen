@@ -376,7 +376,7 @@ class Sprites:
             "ORANGEBUTTERFLY", "BLUEBUTTERFLY", "BROWNPELT", "GRAYPELT", "BROWNMOSSPELT", "GRAYMOSSPELT"]):
             self.make_group('superartsi', (a, 0), f'acc_wild{i}')
         for a, i in enumerate([
-            "FERN", "MOREFERN", "BLEEDINGHEART", "LILY"]):
+            "FERN", "MOREFERN", "BLEEDINGVINES", "BLEEDINGHEART", "LILY"]):
             self.make_group('superartsi', (a, 1), f'acc_wild{i}')
 
         # coffee's accessories
