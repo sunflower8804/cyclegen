@@ -2370,7 +2370,6 @@ class Events:
                     self.exile_or_forgive(cat)
                 else:
                 # Max number of moons a cat can be shunned before the clan makes up their damn mind
-                # Currently ten, but it was also roll if its set to more than that in a cat's save
                     if cat.shunned >= game.config["shunned_cat"]["max_shunned_moons"]:
                         self.exile_or_forgive(cat)
         
@@ -3974,28 +3973,12 @@ class Events:
                         "apprentice",
                         "medicine cat apprentice",
                         "mediator apprentice",
-                        "queen's apprentice",
-                        "warrior",
-                        "medicine cat",
-                        "mediator",
-                        "queen",
+                        "queen's apprentice"
                         ]:
                         self.ceremony(cat, cat.status, LG_TYPE="forgiven")
 
                     elif cat.status in ["kitten", "newborn"] and cat.moons >= 6:
                         self.ceremony(cat, "apprentice", LG_TYPE="forgiven")
-
-                    else:
-                        if cat.moons == 0:
-                            cat.status = 'newborn'
-                        elif cat.moons < 6:
-                            cat.status = "kitten"
-                        elif cat.moons < 12:
-                            cat.status_change('apprentice')
-                        elif cat.moons < 120:
-                            cat.status_change('warrior')
-                        else:
-                            cat.status_change('elder')
                 
                 elif cat.status == 'leader':
                     if random.randint(1,4) == 1:
