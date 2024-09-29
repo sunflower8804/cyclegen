@@ -24,7 +24,6 @@ from scripts.events_module.outsider_events import OutsiderEvents
 from scripts.event_class import Single_Event
 from scripts.game_structure.game_essentials import game
 from scripts.cat_relations.relationship import Relationship
-from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, ceremony_text_adjust, get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat, pronoun_repl, get_alive_status_cats, get_alive_cats, get_cats_same_age, adjust_txt
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.history import History
 from scripts.cat.names import Name
@@ -62,7 +61,11 @@ from scripts.utility import (
     event_text_adjust,
     get_other_clan,
     history_text_adjust,
-    unpack_rel_block
+    unpack_rel_block,
+    pronoun_repl,
+    create_new_cat,
+    adjust_txt,
+    get_cluster
 )
 
 
@@ -3145,12 +3148,20 @@ class Events:
             text = self.CEREMONY_TXT[ceremony][1]
 
             if LG_TYPE == "shunned":
+                # a ceremony for a cat WHILE theyre shunned
                 if "shunned" not in tags:
                     continue
             
             elif LG_TYPE == "forgiven":
+                # a ceremony for a cat returning to work after being forgiven
                 if "forgiven" not in tags:
                     continue
+                if (cat.moons - cat.shunned) > 5:
+                    if "shunned_as_apprentice" not in tags:
+                        continue
+                else:
+                    if "shunned_as_kit" not in tags:
+                        continue
             
             else:
                 if "forgiven" in tags or "shunned" in tags:
@@ -3173,6 +3184,7 @@ class Events:
             except IndexError:
                 print("WARNING: A ceremony could not be chosen for", cat.name, LG_TYPE)
                 print(new_ceremonies)
+                print(cat.moons - cat.shunned)
                 return
         else:
         # -------------------
