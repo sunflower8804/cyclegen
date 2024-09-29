@@ -678,6 +678,10 @@ class EventsScreen(Screens):
         Categorize events from game.cur_events_list into display categories for screen
         """
 
+        self.all_events = [
+            x for x in game.cur_events_list if "interaction" not in x.types
+        ]
+
         # LIFEGEN: changing all events based on fave filters
         if self.selected_fave_filter:
             fnumlist = []
@@ -706,11 +710,7 @@ class EventsScreen(Screens):
             self.all_events = [
                 x for x in fav_events
             ]
-        else:
         # ----------------------------------------------------------------
-            self.all_events = [
-                x for x in game.cur_events_list if "interaction" not in x.types
-            ]
 
         self.event_display_type = self.current_display
 
