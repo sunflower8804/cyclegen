@@ -136,45 +136,69 @@ class EventsScreen(Screens):
                 
                 self.place_fave_filters()
 
-            elif element == self.fave_filter_elements["yourcat_filter"]:
+            elif (
+                "yourcat_filter" in self.fave_filter_elements and
+                element == self.fave_filter_elements["yourcat_filter"]
+                ):
                 self.fave_filter_elements["yourcat_filter"].hide()
                 self.fave_filter_elements["yourcat_filter_selected"].show()
                 self.selected_fave_filter.append("yourcat_filter")
                 self.place_fave_filters()
-            elif element == self.fave_filter_elements["yourcat_filter_selected"]:
+            elif (
+                "yourcat_filter_selected" in self.fave_filter_elements and
+                element == self.fave_filter_elements["yourcat_filter_selected"]
+                ):
                 self.fave_filter_elements["yourcat_filter"].show()
                 self.fave_filter_elements["yourcat_filter_selected"].hide()
                 self.selected_fave_filter.remove("yourcat_filter")
                 self.place_fave_filters()
 
-            elif element == self.fave_filter_elements["fave_group_1"]:
+            elif (
+                "fave_group_1" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_1"]
+                ):
                 self.fave_filter_elements["fave_group_1"].hide()
                 self.fave_filter_elements["fave_group_1_selected"].show()
                 self.selected_fave_filter.append("fave_group_1")
                 self.place_fave_filters()
-            elif element == self.fave_filter_elements["fave_group_1_selected"]:
+            elif (
+                "fave_group_1_selected" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_1_selected"]
+                ):
                 self.fave_filter_elements["fave_group_1"].show()
                 self.fave_filter_elements["fave_group_1_selected"].hide()
                 self.selected_fave_filter.remove("fave_group_1")
                 self.place_fave_filters()
 
-            elif element == self.fave_filter_elements["fave_group_2"]:
+            elif (
+                "fave_group_2" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_2"]
+                ):
                 self.fave_filter_elements["fave_group_2"].hide()
                 self.fave_filter_elements["fave_group_2_selected"].show()
                 self.selected_fave_filter.append("fave_group_2")
                 self.place_fave_filters()
-            elif element == self.fave_filter_elements["fave_group_2_selected"]:
+            elif (
+                "fave_group_2_selected" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_2_selected"]
+                ):
                 self.fave_filter_elements["fave_group_2"].show()
                 self.fave_filter_elements["fave_group_2_selected"].hide()
                 self.selected_fave_filter.remove("fave_group_2")
                 self.place_fave_filters()
 
-            elif element == self.fave_filter_elements["fave_group_3"]:
+            elif (
+                "fave_group_3" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_3"]
+                ):
                 self.fave_filter_elements["fave_group_3"].hide()
                 self.fave_filter_elements["fave_group_3_selected"].show()
                 self.selected_fave_filter.append("fave_group_3")
                 self.place_fave_filters()
-            elif element == self.fave_filter_elements["fave_group_3_selected"]:
+            elif (
+                "fave_group_3_selected" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_3_selected"]
+                ):
                 self.fave_filter_elements["fave_group_3"].show()
                 self.fave_filter_elements["fave_group_3_selected"].hide()
                 self.selected_fave_filter.remove("fave_group_3")

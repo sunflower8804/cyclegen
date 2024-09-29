@@ -553,7 +553,7 @@ class TalkScreen(Screens):
                 if game.config["debug_ensure_dialogue"] == talk_key:
                     pass
 
-            if game.switches["talk_category"] == "talk" and ("insult" in tags or "flirt" in tags):
+            if game.switches["talk_category"] == "talk" and ("insult" in tags or "reject" in tags or "accept" in tags):
                 continue
 
             if game.switches["talk_category"] == "insult" and "insult" not in tags:
