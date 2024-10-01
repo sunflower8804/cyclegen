@@ -118,9 +118,19 @@ class EventsScreen(Screens):
         elif event.type == pygame_gui.UI_BUTTON_PRESSED:  # everything else on button press to prevent blinking
             element = event.ui_element
             if element == self.timeskip_button:
-                self.events_thread = self.loading_screen_start_work(
-                    events_class.one_moon
-                )
+                if game.clan.your_cat.dead_for >= 2 and not game.switches['continue_after_death']:
+                    DeathScreen('events screen')
+                    return
+                elif (game.clan.your_cat.moons == 5
+                        and not game.clan.your_cat.outside
+                        and not game.clan.your_cat.dead
+                        and game.clan.your_cat.status == "kitten"
+                        ):
+                    PickPath('events screen')
+                else:
+                    self.events_thread = self.loading_screen_start_work(
+                        events_class.one_moon
+                    )
             elif self.death_button and event.ui_element == self.death_button:
                 DeathScreen('events screen')
                 return
@@ -229,6 +239,13 @@ class EventsScreen(Screens):
                     self.handle_tab_select(event.key)
                 elif event.key == pygame.K_RETURN:
                     self.handle_tab_switch(self.selected_display)
+                elif event.key == pygame.K_SPACE:
+                    if game.clan.your_cat.moons == 5 and game.clan.your_cat.status == 'kitten' and not game.clan.your_cat.outside and not game.clan.your_cat.dead:
+                        PickPath('events screen')
+                    elif (game.clan.your_cat.dead_for == 1 or game.clan.your_cat.exiled):
+                        DeathScreen('events screen')
+                        return
+                    self.events_thread = self.loading_screen_start_work(events_class.one_moon)
 
     def save_scroll_position(self):
         """
@@ -899,16 +916,6 @@ class EventsScreen(Screens):
 
         if get_living_clan_cat_count(Cat) == 0:
             GameOver("events screen")
-        
-        # lifegen
-        if game.clan.your_cat.dead_for >= 2 and not game.switches['continue_after_death']:
-            DeathScreen('events screen')
-        elif (game.clan.your_cat.moons == 6
-                and not game.clan.your_cat.outside
-                and not game.clan.your_cat.dead
-                ):
-            PickPath('events screen')
-        # ---
 
         self.update_display_events_lists()
 

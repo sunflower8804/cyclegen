@@ -3206,7 +3206,8 @@
       "general_leader",
       "general_backstory",
       "all_traits",
-      "forgiven"
+      "forgiven",
+      "shunned_as_kit"
     ],
     "m_c is glad to finally begin training after being forgiven by the Clan."
   ],
@@ -3218,7 +3219,8 @@
       "general_leader",
       "general_backstory",
       "all_traits",
-      "forgiven"
+      "forgiven",
+      "shunned_as_kit"
     ],
     "m_c is overjoyed at {PRONOUN/m_c/poss} belated apprentice ceremony, vowing to {PRONOUN/m_c/poss} mentor, (mentor), that {PRONOUN/m_c/subject} will be the most loyal warrior the Clan's ever seen."
   ],
@@ -3230,7 +3232,8 @@
       "general_leader",
       "general_backstory",
       "all_traits",
-      "forgiven"
+      "forgiven",
+      "shunned_as_kit"
     ],
     "m_c has always been interested in medicine, and now, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} finally allowed to begin learning it. {PRONOUN/m_c/subject/CAP} {VERB/m_c/touch/touches} noses with {PRONOUN/m_c/poss} new mentor, (mentor), and promise in front of the Clan that {PRONOUN/m_c/subject} will use {PRONOUN/m_c/poss} new skills only to heal, not hurt."
   ],
@@ -3242,7 +3245,7 @@
       "general_leader",
       "general_backstory",
       "all_traits",
-      "forgiven"
+      "shunned"
     ],
     "Upon being forgiven by the Clan, m_c will begin training as a mediator apprentice. l_n remarks that learning about mediation will help {PRONOUN/m_c/object} recover from what {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} done."
   ],
@@ -3269,7 +3272,8 @@
       "general_leader",
       "general_backstory",
       "all_traits",
-      "forgiven"
+      "forgiven",
+      "shunned_as_kit"
     ],
     "m_c is glad to finally begin training after being forgiven by the Clan."
   ],
@@ -3284,8 +3288,25 @@
       "general_leader",
       "general_backstory",
       "all_traits",
-      "forgiven"
+      "forgiven",
+      "shunned_as_kit"
     ],
     "m_c is glad to finally begin training after being forgiven by the Clan."
+  ],
+  "forgiven_app8": [
+    [
+      "apprentice",
+      "yes_mentor",
+      "queen's apprentice",
+      "mediator apprentice",
+      "medicine cat apprentice",
+      "general_parents",
+      "general_leader",
+      "general_backstory",
+      "all_traits",
+      "forgiven",
+      "shunned_as_apprentice"
+    ],
+      "m_c is relieved to get back to training after being forgiven by the Clan."
   ]
 }
