@@ -2942,7 +2942,7 @@ def abbrev_addons(t_c, r_c, cluster, x, rel, r):
         cluster and rel are booleans for if the addons are present.
     """
 
-    rc_skillpath1 = str(r_c.skills.primary.path)
+    rc_skillpath1 = str(r_c.skills.primary.path) if r_c.skills.primary else None
     rc_skillpath2 = str(r_c.skills.secondary.path) if r_c.skills.secondary else None
 
     rc_skill1 = rc_skillpath1.split(".")[1].lower()
