@@ -644,13 +644,21 @@ class Patrol:
                         other_cat = self.patrol_cats[1]
                         
                         if not other_cat.joined_df:
-                            if "fellowtrainee" in patrol.tags: 
+                            if "fellowtrainee" in patrol.tags:
                                 continue
                         
                         else:
                             if "fellowtrainee" not in patrol.tags:
                                 continue
-                elif game.switches["patrol_category"] == "date":
+                else:
+                    if "shunned" in patrol.tags:
+                        if game.clan.your_cat.shunned == 0:
+                            continue
+                    
+                    if "shunned" not in patrol.tags and "df" not in patrol.tags:
+                        if game.clan.your_cat.shunned > 0:
+                            continue
+                if game.switches["patrol_category"] == "date":
                     if "df" in patrol.tags:
                         if len(self.patrol_cats) > 1:
                             other_cat = self.patrol_cats[1]
@@ -660,14 +668,6 @@ class Patrol:
 
                 if "bloodthirsty_only" in patrol.tags:
                     if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":
-                        continue
-
-                if "shunned" in patrol.tags:
-                    if game.clan.your_cat.shunned == 0:
-                        continue
-                
-                if "shunned" not in patrol.tags and "df" not in patrol.tags:
-                    if game.clan.your_cat.shunned > 0:
                         continue
 
                 # this is testing every piece of text in the patrol
