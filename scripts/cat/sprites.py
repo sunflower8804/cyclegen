@@ -292,14 +292,14 @@ class Sprites:
 
             # ohdan's accessories
         for a, i in enumerate([
-            "DAISY", "DIANTHUS", "BLEEDING HEARTS", "FRANGIPANI", "BLUE GLORY", "CATNIP FLOWER", "BLANKET FLOWER", "ALLIUM", "LACELEAF", "PURPLE GLORY"]):
+            "DAISIES", "DIANTHUS", "BLEEDING HEARTS", "FRANGIPANI", "BLUE GLORY", "CATNIP FLOWER", "BLANKET FLOWER", "ALLIUM", "LACELEAF", "PURPLE GLORY"]):
             self.make_group('flower_accessories', (a, 0), f'acc_flower{i}')
         for a, i in enumerate([
             "YELLOW PRIMROSE", "HESPERIS", "MARIGOLD", "WISTERIA"]):
             self.make_group('flower_accessories', (a, 1), f'acc_flower{i}')
         
         for a, i in enumerate([
-            "CLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"]):
+            "SINGULARCLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"]):
             self.make_group('plant2_accessories', (a, 0), f'acc_plant2{i}')
 
         for a, i in enumerate([
@@ -320,7 +320,7 @@ class Sprites:
             self.make_group('smallAnimal_accessories', (a, 3), f'acc_smallAnimal{i}')
             
         for a, i in enumerate([
-            "LUNAR MOTH", "ROSY MAPLE MOTH", "MONARCH BUTTERFLY", "DAPPLED MONARCH", "POLYPHEMUS MOTH", "MINT MOTH"]):
+            "LUNAR MOTH", "ROSY MAPLE MOTH", "MONARCH", "DAPPLED MONARCH", "POLYPHEMUS MOTH", "MINT MOTH"]):
             self.make_group('deadInsect_accessories', (a, 0), f'acc_deadInsect{i}')
             
         for a, i in enumerate([
@@ -331,7 +331,7 @@ class Sprites:
             self.make_group('aliveInsect_accessories', (a, 1), f'acc_aliveInsect{i}')
         
         for a, i in enumerate([
-            "RASPBERRY", "BLACKBERRY", "GOLDEN RASPBERRY", "CHERRY", "YEW"]):
+            "RASPBERRY2", "BLACKBERRY", "GOLDEN RASPBERRY", "CHERRY", "YEW"]):
             self.make_group('fruit_accessories', (a, 0), f'acc_fruit{i}')
         
         for a, i in enumerate([
@@ -411,7 +411,7 @@ class Sprites:
             "MINTLEAF","STICKS","SPRINGFEATHERS","SNAILSHELL","MUD","CHERRYPLUMLEAVES","CATKIN","HONEYCOMB","FLOWERCROWN","LILIESOFTHEVALLEY"]):
             self.make_group('springwinter', (a, 1), f'acc_wild{i}')
         for a, i in enumerate([
-            "STRAWMANE","MISTLETOE","REDPOINSETTIA","WHITEPOINSETTIA","COTONEASTERWREATH","YEWS","HEATHER","TEETHCOLLAR","DRIEDORANGE","ROESKULL"]):
+            "STRAWMANE","MISTLETOE","REDPOINSETTIA","WHITEPOINSETTIA","COTONEASTERWREATH","YEWS","CALLUNA","TEETHCOLLAR","DRIEDORANGE","ROESKULL"]):
             self.make_group('springwinter', (a, 2), f'acc_wild{i}')
         for a, i in enumerate([
             "WOODENOAKANTLERS","WOODENBIRCHANTLERS","DOGWOOD","GRAYWOOL","BLACKWOOL","CREAMWOOL","WHITEWOOL","FIRBRANCHES","CORALBELLS","SLIVERDUSTPLANT"]):
