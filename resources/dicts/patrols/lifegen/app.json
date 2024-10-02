@@ -429,7 +429,7 @@
         "max_cats": 5,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "An emergency meeting has been called, suspecting an invasion by o_c. You're asked to participate in the border patrol with m_n, r_w1, and r_w2. l_n seems to have faith that you can do this.",
+        "intro_text": "An emergency meeting has been called, suspecting an invasion by o_c_n. You're asked to participate in the border patrol with m_n, r_w1, and r_w2. l_n seems to have faith that you can do this.",
         "decline_text": "You decide to decline the task, feeling a bit overwhelmed. You resolve to support your Clan in other ways.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -445,7 +445,7 @@
                 "weight": 20
             },
             {
-                "text": "Of course l_n has faith in you, you're y_c! You're not about to let o_c get the better of you either. Before m_n can stop you, you've charged ahead and catch two apprentices in the act. r_w1 is at your side and you send the interlopers packing with a good scratch to remember you by!",
+                "text": "Of course l_n has faith in you, you're y_c! You're not about to let o_c_n get the better of you either. Before m_n can stop you, you've charged ahead and catch two apprentices in the act. r_w1 is at your side and you send the interlopers packing with a good scratch to remember you by!",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"]
@@ -464,7 +464,7 @@
                 "weight": 20
             },
             {
-                "text": "No hesitation, go go go! You race ahead of the patrol with deaf ears to m_n's calls. Unfortunately, your attitude has consequences - you run head first into the o_c invasion. Alone. You're given a reminder of what your personality can mean for you if you don't think ahead before the rest of the patrol catches up to defend the territory... and you.",
+                "text": "No hesitation, go go go! You race ahead of the patrol with deaf ears to m_n's calls. Unfortunately, your attitude has consequences - you run head first into the o_c_n invasion. Alone. You're given a reminder of what your personality can mean for you if you don't think ahead before the rest of the patrol catches up to defend the territory... and you.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],

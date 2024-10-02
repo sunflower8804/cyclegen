@@ -118,9 +118,19 @@ class EventsScreen(Screens):
         elif event.type == pygame_gui.UI_BUTTON_PRESSED:  # everything else on button press to prevent blinking
             element = event.ui_element
             if element == self.timeskip_button:
-                self.events_thread = self.loading_screen_start_work(
-                    events_class.one_moon
-                )
+                if game.clan.your_cat.dead_for >= 2 and not game.switches['continue_after_death']:
+                    DeathScreen('events screen')
+                    return
+                elif (game.clan.your_cat.moons == 5
+                        and not game.clan.your_cat.outside
+                        and not game.clan.your_cat.dead
+                        and game.clan.your_cat.status == "kitten"
+                        ):
+                    PickPath('events screen')
+                else:
+                    self.events_thread = self.loading_screen_start_work(
+                        events_class.one_moon
+                    )
             elif self.death_button and event.ui_element == self.death_button:
                 DeathScreen('events screen')
                 return
@@ -136,45 +146,69 @@ class EventsScreen(Screens):
                 
                 self.place_fave_filters()
 
-            elif element == self.fave_filter_elements["yourcat_filter"]:
+            elif (
+                "yourcat_filter" in self.fave_filter_elements and
+                element == self.fave_filter_elements["yourcat_filter"]
+                ):
                 self.fave_filter_elements["yourcat_filter"].hide()
                 self.fave_filter_elements["yourcat_filter_selected"].show()
                 self.selected_fave_filter.append("yourcat_filter")
                 self.place_fave_filters()
-            elif element == self.fave_filter_elements["yourcat_filter_selected"]:
+            elif (
+                "yourcat_filter_selected" in self.fave_filter_elements and
+                element == self.fave_filter_elements["yourcat_filter_selected"]
+                ):
                 self.fave_filter_elements["yourcat_filter"].show()
                 self.fave_filter_elements["yourcat_filter_selected"].hide()
                 self.selected_fave_filter.remove("yourcat_filter")
                 self.place_fave_filters()
 
-            elif element == self.fave_filter_elements["fave_group_1"]:
+            elif (
+                "fave_group_1" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_1"]
+                ):
                 self.fave_filter_elements["fave_group_1"].hide()
                 self.fave_filter_elements["fave_group_1_selected"].show()
                 self.selected_fave_filter.append("fave_group_1")
                 self.place_fave_filters()
-            elif element == self.fave_filter_elements["fave_group_1_selected"]:
+            elif (
+                "fave_group_1_selected" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_1_selected"]
+                ):
                 self.fave_filter_elements["fave_group_1"].show()
                 self.fave_filter_elements["fave_group_1_selected"].hide()
                 self.selected_fave_filter.remove("fave_group_1")
                 self.place_fave_filters()
 
-            elif element == self.fave_filter_elements["fave_group_2"]:
+            elif (
+                "fave_group_2" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_2"]
+                ):
                 self.fave_filter_elements["fave_group_2"].hide()
                 self.fave_filter_elements["fave_group_2_selected"].show()
                 self.selected_fave_filter.append("fave_group_2")
                 self.place_fave_filters()
-            elif element == self.fave_filter_elements["fave_group_2_selected"]:
+            elif (
+                "fave_group_2_selected" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_2_selected"]
+                ):
                 self.fave_filter_elements["fave_group_2"].show()
                 self.fave_filter_elements["fave_group_2_selected"].hide()
                 self.selected_fave_filter.remove("fave_group_2")
                 self.place_fave_filters()
 
-            elif element == self.fave_filter_elements["fave_group_3"]:
+            elif (
+                "fave_group_3" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_3"]
+                ):
                 self.fave_filter_elements["fave_group_3"].hide()
                 self.fave_filter_elements["fave_group_3_selected"].show()
                 self.selected_fave_filter.append("fave_group_3")
                 self.place_fave_filters()
-            elif element == self.fave_filter_elements["fave_group_3_selected"]:
+            elif (
+                "fave_group_3_selected" in self.fave_filter_elements and
+                element == self.fave_filter_elements["fave_group_3_selected"]
+                ):
                 self.fave_filter_elements["fave_group_3"].show()
                 self.fave_filter_elements["fave_group_3_selected"].hide()
                 self.selected_fave_filter.remove("fave_group_3")
@@ -205,6 +239,13 @@ class EventsScreen(Screens):
                     self.handle_tab_select(event.key)
                 elif event.key == pygame.K_RETURN:
                     self.handle_tab_switch(self.selected_display)
+                elif event.key == pygame.K_SPACE:
+                    if game.clan.your_cat.moons == 5 and game.clan.your_cat.status == 'kitten' and not game.clan.your_cat.outside and not game.clan.your_cat.dead:
+                        PickPath('events screen')
+                    elif (game.clan.your_cat.dead_for == 1 or game.clan.your_cat.exiled):
+                        DeathScreen('events screen')
+                        return
+                    self.events_thread = self.loading_screen_start_work(events_class.one_moon)
 
     def save_scroll_position(self):
         """
@@ -654,6 +695,10 @@ class EventsScreen(Screens):
         Categorize events from game.cur_events_list into display categories for screen
         """
 
+        self.all_events = [
+            x for x in game.cur_events_list if "interaction" not in x.types
+        ]
+
         # LIFEGEN: changing all events based on fave filters
         if self.selected_fave_filter:
             fnumlist = []
@@ -682,11 +727,7 @@ class EventsScreen(Screens):
             self.all_events = [
                 x for x in fav_events
             ]
-        else:
         # ----------------------------------------------------------------
-            self.all_events = [
-                x for x in game.cur_events_list if "interaction" not in x.types
-            ]
 
         self.event_display_type = self.current_display
 
@@ -875,16 +916,6 @@ class EventsScreen(Screens):
 
         if get_living_clan_cat_count(Cat) == 0:
             GameOver("events screen")
-        
-        # lifegen
-        if game.clan.your_cat.dead_for >= 2 and not game.switches['continue_after_death']:
-            DeathScreen('events screen')
-        elif (game.clan.your_cat.moons == 6
-                and not game.clan.your_cat.outside
-                and not game.clan.your_cat.dead
-                ):
-            PickPath('events screen')
-        # ---
 
         self.update_display_events_lists()
 

@@ -623,8 +623,7 @@
             "Is convinced that {PRONOUN/m_c/subject} will become an apprentice early",
             "Butts into a coversation to correct someone",
             "Is going off, in great detail, about the history of c_n",
-            "Rubbing in r_c's muzzle about a subject {PRONOUN/m_c/subject} greatly excel at",
-            "Is trying to retell a story {PRONOUN/m_c/subject} know IS the absolute truth"
+            "Is trying to retell a story {PRONOUN/m_c/subject} {VERB/m_c/know/knows} is the absolute truth"
         ],
         "main_trait_constraint": [
             "know-it-all"

@@ -553,7 +553,7 @@ class TalkScreen(Screens):
                 if game.config["debug_ensure_dialogue"] == talk_key:
                     pass
 
-            if game.switches["talk_category"] == "talk" and ("insult" in tags or "flirt" in tags):
+            if game.switches["talk_category"] == "talk" and ("insult" in tags or "reject" in tags or "accept" in tags):
                 continue
 
             if game.switches["talk_category"] == "insult" and "insult" not in tags:
@@ -1560,7 +1560,7 @@ class TalkScreen(Screens):
             if "deaf" in cat.permanent_condition:
                 add_on2 += " d"
             t_c_text += add_on2
-            possible_texts['general'][1][0] += f" {VERSION_NAME}"
+            possible_texts['general'][1][0] += f" {VERSION_NAME} {(game.switches['talk_category']).upper()}"
             possible_texts['general'][1][0] += "\n"
             possible_texts['general'][1][0] += y_c_text + f" {you.moons}"
             possible_texts['general'][1][0] += "\n"
