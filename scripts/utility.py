@@ -2945,11 +2945,14 @@ def abbrev_addons(t_c, r_c, cluster, x, rel, r):
     rc_skillpath1 = str(r_c.skills.primary.path) if r_c.skills.primary else None
     rc_skillpath2 = str(r_c.skills.secondary.path) if r_c.skills.secondary else None
 
-    rc_skill1 = rc_skillpath1.split(".")[1].lower()
+    if rc_skillpath1:
+        rc_skill1 = rc_skillpath1.split(".")[1].lower()
+    else:
+        rc_skill1 = "none"
     if rc_skillpath2:
         rc_skill2 = rc_skillpath2.split(".")[1].lower()
     else:
-        rc_skill2 = None
+        rc_skill2 = "any"
 
     if (
         cluster and (
