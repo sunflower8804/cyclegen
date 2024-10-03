@@ -242,6 +242,7 @@ class Events:
             ghost_names = []
             shaken_cats = []
             extra_event = None
+            event = None
             for ghost in Cat.dead_cats:
                 if not ghost.dead_for > 1:
                     ghost_names.append(str(ghost.name))
@@ -251,7 +252,7 @@ class Events:
             if ghost_names:
                 insert = adjust_list_text(ghost_names)
 
-            if len(Cat.dead_cats) > 1:
+            if len(Cat.dead_cats) > 1 and insert:
                 event = f"The past moon, {insert} have taken their place in StarClan. {game.clan.name}Clan mourns their " \
                         f"loss, and their Clanmates will miss where they had been in their lives. Moments of their " \
                         f"lives are shared in stories around the circle of mourners as those that were closest to them " \
@@ -299,7 +300,7 @@ class Events:
                     else:
                         extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
 
-            else:
+            elif insert:
                 event = (
                     f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their "
                     f"loss, and their Clanmates will miss the spot they took up in their lives. Moments of their "
@@ -307,9 +308,10 @@ class Events:
                     f"take them to their final resting place."
                 )
 
-            game.cur_events_list.append(
-                Single_Event(event, ["birth_death"], [i.ID for i in Cat.dead_cats])
-            )
+            if event:
+                game.cur_events_list.append(
+                    Single_Event(event, ["birth_death"], [i.ID for i in Cat.dead_cats])
+                )
             if extra_event:
                 game.cur_events_list.append(
                     Single_Event(
