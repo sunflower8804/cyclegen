@@ -17,13 +17,14 @@
         "You advise r_w1 and r_w2 on what to do if they encounter a patrol from o_cClan while marking the border.",
         "You mediate a group of warriors after a friendly prey-catching competition gets heated.",
         "You help r_w sort through {PRONOUN/r_w/poss} complicated feelings about another cat."
-
     ],
     "mediator assertive": [],
     "mediator brooding": [],
     "mediator cool": [],
     "mediator upstanding": [],
-    "mediator introspective": [],
+    "mediator introspective": [
+        "Word of a dispute between apprentices across the border catches your attention and you quickly race to scold the apprentices involved, stressing the importance of keeping Clan relations in good shape."
+    ],
     "mediator neurotic": [
         "You accompany l_n to o_cClan to resolve a border dispute. With so many unfamiliar eyes on your pelt, you stumble over your words, but the arrival of the other Clan's mediator puts you more at ease."
     ],
@@ -35,6 +36,5 @@
     "mediator rare": [
         "After a practical joke goes worse than expected, you comfort the targeted cats and make sure the pranksters understand why bringing a wasp nest into camp is a terrible idea.",
         "Unexpectedly harsh weather means more tasks to do around camp. You help l_n and d_n delegate jobs."
-
     ]
 }

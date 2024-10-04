@@ -4,7 +4,7 @@
         "d_n informs you that you are scheduled for yet another midnight patrol. Seriously?",
         "A heated argument with a o_cClan patrol leaves you ruffled, claws itching for a fight.",
         "You offer to teach r_m some battle moves, just in case. ",
-        "You try to show off a few battle moves to the kits, only to faceplant on the ground instead. Truly impressive.",
+        "You try to show off a few battle moves to the kits, only to face plant on the ground instead. Truly impressive.",
         "You notice r_a pouting, seemingly gathering mouse bile for tick duty. You walk over to {PRONOUN/r_a/object} to offer your help, and {PRONOUN/r_a/subject} happily {VERB/r_a/accept/accepts}. Though most apprentices see this task as annoying, it brings you memories and nostalgia of your past.",
         "You're chosen to lead a hunting patrol! The patrol ends in a success, with you hauling back enough prey to feed the entire Clan.",
         "You're chosen to lead a hunting patrol! However, the patrol ends in a failure with only a few scraggly pieces of prey caught to be added to the fresh-kill pile.",
@@ -23,10 +23,11 @@
         "Despite your exhaustion, you volunteer for an extra dawn patrol to ensure the Clan's safety."
     ],
     "warrior introspective": [
-        "You often volunteer for the dawn patrol, enjoying the peaceful moments to reflect as the world awakens."
+        "You often volunteer for the dawn patrol, enjoying the peaceful moments to reflect as the world awakens.",
+        "r_a asks for words of wisdom before {PRONOUN/r_a/poss} assessment, and despite having an inkling r_a is joking, you give {PRONOUN/r_a/object} a heartfelt speech anyway to uplift {PRONOUN/r_a/poss} spirits. You don't notice r_a left during your rambling until you're finished."
     ],
     "warrior neurotic": [
-        "r_a looks to you for reassurance before their assessment, and your encouraging words soothe their fears. You remember when you were in the same place, moons ago.",
+        "r_a looks to you for reassurance before {PRONOUN/r_a/poss} assessment, and your encouraging words soothe {PRONOUN/r_a/poss} fears. You remember when you were in the same place, moons ago.",
         "When a hunting patrol takes longer than expected to return, you fear the worst, convinced something terrible happened.",
         "You're not too disappointed when neutral_r_w1 has to help r_w2 instead of joining you on a hunting patrol, leaving you to go alone. You spend an afternoon traipsing through the territory, enjoying the solitude."
     ],

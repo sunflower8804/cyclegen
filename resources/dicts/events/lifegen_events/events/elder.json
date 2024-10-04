@@ -8,7 +8,7 @@
         "You accidentally cause an apprentice to get side-tracked by telling them tales from your own apprentice days.",
         "Soaking up the rays in camp seems like a grand plan. r_k ends up joining you, and soon you find yourself snuggled up with the Clan's kits in the bright warmth of the sun.",
         "r_q asks you to do a story-telling session for the kits! By the end of the day, some apprentices, warriors, and even d_n have come to listen as well.",
-        "r_e and you spend time sharing tongues in the camp clearing. The two of you swap drama and stories wihout a care in the world.",
+        "r_e and you spend time sharing tongues in the camp clearing. The two of you swap drama and stories without a care in the world.",
         "A storm blowing through makes your joints ache. r_m sympathizes and gives you some honey-laced herbs.",
         "Old age gets the best of everyone. You're no different - and you ponder that while sunbathing."
     ],
@@ -23,7 +23,11 @@
     "elder brooding": [],
     "elder cool": [],
     "elder upstanding": [],
-    "elder introspective": [],
+    "elder introspective": [
+        "You spend your day gazing out to the distance, pondering your life to this point.",
+        "You shiver repulsively, suddenly have a flashback to an embarrassing memory from your youth. You find yourself musing on the dreadful memory for the rest of the day.",
+        "You feel a sliver of guilt as you deny r_k playtime, knowing your old bones are too wary for such activities."
+    ],
     "elder neurotic": [],
     "elder silly": [],
     "elder stable": [
