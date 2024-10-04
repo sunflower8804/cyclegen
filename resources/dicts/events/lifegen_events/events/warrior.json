@@ -36,17 +36,17 @@
         "When a kit wanders too close to the edge of the camp, you gently guide them back to the nursery, promising to teach them about the territory when they're older."
     ],
     "warrior sweet": [
-        "When r_e complains of aching joints, you go out of your way to find them the softest moss for their bedding.",
+        "When r_e complains of aching joints, you go out of your way to find {PRONOUN/r_e/object} the softest moss for {PRONOUN/r_e/poss} bedding.",
         "You spend your free time playing with the kits, patiently letting them clamber all over you."
     ],
     "warrior unabashed": [
         "At the full moon Gathering, you enthusiastically greet every cat, completely unashamed of your excitement.",
-        "When d_n questions your hunting techniques, you firmly remind them that your methods get results."
+        "When d_n questions your hunting techniques, you firmly remind {PRONOUN/d_n/object} that your methods get results."
     ],
     "warrior unlawful": [
         "On a solo hunt, you purposely cross Clan boundaries to chase a fat squirrel, telling no one.",
-        "You 'accidentally' forget to wake up r_w for their dawn patrol shift after they annoyed you the day before.",
-        "r_a catches you sneaking out of camp at night, but you threaten them to keep quiet about it."
+        "You 'accidentally' forget to wake up r_w for {PRONOUN/r_w/poss} dawn patrol shift after {PRONOUN/r_w/subject} annoyed you the day before.",
+        "r_a catches you sneaking out of camp at night, but you threaten {PRONOUN/r_a/object} to keep quiet about it."
     ],
     "warrior rare": []
 }

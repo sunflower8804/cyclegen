@@ -42,7 +42,7 @@
         "You boldly suggest a new hunting strategy during a patrol. m_n is impressed by your creativity and initiative.",
         "You get out of paw when sparring with r_a. m_n ends up scolding you for taking the training too far. You end up apologizing to r_a who isn't as bothered as your mentor is.",
         "In your downtime you wander off with your tail high. By the time you begin to head back to camp, d_n and m_n come out of no where, frantic. Apparently you forgot to tell them what you were doing. Oops?",
-        "r_q asks you to help out in the nursery today. You are quickly shooed away again after teaching the kits a few battle moves. r_k seems proud of their scrapes though!",
+        "r_q asks you to help out in the nursery today. You are quickly shooed away again after teaching the kits a few battle moves. r_k seems proud of {PRONOUN/r_k/poss} scrapes though!",
         "You and r_a sneak out of camp for some extra practice. When your mentors catch you later, exhausted but pleased with yourselves, they don't bother scolding you.... again.",
         "y_p checks in on you in the apprentice's den. You're doing fantastic in training! You brag that you're the best of the apprentices - or at least the one wanting to go go go!."
     ],
@@ -51,7 +51,7 @@
         "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. You listen in silence, occasionally giving a curt nod.",
         "You sulk in your nest, questioning whether you're truly cut out to be a warrior after a mistake during training.",
         "Jealousy swells in your chest as you watch m_n praising r_a. You wonder bitterly if you'll ever be good enough.",
-        "r_a invites you to climb trees with them and their friends, but you bitterly decline, then spend the whole day regretting it."
+        "r_a invites you to climb trees with {PRONOUN/r_a/object} and {PRONOUN/r_a/poss} friends, but you bitterly decline, then spend the whole day regretting it."
     ],
     "apprentice cool": [
         "You wonder if you look cool and mysterious to other cats while you strut across the camp clearing.",
@@ -65,8 +65,8 @@
         "You spend a day in the medicine cat's den. r_m instructs you about some basic herbs and their uses. You sit upright, your posture rigid, determination etched on your face as you absorb every word with unwavering focus.",
         "Despite your exhaustion, you volunteer for an extra dawn patrol to ensure the Clan's safety.",
         "You beam with pride as you overhear m_n telling d_n that you're already a more advanced hunter than some of the warriors are.",
-        "r_a invites you to climb trees with them and their friends, but you decline in hopes of getting more training in.",
-        "r_a begs you to teach them to hunt and fight as well as you do, but in your opinion, they simply aren't at your level yet."
+        "r_a invites you to climb trees with {PRONOUN/r_a/object} and {PRONOUN/r_a/poss} friends, but you decline in hopes of getting more training in.",
+        "r_a begs you to teach {PRONOUN/r_a/object} to hunt and fight as well as you do, but in your opinion, {PRONOUN/r_a/subject} simply aren't at your level yet."
     ],
     "apprentice introspective": [
         "When m_n pushes you harder in training, you take it in stride, knowing {PRONOUN/m_n/subject} only {VERB/m_n/want/wants} to help you improve.",
@@ -94,12 +94,12 @@
         "You get separated from your patrol and panic when you don't recognize your surroundings.",
         "You're surprised when m_n asks you to demonstrate a battle move for r_a. You push past your nerves and perform the move perfectly!",
         "You find the perfect spot to lie in the sun by yourself and watch the camp.",
-        "r_w notices you sitting alone and invites you to eat with them.",
-        "r_a challenges you to a prey-catching contest. You're certain they'll win, but you narrowly beat them!",
-        "r_m asks you to collect marigold for them while you're on patrol. You ask them to describe the plant in detail, several times, to make sure you can identify it.",
+        "r_w notices you sitting alone and invites you to eat with {PRONOUN/r_w/object}.",
+        "r_a challenges you to a prey-catching contest. You're certain {PRONOUN/r_a/subject}'ll win, but you narrowly beat {PRONOUN/r_a/object}!",
+        "r_m asks you to collect marigold for {PRONOUN/r_w/object} while you're on patrol. You ask {PRONOUN/r_w/object} to describe the plant in detail, several times, to make sure you can identify it.",
         "You collect cobwebs while on patrol, careful to not tear them. r_m praises your meticulousness.",
         "When r_e tells you stories, you're comforted by the cats and places you recognize.",
-        "You spend so long double-checking r_e for ticks that they fall asleep.",
+        "You spend so long double-checking r_e for ticks that {PRONOUN/r_e/subject} fall asleep.",
         "You wonder if you're living up to y_p's hopes and expectations."
 
     ],
