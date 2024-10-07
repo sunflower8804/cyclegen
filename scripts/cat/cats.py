@@ -2691,9 +2691,9 @@ class Cat:
             return
         # Check if cat can have a mentor
         illegible_for_mentor = self.dead or self.outside or self.exiled or self.shunned > 0 or self.dead_for > 1 or self.status not in ["apprentice",
-                                                                                                                                        "mediator apprentice",
-                                                                                                                                        "medicine cat apprentice",
-                                                                                                                                        "queen's apprentice"]
+        "mediator apprentice",
+        "medicine cat apprentice",
+        "queen's apprentice"]
         if illegible_for_mentor:
             self.__remove_mentor()
             return
@@ -2721,7 +2721,7 @@ class Cat:
                         priority_mentors.append(cat)
             # First try for a cat who currently has no apprentices and is working
             if 'request apprentice' in game.switches:
-                if game.switches['request apprentice'] and self.moons == 6:
+                if game.switches['request apprentice'] and self.moons == 6 and not game.clan.your_cat.dead and not game.clan.your_cat.outside:
                     new_mentor = game.clan.your_cat
                 else:
                     if priority_mentors:  # length of list > 0
