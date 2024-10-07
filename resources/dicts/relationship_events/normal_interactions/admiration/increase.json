@@ -329,5 +329,22 @@
         "random_status_constraint": [
             "queen"
         ]
+	},
+	{
+		"id": "H1_elder_admire",
+		"intensity": "low",
+		"interactions": [
+			"r_c enlists your thoughts on a recent controversial decision for the clan."
+		],
+		"random_status_constraint": [
+			"leader",
+			"deputy"
+		],
+		"main_status_constraint": [
+			"elder"
+		],
+		"reaction_random_cat": {
+			"trust": "increase"
+		}
 	}
 ]
