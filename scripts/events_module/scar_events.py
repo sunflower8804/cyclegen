@@ -171,7 +171,7 @@ class Scar_Events():
                     if acc in cat.pelt.inventory:
                         cat.pelt.inventory.remove(acc)
             if specialty == "NOPAW":
-                for acc in ["MUD PAWS", "ASHY PAWS"]:
+                for acc in ["VINE", "ASHY PAWS", "MUD PAWS", "MUD", "STARFLOWERS", "LAVENDERANKLET", "HOLLY2", "HOLLYVINES"]:
                     if acc in cat.pelt.accessories:
                         cat.pelt.inventory.remove(acc)
                     if acc in cat.pelt.inventory:

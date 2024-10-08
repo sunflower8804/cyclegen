@@ -2396,7 +2396,7 @@ class Cat:
                 if acc in self.pelt.inventory:
                     self.pelt.inventory.remove(acc)
         if "NOPAW" in self.pelt.scars:
-            for acc in ["MUD PAWS", "ASHY PAWS"]:
+            for acc in ["VINE", "ASHY PAWS", "MUD PAWS", "MUD", "STARFLOWERS", "LAVENDERANKLET", "HOLLY2", "HOLLYVINES"]:
                 if acc in self.pelt.accessories:
                     self.pelt.inventory.remove(acc)
                 if acc in self.pelt.inventory:
