@@ -32,7 +32,6 @@ from itertools import combinations
 from scripts.patrol.patrol_event import PatrolEvent
 from scripts.patrol.patrol_outcome import PatrolOutcome
 from scripts.cat.cats import Cat
-from scripts.special_dates import get_special_date, contains_special_date_tag
 from scripts.utility import change_clan_relations, change_clan_reputation, get_cluster, ceremony_text_adjust, \
     get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_new_cat
 
