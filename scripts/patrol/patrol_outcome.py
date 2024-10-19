@@ -858,7 +858,8 @@ class PatrolOutcome:
 
             for _cat in cats:
                 if self.__handle_accs(_cat, accessory):
-                    results.append(f"{_cat.name} got an accessory!")
+                    if not block.get("no_results"):
+                        results.append(f"{_cat.name} got an accessory!")
 
         return " ".join(results)
             
