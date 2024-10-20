@@ -3874,5 +3874,116 @@
             "[You rush over to t_c, overjoyed to see {PRONOUN/t_c/object} once again.]",
             "[You bunt heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
         ]
+    ],
+    "shunnedblind_to_deafgrieving_SAM1": [
+        [
+            "they_deaf",
+            "they_grieving",
+            "you_blind",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "[t_c doesn't know how loud {PRONOUN/t_c/poss} cries are. You want to comfort {PRONOUN/t_c/object}, but you know that you'd be the last cat {PRONOUN/t_c/subject}'d want comfort from right now.]"
+        ]
+    ],
+   "dfdead_to_grievingblind_SAM1": [
+        [
+            "they_grieving",
+            "they_blind",
+            "you_df",
+            "any"
+        ],
+        [
+            "[t_c's ears twitch as you approach.]",
+            "I don't care who you are. Get out."
+        ]
+    ],
+    "murderer_shunned_H8": [
+        [
+            "murdered_them",
+            "you_shunned",
+            "they_dead",
+            "max_they_deadfor_5",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[Though dead, t_c pretends to sleep - ignoring your presence.]"
+        ]
+    ],
+    "grievingblind_to_dead_H1": [
+        [
+            "they_dead",
+            "grieving_them",
+            "you_blind",
+            "you_deaf",
+            "they_blind",
+            "they_deaf",
+            "any",
+            "min_platonic_20"
+        ],
+        [
+            "[Somecat brushes up against you lovingly, and you burst into tears, knowing it's t_c.]",
+            "[The vibration of {PRONOUN/t_c/poss} purs brings you peace you were searching for.]"
+        ]
+    ],
+    "grievingblind_to_dead_H2": [
+        [
+            "they_dead",
+            "you_grieving",
+            "you_blind",
+            "you_deaf",
+            "they_blind",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[You can sense another cat's presence as you succumb to your grief. You feel a sudden, yet comforting head bump, which you welcome.]"
+        ]
+    ],
+    "shunneddeaf_to_dead_SAM1": [
+        [
+            "you_shunned",
+            "you_blind",
+            "you_deaf",
+            "they_deaf",
+            "they_sc",
+            "any"
+        ],
+        [
+            "[When you smell t_c nearby and turn towards them, {PRONOUN/t_c/subject} notice you. {PRONOUN/t_c/subject/CAP} quickly walk away after, almost running.]",
+            "[You thought you could take comfort in the stars, but even StarClan has decided to ignore you.]"
+        ]
+    ],
+   "shunnedblind_to_dead_SAM1": [
+        [
+            "you_shunned",
+            "you_blind",
+            "they_cool",
+            "they_df",
+            "any",
+            "min_they_deadfor_50"
+        ],
+        [
+            "They postponed your training for doing something as simple as murder? Cowards.",
+            "Back in my day, murder had the death sentence.",
+            "Unless you murdered the cat that was going to kill you, then you were forgiven.",
+            "That's what I did."
+        ]
+    ],
+    "murderer_shunned_H4": [
+        [
+            "murdered_them",
+            "they_ur",
+            "max_they_deadfor_5",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c, once catching sight of your presence, turns tail and goes off to disappear within the surrounding mist.]"
+        ]
     ]
 }

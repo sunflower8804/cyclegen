@@ -23535,5 +23535,190 @@
             "[You bury your head into {PRONOUN/t_c/object} and begin to sob. It all just comes out, you feel like you can't stop it. t_c's tail pats you lightly, they hold you tight and don't let go.]",
             "Just because you're the leader, it doesn't mean you can't cry. Oh little one, I can't imagine the pain you're in. Or how you must have felt keeping it all hidden. But I've got you, and I'm not letting go."
         ]
+    ],
+    "introspective_crushto_H2": [
+        [
+            "they_introspective",
+            "you_app",
+            "they_adult"
+        ],
+        [
+            "Who do I have a crush on? Don't you know not to ask something so personal?",
+            "[t_c sighs exasperatedly and humors your questioning.]",
+            "Well... they're a bit rough around the edges, closed off, no nonsense type of cat, <i>maybe</i> secretly a softy...",
+            "[t_c voice drifts and {PRONOUN/t_c/subject} go silent for a moment, lost in {PRONOUN/t_c/poss} thoughts.]",
+            "Ah, that's enough for today. Any more detail and you'll know who I have a crush on! Ha... Haha..."
+        ]
+    ],
+   "shunnedblind_to_grieving_SAM1": [
+        [
+            "they_deaf",
+            "they_grieving",
+            "you_blind",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "[t_c doesn't care about how loud {PRONOUN/t_c/poss} cries are. You want to comfort {PRONOUN/t_c/object}, but you know that you'd be the last cat {PRONOUN/t_c/subject}'d want comfort from right now.]"
+        ]
+    ],
+    "sc_to_blind_H1": [
+        [
+            "you_blind",
+            "they_blind",
+            "they_sc",
+            "any",
+            "max_they_deadfor_20"
+        ],
+        [
+            "Oh hey! What are you doing here?",
+            "Sorry - I guess the answer is kinda obvious. You can talk to the dead and walk these lands. That's really cool!",
+            "I'm still trying to get used to the floating, nothingness feeling myself."
+        ]
+    ],
+    "sc_to_blind_H2": [
+        [
+            "you_blind",
+            "they_blind",
+            "they_sc",
+            "any",
+            "they_silly"
+        ],
+        [
+            "... Do you think if I stop moving I'll float around? Like a bubble?",
+            "[It grows quiet, and you just know t_c is trying really hard to stay still and float upwards.]",
+            "[...]",
+            "[.....]",
+            "Darn, it didn't work."
+        ]
+    ],
+    "ur_to_blind_H1": [
+        [
+            "you_blind",
+            "they_blind",
+            "they_ur",
+            "any",
+            "they_silly"
+        ],
+        [
+            "... Do you think if I stop moving I'll float around? Like a bubble?",
+            "[It grows quiet, and you just know t_c is trying really hard to stay still and float upwards.]",
+            "[...]",
+            "[.....]",
+            "Darn, it didn't work."
+        ]
+    ],
+    "sc_to_blind_H3": [
+        [
+            "you_blind",
+            "you_shunned",
+            "they_blind",
+            "they_sc",
+            "any"
+        ],
+        [
+            "I feel like you shouldn't be here."
+        ]
+    ],
+    "sc_to_blind_H4": [
+        [
+            "you_blind",
+            "you_grieving",
+            "they_blind",
+            "they_sc",
+            "any",
+            "they_introspective"
+        ],
+        [
+            "... Are you feeling okay? You've been quiet.",
+            "You know, missing somecat you love isn't a bad thing. Grieving is okay. And hey! Maybe you'll find them here, in StarClan.",
+            "And if you don't then well...",
+            "[t_c grows quiet in hesitation, but you can tell what {PRONOUN/t_c/subject} meant.]",
+            "Haha, maybe I squashed the mood."
+        ]
+    ],
+    "murderer_shunned_H5": [
+        [
+            "murdered_them",
+            "they_dead",
+            "max_they_deadfor_5",
+            "any"
+        ],
+        [
+            "Do you come here to torture me with your presence?",
+            "Bravo..."
+        ]
+    ],
+    "murderer_shunned_H6": [
+        [
+            "murdered_them",
+            "you_shunned",
+            "they_sc",
+            "max_they_deadfor_5",
+            "any",
+            "they_righteous",
+	"sc_faith"
+        ],
+        [
+            "You dare walk these grounds and speak to StarClan directly when you've done horrible acts!",
+            "I do not understand what StarClan is thinking."
+        ]
+    ],
+    "murderer_shunned_H7": [
+        [
+            "murdered_them",
+            "you_shunned",
+            "they_df",
+            "max_they_deadfor_5",
+            "any"
+        ],
+        [
+            "What do you want? Are you lonely, stuck secluded from your clan because of your mistakes and actions?",
+            "Ah, give me a break.",
+            "I wish the Dark Forest would swallow you whole, but then I'd have to deal with you, of all cats."
+        ]
+    ],
+    "murderer_shunned_H1": [
+        [
+            "murdered_them",
+            "you_shunned",
+            "they_dead",
+            "max_they_deadfor_5",
+            "they_introspective",
+            "any"
+        ],
+        [
+            "Oh, it's you.",
+            "[t_c stares at you, warily trying to decipher your intentions.]",
+            "What do you want? Make it quick. I don't want to talk with my murderer."
+        ]
+    ],
+    "murderer_shunned_H2": [
+        [
+            "murdered_them",
+            "you_shunned",
+            "they_dead",
+            "max_they_deadfor_5",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Hah! So you got shunned, huh? At least something good came out of my death."
+        ]
+    ],
+    "murderer_shunned_H3": [
+        [
+            "murdered_them",
+            "you_shunned",
+            "they_dead",
+            "max_they_deadfor_5",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You certainly have a lot of guts, coming to speak to me so soon."
+        ]
     ]
 }

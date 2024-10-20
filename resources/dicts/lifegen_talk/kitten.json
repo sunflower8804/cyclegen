@@ -7034,5 +7034,35 @@
             "I'll go tell r_q that I asked you about it, and that {PRONOUN/r_q/subject}{VERB/r_q/'re/'s} a liar.",
             "[You wonder if {PRONOUN/t_c/subject}'d still react so warmly if you told {PRONOUN/t_c/object} the truth.]"
         ]
-    }
+    },
+    "grievingblind_to_deadkitten_SAM1": [
+        [
+            "they_kitten",
+            "they_dead",
+            "you_blind",
+            "you_grieving",
+            "max_they_deadfor_5",
+            "min_platonic_10",
+            "any"
+        ],
+        [
+            "Hey, y_c! It's me!",
+            "Please don't cry!! I know you're sad that I'm gone, but you can still hang out with me all the time!",
+            "You'll stop being sad before you know it."
+        ]
+    ],
+    "sc_to_blind_H5": [
+        [
+            "you_blind",
+            "they_blind",
+            "they_dead",
+            "they_kitten",
+            "any"
+        ],
+        [
+            "[You can feel the wind disrupt your fur, giggles following right after.]",
+            "Boo!",
+            "Did I scare you?"
+        ]
+    ]
 }
