@@ -23535,5 +23535,183 @@
             "[You bury your head into {PRONOUN/t_c/object} and begin to sob. It all just comes out, you feel like you can't stop it. t_c's tail pats you lightly, they hold you tight and don't let go.]",
             "Just because you're the leader, it doesn't mean you can't cry. Oh little one, I can't imagine the pain you're in. Or how you must have felt keeping it all hidden. But I've got you, and I'm not letting go."
         ]
+    ],
+    "blind_to_dead_J1": [
+        [
+            "they_sc",
+            "you_shunned",
+            "you_blind",
+            "they_blind",
+            "any"
+        ],
+        [
+            "You're not supposed to be here, y_c, I'm sorry. Go home."
+        ]
+    ],
+    "blind_to_dead_J2": [
+        [
+            "they_sc",
+            "you_shunned",
+            "you_blind",
+            "they_blind",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "You don't deserve this pain, y_c. Even after what you did.",
+            "I'm sorry you're going through this."
+        ]
+    ],
+    "blind_to_dead_J3": [
+        [
+            "they_sc",
+            "you_shunned",
+            "you_blind",
+            "they_blind",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "I'm not sure whether to sympathise with you or not.",
+            "I'm sorry you're grieving... but it's just a taste of what your victim's loved ones are going through right now."
+        ]
+    ],
+    "blind_to_dead_J4": [
+        [
+            "they_dead",
+            "you_shunned",
+            "you_blind",
+            "they_blind",
+            "you_grieving",
+            "any",
+            "cool",
+            "silly",
+            "stable"
+        ],
+        [
+            "Bad moon, huh?",
+            "[t_c chuckles in an attempt to lighten the mood. It doesn't help.]"
+        ]
+    ],
+    "blind_to_dead_J5": [
+        [
+            "they_sc",
+            "you_shunned",
+            "you_blind",
+            "they_blind",
+            "any",
+            "brooding",
+            "cool"
+        ],
+        [
+            "That was really stupid of you, y_c.",
+            "You're not supposed to get caught.",
+            "[Is t_c joking..?]"
+        ]
+    ],
+    "blind_to_dead_J6": [
+        [
+            "they_sc",
+            "you_shunned",
+            "only_you_blind",
+            "they_blind",
+            "any",
+            "only_they_deaf"
+        ],
+        [
+            "[Most StarClan cats are wary to keep their pawsteps light when running to try and avoid you. But t_c, unable to hear, paints a clear picture of where {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} running off to when you approach.]",
+            "[You won't follow, but you hope no one tells {PRONOUN/t_c/object}. It's kind of funny.]"
+        ]
+    ],
+    "blind_to_dead_J7": [
+        [
+            "they_df",
+            "you_shunned",
+            "you_blind",
+            "they_blind",
+            "you_grieving",
+            "any"
+        ],
+        [
+            "Hey, you've had a tough moon, I get it.",
+            "Hanging out here probably won't make you feel any better, though. You should go back home."
+        ]
+    ],
+    "blind_to_dead_J8": [
+        [
+            "they_df",
+            "you_shunned",
+            "you_blind",
+            "they_blind",
+            "any"
+        ],
+        [
+            "Hah, you look rough. Come ask us next time if you want some tips on not getting caught."
+        ]
+    ],
+    "blind_to_dead_J9": [
+        [
+            "they_sc",
+            "you_shunned",
+            "you_blind",
+            "they_blind",
+            "any"
+        ],
+        [
+            "If you're seeking redemption, you're out of luck.",
+            "Try asking r_m first. We'd rather you use a messenger than exploit your gift this way."
+        ]
+    ],
+    "blind_to_dead_J10": [
+        [
+            "they_sc",
+            "you_shunned",
+            "you_blind",
+            "they_blind",
+            "any"
+        ],
+        [
+            "I don't understand you, y_c.",
+            "... I hope I never do."
+        ]
+    ],
+    "dead_to_blind_J1": [
+        [
+            "you_sc",
+            "they_shunned",
+            "any",
+            "they_blind"
+        ],
+        [
+            "Are you here to take me to StarClan?",
+            "[You tell {PRONOUN/t_c/object} no. Why {VERB/t_c/do/does} {PRONOUN/t_c/subject} look slightly disappointed?]"
+        ]
+    ],
+    "dead_to_blind_J2": [
+        [
+            "you_sc",
+            "they_shunned",
+            "any",
+            "they_blind",
+            "they_grieving"
+        ],
+        [
+            "Are you here to take me to StarClan?",
+            "[You tell {PRONOUN/t_c/object} no. Why {VERB/t_c/do/does} {PRONOUN/t_c/subject} look slightly disappointed?]"
+        ]
+    ],
+    "dead_to_blind_J4": [
+        [
+            "you_sc",
+            "they_shunned",
+            "any",
+            "they_blind",
+            "you_blind",
+            "min_platonic_20"
+        ],
+        [
+            "[While t_c sleeps, you drop a nice-smelling flower by {PRONOUN/t_c/poss} muzzle.]",
+            "[You feel bad for what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} going through, despite {PRONOUN/t_c/poss} crimes. You hope {PRONOUN/t_c/subject}'ll take it as a sign that things will get better.]"
+        ]
     ]
 }
