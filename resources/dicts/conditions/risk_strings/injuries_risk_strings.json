@@ -216,7 +216,8 @@
     },
     "guilt": {
         "shock": [
-            "m_c is growing more and more haunted by what {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} done."
+          "r_c tries to comfort m_c as {PRONOUN/m_c/subject} {VERB/m_c/grow/grows} more and more haunted by {PRONOUN/m_c/poss} crimes, but there are no herbs for guilt.",
+          "m_c is growing more and more haunted by what {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} done."
         ]
     }
 }
