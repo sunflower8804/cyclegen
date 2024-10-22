@@ -318,11 +318,32 @@
                 "text": "When you come over and talk to them, you find that their disagreement is easily smoothed over with a little bit of compromise. The kits are happy again, and have learned a valuable lesson in how to settle an argument.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Before you can even approach, the two kittens stop their fighting to cry to you about their argument. Apparently, the two kittens can't share the same toys and today was the last straw! You quietly and efficiently find a compromise to their issue.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["MEDIATOR,1"]
+            },
+            {
+                "text": "You huff and approach the kittens, questioning the cause of the fight but get no answer. Though, with an adult now present, the kittens reluctantly stop fighting and sulk off to separate sides of the clearing. That was a little too easy.",
+                "exp": 10,
+                "weight": 20
             }
         ],
         "fail_outcomes": [
             {
                 "text": "Your calm demeanor only seems to irritate the kits more, and they begin sulking, refusing to talk with your presence. You are forced to give up for now, but you at least ensure they don't start fighting again.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You watch them for a moment, then brush off the fight as just a little quarrel. Kittens have a lot to say and a lot of energy to burn - it can't be bad enough to interfere! Though, as the time flies and the kittens come back, you're embarrassed to see both of them torn up and feelings bruised.",
+                "exp": 0,
+                "weight": 10
+            },
+            {
+                "text": "You approach the kittens with the intention of stopping the fighting, but despite your best efforts, the kittens just won't get off each other! You need to call over a wandering warrior to separate the two, but they still hiss. What happened there?",
                 "exp": 0,
                 "weight": 20
             }
@@ -353,11 +374,31 @@
                 "text": "You quietly sit down next to the kit, and they're silent for a moment, before asking you what it's like being a grown-up. They admit they're scared of growing up. You comfort them, and tell them that the future isn't as scary as it seems. You promise you'll protect them. The kit goes to sleep next to you, reassured by your words.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "test": "Your eyes soften. You understand the need to have alone time every now and then, with how chaotic life can be at times, so you halt your calls for the kitten to come back. Instead, you keep a careful eye on the kitten and don't mention their disappearance when they sneak back into the den.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "thoughtful",
+                    "calm",
+                    "flexible",
+                    "wise",
+                    "righteous",
+                    "lonesome",
+                    "gloomy",
+                    "mellow"
+                ]
             }
         ],
         "fail_outcomes": [
             {
                 "text": "You quietly sit down next to the kit, and try to talk to them, but they turn away, bristling. You turn back to see some of the other kits awake and staring, and decide that it might be best to leave them be until tomorrow.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Instead of approaching the kitten yourself, you assign one of the other kittens to make them laugh before bed. The effort was futile, however, as there was no laughing to be heard. You make a mental note to check up on the kitten at a later date.",
                 "exp": 0,
                 "weight": 20
             }
