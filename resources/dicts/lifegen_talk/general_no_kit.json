@@ -23720,5 +23720,105 @@
         [
             "You certainly have a lot of guts, coming to speak to me so soon."
         ]
+    ],
+    "dfskill_artistan_SQ2~1": [
+        [
+            "no_kit",
+            "they_df",
+            "they_artistan",
+            "newleaf",
+            "they_deaf",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[Flowers are springing up all around camp! You jolt as you notice t_c sitting beside a patch of pink ones.]",
+            "[The Dark Forest cat looks ghostly as ever, but the muck on {PRONOUN/t_c/poss} paws stands out amid the bright newleaf colors.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/stare/stares} at the flowers like {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} never seen them before, ignoring your Clanmates even when r_c walks through {PRONOUN/t_c/object}. Then, {PRONOUN/t_c/subject} {VERB/t_c/look/looks} at the nearest den, as if imagining its walls covered in pink petals.]",
+            "[Almost absentmindedly, t_c leans down to bite at the flowers' stems, but of course {PRONOUN/t_c/subject} {VERB/t_c/pass/passes} right through them. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jolt/jolts} and {VERB/t_c/pull/pulls} back, only then noticing you watching.]",
+            "[t_c narrows {PRONOUN/t_c/poss} eyes, turns, and walks away. {PRONOUN/t_c/poss/CAP} form fades before {PRONOUN/t_c/subject} {VERB/t_c/reach/reaches} the edge of camp.]"
+        ]
+    ],
+"dfskill_artistan_SQ2~2~a": [
+     [
+"no_kit",
+"they_df",
+"you_artistan",
+"they_artistan",
+"newleaf",
+"greenleaf",
+"they_deaf",
+"you_deaf",
+"any",
+"connected"
+     ],
+     [
+"[You decorated the entrance of the warriors' den with the pink flowers t_c was interested in when {PRONOUN/t_c/subject} visited c_nClan's camp. You mixed in a few other colors, too!",
+"[You catch sight of t_c staring at your efforts and inconspicuously try to read {PRONOUN/t_c/poss} expression. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} seem angry, at least. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} almost impressed, but also...]",
+"[t_c lets out a deep sigh. ...Yeah. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} sad.]",
+"[You let {PRONOUN/t_c/object} be. {PRONOUN/t_c/subject/CAP} {VERB/t_c/sit/sits} by the warriors' den until the sun begins to set.]"
+     ]
+    ],
+"dfskill_artistan_SQ2~2~b": [
+     [
+"no_kit",
+"they_df",
+"they_artistan",
+"newleaf",
+"greenleaf",
+"they_deaf",
+"you_deaf",
+"any",
+"connected"
+     ],
+     [
+"[You decorated the entrance of the warriors' den with the pink flowers t_c was interested in when {PRONOUN/t_c/subject} visited c_nClan's camp. You're not really a decorator, but you tried your best!]",
+"[You catch sight of t_c staring at your efforts and inconspicuously try to read {PRONOUN/t_c/poss} expression. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} seem angry, at least. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems}...]",
+"[t_c lets out a deep sigh. ...Yeah. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} sad.]",
+"[You let {PRONOUN/t_c/object} be. {PRONOUN/t_c/subject/CAP} {VERB/t_c/sit/sits} by the warriors' den until the sun begins to set.]"
+     ]
+    ],
+"dfskill_innovator_SQ1": [
+     [
+"no_kit",
+"they_df",
+"they_innovator",
+"they_deaf",
+"you_deaf",
+"any"
+     ],
+     [
+"[t_c has a pile of splintery sticks beside {PRONOUN/t_c/object}, and is sharpening them by rubbing them over and over against a sharp-edged rock.]",
+"[What kind of plan could {PRONOUN/t_c/subject} have with those? Do you even want to know?]"
+
+     ]
+    ],
+"dfskill_prophet_SQ1": [
+     [
+"no_kit",
+"they_df",
+"they_prophet",
+"they_deaf",
+"you_deaf",
+"any"
+     ],
+     [
+"[t_c gazes at the red-tinted sky with the same searching expression you'd expect from a medicine cat awaiting a sign from StarClan.]",
+"[Can {PRONOUN/t_c/subject} somehow glean meaning from that starless expanse?]"
+     ]
+    ],
+    "scskill_hunter_SQ1": [
+     [
+"no_kit",
+"they_sc",
+"you_sc",
+"they_hunter",
+"they_deaf",
+"you_deaf"
+     ],
+     [
+"[t_c sits in a soft patch of grass, intently watching the flecks of stardust as they drift upwards.]",
+"[Every time one reaches face-height, {PRONOUN/t_c/subject} deftly {VERB/t_c/bat/bats} it out of the air. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} good at this game!]"
+     ]
     ]
 }

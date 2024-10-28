@@ -3949,5 +3949,22 @@
 "It's reassuring that our ancestors feel the same.",
 "This Clan respects you as our leader, continue to lead with honour and that will never change. There's no leader I'd rather fight for then you, and that's a fact."
  ]
-]
+],
+"livingskill_grace_SQ1": [
+     [
+"you_warrior",
+"you_deputy",
+"you_leader",
+"they_warrior",
+"they_deputy",
+"they_leader",
+"they_grace",
+"leafbare"
+     ],
+     [
+"[It can be difficult to stay quiet while hunting with all the snow on the ground.]",
+"[Most of your Clanmates have to focus on finding the softer, less crunchy sections to walk across, but t_c effortlessly finds the quietest paths.]",
+"[Even when {PRONOUN/t_c/subject} {VERB/t_c/stray/strays} across the louder patches of snow, {PRONOUN/t_c/poss} pawsteps are almost silent.]"
+     ]
+    ]
 }

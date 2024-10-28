@@ -7064,5 +7064,20 @@
             "Boo!",
             "Did I scare you?"
         ]
+    ],
+    "livingskill_treasure_SQ2": [
+     [
+"you_adult",
+"they_kitten",
+"they_treasure",
+"leafbare",
+"they_blind",
+"they_deaf",
+"you_deaf"
+     ],
+     [
+"[t_c struggles to pull a giant icicle piece into the nursery to add to {PRONOUN/t_c/poss} collection.]",
+"[You hope {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not too upset when it melts...]"
+     ]
     ]
 }
