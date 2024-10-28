@@ -23820,5 +23820,49 @@
 "[t_c sits in a soft patch of grass, intently watching the flecks of stardust as they drift upwards.]",
 "[Every time one reaches face-height, {PRONOUN/t_c/subject} deftly {VERB/t_c/bat/bats} it out of the air. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} good at this game!]"
      ]
-    ]
+    ],
+    "they_formerkittypet_sam1~1": {
+        "tags": [
+            "they_formerlyakittypet",
+            "no_kit",
+            "they_silly",
+            "any"
+        ],
+        "intro": [
+            "[You walk into t_c's den to see {PRONOUN/t_c/object} sleeping. As you're about to leave, {PRONOUN/t_c/subject} {VERB/t_c/start/starts} sleep-talking.",
+            "Hey mama! Come watch me hunt this mouse!",
+            "Yes, I know it's not a real mouse, but I can still hunt it! It'll prepare me for when I join c_nClan!",
+            "I'm telling you, I'm going to join that clan someday. Can you imagine being a warrior like that?",
+            "[Wow. t_c has wanted to join the clan from the moment {PRONOUN/t_c/subject} opened {PRONOUN/t_c/poss} eyes.]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Wake {PRONOUN/t_c/object} up",
+                "next_scene": "wake"
+            },
+            "choice2": {
+                "text": "Let {PRONOUN/t_c/object} sleep",
+                "next_scene": "sleep"
+            }
+        },
+        "wake": [
+            "[You decide to wake {PRONOUN/t_c/object} up, curious about {PRONOUN/t_c/poss} dream.]",
+            "What do you want? I was having a nice dream.",
+            "Just about my family from when I was still a kittypet.",
+            "*sigh* I miss them. Of course, I prefer clan life to being cooped up in a twoleg nest, but I still miss them.",
+            "Do I want to.. talk about them? I mean, it might make me feel better.",
+            "Well, I only had one littermate. She and I were complete opposites. She preferred to stare at the stars. I, on the other hand, loved to run around and chase the fireflies.",
+            "My mother was... <i>very</i> overprotective. I think she knew I wanted to join the clan, and was scared I'd get myself hurt.",
+            "I hope my family is okay. Maybe I won't ever see them again.",
+            "I'm going to go back to sleep. Goodnight, y_c."
+        ],
+        "sleep": [
+            "[You decide to let {PRONOUN/t_c/object} sleep, since they seem to be enjoying this dream.]",
+            "[You're curious about {PRONOUN/t_c/poss} dream, so you ask {PRONOUN/t_c/object} the next day.]",
+            "The dream I had last night? It was just about my family from when I was a kittypet.",
+            "Were you watching me sleep?",
+            "That makes sense. Do you still need me to do that for you?",
+            "Oh. Well, thanks for not waking me up. Those dreams are the best ones I get."
+        ]
+    }
 }

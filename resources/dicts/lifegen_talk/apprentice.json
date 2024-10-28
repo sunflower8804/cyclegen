@@ -3444,5 +3444,26 @@
             "No problem, y_c, and thank you. I'll be better tomorrow, I promise.",
             "[You tell {PRONOUN/t_c/object} it's fine if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not, and as {PRONOUN/t_c/subject} slowly {VERB/t_c/walk/walks} back to camp to avoid further strain, you walk with {PRONOUN/t_c/object} and discuss some battle techniques.]"
         ]
-    ]
+    ],
+    "they_formerkittypet_sam1~2": [
+[
+	"they_formerlyakittypet",
+    "no_kit",
+    "they_silly",
+    "they_apprentice",
+    "they_medicine_cat_apprentice",
+    "they_warrior",
+    "they_medicine_cat",
+    "min_platonic_20",
+    "connected"
+],
+[
+	"[t_c has disappeared after going on a solo patrol, and most of the clan is out looking for {PRONOUN/t_c/object}.]",
+    "[Just as d_n was about to send you out on a patrol to go look for {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/burst/bursts} into camp, grinning.]",
+    "Sorry! I probably worried everyone. I'm okay though!",
+    "y_c! y_c! I saw my family!",
+    "Yeah, the cats I were telling you about the other day!",
+    "I'm so glad they're okay. I wonder if d_n would let me go out on patrols to see them sometimes. I could even bring you with me!"
+]
+]
 }

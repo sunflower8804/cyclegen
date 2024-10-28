@@ -2222,5 +2222,81 @@
                 }
             }
         ]
+    },
+    {
+        "patrol_id": "life_df_sam1",
+        "biome" : [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "types": [
+            "lifegen",
+            "df"
+        ],
+        "tags": [],
+        "patrol_art": "df_starcat",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You're training with df_m_n, when you see a StarClan cat, lost. df_m_n growls at the cat, before telling you to go kill them.",
+        "decline_text": "You refuse, forcing yourself to wake up. df_m_n won't be seeing you for a while.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You make quick work of the StarClan cat, barely trying. As the stars fade from their body, you report back to df_m_n, who smirks proudly.",
+                "exp": 20,
+                "weight": 20
+            },
+            {
+                "text": "You use your affinity for StarClan cats to your advantage, thinking one step ahead. df_m_n praises your skill afterwards, stating that {PRONOUN/df_m_n/subject} never thought your gift could be used that way.",
+                "exp": 20,
+                "weight": 20,
+                "stat_skill": ["STAR,1"]
+            },
+            {
+                "text": "You quickly run away, already forming a plan. The StarClan cat catches up to you just for you to jump off of a tree and pounce on them. df_m_n nods proudly.",
+                "exp": 20,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "The StarClan cat puts up a good fight, but you still succeed. As you watch the stars fade from their body, you tend to your wounds.",
+                "exp": 5,
+                "weight": 20,
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["sore", "claw-wound", "broken bone", "bruises", "scrapes", "torn ear"],
+                        "no_results": false
+                    }
+                ]
+            },
+            {
+                "text": "Before you can blink, they're pouncing on you, clawing at your face. You decide that you're not ready for this fight, and run off before you get hurt too badly.",
+                "exp": 0,
+                "weight": 20,
+                "injury": [
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["sore", "bruises", "scrapes", "torn ear"],
+                        "no_results": false
+                    }
+                ]
+            },
+            {
+                "text": "You try your best to beat the StarClan cat, but as you're about to get the upper paw, they finish you off. As you succumb to your injuries, you realize you bit off more than you could chew. Your cold body is found covered in wounds the next morning.",
+                "exp": 0,
+                "weight": 10,
+                "dead_cats": ["y_c"],
+                "history_text": {
+                    "reg_death": "m_c died trying to attack a StarClan cat.",
+                    "lead_death": "failed to win in a battle against a StarClan cat"
+                }
+            }
+        ]
     }
 ] 
