@@ -376,28 +376,31 @@ class Patrol:
         elif game.switches["patrol_category"] == 'lifegen':
             if game.clan.your_cat.status == 'kitten':
                 possible_patrols.extend(self.generate_patrol_events(self.kit_lifegen))
-            elif game.clan.your_cat.status == 'apprentice':
-                possible_patrols.extend(self.generate_patrol_events(self.app_lifegen))
-            elif game.clan.your_cat.status == 'medicine cat apprentice':
-                possible_patrols.extend(self.generate_patrol_events(self.medapp_lifegen))
-            elif game.clan.your_cat.status == 'mediator apprentice':
-                possible_patrols.extend(self.generate_patrol_events(self.mediatorapp_lifegen))
-            elif game.clan.your_cat.status == "queen's apprentice":
-                possible_patrols.extend(self.generate_patrol_events(self.queenapp_lifegen))
-            elif game.clan.your_cat.status == "queen":
-                possible_patrols.extend(self.generate_patrol_events(self.queen_lifegen))
-            elif game.clan.your_cat.status == 'medicine cat':
-                possible_patrols.extend(self.generate_patrol_events(self.med_lifegen))
-            elif game.clan.your_cat.status == 'mediator':
-                possible_patrols.extend(self.generate_patrol_events(self.mediator_lifegen))
-            elif game.clan.your_cat.status == 'deputy':
-                possible_patrols.extend(self.generate_patrol_events(self.deputy_lifegen))
-            elif game.clan.your_cat.status == 'leader':
-                possible_patrols.extend(self.generate_patrol_events(self.leader_lifegen))
-            elif game.clan.your_cat.status == 'elder':
-                possible_patrols.extend(self.generate_patrol_events(self.elder_lifegen))
             else:
-                possible_patrols.extend(self.generate_patrol_events(self.warrior_lifegen))
+                possible_patrols.extend(self.generate_patrol_events(self.general_lifegen))
+
+                if game.clan.your_cat.status == 'apprentice':
+                    possible_patrols.extend(self.generate_patrol_events(self.app_lifegen))
+                elif game.clan.your_cat.status == 'medicine cat apprentice':
+                    possible_patrols.extend(self.generate_patrol_events(self.medapp_lifegen))
+                elif game.clan.your_cat.status == 'mediator apprentice':
+                    possible_patrols.extend(self.generate_patrol_events(self.mediatorapp_lifegen))
+                elif game.clan.your_cat.status == "queen's apprentice":
+                    possible_patrols.extend(self.generate_patrol_events(self.queenapp_lifegen))
+                elif game.clan.your_cat.status == "queen":
+                    possible_patrols.extend(self.generate_patrol_events(self.queen_lifegen))
+                elif game.clan.your_cat.status == 'medicine cat':
+                    possible_patrols.extend(self.generate_patrol_events(self.med_lifegen))
+                elif game.clan.your_cat.status == 'mediator':
+                    possible_patrols.extend(self.generate_patrol_events(self.mediator_lifegen))
+                elif game.clan.your_cat.status == 'deputy':
+                    possible_patrols.extend(self.generate_patrol_events(self.deputy_lifegen))
+                elif game.clan.your_cat.status == 'leader':
+                    possible_patrols.extend(self.generate_patrol_events(self.leader_lifegen))
+                elif game.clan.your_cat.status == 'elder':
+                    possible_patrols.extend(self.generate_patrol_events(self.elder_lifegen))
+                else:
+                    possible_patrols.extend(self.generate_patrol_events(self.warrior_lifegen))
         elif game.switches["patrol_category"] == 'date':
             possible_patrols.extend(self.generate_patrol_events(self.date_lifegen))
         else:
@@ -1008,6 +1011,10 @@ class Patrol:
             with open(f"{resource_dir}general/medcat.json", 'r', encoding='ascii') as read_file:
                 self.MEDCAT_GEN = ujson.loads(read_file.read())
         elif game.switches["patrol_category"] == 'lifegen':
+            self.general_lifegen = None
+            with open(f"{resource_dir}/lifegen/general.json", 'r', encoding='ascii') as read_file:
+                self.general_lifegen = ujson.loads(read_file.read())
+
             self.kit_lifegen = None
             with open(f"{resource_dir}/lifegen/kit.json", 'r', encoding='ascii') as read_file:
                 self.kit_lifegen = ujson.loads(read_file.read())
