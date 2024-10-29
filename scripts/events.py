@@ -1269,6 +1269,8 @@ class Events:
     
     
     def check_gain_app(self, checks):
+        if game.clan.your_cat.dead or game.clan.your_cat.outside:
+            return
         if len(game.clan.your_cat.apprentice) == checks[0] + 1:
             if 'request apprentice' in game.switches:
                 game.switches['request apprentice'] = False

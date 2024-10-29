@@ -360,7 +360,7 @@ class PatrolOutcome:
         else:
             # this is lifegen stuff to add random abbrevs to the list for stat cat possibilities
             # so its not just cats in the patrol
-            patrolcats = patrol.patrol_cats
+            patrolcats = []
             for kitty in patrol.patrol_cat_dict.items():
                 patrolcats.append(kitty[1])
 
@@ -858,7 +858,8 @@ class PatrolOutcome:
 
             for _cat in cats:
                 if self.__handle_accs(_cat, accessory):
-                    results.append(f"{_cat.name} got an accessory!")
+                    if not block.get("no_results"):
+                        results.append(f"{_cat.name} got an accessory!")
 
         return " ".join(results)
             

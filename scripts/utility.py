@@ -3012,7 +3012,7 @@ def cat_dict_check(abbrev, cluster, x, rel, r, text, cat_dict):
             else:
                 text = re.sub(fr'(?<!\/){abbrev}(?!\/)', str(cat_dict[f"{abbrev}"].name), text)
     except KeyError:
-        print("WARNING: Keyerror with", abbrev, ". Do you have dialogue debugged? If not, report as bug!")
+        print("WARNING: Keyerror with", abbrev, ".")
         text = ""
         # returning an empty string to reroll for dialogue
     return text, in_dict
