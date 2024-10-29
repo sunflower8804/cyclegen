@@ -2072,11 +2072,13 @@ def event_text_adjust(
 
     # main_cat
     if "m_c" in text:
-        replace_dict["m_c"] = (str(main_cat.name), choice(main_cat.pronouns))
+        if main_cat:
+            replace_dict["m_c"] = (str(main_cat.name), choice(main_cat.pronouns))
 
     # patrol_lead
     if "p_l" in text:
-        replace_dict["p_l"] = (str(patrol_leader.name), choice(patrol_leader.pronouns))
+        if patrol_leader:
+            replace_dict["p_l"] = (str(patrol_leader.name), choice(patrol_leader.pronouns))
 
     # random_cat
     if "r_c" in text:
