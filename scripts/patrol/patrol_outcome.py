@@ -360,7 +360,7 @@ class PatrolOutcome:
         else:
             # this is lifegen stuff to add random abbrevs to the list for stat cat possibilities
             # so its not just cats in the patrol
-            patrolcats = patrol.patrol_cats
+            patrolcats = []
             for kitty in patrol.patrol_cat_dict.items():
                 patrolcats.append(kitty[1])
 
