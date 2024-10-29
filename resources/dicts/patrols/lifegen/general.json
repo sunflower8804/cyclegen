@@ -328,14 +328,16 @@
         "tags": [
             "halloween"
         ],
-        "patrol_art": "lg_medcat_default",
+        "patrol_art": "kittybat_INTRO",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "healer cats": [1, 1]
+            "queen": [-1, 0],
+            "queen's apprentice": [-1, 0],
+            "elder": [-1, 0]
         },
         "weight": 15,
-        "intro_text": "While sniffing around the border for some herbs, you hear a kittypet call out to you. They've got some sort of weird Twoleg contraption on, and they ask for your help getting out of the thing.",
+        "intro_text": "While sniffing around near the border, you hear a kittypet call out to you. They've got some sort of weird Twoleg contraption on, and they ask for your help getting out of the thing.",
         "decline_text": "You pretend not to hear the kittypet and turn back towards camp. Whatever they're wearing, they don't seem to be in pain from it, so it's not your duty to help the stranger.",
         "chance_of_success": 50,
         "success_outcomes": [
@@ -384,7 +386,7 @@
                 "weight": 20
             },
             {
-                "text": "As you get near the kittypet to help, they change their mind and turn you away, citing the scent of herbs wafting from your pelt is too much to handle. Your tail twitches in irritation as they turn to go back to their Twoleg home. They'd better hope they don't find themselves in a position where they need those herbs!",
+                "text": "As you get near the kittypet to help, they change their mind and turn you away, stating that you smell of herbs and Clan cats, and that's apparently a bad thing. Your tail twitches in irritation as they turn to go back to their Twoleg home. They'd better hope they don't find themselves in a position where they need help from those herbs and cats!",
                 "exp": 0,
                 "weight": 20
             }
