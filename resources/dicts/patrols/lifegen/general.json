@@ -269,8 +269,8 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_w_neurotic has been insisting that a grove of trees on the territory is haunted. {PRONOUN/t_c/subject/CAP} {VERB/t_c/claim/claims} to hear strange noises whenever {PRONOUN/t_c/subject} {VERB/t_c/get/gets} close, and {VERB/t_c/say/says} {PRONOUN/t_c/subject} {VERB/t_c/feel/feels} like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} being watched. After several days of this, you consider checking the grove out yourself.",
-        "decline_text": "You don't have time to investigate every rumor you hear. If r_w_neurotic is really worried, {PRONOUN/t_c/subject} should ask someone to accompany {PRONOUN/t_c/object} {PRONOUN/t_c/self}.",
+        "intro_text": "r_w_neurotic has been insisting that a grove of trees on the territory is haunted. {PRONOUN/r_w_neurotic/subject/CAP} {VERB/r_w_neurotic/claim/claims} to hear strange noises whenever {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/get/gets} close, and {VERB/r_w_neurotic/say/says} {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/feel/feels} like {PRONOUN/r_w_neurotic/subject}{VERB/r_w_neurotic/'re/'s} being watched. After several days of this, you consider checking the grove out yourself.",
+        "decline_text": "You don't have time to investigate every rumor you hear. If r_w_neurotic is really worried, {PRONOUN/r_w_neurotic/subject} should ask someone to accompany {PRONOUN/r_w_neurotic/object} {PRONOUN/r_w_neurotic/self}.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
@@ -291,7 +291,7 @@
                 "stat_skill": ["GHOST,1","DARK,1","STAR,1"]
             },
             {
-                "text": "As you enter the grove, something lunges at you with a yowl! You yelp and prepare to fight or flee, only for you to realize your attacker is... r_w_neurotic? It seems this was the setup to a prank! You wouldn't have guessed r_w_neurotic to be capable of such a thing, but {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} thrilled to have scared you.",
+                "text": "As you enter the grove, something lunges at you with a yowl! You yelp and prepare to fight or flee, only for you to realize your attacker is... r_w_neurotic? It seems this was the setup to a prank! You wouldn't have guessed r_w_neurotic to be capable of such a thing, but {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/seem/seems} thrilled to have scared you.",
                 "exp": 15,
                 "weight": 20
             }
