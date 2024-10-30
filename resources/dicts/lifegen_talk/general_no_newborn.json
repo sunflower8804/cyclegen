@@ -3875,7 +3875,19 @@
             "[You bunt heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
         ]
     ],
-    "shunnedblind_to_deafgrieving_SAM1": [
+    "dead_to_blind_J3": [
+        [
+            "you_dead",
+            "they_shunned",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c is rolling from one side of the camp to the other, groaning in boredom.]"
+        ]
+    ],
+      "shunnedblind_to_deafgrieving_SAM1": [
         [
             "they_deaf",
             "they_grieving",

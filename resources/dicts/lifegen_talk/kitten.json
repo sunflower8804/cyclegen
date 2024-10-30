@@ -5840,7 +5840,7 @@
         ],
         [
             "The other StarClan cats told me you might not be allowed here when you die. Did you do something bad?",
-            "I'll tell them they should reconsider. I'm super smart with words, they'll have to listen to me, just watch!",
+            "I'll tell them they should reconsider. I'm super smart with words, they'll have to listen to me!",
             "[t_c runs off.]"
         ]
     ],
@@ -5882,6 +5882,19 @@
         ],
         [
             "Why are you here?"
+        ]
+    ],
+    "deadkit_J7": [
+        [
+            "they_sc",
+            "you_shunned",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You did something bad, didn't you? I can sense it.",
+            "It's okay. You seem nice. I'll forgive you!"
         ]
     ],
     "allergies_H2": [

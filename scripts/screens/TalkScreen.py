@@ -15,6 +15,7 @@ import pygame_gui
 from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER, screen
 from enum import Enum  # pylint: disable=no-name-in-module
 from scripts.housekeeping.version import VERSION_NAME
+from scripts.special_dates import get_special_date, contains_special_date_tag
 # pylint: disable=consider-using-dict-items
 # pylint: disable=consider-using-enumerate
 
@@ -408,6 +409,8 @@ class TalkScreen(Screens):
         resource_dir = "resources/dicts/lifegen_talk/"
         possible_texts = {}
 
+        special_date = get_special_date()
+
         if game.switches["talk_category"] == "insult":
             with open(f"{resource_dir}insults.json", 'r') as read_file:
                 possible_texts = ujson.loads(read_file.read())
@@ -461,6 +464,14 @@ class TalkScreen(Screens):
                         with open(f"{resource_dir}focuses/{game.clan.focus}.json", 'r') as read_file:
                             possible_texts5 = ujson.loads(read_file.read())
                             possible_texts.update(possible_texts5)
+
+                    if special_date:
+                        with open(f"{resource_dir}focuses/{special_date.patrol_tag}.json", 'r') as read_file:
+                            possible_texts = ujson.loads(read_file.read())
+                    if game.config['fun']['april_fools']:
+                        with open(f"{resource_dir}focuses/aprilfools.json", 'r') as read_file:
+                            possible_texts = ujson.loads(read_file.read())
+
                     
         return self.filter_texts(cat, possible_texts)
 
@@ -544,6 +555,7 @@ class TalkScreen(Screens):
             'song', 'grace', 'clean', 'innovator', 'comforter', 'matchmaker', 'thinker',
             'cooperative', 'scholar', 'time', 'treasure', 'fisher', 'language', 'sleeper', 'dark'
         ]
+        special_date = get_special_date()
         for talk_key, talk in possible_texts.items():
             tags = talk["tags"] if "tags" in talk else talk[0]
             for i in range(len(tags)):
@@ -552,6 +564,10 @@ class TalkScreen(Screens):
             if "debug_ensure_dialogue" in game.config and game.config["debug_ensure_dialogue"]:
                 if game.config["debug_ensure_dialogue"] == talk_key:
                     pass
+
+            if contains_special_date_tag(tags):
+                if not special_date or special_date.patrol_tag not in tags:
+                    continue
 
             if game.switches["talk_category"] == "talk" and ("insult" in tags or "reject" in tags or "accept" in tags):
                 continue
@@ -1592,7 +1608,12 @@ class TalkScreen(Screens):
             "you_injured", "you_ill", "you_grieving", "they_grieving", "you_forgiven",
             "they_forgiven", "murderedyou", "murderedthem"
         ] # List of tags that increase the weight
+
+        special_date = get_special_date()
+        if special_date:
+            weighted_tags.append(special_date)
         weights = []
+
         for item in texts_list.values():
             tags = item["tags"] if "tags" in item else item[0]
             weight = 1
