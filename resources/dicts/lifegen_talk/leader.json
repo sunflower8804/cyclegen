@@ -2097,5 +2097,278 @@
 "[Most of your Clanmates have to focus on finding the softer, less crunchy sections to walk across, but t_c effortlessly finds the quietest paths.]",
 "[Even when {PRONOUN/t_c/subject} {VERB/t_c/stray/strays} across the louder patches of snow, {PRONOUN/t_c/poss} pawsteps are almost silent.]"
      ]
+    ],
+    "neurotic_choice_dfpuddle_SQ45~1": [
+     [
+"no_kit",
+"they_neurotic",
+"max_dislike_10",
+"they_warrior",
+"they_deputy",
+"they_apprentice",
+"they_leader",
+"you_warrior",
+"you_apprentice",
+"you_deputy",
+"you_leader",
+"they_dftrainee",
+"you_dftrainee",
+"leaffall"
+     ],
+     [
+"[It hasn't rained in a while, but while on patrol with r_w and t_c, you discover a large patch of mud in the middle of the territory.]",
+"[It's darker than most mud you're familiar with, and looks stickier, too. It clings to the sticks and grasses around it, leaving black strands that remind you of heavy spiderwebs. It looks almost like...]",
+"[You meet t_c's eyes across the mud puddle, and {PRONOUN/t_c/poss} expression confirms what you're already thinking: this mud looks like the mud from the Dark Forest.]",
+"We.. we should go. I really don't like the look of this.",
+"[t_c darts away without waiting for the rest of the patrol to respond.]"
+     ]
+    ],
+
+"neurotic_choice_dfpuddle_SQ45~2": {
+        "tags": [
+	"no_kit",
+"they_neurotic",
+"max_dislike_10",
+"they_warrior",
+"they_deputy",
+"they_apprentice",
+"they_leader",
+"you_warrior",
+"you_apprentice",
+"you_deputy",
+"you_leader",
+"they_dftrainee",
+"you_dftrainee",
+"connected"
+        ],
+        "intro": [
+            "[Recently, you and t_c encountered a mud puddle that looked suspiciously like Dark Forest mud. t_c has avoided that area since then, but today, {PRONOUN/t_c/subject} {VERB/t_c/ask/asks} you to visit it with {PRONOUN/t_c/object}.]",
+"I just... I can't stop thinking about it. Do you think it means the Dark Forest is growing in influence? Do you think it's... like... becoming more real?",
+"[t_c starts off at a quick trot, but as you approach the middle of the territory, {PRONOUN/t_c/subject} {VERB/t_c/slow/slows} down. By the time you reach the mud puddle {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} dragging {PRONOUN/t_c/poss} paws.]",
+"I... I thought we might've imagined it, or something. But that's it, right? And it's as big as it was before..."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "[Quickly leave.]",
+                "next_scene": "leave"
+            },
+ "choice2": {
+                "text": "[Touch the puddle.]",
+                "next_scene": "touch"
+            },
+            "choice3": {
+                "text": "[Call to the Dark Forest.]",
+                "next_scene": "call"
+            }
+        },
+        "leave": [
+            "[If anything, the puddle seems bigger, and it's a bit unnerving. You quickly turn away, and t_c follows.]",
+"[Neither of you say much for the rest of the day.]"
+        ],
+        "touch": [
+            "[t_c squeaks as you dip one paw into the mud. It clings to your fur, sticky and thick, even as you pull back. It smells like decay.]",
+"Y-you should clean that off before we go back to camp. Here, there's a tuft of grass you can wipe your paw on...",
+"[When you're done cleaning off, t_c silently leads the way home. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} even less at ease than before.]"
+        ],
+        "call": [
+ 	"[You call out. t_c hesitantly joins in.]",
+"rdf_c? Um... can you hear us?",
+"[You listen for a moment. The scent of rot wafts off of the mud.]",
+"I... I guess we can ask tonight. But what if they use that information to... I don't know... invade our territory or something?",
+"Let's get back to camp. I'm sorry... I think this was a bad idea."
+        ]
+    },
+
+"neurotic_choice_dfpuddle_SQ45~3": [
+     [
+"no_kit",
+"they_neurotic",
+"max_dislike_10",
+"they_warrior",
+"they_deputy",
+"they_apprentice",
+"they_leader",
+"you_warrior",
+"you_apprentice",
+"you_deputy",
+"you_leader",
+"they_dftrainee",
+"you_dftrainee",
+"newleaf",
+"connected"
+     ],
+     [
+"[It's taken until newleaf for t_c to check out the potential Dark Forest mud puddle again.]",
+"[While you're on a hunting patrol with r_w1 and r_w2, t_c nervously, subtly leads the group to where the mud used to be.]",
+"[t_c comments on the weather as you walk, but {PRONOUN/t_c/poss} voice quivers. Suddenly, {PRONOUN/t_c/subject} {VERB/t_c/stop/stops}.]",
+"y_c... it was here, right?",
+"[The ground is grass-covered and dappled with flowers. There's no sign that the puddle was ever here: no traces of muck, and no dead plants. t_c stares for a moment.]",
+"I... I don't get it. It was so big before. How can it just be gone?",
+"[t_c looks at the clearing in disbelief before a call from r_w1 snaps {PRONOUN/t_c/object} out of {PRONOUN/t_c/poss} thoughts. {PRONOUN/t_c/subject/CAP} {VERB/t_c/force/forces} a smile and {VERB/t_c/continue/continues} with the patrol.]"
+     ]
+    ],
+    "neurotic_skillclimber_SQ4": [
+     [
+"they_neurotic",
+"they_climber",
+"they_warrior",
+"they_deputy",
+"they_leader",
+"you_apprentice",
+"from_mentor",
+	"neutral"
+     ],
+     [
+"[For training today, t_c leads you to a patch of smooth-barked trees. You rest a paw against one, testing the difficulty of hooking your claws into it.]",
+"We're going to try climbing these today, okay? Um... let me know if you're having trouble, or if you're uncomfortable with heights or anything.",
+"plove_r_w told me that I'm decent at climbing, and so I should teach you a bit of what I know. These trees seem harder to climb because of how smooth their bark is, but there are a few tricks...",
+"Here, let me show you. Being able to climb well is great for escaping predators."
+     ]
+    ],
+    "neurotic_skillsleeper_SQ6": [
+     [
+"they_neurotic",
+"they_sleeper",
+"they_warrior",
+"they_deputy",
+"they_leader",
+"you_apprentice",
+"neutral",
+"they_blind",
+"you_blind"
+     ],
+     [
+"You want some help with your hunting crouch? Uh... sorry, y_c. Maybe later? Or maybe you could ask plove_r_w?",
+"It's just that I, uh, usually take a nap around sunhigh. If I don't, it's kind of hard for me to focus for the rest of the day, and I get super jumpy...",
+"So I'd really like to help you, but it's probably best if I don't right now. Sorry!"
+     ]
+    ],
+    "neurotic_skillteacher_SQ1": [
+     [
+"they_neurotic",
+"they_teacher",
+"they_warrior",
+"they_leader",
+"you_apprentice",
+	"neutral"
+     ],
+     [
+"[After trying unsuccessfully to master a battle move all day, you return to camp with m_n. {PRONOUN/m_n/subject/CAP} {VERB/m_n/head/heads} off to talk to d_n and then relax for the rest of the day, leaving you to figure out what to do next.]",
+"Hey, y_c? I don't mean to intrude, but how are you doing?",
+"[Surprised, you look up to see t_c standing beside you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} awkwardly.]",
+"[With nothing to lose, you tell {PRONOUN/t_c/object} about your day and the move m_n was teaching you, and t_c seems surprised.]",
+"Oh! That one's difficult... it took me forever to get it, and even then I wasn't very good.",
+"[You admit that you haven't really gotten it, either, and t_c thinks for a moment.]",
+"If you have time, I could show you some things that helped me? Nothing world-changing, but they might help you too?",
+"[It's still early in the evening, so you agree! You follow t_c just outside of camp, and the warrior gives you some tips.]",
+"[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} a bit of an awkward teacher, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} patient and {VERB/t_c/explain/explains} things surprisingly well.]"
+     ]
+    ],
+    "neurotic_skilltracker_SQ1": [
+     [
+"they_neurotic",
+"they_tracker",
+"they_warrior",
+"they_deputy",
+"they_leader",
+"you_adult",
+	"min_platonic_15",
+	"leafbare",
+	"you_blind"
+     ],
+     [
+"I tracked a big rabbit halfway across the territory today! Not alone, of course... plike_r_w1 and plike_r_w2 helped me.",
+"It's harder to follow scents with all the snow, but that rabbit left a really distinct trail of footprints!",
+"It does scare me a little, though... I hope wolves and foxes don't think to track us the same way."
+     ]
+    ],
+    "neurotic_about_t_m_SQ3": [
+     [
+"they_neurotic",
+"they_warrior",
+"they_deputy",
+"they_leader",
+"you_warrior",
+"you_deputy",
+"you_leader",
+"you_apprentice",
+"min_platonic_15"
+     ],
+     [
+"[t_c seems disheartened as you both return from a hunting patrol. You compliment the nice bird {PRONOUN/t_c/subject} caught, but t_c just nods absentmindedly.]",
+"*sigh* Sorry. Thanks. I just was really hoping to get a squirrel today... t_m mentioned {PRONOUN/t_m/subject} wished {PRONOUN/t_m/subject} could have one this morning, so I wanted to catch one for {PRONOUN/t_m/object}.",
+"...Oh well. I hope {PRONOUN/t_m/subject} won't be too disappointed."
+     ]
+    ],
+    "neurotic_leafbare_SQ9": [
+     [
+"they_neurotic",
+"they_warrior",
+"they_apprentice",
+"they_deputy",
+"they_leader",
+"you_warrior",
+"you_queen",
+"you_mediator",
+"you_elder",
+"min_platonic_30",
+"min_trust_15",
+"leafbare",
+"beach"
+     ],
+     [
+"[t_c bursts into camp, wind-blown and shaking.]",
+"y_c! Um... plove_r_w and I were hunting by the shore, and {PRONOUN/plove_r_w/subject} fell in the water. {PRONOUN/plove_r_w/subject/CAP} climbed back out, but {PRONOUN/plove_r_w/subject}{VERB/plove_r_w/'re/'s} really cold and {VERB/plove_r_w/say/says} {PRONOUN/plove_r_w/subject} can't feel {PRONOUN/plove_r_w/poss} paws... Please, help!",
+"[plove_r_w stumbles after t_c, violently shivering. You quickly call r_m over, and {PRONOUN/r_m/subject} {VERB/r_m/get/gets} plove_r_w into the medicine den while t_c paces anxiously outside.]",
+"I'm sorry. I should've gotten {PRONOUN/plove_r_w/object} out of the water quicker... I should've been keeping a better eye on {PRONOUN/plove_r_w/object}! I didn't realize the rocks were so slippery!",
+"[You tell t_c that {PRONOUN/t_c/subject} did everything {PRONOUN/t_c/subject} could, and that plove_r_w will be okay. t_c doesn't seem to hear you.]",
+"plove_r_w's so important to me, y_c. What if... what if...",
+"[r_m comes outside shortly after, and assures you both that plove_r_w will be fine. t_c practically collapses in relief before thanking you for your company and rushing into the den.]"
+     ]
+    ],
+    "neurotic_leader_SQ2": [
+        [
+            "you_any",
+"they_leader",
+"they_neurotic",
+"you_deaf",
+"they_deaf",
+"neutral"      
+        ],
+        [
+            "[t_c stands above the camp, preparing to call a Clan meeting. {PRONOUN/t_c/subject/CAP} {VERB/t_c/gaze/gazes} at {PRONOUN/t_c/poss} Clanmates milling below, and you catch a glimpse of something like fear in {PRONOUN/t_c/poss} eyes.]",
+"[Sometimes, you wonder how a nervous cat like t_c can stand the responsibilities of being leader.]"
+        ]
+    ],
+
+"neurotic_leader_SQ3": [
+        [
+            "you_deputy",
+"they_leader",
+"they_neurotic",
+"you_blind",
+"they_blind" 
+        ],
+        [
+            "I'm holding a Clan meeting as soon as r_w's patrol gets back. We should talk about the current state of our prey and herb supplies, and maybe discuss reinforcing the camp wall...",
+"Is there anything else I should bring up? Is there something I've forgotten?"
+        ]
+    ],
+
+"neurotic_leader_SQ4": [
+        [
+            "you_deputy",
+"they_leader",
+"they_neurotic",
+"you_blind",
+"they_blind",
+"min_platonic_30",
+"min_trust_10"
+        ],
+        [
+            "Were you surprised when I chose you as my deputy? I didn't mean to spring that on you. I mean, you were the obvious choice, but I realize now that you still might not have expected it...",
+"I guess this is a belated apology if I caused any stress or... I don't know, problems in general.",
+"Thank you for being my deputy. I couldn't do this without you."
+        ]
     ]
 }

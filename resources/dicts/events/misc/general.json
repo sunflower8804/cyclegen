@@ -334,7 +334,7 @@
     "event_id": "lifegen_reveal_sam1",
     "location": ["any"],
     "season": ["any"],
-    "sub_type": ["murder_reveal","LIFEGEN_no_shun"],
+    "sub_type": ["murder_reveal"],
     "weight": 5,
     "event_text": "r_c snuck out of camp one night to find m_c sitting alone, muttering to {PRONOUN/m_c/self}. {PRONOUN/m_c/subject/CAP} hadn't noticed r_c yet, so {PRONOUN/r_c/subject} sat to listen. m_c was muttering about.. Murder? After listening further, r_c finds out that m_c murdered mur_c.",
     "m_c": {
