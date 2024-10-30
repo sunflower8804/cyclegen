@@ -263,7 +263,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
     "event_text": "Though it's never been a big deal before, r_c has always seen StarClan vividly in both reality and dreams. Seeing mur_c was a gift like no other. r_c cautiously asked if {PRONOUN/mur_c/subject} remembered how {PRONOUN/mur_c/subject} died... and was aghast to learn it was all m_c's doing. Even if it meant revealing {PRONOUN/r_c/poss} gifts, r_c accuses m_c openly, and gives details only mur_c would have known...",
     "m_c": {
@@ -281,7 +281,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
     "event_text": "r_c always felt it was strange - the way mur_c died was suspicious. When mur_c visits {PRONOUN/r_c/object}  in {PRONOUN/r_c/poss} dreams, the truth is finally revealed. m_c killed {PRONOUN/mur_c/object}. The shock startles r_c awake and {PRONOUN/r_c/subject} {VERB/r_c/rush/rushes} to inform the Clan of this horrific revelation.",
     "m_c": {
@@ -290,7 +290,8 @@
     },
     "r_c": {
         "age": ["any"],
-        "status": ["medicine cat"]
+        "status": ["medicine cat"],
+        "skill": ["STAR,1"]
     }
 },
 {
@@ -298,7 +299,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
     "event_text": "r_c has always seen wandering ghosts here and there. Few stick around, but one has approached with worry. The ghost revealed something they'd stumbled upon - a cold-blooded murder. Horrified, r_c learns that mur_c was killed by one of {PRONOUN/r_c/poss} very own Clanmates... m_c. {PRONOUN/r_c/subject/CAP} informs the Clan immediately, telling that a passing loner had seen it and shared the tale with {PRONOUN/r_c/object}.",
     "m_c": {
@@ -316,7 +317,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
     "event_text": "It was r_c's little secret. Seeing the cats of the Dark Forest was a power {PRONOUN/r_c/subject}'d never asked for. In this moment, though, it came in handy. Word through the murk was that mur_c was killed brutally by m_c. Gathering proof through those shadowy spirits, r_c accuses to the Clan - though is a bit tightlipped on how {PRONOUN/r_c/subject} found out.",
     "m_c": {
@@ -350,7 +351,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
     "event_text": "r_c swears {PRONOUN/r_c/subject} heard m_c talking about how {PRONOUN/m_c/subject} murdered mur_c, but nobody seems to believe {PRONOUN/r_c/object}. Later, m_c gets r_c alone and tells {PRONOUN/r_c/object} that {PRONOUN/r_c/subject} {VERB/r_c/need/needs} to drop the story, or else. r_c ran off crying, and enough cats witnessed the aftermath of the conversation to start believing what r_c said.",
     "m_c": {
@@ -367,7 +368,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
     "event_text": "Fed up with the Clan mourning, m_c yowls that {PRONOUN/m_c/subject} should've been exiled a long time ago, and m_c only did what other cats refused. {PRONOUN/m_c/subject/CAP} start to add that {PRONOUN/m_c/subject} would do it again, but r_c manages to shut {PRONOUN/m_c/object} up before {PRONOUN/m_c/subject} make it even worse...",
     "m_c": {
@@ -385,7 +386,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
     "event_text": "r_c knew something was wrong. It just didn't add up, the behavior mur_c had shown before {PRONOUN/mur_c/poss} death just wasn't <i>{PRONOUN/mur_c/object}</i>. After putting together all of the evidence, every story and detail, r_c accuses m_c of murder during a Clan meeting.",
     "m_c": {
@@ -403,9 +404,9 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
-    "event_text": "m_c spreads rumors that r_c killed mur_c, but r_c provides such a good alibi that m_c is finally outed as the murder.",
+    "event_text": "m_c spreads rumors that r_c killed mur_c, but the rumors backfire as it causes suspicion in m_c's reliability. With a little more investigating and questioning, the Clan is horrified to find m_c is mur_c's murderer.",
     "m_c": {
         "age": ["any"],
         "status": ["any"]
@@ -420,7 +421,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
     "event_text": "m_c wakes up during the night and believes {PRONOUN/m_c/subject} see mur_c standing over {PRONOUN/m_c/poss} nest. {PRONOUN/m_c/subject/CAP} begin wailing and begging for mercy, but only manage to alert the entire Clan to {PRONOUN/m_c/poss} sins.",
     "m_c": {
@@ -437,7 +438,7 @@
     "location": ["any"],
     "season": ["leafbare"],
     "sub_type": ["murder_reveal"],
-    "tags": ["clan_discovery"],
+    "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
     "event_text": "While walking along the border, r_c notices a trail of blood staining the snow. Assuming it's a hurt wild animal, r_c crouches low and follows the trail, only to shockingly find the culprit of mur_c's murder -- m_c. r_c quickly darts to the leader to report {PRONOUN/r_c/poss} findings before the evidence could be tainted.",
     "m_c": {
