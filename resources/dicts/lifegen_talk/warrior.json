@@ -3987,5 +3987,38 @@
     "Yeah, the cats I were telling you about the other day!",
     "I'm so glad they're okay. I wonder if d_n would let me go out on patrols to see them sometimes. I could even bring you with me!"
 ]
+],
+"unabashed_warrior_dislike_SV1": [
+[
+"they_warrior",
+"they_unabashed",
+"they_older",
+"they_clanborn",
+"you_deputy",
+"dislike",
+"you_blind",
+"they_blind"
+],
+[
+"Why should I listen to you?",
+"I've been in this Clan longer than you've been alive.",
+"I know how things work around here. I don't need a deputy who's fresh out of the nursery bossing me around."
+]
+],
+"unabashed_leaffall_SV1": [
+[
+"leaffall",
+"they_unabashed",
+"you_apprentice",
+"you_warrior",
+"they_warrior",
+"they_apprentice",
+"you_blind",
+"they_blind"
+],
+[
+"Leaf-bare is coming, and you know what that means… Endless hunting patrols and snow up to our whiskers.",
+"But, hey, at least it gives us an excuse to cozy up inside and listen to r_e's boring stories all day."
+]
 ]
 }

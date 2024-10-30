@@ -2471,5 +2471,35 @@
     "Yeah, the cats I were telling you about the other day!",
     "I'm so glad they're okay. I wonder if d_n would let me go out on patrols to see them sometimes. I could even bring you with me!"
 ]
+],
+"unabashed_medcat_SV2": [
+[
+"they_medicine_cat",
+"they_medicine_cat_apprentice",
+"they_unabashed",
+"you_warrior",
+"you_blind",
+"they_blind",
+"min_dislike_10"
+],
+[
+"Why do warriors all think that herbs work like magic?",
+"Healing takes time and patience, two qualities you all seem to lack."
+]
+],
+"unabashed_medcat_dislike_SV1": [
+[
+"they_medicine_cat",
+"they_unabashed",
+"you_medicine_cat",
+"dislike",
+"you_blind",
+"they_blind"
+],
+[
+"You'd think that after all these moons, you'd know the difference between tansy and dandelion.",
+"Good thing I'm here to save you from your own ignorance.",
+"Now, pass me the right herb this time."
+]
 ]
 }

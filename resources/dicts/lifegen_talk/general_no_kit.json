@@ -24042,5 +24042,56 @@
             "That makes sense. Do you still need me to do that for you?",
             "Oh. Well, thanks for not waking me up. Those dreams are the best ones I get."
         ]
-    }
+    },
+    "unabashed_general_SV1": [
+        [
+            "they_unabashed",
+            "they_outsiderroots",
+            "they_formerlyaloner",
+            "they_formerlyarogue",
+            "they_formerlyakittypet",
+            "they_formerlyaoutsider",
+            "they_originallyfromanotherclan",
+            "you_clanborn",
+            "you_clanfounder",
+            "no_kit",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Ugh, the smell of c_nClan is something I'll never get used to.",
+            "Sometimes I still find myself sniffing and wrinkling my nose. Seriously, what is up with this Clan's stench?",
+            "Did StarClan curse us with a permanent funk?!"
+        ]
+    ],
+    "unabashed_df_SV1": [
+[
+"they_df",
+"they_unabashed",
+"you_warrior",
+"you_apprentice",
+"you_dftrainee",
+"you_formerlyakittypet",
+"you_blind",
+"they_blind"
+],
+[
+"Hah! Look at you, trotting around like a seasoned warrior.",
+"No matter how many scars you earn from training, you'll always have that soft, pampered kittypet look."
+]
+],
+"unabashed_df_SV2": [
+[
+"they_df",
+"they_unabashed",
+"you_apprentice",
+"you_dftrainee",
+"you_blind"
+],
+[
+"I was watching you spar earlier today.",
+"You fight like a squirrel…all twitchy and sporadic.",
+"...I'm choosing to blame that on m_n, not me."
+]
+]
 }
