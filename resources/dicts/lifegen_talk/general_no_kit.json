@@ -23713,8 +23713,7 @@
             "[While t_c sleeps, you drop a nice-smelling flower by {PRONOUN/t_c/poss} muzzle.]",
             "[You feel bad for what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} going through, despite {PRONOUN/t_c/poss} crimes. You hope {PRONOUN/t_c/subject}'ll take it as a sign that things will get better.]"
         ]
-    ]
-},
+    ],
     "introspective_crushto_H2": [
         [
             "they_introspective",
@@ -24044,3 +24043,4 @@
             "Oh. Well, thanks for not waking me up. Those dreams are the best ones I get."
         ]
     }
+}
