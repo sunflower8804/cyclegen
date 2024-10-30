@@ -1836,5 +1836,72 @@
             "No, you don't remember?",
             "Your memory strikes again y_c, hehe. Forget it, I was feeling nostalgic!"
         ]
-    }
+    },
+    "med_to_newborn_H1": [
+        [
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "newborn",
+            "any",
+            "you_deaf",
+            "you_blind",
+            "they_deaf"
+        ],
+        [
+            "[t_c noses at your side, checking for any noticeable discomfort, as medicine cats do.]",
+            "[When {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} find anything particularly concerning, t_c licks the top of your head to provide some comfort.]"
+        ]
+    ],
+    "you_sc_sam1": [
+[
+    "they_medicine_cat_apprentice",
+    "no_kit",
+    "you_sc",
+    "they_star",
+    "they_oblivious"
+],
+[
+"[You notice t_c having some trouble deciphering the prophecies {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} being given, and {PRONOUN/t_c/subject} {VERB/t_c/approach/approaches} you one day.]",
+"Hey, y_c? I can't figure out what this prophecy means. Can you help me?",
+"[t_c describes to you the dream {PRONOUN/t_c/subject} got, and you try to nudge {PRONOUN/t_c/object} in the right direction, knowing you can't tell {PRONOUN/t_c/object} what it means directly.]",
+"Ohhhh, that makes sense! So the whole thing about deciphering prophecies is just looking closely at the details? No wonder I haven't been good at deciphering them.",
+"Thanks y_c!"
+]
+],
+"they_formerkittypet_sam1~2": [
+[
+	"they_formerlyakittypet",
+    "no_kit",
+    "they_silly",
+    "they_apprentice",
+    "they_medicine_cat_apprentice",
+    "they_warrior",
+    "they_medicine_cat",
+    "min_platonic_20",
+    "connected"
+],
+[
+	"[t_c has disappeared after going on a solo patrol, and most of the clan is out looking for {PRONOUN/t_c/object}.]",
+    "[Just as d_n was about to send you out on a patrol to go look for {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/burst/bursts} into camp, grinning.]",
+    "Sorry! I probably worried everyone. I'm okay though!",
+    "y_c! y_c! I saw my family!",
+    "Yeah, the cats I were telling you about the other day!",
+    "I'm so glad they're okay. I wonder if d_n would let me go out on patrols to see them sometimes. I could even bring you with me!"
+]
+],
+"unabashed_medcat_SV2": [
+[
+"they_medicine_cat",
+"they_medicine_cat_apprentice",
+"they_unabashed",
+"you_warrior",
+"you_blind",
+"they_blind",
+"min_dislike_10"
+],
+[
+"Why do warriors all think that herbs work like magic?",
+"Healing takes time and patience, two qualities you all seem to lack."
+]
+]
 }

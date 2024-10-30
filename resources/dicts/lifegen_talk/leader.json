@@ -1986,6 +1986,19 @@
             "...I'm sure it'll be... fine? I'm sorry, y_c. I don't mean to scare you."
         ]
     ],
+    "introspective_crushto_H1": [
+        [
+            "they_introspective",
+            "they_leader",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c watches their_crush from the top of the leaders den, a love struck grin on {PRONOUN/t_c/poss} face.]",
+            "[As soon as you catch sight of the grin, d_n calls out to t_c and t_c straightens, as if {PRONOUN/t_c/subject} {VERB/t_c/were/was} never looking.]",
+            "[... Well, you just caught some juicy secrets.]"
+        ]
+    ],
     "TinyTeddy_stable_theyleader_youapp_01": [
 [
 "they_leader",
@@ -2067,5 +2080,22 @@
 "o_cClan has once again, overstepped some boundaries, and look- I'm not one to shudder in fear when facing other leaders- but... The deputy just became leader. And are proving to be a rather big problem. No-",
 "No I'm sorry, I shouldn't be discussing this out loud. I just- I just want to guarantee the safety of c_nClan. No matter what."
  ]
-]
+],
+"livingskill_grace_SQ1": [
+     [
+"you_warrior",
+"you_deputy",
+"you_leader",
+"they_warrior",
+"they_deputy",
+"they_leader",
+"they_grace",
+"leafbare"
+     ],
+     [
+"[It can be difficult to stay quiet while hunting with all the snow on the ground.]",
+"[Most of your Clanmates have to focus on finding the softer, less crunchy sections to walk across, but t_c effortlessly finds the quietest paths.]",
+"[Even when {PRONOUN/t_c/subject} {VERB/t_c/stray/strays} across the louder patches of snow, {PRONOUN/t_c/poss} pawsteps are almost silent.]"
+     ]
+    ]
 }

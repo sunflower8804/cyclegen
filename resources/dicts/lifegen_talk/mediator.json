@@ -1251,6 +1251,21 @@
             "Well, I just want to make sure nothing bad happens to anyone! You, uh, you know."
         ]
     ],
+    "mediator_to_newborn_H1": [
+        [
+            "they_mediator",
+            "they_mediator_apprentice",
+            "newborn",
+            "you_unlawful",
+            "you_assertive",
+            "any"
+        ],
+        [
+            "Well, hello, y_c! Welcome to the world.",
+            "[As t_c shifts closer, you hiss and spit at {PRONOUN/t_c/object}. The mediator startles back.]",
+            "I'm going to have my paws full with you, huh?"
+        ]
+    ],
     "TinyTeddy_stable_theymediator_youapp_01": [
 [
 "they_mediator",

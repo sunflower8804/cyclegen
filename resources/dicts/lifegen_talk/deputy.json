@@ -2815,5 +2815,22 @@
             "[You smile confidently as the light bounces off {PRONOUN/t_c/poss} fur. You know that it won't happen, you know d_n is a good leader, a true spirit, and a just warrior. {PRONOUN/t_c/subject/CAP} will be fine in whatever happens next.]",
             "[You look to l_n, who couldn't look more prouder.]"
         ]
+    ],
+    "livingskill_grace_SQ1": [
+     [
+"you_warrior",
+"you_deputy",
+"you_leader",
+"they_warrior",
+"they_deputy",
+"they_leader",
+"they_grace",
+"leafbare"
+     ],
+     [
+"[It can be difficult to stay quiet while hunting with all the snow on the ground.]",
+"[Most of your Clanmates have to focus on finding the softer, less crunchy sections to walk across, but t_c effortlessly finds the quietest paths.]",
+"[Even when {PRONOUN/t_c/subject} {VERB/t_c/stray/strays} across the louder patches of snow, {PRONOUN/t_c/poss} pawsteps are almost silent.]"
+     ]
     ]
 }

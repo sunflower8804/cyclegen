@@ -1665,6 +1665,49 @@
             "Ah... all right. Sorry for wasting your time."
         ]
     ],
+    "introspective_crushto_H4": [
+        [
+            "they_introspective",
+            "they_elder",
+            "clan_has_kits",
+            "sc_faith",
+            "you_younger"
+        ],
+        [
+            "Oh, y_c... I'm getting too old for this feeling.",
+            "[t_c glances beyond the camp, their_crush just in sight rounding up a few kits.]",
+            "Hahaha, if I were younger, the moment this crush developed, I would have been ecstatic. Oh, young love...",
+            "But this old cat has too many moons under {PRONOUN/t_c/poss} tail to worry about something like this. I've learned to let things happen just how StarClan intended it."
+        ]
+    ],
+    "introspective_youcrush_H1": [
+        [
+            "they_introspective",
+            "they_elder",
+            "they_grandparent",
+            "you_adult"
+        ],
+        [
+            "Oh, young love...",
+            "[You jump in surprise as t_c sneaks up behind you with a soft, supportive grin.]",
+            "You know, you've been watching your_crush all dusk. It's been surprise you got anything done with how intently you were staring!",
+            "You're making this old cat wonder if I'll get great grandkits soon!"
+        ]
+    ],
+    "introspective_youcrush_H2": [
+        [
+            "they_introspective",
+            "they_elder",
+            "they_grandparent",
+            "you_adult"
+        ],
+        [
+            "y_c I must let you know. It has been eating at me for moons now.",
+            "[t_c glances around before leaning in close, loudly whispering with {PRONOUN/t_c/poss} croaking voice.]",
+            "I'm not ready for great grandkits! Oh Starclan, I am not ready!",
+            "Don't get any funny ideas with your_crush!!"
+        ]
+    ],
     "TinyTeddy_stable_Elder_Gen_01": [
 [
 "they_elder",

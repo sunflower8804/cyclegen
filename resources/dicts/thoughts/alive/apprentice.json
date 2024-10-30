@@ -342,7 +342,7 @@
             "Wants to gather moss for the elder's den",
             "Is making sure there's nothing around camp that needs to be done",
             "Asks r_c if {PRONOUN/r_c/subject} need anything before going on patrol",
-            "Asks r_c if {PRONOUN/r_c/subject} need anything before going hunting",
+            "Asks r_c if {PRONOUN/r_c/subject} {VERB/r_c/need/needs} anything before going hunting",
             "Is lost in thought",
             "Always double checks everything",
             "Wonders what {PRONOUN/m_c/subject} can do to help"

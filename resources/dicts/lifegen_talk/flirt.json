@@ -3775,6 +3775,32 @@
             "You have some nerve..."
         ]
     ],
+    "deaf_to_grieving_H1": [
+        [
+            "grieving_you",
+            "you_deaf",
+            "flirt",
+            "reject",
+            "any"
+        ],
+        [
+            "[t_c looks up at you with burning hurt in {PRONOUN/t_c/poss} eyes.]",
+            "[Maybe don't flirt with {PRONOUN/t_c/object} after you died...]"
+        ]
+    ],
+    "blind_to_grieving_H1": [
+        [
+            "grieving_you",
+            "you_blind",
+            "flirt",
+            "reject",
+            "any"
+        ],
+        [
+            "I don't understand how you can flirt with me right now!",
+            "[t_c bursts into tears and buries {PRONOUN/t_c/poss} head underneath {PRONOUN/t_c/poss} paws.]"
+        ]
+    ],
     "deafflirt_J1": [
         [
             "any",

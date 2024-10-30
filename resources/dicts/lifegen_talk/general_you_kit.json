@@ -5697,5 +5697,62 @@
             "[When you hop up to them, they give you a nod and leap up onto one of the branches. A bit of bouncing up and down sends a cascade of sparkles from the leaves.]",
             "[You wander back into camp with a shiny new pelt!]"
         ]
+    ],
+    "blinddeafnewborn_to_griefingkitten_H1": [
+         [
+             "they_grieving",
+             "any",
+             "newborn",
+             "you_blind",
+             "you_deaf",
+             "they_deaf",
+             "they_blind",
+             "min_platonic_10",
+             "sibling",
+             "adopted_sibling",
+             "half sibling"
+         ],
+         [
+             "[You can feel t_c curl into your nest around you, looking for any sort of comfort.]"
+         ]
+     ],
+     "introspective_crushto_H3": [
+        [
+            "they_introspective",
+            "you_kitten",
+            "they_adult"
+        ],
+        [
+            "Who do I have a crush on? Don't you know not to ask something so personal?",
+            "[t_c sighs exasperatedly and humors your questioning.]",
+            "Well... they're a bit rough around the edges, closed off, no nonsense type of cat, <i>maybe</i> secretly a softy...",
+            "[t_c voice drifts and {PRONOUN/t_c/subject} go silent for a moment, lost in {PRONOUN/t_c/poss} thoughts.]",
+            "Ah, that's enough for today. Any more detail and you'll know who I have a crush on! Ha... Haha..."
+        ]
+    ],
+   "faith_to_newborn_H1": [
+        [
+            "sc_faith",
+            "no_kit",
+            "newborn",
+            "any"
+        ],
+        [
+            "I hope StarClan guides you, little one. The stars shall give you wonder and answers, I just know it.",
+            "And if you don't believe so... Well, that'll be okay!"
+        ]
+    ],
+    "faith_to_newborn_H2": [
+        [
+            "df_faith",
+            "no_kit",
+            "newborn",
+            "any"
+        ],
+        [
+            "[t_c's voice hushes as {PRONOUN/t_c/subject} {VERB/t_c/shift/shifts} closer.]",
+            "I wish the Dark Forest gifts you the strength and courage to go for what you believe in, no matter what other cats say you <i>should</i> do.",
+            "The Dark Forest is a dangerous place, but I like to believe it's more alive and genuine than StarClan."
+        ]
     ]
 }

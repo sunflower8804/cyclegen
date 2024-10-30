@@ -2326,6 +2326,21 @@
             "[It seems {PRONOUN/t_c/subject} still {VERB/t_c/don't/doesn't} trust you anywhere near {PRONOUN/t_c/poss} herb stores...]"
         ]
     ],
+    "med_to_newborn_H1": [
+        [
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "newborn",
+            "any",
+            "you_deaf",
+            "you_blind",
+            "they_deaf"
+        ],
+        [
+            "[t_c noses at your side, checking for any noticeable discomfort, as medicine cats do.]",
+            "[When {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} find anything particularly concerning, t_c licks the top of your head to provide some comfort.]"
+        ]
+    ],
     "TinyTeddy_stable_theymedicine_youapp_01": [
 [
 "they_medicine_cat",
@@ -2435,5 +2450,56 @@
 "...",
 "Oh you think you're funny, don't you?"
  ]
+],
+"they_formerkittypet_sam1~2": [
+[
+	"they_formerlyakittypet",
+    "no_kit",
+    "they_silly",
+    "they_apprentice",
+    "they_medicine_cat_apprentice",
+    "they_warrior",
+    "they_medicine_cat",
+    "min_platonic_20",
+    "connected"
+],
+[
+	"[t_c has disappeared after going on a solo patrol, and most of the clan is out looking for {PRONOUN/t_c/object}.]",
+    "[Just as d_n was about to send you out on a patrol to go look for {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/burst/bursts} into camp, grinning.]",
+    "Sorry! I probably worried everyone. I'm okay though!",
+    "y_c! y_c! I saw my family!",
+    "Yeah, the cats I were telling you about the other day!",
+    "I'm so glad they're okay. I wonder if d_n would let me go out on patrols to see them sometimes. I could even bring you with me!"
+]
+],
+"unabashed_medcat_SV2": [
+[
+"they_medicine_cat",
+"they_medicine_cat_apprentice",
+"they_unabashed",
+"you_warrior",
+"you_blind",
+"they_blind",
+"min_dislike_10"
+],
+[
+"Why do warriors all think that herbs work like magic?",
+"Healing takes time and patience, two qualities you all seem to lack."
+]
+],
+"unabashed_medcat_dislike_SV1": [
+[
+"they_medicine_cat",
+"they_unabashed",
+"you_medicine_cat",
+"dislike",
+"you_blind",
+"they_blind"
+],
+[
+"You'd think that after all these moons, you'd know the difference between tansy and dandelion.",
+"Good thing I'm here to save you from your own ignorance.",
+"Now, pass me the right herb this time."
+]
 ]
 }

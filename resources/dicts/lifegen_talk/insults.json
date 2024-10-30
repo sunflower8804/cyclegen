@@ -2410,7 +2410,7 @@
     "leader_1ax5x": [
         [
             "Any",
-            "they_kitten",
+            "you_kitten",
             "insult",
             "you_blind",
             "they_blind",
@@ -3236,6 +3236,39 @@
             "[t_c stands with wobbly legs, {PRONOUN/t_c/poss} eyes welling with tears. {PRONOUN/t_c/subject} brushes {PRONOUN/t_c/poss} paw over {PRONOUN/t_c/poss} eyes quickly and stumble backwards.]",
             "I- I need to go!",
             "[You watch as {PRONOUN/t_c/subject} scampers off, tears rolling down {PRONOUN/t_c/poss} cheeks. Other cats watch as t_c runs away, then all eyes turn to face you. You can't help but flinch under the harsh gaze of the warriors or scowls of the queens.]"
+        ]
+    ],
+    "blind_to_shunnedcat_insult_H1": [
+        [
+            "insult",
+            "they_shunned",
+            "you_blind",
+            "no_kit"
+        ],
+        [
+            "Are you having fun insulting me when you're vulnerable? And alone?",
+            "I'd back up if I was you."
+        ]
+    ],
+    "deaf_to_shunnedcat_insult_H2": [
+        [
+            "insult",
+            "they_shunned",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c hisses at you, then walks away with a tail flick.]"
+        ]
+    ],
+    "kitten_to_kitten_H1": [
+        [
+            "they_kitten",
+            "you_kitten",
+            "insult"
+        ],
+        [
+            "Well - Well- you're short too!!"
         ]
     ]
 }

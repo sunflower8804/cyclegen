@@ -224,7 +224,7 @@
             "you_blind"
         ],
         [
-            "Oops-! Careful there y_c! I don't think you're supposed to leave the nursery just yet, you're just a bit too young",
+            "Oops-! Careful there y_c! I don't think you're supposed to leave the nursery just yet, you're just a bit too young.",
             "The older cats wouldn't be too happy if they found out I let you out into the camp, but hey! There are tons of things to do here! We could play moss-ball, Hunt the Feather, Invasion, anything!",
             "You might be a little shaky on your paws, but that's alright! You're still getting used to them. Don't worry, I was like that too once. You'll find your balance soon enough, maybe you can go outside by then!",
             "There's a lot that I want to show you. What do you want to play first?"
@@ -7047,5 +7047,50 @@
             "I'll go tell r_q that I asked you about it, and that {PRONOUN/r_q/subject}{VERB/r_q/'re/'s} a liar.",
             "[You wonder if {PRONOUN/t_c/subject}'d still react so warmly if you told {PRONOUN/t_c/object} the truth.]"
         ]
-    }
+    },
+    "grievingblind_to_deadkitten_SAM1": [
+        [
+            "they_kitten",
+            "they_dead",
+            "you_blind",
+            "you_grieving",
+            "max_they_deadfor_5",
+            "min_platonic_10",
+            "any"
+        ],
+        [
+            "Hey, y_c! It's me!",
+            "Please don't cry!! I know you're sad that I'm gone, but you can still hang out with me all the time!",
+            "You'll stop being sad before you know it."
+        ]
+    ],
+    "sc_to_blind_H5": [
+        [
+            "you_blind",
+            "they_blind",
+            "they_dead",
+            "they_kitten",
+            "any"
+        ],
+        [
+            "[You can feel the wind disrupt your fur, giggles following right after.]",
+            "Boo!",
+            "Did I scare you?"
+        ]
+    ],
+    "livingskill_treasure_SQ2": [
+     [
+"you_adult",
+"they_kitten",
+"they_treasure",
+"leafbare",
+"they_blind",
+"they_deaf",
+"you_deaf"
+     ],
+     [
+"[t_c struggles to pull a giant icicle piece into the nursery to add to {PRONOUN/t_c/poss} collection.]",
+"[You hope {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not too upset when it melts...]"
+     ]
+    ]
 }
