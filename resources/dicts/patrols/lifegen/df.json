@@ -46,7 +46,8 @@
                     "flexible",
                     "careful"
                 ],
-                "stat_skill": ["FIGHTER,1", "GUARDIAN,1", "INSIGHTFUL,1", "SENSE,1"]
+                "stat_skill": ["FIGHTER,1", "GUARDIAN,1", "INSIGHTFUL,1", "SENSE,1"],
+                "can_have_stat": ["p_l"]
             },
             {
                 "text": "You swerve around, just as a cat lunges from the shadows and aims their claws at your pelt. You react faster than the attacker can, ducking the blow, before retailiating with a rake to their belly. You watch as they tumble to the ground from the attack. It seems you've learned a thing or two here.",
@@ -63,7 +64,8 @@
                     "flexible",
                     "careful"
                 ],
-                "stat_skill": ["FIGHTER,1", "GUARDIAN,1", "INSIGHTFUL,1", "SENSE,1"]
+                "stat_skill": ["FIGHTER,1", "GUARDIAN,1", "INSIGHTFUL,1", "SENSE,1"],
+                "can_have_stat": ["p_l"]
             }
         ],
         "fail_outcomes": [
@@ -186,7 +188,8 @@
                     "fierce",
                     "vengeful"
                 ],
-                "stat_skill": ["FIGHTER,1", "SENSE,1"]
+                "stat_skill": ["FIGHTER,1", "SENSE,1"],
+                "can_have_stat": ["p_l"]
             },
             {
                 "text": "You accept the training, but when you show more skill than the ghostly warrior themselves, deflecting every one of their attacks, they hiss and stalk back into the trees.",
@@ -201,7 +204,8 @@
                     "fierce",
                     "vengeful"
                 ],
-                "stat_skill": ["FIGHTER,1", "SENSE,1"]
+                "stat_skill": ["FIGHTER,1", "SENSE,1"],
+                "can_have_stat": ["p_l"]
             }
         
         ],
@@ -268,7 +272,8 @@
                     "righteous",
                     "rebellious"
                 ],
-                "stat_skill": ["CLAIRVOYANT,1", "CLEVER,1", "GHOST,1", "LORE,1","PROPHET,1", "OMEN,1", "SCHOLAR,1", "STAR,1"]
+                "stat_skill": ["CLAIRVOYANT,1", "CLEVER,1", "GHOST,1", "LORE,1","PROPHET,1", "OMEN,1", "SCHOLAR,1", "STAR,1"],
+                "can_have_stat": ["p_l"]
             },
             {
                 "text": "You agree to their terms and upon waking, you relay the message to your Clan's medicine cat along with the prophecy.",
@@ -366,7 +371,8 @@
                 "text": "You guide the cat through the eerie forest, successfully leading them out. They wake up grateful for your help.",
                 "exp": 20,
                 "weight": 20,
-                "stat_skill": ["COMFORTER,1", "DREAM,1", "GUARDIAN,1", "NAVIGATOR,1", "STAR, 1", "TRACKER,1"]
+                "stat_skill": ["COMFORTER,1", "DREAM,1", "GUARDIAN,1", "NAVIGATOR,1", "STAR, 1", "TRACKER,1"],
+                "can_have_stat": ["p_l"]
             },
             {
                 "text": "There's no need for {PRONOUN/n_c:0/object} to be afraid. You coax {PRONOUN/n_c:0/object} into joining you and your mentor. Although {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} hesitant at first, you soon meet {PRONOUN/n_c:0/object} on more and more nights, now confident with a pelt of muck.",
@@ -452,7 +458,8 @@
                     "cunning",
                     "adventurous"
                 ],
-                "stat_skill": ["SWIMMER,1", "THINKER,1", "SENSE,1", "NAVIGATOR,1", "CLEVER,1"]
+                "stat_skill": ["SWIMMER,1", "THINKER,1", "SENSE,1", "NAVIGATOR,1", "CLEVER,1"],
+                "can_have_stat": ["p_l"]
             },
             {
                 "text": "You stay calm, holding your breath and treading water until you reach the surface again. Some of the water was swallowed, however, and by morning your Clanmates find you ill without clear cause.",
@@ -595,6 +602,7 @@
                 "weight": 20,
                 "stat_trait": ["cunning", "wise","ambitious","bold","daring","calm","careful","loyal","compassionate","thoughtful","flexible","trusting"],
                 "stat_skill": ["FIGHTER,1", "TEACHER,1", "INSIGHTFUL,1","SCHOLAR,1"],
+                "can_have_stat": ["p_l"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -722,6 +730,7 @@
                 "exp": 25,
                 "weight": 20,
                 "stat_trait":["cunning", "sincere", "confident","responsible", "loving","loyal", "charismatic", "trusting", "playful", "compassionate","thoughtful"],
+                "can_have_stat": ["p_l"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1758,7 +1767,8 @@
                     "fierce",
                     "vengeful"
                 ],
-                "stat_skill": ["FIGHTER,1", "GUARDIAN,1", "DARK,1","CLEVER,1"]
+                "stat_skill": ["FIGHTER,1", "GUARDIAN,1", "DARK,1","CLEVER,1"],
+                "can_have_stat": ["p_l"]
             },
             {
                 "text": "Nothing but a trick of the light... There's no one there, even though there should be... ",
@@ -2254,7 +2264,8 @@
                 "text": "You use your affinity for StarClan cats to your advantage, thinking one step ahead. df_m_n praises your skill afterwards, stating that {PRONOUN/df_m_n/subject} never thought your gift could be used that way.",
                 "exp": 20,
                 "weight": 20,
-                "stat_skill": ["STAR,1"]
+                "stat_skill": ["STAR,1"],
+                "can_have_stat": ["p_l"]
             },
             {
                 "text": "You quickly run away, already forming a plan. The StarClan cat catches up to you just for you to jump off of a tree and pounce on them. df_m_n nods proudly.",
