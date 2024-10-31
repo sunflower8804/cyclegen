@@ -1730,5 +1730,20 @@
 "...",
 "I'm not a big fan of small talk."
  ]
-]
+],
+"neurotic_elder_SQ4": [
+     [
+"they_neurotic",
+"they_elder",
+"you_kitten",
+"neutral",
+"they_blind",
+"you_blind"
+     ],
+     [
+"[You're allowed into the elders' den to ask t_c for a story! You pad up to {PRONOUN/t_c/object} and make your request, but t_c hesitates.]",
+"Uh... I don't know, little one. I can't think of any good stories right now, and I don't want you to be disappointed.",
+"How about you ask r_e? {PRONOUN/r_e/subject/CAP} had a good one yesterday."
+     ]
+    ]
 }
