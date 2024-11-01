@@ -3789,18 +3789,6 @@
             "[Maybe don't flirt with {PRONOUN/t_c/object} after you died...]"
         ]
     ],
-    "deaf_to_grieving_H2": [
-        [
-            "you_deaf",
-            "they_deaf",
-            "flirt",
-            "reject",
-            "any"
-        ],
-        [
-            "[t_c pretends you're not there.]"
-        ]
-    ],
     "blind_to_grieving_H1": [
         [
             "grieving_you",
