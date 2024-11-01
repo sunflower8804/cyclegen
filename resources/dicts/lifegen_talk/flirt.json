@@ -3779,6 +3779,7 @@
         [
             "grieving_you",
             "you_deaf",
+            "they_deaf",
             "flirt",
             "reject",
             "any"
@@ -3786,6 +3787,19 @@
         [
             "[t_c looks up at you with burning hurt in {PRONOUN/t_c/poss} eyes.]",
             "[Maybe don't flirt with {PRONOUN/t_c/object} after you died...]"
+        ]
+    ],
+    "deaf_to_grieving_H2": [
+        [
+            "grieving_you",
+            "you_deaf",
+            "they_deaf",
+            "flirt",
+            "reject",
+            "any"
+        ],
+        [
+            "[t_c pretends you're not there.]"
         ]
     ],
     "blind_to_grieving_H1": [
