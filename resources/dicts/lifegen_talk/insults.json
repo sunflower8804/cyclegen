@@ -146,7 +146,7 @@
     ],
     "dep_132": [
         [
-            "newborn",
+            "you_newborn",
             "insult",
             "you_blind",
             "they_blind",
@@ -1627,8 +1627,7 @@
         [
             "insult",
             "you_shunned",
-            "they_newborn",
-            "they_not_kit"
+            "they_newborn"
         ],
         [
             "[t_c spits at you, and t_p quickly returns, swiping you away from their precious kit.]"
@@ -1781,8 +1780,7 @@
             "insult",
             "they_forgiven",
             "they_any",
-            "you_newborn",
-            "they_not_kit"
+            "you_newborn"
         ],
         [
             "Err. You have a ferocious mew, y_c. I suppose?"
@@ -2063,11 +2061,10 @@
     "newborn_to_shunned_insult_J1": [
         [
             "they_shunned",
-            "newborn",
+            "you_newborn",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "What?"
@@ -2075,12 +2072,11 @@
     ],
     "newborninsult_J1": [
         [
-            "newborn",
+            "you_newborn",
             "they_older",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Um... hello..?"
@@ -2088,12 +2084,11 @@
     ],
     "newborninsult_J2": [
         [
-            "newborn",
+            "you_newborn",
             "they_older",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Wha.. What was that?"
@@ -2102,9 +2097,8 @@
     "unlawful_tonewborn_neg1": [
         [
             "insult",
-            "newborn",
-            "unlawful",
-            "they_not_kit"
+            "you_newborn",
+            "unlawful"
         ],
         [
             "You've got a lot to say for such a small scrap of fur, huh?"
@@ -2307,11 +2301,10 @@
     "newborn_shunnedkit_insult_J1": [
         [
             "they_shunned",
-            "newborn",
+            "you_newborn",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "What?"
@@ -2483,10 +2476,10 @@
     "newborn_7": [
         [
             "Any",
+            "they_newborn",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_newborn"
+            "you_blind"
         ],
         [
             "Grr..."
@@ -2500,8 +2493,7 @@
             "they_dead",
             "they_outside",
             "they_blind",
-            "you_blind",
-            "they_newborn"
+            "you_blind"
         ],
         [
             "Grr..."
@@ -2929,7 +2921,7 @@
     "newborn_to_newborn_H1": [
         [
             "they_newborn",
-            "newborn",
+            "you_newborn",
             "insult",
             "they_deaf"
         ],
@@ -2941,7 +2933,7 @@
     "newborn_to_newborn_H2": [
         [
             "they_newborn",
-            "newborn",
+            "you_newborn",
             "insult"
         ],
         [
@@ -3051,7 +3043,7 @@
     ],
     "newborn_insult_J1": [
         [
-            "newborn",
+            "you_newborn",
             "they_newborn",
             "insult"
         ],
@@ -3062,7 +3054,7 @@
     "newborn_to_newborn_H3": [
         [
             "they_newborn",
-            "newborn",
+            "you_newborn",
             "they_deaf",
             "you_deaf",
             "they_blind",
