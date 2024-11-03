@@ -956,6 +956,7 @@ class Condition_Events:
     @staticmethod
     def give_risks(cat, event_list, condition, progression, conditions, dictionary):
         event_triggered = False
+        event = ""
         if dictionary == cat.permanent_condition:
             event_triggered = True
         if "risks" not in conditions[condition]:
