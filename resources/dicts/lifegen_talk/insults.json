@@ -72,8 +72,7 @@
             "you_blind",
             "they_blind",
             "you_deaf",
-            "they_deaf",
-            "they_not_kit"
+            "they_deaf"
         ],
         [
             "..."
@@ -147,7 +146,7 @@
     ],
     "dep_132": [
         [
-            "newborn",
+            "you_newborn",
             "insult",
             "you_blind",
             "they_blind",
@@ -217,8 +216,7 @@
             "you_blind",
             "they_deaf",
             "you_deaf",
-            "any",
-            "they_not_kit"
+            "any"
         ],
         [
             "[You feel too guilty to insult this cat.]"
@@ -230,8 +228,7 @@
             "they_grieving",
             "they_blind",
             "you_blind",
-            "any",
-            "they_not_kit"
+            "any"
         ],
         [
             "[You approach, an insult on your tongue, but realize t_c is curled in a ball, softly sobbing.]",
@@ -246,8 +243,7 @@
             "cool",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Ahahahaaa! Good one!"
@@ -261,8 +257,7 @@
             "cool",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Bold of you to assume that I care."
@@ -316,8 +311,7 @@
             "insult",
             "platonic_like",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Hey! What gives?"
@@ -368,8 +362,7 @@
             "insult",
             "brooding",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Um. Okay."
@@ -382,8 +375,7 @@
             "brooding",
             "platonic_like",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Haha. Good one."
@@ -480,8 +472,7 @@
             "insult",
             "neurotic",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Oh yeah? Well you're a - a ... uhm ... uh ...",
@@ -537,8 +528,7 @@
             "neurotic",
             "platonic_like",
             "romantic_like",
-            "they_blind",
-            "they_not_kit"
+            "they_blind"
         ],
         [
             "You don't mean that, right, y_c? ...y_c? Please tell me you don't mean it...!"
@@ -552,8 +542,7 @@
             "platonic_like",
             "romantic_like",
             "respect",
-            "they_blind",
-            "they_not_kit"
+            "they_blind"
         ],
         [
             "What did I do wrong? I can- I- I can fix it! Or at least try!"
@@ -579,8 +568,7 @@
             "no_kit",
             "assertive",
             "insult",
-            "they_blind",
-            "they_not_kit"
+            "they_blind"
         ],
         [
             "Fight me like a real warrior does!"
@@ -738,8 +726,7 @@
             "insult",
             "sweet",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "That's not very nice of you to say..."
@@ -751,8 +738,7 @@
             "insult",
             "sweet",
             "dislike",
-            "they_blind",
-            "they_not_kit"
+            "they_blind"
         ],
         [
             "Why are you so mean all the time?"
@@ -766,8 +752,7 @@
             "neurotic",
             "platonic_like",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "You... you don't really mean that... do you, y_c...?"
@@ -909,7 +894,7 @@
     ],
     "silly_insult_9": [
         [
-            "elder",
+            "you_elder",
             "insult",
             "silly",
             "they_blind",
@@ -978,8 +963,7 @@
             "insult",
             "unabashed",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Well, you suck."
@@ -992,8 +976,7 @@
             "unabashed",
             "you_cool",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "I may not be cool, but you're mean. And personally, I think that's worse."
@@ -1005,8 +988,7 @@
             "insult",
             "unabashed",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Okay, grumpy."
@@ -1045,8 +1027,7 @@
             "any",
             "cool",
             "silly",
-            "they_blind",
-            "they_not_kit"
+            "they_blind"
         ],
         [
             "Your meow is worse than your bite."
@@ -1253,8 +1234,7 @@
             "any",
             "you_blind",
             "they_blind",
-            "insult",
-            "they_not_kit"
+            "insult"
         ],
         [
             "I know."
@@ -1497,8 +1477,7 @@
             "insult",
             "they_blind",
             "you_deaf",
-            "they_deaf",
-            "they_not_kit"
+            "they_deaf"
         ],
         [
             "[t_c doesn't even react to your insult.]"
@@ -1511,8 +1490,7 @@
             "insult",
             "they_blind",
             "you_deaf",
-            "they_deaf",
-            "they_not_kit"
+            "they_deaf"
         ],
         [
             "[t_c doesn't even react to your insult.]"
@@ -1525,8 +1503,7 @@
             "insult",
             "they_blind",
             "you_deaf",
-            "they_deaf",
-            "they_not_kit"
+            "they_deaf"
         ],
         [
             "[t_c doesn't even react to your insult.]"
@@ -1553,8 +1530,7 @@
             "insult",
             "they_kitten",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "What?!"
@@ -1594,8 +1570,7 @@
             "you_grieving",
             "you_shunned",
             "any",
-            "insult",
-            "they_not_kit"
+            "insult"
         ],
         [
             "[t_c just stares into space, not hearing you.]"
@@ -1642,7 +1617,7 @@
             "insult",
             "you_shunned",
             "they_kitten",
-            "they_not_kit"
+            "you_any"
         ],
         [
             "Eep! Go away! Go away!"
@@ -1652,8 +1627,7 @@
         [
             "insult",
             "you_shunned",
-            "they_newborn",
-            "they_not_kit"
+            "they_newborn"
         ],
         [
             "[t_c spits at you, and t_p quickly returns, swiping you away from their precious kit.]"
@@ -1664,7 +1638,7 @@
             "insult",
             "you_shunned",
             "they_kitten",
-            "they_not_kit"
+            "you_any"
         ],
         [
             "t_p told me never, ever to listen to you! Because, uh, uhmm...",
@@ -1678,11 +1652,11 @@
             "they_kitten",
             "silly",
             "unabashed",
-            "they_not_kit"
+            "you_any"
         ],
         [
             "Blehhhhh!!!",
-            "[t_c sticks their tongue out at you and makes a strange, scowling face.]",
+            "[t_c sticks {PRONOUN/t_c/poss} tongue out at you and makes a strange, scowling face.]",
             "That's how you look! Haha!"
         ]
     ],
@@ -1691,7 +1665,7 @@
             "insult",
             "you_shunned",
             "they_kitten",
-            "they_not_kit"
+            "you_any"
         ],
         [
             "Wahhhhh!!!!!!",
@@ -1784,7 +1758,7 @@
             "they_not_kit"
         ],
         [
-            "[t_c clicks their tongue and looks the other way.]",
+            "[t_c clicks {PRONOUN/t_c/poss} tongue and looks the other way.]",
             "I thought I was forgiven for my crimes. Do you <i>still</i> hate me?"
         ]
     ],
@@ -1806,8 +1780,7 @@
             "insult",
             "they_forgiven",
             "they_any",
-            "newborn",
-            "they_not_kit"
+            "you_newborn"
         ],
         [
             "Err. You have a ferocious mew, y_c. I suppose?"
@@ -1879,7 +1852,7 @@
             "they_not_kit"
         ],
         [
-            "Can a cat not enjoy a day unshunned to themselves?",
+            "Can a cat not enjoy a day unshunned to {PRONOUN/t_c/self}?",
             "Kids, these days..."
         ]
     ],
@@ -1905,7 +1878,7 @@
             "they_not_kit"
         ],
         [
-            "Ouch, I would have thought with so much venom in your tone, you'd be better at this by now."
+            "Ouch, I would have thought with so much venom on your tone, you'd be better at this by now."
         ]
     ],
     "gen_forgiven_insult_Guy1": [
@@ -2088,11 +2061,10 @@
     "newborn_to_shunned_insult_J1": [
         [
             "they_shunned",
-            "newborn",
+            "you_newborn",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "What?"
@@ -2100,12 +2072,11 @@
     ],
     "newborninsult_J1": [
         [
-            "newborn",
+            "you_newborn",
             "they_older",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Um... hello..?"
@@ -2113,12 +2084,11 @@
     ],
     "newborninsult_J2": [
         [
-            "newborn",
+            "you_newborn",
             "they_older",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "Wha.. What was that?"
@@ -2127,9 +2097,8 @@
     "unlawful_tonewborn_neg1": [
         [
             "insult",
-            "newborn",
-            "unlawful",
-            "they_not_kit"
+            "you_newborn",
+            "unlawful"
         ],
         [
             "You've got a lot to say for such a small scrap of fur, huh?"
@@ -2332,11 +2301,10 @@
     "newborn_shunnedkit_insult_J1": [
         [
             "they_shunned",
-            "newborn",
+            "you_newborn",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_not_kit"
+            "you_blind"
         ],
         [
             "What?"
@@ -2508,10 +2476,10 @@
     "newborn_7": [
         [
             "Any",
+            "they_newborn",
             "insult",
             "they_blind",
-            "you_blind",
-            "they_newborn"
+            "you_blind"
         ],
         [
             "Grr..."
@@ -2525,8 +2493,7 @@
             "they_dead",
             "they_outside",
             "they_blind",
-            "you_blind",
-            "they_newborn"
+            "you_blind"
         ],
         [
             "Grr..."
@@ -2954,7 +2921,7 @@
     "newborn_to_newborn_H1": [
         [
             "they_newborn",
-            "newborn",
+            "you_newborn",
             "insult",
             "they_deaf"
         ],
@@ -2966,7 +2933,7 @@
     "newborn_to_newborn_H2": [
         [
             "they_newborn",
-            "newborn",
+            "you_newborn",
             "insult"
         ],
         [
@@ -3076,7 +3043,7 @@
     ],
     "newborn_insult_J1": [
         [
-            "newborn",
+            "you_newborn",
             "they_newborn",
             "insult"
         ],
@@ -3087,7 +3054,7 @@
     "newborn_to_newborn_H3": [
         [
             "they_newborn",
-            "newborn",
+            "you_newborn",
             "they_deaf",
             "you_deaf",
             "they_blind",
