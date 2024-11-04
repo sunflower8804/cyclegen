@@ -468,7 +468,7 @@
                 ]
             },
             {
-                "text": "r_c reminds p_l of all the advice {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} given r_c that has made such a difference in {PRONOUN/r_c/poss} life. Every cat has their skills, and p_l is vital to the Clan.",
+                "text": "r_c reminds p_l of all the advice {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} given r_c that has made such a difference in {PRONOUN/r_c/poss} life. Everycat has their skills, and p_l is vital to the Clan.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -1256,7 +1256,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "everycat has had enough on their shoulders lately - p_l decides to lead a casual sparring session, which ends with the patrol flopped around chatting to each other. It's just what's needed to lower their stress levels.",
+                "text": "Everycat has had enough on their shoulders lately - p_l decides to lead a casual sparring session, which ends with the patrol flopped around chatting to each other. It's just what's needed to lower their stress levels.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -2442,7 +2442,7 @@
                 ]
             },
             {
-                "text": "s_c spends so much time listening sympathetically to every cat that the patrol gets nothing done, and as they return home, the quarrel continues.",
+                "text": "s_c spends so much time listening sympathetically to everycat that the patrol gets nothing done, and as they return home, the quarrel continues.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -2939,7 +2939,7 @@
                 ]
             },
             {
-                "text": "s_c spends so much time listening sympathetically to every cat that the patrol gets nothing done, and as they return home, the quarrel continues.",
+                "text": "s_c spends so much time listening sympathetically to everycat that the patrol gets nothing done, and as they return home, the quarrel continues.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -3733,7 +3733,7 @@
                 "can_have_stat": ["app"]
             },
             {
-                "text": "s_c ignores {PRONOUN/s_c/poss} rumbling belly and dutifully brings the prey back to camp, only for {PRONOUN/s_c/poss} mentor to tell {PRONOUN/s_c/object} to pick out a bite to eat before {PRONOUN/s_c/poss} stomach wakes every cat in camp. This would've all been much quicker if {PRONOUN/s_c/subject}'d eaten it when {PRONOUN/s_c/subject} first caught it.",
+                "text": "s_c ignores {PRONOUN/s_c/poss} rumbling belly and dutifully brings the prey back to camp, only for {PRONOUN/s_c/poss} mentor to tell {PRONOUN/s_c/object} to pick out a bite to eat before {PRONOUN/s_c/poss} stomach wakes everycat in camp. This would've all been much quicker if {PRONOUN/s_c/subject}'d eaten it when {PRONOUN/s_c/subject} first caught it.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -3784,7 +3784,7 @@
         "chance_of_success": 25,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, and their coordination and trust in their Clanmates grows stronger.",
+                "text": "Everycat has a nice practice session, and their coordination and trust in their Clanmates grows stronger.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -4348,7 +4348,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session and their coordination with their Clanmates grows stronger. app1 really gets into it and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session and their coordination with their Clanmates grows stronger. app1 really gets into it and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -5580,7 +5580,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -5989,7 +5989,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -6302,7 +6302,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -6383,7 +6383,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -6450,7 +6450,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -6517,7 +6517,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out on their next hunting patrol. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -6582,7 +6582,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -6710,7 +6710,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -6843,7 +6843,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -6910,7 +6910,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -6977,7 +6977,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -7044,7 +7044,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
+                "text": "Everycat has a nice practice session, picking up a good selection of new tricks to try out in their next skirmish. app1 really gets into it, and p_l praises {PRONOUN/app1/object} for {PRONOUN/app1/poss} focus and enthusiasm.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -7859,7 +7859,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "everycat keeps their claws in (no matter the temptations), but r_c slips at a crucial moment while {PRONOUN/r_c/subject} and p_l spar, and {PRONOUN/r_c/subject} {VERB/r_c/wince/winces} as {PRONOUN/r_c/subject} {VERB/r_c/get/gets} up. Time to stop.",
+                "text": "Everycat keeps their claws in (no matter the temptations), but r_c slips at a crucial moment while {PRONOUN/r_c/subject} and p_l spar, and {PRONOUN/r_c/subject} {VERB/r_c/wince/winces} as {PRONOUN/r_c/subject} {VERB/r_c/get/gets} up. Time to stop.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -8209,7 +8209,7 @@
             "all apprentices": [-1, -1]
         },
         "weight": 100,
-        "intro_text": "everycat agrees that p_l and r_c get along like a forest fire, but surely they can hold it together for one afternoon's worth of training?",
+        "intro_text": "Everycat agrees that p_l and r_c get along like a forest fire, but surely they can hold it together for one afternoon's worth of training?",
         "decline_text": "...Best not to try it.",
         "chance_of_success": 60,
         "relationship_constraint": ["dislike_40", "romantic_40"],
@@ -8273,7 +8273,7 @@
             "all apprentices": [-1, -1]
         },
         "weight": 100,
-        "intro_text": "everycat agrees that p_l and r_c get along like a forest fire, but surely they can hold it together for one afternoon's worth of training?",
+        "intro_text": "Everycat agrees that p_l and r_c get along like a forest fire, but surely they can hold it together for one afternoon's worth of training?",
         "decline_text": "...Best not to try it.",
         "chance_of_success": 60,
         "relationship_constraint": ["dislike_40", "romantic_40"],
@@ -9706,7 +9706,7 @@
             "normal adult": [1, 6]
         },
         "weight": 30,
-        "intro_text": "Leading the group of cats around {PRONOUN/p_l/object} to a good vantage point, p_l settles down. As the patrol chats among themselves, something sparks p_l's attention. It reminds {PRONOUN/p_l/object} of charming <i>Casanova</i>, and it occurs to {PRONOUN/p_l/object} that maybe not every cat here knows that history.",
+        "intro_text": "Leading the group of cats around {PRONOUN/p_l/object} to a good vantage point, p_l settles down. As the patrol chats among themselves, something sparks p_l's attention. It reminds {PRONOUN/p_l/object} of charming <i>Casanova</i>, and it occurs to {PRONOUN/p_l/object} that maybe not everycat here knows that history.",
         "decline_text": "It's a lovely day - too lovely to be ruined by mentions of that ancient furball.",
         "chance_of_success": 60,
         "pl_skill_constraint": ["LORE,1"],

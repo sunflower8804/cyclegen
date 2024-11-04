@@ -2753,7 +2753,7 @@
             ],
             "fail_outcomes": [
                 {
-                    "text": "everycat does not understand that. s_c wants to prove {PRONOUN/s_c/poss} bravery, egging the others on, crawling forward too far, and p_l is <i>not</i> having it. {PRONOUN/p_l/subject/CAP} {VERB/p_l/sink/sinks} {PRONOUN/p_l/poss} claws into s_c's pelt to haul {PRONOUN/s_c/object} back to a safe distance, ignoring s_c's outrage and hissing that {PRONOUN/s_c/subject} {VERB/s_c/deserve/deserves} the blood on {PRONOUN/s_c/poss} fur for being so stupid.",
+                    "text": "Everycat does not understand that. s_c wants to prove {PRONOUN/s_c/poss} bravery, egging the others on, crawling forward too far, and p_l is <i>not</i> having it. {PRONOUN/p_l/subject/CAP} {VERB/p_l/sink/sinks} {PRONOUN/p_l/poss} claws into s_c's pelt to haul {PRONOUN/s_c/object} back to a safe distance, ignoring s_c's outrage and hissing that {PRONOUN/s_c/subject} {VERB/s_c/deserve/deserves} the blood on {PRONOUN/s_c/poss} fur for being so stupid.",
                     "exp": 0,
                     "weight": 20,
                     "art": "gen_angry_cat_warrior",

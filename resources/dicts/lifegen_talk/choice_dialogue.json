@@ -3163,7 +3163,7 @@
         },
         "I do": [
             "I see... Some advice to you then? Work for forgiveness and don't give up. Show them you deserve a second chance.",
-            "everycat makes mistakes sometimes. You don't need to explain that to anyone either. Just do your best from now on.",
+            "Everycat makes mistakes sometimes. You don't need to explain that to anyone either. Just do your best from now on.",
             "You only live once after all. Make the most of it. And if you end up here in the end... It was still worth a try, right?"
         ],
         "I don't": [
@@ -4561,7 +4561,7 @@
         "intro": [
             "Last Gathering, I ended up standing next to an apprentice from o_cClan.",
             "I tried to start a conversation, but I wasn't sure what to say, so it didn't really go anywhere and was pretty awkward...",
-            "everycat tells me it doesn't matter, and that I might never see them again, but I want to represent c_nClan well!",
+            "Everycat tells me it doesn't matter, and that I might never see them again, but I want to represent c_nClan well!",
             "You have experience talking with cats from other Clans... what kinds of things could I talk about?"
         ],
         "intro_choices": {
@@ -4721,7 +4721,7 @@
             "Thank you so much! I'll make it up to you, I promise."
         ],
         "refuse": [
-            "[You remind t_c that if you let every cat switch patrols when they were worried about encountering something dangerous, it would be a logistical nightmare. t_c sighs, but nods.]",
+            "[You remind t_c that if you let everycat switch patrols when they were worried about encountering something dangerous, it would be a logistical nightmare. t_c sighs, but nods.]",
             "Ah. Yeah... you're right. Sorry for bothering you.",
             "[When you see t_c waiting to go on patrol later that day, {PRONOUN/t_c/subject} {VERB/t_c/look/looks} like any tiny sound will make {PRONOUN/t_c/object} jump out of {PRONOUN/t_c/poss} pelt. You hope {PRONOUN/t_c/subject} {VERB/t_c/calm/calms} down once {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} actually patrolling.]"
         ]
@@ -5107,7 +5107,7 @@
             "they_blind"
         ],
         "intro": [
-            "everycat says I should take the time I need to grieve, but I don't think they actually mean it.",
+            "Everycat says I should take the time I need to grieve, but I don't think they actually mean it.",
             "I'm pretty sure I heard neutral_r_w_sweet complaining that I'm not doing anything useful...",
             "[That doesn't sound like neutral_r_w_sweet at all. You ask t_c what exactly {PRONOUN/t_c/subject} heard.]",
             "I... I mean, I definitely heard my name, and I couldn't tell {PRONOUN/neutral_r_w_sweet/poss} tone, but it might have been annoyed. Or maybe frustrated? Or maybe..."

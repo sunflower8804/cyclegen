@@ -2351,7 +2351,7 @@
     "season": ["any"],
     "sub_type": ["war"],
     "weight": 20,
-    "event_text": "m_c is checking in on every cat in the camp to make sure everycat is staying healthy in the midst of war.",
+    "event_text": "m_c is checking in on everycat in the camp to make sure everycat is staying healthy in the midst of war.",
     "m_c": {
       "age":["any"],  
       "status": ["mediator", "mediator apprentice"],
@@ -2742,7 +2742,7 @@
     "season": ["any"],
     "sub_type": ["war"],
     "weight": 20,
-    "event_text": "m_c watches every little thing around {PRONOUN/m_c/object} for any omen that indicates what the Clan should do in the war. The losses weigh heavy on the hearts of every cat.",
+    "event_text": "m_c watches every little thing around {PRONOUN/m_c/object} for any omen that indicates what the Clan should do in the war. The losses weigh heavy on the hearts of everycat.",
     "m_c": {
       "status": ["medicine cat apprentice", "medicine cat"],
       "skill": ["OMEN,1"]
