@@ -2218,5 +2218,41 @@
         [
             "[t_c is stomping {PRONOUN/t_c/poss} little paws on the ground, figuring out how to use them.]"
         ]
+    ],
+    "newborn_H1": [
+        [
+            "they_newborn",
+	"any",
+            "they_deaf",
+            "you_deaf",
+            "they_blind"
+        ],
+        [
+            "[t_c rolls around in the nest, getting a feeling of {PRONOUN/t_c/poss} surroundings.]"
+        ]
+    ],
+   "newborn_sc_SAM1": [
+        [
+            "they_newborn",
+            "any",
+            "you_deaf",
+            "they_blind",
+            "they_deaf"
+        ],
+        [
+            "[t_c is stumbling around blindly.]"
+        ]
+    ],
+    "newborn_sc_H1": [
+        [
+            "they_newborn",
+            "any",
+            "you_deaf",
+            "they_blind",
+            "they_deaf"
+        ],
+        [
+            "[The little body among stars surprises you.]"
+        ]
     ]
 }

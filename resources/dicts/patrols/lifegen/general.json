@@ -50,13 +50,15 @@
                 "text": "You glance into the hollow, but your attention is captured by the spiderwebs themselves. They sway in the wind, some thin and some more like clumps of fur, some with dried leaves and petals caught in their strands. They're kind of creepy, but also strangely beautiful. You continue your patrol, considering ways you could decorate the camp with spiderwebs when you get back!",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": ["ARTISTAN,1","CAMP,1"]
+                "stat_skill": ["ARTISTAN,1","CAMP,1"],
+                "can_have_stat": ["p_l"]
             },
             {
                     "text": "You clear away the spiderwebs and inspect the interior of the hollow. You're about to dismiss it as empty and leave when you notice something on the ground: small berries, shriveled almost to nothingness. Many cats would have no way to identify them, but you recognize these as very old deathberries and shiver. What could have happened here? You're left with more questions than answers, but with the satisfying suspicion that you've uncovered the corner of a long-hidden secret.",
                     "exp": 10,
                     "weight": 20,
-                    "stat_skill": ["HEALER,1","CLEVER,1","SCHOLAR,1","SENSE,1","THINKER,1"]
+                    "stat_skill": ["HEALER,1","CLEVER,1","SCHOLAR,1","SENSE,1","THINKER,1"],
+                    "can_have_stat": ["p_l"]
                 },
                 {
                     "text": "As you clear spiderwebs away from the hollow's entrance, you hear a soft gasp and meet the eyes of a translucent cat, curled up behind the webbing. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/whisper/whispers} for you to continue, and when you've finally cleared the opening, {PRONOUN/n_c:0/subject} cautiously {VERB/n_c:0/step/steps} out into the sunlight. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/tell/tells} you that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'ve/'s} been trapped there for a long while, and that despite being a ghost, {PRONOUN/n_c:0/subject} couldn't pass through the spiderwebs. The cat thanks you profusely, then leaves to enjoy {PRONOUN/n_c:0/poss} new freedom.",
@@ -65,7 +67,8 @@
                     "stat_skill": ["GHOST,1"],
                     "new_cat": [
                         ["meeting", "residence:ur"]
-                    ]
+                    ],
+                    "can_have_stat": ["p_l"]
                 }
             ],
             "fail_outcomes": [
@@ -81,7 +84,8 @@
                         "cowardly",
                         "emotional",
                         "lonesome"
-                    ]
+                    ],
+                    "can_have_stat": ["p_l"]
                 },
                 {
                     "text": "You start to approach the hollow, but stop as cold air wafts from the opening. The air smells like crowfood and death, and everything about it feels <i>wrong</i>. You scramble back, your fur standing on end, and flee as quickly as you can.",
@@ -137,6 +141,7 @@
                 "exp": 10,
                 "weight": 15,
                 "stat_skill": ["HUNTER,1","SENSE,1","TRACKER,1"],
+                "can_have_stat": ["p_l"],
                 "accessory": [
                     {
                         "cats": [
@@ -153,6 +158,7 @@
                 "exp": 10,
                 "weight": 15,
                 "stat_skill": ["STORY,1","LORE,1"],
+                "can_have_stat": ["p_l"],
                 "accessory": [
                     {
                         "cats": [
@@ -189,6 +195,7 @@
                 "exp": 10,
                 "weight": 15,
                 "stat_skill": ["GHOST,1"],
+                "can_have_stat": ["p_l"],
             "accessory": [
                 {
                     "cats": ["n_c:0"],
@@ -205,6 +212,7 @@
                 "exp": 10,
                 "weight": 15,
                 "stat_skill": ["COMFORTER,1","COOPERATIVE,1","INSIGHTFUL,1","MEDIATOR,1","SPEAKER,1"],
+                "can_have_stat": ["p_l"],
                 "relationships": [
                     {
                         "cats_to": ["y_c"],
@@ -229,7 +237,8 @@
                     "cowardly",
                     "emotional",
                     "lonesome"
-                ]
+                ],
+                "can_have_stat": ["p_l"]
             },
             {
                 "text": "You start to run after the shadow, but r_w_neurotic leaps in front of you, {PRONOUN/r_w_neurotic/poss} eyes wide and {PRONOUN/r_w_neurotic/poss} fur fluffed in terror. {PRONOUN/r_w_neurotic/subject/CAP} {VERB/r_w_neurotic/beg/begs} you not to follow the figure and {VERB/r_w_neurotic/plead/pleads} for you to come back to camp with {PRONOUN/r_w_neurotic/object} instead. You manage to talk {PRONOUN/r_w_neurotic/object} out of {PRONOUN/r_w_neurotic/poss} panic, but by then the shadow is long gone.",
@@ -288,7 +297,8 @@
                 "text": "You approach the grove and hear a haunting, bird-like chorus coming from the branches above. You creep forward, ready to fight or flee, but... oh! You're familiar with ghost cats, but this is a different sight: a flock of translucent birds flits through the canopy, calling to each other with chirps that sound a bit too ghostly and resonant to be comforting. You're not sure how r_w_neurotic was able to hear them, too, but they don't look like a threat. You watch the ghost birds for a while before returning to camp.",
                 "exp": 15,
                 "weight": 20,
-                "stat_skill": ["GHOST,1","DARK,1","STAR,1"]
+                "stat_skill": ["GHOST,1","DARK,1","STAR,1"],
+                "can_have_stat": ["p_l"]
             },
             {
                 "text": "As you enter the grove, something lunges at you with a yowl! You yelp and prepare to fight or flee, only for you to realize your attacker is... r_w_neurotic? It seems this was the setup to a prank! You wouldn't have guessed r_w_neurotic to be capable of such a thing, but {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/seem/seems} thrilled to have scared you.",

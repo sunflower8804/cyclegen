@@ -3775,6 +3775,32 @@
             "You have some nerve..."
         ]
     ],
+    "deaf_to_grieving_H1": [
+        [
+            "grieving_you",
+            "you_deaf",
+            "flirt",
+            "reject",
+            "any"
+        ],
+        [
+            "[t_c looks up at you with burning hurt in {PRONOUN/t_c/poss} eyes.]",
+            "[Maybe don't flirt with {PRONOUN/t_c/object} after you died...]"
+        ]
+    ],
+    "blind_to_grieving_H1": [
+        [
+            "grieving_you",
+            "you_blind",
+            "flirt",
+            "reject",
+            "any"
+        ],
+        [
+            "I don't understand how you can flirt with me right now!",
+            "[t_c bursts into tears and buries {PRONOUN/t_c/poss} head underneath {PRONOUN/t_c/poss} paws.]"
+        ]
+    ],
     "deafflirt_J1": [
         [
             "any",
@@ -4708,6 +4734,46 @@
             "Love, I- pft!",
             "[t_c explodes into a fit of giggles]",
             "You always know what to say."
+        ]
+    ],
+    "neurotic_flirt_SQ3": [
+        [
+            "no_kit",
+            "flirt",
+            "they_neurotic",
+	"max_dislike_5"
+        ],
+        [
+	"[t_c giggles, then looks embarrassed.]",
+"S-sorry! I... um... that was really sweet...",
+"[t_c smiles shyly, then scurries away.]"
+        ]
+    ],
+ "neurotic_flirt_SQ4": [
+        [
+            "no_kit",
+            "flirt",
+            "they_neurotic",
+	"max_dislike_5"
+        ],
+        [
+	"I... I think you look really nice, too!",
+"[t_c says the words very quickly, then hightails it to the other side of camp.]"
+        ]
+    ],
+ "neurotic_flirt_SQ5": [
+        [
+            "no_kit",
+            "flirt",
+            "they_neurotic",
+	"they_app",
+	"reject"
+        ],
+        [
+	"Oh! Um...",
+"[t_c freezes, casting {PRONOUN/t_c/poss} gaze around camp.]",
+"Ah... sorry, what did you say?",
+"Oh, actually, tm_n needs to talk to me about an assessment... right now, it looks like! Sorry, I'll see you later!"
         ]
     ]
 }

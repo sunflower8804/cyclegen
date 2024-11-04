@@ -33,6 +33,7 @@ from scripts.conditions import (
     get_amount_cat_for_one_medic,
 )
 from scripts.events_module.generate_events import GenerateEvents, generate_events
+from scripts.clan_resources.freshkill import FreshkillPile, Nutrition
 from scripts.events_module.handle_short_events import handle_short_events
 from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 from scripts.game_structure.windows import SaveError
@@ -481,6 +482,9 @@ class Events:
     
     def add_freshkill(self):
         """Adds amount of freshkill needed for the Clan"""
+        if not game.clan.freshkill_pile:
+            game.clan.freshkill_pile = FreshkillPile()
+
         game.clan.freshkill_pile.add_freshkill(game.clan.freshkill_pile.amount_food_needed())
 
     def generate_dialogue_focus(self):

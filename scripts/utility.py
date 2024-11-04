@@ -2974,7 +2974,7 @@ def abbrev_addons(t_c, r_c, cluster, x, rel, r):
                 (r == "rlove" and t_c.relationships[r_c.ID].romantic_love < 50) or
                 (r == "dislike" and t_c.relationships[r_c.ID].dislike < 15) or
                 (r == "hate" and t_c.relationships[r_c.ID].dislike < 50) or
-                (r == "jealous" and t_c.relationships[r_c.ID].jeaolusy < 20) or
+                (r == "jealous" and t_c.relationships[r_c.ID].jealousy < 20) or
                 (r == "trust" and t_c.relationships[r_c.ID].trust < 20) or
                 (r == "comfort" and t_c.relationships[r_c.ID].comfortable < 20) or 
                 (r == "respect" and t_c.relationships[r_c.ID].admiration < 20) or

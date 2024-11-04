@@ -5697,5 +5697,128 @@
             "[When you hop up to them, they give you a nod and leap up onto one of the branches. A bit of bouncing up and down sends a cascade of sparkles from the leaves.]",
             "[You wander back into camp with a shiny new pelt!]"
         ]
+    ],
+    "blinddeafnewborn_to_griefingkitten_H1": [
+         [
+             "they_grieving",
+             "any",
+             "newborn",
+             "you_blind",
+             "you_deaf",
+             "they_deaf",
+             "they_blind",
+             "min_platonic_10",
+             "sibling",
+             "adopted_sibling",
+             "half sibling"
+         ],
+         [
+             "[You can feel t_c curl into your nest around you, looking for any sort of comfort.]"
+         ]
+     ],
+     "introspective_crushto_H3": [
+        [
+            "they_introspective",
+            "you_kitten",
+            "they_adult"
+        ],
+        [
+            "Who do I have a crush on? Don't you know not to ask something so personal?",
+            "[t_c sighs exasperatedly and humors your questioning.]",
+            "Well... they're a bit rough around the edges, closed off, no nonsense type of cat, <i>maybe</i> secretly a softy...",
+            "[t_c voice drifts and {PRONOUN/t_c/subject} go silent for a moment, lost in {PRONOUN/t_c/poss} thoughts.]",
+            "Ah, that's enough for today. Any more detail and you'll know who I have a crush on! Ha... Haha..."
+        ]
+    ],
+   "faith_to_newborn_H1": [
+        [
+            "sc_faith",
+            "no_kit",
+            "newborn",
+            "any"
+        ],
+        [
+            "I hope StarClan guides you, little one. The stars shall give you wonder and answers, I just know it.",
+            "And if you don't believe so... Well, that'll be okay!"
+        ]
+    ],
+    "faith_to_newborn_H2": [
+        [
+            "df_faith",
+            "no_kit",
+            "newborn",
+            "any"
+        ],
+        [
+            "[t_c's voice hushes as {PRONOUN/t_c/subject} {VERB/t_c/shift/shifts} closer.]",
+            "I wish the Dark Forest gifts you the strength and courage to go for what you believe in, no matter what other cats say you <i>should</i> do.",
+            "The Dark Forest is a dangerous place, but I like to believe it's more alive and genuine than StarClan."
+        ]
+    ],
+    "neurotic_choice_starkit_SQ36": {
+        "tags": [
+	"they_neurotic",
+"you_kitten",
+"they_sc",
+"they_adult"
+        ],
+        "intro": [
+            "Ohh... you have to choose what kind of apprentice you want to be soon, right? I almost forgot about how stressful that was.",
+"Um... I don't know if anyone's implied this, but you know you don't have to be a medicine cat just because you can talk to us, right?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I know!",
+                "next_scene": "know"
+            },
+ "choice2": {
+                "text": "I feel like I should.",
+                "next_scene": "should"
+            },
+ "choice3": {
+                "text": "But I want to be!",
+                "next_scene": "want"
+            },
+            "choice4": {
+                "text": "Huh?",
+                "next_scene": "huh"
+            }
+        },
+        "know": [
+            "[Of course you know! You can be whatever you want to be, and either way your StarClan friends will guide your steps.]",
+"Oh, good! I just wanted to say... because if I were you, I'd be thinking...",
+"Ah, never mind. You're doing great, y_c."
+        ],
+        "should": [
+            "[Talking to StarClan is part of a medicine cat's job, right? So... so you'd be good at being a medicine cat, and doesn't that mean you're supposed to be one?]",
+"[Puzzling through all that stuff makes you kind of dizzy.]",
+"[t_c tries to protest, but {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} unsure of what exactly to say. Maybe thinking about it makes {PRONOUN/t_c/object} dizzy, too.]"
+        ],
+        "want": [
+            "[You know that, but you want to be a medicine cat! And if your connection to StarClan can help with that, then that's even better.]",
+"Oh! Okay, in that case... good! You'll make a great medicine cat."
+        ],
+        "huh": [
+ 	"[Choices? Implied stuff? Being a medicine cat because you can talk to cats like t_c? You're not really sure what t_c is trying to say.]",
+"Ah... never mind, then. Don't think about it too much!"
+        ]
+    },
+    "neurotic_tokit_SQ10": [
+     [
+"they_neurotic",
+"you_kitten",
+"they_adult",
+"max_platonic_10",
+"you_assertive",
+"you_upstanding",
+"you_silly",
+"you_unabashed",
+"you_unlawful",
+"they_blind"
+     ],
+     [
+"[You bounce up to t_c, jabbering about everything you've noticed today: a cool bird, and a weird smell, and r_w1 making a funny face when talking to r_w2...]",
+"[You look away from t_c for just a moment, but when you look back, {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} slipped away.]"
+     ]
     ]
 }

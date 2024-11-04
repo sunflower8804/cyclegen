@@ -1836,5 +1836,161 @@
             "No, you don't remember?",
             "Your memory strikes again y_c, hehe. Forget it, I was feeling nostalgic!"
         ]
-    }
+    },
+    "med_to_newborn_H1": [
+        [
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "newborn",
+            "any",
+            "you_deaf",
+            "you_blind",
+            "they_deaf"
+        ],
+        [
+            "[t_c noses at your side, checking for any noticeable discomfort, as medicine cats do.]",
+            "[When {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} find anything particularly concerning, t_c licks the top of your head to provide some comfort.]"
+        ]
+    ],
+    "you_sc_sam1": [
+[
+    "they_medicine_cat_apprentice",
+    "no_kit",
+    "you_sc",
+    "they_star",
+    "they_oblivious"
+],
+[
+"[You notice t_c having some trouble deciphering the prophecies {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} being given, and {PRONOUN/t_c/subject} {VERB/t_c/approach/approaches} you one day.]",
+"Hey, y_c? I can't figure out what this prophecy means. Can you help me?",
+"[t_c describes to you the dream {PRONOUN/t_c/subject} got, and you try to nudge {PRONOUN/t_c/object} in the right direction, knowing you can't tell {PRONOUN/t_c/object} what it means directly.]",
+"Ohhhh, that makes sense! So the whole thing about deciphering prophecies is just looking closely at the details? No wonder I haven't been good at deciphering them.",
+"Thanks y_c!"
+]
+],
+"they_formerkittypet_sam1~2": [
+[
+	"they_formerlyakittypet",
+    "no_kit",
+    "they_silly",
+    "they_apprentice",
+    "they_medicine_cat_apprentice",
+    "they_warrior",
+    "they_medicine_cat",
+    "min_platonic_20",
+    "connected"
+],
+[
+	"[t_c has disappeared after going on a solo patrol, and most of the clan is out looking for {PRONOUN/t_c/object}.]",
+    "[Just as d_n was about to send you out on a patrol to go look for {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/burst/bursts} into camp, grinning.]",
+    "Sorry! I probably worried everyone. I'm okay though!",
+    "y_c! y_c! I saw my family!",
+    "Yeah, the cats I were telling you about the other day!",
+    "I'm so glad they're okay. I wonder if d_n would let me go out on patrols to see them sometimes. I could even bring you with me!"
+]
+],
+"unabashed_medcat_SV2": [
+[
+"they_medicine_cat",
+"they_medicine_cat_apprentice",
+"they_unabashed",
+"you_warrior",
+"you_blind",
+"they_blind",
+"min_dislike_10"
+],
+[
+"Why do warriors all think that herbs work like magic?",
+"Healing takes time and patience, two qualities you all seem to lack."
+]
+],
+"neurotic_skillhealer_SQ2": [
+     [
+"they_neurotic",
+"they_healer",
+"they_warrior",
+"they_deputy",
+"they_apprentice",
+"they_mediator",
+"they_mediator_apprentice",
+"they_queen",
+"they_queen's_apprentice",
+"you_medicine_cat",
+"you_medicine_cat_apprentice",
+	"they_blind",
+	"you_blind"
+     ],
+     [
+"Um... sorry, y_c? I don't mean to bother you, but plove_r_c has a bit of a sore throat. Could I have some honey from your stores to give them?",
+"O-of course, you could give it to them, too! I don't mean to overstep.",
+"[There's not much that can go terribly wrong with honey. Since t_c seems to know {PRONOUN/t_c/poss} way around medicine despite not being a medicine cat, you give {PRONOUN/t_c/object} a dollop of honey on a stick and send {PRONOUN/t_c/object} on {PRONOUN/t_c/poss} way.]" 
+     ]
+    ],
+    "neurotic_skillsong_SQ8~1": [
+     [
+"they_neurotic",
+"they_song",
+"no_kit",
+"they_medicine_cat_apprentice",
+"they_blind"
+     ],
+     [
+"[t_c is singing to {PRONOUN/t_c/self} as {PRONOUN/t_c/subject} {VERB/t_c/look/looks} over herbs. {PRONOUN/t_c/subject/CAP} {VERB/t_c/notice/notices} you listening and {VERB/t_c/wince/winces}.]",
+"Don't laugh at me, okay? I'm trying to make up a song to help me memorize these.",
+"It's not going super well... lots of herbs have names that don't rhyme with much.",
+"*sigh* I'll keep working on it. Maybe this is a waste of time... every other medicine cat's been able to memorize herbs without music."
+     ]
+    ],
+    "neurotic_fromyourkit_SQ2": [
+     [
+"they_neurotic",
+"they_apprentice",
+"they_mediator_apprentice",
+"they_medicine_cat_apprentice",
+"you_adult",
+"from_your_kit",
+"from_adopted_kit",
+"min_platonic_20",
+"you_deaf",
+"they_deaf"
+     ],
+     [
+"[As t_c follows tm_n_neutral out of camp, {PRONOUN/t_c/subject} {VERB/t_c/look/looks} back at you with a nervous smile.]",
+"[You wave in farewell, wishing {PRONOUN/t_c/subject} could feel your pride. t_c waves back.]"
+     ]
+    ],
+    "neurotic_leafbare_SQ8": [
+     [
+"they_neurotic",
+"they_medicine_cat",
+"they_medicine_cat_apprentice",
+"you_warrior",
+"you_apprentice",
+"you_deputy",
+"you_leader",
+"min_platonic_15",
+"leafbare"
+     ],
+     [
+"y_c, stop. Let me see your paws.",
+"[t_c's unusually firm tone stops you as you return to camp from a hunting patrol. You shiver, drop a half-frozen mouse, and lift your numb paws for t_c to inspect. {PRONOUN/t_c/subject/CAP} {VERB/t_c/scrutinize/scrutinizes} them, then {VERB/t_c/let/lets} out a breath.]",
+"T-thank you. Sorry. It's just... r_w1 cut {PRONOUN/r_w1/poss} pad on something, and {PRONOUN/r_w1/subject} didn't feel it because {PRONOUN/r_w1/poss} paws were so cold. {PRONOUN/r_w1/subject/CAP} made it back to camp before r_w2 noticed {PRONOUN/r_w1/subject} {VERB/r_w1/were/was} bleeding!",
+"I just want to make sure the same thing doesn't happen to anyone else, so I'm going to check everyone's paws when they get back from patrol. Hopefully that doesn't bother anyone too much."
+     ]
+    ],
+    "neurotic_medapp_SQ3": [
+     [
+"they_neurotic",
+"they_medicine_cat_apprentice",
+"no_kit",
+"min_platonic_20"
+     ],
+     [
+"[t_c is sitting outside of the medicine den, looking downcast.]",
+"tm_n told me to take a break. I was trying hard, I really was, but I kept mixing up herbs! And when tm_n corrected me, I got nervous, so I made even more mistakes.",
+"I hate disappointing {PRONOUN/tm_n/object}. And... and one day, {PRONOUN/tm_n/subject}{VERB/tm_n/'re/'s} not going to be around to correct me, so...",
+"[t_c takes a deep breath and then continues, quieter now.]",
+"...So I <i>have</i> to learn to do this on my own."
+     ]
+    ]
 }
