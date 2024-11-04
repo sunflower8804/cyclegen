@@ -11277,6 +11277,19 @@
                         "amount": 10
                     } ],
                 "weight": 20
+            },
+            {
+                "text": "s_c waits patiently for app1 to calm down from {PRONOUN/app1/poss} outburst. Training to be a warrior is a difficult task and not every cat has the patience to learn from failure, after all. s_c comments that no cat is truly ready to become a warrior, and {PRONOUN/s_c/subject} {VERB/s_c/do/does} not expect app1 to be perfect. s_c dismisses training with a flict of {PRONOUN/s_c/poss} tail.",
+                "exp": 10,
+                "relationships": [
+                    {
+                        "cat_to": ["p_l"],
+                        "cat_from": ["app1"],
+                        "values": ["platonic", "comfort", "respect", "trust"],
+                        "amount": 10
+                    } 
+                ],
+                "weight": 20
             }
         ],
         "fail_outcomes": [
@@ -11290,7 +11303,8 @@
                         "cat_from": ["app1"],
                         "values": ["platonic", "comfort", "respect", "trust"],
                         "amount": -10
-                    } ],
+                    } 
+                ],
                 "weight": 10
             }
         ]
