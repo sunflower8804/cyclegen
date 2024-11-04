@@ -1538,31 +1538,32 @@ class Events:
                 interaction_type=info_dict["interaction_type"],
                 success=info_dict["success"],
             )
-            chosen_event = random.choice(events)
+            if events:
+                chosen_event = random.choice(events)
 
-            # get text
-            event_text = chosen_event["event_text"]
+                # get text
+                event_text = chosen_event["event_text"]
 
-            # change relations and append relation text
-            rel_change = chosen_event["rel_change"]
-            other_clan.relations += rel_change
-            if rel_change > 0:
-                event_text += f" (o_c_n relations improved.)"
-            elif rel_change == 0:
-                event_text += f" (o_c_n relations unchanged.)"
-            else:
-                event_text += f" (o_c_n relations worsened.)"
+                # change relations and append relation text
+                rel_change = chosen_event["rel_change"]
+                other_clan.relations += rel_change
+                if rel_change > 0:
+                    event_text += f" (o_c_n relations improved.)"
+                elif rel_change == 0:
+                    event_text += f" (o_c_n relations unchanged.)"
+                else:
+                    event_text += f" (o_c_n relations worsened.)"
 
-            # adjust text and add to event list
-            event_text = event_text_adjust(
-                Cat,
-                event_text,
-                main_cat=gathering_cat,
-                other_clan=other_clan,
-                clan=game.clan)
-            game.cur_events_list.insert(4, Single_Event(event_text, "other_clans", [gathering_cat.ID]))
+                # adjust text and add to event list
+                event_text = event_text_adjust(
+                    Cat,
+                    event_text,
+                    main_cat=gathering_cat,
+                    other_clan=other_clan,
+                    clan=game.clan)
+                game.cur_events_list.insert(4, Single_Event(event_text, "other_clans", [gathering_cat.ID]))
 
-            game.clan.clan_settings["lead_den_clan_event"] = {}
+                game.clan.clan_settings["lead_den_clan_event"] = {}
 
         if game.clan.clan_settings["lead_den_outsider_event"]:
             info_dict = game.clan.clan_settings["lead_den_outsider_event"]
