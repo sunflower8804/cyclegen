@@ -395,7 +395,7 @@
                 "can_have_stat": ["p_l"]
             },
             {
-                "text": "You set off with r_w1 and r_w2, and the first part of the patrol passes without incident. When the three of you reach the o_cClan border, however, you encounter another patrol. Its leader doesn't seem pleased to see your group. You break the silence and make small talk with the other patrol, breaking the tension and putting everyone a bit more at ease.",
+                "text": "You set off with r_w1 and r_w2, and the first part of the patrol passes without incident. When the three of you reach the o_cClan border, however, you encounter another patrol. Its leader doesn't seem pleased to see your group. You break the silence and make small talk with the other patrol, breaking the tension and putting everycat a bit more at ease.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["COOPERATIVE,1", "COMFORTER,1", "INSIGHTFUL,1", "MEDIATOR,1", "SPEAKER,1"],
@@ -409,7 +409,7 @@
                 "weight": 20
             },
             {
-                "text": "You join the patrol but are unfortunately joined by r_w, who was rude to you earlier in the day. You hope you just misunderstood {PRONOUN/r_w/object}, but you're too nervous to ask. Your awkwardness distracts the rest of the patrol and makes the situation uncomfortable for everyone.",
+                "text": "You join the patrol but are unfortunately joined by r_w, who was rude to you earlier in the day. You hope you just misunderstood {PRONOUN/r_w/object}, but you're too nervous to ask. Your awkwardness distracts the rest of the patrol and makes the situation uncomfortable for everycat.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -719,7 +719,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "You attempt to recount a tale, but you struggle to remember key details. Everyone looks quite bored.",
+                "text": "You attempt to recount a tale, but you struggle to remember key details. Everycat looks quite bored.",
                 "exp": 0,
                 "weight": 20
             }
