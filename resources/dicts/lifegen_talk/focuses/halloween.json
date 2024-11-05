@@ -517,5 +517,57 @@
             "[t_c's wide, guilty eyes meet your own as you enter the nursery. {PRONOUN/t_c/subject/CAP} {VERB/t_c/shift/shifts} awkwardly to the side, trying to conceal a shivering r_k who is currently sobbing into {PRONOUN/t_c/poss} fur.]",
             "I uh... heh- I think my ghost stories might have been a <i>little</i>... over the top."
         ]
+    ],
+    "halloween_E2": [
+        [
+            "halloween",
+            "leaffall",
+            "min_platonic_10",
+            "no_kit"
+        ],
+        [
+            "Hey y_c, look what I found!",
+            "[You watch with interest as t_c carefully holds up a paw. Snagged in {PRONOUN/t_c/poss} claws is a large, fuzzy... is that a SPIDER?!]",
+            "[You shriek and leap back as t_c bursts out laughing. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} completely unbothered as {PRONOUN/t_c/subject} {VERB/t_c/toss/tosses} the spider onto the ground.]",
+            "Hey, hey, it's alright! It's not real, see?",
+            "[t_c makes a big show of batting at and flipping over the 'spider.' Sure enough, it doesn't move.]",
+            "Isn't it neat? I snatched it right out of a Twoleg garden while on patrol. I don't know what it's made of but it sure is creepy!",
+            "...",
+            "Do you think I can prank r_c with it?"
+        ]
+    ],
+    "halloween_E3": [
+        [
+            "halloween",
+            "min_platonic_10",
+            "no_kit",
+            "you_apprentice",
+            "you_warrior",
+            "you_deputy",
+            "you_leader"
+        ],
+        [
+            "[In a moment of downtime you ask t_c if {PRONOUN/t_c/subject} would like to accompany you while you check on the o_cClan border.]",
+            "The o_cClan border? No way! The river over there is totally haunted.",
+            "I heard that if you look into the water, you'll see another cat in your reflection looking right back at you!",
+            "r_c thinks they're Dark Forest cats trying to find their way back to the Clans. Creepy huh?"
+        ]
+    ],
+    "halloween_E4": [
+        [
+            "halloween",
+            "leaffall",
+            "no_kit",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "The medicine den could use some decorations to match the spooky mood around the camp, don't you think?",
+            "Something not too scary but still on theme. Something like... oh Starclan, what even is there?",
+            "Oh! Cobwebs! Cobwebs are perfect. I'm sure there is plenty that I can spare for decorating. At least, I think so.",
+            "...I'm going to go check."
+        ]
     ]
 }

@@ -723,7 +723,7 @@ class EventsScreen(Screens):
                         fav_cats.append(kitty)
 
             for kitty in fav_cats:
-                for ev in self.all_events:
+                for ev in self.all_events + self.relation_events:
                     if kitty.ID in ev.cats_involved:
                         fav_events.append(ev)
 
