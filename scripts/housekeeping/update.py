@@ -254,9 +254,9 @@ def self_update(
         with tarfile.open("download.tmp", "r") as tar_ref:
             tar_ref.extractall("Downloads")
         os.remove("download.tmp")
-        shutil.move("Downloads/Lifegen", "../pridegen_update")
+        shutil.move("Downloads/Lifegen", "../lifegen_update")
         shutil.rmtree(current_folder, ignore_errors=True)
-        shutil.move("../pridegen_update", current_folder)
+        shutil.move("../lifegen_update", current_folder)
         os.chmod(current_folder + "/Lifegen", 0o755)
         os.execv(current_folder + "/Lifegen", sys.argv)
         quit()
