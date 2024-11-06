@@ -2222,7 +2222,7 @@
     "newborn_H1": [
         [
             "they_newborn",
-	"any",
+	        "any",
             "they_deaf",
             "you_deaf",
             "they_blind"
@@ -2237,7 +2237,8 @@
             "any",
             "you_deaf",
             "they_blind",
-            "they_deaf"
+            "they_deaf",
+            "they_sc"
         ],
         [
             "[t_c is stumbling around blindly.]"
@@ -2249,7 +2250,8 @@
             "any",
             "you_deaf",
             "they_blind",
-            "they_deaf"
+            "they_deaf",
+            "they_sc"
         ],
         [
             "[The little body among stars surprises you.]"

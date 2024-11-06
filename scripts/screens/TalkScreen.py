@@ -64,6 +64,8 @@ class TalkScreen(Screens):
         self.replaced_index = (False, 0)
         self.other_dict = {}
 
+        self.testing = False
+
     def screen_switches(self):
         self.the_cat = Cat.all_cats.get(game.switches['cat'])
         self.cat_dict.clear()
@@ -87,8 +89,12 @@ class TalkScreen(Screens):
                                                                         object_id="#text_box_34_horizcenter_light",
                                                                         manager=MANAGER)
 
+
         self.text_type = ""
-        self.texts = self.load_texts(self.the_cat)
+        if game.config["debug_meow_error_locating"]:
+            self.debug_meow_error_locator(self.the_cat)
+        else:
+            self.texts = self.load_texts(self.the_cat)
 
         if game.switches["talk_category"] == "flirt":
             flirt_success = self.is_flirt_success(self.the_cat)
@@ -305,6 +311,50 @@ class TalkScreen(Screens):
                     self.frame_index = len(self.text_frames[self.text_index]) - 1  # Go to the last frame
             
         return
+    
+    def debug_meow_error_locator(self, cat):
+        """
+        When talking to one cat, searches through all cats and identifies if any of them would cause a meow error.
+        """
+        test_texts = {}
+        for kitty in Cat.all_cats_list:
+            if kitty == game.clan.your_cat:
+                continue
+            test_texts[kitty] = self.load_texts(kitty)
+        meows = []
+        for dialogue in test_texts.items():
+            # print(dialogue[1])
+            if "#dialogue-bugs" in str(dialogue[1]):
+                # skip over the dialogue that doesnt need anything bc its impossible anyway
+                if game.clan.your_cat.status == "newborn" and dialogue[0].dead:
+                    continue
+                if dialogue[0].outside and not dialogue[0].dead:
+                    continue
+                if game.clan.your_cat.dead and dialogue[0].status == "newborn":
+                    continue
+                if dialogue[0].dead and game.switches["talk_category"] in ["insult", "flirt"]:
+                    continue
+                if game.switches["talk_category"] == "flirt" and not dialogue[0].is_dateable(game.clan.your_cat):
+                    continue
+                self.text_type = ""
+                meows.append(dialogue)
+                print("----------------")
+                print("Meow error!", game.switches["talk_category"].upper())
+                print("You:", game.clan.your_cat.name)
+                print("Them: ", dialogue[0].name)
+                if self.the_cat == dialogue[0]:
+                    text = self.load_and_replace_placeholders(
+                        "resources/dicts/lifegen_talk/general.json",
+                        self.the_cat,
+                        game.clan.your_cat
+                        )[1]
+                    self.texts = self.get_adjusted_txt(text, dialogue[0])
+                else:
+                    self.texts = [f"Meow error found for {game.clan.your_cat.name} and {dialogue[0].name}."]
+        if not meows:
+            print("No meows possible right neow!")
+            self.text_type = ""
+            self.texts = self.load_texts(self.the_cat)
 
     def get_cluster_list(self):
         return ["assertive", "brooding", "cool", "upstanding", "introspective", "neurotic", "silly", "stable", "sweet", "unabashed", "unlawful"]
@@ -405,9 +455,9 @@ class TalkScreen(Screens):
 
 
     def load_texts(self, cat):
-        you = game.clan.your_cat
         resource_dir = "resources/dicts/lifegen_talk/"
         possible_texts = {}
+        you = game.clan.your_cat
 
         special_date = get_special_date()
 
@@ -866,6 +916,7 @@ class TalkScreen(Screens):
 
             if "they_grieving" not in tags and "grief stricken" in cat.illnesses and not cat.dead:
                 continue
+
             if "you_grieving" in tags and "grief stricken" not in you.illnesses and not you.dead:
                 continue
 
@@ -1691,6 +1742,7 @@ class TalkScreen(Screens):
             text_chosen_key_split = text_chosen_key.split("~")
             cat.connected_dialogue[text_chosen_key_split[0]] = int(text_chosen_key_split[1])
         game.clan.talks.append(text_chosen_key)
+
         return new_text
 
     def get_adjusted_txt(self, text, cat):

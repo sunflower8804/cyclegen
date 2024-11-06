@@ -2991,7 +2991,7 @@ def abbrev_addons(t_c, r_c, cluster, x, rel, r):
                 )
             )
         ):
-        print("abbrev addon failed")
+        # print("abbrev addon failed")
         return False
     return True
 
@@ -3012,7 +3012,7 @@ def cat_dict_check(abbrev, cluster, x, rel, r, text, cat_dict):
             else:
                 text = re.sub(fr'(?<!\/){abbrev}(?!\/)', str(cat_dict[f"{abbrev}"].name), text)
     except KeyError:
-        print("WARNING: Keyerror with", abbrev, ".")
+        # print("WARNING: Keyerror with", abbrev, ".")
         text = ""
         # returning an empty string to reroll for dialogue
     return text, in_dict
@@ -3988,11 +3988,10 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         else:
             r = ""
 
-        if cat.mentor is None or cat.mentor == you.ID:
+        if not cat.apprentice or you.ID in cat.apprentice:
             return ""
         text, in_dict = cat_dict_check("t_a", cluster, x, rel, r, text, cat_dict)
         
-
         their_app = Cat.fetch_cat(choice(cat.apprentice))
         cat_dict["t_a"] = their_app
         addon_check = abbrev_addons(cat, their_app, cluster, x, rel, r)
