@@ -160,7 +160,7 @@
         "id": "warrior_apprentice_to_outgoing_mentor",
         "thoughts": [
             "Gets dragged out of {PRONOUN/m_c/poss} nest for an all-day, out-of-camp training session",
-            "Is wide-eyed at how r_c seems to know <i>everyone</i>",
+            "Is wide-eyed at how r_c seems to know <i>everycat</i>",
             "Finds r_c's energy contagious, and is excited to train today"
         ],
         "random_trait_constraint": [
@@ -291,7 +291,7 @@
     {
         "id": "apprentice_dead_dark_forest_warrior",
         "thoughts": [
-            "Even though {PRONOUN/m_c/subject} {VERB/m_c/have/has} heard the stories about {PRONOUN/r_c/object}, {PRONOUN/m_c/subject} wonders if r_c is truly as evil as everyone claims",
+            "Even though {PRONOUN/m_c/subject} {VERB/m_c/have/has} heard the stories about {PRONOUN/r_c/object}, {PRONOUN/m_c/subject} wonders if r_c is truly as evil as everycat claims",
             "Thought {PRONOUN/m_c/subject} saw r_c in {PRONOUN/m_c/poss} dreams last night",
             "Debating if {PRONOUN/m_c/subject} should train secretly with r_c"
         ],
@@ -529,9 +529,9 @@
             "Is worrying about something",
             "Says sorry more often than {PRONOUN/m_c/subject} need to",
             "Is hiding after receiving a compliment",
-            "Is avoiding everyone today",
+            "Is avoiding everycat today",
             "Was found hiding in {PRONOUN/m_c/poss} nest instead of out training",
-            "Believes everyone will yell at {PRONOUN/m_c/object} for tiny mistakes",
+            "Believes everycat will yell at {PRONOUN/m_c/object} for tiny mistakes",
             "Is thinking of becoming a loner instead of a warrior",
             "Was holding back tears during training",
             "Is a bit squeamish about having to use {PRONOUN/m_c/poss} claws",
@@ -551,7 +551,7 @@
             "Is worried about being an apprentice forever",
             "Is fighting back tears after missing a catch",
             "Is worried to lose in a real fight",
-            "Is avoiding everyone today",
+            "Is avoiding everycat today",
             "Believes {PRONOUN/m_c/subject} can do well today",
             "Gives {PRONOUN/m_c/self} a stomachache by worrying so much",
             "Is fretting about something so much that {PRONOUN/m_c/subject} {VERB/m_c/give/gives} {PRONOUN/m_c/self} a headache"
@@ -650,7 +650,7 @@
         "thoughts": [
             "Is sure that {PRONOUN/m_c/subject}'ll be made into a warrior soon",
             "Thinks that {PRONOUN/m_c/subject} will be the strongest warrior to ever live",
-            "Is trying to spar every cat",
+            "Is trying to spar everycat",
             "Thinks {PRONOUN/m_c/subject} can beat every record",
             "Is star-damn sure no cat can defeat {PRONOUN/m_c/object}",
             "Is creating a new fighting stance for today's training session",
@@ -663,7 +663,7 @@
             "Was seen racing an eagle's shadow",
             "Throws a fit whenever someone defeats {PRONOUN/m_c/object}",
             "Is trying to make everything a competition",
-            "Wants to make sure everyone is at their absolute best",
+            "Wants to make sure everycat is at their absolute best",
             "Was the first awake for training"
         ],
         "main_trait_constraint": [
@@ -805,7 +805,7 @@
     {
         "id": "loyal_warrior_apprentice",
         "thoughts": [
-            "Is making sure everyone is following the Warrior Code without question",
+            "Is making sure everycat is following the Warrior Code without question",
             "Is struck between wanting to goof off with friends and listening to {PRONOUN/m_c/poss} mentor",
             "Knows where {PRONOUN/m_c/poss} morals lie",
             "Ears perk up in every Clan announcements",

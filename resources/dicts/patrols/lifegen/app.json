@@ -87,7 +87,7 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "d_n selects you to go on a dawn patrol. When the time comes, the patrol is gathering near the entrance of the camp. You're all quite sleepy though.",
-        "decline_text": "You try to decline the task. d_n raises an eyebrow, stating that you have to go unless you're sick or injured. Everyone must do their part in the Clan. Tail drooping, you head for the camp entrance.",
+        "decline_text": "You try to decline the task. d_n raises an eyebrow, stating that you have to go unless you're sick or injured. Everycat must do their part in the Clan. Tail drooping, you head for the camp entrance.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
@@ -255,7 +255,7 @@
                 "can_have_stat": ["p_l"]
             },
             {
-                "text": "Instead of leaping for it, you let your creative side take over. You sing with a flourish to this leaf waving in the breeze. It's poetry in motion - and everyone should know that thanks to you!",
+                "text": "Instead of leaping for it, you let your creative side take over. You sing with a flourish to this leaf waving in the breeze. It's poetry in motion - and everycat should know that thanks to you!",
                 "exp": 15,
                 "weight": 20,
                 "stat_trait": ["flamboyant"],
