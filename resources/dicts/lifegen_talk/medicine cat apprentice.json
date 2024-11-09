@@ -1524,7 +1524,7 @@
         [
             "Ah, y_c! Quick, I need your help!",
             "[You rush over to the medicine cat apprentice, startled to see {PRONOUN/t_c/object} so serious.]",
-            "r_s is starting to get really sick! Everyone else is out of camp and I can't carry {PRONOUN/r_s/object} by myself. Can you please help me?"
+            "r_s is starting to get really sick! everycat else is out of camp and I can't carry {PRONOUN/r_s/object} by myself. Can you please help me?"
         ]
     ],
     "sweet_medapp_22": [
@@ -1883,7 +1883,7 @@
 [
 	"[t_c has disappeared after going on a solo patrol, and most of the clan is out looking for {PRONOUN/t_c/object}.]",
     "[Just as d_n was about to send you out on a patrol to go look for {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/burst/bursts} into camp, grinning.]",
-    "Sorry! I probably worried everyone. I'm okay though!",
+    "Sorry! I probably worried everycat. I'm okay though!",
     "y_c! y_c! I saw my family!",
     "Yeah, the cats I were telling you about the other day!",
     "I'm so glad they're okay. I wonder if d_n would let me go out on patrols to see them sometimes. I could even bring you with me!"
@@ -1975,7 +1975,7 @@
 "y_c, stop. Let me see your paws.",
 "[t_c's unusually firm tone stops you as you return to camp from a hunting patrol. You shiver, drop a half-frozen mouse, and lift your numb paws for t_c to inspect. {PRONOUN/t_c/subject/CAP} {VERB/t_c/scrutinize/scrutinizes} them, then {VERB/t_c/let/lets} out a breath.]",
 "T-thank you. Sorry. It's just... r_w1 cut {PRONOUN/r_w1/poss} pad on something, and {PRONOUN/r_w1/subject} didn't feel it because {PRONOUN/r_w1/poss} paws were so cold. {PRONOUN/r_w1/subject/CAP} made it back to camp before r_w2 noticed {PRONOUN/r_w1/subject} {VERB/r_w1/were/was} bleeding!",
-"I just want to make sure the same thing doesn't happen to anyone else, so I'm going to check everyone's paws when they get back from patrol. Hopefully that doesn't bother anyone too much."
+"I just want to make sure the same thing doesn't happen to anyone else, so I'm going to check everycat's paws when they get back from patrol. Hopefully that doesn't bother anyone too much."
      ]
     ],
     "neurotic_medapp_SQ3": [

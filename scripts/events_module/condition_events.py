@@ -958,8 +958,6 @@ class Condition_Events:
         event_triggered = False
         if dictionary == cat.permanent_condition:
             event_triggered = True
-        if "risks" not in conditions[condition]:
-            return
         for risk in conditions[condition]["risks"]:
             if risk["name"] in (cat.injuries or cat.illnesses):
                 continue
@@ -1044,7 +1042,12 @@ class Condition_Events:
 
                     # choose event string and ensure Clan's med cat number aligns with event text
                     random_index = int(random.random() * len(possible_string_list))
-                    med_list = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"], working=True, sort=True)
+                    med_list = get_alive_status_cats(
+                        Cat,
+                        ["medicine cat", "medicine cat apprentice"],
+                        working=True,
+                        sort=True,
+                    )
                     if len(med_list) == 0:
                         if random_index == 0:
                             random_index = 1
@@ -1061,7 +1064,9 @@ class Condition_Events:
                     )
                     event = "m_c's condition has gotten worse."
 
-                event = event_text_adjust(Cat, event, main_cat=cat, random_cat=med_cat)  # adjust the text
+                event = event_text_adjust(
+                    Cat, event, main_cat=cat, random_cat=med_cat
+                )  # adjust the text
 
                 event_list.append(event)
 

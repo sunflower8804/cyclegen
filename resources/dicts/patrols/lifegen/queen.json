@@ -437,11 +437,37 @@
                 "text": "You give them advice on how to make sure everything goes well, as well as telling them how they'll know when they start kitting. The queen is reassured by your advice, and thanks you for your help.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Noticing their anxious behavior, you give them advice relating to being calm while birthing. You comment on the importance of staying calm and focused, and to trust the queen's and medicine cats that'll be helping them give birth when the time comes.",
+                "exp": 10,
+                "weight": 20
             }
         ],
         "fail_outcomes": [
             {
                 "text": "Try as you might, you can't seem to reassure the new queen's fears, and your advice only seems to scare them more. Fortunately, another more experienced cat helps you answer the concerns the queen has and reassure them.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "A bit anxious about giving out misinformation, you repeat a list of things your mentor told you cats need to do while giving birth word for word. You're so lost in your lengthy, and quite gruesome explanation, you do not notice the queen sneaking away.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "thoughtful",
+                    "calm",
+                    "flexible",
+                    "wise",
+                    "righteous",
+                    "lonesome",
+                    "gloomy",
+                    "mellow"
+                ],
+                "can_have_stat": ["p_l"]
+            },
+            {
+                "text": "You admit to not knowing a lot about kitting and direct the queen to your mentor, who quietly coaxes the pregnant cat to a secluded spot in the nursery for conversation.",
                 "exp": 0,
                 "weight": 20
             }
@@ -472,6 +498,22 @@
                 "text": "You tell the leader about the skills of each of the kits, and tell the leader about what each kit wants to do in their future, and the leader listens, nodding. They thank you for your insight, before leaving for the day. You feel reassured that the kits will be given roles that they will excel in.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "You've been admittedly waiting for this day to come, and start going on a very long rant about each kittens pros and cons in every role available to them. The leader stops you half-way with a chuckle, saying they appreciate the enthusiasm but has very little time for all the details.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "thoughtful",
+                    "calm",
+                    "flexible",
+                    "wise",
+                    "righteous",
+                    "lonesome",
+                    "gloomy",
+                    "mellow"
+                ],
+                "can_have_stat": ["p_l"]
             }
         ],
         "fail_outcomes": [
@@ -479,6 +521,27 @@
                 "text": "You begin to advise the leader on what roles to give the kits, but one of the kits overhears you, and loudly disagrees with you. The other kits clamor to see what's going on, and all you can do is shoot the leader an apologetic look as they stumble away from the cluster of scuttling children.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "You freeze up in a cold sweat, a bit intimidated by the leader asking you directly for advice. You stutter out an unsure answer that doesn't make sense, even to you, and the leader leaves the nursery more undecided than before.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "thoughtful",
+                    "calm",
+                    "flexible",
+                    "wise",
+                    "righteous",
+                    "lonesome",
+                    "gloomy",
+                    "mellow",
+                    "careful",
+	                "nervous",
+                    "insecure",
+	                "meek",
+	                "cowardly"
+                ],
+                "can_have_stat": ["p_l"]
             }
         ]
     },
@@ -514,6 +577,12 @@
                 "weight": 20,
                 "stat_trait": ["troublesome","childish","playful","strange","rebellious","spontaneous","energetic","bouncy"],
                 "can_have_stat": ["p_l"]
+            },
+            {
+                "text": "You wrack your brain for any knowledge about continuous crying, refusing to simply brush it off as the kitten being unconscionable. After a moment, you remember a medicine cat mentioning a spread of ear mites and direct the parents to ask about it just in case.",
+                "exp": 15,
+                "weight": 20,
+                "stat_skill": ["CLAIRVOYANT,1", "INSIGHTFUL,1"]
             }
         ],
         "fail_outcomes": [
@@ -554,6 +623,11 @@
             {
                 "text": "You move to their nest, murmuring soft comforts as you lick their head soothingly. You quietly talk to the kit about their nightmare. It calms them immensely, and they soon are curled back up at their parent's side. You return to your own nest with a smile.",
                 "exp": 10,
+                "weight": 20
+            },
+            {
+                "text": "You groggily pull the kitten into your own nest, curling around them in hopes the warmth gives them comfort. Thankfully, the kitten is quick to fall asleep within your embrace and finally the night is quiet again.",
+                "exp": 5,
                 "weight": 20
             }
         ],

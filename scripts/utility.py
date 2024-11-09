@@ -2048,7 +2048,7 @@ def event_text_adjust(
     handles finding abbreviations in the text and replacing them appropriately, returns the adjusted text
     :param Cat Cat: always pass the Cat class
     :param str text: the text being adjusted
-    "param dict patrol_cat_dict: LIFEGEN: dict to hold random cat abbrevs in LG patrols
+    :param dict patrol_cat_dict: LIFEGEN: dict to hold random cat abbrevs in LG patrols
     :param Cat patrol_leader: Cat object for patrol_leader (p_l), if present
     :param Cat main_cat: Cat object for main_cat (m_c), if present
     :param Cat random_cat: Cat object for random_cat (r_c), if present
@@ -2731,11 +2731,34 @@ def generate_sprite(
                             'MAPLE SEED',
                             'JUNIPER',
                             'DRY HERBS',
+                            'DAISY',
+                            'CLOVER',
+                            'GORSE',
+                            'HEATHER',
+                            'SNAPDRAGON',
+                            'LILY OF THE VALLEY',
+                            'CATTAIL',
+                            'WHITE POPPY',
+                            'ORANGE POPPY',
+                            'PING POPPY',
+                            'CYAN POPPY',
+                            'BLUB WHITE',
+                            'BLUB YELLOW',
+                            'BLUB ORANGE',
+                            'BLUB PINK',
+                            'BLUB BLUE',
+                            'RASPBERRY',
                             'RED FEATHERS',
                             'BLUE FEATHERS',
                             'JAY FEATHERS',
                             'MOTH WINGS',
                             'CICADA WINGS',
+                            'SPARROW FEATHERS',
+                            'GULL FEATHERS',
+                            'MONARCH BUTTERFLY',
+                            'MORPHO BUTTERFLY',
+                            'ROSY MOTH WINGS',
+                            'BLACK CICADA'
                             'CRIMSON',
                             'BLUE',
                             'YELLOW',
