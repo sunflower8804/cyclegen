@@ -22,7 +22,7 @@
         "success_outcomes": [
             {
                 "text": "You manage to save most of the herbs and set them out to dry. It was a close call, but your swift actions minimized the damage.",
-                "exp": 30,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -57,7 +57,7 @@
         "success_outcomes": [
             {
                 "text": "You correctly identify the issue and administer the appropriate herbs. The elder feels better and expresses their gratitude for your expertise.",
-                "exp": 35,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -92,7 +92,7 @@
         "success_outcomes": [
             {
                 "text": "You decide to venture out and are successful in finding the herb. Your Clanmates appreciate your dedication and commitment to your role.",
-                "exp": 40,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -127,7 +127,7 @@
         "success_outcomes": [
             {
                 "text": "You check the kit carefully and assure the queen that her kit is healthy. The queen is relieved, and you feel a sense of fulfillment in your duty.",
-                "exp": 45,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -162,7 +162,7 @@
         "success_outcomes": [
             {
                 "text": "You act quickly and efficiently, quarantining the apprentices and starting the treatment. Your swift actions prevent the illness from spreading further.",
-                "exp": 40,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -269,7 +269,7 @@
         "success_outcomes": [
             {
                 "text": "You quietly sneak into the den, gathering the right herbs and delivering them to the patient. In their half-asleep, in pain state, they don't seem to notice that it's you, and they take the treatment gratefully.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20
             }
         ],

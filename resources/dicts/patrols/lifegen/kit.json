@@ -57,7 +57,7 @@
         "success_outcomes": [
             {
                 "text": "You abandon the leaf in an instant and start bouncing around the patrol, asking a flurry of questions; How did they catch the prey? Was it difficult? The patrol leader seems amused by your enthusiasm and promises to tell you more about the hunt later.",
-                "exp": 10,
+                "exp": 0,
                 "weight": 20
             }
         ],
@@ -692,12 +692,12 @@
         "success_outcomes": [
             {
                 "text": "You creep past the guard and scamper off into the clearing, where you hunt all kinds of bugs!",
-                "exp": 10,
+                "exp": 0,
                 "weight": 20
             },
             {
                 "text": "You just barely get past the guard without waking them.",
-                "exp": 5,
+                "exp": 0,
                 "weight": 20
             }
         ],
