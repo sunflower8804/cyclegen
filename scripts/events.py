@@ -3981,6 +3981,13 @@ class Events:
                                 game.clan.leader_lives = history[-1]["remaining_lives"]
                             except:
                                 print("No remaining lives specified. 9 given.")
+                        elif old_status == "deputy":
+                            old_deputy =  Cat.fetch_cat(game.clan.deputy) if game.clan.deputy else None
+                            if old_deputy:
+                                old_deputy.status_change("warrior")
+                            game.clan.deputy = cat
+                            cat.status_change(old_status)
+
                         else:
                             cat.status_change(old_status)
             else:
