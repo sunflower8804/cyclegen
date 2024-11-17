@@ -27,7 +27,7 @@
         "As an orphaned kit, you, y_c, were brought into the Clan, but your reception has been far from warm. Clanmates whisper about your unknown background, their apprehension clear in their guarded glances. But you're not disheartened. Instead, their doubt serves as motivation, pushing you to prove your worth and carve your place among them."
     ],
     "birth_one_adoptive_parent": [
-        "Bathed in the twilight's glow, you emerge into the world, cradled within the warmth of the nursery. A pair of caring eyes - your adoptive parent parent1 - gaze down at you, {PRONOUN/parent1/poss} purrs echoing the heartbeat you've grown familiar with. {PRONOUN/parent1/poss/CAP} scent envelops you, a mix of milk and love. The Clan's soft murmurs reach your ears, distant and comforting. Welcome to the world, y_c."
+        "Bathed in the twilight's glow, you emerge into the world, cradled within the warmth of the nursery. A pair of caring eyes - your adoptive {PRONOUN/parent1/parent}, parent1 - gaze down at you, {PRONOUN/parent1/poss} purrs echoing the heartbeat you've grown familiar with. {PRONOUN/parent1/poss/CAP} scent envelops you, a mix of milk and love. The Clan's soft murmurs reach your ears, distant and comforting. Welcome to the world, y_c."
     ],
     "birth_two_adoptive_parents": [
         "Bathed in the twilight's glow, you emerge into the world, cradled within the warmth of the nursery. Your adoptive parents - parent1 and parent2 - gaze down at you, their purrs echoing the heartbeat you've grown familiar with. Their scent envelops you, a mix of milk and love. The Clan's soft murmurs reach your ears, distant and comforting. Welcome to the world, y_c.",
@@ -88,7 +88,7 @@
         "As newcomers to the Clan, you, as well as insert_siblings, face challenges. The whispers of dissatisfaction and annoyance about extra mouths to feed do not escape you. But with every cold glance, your resolve strengthens. You'll show the Clan that you are not burdens, but future warriors, healers, or leaders."
     ],
     "birth_one_adoptive_parent_siblings": [
-        "Bathed in the twilight's glow, you emerge into the world, cradled within the warmth of the nursery along with insert_siblings. A pair of caring eyes - your adoptive parent parent1 - gaze down at you, their purrs echoing the heartbeat you've grown familiar with. Their scent envelops you, a mix of milk and love. The Clan's soft murmurs reach your ears, distant and comforting. Welcome to the world, y_c."
+        "Bathed in the twilight's glow, you emerge into the world, cradled within the warmth of the nursery along with insert_siblings. A pair of caring eyes - your adoptive {PRONOUN/parent1/parent}, parent1 - gaze down at you, their purrs echoing the heartbeat you've grown familiar with. Their scent envelops you, a mix of milk and love. The Clan's soft murmurs reach your ears, distant and comforting. Welcome to the world, y_c."
     ],
     "birth_two_adoptive_parents_siblings": [
         "Bathed in the twilight's glow, you emerge into the world, cradled within the warmth of the nursery along with insert_siblings. Your adoptive parents - parent1 and parent2 - gaze down at you, their purrs echoing the heartbeat you've grown familiar with. Their scent envelops you, a mix of milk and love. The Clan's soft murmurs reach your ears, distant and comforting. Welcome to the world, y_c.",

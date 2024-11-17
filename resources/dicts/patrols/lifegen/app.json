@@ -34,14 +34,14 @@
             },
             {
                 "text": "You're y_c - you never give less than your absolute best! m_n is found again and again and again... Until {PRONOUN/m_n/subject}{VERB/m_n/'re/'s} more worn out than you. Your held is held high on the way back to camp. You can't wait to tell your denmates all about your skills again!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
                 "can_have_stat": ["p_l"]
             },
             {
                 "text": "It's time to put your best detective nose on! You startle m_n a few times - including once with a mouse {PRONOUN/m_n/subject} never saw you catch. You even tucked a flower into {PRONOUN/m_n/poss} fur at one point without {PRONOUN/m_n/object} noticing! It's safe to say you passed this training with flying colors.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait":["flamboyant"],
                 "can_have_stat": ["p_l"]
@@ -112,7 +112,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "During the patrol, an unsuspecting twig snaps under your paw, alerting a potential prey. The experience serves as a reminder to tread more carefully in the future. d_n seems less tthan thrilled after hearing about it...",
+                "text": "During the patrol, an unsuspecting twig snaps under your paw, alerting a potential prey. The experience serves as a reminder to tread more carefully in the future. d_n seems less than thrilled after hearing about it...",
                 "exp": 0,
                 "weight": 20
             },
@@ -160,7 +160,7 @@
             },
             {
                 "text": "Your prey is a bit small to be shared with them. r_e notices and encourages you despite it. You and the elders split prey amongst yourselves as fantastical tales get underway from the older cats. You share a story of your own, having them breathless with laughter soon enough.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": [
                     "flexible",
@@ -183,7 +183,7 @@
             },
             {
                 "text": "Eagerly you settle in with r_e and beg to hear the story of {PRONOUN/r_e/poss} part in the battle with o_c! It's a tale full of bravery, danger, and r_e even shows off a skill from that battle for you!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
                 "can_have_stat": ["p_l"]
@@ -249,14 +249,14 @@
             },
             {
                 "text": "This leaf is begging to be taken down! Claws unsheathed, you take a powerful leap up to the leaf. Your claws catch on the branch and you take the whole limb down! That lead had nothing on you!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
                 "can_have_stat": ["p_l"]
             },
             {
                 "text": "Instead of leaping for it, you let your creative side take over. You sing with a flourish to this leaf waving in the breeze. It's poetry in motion - and everycat should know that thanks to you!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": ["flamboyant"],
                 "stat_skill": ["SONG,1"],
@@ -329,7 +329,7 @@
             },
             {
                 "text": "You stalk a bit closer and mock the croaks back at the crow. Irritated, it flaps it's wings at you, and you pounce. Crows aren't normally on the freshkill pile, but it is today!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
                 "stat_skill": ["HUNTER,1", "CLEVER,1"],
@@ -337,7 +337,7 @@
             },
             {
                 "text": "You have an idea... You croak encouragingly to the crow, who instead of irritating you, now looks interested in you! The two of you talk back and forth for a while before you move on. Later, you spot the same crow again, and they drop something shiny before you!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": ["flamboyant"],
                 "stat_skill": ["LANGUAGE,1","SPEAKER,1","SONG,1"],
@@ -401,7 +401,7 @@
         "success_outcomes": [
             {
                 "text": "Summoning your courage, you ascend the tree swiftly and smoothly. From the top, you enjoy a bird's-eye view of the forest. m_n gazes up in admiration, praising your agility and bravery.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
                 "stat_skill": ["CLIMBER,1"],
@@ -458,7 +458,7 @@
         "success_outcomes": [
             {
                 "text": "You accept the task and, with your keen senses, you successfully spot traces of the rival Clan. The Clan praises your vigilance, which has helped avert a potential crisis. l_n seems quite pleased with you!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_skill": ["EXPLORER,1", "NAVIGATOR,1", "TRACKER,1", "SENSE,1"],
                 "can_have_stat": ["p_l"]
@@ -542,7 +542,7 @@
         "success_outcomes": [
             {
                 "text": "You bravely volunteer and embark on the journey. Navigating through unfamiliar territory, you successfully deliver the message and return unscathed, gaining l_n's admiration.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 10
             },
             {
@@ -587,7 +587,7 @@
             },
             {
                 "text": "Swimming! You're a master at that! Without hesitation you dive in and show off your skills. m_n laughs softly before calling you back. {PRONOUN/m_n/subject} {VERB/m_n/joke/jokes} that {PRONOUN/m_n/subject} should learn from you instead of teaching you!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": [
                     "ambitious",
@@ -635,7 +635,7 @@
         "success_outcomes": [
             {
                 "text": "Braving the fog, you proceed to investigate and successfully identify the unusual scent as a raccoon. Since you're alone, you are sure to not let it spot you and head home. Your Clan appreciates your bravery and keen senses.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": [
                     "ambitious",
@@ -756,7 +756,7 @@
         "success_outcomes": [
             {
                 "text": "You agree and keep a careful eye on the playful kits. You manage to entertain them until you're fully tired out. They're cuddled up to your side when r_q returns and thanks you for your help, appreciating your kindness and responsibility.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20
             },
             {
@@ -806,7 +806,7 @@
             },
             {
                 "text": "There's still plenty of energy left in you so you happily agree to join {PRONOUN/r_w/object} for the duty. The two of you spend some time talking and bonding, but you hear something unusual. r_w catches on and picks up on it as well from your bristled fur before covering you with {PRONOUN/r_w/poss} body. An owl! It was swooping for you, but r_w's swipe scares it off. You thank r_w heartily for the save and return to your nest a bit shaken.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 10,
                 "stat_trait": [
                     "flexible",
@@ -858,7 +858,7 @@
         "success_outcomes": [
             {
                 "text": "Despite feeling a little shy, you accept the invitation. r_a settles in beside you to eat with a smile. Both of you enjoy the meal and share a few laughs, leaving you with a warm feeling.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": [
                     "aloof",
@@ -992,7 +992,7 @@
         "success_outcomes": [
             {
                 "text": "You manage to keep your feelings under control and focus on the task. By the end of it, you both have a good laugh and your bond grows stronger.",
-                "exp": 20,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -1032,14 +1032,14 @@
             },
             {
                 "text": "Comfort isn't your strong suit. There's still some things you can do though! You approach and ask r_a if {PRONOUN/r_a/subject} had trouble with a battle move. {PRONOUN/r_a/subject/CAP} {VERB/r_a/perk/perks} seeing your interest, knowing that if any help is needed, you're the cat for the job! It takes a few tries but r_a is happier once {PRONOUN/r_a/subject} {VERB/r_a/get/gets} the move down.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
                 "can_have_stat": ["p_l"]
             },
             {
                 "text": "Sauntering up to r_a, you begin to purposefully make a fool of yourself, tripping and tumbling dramatically into the clearing! Seeing it makes {PRONOUN/r_a/object} laugh quietly. It doesn't take but a few more silly antics and jokes before {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} looking far more upbeat.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": ["flamboyant"],
                 "can_have_stat": ["p_l"]
@@ -1095,14 +1095,14 @@
             },
             {
                 "text": "You playfully swipe at {PRONOUN/r_a/object} with a soft paw, claiming that this makes you even! That seems to take r_a's mind off the little mistake long enough for you to suggest getting in some extra training!",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
                 "can_have_stat": ["p_l"]
             },
             {
                 "text": "Forsaken, you cry out! Your glorious tail, mangled, ruined! As you roll around making a playful fuss about how wounded you are laughter graces your ears. It brings a purr to you to know that you've cheered them up.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait": ["flamboyant"],
                 "can_have_stat": ["p_l"]
@@ -1158,14 +1158,14 @@
             },
             {
                 "text": "Of course you'll hunt for r_e - if you bring {PRONOUN/r_e/poss} favorite you might get to hear another story of great deeds in Clan history! You spend ages hunting down the best prey to exchange for a tale - and anything else you find along the way has filled the freshkill pile. r_e is more than happy to share a battle story for you when you deliver the prey.",
-                "exp": 15,
+                "exp": 10,
                 "weight": 20,
                 "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
                 "can_have_stat": ["p_l"]
             },
             {
                 "text": "r_e has the best stories and even does fun voices! Of course you'll catch something for {PRONOUN/r_e/object}! Catching a nice bird and two mice is plenty for your task. You deliver the bird to r_e with a flourish, telling the tale of slavering all sun-high for this grandiose meal - making {PRONOUN/r_e/object} laugh.",
-                "exp": 0,
+                "exp": 5,
                 "weight": 20,
                 "stat_trait": ["flamboyant"],
                 "can_have_stat": ["p_l"]
@@ -1342,7 +1342,7 @@
         "success_outcomes": [
             {
                 "text": "You go out alone, the peace and quiet gives you time to perfect your hunting crouch and you bring back an impressive amount of prey! When m_n watches as you enter the camp, {PRONOUN/m_n/poss} eyes are glowing with pride.",
-                "exp": 20,
+                "exp": 10,
                 "weight": 20
             }
         ],
@@ -1482,7 +1482,7 @@
         "success_outcomes": [
             {
                 "text": "You agree, and although moss collecting is one of the more boring duties, it is still an important task. You work hard to bring home a healthly collection of fresh moss, familiarizing yourself with the territory as you go. r_m is incredibly grateful for the assistance.",
-                "exp": 20,
+                "exp": 10,
                 "weight": 20
             }
         ],

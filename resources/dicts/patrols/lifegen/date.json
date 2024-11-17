@@ -974,7 +974,7 @@
         "success_outcomes": [
             {
                 "text": "{PRONOUN/r_c/subject/CAP} {VERB/r_c/turn/turns} back, looking at you- and you successfully ask {PRONOUN/r_c/object}-- without stuttering-- if {PRONOUN/r_c/subject} {VERB/r_c/want/wants} to go see the blue supermoon tonight with you. {PRONOUN/r_c/subject/CAP} happily {VERB/r_c/agree/agrees}, and when the time comes, you and {PRONOUN/r_c/subject} sit on top of a tall tree, gazing at the bright, massive, slightly blue-colored moon and the countless sparkly stars together. You feel extremely happy to hear r_c's soft purrs and see {PRONOUN/r_c/poss} face being lit up.",
-                "exp": 20,
+                "exp": 0,
                 "weight": 20,
                 "relationships": [
                     {
@@ -1021,7 +1021,7 @@
         "success_outcomes": [
             {
                 "text": "You and r_c practice these forbidden moves together. You feel more confident and strong. Later, you and r_c later take a break in the muck, heavily breathing, lightly scratched, but your love and cooperation with {PRONOUN/r_c/object} slowly growing.",
-                "exp": 20,
+                "exp": 0,
                 "weight": 20,
                 "relationships": [
                     {
@@ -1068,7 +1068,7 @@
         "success_outcomes": [
             {
                 "text": "You decide to step up, and you approach the spirit who had been berating r_c. They angrily hiss at you and leap on you, and you give them a good fight before making them flee. r_c thanks you, and {PRONOUN/r_c/subject} {VERB/r_c/help/helps} lick your minor wounds clean, but you soon notice yourself leaning on {PRONOUN/r_c/object}, tails twining.",
-                "exp": 15,
+                "exp": 0,
                 "weight": 20,
                 "relationships": [
                     {
@@ -1926,7 +1926,7 @@
         "success_outcomes": [
             {
                 "text":"When r_k runs up to {PRONOUN/r_c/object}, you take the opportunity and slide out of the camp entrance while {PRONOUN/r_c/poss} head is turned. While you're out, you collect as many sweet things you can find-- some berries, catmint, and even some honeycombs-- and arrange them on a large rhubarb leaf. When you arrive back to camp, dragging the treats behind you, r_c is excited to receive the gift while {PRONOUN/r_c/poss} friends fawn about it behind {PRONOUN/r_c/object}.",
-                "exp": 20,
+                "exp": 10,
                 "weight": 10,
                 "relationships": [
                     {
@@ -1940,7 +1940,7 @@
             },
             {
                 "text": "You decide to call out to r_c that you'll be leaving to collect some cobwebs for the den's decorations. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} you a quick nod before getting back to work, so you head out. You gather some spooky cobwebs while you're out of camp, but make sure to grab a treat for r_c while you're there. You return to camp with the cobwebs and a small bundle of berries, both of which {PRONOUN/r_c/subject} {VERB/r_c/accept/accepts} gratefully.",
-                "exp": 20,
+                "exp": 10,
                 "weight": 10,
                 "herbs": ["cobwebs"],
                 "relationships": [
@@ -1955,7 +1955,7 @@
             },
             {
                 "text": "r_k runs up to r_c, distracting {PRONOUN/r_c/object}, so you take the opportunity and slip out of camp. You're not able to find much, but you manage to snatch a pretty trinket from a display in front of a Twoleg nest. You surprise r_c with it back at camp, who thanks you enthusiastically!",
-                "exp": 20,
+                "exp": 10,
                 "weight": 20,
                 "accessory": [
                     {
@@ -2014,7 +2014,7 @@
         "success_outcomes": [
             {
                 "text": "You listen for {PRONOUN/r_c/poss} footsteps, and when {PRONOUN/r_c/subject} {VERB/r_c/get/gets} close, you lunge towards {PRONOUN/r_c/object} with a yowl. r_c yelps and launches into the air, furr puffed up, but is laughing as soon as {PRONOUN/r_c/subject} {VERB/r_c/hit/hits} the ground. Good one!",
-                "exp": 20,
+                "exp": 10,
                 "weight": 20,
                 "relationships": [
                     {
@@ -2028,7 +2028,7 @@
             },
             {
                 "text": "As r_c passes through the camp entrance, you tackle {PRONOUN/r_c/object} with a shout. Caught off-guard, {PRONOUN/r_c/subject} {VERB/r_c/slap/slaps} at {PRONOUN/r_c/poss} assailant with frantic paws until {PRONOUN/r_c/subject} {VERB/r_c/realise/realises} it's you. {PRONOUN/r_c/subject/CAP} playfully {VERB/r_c/shove/shoves} you off and {VERB/r_c/tell/tells} you {PRONOUN/r_c/subject}'ll get you back soon before inviting you on a walk.",
-                "exp": 20,
+                "exp": 10,
                 "weight": 10,
                 "relationships": [
                     {

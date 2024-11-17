@@ -15,7 +15,8 @@
     "unabashed_apprentice1": [
         [
             "unabashed",
-            "apprentice",
+            "they_apprentice",
+            "you_apprentice",
             "they_blind",
             "you_blind"
         ],
@@ -30,8 +31,10 @@
     ],
     "silly_gen_prey": [
         [
-            "Any",
-            "silly"
+            "you_any",
+            "they_silly",
+            "they_apprentice",
+            "they_warrior"
         ],
         [
             "I went on a hunting patrol with plike_r_w the other day and found THE cutest mouse I think I've ever seen. It had big, innocent eyes and it was snacking on a blackberry!",
@@ -41,9 +44,11 @@
     ],
     "introspective_comf_2": [
         [
-            "any",
-            "introspective",
+            "you_any",
+            "they_introspective",
+            "they_apprentice",
             "comfort",
+            "platonic_like",
             "they_blind",
             "you_blind"
         ],
@@ -56,7 +61,8 @@
     ],
     "app_9": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "hate",
             "they_blind",
             "you_blind"
@@ -67,7 +73,8 @@
     ],
     "app_10": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "hate",
             "assertive",
             "brooding",
@@ -81,7 +88,8 @@
     ],
     "app_11": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "hate",
             "they_blind",
             "you_blind"
@@ -92,7 +100,8 @@
     ],
     "app_12": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "hate",
             "they_blind",
             "you_blind"
@@ -103,7 +112,8 @@
     ],
     "app_13": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "hate",
             "they_blind",
             "you_blind"
@@ -114,8 +124,9 @@
     ],
     "introspective_app_to_MedApp": [
         [
-            "medicine_cat_apprentice",
-            "Introspective",
+            "you_medicine_cat_apprentice",
+            "they_apprentice",
+            "they_introspective",
             "they_blind",
             "you_blind"
         ],
@@ -128,8 +139,9 @@
     ],
     "Introspective_app": [
         [
-            "Any",
-            "Introspective",
+            "you_any",
+            "they_apprentice",
+            "they_introspective",
             "they_blind"
         ],
         [
@@ -142,8 +154,9 @@
     ],
     "introspective_app_2": [
         [
-            "Any",
-            "Introspective"
+            "you_any",
+            "they_apprentice",
+            "they_introspective"
         ],
         [
             "Hi y_c.",
@@ -155,9 +168,10 @@
     ],
     "introspective_app_3": [
         [
-            "Queen",
-            "queen's_apprentice",
-            "Introspective"
+            "you_queen",
+            "you_queen's_apprentice",
+            "they_apprentice",
+            "they_introspective"
         ],
         [
             "[You look up at where you're playing with the kits to see t_c bringing a rabbit into the nursery.]",
@@ -168,8 +182,9 @@
     ],
     "introspective_app_3_2": [
         [
-            "Any",
-            "introspective"
+            "you_any",
+            "they_introspective",
+            "they_apprentice"
         ],
         [
             "[t_c is batting a rock between {PRONOUN/t_c/poss} paws while sitting in {PRONOUN/t_c/poss} nest.]",
@@ -181,9 +196,10 @@
     ],
     "Introspective_app_4": [
         [
-            "medicine_cat",
-            "medicine_cat_apprentice",
-            "introspective"
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "they_apprentice",
+            "they_introspective"
         ],
         [
             "Uh, y_c? Help.",
@@ -195,9 +211,9 @@
     ],
     "Introspective_app_5": [
         [
-            "Mediator",
-            "mediator_apprentice",
-            "introspective",
+            "you_mediator",
+            "you_mediator_apprentice",
+            "they_introspective",
             "you_blind",
             "they_blind"
         ],
@@ -210,8 +226,9 @@
     ],
     "app_26": [
         [
-            "elder",
-            "neurotic",
+            "you_elder",
+            "they_neurotic",
+            "they_apprentice",
             "you_blind",
             "they_blind"
         ],
@@ -223,9 +240,11 @@
     ],
     "app_28": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "assertive",
             "you_shunned",
+            "dislike",
             "you_blind",
             "they_blind"
         ],
@@ -235,8 +254,10 @@
     ],
     "app_293": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "you_shunned",
+            "max_trust_15",
             "you_blind",
             "they_blind"
         ],
@@ -246,9 +267,12 @@
     ],
     "app_29c": [
         [
-            "Any",
-            "neurotic",
+            "you_any",
+            "they_apprentice",
+            "they_neurotic",
             "you_shunned",
+            "max_trust_15",
+            "max_comfort_20",
             "you_blind",
             "they_blind"
         ],
@@ -258,11 +282,13 @@
     ],
     "app_29": [
         [
-            "Any",
-            "stable",
-            "assertive",
-            "brooding",
+            "you_any",
+            "they_apprentice",
+            "they_stable",
+            "they_assertive",
+            "they_brooding",
             "you_shunned",
+            "dislike",
             "you_blind",
             "they_blind"
         ],
@@ -272,9 +298,10 @@
     ],
     "app_2592": [
         [
-            "Any",
-            "neurotic",
-            "introspective",
+            "you_any",
+            "they_apprentice",
+            "they_neurotic",
+            "they_introspective",
             "platonic_like",
             "you_blind",
             "they_blind",
@@ -289,8 +316,9 @@
     ],
     "app_fdsa": [
         [
-            "medicine_cat_apprentice",
+            "you_medicine_cat_apprentice",
             "you_neurotic",
+            "they_apprentice",
             "you_blind",
             "they_blind"
         ],
@@ -304,9 +332,10 @@
     ],
     "app31232": [
         [
-            "kitten",
-            "stable",
-            "introspective",
+            "you_kitten",
+            "they_apprentice",
+            "they_stable",
+            "they_introspective",
             "you_blind",
             "they_blind",
             "they_hearing"
@@ -320,7 +349,8 @@
     ],
     "app3123_Rr": [
         [
-            "apprentice",
+            "you_apprentice",
+            "they_apprentice",
             "you_bloodthirsty",
             "you_vengeful",
             "you_fierce",
@@ -335,11 +365,12 @@
     ],
     "assertive_medapp1": [
         [
-            "medicine_cat_apprentice",
-            "medicine_cat",
-            "assertive",
-            "unlawful",
-            "silly",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
+            "they_apprentice",
+            "they_assertive",
+            "they_unlawful",
+            "they_silly",
             "you_blind"
         ],
         [
@@ -349,12 +380,13 @@
     ],
     "assertive_medapp2": [
         [
-            "medicine_cat_apprentice",
+            "you_medicine_cat_apprentice",
+            "they_apprentice",
             "platonic_like",
             "romantic_like",
-            "assertive",
-            "sweet",
-            "unabashed",
+            "they_assertive",
+            "they_sweet",
+            "they_unabashed",
             "you_blind",
             "they_blind"
         ],
@@ -365,8 +397,9 @@
     ],
     "assertive_app": [
         [
-            "Any",
-            "assertive",
+            "you_any",
+            "they_apprentice",
+            "they_assertive",
             "platonic_like",
             "you_blind",
             "they_blind"
@@ -379,9 +412,10 @@
     ],
     "assertive_app01": [
         [
-            "warrior",
-            "assertive",
-            "silly",
+            "you_warrior",
+            "they_assertive",
+            "they_silly",
+            "they_apprentice",
             "you_blind",
             "they_blind",
             "they_hearing"
@@ -393,9 +427,10 @@
     ],
     "assertive_app5": [
         [
-            "medicine_cat_apprentice",
-            "medicine_cat",
-            "assertive",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
+            "they_apprentice",
+            "they_assertive",
             "non-related",
             "you_blind",
             "they_went_blind"
@@ -412,10 +447,11 @@
     ],
     "assertiveapp_6": [
         [
-            "Any",
-            "assertive",
-            "silly",
-            "unlawful",
+            "you_any",
+            "they_apprentice",
+            "they_assertive",
+            "they_silly",
+            "they_unlawful",
             "from_adopted_kit",
             "from_your_kit",
             "they_blind"
@@ -428,7 +464,8 @@
     ],
     "assertiveapp_leader": [
         [
-            "leader",
+            "you_leader",
+            "they_apprentice",
             "assertive",
             "you_blind",
             "they_blind"
@@ -440,7 +477,9 @@
     ],
     "assertiveapp_leader01": [
         [
-            "leader",
+            "you_leader",
+            "they_apprentice",
+            "platonic_like",
             "assertive",
             "upstanding",
             "you_blind",
@@ -453,8 +492,9 @@
     ],
     "assertiveapp_leader1": [
         [
-            "deputy",
-            "leader",
+            "you_deputy",
+            "you_leader",
+            "they_apprentice",
             "assertive",
             "unlawful",
             "brooding",
@@ -471,8 +511,9 @@
     ],
     "assertive_queensapp": [
         [
-            "queen's_apprentice",
-            "queen",
+            "you_queen's_apprentice",
+            "you_queen",
+            "they_apprentice",
             "assertive",
             "upstanding",
             "you_blind"
@@ -488,7 +529,8 @@
     ],
     "assertive_queensapp1": [
         [
-            "queen's_apprentice",
+            "you_queen's_apprentice",
+            "they_apprentice",
             "assertive",
             "cool",
             "brooding",
@@ -507,8 +549,9 @@
     ],
     "assertive_mediator1": [
         [
-            "mediator",
-            "mediator_apprentice",
+            "you_mediator",
+            "you_mediator_apprentice",
+            "they_apprentice",
             "assertive",
             "dislike",
             "unabashed",
@@ -524,8 +567,9 @@
     ],
     "assertive_mediatorapp": [
         [
-            "mediator_apprentice",
-            "mediator",
+            "you_mediator_apprentice",
+            "you_mediator",
+            "they_apprentice",
             "assertive",
             "upstanding"
         ],
@@ -538,7 +582,8 @@
     ],
     "assertiveapp_mediatorapp1": [
         [
-            "mediator_apprentice",
+            "you_mediator_apprentice",
+            "they_apprentice",
             "dislike",
             "assertive",
             "cool",
@@ -554,8 +599,9 @@
     ],
     "assertivewarrior_mediatorapp2": [
         [
-            "mediator_apprentice",
-            "mediator",
+            "you_mediator_apprentice",
+            "you_mediator",
+            "they_apprentice",
             "assertive",
             "unlawful",
             "unabashed",
@@ -571,8 +617,9 @@
     ],
     "assertiveapp_med": [
         [
-            "medicine_cat",
-            "medicine_cat_apprentice",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "they_apprentice",
             "platonic_like",
             "assertive",
             "cool",
@@ -591,8 +638,10 @@
     ],
     "assertiveapp_med1": [
         [
-            "medicine_cat",
-            "medicine_cat_apprentice",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "they_apprentice",
+            "platonic_like",
             "assertive"
         ],
         [
@@ -613,6 +662,7 @@
             "mediator",
             "queen's_apprentice",
             "queen",
+            "they_apprentice",
             "elder",
             "assertive",
             "you_blind",
@@ -628,6 +678,7 @@
         [
             "medicine_cat_apprentice",
             "medicine_cat",
+            "they_apprentice",
             "platonic_like",
             "assertive",
             "unabashed",
@@ -644,6 +695,7 @@
         [
             "medicine_cat_apprentice",
             "platonic_like",
+            "they_apprentice",
             "assertive",
             "silly",
             "unabashed",
@@ -659,7 +711,8 @@
     ],
     "assertive_tokit": [
         [
-            "kitten",
+            "you_kitten",
+            "they_apprentice",
             "platonic_like",
             "assertive"
         ],
@@ -674,9 +727,10 @@
     ],
     "assertive_apprentice": [
         [
-            "apprentice",
+            "you_apprentice",
             "assertive",
             "unlawful",
+            "they_apprentice",
             "neutral",
             "platonic_like",
             "you_blind",
@@ -689,7 +743,7 @@
     ],
     "assertive_apprentice1": [
         [
-            "apprentice",
+            "they_apprentice",
             "warrior",
             "from_your_apprentice",
             "assertive",
@@ -703,7 +757,8 @@
     ],
     "assertive_apprentice2": [
         [
-            "apprentice",
+            "they_apprentice",
+            "you_any",
             "assertive",
             "unlawful",
             "you_blind",
@@ -717,7 +772,8 @@
     ],
     "assertive_apprentice5": [
         [
-            "apprentice",
+            "they_apprentice",
+            "you_apprentice",
             "respect",
             "assertive",
             "upstanding",
@@ -733,7 +789,7 @@
     ],
     "assertive_apprentice7": [
         [
-            "apprentice",
+            "they_apprentice",
             "platonic_like",
             "assertive",
             "cool",
@@ -751,10 +807,9 @@
     ],
     "assertive_apprentice8": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "kitten",
+            "they_apprentice",
+            "they_sameage",
+            "you_younger",
             "dislike",
             "assertive",
             "cool",
@@ -769,10 +824,8 @@
     ],
     "assertive_apprentice8_2": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "queen's_apprentice",
+            "they_app",
+            "you_app",
             "platonic_like",
             "assertive",
             "silly",
@@ -791,7 +844,8 @@
     ],
     "assertive_apprentice9": [
         [
-            "Any",
+            "they_apprentice",
+            "you_any",
             "platonic_like",
             "assertive",
             "unlawful",
@@ -815,7 +869,8 @@
     ],
     "assertive_apprentice10": [
         [
-            "medicine_cat_apprentice",
+            "you_medicine_cat_apprentice",
+            "they_apprentice",
             "platonic_like",
             "assertive",
             "sibling",
@@ -833,7 +888,8 @@
     ],
     "assertive_apprentice11": [
         [
-            "mediator_apprentice",
+            "you_mediator_apprentice",
+            "they_apprentice",
             "platonic_like",
             "assertive",
             "unlawful",
@@ -852,7 +908,8 @@
     ],
     "assertive_apprentice12": [
         [
-            "queen's_apprentice",
+            "you_queen's_apprentice",
+            "they_apprentice",
             "platonic_like",
             "assertive",
             "unlawful",
@@ -871,9 +928,10 @@
     ],
     "assertive_apprentice13": [
         [
-            "queen's_apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
+            "you_queen's_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "they_apprentice",
             "platonic_like",
             "assertive",
             "unabashed",
@@ -890,10 +948,10 @@
     ],
     "assertive_apprentice14": [
         [
-            "Any",
+            "they_apprentice",
+            "you_younger",
             "neutral",
             "dislike",
-            "neutral",
             "assertive",
             "cool",
             "brooding",
@@ -909,7 +967,8 @@
     ],
     "assertive_apprentice16": [
         [
-            "apprentice",
+            "they_apprentice",
+            "you_apprentice",
             "platonic_like",
             "assertive",
             "you_blind",
@@ -923,7 +982,8 @@
     ],
     "assertive_apprentice17": [
         [
-            "Any",
+            "they_apprentice",
+            "you_any",
             "dislike",
             "neutral",
             "assertive",
@@ -943,7 +1003,8 @@
     ],
     "assertive_apprentice18": [
         [
-            "Any",
+            "they_apprentice",
+            "you_younger",
             "dislike",
             "neutral",
             "assertive",
@@ -961,7 +1022,8 @@
     ],
     "assertive_apprentice18_2": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "dislike",
             "assertive",
             "cool",
@@ -979,9 +1041,8 @@
     ],
     "assertive_apprentice19": [
         [
-            "Any",
-            "dislike",
-            "neutral",
+            "you_any",
+            "they_apprentice",
             "assertive",
             "platonic_like",
             "they_hearing"
@@ -993,7 +1054,8 @@
     ],
     "assertive_apprentice20": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "assertive",
             "platonic_like"
         ],
@@ -1005,10 +1067,10 @@
     ],
     "assertive_apprentice22": [
         [
-            "Any",
+            "you_any",
+            "they_apprentice",
             "assertive",
             "unlawful",
-            "kitten",
             "from_adopted_kit",
             "from_your_kit",
             "you_blind",
