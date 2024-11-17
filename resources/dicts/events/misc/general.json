@@ -423,7 +423,7 @@
     "sub_type": ["murder_reveal"],
     "tags": ["clan_discovery","clan_wide"],
     "weight": 5,
-    "event_text": "m_c wakes up during the night and believes {PRONOUN/m_c/subject} see mur_c standing over {PRONOUN/m_c/poss} nest. {PRONOUN/m_c/subject/CAP} begin wailing and begging for mercy, but only manage to alert the entire Clan to {PRONOUN/m_c/poss} sins.",
+    "event_text": "m_c wakes up during the night and believes {PRONOUN/m_c/subject} {VERB/m_c/see/sees} mur_c standing over {PRONOUN/m_c/poss} nest. {PRONOUN/m_c/subject/CAP} {VERB/m_c/begin/begins} wailing and begging for mercy, but only {VERB/m_c/manage/manages} to alert the entire Clan to {PRONOUN/m_c/poss} sins.",
     "m_c": {
         "age": ["any"],
         "status": ["any"]

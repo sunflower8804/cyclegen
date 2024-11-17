@@ -3952,6 +3952,8 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             if len(cat.inheritance.get_siblings()) == 0:
                 return ""
             sibling = Cat.fetch_cat(choice(cat.inheritance.get_siblings()))
+            if sibling is None:
+                return
             addon_check = abbrev_addons(cat, sibling, cluster, x, rel, r)
             counter = 0
 
