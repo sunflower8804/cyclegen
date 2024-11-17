@@ -3986,7 +3986,7 @@ class Events:
             else:
                 # exile/runaway
                 if not int(random.random() * 10) and cat.ID != game.clan.your_cat.ID:
-                    game.clan.add_to_outside()
+                    game.clan.add_to_outside(cat)
                     cat.status_change("former Clancat")
                     text = f"{cat.name} runs away in the middle of the night, sick of being treated so terribly."
                 else:
