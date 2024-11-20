@@ -1433,6 +1433,7 @@ class Cat:
 
     def shunned_demotion(self):
         """ lifegen function for shunned deps/leaders"""
+        print(self.name, "shunned demotion")
 
         text = ""
         if self.status == "leader":
