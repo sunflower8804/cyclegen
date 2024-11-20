@@ -123,6 +123,9 @@ class Events:
         game.switches['window_open'] = False
         if game.clan.your_cat.status == "medicine cat apprentice" or game.clan.your_cat.status == "medicine cat":
             game.switches["attended half-moon"] = False
+
+        murder_history = History.get_murders(game.clan.your_cat)
+        print("HEY", murder_history)
         
         if any(
                 str(cat.status) in {

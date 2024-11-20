@@ -306,7 +306,7 @@ class HandleShortEvents:
         # this has to be done after event text adjust so the leaders name doesn't get changed until after
         secondary_event = ""
         if "murder_reveal" in self.chosen_event.sub_type:
-            if self.main_cat.status not in ["apprentice", "kitten", "elder"] and shunned:
+            if self.main_cat.status not in ["apprentice", "kitten", "elder", "warrior"] and shunned:
                 secondary_event = self.main_cat.shunned_demotion()
         # ---
 
