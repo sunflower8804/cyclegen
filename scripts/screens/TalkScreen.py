@@ -651,11 +651,30 @@ class TalkScreen(Screens):
                     continue
 
             # Status tags
+
+            if game.clan.your_cat.shunned != 0:
+                murder_history = History.get_murders(game.clan.your_cat)
+                history = None
+                your_status = game.clan.your_cat.status
+                if "is_murderer" in murder_history:
+                    history = murder_history["is_murderer"]
+                else:
+                    your_status = game.clan.your_cat.status
+                if history:
+                    if "demoted_from" in history[-1] and history[-1]["demoted_from"]:
+                        your_status = history[-1]["demoted_from"]
+                    else:
+                        your_status = game.clan.your_cat.status
+                else:
+                    your_status = game.clan.your_cat.status
+            else:
+                your_status = game.clan.your_cat.status
+
             if (
-                you.status not in tags
+                status not in tags
                 and "any" not in tags
-                and f"you_{you.status}" not in tags
-                and f"you_{(you.status).replace(' ', '_')}" not in tags
+                and f"you_{your_status}" not in tags
+                and f"you_{(your_status).replace(' ', '_')}" not in tags
                 and "young elder" not in tags
                 and "no_kit" not in tags
                 and "you_any" not in tags
@@ -842,35 +861,34 @@ class TalkScreen(Screens):
             ]
 
             # does this do anything???
-            # line 556 seems to make this obsolete
 
             if any(r in roles for r in tags):
                 has_role = False
-                if "you_kitten" in tags and you.status == "kitten":
+                if "you_kitten" in tags and your_status == "kitten":
                     has_role = True
-                elif "you_apprentice" in tags and you.status == "apprentice":
+                elif "you_apprentice" in tags and your_status == "apprentice":
                     has_role = True
-                elif "you_medicine_cat_apprentice" in tags and you.status == "medicine cat apprentice":
+                elif "you_medicine_cat_apprentice" in tags and your_status == "medicine cat apprentice":
                     has_role = True
-                elif "you_mediator_apprentice" in tags and you.status == "mediator apprentice":
+                elif "you_mediator_apprentice" in tags and your_status == "mediator apprentice":
                     has_role = True
-                elif "you_queen's_apprentice" in tags and you.status == "queen's apprentice":
+                elif "you_queen's_apprentice" in tags and your_status == "queen's apprentice":
                     has_role = True
-                elif "you_warrior" in tags and you.status == "warrior":
+                elif "you_warrior" in tags and your_status == "warrior":
                     has_role = True
-                elif "you_mediator" in tags and you.status == "mediator":
+                elif "you_mediator" in tags and your_status == "mediator":
                     has_role = True
-                elif "you_medicine_cat" in tags and you.status == "medicine cat":
+                elif "you_medicine_cat" in tags and your_status == "medicine cat":
                     has_role = True
-                elif "you_queen" in tags and you.status == "queen":
+                elif "you_queen" in tags and your_status == "queen":
                     has_role = True
-                elif "you_deputy" in tags and you.status == "deputy":
+                elif "you_deputy" in tags and your_status == "deputy":
                     has_role = True
-                elif "you_leader" in tags and you.status == "leader":
+                elif "you_leader" in tags and your_status == "leader":
                     has_role = True
-                elif "you_elder" in tags and you.status == "elder":
+                elif "you_elder" in tags and your_status == "elder":
                     has_role = True
-                elif "you_newborn" in tags and you.status == "newborn":
+                elif "you_newborn" in tags and your_status == "newborn":
                     has_role = True
                 if not has_role:
                     continue
