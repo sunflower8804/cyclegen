@@ -1028,6 +1028,7 @@ class MurderScreen(Screens):
 
     def change_cat(self, new_mentor=None, accomplice=None, accompliced=None):
         self.exit_screen()
+        self.current_page = 0
         r = randint(0,100)
         r2 = randint(-10, 10)
 
@@ -1687,13 +1688,15 @@ class MurderScreen(Screens):
         # 1 = you punished, 2 = accomplice punished, 3 = both punished
         event_text = ""
 
-        if game.clan.your_cat.dead:
-            if randint (1,2) == 1:
+        if accomplice and accompliced:
+            if game.clan.your_cat.dead:
                 punishment_chance = 2
             else:
-                return
+                punishment_chance = randint(1,3)
         else:
-            punishment_chance = randint(1,3)
+            if game.clan.your_cat.dead:
+                return
+            punishment_chance = 1
 
         shunned_cats = []
         if punishment_chance == 1:
@@ -1718,6 +1721,7 @@ class MurderScreen(Screens):
                 )
                 if kitty.status not in ["apprentice", "kitten", "elder", "warrior"]:
                     event_text = kitty.shunned_demotion()
+                    game.cur_events_list.insert(3, Single_Event(event_text))
 
         if not accomplice or not accompliced:
             punishment_chance = 1
