@@ -125,7 +125,6 @@ class Events:
             game.switches["attended half-moon"] = False
 
         murder_history = History.get_murders(game.clan.your_cat)
-        print("HEY", murder_history)
         
         if any(
                 str(cat.status) in {

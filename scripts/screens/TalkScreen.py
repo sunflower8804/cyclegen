@@ -4,6 +4,7 @@ import ujson
 import re
 
 from scripts.utility import scale
+from scripts.cat.history import History
 
 from .Screens import Screens
 
@@ -671,7 +672,7 @@ class TalkScreen(Screens):
                 your_status = game.clan.your_cat.status
 
             if (
-                status not in tags
+                your_status not in tags
                 and "any" not in tags
                 and f"you_{your_status}" not in tags
                 and f"you_{(your_status).replace(' ', '_')}" not in tags
