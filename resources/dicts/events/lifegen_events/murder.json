@@ -1536,11 +1536,11 @@
         "your_status": [
             "kitten"
         ],
-        "victim_status": [],
-        "relationship": [
+        "victim_status": [
             "mediator",
             "mediator apprentice"
         ],
+        "relationship": [],
         "strategy": [
             "accident",
             "border"
