@@ -1685,6 +1685,8 @@ class MurderScreen(Screens):
     def choose_discover_punishment(self, you, cat_to_murder, accomplice, accompliced):
         """determines punishment text, shunned and guilt outcomes"""
         # 1 = you punished, 2 = accomplice punished, 3 = both punished
+        event_text = ""
+
         if game.clan.your_cat.dead:
             if randint (1,2) == 1:
                 punishment_chance = 2
@@ -1693,6 +1695,30 @@ class MurderScreen(Screens):
         else:
             punishment_chance = randint(1,3)
 
+        shunned_cats = []
+        if punishment_chance == 1:
+            shunned_cats = [you]
+        elif punishment_chance == 2:
+            shunned_cats = [accomplice]
+        else:
+            shunned_cats = [you, accomplice]
+
+        for kitty in shunned_cats:
+            if kitty is None:
+                continue
+            if not kitty.dead:
+                murder_history = History.get_murders(kitty)
+                History.reveal_murder(
+                    cat=kitty,
+                    other_cat=None,
+                    cat_class=Cat,
+                    victim=cat_to_murder,
+                    murder_index=-1,
+                    shunned=True
+                )
+                if kitty.status not in ["apprentice", "kitten", "elder", "warrior"]:
+                    event_text = kitty.shunned_demotion()
+
         if not accomplice or not accompliced:
             punishment_chance = 1
         if punishment_chance == 1:
@@ -1700,14 +1726,8 @@ class MurderScreen(Screens):
                 a_s = randint(1,2)
                 if a_s == 1 and accomplice.status != "leader":
                     game.cur_events_list.insert(2, Single_Event(f"Shocked at your request to be an accomplice to murder, {accomplice.name} reports your actions to the Clan leader."))
-                if not you.dead:
-                    you.shunned = 1
             txt = ""
             if game.clan.your_cat.dead:
-                # if game.clan.your_cat.status in ['kitten', 'leader', 'deputy', 'medicine cat']:
-                #     txt = choice(self.mu_txt["murder_discovered dead " + game.clan.your_cat.status])
-                # else:
-                #     txt = choice(self.mu_txt["murder_discovered dead general"])
                 txt = choice(self.mu_txt["murder_discovered dead general"])
             else:
                 if game.clan.your_cat.status in ['kitten', 'leader', 'deputy', 'medicine cat']:
@@ -1716,8 +1736,6 @@ class MurderScreen(Screens):
                     txt = choice(self.mu_txt["murder_discovered general"])
             txt = txt.replace('v_c', str(cat_to_murder.name))
             game.cur_events_list.insert(2, Single_Event(txt))
-            if not you.dead:
-                you.shunned = 1
             you.faith -= 0.5
         elif punishment_chance == 2:
             if game.clan.your_cat.dead:
@@ -1726,17 +1744,11 @@ class MurderScreen(Screens):
                 txt = f"{accomplice.name} is blamed for the murder of v_c. However, you were not caught."
             txt = txt.replace('v_c', str(cat_to_murder.name))
             game.cur_events_list.insert(2, Single_Event(txt))
-            if not accomplice.dead:
-                accomplice.shunned = 1
             accomplice.faith -= 0.5
         else:
             txt = f"The unsettling truth of v_c's death is discovered, with you and {accomplice.name} responsible. The Clan decides both of your punishments."
             txt = txt.replace('v_c', str(cat_to_murder.name))
             game.cur_events_list.insert(2, Single_Event(txt))
-            if not you.dead:
-                you.shunned = 1
-            if not accomplice.dead:
-                accomplice.shunned = 1
             accomplice.faith -= 0.5
         
         if punishment_chance == 1 or punishment_chance == 3:
@@ -2379,6 +2391,9 @@ class MurderScreen(Screens):
 
         if chance > 95:
             chance = 95
+
+        # debug
+        chance = 100
 
         return chance
     

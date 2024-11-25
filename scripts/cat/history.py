@@ -695,6 +695,8 @@ class History:
         :param murder_index: Index of the murder
         :param shunned: LIFEGEN: determines if the cat will be shunned from the reveal"""
 
+        print(cat.name, "reveal murder")
+
         victim = cat_class.fetch_cat(victim)
         murder_history = History.get_murders(cat)
         victim_history = History.get_murders(victim)
@@ -719,6 +721,12 @@ class History:
                 murder_history["revealed"] = True
                 murder_history["revealed_by"] = other_cat.ID if other_cat else None
                 murder_history["revelation_moon"] = game.clan.age
+
+                if cat.status not in ["apprentice", "kitten", "elder", "warrior"]:
+                    murder_history["demoted_from"] = cat.status
+                if cat.status == "leader":
+                    murder_history["remaining_lives"] = game.clan.leader_lives
+
                 if not other_cat:
                     murder_history["revelation_text"] = \
                         "The truth of {PRONOUN/m_c/poss} crime against [victim] is known to the Clan."

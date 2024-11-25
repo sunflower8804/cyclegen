@@ -684,7 +684,6 @@ class Cat:
         status."""
         self.exiled = True
         self.outside = True
-        self.shunned = 0
         self.faith -= 0.5
         self.status = 'exiled'
         if self.personality.trait == 'vengeful':
@@ -763,8 +762,8 @@ class Cat:
         naughty = you.personality.trait in ["bloodthirsty", "sneaky", "manipulative", "strange", "rebellious", "troublesome", "stoic", "aloof", "cunning"]
         acceptchance = randint(1,5)
         killchance = randint(1,50)
+        return_home_upperbound = int(game.config["shunned_cat"]["return_home_chance"])
         if you.exiled:
-            return_home_upperbound = int(game.config["shunned_cat"]["return_home_chance"])
 
             if num_victims == 0:
                 acceptchance = randint (1,4)
@@ -1453,6 +1452,46 @@ class Cat:
             )
 
             print(f"WARNING: saving history of cat #{self.ID} didn't work")
+
+    def shunned_demotion(self):
+        """ lifegen function for shunned deps/leaders"""
+        print(self.name, "shunned demotion")
+
+        text = ""
+        if self.status == "leader":
+            self.status_change("warrior")
+            text = f"{self.name} can no longer be trusted to lead the Clan and has forfeit the role of leader."
+
+        elif self.status == "deputy":
+            self.status_change("warrior")
+            text = f"{self.name} can no longer be trusted and has forfeit the role of deputy."
+
+        elif self.status == "queen's apprentice":
+            self.status_change("apprentice")
+            text = f"{self.name} can no longer be trusted with the kits and has forfeit the role of a queen's apprentice."
+
+        elif self.status == "mediator apprentice":
+            self.status_change("apprentice")
+            text = f"{self.name} can no longer be trusted with cross-Clan relations and has forfeit the role of a mediator apprentice."
+
+        elif self.status == "medicine cat apprentice":
+            self.status_change("apprentice")
+            text = f"{self.name} can no longer be trusted around dangerous herbs and has forfeit the role of a medicine cat apprentice."
+
+        elif self.status == "queen":
+            self.status_change("warrior")
+            text = f"{self.name} can no longer be trusted with the kits and has forfeit the role of a queen."
+
+        
+        elif self.status == "mediator":
+            self.status_change("warrior")
+            text = f"{self.name} can no longer be trusted with cross-Clan relations and has forfeit the role of a mediator."
+        
+        elif self.status == "medicine cat":
+            self.status_change("warrior")
+            text = f"{self.name} can no longer be trusted around dangerous herbs and has forfeit the role of a medicine cat."
+        
+        return text
 
     def generate_lead_ceremony(self):
         """Create a leader ceremony and add it to the history"""

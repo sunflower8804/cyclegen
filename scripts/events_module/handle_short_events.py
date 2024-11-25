@@ -303,6 +303,14 @@ class HandleShortEvents:
             chosen_herb=self.chosen_herb,
         )
 
+        # LG
+        # this has to be done after event text adjust so the leaders name doesn't get changed until after
+        secondary_event = ""
+        if "murder_reveal" in self.chosen_event.sub_type:
+            if self.main_cat.status not in ["apprentice", "kitten", "elder", "warrior"] and shunned:
+                secondary_event = self.main_cat.shunned_demotion()
+        # ---
+
         if self.chosen_herb:
             game.herb_events_list.append(f"{self.chosen_event} {self.herb_notice}.")
 
@@ -313,6 +321,18 @@ class HandleShortEvents:
                 self.involved_cats,
             )
         )
+
+        # LG
+        # adding the demotion event
+        if secondary_event:
+            game.cur_events_list.append(
+                Single_Event(
+                    secondary_event,
+                    ["misc"],
+                    self.main_cat,
+                )
+            )
+        # ---
 
     def handle_new_cats(self):
         """

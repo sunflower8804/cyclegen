@@ -1600,11 +1600,22 @@ class ProfileScreen(Screens):
         elif the_cat.exiled:
             output += "<font color='#FF0000'>exiled</font>"
         elif the_cat.shunned > 0 and not the_cat.dead:
-            if the_cat.status != "former Clancat":
+            if not the_cat.outside:
+
+                # grabbing demoted statuses
+                murder_history = History.get_murders(the_cat)
+                history = None
+                status = the_cat.status
+                if "is_murderer" in murder_history:
+                    history = murder_history["is_murderer"]
+                if history:
+                    if "demoted_from" in history[-1] and history[-1]["demoted_from"]:
+                        status = history[-1]["demoted_from"]
+
                 if game.settings['dark mode']:
-                    output += "<font color='#FF9999'>shunned " + the_cat.status + "</font>"
+                    output += "<font color='#FF9999'>shunned " + status+ "</font>"
                 else:
-                    output += "<font color='#950000'>shunned " + the_cat.status + "</font>"
+                    output += "<font color='#950000'>shunned " + status + "</font>"
             else:
                 output += the_cat.status
         elif the_cat.df:
