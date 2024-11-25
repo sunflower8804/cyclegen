@@ -1432,8 +1432,7 @@ class Cat:
             print(f"WARNING: saving history of cat #{self.ID} didn't work")
 
     def shunned_demotion(self):
-        """ lifegen function for shunned deps/leaders"""
-        print(self.name, "shunned demotion")
+        """ lifegen function for shunned cats being demoted"""
 
         text = ""
         if self.status == "leader":
