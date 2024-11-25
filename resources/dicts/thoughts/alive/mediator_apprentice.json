@@ -20,7 +20,7 @@
         "thoughts": [
             "Had an argument with another mediator apprentice",
             "Doesn't agree with r_c's style of mediation",
-            "Is planning a group mediation session with r_c and some troubling cats"
+            "Is planning a group mediation session with r_c and some troublemaking cats"
         ],
         "random_status_constraint": [
             "mediator apprentice"
@@ -58,7 +58,7 @@
     {
         "id": "righteous_mediator_apprentice",
         "thoughts": [
-            "Was scolded for taking sides in mediating arguments recently",
+            "Was scolded for taking sides while mediating arguments recently",
             "Is being reminded to be neutral in mediation",
             "Is having trouble remaining neutral when one cat is clearly in the wrong",
             "Is struggling between doing the right thing and keeping a secret",
@@ -81,24 +81,24 @@
     {
         "id": "flamboyant_mediator_app",
         "thoughts": [
-          "Learns to not gossip so much about what {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} told by Clanmates",
-          "Brings attention off a shyer Clanmate with wild skylarking through camp",
-          "Yowls about another Clan being unreasonable",
-          "Encourages a Clanmate to speak to their crush fearlessly",
-          "Doesn't understand {PRONOUN/m_c/poss} quieter Clanmates but tries to learn",
-          "Is understanding all sorts of personalities through games and acting",
-          "Starts to understand why certain styles are popular compared to others",
-          "Should tell r_c nicely to be more stylish",
-          "Was scolded after bluntly telling r_c {PRONOUN/r_c/subject} {VERB/r_c/weren't/wasn't} stylish enough",
-          "Is learning what makes everycat different",
-          "Encourages the kits to be themselves always",
-          "Yowls approval of r_c making a positive change",
-          "Tells r_c {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} slaying",
-          "Exclaims that being oneself is being their best self",
-          "Hollers support to r_c while 'hiding' across camp"
+            "Learns to not gossip so much about what {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} told by Clanmates",
+            "Brings attention off a shyer Clanmate with wild skylarking through camp",
+            "Yowls about another Clan being unreasonable",
+            "Encourages a Clanmate to speak to their crush fearlessly",
+            "Doesn't understand {PRONOUN/m_c/poss} quieter Clanmates but tries to learn",
+            "Is understanding all sorts of personalities through games and acting",
+            "Starts to understand why certain styles are popular compared to others",
+            "Should tell r_c nicely to be more stylish",
+            "Was scolded after bluntly telling r_c {PRONOUN/r_c/subject} {VERB/r_c/weren't/wasn't} stylish enough",
+            "Is learning what makes everycat different",
+            "Encourages the kits to be themselves always",
+            "Yowls approval of r_c making a positive change",
+            "Tells r_c {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} slaying",
+            "Exclaims that being oneself is being their best self",
+            "Hollers support to r_c while 'hiding' across camp"
         ],
         "main_trait_constraint": [
-          "flamboyant"
+            "flamboyant"
         ]
-      }
+    }
 ]

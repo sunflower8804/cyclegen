@@ -4,7 +4,7 @@ from typing import Union
 
 class SkillPath(Enum):
     TEACHER = ("quick to help", "good teacher", "great teacher", "excellent teacher")
-    HUNTER = ("moss-ball hunter", "good hunter", "great hunter", "renowned hunter")
+    HUNTER = ("moss ball hunter", "good hunter", "great hunter", "renowned hunter")
     FIGHTER = (
         "avid play-fighter",
         "good fighter",
