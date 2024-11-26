@@ -2774,7 +2774,7 @@ class MakeClanScreen(Screens):
                     elif self.current_selection == "pelt_colour":
                         self.colour = random.choice(Pelt.pelt_colours)
                     elif self.current_selection == "white_patches":
-                        self.white_patches = random.choice(["FULLWHITE"] + Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white + ["None"])
+                        self.white_patches = random.choice(["FULLWHITE"] + Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white + [None])
                     elif self.current_selection == "points":
                         self.points = random.choice(Pelt.point_markings + ["None"])
                     elif self.current_selection == "vitiligo":
