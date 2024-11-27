@@ -25,7 +25,7 @@
         "main_trait_constraint": [
             "bloodthirsty"
         ],
-        "random_outside_status":[
+        "random_outside_status": [
             "clancat"
         ]
     },
@@ -86,7 +86,7 @@
         "random__status_constraint": [
             "rogue"
         ],
-        "random_outside_status":[
+        "random_outside_status": [
             "outside"
         ]
     },
@@ -104,7 +104,7 @@
         "random_living_status": [
             "living"
         ],
-        "random_outside_status":[
+        "random_outside_status": [
             "clancat"
         ]
     },
@@ -126,7 +126,7 @@
             "Misses {PRONOUN/m_c/poss} friends",
             "Regrets {PRONOUN/m_c/poss} actions",
             "Wonders what being in a Clan is like",
-           "Is spending a long time thinking about a cool rogue name"
+            "Is spending a long time thinking about a cool rogue name"
         ],
         "main_age_constraint": [
             "adolescent"
