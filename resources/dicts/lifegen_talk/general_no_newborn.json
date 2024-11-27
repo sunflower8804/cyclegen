@@ -3212,7 +3212,6 @@
         ],
         [
             "[You watch t_c knead the ground. What's got {PRONOUN/t_c/object} so excited today?]"
-            
         ]
     ],
     "about_cool_SQ2": [
@@ -3887,7 +3886,7 @@
             "[t_c is rolling from one side of the camp to the other, groaning in boredom.]"
         ]
     ],
-      "shunnedblind_to_deafgrieving_SAM1": [
+    "shunnedblind_to_deafgrieving_SAM1": [
         [
             "they_deaf",
             "they_grieving",
@@ -3899,7 +3898,7 @@
             "[t_c doesn't know how loud {PRONOUN/t_c/poss} cries are. You want to comfort {PRONOUN/t_c/object}, but you know that you'd be the last cat {PRONOUN/t_c/subject}'d want comfort from right now.]"
         ]
     ],
-   "dfdead_to_grievingblind_SAM1": [
+    "dfdead_to_grievingblind_SAM1": [
         [
             "they_grieving",
             "they_blind",
@@ -3928,7 +3927,8 @@
     "grievingblind_to_dead_H1": [
         [
             "they_dead",
-            "grieving_them",
+            "grievingthem",
+            "you_grieving",
             "you_blind",
             "you_deaf",
             "they_blind",
@@ -3969,7 +3969,7 @@
             "[You thought you could take comfort in the stars, but even StarClan has decided to ignore you.]"
         ]
     ],
-   "shunnedblind_to_dead_SAM1": [
+    "shunnedblind_to_dead_SAM1": [
         [
             "you_shunned",
             "you_blind",

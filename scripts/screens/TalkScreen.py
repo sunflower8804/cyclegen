@@ -3,8 +3,6 @@ import pygame
 import ujson
 import re
 
-from scripts.utility import scale
-
 from .Screens import Screens
 
 from scripts.utility import generate_sprite, get_cluster, pronoun_repl, adjust_txt

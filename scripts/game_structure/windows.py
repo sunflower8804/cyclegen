@@ -32,8 +32,8 @@ from scripts.game_structure import image_cache
 from scripts.housekeeping.progress_bar_updater import UIUpdateProgressBar
 from scripts.housekeeping.update import self_update, UpdateChannel, get_latest_version_number
 from scripts.event_class import Single_Event
-from scripts.utility import scale, quit, update_sprite, scale_dimentions, logger, process_text
-from scripts.game_structure.game_essentials import game, MANAGER
+from scripts.utility import quit, update_sprite, logger, process_text
+from scripts.game_structure.game_essentials import game
 from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked
 from scripts.game_structure.game_essentials import game
 from scripts.game_structure.screen_settings import MANAGER

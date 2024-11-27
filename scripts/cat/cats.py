@@ -23,7 +23,7 @@ import bisect
 
 from scripts.utility import get_personality_compatibility, event_text_adjust, update_sprite, \
     leader_ceremony_text_adjust, get_cluster
-from scripts.game_structure.game_essentials import game, screen
+from scripts.game_structure.game_essentials import game
 from scripts.cat_relations.relationship import Relationship
 from scripts.game_structure import image_cache
 from scripts.event_class import Single_Event

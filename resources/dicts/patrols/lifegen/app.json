@@ -29,22 +29,43 @@
                 "text": "Accepting the challenge, you track m_n's trail throughout the territory with ease. You beam with pride as you manage to find {PRONOUN/m_n/object} again and again.",
                 "exp": 10,
                 "weight": 15,
-                "stat_skill": ["EXPLORER,1", "NAVIGATOR,1", "TRACKER,1", "SENSE,1"],
-                "can_have_stat": ["p_l"]
+                "stat_skill": [
+                    "EXPLORER,1",
+                    "NAVIGATOR,1",
+                    "TRACKER,1",
+                    "SENSE,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You're y_c - you never give less than your absolute best! m_n is found again and again and again... Until {PRONOUN/m_n/subject}{VERB/m_n/'re/'s} more worn out than you. Your held is held high on the way back to camp. You can't wait to tell your denmates all about your skills again!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "It's time to put your best detective nose on! You startle m_n a few times - including once with a mouse {PRONOUN/m_n/subject} never saw you catch. You even tucked a flower into {PRONOUN/m_n/poss} fur at one point without {PRONOUN/m_n/object} noticing! It's safe to say you passed this training with flying colors.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait":["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -57,15 +78,29 @@
                 "text": "Failure usually isn't in your future. At least, you never plan for it, since you always give your everything. Today was no different but your tracking skills really needed the brush up - you hardly found m_n at all today. It's alright though. You gave it your all - and that's all m_n ever asks from you. And all you ask from yourself.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You try to stay on task, you really do, but your nose leads you to an absolutely gorgeous patch of flowers! m_n and hunting is swiftly forgotten until {PRONOUN/m_n/subject} {VERB/m_n/show/shows} up with annoyance plain on {PRONOUN/m_n/poss} face...",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait":["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -99,15 +134,29 @@
                 "text": "Your sleepiness swiftly disolves in favor of being out in the territory with your paws itching. r_w1 and m_n have to herd you back into formation once or twice as r_w2 sleepily lags behind. {PRONOUN/r_w2/subject/CAP}{VERB/r_w2/'re/'s} sooooo slow though!!! You're bouncing behind {PRONOUN/r_w2/object} the whole way.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "Early bird gets the worm! You chatter at every bird you see, and trill a song. You energy is infectious this early, and even the sleepy r_w seems to perk up a bit by the end of the patrol. Once back, m_n says you did well, but reminds you to be a bit quieter next time.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait":["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -120,15 +169,29 @@
                 "text": "It's waaaaay too early, and you complain loudly to m_n the whole way. r_w1 starts to tiredly agree with you but r_w2 nudges {PRONOUN/r_w1/object} to stay quiet. Half the trip ends up with you being scolded by your mentor...",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You theatrically drag your feet in a passive rebellion. Your beauty sleep - interrupted! m_n rolls {PRONOUN/m_n/poss} eyes at you and scolds you lightly to just get on with patrol without the drama.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait":["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -177,16 +240,32 @@
                     "flamboyant",
                     "compassionate"
                 ],
-                "stat_skill": ["CLEVER,1", "COOPERATIVE,1", "STORY,1", "SPEAKER,1"],
-                "can_have_stat": ["p_l"]
-                
+                "stat_skill": [
+                    "CLEVER,1",
+                    "COOPERATIVE,1",
+                    "STORY,1",
+                    "SPEAKER,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "Eagerly you settle in with r_e and beg to hear the story of {PRONOUN/r_e/poss} part in the battle with o_c! It's a tale full of bravery, danger, and r_e even shows off a skill from that battle for you!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -199,15 +278,29 @@
                 "text": "You have far better things to do than sit with the elders. You tell r_e that you'd rather talk battle tactics with the other apprentices and move on with your head held high.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "As much as you love hearing r_e's stories, they're just not told well enough for you. You make an excuse and hurry over to the apprentices to start up an even better storytelling session - in your opinion!",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait":["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -251,16 +344,32 @@
                 "text": "This leaf is begging to be taken down! Claws unsheathed, you take a powerful leap up to the leaf. Your claws catch on the branch and you take the whole limb down! That lead had nothing on you!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "Instead of leaping for it, you let your creative side take over. You sing with a flourish to this leaf waving in the breeze. It's poetry in motion - and everycat should know that thanks to you!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "stat_skill": ["SONG,1"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "stat_skill": [
+                    "SONG,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -273,16 +382,32 @@
                 "text": "This leaf is begging to be taken down! Claws unsheathed, you take a powerful leap up to the leaf. Your claws catch on the branch though - and you end up stuck hanging there until m_n comes to help. Ouch, your pride...",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "Instead of leaping for it, you let your creative side take over. You sing with a flourish to this leaf waving in the breeze. m_n spots you however, and gives you a scolding for not focusing on your tasks. Oops...",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "stat_skill": ["SONG,1"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "stat_skill": [
+                    "SONG,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -331,17 +456,38 @@
                 "text": "You stalk a bit closer and mock the croaks back at the crow. Irritated, it flaps it's wings at you, and you pounce. Crows aren't normally on the freshkill pile, but it is today!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "stat_skill": ["HUNTER,1", "CLEVER,1"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "stat_skill": [
+                    "HUNTER,1",
+                    "CLEVER,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You have an idea... You croak encouragingly to the crow, who instead of irritating you, now looks interested in you! The two of you talk back and forth for a while before you move on. Later, you spot the same crow again, and they drop something shiny before you!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "stat_skill": ["LANGUAGE,1","SPEAKER,1","SONG,1"],
-                "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "stat_skill": [
+                    "LANGUAGE,1",
+                    "SPEAKER,1",
+                    "SONG,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ],
                 "accessory": [
                     {
                         "cats": [
@@ -364,17 +510,38 @@
                 "text": "You stalk a bit closer and mock the croaks back at the crow. Irritated, it flaps it's wings at you, and you pounce - only to hit the tree instead. It's raucous caws make you wonder if it's laughing at you...",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "stat_skill": ["HUNTER,1", "CLEVER,1"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "stat_skill": [
+                    "HUNTER,1",
+                    "CLEVER,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You have an idea... You croak encouragingly to the crow, but it shrieks back at you. It pecks at you before taking off in a hail of feathers.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "stat_skill": ["LANGUAGE,1","SPEAKER,1","SONG,1"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "stat_skill": [
+                    "LANGUAGE,1",
+                    "SPEAKER,1",
+                    "SONG,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -403,9 +570,21 @@
                 "text": "Summoning your courage, you ascend the tree swiftly and smoothly. From the top, you enjoy a bird's-eye view of the forest. m_n gazes up in admiration, praising your agility and bravery.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "stat_skill": ["CLIMBER,1"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "stat_skill": [
+                    "CLIMBER,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "With m_n's encouragement, you start up the tree. Halfway up, however, you lose your nerves. m_n calls out to assure you before {PRONOUN/m_n/subject} {VERB/m_n/climb/climbs} up to coax you the rest of the way up. You're grateful to {PRONOUN/m_n/object} as you catch your breath at the top.",
@@ -420,8 +599,12 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
-                        "injuries": ["bruises"]
+                        "cats": [
+                            "y_c"
+                        ],
+                        "injuries": [
+                            "bruises"
+                        ]
                     }
                 ]
             },
@@ -429,9 +612,21 @@
                 "text": "You're in your element - of course you can conquer this tree! Halfway up, however, you choose the wrong branch, and nearly go tumbling down to the ground below. You manage to catch yourself on the trunk. Your nerves get the better of you after that though...",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "stat_skill": ["CLIMBER,1"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "stat_skill": [
+                    "CLIMBER,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -460,8 +655,15 @@
                 "text": "You accept the task and, with your keen senses, you successfully spot traces of the rival Clan. The Clan praises your vigilance, which has helped avert a potential crisis. l_n seems quite pleased with you!",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": ["EXPLORER,1", "NAVIGATOR,1", "TRACKER,1", "SENSE,1"],
-                "can_have_stat": ["p_l"]
+                "stat_skill": [
+                    "EXPLORER,1",
+                    "NAVIGATOR,1",
+                    "TRACKER,1",
+                    "SENSE,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You're not the best tracker, but you give it your all. You lead r_w1, r_w2 and m_n to a suspicious spot and the three more experienced cats take over quickly. r_w2 finds traces thanks to you! Later, l_n takes you aside to tell you that you did well.",
@@ -472,15 +674,29 @@
                 "text": "Of course l_n has faith in you, you're p_l! You're not about to let o_c_n get the better of you either. Before m_n can stop you, you've charged ahead and catch two apprentices in the act. r_w1 is at your side and you send the interlopers packing with a good scratch to remember you by!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You agree to the patrol - it's a great opportunity after all! Your tail is high as you walk alongside m_n. {PRONOUN/m_n/subject/CAP} {VERB/m_n/stop/stops} as the patrol encounters o_c, but you're so engrossed in your merry-making that you decide not to stop with them. Somehow, your carefree fun diffuses tensions!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -493,13 +709,26 @@
                 "text": "No hesitation, go go go! You race ahead of the patrol with deaf ears to m_n's calls. Unfortunately, your attitude has consequences - you run head first into the o_c_n invasion. Alone. You're given a reminder of what your personality can mean for you if you don't think ahead before the rest of the patrol catches up to defend the territory... and you.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"],
-                "injury": [ 
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ],
+                "injury": [
                     {
-                        "cats": ["y_c"],
-                        "injuries": ["minor_injury"]
-                    
+                        "cats": [
+                            "y_c"
+                        ],
+                        "injuries": [
+                            "minor_injury"
+                        ]
                     }
                 ]
             },
@@ -507,13 +736,20 @@
                 "text": "Why not! You're engrossed in making sure you're still the star of the show despite m_n's hushing. When you do stumble upon the o_n invasion, you take it a bit literally. You fumble right over your own paws while showing off a fancy move you said you were going to use on them. The rival patrol bursts into laughter. Well... at least you remained the star!",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "can_have_stat": ["p_l"],
-                "injury": [ 
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ],
+                "injury": [
                     {
-                        "cats": ["y_c"],
-                        "injuries": ["minor_injury"]
-                    
+                        "cats": [
+                            "y_c"
+                        ],
+                        "injuries": [
+                            "minor_injury"
+                        ]
                     }
                 ]
             }
@@ -600,8 +836,13 @@
                     "adventurous",
                     "spontaneous"
                 ],
-                "stat_skill": ["SWIMMER,1", "FISHER,1"],
-                "can_have_stat": ["p_l"]
+                "stat_skill": [
+                    "SWIMMER,1",
+                    "FISHER,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -646,8 +887,15 @@
                     "responsible",
                     "loyal"
                 ],
-                "stat_skill": ["EXPLORER,1", "NAVIGATOR,1", "TRACKER,1", "SENSE,1"],
-                "can_have_stat": ["p_l"]
+                "stat_skill": [
+                    "EXPLORER,1",
+                    "NAVIGATOR,1",
+                    "TRACKER,1",
+                    "SENSE,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "Setting out with a few warriors, the fog makes it incredibly difficult to track. m_n has difficulty as well, but r_w manages to pick up a scent - identifying it as a raccoon. Since it's harmless to a group of cats, m_n suggests you both take the time to understand the scent and learn from this.",
@@ -823,8 +1071,14 @@
                     "trusting",
                     "faithful"
                 ],
-                "stat_skill": ["CLAIRVOYANT,1", "GUARDIAN,1", "SENSE,1"],
-                "can_have_stat": ["p_l"]
+                "stat_skill": [
+                    "CLAIRVOYANT,1",
+                    "GUARDIAN,1",
+                    "SENSE,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -877,8 +1131,14 @@
                     "grumpy",
                     "reserved"
                 ],
-                "stat_skill": ["COMFORTER,1", "COOPERATIVE,1", "INSIGHTFUL,1"],
-                "can_have_stat": ["p_l"]
+                "stat_skill": [
+                    "COMFORTER,1",
+                    "COOPERATIVE,1",
+                    "INSIGHTFUL,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "r_a looks relieved when you agree. Conversation starts a bit stilted, but you both ease into it and end up bonding over the meal until it's time to retire to your nests.",
@@ -929,22 +1189,44 @@
                 "text": "You moan and groan dramatically about the accident, pretending to be soooo injured! r_a starts to fret a moment before {PRONOUN/r_a/subject} {VERB/r_a/realize/realizes} you're messing around. m_n is already sighing in amusement before telling you to stop being dramatic. At least r_a is giggling and is far less fussed about the mistake!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You accidentally bowl r_a over in your haste to get back to your paws. No time for distractions! You brush off {PRONOUN/r_a/poss} apologies in favor of getting back to training with m_n. Before r_a can even get back to {PRONOUN/r_a/poss} paws proper, you're swiping at your mentor again and again, trying to perfect this move.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You reassure r_a that it's alright. It's a good learning opportunity for you both, and you politely explain that much to {PRONOUN/r_a/object}. Before your mentors can even try to get back on track, you're walking r_a through the mistake. It's easy for you to teach {PRONOUN/r_a/object} where {PRONOUN/r_a/subject} went wrong. In no time at all {PRONOUN/r_a/subject} {VERB/r_a/are/is} fluidly preforming the move again - without any accidents.",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": ["COOPERATIVE,1", "INSIGHTFUL,1", "MEDIATOR,1","SPEAKER,1", "TEACHER"],
-                "can_have_stat": ["p_l"]
+                "stat_skill": [
+                    "COOPERATIVE,1",
+                    "INSIGHTFUL,1",
+                    "MEDIATOR,1",
+                    "SPEAKER,1",
+                    "TEACHER"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -957,15 +1239,29 @@
                 "text": "You gloat over r_a's mistake, loudly proclaiming that you would never do such a thing yourself! You're swift to untangle yourself and get back to your mentor. m_n scolds you for your behavior though. Sheesh, it's not your fault r_a was clumsy!",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You moan and groan dramatically about the accident, pretending to be soooo injured! r_a starts to fret and doesn't seem to realize you're being playful. Uh oh, your act was too convincing and has upset {PRONOUN/r_a/object}. If m_n didn't know you better, you might have been bundled off to r_m...",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -1034,15 +1330,29 @@
                 "text": "Comfort isn't your strong suit. There's still some things you can do though! You approach and ask r_a if {PRONOUN/r_a/subject} had trouble with a battle move. {PRONOUN/r_a/subject/CAP} {VERB/r_a/perk/perks} seeing your interest, knowing that if any help is needed, you're the cat for the job! It takes a few tries but r_a is happier once {PRONOUN/r_a/subject} {VERB/r_a/get/gets} the move down.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "Sauntering up to r_a, you begin to purposefully make a fool of yourself, tripping and tumbling dramatically into the clearing! Seeing it makes {PRONOUN/r_a/object} laugh quietly. It doesn't take but a few more silly antics and jokes before {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} looking far more upbeat.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -1055,15 +1365,29 @@
                 "text": "Comfort isn't your strong suit - clearly. Your overconfidence only seems to make r_a feel worse. You don't like admitting defeat but... At least you tried?",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "When you try your best to lighten the mood, r_a only seems to sour further. Making a fool of yourself to cheer {PRONOUN/r_a/object} up has backfired when you're accused of making fun of {PRONOUN/r_a/object}. Oops!",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -1097,15 +1421,29 @@
                 "text": "You playfully swipe at {PRONOUN/r_a/object} with a soft paw, claiming that this makes you even! That seems to take r_a's mind off the little mistake long enough for you to suggest getting in some extra training!",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "Forsaken, you cry out! Your glorious tail, mangled, ruined! As you roll around making a playful fuss about how wounded you are laughter graces your ears. It brings a purr to you to know that you've cheered them up.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -1118,15 +1456,29 @@
                 "text": "More than a little cross, you swipe with a soft paw as you tell {PRONOUN/r_a/object} to mind {PRONOUN/r_a/poss} paws in the future. r_a bristles and jumps back before hurrying off.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You just spent ages grooming, only to be stepped on! You try to downplay your frustration but r_a knows you better and swiftly slinks off as you begin your washing again to make sure the fur lays perfectly.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -1160,15 +1512,29 @@
                 "text": "Of course you'll hunt for r_e - if you bring {PRONOUN/r_e/poss} favorite you might get to hear another story of great deeds in Clan history! You spend ages hunting down the best prey to exchange for a tale - and anything else you find along the way has filled the freshkill pile. r_e is more than happy to share a battle story for you when you deliver the prey.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait":["competitive", "confident","fierce","bloodthirsty","bold","daring","arrogant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "competitive",
+                    "confident",
+                    "fierce",
+                    "bloodthirsty",
+                    "bold",
+                    "daring",
+                    "arrogant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "r_e has the best stories and even does fun voices! Of course you'll catch something for {PRONOUN/r_e/object}! Catching a nice bird and two mice is plenty for your task. You deliver the bird to r_e with a flourish, telling the tale of slavering all sun-high for this grandiose meal - making {PRONOUN/r_e/object} laugh.",
                 "exp": 5,
                 "weight": 20,
-                "stat_trait": ["flamboyant"],
-                "can_have_stat": ["p_l"]
+                "stat_trait": [
+                    "flamboyant"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -1528,8 +1894,12 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
-                        "injuries": ["fleas"]
+                        "cats": [
+                            "y_c"
+                        ],
+                        "injuries": [
+                            "fleas"
+                        ]
                     }
                 ]
             }
@@ -1599,21 +1969,29 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
-                        "injuries": ["scrapes"]
+                        "cats": [
+                            "y_c"
+                        ],
+                        "injuries": [
+                            "scrapes"
+                        ]
                     }
                 ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You try your best to take {PRONOUN/m_n/poss} words to heart, but you can barely touch {PRONOUN/m_n/object} anyway. {PRONOUN/m_n/poss/CAP} claws score into your flank over and over again, until you're covered in scratches. d_n seems disappointed in you, and you limp back to the medicine cat's den, bruised and bleeding. ",
+                "text": "You try your best to take {PRONOUN/m_n/poss} words to heart, but you can barely touch {PRONOUN/m_n/object} anyway. {PRONOUN/m_n/poss/CAP} claws score into your flank over and over again, until you're covered in scratches. d_n seems disappointed in you, and you limp back to the medicine cat's den, bruised and bleeding.",
                 "exp": 0,
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["y_c"],
-                        "injuries": ["small_bite_injury"]
+                        "cats": [
+                            "y_c"
+                        ],
+                        "injuries": [
+                            "small_bite_injury"
+                        ]
                     }
                 ]
             }

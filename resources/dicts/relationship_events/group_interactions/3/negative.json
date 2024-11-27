@@ -135,7 +135,9 @@
 	{
 		"id": "group_3_leader_neg2",
 		"cat_amount": 3,
-		"interactions": ["m_c and r_c1 discuss where they should be marking the border. r_c2 overhears, and disagrees with their decision, causing m_c and r_c1 to sneer at {PRONOUN/r_c2/object} in distaste."],
+		"interactions": [
+			"m_c and r_c1 discuss where they should be marking the border. r_c2 overhears, and disagrees with their decision, causing m_c and r_c1 to sneer at {PRONOUN/r_c2/object} in distaste."
+		],
 		"status_constraint": {
 			"m_c": [
 				"leader"
