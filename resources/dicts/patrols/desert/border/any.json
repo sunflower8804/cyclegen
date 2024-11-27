@@ -51,7 +51,6 @@
                     "ambitious",
                     "compassionate",
                     "confident",
-                    "empathetic",
                     "faithful",
                     "fierce",
                     "loving",
@@ -149,7 +148,7 @@
                 ]
             },
             {
-                "text": "The patrol gathers their courage and valiantly tries to lead away the dog. With such a small group of cats, they can only lead it a short distance, but it's better than nothing.",
+                "text": "The patrol gathers their courage and valiantly tries to lead the dog away. With such a small group of cats, they can only lead it a short distance, but it's better than nothing.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -178,13 +177,12 @@
                 ]
             },
             {
-                "text": "s_c selflessly takes the lion's share of the run the patrol leads the dog on, exhausting themselves almost to the point of danger but leading the dog far away from c_n borders. {PRONOUN/s_c/poss} Clanmates support {PRONOUN/s_c/object} on the long walk home once it's all over, their purrs mixing with s_c's exhausted pants.",
+                "text": "s_c selflessly takes the lion's share of the run the patrol leads the dog on, exhausting {PRONOUN/s_c/self} almost to the point of danger but leading the dog far away from c_n borders. {PRONOUN/s_c/poss/CAP} Clanmates support {PRONOUN/s_c/object} on the long walk home once it's all over, their purrs mixing with s_c's exhausted pants.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
                     "confident",
-                    "empathetic",
                     "faithful",
                     "fierce",
                     "loving",
@@ -205,7 +203,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The patrol tries to keep watch over the dog from a distance, but it spots the cats and forces them to scatter. Everycat escapes just fine, but they lose track of the dog. It could be anywhere - still out there, lurking, waiting to attack.",
+                "text": "The patrol tries to keep watch over the dog from a distance, but it spots the cats and forces them to scatter. Everyone escapes just fine, but they lose track of the dog. It could be anywhere - still out there, lurking, waiting to attack.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -219,7 +217,7 @@
                 ]
             },
             {
-                "text": "s_c tries to take the lion's share of the effort to lead the dog away, but {PRONOUN/s_c/poss} strength fails {PRONOUN/s_c/object}, and the rest of the patrol needs to rescue {PRONOUN/s_c/object}, cutting the patrol short. Everycat knows the dog could still be lurking on their borders.",
+                "text": "s_c tries to take the lion's share of the effort to lead the dog away, but {PRONOUN/s_c/poss} strength fails {PRONOUN/s_c/object} - the rest of the patrol needs to rescue {PRONOUN/s_c/object}, cutting the patrol short. Everyone knows the dog could still be lurking on their borders.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["ambitious", "bloodthirsty", "troublesome", "vengeful"],
@@ -297,7 +295,7 @@
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "They decide that no cat is going to be surprised by this predator again, and the patrol shadows the dog, sending a message to warn camp. With enough cats to keep watch, rest, track, and send messages back and forth, c_n is kept safe from the wandering dog.",
+                "text": "They decide that no cat is going to be surprised by this predator again. The patrol shadows the dog, sending a message to warn camp. With enough cats to keep watch, rest, track, and send messages back and forth, c_n is kept safe from the wandering dog.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -346,7 +344,6 @@
                 "stat_trait": [
                     "compassionate",
                     "confident",
-                    "empathetic",
                     "faithful",
                     "fierce",
                     "loving",
@@ -381,7 +378,7 @@
                 ]
             },
             {
-                "text": "s_c tries to protect {PRONOUN/s_c/poss} Clanmates, but too much defense gets in the way of actually attacking the dog. Without everycat committed to driving the dog off, the patrol has to fall back, but they do so in good order.",
+                "text": "s_c tries to protect {PRONOUN/s_c/poss} Clanmates, but too much defense gets in the way of actually attacking the dog. Without everyone committed to driving the dog off, the patrol has to fall back, but they do so in good order.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["nervous", "compassionate", "thoughtful", "careful"],
@@ -416,7 +413,7 @@
                 ]
             },
             {
-                "text": "The patrol fights bravely, but you only need to be unlucky once. One snap of the beast's huge jaws takes r_c out of the fight. The rest of the patrol rallies to defend {PRONOUN/r_c/object}, and r_c is safely helped back to camp, where the medicine den awaits.",
+                "text": "The patrol fights bravely, but you only need to be unlucky once. One snap of the beast's huge jaws takes r_c out of the fight. The rest of the patrol rallies to defend {PRONOUN/r_c/object}, and r_c is safely helped back to camp, where the medicine cat den awaits.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -449,7 +446,7 @@
         "season": ["any"],
         "types": ["border"],
         "tags": [],
-        "patrol_art": "Gen_bord_smalldog1",
+        "patrol_art": "bord_general_intro",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -571,7 +568,7 @@
         "season": ["any"],
         "types": ["border"],
         "tags": [],
-        "patrol_art": "Gen_bord_smalldog2",
+        "patrol_art": "bord_general_intro",
         "min_cats": 2,
         "max_cats": 3,
         "min_max_status": {},
@@ -653,7 +650,7 @@
         "season": ["any"],
         "types": ["border"],
         "tags": [],
-        "patrol_art": "Gen_bord_smalldog3",
+        "patrol_art": "bord_general_intro",
         "min_cats": 4,
         "max_cats": 6,
         "min_max_status": {},
