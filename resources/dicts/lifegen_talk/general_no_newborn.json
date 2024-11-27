@@ -3928,7 +3928,8 @@
     "grievingblind_to_dead_H1": [
         [
             "they_dead",
-            "grieving_them",
+            "grievingthem",
+            "you_grieving",
             "you_blind",
             "you_deaf",
             "they_blind",
@@ -3938,7 +3939,7 @@
         ],
         [
             "[Somecat brushes up against you lovingly, and you burst into tears, knowing it's t_c.]",
-            "[The vibration of {PRONOUN/t_c/poss} purs brings you peace you were searching for.]"
+            "[The vibration of {PRONOUN/t_c/poss} purrs brings you peace you were searching for.]"
         ]
     ],
     "grievingblind_to_dead_H2": [

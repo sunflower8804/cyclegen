@@ -232,7 +232,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "You slowly inch closer to r_c and lean your head on {PRONOUN/r_c/poss} shoulder, but {PRONOUN/r_c/subject} glare you down and scoot away uncomfortably. Ouch, that was awkward...",
+                "text": "You slowly inch closer to r_c and lean your head on {PRONOUN/r_c/poss} shoulder, but {PRONOUN/r_c/subject} {VERB/r_c/glare/glares} you down and {VERB/r_c/scoot/scoots} away uncomfortably. Ouch, that was awkward...",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
