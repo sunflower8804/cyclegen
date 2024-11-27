@@ -1477,7 +1477,7 @@
         "biome": [],
         "tags": [],
         "texts": [
-            "You find a dangerously weak branch hanging over the nursery. You convince v_c to play a game of 'leaping leaf' with you beneath it. During the game, you make sure to vigorously shake the branch, causing it to snap and fall, crushing v_c beneath it.",
+            "You find a dangerously weak branch hanging over the nursery. You convince v_c to play a game of 'leaping leaf' with {PRONOUN/v_c/object} beneath it. During the game, you make sure to vigorously shake the branch, causing it to snap and fall, crushing v_c.",
             "Something bothers you about v_c. Perhaps it's {PRONOUN/v_c/poss} ability to somehow always be right in {PRONOUN/v_c/poss} mediation, or maybe it's envy. You tell v_c that you had a fight with your friend, who ran out of camp in anger and won't come back, despite the stormy weather. v_c rushes out of camp in a hurry to make sure that no kit would drown or freeze in the rain, and {PRONOUN/v_c/subject} never {VERB/v_c/return/returns}."
         ]
     },
@@ -1536,11 +1536,11 @@
         "your_status": [
             "kitten"
         ],
-        "victim_status": [],
-        "relationship": [
+        "victim_status": [
             "mediator",
             "mediator apprentice"
         ],
+        "relationship": [],
         "strategy": [
             "accident",
             "border"

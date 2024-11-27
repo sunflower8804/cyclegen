@@ -31,6 +31,11 @@
                 "text": "You mix up a couple of herbs, and your mentor corrects you sternly.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "Your mentor waits patiently with every herb identification, not giving away whether or not your answers are incorrect. When you're done, they point out which ones were wrong and go over how to identify the herbs once again.",
+                "exp": 0,
+                "weight": 20
             }
         ]
     },
