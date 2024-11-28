@@ -10,7 +10,7 @@ from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from scripts.game_structure.ui_elements import UIImageButton
 import pygame_gui
-from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER, screen
+from scripts.game_structure.game_essentials import game
 from enum import Enum  # pylint: disable=no-name-in-module
 from scripts.housekeeping.version import VERSION_NAME
 from scripts.special_dates import get_special_date, contains_special_date_tag

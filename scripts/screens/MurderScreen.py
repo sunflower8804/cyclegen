@@ -8,12 +8,13 @@ from scripts.cat.history import History
 from scripts.event_class import Single_Event
 
 from .Screens import Screens
-from scripts.utility import get_text_box_theme, scale, process_text, pronoun_repl
+from scripts.utility import get_text_box_theme, process_text, pronoun_repl
 from scripts.cat.cats import Cat, INJURIES
 from scripts.game_structure import image_cache
 from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
-from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
+from scripts.game_structure.game_essentials import game
 from scripts.cat.skills import SkillPath
+from ..ui.generate_box import BoxStyles, get_box
 
 class MurderScreen(Screens):
     selected_cat = None
@@ -380,8 +381,7 @@ class MurderScreen(Screens):
             self.chancetext = None
             self.willingnesstext = None
 
-            self.list_frame = pygame.transform.scale(image_cache.load_image("resources/images/choosing_frame.png").convert_alpha(),
-                                        (1300 / 1600 * screen_x, 452 / 1400 * screen_y))
+            self.list_frame = get_box(BoxStyles.ROUNDED_BOX, (650, 194))
             
             self.heading = pygame_gui.elements.UITextBox("<b>Your target</b>",
                                                         scale(pygame.Rect((300, 50), (1000, 80))),
@@ -665,8 +665,7 @@ class MurderScreen(Screens):
 
             self.randomiser_button = None
 
-            self.list_frame = pygame.transform.scale(image_cache.load_image("resources/images/choosing_frame.png").convert_alpha(),
-                                        (1300 / 1600 * screen_x, 452 / 1400 * screen_y))
+            self.list_frame = get_box(BoxStyles.ROUNDED_BOX, (650, 194))
 
 
             self.heading = pygame_gui.elements.UITextBox("<b>Your accomplice</b>",

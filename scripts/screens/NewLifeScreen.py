@@ -7,7 +7,7 @@ from re import sub
 import pygame
 import pygame_gui
 
-from scripts.utility import get_text_box_theme, scale, generate_sprite
+from scripts.utility import get_text_box_theme, generate_sprite
 from scripts.housekeeping.version import get_version_info
 from scripts.clan import Clan
 from scripts.cat.cats import create_example_cats, Cat, Personality
@@ -17,7 +17,7 @@ from scripts.cat.cats import create_example_cats, create_cat, Cat
 from scripts.cat.names import names
 from scripts.clan import Clan
 from scripts.game_structure import image_cache
-from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
+from scripts.game_structure.game_essentials import game
 from scripts.patrol.patrol import Patrol
 from scripts.cat.skills import SkillPath
 from scripts.game_structure.game_essentials import (
