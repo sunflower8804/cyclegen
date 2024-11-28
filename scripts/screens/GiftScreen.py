@@ -12,6 +12,8 @@ from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import game
 from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
 from scripts.cat.sprites import sprites
+from ..ui.generate_box import BoxStyles, get_box
+
 
 with open(f"resources/dicts/acc_display.json", "r") as read_file:
     ACC_DISPLAY = ujson.loads(read_file.read())

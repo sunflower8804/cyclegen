@@ -1,4 +1,5 @@
 from math import ceil
+from typing import Union, Dict, Optional
 
 import pygame
 import pygame_gui

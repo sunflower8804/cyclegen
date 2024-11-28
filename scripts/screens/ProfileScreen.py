@@ -26,7 +26,7 @@ from scripts.cat.skills import SkillPath
 
 import math
 from scripts.cat.sprites import sprites
-from scripts.game_structure.game_essentials import game, MANAGER
+from scripts.game_structure.game_essentials import game
 from random import choice
 from re import sub
 
