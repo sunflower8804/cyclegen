@@ -182,6 +182,7 @@ class MakeClanScreen(Screens):
         self.faith = "flexible"
         game.choose_cats = {}
         self.skills = []
+        self.current_members = []
 
         for skillpath in SkillPath:
             count = 0
@@ -353,8 +354,16 @@ class MakeClanScreen(Screens):
             object_id="#main_menu_button",
             manager=MANAGER,
         )
-        create_example_cats()
-        self.open_name_clan()
+
+        if game.switches["customise_new_life"] is True:
+            for c in list(Cat.all_cats.keys()):
+                self.current_members.append(c)
+            create_example_cats()
+            self.hide_menu_buttons()
+            self.open_choose_leader()
+        else:
+            create_example_cats()
+            self.open_name_clan()
 
     def handle_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
@@ -491,6 +500,7 @@ class MakeClanScreen(Screens):
             self.elements["dice"],
         ]:
             self.elements["select_cat"].hide()
+            game.choose_cats = {}
             create_example_cats()  # create new cats
             self.selected_cat = None  # Your selected cat now no longer exists. Sad. They go away.
             self.refresh_cat_images_and_info()  # Refresh all the images.
@@ -524,7 +534,12 @@ class MakeClanScreen(Screens):
                 self.elements["error"].show()
                 return
             self.your_cat.name.prefix = new_name
-            self.open_choose_background()
+
+            if game.switches["customise_new_life"] is True:
+                self.open_clan_saved_screen()
+            else:
+                self.open_choose_background()
+
         elif event.ui_element == self.elements["random"]:
             self.elements["name_entry"].set_text(choice(names.names_dict["normal_prefixes"]))
         elif event.ui_element == self.elements['previous_step']:
@@ -749,6 +764,12 @@ class MakeClanScreen(Screens):
 
     def handle_saved_clan_event(self, event):
         if event.ui_element == self.elements["continue"]:
+            # redoing this here bc its usually done on the symbol screen
+            # which we don't get with a new life
+            if game.switches["customise_new_life"] is True:
+                self.save_clan()
+                self.open_clan_saved_screen()
+                game.switches['customise_new_life'] = False
             self.change_screen("camp screen")
 
     def exit_screen(self):
@@ -3846,15 +3867,17 @@ class MakeClanScreen(Screens):
 
         self.sub_screen = 'saved screen'
 
-        self.elements["selected_symbol"] = pygame_gui.elements.UIImage(
-            scale(pygame.Rect((700, 210), (200, 200))),
-            pygame.transform.scale(
-                sprites.sprites[self.symbol_selected], (200, 200)
-            ).convert_alpha(),
-            object_id="#selected_symbol",
-            starting_height=1,
-            manager=MANAGER,
-        )
+        if game.switches["customise_new_life"] is False:
+            # no new clan symbol when youre just making a new mc
+            self.elements["selected_symbol"] = pygame_gui.elements.UIImage(
+                scale(pygame.Rect((700, 210), (200, 200))),
+                pygame.transform.scale(
+                    sprites.sprites[self.symbol_selected], (200, 200)
+                ).convert_alpha(),
+                object_id="#selected_symbol",
+                starting_height=1,
+                manager=MANAGER,
+            )
 
         self.elements["leader_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((700, 240), (200, 200))),
                                                                     pygame.transform.scale(
@@ -3867,36 +3890,71 @@ class MakeClanScreen(Screens):
                                                                     object_id=get_text_box_theme(
                                                                         "#text_box_30_horizcenter"),
                                                                     manager=MANAGER)
+    def delete_example_cats(self):
+        """ Deletes the other generated kits so they don't also get added to the Clan """
+        key_copy = tuple(Cat.all_cats.keys())
+        for i in key_copy:  # Going through all currently existing cats
+            # cat_class is a Cat-object
+            if i not in [game.clan.your_cat.ID] + self.current_members:
+                Cat.all_cats[i].example = True
+                self.remove_cat(Cat.all_cats[i].ID)
+
+    def remove_cat(self, ID):  # ID is cat.ID
+        """
+        This function is for completely removing the cat from the game,
+        it's not meant for a cat that's simply dead
+        """
+
+        if Cat.all_cats[ID] in Cat.all_cats_list:
+            Cat.all_cats_list.remove(Cat.all_cats[ID])
+
+        if ID in Cat.all_cats:
+            Cat.all_cats.pop(ID)
+
+        if ID in game.clan.clan_cats:
+            game.clan.clan_cats.remove(ID)
+        if ID in game.clan.starclan_cats:
+            game.clan.starclan_cats.remove(ID)
+        if ID in game.clan.unknown_cats:
+            game.clan.unknown_cats.remove(ID)
+        if ID in game.clan.darkforest_cats:
+            game.clan.darkforest_cats.remove(ID)
 
     def save_clan(self):
-        self.handle_create_other_cats()
-        game.mediated.clear()
-        game.patrolled.clear()
-        game.cat_to_fade.clear()
-        Cat.outside_cats.clear()
-        Patrol.used_patrols.clear()
-        convert_camp = {1: 'camp1', 2: 'camp2', 3: 'camp3', 4: 'camp4', 5: 'camp5', 6: 'camp6'}
-        self.your_cat.create_inheritance_new_cat()
-        game.clan = Clan(name = self.clan_name,
-                        leader = self.leader,
-                        deputy = self.deputy,
-                        medicine_cat = self.med_cat,
-                        biome = self.biome_selected,
-                        camp_bg = convert_camp[self.selected_camp_tab],
-                        symbol=self.symbol_selected,
-                        game_mode="expanded",
-                        starting_members=self.members,
-                        starting_season=self.selected_season,
-                        your_cat=self.your_cat,
-                        clan_age=self.clan_age)
-        game.clan.your_cat.moons = -1
-        game.clan.create_clan()
-        if self.clan_age == "established":
-            game.clan.leader_lives = random.randint(1,9)
-        game.cur_events_list.clear()
-        game.herb_events_list.clear()
-        Cat.grief_strings.clear()
-        Cat.sort_cats()
+        if game.switches["customise_new_life"] is True:
+            self.your_cat.create_inheritance_new_cat()
+            game.clan.your_cat = self.your_cat
+            game.clan.your_cat.moons = -1
+            self.delete_example_cats()
+        else:
+            self.handle_create_other_cats()
+            game.mediated.clear()
+            game.patrolled.clear()
+            game.cat_to_fade.clear()
+            Cat.outside_cats.clear()
+            Patrol.used_patrols.clear()
+            convert_camp = {1: 'camp1', 2: 'camp2', 3: 'camp3', 4: 'camp4', 5: 'camp5', 6: 'camp6'}
+            self.your_cat.create_inheritance_new_cat()
+            game.clan = Clan(name = self.clan_name,
+                            leader = self.leader,
+                            deputy = self.deputy,
+                            medicine_cat = self.med_cat,
+                            biome = self.biome_selected,
+                            camp_bg = convert_camp[self.selected_camp_tab],
+                            symbol=self.symbol_selected,
+                            game_mode="expanded",
+                            starting_members=self.members,
+                            starting_season=self.selected_season,
+                            your_cat=self.your_cat,
+                            clan_age=self.clan_age)
+            game.clan.your_cat.moons = -1
+            game.clan.create_clan()
+            if self.clan_age == "established":
+                game.clan.leader_lives = random.randint(1,9)
+            game.cur_events_list.clear()
+            game.herb_events_list.clear()
+            Cat.grief_strings.clear()
+            Cat.sort_cats()
 
     def get_camp_art_path(self, campnum):
         leaf = self.selected_season.replace("-", "")
