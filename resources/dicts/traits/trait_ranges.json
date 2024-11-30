@@ -1224,26 +1224,9 @@
             "stability": [
                 0,
                 15
-            ],
-            "know-it-all": {
-                "lawfulness": [
-                    8,
-                    16
-                ],
-                "sociability": [
-                    0,
-                    8
-                ],
-                "aggression": [
-                    8,
-                    16
-                ],
-                "stability": [
-                    8,
-                    16
-                ]
-            },
-            "sweet": {
+            ]
+        },
+        "sweet": {
                 "lawfulness": [
                     0,
                     15
@@ -1497,4 +1480,3 @@
             }
         }
     }
-}
