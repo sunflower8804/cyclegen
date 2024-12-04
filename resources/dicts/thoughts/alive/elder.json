@@ -1,6 +1,6 @@
 [
     {
-      "id": "elder_gen_to_dead_gen",
+        "id": "elder_gen_to_dead_gen",
         "thoughts": [
             "Is telling stories about r_c",
             "Wishes that r_c were still alive",
@@ -74,17 +74,17 @@
             "senior adult"
         ],
         "main_trait_constraint": [
-          "flamboyant"
+            "flamboyant"
         ]
     },
     {
-      "id": "elder_to_alive_younger_cats",
+        "id": "elder_to_alive_younger_cats",
         "thoughts": [
-          "Is giving advice to the younger cats",
-          "Is bossing the younger cats around",
+            "Is giving advice to the younger cats",
+            "Is bossing the younger cats around",
             "Is telling scary stories to the younger cats",
-          "Is sharing wisdom with the younger cats that is... less than helpful",
-          "Is recounting daring expeditions for the younger cats",
+            "Is sharing wisdom with the younger cats that is... less than helpful",
+            "Is recounting daring expeditions for the younger cats",
             "Is telling a rather tall tale to any cat who will listen"
         ],
         "main_age_constraint": [
@@ -98,7 +98,7 @@
         ]
     },
     {
-      "id": "elder_to_alive_apprentice",
+        "id": "elder_to_alive_apprentice",
         "thoughts": [
             "Is requesting an apprentice's help with {PRONOUN/m_c/poss} ticks",
             "Is asking apprentices to help check {PRONOUN/m_c/object} for ticks"
@@ -123,6 +123,20 @@
         ]
     },
     {
+        "id": "elder_gen_to_dead_gen",
+        "thoughts": [
+            "Is telling stories about r_c",
+            "Wishes that r_c were still alive",
+            "Found a trinket that used to belong to r_c",
+            "Is forgetting who r_c was",
+            "Is thinking fondly of r_c",
+            "Sometimes feels like r_c is still right there next to {PRONOUN/m_c/object}"
+        ],
+        "random_living_status": [
+            "starclan"
+        ]
+    },
+    {
         "id": "elder_alive_to_dead_mate",
         "thoughts": [
             "Wonders when {PRONOUN/m_c/subject}'ll join r_c in StarClan",
@@ -134,10 +148,10 @@
         "main_age_constraint": [
             "senior"
         ],
-        "random_living_status":[
+        "random_living_status": [
             "starclan"
         ],
-        "relationship_constraint":[
+        "relationship_constraint": [
             "mates"
         ]
     },
@@ -199,7 +213,7 @@
         "main_status_constraint": [
             "elder"
         ],
-        "random_status_constraint":[
+        "random_status_constraint": [
             "medicine cat"
         ]
     },
@@ -219,7 +233,7 @@
         "main_status_constraint": [
             "elder"
         ],
-        "random_status_constraint":[
+        "random_status_constraint": [
             "kitten"
         ]
     },
@@ -283,7 +297,7 @@
             "Sneaks out of camp for some alone time",
             "Is being snappy about {PRONOUN/m_c/poss} exercises",
             "Enjoyed a walk around the camp with r_c!",
-            "Is the reigning moss-ball champion, and everycat knows it"
+            "Is the reigning moss ball champion, and everyone knows it"
         ],
         "perm_conditions": {
             "m_c": [
@@ -344,7 +358,6 @@
             "medicine cat"
         ]
     },
-
     {
         "id": "blind_gen_retired_to_alive_notkit",
         "thoughts": [
@@ -369,8 +382,8 @@
     {
         "id": "blind_adolescent_retired_to_alive_apprentice",
         "thoughts": [
-            "Sadly listens as the apprentices share stories of {PRONOUN/m_c/poss} feats",
-            "Joins in as the apprentices share stories of {PRONOUN/m_c/poss} feats",
+            "Sadly listens as the apprentices share stories of their feats",
+            "Joins in as the apprentices share stories of their feats",
             "Asks r_c to describe what {PRONOUN/r_c/subject} saw on patrol today"
         ],
         "perm_conditions": {
@@ -435,7 +448,7 @@
         "id": "wasting_disease_gen_retired_to_alive_med",
         "thoughts": [
             "Thanks r_c for {PRONOUN/r_c/poss} patience",
-            "Feels confined to the medicine den"
+            "Feels confined to the medicine cat den"
         ],
         "perm_conditions": {
             "m_c": [
@@ -546,7 +559,7 @@
         "id": "missing_leg/tail_gen_retired_to_alive_gen",
         "thoughts": [
             "Is training {PRONOUN/m_c/poss} balance with r_c",
-            "Is heading to the medicine den because {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} starting to feel phantom pain"
+            "Is heading to the medicine cat den because {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} starting to feel phantom pain"
         ],
         "perm_conditions": {
             "m_c": [

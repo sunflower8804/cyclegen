@@ -667,7 +667,7 @@
         ]
     },
     {
-        "patrol_id": "life_shunkit_Guy1", 
+        "patrol_id": "life_shunkit_Guy1",
         "biome": [
             "Any"
         ],
@@ -708,8 +708,12 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": ["r_c"],
-                        "injuries": ["bruises"]
+                        "cats": [
+                            "r_c"
+                        ],
+                        "injuries": [
+                            "bruises"
+                        ]
                     }
                 ]
             },
@@ -720,5 +724,4 @@
             }
         ]
     }
-
 ]

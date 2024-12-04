@@ -5199,12 +5199,12 @@
     },
     "dfskill_choice_SQ1": {
         "tags": [
-	        "they_df",
-	        "no_kit",
-	        "they_artistian"
+            "they_df",
+            "no_kit",
+            "they_artistian"
         ],
         "intro": [
-            "[t_c is decorating a mucky rock overhang. You creep forward to inspect {PRONOUN/t_c/poss} creation.]", 
+            "[t_c is decorating a mucky rock overhang. You creep forward to inspect {PRONOUN/t_c/poss} creation.]",
             "[All of the foul-smelling components seem wrong. Is that a tuft of fur? Why is that piece of wood dripping?]",
             "[t_c notices you and narrows {PRONOUN/t_c/poss} eyes, daring you to comment.]"
         ],
@@ -5238,32 +5238,32 @@
     },
     "dfskill_choice_SQ2": {
         "tags": [
-	"they_artistan",
-"no_kit",
-"they_df",
-"any"
+            "they_artistan",
+            "no_kit",
+            "they_df",
+            "any"
         ],
         "intro": [
             "[t_c's made an arrangement of dried, crumbling flowers at the base of a tree. Muck on the ground is creeping up their stems, pulling the bouquet apart.]",
-"[t_c isn't around right now. You consider trying to clean {PRONOUN/t_c/poss} creation off.]"
+            "[t_c isn't around right now. You consider trying to clean {PRONOUN/t_c/poss} creation off.]"
         ],
         "intro_choices": {
             "choice1": {
                 "text": "[Leave it alone.]",
                 "next_scene": "leave"
             },
- "choice2": {
+            "choice2": {
                 "text": "[Try to clean it.]",
                 "next_scene": "clean"
             }
         },
         "leave": [
             "[You decide to leave t_c's arrangement alone. Those flowers look like they'd fall apart if you so much as breathed on them, and you don't need t_c coming by and accusing you of destroying {PRONOUN/t_c/poss} creation.]",
-"[You walk away, leaving the muck to devour the flowers bit by bit.]"
+            "[You walk away, leaving the muck to devour the flowers bit by bit.]"
         ],
         "clean": [
- 	"[You try your best to clean off the flowers, but you only succeed in getting muck all over your paws.]",
-"[When one of the flowers completely crumbles, you give up and quickly leave the scene.]"
+            "[You try your best to clean off the flowers, but you only succeed in getting muck all over your paws.]",
+            "[When one of the flowers completely crumbles, you give up and quickly leave the scene.]"
         ]
     }
 }

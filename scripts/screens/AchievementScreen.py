@@ -30,9 +30,9 @@ from scripts.clan import Clan
 from scripts.cat.pelts import Pelt
 from scripts.game_structure import image_cache
 from scripts.game_structure.discord_rpc import _DiscordRPC
-from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
+from scripts.game_structure.game_essentials import game
 from scripts.game_structure.windows import DeleteCheck, UpdateAvailablePopup, ChangelogPopup, SaveError
-from scripts.utility import get_text_box_theme, scale, quit  # pylint: disable=redefined-builtin
+from scripts.utility import get_text_box_theme, quit  # pylint: disable=redefined-builtin
 from scripts.cat.history import History
 from .Screens import Screens
 from ..housekeeping.datadir import get_data_dir, get_cache_dir

@@ -7,7 +7,7 @@ from re import sub
 import pygame
 import pygame_gui
 
-from scripts.utility import get_text_box_theme, scale, generate_sprite
+from scripts.utility import get_text_box_theme, generate_sprite
 from scripts.housekeeping.version import get_version_info
 from scripts.clan import Clan
 from scripts.cat.cats import create_example_cats, Cat, Personality
@@ -17,19 +17,15 @@ from scripts.cat.cats import create_example_cats, create_cat, Cat
 from scripts.cat.names import names
 from scripts.clan import Clan
 from scripts.game_structure import image_cache
-from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
+from scripts.game_structure.game_essentials import game
 from scripts.patrol.patrol import Patrol
 from scripts.cat.skills import SkillPath
 from scripts.game_structure.game_essentials import (
-    game,
-    screen,
-    screen_x,
-    screen_y,
-    MANAGER,
+    game
 )
 from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
 from scripts.patrol.patrol import Patrol
-from scripts.utility import get_text_box_theme, scale
+from scripts.utility import get_text_box_theme
 from .Screens import Screens
 from ..cat.sprites import sprites
 from ..game_structure.windows import SymbolFilterWindow
@@ -51,8 +47,6 @@ class NewLifeScreen(Screens):
         'resources/images/pick_clan_screen/med_light.png').convert_alpha(), (1600, 1400))
     clan_img = pygame.transform.scale(pygame.image.load(
         'resources/images/pick_clan_screen/clan_light.png').convert_alpha(), (1600, 1400))
-    bg_preview_border = pygame.transform.scale(
-        pygame.image.load("resources/images/bg_preview_border.png").convert_alpha(), (466, 416))
     
     your_name_img = pygame.transform.scale(pygame.image.load(
         'resources/images/pick_clan_screen/Your name screen.png').convert_alpha(), (1600, 1400))

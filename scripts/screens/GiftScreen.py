@@ -6,12 +6,14 @@ import math
 import re
 
 from .Screens import Screens
-from scripts.utility import get_text_box_theme, scale, get_cluster, pronoun_repl
+from scripts.utility import get_text_box_theme, get_cluster, pronoun_repl
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
-from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
+from scripts.game_structure.game_essentials import game
 from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
 from scripts.cat.sprites import sprites
+from ..ui.generate_box import BoxStyles, get_box
+
 
 with open(f"resources/dicts/acc_display.json", "r") as read_file:
     ACC_DISPLAY = ujson.loads(read_file.read())
@@ -25,8 +27,7 @@ with open(f"resources/dicts/accessory_preferences.json", "r") as read_file:
 class GiftScreen(Screens):
     selected_cat = None
     current_page = 1
-    list_frame = pygame.transform.scale(image_cache.load_image("resources/images/choosing_frame.png").convert_alpha(),
-                                        (1300 / 1600 * screen_x, 452 / 1400 * screen_y))
+    list_frame = get_box(BoxStyles.ROUNDED_BOX, (650, 194))
     apprentice_details = {}
     selected_details = {}
     selected_acc_details = {}
