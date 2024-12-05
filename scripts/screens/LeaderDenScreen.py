@@ -1002,7 +1002,7 @@ class LeaderDenScreen(Screens):
         for cat in display_cats:
             if game.clan.clan_settings["show fav"] and cat.favourite != 0:
                 self.fav[str(i)] = pygame_gui.elements.UIImage(
-                    scale(pygame.Rect((10 + pos_x, 0 + pos_y), (100, 100))),
+                    ui_scale(pygame.Rect((10 + pos_x, 0 + pos_y), (100, 100))),
                     pygame.transform.scale(
                         pygame.image.load(
                             f"resources/images/fav_marker_{cat.favourite}.png").convert_alpha(),

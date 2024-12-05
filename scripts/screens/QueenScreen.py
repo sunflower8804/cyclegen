@@ -10,7 +10,8 @@ from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import game
 from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
 from ..ui.generate_box import BoxStyles, get_box
-
+from scripts.utility import get_text_box_theme, ui_scale, ui_scale_blit, ui_scale_offset
+from scripts.game_structure.screen_settings import MANAGER
 
 class QueenScreen(Screens):
     selected_cat = None
@@ -83,58 +84,58 @@ class QueenScreen(Screens):
         self.the_cat = Cat.all_cats.get(game.switches['cat'])
         self.activity = "mossball"
         self.heading = pygame_gui.elements.UITextBox(f"{self.the_cat.name}'s Nursery Activities",
-                                                     scale(pygame.Rect((300, 50), (1000, 80))),
+                                                     ui_scale(pygame.Rect((300, 50), (1000, 80))),
                                                      object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                      manager=MANAGER)
         if game.settings['dark mode']:
             if self.the_cat.did_activity:
                 self.heading2 = pygame_gui.elements.UITextBox("This queen already worked this moon.",
-                                                        scale(pygame.Rect((300, 110), (1000, 160))),
+                                                        ui_scale(pygame.Rect((300, 110), (1000, 160))),
                                                         object_id=get_text_box_theme("#text_box_26"),
                                                         manager=MANAGER)
             else:
                 self.heading2 = pygame_gui.elements.UITextBox("Nursery activities can impact a kit's stats.\nStats may affect the kit's future role and personality.",
-                                                        scale(pygame.Rect((300, 110), (1000, 160))),
+                                                        ui_scale(pygame.Rect((300, 110), (1000, 160))),
                                                         object_id=get_text_box_theme("#text_box_26"),
                                                         manager=MANAGER)
 
         else:
             if self.the_cat.did_activity:
                 self.heading2 = pygame_gui.elements.UITextBox("This queen already worked this moon.",
-                                                        scale(pygame.Rect((530, 110), (1000, 160))),
+                                                        ui_scale(pygame.Rect((530, 110), (1000, 160))),
                                                         object_id=get_text_box_theme("#text_box_26"),
                                                         manager=MANAGER)
             else:
                 self.heading2 = pygame_gui.elements.UITextBox("Nursery activities can impact a kit's stats.\nStats may affect the kit's future role and personality.",
-                                                        scale(pygame.Rect((530, 110), (1000, 160))),
+                                                        ui_scale(pygame.Rect((530, 110), (1000, 160))),
                                                         object_id=get_text_box_theme("#text_box_26"),
                                                         manager=MANAGER)
 
-        self.mentor_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((830, 226), (562, 394))),
+        self.mentor_frame = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((830, 226), (562, 394))),
                                                         pygame.transform.scale(
                                                             image_cache.load_image(
                                                                 "resources/images/choosing_cat1_frame_ment.png").convert_alpha(),
                                                             (562, 394)), manager=MANAGER)
 
-        self.back_button = UIImageButton(scale(pygame.Rect((50, 1290), (210, 60))), "", object_id="#back_button")
+        self.back_button = UIImageButton(ui_scale(pygame.Rect((50, 1290), (210, 60))), "", object_id="#back_button")
         
 
-        self.previous_page_button = UIImageButton(scale(pygame.Rect((310, 1160), (68, 68))), "",
+        self.previous_page_button = UIImageButton(ui_scale(pygame.Rect((310, 1160), (68, 68))), "",
                                                   object_id="#relation_list_previous", manager=MANAGER)
-        self.next_page_button = UIImageButton(scale(pygame.Rect((582, 1160), (68, 68))), "",
+        self.next_page_button = UIImageButton(ui_scale(pygame.Rect((582, 1160), (68, 68))), "",
                                               object_id="#relation_list_next", manager=MANAGER)
 
         self.activity_text = pygame_gui.elements.UITextBox("Activity:",
-                                                     scale(pygame.Rect((-110, 220), (1000, 80))),
+                                                     ui_scale(pygame.Rect((-110, 220), (1000, 80))),
                                                      object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                      manager=MANAGER)
-        self.activities = pygame_gui.elements.UIDropDownMenu(["mossball", "playfight", "lecture", "clean", "tell story", "scavenger hunt"], "mossball", scale(pygame.Rect((200, 300), (300, 70))), manager=MANAGER)
-        self.confirm_mentor = UIImageButton(scale(pygame.Rect((580, 300), (208, 52))), "",
+        self.activities = pygame_gui.elements.UIDropDownMenu(["mossball", "playfight", "lecture", "clean", "tell story", "scavenger hunt"], "mossball", ui_scale(pygame.Rect((200, 300), (300, 70))), manager=MANAGER)
+        self.confirm_mentor = UIImageButton(ui_scale(pygame.Rect((580, 300), (208, 52))), "",
                                             object_id="#play_select")
         if self.the_cat.did_activity:
             self.confirm_mentor.disable()
         self.activity_box = pygame_gui.elements.UITextBox("",
-                                                     scale(pygame.Rect((200, 420), (600, 400))),
+                                                     ui_scale(pygame.Rect((200, 420), (600, 400))),
                                                      object_id=get_text_box_theme("#text_box_26"),
                                                      manager=MANAGER)
         self.selected_cat = None
@@ -229,7 +230,7 @@ class QueenScreen(Screens):
             stat_change = choice(display_events["stat_change"])
         self.activity_box.kill()
         self.activity_box = pygame_gui.elements.UITextBox(self.adjust_txt(choice(display_events[stat_change])),
-                                                    scale(pygame.Rect((200, 420), (600, 400))),
+                                                    ui_scale(pygame.Rect((200, 420), (600, 400))),
                                                     object_id=get_text_box_theme("#text_box_26"),
                                                     manager=MANAGER)
         if stat_change == "courage up":
@@ -325,7 +326,7 @@ class QueenScreen(Screens):
         if self.selected_cat:
 
             self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
-                scale(pygame.Rect((850, 300), (300, 300))),
+                ui_scale(pygame.Rect((850, 300), (300, 300))),
                 pygame.transform.scale(
                     self.selected_cat.sprite,
                     (300, 300)), manager=MANAGER)
@@ -333,7 +334,7 @@ class QueenScreen(Screens):
             stats = f"Courage: {self.selected_cat.courage}\nCompassion: {self.selected_cat.compassion} \nIntelligence: {self.selected_cat.intelligence} \nEmpathy: {self.selected_cat.empathy}"
             
             self.selected_details["selected_info"] = pygame_gui.elements.UITextBox(stats,
-                                                                                   scale(pygame.Rect((1180, 325),
+                                                                                   ui_scale(pygame.Rect((1180, 325),
                                                                                                      (210, 250))),
                                                                                    object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
                                                                                    manager=MANAGER)
@@ -343,7 +344,7 @@ class QueenScreen(Screens):
                 short_name = str(name)[0:9]
                 name = short_name + '...'
             self.selected_details["mentor_name"] = pygame_gui.elements.ui_label.UILabel(
-                scale(pygame.Rect((890, 230), (220, 60))),
+                ui_scale(pygame.Rect((890, 230), (220, 60))),
                 name,
                 object_id="#text_box_34_horizcenter", manager=MANAGER)
 
@@ -388,7 +389,7 @@ class QueenScreen(Screens):
         for cat in display_cats:
             if game.clan.clan_settings["show fav"] and cat.favourite != 0:
                 self.fav[str(i)] = pygame_gui.elements.UIImage(
-                    scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
+                    ui_scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
                     pygame.transform.scale(
                         pygame.image.load(
                             f"resources/images/fav_marker_{cat.favourite}.png").convert_alpha(),
@@ -396,7 +397,7 @@ class QueenScreen(Screens):
                 )
                 self.fav[str(i)].disable()
             self.cat_list_buttons["cat" + str(i)] = UISpriteButton(
-                scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
+                ui_scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
                 cat.sprite, cat_object=cat, manager=MANAGER)
             pos_x += 120
             if pos_x >= 525:

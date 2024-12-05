@@ -160,33 +160,33 @@ class RoleScreen(Screens):
         )
 
         # ADULT CAT ROLES
-        self.switch_warrior = UIImageButton(scale(pygame.Rect((451, 720), (344, 72))), "",
+        self.switch_warrior = UIImageButton(ui_scale(pygame.Rect((451, 720), (344, 72))), "",
                                             object_id="#switch_warrior_button",
                                             manager=MANAGER)
-        self.retire = UIImageButton(scale(pygame.Rect((451, 792), (344, 72))), "",
+        self.retire = UIImageButton(ui_scale(pygame.Rect((451, 792), (344, 72))), "",
                                     object_id="#retire_button",
                                     manager=MANAGER)
-        self.switch_med_cat = UIImageButton(scale(pygame.Rect((805, 720), (344, 104))), "",
+        self.switch_med_cat = UIImageButton(ui_scale(pygame.Rect((805, 720), (344, 104))), "",
                                             object_id="#switch_med_cat_button",
                                             manager=MANAGER)
-        self.switch_mediator = UIImageButton(scale(pygame.Rect((805, 824), (344, 72))), "",
+        self.switch_mediator = UIImageButton(ui_scale(pygame.Rect((805, 824), (344, 72))), "",
                                              object_id="#switch_mediator_button",
                                              manager=MANAGER)
-        self.switch_queen = UIImageButton(scale(pygame.Rect((805, 895), (344, 104))), "",
+        self.switch_queen = UIImageButton(ui_scale(pygame.Rect((805, 895), (344, 104))), "",
                                              object_id="#switch_queen_button",
                                              manager=MANAGER)
 
         # In-TRAINING ROLES:
-        self.switch_warrior_app = UIImageButton(scale(pygame.Rect((1159, 720), (344, 104))), "",
+        self.switch_warrior_app = UIImageButton(ui_scale(pygame.Rect((1159, 720), (344, 104))), "",
                                                 object_id="#switch_warrior_app_button",
                                                 manager=MANAGER)
-        self.switch_med_app = UIImageButton(scale(pygame.Rect((1159, 824), (344, 104))), "",
+        self.switch_med_app = UIImageButton(ui_scale(pygame.Rect((1159, 824), (344, 104))), "",
                                             object_id="#switch_med_app_button",
                                             manager=MANAGER)
-        self.switch_mediator_app = UIImageButton(scale(pygame.Rect((1159, 928), (344, 104))), "",
+        self.switch_mediator_app = UIImageButton(ui_scale(pygame.Rect((1159, 928), (344, 104))), "",
                                                  object_id="#switch_mediator_app_button",
                                                  manager=MANAGER)
-        self.switch_queen_app = UIImageButton(scale(pygame.Rect((1159, 1032), (344, 104))), "",
+        self.switch_queen_app = UIImageButton(ui_scale(pygame.Rect((1159, 1032), (344, 104))), "",
                                              object_id="#switch_queen_app_button",
                                              manager=MANAGER)
 

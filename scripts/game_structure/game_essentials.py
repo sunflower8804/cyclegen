@@ -79,6 +79,8 @@ class Game:
 
     # store changing parts of the game that the user can toggle with buttons
     switches = {
+        "cat": None,
+        "clan_name": "",
         "leader": None,
         "deputy": None,
         "medicine_cat": None,

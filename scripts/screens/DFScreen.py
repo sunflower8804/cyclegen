@@ -8,6 +8,8 @@ from scripts.utility import shorten_text_to_fit
 from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import game
 from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
+from scripts.utility import ui_scale
+from scripts.game_structure.screen_settings import MANAGER
 
 class DFScreen(Screens):
     list_page = 1
@@ -191,26 +193,26 @@ class DFScreen(Screens):
         # Determine the dead, non-exiled cats.
         self.get_dead_cats()
 
-        self.search_bar = pygame_gui.elements.UITextEntryLine(scale(pygame.Rect((845, 278), (294, 55))),
+        self.search_bar = pygame_gui.elements.UITextEntryLine(ui_scale(pygame.Rect((845, 278), (294, 55))),
                                                               object_id="#search_entry_box"
                                                               , manager=MANAGER)
 
-        self.starclan_button = UIImageButton(scale(pygame.Rect((230, 270), (68, 68))), "", object_id="#starclan_button")
-        self.unknown_residence_button = UIImageButton(scale(pygame.Rect((298, 270), (68, 68))), "",
+        self.starclan_button = UIImageButton(ui_scale(pygame.Rect((230, 270), (68, 68))), "", object_id="#starclan_button")
+        self.unknown_residence_button = UIImageButton(ui_scale(pygame.Rect((298, 270), (68, 68))), "",
                                                       object_id="#unknown_residence_button", manager=MANAGER)
-        self.dark_forest_button = UIImageButton(scale(pygame.Rect((366, 270), (68, 68))), "",
+        self.dark_forest_button = UIImageButton(ui_scale(pygame.Rect((366, 270), (68, 68))), "",
                                                 object_id="#dark_forest_button"
                                                 , manager=MANAGER)
-        self.to_living_button = UIImageButton(scale(pygame.Rect((560, 270), (134, 68))), "",
+        self.to_living_button = UIImageButton(ui_scale(pygame.Rect((560, 270), (134, 68))), "",
                                                 object_id="#to_living_button", manager=MANAGER,
                                                 tool_tip_text='view living cats')
         self.dark_forest_button.disable()
-        self.next_page_button = UIImageButton(scale(pygame.Rect((912, 1190), (68, 68))), "",
+        self.next_page_button = UIImageButton(ui_scale(pygame.Rect((912, 1190), (68, 68))), "",
                                               object_id="#arrow_right_button"
                                               , manager=MANAGER)
-        self.previous_page_button = UIImageButton(scale(pygame.Rect((620, 1190), (68, 68))), "",
+        self.previous_page_button = UIImageButton(ui_scale(pygame.Rect((620, 1190), (68, 68))), "",
                                                   object_id="#arrow_left_button", manager=MANAGER)
-        self.page_number = pygame_gui.elements.UITextBox("", scale(pygame.Rect((680, 1190),(220, 60))),
+        self.page_number = pygame_gui.elements.UITextBox("", ui_scale(pygame.Rect((680, 1190),(220, 60))),
                                                          object_id="#text_box_30_horizcenter_light",
                                                          manager=MANAGER)
 
@@ -223,13 +225,13 @@ class DFScreen(Screens):
         x_pos = 1152
         y_pos = 270
         self.filter_by_closed = UIImageButton(
-            scale(pygame.Rect((x_pos, y_pos), (196, 68))),
+            ui_scale(pygame.Rect((x_pos, y_pos), (196, 68))),
             "",
             object_id="#filter_by_closed_button",
             tool_tip_text="By default, cats are sorted by rank.", manager=MANAGER
         )
         self.filter_by_open = UIImageButton(
-            scale(pygame.Rect((x_pos, y_pos), (196, 68))),
+            ui_scale(pygame.Rect((x_pos, y_pos), (196, 68))),
             "",
             object_id="#filter_by_open_button", manager=MANAGER
         )
@@ -237,7 +239,7 @@ class DFScreen(Screens):
         y_pos += 68
 
         self.filter_rank = UIImageButton(
-            scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
+            ui_scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
             "",
             object_id="#filter_rank_button",
             starting_height=2, manager=MANAGER
@@ -245,7 +247,7 @@ class DFScreen(Screens):
         self.filter_rank.hide()
         y_pos += 58
         self.filter_age = UIImageButton(
-            scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
+            ui_scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
             "",
             object_id="#filter_age_button",
             starting_height=2, manager=MANAGER
@@ -253,7 +255,7 @@ class DFScreen(Screens):
         self.filter_age.hide()
         y_pos += 58
         self.filter_id = UIImageButton(
-            scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
+            ui_scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
             "",
             object_id="#filter_ID_button",
             starting_height=2, manager=MANAGER
@@ -261,7 +263,7 @@ class DFScreen(Screens):
         self.filter_id.hide()
         y_pos += 58
         self.filter_exp = UIImageButton(
-            scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
+            ui_scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
             "",
             object_id="#filter_exp_button",
             starting_height=2, manager=MANAGER
@@ -269,7 +271,7 @@ class DFScreen(Screens):
         self.filter_exp.hide()
         y_pos += 58
         self.filter_death = UIImageButton(
-            scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
+            ui_scale(pygame.Rect((x_pos - 2, y_pos), (204, 58))),
             "",
             object_id="#filter_death_button",
             starting_height=2, manager=MANAGER
@@ -343,12 +345,12 @@ class DFScreen(Screens):
                     
                     self.display_cats.append(
                         pygame_gui.elements.UIImage(
-                            scale(pygame.Rect((260 + pos_x, 360 + pos_y), (100, 100))),
+                            ui_scale(pygame.Rect((260 + pos_x, 360 + pos_y), (100, 100))),
                             _temp))
                     self.display_cats[-1].disable()
                 
                 self.display_cats.append(
-                    UISpriteButton(scale(pygame.Rect
+                    UISpriteButton(ui_scale(pygame.Rect
                                          ((260 + pos_x, 360 + pos_y), (100, 100))),
                                    cat.sprite,
                                    cat.ID,

@@ -116,6 +116,9 @@ class ClanScreen(Screens):
         else:
             self.layout = game.clan.layouts["default"]
 
+        if "cat_shading" not in self.layout:
+            self.layout["cat_shading"] = game.clan.layouts["default"]["cat_shading"]
+
         self.choose_cat_positions()
 
         self.set_disabled_menu_buttons(["camp_screen"])
@@ -130,8 +133,7 @@ class ClanScreen(Screens):
         i = 0
         for x in game.clan.clan_cats:
             if (
-                Cat.all_cats[x].moons != -1
-                and not Cat.all_cats[x].dead
+                not Cat.all_cats[x].dead
                 and Cat.all_cats[x].in_camp
                 and not (Cat.all_cats[x].exiled or Cat.all_cats[x].outside)
                 and (
@@ -145,12 +147,37 @@ class ClanScreen(Screens):
                     break
 
                 try:
+                    image = Cat.all_cats[x].sprite.convert_alpha()
+                    blend_layer = (
+                        self.game_bgs[self.active_bg]
+                        .subsurface(
+                            ui_scale(
+                                pygame.Rect(tuple(Cat.all_cats[x].placement), (50, 50))
+                            )
+                        )
+                        .convert_alpha()
+                    )
+                    blend_layer = pygame.transform.box_blur(
+                        blend_layer, self.layout["cat_shading"]["blur"]
+                    )
+
+                    sprite = image.copy()
+                    sprite.fill(
+                        (255, 255, 255, 255), special_flags=pygame.BLEND_RGB_MAX
+                    )
+                    sprite.blit(
+                        blend_layer, (0, 0), special_flags=pygame.BLEND_RGBA_MULT
+                    )
+                    image.set_alpha(self.layout["cat_shading"]["blend_strength"])
+                    sprite.blit(image, (0, 0), special_flags=pygame.BLEND_ALPHA_SDL2)
+                    sprite.set_alpha(255)
+
                     self.cat_buttons.append(
                         UISpriteButton(
                             ui_scale(
                                 pygame.Rect(tuple(Cat.all_cats[x].placement), (50, 50))
                             ),
-                            Cat.all_cats[x].sprite,
+                            sprite,
                             cat_id=x,
                             starting_height=i,
                         )
@@ -410,13 +437,12 @@ class ClanScreen(Screens):
             first_choices[x].extend(first_choices[x])
 
         for x in game.clan.clan_cats:
-            if Cat.all_cats[x].dead or Cat.all_cats[x].outside or Cat.all_cats[x].moons <= 0:
+            if Cat.all_cats[x].dead or Cat.all_cats[x].outside:
                 continue
 
             # Newborns are not meant to be placed. They are hiding.
             if (
                 Cat.all_cats[x].status == "newborn"
-                or Cat.all_cats[x].moons == -1
                 or game.config["fun"]["all_cats_are_newborn"]
             ):
                 if (
@@ -430,7 +456,7 @@ class ClanScreen(Screens):
                 else:
                     continue
 
-            if Cat.all_cats[x].status in ["apprentice", "mediator apprentice", "queen's apprentice"]:
+            if Cat.all_cats[x].status in ["apprentice", "mediator apprentice"]:
                 Cat.all_cats[x].placement = self.choose_nonoverlapping_positions(
                     first_choices, all_dens, [1, 50, 1, 1, 100, 100, 1]
                 )

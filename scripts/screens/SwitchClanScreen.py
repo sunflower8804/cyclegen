@@ -270,7 +270,7 @@ class SwitchClanScreen(Screens):
                 tooltext = ""
 
             self.your_cat_buttons[-1].append(
-                pygame_gui.elements.UIButton(scale(
+                pygame_gui.elements.UIButton(ui_scale(
                     pygame.Rect((480, y_pos), (68, 68))),
                     "",
                     object_id="#help_button",

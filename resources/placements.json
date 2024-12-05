@@ -1,5 +1,9 @@
 {
     "default": {
+        "cat_shading": {
+            "blur": 20,
+            "blend_strength": 200
+        },
         "leader den": [
             344,
             100

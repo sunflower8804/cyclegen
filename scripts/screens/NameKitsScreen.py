@@ -19,6 +19,8 @@ from scripts.game_structure.windows import RelationshipLog
 from scripts.game_structure.propagating_thread import PropagatingThread
 from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked, UISpriteButton
 from ..ui.generate_box import BoxStyles, get_box
+from scripts.utility import get_text_box_theme, ui_scale, ui_scale_blit, ui_scale_offset
+from scripts.game_structure.screen_settings import MANAGER
 
 
 class NameKitsScreen(Screens):
@@ -69,7 +71,7 @@ class NameKitsScreen(Screens):
                             short_name = str(name)[0:9]
                             name = short_name + '...'
                         self.selected_details["mentor_name"] = pygame_gui.elements.ui_label.UILabel(
-                            scale(pygame.Rect((690, 230), (220, 60))),
+                            ui_scale(pygame.Rect((690, 230), (220, 60))),
                             name,
                             object_id="#text_box_34_horizcenter", manager=MANAGER)
                     # self.update_buttons()
@@ -106,24 +108,24 @@ class NameKitsScreen(Screens):
         self.mentor = Cat.fetch_cat(self.the_cat.mentor)
 
         self.heading = pygame_gui.elements.UITextBox("",
-                                                     scale(pygame.Rect((300, 50), (1000, 80))),
+                                                     ui_scale(pygame.Rect((300, 50), (1000, 80))),
                                                      object_id=get_text_box_theme("#text_box_34_horizcenter"),
                                                      manager=MANAGER)
         
         # Layout Images:
-        self.mentor_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((630, 226), (562, 394))),
+        self.mentor_frame = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((630, 226), (562, 394))),
                                                         pygame.transform.scale(
                                                             image_cache.load_image(
                                                                 "resources/images/choosing_cat1_frame_ment.png").convert_alpha(),
                                                             (562, 394)), manager=MANAGER)
        
-        self.back_button = UIImageButton(scale(pygame.Rect((690, 1290), (154, 60))), "", object_id="#done_button")
-        self.confirm_mentor = UIImageButton(scale(pygame.Rect((200, 400), (306, 60))), "",
+        self.back_button = UIImageButton(ui_scale(pygame.Rect((690, 1290), (154, 60))), "", object_id="#done_button")
+        self.confirm_mentor = UIImageButton(ui_scale(pygame.Rect((200, 400), (306, 60))), "",
                                             object_id="#confirm_mate_button")
 
-        self.previous_page_button = UIImageButton(scale(pygame.Rect((630, 1160), (68, 68))), "",
+        self.previous_page_button = UIImageButton(ui_scale(pygame.Rect((630, 1160), (68, 68))), "",
                                                   object_id="#relation_list_previous", manager=MANAGER)
-        self.next_page_button = UIImageButton(scale(pygame.Rect((902, 1160), (68, 68))), "",
+        self.next_page_button = UIImageButton(ui_scale(pygame.Rect((902, 1160), (68, 68))), "",
                                               object_id="#relation_list_next", manager=MANAGER)
         self.selected_cat = None
         self.update_selected_cat()  # Updates the image and details of selected cat
@@ -215,11 +217,11 @@ class NameKitsScreen(Screens):
                     short_name = str(name)[0:9]
                     name = short_name + '...'
                 self.selected_details["mentor_name"] = pygame_gui.elements.ui_label.UILabel(
-                    scale(pygame.Rect((690, 230), (220, 60))),
+                    ui_scale(pygame.Rect((690, 230), (220, 60))),
                     name,
                     object_id="#text_box_34_horizcenter", manager=MANAGER)
             self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
-                scale(pygame.Rect((650, 300), (300, 300))),
+                ui_scale(pygame.Rect((650, 300), (300, 300))),
                 pygame.transform.scale(
                     self.selected_cat.sprite,
                     (300, 300)), manager=MANAGER)
@@ -233,24 +235,24 @@ class NameKitsScreen(Screens):
                 info += self.selected_cat.skills.skill_string(short=True)
 
             self.selected_details["selected_info"] = pygame_gui.elements.UITextBox(info,
-                                                                                   scale(pygame.Rect((980, 325),
+                                                                                   ui_scale(pygame.Rect((980, 325),
                                                                                                      (210, 250))),
                                                                                    object_id="#text_box_22_horizcenter_vertcenter_spacing_95",
                                                                                    manager=MANAGER)
-            self.selected_details["name_entry"] = pygame_gui.elements.UITextEntryLine(scale(pygame.Rect((200, 325), (280, 58)))
+            self.selected_details["name_entry"] = pygame_gui.elements.UITextEntryLine(ui_scale(pygame.Rect((200, 325), (280, 58)))
                                                                           , manager=MANAGER, initial_text="")
             self.selected_details["name_entry"].set_allowed_characters(
                 list("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_- "))
             self.selected_details["name_entry"].set_text_length_limit(11)
             if game.settings['dark mode']:
                 self.selected_details["clan"] = pygame_gui.elements.UITextBox("-kit",
-                                                              scale(pygame.Rect((320, 325), (200, 50))),
+                                                              ui_scale(pygame.Rect((320, 325), (200, 50))),
                                                               object_id="#text_box_30_horizcenter",
                                                               manager=MANAGER)
         
             else:
                 self.selected_details["clan"] = pygame_gui.elements.UITextBox("-kit",
-                                                              scale(pygame.Rect((320, 325), (200, 50))),
+                                                              ui_scale(pygame.Rect((320, 325), (200, 50))),
                                                               object_id="#text_box_30_horizcenter",
                                                               manager=MANAGER)
 
@@ -290,7 +292,7 @@ class NameKitsScreen(Screens):
         i = 0
         for cat in display_cats:
             self.cat_list_buttons["cat" + str(i)] = UISpriteButton(
-                scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
+                ui_scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))),
                 cat.sprite, cat_object=cat, manager=MANAGER)
             pos_x += 120
             if pos_x >= 1100:
@@ -310,7 +312,8 @@ class NameKitsScreen(Screens):
 
     def on_use(self):
         # Due to a bug in pygame, any image with buttons over it must be blited
-        screen.blit(self.list_frame, (150 / 1600 * screen_x, 720 / 1400 * screen_y))
+        # screen.blit(self.list_frame, (150 / 1600 * screen_x, 720 / 1400 * screen_y))
+        super().on_use()
 
     def chunks(self, L, n):
         return [L[x: x + n] for x in range(0, len(L), n)]
