@@ -1044,6 +1044,7 @@ class ProfileScreen(Screens):
         self.dangerous_tab_button.kill()
         self.backstory_tab_button.kill()
         self.conditions_tab_button.kill()
+        self.your_tab.kill()
         self.placeholder_tab_3.kill()
         self.accessories_tab_button.kill()
         self.inspect_button.kill()
@@ -1244,12 +1245,13 @@ class ProfileScreen(Screens):
             print("Chose " + str(game.clan.your_cat.name))
 
         if self.the_cat.ID == game.clan.your_cat.ID:
-            self.profile_elements["change_cat"] = UIImageButton(
-                ui_scale(pygame.Rect((1400, 120),(68,68))), "",
-                object_id="#random_dice_button",
-                tool_tip_text='Switch MC',
-                manager=MANAGER
-                )
+            self.profile_elements["change_cat"] = UISurfaceImageButton(
+                ui_scale(pygame.Rect((701, 60), (34, 34))),
+                Icon.DICE,
+                get_button_dict(ButtonStyles.ICON, (34, 34)),
+                tool_tip_text="Switch MC",
+                object_id="@buttonstyles_icon",
+            )
             
         # TALK BUTTONS
 
@@ -1269,7 +1271,7 @@ class ProfileScreen(Screens):
                 cant_talk = True
                 
             self.profile_elements["talk"] = UIImageButton(ui_scale(pygame.Rect(
-                (383, 110), (68, 68))),
+                (383, 80), (34, 34))),
                 "",
                 object_id="#talk_button",
                 tool_tip_text="Talk to this Cat",
@@ -1297,7 +1299,7 @@ class ProfileScreen(Screens):
                 cant_insult = True
 
             self.profile_elements["insult"] = UIImageButton(ui_scale(pygame.Rect(
-                (443, 110), (68, 68))),
+                (423, 80), (34, 34))),
                 "",
                 object_id="#insult_button",
                 tool_tip_text="Insult this Cat", manager=MANAGER
@@ -1325,7 +1327,7 @@ class ProfileScreen(Screens):
                 cant_flirt = True
 
             self.profile_elements["flirt"] = UIImageButton(ui_scale(pygame.Rect(
-                (303, 110), (68, 68))),
+                (343, 80), (34, 34))),
                 "",
                 object_id="#flirt_button",
                 tool_tip_text="Flirt with this Cat", manager=MANAGER
@@ -1416,9 +1418,14 @@ class ProfileScreen(Screens):
             if self.open_tab == "faith":
                 self.close_current_tab()
             self.placeholder_tab_3.kill()
-            self.profile_elements['your_tab'] = UIImageButton(ui_scale(pygame.Rect((800, 1244), (352, 60))), "",
-                                            object_id="#your_tab", starting_height=1, manager=MANAGER)
-            self.your_tab = self.profile_elements['your_tab']
+
+            self.your_tab = UISurfaceImageButton(
+                ui_scale(pygame.Rect((400, 622), (176, 30))),
+                "your tab",
+                get_button_dict(ButtonStyles.PROFILE_MIDDLE, (176, 30)),
+                object_id="@buttonstyles_profile_middle",
+                manager=MANAGER,
+            )
             
         else:
             if self.open_tab == 'your tab':
@@ -3325,54 +3332,73 @@ class ProfileScreen(Screens):
         elif self.open_tab == 'your tab':
             if 'have kits' not in game.switches:
                     game.switches['have kits'] = True
+            self.have_kits_button = UISurfaceImageButton(
+                ui_scale(pygame.Rect((402, 580), (172, 36))),
+                "have kits",
+                get_button_dict(ButtonStyles.LADDER_MIDDLE, (172, 36)),
+                object_id="@buttonstyles_ladder_middle",
+                starting_height=2,
+                tool_tip_text='You will be more likely to have kits the next moon.',
+                manager=MANAGER,
+                anchors={
+                    "bottom_target": self.your_tab},
+            )
             if self.the_cat.age in ['young adult', 'adult', 'senior adult', 'senior'] and not self.the_cat.dead and not self.the_cat.outside and game.switches['have kits']:
-                self.have_kits_button = UIImageButton(ui_scale(pygame.Rect((804, 1172), (344, 72))), "",
-                                                    starting_height=2, object_id="#have_kits_button", tool_tip_text='You will be more likely to have kits the next moon.',
-                                                    manager=MANAGER)
+                self.have_kits_button.enable()
             else:
-                self.have_kits_button = UIImageButton(ui_scale(pygame.Rect((804, 1172), (344, 72))), "",
-                                                 starting_height=2, object_id="#have_kits_button",
-                                                 manager=MANAGER)
                 self.have_kits_button.disable()
 
-            # self.change_accessory_button = UIImageButton(ui_scale(pygame.Rect((804, 1100), (344, 72))), "",
-            #                                      starting_height=2, object_id="#change_accessory_button",
-            #                                      manager=MANAGER)
+            self.request_apprentice_button = UISurfaceImageButton(
+                    ui_scale(pygame.Rect((402, 544), (172, 36))),
+                    "request apprentice",
+                    get_button_dict(ButtonStyles.LADDER_MIDDLE, (172, 36)),
+                    object_id="@buttonstyles_ladder_middle",
+                    starting_height=2,
+                    tool_tip_text='You will be more likely to recieve an apprentice.', 
+                    manager=MANAGER,
+                    anchors={
+                        "bottom_target": self.have_kits_button},
+                )
+            
             if self.the_cat.status in ['leader', 'deputy', 'medicine cat', 'mediator', 'queen', 'warrior'] and not self.the_cat.dead and not self.the_cat.outside:
-                self.request_apprentice_button = UIImageButton(ui_scale(pygame.Rect((804, 1100), (344, 72))), "",
-                                                               tool_tip_text='You will be more likely to recieve an apprentice.',
-                                                    starting_height=2, object_id="#request_apprentice_button",
-                                                    manager=MANAGER)
+                self.request_apprentice_button.enable()
             else:
-                self.request_apprentice_button = UIImageButton(ui_scale(pygame.Rect((804, 1100), (344, 72))), "",
-                                                    starting_height=2,
-                                                    tool_tip_text='You will be more likely to recieve an apprentice.', object_id="#request_apprentice_button",
-                                                    manager=MANAGER)
                 self.request_apprentice_button.disable()
             
+            self.gift_accessory_button = UISurfaceImageButton(
+                ui_scale(pygame.Rect((402, 508), (172, 36))),
+                "give a gift",
+                get_button_dict(ButtonStyles.LADDER_MIDDLE, (172, 36)),
+                object_id="@buttonstyles_ladder_middle",
+                starting_height=2,
+                manager=MANAGER,
+                anchors={
+                    "bottom_target": self.request_apprentice_button},
+            )
             if (
                 self.the_cat.moons > 0
                 and not self.the_cat.dead
                 and not self.the_cat.outside
                 and len(self.the_cat.pelt.inventory) > 0
                 ):
-                self.gift_accessory_button = UIImageButton(ui_scale(pygame.Rect((804, 1028), (344, 72))), "",
-                                                    starting_height=2, object_id="#gift_clanmate_button",
-                                                    manager=MANAGER)
+               
+                self.gift_accessory_button.enable()
             else:
-                self.gift_accessory_button = UIImageButton(ui_scale(pygame.Rect((804, 1028), (344, 72))), "",
-                                                    starting_height=2, object_id="#gift_clanmate_button",
-                                                    manager=MANAGER)
                 self.gift_accessory_button.disable()
 
+            self.your_faith_button = UISurfaceImageButton(
+                ui_scale(pygame.Rect((402, 472), (172, 36))),
+                "faith",
+                get_button_dict(ButtonStyles.LADDER_TOP, (172, 36)),
+                object_id="@buttonstyles_ladder_top",
+                starting_height=2,
+                manager=MANAGER,
+                anchors={
+                    "bottom_target": self.gift_accessory_button},
+            )
             if self.the_cat.status not in ["newborn", "kitten"] and not self.the_cat.dead and not self.the_cat.outside:
-                self.your_faith_button = UIImageButton(ui_scale(pygame.Rect((804, 956), (352, 72))), "",
-                                                    starting_height=2, object_id="#your_faith_button",
-                                                    manager=MANAGER)
+                self.your_faith_button.enable()
             else:
-                self.your_faith_button = UIImageButton(ui_scale(pygame.Rect((804, 956), (352, 72))), "",
-                                                    starting_height=2, object_id="#your_faith_button",
-                                                    manager=MANAGER)
                 self.your_faith_button.disable()
             
 
