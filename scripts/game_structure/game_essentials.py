@@ -139,6 +139,7 @@ class Game:
         "show_history_moons": False,
         "fps": 30,
         "war_rel_change_type": "neutral",
+        "disallowed_symbol_tags": [],
         "saved_scroll_positions": {},
         "moon&season_open": False,
         'window_open': False,
@@ -156,7 +157,7 @@ class Game:
 
     debug_settings = {
         "showcoords": False,
-        "showbounds": False,
+        "showbounds": True,
         "visualdebugmode": False,
         "showfps": False,
     }

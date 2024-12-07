@@ -9,7 +9,10 @@ from scripts.utility import generate_sprite, get_cluster, pronoun_repl, adjust_t
 from scripts.cat.cats import Cat
 from ..cat.history import History
 from scripts.game_structure import image_cache
-from scripts.game_structure.ui_elements import UIImageButton
+from scripts.game_structure.ui_elements import (
+    UIImageButton,
+    UISurfaceImageButton,
+)
 import pygame_gui
 from scripts.game_structure.game_essentials import game
 from enum import Enum  # pylint: disable=no-name-in-module
@@ -19,6 +22,10 @@ from scripts.special_dates import get_special_date, contains_special_date_tag
 # pylint: disable=consider-using-enumerate
 from scripts.utility import get_text_box_theme, ui_scale, ui_scale_blit, ui_scale_offset, get_current_season, ui_scale_dimensions
 from scripts.game_structure.screen_settings import MANAGER
+from ..ui.generate_box import get_box, BoxStyles
+from ..ui.generate_button import ButtonStyles, get_button_dict
+from ..ui.get_arrow import get_arrow
+from ..ui.icon import Icon
 
 class RelationType(Enum):
     """An enum representing the possible age groups of a cat"""
@@ -79,14 +86,14 @@ class TalkScreen(Screens):
         self.created_choice_buttons = False
         self.profile_elements = {}
         self.clan_name_bg = pygame_gui.elements.UIImage(
-            ui_scale(pygame.Rect((230, 875), (380, 70))),
+            ui_scale(pygame.Rect((115, 438), (190, 35))),
             pygame.transform.scale(
                 image_cache.load_image(
                     "resources/images/clan_name_bg.png").convert_alpha(),
                 (500, 870)),
             manager=MANAGER)
         self.profile_elements["cat_name"] = pygame_gui.elements.UITextBox(str(self.the_cat.name),
-                                                                    ui_scale(pygame.Rect((300, 870), (-1, 80))),
+                                                                    ui_scale(pygame.Rect((150, 437), (-1, 40))),
                                                                         object_id="#text_box_34_horizcenter_light",
                                                                         manager=MANAGER)
 
@@ -115,31 +122,37 @@ class TalkScreen(Screens):
         self.talk_box_img = image_cache.load_image("resources/images/talk_box.png").convert_alpha()
 
         self.talk_box = pygame_gui.elements.UIImage(
-                ui_scale(pygame.Rect((178, 942), (1248, 302))),
+                ui_scale(pygame.Rect((90, 470), (624, 151))),
                 self.talk_box_img
             )
 
-        self.back_button = UIImageButton(ui_scale(pygame.Rect((50, 50), (210, 60))), "",
-                                        object_id="#back_button", manager=MANAGER)
-        self.scroll_container = pygame_gui.elements.UIScrollingContainer(ui_scale(pygame.Rect((500, 970), (900, 300))))
+        self.back_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((25, 25), (153, 30))),
+            get_arrow(5, arrow_left=True) + " Back",
+            get_button_dict(ButtonStyles.SQUOVAL, (153, 30)),
+            object_id="@buttonstyles_squoval",
+            sound_id="page_flip",
+            manager=MANAGER,
+        )
+        self.scroll_container = pygame_gui.elements.UIScrollingContainer(ui_scale(pygame.Rect((250, 475), (450, 150))))
         self.text = pygame_gui.elements.UITextBox("",
-                                                ui_scale(pygame.Rect((0, 0), (900, -100))),
+                                                ui_scale(pygame.Rect((0, 10), (450, -100))),
                                                 object_id="#text_box_30_horizleft",
                                                 container=self.scroll_container,
                                                 manager=MANAGER)
 
         self.textbox_graphic = pygame_gui.elements.UIImage(
-                ui_scale(pygame.Rect((170, 942), (346, 302))),
+                ui_scale(pygame.Rect((90, 471), (163, 150))),
                 image_cache.load_image("resources/images/textbox_graphic.png").convert_alpha()
             )
         # self.textbox_graphic.hide()
 
-        self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((70, 900), (400, 400))),
+        self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((35, 450), (200, 200))),
                                                                         pygame.transform.scale(
                                                                             generate_sprite(self.the_cat),
-                                                                            (400, 400)), manager=MANAGER)
+                                                                            (200, 200)), manager=MANAGER)
         self.paw = pygame_gui.elements.UIImage(
-                ui_scale(pygame.Rect((1370, 1180), (30, 30))),
+                ui_scale(pygame.Rect((685, 590), (15, 15))),
                 image_cache.load_image("resources/images/cursor.png").convert_alpha()
             )
         self.paw.visible = False
@@ -228,6 +241,7 @@ class TalkScreen(Screens):
         self.set_bg(get_current_season())
 
     def on_use(self):
+        super().on_use()
         now = pygame.time.get_ticks()
         if self.texts:
             if self.texts[self.text_index][0] == "[" and self.texts[self.text_index][-1] == "]":
@@ -419,7 +433,7 @@ class TalkScreen(Screens):
             self.option_bgs[c] = option_bg
 
             #the button for dialogue choices
-            button = UIImageButton(ui_scale(pygame.Rect((780, 855 + y_pos), (68, 68))),
+            button = UIImageButton(ui_scale(pygame.Rect((390, 428 + y_pos), (34, 34))),
                                         text = "",
                                         object_id="#dialogue_choice_button", manager=MANAGER)
             self.choice_buttons[c] = button

@@ -777,6 +777,9 @@ def create_new_cat(
     gender: str = None,
     thought: str = "Is looking around the camp with wonder",
     alive: bool = True,
+    # LG
+    df: bool = False,
+    # ---
     outside: bool = False,
     parent1: str = None,
     parent2: str = None,

@@ -1040,6 +1040,40 @@
             }
         }
     },
+    "#fav_star_2": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fav_star_2.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fav_star_2_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fav_star_2_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fav_star_2_unavailable.png"
+            }
+        }
+    },
+    "#fav_star_3": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/fav_star_3.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/fav_star_3_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/fav_star_3_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/fav_star_3_unavailable.png"
+            }
+        }
+    },
     "#not_fav_star": {
         "prototype": "#image_button",
         "images": {
@@ -5677,6 +5711,74 @@
                 "disabled_image": {
                     "path": "resources/images/buttons/filters_tab_hover.png"
                 }
+            }
+        }
+    },
+    "#talk_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/talk.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/talk_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/talk_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/talk_unavailable.png"
+            }
+        }
+    },
+    "#flirt_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/flirt.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/flirt_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/flirt_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/flirt_unavailable.png"
+            }
+        }
+    },
+    "#date_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/date.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/date_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/date_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/date_unavailable.png"
+            }
+        }
+    },
+    "#insult_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/insult.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/insult_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/insult_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/insult_unavailable.png"
             }
         }
     }
