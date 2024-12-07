@@ -525,6 +525,7 @@ class ProfileScreen(Screens):
                     self.the_cat.favourite = 0
                 else:
                     self.the_cat.favourite += 1
+                self.clear_profile()
                 self.build_profile()
             else:
                 self.handle_tab_events(event)

@@ -422,96 +422,72 @@ class EventsScreen(Screens):
             sound_id="timeskip",
         )
 
-        fav_y_pos = 284
-        self.fave_filter_elements["cat_icon"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos), (30, 30))),
-            Icon.CAT_HEAD,
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
-            manager=MANAGER,
-            sound_id="timeskip")
+        height = 32
         
-        self.fave_filter_elements["yourcat_filter"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos - 30), (30, 30))),
-            "Y",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
+        self.fave_filter_elements["cat_icon"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287), (25, 25))),
+            "",
+            object_id="#faves_dropdown",
             container=self.event_screen_container,
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_1"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 30), (30, 30))),
-            "1",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            )
+
+        self.fave_filter_elements["yourcat_filter"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 - height), (25, height))),
+            "",
+            object_id="#yourcat_filter",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_2"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 60), (30, 30))),
-            "2",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_1"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height - 5), (25, height))),
+            "", # dont ask me whats going on with the math here ^^ idfk
+            object_id="#fave_filter_1",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_3"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 90), (30, 30))),
-            "3",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_2"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height * 2 - 5), (25, height))),
+            "",
+            object_id="#fave_filter_2",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["yourcat_filter_selected"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos - 30), (30, 30))),
-            "*",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_3"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height * 3 - 5), (25, height))),
+            "",
+            object_id="#fave_filter_3",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_1_selected"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 30), (30, 30))),
-            "*",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["yourcat_filter_selected"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 - height), (25, height))),
+            "",
+            object_id="#yourcat_filter_selected",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_2_selected"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 60), (30, 30))),
-            "*",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_1_selected"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height - 5), (25, height))),
+            "",
+            object_id="#fave_filter_1_selected",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_3_selected"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 90), (30, 30))),
-            "*",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_2_selected"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height * 2 - 5), (25, height))),
+            "",
+            object_id="#fave_filter_2_selected",
             manager=MANAGER,
-            sound_id="timeskip")
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_3_selected"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height * 3 - 5), (25, height))),
+            "",
+            object_id="#fave_filter_3_selected",
+            manager=MANAGER,
+            container=self.event_screen_container
+            )
         
 
         # lifegen continue after death button
@@ -780,97 +756,73 @@ class EventsScreen(Screens):
         self.fave_filter_elements = {}
 
         # fave filters
-        fav_y_pos = 284
-        self.fave_filter_elements["cat_icon"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos), (30, 30))),
-            Icon.CAT_HEAD,
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
+        height = 32
+        
+        self.fave_filter_elements["cat_icon"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287), (25, 25))),
+            "",
+            object_id="#faves_dropdown",
             container=self.event_screen_container,
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["yourcat_filter"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos - 30), (30, 30))),
-            "Y",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            )
+
+        self.fave_filter_elements["yourcat_filter"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 - height), (25, height))),
+            "",
+            object_id="#yourcat_filter",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_1"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 30), (30, 30))),
-            "1",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_1"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height - 5), (25, height))),
+            "",
+            object_id="#fave_filter_1",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_2"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 60), (30, 30))),
-            "2",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_2"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height * 2 - 5), (25, height))),
+            "",
+            object_id="#fave_filter_2",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_3"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 90), (30, 30))),
-            "3",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_3"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height * 3 - 5), (25, height))),
+            "",
+            object_id="#fave_filter_3",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["yourcat_filter_selected"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos - 30), (30, 30))),
-            "*",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["yourcat_filter_selected"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 - height), (25, height))),
+            "",
+            object_id="#yourcat_filter_selected",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_1_selected"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 30), (30, 30))),
-            "*",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_1_selected"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height - 5), (25, height))),
+            "",
+            object_id="#fave_filter_1_selected",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_2_selected"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 60), (30, 30))),
-            "*",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_2_selected"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height * 2 - 5), (25, height))),
+            "",
+            object_id="#fave_filter_2_selected",
             manager=MANAGER,
-            sound_id="timeskip")
-        
-        self.fave_filter_elements["fave_group_3_selected"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((30, fav_y_pos + 90), (30, 30))),
-            "*",
-            get_button_dict(ButtonStyles.ICON, (30, 30)),
-            object_id="@buttonstyles_icon",
-            starting_height=1,
-            container=self.event_screen_container,
+            container=self.event_screen_container
+            )
+        self.fave_filter_elements["fave_group_3_selected"] = UIImageButton(
+            ui_scale(pygame.Rect((30, 287 + height * 3 - 5), (25, height))),
+            "",
+            object_id="#fave_filter_3_selected",
             manager=MANAGER,
-            sound_id="timeskip")
-        
+            container=self.event_screen_container
+            )
+
         if "yourcat_filter" not in self.selected_fave_filter:
             self.fave_filter_elements["yourcat_filter"].show()
             self.fave_filter_elements["yourcat_filter_selected"].hide()
