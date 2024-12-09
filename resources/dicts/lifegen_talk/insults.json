@@ -3275,5 +3275,80 @@
             "...",
             "[t_c skitters off to the nearest reflective surface.]"
         ]
+    ],
+    "shunned_insults_H1": [
+        [
+            "you_shunned",
+            "they_grieving",
+            "no_kit",
+            "insult",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Back off! I'm already having a bad day - I don't need you to make it worse."
+        ]
+    ],
+    "shunned_insults_H2": [
+        [
+            "you_shunned",
+            "you_guilty",
+            "no_kit",
+            "insult",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "The guilt must be eating away at your intelligence to make such bold moves."
+        ]
+    ],
+    "shunned_insults_H3": [
+        [
+            "you_shunned",
+            "they_grieving",
+            "no_kit",
+            "insult",
+            "any",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c doesn't bother to acknowledge your presence.]"
+        ]
+    ],
+    "shunned_insults_H5": [
+        [
+            "you_shunned",
+            "no_kit",
+            "insult",
+            "any",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c doesn't bother to acknowledge your presence.]"
+        ]
+    ],
+    "shunned_insults_H4": [
+        [
+            "you_shunned",
+            "dislike",
+            "no_kit",
+            "insult",
+            "any",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c doesn't hesitate to swing {PRONOUN/t_c/poss} claws in your direction the moment you get close.]"
+        ]
     ]
 }

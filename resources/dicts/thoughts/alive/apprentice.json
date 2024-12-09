@@ -64,7 +64,7 @@
             "living"
         ]
     },
-        {
+    {
         "id": "warrior_apprentice_to_clanborn_warrior",
         "thoughts": [
             "Is trying to perfect the latest move that r_c taught {PRONOUN/m_c/object}",
@@ -117,10 +117,12 @@
             "sincere"
         ],
         "backstory_constraint": {
-            "r_c": ["clan_founder_backstories", 
-                    "clanborn_backstories",
-                    "outsider_roots_backstories",
-                    "half_clan_backstories"]
+            "r_c": [
+                "clan_founder_backstories",
+                "clanborn_backstories",
+                "outsider_roots_backstories",
+                "half_clan_backstories"
+            ]
         },
         "random_living_status": [
             "living"
@@ -1073,7 +1075,6 @@
             "Tries to mimic {PRONOUN/m_c/poss} mentor, much to r_c's obvious endearment",
             "Wonders if r_c is proud of {PRONOUN/m_c/object}",
             "Is asking r_c to show {PRONOUN/m_c/object} how to do something again"
-
         ],
         "relationship_constraint": [
             "app/mentor"
@@ -1130,7 +1131,6 @@
             "ambitious",
             "vengeful",
             "arrogant"
-
         ],
         "random_living_status": [
             "living"
@@ -1157,7 +1157,6 @@
             "arrogant",
             "competitive",
             "oblivious"
-
         ],
         "random_living_status": [
             "living"
@@ -1325,7 +1324,6 @@
             "Feels understood by r_c",
             "Shares prey with r_c in comfortable silence",
             "Is being taught some techniques r_c uses when being around others gets to be too much"
-
         ],
         "main_trait_constraint": [
             "insecure",

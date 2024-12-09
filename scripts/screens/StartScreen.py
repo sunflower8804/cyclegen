@@ -53,11 +53,7 @@ class StartScreen(Screens):
     def __init__(self, name=None):
         super().__init__(name)
         self.warning_label = None
-        bg = self.choose_random_menu("resources/menus")
-        self.bg = pygame.image.load(bg).convert()
-        self.bg = pygame.transform.scale(self.bg, (screen_x, screen_y))
         self.social_buttons = {}
-        self.warning_label_background = None
 
     def choose_random_menu(self, folder_path):
         """This will choose a random menu to display from the menus folder."""
@@ -104,26 +100,27 @@ class StartScreen(Screens):
                 self.error_gethelp.kill()
                 self.closebtn.kill()
                 self.open_data_directory_button.kill()
-                # game.switches['error_message'] = ''
-                # game.switches['traceback'] = ''
             elif event.ui_element == self.update_button:
                 UpdateAvailablePopup(game.switches["last_screen"])
             elif event.ui_element == self.quit:
                 quit(savesettings=False, clearevents=False)
             elif event.ui_element == self.social_buttons["discord_button"]:
                 if platform.system() == "Darwin":
-                    subprocess.Popen(["open", "-u", "https://discord.gg/clangen"])
+                    subprocess.Popen(
+                        ["open", "-u", "https://discord.gg/lifegen"])
                 elif platform.system() == "Windows":
-                    os.system(f"start \"\" {'https://discord.gg/clangen'}")
+                    os.system(f"start \"\" {'https://discord.gg/lifegen'}")
                 elif platform.system() == "Linux":
-                    subprocess.Popen(["xdg-open", "https://discord.gg/clangen"])
+                    subprocess.Popen(
+                        ["xdg-open", "https://discord.gg/lifegen"])
             elif event.ui_element == self.social_buttons["tumblr_button"]:
                 if platform.system() == "Darwin":
                     subprocess.Popen(
                         ["open", "-u", "https://officialclangen.tumblr.com/"]
                     )
                 elif platform.system() == "Windows":
-                    os.system(f"start \"\" {'https://officialclangen.tumblr.com/'}")
+                    os.system(
+                        f"start \"\" {'https://officialclangen.tumblr.com/'}")
                 elif platform.system() == "Linux":
                     subprocess.Popen(
                         ["xdg-open", "https://officialclangen.tumblr.com/"]
@@ -134,7 +131,8 @@ class StartScreen(Screens):
                         ["open", "-u", "https://twitter.com/OfficialClangen"]
                     )
                 elif platform.system() == "Windows":
-                    os.system(f"start \"\" {'https://twitter.com/OfficialClangen'}")
+                    os.system(
+                        f"start \"\" {'https://twitter.com/OfficialClangen'}")
                 elif platform.system() == "Linux":
                     subprocess.Popen(
                         ["xdg-open", "https://twitter.com/OfficialClangen"]
@@ -180,7 +178,9 @@ class StartScreen(Screens):
         # this is the only screen that has to check its own music, other screens handle that in the screen change
         music_manager.check_music("start screen")
 
-        bg = pygame.image.load("resources/images/menu.png").convert()
+        bg = pygame.image.load(
+            self.choose_random_menu("resources/menus")).convert()
+
         if game.settings["dark mode"]:
             bg.fill(
                 game.config["theme"]["fullscreen_background"]["dark"]["mainmenu_tint"],
@@ -285,7 +285,7 @@ class StartScreen(Screens):
         self.error_gethelp = pygame_gui.elements.UITextBox(
             "Please join the Discord server and ask for technical support. "
             "We'll be happy to help! Please include the error message and the traceback below (if available). "
-            '<br><a href="https://discord.gg/clangen">Discord</a>',  # pylint: disable=line-too-long
+            '<br><a href="https://discord.gg/lifegen">Discord</a>',  # pylint: disable=line-too-long
             ui_scale(pygame.Rect((527, 215), (175, 300))),
             object_id="#text_box_22_horizleft",
             starting_height=3,
@@ -298,7 +298,8 @@ class StartScreen(Screens):
             get_button_dict(ButtonStyles.SQUOVAL, (178, 30)),
             object_id="@buttonstyles_squoval",
             manager=MANAGER,
-            starting_height=2,  # Layer 2 and repositioned so hover affect works.
+            # Layer 2 and repositioned so hover affect works.
+            starting_height=2,
             tool_tip_text="Opens the data directory. "
             "This is where save files "
             "and logs are stored.",
@@ -307,7 +308,8 @@ class StartScreen(Screens):
         self.closebtn = UIImageButton(
             ui_scale(pygame.Rect((693, 215), (22, 22))),
             "",
-            starting_height=2,  # Hover affect works, and now allows it to be clicked more easily.
+            # Hover affect works, and now allows it to be clicked more easily.
+            starting_height=2,
             object_id="#exit_window_button",
             manager=MANAGER,
         )
@@ -317,8 +319,6 @@ class StartScreen(Screens):
         self.error_gethelp.hide()
         self.open_data_directory_button.hide()
         self.closebtn.hide()
-        # self.continue_button.hide()
-        # self.switch_clan_button.hide()
 
         self.update_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((577, 25), (153, 30))),
@@ -372,7 +372,14 @@ class StartScreen(Screens):
                     f"{get_cache_dir()}/changelog_popup_shown", "w"
                 ) as write_file:
                     write_file.write(get_version_info().version_number)
-        self.warning_label_background = UIImageButton(scale(pygame.Rect((100, 1244), (1400, 55))), "", object_id="blank_button", manager=MANAGER)
+
+        self.warning_label_background = UISurfaceImageButton(
+            ui_scale(pygame.Rect((50, 601), (700, 32))),
+            "",
+            get_button_dict(ButtonStyles.ROUNDED_RECT, (700, 32)),
+            object_id="@buttonstyles_rounded_rect",
+            manager=MANAGER
+        )
         self.warning_label_background.disable()
         self.warning_label = pygame_gui.elements.UITextBox(
             "Warning: this game includes descriptions of gore, violence, murder, kit death, and animal abuse",
@@ -423,7 +430,7 @@ class StartScreen(Screens):
                 self.open_data_directory_button.hide()
 
             self.closebtn.show()
-            
+
         if game.clan is not None:
             key_copy = tuple(Cat.all_cats.keys())
             for x in key_copy:

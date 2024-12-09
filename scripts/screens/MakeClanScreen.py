@@ -1,7 +1,4 @@
 from random import choice, randrange
-import pygame_gui
-import random
-from .Screens import Screens
 from re import sub
 from typing import Optional
 
@@ -9,20 +6,11 @@ import pygame
 import pygame_gui
 from pygame_gui.core import ObjectID
 
-from scripts.utility import get_text_box_theme, scale, generate_sprite
-from scripts.housekeeping.version import get_version_info
-from scripts.clan import Clan
-from scripts.cat.cats import create_example_cats, Cat, Personality
-from scripts.cat.skills import Skill, SkillPath
-from scripts.cat.pelts import Pelt
 import scripts.screens.screens_core.screens_core
 from scripts.cat.cats import create_example_cats, create_cat, Cat
 from scripts.cat.names import names
 from scripts.clan import Clan
 from scripts.game_structure import image_cache
-from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
-from scripts.patrol.patrol import Patrol
-from scripts.cat.skills import SkillPath
 from scripts.game_structure.game_essentials import (
     game,
 )
@@ -32,7 +20,7 @@ from scripts.game_structure.ui_elements import (
     UISurfaceImageButton,
 )
 from scripts.patrol.patrol import Patrol
-from scripts.utility import get_text_box_theme, ui_scale, ui_scale_blit
+from scripts.utility import get_text_box_theme, ui_scale, ui_scale_blit, ui_scale_offset
 from scripts.utility import ui_scale_dimensions
 from .Screens import Screens
 from ..cat.sprites import sprites
@@ -46,22 +34,32 @@ from ..ui.icon import Icon
 
 class MakeClanScreen(Screens):
     # UI images
-    clan_frame_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/clan_name_frame.png').convert_alpha(), (432, 100))
-    name_clan_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/name_clan_light.png').convert_alpha(), (1600, 1400))
+
+    ui_images = {
+        "clan_frame": pygame.image.load(
+            "resources/images/pick_clan_screen/clan_name_frame.png"
+        ).convert_alpha(),
+        "name_clan": pygame.image.load(
+            "resources/images/pick_clan_screen/name_clan_light.png"
+        ).convert_alpha(),
+        "leader": pygame.image.load(
+            "resources/images/pick_clan_screen/leader_light.png"
+        ).convert_alpha(),
+        "deputy": pygame.image.load(
+            "resources/images/pick_clan_screen/deputy_light.png"
+        ).convert_alpha(),
+        "medic": pygame.image.load(
+            "resources/images/pick_clan_screen/med_light.png"
+        ).convert_alpha(),
+        "pick_clan": pygame.image.load(
+            "resources/images/pick_clan_screen/clan_light.png"
+        ).convert_alpha(),
+    }
+    
     leader_img = pygame.transform.scale(pygame.image.load(
         'resources/images/pick_clan_screen/choose cat.png').convert_alpha(), (1600, 1400))
     leader_img_dark = pygame.transform.scale(pygame.image.load(
         'resources/images/pick_clan_screen/choose cat dark.png').convert_alpha(), (1600, 1400))
-    deputy_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/deputy_light.png').convert_alpha(), (1600, 1400))
-    medic_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/med_light.png').convert_alpha(), (1600, 1400))
-    clan_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/clan_light.png').convert_alpha(), (1600, 1400))
-    bg_preview_border = pygame.transform.scale(
-        pygame.image.load("resources/images/bg_preview_border.png").convert_alpha(), (466, 416))
     
     your_name_img = pygame.transform.scale(pygame.image.load(
         'resources/images/pick_clan_screen/Your name screen.png').convert_alpha(), (1600, 1400))

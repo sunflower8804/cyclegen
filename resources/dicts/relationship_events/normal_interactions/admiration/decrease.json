@@ -16,8 +16,8 @@
 			"m_c notices that r_c doesn't want to help out.",
 			"m_c doesn't understand why r_c is being so rude.",
 			"r_c saw m_c taking extra fresh kill before others had a chance to eat.",
-            "m_c walks away when r_c asks for help.",
-            "r_c saw m_c do something kind of selfish."
+			"m_c walks away when r_c asks for help.",
+			"r_c saw m_c do something kind of selfish."
 		],
 		"reaction_random_cat": {
 			"admiration": "decrease"
@@ -155,19 +155,19 @@
 			"admiration": "decrease"
 		}
 	},
-    {
-        "id": "H1_admirationdecrease_low_kitten",
-        "intensity": "low",
-        "interactions": [
-            "After being scolded, m_c huffs and declares that r_c is no longer {PRONOUN/m_c/poss} favourite queen."
-        ],
-        "main_status_constraint": [
-            "kitten"
-        ],
-        "random_status_constraint": [
-            "queen"
-        ]
-    },
+	{
+		"id": "H1_admirationdecrease_low_kitten",
+		"intensity": "low",
+		"interactions": [
+			"After being scolded, m_c huffs and declares that r_c is no longer {PRONOUN/m_c/poss} favourite queen."
+		],
+		"main_status_constraint": [
+			"kitten"
+		],
+		"random_status_constraint": [
+			"queen"
+		]
+	},
 	{
 		"id": "H1_admirdecrease_med",
 		"intensity": "med",
@@ -176,12 +176,12 @@
 			"m_c doesn't appreciate r_c telling {PRONOUN/m_c/object} what to do.",
 			"m_c won't admit {PRONOUN/m_c/subject} {VERB/m_c/were/was} wrong when {PRONOUN/m_c/subject} {VERB/m_c/give/gave} r_c the wrong instructions."
 		],
-        "main_status_constraint": [
-            "queen apprentice"
-        ],
-        "random_status_constraint": [
-            "queen"
-        ],
+		"main_status_constraint": [
+			"queen apprentice"
+		],
+		"random_status_constraint": [
+			"queen"
+		],
 		"reaction_random_cat": {
 			"admiration": "decrease"
 		}

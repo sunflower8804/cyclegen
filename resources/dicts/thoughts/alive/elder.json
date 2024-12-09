@@ -1,6 +1,6 @@
 [
     {
-      "id": "elder_gen_to_dead_gen",
+        "id": "elder_gen_to_dead_gen",
         "thoughts": [
             "Is telling stories about r_c",
             "Wishes that r_c were still alive",
@@ -74,17 +74,17 @@
             "senior adult"
         ],
         "main_trait_constraint": [
-          "flamboyant"
+            "flamboyant"
         ]
     },
     {
-      "id": "elder_to_alive_younger_cats",
+        "id": "elder_to_alive_younger_cats",
         "thoughts": [
-          "Is giving advice to the younger cats",
-          "Is bossing the younger cats around",
+            "Is giving advice to the younger cats",
+            "Is bossing the younger cats around",
             "Is telling scary stories to the younger cats",
-          "Is sharing wisdom with the younger cats that is... less than helpful",
-          "Is recounting daring expeditions for the younger cats",
+            "Is sharing wisdom with the younger cats that is... less than helpful",
+            "Is recounting daring expeditions for the younger cats",
             "Is telling a rather tall tale to any cat who will listen"
         ],
         "main_age_constraint": [
@@ -98,7 +98,7 @@
         ]
     },
     {
-      "id": "elder_to_alive_apprentice",
+        "id": "elder_to_alive_apprentice",
         "thoughts": [
             "Is requesting an apprentice's help with {PRONOUN/m_c/poss} ticks",
             "Is asking apprentices to help check {PRONOUN/m_c/object} for ticks"
@@ -148,10 +148,10 @@
         "main_age_constraint": [
             "senior"
         ],
-        "random_living_status":[
+        "random_living_status": [
             "starclan"
         ],
-        "relationship_constraint":[
+        "relationship_constraint": [
             "mates"
         ]
     },
@@ -213,7 +213,7 @@
         "main_status_constraint": [
             "elder"
         ],
-        "random_status_constraint":[
+        "random_status_constraint": [
             "medicine cat"
         ]
     },
@@ -233,7 +233,7 @@
         "main_status_constraint": [
             "elder"
         ],
-        "random_status_constraint":[
+        "random_status_constraint": [
             "kitten"
         ]
     },
@@ -358,7 +358,6 @@
             "medicine cat"
         ]
     },
-
     {
         "id": "blind_gen_retired_to_alive_notkit",
         "thoughts": [

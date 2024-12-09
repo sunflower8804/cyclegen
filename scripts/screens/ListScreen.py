@@ -1,4 +1,5 @@
 from math import ceil
+from typing import Union, Dict, Optional
 
 import pygame
 import pygame_gui
@@ -543,8 +544,8 @@ class ListScreen(Screens):
             get_button_dict(ButtonStyles.ICON, (34, 34)),
             object_id="@buttonstyles_icon",
             container=self.list_screen_container,
-            "page_entry"
-        ] = pygame_gui.elements.UITextEntryLine(
+            manager=MANAGER)
+        self.page_entry = pygame_gui.elements.UITextEntryLine(
             ui_scale(pygame.Rect((370, 604), (30, 27))),
             container=self.list_screen_container,
             placeholder_text=str(self.current_page),

@@ -56,7 +56,9 @@
                     "gloomy",
                     "mellow"
                 ],
-                "can_have_stat": ["p_l"]
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "You hesitate for too long. Before you're able to do anything, d_n notices and gets in-between the two apprentices with a look of disappointment. The three of them have a quick conversation, in which d_n doesn't allow them any room to speak, and the apprentices sulk off. Neither are going on patrol because of their behavior, it seems.",
@@ -72,7 +74,9 @@
                     "stoic",
                     "aloof"
                 ],
-                "can_have_stat": ["d_n"]
+                "can_have_stat": [
+                    "d_n"
+                ]
             }
         ]
     },
@@ -161,8 +165,15 @@
                 "text": "From what you've observed throughout your training, warriors are commonly harsh toward their apprentices, since they're preparing them for the worse. You approach the apprentice with this reasoning and the outside perspective seems to help the apprentice understand that their mentors harsh teachings are not personal.",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": ["INNOVATOR,1", "INSIGHTFUL,1", "CLAIRVOYANT,1", "COMFORTER,1"],
-                "can_have_stat": ["p_l"]
+                "stat_skill": [
+                    "INNOVATOR,1",
+                    "INSIGHTFUL,1",
+                    "CLAIRVOYANT,1",
+                    "COMFORTER,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             },
             {
                 "text": "When the warrior has the time, you ask them why they're always so harsh with their apprentice. The warrior responds with their reasoning - no cat is going to get better without something pushing them to try to be their very best. With some consideration, you repeat the warrior's view to their apprentice. It seems to help.",
@@ -240,7 +251,9 @@
                     "gloomy",
                     "mellow"
                 ],
-                "can_have_stat": ["p_l"]
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     },
@@ -298,8 +311,12 @@
                 "weight": 5,
                 "injury": [
                     {
-                        "cats": ["p_l"],
-                        "injuries": ["bruises"],
+                        "cats": [
+                            "p_l"
+                        ],
+                        "injuries": [
+                            "bruises"
+                        ],
                         "no_results": false
                     }
                 ]
@@ -352,7 +369,9 @@
                     "cowardly",
                     "emotional"
                 ],
-                "can_have_stat": ["p_l"]
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -407,7 +426,9 @@
                     "bold",
                     "shameless"
                 ],
-                "can_have_stat": ["p_l"]
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
@@ -532,7 +553,9 @@
                     "gloomy",
                     "mellow"
                 ],
-                "can_have_stat": ["p_l"]
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ]
     }

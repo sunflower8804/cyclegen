@@ -12,11 +12,11 @@ from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 
 import ujson
 
-from scripts.utility import event_text_adjust, scale, ACC_DISPLAY, process_text, chunks, get_cluster
+from scripts.utility import event_text_adjust, ACC_DISPLAY, process_text, chunks, get_cluster
 
 from .Screens import Screens
 
-from scripts.utility import get_text_box_theme, scale_dimentions, shorten_text_to_fit
+from scripts.utility import get_text_box_theme, shorten_text_to_fit
 from scripts.cat.cats import Cat, BACKSTORIES
 from scripts.cat.pelts import Pelt
 from scripts.game_structure import image_cache
@@ -26,7 +26,7 @@ from scripts.cat.skills import SkillPath
 
 import math
 from scripts.cat.sprites import sprites
-from scripts.game_structure.game_essentials import game, MANAGER
+from scripts.game_structure.game_essentials import game
 from random import choice
 from re import sub
 

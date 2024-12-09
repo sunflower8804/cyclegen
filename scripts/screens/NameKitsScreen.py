@@ -9,22 +9,22 @@ from scripts.event_class import Single_Event
 from scripts.events import events_class
 from .Screens import Screens
 
-from scripts.utility import get_personality_compatibility, get_text_box_theme, scale, scale_dimentions, shorten_text_to_fit
+from scripts.utility import get_personality_compatibility, get_text_box_theme, shorten_text_to_fit
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from scripts.cat.pelts import Pelt
 from scripts.game_structure.windows import GameOver, PickPath, DeathScreen
-from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
+from scripts.game_structure.game_essentials import game
 from scripts.game_structure.windows import RelationshipLog
 from scripts.game_structure.propagating_thread import PropagatingThread
 from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked, UISpriteButton
+from ..ui.generate_box import BoxStyles, get_box
 
 
 class NameKitsScreen(Screens):
     selected_cat = None
     current_page = 1
-    list_frame = pygame.transform.scale(image_cache.load_image("resources/images/choosing_frame.png").convert_alpha(),
-                                        (1300 / 1600 * screen_x, 452 / 1400 * screen_y))
+    list_frame = get_box(BoxStyles.ROUNDED_BOX, (650, 194))
     apprentice_details = {}
     selected_details = {}
     cat_list_buttons = {}

@@ -2,15 +2,13 @@ from random import choice, choices, randint
 import pygame
 import ujson
 import re
-from scripts.utility import scale
-
 from .Screens import Screens
 
 from scripts.utility import generate_sprite, get_cluster, get_alive_status_cats, get_alive_cats, pronoun_repl
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 import pygame_gui
-from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER, screen
+from scripts.game_structure.game_essentials import game
 from enum import Enum  # pylint: disable=no-name-in-module
 from scripts.cat.names import names, Name
 from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked
