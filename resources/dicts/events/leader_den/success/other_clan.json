@@ -1156,7 +1156,7 @@
   },
   {
     "interaction_type": "provoke",
-    "event_text": "Every cat always told m_c {PRONOUN/m_c/subject} would get in trouble for {PRONOUN/m_c/poss} smart mouth... but no cat could've predicted how useful it would be in this situation. By the end of the Gathering, o_c_n's leader seems ready to claw {PRONOUN/m_c/poss} face off.",
+    "event_text": "Every cat always told m_c {PRONOUN/m_c/subject} would get in trouble for {PRONOUN/m_c/poss} smart mouth... But no cat could've predicted how useful it would be in this situation. By the end of the Gathering, o_c_n's leader seems ready to claw {PRONOUN/m_c/poss} face off.",
     "rel_change": -10,
     "m_c": {
       "skill": [

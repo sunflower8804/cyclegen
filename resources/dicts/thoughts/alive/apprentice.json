@@ -271,7 +271,7 @@
             "Hopes r_c will be an apprentice with {PRONOUN/m_c/object}",
             "Is letting r_c see the apprentices' den",
             "Takes time to play with r_c in between training sessions",
-            "Tries to teach r_c something new... but {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} not listening"
+            "Tries to teach r_c something new... But {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} not listening"
         ],
         "random_status_constraint": [
             "kitten"

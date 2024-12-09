@@ -139,12 +139,12 @@ class NewLifeScreen(Screens):
         # Buttons that appear on every screen.
         self.menu_warning = pygame_gui.elements.UITextBox(
             '',
-            ui_ui_scale(pygame.Rect((50, 50), (1200, -1))),
+            ui_scale(pygame.Rect((50, 50), (1200, -1))),
             object_id=get_text_box_theme("#text_box_22_horizleft"),
             manager=MANAGER,
         )
         self.main_menu = UIImageButton(
-            ui_ui_scale(pygame.Rect((50, 100), (306, 60))),
+            ui_scale(pygame.Rect((50, 100), (306, 60))),
             "",
             object_id="#main_menu_button",
             manager=MANAGER,
@@ -606,13 +606,13 @@ class NewLifeScreen(Screens):
             
     def clan_name_header(self):
         self.elements["name_backdrop"] = pygame_gui.elements.UIImage(
-            ui_ui_scale(pygame.Rect((584, 200), (432, 100))),
+            ui_scale(pygame.Rect((584, 200), (432, 100))),
             NewLifeScreen.clan_frame_img,
             manager=MANAGER,
         )
         self.elements["clan_name"] = pygame_gui.elements.UITextBox(
             game.clan.name + "Clan",
-            ui_ui_scale(pygame.Rect((585, 212), (432, 100))),
+            ui_scale(pygame.Rect((585, 212), (432, 100))),
             object_id="#text_box_30_horizcenter_light",
             manager=MANAGER,
         )
@@ -636,21 +636,21 @@ class NewLifeScreen(Screens):
         x_pos = 310
         y_pos = 470
         self.elements["roll1"] = UIImageButton(
-            ui_ui_scale(pygame.Rect((x_pos, y_pos), (68, 68))),
+            ui_scale(pygame.Rect((x_pos, y_pos), (68, 68))),
             "",
             object_id="#random_dice_button",
             manager=MANAGER,
         )
         y_pos += 80
         self.elements["roll2"] = UIImageButton(
-            ui_ui_scale(pygame.Rect((x_pos, y_pos), (68, 68))),
+            ui_scale(pygame.Rect((x_pos, y_pos), (68, 68))),
             "",
             object_id="#random_dice_button",
             manager=MANAGER,
         )
         y_pos += 80
         self.elements["roll3"] = UIImageButton(
-            ui_ui_scale(pygame.Rect((x_pos, y_pos), (68, 68))),
+            ui_scale(pygame.Rect((x_pos, y_pos), (68, 68))),
             "",
             object_id="#random_dice_button",
             manager=MANAGER,
@@ -660,14 +660,14 @@ class NewLifeScreen(Screens):
         if self.rolls_left == -1:
             _tmp += 5
         self.elements["dice"] = UIImageButton(
-            ui_ui_scale(pygame.Rect((_tmp, 870), (68, 68))),
+            ui_scale(pygame.Rect((_tmp, 870), (68, 68))),
             "",
             object_id="#random_dice_button",
             manager=MANAGER,
         )
         del _tmp
         self.elements["reroll_count"] = pygame_gui.elements.UILabel(
-            ui_ui_scale(pygame.Rect((200, 880), (100, 50))),
+            ui_scale(pygame.Rect((200, 880), (100, 50))),
             str(self.rolls_left),
             object_id=get_text_box_theme(""),
             manager=MANAGER,

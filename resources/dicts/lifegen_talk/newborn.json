@@ -239,7 +239,7 @@
             "you_deaf"
         ],
         [
-            "[You notice a newborn kitten... t_c? t_c sits in the corner.]",
+            "[You notice a newborn kitten... T_c? t_c sits in the corner.]",
             "...",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} look distressed so you decide to leave {PRONOUN/t_c/object} there.]"
         ]
@@ -826,7 +826,7 @@
             "you_deaf"
         ],
         [
-            "[t_c ... t_c ... t_c ...]",
+            "[t_c ... T_c ... T_c ...]",
             "[You run your beautiful new kit's perfect name over and over through your mind, certain you'll never ever forget it.]"
         ]
     ],

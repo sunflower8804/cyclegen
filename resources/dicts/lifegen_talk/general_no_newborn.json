@@ -1632,7 +1632,7 @@
         [
             "[Somehow, you've found yourself strolling across the border into a shadowed forest. Before you can fully cross the threshold between it and your own world, you catch sight of t_c, {PRONOUN/t_c/poss} eyes wide and pupils dilated.]",
             "Get out.",
-            "[{PRONOUN/t_c/poss/CAP} tone isn't aggressive. In fact, {PRONOUN/t_c/subject} almost {VERB/t_c/sound/sounds} like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s}... begging you?]",
+            "[{PRONOUN/t_c/poss/CAP} tone isn't aggressive. In fact, {PRONOUN/t_c/subject} almost {VERB/t_c/sound/sounds} like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s}... Begging you?]",
             "Get out! I'd do anything, anything to be like you - out there, able to watch over my loved ones without them fearing me.",
             "Look at me! Look at my paws, at my pelt. Look around you, oh for -- tsh! This isn't a place that you get to explore all carefree, not when you're free to go anywhere else.",
             "Please, just go. Before you get dragged in with me."
@@ -2209,7 +2209,7 @@
             "[t_c snuggles up next to you with a piece of prey in {PRONOUN/t_c/poss} mouth, dropping it between you two. It's fairly large, just enough to feed two cats.]",
             "Here, I brought enough to share, y_c! Can't get enough good ol' bonding time these days. Heh, but it can't be worse than whatever's going on with o_cClan's leader, right?",
             "...Man.",
-            "[t_c sighs, taking a bite of the prey. {PRONOUN/t_c/subject} {VERB/t_c/let/lets} it sit in {PRONOUN/t_c/poss} mouth for a moment as {PRONOUN/t_c/subject} {VERB/t_c/chew/chews} it, seeming to have trouble with the giant piece {PRONOUN/t_c/subject} took.",
+            "[t_c sighs, taking a bite of the prey. {PRONOUN/t_c/subject/CAP} {VERB/t_c/let/lets} it sit in {PRONOUN/t_c/poss} mouth for a moment as {PRONOUN/t_c/subject} {VERB/t_c/chew/chews} it, seeming to have trouble with the giant piece {PRONOUN/t_c/subject} took.",
             "Then, {PRONOUN/t_c/poss} eyes widen massively, and for a moment you're worried {PRONOUN/t_c/subject} might be choking...]",
             "[...nope. t_c is just about to talk with {PRONOUN/t_c/poss} mouth full.]",
             "Oh! Mmm-mm, y_c! You woulfn't guess what I saw ta' other day!",
@@ -2508,7 +2508,7 @@
         [
             "[You notice t_c across camp, talking to one of those scary Dark Forest cats. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} upset, so you run up to make sure that the spirit isn't being too mean.]",
             "Aah! y_c, what do you need? You shouldn't be this close to the edge of camp.",
-            "... What are you talking about? There's... there's no other cat...",
+            "... What are you talking about? There's... There's no other cat...",
             "Um...",
             "[{PRONOUN/t_c/poss/CAP} voice drops to a whisper.]",
             "You see {PRONOUN/rdf_c/object}, too?",
@@ -2601,7 +2601,7 @@
         [
             "Hello, y_c. I, uh, I got you something.",
             "[t_c turns around and pulls out a small, shiny snail shell from where it was hidden behind {PRONOUN/t_c/object}.]",
-            "r_d says you told {PRONOUN/r_d/object} about the gift you got me before. I guess I should've just... taken it, even if it wasn't necessarily practical.",
+            "r_d says you told {PRONOUN/r_d/object} about the gift you got me before. I guess I should've just... Taken it, even if it wasn't necessarily practical.",
             "So, I got you one too. It can't be used for anything, but it looks pretty, and you can keep it by your nest, or something.",
             "You're a good kit. Sorry for not doing very well at telling you that."
         ]
@@ -3566,7 +3566,7 @@
         ],
         [
             "[You frolic around camp with glee, but halt when you see a shadow near the nursery.]",
-            "[t_c again? {PRONOUN/t_c/subject/CAP} seemed nice enough before... but {PRONOUN/t_c/subject} still {VERB/t_c/seem/seems} sad now. You decide to listen to {PRONOUN/t_c/poss} ballad.]",
+            "[t_c again? {PRONOUN/t_c/subject/CAP} seemed nice enough before... But {PRONOUN/t_c/subject} still {VERB/t_c/seem/seems} sad now. You decide to listen to {PRONOUN/t_c/poss} ballad.]",
             "I loved you, I loved you, my kittens long gone. I loved you, I loved you, even when wrong.",
             "So I joined that guild of shadow, the forest dark, not shallow",
             "For I knew our Clan could not win, I could not see you taken.",

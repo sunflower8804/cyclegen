@@ -2191,7 +2191,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "Cats don't normally come with wings, much less bat ones, and the patrol flinches back from the foreign stranger. But unnatural or not, the stranger's still stuck, and with a deep breath, p_l orders them forward to free a fellow cat... ish... thing.",
+                "text": "Cats don't normally come with wings, much less bat ones, and the patrol flinches back from the foreign stranger. But unnatural or not, the stranger's still stuck, and with a deep breath, p_l orders them forward to free a fellow cat... ish... Thing.",
                 "exp": 15,
                 "weight": 20,
                 "outsider_rep": 1
@@ -2252,7 +2252,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "The patrol cautiously heads in the direction of the strange, motionless eyes. The cats see an eerie face with glowing eyes in the distance, baring its fangs and smelling of smoke. p_l creeps up to the face to find that it belongs to a pumpkin! Spooked, r_c suggests heading back to camp to report this bizarre finding to the Clan. p_l agrees, not wanting to be near this... thing... any longer.",
+                "text": "The patrol cautiously heads in the direction of the strange, motionless eyes. The cats see an eerie face with glowing eyes in the distance, baring its fangs and smelling of smoke. p_l creeps up to the face to find that it belongs to a pumpkin! Spooked, r_c suggests heading back to camp to report this bizarre finding to the Clan. p_l agrees, not wanting to be near this... Thing... any longer.",
                 "exp": 10,
                 "weight": 20
             },
@@ -2427,7 +2427,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The patrol decides to take no chances and sets up an ambush around the Twoleg. They wait... and wait... but the Twoleg makes no movements to attack. Finally, r_c notices that the Twoleg isn't even a Twoleg at all! They wasted all of that time for nothing.",
+                "text": "The patrol decides to take no chances and sets up an ambush around the Twoleg. They wait... and wait... But the Twoleg makes no movements to attack. Finally, r_c notices that the Twoleg isn't even a Twoleg at all! They wasted all of that time for nothing.",
                 "exp": 0,
                 "weight": 10
             },
@@ -4408,7 +4408,7 @@
                 "outsider_rep": -1
             },
             {
-                "text": "p_l wasn't going to let any cat get the upper paw on {PRONOUN/p_l/object}. Without a second thought, {PRONOUN/p_l/subject} {VERB/p_l/throw/throws} {PRONOUN/p_l/self} at an unsuspecting kittypet, ignoring the scent of sickness on {PRONOUN/n_c:0/object}. Yowls from another kittypet begging p_l to stop makes {PRONOUN/p_l/object} take a step back... but <i>it's too late</i>. The kittypet is dead, p_l has blood on {PRONOUN/p_l/poss} paws and the glare of the other kittypet tells {PRONOUN/p_l/object} that {PRONOUN/p_l/subject} had just made a new enemy.",
+                "text": "p_l wasn't going to let any cat get the upper paw on {PRONOUN/p_l/object}. Without a second thought, {PRONOUN/p_l/subject} {VERB/p_l/throw/throws} {PRONOUN/p_l/self} at an unsuspecting kittypet, ignoring the scent of sickness on {PRONOUN/n_c:0/object}. Yowls from another kittypet begging p_l to stop makes {PRONOUN/p_l/object} take a step back... But <i>it's too late</i>. The kittypet is dead, p_l has blood on {PRONOUN/p_l/poss} paws and the glare of the other kittypet tells {PRONOUN/p_l/object} that {PRONOUN/p_l/subject} had just made a new enemy.",
                 "exp": 15,
                 "weight": 15,
                 "art": "gen_gen_newcat_hostile",

@@ -1804,7 +1804,7 @@
             "Has been tough on {PRONOUN/m_c/self} recently",
             "Is surveying the camp scornfully from a higher vantage point",
             "Is grooming {PRONOUN/m_c/self}, making sure every whisker is in place",
-            "Is busy chastising Clanmates... but no cat is sure what for",
+            "Is busy chastising Clanmates... But no cat is sure what for",
             "Feels that a new rule should be added to the Warrior Code",
             "Goes around camp, policing everyone's posture",
             "Makes sure everyone only takes one piece of fresh-kill and no more",
@@ -1979,7 +1979,7 @@
             "Seems to be plotting something",
             "Is definitely plotting something",
             "Is glaring daggers across the camp clearing",
-            "Swears that {PRONOUN/m_c/subject} will get {PRONOUN/m_c/poss} revenge... but for what?",
+            "Swears that {PRONOUN/m_c/subject} will get {PRONOUN/m_c/poss} revenge... But for what?",
             "Is angrily clawing up the ground, lost in deep thought",
             "Is shredding the grass underpaw",
             "Hisses at a certain cat when they walk by",
@@ -3909,7 +3909,7 @@
     {
         "id": "strict_apprentices",
         "thoughts": [
-            "Is busy chastising fellow apprentices... but no one is sure what for",
+            "Is busy chastising fellow apprentices... But no one is sure what for",
             "Is participating in a rather rigorous training session"
         ],
         "main_status_constraint": [

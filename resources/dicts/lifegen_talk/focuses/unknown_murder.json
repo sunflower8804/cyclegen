@@ -990,10 +990,10 @@
         ],
         [
             "y_c! y_c, do you have any enemies?",
-            "I'm just... being cautious. I didn't think fc_c_sweet had any enemies, but...",
+            "I'm just... Being cautious. I didn't think fc_c_sweet had any enemies, but...",
             "[You assure t_c that you would never let anyone kill you, and {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} have to worry.]",
             "Okay. I'll take your word for it, y_c.",
-            "Just... be careful, okay?"
+            "Just... Be careful, okay?"
         ]
     ],
     "unknown_murder_J5": [
@@ -1098,7 +1098,7 @@
         [
             "[After hearing about the mystery death in the Clan, t_c has refused to leave the nursery.]",
             "No! No! I don't care! If I go out there, the monster's gonna get me like fc_c!",
-            "[You consider telling {PRONOUN/t_c/object} that fc_c was killed by a cat, not a monster, but... that would probably make it worse.]"
+            "[You consider telling {PRONOUN/t_c/object} that fc_c was killed by a cat, not a monster, but... That would probably make it worse.]"
         ]
     ],
     "unknown_murder_J10": [
@@ -1285,7 +1285,7 @@
             "they_blind"
         ],
         [
-            "y_c, I can't understand why anyone would hate plove_fc_c enough to... to...",
+            "y_c, I can't understand why anyone would hate plove_fc_c enough to... To...",
             "[t_c buries {PRONOUN/t_c/poss} head into {PRONOUN/t_c/poss} paws.]",
             "It's awful! I keep thinking about it and nothing makes sense!"
         ]
@@ -1420,7 +1420,7 @@
         ],
         [
             "[As you approach t_c, you hear {PRONOUN/t_c/object} mumbling to {PRONOUN/t_c/self}.]",
-            "rsh_c? No, no, {PRONOUN/rsh_c/subject} wouldn't dare do it so soon. What about dislike_r_c1_unlawful... gah {PRONOUN/dislike_r_c1_unlawful/subject} may be a handful, but I trust {PRONOUN/dislike_r_c1_unlawful/object} more than r_c2_brooding... but r_c2_brooding wouldn't do something like this either...",
+            "rsh_c? No, no, {PRONOUN/rsh_c/subject} wouldn't dare do it so soon. What about dislike_r_c1_unlawful... gah {PRONOUN/dislike_r_c1_unlawful/subject} may be a handful, but I trust {PRONOUN/dislike_r_c1_unlawful/object} more than r_c2_brooding... But r_c2_brooding wouldn't do something like this either...",
             "[You decide to leave t_c alone as {PRONOUN/t_c/poss} mumbles turn frustrated.]"
         ]
     ],
