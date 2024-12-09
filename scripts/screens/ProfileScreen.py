@@ -939,7 +939,7 @@ class ProfileScreen(Screens):
             object_id="@buttonstyles_icon",
         )
         
-        self.exile_return_button = UIImageButton(ui_scale(pygame.Rect((383, 119), (34, 34))), "Return Home",
+        self.exile_return_button = UIImageButton(ui_scale(pygame.Rect((383, 119), (34, 34))), "",
                                                 object_id="#exile_return_button",  tool_tip_text='Ask your Clan for your nest back.', manager=MANAGER)
         
         self.relations_tab_button = UISurfaceImageButton(
@@ -1419,7 +1419,7 @@ class ProfileScreen(Screens):
             elif "attended half-moon" in game.switches and game.switches["attended half-moon"]:
                 self.profile_elements["halfmoon"].disable()
         
-        if self.the_cat.ID == game.clan.your_cat.ID and not game.clan.your_cat.dead and not game.clan.your_cat.outside:
+        if self.the_cat.ID == game.clan.your_cat.ID and not game.clan.your_cat.dead:
             if self.open_tab == "faith":
                 self.close_current_tab()
             self.placeholder_tab_3.kill()

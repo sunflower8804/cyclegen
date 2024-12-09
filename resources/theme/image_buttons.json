@@ -77,23 +77,6 @@
             }
         }
     },
-    "#unknown_residence_button": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/unknown.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/unknown_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/unknown_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/unknown_unavailable.png"
-            }
-        }
-    },
     "#mediate_button": {
         "prototype": "#image_button",
         "images": {
@@ -2770,23 +2753,6 @@
             }
         }
     },
-    "#outside_clan_button": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/outside_clan.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/outside_clan_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/outside_clan_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/outside_clan_unavailable.png"
-            }
-        }
-    },
     "#arrow_right_button": {
         "prototype": "#image_button",
         "images": {
@@ -5336,23 +5302,6 @@
                 },
                 "disabled_image": {
                     "path": "resources/images/buttons/usual_focus_unavailable.png"
-                }
-            }
-        },
-        "#change_focus_button": {
-            "prototype": "#image_button",
-            "images": {
-                "normal_image": {
-                    "path": "resources/images/buttons/change_focus.png"
-                },
-                "hovered_image": {
-                    "path": "resources/images/buttons/change_focus_hover.png"
-                },
-                "selected_image": {
-                    "path": "resources/images/buttons/change_focus.png"
-                },
-                "disabled_image": {
-                    "path": "resources/images/buttons/change_focus_unavailable.png"
                 }
             }
         },

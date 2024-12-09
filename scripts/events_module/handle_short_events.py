@@ -547,12 +547,17 @@ class HandleShortEvents:
                 if self.chosen_event.m_c["dies"]:
                     # find history
                     if self.main_cat.status == "leader":
-                        death_history = history_text_adjust(
-                            block.get("lead_death"),
-                            self.other_clan_name,
-                            game.clan,
-                            self.random_cat,
-                        )
+                        try:
+                            death_history = history_text_adjust(
+                                block.get("lead_death"),
+                                self.other_clan_name,
+                                game.clan,
+                                self.random_cat,
+                            )
+                        except:
+                            print("ATTN LIFEGEN TESTERS: jay is looking for this error!!! please show him the event below!! this is not a drill!!!!!")
+                            # a got a crash here bc block.get("lead_death") turned up None and i cant recreate......
+                            print(block)
                     else:
                         death_history = history_text_adjust(
                             block.get("reg_death"),

@@ -3696,37 +3696,20 @@
             }
         }
     },
-    "#outside_clan_button": {
+    "#random_dice_button": {
         "prototype": "#image_button",
         "images": {
             "normal_image": {
-                "path": "resources/images/buttons/outside_clan.png"
+                "path": "resources/images/buttons/random_dice.png"
             },
             "hovered_image": {
-                "path": "resources/images/buttons/outside_clan_hover.png"
+                "path": "resources/images/buttons/random_dice_hover.png"
             },
             "selected_image": {
-                "path": "resources/images/buttons/outside_clan_hover.png"
+                "path": "resources/images/buttons/random_dice_hover.png"
             },
             "disabled_image": {
-                "path": "resources/images/buttons/outside_clan_unavailable.png"
-            }
-        }
-    },
-    "#change_focus_button": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/change_focus.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/change_focus_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/change_focus.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/change_focus_unavailable.png"
+                "path": "resources/images/buttons/random_dice_unavailable.png"
             }
         }
     }
