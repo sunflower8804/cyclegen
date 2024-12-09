@@ -29,7 +29,8 @@
 			"m_c spends some time with r_c and they both end up understanding each other a little better.",
 			"m_c is rethinking how {PRONOUN/m_c/subject} {verb/m_c/feel/feels} about r_c and gives {PRONOUN/r_c/object} another chance.",
 			"m_c didn't see r_c at all today and admittedly was a little disappointed.",
-			"m_c and r_c apologized over something petty they both did to each other."
+			"m_c and r_c apologized over something petty they both did to each other.",
+			"m_c realizes {PRONOUN/m_c/subject} {VERB/m_c/were/was} being childish and apologizes to r_c for {PRONOUN/m_c/poss} behavior."
 		]
 	},
 	{
@@ -102,6 +103,27 @@
 			"warrior",
 			"mediator apprentice",
 			"mediator",
+			"deputy",
+			"leader"
+		]
+	},
+	{
+		"id": "lifegen_queen_dis_h",
+		"intensity": "low",
+		"interactions": [
+			"r_c helps m_c clean up a mess in the nursery.",
+			"r_c distracts the kittens away from m_c, and m_c is thankful as {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} able to take a breather.",
+			"m_c and r_c begrudgingly agree on an issue.",
+			"m_c decides to be nice and add leftover moss to r_c's nest.",
+			"r_c lets m_c choose {PRONOUN/m_c/poss} choice of prey from the day's patrol."
+		],
+		"main_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		],
+		"random_status_constraint": [
+			"apprentice",
+			"warrior",
 			"deputy",
 			"leader"
 		]

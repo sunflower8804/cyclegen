@@ -4,7 +4,8 @@
 		"cat_amount": 4,
 		"intensity": "low",
 		"interactions": [
-			"m_c is gossiping with r_c1 about r_c2 and r_c3"
+			"m_c is gossiping with r_c1 about r_c2 and r_c3.",
+			"m_c and r_c1 were partaking in an already heated conversation, and r_c2 and r_c3 presence does nothing to smother the heat."
 		],
 		"relationship_constraint": {
 			"m_c_to_r_c2": [
@@ -21,9 +22,6 @@
 			]
 		},
 		"specific_reaction": {
-			"m_c_to_r_c1": {
-				"comfortable": "increase"
-			},
 			"m_c_to_r_c2": {
 				"platonic": "decrease",
 				"dislike": "increase"

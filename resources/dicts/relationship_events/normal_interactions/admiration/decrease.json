@@ -5,7 +5,9 @@
 		"interactions": [
 			"m_c saw r_c being rude.",
 			"m_c heard r_c say something mean.",
-			"m_c is annoyed by r_c's negative comments."
+			"m_c is annoyed by r_c's negative comments.",
+			"r_c says something rude about a clanmate, and m_c doesn't appreciate the negativity.",
+			"m_c and r_c get into an argument about something miniscule."
 		]
 	},
 	{
@@ -65,7 +67,7 @@
 			"medicine cat",
 			"deputy",
 			"leader",
-			"queen apprentice",
+			"queen's apprentice",
 			"queen"
 		],
 		"random_status_constraint": [
@@ -78,7 +80,7 @@
 			"medicine cat",
 			"deputy",
 			"leader",
-			"queen apprentice",
+			"queen's apprentice",
 			"queen"
 		]
 	},
@@ -130,7 +132,7 @@
 			"medicine cat",
 			"deputy",
 			"leader",
-			"queen apprentice"
+			"queen's apprentice"
 		]
 	},
 	{
@@ -138,7 +140,8 @@
 		"intensity": "high",
 		"interactions": [
 			"m_c heard an ugly rumor about r_c.",
-			"m_c overheard r_c spreading a hurtful rumor."
+			"m_c overheard r_c spreading a hurtful rumor.",
+			"r_c says something hurtful to m_c."
 		]
 	},
 	{
@@ -170,17 +173,56 @@
 	},
 	{
 		"id": "H1_admirdecrease_med",
-		"intensity": "med",
 		"interactions": [
 			"m_c and r_c have a disagreement with how they should handle a situation with the nursery.",
 			"m_c doesn't appreciate r_c telling {PRONOUN/m_c/object} what to do.",
-			"m_c won't admit {PRONOUN/m_c/subject} {VERB/m_c/were/was} wrong when {PRONOUN/m_c/subject} {VERB/m_c/give/gave} r_c the wrong instructions."
+			"m_c won't admit {PRONOUN/m_c/subject} {VERB/m_c/were/was} wrong when {PRONOUN/m_c/subject} {VERB/m_c/give/gave} r_c the wrong instructions.",
+			"r_c and m_c get into an argument about how the nursery should be organized.",
+			"r_c feels like m_c is being a little too harsh with them these past few moons."
 		],
 		"main_status_constraint": [
-			"queen apprentice"
+			"queen",
+			"queen's apprentice"
 		],
 		"random_status_constraint": [
+			"queen's apprentice",
 			"queen"
+		],
+		"reaction_random_cat": {
+			"admiration": "decrease"
+		}
+	},
+	{
+		"id": "lifegen_mediator_low",
+		"intensity": "low",
+		"interactions": [
+			"m_c thinks r_c is trying too hard when solving measly problems.",
+			"m_c watches with a frown as r_c fails to sooth a simple argument.",
+			"m_c doesn't appreciate how r_c whines about other cats problems.",
+			"m_c doesn't think r_c is being professional while mediating.",
+			"m_c believes r_c is too quick to assume things."
+		],
+		"random_status_constraint": [
+			"mediator apprentice",
+			"mediator"
+		]
+	},
+	{
+		"id": "lifegen_mediator_low",
+		"intensity": "low",
+		"interactions": [
+			"m_c thinks r_c intervenes with nursery arguments a little too often for {PRONOUN/m_c/poss} tastes.",
+			"r_c grinds {PRONOUN/r_c/poss} teeth as m_c refuses to take {PRONOUN/r_c/poss} advice.",
+			"m_c thinks r_c looks at the smaller issue too much.",
+			"m_c doesn't think it's necessary for r_c to mediate over simple issues."
+		],
+		"main_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		],
+		"random_status_constraint": [
+			"mediator apprentice",
+			"mediator"
 		],
 		"reaction_random_cat": {
 			"admiration": "decrease"

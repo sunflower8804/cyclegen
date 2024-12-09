@@ -188,5 +188,38 @@
 				"trust": "decrease"
 			}
 		}
+	},
+	{
+		"id": "group_3_lifegen_queen_H1",
+		"cat_amount": 3,
+		"intensity": "low",
+		"interactions": [
+			"m_c and r_c1's conversation is cut short as m_c notices r_c2 is trying to eat an unknown plant.",
+			"r_c2 tries to eavesdrop on m_c and r_c1's conversation."
+		],
+		"status_constraint": {
+			"m_c": [
+				"queen"
+			],
+			"r_c1": [
+				"apprentice",
+				"mediator apprentice",
+				"medicine cat apprentice",
+				"warrior",
+				"deputy",
+				"leader",
+				"medicine cat",
+				"mediator"
+			],
+			"r_c2": [
+				"kitten"
+			]
+		},
+		"specific_reaction": {
+			"m_c_to_r_c2": {
+				"trust": "decrease",
+				"dislike": "increase"
+			}
+		}
 	}
 ]

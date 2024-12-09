@@ -4,14 +4,21 @@
 		"intensity": "low",
 		"interactions": [
 			"m_c thinks r_c is very helpful!",
-			"m_c offers to help r_c."
+			"m_c offers to help r_c.",
+			"r_c does something embarrassing in the middle of camp today - it makes m_c feel slightly better.",
+			"m_c feels triumph as r_c gets assigned a task no other cat wanted.",
+			"m_c feels no envy for r_c when {PRONOUN/m_c/subject} {VERB/m_c/hear/hears} a rather nasty rumor.",
+			"m_c is surprised as r_c proves to be helpful this moon."
 		]
 	},
 	{
 		"id": "jel_de_med1",
 		"interactions": [
 			"m_c surprises r_c with something nice.",
-			"m_c was given a gift but gave it to r_c knowing {PRONOUN/r_c/subject} would like it more."
+			"m_c was given a gift but gave it to r_c knowing {PRONOUN/r_c/subject} would like it more.",
+			"m_c chuckles as {PRONOUN/m_c/subject} {VERB/m_c/witness/witnesses} r_c having a rough day.",
+			"m_c sees r_c fail this moon, and {PRONOUN/m_c/subject} {VERB/m_c/come/comes} to the realization they are more alike than m_c thought.",
+			"m_c reluctantly tries to stop comparing {PRONOUN/m_c/self} to r_c."
 		]
 	},
 	{
@@ -108,5 +115,15 @@
 		"reaction_random_cat": {
 			"jealousy": "decrease"
 		}
+	},
+	{
+		"id": "lifegen_queen_jelmed_h1",
+		"interactions": [
+			"m_c witnesses a kitten getting sick on r_c's pelt, and feels no envy for {PRONOUN/r_c/poss} situation."
+		],
+		"random_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		]
 	}
 ]

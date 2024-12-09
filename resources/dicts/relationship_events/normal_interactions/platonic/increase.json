@@ -713,5 +713,18 @@
 			"cold",
 			"grumpy"
 		]
+	},
+	{
+		"id": "plat_increase_queen",
+		"interactions": [
+			"m_c thinks r_c is just too cute too ignore.",
+			"m_c feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} able to loosen up around r_c.",
+			"m_c is pleasantly surprised when r_c offers to share tongues with {PRONOUN/r_c/object}.",
+			"m_c feels comfortable enough around r_c to share embarrassing stories with {PRONOUN/r_c/object}."
+		],
+		"main_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		]
 	}
 ]
