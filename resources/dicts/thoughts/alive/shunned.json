@@ -120,11 +120,11 @@
         "id": "shunned_meddie_sc",
         "thoughts": [
             "Wonders if StarClan will ever speak to {PRONOUN/m_c/object} again",
-            "Tells {PRONOUN/m_c/self} that {PRONOUN/m_c/subject} were just trying to help the Clan",
+            "Tells {PRONOUN/m_c/self} that {PRONOUN/m_c/subject} {VERB/m_c/were/was} just trying to help the Clan",
             "Questions if {PRONOUN/m_c/poss} nightmares are actually visions",
             "Hadn't realized how much {PRONOUN/m_c/subject} relied on StarClan until they went silent",
-            "Feels as if {PRONOUN/m_c/subject} have no where to go",
-            "Shivers in the uneasy silence of being alone",
+            "Feels as if {PRONOUN/m_c/subject} {VERB/m_c/have/has} nowhere to go",  
+            "Shivers in the uneasy silence of being alone", 
             "Can't help but wonder if {PRONOUN/m_c/subject}'ll still be allowed to be a medicine cat",
             "Thinks that, maybe, another Clan would take {PRONOUN/m_c/object} in",
             "Wishes {PRONOUN/m_c/subject} could apologize to {PRONOUN/m_c/poss} ancestors"
@@ -213,10 +213,10 @@
         "id": "sneaky_shunned",
         "thoughts": [
             "Manages to steal a piece of fresh prey from an incoming patrol",
-            "Knows they could leave without anycat noticing until the next morning",
-            "Is acting suspicious",
-            "Wasn't caught sneaking out of camp!",
-            "Is watching {PRONOUN/m_c/poss} Clan from the shadows",
+            "Knows {PRONOUN/m_c/subject} could leave without anycat noticing until the next morning",
+            "Is acting suspicious", 
+            "Wasn't caught sneaking out of camp!", 
+            "Is watching {PRONOUN/m_c/poss} Clan from the shadows", 
             "Accidentally scared r_c by just walking past",
             "Feels invisible to {PRONOUN/m_c/poss} Clanmates"
         ],

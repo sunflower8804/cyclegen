@@ -38,7 +38,7 @@
             "Any"
         ],
         [
-            "[t_c sits alone at the edge of camp, grinning from ear to ear with a dreamy look in their eyes.]",
+            "[t_c sits alone at the edge of camp, grinning from ear to ear with a dreamy look in {PRONOUN/t_c/poss} eyes.]",
             "[You'd know that look anywhere, and if you had to guess, you could probably predict exactly who {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} thinking about.]",
             "[Just then, their_crush peeks in through the camp entrance, and t_c races over to greet {PRONOUN/their_crush/object}, apparently overjoyed.]",
             "[It seems your prediction was correct!]"
@@ -125,7 +125,7 @@
             "Any"
         ],
         [
-            "You talk in your sleep, y'know, y_c? It woke me up last night",
+            "You talk in your sleep, y'know, y_c? It woke me up last night.",
             "It sounded like you were mumbling about your_crush ...",
             "... Something you wanna announce to the Clan, y_c? *snrk*"
         ]
