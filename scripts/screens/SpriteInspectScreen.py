@@ -122,29 +122,13 @@ class SpriteInspectScreen(Screens):
                 self.make_cat_image()
                 self.update_checkboxes()
             elif event.ui_element == self.cat_elements["favourite_button"]:
-                self.cat_elements["favourite_button"].hide()
-                self.cat_elements["favourite_button_2"].show()
-                self.cat_elements["favourite_button_3"].hide()
-                self.cat_elements["not_favourite_button"].hide()
-                self.the_cat.favourite = 2
-            elif event.ui_element == self.cat_elements["favourite_button_2"]:
-                self.cat_elements["favourite_button"].hide()
-                self.cat_elements["favourite_button_2"].hide()
-                self.cat_elements["favourite_button_3"].show()
-                self.cat_elements["not_favourite_button"].hide()
-                self.the_cat.favourite = 3
-            elif event.ui_element == self.cat_elements["favourite_button_3"]:
-                self.cat_elements["favourite_button"].hide()
-                self.cat_elements["favourite_button_2"].hide()
-                self.cat_elements["favourite_button_3"].hide()
-                self.cat_elements["not_favourite_button"].show()
-                self.the_cat.favourite = 0
-            elif event.ui_element == self.cat_elements["not_favourite_button"]:
-                self.the_cat.favourite = 1
-                self.cat_elements["favourite_button"].show()
-                self.cat_elements["favourite_button_2"].hide()
-                self.cat_elements["favourite_button_3"].hide()
-                self.cat_elements["not_favourite_button"].hide()
+                self.the_cat.favourite = not self.the_cat.favourite
+                self.cat_elements["favourite_button"].change_object_id(
+                    "#fav_star" if self.the_cat.favourite else "#not_fav_star"
+                )
+                self.cat_elements["favourite_button"].set_tooltip(
+                    "Remove favorite" if self.the_cat.favourite else "Mark as favorite"
+                )
 
         return super().handle_event(event)
 
@@ -297,86 +281,20 @@ class SpriteInspectScreen(Screens):
         )
         self.cat_elements["cat_name"].set_relative_position(ui_scale_offset((0, 60)))
 
-        self.cat_elements["cat_name"].kill()
-
-        # don't like having to do this, but for some reason the usual scaling is not working here
-        if game.settings["fullscreen"]:
-            self.cat_elements["cat_name"] = pygame_gui.elements.UITextBox(
-                cat_name,
-                scale(
-                    pygame.Rect(
-                        (800 - name_text_size.width, 120),
-                        (name_text_size.width * 2, 80),
-                    )
-                ),
-                object_id=get_text_box_theme("#text_box_40_horizcenter"),
-                manager=MANAGER,
-            )
-        else:
-            self.cat_elements["cat_name"] = pygame_gui.elements.UITextBox(
-                cat_name,
-                scale(pygame.Rect((800 - name_text_size.width, 120), (-1, 80))),
-                object_id=get_text_box_theme("#text_box_40_horizcenter"),
-                manager=MANAGER,
-            )
-
-        # Fullscreen
-        if game.settings["fullscreen"]:
-            x_pos = 745 - name_text_size.width // 2
-        else:
-            x_pos = 740 - name_text_size.width
-        self.cat_elements["favourite_button"] = UIImageButton(scale(pygame.Rect
-                                                                ((x_pos, 127), (56, 56))),
-                                                              "",
-                                                              object_id="#fav_star",
-                                                              manager=MANAGER,
-                                                              tool_tip_text='Move to favourite group 2',
-                                                              starting_height=2)
-        
-        self.cat_elements["favourite_button_2"] = UIImageButton(scale(pygame.Rect
-                                                                        ((x_pos, 127), (56, 56))),
-                                                                  "",
-                                                                  object_id="#fav_star_2",
-                                                                  manager=MANAGER,
-                                                                  tool_tip_text='Move to favourite group 3',
-                                                                  starting_height=2)
-        self.cat_elements["favourite_button_3"] = UIImageButton(scale(pygame.Rect
-                                                                        ((x_pos, 127), (56, 56))),
-                                                                  "",
-                                                                  object_id="#fav_star_3",
-                                                                  manager=MANAGER,
-                                                                  tool_tip_text='Remove favorite status',
-                                                                  starting_height=2)
-
-        self.cat_elements["not_favourite_button"] = UIImageButton(scale(pygame.Rect
-                                                                    ((x_pos, 127),
-                                                                        (56, 56))),
-                                                                 "",
-                                                                 object_id="#not_fav_star",
-                                                                 manager=MANAGER,
-                                                                 tool_tip_text='Mark as favorite',
-                                                                 starting_height=2)  
-        if self.the_cat.favourite != 0:
-            if self.the_cat.favourite == 1:
-                self.cat_elements["favourite_button"].show()
-                self.cat_elements["favourite_button_2"].hide()
-                self.cat_elements["favourite_button_3"].hide()
-                self.cat_elements["not_favourite_button"].hide()
-            elif self.the_cat.favourite == 2:
-                self.cat_elements["favourite_button"].hide()
-                self.cat_elements["favourite_button_2"].show()
-                self.cat_elements["favourite_button_3"].hide()
-                self.cat_elements["not_favourite_button"].hide()
-            elif self.the_cat.favourite == 3:
-                self.cat_elements["favourite_button"].hide()
-                self.cat_elements["favourite_button_2"].hide()
-                self.cat_elements["favourite_button_3"].show()
-                self.cat_elements["not_favourite_button"].hide()
-        else:
-            self.cat_elements["favourite_button"].hide()
-            self.cat_elements["favourite_button_2"].hide()
-            self.cat_elements["favourite_button_3"].hide()
-            self.cat_elements["not_favourite_button"].show()
+        favorite_button_rect = ui_scale(pygame.Rect((0, 0), (28, 28)))
+        favorite_button_rect.topright = ui_scale_offset((-10, 63))
+        self.cat_elements["favourite_button"] = UIImageButton(
+            favorite_button_rect,
+            "",
+            object_id="#fav_star" if self.the_cat.favourite else "#not_fav_star",
+            manager=MANAGER,
+            tool_tip_text="Remove favorite"
+            if self.the_cat.favourite
+            else "Mark as favorite",
+            starting_height=2,
+            anchors={"right": "right", "right_target": self.cat_elements["cat_name"]},
+        )
+        del favorite_button_rect
 
         # Write the checkboxes. The text is set up in switch_screens.
         self.update_checkboxes()
@@ -406,11 +324,13 @@ class SpriteInspectScreen(Screens):
         )
 
         # "Show accessories"
-        # if self.the_cat.pelt.accessories or self.the_cat.pelt.accessory:
         self.make_one_checkbox(
-            ui_scale_offset((500, 575)), "acc_shown", self.acc_shown, self.the_cat.pelt.accessories
+            ui_scale_offset((500, 575)),
+            "acc_shown",
+            self.acc_shown,
+            self.the_cat.pelt.accessory,
         )
-            
+
         # "Show as living"
         self.make_one_checkbox(
             ui_scale_offset((200, 625)),

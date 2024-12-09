@@ -466,7 +466,7 @@ class ClanSettingsScreen(Screens):
         )
         
         self.checkboxes_text["achievements"] = UIImageButton(
-            scale(pygame.Rect((670, 1290), (240, 60))),
+            ui_scale(pygame.Rect((670, 1290), (240, 60))),
             "",
             object_id="#achivements_button",
             manager=MANAGER)

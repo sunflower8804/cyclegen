@@ -163,7 +163,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "{PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} talking to another cat, when you find {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} gently inform you that {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} watching it with someone else. You slink off, embarrassed. You feel so bad that you don't even go to see it.",
+                "text": "{PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} talking to another cat, when you find {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} gently {VERB/r_c/inform/informs} you that {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} watching it with someone else. You slink off, embarrassed. You feel so bad that you don't even go to see it.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [

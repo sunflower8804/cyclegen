@@ -695,8 +695,6 @@ class History:
         :param murder_index: Index of the murder
         :param shunned: LIFEGEN: determines if the cat will be shunned from the reveal"""
 
-        print(cat.name, "reveal murder")
-
         victim = cat_class.fetch_cat(victim)
         murder_history = History.get_murders(cat)
         victim_history = History.get_murders(victim)

@@ -1186,7 +1186,7 @@ class Clan:
         else:
             med_cat = None
 
-        game.switches["error_message"] = "Error loading ---clan.json. Check clanname/biome/camp_bg/gamemode"
+        game.switches["error_message"] = "Error loading ---clan.json. Check clanname/biome/camp_bg/gamemode or leader/deputy/medcat info"
         game.clan = Clan(
             name=clan_data["clanname"],
             leader=leader,

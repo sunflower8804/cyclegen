@@ -486,7 +486,7 @@ class ChooseMateScreen(Screens):
         for _mate in display_cats:
             if game.clan.clan_settings["show fav"] and _mate.favourite != 0:
                 self.fav[str(i)] = pygame_gui.elements.UIImage(
-                    scale(pygame.Rect((pos_x, pos_y), (100, 100))),
+                    ui_scale(pygame.Rect((pos_x, pos_y), (100, 100))),
                     pygame.transform.scale(
                         pygame.image.load(
                             f"resources/images/fav_marker_{_mate.favourite}.png").convert_alpha(),
