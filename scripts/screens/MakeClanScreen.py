@@ -2072,6 +2072,7 @@ class MakeClanScreen(Screens):
             object_id="@buttonstyles_icon",
             manager=MANAGER,
             starting_height=2,
+            sound_id="dice_roll",
         )
 
         pelts = list(Pelt.sprites_names.keys())
@@ -2118,6 +2119,7 @@ class MakeClanScreen(Screens):
             object_id="@buttonstyles_icon",
             manager=MANAGER,
             starting_height=2,
+            sound_id="dice_roll",
         )
 
         self.elements["cycle_left"] = UISurfaceImageButton(
@@ -3260,9 +3262,9 @@ class MakeClanScreen(Screens):
                     elif self.current_selection == "white_patches":
                         self.white_patches = random.choice(["FULLWHITE"] + Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white + [None])
                     elif self.current_selection == "points":
-                        self.points = random.choice(Pelt.point_markings + ["None"])
+                        self.points = random.choice(Pelt.point_markings + [None])
                     elif self.current_selection == "vitiligo":
-                        self.points = random.choice(Pelt.vit + ["None"])
+                        self.vitiligo = random.choice(Pelt.vit + [None])
                     elif self.current_selection == "tortie_pattern":
                         new_pattern = random.choice(pelts)
                         if new_pattern == "SingleColour":
