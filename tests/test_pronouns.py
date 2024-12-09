@@ -360,6 +360,7 @@ def test_replacement_failure(path: str, repl_dict: dict) -> bool:
                 or re.search(r"[?!]\s+[a-z]", processed) is not None
             ):
                 # LG: again. skipping if theres a lg abbrev after a period
+                skip = False
                 for i in addon_json:
                     if i in _str:
                         skip = True
