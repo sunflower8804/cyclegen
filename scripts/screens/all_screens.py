@@ -105,7 +105,6 @@ class AllScreens:
     queen_screen = QueenScreen("queen screen")
     moonplace_screen = MoonplaceScreen("moonplace screen")
     gift_screen = GiftScreen("gift screen")
-    new_life_screen = NewLifeScreen("new life screen")
     
 
     @classmethod
@@ -156,4 +155,3 @@ class AllScreens:
         cls.queen_screen = QueenScreen("queen screen")
         cls.moonplace_screen = MoonplaceScreen("moonplace screen")
         cls.gift_screen = GiftScreen("gift screen")
-        cls.new_life_screen = NewLifeScreen("new life screen")

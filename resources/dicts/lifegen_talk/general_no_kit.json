@@ -2487,19 +2487,6 @@
             "... Thanks, y_c. You always know what to say to make me feel better."
         ]
     ],
-    "introspective_mate_5": [
-        [
-            "Any",
-            "Introspective",
-            "from_mate"
-        ],
-        [
-            "Hey, y_c. Would you like to do some cat watching with me?",
-            "Okay so I've got my sights on r_c1. Over there. {PRONOUN/r_c1/subject}{VERB/r_c1/'ve/'s} been grooming {PRONOUN/r_c1/self} all day. It's kinda relaxing to watch, in my opinion.",
-            "And r_c2, over there. Looks like {PRONOUN/r_c2/subject}{VERB/r_c2/'re/'s} making repairs to the apprentices' den. It's always getting broken, I've noticed. All of them are really rowdy.",
-            "It seem like {PRONOUN/r_c2/subject}{VERB/r_c2/'re/'s} struggling... Oh? You want to go over and help? Sounds good to me, let's go lend a paw."
-        ]
-    ],
     "introspective_mate_6": [
         [
             "Any",
@@ -5315,7 +5302,7 @@
         ],
         [
             "Hey, y_c. Would you like to do some cat watching with me?",
-            "Okay so I've got my sights on r_c1. Over there. {PRONOUN/r_c1/subject}{VERB/r_c1/'ve/'s} been grooming {PRONOUN/r_c1/self} all day. It's kinda relaxing to watch, in my opinion.",
+            "Okay so I've got my sights on r_c1. Over there. {PRONOUN/r_c1/subject/CAP}{VERB/r_c1/'ve/'s} been grooming {PRONOUN/r_c1/self} all day. It's kinda relaxing to watch, in my opinion.",
             "And r_c2, over there. Looks like {PRONOUN/r_c2/subject}{VERB/r_c2/'re/'s} making repairs to the apprentices' den. It's always getting broken, I've noticed. All of them are really rowdy.",
             "It seems like {PRONOUN/r_c2/subject}{VERB/r_c2/'re/'s} struggling... Oh? You want to go over and help? Sounds good to me, let's go lend a paw."
         ]
@@ -8854,7 +8841,7 @@
             "y_c, sometimes I feel like you're the only one in c_nClan who really gets me.",
             "It's always assumed I'm violent just for the sake of violence. That I'm cruel or - heck even evil!.",
             "But you actually know me.",
-            "I like action and violence for the thrill of it! The rush I get from it! everycat's like that in some way or another!",
+            "I like action and violence for the thrill of it! The rush I get from it! Everycat's like that in some way or another!",
             "Just because mine involves a little bloodshed doesn't mean anything!"
         ]
     ],
@@ -10417,7 +10404,7 @@
             "they_blind"
         ],
         [
-            "y_c! Didja remember? Today is apprentice duties day! everycat has to do apprentice duties all day, even after the sun goes down.",
+            "y_c! Didja remember? Today is apprentice duties day! Everycat has to do apprentice duties all day, even after the sun goes down.",
             "Hah. No, of course I'm kidding!",
             "But you still have to clean the elders today. Doesn't sound so bad now, does it?",
             "[t_c playfully sticks {PRONOUN/t_c/poss} tongue out at you.]",
@@ -19062,7 +19049,7 @@
             "they_unabashed"
         ],
         [
-            "[You jump slightly as t_c comes into view swiftly. {PRONOUN/t_c/poss} mouth is moving rapidly as {PRONOUN/t_c/subject} {VERB/t_c/speak/speaks}.]",
+            "[You jump slightly as t_c comes into view swiftly. {PRONOUN/t_c/poss/CAP} mouth is moving rapidly as {PRONOUN/t_c/subject} {VERB/t_c/speak/speaks}.]",
             "[Then {PRONOUN/t_c/subject} {VERB/t_c/stop/stops} dead - and {PRONOUN/t_c/poss} expression falls into exasperation and pure defeat.]",
             "[t_c forgot you can't hear {PRONOUN/t_c/object}... Again.]",
             "[Amused, you tell {PRONOUN/t_c/object} to continue with a paw motion. t_c lights right back up and this time begins excitedly signing the epic story to you!]"
@@ -19671,7 +19658,7 @@
             "[From the way t_c refuses to look at you {PRONOUN/t_c/subject} must have done something silly.]",
             "[Thorns are easy though, and you tease each one out carefully. Once they're all removed and washed well, you apply a poultice before ensuring {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} looking.]",
             "[t_c looks annoyed when you sign to stay off it for two days. {PRONOUN/t_c/subject/CAP} {VERB/t_c/retort/retorts} with only one day but you shake your head.]",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/limp/limps} off crossly. Yeah, you'll need to tell d_n about this too. {PRONOUN/d_n/subject} will keep t_c from patroling against your orders.]"
+            "[{PRONOUN/t_c/subject} {VERB/t_c/limp/limps} off crossly. Yeah, you'll need to tell d_n about this too. {PRONOUN/d_n/subject/CAP} will keep t_c from patroling against your orders.]"
         ]
     ],
     "youdeaf_R59": [
@@ -23375,7 +23362,7 @@
             "[You watch nervously as t_c bickers with t_l across the clearing- loud enough for the whole Clan to hear... You're aware the two have been fighting lately, t_m said that {PRONOUN/t_c/poss} sibling rivalry has sparked once again... should you step in???]",
             "[t_l snaps, 'I swear you are so annoying! Always acting like a little kit when things don't go your way!' ]",
             "Says you! You're the one who's yelling! Loud enough for the whole clan, mind you!",
-            "[You think this has gone too far, you attempt to step forward only to make eye contact with t_m. {PRONOUN/t_m/subject} looks at you stunned, {PRONOUN/t_m/subject} slowly shake {PRONOUN/t_m/poss} head and the message is clear...]",
+            "[You think this has gone too far, you attempt to step forward only to make eye contact with t_m. {PRONOUN/t_m/subject/CAP} looks at you stunned, {PRONOUN/t_m/subject} slowly shake {PRONOUN/t_m/poss} head and the message is clear...]",
             "Honestly, t_l, just make your point! Wait- DID YOU JUST CALL ME A PIECE OF MOUSEDUNG?!",
             "[No, this is {PRONOUN/t_c/poss} problem... You are never, ever, EVER, going to step in between t_c and t_l's rivalry... No one could ever ask you to endure that.]"
         ]
