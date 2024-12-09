@@ -453,7 +453,7 @@
             "[When you ask t_c what happened to d_c, and if you'll ever see {PRONOUN/d_c/object} again, something on {PRONOUN/t_c/poss} face breaks.]",
             "Ah ... Ah, kid, I'm so sorry ...",
             "It ain't right, what happened to d_c ...",
-            "But, mark my words, you haven't seen the last of {PRONOUN/d_c/object}. Though, it may be a while. {PRONOUN/d_c/subject} {VERB/d_c/are/is} up in StarClan now, with our warrior ancestors.",
+            "But, mark my words, you haven't seen the last of {PRONOUN/d_c/object}. Though, it may be a while. {PRONOUN/d_c/subject/CAP} {VERB/d_c/are/is} up in StarClan now, with our warrior ancestors.",
             "One day, you'll reunite again. But until then, just know {PRONOUN/d_c/subject} {VERB/d_c/are/is} up there watching over you, helping you grow strong and healthy.",
             "Can you try to grow up strong and healthy for {PRONOUN/d_c/object}?"
         ]
@@ -5564,7 +5564,7 @@
             "To the side! To the left! Up high again! Now down low!",
             "[You go to hit {PRONOUN/t_c/poss} paw but {PRONOUN/t_c/subject} snap it back, causing you to miss, you stumble losing balance. t_c's eyes widen in fear as you hit the ground with a soft thud... There's a moment of silence until-]",
             "y_c- wait... NO!",
-            "[You burst into tears and flail on the ground catching the attention of r_q. {PRONOUN/r_q/subject} glance over to see a bundle of fur and t_c standing above, trying to shush your cries. A sharp voice cuts through the camp as r_q storms your way.]",
+            "[You burst into tears and flail on the ground catching the attention of r_q. {PRONOUN/r_q/subject/CAP} {VERB/r_q/glance/glances} over to see a bundle of fur and t_c standing above, trying to shush your cries. A sharp voice cuts through the camp as r_q storms your way.]",
             "NO! r_q I didn't mean it! Hold on! I CAN EXPLAIN!",
             "[r_q cuts {PRONOUN/t_c/object} off and begins chewing out t_c, you giggle, your plan worked!]",
             "Wait a- y_c... Did you- fake it???",

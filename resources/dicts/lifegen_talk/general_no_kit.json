@@ -21,7 +21,7 @@
         ],
         [
             "[During a harsh thunderstorm, kits and warriors alike hide in their dens, flinching at the thunderclaps above,]",
-            "[But not t_c. {PRONOUN/t_c/subject/CAP} {VERB/t_c/sit/sits} under a tree in the clearing, calmly watching the rain hit the ground in front of {PRONOUN/t_c/object}. unaware of the loudly rumbling sky.]",
+            "[But not t_c. {PRONOUN/t_c/subject/CAP} {VERB/t_c/sit/sits} under a tree in the clearing, calmly watching the rain hit the ground in front of {PRONOUN/t_c/object}, unaware of the loudly rumbling sky.]",
             " . . . ",
             "[You wish you could be as peaceful as {PRONOUN/t_c/object} during such a harsh storm.]"
         ]
@@ -1246,7 +1246,7 @@
         ],
         [
             "Hey, y_c ...",
-            "r_m said I shouldn't visit you, but who cares what that mouse-brain thinks? If {PRONOUN/r_m/subject} {VERB/r_m/think/thinks} {PRONOUN/r_m/subject} can keep me away from you ... {PRONOUN/r_m/subject} must be dumber than I thought!",
+            "r_m said I shouldn't visit you, but who cares what that mouse-brain thinks? If {PRONOUN/r_m/subject} {VERB/r_m/think/thinks} {PRONOUN/r_m/subject} can keep me away from you ... {PRONOUN/r_m/subject/CAP} must be dumber than I thought!",
             "Everycat around camp is missing you ... hoping you get better soon ...",
             "Hey, that reminds me, the funniest thing happened today ...",
             "[t_c sits by your side, talking to you until r_m literally forces {PRONOUN/t_c/object} to leave. {PRONOUN/t_c/poss/CAP} company makes you feel better than any herbs ever could.]"
@@ -2096,7 +2096,7 @@
             "[t_c lets out a mrrp of amusement and sits next to you]",
             "Oh, y_c! Look here!",
             "[You turn your head to look at {PRONOUN/t_c/object} once again]",
-            "Look, it's t_c! {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} staring at y_c, and {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} staring back at {PRONOUN/t_c/object}. I wonder what they're up to?",
+            "Look, it's t_c! {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} staring at y_c, and {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} staring back at {PRONOUN/t_c/object}. I wonder what they're up to?",
             "[Both of you let out a chuckle at this.]",
             "Hehe... You're really funny, y_c. I love spending time with you."
         ]
@@ -2138,7 +2138,7 @@
         [
             "... what do you want, y_c?",
             "Can't you see that I'm busy?",
-            "... I don't look like I'm doing anything? hmph.",
+            "... I don't look like I'm doing anything? Hmph.",
             "That's just like you, to be so unobservant."
         ]
     ],
@@ -3495,7 +3495,7 @@
         ],
         [
             "Oh, good evening, y_c! It's very nice to see you, have you been remembering to take care of yourself?",
-            "Haha, I know, I know~! I worry too much, but I just wanna make sure you're alright, the season's been quite.. ah- interesting.",
+            "Haha, I know, I know~! I worry too much, but I just wanna make sure you're alright, the season's been quite... ah- interesting.",
             "Well, I'll be off then. If you need anything, you can always let me know!"
         ]
     ],
@@ -4153,7 +4153,7 @@
         [
             "[t_c shuffles into camp with {PRONOUN/t_c/poss} face hidden beneath a paw. It seems like {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} been crying.]",
             "Oh, hey, y_c! What? Crying? Me? No, it's just - ah - allergies. You know how it always gets this time of year. That pollen is killer.",
-            "What? d_c? Oh, yeah, so sad, what happened to {PRONOUN/d_c/object}. But, y'know. What can you do? everycat's gotta go eventuall-ah. Ahem.",
+            "What? d_c? Oh, yeah, so sad, what happened to {PRONOUN/d_c/object}. But, y'know. What can you do? Everycat's gotta go eventuall-ah. Ahem.",
             "[t_c's voice breaks, but {PRONOUN/t_c/subject} {VERB/t_c/do/does} {PRONOUN/t_c/poss} best to disguise it as a sudden cough.]",
             "Oh, well, if you'll excuse me, I should probably get going now. But this was just a great talk. Really great.",
             "[t_c dashes away, face reconcealed beneath {PRONOUN/t_c/poss} paw.]"
@@ -4997,7 +4997,7 @@
         ],
         [
             "Hey, y_c ...",
-            "r_m said I shouldn't visit you, but who cares what that mouse-brain thinks? If {PRONOUN/r_m/subject} {VERB/r_m/think/thinks} {PRONOUN/r_m/subject} can keep me away from you ... {PRONOUN/r_m/subject} must be dumber than I thought!",
+            "r_m said I shouldn't visit you, but who cares what that mouse-brain thinks? If {PRONOUN/r_m/subject} {VERB/r_m/think/thinks} {PRONOUN/r_m/subject} can keep me away from you ... {PRONOUN/r_m/subject/CAP} must be dumber than I thought!",
             "Everycat around camp is missing you ... hoping you get better soon ...",
             "Hey, that reminds me, the funniest thing happened today ...",
             "[t_c sits by your side, talking to you until the medicine cat literally forces them to leave. {PRONOUN/t_c/poss/CAP} company makes you feel better than any herbs ever could.]"
@@ -8901,7 +8901,7 @@
         ],
         [
             "Hey, y_c, have you ever thought about how easy it would be for someone to make you disappear?",
-            "They could just sneak up behind you when you least expect it .. make it look like an accident ...",
+            "They could just sneak up behind you when you least expect it... make it look like an accident...",
             "And no one in the whole Clan would ever know.",
             "Isn't that terrible?",
             "[t_c smiles at you for a little too long.]"
@@ -23378,7 +23378,7 @@
         [
             "Hey, y_c, could we talk... Alone please?",
             "[You carefully guide t_c away from camp to a secluded place in the territory. You notice how frail {PRONOUN/t_c/subject} is, tired eyes, skinnier than usual... It was hard to believe that this was your parent, someone who was normally so strong in everything {PRONOUN/t_c/subject} did.]",
-            "I just- I'm sorry... I miss d_c... So very much... {PRONOUN/d_c/subject} was always there for me, but now-",
+            "I just- I'm sorry... I miss d_c... So very much... {PRONOUN/d_c/subject/CAP} was always there for me, but now-",
             "[{PRONOUN/t_c/poss/CAP} voice wavers and suddenly, {PRONOUN/t_c/poss} head hits your chest as they let out a wail. You don't speak, there's no reason to. Resting your chin on {PRONOUN/t_c/poss} head, t_c cries it all out. Clearly they hadn't had the chance yet...]",
             "They're gone... They're really gone... d_c... Why? WHY?! WHY DID STARCLAN HAVE TO TAKE {PRONOUN/t_c/object/CAP} FROM ME?!",
             "I'm so sorry, y_c... You shouldn't see me like this...",
@@ -24014,7 +24014,7 @@
             "What do you want? I was having a nice dream.",
             "Just about my family from when I was still a kittypet.",
             "*sigh* I miss them. Of course, I prefer Clan life to being cooped up in a Twoleg nest, but I still miss them.",
-            "Do I want to.. talk about them? I mean, it might make me feel better.",
+            "Do I want to... talk about them? I mean, it might make me feel better.",
             "Well, I only had one littermate. She and I were complete opposites. She preferred to stare at the stars. I, on the other hand, loved to run around and chase the fireflies.",
             "My mother was... <i>very</i> overprotective. I think she knew I wanted to join the Clan, and was scared I'd get myself hurt.",
             "I hope my family is okay. Maybe I won't ever see them again.",
