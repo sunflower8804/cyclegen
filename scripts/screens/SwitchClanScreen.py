@@ -185,6 +185,7 @@ class SwitchClanScreen(Screens):
         self.clans_frame.disable()
 
         i = 0
+        y_pos = 378
         for clan in self.clan_list[1:]:
             clan_age = ""
             try:
@@ -226,10 +227,6 @@ class SwitchClanScreen(Screens):
                             break
             except:
                 pass
-                # if your_name:
-                #     print(your_name)
-                # else:
-                #     print("no your name ?")
             # ---------------------------------------------------------------------
 
             self.clan_name[-1].append(clan)
@@ -268,14 +265,24 @@ class SwitchClanScreen(Screens):
                 print("Can't find info for", clan)
                 print(your_name, clan_age)
                 tooltext = ""
-
+            
             self.your_cat_buttons[-1].append(
-                pygame_gui.elements.UIButton(scale(
-                    pygame.Rect((480, y_pos), (68, 68))),
+                UIImageButton(
+                    pygame.Rect(
+                        (
+                            ui_scale_value(513),
+                            -0.59 * (item_height + ui_scale_value(22)),
+                        ),
+                        ui_scale_dimensions((34, 34)),
+                    ),
                     "",
                     object_id="#help_button",
-                    tool_tip_text=f"{your_name}<br>Clan age: {clan_age} moons",
-                    manager=MANAGER))
+                    manager=MANAGER,
+                    starting_height=2,
+                    tool_tip_text=tooltext,
+                    anchors={"top_target": self.clan_buttons[-1][-1]},
+                )
+            )
 
             # welcome to another bit of jank that I am embarrassed to put my name to!
             self.delete_buttons[-1].append(

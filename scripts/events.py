@@ -125,7 +125,6 @@ class Events:
             game.switches["attended half-moon"] = False
 
         murder_history = History.get_murders(game.clan.your_cat)
-        print("HEY", murder_history)
         
         if any(
                 str(cat.status) in {
@@ -1453,9 +1452,9 @@ class Events:
         if 'retire' in game.switches:
             if game.switches['retire']:
                 game.switches['retire'] = False
-        if 'retire_reject' in game.switches:
-            if game.switches['retire_reject']:              
-                game.switches['retire_reject'] = False
+        # if 'retire_reject' in game.switches:
+        #     if game.switches['retire_reject']:              
+        #         game.switches['retire_reject'] = False
     
     def generate_death_event(self):
         if game.clan.your_cat.status == 'kitten':
@@ -3943,7 +3942,6 @@ class Events:
                         f"After showing genuine remorse and guilt, {cat.name} has been forgiven and welcomed back into {game.clan.name}Clan, though some are quicker to forgive than others.",
                         f"{game.clan.leader.name} has chosen to lift the shun on {cat.name}, but will be watching them closely."])\
 
-                print(cat.name, "is being forgiven!")
                 murder_history = History.get_murders(cat)
                 history = None
                 old_status = ""
@@ -3975,9 +3973,6 @@ class Events:
                             game.clan.deputy = old_leader
                             game.clan.leader = cat
                             cat.status_change(old_status)
-
-                            print("LEADER:", Cat.fetch_cat(game.clan.leader).name)
-                            print("DEPUTY:", Cat.fetch_cat(game.clan.deputy).name)
 
                             try:
                                 game.clan.leader_lives = history[-1]["remaining_lives"]

@@ -820,7 +820,7 @@ class PronounCreation(UIWindow):
         
         self.box_labels["parent"] = pygame_gui.elements.UITextBox(
             "Parent",
-            scale(pygame.Rect((175, 460), (200, 60))),
+            ui_scale(pygame.Rect((175, 460), (200, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -828,7 +828,7 @@ class PronounCreation(UIWindow):
 
         self.box_labels["sibling"] = pygame_gui.elements.UITextBox(
             "Sibling",
-            scale(pygame.Rect((425, 460), (200, 60))),
+            ui_scale(pygame.Rect((425, 460), (200, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -887,14 +887,14 @@ class PronounCreation(UIWindow):
         )
 
         self.boxes["parent"] = pygame_gui.elements.UITextEntryLine(
-            scale(pygame.Rect((180, 520), (200, 60))),
+            ui_scale(pygame.Rect((180, 520), (200, 60))),
             placeholder_text=self.the_cat.pronouns[0]["parent"],
             manager=MANAGER,
             container=self,
         )
 
         self.boxes["sibling"] = pygame_gui.elements.UITextEntryLine(
-            scale(pygame.Rect((430, 520), (200, 60))),
+            ui_scale(pygame.Rect((430, 520), (200, 60))),
             placeholder_text=self.the_cat.pronouns[0]["sibling"],
             manager=MANAGER,
             container=self,
@@ -1932,7 +1932,7 @@ class EventLoading(UIWindow):
     
 class PickPath(UIWindow):
     def __init__(self, last_screen):
-        super().__init__(scale(pygame.Rect((500, 400), (800, 500))),
+        super().__init__(ui_scale(pygame.Rect((220, 175), (400, 250))),
                          window_display_title='Choose your Path',
                          object_id='#game_over_window',
                          resizable=False)
@@ -1942,21 +1942,21 @@ class PickPath(UIWindow):
         self.last_screen = last_screen
         self.pick_path_message = UITextBoxTweaked(
             f"You have an important decision to make...",
-            scale(pygame.Rect((40, 40), (720, -1))),
+            ui_scale(pygame.Rect((20, 20), (360, -1))),
             line_spacing=1,
             object_id="#text_box_30_horizcenter",
             container=self
         )
 
         self.begin_anew_button = UIImageButton(
-            scale(pygame.Rect((30, 190), (150, 150))),
+            ui_scale(pygame.Rect((15, 80), (75, 75))),
             "",
             object_id="#med",
             container=self,
             tool_tip_text='Choose to become a medicine cat apprentice'
         )
         self.not_yet_button = UIImageButton(
-            scale(pygame.Rect((220, 190), (150, 150))),
+            ui_scale(pygame.Rect((110, 80), (75, 75))),
             "",
             object_id="#warrior",
             container=self,
@@ -1964,7 +1964,7 @@ class PickPath(UIWindow):
 
         )
         self.mediator_button = UIImageButton(
-            scale(pygame.Rect((410, 190), (150, 150))),
+            ui_scale(pygame.Rect((205, 80), (75, 75))),
             "",
             object_id="#mediator",
             container=self,
@@ -1972,20 +1972,20 @@ class PickPath(UIWindow):
 
         )
         self.queen_button = UIImageButton(
-            scale(pygame.Rect((600, 190), (150, 150))),
+            ui_scale(pygame.Rect((300, 80), (75, 75))),
             "",
             object_id="#queen",
             container=self,
             tool_tip_text="Choose to become a queen's apprentice"
 
         )
-        self.random_button = UIImageButton(
-            scale(pygame.Rect((345, 370), (100, 100))),
-            "",
-            object_id="#random_dice_button",
+        self.random_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((170, 175), (50, 50))),
+            Icon.DICE,
+            get_button_dict(ButtonStyles.ICON, (50, 50)),
+            object_id="@buttonstyles_icon",
             container=self,
-            tool_tip_text='Random'
-
+            tool_tip_text="Random"
         )
 
         self.not_yet_button.enable()
@@ -1997,7 +1997,7 @@ class PickPath(UIWindow):
         super().process_event(event)
 
         try:
-
+            status = ""
             if event.type == pygame_gui.UI_BUTTON_START_PRESS:
                 if event.ui_element == self.begin_anew_button:
                     game.switches['window_open'] = False
@@ -2038,7 +2038,7 @@ class PickPath(UIWindow):
                 
 class DeathScreen(UIWindow):
     def __init__(self, last_screen):
-        super().__init__(scale(pygame.Rect((400, 400), (980, 500))),
+        super().__init__(ui_scale(pygame.Rect((155, 175), (490, 250))),
                          window_display_title='You have died',
                          object_id='#game_over_window',
                          resizable=False)
@@ -2047,48 +2047,47 @@ class DeathScreen(UIWindow):
         self.clan_name = str(game.clan.name + 'Clan')
         self.last_screen = last_screen
         self.pick_path_message = UITextBoxTweaked(
-            f"What will you do now?",
-            scale(pygame.Rect((40, 40), (870, -1))),
+            f"<b>You are dead.</b>\nWhat will you do now?",
+            ui_scale(pygame.Rect((20, 10), (435, -1))),
             line_spacing=1,
             object_id="#text_box_30_horizcenter",
             container=self
         )
 
-        self.begin_anew_button = UIImageButton(
-            scale(pygame.Rect((130, 140), (150, 150))),
-            "",
-            object_id="#random_dice_button",
+        self.begin_anew_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((35, 75), (210, 30))),
+            Icon.DICE + " Start a new Clan",
+            get_button_dict(ButtonStyles.SQUOVAL, (210, 30)),
             container=self,
-            tool_tip_text='Start a new Clan'
-        )
-        
-        self.mediator_button = UIImageButton(
-            scale(pygame.Rect((310, 140), (150, 150))),
-            "",
-            object_id="#unknown_residence_button",
-            container=self,
-            tool_tip_text='Be reborn'
-
-        )
-        
-        self.mediator_button2 = UIImageButton(
-            scale(pygame.Rect((490, 140), (150, 150))),
-            "",
-            object_id="#leader_ceremony_button",
-            container=self,
-            tool_tip_text='Revive'
+            object_id="@buttonstyles_squoval",
         )
 
-        self.mediator_button4 = UIImageButton(
-            scale(pygame.Rect((670, 140), (150, 150))),
-            "",
-            object_id="#queen_activity_button",
+        self.mediator_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((35, 115), (170, 30))),
+            Icon.CAT_HEAD + " Switch cats",
+            get_button_dict(ButtonStyles.SQUOVAL, (170, 30)),
             container=self,
-            tool_tip_text="Start a new life"
+            object_id="@buttonstyles_squoval",
+        )
+
+        self.mediator_button2 = UISurfaceImageButton(
+            ui_scale(pygame.Rect((265, 75), (170, 30))),
+            Icon.STARCLAN + " Revive",
+            get_button_dict(ButtonStyles.SQUOVAL, (170, 30)),
+            container=self,
+            object_id="@buttonstyles_squoval",
+        )
+
+        self.mediator_button4 = UISurfaceImageButton(
+            ui_scale(pygame.Rect((225, 115), (210, 30))),
+            Icon.PAW + " Start a new life",
+            get_button_dict(ButtonStyles.SQUOVAL, (210, 30)),
+            container=self,
+            object_id="@buttonstyles_squoval",
         )
 
         self.mediator_button3 = UIImageButton(
-            scale(pygame.Rect((230, 330), (498, 96))),
+            ui_scale(pygame.Rect((115, 165), (249, 48))),
             "",
             object_id="#continue_dead_button",
             container=self,
@@ -2196,7 +2195,8 @@ class DeathScreen(UIWindow):
             elif event.ui_element == self.mediator_button4:
                 game.last_screen_forupdate = None
                 game.switches['window_open'] = False
-                game.switches['cur_screen'] = "new life screen"
+                game.switches['customise_new_life'] = True
+                game.switches['cur_screen'] = "make clan screen"
                 game.switches['continue_after_death'] = False
                 self.begin_anew_button.kill()
                 self.pick_path_message.kill()
@@ -2209,7 +2209,7 @@ class DeathScreen(UIWindow):
                 
 class DeputyScreen(UIWindow):
     def __init__(self, last_screen):
-        super().__init__(scale(pygame.Rect((500, 400), (600, 500))),
+        super().__init__(ui_scale(pygame.Rect((250, 200), (300, 250))),
                         window_display_title='Choose your deputy',
                         object_id='#game_over_window',
                         resizable=False)
@@ -2218,30 +2218,27 @@ class DeputyScreen(UIWindow):
         self.clan_name = str(game.clan.name + 'Clan')
         self.last_screen = last_screen
         self.pick_path_message = UITextBoxTweaked(
-            f"Choose your deputy",
-            scale(pygame.Rect((40, 40), (500, -1))),
+            f"<b>You need to choose a deputy.</b>\nWho will it be?",
+            ui_scale(pygame.Rect((20, 20), (250, -1))),
             line_spacing=1,
             object_id="#text_box_30_horizcenter",
             container=self
         )
 
-        self.begin_anew_button = UIImageButton(
-            scale(pygame.Rect((130, 190), (150, 150))),
-            "",
-            object_id="#random_dice_button",
+        self.begin_anew_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((55, 95), (80, 30))),
+            "skip",
+            get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
+            object_id="@buttonstyles_squoval",
             container=self,
-            tool_tip_text='Skip'
         )
-        
-        self.mediator_button = UIImageButton(
-            scale(pygame.Rect((310, 190), (150, 150))),
-            "",
-            object_id="#unknown_residence_button",
+        self.mediator_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((160, 95), (80, 30))),
+            "choose",
+            get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
+            object_id="@buttonstyles_squoval",
             container=self,
-            tool_tip_text='Choose deputy'
-
         )
-
         
         self.begin_anew_button.enable()
         self.mediator_button.enable()
@@ -2271,7 +2268,7 @@ class DeputyScreen(UIWindow):
                 
 class NameKitsWindow(UIWindow):
     def __init__(self, last_screen):
-        super().__init__(scale(pygame.Rect((500, 400), (600, 500))),
+        super().__init__(ui_scale(pygame.Rect((250, 200), (300, 150))),
                          window_display_title='Name Kits',
                          object_id='#game_over_window',
                          resizable=False)
@@ -2280,28 +2277,25 @@ class NameKitsWindow(UIWindow):
         self.clan_name = str(game.clan.name + 'Clan')
         self.last_screen = last_screen
         self.pick_path_message = UITextBoxTweaked(
-            f"Name your kits",
-            scale(pygame.Rect((40, 40), (500, -1))),
+            f"<b>You have kits!</b>\nWhat will you name them?",
+            ui_scale(pygame.Rect((20, 20), (250, -1))),
             line_spacing=1,
             object_id="#text_box_30_horizcenter",
             container=self
         )
-
-        self.begin_anew_button = UIImageButton(
-            scale(pygame.Rect((130, 190), (150, 150))),
-            "",
-            object_id="#random_dice_button",
+        self.begin_anew_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((55, 95), (80, 30))),
+            "random",
+            get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
+            object_id="@buttonstyles_squoval",
             container=self,
-            tool_tip_text='Randomize names'
         )
-        
-        self.mediator_button = UIImageButton(
-            scale(pygame.Rect((310, 190), (150, 150))),
-            "",
-            object_id="#unknown_residence_button",
+        self.mediator_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((160, 95), (80, 30))),
+            "choose",
+            get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
+            object_id="@buttonstyles_squoval",
             container=self,
-            tool_tip_text='Choose names'
-
         )
 
         
@@ -2338,7 +2332,7 @@ class NameKitsWindow(UIWindow):
                 
 class MateScreen(UIWindow):
     def __init__(self, last_screen):
-        super().__init__(scale(pygame.Rect((500, 400), (600, 500))),
+        super().__init__(ui_scale(pygame.Rect((250, 200), (300, 150))),
                          window_display_title='Choose your mate',
                          object_id='#game_over_window',
                          resizable=False)
@@ -2349,29 +2343,25 @@ class MateScreen(UIWindow):
         self.mate = game.switches['new_mate']
         self.pick_path_message = UITextBoxTweaked(
             f"{self.mate.name} confesses their feelings to you.",
-            scale(pygame.Rect((40, 40), (520, -1))),
+            ui_scale(pygame.Rect((20, 20), (260, -1))),
             line_spacing=1,
             object_id="#text_box_30_horizcenter",
             container=self
         )
-
-        self.begin_anew_button = UIImageButton(
-            scale(pygame.Rect((130, 190), (150, 150))),
-            "",
-            object_id="#your_clan_button",
+        self.begin_anew_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((55, 95), (80, 30))),
+            "accept",
+            get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
+            object_id="@buttonstyles_squoval",
             container=self,
-            tool_tip_text='Accept and become mates'
         )
-        
-        self.mediator_button = UIImageButton(
-            scale(pygame.Rect((310, 190), (150, 150))),
-            "",
-            object_id="#outside_clan_button",
+        self.mediator_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((160, 95), (80, 30))),
+            "reject",
+            get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
+            object_id="@buttonstyles_squoval",
             container=self,
-            tool_tip_text='Reject'
-
         )
-        
 
         self.begin_anew_button.enable()
         self.mediator_button.enable()
@@ -2409,7 +2399,7 @@ class MateScreen(UIWindow):
 
 class RetireScreen(UIWindow):
     def __init__(self, last_screen):
-        super().__init__(scale(pygame.Rect((500, 400), (600, 500))),
+        super().__init__(ui_scale(pygame.Rect((250, 200), (300, 150))),
                          window_display_title='Choose to retire',
                          object_id='#game_over_window',
                          resizable=False)
@@ -2420,28 +2410,26 @@ class RetireScreen(UIWindow):
         game.switches['retire'] = False
         game.switches['retire_reject'] = False
         self.pick_path_message = UITextBoxTweaked(
-            f"You're asked if you would like to retire",
-            scale(pygame.Rect((40, 40), (520, -1))),
+            f"You're asked if you would like to retire.",
+            ui_scale(pygame.Rect((20, 20), (260, -1))),
             line_spacing=1,
             object_id="#text_box_30_horizcenter",
             container=self
         )
 
-        self.begin_anew_button = UIImageButton(
-            scale(pygame.Rect((130, 190), (150, 150))),
-            "",
-            object_id="#your_clan_button",
+        self.begin_anew_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((55, 95), (80, 30))),
+            "accept",
+            get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
+            object_id="@buttonstyles_squoval",
             container=self,
-            tool_tip_text='Accept and become an elder'
         )
-        
-        self.mediator_button = UIImageButton(
-            scale(pygame.Rect((310, 190), (150, 150))),
-            "",
-            object_id="#outside_clan_button",
+        self.mediator_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((160, 95), (80, 30))),
+            "reject",
+            get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
+            object_id="@buttonstyles_squoval",
             container=self,
-            tool_tip_text='Reject'
-
         )
         
         self.begin_anew_button.enable()
@@ -2500,25 +2488,25 @@ class ChangeCatToggles(UIWindow):
         self.refresh_checkboxes()
 
         # Text
-        self.text_1 = pygame_gui.elements.UITextBox("Prevent fading", scale(pygame.Rect(110, 60, -1, 50)), 
+        self.text_1 = pygame_gui.elements.UITextBox("Prevent fading", ui_scale(pygame.Rect(60, 25, -1, 50)), 
                                                     object_id="#text_box_30_horizleft_pad_0_8",
                                                     container=self)
         
-        self.text_2 = pygame_gui.elements.UITextBox("Prevent kits", scale(pygame.Rect(110, 110, -1, 50)), 
+        self.text_2 = pygame_gui.elements.UITextBox("Prevent kits", ui_scale(pygame.Rect(60, 50, -1, 50)), 
                                                     object_id="#text_box_30_horizleft_pad_0_8",
                                                     container=self)
         
-        self.text_3 = pygame_gui.elements.UITextBox("Prevent retirement", scale(pygame.Rect(110, 160, -1, 50)), 
+        self.text_3 = pygame_gui.elements.UITextBox("Prevent retirement", ui_scale(pygame.Rect(60, 75, -1, 50)), 
                                                     object_id="#text_box_30_horizleft_pad_0_8",
                                                     container=self)
         
         self.text_4 = pygame_gui.elements.UITextBox("Limit romantic interactions and mate changes",
-                                                    scale(pygame.Rect(110, 210, -1, 50)), 
+                                                    ui_scale(pygame.Rect(60, 100, -1, 50)), 
                                                     object_id="#text_box_30_horizleft_pad_0_8",
                                                     container=self)
         
         self.text_5 = pygame_gui.elements.UITextBox("Set neutral faith",
-                                                    scale(pygame.Rect(110, 260, -1, 50)), 
+                                                    ui_scale(pygame.Rect(60, 125, -1, 50)), 
                                                     object_id="#text_box_30_horizleft_pad_0_8",
                                                     container=self)
         
@@ -2592,20 +2580,20 @@ class ChangeCatToggles(UIWindow):
             box_type = "@unchecked_checkbox"
             tool_tip = "Prevent cat from automatically taking a mate, breaking up, or having romantic interactions with non-mates."
         
-        self.checkboxes["prevent_mates"] = UIImageButton(scale(pygame.Rect(45, 200, 68, 68)), "",
+        self.checkboxes["prevent_mates"] = UIImageButton(ui_scale(pygame.Rect(22, 100, 34, 34)), "",
                                                          container=self,
                                                          object_id=box_type,
                                                          tool_tip_text=tool_tip)
         
         #No faith
         if self.the_cat.no_faith:
-            box_type = "#checked_checkbox"
+            box_type = "@checked_checkbox"
             tool_tip = "Lock this cat's faith to 0."
         else:
-            box_type = "#unchecked_checkbox"
+            box_type = "@unchecked_checkbox"
             tool_tip = "Lock this cat's faith to 0."
         
-        self.checkboxes["no_faith"] = UIImageButton(scale(pygame.Rect(45, 250, 68, 68)), "",
+        self.checkboxes["no_faith"] = UIImageButton(ui_scale(pygame.Rect(22, 125, 34, 34)), "",
                                                          container=self,
                                                          object_id=box_type,
                                                          tool_tip_text=tool_tip)
@@ -2652,10 +2640,11 @@ class SelectFocusClans(UIWindow):
             object_id="#exit_window_button",
             container=self,
         )
-        self.save_button = UIImageButton(
+        self.save_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((80, 180), (139, 30))),
-            "",
-            object_id="#change_focus_button",
+            "Change Focus",
+            get_button_dict(ButtonStyles.SQUOVAL, (139, 30)),
+            object_id="@buttonstyles_squoval",
             container=self,
         )
         self.save_button.disable()

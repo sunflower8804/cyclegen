@@ -79,6 +79,8 @@ class Game:
 
     # store changing parts of the game that the user can toggle with buttons
     switches = {
+        "cat": None,
+        "clan_name": "",
         "leader": None,
         "deputy": None,
         "medicine_cat": None,
@@ -137,11 +139,13 @@ class Game:
         "show_history_moons": False,
         "fps": 30,
         "war_rel_change_type": "neutral",
+        "disallowed_symbol_tags": [],
         "saved_scroll_positions": {},
         "moon&season_open": False,
         'window_open': False,
         'windows_dict': [],
         'continue_after_death': False,
+        "customise_new_life": False
     }
     all_screens = {}
     cur_events = {}

@@ -32,3 +32,8 @@ class Icon(StrEnum):
 
     MAGNIFY = "\U0001F50D"
     NOTEPAD = "\U0001F5C9"
+
+    # LG
+    STAR1 = "\u2606"
+    STAR2 = "\u2605"
+    STAR3 = "\u0001F31F"

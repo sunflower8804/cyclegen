@@ -144,3 +144,16 @@ class AllScreens:
         cls.family_tree_screen = FamilyTreeScreen("family tree screen")
         cls.mediation_screen = MediationScreen("mediation screen")
         cls.change_gender_screen = ChangeGenderScreen("change gender screen")
+
+        # LIFEGEN
+        cls.talk_screen = TalkScreen('talk screen')
+        cls.achivement_screen = AchievementScreen('achievement screen')
+        cls.murder_screen = MurderScreen("murder screen")
+        cls.deputy_screen = DeputyScreen("deputy screen")
+        cls.name_kits_screen = NameKitsScreen("name kits screen")
+        cls.choose_reborn_screen = ChooseRebornScreen("choose reborn screen")
+        cls.affair_screen = AffairScreen("affair screen")
+        cls.queen_screen = QueenScreen("queen screen")
+        cls.moonplace_screen = MoonplaceScreen("moonplace screen")
+        cls.gift_screen = GiftScreen("gift screen")
+        cls.new_life_screen = NewLifeScreen("new life screen")

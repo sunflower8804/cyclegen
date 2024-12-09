@@ -365,7 +365,7 @@ class GenerateEvents:
 
             if "clan_apps" in event.tags and not get_alive_status_cats(
                     Cat_class,
-                    ["apprentice", "medicine cat apprentice", "mediator apprentice"],
+                    ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"],
             ):
                 continue
 

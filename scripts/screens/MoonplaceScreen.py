@@ -12,6 +12,8 @@ from scripts.game_structure.game_essentials import game
 from enum import Enum  # pylint: disable=no-name-in-module
 from scripts.cat.names import names, Name
 from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked
+from scripts.utility import get_text_box_theme, ui_scale, ui_scale_blit, ui_scale_offset, get_current_season, ui_scale_dimensions
+from scripts.game_structure.screen_settings import MANAGER
 
 
 class RelationType(Enum):
@@ -70,14 +72,14 @@ class MoonplaceScreen(Screens):
         self.created_choice_buttons = False
         self.profile_elements = {}
         self.clan_name_bg = pygame_gui.elements.UIImage(
-            scale(pygame.Rect((230, 875), (380, 70))),
+            ui_scale(pygame.Rect((230, 875), (380, 70))),
             pygame.transform.scale(
                 image_cache.load_image(
                     "resources/images/clan_name_bg.png").convert_alpha(),
                 (500, 870)),
             manager=MANAGER)
         self.profile_elements["cat_name"] = pygame_gui.elements.UITextBox(str(self.the_cat.name),
-                                                                    scale(pygame.Rect((300, 870), (-1, 80))),
+                                                                    ui_scale(pygame.Rect((300, 870), (-1, 80))),
                                                                           object_id="#text_box_34_horizcenter_light",
                                                                           manager=MANAGER)
 
@@ -87,31 +89,31 @@ class MoonplaceScreen(Screens):
         self.talk_box_img = image_cache.load_image("resources/images/talk_box.png").convert_alpha()
 
         self.talk_box = pygame_gui.elements.UIImage(
-                scale(pygame.Rect((178, 942), (1248, 302))),
+                ui_scale(pygame.Rect((178, 942), (1248, 302))),
                 self.talk_box_img
             )
 
-        self.back_button = UIImageButton(scale(pygame.Rect((50, 50), (210, 60))), "",
+        self.back_button = UIImageButton(ui_scale(pygame.Rect((50, 50), (210, 60))), "",
                                         object_id="#back_button", manager=MANAGER)
-        self.scroll_container = pygame_gui.elements.UIScrollingContainer(scale(pygame.Rect((500, 970), (900, 300))))
+        self.scroll_container = pygame_gui.elements.UIScrollingContainer(ui_scale(pygame.Rect((500, 970), (900, 300))))
         self.text = pygame_gui.elements.UITextBox("",
-                                                scale(pygame.Rect((0, 0), (900, -100))),
+                                                ui_scale(pygame.Rect((0, 0), (900, -100))),
                                                 object_id="#text_box_30_horizleft",
                                                 container=self.scroll_container,
                                                 manager=MANAGER)
 
         self.textbox_graphic = pygame_gui.elements.UIImage(
-                scale(pygame.Rect((170, 942), (346, 302))),
+                ui_scale(pygame.Rect((170, 942), (346, 302))),
                 image_cache.load_image("resources/images/textbox_graphic.png").convert_alpha()
             )
         # self.textbox_graphic.hide()
 
-        self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((70, 900), (400, 400))),
+        self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((70, 900), (400, 400))),
                                                                         pygame.transform.scale(
                                                                             generate_sprite(self.the_cat),
                                                                             (400, 400)), manager=MANAGER)
         self.paw = pygame_gui.elements.UIImage(
-                scale(pygame.Rect((1370, 1180), (30, 30))),
+                ui_scale(pygame.Rect((1370, 1180), (30, 30))),
                 image_cache.load_image("resources/images/cursor.png").convert_alpha()
             )
         self.paw.visible = False
@@ -146,19 +148,17 @@ class MoonplaceScreen(Screens):
         self.option_bgs = {}
 
     def update_camp_bg(self):
-        light_dark = "light"
-        if game.settings["dark mode"]:
-            light_dark = "dark"
+        light_dark = "dark" if game.settings["dark mode"] else "light"
 
-        camp_bg_base_dir = 'resources/images/camp_bg/'
+        camp_bg_base_dir = "resources/images/camp_bg/"
         leaves = ["newleaf", "greenleaf", "leafbare", "leaffall"]
         camp_nr = game.clan.camp_bg
 
         if camp_nr is None:
-            camp_nr = 'camp1'
+            camp_nr = "camp1"
             game.clan.camp_bg = camp_nr
 
-        available_biome = ['Forest', 'Mountainous', 'Plains', 'Beach']
+        available_biome = ["Forest", "Mountainous", "Plains", "Beach"]
         biome = game.clan.biome
         if biome not in available_biome:
             biome = available_biome[0]
@@ -167,38 +167,40 @@ class MoonplaceScreen(Screens):
 
         all_backgrounds = []
         for leaf in leaves:
-            if game.clan.biome == "Forest":
-                platform_dir = "resources/images/moonplace/moonhollow.png"
-            # elif game.clan.biome == "Plains":
-            #     platform_dir = "resources/images/moonplace/moongrove.png"
-            elif game.clan.biome == "Beach":
-                platform_dir = "resources/images/moonplace/moonstone.png"
-            # elif game.clan.biome == "Mountainous":
-            #     platform_dir = "resources/images/moonplace/moonplace1.png"
-            else:
-                platform_dir = "resources/images/moonplace/moonplace1.png"
-            
+            platform_dir = (
+                f"{camp_bg_base_dir}/{biome}/{leaf}_{camp_nr}_{light_dark}.png"
+            )
             all_backgrounds.append(platform_dir)
 
-        self.newleaf_bg = pygame.transform.scale(
-            pygame.image.load(all_backgrounds[0]).convert(), (screen_x, screen_y))
-        self.greenleaf_bg = pygame.transform.scale(
-            pygame.image.load(all_backgrounds[1]).convert(), (screen_x, screen_y))
-        self.leafbare_bg = pygame.transform.scale(
-            pygame.image.load(all_backgrounds[2]).convert(), (screen_x, screen_y))
-        self.leaffall_bg = pygame.transform.scale(
-            pygame.image.load(all_backgrounds[3]).convert(), (screen_x, screen_y))
+        self.add_bgs(
+            {
+                "Newleaf": pygame.transform.scale(
+                    pygame.image.load(all_backgrounds[0]).convert(),
+                    ui_scale_dimensions((800, 700)),
+                ),
+                "Greenleaf": pygame.transform.scale(
+                    pygame.image.load(all_backgrounds[1]).convert(),
+                    ui_scale_dimensions((800, 700)),
+                ),
+                "Leaf-bare": pygame.transform.scale(
+                    pygame.image.load(all_backgrounds[2]).convert(),
+                    ui_scale_dimensions((800, 700)),
+                ),
+                "Leaf-fall": pygame.transform.scale(
+                    pygame.image.load(all_backgrounds[3]).convert(),
+                    ui_scale_dimensions((800, 700)),
+                ),
+            },
+            {
+                "Newleaf": None,
+                "Greenleaf": None,
+                "Leaf-bare": None,
+                "Leaf-fall": None,
+            },
+        )
 
+        self.set_bg(get_current_season())
     def on_use(self):
-        if game.clan.clan_settings['backgrounds']:
-            if game.clan.current_season == 'Newleaf':
-                screen.blit(self.newleaf_bg, (0, 0))
-            elif game.clan.current_season == 'Greenleaf':
-                screen.blit(self.greenleaf_bg, (0, 0))
-            elif game.clan.current_season == 'Leaf-bare':
-                screen.blit(self.leafbare_bg, (0, 0))
-            elif game.clan.current_season == 'Leaf-fall':
-                screen.blit(self.leaffall_bg, (0, 0))
         now = pygame.time.get_ticks()
         try:
             if self.texts[self.text_index][0] == "[" and self.texts[self.text_index][-1] == "]":

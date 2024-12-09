@@ -1454,8 +1454,7 @@ class Cat:
             print(f"WARNING: saving history of cat #{self.ID} didn't work")
 
     def shunned_demotion(self):
-        """ lifegen function for shunned deps/leaders"""
-        print(self.name, "shunned demotion")
+        """ lifegen function for shunned cats being demoted"""
 
         text = ""
         if self.status == "leader":
@@ -3991,9 +3990,9 @@ def create_example_cats():
                    'NOLEFTEAR', 'NORIGHTEAR', 'MANLEG']
     for a in range(12):
         if a in e:
-            game.choose_cats[a] = Cat(status='kitten', biome=None)
+            game.choose_cats[a] = create_cat(status='kitten', biome=None)
         else:
-            game.choose_cats[a] = Cat(status=choice(
+            game.choose_cats[a] = create_cat(status=choice(
                 ['kitten']), biome=None)
         if game.choose_cats[a].moons >= 160:
             game.choose_cats[a].moons = choice(range(120, 155))

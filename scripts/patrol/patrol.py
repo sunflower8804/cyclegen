@@ -372,30 +372,49 @@ class Patrol:
             possible_patrols.extend(self.generate_patrol_events(self.TRAINING_GEN))
             possible_patrols.extend(self.generate_patrol_events(self.MEDCAT_GEN))
         elif game.switches["patrol_category"] == 'lifegen':
-            if game.clan.your_cat.status == 'kitten':
+
+            if game.clan.your_cat.shunned != 0:
+                murder_history = History.get_murders(game.clan.your_cat)
+                history = None
+                status = game.clan.your_cat.status
+                if "is_murderer" in murder_history:
+                    history = murder_history["is_murderer"]
+                else:
+                    status = game.clan.your_cat.status
+                if history:
+                    if "demoted_from" in history[-1] and history[-1]["demoted_from"]:
+                        status = history[-1]["demoted_from"]
+                    else:
+                        status = game.clan.your_cat.status
+                else:
+                    status = game.clan.your_cat.status
+            else:
+                status = game.clan.your_cat.status
+
+            if status == 'kitten':
                 possible_patrols.extend(self.generate_patrol_events(self.kit_lifegen))
             else:
                 possible_patrols.extend(self.generate_patrol_events(self.general_lifegen))
 
-                if game.clan.your_cat.status == 'apprentice':
+                if status == 'apprentice':
                     possible_patrols.extend(self.generate_patrol_events(self.app_lifegen))
-                elif game.clan.your_cat.status == 'medicine cat apprentice':
+                elif status == 'medicine cat apprentice':
                     possible_patrols.extend(self.generate_patrol_events(self.medapp_lifegen))
-                elif game.clan.your_cat.status == 'mediator apprentice':
+                elif status == 'mediator apprentice':
                     possible_patrols.extend(self.generate_patrol_events(self.mediatorapp_lifegen))
-                elif game.clan.your_cat.status == "queen's apprentice":
+                elif status == "queen's apprentice":
                     possible_patrols.extend(self.generate_patrol_events(self.queenapp_lifegen))
-                elif game.clan.your_cat.status == "queen":
+                elif status == "queen":
                     possible_patrols.extend(self.generate_patrol_events(self.queen_lifegen))
-                elif game.clan.your_cat.status == 'medicine cat':
+                elif status == 'medicine cat':
                     possible_patrols.extend(self.generate_patrol_events(self.med_lifegen))
-                elif game.clan.your_cat.status == 'mediator':
+                elif status == 'mediator':
                     possible_patrols.extend(self.generate_patrol_events(self.mediator_lifegen))
-                elif game.clan.your_cat.status == 'deputy':
+                elif status == 'deputy':
                     possible_patrols.extend(self.generate_patrol_events(self.deputy_lifegen))
-                elif game.clan.your_cat.status == 'leader':
+                elif status == 'leader':
                     possible_patrols.extend(self.generate_patrol_events(self.leader_lifegen))
-                elif game.clan.your_cat.status == 'elder':
+                elif status == 'elder':
                     possible_patrols.extend(self.generate_patrol_events(self.elder_lifegen))
                 else:
                     possible_patrols.extend(self.generate_patrol_events(self.warrior_lifegen))
