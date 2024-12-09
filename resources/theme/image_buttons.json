@@ -6325,6 +6325,176 @@
                 "path": "resources/images/buttons/warrior.png"
             }
         }
+    },
+    "#faith_starclan_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/faith_starclan.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/faith_starclan_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/faith_starclan_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/faith_starclan_unavailable.png"
+            }
+        }
+    },
+    "#faith_neutral_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/faith_neutral.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/faith_neutral_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/faith_neutral_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/faith_neutral_unavailable.png"
+            }
+        }
+    },
+    "#faith_darkforest_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/faith_darkforest.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/faith_darkforest_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/faith_darkforest_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/faith_darkforest_unavailable.png"
+            }
+        }
+    },
+    "#faith_flexible_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/faith_flexible.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/faith_flexible_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/faith_flexible_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/faith_flexible_unavailable.png"
+            }
+        }
+    },
+    "#patches_tint_none": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/patches_tint_none.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/patches_tint_none_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/patches_tint_none_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/patches_tint_none_unavailable.png"
+            }
+        }
+    },
+    "#patches_tint_offwhite": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/patches_tint_offwhite.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/patches_tint_offwhite_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/patches_tint_offwhite_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/patches_tint_offwhite_unavailable.png"
+            }
+        }
+    },
+    "#patches_tint_cream": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/patches_tint_cream.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/patches_tint_cream_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/patches_tint_cream_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/patches_tint_cream_unavailable.png"
+            }
+        }
+    },
+    "#patches_tint_darkcream": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/patches_tint_darkcream.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/patches_tint_darkcream_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/patches_tint_darkcream_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/patches_tint_darkcream_unavailable.png"
+            }
+        }
+    },
+    "#patches_tint_gray": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/patches_tint_grey.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/patches_tint_grey_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/patches_tint_grey_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/patches_tint_grey_unavailable.png"
+            }
+        }
+    },
+    "#patches_tint_pink": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/patches_tint_pink.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/patches_tint_pink_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/patches_tint_pink_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/patches_tint_pink_unavailable.png"
+            }
+        }
     }
 }
     

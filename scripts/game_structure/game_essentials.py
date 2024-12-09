@@ -145,6 +145,7 @@ class Game:
         'window_open': False,
         'windows_dict': [],
         'continue_after_death': False,
+        "customise_new_life": False
     }
     all_screens = {}
     cur_events = {}

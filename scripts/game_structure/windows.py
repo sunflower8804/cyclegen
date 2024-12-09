@@ -2195,7 +2195,8 @@ class DeathScreen(UIWindow):
             elif event.ui_element == self.mediator_button4:
                 game.last_screen_forupdate = None
                 game.switches['window_open'] = False
-                game.switches['cur_screen'] = "new life screen"
+                game.switches['customise_new_life'] = True
+                game.switches['cur_screen'] = "make clan screen"
                 game.switches['continue_after_death'] = False
                 self.begin_anew_button.kill()
                 self.pick_path_message.kill()
