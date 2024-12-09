@@ -4,14 +4,16 @@
 		"intensity": "low",
 		"interactions": [
 			"m_c wishes {PRONOUN/m_c/subject} could get {PRONOUN/m_c/poss} pelt to shine like r_c's.",
-			"m_c wishes {PRONOUN/m_c/poss} claws looked as nice as r_c's."
+			"m_c wishes {PRONOUN/m_c/poss} claws looked as nice as r_c's.",
+			"m_c sighs as r_c is assigned to a task m_c has been wanting for moons."
 		]
 	},
 	{
 		"id": "jel_inc_med1",
 		"interactions": [
 			"m_c thinks the prey r_c is biting into on the other side of camp looks delicious.",
-			"m_c wishes {PRONOUN/m_c/subject} had it as easy as r_c did."
+			"m_c wishes {PRONOUN/m_c/subject} had it as easy as r_c did.",
+			"r_c gets praised for something miniscule while m_c didn't get a word of thanks for {PRONOUN/m_c/poss} deeds."
 		]
 	},
 	{
@@ -176,7 +178,6 @@
 	},
 	{
 		"id": "H1_jealousydecrease_med",
-		"intensity": "medium",
 		"interactions": [
 			"m_c snickers as r_c falls flat on {PRONOUN/r_c/poss} face in the middle of camp."
 		],
@@ -208,7 +209,8 @@
 		"id": "jel_inc_med4",
 		"intensity": "high",
 		"interactions": [
-			"m_c watches r_c in annoyance wishing {PRONOUN/m_c/subject} {VERB/m_c/were/was} as youthful as {PRONOUN/r_c/object}."
+			"m_c watches r_c in annoyance, wishing {PRONOUN/m_c/subject} {VERB/m_c/were/was} as youthful as {PRONOUN/r_c/object}.",
+			"m_c watches r_c help around camp, wishing {PRONOUN/m_c/poss} joints still worked like r_c's."
 		],
 		"main_status_constraint": [
 			"elder"
@@ -220,6 +222,28 @@
 			"mediator apprentice",
 			"deputy",
 			"warrior"
+		]
+	},
+	{
+		"id": "H1_jealoustocamp_lifegen",
+		"interactions": [
+			"m_c wishes {PRONOUN/m_c/subject} can stay in the dens all dusk like r_c.",
+			"m_c thinks r_c's job must be so <i>easy</i>.",
+			"m_c scoffs as r_c tells {PRONOUN/m_c/object} about {PRONOUN/r_c/poss} day, but internally m_c is jealous of {PRONOUN/r_c/poss} simple duties.",
+			"m_c grumbles as {PRONOUN/m_c/subject} {VERB/m_c/notice/notices} r_c lazily laying across the warm ground, while m_c has to go on yet another patrol."
+		],
+		"main_status_constraint": [
+			"warrior",
+			"apprentice",
+			"medicine cat apprentice",
+			"medicine cat",
+			"deputy"
+		],
+		"random_status_constraint": [
+			"queen",
+			"queen's apprentice",
+			"mediator apprentice",
+			"mediator"
 		]
 	}
 ]
