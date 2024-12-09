@@ -186,5 +186,245 @@
             "charismatic",
             "strange"
         ]
+    },
+    {
+        "id": "skill_thoughts_h1",
+        "thoughts": [
+            "Misses having a real den"
+        ],
+        "main_skill_constraint": [
+            "ARTISTAN,1", "CAMP,1", "CLEAN,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_h2",
+        "thoughts": [
+            "Imagines what the camp would look like if {PRONOUN/m_c/subject} had something to decorate it with",
+            "Searches around for items that could be used as decorations",
+            "Wants to see something shiny again",
+            "Thinks the black goop is anything but a statement",
+            "Thinks the camp could use a splash of color but can't find anything colorful",
+            "Is bored without something to do",
+            "Judges c_n's decorating choices"
+        ],
+        "main_skill_constraint": [
+            "ARTISTAN,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_h3",
+        "thoughts": [
+            "Is frustrated as the black, goopy ground makes it impossible to build a solid structure",
+            "Gives up as {PRONOUN/m_c/poss} attempt at fixing around the camp proves futile",
+            "Wonders if the dens will stay permanently damaged"
+        ],
+        "main_skill_constraint": [
+            "CAMP,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_h4",
+        "thoughts": [
+            "Finds it difficult to stay clean",
+            "Feels gross as the black goop seems to permanently stay on {PRONOUN/m_c/poss} fur",
+            "Feels like {PRONOUN/m_c/subject} will lick off {PRONOUN/m_c/poss} fur if {PRONOUN/m_c/subject} {VERB/m_c/try/tries} to clean {PRONOUN/m_c/self} any longer",
+            "Doesn't try to clean other cats",
+            "Makes peace with {PRONOUN/m_c/poss} perpetual state of filth",
+            "Wishes {PRONOUN/m_c/subject} {VER/m_c/were/was} alive again just to get the goop off {PRONOUN/m_c/poss} pelt",
+            "Doesn't let other cats touch {PRONOUN/m_c/object}"
+        ],
+        "main_skill_constraint": [
+            "CLEAN,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_h5",
+        "thoughts": [
+            "Tries to climb up the dark trees",
+            "Misses sinking {PRONOUN/m_c/poss} claws in real wood",
+            "Doesn't feel enriched within {PRONOUN/m_c/poss} enclosure"
+        ],
+        "main_skill_constraint": [
+            "CLIMBER,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_h6",
+        "thoughts": [
+            "Is curious on if the Dark Forest is anything more than a forest",
+            "Peeks around the dark trees with wonder",
+            "Tries to explore through the goop",
+            "Realizes {PRONOUN/m_c/subject} never appreciated the beauty of c_n's biome until it was stripped away",
+            "Misses the seasons",
+            "Thinks everything looks the same",
+            "Wonders if {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been going in circles while exploring and never realized it"
+        ],
+        "main_skill_constraint": [
+            "EXPLORER,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_h7",
+        "thoughts": [
+            "Is devastated to find there are no fish in the Dark Forest",
+            "Fimshin' is life and {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not livin'",
+            "Imagines what it would be like to catch a fish one last time"
+        ],
+        "main_skill_constraint": [
+            "FISHER,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_h8",
+        "thoughts": [
+            "Finds it impossible to dig in the goop",
+            "Regrets trying to dig a hole as {PRONOUN/m_c/poss} paws blacken with goop",
+            "Dreams of digging a tunnel to StarClan",
+            "Wonders if c_n would find any of {PRONOUN/m_c/poss} hidden passages underneath the camp"
+        ],
+        "main_skill_constraint": [
+            "TUNNELER,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_h9",
+        "thoughts": [
+            "Saddened by the lack of trinkets or shiny things in the Dark Forest",
+            "Misses {PRONOUN/m_c/poss} object collection dearly",
+            "Wonders if any cat will find {PRONOUN/m_c/poss} hidden stash of curious objects",
+            "Wonders if StarClan has any trinkets to find",
+            "Asks other cats if they found anything interesting while attempting to explore through the dark trees",
+            "Tells woeful stories about {PRONOUN/m_c/poss} object collection to any cat who will listen",
+            "Feels devastated as {PRONOUN/m_c/subject} {VERB/m_c/start/starts} to forget what {PRONOUN/m_c/poss} trinkets look like"
+        ],
+        "main_skill_constraint": [
+            "TREASURE,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_h10",
+        "thoughts": [
+            "Feels lost as {PRONOUN/m_c/subject} {VERB/m_c/have/has} no sense of time in the Dark Forest",
+            "Is desperate to see the sun fall and rise again",
+            "Wonders if any other cat feels like time is perpetually still",
+            "Feels frustrated as the seasons never seem to change"
+        ],
+        "main_skill_constraint": [
+            "TIME,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_starghost",
+        "thoughts": [
+            "Feels like {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} belong here",
+            "Wonders if {PRONOUN/m_c/subject} {VERB/m_c/are/is} being punished",
+            "Subconsciously wanders around to find {PRONOUN/m_c/poss} friends from the other side, yet is met with nothing"
+        ],
+        "main_skill_constraint": [
+            "STAR,1", "GHOST,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_star",
+        "thoughts": [
+            "Tries to ask StarClan for guidance",
+            "Wonders if being sent to the Dark Forest is a test",
+            "Feels misplaced and misguided",
+            "Bitterly knows {PRONOUN/m_c/subject} should be surrounded by stars instead of black goop"
+        ],
+        "main_skill_constraint": [
+            "STAR,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_dark",
+        "thoughts": [
+            "Dreadfully knows {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} exactly where {PRONOUN/m_c/subject} {VERB/m_c/are/is} meant to be",
+            "Thought the Dark Forest was going to be much cooler",
+            "Feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} in {PRONOUN/m_c/poss} element"
+        ],
+        "main_skill_constraint": [
+            "DARK,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_fighter",
+        "thoughts": [
+            "Excited to be surrounded by other fighters like {PRONOUN/m_c/object}",
+            "Doesn't think the Dark Forest is so bad",
+            "Fights {PRONOUN/m_c/poss} frustrations with, well, more fighting!",
+            "Has a love hate relationship with the lack of rules here",
+            "Doesn't mind the goop as long as it doesn't seep into {PRONOUN/m_c/poss} claws",
+            "Is getting bored of {PRONOUN/m_c/poss} opponents",
+            "Thinks {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} starting to get rusty"
+        ],
+        "main_skill_constraint": [
+            "FIGHTER,1"
+        ]
+    },
+    {
+        "id": "skill_thoughts_healer",
+        "thoughts": [
+            "Is unnerved with the lack of herbs in the Dark Forest",
+            "Groans as r_c approaches {PRONOUN/m_c/object} with wounds",
+            "Feels defeated as herbs die off before {PRONOUN/m_c/poss} eyes",
+            "Observes the plant life - or the lack thereof",
+            "Wonders if {PRONOUN/m_c/subject} should give c_n some advice on a recent obscure illness",
+            "Is always busy with injuries",
+            "Wonders why cats are able to be hurt while dead"
+        ],
+        "main_skill_constraint": [
+            "HEALER,1"
+        ],
+        "random_living_status": [
+            "darkforest"
+        ]
+    },
+    {
+        "id": "skill_thoughts_hunter",
+        "thoughts": [
+            "Feels bored as there is nothing to hunt",
+            "Feels unnerved by the lack of animal life in the Dark Forest",
+            "Decides to stalk r_c to pass the time",
+            "Wonders if r_c would agree to pretend to be prey so {PRONOUN/m_c/subject} can finally hunt <i>something</i>",
+            "Stalks around the edge of the Dark Forest border to see if {PRONOUN/m_c/subject} can pounce on a StarClan cat"
+        ],
+        "main_skill_constraint": [
+            "HUNTER,1"
+        ],
+        "random_living_status": [
+            "darkforest"
+        ]
+    },
+    {
+        "id": "to_living_thoughts",
+        "thoughts": [
+            "Wonders how r_c is fairing",
+            "Whispers lies into r_c's ear to cause chaos",
+            "Misguides r_c from success",
+            "Decides to direct a disaster c_n's way",
+            "Prays on c_n's downfall"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "leader_df",
+        "thoughts": [
+            "Is glad to not have to rule c_n anymore",
+            "Frowns upon c_n",
+            "Thinks c_n is making all the wrong decisions",
+            "Can at least have a decent rest, even if it's in goop",
+            "Wonders about StarClans reasoning for putting {PRONOUN/m_c/object} in the Dark Forest",
+            "Judges c_n's leader",
+            "Judges c_n's deputy",
+            "Convinced c_n is not doing well without {PRONOUN/m_c/object}",
+            "Contemplates causing chaos"
+        ],
+        "main_status_constraint": [
+            "leader",
+            "deputy"
+        ]
     }
 ]

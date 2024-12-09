@@ -54,8 +54,10 @@
 		"cat_amount": 3,
 		"intensity": "low",
 		"interactions": [
-			"m_c, r_c1, and r_c2 had a nice talk, while eating.",
-			"m_c, r_c1, and r_c2 took a sunbath and had a little small talk."
+			"m_c, r_c1, and r_c2 had a nice talk while eating.",
+			"m_c, r_c1, and r_c2 took a sunbath and had a little small talk.",
+			"While having a lazy morning, m_c, r_c1, and r_c2 gossip about their peers.",
+			"m_c, r_c1, and r_c2 partake in a lazy evening as the sun hits the camp just right."
 		],
 		"general_reaction": {
 			"comfortable": "increase",

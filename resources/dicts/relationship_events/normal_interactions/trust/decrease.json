@@ -4,7 +4,10 @@
 		"intensity": "low",
 		"interactions": [
 			"m_c doesn't think that r_c has been completely honest lately.",
-			"m_c thinks r_c has been acting strangely."
+			"m_c thinks r_c has been acting strangely.",
+			"m_c has a suspicion that r_c is following {PRONOUN/m_c/object} around camp but doesn't want to say anything.",
+			"r_c's sudden curiosity and questions about certain topics has m_c wondering why r_c is so interested.",
+			"m_c is realizing r_c has been lying about a few things."
 		]
 	},
 	{
@@ -213,8 +216,25 @@
 			"m_c doesn't let r_c watch the kits."
 		],
 		"random_status_constraint": [
-			"queen apprentice",
+			"queen's apprentice",
 			"queen"
+		],
+		"reaction_random_cat": {
+			"trust": "decrease"
+		}
+	},
+	{
+		"id": "trust_decrease_lifegen_H1",
+		"interactions": [
+			"m_c tries to hide a broken toy from r_c's sight but ends up being unsuccessful.",
+			"m_c moves r_c's nest to the wrong spot, and now r_c refuses to let m_c touch it."
+		],
+		"main_status_constraint": [
+			"queen's apprentice",
+			"queen"
+		],
+		"random_status_constraint": [
+			"kitten"
 		],
 		"reaction_random_cat": {
 			"trust": "decrease"
