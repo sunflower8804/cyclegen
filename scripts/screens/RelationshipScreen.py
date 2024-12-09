@@ -53,6 +53,7 @@ class RelationshipScreen(Screens):
         self.next_page_button = None
         self.previous_page_button = None
         self.show_empty_text = None
+        self.show_you_text = None
         self.show_dead_text = None
         self.back_button = None
         self.next_cat_button = None
@@ -115,8 +116,10 @@ class RelationshipScreen(Screens):
                             self.log_icon,
                             self.checkboxes["show_dead"],
                             self.checkboxes["show_empty"],
+                            self.checkboxes["show_you"],
                             self.show_dead_text,
                             self.show_empty_text,
+                            self.show_you_text,
                         ],
                     )
                 elif self.next_cat == 0:
@@ -133,8 +136,10 @@ class RelationshipScreen(Screens):
                             self.log_icon,
                             self.checkboxes["show_dead"],
                             self.checkboxes["show_empty"],
+                            self.checkboxes["show_you"],
                             self.show_dead_text,
                             self.show_empty_text,
+                            self.show_you_text,
                         ],
                     )
                 elif self.previous_cat == 0:
@@ -151,8 +156,10 @@ class RelationshipScreen(Screens):
                             self.log_icon,
                             self.checkboxes["show_dead"],
                             self.checkboxes["show_empty"],
+                            self.checkboxes["show_you"],
                             self.show_dead_text,
                             self.show_empty_text,
+                            self.show_you_text,
                         ],
                     )
                 else:
@@ -171,8 +178,10 @@ class RelationshipScreen(Screens):
                             self.log_icon,
                             self.checkboxes["show_dead"],
                             self.checkboxes["show_empty"],
+                            self.checkboxes["show_you"],
                             self.show_dead_text,
                             self.show_empty_text,
+                            self.show_you_text,
                         ],
                     )
             elif event.ui_element == self.checkboxes["show_dead"]:
@@ -186,6 +195,13 @@ class RelationshipScreen(Screens):
                 game.clan.clan_settings[
                     "show empty relation"
                 ] = not game.clan.clan_settings["show empty relation"]
+                self.update_checkboxes()
+                self.apply_cat_filter()
+                self.update_cat_page()
+            elif event.ui_element == self.checkboxes["show_you"]:
+                game.clan.clan_settings[
+                    "show only you"
+                ] = not game.clan.clan_settings["show only you"]
                 self.update_checkboxes()
                 self.apply_cat_filter()
                 self.update_cat_page()
@@ -248,12 +264,17 @@ class RelationshipScreen(Screens):
 
         self.show_dead_text = pygame_gui.elements.UITextBox(
             "Show Dead",
-            ui_scale(pygame.Rect((110, 505), (100, 30))),
+            ui_scale(pygame.Rect((110, 490), (100, 30))),
             object_id="#text_box_30_horizleft",
         )
         self.show_empty_text = pygame_gui.elements.UITextBox(
             "Show Empty",
-            ui_scale(pygame.Rect((110, 550), (100, 30))),
+            ui_scale(pygame.Rect((110, 525), (100, 30))),
+            object_id="#text_box_30_horizleft",
+        )
+        self.show_you_text = pygame_gui.elements.UITextBox(
+            "Only You",
+            ui_scale(pygame.Rect((110, 560), (100, 30))),
             object_id="#text_box_30_horizleft",
         )
 
@@ -345,6 +366,8 @@ class RelationshipScreen(Screens):
         del self.show_dead_text
         self.show_empty_text.kill()
         del self.show_empty_text
+        self.show_you_text.kill()
+        del self.show_you_text
         self.previous_page_button.kill()
         del self.previous_page_button
         self.next_page_button.kill()
@@ -370,7 +393,7 @@ class RelationshipScreen(Screens):
             checkbox_type = "@unchecked_checkbox"
 
         self.checkboxes["show_dead"] = UIImageButton(
-            ui_scale(pygame.Rect((78, 505), (34, 34))), "", object_id=checkbox_type
+            ui_scale(pygame.Rect((78, 490), (34, 34))), "", object_id=checkbox_type
         )
 
         if game.clan.clan_settings["show empty relation"]:
@@ -379,7 +402,17 @@ class RelationshipScreen(Screens):
             checkbox_type = "@unchecked_checkbox"
 
         self.checkboxes["show_empty"] = UIImageButton(
-            ui_scale(pygame.Rect((78, 550), (34, 34))), "", object_id=checkbox_type
+            ui_scale(pygame.Rect((78, 525), (34, 34))), "", object_id=checkbox_type
+        )
+
+        # LG: only you filter
+        if game.clan.clan_settings["show only you"]:
+            checkbox_type = "@checked_checkbox"
+        else:
+            checkbox_type = "@unchecked_checkbox"
+
+        self.checkboxes["show_you"] = UIImageButton(
+            ui_scale(pygame.Rect((78, 560), (34, 34))), "", object_id=checkbox_type
         )
 
     def update_focus_cat(self):
@@ -649,6 +682,14 @@ class RelationshipScreen(Screens):
                     self.filtered_cats,
                 )
             )
+
+        # LG: you filter
+        if game.clan.clan_settings["show only you"]:
+            self.filtered_cats = list(
+                filter(lambda rel: rel.cat_to.ID == game.clan.your_cat.ID, self.filtered_cats)
+            )
+        # ---
+
 
         # Filter for search
         search_cats = []

@@ -787,12 +787,20 @@ class PatrolScreen(Screens):
         else:
             self.elements['df_icon'].disable()
 
-        self.elements["date_icon"] = UISurfaceImageButton(
+        # self.elements["date_icon"] = UISurfaceImageButton(
+        #     ui_scale(pygame.Rect((403, 560), (34, 34))),
+        #     Icon.STARCLAN,
+        #     get_button_dict(ButtonStyles.ICON, (34, 34)),
+        #     object_id="@buttonstyles_icon",
+        #     manager=MANAGER,
+        # )
+
+        # # idk how to add my own icons so this one gets to be an image button
+        self.elements["date_icon"] = UIImageButton(
             ui_scale(pygame.Rect((403, 560), (34, 34))),
-            Icon.STARCLAN,
-            get_button_dict(ButtonStyles.ICON, (34, 34)),
-            object_id="@buttonstyles_icon",
-            manager=MANAGER,
+            "",
+            object_id="#date_button",
+            manager=MANAGER
         )
 
         if (

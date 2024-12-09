@@ -1023,6 +1023,9 @@ class ProfileScreen(Screens):
             self.profile_elements[ele].kill()
         self.profile_elements = {}
 
+        if self.your_tab:
+            self.your_tab.kill()
+
         if self.user_notes:
             self.user_notes = "Click the check mark to enter notes about your cat!"
 
@@ -3217,7 +3220,7 @@ class ProfileScreen(Screens):
                 manager=MANAGER,
             )
             self.murder_cat_button = UIImageButton(
-                ui_scale(pygame.Rect((1156, 1045), (344, 72))),
+                ui_scale(pygame.Rect((578, 522), (172, 36))),
                 "",
                 object_id="#murder_button",
                 tool_tip_text='Choose to murder one of your clanmates',
@@ -3228,7 +3231,7 @@ class ProfileScreen(Screens):
                 
             if game.clan.your_cat.joined_df:
                 self.exit_df_button = UIImageButton(
-                ui_scale(pygame.Rect((1156, 1115), (344, 72))),
+                ui_scale(pygame.Rect((578, 558), (172, 36))),
                 "",
                 object_id="#exit_df_button",
                 tool_tip_text='Leave the Dark Forest',
@@ -3236,7 +3239,7 @@ class ProfileScreen(Screens):
                 )
             else:
                 self.join_df_button = UIImageButton(
-                ui_scale(pygame.Rect((1156, 1115), (344, 72))),
+                ui_scale(pygame.Rect((578, 558), (172, 36))),
                 "",
                 object_id="#join_df_button",
                 tool_tip_text='Join the Dark Forest',
@@ -3245,7 +3248,7 @@ class ProfileScreen(Screens):
             if game.clan.your_cat.moons < 6:
                 self.join_df_button.disable()
             self.affair_button = UIImageButton(
-                ui_scale(pygame.Rect((1156, 1188), (344, 72))),
+                ui_scale(pygame.Rect((578, 594), (172, 36))),
                 "",
                 object_id="#affair_button",
                 tool_tip_text='Have an affair with one of your clanmates',
@@ -3427,14 +3430,14 @@ class ProfileScreen(Screens):
 
             elif self.the_cat.dead:
                 if not self.the_cat.outside and not self.the_cat.df:
-                    object_id = "#exile_df_button"
+                    dead_button = "#exile_df_button"
                 elif self.the_cat.df and not self.the_cat.outside:
-                    object_id = "#send_ur_button"
+                    dead_button = "#send_ur_button"
                 else:
-                    object_id = "#guide_sc_button"
+                    dead_button = "#guide_sc_button"
 
                 if game.clan.instructor.ID == self.the_cat.ID:
-                    self.exile_cat_button = UIImageButton(ui_scale(pygame.Rect((1156, 1050), (344, 92))),
+                    self.exile_cat_button = UIImageButton(ui_scale(pygame.Rect((578, 450), (172, 46))),
                                                             "",
                                                           object_id= "#follow_sc_button",
                                                            tool_tip_text='Your Clan will go to StarClan'
@@ -3446,7 +3449,7 @@ class ProfileScreen(Screens):
                         self.exile_cat_button.disable()
 
                 elif game.clan.demon.ID == self.the_cat.ID:
-                    self.exile_cat_button = UIImageButton(ui_scale(pygame.Rect((1156, 1050), (344, 92))),
+                    self.exile_cat_button = UIImageButton(ui_scale(pygame.Rect((578, 450), (172, 46))),
                                                             "",
                                                           object_id= "#follow_df_button",
                                                           tool_tip_text='Your Clan will go to the Dark'
@@ -3456,29 +3459,15 @@ class ProfileScreen(Screens):
                         self.exile_cat_button.disable()
 
                 else:
-                    self.exile_cat_button = UIImageButton(ui_scale(pygame.Rect((1156, 1050), (344, 92))),
-                                                          "Error",
-                                                          object_id=object_id,
+                    self.exile_cat_button = UIImageButton(ui_scale(pygame.Rect((578, 450), (172, 46))),
+                                                          "",
+                                                          object_id=dead_button,
                                                           starting_height=2, manager=MANAGER)
-                    if object_id == "#send_ur_button":
-                        self.exile_cat_button.tool_tip_text = "Send to Unknown Residence"
-            else:
-                self.exile_cat_button = UIImageButton(
-                    ui_scale(pygame.Rect((578, 450), (172, 36))),
-                    "",
-                    object_id="#exile_cat_button",
-                    tool_tip_text="This cannot be reversed.",
-                    starting_height=2,
-                    manager=MANAGER,
-                )
-                self.exile_cat_button.disable()
 
             if not self.the_cat.dead:
                 self.kill_cat_button.enable()
             else:
                 self.kill_cat_button.disable()
-
-
 
             if self.the_cat.ID != game.clan.your_cat.ID:
                 self.murder_cat_button.hide()
@@ -3759,7 +3748,7 @@ class ProfileScreen(Screens):
                 pygame.Rect(0, order.index("SC/DF") * 70, 640, 70)
             )
             return pygame.transform.scale(
-                biome_platforms.subsurface(pygame.Rect(0 + offset, 0, 105, 70)),
+                biome_platforms.subsurface(pygame.Rect(0 + offset, 0, 80, 70)),
                 (240, 210),
             )
         elif the_cat.dead or game.clan.instructor.ID == the_cat.ID:
@@ -3767,7 +3756,7 @@ class ProfileScreen(Screens):
                 pygame.Rect(0, order.index("SC/DF") * 70, 640, 70)
             )
             return pygame.transform.scale(
-                biome_platforms.subsurface(pygame.Rect(160 + offset, 0, 105, 70)),
+                biome_platforms.subsurface(pygame.Rect(160 + offset, 0, 80, 70)),
                 (240, 210),
             )
         else:

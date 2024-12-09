@@ -561,7 +561,7 @@
             "death"
         ],
         "texts": [
-            "You attack and kill v_c, but {PRONOUN/v_c/subject} {VERB/v_c/leave/leaves} you with such heavy injuries that you succumb to {PRONOUN/v_c/object} the next morning."
+            "You attack and kill v_c, but {PRONOUN/v_c/subject} {VERB/v_c/leave/leaves} you with such heavy injuries that you succumb to them the next morning."
         ]
     },
     "murder_event30": {

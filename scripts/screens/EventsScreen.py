@@ -369,7 +369,7 @@ class EventsScreen(Screens):
         )
 
         self.clan_info["symbol"] = pygame_gui.elements.UIImage(
-            ui_scale(pygame.Rect((167, 105), (100, 100))),
+            ui_scale(pygame.Rect((137, 105), (100, 100))),
             pygame.transform.scale(
                 clan_symbol_sprite(game.clan), ui_scale_dimensions((100, 100))
             ),

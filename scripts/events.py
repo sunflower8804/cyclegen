@@ -1452,9 +1452,9 @@ class Events:
         if 'retire' in game.switches:
             if game.switches['retire']:
                 game.switches['retire'] = False
-        if 'retire_reject' in game.switches:
-            if game.switches['retire_reject']:              
-                game.switches['retire_reject'] = False
+        # if 'retire_reject' in game.switches:
+        #     if game.switches['retire_reject']:              
+        #         game.switches['retire_reject'] = False
     
     def generate_death_event(self):
         if game.clan.your_cat.status == 'kitten':

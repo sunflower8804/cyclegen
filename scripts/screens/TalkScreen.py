@@ -131,7 +131,6 @@ class TalkScreen(Screens):
             get_arrow(5, arrow_left=True) + " Back",
             get_button_dict(ButtonStyles.SQUOVAL, (153, 30)),
             object_id="@buttonstyles_squoval",
-            sound_id="page_flip",
             manager=MANAGER,
         )
         self.scroll_container = pygame_gui.elements.UIScrollingContainer(ui_scale(pygame.Rect((250, 475), (450, 150))))
@@ -210,6 +209,44 @@ class TalkScreen(Screens):
                 f"{camp_bg_base_dir}/{biome}/{leaf}_{camp_nr}_{light_dark}.png"
             )
             all_backgrounds.append(platform_dir)
+        
+        #LG
+        starclan_camp = "resources/images/dead_camps/scbackground_sunsetclouds.png"
+        df_camp = "resources/images/dead_camps/dfbackground_eclipse.png"
+        ur_camp = "resources/images/urbg.png"
+
+        if (
+            self.the_cat.dead and
+            not self.the_cat.df and
+            not self.the_cat.outside
+            ):
+            all_backgrounds = [
+                starclan_camp,
+                starclan_camp,
+                starclan_camp,
+                starclan_camp
+            ]
+        elif (
+            self.the_cat.dead and
+            not self.the_cat.df and
+            self.the_cat.outside
+        ):
+            all_backgrounds = [
+                ur_camp,
+                ur_camp,
+                ur_camp,
+                ur_camp
+            ]
+        elif (
+            self.the_cat.dead and
+            self.the_cat.df
+        ):
+            all_backgrounds = [
+                df_camp,
+                df_camp,
+                df_camp,
+                df_camp
+            ]
 
         self.add_bgs(
             {
@@ -425,15 +462,15 @@ class TalkScreen(Screens):
             text = text[0]
 
             #the background image for the text
-            option_bg = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((860, 855 + y_pos), (540, 70))),
+            option_bg = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((430, 427 + y_pos), (270, 35))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
                                                                     "resources/images/option_bg.png").convert_alpha(),
-                                                                (540, 60)), manager=MANAGER)
+                                                                (270, 35)), manager=MANAGER)
             self.option_bgs[c] = option_bg
 
             #the button for dialogue choices
-            button = UIImageButton(ui_scale(pygame.Rect((390, 428 + y_pos), (34, 34))),
+            button = UIImageButton(ui_scale(pygame.Rect((390, 427 + y_pos), (34, 34))),
                                         text = "",
                                         object_id="#dialogue_choice_button", manager=MANAGER)
             self.choice_buttons[c] = button
@@ -441,12 +478,12 @@ class TalkScreen(Screens):
 
             #the text for dialogue choices
             option = pygame_gui.elements.UITextBox(str(text),
-                                                            ui_scale(pygame.Rect((870, 860 + y_pos), (540, 60))),
+                                                            ui_scale(pygame.Rect((435, 430 + y_pos), (270, 30))),
                                                             object_id="#text_box_30_horizleft",
                                                             manager=MANAGER)
             self.text_choices[c] = option
 
-            y_pos -= 80
+            y_pos -= 40
 
     def handle_choice(self, cat):
         for b in self.choice_buttons:
