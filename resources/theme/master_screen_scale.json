@@ -3696,23 +3696,6 @@
             }
         }
     },
-    "#random_dice_button": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/random_dice.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/random_dice_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/random_dice_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/random_dice_unavailable.png"
-            }
-        }
-    },
     "#faith_starclan_button": {
         "prototype": "#image_button",
         "images": {
