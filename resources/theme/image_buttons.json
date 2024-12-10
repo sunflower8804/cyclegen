@@ -2736,23 +2736,6 @@
             }
         }
     },
-    "#your_clan_button": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/your_clan.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/your_clan_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/your_clan_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/your_clan_unavailable.png"
-            }
-        }
-    },
     "#arrow_right_button": {
         "prototype": "#image_button",
         "images": {
