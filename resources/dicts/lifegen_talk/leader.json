@@ -251,7 +251,7 @@
             "they_blind"
         ],
         [
-            "Oh no you don't, y_c. Don't even try to convince me to make nice with r_c - it's not gonna happen. {PRONOUN/r_c/subject/CAP} totally stole the last fish from the freshkill pile! {VERB/r_c/don't/doesn't/CAP} {PRONOUN/r_c/subject} know that it's my favorite?",
+            "Oh no you don't, y_c. Don't even try to convince me to make nice with r_c - it's not gonna happen. {PRONOUN/r_c/subject/CAP} totally stole the last fish from the freshkill pile! {VERB/r_c/Don't/Doesn't} {PRONOUN/r_c/subject} know that it's my favorite?",
             "Okay, okay ... if you insist, I guess I can try talking to {PRONOUN/r_c/object} again.",
             "But don't try to get me to watch my tongue. If someone's acting like a stupid piece of fox-dung, I'm gonna call them a stupid piece of fox-dung!!!"
         ]
@@ -543,7 +543,7 @@
             "Hey, y_c! Sure, I'll play a game! Who do you want to play as?",
             "... Leader?",
             "[One of the queens quickly intervenes, apologizing to t_c for your transgression, but {PRONOUN/t_c/subject} quickly {VERB/t_c/brush/brushes} it off.]",
-            "Ah, don't worry about it. I'm happy to give up my position to y_c for a time. {PRONOUN/y_c/subject}'ll probably do a better job at it than I do, heh!",
+            "Ah, don't worry about it. I'm happy to give up my position to y_c for a time. {PRONOUN/y_c/subject/CAP}'ll probably do a better job at it than I do, heh!",
             "So, fearless leader, what are we going to do today?",
             "[You spend a few minutes delightfully ordering t_c around until the deputy comes and steals {PRONOUN/t_c/object} away.]"
         ]
@@ -2119,7 +2119,7 @@
             "[It hasn't rained in a while, but while on patrol with r_w and t_c, you discover a large patch of mud in the middle of the territory.]",
             "[It's darker than most mud you're familiar with, and looks stickier, too. It clings to the sticks and grasses around it, leaving black strands that remind you of heavy spiderwebs. It looks almost like...]",
             "[You meet t_c's eyes across the mud puddle, and {PRONOUN/t_c/poss} expression confirms what you're already thinking: this mud looks like the mud from the Dark Forest.]",
-            "We.. we should go. I really don't like the look of this.",
+            "We... we should go. I really don't like the look of this.",
             "[t_c darts away without waiting for the rest of the patrol to respond.]"
         ]
     ],

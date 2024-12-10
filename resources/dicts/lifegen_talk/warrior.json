@@ -245,7 +245,7 @@
             "they_blind"
         ],
         [
-            "You were distracted during training today, is everything alright? I know it's been rough lately, but.. you're doing very good, you know that?",
+            "You were distracted during training today, is everything alright? I know it's been rough lately, but... you're doing very good, you know that?",
             "You caught so much prey, won so many mock battles, gave so much back to the Clan..",
             "I'm proud of you, little one. I'm sure d_c is too."
         ]
@@ -463,7 +463,7 @@
             "they_blind"
         ],
         [
-            "Oh no you don't, y_c. Don't even try to convince me to make nice with r_c - it's not gonna happen. {PRONOUN/r_c/subject/CAP} totally stole the last fish from the freshkill pile! {VERB/r_c/don't/doesn't/CAP} {PRONOUN/r_c/subject} know that it's my favorite?",
+            "Oh no you don't, y_c. Don't even try to convince me to make nice with r_c - it's not gonna happen. {PRONOUN/r_c/subject/CAP} totally stole the last fish from the freshkill pile! {VERB/r_c/Don't/Doesn't} {PRONOUN/r_c/subject} know that it's my favorite?",
             "Okay, okay ... if you insist, I guess I can try talking to {PRONOUN/r_c/object} again.",
             "But don't try to get me to watch my tongue. If someone's acting like a stupid piece of fox-dung, I'm gonna call them a stupid piece of fox-dung!!!"
         ]
@@ -1602,7 +1602,7 @@
             "they_blind"
         ],
         [
-            "[You spot t_c lounging about in {PRONOUN/t_c/poss} nest, fast asleep. {VERB/t_c/aren't/isn't/CAP} {PRONOUN/t_c/subject} always up at this time? Did {PRONOUN/t_c/subject} fall asleep by accident?]",
+            "[You spot t_c lounging about in {PRONOUN/t_c/poss} nest, fast asleep. {VERB/t_c/Aren't/Isn't} {PRONOUN/t_c/subject} always up at this time? Did {PRONOUN/t_c/subject} fall asleep by accident?]",
             "[As you approach, {PRONOUN/t_c/subject} slowly {VERB/t_c/begin/begins} to stir in {PRONOUN/t_c/poss} nest]",
             "Zzz... huh? Wha? y_c? What *yawn* what time is... oh StarClan the patrols! I'm going to be late!"
         ]
@@ -3012,7 +3012,7 @@
             "they_hearing"
         ],
         [
-            "Can you believe the audacity of r_w?! y_c did you hear what {PRONOUN/r_w/subject} said? No? {PRONOUN/r_w/subject} said I'm a terrible mentor who doesn't know how to teach properly. I know my methods are different, I get that...",
+            "Can you believe the audacity of r_w?! y_c did you hear what {PRONOUN/r_w/subject} said? No? {PRONOUN/r_w/subject/CAP} said I'm a terrible mentor who doesn't know how to teach properly. I know my methods are different, I get that...",
             "But... Please understand y_c, it's good. It's good to do things a little differently. And I'm not perfect, I don't always get it right. But I try and that's enough for me... Is it good for you?",
             "[You tell them that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing {PRONOUN/t_c/poss} best and you really appreciate {PRONOUN/t_c/object} as a mentor. You wouldn't ever ask for someone else.]",
             "Woah... Sorry, caught me off guard there bud. Thank you, you're the best apprentice I could ask for. You're hard-working and dedicated. That's more than enough.",
@@ -4042,7 +4042,7 @@
             "[It hasn't rained in a while, but while on patrol with r_w and t_c, you discover a large patch of mud in the middle of the territory.]",
             "[It's darker than most mud you're familiar with, and looks stickier, too. It clings to the sticks and grasses around it, leaving black strands that remind you of heavy spiderwebs. It looks almost like...]",
             "[You meet t_c's eyes across the mud puddle, and {PRONOUN/t_c/poss} expression confirms what you're already thinking: this mud looks like the mud from the Dark Forest.]",
-            "We.. we should go. I really don't like the look of this.",
+            "We... we should go. I really don't like the look of this.",
             "[t_c darts away without waiting for the rest of the patrol to respond.]"
         ]
     ],

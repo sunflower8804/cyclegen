@@ -22,7 +22,7 @@
             "you_blind"
         ],
         [
-            "Aw. hello there, little one.",
+            "Aw. Hello there, little one.",
             "How did you get so far away from the nursery? Where's your {PRONOUN/t_p/parent}?",
             "Hm... You need to go back there, {PRONOUN/t_p/subject} will be worrying about you."
         ]
@@ -3969,7 +3969,7 @@
             "you_blind"
         ],
         [
-            "Oh, that's y_c! {PRONOUN/y_c/subject}{VERB/y_c/'ve/'s} grown so quickly.",
+            "Oh, that's y_c! {PRONOUN/y_c/subject/CAP}{VERB/y_c/'ve/'s} grown so quickly.",
             "I remember you being born, you know, even if it wasn't that long ago. It'll be amazing watching you grow to provide for the Clan. I wonder what you'll grow up to do.",
             "A big strong warrior, a gentle medicine cat, a wise mediator... or you could become a queen like I'm learning to right now.",
             "But that doesn't matter right now. Just focus on enjoying your life. That's what I think."

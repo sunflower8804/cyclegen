@@ -562,7 +562,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "m_n suggests that it's time to hone your climbing skills. {PRONOUN/m_n/subject} {VERB/m_n/guide/guides} you to a tall tree nearby, its branches waving invitingly in the wind.",
+        "intro_text": "m_n suggests that it's time to hone your climbing skills. {PRONOUN/m_n/subject/CAP} {VERB/m_n/guide/guides} you to a tall tree nearby, its branches waving invitingly in the wind.",
         "decline_text": "You choose not to climb the tree, deciding that it's a bit too daunting for now. You promise yourself to try again another day when you feel more prepared.",
         "chance_of_success": 55,
         "success_outcomes": [
@@ -782,7 +782,7 @@
                 "weight": 10
             },
             {
-                "text": "You admit to m_n that you'd like the experience, but are not yet confident in your ability alone. {PRONOUN/m_n/subject} had no intentions of going originally but offers to go with you. The two of you take on the task and succeed without issue.",
+                "text": "You admit to m_n that you'd like the experience, but are not yet confident in your ability alone. {PRONOUN/m_n/subject/CAP} had no intentions of going originally but offers to go with you. The two of you take on the task and succeed without issue.",
                 "exp": 10,
                 "weight": 20
             }
@@ -822,7 +822,7 @@
                 "weight": 20
             },
             {
-                "text": "Swimming! You're a master at that! Without hesitation you dive in and show off your skills. m_n laughs softly before calling you back. {PRONOUN/m_n/subject} {VERB/m_n/joke/jokes} that {PRONOUN/m_n/subject} should learn from you instead of teaching you!",
+                "text": "Swimming! You're a master at that! Without hesitation you dive in and show off your skills. m_n/CAP} {VERB/m_n/joke/jokes} that {PRONOUN/m_n/subject} should learn from you instead of teaching you!",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [

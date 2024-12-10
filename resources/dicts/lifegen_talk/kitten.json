@@ -1321,7 +1321,7 @@
         [
             "Hey um... y_c?",
             "I uh... had a spooky dream... can I snuggle with you?",
-            "Um... do you think cats find me annoying...? Because I.. care a lot. I just wanna be a good kit, y'know, and become the best cat I can be... like you said!!",
+            "Um... do you think cats find me annoying...? Because I... care a lot. I just wanna be a good kit, y'know, and become the best cat I can be... like you said!!",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} to sniffle after hearing your answer, but {VERB/t_c/give/gives} a pleased smile, closing {PRONOUN/t_c/poss} eyes and eventually falling back asleep.]"
         ]
     ],
@@ -2414,7 +2414,7 @@
             "you_blind"
         ],
         [
-            "Um, y_c? What are you doing? Can I.. um.. h-... help?",
+            "Um, y_c? What are you doing? Can I... um... h-... help?",
             "[You begin to explain something you learnt recently, but t_c seems to get nervous.]",
             "Are you sure that's... safe?"
         ]
@@ -2730,7 +2730,7 @@
             "neurotic"
         ],
         [
-            "Whoa.. they're so tiny..",
+            "Whoa... they're so tiny...",
             "[{PRONOUN/t_c/poss/CAP} ears pin back as {PRONOUN/t_c/subject} {VERB/t_c/take/takes} a deep breath, a look of determination crossing the timid kit's face.]",
             "I- I promise! I'll keep you safe!! You won't be scared all the time... like I am... Because y- you can count on me!"
         ]
@@ -2914,7 +2914,7 @@
         [
             "y_c! You'll never believe what r_k_unlawful tried to do!",
             "I caught {PRONOUN/r_k/object} trying to sneak out of camp! Can you believe that? {PRONOUN/r_k/subject/CAP} {VERB/r_k/were/was} breaking the rules on purpose!",
-            "Why would {PRONOUN/r_k/subject} even do that? {VERB/r_k/don't/doesn't/CAP} {PRONOUN/r_k/subject} want to be a good c_nClan cat? It doesn't make any sense.",
+            "Why would {PRONOUN/r_k/subject} even do that? {VERB/r_k/Don't/Doesn't} {PRONOUN/r_k/subject} want to be a good c_nClan cat? It doesn't make any sense.",
             "Anyway, that's all! I'm going to go back to playing now. If anyone else isn't following the rules, I'll come back and tell you!"
         ]
     ],
@@ -3438,7 +3438,7 @@
             "you_blind"
         ],
         [
-            "y_c, I made a friend! {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} super cool and helped me help so many cats!",
+            "y_c, I made a friend! {PRONOUN/d_c/subject/CAP}{VERB/d_c/'re/'s} super cool and helped me help so many cats!",
             "{PRONOUN/d_c/subject/CAP}{VERB/d_c/'ve/'s} got a really shiny pelt, and {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} seethrough! Isn't that cool?",
             "You wanna know {PRONOUN/d_c/poss} name?",
             "Well, {PRONOUN/d_c/subject} said {PRONOUN/d_c/poss} name was d_c!"
