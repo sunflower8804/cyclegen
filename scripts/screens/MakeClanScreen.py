@@ -2374,6 +2374,15 @@ class MakeClanScreen(Screens):
                         manager=MANAGER
                     )
                     pelt_y_pos += 40
+
+                self.elements["match_tortie"] = UISurfaceImageButton(
+                    ui_scale(pygame.Rect((340, 465), (123, 34))),
+                    "match tortie",
+                    get_button_dict(ButtonStyles.SQUOVAL, (123, 34)),
+                    object_id="@buttonstyles_rounded_rect",
+                    manager=MANAGER,
+                    starting_height=2
+                )
             elif self.current_selection == "pelt_colour":
                 for colour in Pelt.pelt_colours:
                     self.pelt_colour_buttons[colour] = UIImageButton(
@@ -2393,7 +2402,7 @@ class MakeClanScreen(Screens):
                     pelt_y_pos += 40
 
                 tint_x_pos = 256
-                tint_y_pos = 450
+                tint_y_pos = 480
                 for tint in [
                     "none", "pink", "gray", "red", "orange", "black",
                     "yellow", "purple", "blue", "dilute", "warmdilute", "cooldilute"
@@ -2401,7 +2410,7 @@ class MakeClanScreen(Screens):
                     self.tint_buttons[tint] = UIImageButton(
                         ui_scale(pygame.Rect((tint_x_pos, tint_y_pos), (40, 40))),
                         tint,
-                        object_id="",
+                        object_id=f"#tint_button_{tint}",
                         manager=MANAGER
                         )
                     tint_x_pos += 50
@@ -2493,7 +2502,7 @@ class MakeClanScreen(Screens):
                     self.white_patches_tint_buttons[tint] = UIImageButton(
                         ui_scale(pygame.Rect((tint_x_pos, tint_y_pos), (40, 40))),
                         "",
-                        object_id=f"#patches_tint_{tint}",
+                        object_id=f"#tint_button_{tint}",
                         manager=MANAGER
                         )
                     tint_x_pos += 45
@@ -3353,6 +3362,10 @@ class MakeClanScreen(Screens):
                 self.open_customize_cat()
             if "match_base" in self.elements and event.ui_element == self.elements["match_base"]:
                 self.tortiepattern = self.tortiebase
+                self.update_sprite()
+                self.update_disabled_buttons()
+            if "match_tortie" in self.elements and event.ui_element == self.elements["match_tortie"]:
+                self.tortiebase = self.tortiepattern.lower()
                 self.update_sprite()
                 self.update_disabled_buttons()
 
