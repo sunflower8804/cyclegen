@@ -62,7 +62,7 @@
                 ]
             },
             {
-                "text": "You swerve around, just as a cat lunges from the shadows and aims their claws at your pelt. You react faster than the attacker can, ducking the blow, before retailiating with a rake to their belly. You watch as they tumble to the ground from the attack. It seems you've learned a thing or two here.",
+                "text": "You swerve around, just as a cat lunges from the shadows and aims their claws at your pelt. You react faster than the attacker can, ducking the blow, before retaliating with a rake to their belly. You watch as they tumble to the ground from the attack. It seems you've learned a thing or two here.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -2146,7 +2146,7 @@
                 ]
             },
             {
-                "text": "You don't hesitate. You've met this cat before, emotions having blossomed into something more between you as you spent more and more nights within this place. Yet... There is still time. Still time to decide whether or not you should take the leap. Your heart is heavy as you part ways with a final twine of tails - before dispersing into the darkness once again alone.",
+                "text": "You don't hesitate. You've met this cat before, emotions having blossomed into something more between you as you spent more and more nights within this place. Yet... There is still time. Still time to decide whether or not you should take the leap. Your heart is heavy as you part ways with a final twine of tails - before dispersing into the darkness once again, alone.",
                 "exp": 15,
                 "weight": 20
             },
@@ -2213,7 +2213,7 @@
                 "weight": 10
             },
             {
-                "text": "Ambush! You're forced to fight off two cats a once. It's a whirlwind of blood, fur, claws, and teeth, but somehow you escape with your life.",
+                "text": "Ambush! You're forced to fight off two cats at once. It's a whirlwind of blood, fur, claws, and teeth, but somehow you escape with your life.",
                 "exp": 0,
                 "weight": 20,
                 "injury": [
@@ -2436,7 +2436,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You jump out of your fur as r_c lands beside you and narrowly avoid attacking {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} {VERB/r_c/appologize/appologizes} profusely and {VERB/r_c/say/says} {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} been following you from the trees so that {PRONOUN/r_c/subject} could speak to you without watching eyes. r_c does get a laugh out of the accidental scare however, before the two of you spend time talking in the quiet of the forest.",
+                "text": "You jump out of your fur as r_c lands beside you and narrowly avoid attacking {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} {VERB/r_c/apologize/apologizes} profusely and {VERB/r_c/say/says} {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} been following you from the trees so that {PRONOUN/r_c/subject} could speak to you without watching eyes. r_c does get a laugh out of the accidental scare however, before the two of you spend time talking in the quiet of the forest.",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
@@ -2539,7 +2539,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "Courage surges in you. You're not going to be cowed by a mere unsettling feeling! You yowl your challenge into the dark mists of the forest. As your gaze scans up you realize, with embarassment hot on your pelt, that it's just r_c. You remember that {PRONOUN/r_c/subject} wanted to speak to you now that you see {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} clearly {VERB/r_c/aren't/isn't} interested anymore, however, as {PRONOUN/r_c/subject} {VERB/r_c/hold/holds} back mirth at your paranoia...",
+                "text": "Courage surges in you. You're not going to be cowed by a mere unsettling feeling! You yowl your challenge into the dark mists of the forest. As your gaze scans up you realize, with embarrassment hot on your pelt, that it's just r_c. You remember that {PRONOUN/r_c/subject} wanted to speak to you now that you see {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} clearly {VERB/r_c/aren't/isn't} interested anymore, however, as {PRONOUN/r_c/subject} {VERB/r_c/hold/holds} back mirth at your paranoia...",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [

@@ -3359,7 +3359,7 @@ class ProfileScreen(Screens):
                     get_button_dict(ButtonStyles.LADDER_MIDDLE, (172, 36)),
                     object_id="@buttonstyles_ladder_middle",
                     starting_height=2,
-                    tool_tip_text='You will be more likely to recieve an apprentice.', 
+                    tool_tip_text='You will be more likely to receive an apprentice.', 
                     manager=MANAGER,
                     anchors={
                         "bottom_target": self.have_kits_button},
