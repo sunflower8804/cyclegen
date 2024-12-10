@@ -31,7 +31,7 @@
         [
             "Oh hello, y_c! Are you checking in on the kits today?",
             "They're really so lovely. I know the others will tell you kits are annoying but it's worth it!",
-            "Oh, you should have seen r_a as a kit. {PRONOUN/r_a/subject} {VERB/r_a/were/was} so cute! One time, {PRONOUN/r_a/subject}-",
+            "Oh, you should have seen r_a as a kit. {PRONOUN/r_a/subject/CAP} {VERB/r_a/were/was} so cute! One time, {PRONOUN/r_a/subject}-",
             "[r_a passes by the nursery, dropping a mouthful of moss onto the floor as {PRONOUN/r_a/subject} {VERB/r_a/rush/rushes} in.]",
             "Oh hello, r_a! I was just telling y_c about what you were like as a kit.",
             "What do you mean, 'don't'? There's no need to be embarrassed, I think it was adorable!"
@@ -326,7 +326,7 @@
             "Compassionate towards the role we perform, despite its importance.",
             "Some viewed us as wasting Clan resources. A long time ago, the parent of the queen's role, a cat called Ferncloud, received some... uncomfortable comments from individuals related to her choice.",
             "However, we do more than sit and play with kits, we help in ways medicine cats cannot. We're formally trained to recognise signs of illness in kits and queens, and to provide comfort in stressful situations.",
-            "I believe our constant presence with the kits helps us to realise something's wrong and get help before... the worst happens.",
+            "I believe our constant presence with the kits helps us to realise something's wrong and get help before... The worst happens.",
             "Just make sure to know that no matter what, everycat has their role to play. Don't be a cat who believes they're more important than those whose role is less flashy."
         ]
     ],
@@ -426,7 +426,7 @@
         ],
         [
             "[Watching t_c play with the kits is like watching the most skilled hunter bring down a piece of prey, or watching the medicine cat heal a wound.]",
-            "[Never once did you ever think anyone could make the act of playing look so skilled and graceful ... but t_c somehow does everything perfectly.]"
+            "[Never once did you ever think anyone could make the act of playing look so skilled and graceful ... But t_c somehow does everything perfectly.]"
         ]
     ],
     "assertive_elder_3": [
@@ -888,7 +888,7 @@
         [
             "Nope. Not happening. You're not getting anywhere near the nursery.",
             "The kits have been up all night and I JUST managed to get them down for a nap.",
-            "If anyone wakes them up ... trust, that cat will never know peace again. I'll make sure of it."
+            "If anyone wakes them up ... Trust, that cat will never know peace again. I'll make sure of it."
         ]
     ],
     "brooding_queen8": [
@@ -1727,7 +1727,7 @@
         ],
         [
             "Oh, y_c, I can't thank you enough for taking the brunt of the work today. I'm so exhausted.",
-            "I should have done what r_m suggested and took a break but... these kits are only kits for so long.",
+            "I should have done what r_m suggested and took a break but... These kits are only kits for so long.",
             "Look at me, becoming sentimental."
         ]
     ],
@@ -1818,7 +1818,7 @@
             "you_blind"
         ],
         [
-            "One of the kits is starting to fade. It's just their paws for now... they seemed surprised, but not scared, when they first noticed.",
+            "One of the kits is starting to fade. It's just their paws for now... They seemed surprised, but not scared, when they first noticed.",
             "Should I tell them what that means? Should I tell the other kits?",
             "Maybe it's better that they don't know, but isn't it bad to hide things from them?"
         ]

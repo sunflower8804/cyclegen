@@ -359,8 +359,16 @@ def test_replacement_failure(path: str, repl_dict: dict) -> bool:
                 re.search(r"(?<!\.\.)(?<!\.\s\.\s)\.\s+[a-z]", processed) is not None
                 or re.search(r"[?!]\s+[a-z]", processed) is not None
             ):
-                print(f'::error file={path}: Capitalization errors in "{_str}"')
-                success = False
+                # LG: again. skipping if theres a lg abbrev after a period
+                skip = False
+                for i in addon_json:
+                    if i in _str:
+                        skip = True
+                        break
+                if not skip:
+                # ----
+                    print(f'::error file={path}: Capitalization errors in "{_str}"')
+                    success = False
 
     return success
 

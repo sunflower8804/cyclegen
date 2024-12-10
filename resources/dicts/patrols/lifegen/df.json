@@ -29,7 +29,7 @@
                 "weight": 20
             },
             {
-                "text": "A shadow shoots out of the trees, right towards you. But you're quick-- you spin around, ducking underneath your assailant and jumping up to pin them to the ground. Claws on your attackers throat, you snarl, but the attacker just blinks up at you, amused. {PRONOUN/n_c:0/subject} {VERB/n_c:0/compliment/compliments} you on your skills, {VERB/n_c:0/introduce/introduces} {PRONOUN/n_c:0/self}, and {VERB/n_c:0/remark/remarks} that the two of you should train together sometime.",
+                "text": "A shadow shoots out of the trees, right towards you. But you're quick-- you spin around, ducking underneath your assailant and jumping up to pin them to the ground. Claws on your attackers throat, you snarl, but the attacker just blinks up at you, amused. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/compliment/compliments} you on your skills, {VERB/n_c:0/introduce/introduces} {PRONOUN/n_c:0/self}, and {VERB/n_c:0/remark/remarks} that the two of you should train together sometime.",
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
@@ -1170,7 +1170,7 @@
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "You quickly turn around, only to come eyes to eyes with r_c! {PRONOUN/r_c/subject/CAP} {VERB/r_c/don't/doesn't} seem bothered by your presence, bounding over to you with a welcoming sparkle in {PRONOUN/r_c/poss} eyes. {PRONOUN/r_c/subject/CAP} {VERB/r_c/seem/seems}.. Happy? {PRONOUN/r_c/subject/CAP} {VERB/r_c/explain/explains} to you that {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} been needing a place to gossip, and when {PRONOUN/r_c/subject} stumbled over the shadows of the Dark Forest, {PRONOUN/r_c/subject} couldn't help {PRONOUN/r_c/self}! Apparently the Clan hasn't been very accepting of {PRONOUN/r_c/poss} rumors.. But here you are! When you return home from the ever-lasting darkness, you have more secrets than you can carry.",
+                "text": "You quickly turn around, only to come eyes to eyes with r_c! {PRONOUN/r_c/subject/CAP} {VERB/r_c/don't/doesn't} seem bothered by your presence, bounding over to you with a welcoming sparkle in {PRONOUN/r_c/poss} eyes. {PRONOUN/r_c/subject/CAP} {VERB/r_c/seem/seems}... Happy? {PRONOUN/r_c/subject/CAP} {VERB/r_c/explain/explains} to you that {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} been needing a place to gossip, and when {PRONOUN/r_c/subject} stumbled over the shadows of the Dark Forest, {PRONOUN/r_c/subject} couldn't help {PRONOUN/r_c/self}! Apparently the Clan hasn't been very accepting of {PRONOUN/r_c/poss} rumors... But here you are! When you return home from the ever-lasting darkness, you have more secrets than you can carry.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -1190,7 +1190,7 @@
                 ]
             },
             {
-                "text": "You quickly turn around, only to come eyes to eyes with r_c! {PRONOUN/r_c/subject/CAP} {VERB/r_c/don't/doesn't} seem bothered by your presence, bounding over to you with a welcoming sparkle in {PRONOUN/r_c/poss} eyes. {PRONOUN/r_c/subject/CAP} {VERB/r_c/seem/seems}.. Happy? {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} thrilled to know that you train here as well and {VERB/r_c/ask/asks} to spar. You agree, and when you see {PRONOUN/r_c/object} next in camp, it's clear your friendship has grown.",
+                "text": "You quickly turn around, only to come eyes to eyes with r_c! {PRONOUN/r_c/subject/CAP} {VERB/r_c/don't/doesn't} seem bothered by your presence, bounding over to you with a welcoming sparkle in {PRONOUN/r_c/poss} eyes. {PRONOUN/r_c/subject/CAP} {VERB/r_c/seem/seems}.. Happy? {PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} thrilled to know that you train here as well and {VERB/r_c/ask/asks} to spar. You agree, and when you see {PRONOUN/r_c/object} next in camp, it's clear your friendship has grown.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -2177,7 +2177,7 @@
                 ]
             },
             {
-                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the Dark Forest before {PRONOUN/n_c:0/subject} {VERB/n_c:0/surge/surges} forward to bunt heads with a purr. Perhaps it isn't meant to be in the waking world... but in this place it is true and real to both of you.",
+                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the Dark Forest before {PRONOUN/n_c:0/subject} {VERB/n_c:0/surge/surges} forward to bunt heads with a purr. Perhaps it isn't meant to be in the waking world... But in this place it is true and real to both of you.",
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [
@@ -2192,7 +2192,7 @@
                 ]
             },
             {
-                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the Dark Forest before {PRONOUN/n_c:0/subject} {VERB/n_c:0/surge/surges} forward to bunt heads with a purr. Perhaps it could never be in the waking world... but in this place it is true and real to both of you whilst you sleep.",
+                "text": "Before you is a cat you've loved for some time. Forbidden as it is - you can't help but to confess the depths of your feelings. There is a beat of quiet in the Dark Forest before {PRONOUN/n_c:0/subject} {VERB/n_c:0/surge/surges} forward to bunt heads with a purr. Perhaps it could never be in the waking world... But in this place it is true and real to both of you whilst you sleep.",
                 "exp": 15,
                 "weight": 5,
                 "new_cat": [

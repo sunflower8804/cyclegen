@@ -574,7 +574,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l has wildly overestimated {PRONOUN/p_l/poss} climbing ability. The bird flies away before {PRONOUN/p_l/subject} can make a move, and, trying not to think of how far down the ground is, p_l jumps down... but doesn't quite land on {PRONOUN/p_l/poss} feet.",
+                "text": "p_l has wildly overestimated {PRONOUN/p_l/poss} climbing ability. The bird flies away before {PRONOUN/p_l/subject} can make a move, and, trying not to think of how far down the ground is, p_l jumps down... But doesn't quite land on {PRONOUN/p_l/poss} feet.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1567,7 +1567,7 @@
                 ]
             },
             {
-                "text": "The Rat King's defenses are too powerful, and as wave upon wave of rats poured down onto the patrol, most of them manage to escape... but not everyone makes it out.",
+                "text": "The Rat King's defenses are too powerful, and as wave upon wave of rats poured down onto the patrol, most of them manage to escape... But not everyone makes it out.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": [

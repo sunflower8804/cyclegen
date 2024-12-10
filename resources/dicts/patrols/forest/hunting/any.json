@@ -1459,7 +1459,7 @@
                 ]
             },
             {
-                "text": "r_c focuses completely on {PRONOUN/r_c/poss} test, slipping into a clear-eyed, focused routine of catch and stash, catch and stash. Eventually {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} caught enough to need {PRONOUN/r_c/poss} mentor's help carrying it back to camp, and the feeling seeing {PRONOUN/r_c/poss} prey stock the fresh-kill pile... {PRONOUN/r_c/subject} {VERB/r_c/are/is} ready to burst with happiness!",
+                "text": "r_c focuses completely on {PRONOUN/r_c/poss} test, slipping into a clear-eyed, focused routine of catch and stash, catch and stash. Eventually {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} caught enough to need {PRONOUN/r_c/poss} mentor's help carrying it back to camp, and the feeling seeing {PRONOUN/r_c/poss} prey stock the fresh-kill pile... {PRONOUN/r_c/subject/CAP} {VERB/r_c/are/is} ready to burst with happiness!",
                 "exp": 20,
                 "weight": 5,
                 "prey": [
@@ -2439,7 +2439,7 @@
                 ]
             },
             {
-                "text": "A friendly Twoleg makes a 'psspsspss' noise and pours kittypet food on the ground for r_c. They fetch p_l and both cats investigate the food, loudly proclaiming how much better fresh-kill is... but both are a little thrilled by the experience.",
+                "text": "A friendly Twoleg makes a 'psspsspss' noise and pours kittypet food on the ground for r_c. They fetch p_l and both cats investigate the food, loudly proclaiming how much better fresh-kill is... But both are a little thrilled by the experience.",
                 "exp": 20,
                 "weight": 5,
                 "prey": [
@@ -3902,7 +3902,7 @@
                 ]
             },
             {
-                "text": "r_c and p_l go for the prey at the same time, bonking their heads together. Not a bad collision, and both of them are mature enough to let it go... but neither is pleased to have missed an easy catch.",
+                "text": "r_c and p_l go for the prey at the same time, bonking their heads together. Not a bad collision, and both of them are mature enough to let it go... But neither is pleased to have missed an easy catch.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [

@@ -251,7 +251,7 @@
             "they_blind"
         ],
         [
-            "Oh no you don't, y_c. Don't even try to convince me to make nice with r_c - it's not gonna happen. {PRONOUN/r_c/subject/CAP} totally stole the last fish from the freshkill pile! {VERB/r_c/don't/doesn't/CAP} {PRONOUN/r_c/subject} know that it's my favorite?",
+            "Oh no you don't, y_c. Don't even try to convince me to make nice with r_c - it's not gonna happen. {PRONOUN/r_c/subject/CAP} totally stole the last fish from the freshkill pile! {VERB/r_c/Don't/Doesn't} {PRONOUN/r_c/subject} know that it's my favorite?",
             "Okay, okay ... if you insist, I guess I can try talking to {PRONOUN/r_c/object} again.",
             "But don't try to get me to watch my tongue. If someone's acting like a stupid piece of fox-dung, I'm gonna call them a stupid piece of fox-dung!!!"
         ]
@@ -543,7 +543,7 @@
             "Hey, y_c! Sure, I'll play a game! Who do you want to play as?",
             "... Leader?",
             "[One of the queens quickly intervenes, apologizing to t_c for your transgression, but {PRONOUN/t_c/subject} quickly {VERB/t_c/brush/brushes} it off.]",
-            "Ah, don't worry about it. I'm happy to give up my position to y_c for a time. {PRONOUN/y_c/subject}'ll probably do a better job at it than I do, heh!",
+            "Ah, don't worry about it. I'm happy to give up my position to y_c for a time. {PRONOUN/y_c/subject/CAP}'ll probably do a better job at it than I do, heh!",
             "So, fearless leader, what are we going to do today?",
             "[You spend a few minutes delightfully ordering t_c around until the deputy comes and steals {PRONOUN/t_c/object} away.]"
         ]
@@ -920,7 +920,7 @@
         ],
         [
             "... Good morning, y_c.",
-            "Yes, yes. I'm fine. I've just... been thinking.",
+            "Yes, yes. I'm fine. I've just... Been thinking.",
             "Is StarClan and the Dark Forest all that's out there? Is there something beyond that? Maybe beyond our own perceptions.",
             "Maybe all of our actions are being controlled by a being even stronger than StarClan, using some sort of magic to view us to see what we're up to.",
             "Maybe they'd get bored of us, or think I'm not good enough to be leader, and force you to kill me to take my place.",
@@ -939,7 +939,7 @@
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/gesture/gestures} over to a lake, where the moon echoes in the water.]",
             "The moon is an interesting force. It's bright and lights the way, so we can see our paws when the individual lights cannot show us.",
             "I wonder if it's the whole of StarClan, concentrated. StarClan's eyes. Or maybe it's our ancestors' love for us. The moon's always there for us, it's... everlasting.",
-            "... that's a nice thought. That we're not doing everything for nothing. Those before us think about us just as much as we think about them. It guides us like I try to do for our Clan.",
+            "... That's a nice thought. That we're not doing everything for nothing. Those before us think about us just as much as we think about them. It guides us like I try to do for our Clan.",
             "... Yes, of course. I'll speak to you tomorrow, y_c. May the moon follow you back to camp."
         ]
     ],
@@ -1417,7 +1417,7 @@
         [
             "[In the middle of a sparring session, t_c instinctively hides {PRONOUN/t_c/poss} face behind {PRONOUN/t_c/poss} paws.]",
             "Gah! Not my beautiful face!",
-            "[In the end, t_c's face comes out untouched ... though, the maneuver did leave many of {PRONOUN/t_c/poss} vital organs unprotected.]",
+            "[In the end, t_c's face comes out untouched ... Though, the maneuver did leave many of {PRONOUN/t_c/poss} vital organs unprotected.]",
             "[Seems {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} exactly have {PRONOUN/t_c/poss} priorities in order.]"
         ]
     ],
@@ -1679,7 +1679,7 @@
         [
             "Hey y_c! Can I get your advice?",
             "I was thinking of assigning r_w as r_k's mentor when {PRONOUN/r_k/subject} {VERB/r_k/become/becomes} an apprentice. What do you think about that?",
-            "Mm... true, thanks for your input!"
+            "Mm... True, thanks for your input!"
         ]
     ],
     "sweet_leader_19": [
@@ -1690,8 +1690,8 @@
         [
             "[t_c jumps as you approach, sighing softly as {PRONOUN/t_c/subject} {VERB/t_c/stare/stares} at the stars.]",
             "y_c... I miss them. My old leader, I mean.",
-            "It felt like they knew what to do... but me... I feel like I'm lost.",
-            "I want to guide my Clan to the best possible future... but I don't know...",
+            "It felt like they knew what to do... But me... I feel like I'm lost.",
+            "I want to guide my Clan to the best possible future... But I don't know...",
             "Tell me... do you think I'm doing a good job?"
         ]
     ],
@@ -2119,7 +2119,7 @@
             "[It hasn't rained in a while, but while on patrol with r_w and t_c, you discover a large patch of mud in the middle of the territory.]",
             "[It's darker than most mud you're familiar with, and looks stickier, too. It clings to the sticks and grasses around it, leaving black strands that remind you of heavy spiderwebs. It looks almost like...]",
             "[You meet t_c's eyes across the mud puddle, and {PRONOUN/t_c/poss} expression confirms what you're already thinking: this mud looks like the mud from the Dark Forest.]",
-            "We.. we should go. I really don't like the look of this.",
+            "We... we should go. I really don't like the look of this.",
             "[t_c darts away without waiting for the rest of the patrol to respond.]"
         ]
     ],
@@ -2142,7 +2142,7 @@
         ],
         "intro": [
             "[Recently, you and t_c encountered a mud puddle that looked suspiciously like Dark Forest mud. t_c has avoided that area since then, but today, {PRONOUN/t_c/subject} {VERB/t_c/ask/asks} you to visit it with {PRONOUN/t_c/object}.]",
-            "I just... I can't stop thinking about it. Do you think it means the Dark Forest is growing in influence? Do you think it's... like... becoming more real?",
+            "I just... I can't stop thinking about it. Do you think it means the Dark Forest is growing in influence? Do you think it's... like... Becoming more real?",
             "[t_c starts off at a quick trot, but as you approach the middle of the territory, {PRONOUN/t_c/subject} {VERB/t_c/slow/slows} down. By the time you reach the mud puddle {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} dragging {PRONOUN/t_c/poss} paws.]",
             "I... I thought we might've imagined it, or something. But that's it, right? And it's as big as it was before..."
         ],
@@ -2294,7 +2294,7 @@
         ],
         [
             "[t_c seems disheartened as you both return from a hunting patrol. You compliment the nice bird {PRONOUN/t_c/subject} caught, but t_c just nods absentmindedly.]",
-            "*sigh* Sorry. Thanks. I just was really hoping to get a squirrel today... t_m mentioned {PRONOUN/t_m/subject} wished {PRONOUN/t_m/subject} could have one this morning, so I wanted to catch one for {PRONOUN/t_m/object}.",
+            "*sigh* Sorry. Thanks. I just was really hoping to get a squirrel today... T_m mentioned {PRONOUN/t_m/subject} wished {PRONOUN/t_m/subject} could have one this morning, so I wanted to catch one for {PRONOUN/t_m/object}.",
             "...Oh well. I hope {PRONOUN/t_m/subject} won't be too disappointed."
         ]
     ],

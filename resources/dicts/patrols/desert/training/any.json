@@ -2228,7 +2228,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l spins a chilling tale to the patrol, rumors of cats going missing in the frozen desert nights, or corpses found drained of blood, of a foul, reptilian horror... too horrific, in fact. No one needed quite <i>that</i> much gory detail, thanks p_l.",
+                "text": "p_l spins a chilling tale to the patrol, rumors of cats going missing in the frozen desert nights, or corpses found drained of blood, of a foul, reptilian horror... Too horrific, in fact. No one needed quite <i>that</i> much gory detail, thanks p_l.",
                 "exp": 0,
                 "weight": 20,
                 "art": "gen_train_argue",
@@ -2653,7 +2653,7 @@
         "decline_text": "Weird, but not dangerous. The patrol mvoes on.",
         "success_outcomes": [
             {
-                "text": "They're not <i>bone-bone</i>, p_l exlains, tracing a claw across the protruding skull. And they don't look like anything that currently walks the badlands. They're rock, but... bone shaped? p_l thinks these were a monster, one cursed by StarClan to be entombed by the rock until they became it.",
+                "text": "They're not <i>bone-bone</i>, p_l exlains, tracing a claw across the protruding skull. And they don't look like anything that currently walks the badlands. They're rock, but... Bone shaped? p_l thinks these were a monster, one cursed by StarClan to be entombed by the rock until they became it.",
                 "exp": 30,
                 "weight": 20,
                 "art": "gen_warrior_crouching_perplexed",

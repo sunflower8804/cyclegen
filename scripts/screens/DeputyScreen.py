@@ -298,7 +298,7 @@ class DeputyScreen(Screens):
         if self.selected_cat:
 
             self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
-                scui_scaleale(pygame.Rect((650, 300), (300, 300))),
+                ui_scale(pygame.Rect((650, 300), (300, 300))),
                 pygame.transform.scale(
                     self.selected_cat.sprite,
                     (300, 300)), manager=MANAGER)
