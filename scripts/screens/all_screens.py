@@ -34,7 +34,6 @@ from .StartScreen import StartScreen
 from .SwitchClanScreen import SwitchClanScreen
 from .WarriorDenScreen import WarriorDenScreen
 from .GiftScreen import GiftScreen
-from .NewLifeScreen import NewLifeScreen
 
 # ---------------------------------------------------------------------------- #
 #                                  UI RULES                                    #
