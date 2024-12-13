@@ -1212,6 +1212,20 @@ class MakeClanScreen(Screens):
                     "right": "right",
                     "right_target": self.elements["art_frame"],
                     "top_target": self.tabs["tab3"],
+                }
+            )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (80, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab5"] = UISurfaceImageButton(
+                tab_rect,
+                "Ruins",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (80, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab4"],
                 },
             )
             # LG
@@ -1370,7 +1384,7 @@ class MakeClanScreen(Screens):
                 },
             )
 
-            tab_rect = ui_scale(pygame.Rect((0, 10), (80, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (80, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab4"] = UISurfaceImageButton(
                 tab_rect,
@@ -1385,6 +1399,7 @@ class MakeClanScreen(Screens):
                 },
             )
             # LG
+
             tab_rect = ui_scale(pygame.Rect((0, 0), (140, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab5"] = UISurfaceImageButton(
@@ -4482,11 +4497,12 @@ class MakeClanScreen(Screens):
 
     def draw_art_frame(self):
         if "art_frame" in self.elements:
-            self.elements["art_frame"].kill()
+            return
         self.elements["art_frame"] = pygame_gui.elements.UIImage(
             ui_scale(pygame.Rect(((0, 20), (466, 416)))),
             get_box(BoxStyles.FRAME, (466, 416)),
             manager=MANAGER,
+            starting_height=2,
             anchors={"center": "center"},
         )
 

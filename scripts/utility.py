@@ -344,13 +344,13 @@ def create_new_cat_block(
             else:
                 parent2 = event.new_cats[index][0]
 
-        adoptive_indexes = [int(index) if index.isdigit() else index for index in adoptive_indexes]
+        adoptive_indexes = [
+            int(index) if index.isdigit() else index for index in adoptive_indexes
+        ]
         for index in adoptive_indexes:
             if in_event_cats[index].ID not in adoptive_parents:
                 adoptive_parents.append(in_event_cats[index].ID)
                 adoptive_parents.extend(in_event_cats[index].mate)
-
-
 
     # gather mates
     give_mates = []
@@ -511,11 +511,14 @@ def create_new_cat_block(
     for _tag in attribute_list:
         match = re.match(r"backstory:(.+)", _tag)
         if match:
-            stor = [x for x in match.group(1).split(",") if x in BACKSTORIES["backstories"]]
-            if not stor:
-                bs_override = True
-                continue
-            chosen_backstory = choice(stor)
+            bs_list = [x for x in match.group(1).split(",")]
+            stor = []
+            for story in bs_list:
+                if story in BACKSTORIES["backstories"]:
+                    stor.append(story)
+                elif story in BACKSTORIES["backstory_categories"]:
+                    stor.extend(BACKSTORIES["backstory_categories"][story])
+            bs_override = True
             break
 
     # KITTEN THOUGHT
@@ -529,6 +532,8 @@ def create_new_cat_block(
         status = cat_type
         new_name = False
         thought = "Is wondering about those new cats"
+        if age is not None and age <= 6 and not bs_override:
+            chosen_backstory = "outsider1"
 
     # IS THE CAT DEAD?
     alive = True
@@ -652,7 +657,7 @@ def create_new_cat_block(
             outside=outside,
             parent1=parent1.ID if parent1 else None,
             parent2=parent2.ID if parent2 else None,
-            adoptive_parents=adoptive_parents if adoptive_parents else None
+            adoptive_parents=adoptive_parents if adoptive_parents else None,
         )
 
         # NEXT
@@ -783,7 +788,7 @@ def create_new_cat(
     outside: bool = False,
     parent1: str = None,
     parent2: str = None,
-    adoptive_parents: list = None
+    adoptive_parents: list = None,
 ) -> list:
     """
     This function creates new cats and then returns a list of those cats
@@ -870,7 +875,7 @@ def create_new_cat(
                 backstory=backstory,
                 parent1=parent1,
                 parent2=parent2,
-                adoptive_parents=adoptive_parents if adoptive_parents else []
+                adoptive_parents=adoptive_parents if adoptive_parents else [],
             )
         else:
             # grab starting names and accs for loners/kittypets
@@ -878,8 +883,8 @@ def create_new_cat(
                 name = choice(names.names_dict["loner_names"])
                 if bool(getrandbits(1)):
                     accessory = choice(Pelt.collars)
-            elif (
-                loner and bool(getrandbits(1))
+            elif loner and bool(
+                getrandbits(1)
             ):  # try to give name from full loner name list
                 name = choice(names.names_dict["loner_names"])
             else:
@@ -905,7 +910,7 @@ def create_new_cat(
                         backstory=backstory,
                         parent1=parent1,
                         parent2=parent2,
-                        adoptive_parents=adoptive_parents if adoptive_parents else []
+                        adoptive_parents=adoptive_parents if adoptive_parents else [],
                     )
                 else:  # completely new name
                     new_cat = Cat(
@@ -915,7 +920,7 @@ def create_new_cat(
                         backstory=backstory,
                         parent1=parent1,
                         parent2=parent2,
-                        adoptive_parents=adoptive_parents if adoptive_parents else []
+                        adoptive_parents=adoptive_parents if adoptive_parents else [],
                     )
             # these cats keep their old names
             else:
@@ -928,7 +933,7 @@ def create_new_cat(
                     backstory=backstory,
                     parent1=parent1,
                     parent2=parent2,
-                    adoptive_parents=adoptive_parents if adoptive_parents else []
+                    adoptive_parents=adoptive_parents if adoptive_parents else [],
                 )
 
             # give em a collar if they got one
@@ -1420,8 +1425,8 @@ def gather_cat_objects(
     """
     gathers cat objects from list of abbreviations used within an event format block
     :param Cat Cat: Cat class
-    :param list[str] abbr_list: The list of abbreviations, supports "m_c", "r_c", "p_l", "s_c", "app1", "app2", "clan",
-    "some_clan", "patrol", "multi", "n_c{index}"
+    :param list[str] abbr_list: The list of abbreviations, supports "m_c", "r_c", "p_l", "s_c", "app1" through "app6",
+    "clan", "some_clan", "patrol", "multi", "n_c{index}"
     :param event: the controlling class of the event (e.g. Patrol, HandleShortEvents), default None
     :param Cat stat_cat: if passing the Patrol class, must include stat_cat separately
     :param Cat extra_cat: if not passing an event class, include the single affected cat object here. If you are not
@@ -1437,7 +1442,7 @@ def gather_cat_objects(
                 out_set.add(extra_cat)
             else:
                 out_set.add(event.main_cat)
-        if abbr == "r_c":
+        elif abbr == "r_c":
             out_set.add(event.random_cat)
         elif abbr == "p_l":
             out_set.add(event.patrol_leader)
@@ -1451,6 +1456,14 @@ def gather_cat_objects(
             out_set.add(event.patrol_apprentices[0])
         elif abbr == "app2" and len(event.patrol_apprentices) >= 2:
             out_set.add(event.patrol_apprentices[1])
+        elif abbr == "app3" and len(event.patrol_apprentices) >= 3:
+            out_set.add(event.patrol_apprentices[2])
+        elif abbr == "app4" and len(event.patrol_apprentices) >= 4:
+            out_set.add(event.patrol_apprentices[3])
+        elif abbr == "app5" and len(event.patrol_apprentices) >= 5:
+            out_set.add(event.patrol_apprentices[4])
+        elif abbr == "app6" and len(event.patrol_apprentices) >= 6:
+            out_set.add(event.patrol_apprentices[5])
         elif abbr == "clan":
             out_set.update([x for x in Cat.all_cats_list if not (x.dead or x.outside or x.exiled)])
         elif abbr == "some_clan":  # 1 / 8 of clan cats are affected
@@ -1466,6 +1479,8 @@ def gather_cat_objects(
             index = int(index)
             if index < len(event.new_cats):
                 out_set.update(event.new_cats[index])
+        else:
+            print(f"WARNING: Unsupported abbreviation {abbr}")
 
     # LIFEGEN ABBREVS ------------------------
     try:
@@ -2135,6 +2150,11 @@ def event_text_adjust(
     if not text:
         text = 'This should not appear, report as a bug please! Tried to adjust the text, but no text was provided.'
         print("WARNING: Tried to adjust text, but no text was provided.")
+
+    # this check is really just here to catch odd bug edge-cases from old saves, specifically in death history
+    # otherwise we should really *never* have lists being passed as the text
+    if isinstance(text, list):
+        text = text[0]
 
     replace_dict = {}
 

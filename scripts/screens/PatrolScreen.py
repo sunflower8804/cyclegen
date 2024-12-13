@@ -11,7 +11,7 @@ from scripts.game_structure.ui_elements import (
     UISpriteButton,
     UISurfaceImageButton,
 )
-from scripts.patrol.patrol import Patrol
+from scripts.events_module.patrol.patrol import Patrol
 from scripts.utility import (
     get_text_box_theme,
     ui_scale,
@@ -172,7 +172,10 @@ class PatrolScreen(Screens):
             self.update_cat_images_buttons()
             self.update_button()
         elif event.ui_element == self.elements["random"]:
-            self.selected_cat = choice(self.able_cats)
+            if self.able_cats:
+                self.selected_cat = choice(self.able_cats)
+            else:
+                print('WARNING: attempted to select random cat for patrol from empty list of able cats')
             self.update_selected_cat()
             self.update_button()
         # Check is a cat is clicked
@@ -208,7 +211,10 @@ class PatrolScreen(Screens):
                         able_no_med = self.able_cats
                     self.selected_cat = choice(able_no_med)
                 else:
-                    self.selected_cat = choice(self.able_cats)
+                    if self.able_cats:
+                        self.selected_cat = choice(self.able_cats)
+                    else:
+                        print('WARNING: attempted to select random cat for patrol from empty list of able cats')
                 self.update_selected_cat()
                 self.current_patrol.append(self.selected_cat)
             self.update_cat_images_buttons()
@@ -343,6 +349,11 @@ class PatrolScreen(Screens):
             inp = "antagonize"
 
         if inp:
+            if (
+                self.proceed_patrol_thread is not None
+                and self.proceed_patrol_thread.is_alive()
+            ):
+                return
             self.proceed_patrol_thread = self.loading_screen_start_work(
                 self.run_patrol_proceed, "proceed", (inp,)
             )
