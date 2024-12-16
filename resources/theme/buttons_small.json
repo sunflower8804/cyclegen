@@ -5801,7 +5801,7 @@
             }
         }
     },
-    "#patches_tint_none": {
+    "#tint_button_none": {
         "prototype": "#image_button",
         "images": {
             "normal_image": {
@@ -5818,7 +5818,7 @@
             }
         }
     },
-    "#patches_tint_offwhite": {
+    "#tint_button_offwhite": {
         "prototype": "#image_button",
         "images": {
             "normal_image": {
@@ -5835,7 +5835,7 @@
             }
         }
     },
-    "#patches_tint_cream": {
+    "#tint_button_cream": {
         "prototype": "#image_button",
         "images": {
             "normal_image": {
@@ -5852,7 +5852,7 @@
             }
         }
     },
-    "#patches_tint_darkcream": {
+    "#tint_button_darkcream": {
         "prototype": "#image_button",
         "images": {
             "normal_image": {
@@ -5869,7 +5869,7 @@
             }
         }
     },
-    "#patches_tint_gray": {
+    "#tint_button_gray": {
         "prototype": "#image_button",
         "images": {
             "normal_image": {
@@ -5886,7 +5886,7 @@
             }
         }
     },
-    "#patches_tint_pink": {
+    "#tint_button_pink": {
         "prototype": "#image_button",
         "images": {
             "normal_image": {

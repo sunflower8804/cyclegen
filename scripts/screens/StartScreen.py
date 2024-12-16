@@ -54,6 +54,7 @@ class StartScreen(Screens):
         super().__init__(name)
         self.warning_label = None
         self.social_buttons = {}
+        self.error_open = False
 
     def choose_random_menu(self, folder_path):
         """This will choose a random menu to display from the menus folder."""
@@ -84,7 +85,7 @@ class StartScreen(Screens):
                 self.new_clan_button: "make clan screen",
                 self.settings_button: "settings screen",
             }
-            if event.ui_element in screens:
+            if event.ui_element in screens and not self.error_open:
                 self.change_screen(screens[event.ui_element])
             elif event.ui_element == self.open_data_directory_button:
                 if platform.system() == "Darwin":
@@ -100,6 +101,9 @@ class StartScreen(Screens):
                 self.error_gethelp.kill()
                 self.closebtn.kill()
                 self.open_data_directory_button.kill()
+                self.error_open = False
+                # game.switches['error_message'] = ''
+                # game.switches['traceback'] = ''
             elif event.ui_element == self.update_button:
                 UpdateAvailablePopup(game.switches["last_screen"])
             elif event.ui_element == self.quit:
@@ -430,6 +434,8 @@ class StartScreen(Screens):
                 self.open_data_directory_button.hide()
 
             self.closebtn.show()
+
+            self.error_open = True
 
         if game.clan is not None:
             key_copy = tuple(Cat.all_cats.keys())

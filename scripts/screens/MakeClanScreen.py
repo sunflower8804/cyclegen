@@ -1212,6 +1212,20 @@ class MakeClanScreen(Screens):
                     "right": "right",
                     "right_target": self.elements["art_frame"],
                     "top_target": self.tabs["tab3"],
+                }
+            )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (80, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab5"] = UISurfaceImageButton(
+                tab_rect,
+                "Ruins",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (80, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab4"],
                 },
             )
             # LG
@@ -1370,7 +1384,7 @@ class MakeClanScreen(Screens):
                 },
             )
 
-            tab_rect = ui_scale(pygame.Rect((0, 10), (80, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (80, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab4"] = UISurfaceImageButton(
                 tab_rect,
@@ -1385,6 +1399,7 @@ class MakeClanScreen(Screens):
                 },
             )
             # LG
+
             tab_rect = ui_scale(pygame.Rect((0, 0), (140, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab5"] = UISurfaceImageButton(
@@ -1641,7 +1656,7 @@ class MakeClanScreen(Screens):
 
         self.elements["previous_step"] = UISurfaceImageButton(
             ui_scale(pygame.Rect((253, 645), (147, 30))),
-            get_arrow(2, arrow_left=True) + " Previous Step",
+            get_arrow(1, arrow_left=True) + " Previous Step",
             get_button_dict(ButtonStyles.MENU_LEFT, (147, 30)),
             object_id="@buttonstyles_menu_left",
             manager=MANAGER,
@@ -1691,13 +1706,14 @@ class MakeClanScreen(Screens):
             sound_id="dice_roll",
         )
 
-        self.elements["error"] = pygame_gui.elements.UITextBox("", ui_scale(pygame.Rect((253, 670), (297, -1))),
-                                                               manager=MANAGER,
-                                                               object_id="#default_dark", visible=False)
+        self.elements["error"] = pygame_gui.elements.UITextBox(
+            "", ui_scale(pygame.Rect((253, 670), (297, -1))),
+            manager=MANAGER,
+            object_id=get_text_box_theme("#text_box_22_horizcenter"), visible=False)
 
         self.elements["previous_step"] = UISurfaceImageButton(
             ui_scale(pygame.Rect((253, 645), (147, 30))),
-            get_arrow(2, arrow_left=True) + " Previous Step",
+            get_arrow(1, arrow_left=True) + " Previous Step",
             get_button_dict(ButtonStyles.MENU_LEFT, (147, 30)),
             object_id="@buttonstyles_menu_left",
             manager=MANAGER,
@@ -1878,19 +1894,19 @@ class MakeClanScreen(Screens):
             self.elements["roll3"].hide()
 
         # info for chosen cats:
-        if game.settings['dark mode']:
-            self.elements['cat_info'] = pygame_gui.elements.UITextBox("", ui_scale(pygame.Rect((440, 225), (115, 150))),
-                                                                    visible=False, object_id="#text_box_22_horizleft_spacing_95_dark",
-                                                                    manager=MANAGER)
-        else:
-            self.elements['cat_info'] = pygame_gui.elements.UITextBox("", ui_scale(pygame.Rect((440, 225), (115, 150))),
-                                                                    visible=False, object_id=get_text_box_theme("#text_box_22_horizleft_spacing_95"),
-                                                                    manager=MANAGER)
-        self.elements['cat_name'] = pygame_gui.elements.UITextBox("", ui_scale(pygame.Rect((150, 175), (500, 55))),
-                                                                  visible=False,
-                                                                  object_id=get_text_box_theme(
-                                                                      "#text_box_30_horizcenter"),
-                                                                  manager=MANAGER)
+        self.elements['cat_info'] = pygame_gui.elements.UITextBox(
+            "", ui_scale(pygame.Rect((440, 225), (115, 150))),
+            visible=False,
+            object_id=get_text_box_theme("#text_box_22_horizleft_spacing_95"),
+            manager=MANAGER
+        )
+        
+        self.elements['cat_name'] = pygame_gui.elements.UITextBox(
+            "", ui_scale(pygame.Rect((150, 175), (500, 55))),
+            visible=False,
+            object_id=get_text_box_theme("#text_box_30_horizcenter"),
+            manager=MANAGER
+        )
 
         self.elements['select_cat'] = UISurfaceImageButton(
             ui_scale(pygame.Rect((353, 360), (95, 30))),
@@ -1901,12 +1917,11 @@ class MakeClanScreen(Screens):
             starting_height=1,
         )
         self.elements['select_cat'].hide()
-        
 
         # Next and previous buttons
         self.elements["previous_step"] = UISurfaceImageButton(
             ui_scale(pygame.Rect((253, 645), (147, 30))),
-            get_arrow(2, arrow_left=True) + " Previous Step",
+            get_arrow(1, arrow_left=True) + " Previous Step",
             get_button_dict(ButtonStyles.MENU_LEFT, (147, 30)),
             object_id="@buttonstyles_menu_left",
             manager=MANAGER,
@@ -2066,10 +2081,10 @@ class MakeClanScreen(Screens):
         y_pos = [40, 107, 140, 207, 240, 307, 340, 407, 440, 507, 540]
 
         self.elements['random_customize'] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((40, 100), (34, 34))),
-            Icon.DICE,
-            get_button_dict(ButtonStyles.ICON, (34, 34)),
-            object_id="@buttonstyles_icon",
+            ui_scale(pygame.Rect((327, 80), (150, 30))),
+            Icon.DICE + " Random cat",
+            get_button_dict(ButtonStyles.SQUOVAL, (150, 30)),
+            object_id="@buttonstyles_squoval",
             manager=MANAGER,
             starting_height=2,
             sound_id="dice_roll",
@@ -2374,6 +2389,15 @@ class MakeClanScreen(Screens):
                         manager=MANAGER
                     )
                     pelt_y_pos += 40
+
+                self.elements["match_tortie"] = UISurfaceImageButton(
+                    ui_scale(pygame.Rect((340, 465), (123, 34))),
+                    "match tortie",
+                    get_button_dict(ButtonStyles.SQUOVAL, (123, 34)),
+                    object_id="@buttonstyles_rounded_rect",
+                    manager=MANAGER,
+                    starting_height=2
+                )
             elif self.current_selection == "pelt_colour":
                 for colour in Pelt.pelt_colours:
                     self.pelt_colour_buttons[colour] = UIImageButton(
@@ -2393,7 +2417,7 @@ class MakeClanScreen(Screens):
                     pelt_y_pos += 40
 
                 tint_x_pos = 256
-                tint_y_pos = 450
+                tint_y_pos = 480
                 for tint in [
                     "none", "pink", "gray", "red", "orange", "black",
                     "yellow", "purple", "blue", "dilute", "warmdilute", "cooldilute"
@@ -2401,7 +2425,7 @@ class MakeClanScreen(Screens):
                     self.tint_buttons[tint] = UIImageButton(
                         ui_scale(pygame.Rect((tint_x_pos, tint_y_pos), (40, 40))),
                         tint,
-                        object_id="",
+                        object_id=f"#tint_button_{tint}",
                         manager=MANAGER
                         )
                     tint_x_pos += 50
@@ -2493,7 +2517,7 @@ class MakeClanScreen(Screens):
                     self.white_patches_tint_buttons[tint] = UIImageButton(
                         ui_scale(pygame.Rect((tint_x_pos, tint_y_pos), (40, 40))),
                         "",
-                        object_id=f"#patches_tint_{tint}",
+                        object_id=f"#tint_button_{tint}",
                         manager=MANAGER
                         )
                     tint_x_pos += 45
@@ -2945,7 +2969,7 @@ class MakeClanScreen(Screens):
 
         self.elements["previous_step"] = UISurfaceImageButton(
             ui_scale(pygame.Rect((253, 645), (147, 30))),
-            get_arrow(2, arrow_left=True) + " Previous Step",
+            get_arrow(1, arrow_left=True) + " Previous Step",
             get_button_dict(ButtonStyles.MENU_LEFT, (147, 30)),
             object_id="@buttonstyles_menu_left",
             manager=MANAGER,
@@ -3353,6 +3377,10 @@ class MakeClanScreen(Screens):
                 self.open_customize_cat()
             if "match_base" in self.elements and event.ui_element == self.elements["match_base"]:
                 self.tortiepattern = self.tortiebase
+                self.update_sprite()
+                self.update_disabled_buttons()
+            if "match_tortie" in self.elements and event.ui_element == self.elements["match_tortie"]:
+                self.tortiebase = self.tortiepattern.lower()
                 self.update_sprite()
                 self.update_disabled_buttons()
 
@@ -4003,7 +4031,7 @@ class MakeClanScreen(Screens):
         # Next and previous buttons
         self.elements["previous_step"] = UISurfaceImageButton(
             ui_scale(pygame.Rect((253, 645), (147, 30))),
-            get_arrow(2, arrow_left=True) + " Previous Step",
+            get_arrow(1, arrow_left=True) + " Previous Step",
             get_button_dict(ButtonStyles.MENU_LEFT, (147, 30)),
             object_id="@buttonstyles_menu_left",
             manager=MANAGER,
@@ -4104,7 +4132,7 @@ class MakeClanScreen(Screens):
 
         self.elements["previous_step"] = UISurfaceImageButton(
             ui_scale(pygame.Rect((253, 645), (147, 30))),
-            get_arrow(2, arrow_left=True) + " Previous Step",
+            get_arrow(1, arrow_left=True) + " Previous Step",
             get_button_dict(ButtonStyles.MENU_LEFT, (147, 30)),
             object_id="@buttonstyles_menu_left",
             manager=MANAGER,
@@ -4147,7 +4175,7 @@ class MakeClanScreen(Screens):
             },
         )
         self.text["leader"] = pygame_gui.elements.UILabel(
-            ui_scale(pygame.Rect((0, 90), (-1, -1))),
+            ui_scale(pygame.Rect((0, 5), (-1, -1))),
             text=f"Your name: {self.your_cat.name}",
             container=self.elements["text_container"],
             object_id=get_text_box_theme("#text_box_30_horizleft"),
@@ -4350,9 +4378,9 @@ class MakeClanScreen(Screens):
         if game.switches["customise_new_life"] is False:
             # no new clan symbol when youre just making a new mc
             self.elements["selected_symbol"] = pygame_gui.elements.UIImage(
-                ui_scale(pygame.Rect((700, 210), (200, 200))),
+                ui_scale(pygame.Rect((350, 105), (100, 100))),
                 pygame.transform.scale(
-                    sprites.sprites[self.symbol_selected], (200, 200)
+                    sprites.sprites[self.symbol_selected], (100, 100)
                 ).convert_alpha(),
                 object_id="#selected_symbol",
                 starting_height=1,
@@ -4363,13 +4391,21 @@ class MakeClanScreen(Screens):
                                                                     pygame.transform.scale(
                                                                         self.your_cat.sprite,
                                                                         (100, 100)), manager=MANAGER)
-        self.elements["continue"] = UIImageButton(ui_scale(pygame.Rect((341, 300), (102, 30))), "",
-                                                  object_id="#continue_button_small")
-        self.elements["save_confirm"] = pygame_gui.elements.UITextBox('Welcome to the world, ' + self.your_cat.name.prefix + 'kit!',
-                                                                    ui_scale(pygame.Rect((100, 235), (600, 30))),
-                                                                    object_id=get_text_box_theme(
-                                                                        "#text_box_30_horizcenter"),
-                                                                    manager=MANAGER)
+        self.elements["continue"] = UISurfaceImageButton(
+            ui_scale(pygame.Rect((341, 300), (102, 30))),
+            "continue",
+            get_button_dict(ButtonStyles.SQUOVAL, (102, 30)),
+            manager=MANAGER,
+            object_id="@buttonstyles_squoval",
+            starting_height=1,
+        )
+        self.elements["save_confirm"] = pygame_gui.elements.UITextBox(
+            'Welcome to the world, ' + self.your_cat.name.prefix + 'kit!',
+            ui_scale(pygame.Rect((100, 235), (600, 30))),
+            object_id=get_text_box_theme(
+                "#text_box_30_horizcenter"),
+            manager=MANAGER
+            )
     def delete_example_cats(self):
         """ Deletes the other generated kits so they don't also get added to the Clan """
         key_copy = tuple(Cat.all_cats.keys())
@@ -4461,11 +4497,12 @@ class MakeClanScreen(Screens):
 
     def draw_art_frame(self):
         if "art_frame" in self.elements:
-            self.elements["art_frame"].kill()
+            return
         self.elements["art_frame"] = pygame_gui.elements.UIImage(
             ui_scale(pygame.Rect(((0, 20), (466, 416)))),
             get_box(BoxStyles.FRAME, (466, 416)),
             manager=MANAGER,
+            starting_height=2,
             anchors={"center": "center"},
         )
 

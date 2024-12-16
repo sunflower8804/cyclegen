@@ -8,8 +8,8 @@
             "Is tired of moving around all the time",
             "Is hiding from Twolegs",
             "Is hiding from a big dog",
-            "Is running from a rogue",
-            "Is eating bugs",
+            "Is running from a rogue", 
+            "Is eating bugs", 
             "Thought {PRONOUN/m_c/subject} smelled another cat earlier",
             "Hears distant howling",
             "Curls up in a makeshift den"
@@ -56,15 +56,12 @@
             "Doesn't understand why cats live in Clans",
             "Is learning about the Clans",
             "Is listening to stories about c_n cats",
-            "Is spending some time alone",
+            "Is spending some time alone", 
             "Hisses at the smell of other cats",
             "Doesn't want to go back home",
             "Daydreams about Clan life",
             "Wonders what StarClan is"
         ],
-        "main_backstory_constraint": [
-            "outsider2",
-            "outsider3"
-        ]
+        "main_backstory_constraint": ["outsider2", "outsider3"]
     }
 ]

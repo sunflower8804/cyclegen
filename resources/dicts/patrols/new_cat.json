@@ -1,18 +1,10 @@
 [
     {
         "patrol_id": "gen_bord_newcat1",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_newcat",
         "min_cats": 2,
         "max_cats": 6,
@@ -27,24 +19,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "loner",
-                        "status:warrior"
-                    ]
+                    ["loner", "status:warrior"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -55,30 +36,14 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "loner",
-                        "age:has_kits"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:kitten",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["loner", "age:has_kits"],
+                    ["litter", "parent:0", "status:kitten", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -92,10 +57,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ]
             }
         ],
@@ -106,23 +68,14 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 40
                     }
                 ]
@@ -139,18 +92,10 @@
     },
     {
         "patrol_id": "gen_bord_newcat3",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_newcat",
         "min_cats": 1,
         "max_cats": 1,
@@ -165,24 +110,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "loner",
-                        "status:warrior"
-                    ]
+                    ["loner", "status:warrior"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -193,30 +127,14 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "loner",
-                        "age:has_kits"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:kitten",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["loner", "age:has_kits"],
+                    ["litter", "parent:0", "status:kitten", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -230,10 +148,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ]
             }
         ],
@@ -244,23 +159,14 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 40
                     }
                 ]
@@ -277,18 +183,10 @@
     },
     {
         "patrol_id": "gen_bord_newcatkittypet2",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 2,
         "max_cats": 6,
@@ -303,24 +201,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:warrior",
-                        "kittypet"
-                    ]
+                    ["status:warrior", "kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -331,30 +218,14 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "kittypet"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:kitten",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["age:has_kits", "kittypet"],
+                    ["litter", "parent:0", "status:kitten", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -368,10 +239,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "kittypet"
-                    ]
+                    ["meeting", "kittypet"]
                 ]
             }
         ],
@@ -382,10 +250,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "kittypet"
-                    ]
+                    ["meeting", "kittypet"]
                 ]
             }
         ],
@@ -400,18 +265,10 @@
     },
     {
         "patrol_id": "gen_bord_newcatkittypet6",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 1,
         "max_cats": 1,
@@ -426,24 +283,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:warrior",
-                        "kittypet"
-                    ]
+                    ["status:warrior", "kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -454,30 +300,14 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "kittypet"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:kitten",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["age:has_kits", "kittypet"],
+                    ["litter", "parent:0", "status:kitten", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -491,10 +321,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "kittypet"
-                    ]
+                    ["meeting", "kittypet"]
                 ]
             }
         ],
@@ -505,10 +332,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "kittypet"
-                    ]
+                    ["meeting", "kittypet"]
                 ]
             }
         ],
@@ -523,18 +347,10 @@
     },
     {
         "patrol_id": "gen_bord_newcatthunderpath3",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_newcatthunderpath",
         "min_cats": 2,
         "max_cats": 6,
@@ -549,35 +365,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:warrior"
-                    ]
+                    ["status:warrior"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "blunt_force_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["blunt_force_injury"],
                         "no_results": true
                     }
                 ]
@@ -590,10 +392,7 @@
                 "weight": 20,
                 "outsider_rep": 0,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "dead"
-                    ]
+                    ["meeting", "dead"]
                 ]
             },
             {
@@ -602,10 +401,7 @@
                 "weight": 20,
                 "outsider_rep": 0,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "dead"
-                    ]
+                    ["meeting", "dead"]
                 ]
             }
         ],
@@ -616,10 +412,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "dead"
-                    ]
+                    ["meeting", "dead"]
                 ]
             }
         ],
@@ -634,18 +427,10 @@
     },
     {
         "patrol_id": "gen_bord_newcatthunderpath4",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_newcatthunderpath",
         "min_cats": 1,
         "max_cats": 1,
@@ -660,35 +445,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:warrior"
-                    ]
+                    ["status:warrior"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "blunt_force_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["blunt_force_injury"],
                         "no_results": true
                     }
                 ]
@@ -701,10 +472,7 @@
                 "weight": 20,
                 "outsider_rep": 0,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "dead"
-                    ]
+                    ["meeting", "dead"]
                 ]
             },
             {
@@ -721,10 +489,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "dead"
-                    ]
+                    ["meeting", "dead"]
                 ]
             }
         ],
@@ -739,26 +504,15 @@
     },
     {
         "patrol_id": "gen_bord_sparrowgift1",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "normal adult": [
-                1,
-                6
-            ]
+            "normal adult": [1, 6]
         },
         "weight": 20,
         "intro_text": "In the middle of remarking the border, p_l finds a distinct scent trail has crossed it.",
@@ -770,37 +524,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:senior",
-                        "male",
-                        "backstory:refugee6"
-                    ]
+                    ["age:senior", "male", "backstory:refugee6"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "carrionplace disease"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["carrionplace disease"],
                         "no_results": true
                     }
                 ]
@@ -809,45 +547,24 @@
                 "text": "The patrol immediately stops their border marking and switches to tracking the scent of the intruder instead. At the end of the trail they find an old kittypet, wheezing {PRONOUN/n_c:0/poss} Twoleg's name. s_c steps up and tells the patrol they'll be taking this kittypet back to camp for healing - in Tigger's name. {PRONOUN/s_c/subject/CAP}'ll tell the story later.",
                 "exp": 30,
                 "weight": 20,
-                "stat_skill": [
-                    "LORE,1",
-                    "STORY,1"
-                ],
-                "can_have_stat": [
-                    "any"
-                ],
+                "stat_skill": ["LORE,1", "STORY,1"],
+                "can_have_stat": ["any"],
                 "new_cat": [
-                    [
-                        "age:senior",
-                        "male",
-                        "backstory:refugee6"
-                    ]
+                    ["age:senior", "male", "backstory:refugee6"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "carrionplace disease"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["carrionplace disease"],
                         "no_results": true
                     }
                 ]
@@ -857,49 +574,21 @@
                 "exp": 20,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "female",
-                        "loner",
-                        "age:has_kits",
-                        "meeting"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:newborn",
-                        "backstory:abandoned2"
-                    ],
-                    [
-                        "age:newborn",
-                        "loner",
-                        "meeting",
-                        "parent:0"
-                    ]
+                    ["female", "loner", "age:has_kits", "meeting"],
+                    ["litter", "parent:0", "status:newborn", "backstory:abandoned2"],
+                    ["age:newborn", "loner", "meeting", "parent:0"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "dislike",
-                            "jealous"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["dislike", "jealous"],
                         "amount": 50
                     },
                     {
-                        "cats_from": [
-                            "patrol"
-                        ],
-                        "cats_to": [
-                            "n_c:0"
-                        ],
-                        "values": [
-                            "dislike"
-                        ],
+                        "cats_from": ["patrol"],
+                        "cats_to": ["n_c:0"],
+                        "values": ["dislike"],
                         "amount": 5
                     }
                 ],
@@ -914,16 +603,9 @@
                 "outsider_rep": 0,
                 "relationships": [
                     {
-                        "cats_from": [
-                            "p_l"
-                        ],
-                        "cats_to": [
-                            "r_c"
-                        ],
-                        "values": [
-                            "dislike",
-                            "jealous"
-                        ],
+                        "cats_from": ["p_l"],
+                        "cats_to": ["r_c"],
+                        "values": ["dislike", "jealous"],
                         "mutual": false,
                         "amount": 10
                     }
@@ -943,13 +625,7 @@
                 "weight": 20,
                 "outsider_rep": -4,
                 "new_cat": [
-                    [
-                        "age:senior",
-                        "male",
-                        "backstory:refugee6",
-                        "meeting",
-                        "dead"
-                    ]
+                    ["age:senior", "male", "backstory:refugee6", "meeting", "dead"]
                 ]
             }
         ],
@@ -960,39 +636,22 @@
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    [
-                        "age:senior",
-                        "male",
-                        "backstory:refugee6",
-                        "meeting",
-                        "dead"
-                    ]
+                    ["age:senior", "male", "backstory:refugee6", "meeting", "dead"]
                 ]
             }
         ]
     },
     {
         "patrol_id": "gen_bord_binglegift1",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "normal adult": [
-                1,
-                6
-            ]
+            "normal adult": [1, 6]
         },
         "weight": 20,
         "intro_text": "Padding along the border, p_l checks once - twice - three times... and crosses over c_n's markers, venturing beyond into unclaimed land.",
@@ -1004,26 +663,14 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:adult",
-                        "meeting",
-                        "backstory:loner3"
-                    ]
+                    ["age:adult", "meeting", "backstory:loner3"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 30
                     }
                 ],
@@ -1034,40 +681,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:mate",
-                        "meeting",
-                        "mate:p_l",
-                        "backstory:loner3"
-                    ]
+                    ["age:mate", "meeting", "mate:p_l", "backstory:loner3"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "trust",
-                            "comfort"
-                        ],
+                        "values": ["trust", "comfort"],
                         "amount": 30
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "platonic",
-                            "romantic"
-                        ],
+                        "values": ["platonic", "romantic"],
                         "amount": 50
                     }
                 ],
@@ -1078,40 +706,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:mate",
-                        "meeting",
-                        "mate:p_l",
-                        "backstory:loner3"
-                    ]
+                    ["age:mate", "meeting", "mate:p_l", "backstory:loner3"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "trust",
-                            "comfort"
-                        ],
+                        "values": ["trust", "comfort"],
                         "amount": 30
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "platonic",
-                            "romantic"
-                        ],
+                        "values": ["platonic", "romantic"],
                         "amount": 50
                     }
                 ],
@@ -1122,53 +731,28 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:mate",
-                        "mate:p_l",
-                        "backstory:loner4"
-                    ]
+                    ["age:mate", "mate:p_l", "backstory:loner4"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "trust",
-                            "comfort"
-                        ],
+                        "values": ["trust", "comfort"],
                         "amount": 30
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "platonic",
-                            "romantic"
-                        ],
+                        "values": ["platonic", "romantic"],
                         "amount": 50
                     },
                     {
-                        "cats_from": [
-                            "clan"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["clan"],
+                        "cats_to": ["p_l"],
                         "mutual": false,
-                        "values": [
-                            "respect",
-                            "trust"
-                        ],
+                        "values": ["respect", "trust"],
                         "amount": -20
                     }
                 ],
@@ -1181,43 +765,22 @@
                 "exp": 0,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:mate",
-                        "meeting",
-                        "mate:p_l",
-                        "backstory:loner3"
-                    ]
+                    ["age:mate", "meeting", "mate:p_l", "backstory:loner3"]
                 ],
-                "lost_cats": [
-                    "p_l"
-                ],
+                "lost_cats": ["p_l"],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "trust",
-                            "comfort"
-                        ],
+                        "values": ["trust", "comfort"],
                         "amount": 30
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "platonic",
-                            "romantic"
-                        ],
+                        "values": ["platonic", "romantic"],
                         "amount": 50
                     }
                 ],
@@ -1228,40 +791,21 @@
                 "exp": 0,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:mate",
-                        "meeting",
-                        "mate:p_l",
-                        "backstory:loner3"
-                    ]
+                    ["age:mate", "meeting", "mate:p_l", "backstory:loner3"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "trust",
-                            "comfort"
-                        ],
+                        "values": ["trust", "comfort"],
                         "amount": 30
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "platonic",
-                            "romantic"
-                        ],
+                        "values": ["platonic", "romantic"],
                         "amount": 50
                     }
                 ],
@@ -1274,40 +818,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:mate",
-                        "meeting",
-                        "mate:p_l",
-                        "backstory:loner3"
-                    ]
+                    ["age:mate", "meeting", "mate:p_l", "backstory:loner3"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "platonic",
-                            "comfort"
-                        ],
+                        "values": ["platonic", "comfort"],
                         "amount": 30
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "dislike",
-                            "romantic"
-                        ],
+                        "values": ["dislike", "romantic"],
                         "amount": 50
                     }
                 ],
@@ -1320,40 +845,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:mate",
-                        "meeting",
-                        "mate:p_l",
-                        "backstory:loner3"
-                    ]
+                    ["age:mate", "meeting", "mate:p_l", "backstory:loner3"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "platonic",
-                            "comfort"
-                        ],
+                        "values": ["platonic", "comfort"],
                         "amount": 30
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "dislike",
-                            "romantic"
-                        ],
+                        "values": ["dislike", "romantic"],
                         "amount": 50
                     }
                 ],
@@ -1363,18 +869,10 @@
     },
     {
         "patrol_id": "gen_bord_newkit2",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_newkit",
         "min_cats": 2,
         "max_cats": 6,
@@ -1389,24 +887,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:kitten",
-                        "backstory:abandoned1"
-                    ]
+                    ["status:kitten", "backstory:abandoned1"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -1446,18 +933,10 @@
     },
     {
         "patrol_id": "gen_bord_newkit6",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_newkit",
         "min_cats": 1,
         "max_cats": 1,
@@ -1472,24 +951,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:kitten",
-                        "backstory:abandoned1"
-                    ]
+                    ["status:kitten", "backstory:abandoned1"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -1529,18 +997,10 @@
     },
     {
         "patrol_id": "gen_bord_healer1",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 2,
         "max_cats": 6,
@@ -1555,24 +1015,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:medicine cat",
-                        "loner"
-                    ]
+                    ["status:medicine cat", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -1583,31 +1032,14 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "status:medicine cat",
-                        "loner",
-                        "age:has_kits"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:kitten",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["status:medicine cat", "loner", "age:has_kits"],
+                    ["litter", "parent:0", "status:kitten", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -1621,10 +1053,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ]
             }
         ],
@@ -1635,23 +1064,14 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 40
                     }
                 ]
@@ -1668,18 +1088,10 @@
     },
     {
         "patrol_id": "gen_bord_healer4",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 1,
         "max_cats": 1,
@@ -1694,24 +1106,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:medicine cat",
-                        "loner"
-                    ]
+                    ["status:medicine cat", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -1722,31 +1123,14 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "status:medicine cat",
-                        "loner",
-                        "age:has_kits"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:kitten",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["status:medicine cat", "loner", "age:has_kits"],
+                    ["litter", "parent:0", "status:kitten", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -1760,10 +1144,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ]
             }
         ],
@@ -1774,23 +1155,14 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 40
                     }
                 ]
@@ -1807,18 +1179,10 @@
     },
     {
         "patrol_id": "gen_bord_lonerchase1",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_lonerchase",
         "min_cats": 3,
         "max_cats": 6,
@@ -1833,23 +1197,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "loner"
-                    ]
+                    ["loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -1859,27 +1213,15 @@
                 "text": "s_c leaps into action, pelting towards the dog with a yowl rising in {PRONOUN/s_c/poss} throat. The dog looks alarmed by this newcomer and abandons the chase as s_c swipes at it. The loner, ruffled but unharmed, is amazed by this display. After some chatting, they decide to join the Clan.",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": [
-                    "FIGHTER,1"
-                ],
+                "stat_skill": ["FIGHTER,1"],
                 "new_cat": [
-                    [
-                        "loner"
-                    ]
+                    ["loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -1893,10 +1235,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ]
             },
             {
@@ -1905,15 +1244,9 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "cats": [
-                            "r_c"
-                        ],
-                        "injuries": [
-                            "claw-wound"
-                        ],
-                        "scars": [
-                            "RIGHTEAR"
-                        ]
+                        "cats": ["r_c"],
+                        "injuries": ["claw-wound"],
+                        "scars": ["RIGHTEAR"]
                     }
                 ],
                 "history_text": {
@@ -1923,10 +1256,7 @@
                 },
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ]
             }
         ],
@@ -1937,23 +1267,14 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
                         "mutual": false,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 40
                     }
                 ]
@@ -1966,44 +1287,24 @@
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "loner"
-                    ]
+                    ["meeting", "loner"]
                 ]
             }
         ]
     },
     {
         "patrol_id": "gen_med_rescue1",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "herb_gathering"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["herb_gathering"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_med_rescue",
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {
-            "apprentice": [
-                -1,
-                -1
-            ],
-            "healer cats": [
-                1,
-                6
-            ],
-            "normal adult": [
-                -1,
-                -1
-            ]
+            "apprentice": [-1, -1],
+            "healer cats": [1, 6],
+            "normal adult": [-1, -1]
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs, p_l is startled by weird sounds and whispers on the wind.",
@@ -2015,30 +1316,14 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "can_birth",
-                        "age:has_kits"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:newborn",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["can_birth", "age:has_kits"],
+                    ["litter", "parent:0", "status:newborn", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2049,30 +1334,14 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "can_birth",
-                        "age:has_kits"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:newborn",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["can_birth", "age:has_kits"],
+                    ["litter", "parent:0", "status:newborn", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2106,34 +1375,17 @@
     },
     {
         "patrol_id": "gen_med_rescue2",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "herb_gathering"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["herb_gathering"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_med_rescue",
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {
-            "apprentice": [
-                -1,
-                -1
-            ],
-            "healer cats": [
-                1,
-                6
-            ],
-            "normal adult": [
-                -1,
-                -1
-            ]
+            "apprentice": [-1, -1],
+            "healer cats": [1, 6],
+            "normal adult": [-1, -1]
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs, p_l is startled by weird sounds and whispers on the wind.",
@@ -2145,12 +1397,7 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "dead",
-                        "meeting",
-                        "can_birth",
-                        "age:has_kits"
-                    ],
+                    ["dead", "meeting", "can_birth", "age:has_kits"],
                     [
                         "litter",
                         "parent:0",
@@ -2160,17 +1407,9 @@
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2181,12 +1420,7 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "dead",
-                        "meeting",
-                        "can_birth",
-                        "age:has_kits"
-                    ],
+                    ["dead", "meeting", "can_birth", "age:has_kits"],
                     [
                         "litter",
                         "parent:0",
@@ -2196,17 +1430,9 @@
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2240,42 +1466,19 @@
     },
     {
         "patrol_id": "gen_med_rescue3",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "herb_gathering"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["herb_gathering"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_med_rescue",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "apprentice": [
-                -1,
-                -1
-            ],
-            "medicine cat": [
-                1,
-                6
-            ],
-            "healer cats": [
-                1,
-                6
-            ],
-            "all apprentices": [
-                -1,
-                -1
-            ],
-            "normal adult": [
-                -1,
-                -1
-            ]
+            "apprentice": [-1, -1],
+            "medicine cat": [1, 6],
+            "healer cats": [1, 6],
+            "all apprentices": [-1, -1],
+            "normal adult": [-1, -1]
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs, p_l is startled by weird sounds and whispers on the wind.",
@@ -2287,30 +1490,14 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "can_birth"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:newborn",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["age:has_kits", "can_birth"],
+                    ["litter", "parent:0", "status:newborn", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2321,30 +1508,14 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "can_birth"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:newborn",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["age:has_kits", "can_birth"],
+                    ["litter", "parent:0", "status:newborn", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2378,42 +1549,19 @@
     },
     {
         "patrol_id": "gen_med_rescue4",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "herb_gathering"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["herb_gathering"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_med_rescue",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "apprentice": [
-                -1,
-                -1
-            ],
-            "medicine cat": [
-                1,
-                6
-            ],
-            "healer cats": [
-                1,
-                6
-            ],
-            "all apprentices": [
-                -1,
-                -1
-            ],
-            "normal adult": [
-                -1,
-                -1
-            ]
+            "apprentice": [-1, -1],
+            "medicine cat": [1, 6],
+            "healer cats": [1, 6],
+            "all apprentices": [-1, -1],
+            "normal adult": [-1, -1]
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs, p_l is startled by weird sounds and whispers on the wind.",
@@ -2425,12 +1573,7 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "dead",
-                        "meeting",
-                        "can_birth"
-                    ],
+                    ["age:has_kits", "dead", "meeting", "can_birth"],
                     [
                         "litter",
                         "parent:0",
@@ -2440,17 +1583,9 @@
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2461,12 +1596,7 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "dead",
-                        "meeting",
-                        "can_birth"
-                    ],
+                    ["age:has_kits", "dead", "meeting", "can_birth"],
                     [
                         "litter",
                         "parent:0",
@@ -2476,17 +1606,9 @@
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2520,38 +1642,18 @@
     },
     {
         "patrol_id": "gen_med_rescuesoloapp1",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "herb_gathering"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["herb_gathering"],
+        "tags": ["new_cat"],
         "patrol_art": "med_general_intro",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "apprentice": [
-                -1,
-                -1
-            ],
-            "medicine cat apprentice": [
-                1,
-                6
-            ],
-            "healer cats": [
-                1,
-                6
-            ],
-            "normal adult": [
-                -1,
-                -1
-            ]
+            "apprentice": [-1, -1],
+            "medicine cat apprentice": [1, 6],
+            "healer cats": [1, 6],
+            "normal adult": [-1, -1]
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs, p_l is startled by weird sounds and whispers on the wind.",
@@ -2563,30 +1665,14 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "can_birth"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:newborn",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["age:has_kits", "can_birth"],
+                    ["litter", "parent:0", "status:newborn", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2597,30 +1683,14 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "can_birth"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:newborn",
-                        "backstory:outsider_roots2"
-                    ]
+                    ["age:has_kits", "can_birth"],
+                    ["litter", "parent:0", "status:newborn", "backstory:outsider_roots2"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2634,12 +1704,8 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "cats": [
-                            "app1"
-                        ],
-                        "injuries": [
-                            "shock"
-                        ],
+                        "cats": ["app1"],
+                        "injuries": ["shock"],
                         "scars": []
                     }
                 ],
@@ -2665,38 +1731,18 @@
     },
     {
         "patrol_id": "gen_med_rescuesoloapp2",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "herb_gathering"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["herb_gathering"],
+        "tags": ["new_cat"],
         "patrol_art": "med_general_intro",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "apprentice": [
-                -1,
-                -1
-            ],
-            "medicine cat apprentice": [
-                1,
-                6
-            ],
-            "healer cats": [
-                1,
-                6
-            ],
-            "normal adult": [
-                -1,
-                -1
-            ]
+            "apprentice": [-1, -1],
+            "medicine cat apprentice": [1, 6],
+            "healer cats": [1, 6],
+            "normal adult": [-1, -1]
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs, p_l is startled by weird sounds and whispers on the wind.",
@@ -2708,12 +1754,7 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "dead",
-                        "meeting",
-                        "can_birth"
-                    ],
+                    ["age:has_kits", "dead", "meeting", "can_birth"],
                     [
                         "litter",
                         "parent:0",
@@ -2723,17 +1764,9 @@
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2744,12 +1777,7 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "age:has_kits",
-                        "dead",
-                        "meeting",
-                        "can_birth"
-                    ],
+                    ["age:has_kits", "dead", "meeting", "can_birth"],
                     [
                         "litter",
                         "parent:0",
@@ -2759,17 +1787,9 @@
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2783,12 +1803,8 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "cats": [
-                            "app1"
-                        ],
-                        "injuries": [
-                            "shock"
-                        ],
+                        "cats": ["app1"],
+                        "injuries": ["shock"],
                         "scars": []
                     }
                 ],
@@ -2814,18 +1830,10 @@
     },
     {
         "patrol_id": "bch_bord_newcat_abandontwoleg1",
-        "biome": [
-            "beach"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["beach"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_abandontwolegdis",
         "min_cats": 1,
         "max_cats": 1,
@@ -2840,25 +1848,13 @@
                 "exp": 30,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "loner"
-                    ]
+                    ["status:elder", "age:senior", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2869,25 +1865,13 @@
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "loner"
-                    ]
+                    ["status:elder", "age:senior", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -2897,37 +1881,18 @@
                 "text": "s_c walks into an ambush set by a group of rogues. It's only by the grace of StarClan that s_c has the fighting skill and confidence to escape, running for {PRONOUN/s_c/poss} life to get back to camp. ",
                 "exp": 30,
                 "weight": 20,
-                "stat_skill": [
-                    "FIGHTER,3"
-                ],
+                "stat_skill": ["FIGHTER,3"],
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1",
-                            "n_c:2"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1", "n_c:2"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -2936,11 +1901,7 @@
                 "text": "s_c has a bad feeling about this. At first it seems like {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then {PRONOUN/s_c/subject} {VERB/s_c/pick/picks} up on the scent of strange cats lingering around the Twoleg nest. Forewarned, s_c retreats to safety.",
                 "exp": 30,
                 "weight": 20,
-                "stat_trait": [
-                    "careful",
-                    "insecure",
-                    "nervous"
-                ]
+                "stat_trait": ["careful", "insecure", "nervous"]
             }
         ],
         "fail_outcomes": [
@@ -2948,12 +1909,9 @@
                 "text": "p_l decides that a quick peek can't hurt. As {PRONOUN/p_l/subject} {VERB/p_l/venture/ventures} into the nest, ears pricked with curiosity, {PRONOUN/p_l/subject} {VERB/p_l/don't/doesn't} notice the lithe forms of rogues moving to block the entrance until it's too late. p_l never makes it back to camp.",
                 "exp": 0,
                 "weight": 10,
-                "dead_cats": [
-                    "r_c",
-                    "some_lives"
-                ],
+                "dead_cats": ["r_c", "some_lives"],
                 "history_text": {
-                    "reg_death": "This cat died in an ambush set by rogues.",
+                    "reg_death": "m_c died in an ambush set by rogues.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 },
                 "outsider_rep": -1
@@ -2966,29 +1924,15 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1",
-                            "n_c:2"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1", "n_c:2"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -2996,34 +1940,20 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l can sense it's a trap and waits just outside, setting {PRONOUN/p_l/poss} own trap. {PRONOUN/p_l/subject/CAP} {VERB/p_l/manage/manages} to set up such a yowl that it sends the rogues running as if LionClan were after them.",
+                "text": "p_l can sense it's a trap and waits just outside, setting {PRONOUN/p_l/poss} own trap. {PRONOUN/p_l/subject/CAP} {VERB/p_l/fill/fills} {PRONOUN/p_l/poss} lungs deeply and {VERB/p_l/let/lets} out a yowl that sends the rogues running as if LionClan were after them.",
                 "exp": 30,
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1",
-                            "n_c:2"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1", "n_c:2"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3032,18 +1962,10 @@
     },
     {
         "patrol_id": "bch_bord_newcat_abandontwoleg2",
-        "biome": [
-            "beach"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["beach"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_abandontwolegdis",
         "min_cats": 3,
         "max_cats": 6,
@@ -3058,25 +1980,13 @@
                 "exp": 30,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "loner"
-                    ]
+                    ["status:elder", "age:senior", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -3087,25 +1997,13 @@
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "loner"
-                    ]
+                    ["status:elder", "age:senior", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -3115,38 +2013,18 @@
                 "text": "The patrol walks into an ambush set by a group of rogues. It's only by the grace of StarClan that s_c is there, fighting with the courage of LionClan, the strength of TigerClan, and the agility of LeopardClan. Shaken but no more than bruised, the patrol manages to retreat to safety.",
                 "exp": 30,
                 "weight": 20,
-                "stat_skill": [
-                    "FIGHTER,3"
-                ],
+                "stat_skill": ["FIGHTER,3"],
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting",
-                        "dead"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting", "dead"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1",
-                            "n_c:2"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1", "n_c:2"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ],
@@ -3156,6 +2034,7 @@
                 "text": "s_c signals for the patrol to stop. Carefully and quietly,{PRONOUN/s_c/subject} {VERB/s_c/explain/explains} {PRONOUN/s_c/poss} concerns about the unknown situation. At first it seems like {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then p_l picks up on the scent of strange cats lingering around the Twoleg nest. Forewarned, the patrol retreats to safety.",
                 "exp": 30,
                 "weight": 20,
+                "stat_trait": ["careful", "insecure", "nervous"],
                 "outsider_rep": 1
             }
         ],
@@ -3164,42 +2043,23 @@
                 "text": "The patrol walks into an ambush. Before p_l can so much as yowl a warning, a group of rogues creep from the shadows to surround the Clan cats on all sides. Few of the cats manage to escape. Any that were left behind are found the next morning, cold and covered in battle wounds.",
                 "exp": 0,
                 "weight": 10,
-                "dead_cats": [
-                    "multi"
-                ],
+                "dead_cats": ["multi"],
                 "history_text": {
-                    "reg_death": "This cat died in an ambush set by rogues.",
+                    "reg_death": "m_c died in an ambush set by rogues.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 },
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1",
-                            "n_c:2"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1", "n_c:2"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3212,28 +2072,15 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3246,28 +2093,15 @@
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3276,18 +2110,10 @@
     },
     {
         "patrol_id": "fst_bord_noise2",
-        "biome": [
-            "forest"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["forest"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 2,
         "max_cats": 6,
@@ -3302,23 +2128,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:apprentice"
-                    ]
+                    ["status:apprentice"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -3329,23 +2145,13 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "status:apprentice"
-                    ]
+                    ["status:apprentice"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -3355,27 +2161,15 @@
                 "text": "s_c cautiously checks the bush, only to be surprised by a weight slamming into {PRONOUN/p_l/poss}! {PRONOUN/p_l/subject/CAP} {VERB/p_l/recover/recovers}, only to see a young loner snarling at the patrol. Impressed with the cat's bravery, s_c invites them to join the Clan, to which the young cat agrees.",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": [
-                    "FIGHTER,1"
-                ],
+                "stat_skill": ["FIGHTER,1"],
                 "new_cat": [
-                    [
-                        "status:apprentice"
-                    ]
+                    ["status:apprentice"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -3393,11 +2187,7 @@
                 "text": "s_c doesn't even hesitate before splitting from the patrol to check on the source of the noise. {PRONOUN/s_c/subject/CAP} quickly {VERB/s_c/regret/regrets} {PRONOUN/s_c/poss} impulsivity, however, when an angry raccoon bursts from the bush! s_c gets quite the scare, but thankfully the raccoon only wanted to get away from {PRONOUN/s_c/object} and quickly runs off back into the undergrowth.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": [
-                    "daring",
-                    "bold",
-                    "ambitious"
-                ],
+                "stat_trait": ["daring", "bold", "ambitious"],
                 "outsider_rep": -1
             },
             {
@@ -3405,44 +2195,29 @@
                 "exp": 0,
                 "weight": 10,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1",
-                            "n_c:2"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1", "n_c:2"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ],
                 "injury": [
                     {
-                        "cats": [
-                            "p_l"
-                        ],
-                        "injuries": [
-                            "battle_injury"
-                        ],
-                        "scars": [
-                            "BRIDGE"
-                        ]
+                        "cats": ["p_l"],
+                        "injuries": ["battle_injury"],
+                        "scars": ["BRIDGE"]
                     }
                 ],
-                "history_text": {
-                    "scar": "m_c gained a scar after tussling with a rogue."
-                },
+                "history_text": { 
+                    "scar": "m_c gained a scar after tussling with a rogue.",
+                    "reg_death": "m_c died from injuries sustained in a fight with a rogue.",
+                    "lead_death": "died from injuries sustained in a fight with a rogue"
+                 },
                 "outsider_rep": -1
             }
         ],
@@ -3453,43 +2228,22 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "loner",
-                        "meeting",
-                        "age:adult"
-                    ],
-                    [
-                        "loner",
-                        "meeting",
-                        "litter",
-                        "parent:0"
-                    ]
+                    ["loner", "meeting", "age:adult"],
+                    ["loner", "meeting", "litter", "parent:0"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 15
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "p_l"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["p_l"],
                         "mutual": true,
-                        "values": [
-                            "platonic"
-                        ],
+                        "values": ["platonic"],
                         "amount": 5
                     }
                 ]
@@ -3502,36 +2256,18 @@
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    [
-                        "loner",
-                        "meeting",
-                        "age:adult"
-                    ],
-                    [
-                        "loner",
-                        "meeting",
-                        "litter",
-                        "parent:0"
-                    ]
+                    ["loner", "meeting", "age:adult"],
+                    ["loner", "meeting", "litter", "parent:0"]
                 ]
             }
         ]
     },
     {
         "patrol_id": "pln_bord_abandontwoleg1",
-        "biome": [
-            "plains"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat",
-            "disaster"
-        ],
+        "biome": ["plains"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat", "disaster"],
         "patrol_art": "gen_bord_abandontwolegdis",
         "min_cats": 2,
         "max_cats": 6,
@@ -3546,25 +2282,13 @@
                 "exp": 30,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "loner"
-                    ]
+                    ["status:elder", "age:senior", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -3575,25 +2299,13 @@
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "loner"
-                    ]
+                    ["status:elder", "age:senior", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -3603,38 +2315,18 @@
                 "text": "The patrol walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c is there, fighting with the courage of LionClan, the strength of TigerClan, and the dexterity of LeopardClan. Shaken but no more than bruised, the patrol manages to retreat to safety.",
                 "exp": 30,
                 "weight": 20,
-                "stat_skill": [
-                    "FIGHTER,3"
-                ],
+                "stat_skill": ["FIGHTER,3"],
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting",
-                        "dead"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting", "dead"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1",
-                            "n_c:2"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1", "n_c:2"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3643,11 +2335,7 @@
                 "text": "s_c signals for the patrol to stop. Carefully and quietly,{PRONOUN/s_c/subject} {VERB/s_c/voice/voices} {PRONOUN/s_c/poss} concerns about the unknown situation. And maybe {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then p_l picks up on the scent of strange cats around the Twoleg den. Forewarned, the patrol retreats to safety.",
                 "exp": 30,
                 "weight": 20,
-                "stat_trait": [
-                    "careful",
-                    "insecure",
-                    "nervous"
-                ]
+                "stat_trait": ["careful", "insecure", "nervous"]
             }
         ],
         "fail_outcomes": [
@@ -3655,11 +2343,9 @@
                 "text": "The patrol walks into an ambush by a group of rogues. Everyone is slaughtered.",
                 "exp": 0,
                 "weight": 10,
-                "dead_cats": [
-                    "patrol"
-                ],
+                "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat died from being ambushed by rogues.",
+                    "reg_death": "m_c died from being ambushed by rogues.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 },
                 "outsider_rep": -1
@@ -3672,28 +2358,15 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3706,28 +2379,15 @@
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3736,18 +2396,10 @@
     },
     {
         "patrol_id": "pln_bord_abandontwoleg2",
-        "biome": [
-            "plains"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["plains"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "gen_bord_abandontwolegdis",
         "min_cats": 1,
         "max_cats": 1,
@@ -3762,25 +2414,13 @@
                 "exp": 30,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "loner"
-                    ]
+                    ["status:elder", "age:senior", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -3791,25 +2431,13 @@
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "loner"
-                    ]
+                    ["status:elder", "age:senior", "loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -3819,37 +2447,18 @@
                 "text": "s_c walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c has the fighting skill and confidence to escape, running for {PRONOUN/s_c/poss} life.",
                 "exp": 30,
                 "weight": 20,
-                "stat_skill": [
-                    "FIGHTER,3"
-                ],
+                "stat_skill": ["FIGHTER,3"],
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1",
-                            "n_c:2"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1", "n_c:2"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3858,11 +2467,7 @@
                 "text": "s_c has a bad feeling about this. And maybe {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then {PRONOUN/s_c/subject} {VERB/s_c/pick/picks} up on the scent of strange cats around the Twoleg den. Forewarned, s_c retreats to safety.",
                 "exp": 30,
                 "weight": 20,
-                "stat_trait": [
-                    "careful",
-                    "insecure",
-                    "nervous"
-                ]
+                "stat_trait": ["careful", "insecure", "nervous"]
             }
         ],
         "fail_outcomes": [
@@ -3870,10 +2475,7 @@
                 "text": "r_c decides that a quick peek can't hurt. As {PRONOUN/r_c/subject} {VERB/r_c/venture/ventures} into the nest, ears pricked with curiosity, {PRONOUN/r_c/subject} {VERB/r_c/don't/doesn't} notice the lithe forms of rogues moving to block the entrance until it's too late. r_c never makes it back to camp.",
                 "exp": 0,
                 "weight": 10,
-                "dead_cats": [
-                    "r_c",
-                    "some_lives"
-                ],
+                "dead_cats": ["r_c", "some_lives"],
                 "history_text": {
                     "reg_death": "This cat died from being ambushed by rogues while on a solo patrol.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush while on a solo patrol"
@@ -3888,28 +2490,15 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3922,28 +2511,15 @@
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    [
-                        "rogue",
-                        "meeting"
-                    ],
-                    [
-                        "rogue",
-                        "meeting"
-                    ]
+                    ["rogue", "meeting"],
+                    ["rogue", "meeting"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0",
-                            "n_c:1"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
+                        "cats_from": ["n_c:0", "n_c:1"],
+                        "cats_to": ["patrol"],
                         "mutual": true,
-                        "values": [
-                            "dislike"
-                        ],
+                        "values": ["dislike"],
                         "amount": 50
                     }
                 ]
@@ -3952,18 +2528,10 @@
     },
     {
         "patrol_id": "fst_hunt_twolegplacekittens1",
-        "biome": [
-            "forest"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "hunting"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["forest"],
+        "season": ["any"],
+        "types": ["hunting"],
+        "tags": ["new_cat"],
         "patrol_art": "fst_hunt_twolegplace",
         "min_cats": 2,
         "max_cats": 2,
@@ -3972,21 +2540,14 @@
         "intro_text": "The patrol approaches a Twoleg nest in the woods while hunting.",
         "decline_text": "The patrol decides to hunt elsewhere.",
         "chance_of_success": 40,
-        "relationship_constraint": [
-            "mates"
-        ],
+        "relationship_constraint": ["mates"],
         "success_outcomes": [
             {
                 "text": "p_l hears r_c softly calling {PRONOUN/p_l/object} through the bushes. p_l drops the idea of following mouse scent, hurrying to {PRONOUN/p_l/poss} mate's side. r_c, head poking into the nest's garden through a gap in the fence, murmurs something about Twoleg kits. Twoleg kits? No, r_c corrects, the <i>Twolegs's kits</i>, the Twolegs <i>have kittens</i> wandering through the nest's garden, they need to be rescued.",
                 "exp": 30,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "kittypet",
-                        "can_birth",
-                        "dead",
-                        "age:has_kits"
-                    ],
+                    ["kittypet", "can_birth", "dead", "age:has_kits"],
                     [
                         "litter",
                         "parent:0",
@@ -3996,17 +2557,9 @@
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -4017,12 +2570,7 @@
                 "exp": 30,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "kittypet",
-                        "can_birth",
-                        "dead",
-                        "age:has_kits"
-                    ],
+                    ["kittypet", "can_birth", "dead", "age:has_kits"],
                     [
                         "litter",
                         "parent:0",
@@ -4032,17 +2580,9 @@
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -4052,36 +2592,16 @@
                 "text": "Furious, high-pitched yowls greet the patrol as a tiny kittypet kitten comes roaring out of the Twoleg nest to try and fight them. Terrifying. s_c tips the little fighter over and carefully scruffs the tiny warrior - they can't leave them here. The kitten insists that they're a big cat and they're <b>fine</b>, but after a couple minutes, does reveal their mother is dead. Twolegs have kept them alive somehow, but c_n will do better.",
                 "exp": 30,
                 "weight": 20,
-                "stat_trait": [
-                    "careful",
-                    "thoughtful"
-                ],
+                "stat_trait": ["careful", "thoughtful"],
                 "new_cat": [
-                    [
-                        "kittypet",
-                        "can_birth",
-                        "dead",
-                        "age:has_kits"
-                    ],
-                    [
-                        "parent:0",
-                        "status:kitten",
-                        "backstory:abandoned1,abandoned4"
-                    ]
+                    ["kittypet", "can_birth", "dead", "age:has_kits"],
+                    ["parent:0", "status:kitten", "backstory:abandoned1,abandoned4"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -4115,18 +2635,10 @@
     },
     {
         "patrol_id": "gen_bord_curiouskittypet2",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 2,
         "max_cats": 6,
@@ -4141,23 +2653,13 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "kittypet"
-                    ]
+                    ["kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -4168,23 +2670,13 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "kittypet"
-                    ]
+                    ["kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -4194,27 +2686,15 @@
                 "text": "The patrol follows the noise and comes upon a kittypet that's sniffing around. The kittypet turns and bristles, hissing at the patrol. s_c calls out a greeting to them and engages them in conversation, which seems to calm them down. They even agree when s_c asks if they'd like to join the Clan!",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": [
-                    "SPEAKER,1"
-                ],
+                "stat_skill": ["SPEAKER,1"],
                 "new_cat": [
-                    [
-                        "kittypet"
-                    ]
+                    ["kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
@@ -4228,26 +2708,17 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "kittypet"
-                    ]
+                    ["meeting", "kittypet"]
                 ]
             },
             {
                 "text": "The patrol follows the sound, intent on finding the intruder. They come upon a kittypet sniffing around. They're about to approach calmly when s_c lets out a yowl and rushes towards the kittypet, who quickly turns tail.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": [
-                    "vengeful",
-                    "bloodthirsty"
-                ],
+                "stat_trait": ["vengeful", "bloodthirsty"],
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "kittypet"
-                    ]
+                    ["meeting", "kittypet"]
                 ]
             },
             {
@@ -4256,26 +2727,15 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "cats": [
-                            "r_c"
-                        ],
-                        "injuries": [
-                            "battle_injury"
-                        ],
-                        "scars": [
-                            "CATBITE"
-                        ]
+                        "cats": ["r_c"],
+                        "injuries": ["battle_injury"],
+                        "scars": ["CATBITE"]
                     }
                 ],
-                "history_text": {
-                    "scar": "This cat gained a scar from a fight with an angry kittypet."
-                },
+                "history_text": { "scar": "This cat gained a scar from a fight with an angry kittypet." },
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "meeting",
-                        "kittypet"
-                    ]
+                    ["meeting", "kittypet"]
                 ]
             }
         ],
@@ -4298,18 +2758,10 @@
     },
     {
         "patrol_id": "gen_bord_injuredcat2",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 2,
         "max_cats": 6,
@@ -4324,35 +2776,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "loner"
-                    ]
+                    ["loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "battle_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["battle_injury"],
                         "no_results": true
                     }
                 ]
@@ -4362,35 +2800,21 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "loner"
-                    ]
+                    ["loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "battle_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["battle_injury"],
                         "no_results": true
                     }
                 ]
@@ -4399,39 +2823,23 @@
                 "text": "The loner hisses defensively as the patrol comes closer. s_c speaks soothingly to the loner, assuring {PRONOUN/n_c:0/object} that {PRONOUN/s_c/subject} {VERB/s_c/mean/means} no harm and simply {VERB/s_c/want/wants} to help. The loner seems distrustful but allows p_l to help {PRONOUN/n_c:0/object} back to camp.",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": [
-                    "SPEAKER,1"
-                ],
+                "stat_skill": ["SPEAKER,1"],
                 "new_cat": [
-                    [
-                        "loner"
-                    ]
+                    ["loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "battle_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["battle_injury"],
                         "no_results": true
                     }
                 ]
@@ -4444,11 +2852,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "loner",
-                        "meeting",
-                        "dead"
-                    ]
+                    ["loner", "meeting", "dead"]
                 ]
             }
         ],
@@ -4467,29 +2871,17 @@
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    [
-                        "loner",
-                        "meeting",
-                        "dead"
-                    ]
+                    ["loner", "meeting", "dead"]
                 ]
             }
         ]
     },
     {
         "patrol_id": "gen_bord_injuredcatsolo2",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 1,
         "max_cats": 1,
@@ -4504,35 +2896,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "loner"
-                    ]
+                    ["loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "battle_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["battle_injury"],
                         "no_results": true
                     }
                 ]
@@ -4542,35 +2920,21 @@
                 "exp": 10,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "loner"
-                    ]
+                    ["loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "battle_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["battle_injury"],
                         "no_results": true
                     }
                 ]
@@ -4579,39 +2943,23 @@
                 "text": "The loner hisses defensively as s_c comes closer. {PRONOUN/s_c/subject/CAP} {VERB/s_c/speak/speaks} soothingly to the loner, assuring {PRONOUN/n_c:0/object} that {PRONOUN/s_c/subject} {VERB/s_c/mean/means} no harm and simply {VERB/s_c/mean/means} to help. The loner seems distrustful but allows s_c to help {PRONOUN/n_c:0/object} back to camp.",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": [
-                    "SPEAKER,1"
-                ],
+                "stat_skill": ["SPEAKER,1"],
                 "new_cat": [
-                    [
-                        "loner"
-                    ]
+                    ["loner"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "battle_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["battle_injury"],
                         "no_results": true
                     }
                 ]
@@ -4624,11 +2972,7 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    [
-                        "loner",
-                        "meeting",
-                        "dead"
-                    ]
+                    ["loner", "meeting", "dead"]
                 ]
             }
         ],
@@ -4647,37 +2991,22 @@
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    [
-                        "loner",
-                        "meeting",
-                        "dead"
-                    ]
+                    ["loner", "meeting", "dead"]
                 ]
             }
         ]
     },
     {
         "patrol_id": "mnt_hunt_newcat_leaf-barecatcryneutral1",
-        "biome": [
-            "mountainous"
-        ],
-        "season": [
-            "leaf-bare"
-        ],
-        "types": [
-            "hunting"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["mountainous"],
+        "season": ["leaf-bare"],
+        "types": ["hunting"],
+        "tags": ["new_cat"],
         "patrol_art": "hunt_general_intro",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "apprentice": [
-                1,
-                6
-            ]
+            "apprentice": [1, 6]
         },
         "weight": 20,
         "intro_text": "It's a cold day in c_n's territory, and app1 is the only cat stepping out. {PRONOUN/app1/subject/CAP}{VERB/app1/'re/'s} by {PRONOUN/app1/self} when {PRONOUN/app1/subject} {VERB/app1/hear/hears} a cat screaming for help.",
@@ -4685,39 +3014,25 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "It's probably dangerous, but... There's no way app1 could live with leaving some poor soul alone on the mountainside in the cold. Following the piteous cries, app1 rounds a bend and spots a puffed-out bundle of terrified screams sitting by the side of one of the few Thunderpaths that cross c_n territory. {PRONOUN/app1/subject/CAP} {VERB/app1/sigh/sighs}, climbing down the slope and calling out in reassurance to the kittypet.",
+                "text": "It's probably dangerous, but... there's no way app1 could live with leaving some poor soul alone on the mountainside in the cold. Following the piteous cries, app1 rounds a bend and spots a puffed-out bundle of terrified screams sitting by the side of one of the few Thunderpaths that cross c_n territory. {PRONOUN/app1/subject/CAP} {VERB/app1/sigh/sighs}, climbing down the slope and calling out in reassurance to the kittypet.",
                 "exp": 20,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "kittypet"
-                    ]
+                    ["kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "cold_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["cold_injury"],
                         "no_results": true
                     }
                 ]
@@ -4727,35 +3042,21 @@
                 "exp": 20,
                 "weight": 5,
                 "new_cat": [
-                    [
-                        "kittypet"
-                    ]
+                    ["kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "cold_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["cold_injury"],
                         "no_results": true
                     }
                 ]
@@ -4764,43 +3065,23 @@
                 "text": "app1 follows the sad cries to find a kittypet, lost and alone and cold. The apprentice introduces {PRONOUN/app1/self} cheerfully. Slowly, the desperate kittypet loses a little of {PRONOUN/n_c:0/poss} fear as app1 guides {PRONOUN/n_c:0/object} back to camp, sure that the Leader will know what to do with {PRONOUN/n_c:0/object}.",
                 "exp": 20,
                 "weight": 20,
-                "stat_trait": [
-                    "adventurous",
-                    "playful",
-                    "strange",
-                    "childish",
-                    "shameless"
-                ],
+                "stat_trait": ["adventurous", "playful", "strange", "childish", "shameless"],
                 "new_cat": [
-                    [
-                        "kittypet"
-                    ]
+                    ["kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "cold_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["cold_injury"],
                         "no_results": true
                     }
                 ]
@@ -4817,12 +3098,7 @@
                 "text": "s_c calls out to the cat, only to be met with raucous cawing. {VERB/s_c/Are/Is} {PRONOUN/s_c/subject} being laughed at? {PRONOUN/s_c/subject/CAP} {VERB/s_c/decide/decides} to slink off, leaving it be.",
                 "exp": 0,
                 "weight": 20,
-                "stat_trait": [
-                    "troublesome",
-                    "bold",
-                    "daring",
-                    "ambitious"
-                ],
+                "stat_trait": ["troublesome", "bold", "daring", "ambitious"],
                 "outsider_rep": -1
             }
         ],
@@ -4845,18 +3121,10 @@
     },
     {
         "patrol_id": "gen_bord_elder_rescue1",
-        "biome": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 3,
         "max_cats": 6,
@@ -4871,37 +3139,21 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "kittypet"
-                    ]
+                    ["status:elder", "age:senior", "kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "blunt_force_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["blunt_force_injury"],
                         "no_results": true
                     }
                 ]
@@ -4910,45 +3162,24 @@
                 "text": "s_c sees the Twoleg, the thrashing bag, the stones piled within - it's now or never to save this poor cat. The patrol leaps and claws at the Twoleg while s_c sneaks over to the bag, gently hurrying the elderly cat to a safe hiding place. As the patrol retreats, s_c softly reassures the old cat, promising that c_n would be honored to take {PRONOUN/n_c:0/object} in.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": [
-                    "wise",
-                    "thoughtful"
-                ],
-                "can_have_stat": [
-                    "adult"
-                ],
+                "stat_trait": ["wise", "thoughtful"],
+                "can_have_stat": ["adult"],
                 "new_cat": [
-                    [
-                        "status:elder",
-                        "age:senior",
-                        "kittypet"
-                    ]
+                    ["status:elder", "age:senior", "kittypet"]
                 ],
                 "relationships": [
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "cats": [
-                            "n_c:0"
-                        ],
-                        "injuries": [
-                            "blunt_force_injury"
-                        ],
+                        "cats": ["n_c:0"],
+                        "injuries": ["blunt_force_injury"],
                         "no_results": true
                     }
                 ]
@@ -4961,12 +3192,8 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "cats": [
-                            "r_c"
-                        ],
-                        "injuries": [
-                            "blunt_force_injury"
-                        ],
+                        "cats": ["r_c"],
+                        "injuries": ["blunt_force_injury"],
                         "scars": []
                     }
                 ],
@@ -4976,21 +3203,12 @@
                 "text": "s_c can't take the sight of the Twoleg clutching the screeching bag. {PRONOUN/s_c/subject/CAP} {VERB/s_c/leap/leaps} into action without waiting for the rest of the patrol to back {PRONOUN/s_c/object} up, and {VERB/s_c/pay/pays} the price. Grabbed by the scruff and thrown hard to the ground, all the patrol can do is grab s_c and flee to the safety of c_n.",
                 "exp": 0,
                 "weight": 10,
-                "stat_trait": [
-                    "loving",
-                    "compassionate"
-                ],
-                "can_have_stat": [
-                    "adult"
-                ],
+                "stat_trait": ["loving", "compassionate"],
+                "can_have_stat": ["adult"],
                 "injury": [
                     {
-                        "cats": [
-                            "s_c"
-                        ],
-                        "injuries": [
-                            "blunt_force_injury"
-                        ],
+                        "cats": ["s_c"],
+                        "injuries": ["blunt_force_injury"],
                         "scars": []
                     }
                 ],
@@ -5016,26 +3234,15 @@
     },
     {
         "patrol_id": "bch_bord_ocean_newcatkits1",
-        "biome": [
-            "beach"
-        ],
-        "season": [
-            "leaf-bare"
-        ],
-        "types": [
-            "border"
-        ],
-        "tags": [
-            "new_cat"
-        ],
+        "biome": ["beach"],
+        "season": ["leaf-bare"],
+        "types": ["border"],
+        "tags": ["new_cat"],
         "patrol_art": "bord_general_intro",
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "normal adult": [
-                1,
-                6
-            ]
+            "normal adult": [1, 6]
         },
         "weight": 20,
         "intro_text": "p_l hears desperate mewling coming from the ocean. ",
@@ -5048,44 +3255,22 @@
                 "weight": 20,
                 "relationships": [
                     {
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "cats_from": [
-                            "patrol"
-                        ],
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
                         "mutual": false,
-                        "values": [
-                            "platonic",
-                            "comfort"
-                        ],
+                        "values": ["platonic", "comfort"],
                         "amount": 5
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "new_cat": [
-                    [
-                        "dead"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:kitten",
-                        "backstory:orphaned6"
-                    ]
+                    ["dead"],
+                    ["litter", "parent:0", "status:kitten", "backstory:orphaned6"]
                 ],
                 "outsider_rep": 1
             },
@@ -5093,50 +3278,25 @@
                 "text": "s_c, upon seeing several kits trapped by a Twoleg contraption, immediately jumps into the cold harsh water of the sea. {PRONOUN/s_c/subject/CAP} {VERB/s_c/use/uses} a piece of wood as a makeshift raft to paddle the kits back to shore where the rest of the patrol can keep them warm before they race them back to camp to be cuddled into the pelt of a loving queen.",
                 "exp": 15,
                 "weight": 20,
-                "stat_skill": [
-                    "SWIMMER,1"
-                ],
+                "stat_skill": ["SWIMMER,1"],
                 "relationships": [
                     {
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "cats_from": [
-                            "patrol"
-                        ],
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
                         "mutual": false,
-                        "values": [
-                            "platonic",
-                            "comfort"
-                        ],
+                        "values": ["platonic", "comfort"],
                         "amount": 5
                     },
                     {
-                        "cats_from": [
-                            "n_c:0"
-                        ],
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "values": [
-                            "platonic",
-                            "trust",
-                            "comfort"
-                        ],
+                        "cats_from": ["n_c:0"],
+                        "cats_to": ["patrol"],
+                        "values": ["platonic", "trust", "comfort"],
                         "amount": 10
                     }
                 ],
                 "new_cat": [
-                    [
-                        "dead",
-                        "age:has_kits"
-                    ],
-                    [
-                        "litter",
-                        "parent:0",
-                        "status:kitten",
-                        "backstory:orphaned6"
-                    ]
+                    ["dead", "age:has_kits"],
+                    ["litter", "parent:0", "status:kitten", "backstory:orphaned6"]
                 ],
                 "outsider_rep": 1
             }
@@ -5149,17 +3309,10 @@
                 "outsider_rep": -1,
                 "relationships": [
                     {
-                        "cats_to": [
-                            "patrol"
-                        ],
-                        "cats_from": [
-                            "patrol"
-                        ],
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
                         "mutual": false,
-                        "values": [
-                            "platonic",
-                            "comfort"
-                        ],
+                        "values": ["platonic", "comfort"],
                         "amount": -5
                     }
                 ]
