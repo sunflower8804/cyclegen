@@ -1447,13 +1447,14 @@
     "upstanding_warrior3": [
         [
             "upstanding",
-            "deputy",
+            "you_deputy",
             "you_blind",
-            "they_blind"
+            "they_blind",
+            "they_warrior"
         ],
         [
             "Hey there y_c! I currently have the energy of a kit whose been stuck inside the nursery for a moon, so I was wondering if you could maybe squeeze me into the dawn patrol?",
-            "And maybe a few hunting patrols while your at it and...oh! A border patrol or two?"
+            "And maybe a few hunting patrols while you're at it and...oh! A border patrol or two?"
         ]
     ],
     "assertive_newleaf1": [
@@ -1861,11 +1862,12 @@
     "stable_warrior_001": [
         [
             "Any",
-            "stable"
+            "stable",
+            "they_warrior"
         ],
         [
-            "y_c, Why is your head drooping? Remember that when you walk to keep you chin up and eyes straight.",
-            "With you head hanging low it leaves you open to attack, and if that were to happen, that would not be good. No! Absolutely not! That would be just terrible!",
+            "y_c, Why is your head drooping? Remember to keep your chin up and eyes straight when you walk.",
+            "With your head hanging low it leaves you open to attack, and if that were to happen, that would not be good. No! Absolutely not! That would be just terrible!",
             "So please, for my sake and for the sake of c_nClan, pick yourself up, shake off whatever- this is and get back to work!",
             "[You watch in confusion as t_c struts away, {PRONOUN/t_c/poss} head held high.]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/walk/walks} for a while in a strong march but {VERB/t_c/stop/stops} midway through the clearing, a look of hesitation on {PRONOUN/t_c/poss} face. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bolt/bolts} back and {VERB/t_c/skid/skids} to a stop before you.]",
@@ -3084,7 +3086,7 @@
             "stable"
         ],
         [
-            "[You're currently on patrol with r_w when r_m comes through, in {PRONOUN/r_m/poss} mouth holding bundles of herbs. {PRONOUN/r_m/subject/CAP} {VERB/r_m/look/looks} up and {VERB/r_m/see/sees} you and {VERB/r_m/run/runs} over, panic in every step. You're eyes widen in fear-]",
+            "[You're currently on patrol with r_w when r_m comes through, in {PRONOUN/r_m/poss} mouth holding bundles of herbs. {PRONOUN/r_m/subject/CAP} {VERB/r_m/look/looks} up and {VERB/r_m/see/sees} you and {VERB/r_m/run/runs} over, panic in every step. Your eyes widen in fear-]",
             "[{PRONOUN/r_m/subject/CAP} {VERB/r_m/explain/explains} your mate is currently in the medicine den and {PRONOUN/t_c/poss} condition is concerning. You quickly mumble an apology to both the medicine cat and warrior who are left in your dust.]",
             "[You bolt into the medicine den to find t_c curled in a tight ball, {PRONOUN/t_c/subject} {VERB/t_c/look/looks} up and {PRONOUN/t_c/poss} eyes soften. Despite looking ill and frail, {PRONOUN/t_c/poss} warmth always returns at the sight of you.]",
             "y_c, hello... Heh... Yeah not doing so well. I'm sorry Love, I don't mean to upset you.",
@@ -3405,7 +3407,7 @@
         ],
         [
             "... ?",
-            "[t_c flicks {PRONOUN/t_c/poss} tail towards the camp entrance and looks at you imporingly, asking if you'd like to join {PRONOUN/t_c/poss} patrol.]",
+            "[t_c flicks {PRONOUN/t_c/poss} tail towards the camp entrance and looks at you imploringly, asking if you'd like to join {PRONOUN/t_c/poss} patrol.]",
             "[You cock your head. What type?]",
             "[t_c crouches and smacks one of {PRONOUN/t_c/poss} paws overtop of the other.]",
             "[The sign for hunting! You give {PRONOUN/t_c/object} a nod and quickly stand up to join.]"

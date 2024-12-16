@@ -209,7 +209,7 @@
         "id": "grumpy_medicine_cat_apprentice",
         "thoughts": [
             "Told {PRONOUN/m_c/poss} Clanmate that they either eat the pungent herbs or don't get healed at all",
-            "Coldly called a Clanmate a mouse-brain for getting injuried so easily",
+            "Coldly called a Clanmate a mouse-brain for getting injured so easily",
             "Bluntly told a Clanmate {PRONOUN/m_c/subject} won't be treating stubborn patients gently",
             "Threatens rowdy kits that {PRONOUN/m_c/subject}'ll throw them far across the camp if they touch fragile herbs again",
             "Smacks anyone that asks {PRONOUN/m_c/object} to check a fake injury",
@@ -341,7 +341,7 @@
             "Believes {PRONOUN/m_c/subject} will tackle any unexpected sickness with {PRONOUN/m_c/poss} eyes closed",
             "Is scrambling after herbs floating in the breeze",
             "Brags that {PRONOUN/m_c/subject} {VERB/m_c/is/are} never sick while treating patients",
-            "Accidently tramples healthy herbs by zooming around"
+            "Accidentally tramples healthy herbs by zooming around"
         ],
         "main_trait_constraint": [
             "daring"

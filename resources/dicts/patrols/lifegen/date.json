@@ -1076,7 +1076,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You stand up and collect the prettiest of maple leaves, and after gathering a good load of them, you step over and show r_c the leaves. {PRONOUN/r_c/subject/CAP} {VERB/r_c/look/looks} joyous and gracefully {VERB/r_c/recieve/recieves} the maple leaves from your paw, putting them on {PRONOUN/r_c/poss} ear.",
+                "text": "You stand up and collect the prettiest of maple leaves, and after gathering a good load of them, you step over and show r_c the leaves. {PRONOUN/r_c/subject/CAP} {VERB/r_c/look/looks} joyous and gracefully {VERB/r_c/receive/receives} the maple leaves from your paw, putting them on {PRONOUN/r_c/poss} ear.",
                 "exp": 0,
                 "weight": 20,
                 "accessory": [
@@ -1132,7 +1132,7 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "You were told about the blue supermoon, and decided it would be a good opportunity to ask r_c out. You pad up to {PRONOUN/r_c/object}, but hesitate. What if it doesn't go as planned?",
-        "decline_text": "You can't gather enough courage for this, so you stop and turned away. Guess tonight you'll be enjoying it by yourself.",
+        "decline_text": "You can't gather enough courage for this, so you stop and turn away. Guess tonight you'll be enjoying it by yourself.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
@@ -1297,7 +1297,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You respond to the cat a simple thanks, and the cat introduces {PRONOUN/r_c/self} as r_c, who you instantly recognize from your Clan. You two talk for a bit, though you feel as if you are being watched behind your back by the residents of the Dark Forest.",
+                "text": "You respond to the cat with a simple thanks, and the cat introduces {PRONOUN/r_c/self} as r_c, who you instantly recognize from your Clan. You two talk for a bit, though you feel as if you are being watched behind your back by the residents of the Dark Forest.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1928,7 +1928,7 @@
                 "weight": 20
             },
             {
-                "text": "When you tell {PRONOUN/r_c/object} how you feel, r_c rolls away, suddenly avoiding eye contact. You can see {PRONOUN/r_c/object} hiding a smile, but, noticing the stares of a few nearby Clanmates, {PRONOUN/r_c/subject} {VERB/r_c/stand/stands} and {VERB/r_c/run/runs} away without a word. {PRONOUN/r_c/subject/CAP} must be embarrassed to be recieving affection from a killer.",
+                "text": "When you tell {PRONOUN/r_c/object} how you feel, r_c rolls away, suddenly avoiding eye contact. You can see {PRONOUN/r_c/object} hiding a smile, but, noticing the stares of a few nearby Clanmates, {PRONOUN/r_c/subject} {VERB/r_c/stand/stands} and {VERB/r_c/run/runs} away without a word. {PRONOUN/r_c/subject/CAP} must be embarrassed to be receiving affection from a killer.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1954,14 +1954,14 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "Not a lot of cats will spend time with you these days, but r_c is still here. At the edge of camp, you've become a single bundle of fur as r_c licks the top of your head. No one has seen you here yet, but you're worried that, if they do, r_c will get in trouble for being so kind to you.",
-        "decline_text": "Though you appreciate the comfort, you seperate yourself from r_c from about a tail length so that {PRONOUN/r_c/subject} won't get in trouble if you're spotted. You're much colder now, and {PRONOUN/r_c/subject} {VERB/r_c/look/looks} a bit sad.",
+        "decline_text": "Though you appreciate the comfort, you separate yourself from r_c from about a tail length so that {PRONOUN/r_c/subject} won't get in trouble if you're spotted. You're much colder now, and {PRONOUN/r_c/subject} {VERB/r_c/look/looks} a bit sad.",
         "chance_of_success": 50,
         "relationship_constraint": [
             "mates"
         ],
         "success_outcomes": [
             {
-                "text": "You can't bring yourself to tear yourself away from {PRONOUN/r_c/subject}. You fall asleep, cradled by r_c, and when you wake up again, it's been several hours and r_c is still here. None of your Clanmates must feel the need to seperate you.",
+                "text": "You can't bring yourself to tear yourself away from {PRONOUN/r_c/subject}. You fall asleep, cradled by r_c, and when you wake up again, it's been several hours and r_c is still here. None of your Clanmates must feel the need to separate you.",
                 "exp": 0,
                 "weight": 20
             }
@@ -2382,7 +2382,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You listen for {PRONOUN/r_c/poss} footsteps, and when {PRONOUN/r_c/subject} {VERB/r_c/get/gets} close, you lunge towards {PRONOUN/r_c/object} with a yowl. r_c yelps and launches into the air, furr puffed up, but is laughing as soon as {PRONOUN/r_c/subject} {VERB/r_c/hit/hits} the ground. Good one!",
+                "text": "You listen for {PRONOUN/r_c/poss} footsteps, and when {PRONOUN/r_c/subject} {VERB/r_c/get/gets} close, you lunge towards {PRONOUN/r_c/object} with a yowl. r_c yelps and launches into the air, fur puffed up, but is laughing as soon as {PRONOUN/r_c/subject} {VERB/r_c/hit/hits} the ground. Good one!",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
