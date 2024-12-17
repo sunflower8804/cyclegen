@@ -182,10 +182,11 @@ class ClanScreen(Screens):
                             starting_height=i,
                         )
                     )
-                except:
+                except Exception as e:
                     print(
                         f"ERROR: placing {Cat.all_cats[x].name}'s sprite on Clan page"
                     )
+                    print(e)
 
         # Den Labels
         # Redo the locations, so that it uses layout on the Clan page

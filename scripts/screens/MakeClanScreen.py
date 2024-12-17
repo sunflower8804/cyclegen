@@ -1215,21 +1215,6 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab3"],
                 }
             )
-            tab_rect = ui_scale(pygame.Rect((0, 0), (80, 30)))
-            tab_rect.topright = ui_scale_offset((5, 5))
-            self.tabs["tab5"] = UISurfaceImageButton(
-                tab_rect,
-                "Ruins",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (80, 30)),
-                object_id="@buttonstyles_vertical_tab",
-                manager=MANAGER,
-                anchors={
-                    "right": "right",
-                    "right_target": self.elements["art_frame"],
-                    "top_target": self.tabs["tab4"],
-                },
-            )
-            # LG
             tab_rect = ui_scale(pygame.Rect((0, 0), (85, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab5"] = UISurfaceImageButton(
