@@ -374,5 +374,69 @@
             "Whenever I was sick, they brought me to this place that smelled bad and had bright lights, and I really didn't like it but I felt better afterwards...",
             "Just... please think about it, okay? I really don't want to see you... you know."
         ]
+    ],
+    "kittypet_sc_H1": [
+        [
+            "they_kittypet",
+            "they_sc",
+            "they_deaf",
+            "you_deaf",
+            "max_they_deadfor_10",
+            "you_any"
+        ],
+        [
+            "[t_c looks around, unsure of {PRONOUN/t_c/poss} surroundings.]"
+        ]
+    ],
+    "kittypet_sc_H2": [
+        [
+            "they_kittypet",
+            "they_sc",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "All the cats in here keep talking about 'Clans' and 'StarClan' and the 'Dark Forest'.",
+            "I don't understand any of it. I just want to go home."
+        ]
+    ],
+    "kittypet_sc_H3": [
+        [
+            "they_kittypet",
+            "they_dead",
+            "they_deaf",
+            "you_deaf",
+            "max_they_deadfor_10",
+            "you_any"
+        ],
+        [
+            "[t_c looks around, unsure of {PRONOUN/t_c/poss} surroundings.]"
+        ]
+    ],
+    "kittypet_sc_H4": [
+        [
+            "they_kittypet",
+            "they_sc",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I miss my napping place...",
+            "Don't get me wrong. Everything here is very fluffy. But. Everything is fluffy. I don't know where to lay!"
+        ]
+    ],
+    "kittypet_sc_H5": [
+        [
+            "they_kittypet",
+            "they_dead",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I miss napping in the sun. I guess I just miss being alive in general."
+        ]
     ]
 }

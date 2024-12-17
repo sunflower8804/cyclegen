@@ -5135,5 +5135,86 @@
             "Ah... sorry, what did you say?",
             "Oh, actually, tm_n needs to talk to me about an assessment... right now, it looks like! Sorry, I'll see you later!"
         ]
+    ],
+    "niche_situations_H1": [
+        [
+            "flirt",
+            "they_grieving",
+            "they_deaf",
+            "you_grieving",
+            "you_shunned",
+            "you_blind",
+            "any",
+            "reject"
+        ],
+        [
+            "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment raidiating off {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "niche_situations_H2": [
+        [
+            "flirt",
+            "they_grieving",
+            "they_deaf",
+            "you_grieving",
+            "you_shunned",
+            "you_blind",
+            "any"
+        ],
+        [
+            "[t_c purs as you cuddle up against {PRONOUN/t_c/object}. t_c seems to appreciate the distraction from {PRONOUN/t_c/poss} grief.]"
+        ]
+    ],
+    "niche_situations_H3": [
+        [
+            "flirt",
+            "they_grieving",
+            "they_deaf",
+            "you_grieving",
+            "you_blind",
+            "any",
+            "reject"
+        ],
+        [
+            "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment raidiating off {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "niche_situations_H4": [
+        [
+            "flirt",
+            "they_grieving",
+            "they_deaf",
+            "you_grieving",
+            "you_blind",
+            "any"
+        ],
+        [
+            "[t_c purs as you cuddle up against {PRONOUN/t_c/object}. t_c seems to appreciate the distraction from {PRONOUN/t_c/poss} grief.]"
+        ]
+    ],
+    "niche_situations_H5": [
+        [
+            "flirt",
+            "they_grieving",
+            "they_deaf",
+            "you_blind",
+            "any"
+        ],
+        [
+            "[t_c purs as you cuddle up against {PRONOUN/t_c/object}. t_c seems to appreciate the distraction from {PRONOUN/t_c/poss} grief.]"
+        ]
+    ],
+    "niche_situations_H6": [
+        [
+            "flirt",
+            "they_grieving",
+            "they_deaf",
+            "you_blind",
+            "any",
+            "reject"
+        ],
+        [
+            "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment raidiating off {PRONOUN/t_c/object}.]"
+        ]
     ]
 }

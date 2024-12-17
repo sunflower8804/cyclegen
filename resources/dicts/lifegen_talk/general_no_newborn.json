@@ -1654,7 +1654,7 @@
             "they_sc"
         ],
         [
-            "I can see the stars in your eyes y_c.",
+            "I can see the stars in your eyes, y_c.",
             "You are blessed by us, but you should not worry about that yet."
         ]
     ],
@@ -3841,7 +3841,7 @@
             "you_deaf"
         ],
         [
-            "[t_c looks up from {PRONOUN/t_c/poss} curled position. {PRONOUN/t_c/poss/CAP} eyes flash in surprise, and {PRONOUN/t_c/subject} quickly bunt heads with you, happy to see you again.]"
+            "[t_c looks up from {PRONOUN/t_c/poss} curled position. {PRONOUN/t_c/poss/CAP} eyes flash in surprise, and {PRONOUN/t_c/subject} quickly bunts heads with you, happy to see you again.]"
         ]
     ],
     "gen_grievingthem_H1": [
@@ -3855,7 +3855,7 @@
         ],
         [
             "[You rush over to t_c, overjoyed to see {PRONOUN/t_c/object} alive and well.]",
-            "[You bunt heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
+            "[You bunts heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
         ]
     ],
     "gen_grievingthem_H2": [
@@ -3870,7 +3870,7 @@
         ],
         [
             "[You rush over to t_c, overjoyed to see {PRONOUN/t_c/object} once again.]",
-            "[You bunt heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
+            "[You bunts heads with t_c and stay like that for a while, signing for {PRONOUN/t_c/object} to never leave you like that again.]"
         ]
     ],
     "dead_to_blind_J3": [
@@ -3995,6 +3995,17 @@
         ],
         [
             "[t_c, once catching sight of your presence, turns tail and goes off to disappear within the surrounding mist.]"
+        ]
+    ],
+    "shunned_grieving_H2": [
+        [
+            "you_shunned",
+            "they_grieving",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[t_c makes it obvious that {PRONOUN/t_c/subject} do not want to talk. {PRONOUN/t_c/subject/CAP} {VERB/t_c/huff/huffs} heavily and {VERB/t_c/turn/turns} {PRONOUN/t_c/poss} head away.]"
         ]
     ]
 }
