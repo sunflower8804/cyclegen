@@ -10,7 +10,6 @@ from scripts.conditions import medical_cats_condition_fulfilled, get_amount_cat_
 from scripts.utility import event_text_adjust, change_relationship_values, change_clan_relations, \
     history_text_adjust
 from scripts.game_structure.game_essentials import game
-from scripts.events_module.scar_events import Scar_Events
 from scripts.events_module.generate_events import GenerateEvents
 from scripts.game_structure.windows import RetireScreen
 
