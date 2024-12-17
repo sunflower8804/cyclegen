@@ -36,6 +36,8 @@ from ..ui.get_arrow import get_arrow
 from ..ui.icon import Icon
 from scripts.cat.skills import SkillPath, Skill
 from scripts.housekeeping.version import get_version_info
+from scripts.events_module.patrol.patrol import Patrol
+
 
 
 class MakeClanScreen(Screens):
