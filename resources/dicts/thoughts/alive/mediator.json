@@ -192,7 +192,8 @@
         "id": "nervous_mediator",
         "thoughts": [
             "Finds mediating emotionally draining",
-            "Is feeling worried with all the high tension lately"
+            "Is feeling worried with all the high tension lately",
+            "Has a headache from all {PRONOUN/m_c/poss} anxiety lately"
         ],
         "main_trait_constraint": [
             "nervous"
