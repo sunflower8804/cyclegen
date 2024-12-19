@@ -182,37 +182,10 @@ class ClanScreen(Screens):
                             starting_height=i,
                         )
                     )
-                    .convert_alpha()
-                )
-                blend_layer = pygame.transform.box_blur(
-                    blend_layer, self.layout["cat_shading"]["blur"]
-                )
-
-                sprite = image.copy()
-                sprite.fill(
-                    (255, 255, 255, 255), special_flags=pygame.BLEND_RGB_MAX
-                )
-                sprite.blit(
-                    blend_layer, (0, 0), special_flags=pygame.BLEND_RGBA_MULT
-                )
-                image.set_alpha(self.layout["cat_shading"]["blend_strength"])
-                sprite.blit(image, (0, 0), special_flags=pygame.BLEND_ALPHA_SDL2)
-                sprite.set_alpha(255)
-
-                self.cat_buttons.append(
-                    UISpriteButton(
-                        ui_scale(
-                            pygame.Rect(tuple(Cat.all_cats[x].placement), (50, 50))
-                        ),
-                        sprite,
-                        cat_id=x,
-                        starting_height=i,
+                except:
+                    print(
+                        f"ERROR: placing {Cat.all_cats[x].name}'s sprite on Clan page"
                     )
-                    )
-                # except:
-                #     print(
-                #         f"ERROR: placing {Cat.all_cats[x].name}'s sprite on Clan page"
-                #     )
         # Den Labels
         # Redo the locations, so that it uses layout on the Clan page
         self.warrior_den_label = UISurfaceImageButton(

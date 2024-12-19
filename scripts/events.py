@@ -16,12 +16,8 @@ import re
 
 from scripts.clan import Clan
 from scripts.clan import HERBS
-from scripts.events_module.relation_events import Relation_Events
-from scripts.events_module.condition_events import Condition_Events
 from scripts.cat.pelts import Pelt
 #from scripts.events_module.disaster_events import DisasterEvents
-from scripts.events_module.outsider_events import OutsiderEvents
-from scripts.event_class import Single_Event
 from scripts.game_structure.game_essentials import game
 from scripts.cat_relations.relationship import Relationship
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
@@ -34,10 +30,8 @@ from scripts.conditions import (
 )
 from scripts.events_module.generate_events import GenerateEvents, generate_events
 from scripts.clan_resources.freshkill import FreshkillPile, Nutrition
-from scripts.events_module.handle_short_events import handle_short_events
 from scripts.event_class import Single_Event
 from scripts.events_module.short.condition_events import Condition_Events
-from scripts.events_module.generate_events import GenerateEvents, generate_events
 from scripts.events_module.short.handle_short_events import handle_short_events
 from scripts.events_module.outsider_events import OutsiderEvents
 from scripts.events_module.relationship.relation_events import Relation_Events
@@ -46,8 +40,6 @@ from scripts.game_structure.windows import SaveError
 from scripts.game_structure.windows import RetireScreen, DeputyScreen, NameKitsWindow, PickPath
 from enum import Enum, auto
 
-
-from scripts.patrol.patrol import Patrol
 from scripts.events_module.patrol.patrol import Patrol
 from scripts.utility import (
     change_clan_relations,
