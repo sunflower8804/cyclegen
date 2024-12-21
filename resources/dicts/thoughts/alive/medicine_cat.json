@@ -29,7 +29,8 @@
     {
         "id": "med_cat_alive_young",
         "thoughts": [
-            "Is thinking about taking on a new apprentice"
+            "Is thinking about taking on a new apprentice",
+            "Thinks r_c is being a little dramatic while treating {PRONOUN/r_c/poss} wounds"
         ],
         "random_status_constraint": [
             "apprentice",
@@ -49,7 +50,8 @@
             "Is showing the kits herbs by taking them on adventures in the territory",
             "Helps the leader with their duties while the deputy is on patrol",
             "Offers to help the queens with badger rides for the kits",
-            "Uses extra herbs just to go gather more"
+            "Uses extra herbs just to go gather more",
+            "Always insists on herb gathering on {PRONOUN/m_c/poss} own."
         ],
         "main_trait_constraint": [
             "adventurous"
@@ -59,7 +61,8 @@
         "id": "adventurous_medicine_cat_to_lead",
         "thoughts": [
             "Helps the leader with {PRONOUN/r_c/poss} duties",
-            "Begs the leader to give {PRONOUN/m_c/object} the bounciest kit as {PRONOUN/m_c/poss} apprentice"
+            "Begs the leader to give {PRONOUN/m_c/object} the bounciest kit as {PRONOUN/m_c/poss} apprentice",
+            "Hopes r_c gives {PRONOUN/m_c/object} an apprentice that can match {PRONOUN/m_c/poss} energy"
         ],
         "main_trait_constraint": [
             "adventurous"
@@ -177,7 +180,14 @@
         "id": "careful_medicine_cat",
         "thoughts": [
             "Counts and re-counts the poppy seeds",
-            "Makes sure none of the herbs get mixed up"
+            "Makes sure none of the herbs get mixed up",
+            "Recounts all the herbs just in case",
+            "Wonders if the warriors would be annoyed if {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to go herb gathering again",
+            "Thinks c_n doesn't have nearly enough herbs for {PRONOUN/m_c/object} to be comfortable",
+            "Always checks on {PRONOUN/m_c/poss} patients even if it makes them a little annoyed",
+            "Double and triple checks wounds for any sign of infection",
+            "Insists kittens need to have moonly check-ups for kittencough",
+            "Is worried enough to have difficulty sleeping"
         ],
         "main_trait_constraint": [
             "careful"
@@ -187,7 +197,10 @@
         "id": "charismatic_medicine_cat",
         "thoughts": [
             "Is doing {PRONOUN/m_c/poss} daily checkup on the elders",
-            "Is thinking of just the right way to ask another Clan's medicine cat for herbs"
+            "Is thinking of just the right way to ask another Clan's medicine cat for herbs",
+            "Is certain with enough smoothing words, {PRONOUN/m_c/subject}'ll be able to get even the grumpiest of elders to agree to check-ups",
+            "Convinces a few warriors to be on the lookout for herbs on their next patrol",
+            "Thinks {PRONOUN/m_c/subject}{VERB/m_c/'re/'s) the most liked medicine cat in the Clan"
         ],
         "main_trait_constraint": [
             "charismatic"
@@ -197,7 +210,11 @@
         "id": "childish_medicine_cat",
         "thoughts": [
             "Bounces excitedly at the half-moon meeting",
-            "Plays with some wind-swept catmint"
+            "Plays with some wind-swept catmint",
+            "Isn't able to take silly injuries seriously",
+            "Can't stop {PRONOUN/m_c/poss} giggles when a warrior comes in for a thorn in their paw",
+            "Is always cracking jokes to make {PRONOUN/m_c/poss} patients feel better",
+            "Is always getting along with kittens the most"
         ],
         "main_trait_constraint": [
             "childish"
@@ -227,7 +244,8 @@
         "id": "cold_medicine_cat",
         "thoughts": [
             "Grumbles when a warrior asks for herbs for a simple bellyache",
-            "Has better things to do than pull splinters out of paws"
+            "Has better things to do than pull splinters out of paws",
+            "Doesn't like wasting herbs"
         ],
         "main_trait_constraint": [
             "cold"
@@ -238,7 +256,10 @@
         "thoughts": [
             "Works long into the night taking care of the Clan",
             "Helps a warrior regain their strength",
-            "Declines to eat when prey is low"
+            "Declines to eat when prey is low",
+            "Always offers to take the tedious chores so every cat can rest",
+            "Denies being tired when there's far more important things to do than rest",
+            "Takes the time to help the elders whenever {PRONOUN/m_c/subject} {VERB/m_c/have/has} the chance"
         ],
         "main_trait_constraint": [
             "compassionate"
@@ -255,7 +276,8 @@
         "random_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
-            "mediator apprentice"
+            "mediator apprentice",
+            "queen's apprentice"
         ]
     },
     {
@@ -271,7 +293,8 @@
     {
         "id": "daring_medicine_cat",
         "thoughts": [
-            "Steals catmint from a Twoleg garden"
+            "Steals catmint from a Twoleg garden",
+            "Isn't afraid to be a little risky when c_n is in dire need of herbs"
         ],
         "main_trait_constraint": [
             "daring"
@@ -298,7 +321,10 @@
     {
         "id": "insecure_medicine_cat",
         "thoughts": [
-            "Thinks that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} deserve {PRONOUN/m_c/poss} full name"
+            "Thinks that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} deserve {PRONOUN/m_c/poss} full name",
+            "Is always second guessing {PRONOUN/m_c/poss} knowledge in herbs",
+            "Asks for confirmation on a herbs use",
+            "Prefers to shadow another medicine cat instead of working by {PRONOUN/m_c/self}"
         ],
         "main_trait_constraint": [
             "insecure"
@@ -527,33 +553,6 @@
         ],
         "random_living_status": [
             "darkforest"
-        ]
-    },
-    {
-        "id": "med_cat_gen",
-        "thoughts": [
-            "Is looking for herbs",
-            "Is organizing the herb stores",
-            "Is drying some herbs",
-            "Is interpreting an omen",
-            "Is interpreting a prophecy",
-            "Hopes for a message from StarClan soon",
-            "Is feeling stressed taking care of the Clan",
-            "Is tending some growing herbs",
-            "Is making new nests",
-            "Wishes {PRONOUN/m_c/subject} had an extra set of paws",
-            "Is reciting the names of herbs aloud",
-            "Was startled awake in the wee hours by a vivid dream",
-            "Is running low on mouse bile",
-            "Plans to go out gathering herbs today",
-            "Is looking forward to the half-moon meeting",
-            "Is struggling to remember all of the names of herbs",
-            "Made a mess of the herbs and is panicking",
-            "Has been hearing the voices of StarClan cats...",
-            "Has the foul taste of bitter herbs in {PRONOUN/m_c/poss} mouth",
-            "Wonders if {PRONOUN/m_c/subject} could borrow some catmint from the other Clans",
-            "Is happy that {PRONOUN/m_c/subject} chose life as a medicine cat",
-            "Is proud of {PRONOUN/m_c/poss} ability to care for {PRONOUN/m_c/poss} Clanmates"
         ]
     },
     {
