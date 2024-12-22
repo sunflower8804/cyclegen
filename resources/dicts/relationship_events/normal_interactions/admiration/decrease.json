@@ -15,7 +15,9 @@
 			"m_c notices that r_c overslept.",
 			"r_c tells m_c to smile more.",
 			"m_c had a funny dream about r_c and can't take {PRONOUN/r_c/object} seriously now.",
-			"r_c is talking to m_c, but {PRONOUN/m_c/subject} can't stop noticing the mud on r_c's pelt."
+			"r_c is talking to m_c, but {PRONOUN/m_c/subject} can't stop noticing the mud on r_c's pelt.",
+			"r_c says something rude about a clanmate, and m_c doesn't appreciate the negativity.",
+			"m_c and r_c get into an argument about something miniscule."
 
 		]
 	},
@@ -107,6 +109,7 @@
 			"warrior",
 			"mediator apprentice",
 			"mediator",
+			"queen's apprentice",
 			"medicine cat apprentice",
 			"medicine cat",
 			"deputy",
@@ -119,6 +122,7 @@
 			"mediator apprentice",
 			"mediator",
 			"medicine cat apprentice",
+			"queen's apprentice",
 			"medicine cat",
 			"deputy",
 			"leader"
@@ -199,7 +203,8 @@
 			"m_c swears that r_c stole something from {PRONOUN/m_c/poss} nest.",
 			"m_c overhears r_c say something awful about a dead Clanmate.",
 			"m_c thinks r_c keeps getting in the way instead of helping others.",
-			"m_c knows that r_c fake-laughed at {PRONOUN/m_c/poss} joke."
+			"m_c knows that r_c fake-laughed at {PRONOUN/m_c/poss} joke.",
+			"r_c says something hurtful to m_c."
 		]
 	},
 	{
@@ -220,6 +225,63 @@
 			"m_c lied to r_c's face.",
 			"m_c called r_c lazy, and r_c has retaliated by nitpicking everything that m_c does.",
 			"m_c had a bad day and lashed out at r_c."
+		],
+		"reaction_random_cat": {
+			"admiration": "decrease"
+		}
+	},
+	{
+		"id": "H1_admirdecrease_med",
+		"interactions": [
+			"m_c and r_c have a disagreement with how they should handle a situation with the nursery.",
+			"m_c doesn't appreciate r_c telling {PRONOUN/m_c/object} what to do.",
+			"m_c won't admit {PRONOUN/m_c/subject} {VERB/m_c/were/was} wrong when {PRONOUN/m_c/subject} {VERB/m_c/give/gave} r_c the wrong instructions.",
+			"r_c and m_c get into an argument about how the nursery should be organized.",
+			"r_c feels like m_c is being a little too harsh with them these past few moons."
+		],
+		"main_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		],
+		"random_status_constraint": [
+			"queen's apprentice",
+			"queen"
+		],
+		"reaction_random_cat": {
+			"admiration": "decrease"
+		}
+	},
+	{
+		"id": "lifegen_mediator_low",
+		"intensity": "low",
+		"interactions": [
+			"m_c thinks r_c is trying too hard when solving measly problems.",
+			"m_c watches with a frown as r_c fails to sooth a simple argument.",
+			"m_c doesn't appreciate how r_c whines about other cats problems.",
+			"m_c doesn't think r_c is being professional while mediating.",
+			"m_c believes r_c is too quick to assume things."
+		],
+		"random_status_constraint": [
+			"mediator apprentice",
+			"mediator"
+		]
+	},
+	{
+		"id": "lifegen_mediator_low",
+		"intensity": "low",
+		"interactions": [
+			"m_c thinks r_c intervenes with nursery arguments a little too often for {PRONOUN/m_c/poss} tastes.",
+			"r_c grinds {PRONOUN/r_c/poss} teeth as m_c refuses to take {PRONOUN/r_c/poss} advice.",
+			"m_c thinks r_c looks at the smaller issue too much.",
+			"m_c doesn't think it's necessary for r_c to mediate over simple issues."
+		],
+		"main_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		],
+		"random_status_constraint": [
+			"mediator apprentice",
+			"mediator"
 		],
 		"reaction_random_cat": {
 			"admiration": "decrease"

@@ -14,7 +14,10 @@
 			"m_c asks r_c a simple question, but r_c reacts strangely to it.",
 			"r_c forgot something that m_c asked {PRONOUN/r_c/object} to remember.",
 			"r_c won't stop looking at a specific Clanmate while talking to m_c.",
-			"m_c has a weird feeling about something r_c said the other day."
+			"m_c has a weird feeling about something r_c said the other day.",
+			"m_c has a suspicion that r_c is following {PRONOUN/m_c/object} around camp but doesn't want to say anything.",
+			"r_c's sudden curiosity and questions about certain topics has m_c wondering why r_c is so interested.",
+			"m_c is realizing r_c has been lying about a few things."
 		]
 	},
 	{
@@ -232,5 +235,38 @@
 			"bloodthirsty",
 			"vengeful"
 		]
+	},
+	{
+		"id": "guy_trust_queen_inc_low1",
+		"interactions": [
+			"m_c thinks r_c was too rough with a kitten.",
+			"m_c doesn't think r_c deserves c_n's adoration.",
+			"m_c hopes r_c resigns if {PRONOUN/m_c/subject} {VERB/m_c/have/has} kittens.",
+			"m_c doesn't let r_c watch the kits."
+		],
+		"random_status_constraint": [
+			"queen's apprentice",
+			"queen"
+		],
+		"reaction_random_cat": {
+			"trust": "decrease"
+		}
+	},
+	{
+		"id": "trust_decrease_lifegen_H1",
+		"interactions": [
+			"m_c tries to hide a broken toy from r_c's sight but ends up being unsuccessful.",
+			"m_c moves r_c's nest to the wrong spot, and now r_c refuses to let m_c touch it."
+		],
+		"main_status_constraint": [
+			"queen's apprentice",
+			"queen"
+		],
+		"random_status_constraint": [
+			"kitten"
+		],
+		"reaction_random_cat": {
+			"trust": "decrease"
+		}
 	}
 ]
