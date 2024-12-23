@@ -427,6 +427,7 @@ class MakeClanScreen(Screens):
                 self.handle_choose_symbol_event(event)
             elif self.sub_screen == "saved screen":
                 self.handle_saved_clan_event(event)
+            self.mute_button_pressed(event)
         
         elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
             if self.sub_screen == 'name clan':

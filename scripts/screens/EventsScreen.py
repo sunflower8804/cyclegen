@@ -398,7 +398,7 @@ class EventsScreen(Screens):
         )
         self.clan_info["age"] = pygame_gui.elements.UITextBox(
             "",
-            ui_scale(pygame.Rect((252, 182), (290, -1))),
+            ui_scale(pygame.Rect((252, 132), (290, -1))),
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
             starting_height=1,
             container=self.event_screen_container,
