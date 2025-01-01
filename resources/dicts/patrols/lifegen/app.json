@@ -40,7 +40,7 @@
                 ]
             },
             {
-                "text": "You're y_c - you never give less than your absolute best! m_n is found again and again and again... Until {PRONOUN/m_n/subject}{VERB/m_n/'re/'s} more worn out than you. Your held is held high on the way back to camp. You can't wait to tell your denmates all about your skills again!",
+                "text": "You're y_c - you never give less than your absolute best! m_n is found again and again and again... Until {PRONOUN/m_n/subject}{VERB/m_n/'re/'s} more worn out than you. Your head is held high on the way back to camp. You can't wait to tell your denmates all about your skills again!",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -131,7 +131,7 @@
                 "weight": 20
             },
             {
-                "text": "Your sleepiness swiftly disolves in favor of being out in the territory with your paws itching. r_w1 and m_n have to herd you back into formation once or twice as r_w2 sleepily lags behind. {PRONOUN/r_w2/subject/CAP}{VERB/r_w2/'re/'s} sooooo slow though!!! You're bouncing behind {PRONOUN/r_w2/object} the whole way.",
+                "text": "Your sleepiness swiftly dissolves in favor of being out in the territory with your paws itching. r_w1 and m_n have to herd you back into formation once or twice as r_w2 sleepily lags behind. {PRONOUN/r_w2/subject/CAP}{VERB/r_w2/'re/'s} sooooo slow though!!! You're bouncing behind {PRONOUN/r_w2/object} the whole way.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -148,7 +148,7 @@
                 ]
             },
             {
-                "text": "Early bird gets the worm! You chatter at every bird you see, and trill a song. You energy is infectious this early, and even the sleepy r_w seems to perk up a bit by the end of the patrol. Once back, m_n says you did well, but reminds you to be a bit quieter next time.",
+                "text": "Early bird gets the worm! You chatter at every bird you see, and trill a song. Your energy is infectious this early, and even the sleepy r_w seems to perk up a bit by the end of the patrol. Once back, m_n says you did well, but reminds you to be a bit quieter next time.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1214,7 +1214,7 @@
                 ]
             },
             {
-                "text": "You reassure r_a that it's alright. It's a good learning opportunity for you both, and you politely explain that much to {PRONOUN/r_a/object}. Before your mentors can even try to get back on track, you're walking r_a through the mistake. It's easy for you to teach {PRONOUN/r_a/object} where {PRONOUN/r_a/subject} went wrong. In no time at all {PRONOUN/r_a/subject} {VERB/r_a/are/is} fluidly preforming the move again - without any accidents.",
+                "text": "You reassure r_a that it's alright. It's a good learning opportunity for you both, and you politely explain that much to {PRONOUN/r_a/object}. Before your mentors can even try to get back on track, you're walking r_a through the mistake. It's easy for you to teach {PRONOUN/r_a/object} where {PRONOUN/r_a/subject} went wrong. In no time at all {PRONOUN/r_a/subject} {VERB/r_a/are/is} fluidly performing the move again - without any accidents.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": [
@@ -1672,7 +1672,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "This is a stealth lesson, and you are the stealthiest cat today, you bring brack more prey than r_w1 and r_w2! When you see m_n, you're praised for your abilities. r_w2 says {PRONOUN/m_n/subject} taught you well, making {PRONOUN/m_n/object} lick {PRONOUN/m_n/poss} chest self-consciously before smiling.",
+                "text": "This is a stealth lesson, and you are the stealthiest cat today, you bring back more prey than r_w1 and r_w2! When you see m_n, you're praised for your abilities. r_w2 says {PRONOUN/m_n/subject} taught you well, making {PRONOUN/m_n/object} lick {PRONOUN/m_n/poss} chest self-consciously before smiling.",
                 "exp": 10,
                 "weight": 20
             }
@@ -1812,14 +1812,14 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "After finding a quiet place not too far from camp you work hard at practicing ambushes, defensive and offensive attacks. You even coming up with a brand new move to show m_n! You return to camp feeling pleased with your progress.",
+                "text": "After finding a quiet place not too far from camp you work hard at practicing ambushes, defensive and offensive attacks. You even came up with a brand new move to show m_n! You return to camp feeling pleased with your progress.",
                 "exp": 10,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "There's no space that you feel is good enough that isn't already occupied. r_w shooes you back to camp after spotting you alone. Your plans for the day are foiled, and you return with a heavy heart.",
+                "text": "There's no space that you feel is good enough that isn't already occupied. r_w shoos you back to camp after spotting you alone. Your plans for the day are foiled, and you return with a heavy heart.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1847,7 +1847,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "You agree, and although moss collecting is one of the more boring duties, it is still an important task. You work hard to bring home a healthly collection of fresh moss, familiarizing yourself with the territory as you go. r_m is incredibly grateful for the assistance.",
+                "text": "You agree, and although moss collecting is one of the more boring duties, it is still an important task. You work hard to bring home a healthy collection of fresh moss, familiarizing yourself with the territory as you go. r_m is incredibly grateful for the assistance.",
                 "exp": 10,
                 "weight": 20
             }
@@ -1889,7 +1889,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Although grumbling and complaining you agree to do the task. Your bad mood makes the elders cranky and you begin a heated debate about were the softest moss should be placed. Eventually r_e send you out stating they can do it themselves. That evening you realize your pelt is full of fleas!",
+                "text": "Although grumbling and complaining you agree to do the task. Your bad mood makes the elders cranky and you begin a heated debate about where the softest moss should be placed. Eventually r_e send you out stating they can do it themselves. That evening you realize your pelt is full of fleas!",
                 "exp": 0,
                 "weight": 20,
                 "injury": [

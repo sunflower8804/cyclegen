@@ -1107,7 +1107,7 @@
         ],
         [
             "[You find t_c perched atop the highest part of camp, taking everything in that's down below.]",
-            "[You clear your throat and {PRONOUN/t_c/subject} {VERB/t_c/notice/noticces} you with a start.]",
+            "[You clear your throat and {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} you with a start.]",
             "Whuh - y_c? What are you doing here?",
             "I swear, I wasn't doing anything, I just ... Uh ...",
             "*Sigh* I must look like a total stalker right now, huh?",
@@ -3701,8 +3701,8 @@
         ],
         [
             "[You rush over to t_c, almost convinced your eyes have forsaken you.]",
-            "Hey - Hey, what's up? I haven't see you this excited to me since I got shunned!",
-            "Don't tell me I have to diappear for you to care!"
+            "Hey - Hey, what's up? I haven't seen you this excited to see me since before I got shunned!",
+            "Don't tell me I have to disappear for you to care!"
         ]
     ],
     "shunned_grievingthem_H2": [
