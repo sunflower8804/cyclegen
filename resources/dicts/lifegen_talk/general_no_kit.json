@@ -6515,7 +6515,7 @@
             "Here. Have this. I saved it from the freshkill pile for you.",
             "... What's wrong? Aren't thrushes your favorite? Or, am I misremembering?",
             "Hm ... interesting.",
-            "[t_c tenses {PRONOUN/t_c/poss} jaw, as if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} determined to burn your favorite prey into {PRONOUN/t_c/subject} head forever.]"
+            "[t_c tenses {PRONOUN/t_c/poss} jaw, as if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} determined to burn your favorite prey into {PRONOUN/t_c/poss} head forever.]"
         ]
     ],
     "brooding_dislike_2_4": [
@@ -7169,20 +7169,6 @@
             "Hey, y_c. I was out collecting moss today, and I saved some for you. I know you like to use it to line your nest.",
             "And don't read into it too much, either. It's just, you know. From one Clanmate to another. It's not like I ... uh. Ahem.",
             "[t_c looks away, ears glowing red.]"
-        ]
-    ],
-    "brooding_dislike_2_5_2": [
-        [
-            "any",
-            "brooding",
-            "romantic_like",
-            "they_blind"
-        ],
-        [
-            "Here. Have this. I saved it from the freshkill pile for you.",
-            "... What's wrong? Aren't thrushes your favorite? Or, am I misremembering?",
-            "Hm ... interesting.",
-            "[t_c tenses {PRONOUN/t_c/poss} jaw, as if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} determined to burn your favorite prey into {PRONOUN/t_c/poss} head forever.]"
         ]
     ],
     "brooding_dislike_2_6": [
@@ -9738,7 +9724,7 @@
         [
             "Hey, y_c, you'll never guess what t_m did!",
             "{PRONOUN/t_m/subject/CAP} took me out to this secret spot on the territory and we spent the whole night out there, just talking and laughing together ...",
-            "Ah, StarClan, isn't t_m great? {PRONOUN/t_c/subject/CAP}{VERB/t_m/'re/'s} just so beautiful, and funny, and smart, and did I mention beautiful? Plus, brave and kind and courageous and --",
+            "Ah, StarClan, isn't t_m great? {PRONOUN/t_m/subject/CAP}{VERB/t_m/'re/'s} just so beautiful, and funny, and smart, and did I mention beautiful? Plus, brave and kind and courageous and --",
             "[You swear to StarClan, if you have to hear t_c talk about how much {PRONOUN/t_c/subject} {VERB/t_c/love/loves} {PRONOUN/t_c/poss} mate any more, it just might drive you insane.]"
         ]
     ],
@@ -25684,7 +25670,7 @@
             "they_deaf"
         ],
         [
-            "[Every time you think you're having an awful day... T_c seems to be having a much worse one.]"
+            "[Every time you think you're having an awful day... t_c seems to be having a much worse one.]"
         ]
     ]
 }

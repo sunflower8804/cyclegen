@@ -24,7 +24,6 @@ from scripts.game_structure.ui_elements import (
     UISpriteButton,
     UISurfaceImageButton,
 )
-from scripts.events_module.patrol.patrol import Patrol
 from scripts.utility import get_text_box_theme, ui_scale, ui_scale_blit, ui_scale_offset
 from scripts.utility import ui_scale_dimensions, generate_sprite
 from .Screens import Screens
@@ -37,6 +36,8 @@ from ..ui.get_arrow import get_arrow
 from ..ui.icon import Icon
 from scripts.cat.skills import SkillPath, Skill
 from scripts.housekeeping.version import get_version_info
+from scripts.events_module.patrol.patrol import Patrol
+
 
 
 class MakeClanScreen(Screens):
@@ -426,6 +427,7 @@ class MakeClanScreen(Screens):
                 self.handle_choose_symbol_event(event)
             elif self.sub_screen == "saved screen":
                 self.handle_saved_clan_event(event)
+            self.mute_button_pressed(event)
         
         elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
             if self.sub_screen == 'name clan':
@@ -1214,21 +1216,6 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab3"],
                 }
             )
-            tab_rect = ui_scale(pygame.Rect((0, 0), (80, 30)))
-            tab_rect.topright = ui_scale_offset((5, 5))
-            self.tabs["tab5"] = UISurfaceImageButton(
-                tab_rect,
-                "Ruins",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (80, 30)),
-                object_id="@buttonstyles_vertical_tab",
-                manager=MANAGER,
-                anchors={
-                    "right": "right",
-                    "right_target": self.elements["art_frame"],
-                    "top_target": self.tabs["tab4"],
-                },
-            )
-            # LG
             tab_rect = ui_scale(pygame.Rect((0, 0), (85, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab5"] = UISurfaceImageButton(

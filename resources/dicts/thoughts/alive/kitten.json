@@ -147,7 +147,7 @@
             "Splashing in a muddy puddle with r_c after a showerstorm",
             "Is blowing raspberries at r_c",
             "Was dared by r_c to take a paw into the warriors' den",
-            "Is telling r_c all of the things {PRONOUN/m_c/subject}'ll do when {PRONOUN/m_c/subject} earn {PRONOUN/m_c/poss} warrior name"
+            "Is telling r_c all of the things {PRONOUN/m_c/subject}'ll do when {PRONOUN/m_c/subject} {VERB/m_c/earn/earns} {PRONOUN/m_c/poss} warrior name"
         ],
         "random_status_constraint": [
             "kitten"
@@ -583,7 +583,7 @@
             "Is creating games, but makes it apparent that {PRONOUN/m_c/subject} oversee it",
             "Is set on becoming a legendary warrior to the Clan",
             "Is too quick to grow up",
-            "Jokingly told r_c {PRONOUN/r_c/subject} have to do what {PRONOUN/m_c/subject} say for the entire day",
+            "Jokingly told r_c {PRONOUN/r_c/subject} {VERB/r_c/have/has} to do what {PRONOUN/m_c/subject} {VERB/r_c/say/says} for the entire day",
             "Is a bit bossy"
         ],
         "main_trait_constraint": [
