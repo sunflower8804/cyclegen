@@ -39,7 +39,6 @@ from scripts.game_structure.windows import SaveError
 from scripts.game_structure.windows import RetireScreen, DeputyScreen, NameKitsWindow, PickPath
 from enum import Enum, auto
 
-
 from scripts.events_module.patrol.patrol import Patrol
 from scripts.utility import (
     change_clan_relations,
