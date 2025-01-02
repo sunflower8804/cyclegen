@@ -13,20 +13,20 @@
         "rarity": "uncommon",
         "trigger_events": [
             "lead_name scuffs a paw in the dirt, clawing it to show dep_name and med_name. There's an alarming lack of moisture there, the soil dusty and dry. It may be time to declare this hot weather a drought, and start planning for the future.",
-            "med_name pulls aside lead_name. They've noticed some of the herbs that grow in the swampy corners of c_n's forest are beginning to wilt in this heat.",
+            "med_name pulls lead_name aside. They've noticed some of the herbs that grow in the swampy corners of c_n's forest are beginning to wilt in this heat.",
             "The leaves on the trees wilt and droop, heavy with the exhaustion that the hot weather brings. In camp, cats lounge in the shade, waiting impatiently for the cool of night and the chance to hunt. It hasn't rained all moon."
         ],
         "progress_events": {
             "moon1": [
                 "Even the trees look dry. The cats of c_n cart moss between camp and their water source, bringing back vital liquid to their youngest and oldest Clanmates. But there are murmurs of discontented gossip - what will they do if their water dries up?",
                 "The prey that cats bring back to the fresh-kill pile is beginning to look weak. Difficult to say what's taking its toll - the heat, or the difficulty of finding water.",
-                "med_name feels the crunch of leaf litter so dry it shatters under their footsteps. They swallow their concern - drought cannot be fought by the Clan's warriors, but med_name can stock the medicine cat den with remedies against heat stroke and exhaustion."
+                "med_name feels the crunch of leaf litter so dry it shatters under {PRONOUN/med_name/poss} footsteps. {PRONOUN/med_name/subject/CAP} {VERB/med_name/swallow/swallows} {PRONOUN/med_name/poss} concern - drought cannot be fought by the Clan's warriors, but med_name can stock the medicine cat den with remedies against heat stroke and exhaustion."
             ],
             "moon2": [
                 "The drought continues. The cats of c_n pant in the shade, too hot to move, their tongues dry and tacky.",
                 "Not even night brings cool anymore. No cat can sleep through this, the power of the heat removing even the relief of rest.",
                 "The forest's many creeks and streams burble no longer. No cat knows if they'll ever return.",
-                "lead_name looks out over their Clan, huddled in the meager relief of the shade of their dens. How are they supposed to fight a foe like heat? This drought is wasting away the heart of the forest like a disease."
+                "lead_name looks out over {PRONOUN/lead_name/poss} Clan, huddled in the meager relief of the shade of their dens. How are they supposed to fight a foe like heat? This drought is wasting away the heart of the forest like a disease."
             ]
         },
         "conclusion_events": [
@@ -50,7 +50,7 @@
                 "triggers_during": "during",
                 "chance": 0,
                 "trigger_events": [
-                    "dep_name sighs, organizing another hunting patrol. They can't fix the drought that's driving away and killing c_n's prey, all they can do is send out more warriors, and hope the skill of c_n's hunters can keep famine at bay.",
+                    "dep_name sighs, organizing another hunting patrol. {PRONOUN/dep_name/subject/CAP} can't fix the drought that's driving away and killing c_n's prey, all {PRONOUN/dep_name/subject} can do is send out more warriors, and hope the skill of c_n's hunters can keep famine at bay.",
                     "c_n should be growing fat on the fruits of the season, or fat on the prey that's eaten those fruits, at least. But the drought brings only dust and thin pickings.",
                     "The forest is silent - silent like the depths of winter. But this is caused by heat, not cold. How will c_n cope, in what should be a season of plenty?"
                 ]
@@ -73,8 +73,8 @@
             "deaths": {
                 "death_text": [
                     "After days of unrelenting heat and no sign of water, m_c's strength finally gave out.",
-                    "The sun had been merciless, and despite their determination, m_c succumbed to dehydration.",
-                    "The search for water became m_c's final quest. With the territory suffering from a severe drought, they ventured beyond familiar lands. Sadly, they was found too late, collapsed near a dried-up riverbed, the earth cracked and dry beneath their outstretched paws"
+                    "The sun had been merciless, and despite {PRONOUN/m_c/poss} determination, m_c succumbed to dehydration.",
+                    "The search for water became m_c's final quest. With the territory suffering from a severe drought, {PRONOUN/m_c/subject} ventured beyond familiar lands. Sadly, {PRONOUN/m_c/subject} was found too late, collapsed near a dried-up riverbed, the earth cracked and dry beneath {PRONOUN/m_c/poss} outstretched paws"
                 ],
                 "history_text": {
                     "reg_death": "m_c died from dehydration."

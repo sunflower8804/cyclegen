@@ -14,8 +14,8 @@
         "duration": 2,
         "rarity": "uncommon",
         "trigger_events": [
-            "lead_name looks over the vast blue of the horizon, the tide rising to their paws where it has not dared to pass before, and the pit of dread in their stomach disrupts their thoughts.",
-            "dep_name pulls lead_name aside to the edge of c_n's territory. They point out the approaching clouds within the cold air, and the ominous implication of a storm ahead compels tense whispers across c_n."
+            "lead_name looks over the vast blue of the horizon, the tide rising to {PRONOUN/lead_name/poss} paws where it has not dared to pass before, and the pit of dread in {PRONOUN/lead_name/poss} stomach disrupts {PRONOUN/lead_name/poss} thoughts.",
+            "dep_name pulls lead_name aside to the edge of c_n's territory. {PRONOUN/dep_name/subject/CAP} {VERB/dep_name/point/points} out the approaching clouds within the cold air, and the ominous implication of a storm ahead compels tense whispers across c_n."
         ],
         "progress_events": {
             "moon1": [
@@ -34,7 +34,7 @@
             ],
             "deaths": {
                 "death_text": [
-                    "The water crashed along the shorelines with a power that m_c wasn't expecting. One moment, they're standing safely on the sand -- the next, they're gone forever.",
+                    "The water crashed along the shorelines with a power that m_c wasn't expecting. One moment, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} standing safely on the sand -- the next, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} gone forever.",
                     "In the middle of the hurricane, no one noticed when m_c was swept away from camp by the crashing waves."
                 ],
                 "history_text": {
@@ -57,7 +57,7 @@
         "rarity": "rare",
         "trigger_events": [
             "Cats gather around the shore as a black liquid seeps into the ocean far in the distance. Worried whispers of the Dark Forest attempting to plague the Clan fill the air, planting seeds of fear.",
-            "Fish, once a vital source of prey, are washing up ashore. r_w looks upon the sea line, devastated by the unnatural black substance leaking into what was once blue. {PRONOUN/r_w/subject/CAP} {VERB/r_w/rush/rushes} to tell c_n {PRONOUN/r_w/poss} discovery before it's too late."
+            "Fish, once a vital source of prey, are washing up ashore. r_c looks upon the sea line, devastated by the unnatural black substance leaking into what was once blue. {PRONOUN/r_c/subject/CAP} {VERB/r_c/rush/rushes} to tell c_n {PRONOUN/r_c/poss} discovery before it's too late."
         ],
         "progress_events": {
             "moon1": [
@@ -71,7 +71,7 @@
             ],
             "moon3": [
                 "Twolegs' water-monsters have been spotted in the horizon far more recently lately. The braver cats watch the water-monsters from a safe distance, noticing the black goop in the water has been slowly depleting as the Twolegs come and go.",
-                "The distant cry of a twolegs' water-monster is heard early in dawn, waking c_n from their nests. dep_name heads out to observe the cause while other cats search for hiding spaces, realizing the twolegs are doing something to the black ocean.Peculiar."
+                "The distant cry of a twolegs' water-monster is heard early in dawn, waking c_n from their nests. dep_nameheads out to observe the cause while other cats search for hiding spaces, realizing the twolegs are doing something to the black ocean.Peculiar."
             ]
         },
         "conclusion_events": [
@@ -96,7 +96,7 @@
                 "Famine": {
                 "disaster": "Famine",
                 "triggers_during": "end",
-                "chance": 5,
+                "chance": 1,
                 "trigger_events": [
                     "With the fish washing up deceased on the shore, covered in a thick black liquid, c_n is forced to look elsewhere for prey. Fresh-kill is scarce and the opportunities to hunt further inland are few."
                 ]

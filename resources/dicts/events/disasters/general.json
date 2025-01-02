@@ -180,7 +180,7 @@
         "progress_events": {
             "moon1": [
                 "There's something wrong with the prey in the territory. No matter how hard the warriors try to catch healthy prey, the fresh-kill still causes bellyaches or worse, and anything that smells even a little wrong is taken away and buried, far, far away from hungry mouths.",
-                "The warriors report back from their hunts without prey to feed the Clan. They state the animals they find were sick, and in some cases, already deceased. l_n shakes {PRONOUN/l_n/poss} head and glances to the ever lowering fresh-kill pile, worried about the Clan's survival.",
+                "The warriors report back from their hunts without prey to feed the Clan. They state the animals they find were sick, and in some cases, already deceased. lead_name shakes {PRONOUN/lead_name/poss} head and glances to the ever lowering fresh-kill pile, worried about the Clan's survival.",
                 "The warriors rarely are able to bring animals of bigger sizes to the Clan. When they find one already deceased in the territory, they take the opportunity and drag the animal back to camp. However, the smell of smoke and sickness settle in the Clan's senses. The warriors big catch soon becomes buried far, far away."
             ]
         },
@@ -264,7 +264,7 @@
         "duration": 2,
         "rarity": "uncommon",
         "trigger_events": [
-            "On a day like any other, you emerge from your den with a yawn. Just as you approach the fresh-kill pile to eat breakfast, the ground trembles underneath you. As the shaking intensifies, l_n yowls an order for everyone to take shelter."
+            "On a day like any other, you emerge from your den with a yawn. Just as you approach the fresh-kill pile to eat breakfast, the ground trembles underneath you. As the shaking intensifies, lead_name yowls an order for everyone to take shelter."
         ],
         "progress_events": {
             "moon1": [
@@ -303,7 +303,7 @@
         ],
         "progress_events": {
             "moon1": [
-                "l_n is worried about the rise in temperature and advises cats to say within shaded areas for now until it passes. Patrols will be done earlier in the morning when it's cooler and kittens are to strictly play inside the dens to avoid the sun.",
+                "lead_name is worried about the rise in temperature and advises cats to say within shaded areas for now until it passes. Patrols will be done earlier in the morning when it's cooler and kittens are to strictly play inside the dens to avoid the sun.",
                 "The medicine cats are rushing to preserve herbs, worried the heat would damage them before they're able to be used. A decent portion of herbs has already dried up, thankfully still usable under the right conditions but worrying nonetheless.",
                 "Cats from all roles remind each other to drink water and take breaks to avoid dehydration as the days just get hotter. Elders and kittens are watched carefully for any signs of sickness, and the medicine cats are always on edge."
             ]
@@ -348,7 +348,7 @@
         "progress_events": {
             "moon1": [
                 "Rain plummets from the sky suddenly, drenching anything in its path. c_n flees to shelter as the sky roars and screams, flashing with streams of light that quakes the ground. Cats huddle together away from the rain, terrified of the loud noises.",
-                "As the storm appears on the horizon, blackening the sky and sending rivers of rain, l_n orders cats to seek shelter in the dens. The thunder roars and quakes the ground as water pours into the dens, but at least cats are away from the worst of it.",
+                "As the storm appears on the horizon, blackening the sky and sending rivers of rain, lead_name orders cats to seek shelter in the dens. The thunder roars and quakes the ground as water pours into the dens, but at least cats are away from the worst of it.",
                 "c_n is startled awake as the sky roars and trembles with bright light, rain pooling into the dens with no sign of stopping."
             ]
         },
@@ -370,6 +370,89 @@
                 "trigger_events": [
                     "The sky has brought with it swelling rivers that fight their embankments. Water flows freely without a path, and everycat has to keep their claws on the ground to keep themselves from floating away."
                 ]
+            }
+        }
+    },
+    "Drought": {
+        "event": "Drought",
+        "camp": [
+            "any"
+        ],
+        "season": [
+            "Greenleaf"
+        ],
+        "tags": [],
+        "priority": "primary",
+        "duration": 3,
+        "rarity": "uncommon",
+        "trigger_events": [
+            "lead_name scuffs a paw in the dirt, clawing it to show dep_name and med_name. There's an alarming lack of moisture there, the soil dusty and dry. It may be time to declare this hot weather a drought, and start planning for the future.",
+            "med_name pulls aside lead_name. They've noticed some of the herbs that grow within their territory are beginning to wilt in this heat, and the roots are drying rather quickly.",
+            "The leaves on the trees wilt and droop, heavy with the exhaustion that the hot weather brings. In camp, cats lounge in the shade, waiting impatiently for the cool of night and the chance to hunt. It hasn't rained all moon."
+        ],
+        "progress_events": {
+            "moon1": [
+                "Even the air tastes dry. The cats of c_n cart moss between camp and their water source, bringing back vital liquid to their youngest and oldest Clanmates. But there are murmurs of discontented gossip - what will they do if their water dries up?",
+                "The prey that cats bring back to the fresh-kill pile is beginning to look weak. Difficult to say what's taking its toll - the heat, or the difficulty of finding water.",
+                "The warriors have noticed the ground breaking and drying underneath their paws, creating cracks from the beaming heat. med_name hides {PRONOUN/med_name/poss} nerves and counts the herbs, hoping c_n has enough to fight the inevitable heat stroke and exhaustion."
+            ],
+            "moon2": [
+                "The drought continues. The cats of c_n pant in the shade, too hot to move, their tongues dry and tacky.",
+                "Not even night brings cool anymore. No cat can sleep through this, the power of the heat removing even the relief of rest.",
+                "lead_name looks out over their Clan, huddled in the meager relief of the shade of their dens. How are they supposed to fight a foe like heat? This drought is wasting away the heart of the forest like a disease.",
+                "The heat has been proven unbearable as c_n struggles to find the many creeks and streams that once flowed through the territory. Pleading whispers for a miracle fill the camp as cats drop like flies from exhaustion and lack of water."
+            ]
+        },
+        "conclusion_events": [
+            "The cats of c_n turn their faces to the skies, collecting in the clearing at the heart of camp, thrumming with joy as rain washes their pelts sodden and dings off the drought-hardened ground. With water, life returns to c_n.",
+            "The shade of the canopy, so often their only protection from the heat haunting their woods, now shelters c_n from a different sky. Rain patters off the ground before them as the cats bow their heads in thanks. StarClan has heard their prayers, and the drought has broken.",
+            "lead_name watches the clouds gather, trembling in anticipation and hope. When the skies open, the ground sucks away the water, as thirsty as the Clan that turns their heads towards the stars and lets the life-giving rain fill their throats."
+        ],
+        "secondary_disasters": {
+            "Barren Land": {
+                "disaster": "Barren Land",
+                "triggers_during": "during",
+                "chance": 1,
+                "trigger_events": [
+                    "It's to no one's surprise that the territory is losing their plants, the undergrowth drooping and wilted as the drought takes its toll.",
+                    "med_name has been anticipating this, but it's still a huge blow to watch what should be peak herb gathering season turn into a desperate search for wilted dusty leaves.",
+                    "The land, suffering under the heat of the drought, just can't support the normal plant life that should be growing. Without water to their roots and moist air on their leaves, med_name fears the worst."
+                ]
+            },
+            "Famine": {
+                "disaster": "Famine",
+                "triggers_during": "during",
+                "chance": 0,
+                "trigger_events": [
+                    "dep_name sighs, organizing another hunting patrol. {PRONOUN/dep_name/subject/CAP} can't fix the drought that's driving away and killing c_n's prey, all {PRONOUN/dep_name/subject} can do is send out more warriors, and hope the skill of c_n's hunters can keep famine at bay.",
+                    "c_n should be growing fat on the fruits of the season, or fat on the prey that's eaten those fruits, at least. But the drought brings only dust and thin pickings.",
+                    "The territory is silent - silent like the depths of winter. But this is caused by heat, not cold. How will c_n cope, in what should be a season of plenty?"
+                ]
+            },
+            "Wildfire": {
+                "disaster": "Wildfire",
+                "triggers_during": "during",
+                "chance": 0,
+                "trigger_events": [
+                    "Deep in the trees, in a dried, dusty bed of leaves, a piece of glass catches the hot sunlight, and the leaf litter begins to smolder. A wildfire is born, hissing and crackling, racing through woods bone dry with the drought to become a towering, unstoppable inferno.",
+                    "As drought stalks c_n, fire follows on its heels. No cat knows how it was born, but the Clan scatters before it, gathering their vulnerable and running, running for their lives as red glowing death hunts them, the woods of their home falling as prey to wildfire's jaws.",
+                    "The smoke reaches c_n first - but fire is hot on its heels. Their territory tinder-dry and dusty, c_n are forced to run before the flames, fleeing to the safety of the last scant water sources within the woods, warriors grabbing and hauling anyone who starts to fall behind."
+                ]
+            }
+        },
+        "collateral_damage": {
+            "injuries": [
+                "dehydrated"
+            ],
+            "deaths": {
+                "death_text": [
+                    "After days of unrelenting heat and no sign of water, m_c's strength finally gave out.",
+                    "The sun had been merciless, and despite their determination, m_c succumbed to dehydration.",
+                    "The search for water became m_c's final quest. With the territory suffering from a severe drought, {PRONOUN/m_c/subject} ventured beyond familiar lands. Sadly, {PRONOUN/m_c/subject} was found too late, collapsed near a dried-up riverbed, the earth cracked and dry beneath their outstretched paws"
+                ],
+                "history_text": {
+                    "reg_death": "m_c died from dehydration."
+                }
             }
         }
     }

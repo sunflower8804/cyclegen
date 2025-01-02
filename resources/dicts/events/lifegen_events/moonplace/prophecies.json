@@ -1,6 +1,6 @@
 {
     "no_disaster": {
-        "text": [
+        "general_starclan": [
             [
                 "Beware the cat in the shadows."
             ],
@@ -73,10 +73,60 @@
             [
                 "A watchful eye lurks in the rain, beware this cat and their pain."
             ]
+        ],
+        "general_darkforest": [
+            [
+                "In the mist of darkness, violence takes root."
+            ],
+            [
+                "Beware of the shadows. Something lurks and watches, always looking for one wrong move."
+            ],
+            [
+                "Kindness is a weakness you can't afford to have."
+            ],
+            [
+                "Riddles, rhymes, and omens - they're all a waste of time. Do not be fooled by fancy words."
+            ],
+            [
+                "Do you know a group of crows is called a murder? I wonder if you felt their eyes upon your pelt."
+            ],
+            [
+                "We're always watching for weaknesses. Do not allow us to see it."
+            ],
+            [
+                "Do not underestimate those who seem to be powerless."
+            ],
+            [
+                "An army is beneath your paws, ready to strike as a moments notice."
+            ],
+            [
+                "Listen to the whispers in your ears."
+            ],
+            [
+                "Herbs wither and wash away from your piles. With no fault of ours, of course."
+            ],
+            [
+                "Battles and trials are ahead of you. Peace and quiet never lasts."
+            ],
+            [
+                "The stars guide your path, but do not protect you from the dangers that lurk in the shadows."
+            ],
+            [
+                "The stars can only light so much of your journey."
+            ],
+            [
+                "StarClan would rather turn a blind eye to your troubles. Their guidance is nothing more than a few sweet words."
+            ],
+            [
+                "All it takes is one wrong move. Even if we cannot touch the living, we can do much more than a scratch."
+            ],
+            [
+                "Don't worry about the others. Natural selection, as they say."
+            ]
         ]
     },
     "Hurricane": {
-        "text": [
+        "general_starclan": [
             [
                 "Unite the Clan beneath the tempest's roar."
             ],
@@ -104,11 +154,35 @@
             ],
             [
                 "You will rise from the wreck stronger than before."
+            ],
+            [
+                "Sink your claws into the ground, for a furious surge threatens to knock you off your paws."
+            ]
+        ],
+        "general_darkforest": [
+            [
+                "Do not tell me you fail to feel the strength of the winds - the howls of incoming danger.",
+                "You're weaker than we thought."
+            ],
+            [
+                "Fury surges through the territory, commanded by fear and destruction."
+            ],
+            [
+                "A trial of destruction is upon c_n."
+            ],
+            [
+                "The stars will be covered by the approaching clouds - do not look to them for advice now."
+            ],
+            [
+                "Do not blame us for the winds wrath."
+            ],
+            [
+                "Nature intends to punish those who anger her. Such a shame c_n is in her way."
             ]
         ]
     },
     "Great Blizzard": {
-        "text": [
+        "general_starclan": [
             [
                 "Blind will you go, In the torrent of snow, In the darkness its seeds sow, Our light we will show, Should you let it be so"
             ],
@@ -128,15 +202,29 @@
                 "Ice will grow within the weed's roots."
             ],
             [
-                "The land will shrink, stranded, you are alone."
+                "The land will shrink, stranded - you are alone."
             ],
             [
                 "March forward if you dare, do not ignore night's icy stare."
             ]
+        ],
+        "general_darkforest": [
+            [
+                "Be discouraged - there is no escaping the incoming white danger."
+            ],
+            [
+                "Feel the pressure - experience the suffocation of the Dark Forest."
+            ],
+            [
+                "The flakes are beautiful until it threatens death."
+            ],
+            [
+                "It is just a silly storm. Don't get your tail in a twist."
+            ]
         ]
     },
     "Wildfire": {
-        "text": [
+        "general_starclan": [
             [
                 "The warmth is not safe."
             ],
@@ -167,10 +255,31 @@
             [
                 "Smoke can hold down even the strongest of warriors."
             ]
+        ],
+        "general_darkforest": [
+            [
+                "Feel the heat of our fury."
+            ],
+            [
+                "All it takes is a spark to burn territories to ash and charcoal."
+            ],
+            [
+                "Soon enough, your little c_n will mimic the black goop of the Dark Forest."
+            ],
+            [
+                "There is nothing more curious than an embracing inferno."
+            ],
+            [
+                "Some cats have a burning need to cast revenge among the living.",
+                "Too bad that 'burn' can become physical."
+            ],
+            [
+                "Twoleg minds are easily tainted with. It doesn't take much to influence them, hilariously."
+            ]
         ]
     },
     "Terrible Cold": {
-        "text": [
+        "general_starclan": [
             [
                 "There is frost in your blood that no warmth can melt."
             ],
@@ -185,11 +294,35 @@
             ],
             [
                 "A blanket of frost will cover all living, sucking the strength little by little until there is nothing left."
+            ],
+            [
+                "Treasure those around you, for you'll need their warmth."
+            ],
+            [
+                "There is a piercing bite you cannot see and a monster you cannot hear. A chill comes from within - or is it just your imagination?"
+            ],
+            [
+                "They say the last minutes of warmth cannot be felt at all."
+            ]
+        ],
+        "general_darkforest": [
+            [
+                "Stop shivering."
+            ],
+            [
+                "We do not provide warmth, nor are we able to give it. Seek it elsewhere."
+            ],
+            [
+                "Who needs warmer temperatures anyway? Just keep sparing and your pelt will warm on its own."
+            ],
+            [
+                "The living is so readily taken down with a simple temperature change.",
+                "I expect you won't be as easily affected, hm? Or is my expectations misplaced?"
             ]
         ]
     },
     "Floods": {
-        "text": [
+        "general_starclan": [
             [
                 "Seeping and suffocating, rising and raising, our vital source will engulf our growth anew."
             ],
@@ -208,10 +341,32 @@
             [
                 "Water brings life through rain and rivers, but also brings death when balance shifts."
             ]
+        ],
+        "general_darkforest": [
+            [
+                "Tell me this - A little bit of water is not going to end you, correct?",
+                "Just follow the tide."
+            ],
+            [
+                "We're shifting the balances, speaking to those living.",
+                "Be prepared for a wave of change."
+            ],
+            [
+                "There is a delightful shift in the balances at last."
+            ],
+            [
+                "There is nothing more relaxing than a nice swim!"
+            ]
+        ],
+        "general_darkforest_scfaith": [
+            [
+                "Dear friend, your little StarClan has shifted the moon out of your favor.",
+                "Do not blame us for the waters destruction."
+            ]
         ]
     },
     "Twoleg Invasion": {
-        "text": [
+        "general_starclan": [
             [
                 "Beings of two will march the land, bringing destruction where they stand."
             ],
@@ -226,11 +381,22 @@
             ],
             [
                 "Like thorns, it's a grasp one cannot escape."
+            ],
+            [
+                "These beings bring destruction wherever they go, for they do not care for the land you call home."
+            ]
+        ],
+        "general_darkforest": [
+            [
+                "Keep sparing, for there are bigger predators out there than a measly beast."
+            ],
+            [
+                "There is everything wrong with fleeing. No matter the danger, do not flee like your Clanmates certainly will."
             ]
         ]
     },
     "Prey Sickness": {
-        "text": [
+        "general_starclan": [
             [
                 "With delirious groans and fangs of foam, those who were once friend shall now be known as foe."
             ],
@@ -245,11 +411,31 @@
             ],
             [
                 "The prey will get their revenge in price for a sacrifice."
+            ],
+            [
+                "A darkness spreads subtly through the lands, starting from the very source."
+            ],
+            [
+                "You are what you eat."
+            ]
+        ],
+        "general_darkforest": [
+            [
+                "The prey's revenge dives deep. I respect them, in a way."
+            ],
+            [
+                "Fight against the poison they try to give you. There is nothing more embarrassing than losing to prey."
+            ],
+            [
+                "Do not embarrass us with losing to an enemy 3 times less your size."
+            ],
+            [
+                "We are not worried for you, for you do not prefer to hunt the weak."
             ]
         ]
     },
     "Contaminated Water": {
-        "text": [
+        "general_starclan": [
             [
                 "The water is grey and filled with goo, its sight a rotten stain created by two."
             ],
@@ -268,10 +454,22 @@
             [
                 "Drink carefully, throats will burn red and vision will blur if what consumed is tainted to the touch"
             ]
+        ],
+        "general_darkforest": [
+            [
+                "Seems like the water has inherited a green shine to it. It looks unnatural, from what I've been told.",
+                "You're not stupid enough to drink from it, are you?"
+            ],
+            [
+                "It is always the tiniest, insignificant things that take advantage of weakness."
+            ],
+            [
+                "What is a necessity is now a silent killer."
+            ]
         ]
     },
     "Avalanche": {
-        "text": [
+        "general_starclan": [
             [
                 "A sheet of white, so daunting and bright, will bury all in its torrential might."
             ],
@@ -293,10 +491,25 @@
             [
                 "What is buried will be unearthed by the next generation."
             ]
+        ],
+        "general_darkforest": [
+            [
+                "Hear a deafening call and watch as the towering white follows it."
+            ],
+            [
+                "In no time at all, the slopes will swallow those who decided it was theirs to keep."
+            ],
+            [
+                "Lungs are slit, suffocating by the pressure of the downfall."
+            ],
+            [
+                "All it takes is one wrongly placed paw to cause destruction.",
+                "Too bad we've already orchestrated it."
+            ]
         ]
     },
     "Tornado": {
-        "text": [
+        "general_starclan": [
             [
                 "The silence of the inbetween is your only hope."
             ],
@@ -315,10 +528,18 @@
             [
                 "There is destruction in your future. Be cautious of the signs around you."
             ]
+        ],
+        "general_darkforest": [
+            [
+                "The stars will be covered by the approaching clouds - do not look to them for advice now."
+            ],
+            [
+                "The sky would darken and the twirls of terror will start. Only the cowardly run."
+            ]
         ]
     },
     "Earthquake": {
-        "text": [
+        "general_starclan": [
             [
                 "When the animals become hectic, beware of the rumble that follows."
             ],
@@ -333,14 +554,28 @@
             ],
             [
                 "Once a spirits wrath grows strong enough, they have the power to swipe mortals off their paws. Be careful - be vigilant."
-            ],
+            ]
+        ],
+        "general_starclan_beach": [
             [
                 "The fish do not wash ashore without a dreadful destruction to follow them."
+            ]
+        ],
+        "general_darkforest": [
+            [
+                "Our anger will show itself in the living, soon enough."
+            ],
+            [
+                "We have a need to punish those who have wronged us.",
+                "Don't stand in our way."
+            ],
+            [
+                "We march across the lands and a tremble in the ground shall follow."
             ]
         ]
     },
     "Volcanic Eruption": {
-        "text": [
+        "general_starclan": [
             [
                 "The Flame will stream down like a river. Beware of the destruction that follows."
             ],
@@ -354,12 +589,17 @@
                 "Cracks, steam, red rivers, and blackened land haunt your nightmares. It is more than just a silly kit tale."
             ],
             [
-                "Beware of what towers over you, for the largest test for c_n is very well on its way."
+                "Beware of what towers over you. The most difficult trial for c_n is very well on its way."
+            ]
+        ],
+        "general_darkforest": [
+            [
+                "A proud stream of our bubbling blood pools down the mountain."
             ]
         ]
     },
     "Heatwave": {
-        "text": [
+        "general_starclan": [
             [
                 "Look out into the distance and see the air dance before your very eyes."
             ],
@@ -367,7 +607,7 @@
                 "There will be a burning fire within you, furious and unstoppable."
             ],
             [
-                "Blood will sizzle from the heat."
+                "Blood will sizzle from an enemy you cannot see nor hear. Your only warning will be the scorch against skin."
             ],
             [
                 "The birds are flying west to escape a flame that cannot be seen or controlled."
@@ -375,10 +615,22 @@
             [
                 "Water will be scarce, disintegrating into the air when it's needed the most."
             ]
+        ],
+        "general_darkforest": [
+            [
+                "There is nothing greater than a strong greenleaf!"
+            ],
+            [
+                "When the star shines the brightest, every other cat pays for it."
+            ],
+            [
+                "Hah! You have no message from me.",
+                "Wither away for all I care!"
+            ]
         ]
     },
     "Severe Thunderstorm": {
-        "text": [
+        "general_starclan": [
             [
                 "Pay close attention to the birds. Once they begin to surrender themselves to the hunt, be wary of bigger things to come."
             ],
@@ -393,11 +645,19 @@
             ],
             [
                 "As the air smells clean and the wind blows curiously, do not be deceived. A harsh reality is coming."
+            ],
+            [
+                "Darkness is upon your Clan. Wet winds, clean air, and black clouds are only the beginning to terror."
+            ]
+        ],
+        "general_darkforest": [
+            [
+                "The stars will be covered by the approaching clouds - do not look to them for advice now."
             ]
         ]
     },
     "Hydrothermal Explosions": {
-        "text": [
+        "general_starclan": [
             [
                 "Beware of the steam, for it is a warning to bigger things"
             ],
@@ -409,6 +669,44 @@
             ],
             [
                 "The animals and prey around you avoid the areas in which you step. Perhaps this is a blessing, or perhaps this is a warning."
+            ],
+            [
+                "Animals larger than you avoid the lands in which you stand."
+            ],
+            [
+                "Be careful of where one steps, for it may be your last."
+            ]
+        ],
+        "general_darkforest": [
+            [
+                "With the force of a thousand winds, the ground will rumble and burst."
+            ]
+        ]
+    },
+    "Oil Spill": {
+        "general_starclan": [
+            [
+                "There is a pooling darkness from the horizon, punishing everything in its path."
+            ],
+            [
+                "A sickness breaks out of its containment, determined to sink their teeth into anything living."
+            ],
+            [
+                "Something unnatural and unmoving comes from the depths of the water."
+            ],
+            [
+                "A dreadful mistake has taken root in your waters."
+            ]
+        ],
+        "general_darkforest": [
+            [
+                "The Dark Forest has broken from their chains, unleashing a flood of their sickness."
+            ],
+            [
+                "We crave for revenge, and we'll finally achieve it."
+            ],
+            [
+                "StarClan cannot stop our black waters, for it is Twoleg made but of Dark Forests' influence."
             ]
         ]
     }

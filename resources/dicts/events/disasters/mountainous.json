@@ -46,26 +46,26 @@
         "trigger_events": [
             "The ground trembles suddenly and knocks a few cats off their paws, but it ends as soon as it begins. The Camp is filled with whispers as they speculate what caused the rumble.",
             "Warriors come back from their patrols, claiming the territory has changed. The earth is cracking, swelling, and sinking along the edge of the mountains. Even the elders are clueless.",
-            "Cats have been complaining that the groundwaters are becoming unbearably hot, and the water is even starting to steam! r_m is concerned about the future wellbeing of c_n and the injuries the temperature may cause.",
+            "Cats have been complaining that the groundwaters are becoming unbearably hot, and the water is even starting to steam! med_name is concerned about the future wellbeing of c_n and the injuries the temperature may cause.",
             "A patrol of warriors run back to the Camp shaken. Whispers around Camp say the warriors encountered fire-water burning everything in its path within the territory."
         ],
         "progress_events": {
             "moon1": [
                 "The trembles have started again, this time lasting longer than the last. Trees shake, rocks fall, and the dens threaten to crumble where they stand. Thankfully, the rumbling stops before anything got too damaged.",
-                "l_n visits the shifting grounds the warriors speak of, perplexed by the state the earth has become. {PRONOUN/l_n/subject/CAP} {VERB/l_n/tell/tells} the warriors to notify {PRONOUN/l_n/object} if they come across anything similar.",
+                "lead_name visits the shifting grounds the warriors speak of, perplexed by the state the earth has become. {PRONOUN/lead_name/subject/CAP} {VERB/lead_name/tell/tells} the warriors to notify {PRONOUN/lead_name/object} if they come across anything similar.",
                 "In the middle of the night, a boom shakes the ground underneath c_n's paws. Cats run out of their dens to investigate the source of the noise, only to look up and see fire-water pouring out of the mountain side.",
-                "l_n makes a sudden announcement, stating cats need to stay within the Camp for the time being. {PRONOUN/l_n/subject/CAP} {VERB/l_n/are/is} vague as to why, but the Camp fills with rumors of fire-water destroying the land anyway."
+                "lead_name makes a sudden announcement, stating cats need to stay within the Camp for the time being. {PRONOUN/lead_name/subject/CAP} {VERB/lead_name/are/is} vague as to why, but the Camp fills with rumors of fire-water destroying the land anyway."
             ],
             "moon2": [
                 "Suddenly hot fire-water makes its way into Camp. Warriors are instructed to get cats to high ground to avoid the strange phenomena. The trees and grass are melting within the red destruction, and cats are getting hurt from even being near it.",
-                "The moon was like any other, until r_w notifies l_n about fire-water coming out of the earth. It reaches Camp, burning everything in its path as c_n scrambles to find a place to flee to. Cats watch as their Camp is engulfed in flames.",
+                "The moon was like any other, until r_w notifies lead_name about fire-water coming out of the earth. It reaches Camp, burning everything in its path as c_n scrambles to find a place to flee to. Cats watch as their Camp is engulfed in flames.",
                 "It's every cat for themselves as fire-water runs through Camp at alarming speeds. c_n is filled with screams, horror, and devastation as their home is destroyed before their very eyes.",
-                "l_n can recognize the warnings given. {PRONOUN/l_n/subject/CAP} {VERB/l_n/gather/gathers} any cat {PRONOUN/l_n/subject} can and {VERB/l_n/lead/leads} them away from the Camp, hoping to minimize the injuries. l_c can only hope the Camp is still standing when c_n travels back."
+                "lead_name can recognize the warnings given. {PRONOUN/lead_name/subject/CAP} {VERB/lead_name/gather/gathers} any cat {PRONOUN/lead_name/subject} can and {VERB/lead_name/lead/leads} them away from the Camp, hoping to minimize the injuries. l_c can only hope the Camp is still standing when c_n travels back."
             ]
         },
         "conclusion_events": [
              "The fire-water passes on, but it leaves the rest charcoaled, destroyed, and still unbearably hot. Some cats pray for rain or a miracle while others try to think of solutions around the disaster before them.",
-             "l_n is at an all-time stress as {PRONOUN/l_n/subject} {VERB/l_n/try/tries} to find a solution to the ever-growing issue before {PRONOUN/l_n/object}. The Camp is destroyed and c_n can't do anything but wait for the fire-water to harden or get cooler."
+             "lead_name is at an all-time stress as {PRONOUN/lead_name/subject} {VERB/lead_name/try/tries} to find a solution to the ever-growing issue before {PRONOUN/lead_name/object}. The Camp is destroyed and c_n can't do anything but wait for the fire-water to harden or get cooler."
         ],
         "collateral_damage": {
             "injuries": [
@@ -110,7 +110,7 @@
         "duration": 2,
         "rarity": "rare",
         "trigger_events": [
-            "r_w comments that the ground is steaming at the edge of Camp. {PRONOUN/r_w/subject/CAP} {VERB/r_w/express/expresses} worry over what it is, and l_n suggests cats be cautious while exploring the specific area."
+            "r_w comments that the ground is steaming at the edge of Camp. {PRONOUN/r_w/subject/CAP} {VERB/r_w/express/expresses} worry over what it is, and lead_name suggests cats be cautious while exploring the specific area."
         ],
         "progress_events": {
             "moon1": [
@@ -120,7 +120,7 @@
         },
         "conclusion_events": [
              "Cats cautiously peek out from their shelters when the rock seems to stop falling from the air. Whispers of terrier fill the Camp as c_n wonders if this is a warning for something bigger, or just another unsolved phenomena?",
-             "After the explosion passes and the earth hits ground once more, c_n is covered in mud and scattered debris. l_n is thankful that there doesn't seem to be any major visible damage and starts counting heads. 1, 2, 3, 4..."
+             "After the explosion passes and the earth hits ground once more, c_n is covered in mud and scattered debris. lead_name is thankful that there doesn't seem to be any major visible damage and starts counting heads. 1, 2, 3, 4..."
         ],
         "collateral_damage": {
             "injuries": [
