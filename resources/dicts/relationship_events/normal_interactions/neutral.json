@@ -201,7 +201,7 @@
 		"id": "neutral_lifegen_queentoapp_H1",
 		"interactions": [
 			"m_c has to gently explain that r_c needs to be more careful with {PRONOUN/r_c/poss} words around the younger cats.",
-			"m_c shoos r_c out of the nursery when {PRONOUN/r_c/subject} {PRONOUN/r_c/step/steps} in during nap time.",
+			"m_c shoos r_c out of the nursery when {PRONOUN/r_c/subject} {VERB/r_c/step/steps} in during nap time.",
 			"m_c recruits r_c to help {PRONOUN/m_c/object} clean the nests in exchange for a part of m_c's fresh-kill."
 		],
 		"main_status_constraint": [
