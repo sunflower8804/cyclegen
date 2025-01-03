@@ -2,7 +2,7 @@
     "unabashed_deputy": [
         [
             "unabashed",
-            "warrior",
+            "you_warrior",
             "platonic_like",
             "you_blind"
         ],
@@ -15,7 +15,7 @@
     "deputy_unabashed": [
         [
             "Unabashed",
-            "apprentice",
+            "you_apprentice",
             "you_blind"
         ],
         [
@@ -27,8 +27,8 @@
     ],
     "broodingapp_toqueenapp": [
         [
-            "queen's_apprentice",
-            "queen",
+            "you_queen's_apprentice",
+            "you_queen",
             "brooding",
             "neutral",
             "platonic_like",
@@ -44,7 +44,7 @@
     ],
     "brooding_medapp": [
         [
-            "apprentice",
+            "you_apprentice",
             "brooding",
             "dislike"
         ],
@@ -60,7 +60,7 @@
     "brooding_leader": [
         [
             "you_kitten",
-            "newborn",
+            "you_newborn",
             "brooding",
             "neutral",
             "they_blind",
@@ -91,8 +91,8 @@
     ],
     "brooding_deputy_2": [
         [
-            "apprentice",
-            "warrior",
+            "you_apprentice",
+            "you_warrior",
             "brooding",
             "assertive",
             "dislike",
@@ -326,7 +326,7 @@
     ],
     "assertive_mentor3": [
         [
-            "apprentice",
+            "you_apprentice",
             "assertive",
             "from_mentor",
             "they_blind"
@@ -341,9 +341,9 @@
     ],
     "assertive_mentor": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
             "assertive",
             "unlawful",
             "from_mentor",
@@ -358,9 +358,9 @@
     ],
     "assertive_mentor1": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
             "assertive",
             "upstanding",
             "unabashed",
@@ -376,10 +376,10 @@
     ],
     "assertive_mentor2": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "queen's_apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice",
             "assertive",
             "sweet",
             "stable",
@@ -402,7 +402,7 @@
             "Any",
             "sibling",
             "half sibling",
-            "kitten",
+            "you_kitten",
             "adopted_sibling",
             "half sibling",
             "dislike",
@@ -424,7 +424,7 @@
             "upstanding",
             "brooding",
             "stable",
-            "kitten",
+            "you_kitten",
             "from_adopted_kit",
             "from_kit",
             "from_kit",
@@ -495,7 +495,7 @@
     ],
     "assertive_5": [
         [
-            "kitten",
+            "you_kitten",
             "dislike",
             "assertive",
             "cool",
@@ -528,7 +528,7 @@
     ],
     "assertive_elder_2": [
         [
-            "leader",
+            "you_leader",
             "assertive",
             "dislike",
             "they_blind",
@@ -548,7 +548,7 @@
     ],
     "assertive_elder_3": [
         [
-            "leader",
+            "you_leader",
             "assertive",
             "dislike",
             "they_blind",
@@ -565,7 +565,7 @@
     "assertive_elder_5": [
         [
             "assertive",
-            "leader",
+            "you_leader",
             "you_blind"
         ],
         [
@@ -576,7 +576,7 @@
     "assertive_elder_6": [
         [
             "assertive",
-            "leader",
+            "you_leader",
             "they_blind",
             "you_blind"
         ],
@@ -587,7 +587,7 @@
     "assertive_elder_7": [
         [
             "assertive",
-            "leader",
+            "you_leader",
             "you_blind"
         ],
         [
@@ -611,7 +611,7 @@
     ],
     "assertive_elder_9": [
         [
-            "elder",
+            "you_elder",
             "assertive",
             "cool",
             "silly",
@@ -629,7 +629,7 @@
     ],
     "assertivewarrior_leader5": [
         [
-            "leader",
+            "you_leader",
             "assertive",
             "unabashed",
             "stable",
@@ -645,8 +645,8 @@
     ],
     "assertive_queen": [
         [
-            "queen's_apprentice",
-            "queen",
+            "you_queen's_apprentice",
+            "you_queen",
             "assertive",
             "cool",
             "sweet",
@@ -661,8 +661,8 @@
     ],
     "assertive_queensapp2": [
         [
-            "queen's_apprentice",
-            "queen",
+            "you_queen's_apprentice",
+            "you_queen",
             "assertive",
             "upstanding",
             "you_blind"
@@ -678,7 +678,7 @@
     ],
     "assertive_queensapp1": [
         [
-            "queen's_apprentice",
+            "you_queen's_apprentice",
             "assertive",
             "cool",
             "brooding",
@@ -697,8 +697,8 @@
     ],
     "assertive_mediator3": [
         [
-            "mediator",
-            "mediator_apprentice",
+            "you_mediator",
+            "you_mediator_apprentice",
             "assertive",
             "dislike",
             "unabashed",
@@ -714,7 +714,7 @@
     ],
     "assertivewarrior_mediatorapp": [
         [
-            "mediator_apprentice",
+            "you_mediator_apprentice",
             "assertive",
             "they_blind",
             "you_blind"
@@ -727,7 +727,7 @@
     ],
     "assertivewarrior_mediatorapp_2": [
         [
-            "mediator_apprentice",
+            "you_mediator_apprentice",
             "assertive",
             "cool",
             "upstanding",
@@ -744,7 +744,7 @@
     ],
     "assertive_mediatorapp3": [
         [
-            "mediator_apprentice",
+            "you_mediator_apprentice",
             "assertive",
             "unabashed",
             "brooding",
@@ -760,8 +760,8 @@
     ],
     "assertivewarrior_mediatorapp_3": [
         [
-            "mediator_apprentice",
-            "mediator",
+            "you_mediator_apprentice",
+            "you_mediator",
             "assertive",
             "unlawful",
             "unabashed",
@@ -777,8 +777,8 @@
     ],
     "assertivewarrior_med7": [
         [
-            "medicine_cat",
-            "medicine_cat_apprentice",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
             "platonic_like",
             "assertive",
             "cool",
@@ -797,8 +797,8 @@
     ],
     "assertive_med6": [
         [
-            "medicine_cat",
-            "medicine_cat_apprentice",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
             "assertive",
             "they_blind",
             "you_blind"
@@ -815,13 +815,13 @@
     ],
     "assertivewarrior_med5": [
         [
-            "medicine_cat",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "mediator",
-            "queen's_apprentice",
-            "queen",
-            "elder",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "you_mediator",
+            "you_queen's_apprentice",
+            "you_queen",
+            "you_elder",
             "assertive",
             "they_blind",
             "you_blind"
@@ -834,8 +834,8 @@
     ],
     "assertiveapp_medapp1": [
         [
-            "medicine_cat_apprentice",
-            "medicine_cat",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
             "platonic_like",
             "assertive",
             "unabashed",
@@ -850,7 +850,7 @@
     ],
     "assertive_medapp": [
         [
-            "medicine_cat_apprentice",
+            "you_medicine_cat_apprentice",
             "assertive",
             "unlawful",
             "unabashed",
@@ -865,7 +865,7 @@
     ],
     "assertive_warrior_or_elder_2": [
         [
-            "apprentice",
+            "you_apprentice",
             "platonic_like",
             "assertive",
             "unabashed",
@@ -882,7 +882,7 @@
     ],
     "assertive_warrior": [
         [
-            "apprentice",
+            "you_apprentice",
             "assertive",
             "unlawful",
             "they_blind",
@@ -896,7 +896,7 @@
     ],
     "assertive_tokit_2": [
         [
-            "kitten",
+            "you_kitten",
             "platonic_like",
             "assertive",
             "they_blind"
@@ -912,7 +912,7 @@
     ],
     "assertive_warrior_or_elder": [
         [
-            "apprentice",
+            "you_apprentice",
             "assertive",
             "cool",
             "silly",
@@ -927,7 +927,7 @@
     ],
     "assertive_elder_10": [
         [
-            "elder",
+            "you_elder",
             "assertive",
             "cool",
             "silly",
@@ -945,11 +945,11 @@
     ],
     "assertive_elder_11": [
         [
-            "warrior",
-            "mediator",
-            "queen",
-            "medicine_cat",
-            "deputy",
+            "you_warrior",
+            "you_mediator",
+            "you_queen",
+            "you_medicine_cat",
+            "they_deputy",
             "assertive",
             "trust",
             "comfort",
@@ -966,11 +966,11 @@
     ],
     "assertive_elder_12": [
         [
-            "warrior",
-            "mediator",
-            "queen",
-            "medicine_cat",
-            "deputy",
+            "you_warrior",
+            "you_mediator",
+            "you_queen",
+            "you_medicine_cat",
+            "they_deputy",
             "assertive",
             "trust",
             "comfort",
@@ -985,7 +985,7 @@
     ],
     "assertive_elder_13": [
         [
-            "kitten",
+            "you_kitten",
             "assertive",
             "non-related",
             "cool",
@@ -1004,10 +1004,10 @@
     ],
     "assertive_elder_14": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "queen's_apprentice",
-            "mediator_apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_queen's_apprentice",
+            "you_mediator_apprentice",
             "assertive",
             "respect",
             "platonic_like"
@@ -1019,7 +1019,7 @@
     ],
     "assertive_elder_15": [
         [
-            "kitten",
+            "you_kitten",
             "assertive",
             "they_blind",
             "you_blind"
@@ -1035,10 +1035,10 @@
     ],
     "assertive_elder_16": [
         [
-            "apprentice",
-            "warrior",
-            "medicine_cat_apprentice",
-            "medicine_cat",
+            "you_apprentice",
+            "you_warrior",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
             "assertive",
             "dislike",
             "they_blind",
@@ -1098,10 +1098,10 @@
     ],
     "assertive_elder_20": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "queen's_apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice",
             "platonic_like",
             "respect",
             "they_blind",
@@ -1118,9 +1118,9 @@
         [
             "assertive",
             "deputy",
-            "warrior",
-            "medicine_cat",
-            "queen",
+            "you_warrior",
+            "you_medicine_cat",
+            "you_queen",
             "trust",
             "comfort",
             "respect",
@@ -1151,8 +1151,8 @@
     ],
     "assertive_misc": [
         [
-            "warrior",
-            "apprentice",
+            "you_warrior",
+            "you_apprentice",
             "assertive",
             "unlawful",
             "unabashed",
@@ -1171,8 +1171,8 @@
     ],
     "introspective_dep": [
         [
-            "apprentice",
-            "warrior",
+            "you_apprentice",
+            "you_warrior",
             "introspective",
             "you_blind"
         ],
@@ -1185,8 +1185,8 @@
     ],
     "introspective_dep_1": [
         [
-            "warrior",
-            "apprentice",
+            "you_warrior",
+            "you_apprentice",
             "introspective",
             "they_blind",
             "you_blind",
@@ -1276,7 +1276,7 @@
     ],
     "brooding_dep_1": [
         [
-            "kitten",
+            "you_kitten",
             "brooding",
             "neutral",
             "they_blind",
@@ -1289,8 +1289,8 @@
     ],
     "brooding_dep2": [
         [
-            "apprentice",
-            "warrior",
+            "you_apprentice",
+            "you_warrior",
             "brooding",
             "neutral",
             "they_blind",
@@ -1479,7 +1479,7 @@
     ],
     "assertive_elder_23": [
         [
-            "leader",
+            "you_leader",
             "neurotic",
             "they_blind",
             "you_blind"
@@ -1491,7 +1491,7 @@
     ],
     "assertive_elder_24": [
         [
-            "leader",
+            "you_leader",
             "they_blind",
             "you_blind"
         ],
@@ -1573,8 +1573,8 @@
     ],
     "bloodthirsty_pos1_Rr": [
         [
-            "apprentice",
-            "warrior",
+            "you_apprentice",
+            "you_warrior",
             "platonic_like",
             "brooding",
             "assertive",
@@ -1589,8 +1589,8 @@
     ],
     "bloodthirsty_rom_Rr": [
         [
-            "apprentice",
-            "warrior",
+            "you_apprentice",
+            "you_warrior",
             "romantic_like",
             "assertive",
             "brooding",
@@ -1649,8 +1649,8 @@
     ],
     "brooding_deputy11": [
         [
-            "warrior",
-            "apprentice",
+            "you_warrior",
+            "you_apprentice",
             "they_blind",
             "you_blind"
         ],
@@ -1724,10 +1724,10 @@
     ],
     "brooding_deputy16": [
         [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
+            "you_warrior",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_queen",
             "brooding",
             "stable",
             "introspective",
@@ -1741,10 +1741,10 @@
     ],
     "brooding_deputy17": [
         [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
+            "you_warrior",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_queen",
             "brooding",
             "introspective",
             "platonic_love",
@@ -1762,11 +1762,11 @@
     ],
     "brooding_deputy18": [
         [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
-            "leader",
+            "you_warrior",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_queen",
+            "you_leader",
             "brooding",
             "upstanding"
         ],
@@ -1782,10 +1782,10 @@
     ],
     "brooding_deputy19": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "queen's_apprentice",
-            "mediator_apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_queen's_apprentice",
+            "you_mediator_apprentice",
             "brooding",
             "neutral",
             "non-related",
@@ -1801,7 +1801,7 @@
     ],
     "newborn_fromdep": [
         [
-            "newborn",
+            "you_newborn",
             "neutral",
             "they_blind",
             "you_blind"
@@ -1815,7 +1815,7 @@
     ],
     "newborn_fromdep1": [
         [
-            "newborn",
+            "you_newborn",
             "assertive",
             "cool",
             "platonic_like",
@@ -1868,11 +1868,11 @@
     ],
     "silly_deputy_memory": [
         [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
-            "elder",
+            "you_warrior",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_queen",
+            "you_elder",
             "silly",
             "they_blind",
             "you_blind"
@@ -1900,7 +1900,7 @@
     ],
     "silly_deputy_best": [
         [
-            "apprentice",
+            "you_apprentice",
             "silly",
             "from_mentor",
             "they_blind",
@@ -1930,7 +1930,7 @@
     ],
     "sweet_deputy_1": [
         [
-            "newborn",
+            "you_newborn",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1942,7 +1942,7 @@
     ],
     "sweet_deputy_2": [
         [
-            "kitten",
+            "you_kitten",
             "sweet"
         ],
         [
@@ -1953,7 +1953,7 @@
     ],
     "sweet_deputy_3": [
         [
-            "kitten",
+            "you_kitten",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1967,7 +1967,7 @@
     ],
     "sweet_deputy_4": [
         [
-            "kitten",
+            "you_kitten",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1981,10 +1981,10 @@
     ],
     "sweet_deputy_5": [
         [
-            "apprentice",
-            "queen's_apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
+            "you_apprentice",
+            "you_queen's_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -1997,10 +1997,10 @@
     ],
     "sweet_deputy_6": [
         [
-            "apprentice",
-            "queen's_apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
+            "you_apprentice",
+            "you_queen's_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2014,7 +2014,7 @@
     ],
     "sweet_deputy_7": [
         [
-            "apprentice",
+            "you_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2026,7 +2026,7 @@
     ],
     "sweet_deputy_8": [
         [
-            "queen's_apprentice",
+            "you_queen's_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2039,7 +2039,7 @@
     ],
     "sweet_deputy_9": [
         [
-            "medicine_cat_apprentice",
+            "you_medicine_cat_apprentice",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2052,7 +2052,7 @@
     ],
     "sweet_deputy_10": [
         [
-            "mediator_apprentice",
+            "you_mediator_apprentice",
             "sweet"
         ],
         [
@@ -2064,10 +2064,10 @@
     ],
     "sweet_deputy_11": [
         [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
+            "you_warrior",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_queen",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2080,10 +2080,10 @@
     ],
     "sweet_deputy_12": [
         [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
+            "you_warrior",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_queen",
             "sweet"
         ],
         [
@@ -2095,7 +2095,7 @@
     ],
     "sweet_deputy_22": [
         [
-            "warrior",
+            "you_warrior",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2108,7 +2108,7 @@
     ],
     "sweet_deputy_13": [
         [
-            "medicine_cat",
+            "you_medicine_cat",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2121,7 +2121,7 @@
     ],
     "sweet_deputy_14": [
         [
-            "mediator",
+            "you_mediator",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2134,7 +2134,7 @@
     ],
     "sweet_deputy_15": [
         [
-            "queen",
+            "you_queen",
             "sweet",
             "they_blind"
         ],
@@ -2149,7 +2149,7 @@
     ],
     "sweet_deputy_16": [
         [
-            "leader",
+            "you_leader",
             "sweet",
             "they_blind"
         ],
@@ -2163,7 +2163,7 @@
     ],
     "sweet_deputy_17": [
         [
-            "leader",
+            "you_leader",
             "sweet",
             "they_blind",
             "you_blind",
@@ -2177,7 +2177,7 @@
     ],
     "sweet_deputy_18": [
         [
-            "leader",
+            "you_leader",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2193,7 +2193,7 @@
     ],
     "sweet_deputy_19": [
         [
-            "elder",
+            "you_elder",
             "sweet",
             "they_blind",
             "you_blind"
@@ -2205,7 +2205,7 @@
     ],
     "sweet_deputy_20": [
         [
-            "elder",
+            "you_elder",
             "sweet",
             "they_blind",
             "you_blind",
@@ -2219,7 +2219,7 @@
     ],
     "sweet_deputy_21": [
         [
-            "elder",
+            "you_elder",
             "sweet",
             "they_deaf",
             "you_deaf",
@@ -2235,7 +2235,7 @@
     ],
     "stable_shunned_you_Apprentice_MedicineCat_04": [
         [
-            "medicine_cat_apprentice",
+            "you_medicine_cat_apprentice",
             "you_shunned",
             "stable",
             "they_deputy"
@@ -2279,7 +2279,7 @@
             "they_shunned",
             "they_grieving",
             "you_leader",
-            "leader",
+            "you_leader",
             "they_blind",
             "you_blind"
         ],
@@ -2668,11 +2668,11 @@
             "any",
             "they_leader",
             "they_deputy",
-            "warrior",
-            "mediator",
-            "medicine cat",
-            "queen",
-            "elder",
+            "you_warrior",
+            "you_mediator",
+            "you_medicine cat",
+            "you_queen",
+            "you_elder",
             "they_blind",
             "you_blind",
             "silly",

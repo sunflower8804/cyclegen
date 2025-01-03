@@ -13,7 +13,7 @@
     "unabashed elder1": [
         [
             "unabashed",
-            "elder",
+            "you_elder",
             "no_kit",
             "you_blind"
         ],
@@ -48,7 +48,7 @@
     ],
     "elder32132": [
         [
-            "kitten",
+            "you_kitten",
             "brooding",
             "neutral",
             "they_blind",
@@ -66,7 +66,7 @@
             "unabashed",
             "sweet",
             "unlawful",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -84,7 +84,7 @@
             "unlawful",
             "unabashed",
             "silly",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -103,7 +103,7 @@
             "cool",
             "platonic_like",
             "from_parent",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -122,7 +122,7 @@
             "sweet",
             "stable",
             "platonic_like",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind",
             "they_hearing"
@@ -141,7 +141,7 @@
             "assertive",
             "unlawful",
             "unabashed",
-            "young elder",
+            "they_young_elder",
             "you_blind"
         ],
         [
@@ -156,7 +156,7 @@
             "Any",
             "cool",
             "from_mate",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -175,7 +175,7 @@
             "unlawful",
             "unabashed",
             "silly",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -189,7 +189,7 @@
         [
             "Any",
             "introspective",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -207,7 +207,7 @@
             "unlawful",
             "brooding",
             "dislike",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -222,7 +222,7 @@
             "assertive",
             "silly",
             "unlawful",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -240,7 +240,7 @@
             "stable",
             "sweet",
             "neurotic",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind",
             "they_raspylungs",
@@ -262,7 +262,7 @@
             "stable",
             "sweet",
             "neurotic",
-            "young elder",
+            "they_young_elder",
             "you_blind"
         ],
         [
@@ -280,7 +280,7 @@
             "upstanding",
             "silly",
             "stable",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -296,7 +296,7 @@
             "Any",
             "sweet",
             "from_mate",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -318,7 +318,7 @@
             "brooding",
             "upstanding",
             "cool",
-            "young elder",
+            "they_young_elder",
             "you_blind"
         ],
         [
@@ -338,7 +338,7 @@
             "brooding",
             "upstanding",
             "cool",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -356,7 +356,7 @@
             "assertive",
             "sweet",
             "silly",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -369,11 +369,11 @@
     ],
     "silly_elder": [
         [
-            "kitten",
+            "you_kitten",
             "silly",
             "cool",
             "unlawful",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -386,9 +386,9 @@
     ],
     "silly_elder_2": [
         [
-            "kitten",
+            "you_kitten",
             "silly",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -403,7 +403,7 @@
         [
             "Any",
             "upstanding",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -422,7 +422,7 @@
             "upstanding",
             "stable",
             "neurotic",
-            "young elder"
+            "they_young_elder"
         ],
         [
             "Yes, very good! And what's the name of that apprentice, over there ...?",
@@ -441,7 +441,7 @@
             "upstanding",
             "stable",
             "neurotic",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -456,7 +456,7 @@
         [
             "Any",
             "brooding",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -528,7 +528,7 @@
         [
             "Any",
             "neurotic",
-            "young elder"
+            "they_young_elder"
         ],
         [
             "How'd I end up in the elder's den?",
@@ -542,7 +542,7 @@
             "introspective",
             "sweet",
             "stable",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -558,7 +558,7 @@
             "Any",
             "silly",
             "unlawful",
-            "young elder",
+            "they_young_elder",
             "they_blind",
             "you_blind"
         ],
@@ -569,7 +569,7 @@
     ],
     "assertivewarrior_leader2": [
         [
-            "leader",
+            "you_leader",
             "assertive",
             "they_blind",
             "you_blind"
@@ -581,8 +581,8 @@
     ],
     "assertive_queen": [
         [
-            "queen's_apprentice",
-            "queen",
+            "you_queen's_apprentice",
+            "you_queen",
             "assertive",
             "cool",
             "sweet",
@@ -597,8 +597,8 @@
     ],
     "assertive_queensapp2": [
         [
-            "queen's_apprentice",
-            "queen",
+            "you_queen's_apprentice",
+            "you_queen",
             "assertive",
             "upstanding",
             "they_blind",
@@ -615,7 +615,7 @@
     ],
     "assertive_queensapp1": [
         [
-            "queen's_apprentice",
+            "you_queen's_apprentice",
             "assertive",
             "cool",
             "brooding",
@@ -634,7 +634,7 @@
     ],
     "assertivewarrior_mediatorapp": [
         [
-            "mediator_apprentice",
+            "you_mediator_apprentice",
             "assertive",
             "they_blind",
             "you_blind"
@@ -647,7 +647,7 @@
     ],
     "assertive_medapp": [
         [
-            "medicine_cat_apprentice",
+            "you_medicine_cat_apprentice",
             "assertive",
             "unlawful",
             "unabashed",
@@ -662,7 +662,7 @@
     ],
     "assertive_warrior_or_elder": [
         [
-            "apprentice",
+            "you_apprentice",
             "assertive",
             "cool",
             "silly",
@@ -677,8 +677,8 @@
     ],
     "assertive_elder_3": [
         [
-            "kitten",
-            "apprentice",
+            "you_kitten",
+            "you_apprentice",
             "assertive",
             "they_blind",
             "you_blind"
@@ -719,7 +719,7 @@
     ],
     "assertive_elder_6": [
         [
-            "elder",
+            "you_elder",
             "assertive",
             "they_blind",
             "you_blind"
@@ -732,7 +732,7 @@
     ],
     "assertive_elder_7": [
         [
-            "elder",
+            "you_elder",
             "assertive",
             "you_brooding",
             "you_neurotic",
@@ -761,16 +761,16 @@
     ],
     "assertive_elder_9": [
         [
-            "kitten",
-            "apprentice",
-            "medicine_cat_apprentice",
-            "medicine_cat",
-            "mediator_apprentice",
-            "mediator",
-            "queen's_apprentice",
-            "queen",
-            "deputy",
-            "leader",
+            "you_kitten",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
+            "you_mediator_apprentice",
+            "you_mediator",
+            "you_queen's_apprentice",
+            "you_queen",
+            "you_deputy",
+            "you_leader",
             "assertive",
             "they_blind",
             "you_blind"
@@ -785,11 +785,11 @@
     ],
     "assertive_elder_10": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "queen's_apprentice",
-            "warrior",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice",
+            "you_warrior",
             "assertive",
             "they_blind",
             "you_blind"
@@ -801,11 +801,11 @@
     ],
     "assertive_elder_11": [
         [
-            "kitten",
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "queen's_apprentice",
+            "you_kitten",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice",
             "assertive",
             "platonic_like",
             "respect",
@@ -819,8 +819,8 @@
     ],
     "assertive_elder_12": [
         [
-            "medicine_cat_apprentice",
-            "medicine_cat",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
             "assertive",
             "they_blind",
             "you_blind"
@@ -958,8 +958,8 @@
     ],
     "assertive_misc": [
         [
-            "warrior",
-            "apprentice",
+            "you_warrior",
+            "you_apprentice",
             "assertive",
             "unlawful",
             "unabashed",
@@ -1007,7 +1007,7 @@
     ],
     "brooding_elder": [
         [
-            "kitten",
+            "you_kitten",
             "brooding",
             "neutral",
             "they_blind",
@@ -1021,7 +1021,7 @@
     ],
     "brooding_elder1": [
         [
-            "kitten",
+            "you_kitten",
             "brooding",
             "neutral",
             "non-related",
@@ -1035,7 +1035,7 @@
     ],
     "brooding_elder2": [
         [
-            "kitten",
+            "you_kitten",
             "brooding",
             "neutral",
             "they_blind",
@@ -1049,7 +1049,7 @@
     ],
     "brooding_elder3": [
         [
-            "kitten",
+            "you_kitten",
             "brooding",
             "platonic_like",
             "they_blind",
@@ -1064,10 +1064,10 @@
     ],
     "brooding_elder4": [
         [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "queen's_apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice",
             "brooding",
             "platonic_like",
             "they_blind",
@@ -1162,7 +1162,7 @@
     ],
     "sweet_elder_1": [
         [
-            "newborn",
+            "you_newborn",
             "sweet"
         ],
         [
@@ -1172,7 +1172,7 @@
     ],
     "sweet_elder_2": [
         [
-            "kitten",
+            "you_kitten",
             "sweet"
         ],
         [
@@ -1182,7 +1182,7 @@
     ],
     "sweet_elder_3": [
         [
-            "kitten",
+            "you_kitten",
             "sweet"
         ],
         [
@@ -1192,7 +1192,7 @@
     ],
     "sweet_elder_4": [
         [
-            "kitten",
+            "you_kitten",
             "sweet"
         ],
         [
@@ -1228,7 +1228,7 @@
     ],
     "sweet_elder_7": [
         [
-            "apprentice",
+            "you_apprentice",
             "sweet"
         ],
         [
@@ -1252,10 +1252,10 @@
     ],
     "sweet_elder_10": [
         [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
+            "you_warrior",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_queen",
             "sweet"
         ],
         [
@@ -1269,10 +1269,10 @@
     ],
     "sweet_elder_11": [
         [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
+            "you_warrior",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_queen",
             "sweet"
         ],
         [
@@ -1283,7 +1283,7 @@
     ],
     "sweet_elder_12": [
         [
-            "warrior",
+            "you_warrior",
             "you_clanfounder",
             "you_clanborn",
             "they_clanfounder",
@@ -1332,7 +1332,7 @@
     ],
     "sweet_elder_15": [
         [
-            "queen",
+            "you_queen",
             "sweet"
         ],
         [
@@ -1345,7 +1345,7 @@
     ],
     "sweet_elder_16": [
         [
-            "deputy",
+            "you_deputy",
             "sweet"
         ],
         [
@@ -1356,7 +1356,7 @@
     ],
     "sweet_elder_17": [
         [
-            "deputy",
+            "you_deputy",
             "sweet"
         ],
         [
@@ -1370,7 +1370,7 @@
     ],
     "sweet_elder_18": [
         [
-            "deputy",
+            "you_deputy",
             "sweet"
         ],
         [
@@ -1382,7 +1382,7 @@
     ],
     "sweet_elder_19": [
         [
-            "leader",
+            "you_leader",
             "sweet"
         ],
         [
@@ -1394,7 +1394,7 @@
     ],
     "sweet_elder_20": [
         [
-            "leader",
+            "you_leader",
             "platonic_like",
             "sweet"
         ],
@@ -1406,7 +1406,7 @@
     ],
     "sweet_elder_21": [
         [
-            "leader",
+            "you_leader",
             "sweet"
         ],
         [
@@ -1417,7 +1417,7 @@
     ],
     "sweet_elder_22": [
         [
-            "elder",
+            "you_elder",
             "sweet"
         ],
         [
@@ -1428,7 +1428,7 @@
     ],
     "sweet_elder_23": [
         [
-            "elder",
+            "you_elder",
             "sweet"
         ],
         [
@@ -1440,7 +1440,7 @@
     ],
     "sweet_elder_24": [
         [
-            "elder",
+            "you_elder",
             "sweet"
         ],
         [
@@ -1469,7 +1469,7 @@
         [
             "you_sc",
             "they_df",
-            "kitten",
+            "you_kitten",
             "they_blind",
             "you_blind"
         ],
