@@ -14,7 +14,8 @@
 			"m_c was scolded for something that r_c gets praised for.",
 			"m_c's friend says nice things about r_c, but it just makes m_c jealous.",
 			"m_c thinks r_c looks nicer than {PRONOUN/m_c/object} today.",
-			"m_c notices one of {PRONOUN/m_c/poss} friends talking to r_c."
+			"m_c notices one of {PRONOUN/m_c/poss} friends talking to r_c.",
+			"m_c sighs as r_c is assigned to a task m_c has been wanting for moons."
 		]
 	},
 	{
@@ -31,7 +32,8 @@
 			"m_c thinks that r_c is more talented than {PRONOUN/m_c/object}.",
 			"r_c has a talent that m_c wants to have.",
 			"m_c tried on an accessory that r_c threw away, but realized r_c looked a lot better in it.",
-			"m_c worries that one of {PRONOUN/m_c/poss} friends likes r_c more."
+			"m_c worries that one of {PRONOUN/m_c/poss} friends likes r_c more.",
+			"r_c gets praised for something miniscule while m_c didn't get a word of thanks for {PRONOUN/m_c/poss} deeds."
 		]
 	},
 	{
@@ -129,7 +131,8 @@
 		"main_status_constraint": [
 			"apprentice",
 			"mediator apprentice",
-			"medicine cat apprentice"
+			"medicine cat apprentice",
+			"queen's apprentice"
 		],
 		"random_status_constraint": [
 			"kitten"
@@ -152,10 +155,31 @@
 		],
 		"main_status_constraint": [
 			"apprentice",
-			"mediator apprentice"
+			"mediator apprentice",
+			"queen's apprentice"
 		],
 		"random_status_constraint": [
 			"medicine cat apprentice"
+		]
+	},
+	{
+		"id": "jel_inc_med4",
+		"interactions": [
+			"m_c is huffing in annoyance seeing that r_c caught more prey than {PRONOUN/m_c/object}.",
+			"During a border patrol, an o_c_n patrol stopped them and chatted up a storm with r_c, but more or less ignored m_c...",
+			"m_c feels like r_c is always trying to catch more prey than {PRONOUN/m_c/object}."
+		],
+		"main_status_constraint": [
+			"warrior",
+			"apprentice",
+			"deputy",
+			"leader"
+		],
+		"random_status_constraint": [
+			"apprentice",
+			"warrior",
+			"deputy",
+			"leader"
 		]
 	},
 	{
@@ -185,6 +209,8 @@
 		"main_status_constraint": [
 			"mediator apprentice",
 			"apprentice",
+			"queen",
+			"queen's apprentice",
 			"medicine cat apprentice",
 			"medicine cat",
 			"warrior",
@@ -193,6 +219,57 @@
 		],
 		"random_status_constraint": [
 			"elder"
+		]
+	},
+	{
+		"id": "H1_jealousydecrease_med",
+		"interactions": [
+			"m_c snickers as r_c falls flat on {PRONOUN/r_c/poss} face in the middle of camp."
+		],
+		"reaction_random_cat": {
+			"dislike": "increase"
+		}
+	},
+	{
+		"id": "H1_jealousyincrease_low_queen",
+		"intensity": "low",
+		"interactions": [
+			"m_c grumbles as r_c successfully calms down a kitten after m_c attempted for ages.",
+			"m_c watches as r_c perfectly organizes the nursery, feeling jealous of r_c's skills.",
+			"m_c doesn't understand why r_c is so good with the kits. m_c doesn't think it's fair!"
+		],
+		"main_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		],
+		"random_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		],
+		"reaction_random_cat": {
+			"dislike": "increase"
+		}
+	},
+	{
+		"id": "H1_jealoustocamp_lifegen",
+		"interactions": [
+			"m_c wishes {PRONOUN/m_c/subject} can stay in the dens all dusk like r_c.",
+			"m_c thinks r_c's job must be so <i>easy</i>.",
+			"m_c scoffs as r_c tells {PRONOUN/m_c/object} about {PRONOUN/r_c/poss} day, but internally m_c is jealous of {PRONOUN/r_c/poss} simple duties.",
+			"m_c grumbles as {PRONOUN/m_c/subject} {VERB/m_c/notice/notices} r_c lazily laying across the warm ground, while m_c has to go on yet another patrol."
+		],
+		"main_status_constraint": [
+			"warrior",
+			"apprentice",
+			"medicine cat apprentice",
+			"medicine cat",
+			"deputy"
+		],
+		"random_status_constraint": [
+			"queen",
+			"queen's apprentice",
+			"mediator apprentice",
+			"mediator"
 		]
 	}
 ]

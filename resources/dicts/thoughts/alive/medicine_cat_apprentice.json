@@ -93,6 +93,9 @@
             "Rounding out rowdy kits from the medicine den",
             "Patching up a Clanmate's wounds",
             "Having a debate with r_c about {PRONOUN/r_c/poss} latest dreams"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -110,7 +113,10 @@
         "random_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "queen's apprentice"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -124,10 +130,15 @@
             "Is making sure r_c is breathing okay",
             "Is hoping to make r_c feel younger today",
             "Is learning how to relieve r_c's joint pain",
-            "Is studying the effects of aging with r_c's reluctant help"
+            "Is studying the effects of aging with r_c's reluctant help",
+            "Asks r_c if it's okay to practice injury questions on {PRONOUN/r_c/poss}",
+            "Is a bit nervous waking r_c up from {PRONOUN/r_c/poss} nap for a check-up"
         ],
         "random_status_constraint": [
             "elder"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -141,10 +152,15 @@
             "Hopes to learn from r_c's expertise",
             "Asks r_c how to tell the difference between a sprain and a dislocated joint",
             "Enjoys trekking through the territory for herbs with r_c",
-            "Is learning how to bind a pouch to carry {PRONOUN/m_c/poss} herbs by watching r_c"
+            "Is learning how to bind a pouch to carry {PRONOUN/m_c/poss} herbs by watching r_c",
+            "Asks r_c why c_n doesn't use certain plants as herbs",
+            "Wonders if r_c would ever allow {PRONOUN/m_c/object} to experiment with different plants to see if they have herb affects"
         ],
         "random_status_constraint": [
             "medicine cat"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -374,7 +390,8 @@
         "id": "charismatic_medicine_cat_apprentice",
         "thoughts": [
             "Knows the right words to calm down a crying kit to check their wounds",
-            "Is trying to bribe the StarClan cats for a clearer message of omens"
+            "Is trying to bribe the StarClan cats for a clearer message of omens",
+            "Always able to talk elders into showing up for moony check-ups"
         ],
         "main_trait_constraint": [
             "charismatic"
@@ -421,6 +438,9 @@
         ],
         "random_status_constraint": [
             "medicine cat"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -449,6 +469,9 @@
             "cold",
             "vengeful",
             "fierce"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -456,7 +479,10 @@
         "thoughts": [
             "Thinks r_c is far too soft with {PRONOUN/r_c/poss} patients",
             "Wishes r_c wasn't so soft",
-            "Has to promise r_c {PRONOUN/m_c/subject} won't gather deathberries again"
+            "Has to promise r_c {PRONOUN/m_c/subject} won't gather deathberries again",
+            "Can't fathom being as patient as r_c",
+            "Lets r_c deal with all the emotional cats",
+            "Prefers to shove all the kittens r_c's way so {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} have to treat them"
         ],
         "random_trait_constraint": [
             "thoughtful",
@@ -555,7 +581,8 @@
         "random_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "medicine cat apprentice",
+            "queen's apprentice"
         ],
         "random_living_status": [
             "starclan"

@@ -97,10 +97,21 @@
             "Insists a hunting patrol needs to only bring back mice",
             "Goes missing and comes back smelling like garlic",
             "Is making odd noises",
-            "Giggles at the thought of a bird trying to swim"
+            "Giggles at the thought of a bird trying to swim",
+            "Rants that bugs are more afraid of cats than cats are afraid of bugs",
+            "Intentionally annoys r_c with random facts that are totally not made up",
+            "Is surprised {PRONOUN/m_c/poss} outlandish ideas actually work"
         ],
         "main_trait_constraint": [
             "strange"
+        ],
+        "random_status_constraint": [
+            "apprentice",
+            "leader",
+            "warrior"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -458,17 +469,6 @@
         ]
     },
     {
-        "id": "nervous_deputy",
-        "thoughts": [
-            "Is fretting over a recent increase in fox sightings near the camp",
-            "Feels a twinge of worry about an approaching storm",
-            "Is overthinking a recent encounter with a rival Clan"
-        ],
-        "main_trait_constraint": [
-            "nervous"
-        ]
-    },
-    {
         "id": "playful_deputy",
         "thoughts": [
             "Is inventing a fun game to make patrol assignments more engaging",
@@ -517,19 +517,6 @@
         ]
     },
     {
-        "id": "strange_deputy",
-        "thoughts": [
-            "Accidentally assigns the same cat to three patrols",
-            "Insists a hunting patrol needs to only bring back mice",
-            "Goes missing and comes back smelling like garlic",
-            "Is making odd noises",
-            "Giggles at the thought of a bird trying to swim"
-        ],
-        "main_trait_constraint": [
-            "strange"
-        ]
-    },
-    {
         "id": "wise_deputy",
         "thoughts": [
             "Is reflecting on a past lesson to make a crucial decision",
@@ -543,7 +530,8 @@
     {
         "id": "wise_deputy_to_apprentice",
         "thoughts": [
-            "Is sharing words of wisdom with a confused apprentice"
+            "Is sharing words of wisdom with a confused apprentice",
+            "Shares an embarrassing story from {PRONOUN/m_c/poss} youth to make r_c feel better about {PRONOUN/r_c/poss} mistake"
         ],
         "main_trait_constraint": [
             "wise"
@@ -626,18 +614,6 @@
         ]
     },
     {
-        "id": "fighter_deputy",
-        "thoughts": [
-            "Is instructing a group of warriors in advanced combat techniques",
-            "Feels a sense of protectiveness towards the Clan, ready to defend them at any moment",
-            "Is assessing the Clan's physical strength and readiness for potential threats",
-            "Organizes a mock battle to keep the Clan's skills sharp"
-        ],
-        "main_skill_constraint": [
-            "FIGHTER,1"
-        ]
-    },
-    {
         "id": "healer_deputy",
         "thoughts": [
             "Helps a Clanmate get a thorn out of their paw while out on patrol",
@@ -664,17 +640,6 @@
         ]
     },
     {
-        "id": "hunter_deputy",
-        "thoughts": [
-            "Makes sure no area of the territory is overhunted",
-            "Feels a rush of anticipation at the prospect of a successful hunt",
-            "Is out surveying the territory for the best hunting spots to send patrols tomorrow"
-        ],
-        "main_skill_constraint": [
-            "HUNTER,1"
-        ]
-    },
-    {
         "id": "story_deputy",
         "thoughts": [
             "Is recalling an old story that might inspire the Clan in tough times",
@@ -695,32 +660,6 @@
         ],
         "main_skill_constraint": [
             "STORY,1"
-        ],
-        "random_status_constraint": [
-            "apprentice"
-        ],
-        "random_living_status": [
-            "living"
-        ]
-    },
-    {
-        "id": "teacher_deputy",
-        "thoughts": [
-            "Is devising an effective teaching strategy for new skills",
-            "Encourages the older cats to share their skills and techniques with the younger generations"
-        ],
-        "main_skill_constraint": [
-            "TEACHER,1"
-        ]
-    },
-    {
-        "id": "teacher_deputy_to_apprentice",
-        "thoughts": [
-            "Feels satisfaction watching an apprentice master a lesson",
-            "Guides an apprentice through {PRONOUN/m_c/poss} hunting assessment"
-        ],
-        "main_skill_constraint": [
-            "TEACHER,1"
         ],
         "random_status_constraint": [
             "apprentice"
