@@ -5820,5 +5820,81 @@
             "[You bounce up to t_c, jabbering about everything you've noticed today: a cool bird, and a weird smell, and r_w1 making a funny face when talking to r_w2...]",
             "[You look away from t_c for just a moment, but when you look back, {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} slipped away.]"
         ]
-    ]
+    ],
+    "unlawful_theypregGuy2": [
+        [
+            "unlawful",
+            "they_pregnant",
+            "you_kitten"
+        ],
+        [
+            "[t_c looks lovingly at {PRONOUN/t_c/poss} belly. {PRONOUN/t_c/subject/CAP}  {VERB/t_c/notice/notices} you and {VERB/t_c/smile/smiles}.]",
+            "I think they'll be cuter than you.",
+            "[t_c cackles when y_p's head snaps up.]"
+        ]
+    ],
+    "neurotic_theypregnant_SQ3": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "they_pregnant",
+            "you_kitten",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What do you think about having new kits in the nursery with you soon?",
+            "No, I don't know how many there'll be, or what they'll be like. I don't know much of anything, really...",
+            "But I hope you'll be good friends! Or at least, I really hope you'll get along."
+        ]
+    ],
+    "neurotic_choice_starkit_SQ36": {
+        "tags": [
+            "they_neurotic",
+            "you_kitten",
+            "they_sc",
+            "they_adult"
+        ],
+        "intro": [
+            "Ohh... you have to choose what kind of apprentice you want to be soon, right? I almost forgot about how stressful that was.",
+            "Um... I don't know if anyone's implied this, but you know you don't have to be a medicine cat just because you can talk to us, right?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I know!",
+                "next_scene": "know"
+            },
+            "choice2": {
+                "text": "I feel like I should.",
+                "next_scene": "should"
+            },
+            "choice3": {
+                "text": "But I want to be!",
+                "next_scene": "want"
+            },
+            "choice4": {
+                "text": "Huh?",
+                "next_scene": "huh"
+            }
+        },
+        "know": [
+            "[Of course you know! You can be whatever you want to be, and either way your StarClan friends will guide your steps.]",
+            "Oh, good! I just wanted to say... Because if I were you, I'd be thinking...",
+            "Ah, never mind. You're doing great, y_c."
+        ],
+        "should": [
+            "[Talking to StarClan is part of a medicine cat's job, right? So... so you'd be good at being a medicine cat, and doesn't that mean you're supposed to be one?]",
+            "[Puzzling through all that stuff makes you kind of dizzy.]",
+            "[t_c tries to protest, but {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} unsure of what exactly to say. Maybe thinking about it makes {PRONOUN/t_c/object} dizzy, too.]"
+        ],
+        "want": [
+            "[You know that, but you want to be a medicine cat! And if your connection to StarClan can help with that, then that's even better.]",
+            "Oh! Okay, in that case... good! You'll make a great medicine cat."
+        ],
+        "huh": [
+            "[Choices? Implied stuff? Being a medicine cat because you can talk to cats like t_c? You're not really sure what t_c is trying to say.]",
+            "Ah... never mind, then. Don't think about it too much!"
+        ]
+    }
 }

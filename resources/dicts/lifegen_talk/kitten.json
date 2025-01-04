@@ -7785,5 +7785,21 @@
             "No one else does it, so sometimes I don't realize they're coming inside, and then they scare me? But... um... you never scare me.",
             "[t_c pauses and you think {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} about to continue, but then {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} without looking at you and {VERB/t_c/scurry/scurries} back to the nursery.]"
         ]
+    ],
+    "neurotic_skillsong_SQ1": [
+        [
+            "they_neurotic",
+            "they_song",
+            "they_kitten",
+            "you_adult",
+            "min_platonic_15",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I wanna make a new song, but r_k_upstanding says you can't just <i>make up</i> new ones.",
+            "Is that true? I don't want to do anything wrong...",
+            "[You tell t_c that of course {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} allowed to make up new songs, and {PRONOUN/t_c/subject} {VERB/t_c/brighten/brightens}.]"
+        ]
     ]
 }

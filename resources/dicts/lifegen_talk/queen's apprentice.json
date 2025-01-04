@@ -1163,5 +1163,69 @@
             "O-of course, you could give it to them, too! I don't mean to overstep.",
             "[There's not much that can go terribly wrong with honey. Since t_c seems to know {PRONOUN/t_c/poss} way around medicine despite not being a medicine cat, you give {PRONOUN/t_c/object} a dollop of honey on a stick and send {PRONOUN/t_c/object} on {PRONOUN/t_c/poss} way.]"
         ]
+    ],
+    "assertive_elder2": [
+        [
+            "you_warrior",
+            "you_apprentice",
+            "they_medicine_cat",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "they_medicine_cat_apprentice",
+            "they_queen",
+            "they_queen's_apprentice",
+            "assertive",
+            "upstanding",
+            "stable",
+            "neutral",
+            "no_kit"
+        ],
+        [
+            "*Sigh* Can't you see I have important things to do, y_c?",
+            "Go back to catching mice, or whatever it is you warriors do."
+        ]
+    ],
+    "brooding_queen_AJ": [
+        [
+            "no_kit",
+            "brooding",
+            "they_queen",
+            "they_queen's_apprentice"
+        ],
+        [
+            "[t_c is huddled in the darkest, most secluded corner of camp, seemingly trying to make {PRONOUN/t_c/self} as small as possible.]",
+            "[You go to check on {PRONOUN/t_c/object}, hoping {PRONOUN/t_c/subject} {VERB/t_c/'re/'s} not in the middle of another brooding session, when, out of nowhere, r_k rushes up to {PRONOUN/t_c/object} and prods them with a paw.]",
+            "[t_c rises to {PRONOUN/t_c/poss} paws and smiles softly at r_k, then covers {PRONOUN/t_c/poss} eyes as r_k rushes to hide.]",
+            "[Seems they were just in the middle of a game of hide and seek!]"
+        ]
+    ],
+    "upstanding_both_scE4": [
+        [
+            "upstanding",
+            "you_sc",
+            "you_kitten",
+            "you_blind",
+            "min_you_deadfor_1",
+            "they_sc",
+            "they_queen",
+            "they_queen's_apprentice",
+            "max_they_deadfor_15"
+        ],
+        [
+            "y_c! How many times have I told you not to leave the hollow unless you're with another-",
+            "[t_c pauses and tilts {PRONOUN/t_c/poss} head as {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} the stars shimmering in your fur.]",
+            "... Ahem. Sorry, force of habit."
+        ]
+    ],
+    "about_unlawful_SQ3": [
+        [
+            "no_kit",
+            "they_queen",
+            "they_queen's_apprentice"
+        ],
+        [
+            "r_k_unlawful is such a troublemaker. I swear to StarClan, I look away for one moment, and {PRONOUN/r_k_unlawful/subject}{VERB/r_k_unlawful/'ve/'s} already shredded my nest or snuck into the medicine den.",
+            "Whoever becomes {PRONOUN/r_k_unlawful/poss} mentor will have {PRONOUN/r_k_unlawful/poss} paws full!"
+        ]
     ]
 }

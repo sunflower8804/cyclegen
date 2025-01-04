@@ -1745,5 +1745,49 @@
             "Uh... I don't know, little one. I can't think of any good stories right now, and I don't want you to be disappointed.",
             "How about you ask r_e? {PRONOUN/r_e/subject/CAP} had a good one yesterday."
         ]
+    ],
+    "sc_living_10": [
+        [
+            "they_sc",
+            "you_elder",
+            "they_elder"
+        ],
+        [
+            "[t_c's eyes follow a group of apprentices with a chuckle.]",
+            "Apprentices these days seem to have more energy than sense."
+        ]
+    ],
+    "neurotic_skilltreasure_SQ2~1": [
+        [
+            "they_neurotic",
+            "they_treasure",
+            "they_elder",
+            "they_adult",
+            "you_any",
+            "min_platonic_20",
+            "they_injured",
+            "you_blind"
+        ],
+        [
+            "Hey, can I make a silly request? It's not super important, but if you have time...",
+            "You know how I keep a collection of trinkets in my nest? I found a cool sparkly rock right before I got hurt, and I saw dislike_r_w eyeing it.",
+            "I feel bad saying this, but I don't really trust {PRONOUN/dislike_r_w/object} not to take it while I'm here. Could you get it from my nest and bring it over?"
+        ]
+    ],
+    "about_stable_SQ2": [
+        [
+            "they_neurotic",
+            "they_introspective",
+            "they_elder",
+            "no_kit",
+            "min_platonic_25",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "plike_r_w_stable has been stopping by a lot recently.",
+            "{PRONOUN/plike_r_w_stable/subject/CAP} always {VERB/plike_r_w_stable/ask/asks} if I need anything, and then {VERB/plike_r_w_stable/stay/stays} to chat for at least an hour. {PRONOUN/plike_r_w_stable/subject/CAP} {VERB/plike_r_w_stable/say/says} {PRONOUN/plike_r_w_stable/subject} {VERB/plike_r_w_stable/want/wants} to make sure I stay informed of Clan business.",
+            "It's nice to still feel included. I hope {PRONOUN/plike_r_w_stable/subject}{VERB/plike_r_w_stable/'re/'s} visiting because {PRONOUN/plike_r_w_stable/subject} {VERB/plike_r_w_stable/want/wants} to, and not because {PRONOUN/plike_r_w_stable/subject} {VERB/plike_r_w_stable/feel/feels} obligated."
+        ]
     ]
 }
