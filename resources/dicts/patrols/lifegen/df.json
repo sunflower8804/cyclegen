@@ -3409,7 +3409,7 @@
             "chance_of_success": 60,
             "success_outcomes": [
                 {
-                    "text": "There are a few murmurs as you push your way through the underbrush, but they're silenced after df_m_n hisses at everyone to resume training. You pad over to your usual sparring partner and begin a match. After the session is over, df_m_n nods at you, a hint of respect in their eyes.",
+                    "text": "There are a few murmurs as you push your way through the underbrush, but they're silenced after df_m_n hisses at everyone to resume training. You pad over to your usual sparring partner and begin a match. After the session is over, df_m_n nods at you, a hint of respect in {PRONOUN/df_m_n/poss} eyes.",
                     "exp": 10,
                     "weight": 20
                 },
