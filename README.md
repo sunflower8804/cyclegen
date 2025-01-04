@@ -1,6 +1,6 @@
 # clangen
 
-### [Discord Server](https://discord.gg/clangen) || [Official website](https://clangen.io) || [Itch.io Page](https://sablesteel.itch.io/clan-gen-fan-edit) 
+### [Discord Server](https://discord.gg/lifegen) || [Official website](https://mods.clangen.io/LifeGen/download) || [ClanGen Itch.io Page](https://sablesteel.itch.io/clan-gen-fan-edit) 
 
 ## Description
 Fan-edit of the warrior cat clangen game built using Python and Pygame.
@@ -12,13 +12,13 @@ Fan-edit creator: SableSteel, and many others
 
 ## Downloads
 ### Stable
-Stable versions can be downloaded directly from the [official ClanGen website](https://clangen.io/download)
+Stable versions can be downloaded directly from the [official ClanGen website](https://mods.clangen.io/LifeGen/download)
 
 ### Development
 **Note**: Development versions are automatic snapshots of current development efforts. They are _not_ stable, can crash and even corrupt your save files.
 Additionally, we do not provide tech support for development versions.
 
-Download at your own risk here: [ClanGen development download](https://clangen.io/download-development)
+Download at your own risk here: [LifeGen development download](https://mods.clangen.io/LifeGen/download-development)
 
 ## Running from source
 ClanGen uses poetry to manage virtual environments. Therefore it is required to install the dependencies and run the game from source without manual tweaking.

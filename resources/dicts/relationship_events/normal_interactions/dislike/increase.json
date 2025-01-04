@@ -178,6 +178,8 @@
 			"apprentice",
 			"warrior",
 			"mediator apprentice",
+			"queen",
+			"queen's apprentice",
 			"mediator",
 			"medicine cat apprentice",
 			"medicine cat",
@@ -445,7 +447,37 @@
 		"random_status_constraint": [
 			"elder",
 			"mediator apprentice",
-			"medicine cat apprentice"
+			"medicine cat apprentice",
+			"queen's apprentice"
+		]
+	},
+	{
+		"id": "H1_dislikeincrease_low_kitten",
+		"intensity": "low",
+		"interactions": [
+			"m_c wails that r_c isn't {PRONOUN/m_c/poss} favorite queen anymore after being scolded."
+		],
+		"main_status_constraint": [
+			"kitten"
+		],
+		"random_status_constraint": [
+			"queen"
+		],
+		"reaction_random_cat": {
+			"dislike": "increase"
+		}
+	},
+	{
+		"id": "queens_app_h",
+		"intensity": "low",
+		"interactions": [
+			"m_c thinks r_c is boring.",
+			"m_c feels like r_c needs to loosen up a little.",
+			"r_c is a little too tense as m_c approaches the nursery.",
+			"r_c complains a little too much about being a queen for m_c's tastes."
+		],
+		"random_status_constraint": [
+			"queen's apprentice"
 		]
 	}
 ]

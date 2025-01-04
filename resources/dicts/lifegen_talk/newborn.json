@@ -195,7 +195,7 @@
         ],
         [
             "[You walk into the nursery to check on the kittens.]",
-            "[r_q smiles and gestures to a newborn tucked into {PRONOUN/r_q/poss} side, gently snoring]",
+            "[r_q smiles and gestures to a newborn tucked into {PRONOUN/r_q/poss} side, gently snoring.]",
             "...zzzz...",
             "[You politely smile at the queen and leave.]"
         ]
@@ -826,7 +826,7 @@
             "you_deaf"
         ],
         [
-            "[t_c ... T_c ... T_c ...]",
+            "[t_c ... t_c ... t_c ...]",
             "[You run your beautiful new kit's perfect name over and over through your mind, certain you'll never ever forget it.]"
         ]
     ],

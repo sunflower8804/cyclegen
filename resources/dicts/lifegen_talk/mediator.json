@@ -1375,5 +1375,45 @@
             "O-of course, you could give it to them, too! I don't mean to overstep.",
             "[There's not much that can go terribly wrong with honey. Since t_c seems to know {PRONOUN/t_c/poss} way around medicine despite not being a medicine cat, you give {PRONOUN/t_c/object} a dollop of honey on a stick and send {PRONOUN/t_c/object} on {PRONOUN/t_c/poss} way.]"
         ]
+    ],
+    "assertive_elder": [
+        [
+            "you_warrior",
+            "you_apprentice",
+            "they_medicine_cat",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "they_medicine_cat_apprentice",
+            "they_queen",
+            "they_queen's_apprentice",
+            "assertive",
+            "upstanding",
+            "stable",
+            "neutral",
+            "no_kit"
+        ],
+        [
+            "*Sigh* Can't you see I have important things to do, y_c?",
+            "Go back to catching mice, or whatever it is you warriors do."
+        ]
+    ],
+    "brooding_mediator_AJ": [
+        [
+            "no_kit",
+            "brooding",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You finish a rant to t_c, the mediator, about how you annoyed you are at something that r_c did earlier.]",
+            "... Okay. Have you tried talking to {PRONOUN/r_c/object} about it?",
+            "[... You concede that you have yet to.]",
+            "*Sigh*. Useless. Everycat in this Clan is so terrified of confrontation all of a sudden.",
+            "r_c is never going to change if {PRONOUN/r_c/subject}{VERB/r_c/don't/doesn't} know how you feel, y_c. You need to be direct. No cat has ever been killed by some brutal honesty.",
+            "If you spend your whole life worrying about trodding on the toes of others, you'll never get anything done.",
+            "Now, do you want me to help you work out what you'll say?"
+        ]
     ]
 }

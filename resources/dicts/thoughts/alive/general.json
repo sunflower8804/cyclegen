@@ -525,40 +525,6 @@
         ]
     },
     {
-        "id": "play_pretend_gen",
-        "thoughts": [
-            "Has r_c very engaged in a very, very tall tale",
-            "Is proudly watching r_c plan how to hunt down a creature {PRONOUN/m_c/subject} made up"
-        ],
-        "main_trait_constraint": [
-            "adventurous",
-            "charismatic",
-            "childish",
-            "cunning",
-            "playful"
-        ],
-        "main_status_constraint": [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "warrior",
-            "medicine cat",
-            "mediator",
-            "deputy",
-            "leader",
-            "elder"
-        ],
-        "random_status_constraint": [
-            "kitten",
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice"
-        ],
-        "random_living_status": [
-            "living"
-        ]
-    },
-    {
         "id": "ambitious_gen",
         "thoughts": [
             "Is being admired by many Clanmates for {PRONOUN/m_c/poss} recent feats",
@@ -977,6 +943,7 @@
     },
     {
         "id": "silly_working_cat",
+        "not_working": false,
         "thoughts": [
             "Sticks {PRONOUN/m_c/poss} tongue out at a mouse that escaped {PRONOUN/m_c/poss} pounce",
             "Is playing with some fresh-kill {PRONOUN/m_c/subject} just caught",
@@ -1070,7 +1037,8 @@
             "mediator",
             "deputy",
             "leader",
-            "elder"],
+            "elder"
+        ],
         "random_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
@@ -1137,6 +1105,8 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
+            "queen's apprentice",
+            "queen",
             "warrior",
             "medicine cat",
             "mediator",
@@ -1267,6 +1237,7 @@
     },
     {
         "id": "confident_working_cat",
+        "not_working": false,
         "thoughts": [
             "Is building up a fellow Clanmate's confidence in battle",
             "Boasts about how much fresh-kill {PRONOUN/m_c/subject} {VERB/m_c/intend/intends} to bring back to camp",
@@ -1499,6 +1470,7 @@
     },
     {
         "id": "insecure_working_cat",
+        "not_working": false,
         "thoughts": [
             "Almost died of embarrassment after a recent fumble on a patrol",
             "Is busy sharpening {PRONOUN/m_c/poss} claws to look stronger"
@@ -1569,6 +1541,7 @@
     },
     {
         "id": "lonesome_working_cat",
+        "not_working": false,
         "thoughts": [
             "Went out to hunt by {PRONOUN/m_c/self}",
             "Is feeling a bit anxious after having been around so many cats at the last Gathering"
@@ -1633,7 +1606,8 @@
         "random_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
-            "mediator apprentice"
+            "mediator apprentice",
+            "queen's apprentice"
         ],
         "main_trait_constraint": [
             "loving"
@@ -1684,6 +1658,8 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
+            "queen",
+            "queen's apprentice",
             "warrior",
             "medicine cat",
             "mediator",
@@ -1751,6 +1727,7 @@
     },
     {
         "id": "nervous_working_cat",
+        "not_working": false,
         "thoughts": [
             "Was startled by a shrew while out on patrol",
             "Was startled by a fluttering bird while out on patrol",
@@ -1801,6 +1778,7 @@
     },
     {
         "id": "playful_working_cat",
+        "not_working": false,
         "thoughts": [
             "Pretends the mouse {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} chasing is a bird, and {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a hawk",
             "Doesn't get any work done all morning, too busy climbing trees"
@@ -2003,6 +1981,7 @@
     },
     {
         "id": "shameless_working_cat",
+        "not_working": false,
         "thoughts": [
             "Brags about how great a hunter {PRONOUN/m_c/subject} {VERB/m_c/are/is}",
             "Brags about {PRONOUN/m_c/poss} latest exploits to any cat that will listen"
@@ -2197,6 +2176,7 @@
             "mediator",
             "deputy",
             "leader",
+            "queen",
             "elder"
         ],
         "main_trait_constraint": [
@@ -2217,6 +2197,7 @@
             "mediator",
             "deputy",
             "leader",
+            "queen",
             "elder"
         ],
         "main_trait_constraint": [
@@ -2305,12 +2286,14 @@
             "mediator",
             "deputy",
             "leader",
+            "queen",
             "elder"
         ],
         "random_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
-            "mediator apprentice"
+            "mediator apprentice",
+            "queen's apprentice"
         ],
         "main_trait_constraint": [
             "troublesome"
@@ -2391,7 +2374,8 @@
         "random_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
-            "mediator apprentice"
+            "mediator apprentice",
+            "queen's apprentice"
         ],
         "main_trait_constraint": [
             "wise"
@@ -2409,6 +2393,8 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
+            "queen",
+            "queen's apprentice",
             "warrior",
             "medicine cat",
             "mediator",
@@ -2452,6 +2438,8 @@
         "main_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
+            "queen",
+            "queen's apprentice",
             "warrior",
             "medicine cat",
             "deputy",
@@ -2502,7 +2490,8 @@
         ],
         "main_skill_constraint": [
             "STAR,2",
-            "DARK,2"
+            "DARK,2",
+            "GHOST,2"
         ],
         "random_status_constraint": [
             "kitten"
@@ -2551,7 +2540,10 @@
         "thoughts": [
             "Is urging r_c to rest",
             "Brings r_c some prey",
-            "Offers to help r_c with {PRONOUN/r_c/poss} patients"
+            "Offers to help r_c with {PRONOUN/r_c/poss} patients",
+            "Advices r_c to take a break once in a while",
+            "Notices r_c is working harder than usual",
+            "Is worried about r_c's health even though {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} perfectly capable of taking care of {PRONOUN/r_c/self}"
         ],
         "random_status_constraint": [
             "medicine cat"
@@ -2572,7 +2564,11 @@
             "Wants to work hard to impress r_c",
             "Had a pointless, petty argument with r_c",
             "Startles r_c to get back at {PRONOUN/r_c/object} for something or other",
-            "Casually insults r_c in passing"
+            "Casually insults r_c in passing",
+            "Steals something from r_c just to drive {PRONOUN/r_c/object} mad",
+            "Gets into a petty argument with r_c about something that happened in the past",
+            "Playfully pounces on r_c to scare {PRONOUN/r_c/object}",
+            "Pretends to fight r_c out of boredom"
         ],
         "random_living_status": [
             "living"
@@ -2594,6 +2590,8 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
+            "queen",
+            "queen's apprentice",
             "warrior",
             "medicine cat",
             "mediator",
@@ -2605,6 +2603,8 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
+            "queen's apprentice",
+            "queen",
             "warrior",
             "medicine cat",
             "mediator",
@@ -2657,6 +2657,8 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
+            "queen",
+            "queen's apprentice",
             "warrior",
             "medicine cat",
             "mediator",
@@ -2727,6 +2729,8 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
+            "queen",
+            "queen's apprentice",
             "warrior",
             "medicine cat",
             "mediator",
@@ -2753,6 +2757,8 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
+            "queen",
+            "queen's apprentice",
             "warrior",
             "medicine cat",
             "mediator",
@@ -2773,16 +2779,6 @@
             "Wants to work hard to show r_c {PRONOUN/r_c/subject} made the right choice taking {PRONOUN/m_c/object} in",
             "Is nervous about some of r_c's choices recently"
         ],
-        "main_status_constraint": [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "warrior",
-            "medicine cat",
-            "mediator",
-            "deputy",
-            "elder"
-        ],
         "main_backstory_constraint": [
             "refugee1",
             "refugee4"
@@ -2801,17 +2797,6 @@
             "Is thankful for the safety of the camp",
             "Woke up in a panic",
             "Has been on edge, watching the camp entrance all day"
-        ],
-        "main_status_constraint": [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "warrior",
-            "medicine cat",
-            "mediator",
-            "deputy",
-            "leader",
-            "elder"
         ],
         "main_backstory_constraint": [
             "refugee5",
@@ -2837,6 +2822,8 @@
             "apprentice",
             "medicine cat apprentice",
             "mediator apprentice",
+            "queen",
+            "queen's apprentice",
             "warrior",
             "medicine cat",
             "mediator",
@@ -2859,16 +2846,6 @@
         "id": "gen_tragedy_survivor_to_alive_leader",
         "thoughts": [
             "Is wondering how well the Clan would fare in a disaster under r_c's leadership"
-        ],
-        "main_status_constraint": [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice",
-            "warrior",
-            "medicine cat",
-            "mediator",
-            "deputy",
-            "elder"
         ],
         "main_backstory_constraint": [
             "refugee5",
@@ -3083,6 +3060,7 @@
     },
     {
         "id": "working_cat",
+        "not_working": false,
         "thoughts": [
             "Guards camp",
             "Sharpens {PRONOUN/m_c/poss} claws",
@@ -3112,6 +3090,7 @@
     },
     {
         "id": "working_cat_to_leadership",
+        "not_working": false,
         "thoughts": [
             "Wonders if {PRONOUN/m_c/subject} could handle r_c's position",
             "Complains about being sent on dawn patrol",
@@ -3134,6 +3113,7 @@
     },
     {
         "id": "working_cat_to_deputy",
+        "not_working": false,
         "thoughts": [
             "Hopes the deputy won't assign {PRONOUN/m_c/object} to the dawn patrol tomorrow",
             "Hopes the deputy assigns {PRONOUN/m_c/object} to the next patrol",
@@ -3152,6 +3132,7 @@
     },
     {
         "id": "working_adult_to_alive_med_cat",
+        "not_working": false,
         "thoughts": [
             "Recounts the Gathering for r_c and {PRONOUN/r_c/poss} patients",
             "Brought r_c a berry to identify",
@@ -3171,6 +3152,7 @@
     },
     {
         "id": "working_adult_to_alive_apprentice",
+        "not_working": false,
         "thoughts": [
             "Lectures r_c on the Warrior Code",
             "Is on a walk in the territory with r_c",
@@ -3199,8 +3181,11 @@
     },
     {
         "id": "working_cat_newleaf",
+        "not_working": false,
         "thoughts": [
-            "Is looking forward to finding more prey as the snow melts"
+            "Is looking forward to finding more prey as the snow melts",
+            "Is not looking forward to the mud that follows leaf-bare",
+            "Fascinated by the plants regrowth as it gets warmer"
         ],
         "season": [
             "Newleaf"
@@ -3214,6 +3199,7 @@
     },
     {
         "id": "working_cat_leaffall",
+        "not_working": false,
         "thoughts": [
             "Worries about the lack of prey leaf-bare will bring",
             "Cleans the clearing of fallen leaves",
@@ -3347,17 +3333,23 @@
         ]
     },
     {
-        "id": "apprentice_alive_med_cat",
+        "id": "apprentices_to_alive_leader",
         "thoughts": [
-            "Is at the medicine cat den after a small injury"
+            "Wants to make r_c proud",
+            "Wants r_c to notice {PRONOUN/m_c/object}",
+            "Pays close attention to r_c's announcements"
         ],
         "main_status_constraint": [
             "apprentice",
+            "medicine cat apprentice",
             "mediator apprentice",
             "queen's apprentice"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "leader"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -3370,8 +3362,7 @@
         "main_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
-            "mediator apprentice",
-            "queen's apprentice"
+            "mediator apprentice"
         ],
         "random_status_constraint": [
             "leader"
@@ -3485,7 +3476,10 @@
             "Starts a fight with another apprentice",
             "Unnerves {PRONOUN/m_c/poss} mentor with {PRONOUN/m_c/poss} intensity during battle training",
             "Tries to sneak out of camp to fight a badger but is caught by {PRONOUN/m_c/poss} mentor",
-            "Tries to sneak out of camp to fight a fox but is caught by {PRONOUN/m_c/poss} mentor"
+            "Tries to sneak out of camp to fight a fox but is caught by {PRONOUN/m_c/poss} mentor",
+            "Hides a herb {PRONOUN/m_c/subject} accidentally tore with {PRONOUN/m_c/poss} over-sharpened claws",
+            "Nicks {PRONOUN/m_c/self} with {PRONOUN/m_c/poss} own claws on accident",
+            "Winces as {PRONOUN/m_c/subject} accidentally tore {PRONOUN/m_c/poss} favorite toy by playing too roughly"
         ],
         "main_status_constraint": [
             "apprentice",
@@ -3501,7 +3495,9 @@
         "id": "bold_apprentices",
         "thoughts": [
             "Winked cheekily at another apprentice",
-            "Criticizes {PRONOUN/m_c/poss} mentor"
+            "Criticizes {PRONOUN/m_c/poss} mentor",
+            "Tells another apprentice that they're doing their hunting pounce wrong",
+            "Prides {PRONOUN/m_c/self} with {PRONOUN/m_c/poss} brutal honestly"
         ],
         "main_status_constraint": [
             "apprentice",
@@ -3516,7 +3512,9 @@
     {
         "id": "bold_apprentices_to_leader",
         "thoughts": [
-            "Tells r_c {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} doing something wrong"
+            "Tells r_c {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} doing something wrong",
+            "Asks r_c if {PRONOUN/r_c/subject} even {VERB/r_c/know/knows} what {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} doing",
+            "Calls r_c old and wrinkly and rusty"
         ],
         "main_status_constraint": [
             "apprentice",
@@ -3591,7 +3589,8 @@
         "random_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
-            "mediator apprentice"
+            "mediator apprentice",
+            "queen's apprentice"
         ],
         "main_trait_constraint": [
             "charismatic"
@@ -3622,7 +3621,9 @@
         "id": "cold_apprentices",
         "thoughts": [
             "Is hoping {PRONOUN/m_c/poss} name will end in -claw",
-            "Rudely walked away from a conversation that bored {PRONOUN/m_c/object}"
+            "Rudely walked away from a conversation that bored {PRONOUN/m_c/object}",
+            "Gives Clanmates the cold shoulder for no particular reason",
+            "Boldly just tells Clanmates that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} like them"
         ],
         "main_status_constraint": [
             "apprentice",
@@ -3769,26 +3770,6 @@
             "medicine cat apprentice",
             "mediator apprentice",
             "queen's apprentice"
-        ]
-    },
-    {
-        "id": "loving_apprentice_to_apprentice",
-        "thoughts": [
-            "Is listening to another apprentice's troubles sympathetically"
-        ],
-        "main_status_constraint": [
-            "apprentice",
-            "mediator apprentice",
-            "medicine cat apprentice",
-            "queen's apprentice"
-        ],
-        "main_trait_constraint": [
-            "loving"
-        ],
-        "random_status_constraint": [
-            "apprentice",
-            "medicine cat apprentice",
-            "mediator apprentice"
         ]
     },
     {
@@ -3956,7 +3937,8 @@
         "id": "strict_apprentices",
         "thoughts": [
             "Is busy chastising fellow apprentices... but no one is sure what for",
-            "Is participating in a rather rigorous training session"
+            "Is participating in a rather rigorous training session",
+            "Is shocked when another apprentice calls {PRONOUN/m_c/object} bossy"
         ],
         "main_status_constraint": [
             "apprentice",
@@ -4122,7 +4104,9 @@
     {
         "id": "apprentices_to_dead_apprentices",
         "thoughts": [
-            "Is wondering if r_c would have been {PRONOUN/m_c/poss} friend"
+            "Is wondering if r_c would have been {PRONOUN/m_c/poss} friend",
+            "Wonders what r_c's warrior name could have been",
+            "Eats r_c's favorite prey in memory of r_c"
         ],
         "main_status_constraint": [
             "apprentice",
@@ -4388,7 +4372,9 @@
             "Is missing {PRONOUN/m_c/poss} late leader r_c",
             "Is wondering if r_c is proud of {PRONOUN/m_c/object}",
             "Is wondering if r_c approves from StarClan",
-            "Is hoping r_c is watching over {PRONOUN/m_c/object}"
+            "Is hoping r_c is watching over {PRONOUN/m_c/object}",
+            "Misses r_c's talks",
+            "Misses r_c's advice"
         ],
         "random_status_constraint": [
             "leader"
@@ -4402,7 +4388,8 @@
         "thoughts": [
             "Is thinking about r_c",
             "Is trying to learn from r_c's legacy",
-            "Is sad {PRONOUN/m_c/subject} couldn't spend more time with r_c"
+            "Is sad {PRONOUN/m_c/subject} couldn't spend more time with r_c",
+            "Tries {PRONOUN/m_c/poss} best to remember r_c's teachings on the best areas to hunt"
         ],
         "random_status_constraint": [
             "deputy"
@@ -4431,7 +4418,9 @@
     {
         "id": "gen_to_dead_mediator",
         "thoughts": [
-            "Is wondering what r_c would think of current conflicts in the Clan"
+            "Is wondering what r_c would think of current conflicts in the Clan",
+            "Wonders how r_c would have avoided conflict differently",
+            "Giggles at the thought of r_c yelling at c_n from StarClan"
         ],
         "random_status_constraint": [
             "mediator"
@@ -4444,7 +4433,10 @@
         "id": "dead_littermate",
         "thoughts": [
             "Never had to imagine life without {PRONOUN/m_c/poss} sibling...",
-            "Is remembering growing up with r_c"
+            "Is remembering growing up with r_c",
+            "Feels that {PRONOUN/m_c/poss} life feels empty without r_c's annoying presence",
+            "Wonders if r_c ever tries to make funny faces at {PRONOUN/m_c/object} from the afterlife",
+            "Hears r_c's voice sometimes and is always disappointed that r_c is never there"
         ],
         "relationship_constraint":[
             "littermates"
@@ -4564,7 +4556,8 @@
         "random_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
-            "mediator apprentice"
+            "mediator apprentice",
+            "queen's apprentice"
         ],
         "random_living_status": [
             "living"
@@ -4578,14 +4571,14 @@
             "Listened to birdsong all morning",
             "Just heard a frog croaking in camp!",
             "Didn't know {PRONOUN/m_c/subject} {VERB/m_c/were/was} staring blankly at r_c",
-            "Knows r_c is nearby from the sound of {PRONOUN/r_c/poss} pawsteps",
+            "Knows r_c is nearby from the sound of {PRONOUN/r_c/poss} paw steps",
             "Jumps as {PRONOUN/m_c/subject} {VERB/m_c/hit/hits} a large rock with {PRONOUN/m_c/poss} paw",
             "Is annoyed that a Clanmate keeps pitying {PRONOUN/m_c/object}",
             "Confused {PRONOUN/m_c/poss} Clanmates when {PRONOUN/m_c/subject} said it was a beautiful day",
             "Wonders if {PRONOUN/m_c/poss} mental image of r_c matches real life",
             "Listens intently as r_c tries to explain colors to {PRONOUN/m_c/object}",
             "Listens intently as r_c tries to explain things to {PRONOUN/m_c/object}",
-            "Correctly recognizes r_c from the thumps of {PRONOUN/r_c/poss} pawsteps alone",
+            "Correctly recognizes r_c from the thumps of {PRONOUN/r_c/poss} paw steps alone",
             "Bristles at the pity from {PRONOUN/m_c/poss} Clanmates"
         ],
         "perm_conditions": {
@@ -4706,7 +4699,8 @@
         "main_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
-            "mediator apprentice"
+            "mediator apprentice",
+            "queen's apprentice"
         ],
         "random_living_status": [
             "living"
@@ -4728,7 +4722,8 @@
         "random_status_constraint": [
             "apprentice",
             "medicine cat apprentice",
-            "mediator apprentice"
+            "mediator apprentice",
+            "queen's apprentice"
         ],
         "random_living_status": [
             "living"
@@ -4757,13 +4752,13 @@
             "Wishes {PRONOUN/m_c/subject} could hear the sounds of camp",
             "Teaches a new Clanmate how to do tail signals",
             "Nearly hits the den ceiling when r_c suddenly enters {PRONOUN/m_c/poss} line of sight",
-            "Can identify {PRONOUN/m_c/poss} Clanmates just by the feel of their pawsteps",
+            "Can identify {PRONOUN/m_c/poss} Clanmates just by the feel of their paw steps",
             "Recently discovered that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a habit of stomping",
             "Is confused when r_c indicates birdsong",
             "Wonders what r_c sounds like",
             "Knows what r_c is saying from {PRONOUN/r_c/poss} mouth movements",
             "Teases a Clanmate for trying to call {PRONOUN/m_c/object} out loud",
-            "Correctly recognizes r_c by the thumps of {PRONOUN/r_c/poss} pawpads alone"
+            "Correctly recognizes r_c by the thumps of {PRONOUN/r_c/poss} paw pads alone"
         ],
         "perm_conditions": {
             "m_c": [
@@ -4784,7 +4779,7 @@
             "Is frustrated that other cats don't understand {PRONOUN/m_c/poss} signals",
             "Wishes {PRONOUN/m_c/subject} could talk to other cats",
             "Feels thunder boom and watches the others flinch",
-            "Curiously feels the thumps of {PRONOUN/m_c/poss} Clanmates' pawsteps on the ground"
+            "Curiously feels the thumps of {PRONOUN/m_c/poss} Clanmates' paw steps on the ground"
         ],
         "perm_conditions": {
             "m_c": [
@@ -5579,7 +5574,7 @@
             "Dives into a river after a nice rock",
             "Debates bringing a very shiny piece of Twoleg trash back for {PRONOUN/m_c/poss} collection",
             "Finds two new trinkets and can't carry them both home",
-            "Double checks {PRONOUN/m_c/poss} treasure hiding spots to make sure {PRONOUN/m_c/subject}'re not tampered with",
+            "Double checks {PRONOUN/m_c/poss} treasure hiding spots to make sure they're not tampered with",
             "Finds a new hiding spot for {PRONOUN/m_c/poss} treasure"
         ],
         "main_age_constraint": [

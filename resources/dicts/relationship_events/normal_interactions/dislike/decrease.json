@@ -47,7 +47,9 @@
 			"m_c tries to find r_c to apologize for something, but finds {PRONOUN/r_c/object} playing with a Clanmate.",
 			"r_c does something endearing, which surprises m_c.",
 			"m_c stumbles upon r_c looking at the stars with wonder in {PRONOUN/r_c/poss} eyes.",
-			"m_c is rethinking how {PRONOUN/m_c/subject} feel about r_c and gives {PRONOUN/r_c/object} another chance."
+			"m_c is rethinking how {PRONOUN/m_c/subject} feel about r_c and gives {PRONOUN/r_c/object} another chance.",
+			"m_c and r_c apologized over something petty they both did to each other.",
+			"m_c realizes {PRONOUN/m_c/subject} {VERB/m_c/were/was} being childish and apologizes to r_c for {PRONOUN/m_c/poss} behavior."
 		]
 	},
 	{
@@ -137,6 +139,27 @@
 			"mediator",
 			"medicine cat apprentice",
 			"medicine cat",
+			"deputy",
+			"leader"
+		]
+	},
+	{
+		"id": "lifegen_queen_dis_h",
+		"intensity": "low",
+		"interactions": [
+			"r_c helps m_c clean up a mess in the nursery.",
+			"r_c distracts the kittens away from m_c, and m_c is thankful as {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} able to take a breather.",
+			"m_c and r_c begrudgingly agree on an issue.",
+			"m_c decides to be nice and add leftover moss to r_c's nest.",
+			"r_c lets m_c choose {PRONOUN/m_c/poss} choice of prey from the day's patrol."
+		],
+		"main_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		],
+		"random_status_constraint": [
+			"apprentice",
+			"warrior",
 			"deputy",
 			"leader"
 		]

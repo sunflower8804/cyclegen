@@ -34,16 +34,24 @@
     {
         "id": "warrior_gen_deputy",
         "thoughts": [
-            "Wants to be chosen as the new deputy"
+            "Wants to be chosen as the new deputy",
+            "Wonders what it would be like to be deputy",
+            "Asks r_c if {PRONOUN/r_c/poss} role is stressful",
+            "Asks r_c if there is any open patrols that need to be covered",
+            "Invites r_c for a walk around the territory"
         ],
         "random_status_constraint": [
             "deputy"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
         "id": "gen_older_warrior",
         "thoughts": [
-            "Tries to set a good example for younger cats"
+            "Tries to set a good example for younger cats",
+            "Hopes {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} being a good role model"
         ],
         "main_age_constraint": [
             "senior",
@@ -58,7 +66,8 @@
         "id": "warrior_gen_medicine_cat",
         "thoughts": [
             "Plans to visit the medicine cat",
-            "Is helping to escort the medicine cat to gather herbs"
+            "Is helping to escort the medicine cat to gather herbs",
+            "Learned a lot while patrolling with r_c"
         ],
         "random_status_constraint": [
             "medicine cat"
@@ -72,7 +81,10 @@
         "thoughts": [
             "Is sparring with some Clanmates",
             "Wants to critique r_c's fighting techniques",
-            "Wants to compliment r_c's fighting techniques"
+            "Wants to compliment r_c's fighting techniques",
+            "Asks r_c for some tips on how to find more prey",
+            "Wonders if r_c would agree to patrolling together",
+            "Thinks r_c would be a great warrior to spar with"
         ],
         "random_status_constraint": [
             "warrior"
@@ -411,8 +423,10 @@
             "Grooms r_c clean and makes {PRONOUN/r_c/object} presentable",
             "Carries r_c to the nursery because {PRONOUN/r_c/subject} fell asleep",
             "Is scolding r_c for almost being reckless",
-            "Hopes {PRONOUN/m_c/poss} kits arent getting into too much trouble",
-            "Is in awe with how fast r_c is growing"
+            "Hopes {PRONOUN/m_c/poss} kits aren't getting into too much trouble",
+            "Is in awe with how fast r_c is growing",
+            "Feels bad that {PRONOUN/r_c/subject}{VERB/m_c/'re/'s} not able to play with r_c all the time",
+            "Wonders if the deputy would let {PRONOUN/m_c/object} lay off a little to spend more time with r_c"
         ],
         "relationship_constraint": [
             "parent/child"

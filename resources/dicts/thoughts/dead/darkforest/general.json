@@ -307,7 +307,9 @@
             "Feels lost as {PRONOUN/m_c/subject} {VERB/m_c/have/has} no sense of time in the Dark Forest",
             "Is desperate to see the sun fall and rise again",
             "Wonders if any other cat feels like time is perpetually still",
-            "Feels frustrated as the seasons never seem to change"
+            "Feels frustrated as the seasons never seem to change",
+            "Has lost count of how many moons {PRONOUN/m_c/subject}{VERB/m_c/'ve/s} been in the Dark Forest",
+            "Has forgotten how it felt like to feel the sun rest"
         ],
         "main_skill_constraint": [
             "TIME,1"
@@ -318,7 +320,7 @@
         "thoughts": [
             "Feels like {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} belong here",
             "Wonders if {PRONOUN/m_c/subject} {VERB/m_c/are/is} being punished",
-            "Subconsciously wanders around to find {PRONOUN/m_c/poss} friends from the other side, yet is met with nothing"
+            "Wanders around to find {PRONOUN/m_c/poss} friends from the other side, yet is met with nothing"
         ],
         "main_skill_constraint": [
             "STAR,1", "GHOST,1"
@@ -341,7 +343,9 @@
         "thoughts": [
             "Dreadfully knows {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} exactly where {PRONOUN/m_c/subject} {VERB/m_c/are/is} meant to be",
             "Thought the Dark Forest was going to be much cooler",
-            "Feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} in {PRONOUN/m_c/poss} element"
+            "Feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} in {PRONOUN/m_c/poss} element",
+            "Feels the Dark Forest is nothing knew to {PRONOUN/m_c/object}",
+            "Wonders what it would be like to not have {PRONOUN/m_c/poss} gift"
         ],
         "main_skill_constraint": [
             "DARK,1"
@@ -356,7 +360,11 @@
             "Has a love hate relationship with the lack of rules here",
             "Doesn't mind the goop as long as it doesn't seep into {PRONOUN/m_c/poss} claws",
             "Is getting bored of {PRONOUN/m_c/poss} opponents",
-            "Thinks {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} starting to get rusty"
+            "Thinks {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} starting to get rusty",
+            "Wishing for new cats to fight with",
+            "Jumps into another 'friendly' spar",
+            "Gives the apprentices tips",
+            "Glad {PRONOUN/m_c/poss} claws never seem to get worn down"
         ],
         "main_skill_constraint": [
             "FIGHTER,1"
@@ -371,7 +379,8 @@
             "Observes the plant life - or the lack thereof",
             "Wonders if {PRONOUN/m_c/subject} should give c_n some advice on a recent obscure illness",
             "Is always busy with injuries",
-            "Wonders why cats are able to be hurt while dead"
+            "Wonders why cats are able to be hurt while dead",
+            "Feels like {PRONOUN/m_c/subject} never {VERB/m_c/get/gets} a break"
         ],
         "main_skill_constraint": [
             "HEALER,1"
@@ -384,10 +393,11 @@
         "id": "skill_thoughts_hunter",
         "thoughts": [
             "Feels bored as there is nothing to hunt",
-            "Feels unnerved by the lack of animal life in the Dark Forest",
+            "Is unnerved by the lack of animal life in the Dark Forest",
             "Decides to stalk r_c to pass the time",
             "Wonders if r_c would agree to pretend to be prey so {PRONOUN/m_c/subject} can finally hunt <i>something</i>",
-            "Stalks around the edge of the Dark Forest border to see if {PRONOUN/m_c/subject} can pounce on a StarClan cat"
+            "Stalks around the edge of the Dark Forest border to see if {PRONOUN/m_c/subject} can pounce on a StarClan cat",
+            "Wonders if {PRONOUN/m_c/poss} skills are useless in the land of no prey"
         ],
         "main_skill_constraint": [
             "HUNTER,1"
@@ -403,7 +413,9 @@
             "Whispers lies into r_c's ear to cause chaos",
             "Misguides r_c from success",
             "Decides to direct a disaster c_n's way",
-            "Prays on c_n's downfall"
+            "Prays on c_n's downfall",
+            "Makes silly faces at r_c",
+            "Watches r_c live {PRONOUN/r_c/poss} life to starve off {PRONOUN/m_c/poss} boredom"
         ],
         "random_living_status": [
             "living"
@@ -420,11 +432,66 @@
             "Judges c_n's leader",
             "Judges c_n's deputy",
             "Convinced c_n is not doing well without {PRONOUN/m_c/object}",
-            "Contemplates causing chaos"
+            "Contemplates causing chaos",
+            "Feels pleased with c_n's choices so far",
+            "Feels like {PRONOUN/m_c/subject} can finally retire without having to worry about c_n or duties"
         ],
         "main_status_constraint": [
             "leader",
             "deputy"
         ]
-    }
+    },
+	{
+		"id": "introspective_df_warapp_h",
+		"thoughts": [
+			"Thinks every cat is being a little too dramatic for {PRONOUN/m_c/poss} tastes",
+			"Prefers to daydream than practice {PRONOUN/m_c/poss} fighting moves",
+			"Wonders if StarClan would allow {PRONOUN/m_c/object} to switch afterlives on good behavior",
+			"Is already sick of other cats aggressive behavior",
+			"Thinks much more would get done if everycat just... calmed down",
+			"Peeks through the barrier between the Dark Forest and StarClan",
+			"Stays away from the unruly fighting",
+			"Takes a nap without a care",
+			"Helps look for prey despite knowing there isn't a lot",
+			"Wonders why the Dark Forest cats are able to starve and feel pain",
+			"Finds the Dark Forest boring without anything to observe",
+			"Thinks the Dark Forest is just like the living",
+			"Isolates in the far corner of the Dark forest as far as {PRONOUN/m_c/subject} can go",
+			"Doesn't think the Dark Forest is all that bad",
+			"Imagines what it would be like to be in StarClan",
+			"Wonders who the ghostly cats without stars are",
+			"Wonders if the Dark Forest would be better without r_c's large mouth",
+			"Judges the other apprentices"
+		],
+		"main_trait_constraint": [
+			"righteous",
+			"lonesome",
+			"gloomy",
+			"calm",
+			"wise",
+			"flexible",
+			"mellow",
+			"thoughtful"
+		],
+		"random_living_constraint": [
+			"darkforest"
+		]
+	},
+	{
+		"id": "df_familyalive1_h",
+		"thoughts": [
+			"Wonders about r_c all the time",
+			"Can't help but worry that r_c is forgetting {PRONOUN/m_c/poss}",
+			"Worries r_c wouldn't approve of {PRONOUN/m_c/object} being in the Dark Forest",
+			"Has everything {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to say to r_c when {PRONOUN/r_c/subject} {VERB/r_c/die/dies} planned out",
+			"Hopes r_c is living and thriving",
+			"Sends r_c signs"
+		],
+        "relationship_constraint": [
+            "siblings"
+        ],
+		"random_living_constraint": [
+			"living"
+		]
+	}
 ]
