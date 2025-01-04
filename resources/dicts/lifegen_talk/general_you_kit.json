@@ -907,7 +907,7 @@
             "they_blind"
         ],
         [
-            "[One of the warriors brings you back a rabbit's foot from the hunting patrol. You bat it around in the clearing, where t_c is trying to sunbathe]",
+            "[One of the warriors brings you back a rabbit's foot from the hunting patrol. You bat it around in the clearing, where t_c is trying to sunbathe.]",
             "[After one too many times trampling {PRONOUN/t_c/poss} tail, {PRONOUN/t_c/subject} finally {VERB/t_c/snap/snaps}, trapping the rabbit's foot beneath {PRONOUN/t_c/poss} paw.]",
             "Hey, kit. This is a pretty cool toy, huh? Wanna hear a fun story about rabbits' feet?",
             "Once upon a time there was a kit named y_c. No relation to you, of course.",
@@ -1311,7 +1311,7 @@
             "You ... called r_c a mange-face because {PRONOUN/r_c/subject} {VERB/t_c/were/was} ignoring you?",
             "*Snrk*",
             "I mean, uh -- That was very bad of you, y_c! Never do it again!",
-            "[t_c leads you away giggling uncontrollably]",
+            "[t_c leads you away giggling uncontrollably.]",
             "Mange-face ... Hehehe!"
         ]
     ],
@@ -3848,7 +3848,7 @@
             "they_deaf"
         ],
         [
-            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister]",
+            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister.]",
             "[It must be a Dark Forest cat! You turn to greet the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
@@ -3861,7 +3861,7 @@
             "they_blind"
         ],
         [
-            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister]",
+            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister.]",
             "[It must be a Dark Forest cat! You turn to greet the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
@@ -3876,7 +3876,7 @@
             "they_deaf"
         ],
         [
-            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister]",
+            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister.]",
             "[It must be a Dark Forest cat! You turn to greet the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
@@ -4695,10 +4695,10 @@
             "any"
         ],
         [
-            "[You're not the sneakiest of kits... T_c plucks you out of the murky undergrowth without warning.]",
+            "[You're not the sneakiest of kits... t_c plucks you out of the murky undergrowth without warning.]",
             "[You can feel a noise of surprise escape you as you swing from {PRONOUN/t_c/poss} jaws.]",
             "[Is this it!? Is this the end!?]",
-            "[... T_c puts you down before {PRONOUN/t_c/object}. It's your lucky day, you're not going to be eaten after all!]"
+            "[... t_c puts you down before {PRONOUN/t_c/object}. It's your lucky day, you're not going to be eaten after all!]"
         ]
     ],
     "youdeaf_df_R50": [
@@ -5443,7 +5443,7 @@
             "[t_c watches you intently even with the queen's keen gazes. It seems {PRONOUN/t_c/subject} {VERB/t_c/are/is} more wary given that you can't hear dangers and are still learning signs.]",
             "[When you spot a bird's shadow on the ground, however, you're swift to race under t_c... Before looking up to see a little finch. {PRONOUN/t_c/subject/CAP} {VERB/t_c/laugh/laughs} softly, making your whiskers twitch and ears heat in embarrassment.]",
             "[False alarm, but t_c is quite pleased that you've been keeping up with your lessons. {PRONOUN/t_c/subject/CAP} {VERB/t_c/lick/licks} the top of your head as {PRONOUN/t_c/poss} body rumbles with a deep purr.]",
-            "[Eventually, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} content to leave you to the queens given your level of vigilance]"
+            "[Eventually, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} content to leave you to the queens given your level of vigilance.]"
         ]
     ],
     "skill_J4": [
@@ -5819,6 +5819,34 @@
         [
             "[You bounce up to t_c, jabbering about everything you've noticed today: a cool bird, and a weird smell, and r_w1 making a funny face when talking to r_w2...]",
             "[You look away from t_c for just a moment, but when you look back, {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} slipped away.]"
+        ]
+    ],
+    "unlawful_theypregGuy2": [
+        [
+            "unlawful",
+            "they_pregnant",
+            "you_kitten"
+        ],
+        [
+            "[t_c looks lovingly at {PRONOUN/t_c/poss} belly. {PRONOUN/t_c/subject/CAP}  {VERB/t_c/notice/notices} you and {VERB/t_c/smile/smiles}.]",
+            "I think they'll be cuter than you.",
+            "[t_c cackles when y_p's head snaps up.]"
+        ]
+    ],
+    "neurotic_theypregnant_SQ3": [
+        [
+            "they_neurotic",
+            "they_adult",
+            "they_pregnant",
+            "you_kitten",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What do you think about having new kits in the nursery with you soon?",
+            "No, I don't know how many there'll be, or what they'll be like. I don't know much of anything, really...",
+            "But I hope you'll be good friends! Or at least, I really hope you'll get along."
         ]
     ]
 }

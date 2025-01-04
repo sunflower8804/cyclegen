@@ -49,16 +49,6 @@
         ]
     },
     {
-        "id": "leader_DF",
-        "thoughts": [
-            "Thinks {PRONOUN/m_c/subject} {VERB/m_c/have/has} been hearing the voices of Dark Forest cats...",
-            "Is pondering recent dreams {PRONOUN/m_c/subject} {VERB/m_c/have/has} had... perhaps from the Dark Forest?"
-        ],
-        "random_living_status": [
-            "darkforest"
-        ]
-    },
-    {
         "id": "leader_alive_kits",
         "thoughts": [
             "Has recently picked up the scent of mischievous kits in {PRONOUN/m_c/poss} den...",
@@ -110,7 +100,10 @@
             "Listening intently to r_c's latest reports of the Clan's borders",
             "Adjure r_c to visit a neighboring Clan to deliver a message to their leader",
             "Is putting {PRONOUN/m_c/poss} trust in r_c whenever difficult events appear",
-            "In choosing r_c as deputy, hopes {PRONOUN/r_c/subject} will make a fine leader"
+            "In choosing r_c as deputy, hopes {PRONOUN/r_c/subject} will make a fine leader",
+            "Wonders if r_c would ever look at {PRONOUN/r_c/object} as more than a leader",
+            "Insists r_c takes a break sometimes",
+            "Fakes being offended as r_c demands {PRONOUN/m_c/subject} {VERB/m_c/take/takes} a break"
         ],
         "random_status_constraint": [
             "deputy"
@@ -126,7 +119,9 @@
             "Is pondering recent dreams {PRONOUN/m_c/subject} {VERB/m_c/have/has} had... perhaps from the Dark Forest?",
             "Can hear the venomous voice of Dark Forest cats in {PRONOUN/m_c/poss} ears, whispering concerning events yet to come",
             "Was thrusted into a sunless landscape in {PRONOUN/m_c/poss} dreams, luminous, uncanny eyes watching {PRONOUN/m_c/object}",
-            "Was startled awake when a black, smokey creature launched from the shadows and tried to claw at {PRONOUN/m_c/poss} throat"
+            "Was startled awake when a black, smokey creature launched from the shadows and tried to claw at {PRONOUN/m_c/poss} throat",
+            "Wonders if Dark Forest cats are tempering with {PRONOUN/m_c/poss} thoughts",
+            "Blames a recent mistake on the Dark Forest cats"
         ],
         "random_living_status": [
             "darkforest"
@@ -235,6 +230,21 @@
             "During a skirmish, sinks {PRONOUN/m_c/subject} fangs into a rival cat until {PRONOUN/m_c/subject} {VERB/m_c/taste/tastes} blood",
             "Rakes a claw across a cat's muzzle for debating against {PRONOUN/m_c/object}",
             "Is ready to tear off a cat's coat for c_n"
+        ],
+        "main_trait_constraint": [
+            "bloodthirsty"
+        ]
+    },
+    {
+        "id": "leader_bloodthirsty_goodintentions",
+        "thoughts": [
+            "Insists violence is just another method to future peace",
+            "Doesn't realize {PRONOUN/m_c/poss} stories are scaring the kittens and apprentices",
+            "Instructs mentors to be strict and harsher on their apprentices to make them prepared for any future battles",
+            "Instils a need to train until utter perfection",
+            "Teaches {PRONOUN/m_c/poss} warriors how to fight dirty if absolutely necessary",
+            "Teaches kittens how to fight an older cat... just in case",
+            "Believes aggression is a great political tactic"
         ],
         "main_trait_constraint": [
             "bloodthirsty"
@@ -466,7 +476,13 @@
             "Wonders how many cats would agree to changing the Clan's name...",
             "Is mimicking a stone standing still",
             "Has been staring at {PRONOUN/m_c/poss} Clanmates for awhile without fluttering an eye",
-            "Told {PRONOUN/m_c/poss} Clanmates to get ready for something that appeared in a dream, but doesn't elaborate"
+            "Told {PRONOUN/m_c/poss} Clanmates to get ready for something that appeared in a dream, but doesn't elaborate",
+            "Has crazy ideas no cat is willing to follow",
+            "Complains that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} boreddddddd",
+            "Believes c_n can befriend the cougars if they try hard enough",
+            "Thinks outlandish thoughts out loud",
+            "Insists cats can survive on greenery if they really, really wanted to!",
+            "Insists an apprentice can lead the border patrol just fine"
         ],
         "main_trait_constraint": [
             "strange"
@@ -523,7 +539,7 @@
             "Is a bit iffy about being looked down upon for being soft",
             "Is a another parent to {PRONOUN/m_c/poss} Clanmates",
             "Is overbearing, wanting to be included in everything",
-            "Knows, shamefully, that {PRONOUN/m_c/poss} overprotectiveness prevented work from being done",
+            "Knows, shamefully, that {PRONOUN/m_c/poss} over-protectiveness prevented work from being done",
             "Has prioritized defending more than fighting",
             "Is pondering about promoting kits to apprentices when they're a <i>bit</i> older",
             "Can't help but question if the other Clans' kits are unloved and need to be brought to c_n instead"
@@ -550,6 +566,9 @@
         ],
         "main_trait_constraint": [
             "troublesome"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -573,6 +592,9 @@
         ],
         "main_trait_constraint": [
             "sneaky"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -632,6 +654,9 @@
         ],
         "main_trait_constraint": [
             "oblivious"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {

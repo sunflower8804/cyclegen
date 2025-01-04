@@ -328,7 +328,7 @@
         ],
         "intro": [
             "[t_c is sharing tongues with t_m in the clearing.]",
-            "[Who would have the heart to interrupt such a display of coupley bliss?]"
+            "[Who would have the heart to interrupt such a display of couple-y bliss?]"
         ],
         "intro_choices": {
             "choice1": {
@@ -909,8 +909,8 @@
     },
     "assertiveapp_medapp3": {
         "tags": [
-            "medicine_cat_apprentice",
-            "medicine_cat",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
             "assertive",
             "silly",
             "upstanding",
@@ -988,7 +988,7 @@
     },
     "assertiveapp_deputy": {
         "tags": [
-            "deputy",
+            "you_deputy",
             "assertive",
             "unlawful",
             "they_warrior",
@@ -1023,7 +1023,7 @@
     },
     "assertive_apprentice3": {
         "tags": [
-            "apprentice",
+            "you_apprentice",
             "assertive",
             "upstanding",
             "they_apprentice",
@@ -1058,10 +1058,7 @@
     },
     "assertive_apprentice5": {
         "tags": [
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "queen's_apprentice",
+            "you_app",
             "platonic_like",
             "assertive",
             "they_apprentice",
@@ -1288,7 +1285,7 @@
     },
     "assertive_mentor7": {
         "tags": [
-            "apprentice",
+            "you_apprentice",
             "assertive",
             "from_mentor",
             "silly",
@@ -1330,7 +1327,7 @@
     },
     "assertive_mentor700": {
         "tags": [
-            "apprentice",
+            "you_apprentice",
             "assertive",
             "from_mentor",
             "silly",
@@ -1447,8 +1444,8 @@
     },
     "assertive_9": {
         "tags": [
-            "warrior",
-            "apprentice",
+            "you_warrior",
+            "you_apprentice",
             "assertive",
             "silly",
             "they_warrior",
@@ -1526,8 +1523,8 @@
     },
     "assertivemedcat_queen": {
         "tags": [
-            "queen's_apprentice",
-            "queen",
+            "you_queen's_apprentice",
+            "you_queen",
             "assertive",
             "cool",
             "silly",
@@ -1601,7 +1598,7 @@
     },
     "assertive_mentor8": {
         "tags": [
-            "medicine_cat_apprentice",
+            "you_medicine_cat_apprentice",
             "assertive",
             "from_mentor",
             "silly",
@@ -1962,7 +1959,7 @@
     },
     "broodingapp_toapp4": {
         "tags": [
-            "warrior",
+            "you_warrior",
             "brooding",
             "platonic_like",
             "from_your_apprentice",
@@ -2571,10 +2568,10 @@
     "upstanding_choice3": {
         "tags": [
             "upstanding",
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "queen's_apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice",
             "they_kitten"
         ],
         "intro": [
@@ -2672,14 +2669,14 @@
             },
             "choice2": {
                 "text": "Are you ready for apprenticeship?",
-                "next_scene": "apprentice"
+                "next_scene": "you_apprentice"
             }
         },
         "mice": [
             "Ohhhh, okay!",
             "Mices!"
         ],
-        "apprentice": [
+        "you_apprentice": [
             "You bet!! I'm gonna be the best apprentice in the entire Clan; just you wait!"
         ]
     },
@@ -2827,10 +2824,10 @@
             "both_shunned",
             "they_leader",
             "any",
-            "warrior",
-            "deputy",
-            "elder",
-            "apprentice",
+            "you_warrior",
+            "you_deputy",
+            "you_elder",
+            "you_apprentice",
             "they_blind",
             "you_blind"
         ],
@@ -3179,7 +3176,7 @@
             "upstanding",
             "stable",
             "greenleaf",
-            "warrior",
+            "you_warrior",
             "no_kit"
         ],
         "intro": [
@@ -3718,10 +3715,10 @@
             "brooding",
             "introspective",
             "stable",
-            "apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "queen's_apprentice",
+            "you_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice",
             "they_older"
         ],
         "intro": [

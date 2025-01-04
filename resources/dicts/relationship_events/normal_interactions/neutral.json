@@ -118,7 +118,7 @@
 			"r_c wonders when m_c learned so much about cat anatomy.",
 			"r_c has to snap m_c out of staring darkly at another Clanmate.",
 			"r_c sees m_c using a small animal bone to pick food from {PRONOUN/m_c/poss} teeth.",
-			"r_c wonders why m_c knows so much about a Clanmate {PRONOUN/m_c/subject} {VERB/m_c/don't/doesnt} like.",
+			"r_c wonders why m_c knows so much about a Clanmate {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} like.",
 			"m_c asks r_c to compare the size and sharpness of their claws together."
 		],
 		"main_trait_constraint": [
@@ -175,6 +175,65 @@
 		"main_trait_constraint": [
 			"grumpy",
 			"cold"
+		]
+	},
+	{
+		"id": "neutral_lifegen_queentokitten_H1",
+		"interactions": [
+			"m_c has too much work to do to accept r_c's invitation to play.",
+			"r_c follows m_c around camp.",
+			"m_c has to explain to r_c that sometimes {PRONOUN/m_c/subject} {VERB/r_c/need/needs} a break from kittens.",
+			"m_c puts {PRONOUN/m_c/poss} paws over {PRONOUN/m_c/poss} ears to muffle the sound of the nursery, but r_c thinks {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} playing instead.",
+			"m_c hums a gentle tune as {PRONOUN/m_c/subject} {VERB/m_c/organize/organizes} the nests. r_c stays around to listen.",
+			"m_c fixes one of r_c's beloved toys.",
+			"r_c bats {PRONOUN/r_c/poss} paw at m_c's tail playfully.",
+			"m_c catches r_c before {PRONOUN/r_c/subject} {VERB/r_c/run/runs} off to clean {PRONOUN/r_c/poss} fur before it gets any dirtier."
+		],
+		"main_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		],
+		"random_status_constraint": [
+			"kitten"
+		]
+	},
+	{
+		"id": "neutral_lifegen_queentoapp_H1",
+		"interactions": [
+			"m_c has to gently explain that r_c needs to be more careful with {PRONOUN/r_c/poss} words around the younger cats.",
+			"m_c shoos r_c out of the nursery when {PRONOUN/r_c/subject} {VERB/r_c/step/steps} in during nap time.",
+			"m_c recruits r_c to help {PRONOUN/m_c/object} clean the nests in exchange for a part of m_c's fresh-kill."
+		],
+		"main_status_constraint": [
+			"queen"
+		],
+		"random_status_constraint": [
+			"apprentice",
+			"mediator apprentice",
+			"medicine cat apprentice",
+			"warrior",
+			"deputy",
+			"leader",
+			"medicine cat",
+			"mediator"
+		]
+	},
+	{
+		"id": "neutral_lifegen_queentoelder_H1",
+		"interactions": [
+			"m_c takes time out of {PRONOUN/m_c/poss} day to help r_c around the camp.",
+			"m_c notices r_c walking by {PRONOUN/r_c/self} and decides to join {PRONOUN/r_c/object} for a short conversation.",
+			"m_c preens about the kittens accomplishments to r_c.",
+			"m_c helps r_c clean {PRONOUN/r_c/poss} nest.",
+			"r_c asks m_c for stories about the kittens progress.",
+			"r_c tries to help m_c with the nursery arrangement, despite {PRONOUN/r_c/poss} old knees."
+		],
+		"main_status_constraint": [
+			"queen",
+			"queen's apprentice"
+		],
+		"random_status_constraint": [
+			"elder"
 		]
 	}
 ]

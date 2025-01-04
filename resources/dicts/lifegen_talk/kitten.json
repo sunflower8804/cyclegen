@@ -1097,7 +1097,7 @@
             "sweet"
         ],
         [
-            "[t_c doesn't seem to notice you at first, sniffling quietly]",
+            "[t_c doesn't seem to notice you at first, sniffling quietly.]",
             "O-Oh! y_c! Um... I didn't want you to see me like this..",
             "I'm sorry- I just... r_c stepped on a poor little bug, and I feel so bad for it!! And then I burst out into tears in front of everycat and now I'm super embarrassed..",
             "I hope {PRONOUN/r_c/subject} {VERB/r_c/apolose/apologises} to the poor little guy."
@@ -1597,9 +1597,9 @@
             "any"
         ],
         [
-            "[Silently, t_c is staring at the stars, {PRONOUN/t_c/poss} gaze swirling with beauty, yet pain]",
+            "[Silently, t_c is staring at the stars, {PRONOUN/t_c/poss} gaze swirling with beauty, yet pain.]",
             "I hope d_c is happy up there...",
-            "[That is the only thing t_c says for a long time, just staring up at the sky]"
+            "[That is the only thing t_c says for a long time, just staring up at the sky.]"
         ]
     ],
     "sweetgrieving_4": [
@@ -1702,7 +1702,7 @@
             "Please, d_c, if you can hear this, send me a sign ...",
             "Something. Anything. I don't care.",
             "[For a moment, the den is completely silent and still. The air is thick with anticipation.]",
-            "[... T_c chokes back a sob and curls deeper into {PRONOUN/t_c/poss} nest.]"
+            "[... t_c chokes back a sob and curls deeper into {PRONOUN/t_c/poss} nest.]"
         ]
     ],
     "theygrief_11": [
@@ -1799,7 +1799,7 @@
             "you_blind"
         ],
         [
-            "y_c... I'm so... sleepy... [yawn]",
+            "y_c... I'm so... sleepy...",
             "It's still early... I said I was going to play with someone at sunhigh, but that's so far away, and if I go to sleep now I won't be able to play with them...",
             "Oh, y_c, what do I do?",
             "[You promise t_c you'll wake {PRONOUN/t_c/object} up just in time to play with {PRONOUN/t_c/poss} friend.]",
@@ -2900,7 +2900,7 @@
         [
             "I decided that I'm going to be the greatest c_nClan cat ever!",
             "I'm going to work SUPER hard and not break ANY of the rules, and- and!",
-            "[t_c is literally bouncing around with excitement as {PRONOUN/t_c/subject} {VERB/t_c/talk/talks} about {PRONOUN/t_c/poss} plans]"
+            "[t_c is literally bouncing around with excitement as {PRONOUN/t_c/subject} {VERB/t_c/talk/talks} about {PRONOUN/t_c/poss} plans.]"
         ]
     ],
     "upstanding_kit1": [
@@ -5079,7 +5079,7 @@
         ],
         [
             "Wait, you're still here?",
-            "[Startled, t_c rushes away to the nursery]"
+            "[Startled, t_c rushes away to the nursery.]"
         ]
     ],
     "kitmurderedyou_J3": [
@@ -5521,7 +5521,7 @@
             "they_deaf"
         ],
         [
-            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister]",
+            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister.]",
             "[It must be a Dark Forest cat! You turn to confront the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
@@ -5534,7 +5534,7 @@
             "they_blind"
         ],
         [
-            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister]",
+            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister.]",
             "[It must be a Dark Forest cat! You turn to confront the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
@@ -5549,7 +5549,7 @@
             "they_deaf"
         ],
         [
-            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister]",
+            "[You feel the presence of another ghost. But they smell slightly different. Slightly more sinister.]",
             "[It must be a Dark Forest cat! You turn to confront the cat, but you're left spinning as the scent dissipates. They must have left.]"
         ]
     ],
@@ -7784,6 +7784,22 @@
             "[t_c taps {PRONOUN/t_c/poss} paw against the air, miming how you bump against the nursery entrance to announce your presence before you enter.]",
             "No one else does it, so sometimes I don't realize they're coming inside, and then they scare me? But... um... you never scare me.",
             "[t_c pauses and you think {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} about to continue, but then {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} without looking at you and {VERB/t_c/scurry/scurries} back to the nursery.]"
+        ]
+    ],
+    "neurotic_skillsong_SQ1": [
+        [
+            "they_neurotic",
+            "they_song",
+            "they_kitten",
+            "you_adult",
+            "min_platonic_15",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I wanna make a new song, but r_k_upstanding says you can't just <i>make up</i> new ones.",
+            "Is that true? I don't want to do anything wrong...",
+            "[You tell t_c that of course {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} allowed to make up new songs, and {PRONOUN/t_c/subject} {VERB/t_c/brighten/brightens}.]"
         ]
     ]
 }
