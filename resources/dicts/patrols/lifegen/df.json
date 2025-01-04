@@ -3277,7 +3277,7 @@
             "min_max_status": {},
             "weight": 20,
             "intro_text": "You race through the Dark Forest, bounding with all the speed you can muster. r_c is just a few paw steps ahead of you, having challenged you to a race to the training grounds and taking off before you could answer. You push yourself harder, wanting to beat r_c there.",
-            "decline_text": "You sigh frustratedly as r_c disappears ahead of you. It seems {PRONOUN/r_c/subject} had too much of a head start, and there's no way you can catch up to {PRONOUN/r_c/object}. You frown and drag your paws as you walk towards the training grounds after {PRONOUN/r_c/object}, not liking the feeling of being defeated… even if the race was unfair.",
+            "decline_text": "You sigh frustratedly as r_c disappears ahead of you. It seems {PRONOUN/r_c/subject} had too much of a head start, and there's no way you can catch up to {PRONOUN/r_c/object}. You frown and drag your paws as you walk towards the training grounds after {PRONOUN/r_c/object}, not liking the feeling of being defeated... even if the race was unfair.",
             "chance_of_success": 60,
             "success_outcomes": [
                 {
