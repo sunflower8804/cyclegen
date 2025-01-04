@@ -1375,7 +1375,7 @@ class Clan:
                 other_clan_meds = []
                 for other_clan_med in c:
                     other_clan_med = other_clan_med.split(",")
-                    n = Name(status = other_clan_med[2], prefix = other_clan_med[0], suffix = other_clan_med[1])
+                    n = Name(prefix = other_clan_med[0], suffix = other_clan_med[1], status = other_clan_med[2])
                     other_clan_meds.append(n)
                 other_med.append(other_clan_meds)
             game.switches["other_med"] = other_med

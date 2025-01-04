@@ -71,7 +71,6 @@ class Name:
 
     def __init__(
         self,
-        status=None,
         prefix=None,
         suffix=None,
         biome=None,
@@ -79,6 +78,9 @@ class Name:
         shunned=0,
         load_existing_name=False,
         cat=None,
+
+        # LG
+        status=None,
     ):
         self.prefix = prefix
         self.suffix = suffix
