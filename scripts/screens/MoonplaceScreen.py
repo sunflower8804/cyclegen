@@ -861,9 +861,9 @@ class MoonplaceScreen(Screens):
                 other_clan_meds = []
                 for i in range(randint(1,3)):
                     if randint(1,4) != 1:
-                        other_clan_meds.append(Name(status = "medicine cat"))
+                        other_clan_meds.append(Name())
                     else:
-                        other_clan_meds.append(Name(status = "medicine cat apprentice"))
+                        other_clan_meds.append(Name(suffix="paw"))
                 game.switches["other_med"].append(other_clan_meds)
                 game.switches["other_med_clan"].append(clan_name)
         else:
@@ -881,10 +881,10 @@ class MoonplaceScreen(Screens):
             game.switches["other_med"] = self.randomly_remove_string(game.switches["other_med"])
             for clan_meds in game.switches["other_med"]:
                 if len(clan_meds) == 0:
-                    clan_meds.append(Name(status = "medicine cat apprentice"))
+                    clan_meds.append(Name(suffix="paw"))
                 if len(clan_meds) < 3:
                     if randint(1, 5) == 1:
-                        clan_meds.append(Name(status = "medicine cat apprentice"))
+                        clan_meds.append(Name(suffix="paw"))
 
     def randomly_remove_string(self, lists_of_strings):
         for sublist in lists_of_strings:
