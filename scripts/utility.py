@@ -4783,7 +4783,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 addon_check = abbrev_addons(cat, random_cat, cluster, x, rel, r)
                 counter +=1
 
-            text = add_to_cat_dict("rsdh_c", cluster, x, rel, r, random_cat, text, cat_dict)
+            text = add_to_cat_dict("rsh_c", cluster, x, rel, r, random_cat, text, cat_dict)
 
     # Shunned kit
     if "rsh_k" in text:

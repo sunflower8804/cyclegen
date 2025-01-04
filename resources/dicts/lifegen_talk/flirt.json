@@ -2902,7 +2902,7 @@
         [
             "[You decide to start flirting with t_c in an attempt to see where it leads. {PRONOUN/t_c/subject/CAP} {VERB/t_c/do/does} not seem amused.]",
             "y_c. I murdered our Clanmate. I'm not afraid to go after you too if you keep at it.",
-            "[You try one more time, but t_c lashes out at you, not afraid to get more blood on their claws. It seems {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} too fond of you.]"
+            "[You try one more time, but t_c lashes out at you, not afraid to get more blood on {PRONOUN/t_c/poss} claws. It seems {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} too fond of you.]"
         ]
     ],
     "flirting_shunned_SQ3": [
@@ -5142,7 +5142,7 @@
             "reject"
         ],
         [
-            "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment raidiating off {PRONOUN/t_c/object}.]"
+            "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment radiating off {PRONOUN/t_c/object}.]"
         ]
     ],
     "niche_situations_H2": [
@@ -5156,7 +5156,7 @@
             "any"
         ],
         [
-            "[t_c purs as you cuddle up against {PRONOUN/t_c/object}. t_c seems to appreciate the distraction from {PRONOUN/t_c/poss} grief.]"
+            "[t_c purrs as you cuddle up against {PRONOUN/t_c/object}. t_c seems to appreciate the distraction from {PRONOUN/t_c/poss} grief.]"
         ]
     ],
     "niche_situations_H3": [
@@ -5170,7 +5170,7 @@
             "reject"
         ],
         [
-            "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment raidiating off {PRONOUN/t_c/object}.]"
+            "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment radiating off {PRONOUN/t_c/object}.]"
         ]
     ],
     "niche_situations_H4": [
@@ -5183,7 +5183,7 @@
             "any"
         ],
         [
-            "[t_c purs as you cuddle up against {PRONOUN/t_c/object}. t_c seems to appreciate the distraction from {PRONOUN/t_c/poss} grief.]"
+            "[t_c purrs as you cuddle up against {PRONOUN/t_c/object}. t_c seems to appreciate the distraction from {PRONOUN/t_c/poss} grief.]"
         ]
     ],
     "niche_situations_H5": [
@@ -5195,7 +5195,7 @@
             "any"
         ],
         [
-            "[t_c purs as you cuddle up against {PRONOUN/t_c/object}. t_c seems to appreciate the distraction from {PRONOUN/t_c/poss} grief.]"
+            "[t_c purrs as you cuddle up against {PRONOUN/t_c/object}. t_c seems to appreciate the distraction from {PRONOUN/t_c/poss} grief.]"
         ]
     ],
     "niche_situations_H6": [
@@ -5208,7 +5208,7 @@
             "reject"
         ],
         [
-            "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment raidiating off {PRONOUN/t_c/object}.]"
+            "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment radiating off {PRONOUN/t_c/object}.]"
         ]
     ]
 }

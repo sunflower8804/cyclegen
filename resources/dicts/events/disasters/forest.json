@@ -182,8 +182,8 @@
                 "Trees send out new branches to mingle with their soot-stained and charred trunks."
             ],
             "moon4": [
-                "Birdsong - c_n has been without it for so long. With the forest growing back to life, their longed for dawn chorus has returned.",
-                "It sounds so strange, but their mud has changed color, back to being made of soil instead of soot! Still a pain to groom out of pelts though.",
+                "Birdsong - c_n has been without it for so long. With the forest growing back to life, their longed-for dawn chorus has returned.",
+                "It sounds so strange, but the mud has changed color, back to being made of soil instead of soot! Still a pain to groom out of pelts though.",
                 "The growth of the forest has never been so well celebrated by c_n, but after the devastation of the wildfire, the flush of green returning feels like victory."
             ]
         },
@@ -442,8 +442,8 @@
             ],
             "deaths": {
                 "death_text": [
-                    "The prey smelled fine, and m_c's stomach had been rumbling the whole day. After taking a bite, its clear that something was wrong. m_c succumbed to the poison later that day.",
-                    "m_c bites into some sour smelling fresh-kill just to ease the pain of hunger. They are found dead in their nest later that day."
+                    "The prey <i>smelled</i> fine, and m_c's stomach had been rumbling the whole day. After taking a bite, it's clear that something was wrong. m_c succumbed to the poison later that day.",
+                    "m_c bites into some sour-smelling fresh-kill just to ease the pain of hunger. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} found dead in {PRONOUN/m_c/poss} nest later that day."
                 ],
                 "history_text": {
                     "reg_death": "m_c died during a prey sickness."
