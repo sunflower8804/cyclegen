@@ -1227,5 +1227,64 @@
             "r_k_unlawful is such a troublemaker. I swear to StarClan, I look away for one moment, and {PRONOUN/r_k_unlawful/subject}{VERB/r_k_unlawful/'ve/'s} already shredded my nest or snuck into the medicine den.",
             "Whoever becomes {PRONOUN/r_k_unlawful/poss} mentor will have {PRONOUN/r_k_unlawful/poss} paws full!"
         ]
+    ],
+    "about_brooding_AJ2": [
+        [
+            "no_kit",
+            "they_queen",
+            "they_queen's_apprentice",
+            "min_trust_15"
+        ],
+        [
+            "Oh, StarClan, did r_q_brooding chase you out of the nursery again? *Sigh* {PRONOUN/r_q_brooding/subject/CAP} sure {VERB/r_q_brooding/tend/tends} to do that a lot ...",
+            "Try not to take it too personally, y_c. I know {PRONOUN/r_q_brooding/poss} methods may seem ... unorthodox, but r_q_brooding really isn't a bad Queen. {PRONOUN/r_q_brooding/subject/CAP} just {VERB/r_q_brooding/want/wants} to keep everycat safe.",
+            "And if scaring cats stiff into leaving the kits alone is what it takes ... Well, then that's just what {PRONOUN/r_q_brooding/subject}'ll do."
+        ]
+    ],
+    "Introspective_queenapp_to_NB": [
+        [
+            "you_newborn",
+            "they_queen's_apprentice",
+            "Introspective",
+            "you_blind",
+            "you_blind"
+        ],
+        [
+            "Oh, that's y_c! {PRONOUN/y_c/subject/CAP}{VERB/y_c/'ve/'s} grown so quickly.",
+            "I remember you being born, you know, even if it wasn't that long ago. It'll be amazing watching you grow to provide for the Clan. I wonder what you'll grow up to do.",
+            "A big strong warrior, a gentle medicine cat, a wise mediator... or you could become a queen like I'm learning to right now.",
+            "But that doesn't matter right now. Just focus on enjoying your life. That's what I think."
+        ]
+    ],
+    "youkit_deaf_J6": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_queen",
+            "they_queen'sapprentice"
+        ],
+        [
+            "[t_c is teaching some signs to the warriors so they can communicate with you better.]",
+            "[But {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} signing so fast, you can't even keep up!]"
+        ]
+    ],
+    "youdeaf_R71": [
+        [
+            "only_you_deaf",
+            "you_kitten",
+            "they_queen",
+            "they_queen'sapprentice",
+            "they_deaf"
+        ],
+        [
+            "[t_c works with you on learning a few new signs. Today is prey!]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/quiz/quizzes} you with a smile on each type from the freshkill pile.]",
+            "[When {PRONOUN/t_c/subject} {VERB/t_c/wiggle/wiggles} {PRONOUN/t_c/poss} ears up and down, you swiftly point to the first bird you see before mimicking the sign.]",
+            "[Then, t_c taps {PRONOUN/t_c/poss} forepaws together before moving one paw back while shaking it. This one stumps you a moment before you think about what it resembles.]",
+            "[Squirrel! You quickly point to the prey on the pile and once again sign for it yourself.]",
+            "[t_c seems pleased before wiggling a forepaw side to side. This one isn't familiar.]",
+            "[It doesn't seem to bother {PRONOUN/t_c/object} that you don't know as you shrug your shoulders in defeat. {PRONOUN/t_c/subject/CAP} {VERB/t_c/point/points} to a fish, and you feel a bit silly for not catching on.]",
+            "[That ends the lesson for the day, though, as t_c signs that {PRONOUN/t_c/subject} {VERB/t_c/need/needs} to go.]"
+        ]
     ]
 }

@@ -18737,11 +18737,11 @@
             "any"
         ],
         [
-            "[t_c helps you navigate the camp after a storm has left the clearing covered in puddles.]",
+            "[t_c helps you navigate through the camp after a storm left the clearing covered in puddles.]",
             "[The two of you delicately dodge the puddles, grab a meal from the fresh kill pile, and return to a safe, dry den to eat.]",
-            "[t_c drops a feather in front of you. Okay. Is there... something you're supposed to do with it?]",
+            "[t_c drops what feels to be a feather on your nose. Okay. Is there... something you're supposed to do with it?]",
             "[...]",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/walk/walks} away without any context. The feather is left at your paws.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/walk/walks} away without any context. The feather is left to flutter down onto your paws.]",
             "[... Alright then. Guess it's yours now!]"
         ]
     ],
