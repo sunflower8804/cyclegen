@@ -3137,5 +3137,294 @@
                 "weight": 40
             }
         ]
-    }
-]
+    },
+    {
+        "patrol_id": "life_df_ant4",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "df"
+        ],
+        "patrol_art": "life_df_og11",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You stalk along the edge of a murky river, examining the water closely. One of your Clanmates told you about a rumour that there were fish in the Dark Forest that could eat a cat whole.",
+        "decline_text": "You cast a doubtful look at the shadowy goop. There's no way anything would be able to live there! You shake your head and bound back into the forest, reminding yourself not to believe everything you hear.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "As you inch closer, your paws slip off of the rocks and you tumble towards the spooky river. There's a muffled splash as you hit the water, and you flail frantically to get out. Suddenly, your claws snag onto a large chunk of driftwood on the bank. With sheer grit and determination, you claw your way out of the frigid water and back to the shore. Your fur sticks to your pelt where the water was gripping you, but hey, at least you made it out!",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "As you inch closer, your paws slip off of the rocks and you tumble towards the spooky river. You reach out for something to grab onto, but your paws just miss the driftwood on the shore. You give a frustrated hiss as you struggle for the bank. However, the freezing water is soon too much for you to bear, and you sink under.",
+                "exp": 0,
+                "weight": 20,
+                "injury": [ 
+                    {
+                        "cats": ["y_c"],
+                        "injuries": ["frostbite"],
+                        "scars": ["FROSTSOCK"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c fell into a river in the Dark Forest and earned a scar after their frostbite bit too hard."
+                    }
+                }
+            ]
+        },
+        {
+            "patrol_id": "life_df_ant5",
+            "biome": [
+                "Any"
+            ],
+            "season": [
+                "Any"
+            ],
+            "types": [
+                "lifegen"
+            ],
+            "tags": [
+                "df"
+            ],
+            "patrol_art": "life_df_og11",
+            "min_cats": 1,
+            "max_cats": 1,
+            "min_max_status": {},
+            "weight": 20,
+            "intro_text": "As you venture out into the Dark Forest, you look curiously at a path you've never been down before. You walk towards it before stopping abruptly, wondering whether exploring is worth the risk.",
+            "decline_text": "You contemplate for a moment more before heading back towards the areas you know. Anything could be lurking under the shadowy trees out there, and it's better to be safe than sorry.",
+            "chance_of_success": 60,
+            "success_outcomes": [
+                {
+                    "text": "You raise your head fearlessly as you begin to confidently walk down the path. It's unusually cold here compared to the rest of the forest, and the fur along your neck begins to prickle. Before long, you come across a quiet, frosty clearing, which, by the smell of it, no one has been to in a while. You take a moment to admire the few poppies that have sprung up and enjoy the reposeful atmosphere from curled up under tree.",
+                    "exp": 0,
+                    "weight": 20
+                },
+                {
+                    "text": "You decide to brave the unknown--after all, what's the worst that can happen? You wander through this new part of the forest, feeling underwhelmed when everything looks similar, before coming to a small field. Here, a surprising number of poppies have sprung up, which is something you've never seen anywhere else in the Dark Forest. Delighted, you grab one, and when you wake up the next morning, it's still tucked behind your ear.",
+                    "exp": 0,
+                    "weight": 20,
+                    "accessory": [
+                        {
+                            "cats": [
+                                "y_c"
+                            ],
+                            "accessory": [
+                                "WHITE POPPY"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "fail_outcomes": [
+                {
+                    "text": "Your fur prickles as you walk down the path. It's unnaturally cold here, and you're not sure if you like it. After walking a few steps, a cold frost nips at your paws, causing you to stumble back in surprise. You try to move forward again, but the cold bites back harder. It seems not even the forest wants you to go this way.",
+                    "exp": 0,
+                    "weight": 20,
+                    "injury": [ 
+                        {
+                            "cats": ["y_c"],
+                            "injuries": ["frostbite"],
+                            "scars": ["FROSTMITT"]
+                        }
+                    ],
+                    "history_text": {
+                        "scar": "m_c received a scar after {PRONOUN/y_c/poss} frostbite took a turn for the worse."
+                        }
+                },
+                {
+                    "text": "The magnetic feeling of wanting to explore is too much to overcome, and you set off down the path without a second thought.You're too focused on admiring how the trees in this part of the forest are taller and fail to notice the rapidly plummeting temperatures around you. You surprise yourself a few minutes later when you see a cloud of breath appear as you exhale. Before you can turn back, the cold is too much to bear. Maybe curiosity <i>did</i> kill the cat.",
+                    "exp": 0,
+                    "weight": 20,
+                    "dead_cats": ["y_c"],
+                    "history_text": {
+                        "death": "m_c died after {PRONOUN/y_c/subject} froze to death in the Dark Forest."
+                        }
+                }
+            ]
+        },
+        {
+            "patrol_id": "life_df_ant6",
+            "biome": [
+                "Any"
+            ],
+            "season": [
+                "Any"
+            ],
+            "types": [
+                "lifegen"
+            ],
+            "tags": [
+                "df",
+                "fellowtrainee"
+            ],
+            "patrol_art": "life_df_og11",
+            "min_cats": 2,
+            "max_cats": 2,
+            "min_max_status": {},
+            "weight": 20,
+            "intro_text": "You race through the Dark Forest, bounding with all the speed you can muster. r_c is just a few paw steps ahead of you, having challenged you to a race to the training grounds and taking off before you could answer. You push yourself harder, wanting to beat r_c there.",
+            "decline_text": "You sigh frustratedly as r_c disappears ahead of you. It seems {PRONOUN/r_c/subject} had too much of a head start, and there's no way you can catch up to {PRONOUN/r_c/object}. You frown and drag your paws as you walk towards the training grounds after {PRONOUN/r_c/object}, not liking the feeling of being defeated... even if the race was unfair.",
+            "chance_of_success": 60,
+            "success_outcomes": [
+                {
+                    "text": "r_c might be ahead right now, but {PRONOUN/r_c/subject} {VERB/r_c/don't/doesn't} know about the shortcut through a tunnel that you found the other day. You scoff as r_c races past it, laughing to yourself as you dart into the tunnel's dark opening. You quickly make your way to the training grounds, smiling smugly as r_c breathlessly enters the clearing a couple minutes later.",
+                    "exp": 10,
+                    "weight": 20
+                },
+                {
+                    "text": "You push forward, dodging spindly trees and hopping murky puddles. By the time you arrive at the training grounds, r_c is still right next to you, and you both collapse to the ground, laughing breathlessly. It's a tie!",
+                    "exp": 10,
+                    "weight": 20,
+                    "relationships": [
+                        {
+                            "cats_to": ["r_c"],
+                            "cats_from": ["p_l"],
+                            "mutual": true,
+                            "values": ["platonic"],
+                            "amount": 8
+                        }
+                    ]
+                }
+            ],
+            "fail_outcomes": [
+                {
+                    "text": "You power ahead, knowing that you can beat r_c if you go just a little faster. After attempting to serve around {PRONOUN/r_c/object}, your paws trip out from under you and you tumble to the floor in a heap of arms and legs. With a frown, you pick yourself up and chase after r_c, but {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} already gone.",
+                    "exp": 0,
+                    "weight": 20
+                }
+            ]
+        },
+        {
+            "patrol_id": "life_df_ant7",
+            "biome": [
+                "Any"
+            ],
+            "season": [
+                "Any"
+            ],
+            "types": [
+                "lifegen"
+            ],
+            "tags": [
+                "df"
+            ],
+            "patrol_art": "life_df_og11",
+            "min_cats": 2,
+            "max_cats": 2,
+            "min_max_status": {},
+            "weight": 20,
+            "intro_text": "You pant heavily as you stalk out of the training grounds, declaring that you need to take a break. After padding down a path for a little bit, your whiskers flick in surprise as you see one of your Clanmates up ahead. r_c doesn't seem to see you, and you crouch down low, unsure of how to proceed.",
+            "decline_text": "You carefully, quietly, slink away from r_c. Everycat has their own reasons for being here, and it's probably better to not pry to closely into anyone else's business.",
+            "chance_of_success": 60,
+            "success_outcomes": [
+                {
+                    "text": "You approach r_c cautiously, and ask {PRONOUN/r_c/object} what {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} doing here. r_c's eyes widen as {PRONOUN/r_c/subject} {VERB/r_c/explain/explains} how {PRONOUN/r_c/subject} thought {PRONOUN/r_c/subject} could use some extra training. You both run through some additional moves, giving each other tips and tricks on how to improve.",
+                    "exp": 10,
+                    "weight": 20,
+                    "convert": ["r_c"],
+                    "faith_effects": [
+                        {
+                            "faith_cat": ["r_c"],
+                            "amount": -1
+                        }
+                    ]
+    
+                },
+                {
+                    "text": "When you approach r_c to ask what {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} doing here, {PRONOUN/r_c/subject} {VERB/r_c/seem/seems} relieved to come across a familiar face. {PRONOUN/r_c/subject/CAP} {VERB/r_c/explain/explains} that {PRONOUN/r_c/subject} {VERB/r_c/were/was} told the training here was effective, but now that {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} here, it's very scary, and {PRONOUN/r_c/subject}'d like to go home. You lead {PRONOUN/r_c/object} to a good napping spot, where {PRONOUN/r_c/subject} can drift off and wake up back in camp.",
+                    "exp": 10,
+                    "weight": 20,
+                    "faith_effects": [
+                        {
+                            "faith_cat": ["r_c"],
+                            "amount": -1
+                        }
+                    ]
+                }
+            ],
+            "fail_outcomes": [
+                {
+                    "text": "As you approach r_c, {PRONOUN/r_c/poss} eyes darken a little. {PRONOUN/r_c/subject/CAP} {VERB/r_c/hiss/hisses} out that {PRONOUN/r_c/poss} reason for being here is none of your business and you should keep to yourself. As {PRONOUN/r_c/subject} {VERB/r_c/slink/slinks} into the forest, you can't help but wonder what that was all about.",
+                    "exp": 0,
+                    "weight": 20
+                },
+                {
+                    "text": "r_c startles as you pad up to {PRONOUN/r_c/object}, the fur along {PRONOUN/r_c/poss} neck and back prickling. Before you can say anything, {PRONOUN/r_c/subject} {VERB/r_c/mutter/mutters} something about training before bolting out into the forest. Your head tilts to the side as you watch {PRONOUN/r_c/object} go, wondering why {PRONOUN/r_c/subject} {VERB/r_c/were/was} acting so strangely.",
+                    "exp": 0,
+                    "weight": 20
+                },
+                {
+                    "text": "You approach r_c curiously, but before you can say or do anything, {PRONOUN/r_c/subject} {VERB/r_c/lunge/lunges} at you, {PRONOUN/r_c/poss} claws catching in your pelt. You jump away from {PRONOUN/r_c/object} and blink in surprise as {PRONOUN/r_c/subject} {VERB/r_c/turn/turns} and {VERB/r_c/race/races} into the forest. You're sure {PRONOUN/r_c/subject} wouldn't have done that if {PRONOUN/r_c/subject} knew who you were, meaning the dimly lit forest must've shrouded your identity.",
+                    "exp": 0,
+                    "weight": 20,
+                    "injury": [
+                        {
+                           "cats": ["y_c"],
+                           "injuries": ["claw_wound"],
+                           "scars": ["NECKBITE"]
+                        }
+                    ],
+                    "history_text": {
+                        "scar": "m_c was scarred after one of {PRONOUN/y_c/poss} Clanmates attacked {PRONOUN/m_c/object} in the Dark Forest."
+                    }
+                }
+            ]
+        },
+        {
+            "patrol_id": "life_df_ant8",
+            "biome": [
+                "Any"
+            ],
+            "season": [
+                "Any"
+            ],
+            "types": [
+                "lifegen"
+            ],
+            "tags": [
+                "df",
+                "shunned"
+            ],
+            "patrol_art": "life_df_og11",
+            "min_cats": 1,
+            "max_cats": 1,
+            "min_max_status": {},
+            "weight": 20,
+            "intro_text": "Your fur raises uncomfortably as you follow a path towards the training grounds. By now, word of you being shunned probably got out, and you're not sure how everyone will react. Tension builds in your muscles as you approach the clearing.",
+            "decline_text": "This was a silly idea, and you turn and run back into the forest. Maybe next moon you'll feel a little braver.",
+            "chance_of_success": 60,
+            "success_outcomes": [
+                {
+                    "text": "There are a few murmurs as you push your way through the underbrush, but they're silenced after df_m_n hisses at everyone to resume training. You pad over to your usual sparring partner and begin a match. After the session is over, df_m_n nods at you, a hint of respect in {PRONOUN/df_m_n/poss} eyes.",
+                    "exp": 10,
+                    "weight": 20
+                },
+                {
+                    "text": "You enter the clearing with your head held high, cats watching you as you make your way over to the cat you usually spar with, rdf_c. Curiosity lights their eyes as they ask you all about what happened, and soon you're retelling the story to a small crowd of cats.",
+                    "exp": 10,
+                    "weight": 20
+                }
+            ],
+            "fail_outcomes": [
+                {
+                    "text": "As you walk into the clearing, you try to ignore the murmurs and pointed stares that follow you. However, as you begin to spar with rdf_c, who keeps looking at you nervously, it's soon too much to handle. You mumble a lame excuse about being tired and flee the scene without a glance back.",
+                    "exp": 0,
+                    "weight": 20
+                }
+            ]
+        }       
+    ]

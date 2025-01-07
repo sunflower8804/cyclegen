@@ -527,5 +527,95 @@
                 "weight": 20
             }
         ]
+    },
+    {
+        "patrol_id": "life_dep_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "DefaultDeputy",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "As you're leaving your den in the morning to assemble dawn patrols, r_w1_neurotic stops you, apologises for bothering you, and asks not to be put on patrol with r_w2_brooding this morning.",
+        "decline_text": "You wave r_w1_neurotic off. All Clanmates must learn to work together, and if they end up on patrol together, {PRONOUN/r_w1_neurotic/subject}'ll have to deal with it!",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You ask why, and r_w1_neurotic explains that r_w2_brooding is a bit intimidating, and tends to throw off {PRONOUN/r_w1_neurotic/poss} focus. You tell r_w1_neurotic you'll assign {PRONOUN/r_w1_neurotic/object} and r_w2_brooding to separate duties, but let {PRONOUN/r_w1_neurotic/object} know that r_w2_brooding isn't as scary as {PRONOUN/r_w2_brooding/subject} {VERB/r_w2_brooding/seem/seems}.",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "You tell r_w1_neurotic that {PRONOUN/r_w1_neurotic/subject} can't avoid {PRONOUN/r_w1_neurotic/poss} Clanmates, and in fact, you'll make sure {PRONOUN/r_w1_neurotic/subject}{VERB/r_w1_neurotic/'re/'s} put on a patrol with r_w2_brooding today. r_w1_neurotic looks upset, but when {PRONOUN/r_w1_neurotic/subject} {VERB/r_w1_neurotic/return/returns} from {PRONOUN/r_w1_neurotic/poss} dawn patrol later, you see {PRONOUN/r_w1_neurotic/object} laughing and joking around with r_w2_brooding. Looks like {PRONOUN/r_w2_brooding/subject} {VERB/r_w2_brooding/weren't/wasn't} so scary after all.",
+                "exp": 15,
+                "weight": 20,
+                "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "righteous",
+                    "ambitious",
+                    "strict",
+                    "responsible",
+                    "smug",
+                    "loyal",
+                    "justified",
+                    "methodical"
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["r_w1_neurotic"],
+                        "cats_from": ["r_w2_brooding"],
+                        "mutual": true,
+                        "values": ["platonic"],
+                        "amount": 10
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You're about to ask why, but just as you do, you notice r_w2_brooding emerging from {PRONOUN/r_w2_brooding/poss} den, blinking sleep from {PRONOUN/r_w2_brooding/poss} eyes. You give r_w1_neurotic a quick nod, approving of {PRONOUN/r_w1_neurotic/subject} request, and continue on your way to the front of camp.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You dismiss r_w1_neurotic-- surely {PRONOUN/r_w1_neurotic/subject} can't be that intimidated by r_w2_brooding. You put the two on the dawn patrol together, but r_w1_neurotic returns home early, muttering that {PRONOUN/r_w1_neurotic/subject} {VERB/r_w1_neurotic/don't/doesn't} feel well as {PRONOUN/r_w1_neurotic/subject} {VERB/r_w1_neurotic/run/runs} past you to go back to sleep.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You sympathise with r_w1_neurotic but deny {PRONOUN/r_w1_neurotic/poss} request. r_w2_brooding isn't a bad cat - surely there is no harm in patrolling with {PRONOUN/r_w2_brooding/object} once in a while. Though, you start to regret your decision as r_w1_neurotic falls further into {PRONOUN/r_w1_neurotic/poss} nerves when the patrol heads off.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "thoughtful",
+                    "calm",
+                    "flexible",
+                    "wise",
+                    "righteous",
+                    "lonesome",
+                    "gloomy",
+                    "mellow"
+                ],
+                "can_have_stat": ["p_l"],
+                "relationship": [
+                    {
+                        "cats_to": ["p_l"],
+                        "cats_from": ["r_w1_neurotic"],
+                        "mutual": false,
+                        "values": ["comfort"],
+                        "amount": -5
+                    }
+                ]
+            }
+        ]
     }
 ]

@@ -71,7 +71,6 @@ class Name:
 
     def __init__(
         self,
-        status=None,
         prefix=None,
         suffix=None,
         biome=None,
@@ -84,7 +83,6 @@ class Name:
         self.suffix = suffix
         self.specsuffix_hidden = specsuffix_hidden
         self.shunned = shunned
-        self.status = status
         self.cat = cat
 
         try:

@@ -585,7 +585,61 @@
                 "weight": 20
             },
             {
-                "text": "You approach the cam entrance, ready to investigate, but you hear the noise again, louder, and you suddenly have no interest in getting any close to it. You race back to your nest, cover your ears with moss, and hope you can go to sleep and forget about it.",
+                "text": "You approach the camp entrance, ready to investigate, but you hear the noise again, louder, and you suddenly have no interest in getting any close to it. You race back to your nest, cover your ears with moss, and hope you can go to sleep and forget about it.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "gen_life_J2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "gen_bord_largedog",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {
+            "normal adult": [1, 1]
+        },
+        "weight": 20,
+        "intro_text": "While on a lone border patrol, you notice a large dog pawing at a kittypet, its huge, fluffy tail lashing!",
+        "decline_text": "You turn to head back to camp and warn your Clan about the dog. Hopefully that kittypet can fend for itself.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You let out a yowl, attempting to taunt the dog and give the kittypet a chance to escape. However, the dog doesn't seem to care. Instead, the kittypet takes notice and tells you politely not to panic-- the dog is their friend, and they're just playing. How strange. They might as well try to befriend a forest fire!",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "You crawl forwards on your belly and quietly call out to the kittypet, asking if they need your help. They say no, and tell you that this dog is in fact their friend. Sensing your scepticism, they invite you to approach the dog, which you do with unsheathed claws. The dog gives you a curious sniff and a lick on the head before returning its focus to the kittypet. Why can't all dogs be so harmless?",
+                "exp": 20,
+                "weight": 15
+            },
+            {
+                "text": "You cautiously trot forward, wondering if the kittypet may be in danger. However, when you see the dog's face, you can tell that they're friendly, and just playing. What a cute couple of friends!",
+                "exp": 20,
+                "weight": 15,
+                "can_have_stat": ["p_l"],
+                "stat_skill": ["LANGUAGE,10"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You launch yourself forwards, jumping onto the dog's back and sinking your claws in, yowling at the kittypet to run while they can. However, the dog just yelps pathetically and drops to the ground, squishing you underneath it, and when you wriggle free, the kittypet is still there. They land a swipe on your face before you can stand up and hiss at you not to be so stupid. When you finally get up and start to leave, you turn around once more to see the kittypet licking the dog's wounds. What a fearless cat!",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You step forwards and call out to the dog, attempting to distract it and give the kittypet a chance to escape. When the dog notices, it perks its ears and starts trotting towards you, its tail lashing wildly. You turn and sprint away, but the dog doesn't follow, and you can hear the kittypet laughing as you retreat. You head back to camp to warn your Clan about... whatever that was.",
                 "exp": 0,
                 "weight": 20
             }

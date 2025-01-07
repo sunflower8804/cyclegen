@@ -1641,5 +1641,87 @@
                 ]
             }
         ]
+    },
+    {
+        "patrol_id": "life_warrior_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "life_warrior_J1",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You're sitting in camp in the afternoon when dislike_r_w returns home from a solo hunting patrol, carrying such a huge rabbit that {PRONOUN/dislike_r_w/subject}{VERB/dislike_r_w/'re/'s} tripping over it. You wonder if you should get up to help.",
+        "decline_text": "dislike_r_w is plenty capable. You sit and watch {PRONOUN/dislike_r_w/object} stumble to the fresh-kill pile, snickering to yourself at the trouble {PRONOUN/dislike_r_w/subject}{VERB/dislike_r_w/'re/'s} having. Though you can't deny it's an impressive catch.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "Despite dislike_r_w being one of your least favourite cats at the moment, you push aside your personal feelings and get up to ask dislike_r_w if {PRONOUN/dislike_r_w/subject}'d like any help. Thankfully, dislike_r_w accepts without any unnecessary fuss and you work as a team to get the huge rabbit to the freshkill pile.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You stand up to give dislike_r_w a paw, but {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/swat/swats} you away, hissing through a mouthful of rabbit fur that {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/don't/doesn't} need any help. You return to your nest with a flick of your tail and make sure {PRONOUN/dislike_r_w/subject} can hear you laughing when {PRONOUN/dislike_r_w/subject} immediately {VERB/dislike_r_w/trip/trips} over the prey and {VERB/dislike_r_w/fall/falls} flat on {PRONOUN/dislike_r_w/poss} face.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                        "cold",
+                        "vengeful",
+                        "grumpy",
+                        "aloof",
+                        "righteous",
+                        "competitive",
+                        "smug"
+                    ],
+                "can_have_stat": ["dislike_r_w"],
+                "relationships": [
+                    {
+                        "cats_to": ["dislike_r_w"],
+                        "cats_from": ["y_c"],
+                        "mutual": true,
+                        "values": ["dislike"],
+                        "amount": 10
+                    }
+                ]
+            },
+            {
+                "text": "You know that dislike_r_w doesn't like you that much, so you decide to start chatting with {PRONOUN/dislike_r_w/object}! You hope that this will motivate {PRONOUN/dislike_r_w/object} to move faster, but it turns out that chatting with {PRONOUN/dislike_r_w/object} made dislike_r_w move slower. You just wanted the rabbit to be brought to the fresh-kill pile faster, not to strike up an actual conversation with {PRONOUN/dislike_r_w/object}.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["troublesome","childish","playful","strange","rebellious","spontaneous","energetic","bouncy"],
+                "can_have_stat": ["p_l"],
+                "relationships": [
+                    {
+                        "cats_to": ["p_l"],
+                        "cats_from": ["dislike_r_w"],
+                        "mutual": false,
+                        "values": ["comfort", "platonic"],
+                        "amount": 10
+                    },
+                    {
+                        "cats_to": ["p_l"],
+                        "cats_from": ["dislike_r_w"],
+                        "mutual": false,
+                        "values": ["dislike"],
+                        "amount": -5
+                    }
+                ]
+            },
+            {
+                "text": "You're nothing but awkward as you approach dislike_r_w, asking if {PRONOUN/dislike_r_w/subject} would like any help. Your awkwardness must have peeved dislike_r_w off and {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/refuse/refuses} the offer, only to take one more step and fall directly on {PRONOUN/dislike_r_w/poss} face. It takes everything in you to not laugh.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
     }
 ]
