@@ -1375,7 +1375,7 @@ class Clan:
                 other_clan_meds = []
                 for other_clan_med in c:
                     other_clan_med = other_clan_med.split(",")
-                    n = Name(prefix = other_clan_med[0], suffix = other_clan_med[1], status = other_clan_med[2])
+                    n = Name(prefix = other_clan_med[0], suffix = other_clan_med[1])
                     other_clan_meds.append(n)
                 other_med.append(other_clan_meds)
             game.switches["other_med"] = other_med
@@ -1452,11 +1452,12 @@ class Clan:
                             except ValueError:
                                 print(f'attempted to remove {acc} from possible acc list, but it was not in the list!')
 
-                if not c.pelt.inventory:
-                    c.pelt.inventory = []
-                for acc in acc_list:
-                    if acc not in c.pelt.inventory:
-                        c.pelt.inventory.append(acc)
+                # if not c.pelt.inventory:
+                #     c.pelt.inventory = []
+                # for acc in acc_list:
+                #     if acc not in c.pelt.inventory:
+                #         c.pelt.inventory.append(acc)
+                return acc_list
 
     def load_clan_settings(self):
         if os.path.exists(

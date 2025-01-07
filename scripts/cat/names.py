@@ -78,15 +78,11 @@ class Name:
         shunned=0,
         load_existing_name=False,
         cat=None,
-
-        # LG
-        status=None,
     ):
         self.prefix = prefix
         self.suffix = suffix
         self.specsuffix_hidden = specsuffix_hidden
         self.shunned = shunned
-        self.status = status
         self.cat = cat
 
         try:

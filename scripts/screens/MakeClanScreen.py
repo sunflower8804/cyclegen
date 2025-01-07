@@ -1745,7 +1745,7 @@ class MakeClanScreen(Screens):
             ui_scale(pygame.Rect((220, 160), (100, 30))),
             "Small",
             get_button_dict(ButtonStyles.SQUOVAL, (100, 30)),
-            object_id="@buttonstyles_icon",
+            object_id="@buttonstyles_squoval",
             manager=MANAGER
         )
 
@@ -1753,7 +1753,7 @@ class MakeClanScreen(Screens):
             ui_scale(pygame.Rect((350, 160), (100, 30))),
             "Medium",
             get_button_dict(ButtonStyles.SQUOVAL, (100, 30)),
-            object_id="@buttonstyles_icon",
+            object_id="@buttonstyles_squoval",
             manager=MANAGER
         )
 
@@ -1761,7 +1761,7 @@ class MakeClanScreen(Screens):
             ui_scale(pygame.Rect((480, 160), (100, 30))),
             "Large",
             get_button_dict(ButtonStyles.SQUOVAL, (100, 30)),
-            object_id="@buttonstyles_icon",
+            object_id="@buttonstyles_squoval",
             manager=MANAGER
         )
 
@@ -1771,7 +1771,7 @@ class MakeClanScreen(Screens):
             ui_scale(pygame.Rect((295, 200), (80, 30))),
             "Old",
             get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
-            object_id="@buttonstyles_icon",
+            object_id="@buttonstyles_squoval",
             tool_tip_text="The Clan has existed for many moons and cats' backstories will reflect this.",
             manager=MANAGER
         )
@@ -1779,7 +1779,7 @@ class MakeClanScreen(Screens):
             ui_scale(pygame.Rect((425, 200), (80, 30))),
             "New",
             get_button_dict(ButtonStyles.SQUOVAL, (80, 30)),
-            object_id="@buttonstyles_icon",
+            object_id="@buttonstyles_squoval",
             tool_tip_text="The Clan is newly established and cats' backstories will reflect this.",
             manager=MANAGER
         )
@@ -2424,7 +2424,7 @@ class MakeClanScreen(Screens):
                 # search bar first
                 self.elements["search_button"] = UISurfaceImageButton(
                     ui_scale(pygame.Rect((475, 530), (34, 34))),
-                    "!",
+                    Icon.MAGNIFY,
                     get_button_dict(ButtonStyles.ICON, (34, 34)),
                     object_id="@buttonstyles_icon",
                     manager=MANAGER,
@@ -2719,7 +2719,7 @@ class MakeClanScreen(Screens):
 
                 self.elements["search_button"] = UISurfaceImageButton(
                     ui_scale(pygame.Rect((475, 530), (34, 34))),
-                    "!",
+                    Icon.MAGNIFY,
                     get_button_dict(ButtonStyles.ICON, (34, 34)),
                     object_id="@buttonstyles_icon",
                     manager=MANAGER,
