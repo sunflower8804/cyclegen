@@ -1452,11 +1452,12 @@ class Clan:
                             except ValueError:
                                 print(f'attempted to remove {acc} from possible acc list, but it was not in the list!')
 
-                if not c.pelt.inventory:
-                    c.pelt.inventory = []
-                for acc in acc_list:
-                    if acc not in c.pelt.inventory:
-                        c.pelt.inventory.append(acc)
+                # if not c.pelt.inventory:
+                #     c.pelt.inventory = []
+                # for acc in acc_list:
+                #     if acc not in c.pelt.inventory:
+                #         c.pelt.inventory.append(acc)
+                return acc_list
 
     def load_clan_settings(self):
         if os.path.exists(
