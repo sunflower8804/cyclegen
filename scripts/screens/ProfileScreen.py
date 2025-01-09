@@ -486,11 +486,13 @@ class ProfileScreen(Screens):
                                                                             (150, 150)), manager=MANAGER)
                 self.profile_elements["cat_image"].disable()
                 self.profile_elements["cat_info_column1"].kill()
-                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(self.generate_column1(self.the_cat),
-                                                                    ui_scale(pygame.Rect((300, 230), (180, 190))),
-                                                                    object_id=get_text_box_theme(
-                                                                        "#text_box_22_horizleft"),
-                                                                    line_spacing=0.95, manager=MANAGER)
+                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
+                    self.generate_column1(self.the_cat),
+                    ui_scale(pygame.Rect((300, 220), (180, 200))),
+                    object_id=get_text_box_theme("#text_box_22_horizleft"),
+                    line_spacing=1,
+                    manager=MANAGER,
+                )
                 self.update_disabled_buttons_and_text()
             elif "leader_ceremony" in self.profile_elements and \
                     event.ui_element == self.profile_elements["leader_ceremony"]:
@@ -908,11 +910,13 @@ class ProfileScreen(Screens):
                                                                             (150, 150)), manager=MANAGER)
                 self.profile_elements["cat_image"].disable()
                 self.profile_elements["cat_info_column1"].kill()
-                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(self.generate_column1(self.the_cat),
-                                                                    ui_scale(pygame.Rect((300, 230), (180, 190))),
-                                                                    object_id=get_text_box_theme(
-                                                                        "#text_box_22_horizleft"),
-                                                                    line_spacing=0.95, manager=MANAGER)
+                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
+                    self.generate_column1(self.the_cat),
+                    ui_scale(pygame.Rect((300, 220), (180, 200))),
+                    object_id=get_text_box_theme("#text_box_22_horizleft"),
+                    line_spacing=1,
+                    manager=MANAGER,
+                )
 
 
     def screen_switches(self):
@@ -2900,7 +2904,7 @@ class ProfileScreen(Screens):
                                                                 image_cache.load_image(f"resources/images/faith{cat_faith}.png").convert_alpha())
         self.faith_bar.disable()
         self.faith_text = UITextBoxTweaked(self.get_faith_text(cat_faith),
-                                                        ui_scale(pygame.Rect((175, 535), (425, 149))),
+                                                        ui_scale(pygame.Rect((175, 535), (425,75))),
                                                         object_id="#text_box_26_horizleft_pad_10_14",
                                                         line_spacing=1, manager=MANAGER)
         
