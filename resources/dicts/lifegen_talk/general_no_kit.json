@@ -216,7 +216,6 @@
         [
             "Any",
             "assertive",
-            "silly",
             "unlawful",
             "dislike"
         ],
@@ -1255,7 +1254,6 @@
             "Any",
             "platonic_love",
             "assertive",
-            "silly",
             "neurotic",
             "upstanding",
             "you_ill",
@@ -1482,7 +1480,6 @@
             "Any",
             "platonic_love",
             "assertive",
-            "silly",
             "cool",
             "they_grieving",
             "dead_close",
@@ -3948,7 +3945,6 @@
             "they_grieving",
             "no_kit",
             "assertive",
-            "silly",
             "cool",
             "they_blind"
         ],
@@ -4128,7 +4124,7 @@
             "any"
         ],
         [
-            "[t_c stares off into the distance, a rare moment when {PRONOUN/t_c/subject} aren't smiling.]",
+            "[t_c stares off into the distance, a rare moment when {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} smiling.]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/notice/notices} you looking at {PRONOUN/t_c/object} and sigh.]",
             "Everycat expects me to just move on, to be my usual self. But there's a weight here...",
             "[t_c places a paw over {PRONOUN/t_c/poss} heart.]",
@@ -4927,7 +4923,6 @@
             "platonic_like",
             "romantic_like",
             "assertive",
-            "silly",
             "neurotic",
             "upstanding",
             "you_ill",
@@ -5271,10 +5266,9 @@
             "They don't do anything with them! Because if they were doing something with them, they'd be using them, silly!"
         ]
     ],
-    "silly_dislike_busy1": [
+    "dislike_busy1": [
         [
             "Any",
-            "silly",
             "dislike",
             "they_blind"
         ],
@@ -5310,10 +5304,9 @@
             "[t_c seems particularly uncomfortable around you.]"
         ]
     ],
-    "silly_dislike_apology": [
+    "dislike_apology": [
         [
             "Any",
-            "silly",
             "dislike",
             "they_blind"
         ],
@@ -5321,10 +5314,9 @@
             "I'm sorry for whatever I did to upset you, y_c."
         ]
     ],
-    "silly_dislike_working": [
+    "dislike_working": [
         [
             "Any",
-            "silly",
             "dislike",
             "they_blind"
         ],
@@ -5332,10 +5324,9 @@
             "y_c, I'm busy... working on something. I'll talk to you later."
         ]
     ],
-    "silly_dislike_nty": [
+    "dislike_nty": [
         [
             "Any",
-            "silly",
             "dislike",
             "they_blind"
         ],
@@ -5344,10 +5335,9 @@
             "[You haven't even opened your mouth yet.]"
         ]
     ],
-    "silly_hate_whoasked": [
+    "hate_whoasked": [
         [
             "Any",
-            "silly",
             "hate"
         ],
         [
@@ -5356,10 +5346,9 @@
             "I'm looking for who in StarClan asked... so far, I'm not having any luck!"
         ]
     ],
-    "silly_hate_thefunny": [
+    "hate_thefunny": [
         [
             "Any",
-            "silly",
             "hate"
         ],
         [
@@ -5370,10 +5359,9 @@
             "[You explain the joke, assuming {PRONOUN/t_c/subject} just didn't get it after all, but {PRONOUN/t_c/subject} simply {VERB/t_c/nod/nods} at you and {VERB/t_c/go/goes} back to what {PRONOUN/t_c/subject} {VERB/t_c/were/was} doing.]"
         ]
     ],
-    "silly_hate_ignoring": [
+    "hate_ignoring": [
         [
             "Any",
-            "silly",
             "hate",
             "they_blind"
         ],
@@ -5393,10 +5381,9 @@
             "Thanks for letting me have one nice thing, I guess?"
         ]
     ],
-    "silly_hate_list": [
+    "unlawful_hate_list": [
         [
             "Any",
-            "silly",
             "unlawful",
             "hate",
             "no_kit",
@@ -7730,7 +7717,7 @@
             "sweet"
         ],
         [
-            "y_c, looking sharp as always Love, loving the way you've groomed your fur today. I wonder if you'll teach out kittens that technique, maybe we'll pass down it down through the family.",
+            "y_c, looking sharp as always Love, loving the way you've groomed your fur today. I wonder if you'll teach our kittens that technique, maybe we'll pass down it down through the family.",
             "We'll look like our own little Clan hehe. Enemy warriors will see us and our perfectly groomed pelts from miles away.",
             "[You laugh, and state that our shadows will stretch beyond the horizon, our groomed pelts will consume the land!]",
             "PFT- Yes, and we'll take over all the Clans, one pelt at a time! Hahaha, I love you dear. I hope our kits have our sense of humour.",
@@ -7891,7 +7878,8 @@
             "assertive",
             "unlawful",
             "neurotic",
-            "silly"
+            "silly",
+            "you_silly"
         ],
         [
             "[You sit happily in the sun in the clearing, you watch as cats go about their day. t_c sits beside you, following your line of sight. {PRONOUN/t_c/subject/CAP} {VERB/t_c/chuckle/chuckles} to {PRONOUN/t_c/self} as {PRONOUN/t_c/subject} {VERB/t_c/point/points} to a group of kittens playing across the clearing.]",
@@ -9258,6 +9246,7 @@
         [
             "no_kit",
             "assertive",
+            "introspective",
             "platonic_love",
             "silly",
             "unlawful",
@@ -10016,7 +10005,7 @@
             "they_blind"
         ],
         [
-            "Ugh ... T_s is mad at me, yet again.",
+            "Ugh ... t_s is mad at me, yet again.",
             "How was I supposed to know that {PRONOUN/t_s/subject} {VERB/t_s/were/was} saving that stupid bird? It wasn't like it had {PRONOUN/t_s/poss} name on it!",
             "Y'know, sometimes I wish I never even had a {PRONOUN/t_s/sibling} like t_s. There'd be no one to boss me around, no one to prank me, no one to drive me crazy all the time!",
             "... But then, I guess there'd be no one to laugh at my stupid jokes, either.",
@@ -12196,7 +12185,6 @@
             "you_queen's_apprentice",
             "you_shunned",
             "stable",
-            "silly",
             "cool",
             "unlawful",
             "they_blind",
@@ -12352,7 +12340,6 @@
             "you_shunned",
             "stable",
             "unlawful",
-            "silly",
             "brooding",
             "upstanding"
         ],
@@ -13899,7 +13886,6 @@
             "you_sc",
             "any",
             "neurotic",
-            "silly",
             "stable"
         ],
         [
@@ -17784,10 +17770,9 @@
             "Please don't tell me d_c was watching me this morning, I'm embarrassed enough as it is..."
         ]
     ],
-    "silly_dc_ashamed": [
+    "dc_ashamed": [
         [
             "Any",
-            "silly",
             "hate",
             "dead_close",
             "you_blind",
@@ -18917,7 +18902,6 @@
             "they_assertive",
             "they_upstanding",
             "they_neurotic",
-            "they_silly",
             "mountainous",
             "leafbare",
             "they_blind",
