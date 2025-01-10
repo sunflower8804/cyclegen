@@ -6461,6 +6461,159 @@
                 "path": "resources/images/buttons/patches_tint_pink_unavailable.png"
             }
         }
+    },
+    "#tint_button_red": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/tint_button_red.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/tint_button_red_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/tint_button_red_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/tint_button_red_unavailable.png"
+            }
+        }
+    },
+    "#tint_button_orange": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/tint_button_orange.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/tint_button_orange_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/tint_button_orange_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/tint_button_orange_unavailable.png"
+            }
+        }
+    },
+    "#tint_button_yellow": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/tint_button_yellow.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/tint_button_yellow_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/tint_button_yellow_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/tint_button_yellow_unavailable.png"
+            }
+        }
+    },
+    "#tint_button_blue": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/tint_button_blue.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/tint_button_blue_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/tint_button_blue_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/tint_button_blue_unavailable.png"
+            }
+        }
+    },
+    "#tint_button_purple": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/tint_button_purple.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/tint_button_purple_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/tint_button_purple_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/tint_button_purple_unavailable.png"
+            }
+        }
+    },
+    "#tint_button_black": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/tint_button_black.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/tint_button_black_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/tint_button_black_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/tint_button_black_unavailable.png"
+            }
+        }
+    },
+    "#tint_button_dilute": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/tint_button_dilute.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/tint_button_dilute_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/tint_button_dilute_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/tint_button_dilute_unavailable.png"
+            }
+        }
+    },
+    "#tint_button_warmdilute": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/tint_button_warmdilute.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/tint_button_warmdilute_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/tint_button_warmdilute_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/tint_button_warmdilute_unavailable.png"
+            }
+        }
+    },
+    "#tint_button_cooldilute": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/tint_button_cooldilute.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/tint_button_cooldilute_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/tint_button_cooldilute_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/tint_button_cooldilute_unavailable.png"
+            }
+        }
     }
 }
     

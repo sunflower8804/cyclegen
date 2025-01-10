@@ -55,6 +55,7 @@ from scripts.utility import (
     shorten_text_to_fit,
     ui_scale_offset,
     adjust_list_text,
+    pronoun_repl,
 )
 from .Screens import Screens
 from ..cat.history import History
@@ -486,11 +487,13 @@ class ProfileScreen(Screens):
                                                                             (150, 150)), manager=MANAGER)
                 self.profile_elements["cat_image"].disable()
                 self.profile_elements["cat_info_column1"].kill()
-                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(self.generate_column1(self.the_cat),
-                                                                    ui_scale(pygame.Rect((300, 230), (180, 190))),
-                                                                    object_id=get_text_box_theme(
-                                                                        "#text_box_22_horizleft"),
-                                                                    line_spacing=0.95, manager=MANAGER)
+                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
+                    self.generate_column1(self.the_cat),
+                    ui_scale(pygame.Rect((300, 220), (180, 200))),
+                    object_id=get_text_box_theme("#text_box_22_horizleft"),
+                    line_spacing=1,
+                    manager=MANAGER,
+                )
                 self.update_disabled_buttons_and_text()
             elif "leader_ceremony" in self.profile_elements and \
                     event.ui_element == self.profile_elements["leader_ceremony"]:
@@ -908,11 +911,13 @@ class ProfileScreen(Screens):
                                                                             (150, 150)), manager=MANAGER)
                 self.profile_elements["cat_image"].disable()
                 self.profile_elements["cat_info_column1"].kill()
-                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(self.generate_column1(self.the_cat),
-                                                                    ui_scale(pygame.Rect((300, 230), (180, 190))),
-                                                                    object_id=get_text_box_theme(
-                                                                        "#text_box_22_horizleft"),
-                                                                    line_spacing=0.95, manager=MANAGER)
+                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
+                    self.generate_column1(self.the_cat),
+                    ui_scale(pygame.Rect((300, 220), (180, 200))),
+                    object_id=get_text_box_theme("#text_box_22_horizleft"),
+                    line_spacing=1,
+                    manager=MANAGER,
+                )
 
 
     def screen_switches(self):
@@ -2900,7 +2905,7 @@ class ProfileScreen(Screens):
                                                                 image_cache.load_image(f"resources/images/faith{cat_faith}.png").convert_alpha())
         self.faith_bar.disable()
         self.faith_text = UITextBoxTweaked(self.get_faith_text(cat_faith),
-                                                        ui_scale(pygame.Rect((175, 535), (425, 149))),
+                                                        ui_scale(pygame.Rect((175, 535), (425,75))),
                                                         object_id="#text_box_26_horizleft_pad_10_14",
                                                         line_spacing=1, manager=MANAGER)
         
@@ -2909,9 +2914,21 @@ class ProfileScreen(Screens):
         with open("resources/dicts/faith_display.json", "r") as read_file:
             faith_dict = ujson.loads(read_file.read())
             cluster1, cluster2 = get_cluster(self.the_cat.personality.trait)
+
+        faith_text = ""
         if faith == 0:
-            return faith_dict[str(faith)]["All"]
-        return faith_dict[str(faith)][str(cluster1)]
+            faith_text = faith_dict[str(faith)]["All"]
+        else:
+            faith_text = faith_dict[str(faith)][str(cluster1)]
+
+        process_text_dict = {}
+        process_text_dict["m_c"] = self.the_cat
+        for abbrev in process_text_dict.keys():
+            abbrev_cat = process_text_dict[abbrev]
+            process_text_dict[abbrev] = (abbrev_cat, choice(abbrev_cat.pronouns))
+        faith_text = sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), faith_text)
+        
+        return faith_text
     
     def toggle_accessories_tab(self):
         """Opens accessories tab"""

@@ -2411,7 +2411,7 @@ class MakeClanScreen(Screens):
                     ]:
                     self.tint_buttons[tint] = UIImageButton(
                         ui_scale(pygame.Rect((tint_x_pos, tint_y_pos), (40, 40))),
-                        tint,
+                        "",
                         object_id=f"#tint_button_{tint}",
                         manager=MANAGER
                         )
