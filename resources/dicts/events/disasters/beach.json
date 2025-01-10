@@ -83,7 +83,7 @@
             ],
             "deaths": {
                 "death_text": [
-                    "Desperate and hungry, m_c eats a washed up fish despite being instructed not to. {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} found deceased later.",
+                    "Desperate and hungry, m_c eats a washed up fish despite being instructed not to. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} found deceased later.",
                     "m_c decided to swim in the black goop. Unfortunately, that was {PRONOUN/m_c/poss} last swim."
                 ],
                 "history_text": {
