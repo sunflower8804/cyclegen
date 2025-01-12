@@ -55,6 +55,7 @@ from scripts.utility import (
     shorten_text_to_fit,
     ui_scale_offset,
     adjust_list_text,
+    pronoun_repl,
 )
 from .Screens import Screens
 from ..cat.history import History
@@ -2913,9 +2914,21 @@ class ProfileScreen(Screens):
         with open("resources/dicts/faith_display.json", "r") as read_file:
             faith_dict = ujson.loads(read_file.read())
             cluster1, cluster2 = get_cluster(self.the_cat.personality.trait)
+
+        faith_text = ""
         if faith == 0:
-            return faith_dict[str(faith)]["All"]
-        return faith_dict[str(faith)][str(cluster1)]
+            faith_text = faith_dict[str(faith)]["All"]
+        else:
+            faith_text = faith_dict[str(faith)][str(cluster1)]
+
+        process_text_dict = {}
+        process_text_dict["m_c"] = self.the_cat
+        for abbrev in process_text_dict.keys():
+            abbrev_cat = process_text_dict[abbrev]
+            process_text_dict[abbrev] = (abbrev_cat, choice(abbrev_cat.pronouns))
+        faith_text = sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, process_text_dict, False), faith_text)
+        
+        return faith_text
     
     def toggle_accessories_tab(self):
         """Opens accessories tab"""
