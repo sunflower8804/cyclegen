@@ -59,7 +59,7 @@
         "r_w2_neurotic": [
             "[t_c almost laughs.]",
             "r_w2_neurotic? Why?",
-            "That cat jumps every time they hear a woodpecker. And you think {PRONOUN/r_w2_neurotic/subject} killed fc_c?",
+            "That cat jumps every time {PRONOUN/r_w2_neurotic/subject} {VERB/r_w2_neurotic/hear/hears} a woodpecker. And you think {PRONOUN/r_w2_neurotic/subject} killed fc_c?",
             "Hm... now that you think about it, maybe that anxiety is all just an act... Oh, maybe {PRONOUN/r_w2_neurotic/subject}{VERB/r_w2_neurotic/'ve/'s} had us fooled this whole time!",
             "[t_c seems to be having a bit too much fun with this...]"
         ],
@@ -941,7 +941,7 @@
         "r_w2_neurotic": [
             "[t_c almost laughs.]",
             "r_w2_neurotic? Why?",
-            "That cat jumps every time they hear a woodpecker. And you think {PRONOUN/r_w2_neurotic/subject} killed fc_c?",
+            "That cat jumps every time {PRONOUN/r_w2_neurotic/subject} {VERB/r_w2_neurotic/hear/hears} a woodpecker. And you think {PRONOUN/r_w2_neurotic/subject} killed fc_c?",
             "Hm... now that you think about it, maybe that anxiety is all just an act... Oh, maybe {PRONOUN/r_w2_neurotic/subject}{VERB/r_w2_neurotic/'ve/'s} had us fooled this whole time!",
             "[t_c seems to be having a bit too much fun with this...]"
         ],
