@@ -142,82 +142,202 @@
     },
     "med_cat_greetings": {
         "general_greeting_one_med": [
-            "[o_c_m from o_cn greets you when you arrive.]"
+            [
+                "[o_c_m from o_cn greets you when you arrive.]"
+            ],
+            [
+                "[o_c_m from o_cn bows their head in greeting.]"
+            ]
+        ],
+        "deaf_greeting_one_med": [
+            [
+                "[o_c_m meets your eyes and flicks their tail in greeting as you arrive.]"
+            ]
         ],
         "general_greeting_multi_med": [
-            "[o_c_m from o_cn greet you when you arrive.]"
+            [
+                "[o_c_m from o_cn greet you when you arrive.]"
+            ],
+            [
+                "[A chorus of greetings from o_cn's medicine cats, o_c_m, are sent your way.]"
+            ]
         ],
         "general_greeting_war_one_med": [
-            "[o_c_m from o_cn doesn't acknowledge you when you arrive.]"
+            [
+                "[o_c_m from o_cn doesn't acknowledge you when you arrive.]"
+            ],
+            [
+                "[Despite the Clan's current bloodshed, o_c_m from o_cn bows their head in greeting.]"
+            ],
+            [
+                "[Fury burns in o_c_m's eyes, but o_cn's medicine cat holds their tongue. For now.]"
+            ],
+            [
+                "[As you arrive, the sight of o_c_m from o_cn startles you, but neither of you acknowledge each other.]"
+            ],
+            [
+                "[o_c_m from o_cn's presence at the Moonplace makes you uneasy, but you greet them anyway.]"
+            ]
         ],
         "general_greeting_war_multi_med": [
-            "[o_c_m from o_cn don't acknowledge you when you arrive.]"
+            [
+                "[o_c_m from o_cn don't acknowledge you when you arrive.]"
+            ],
+            [
+                "[o_cn's medicine cats, o_c_m, presence at the Moonplace unnerves you, but you greet them anyway.]"
+            ],
+            [
+                "[You hold your tongue as o_c_m from o_cn greet you.]"
+            ],
+            [
+                "[Despite the Clan's current bloodshed, o_c_m from o_cn bow their head in greeting.]"
+            ]
         ],
         "general_greeting_gracious_one_med": [
-            "[o_c_m from o_cn smiles at you when you arrive.]"
+            [
+                "[o_c_m from o_cn smiles at you when you arrive.]"
+            ],
+            [
+                "[o_c_m from o_cn asks how c_n's herb supply is holding up when you arrive.]"
+            ],
+            [
+                "[o_cn's medicine cat, o_c_m, does not deceive the Clan's reputation. They smile and greet you politely, asking how c_n has been.]"
+            ]
         ],
         "general_greeting_gracious_multi_med": [
-            "[o_c_m from o_cn smile at you when you arrive.]"
+            [
+                "[o_c_m from o_cn smile at you when you arrive.]"
+            ],
+            [
+                "[o_cn's medicine cats, o_c_m, smile and fuss over you as you approach.]"
+            ]
         ],
         "general_greeting_mellow_one_med": [
-            "[o_c_m from o_cn nods in greeting when you arrive.]"
+            [
+                "[o_c_m from o_cn nods in greeting when you arrive.]"
+            ],
+            [
+                "[o_c_m from o_cn strikes up polite conversation as you approach.]"
+            ]
         ],
         "general_greeting_mellow_multi_med": [
-            "[o_c_m from o_cn nod in greeting when you arrive.]"
+            [
+                "[o_c_m from o_cn nod in greeting when you arrive.]"
+            ]
         ],
         "general_greeting_logical_one_med": [
-            "[o_c_m from o_cn quizzes you about herbs as soon as you arrive.]"
+            [
+                "[o_c_m from o_cn quizzes you about herbs as soon as you arrive.]"
+            ],
+            [
+                "[o_c_m from o_cn sneaks in a question or two about herbs, subtly judging your knowledge.]"
+            ],
+            [
+                "[o_cn's medicine cat, o_c_m, gives you a few tips on how to preserve herbs for longer.]"
+            ]
         ],
         "general_greeting_logical_multi_med": [
-            "[o_c_m from o_cn quiz you about herbs as soon as you arrive.]"
+            [
+                "[o_c_m from o_cn quiz you about herbs as soon as you arrive.]"
+            ],
+            [
+                "[o_c_m from o_cn give you pointers on how to find a difficult herb as soon as you settle around the Moonplace.]"
+            ]
         ],
         "general_greeting_amiable_one_med": [
-            "[o_c_m from o_cn starts up a conversation as soon as you arrive.]"
+            [
+                "[o_c_m from o_cn starts up a conversation as soon as you arrive.]"
+            ],
+            [
+                "[o_c_m from o_cn calls for you to sit with them at the Moonplace.]"
+            ],
+            [
+                "[o_c_m from o_cn doesn't hesitate to invite you to converse with them.]"
+            ]
         ],
         "general_greeting_amiable_multi_med": [
-            "[o_c_m from o_cn start up a conversation as soon as you arrive.]"
+            [
+                "[o_c_m from o_cn start up a conversation as soon as you arrive.]"
+            ],
+            [
+                "[o_c_m from o_cn don't hesitate to invite you to converse with them.]"
+            ]
         ],
         "general_greeting_stoic_one_med": [
-            "[o_c_m from o_cn dips their head in greeting.]"
+            [
+                "[o_c_m from o_cn dips their head in greeting.]"
+            ]
         ],
         "general_greeting_stoic_multi_med": [
-            "[o_c_m from o_cn dip their head in greeting.]"
+            [
+                "[o_c_m from o_cn dip their head in greeting.]"
+            ]
         ],
         "general_greeting_wary_one_med": [
-            "[o_c_m from o_cn watches you carefully as you approach.]"
+            [
+                "[o_c_m from o_cn watches you carefully as you approach.]"
+            ]
         ],
         "general_greeting_wary_multi_med": [
-            "[o_c_m from o_cn watch you carefully as you approach.]"
+            [
+                "[o_c_m from o_cn watch you carefully as you approach.]"
+            ]
         ],
         "general_greeting_cunning_one_med": [
-            "[o_c_m from o_cn gives you a sly smile as you arrive.]"
+            [
+                "[o_c_m from o_cn gives you a sly smile as you arrive.]"
+            ]
         ],
         "general_greeting_cunning_multi_med": [
-            "[o_c_m from o_cn give you a sly smile as you arrive.]"
+            [
+                "[o_c_m from o_cn give you a sly smile as you arrive.]"
+            ]
         ],
         "general_greeting_proud_one_med": [
-            "[o_c_m from o_cn holds their head high as they greet you.]"
+            [
+                "[o_c_m from o_cn holds their head high as they greet you.]"
+            ]
         ],
         "general_greeting_proud_multi_med": [
-            "[o_c_m from o_cn hold their heads high as they greet you.]"
+            [
+                "[o_c_m from o_cn hold their heads high as they greet you.]"
+            ]
         ],
         "general_greeting_bloodthirsty_one_med": [
-            "[o_c_m from o_cn has a fierce glint in their eyes as they meet you.]"
+            [
+                "[o_c_m from o_cn has a fierce glint in their eyes as they meet you.]"
+            ]
         ],
         "general_greeting_bloodthirsty_multi_med": [
-            "[o_c_m from o_cn have a fierce glint in their eyes as they meet you.]"
+            [
+                "[o_c_m from o_cn have a fierce glint in their eyes as they meet you.]"
+            ]
         ],
         "general_greeting_friendly_one_med": [
-            "[o_c_m from o_cn greets you warmly as you arrive.]"
+            [
+                "[o_c_m from o_cn greets you warmly as you arrive.]"
+            ]
         ],
         "general_greeting_friendly_multi_med": [
-            "[o_c_m from o_cn greet you warmly as you arrive.]"
+            [
+                "[o_c_m from o_cn greet you warmly as you arrive.]"
+            ]
         ],
         "general_greeting_unfriendly_one_med": [
-            "[o_c_m from o_cn gives you a cold look as you arrive.]"
+            [
+                "[o_c_m from o_cn gives you a cold look as you arrive.]"
+            ],
+            [
+                "[o_c_m from o_cn looks down at you with a scowl as you arrive.]"
+            ],
+            [
+                "[o_c_m from o_cn mumbles something under their breathe as you pass, though you're unable to make out what o_c_m said.]"
+            ]
         ],
         "general_greeting_unfriendly_multi_med": [
-            "[o_c_m from o_cn give you a cold look as you arrive.]"
+            [
+                "[o_c_m from o_cn give you a cold look as you arrive.]"
+            ]
         ]
     },
     "moonplace": {
@@ -230,11 +350,9 @@
         ],
         "starclan_firsttime": [
             [
-                [
-                    "[You and the other medicine cats settle around the gathering place. Your eyes flutter shut, and when they open, you're startled to see yourself in StarClan's hunting grounds.]",
-                    "Ah, welcome, y_c. I've heard much about you.",
-                    "I have a message for you. Listen closely."
-                ]
+                "[You and the other medicine cats settle around the gathering place. Your eyes flutter shut, and when they open, you're startled to see yourself in StarClan's hunting grounds.]",
+                "Ah, welcome, y_c. I've heard much about you.",
+                "I have a message for you. Listen closely."
             ]
         ],
         "starclan_deaf": [
@@ -343,7 +461,7 @@
         ],
         "starclan_halfmoon_blind": [
             [
-                "[Visiting the Moonplace is a rite of passage all apprentices are granted, despite their role to the Clan.]",
+                "[Visiting the Moonplace is a rite of passage all apprentices are granted, regardless of their role to the Clan.]",
                 "[You let the wind push and guide you through the path many have traveled before, entrusting its connection to StarClan as you reach the sacred spot. It feels natural to touch your nose upon it.]",
                 "y_c, I have heard much about you. Your resilience and determination are inspiring, indeed.",
                 "Let me offer you some advice to use on your journey.",
@@ -357,9 +475,36 @@
                 "[Carefully, you touch your nose to the sacred spot.]",
                 "[t_c looks upon you with furrowed brows, staring deep into your soul.]",
                 "You're not like the others, are you? You see things they cannot.",
-                "Do not be ashamed of your gift, despite its implications and stereotypes. Let me offer some advice.",
+                "Do not be ashamed of your gift, despite the judgement that may follow. Let me offer some advice.",
                 "Cats fear what they cannot understand - thrive with the thrill that you <i>do</i> understand. Explore it. Observe the unknown. Use the knowledge you find to make it your strength, instead of something to be feared.",
                 "You'll see one moon that it'll serve you well."
+            ]
+        ],
+        "starclan_halfmoon_star": [
+            [
+                "[Visiting the Moonplace is a sacred and respected practice amongst apprentices, though you find yourself feeling a strange sense of deja vu as you walk along the path.]",
+                "[Curiously, you touch your nose to the sacred spot. A familiar StarClan cat greets you.]",
+                "Ah, y_c. If I remember right, this is not the first time we have met surrounded by stars. I assume there is no need to introduce myself.",
+                "Let me offer you some advice.",
+                "The waking world is a strange and flexible place. There is good and evil in every corner. Yet, cats easily forget that not everything in shadow is wicked, and not everything in the light is virtuous.",
+                "Do not be quick to judge. Do not allow your blessings and skills blind you, for it'll be your end."
+            ],
+            [
+                "[Visiting the Moonplace is a sacred and respected practice, and you find yourself in awe as you travel the path many of your ancestors have walked before. It is everything and nothing like you expected.]",
+                "[Curiously, you touch your nose to the sacred spot. A familiar StarClan cat manifests in a gentle swarm of stars.]",
+                "Greetings, starling. I seem to remember you, though the memory flees from me.",
+                "Your path is a guided one. You were born the same day as a star, a wish that blesses c_n for the moons to come.",
+                "Shine brightly and be proud. Though, be careful, for those who come close may get burned."
+            ]
+        ],
+        "starclan_halfmoon_star_dark": [
+            [
+                "[The Moonplace is a beautiful mix of living and afterlife. It captivates you as you walk along the path many cats before you have journeyed, though the feeling in your gut grows uncomfortable as you reached the sacred place.]",
+                "[With hesitance, you touch your nose against the spot and watch as a StarClan cat manifests from a grouping of stars.]",
+                "Oh, young one. I admit, I hoped to see you later in your lifetime. But alas, I have a message for you.",
+                "There is a vastness in shades of grey - the neutrality in which balances this world.",
+                "Your gifts give you an opportunity. I am curious on whether you will run to the opportunity, choose to flee from it, or ignore it completely.",
+                "I have faith in you, y_c."
             ]
         ]
     }
