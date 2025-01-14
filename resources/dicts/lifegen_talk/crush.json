@@ -663,5 +663,16 @@
             "Y-you know, on second thought, I don't want to know right now.",
             "[t_c dashes off, leaving you alone.]"
         ]
+    ],
+    "gen_sh_crush_H1": [
+        [
+            "you_shunned",
+            "no_kit",
+            "dislike"
+        ],
+        [
+            "You have to stop looking at your_crush like that.",
+            "It's not like {PRONOUN/your_crush/subject}'ll like you after what you did."
+        ]
     ]
 }

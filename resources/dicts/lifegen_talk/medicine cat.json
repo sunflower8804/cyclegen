@@ -2893,5 +2893,110 @@
             "*Sigh* Can't you see I have important things to do, y_c?",
             "Go back to catching mice, or whatever it is you warriors do."
         ]
+    ],
+    "about_brooding_AJ1": [
+        [
+            "no_kit",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "min_trust_15"
+        ],
+        [
+            "Oh, StarClan, did r_d_brooding call yet another Clanmate a mousebrain? *Sigh* {PRONOUN/r_d_brooding/subject/CAP} sure {VERB/r_d_brooding/tend/tends} to do that a lot ...",
+            "Try not to take it too personally, y_c. I know {PRONOUN/r_d_brooding/poss} methods may seem ... unorthodox, but r_d_brooding really isn't a bad cat. {PRONOUN/r_d_brooding/subject/CAP} just {VERB/r_d_brooding/want/wants} to keep everycat safe.",
+            "And if scaring cats stiff into confronting their problems is what it takes ... Well, then that's just what {PRONOUN/r_d_brooding/subject}'ll do."
+        ]
+    ],
+    "Grief_medicine_H1": [
+        [
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "they_grieving",
+            "neurotic",
+            "sweet",
+            "stable",
+            "introspective",
+            "no_kit",
+            "you_blind"
+        ],
+        [
+            "Is it strange that I'm afraid to see d_c at the moonpool?",
+            "Not- not afraid, necessarily. But... I'm worried about how I'll react. A medicine cat shouldn't be bawling their eyes out at the half-moon meeting.",
+            "Or worse, will I freeze up? Forget what to say? Oh, StarClan, would I forget the prophecy {PRONOUN/d_c/subject}'d bless c_nClan with?",
+            "[You gently remind t_c that {PRONOUN/t_c/subject}'ll do great, even with d_c present.]",
+            "Do you think so? I hope you're right, y_c."
+        ]
+    ],
+    "Grief_medicine_H2": [
+        [
+            "they_medicine_cat",
+            "they_grieving",
+            "dead_close",
+            "no_kit",
+            "platonic_love"
+        ],
+        [
+            "Is it crazy to say that I only look forward to the half-moon meetings just for the chance to see d_c again?",
+            "[t_c nervously paws into the dirt underneath {PRONOUN/t_c/object}, looking out in the distance in thought.]",
+            "It is a selfish wish. Yet, I'm allowed to be selfish once in a while... right?"
+        ]
+    ],
+    "neurotic_tokit_SQ2": [
+        [
+            "you_kitten",
+            "they_neurotic",
+            "they_warrior",
+            "they_mediator",
+            "they_medicine_cat",
+            "they_deputy",
+            "they_leader",
+            "neutral",
+            "greenleaf"
+        ],
+        [
+            "Oh! Hey, y_c. Sorry, I don't really know how to deal with... uh...",
+            "[t_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
+            "Um... here! Play with that for a bit, maybe?"
+        ]
+    ],
+    "assertive_tonewborn_2": [
+        [
+            "you_newborn",
+            "they_medicine_cat",
+            "assertive",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Little guy seems to be in good condition!",
+            "And spirited, too ...",
+            "Welcome to the world, little y_c!"
+        ]
+    ],
+    "neurotic_tokit_SQ4": [
+        [
+            "you_kitten",
+            "they_neurotic",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "neutral"
+        ],
+        [
+            "[You creep up to t_c, watching {PRONOUN/t_c/object} lay herbs out to dry in the sun. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps} when {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} you.]",
+            "H-hi, y_c. Sorry, I need to keep an eye on these herbs so they don't blow away. That means I can't really watch you at the same ti- oh no!",
+            "[The wind picks up, sending t_c's carefully arranged leaves flying. t_c dashes after them, frantically trying to bat them out of the air.]"
+        ]
+    ],
+    "youdeaf_R65": [
+        [
+            "only_you_deaf",
+            "you_newborn",
+            "they_medicine_cat"
+        ],
+        [
+            "[You mew as t_c bothers you. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} poking and prodding you!]",
+            "[Finally you take an opportunity to chomp down on {PRONOUN/t_c/poss} paw - leading to a rumbling purr that spooks you.]",
+            "[t_c leaves soon after and you snuggle in your nest.]"
+        ]
     ]
 }
