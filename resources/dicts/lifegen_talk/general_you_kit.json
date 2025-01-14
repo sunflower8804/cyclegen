@@ -5530,43 +5530,5 @@
             "They're making you soft. A real enemy's going to come at you with everything they've got.",
             "If you really want to prepare, you have to do the same. Use your claws. Go for the throat. Remember, when you're a warrior, it's kill or be killed. You'll be doing your siblings a favor. You can thank me when you're older."
         ]
-    ],
-    "you_newbornsam1": [
-        [
-            "you_newborn",
-            "you_blind",
-            "you_deaf",
-            "they_kitten"
-        ],
-        [
-            "[You feel a tiny paw nudge you as you attempt to stand up. You fall down with a squeak.]",
-            "[Rude.]"
-        ]
-    ],
-    "you_newbornsam2": [
-        [
-            "you_newborn",
-            "you_blind",
-            "only_you_deaf",
-            "insult",
-            "they_adult"
-        ],
-        [
-            "[You attempt to scratch t_c, but you end up barely grazing {PRONOUN/t_c/object} with your claw.]",
-            "[You can feel {PRONOUN/t_c/poss} laughter as {PRONOUN/t_c/subject} {VERB/t_c/pick/picks} you up, returning you to the nursery after your failed antics.]"
-        ]
-    ],
-    "you_newbornsam3": [
-        [
-            "you_newborn",
-            "you_blind",
-            "insult",
-            "they_kitten"
-        ],
-        [
-            "[You scratch t_c with your claws, annoyed. {PRONOUN/t_c/subject/CAP} {VERB/t_c/let/lets} out a loud yelp before running towards r_q.]",
-            "r_q! r_q! y_c scratched me!",
-            "[You <i>almost</i> feel bad.]"
-        ]
     ]
 }

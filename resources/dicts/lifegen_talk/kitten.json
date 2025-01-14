@@ -8407,5 +8407,17 @@
             "[t_c is playing with a feather, passing it from paw to paw, all alone.]",
             "[When you look at {PRONOUN/t_c/object} imploringly, {PRONOUN/t_c/subject} just {VERB/t_c/turn/turns} away awkwardly.]"
         ]
+    ],
+    "you_newbornsam1": [
+        [
+            "you_newborn",
+            "you_blind",
+            "you_deaf",
+            "they_kitten"
+        ],
+        [
+            "[You feel a tiny paw nudge you as you attempt to stand up. You fall down with a squeak.]",
+            "[Rude.]"
+        ]
     ]
 }
