@@ -1422,11 +1422,11 @@
             "they_mediator_apprentice"
         ],
         [
-            "[The mediator apprentice has been walking around all day in some sort of disguise, decorating themself in leaves and twigs that seem to have at least some rhyme or reason. Intrigued, you come up to them to ask why they've decorated their pelt today.]",
-            "Oh! Well, y_c, r_c was feeling down, so I wanted to cheer them up by dressing myself up!",
-            "They told someone else about... uh...",
+            "[The mediator apprentice has been walking around all day in some sort of disguise, decorating {PRONOUN/t_c/self} in leaves and twigs that seem to have at least some rhyme or reason. Intrigued, you come up to {PRONOUN/t_c/object} to ask why {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} decorated {PRONOUN/t_c/poss} pelt today.]",
+            "Oh! Well, y_c, r_c was feeling down, so I wanted to cheer {PRONOUN/r_c/object} up by dressing myself up!",
+            "{PRONOUN/r_c/subject/CAP} told somecat else about... uh...",
             "...Nevermind, I can't say that! I refuse to admit that I'm nosy! Bye, y_c!",
-            "[t_c shimmies away in their leafy fire hazard.]"
+            "[t_c shimmies away in {PRONOUN/t_c/poss} leafy fire hazard.]"
         ]
     ],
     "silly_mediatorapp_plan": [
@@ -1438,7 +1438,7 @@
         [
             "y_c! You see r_c arguing with d_n over there about c_nClan's fresh-kill stock? Well, I wasn't sure how to help resolve the situation, but now I think I have the perfect plan!",
             "...Hey, don't \"oh no\" me! I'm not asking for your opinion, I just need you to watch me in case it all goes wrong!",
-            "[t_c struts over to the two bristling cats, not-so-quietly singing \"This is the greatest plaaan!\" to themself as they approach. Unsurprisingly, the apprentice's bubbly approach returns nothing... shouldn't someone know to stop them by now?]"
+            "[t_c struts over to the two bristling cats, not-so-quietly singing \"This is the greatest plaaan!\" to themself as they approach. Unsurprisingly, the apprentice's bubbly approach returns nothing... shouldn't somecat know to stop them by now?]"
         ]
     ],
     "silly_mediatorapp_ideas": [
