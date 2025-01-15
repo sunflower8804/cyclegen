@@ -1089,28 +1089,6 @@ class MurderScreen(Screens):
                 if cat_to_murder.status == "leader":
                     hypleader_death_chance = self.leader_death_chance(cat_to_murder, accomplice=accomplice, accompliced=None)
 
-            else:
-                # prints chances when selecting a victim
-                successchance = self.get_kill(game.clan.your_cat, cat_to_murder, accomplice=None, accompliced=None)
-                risk_chance = self.get_risk_chance(cat_to_murder, accomplice=None, accompliced=None)
-                discover_chance = self.get_discover_chance(cat_to_murder, accomplice=accomplice, accompliced=None)
-                death_chance = self.get_death_chance(cat_to_murder, accomplice=None, accompliced=None)
-                if cat_to_murder.status == "leader":
-                    leader_death_chance = self.leader_death_chance(cat_to_murder, accomplice=None, accompliced=None)
-
-            if not accomplice:
-                print("----------------------------")
-                print(f"Victim: {cat_to_murder.name}")
-                print("")
-                print(F"Success Chance: {successchance}/100")
-                print(F"Discovery Chance: {discover_chance}/100")
-                print(F"MC Injury Chance: {risk_chance}/100")
-                print(F"MC Death Chance: {death_chance}/100")
-
-                if cat_to_murder.status == "leader":
-                    print(F"LEADER ALL LIVES CHANCE: {leader_death_chance}/100")
-
-            else:
                 if hypothetical_agree:
                     print("----------------------------")
                     print(f"Victim: {cat_to_murder.name}")
@@ -1124,6 +1102,26 @@ class MurderScreen(Screens):
 
                     if cat_to_murder.status == "leader":
                         print(F"LEADER ALL LIVES CHANCE: {hypleader_death_chance}/100")
+
+            else:
+                # prints chances when selecting a victim
+                successchance = self.get_kill(game.clan.your_cat, cat_to_murder, accomplice=None, accompliced=None)
+                risk_chance = self.get_risk_chance(cat_to_murder, accomplice=None, accompliced=None)
+                discover_chance = self.get_discover_chance(cat_to_murder, accomplice=accomplice, accompliced=None)
+                death_chance = self.get_death_chance(cat_to_murder, accomplice=None, accompliced=None)
+                if cat_to_murder.status == "leader":
+                    leader_death_chance = self.leader_death_chance(cat_to_murder, accomplice=None, accompliced=None)
+
+                print("----------------------------")
+                print(f"Victim: {cat_to_murder.name}")
+                print("")
+                print(F"Success Chance: {successchance}/100")
+                print(F"Discovery Chance: {discover_chance}/100")
+                print(F"MC Injury Chance: {risk_chance}/100")
+                print(F"MC Death Chance: {death_chance}/100")
+
+                if cat_to_murder.status == "leader":
+                    print(F"LEADER ALL LIVES CHANCE: {leader_death_chance}/100")
 
                 print("----------------------------")
                 print("IF ACCOMPLICE REFUSES:")
@@ -1160,7 +1158,19 @@ class MurderScreen(Screens):
         murdered = r < max(5, chance + r2)
         you = game.clan.your_cat
         cat_to_murder = self.cat_to_murder
-        game.clan.murdered = True
+
+        print("Accomplice:", accomplice.name if accomplice else None)
+        if accomplice:
+            print("Agreed:", accompliced)
+
+        game.clan.murdered = {
+            "moon": game.clan.age,
+            "murderer": game.clan.your_cat.ID,
+            "victim": cat_to_murder.ID,
+            "accomplice": [accomplice.ID if accomplice else None, accompliced if accomplice else False],
+            "success": murdered 
+        }
+
         if murdered:
             self.choose_murder_text(you, cat_to_murder, accomplice, accompliced)
         else:
@@ -1443,6 +1453,9 @@ class MurderScreen(Screens):
             you.die()
             
 
+        owie = "sore"
+        owie2 = "sore"
+
         if injury and not death:
             if self.method == "attack":
                 owie = choice(["claw-wound", "bite-wound", "torn pelt", "sprain", "sore", "bruises", "scrapes"])
@@ -1454,7 +1467,7 @@ class MurderScreen(Screens):
             elif self.method == "accident":
                 owie = choice(["broken bone","broken bone","broken bone","sprain", "sore", "bruises", "scrapes", "paralyzed", "head damage", "broken jaw"])
                 owie2 = choice(["broken bone","broken bone","broken bone","sprain", "sore", "bruises", "scrapes", "paralyzed", "head damage", "broken jaw"])
-            elif self.method == "predator":
+            else:
                 owie = choice(["bite-wound", "broken bone", "torn pelt", "mangled leg", "mangled tail"])
                 owie2 = choice(["bite-wound", "broken bone", "torn pelt", "mangled leg", "mangled tail"])
 
@@ -1663,8 +1676,6 @@ class MurderScreen(Screens):
                             you.get_injured(owie)
 
         ceremony_txt = choice(ceremony_txt)
-
-
 
         other_clan = choice(game.clan.all_clans)
         ceremony_txt = ceremony_txt.replace('c_n', game.clan.name)

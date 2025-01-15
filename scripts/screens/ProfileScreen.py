@@ -3284,7 +3284,10 @@ class ProfileScreen(Screens):
                 tool_tip_text='Choose to murder one of your clanmates',
                 starting_height=2, manager=MANAGER
             )
-            if game.clan.murdered or game.clan.your_cat.moons == 0:
+            if game.clan.your_cat.moons == 0:
+                self.murder_cat_button.disable()
+            
+            if "moon" in game.clan.murdered and game.clan.murdered["moon"] == game.clan.age:
                 self.murder_cat_button.disable()
                 
             if game.clan.your_cat.joined_df:

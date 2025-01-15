@@ -451,14 +451,24 @@ class Events:
         elif game.clan.your_cat.status == 'exiled':
             self.generate_exile_event()
             
-        game.clan.murdered = False
+        # LIFEGEN
+        # murdered dict clears after six moons of no murder attempts
+        if "moon" in game.clan.murdered:
+            if game.clan.age - game.clan.murdered["moon"] >= 6:
+                game.clan.murdered = {}
+
         game.clan.affair = False
         game.clan.exile_return = False
-        
+
         self.current_events.clear()
         self.check_achievements()
         self.generate_dialogue_focus()
-        self.checks = [len(game.clan.your_cat.apprentice), len(game.clan.your_cat.mate), len(game.clan.your_cat.inheritance.get_blood_kits()), None]
+        self.checks = [
+            len(game.clan.your_cat.apprentice),
+            len(game.clan.your_cat.mate),
+            len(game.clan.your_cat.inheritance.get_blood_kits()),
+            None
+            ]
         if game.clan.leader:
             self.checks[3] = game.clan.leader.ID
             
