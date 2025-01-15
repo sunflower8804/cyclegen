@@ -4335,5 +4335,143 @@
             "I wasn't sure if {PRONOUN/neutral_r_w_unlawful/subject} {VERB/neutral_r_w_unlawful/were/was} joking, and I was kind of nervous to ask.",
             "Why {VERB/neutral_r_w_unlawful/do/does} {PRONOUN/neutral_r_w_unlawful/subject} think I'd want to do that? The... The Clan doesn't think I'm a troublemaker, right?"
         ]
+    ],
+    "wisps_H1": [
+        [
+            "strange",
+            "they_warrior",
+            "they_apprentice",
+            "you_any"
+        ],
+        [
+            "Hey, y_c! Guess what I saw on patrol today!",
+            "I think I saw a blue mist. I think they call it a will-o'-the-wisp.",
+            "You see, I got a tiny bit lost while I was patrolling. No fault of mine, of course! I was just observing a rabbit and forgot where I was.",
+            "[You ask teasingly if that is a daily occurrence and t_c only smiles wide.]",
+            "Anyway-- As I was starting to get worried, poof! A blue mist appeared right before my very eyes, whispering words I couldn't understand. Behind it was a line of them, leading me somewhere.",
+            "I don't know why I did it, but I followed the wisps. They disappeared when I got close to them, floating into the clouds above me. It was so cool to see!",
+            "Before I knew it, I was led into the clearing where the rest of the patrol was.",
+            "None of them believed me when I said I was guided by the wisps, though. But I hope you believe me!"
+        ]
+    ],
+    "about_neurotic_SQ4": [
+        [
+            "they_apprentice",
+            "they_warrior",
+            "they_deputy",
+            "they_leader",
+            "no_kit",
+            "min_platonic_25",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "StarClan, dislike_r_w_neurotic spent a full half-hour this morning reminding me to be careful. Stay away from the Thunderpath, don't investigate strange scents alone...'",
+            "I know what I'm doing, thank you very much! <i>I'm</i> not the one who got spooked last week and jumped straight into a thorn bush!"
+        ]
+    ],
+    "about_upstanding_AJ": [
+        [
+            "no_kit",
+            "they_warrior",
+            "they_deputy",
+            "they_apprentice",
+            "assertive",
+            "upstanding",
+            "unabashed",
+            "cool",
+            "min_trust_15"
+        ],
+        [
+            "Grrah! If r_w_upstanding corrects my hunting stance <i>one</i> more time on patrol, I am going to lose it!!!",
+            "Who {VERB/r_w_upstanding/do/does} {PRONOUN/r_w_upstanding/subject} think {PRONOUN/r_w_upstanding/subject} {VERB/r_w_upstanding/are/is}, the deputy or something? When did l_n suddenly declare {PRONOUN/r_w_upstanding/object} StarClan's special chosen warrior, superior to all?",
+            "Next time, I'll tell {PRONOUN/r_w_upstanding/object} directly to {PRONOUN/r_w_upstanding/poss} face to shove off. {PRONOUN/r_w_upstanding/subject/CAP} {VERB/r_w_upstanding/need/needs} to be humbled -- In fact, it's probably long overdue!"
+        ]
+    ],
+    "about_upstanding_AJ1": [
+        [
+            "no_kit",
+            "they_warrior",
+            "they_apprentice",
+            "neurotic",
+            "min_platonic_25"
+        ],
+        [
+            "r_w_upstanding's been helping me with my training these past few days, but I can't tell if {PRONOUN/r_w_upstanding/subject}{VERB/r_w_upstanding/'re/'s} doing it to be nice, or just to get l_n to notice {PRONOUN/r_w_upstanding/object}.",
+            "I hope I don't sound ungrateful, or anything. {PRONOUN/r_w_upstanding/subject/CAP}{VERB/r_w_upstanding/'re/'s} really skilled, and {PRONOUN/r_w_upstanding/subject}{VERB/r_w_upstanding/'ve/'s} helped me improve a lot, but ...",
+            "I don't necessarily want to just be a stepping stone on {PRONOUN/r_w_upstanding/poss} way to leader, either. If that makes any sense."
+        ]
+    ],
+    "about_neurotic_SQ1": [
+        [
+            "they_neurotic",
+            "they_apprentice",
+            "they_warrior",
+            "they_deputy",
+            "no_kit",
+            "platonic_like"
+        ],
+        [
+            "I don't really think plike_r_w1_neurotic and I work well together.",
+            "I like {PRONOUN/plike_r_w1_neurotic/object} well enough! It's just... well, yesterday we were on a hunting patrol together, just the two of us. I thought I saw a shadow in a bush, and I pointed it out.",
+            "Someone like r_w2_stable would tell me it's nothing, or go take a look, right? But plike_r_w1_neurotic kind of freaked out, and that made me even <i>more</i> nervous, and that made <i>{PRONOUN/plike_r_w1_neurotic/object}</i> more nervous, and...",
+            "[t_c chuckles, then sighs.]",
+            "So of course, we were both super spooked for the rest of the patrol. We came back early because neither of us was catching anything.",
+            "A-anyways. I hope plike_r_w1_neurotic doesn't hold that against me. We haven't had a chance to talk since then."
+        ]
+    ],
+    "general_shunned_you_Apprentice_CM1": [
+        [
+            "both_shunned",
+            "you_apprentice",
+            "they_apprentice"
+        ],
+        [
+            "y_c?",
+            "[You look over to t_c, sitting only a bit away from you.]",
+            "Do... you think we'll ever get to be warriors?",
+            "I know what I did was terrible, what <i>we</i> did was terrible. But, surely, they.... c_nClan wouldn't...",
+            "[t_c breaks down sobbing before you even manage to get a word in.]"
+        ]
+    ],
+    "about_neurotic_SQ3~1": [
+        [
+            "they_apprentice",
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_upstanding",
+            "they_stable",
+            "they_unabashed",
+            "they_unlawful",
+            "min_platonic_25",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "dislike_r_a_neurotic is so... jumpy. We're not kits anymore, for StarClan's sake!",
+            "The next time {PRONOUN/dislike_r_a_neurotic/subject} {VERB/dislike_r_a_neurotic/wake/wakes} me up by squeaking at some odd-shaped shadow, I'm going to <i>snap.</i>"
+        ]
+    ],
+    "about_neurotic_SQ3~2": [
+        [
+            "they_apprentice",
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_upstanding",
+            "they_stable",
+            "they_unabashed",
+            "they_unlawful",
+            "min_platonic_25",
+            "they_blind",
+            "you_blind",
+            "connected"
+        ],
+        [
+            "Just as expected, dislike_r_a_neurotic woke me up last night. Something about a shadow looking like a snake?",
+            "I told {PRONOUN/dislike_r_a_neurotic/object} {PRONOUN/dislike_r_a_neurotic/subject} had to stop yelping at every little thing, and {PRONOUN/dislike_r_a_neurotic/object} started crying. And it was impossible to not feel a little bad at that, but also {PRONOUN/dislike_r_a_neurotic/subject} {VERB/dislike_r_a_neurotic/wake/wakes} me up almost every other night?",
+            "I can't believe I have to share a den with {PRONOUN/dislike_r_a_neurotic/object}."
+        ]
     ]
 }

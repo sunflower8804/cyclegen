@@ -5202,5 +5202,17 @@
         [
             "[t_c hisses at you when you approach. You can feel {PRONOUN/t_c/poss} disappointment radiating off {PRONOUN/t_c/object}.]"
         ]
+    ],
+    "flirt_SAM1": [
+        [
+            "flirt",
+            "they_deaf",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[You trot up to t_c and rub heads with {PRONOUN/t_c/poss}, earning a small blush.]",
+            "[t_c is seen grinning like a fool afterwards, but {PRONOUN/t_c/subject} {VERB/t_c/try/tries} to hide it.]"
+        ]
     ]
 }

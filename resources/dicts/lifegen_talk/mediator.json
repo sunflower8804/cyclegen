@@ -1413,5 +1413,52 @@
             "If you spend your whole life worrying about trodding on the toes of others, you'll never get anything done.",
             "Now, do you want me to help you work out what you'll say?"
         ]
+    ],
+    "mentor_meditator_H1": [
+        [
+            "from_mentor",
+            "they_mediator",
+            "you_mediator_apprentice",
+            "you_apprentice",
+            "they_leader",
+            "you_neurotic",
+            "you_blind"
+        ],
+        [
+            "y_c, you must speak louder and enunciate your words.",
+            "Chin high, eyes straight ahead. Go again, you can do it!",
+            "Our voices matter just as much as the next cat. If you can't speak for yourself, then it'll be all for naught."
+        ]
+    ],
+    "general_they_shunned_mediator_CM1": [
+        [
+            "Any",
+            "they_shunned",
+            "they_mediator"
+        ],
+        [
+            "My job in this Clan is - <i>was</i> to solve problems.",
+            "[You watch as t_c presses {PRONOUN/t_c/poss} claws out, digging them into the ground below. Suddenly, {PRONOUN/t_c/subject} {VERB/t_c/swing/swings} {PRONOUN/t_c/poss} head around, glaring at you.]",
+            "I <i>solved</i> the problem.",
+            "Cats like you, y_c, would never understand."
+        ]
+    ],
+    "neurotic_tokit_SQ2": [
+        [
+            "you_kitten",
+            "they_neurotic",
+            "they_warrior",
+            "they_mediator",
+            "they_medicine_cat",
+            "they_deputy",
+            "they_leader",
+            "neutral",
+            "greenleaf"
+        ],
+        [
+            "Oh! Hey, y_c. Sorry, I don't really know how to deal with... uh...",
+            "[t_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
+            "Um... here! Play with that for a bit, maybe?"
+        ]
     ]
 }
