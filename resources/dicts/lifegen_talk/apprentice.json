@@ -161,7 +161,7 @@
         [
             "Hi y_c.",
             "[You notice that t_c is sitting, muscles bunched up and tail flicking irritably.]",
-            "What's wrong? Oh, I got into a fight with r_w_assertive. {PRONOUN/r_w_assertive/subject}{VERB/r_w_assertive/'re/'s} an utter mousebrain. {PRONOUN/r_w_assertive/subject/CAP} tried to get me to cross the Clan border after a rabbit! It's utterly ridiculous.",
+            "What's wrong? Oh, I got into a fight with r_w_assertive. {PRONOUN/r_w_assertive/subject/CAP}{VERB/r_w_assertive/'re/'s} an utter mousebrain. {PRONOUN/r_w_assertive/subject/CAP} tried to get me to cross the Clan border after a rabbit! It's utterly ridiculous.",
             "We can't be running across the border, there'd be no point in it being there otherwise! We need to be respectful of our borders, and I can't believe {PRONOUN/r_w_assertive/subject} {VERB/r_w_assertive/don't/doesn't} see that.",
             "... Sorry for yelling at you like that, y_c. I appreciate you listening to me. Thank you."
         ]
@@ -2333,7 +2333,7 @@
         ],
         [
             "Hello little one.",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/pad/pads} into the nursery and {VERB/t_c/sit/sits} {PRONOUN/t_c/self} next to you, eyes glittering with love.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pad/pads} into the nursery and {VERB/t_c/sit/sits} {PRONOUN/t_c/self} next to you, eyes glittering with love.]",
             "You're so cute, welcome to the world! Allow me to be the first to introduce myself. Hello, I'm your older {PRONOUN/t_c/sibling}, t_c! Remember, you can always count on me, y_c."
         ]
     ],
@@ -2653,7 +2653,7 @@
             "Enjoy yourself, now!",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} to face the kittens who watch {PRONOUN/t_c/object} with beady black eyes.]",
             "Who wants to play hide and seek within the camp? I'll seek!",
-            "[{PRONOUN/t_c/subject}{VERB/t_c/toss/tosses} {PRONOUN/t_c/poss} paws over {PRONOUN/t_c/poss} eyes.]",
+            "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/toss/tosses} {PRONOUN/t_c/poss} paws over {PRONOUN/t_c/poss} eyes.]",
             "1, 2, 3- ",
             "[The kits squeal and run off to hide.]"
         ]
@@ -4066,7 +4066,7 @@
             "[From the way t_c refuses to look at you {PRONOUN/t_c/subject} must have done something silly.]",
             "[Thorns are easy though, and you tease each one out carefully. Once they're all removed and washed well, you apply a poultice before ensuring {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} looking.]",
             "[t_c looks annoyed when you sign to stay off it for two days. {PRONOUN/t_c/subject/CAP} {VERB/t_c/retort/retorts} with only one day but you shake your head.]",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/limp/limps} off crossly. Yeah, you'll need to tell d_n about this too. {PRONOUN/d_n/subject/CAP} will keep t_c from patrolling against your orders.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/limp/limps} off crossly. Yeah, you'll need to tell d_n about this too. {PRONOUN/d_n/subject/CAP} will keep t_c from patrolling against your orders.]"
         ]
     ],
     "neurotic_leafbare_SQ3": [

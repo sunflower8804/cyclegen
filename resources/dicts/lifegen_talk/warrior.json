@@ -3548,7 +3548,7 @@
         ],
         [
             "[You're running through a few battle moves when t_c approaches and stomps for your attention. The vibration under your paws stops you to look at {PRONOUN/t_c/object}.]",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head before showing you a slightly different version. You note how {PRONOUN/t_c/subject} {VERB/t_c/stay/stays} light on {PRONOUN/t_c/poss} paws in the example.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head before showing you a slightly different version. You note how {PRONOUN/t_c/subject} {VERB/t_c/stay/stays} light on {PRONOUN/t_c/poss} paws in the example.]",
             "[Trying again, t_c once again shakes {PRONOUN/t_c/poss} head before guiding you through motion by motion.]",
             "[Again and again the two of you work through the move until your muscles burn. You finally stop and shake your head before moving your paw to rest under your chin.]",
             "[Seeing that you need to rest, t_c nods and gives your forehead a lick before heading off to other tasks.]"
@@ -4927,7 +4927,7 @@
             "[From the way t_c refuses to look at you {PRONOUN/t_c/subject} must have done something silly.]",
             "[Thorns are easy though, and you tease each one out carefully. Once they're all removed and washed well, you apply a poultice before ensuring {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} looking.]",
             "[t_c looks annoyed when you sign to stay off it for two days. {PRONOUN/t_c/subject/CAP} {VERB/t_c/retort/retorts} with only one day but you shake your head.]",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/limp/limps} off crossly. Yeah, you'll need to tell d_n about this too. {PRONOUN/d_n/subject/CAP} will keep t_c from patrolling against your orders.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/limp/limps} off crossly. Yeah, you'll need to tell d_n about this too. {PRONOUN/d_n/subject/CAP} will keep t_c from patrolling against your orders.]"
         ]
     ],
     "youdeaf_R59": [

@@ -93,7 +93,7 @@
         ],
         [
             "[You notice t_c playing with some kits, a rare smile on {PRONOUN/t_c/poss} face.]",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to notice your gaze, pausing and accidentally stumbling over a kit.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} to notice your gaze, pausing and accidentally stumbling over a kit.]",
             "[Nodding, you look away. It's good to see {PRONOUN/t_c/object} having fun every once in a while.]"
         ]
     ],
@@ -914,7 +914,7 @@
             "[You spot t_c with r_k, their paws are covered in colors and smashed berries are off to the side.]",
             "[You approach, asking what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing.]",
             "Oh! You see, r_k was playing a bit too rough, so I tried to find a different outlet for {PRONOUN/r_k/poss} energy.",
-            "{PRONOUN/r_k/subject} {VERB/r_k/seem/seems} to be enjoying making colorful rocks and I can't blame {PRONOUN/r_k/object}, I'm having fun too!"
+            "{PRONOUN/r_k/subject/CAP} {VERB/r_k/seem/seems} to be enjoying making colorful rocks and I can't blame {PRONOUN/r_k/object}, I'm having fun too!"
         ]
     ],
     "sweet_queenapp_22": [
@@ -1138,7 +1138,7 @@
         ],
         [
             "r_k_unlawful said {PRONOUN/r_k_unlawful/subject} didn't have to listen to me, because I'm basically still a kit too...",
-            "I didn't know what to say. {PRONOUN/r_k_unlawful/subject}{VERB/r_k_unlawful/'re/'s} kind of right. I'm not that much older than {PRONOUN/r_k_unlawful/object}, and I have no idea what I'm doing.",
+            "I didn't know what to say. {PRONOUN/r_k_unlawful/subject/CAP}{VERB/r_k_unlawful/'re/'s} kind of right. I'm not that much older than {PRONOUN/r_k_unlawful/object}, and I have no idea what I'm doing.",
             "I guess I just... hoped {PRONOUN/r_k_unlawful/subject}'d still respect me? That sounds stupid when I say it out loud."
         ]
     ],

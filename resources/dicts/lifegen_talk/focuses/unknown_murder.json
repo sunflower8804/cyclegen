@@ -53,7 +53,7 @@
         ],
         "dislike_r_w1": [
             "[t_c's eyes widen.]",
-            "See, I was thinking the same thing... {PRONOUN/dislike_r_w1/subject}{VERB/dislike_r_w1/'re/'s} weird, right?",
+            "See, I was thinking the same thing... {PRONOUN/dislike_r_w1/subject/CAP}{VERB/dislike_r_w1/'re/'s} weird, right?",
             "Let's keep an eye on {PRONOUN/dislike_r_w1/object}, okay? It could be one of us next..."
         ],
         "r_w2_neurotic": [
@@ -935,7 +935,7 @@
         ],
         "dislike_r_w1": [
             "[t_c's eyes widen.]",
-            "See, I was thinking the same thing... {PRONOUN/dislike_r_w1/subject}{VERB/dislike_r_w1/'re/'s} weird, right?",
+            "See, I was thinking the same thing... {PRONOUN/dislike_r_w1/subject/CAP}{VERB/dislike_r_w1/'re/'s} weird, right?",
             "Let's keep an eye on {PRONOUN/dislike_r_w1/object}, okay? It could be one of us next..."
         ],
         "r_w2_neurotic": [
