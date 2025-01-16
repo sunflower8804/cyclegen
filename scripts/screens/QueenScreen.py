@@ -304,9 +304,9 @@ class QueenScreen(Screens):
         if success:
             exp_gain = randint(5, 20)
             self.the_cat.experience += exp_gain
+        self.update_selected_cat()
         self.the_cat.did_activity = True
         self.confirm_mentor.disable()
-        self.update_selected_cat()
 
     def get_success(self):
         queen = self.the_cat
