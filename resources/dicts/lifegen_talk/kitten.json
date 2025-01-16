@@ -1656,7 +1656,7 @@
         [
             "...",
             "[You look over at t_c wandering around, desperately looking for something.]",
-            "[... {VERB/t_c/are/is/CAP} {PRONOUN/t_c/subject} looking for d_c?]",
+            "[... {VERB/t_c/Are/Is} {PRONOUN/t_c/subject} looking for d_c?]",
             "[You decide to lay down with {PRONOUN/t_c/object}, to provide some comfort in the only way you can.]",
             "...",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/curl/curls} up next to you, but {VERB/t_c/don't/doesn't} fall asleep.]"
@@ -1728,7 +1728,7 @@
         ],
         [
             "[t_c tucks {PRONOUN/t_c/poss} nose under {PRONOUN/t_c/poss} paw, completely dead to the world.]",
-            "[{VERB/t_c/do/does/CAP} {PRONOUN/t_c/subject} even know you're here right now ...?]"
+            "[{VERB/t_c/Do/Does} {PRONOUN/t_c/subject} even know you're here right now ...?]"
         ]
     ],
     "theygrief_13": [
@@ -2630,7 +2630,7 @@
             "I'm so sorry! Here! You can have it back, I didn't mean to steal it. It just looked super cool and was really fun to throw around- safely, I didn't want to hit anyone, but I did.",
             "I was playing with it and accidentally flung it around too much and ended up hitting r_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/were/was} mad and confused at first but then quickly calmed down. {PRONOUN/r_c/subject/CAP} immediately recognised the stick as yours though-",
             "{PRONOUN/r_c/subject/CAP} asked if I asked you to borrow it, I said no. {PRONOUN/r_c/subject/CAP} then said that I was to take it back to you because it doesn't belong to me and a good warrior doesn't steal. I didn't mean to make you upset or to hit {PRONOUN/r_c/object} in the back of the head.",
-            "{PRONOUN/r_c/subject/CAP} understood but- {PRONOUN/r_c/subject/}{VERB/r_c/'re/'s} right.",
+            "{PRONOUN/r_c/subject/CAP} understood but- {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} right.",
             "It was wrong of me to borrow it without your permission, I'm sorry, y_c. Is it okay if maybe you see another like this one, I could have it? Then we could be stick buddies! Bound by life!"
         ]
     ],
@@ -2745,7 +2745,7 @@
         [
             "y_c! y_c! r_k told me I had Deathcough!! Am I gonna die? Please tell me!",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/start/starts} to tear up, but you quickly reassure {PRONOUN/t_c/object} that no- {PRONOUN/t_c/subject} {VERB/t_c/are/is} not going to die.]",
-            "So... {PRONOUN/r_k/subject} tricked me again?"
+            "So... {PRONOUN/r_k/subject/CAP} tricked me again?"
         ]
     ],
     "neurotic_kit__25": [
@@ -3941,7 +3941,7 @@
             "[You feel awful for the poor kit. What {PRONOUN/t_c/subject} did was probably an accident, yet {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} still being punished.]",
             "y_c, do you hate me?",
             "[You tell {PRONOUN/t_c/object} no, you could never hate such a cute little kit.]",
-            "Thank you. t_l said {PRONOUN/t_l/subject} hated me... {PRONOUN/t_l/subject} didn't mean it, did {PRONOUN/t_l/subject}?",
+            "Thank you. t_l said {PRONOUN/t_l/subject} hated me... {PRONOUN/t_l/subject/CAP} didn't mean it, did {PRONOUN/t_l/subject}?",
             "You'll all forgive me, won't you?"
         ]
     ],
@@ -8406,6 +8406,18 @@
         [
             "[t_c is playing with a feather, passing it from paw to paw, all alone.]",
             "[When you look at {PRONOUN/t_c/object} imploringly, {PRONOUN/t_c/subject} just {VERB/t_c/turn/turns} away awkwardly.]"
+        ]
+    ],
+    "you_newbornsam1": [
+        [
+            "you_newborn",
+            "you_blind",
+            "you_deaf",
+            "they_kitten"
+        ],
+        [
+            "[You feel a tiny paw nudge you as you attempt to stand up. You fall down with a squeak.]",
+            "[Rude.]"
         ]
     ]
 }

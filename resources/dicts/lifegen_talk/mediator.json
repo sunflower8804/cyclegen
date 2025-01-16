@@ -1,27 +1,4 @@
 {
-    "medi_11": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Is something the matter?"
-        ]
-    ],
-    "dep_132": [
-        [
-            "newborn",
-            "insult",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Wha.. What was that?"
-        ]
-    ],
     "unabashed mediator apprentice1": [
         [
             "unabashed",
@@ -164,32 +141,6 @@
         [
             "Hm ...",
             "[For a mediator, t_c sure doesn't seem to talk much.]"
-        ]
-    ],
-    "medi_11x": [
-        [
-            "insult",
-            "Any",
-            "no_kit",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Words can be like claws, they can leave marks. Be careful with yours."
-        ]
-    ],
-    "medi_12": [
-        [
-            "insult",
-            "kitten",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "Hey! Wait... This is the perfect time to use my training!",
-            "What caused you to act this way?",
-            "How about you take a deep breath. Inhale, then exhale.",
-            "Now lets reflect on your actions... hey! Don't just walk away from me!"
         ]
     ],
     "assertive_jealous1": [
@@ -1037,7 +988,7 @@
         ],
         [
             "[You see t_c expertly mediating a fight between two of your warriors.]",
-            "[{PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} really blossomed into {PRONOUN/t_c/poss} new role, quickly ending what could've been a huge fight.]",
+            "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'ve/'s} really blossomed into {PRONOUN/t_c/poss} new role, quickly ending what could've been a huge fight.]",
             "Oh! y_c! I'll get to you in a moment! We were exchanging forgiveness flowers!"
         ]
     ],

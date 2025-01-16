@@ -3737,6 +3737,7 @@
             "any",
             "they_blind",
             "you_blind",
+            "reject",
             "flirt"
         ],
         [
@@ -4574,6 +4575,7 @@
             "you_deaf",
             "they_deaf",
             "flirt",
+            "accept",
             "you_any"
         ],
         [
@@ -4633,7 +4635,7 @@
             "flirt"
         ],
         [
-            "[{PRONOUN/t_c/subject} {VERB/t_c/duck/ducks} {PRONOUN/t_c/poss} head shyly in response.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/duck/ducks} {PRONOUN/t_c/poss} head shyly in response.]"
         ]
     ],
     "youdeaf_R84": [
@@ -5087,7 +5089,8 @@
             "no_kit",
             "flirt",
             "they_neurotic",
-            "max_dislike_5"
+            "max_dislike_5",
+            "accept"
         ],
         [
             "[t_c giggles, then looks embarrassed.]",
@@ -5100,7 +5103,8 @@
             "no_kit",
             "flirt",
             "they_neurotic",
-            "max_dislike_5"
+            "max_dislike_5",
+            "accept"
         ],
         [
             "I... I think you look really nice, too!",
@@ -5145,6 +5149,7 @@
             "you_grieving",
             "you_shunned",
             "you_blind",
+            "accept",
             "any"
         ],
         [
@@ -5172,6 +5177,7 @@
             "they_deaf",
             "you_grieving",
             "you_blind",
+            "accept",
             "any"
         ],
         [
@@ -5184,6 +5190,7 @@
             "they_grieving",
             "they_deaf",
             "you_blind",
+            "accept",
             "any"
         ],
         [
@@ -5208,6 +5215,7 @@
             "flirt",
             "they_deaf",
             "you_deaf",
+            "accept",
             "any"
         ],
         [

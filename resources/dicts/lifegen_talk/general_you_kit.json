@@ -422,7 +422,7 @@
         [
             "...",
             "[t_c is sat in the corner, with a clump of snow on {PRONOUN/t_c/poss} head.]",
-            "[{PRONOUN/t_c/subject}... {VERB/t_c/have/has}n't noticed?]",
+            "[{PRONOUN/t_c/subject/CAP}... {VERB/t_c/have/has}n't noticed?]",
             "[You decide to leave {PRONOUN/t_c/object} to it...?]"
         ]
     ],
@@ -5160,7 +5160,7 @@
             "Yes, whilst I'm here, it will be fine, besides, we're not going too far, I know exactly where to look.",
             "[t_c quickly informs the guards and then picks you up by the scruff, {PRONOUN/t_c/poss} grip firm. As {PRONOUN/t_c/subject} walks, it's silent, not even the birds or trees dared to move. {PRONOUN/t_c/subject/CAP} eventually sits you down and loom above you, {PRONOUN/t_c/poss} gaze full of love and worry.]",
             "Let me be clear, I don't want you in there without supervision, but it's done now. What we can do is learn from it and I trust that you will remember that. The medicine den can be a very dangerous place.",
-            "[{PRONOUN/t_c/subject} nudges you forwards, {PRONOUN/t_c/poss} shadow cast over you to protect you from the sky. The two of you walk in silence once more.]",
+            "[{PRONOUN/t_c/subject/CAP} nudges you forwards, {PRONOUN/t_c/poss} shadow cast over you to protect you from the sky. The two of you walk in silence once more.]",
             "The last thing I want is for you to get hurt. I love you, you're my kit. It's my job to protect you however, I can't always be there. What if you slipped? What if there was a poisonous herb?",
             "y_c, please be careful. I can't afford to lose you. Oh! There we are, this is the herb we're looking for, here, this is how you extract it.",
             "See, just like that. Now, once we get back to camp, you'll give this back to r_m. And you won't have any honey for a week. This isn't up for debate.",
@@ -5363,7 +5363,7 @@
             "you_kitten"
         ],
         [
-            "[t_c looks lovingly at {PRONOUN/t_c/poss} belly. {PRONOUN/t_c/subject/CAP}  {VERB/t_c/notice/notices} you and {VERB/t_c/smile/smiles}.]",
+            "[t_c looks lovingly at {PRONOUN/t_c/poss} belly. {PRONOUN/t_c/subject/CAP} {VERB/t_c/notice/notices} you and {VERB/t_c/smile/smiles}.]",
             "I think they'll be cuter than you.",
             "[t_c cackles when y_p's head snaps up.]"
         ]
@@ -5529,44 +5529,6 @@
             "Next time you roughhouse with your siblings, try using your claws. It'll only hurt a bit for them, but it'll make you all into better warriors. In a real battle, an enemy isn't going to hold back like your littermates do.",
             "They're making you soft. A real enemy's going to come at you with everything they've got.",
             "If you really want to prepare, you have to do the same. Use your claws. Go for the throat. Remember, when you're a warrior, it's kill or be killed. You'll be doing your siblings a favor. You can thank me when you're older."
-        ]
-    ],
-    "you_newbornsam1": [
-        [
-            "you_newborn",
-            "you_blind",
-            "you_deaf",
-            "they_kitten"
-        ],
-        [
-            "[You feel a tiny paw nudge you as you attempt to stand up. You fall down with a squeak.]",
-            "[Rude.]"
-        ]
-    ],
-    "you_newbornsam2": [
-        [
-            "you_newborn",
-            "you_blind",
-            "only_you_deaf",
-            "insult",
-            "they_adult"
-        ],
-        [
-            "[You attempt to scratch t_c, but you end up barely grazing {PRONOUN/t_c/object} with your claw.]",
-            "[You can feel {PRONOUN/t_c/poss} laughter as {PRONOUN/t_c/subject} {VERB/t_c/pick/picks} you up, returning you to the nursery after your failed antics.]"
-        ]
-    ],
-    "you_newbornsam3": [
-        [
-            "you_newborn",
-            "you_blind",
-            "insult",
-            "they_kitten"
-        ],
-        [
-            "[You scratch t_c with your claws, annoyed. {PRONOUN/t_c/subject/CAP} {VERB/t_c/let/lets} out a loud yelp before running towards r_q.]",
-            "r_q! r_q! y_c scratched me!",
-            "[You <i>almost</i> feel bad.]"
         ]
     ]
 }
