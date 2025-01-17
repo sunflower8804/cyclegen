@@ -4750,6 +4750,39 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 counter +=1
 
             text = add_to_cat_dict("rdf_c", cluster, x, rel, r, random_cat, text, cat_dict)
+
+    if "rur_c" in text:
+        cluster = False
+        rel = False
+        match = re.search(r'rur_c(\w+)', text)
+        if match:
+            x = match.group(1).strip("_")
+            cluster = True
+        else:
+            x = ""
+        match2 = re.search(r'(\w+)rur_c', text)
+        if match2:
+            r = match2.group(1).strip("_")
+            rel = True
+        else:
+            r = ""
+
+        text, in_dict = cat_dict_check("rur_c", cluster, x, rel, r, text, cat_dict)
+        
+
+        if in_dict is False:
+            random_cat = Cat.all_cats.get(choice(game.clan.unknown_cats))
+            addon_check = abbrev_addons(cat, random_cat, cluster, x, rel, r)
+
+            counter = 0
+            while random_cat.ID == you.ID or random_cat.ID == cat.ID or addon_check is False:
+                if counter == 30:
+                    return ""
+                random_cat = Cat.all_cats.get(choice(game.clan.unknown_cats))
+                addon_check = abbrev_addons(cat, random_cat, cluster, x, rel, r)
+                counter +=1
+
+            text = add_to_cat_dict("rur_c", cluster, x, rel, r, random_cat, text, cat_dict)
     
     # Random shunned cat
     if "rsh_c" in text:
