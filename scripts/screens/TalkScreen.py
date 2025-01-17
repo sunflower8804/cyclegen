@@ -1240,6 +1240,13 @@ class TalkScreen(Screens):
                 if "murder_fail" in tags and game.clan.murdered["success"] is True:
                     continue
 
+                # discovered
+                if "murder_discovered" in tags and game.clan.murdered["discovered"] is False:
+                    continue
+                if "murder_not_discovered" in tags and game.clan.murdered["discovered"] is True:
+                    continue
+
+
                 if any(tag in tags for tag in [
                     "accomplice_agreed", "accomplice_refused",
                     "accomplice", "murder_victim",

@@ -1137,9 +1137,6 @@ class MurderScreen(Screens):
             if cat_to_murder.status == "leader":
                 print("Discovery chances will go up if the leader doesn't lose all of their lives.")
 
-        
-
-
     def change_cat(self, new_mentor=None, accomplice=None, accompliced=None):
         self.exit_screen()
         self.current_page = 0
@@ -1159,22 +1156,20 @@ class MurderScreen(Screens):
         you = game.clan.your_cat
         cat_to_murder = self.cat_to_murder
 
-        print("Accomplice:", accomplice.name if accomplice else None)
-        if accomplice:
-            print("Agreed:", accompliced)
-
-        game.clan.murdered = {
-            "moon": game.clan.age,
-            "murderer": game.clan.your_cat.ID,
-            "victim": cat_to_murder.ID,
-            "accomplice": [accomplice.ID if accomplice else None, accompliced if accomplice else False],
-            "success": murdered 
-        }
-
         if murdered:
             self.choose_murder_text(you, cat_to_murder, accomplice, accompliced)
         else:
             self.handle_murder_fail(you, cat_to_murder, accomplice, accompliced)
+            # for successes this is done in choose_murder_text
+            game.clan.murdered = {
+                "moon": game.clan.age,
+                "murderer": game.clan.your_cat.ID,
+                "victim": cat_to_murder.ID,
+                "accomplice": [accomplice.ID if accomplice else None, accompliced if accomplice else False],
+                "success": False,
+                "discovered": False,
+                "complication": None
+            }
         self.selected_cat = None
 
         game.switches['cur_screen'] = "events screen"
@@ -1451,7 +1446,6 @@ class MurderScreen(Screens):
             if you.status == "leader":
                 game.clan.leader_lives -= 1
             you.die()
-            
 
         owie = "sore"
         owie2 = "sore"
@@ -1475,8 +1469,6 @@ class MurderScreen(Screens):
                 # accomplice means you have one, accompliced means they agreed
                 if randint(1,4) == 1:
                     accomplice.get_injured(owie2)
-
-            # you.get_injured(owie)
         
         # CHOOSING TEXT
         biome = game.clan.biome.lower()
@@ -1849,6 +1841,23 @@ class MurderScreen(Screens):
                         [game.clan.your_cat.ID, cat_to_murder.ID]))
 
         self.stage = "choose murder cat"
+        
+        if injury:
+            comp = "injury"
+        elif death:
+            comp = "death"
+        else:
+            comp = None
+
+        game.clan.murdered = {
+            "moon": game.clan.age,
+            "murderer": game.clan.your_cat.ID,
+            "victim": cat_to_murder.ID,
+            "accomplice": [accomplice.ID if accomplice else None, accompliced if accomplice else False],
+            "success": True,
+            "discovered": discovered,
+            "complication": comp
+        }
         
           
     def choose_discover_punishment(self, you, cat_to_murder, accomplice, accompliced):

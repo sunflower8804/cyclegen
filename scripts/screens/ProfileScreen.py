@@ -3563,6 +3563,12 @@ class ProfileScreen(Screens):
                 self.cat_list_buttons[i].kill()
             for i in self.accessory_buttons:
                 self.accessory_buttons[i].kill()
+
+            if game.clan.clan_settings['all accessories']:
+                self.delete_accessory.disable()
+            else:
+                self.delete_accessory.enable()
+            
             self.open_accessories()
         elif self.open_tab == "faith":
             self.open_faith_tab()

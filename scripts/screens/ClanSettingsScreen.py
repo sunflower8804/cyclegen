@@ -465,11 +465,13 @@ class ClanSettingsScreen(Screens):
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
         )
         
-        self.checkboxes_text["achievements"] = UIImageButton(
-            ui_scale(pygame.Rect((670, 1290), (240, 60))),
-            "",
-            object_id="#achivements_button",
-            manager=MANAGER)
+        self.checkboxes_text["achievements"] = UISurfaceImageButton(
+            ui_scale(pygame.Rect((335, 615), (120, 30))),
+            "achievements",
+            get_button_dict(ButtonStyles.SQUOVAL, (120, 30)),
+            object_id="@buttonstyles_squoval",
+            manager=MANAGER,
+        )
 
     def refresh_checkboxes(self):
         """
