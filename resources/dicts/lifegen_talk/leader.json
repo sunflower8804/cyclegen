@@ -1536,10 +1536,10 @@
             "Finding the role you're meant to do matters, and sometimes we find out what we're meant to do moons later than you'd expect.",
             "Ah... You haven't been able to get those dreams... I understand. It's not an easy thing to do.",
             "I have had one though, if you'd like to hear about it. It wasn't pleasant, but if it helps you in any way, I'm more than happy to talk about it.",
-            "In my dream, I found myself in this strange, stoney place. It was like the Twoleg Place not too far from here.",
+            "In my dream, I found myself in this strange, stony place. It was like the Twolegplace not too far from here.",
             "Though... it was different. The Twolegs seemed to be absent, and their stony dens reached for the skies.",
             "Some of their dens had toppled over, moss and vines seemed to mend the cracks.",
-            "I found a kit amongst the rubble, I took it with me and tried to find it's family, but they were no where to be found.",
+            "I found a kit amongst the rubble. I took it with me and tried to find its family, but they were nowhere to be found.",
             "The kit told me to take it to the tallest building, and so I did. Looking down, the landscape almost looked like a forest.",
             "That is when the ground fell away, and the surroundings melted into a starry sky. I didn't know how I was floating.",
             "The kit's fur turned starry, and I realized...",
@@ -2546,6 +2546,89 @@
             "What did I tell you all about using our claws? No- I don't care that we're in StarClan. While training, we keep our claws <i>sheathed</i>, understand?",
             "[t_c watches through narrowed eyes as the kits sheepishly nod.]",
             "Alright then, let's take it from the top."
+        ]
+    ],
+    "mentor_meditator_H1": [
+        [
+            "from_mentor",
+            "they_mediator",
+            "you_mediator_apprentice",
+            "you_apprentice",
+            "they_leader",
+            "you_neurotic",
+            "you_blind"
+        ],
+        [
+            "y_c, you must speak louder and enunciate your words.",
+            "Chin high, eyes straight ahead. Go again, you can do it!",
+            "Our voices matter just as much as the next cat. If you can't speak for yourself, then it'll be all for naught."
+        ]
+    ],
+    "leader_H1": [
+        [
+            "they_leader",
+            "neurotic",
+            "you_any",
+            "platonic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I strive for perfection with the Clan, but I can't help but think I'm being too harsh.",
+            "Do you think I am? I wonder if I'm, in turn, being too difficult with myself, too.",
+            "Maybe I should speak with r_d? This worry will only increase the difficulty and frustration."
+        ]
+    ],
+    "about_cool_SQ1": [
+        [
+            "no_kit",
+            "they_warrior",
+            "they_deputy",
+            "they_leader",
+            "they_upstanding",
+            "min_trust_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "dislike_r_w_cool spontaneously decided to challenge r_a to a tree-climbing contest this morning! As if we weren't in the middle of a border patrol!",
+            "But r_a went along with it, of course, because dislike_r_w_cool is dislike_r_w_cool and <i>everycat</i> listens to {PRONOUN/dislike_r_w_cool/object}...",
+            "Ugh! It held up the patrol, and we were close enough to the o_cClan border that some o_cClan cat probably saw them messing around.",
+            "dislike_r_w_cool never represents our Clan well."
+        ]
+    ],
+    "about_neurotic_SQ4": [
+        [
+            "they_apprentice",
+            "they_warrior",
+            "they_deputy",
+            "they_leader",
+            "no_kit",
+            "min_platonic_25",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "StarClan, dislike_r_w_neurotic spent a full half-hour this morning reminding me to be careful. Stay away from the Thunderpath, don't investigate strange scents alone...'",
+            "I know what I'm doing, thank you very much! <i>I'm</i> not the one who got spooked last week and jumped straight into a thorn bush!"
+        ]
+    ],
+    "neurotic_tokit_SQ2": [
+        [
+            "you_kitten",
+            "they_neurotic",
+            "they_warrior",
+            "they_mediator",
+            "they_medicine_cat",
+            "they_deputy",
+            "they_leader",
+            "neutral",
+            "greenleaf"
+        ],
+        [
+            "Oh! Hey, y_c. Sorry, I don't really know how to deal with... uh...",
+            "[t_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
+            "Um... here! Play with that for a bit, maybe?"
         ]
     ]
 }

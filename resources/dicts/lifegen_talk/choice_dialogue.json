@@ -461,7 +461,7 @@
         "give_space": [
             "Maybe you're right. But it just kills me to know {PRONOUN/plove_t_s/subject} might have some problem I can't fix.",
             "I just hope {PRONOUN/plove_t_s/subject} {VERB/plove_t_s/know/knows} that {PRONOUN/plove_t_s/subject} can come to me with anything.",
-            "{PRONOUN/plove_t_s/subject} {VERB/plove_t_s/are/is} my {PRONOUN/plove_t_s/sibling}. Nothing matters more than that."
+            "{PRONOUN/plove_t_s/subject/CAP} {VERB/plove_t_s/are/is} my {PRONOUN/plove_t_s/sibling}. Nothing matters more than that."
         ],
         "dont_know": [
             "*Sigh* That's fair. Sorry to bother you with all this family stuff.",
@@ -1190,7 +1190,7 @@
         ],
         "insult": [
             "[You call t_c a mean nickname that you invented when both of you were kits.]",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/look/looks} a little taken aback.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} a little taken aback.]",
             "... Psh. Whatever! I don't even care!",
             "Go find some other friends to hang out with!",
             "[t_c looks away, eyes swimming with hurt and regret.]"
@@ -1418,7 +1418,7 @@
         "intro": [
             "Hehehehe ...",
             "[t_c is laughing to {PRONOUN/t_c/self}.]",
-            "[{PRONOUN/t_c/subject} must be remembering a funny joke from earlier.]"
+            "[{PRONOUN/t_c/subject/CAP} must be remembering a funny joke from earlier.]"
         ],
         "intro_choices": {
             "choice1": {
@@ -1896,7 +1896,7 @@
         "confidently_reassure": [
             "[You assure t_c that of course {PRONOUN/t_c/poss} mentor likes {PRONOUN/t_c/object}.]",
             "Ah, I don't know, y_c ... No offense, but you haven't been to one of our training sessions.",
-            "{PRONOUN/tm_n/subject} just {VERB/tm_n/get/gets} so frustrated with me ... I don't know how any cat could still like me after all that.",
+            "{PRONOUN/tm_n/subject/CAP} just {VERB/tm_n/get/gets} so frustrated with me ... I don't know how any cat could still like me after all that.",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} back at tm_n with a somber gaze.]"
         ],
         "criticize": [
@@ -2704,7 +2704,7 @@
         },
         "toonice": [
             "Oh... I see. Thank you for being honest with me.",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/seem/seems}... really upset. However, {PRONOUN/t_c/subject} {VERB/t_c/give/gives} you the same smile {PRONOUN/t_c/subject} always {VERB/t_c/do/does}.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems}... really upset. However, {PRONOUN/t_c/subject} {VERB/t_c/give/gives} you the same smile {PRONOUN/t_c/subject} always {VERB/t_c/do/does}.]"
         ],
         "youreperfect": [
             "Oh love! You're so sweet! ... Thank you, I really needed that.",
@@ -2756,7 +2756,7 @@
         ],
         "intro": [
             "[t_c is deep in a sign conversation with r_c across camp.]",
-            "[{PRONOUN/t_c/subject}{VERB/t_c/'re/'s} making all sorts of gestures with {PRONOUN/t_c/poss} paws, whiskers and tail that are too quick for you to pick up at this distance, but r_c is having no trouble responding.]",
+            "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} making all sorts of gestures with {PRONOUN/t_c/poss} paws, whiskers and tail that are too quick for you to pick up at this distance, but r_c is having no trouble responding.]",
             "[r_c isn't supposed to be speaking with shunned cats.]"
         ],
         "intro_choices": {
@@ -2773,7 +2773,7 @@
             "[You call out to r_c, reminding {PRONOUN/r_c/object} that {PRONOUN/r_c/subject} shouldn't be interacting with shunned cats.]",
             "[When r_c jumps and quickly retreats at your warning, t_c looks confused. {PRONOUN/t_c/subject/CAP} {VERB/t_c/glance/glances} around a bit before {PRONOUN/t_c/poss} eyes land on you.]",
             "... ... ...",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/dip/dips} {PRONOUN/t_c/object} head in apology.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/dip/dips} {PRONOUN/t_c/object} head in apology.]"
         ],
         "shunnedtalk_allow": [
             "[Though it's against the rules, you don't want to interrupt such a passionate conversation.]",
@@ -2949,7 +2949,7 @@
         "LayDownBeStupid": [
             "Oh- really? You sound pretty confident in that statement.",
             "Y'know what? Why not, I mean, I'm talking to you so it's not like I have much dignity to lose anyway.",
-            "[{PRONOUN/t_c/subject} {VERB/t_c/flop/flops} down next to you and position {PRONOUN/t_c/self} to match your pose.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/flop/flops} down next to you and position {PRONOUN/t_c/self} to match your pose.]",
             "[Silence hangs in the air for a second as {PRONOUN/t_c/subject} {VERB/t_c/think/thinks} to {PRONOUN/t_c/self}, eyes fixated on the sky as {PRONOUN/t_c/poss} brain formulates an opinion.]",
             "I hate the fact that you're right. This is actually really comfortable... Cheers to that y_c.",
             "[You both lay down together and have a light-hearted talk, both smiling and giggling. You both couldn't care less how your Clanmates stare at you. They just don't get it.]",
@@ -3378,7 +3378,7 @@
             "I can't wait until I'm big, like you are, y_c. Then, no one will be able to stop me from doing whatever I want.",
             "[You consider telling the kit about Clan politics and responsibilities, but decide to spare {PRONOUN/t_c/object} the lecture, lest you lose another tuft of fur.]",
             "[It's no doubt, the kit is trouble ... But, there's no denying {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} got a warrior's spirit.]",
-            "[{PRONOUN/t_c/subject}'ll be sure to make an interesting Clanmate one day.]"
+            "[{PRONOUN/t_c/subject/CAP}'ll be sure to make an interesting Clanmate one day.]"
         ],
         "leave": [
             "[You decide to leave t_c to {PRONOUN/t_c/poss} own devices, the sounds of ripping moss and faint giggling following you out of the nursery.]",
@@ -3817,7 +3817,7 @@
             }
         },
         "follow": [
-            "[You follow the cat all the way to a Twoleg nest. {PRONOUN/t_c/subject/CAP}  {VERB/t_c/mew/mews}at the door, and {VERB/t_c/are/is} let inside.]"
+            "[You follow the cat all the way to a Twoleg nest. {PRONOUN/t_c/subject/CAP} {VERB/t_c/mew/mews}at the door, and {VERB/t_c/are/is} let inside.]"
         ],
         "ignore": [
             "[You don't care what t_c does. You have to worry about yourself.]"
@@ -4258,7 +4258,7 @@
         ],
         "agree": [
             "[Yes, it's dislike_r_m's responsibility to care for your sick and injured Clanmates, but you agree that {PRONOUN/dislike_r_m/subject} {VERB/dislike_r_m/aren't/isn't} always the most diligent about it.]",
-            "[{PRONOUN/dislike_r_m/subject}{VERB/dislike_r_m/'re/'s} too distracted by {PRONOUN/dislike_r_m/poss} own problems, and you'd believe it if someone said {PRONOUN/dislike_r_m/subject} {VERB/dislike_r_m/aren't/isn't} as careful with patients {PRONOUN/dislike_r_m/subject} {VERB/dislike_r_m/don't/doesn't} care as much about.]",
+            "[{PRONOUN/dislike_r_m/subject/CAP}{VERB/dislike_r_m/'re/'s} too distracted by {PRONOUN/dislike_r_m/poss} own problems, and you'd believe it if someone said {PRONOUN/dislike_r_m/subject} {VERB/dislike_r_m/aren't/isn't} as careful with patients {PRONOUN/dislike_r_m/subject} {VERB/dislike_r_m/don't/doesn't} care as much about.]",
             "[t_c looks relieved.]",
             "I'm so glad. I thought I might be the only one to think that.",
             "Not now, but maybe when I work up the nerve... would you come with me to talk to l_n about dislike_r_m? I can't do it alone."

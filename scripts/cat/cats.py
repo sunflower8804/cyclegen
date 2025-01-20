@@ -3968,6 +3968,7 @@ class Cat:
             and check_cat.outside == self.outside
             and check_cat.df == self.df
             and not check_cat.faded
+            and check_cat.moons >= 0
         ]
 
         if status is not None:

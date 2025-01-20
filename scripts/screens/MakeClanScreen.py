@@ -4473,7 +4473,10 @@ class MakeClanScreen(Screens):
         start_leave = leaf.casefold()
         light_dark = "dark" if game.settings["dark mode"] else "light"
 
-        biome = self.biome_selected.lower()
+        if self.biome_selected:
+            biome = self.biome_selected.lower()
+        else:
+            biome = game.clan.biome
 
         return (
             f"{camp_bg_base_dir}/{biome}/{start_leave}_camp{campnum}_{light_dark}.png"

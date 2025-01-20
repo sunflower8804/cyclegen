@@ -766,6 +766,7 @@
         [
             "any",
             "insult",
+            "no_kit",
             "they_blind"
         ],
         [
@@ -775,6 +776,7 @@
     "silly_insult_3": [
         [
             "any",
+            "no_kit",
             "insult",
             "silly",
             "they_blind"
@@ -786,6 +788,7 @@
     "insult_4": [
         [
             "any",
+            "no_kit",
             "insult",
             "dislike",
             "they_blind",
@@ -798,6 +801,7 @@
     "insult_05": [
         [
             "any",
+            "no_kit",
             "insult",
             "dislike",
             "they_blind"
@@ -1373,7 +1377,7 @@
         ],
         [
             "Why would you say that? Did I do something wrong?",
-            "[t_c takes a step back, unable to meet your eyes. After a moment of silence, {PRONOUN/t_c/subject}  {VERB/t_c/turn/turns} and {VERB/t_c/scurry/scurries} away.]"
+            "[t_c takes a step back, unable to meet your eyes. After a moment of silence, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} and {VERB/t_c/scurry/scurries} away.]"
         ]
     ],
     "hate_insult_shunned_CM1": [
@@ -2458,6 +2462,7 @@
         [
             "insult",
             "any",
+            "no_kit",
             "you_blind",
             "they_blind"
         ],
@@ -2469,6 +2474,7 @@
         [
             "insult",
             "any",
+            "no_kit",
             "you_blind",
             "they_blind"
         ],
@@ -3065,7 +3071,7 @@
         [
             "WHAT THE- Who in StarClan's name...",
             "r_q! r_q! Hey, I think someone's been teaching the kits some... less than appropriate words.",
-            "[{PRONOUN/t_c/subject} turns to you in a sharp movement, {PRONOUN/t_c/poss} gaze billowing in anger and {PRONOUN/t_c/poss} hair on end.]",
+            "[{PRONOUN/t_c/subject/CAP} turns to you in a sharp movement, {PRONOUN/t_c/poss} gaze billowing in anger and {PRONOUN/t_c/poss} hair on end.]",
             "Who taught you this? Who was it? Was it t_a? r_w? r_a??? Out with it kit!",
             "[The queen tries to calm down the warrior who scoffs with a roll of {PRONOUN/t_c/poss} eyes.]",
             "NO! No kitten should speak like this, do not excuse {PRONOUN/y_c/poss} actions, this kind of behaviour is disgusting at best and harmful at worst."
@@ -3186,7 +3192,8 @@
             "insult",
             "any",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "no_kit"
         ],
         [
             "I hope you choke on a bird."
@@ -3345,6 +3352,32 @@
         ],
         [
             "[t_c doesn't hesitate to swing {PRONOUN/t_c/poss} claws in your direction the moment you get close.]"
+        ]
+    ],
+    "you_newbornsam3": [
+        [
+            "you_newborn",
+            "you_blind",
+            "insult",
+            "they_kitten"
+        ],
+        [
+            "[You scratch t_c with your claws, annoyed. {PRONOUN/t_c/subject/CAP} {VERB/t_c/let/lets} out a loud yelp before running towards r_q.]",
+            "r_q! r_q! y_c scratched me!",
+            "[You <i>almost</i> feel bad.]"
+        ]
+    ],
+    "you_newbornsam2": [
+        [
+            "you_newborn",
+            "you_blind",
+            "only_you_deaf",
+            "insult",
+            "they_adult"
+        ],
+        [
+            "[You attempt to scratch t_c, but you end up barely grazing {PRONOUN/t_c/object} with your claw.]",
+            "[You can feel {PRONOUN/t_c/poss} laughter as {PRONOUN/t_c/subject} {VERB/t_c/pick/picks} you up, returning you to the nursery after your failed antics.]"
         ]
     ]
 }

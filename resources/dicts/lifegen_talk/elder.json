@@ -194,7 +194,7 @@
             "you_blind"
         ],
         [
-            "Somehow, even as a kit, I've always felt like the elders' denis where I most belonged.",
+            "Somehow, even as a kit, I've always felt like the elders' den is where I most belonged.",
             "Dispensing wisdom ... admiring nature ... Taking in the day-to-day scenery around camp ... There's something so beautiful in the mundanity of it all, don't you think?",
             "Though, I suppose I always have been labeled an 'old soul' ..."
         ]
@@ -1786,6 +1786,39 @@
             "plike_r_w_stable has been stopping by a lot recently.",
             "{PRONOUN/plike_r_w_stable/subject/CAP} always {VERB/plike_r_w_stable/ask/asks} if I need anything, and then {VERB/plike_r_w_stable/stay/stays} to chat for at least an hour. {PRONOUN/plike_r_w_stable/subject/CAP} {VERB/plike_r_w_stable/say/says} {PRONOUN/plike_r_w_stable/subject} {VERB/plike_r_w_stable/want/wants} to make sure I stay informed of Clan business.",
             "It's nice to still feel included. I hope {PRONOUN/plike_r_w_stable/subject}{VERB/plike_r_w_stable/'re/'s} visiting because {PRONOUN/plike_r_w_stable/subject} {VERB/plike_r_w_stable/want/wants} to, and not because {PRONOUN/plike_r_w_stable/subject} {VERB/plike_r_w_stable/feel/feels} obligated."
+        ]
+    ],
+    "elder_H1": [
+        [
+            "they_elder",
+            "they_older",
+            "you_blind",
+            "they_blind",
+            "introspective",
+            "stable",
+            "upstanding",
+            "any"
+        ],
+        [
+            "Legends are lessons that ring with truth. They're not just stories.",
+            "I know the younger generations of this Clan may think I'm making things up in my old memory, but it's true!",
+            "Although I suppose I repeat myself often.",
+            "[t_c lets out a quiet chuckle that turns into a cough. You rub your paw along {PRONOUN/t_c/poss} back to help soothe it.]",
+            "I am growing old and won't be around here much longer, but I hope a cat or two remembers these legends and passes them on, just like I did."
+        ]
+    ],
+    "livekit_sc_Guy5": [
+        [
+            "you_kitten",
+            "they_sc",
+            "they_elder"
+        ],
+        [
+            "You want a story? Hm... have you ever heard of one of the fiercest warriors the Clans ever had?",
+            "They were born small, not expected to survive at all.",
+            "There was a terrible war between two Clans. Leafbares were even more hungry than they are now...",
+            "They stood between the two Clans, on the border. They invented a plan that would provide enough food for all of them.",
+            "And that was how the Clans came to have mediators. They've long since faded, but their legacy will last as long as there are cats who wish for peace."
         ]
     ]
 }
