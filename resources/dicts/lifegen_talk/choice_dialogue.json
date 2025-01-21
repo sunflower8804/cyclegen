@@ -3378,7 +3378,7 @@
             "I can't wait until I'm big, like you are, y_c. Then, no one will be able to stop me from doing whatever I want.",
             "[You consider telling the kit about Clan politics and responsibilities, but decide to spare {PRONOUN/t_c/object} the lecture, lest you lose another tuft of fur.]",
             "[It's no doubt, the kit is trouble ... But, there's no denying {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} got a warrior's spirit.]",
-            "[{PRONOUN/t_c/subject}'ll be sure to make an interesting Clanmate one day.]"
+            "[{PRONOUN/t_c/subject/CAP}'ll be sure to make an interesting Clanmate one day.]"
         ],
         "leave": [
             "[You decide to leave t_c to {PRONOUN/t_c/poss} own devices, the sounds of ripping moss and faint giggling following you out of the nursery.]",
@@ -3606,7 +3606,7 @@
         "intro": [
             "Erm ... Hi.",
             "Maybe you should check in on r_c sometime. Do you do check-ins? I don't actually know.",
-            "Um, anyways, {PRONOUN/r_c/poss}{VERB/r_c/'re/'s} worrying me a little lately ... sort of walking with a limp. I don't know if it's just in my head, or if {PRONOUN/r_c/poss}{VERB/r_c/'re/'s} really hurt.",
+            "Um, anyways, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} worrying me a little lately ... sort of walking with a limp. I don't know if it's just in my head, or if {PRONOUN/r_c/poss}{VERB/r_c/'re/'s} really hurt.",
             "Either way, you should check."
         ],
         "intro_choices": {
