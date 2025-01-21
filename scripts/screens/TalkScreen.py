@@ -1215,6 +1215,52 @@ class TalkScreen(Screens):
                 if not fam:
                     continue
 
+            # MURDER STUFF
+            if game.clan.murdered != {}:
+                # accomplice
+                if cat.ID == game.clan.murdered["accomplice"][0]:
+                    if "accomplice_agreed" in tags and game.clan.murdered["accomplice"][1] is False:
+                        continue
+                    elif "accomplice_refused" in tags and game.clan.murdered["accomplice"][1] is True:
+                        continue
+                
+                    if "not_accomplice" in tags:
+                        continue
+                else:
+                    if any(t in tags for t in ["accomplice", "accomplice_refused", "accomplice_agreed"]):
+                        continue
+                
+                # victim
+                if cat.ID == game.clan.murdered["victim"][0]:
+                    if "murder_victim" in tags and cat.ID != game.clan.murdered["victim"]:
+                        continue
+                    elif "not_murder_victim" in tags and cat.ID == game.clan.murdered["victim"]:
+                        continue
+                
+                # success/fail
+                if "murder_success" in tags and game.clan.murdered["success"] is False:
+                    continue
+                if "murder_fail" in tags and game.clan.murdered["success"] is True:
+                    continue
+
+                # discovered
+                if "murder_discovered" in tags and game.clan.murdered["discovered"] is False:
+                    continue
+                if "murder_not_discovered" in tags and game.clan.murdered["discovered"] is True:
+                    continue
+
+
+                if any(tag in tags for tag in [
+                    "accomplice_agreed", "accomplice_refused",
+                    "accomplice", "murder_victim",
+                    "not_murder_victim", "murder_success",
+                    "murder_fail"
+                    ]):
+                    if game.clan.murdered["murderer"] != game.clan.your_cat.ID:
+                        continue
+            
+            # ---
+
 
             if "non-related" in tags:
                 if you.inheritance.get_exact_rel_type(cat.ID) in BLOOD_RELATIVE_TYPES:
