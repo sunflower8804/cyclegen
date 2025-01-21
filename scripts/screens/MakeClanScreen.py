@@ -2109,7 +2109,7 @@ class MakeClanScreen(Screens):
         self.custom_cat = Cat(moons = c_moons, pelt=pelt2, loading_cat=True)
         self.custom_cat.sprite = generate_sprite(self.custom_cat)
         self.elements["sprite"] = UISpriteButton(ui_scale(pygame.Rect
-                                         ((315, 140), (175, 175))),
+                                         ((315, 160), (175, 175))),
                                    self.custom_cat.sprite,
                                    self.custom_cat.ID,
                                    starting_height=0, manager=MANAGER)
@@ -4005,7 +4005,7 @@ class MakeClanScreen(Screens):
         self.custom_cat.sprite = generate_sprite(self.custom_cat)
         self.elements['sprite'].kill()
         self.elements["sprite"] = UISpriteButton(ui_scale(pygame.Rect
-                                         ((315, 140), (175, 175))),
+                                         ((315, 160), (175, 175))),
                                    self.custom_cat.sprite,
                                    self.custom_cat.ID,
                                    starting_height=0, manager=MANAGER)
