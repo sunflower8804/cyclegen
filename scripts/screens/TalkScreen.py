@@ -478,7 +478,7 @@ class TalkScreen(Screens):
 
             #the text for dialogue choices
             option = pygame_gui.elements.UITextBox(str(text),
-                                                            ui_scale(pygame.Rect((435, 430 + y_pos), (270, 30))),
+                                                            ui_scale(pygame.Rect((435, 428 + y_pos), (270, 35))),
                                                             object_id="#text_box_30_horizleft",
                                                             manager=MANAGER)
             self.text_choices[c] = option
