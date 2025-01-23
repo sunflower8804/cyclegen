@@ -1194,7 +1194,7 @@ class Events:
                 elif (not game.clan.leader or game.clan.leader.dead or game.clan.leader.outside):
                     add_on_lead = " no leader"
 
-                add_on_mentor = " no mentor" if game.clan.your_cat.mentor else ""
+                add_on_mentor = " no mentor" if not game.clan.your_cat.mentor else ""
                 ceremony_txt = random.choice(self.b_txt[f"{game.clan.your_cat.status} ceremony{add_on_lead}{add_on_mentor}"])
 
             ceremony_txt = ceremony_txt.replace('c_n', str(game.clan.name))
