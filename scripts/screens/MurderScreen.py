@@ -1534,7 +1534,7 @@ class MurderScreen(Screens):
                     if "any" not in murder_dict["victim_status"]:
                         continue
 
-            if "relatonship" in murder_dict and murder_dict["relationship"]:
+            if "relationship" in murder_dict and murder_dict["relationship"]:
                 if "mates" in murder_dict["relationship"]:
                     if cat_to_murder not in you.mates:
                         continue
