@@ -1207,7 +1207,7 @@ class Events:
                 self.cat_dict["d_n"] = game.clan.deputy
             if len(get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"], sort=True)) > 0:
                 random_med = random.choice(get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"], sort=True))
-                ceremony_txt = re.sub(r'(?<!\/)r_m(?!\/)', str(game.clan.deputy.name), ceremony_txt)
+                ceremony_txt = re.sub(r'(?<!\/)r_m(?!\/)', str(random_med.name), ceremony_txt)
                 self.cat_dict["r_m"] = random_med
             if game.clan.your_cat.mentor:
                 ceremony_txt = re.sub(r'(?<!\/)m_n(?!\/)', str(Cat.all_cats[game.clan.your_cat.mentor].name), ceremony_txt)
