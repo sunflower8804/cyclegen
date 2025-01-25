@@ -635,7 +635,7 @@ class ListScreen(Screens):
                 self.full_cat_list.remove(game.clan.instructor)
             self.full_cat_list.insert(0, game.clan.instructor)
 
-        if (self.current_group == "df"):
+        elif self.current_group == "df":
             if game.clan.demon in self.full_cat_list:
                 self.full_cat_list.remove(game.clan.demon)
             self.full_cat_list.insert(0, game.clan.demon)
