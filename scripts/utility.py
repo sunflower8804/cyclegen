@@ -5241,11 +5241,36 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             text = add_to_cat_dict("fc_c", cluster, x, rel, r, game.clan.focus_cat, text, cat_dict)
     else:
         if "fc_c" in text:
-            print(game.clan.focus_cat)
             return ""
-    # except:
-    #     print("the fuck", cat_dict)
-    #     return ""
+
+    # recent murder/attempt victim
+    if "victim" in game.clan.murdered:
+        if "v_c" in text:
+            cluster = False
+            rel = False
+            match = re.search(r'v_c(\w+)', text)
+            if match:
+                x = match.group(1).strip("_")
+                cluster = True
+            else:
+                x = ""
+            match2 = re.search(r'(\w+)v_c', text)
+            if match2:
+                r = match2.group(1).strip("_")
+                rel = True
+            else:
+                r = ""
+            addon_check = abbrev_addons(cat, Cat.fetch_cat(game.clan.murdered["victim"]), cluster, x, rel, r)
+
+            if game.clan.murdered["victim"] == cat.ID or game.clan.murdered["victim"] == game.clan.your_cat.ID or \
+            addon_check is False:
+                return ""
+
+            text = add_to_cat_dict("v_c", cluster, x, rel, r, Cat.fetch_cat(game.clan.murdered["victim"]), text, cat_dict)
+    else:
+        if "v_c" in text:
+            print("failed to get v_c")
+            return ""
 
     return text
 

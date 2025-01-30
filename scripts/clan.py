@@ -147,7 +147,7 @@ class Clan:
         self.game_mode = game_mode
         self.pregnancy_data = {}
         self.inheritance = {}
-        self.murdered = False
+        self.murdered = {}
         self.exile_return = False
         self.affair = False
         self.achievements = []
@@ -1332,13 +1332,16 @@ class Clan:
             game.clan.your_cat = Cat.all_cats[clan_data["your_cat"]]
 
         if "murdered" in clan_data:
-            game.clan.murdered = clan_data["murdered"]
+            if isinstance(clan_data["murdered"], bool):
+                game.clan.murdered = {}
+            else:
+                game.clan.murdered = clan_data["murdered"]
 
         if "affair" in clan_data:
-            game.clan.murdered = clan_data["affair"]
+            game.clan.affair = clan_data["affair"]
 
         if "exile_return" in clan_data:
-            game.clan.murdered = clan_data["exile_return"]
+            game.clan.exile_return = clan_data["exile_return"]
         
         game.switches["error_message"] = "Error loading ---clan.json. Check achievements"
         if "achievements" in clan_data:

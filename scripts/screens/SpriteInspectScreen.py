@@ -58,13 +58,13 @@ class SpriteInspectScreen(Screens):
             if event.ui_element == self.back_button:
                 self.change_screen("profile screen")
             elif event.ui_element == self.next_cat_button:
-                if isinstance(Cat.fetch_cat(self.next_cat), Cat) and self.next_cat.moons >= 0:
+                if isinstance(Cat.fetch_cat(self.next_cat), Cat) and Cat.fetch_cat(self.next_cat).moons >= 0:
                     game.switches["cat"] = self.next_cat
                     self.cat_setup()
                 else:
                     print("invalid next cat", self.next_cat)
             elif event.ui_element == self.previous_cat_button:
-                if isinstance(Cat.fetch_cat(self.previous_cat), Cat) and self.next_cat.moons >= 0:
+                if isinstance(Cat.fetch_cat(self.previous_cat), Cat) and Cat.fetch_cat(self.previous_cat).moons >= 0:
                     game.switches["cat"] = self.previous_cat
                     self.cat_setup()
                 else:

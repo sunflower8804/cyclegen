@@ -25,7 +25,8 @@ from scripts.utility import (
     find_special_list_types,
     filter_relationship_type,
     get_special_snippet_list,
-    adjust_txt
+    adjust_txt,
+    get_alive_status_cats
 )
 from scripts.game_structure.game_essentials import game
 from itertools import combinations
@@ -688,6 +689,13 @@ class Patrol:
 
                 if "bloodthirsty_only" in patrol.tags:
                     if Cat.all_cats.get(game.clan.your_cat.mentor).personality.trait != "bloodthirsty":
+                        continue
+
+                if "clan_has_kits" in patrol.tags:
+                    if len(get_alive_status_cats(Cat, ["kitten", "newborn"])) == 0:
+                        continue
+                if "clan_no_kits" in patrol.tags:
+                    if len(get_alive_status_cats(Cat, ["kitten", "newborn"])) > 0:
                         continue
 
                 # this is testing every piece of text in the patrol

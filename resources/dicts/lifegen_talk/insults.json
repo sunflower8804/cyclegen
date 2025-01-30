@@ -15,7 +15,8 @@
     "app_321": [
         [
             "insult",
-            "Any",
+            "they_kitten",
+            "you_any",
             "they_blind",
             "you_blind"
         ],
@@ -52,6 +53,7 @@
     "app_32ga1": [
         [
             "insult",
+            "no_kit",
             "Any",
             "assertive",
             "unabashed",
@@ -259,7 +261,8 @@
             "cool",
             "insult",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_not_kit"
         ],
         [
             "Bold of you to assume that I care."
@@ -311,7 +314,8 @@
             "insult",
             "platonic_like",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_not_kit"
         ],
         [
             "Hey! What gives?"
@@ -323,7 +327,8 @@
             "insult",
             "dislike",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_not_kit"
         ],
         [
             "As if I couldn't like you any less ..."
@@ -336,7 +341,8 @@
             "you_abandoned",
             "hate",
             "they_blind",
-            "sc_faith"
+            "sc_faith",
+            "they_not_kit"
         ],
         [
             "StarClan above. No wonder your parents left you."
@@ -387,7 +393,6 @@
             "cool",
             "platonic_like",
             "they_blind",
-            "you_blind",
             "they_deaf",
             "you_deaf"
         ],
@@ -421,7 +426,8 @@
         [
             "any",
             "brooding",
-            "insult"
+            "insult",
+            "they_not_kit"
         ],
         [
             "Quit buzzing in my ear."
@@ -442,7 +448,8 @@
         [
             "any",
             "brooding",
-            "insult"
+            "insult",
+            "they_not_kit"
         ],
         [
             "Cry about it."
@@ -608,7 +615,8 @@
             "cool",
             "insult",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_not_kit"
         ],
         [
             "Aw, look! It thinks it's clever."
@@ -621,7 +629,9 @@
             "assertive",
             "insult",
             "they_blind",
-            "they_hearing"
+            "they_hearing",
+            "they_not_kit",
+            "you_blind"
         ],
         [
             "Please. I've heard worse from the kits in the nursery."
@@ -634,7 +644,8 @@
             "cool",
             "you_blind",
             "they_blind",
-            "sc_faith"
+            "sc_faith",
+            "no_kit"
         ],
         [
             "StarClan, I can barely hear you over the sound of your raging insecurity."
