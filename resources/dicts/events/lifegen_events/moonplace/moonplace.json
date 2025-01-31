@@ -447,9 +447,49 @@
                 "While you're here, let me offer some advice.",
                 "Bravery is not the only virtue of a strong cat. Compassion, understanding, and respect for all life are just as important.",
                 "Carry these values with you, for they are the true marks of greatness."
+            ],
+            [
+                "[Apprentices must travel to the Moonplace as a vital part of their training. A respected and honored rite of passage many, many ancestors have journeyed before.]",
+                "[You follow the well-worn path until you reach the sacred spot. You touch your nose upon it to summon the StarClan cat.]",
+                "Hello, young one. I have some guidance to give you.",
+                "Your existence on the mortal realm is limited, so embrace change. Embrace the bad and the good.",
+                "Everycat marvels at the beauty of a butterfly, yet fail to acknowledge the change it needed to go through to achieve that beauty."
+            ],
+            [
+                "[All apprentices are called to visit the Moonplace, fulfilling a time-honored rite of passage.]",
+                "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+                "[Carefully, you touch your nose to the sacred spot, summoning t_c.]",
+                "An apprentice... I have a warning for you. Listen closely.",
+                "There is no such thing as 'bad apples'. Be wary of the roots, for no healthy tree naturally bears strange fruit."
+            ],
+            [
+                "[All apprentices are expected to make the solemn journey to the Moonplace, honoring an ancient custom.]",
+                "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+                "[Carefully, you touch your nose to the sacred spot.]",
+                "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/gaze/gazes} at you, and you shiver. It's almost like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} staring through your soul.]",
+                "We all have done bad things. We can't take it back nor can we ignore it. Both the bad and the good are apart of who we are.",
+                "Do not let your mistakes weight you down. It just might suffocate you."
+            ],
+            [
+                "[Visiting the Moonplace is a rite of passage for all apprentices, regardless of their destined path within the Clan.]",
+                "[You decide to make the journey this moon, treading the path countless medicine cats and leaders have worn smooth before you.]",
+                "[Carefully, you gently press your nose to the sacred spot.]",
+                "Hello, dear y_c. Listen closely.",
+                "A snake does not strike without being propelled. Step on it, attack it, provoke it, and the snake will bite back.",
+                "The snake does not allow themselves to be pushed about. Yet, they wait for the perfect moment to strike.",
+                "To lose patience is to lose the battle."
+            ],
+            [
+                "[It's tradition for apprentices to visit the Moonplace once during their apprenticeship, even if they are not a medicine cat apprentice.]",
+                "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+                "[Carefully, you touch your nose to the sacred spot. A StarClan cat greets you.]",
+                "Hello, young y_c. You've come far to visit us.",
+                "Let me give you some advice.",
+                "All it takes for a dandelion to break apart is one well-timed blow. They scatter their seeds, alone in the wind, yet find their home in the grass once more - ready to begin anew.",
+                "Sometimes to begin your journey, you just need a well-timed shove to move you forward."
             ]
         ],
-        "starclan_halfmoon_deaf": [
+        "starclan_halfmoon_only_deaf": [
             [
                 "[All apprentices are called to visit the Moonplace, fulfilling a time-honored rite of passage.]",
                 "[You walk along a path well-worn by generations of leaders and medicine cats before you.]",
@@ -457,9 +497,86 @@
                 "[t_c smiles at you and nods {PRONOUN/t_c/poss} head in greeting. {PRONOUN/t_c/subject/CAP} {VERB/t_c/step/steps} to the side and {VERB/t_c/look/looks} to the sky.]",
                 "[You watch as the stars shift, depicting symbols in bright constellations. Patience, knowledge, courage, resilience - the important values in every role.]",
                 "[Before you know it, the constellations shift and dim until all the stars die out. t_c disappears along with it.]"
+            ],
+            [
+                "[All apprentices are called to visit the Moonplace, fulfilling a time-honored rite of passage.]",
+                "[You walk along a path well-worn by generations of leaders and medicine cats before you.]",
+                "[Carefully, you touch your nose to the sacred spot.]",
+                "[The brightness of the StarClan cat hurts your eyes, but the moon behind them shines even brighter.]",
+                "[Once your eyes are focused on the graceful moon, the stars around it shift and dance in the sky, creating what seems to be the shape of an eye.]",
+                "[All seeing...]"
+            ],
+            [
+                "[All apprentices are called to visit the Moonplace, fulfilling a time-honored rite of passage.]",
+                "[You walk along a path well-worn by generations of leaders and medicine cats before you.]",
+                "[Carefully, you touch your nose to the sacred spot.]",
+                "[However, this time a StarClan cat does not appear. Instead, the world around you shifts and builds until you're surrounded by ocean. The breeze and smell of the ocean is instantly a calm in the storm.]",
+                "[You don't understand the symbolic meaning behind transporting you to the ocean, but it's a welcome chance of pace as you're given a moment to just relax.]"
             ]
         ],
         "starclan_halfmoon_blind": [
+            [
+                "[Visiting the Moonplace is a rite of passage for all apprentices, regardless of their destined path within the Clan.]",
+                "[You decide to make the journey this moon, treading the path countless medicine cats and leaders have worn smooth before you.]",
+                "[Carefully, you gently press your nose to the sacred spot.]",
+                "Hello, dear y_c. Listen closely.",
+                "A snake does not strike without being propelled. Step on it, attack it, provoke it, and the snake will bite back.",
+                "The snake does not allow themselves to be pushed about. Yet, they wait for the perfect moment to strike.",
+                "To lose patience is to lose the battle."
+            ],
+            [
+                "[It's tradition for apprentices to visit the Moonplace once during their apprenticeship, even if they are not a medicine cat apprentice.]",
+                "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+                "[Carefully, you touch your nose to the sacred spot. A StarClan cat greets you.]",
+                "Hello, young y_c. You've come far to visit us.",
+                "Let me give you some advice.",
+                "All it takes for a dandelion to break apart is one well-timed blow. They scatter their seeds, alone in the wind, yet find their home in the grass once more - ready to begin anew.",
+                "Sometimes to begin your journey, you just need a well-timed shove to move you forward."
+            ],
+            [
+                "[All apprentices are called to visit the Moonplace, fulfilling a time-honored rite of passage.]",
+                "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+                "[Carefully, you touch your nose to the sacred spot.]",
+                "Ah, an apprentice! It's nice to meet you, y_c.",
+                "While you're here, let me offer some advice.",
+                "Bravery is not the only virtue of a strong cat. Compassion, understanding, and respect for all life are just as important.",
+                "Carry these values with you, for they are the true marks of greatness."
+            ],
+            [
+                "[Apprentices must travel to the Moonplace as a vital part of their training. A respected and honored rite of passage many, many ancestors have journeyed before.]",
+                "[You follow the well-worn path until you reach the sacred spot. You touch your nose upon it to summon the StarClan cat.]",
+                "Hello, young one. I have some guidance to give you.",
+                "Your existence on the mortal realm is limited, so embrace change. Embrace the bad and the good.",
+                "Everycat marvels at the beauty of a butterfly, yet fail to acknowledge the change it needed to go through to achieve that beauty."
+            ],
+            [
+                "[All apprentices are called to visit the Moonplace, fulfilling a time-honored rite of passage.]",
+                "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+                "[Carefully, you touch your nose to the sacred spot, summoning t_c.]",
+                "An apprentice... I have a warning for you. Listen closely.",
+                "There is no such thing as 'bad apples'. Be wary of the roots, for no healthy tree naturally bears strange fruit."
+            ],
+            [
+                "[Every apprentice must undertake the revered journey to the Moonplace as part of their training.]",
+                "[You decide to make the journey this moon, treading the path countless medicine cats and leaders have worn smooth before you.]",
+                "[Carefully, you touch your nose to the sacred spot.]",
+                "It is rare for one so young to visit us here in the stars.",
+                "Your journey has only just begun, yet already you show the resilience of the oak.",
+                "Let me offer you some advice.",
+                "Strength is not just in standing tall but in bending when the storm comes, so you do not break."
+            ],
+            [
+                "[It's tradition for apprentices to visit the Moonplace once during their apprenticeship, even if they are not a medicine cat apprentice.]",
+                "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+                "[Carefully, you touch your nose to the sacred spot. A StarClan cat greets you.]",
+                "Hello, young y_c. You've come far to visit us.",
+                "Let me give you some advice.",
+                "You walk in the footsteps of many great warriors before you, yet your path is your own to shape.",
+                "Trust in your heart, y_c, even when the night is dark.",
+                "Even StarClan cannot foresee every twist in your path."
+            ]
+        ],
+        "starclan_halfmoon_only_blind": [
             [
                 "[Visiting the Moonplace is a rite of passage all apprentices are granted, regardless of their role to the Clan.]",
                 "[You let the wind push and guide you through the path many have traveled before, entrusting its connection to StarClan as you reach the sacred spot. It feels natural to touch your nose upon it.]",
