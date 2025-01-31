@@ -1176,7 +1176,7 @@ class KillCat(UIWindow):
             self.all_lives_check.hide()
             self.life_text = pygame_gui.elements.UITextBox(
                 "Take all the leader's lives",
-                ui_scale(pygame.Rect((60, 147), (450, 40))),
+                ui_scale(pygame.Rect((60, 147), (300, 40))),
                 object_id="#text_box_30_horizleft",
                 manager=MANAGER,
                 container=self,
