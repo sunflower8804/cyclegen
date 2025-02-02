@@ -444,7 +444,7 @@ class QueenScreen(Screens):
         for cat in display_cats:
             if game.clan.clan_settings["show fav"] and cat.favourite != 0:
                 self.fav[str(i)] = pygame_gui.elements.UIImage(
-                    ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))),
+                    ui_scale(pygame.Rect((100 + pos_x, 350 + pos_y), (50, 50))),
                     pygame.transform.scale(
                         pygame.image.load(
                             f"resources/images/fav_marker_{cat.favourite}.png").convert_alpha(),
@@ -452,7 +452,7 @@ class QueenScreen(Screens):
                 )
                 self.fav[str(i)].disable()
             self.cat_list_buttons["cat" + str(i)] = UISpriteButton(
-                ui_scale(pygame.Rect((100 + pos_x, 340 + pos_y), (50, 50))),
+                ui_scale(pygame.Rect((100 + pos_x, 350 + pos_y), (50, 50))),
                 cat.sprite, cat_object=cat, manager=MANAGER)
             pos_x += 60
             if pos_x >= 262:
