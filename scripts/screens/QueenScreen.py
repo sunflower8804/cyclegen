@@ -104,7 +104,7 @@ class QueenScreen(Screens):
         if game.settings['dark mode']:
             if self.the_cat.did_activity:
                 self.heading2 = pygame_gui.elements.UITextBox("This queen already worked this moon.",
-                                                        ui_scale(pygame.Rect((150, 55), (500, 80))),
+                                                        ui_scale(pygame.Rect((265, 55), (500, 80))),
                                                         object_id=get_text_box_theme("#text_box_26"),
                                                         manager=MANAGER)
             else:
