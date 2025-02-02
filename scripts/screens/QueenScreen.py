@@ -452,7 +452,7 @@ class QueenScreen(Screens):
                 )
                 self.fav[str(i)].disable()
             self.cat_list_buttons["cat" + str(i)] = UISpriteButton(
-                ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))),
+                ui_scale(pygame.Rect((100 + pos_x, 340 + pos_y), (50, 50))),
                 cat.sprite, cat_object=cat, manager=MANAGER)
             pos_x += 60
             if pos_x >= 262:
