@@ -104,12 +104,12 @@ class QueenScreen(Screens):
         if game.settings['dark mode']:
             if self.the_cat.did_activity:
                 self.heading2 = pygame_gui.elements.UITextBox("This queen already worked this moon.",
-                                                        ui_scale(pygame.Rect((150, 55), (500, 80))),
+                                                        ui_scale(pygame.Rect((265, 55), (500, 80))),
                                                         object_id=get_text_box_theme("#text_box_26"),
                                                         manager=MANAGER)
             else:
                 self.heading2 = pygame_gui.elements.UITextBox("Nursery activities can impact a kit's stats.\nStats may affect the kit's future role and personality.",
-                                                        ui_scale(pygame.Rect((150, 55), (500, 80))),
+                                                        ui_scale(pygame.Rect((265, 55), (500, 80))),
                                                         object_id=get_text_box_theme("#text_box_26"),
                                                         manager=MANAGER)
 
@@ -183,7 +183,7 @@ class QueenScreen(Screens):
 
         self.activity_box = pygame_gui.elements.UITextBox(
             "",
-            ui_scale(pygame.Rect((100, 210), (300, 200))),
+            ui_scale(pygame.Rect((100, 180), (300, 200))),
             object_id=get_text_box_theme("#text_box_26"),
             manager=MANAGER
             )
@@ -281,7 +281,7 @@ class QueenScreen(Screens):
             stat_change = choice(display_events["stat_change"])
         self.activity_box.kill()
         self.activity_box = pygame_gui.elements.UITextBox(self.adjust_txt(choice(display_events[stat_change])),
-                                                    ui_scale(pygame.Rect((100, 210), (300, 200))),
+                                                    ui_scale(pygame.Rect((100, 210), (300, 170))),
                                                     object_id=get_text_box_theme("#text_box_26"),
                                                     manager=MANAGER)
         if stat_change == "courage up":
