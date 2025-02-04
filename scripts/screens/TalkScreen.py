@@ -27,17 +27,6 @@ from ..ui.generate_button import ButtonStyles, get_button_dict
 from ..ui.get_arrow import get_arrow
 from ..ui.icon import Icon
 
-class RelationType(Enum):
-    """An enum representing the possible age groups of a cat"""
-
-    BLOOD = ''                      # direct blood related - do not need a special print
-    ADOPTIVE = 'adoptive'       	# not blood related but close (parents, kits, siblings)
-    HALF_BLOOD = 'half sibling'   	# only one blood parent is the same (siblings only)
-    NOT_BLOOD = 'not blood related'	# not blood related for parent siblings
-    RELATED = 'blood related'   	# related by blood (different mates only)
-
-BLOOD_RELATIVE_TYPES = [RelationType.BLOOD, RelationType.HALF_BLOOD, RelationType.RELATED, RelationType.ADOPTIVE]
-
 class TalkScreen(Screens):
 
     def __init__(self, name=None):
@@ -1263,7 +1252,7 @@ class TalkScreen(Screens):
 
 
             if "non-related" in tags:
-                if you.inheritance.get_exact_rel_type(cat.ID) in BLOOD_RELATIVE_TYPES:
+                if cat.ID in you.get_relatives():
                     continue
 
             if "war" in tags:

@@ -1221,7 +1221,7 @@ class Events:
             
             game.cur_events_list.insert(0, Single_Event(ceremony_txt, ["alert", "ceremony"], game.clan.your_cat.ID))
         except Exception as e:
-            print("ERROR with app ceremony" + e)
+            print("ERROR with app ceremony" + str(e))
                 
     def generate_ceremony(self):
         if game.clan.your_cat.former_mentor:
