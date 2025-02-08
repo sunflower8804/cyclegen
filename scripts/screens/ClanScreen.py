@@ -135,6 +135,7 @@ class ClanScreen(Screens):
             if (
                 not Cat.all_cats[x].dead
                 and Cat.all_cats[x].in_camp
+                and not Cat.all_cats[x].moons < 0
                 and not (Cat.all_cats[x].exiled or Cat.all_cats[x].outside)
                 and (
                     Cat.all_cats[x].status != "newborn"

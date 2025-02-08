@@ -628,29 +628,27 @@ class MakeClanScreen(Screens):
             if a in e:
                 game.choose_cats[a] = Cat(status='warrior', biome=None)
             else:
-                r = random.randint(1,90)
-                s = "warrior"
-                if r > 85:
-                    s = "medicine cat"
-                elif r > 80:
-                    s = "medicine cat apprentice"
-                elif r > 40:
-                    s = "warrior"
-                elif r > 30:
-                    s = "apprentice"
-                elif r > 25:
-                    s = "kitten"
-                elif r > 20:
-                    s = "elder"
-                elif r > 15:
-                    s = "mediator"
-                elif r > 10:
-                    s = "mediator apprentice"
-                elif r > 5:
-                    s = "queen"
-                elif r >= 0:
-                    s = "queen's apprentice"
+                status_percentages = [
+                ("medicine cat", 2),         
+                ("medicine cat apprentice", 3),  
+                ("warrior", 35),              
+                ("apprentice", 15),          
+                ("kitten", 5),               
+                ("elder", 5),                
+                ("mediator", 2),             
+                ("mediator apprentice", 3),   
+                ("queen", 2),                
+                ("queen's apprentice", 3),    
+                ]
+
+                status_choices = []
+                for status, percentage in status_percentages:
+                    status_choices.extend([status] * percentage)
+
+                s = random.choice(status_choices)
+
                 game.choose_cats[a] = Cat(status=s, biome=None)
+
             if game.choose_cats[a].moons >= 160:
                 game.choose_cats[a].moons = choice(range(120, 155))
             elif game.choose_cats[a].moons == 0:
@@ -4437,6 +4435,7 @@ class MakeClanScreen(Screens):
             self.handle_create_other_cats()
             game.mediated.clear()
             game.patrolled.clear()
+            game.dated_cats.clear()
             game.cat_to_fade.clear()
             Cat.outside_cats.clear()
             Patrol.used_patrols.clear()
