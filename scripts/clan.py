@@ -350,6 +350,7 @@ class Clan:
         num_mates = random.randint(0,3)
 
         for i in range(num_mates):
+            same_age_cats = []
             random_cat = get_adult_mateless_cat()
             if random_cat:
                 same_age_cats = get_free_possible_mates(random_cat)
@@ -531,6 +532,7 @@ class Clan:
         num_mates = random.randint(0,3)
 
         for i in range(num_mates):
+            same_age_cats = []
             random_cat = get_adult_mateless_cat()
             if random_cat:
                 same_age_cats = get_free_possible_mates(random_cat)
@@ -1305,6 +1307,9 @@ class Clan:
         # Patrolled cats
         if "patrolled_cats" in clan_data:
             game.patrolled = clan_data["patrolled_cats"]
+        
+        if "dated_cats" in clan_data:
+            game.dated_cats = clan_data["dated_cats"]
 
         game.switches["error_message"] = "Error loading ---clan.json. Check Mediated"
         # Mediated flag
