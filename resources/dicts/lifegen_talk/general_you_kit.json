@@ -168,8 +168,8 @@
             "you_blind"
         ],
         [
-            "O- Oh! Oh, you want a story, little one? A... About d_c...",
-            "Okay.. I'm.. I'm sorry if I get a little... Teary... But I don't want {PRONOUN/d_c/object} to be forgotten. Let me tell you about one of the most wonderful cats in the Clans..."
+            "O- Oh! Oh, you want a story, little one? A... About tg_c...",
+            "Okay.. I'm.. I'm sorry if I get a little... Teary... But I don't want {PRONOUN/tg_c/object} to be forgotten. Let me tell you about one of the most wonderful cats in the Clans..."
         ]
     ],
     "assertive_murder4_2": [
@@ -428,7 +428,7 @@
     ],
     "assertive_yougrief1": [
         [
-            "kitten",
+            "you_kitten",
             "assertive",
             "cool",
             "brooding",
@@ -436,12 +436,12 @@
             "dead_close"
         ],
         [
-            "[When you ask t_c what happened to d_c, and if you'll ever see {PRONOUN/d_c/object} again, something on {PRONOUN/t_c/poss} face breaks.]",
+            "[When you ask t_c what happened to yg_c, and if you'll ever see {PRONOUN/yg_c/object} again, something on {PRONOUN/t_c/poss} face breaks.]",
             "Ah ... Ah, kid, I'm so sorry ...",
-            "It ain't right, what happened to d_c ...",
-            "But, mark my words, you haven't seen the last of {PRONOUN/d_c/object}. Though, it may be a while. {PRONOUN/d_c/subject/CAP} {VERB/d_c/are/is} up in StarClan now, with our warrior ancestors.",
-            "One day, you'll reunite again. But until then, just know {PRONOUN/d_c/subject} {VERB/d_c/are/is} up there watching over you, helping you grow strong and healthy.",
-            "Can you try to grow up strong and healthy for {PRONOUN/d_c/object}?"
+            "It ain't right, what happened to yg_c ...",
+            "But, mark my words, you haven't seen the last of {PRONOUN/yg_c/object}. Though, it may be a while. {PRONOUN/yg_c/subject/CAP} {VERB/yg_c/are/is} up in StarClan now, with our warrior ancestors.",
+            "One day, you'll reunite again. But until then, just know {PRONOUN/yg_c/subject} {VERB/yg_c/are/is} up there watching over you, helping you grow strong and healthy.",
+            "Can you try to grow up strong and healthy for {PRONOUN/yg_c/object}?"
         ]
     ],
     "assertive_parent4": [
@@ -2678,7 +2678,7 @@
         ],
         [
             "Rest, little one. You've been through a lot of stress.",
-            "d_c is watching over you, and we're both very excited to see who you grow up to be."
+            "yg_c is watching over you, and we're both very excited to see who you grow up to be."
         ]
     ],
     "dead_yougrieving3": [
@@ -3528,7 +3528,7 @@
             "you_blind"
         ],
         [
-            "Chin up. d_c would hate to see you so upset."
+            "Chin up. yg_c would hate to see you so upset."
         ]
     ],
     "you_kit_ur_J4": [
@@ -5433,8 +5433,8 @@
             "What's this, y_c?",
             "[t_c has been really sad lately, so you decided to pick wildflowers for {PRONOUN/t_c/object}! In the process of dropping the flowers near t_c's paws, {PRONOUN/t_c/subject} {VERB/t_c/stiffen/stiffens} from the gesture.]",
             "Oh.",
-            "Those were d_c's favorite flowers. When they bloomed in newleaf... it was like d_c's eyes became StarClan themselves.",
-            "Sorry... Sorry, I think about {PRONOUN/d_c/object} all the time these days. Thank you, y_c. For the flowers."
+            "Those were tg_c's favorite flowers. When they bloomed in newleaf... it was like tg_c's eyes became StarClan themselves.",
+            "Sorry... Sorry, I think about {PRONOUN/tg_c/object} all the time these days. Thank you, y_c. For the flowers."
         ]
     ],
     "youdarkstar_R4": [
