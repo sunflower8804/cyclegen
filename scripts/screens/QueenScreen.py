@@ -176,8 +176,6 @@ class QueenScreen(Screens):
             starting_height=0,
         )
 
-        self.confirm_mentor.disable()
-
         if self.the_cat.did_activity:
             self.confirm_mentor.disable()
 
@@ -374,11 +372,12 @@ class QueenScreen(Screens):
         for ele in self.selected_details:
             self.selected_details[ele].kill()
         self.selected_details = {}
-        if self.selected_cat is None:
+        if self.selected_cat is None or self.the_cat.did_activity:
             self.confirm_mentor.disable()
         else:
             self.confirm_mentor.enable()
-
+        
+        if self.selected_cat:
             self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
                 ui_scale(pygame.Rect((425, 150), (150, 150))),
                 pygame.transform.scale(
