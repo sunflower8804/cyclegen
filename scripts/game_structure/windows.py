@@ -497,7 +497,7 @@ class ChangeCatName(UIWindow):
 
         self.heading = pygame_gui.elements.UITextBox(
             f"-Change {self.the_cat.name}'s Name-",
-            ui_scale(pygame.Rect((0, 10), (400, 40))),
+            ui_scale(pygame.Rect((50, 10), (300, 40))),
             object_id="#text_box_30_horizcenter",
             manager=MANAGER,
             container=self,
@@ -747,8 +747,8 @@ class PronounCreation(UIWindow):
         # Add UITextBox for the sample text to the sub-container
         self.sample_text_box = pygame_gui.elements.UITextBox(
             self.get_sample_text(self.the_cat.pronouns[0]),
-            ui_scale(pygame.Rect((9, 60), (197, 278))),
-            object_id="#text_box_30_horizcenter",
+            ui_scale(pygame.Rect((7, 60), (197, 278))),
+            object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self.demo_container,
         )

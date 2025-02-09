@@ -1244,7 +1244,7 @@
         ],
         [
             "Hey, y_c! You're looking a lot better than yesterday! If I didn't know any better, I'd say you're healing up pretty nice!",
-            "The medicine cat says you should be outta here in no time, which is good, since I'm starting to go crazy without you around ...",
+            "r_m says you should be outta here in no time, which is good, since I'm starting to go crazy without you around ...",
             "If you don't get better soon, then ...",
             "Hehe. Let's not even talk about that. Bad luck."
         ]
@@ -1829,7 +1829,7 @@
         [
             "[You look over and see a giant pile of leaves, with kittens playing around it.]",
             "Good morning, y_c. Nice weather, isn't it?",
-            "[... T_c? What in StarClan?]",
+            "[... t_c? What in StarClan?]",
             "Listen, I might as well. The kittens wanted to have fun, and I'm just sitting here. Might as well get buried by leaves.",
             "[Since t_c seems unbothered, you leaf {PRONOUN/t_c/object} to it.]"
         ]
@@ -10159,6 +10159,7 @@
     "rival_siblings": [
         [
             "no_kit",
+            "non-related",
             "platonic_like",
             "assertive",
             "upstanding",
@@ -10206,7 +10207,7 @@
         [
             "y_c! t_s just told me there's a huge, ugly spider on my tail! Quick, help me get it off!",
             "What? There's nothing there?",
-            "But ... T_s told me ... Oh, StarClan. t_s!",
+            "But ... t_s told me ... Oh, StarClan. t_s!",
             "[t_c storms off to go chew out t_s, who's dying of laughter on the other side of camp.]"
         ]
     ],
@@ -10573,7 +10574,7 @@
             "you_blind"
         ],
         [
-            "I know I don't speak about it often, but ... T_p_positive is a cat I really admire.",
+            "I know I don't speak about it often, but ... t_p_positive is a cat I really admire.",
             "Raising kits is something that takes so much strength, and even though {PRONOUN/t_p_positive/subject} {VERB/t_p_positive/weren't/wasn't} perfect, I never once doubted {PRONOUN/t_p_positive/subject} {VERB/t_p_positive/were/was} there for me when it was really important.",
             "I hope to be that type of figure for my own kits, one day."
         ]
@@ -12608,7 +12609,8 @@
         [
             "Any",
             "you_shunned",
-            "they_grieving"
+            "they_grieving",
+            "not_accomplice"
         ],
         [
             "Go away!",

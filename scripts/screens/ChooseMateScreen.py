@@ -821,7 +821,8 @@ class ChooseMateScreen(Screens):
         (
             self.next_cat,
             self.previous_cat,
-        ) = self.the_cat.determine_next_and_previous_cats(exclude_status=["kitten", "medicine cat apprentice", "mediator apprentice", "apprentice"])
+        ) = self.the_cat.determine_next_and_previous_cats(
+            filter_func = (lambda cat: cat.age in ["young adult", "adult", "senior adult", "senior"]))
         self.next_cat_button.disable() if self.next_cat == 0 else self.next_cat_button.enable()
         self.previous_cat_button.disable() if self.previous_cat == 0 else self.previous_cat_button.enable()
 
@@ -848,6 +849,10 @@ class ChooseMateScreen(Screens):
             object_id=get_text_box_theme("#text_box_34_horizcenter"),
             anchors={
                 "centerx": "centerx",
+            },
+            text_kwargs={
+                "name": shorten_text_to_fit(str(self.the_cat.name), 500, 18),
+                "m_c": self.the_cat,
             },
         )
 
