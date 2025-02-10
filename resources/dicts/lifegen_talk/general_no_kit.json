@@ -1778,7 +1778,6 @@
             "introspective",
             "newleaf",
             "you_blind",
-            "you_deaf",
             "they_blind"
         ],
         [
@@ -4786,7 +4785,9 @@
             "you_medicine_cat_apprentice",
             "silly",
             "they_injured",
-            "they_blind"
+            "they_blind",
+            "they_not_medicine_cat",
+            "they_not_medicine_cat_apprentice"
         ],
         [
             "Ow... y_c, you're the medicine cat here. Is being in pain always supposed to hurt this much...?"
@@ -5754,7 +5755,9 @@
             "dislike",
             "they_ill",
             "they_injured",
-            "they_blind"
+            "they_blind",
+            "they_not_medicine_cat",
+            "they_not_medicine_cat_apprentice"
         ],
         [
             "You may think you have power over me because you're the medicine cat, but you should think again.",

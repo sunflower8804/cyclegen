@@ -3601,7 +3601,9 @@
             "no_kit",
             "you_medicine_cat_apprentice",
             "you_medicine_cat",
-            "brooding"
+            "brooding",
+            "they_not_medicine_cat",
+            "they_not_medicine_cat_apprentice"
         ],
         "intro": [
             "Erm ... Hi.",
