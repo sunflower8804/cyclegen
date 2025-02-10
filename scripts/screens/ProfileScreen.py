@@ -481,11 +481,16 @@ class ProfileScreen(Screens):
                                 pos_y += 120
                             i += 1
                 self.profile_elements["cat_image"].kill()
-                self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100, 200), (150, 150))),
-                                                                        pygame.transform.scale(
-                                                                            self.the_cat.sprite,
-                                                                            (150, 150)), manager=MANAGER)
+                
+                self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(
+                    ui_scale(pygame.Rect((100, 200), (150, 150))),
+                    pygame.transform.scale(
+                        self.the_cat.sprite, ui_scale_dimensions((150, 150))
+                    ),
+                    manager=MANAGER,
+                )
                 self.profile_elements["cat_image"].disable()
+
                 self.profile_elements["cat_info_column1"].kill()
                 self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
                     self.generate_column1(self.the_cat),
@@ -905,11 +910,16 @@ class ProfileScreen(Screens):
                         except:
                             continue
                 self.profile_elements["cat_image"].kill()
-                self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100, 200), (150, 150))),
-                                                                        pygame.transform.scale(
-                                                                            self.the_cat.sprite,
-                                                                            (150, 150)), manager=MANAGER)
+
+                self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(
+                    ui_scale(pygame.Rect((100, 200), (150, 150))),
+                    pygame.transform.scale(
+                        self.the_cat.sprite, ui_scale_dimensions((150, 150))
+                    ),
+                    manager=MANAGER,
+                )
                 self.profile_elements["cat_image"].disable()
+
                 self.profile_elements["cat_info_column1"].kill()
                 self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
                     self.generate_column1(self.the_cat),
