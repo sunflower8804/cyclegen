@@ -907,6 +907,7 @@ class Events:
 
         def handle_backstory(siblings):
             '''Handles creating backstories for your cat'''
+            backstory = ""
             if birth_type in [BirthType.NO_PARENTS, BirthType.ONE_ADOPTIVE_PARENT, BirthType.TWO_ADOPTIVE_PARENTS]:
                 backstory = random.choice(["abandoned1", "abandoned2", "abandoned4", "loner3", "orphaned1", "orphaned2", "orphaned3", "orphaned4", "orphaned5", "orphaned6", "orphaned7", "outsider1"])
             elif birth_type == BirthType.ONE_PARENT:
