@@ -166,7 +166,7 @@ class EventsScreen(Screens):
                         and game.clan.your_cat.status == "kitten"
                         ):
                     PickPath('events screen')
-                else:
+                elif game.clan.your_cat.status:
                     self.events_thread = self.loading_screen_start_work(
                         events_class.one_moon
                     )
