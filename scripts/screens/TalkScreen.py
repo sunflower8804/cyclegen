@@ -716,6 +716,7 @@ class TalkScreen(Screens):
                 and "they_young_elder" not in tags
                 and "you_young_elder" not in tags
                 and "no_kit" not in tags
+                and "no_newborn" not in tags
                 and "you_any" not in tags
                 and "they_app" not in tags
                 and "you_app" not in tags
@@ -729,6 +730,8 @@ class TalkScreen(Screens):
             elif "you_young_elder" in tags and you.status == 'elder' and you.moons >= 100:
                 continue
             elif "no_kit" in tags and (you.status in ['kitten', 'newborn'] or cat.status in ['kitten', 'newborn']):
+                continue
+            elif "no_newborn" in tags and (you.status == "newborn" or cat.status == "newborn"):
                 continue
             elif "newborn" in tags and "kitten" not in tags and you.moons != 0:
                 continue
@@ -1203,6 +1206,9 @@ class TalkScreen(Screens):
                         fam = True
                 if not fam:
                     continue
+
+            if "former_mate" in tags and cat.ID not in you.previous_mates:
+                continue
 
             # MURDER STUFF
             if game.clan.murdered != {}:
