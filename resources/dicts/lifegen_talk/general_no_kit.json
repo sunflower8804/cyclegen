@@ -26536,5 +26536,154 @@
             "You've probably figured out that us dead cats can pass through objects, but I forgot that once. I curled up under a tree and woke up with my head inside the tree trunk.",
             "I made the most embarrassing yowl known to catkind before I realized what had happened."
         ]
+    ],
+    "dislike_brooding_J1": [
+        [
+            "they_deaf",
+            "brooding",
+            "unlawful",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c sits at the edge of camp, staring daggers at r_c_dislike, who is obliviously cleaning {PRONOUN/r_c_dislike/poss} paws in the clearing.]"
+        ]
+    ],
+    "dislike_brooding_J2": [
+        [
+            "min_dislike_20",
+            "max_platonic_20",
+            "brooding",
+            "any",
+            "they_blind"
+        ],
+        [
+            "[You attempt to approach t_c while {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} sunbathing in the clearing, eyes closed.]",
+            "I can smell you, y_c. Get lost. You're not ruining my pleasant afternoon."
+        ]
+    ],
+    "dislike_brooding_J3": [
+        [
+            "min_dislike_20",
+            "max_platonic_10",
+            "brooding",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What do you want?",
+            "Actually, I don't care."
+        ]
+    ],
+    "dislike_brooding_J4": [
+        [
+            "min_dislike_20",
+            "max_platonic_10",
+            "brooding",
+            "any",
+            "they_app",
+            "you_blind"
+        ],
+        [
+            "I found a grey hair on my back yesterday.",
+            "I think I'm getting them from the stress you always cause by continuing to talk to me."
+        ]
+    ],
+    "dislike_brooding_J5": [
+        [
+            "min_dislike_60",
+            "max_platonic_10",
+            "brooding",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You seriously don't give up, do you, y_c?",
+            "Next time you talk to me, expect some claws to the face."
+        ]
+    ],
+    "dislike_brooding_J6": [
+        [
+            "min_dislike_40",
+            "max_platonic_10",
+            "brooding",
+            "any",
+            "df_faith",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Bunch of phonies, those StarClan cats. I've been praying for a moon that you'd stop talking to me."
+        ]
+    ],
+    "dislike_brooding_J7": [
+        [
+            "min_dislike_40",
+            "max_platonic_10",
+            "brooding",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_grieving"
+        ],
+        [
+            "You're asking me how I'm doing?",
+            "I'm fine. Do you think I'm some pathetic kit who can't control their emotions?",
+            "{PRONOUN/tg_c/subject/CAP}{VERB/tg_c/'re/'s} dead. Can't do anything about it. So why should I get all sad about it?",
+            "... ... ... *sniff*"
+        ]
+    ],
+    "gen_brooding_J1": [
+        [
+            "brooding",
+            "any",
+            "they_blind",
+            "you_blind",
+            "min_platonic_50",
+            "they_grieving"
+        ],
+        [
+            "Hm?",
+            "Yeah. I'm fine. Don't worry about it. Just... missing tg_c_introspective. Same old.",
+            "[You ask t_c if {PRONOUN/t_c/subject}'d like to talk about {PRONOUN/tg_c_introspective/object}.]",
+            "N-no, I'm okay. tg_c_introspective wouldn't like the attention, anyway."
+        ]
+    ],
+    "gen_brooding_J2": [
+        [
+            "any",
+            "they_brooding",
+            "you_grieving",
+            "min_jealousy_20",
+            "max_platonic_20",
+            "no_kit",
+            "they_warrior",
+            "they_deputy",
+            "they_leader"
+        ],
+        [
+            "Come on, get up. Don't you have work to do?",
+            "We all have stuff to deal with. You shouldn't expect special treatment."
+        ]
+    ],
+    "gen_silly_J1": [
+        [
+            "any",
+            "they_silly",
+            "they_unlawful",
+            "min_platonic_30"
+        ],
+        [
+            "y_c! You've got something on your face.",
+            "[You lift your paw to your cheek to brush the debris off.]",
+            "Nope, you missed it!",
+            "Other side. A little higher. No, back that way. You're so close!",
+            "Ah, c'mere. I'll get it.",
+            "[In the blink of an eye, t_c gives you a controlled but sturdy smack to the face.]",
+            "Hahaha! Got it!",
+            "[Was there ever anything there..?]"
+        ]
     ]
 }
