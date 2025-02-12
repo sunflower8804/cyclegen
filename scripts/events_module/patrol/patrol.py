@@ -191,7 +191,7 @@ class Patrol:
                 else:
                     self.patrol_statuses["normal adult"] = 1
 
-            if game.switches["patrol_category"] != "date":
+            if "patrol_category" in game.switches and game.switches["patrol_category"] != "date":
                 game.patrolled.append(cat.ID)
             else:
                 game.dated_cats.append(cat.ID)
