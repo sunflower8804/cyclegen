@@ -1582,7 +1582,9 @@
         [
             "insult",
             "you_shunned",
-            "they_newborn"
+            "they_newborn",
+            "they_deaf",
+            "they_blind"
         ],
         [
             "[t_c spits at you, and t_p quickly returns, swiping you away from {PRONOUN/t_p/poss} precious kit.]"
@@ -2384,7 +2386,8 @@
             "they_newborn",
             "insult",
             "they_blind",
-            "you_blind"
+            "you_blind",
+            "they_deaf"
         ],
         [
             "Grr..."
@@ -2411,7 +2414,8 @@
             "you_shunned",
             "they_blind",
             "you_blind",
-            "they_newborn"
+            "they_newborn",
+            "they_deaf"
         ],
         [
             "MROOOOOOOOW!!!!!!!!"
@@ -2832,7 +2836,10 @@
         [
             "they_newborn",
             "you_newborn",
-            "insult"
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_blind"
         ],
         [
             "[Since you can't insult just yet, you flop onto t_c with a ferocious hiss.]",
@@ -2943,7 +2950,10 @@
         [
             "you_newborn",
             "they_newborn",
-            "insult"
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_blind"
         ],
         [
             "Grrr..."

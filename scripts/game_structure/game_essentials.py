@@ -76,6 +76,7 @@ class Game:
     }"""
     patrol_cats = {}
     patrolled = []
+    dated_cats = []
 
     # store changing parts of the game that the user can toggle with buttons
     switches = {

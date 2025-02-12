@@ -7,12 +7,13 @@ TODO: Docs
 """  # pylint: enable=line-too-long
 
 import logging
+import os
 import re
 from itertools import combinations
 from math import floor
 from random import choice, choices, randint, random, sample, randrange, getrandbits, gauss
 from sys import exit as sys_exit
-from typing import List, Tuple
+from typing import List, Tuple, TYPE_CHECKING, Type, Union
 
 import pygame
 import ujson
@@ -26,6 +27,9 @@ from scripts.cat.pelts import Pelt
 from scripts.cat.sprites import sprites
 from scripts.game_structure.game_essentials import game
 import scripts.game_structure.screen_settings  # must be done like this to get updates when we change screen size etc
+
+if TYPE_CHECKING:
+    from scripts.cat.cats import Cat
 
 
 # ---------------------------------------------------------------------------- #
@@ -493,17 +497,21 @@ def create_new_cat_block(
     # CHOOSE DEFAULT BACKSTORY BASED ON CAT TYPE, STATUS
    
     if status in ("kitten", "newborn"):
-        chosen_backstory = choice(BACKSTORIES["backstory_categories"]["abandoned_backstories"])
-    if status == "medicine cat":
-        if cat_type == "former Clancat":
-            chosen_backstory = choice(["medicine_cat", "disgraced1"])
-        else:
-            chosen_backstory = choice(["wandering_healer1", "wandering_healer2"])
-    if cat_type == "former Clancat":
-        x = "former_clancat"
+        chosen_backstory = choice(
+            BACKSTORIES["backstory_categories"]["abandoned_backstories"]
+        )
+    elif status == "medicine cat" and cat_type == "former Clancat":
+        chosen_backstory = choice(["medicine_cat", "disgraced1"])
+    elif status == "medicine cat":
+        chosen_backstory = choice(["wandering_healer1", "wandering_healer2"])
     else:
-        x = cat_type
-    chosen_backstory = choice(BACKSTORIES["backstory_categories"].get(f"{x}_backstories", ["outsider1"]))
+        if cat_type == "former Clancat":
+            x = "former_clancat"
+        else:
+            x = cat_type
+        chosen_backstory = choice(
+            BACKSTORIES["backstory_categories"].get(f"{x}_backstories", ["outsider1"])
+        )
 
     # OPTION TO OVERRIDE DEFAULT BACKSTORY
     bs_override = False
@@ -511,15 +519,25 @@ def create_new_cat_block(
     for _tag in attribute_list:
         match = re.match(r"backstory:(.+)", _tag)
         if match:
-            bs_list = [x for x in match.group(1).split(",")]
+            bs_list = [x for x in re.split(r", ?", match.group(1))]
             stor = []
             for story in bs_list:
-                if story in BACKSTORIES["backstories"]:
+                if story in set(
+                        [
+                            backstory
+                            for backstory_block in BACKSTORIES[
+                            "backstory_categories"
+                        ].values()
+                            for backstory in backstory_block
+                        ]
+                ):
                     stor.append(story)
                 elif story in BACKSTORIES["backstory_categories"]:
                     stor.extend(BACKSTORIES["backstory_categories"][story])
             bs_override = True
             break
+    if bs_override:
+        chosen_backstory = choice(stor)
 
     # KITTEN THOUGHT
     if status in ["kitten", "newborn"]:
@@ -5371,5 +5389,7 @@ with open(f"resources/dicts/snippet_collections.json", "r") as read_file:
 with open(f"resources/dicts/prey_text_replacements.json", "r") as read_file:
     PREY_LISTS = ujson.loads(read_file.read())
 
-with open(f"resources/dicts/backstories.json", "r") as read_file:
+with open(
+        os.path.normpath("resources/dicts/backstories.json"), "r", encoding="utf-8"
+) as read_file:
     BACKSTORIES = ujson.loads(read_file.read())

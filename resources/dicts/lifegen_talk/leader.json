@@ -901,7 +901,8 @@
         [
             "any",
             "introspective",
-            "they_blind"
+            "they_blind",
+            "no_kit"
         ],
         [
             "Oh y_c, good morning, it's nice to see cats up bright and early.",
@@ -2292,7 +2293,7 @@
         ],
         [
             "[t_c seems disheartened as you both return from a hunting patrol. You compliment the nice bird {PRONOUN/t_c/subject} caught, but t_c just nods absentmindedly.]",
-            "*sigh* Sorry. Thanks. I just was really hoping to get a squirrel today... T_m mentioned {PRONOUN/t_m/subject} wished {PRONOUN/t_m/subject} could have one this morning, so I wanted to catch one for {PRONOUN/t_m/object}.",
+            "*sigh* Sorry. Thanks. I just was really hoping to get a squirrel today... t_m mentioned {PRONOUN/t_m/subject} wished {PRONOUN/t_m/subject} could have one this morning, so I wanted to catch one for {PRONOUN/t_m/object}.",
             "...Oh well. I hope {PRONOUN/t_m/subject} won't be too disappointed."
         ]
     ],

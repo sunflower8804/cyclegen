@@ -9,7 +9,7 @@ import itertools
 import os.path
 import sys
 from random import choice, randint, sample, random, getrandbits, randrange
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Union, Callable
 
 import ujson  # type: ignore
 
@@ -3956,10 +3956,16 @@ class Cat:
                 "lock_faith": self.lock_faith if self.lock_faith else "flexible"
             }
 
-    def determine_next_and_previous_cats(self, status: List[str] = None, exclude_status: List[str] = None):
+    def determine_next_and_previous_cats(
+        self, filter_func: Callable[[Cat], bool] = None
+    ):
+
         """Determines where the next and previous buttons point to, relative to this cat.
 
         :param status: Allows you to constrain the list by status
+        :param filter_func: Allows you to constrain the list by any attribute of
+            the Cat object. Takes a function which takes in a Cat instance and
+            returns a boolean.
         """
         sorted_specific_list = [
             check_cat
@@ -3974,20 +3980,12 @@ class Cat:
             sorted_specific_list.remove(game.clan.demon)
             sorted_specific_list.insert(0, game.clan.demon)
 
-        if status is not None:
+        if filter_func is not None:
             sorted_specific_list = [
                 check_cat
                 for check_cat in sorted_specific_list
-                if check_cat.status in status
+                if filter_func(check_cat)
             ]
-
-        if exclude_status is not None:
-            sorted_specific_list = [
-                check_cat
-                for check_cat in sorted_specific_list
-                if check_cat.status not in exclude_status
-            ]
-
         idx = sorted_specific_list.index(self)
 
         return (

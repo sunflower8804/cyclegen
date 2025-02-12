@@ -116,6 +116,7 @@ class Events:
         Patrol.used_patrols.clear()
         game.patrolled.clear()
         game.just_died.clear()
+        game.dated_cats.clear()
         # 1 = reg patrol 2 = lifegen patrol 3 = df patrol 4 = date
         game.switches['patrolled'] = []
         game.switches['window_open'] = False
@@ -906,6 +907,7 @@ class Events:
 
         def handle_backstory(siblings):
             '''Handles creating backstories for your cat'''
+            backstory = ""
             if birth_type in [BirthType.NO_PARENTS, BirthType.ONE_ADOPTIVE_PARENT, BirthType.TWO_ADOPTIVE_PARENTS]:
                 backstory = random.choice(["abandoned1", "abandoned2", "abandoned4", "loner3", "orphaned1", "orphaned2", "orphaned3", "orphaned4", "orphaned5", "orphaned6", "orphaned7", "outsider1"])
             elif birth_type == BirthType.ONE_PARENT:
@@ -1221,7 +1223,7 @@ class Events:
             
             game.cur_events_list.insert(0, Single_Event(ceremony_txt, ["alert", "ceremony"], game.clan.your_cat.ID))
         except Exception as e:
-            print("ERROR with app ceremony" + e)
+            print("ERROR with app ceremony" + str(e))
                 
     def generate_ceremony(self):
         if game.clan.your_cat.former_mentor:
