@@ -26685,5 +26685,60 @@
             "Hahaha! Got it!",
             "[Was there ever anything there..?]"
         ]
+    ],
+    "gen_cool_J1": [
+        [
+            "any",
+            "they_cool",
+            "they_grieving",
+            "you_grieving",
+            "min_platonic_10",
+            "max_dislike_10"
+        ],
+        [
+            "We're a couple of sad sacks, aren't we?",
+            "You wanna come on a walk with me? Some fresh air will probably be good for us."
+        ]
+    ],
+    "gen_cool_J2": [
+        [
+            "any",
+            "they_cool",
+            "leafbare",
+            "they_grieving",
+            "min_platonic_30"
+        ],
+        [
+            "Why'd tg_c have to go and die in leaf-bare? Now I have to be sad and cold at the same time.",
+            "[You offer to grab t_c a rabbit pelt or find {PRONOUN/t_c/object} a spot in the sun.]",
+            "No, no, it's fine.",
+            "Maybe if I get all of my suffering done now, I can have an extra good greenleaf."
+        ]
+    ],
+    "gen_cool_J3": [
+        [
+            "any",
+            "they_cool",
+            "they_shunned",
+            "neutral"
+        ],
+        [
+            "Hm? You're talking to me? Is something wrong?",
+            "Oh. Okay. I just didn't expect that you'd want to talk to me, is all. I appreciate it.",
+            "... How's your day been?"
+        ]
+    ],
+    "gen_cool_J4": [
+        [
+            "any",
+            "they_cool",
+            "you_shunned",
+            "min_platonic_10",
+            "max_platonic_50"
+        ],
+        [
+            "I'm really curious... why did you do it?",
+            "I'm sure you've been asked that a million times, but I'll actually keep the secret, I swear!"
+        ]
     ]
 }
