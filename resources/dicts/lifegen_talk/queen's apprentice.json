@@ -1286,5 +1286,119 @@
             "[It doesn't seem to bother {PRONOUN/t_c/object} that you don't know as you shrug your shoulders in defeat. {PRONOUN/t_c/subject/CAP} {VERB/t_c/point/points} to a fish, and you feel a bit silly for not catching on.]",
             "[That ends the lesson for the day, though, as t_c signs that {PRONOUN/t_c/subject} {VERB/t_c/need/needs} to go.]"
         ]
+    ],
+    "queen_yourapp_theyshunned_gen_rad1": [
+        [
+            "you_queen",
+            "they_queen_apprentice",
+            "from_your_apprentice",
+            "min_platonic_15",
+            "max_trust_10",
+            "they_shunned",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[You shoo t_c away from the nursery with a pang of guilt in your heart.]",
+            "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} always so good with the kits, and you can't imagine {PRONOUN/t_c/object} doing anything to them.]",
+            "[But you clearly didn't know your apprentice as well as you thought, and you're not going to take any chances.]"
+        ]
+    ],
+    "neg_from_appqueen_youshunned_H1": [
+        [
+            "you_shunned",
+            "they_queen's_apprentice",
+            "from_your_apprentice",
+            "max_platonic_30",
+            "max_trust_30",
+            "they_introspective",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You almost bump into t_c at the entrance of the nursery.]",
+            "[{PRONOUN/t_c/poss/CAP} eyes widen when {PRONOUN/t_c/subject} {VERB/t_c/realize/realizes} who you are, and hastily {VERB/t_c/backtrack/backtracks} into the nursery.]",
+            "[Before t_c leaves your sight, {PRONOUN/t_c/subject} {VERB/t_c/give/gives} you an unsure yet stern glare. Seems like even t_c is ordered to keep you out.]"
+        ]
+    ],
+    "pos_from_appqueen_youshunned_H1": {
+        "tags": [
+            "you_shunned",
+            "you_healer",
+            "they_queen's_apprentice",
+            "from_your_apprentice",
+            "max_dislike_30",
+            "max_trust_30",
+            "min_platonic_40",
+            "they_introspective",
+            "they_neurotic",
+            "clan_has_kits"
+        ],
+        "intro_text": [
+            "... y_c?",
+            "[t_c's unsure voice is heard from behind you. {PRONOUN/t_c/subject/CAP} awkwardly {VERB/t_c/shift/shifts} {PRONOUN/t_c/poss} paws as {PRONOUN/t_c/subject} {VERB/t_c/work/works} up the courage to speak to you.]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "You're not supposed to talk to me.",
+                "next_scene": "not_supposed_H"
+            },
+            "choice2": {
+                "text": "[Ignore {PRONOUN/t_c/object}.]",
+                "next_scene": "ignore_H"
+            }
+        },
+        "not_supposed_H": [
+            "I know I'm not supposed to talk to you. Everycat knows that.",
+            "It's just-- Uh... Well, r_k has been having really bad ear pain and r_m has been too busy to check on {PRONOUN/r_k/object}.",
+            "You always had the knack of finding out what's going on, even if you're not a medicine cat and, well, I was hoping you'd agree to help?"
+        ],
+        "ignore_H": [
+            "[You choose to ignore the apprentice, unwilling to strike up any conversation with {PRONOUN/t_c/object}.]",
+            "[After a few seconds of awkward silence, you can hear t_c walk away without another word.]"
+        ],
+        "not_supposed_H_choices": {
+            "choice1": {
+                "text": "Lazy medicine cats...",
+                "next_scene": "lazy_meds_H"
+            },
+            "choice2": {
+                "text": "[Refuse to help.]",
+                "next_scene": "refuse_help_H"
+            },
+            "choice3": {
+                "text": "[Accept.]",
+                "next_scene": "accept_H"
+            }
+        },
+        "lazy_meds_H": [
+            "Uh... Is that a yes? I am going to assume that is a really reluctant yes."
+        ],
+        "refuse_help_H": [
+            "Oh, okay. That's fine.",
+            "We'll wait for r_m, then. Have a good day, y_c."
+        ],
+        "accept_H": [
+            "Awesome!!",
+            "I mean, uh... You don't need to if you don't want to, but I am relieved you're willing to help.",
+            "I'll get back to you with r_k soon!"
+        ]
+    },
+    "neg_from_appqueen_youshunned_H2": [
+        [
+            "you_shunned",
+            "they_queen's_apprentice",
+            "from_your_apprentice",
+            "max_platonic_30",
+            "min_dislike_25",
+            "max_trust_30",
+            "they_introspective"
+        ],
+        [
+            "Uhh... I have duties at the nursery.",
+            "[t_c hastily runs away toward the nursery. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} avoiding you, it seems.]"
+        ]
     ]
 }

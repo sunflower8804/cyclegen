@@ -5474,5 +5474,55 @@
             "[t_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
             "Um... here! Play with that for a bit, maybe?"
         ]
+    ],
+    "frommate_pos_shunned_H2": [
+        [
+            "you_shunned",
+            "from_mate",
+            "any",
+            "they_introspective",
+            "they_warrior",
+            "they_deputy",
+            "min_romantic_40"
+        ],
+        [
+            "[t_c sneaks up to you with a mouse in {PRONOUN/t_c/poss} mouth.]",
+            "Hey... I got you something.",
+            "Eat it quickly before somecat sees."
+        ]
+    ],
+    "fromkit_pos_shunned_H8": [
+        [
+            "they_warrior",
+            "they_introspective",
+            "min_trust_20",
+            "min_plike_20",
+            "from_your_kit",
+            "from_adopted_kit",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "I've really been trying to convince l_n and d_n to let you patrol with me for freshkill, but they keep brushing me off.",
+            "I'm... sorry I am of no help, y_c."
+        ]
+    ],
+    "mentor_youshunned_app_pos_rad1": [
+        [
+            "they_warrior",
+            "you_apprentice",
+            "from_mentor",
+            "not_accomplice",
+            "murder_success",
+            "you_shunned",
+            "they_unlawful",
+            "they_unabashed",
+            "they_blind",
+            "you_blind",
+            "min_platonic_25"
+        ],
+        [
+            "Couldn't you have demonstrated your abilities on a cat from o_cClan or something?"
+        ]
     ]
 }

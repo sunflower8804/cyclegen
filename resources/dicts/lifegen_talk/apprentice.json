@@ -4473,5 +4473,94 @@
             "I told {PRONOUN/dislike_r_a_neurotic/object} {PRONOUN/dislike_r_a_neurotic/subject} had to stop yelping at every little thing, and {PRONOUN/dislike_r_a_neurotic/object} started crying. And it was impossible to not feel a little bad at that, but also {PRONOUN/dislike_r_a_neurotic/subject} {VERB/dislike_r_a_neurotic/wake/wakes} me up almost every other night?",
             "I can't believe I have to share a den with {PRONOUN/dislike_r_a_neurotic/object}."
         ]
+    ],
+    "fromkit_pos_shunned_H5": [
+        [
+            "they_apprentice",
+            "they_introspective",
+            "min_trust_20",
+            "min_plike_20",
+            "from_your_kit",
+            "from_adopted_kit",
+            "you_shunned",
+            "any"
+        ],
+        [
+            "[t_c runs up to you with a big mouse in {PRONOUN/t_c/poss} mouth, prancing proudly with {PRONOUN/t_c/poss} catch.]",
+            "y_c! y_c! Look what I caught on patrol today!",
+            "[After a long moment of explaining what happened and how t_c caught the mouse, {PRONOUN/t_c/subject} sneakily {VERB/t_c/shove/shoves} it underneath your pitiful nest.]",
+            "I know tm_n will be mad, but I don't care. My {PRONOUN/y_c/parent} needs to eat too."
+        ]
+    ],
+    "new_shunned_J6": [
+        [
+            "they_apprentice",
+            "you_shunned",
+            "min_platonic_40",
+            "you_apprentice",
+            "silly",
+            "unabashed"
+        ],
+        [
+            "Hey! Hey! Look what tm_n showed me today!",
+            "[t_c leaps in the air, kicking behind {PRONOUN/t_c/object} quickly before rolling forward onto {PRONOUN/t_c/poss} back and leaping back up onto {PRONOUN/t_c/poss} feet.]",
+            "Now imagine some warrior from o_cClan was standing there! They wouldn't stand a chance.",
+            "Or, imagine it was l_n! Who {VERB/l_n/does/do} {PRONOUN/l_n/subject} think {PRONOUN/l_n/subject} {VERB/l_n/is/are}, banning you from training sessions? I had to work twice as hard today!",
+            "[You chuckle along with t_c's ramblings until tm_n notices and calls {PRONOUN/l_n/object} away. Oh, well. It was nice to be spoken to normally for a little bit.]"
+        ]
+    ],
+    "app_wary_youshunned_rad1": [
+        [
+            "they_apprentice",
+            "you_shunned",
+            "max_platonic_10",
+            "max_trust_5",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[Whenever t_c catches sight of you, {PRONOUN/t_c/poss} stare lingers a little too long for comfort.]",
+            "[It's like {PRONOUN/t_c/subject} {VERB/t_c/feel/feels} compelled to watch you, uncertain of your next move.]"
+        ]
+    ],
+    "app_theyshunned_gen_rad1": [
+        [
+            "no_kit",
+            "from_your_apprentice",
+            "max_trust_10",
+            "they_shunned",
+            "you_upstanding",
+            "you_stable"
+        ],
+        [
+            "[When you accidentally catch t_c's gaze from the other side of camp, you quickly look away.]",
+            "[You <i>know</i> you aren't responsible for t_c's actions...]",
+            "[But as {PRONOUN/t_c/poss} mentor, you can't help but wonder if you could've done something to change things.]"
+        ]
+    ],
+    "apprentice_denprank_rad1~1": [
+        [
+            "they_app",
+            "they_silly",
+            "you_app"
+        ],
+        [
+            "Pssst, y_c! I had a great idea for a prank.",
+            "What if I were to dig a small pit just under the center of somecat's nest, but left the ground under the sides of the nest intact?",
+            "They wouldn't suspect a thing until they step into their nest, and <i>boom!</i> Their nest caves in underneath them.",
+            "Now to pick a cat to test it out on..."
+        ]
+    ],
+    "apprentice_denprank_rad1~2": [
+        [
+            "they_app",
+            "they_silly",
+            "you_app"
+        ],
+        [
+            "[t_c slinks away from l_n's den, ears flattened in embarrassment.]",
+            "... Word of advice: if you're going to prank a cat, pick somecat <i>other</i> than r_a_upstanding.",
+            "I have to go fix {PRONOUN/r_a_upstanding/poss} nest now. l_n's orders."
+        ]
     ]
 }

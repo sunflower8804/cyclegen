@@ -3606,5 +3606,136 @@
             "[t_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
             "Um... here! Play with that for a bit, maybe?"
         ]
+    ],
+    "frommate_neg_shunned_H9": [
+        [
+            "you_shunned",
+            "from_mate",
+            "any",
+            "they_upstanding",
+            "max_romantic_30",
+            "they_leader",
+            "they_deputy"
+        ],
+        [
+            "Do not look at me as if your shunning is in any capacity my fault.",
+            "It is <i>your</i> fault. <i>Your</i> fault for murdering another in cold blood.",
+            "Just because you're my mate, doesn't mean you are free of punishment for your actions. I will never use my title for such a thing.",
+            "Now, go. I have much to think about."
+        ]
+    ],
+    "frommate_pos_shunned_H2": [
+        [
+            "you_shunned",
+            "from_mate",
+            "any",
+            "they_introspective",
+            "they_warrior",
+            "they_deputy",
+            "min_romantic_40"
+        ],
+        [
+            "[t_c sneaks up to you with a mouse in {PRONOUN/t_c/poss} mouth.]",
+            "Hey... I got you something.",
+            "Eat it quickly before somecat sees."
+        ]
+    ],
+    "new_shunned_J2": [
+        [
+            "neutral",
+            "no_kit",
+            "you_shunned",
+            "upstanding",
+            "neurotic",
+            "they_deputy",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[While you groom your paws at the edge of camp, t_c catches your eye and immediately races to l_n's den, looking troubled.]",
+            "[l_n steps out of {PRONOUN/l_n/poss} den, takes one look at you, shrugs, and heads back inside.]",
+            "[What exactly was t_c reporting..?]"
+        ]
+    ],
+    "neurotic_skillstory_SQ8": [
+        [
+            "they_story",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "they_deputy",
+            "they_neurotic",
+            "you_adult",
+            "min_platonic_20",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "A queen in o_cClan was telling their kits a story when I visited their camp with l_n last moon. I can't stop thinking about it.",
+            "It was so different from any story I'd heard before, with completely new cats. I really wanted to hear the end, but the queen took the kits inside when they realized we were there.",
+            "*sigh* It's silly, but it bothers me that I'll never know how it ends. And even if I see that queen again, I'd never be brave enough to ask."
+        ]
+    ],
+    "neurotic_choice_deputypatrolchoice_SQ48": {
+        "tags": [
+            "they_neurotic",
+            "they_deputy",
+            "you_apprentice",
+            "neutral"
+        ],
+        "intro": [
+            "Hey, y_c! Don't take this the wrong way, but I'm taking you off of the border patrol.",
+            "r_w reported smelling multiple dogs over there this morning, and you're... you know, an apprentice, and I really don't want you to get hurt."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I'm not scared of some dogs!",
+                "next_scene": "notscared"
+            },
+            "choice2": {
+                "text": "Let me help!",
+                "next_scene": "help"
+            },
+            "choice3": {
+                "text": "[Thank t_c.]",
+                "next_scene": "thank"
+            },
+            "choice4": {
+                "text": "[Join the patrol anyways.]",
+                "next_scene": "join"
+            }
+        },
+        "notscared": [
+            "[Hmph. Maybe t_c is scared of dogs, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} scared of everything. You can handle it!]",
+            "y_c, I'm sorry, but I really don't want you to get hurt. I... yes, I worry a lot, but I think it's reasonable to only send warriors on this one...",
+            "[You glare at the deputy and stalk off, leaving {PRONOUN/t_c/object} fumbling for words behind you.]"
+        ],
+        "help": [
+            "[You argue that you still want to go on the patrol! You're part of c_nClan, and if warriors are going on patrol, then you should help them.]",
+            "I know how you feel, y_c, but it really is dangerous! You're just... not as big, or as well-trained, as the warriors. You know?",
+            "Please don't be upset! I'm going to put you on a hunting patrol instead, okay?"
+        ],
+        "thank": [
+            "[You thank t_c for looking out for you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} relieved that you aren't pushing back on {PRONOUN/t_c/poss} decision.]",
+            "It's no problem... I'd really hate it if someone got hurt on a patrol I organized! If you still want to go out, I can put you on a hunting patrol this afternoon?"
+        ],
+        "join": [
+            "[You nod and t_c leaves, but when the patrol gathers later that day you sneak over to join them. None of the other patrol members realize you're not supposed to be there.]",
+            "[The patrol is a success, and while you catch the scent of dogs by the o_cClan border, you don't encounter them. Your Clanmates commend your vigilance!]",
+            "[When you return to camp, though, you notice t_c watching you. {PRONOUN/t_c/poss/CAP} expression seems almost... hurt, but {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} away before you can meet {PRONOUN/t_c/poss} eyes.]"
+        ]
+    },
+    "deputy_upstanding_bees_rad1": [
+        [
+            "they_upstanding",
+            "they_blind",
+            "you_blind",
+            "they_deputy"
+        ],
+        [
+            "[You overhear t_c and r_w_unlawful arguing about how to handle a recent conflict with o_cClan.]",
+            "Yes, it is extremely creative. My answer is still no.",
+            "[r_w_unlawful protests, though you can't quite make out {PRONOUN/r_w_unlawful/poss} response.]",
+            "For the last time, r_w_unlawful. We are <i>not</i> filling o_cClan's dirtplace with bees."
+        ]
     ]
 }

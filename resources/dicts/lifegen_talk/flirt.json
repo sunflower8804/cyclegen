@@ -5222,5 +5222,281 @@
             "[You trot up to t_c and rub heads with {PRONOUN/t_c/poss}, earning a small blush.]",
             "[t_c is seen grinning like a fool afterwards, but {PRONOUN/t_c/subject} {VERB/t_c/try/tries} to hide it.]"
         ]
+    ],
+    "murder_flirt_J1": [
+        [
+            "reject",
+            "murder_victim",
+            "murder_fail",
+            "no_kit",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Umm....",
+            "I'm getting very mixed signals from you lately, y_c."
+        ]
+    ],
+    "murder_flirt_J2": [
+        [
+            "accept",
+            "accomplice_agreed",
+            "no_kit",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hehehe... I think we make a great team, too, y_c~!"
+        ]
+    ],
+    "newshunned_flirt_J1": [
+        [
+            "reject",
+            "you_shunned",
+            "they_shunned",
+            "max_platonic_10",
+            "brooding",
+            "any"
+        ],
+        [
+            "Hm? Are you really bored enough to try hitting on me?",
+            "Yeesh. There's gotta be better things for you to do. Go try drawing in the dirt, or something. I'm not that desperate yet."
+        ]
+    ],
+    "newshunned_flirt_J2": [
+        [
+            "you_shunned",
+            "reject",
+            "neutral",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I don't find murderers very attractive, y_c. Sorry."
+        ]
+    ],
+    "newshunned_flirt_J3": [
+        [
+            "you_shunned",
+            "they_shunned",
+            "accept",
+            "from_mate",
+            "silly",
+            "stable",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh, hush! Even now, you're finding a way to make me smile.",
+            "How do you do it?"
+        ]
+    ],
+    "youshunned_flirt_rad1": [
+        [
+            "reject",
+            "you_shunned",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You take 'heartstopper' both literally and figuratively, huh?"
+        ]
+    ],
+    "accomplice_flirt_reject_rad1": [
+        [
+            "accomplice_agreed",
+            "reject",
+            "no_kit",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I agreed to be your partner in crime, not your partner in life."
+        ]
+    ],
+    "flirt_accomplicereject_rad1": [
+        [
+            "accomplice_refused",
+            "no_kit",
+            "reject"
+        ],
+        [
+            "[t_c stares at you in confusion.]",
+            "You have a <i>weird</i> way of trying to flatter me."
+        ]
+    ],
+    "you_shunned_flirt_E1": [
+        [
+            "any",
+            "flirt",
+            "reject",
+            "min_dislike_30",
+            "they_blind",
+            "they_deaf",
+            "you_deaf",
+            "you_shunned"
+        ],
+        [
+            "[t_c recoils with a hiss.]"
+        ]
+    ],
+    "you_shunned_flirt_E2": [
+        [
+            "any",
+            "flirt",
+            "reject",
+            "max_platonic_25",
+            "from_mate",
+            "they_blind",
+            "they_deaf",
+            "you_blind",
+            "you_deaf",
+            "you_shunned"
+        ],
+        [
+            "[t_c blatantly ignores you, barely even twitching an ear as {PRONOUN/t_c/subject} {VERB/t_c/pad/pads} by.]",
+            "[It's like you're invisible.]"
+        ]
+    ],
+    "they_shunned_flirt_E1": [
+        [
+            "any",
+            "flirt",
+            "reject",
+            "min_romantic_20",
+            "they_shunned",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "There's a time and a place, y_c. This isn't either of those."
+        ]
+    ],
+    "flirt_app_reject_rad1": [
+        [
+            "flirt",
+            "you_deaf",
+            "they_deaf",
+            "you_app",
+            "they_app",
+            "reject"
+        ],
+        [
+            "[t_c looks away, but {PRONOUN/t_c/poss} face clearly reveals {PRONOUN/t_c/poss} discomfort.]",
+            "[... Not the reaction you'd hoped for.]"
+        ]
+    ],
+    "flirt_app_reject_rad2": [
+        [
+            "flirt",
+            "you_deaf",
+            "they_deaf",
+            "you_app",
+            "they_app",
+            "reject"
+        ],
+        [
+            "...",
+            "[Judging by the lengthy pause, you suspect t_c feels extremely uncomfortable.]",
+            "[You don't blame {PRONOUN/t_c/object}. You feel uncomfortable now, too.]"
+        ]
+    ],
+    "flirt_app_reject_rad3": [
+        [
+            "flirt",
+            "you_deaf",
+            "they_deaf",
+            "you_app",
+            "they_app",
+            "reject"
+        ],
+        [
+            "[t_c backs away, eyes averted.]"
+        ]
+    ],
+    "flirt_app_reject_rad4": [
+        [
+            "flirt",
+            "you_deaf",
+            "they_deaf",
+            "you_app",
+            "they_app",
+            "reject"
+        ],
+        [
+            "[t_c stares at you blankly.]"
+        ]
+    ],
+    "flirt_app_reject_rad5": [
+        [
+            "flirt",
+            "you_deaf",
+            "they_deaf",
+            "you_app",
+            "they_app",
+            "reject"
+        ],
+        [
+            "[t_c looks at you uncertainly, as though {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} hoping you aren't serious.]"
+        ]
+    ],
+    "flirt_app_reject_rad6": [
+        [
+            "flirt",
+            "you_app",
+            "they_app",
+            "reject"
+        ],
+        [
+            "[t_c's eyes are fixed on their_crush across camp.]",
+            "... Oh, sorry, y_c! What were you saying?"
+        ]
+    ],
+    "flirt_app_reject_rad7": [
+        [
+            "flirt",
+            "you_app",
+            "they_app",
+            "you_tunneler",
+            "you_deaf",
+            "they_deaf",
+            "reject"
+        ],
+        [
+            "[As you and t_c are sharing tongues, you nervously shift to press yourself against {PRONOUN/t_c/subject} pelt.]",
+            "[t_c stiffens, then pulls away.]",
+            "[... You're tempted to go hide in the nearest tunnel for the next few moons until the embarrassment wears off.]"
+        ]
+    ],
+    "flirt_app_reject_rad8": [
+        [
+            "flirt",
+            "you_app",
+            "they_app",
+            "you_deaf",
+            "they_deaf",
+            "reject"
+        ],
+        [
+            "[After what feels like moons of working up the courage, you gingerly run your tail over t_c's shoulders.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/jerk/jerks} away sharply, leaving your entire pelt burning with embarrassment.]"
+        ]
+    ],
+    "flirt_jfstick_reject_rad1": [
+        [
+            "flirt",
+            "you_deaf",
+            "they_deaf",
+            "they_blind",
+            "they_medicine_cat",
+            "reject"
+        ],
+        [
+            "[t_c seems too fixated on a stick to even notice you.]"
+        ]
     ]
 }

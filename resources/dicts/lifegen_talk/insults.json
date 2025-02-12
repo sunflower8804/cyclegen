@@ -3390,5 +3390,139 @@
             "[You attempt to scratch t_c, but you end up barely grazing {PRONOUN/t_c/object} with your claw.]",
             "[You can feel {PRONOUN/t_c/poss} laughter as {PRONOUN/t_c/subject} {VERB/t_c/pick/picks} you up, returning you to the nursery after your failed antics.]"
         ]
+    ],
+    "gen_pos_shunned_insult_rad1": [
+        [
+            "insult",
+            "you_shunned",
+            "min_platonic_50",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "y_c, you know I'm on your side, right?"
+        ]
+    ],
+    "brooding_pos_youshunned_insult_rad1": [
+        [
+            "insult",
+            "you_shunned",
+            "min_platonic_25",
+            "no_kit",
+            "they_blind",
+            "you_blind",
+            "they_brooding"
+        ],
+        [
+            "Are you <i>trying</i> to get me to side with the rest of the Clan?"
+        ]
+    ],
+    "brooding_pos_theyshunned_insult_rad1": [
+        [
+            "insult",
+            "they_shunned",
+            "min_platonic_20",
+            "no_kit",
+            "they_blind",
+            "you_blind",
+            "they_brooding"
+        ],
+        [
+            "I don't know why I'm surprised.",
+            "Should've realized you're just as cruel as everycat else."
+        ]
+    ],
+    "introspective_pos_theyshunned_insult_rad1": [
+        [
+            "insult",
+            "they_shunned",
+            "min_platonic_10",
+            "no_kit",
+            "you_blind",
+            "they_introspective"
+        ],
+        [
+            "[t_c doesn't respond, but {PRONOUN/t_c/poss} eyes betray {PRONOUN/t_c/poss} surprise.]"
+        ]
+    ],
+    "introspective_pos_theyshunned_insult_rad2": [
+        [
+            "insult",
+            "they_shunned",
+            "min_platonic_40",
+            "no_kit",
+            "they_blind",
+            "you_blind",
+            "they_introspective"
+        ],
+        [
+            "...",
+            "I never thought you to be the judgemental type, y_c."
+        ]
+    ],
+    "unabashed_gen_insult_theyshunned_rad1": [
+        [
+            "insult",
+            "they_shunned",
+            "no_kit",
+            "they_blind",
+            "you_blind",
+            "they_unabashed"
+        ],
+        [
+            "Do you think I would've done it if I cared what you had to say?"
+        ]
+    ],
+    "they_shunned_insult_E1": [
+        [
+            "no_kit",
+            "they_shunned",
+            "min_dislike_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "...",
+            "Are you done?"
+        ]
+    ],
+    "general_silent_rad1": [
+        [
+            "insult",
+            "you_deaf",
+            "they_deaf",
+            "no_kit"
+        ],
+        [
+            "[t_c lashes {PRONOUN/t_c/poss} tail.]"
+        ]
+    ],
+    "they_queen_silent_rad1": [
+        [
+            "insult",
+            "you_deaf",
+            "you_kitten",
+            "they_deaf",
+            "they_queen",
+            "they_queen_apprentice"
+        ],
+        [
+            "[t_c cuffs your ear sharply.]"
+        ]
+    ],
+    "they_parent_silent_rad1": [
+        [
+            "insult",
+            "you_deaf",
+            "you_kitten",
+            "you_apprentice",
+            "they_deaf",
+            "from_parent",
+            "from_adopted_parent"
+        ],
+        [
+            "[t_c cuffs your ear sharply.]"
+        ]
     ]
 }

@@ -2630,5 +2630,136 @@
             "[t_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
             "Um... here! Play with that for a bit, maybe?"
         ]
+    ],
+    "new_shunned_J4": [
+        [
+            "they_leader",
+            "you_shunned",
+            "min_platonic_50",
+            "stable",
+            "cool",
+            "any",
+            "no_kit"
+        ],
+        [
+            "Sorry, y_c. I can't really hang out. I'm supposed to be punishing you.",
+            "You get it, right? I have to demonstrate my authority, you know? d_n and r_w_upstanding have already been looking at me weird when I talk to you.",
+            "We'll catch up later tonight, okay? Promise."
+        ]
+    ],
+    "frommate_neg_shunned_H9": [
+        [
+            "you_shunned",
+            "from_mate",
+            "any",
+            "they_upstanding",
+            "max_romantic_30",
+            "they_leader",
+            "they_deputy"
+        ],
+        [
+            "Do not look at me as if your shunning is in any capacity my fault.",
+            "It is <i>your</i> fault. <i>Your</i> fault for murdering another in cold blood.",
+            "Just because you're my mate, doesn't mean you are free of punishment for your actions. I will never use my title for such a thing.",
+            "Now, go. I have much to think about."
+        ]
+    ],
+    "frommate_pos_shunned_H3": [
+        [
+            "you_shunned",
+            "from_mate",
+            "any",
+            "they_introspective",
+            "they_leader",
+            "min_romantic_40",
+            "you_blind"
+        ],
+        [
+            "I can see that look on your face. You're mad at me.",
+            "Look, I'm sorry. But shunning a cat is a unanimous decision - I have no say, even as the leader of c_nClan.",
+            "... I hope you can forgive me."
+        ]
+    ],
+    "frommate_pos_shunned_H4": [
+        [
+            "you_shunned",
+            "from_mate",
+            "any",
+            "they_introspective",
+            "they_leader",
+            "min_romantic_40",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "... I'll talk to the Clan. I'll see if I can sway them.",
+            "But no promises, y_c. Your actions were definitely brutal and disappointing."
+        ]
+    ],
+    "leader_youshunned_parent_neg_rad1": [
+        [
+            "they_leader",
+            "from_parent",
+            "they_upstanding",
+            "you_shunned"
+        ],
+        [
+            "I thought I showed you what kind of legacy I wanted my kin to leave, y_c.",
+            "This wasn't it."
+        ]
+    ],
+    "from_parent_leader_youshunned_H1": [
+        [
+            "from_parent",
+            "they_leader",
+            "you_shunned",
+            "max_dislike_30",
+            "you_kitten",
+            "they_introspective",
+            "not_murder_victim",
+            "not_accomplice"
+        ],
+        [
+            "Why did you do this? Did you feel like doing something so... gruesome would get my attention?",
+            "[t_c sighs heavily and gently touches {PRONOUN/t_c/poss} forehead with yours.]",
+            "I am not a good parent, am I? I am sorry.",
+            "I'll try to be better."
+        ]
+    ],
+    "from_parent_leader_youshunned_H2": [
+        [
+            "from_parent",
+            "they_leader",
+            "you_shunned",
+            "max_dislike_30",
+            "min_platonic_30",
+            "you_kitten",
+            "they_introspective",
+            "not_murder_victim",
+            "not_accomplice",
+            "sc_faith",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[You overhear t_c whispering to {PRONOUN/t_c/self} on the edge of camp.]",
+            "StarClan, why did you forsaken me with this kit? Are you testing me? Did I do something to deserve this?",
+            "I thought they gave me a wonderful gift, but it seems like StarClan had more in mind for me."
+        ]
+    ],
+    "leader_silly_lamename_rad1": [
+        [
+            "they_leader",
+            "they_silly",
+            "min_platonic_25",
+            "min_trust_15"
+        ],
+        [
+            "Keep this between us, but...",
+            "Sometimes, when I really don't like an apprentice, I consider giving them the most boring name I can think of when they graduate.",
+            "Don't look at me like that! I don't actually <i>do</i> it!",
+            "... Most of the time, anyway.",
+            "I just think <i>really hard</i> about it."
+        ]
     ]
 }

@@ -3138,7 +3138,36 @@
             "any"
         ],
         [
-            "[t_c makes it obvious that {PRONOUN/t_c/subject} do not want to talk. {PRONOUN/t_c/subject/CAP} {VERB/t_c/huff/huffs} heavily and {VERB/t_c/turn/turns} {PRONOUN/t_c/poss} head away.]"
+            "[t_c makes it obvious that {PRONOUN/t_c/subject} {VERB/t_c/do/does} not want to talk. {PRONOUN/t_c/subject/CAP} {VERB/t_c/huff/huffs} heavily and {VERB/t_c/turn/turns} {PRONOUN/t_c/poss} head away.]"
+        ]
+    ],
+    "pos_shunned_H2": [
+        [
+            "they_shunned",
+            "any",
+            "they_introspective",
+            "min_platonic_30",
+            "min_comfort_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I can still judge you for what you did, but that doesn't mean I'll stop being friends with you.",
+            "I can list a pawful of cats who have done worse than murder, I assure you.",
+            "What?",
+            "Hey, someone had to pay attention to the elders' stories!"
+        ]
+    ],
+    "medapp_theyshunned_pos_rad1": [
+        [
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "they_shunned",
+            "min_platonic_40"
+        ],
+        [
+            "y_c, I don't want to get you in trouble, but... Can you help me?",
+            "I slipped earlier and hurt my paw, and the other medicine cats won't even look at it..."
         ]
     ]
 }

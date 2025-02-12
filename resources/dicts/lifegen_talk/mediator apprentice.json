@@ -1549,5 +1549,37 @@
             "If you spend your whole life worrying about trodding on the toes of others, you'll never get anything done.",
             "Now, do you want me to help you work out what you'll say?"
         ]
+    ],
+    "neurotic_mediatorapp_SQ1": [
+        [
+            "they_mediator_apprentice",
+            "you_any",
+            "neutral",
+            "you_deaf",
+            "they_neurotic",
+            "they_deaf"
+        ],
+        [
+            "[tm_n is going to discuss diplomatic matters with o_cClan, and is bringing t_c along to observe the proceedings.]",
+            "[t_c fidgets by the camp entrance, clearly nervous about representing the entirety of c_nClan. When {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} you looking, {PRONOUN/t_c/subject} awkwardly {VERB/t_c/duck/ducks} behind a rock.]"
+        ]
+    ],
+    "neurotic_skillstory_SQ8": [
+        [
+            "they_story",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "they_deputy",
+            "they_neurotic",
+            "you_adult",
+            "min_platonic_20",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "A queen in o_cClan was telling their kits a story when I visited their camp with l_n last moon. I can't stop thinking about it.",
+            "It was so different from any story I'd heard before, with completely new cats. I really wanted to hear the end, but the queen took the kits inside when they realized we were there.",
+            "*sigh* It's silly, but it bothers me that I'll never know how it ends. And even if I see that queen again, I'd never be brave enough to ask."
+        ]
     ]
 }
