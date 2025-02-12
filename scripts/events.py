@@ -30,21 +30,20 @@ from scripts.conditions import (
     get_amount_cat_for_one_medic,
 )
 from scripts.events_module.generate_events import GenerateEvents, generate_events
-from scripts.clan_resources.freshkill import FreshkillPile, Nutrition
+from scripts.clan_resources.freshkill import FreshkillPile
 from scripts.events_module.short.condition_events import Condition_Events
 from scripts.events_module.short.handle_short_events import handle_short_events
 from scripts.events_module.relationship.relation_events import Relation_Events
 from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 from scripts.game_structure.windows import SaveError
-from scripts.game_structure.windows import RetireScreen, DeputyScreen, NameKitsWindow, PickPath
-from enum import Enum, auto
+from scripts.game_structure.windows import RetireScreen, DeputyScreen, NameKitsWindow
+from enum import Enum
 
 from scripts.events_module.patrol.patrol import Patrol
 from scripts.utility import (
     change_clan_relations,
     change_clan_reputation,
     get_alive_status_cats,
-    get_living_clan_cat_count,
     get_random_moon_cat,
     ceremony_text_adjust,
     get_current_season,

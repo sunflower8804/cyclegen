@@ -24282,5 +24282,222 @@
             "It's d_c. {PRONOUN/d_c/subject/CAP}{VERB/d_c/'re/'s} dead. I can't even concentrate on my training, I loved {PRONOUN/d_c/object} so much...",
             "[Despite being a 'cold' Dark Forest cat, your heart still aches for t_c.]"
         ]
+    ],
+    "scskill_dream_SQ1": [
+        [
+            "they_dream",
+            "they_sc",
+            "you_sc",
+            "no_kit",
+            "you_blind"
+        ],
+        [
+            "I think I wandered into r_c's dreams last night. It doesn't seem like the sort of thing I should be able to do accidentally, but I really think that's what happened.",
+            "I didn't get to talk to {PRONOUN/r_c/object}. We just saw each other before the dream ended, and then we both woke up.",
+            "It was... nice, though."
+        ]
+    ],
+    "scskill_treasure_SQ1": [
+        [
+            "they_treasure",
+            "they_sc",
+            "you_sc",
+            "no_kit"
+        ],
+        [
+            "[t_c holds a tiny spark in one paw. {PRONOUN/t_c/subject/CAP} gently lift it up, holding {PRONOUN/t_c/poss} breath so they don't blow it away.]",
+            "y_c, look at this. It's almost purple, if you look at it from the right angle.",
+            "I'm taking it for my collection! Now I just need to get it back home without losing it..."
+        ]
+    ],
+    "youdeaf_SQ9": [
+        [
+            "no_kit",
+            "they_app",
+            "they_neurotic",
+            "they_deaf",
+            "only_you_deaf",
+            "min_platonic_20"
+        ],
+        [
+	"[t_c watches tm_n talk with l_n on the other side of camp. From the two cats' body language, it doesn't seem like they're discussing anything serious, but t_c is clearly worried that {PRONOUN/t_c/poss} mentor is talking about {PRONOUN/t_c/object}.]",
+"[You bump against t_c and motion towards the fresh-kill pile. t_c shakes {PRONOUN/t_c/self} out of {PRONOUN/t_c/poss} thoughts, manages a smile, and follows you to get a meal.]"
+        ]
+    ],
+
+ "youdeaf_SQ10": [
+        [
+            "no_kit",
+            "you_app",
+            "from_mentor",
+	"they_deaf",
+            "only_you_deaf",
+            "min_platonic_10",
+            "max_dislike_5"
+        ],
+        [
+	"[t_c has just informed you that you'll be going to the Gathering tonight, so the two of you are reviewing or inventing signs for the different Clans and key members of each.]",
+"[Some parts of the other cats' names are a bit abstract, so it becomes a fun puzzle to figure out how to represent them.]"
+        ]
+    ],
+
+ "youdeaf_SQ11": [
+        [
+            "no_kit",
+            "littermate",
+            "only_you_deaf",
+            "min_platonic_30",
+            "they_deaf"
+        ],
+        [
+	"[Your {PRONOUN/t_c/sibling} sits beside you, watching y_kk play. {PRONOUN/t_c/subject/CAP} suddenly {VERB/t_c/tip/tips} {PRONOUN/t_c/poss} head, thinking, and then {VERB/t_c/motion/motions} between you and the little kit with a small smile.]",
+"[You frown and tilt your head as well. What {VERB/t_c/are/is} {PRONOUN/t_c/subject} saying?]",
+"[With a few more signs, t_c indicates that y_kk reminds {PRONOUN/t_c/object} of you as a kit! As {PRONOUN/t_c/subject} {VERB/t_c/finish/finishes}, y_kk trips over {PRONOUN/y_kk/poss} own paws, and t_c laughs.]",
+"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/shrug/shrugs} and {VERB/t_c/point/points} between the two of you again. <i>See?</i>]"
+        ]
+    ],
+
+ "youdeaf_SQ12": [
+        [
+            "no_kit",
+            "they_apprentice",
+            "from_your_kit",
+            "from_adopted_kit",
+            "only_you_deaf",
+            "min_platonic_30",
+            "you_warrior",
+            "you_deputy",
+            "you_leader",
+            "they_neurotic",
+            "they_deaf"
+        ],
+        [
+	"[t_c is waiting for you when you get back from a hunting patrol. {PRONOUN/t_c/subject/CAP} {VERB/t_c/wait/waits} for you to drop your catch on the fresh-kill pile, then {VERB/t_c/hover/hovers} around you until you look at {PRONOUN/t_c/object} curiously.]",
+"[At the prompt, t_c begins signing about all the things tm_n taught {PRONOUN/t_c/object} today!]",
+"[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} so excited to tell you everything that {PRONOUN/t_c/subject} {VERB/t_c/demonstrate/demonstrates} a new battle move right in the middle of camp, though {PRONOUN/t_c/subject} immediately {VERB/t_c/look/looks} embarrassed afterwards.]"
+        ]
+    ],
+
+ "youdeaf_SQ13": [
+        [
+            "no_kit",
+            "they_app",
+            "from_your_kit",
+            "from_adopted_kit",
+            "only_you_deaf",
+            "min_platonic_40",
+            "they_deaf"
+        ],
+        [
+	"[It seems like t_c has had a rough day. You enter your den to find {PRONOUN/t_c/object} curled up in your nest, though {PRONOUN/t_c/subject} {VERB/t_c/look/looks} up when you approach.]",
+"[You start to sign, but t_c shakes {PRONOUN/t_c/poss} head and closes {PRONOUN/t_c/poss} eyes, just like when {PRONOUN/t_c/subject} didn't want to listen to you as a kit. You carefully climb into your nest and curl around {PRONOUN/t_c/object} instead.]",
+"[Slowly, slowly, the two of you drift off to sleep.]"
+        ]
+    ],
+
+ "youdeaf_SQ14": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_hearing",
+            "only_you_deaf",
+            "min_platonic_15"
+        ],
+        [
+	"[You're sleepy today. You flop down in your nest and pull some of the moss closer until you're comfortable.]",
+"[t_c pauses as {PRONOUN/t_c/subject} {VERB/t_c/pass/passes} your den and {VERB/t_c/notice/notices} you. With a frown, {PRONOUN/t_c/subject} {VERB/t_c/point/points} to you and {VERB/t_c/tilt/tilts} {PRONOUN/t_c/poss} head. Unsure of what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} asking, you tilt your head back.]",
+"[Your Clanmate lowers {PRONOUN/t_c/poss} head and rests {PRONOUN/t_c/poss} paw right above {PRONOUN/t_c/poss} nose. Oh! {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} wondering if you're feeling sick.]",
+"[You shake your head, and an unbidden yawn clarifies that you're just tired. Looking relieved and a bit amused, t_c nods and leaves you to your nap.]"
+        ]
+    ],
+
+ "youdeaf_SQ15": [
+        [
+            "they_warrior",
+            "they_deputy",
+            "you_apprentice",
+            "you_warrior",
+            "they_hearing",
+            "only_you_deaf",
+            "min_platonic_10"
+        ],
+        [
+	"[You and t_c are hunting together when {PRONOUN/t_c/subject} suddenly {VERB/t_c/stiffen/stiffens}, pricking {PRONOUN/t_c/poss} ears. You freeze and look around, but see nothing.]",
+"[t_c flicks {PRONOUN/t_c/poss} tail towards the direction you had come, and you nod. You both retreat, and as soon as you're some distance away from your hunting area, t_c motions for you to stop.]",
+"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/point/points} towards {PRONOUN/t_c/poss} ear and {VERB/t_c/mime/mimes} biting forward. {PRONOUN/t_c/subject/CAP} heard a dog! You nod and start briskly towards camp to report it to l_n.]"
+        ]
+    ],
+
+ "youdeaf_SQ16": [
+        [
+            "you_adult",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "they_neurotic",
+            "they_deaf",
+            "only_you_deaf",
+            "min_platonic_20"
+        ],
+        [
+	"[t_c's paws are stained purple, presumably from gathering or sorting berries for the medicine stores.]",
+"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} incredibly self-conscious about the color, and {VERB/t_c/tuck/tucks} {PRONOUN/t_c/poss} paws beneath {PRONOUN/t_c/poss} body whenever anyone seems to be looking at {PRONOUN/t_c/object}.]",
+"[{PRONOUN/t_c/subject/CAP} {VERB/t_c/try/tries} to sign to you without using {PRONOUN/t_c/poss} paws, but {PRONOUN/t_c/poss} resulting limited range of signs means your conversation is slow. With a resigned sigh, t_c reveals {PRONOUN/t_c/poss} purple paws and continues signing normally.]"
+        ]
+    ],
+
+ "youdeaf_SQ17": [
+        [
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "they_deaf",
+            "you_warrior",
+            "you_deputy",
+            "you_leader",
+            "only_you_deaf",
+            "min_platonic_30",
+            "greenleaf",
+            "leaffall"
+        ],
+        [
+	"[While you're on a solo hunting patrol, t_c bounds up to you and, with a tilted head and flick of the tail, asks if you could follow {PRONOUN/t_c/object}. You aren't currently tracking any prey, so you agree.]",
+"[t_c leads you a short distance and points into a clump of thistles. Within, you see a thriving patch of marigold, protected from herbivores by the spiky plants.]",
+"[t_c signs that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} trying to collect the marigold, but {VERB/t_c/need/needs} someone to hold the thistles back. You agree to help, and with some carefully placed paws, bend the plants without pricking yourself.]",
+"[t_c maneuvers through the gap you've created and successfully harvests some of the plants! {PRONOUN/t_c/subject/CAP} {VERB/t_c/thank/thanks} you for your help, and the two of you part ways.]"
+        ]
+    ],
+    "they_failingeyesight_SQ1": [
+        [
+            "they_failingeyesight",
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_20"
+        ],
+        [
+	"[t_c tenses as you both head towards your nests for some well-earned sleep. {PRONOUN/t_c/subject/CAP} {VERB/t_c/squint/squints} towards the edge of camp, {PRONOUN/t_c/poss} fur bristling.]",
+	"y_c? Is someone sitting over there?",
+	"[You look over to see neutral_r_w's silhouette by the camp entrance. It seems like {PRONOUN/neutral_r_w/subject}{VERB/neutral_r_w/'re/'s} looking up at the stars. You describe this to t_c, and {PRONOUN/t_c/subject} {VERB/t_c/relax/relaxes}.]",
+	"Oh... ha. Sorry. I just didn't recognize the shape, and I was worried it was a rogue spying on us or something.",
+	"...Please don't tell neutral_r_w I said that."
+        ]
+    ],
+
+"they_failingeyesight_SQ2": [
+        [
+            "they_failingeyesight",
+            "they_warrior",
+            "they_apprentice",
+            "they_neurotic",
+            "you_older",
+            "min_platonic_20"
+        ],
+        [
+	"[You come across t_c just outside of camp, winding up to pounce. You freeze, not wanting to scare whatever {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} hunting, but when t_c finally springs {PRONOUN/t_c/subject} {VERB/t_c/land/lands} directly on a small rock instead.]",
+	"[Instead of being disappointed, your Clanmate squeaks in excitement, and you can't help but ask what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing. t_c ducks {PRONOUN/t_c/poss} head when {PRONOUN/t_c/subject} {VERB/t_c/realize/realizes} you've been watching.]",
+	"Um... okay, I realize this looks strange. I've always had trouble gauging how far away prey is, and that's made me miss a few easy catches recently, so I'm practicing.",
+	"I'm not going to be perfect, but I can probably get better... right?"
+        ]
     ]
+
+
+
 }

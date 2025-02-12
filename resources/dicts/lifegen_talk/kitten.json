@@ -8420,5 +8420,97 @@
             "[You feel a tiny paw nudge you as you attempt to stand up. You fall down with a squeak.]",
             "[Rude.]"
         ]
+    ],
+    "youdeaf_SQ2": [
+        [
+            "you_kitten",
+            "they_kitten",
+            "they_neurotic",
+            "they_stable",
+            "they_introspective",
+            "they_hearing",
+            "only_you_deaf",
+            "newleaf",
+            "greenleaf",
+            "leaffall"
+        ],
+        [
+            "[t_c sits next to the nursery entrance, watching the rain fall outside. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} tapping {PRONOUN/t_c/poss} front paws against the ground rapidly, but you can't figure out why.]",
+            "[When t_c notices you watching {PRONOUN/t_c/poss} paws, {PRONOUN/t_c/poss} eyes widen. {PRONOUN/t_c/subject/CAP} {VERB/t_c/point/points} to the rain, and then to the nursery roof, and then to {PRONOUN/t_c/poss} paws again...]",
+            "[Ohh. Maybe the rain's making noise on the roof, and {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} imitating it? You're not certain, but you decide to follow t_c's lead. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bounce/bounces} a bit in response.]"
+        ]
+    ],
+    "youdeaf_SQ3": [
+        [
+            "you_kitten",
+            "they_kitten",
+            "they_neurotic",
+            "they_hearing",
+            "only_you_deaf"
+        ],
+        [
+            "[As far as you can tell, t_c can hear, but sometimes you notice that {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} respond when another cat tries to get {PRONOUN/t_c/poss} attention.]",
+            "[Instead, {PRONOUN/t_c/subject} often {VERB/t_c/scurry/scurries} away to hide, seemingly nervous about answering.]"
+        ]
+    ],
+    "youdeaf_SQ4": [
+        [
+            "you_kitten",
+            "they_kitten",
+            "they_neurotic",
+            "min_platonic_15",
+            "they_deaf",
+            "only_you_deaf",
+            "newleaf",
+            "greenleaf",
+            "leaffall"
+        ],
+        [
+            "[You're awoken late at night by t_c shifting beside you. You sleepily blink at {PRONOUN/t_c/object} and realize {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} tense, {PRONOUN/t_c/poss} fur bristling.]",
+            "[As you're about to ask what's wrong, a bright flash illuminates the nursery, followed by a rumble that shakes you both. t_c buries {PRONOUN/t_c/poss} head under {PRONOUN/t_c/poss} paws.]",
+            "[You press against {PRONOUN/t_c/object}, hoping that your presence will calm {PRONOUN/t_c/object} down.]"
+        ]
+    ],
+    "youdeaf_SQ6": [
+        [
+            "they_kitten",
+            "you_queen",
+            "you_queen's_apprentice",
+            "they_deaf",
+            "they_blind",
+            "only_you_deaf"
+        ],
+        [
+            "[Other cats can find hiding kits by following the sound of stifled giggling, but you have to be a bit more observant.]",
+            "[You pace the nursery, looking for t_c's hide-and-seek spot. You look for untucked paws, moss being disturbed by a flicking tail, fur poking out...]",
+            "[Ah, there: a tiny ear jutting out from behind a nest. Smiling, you creep forward and gently tap t_c on {PRONOUN/t_c/poss} head.]"
+        ]
+    ],
+    "youdeaf_SQ7": [
+        [
+            "they_kitten",
+            "you_adult",
+            "neutral",
+            "they_neurotic",
+            "only_you_deaf"
+        ],
+        [
+            "[t_c creeps up to you and clumsily begins signing. You can... mostly understand {PRONOUN/t_c/object}, but then {PRONOUN/t_c/subject} {VERB/t_c/make/makes} a few signs that you can't interpret.]",
+            "[When t_c notices that you look confused, {PRONOUN/t_c/subject} {VERB/t_c/stop/stops}. Averting {PRONOUN/t_c/poss} eyes, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} and {VERB/t_c/scurry/scurries} away.]"
+        ]
+    ],
+    "youdeaf_SQ8": [
+        [
+            "they_kitten",
+            "you_adult",
+            "from_your_kit",
+            "from_adopted_kit",
+            "they_neurotic",
+            "only_you_deaf"
+        ],
+        [
+            "[t_c stares apprehensively at the cats milling around outside the nursery. Whenever anyone gets too close to the entrance, {PRONOUN/t_c/subject} {VERB/t_c/burrow/burrows} into your fur.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} bewildered as to why other cats speak so much more than you.]"
+        ]
     ]
 }

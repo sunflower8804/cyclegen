@@ -5530,5 +5530,38 @@
             "They're making you soft. A real enemy's going to come at you with everything they've got.",
             "If you really want to prepare, you have to do the same. Use your claws. Go for the throat. Remember, when you're a warrior, it's kill or be killed. You'll be doing your siblings a favor. You can thank me when you're older."
         ]
+    ],
+    "youdeaf_SQ1": [
+        [
+            "you_kitten",
+            "they_adult",
+            "they_neurotic",
+            "they_hearing",
+            "only_you_deaf",
+            "neutral"
+        ],
+        [
+            "[Something hits you in the side, and you slam against the ground. You look up to see t_c regaining {PRONOUN/t_c/poss} balance... oh. {PRONOUN/t_c/subject/CAP} must have tripped over you.]",
+            "[t_c notices you and {PRONOUN/t_c/poss} eyes widen. {PRONOUN/t_c/subject/CAP} {VERB/t_c/start/starts} moving {PRONOUN/t_c/poss} mouth really quickly, looking apologetic, before realizing you can't understand {PRONOUN/t_c/object} and looking even more embarrassed.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/hesitate/hesitates}, then {VERB/t_c/move/moves} one paw in quick circles over {PRONOUN/t_c/poss} chest... oh! {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} saying sorry! {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} saying sorry a lot...]",
+            "[Before you can respond, t_c's already scooted away.]"
+        ]
+    ],
+    "youdeaf_SQ5": [
+        [
+            "you_kitten",
+            "they_queen",
+            "they_queen's_apprentice",
+            "they_hearing",
+            "min_platonic_10",
+            "only_you_deaf"
+        ],
+        [
+            "[When t_c gathers you to tell a story, {PRONOUN/t_c/subject} {VERB/t_c/make/makes} sure to sign as well. When plike_r_k joins you, {PRONOUN/plike_r_k/subject} also {VERB/plike_r_k/translate/translates}!]",
+            "[Today, though, they both seem unsure of the sign for a certain word. You watch them stop the story to discuss something for a bit, and then t_c steps just outside of the nursery and points up at the sky.]",
+            "[You try to look up, but t_c stops you before you look directly at the sun! Was that what {PRONOUN/t_c/subject} {VERB/t_c/were/was} motioning to?]",
+            "[plike_r_k nudges you. When you look at {PRONOUN/plike_r_k/object}, {PRONOUN/plike_r_k/subject} {VERB/plike_r_k/point/points} upwards, and then {VERB/plike_r_k/motion/motions} to {PRONOUN/plike_r_k/poss} paws. Sun... paws? Oh! The hero's name must be Sunpaw!]",
+            "[You nod at t_c and plike_r_k, and the three of you exchange satisfied smiles before settling in to continue the story.]"
+        ]
     ]
 }
