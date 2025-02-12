@@ -713,7 +713,7 @@ class TalkScreen(Screens):
                 and "any" not in tags
                 and f"you_{your_status}" not in tags
                 and f"you_{(your_status).replace(' ', '_')}" not in tags
-                and "young elder" not in tags
+                and "they_young_elder" not in tags
                 and "you_young_elder" not in tags
                 and "no_kit" not in tags
                 and "you_any" not in tags
@@ -724,7 +724,7 @@ class TalkScreen(Screens):
                 and "you_adult" not in tags
                 ):
                 continue
-            elif "young elder" in tags and cat.status == 'elder' and cat.moons >= 100:
+            elif "they_young_elder" in tags and cat.status == 'elder' and cat.moons >= 100:
                 continue
             elif "you_young_elder" in tags and you.status == 'elder' and you.moons >= 100:
                 continue
