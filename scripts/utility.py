@@ -4522,15 +4522,15 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 text = add_to_cat_dict("r_c", cluster, x, rel, r, random_cat, text, cat_dict)
     # Other Clan
     if o_c_allowed is True:
-        if "o_c" in text:
-            if "o_c" in other_dict:
-                text = re.sub(r'(?<!\/)o_c(?!\/)', str(other_dict["o_c"].name), text)
+        if "o_c_n" in text:
+            if "o_c_n" in other_dict:
+                text = re.sub(r'(?<!\/)o_c_n(?!\/)', str(other_dict["o_c_n"].name) + "Clan", text)
             else:
                 other_clan = choice(game.clan.all_clans)
                 if not other_clan:
                     return ""
-                other_dict["o_c"] = other_clan
-                text = re.sub(r'(?<!\/)o_c(?!\/)', str(other_clan.name), text)
+                other_dict["o_c_n"] = other_clan
+                text = re.sub(r'(?<!\/)o_c_n(?!\/)', str(other_clan.name) + "Clan", text)
 
     # Your DF Mentor
     if "df_m_n" in text:
@@ -4684,7 +4684,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         text = add_to_cat_dict("d_n", cluster, x, rel, r, game.clan.deputy, text, cat_dict)
 
     # Dead cat
-    # if cat is grieving, will their grief cat. otherwise will be arandom starclan cat
+    # random starclan cat
     if "d_c" in text:
         cluster = False
         rel = False
@@ -4705,17 +4705,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
         
 
         if in_dict is False:
-            if "grief stricken" in cat.illnesses:
-                try:
-                    dead_cat = Cat.all_cats.get(cat.illnesses['grief stricken'].get("grief_cat"))
-                    if dead_cat is None:
-                        if "lasting grief" not in cat.permanent_condition:
-                            print("Warning:", cat.name, "is grieving + has no grief cat?")
-                        dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
-                except:
-                    dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
-            else:
-                dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
+            dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
 
             addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
 
@@ -4727,13 +4717,90 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                 addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
                 counter += 1
             cat_dict["d_c"] = dead_cat
-            # words = text.split()
-            # for i, word in enumerate(words):
-            #     if word == "d_c" and (i == 0 or words[i-1][-1] != "{"):
-            #         words[i] = str(dead_cat.name)
-            # text = " ".join(words)
 
             text = add_to_cat_dict("d_c", cluster, x, rel, r, dead_cat, text, cat_dict)
+    
+    # grief cat
+    if "tg_c" in text:
+        cluster = False
+        rel = False
+        match = re.search(r'tg_c(\w+)', text)
+        if match:
+            x = match.group(1).strip("_")
+            cluster = True
+        else:
+            x = ""
+        match2 = re.search(r'(\w+)tg_c', text)
+        if match2:
+            r = match2.group(1).strip("_")
+            rel = True
+        else:
+            r = ""
+
+        text, in_dict = cat_dict_check("tg_c", cluster, x, rel, r, text, cat_dict)
+
+        if in_dict is False:
+            if "grief stricken" in cat.illnesses:
+                if cat.illnesses['grief stricken'].get("grief_cat"):
+                    dead_cat = Cat.fetch_cat(cat.illnesses['grief stricken'].get("grief_cat"))
+                else:
+                    if "lasting grief" not in cat.permanent_condition:
+                        print("Warning:", cat.name, "is grieving + has no grief cat?")
+                    return ""
+
+            addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
+
+            counter = 0
+            while (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or dead_cat.ID in [game.clan.instructor.ID, game.clan.demon.ID] or addon_check is False):
+                if counter == 30:
+                    return ""
+                dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
+                addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
+                counter += 1
+            cat_dict["tg_c"] = dead_cat
+
+            text = add_to_cat_dict("tg_c", cluster, x, rel, r, dead_cat, text, cat_dict)
+    
+    # your grief cat
+    if "yg_c" in text:
+        cluster = False
+        rel = False
+        match = re.search(r'yg_c(\w+)', text)
+        if match:
+            x = match.group(1).strip("_")
+            cluster = True
+        else:
+            x = ""
+        match2 = re.search(r'(\w+)yg_c', text)
+        if match2:
+            r = match2.group(1).strip("_")
+            rel = True
+        else:
+            r = ""
+
+        text, in_dict = cat_dict_check("yg_c", cluster, x, rel, r, text, cat_dict)
+
+        if in_dict is False:
+            if "grief stricken" in game.clan.your_cat.illnesses:
+                if game.clan.your_cat.illnesses['grief stricken'].get("grief_cat"):
+                    dead_cat = Cat.fetch_cat(game.clan.your_cat.illnesses['grief stricken'].get("grief_cat"))
+                else:
+                    if "lasting grief" not in game.clan.your_cat.permanent_condition:
+                        print("Warning:", game.clan.your_cat.name, "is grieving + has no grief cat?")
+                    return ""
+
+            addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
+
+            counter = 0
+            while (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or dead_cat.ID in [game.clan.instructor.ID, game.clan.demon.ID] or addon_check is False):
+                if counter == 30:
+                    return ""
+                dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
+                addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
+                counter += 1
+            cat_dict["yg_c"] = dead_cat
+
+            text = add_to_cat_dict("yg_c", cluster, x, rel, r, dead_cat, text, cat_dict)
 
     # Random dark forest cat
     if "rdf_c" in text:

@@ -488,11 +488,12 @@ class ChooseMateScreen(Screens):
         for _mate in display_cats:
             if game.clan.clan_settings["show fav"] and _mate.favourite != 0:
                 self.fav[str(i)] = pygame_gui.elements.UIImage(
-                    ui_scale(pygame.Rect((pos_x, pos_y), (100, 100))),
+                    ui_scale(pygame.Rect((pos_x, pos_y), (50, 50))),
                     pygame.transform.scale(
                         pygame.image.load(
                             f"resources/images/fav_marker_{_mate.favourite}.png").convert_alpha(),
-                        (100, 100))
+                        (50, 50)),
+                        container=self.mates_container,
                 )
                 self.fav[str(i)].disable()
             self.mates_cat_buttons["cat" + str(i)] = UISpriteButton(

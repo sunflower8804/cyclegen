@@ -448,11 +448,11 @@
             "no_kit"
         ],
         [
-            "I really miss {PRONOUN/d_c/object} sometimes, you know?",
+            "I really miss {PRONOUN/tg_c/object} sometimes, you know?",
             "[t_c looks at {PRONOUN/t_c/poss} portion of the prey and {VERB/t_c/paw/paws} it away with a sigh.]",
-            "[After a moment of silence, you perk up and ask t_c what d_c's favorite prey was.]",
-            "Oh... d_c didn't have a favorite. {PRONOUN/d_c/subject/CAP} {VERB/d_c/were/was} always eating everything in front of {PRONOUN/d_c/object}. Bird, mouse, fish... you name it.",
-            "[t_c takes a shaky inhale and laughs quietly. The memory of d_c is still strong and thriving, but it doesn't mean it hurts any less.]"
+            "[After a moment of silence, you perk up and ask t_c what tg_c's favorite prey was.]",
+            "Oh... tg_c didn't have a favorite. {PRONOUN/tg_c/subject/CAP} {VERB/tg_c/were/was} always eating everything in front of {PRONOUN/tg_c/object}. Bird, mouse, fish... you name it.",
+            "[t_c takes a shaky inhale and laughs quietly. The memory of tg_c is still strong and thriving, but it doesn't mean it hurts any less.]"
         ]
     ],
     "Grief_meditator_H1": [
@@ -466,8 +466,8 @@
         ],
         [
             "I should be listening to my own advice. 'Talk about the dead cats you once knew-- bottling up those feelings does no one justice, especially those you grieve.'",
-            "... I never realized how difficult that is, truly. I can't talk about d_c without tearing up.",
-            "[t_c huffs as {PRONOUN/t_c/subject} {VERB/t_c/do/does}, indeed, tear up at even the mention of d_c's name.]",
+            "... I never realized how difficult that is, truly. I can't talk about tg_c without tearing up.",
+            "[t_c huffs as {PRONOUN/t_c/subject} {VERB/t_c/do/does}, indeed, tear up at even the mention of tg_c's name.]",
             "I'm a mess. Maybe we can talk later, y_c."
         ]
     ],
@@ -481,9 +481,9 @@
             "platonic_love"
         ],
         [
-            "Do you think d_c is waiting for me in StarClan?",
-            "I promised that I would follow {PRONOUN/d_c/object} to the very end. I think {PRONOUN/d_c/subject} thought I was joking, though...",
-            "I can only wish StarClan is merciful, and allows me to see d_c soon."
+            "Do you think tg_c is waiting for me in StarClan?",
+            "I promised that I would follow {PRONOUN/tg_c/object} to the very end. I think {PRONOUN/tg_c/subject} thought I was joking, though...",
+            "I can only wish StarClan is merciful, and allows me to see tg_c soon."
         ]
     ],
     "Grief_gen_H3": [
@@ -496,10 +496,10 @@
             "stable"
         ],
         [
-            "d_c was one of those cats that was bigger than life, you know? Never in my days would I have thought something would strip that light away.",
-            "[t_c starts to tear up, using {PRONOUN/t_c/poss} paw to wipe away evidence of {PRONOUN/t_c/poss} grief. You notice, and assure t_c that {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} have to talk about d_c.]",
-            "No, no! It's okay to talk about {PRONOUN/d_c/object}. I think it is important to talk about d_c. It keeps {PRONOUN/d_c/object} alive and around in my memory",
-            "Now that {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} gone... I try to value the cats around me more deeply in {PRONOUN/d_c/poss} honor."
+            "tg_c was one of those cats that was bigger than life, you know? Never in my days would I have thought something would strip that light away.",
+            "[t_c starts to tear up, using {PRONOUN/t_c/poss} paw to wipe away evidence of {PRONOUN/t_c/poss} grief. You notice, and assure t_c that {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} have to talk about tg_c.]",
+            "No, no! It's okay to talk about {PRONOUN/tg_c/object}. I think it is important to talk about tg_c. It keeps {PRONOUN/tg_c/object} alive and around in my memory",
+            "Now that {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} gone... I try to value the cats around me more deeply in {PRONOUN/tg_c/poss} honor."
         ]
     ],
     "sibling_H1": [
@@ -599,10 +599,10 @@
         [
             "y_c, come here. I want to show you something.",
             "[t_c waves you over with a flick of {PRONOUN/t_c/poss} tail, and looks to the sky where the stars shine the brightest.]",
-            "Do you see that star, to the left? No, no. How can you miss {PRONOUN/d_c/object}? {PRONOUN/t_c/subject/CAP}{VERB/d_c/'re/'s} shimmering right up there.",
+            "Do you see that star, to the left? No, no. How can you miss {PRONOUN/tg_c/object}? {PRONOUN/t_c/subject/CAP}{VERB/tg_c/'re/'s} shimmering right up there.",
             "[A look of reminiscent longing falls upon t_c's expression as {PRONOUN/t_c/subject} {VERB/t_c/look/looks} up that one star.]",
-            "See, y_c, that's my d_c. Up in StarClan, watching over me... Do you see how {PRONOUN/d_c/subject} light up the sky?",
-            "I do miss {PRONOUN/d_c/object}. But... d_c looks just as beautiful up there as {PRONOUN/d_c/subject} did by my side."
+            "See, y_c, that's my tg_c. Up in StarClan, watching over me... Do you see how {PRONOUN/tg_c/subject} light up the sky?",
+            "I do miss {PRONOUN/tg_c/object}. But... tg_c looks just as beautiful up there as {PRONOUN/tg_c/subject} did by my side."
         ]
     ],
     "Grief_strange_H2": [
@@ -783,7 +783,7 @@
         ],
         [
             "Tch, gatherings. Always so awkward, having to run into all my past flings.",
-            "There's the giant tabby from o_cClan, and their amber-eyed friend, not to mention that one from across the river with the funny spots ...",
+            "There's the giant tabby from o_c_n, and their amber-eyed friend, not to mention that one from across the river with the funny spots ...",
             "Do I remember their names? Psh, you gotta be joking.",
             "Why bother wasting my memory when I know I can get them back at any time with just a flick of my tail? Hehehe.",
             "[t_c is such a player!]"
@@ -886,8 +886,8 @@
             "dead_close"
         ],
         [
-            "Hey, I got a good one: why can't d_c make anyone laugh anymore? Because {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} dead serious.",
-            "Or, why shouldn't we speak ill of d_c? Because it would be a grave mistake.",
+            "Hey, I got a good one: why can't tg_c make anyone laugh anymore? Because {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} dead serious.",
+            "Or, why shouldn't we speak ill of tg_c? Because it would be a grave mistake.",
             "C'mon, lighten up. You can laugh. Everycat loves a laugh, right?",
             "[t_c's smile looks so tight, it's almost painful.]"
         ]
@@ -1688,7 +1688,7 @@
         ],
         [
             "[t_c snuggles up next to you with a piece of prey in {PRONOUN/t_c/poss} mouth, dropping it between you two. It's fairly large, just enough to feed two cats.]",
-            "Here, I brought enough to share, y_c! Can't get enough good ol' bonding time these days. Heh, but it can't be worse than whatever's going on with o_cClan's leader, right?",
+            "Here, I brought enough to share, y_c! Can't get enough good ol' bonding time these days. Heh, but it can't be worse than whatever's going on with o_c_n's leader, right?",
             "...Man.",
             "[t_c sighs, taking a bite of the prey. {PRONOUN/t_c/subject/CAP} {VERB/t_c/let/lets} it sit in {PRONOUN/t_c/poss} mouth for a moment as {PRONOUN/t_c/subject} {VERB/t_c/chew/chews} it, seeming to have trouble with the giant piece {PRONOUN/t_c/subject} took.",
             "[Then, {PRONOUN/t_c/poss} eyes widen massively, and for a moment you're worried {PRONOUN/t_c/subject} might be choking...]",

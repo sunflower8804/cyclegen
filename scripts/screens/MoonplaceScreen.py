@@ -757,11 +757,11 @@ class MoonplaceScreen(Screens):
                 if game.clan.your_cat.mentor is None:
                     return ""
                 text = text.replace("m_n", str(Cat.fetch_cat(game.clan.your_cat.mentor).name))
-            if "o_c" in text:
+            if "o_c_n" in text:
                 other_clan = choice(game.clan.all_clans)
                 if not other_clan:
                     return ""
-                text = text.replace("o_c", str(other_clan.name))
+                text = text.replace("o_c_n", str(other_clan.name) + "Clan")
 
             #their mate
             if "t_m" in text:

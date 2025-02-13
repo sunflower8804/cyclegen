@@ -2359,5 +2359,85 @@
         [
             "[The little body among stars surprises you.]"
         ]
+    ],
+    "fromkit_pos_shunned_H3": [
+        [
+            "they_newborn",
+            "from_your_kit",
+            "from_adopted_kit",
+            "you_shunned",
+            "any",
+            "they_blind",
+            "they_deaf",
+            "you_blind"
+        ],
+        [
+            "[t_c mewls for you, innocent and oblivious to your blood-stained paws.]"
+        ]
+    ],
+    "new_shunned_J10": [
+        [
+            "you_shunned",
+            "from_your_kit",
+            "they_newborn",
+            "any",
+            "you_recovering_from_birth",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You hold t_c close. With your kit still needing to wean, the Clan isn't able to take {PRONOUN/t_c/object} away from you yet.]",
+            "[You savour this moment. Once {PRONOUN/t_c/poss} eyes are open, you know the Clan will start telling {PRONOUN/t_c/object} what a horrible cat you are.]"
+        ]
+    ],
+    "newborn_youshunned_rad1": [
+        [
+            "they_newborn",
+            "from_your_kit",
+            "from_your_adopted_kit",
+            "any",
+            "you_shunned",
+            "you_deaf",
+            "they_deaf",
+            "they_blind"
+        ],
+        [
+            "[t_c's sides rise and fall as {PRONOUN/t_c/subject} {VERB/t_c/nestle/nestles} against you.]",
+            "[As you watch t_c sleep, you find yourself hoping that {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} make the same mistakes you did.]"
+        ]
+    ],
+    "newborn_youshunned_rad2": [
+        [
+            "they_newborn",
+            "from_your_kit",
+            "from_your_adopted_kit",
+            "any",
+            "you_shunned",
+            "you_guilty",
+            "you_deaf",
+            "they_deaf",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[Every time t_c shifts ever so slightly away from you, you're struck with a pang of terror.]",
+            "[It almost feels as though t_c, despite being a newborn, already knows <i>exactly</i> what you did.]"
+        ]
+    ],
+    "from_newborn_youshunned_E1": [
+        [
+            "Any",
+            "non-related",
+            "they_newborn",
+            "they_blind",
+            "they_deaf",
+            "you_shunned"
+        ],
+        [
+            "Mrow?",
+            "[... You probably shouldn't be this close.]"
+        ]
     ]
 }

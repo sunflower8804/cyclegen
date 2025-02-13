@@ -627,7 +627,7 @@
         ],
         "intro": [
             "Hmph. When are they gonna let us out of this stuffy old nursery?",
-            "I want to explore! And I just know, if they let us battle, I could be the best warrior this Clan has ever seen!!! I could probably take down two or three o_cClan cats, all by myself.",
+            "I want to explore! And I just know, if they let us battle, I could be the best warrior this Clan has ever seen!!! I could probably take down two or three o_c_n cats, all by myself.",
             "Hey ... maybe we could sneak out!",
             "Yeah, I know it's against the rules! What are you, a scaredy-cat?"
         ],
@@ -1033,7 +1033,7 @@
         "intro": [
             "y_c, when do you think we'll get to fight in a real warrior battle?",
             "I know we've been practicing our fighting moves, but practice is nothing compared to the real thing.",
-            "I'm just itching to tear into some o_cClan fur! That'll show them how a real c_nClan cat does it!"
+            "I'm just itching to tear into some o_c_n fur! That'll show them how a real c_nClan cat does it!"
         ],
         "intro_choices": {
             "choice1": {
@@ -1047,7 +1047,7 @@
         },
         "hope_battle_right_away": [
             "Say, maybe there's a way we can both get what we want!",
-            "You can be an o_cClan warrior, and I'll be the c_nClan warrior.",
+            "You can be an o_c_n warrior, and I'll be the c_nClan warrior.",
             "Ready? I'll give you a running start!"
         ],
         "hope_never_battle": [
@@ -1067,7 +1067,7 @@
         ],
         "intro": [
             "[t_c tackles you from behind.]",
-            "Rahhh! o_cClan warrior, feel my wrath!",
+            "Rahhh! o_c_n warrior, feel my wrath!",
             "Hehe, don't worry! It's just me, y_c. Did I scare you?",
             "That's a move tm_n just taught me. Cool, huh? I can't wait to try it out for real!",
             "Has m_n taught you anything cool yet?"
@@ -2235,7 +2235,7 @@
         "intro": [
             "Well, if it isn't the best kit ever! The astounding t_l!",
             "That's not your name? Eh, whatever. I got the litter right, anyways.",
-            "Listen, in about twenty minutes, there's gonna be a whole swarm of o_cClan cats in here, real heated about something stupid one of our cats did at the border.",
+            "Listen, in about twenty minutes, there's gonna be a whole swarm of o_c_n cats in here, real heated about something stupid one of our cats did at the border.",
             "I need you to go greet them real innocent-like so their shriveled hearts will be filled with warm, fuzzy feelings and less 'wipe-this-Clan-off-the-map' ones.",
             "Think you can manage? Let me see your cutest face!"
         ],
@@ -2256,13 +2256,13 @@
         "doe": [
             "Aha! That's perfect! You're a natural!",
             "A face that can stop wars. You'll make a great mediator yet.",
-            "[As the o_cClan warriors trickle in, t_c parades you out to welcome them, and they remark on how sweet and well mannered you are.]",
+            "[As the o_c_n warriors trickle in, t_c parades you out to welcome them, and they remark on how sweet and well mannered you are.]",
             "[Though you aren't sure what the adult cats are talking about, the pleased look on t_c's face tells you all you need to know.]"
         ],
         "war": [
             "Eugh, what is that? Do you need to make dirt, or something?",
             "On second thought, can I get one of your siblings in on this? r_q! Get me the cutest one from this litter!",
-            "[t_c parades t_l out to meet the o_cClan cats while you sit and seethe back in the nursery.]"
+            "[t_c parades t_l out to meet the o_c_n cats while you sit and seethe back in the nursery.]"
         ]
     },
     "cool_kit_AJ10~3": {
@@ -2658,7 +2658,7 @@
             "you_blind"
         ],
         "intro": [
-            "Ughhh, when can I get out of this boring old camp already? I want to go out and catch all of the mouses and defend our territory from stinky o_cClan cats!"
+            "Ughhh, when can I get out of this boring old camp already? I want to go out and catch all of the mouses and defend our territory from stinky o_c_n cats!"
         ],
         "intro_choices": {
             "choice1": {
@@ -3394,8 +3394,8 @@
             "dead_close"
         ],
         "intro": [
-            "[Ever since d_c died, t_c has been refusing to sleep in {PRONOUN/t_c/poss} den.]",
-            "[Instead, whether in rain, snow, or storm, t_c faithfully curls up next to d_c's grave each night, without so much as a scrap of moss to warm {PRONOUN/t_c/object}.]",
+            "[Ever since tg_c died, t_c has been refusing to sleep in {PRONOUN/t_c/poss} den.]",
+            "[Instead, whether in rain, snow, or storm, t_c faithfully curls up next to tg_c's grave each night, without so much as a scrap of moss to warm {PRONOUN/t_c/object}.]",
             "[You figure someone should probably check on {PRONOUN/t_c/object} ... But, since you don't know {PRONOUN/t_c/object} that well, it probably shouldn't be you.]",
             "[What should you do?]"
         ],
@@ -3428,8 +3428,8 @@
             "dead_close"
         ],
         "intro": [
-            "[Ever since d_c died, t_c has been refusing to sleep in {PRONOUN/t_c/poss} den.]",
-            "[Instead, whether in rain, snow, or storm, t_c faithfully curls up next to d_c's grave each night, without so much as a scrap of moss to warm {PRONOUN/t_c/object}.]",
+            "[Ever since tg_c died, t_c has been refusing to sleep in {PRONOUN/t_c/poss} den.]",
+            "[Instead, whether in rain, snow, or storm, t_c faithfully curls up next to g_c's grave each night, without so much as a scrap of moss to warm {PRONOUN/t_c/object}.]",
             "[You're one of the closest cats to t_c in the entire Clan. It hurts for you to see {PRONOUN/t_c/object} like this.]",
             "[What should you do?]"
         ],
@@ -3460,10 +3460,10 @@
             "[As the sky darkens and the air cools, a peace and stillness settles over c_nClan camp. You find t_c by the grave, where {PRONOUN/t_c/subject} always {VERB/t_c/are/is}.]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps} when {PRONOUN/t_c/subject} {VERB/t_c/hear/hears} the rustling underbrush, but {PRONOUN/t_c/poss} eyes soften as soon as they land on your face.]",
             "... Figures, you'd come find me here. Guess it was only a matter of time.",
-            "[You sit beside {PRONOUN/t_c/object}, tail curled over your paws, as {PRONOUN/t_c/subject} {VERB/t_c/stare/stares} bitterly at d_c's grave marker.]",
-            "I can't go back to c_nClan. Not without d_c.",
+            "[You sit beside {PRONOUN/t_c/object}, tail curled over your paws, as {PRONOUN/t_c/subject} {VERB/t_c/stare/stares} bitterly at tg_c's grave marker.]",
+            "I can't go back to c_nClan. Not without tg_c.",
             "If it means spending the rest of my life sitting by this grave, then so be it.",
-            "I'll wait here a thousand moons if it means I don't have to move on without {PRONOUN/d_c/object}.",
+            "I'll wait here a thousand moons if it means I don't have to move on without {PRONOUN/tg_c/object}.",
             "Anything to avoid going back to that empty -- Oh!",
             "[You bury your face in t_c's chest fur.]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/tense/tenses} at first, then slowly {VERB/t_c/relax/relaxes} into your touch.]",
@@ -3601,7 +3601,9 @@
             "no_kit",
             "you_medicine_cat_apprentice",
             "you_medicine_cat",
-            "brooding"
+            "brooding",
+            "they_not_medicine_cat",
+            "they_not_medicine_cat_apprentice"
         ],
         "intro": [
             "Erm ... Hi.",
@@ -4554,7 +4556,7 @@
             "you_blind"
         ],
         "intro": [
-            "Last Gathering, I ended up standing next to an apprentice from o_cClan.",
+            "Last Gathering, I ended up standing next to an apprentice from o_c_n.",
             "I tried to start a conversation, but I wasn't sure what to say, so it didn't really go anywhere and was pretty awkward...",
             "Everycat tells me it doesn't matter, and that I might never see them again, but I want to represent c_nClan well!",
             "You have experience talking with cats from other Clans... what kinds of things could I talk about?"
