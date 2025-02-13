@@ -630,6 +630,10 @@ class Screens:
 
         if theme is None:
             theme = self.theme
+        if not self.active_bg:
+            self.active_bg = "default"
+        blur_bg = None
+        bg = None
 
         # make the right string to pull the correct camp image
         try:
@@ -660,10 +664,6 @@ class Screens:
             bg = scripts.screens.screens_core.screens_core.default_game_bgs[theme][
                 self.active_bg
             ]
-        else:
-            raise Exception(
-                f"Selected game background not recognised! '{self.active_bg}' not in default or custom bgs"
-            )
 
         if self.active_blur_bg == "default" or self.active_blur_bg == season:
             blur_bg = season_bg
@@ -685,10 +685,6 @@ class Screens:
             blur_bg = scripts.screens.screens_core.screens_core.default_fullscreen_bgs[
                 theme
             ][self.active_blur_bg]
-        else:
-            raise Exception(
-                f"Selected fullscreen background not recognised! '{self.active_blur_bg}' not in default or custom bgs"
-            )
 
         if (
             self.previous_season != season

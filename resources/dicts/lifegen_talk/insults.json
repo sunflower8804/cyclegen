@@ -3534,5 +3534,29 @@
         [
             "[t_c cuffs your ear sharply.]"
         ]
+    ],
+    "newborn_niche_H1": [
+        [
+            "you_blind",
+            "you_deaf",
+            "any",
+            "insult"
+        ],
+        [
+            "[You feel something shove you. What was that?]"
+        ]
+    ],
+    "deafblind_newborn_SQ1": [
+        [
+            "insult",
+            "you_blind",
+            "you_deaf",
+            "you_newborn",
+            "they_any"
+        ],
+        [
+            "[The presence beside you pauses, and for a moment the rumbles around you stop.]",
+            "[After a moment, they start up again.]"
+        ]
     ]
 }

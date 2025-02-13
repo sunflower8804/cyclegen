@@ -878,9 +878,9 @@ class MoonplaceScreen(Screens):
 
             for i in range(len(game.switches["other_med_clan"])):
                 for cat_name in game.switches["other_med"][i]:
-                    if cat_name.status == "medicine cat apprentice":
+                    if cat_name.suffix == "paw":
                         if randint(1,2) == 1:
-                            cat_name.status = "medicine cat"
+                            cat_name.give_suffix(None, None, None)
 
             game.switches["other_med"] = self.randomly_remove_string(game.switches["other_med"])
             for clan_meds in game.switches["other_med"]:
