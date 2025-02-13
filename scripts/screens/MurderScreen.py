@@ -1064,7 +1064,7 @@ class MurderScreen(Screens):
 
     def print_chances(self, cat_to_murder, accomplice):
         
-        dont_print = False
+        dont_print = True
         if dont_print is True:
             return
         # not deleting the function bc chances will need more tweaking in the future
