@@ -2137,15 +2137,15 @@ class ProfileScreen(Screens):
                 text += f"<br>{self.the_cat.name} was wrongly placed in StarClan."
 
         text = process_text(text, cat_dict)
-        if "o_c" in text:
+        if "o_c_n" in text:
             if self.the_cat.backstory_str:
-                text = text.replace("o_c", self.the_cat.backstory_str)
+                text = text.replace("o_c_n", self.the_cat.backstory_str)
             else:
                 other_clan = "a different Clan"
                 if game.clan.all_clans:
-                    other_clan = str(choice(game.clan.all_clans).name)
+                    other_clan = str(choice(game.clan.all_clans).name) + "Clan"
                 self.the_cat.backstory_str = other_clan
-                text = text.replace("o_c", other_clan)
+                text = text.replace("o_c_n", other_clan)
         if "c_n" in text:
             text = text.replace("c_n", str(game.clan.name))
         if "r_c" in text:

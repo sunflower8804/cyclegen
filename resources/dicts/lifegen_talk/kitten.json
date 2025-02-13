@@ -417,7 +417,7 @@
         [
             "Is it really true that you're allowed to just ... Travel between the Clans as you please?",
             "Whoa! That's so cool!!! I've always wanted to explore the other territories, but I've never been allowed.",
-            "Is it true that o_cClan cats can swim like fish? Or that their territory is full of snakes?",
+            "Is it true that o_c_n cats can swim like fish? Or that their territory is full of snakes?",
             "[You and t_c have a long conversation about the other Clans. With each detail you share, {PRONOUN/t_c/poss} eyes grow bigger and bigger.]"
         ]
     ],
@@ -1842,7 +1842,7 @@
         ],
         [
             "y_c! y_c!",
-            "What do you think of this cool stick I found? I bet I could rule the entirety of c_nClan with it! Or even o_cClan! Or every Clan in the WORLD!",
+            "What do you think of this cool stick I found? I bet I could rule the entirety of c_nClan with it! Or even o_c_n! Or every Clan in the WORLD!",
             "Woah. What if I could even rule all the Twolegs in the world, so they have to do everything I tell them?"
         ]
     ],
@@ -2756,7 +2756,7 @@
             "you_blind"
         ],
         [
-            "o_cClan cats!!",
+            "o_c_n cats!!",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/hide/hides} behind your leg as the leader of the other Clan enters your camp. Probably should let {PRONOUN/t_c/object} know why they're visiting.]"
         ]
     ],
@@ -3519,7 +3519,7 @@
         ],
         [
             "y_c, I need you to teach me some battle moves.",
-            "Pleeeease? I need to be ready to defend the camp! What if there's an invasion? What if I need to defend the nursery against o_cClan cats?",
+            "Pleeeease? I need to be ready to defend the camp! What if there's an invasion? What if I need to defend the nursery against o_c_n cats?",
             "Trust me, there is nothing to worry about. The Warrior Code says nothing about teaching a kit some self-defense, so it should be fine!"
         ]
     ],
@@ -4685,8 +4685,8 @@
             "you_blind"
         ],
         [
-            "I had fun playing with the o_cClan kits the other day!",
-            "I wonder why o_cClan can't combine nurseries with c_nClan.",
+            "I had fun playing with the o_c_n kits the other day!",
+            "I wonder why o_c_n can't combine nurseries with c_nClan.",
             "It would have been so much fun!"
         ]
     ],
@@ -4703,8 +4703,8 @@
         [
             "[You ask t_c if {PRONOUN/t_c/subject} {VERB/t_c/want/wants} to play a game of 'warriors'.]",
             "Fine, but only if I get to be a warrior from c_nClan!",
-            "[You sigh, and offer to be an enemy warrior from o_cClan.]",
-            "No! I talked with a o_cClan warrior yesterday and they were really nice! You can be a badger instead, okay? Now get ready, stinky badger!"
+            "[You sigh, and offer to be an enemy warrior from o_c_n.]",
+            "No! I talked with a o_c_n warrior yesterday and they were really nice! You can be a badger instead, okay? Now get ready, stinky badger!"
         ]
     ],
     "sc_sc_kitten_10": [
@@ -8375,7 +8375,7 @@
         [
             "[Every kit in the nursery is crowded around y_c, wide-eyed, as {PRONOUN/t_c/subject} {VERB/t_c/talk/talks} about {PRONOUN/t_c/poss} family.]",
             "My mom was actually part magic fox, so she could shapeshift into a fox whenever she wanted, and she had purple fur with green eyes.",
-            "My dad lives in o_cClan, and he's a prophecy cat destined to change the Clans forever.",
+            "My dad lives in o_c_n, and he's a prophecy cat destined to change the Clans forever.",
             "They both left me here because they knew it would be too dangerous for me if cats knew who I was. But pretty soon, they'll both be coming to get me!",
             "[The rest of the kits titter and ask questions as you seethe with jealousy. You wish you were as special as t_c!]"
         ]

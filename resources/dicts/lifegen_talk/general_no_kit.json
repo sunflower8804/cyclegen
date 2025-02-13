@@ -688,7 +688,7 @@
             "[t_c drops a SNAKE at your paws! You shriek and leap backwards.]",
             "Haha, it's okay, it's okay! It's dead!",
             "I caught this little dummy trying to sneak into camp. One good stomp to the head and WHAM! No more snake.",
-            "Say, do you think we could eat it? I heard o_cClan eats snakes ..."
+            "Say, do you think we could eat it? I heard o_c_n eats snakes ..."
         ]
     ],
     "assertive_love_3": [
@@ -5739,9 +5739,9 @@
             "they_blind"
         ],
         [
-            "[l_n is addressing the Clan, sharing reports of a hideous, foul-smelling, grotesque unknown creature found in o_cClan territory.]",
+            "[l_n is addressing the Clan, sharing reports of a hideous, foul-smelling, grotesque unknown creature found in o_c_n territory.]",
             "[t_c taps you on the shoulder and leans in to mutter in your ear: ]",
-            "I didn't know you liked to spend time in o_cClan.",
+            "I didn't know you liked to spend time in o_c_n.",
             "[You shove {PRONOUN/t_c/object} off, fighting desperately to hold in your laughter as l_n shoots both of you a strange look.]"
         ]
     ],
@@ -6429,7 +6429,7 @@
         [
             "[A soft purring sound can be heard from t_c as {PRONOUN/t_c/subject} {VERB/t_c/make/makes} your nest for you, despite you saying you could do it yourself.]",
             "[Honestly, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} perfectly at ease with the world, just helping you settle into the nursery.]",
-            "There you go, love. Let me know if you need anything at all, alright? I'd fight all of o_cClan if I have to...",
+            "There you go, love. Let me know if you need anything at all, alright? I'd fight all of o_c_n if I have to...",
             "Though, I really hope I don't. That would be pretty mean, hehe~."
         ]
     ],
@@ -7549,7 +7549,7 @@
             "Get this, r_m just asked me to go get some more moss for the medicine den.",
             "There's this real nice place I like to go out near the edge of the territory, near this beautiful babbling brook ...",
             "I was just about to leave, but then I figured, 'Hey, you know who deserves a little break today? y_c. {PRONOUN/y_c/subject/CAP} just {VERB/y_c/work/works} so hard.'",
-            "So, how 'bout it, friend? It's right on the o_cClan border, these huge swaths of moss, you can't miss it.",
+            "So, how 'bout it, friend? It's right on the o_c_n border, these huge swaths of moss, you can't miss it.",
             "... You'll go? Perfect! Have fun on your walk, and try to enjoy yourself! You deserve it!",
             "[t_c leaves you to go take a nap across camp. Did ... Did {PRONOUN/t_c/subject} just talk you into doing {PRONOUN/t_c/poss} chores for {PRONOUN/t_c/object}?]"
         ]
@@ -8933,8 +8933,8 @@
             "they_deaf"
         ],
         [
-            "[As r_m shares news from o_cClan, you realize with a jolt that your kit, t_c, is now old enough to face the enemy Clan in battle.]",
-            "[You imagine your baby torn to shreds at the claws of o_cClan warriors ... Or worse, your baby's maw dripping with blood, forced to take another cat's life in the name of the Clan.]",
+            "[As r_m shares news from o_c_n, you realize with a jolt that your kit, t_c, is now old enough to face the enemy Clan in battle.]",
+            "[You imagine your baby torn to shreds at the claws of o_c_n warriors ... Or worse, your baby's maw dripping with blood, forced to take another cat's life in the name of the Clan.]",
             "[You draw closer to t_c and wrap a protective tail around {PRONOUN/t_c/object}, much to {PRONOUN/t_c/poss} confusion.]",
             "[You silently vow not to let anything bad happen to {PRONOUN/t_c/object} ... Not ever.]"
         ]
@@ -14701,7 +14701,7 @@
             "Anything interesting happening in c_nClan?",
             "Mhm. I know that. Know that, too.",
             "StarClan, all I do is sit in camp and listen to everycat talk. Nothing surprises me!",
-            "Maybe I should go eavesdrop on o_cClan instead for a little while..."
+            "Maybe I should go eavesdrop on o_c_n instead for a little while..."
         ]
     ],
     "they_ur_J20": [
@@ -15507,7 +15507,7 @@
             "you_warrior"
         ],
         [
-            "[It was a Leafbare border patrol, you'd encountered an o_cClan patrol that refused to leave.]",
+            "[It was a Leafbare border patrol, you'd encountered an o_c_n patrol that refused to leave.]",
             "[You and your patrol start to chase them when they run across the ice, you run after them.]",
             "[Suddenly, the world blurs and a loud splash is heard, your world growing dark, the cold like claws in your stomach.]",
             "['Is this it...?']",
@@ -15834,7 +15834,7 @@
             "sweet"
         ],
         [
-            "[You sigh. A trainee from o_cClan seems to be starting fights with the others. They've been a ton of trouble.]",
+            "[You sigh. A trainee from o_c_n seems to be starting fights with the others. They've been a ton of trouble.]",
             "[Today, it seems, they're picking on a queen's apprentice from a different Clan. You think it's just gonna be the same as usual.]",
             "[That is, until you hear your apprentice leap for the trainee with a loud yowl.]",
             "Leave them alone, can't you see you're pushing them way too hard?!",
@@ -17083,7 +17083,7 @@
             "unlawful"
         ],
         [
-            "You could have at least killed a cat from o_cClan instead of your own blood.",
+            "You could have at least killed a cat from o_c_n instead of your own blood.",
             "What's stopping you from murdering the rest of us?"
         ]
     ],
@@ -17641,7 +17641,7 @@
         [
             "You know what I miss, y_c?",
             "Swimming! It's just not as fun when the water's iced over.",
-            "Ooh! Now that I think about it, that one river close to o_cClan territory might still be fine. Or at least, the ice is thin enough to break with my paws!",
+            "Ooh! Now that I think about it, that one river close to o_c_n territory might still be fine. Or at least, the ice is thin enough to break with my paws!",
             "Wanna go check?"
         ]
     ],
@@ -19022,7 +19022,7 @@
         [
             "Stay away from the river when you're hunting today, please?",
             "I'm sure the rain last night means it's flowing faster than usual, and the water level's probably higher...",
-            "I heard about a warrior from o_cClan being swept away last greenleaf! So just... Be careful, okay?"
+            "I heard about a warrior from o_c_n being swept away last greenleaf! So just... Be careful, okay?"
         ]
     ],
     "neurotic_fromparent_SQ1~2~a": [
@@ -19432,7 +19432,7 @@
             "mountainous"
         ],
         [
-            "Have you seen that shiny rock sticking out of the cliff face by the o_cClan border?",
+            "Have you seen that shiny rock sticking out of the cliff face by the o_c_n border?",
             "The sun was hitting it just right today. It was beautiful... I really wish I could have it for my collection.",
             "It's just so far up, and the cliff's so steep! I'd either fall to my death, or barely make it a tail-length before slipping and looking really stupid.",
             "Oh well. It'd probably be impossible to pry out of the cliff, anyways."
@@ -19670,7 +19670,7 @@
             "they_blind"
         ],
         [
-            "r_a accidentally wandered into o_cClan territory today. Luckily, no cats spotted {PRONOUN/r_a/object} before {PRONOUN/r_a/subject} found {PRONOUN/r_a/poss} way back.",
+            "r_a accidentally wandered into o_c_n territory today. Luckily, no cats spotted {PRONOUN/r_a/object} before {PRONOUN/r_a/subject} found {PRONOUN/r_a/poss} way back.",
             "I was so nervous watching {PRONOUN/r_a/object}, though! I tried my best to make {PRONOUN/r_a/object} realize something was wrong, but rustling leaves can only do so much..."
         ]
     ],
@@ -20147,7 +20147,7 @@
             "they_blind"
         ],
         [
-            "Do we know for sure how many cats are in o_cClan? Like, we know how many come to Gatherings, but every Clan leaves some cats behind.",
+            "Do we know for sure how many cats are in o_c_n? Like, we know how many come to Gatherings, but every Clan leaves some cats behind.",
             "If they decided to rush in with their whole Clan and take over our camp, do you think it'd be easy for them?",
             "Maybe they haven't done that because they don't know how many cats <i>we</i> have...",
             "I didn't realize how valuable that piece of information was until now!"
@@ -20554,7 +20554,7 @@
         [
             "When you think about it, plove_l_n_stable really is the ideal leader.",
             "{PRONOUN/plove_l_n_stable/subject/CAP}{VERB/plove_l_n_stable/'re/'s} reliable, smart, levelheaded...",
-            "When that o_cClan warrior made those comments at the last Gathering, {PRONOUN/plove_l_n_stable/subject} responded so cordially! I would've been ready to fight!"
+            "When that o_c_n warrior made those comments at the last Gathering, {PRONOUN/plove_l_n_stable/subject} responded so cordially! I would've been ready to fight!"
         ]
     ],
     "neurotic_theygrieving_SQ2": [
@@ -21260,7 +21260,7 @@
             "they_blind"
         ],
         [
-            "y_c! You walked through a catmint patch on your way home from o_cClan. I can smell it.",
+            "y_c! You walked through a catmint patch on your way home from o_c_n. I can smell it.",
             "Yes, my nose is that good. Now, tell me where it is!"
         ]
     ],
@@ -21665,7 +21665,7 @@
         ],
         [
             "At the Gathering, I got to try talking about some of the topics we practiced!",
-            "I sat by an apprentice from o_cClan, and we talked for a while. They actually seemed interested in what I was saying? And they were pretty nice...",
+            "I sat by an apprentice from o_c_n, and we talked for a while. They actually seemed interested in what I was saying? And they were pretty nice...",
             "Their name was... um... oh no. I forget what it was exactly, but it had something to do with water.",
             "And as we were leaving, they said it was fun to talk to me. They were probably just being polite, but it was nice in the moment.",
             "Thanks again for the help. You're really cool, you know?"
@@ -23798,7 +23798,7 @@
         ],
         [
             "[t_c sits in a sunbeam, contemplating a bundle of blue flowers between {PRONOUN/t_c/poss} paws. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} worried, so you ask what's on {PRONOUN/t_c/poss} mind.]",
-            "Ah... well, t_m_unlawful brought me these flowers, but I'm pretty sure they're from o_cClan territory.",
+            "Ah... well, t_m_unlawful brought me these flowers, but I'm pretty sure they're from o_c_n territory.",
             "I noticed them across the border while we were on a walk yesterday, and t_m_unlawful could tell that I liked them, so I think {PRONOUN/t_m_unlawful/subject} went back and picked them this morning...",
             "And then when I asked where the flowers were from, {PRONOUN/t_m_unlawful/subject} just winked, said {PRONOUN/t_m_unlawful/subject} loved me, and trotted off!",
             "t_m_unlawful's always been braver than me. I know I shouldn't, but I kind of admire how {PRONOUN/t_m_unlawful/subject} {VERB/t_m_unlawful/don't/doesn't} really care about borders and rules?",
@@ -25380,7 +25380,7 @@
             "they_apprentice"
         ],
         [
-            "Did you see how neutral_r_w_artistan's decorating the camp entrance with flowers? {PRONOUN/neutral_r_w_artistan/subject/CAP} asked me to get some of the pink ones that grow by the o_cClan border, since I'm hunting there today.",
+            "Did you see how neutral_r_w_artistan's decorating the camp entrance with flowers? {PRONOUN/neutral_r_w_artistan/subject/CAP} asked me to get some of the pink ones that grow by the o_c_n border, since I'm hunting there today.",
             "Those flowers are so fragile, though! I doubt I can carry too many without crumpling them, or even ripping some...",
             "Are you free this afternoon? Could you come with me if I need to make a second trip?"
         ]
@@ -26955,6 +26955,14 @@
 	"[Instead of being disappointed, your Clanmate squeaks in excitement, and you can't help but ask what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing. t_c ducks {PRONOUN/t_c/poss} head when {PRONOUN/t_c/subject} {VERB/t_c/realize/realizes} you've been watching.]",
 	"Um... okay, I realize this looks strange. I've always had trouble gauging how far away prey is, and that's made me miss a few easy catches recently, so I'm practicing.",
 	"I'm not going to be perfect, but I can probably get better... right?"
+        ]
+    ],
+    "testdialogue": [
+        [
+            "any"
+        ],
+        [
+            "o_c_n is another Clan. c_nClan is our Clan."
         ]
     ]
 

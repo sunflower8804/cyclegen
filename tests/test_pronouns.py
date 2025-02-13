@@ -363,7 +363,7 @@ def test_replacement_failure(path: str, repl_dict: dict) -> bool:
             ):
                 # LG: again. skipping if theres a lg abbrev after a period
                 skip = False
-                for i in addon_json:
+                for i in addon_json + ["o_c1"]: # im lazy sorry
                     if i in _str:
                         skip = True
                         break

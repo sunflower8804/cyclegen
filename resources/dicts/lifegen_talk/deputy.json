@@ -103,7 +103,7 @@
             "[You try to explain that you were planning to do something, but r_w is free to patrol.]",
             "You had plans? Too bad. You're being sent on this patrol whether you like it or not.",
             "[As you walk over to your patrol's group, you hear t_c call out.]",
-            "Make sure you don't make a fool of yourself along the o_cClan border! We wouldn't want them thinking we're weak."
+            "Make sure you don't make a fool of yourself along the o_c_n border! We wouldn't want them thinking we're weak."
         ]
     ],
     "silly_gen_prey": [
@@ -146,7 +146,7 @@
             "you_blind"
         ],
         [
-            "Get up, y_c! We gotta go on a special patrol to check the o_cClan border!",
+            "Get up, y_c! We gotta go on a special patrol to check the o_c_n border!",
             "Of course I'm serious, mouse-brain! Are you really gonna make me break it down for you?",
             "The leader gave me this assignment, and told me to pick the cat in the Clan I trust the most to accompany me on it. Lo and behold, that's you!",
             "Now, c'mon, lazybones! We've got a long walk ahead of us!"
@@ -1256,7 +1256,7 @@
         [
             "[You notice t_c calmly wandering away from the leader's den.]",
             "Hm, y_c? Is something the matter?",
-            "No, it's fine. Was just having a discussion with l_n about an issue we're having with o_cClan. It's nothing massively important.",
+            "No, it's fine. Was just having a discussion with l_n about an issue we're having with o_c_n. It's nothing massively important.",
             "Just had a suggestion as to our next move when it comes to them. It's my duty to advise {PRONOUN/l_n/object} just as much as organising patrols.",
             "Anyways, talking about patrols, I've got to sort out the next set. I'll speak to you later."
         ]
@@ -1686,7 +1686,7 @@
             "you_blind"
         ],
         [
-            "[You overhear t_c and l_n very seriously discussing some diplomatic affairs with o_cClan.]",
+            "[You overhear t_c and l_n very seriously discussing some diplomatic affairs with o_c_n.]",
             "[Clearly, they're too busy with important matters to chat with you right now.]"
         ]
     ],
@@ -1716,7 +1716,7 @@
             "they_blind"
         ],
         [
-            "[You overheard a rumor that the leader of o_cClan is terrified of t_c, and it's not hard to see why.]",
+            "[You overheard a rumor that the leader of o_c_n is terrified of t_c, and it's not hard to see why.]",
             "[Sitting up on the highrock with that intense glare, {PRONOUN/t_c/subject} just {VERB/t_c/look/looks} so intimidating!]"
         ]
     ],
@@ -2072,7 +2072,7 @@
         ],
         [
             "Hey, could someone help me get these flowers up here?",
-            "The o_cClan leader is visiting soon to speak to l_n, I want the camp to look nice for when they arrive.",
+            "The o_c_n leader is visiting soon to speak to l_n, I want the camp to look nice for when they arrive.",
             "y_c, r_w, you two will help? Thank you two so much! I'll make it up to you."
         ]
     ],
@@ -2170,7 +2170,7 @@
         [
             "[t_c lets out a 'mrrp' as {PRONOUN/t_c/subject} {VERB/t_c/poke/pokes} {PRONOUN/t_c/poss} head into your den, whiskers twitching.]",
             "y_c! Is everything alright? What did you call me in for?",
-            "Ah... problems with o_cClan? I have a solution, if you're willing to hear me out?"
+            "Ah... problems with o_c_n? I have a solution, if you're willing to hear me out?"
         ]
     ],
     "sweet_deputy_18": [
@@ -2182,7 +2182,7 @@
         ],
         [
             "[Today was a hard day, and you found yourself questioning your leadership skills by the end of it.]",
-            "[A patrol you specifically requested went horribly wrong, two cats got into a fight, o_cClan threatened you.]",
+            "[A patrol you specifically requested went horribly wrong, two cats got into a fight, o_c_n threatened you.]",
             "[You hear pawsteps behind you, but you're too upset to even try to figure out who it is.]",
             "[Though, as soon as you feel {PRONOUN/t_c/object} press against your side, you know it's t_c.]",
             "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} always so kind and supportive of everycat...]",
@@ -2325,7 +2325,7 @@
             "Hey, y_c, I'm organizing patrols for tomorrow. Have you noticed any conflicts that I should keep in mind?",
             "I don't want to put anyone together who's having a disagreement, you know? That could lead to an awkward situation at best...",
             "...or something worse, like... like the two fighting, or them distracting the patrol from actual threats...",
-            "...or their bickering attracting Twolegs, or an o_cClan patrol noticing and thinking we're all unorganized and weak, or...",
+            "...or their bickering attracting Twolegs, or an o_c_n patrol noticing and thinking we're all unorganized and weak, or...",
             "[You inform t_c of a few cats who probably wouldn't work well together right now, but assure {PRONOUN/t_c/object} that if {PRONOUN/t_c/subject} {VERB/t_c/make/makes} a mistake, it won't end in death and chaos.]"
         ]
     ],
@@ -2519,7 +2519,7 @@
             "[t_c sprints up to you, skidding to a stop just short of you and kicking up a cloud of stardust.]",
             "You've been here a while, right? So, there has to be a way out, doesn't there?",
             "No, no, don't tell me it's not possible. The Clan still needs me-- I wasn't supposed to go yet.",
-            "Who's going to do the dawn patrols without me? o_cClan will be taking over our borders in no time!",
+            "Who's going to do the dawn patrols without me? o_c_n will be taking over our borders in no time!",
             "Fine. If you can't help me, I'll find somecat who can.",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} and {VERB/t_c/run/runs} away. You'll have to keep your eye on {PRONOUN/t_c/object}...]"
         ]
@@ -2677,7 +2677,7 @@
             "stable"
         ],
         [
-            "... and o_cClan hasn't been easy to deal with, lately, don't even get me started.",
+            "... and o_c_n hasn't been easy to deal with, lately, don't even get me started.",
             "Did you-- I mean, you weren't there, but did r_w tell you about our run-in on the dusk patrol last night? StarClan, it--",
             "[As t_c is speaking, you take a deep, dramatic-sounding breath in an attempt to satisfy your weakened lungs.]",
             "What? Are you sighing at me? Am I boring you?",
@@ -2698,8 +2698,8 @@
         ],
         [
             "[When t_c passes by the nursery, you ask {PRONOUN/t_c/object} if {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} seen any more signs of the fox on the territory.]",
-            "Oh! Don't worry, I think we're safe... or at least camp is safe... for now. We found its scent crossing over into o_cClan territory.",
-            "I hope it doesn't come back. I also hope o_cClan doesn't blame us...",
+            "Oh! Don't worry, I think we're safe... or at least camp is safe... for now. We found its scent crossing over into o_c_n territory.",
+            "I hope it doesn't come back. I also hope o_c_n doesn't blame us...",
             "[t_c pauses, staring off into space. One ear flicks anxiously.]",
             "...I'm sure it'll be... fine? I'm sorry, y_c. I don't mean to scare you."
         ]
@@ -2754,7 +2754,7 @@
         [
             "Just to double check, you and that kittypet to the edge of the territory are just friends? Yes, I'm aware and no, I'm not mad. You're allowed to have connections outside the Clan, in fact I think it's a good thing.",
             "However, your loyalty is to this Clan and your clanmates is first and foremost. If you wish to follow your friend into another life, then by all means, that is your choice to make. But you cannot live a paw in each world. It puts yourself, them and c_nClan at risk.",
-            "I just want you to be safe as well as your friend. o_cClan has been lurking around there recently and I worry some warriors might not be as accepting of others as we are. You should tell your friend and find a different place to converse.",
+            "I just want you to be safe as well as your friend. o_c_n has been lurking around there recently and I worry some warriors might not be as accepting of others as we are. You should tell your friend and find a different place to converse.",
             "I'm sure they would be alright to visit here. But that's their call to make. Look after them and look after yourself, y_c. If you ever need to talk to me about... This topic... just ask, I'm always here to help."
         ]
     ],
@@ -3514,7 +3514,7 @@
         [
             "dislike_r_w_cool spontaneously decided to challenge r_a to a tree-climbing contest this morning! As if we weren't in the middle of a border patrol!",
             "But r_a went along with it, of course, because dislike_r_w_cool is dislike_r_w_cool and <i>everycat</i> listens to {PRONOUN/dislike_r_w_cool/object}...",
-            "Ugh! It held up the patrol, and we were close enough to the o_cClan border that some o_cClan cat probably saw them messing around.",
+            "Ugh! It held up the patrol, and we were close enough to the o_c_n border that some o_c_n cat probably saw them messing around.",
             "dislike_r_w_cool never represents our Clan well."
         ]
     ],
@@ -3670,7 +3670,7 @@
             "they_blind"
         ],
         [
-            "A queen in o_cClan was telling their kits a story when I visited their camp with l_n last moon. I can't stop thinking about it.",
+            "A queen in o_c_n was telling their kits a story when I visited their camp with l_n last moon. I can't stop thinking about it.",
             "It was so different from any story I'd heard before, with completely new cats. I really wanted to hear the end, but the queen took the kits inside when they realized we were there.",
             "*sigh* It's silly, but it bothers me that I'll never know how it ends. And even if I see that queen again, I'd never be brave enough to ask."
         ]
@@ -3720,7 +3720,7 @@
         ],
         "join": [
             "[You nod and t_c leaves, but when the patrol gathers later that day you sneak over to join them. None of the other patrol members realize you're not supposed to be there.]",
-            "[The patrol is a success, and while you catch the scent of dogs by the o_cClan border, you don't encounter them. Your Clanmates commend your vigilance!]",
+            "[The patrol is a success, and while you catch the scent of dogs by the o_c_n border, you don't encounter them. Your Clanmates commend your vigilance!]",
             "[When you return to camp, though, you notice t_c watching you. {PRONOUN/t_c/poss/CAP} expression seems almost... hurt, but {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} away before you can meet {PRONOUN/t_c/poss} eyes.]"
         ]
     },
@@ -3732,10 +3732,10 @@
             "they_deputy"
         ],
         [
-            "[You overhear t_c and r_w_unlawful arguing about how to handle a recent conflict with o_cClan.]",
+            "[You overhear t_c and r_w_unlawful arguing about how to handle a recent conflict with o_c_n.]",
             "Yes, it is extremely creative. My answer is still no.",
             "[r_w_unlawful protests, though you can't quite make out {PRONOUN/r_w_unlawful/poss} response.]",
-            "For the last time, r_w_unlawful. We are <i>not</i> filling o_cClan's dirtplace with bees."
+            "For the last time, r_w_unlawful. We are <i>not</i> filling o_c_n's dirtplace with bees."
         ]
     ]
 }
