@@ -3139,13 +3139,14 @@
             "any"
         ],
         [
-            "[t_c makes it obvious that {PRONOUN/t_c/subject} do not want to talk. {PRONOUN/t_c/subject/CAP} {VERB/t_c/huff/huffs} heavily and {VERB/t_c/turn/turns} {PRONOUN/t_c/poss} head away.]"
+            "[t_c makes it obvious that {PRONOUN/t_c/subject} {VERB/t_c/do/does} not want to talk. {PRONOUN/t_c/subject/CAP} {VERB/t_c/huff/huffs} heavily and {VERB/t_c/turn/turns} {PRONOUN/t_c/poss} head away.]"
         ]
     ],
     "they_failingeyesight_SQ3": [
         [
             "they_failingeyesight",
-            "they_any",
+            "they_adult",
+            "you_any",
             "they_neurotic",
             "min_platonic_20",
             "sc_faith"
