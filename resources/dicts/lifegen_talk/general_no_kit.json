@@ -24666,7 +24666,7 @@
         },
         "tell_truth": [
             "You... killed somecat?",
-            "[t_c seems shocked at the news. {PRONOUN/t_c/they/CAP} {VERB/t_c/stumble/stumbles} backwards with uncertainty in {PRONOUN/t_c/poss} eyes.]",
+            "[t_c seems shocked at the news. {PRONOUN/t_c/subject/CAP} {VERB/t_c/stumble/stumbles} backwards with uncertainty in {PRONOUN/t_c/poss} eyes.]",
             "[Before you could say anything else, t_c bolts out of your sight.]"
         ],
         "deny_claims": [
