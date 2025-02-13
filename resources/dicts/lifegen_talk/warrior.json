@@ -207,7 +207,6 @@
             "they_grieving",
             "neutral",
             "dislike",
-            "dead_close",
             "they_blind"
         ],
         [
@@ -239,7 +238,6 @@
         [
             "apprentice",
             "from_mentor",
-            "dead_close",
             "you_grieving",
             "you_blind",
             "they_blind"
@@ -2650,7 +2648,6 @@
             "newborn",
             "from_parent",
             "they_grieving",
-            "dead_close",
             "stable"
         ],
         [
@@ -5523,6 +5520,26 @@
         ],
         [
             "Couldn't you have demonstrated your abilities on a cat from o_c_n or something?"
+        ]
+    ],
+    "assertive_tokit_2": [
+        [
+            "you_kitten",
+            "platonic_like",
+            "assertive",
+            "they_warrior",
+            "they_leader",
+            "they_deputy",
+            "they_apprentice",
+            "they_blind"
+        ],
+        [
+            "Hey, y_c! I brought you back something from my last patrol. Take a look!",
+            "[t_c drops a colorful feather at your paws.]",
+            "You wanna know how I found it? Oh, it's a crazy story. I was on a hunting patrol, when I found this huge bird, and ...",
+            "[t_c regales you with a daring story full of thrills, twists, and turns.]",
+            "... And then I got the feather! Quite the adventure, no?",
+            "Just wait until you're old enough. You'll be having plenty of adventures of your own before you know it!"
         ]
     ]
 }

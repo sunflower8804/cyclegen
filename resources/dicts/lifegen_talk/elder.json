@@ -1823,6 +1823,72 @@
             "And that was how the Clans came to have mediators. They've long since faded, but their legacy will last as long as there are cats who wish for peace."
         ]
     ],
+    "yougrieving_H2": [
+        [
+            "you_grieving",
+            "they_elder",
+            "you_app",
+            "non-related",
+            "min_comfort_30",
+            "min_plike_30"
+        ],
+        [
+            "What is wrong, young one? Missing yg_c?",
+            "Ah, grief... As you get older and death becomes inevitable, grieving becomes a far away memory.",
+            "I remember when plove_d_c died. That day was dreadful, but I found myself laughing at fond memories rather than letting the tears spill.",
+            "Haha, yes, every cat's experience is different, but remember: you'll see {PRONOUN/plove_d_c/object} again.",
+            "Maybe not again in this life, but you'll see {PRONOUN/plove_d_c/object} through the cats around you, the adventures, the earth... I just know it."
+        ]
+    ],
+    "yougrieving_H3": [
+        [
+            "you_grieving",
+            "they_elder",
+            "they_introspective",
+            "non-related",
+            "min_comfort_30",
+            "min_plike_30",
+            "beach",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Grief is like the ocean.",
+            "The waves come and go, crashing along the shore either gently or with force. You can choose to run from it, or learn how to swim.",
+            "Do not let grief drag you to the deepest darkness of yourself."
+        ]
+    ],
+    "yougrieving_H4": [
+        [
+            "you_grieving",
+            "they_elder",
+            "they_introspective",
+            "no_kit",
+            "min_comfort_30",
+            "min_plike_30"
+        ],
+        [
+            "In all my moons of living, I realized that grief is not a burden. Rather, it is really just love.",
+            "It is all the love you want to give, but are unable to.",
+            "It builds and builds until suddenly that unspent love manifests into the tears in your eyes, the quiver in your throat, the heaviness in your chest...",
+            "Love that has no where to go is a grounding yet painful thing."
+        ]
+    ],
+    "yougrieving_H5": [
+        [
+            "you_grieving",
+            "they_elder",
+            "they_introspective",
+            "any",
+            "non-related",
+            "min_comfort_30",
+            "min_plike_30"
+        ],
+        [
+            "I'm sorry for your loss, dear. plike_yg_c was a wonderful cat.",
+            "Let me know if you need anything, okay?"
+        ]
+    ],
     "elder_neg_youshunned_H1": [
         [
             "they_elder",
@@ -1888,20 +1954,51 @@
             "... Well, more than normal."
         ]
     ],
-    "elder_neg_youshunned_H5": [
+    "backinmyday_elder_H2": [
         [
             "they_elder",
-            "you_shunned",
             "they_introspective",
-            "max_platonic_30",
-            "max_trust_30",
-            "they_grandparent",
-            "sc_faith",
+            "you_queen's_apprentice",
+            "hate"
+        ],
+        [
+            "[t_c glances at you with an exhasperated look.]",
+            "What do you need now, y_c? Need me to watch over kittens again?",
+            "I'm not a queen, you know! Ask your mentor or some cat willing. I'm too old to be watching over those little Dark Forest spawns."
+        ]
+    ],
+    "backinmyday_elder_H3": [
+        [
+            "they_elder",
+            "they_introspective",
+            "you_queen's_apprentice",
+            "you_mediator_apprentice",
+            "min_dislike_15",
             "they_blind",
             "you_blind"
         ],
         [
-            "I trust StarClan will punish you enough to realize your mistake."
+            "For most of my long life, I though queens and mediators had it easy. They don't have to hunt for food, guard the Clan, particibate in wars...",
+            "All queens do is watch over kittens and occationally help around the camp. Mediators only solved relationship related problems. A mentally taxing job, but an easy one nonetheless.",
+            "Ever thought warriors were the most undervalued in the Clan? They do so much without a simple thank you.",
+            "Be a good youngling and treasure your fellow apprentices. Tell them how much you care and appreciate them.",
+            "Maybe then the future would look bright."
+        ]
+    ],
+    "backinmyday_elder_H4": [
+        [
+            "they_elder",
+            "they_introspective",
+            "you_queen's_apprentice",
+            "min_dislike_30",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Eh? I asked for a warrior to help me, not a queen.",
+            "[You point out that t_c called you over in the first place.]",
+            "I don't remember doing that.",
+            "r_w!! Help me!"
         ]
     ],
     "elder_gen_theyshunned_rad2": [
@@ -2007,5 +2104,56 @@
             "Ah, y_c? Let me know if there's anything I can help with. I could patch a den, or organize the fresh-kill pile, or... maybe even join a patrol?",
             "Sorry, I don't mean to sound demanding! I just... want to help. I might be an elder, but I'm still a member of c_nClan. I don't want to be a burden."
         ]
+    ],
+    "elder_neg_youshunned_H5": [
+        [
+            "they_elder",
+            "you_shunned",
+            "they_introspective",
+            "max_platonic_30",
+            "max_trust_30",
+            "they_grandparent",
+            "sc_faith",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I trust StarClan will punish you enough to realize your mistake."
+        ]
+    ],
+    "backinmyday_elder_H1": [
+        [
+            "they_elder",
+            "they_introspective",
+            "you_queen's_apprentice",
+            "you_mediator_apprentice",
+            "min_plike_15",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Ahh, young one, has the other apprentices been bothering you lately?",
+            "Hm? Making fun of your role? Gah, younglings these days...",
+            "Back in my day, queens and mediators were the glue that held the Clan's together. A mature bunch, they were.",
+            "The warriors have allowed their ego to be their downfall, but worry not! StarClan always has a way of forcing them to reality. When they need to rely on you, they'll see your worth.",
+            "It is a shame warriors refuse to see it otherwise..."
+        ]
+    ],
+    "backinmyday_elder_H5": [
+        [
+            "they_elder",
+            "you_introspective",
+            "you_queen's_apprentice",
+            "min_dislike_30",
+            "min_trust_15",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[You noticed t_c was struggling to stand up from {PRONOUN/t_c/poss} nest. You decide to approach and help.]",
+            "[As you paw closer, t_c looks at you with judegemntal eyes.]",
+            "[Seems like {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} trust your strength. You guess you'll leave helping t_c up to a warrior instead.]"
+        ]
     ]
+        
 }

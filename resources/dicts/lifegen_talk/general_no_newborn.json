@@ -443,7 +443,6 @@
     "Grief_gen_H1": [
         [
             "they_grieving",
-            "dead_close",
             "platonic_like",
             "no_kit"
         ],
@@ -459,7 +458,6 @@
         [
             "no_kit",
             "they_grieving",
-            "dead_close",
             "mediator",
             "they_blind",
             "platonic_like"
@@ -474,7 +472,6 @@
     "Grief_gen_H2": [
         [
             "they_grieving",
-            "dead_close",
             "no_kit",
             "you_blind",
             "they_older",
@@ -489,7 +486,6 @@
     "Grief_gen_H3": [
         [
             "they_grieving",
-            "dead_close",
             "no_kit",
             "they_blind",
             "assertive",
@@ -882,8 +878,7 @@
             "no_kit",
             "cool",
             "silly",
-            "they_grieving",
-            "dead_close"
+            "they_grieving"
         ],
         [
             "Hey, I got a good one: why can't tg_c make anyone laugh anymore? Because {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} dead serious.",
@@ -1682,7 +1677,7 @@
     ],
     "silly_comfort_1": [
         [
-            "Any",
+            "no_kit",
             "silly",
             "comfort"
         ],
