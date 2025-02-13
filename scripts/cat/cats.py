@@ -1493,7 +1493,7 @@ class Cat:
         """Create a leader ceremony and add it to the history"""
 
         # determine which dict we're pulling from
-        if game.clan.followingsc == False:
+        if not game.clan.followingsc:
             starclan = False
             ceremony_dict = LEAD_CEREMONY_DF
         else:
@@ -1546,17 +1546,19 @@ class Cat:
             kitty = self.fetch_cat(rel.cat_to)
             if kitty and kitty.dead and kitty.status != "newborn":
                 # check where they reside
+                # guides aren't allowed here
+                if kitty == game.clan.instructor or kitty == game.clan.demon:
+                    continue
+                else:
+                    dead_relations.append(rel)
+
                 if starclan:
                     if kitty.ID not in game.clan.starclan_cats:
                         continue
                 else:
                     if kitty.ID not in game.clan.darkforest_cats:
                         continue
-                # guides aren't allowed here
-                if kitty == game.clan.instructor or kitty == game.clan.demon:
-                    continue
-                else:
-                    dead_relations.append(rel)
+                
 
         # sort relations by the strength of their relationship
         dead_relations.sort(
@@ -1579,6 +1581,7 @@ class Cat:
                     continue
                 life_givers.append(rel.cat_to.ID)
                 i += 1
+
         # check amount of life givers, if we need more, then grab from the other dead cats
         if len(life_givers) < 8:
             amount = 8 - len(life_givers)
@@ -1686,7 +1689,7 @@ class Cat:
             if not giver_cat:
                 continue
             trait = giver_cat.personality.trait
-            cluster2, second_cluster2 = get_cluster(trait)
+
             life_list = []
             if game.clan.your_cat.ID == self.ID:
                 victim_in_lifegiver = False
@@ -1770,9 +1773,7 @@ class Cat:
                     i += 1
                 else:
                     print(
-                        f"WARNING: life list had no items for giver #{giver_cat.ID}. Using default life. "
-                        f"If you are a beta tester, please report and ping scribble along with "
-                        f"all the info you can about the giver cat mentioned in this warning."
+                        f"WARNING: life list had no items for giver #{giver_cat.ID}. Using default life."
                     )
                     chosen_life = ceremony_dict["default_life"]
                     break

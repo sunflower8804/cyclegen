@@ -5,36 +5,19 @@ import threading
 import time
 from platform import system
 from random import choice
-from re import search as re_search
-import platform
 import ujson
 import pygame
 import pygame_gui
-from sys import exit
 from re import sub
-from platform import system
-from random import choice
-import logging
-import subprocess
 import random
-
-from re import sub
 from typing import TYPE_CHECKING
-
-import pygame
-import pygame_gui
 from pygame_gui.elements import UIWindow
 from pygame_gui.windows import UIMessageWindow
-
 from scripts.cat.history import History
 from scripts.cat.names import Name
 from scripts.game_structure import image_cache
 from scripts.housekeeping.progress_bar_updater import UIUpdateProgressBar
-from scripts.housekeeping.update import self_update, UpdateChannel, get_latest_version_number
 from scripts.event_class import Single_Event
-from scripts.utility import quit, update_sprite, logger, process_text
-from scripts.game_structure.game_essentials import game
-from scripts.game_structure.ui_elements import UIImageButton, UITextBoxTweaked
 from scripts.game_structure.game_essentials import game
 from scripts.game_structure.screen_settings import MANAGER
 from scripts.game_structure.ui_elements import (
@@ -48,7 +31,6 @@ from scripts.housekeeping.datadir import (
     get_saved_images_dir,
     get_data_dir,
 )
-from scripts.housekeeping.progress_bar_updater import UIUpdateProgressBar
 from scripts.housekeeping.update import (
     self_update,
     UpdateChannel,
@@ -1921,7 +1903,7 @@ class EventLoading(UIWindow):
         self.end_animation = True
         game.switches['window_open'] = False
         super().kill()
-    
+
 class PickPath(UIWindow):
     def __init__(self, last_screen):
         super().__init__(ui_scale(pygame.Rect((220, 175), (400, 250))),
@@ -2026,8 +2008,8 @@ class PickPath(UIWindow):
                 self.kill()
         except:
             print('Error with PickPath window!')
-            
-                
+
+
 class DeathScreen(UIWindow):
     def __init__(self, last_screen):
         super().__init__(ui_scale(pygame.Rect((155, 175), (490, 250))),
@@ -2198,7 +2180,7 @@ class DeathScreen(UIWindow):
                 self.mediator_button4.kill()
                 self.kill()
                 game.all_screens['events screen'].exit_screen()
-                
+
 class DeputyScreen(UIWindow):
     def __init__(self, last_screen):
         super().__init__(ui_scale(pygame.Rect((250, 200), (300, 250))),
@@ -2257,7 +2239,7 @@ class DeputyScreen(UIWindow):
                 self.mediator_button.kill()
                 self.kill()
                 game.all_screens['events screen'].exit_screen()
-                
+
 class NameKitsWindow(UIWindow):
     def __init__(self, last_screen):
         super().__init__(ui_scale(pygame.Rect((250, 200), (300, 150))),
@@ -2321,7 +2303,7 @@ class NameKitsWindow(UIWindow):
             except:
                 print("failure with kits window")
 
-                
+
 class MateScreen(UIWindow):
     def __init__(self, last_screen):
         super().__init__(ui_scale(pygame.Rect((250, 200), (300, 150))),
