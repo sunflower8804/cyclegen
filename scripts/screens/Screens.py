@@ -632,6 +632,7 @@ class Screens:
             theme = self.theme
         if not self.active_bg:
             self.active_bg = "default"
+        blur_bg = None
 
         # make the right string to pull the correct camp image
         try:
