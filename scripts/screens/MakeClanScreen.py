@@ -35,7 +35,6 @@ from ..ui.generate_button import ButtonStyles, get_button_dict
 from ..ui.get_arrow import get_arrow
 from ..ui.icon import Icon
 from scripts.cat.skills import SkillPath, Skill
-from scripts.housekeeping.version import get_version_info
 from scripts.events_module.patrol.patrol import Patrol
 
 
@@ -1659,23 +1658,6 @@ class MakeClanScreen(Screens):
 
         self.elements["version_background"] = UIImageButton(ui_scale(pygame.Rect((725, 672), (700, 27))), "", object_id="blank_button", manager=MANAGER)
         self.elements["version_background"].disable()
-
-        if game.settings['fullscreen']:
-            version_number = pygame_gui.elements.UILabel(
-                pygame.Rect((750, 675), (-1, -1)), get_version_info().version_number[0:8],
-                object_id=get_text_box_theme())
-            # Adjust position
-            version_number.set_position(
-                (1600 - version_number.get_relative_rect()[2] - 8,
-                1400 - version_number.get_relative_rect()[3]))
-        else:
-            version_number = pygame_gui.elements.UILabel(
-                pygame.Rect((350, 325), (-1, -1)), get_version_info().version_number[0:8],
-                object_id=get_text_box_theme())
-            # Adjust position
-            version_number.set_position(
-                (800 - version_number.get_relative_rect()[2] - 8,
-                700 - version_number.get_relative_rect()[3]))
 
         self.refresh_cat_images_and_info2()
         
