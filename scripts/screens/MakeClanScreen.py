@@ -35,7 +35,6 @@ from ..ui.generate_button import ButtonStyles, get_button_dict
 from ..ui.get_arrow import get_arrow
 from ..ui.icon import Icon
 from scripts.cat.skills import SkillPath, Skill
-from scripts.housekeeping.version import get_version_info
 from scripts.events_module.patrol.patrol import Patrol
 
 
@@ -624,21 +623,25 @@ class MakeClanScreen(Screens):
             c_size = 10
         elif self.clan_size == 'large':
             c_size = 20
+        
+        special_ranks = 0
+        special_rank_str = ["medicine cat", "medicine cat apprentice", "mediator", "mediator apprentice", "queen", "queen's apprentice"]
         for a in range(c_size):
             if a in e:
                 game.choose_cats[a] = Cat(status='warrior', biome=None)
             else:
+                
                 status_percentages = [
-                ("medicine cat", 2),         
-                ("medicine cat apprentice", 3),  
-                ("warrior", 35),              
-                ("apprentice", 15),          
-                ("kitten", 5),               
-                ("elder", 5),                
-                ("mediator", 2),             
-                ("mediator apprentice", 3),   
-                ("queen", 2),                
-                ("queen's apprentice", 3),    
+                ("medicine cat", 1),
+                ("medicine cat apprentice", 1),
+                ("warrior", 38),
+                ("apprentice", 15),
+                ("kitten", 5),
+                ("elder", 5),
+                ("mediator", 2),
+                ("mediator apprentice", 3),
+                ("queen", 2),
+                ("queen's apprentice", 3),
                 ]
 
                 status_choices = []
@@ -646,6 +649,13 @@ class MakeClanScreen(Screens):
                     status_choices.extend([status] * percentage)
 
                 s = random.choice(status_choices)
+
+                if special_ranks > 5:
+                    while s in special_rank_str:
+                        s = random.choice(status_choices)
+
+                if s in special_rank_str:
+                    special_ranks += 1
 
                 game.choose_cats[a] = Cat(status=s, biome=None)
 
@@ -1659,23 +1669,6 @@ class MakeClanScreen(Screens):
 
         self.elements["version_background"] = UIImageButton(ui_scale(pygame.Rect((725, 672), (700, 27))), "", object_id="blank_button", manager=MANAGER)
         self.elements["version_background"].disable()
-
-        if game.settings['fullscreen']:
-            version_number = pygame_gui.elements.UILabel(
-                pygame.Rect((750, 675), (-1, -1)), get_version_info().version_number[0:8],
-                object_id=get_text_box_theme())
-            # Adjust position
-            version_number.set_position(
-                (1600 - version_number.get_relative_rect()[2] - 8,
-                1400 - version_number.get_relative_rect()[3]))
-        else:
-            version_number = pygame_gui.elements.UILabel(
-                pygame.Rect((350, 325), (-1, -1)), get_version_info().version_number[0:8],
-                object_id=get_text_box_theme())
-            # Adjust position
-            version_number.set_position(
-                (800 - version_number.get_relative_rect()[2] - 8,
-                700 - version_number.get_relative_rect()[3]))
 
         self.refresh_cat_images_and_info2()
         
