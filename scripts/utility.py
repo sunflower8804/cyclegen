@@ -957,6 +957,7 @@ def create_new_cat(
             # give em a collar if they got one
             if accessory:
                 new_cat.pelt.accessories.append(accessory)
+                new_cat.pelt.inventory.append(accessory)
         # give apprentice aged cat a mentor
         if new_cat.age == "adolescent":
             new_cat.update_mentor()
