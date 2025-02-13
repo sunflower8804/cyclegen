@@ -126,6 +126,8 @@ def test():
         "dep_name": _r,
         "med_name": _r,
         "cat_tag": _r,
+        "tg_c": _r,
+        "yg_c": _r
     }
 
     file_names = [
