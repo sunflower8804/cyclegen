@@ -2347,39 +2347,6 @@
             "Just because we're littermates doesn't mean that I'm some special exception to your shun. You made your choice, and now you have to deal with the consequences."
         ]
     ],
-    "mediator_gen_youshunned_rad2": [
-        [
-            "they_mediator",
-            "they_mediator_apprentice",
-            "you_shunned",
-            "they_unabashed",
-            "they_assertive",
-            "neutral",
-            "you_blind",
-            "they_blind"
-        ],
-        [
-            "y_c, if you needed conflict resolution skills, you could've just asked."
-        ]
-    ],
-    "mediatorapp_youshunned_gen_rad1": [
-        [
-            "they_mediator_apprentice",
-            "from_your_apprentice",
-            "you_mediator",
-            "you_shunned",
-            "murder_success",
-            "max_platonic_15",
-            "they_unabashed",
-            "they_assertive",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Correct me if I'm wrong, but...",
-            "Aren't you supposed to be teaching me how to <i>prevent</i> stuff like this?"
-        ]
-    ],
     "medcat_chaotic_innovator_rad1": [
         [
             "they_medicine_cat",

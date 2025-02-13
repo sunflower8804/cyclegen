@@ -1581,5 +1581,38 @@
             "It was so different from any story I'd heard before, with completely new cats. I really wanted to hear the end, but the queen took the kits inside when they realized we were there.",
             "*sigh* It's silly, but it bothers me that I'll never know how it ends. And even if I see that queen again, I'd never be brave enough to ask."
         ]
+    ],
+    "mediator_gen_youshunned_rad2": [
+        [
+            "they_mediator",
+            "they_mediator_apprentice",
+            "you_shunned",
+            "they_unabashed",
+            "they_assertive",
+            "neutral",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c, if you needed conflict resolution skills, you could've just asked."
+        ]
+    ],
+    "mediatorapp_youshunned_gen_rad1": [
+        [
+            "they_mediator_apprentice",
+            "from_your_apprentice",
+            "you_mediator",
+            "you_shunned",
+            "murder_success",
+            "max_platonic_15",
+            "they_unabashed",
+            "they_assertive",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Correct me if I'm wrong, but...",
+            "Aren't you supposed to be teaching me how to <i>prevent</i> stuff like this?"
+        ]
     ]
 }
