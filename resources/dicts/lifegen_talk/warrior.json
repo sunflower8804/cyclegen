@@ -207,16 +207,15 @@
             "they_grieving",
             "neutral",
             "dislike",
-            "dead_close",
             "they_blind"
         ],
         [
             "[t_c paces back and forth in front of the warrior's den, muttering to {PRONOUN/t_c/self} and flexing {PRONOUN/t_c/poss} claws.]",
-            "{PRONOUN/d_c/subject/CAP}{VERB/d_c/'re/'s} gone, {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} gone, {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} gone ...",
+            "{PRONOUN/tg_c/subject/CAP}{VERB/tg_c/'re/'s} gone, {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} gone, {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} gone ...",
             "... Hey, what are you looking at, huh?",
             "I don't have to take this fox-dung from you! Leave! Go find someone else to gawk at!",
             "[As you leave, you hear t_c resume {PRONOUN/t_c/poss} muttering.]",
-            "... d_c, where are you?"
+            "... tg_c, where are you?"
         ]
     ],
     "brooding_medapp": [
@@ -239,7 +238,6 @@
         [
             "apprentice",
             "from_mentor",
-            "dead_close",
             "you_grieving",
             "you_blind",
             "they_blind"
@@ -247,7 +245,7 @@
         [
             "You were distracted during training today, is everything alright? I know it's been rough lately, but... you're doing very good, you know that?",
             "You caught so much prey, won so many mock battles, gave so much back to the Clan..",
-            "I'm proud of you, little one. I'm sure d_c is too."
+            "I'm proud of you, little one. I'm sure yg_c is too."
         ]
     ],
     "stable_warrior_fight": [
@@ -2650,14 +2648,13 @@
             "newborn",
             "from_parent",
             "they_grieving",
-            "dead_close",
             "stable"
         ],
         [
             "My darling y_c...",
             "[{PRONOUN/t_c/subject/CAP} slowly {VERB/t_c/groom/grooms} your fur and {VERB/t_c/hold/holds} you close. The fur around {PRONOUN/t_c/poss} eyes are damp and {PRONOUN/t_c/poss} eyes are dull.]",
-            "d_c would have loved to meet you... {PRONOUN/d_c/subject/CAP}{VERB/d_c/'re/'s} watching us from StarClan, that I know. {PRONOUN/d_c/subject/CAP} {VERB/t_c/want/wants} me to be the best {PRONOUN/t_c/parent} I can be.",
-            "For {PRONOUN/d_c/object}, I'll try... And for you- I promise I'll do everything I can, y_c..."
+            "tg_c would have loved to meet you... {PRONOUN/tg_c/subject/CAP}{VERB/tg_c/'re/'s} watching us from StarClan, that I know. {PRONOUN/tg_c/subject/CAP} {VERB/t_c/want/wants} me to be the best {PRONOUN/t_c/parent} I can be.",
+            "For {PRONOUN/tg_c/object}, I'll try... And for you- I promise I'll do everything I can, y_c..."
         ]
     ],
     "stable_warriortoKITTEN_1": [
@@ -4890,9 +4887,9 @@
             "they_medicine_cat_apprentice"
         ],
         [
-            "I miss d_c. Every time I go out on patrol, I find myself looking at all the flowers and rocks and plump prey and wishing d_c were still here to see it all.",
-            "...Do you think {PRONOUN/d_c/subject} made it to Silverpelt? Maybe {PRONOUN/d_c/subject} found some other ghost cat and now {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} going on a whimsical adventure to save the world together...",
-            "Haha, yeah. I like that. That sounds like something d_c would do. I hope {PRONOUN/d_c/subject} {VERB/d_c/get/gets} to tell me all about it when we meet again."
+            "I miss plike_d_c. Every time I go out on patrol, I find myself looking at all the flowers and rocks and plump prey and wishing plike_d_c were still here to see it all.",
+            "...Do you think {PRONOUN/plike_d_c/subject} made it to Silverpelt? Maybe {PRONOUN/plike_d_c/subject} found some other ghost cat and now {PRONOUN/plike_d_c/subject}{VERB/plike_d_c/'re/'s} going on a whimsical adventure to save the world together...",
+            "Haha, yeah. I like that. That sounds like something plike_d_c would do. I hope {PRONOUN/plike_d_c/subject} {VERB/plike_d_c/get/gets} to tell me all about it when we meet again."
         ]
     ],
     "youdeaf_R57": [
@@ -5473,6 +5470,26 @@
             "Oh! Hey, y_c. Sorry, I don't really know how to deal with... uh...",
             "[t_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
             "Um... here! Play with that for a bit, maybe?"
+        ]
+    ],
+    "assertive_tokit_2": [
+        [
+            "you_kitten",
+            "platonic_like",
+            "assertive",
+            "they_warrior",
+            "they_leader",
+            "they_deputy",
+            "they_apprentice",
+            "they_blind"
+        ],
+        [
+            "Hey, y_c! I brought you back something from my last patrol. Take a look!",
+            "[t_c drops a colorful feather at your paws.]",
+            "You wanna know how I found it? Oh, it's a crazy story. I was on a hunting patrol, when I found this huge bird, and ...",
+            "[t_c regales you with a daring story full of thrills, twists, and turns.]",
+            "... And then I got the feather! Quite the adventure, no?",
+            "Just wait until you're old enough. You'll be having plenty of adventures of your own before you know it!"
         ]
     ]
 }

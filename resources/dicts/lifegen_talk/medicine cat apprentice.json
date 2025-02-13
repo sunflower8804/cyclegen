@@ -590,15 +590,13 @@
             "introspective",
             "stable",
             "silly",
-            "platonic_like",
-            "trust",
-            "comfort",
-            "dead_close",
+            "min_plike_20",
+            "min_comfort_15",
             "you_blind",
             "they_blind"
         ],
         [
-            "I ... I couldn't save d_c ...",
+            "I ... I couldn't save plike_d_c ...",
             "Maybe if I'd just been a little faster, or used a different combination of herbs, then ...",
             "Is it too late to switch to a warrior apprentice? I ... I don't know if I'm fit to be a medicine cat.",
             "Not anymore."
@@ -610,7 +608,6 @@
             "assertive",
             "you_injured",
             "you_ill",
-            "dead_close",
             "you_blind",
             "they_blind"
         ],
@@ -645,14 +642,13 @@
             "upstanding",
             "stable",
             "from_your_apprentice",
-            "dead_close",
             "you_blind",
             "they_blind"
         ],
         [
             "y_c?",
-            "d_c isn't really gone, right? We - We can still save {PRONOUN/d_c/object}?",
-            "We can still save {PRONOUN/d_c/object}, right, y_c? Just - Just let me save {PRONOUN/d_c/object}. Please. If you'll just let me, I - I can - Oh, StarClan -",
+            "plike_d_c isn't really gone, right? We - We can still save {PRONOUN/plike_d_c/object}?",
+            "We can still save {PRONOUN/plike_d_c/object}, right, y_c? Just - Just let me save {PRONOUN/plike_d_c/object}. Please. If you'll just let me, I - I can - Oh, StarClan -",
             "[t_c breaks, completely inconsolable. {PRONOUN/t_c/poss/CAP} sobs ... you never knew a sound so empty and heartbreaking could come from a cat so young.]",
             "[You press {PRONOUN/t_c/object} into your shoulder, hoping to guide {PRONOUN/t_c/object} through the heartbreak of losing a patient, a heartbreak you've felt yourself too many times.]"
         ]
@@ -2005,9 +2001,9 @@
             "they_medicine_cat_apprentice"
         ],
         [
-            "I miss d_c. Every time I go out on patrol, I find myself looking at all the flowers and rocks and plump prey and wishing d_c were still here to see it all.",
-            "...Do you think {PRONOUN/d_c/subject} made it to Silverpelt? Maybe {PRONOUN/d_c/subject} found some other ghost cat and now {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} going on a whimsical adventure to save the world together...",
-            "Haha, yeah. I like that. That sounds like something d_c would do. I hope {PRONOUN/d_c/subject} {VERB/d_c/get/gets} to tell me all about it when we meet again."
+            "I miss plike_d_c. Every time I go out on patrol, I find myself looking at all the flowers and rocks and plump prey and wishing plike_d_c were still here to see it all.",
+            "...Do you think {PRONOUN/plike_d_c/subject} made it to Silverpelt? Maybe {PRONOUN/plike_d_c/subject} found some other ghost cat and now {PRONOUN/plike_d_c/subject}{VERB/plike_d_c/'re/'s} going on a whimsical adventure to save the world together...",
+            "Haha, yeah. I like that. That sounds like something plike_d_c would do. I hope {PRONOUN/plike_d_c/subject} {VERB/plike_d_c/get/gets} to tell me all about it when we meet again."
         ]
     ],
     "brooding_toqueen_AJ": [
@@ -2211,10 +2207,10 @@
             "you_blind"
         ],
         [
-            "Is it strange that I'm afraid to see d_c at the moonpool?",
+            "Is it strange that I'm afraid to see tg_c at the moonpool?",
             "Not- not afraid, necessarily. But... I'm worried about how I'll react. A medicine cat shouldn't be bawling their eyes out at the half-moon meeting.",
-            "Or worse, will I freeze up? Forget what to say? Oh, StarClan, would I forget the prophecy {PRONOUN/d_c/subject}'d bless c_nClan with?",
-            "[You gently remind t_c that {PRONOUN/t_c/subject}'ll do great, even with d_c present.]",
+            "Or worse, will I freeze up? Forget what to say? Oh, StarClan, would I forget the prophecy {PRONOUN/tg_c/subject}'d bless c_nClan with?",
+            "[You gently remind t_c that {PRONOUN/t_c/subject}'ll do great, even with tg_c present.]",
             "Do you think so? I hope you're right, y_c."
         ]
     ],

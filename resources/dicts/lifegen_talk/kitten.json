@@ -1069,7 +1069,7 @@
     "introspective_kit_3": [
         [
             "kitten",
-            "Introspective",
+            "introspective",
             "dislike",
             "they_blind",
             "you_blind",
@@ -1439,28 +1439,26 @@
             "Any",
             "assertive",
             "they_grieving",
-            "dead_close",
             "they_blind",
             "you_blind"
         ],
         [
-            "*Sniffle* What happened to d_c? I miss {PRONOUN/d_c/object} ...",
-            "{PRONOUN/d_c/subject/CAP}{VERB/d_c/'re/'s} gone?",
-            "Well, when {VERB/d_c/are/is} {PRONOUN/d_c/subject} coming back?"
+            "*Sniffle* What happened to tg_c? I miss {PRONOUN/tg_c/object} ...",
+            "{PRONOUN/tg_c/subject/CAP}{VERB/tg_c/'re/'s} gone?",
+            "Well, when {VERB/tg_c/are/is} {PRONOUN/tg_c/subject} coming back?"
         ]
     ],
     "assertivekitten_deadclose_2": [
         [
             "Any",
             "assertive",
-            "they_grieving",
-            "dead_close"
+            "they_grieving"
         ],
         [
             "[You tell t_c that you like {PRONOUN/t_c/poss} pretty feather.]",
-            "Thanks!!! It's for d_c!",
-            "Could you help me put it in {PRONOUN/d_c/poss} nest?",
-            "I'm hoping that, when {PRONOUN/d_c/subject} {VERB/d_c/see/sees} it in StarClan, {PRONOUN/d_c/subject}'ll like it so much that {PRONOUN/d_c/subject}'ll come back down to c_nClan, and we can play together again!"
+            "Thanks!!! It's for tg_c!",
+            "Could you help me put it in {PRONOUN/tg_c/poss} nest?",
+            "I'm hoping that, when {PRONOUN/tg_c/subject} {VERB/tg_c/see/sees} it in StarClan, {PRONOUN/tg_c/subject}'ll like it so much that {PRONOUN/tg_c/subject}'ll come back down to c_nClan, and we can play together again!"
         ]
     ],
     "assertivekitten_deadclose_3": [
@@ -1468,19 +1466,17 @@
             "Any",
             "assertive",
             "they_grieving",
-            "dead_close",
             "they_blind",
             "you_blind"
         ],
         [
-            "*Sniffle* What happened to d_c? I miss {PRONOUN/d_c/object} ...",
-            "{PRONOUN/d_c/subject/CAP}{VERB/d_c/'re/'s} gone?",
-            "Well, when {VERB/d_c/are/is} {PRONOUN/d_c/subject} coming back?"
+            "*Sniffle* What happened to tg_c? I miss {PRONOUN/tg_c/object} ...",
+            "{PRONOUN/tg_c/subject/CAP}{VERB/tg_c/'re/'s} gone?",
+            "Well, when {VERB/tg_c/are/is} {PRONOUN/tg_c/subject} coming back?"
         ]
     ],
     "theygrief_1": [
         [
-            "dead_close",
             "they_grieving",
             "no_kit",
             "assertive",
@@ -1489,14 +1485,13 @@
             "you_blind"
         ],
         [
-            "d_c's not really gone, right?",
-            "Any second now, {PRONOUN/d_c/subject}'ll come bounding in here, ready to make me laugh ...",
+            "tg_c's not really gone, right?",
+            "Any second now, {PRONOUN/tg_c/subject}'ll come bounding in here, ready to make me laugh ...",
             "Any second ..."
         ]
     ],
     "theygrief_1_1": [
         [
-            "dead_close",
             "they_grieving",
             "any",
             "they_blind",
@@ -1504,7 +1499,7 @@
             "you_deaf"
         ],
         [
-            "[t_c is curled up in {PRONOUN/t_c/poss} nest, clinging to a scrap of fur that d_c left behind ...]",
+            "[t_c is curled up in {PRONOUN/t_c/poss} nest, clinging to a scrap of fur that tg_c left behind ...]",
             "[Clearly {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} wanna talk, so you decide to give {PRONOUN/t_c/object} some privacy.]"
         ]
     ],
@@ -1512,7 +1507,6 @@
         [
             "any",
             "introspective",
-            "dead_close",
             "you_grieving",
             "they_blind",
             "you_blind",
@@ -1522,19 +1516,18 @@
         [
             "[t_c just quietly sat down next to you.]",
             "...",
-            "[It's nice to be able to see a cat without them asking you about d_c.]"
+            "[It's nice to be able to see a cat without them asking you about tg_c.]"
         ]
     ],
     "theygrief_2": [
         [
-            "dead_close",
             "they_grieving",
             "any",
             "they_deaf",
             "you_deaf"
         ],
         [
-            "[t_c's gaze is fixed on the corner of camp where d_c used to spend the most time.]",
+            "[t_c's gaze is fixed on the corner of camp where tg_c used to spend the most time.]",
             "[You wonder what {PRONOUN/t_c/subject} {VERB/t_c/think/thinks} is gonna happen ...]"
         ]
     ],
@@ -1561,7 +1554,7 @@
         [
             "[t_c shifts and twitches restlessly in {PRONOUN/t_c/poss} sleep. {PRONOUN/t_c/subject/CAP} must be having a nightmare.]",
             "Mmf ... What are you ... No ...",
-            "d_c ... Where are you going? Come back!",
+            "tg_c ... Where are you going? Come back!",
             "I won't let them take you -",
             "AH!",
             "[t_c sits up, panting in {PRONOUN/t_c/poss} nest.]",
@@ -1571,7 +1564,6 @@
     ],
     "sweetgrieving_2": [
         [
-            "dead_close",
             "they_grieving",
             "trust",
             "comfort",
@@ -1582,12 +1574,11 @@
         [
             "[t_c walks into your den, staring at you as tears brim from {PRONOUN/t_c/poss} eyes.]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/rest/rests} {PRONOUN/t_c/poss} head across your shoulders, closing {PRONOUN/t_c/poss} eyes and sinking {PRONOUN/t_c/poss} weight into you, {PRONOUN/t_c/poss} voice quivering from pain and grief,]",
-            "Why did d_c have to go..."
+            "Why did tg_c have to go..."
         ]
     ],
     "sweetgrieving_3": [
         [
-            "dead_close",
             "they_grieving",
             "trust",
             "comfort",
@@ -1597,13 +1588,12 @@
         ],
         [
             "[Silently, t_c is staring at the stars, {PRONOUN/t_c/poss} gaze swirling with beauty, yet pain.]",
-            "I hope d_c is happy up there...",
+            "I hope tg_c is happy up there...",
             "[That is the only thing t_c says for a long time, just staring up at the sky.]"
         ]
     ],
     "sweetgrieving_4": [
         [
-            "dead_close",
             "they_grieving",
             "dislike",
             "sweet",
@@ -1613,12 +1603,11 @@
         ],
         [
             "[Out of seemingly nowhere, t_c breaks down crying. {PRONOUN/t_c/subject/CAP} {VERB/t_c/press/presses} {PRONOUN/t_c/poss} head into your shoulder, mumbling out a soft mew.]",
-            "I-I'm sorry... I know we... don't get along... I just.. I- I need this.. I... I miss d_c..."
+            "I-I'm sorry... I know we... don't get along... I just.. I- I need this.. I... I miss tg_c..."
         ]
     ],
     "sweetgrieving_6": [
         [
-            "dead_close",
             "they_grieving",
             "any",
             "they_blind",
@@ -1626,7 +1615,7 @@
             "you_deaf"
         ],
         [
-            "[t_c seems to be cleaning out a nest... d_c's nest...]",
+            "[t_c seems to be cleaning out a nest... tg_c's nest...]",
             "[You think it's best to leave {PRONOUN/t_c/object} to it.]"
         ]
     ],
@@ -1634,7 +1623,6 @@
         [
             "any",
             "introspective",
-            "dead_close",
             "they_grieving",
             "they_deaf",
             "you_deaf"
@@ -1648,7 +1636,6 @@
         [
             "any",
             "introspective",
-            "dead_close",
             "they_grieving",
             "they_deaf",
             "you_deaf"
@@ -1656,7 +1643,7 @@
         [
             "...",
             "[You look over at t_c wandering around, desperately looking for something.]",
-            "[... {VERB/t_c/Are/Is} {PRONOUN/t_c/subject} looking for d_c?]",
+            "[... {VERB/t_c/Are/Is} {PRONOUN/t_c/subject} looking for tg_c?]",
             "[You decide to lay down with {PRONOUN/t_c/object}, to provide some comfort in the only way you can.]",
             "...",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/curl/curls} up next to you, but {VERB/t_c/don't/doesn't} fall asleep.]"
@@ -1665,7 +1652,6 @@
     "theygrief_6": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "you_blind"
@@ -1677,28 +1663,26 @@
     "theygrief_8": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "they_deaf",
             "you_deaf"
         ],
         [
-            "[t_c clutches one of d_c's trinkets close to {PRONOUN/t_c/poss} chest.]",
+            "[t_c clutches one of tg_c_treasure's trinkets close to {PRONOUN/t_c/poss} chest.]",
             "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} gonna have to throw it out eventually ... it's starting to get a little concerning.]"
         ]
     ],
     "theygrief_10": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "you_blind"
         ],
         [
             "[t_c seems to be whispering to {PRONOUN/t_c/self} in {PRONOUN/t_c/poss} nest.]",
-            "Please, d_c, if you can hear this, send me a sign ...",
+            "Please, tg_c, if you can hear this, send me a sign ...",
             "Something. Anything. I don't care.",
             "[For a moment, the den is completely silent and still. The air is thick with anticipation.]",
             "[... t_c chokes back a sob and curls deeper into {PRONOUN/t_c/poss} nest.]"
@@ -1707,20 +1691,18 @@
     "theygrief_11": [
         [
             "any",
-            "dead_close",
             "they_grieving"
         ],
         [
             "How can I get a StarClan cat to appear in my dreams? Do you know?",
             "Why do I ask?",
             "Uhm ...",
-            "[t_c's gaze flicks towards d_c's former favorite part of camp.]"
+            "[t_c's gaze flicks towards tg_c's former favorite part of camp.]"
         ]
     ],
     "theygrief_12": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "they_deaf",
@@ -1734,27 +1716,25 @@
     "theygrief_13": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "they_deaf",
             "you_deaf"
         ],
         [
-            "[While taking a nap, t_c instinctually reaches for d_c's nest with {PRONOUN/t_c/poss} paw.]",
-            "[Or, at least, where d_c's nest used to be ...]",
+            "[While taking a nap, t_c instinctually reaches for tg_c's nest with {PRONOUN/t_c/poss} paw.]",
+            "[Or, at least, where tg_c's nest used to be ...]",
             "[You decide not to wake {PRONOUN/t_c/object}, hoping {PRONOUN/t_c/poss} dream takes place in a kinder reality than this one.]"
         ]
     ],
     "theygrief_14_1": [
         [
             "any",
-            "dead_close",
             "they_grieving"
         ],
         [
             "[In the middle of the night, t_c wakes all of c_nClan with a fur-raising screech.]",
-            "d_c!!!",
+            "tg_c!!!",
             "Where ... What ...",
             "Uh ...",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} around at {PRONOUN/t_c/poss} Clanmates guiltily. There's no need to explain. Everycat knows what happened.]",
@@ -1764,15 +1744,14 @@
     "theygrief_14": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "you_blind"
         ],
         [
-            "[You think t_c is actually taking d_c's death pretty well, all things considered ...]",
+            "[You think t_c is actually taking tg_c's death pretty well, all things considered ...]",
             "[... Until {PRONOUN/t_c/subject} start sobbing uncontrollably in the middle of the bird {PRONOUN/t_c/subject} {VERB/t_c/were/was} eating.]",
-            "This used to be d_c's fuh - favorite - *Gasp*"
+            "This used to be tg_c's fuh - favorite - *Gasp*"
         ]
     ],
     "silly_kit_sticks": [
@@ -2989,7 +2968,7 @@
         ],
         [
             "[You hear a trembling mew and feel a small paw tugging at your fur. You turn and find yourself staring down into t_c's tear-filled eyes.]",
-            "y_c? H-how can I be the best c_nClan cat without d_c? W-what do I do?"
+            "y_c? H-how can I be the best c_nClan cat without tg_c? W-what do I do?"
         ]
     ],
     "upstanding_kit7": [
@@ -3433,7 +3412,6 @@
     "sweet_kit_32": [
         [
             "Any",
-            "talk_dead",
             "sweet",
             "you_blind"
         ],
@@ -3676,36 +3654,33 @@
         [
             "any",
             "they_grieving",
-            "dead_close",
             "they_kitten",
             "they_blind",
             "you_blind"
         ],
         [
-            "*Sniffle* What happened to d_c? I miss {PRONOUN/d_c/object} ...",
-            "{PRONOUN/d_c/subject/CAP}{VERB/d_c/'re/'s} gone?",
-            "Well, when {VERB/t_c/are/is} {PRONOUN/d_c/subject} coming back?"
+            "*Sniffle* What happened to tg_c? I miss {PRONOUN/tg_c/object} ...",
+            "{PRONOUN/tg_c/subject/CAP}{VERB/tg_c/'re/'s} gone?",
+            "Well, when {VERB/t_c/are/is} {PRONOUN/tg_c/subject} coming back?"
         ]
     ],
     "kit_grief1": [
         [
             "any",
             "they_grieving",
-            "dead_close",
             "they_kitten"
         ],
         [
             "[You tell t_c that you like {PRONOUN/t_c/poss} pretty feather.]",
-            "Thanks!!! It's for d_c!",
-            "Could you help me put it in {PRONOUN/d_c/poss} nest?",
-            "I'm hoping that, when {PRONOUN/d_c/subject} {VERB/d_c/see/sees} it in StarClan, {PRONOUN/d_c/subject}'ll like it so much that {PRONOUN/d_c/subject}'ll come back down to c_nClan, and we can play together again!"
+            "Thanks!!! It's for tg_c!",
+            "Could you help me put it in {PRONOUN/tg_c/poss} nest?",
+            "I'm hoping that, when {PRONOUN/tg_c/subject} {VERB/tg_c/see/sees} it in StarClan, {PRONOUN/tg_c/subject}'ll like it so much that {PRONOUN/tg_c/subject}'ll come back down to c_nClan, and we can play together again!"
         ]
     ],
     "kit_grief2": [
         [
             "any",
             "they_grieving",
-            "dead_close",
             "they_kitten",
             "assertive",
             "brooding",
@@ -3718,7 +3693,7 @@
         [
             "[t_c is yelling at a hapless r_q, who tries desperately to manage the situation.]",
             "No, you don't understand! Why aren't you listening to me?",
-            "d_c couldn't have gone up to StarClan, because d_c would never leave me behind like that!",
+            "tg_c couldn't have gone up to StarClan, because tg_c would never leave me behind like that!",
             "It's not fair!"
         ]
     ],
@@ -3726,7 +3701,6 @@
         [
             "any",
             "they_grieving",
-            "dead_close",
             "they_kitten",
             "neurotic",
             "sweet",
@@ -3735,7 +3709,7 @@
         ],
         [
             "[t_c clings to a scrap of moss, claws unsheathed, eyes wide and fearful.]",
-            "The things that got d_c aren't gonna come and get me, too ... right?"
+            "The things that got tg_c aren't gonna come and get me, too ... right?"
         ]
     ],
     "kittten_condition": [
@@ -4521,8 +4495,8 @@
             "you_blind"
         ],
         [
-            "A StarClan cat? Are you taking me too? Where's d_c?",
-            "No? Oh. Well, can you get d_c for me? I want to see {PRONOUN/d_c/object}. Please."
+            "A StarClan cat? Are you taking me too? Where's tg_c?",
+            "No? Oh. Well, can you get tg_c for me? I want to see {PRONOUN/tg_c/object}. Please."
         ]
     ],
     "dead_theygrieving5": [
@@ -5825,8 +5799,8 @@
             "you_blind"
         ],
         [
-            "I'm sorry {PRONOUN/d_c/subject} had to come to StarClan so soon.",
-            "But you can talk to us, can't you? Go find them, it'll be like {PRONOUN/d_c/subject} never left!",
+            "I'm sorry {PRONOUN/yg_c/subject} had to come to StarClan so soon.",
+            "But you can talk to us, can't you? Go find them, it'll be like {PRONOUN/yg_c/subject} never left!",
             "[You don't know how to explain that it's not the same.]"
         ]
     ],
@@ -6452,7 +6426,6 @@
             "they_sc",
             "kitten",
             "you_grieving",
-            "dead_close",
             "they_kitten"
         ],
         [
@@ -6466,7 +6439,6 @@
             "they_df",
             "kitten",
             "you_grieving",
-            "dead_close",
             "they_kitten",
             "they_blind",
             "you_blind",
@@ -6483,7 +6455,6 @@
             "they_df",
             "kitten",
             "you_grieving",
-            "dead_close",
             "they_kitten",
             "grievingthem",
             "they_blind",
@@ -6848,8 +6819,8 @@
         ],
         [
             "*Sniff* I... I don't get it, y_c.",
-            "What does everycat mean, d_c's gone? What do they mean, {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} not coming back?",
-            "d_c was s'posed to stay! Forever and ever and ever."
+            "What does everycat mean, tg_c's gone? What do they mean, {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} not coming back?",
+            "tg_c was s'posed to stay! Forever and ever and ever."
         ]
     ],
     "neurotic_theygrieving_SQ8": [
@@ -6861,8 +6832,8 @@
             "min_platonic_20"
         ],
         [
-            "d_c said everything would be okay, s'long as we were together.",
-            "But now {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} gone! That... means things aren't gonna be okay anymore, right?"
+            "tg_c said everything would be okay, s'long as we were together.",
+            "But now {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} gone! That... means things aren't gonna be okay anymore, right?"
         ]
     ],
     "neurotic_theygrieving_SQ9": [
@@ -6875,8 +6846,8 @@
         ],
         [
             "[t_c's hiding under a pile of moss in the back of the nursery. You try to coax {PRONOUN/t_c/object} out with a feather and the best piece of prey.]",
-            "*sniffle* I don't wanna come out. If d_c's not there, then I don't ever wanna come out.",
-            "If... if {PRONOUN/d_c/subject}{VERB/d_c/'re/'s} not here, who's gonna protect me from the rogues, and the Dark Forest, and the monsters, and..."
+            "*sniffle* I don't wanna come out. If tg_c's not there, then I don't ever wanna come out.",
+            "If... if {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} not here, who's gonna protect me from the rogues, and the Dark Forest, and the monsters, and..."
         ]
     ],
     "about_unlawful_SQ5": [
@@ -7542,7 +7513,7 @@
         ],
         [
             "[One night, t_c curls up beside you and whispers about the starry-pelted cats {PRONOUN/t_c/object} sometimes {VERB/t_c/see/sees} around camp. You listen in wonder.]",
-            "d_c said I'm 'star-touched', and that most living cats can't see StarClan.  {PRONOUN/d_c/object/CAP} said that even medicine cats can't see them!",
+            "d_c said I'm 'star-touched', and that most living cats can't see StarClan. {PRONOUN/d_c/object/CAP} said that even medicine cats can't see them!",
             "They're all nice to me, but I don't wanna be different. And does that mean I've gotta become a medicine cat?"
         ]
     ],
@@ -7898,7 +7869,7 @@
             "y_c...",
             "[t_c paws at your foreleg, {PRONOUN/t_c/poss} eyes filled with tears.]",
             "r_e says that our loved ones leave sometimes and we should value those who are still standing with us.",
-            "Did d_c leave us? Did... did {PRONOUN/d_c/subject} become a star?"
+            "Did tg_c leave us? Did... did {PRONOUN/tg_c/subject} become a star?"
         ]
     ],
     "ghost_H1": [
