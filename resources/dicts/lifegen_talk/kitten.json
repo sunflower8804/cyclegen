@@ -1069,7 +1069,7 @@
     "introspective_kit_3": [
         [
             "kitten",
-            "Introspective",
+            "introspective",
             "dislike",
             "they_blind",
             "you_blind",
@@ -1439,22 +1439,20 @@
             "Any",
             "assertive",
             "they_grieving",
-            "dead_close",
             "they_blind",
             "you_blind"
         ],
         [
-            "*Sniffle* What happened to tg_c? I miss {PRONOUN/d_c/object} ...",
-            "{PRONOUN/d_c/subject/CAP}{VERB/d_c/'re/'s} gone?",
-            "Well, when {VERB/d_c/are/is} {PRONOUN/d_c/subject} coming back?"
+            "*Sniffle* What happened to tg_c? I miss {PRONOUN/tg_c/object} ...",
+            "{PRONOUN/tg_c/subject/CAP}{VERB/tg_c/'re/'s} gone?",
+            "Well, when {VERB/tg_c/are/is} {PRONOUN/tg_c/subject} coming back?"
         ]
     ],
     "assertivekitten_deadclose_2": [
         [
             "Any",
             "assertive",
-            "they_grieving",
-            "dead_close"
+            "they_grieving"
         ],
         [
             "[You tell t_c that you like {PRONOUN/t_c/poss} pretty feather.]",
@@ -1468,7 +1466,6 @@
             "Any",
             "assertive",
             "they_grieving",
-            "dead_close",
             "they_blind",
             "you_blind"
         ],
@@ -1480,7 +1477,6 @@
     ],
     "theygrief_1": [
         [
-            "dead_close",
             "they_grieving",
             "no_kit",
             "assertive",
@@ -1496,7 +1492,6 @@
     ],
     "theygrief_1_1": [
         [
-            "dead_close",
             "they_grieving",
             "any",
             "they_blind",
@@ -1512,7 +1507,6 @@
         [
             "any",
             "introspective",
-            "dead_close",
             "you_grieving",
             "they_blind",
             "you_blind",
@@ -1527,7 +1521,6 @@
     ],
     "theygrief_2": [
         [
-            "dead_close",
             "they_grieving",
             "any",
             "they_deaf",
@@ -1571,7 +1564,6 @@
     ],
     "sweetgrieving_2": [
         [
-            "dead_close",
             "they_grieving",
             "trust",
             "comfort",
@@ -1587,7 +1579,6 @@
     ],
     "sweetgrieving_3": [
         [
-            "dead_close",
             "they_grieving",
             "trust",
             "comfort",
@@ -1603,7 +1594,6 @@
     ],
     "sweetgrieving_4": [
         [
-            "dead_close",
             "they_grieving",
             "dislike",
             "sweet",
@@ -1618,7 +1608,6 @@
     ],
     "sweetgrieving_6": [
         [
-            "dead_close",
             "they_grieving",
             "any",
             "they_blind",
@@ -1634,7 +1623,6 @@
         [
             "any",
             "introspective",
-            "dead_close",
             "they_grieving",
             "they_deaf",
             "you_deaf"
@@ -1648,7 +1636,6 @@
         [
             "any",
             "introspective",
-            "dead_close",
             "they_grieving",
             "they_deaf",
             "you_deaf"
@@ -1665,7 +1652,6 @@
     "theygrief_6": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "you_blind"
@@ -1677,7 +1663,6 @@
     "theygrief_8": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "they_deaf",
@@ -1691,7 +1676,6 @@
     "theygrief_10": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "you_blind"
@@ -1707,7 +1691,6 @@
     "theygrief_11": [
         [
             "any",
-            "dead_close",
             "they_grieving"
         ],
         [
@@ -1720,7 +1703,6 @@
     "theygrief_12": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "they_deaf",
@@ -1734,7 +1716,6 @@
     "theygrief_13": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "they_deaf",
@@ -1749,12 +1730,11 @@
     "theygrief_14_1": [
         [
             "any",
-            "dead_close",
             "they_grieving"
         ],
         [
             "[In the middle of the night, t_c wakes all of c_nClan with a fur-raising screech.]",
-            "d_c!!!",
+            "tg_c!!!",
             "Where ... What ...",
             "Uh ...",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} around at {PRONOUN/t_c/poss} Clanmates guiltily. There's no need to explain. Everycat knows what happened.]",
@@ -1764,7 +1744,6 @@
     "theygrief_14": [
         [
             "any",
-            "dead_close",
             "they_grieving",
             "they_blind",
             "you_blind"
@@ -3433,7 +3412,6 @@
     "sweet_kit_32": [
         [
             "Any",
-            "talk_dead",
             "sweet",
             "you_blind"
         ],
@@ -3676,7 +3654,6 @@
         [
             "any",
             "they_grieving",
-            "dead_close",
             "they_kitten",
             "they_blind",
             "you_blind"
@@ -3691,7 +3668,6 @@
         [
             "any",
             "they_grieving",
-            "dead_close",
             "they_kitten"
         ],
         [
@@ -3705,7 +3681,6 @@
         [
             "any",
             "they_grieving",
-            "dead_close",
             "they_kitten",
             "assertive",
             "brooding",
@@ -3726,7 +3701,6 @@
         [
             "any",
             "they_grieving",
-            "dead_close",
             "they_kitten",
             "neurotic",
             "sweet",
@@ -5825,8 +5799,8 @@
             "you_blind"
         ],
         [
-            "I'm sorry {PRONOUN/d_c/subject} had to come to StarClan so soon.",
-            "But you can talk to us, can't you? Go find them, it'll be like {PRONOUN/d_c/subject} never left!",
+            "I'm sorry {PRONOUN/yg_c/subject} had to come to StarClan so soon.",
+            "But you can talk to us, can't you? Go find them, it'll be like {PRONOUN/yg_c/subject} never left!",
             "[You don't know how to explain that it's not the same.]"
         ]
     ],
@@ -6452,7 +6426,6 @@
             "they_sc",
             "kitten",
             "you_grieving",
-            "dead_close",
             "they_kitten"
         ],
         [
@@ -6466,7 +6439,6 @@
             "they_df",
             "kitten",
             "you_grieving",
-            "dead_close",
             "they_kitten",
             "they_blind",
             "you_blind",
@@ -6483,7 +6455,6 @@
             "they_df",
             "kitten",
             "you_grieving",
-            "dead_close",
             "they_kitten",
             "grievingthem",
             "they_blind",
@@ -7542,7 +7513,7 @@
         ],
         [
             "[One night, t_c curls up beside you and whispers about the starry-pelted cats {PRONOUN/t_c/object} sometimes {VERB/t_c/see/sees} around camp. You listen in wonder.]",
-            "d_c said I'm 'star-touched', and that most living cats can't see StarClan.  {PRONOUN/d_c/object/CAP} said that even medicine cats can't see them!",
+            "d_c said I'm 'star-touched', and that most living cats can't see StarClan. {PRONOUN/d_c/object/CAP} said that even medicine cats can't see them!",
             "They're all nice to me, but I don't wanna be different. And does that mean I've gotta become a medicine cat?"
         ]
     ],

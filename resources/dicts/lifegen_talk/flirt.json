@@ -3060,7 +3060,6 @@
             "Any",
             "they_grieving",
             "reject",
-            "dead_close",
             "they_blind",
             "you_blind",
             "flirt"
@@ -3184,7 +3183,6 @@
         [
             "Any",
             "they_grieving",
-            "dead_close",
             "reject",
             "they_blind",
             "you_blind",
@@ -3192,7 +3190,7 @@
         ],
         [
             "[t_c opens {PRONOUN/t_c/poss} maws and snarls at you.]",
-            "How <b>dare</b> you y_c. How dare you think you can replace tg_c!"
+            "How <b>dare</b> you y_c. How dare you think you can replace rlove_tg_c!"
         ]
     ],
     "grieving_flirt_reuse11": [
@@ -3315,7 +3313,6 @@
             "Any",
             "they_grieving",
             "you_grieving",
-            "dead_close",
             "reject",
             "they_blind",
             "you_blind",
@@ -3323,7 +3320,7 @@
         ],
         [
             "[t_c opens {PRONOUN/t_c/poss} maws and snarls at you.]",
-            "How <b>dare</b> you y_c. How dare you think you can replace tg_c!"
+            "How <b>dare</b> you y_c. How dare you think you can replace rlove_tg_c!"
         ]
     ],
     "grieving_flirt_reuse432": [
