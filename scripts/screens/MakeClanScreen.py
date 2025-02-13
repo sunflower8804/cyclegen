@@ -708,6 +708,15 @@ class MakeClanScreen(Screens):
         elif event.ui_element == self.tabs["tab6"]:
             self.selected_camp_tab = 6
             self.refresh_selected_camp()
+        elif event.ui_element == self.tabs["tab7"]:
+            self.selected_camp_tab = 7
+            self.refresh_selected_camp()
+        elif event.ui_element == self.tabs["tab8"]:
+            self.selected_camp_tab = 8
+            self.refresh_selected_camp()
+        elif event.ui_element == self.tabs["tab9"]:
+            self.selected_camp_tab = 9
+            self.refresh_selected_camp()
         elif event.ui_element == self.tabs["newleaf_tab"]:
             self.selected_season = "Newleaf"
             self.refresh_text_and_buttons()
@@ -1075,6 +1084,9 @@ class MakeClanScreen(Screens):
         self.tabs["tab4"].kill()
         self.tabs["tab5"].kill()
         self.tabs["tab6"].kill()
+        self.tabs["tab7"].kill()
+        self.tabs["tab8"].kill()
+        self.tabs["tab9"].kill()
 
         if self.biome_selected == "Forest":
             tab_rect = ui_scale(pygame.Rect((0, 0), (85, 30)))
@@ -1326,6 +1338,49 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab5"],
                 },
             )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (85, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab7"] = UISurfaceImageButton(
+                tab_rect,
+                "Farm",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (85, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab6"],
+                },
+            )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (105, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab8"] = UISurfaceImageButton(
+                tab_rect,
+                "Bushland",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (105, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab7"],
+                },
+            )
+            # ---
+            tab_rect = ui_scale(pygame.Rect((0, 0), (95, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab9"] = UISurfaceImageButton(
+                tab_rect,
+                "Castle",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (95, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab8"],
+                },
+            )
             # ---
         elif self.biome_selected == "Beach":
             tab_rect = ui_scale(pygame.Rect((0, 0), (110, 30)))
@@ -1418,6 +1473,15 @@ class MakeClanScreen(Screens):
         ].enable()
         self.tabs["tab6"].disable() if self.selected_camp_tab == 6 else self.tabs[
             "tab6"
+        ].enable()
+        self.tabs["tab7"].disable() if self.selected_camp_tab == 7 else self.tabs[
+            "tab7"
+        ].enable()
+        self.tabs["tab8"].disable() if self.selected_camp_tab == 8 else self.tabs[
+            "tab8"
+        ].enable()
+        self.tabs["tab9"].disable() if self.selected_camp_tab == 9 else self.tabs[
+            "tab9"
         ].enable()
 
         # I have to do this for proper layering.
@@ -3180,7 +3244,7 @@ class MakeClanScreen(Screens):
                         searched = self.search_text
                         if searched not in ["", "search"]:
                             for acc in acc_list:
-                                if searched in acc.lower():
+                                if searched in str(self.ACC_DISPLAY[acc]["default"]).lower() or searched in acc.lower():
                                     new_acc_list.append(acc)
                         else:
                             new_acc_list = acc_list
@@ -3306,7 +3370,7 @@ class MakeClanScreen(Screens):
                         searched = self.search_text
                         if searched not in ["", "search"]:
                             for acc in acc_list:
-                                if searched in acc.lower():
+                                if searched in str(self.ACC_DISPLAY[acc]["default"]).lower() or searched in acc.lower():
                                     new_acc_list.append(acc)
                         else:
                             new_acc_list = acc_list
@@ -4078,6 +4142,12 @@ class MakeClanScreen(Screens):
                                           visible=False, manager=MANAGER)
         self.tabs["tab6"] = UIImageButton(ui_scale(pygame.Rect((0, 0), (0, 0))), "",
                                           visible=False, manager=MANAGER)
+        self.tabs["tab7"] = UIImageButton(ui_scale(pygame.Rect((0, 0), (0, 0))), "",
+                                          visible=False, manager=MANAGER)
+        self.tabs["tab8"] = UIImageButton(ui_scale(pygame.Rect((0, 0), (0, 0))), "",
+                                          visible=False, manager=MANAGER)
+        self.tabs["tab9"] = UIImageButton(ui_scale(pygame.Rect((0, 0), (0, 0))), "",
+                                          visible=False, manager=MANAGER)
         y_pos = 275
         self.tabs["newleaf_tab"] = UIImageButton(ui_scale(pygame.Rect((627, y_pos), (39, 34))), "",
                                                  object_id="#newleaf_toggle_button",
@@ -4445,7 +4515,7 @@ class MakeClanScreen(Screens):
             game.cat_to_fade.clear()
             Cat.outside_cats.clear()
             Patrol.used_patrols.clear()
-            convert_camp = {1: 'camp1', 2: 'camp2', 3: 'camp3', 4: 'camp4', 5: 'camp5', 6: 'camp6'}
+            convert_camp = {1: 'camp1', 2: 'camp2', 3: 'camp3', 4: 'camp4', 5: 'camp5', 6: 'camp6', 7: 'camp7', 8: 'camp8', 9: 'camp9'}
             self.your_cat.create_inheritance_new_cat()
             game.clan = Clan(name = self.clan_name,
                             leader = self.leader,
