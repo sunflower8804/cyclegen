@@ -3170,5 +3170,21 @@
             "y_c, I don't want to get you in trouble, but... Can you help me?",
             "I slipped earlier and hurt my paw, and the other medicine cats won't even look at it..."
         ]
+    ],
+    "they_failingeyesight_SQ3": [
+        [
+            "they_failingeyesight",
+            "they_any",
+            "they_neurotic",
+            "min_platonic_20",
+            "sc_faith"
+        ],
+        [
+            "[t_c squints up at the stars. {PRONOUN/t_c/subject/CAP} {VERB/t_c/sigh/sighs} as you approach.]",
+            "I know the stars look different to other cats. For me, they're beautiful, but they're kind of blurred? Less precise.",
+            "Sometimes, it makes me wonder whether StarClan's ever sent me a sign, but I missed it.",
+            "[t_c gazes upwards for a bit longer before quickly shaking {PRONOUN/t_c/poss} head.]",
+            "It's not like I'm expecting StarClan to send me a sign, instead of to someone like r_m. I just... wonder."
+        ]
     ]
 }

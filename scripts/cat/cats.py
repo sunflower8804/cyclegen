@@ -3980,6 +3980,10 @@ class Cat:
             sorted_specific_list.remove(game.clan.demon)
             sorted_specific_list.insert(0, game.clan.demon)
 
+        if game.clan.instructor in sorted_specific_list:
+            sorted_specific_list.remove(game.clan.instructor)
+            sorted_specific_list.insert(0, game.clan.instructor)
+
         if filter_func is not None:
             sorted_specific_list = [
                 check_cat

@@ -3863,10 +3863,11 @@ class MakeClanScreen(Screens):
                 else:
                     self.tortie_patches_buttons[i[0]].disable()
 
-            if self.pname != "Tortie":
-                self.elements["match_tortie"].disable()
-            else:
-                self.elements["match_tortie"].enable()
+            if "match_tortie" in self.elements:
+                if self.pname != "Tortie":
+                    self.elements["match_tortie"].disable()
+                else:
+                    self.elements["match_tortie"].enable()
 
         elif self.page == 2:
             for i in self.eye_colour_buttons.items():
