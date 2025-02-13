@@ -1,6 +1,6 @@
 {
     "no_disaster": {
-        "general_starclan": [
+        "text": [
             [
                 "Beware the cat in the shadows."
             ],
@@ -72,37 +72,11 @@
             ],
             [
                 "A watchful eye lurks in the rain, beware this cat and their pain."
-            ],
-            [
-                "[A star shines before you, before you watch darkness threaten to engulf it.]"
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[From the dark a bloody paw strikes the ground with unsheathed claws.]"
-            ],
-            [
-                "[You feel fur brush against yours. The sensation of cats standing beside you fills you with courage and comfort.]"
-            ],
-            [
-                "[Shadows press in from all around you, filling you with fear. A flower springs up between your forepaws, however, and hope replaces fear.]"
-            ],
-            [
-                "[Nothingness surrounds you until you see a light in the dark.]"
-            ],
-            [
-                "[The lack of sound around you is chilling until a yowl pierces the silence.]"
-            ],
-            [
-                "[The strike of claws against your pelt startles you but no wound remains when you awaken.]"
-            ],
-            [
-                "[The screeching of battle fills your ears. The scent of blood is sharp enough to linger even after waking up.]"
             ]
         ]
     },
     "Hurricane": {
-        "general_starclan": [
+        "text": [
             [
                 "Unite the Clan beneath the tempest's roar."
             ],
@@ -130,51 +104,16 @@
             ],
             [
                 "You will rise from the wreck stronger than before."
-            ],
-            [
-                "Sink your claws into the ground, for a furious surge threatens to knock you off your paws."
-            ],
-            [
-                "Center within yourselves and the storm."
-            ],
-            [
-                "Wind cries as sharp as rain's claws."
-            ],
-            [
-                "It strikes twice when the eye passes over."
-            ],
-            [
-                "Blind eye watches above once as the swirling clouds howl twice."
-            ],
-            [
-                "The storm grants no mercy."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[Your fur whips up in every direction and you feel as if you could be blown away. In the next moment, the feeling passes, leaving you dizzy with the force of it.]"
-            ],
-            [
-                "[Rain strikes against your pelt with intense wind force. When you wake, however, you're dry and sleek.]"
-            ],
-            [
-                "[Cold water rises around your paws. Wind and rain strongly buffet your body as if you were a mere leaf. The sensation fades after a moment leaving you chilled.]"
-            ],
-            [
-                "[You're knocked over by the force of wind and rain that batters you relentlessly. You awaken with a gasp - and your body aches faintly...]"
-            ],
-            [
-                "[The scent of rain surrounds you. Wind swirls all around - but you remain untouched in the center of it all.]"
             ]
         ]
     },
     "Great Blizzard": {
-        "general_starclan": [
+        "text": [
             [
                 "Blind will you go, In the torrent of snow, In the darkness its seeds sow, Our light we will show, Should you let it be so"
             ],
             [
-                "[Your vision suddenly goes white and your blood runs cold. You awake shivering uncontrollably on the floor.]"
+                "Your vision suddenly goes white and your blood runs cold. You awake shivering in your nest."
             ],
             [
                 "Prey will turn white like bone."
@@ -189,116 +128,15 @@
                 "Ice will grow within the weed's roots."
             ],
             [
-                "The land will shrink, stranded - you are alone."
+                "The land will shrink, stranded, you are alone."
             ],
             [
                 "March forward if you dare, do not ignore night's icy stare."
             ]
-        ],
-        "general_deaf": [
-            [
-                "[Stinging cold slices through your fur. There isn't any warmth to be found.]"
-            ],
-            [
-                "[You feel the slickness of ice below your paws, and the frozen weight of snow on your back.]"
-            ],
-            [
-                "[Snow falls all around you until your vision goes white.]"
-            ],
-            [
-                "[Wind howls in your ears as cold snow pelts down in a heavy layer.]"
-            ],
-            [
-                "[You could feel snow melting on your back, but now it begins to pile on top of you...]"
-            ],
-            [
-                "[All you see is white.]"
-            ],
-            [
-                "[Shivers wrack your body as you feel snow begin to bury you.]"
-            ],
-            [
-                "[You dig your claws into the icy ground as snow nearly takes you off your paws.]"
-            ],
-            [
-                "[Ice stings your ears and nose as snow crusts upon your fur.]"
-            ],
-            [
-                "[Snow crunches below your paws as you hesitantly step forward. All you can smell is ice and snow.]"
-            ]
-        ]
-    },
-    "Drought": {
-        "general_starclan": [
-            [
-                "Leaves will turn from green to brown. They will soon crumble away with a sound."
-            ],
-            [
-                "Follow the prey, they will lead you to fruitful hope."
-            ],
-            [
-                "Heat grows relentlessly."
-            ],
-            [
-                "Air will burn, lungs will seeth."
-            ],
-            [
-                "The land will crack beneath your paws."
-            ],
-            [
-                "Parched land will drink even blood."
-            ],
-            [
-                "The clouds will not give the lifeblood."
-            ],
-            [
-                "Dusted ground to mouths to bones."
-            ],
-            [
-                "Await the tempest to soothe the scorched earth."
-            ],
-            [
-                "When the water dries, look to the skies."
-            ],
-            [
-                "Lushness will turn to dust. Beware the sun's harsh reign."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[Searing heat scorches your pelt. It feels akin to flames - before the moment passes leaving you breathless.]"
-            ],
-            [
-                "[You taste dust within your dry mouth, energy sapped. When you awaken the sensation has passed but you remember the vivid feeling.]"
-            ],
-            [
-                "[There's heat, but no crackle of flames, and dust coats your mouth when you taste the air.]"
-            ],
-            [
-                "[A lush puddle before you evaporates before your eyes, leaving dry and dead grass surrounding it.]"
-            ],
-            [
-                "[The sun beats down above you. There isn't a cloud in sight.]"
-            ],
-            [
-                "[You feel brittle grass below your paws. At a feather-light touch it crumbles into dust.]"
-            ],
-            [
-                "[You feel the sun's gentle rays on your pelt. The heat grows stronger and stronger until you wake up panting.]"
-            ],
-            [
-                "[Soothing water against your paws rapidly turns to dust.]"
-            ],
-            [
-                "[You see the camp, barren and dusty, the sun seeming to surround it...]"
-            ],
-            [
-                "[You drink from a puddle that drains to nothing in moments. You wake up thirsty.]"
-            ]
         ]
     },
     "Wildfire": {
-        "general_starclan": [
+        "text": [
             [
                 "The warmth is not safe."
             ],
@@ -329,30 +167,10 @@
             [
                 "Smoke can hold down even the strongest of warriors."
             ]
-        ],
-        "general_deaf": [
-            [
-                "[Your lungs fill up with smoke, choking you until you wake.]"
-            ],
-            [
-                "[Your legs feel like they're burning, sore due running far away from something hot...]"
-            ],
-            [
-                "[You're distracted by a horrible burning feeling in your tail, but as you look back, nothing seems to be awry.]"
-            ],
-            [
-                "[The ancestor before you moves their mouth to speak, but before you know it, the cat bursts into flames and disappears with the smoke and ash.]"
-            ],
-            [
-                "[Your pelt suddenly catches in flame. You roll, trying to rid yourself of the burning heat. You wake up in a cold sweat.]"
-            ],
-            [
-                "[Your whiskers burn as if they're being fried off by a flame, but there is no flame before you...]"
-            ]
         ]
     },
     "Terrible Cold": {
-        "general_starclan": [
+        "text": [
             [
                 "There is frost in your blood that no warmth can melt."
             ],
@@ -364,31 +182,11 @@
             ],
             [
                 "Deny the help given to you for you will only share your pain."
-            ],
-            [
-                "A blanket of frost will cover all living, sucking the strength little by little until there is nothing left."
-            ],
-            [
-                "Treasure those around you, for you'll need their warmth."
-            ],
-            [
-                "There is a piercing bite you cannot see and a monster you cannot hear. A chill comes from within - or is it just your imagination?"
-            ],
-            [
-                "They say the last minutes of warmth cannot be felt at all."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[Your breathe is visible before you, and with a blink you're in a field of harsh snow. By the time you wake, you're shivering heavily from the cold.]"
-            ],
-            [
-                "[You shiver from a harsh, cold breeze.]"
             ]
         ]
     },
     "Floods": {
-        "general_starclan": [
+        "text": [
             [
                 "Seeping and suffocating, rising and raising, our vital source will engulf our growth anew."
             ],
@@ -406,22 +204,11 @@
             ],
             [
                 "Water brings life through rain and rivers, but also brings death when balance shifts."
-            ],
-            [
-                "The sky will cry and sob, and c_n will pay for its sadness."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[With no warning, water pools to where you stand. You're only given the chance to take a deep breath before the water surges upward.]"
-            ],
-            [
-                "[Your pelt feels cold and wet, and your lungs restrict from an dreadful source.]"
             ]
         ]
     },
     "Twoleg Invasion": {
-        "general_starclan": [
+        "text": [
             [
                 "Beings of two will march the land, bringing destruction where they stand."
             ],
@@ -436,29 +223,11 @@
             ],
             [
                 "Like thorns, it's a grasp one cannot escape."
-            ],
-            [
-                "These beings bring destruction wherever they go, for they do not care for the land you call home."
-            ],
-            [
-                "[The sound of a monster reaches your ears.]"
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[The flash of moving, unknown lights meet your vision. Suddenly you're within the trees, watching familiar creatures travel discreetly through your Clan's territory.]",
-                "[Before you can get a good look at where you are, everything vanishes into black.]"
-            ],
-            [
-                "[There's familiar hands picking you up where you stand. With a slash of your claw, the illusion dissipates.]"
-            ],
-            [
-                "[The stars part and come back together to depict a familiar and dreadful display: a monster on the Thunderpath.]"
             ]
         ]
     },
     "Prey Sickness": {
-        "general_starclan": [
+        "text": [
             [
                 "With delirious groans and fangs of foam, those who were once friend shall now be known as foe."
             ],
@@ -467,29 +236,11 @@
             ],
             [
                 "The one who hunts becomes the hunted through invisible lies and deception masked behind good fortune."
-            ],
-            [
-                "Teeth will sink into what was once good, but the rot will be hidden until it is too late."
-            ],
-            [
-                "The prey will get their revenge in price for a sacrifice."
-            ],
-            [
-                "A darkness spreads subtly through the lands, starting from the very source."
-            ],
-            [
-                "You are what you eat."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[In a gruesome display, a prey wheezes and squirms as a green liquid flows out of its mouth.]",
-                "[Your ancestor slashes the prey, dissipating the vision.]"
             ]
         ]
     },
     "Contaminated Water": {
-        "general_starclan": [
+        "text": [
             [
                 "The water is grey and filled with goo, its sight a rotten stain created by two."
             ],
@@ -508,19 +259,10 @@
             [
                 "Drink carefully, throats will burn red and vision will blur if what consumed is tainted to the touch"
             ]
-        ],
-        "general_deaf": [
-            [
-                "[You look down to see your paws in a greenish water.]",
-                "[You wouldn't drink out of that.]"
-            ],
-            [
-                "[There's a nasty, grainy taste in your mouth. You cough, disgusted by the feeling.]"
-            ]
         ]
     },
     "Avalanche": {
-        "general_starclan": [
+        "text": [
             [
                 "A sheet of white, so daunting and bright, will bury all in its torrential might."
             ],
@@ -541,23 +283,11 @@
             ],
             [
                 "What is buried will be unearthed by the next generation."
-            ],
-            [
-                "You claimed these mountains as your home. Be prepared to to dig your grave on top of them."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[The ground underneath you shakes uncontrollably, threatening to knock you off your paws.]"
-            ],
-            [
-                "[The ancestor looks to the sky. You follow their gaze and are startled by falling rocks.]",
-                "[You wake before the rocks collide into you.]"
             ]
         ]
     },
     "Tornado": {
-        "general_starclan": [
+        "text": [
             [
                 "The silence of the inbetween is your only hope."
             ],
@@ -569,200 +299,6 @@
             ],
             [
                 "With a flick of your tail, you will command what cannot be controlled."
-            ],
-            [
-                "A cleanse to the moral world is upon us."
-            ],
-            [
-                "There is destruction in your future. Be cautious of the signs around you."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[In the corner of your eye, there's a large swirl of wind clocking the stars from being seen. As soon as you try to figure out it's meaning, it disappears.]"
-            ],
-            [
-                "[Winds that threatens to pick you up from where you stand runs through your legs.]"
-            ]
-        ]
-    },
-    "Earthquake": {
-        "general_starclan": [
-            [
-                "When the animals become hectic, beware of the rumble that follows."
-            ],
-            [
-                "Be observant of the nature around you. It is a warning as much as it is beautiful."
-            ],
-            [
-                "The sky becomes colourful with strings of light - but it is only a distraction to what is to come."
-            ],
-            [
-                "The spirit's anger knows no bounds. They will shake this world until their revenge is fulfilled."
-            ],
-            [
-                "Once a spirits wrath grows strong enough, they have the power to swipe mortals off their paws. Be careful - be vigilant."
-            ]
-        ],
-        "general_starclan_beach": [
-            [
-                "The fish do not wash ashore without a dreadful destruction to follow them."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[The ground underneath you shakes uncontrollably, threatening to knock you off your paws.]"
-            ],
-            [
-                "[You look down to your feet and are startled by the sudden crack in the earth.]"
-            ],
-            [
-                "[There's crackles in the stars, shifting and cutting through the sky until there's nothing left.]"
-            ]
-        ]
-    },
-    "Volcanic Eruption": {
-        "general_starclan": [
-            [
-                "The Flame will stream down like a river. Beware of the destruction that follows."
-            ],
-            [
-                "Mother Nature wants her land to be reborn, but first destruction must arise."
-            ],
-            [
-                "With every refresh, there must be catastrophe to push it along."
-            ],
-            [
-                "Cracks, steam, red rivers, and blackened land haunt your nightmares. It is more than just a silly kit tale."
-            ],
-            [
-                "Beware of what towers over you. The most difficult trial for c_n is very well on its way."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[The ground underneath you shakes uncontrollably, threatening to knock you off your paws.]"
-            ],
-            [
-                "[A stream of burning red flows before your very eyes.]"
-            ],
-            [
-                "[Your vision is flooded with a bubbling hot red.]"
-            ]
-        ]
-    },
-    "Heatwave": {
-        "general_starclan": [
-            [
-                "Look out into the distance and see the air dance before your very eyes."
-            ],
-            [
-                "There will be a burning fire within you, furious and unstoppable."
-            ],
-            [
-                "Blood will sizzle from an enemy you cannot see nor hear. Your only warning will be the scorch against skin."
-            ],
-            [
-                "The birds are flying west to escape a flame that cannot be seen or controlled."
-            ],
-            [
-                "Water will be scarce, disintegrating into the air when it's needed the most."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[You watch as the air around you dances, weaving into worrying depictions.]"
-            ],
-            [
-                "[The one cool breeze on your pelt begins to burn.]"
-            ]
-        ]
-    },
-    "Severe Thunderstorm": {
-        "general_starclan": [
-            [
-                "Pay close attention to the birds. Once they begin to surrender themselves to the hunt, be wary of bigger things to come."
-            ],
-            [
-                "Birds are the eyes of the sky. Once they become desperate, you should be too."
-            ],
-            [
-                "Look above and observe the moon. The rings reveal the truth - if you are knowledgeable enough to read them."
-            ],
-            [
-                "A herb will only bloom when the sky's the kindest. When the sky is no longer kind, look upon the petals. Be cautious when they shy away."
-            ],
-            [
-                "As the air smells clean and the wind blows curiously, do not be deceived. A harsh reality is coming."
-            ],
-            [
-                "Darkness is upon your Clan. Wet winds, clean air, and black clouds are only the beginning to terror."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[Suddenly, a bright string of light hits the ground before you.]",
-                "[You startle backwards, and when you land on your bum, you're awake again.]"
-            ],
-            [
-                "[The ground shakes beneath you, and as you look to the sky, you're horrified by the bright and continuous sight of lightning.]"
-            ]
-        ]
-    },
-    "Hydrothermal Explosions": {
-        "general_starclan": [
-            [
-                "Beware of the steam, for it is a warning to bigger things"
-            ],
-            [
-                "Explore with caution as the ground is never your friend."
-            ],
-            [
-                "There is fury within the dirt, waiting for the perfect time to strike."
-            ],
-            [
-                "The animals and prey around you avoid the areas in which you step. Perhaps this is a blessing, or perhaps this is a warning."
-            ],
-            [
-                "Animals larger than you avoid the lands in which you stand."
-            ],
-            [
-                "Be careful of where one steps, for it may be your last."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[The ground underneath you shakes uncontrollably, threatening to knock you off your paws.]"
-            ],
-            [
-                "[A burst of strong water rises from the ground, ripping everything in it's path as the steam bubbles.]"
-            ]
-        ]
-    },
-    "Oil Spill": {
-        "general_starclan": [
-            [
-                "There is a pooling darkness from the horizon, punishing everything in its path."
-            ],
-            [
-                "A sickness breaks out of its containment, determined to sink their teeth into anything living."
-            ],
-            [
-                "Something unnatural and unmoving comes from the depths of the water."
-            ],
-            [
-                "A dreadful mistake has taken root in your waters."
-            ]
-        ],
-        "general_deaf": [
-            [
-                "[Your pelt is sticky with something black and dangerous.]"
-            ],
-            [
-                "[The Clan is manifested before you, drowned in black.]"
-            ],
-            [
-                "[Fish wash up to your paws, unnaturally grey and still.]"
             ]
         ]
     }
