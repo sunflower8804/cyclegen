@@ -3244,7 +3244,7 @@ class MakeClanScreen(Screens):
                         searched = self.search_text
                         if searched not in ["", "search"]:
                             for acc in acc_list:
-                                if searched in acc.lower():
+                                if searched in str(self.ACC_DISPLAY[acc]["default"]).lower() or searched in acc.lower():
                                     new_acc_list.append(acc)
                         else:
                             new_acc_list = acc_list
@@ -3370,7 +3370,7 @@ class MakeClanScreen(Screens):
                         searched = self.search_text
                         if searched not in ["", "search"]:
                             for acc in acc_list:
-                                if searched in acc.lower():
+                                if searched in str(self.ACC_DISPLAY[acc]["default"]).lower() or searched in acc.lower():
                                     new_acc_list.append(acc)
                         else:
                             new_acc_list = acc_list
