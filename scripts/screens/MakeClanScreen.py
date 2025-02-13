@@ -395,7 +395,7 @@ class MakeClanScreen(Screens):
             get_button_dict(ButtonStyles.SQUOVAL, (153, 30)),
             manager=MANAGER,
             object_id="@buttonstyles_squoval",
-            starting_height=1,
+            starting_height=2,
         )
 
         if game.switches["customise_new_life"] is True:
