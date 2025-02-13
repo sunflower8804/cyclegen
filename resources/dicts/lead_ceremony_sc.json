@@ -2594,6 +2594,109 @@
         }
       ]
     },
+    "aloof_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "aloof"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "queen",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c emerges from the stars, {PRONOUN/r_c/poss} presence as quiet as a whisper. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue], and {VERB/r_c/retreat/retreats} back without another word.",
+          "virtue": [
+            "acceptance",
+            "bravery",
+            "certainty",
+            "clear judgment",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "sympathy",
+            "farsightedness",
+            "friendship",
+            "instincts",
+            "mercy",
+            "strength",
+            "unity"
+          ]
+        },
+        {
+          "text": "r_c's gaze is distant, as if {PRONOUN/r_c/subject} {VERB/r_c/are/is} looking at somewhere beyond m_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue], the touch of {PRONOUN/r_c/poss} muzzle cold as it presses against m_c's head.",
+          "virtue": [
+            "acceptance",
+            "bravery",
+            "certainty",
+            "clear judgment",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "sympathy",
+            "farsightedness",
+            "friendship",
+            "instincts",
+            "mercy",
+            "strength",
+            "unity"
+          ]
+        },
+        {
+          "text": "r_c stands apart from the other StarClan cats, {PRONOUN/r_c/poss} expression unreadable. {PRONOUN/r_c/subject/CAP} {VERB/r_c/approach/approaches} m_c with a quiet grace, giving a life for [virtue] before retreating to {PRONOUN/r_c/poss} solitary corner of the stars.",
+          "virtue": [
+            "acceptance",
+            "bravery",
+            "certainty",
+            "clear judgment",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "sympathy",
+            "farsightedness",
+            "friendship",
+            "instincts",
+            "mercy",
+            "strength",
+            "unity"
+          ]
+        },
+        {
+          "text": "r_c's voice is soft, almost lost in the vastness of StarClan, as {PRONOUN/r_c/subject} {VERB/r_c/give/gives} a life for [virtue].",
+          "virtue": [
+            "acceptance",
+            "bravery",
+            "certainty",
+            "clear judgment",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "sympathy",
+            "farsightedness",
+            "friendship",
+            "instincts",
+            "mercy",
+            "strength",
+            "unity"
+          ]
+        }
+      ]
+    },
+
+
     "default_kit": {
       "tags": [],
       "lead_trait": [],

@@ -623,21 +623,25 @@ class MakeClanScreen(Screens):
             c_size = 10
         elif self.clan_size == 'large':
             c_size = 20
+        
+        special_ranks = 0
+        special_rank_str = ["medicine cat", "medicine cat apprentice", "mediator", "mediator apprentice", "queen", "queen's apprentice"]
         for a in range(c_size):
             if a in e:
                 game.choose_cats[a] = Cat(status='warrior', biome=None)
             else:
+                
                 status_percentages = [
-                ("medicine cat", 2),         
-                ("medicine cat apprentice", 3),  
-                ("warrior", 35),              
-                ("apprentice", 15),          
-                ("kitten", 5),               
-                ("elder", 5),                
-                ("mediator", 2),             
-                ("mediator apprentice", 3),   
-                ("queen", 2),                
-                ("queen's apprentice", 3),    
+                ("medicine cat", 1),
+                ("medicine cat apprentice", 1),
+                ("warrior", 38),
+                ("apprentice", 15),
+                ("kitten", 5),
+                ("elder", 5),
+                ("mediator", 2),
+                ("mediator apprentice", 3),
+                ("queen", 2),
+                ("queen's apprentice", 3),
                 ]
 
                 status_choices = []
@@ -645,6 +649,13 @@ class MakeClanScreen(Screens):
                     status_choices.extend([status] * percentage)
 
                 s = random.choice(status_choices)
+
+                if special_ranks > 5:
+                    while s in special_rank_str:
+                        s = random.choice(status_choices)
+
+                if s in special_rank_str:
+                    special_ranks += 1
 
                 game.choose_cats[a] = Cat(status=s, biome=None)
 
