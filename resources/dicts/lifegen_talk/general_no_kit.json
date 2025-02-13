@@ -20903,7 +20903,7 @@
             "you_blind"
         ],
         [
-            "You're not going to train tonight, right? df_m_n wouldn't make you... not while you're like this?",
+            "You're not going to train tonight, right? m_n wouldn't make you... not while you're like this?",
             "Please be careful, y_c. Everycat's already worried enough about you as it is."
         ]
     ],
@@ -24429,8 +24429,57 @@
 	"Um... okay, I realize this looks strange. I've always had trouble gauging how far away prey is, and that's made me miss a few easy catches recently, so I'm practicing.",
 	"I'm not going to be perfect, but I can probably get better... right?"
         ]
+    ],
+    "yougrieving_H1": [
+        [
+            "you_grieving",
+            "no_kit",
+            "they_cool",
+            "min_plike_30",
+            "you_blind"
+        ],
+        [
+            "... You're getting skinnier everytime I see you.",
+            "y_c, you need to eat more. yg_c would feel awful that you're so caught up in your grief like this."
+        ]
+    ],
+    "introspective_grieving_litermate_H1": [
+        [
+            "they_grieving",
+            "they_introspective",
+            "they_adult",
+            "litermate",
+            "they_blind",
+            "you_blind",
+            "min_dislike_15"
+        ],
+        [
+            "[As you lay near t_c, {PRONOUN/t_c/subject} {VERB/t_c/huff/huffs} heavily, disgruntled by your company.]",
+            "I carefully chose this spot to be wallow in my own saddness. By myself. Don't you know that?",
+            "... Gah, whatever. It's not like you ever respected my alone time anyway."
+        ]
+    ],
+    "introspective_grieving_H1": [
+        [
+            "they_grieving",
+            "they_introspective",
+            "any"
+        ],
+        [
+            "I need to stop thinking about {PRONOUN/dislike_d_c/object}.",
+            "It's like dislike_d_c is trying to annoy me from the afterlife."
+        ]
+    ],
+    "negative_introspective_H1": [
+        [
+            "they_introspective",
+            "they_cool",
+            "any",
+            "min_dislike_20"
+        ],
+        [
+            "[t_c looks at your pelt with a scrunched nose, peculiar judegment in {PRONOUN/t_c/poss} eyes.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/walk/walks} off without another word.]"
+        ]
     ]
-
-
-
 }
