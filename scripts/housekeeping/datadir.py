@@ -32,7 +32,7 @@ def get_data_dir():
     from platformdirs import user_data_dir
 
     if get_version_info().is_dev():
-        return user_data_dir('LifeDev', 'LifeDev')
+        return user_data_dir('LifeGen', 'LifeGen')
     return user_data_dir('LifeGen', 'LifeGen')
 
 
