@@ -5495,5 +5495,34 @@
         [
             "[t_c seems too fixated on a stick to even notice you.]"
         ]
+    ],
+    "deafgrievingflirt_SQ1": [
+        [
+            "flirt",
+            "they_deaf",
+            "they_grieving",
+            "from_mate",
+            "they_adult",
+            "you_adult"
+        ],
+        [
+    "[You press against t_c. {PRONOUN/t_c/subject/CAP} {VERB/t_c/keep/keeps} {PRONOUN/t_c/poss} eyes closed, but press back against you.]",
+    "[You think you hear a small purr, but it quickly turns to sobs.]"
+        ]
+    ],
+ "deafgrievingflirt_SQ2": [
+        [
+            "flirt",
+            "reject",
+            "they_grieving",
+            "only_they_deaf",
+            "from_mate",
+            "they_adult",
+            "you_adult"
+        ],
+        [
+    "[t_c lifts {PRONOUN/t_c/poss} head to look at you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} initially react to your signs, so you try again.]",
+    "[...Your mate just sighs and drops {PRONOUN/t_c/poss} head back on {PRONOUN/t_c/poss} paws, sniffling.]"
+        ]
     ]
 }
