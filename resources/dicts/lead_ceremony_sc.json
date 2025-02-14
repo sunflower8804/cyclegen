@@ -2857,6 +2857,185 @@
         }
       ]
     },
+    "stoic_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "stoic"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "queen",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c approaches m_c with a steady gaze, {PRONOUN/r_c/poss} movements calm and deliberate. The life r_c gives for [virtue] flows through m_c and leaves a sense of quiet strength.",
+          "virtue": [
+            "endurance",
+            "strength",
+            "certainty",
+            "clear judgment",
+            "resilience",
+            "courage",
+            "determination",
+            "patience",
+            "stability",
+            "unity",
+            "mercy",
+            "instincts",
+            "farsightedness",
+            "adaptability",
+            "confidence"
+          ]
+        },
+        {
+          "text": "r_c stands tall, {PRONOUN/r_c/poss} expression unreadable as {PRONOUN/r_c/subject} {VERB/r_c/approach/approaches} m_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue]. The energy settles into m_c, grounding {PRONOUN/m_c/object} with a sense of unshakable resolve.",
+          "virtue": [
+            "endurance",
+            "strength",
+            "certainty",
+            "clear judgment",
+            "resilience",
+            "courage",
+            "determination",
+            "patience",
+            "stability",
+            "unity",
+            "mercy",
+            "instincts",
+            "farsightedness",
+            "adaptability",
+            "confidence"
+          ]
+        }
+      ]
+    },
+    "mellow_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "mellow"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c approaches m_c with a relaxed gait, {PRONOUN/r_c/poss} presence soothing admist the crowd of starry warriors. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue].",
+          "virtue": [
+            "calmness",
+            "balance",
+            "patience",
+            "unity",
+            "sympathy",
+            "mercy",
+            "friendship",
+            "instincts",
+            "farsightedness",
+            "adaptability",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "strength"
+          ]
+        },
+        {
+          "text": "r_c waits {PRONOUN/r_c/poss} turn with a half-lidded gaze, assessing m_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue].",
+          "virtue": [
+            "calmness",
+            "balance",
+            "patience",
+            "unity",
+            "sympathy",
+            "mercy",
+            "friendship",
+            "instincts",
+            "farsightedness",
+            "adaptability",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "strength"
+          ]
+        }
+      ]
+    },
+    "humble_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "humble"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c approaches m_c with a bowed head as {PRONOUN/r_c/subject} {VERB/r_c/give/gives} m_c a life for [virtue].",
+          "virtue": [
+            "humility",
+            "unity",
+            "sympathy",
+            "mercy",
+            "friendship",
+            "instincts",
+            "farsightedness",
+            "adaptability",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "strength",
+            "patience",
+            "balance"
+          ]
+        },
+        {
+          "text": "r_c dips {PRONOUN/r_c/poss} head in respect before giving m_c a life for [virtue].",
+          "virtue": [
+            "humility",
+            "unity",
+            "sympathy",
+            "mercy",
+            "friendship",
+            "instincts",
+            "farsightedness",
+            "adaptability",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "strength",
+            "patience",
+            "balance"
+          ]
+        }
+      ]
+    },
     "default_kit": {
       "tags": [],
       "lead_trait": [],
