@@ -4748,6 +4748,8 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                     if "lasting grief" not in cat.permanent_condition:
                         print("Warning:", cat.name, "is grieving + has no grief cat?")
                     return ""
+            else:
+                return ""
 
             addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
 
