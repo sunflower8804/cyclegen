@@ -22500,7 +22500,7 @@
             "they_sc",
             "max_they_deadfor_5",
             "any",
-            "they_righteous",
+            "righteous",
             "sc_faith"
         ],
         [
@@ -24292,7 +24292,7 @@
             "from_mate",
             "any",
             "they_introspective",
-            "they_insecure",
+            "insecure",
             "max_romantic_30",
             "min_dislike_10",
             "they_blind",
@@ -24775,7 +24775,7 @@
             "you_shunned",
             "they_adult",
             "you_adult",
-            "they_strange",
+            "strange",
             "min_platonic_30",
             "min_trust_30",
             "not_accomplice"
@@ -25273,9 +25273,9 @@
     ],
     "neurotic_general_SQ24": [
         [
-            "they_nervous",
-            "they_cowardly",
-            "they_careful",
+            "nervous",
+            "cowardly",
+            "careful",
             "they_any",
             "you_any",
             "you_deaf",
@@ -25660,11 +25660,11 @@
     ],
     "neurotic_neutral_SQ2": [
         [
-            "they_nervous",
-            "they_insecure",
-            "they_careful",
-            "they_meek",
-            "they_cowardly",
+            "nervous",
+            "insecure",
+            "careful",
+            "meek",
+            "cowardly",
             "no_kit",
             "neutral"
         ],
@@ -25691,10 +25691,10 @@
     ],
     "neurotic_neutral_SQ4": [
         [
-            "they_nervous",
-            "they_insecure",
-            "they_meek",
-            "they_cowardly",
+            "nervous",
+            "insecure",
+            "meek",
+            "cowardly",
             "no_kit",
             "neutral"
         ],
