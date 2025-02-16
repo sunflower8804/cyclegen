@@ -1448,6 +1448,7 @@ class UpdateAvailablePopup(UIWindow):
             object_id="@buttonstyles_squoval",
             container=self,
         )
+        self.continue_button.disable()
 
         self.cancel_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((187, 185), (78, 30))),
