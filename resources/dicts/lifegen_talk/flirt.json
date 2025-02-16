@@ -5524,5 +5524,19 @@
     "[t_c lifts {PRONOUN/t_c/poss} head to look at you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} initially react to your signs, so you try again.]",
     "[...Your mate just sighs and drops {PRONOUN/t_c/poss} head back on {PRONOUN/t_c/poss} paws, sniffling.]"
         ]
+    ],
+    "flirt_sam2": [
+        [
+            "only_you_deaf",
+            "you_blind",
+            "they_deaf",
+            "they_blind",
+            "flirt",
+            "accept",
+            "Any"
+        ],
+        [
+            "[t_c presses {PRONOUN/t_c/poss} pelt into yours so that you can feel {PRONOUN/t_c/poss} purrs.]"
+        ]
     ]
 }
