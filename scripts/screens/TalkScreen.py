@@ -1222,9 +1222,8 @@ class TalkScreen(Screens):
                 if cat.ID == game.clan.murdered["accomplice"][0]:
                     if "accomplice_agreed" in tags and game.clan.murdered["accomplice"][1] is False:
                         continue
-                    elif "accomplice_refused" in tags and game.clan.murdered["accomplice"][1] is True:
+                    if "accomplice_refused" in tags and game.clan.murdered["accomplice"][1] is True:
                         continue
-                
                     if "not_accomplice" in tags:
                         continue
                 else:
@@ -1269,8 +1268,6 @@ class TalkScreen(Screens):
                     continue
 
             # ---
-
-
             if "non-related" in tags:
                 if cat.ID in you.get_relatives():
                     continue

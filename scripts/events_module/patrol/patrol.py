@@ -674,6 +674,10 @@ class Patrol:
                         else:
                             if "fellowtrainee" not in patrol.tags:
                                 continue
+                            
+                    if "shunned" in patrol.tags:
+                        if game.clan.your_cat.shunned == 0:
+                            continue
                 else:
                     if "shunned" in patrol.tags:
                         if game.clan.your_cat.shunned == 0:

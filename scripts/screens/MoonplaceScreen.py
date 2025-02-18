@@ -169,8 +169,8 @@ class MoonplaceScreen(Screens):
 
         img_dict = {
             "mountainous": "moonstone.png",
-            "forest": "moonplace1.png",
-            "plains": "moonhollow.png",
+            "forest": "moonhollow.png",
+            "plains": "moonplace1.png",
             "beach": "moonstone.png"
         }
         platform_dir = camp_bg_base_dir + img_dict[game.clan.biome.lower()]

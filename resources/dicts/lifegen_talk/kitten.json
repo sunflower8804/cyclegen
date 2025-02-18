@@ -3322,7 +3322,8 @@
     "stable_kit_younewborn_4": [
         [
             "newborn",
-            "stable"
+            "stable",
+            "non-related"
         ],
         [
             "... Y'know... I think...",
@@ -8160,8 +8161,8 @@
         ],
         [
             "y_c? I... I heard a scary sound outside! It sounded like claws or... or teeth...",
-            "[You sit up in the dark nursery and y_c presses against you, trembling. You prick your ears, but all you can hear is {PRONOUN/t_c/poss} quivering breaths and, distantly, a haunting birdcall.]",
-            "[You still stay awake, listening, until y_c falls asleep again.]"
+            "[You sit up in the dark nursery and t_c presses against you, trembling. You prick your ears, but all you can hear is {PRONOUN/t_c/poss} quivering breaths and, distantly, a haunting birdcall.]",
+            "[You still stay awake, listening, until t_c falls asleep again.]"
         ]
     ],
     "neurotic_kitten_SQ13~1": [
@@ -8685,7 +8686,7 @@
     ],
     "neurotic_kitten_SQ30": [
         [
-            "they_secretive",
+            "secretive",
             "they_kitten",
             "you_adult",
             "neutral"
@@ -8700,7 +8701,7 @@
     ],
     "neurotic_kitten_SQ31": [
         [
-            "they_secretive",
+            "secretive",
             "they_kitten",
             "you_any"
         ],

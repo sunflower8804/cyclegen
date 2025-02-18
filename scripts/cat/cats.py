@@ -9,11 +9,9 @@ import itertools
 import os.path
 import sys
 from random import choice, randint, sample, random, getrandbits, randrange
-from typing import Dict, List, Any, Union, Callable
+from typing import Dict, List, Any, Callable
 
 import ujson  # type: ignore
-
-import ujson
 
 from .names import Name
 from .pelts import Pelt
@@ -3991,7 +3989,10 @@ class Cat:
                 for check_cat in sorted_specific_list
                 if filter_func(check_cat)
             ]
-        idx = sorted_specific_list.index(self)
+        if self in sorted_specific_list:
+            idx = sorted_specific_list.index(self)
+        else:
+            return (0,0)
 
         return (
             (
