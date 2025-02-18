@@ -4711,7 +4711,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
 
             counter = 0
-            while (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or dead_cat.ID in [game.clan.instructor.ID, game.clan.demon.ID] or addon_check is False):
+            while not dead_cat or (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or dead_cat.ID in [game.clan.instructor.ID, game.clan.demon.ID] or addon_check is False):
                 if counter == 30:
                     return ""
                 dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
@@ -4752,7 +4752,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                     return ""
 
             counter = 0
-            while (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or dead_cat.ID in [game.clan.instructor.ID, game.clan.demon.ID] or addon_check is False):
+            while not dead_cat or (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or dead_cat.ID in [game.clan.instructor.ID, game.clan.demon.ID] or addon_check is False):
                 if counter == 30:
                     return ""
                 dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
@@ -4794,7 +4794,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
 
             counter = 0
-            while (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or dead_cat.ID in [game.clan.instructor.ID, game.clan.demon.ID] or addon_check is False):
+            while not dead_cat or (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or dead_cat.ID in [game.clan.instructor.ID, game.clan.demon.ID] or addon_check is False):
                 if counter == 30:
                     return ""
                 dead_cat = Cat.all_cats.get(choice(game.clan.starclan_cats))
