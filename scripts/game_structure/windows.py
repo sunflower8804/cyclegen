@@ -2183,7 +2183,7 @@ class DeathScreen(UIWindow):
 
 class DeputyScreen(UIWindow):
     def __init__(self, last_screen):
-        super().__init__(ui_scale(pygame.Rect((250, 200), (300, 250))),
+        super().__init__(ui_scale(pygame.Rect((250, 200), (300, 180))),
                         window_display_title='Choose your deputy',
                         object_id='#game_over_window',
                         resizable=False)

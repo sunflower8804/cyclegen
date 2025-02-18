@@ -2,14 +2,24 @@ import pygame.transform
 import pygame_gui.elements
 from .Screens import Screens
 
-
-from scripts.utility import get_text_box_theme, ui_scale
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import game
-from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton
-from ..ui.generate_box import BoxStyles, get_box
-from scripts.game_structure.screen_settings import MANAGER
+from scripts.game_structure.ui_elements import (
+    UISpriteButton,
+    UISurfaceImageButton,
+)
+from scripts.utility import (
+    get_text_box_theme,
+    ui_scale,
+    ui_scale_dimensions
+)
+from ..game_structure.screen_settings import MANAGER
+from ..ui.generate_box import get_box, BoxStyles
+from ..ui.generate_button import get_button_dict, ButtonStyles
+from ..ui.get_arrow import get_arrow
+from ..ui.icon import Icon
+
 
 
 class DeputyScreen(Screens):
@@ -79,6 +89,7 @@ class DeputyScreen(Screens):
                 self.update_cat_list()
 
     def screen_switches(self):
+        super().screen_switches()
         self.the_cat = game.clan.your_cat
         self.mentor = Cat.fetch_cat(self.the_cat.mentor)
 
@@ -97,14 +108,34 @@ class DeputyScreen(Screens):
             ui_scale(pygame.Rect((75, 360), (650, 226))), get_box(BoxStyles.ROUNDED_BOX, (650, 226)), starting_height=1
         )
 
-        self.back_button = UIImageButton(ui_scale(pygame.Rect((25, 645), (105, 30))), "", object_id="#back_button")
-        self.confirm_mentor = UIImageButton(ui_scale(pygame.Rect((340, 305), (104, 26))), "",
-                                            object_id="#patrol_select_button")
+        self.back_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((25, 60), (105, 30))),
+            get_arrow(2) + " Back",
+            get_button_dict(ButtonStyles.SQUOVAL, (105, 30)),
+            object_id="@buttonstyles_squoval",
+            manager=MANAGER,
+        )
+        self.confirm_mentor = UISurfaceImageButton(
+            ui_scale(pygame.Rect((326, 310), (148, 30))),
+            "Confirm Deputy",
+            get_button_dict(ButtonStyles.SQUOVAL, (148, 30)),
+            object_id="@buttonstyles_squoval",
+        )
 
-        self.previous_page_button = UIImageButton(ui_scale(pygame.Rect((315, 580), (34, 34))), "",
-                                                  object_id="#relation_list_previous", manager=MANAGER)
-        self.next_page_button = UIImageButton(ui_scale(pygame.Rect((451, 580), (34, 34))), "",
-                                              object_id="#relation_list_next", manager=MANAGER)
+        self.previous_page_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((315, 579), (34, 34))),
+            Icon.ARROW_LEFT,
+            get_button_dict(ButtonStyles.ICON, (34, 34)),
+            object_id="@buttonstyles_icon",
+            starting_height=0,
+        )
+        self.next_page_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((451, 579), (34, 34))),
+            Icon.ARROW_RIGHT,
+            get_button_dict(ButtonStyles.ICON, (34, 34)),
+            object_id="@buttonstyles_icon",
+            starting_height=0,
+        )
 
         self.update_selected_cat()  # Updates the image and details of selected cat
         self.update_cat_list()
@@ -200,10 +231,12 @@ class DeputyScreen(Screens):
         if self.selected_cat:
 
             self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
-                ui_scale(pygame.Rect((325, 150), (150, 150))),
-                pygame.transform.scale(
-                    self.selected_cat.sprite,
-                    (150, 150)), manager=MANAGER)
+                    ui_scale(pygame.Rect((325, 150), (150, 150))),
+                    pygame.transform.scale(
+                        self.selected_cat.sprite, ui_scale_dimensions((150, 150))
+                    ),
+                    manager=MANAGER,
+                )
 
             info = self.selected_cat.status + "\n" + \
                    self.selected_cat.genderalign + "\n" + self.selected_cat.personality.trait + "\n" + \
@@ -287,7 +320,6 @@ class DeputyScreen(Screens):
         return valid_mentors
 
     def on_use(self):
-        # Due to a bug in pygame, any image with buttons over it must be blited
         super().on_use()
 
     def chunks(self, L, n):
