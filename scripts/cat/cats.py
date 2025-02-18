@@ -9,11 +9,9 @@ import itertools
 import os.path
 import sys
 from random import choice, randint, sample, random, getrandbits, randrange
-from typing import Dict, List, Any, Union, Callable
+from typing import Dict, List, Any, Callable
 
 import ujson  # type: ignore
-
-import ujson
 
 from .names import Name
 from .pelts import Pelt
