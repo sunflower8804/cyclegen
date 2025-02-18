@@ -1257,10 +1257,10 @@ class TalkScreen(Screens):
                     ]):
                     if game.clan.murdered["murderer"] != game.clan.your_cat.ID:
                         continue
-            
+            elif any(t in tags for t in ["accomplice", "accomplice_refused", "accomplice_agreed"]):
+                continue
+
             # ---
-
-
             if "non-related" in tags:
                 if cat.ID in you.get_relatives():
                     continue
