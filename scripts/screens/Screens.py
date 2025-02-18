@@ -707,14 +707,14 @@ class Screens:
                 self.bg_transition = False
 
             # actually run the transition
-            if self.bg_transition_time > 0:
+            if self.bg_transition_time > 0 and blur_bg:
                 temp = blur_bg.copy()
                 temp.set_alpha(
                     255 // self.bg_transition_time
                 )  # this determines the actual fade rate
                 scripts.game_structure.screen_settings.screen.blit(temp, (0, 0))
                 self.bg_transition_time -= 1
-            else:
+            elif blur_bg:
                 # if we've done the transition, just blit the full-alpha version on top to remove artifacts.
                 scripts.game_structure.screen_settings.screen.blit(blur_bg, (0, 0))
         # now blit the foreground.
