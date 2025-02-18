@@ -4745,12 +4745,7 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
             if "grief stricken" in cat.illnesses:
                 if cat.illnesses['grief stricken'].get("grief_cat"):
                     dead_cat = Cat.fetch_cat(cat.illnesses['grief stricken'].get("grief_cat"))
-<<<<<<< HEAD
-                    if dead_cat is None:
-                        return ""
-=======
                     addon_check = abbrev_addons(cat, dead_cat, cluster, x, rel, r)
->>>>>>> 92acbab0cf828a1fc2377126686a1a4ccb063859
                 else:
                     if "lasting grief" not in cat.permanent_condition:
                         print("Warning:", cat.name, "is grieving + has no grief cat?")
