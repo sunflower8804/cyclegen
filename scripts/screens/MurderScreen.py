@@ -8,7 +8,7 @@ from scripts.cat.history import History
 from scripts.event_class import Single_Event
 
 from .Screens import Screens
-from scripts.utility import get_text_box_theme, process_text, pronoun_repl
+from scripts.utility import get_text_box_theme, process_text, pronoun_repl, ui_scale_dimensions
 from scripts.cat.cats import Cat, INJURIES
 from scripts.game_structure import image_cache
 from scripts.game_structure.ui_elements import UIImageButton, UISpriteButton, UISurfaceImageButton
@@ -408,11 +408,14 @@ class MurderScreen(Screens):
                                                                 image_cache.load_image(
                                                                     "resources/images/victim_panel.png").convert_alpha(),
                                                                 (200, 270)), manager=MANAGER)
+            
             self.your_sprite = pygame_gui.elements.UIImage(
-                                            ui_scale(pygame.Rect((325, 180), (150, 150))),
-                                            pygame.transform.scale(
-                                                self.the_cat.sprite,
-                                                (150, 150)), manager=MANAGER)
+                    ui_scale(pygame.Rect((325, 180), (150, 150))),
+                    pygame.transform.scale(
+                        self.the_cat.sprite, ui_scale_dimensions((150, 150))
+                    ),
+                    manager=MANAGER,
+                )
             
             self.methodtext = pygame_gui.elements.UITextBox("Method:",
                                                         ui_scale(pygame.Rect((555, 77), (100, 40))),
@@ -578,24 +581,29 @@ class MurderScreen(Screens):
                                                         manager=MANAGER)
            
             # Layout Images:
-            self.mentor_frame = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((75, 87), (200, 270))),
-                                                            pygame.transform.scale(
-                                                                image_cache.load_image(
-                                                                    "resources/images/victim_panel.png").convert_alpha(),
-                                                                (200, 270)), manager=MANAGER)
-            
+            self.mentor_frame = pygame_gui.elements.UIImage(
+                ui_scale(pygame.Rect((75, 87), (200, 270))),
+                pygame.transform.scale(
+                    image_cache.load_image("resources/images/victim_panel.png").convert_alpha(),
+                    (200, 270)),
+                    manager=MANAGER
+                    )
+
             self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
-                                            ui_scale(pygame.Rect((105, 95), (185, 135))),
-                                            pygame.transform.scale(
-                                                self.selected_cat.sprite,
-                                                (185, 135)), manager=MANAGER)
-           
-            
+                    ui_scale(pygame.Rect((105, 95), (185, 135))),
+                    pygame.transform.scale(
+                        self.selected_cat.sprite, ui_scale_dimensions((185, 135))
+                    ),
+                    manager=MANAGER,
+                )
+
             self.your_sprite = pygame_gui.elements.UIImage(
-                                            ui_scale(pygame.Rect((325, 180), (150, 150))),
-                                            pygame.transform.scale(
-                                                self.the_cat.sprite,
-                                                (150, 150)), manager=MANAGER)
+                    ui_scale(pygame.Rect((325, 180), (150, 150))),
+                    pygame.transform.scale(
+                        self.the_cat.sprite, ui_scale_dimensions((150, 150))
+                    ),
+                    manager=MANAGER,
+                )
             
 
             self.methodtext = pygame_gui.elements.UITextBox("Method:",
@@ -767,16 +775,19 @@ class MurderScreen(Screens):
                                                                     "resources/images/accomplice_panel.png").convert_alpha(),
                                                                 (200, 270)), manager=MANAGER)
             self.your_sprite = pygame_gui.elements.UIImage(
-                                            ui_scale(pygame.Rect((325, 180), (150, 150))),
-                                            pygame.transform.scale(
-                                                self.the_cat.sprite,
-                                                (150, 150)), manager=MANAGER)
-            
+                    ui_scale(pygame.Rect((325, 180), (150, 150))),
+                    pygame.transform.scale(
+                        self.the_cat.sprite, ui_scale_dimensions((150, 150))
+                    ),
+                    manager=MANAGER,
+                )
             self.victim_sprite = pygame_gui.elements.UIImage(
-                                            ui_scale(pygame.Rect((105, 95), (135, 135))),
-                                            pygame.transform.scale(
-                                                self.cat_to_murder.sprite,
-                                                (135, 135)), manager=MANAGER)
+                    ui_scale(pygame.Rect((105, 95), (135, 135))),
+                    pygame.transform.scale(
+                        self.cat_to_murder.sprite, ui_scale_dimensions((135, 135))
+                    ),
+                    manager=MANAGER,
+                )
             
             info = self.cat_to_murder.status + "\n" + \
                    self.cat_to_murder.genderalign + "\n" + self.cat_to_murder.personality.trait + "\n"
@@ -2869,12 +2880,14 @@ class MurderScreen(Screens):
 
         if self.selected_cat and not self.selected_cat.dead:
             self.confirm_mentor.enable()
-
+            
             self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
-                ui_scale(pygame.Rect((105, 95), (135, 135))),
-                pygame.transform.scale(
-                    self.selected_cat.sprite,
-                    (135, 135)), manager=MANAGER)
+                    ui_scale(pygame.Rect((105, 95), (135, 135))),
+                    pygame.transform.scale(
+                        self.selected_cat.sprite, ui_scale_dimensions((135, 135))
+                    ),
+                    manager=MANAGER,
+                )
 
             info = self.selected_cat.status + "\n" + \
                    self.selected_cat.genderalign + "\n" + self.selected_cat.personality.trait + "\n"
@@ -2950,10 +2963,12 @@ class MurderScreen(Screens):
 
         if self.selected_cat and self.selected_cat.ID != self.cat_to_murder.ID and not self.selected_cat.dead:
             self.selected_details["selected_image"] = pygame_gui.elements.UIImage(
-                ui_scale(pygame.Rect((560, 95), (135, 135))),
-                pygame.transform.scale(
-                    self.selected_cat.sprite,
-                    (135, 135)), manager=MANAGER)
+                    ui_scale(pygame.Rect((560, 95), (135, 135))),
+                    pygame.transform.scale(
+                        self.selected_cat.sprite, ui_scale_dimensions((135, 135))
+                    ),
+                    manager=MANAGER,
+                )
 
             info = self.selected_cat.status + "\n" + \
                    self.selected_cat.genderalign + "\n" + self.selected_cat.personality.trait + "\n"

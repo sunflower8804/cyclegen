@@ -4750,6 +4750,8 @@ def adjust_txt(Cat, text, cat, cat_dict, r_c_allowed, o_c_allowed):
                     if "lasting grief" not in cat.permanent_condition:
                         print("Warning:", cat.name, "is grieving + has no grief cat?")
                     return ""
+            else:
+                return ""
 
             counter = 0
             while not dead_cat or (dead_cat.ID == you.ID or dead_cat.ID == cat.ID or dead_cat.ID in [game.clan.instructor.ID, game.clan.demon.ID] or addon_check is False):

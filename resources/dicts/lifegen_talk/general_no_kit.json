@@ -26890,5 +26890,18 @@
 	"Um... okay, I realize this looks strange. I've always had trouble gauging how far away prey is, and that's made me miss a few easy catches recently, so I'm practicing.",
 	"I'm not going to be perfect, but I can probably get better... right?"
         ]
+    ],
+    "shunned_not_accomplice_J1": [
+        [
+            "murder_success",
+            "they_shunned",
+            "not_accomplice",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c stares at you like {PRONOUN/t_c/subject} {VERB/t_c/know/knows} something.]"
+        ]
     ]
 }

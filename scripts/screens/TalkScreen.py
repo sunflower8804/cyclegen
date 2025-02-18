@@ -64,6 +64,7 @@ class TalkScreen(Screens):
         self.testing = False
 
     def screen_switches(self):
+        super().screen_switches()
         self.the_cat = Cat.all_cats.get(game.switches['cat'])
         self.cat_dict.clear()
         self.other_dict.clear()
@@ -1216,7 +1217,7 @@ class TalkScreen(Screens):
                 continue
 
             # MURDER STUFF
-            if game.clan.murdered != {}:
+            if game.clan.murdered != {} and game.clan.age - game.clan.murdered["moon"] <= 5:
                 # accomplice
                 if cat.ID == game.clan.murdered["accomplice"][0]:
                     if "accomplice_agreed" in tags and game.clan.murdered["accomplice"][1] is False:
@@ -1257,8 +1258,14 @@ class TalkScreen(Screens):
                     ]):
                     if game.clan.murdered["murderer"] != game.clan.your_cat.ID:
                         continue
-            elif any(t in tags for t in ["accomplice", "accomplice_refused", "accomplice_agreed"]):
-                continue
+            else:
+                if any(tag in tags for tag in [
+                    "accomplice_agreed", "accomplice_refused",
+                    "accomplice", "murder_victim",
+                    "not_murder_victim", "murder_success",
+                    "murder_fail"
+                    ]):
+                    continue
 
             # ---
             if "non-related" in tags:
