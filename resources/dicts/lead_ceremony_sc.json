@@ -526,7 +526,9 @@
         "apprentice",
         "deputy",
         "medicine cat apprentice",
-        "mediator apprentice"
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
       ],
       "life_giving": [
         {
@@ -768,7 +770,9 @@
         "apprentice",
         "deputy",
         "medicine cat apprentice",
-        "mediator apprentice"
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
       ],
       "life_giving": [
         {
@@ -2932,7 +2936,9 @@
         "apprentice",
         "deputy",
         "medicine cat apprentice",
-        "mediator apprentice"
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
       ],
       "life_giving": [
         {
@@ -2991,7 +2997,9 @@
         "apprentice",
         "deputy",
         "medicine cat apprentice",
-        "mediator apprentice"
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
       ],
       "life_giving": [
         {
@@ -3032,6 +3040,137 @@
             "strength",
             "patience",
             "balance"
+          ]
+        }
+      ]
+    },
+    "flexible_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "flexible"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen's apprentice",
+        "queen"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c trots up to m_c with a fluid grace, giving {PRONOUN/m_c/object} a life for [virtue].",
+          "virtue": [
+            "adaptability",
+            "flexibility",
+            "open-mindedness"
+          ]
+        }
+      ]
+    },
+    "witty_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "witty"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c approaches m_c with a playful glint in {PRONOUN/r_c/poss} eyes, {PRONOUN/r_c/poss} movements spirited. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue].",
+          "virtue": [
+            "wit",
+            "cleverness",
+            "humor",
+            "unity",
+            "sympathy",
+            "mercy",
+            "friendship",
+            "instincts",
+            "farsightedness",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "strength",
+            "adaptability"
+          ]
+        }
+      ]
+    },
+    "trusting_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "trusting"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c walks forward with a warm smile on {PRONOUN/r_c/poss} face, {PRONOUN/r_c/poss} gaze filled with unwavering faith. As {PRONOUN/r_c/subject} {VERB/r_c/give/gives} m_c a life for [virtue], {PRONOUN/r_c/subject} rests {PRONOUN/r_c/poss} head on m_c's shoulder.",
+          "virtue": [
+            "trust",
+            "faith",
+            "unity",
+            "sympathy",
+            "mercy",
+            "friendship",
+            "instincts",
+            "farsightedness",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "strength",
+            "patience",
+            "adaptability"
+          ]
+        },
+        {
+          "text": "r_c's presence is reassuring, and {PRONOUN/r_c/subject} steadies m_c as the life for [virtue] flows into {PRONOUN/m_c/object}.",
+          "virtue": [
+            "trust",
+            "faith",
+            "unity",
+            "sympathy",
+            "mercy",
+            "friendship",
+            "instincts",
+            "farsightedness",
+            "confidence",
+            "courage",
+            "determination",
+            "endurance",
+            "strength",
+            "patience",
+            "adaptability"
           ]
         }
       ]
