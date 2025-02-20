@@ -2724,18 +2724,11 @@
             "confidence",
             "bravery",
             "certainty",
-            "clear judgment",
             "resilience",
             "courage",
-            "determination",
-            "endurance",
             "sympathy",
-            "farsightedness",
-            "friendship",
             "instincts",
-            "mercy",
-            "strength",
-            "unity"
+            "mercy"
           ]
         },
         {
@@ -2744,18 +2737,11 @@
             "confidence",
             "bravery",
             "certainty",
-            "clear judgment",
             "resilience",
             "courage",
-            "determination",
-            "endurance",
             "sympathy",
-            "farsightedness",
-            "friendship",
             "instincts",
-            "mercy",
-            "strength",
-            "unity"
+            "mercy"
           ]
         },
         {
@@ -2764,18 +2750,11 @@
             "confidence",
             "bravery",
             "certainty",
-            "clear judgment",
             "resilience",
             "courage",
-            "determination",
-            "endurance",
             "sympathy",
-            "farsightedness",
-            "friendship",
             "instincts",
-            "mercy",
-            "strength",
-            "unity"
+            "mercy"
           ]
         }
       ]
@@ -2800,62 +2779,24 @@
       ],
       "life_giving": [
         {
-          "text": "r_c approaches m_c with an intense, unblinking gaze, {PRONOUN/r_c/poss} movements deliberate and precise. {PRONOUN/r_c/subject/CAP} {VERB/r_c/press/presses} {PRONOUN/r_c/poss} muzzle against m_c's with a force that feels almost overwhelming, the weight of {PRONOUN/r_c/poss} focus pressing down like a storm cloud. The life for [virtue] surges through m_c, leaving a lingering sense of urgency.",
-          "virtue": [
-            "determination",
-            "focus",
-            "certainty",
-            "clear judgment",
-            "resilience",
-            "courage",
-            "endurance",
-            "strength",
-            "precision",
-            "farsightedness",
-            "instincts",
-            "mercy",
-            "unity",
-            "adaptability",
-            "innovation"
-          ]
-        },
-        {
           "text": "r_c's presence is suffocating, {PRONOUN/r_c/poss} eyes locked onto m_c with an intensity that feels almost predatory. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue], the energy coursing through m_c like a wildfire, consuming and relentless.",
           "virtue": [
             "determination",
             "focus",
             "certainty",
             "clear judgment",
-            "resilience",
-            "courage",
-            "endurance",
-            "strength",
             "precision",
-            "farsightedness",
-            "instincts",
-            "mercy",
-            "unity",
-            "adaptability",
             "innovation"
           ]
         },
         {
-          "text": "r_c moves toward m_c with a single-minded purpose, {PRONOUN/r_c/poss} every step calculated. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue], the act itself sharp and unyielding, as if {PRONOUN/r_c/subject} {VERB/r_c/are/is} carving {PRONOUN/r_c/poss} will into m_c's very being.",
+          "text": "r_c moves toward m_c with a single-minded purpose, {PRONOUN/r_c/poss} every step calculated. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue], the act itself sharp, as if {PRONOUN/r_c/subject} {VERB/r_c/are/is} carving {PRONOUN/r_c/poss} will into m_c's very being.",
           "virtue": [
             "determination",
             "focus",
             "certainty",
             "clear judgment",
-            "resilience",
-            "courage",
-            "endurance",
-            "strength",
             "precision",
-            "farsightedness",
-            "instincts",
-            "mercy",
-            "unity",
-            "adaptability",
             "innovation"
           ]
         }
@@ -2887,17 +2828,7 @@
             "strength",
             "certainty",
             "clear judgment",
-            "resilience",
-            "courage",
-            "determination",
-            "patience",
-            "stability",
-            "unity",
-            "mercy",
-            "instincts",
-            "farsightedness",
-            "adaptability",
-            "confidence"
+            "resilience"
           ]
         },
         {
@@ -2907,17 +2838,7 @@
             "strength",
             "certainty",
             "clear judgment",
-            "resilience",
-            "courage",
-            "determination",
-            "patience",
-            "stability",
-            "unity",
-            "mercy",
-            "instincts",
-            "farsightedness",
-            "adaptability",
-            "confidence"
+            "resilience"
           ]
         }
       ]
@@ -2947,18 +2868,8 @@
             "calmness",
             "balance",
             "patience",
-            "unity",
-            "sympathy",
-            "mercy",
-            "friendship",
-            "instincts",
             "farsightedness",
-            "adaptability",
-            "confidence",
-            "courage",
-            "determination",
-            "endurance",
-            "strength"
+            "adaptability"
           ]
         },
         {
@@ -2967,18 +2878,8 @@
             "calmness",
             "balance",
             "patience",
-            "unity",
-            "sympathy",
-            "mercy",
-            "friendship",
-            "instincts",
             "farsightedness",
-            "adaptability",
-            "confidence",
-            "courage",
-            "determination",
-            "endurance",
-            "strength"
+            "adaptability"
           ]
         }
       ]
@@ -3007,15 +2908,6 @@
           "virtue": [
             "humility",
             "unity",
-            "sympathy",
-            "mercy",
-            "friendship",
-            "instincts",
-            "farsightedness",
-            "adaptability",
-            "confidence",
-            "courage",
-            "determination",
             "endurance",
             "strength",
             "patience",
@@ -3026,15 +2918,6 @@
           "text": "r_c dips {PRONOUN/r_c/poss} head in respect before giving m_c a life for [virtue].",
           "virtue": [
             "humility",
-            "unity",
-            "sympathy",
-            "mercy",
-            "friendship",
-            "instincts",
-            "farsightedness",
-            "adaptability",
-            "confidence",
-            "courage",
             "determination",
             "endurance",
             "strength",
@@ -3097,19 +2980,7 @@
           "virtue": [
             "wit",
             "cleverness",
-            "humor",
-            "unity",
-            "sympathy",
-            "mercy",
-            "friendship",
-            "instincts",
-            "farsightedness",
-            "confidence",
-            "courage",
-            "determination",
-            "endurance",
-            "strength",
-            "adaptability"
+            "humor"
           ]
         }
       ]
@@ -3141,16 +3012,7 @@
             "unity",
             "sympathy",
             "mercy",
-            "friendship",
-            "instincts",
-            "farsightedness",
-            "confidence",
-            "courage",
-            "determination",
-            "endurance",
-            "strength",
-            "patience",
-            "adaptability"
+            "friendship"
           ]
         },
         {
@@ -3161,16 +3023,37 @@
             "unity",
             "sympathy",
             "mercy",
-            "friendship",
-            "instincts",
-            "farsightedness",
-            "confidence",
-            "courage",
-            "determination",
-            "endurance",
-            "strength",
-            "patience",
-            "adaptability"
+            "friendship"
+          ]
+        }
+      ]
+    },
+    "bouncy_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "bouncy"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c approaches m_c with a spring in {PRONOUN/r_c/poss} step and their {PRONOUN/r_c/poss} energy is infectious. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} m_c a life for [virtue].",
+          "virtue": [
+            "energy",
+            "enthusiasm",
+            "joy",
+            "confidence"
           ]
         }
       ]
