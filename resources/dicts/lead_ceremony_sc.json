@@ -2676,26 +2676,6 @@
             "strength",
             "unity"
           ]
-        },
-        {
-          "text": "r_c's voice is soft, almost lost in the vastness of StarClan, as {PRONOUN/r_c/subject} {VERB/r_c/give/gives} a life for [virtue].",
-          "virtue": [
-            "acceptance",
-            "bravery",
-            "certainty",
-            "clear judgment",
-            "confidence",
-            "courage",
-            "determination",
-            "endurance",
-            "sympathy",
-            "farsightedness",
-            "friendship",
-            "instincts",
-            "mercy",
-            "strength",
-            "unity"
-          ]
         }
       ]
     },
@@ -2745,7 +2725,7 @@
           ]
         },
         {
-          "text": "r_c's gaze is gentle but filled with quiet determination as {PRONOUN/r_c/subject} {VERB/r_c/approach/approaches} m_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue], the touch of {PRONOUN/r_c/poss} muzzle firm.",
+          "text": "r_c's gaze is gentle as {PRONOUN/r_c/subject} {VERB/r_c/approach/approaches} m_c but {PRONOUN/r_c/subject} {VERB/r_c/press/presses} her muzzle firmly against m_c's when giving a life for [virtue].",
           "virtue": [
             "confidence",
             "bravery",
@@ -2832,7 +2812,7 @@
           ]
         },
         {
-          "text": "r_c stands tall, {PRONOUN/r_c/poss} expression unreadable as {PRONOUN/r_c/subject} {VERB/r_c/approach/approaches} m_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue]. The energy settles into m_c, grounding {PRONOUN/m_c/object} with a sense of unshakable resolve.",
+          "text": "r_c stands tall, {PRONOUN/r_c/poss} expression unreadable as {PRONOUN/r_c/subject} {VERB/r_c/approach/approaches} m_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} a life for [virtue]. The energy settles into m_c, grounding {PRONOUN/m_c/object} with unshakable resolve.",
           "virtue": [
             "endurance",
             "strength",
@@ -3054,6 +3034,67 @@
             "enthusiasm",
             "joy",
             "confidence"
+          ]
+        }
+      ]
+    },
+    "energetic_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "energetic"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c pops out of the crowd, quickly apologizing as {PRONOUN/r_c/subject} accidentally bumps against the other starry=furred cats. r_c gives m_c a life for [virtue].",
+          "virtue": [
+            "energy",
+            "enthusiasm",
+            "joy",
+            "confidence",
+            "vitality"
+          ]
+        }
+      ]
+    },
+    "spontaneous_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "spontaneous"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c whaps {PRONOUN/r_c/poss} tail against m_c's face. m_c quickly spins around, sneezing on stardust, as the life for [virtue] flows into {PRONOUN/m_c/object}.",
+          "virtue": [
+            "spontaneity",
+            "adaptability",
+            "creativity",
+            "flexibility"
           ]
         }
       ]
