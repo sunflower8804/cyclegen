@@ -377,7 +377,7 @@ class MakeClanScreen(Screens):
                             "DAISY CORSAGE", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVER", "DAISY",
                             "SPRINGFEATHERS", "CLOVER", "LAVENDERTAILWRAP", "CELESTIALCHIMES",
                             "LUNARCHIMES", "SILVERLUNARCHIMES", "FLOWER MOSS", "SANVITALIAFLOWERS",
-                            "STARFLOWERS", "SHELL PACK", "MOSS2", "MUSHROOMS", "CLOVERS", "MUD", "LADYBUGS",
+                            "STARFLOWERS", "SHELL PACK", "MOSS2", "MUSHROOMS", "CLOVERS", "MUD", "LADYBUG",
                             "FIRBRANCHES", "CHERRYBLOSSOM", "MISTLETOE", "BROWNMOSSPELT", "BLEEDINGVINES",
                             "BLEEDINGHEART", "MOREFERN", "GRAYMOSSPELT", "FERN", "YELLOWWISTERIA", "WATTLE", "SPRINGFLOWERCORSAGE"]
         # god damn we have a lot of tail accessories
