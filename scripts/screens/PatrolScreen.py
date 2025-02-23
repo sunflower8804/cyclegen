@@ -1089,7 +1089,7 @@ class PatrolScreen(Screens):
 
         elif game.switches["patrol_category"] == "lifegen":
             the_cat = game.clan.your_cat
-            if not the_cat.dead and not the_cat.outside and not the_cat.moons <= 0 and the_cat not in self.current_patrol and not the_cat.not_working() and "2" not in game.switches['patrolled']:
+            if not the_cat.outside and not the_cat.moons <= 0 and the_cat not in self.current_patrol and not the_cat.not_working() and "2" not in game.switches['patrolled']:
                 self.able_cats.append(game.clan.your_cat)
 
         elif game.switches["patrol_category"] == "date":

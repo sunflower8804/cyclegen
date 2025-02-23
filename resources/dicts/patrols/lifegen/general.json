@@ -721,5 +721,110 @@
                 "weight": 20
             }
         ]
+    },
+    {
+        "patrol_id": "sc_test_1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "sc_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "StarClan lifegen patrol",
+        "decline_text": "StarClan lifegen patrol decline",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "StarClan lifegen patrol success",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "StarClan lifegen patrol failure",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "ur_test_1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "ur_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "UR lifegen patrol",
+        "decline_text": "UR lifegen patrol decline",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "UR lifegen patrol success",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "UR lifegen patrol failure",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "df_test_1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "DF lifegen patrol",
+        "decline_text": "DF lifegen patrol decline",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "DF lifegen patrol success",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "DF lifegen patrol failure",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
     }
 ]
