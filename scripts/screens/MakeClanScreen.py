@@ -4499,6 +4499,7 @@ class MakeClanScreen(Screens):
             self.your_cat.create_inheritance_new_cat()
             game.clan.your_cat = self.your_cat
             game.clan.your_cat.moons = -1
+            game.clan.add_cat(game.clan.your_cat)
             self.delete_example_cats()
         else:
             self.handle_create_other_cats()
