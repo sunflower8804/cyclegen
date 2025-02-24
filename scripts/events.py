@@ -524,7 +524,9 @@ class Events:
             game.clan.focus_cat = None
             
         if not game.clan.focus:
-            if game.clan.war.get("at_war"):
+            if "debug_ensure_focus" in game.config and game.config["debug_ensure_focus"] and game.config["debug_ensure_focus"] in dialogue_focuses:
+                game.clan.focus = game.config["debug_ensure_focus"]
+            elif game.clan.war.get("at_war"):
                 game.clan.focus = "war"
             elif game.clan.freshkill_pile.total_amount < game.clan.freshkill_pile.amount_food_needed()*0.5:
                 game.clan.focus = "starving"
