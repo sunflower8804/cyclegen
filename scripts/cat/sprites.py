@@ -331,7 +331,7 @@ class Sprites:
             self.make_group('wildaccs_2', (a, 0), f'acc_herbs{i}')
 
         for a, i in enumerate([
-            "LARGE LUNA", "LARGE COMET", "SMALL LUNA", "SMALL COMET", "LADYBUG"]):
+            "LARGE LUNA", "LARGE COMET", "SMALL LUNA", "SMALL COMET", "LADYBUGS"]):
             self.make_group('wildaccs_2', (a, 1), f'acc_wild{i}')
 
         for a, i in enumerate([
