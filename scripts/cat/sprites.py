@@ -870,7 +870,9 @@ class Sprites:
         """
 
         if os.path.exists("resources/dicts/clan_symbols.json"):
-            with open("resources/dicts/clan_symbols.json") as read_file:
+            with open(
+                "resources/dicts/clan_symbols.json", encoding="utf-8"
+            ) as read_file:
                 self.symbol_dict = ujson.loads(read_file.read())
 
         # U and X omitted from letter list due to having no prefixes
