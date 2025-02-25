@@ -1,7 +1,6 @@
 import logging
 import os
 from copy import copy
-from typing import Union
 
 import pygame
 import ujson
@@ -115,14 +114,15 @@ class Sprites:
             self.size = 50  # default, what base clangen uses
             print(f"lineart.png is not 3x7, falling back to {self.size}")
             print(
-                f"if you are a modder, please update scripts/cat/sprites.py and "
-                f"do a search for 'if width / 3 == height / 7:'"
+                "if you are a modder, please update scripts/cat/sprites.py and "
+                "do a search for 'if width / 3 == height / 7:'"
             )
 
         del width, height  # unneeded
 
         for x in [
             "lineart",
+            "lineartur",
             "lineartdf",
             "lineartdead",
             "eyes",
@@ -869,7 +869,9 @@ class Sprites:
         """
 
         if os.path.exists("resources/dicts/clan_symbols.json"):
-            with open("resources/dicts/clan_symbols.json") as read_file:
+            with open(
+                "resources/dicts/clan_symbols.json", encoding="utf-8"
+            ) as read_file:
                 self.symbol_dict = ujson.loads(read_file.read())
 
         # U and X omitted from letter list due to having no prefixes

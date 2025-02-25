@@ -15,7 +15,6 @@ from scripts.game_structure.ui_elements import (
     UISurfaceImageButton,
     CatButton,
 )
-from scripts.game_structure.windows import GameOver
 from scripts.screens.Screens import Screens
 from scripts.ui.generate_box import BoxStyles, get_box
 from scripts.ui.generate_button import get_button_dict, ButtonStyles
@@ -1010,14 +1009,8 @@ class EventsScreen(Screens):
                 anchors=anchor,
             )
             if i % 2 == 0:
-                self.event_display_elements[f"container{i}"].background_colour = (
-                    pygame.Color(game.config["theme"]["dark_mode_event_alternate"])
-                    if game.settings["dark mode"]
-                    else pygame.Color(
-                        game.config["theme"]["light_mode_event_alternate"]
-                    )
-                )
-                self.event_display_elements[f"container{i}"].rebuild()
+                display_element_container.background_colour = alternate_color
+                display_element_container.rebuild()
 
             self.event_display_containers.append(display_element_container)
 
