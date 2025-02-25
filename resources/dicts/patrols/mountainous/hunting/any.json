@@ -1429,12 +1429,8 @@
                 "weight": 20,
                 "injury": [
                     {
-                        "cats": [
-                            "r_c"
-                        ],
-                        "injuries": [
-                            "persistent headache"
-                        ]
+                        "cats": ["r_c"],
+                        "injuries": ["persistent headaches"]
                     }
                 ]
             },

@@ -81,7 +81,7 @@ class Pelt:
     # make sure to add plural and singular forms of new accs to acc_display.json so that they will display nicely
     plant_accessories = ['FERNS', 'BLEEDING HEARTS2', 'BLACK WHEAT', 'LARGE DEATHBERRY', 'BERRIES', 'GOLD FERNS', 'ORANGE POPPY', 'BULB YELLOW', 'NETTLE', 'HERBS', 'CATTAIL', 'LILY OF THE VALLEY', 'SNAPDRAGON', 'ACORN2', 'BULB PINK', 'BULB BLUE', 'DRY LAURELS', 'DAISY', 'HOLLY', 'BULB WHITE', 'GORSE', 'LILYPAD', 'BLUEBELLS', 'BLUE BERRIES', 'MAPLE LEAF', 'VINE', 'LAUREL', 'RASPBERRY', 'BULB ORANGE', 'OAK LEAVES', 'FLOWER MOSS', 'CYAN POPPY', 'WHEAT', 'CHERRY2', 'LAVENDER', 'SHELL PACK', 'PINK POPPY', 'POPPY', 'CLOVER2', 'DRY NETTLES', 'RYE STALK', 'MOSS2', 'MAPLE SEED', 'FORGET ME NOTS', 'PETALS', 'MUSHROOMS', 'CLOVER', 'CATMINT', 'JUNIPER', 'WHITE POPPY', 'HEATHER', 'DRY HERBS', 'PINECONE', 'SMALL DEATHBERRY', 'DRY CATMINT', 'CLOVERS'
                         ]
-    wild_accessories = ['ORANGEBUTTERFLY', 'WHITEPOINSETTIA', 'MUD', 'EGGSHELLS', 'FLOWERCROWN', 'STICKS', 'ASHY PAWS', 'CORALBELLS', 'SMALL LUNA', 'LILY', 'BLUEEGGSHELLS', 'CHERRYPLUMLEAVES', 'BROWNPELT', 'MORPHO BUTTERFLY', 'SPRINGFEATHERS', 'WOODENBIRCHANTLERS', 'DOGWOOD', 'REDCROWN', 'LADYBUGS', 'GULL FEATHERS', 'EASTEREGG', 'HONEYCOMB', 'DRIEDORANGE', 'FIRBRANCHES', 'BLACK CICADA', 'GRAYPELT', 'LILIESOFTHEVALLEY', 'MONARCH BUTTERFLY', 'FORSYTHIA', 'WHITEWOOL', 'YEWS', 'MUD PAWS', 'SPARROW FEATHERS', 'LARGE COMET', 'SANVITALIAFLOWERS', 'CALLUNA', 'YELLOWCROWN', 'ROSY MOTH WINGS', 'TEETHCOLLAR', 'CREAMWOOL', 'SNAILSHELL', 'JAY FEATHERS', 'MINTLEAF', 'STRAWMANE', 'CHERRYBLOSSOM', 'MISTLETOE', 'ROESKULL', 'BELLFLOWERS', 'WOODENOAKANTLERS', 'EAGLEFEATHER', 'CATKIN', 'CICADA WINGS', 'BROWNMOSSPELT', 'LARGE LUNA', 'LILYPADCROWN', 'BLEEDINGVINES','BLEEDINGHEART', 'TULIPPETALS', 'COTONEASTERWREATH', 'RED FEATHERS', 'BLUE FEATHERS', 'SMALL COMET', 'BLUEBUTTERFLY', 'MOREFERN', 'MOTH WINGS', 'REDPOINSETTIA', 'CLOVERFLOWER', 'SLIVERDUSTPLANT', 'PANSIES', 'GRAYMOSSPELT', 'BLACKWOOL', 'GRAYWOOL', 'FERN', "STARFLOWERS", "HEARTLEAVES", "LAVENDERHEADPIECE", "LAVENDERANKLET", "HOLLY2", "HOLLYVINES", "WINTERSTOAT", "BROWNSTOAT","LAVENDERTAILWRAP", "YELLOWWISTERIA", "WATTLE", "CORKHAT", "RAINBOWLORIKEET", "BILBY", "ZOOKEEPER"]
+    wild_accessories = ['SPARROW FEATHERS', 'HOLLYVINES', 'LARGE COMET', 'SNAILSHELL', 'LADYBUGS', 'BLACK CICADA', 'JAY FEATHERS', 'BROWNMOSSPELT', 'CHERRYBLOSSOM', 'CATKIN', 'EAGLEFEATHER', 'COTONEASTERWREATH', 'CICADA WINGS', 'DOGWOOD', 'CREAMWOOL', 'YELLOWWISTERIA', 'LAVENDERHEADPIECE', 'DRIEDORANGE', 'STARFLOWERS', 'SMALL COMET', 'ORANGEBUTTERFLY', 'ROESKULL', 'HEARTLEAVES', 'BLACKWOOL', 'MORPHO BUTTERFLY', 'WHITEPOINSETTIA', 'LAVENDERTAILWRAP', 'LILYPADCROWN', 'ZOOKEEPER', 'CALLUNA', 'EASTEREGG', 'YEWS', 'GRAYPELT', 'MONARCH BUTTERFLY', 'CLOVERFLOWER', 'ROSY MOTH WINGS', 'HONEYCOMB', 'SLIVERDUSTPLANT', 'BLUEEGGSHELLS', 'REDCROWN', 'SANVITALIAFLOWERS', 'BROWNPELT', 'RED FEATHERS', 'FORSYTHIA', 'FIRBRANCHES', 'PANSIES', 'ASHY PAWS', 'FLOWERCROWN', 'STRAWMANE', 'TULIPPETALS', 'BLUE FEATHERS', 'MUD PAWS', 'BLUEBUTTERFLY', 'EGGSHELLS', 'WOODENOAKANTLERS', 'SPRINGFEATHERS', 'GRAYWOOL', 'CORALBELLS', 'LARGE LUNA', 'WATTLE', 'BLEEDINGHEART', 'YELLOWCROWN', 'MOTH WINGS', 'MINTLEAF', 'FERN', 'BILBY', 'MUD', 'WOODENBIRCHANTLERS', 'WHITEWOOL', 'GULL FEATHERS', 'BLEEDINGVINES', 'WINTERSTOAT', 'GRAYMOSSPELT', 'BROWNSTOAT', 'REDPOINSETTIA', 'LILIESOFTHEVALLEY', 'RAINBOWLORIKEET', 'HOLLY2', 'CHERRYPLUMLEAVES', 'TEETHCOLLAR', 'LAVENDERANKLET', 'LILY', 'SMALL LUNA', 'MOREFERN', 'MISTLETOE', 'CORKHAT', 'BELLFLOWERS', 'STICKS']
     
     tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVER", "DAISY"]
     collars = [
@@ -280,8 +280,8 @@ class Pelt:
     def check_and_convert(self, convert_dict):
         """Checks for old-type properties for the appearance-related properties
         that are stored in Pelt, and converts them. To be run when loading a cat in. """
-        
-        # First, convert from some old names that may be in white_patches. 
+
+        # First, convert from some old names that may be in white_patches.
         if self.white_patches == 'POINTMARK':
             self.white_patches = "SEALPOINT"
         elif self.white_patches == 'PANTS2':
@@ -290,11 +290,11 @@ class Pelt:
             self.white_patches = 'ANYTWO'
         elif self.white_patches == "VITILIGO2":
             self.white_patches = "VITILIGOTWO"
-            
+
         if self.vitiligo == "VITILIGO2":
             self.vitiligo = "VITILIGOTWO"
 
-        # Move white_patches that should be in vit or points. 
+        # Move white_patches that should be in vit or points.
         if self.white_patches in Pelt.vit:
             self.vitiligo = self.white_patches
             self.white_patches = None
@@ -346,7 +346,7 @@ class Pelt:
                 self.cat_sprites['senior'] = 13
             elif self.cat_sprites['senior'] == 5:
                 self.cat_sprites['senior'] = 14
-        
+
         if self.pattern in convert_dict["old_tortie_patches"]:
             old_pattern = self.pattern
             self.pattern = convert_dict["old_tortie_patches"][old_pattern][1]
@@ -357,7 +357,7 @@ class Pelt:
             # tortiecolour and pelt_colour will be the same. Therefore, let's also re-set the pelt color
             self.colour = self.tortiecolour
             self.tortiecolour = convert_dict["old_tortie_patches"][old_pattern][0]
-            
+
         if self.pattern == "MINIMAL1":
             self.pattern = "MINIMALONE"
         elif self.pattern == "MINIMAL2":
@@ -366,8 +366,16 @@ class Pelt:
             self.pattern = "MINIMALTHREE"
         elif self.pattern == "MINIMAL4":
             self.pattern = "MINIMALFOUR"
-        
+
     def init_eyes(self, parents):
+        """ Sets eye color for this cat's pelt. Takes parents' eye colors into account.
+        Heterochromia is possible based on the white-ness of the pelt, so the pelt color and white_patches must be
+        set before this function is called.
+
+        :param parents: List[Cat] representing this cat's parents
+
+        :return: None
+        """
         if not parents:
             self.eye_colour = choice(Pelt.eye_colours)
         else:
@@ -375,7 +383,12 @@ class Pelt:
 
         # White patches must be initalized before eye color.
         num = game.config["cat_generation"]["base_heterochromia"]
-        if self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE'] or self.colour == 'WHITE':
+        if (
+            self.white_patches in Pelt.high_white
+            or self.white_patches in Pelt.mostly_white
+            or self.white_patches == 'FULLWHITE'
+            or self.colour == 'WHITE'
+        ):
             num = num - 90
         if self.white_patches == 'FULLWHITE' or self.colour == 'WHITE':
             num -= 10
@@ -656,10 +669,10 @@ class Pelt:
         return chosen_white
 
     def init_pattern_color(self, parents, gender) -> bool:
-        """Inits self.name, self.colour, self.length, 
-            self.tortiebase and determines if the cat 
-            will have white patche or not. 
-            Return TRUE is the cat should have white patches, 
+        """Inits self.name, self.colour, self.length,
+            self.tortiebase and determines if the cat
+            will have white patche or not.
+            Return TRUE is the cat should have white patches,
             false is not. """
 
         if parents:
@@ -927,7 +940,7 @@ class Pelt:
             self.points = None
 
     def init_white_patches(self, pelt_white, parents: tuple):
-        # Vit can roll for anyone, not just cats who rolled to have white in their pelt. 
+        # Vit can roll for anyone, not just cats who rolled to have white in their pelt.
         par_vit = []
         for p in parents:
             if p:
@@ -939,7 +952,7 @@ class Pelt:
             self.vitiligo = choice(Pelt.vit)
 
         # If the cat was rolled previously to have white patches, then determine the patch they will have
-        # these functions also handle points. 
+        # these functions also handle points.
         if pelt_white:
             if parents:
                 self.white_patches_inheritance(parents)
