@@ -3182,5 +3182,31 @@
             "[t_c presses {PRONOUN/t_c/poss} mud-covered body into your pelt to give you comfort. The mud is oddly comforting.]",
             "[Maybe your home really is in the Dark Forest.]"
         ]
+    ],
+    "grievingyou_sam1": [
+        [
+            "grieving_you",
+            "you_blind",
+            "they_blind",
+            "Any"
+        ],
+        [
+            "What the..?"
+        ]
+    ],
+    "df_sam2": [
+        [
+            "they_df",
+            "you_shunned",
+            "they_blind",
+            "they_deaf",
+            "you_blind",
+            "you_deaf",
+            "you_grieving"
+        ],
+        [
+            "[t_c presses {PRONOUN/t_c/poss} mud-covered body into your pelt to give you comfort. The mud is oddly comforting.]",
+            "[Maybe your home really is in the Dark Forest.]"
+        ]
     ]
 }

@@ -1195,7 +1195,7 @@ class Clan:
             game.clan.followingsc = clan_data['following_starclan']
         else:
             game.clan.followingsc = True
-        game.clan.reputation = int(clan_data["reputation"])
+        game.clan.reputation = max(0, min(100, int(clan_data["reputation"])))
 
         game.switches["error_message"] = "Error loading ---clan.json. Check clan age"
         game.clan.age = clan_data["clanage"]
