@@ -15,12 +15,7 @@ import ujson  # type: ignore
 
 from .names import Name
 from .pelts import Pelt
-from scripts.conditions import Illness, Injury, PermanentCondition, get_amount_cat_for_one_medic, \
-    medical_cats_condition_fulfilled
-import bisect
 
-from scripts.utility import get_personality_compatibility, event_text_adjust, update_sprite, \
-    leader_ceremony_text_adjust, get_cluster
 from scripts.game_structure.game_essentials import game
 from scripts.cat_relations.relationship import Relationship
 from scripts.game_structure import image_cache
@@ -33,7 +28,6 @@ from scripts.cat.personality import Personality
 from scripts.cat.skills import CatSkills
 from scripts.cat.thoughts import Thoughts
 from scripts.cat_relations.inheritance import Inheritance
-from scripts.cat_relations.relationship import Relationship
 from scripts.conditions import (
     Illness,
     Injury,
@@ -41,10 +35,7 @@ from scripts.conditions import (
     get_amount_cat_for_one_medic,
     medical_cats_condition_fulfilled,
 )
-from scripts.event_class import Single_Event
 from scripts.events_module.generate_events import GenerateEvents
-from scripts.game_structure import image_cache
-from scripts.game_structure.game_essentials import game
 from scripts.game_structure.screen_settings import screen
 from scripts.housekeeping.datadir import get_save_dir
 from scripts.utility import (
@@ -53,6 +44,7 @@ from scripts.utility import (
     event_text_adjust,
     update_sprite,
     leader_ceremony_text_adjust,
+    get_cluster
 )
 
 
@@ -89,7 +81,7 @@ class Cat:
     ordered_cat_list: List[Cat] = []
 
     # This in is in reverse order: top of the list at the bottom
-    
+
 
     rank_sort_order = [
         "newborn",
@@ -274,7 +266,7 @@ class Cat:
         self.faith = randint(-3, 3)
         self.connected_dialogue = {}
         self.lock_faith = "flexible"
-        
+
         self.prevent_fading = False  # Prevents a cat from fading.
         self.faded_offspring = []  # Stores of a list of faded offspring, for family page purposes.
 
@@ -333,7 +325,10 @@ class Cat:
                 self.age = 'kitten'
             elif status == 'elder':
                 self.age = 'senior'
-            elif status in ['apprentice', 'mediator apprentice', 'medicine cat apprentice', "queen's apprentice"]:
+            elif status in [
+                'apprentice', 'mediator apprentice',
+                'medicine cat apprentice', "queen's apprentice"
+                ]:
                 self.age = 'adolescent'
             else:
                 self.age = choice(["young adult", "adult", "adult", "senior adult"])
@@ -544,9 +539,6 @@ class Cat:
     def __hash__(self):
         return hash(self.ID)
 
-        
-        return "CAT OBJECT:" + self.ID
-            
     @property
     def mentor(self):
         """Return managed attribute '_mentor', which is the ID of the cat's mentor."""
@@ -2602,7 +2594,7 @@ class Cat:
 
         if (
             (not self.is_ill() and not self.is_injured() and not self.is_disabled())
-            or self.dead
+            or (self.dead and not self.is_disabled())
             or self.outside
         ):
             if os.path.exists(condition_file_path):
@@ -3892,7 +3884,6 @@ class Cat:
                 "dead": self.dead,
                 "paralyzed": self.pelt.paralyzed,
                 "no_kits": self.no_kits,
-                "exiled": self.exiled,
                 "no_retire": self.no_retire,
                 "no_mates": self.no_mates,
                 "exiled": self.exiled,
