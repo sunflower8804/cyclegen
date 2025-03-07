@@ -24,11 +24,39 @@
                 "text": "You gather everycat's input and propose a plan that takes into account the various perspectives. The Clan agrees on your plan, commending your mediation skills.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Knowing you would be cast aside in this particular case, you sit back and listen to the argument carefully, contemplating all the logic. When it seems like the flame finally died out, you propose a plan that uses the various perspectives to the Clan's advantage. No one seems to object.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "thoughtful",
+                    "calm",
+                    "flexible",
+                    "wise",
+                    "righteous",
+                    "lonesome",
+                    "gloomy",
+                    "mellow"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Despite your efforts, the Clan can't reach an agreement. The leader eventually has to step in and make a decision. This experience is a reminder that some disputes are hard to mediate.",
+                "text": "Despite your efforts, the Clan can't reach an agreement. l_n eventually has to step in and make a decision. This experience is a reminder that some disputes are hard to mediate.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You try your best to calm the dispute but the cats are adamant that as a mediator, you do not know nearly enough about storing fresh-kill to step into the argument. You're essentially ignored, and r_w has to step in before the argument brews further.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Though the argument only seems to be about the differencing opinions of storing fresh-kill, it intensifies far too quickly. You find yourself suspicious about the underlining cause. However, before you're able to dig deeper, the argument is settled with a sharp statement from r_w. Interesting.",
                 "exp": 0,
                 "weight": 20
             }
@@ -59,6 +87,16 @@
                 "text": "Using your mediation skills, you manage to diffuse the argument. Both warriors calm down, acknowledging your fair judgement.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "You suddenly remember something your former mentor taught you when you first started out as a mediator apprentice - don't ever get in between two agitated warriors. Keeping this in mind, you speed over to the closest trusted warrior and ask them to get involved instead.",
+                "exp": 5,
+                "weight": 20
+            },
+            {
+                "text": "Exasperated, you stroll over to the warriors and ask what is going on. They both seem to have different issues with the patrol that just transpired, but you're able to figure out that it's just petty arguing caused by being alone together. The only thing you can do is ask the deputy to not assign them together for a time.",
+                "exp": 10,
+                "weight": 20
             }
         ],
         "fail_outcomes": [
@@ -66,6 +104,22 @@
                 "text": "Despite your best efforts, the argument escalates. A senior warrior has to intervene. Not every situation can be easily mediated, but you learn from the experience.",
                 "exp": 0,
                 "weight": 20
+            },
+            {
+                "text": "Certainly, the warriors are mature enough to handle their own issues - you're too busy to mediate petty fights. Later, you realize you messed up as you hear from the grapevine that two warriors got into a claw fight and ended up in the medicine den... Whoops...",
+                "exp": 0,
+                "weight": 10
+            },
+            {
+                "text": "With much hesitance, you try to mediate the situation, but it seems like your nervous behavior made it worse. In no time at all, the warrior pounce on each other and you're forced to find a cat stronger than you to pull them a part. You don't notice you're bleeding until after the fight ends.",
+                "exp": 0,
+                "weight": 1,
+                "injury": [
+                    {
+                        "cats": ["p_l"],
+                        "injuries": ["claw-wound"]
+                    }
+                ]
             }
         ]
     },
@@ -94,11 +148,21 @@
                 "text": "You hear both sides and suggest a compromise that satisfies everycat. Your skills as a mediator are commended by the Clan.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "Noticing that the core of the argument is that they keep talking over each other, you propose a solution. Whoever holds the feather is the only one that can talk, and the feather will be passed to the next cat when you say so. It worked splendidly. Sometimes all you have to do is treat full grown cats like kittens.",
+                "exp": 10,
+                "weight": 20
             }
         ],
         "fail_outcomes": [
             {
                 "text": "Despite your best efforts, the dispute continues. A senior warrior has to intervene. It's a learning experience about how hard mediation can sometimes be.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Unfortunately, you don't believe it's your place to try to mediate something so dependent on the deputy and you hesitate. It appears you hesitate for too long, and before you know it, the warriors are doing it their own way. Whether that is a good or bad thing is up to interpretation...",
                 "exp": 0,
                 "weight": 20
             }
@@ -129,11 +193,26 @@
                 "text": "You suggest a friendly race to determine the fastest runner. The apprentices agree, the argument is settled, and everycat enjoys the race.",
                 "exp": 10,
                 "weight": 20
+            },
+            {
+                "text": "The argument is so mediocre that it was resolved with a simple snap to halt the argument. The apprentices huff and grumble, but they lower their voices and drop the debate... for now.",
+                "exp": 0,
+                "weight": 20
             }
         ],
         "fail_outcomes": [
             {
                 "text": "Despite your suggestion of a friendly race, the argument continues. It takes a while for the situation to calm down, but you learn some valuable lessons in mediation.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Come on, do you really need to step into an argument so mediocre?",
+                "exp": 0,
+                "weight": 1
+            },
+            {
+                "text": "You brush off the argument as two apprentices just having a heated, but friendly, debate and don't think much of it. However, you notice that perhaps they're too competitive and later find that they drove themselves into exhaustion trying to prove that they're better. Oh, apprentices...",
                 "exp": 0,
                 "weight": 20
             }
