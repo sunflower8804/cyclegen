@@ -663,6 +663,15 @@ class Patrol:
                         continue
 
             if game.switches["patrol_category"] in ['lifegen', 'df', 'date']:
+                if game.switches["patrol_category"] == "lifegen":
+                    if not any(p in patrol.types for p in ["sc_lifegen", "ur_lifegen", "df_lifegen"]) and game.clan.your_cat.dead:
+                        continue
+                    if "sc_lifegen" in patrol.types and (not game.clan.your_cat.dead or game.clan.your_cat.df or game.clan.your_cat.ID in game.clan.unknown_cats):
+                        continue
+                    elif "df_lifegen" in patrol.types and (not game.clan.your_cat.dead or not game.clan.your_cat.df or game.clan.your_cat.ID in game.clan.unknown_cats):
+                        continue
+                    elif "ur_lifegen" in patrol.types and (not game.clan.your_cat.dead or game.clan.your_cat.df or game.clan.your_cat.ID not in game.clan.unknown_cats):
+                        continue
                 if game.switches["patrol_category"] == "df":
                     if len(self.patrol_cats) > 1:
                         other_cat = self.patrol_cats[1]

@@ -2418,7 +2418,7 @@ class Cat:
                 "LUNARCHIMES", "SILVERLUNARCHIMES", "FLOWER MOSS", "SANVITALIAFLOWERS",
                 "STARFLOWERS", "SHELL PACK", "MOSS2", "MUSHROOMS", "CLOVERS", "MUD", "LADYBUGS",
                 "FIRBRANCHES", "CHERRYBLOSSOM", "MISTLETOE", "BROWNMOSSPELT", "BLEEDINGVINES",
-                "BLEEDINGHEART", "MOREFERN", "GRAYMOSSPELT", "FERN"
+                "BLEEDINGHEART", "MOREFERN", "GRAYMOSSPELT", "FERN", "YELLOWWISTERIA", "WATTLE", "SPRINGFLOWERCORSAGE"
                 ]:
                 if acc in self.pelt.accessories:
                     self.pelt.inventory.remove(acc)
@@ -3946,15 +3946,12 @@ class Cat:
                 "lock_faith": self.lock_faith if self.lock_faith else "flexible"
             }
 
-    def determine_next_and_previous_cats(
-        self, filter_func: Callable[[Cat], bool] = None
-    ):
-
+    def determine_next_and_previous_cats(self, filter_func: Callable[[Cat], bool] = None):
         """Determines where the next and previous buttons point to, relative to this cat.
 
         :param status: Allows you to constrain the list by status
-        :param filter_func: Allows you to constrain the list by any attribute of
-            the Cat object. Takes a function which takes in a Cat instance and
+        :param filter_func: Allows you to constrain the list by any attribute of 
+            the Cat object. Takes a function which takes in a Cat instance and 
             returns a boolean.
         """
         sorted_specific_list = [
