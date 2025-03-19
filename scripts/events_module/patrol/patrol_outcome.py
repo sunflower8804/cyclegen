@@ -378,7 +378,8 @@ class PatrolOutcome:
         allowed_specific = [
             x
             for x in self.can_have_stat
-            if x in ("r_c", "p_l", "app1", "app2", "any", "not_pl_rc", "not_pl")
+            # if x in ("r_c", "p_l", "app1", "app2", "any", "not_pl_rc", "not_pl")
+            # LG: commented out bc any lifegen abbrev can go in can_have_stat
         ]
         for i in patrol.patrol_cat_dict.items():
             if i[0] in self.can_have_stat:
