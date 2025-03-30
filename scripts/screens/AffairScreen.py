@@ -67,9 +67,6 @@ class AffairScreen(Screens):
                 if not self.selected_cat.dead:
                     self.update_selected_cat()
                     self.change_cat(self.selected_cat)
-                if not self.selected_cat.outside:
-                    self.update_selected_cat()
-                    self.change_cat(self.selected_cat)
                     
                     # resetting selected cat so theyre not still in the box when reentering the affair screen next moon
                     self.selected_cat = None
