@@ -871,6 +871,10 @@ class Patrol:
                 self.random_cat.relationships[game.clan.your_cat.ID].comfortable -= randint(1,5)
             except:
                 print("ERROR: handling relationship changes in date patrol")
+
+        if success and game.switches["patrol_category"] == "df":
+            game.clan.your_cat.df_patrols += 1
+            
         print(f"PATROL ID: {self.patrol_event.patrol_id} | SUCCESS: {success}")
         
         # Run the chosen outcome

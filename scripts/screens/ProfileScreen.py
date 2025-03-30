@@ -679,6 +679,7 @@ class ProfileScreen(Screens):
                 self.change_screen('murder screen')
             elif event.ui_element == self.join_df_button:
                 game.clan.your_cat.joined_df = True
+                game.clan.your_cat.df_join_moon = game.clan.age
                 game.clan.your_cat.faith -=1
                 game.clan.your_cat.update_df_mentor()
                 self.join_df_button.disable()
