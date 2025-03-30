@@ -67,6 +67,9 @@ class AffairScreen(Screens):
                 if not self.selected_cat.dead:
                     self.update_selected_cat()
                     self.change_cat(self.selected_cat)
+                if not self.selected_cat.outside:
+                    self.update_selected_cat()
+                    self.change_cat(self.selected_cat)
                     
                     # resetting selected cat so theyre not still in the box when reentering the affair screen next moon
                     self.selected_cat = None
@@ -446,11 +449,13 @@ class AffairScreen(Screens):
 
         # Behold! The uglest list comprehension ever created!
         valid_mates = [i for i in Cat.all_cats_list if
-                    not i.faded
-                    and self.the_cat.is_potential_mate(
-                        i, for_love_interest=False,
-                        age_restriction=True)
-                    and i.ID not in self.the_cat.mate]
+                       not i.faded
+                       and self.the_cat.is_potential_mate(
+                           i, for_love_interest=False,
+                           age_restriction=True
+                       )
+                       and i.ID not in self.the_cat.mate
+                       and i.outside == self.the_cat.outside]
 
         return valid_mates
 
