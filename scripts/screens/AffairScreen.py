@@ -446,11 +446,13 @@ class AffairScreen(Screens):
 
         # Behold! The uglest list comprehension ever created!
         valid_mates = [i for i in Cat.all_cats_list if
-                    not i.faded
-                    and self.the_cat.is_potential_mate(
-                        i, for_love_interest=False,
-                        age_restriction=True)
-                    and i.ID not in self.the_cat.mate]
+                       not i.faded
+                       and self.the_cat.is_potential_mate(
+                           i, for_love_interest=False,
+                           age_restriction=True
+                       )
+                       and i.ID not in self.the_cat.mate
+                       and i.outside == self.the_cat.outside]
 
         return valid_mates
 
