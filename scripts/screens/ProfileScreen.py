@@ -378,63 +378,7 @@ class ProfileScreen(Screens):
                 self.toggle_accessories_tab()
             elif event.ui_element == self.clear_accessories:
                 self.the_cat.pelt.accessories.clear()
-                b_data = event.ui_element.blit_data[1]
-                b_2data = []
-                pos_x = 10
-                pos_y = 125
-                i = 0
-                cat = self.the_cat
-                age = cat.age
-                cat_sprite = str(cat.pelt.cat_sprites[cat.age])
-
-
-                # setting the cat_sprite (bc this makes things much easier)
-                if cat.not_working() and age != 'newborn' and game.config['cat_sprites']['sick_sprites']:
-                    if age in ['kitten', 'adolescent']:
-                        cat_sprite = str(19)
-                    else:
-                        cat_sprite = str(18)
-                elif cat.pelt.paralyzed and age != 'newborn':
-                    if age in ['kitten', 'adolescent']:
-                        cat_sprite = str(17)
-                    else:
-                        if cat.pelt.length == 'long':
-                            cat_sprite = str(16)
-                        else:
-                            cat_sprite = str(15)
-                else:
-                    if age == 'elder' and not game.config['fun']['all_cats_are_newborn']:
-                        age = 'senior'
-
-                    if game.config['fun']['all_cats_are_newborn']:
-                        cat_sprite = str(cat.pelt.cat_sprites['newborn'])
-                    else:
-                        cat_sprite = str(cat.pelt.cat_sprites[age])
-
-                for b in self.accessory_buttons.values():
-                    b_2data.append(b.blit_data[1])
-                if b_data in b_2data:
-                    value = b_2data.index(b_data)
-                    self.generate_inventory(value, cat, cat_sprite, i, pos_x, pos_y)
-                self.profile_elements["cat_image"].kill()
-                
-                self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(
-                    ui_scale(pygame.Rect((100, 200), (150, 150))),
-                    pygame.transform.scale(
-                        self.the_cat.sprite, ui_scale_dimensions((150, 150))
-                    ),
-                    manager=MANAGER,
-                )
-                self.profile_elements["cat_image"].disable()
-
-                self.profile_elements["cat_info_column1"].kill()
-                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
-                    self.generate_column1(self.the_cat),
-                    ui_scale(pygame.Rect((300, 220), (180, 200))),
-                    object_id=get_text_box_theme("#text_box_22_horizleft"),
-                    line_spacing=1,
-                    manager=MANAGER,
-                )
+                self.build_inventory(event)
                 self.update_disabled_buttons_and_text()
             elif "leader_ceremony" in self.profile_elements and \
                     event.ui_element == self.profile_elements["leader_ceremony"]:
@@ -739,65 +683,7 @@ class ProfileScreen(Screens):
                 self.display_conditions_page()
 
         elif self.open_tab == 'accessories':
-            b_data = event.ui_element.blit_data[1]
-            b_2data = []
-            pos_x = 10
-            pos_y = 125
-            i = 0
-            cat = self.the_cat
-            age = cat.age
-            cat_sprite = str(cat.pelt.cat_sprites[cat.age])
-
-
-            # setting the cat_sprite (bc this makes things much easier)
-            if cat.not_working() and age != 'newborn' and game.config['cat_sprites']['sick_sprites']:
-                if age in ['kitten', 'adolescent']:
-                    cat_sprite = str(19)
-                else:
-                    cat_sprite = str(18)
-            elif cat.pelt.paralyzed and age != 'newborn':
-                if age in ['kitten', 'adolescent']:
-                    cat_sprite = str(17)
-                else:
-                    if cat.pelt.length == 'long':
-                        cat_sprite = str(16)
-                    else:
-                        cat_sprite = str(15)
-            else:
-                if age == 'elder' and not game.config['fun']['all_cats_are_newborn']:
-                    age = 'senior'
-
-                if game.config['fun']['all_cats_are_newborn']:
-                    cat_sprite = str(cat.pelt.cat_sprites['newborn'])
-                else:
-                    cat_sprite = str(cat.pelt.cat_sprites[age])
-
-            for b in self.accessory_buttons.values():
-                b_2data.append(b.blit_data[1])
-            if b_data in b_2data:
-                value = b_2data.index(b_data)
-                self.generate_inventory(value, cat, cat_sprite, i, pos_x, pos_y)
-
-                self.profile_elements["cat_image"].kill()
-
-                self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(
-                    ui_scale(pygame.Rect((100, 200), (150, 150))),
-                    pygame.transform.scale(
-                        self.the_cat.sprite, ui_scale_dimensions((150, 150))
-                    ),
-                    manager=MANAGER,
-                )
-                self.profile_elements["cat_image"].disable()
-
-                self.profile_elements["cat_info_column1"].kill()
-                self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
-                    self.generate_column1(self.the_cat),
-                    ui_scale(pygame.Rect((300, 220), (180, 200))),
-                    object_id=get_text_box_theme("#text_box_22_horizleft"),
-                    line_spacing=1,
-                    manager=MANAGER,
-                )
-
+            self.build_inventory(event)
 
     def screen_switches(self):
         super().screen_switches()
@@ -2941,13 +2827,12 @@ class ProfileScreen(Screens):
             for a, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len)], start = start_index):
                 try:
                     if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
-                        self.inventory_display(cat, cat_sprite, accessory, i, pos_x, pos_y)
+                        self.inventory_display(cat, cat_sprite, accessory, pos_x, pos_y)
                         self.accessories_list.append(accessory)
                         pos_x += 60
                         if pos_x >= 550:
                             pos_x = 0
                             pos_y += 60
-                        i += 1
                 except:
                     continue
 
@@ -3796,11 +3681,57 @@ class ProfileScreen(Screens):
                     return False
                 else:
                     return True
-    def inventory_display(self, cat, cat_sprite, accessory, i, pos_x, pos_y):
+    
+    def build_inventory(self, event):
+        """
+        Puts together the accessory inventory
+        """
+        b_data = event.ui_element.blit_data[1]
+        b_2data = []
+        pos_x = 10
+        pos_y = 125
+
+        for b in self.accessory_buttons.values():
+            b_2data.append(b.blit_data[1])
+        if b_data in b_2data:
+            value = b_2data.index(b_data)
+            self.generate_inventory(value, pos_x, pos_y)
+
+        self.profile_elements["cat_image"].kill()
+        self.profile_elements["cat_image"] = pygame_gui.elements.UIImage(
+            ui_scale(pygame.Rect((100, 200), (150, 150))),
+            pygame.transform.scale(
+                self.the_cat.sprite, ui_scale_dimensions((150, 150))
+            ),
+            manager=MANAGER,
+        )
+        self.profile_elements["cat_image"].disable()
+
+        self.profile_elements["cat_info_column1"].kill()
+        self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
+            self.generate_column1(self.the_cat),
+            ui_scale(pygame.Rect((300, 220), (180, 200))),
+            object_id=get_text_box_theme("#text_box_22_horizleft"),
+            line_spacing=1,
+            manager=MANAGER,
+        )
+    
+    def inventory_display(self, cat, cat_sprite, accessory, pos_x, pos_y):
+        """
+        Creates the individual accessory buttons
+        """
+        
         if accessory in cat.pelt.accessories:
-            self.accessory_buttons[str(i)] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#fav_marker")
+            button_id = "#fav_marker"
         else:
-            self.accessory_buttons[str(i)] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#blank_button")
+            button_id = "#blank_button"
+        
+        self.accessory_buttons[str(accessory) + "_select"] = UIImageButton(
+            ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))),
+            "",
+            tool_tip_text=accessory,
+            object_id=button_id
+            )
 
         acc_dict = {
             "acc_herbs": cat.pelt.plant_accessories,
@@ -3819,10 +3750,43 @@ class ProfileScreen(Screens):
 
         for acc_string, acc_list in acc_dict.items():
             if accessory in acc_list:
-                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites[acc_string + accessory + cat_sprite], manager=MANAGER)
+                self.cat_list_buttons[str(cat) + str(accessory) + "_sprite"] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites[acc_string + accessory + cat_sprite], manager=MANAGER)
                 break
     
-    def generate_inventory(self, value, cat, cat_sprite, i, pos_x, pos_y, search=False):
+    def generate_inventory(self, value, pos_x, pos_y, search=False):
+        """
+        Puts together the inventory structure. Button locations, cat_sprite
+        """
+
+        # CAT SPRITE
+        cat = self.the_cat
+        age = cat.age
+        cat_sprite = str(cat.pelt.cat_sprites[cat.age])
+
+        # setting the cat_sprite (bc this makes things much easier)
+        if cat.not_working() and age != 'newborn' and game.config['cat_sprites']['sick_sprites']:
+            if age in ['kitten', 'adolescent']:
+                cat_sprite = str(19)
+            else:
+                cat_sprite = str(18)
+        elif cat.pelt.paralyzed and age != 'newborn':
+            if age in ['kitten', 'adolescent']:
+                cat_sprite = str(17)
+            else:
+                if cat.pelt.length == 'long':
+                    cat_sprite = str(16)
+                else:
+                    cat_sprite = str(15)
+        else:
+            if age == 'elder' and not game.config['fun']['all_cats_are_newborn']:
+                age = 'senior'
+
+            if game.config['fun']['all_cats_are_newborn']:
+                cat_sprite = str(cat.pelt.cat_sprites['newborn'])
+            else:
+                cat_sprite = str(cat.pelt.cat_sprites[age])
+        
+        # Preparing buttons
         n = value
         if self.accessories_list[n] == self.the_cat.pelt.accessory:
             self.the_cat.pelt.accessory = None
@@ -3862,12 +3826,11 @@ class ProfileScreen(Screens):
         
         if self.cat_inventory and display_acc:
             for a, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len + start_index)], start = start_index):
-                self.inventory_display(cat, cat_sprite, accessory, i, pos_x, pos_y)
+                self.inventory_display(cat, cat_sprite, accessory, pos_x, pos_y)
                 pos_x += 60
                 if pos_x >= 550:
                     pos_x = 0
                     pos_y += 60
-                i += 1
 
     def on_use(self):
         super().on_use()
