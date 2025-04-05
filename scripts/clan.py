@@ -24,7 +24,6 @@ from scripts.cat.pelts import Pelt
 from scripts.cat.history import History
 from scripts.cat.names import names
 from scripts.cat.sprites import sprites
-from sys import exit  # pylint: disable=redefined-builtin
 from scripts.cat.names import Name
 from scripts.clan_resources.freshkill import FreshkillPile, Nutrition
 from scripts.events_module.generate_events import OngoingEvent

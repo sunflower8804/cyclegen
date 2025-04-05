@@ -10,12 +10,11 @@ import pygame_gui
 from pygame_gui.core import ObjectID
 
 import scripts.screens.screens_core.screens_core
-from scripts.cat.cats import create_example_cats, create_cat, Cat
+from scripts.cat.cats import create_example_cats, Cat
 from scripts.cat.pelts import Pelt
 from scripts.cat.personality import Personality
 from scripts.cat.names import names
 from scripts.clan import Clan
-from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import (
     game,
 )

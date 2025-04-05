@@ -1,7 +1,6 @@
 import logging
 import os
 from copy import copy
-from typing import Union
 
 import pygame
 import ujson
@@ -115,8 +114,8 @@ class Sprites:
             self.size = 50  # default, what base clangen uses
             print(f"lineart.png is not 3x7, falling back to {self.size}")
             print(
-                f"if you are a modder, please update scripts/cat/sprites.py and "
-                f"do a search for 'if width / 3 == height / 7:'"
+                "if you are a modder, please update scripts/cat/sprites.py and "
+                "do a search for 'if width / 3 == height / 7:'"
             )
 
         del width, height  # unneeded
