@@ -21684,8 +21684,8 @@
             "['Do you miss it?']",
             "Do I wha?",
             "[Do you miss me being a kit?']",
-            "I actually do... But, I know you have to grow up, that's life. I just don't think I'm ready to see my little sibling reach that stage yet.",
-            "['Don't worry, you'll still be my older sibling no matter what!']",
+            "I actually do... But, I know you have to grow up, that's life. I just don't think I'm ready to see my little {PRONOUN/y_c/sibling} reach that stage yet.",
+            "['Don't worry, you'll still be my older {PRONOUN/t_c/sibling} no matter what!']",
             "Well, duh! Mousebrain, what will ever stop me from loving you?"
         ]
     ],
@@ -21740,7 +21740,7 @@
             "half sibling"
         ],
         [
-            "Well, well, well. Look who we have here, if it isn't my sibling y_c.",
+            "Well, well, well. Look who we have here, if it isn't my {PRONOUN/y_c/sibling} y_c.",
             "['What do you want, t_c?']",
             "OUCH! Harsh! Oh, nothing! Is it so bad that I want to spend time with my favourite family?",
             "[You simply raise a brow at {PRONOUN/t_c/object}, t_c's smile quickly faded- {PRONOUN/t_c/poss} expression falling flat.]",
@@ -21782,16 +21782,16 @@
         [
             "[y_a sits across from you, nodding as you critique {PRONOUN/y_a/object} on {PRONOUN/y_a/poss} lesson. It's just past sunhigh and you thought letting y_a off for the rest of the day would be best.]",
             "Fluffbutt! Hey!",
-            "[y_a chokes back a laugh, you whip around to be faced with your sibling, t_c waltzing up to you bearing a charming grin. As {PRONOUN/t_c/subject} stand before you, it's very clear {PRONOUN/t_c/subject} has no idea that y_a is behind you.]",
+            "[y_a chokes back a laugh, you whip around to be faced with your {PRONOUN/t_c/sibling}, t_c waltzing up to you bearing a charming grin. As {PRONOUN/t_c/subject} stand before you, it's very clear {PRONOUN/t_c/subject} has no idea that y_a is behind you.]",
             "Hello! Hey so, I found that place I was telling you about! The twoleg den has this large wired boundary filled with feathered prey. They're a type of bird but I have no idea what exactly they are.",
             "['t_c-']",
             "But we can check it out and see how they taste! How does that soun- OH! STARCLAN!",
             "['I was trying to tell you...']",
             "OH... Oh hey there y_a, I had no idea that you were here! Haha...",
-            "[y_a looks at you in confusion, this side of your sibling clearly something {PRONOUN/y_a/subject} hasn't seen before. In all fairness, t_c was normally very formal- at least for every other cat in the Clan besides you.]",
+            "[y_a looks at you in confusion, this side of your {PRONOUN/t_c/sibling} clearly something {PRONOUN/y_a/subject} hasn't seen before. In all fairness, t_c was normally very formal- at least for every other cat in the Clan besides you.]",
             "I'm sorry... It-...",
             "y_a, let's make a deal, you don't say a word of today and y_c and I can bring you back some of that prey if you would like?",
-            "[You glare at your sibling only to hold it back as y_a accepts, under the condition that {PRONOUN/y_a/subject} gets the fattest one.]",
+            "[You glare at your {PRONOUN/t_c/sibling} only to hold it back as y_a accepts, under the condition that {PRONOUN/y_a/subject} gets the fattest one.]",
             "Deal! Great! Now, not a word, ahem. Well, then, y_c, I suggest we get going."
         ]
     ],
@@ -22107,9 +22107,9 @@
             "from_parent"
         ],
         [
-            "I'm a little nervous, but I feel better knowing you're here. It means you will be able to spend more time with them actually, imagine that! How do you feel about being an older sibling?",
+            "I'm a little nervous, but I feel better knowing you're here. It means you will be able to spend more time with them actually, imagine that! How do you feel about being an older {PRONOUN/y_c/sibling}?",
             "With someone like you watching out for them, they will be just fine.",
-            "I can't wait for you to meet them, you're going to be the best older sibling they could ever ask for."
+            "I can't wait for you to meet them, you're going to be the best older {PRONOUN/y_c/sibling} they could ever ask for."
         ]
     ],
     "TinyTeddy_stable_theyparent_theyany_youdeputy_01": [
@@ -25445,7 +25445,7 @@
         [
             "H-hey, y_c? Can I ask you a silly question?",
             "[t_c's fur is ruffled and {PRONOUN/t_c/poss} eyes are bleary. {PRONOUN/t_c/subject/CAP} clearly just woke up.]",
-            "Yesterday, did... did plove_t_s call me a terrible sibling in front of the whole Clan?",
+            "Yesterday, did... did plove_t_s call me a terrible {PRONOUN/t_c/sibling} in front of the whole Clan?",
             "[You can't imagine plove_t_s saying such a thing and you shake your head, confused. t_c sags in relief.]",
             "Oh... it was just a dream, then. It felt so real!",
             "...Don't tell plove_t_s about this, okay?"
