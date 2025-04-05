@@ -266,7 +266,10 @@ class Cat:
         self.faith = randint(-3, 3)
         self.connected_dialogue = {}
         self.lock_faith = "flexible"
-
+        self.df_join_moon = 0
+        self.df_patrols = 0
+        self.graduated_df = False
+        
         self.prevent_fading = False  # Prevents a cat from fading.
         self.faded_offspring = []  # Stores of a list of faded offspring, for family page purposes.
 
@@ -3943,7 +3946,10 @@ class Cat:
                 "faith": self.faith if self.faith else 0,
                 "no_faith": self.no_faith if self.no_faith else False,
                 "connected_dialogue": self.connected_dialogue if self.connected_dialogue else {},
-                "lock_faith": self.lock_faith if self.lock_faith else "flexible"
+                "lock_faith": self.lock_faith if self.lock_faith else "flexible",
+                "df_patrols": self.df_patrols if self.df_patrols else 0,
+                "df_join_moon": self.df_join_moon if self.df_join_moon else 0,
+                "graduated_df": self.graduated_df if self.graduated_df else False
             }
 
     def determine_next_and_previous_cats(self, filter_func: Callable[[Cat], bool] = None):
@@ -3990,7 +3996,6 @@ class Cat:
             ),
             sorted_specific_list[idx - 1].ID if idx - 1 >= 0 else 0,
         )
-
 
 # ---------------------------------------------------------------------------- #
 #                               END OF CAT CLASS                               #

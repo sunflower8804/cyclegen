@@ -3019,6 +3019,15 @@
             "joy",
             "confidence"
           ]
+        },
+        {
+          "text": "r_c's eyes light up as they greet m_c, gifting {PRONOUN/m_c/object} with a life for [virtue].",
+          "virtue": [
+            "energy",
+            "enthusiasm",
+            "joy",
+            "confidence"
+          ]
         }
       ]
     },
@@ -3079,6 +3088,126 @@
             "adaptability",
             "creativity",
             "flexibility"
+          ]
+        }
+      ]
+    },
+    "cowardly_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "cowardly"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c nervously bows {PRONOUN/r_c/poss} head before approaching m_c, giving {PRONOUN/m_c/object} a life for [virtue].",
+          "virtue": [
+            "courage",
+            "bravery",
+            "determination",
+            "subtlety"
+          ]
+        }
+      ]
+    },
+    "reserved_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "reserved"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c pads up to m_c, appraising {PRONOUN/m_c/object} for a moment, before granting {PRONOUN/m_c/object} a life for [virtue]",
+          "virtue": [
+            "calm",
+            "balance",
+            "clarity",
+            "forethought"
+          ]
+        }
+      ]
+    },
+    "emotional_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "emotional"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "Tears well up in r_c's eyes as {PRONOUN/r_c/subject} {VERB/r_c/grant/grants} m_c a life for [virtue].",
+          "virtue": [
+            "happiness",
+            "cheerfulness",
+            "affection",
+            "emotion"
+          ]
+        }
+      ]
+    },
+    "methodical_starclanwarrior": {
+      "tags": [],
+      "lead_trait": [],
+      "star_trait": [
+        "methodical"
+      ],
+      "rank": [
+        "warrior",
+        "elder",
+        "medicine cat",
+        "mediator",
+        "apprentice",
+        "deputy",
+        "medicine cat apprentice",
+        "mediator apprentice",
+        "queen",
+        "queen's apprentice"
+      ],
+      "life_giving": [
+        {
+          "text": "r_c assures m_c that {PRONOUN/m_c/subject} will do well as the leader of the Clan -- as long as they follow their predecessor's lead. r_c grants m_c a life for [virtue].",
+          "virtue": [
+            "intelligence",
+            "adaptability",
+            "wisdom",
+            "wit"
           ]
         }
       ]

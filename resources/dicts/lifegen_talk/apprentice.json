@@ -2489,7 +2489,7 @@
             "It hurts a little, but I don't think it's anything too serious but tm_n told me to get it checked out.",
             "...So sorry for the trouble.",
             "[You shake your head and ask to see {PRONOUN/t_c/poss} paw. {PRONOUN/t_c/subject/CAP} {VERB/t_c/show/shows} you and lets you turn it over in inspection. It doesn't look too bad, maybe a little bruised and matted fur.]",
-            "[You tell {PRONOUN/t_c/object} there's no issue, just a scratch. You instruct {PRONOUN/t_c/object} to stay out of trouble and keep {PRONOUN/t_c/poss} weight off the paw for the rest of the day after {PRONOUN/t_c/subject} {VERB/t_c/sugive/givesbject} it a light wash of water.]",
+            "[You tell {PRONOUN/t_c/object} there's no issue, just a scratch. You instruct {PRONOUN/t_c/object} to stay out of trouble and keep {PRONOUN/t_c/poss} weight off the paw for the rest of the day after {PRONOUN/t_c/subject} {VERB/t_c/give/gives} it a light wash of water.]",
             "Thank you, will do. I'll come back if it gets worse or begins to smell. Cheers y_c, have a wonderful day- ah also, before I forget, you're doing great at what you do. Don't let anyone tell you otherwise."
         ]
     ],
@@ -4394,7 +4394,8 @@
             "they_warrior",
             "they_apprentice",
             "neurotic",
-            "min_platonic_25"
+            "min_platonic_25",
+            "you_not_leader"
         ],
         [
             "r_w_upstanding's been helping me with my training these past few days, but I can't tell if {PRONOUN/r_w_upstanding/subject}{VERB/r_w_upstanding/'re/'s} doing it to be nice, or just to get l_n to notice {PRONOUN/r_w_upstanding/object}.",
