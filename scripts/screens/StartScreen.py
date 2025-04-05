@@ -348,15 +348,15 @@ class StartScreen(Screens):
                             if read_file.readline() == get_latest_version_number():
                                 show_popup = False
 
-                    if show_popup:
-                        UpdateAvailablePopup(
-                            game.switches["last_screen"], show_checkbox=True
-                        )
+                    # if show_popup:
+                    #     UpdateAvailablePopup(
+                    #         game.switches["last_screen"], show_checkbox=True
+                    #     )
 
                 has_checked_for_update = True
 
-            if update_available:
-                self.update_button.visible = 1
+            # if update_available:
+            #     self.update_button.visible = 1
         except (RequestException, Timeout):
             logger.exception("Failed to check for update")
             has_checked_for_update = True
