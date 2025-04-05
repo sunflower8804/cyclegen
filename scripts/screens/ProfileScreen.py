@@ -2806,6 +2806,15 @@ class ProfileScreen(Screens):
         start_index = self.page * 18
         end_index = start_index + 18
 
+        # correcting duplicates
+        acc_list = []
+        for acc in self.the_cat.pelt.inventory:
+            if acc not in acc_list:
+                acc_list.append(acc)
+            else:
+                # print("Removing duplicate", acc, "from", self.the_cat.name, "'s inventory.")
+                self.the_cat.pelt.inventory.remove(acc)
+
         inventory_len = 0
         new_inv = []
         if self.search_bar.get_text() in ["", "search"]:
@@ -2825,16 +2834,13 @@ class ProfileScreen(Screens):
             self.previous_page_button.disable()
         if self.cat_inventory:
             for a, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len)], start = start_index):
-                try:
-                    if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
-                        self.inventory_display(cat, cat_sprite, accessory, pos_x, pos_y)
-                        self.accessories_list.append(accessory)
-                        pos_x += 60
-                        if pos_x >= 550:
-                            pos_x = 0
-                            pos_y += 60
-                except:
-                    continue
+                if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
+                    self.inventory_display(cat, cat_sprite, accessory, pos_x, pos_y)
+                    self.accessories_list.append(accessory)
+                    pos_x += 60
+                    if pos_x >= 550:
+                        pos_x = 0
+                        pos_y += 60
 
     def toggle_relations_tab(self):
         """Opens relations tab"""
@@ -3753,7 +3759,7 @@ class ProfileScreen(Screens):
                 self.cat_list_buttons[str(cat) + str(accessory) + "_sprite"] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites[acc_string + accessory + cat_sprite], manager=MANAGER)
                 break
     
-    def generate_inventory(self, value, pos_x, pos_y, search=False):
+    def generate_inventory(self, value, pos_x, pos_y):
         """
         Puts together the inventory structure. Button locations, cat_sprite
         """
@@ -3817,20 +3823,14 @@ class ProfileScreen(Screens):
         if self.page == 0:
             self.previous_page_button.disable()
         
-        display_acc = False
-        if search is True:
-            if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
-                display_acc = True
-        else:
-            display_acc = True
-        
-        if self.cat_inventory and display_acc:
+        if self.cat_inventory:
             for a, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len + start_index)], start = start_index):
-                self.inventory_display(cat, cat_sprite, accessory, pos_x, pos_y)
-                pos_x += 60
-                if pos_x >= 550:
-                    pos_x = 0
-                    pos_y += 60
+                if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
+                    self.inventory_display(cat, cat_sprite, accessory, pos_x, pos_y)
+                    pos_x += 60
+                    if pos_x >= 550:
+                        pos_x = 0
+                        pos_y += 60
 
     def on_use(self):
         super().on_use()
