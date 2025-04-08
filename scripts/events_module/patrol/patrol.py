@@ -282,6 +282,7 @@ class Patrol:
         biome_dir = f"{biome}/"
         leaf = f"{season}"
         self.update_resources(biome_dir, leaf)
+        
 
         possible_patrols = []
         # This is for debugging purposes, load-in *ALL* the possible patrols when debug_override_patrol_stat_requirements is true. (May require longer loading time)
@@ -460,7 +461,6 @@ class Patrol:
         final_patrols, final_romance_patrols = self.get_filtered_patrols(
             possible_patrols, biome, camp, current_season, patrol_type
         )
-
         # This is a debug option, this allows you to remove any constraints of a patrol regarding location, session, biomes, etc. 
         if game.config["patrol_generation"]["debug_override_patrol_stat_requirements"]:
             final_patrols = final_romance_patrols = possible_patrols
@@ -645,7 +645,6 @@ class Patrol:
                 if "you_med" in patrol.tags:
                     if game.clan.your_cat.status != 'medicine cat':
                         continue
-                    
             #  correct button check
             if game.switches["patrol_category"] == 'clangen':
                 if patrol_type == "general":
@@ -745,8 +744,7 @@ class Patrol:
                     # else:
                     #     print(i)
                 if skip is True:
-                    continue
-                        
+                    continue            
             # cruel season tag check
             if "cruel_season" in patrol.tags:
                 if game.clan and game.clan.game_mode != "cruel_season":

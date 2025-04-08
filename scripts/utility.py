@@ -1510,9 +1510,9 @@ def gather_cat_objects(
             print(abbr_list)
             if kitty[0] in abbr_list:
                 out_set.add(kitty[1])
-    except AttributeError:
+    except Exception as e:
+        # print(e)
         pass
-    # im so lazy but this works lmfao
     # ----------------------------------------
 
     return list(out_set)

@@ -52,6 +52,7 @@ class PatrolOutcome:
         exp: int = 0,
         stat_trait: List[str] = None,
         stat_skill: List[str] = None,
+        stat_faith: List[int] = None,
         can_have_stat: List[str] = None,
         dead_cats: List[str] = None,
         lost_cats: List[str] = None,
@@ -81,6 +82,7 @@ class PatrolOutcome:
         self.exp = exp
         self.stat_trait = stat_trait if stat_trait is not None else []
         self.stat_skill = stat_skill if stat_skill is not None else []
+        self.stat_faith = stat_faith if stat_faith is not None else []
         self.can_have_stat = can_have_stat if can_have_stat is not None else []
         self.dead_cats = dead_cats if dead_cats is not None else []
         self.lost_cats = lost_cats if lost_cats is not None else []
@@ -135,7 +137,7 @@ class PatrolOutcome:
             # outcomes seperatly, so we can ensure that those occur if possible.
             special = False
 
-            if out.stat_skill or out.stat_trait:
+            if out.stat_skill or out.stat_trait or out.stat_faith:
                 special = True
                 out._get_stat_cat(patrol)
                 if not isinstance(out.stat_cat, Cat):
@@ -184,6 +186,7 @@ class PatrolOutcome:
                     exp=_d.get("exp"),
                     stat_skill=_d.get("stat_skill"),
                     stat_trait=_d.get("stat_trait"),
+                    stat_faith=_d.get("stat_faith"),
                     can_have_stat=_d.get("can_have_stat"),
                     dead_cats=_d.get("dead_cats"),
                     injury=_d.get("injury"),
@@ -228,7 +231,6 @@ class PatrolOutcome:
         """
         # This must be done before text processing so that the new cat's pronouns are generated first
         results = [self._handle_new_cats(patrol)]
-
         # lifegen random abbrev processing!
         lifegen_abbrev_text = adjust_txt(Cat, self.text, patrol.patrol_leader, patrol.patrol_cat_dict, r_c_allowed=False, o_c_allowed=False)
 
@@ -274,6 +276,7 @@ class PatrolOutcome:
                         random_cat=patrol.random_cat,
                         stat_cat=self.stat_cat,
                         patrol_cats=patrol.patrol_cats,
+                        patrol_cat_dict=patrol.patrol_cat_dict,
                         patrol_apprentices=patrol.patrol_apprentices,
                         new_cats=patrol.new_cats,
                         clan=game.clan,
@@ -288,6 +291,7 @@ class PatrolOutcome:
                             random_cat=patrol.random_cat,
                             stat_cat=self.stat_cat,
                             patrol_cats=patrol.patrol_cats,
+                            patrol_cat_dict=patrol.patrol_cat_dict,
                             patrol_apprentices=patrol.patrol_apprentices,
                             new_cats=patrol.new_cats,
                             clan=game.clan,
@@ -378,11 +382,13 @@ class PatrolOutcome:
         allowed_specific = [
             x
             for x in self.can_have_stat
-            if x in ("r_c", "p_l", "app1", "app2", "any", "not_pl_rc", "not_pl")
+            # if x in ("r_c", "p_l", "app1", "app2", "any", "not_pl_rc", "not_pl")
+            # LG: commented out bc any lifegen abbrev can go in can_have_stat
         ]
         for i in patrol.patrol_cat_dict.items():
             if i[0] in self.can_have_stat:
                 allowed_specific.append(i[0])
+        
 
         # Special default behavior for patrols less than two cats.
         # Patrol leader is the only one allowed to be stat_cat in patrols equal to or less than than two cats
@@ -397,7 +403,7 @@ class PatrolOutcome:
         else:
             # this is lifegen stuff to add random abbrevs to the list for stat cat possibilities
             # so its not just cats in the patrol
-            patrolcats = []
+            patrolcats = patrol.patrol_cats
             for kitty in patrol.patrol_cat_dict.items():
                 patrolcats.append(kitty[1])
 
@@ -438,6 +444,19 @@ class PatrolOutcome:
 
             if kitty.skills.check_skill_requirement_list(self.stat_skill):
                 actual_stat_cats.append(kitty)
+
+            # LG
+            if self.stat_faith:
+                if len(self.stat_faith) != 2:
+                    print("Misformatted stat_faith")
+                else:
+                    faith_fail = False
+                    if kitty.faith < self.stat_faith[0]:
+                        faith_fail = True
+                    if kitty.faith > self.stat_faith[1]:
+                        faith_fail = True
+                    if not faith_fail:
+                        actual_stat_cats.append(kitty)
 
         if actual_stat_cats:
             self.stat_cat = choice(actual_stat_cats)
