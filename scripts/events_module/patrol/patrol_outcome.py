@@ -1298,42 +1298,43 @@ class PatrolOutcome:
             acc_list = Pelt.collars
         elif "TAIL" in acc_list:
             acc_list = Pelt.tail_accessories + Pelt.tail2_accessories
-        elif "SNAKE" in acc_list:
-            acc_list = Pelt.snake_accessories
-        elif "RABBIT" in acc_list:
-            acc_list = ["WHITE RABBIT", "BLACK RABBIT",
-                        "BROWN RABBIT", "FAWN RABBIT",
-                        "BROWN AND WHITE RABBIT", "BLACK AND WHITE RABBIT", "WHITE AND FAWN RABBIT",
-                        "BLACK VITILIGO RABBIT", "BROWN VITILIGO RABBIT", "FAWN VITILIGO RABBIT",
-                        "TAN RABBIT", "TAN AND WHITE RABBIT", "TAN VITILIGO RABBIT",
-                        "GRAY RABBIT", "GRAY AND WHITE RABBIT", "GRAY VITILIGO RABBIT"]
-        elif "BIRD" in acc_list:
-            acc_list = ["BLACKBIRD", "ROBIN", "JAY", "THRUSH", "CARDINAL", "MAGPIE", "CUBAN TROGON"]
-        elif "SQUIRREL" in acc_list:
-            acc_list = ["GRAY SQUIRREL", "RED SQUIRREL", "CRAB", "INDIAN GIANT SQUIRREL"]
-        elif "MOUSE" in acc_list:
-            acc_list = ["RAT", "WHITE MOUSE", "BLACK MOUSE", "GRAY MOUSE", "BROWN MOUSE"]
-        elif "SMALLANIMAL" in acc_list:
-            acc_list = Pelt.smallAnimal_accessories
-        elif "DEADINSECT" in acc_list:
-            acc_list = Pelt.deadInsect_accessories
-        elif "ALIVEINSECT" in acc_list:
-            acc_list = Pelt.aliveInsect_accessories
-        elif "FRUIT" in acc_list:
-            acc_list = Pelt.fruit_accessories + "BLUE BERRIES" + "BERRIES"
-        elif "CRAFTED" in acc_list:
-            acc_list = Pelt.crafted_accessories + 'WOODDRAGON'
-        elif "LEAF" in acc_list:
-            acc_list = ["MAPLE LEAF", "HOLLY", "HERBS", "DRY HERBS","OAK LEAVES", "CATMINT", "MAPLE SEED", "JUNIPER", "FERNS", "GOLD FERNS", "WHEAT", "BLACK WHEAT","CLOVERS", "CLOVER", "CHERRYPLUMLEAVES"]
-        elif "FLOWER" in acc_list:
-            acc_list = Pelt.flower_accessories + ['REDCROWN', 'YELLOWCROWN', 'LILY', 'CLOVERFLOWER']
-        elif "FLOWERCROWN" in acc_list:
-            acc_list = ['REDCROWN', 'YELLOWCROWN', "PINKFLOWERCROWN", "YELLOWFLOWERCROWN", "BLUEFLOWERCROWN", "PURPLEFLOWERCROWN", "FLOWERCROWN"]
+        #elif "SNAKE" in acc_list:
+        #    acc_list = Pelt.snake_accessories
+        #elif "RABBIT" in acc_list:
+        #    acc_list = ["WHITE RABBIT", "BLACK RABBIT",
+        #                "BROWN RABBIT", "FAWN RABBIT",
+        #                "BROWN AND WHITE RABBIT", "BLACK AND WHITE RABBIT", "WHITE AND FAWN RABBIT",
+        #                "BLACK VITILIGO RABBIT", "BROWN VITILIGO RABBIT", "FAWN VITILIGO RABBIT",
+        #                "TAN RABBIT", "TAN AND WHITE RABBIT", "TAN VITILIGO RABBIT",
+        #                "GRAY RABBIT", "GRAY AND WHITE RABBIT", "GRAY VITILIGO RABBIT"]
+        #elif "BIRD" in acc_list:
+        #    acc_list = ["BLACKBIRD", "ROBIN", "JAY", "THRUSH", "CARDINAL", "MAGPIE", "CUBAN TROGON"]
+        #elif "SQUIRREL" in acc_list:
+        #    acc_list = ["GRAY SQUIRREL", "RED SQUIRREL", "CRAB", "INDIAN GIANT SQUIRREL"]
+        #elif "MOUSE" in acc_list:
+        #    acc_list = ["RAT", "WHITE MOUSE", "BLACK MOUSE", "GRAY MOUSE", "BROWN MOUSE"]
+        #elif "SMALLANIMAL" in acc_list:
+        #    acc_list = Pelt.smallAnimal_accessories
+        #elif "DEADINSECT" in acc_list:
+        #    acc_list = Pelt.deadInsect_accessories
+        #elif "ALIVEINSECT" in acc_list:
+        #    acc_list = Pelt.aliveInsect_accessories
+        #elif "FRUIT" in acc_list:
+        #    acc_list = Pelt.fruit_accessories + "BLUE BERRIES" + "BERRIES"
+        #elif "CRAFTED" in acc_list:
+        #    acc_list = Pelt.crafted_accessories + 'WOODDRAGON'
+        #elif "LEAF" in acc_list:
+        #    acc_list = ["MAPLE LEAF", "HOLLY", "HERBS", "DRY HERBS","OAK LEAVES", "CATMINT", "MAPLE SEED", "JUNIPER", "FERNS", "GOLD FERNS", "WHEAT", "BLACK WHEAT","CLOVERS", "CLOVER", "CHERRYPLUMLEAVES"]
+        #elif "FLOWER" in acc_list:
+        #    acc_list = Pelt.flower_accessories + ['REDCROWN', 'YELLOWCROWN', 'LILY', 'CLOVERFLOWER']
+        #elif "FLOWERCROWN" in acc_list:
+        #    acc_list = ['REDCROWN', 'YELLOWCROWN', "PINKFLOWERCROWN", "YELLOWFLOWERCROWN", "BLUEFLOWERCROWN", "PURPLEFLOWERCROWN", "FLOWERCROWN"]
         else:
-            acc_list = [x for x in acc_list if x in Pelt.plant_accessories + Pelt.plant2_accessories + Pelt.wild_accessories +\
-        Pelt.tail_accessories + Pelt.collars + Pelt.flower_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + \
-        Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + \
-        Pelt.tail2_accessories
+            acc_list = [x for x in acc_list if x in Pelt.plant_accessories + Pelt.wild_accessories + Pelt.collars
+        #+ Pelt.plant2_accessories +\
+        #Pelt.tail_accessories + Pelt.flower_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + \
+        #Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + \
+        #Pelt.tail2_accessories
                             and x not in cat.pelt.inventory]
 
         if not acc_list:

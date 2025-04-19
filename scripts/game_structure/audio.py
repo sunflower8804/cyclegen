@@ -129,11 +129,11 @@ class MusicManager:
 
         try:
             self.queued_track = random.choice(options)
-            print(
-                f"queueing music: current track is {self.current_track}, new track is {self.queued_track}"
-            )
+            #print(
+            #    f"queueing music: current track is {self.current_track}, new track is {self.queued_track}"
+            #)
         except IndexError:
-            print("WARNING: playlist is empty")
+            #print("WARNING: playlist is empty")
             self.queued_track = None
 
     def play_queued(self):

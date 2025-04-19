@@ -545,34 +545,15 @@ class Events:
     def gain_acc(self):
         if game.clan.clan_settings["all accessories"]:
             return
-        possible_accs = ["WILD", "PLANT", "COLLAR", "FLOWER", "PLANT2", "SNAKE", "SMALLANIMAL", "DEADINSECT", "ALIVEINSECT", "FRUIT", "CRAFTED", "TAIL2"]
         acc_list = []
-        if "WILD" in possible_accs:
-            acc_list.extend(Pelt.wild_accessories)
-        if "PLANT" in possible_accs:
-            acc_list.extend(Pelt.plant_accessories)
-        if "COLLAR" in possible_accs:
-            acc_list.extend(Pelt.collars)
-        if "FLOWER" in possible_accs:
-            acc_list.extend(Pelt.flower_accessories)
-        if "PLANT2" in possible_accs:
-            acc_list.extend(Pelt.plant2_accessories)
-        if "SNAKE" in possible_accs:
-            acc_list.extend(Pelt.snake_accessories)
-        if "SMALLANIMAL" in possible_accs:
-            acc_list.extend(Pelt.smallAnimal_accessories)
-        if "DEADINSECT" in possible_accs:
-            acc_list.extend(Pelt.deadInsect_accessories)
-        if "ALIVEINSECT" in possible_accs:
-            acc_list.extend(Pelt.aliveInsect_accessories)
-        if "FRUIT" in possible_accs:
-            acc_list.extend(Pelt.fruit_accessories)
-        if "CRAFTED" in possible_accs:
-            acc_list.extend(Pelt.crafted_accessories)
-        if "TAIL2" in possible_accs:
-            acc_list.extend(Pelt.tail2_accessories)
+        acc_list = acc_list + Pelt.wild_accessories + Pelt.plant_accessories + Pelt.collars 
+                    #+ Pelt.lizards + Pelt.herbs2 + \
+                    #Pelt.muddypaws + Pelt.insectwings + Pelt.buddies + Pelt.newaccs + Pelt.newaccs2 + Pelt.bodypaint + \
+                    #Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery + Pelt.pridedrapery + Pelt.eyepatches + \
+                    #Pelt.larsaccs + Pelt.harleyaccs + Pelt.featherboas + Pelt.scarves + Pelt.neckbandanas + \
+                    #Pelt.chains + Pelt.floatyeyes + Pelt.newaccs3 + Pelt.orbitals
         if "NOTAIL" in game.clan.your_cat.pelt.scars or "HALFTAIL" in game.clan.your_cat.pelt.scars:
-            for acc in Pelt.tail_accessories + Pelt.tail2_accessories:
+            for acc in Pelt.tail_accessories:
                 if acc in acc_list:
                     try:
                         acc_list.remove(acc)
