@@ -22,12 +22,12 @@
     "CHOCOLATE": "brown"
   },
   "possible_tints": {
-    "basic": ["none", "offwhite", "offwhite"],
-    "black": ["gray", "darkcream", "cream"],
-    "gray": ["gray"],
-    "ginger": ["darkcream", "cream", "pink"],
-    "brown": ["darkcream", "cream"],
-    "white": []
+    "basic": ["none", "offwhite", "offwhite", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"],
+    "black": ["gray", "darkcream", "cream", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster", "black"],
+    "gray": ["gray", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"],
+    "ginger": ["darkcream", "cream", "pink", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"],
+    "brown": ["darkcream", "cream", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"],
+    "white": ["black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"]
   },
   "tint_colours":
   {
@@ -36,6 +36,29 @@
     "offwhite": [238, 249, 252],
     "gray": [208, 225, 229],
     "pink": [254, 248, 249],
+    "black": [16, 13, 17],
+    "powderblue": [231, 246, 249],
+    "splash": [211, 224, 251],
+    "purple": [210, 206, 227],
+    "blackberry": [210, 201, 215],
+    "sand": [255, 244, 209],
+    "clay": [254, 216, 204],
+    "brick": [236, 203, 202],
+    "salmon": [255, 216, 212],
+    "seafoam": [240, 252, 240],
+    "mint": [230, 255, 228],
+    "evergreen": [208, 226, 212],
+    "cranberry": [217, 197, 203],
+    "pearl": [255, 250, 255],
+    "orchid": [235, 220, 255],
+    "artificier": [117, 33, 66],
+    "hunter": [255, 117, 117],
+    "gourmand": [240, 189, 143],
+    "monk": [255, 255, 115],
+    "saint": [171, 242, 87],
+    "rivulet": [143, 204, 240],
+    "spearmaster": [76, 46, 102],
+    "golden": [241, 177, 144],
     "none": null
   }
 }

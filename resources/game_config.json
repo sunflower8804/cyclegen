@@ -181,9 +181,12 @@
 	},
 	"cat_generation": {
 		"base_permanent_condition": 90,
-		"base_male_tortie": 13,
+		"base_male_tortie": 4,
 		"base_female_tortie": 4,
-		"base_heterochromia": 120,
+		"base_riveyes": 20,
+		"base_heterochromia": 25,
+		"base_multieyes": 50,
+		"base_buttoneyes": 100,
 		"direct_inheritance": 15,
 		"wildcard_tortie": 9,
 		"vit_chance": 8,
@@ -197,6 +200,28 @@
 			"This overrides the chances of it otherwise. If cats can't find a pelt color, they will choose from normal_prefixes",
 			"So as not to cause an error - false by default",
 			"allow_eye_names allows cats to be named after the color of their eyes - true by default"
+		]
+	},
+	"feature_generation": {
+		"feature_chances": [
+			150, 80, 80, 80, 17, 14, 14, 10, 10, 5, 
+			55, 50, 50, 50, 45, 40, 40, 40, 40, 25, 
+			18, 12, 25, 20, 6, 6, 3, 3, 3, 3, 
+			3, 1, 1, 1
+						],
+		"comment": [
+			"These are the chances of each feature, AKA skin, AKA bodyparts. They add up to 1000 so they can kinda be viewed as percenages, but you can make them any number.",
+			"The higher the number - the more common the feature is. If a feature's chance is 0 - it doesn't spawn.",
+			"The order is:",
+			"empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, dragonhorns, ",
+            "moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, spikes, lizardfins, ",
+            "catfishwhiskers, dragonwhiskers, quills, anglerfish, spearholes, cyanfeatures, cyanwings, firebugpart, seaangelwings, glassback, ",
+            "grasssheepback, familiar, acrotail, tears",
+			"The default chances are:",
+			"150, 80, 80, 80, 17, 14, 14, 10, 10, 5,",
+			"55, 50, 50, 50, 45, 40, 40, 40, 40, 25,",
+			"18, 12, 25, 20, 6, 6, 3, 3, 3, 3,",
+			"3, 1, 1, 1"
 		]
 	},
 	"accessory_generation": {
