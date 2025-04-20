@@ -125,7 +125,7 @@ class Sprites:
             'eyes', 'eyes2', 
             'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers', 'orbitals', 'datagamesstuff',
             'scars', 'missingscars',
-            #'medcatherbs',
+            'medcatherbs',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
             'herbs2', 'insectwings', 'buddies', 'newaccs', 'bodypaint', 'implant', 'magic', 'necklaces',
             'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs', 'newaccs3',
@@ -155,7 +155,7 @@ class Sprites:
             #'lineart', 'lineartdf', 'lineartdead', "lineartur",
             #'eyes', 'eyes2', 'skin',
             #'scars', 'missingscars',
-            'medcatherbs', 'wild',
+            #'medcatherbs', 'wild',
             #'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
             #'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             #'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
@@ -678,17 +678,15 @@ class Sprites:
                 self.make_group('missingscars', (col, row), f'scars{missing_part}')
 
         # accessories
-        #to my beloved modders, im very sorry for reordering everything <333 -clay
         medcatherbs_data = [
-            ["MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "CATTAIL", "POPPY", "ORANGE POPPY", "CYAN POPPY", "WHITE POPPY", "PINK POPPY"],
-            ["BLUEBELLS", "LILY OF THE VALLEY", "SNAPDRAGON", "HERBS", "PETALS", "NETTLE", "HEATHER", "GORSE", "JUNIPER", "RASPBERRY", "LAVENDER"],
-            ["OAK LEAVES", "CATMINT", "MAPLE SEED", "LAUREL", "BULB WHITE", "BULB YELLOW", "BULB ORANGE", "BULB PINK", "BULB BLUE", "CLOVER", "DAISY"]
+            ["MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "LAUREL"],
+            ["BLUEBELLS", "NETTLE", "POPPY", "LAVENDER", "HERBS", "PETALS"],
+            [],  # Empty row because this is the wild data, except dry herbs.
+            ["OAK LEAVES", "SCUGMINT", "MAPLE SEED", "JUNIPER", "SAKURA"]
         ]
-        dryherbs_data = [
-            ["DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS"]
-        ]
+
         wild_data = [
-            ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "ROSY MOTH WINGS", "MORPHO BUTTERFLY", "MONARCH BUTTERFLY", "CICADA WINGS", "BLACK CICADA"]
+            ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "MOTH WINGS", "CICADA WINGS"]
         ]
 
         collars_data = [
@@ -714,19 +712,161 @@ class Sprites:
             ["GREENNYLON", "RAINBOWNYLON", "BLACKNYLON", "SPIKESNYLON", "WHITENYLON"],
             ["PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON"]
         ]
+        drones_data = [
+            ["CRIMSONDRONE", "BLUEDRONE", "YELLOWDRONE", "CYANDRONE", "REDDRONE", "LIMEDRONE"],
+            ["GREENDRONE", "RAINBOWDRONE", "BLACKDRONE", "SPIKESDRONE", "WHITEDRONE"],
+            ["PINKDRONE", "PURPLEDRONE", "MULTIDRONE", "INDIGODRONE"]
+        ]
+        rwlizards_data = [
+            ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED"], 
+            ["BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN"],
+            ["ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"]
+        ]
+        muddypaws_data = [
+            ["MUDDYPAWS"]
+        ]
+        herbs2_data = [
+            ["SPEAR", "PEARLEAR", "KARMAFLOWER", "LILCENTI", "PEARLNECK", "REDBATNIP"], 
+            ["LILFLY","BATNIP", "FLASHFRUIT", "REDFLASHFRUIT", "GREENKELP", "REDKELP"], 
+            ["VULTMASK", "KINGMASK", "SCAVMASK", "TREESEED", "GLOWSTONE", "BROWNKELP"], 
+            ["LILBEETLE", "EXPLOSPEAR", "GREENDRAGFLY", "BLUEDRAGFLY", "ELESPEAR"]
+        ]
+        insectwings_data = [
+            ["DEATHSHEAD", "BLUEBORDERED", "BLOODVEIN", "LARGEEMERALD", "CINNABAR", "LUNA", "ROSYMAPLE"],
+            ["ATLAS", "HERCULES", "SUNSET", "PURPLEEMPEROR", "WHITEADMIRAL", "SWALLOWTAIL"]
+        ]
+        drones_data = [
+            ["CRIMSONDRONE", "BLUEDRONE", "YELLOWDRONE", "CYANDRONE", "REDDRONE", "LIMEDRONE"],
+            ["GREENDRONE", "RAINBOWDRONE", "BLACKDRONE", "SPIKESDRONE", "WHITEDRONE"],
+            ["PINKDRONE", "PURPLEDRONE", "MULTIDRONE", "INDIGODRONE"]
+        ]
+        buddies_data = [
+            ["MOUSEBLUE", "MOUSEYEL", "MOUSEPINK", "MOUSERED", "YEEKRED", "YEEKBLUE"], 
+            ["VULTGRUB", "GRAPPLE", "SNAILGREEN", "SNAILBLUE", "SNAILRED", "SNAILPURPLE"],
+            ["NOODLERED", "NOODLEPURPLE", "NOODLEGREY", "NOODLEBLUE", "NOODLEWHITE", "NOODLEPINK"],
+            ["IGGYYELLOW", "IGGYPURPLE", "IGGYWHITE", "IGGYGREEN", "IGGYRED", "IGGYBLUE"],
+            ["SQUIDBLACK", "SQUIDWHITE", "BUBBLE", "WORMGRASSPOT", "POLEPLANTPOT"]
+        ]
+        newaccs_data = [
+            ["BATFLY", "BLUEFRUIT", "EMPTYBAG", "HERBSBAG", "INVEGG", "VOIDSPAWN"],
+            ["REDARMOR", "OVERSEEREYE", "SPIDEREAR", "NEURONBLUE", "NEURONRED", "NEURONGREEN"],
+            ["NEURONWHITE", "KARMAONE", "KARMATWO", "KARMATHREE", "KARMAFOUR", "SCROLL"],
+            ["NECKLACESILVER", "NECKLACEGOLD", "TAILWRAP", "RAINCOAT", "LACESCARF", "TOLLMASK"],
+            ["FLOWEREDMOSS", "MOSS", "MUSHROOMS", "MUSHROOMHAT", "GRENADE", "SANTAHAT"],
+            ["EYEPATCH", 'INVMOUTH', "MOUSEYELPLUSH", "MOUSEREDPLUSH", "MOUSEBLUEPLUSH", "MOUSEPINKPLUSH"]
+        ]
+        newaccs2_data = [
+            ["GLITCHING", "ROBOTARM", "ROBOTLEG", "SCRAPARMOR", "BLINDFOLD"],
+            ["BRONZEPOCKETWATCH", "SILVERPOCKETWATCH", "GOLDPOCKETWATCH", "MURDERPAINT", "BOGMOSSBLUE"],
+            ["BOGMOSSGREEN", "BOGMOSSLIME"],
+            ["ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT"]
+        ]
+        bodypaint_data = [
+            ["REDPAINT", "PINKPAINT", "VOIDPAINT", "YELLOWPAINT", "GREENPAINT", "PALEPAINT"],
+            ["CYANPAINT", "BLUEPAINT", "PURPLEPAINT", "MAGENTAPAINT", "BLACKPAINT", "WHITEPAINT"]
+        ]
+        implant_data = [
+            ["IMPLANTWHITE", "IMPLANTPURPLE", "IMPLANTGREEN", "IMPLANTYELLOW", "IMPLANTBLUE"],
+            ["EYEIMPLANTWHITE", "EYEIMPLANTRED", "EYEIMPLANTGREEN", "EYEIMPLANTYELLOW", "EYEIMPLANTBLUE"],
+            ["GLOWWHITE", "GLOWPURPLE", "GLOWGREEN", "GLOWYELLOW", "GLOWBLUE"],
+            ["CELLIMPLANT"]
+        ]
+        magic_data = [
+            ["ORANGEFIRE", "GREENFIRE", "BLUEFIRE", "YELLOWFIRE", "WHITEFIRE", "PINKFIRE", "REDFIRE"],
+            ["GREENRING", "CYANRING", "SILVERRING", "WHITERING", "YELLOWRING", "VOIDRING", "GOLDRING"],
+            ["PETPEBBLE", "PETCLAY", "PETLAPIS", "PETAMETHYST", "PETJADE", "PETGRANITE", "PETSANDSTONE"]
+        ]
+        necklaces_data = [
+            ["NECKLACEWHITE", "NECKLACEPINK", "NECKLACEPURPLE", "NECKLACEYELLOW", "NECKLACECYAN"],
+            ["NECKLACEGREEN", "NECKLACERED", "NECKLACEORANGE", "NECKLACEBLUE", "NECKLACEBLACK"]
+        ]
+        drapery_data = [
+            ["DRAPERYWHITE", "DRAPERYORANGE", "DRAPERYTAN", "DRAPERYPALEYELLOW", "DRAPERYYELLOW", "DRAPERYLIGHTMINT", "DRAPERYMINT", "DRAPERYGREEN", "DRAPERYLIGHTAQUA"],
+            ["DRAPERYAQUA", "DRAPERYCYAN", "DRAPERYLIGHTGRAY", "DRAPERYPURPLE", "DRAPERYLIGHTINDIGO", "DRAPERYBLUE", "DRAPERYLAVENDER", "DRAPERYLIGHTPINK", "DRAPERYPINK"],
+            ["DRAPERYHOTPINK", "DRAPERYGRAY", "DRAPERYDARKGRAY", "DRAPERYPALEPINK", "DRAPERYLIGHTRED", "DRAPERYRED", "DRAPERYPEACH", "DRAPERYLIGHTORANGE"]
+        ]
+        pridedrapery_data = [
+            ["ORIGINALGAYDRAPERY", "TRANSDRAPERY", "GENDERQUEERDRAPERY", "AGENDERDRAPERY", "NONBINARYDRAPERY", "POLYAMDRAPERY", "GENDERFLUIDDRAPERY"],
+            ["GENDERFLUXDRAPERY", "GAYDRAPERY", "OMNISEXUALDRAPERY", "OBJECTUMDRAPERY", "RAINBOWDRAPERY", "PHILIDRAPERY", "BISEXUALDRAPERY"],
+            ["PANSEXUALDRAPERY", "POLYSEXUALDRAPERY", "ASEXUALDRAPERY", "LESBIANDRAPERY", "INTERSEXDRAPERY", "AROACEDRAPERY", "DEMIGIRLDRAPERY"],
+            ["DEMIBOYDRAPERY", "DEMIGENDERDRAPERY", "DEMIFLUIDDRAPERY", "DEMIFLUXDRAPERY", "ABRODRAPERY", "ARODRAPERY", "DEMISEXDRAPERY"],
+            ["DEMIRODRAPERY", "ACHILLEANDRAPERY", "SAPPHICDRAPERY", "DIAMORICDRAPERY", "UNLABELEDDRAPERY", "TRANSFEMDRAPERY", "TRANSMASCDRAPERY"],
+            ["BIGENDERDRAPERY", "MULTISEXDRAPERY", "ACESPECDRAPERY", "AROSPECDRAPERY"]
+        ]
+        eyepatch_data = [
+            ["EYEPATCHWHITE", "EYEPATCHGREEN", "EYEPATCHAQUA", "EYEPATCHTURQUOISE", "EYEPATCHCYAN", "EYEPATCHBLUE", "EYEPATCHINDIGO"],
+            ["EYEPATCHPURPLE", "EYEPATCHMAGENTA", "EYEPATCHPINK", "EYEPATCHROSE", "EYEPATCHLIGHTGRAY", "EYEPATCHDARKGRAY", "EYEPATCHBLACK"],
+            ["EYEPATCHRED", "EYEPATCHORANGE", "EYEPATCHAMBER", "EYEPATCHYELLOW", "EYEPATCHLIME"]
+        ]
+        larsaccs_data = [
+            ["ALLSEEINGGOLD", "ALLSEEINGSILVER", "BESIEGEDMASKOG", "BESIEGEDMASKBLUE", "BESIEGEDMASKCYAN"],
+            ["BESIEGEDMASKGRAY", "BESIEGEDMASKGREEN", "BESIEGEDMASKINDIGO", "BESIEGEDMASKORANGE", "BESIEGEDMASKPINK"],
+            ["BESIEGEDMASKPURPLE", "BESIEGEDMASKRED", "BESIEGEDMASKROSE", "BESIEGEDMASKAQUA", "BESIEGEDMASKYELLOW"],
+            ["HANDPEARLBLANK", "HANDPEARLBLUE", "HANDPEARLGREEN", "HANDPEARLORANGE", "HANDPEARLPURPLE"],
+            ["HANDPEARLRED", "HANDPEARLYELLOW", "PEARLDRAPERY", "STRAIGHTGOLD", "STRAIGHTSILVER"]
+        ]
+    
+        harleyaccs_data = [
+            ["FALLENSTARMASK", "TORNCLOAKFALL", "FALLENSTARPAWS", "TORNCLOAKWINTER"],
+            ["TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FAUXMANE"]
+        ]
+
+        featherboas_data = [
+            ["DPINKFEATHERBOA", "DREDFEATHERBOA", "DGREENFEATHERBOA", "DBLUEFEATHERBOA", "DGREENERFEATHERBOA"],
+            ["DORANGEFEATHERBOA", "LWHITEFEATHERBOA", "LPURPLEFEATHERBOA", "LBLUEFEATHERBOA", "LPINKFEATHERBOA"],
+            ["DMAGENTAFEATHERBOA", "DCRIMSONFEATHERBOA", "DPURPLEFEATHERBOA"]
+        ]
+
+        scarves_data = [
+            ["REDSCARF", "ORANGESCARF", "YELLOWSCARF", "LIMESCARF", "GREENSCARF", "CYANSCARF", "WHITESCARF"],
+            ["BLUESCARF", "DARKBLUESCARF", "PURPLESCARF", "MAGENTASCARF", "BLACKSCARF", "GRAYSCARF", "BROWNSCARF"],
+            ["NSHSCARF", "SAWYERSCARF"]
+        ]
+        
+        neckbandanas_data = [
+            ["DICEYNBANDANA", "EOUSNBANDANA", "FLUIDNBANDANA", "GUILDNBANDANA", "SKULLNBANDANA", "SKYNBANDANA", "SPACENBANDANA", "SWEETIENBANDANA"],
+            ["TCYANNBANDANA", "TIEDYEMUDDYNBANDANA", "TIEDYENBANDANA", "TSAVNBANDANA", "BLUEGRADNBANDANA", "ORANGEGRADNBANDANA",  "YELLOWGRADNBANDANA", "LIMEGRADNBANDANA"],
+            ["TEALGRADNBANDANA", "MAGENTAGRADNBANDANA", "REDGRADNBANDANA", "WHITENBANDANA", "LIGHTGRAYNBANDANA", "DARKGRAYNBANDANA", "BLACKNBANDANA", "PEACHNBANDANA"],
+            ["PALEREDNBANDANA", "REDNBANDANA", "MAROONNBANDANA", "PALEORANGENBANDANA", "LIGHTORANGENBANDANA", "ORANGENBANDANA", "BROWNNBANDANA", "PALEYELLOWNBANDANA"],
+            ["LIGHTYELLOWNBANDANA", "YELLOWNBANDANA", "PALEGREENNBANDANA", "LIGHTGREENNBANDANA", "GREENNBANDANA", "DARKGREENNBANDANA", "PALETEALNBANDANA", "LIGHTTEALNBANDANA"],
+            ["TEALNBANDANA", "DARKTEALNBANDANA", "PALEBLUENBANDANA", "LIGHTBLUENBANDANA", "DARKBLUENBANDANA", "BLUENBANDANA", "LAVENDERNBANDANA", "PURPLENBANDANA"],
+            ["DARKPURPLENBANDANA", "PALEPINKNBANDANA", "LIGHTPINKNBANDANA", "PINKNBANDANA", "DARKPINKNBANDANA", "PATCHWORKREDNBANDANA", "PATCHWORKORANGENBANDANA", "PATCHWORKYELLOWNBANDANA"],
+            ["PATCHWORKGREENNBANDANA", "PATCHWORKTEALNBANDANA", "PATCHWORKBLUENBANDANA", "PATCHWORKINDIGONBANDANA", "PATCHWORKPURPLENBANDANA", "PATCHWORKPINKNBANDANA"]
+        ]
+        
+        chains_data = [
+            ["AMBERCHAIN", "PINKCHAIN", "PURPLECHAIN", "YELLOWCHAIN", "TEALCHAIN"],
+            ["GREENCHAIN", "REDCHAIN", "ORANGECHAIN", "BLUECHAIN", "BLACKCHAIN"]
+        ]
+
+        newaccs3_data = [
+            ["FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "BLUECLOUDS"],
+            ["YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS", "GOGGLES"],
+            ["PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY"]
+        ]
+
+        floatyeyes_data = [
+            ["YELLOWFLOATYEYES", "REDFLOATYEYES", "ORANGEFLOATYEYES"],
+            ["LIMEFLOATYEYES", "GREENFLOATYEYES", "BLUEFLOATYEYES"],
+            ["INDIGOFLOATYEYES"]
+        ]
+
+        orbitals_data = [
+            ['ORANGEORBITAL', 'YELLOWORBITAL', 'EARTHORBITAL'],
+            ['EARTHTWOORBITAL', 'PURPLEORBITAL', 'PINKORBITAL'], 
+            ['REDORBITAL']
+        ]
 
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
                 self.make_group('medcatherbs', (col, row), f'acc_herbs{herb}')
-        #dryherbs
-        for row, dry in enumerate(dryherbs_data):
-            for col, dryherbs in enumerate(dry):
-                self.make_group('medcatherbs', (col, 3), f'acc_herbs{dryherbs}')     
+        self.make_group('medcatherbs', (5, 2), 'acc_herbsDRY HERBS')
+
         # wild
         for row, wilds in enumerate(wild_data):
             for col, wild in enumerate(wilds):
-                self.make_group('wild', (col, 0), f'acc_wild{wild}')
+                self.make_group('medcatherbs', (col, 2), f'acc_wild{wild}')
 
         # collars
         for row, collars in enumerate(collars_data):
@@ -747,6 +887,116 @@ class Sprites:
         for row, nyloncollars in enumerate(nyloncollars_data):
             for col, nyloncollar in enumerate(nyloncollars):
                 self.make_group('nyloncollars', (col, row), f'collars{nyloncollar}')
+        # rw lizards     
+        for a, i in enumerate(
+                ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT"]):
+            self.make_group('rwlizards', (a, 0), f'lizards{i}')
+        for a, i in enumerate(["YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"]):
+            self.make_group('rwlizards', (a, 1), f'lizards{i}')
+
+        # drones
+        for row, drones in enumerate(drones_data):
+            for col, drone in enumerate(drones):
+                self.make_group('drones', (col, row), f'collars{drone}')
+
+        #sey's accs
+        for row, muddypaws in enumerate(muddypaws_data):
+            for col, muddypaws in enumerate(muddypaws):
+                self.make_group('muddypaws', (col, row), f'muddypaws{muddypaws}')
+                
+        for a, i in enumerate(
+                ["DEATHSHEAD", "BLUEBORDERED", "BLOODVEIN", "LARGEEMERALD", "CINNABAR", "LUNA", "ROSYMAPLE"]):
+            self.make_group('insectwings', (a, 0), f'insectwings{i}')
+        for a, i in enumerate(["ATLAS", "HERCULES", "SUNSET", "PURPLEEMPEROR", "WHITEADMIRAL", "SWALLOWTAIL"]):
+            self.make_group('insectwings', (a, 1), f'insectwings{i}')
+            
+        #herbs 2
+        for row, herbs2 in enumerate(herbs2_data):
+            for col, herbs2 in enumerate(herbs2):
+                self.make_group('herbs2', (col, row), f'herbs2{herbs2}')
+                
+        #buddies
+        for row, buddies in enumerate(buddies_data):
+            for col, buddies in enumerate(buddies):
+                self.make_group('buddies', (col, row), f'buddies{buddies}')
+                
+        #newaccs
+        for row, newaccs in enumerate(newaccs_data):
+            for col, newaccs in enumerate(newaccs):
+                self.make_group('newaccs', (col, row), f'newaccs{newaccs}')
+                
+        #newaccs2
+        for row, newaccs2 in enumerate(newaccs2_data):
+            for col, newaccs2 in enumerate(newaccs2):
+                self.make_group('newaccs2', (col, row), f'newaccs2{newaccs2}')
+
+        #bodypaint
+        for row, bodypaint in enumerate(bodypaint_data):
+            for col, bodypaint in enumerate(bodypaint):
+                self.make_group('bodypaint', (col, row), f'bodypaint{bodypaint}')
+
+        #implant
+        for row, implant in enumerate(implant_data):
+            for col, implant in enumerate(implant):
+                self.make_group('implant', (col, row), f'implant{implant}')
+
+        #magic
+        for row, magic in enumerate(magic_data):
+            for col, magic in enumerate(magic):
+                self.make_group('magic', (col, row), f'magic{magic}')
+
+        #necklaces
+        for row, necklaces in enumerate(necklaces_data):
+            for col, necklaces in enumerate(necklaces):
+                self.make_group('necklaces', (col, row), f'necklaces{necklaces}')
+        #drapery
+        for row, drapery in enumerate(drapery_data):
+            for col, drapery in enumerate(drapery):
+                self.make_group('drapery', (col, row), f'drapery{drapery}')
+        #pridedrapery
+        for row, pridedrapery in enumerate(pridedrapery_data):
+            for col, pridedrapery in enumerate(pridedrapery):
+                self.make_group('pridedrapery', (col, row), f'pridedrapery{pridedrapery}')
+        #eyepatches
+        for row, eyepatches in enumerate(eyepatch_data):
+            for col, eyepatches in enumerate(eyepatches):
+                self.make_group('eyepatches', (col, row), f'eyepatches{eyepatches}')
+        #larsaccs
+        for row, larsaccs in enumerate(larsaccs_data):
+            for col, larsaccs in enumerate(larsaccs):
+                self.make_group('larsaccs', (col, row), f'larsaccs{larsaccs}')
+        #harleyaccs
+        for row, harleyaccs in enumerate(harleyaccs_data):
+            for col, harleyaccs in enumerate(harleyaccs):
+                self.make_group('harleyaccs', (col, row), f'harleyaccs{harleyaccs}')
+        #featherboas
+        for row, featherboas in enumerate(featherboas_data):
+            for col, featherboas in enumerate(featherboas):
+                self.make_group('featherboas', (col, row), f'featherboas{featherboas}')
+        #scarves
+        for row, scarves in enumerate(scarves_data):
+            for col, scarves in enumerate(scarves):
+                self.make_group('scarves', (col, row), f'scarves{scarves}')
+        #neckbandanas
+        for row, neckbandanas in enumerate(neckbandanas_data):
+            for col, neckbandanas in enumerate(neckbandanas):
+                self.make_group('neckbandanas', (col, row), f'neckbandanas{neckbandanas}')
+        #chains
+        for row, chains in enumerate(chains_data):
+            for col, chains in enumerate(chains):
+                self.make_group('chains', (col, row), f'chains{chains}')
+        #newaccs3
+        for row, newaccs3 in enumerate(newaccs3_data):
+            for col, newaccs3 in enumerate(newaccs3):
+                self.make_group('newaccs3', (col, row), f'newaccs3{newaccs3}')
+        #floatyeyes
+        for row, floatyeyes in enumerate(floatyeyes_data):
+            for col, floatyeyes in enumerate(floatyeyes):
+                self.make_group('floatyeyes', (col, row), f'floatyeyes{floatyeyes}')
+        #orbitals
+        for row, orbitals in enumerate(orbitals_data):
+            for col, orbitals in enumerate(orbitals):
+                self.make_group('orbitals', (col, row), f'orbitals{orbitals}')
 
     def load_symbols(self):
         """

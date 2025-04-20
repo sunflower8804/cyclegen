@@ -411,9 +411,43 @@ class HandleShortEvents:
             acc_list.extend(pelts.plant_accessories)
         if "COLLAR" in possible_accs:
             acc_list.extend(pelts.collars)
+        if "LIZARD" in possible_accs:
+            acc_list.extend(Pelt.lizards)
+        if "HERBS2" in possible_accs:
+            acc_list.extend(Pelt.herbs2)
+        if "MUDDYPAWS" in possible_accs:
+            acc_list.extend(Pelt.muddypaws)
+        if "INSECTWINGS" in possible_accs:
+            acc_list.extend(Pelt.insectwings)
+        if "BUDDIES" in possible_accs:
+            acc_list.extend(Pelt.buddies)
+        if "NEWACCS" in possible_accs:
+            acc_list.extend(Pelt.newaccs)
+        if "BODYPAINT" in possible_accs:
+            acc_list.extend(Pelt.bodypaint)
+        if "IMPLANT" in possible_accs:
+            acc_list.extend(Pelt.implant)
+        if "MAGIC" in possible_accs:
+            acc_list.extend(Pelt.magic)
+        if "NECKLACES" in possible_accs:
+            acc_list.extend(Pelt.necklaces)
+        if "DRAPERY" in possible_accs:
+            acc_list.extend(Pelt.drapery)
+        if "PRIDEDRAPERY" in possible_accs:
+            acc_list.extend(Pelt.pridedrapery)
+        if "EYEPATCHES" in possible_accs:
+            acc_list.extend(Pelt.eyepatches)
+        if "LARSACCS" in possible_accs:
+            acc_list.extend(Pelt.larsaccs)
+        if "HARLEYACCS" in possible_accs:
+            acc_list.extend(Pelt.harleyaccs)
+        if "FEATHERBOAS" in possible_accs:
+            acc_list.extend(Pelt.featherboas)
+        if "SCARVES" in possible_accs:
+            acc_list.extend(Pelt.scarves)
 
         for acc in possible_accs:
-            if acc not in ["WILD", "PLANT", "COLLAR"]:
+            if acc not in ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "MUDDYPAWS", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS", "FEATHERBOAS", "SCARVES"]:
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars"):

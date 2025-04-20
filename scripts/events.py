@@ -546,12 +546,11 @@ class Events:
         if game.clan.clan_settings["all accessories"]:
             return
         acc_list = []
-        acc_list = acc_list + Pelt.wild_accessories + Pelt.plant_accessories + Pelt.collars 
-                    #+ Pelt.lizards + Pelt.herbs2 + \
-                    #Pelt.muddypaws + Pelt.insectwings + Pelt.buddies + Pelt.newaccs + Pelt.newaccs2 + Pelt.bodypaint + \
-                    #Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery + Pelt.pridedrapery + Pelt.eyepatches + \
-                    #Pelt.larsaccs + Pelt.harleyaccs + Pelt.featherboas + Pelt.scarves + Pelt.neckbandanas + \
-                    #Pelt.chains + Pelt.floatyeyes + Pelt.newaccs3 + Pelt.orbitals
+        acc_list = acc_list + Pelt.wild_accessories + Pelt.plant_accessories + Pelt.collars + Pelt.lizards + Pelt.herbs2 + \
+                    Pelt.muddypaws + Pelt.insectwings + Pelt.buddies + Pelt.newaccs + Pelt.newaccs2 + Pelt.bodypaint + \
+                    Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery + Pelt.pridedrapery + Pelt.eyepatches + \
+                    Pelt.larsaccs + Pelt.harleyaccs + Pelt.featherboas + Pelt.scarves + Pelt.neckbandanas + \
+                    Pelt.chains + Pelt.floatyeyes + Pelt.newaccs3 + Pelt.orbitals
         if "NOTAIL" in game.clan.your_cat.pelt.scars or "HALFTAIL" in game.clan.your_cat.pelt.scars:
             for acc in Pelt.tail_accessories:
                 if acc in acc_list:

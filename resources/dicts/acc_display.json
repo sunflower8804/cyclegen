@@ -54,56 +54,35 @@
     "singular": "lavender"
   },
   "HERBS": {
-    "default": "bunch of herbs",
+    "default": "herb-covered pelt",
     "plural": "herbs",
     "singular": "bunch of herbs",
-    "comment": [
-      "just 'herb' sounds wrong, since the acc is visually multiple leaves on the cat. So i've structured",
-      "this in a way that allows it to sound correct when used for the singular_acc abbreviation"
-    ]
+    "comment": ["just 'herb' sounds wrong, since the acc is visually multiple leaves on the cat. so i've structured",
+      "this in a way that allows it to sound correct when used for the singular_acc abbreviation"]
   },
   "PETALS": {
     "default": "petal-covered pelt",
     "plural": "petals",
     "singular": "bunch of petals",
-    "comment": [
-      "just 'petal' sounds wrong, since the acc is visually multiple petals on the cat. So i've structured",
-      "this in a way that allows it to sound correct when used for the singular_acc abbreviation"
-    ]
+    "comment": ["just 'petal' sounds wrong, since the acc is visually multiple petals on the cat. so i've structured",
+      "this in a way that allows it to sound correct when used for the singular_acc abbreviation"]
   },
   "DRY HERBS": {
     "default": "herb-covered pelt",
     "plural": "dry herbs",
     "singular": "bunch of dry herbs",
-    "comment": [
-      "just 'dry herb' sounds wrong, since the acc is visually multiple leaves on the cat. So i've structured",
-      "this in a way that allows it to sound correct when used for the singular_acc abbreviation"
-    ]
-  },
-  "DRY CATMINT": {
-    "default": "dried catmint",
-    "plural": "dry catmint",
-    "singular": "dry catmint"
-  },
-  "DRY NETTLES": {
-    "default": "dried nettles",
-    "plural": "dry nettles",
-    "singular": "dried nettle"
-  },
-  "DRY LAURELS": {
-    "default": "dried laurels",
-    "plural": "dry laurels",
-    "singular": "dried laurel"
+    "comment": ["just 'dry herb' sounds wrong, since the acc is visually multiple leaves on the cat. so i've structured",
+      "this in a way that allows it to sound correct when used for the singular_acc abbreviation"]
   },
   "OAK LEAVES": {
     "default": "oak leaves",
     "plural": "oak leaves",
     "singular": "oak leaf"
   },
-  "CATMINT": {
-    "default": "catmint",
-    "plural": "catmint",
-    "singular": "catmint"
+  "SCUGMINT": {
+    "default": "scugmint",
+    "plural": "scugmint",
+    "singular": "scugmint"
   },
   "MAPLE SEED": {
     "default": "maple seed",
@@ -140,270 +119,155 @@
     "plural": "cicada wings",
     "singular": "cicada wing"
   },
-  "ORANGE POPPY": {
-    "default": "orange poppy",
-    "plural": "orange poppies",
-    "singular": "orange poppy"
-  },
-  "CYAN POPPY": {
-    "default": "cyan poppy",
-    "plural": "cyan poppies",
-    "singular": "cyan poppy"
-  },
-  "WHITE POPPY": {
-    "default": "white poppy",
-    "plural": "white poppies",
-    "singular": "white poppy"
-  },
-  "PINK POPPY": {
-    "default": "pink poppy",
-    "plural": "pink poppies",
-    "singular": "pink poppy"
-  },
-  "CLOVER": {
-    "default": "clover tail",
-    "plural": "clovers",
-    "singular": "bunch of clovers"
-  },
-  "DAISY": {
-    "default": "daisy tail",
-    "plural": "daisies",
-    "singular": "bunch of daisies"
-  },
-  "LILY OF THE VALLEY": {
-    "default": "lily of the valley",
-    "plural": "lilies of the valley",
-    "singular": "lily of the valley"
-  },
-  "HEATHER": {
-    "default": "heather",
-    "plural": "heather",
-    "singular": "heather"
-  },
-  "SNAPDRAGON": {
-    "default": "snapdragon",
-    "plural": "snapdragons",
-    "singular": "snapdragon"
-  },
-  "GORSE": {
-    "default": "gorse flowers",
-    "plural": "gorse flowers",
-    "singular": "gorse flowers"
-  },
-  "BULB WHITE": {
-    "default": "white flower bulb",
-    "plural": "white flower bulbs",
-    "singular": "white flower bulb"
-  },
-  "BULB YELLOW": {
-    "default": "yellow flower bulb",
-    "plural": "yellow flower bulbs",
-    "singular": "yellow flower bulb"
-  },
-  "BULB ORANGE": {
-    "default": "orange flower bulb",
-    "plural": "orange flower bulbs",
-    "singular": "orange flower bulb"
-  },
-  "BULB PINK": {
-    "default": "pink flower bulb",
-    "plural": "pink flower bulbs",
-    "singular": "pink flower bulb"
-  },
-  "BULB BLUE": {
-    "default": "blue flower bulb",
-    "plural": "blue flower bulbs",
-    "singular": "blue flower bulb"
-  },
-  "RASPBERRY": {
-    "default": "raspberries",
-    "plural": "raspberries",
-    "singular": "raspberry"
-  },
-  "CATTAIL": {
-    "default": "cattail",
-    "plural": "cattails",
-    "singular": "cattail"
-  },
-  "GULL FEATHERS": {
-    "default": "gull feathers",
-    "plural": "gull feathers",
-    "singular": "gull feather"
-  },
-  "SPARROW FEATHERS": {
-    "default": "sparrow feathers",
-    "plural": "sparrow feathers",
-    "singular": "sparrow feather"
-  },
-  "ROSY MOTH WINGS": {
-    "default": "rosy maple moth wings",
-    "plural": "rosy maple moth wings",
-    "singular": "rosy maple moth"
-  },
-  "MORPHO BUTTERFLY": {
-    "default": "morpho butterfly wings",
-    "plural": "morpho butterfly wings",
-    "singular": "morpho butterfly"
-  },
-  "MONARCH BUTTERFLY": {
-    "default": "monarch butterfly wings",
-    "plural": "monarch butterfly wings",
-    "singular": "monarch butterfly"
-  },
-  "BLACK CICADA": {
-    "default": "black cicada wings",
-    "plural": "black cicada wings",
-    "singular": "black cicada"
-  },
   "CRIMSON": {
-    "default": "crimson leather collar",
-    "plural": "crimson leather collars",
-    "singular": "crimson leather collar"
+    "default": "crimson iterator cloak",
+    "plural": "crimson iterator cloaks",
+    "singular": "crimson iterator cloak"
   },
   "BLUE": {
-    "default": "blue leather collar",
-    "plural": "blue leather collars",
-    "singular": "blue leather collar"
+    "default": "blue iterator cloak",
+    "plural": "blue iterator cloaks",
+    "singular": "blue iterator cloak"
   },
   "CYAN": {
-    "default": "cyan leather collar",
-    "plural": "cyan leather collars",
-    "singular": "cyan leather collar"
+    "default": "cyan iterator cloak",
+    "plural": "cyan iterator cloaks",
+    "singular": "cyan iterator cloak"
   },
   "YELLOW": {
-    "default": "yellow leather collar",
-    "plural": "yellow leather collars",
-    "singular": "yellow leather collar"
+    "default": "yellow iterator cloak",
+    "plural": "yellow iterator cloaks",
+    "singular": "yellow iterator cloak"
   },
   "LIME": {
-    "default": "lime leather collar",
-    "plural": "lime leather collars",
-    "singular": "lime leather collar"
+    "default": "lime iterator cloak",
+    "plural": "lime iterator cloaks",
+    "singular": "lime iterator cloak"
   },
   "GREEN": {
-    "default": "green leather collar",
-    "plural": "green leather collars",
-    "singular": "green leather collar"
+    "default": "green iterator cloak",
+    "plural": "green iterator cloaks",
+    "singular": "green iterator cloak"
   },
   "RED": {
-    "default": "red leather collar",
-    "plural": "red leather collars",
-    "singular": "red leather collar"
+    "default": "red iterator cloak",
+    "plural": "red iterator cloaks",
+    "singular": "red iterator cloak"
   },
   "RAINBOW": {
-    "default": "rainbow leather collar",
-    "plural": "rainbow leather collars",
-    "singular": "rainbow leather collar"
+    "default": "lilac iterator cloak",
+    "plural": "lilac iterator cloaks",
+    "singular": "lilac iterator cloak"
   },
   "BLACK": {
-    "default": "black leather collar",
-    "plural": "black leather collars",
-    "singular": "black leather collar"
+    "default": "grey iterator cloak",
+    "plural": "grey iterator cloaks",
+    "singular": "grey iterator cloak"
   },
   "SPIKES": {
-    "default": "spiky leather collar",
-    "plural": "spiky leather collars",
-    "singular": "spiky leather collar"
+    "default": "black iterator cloak",
+    "plural": "black iterator cloaks",
+    "singular": "black iterator cloak"
   },
   "WHITE": {
-    "default": "white leather collar",
-    "plural": "white leather collars",
-    "singular": "white leather collar"
+    "default": "white iterator cloak",
+    "plural": "white iterator cloaks",
+    "singular": "white iterator cloak"
   },
   "PINK": {
-    "default": "pink leather collar",
-    "plural": "pink leather collars",
-    "singular": "pink leather collar"
+    "default": "multi-colored iterator cloak",
+    "plural": "multi-colored iterator cloaks",
+    "singular": "multi-colored iterator cloak"
   },
   "PURPLE": {
-    "default": "purple leather collar",
-    "plural": "purple leather collars",
-    "singular": "purple leather collar"
+    "default": "purple iterator cloak",
+    "plural": "purple iterator cloaks",
+    "singular": "purple iterator cloak"
   },
   "MULTI": {
-    "default": "lilac leather collar",
-    "plural": "lilac leather collars",
-    "singular": "lilac leather collar"
+    "default": "pink iterator cloak",
+    "plural": "pink iterator cloaks",
+    "singular": "pink iterator cloak"
   },
   "INDIGO": {
-    "default": "indigo leather collar",
-    "plural": "indigo leather collars",
-    "singular": "indigo leather collar"
+    "default": "indigo iterator cloak",
+    "plural": "indigo iterator cloaks",
+    "singular": "indigo iterator cloak"
   },
   "CRIMSONBELL": {
-    "default": "crimson bell collar",
-    "plural": "crimson bell collars",
-    "singular": "crimson bell collar"
+    "default": "crimson mark of communication",
+    "plural": "crimson mark of communications",
+    "singular": "crimson mark of communication"
   },
   "BLUEBELL": {
-    "default": "blue bell collar",
-    "plural": "blue bell collars",
-    "singular": "blue bell collar"
+    "default": "blue mark of communication",
+    "plural": "blue mark of communications",
+    "singular": "blue mark of communication"
   },
   "CYANBELL": {
-    "default": "cyan bell collar",
-    "plural": "cyan bell collars",
-    "singular": "cyan bell collar"
+    "default": "cyan mark of communication",
+    "plural": "cyan mark of communications",
+    "singular": "cyan mark of communication"
   },
   "YELLOWBELL": {
-    "default": "yellow bell collar",
-    "plural": "yellow bell collars",
-    "singular": "yellow bell collar"
+    "default": "yellow mark of communication",
+    "plural": "yellow mark of communications",
+    "singular": "yellow mark of communication"
   },
   "LIMEBELL": {
-    "default": "lime bell collar",
-    "plural": "lime bell collars",
-    "singular": "lime bell collar"
+    "default": "lime mark of communication",
+    "plural": "lime mark of communications",
+    "singular": "lime mark of communication"
   },
   "GREENBELL": {
-    "default": "green bell collar",
-    "plural": "green bell collars",
-    "singular": "green bell collar"
+    "default": "green mark of communication",
+    "plural": "green mark of communications",
+    "singular": "green mark of communication"
   },
   "REDBELL": {
-    "default": "red bell collar",
-    "plural": "red bell collars",
-    "singular": "red bell collar"
+    "default": "red mark of communication",
+    "plural": "red mark of communications",
+    "singular": "red mark of communication"
   },
   "RAINBOWBELL": {
-    "default": "rainbow bell collar",
-    "plural": "rainbow bell collars",
-    "singular": "rainbow bell collar"
+    "default": "hot pink mark of communication",
+    "plural": "hot pink mark of communications",
+    "singular": "hot pink mark of communication"
   },
   "BLACKBELL": {
-    "default": "black bell collar",
-    "plural": "black bell collars",
-    "singular": "black bell collar"
+    "default": "grey mark of communication",
+    "plural": "grey mark of communications",
+    "singular": "grey mark of communication"
   },
   "SPIKESBELL": {
-    "default": "spiky bell collar",
-    "plural": "spiky bell collars",
-    "singular": "spikybell collar"
+    "default": "black mark of communication",
+    "plural": "black mark of communications",
+    "singular": "black mark of communication"
   },
   "WHITEBELL": {
-    "default": "white bell collar",
-    "plural": "white bell collars",
-    "singular": "white bell collar"
+    "default": "white mark of communication",
+    "plural": "white mark of communications",
+    "singular": "white mark of communication"
   },
   "PINKBELL": {
-    "default": "pink bell collar",
-    "plural": "pink bell collars",
-    "singular": "pink bell collar"
+    "default": "pink mark of communication",
+    "plural": "pink mark of communications",
+    "singular": "pink mark of communication"
   },
   "PURPLEBELL": {
-    "default": "purple bell collar",
-    "plural": "purple bell collars",
-    "singular": "purple bell collar"
+    "default": "purple mark of communication",
+    "plural": "purple mark of communications",
+    "singular": "purple mark of communication"
   },
   "MULTIBELL": {
-    "default": "lilac bell collar",
-    "plural": "lilac bell collars",
-    "singular": "lilac bell collar"
+    "default": "light pink mark of communication",
+    "plural": "light pink mark of communications",
+    "singular": "light pink mark of communication"
   },
   "INDIGOBELL": {
-    "default": "indigo bell collar",
-    "plural": "indigo bell collars",
-    "singular": "indigo bell collar"
+    "default": "indigo mark of communication",
+    "plural": "indigo mark of communications",
+    "singular": "indigo mark of communication"
   },
   "CRIMSONBOW": {
     "default": "crimson bow collar",
@@ -481,1293 +345,2343 @@
     "singular": "indigo bow collar"
   },
   "CRIMSONNYLON": {
-    "default": "crimson nylon collar",
-    "plural": "crimson nylon collars",
-    "singular": "crimson nylon collar"
+    "default": "crimson cloak",
+    "plural": "crimson cloaks",
+    "singular": "crimson cloak"
   },
   "BLUENYLON": {
-    "default": "blue nylon collar",
-    "plural": "blue nylon collars",
-    "singular": "blue nylon collar"
+    "default": "blue cloak",
+    "plural": "blue cloaks",
+    "singular": "blue cloak"
   },
   "CYANNYLON": {
-    "default": "cyan nylon collar",
-    "plural": "cyan nylon collars",
-    "singular": "cyan nylon collar"
+    "default": "cyan cloak",
+    "plural": "cyan cloaks",
+    "singular": "cyan cloak"
   },
   "YELLOWNYLON": {
-    "default": "yellow nylon collar",
-    "plural": "yellow nylon collars",
-    "singular": "yellow nylon collar"
+    "default": "yellow cloak",
+    "plural": "yellow cloaks",
+    "singular": "yellow cloak"
   },
   "LIMENYLON": {
-    "default": "lime nylon collar",
-    "plural": "lime nylon collars",
-    "singular": "lime nylon collar"
+    "default": "lime cloak",
+    "plural": "lime cloaks",
+    "singular": "lime cloak"
   },
   "GREENNYLON": {
-    "default": "green nylon collar",
-    "plural": "green nylon collars",
-    "singular": "green nylon collar"
+    "default": "green cloak",
+    "plural": "green cloaks",
+    "singular": "green cloak"
   },
   "REDNYLON": {
-    "default": "red nylon collar",
-    "plural": "red nylon collars",
-    "singular": "red nylon collar"
+    "default": "red cloak",
+    "plural": "red cloaks",
+    "singular": "red cloak"
   },
   "RAINBOWNYLON": {
-    "default": "rainbow nylon collar",
-    "plural": "rainbow nylon collars",
-    "singular": "rainbow nylon collar"
+    "default": "hot pink cloak",
+    "plural": "hot pink cloaks",
+    "singular": "hot pink cloak"
   },
   "BLACKNYLON": {
-    "default": "black nylon collar",
-    "plural": "black nylon collars",
-    "singular": "black nylon collar"
+    "default": "grey cloak",
+    "plural": "grey cloaks",
+    "singular": "grey cloak"
   },
   "SPIKESNYLON": {
-    "default": "blue and gold nylon collar",
-    "plural": "blue and gold nylon collars",
-    "singular": "blue and gold nylon collar"
+    "default": "black cloak",
+    "plural": "black cloaks",
+    "singular": "black cloak"
   },
   "WHITENYLON": {
-    "default": "white nylon collar",
-    "plural": "white nylon collars",
-    "singular": "white nylon collar"
+    "default": "white cloak",
+    "plural": "white cloaks",
+    "singular": "white cloak"
   },
   "PINKNYLON": {
-    "default": "pink nylon collar",
-    "plural": "pink nylon collars",
-    "singular": "pink nylon collar"
+    "default": "multi-colored cloak",
+    "plural": "multi-colored cloaks",
+    "singular": "multi-colored cloak"
   },
   "PURPLENYLON": {
-    "default": "purple nylon collar",
-    "plural": "purple nylon collars",
-    "singular": "purple nylon collar"
+    "default": "purple cloak",
+    "plural": "purple cloaks",
+    "singular": "purple cloak"
   },
   "MULTINYLON": {
-    "default": "lilac nylon collar",
-    "plural": "lilac nylon collars",
-    "singular": "lilac nylon collar"
+    "default": "pink cloak",
+    "plural": "pink cloaks",
+    "singular": "pink cloak"
   },
   "INDIGONYLON": {
-    "default": "indigo nylon collar",
-    "plural": "indigo nylon collars",
-    "singular": "indigo nylon collar"
-  },
-  "DAISIES": {
-    "default": "daisy",
-    "plural": "daisies",
-    "singular": "daisy"
-  },
-  "DIANTHUS": {
-    "default": "pink dianthus",
-    "plural": "dianthus flowers",
-    "singular": "dianthus"
-  },
-  "BLEEDING HEARTS": {
-    "default": "bleeding heart",
-    "plural": "bleeding hearts",
-    "singular": "bleeding heart"
-  },
-  "FRANGIPANI": {
-    "default": "frangipani",
-    "plural": "frangipani flowers",
-    "singular": "frangipani flower"
-  },
-  "BLUE GLORY": {
-    "default": "blue morning glory",
-    "plural": "blue morning glories",
-    "singular": "blue morning glory"
-  },
-  "CATNIP FLOWER": {
-    "default": "catnip flowers",
-    "plural": "catnip blooms",
-    "singular": "catnip flower"
-  },
-  "BLANKET FLOWER": {
-    "default": "blanket flower",
-    "plural": "blanket flowers",
-    "singular": "blanket flower"
-  },
-  "ALLIUM": {
-    "default": "allium flowers",
-    "plural": "allium flowers",
-    "singular": "allium flowers"
-  },
-  "LACELEAF": {
-    "default": "laceleaf flower",
-    "plural": "laceleaf flowers",
-    "singular": "laceleaf flower"
-  },
-  "PURPLE GLORY": {
-    "default": "purple morning glory",
-    "plural": "purple morning glories",
-    "singular": "purple morning glory"
-  },
-  "YELLOW PRIMROSE": {
-    "default": "yellow primrose",
-    "plural": "yellow primroses",
-    "singular": "yellow primroses"
-  },
-  "HESPERIS": {
-    "default": "hesperis",
-    "plural": "hesperis flowers",
-    "singular": "hesperis"
-  },
-  "MARIGOLD": {
-    "default": "marigold",
-    "plural": "marigold",
-    "singular": "marigold"
-  },
-  "WISTERIA": {
-    "default": "wisteria strand",
-    "plural": "wisteria strands",
-    "singular": "wisteria strand"
-  },
-  "SINGULARCLOVER": {
-    "default": "clover",
-    "plural": "clovers",
-    "singular": "clover"
-  },
-  "STICK": {
-    "default": "stick",
-    "plural": "sticks",
-    "singular": "stick"
-  },
-  "PUMPKIN": {
-    "default": "pumpkin",
-    "plural": "pumpkins",
-    "singular": "pumpkin"
-  },
-  "MOSS": {
-    "default": "moss",
-    "plural": "moss",
-    "singular": "moss"
-  },
-  "IVY": {
-    "default": "ivy leaf",
-    "plural": "ivy leaves",
-    "singular": "ivy leaf"
-  },
-  "ACORN": {
-    "default": "acorn",
-    "plural": "acorns",
-    "singular": "acorn"
-  },
-  "MOSS PELT": {
-    "default": "moss-covered pelt",
-    "plural": "mossy pelts",
-    "singular": "mossy pelt"
-  },
-  "REEDS": {
-    "default": "reeds in nest",
-    "plural": "reeds",
-    "singular": "reed"
-  },
-  "BAMBOO": {
-    "default": "bamboo in nest",
-    "plural": "bamboo",
-    "singular": "bamboo"
-  },
-  "GRASS SNAKE": {
-    "default": "grass snake friend",
-    "plural": "grass snakes",
-    "singular": "grass snake"
-  },
-  "BLUE RACER": {
-    "default": "blue racer snake friend",
-    "plural": "blue racer snakes",
-    "singular": "blue racer snake"
-  },
-  "WESTERN COACHWHIP": {
-    "default": "western coachwhip friend",
-    "plural": "western coachwhips",
-    "singular": "western coachwhip"
-  },
-  "KINGSNAKE": {
-    "default": "kingsnake friend",
-    "plural": "kingsnakes",
-    "singular": "kingsnake"
-  },
-  "GRAY SQUIRREL": {
-    "default": "gray squirrel friend",
-    "plural": "gray squirrels",
-    "singular": "gray squirrel"
-  },
-  "RED SQUIRREL": {
-    "default": "red squirrel friend",
-    "plural": "red squirrels",
-    "singular": "red squirrel"
-  },
-  "CRAB": {
-    "default": "crab friend",
-    "plural": "crabs",
-    "singular": "crab"
-  },
-  "WHITE RABBIT": {
-    "default": "white rabbit friend",
-    "plural": "white rabbits",
-    "singular": "white rabbit"
-  },
-  "BLACK RABBIT": {
-    "default": "black rabbit",
-    "plural": "black rabbits",
-    "singular": "black rabbit"
-  },
-  "BROWN RABBIT": {
-    "default": "brown rabbit",
-    "plural": "brown rabbits",
-    "singular": "brown rabbit"
-  },
-  "INDIAN GIANT SQUIRREL": {
-    "default": "indian giant squirrels",
-    "plural": "indian giant squirrels",
-    "singular": "indian giant squirrels"
-  },
-  "FAWN RABBIT": {
-    "default": "fawn rabbit",
-    "plural": "fawn rabbits",
-    "singular": "fawn rabbit"
-  },
-  "BROWN AND WHITE RABBIT": {
-    "default": "brown and white rabbit",
-    "plural": "brown and white rabbits",
-    "singular": "brown and white rabbit"
-  },
-  "BLACK AND WHITE RABBIT": {
-    "default": "black and white rabbit",
-    "plural": "black and white rabbits",
-    "singular": "black and white rabbit"
-  },
-  "WHITE AND FAWN RABBIT": {
-    "default": "white and fawn rabbit",
-    "plural": "white and fawn rabbits",
-    "singular": "white and fawn rabbit"
-  },
-  "BLACK VITILIGO RABBIT": {
-    "default": "black vitiligo rabbit",
-    "plural": "black white-spotted rabbits",
-    "singular": "black white-spotted rabbit"
-  },
-  "BROWN VITILIGO RABBIT": {
-    "default": "brown vitiligo rabbit",
-    "plural": "brown white-spotted rabbits",
-    "singular": "brown white-spotted rabbit"
-  },
-  "FAWN VITILIGO RABBIT": {
-    "default": "fawn vitiligo rabbit",
-    "plural": "fawn white-spotted rabbits",
-    "singular": "fawn white-spotted rabbit"
-  },
-  "BLACKBIRD": {
-    "default": "blackbird friend",
-    "plural": "blackbird",
-    "singular": "blackbird"
-  },
-  "ROBIN": {
-    "default": "robin friend",
-    "plural": "robins",
-    "singular": "robin"
-  },
-  "JAY": {
-    "default": "jay friend",
-    "plural": "jays",
-    "singular": "jay"
-  },
-  "THRUSH": {
-    "default": "thrush friend",
-    "plural": "thrushes",
-    "singular": "thrush"
-  },
-  "CARDINAL": {
-    "default": "cardinal friend",
-    "plural": "cardinals",
-    "singular": "cardinal"
-  },
-  "MAGPIE": {
-    "default": "magpie friend",
-    "plural": "magpies",
-    "singular": "magpie"
-  },
-  "CUBAN TROGON": {
-    "default": "cuban trogon friend",
-    "plural": "cuban trogons",
-    "singular": "cuban trogon"
-  },
-  "TAN RABBIT": {
-    "default": "tan rabbit friend",
-    "plural": "tan rabbits",
-    "singular": "tan rabbit"
-  },
-  "TAN AND WHITE RABBIT": {
-    "default": "tan and white rabbit",
-    "plural": "tan and white rabbits",
-    "singular": "tan and white rabbit"
-  },
-  "TAN VITILIGO RABBIT": {
-    "default": "tan vitiligo rabbit",
-    "plural": "tan white-spotted rabbits",
-    "singular": "tan white-spotted rabbit"
-  },
-  "RAT": {
-    "default": "rat friend",
-    "plural": "rats",
-    "singular": "rat"
-  },
-  "WHITE MOUSE": {
-    "default": "white mouse friend",
-    "plural": "white mice",
-    "singular": "white mouse"
-  },
-  "BLACK MOUSE": {
-    "default": "black mouse friend",
-    "plural": "black mice",
-    "singular": "black mouse"
-  },
-  "GRAY MOUSE": {
-    "default": "gray mouse friend",
-    "plural": "gray mice",
-    "singular": "gray mouse"
-  },
-  "BROWN MOUSE": {
-    "default": "brown mouse friend",
-    "plural": "brown mice",
-    "singular": "brown mouse"
-  },
-  "GRAY RABBIT": {
-    "default": "gray rabbit",
-    "plural": "gray rabbits",
-    "singular": "gray rabbit"
-  },
-  "GRAY AND WHITE RABBIT": {
-    "default": "gray and white rabbit",
-    "plural": "gray and white rabbits",
-    "singular": "gray and white rabbit"
-  },
-  "GRAY VITILIGO RABBIT": {
-    "default": "gray vitiligo rabbit",
-    "plural": "gray white-spotted rabbits",
-    "singular": "gray white-spotted rabbit"
-  },
-  "LUNAR MOTH": {
-    "default": "lunar moth wings",
-    "plural": "lunar moth wings",
-    "singular": "lunar moth wings"
-  },
-  "ROSY MAPLE MOTH": {
-    "default": "rosy maple moth wings",
-    "plural": "rosy maple moth wings",
-    "singular": "rosy maple moth wing"
-  },
-  "MONARCH": {
-    "default": "monarch butterfly wings",
-    "plural": "monarch butterfly wings",
-    "singular": "monarch butterfly wing"
-  },
-  "DAPPLED MONARCH": {
-    "default": "dappled monarch butterfly wings",
-    "plural": "dappled monarch butterfly wings",
-    "singular": "dappled monarch wing"
-  },
-  "POLYPHEMUS MOTH": {
-    "default": "polyphemus moth wings",
-    "plural": "polyphemus moth wings",
-    "singular": "polyphemus moth wing"
-  },
-  "MINT MOTH": {
-    "default": "mint moth wings",
-    "plural": "mint moth wings",
-    "singular": "mint moth wing"
-  },
-  "BROWN SNAIL": {
-    "default": "brown-shelled snail",
-    "plural": "snails with brown shells",
-    "singular": "brown-shelled snail"
-  },
-  "RED SNAIL": {
-    "default": "red-shelled snail",
-    "plural": "snails with red shells",
-    "singular": "red-shelled snail"
-  },
-  "WORM": {
-    "default": "worm friend",
-    "plural": "worms",
-    "singular": "worm"
-  },
-  "BLUE SNAIL": {
-    "default": "blue-shelled snail",
-    "plural": "snails with blue shells",
-    "singular": "blue-shelled snail"
-  },
-  "ZEBRA ISOPOD": {
-    "default": "zebra isopod friend",
-    "plural": "zebra isopods",
-    "singular": "big zebra isopod"
-  },
-  "DUCKY ISOPOD": {
-    "default": "ducky isopod friend",
-    "plural": "ducky isopods",
-    "singular": "ducky isopod"
-  },
-  "DAIRY COW ISOPOD": {
-    "default": "dairy cow isopod friend",
-    "plural": "dairy cow isopods",
-    "singular": "dairy cow isopod"
-  },
-  "BEETLEJUICE ISOPOD": {
-    "default": "beetlejuice isopod friend",
-    "plural": "beetlejuice isopods",
-    "singular": "beetlejuice isopod"
-  },
-  "BEE": {
-    "default": "bee friend",
-    "plural": "bees",
-    "singular": "bee"
-  },
-  "RED LADYBUG": {
-    "default": "red ladybug friend",
-    "plural": "red ladybugs",
-    "singular": "red ladybug"
-  },
-  "ORANGE LADYBUG": {
-    "default": "orange ladybug friend",
-    "plural": "orange ladybugs",
-    "singular": "orange ladybug"
-  },
-  "YELLOW LADYBUG": {
-    "default": "yellow ladybug friend",
-    "plural": "yellow ladybugs",
-    "singular": "yellow ladybug"
-  },
-  "RASPBERRY2": {
-    "default": "raspberry",
-    "plural": "raspberries",
-    "singular": "raspberry"
-  },
-  "BLACKBERRY": {
-    "default": "blackberry",
-    "plural": "blackberries",
-    "singular": "blackberry"
-  },
-  "GOLDEN RASPBERRY": {
-    "default": "golden raspberry",
-    "plural": "golden raspberries",
-    "singular": "golden raspberry"
-  },
-  "CHERRY": {
-    "default": "cherry",
-    "plural": "cherries",
-    "singular": "cherry"
-  },
-  "YEW": {
-    "default": "yew",
-    "plural": "yew",
-    "singular": "yew"
-  },
-  "WILLOWBARK BAG": {
-    "default": "willow-bark bag",
-    "plural": "willow-bark bags",
-    "singular": "willow-bark bag"
-  },
-  "CLAY DAISY POT": {
-    "default": "clay-and-mousehide daisy pot",
-    "plural": "clay daisy pots",
-    "singular": "clay daisy pot"
-  },
-  "CLAY AMANITA POT": {
-    "default": "clay-and-mousehide amanita pot",
-    "plural": "clay amanita pot",
-    "singular": "clay amanita pot"
-  },
-  "CLAY BROWNCAP POT": {
-    "default": "clay-and-mousehide browncap pot",
-    "plural": "clay browncap pots",
-    "singular": "clay browncap pot"
-  },
-  "BIRD SKULL": {
-    "default": "bird skull",
-    "plural": "bird skulls",
-    "singular": "bird skull"
-  },
-  "LEAF BOW": {
-    "default": "twisted leaf-bow",
-    "plural": "leafbows",
-    "singular": "leaf bow"
-  },
-  "SEAWEED": {
-    "default": "seaweed wrap",
-    "plural": "seaweed",
-    "singular": "seaweed"
-  },
-  "DAISY CORSAGE": {
-    "default": "daisy tail corsage",
-    "plural": "daisy corsages",
-    "singular": "daisy corsage"
-  },
-  "LILYPAD": {
-    "default": "lilypad",
-    "plural": "lilypads",
-    "singular": "lilypad"
-  },
-  "LARGE DEATHBERRY": {
-    "default": "large collection of deathberries",
-    "plural": "large deathberries",
-    "singular": "large collection of deathberries"
-  },
-  "SMALL DEATHBERRY": {
-    "default": "small deathberry",
-    "plural": "small deathberries",
-    "singular": "small deathberry"
-  },
-  "ACORN2": {
-    "default": "acorn",
-    "plural": "acorns",
-    "singular": "acorn"
-  },
-  "PINECONE": {
-    "default": "pinecone",
-    "plural": "pinecones",
-    "singular": "pinecone"
-  },
-  "VINE": {
-    "default": "bundle of vines",
-    "plural": "vines",
-    "singular": "bundle of vines"
-  },
-  "CHERRY2": {
-    "default": "cherry",
-    "plural": "cherries",
-    "singular": "cherry"
-  },
-  "BLEEDING HEARTS2": {
-    "default": "bleeding heart",
-    "plural": "bleeding hearts",
-    "singular": "bleeding heart"
-  },
-  "SHELL PACK": {
-    "default": "collection of sea accessories",
-    "plural": "sea accessories",
-    "singular": "collection of sea accessories"
-  },
-  "FERNS": {
-    "default": "fern",
-    "plural": "ferns",
-    "singular": "fern"
-  },
-  "GOLD FERNS": {
-    "default": "gold fern",
-    "plural": "gold ferns",
-    "singular": "gold fern"
-  },
-  "WHEAT": {
-    "default": "wheat stalk",
-    "plural": "wheat stalks",
-    "singular": "wheat stalk"
-  },
-  "BLACK WHEAT": {
-    "default": "black wheat stalk",
-    "plural": "black wheat stalks",
-    "singular": "black wheat stalk"
-  },
-  "BERRIES": {
-    "default": "berry",
-    "plural": "berries",
-    "singular": "berry"
-  },
-  "CLOVERS": {
-    "default": "bunch of clovers",
-    "plural": "clover bunches",
-    "singular": "bunch of clovers"
-  },
-  "CLOVER2": {
-    "default": "clover",
-    "plural": "clovers",
-    "singular": "clover"
-  },
-  "MOSS2": {
-    "default": "bundle of moss",
-    "plural": "moss",
-    "singular": "bundle of moss"
-  },
-  "FLOWER MOSS": {
-    "default": "bundle of flowering moss",
-    "plural": "flowering moss",
-    "singular": "bundle of flowering moss"
-  },
-  "MUSHROOMS": {
-    "default": "mushroom",
-    "plural": "mushrooms",
-    "singular": "mushroom"
-  },
-  "LARGE LUNA": {
-    "default": "large luna moth wing",
-    "plural": "large luna moth wings",
-    "singular": "large luna moth wing"
-  },
-  "LARGE COMET": {
-    "default": "large comet moth wing",
-    "plural": "large comet moth wings",
-    "singular": "large comet moth wing"
-  },
-  "SMALL LUNA": {
-    "default": "small luna moth wing",
-    "plural": "small luna moth wings",
-    "singular": "small luna moth wing"
-  },
-  "SMALL COMET": {
-    "default": "small comet moth wing",
-    "plural": "small comet moth wings",
-    "singular": "small comet moth wing"
-  },
-  "LADYBUGS": {
-    "default": "ladybugs",
-    "plural": "ladybug",
-    "singular": "ladybugs"
-  },
-  "LADYBUG": {
-    "default": "ladybugs",
-    "plural": "ladybug",
-    "singular": "ladybugs"
-  },
-  "MUD PAWS": {
+    "default": "indigo cloak",
+    "plural": "indigo cloaks",
+    "singular": "indigo cloak"
+  },
+  "CRIMSONDRONE": {
+    "default": "crimson drone",
+    "plural": "crimson drones",
+    "singular": "crimson drone"
+  },
+  "BLUEDRONE": {
+    "default": "blue drone",
+    "plural": "blue drones",
+    "singular": "blue drone"
+  },
+  "CYANDRONE": {
+    "default": "cyan drone",
+    "plural": "cyan drones",
+    "singular": "cyan drone"
+  },
+  "YELLOWDRONE": {
+    "default": "yellow drone",
+    "plural": "yellow drones",
+    "singular": "yellow drone"
+  },
+  "LIMEDRONE": {
+    "default": "lime drone",
+    "plural": "lime drones",
+    "singular": "lime drone"
+  },
+  "GREENDRONE": {
+    "default": "green drone",
+    "plural": "green drones",
+    "singular": "green drone"
+  },
+  "REDDRONE": {
+    "default": "red drone",
+    "plural": "red drones",
+    "singular": "red drone"
+  },
+  "RAINBOWDRONE": {
+    "default": "rainbow drone",
+    "plural": "rainbow drones",
+    "singular": "rainbow drone"
+  },
+  "BLACKDRONE": {
+    "default": "black drone",
+    "plural": "black drones",
+    "singular": "black drone"
+  },
+  "SPIKESDRONE": {
+    "default": "blue and gold drone",
+    "plural": "blue and gold drones",
+    "singular": "blue and gold drone"
+  },
+  "WHITEDRONE": {
+    "default": "white drone",
+    "plural": "white drones",
+    "singular": "white drone"
+  },
+  "PINKDRONE": {
+    "default": "pink drone",
+    "plural": "pink drones",
+    "singular": "pink drone"
+  },
+  "PURPLEDRONE": {
+    "default": "purple drone",
+    "plural": "purple drones",
+    "singular": "purple drone"
+  },
+  "MULTIDRONE": {
+    "default": "lilac drone",
+    "plural": "lilac drones",
+    "singular": "lilac drone"
+  },
+  "INDIGODRONE": {
+    "default": "indigo drone",
+    "plural": "indigo drones",
+    "singular": "indigo drone"
+  },
+  "BLUESKY": {
+    "default": "light blue lizard",
+    "plural": "light blue lizards",
+    "singular": "light blue lizard"
+  },
+  "BLUESEA": {
+    "default": "vibrant blue lizard",
+    "plural": "vibrant blue lizards",
+    "singular": "vibrant blue lizard"
+  },
+  "PINKMAGENTA": {
+    "default": "magenta pink lizard",
+    "plural": "magenta pink lizards",
+    "singular": "magenta pink lizard"
+  },
+  "PINKPURPLE": {
+    "default": "vibrant purple lizard",
+    "plural": "vibrant purple lizards",
+    "singular": "vibrant purple lizard"
+  },
+  "GREENEMERALD": {
+    "default": "vibrant green lizard",
+    "plural": "vibrant green lizards",
+    "singular": "vibrant green lizard"
+  },
+  "GREENLIME": {
+    "default": "yellow-green lizard",
+    "plural": "yellow-green lizards",
+    "singular": "yellow-green lizard"
+  },
+  "WHITEHIDDEN": {
+    "default": "cloaked white lizard",
+    "plural": "cloaked white lizards",
+    "singular": "cloaked white lizard"
+  },
+  "WHITEREVEALED": {
+    "default": "unhidden white lizard",
+    "plural": "unhidden white lizards",
+    "singular": "unhidden white lizard"
+  },
+  "BLACKNEUTRAL": {
+    "default": "relaxed black lizard",
+    "plural": "relaxed black lizards",
+    "singular": "relaxed black lizard"
+  },
+  "BLACKALERT": {
+    "default": "agitated black lizard",
+    "plural": "agitated black lizards",
+    "singular": "agitated black lizard"
+  },
+  "YELLOWORANGE": {
+    "default": "yellow-orange lizard",
+    "plural": "yellow-orange lizards",
+    "singular": "yellow-orange lizard"
+  },
+  "YELLOWLEMON": {
+    "default": "vibrant yellow lizard",
+    "plural": "vibrant yellow lizards",
+    "singular": "vibrant yellow lizard"
+  },
+  "REDTOMATO": {
+    "default": "vibrant red lizard",
+    "plural": "vibrant red lizards",
+    "singular": "vibrant red lizard"
+  },
+  "CYANBLUE": {
+    "default": "cyan blue lizard",
+    "plural": "cyan blue lizards",
+    "singular": "cyan blue lizard"
+  },
+  "CYANGREEN": {
+    "default": "cyan green lizard",
+    "plural": "cyan green lizards",
+    "singular": "cyan green lizard"
+  },
+  "ALBISALAFUSHIA": {
+    "default": "albino pink salamander",
+    "plural": "albino pink salamander",
+    "singular": "albino pink salamander"
+  },
+  "ALBISALARED": {
+    "default": "albino red salamander",
+    "plural": "albino red salamander",
+    "singular": "albino red salamander"
+  },
+  "MELASALARED": {
+    "default": "melanistic red salamander",
+    "plural": "melanistic red salamander",
+    "singular": "melanistic red salamander"
+  },
+  "MELASALAFUSHIA": {
+    "default": "melanistic pink salamander",
+    "plural": "melanistic pink salamander",
+    "singular": "melanistic pink salamander"
+  },
+  "MELASALAPURPLE": {
+    "default": "melanistic purple salamander",
+    "plural": "melanistic purple salamander",
+    "singular": "melanistic purple salamander"
+  },
+  "MUDDYPAWS": {
     "default": "muddy paws",
     "plural": "muddy paws",
     "singular": "muddy paws"
   },
-  "ASHY PAWS": {
-    "default": "ashy paws",
-    "plural": "ashy paws",
-    "singular": "ashy paws"
-  },
-  "ORANGEBUTTERFLY": {
-    "default": "monarch butterfly",
-    "plural": "monarch butterflies",
-    "singular": "monarch butterfly"
-  },
-  "BLUEBUTTERFLY": {
-    "default": "blue butterfly",
-    "plural": "blue butterflies",
-    "singular": "blue butterfly"
-  },
-  "BROWNPELT": {
-    "default": "brown hide",
-    "plural": "brown hides",
-    "singular": "brown hide"
-  },
-  "GRAYPELT": {
-    "default": "gray hide",
-    "plural": "gray hides",
-    "singular": "gray hide"
-  },
-  "BROWNMOSSPELT": {
-    "default": "brown herb hide",
-    "plural": "brown herb hides",
-    "singular": "brown herb hide"
-  },
-  "GRAYMOSSPELT": {
-    "default": "gray herb hide",
-    "plural": "gray herb hides",
-    "singular": "gray herb hide"
-  },
-  "FERN": {
-    "default": "fern",
-    "plural": "ferns",
-    "singular": "fern"
-  },
-  "MOREFERN": {
-    "default": "fern wrap",
-    "plural": "fern wraps",
-    "singular": "fern wrap"
-  },
-  "BLEEDINGVINES": {
-    "default": "bleeding vine",
-    "plural": "bleeding vines",
-    "singular": "bleeding vine"
-  },
-  "BLEEDINGHEART": {
-    "default": "bleeding heart",
-    "plural": "bleeding hearts",
-    "singular": "bleeding heart"
-  },
-  "LILY": {
-    "default": "lily",
-    "plural": "lillies",
-    "singular": "lily"
-  },
-  "PINKFLOWERCROWN": {
-    "default": "pink flower crown",
-    "plural": "pink flower crowns",
-    "singular": "pink flower crown"
-  },
-  "YELLOWFLOWERCROWN": {
-    "default": "yellow flower crown",
-    "plural": "yellow flower crowns",
-    "singular": "yellow flower crown"
-  },
-  "BLUEFLOWERCROWN": {
-    "default": "blue flower crown",
-    "plural": "blue flower crowns",
-    "singular": "blue flower crown"
-  },
-  "PURPLEFLOWERCROWN": {
-    "default": "purple flower crown",
-    "plural": "purple flower crowns",
-    "singular": "purple flower crown"
-  },
-  "REDHARNESS": {
-    "default": "red harness",
-    "plural": "red harness",
-    "singular": "red harness"
-  },
-  "NAVYHARNESS": {
-    "default": "navy harness",
-    "plural": "navy harness",
-    "singular": "navy harness"
-  },
-  "YELLOWHARNESS": {
-    "default": "yellow harness",
-    "plural": "yellow harness",
-    "singular": "yellow harness"
-  },
-  "TEALHARNESS": {
-    "default": "teal harness",
-    "plural": "teal harness",
-    "singular": "teal harness"
-  },
-  "ORANGEHARNESS": {
-    "default": "orange harness",
-    "plural": "orange harness",
-    "singular": "orange harness"
-  },
-  "GREENHARNESS": {
-    "default": "green harness",
-    "plural": "green harness",
-    "singular": "green harness"
-  },
-  "MOSSHARNESS": {
-    "default": "moss harness",
-    "plural": "moss harness",
-    "singular": "moss harness"
-  },
-  "RAINBOWHARNESS": {
-    "default": "rainbow harness",
-    "plural": "rainbow harness",
-    "singular": "rainbow harness"
-  },
-  "BLACKHARNESS": {
-    "default": "black harness",
-    "plural": "black harness",
-    "singular": "black harness"
-  },
-  "BEEHARNESS": {
-    "default": "bee harness",
-    "plural": "bee harness",
-    "singular": "bee harness"
-  },
-  "CREAMHARNESS": {
-    "default": "cream harness",
-    "plural": "cream harness",
-    "singular": "cream harness"
-  },
-  "PINKHARNESS": {
-    "default": "pink harness",
-    "plural": "pink harness",
-    "singular": "pink harness"
-  },
-  "MAGENTAHARNESS": {
-    "default": "magenta harness",
-    "plural": "magenta harness",
-    "singular": "magenta harness"
-  },
-  "PEACHHARNESS": {
-    "default": "peach harness",
-    "plural": "peach harness",
-    "singular": "peach harness"
-  },
-  "VIOLETHARNESS": {
-    "default": "violet harness",
-    "plural": "violet harness",
-    "singular": "violet harness"
-  },
-  "YELLOWCROWN": {
-    "default": "dandelion crown",
-    "plural": "dandelion crowns",
-    "singular": "dandelion crown"
-  },
-  "REDCROWN": {
-    "default": "poppy crown",
-    "plural": "poppy crowns",
-    "singular": "poppy crown"
-  },
-  "LILYPADCROWN": {
-    "default": "lilypad hat",
-    "plural": "lilypad hats",
-    "singular": "lilypad hat"
-  },
-  "WOODDRAGON": {
-    "default": "wood dragon",
-    "plural": "wood dragon",
-    "singular": "wood dragon"
-  },
-  "CHERRYBLOSSOM": {
-    "default": "cherry blossom",
-    "plural": "cherry blossoms",
-    "singular": "cherry blossom"
-  },
-  "TULIPPETALS": {
-    "default": "tulip petals",
-    "plural": "tulip petals",
-    "singular": "tulip petal"
-  },
-  "CLOVERFLOWER": {
-    "default": "clover flower",
-    "plural": "clover flowers",
-    "singular": "clover flower"
-  },
-  "PANSIES": {
-    "default": "pansies",
-    "plural": "pansies",
-    "singular": "pansy"
-  },
-  "BELLFLOWERS": {
-    "default": "bell flowers",
-    "plural": "bell flowers",
-    "singular": "bell flower"
-  },
-  "SANVITALIAFLOWERS": {
-    "default": "sanvitalia flowers",
-    "plural": "sanvitalia flowers",
-    "singular": "sanvitalia flower"
-  },
-  "EGGSHELLS": {
-    "default": "eggshells",
-    "plural": "eggshells",
-    "singular": "eggshell"
-  },
-  "BLUEEGGSHELLS": {
-    "default": "blue eggshells",
-    "plural": "blue eggshells",
-    "singular": "blue eggshell"
-  },
-  "EASTEREGG": {
-    "default": "Easter egg",
-    "plural": "Easter eggs",
-    "singular": "Easter egg"
-  },
-  "FORSYTHIA": {
-    "default": "forsythia",
-    "plural": "forsythias",
-    "singular": "forsythia"
-  },
-  "MINTLEAF": {
-    "default": "mint leaf",
-    "plural": "mint leaves",
-    "singular": "mint leaf"
-  },
-  "STICKS": {
-    "default": "sticks",
-    "plural": "sticks",
-    "singular": "stick"
-  },
-  "SPRINGFEATHERS": {
-    "default": "spring feathers",
-    "plural": "spring feathers",
-    "singular": "spring feather"
-  },
-  "SNAILSHELL": {
-    "default": "snail shell",
-    "plural": "snail shells",
-    "singular": "snail shell"
-  },
-  "MUD": {
-    "default": "mud",
-    "plural": "mud",
-    "singular": "mud"
-  },
-  "CHERRYPLUMLEAVES": {
-    "default": "cherry plum leaves",
-    "plural": "cherry plum leaves",
-    "singular": "cherry plum leaf"
-  },
-  "CATKIN": {
-    "default": "catkin",
-    "plural": "catkins",
-    "singular": "catkin"
-  },
-  "HONEYCOMB": {
-    "default": "honeycomb",
-    "plural": "honeycombs",
-    "singular": "honeycomb"
-  },
-  "FLOWERCROWN": {
-    "default": "flower crown",
-    "plural": "flower crowns",
-    "singular": "flower crown"
-  },
-  "LILIESOFTHEVALLEY": {
-    "default": "lilies of the valley",
-    "plural": "lilies of the valley",
-    "singular": "lily of the valley"
-  },
-  "STRAWMANE": {
-    "default": "straw mane",
-    "plural": "straw manes",
-    "singular": "straw mane"
-  },
-  "MISTLETOE": {
-    "default": "mistletoe",
-    "plural": "mistletoes",
-    "singular": "mistletoe"
-  },
-  "REDPOINSETTIA": {
-    "default": "red poinsettia",
-    "plural": "red poinsettias",
-    "singular": "red poinsettia"
-  },
-  "WHITEPOINSETTIA": {
-    "default": "white poinsettia",
-    "plural": "white poinsettias",
-    "singular": "white poinsettia"
-  },
-  "COTONEASTERWREATH": {
-    "default": "cotoneaster wreath",
-    "plural": "cotoneaster wreaths",
-    "singular": "cotoneaster wreath"
-  },
-  "YEWS": {
-    "default": "yew",
-    "plural": "yews",
-    "singular": "yew"
-  },
-  "CALLUNA": {
-    "default": "calluna",
-    "plural": "callunas",
-    "singular": "calluna"
-  },
-  "TEETHCOLLAR": {
-    "default": "teeth collar",
-    "plural": "teeth collars",
-    "singular": "teeth collar"
-  },
-  "DRIEDORANGE": {
-    "default": "dried orange",
-    "plural": "dried oranges",
-    "singular": "dried orange"
-  },
-  "ROESKULL": {
-    "default": "roe skull",
-    "plural": "roe skulls",
-    "singular": "roe skull"
-  },
-  "WOODENOAKANTLERS": {
-    "default": "wooden oak antlers",
-    "plural": "wooden oak antlers",
-    "singular": "wooden oak antler"
-  },
-  "WOODENBIRCHANTLERS": {
-    "default": "wooden birch antlers",
-    "plural": "wooden birch antlers",
-    "singular": "wooden birch antler"
-  },
-  "DOGWOOD": {
-    "default": "dogwood",
-    "plural": "dogwoods",
-    "singular": "dogwood"
-  },
-  "GRAYWOOL": {
-    "default": "gray wool",
-    "plural": "gray wool",
-    "singular": "gray wool"
-  },
-  "BLACKWOOL": {
-    "default": "black wool",
-    "plural": "black wool",
-    "singular": "black wool"
-  },
-  "CREAMWOOL": {
-    "default": "cream wool",
-    "plural": "cream wool",
-    "singular": "cream wool"
-  },
-  "WHITEWOOL": {
-    "default": "white wool",
-    "plural": "white wool",
-    "singular": "white wool"
-  },
-  "FIRBRANCHES": {
-    "default": "fir branches",
-    "plural": "fir branches",
-    "singular": "fir branch"
-  },
-  "CORALBELLS": {
-    "default": "coral bells",
-    "plural": "coral bells",
-    "singular": "coral bell"
-  },
-  "SLIVERDUSTPLANT": {
-    "default": "sliver dust plant",
-    "plural": "sliver dust plants",
-    "singular": "sliver dust plant"
-  },
-  "PURPLERAINCOAT": {
-    "default": "purple raincoat",
-    "plural": "purple raincoats",
-    "singular": "purple raincoat"
-  },
-  "BLUERAINCOAT": {
-    "default": "blue raincoat",
-    "plural": "blue raincoats",
-    "singular": "blue raincoat"
-  },
-  "GREENRAINCOAT": {
-    "default": "green raincoat",
-    "plural": "green raincoats",
-    "singular": "green raincoat"
-  },
-  "PINKRAINCOAT": {
-    "default": "pink raincoat",
-    "plural": "pink raincoats",
-    "singular": "pink raincoat"
-  },
-  "REDRAINCOAT":{
-    "default": "red raincoat",
-    "plural": "red raincoats",
-    "singular": "red raincoat"
-  },
-  "LIMERAINCOAT": {
-    "default": "lime raincoat",
-    "plural": "lime raincoats",
-    "singular": "lime raincoat"
-  },
-  "ORANGERAINCOAT": {
-    "default": "orange raincoat",
-    "plural": "orange raincoats",
-    "singular": "orange raincoat"
-  },
-  "YELLOWRAINCOAT": {
-    "default": "yellow raincoat",
-    "plural": "yellow raincoats",
-    "singular": "yellow raincoat"
-  },
-  "POPTABS": {
-    "default": "poptab necklace",
-    "plural": "poptab necklace",
-    "singular": "poptab necklace"
-  },
-  "FAZBEAR": {
-    "default": "fancy bear",
-    "plural": "fancy bear",
-    "singular": "fancy bear"
-  },
-  "WHITEBEAR": {
-    "default": "white teddy",
-    "plural": "white teddy",
-    "singular": "white teddy"
-  },
-  "PANDA": {
-    "default": "panda",
-    "plural": "panda",
-    "singular": "panda"
-  },
-  "BEAR": {
-    "default": "teddy bear",
-    "plural": "teddy bear",
-    "singular": "teddy bear"
-  },
-  "BROWNBEAR": {
-    "default": "brown teddy",
-    "plural": "brown teddies",
-    "singular": "brown teddy"
-  },
-  "TIDE": {
-    "default": "crab",
-    "plural": "crab",
-    "singular": "crab"
-  },
-  "CELESTIALCHIMES": {
-    "default": "celestial chimes",
-    "plural": "celestial chimes",
-    "singular": "celestial chimes"
-  },
-  "LUNARCHIMES": {
-    "default": "lunar chimes",
-    "plural": "lunar chimes",
-    "singular": "lunar chimes"
-  },
-  "STARCHIMES": {
-    "default": "star chimes",
-    "plural": "star chimes",
-    "singular": "star chimes"
-  },
-  "SILVERLUNARCHIMES": {
-    "default": "silver lunar chimes",
-    "plural": "silver lunar chimes",
-    "singular": "silver lunar chimes"
-  },
-  "FIDDLEHEADS": {
-    "default": "fiddleheads",
-    "plural": "fiddleheads",
-    "singular": "fiddleheads"
-  },
-  "LANTERNS": {
-    "default": "lanterns",
-    "plural": "lanterns",
-    "singular": "lanterns"
-  },
-  "HEARTCHARMS": {
-    "default": "heart charms",
-    "plural": "heart charms",
-    "singular": "heart charms"
-  },
-  "SPRINGFLOWERCORSAGE": {
-    "default": "spring flower corsage",
-    "plural": "spring flower corsages",
-    "singular": "spring flower corsage"
-  },
-  "ORCHID": {
-    "default": "orchid",
-    "plural": "orchids",
-    "singular": "orchid"
-  },
-  "SPRINGFLOWERS": {
-    "default": "spring flowers",
-    "plural": "spring flowers",
-    "singular": "spring flowers"
-  },
-  "RADIO": {
-    "default": "radio",
-    "plural": "radios",
-    "singular": "radio"
-  },
-  "SWANFEATHER": {
-    "default": "swan feather",
-    "plural": "swan feather",
-    "singular": "swan feather"
-  },
-  "DRACULAPARROTFEATHER": {
-    "default": "dracula parrot feather",
-    "plural": "dracula parrot feathers",
-    "singular": "dracula parrot feather"
-  },
-  "JAYFEATHER": {
-    "default": "jay feather",
-    "plural": "jay feathers",
-    "singular": "jay feather"
-  },
-  "EAGLEFEATHER": {
-    "default": "eagle feather",
-    "plural": "eagle feathers",
-    "singular": "eagle feather"
-  },
-  "EGG": {
-    "default": "egg",
-    "plural": "eggs",
-    "singular": "egg"
-  },
-  "BATHARNESS": {
-    "default": "bat harness",
-    "plural": "bat harnesses",
-    "singular": "bat harness"
-  },
-  "STARFLOWERS": {
-    "default": "star flowers",
-    "plural": "star flowers",
-    "singular": "star flower"
-  },
-  "HEARTLEAVES": {
-    "default": "heart leaves",
-    "plural": "heart leaves",
-    "singular": "heart leaves"
-  },
-  "YELLOWWISTERIA": {
-    "default": "yellow wisteria",
-    "plural": "yellow wisteria",
-    "singular": "yellow wisteria"
-  },
-  "LAVENDERHEADPIECE": {
-    "default": "lavender headpiece",
-    "plural": "lavender headpieces",
-    "singular": "lavender headpiece"
-  },
-  "LAVENDERANKLET": {
-    "default": "lavender anklet",
-    "plural": "lavender anklets",
-    "singular": "lavender anklet"
-  },
-  "LAVENDERTAILWRAP": {
-    "default": "lavender tailwrap",
-    "plural": "lavender tailwraps",
-    "singular": "lavender tailwrap"
-  },
-  "HOLLY2": {
-    "default": "holly",
-    "plural": "holly",
-    "singular": "holly"
-  },
-  "HOLLYVINES": {
-    "default": "holly vines",
-    "plural": "holly vines",
-    "singular": "holly vine"
-  },
-  "TOAST": {
-    "default": "toast",
-    "plural": "toast",
-    "singular": "toast"
-  },
-  "TOASTBERRY": {
-    "default": "berry toast",
-    "plural": "berry toasts",
-    "singular": "berry toast"
-  },
-  "TOASTGRAPE": {
-    "default": "grape toast",
-    "plural": "grape toasts",
-    "singular": "grape toast"
-  },
-  "TOASTNUTELLA": {
-    "default": "nutella toast",
-    "plural": "nutella toasts",
-    "singular": "nutella toast"
-  },
-  "TOASTPB": {
-    "default": "peanut butter toast",
-    "plural": "peanut butter toasts",
-    "singular": "peanut butter toast"
-  },
-  "WINTERSTOAT": {
-    "default": "winter stoat",
-    "plural": "winter stoats",
-    "singular": "winter stoat"
-  },
-  "BROWNSTOAT": {
-    "default": "brown stoat",
-    "plural": "brown stoats",
-    "singular": "brown stoat"
-  },
-  "WATTLE": {
-    "default": "wattle",
-    "plural": "wattles",
-    "singular": "wattle"
-  },
-  "CORKHAT": {
-    "default": "cork hat",
-    "plural": "cork hats",
-    "singluar": "cork hat"
-  },
-  "RAINBOWLORIKEET": {
-    "default": "rainbow lorikeet",
-    "plural": "rainbow lorikeets",
-    "singular": "rainbow lorikeet"
-  },
-  "BILBY": {
-    "default": "bilby",
-    "plural": "bilbies",
-    "singluar": "bilby"
-  },
-  "ZOOKEEPER": {
-    "default": "zookeeper outfit",
-    "plural": "zookeeper outfits",
-    "singular": "zookeeper outfit"
+  "SPEAR": {
+    "default": "spear",
+    "plural": "spears",
+    "singular": "spear"
+  },
+  "EXPLOSPEAR": {
+    "default": "explosive spear",
+    "plural": "explosive spears",
+    "singular": "explosive spear"
+  },
+  "PEARLEAR": {
+    "default": "pearl earrings",
+    "plural": "pearl earrings",
+    "singular": "pearl earring"
+  },
+  "KARMAFLOWER": {
+    "default": "karma flower",
+    "plural": "karma flowers",
+    "singular": "karma flower"
+  },
+  "PEARLNECK": {
+    "default": "pearl necklace",
+    "plural": "pearl necklaces",
+    "singular": "pearl necklace"
+  },
+  "REDBATNIP": {
+    "default": "red batnip",
+    "plural": "red batnip",
+    "singular": "red batnip"
+  },
+  "BATNIP": {
+    "default": "batnip",
+    "plural": "batnip",
+    "singular": "batnip"
+  },
+  "FLASHFRUIT": {
+    "default": "flash fruit",
+    "plural": "flash fruits",
+    "singular": "flash fruit"
+  },
+  "REDFLASHFRUIT": {
+    "default": "red flash fruit",
+    "plural": "red flash fruits",
+    "singular": "red flash fruit"
+  },
+  "GREENKELP": {
+    "default": "green kelp stalk",
+    "plural": "green kelp stalks",
+    "singular": "green kelp stalk"
+  },
+  "REDKELP": {
+    "default": "red kelp stalk",
+    "plural": "red kelp stalks",
+    "singular": "red kelp stalk"
+  },
+  "BROWNKELP": {
+    "default": "brown kelp stalk",
+    "plural": "brown kelp stalks",
+    "singular": "brown kelp stalk"
+  },
+  "VULTMASK": {
+    "default": "vulture mask",
+    "plural": "vulture masks",
+    "singular": "vulture mask"
+  },
+  "KINGMASK": {
+    "default": "king vulture mask",
+    "plural": "king vulture masks",
+    "singular": "king vulture mask"
+  },
+  "SCAVMASK": {
+    "default": "crafted vulture mask",
+    "plural": "crafted vulture masks",
+    "singular": "crafted vulture mask"
+  },
+  "TREESEED": {
+    "default": "small seed",
+    "plural": "small seeds",
+    "singular": "small seed"
+  },
+  "GLOWSTONE": {
+    "default": "warm glowing stone",
+    "plural": "warm glowing stones",
+    "singular": "warm glowing stone"
+  },
+  "LILFLY": {
+    "default": "small flying bug",
+    "plural": "small flying bugs",
+    "singular": "small flying bug"
+  },
+  "LILCENTI": {
+    "default": "small centipede",
+    "plural": "small centipedes",
+    "singular": "small centipede"
+  },
+  "LILBEETLE": {
+    "default": "small beetle",
+    "plural": "small beetles",
+    "singular": "small beetle"
+  },
+  "GREENDRAGFLY": {
+    "default": "green dragonfly",
+    "plural": "green dragonflies",
+    "singular": "green dragonfly"
+  },
+  "BLUEDRAGFLY": {
+    "default": "blue dragonfly",
+    "plural": "blue dragonflies",
+    "singular": "blue dragonfly"
+  },
+  "ELESPEAR": {
+    "default": "electric spear",
+    "plural": "electric spears",
+    "singular": "electric spear"
+  },
+  "DEATHSHEAD": {
+    "default": "death's-head wings",
+    "plural": "death's-head wings",
+    "singular": "death's-head wing"
+  },
+  "BLUEBORDERED": {
+    "default": "blue-bordered carpet wings",
+    "plural": "blue-bordered carpet wings",
+    "singular": "blue-bordered carpet wing"
+  },
+  "BLOODVEIN": {
+    "default": "blood-vein wings",
+    "plural": "blood-vein wings",
+    "singular": "blood-vein wing"
+  },
+  "LARGEEMERALD": {
+    "default": "large emerald wings",
+    "plural": "large emerald wings",
+    "singular": "large emerald wing"
+  },
+  "CINNABAR": {
+    "default": "cinnabar wings",
+    "plural": "cinnabar wings",
+    "singular": "cinnabar wing"
+  },
+  "LUNA": {
+    "default": "luna wings",
+    "plural": "luna wings",
+    "singular": "luna wing"
+  },
+  "ROSYMAPLE": {
+    "default": "rosy maple wings",
+    "plural": "rosy maple wings",
+    "singular": "rosy maple wing"
+  },
+  "ATLAS": {
+    "default": "atlas wings",
+    "plural": "atlas wings",
+    "singular": "atlas wing"
+  },
+  "HERCULES": {
+    "default": "hercules wings",
+    "plural": "hercules wings",
+    "singular": "hercules wing"
+  },
+  "SUNSET": {
+    "default": "madagascan sunset wings",
+    "plural": "madagascan sunset wings",
+    "singular": "madagascan sunset wing"
+  },
+  "PURPLEEMPEROR": {
+    "default": "purple emperor wings",
+    "plural": "purple emperor wings",
+    "singular": "purple emperor wing"
+  },
+  "WHITEADMIRAL": {
+    "default": "white admiral wings",
+    "plural": "white admiral wings",
+    "singular": "white admiral wing"
+  },
+  "SWALLOWTAIL": {
+  "default": "swallowtail wings",
+  "plural": "swallowtail wings",
+  "singular": "swallowtail wing"
+  },
+  "FLOWEREDMOSS": {
+  "default": "flowered moss-covered pelt",
+  "plural": "flowered moss-covered pelt",
+  "singular": "flowered moss-covered pelt"
+  },
+  "MOSS": {
+  "default": "moss-covered pelt",
+  "plural": "moss-covered pelt",
+  "singular": "moss-covered pelt"
+  },
+  "MUSHROOMS": {
+  "default": "mushroom-covered tail",
+  "plural": "mushroom-covered tail",
+  "singular": "mushroom-covered tail"
+  },
+  "SAKURA": {
+  "default": "cherry blossoms",
+  "plural": "cherry blossoms",
+  "singular": "cherry blossom"
+ },
+  "MOUSEBLUE": {
+    "default": "blue lantern mouse",
+    "plural": "blue lantern mice",
+    "singular": "blue lantern mouse"
+  },
+  "MOUSEYEL": {
+    "default": "yellow lantern mouse",
+    "plural": "yellow lantern mice",
+    "singular": "yellow lantern mouse"
+  },
+  "MOUSEPINK": {
+    "default": "pink lantern mouse",
+    "plural": "pink lantern mice",
+    "singular": "pink lantern mouse"
+  },
+  "MOUSERED": {
+    "default": "red lantern mouse",
+    "plural": "red lantern mice",
+    "singular": "red lantern mouse"
+  },
+  "YEEKRED": {
+    "default": "red yeek",
+    "plural": "red yeeks",
+    "singular": "red yeek"
+  },
+  "YEEKBLUE": {
+    "default": "blue yeek",
+    "plural": "blue yeeks",
+    "singular": "blue yeek"
+  },
+  "VULTGRUB": {
+    "default": "vulture grub",
+    "plural": "vulture grubs",
+    "singular": "vulture grub"
+  },
+  "GRAPPLE": {
+    "default": "grapple worm",
+    "plural": "grapple worms",
+    "singular": "grapple worm"
+  },
+  "SNAILGREEN": {
+    "default": "green snail",
+    "plural": "green snails",
+    "singular": "green snail"
+  },
+  "SNAILBLUE": {
+    "default": "blue snail",
+    "plural": "blue snails",
+    "singular": "blue snail"
+  },
+  "SNAILRED": {
+    "default": "red snail",
+    "plural": "red snails",
+    "singular": "red snail"
+  },
+  "SNAILPURPLE": {
+    "default": "purple snail",
+    "plural": "purple snails",
+    "singular": "purple snail"
+  },
+  "NOODLERED": {
+    "default": "red noodlefly",
+    "plural": "red noodlefies",
+    "singular": "red noodlefly"
+  },
+  "NOODLEPURPLE": {
+    "default": "purple noodlefly",
+    "plural": "purple noodleflies",
+    "singular": "purple noodlefly"
+  },
+  "NOODLEGREY": {
+    "default": "grey noodlefly",
+    "plural": "grey noodleflies",
+    "singular": "grey noodlefly"
+  },
+  "NOODLEBLUE": {
+    "default": "blue noodlefly",
+    "plural": "blue noodleflies",
+    "singular": "blue noodlefly"
+  },
+  "NOODLEWHITE": {
+    "default": "white noodlefly",
+    "plural": "white noodleflies",
+    "singular": "white noodlefly"
+  },
+  "NOODLEPINK": {
+    "default": "pink noodlefly",
+    "plural": "pink noodleflies",
+    "singular": "pink noodlefly"
+  },
+  "IGGYYELLOW": {
+    "default": "yellow overseer",
+    "plural": "yellow overseers",
+    "singular": "yellow overseer"
+  },
+  "IGGYPURPLE": {
+    "default": "purple overseer",
+    "plural": "purple overseers",
+    "singular": "purple overseer"
+  },
+  "IGGYWHITE": {
+    "default": "white overseer",
+    "plural": "white overseers",
+    "singular": "white overseer"
+  },
+  "IGGYGREEN": {
+    "default": "green overseer",
+    "plural": "green overseers",
+    "singular": "green overseer"
+  },
+  "IGGYRED": {
+    "default": "red overseer",
+    "plural": "red overseers",
+    "singular": "red overseer"
+  },
+  "IGGYBLUE": {
+    "default": "blue overseer",
+    "plural": "blue overseers",
+    "singular": "blue overseer"
+  },
+  "SQUIDBLACK": {
+    "default": "black squidcada",
+    "plural": "black squidcadas",
+    "singular": "black squidcada"
+  },
+  "SQUIDWHITE": {
+    "default": "white squidcada",
+    "plural": "white squidcadas",
+    "singular": "white squidcada"
+  },
+  "BUBBLE": {
+    "default": "little balloon",
+    "plural": "little balloons",
+    "singular": "little balloon"
+  },
+  "WORMGRASSPOT": {
+    "default": "worm grass",
+    "plural": "worm grass",
+    "singular": "worm grass"
+  },
+  "POLEPLANTPOT": {
+    "default": "pole plant",
+    "plural": "pole plants",
+    "singular": "pole plant"
+  },
+  "BATFLY": {
+    "default": "batfly",
+    "plural": "batflies",
+    "singular": "batfly"
+  },
+  "BLUEFRUIT": {
+    "default": "blue fruit",
+    "plural": "blue fruits",
+    "singular": "blue fruit"
+  },
+  "EMPTYBAG": {
+    "default": "small bag",
+    "plural": "small bags",
+    "singular": "small bag"
+  },
+  "HERBSBAG": {
+    "default": "bag of herbs",
+    "plural": "bags of herbs",
+    "singular": "bag of herbs"
+  },
+  "INVEGG": {
+    "default": "weird egg",
+    "plural": "weird egg",
+    "singular": "weird egg"
+  },
+  "VOIDSPAWN": {
+    "default": "void spawn",
+    "plural": "void spawns",
+    "singular": "void spawn"
+  },
+  "REDARMOR": {
+    "default": "red centipede armor",
+    "plural": "red centipede armor",
+    "singular": "red centipede armor"
+  },
+  "OVERSEEREYE": {
+    "default": "overseer eye",
+    "plural": "overseer eyes",
+    "singular": "overseer eye"
+  },
+  "SPIDEREAR": {
+    "default": "little spider",
+    "plural": "little spiders",
+    "singular": "little spider"
+  },
+  "NEURONBLUE": {
+    "default": "blue neuron fly",
+    "plural": "blue neuron flies",
+    "singular": "blue neuron fly"
+  },
+  "NEURONRED": {
+    "default": "red neuron fly",
+    "plural": "red neuron flies",
+    "singular": "red neuron fly"
+  },
+  "NEURONGREEN": {
+    "default": "green neuron fly",
+    "plural": "green neuron flies",
+    "singular": "green neuron fly"
+  },
+  "NEURONWHITE": {
+    "default": "white neuron fly",
+    "plural": "white neuron flies",
+    "singular": "white neuron fly"
+  },
+  "KARMAONE": {
+    "default": "ancient decoration",
+    "plural": "ancient decorations",
+    "singular": "ancient decoration"
+  },
+  "KARMATWO": {
+    "default": "ancient decoration",
+    "plural": "ancient decorations",
+    "singular": "ancient decoration"
+  },
+  "KARMATHREE": {
+    "default": "ancient decoration",
+    "plural": "ancient decorations",
+    "singular": "ancient decoration"
+  },
+  "KARMAFOUR": {
+    "default": "ancient decoration",
+    "plural": "ancient decorations",
+    "singular": "ancient decoration"
+  },
+  "SCROLL": {
+    "default": "ancient scroll",
+    "plural": "ancient scrolls",
+    "singular": "ancient scroll"
+  },
+  "NECKLACESILVER": {
+    "default": "silver ancient necklace",
+    "plural": "silver ancient necklaces",
+    "singular": "silver ancient necklace"
+  },
+  "NECKLACEGOLD": {
+    "default": "ancient golden necklace",
+    "plural": "ancient golden necklaces",
+    "singular": "ancient golden necklace"
+  },
+  "TAILWRAP": {
+    "default": "ancient tail wrap",
+    "plural": "ancient tail wrap",
+    "singular": "ancient tail wrap"
+  },
+  "RAINCOAT": {
+    "default": "ancient raincoat",
+    "plural": "ancient raincoats",
+    "singular": "ancient raincoat"
+  },
+  "LACESCARF": {
+    "default": "ancient decoration",
+    "plural": "ancient decorations",
+    "singular": "ancient decoration"
+  },
+  "TOLLMASK": {
+    "default": "scavenger toll mask",
+    "plural": "scavenger toll masks",
+    "singular": "scavenger toll mask"
+  },
+  "MUSHROOMHAT": {
+    "default": "mushroom hat",
+    "plural": "mushroom hats",
+    "singular": "mushroom hat"
+  },
+  "GRENADE": {
+    "default": "grenade",
+    "plural": "grenades",
+    "singular": "grenade"
+  },
+  "SANTAHAT": {
+    "default": "christmas hat",
+    "plural": "christmas hats",
+    "singular": "christmas hat"
+  },
+  "REDPAINT": {
+    "default": "red body paint",
+    "plural": "red body paint",
+    "singular": "red body paint"
+  },
+  "PINKPAINT": {
+    "default": "pink body paint",
+    "plural": "pink body paint",
+    "singular": "pink body paint"
+  },
+  "VOIDPAINT": {
+    "default": "gold body paint",
+    "plural": "gold body paint",
+    "singular": "gold body paint"
+  },
+  "YELLOWPAINT": {
+    "default": "yellow body paint",
+    "plural": "yellow body paint",
+    "singular": "yellow body paint"
+  },
+  "GREENPAINT": {
+    "default": "green body paint",
+    "plural": "green body paint",
+    "singular": "green body paint"
+  },
+  "PALEPAINT": {
+    "default": "silver body paint",
+    "plural": "silver body paint",
+    "singular": "silver body paint"
+  },
+  "CYANPAINT": {
+    "default": "cyan body paint",
+    "plural": "cyan body paint",
+    "singular": "cyan body paint"
+  },
+  "BLUEPAINT": {
+    "default": "blue body paint",
+    "plural": "blue body paint",
+    "singular": "blue body paint"
+  },
+  "PURPLEPAINT": {
+    "default": "purple body paint",
+    "plural": "purple body paint",
+    "singular": "purple body paint"
+  },
+  "MAGENTAPAINT": {
+    "default": "magenta body paint",
+    "plural": "magenta body paint",
+    "singular": "magenta body paint"
+  },
+  "BLACKPAINT": {
+    "default": "black body paint",
+    "plural": "black body paint",
+    "singular": "black body paint"
+  },
+  "WHITEPAINT": {
+    "default": "white body paint",
+    "plural": "white body paint",
+    "singular": "white body paint"
+  },
+  "IMPLANTWHITE": {
+    "default": "neuron fly implant",
+    "plural": "neuron fly implant",
+    "singular": "neuron fly implant"
+  },
+  "IMPLANTPURPLE": {
+    "default": "neuron fly implant",
+    "plural": "neuron fly implant",
+    "singular": "neuron fly implant"
+  },
+  "IMPLANTGREEN": {
+    "default": "neuron fly implant",
+    "plural": "neuron fly implant",
+    "singular": "neuron fly implant"
+  },
+  "IMPLANTYELLOW": {
+    "default": "neuron fly implant",
+    "plural": "neuron fly implant",
+    "singular": "neuron fly implant"
+  },
+  "IMPLANTBLUE": {
+    "default": "neuron fly implant",
+    "plural": "neuron fly implant",
+    "singular": "neuron fly implant"
+  },
+  "EYEIMPLANTWHITE": {
+    "default": "inspector eye implant",
+    "plural": "inspector eye implant",
+    "singular": "inspector eye implant"
+  },
+  "EYEIMPLANTRED": {
+    "default": "inspector eye implant",
+    "plural": "inspector eye implant",
+    "singular": "inspector eye implant"
+  },
+  "EYEIMPLANTGREEN": {
+    "default": "inspector eye implant",
+    "plural": "inspector eye implant",
+    "singular": "inspector eye implant"
+  },
+  "EYEIMPLANTYELLOW": {
+    "default": "inspector eye implant",
+    "plural": "inspector eye implant",
+    "singular": "inspector eye implant"
+  },
+  "EYEIMPLANTBLUE": {
+    "default": "inspector eye implant",
+    "plural": "inspector eye implant",
+    "singular": "inspector eye implant"
+  },
+  "GLOWWHITE": {
+    "default": "white neuron glow",
+    "plural": "white neuron glow",
+    "singular": "white neuron glow"
+  },
+  "GLOWPURPLE": {
+    "default": "purple neuron glow",
+    "plural": "purple neuron glow",
+    "singular": "purple neuron glow"
+  },
+  "GLOWGREEN": {
+    "default": "green neuron glow",
+    "plural": "green neuron glow",
+    "singular": "green neuron glow"
+  },
+  "GLOWYELLOW": {
+    "default": "yellow neuron glow",
+    "plural": "yellow neuron glow",
+    "singular": "yellow neuron glow"
+  },
+  "GLOWBLUE": {
+    "default": "blue neuron glow",
+    "plural": "blue neuron glow",
+    "singular": "blue neuron glow"
+  },
+  "CELLIMPLANT": {
+    "default": "rarefaction cell implant",
+    "plural": "rarefaction cell implant",
+    "singular": "rarefaction cell implant"
+  },
+  "ORANGEFIRE": {
+    "default": "orange flame tail",
+    "plural": "orange flame tails",
+    "singular": "orange flame tail"
+  },
+  "GREENFIRE": {
+    "default": "green flame tail",
+    "plural": "green flame tails",
+    "singular": "green flame tail"
+  },
+  "BLUEFIRE": {
+    "default": "blue flame tail",
+    "plural": "blue flame tails",
+    "singular": "blue flame tail"
+  },
+  "YELLOWFIRE": {
+    "default": "yellow flame tail",
+    "plural": "yellow flame tails",
+    "singular": "yellow flame tail"
+  },
+  "WHITEFIRE": {
+    "default": "white flame tail",
+    "plural": "white flame tails",
+    "singular": "white flame tail"
+  },
+  "PINKFIRE": {
+    "default": "pink flame tail",
+    "plural": "pink flame tails",
+    "singular": "pink flame tail"
+  },
+  "REDFIRE": {
+    "default": "red flame tail",
+    "plural": "red flame tails",
+    "singular": "red flame tail"
+  },
+  "GREENRING": {
+    "default": "green glowing ring",
+    "plural": "green glowing rings",
+    "singular": "green glowing ring"
+  },
+  "CYANRING": {
+    "default": "cyan glowing ring",
+    "plural": "cyan glowing rings",
+    "singular": "cyan glowing ring"
+  },
+  "SILVERRING": {
+    "default": "silver glowing ring",
+    "plural": "silver glowing rings",
+    "singular": "silver glowing ring"
+  },
+  "WHITERING": {
+    "default": "white glowing ring",
+    "plural": "white glowing rings",
+    "singular": "white glowing ring"
+  },
+  "YELLOWRING": {
+    "default": "yellow glowing ring",
+    "plural": "yellow glowing rings",
+    "singular": "yellow glowing ring"
+  },
+  "VOIDRING": {
+    "default": "gold glowing ring",
+    "plural": "gold glowing rings",
+    "singular": "gold glowing ring"
+  },
+  "GOLDRING": {
+    "default": "gold glowing ring",
+    "plural": "gold glowing rings",
+    "singular": "gold glowing ring"
+  },
+  "PETPEBBLE": {
+    "default": "pet rock",
+    "plural": "pet rocks",
+    "singular": "pet rock"
+  },
+  "PETSANDSTONE": {
+    "default": "pet sandstone rock",
+    "plural": "pet sandstone rocks",
+    "singular": "pet sandstone rock"
+  },
+  "PETLAPIS": {
+    "default": "pet lapis rock",
+    "plural": "pet lapis rocks",
+    "singular": "pet lapis rock"
+  },
+  "PETAMETHYST": {
+    "default": "pet amethyst rock",
+    "plural": "pet amethyst rocks",
+    "singular": "pet amethyst rock"
+  },
+  "PETJADE": {
+    "default": "pet jade rock",
+    "plural": "pet jade rocks",
+    "singular": "pet jade rock"
+  },
+  "PETGRANITE": {
+    "default": "pet granite rock",
+    "plural": "pet granite rocks",
+    "singular": "pet granite rock"
+  },
+  "PETCLAY": {
+    "default": "pet clay rock",
+    "plural": "pet clay rocks",
+    "singular": "pet clay rock"
+  },
+  "EYEPATCH": {
+    "default": "eye patch",
+    "plural": "eye patches",
+    "singular": "eye patch"
+  },
+  "INVMOUTH": {
+    "default": "seducing smile",
+    "plural": "seducing smile",
+    "singular": "seducing smile"
+  },
+  "MOUSEYELPLUSH": {
+    "default": "yellow mouse plush",
+    "plural": "yellow mouse plushies",
+    "singular": "yellow mouse plush"
+  },
+  "MOUSEREDPLUSH": {
+    "default": "red mouse plush",
+    "plural": "red mouse plushies",
+    "singular": "red mouse plush"
+  },
+  "MOUSEBLUEPLUSH": {
+    "default": "blue mouse plush",
+    "plural": "blue mouse plushies",
+    "singular": "blue mouse plush"
+  },
+  "MOUSEPINKPLUSH": {
+    "default": "pink mouse plush",
+    "plural": "pink mouse plushies",
+    "singular": "pink mouse plush"
+  },
+  "GLITCHING": {
+    "default": "glitches",
+    "plural": "glitches",
+    "singular": "glitch"
+  },
+  "ROBOTARM": {
+    "default": "bionic arm",
+    "plural": "bionic arms",
+    "singular": "bionic arm"
+  },
+  "ROBOTLEG": {
+    "default": "bionic scissorbird leg",
+    "plural": "bionic scissorbird legs",
+    "singular": "bionic scissorbird leg"
+  },
+  "SCRAPARMOR": {
+    "default": "scrap armor",
+    "plural": "scrap armor",
+    "singular": "scrap armor"
+  },
+  "BLINDFOLD": {
+    "default": "red blindfold",
+    "plural": "red blindfolds",
+    "singular": "red blindfold"
+  },
+  "BRONZEPOCKETWATCH": {
+    "default": "pocket watch",
+    "plural": "pocket watches",
+    "singular": "pocket watch"
+  },
+  "SILVERPOCKETWATCH": {
+    "default": "pocket watch",
+    "plural": "pocket watches",
+    "singular": "pocket watch"
+  },
+  "GOLDPOCKETWATCH": {
+    "default": "pocket watch",
+    "plural": "pocket watches",
+    "singular": "pocket watch"
+  },
+  "MURDERPAINT": {
+    "default": "murderer body paint",
+    "plural": "murderer body paint",
+    "singular": "murderer body paint"
+  },
+  "BOGMOSSBLUE": {
+    "default": "bog moss",
+    "plural": "bog moss",
+    "singular": "bog moss"
+  },
+  "BOGMOSSGREEN": {
+    "default": "bog moss",
+    "plural": "bog moss",
+    "singular": "bog moss"
+  },
+  "BOGMOSSLIME": {
+    "default": "bog moss",
+    "plural": "bog moss",
+    "singular": "bog moss"
+  },
+  "ORANGEPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
+  "LIMEPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
+  "GREENPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
+  "YELLOWPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
+  "BLUEPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
+  "NECKLACEWHITE": {
+    "default": "white pearl necklace",
+    "plural": "white pearl necklaces",
+    "singular": "white pearl necklace"
+  },
+  "NECKLACEPINK": {
+    "default": "pink pearl necklace",
+    "plural": "pink pearl necklaces",
+    "singular": "pink pearl necklace"
+  },
+  "NECKLACEPURPLE": {
+    "default": "purple pearl necklace",
+    "plural": "purple pearl necklaces",
+    "singular": "purple pearl necklace"
+  },
+  "NECKLACEYELLOW": {
+    "default": "yellow pearl necklace",
+    "plural": "yellow pearl necklaces",
+    "singular": "yellow pearl necklace"
+  },
+  "NECKLACECYAN": {
+    "default": "cyan pearl necklace",
+    "plural": "cyan pearl necklaces",
+    "singular": "cyan pearl necklace"
+  },
+  "NECKLACEGREEN": {
+    "default": "green pearl necklace",
+    "plural": "green pearl necklaces",
+    "singular": "green pearl necklace"
+  },
+  "NECKLACERED": {
+    "default": "red pearl necklace",
+    "plural": "red pearl necklaces",
+    "singular": "red pearl necklace"
+  },
+  "NECKLACEORANGE": {
+    "default": "gold pearl necklace",
+    "plural": "gold pearl necklaces",
+    "singular": "gold pearl necklace"
+  },
+  "NECKLACEBLUE": {
+    "default": "blue pearl necklace",
+    "plural": "blue pearl necklaces",
+    "singular": "blue pearl necklace"
+  },
+  "NECKLACEBLACK": {
+    "default": "black pearl necklace",
+    "plural": "black pearl necklaces",
+    "singular": "black pearl necklace"
+  },
+  "DRAPERYWHITE": {
+    "default": "white drapery",
+    "plural": "white draperies",
+    "singular": "white drapery"
+  },
+  "DRAPERYORANGE": {
+    "default": "orange drapery",
+    "plural": "orange draperies",
+    "singular": "orange drapery"
+  },
+  "DRAPERYTAN": {
+    "default": "tan drapery",
+    "plural": "tan draperies",
+    "singular": "tan drapery"
+  },
+  "DRAPERYPALEYELLOW": {
+    "default": "pale yellow drapery",
+    "plural": "pale yellow draperies",
+    "singular": "pale yellow drapery"
+  },
+ "DRAPERYYELLOW": {
+    "default": "yellow drapery",
+    "plural": "yellow draperies",
+    "singular": "yellow drapery"
+  },
+  "DRAPERYMINT": {
+    "default": "mint drapery",
+    "plural": "mint draperies",
+    "singular": "mint drapery"
+  },
+  "DRAPERYGREEN": {
+    "default": "green drapery",
+    "plural": "green draperies",
+    "singular": "green drapery"
+  },
+  "DRAPERYLIGHTAQUA": {
+    "default": "light aqua drapery",
+    "plural": "light aqua draperies",
+    "singular": "light aqua drapery"
+  },
+  "DRAPERYAQUA": {
+    "default": "aqua drapery",
+    "plural": "aqua draperies",
+    "singular": "aqua drapery"
+  },
+  "DRAPERYCYAN": {
+    "default": "cyan drapery",
+    "plural": "cyan draperies",
+    "singular": "cyan drapery"
+  },
+  "DRAPERYLIGHTGRAY": {
+    "default": "light gray drapery",
+    "plural": "light gray draperies",
+    "singular": "light gray drapery"
+  },
+  "DRAPERYPURPLE": {
+    "default": "purple drapery",
+    "plural": "purple draperies",
+    "singular": "purple drapery"
+  },
+  "DRAPERYLIGHTINDIGO": {
+    "default": "light indigo drapery",
+    "plural": "light indigo draperies",
+    "singular": "light indigo drapery"
+  },
+  "DRAPERYBLUE": {
+    "default": "blue drapery",
+    "plural": "blue draperies",
+    "singular": "blue drapery"
+  },
+  "DRAPERYLAVENDER": {
+    "default": "lavender drapery",
+    "plural": "lavender draperies",
+    "singular": "lavender drapery"
+  },
+  "DRAPERYLIGHTPINK": {
+    "default": "light pink drapery",
+    "plural": "light pink draperies",
+    "singular": "light pink drapery"
+  },
+  "DRAPERYPINK": {
+    "default": "pink drapery",
+    "plural": "pink draperies",
+    "singular": "pink drapery"
+  },
+  "DRAPERYHOTPINK": {
+    "default": "hot pink drapery",
+    "plural": "hot pink draperies",
+    "singular": "hot pink drapery"
+  },
+  "DRAPERYGRAY": {
+    "default": "gray drapery",
+    "plural": "gray draperies",
+    "singular": "gray drapery"
+  },
+  "DRAPERYDARKGRAY": {
+    "default": "dark gray drapery",
+    "plural": "dark gray draperies",
+    "singular": "dark gray drapery"
+  },
+  "DRAPERYLIGHTRED": {
+    "default": "light red drapery",
+    "plural": "light red draperies",
+    "singular": "light red drapery"
+  },
+  "DRAPERYRED": {
+    "default": "red drapery",
+    "plural": "red draperies",
+    "singular": "red drapery"
+  },
+  "DRAPERYPEACH": {
+    "default": "peach drapery",
+    "plural": "peach draperies",
+    "singular": "peach drapery"
+  },
+  "DRAPERYLIGHTORANGE": {
+    "default": "light orange drapery",
+    "plural": "light orange draperies",
+    "singular": "light orange drapery"
+  },
+   "ORIGINALGAYDRAPERY": {
+    "default": "original gay drapery",
+    "plural": "original gay draperies",
+    "singular": "original gay drapery"
+  },
+   "TRANSDRAPERY": {
+    "default": "trans drapery",
+    "plural": "trans draperies",
+    "singular": "trans drapery"
+  },
+   "GENDERQUEERDRAPERY": {
+    "default": "gender queer drapery",
+    "plural": "gender queer draperies",
+    "singular": "gender queer drapery"
+  },
+   "AGENDERDRAPERY": {
+    "default": "agender drapery",
+    "plural": "agender draperies",
+    "singular": "agender drapery"
+  },
+   "NONBINARYDRAPERY": {
+    "default": "nonbinary drapery",
+    "plural": "nonbinary draperies",
+    "singular": "nonbinary drapery"
+  },
+   "POLYAMDRAPERY": {
+    "default": "polyamorous drapery",
+    "plural": "polyamorous draperies",
+    "singular": "polyamorous drapery"
+  },
+   "GENDERFLUIDDRAPERY": {
+    "default": "gender fluid drapery",
+    "plural": "gender fluid draperies",
+    "singular": "gender fluid drapery"
+  },
+   "GENDERFLUXDRAPERY": {
+    "default": "gender flux drapery",
+    "plural": "gender flux draperies",
+    "singular": "gender flux drapery"
+  },
+   "GAYDRAPERY": {
+    "default": "gay drapery",
+    "plural": "gay draperies",
+    "singular": "gay drapery"
+  },
+   "OMNISEXUALDRAPERY": {
+    "default": "omnisexual drapery",
+    "plural": "omnisexual draperies",
+    "singular": "omnisexual drapery"
+  },
+   "OBJECTUMDRAPERY": {
+    "default": "objectum drapery",
+    "plural": "objectum draperies",
+    "singular": "objectum drapery"
+  },
+   "RAINBOWDRAPERY": {
+    "default": "rainbow drapery",
+    "plural": "rainbow draperies",
+    "singular": "rainbow drapery"
+  },
+   "PHILIDRAPERY": {
+    "default": "philadelphia pride drapery",
+    "plural": "philadelphia pride draperies",
+    "singular": "philadelphia pride drapery"
+  },
+   "BISEXUALDRAPERY": {
+    "default": "bisexual drapery",
+    "plural": "bisexual draperies",
+    "singular": "bisexual drapery"
+  },
+   "PANSEXUALDRAPERY": {
+    "default": "panexual drapery",
+    "plural": "pansexual draperies",
+    "singular": "pansexual drapery"
+  },
+   "POLYSEXUALDRAPERY": {
+    "default": "polysexual drapery",
+    "plural": "polysexual draperies",
+    "singular": "polysexual drapery"
+  },
+   "ASEXUALDRAPERY": {
+    "default": "asexual drapery",
+    "plural": "asexual draperies",
+    "singular": "asexual drapery"
+  },
+  "LESBIANDRAPERY": {
+   "default": "lesbian drapery",
+   "plural": "lesbian draperies",
+   "singular": "lesbian drapery"
+ },
+   "INTERSEXDRAPERY": {
+    "default": "intersex drapery",
+    "plural": "intersex draperies",
+    "singular": "intersex drapery"
+  },
+  "AROACEDRAPERY": {
+    "default": "aroace drapery",
+    "plural": "aroace draperies",
+    "singular": "aroace drapery"
+  },
+  "DEMIGIRLDRAPERY": {
+    "default": "demigirl drapery",
+    "plural": "demigirl draperies",
+    "singular": "demigirl drapery"
+  },
+  "DEMIBOYDRAPERY": {
+    "default": "demiboy drapery",
+    "plural": "demiboy draperies",
+    "singular": "demiboy drapery"
+  },
+  "DEMIGENDERDRAPERY": {
+    "default": "demigender drapery",
+    "plural": "demigender draperies",
+    "singular": "demigender drapery"
+  },
+  "DEMIFLUIDDRAPERY": {
+    "default": "demifluid drapery",
+    "plural": "demifluid draperies",
+    "singular": "demifluid drapery"
+  },
+  "DEMIFLUXDRAPERY": {
+    "default": "demiflux drapery",
+    "plural": "demiflux draperies",
+    "singular": "demiflux drapery"
+  },
+  "ABRODRAPERY": {
+    "default": "abroromantic drapery",
+    "plural": "abroromantic draperies",
+    "singular": "abroromantic drapery"
+  },
+  "ARODRAPERY": {
+    "default": "aromantic drapery",
+    "plural": "aromantic draperies",
+    "singular": "aromantic drapery"
+  },
+  "DEMISEXDRAPERY": {
+    "default": "demisexual drapery",
+    "plural": "demisexual draperies",
+    "singular": "demisexual drapery"
+  },
+  "DEMIRODRAPERY": {
+    "default": "demiromantic drapery",
+    "plural": "demiromantic draperies",
+    "singular": "demiromantic drapery"
+  },
+  "ACHILLEANDRAPERY": {
+    "default": "achillean drapery",
+    "plural": "achillean draperies",
+    "singular": "achillean drapery"
+  },
+  "SAPPHICDRAPERY": {
+    "default": "sapphic drapery",
+    "plural": "sapphic draperies",
+    "singular": "sapphic drapery"
+  },
+  "DIAMORICDRAPERY": {
+    "default": "diamoric drapery",
+    "plural": "diamoric draperies",
+    "singular": "diamoric drapery"
+  },
+  "UNLABELEDDRAPERY": {
+    "default": "unlabeled drapery",
+    "plural": "unlabeled draperies",
+    "singular": "unlabeled drapery"
+  },
+  "TRANSFEMDRAPERY": {
+    "default": "transfem drapery",
+    "plural": "transfem draperies",
+    "singular": "transfem drapery"
+  },
+  "TRANSMASCDRAPERY": {
+    "default": "transmasc drapery",
+    "plural": "transmasc draperies",
+    "singular": "transmasc drapery"
+  },
+  "BIGENDERDRAPERY": {
+    "default": "bigender drapery",
+    "plural": "bigender draperies",
+    "singular": "bigender drapery"
+  },
+  "MULTISEXDRAPERY": {
+    "default": "multisex drapery",
+    "plural": "multisex draperies",
+    "singular": "multisex drapery"
+  },
+  "ACESPECDRAPERY": {
+    "default": "acespec drapery",
+    "plural": "acespec draperies",
+    "singular": "acespec drapery"
+  },
+  "AROSPECDRAPERY": {
+    "default": "arospec drapery",
+    "plural": "arospec draperies",
+    "singular": "arospec drapery"
+  },
+   "EYEPATCHWHITE": {
+    "default": "white eyepatch",
+    "plural": "white eyepatches",
+    "singular": "white eyepatch"
+  },
+   "EYEPATCHGREEN": {
+    "default": "green eyepatch",
+    "plural": "green eyepatches",
+    "singular": "green eyepatch"
+  },
+   "EYEPATCHAQUA": {
+    "default": "aqua eyepatch",
+    "plural": "aqua eyepatches",
+    "singular": "aqua eyepatch"
+  },
+   "EYEPATCHTURQUOISE": {
+    "default": "turquoise eyepatch",
+    "plural": "turquoise eyepatches",
+    "singular": "turquoise eyepatch"
+  },
+   "EYEPATCHCYAN": {
+    "default": "cyan eyepatch",
+    "plural": "cyan eyepatches",
+    "singular": "cyan eyepatch"
+  },
+   "EYEPATCHBLUE": {
+    "default": "blue eyepatch",
+    "plural": "blue eyepatches",
+    "singular": "blue eyepatch"
+  },
+   "EYEPATCHINDIGO": {
+    "default": "indigo eyepatch",
+    "plural": "indigo eyepatches",
+    "singular": "indigo eyepatch"
+  },
+   "EYEPATCHPURPLE": {
+    "default": "purple eyepatch",
+    "plural": "purple eyepatches",
+    "singular": "purple eyepatch"
+  },
+   "EYEPATCHMAGENTA": {
+    "default": "magenta eyepatch",
+    "plural": "magenta eyepatches",
+    "singular": "magenta eyepatch"
+  },
+   "EYEPATCHPINK": {
+    "default": "pink eyepatch",
+    "plural": "pink eyepatches",
+    "singular": "pink eyepatch"
+  },
+   "EYEPATCHROSE": {
+    "default": "rose eyepatch",
+    "plural": "rose eyepatches",
+    "singular": "rose eyepatch"
+  },
+   "EYEPATCHLIGHTGRAY": {
+    "default": "light gray eyepatch",
+    "plural": "light gray eyepatches",
+    "singular": "light gray eyepatch"
+  },
+   "EYEPATCHDARKGRAY": {
+    "default": "dark gray eyepatch",
+    "plural": "dark gray eyepatches",
+    "singular": "dark gray eyepatch"
+  },
+   "EYEPATCHBLACK": {
+    "default": "black eyepatch",
+    "plural": "black eyepatches",
+    "singular": "black eyepatch"
+  },
+   "EYEPATCHRED": {
+    "default": "red eyepatch",
+    "plural": "red eyepatches",
+    "singular": "red eyepatch"
+  },
+   "EYEPATCHORANGE": {
+    "default": "orange eyepatch",
+    "plural": "orange eyepatches",
+    "singular": "orange eyepatch"
+  },
+   "EYEPATCHAMBER": {
+    "default": "amber eyepatch",
+    "plural": "amber eyepatches",
+    "singular": "amber eyepatch"
+  },
+   "EYEPATCHYELLOW": {
+    "default": "yellow eyepatch",
+    "plural": "yellow eyepatches",
+    "singular": "yellow eyepatch"
+  },
+   "EYEPATCHLIME": {
+    "default": "lime eyepatch",
+    "plural": "lime eyepatches",
+    "singular": "lime eyepatch"
+  },
+  "ALLSEEINGGOLD": {
+    "default": "gold jewlery",
+    "plural": "bunch of gold jewlery",
+    "singular": "gold jewlery"
+  },
+  "ALLSEEINGSILVER": {
+    "default": "silver jewlery",
+    "plural": "bunch of silver jewlery",
+    "singular": "silver jewlery"
+  },
+  "BESIEGEDMASKOG": {
+    "default": "tan pointed vulture mask",
+    "plural": "tan pointed vulture masks",
+    "singular": "tan pointed vulture mask"
+  },
+  "BESIEGEDMASKBLUE": {
+    "default": "blue pointed vulture mask",
+    "plural": "blue pointed vulture masks",
+    "singular": "blue pointed vulture mask"
+  },
+  "BESIEGEDMASKCYAN": {
+    "default": "cyan pointed vulture mask",
+    "plural": "cyan pointed vulture masks",
+    "singular": "cyan pointed vulture mask"
+  },
+  "BESIEGEDMASKGRAY": {
+    "default": "gray pointed vulture mask",
+    "plural": "gray pointed vulture masks",
+    "singular": "gray pointed vulture mask"
+  },
+  "BESIEGEDMASKGREEN": {
+    "default": "green pointed vulture mask",
+    "plural": "green pointed vulture masks",
+    "singular": "green pointed vulture mask"
+  },
+  "BESIEGEDMASKINDIGO": {
+    "default": "indigo pointed vulture mask",
+    "plural": "indigo pointed vulture masks",
+    "singular": "indigo pointed vulture mask"
+  },
+  "BESIEGEDMASKORANGE": {
+    "default": "orange pointed vulture mask",
+    "plural": "orange pointed vulture masks",
+    "singular": "orange pointed vulture mask"
+  },
+  "BESIEGEDMASKPINK": {
+    "default": "pink pointed vulture mask",
+    "plural": "pink pointed vulture masks",
+    "singular": "pink pointed vulture mask"
+  },
+  "BESIEGEDMASKPURPLE": {
+    "default": "purple pointed vulture mask",
+    "plural": "purple pointed vulture masks",
+    "singular": "purple pointed vulture mask"
+  },
+  "BESIEGEDMASKRED": {
+    "default": "red pointed vulture mask",
+    "plural": "red pointed vulture masks",
+    "singular": "red pointed vulture mask"
+  },
+  "BESIEGEDMASKROSE": {
+    "default": "rose pointed vulture mask",
+    "plural": "rose pointed vulture masks",
+    "singular": "rose pointed vulture mask"
+  },
+  "BESIEGEDMASKAQUA": {
+    "default": "aqua pointed vulture mask",
+    "plural": "aqua pointed vulture masks",
+    "singular": "aqua pointed vulture mask"
+  },
+  "BESIEGEDMASKYELLOW": {
+    "default": "yellow pointed vulture mask",
+    "plural": "yellow pointed vulture masks",
+    "singular": "yellow pointed vulture mask"
+  },
+  "HANDPEARLBLANK": {
+    "default": "white pearl",
+    "plural": "white pearls",
+    "singular": "white pearl"
+  },
+  "HANDPEARLBLUE": {
+    "default": "blue pearl",
+    "plural": "blue pearls",
+    "singular": "blue pearl"
+  },
+  "HANDPEARLGREEN": {
+    "default": "green pearl",
+    "plural": "green pearls",
+    "singular": "green pearl"
+  },
+  "HANDPEARLORANGE": {
+    "default": "orange pearl",
+    "plural": "orange pearls",
+    "singular": "orange pearl"
+  },
+  "HANDPEARLPURPLE": {
+    "default": "purple pearl",
+    "plural": "purple pearls",
+    "singular": "purple pearl"
+  },
+  "HANDPEARLRED": {
+    "default": "red pearl",
+    "plural": "red pearls",
+    "singular": "red pearl"
+  },
+  "HANDPEARLYELLOW": {
+    "default": "yellow pearl",
+    "plural": "yellow pearls",
+    "singular": "yellow pearl"
+  },
+  "PEARLDRAPERY": {
+    "default": "pearl drapery",
+    "plural": "pearl draperies",
+    "singular": "pearl drapery"
+  },
+  "STRAIGHTGOLD": {
+    "default": "straight gold earing",
+    "plural": "straight gold earrings",
+    "singular": "straight gold earing"
+  },
+  "STRAIGHTSILVER": {
+    "default": "straight silver earing",
+    "plural": "straight silver earrings",
+    "singular": "straight silver earing"
+  },
+  "FALLENSTARMASK": {
+    "default": "fallen star mask",
+    "plural": "fallen star masks",
+    "singular": "fallen star mask"
+  },
+   "TORNCLOAKFALL": {
+    "default": "fall themed torn cloak",
+    "plural": "fall themed torn cloaks",
+    "singular": "fall themed torn cloak"
+  },
+   "FALLENSTARPAWS": {
+    "default": "fallen star glove",
+    "plural": "fallen star gloves",
+    "singular": "fallen star glove"
+  },
+   "TORNCLOAKWINTER": {
+    "default": "winter themed torn cloak",
+    "plural": "winter themed torn cloaks",
+    "singular": "winter themed torn cloak"
+  },
+   "TORNCLOAKNIGHT": {
+    "default": "night themed torn cloak",
+    "plural": "night themed torn cloaks",
+    "singular": "night themed torn cloak"
+  },
+   "TORNCLOAKSHADOW": {
+    "default": "shadow themed torn cloak",
+    "plural": "shadow themed torn cloaks",
+    "singular": "shadow themed torn cloak"
+  },
+   "TORNCLOAKSILVER": {
+    "default": "silver torn cloak",
+    "plural": "silver torn cloaks",
+    "singular": "siver torn cloak"
+  },
+   "FAUXMANE": {
+    "default": "fiery mane",
+    "plural": "fiery manes",
+    "singular": "fiery mane"
+  },
+  "DPINKFEATHERBOA": {
+    "default": "pink vulture feather boa",
+    "plural": "pink vulture feather boas",
+    "singular": "pink vulture feather boa"
+  },
+  "DREDFEATHERBOA": {
+    "default": "red vulture feather boa",
+    "plural": "red vulture feather boas",
+    "singular": "red vulture feather boa"
+  },
+  "DGREENFEATHERBOA": {
+    "default": "green vulture feather boa",
+    "plural": "green vulture feather boas",
+    "singular": "green vulture feather boa"
+  },
+  "DBLUEFEATHERBOA": {
+    "default": "blue vulture feather boa",
+    "plural": "blue vulture feather boas",
+    "singular": "blue vulture feather boa"
+  },
+  "DGREENERFEATHERBOA": {
+    "default": "green vulture feather boa",
+    "plural": "green vulture feather boas",
+    "singular": "green vulture feather boa"
+  },
+  "LWHITEFEATHERBOA": {
+    "default": "white vulture feather boa",
+    "plural": "white vulture feather boas",
+    "singular": "white vulture feather boa"
+  },
+  "LPURPLEFEATHERBOA": {
+    "default": "purple vulture feather boa",
+    "plural": "purple vulture feather boas",
+    "singular": "purple vulture feather boa"
+  },
+  "LBLUEFEATHERBOA": {
+    "default": "blue vulture feather boa",
+    "plural": "blue vulture feather boas",
+    "singular": "blue vulture feather boa"
+  },
+  "LPINKFEATHERBOA": {
+    "default": "pink vulture feather boa",
+    "plural": "pink vulture feather boas",
+    "singular": "pink vulture feather boa"
+  },
+  "DMAGENTAFEATHERBOA": {
+    "default": "magenta vulture feather boa",
+    "plural": "magenta vulture feather boas",
+    "singular": "magenta vulture feather boa"
+  },
+  "DCRIMSONFEATHERBOA": {
+    "default": "crimson vulture feather boa",
+    "plural": "crimson vulture feather boas",
+    "singular": "crimson vulture feather boa"
+  },
+  "DPURPLEFEATHERBOA": {
+    "default": "purple vulture feather boa",
+    "plural": "purple vulture feather boas",
+    "singular": "purple vulture feather boa"
+  },
+  "REDSCARF": {
+    "default": "red scarf",
+    "plural": "red scarves",
+    "singular": "red scarf"
+  },
+  "ORANGESCARF": {
+    "default": "orange scarf",
+    "plural": "orange scarves",
+    "singular": "orange scarf"
+  },
+  "YELLOWSCARF": {
+    "default": "yellow scarf",
+    "plural": "yellow scarves",
+    "singular": "yellow scarf"
+  },
+  "LIMESCARF": {
+    "default": "lime scarf",
+    "plural": "lime scarves",
+    "singular": "lime scarf"
+  },
+  "GREENSCARF": {
+    "default": "green scarf",
+    "plural": "green scarves",
+    "singular": "green scarf"
+  },
+  "CYANSCARF": {
+    "default": "cyan scarf",
+    "plural": "cyan scarves",
+    "singular": "cyan scarf"
+  },
+  "WHITESCARF": {
+    "default": "white scarf",
+    "plural": "white scarves",
+    "singular": "white scarf"
+  },
+  "BLUESCARF": {
+    "default": "blue scarf",
+    "plural": "blue scarves",
+    "singular": "blue scarf"
+  },
+  "DARKBLUESCARF": {
+    "default": "dark blue scarf",
+    "plural": "dark blue scarves",
+    "singular": "dark blue scarf"
+  },
+  "PURPLESCARF": {
+    "default": "purple scarf",
+    "plural": "purple scarves",
+    "singular": "purple scarf"
+  },
+  "MAGENTASCARF": {
+    "default": "magenta scarf",
+    "plural": "magenta scarves",
+    "singular": "magenta scarf"
+  },
+  "BLACKSCARF": {
+    "default": "black scarf",
+    "plural": "black scarves",
+    "singular": "black scarf"
+  },
+  "GRAYSCARF": {
+    "default": "gray scarf",
+    "plural": "gray scarves",
+    "singular": "gray scarf"
+  },
+  "BROWNSCARF": {
+    "default": "brown scarf",
+    "plural": "brown scarves",
+    "singular": "brown scarf"
+  },
+  "NSHSCARF": {
+    "default": "cool scarf",
+    "plural": "cool scarves",
+    "singular": "cool scarf"
+  },
+  "SAWYERSCARF": {
+    "default": "sawyer scarf",
+    "plural": "sawyer scarves",
+    "singular": "sawyer scarf"
+  },
+  "DICEYNBANDANA": {
+    "default": "dicey neck bandana",
+    "plural": "dicey neck bandanas",
+    "singular": "dicey neck bandana"
+  },
+  "EOUSNBANDANA": {
+    "default": "eous neck bandana",
+    "plural": "eous neck bandanas",
+    "singular": "eous neck bandana"
+  },
+  "FLUIDNBANDANA": {
+    "default": "fluid neck bandana",
+    "plural": "fluid neck bandanas",
+    "singular": "fluid neck bandana"
+  },
+  "GUILDNBANDANA": {
+    "default": "guild neck bandana",
+    "plural": "guild neck bandanas",
+    "singular": "guild neck bandana"
+  },
+  "SKULLNBANDANA": {
+    "default": "skull neck bandana",
+    "plural": "skull neck bandanas",
+    "singular": "skull neck bandana"
+  },
+  "SKYNBANDANA": {
+    "default": "sky neck bandana",
+    "plural": "sky neck bandanas",
+    "singular": "sky neck bandana"
+  },
+  "SPACENBANDANA": {
+    "default": "space neck bandana",
+    "plural": "space neck bandanas",
+    "singular": "space neck bandana"
+  },
+  "SWEETIENBANDANA": {
+    "default": "sweetie neck bandana",
+    "plural": "sweetie neck bandanas",
+    "singular": "sweetie neck bandana"
+  },
+  "TCYANNBANDANA": {
+    "default": "Tcyan neck bandana",
+    "plural": "Tcyan neck bandanas",
+    "singular": "Tcyan neck bandana"
+  },
+  "TIEDYEMUDDYNBANDANA": {
+    "default": "muddy tie dye neck bandana",
+    "plural": "muddy tie dye neck bandanas",
+    "singular": "muddy tie dye neck bandana"
+  },
+  "TIEDYENBANDANA": {
+    "default": "tie dye neck bandana",
+    "plural": "tie dye neck bandanas",
+    "singular": "tie dye neck bandana"
+  },
+  "TSAVNBANDANA": {
+    "default": "Tsav neck bandana",
+    "plural": "Tsav neck bandanas",
+    "singular": "Tsav neck bandana"
+  },
+  "BLUEGRADNBANDANA": {
+    "default": "blue gradient neck bandana",
+    "plural": "blue gradient neck bandanas",
+    "singular": "blue gradient neck bandana"
+  },
+  "ORANGEGRADNBANDANA": {
+    "default": "orange gradient neck bandana",
+    "plural": "orange gradient neck bandanas",
+    "singular": "orange gradient neck bandana"
+  },
+  "YELLOWGRADNBANDANA": {
+    "default": "yellow gradient neck bandana",
+    "plural": "yellow gradient neck bandanas",
+    "singular": "yellow gradient neck bandana"
+  },
+  "LIMEGRADNBANDANA": {
+    "default": "lime gradient neck bandana",
+    "plural": "lime gradient neck bandanas",
+    "singular": "lime gradient neck bandana"
+  },
+  "TEALGRADNBANDANA": {
+    "default": "teal gradient neck bandana",
+    "plural": "teal gradient neck bandanas",
+    "singular": "teal gradient neck bandana"
+  },
+  "MAGENTAGRADNBANDANA": {
+    "default": "magenta gradient neck bandana",
+    "plural": "magenta gradient neck bandanas",
+    "singular": "magenta gradient neck bandana"
+  },
+  "REDGRADNBANDANA": {
+    "default": "red gradient neck bandana",
+    "plural": "red gradient neck bandanas",
+    "singular": "red gradient neck bandana"
+  },
+  "WHITENBANDANA": {
+    "default": "white neck bandana",
+    "plural": "white neck bandanas",
+    "singular": "white neck bandana"
+  },
+  "LiGHTGRAYNBANDANA": {
+    "default": "light gray neck bandana",
+    "plural": "light gray neck bandanas",
+    "singular": "light gray neck bandana"
+  },
+  "DARKGRAYNBANDANA": {
+    "default": "dark gray neck bandana",
+    "plural": "dark gray neck bandanas",
+    "singular": "dark gray neck bandana"
+  },
+  "BLACKNBANDANA": {
+    "default": "black neck bandana",
+    "plural": "black neck bandanas",
+    "singular": "black neck bandana"
+  },
+  "PEACHNBANDANA": {
+    "default": "peach neck bandana",
+    "plural": "peach neck bandanas",
+    "singular": "peach neck bandana"
+  },
+  "PALEREDNBANDANA": {
+    "default": "pale red neck bandana",
+    "plural": "pale red neck bandanas",
+    "singular": "pale red neck bandana"
+  },
+  "REDNBANDANA": {
+    "default": "red neck bandana",
+    "plural": "red neck bandanas",
+    "singular": "red neck bandana"
+  },
+  "MAROONNBANDANA": {
+    "default": "maroon neck bandana",
+    "plural": "maroon neck bandanas",
+    "singular": "maroon neck bandana"
+  },
+  "PALEORANGENBANDANA": {
+    "default": "pale orange neck bandana",
+    "plural": "pale orange neck bandanas",
+    "singular": "pale orange neck bandana"
+  },
+  "LIGHTORANGENBANDANA": {
+    "default": "light orange neck bandana",
+    "plural": "light orange neck bandanas",
+    "singular": "light orange neck bandana"
+  },
+  "ORANGENBANDANA": {
+    "default": "orange neck bandana",
+    "plural": "orange neck bandanas",
+    "singular": "orange neck bandana"
+  },
+  "BROWNNBANDANA": {
+    "default": "brown neck bandana",
+    "plural": "brown neck bandanas",
+    "singular": "brown neck bandana"
+  },
+  "PALEYELLOWNBANDANA": {
+    "default": "pale yellow neck bandana",
+    "plural": "pale yellow neck bandanas",
+    "singular": "pale yellow neck bandana"
+  },
+  "LIGHTYELLOWNBANDANA": {
+    "default": "light yellow neck bandana",
+    "plural": "light yellow neck bandanas",
+    "singular": "light yellow neck bandana"
+  },
+  "YELLOWNBANDANA": {
+    "default": "yellow neck bandana",
+    "plural": "yellow neck bandanas",
+    "singular": "yellow neck bandana"
+  },
+  "PALEGREENNBANDANA": {
+    "default": "pale green neck bandana",
+    "plural": "pale green neck bandanas",
+    "singular": "pale green neck bandana"
+  },
+  "LIGHTGREENNBANDANA": {
+    "default": "light green neck bandana",
+    "plural": "light green neck bandanas",
+    "singular": "light green neck bandana"
+  },
+  "GREENNBANDANA": {
+    "default": "green neck bandana",
+    "plural": "green neck bandanas",
+    "singular": "green neck bandana"
+  },
+  "DARKGREENNBANDANA": {
+    "default": "dark green neck bandana",
+    "plural": "dark green neck bandanas",
+    "singular": "dark green neck bandana"
+  },
+  "PALETEALNBANDANA": {
+    "default": "pale teal neck bandana",
+    "plural": "pale teal neck bandanas",
+    "singular": "pale teal neck bandana"
+  },
+  "LIGHTTEALNBANDANA": {
+    "default": "light teal neck bandana",
+    "plural": "light teal neck bandanas",
+    "singular": "light teal neck bandana"
+  },
+  "TEALNBANDANA": {
+    "default": "teal neck bandana",
+    "plural": "teal neck bandanas",
+    "singular": "teal neck bandana"
+  },
+  "DARKTEALNBANDANA": {
+    "default": "dark teal neck bandana",
+    "plural": "dark teal neck bandanas",
+    "singular": "dark teal neck bandana"
+  },
+  "PALEBLUENBANDANA": {
+    "default": "pale blue neck bandana",
+    "plural": "pale blue neck bandanas",
+    "singular": "pale blue neck bandana"
+  },
+  "LIGHTBLUENBANDANA": {
+    "default": "light blue neck bandana",
+    "plural": "light blue neck bandanas",
+    "singular": "light blue neck bandana"
+  },
+  "DARKBLUENBANDANA": {
+    "default": "dark blue neck bandana",
+    "plural": "dark blue neck bandanas",
+    "singular": "dark blue neck bandana"
+  },
+  "BLUENBANDANA": {
+    "default": "blue neck bandana",
+    "plural": "blue neck bandanas",
+    "singular": "blue neck bandana"
+  },
+  "LAVENDERNBANDANA": {
+    "default": "lavender neck bandana",
+    "plural": "lavender neck bandanas",
+    "singular": "lavender neck bandana"
+  },
+  "PURPLENBANDANA": {
+    "default": "purple neck bandana",
+    "plural": "purple neck bandanas",
+    "singular": "purple neck bandana"
+  },
+  "DARKPURPLENBANDANA": {
+    "default": "dark purple neck bandana",
+    "plural": "dark purple neck bandanas",
+    "singular": "dark purple neck bandana"
+  },
+  "PALEPINKNBANDANA": {
+    "default": "pale pink neck bandana",
+    "plural": "pale pink neck bandanas",
+    "singular": " neck bandana"
+  },
+  "LIGHTPINKNBANDANA": {
+    "default": "light pink neck bandana",
+    "plural": "light pink neck bandanas",
+    "singular": "light pink neck bandana"
+  },
+  "PINKNBANDANA": {
+    "default": "pink neck bandana",
+    "plural": "pink neck bandanas",
+    "singular": "pink neck bandana"
+  },
+  "DARKPINKNBANDANA": {
+    "default": "dark pink neck bandana",
+    "plural": "dark pink neck bandanas",
+    "singular": "dark pink neck bandana"
+  },
+  "PATCHWORKREDNBANDANA": {
+    "default": "red patchwork neck bandana",
+    "plural": "red patchwork neck bandanas",
+    "singular": "red patchwork neck bandana"
+  },
+  "PATCHWORKORANGENBANDANA": {
+    "default": "orange patchwork neck bandana",
+    "plural": "orange patchwork neck bandanas",
+    "singular": "orange patchwork neck bandana"
+  },
+  "PATCHWORKYELLOWNBANDANA": {
+    "default": "yellow patchwork neck bandana",
+    "plural": "yellow patchwork neck bandanas",
+    "singular": "yellow patchwork neck bandana"
+  },
+  "PATCHWORKTEALNBANDANA": {
+    "default": "teal patchwork neck bandana",
+    "plural": "teal patchwork neck bandanas",
+    "singular": "teal patchwork neck bandana"
+  },
+  "PATCHWORKBLUENBANDANA": {
+    "default": "blue patchwork neck bandana",
+    "plural": "blue patchwork neck bandanas",
+    "singular": "blue patchwork neck bandana"
+  },
+  "PATCHWORKINDIGONBANDANA": {
+    "default": "indigo patchwork neck bandana",
+    "plural": "indigo patchwork neck bandanas",
+    "singular": "indigo neck bandana"
+  },
+  "PATCHWORKPURPLENBANDANA": {
+    "default": "purple patchwork neck bandana",
+    "plural": "purple patchwork neck bandanas",
+    "singular": "purple patchwork neck bandana"
+  },
+  "PATCHWORKNPINKBANDANA": {
+    "default": "pink patchwork neck bandana",
+    "plural": "pink patchwork neck bandanas",
+    "singular": "pink patchwork neck bandana"
+  },
+  "AMBERCHAIN": {
+    "default": "amber chain",
+    "plural": "amber chains",
+    "singular": "amber chain"
+  },
+  "PINKCHAIN": {
+    "default": "pink chain",
+    "plural": "pink chains",
+    "singular": "pink chain"
+  },
+  "PURPLECHAIN": {
+    "default": "purple chain",
+    "plural": "purple chains",
+    "singular": "purple chain"
+  },
+  "YELLOWCHAIN": {
+    "default": "yellow chain",
+    "plural": "yellow chains",
+    "singular": "yellow chain"
+  },
+  "TEALCHAIN": {
+    "default": "teal chain",
+    "plural": "teal chains",
+    "singular": "teal chain"
+  },
+  "GREENCHAIN": {
+    "default": "green chain",
+    "plural": "green chains",
+    "singular": "green chain"
+  },
+  "REDCHAIN": {
+    "default": "red chain",
+    "plural": "red chains",
+    "singular": "red chain"
+  },
+  "ORANGECHAIN": {
+    "default": "orange chain",
+    "plural": "orange chains",
+    "singular": "orange chain"
+  },
+  "BLUECHAIN": {
+    "default": "blue chain",
+    "plural": "blue chains",
+    "singular": "blue chain"
+  },
+  "BLACKCHAIN": {
+    "default": "black chain",
+    "plural": "black chains",
+    "singular": "black chain"
+  },
+  "SCAVMPAINT": {
+    "default": "scavenger murder paint",
+    "plural": "scavenger murder paints",
+    "singular": "scavenger murder paint"
+  },
+  "FALLMPAINT": {
+    "default": "falling murder paint",
+    "plural": "falling murder paints",
+    "singular": "falling murder paint"
+  },
+  "SPEARMPAINT": {
+    "default": "spear murder paint",
+    "plural": "spear murder paints",
+    "singular": "spear murder paint"
+  },
+  "BLUECLOUDS": {
+    "default": "blue cloud cover",
+    "plural": "blue cloud covers",
+    "singular": "blue cloud cover"
+  },
+  "YELLOWCLOUDS": {
+    "default": "yellow cloud cover",
+    "plural": "yellow cloud covers",
+    "singular": "yellow cloud cover"
+  },
+  "PURPLECLOUDS": {
+    "default": "purple cloud cover",
+    "plural": "purple cloud covers",
+    "singular": "purple cloud cover"
+  },
+  "PINKCLOUDS": {
+    "default": "pink cloud cover",
+    "plural": "pink cloud covers",
+    "singular": "pink cloud cover"
+  },
+  "GOGGLES": {
+    "default": "goggles",
+    "plural": "multiple goggles",
+    "singular": "goggles"
+  },
+  "PINKPOLEPLANTBUDDY": {
+    "default": "pink pole plant buddy",
+    "plural": "pink pole plant buddies",
+    "singular": "pink pole plant buddy"
+  },
+  "ORANGEPOLEPLANTBUDDY": {
+    "default": "orange pole plant buddy",
+    "plural": "orange pole plant buddies",
+    "singular": "orange pole plant buddy"
+  },
+  "REDPOLEPLANTBUDDY": {
+    "default": "red pole plant buddy",
+    "plural": "red pole plant buddies",
+    "singular": "red pole plant buddy"
+  },
+  "YELLOWFLOATYEYES": {
+    "default": "yellow floaty eyes",
+    "plural": "multiple yellow floaty eyes",
+    "singular": "yellow floaty eyes"
+  },
+  "REDFLOATYEYES": {
+    "default": "red floaty eyes",
+    "plural": "multiple red floaty eyes",
+    "singular": "red floaty eyes"
+  },
+  "ORANGEFLOATYEYES": {
+    "default": "orange floaty eyes",
+    "plural": "multiple orange floaty eyes",
+    "singular": "orange floaty eyes"
+  },
+  "LIMEFLOATYEYES": {
+    "default": "lime floaty eyes",
+    "plural": "multiple lime floaty eyes",
+    "singular": "lime floaty eyes"
+  },
+  "GREENFLOATYEYES": {
+    "default": "green floaty eyes",
+    "plural": "multiple green floaty eyes",
+    "singular": "green floaty eyes"
+  },
+  "BLUEFLOATYEYES": {
+    "default": "blue floaty eyes",
+    "plural": "multiple blue floaty eyes",
+    "singular": "blue floaty eyes"
+  },
+  "INDIGOFLOATYEYES": {
+    "default": "indigo floaty eyes",
+    "plural": "multiple indigo floaty eyes",
+    "singular": "indigo floaty eyes"
+  },
+  "ORANGEORBITAL": {
+    "default": "orange orbital",
+    "plural": "orange orbitals",
+    "singular": "orange orbital"
+  },
+  "YELLOWORBITAL": {
+    "default": "yellow orbital",
+    "plural": "yellow orbitals",
+    "singular": "yellow orbital"
+  },
+  "EARTHORBITAL": {
+    "default": "earth orbital",
+    "plural": "earth orbitals",
+    "singular": "earth orbital"
+  },
+  "EARTHTWOORBITAL": {
+    "default": "earth orbital",
+    "plural": "earth orbitals",
+    "singular": "earth orbital"
+  },
+  "PURPLEORBITAL": {
+    "default": "purple orbital",
+    "plural": "purple orbitals",
+    "singular": "purple orbital"
+  },
+  "PINKORBITAL": {
+    "default": "pink orbital",
+    "plural": "pink orbitals",
+    "singular": "pink orbital"
+  },
+  "REDORBITAL": {
+    "default": "red orbital",
+    "plural": "red orbitals",
+    "singular": "red orbital"
   }
 }

@@ -2042,9 +2042,9 @@ class MakeClanScreen(Screens):
         self.pname= random.choice(pelts) if random.randint(1,3) == 1 else "Tortie"
         self.length=random.choice(["short", "medium", "long"])
         self.colour=random.choice(Pelt.pelt_colours)
-        self.white_patches= choice(white_patches) if random.randint(1,2) == 1 else None
+        self.white_patches= choice(white_patches) if not random.randint(0,1) else None
         self.eye_colour=choice(Pelt.eye_colours)
-        self.eye_colour2=choice(Pelt.eye_colours) if random.randint(1,10) == 1 else None
+        self.eye_colour2=choice(Pelt.eye_colours) if not random.randint(0,24) else None
         self.tortiebase=choice(Pelt.tortiebases)
         self.tortiecolour=choice(Pelt.pelt_colours)
         self.pattern=choice(Pelt.tortiepatterns)
@@ -2053,20 +2053,19 @@ class MakeClanScreen(Screens):
         self.points=choice(Pelt.point_markings) if random.randint(1,5) == 1 else None
         self.scars=[choice(Pelt.scars1 + Pelt.scars2 + Pelt.scars3)] if random.randint(1,10) == 1 else []
         self.tint=choice(["pink", "gray", "red", "orange", "black", "yellow", "purple", "blue","dilute","warmdilute","cooldilute"]) if random.randint(1,5) == 1 else None
-        self.skin=choice(Pelt.skin_sprites)
+        self.skin=choice(random.choices(Pelt.skin_categories, Pelt.skin_weights, k=1)[0])
         self.white_patches_tint=choice(["offwhite", "cream", "darkcream", "gray", "pink"]) if random.randint(1,5) == 1 else None
         self.reverse= False if random.randint(1,2) == 1 else True
         self.skill = "Random"
         self.sex = random.choice(["male", "female"])
         self.personality = choice(['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug'])
 
-        self.accessories = [choice(Pelt.plant_accessories + Pelt.wild_accessories + Pelt.collars 
-                                   #+ Pelt.flower_accessories + Pelt.plant2_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories
-                                   )] if random.randint(1,5) == 1 else []
+        self.accessories = [choice(Pelt.wild_accessories + Pelt.plant_accessories + Pelt.collars + Pelt.lizards + Pelt.herbs2 + \
+                    Pelt.muddypaws + Pelt.insectwings + Pelt.buddies + Pelt.newaccs + Pelt.newaccs2 + Pelt.bodypaint + \
+                    Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery + Pelt.pridedrapery + Pelt.eyepatches + \
+                    Pelt.larsaccs + Pelt.harleyaccs + Pelt.featherboas + Pelt.scarves + Pelt.neckbandanas + \
+                    Pelt.chains + Pelt.floatyeyes + Pelt.newaccs3 + Pelt.orbitals)] if random.randint(1,5) == 1 else []
 
-        self.accessories = [choice(Pelt.plant_accessories + Pelt.wild_accessories + Pelt.collars 
-                                   #+ Pelt.flower_accessories + Pelt.plant2_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories
-                                   )] if random.randint(1,5) == 1 else []
         self.permanent_condition = choice(permanent_conditions) if random.randint(1,30) == 1 else None
 
         if self.permanent_condition == "born without a tail":
@@ -2719,7 +2718,7 @@ class MakeClanScreen(Screens):
         elif self.page == 2:
 
             if self.current_selection not in [
-                "eye_colour", "heterochromia", "skin", "scar", "accessory"
+                "eye_colour", "heterochromia", "feature", "scar", "accessory"
                 ]:
                 self.current_selection = "eye_colour"
 
@@ -2731,7 +2730,7 @@ class MakeClanScreen(Screens):
             x_pos = 120
             eye_y_pos = 0
             selection_y_pos = 150
-            for i in ["eye_colour", "heterochromia", "skin", "scar", "accessory"]:
+            for i in ["eye_colour", "heterochromia", "feature", "scar", "accessory"]:
                 self.current_selection_buttons[i] = UISurfaceImageButton(
                     ui_scale(pygame.Rect((x_pos, selection_y_pos), (120, 40))),
                     i.replace("_", " "),
@@ -2742,12 +2741,12 @@ class MakeClanScreen(Screens):
                 )
                 if i == "heterochromia":
                     selection_y_pos += 60
-                if i == "skin":
+                if i == "feature":
                     selection_y_pos += 60
                 selection_y_pos += 50
 
             if self.current_selection == "eye_colour":
-                for colour in Pelt.eye_colours:
+                for colour in Pelt.eye_colours + Pelt.riveye_colours + Pelt.buttoneye_colours:
                     self.eye_colour_buttons[colour] = UIImageButton(
                         ui_scale(pygame.Rect((0, eye_y_pos), (34, 34))),
                         "",
@@ -2765,7 +2764,7 @@ class MakeClanScreen(Screens):
                     eye_y_pos += 40
 
             elif self.current_selection == "heterochromia":
-                for colour in [None] + Pelt.eye_colours:
+                for colour in [None] + Pelt.eye_colours + Pelt.riveye_colours + Pelt.multi_eyes + Pelt.buttoneye_colours:
                     self.heterochromia_buttons[str(colour)] = UIImageButton(
                         ui_scale(pygame.Rect((0, eye_y_pos), (34, 34))),
                         "",
@@ -2782,23 +2781,24 @@ class MakeClanScreen(Screens):
                     )
                     eye_y_pos += 40
 
-            elif self.current_selection == "skin":
-                for colour in Pelt.skin_sprites:
-                    self.skin_buttons[str(colour)] = UIImageButton(
-                    ui_scale(pygame.Rect((0, eye_y_pos), (34, 34))),
-                    "",
-                    object_id="@unchecked_checkbox",
-                    container=self.elements["scroll_container"],
-                    manager=MANAGER
-                    )
-                    self.skin_names[str(colour)] = pygame_gui.elements.UITextBox(
-                        str(colour).lower().capitalize(),
-                        ui_scale(pygame.Rect((0 + 32, eye_y_pos),(200, 34))),
-                        object_id=get_text_box_theme("#text_box_30_horizleft"),
+            elif self.current_selection == "feature":
+                for skintype in Pelt.skin_categories:
+                    for colour in skintype:
+                        self.skin_buttons[str(colour)] = UIImageButton(
+                        ui_scale(pygame.Rect((0, eye_y_pos), (34, 34))),
+                        "",
+                        object_id="@unchecked_checkbox",
                         container=self.elements["scroll_container"],
                         manager=MANAGER
-                    )
-                    eye_y_pos += 40
+                        )
+                        self.skin_names[str(colour)] = pygame_gui.elements.UITextBox(
+                            str(colour).lower().capitalize(),
+                            ui_scale(pygame.Rect((0 + 32, eye_y_pos),(200, 34))),
+                            object_id=get_text_box_theme("#text_box_30_horizleft"),
+                            container=self.elements["scroll_container"],
+                            manager=MANAGER
+                        )
+                        eye_y_pos += 40
             elif self.current_selection == "scar":
                 for scar in ["None"] + Pelt.scars1 + Pelt.scars2 + Pelt.scars3:
                     self.scar_buttons[str(scar)] = UIImageButton(
@@ -2845,8 +2845,11 @@ class MakeClanScreen(Screens):
                     initial_text=self.previous_search_text,
                     manager=MANAGER
                     )
-                acc_list = (Pelt.plant_accessories + Pelt.wild_accessories +
-                    Pelt.collars 
+                acc_list = (Pelt.wild_accessories + Pelt.plant_accessories + Pelt.collars + Pelt.lizards + Pelt.herbs2 + \
+                    Pelt.muddypaws + Pelt.insectwings + Pelt.buddies + Pelt.newaccs + Pelt.newaccs2 + Pelt.bodypaint + \
+                    Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery + Pelt.pridedrapery + Pelt.eyepatches + \
+                    Pelt.larsaccs + Pelt.harleyaccs + Pelt.featherboas + Pelt.scarves + Pelt.neckbandanas + \
+                    Pelt.chains + Pelt.floatyeyes + Pelt.newaccs3 + Pelt.orbitals
                     #+ Pelt.flower_accessories +
                     #Pelt.plant2_accessories + Pelt.snake_accessories +
                     #Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories +
@@ -3237,12 +3240,12 @@ class MakeClanScreen(Screens):
                             self.tortiepattern = pelts[next_index].lower()
                 elif self.page == 2:
                     if self.current_selection == "eye_colour":
-                        colours = Pelt.eye_colours
+                        colours = Pelt.eye_colours + Pelt.riveye_colours + Pelt.buttoneye_colours
                         current_index = colours.index(self.eye_colour)
                         next_index = (current_index + num) % len(colours)
                         self.eye_colour = colours[next_index]
                     elif self.current_selection == "heterochromia":
-                        colours = ["None"] + Pelt.eye_colours
+                        colours = ["None"] + Pelt.eye_colours + Pelt.riveye_colours + Pelt.multi_eyes + Pelt.buttoneye_colours
                         current_index = colours.index(str(self.eye_colour2))
                         next_index = (current_index + num) % len(colours)
                         if colours[next_index] == "None":
@@ -3250,8 +3253,8 @@ class MakeClanScreen(Screens):
                         else:
                             next_eye = colours[next_index]
                         self.eye_colour2 = next_eye
-                    elif self.current_selection == "skin":
-                        colours = Pelt.skin_sprites
+                    elif self.current_selection == "feature":
+                        colours = Pelt.skin_categories
                         current_index = colours.index(self.skin)
                         next_index = (current_index + num) % len(colours)
                         self.skin = colours[next_index]
@@ -3272,8 +3275,11 @@ class MakeClanScreen(Screens):
                             next_scar = [scars[next_index]]
                         self.scars = next_scar
                     elif self.current_selection == "accessory":
-                        acc_list = (Pelt.plant_accessories + Pelt.wild_accessories +
-                            Pelt.collars 
+                        acc_list = (Pelt.wild_accessories + Pelt.plant_accessories + Pelt.collars + Pelt.lizards + Pelt.herbs2 + \
+                    Pelt.muddypaws + Pelt.insectwings + Pelt.buddies + Pelt.newaccs + Pelt.newaccs2 + Pelt.bodypaint + \
+                    Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery + Pelt.pridedrapery + Pelt.eyepatches + \
+                    Pelt.larsaccs + Pelt.harleyaccs + Pelt.featherboas + Pelt.scarves + Pelt.neckbandanas + \
+                    Pelt.chains + Pelt.floatyeyes + Pelt.newaccs3 + Pelt.orbitals
                             #+ Pelt.flower_accessories +
                             #Pelt.plant2_accessories + Pelt.snake_accessories +
                             #Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories +
@@ -3392,18 +3398,20 @@ class MakeClanScreen(Screens):
                         self.pattern = random.choice(Pelt.tortiepatterns)
                 elif self.page == 2:
                     if self.current_selection == "eye_colour":
-                        self.eye_colour = random.choice(Pelt.eye_colours)
+                        self.eye_colour = random.choice(Pelt.eye_colours + Pelt.riveye_colours + Pelt.multi_eyes + Pelt.buttoneye_colours)
                     elif self.current_selection == "heterochromia":
-                        self.eye_colour2 = random.choice(Pelt.eye_colours)
-                    elif self.current_selection == "skin":
-                        self.skin = random.choice(Pelt.skin_sprites)
+                        self.eye_colour2 = random.choice(Pelt.eye_colours + Pelt.riveye_colours + Pelt.multi_eyes + Pelt.buttoneye_colours)
+                    elif self.current_selection == "feature":
+                        self.skin = choice(random.choices(Pelt.skin_categories, Pelt.skin_weights, k=1)[0])
                     elif self.current_selection == "scar":
                         self.scars = [random.choice(Pelt.scars1 + Pelt.scars2 + Pelt.scars3)]
                     elif self.current_selection == "accessory":
 
-                        acc_list = (
-                            Pelt.plant_accessories + Pelt.wild_accessories +
-                            Pelt.collars 
+                        acc_list = (Pelt.wild_accessories + Pelt.plant_accessories + Pelt.collars + Pelt.lizards + Pelt.herbs2 + \
+                    Pelt.muddypaws + Pelt.insectwings + Pelt.buddies + Pelt.newaccs + Pelt.newaccs2 + Pelt.bodypaint + \
+                    Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery + Pelt.pridedrapery + Pelt.eyepatches + \
+                    Pelt.larsaccs + Pelt.harleyaccs + Pelt.featherboas + Pelt.scarves + Pelt.neckbandanas + \
+                    Pelt.chains + Pelt.floatyeyes + Pelt.newaccs3 + Pelt.orbitals
                             #+ Pelt.flower_accessories +
                             #Pelt.plant2_accessories + Pelt.snake_accessories +
                             #Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories +
