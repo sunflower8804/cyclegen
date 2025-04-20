@@ -1153,12 +1153,12 @@ class MakeClanScreen(Screens):
                 },
             )
             # LG
-            tab_rect = ui_scale(pygame.Rect((0, 0), (100, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (70, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab5"] = UISurfaceImageButton(
                 tab_rect,
                 "Pine",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (100, 30)),
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (70, 30)),
                 object_id="@buttonstyles_vertical_tab",
                 manager=MANAGER,
                 anchors={
@@ -1167,18 +1167,60 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab4"],
                 },
             )
-            tab_rect = ui_scale(pygame.Rect((0, 0), (85, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (80, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab6"] = UISurfaceImageButton(
                 tab_rect,
                 "Birch",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (85, 30)),
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (80, 30)),
                 object_id="@buttonstyles_vertical_tab",
                 manager=MANAGER,
                 anchors={
                     "right": "right",
                     "right_target": self.elements["art_frame"],
                     "top_target": self.tabs["tab5"],
+                },
+            )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (145, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab7"] = UISurfaceImageButton(
+                tab_rect,
+                "Shaded Citadel",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (145, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab6"],
+                },
+            )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (100, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab8"] = UISurfaceImageButton(
+                tab_rect,
+                "Outskirts",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (100, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab7"],
+                },
+            )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (145, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab9"] = UISurfaceImageButton(
+                tab_rect,
+                "Outer Expanse",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (145, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab8"],
                 },
             )
             # ---
@@ -1222,12 +1264,12 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab2"],
                 },
             )
-            tab_rect = ui_scale(pygame.Rect((0, 0), (135, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (125, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab4"] = UISurfaceImageButton(
                 tab_rect,
                 "Rocky Slope",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (135, 30)),
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (125, 30)),
                 object_id="@buttonstyles_vertical_tab",
                 manager=MANAGER,
                 anchors={
@@ -1306,12 +1348,12 @@ class MakeClanScreen(Screens):
                 },
             )
             # LG
-            tab_rect = ui_scale(pygame.Rect((0, 0), (100, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (75, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab4"] = UISurfaceImageButton(
                 tab_rect,
                 "Taiga",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (100, 30)),
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (75, 30)),
                 object_id="@buttonstyles_vertical_tab",
                 manager=MANAGER,
                 anchors={
@@ -1320,12 +1362,12 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab3"],
                 },
             )
-            tab_rect = ui_scale(pygame.Rect((0, 0), (100, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (80, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab5"] = UISurfaceImageButton(
                 tab_rect,
                 "Desert",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (100, 30)),
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (80, 30)),
                 object_id="@buttonstyles_vertical_tab",
                 manager=MANAGER,
                 anchors={
@@ -1334,12 +1376,12 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab4"],
                 },
             )
-            tab_rect = ui_scale(pygame.Rect((0, 0), (85, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (65, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab6"] = UISurfaceImageButton(
                 tab_rect,
                 "City",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (85, 30)),
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (65, 30)),
                 object_id="@buttonstyles_vertical_tab",
                 manager=MANAGER,
                 anchors={
@@ -1348,12 +1390,12 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab5"],
                 },
             )
-            tab_rect = ui_scale(pygame.Rect((0, 0), (85, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (70, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab7"] = UISurfaceImageButton(
                 tab_rect,
                 "Farm",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (85, 30)),
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (70, 30)),
                 object_id="@buttonstyles_vertical_tab",
                 manager=MANAGER,
                 anchors={
@@ -1377,12 +1419,12 @@ class MakeClanScreen(Screens):
                 },
             )
             # ---
-            tab_rect = ui_scale(pygame.Rect((0, 0), (95, 30)))
+            tab_rect = ui_scale(pygame.Rect((0, 0), (85, 30)))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab9"] = UISurfaceImageButton(
                 tab_rect,
                 "Castle",
-                get_button_dict(ButtonStyles.VERTICAL_TAB, (95, 30)),
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (85, 30)),
                 object_id="@buttonstyles_vertical_tab",
                 manager=MANAGER,
                 anchors={

@@ -456,7 +456,7 @@ class Sprites:
             self.make_group('fancyskin', (a, 4), f"skin{i}")
         for a, i in enumerate(['YELLOWCYAN', 'RAINBOWNEEDLES', 'CYANWINGS', 'ANGLERFISH', 'FIREBUGPART', 'TEARS', 'BLACKTHORNS', 'WHITETHORNS']):
             self.make_group('fancyskin', (a, 5), f"skin{i}")
-        for a, i in enumerate(['GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS', 'ACROTAIL']):
+        for a, i in enumerate(['GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEAANGELWINGS', 'ACROTAIL']):
             self.make_group('fancyskin', (a, 6), f"skin{i}")
 
         # data games stuff spritesheet
