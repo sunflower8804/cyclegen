@@ -110,37 +110,11 @@ class StartScreen(Screens):
                 quit(savesettings=False, clearevents=False)
             elif event.ui_element == self.social_buttons["discord_button"]:
                 if platform.system() == "Darwin":
-                    subprocess.Popen(
-                        ["open", "-u", "https://discord.gg/lifegen"])
+                    subprocess.Popen(["open", "-u", "https://discord.gg/clangen"])
                 elif platform.system() == "Windows":
-                    os.system(f"start \"\" {'https://discord.gg/lifegen'}")
+                    os.system(f"start \"\" {'https://discord.gg/clangen'}")
                 elif platform.system() == "Linux":
-                    subprocess.Popen(
-                        ["xdg-open", "https://discord.gg/lifegen"])
-            elif event.ui_element == self.social_buttons["tumblr_button"]:
-                if platform.system() == "Darwin":
-                    subprocess.Popen(
-                        ["open", "-u", "https://officialclangen.tumblr.com/"]
-                    )
-                elif platform.system() == "Windows":
-                    os.system(
-                        f"start \"\" {'https://officialclangen.tumblr.com/'}")
-                elif platform.system() == "Linux":
-                    subprocess.Popen(
-                        ["xdg-open", "https://officialclangen.tumblr.com/"]
-                    )
-            elif event.ui_element == self.social_buttons["twitter_button"]:
-                if platform.system() == "Darwin":
-                    subprocess.Popen(
-                        ["open", "-u", "https://twitter.com/OfficialClangen"]
-                    )
-                elif platform.system() == "Windows":
-                    os.system(
-                        f"start \"\" {'https://twitter.com/OfficialClangen'}")
-                elif platform.system() == "Linux":
-                    subprocess.Popen(
-                        ["xdg-open", "https://twitter.com/OfficialClangen"]
-                    )
+                    subprocess.Popen(["xdg-open", "https://discord.gg/clangen"])
         elif event.type == pygame.KEYDOWN and game.settings["keybinds"]:
             if (
                 event.key == pygame.K_RETURN or event.key == pygame.K_SPACE
@@ -201,70 +175,44 @@ class StartScreen(Screens):
         Screens.show_mute_buttons()
 
         # Create buttons
-
-        self.continue_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 310), (200, 30))),
-            "continue",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-        )
-        self.switch_clan_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 15), (200, 30))),
-            "switch clan",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-            anchors={"top_target": self.continue_button},
-        )
-        self.new_clan_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 15), (200, 30))),
-            "new clan",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-            anchors={"top_target": self.switch_clan_button},
-        )
-        self.settings_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 15), (200, 30))),
-            "settings + info",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-            anchors={"top_target": self.new_clan_button},
-        )
-        self.quit = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 15), (200, 30))),
-            "quit",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-            anchors={"top_target": self.settings_button},
-        )
-
-        self.social_buttons["twitter_button"] = UIImageButton(
-            ui_scale(pygame.Rect((12, 647), (40, 40))),
+        #SUNNY-RAINGEN-TESTS
+        self.continue_button = UIImageButton(
+            ui_scale(pygame.Rect((70, 300), (192, 40))),
             "",
-            object_id="#twitter_button",
+            object_id="#continue_button",
             manager=MANAGER,
-            tool_tip_text="Check out our Twitter!",
         )
-        self.social_buttons["tumblr_button"] = UIImageButton(
-            ui_scale(pygame.Rect((5, 647), (40, 40))),
+        self.switch_clan_button = UIImageButton(
+            ui_scale(pygame.Rect((70, 345), (192, 40))),
             "",
-            object_id="#tumblr_button",
+            object_id="#switch_clan_button",
             manager=MANAGER,
-            tool_tip_text="Check out our Tumblr!",
-            anchors={"left_target": self.social_buttons["twitter_button"]},
+        )
+        self.new_clan_button = UIImageButton(
+            ui_scale(pygame.Rect((70, 390), (192, 40))),
+            "",
+            object_id="#new_clan_button",
+            manager=MANAGER,
+        )
+        self.settings_button = UIImageButton(
+            ui_scale(pygame.Rect((70, 435), (192, 40))),
+            "",
+            object_id="#settings_button",
+            manager=MANAGER,
+        )
+        self.quit = UIImageButton(
+            ui_scale(pygame.Rect((70, 480), (192, 40))),
+            "",
+            object_id="#quit_button",
+            manager=MANAGER,
         )
 
         self.social_buttons["discord_button"] = UIImageButton(
-            ui_scale(pygame.Rect((7, 647), (40, 40))),
+            ui_scale(pygame.Rect((12, 647), (48, 42))),
             "",
             object_id="#discord_button",
             manager=MANAGER,
-            tool_tip_text="Join our Discord!",
-            anchors={"left_target": self.social_buttons["tumblr_button"]},
+            tool_tip_text="Join our Discord!"
         )
         errorimg = image_cache.load_image(
             "resources/images/errormsg.png"

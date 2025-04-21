@@ -169,6 +169,7 @@ from scripts.utility import (
 # from scripts.debug_menu import debugmode
 from scripts.debug_console import debug_mode
 import pygame
+from random import randrange
 
 
 # import all screens for initialization (Note - must be done after pygame_gui manager is created)
@@ -182,6 +183,8 @@ pygame.display.set_icon(pygame.image.load("resources/images/icon.png"))
 game.rpc = _DiscordRPC("1076277970060185701", daemon=True)
 game.rpc.start()
 game.rpc.start_rpc.set()
+
+somenumber = randrange(1,8)
 
 # LOAD cats & clan
 finished_loading = False
@@ -224,13 +227,70 @@ def loading_animation(scale: float = 1):
         color.fill(game.config["theme"]["dark_mode_background"])
 
     images = []
-    for i in range(1, 11):
-        im = pygame.transform.scale_by(
-            pygame.image.load(f"resources/images/loading_animate/startup/{i}.png"),
-            screen_scale,
-        )
-        im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
-        images.append(im)
+    if somenumber == 0:
+        for i in range(1, 11):
+            im = pygame.transform.scale_by(
+                pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
+                screen_scale,
+            )
+            im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            images.append(im)
+    elif somenumber == 1:
+        for i in range(1, 13):
+            im = pygame.transform.scale_by(
+                pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
+                screen_scale,
+            )
+            im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            images.append(im)
+    elif somenumber == 2:
+        for i in range(1, 9):
+            im = pygame.transform.scale_by(
+                pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
+                screen_scale,
+            )
+            im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            images.append(im)
+    elif somenumber == 3:
+        for i in range(1, 9):
+            im = pygame.transform.scale_by(
+                pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
+                screen_scale,
+            )
+            im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            images.append(im)
+    elif somenumber == 4:
+        for i in range(1, 9):
+            im = pygame.transform.scale_by(
+                pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
+                screen_scale,
+            )
+            im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            images.append(im)
+    elif somenumber == 5:
+        for i in range(1, 9):
+            im = pygame.transform.scale_by(
+                pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
+                screen_scale,
+            )
+            im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            images.append(im)
+    elif somenumber == 6:
+        for i in range(1, 17):
+            im = pygame.transform.scale_by(
+                pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
+                screen_scale,
+            )
+            im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            images.append(im)
+    elif somenumber == 7:
+        for i in range(1, 13):
+            im = pygame.transform.scale_by(
+                pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
+                screen_scale,
+            )
+            im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            images.append(im)
 
     # Cleanup
     del im
@@ -242,7 +302,12 @@ def loading_animation(scale: float = 1):
     i = 0
     total_frames = len(images)
     while not finished_loading:
-        clock.tick(8)  # Loading screen is 8FPS
+        if somenumber==0:
+            clock.tick(8)  #FPS count. the walk cycle is 8FPS, but other animations use 12FPS
+        elif somenumber==6:
+            clock.tick(8)
+        else:
+            clock.tick(12)
 
         if game.settings["dark mode"]:
             screen.fill(game.config["theme"]["dark_mode_background"])
