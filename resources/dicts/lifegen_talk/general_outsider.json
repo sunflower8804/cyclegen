@@ -116,7 +116,7 @@
             "you_blind"
         ],
         [
-            "Do you StarClan cats think this is funny? You enjoy sending helpless cats to purgatory forever, even when they're not from a Clan?",
+            "Do you Ascended slugcats think this is funny? You enjoy sending helpless slugcats to purgatory forever, even when they're not from a Clan?",
             "I don't belong here. I've seen the ghosts that wander the living world. I'm supposed to be one of them."
         ]
     ],
@@ -131,7 +131,7 @@
             "you_blind"
         ],
         [
-            "Hey, Clancat.",
+            "Hey, Clan slugcat.",
             "Wanna swap places? I'll be a ghost, and you can join your Clan's afterlife. It's not fair for either of to be where we are, anyhow.",
             "What? It's only fair! Come on!"
         ]
@@ -183,8 +183,8 @@
             "they_blind"
         ],
         [
-            "An outsider and a kit in the Dark Forest.",
-            "I think these 'StarClan' cats need to take a good look at who it really is they're sending to purgatory."
+            "An outsider and a pup in the Rot Wound.",
+            "I think these 'Ascended' slugcats need to take a good look at who it really is they're sending to purgatory."
         ]
     ],
     "dead_outsider_J14": [
@@ -214,7 +214,7 @@
             "they_blind"
         ],
         [
-            "Aw, y_c. Bad moon, huh?"
+            "Aw, y_c. Bad cycle, huh?"
         ]
     ],
     "dead_outsider_J16": [
@@ -229,7 +229,7 @@
             "Aah!",
             "[You turn your head when you hear a small yelp. t_c is slowly floating towards you, nearly a tail-length off of the ground. {PRONOUN/t_c/poss/CAP} paws are swinging wildly in the air as {PRONOUN/t_c/subject} {VERB/t_c/try/tries} to ground {PRONOUN/t_c/self}.]",
             "[Though you weren't sure it would, {PRONOUN/t_c/poss} ghostly pelt reacts to your touch and you're able to gently push {PRONOUN/t_c/object} back onto the ground.]",
-            "Whoa! Thanks, Clancat! That was super scary.",
+            "Whoa! Thanks, Clan slugcat! That was super scary.",
             "It was kind of fun, though... I'm gonna try again."
         ]
     ],
@@ -254,7 +254,7 @@
         ],
         [
             "[t_c wanders around c_nClan's territory.]",
-            "I've never been able to see this area when I was alive. Those Clan cats always chased me away before I could take a closer look."
+            "I've never been able to see this area when I was alive. Those Clan slugcats always chased me away before I could take a closer look."
         ]
     ],
     "dead_urourside_c3": [
@@ -267,7 +267,7 @@
             "you_deaf"
         ],
         [
-            "[t_c easily navigates the maze of Twoleg dens, leaping from fence to fence reminiscent of the way Clan cats jump through trees.]"
+            "[t_c easily navigates the maze of Scavenger dens, leaping from fence to fence reminiscent of the way Clan slugcats jump through trees.]"
         ]
     ],
     "dead_uroutside_c4": [
@@ -325,7 +325,7 @@
             "they_deaf"
         ],
         [
-            "[You've met a strange new kit who smells weird.]",
+            "[You've met a strange new pup who smells weird.]",
             "[You both spend time sniffing and scrunching your noses at each other before calling an apparent truce.]",
             "[You toddle away first when a queen spots you.]"
         ]
@@ -378,7 +378,7 @@
         ],
         [
             "Mew. Mew. Mew. Mew. Mew. Mew. Meeeew.",
-            "[Is that... t_c? {VERB/t_c/Aren't/Isn't} {PRONOUN/t_c/subject} a kittypet? You heard one of the queens say that before.]",
+            "[Is that... t_c? {VERB/t_c/Aren't/Isn't} {PRONOUN/t_c/subject} a pet? You heard one of the queens say that before.]",
             "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} mewing with each step as {PRONOUN/t_c/subject} {VERB/t_c/go/goes} past. Maybe {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} counting...?]",
             "[... Can newborns count?]",
             "[t_c toddles off, unaware of the existential thoughts going through your head because of {PRONOUN/t_c/object}.]"
@@ -415,7 +415,7 @@
         ],
         [
             "[One of the queens asks you for a favor since they're alone with the newborns right now. t_c has wandered in, but it's time for {PRONOUN/t_c/object} to go home.]",
-            "[The little kittypet wriggles as you struggle to carry {PRONOUN/t_c/object} to the border.]",
+            "[The little pet wriggles as you struggle to carry {PRONOUN/t_c/object} to the border.]",
             "Meeeww! Meeewwww! Mew! Mew! Meerroooow!",
             "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} certainly grumpy today!]"
         ]
@@ -429,7 +429,7 @@
             "you_deaf"
         ],
         [
-            "[t_c is frolicking through stardust.]"
+            "[t_c is frolicking through void dust.]"
         ]
     ],
     "dead_outsider_J18": [
@@ -440,7 +440,7 @@
         ],
         [
             "Oh, hey there! You're cute.",
-            "[You wonder what t_c is doing here when {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} smell like a Clan cat.]"
+            "[You wonder what t_c is doing here when {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} smell like a Clan slugcat.]"
         ]
     ],
     "you_living_they_outsider_sc_CM1": [
@@ -449,9 +449,9 @@
             "any"
         ],
         [
-            "[t_c is staring at {PRONOUN/t_c/poss} surroundings, eyes wide as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} starry-pelted cats walk by. Suddenly, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to you, seemingly surprised.]",
+            "[t_c is staring at {PRONOUN/t_c/poss} surroundings, eyes wide as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} gold-pelted slugcats walk by. Suddenly, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} to you, seemingly surprised.]",
             "Oh! y_c! Are you -- No, it's not your time yet.",
-            "[You slowly recognize that this is a cat that you've never seen nor heard of before. You gently question why {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} here.]",
+            "[You slowly recognize that this is a slugcat that you've never seen nor heard of before. You gently question why {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} here.]",
             "I don't know, but no one seems to mind.",
             "No matter that I wasn't one of you in life, if I ended up here... It must be my duty to protect you.",
             "So I will."
@@ -594,7 +594,7 @@
             "they_blind"
         ],
         [
-            "[t_c raises {PRONOUN/t_c/poss} sparkling tail in welcome.]"
+            "[t_c raises {PRONOUN/t_c/poss} gilded tail in welcome.]"
         ]
     ],
     "they_ur_sam1": [
@@ -608,7 +608,7 @@
             "Any"
         ],
         [
-            "[You feel a cold ghostly presence nearby. It must be one of those 'lost cats' you've heard about, since it doesn't feel like another StarClan cat.]"
+            "[You feel a cold ghostly presence nearby. It must be one of those 'lost slugcats' you've heard about, since it doesn't feel like another Ascended slugcat.]"
         ]
     ],
     "they_ur_sam2": [
@@ -622,7 +622,7 @@
             "Any"
         ],
         [
-            "[You feel a cold ghostly presence nearby. It must be one of those 'lost cats' you've heard about, since it doesn't feel like another Dark Forest cat.]"
+            "[You feel a cold ghostly presence nearby. It must be one of those 'lost slugcats' you've heard about, since it doesn't feel like another Rot Wound slugcat.]"
         ]
     ]
 }
