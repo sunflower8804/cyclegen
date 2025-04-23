@@ -5,10 +5,10 @@
             "any"
         ],
         [
-            "I heard some of c_nClan's cats whisper about wisps. It was under their breath, as if they wanted the topic of wisps to be a secret. Supposedly, they've been appearing more often lately.",
+            "I heard some of c_nClan's slugcats whisper about wisps. It was under their breath, as if they wanted the topic of wisps to be a secret. Supposedly, they've been appearing more often lately.",
             "[t_c gathers {PRONOUN/t_c/poss} thoughts for a moment and glances at you.]",
             "... Have you heard about wisps? No?",
-            "I was told by my parent that wisps are the cats who never make it to the afterlife. They float around aimlessly to help those in the living. Something about fate and destiny being weaved together like a cloth, whatever that means.",
+            "I was told by my parent that wisps are the slugcats who never make it to the afterlife. They float around aimlessly to help those in the living. Something about fate and destiny being weaved together like a cloth, whatever that means.",
             "I couldn't help but connect it to where I am now. Am I a wisp? Or is this all coincidence..."
         ]
     ],
@@ -72,7 +72,7 @@
             "any"
         ],
         [
-            "What is it like, in StarClan?",
+            "What is it like, in the Void?",
             "Think I'll be able to visit sometime?"
         ]
     ],
@@ -133,7 +133,7 @@
         ],
         [
             "[t_c double-takes, {PRONOUN/t_c/poss} eyes wide with giddy wonder as you approach {PRONOUN/t_c/poss} ghostly form.]",
-            "My kit... Oh, look how you've grown, y_c.",
+            "My pup... Oh, look how you've grown, y_c.",
             "I don't regret allowing them to take you, not one bit.",
             "Not one bit, y_c."
         ]
@@ -182,7 +182,7 @@
             "they_blind"
         ],
         [
-            "I know that the Dark Forest is a harsh place...",
+            "I know that the Rot Wound is a harsh place...",
             "If you ever want a rest, you're welcome to stay here."
         ]
     ],
@@ -196,7 +196,7 @@
             "they_blind"
         ],
         [
-            "What'd you do to get sent to the Dark Forest?",
+            "What'd you do to get sent to the Rot Wound?",
             "[t_c's question is so blunt that it catches you off guard for a moment.]"
         ]
     ],
@@ -212,7 +212,7 @@
         ],
         [
             "[You and t_c sit in a comfortable silence.]",
-            "[It's been so long since you've been near a cat that hasn't shown any hostility toward you. It's nice.]"
+            "[It's been so long since you've been near a slugcat that hasn't shown any hostility toward you. It's nice.]"
         ]
     ],
     "ur_living_3c": [
@@ -278,8 +278,8 @@
         ],
         [
             "[As soon as t_c notices you, {PRONOUN/t_c/subject} {VERB/t_c/leap/leaps} onto you, sending both of you rolling on the ground.]",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/place/places} a claw on your neck, then {VERB/t_c/hesitate/hesitates}.]",
-            "Wait, you're not from StarClan... Am I still supposed to kill you?",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/point/points} a spear at your neck, then {VERB/t_c/hesitate/hesitates}.]",
+            "Wait, you're not from the Void... Am I still supposed to kill you?",
             "[t_c steps off of you, {PRONOUN/t_c/poss} expression conflicted.]",
             "Who are you anyway?"
         ]
@@ -361,7 +361,7 @@
             "they_deaf"
         ],
         [
-            "[t_c is busy debating with another cat about which omen to send c_nClan.]",
+            "[t_c is busy debating with another slugcat about which omen to send c_nClan.]",
             "[You probably shouldn't bother {PRONOUN/t_c/object}.]"
         ]
     ],
@@ -401,7 +401,7 @@
         ],
         [
             "Sorry, y_c. Can't talk with you right now.",
-            "It's StarClan stuff -- you wouldn't understand."
+            "It's Ascended stuff -- you wouldn't understand."
         ]
     ],
     "sibling_gen9_AJ": [
@@ -418,7 +418,7 @@
             "silly"
         ],
         [
-            "[In the middle of sharing a squirrel with t_c, {PRONOUN/t_c/subject} {VERB/t_c/press/presses} {PRONOUN/t_c/poss} head to the ground, trying to gauge the size of the piece of prey.]",
+            "[In the middle of sharing a lantern mouse with t_c, {PRONOUN/t_c/subject} {VERB/t_c/press/presses} {PRONOUN/t_c/poss} head to the ground, trying to gauge the size of the piece of prey.]",
             "Is it just me, or is your side a little bigger?",
             "Gimme some of yours!",
             "[The two of you playfully shove and bicker over the piece of prey, splitting portions smaller and smaller until, finally, you're satisfied that everything is even.]"
@@ -437,7 +437,7 @@
             "[t_l is playing a game where {PRONOUN/t_l/subject} {VERB/t_l/balance/balances} t_c on {PRONOUN/t_l/poss} paws and {VERB/t_l/raise/raises} {PRONOUN/t_l/poss} legs, lifting {PRONOUN/t_l/poss} {PRONOUN/t_c/sibling} off the ground.]",
             "Hahaha! I'm flying! I'm flying!",
             "OOAUGH --",
-            "[t_c's legs buckle, and both cats collapse into a pile of giggles.]"
+            "[t_c's legs buckle, and both slugcats collapse into a pile of giggles.]"
         ]
     ],
     "Grief_gen_H1": [
@@ -450,7 +450,7 @@
             "I really miss {PRONOUN/tg_c/object} sometimes, you know?",
             "[t_c looks at {PRONOUN/t_c/poss} portion of the prey and {VERB/t_c/paw/paws} it away with a sigh.]",
             "[After a moment of silence, you perk up and ask t_c what tg_c's favorite prey was.]",
-            "Oh... tg_c didn't have a favorite. {PRONOUN/tg_c/subject/CAP} {VERB/tg_c/were/was} always eating everything in front of {PRONOUN/tg_c/object}. Bird, mouse, fish... you name it.",
+            "Oh... tg_c didn't have a favorite. {PRONOUN/tg_c/subject/CAP} {VERB/tg_c/were/was} always eating everything in front of {PRONOUN/tg_c/object}. Noodlefly, yeek, hazer... you name it.",
             "[t_c takes a shaky inhale and laughs quietly. The memory of tg_c is still strong and thriving, but it doesn't mean it hurts any less.]"
         ]
     ],
@@ -463,7 +463,7 @@
             "platonic_like"
         ],
         [
-            "I should be listening to my own advice. 'Talk about the dead cats you once knew-- bottling up those feelings does no one justice, especially those you grieve.'",
+            "I should be listening to my own advice. 'Talk about the dead slugcats you once knew-- bottling up those feelings does no one justice, especially those you grieve.'",
             "... I never realized how difficult that is, truly. I can't talk about tg_c without tearing up.",
             "[t_c huffs as {PRONOUN/t_c/subject} {VERB/t_c/do/does}, indeed, tear up at even the mention of tg_c's name.]",
             "I'm a mess. Maybe we can talk later, y_c."
@@ -478,9 +478,9 @@
             "platonic_love"
         ],
         [
-            "Do you think tg_c is waiting for me in StarClan?",
+            "Do you think tg_c is waiting for me in the Void?",
             "I promised that I would follow {PRONOUN/tg_c/object} to the very end. I think {PRONOUN/tg_c/subject} thought I was joking, though...",
-            "I can only wish StarClan is merciful, and allows me to see tg_c soon."
+            "I can only wish the Void is merciful, and allows me to see tg_c soon."
         ]
     ],
     "Grief_gen_H3": [
@@ -492,10 +492,10 @@
             "stable"
         ],
         [
-            "tg_c was one of those cats that was bigger than life, you know? Never in my days would I have thought something would strip that light away.",
+            "tg_c was one of those slugcats that was bigger than life, you know? Never in my days would I have thought something would strip that light away.",
             "[t_c starts to tear up, using {PRONOUN/t_c/poss} paw to wipe away evidence of {PRONOUN/t_c/poss} grief. You notice, and assure t_c that {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} have to talk about tg_c.]",
             "No, no! It's okay to talk about {PRONOUN/tg_c/object}. I think it is important to talk about tg_c. It keeps {PRONOUN/tg_c/object} alive and around in my memory",
-            "Now that {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} gone... I try to value the cats around me more deeply in {PRONOUN/tg_c/poss} honor."
+            "Now that {PRONOUN/tg_c/subject}{VERB/tg_c/'re/'s} gone... I try to value the slugcats around me more deeply in {PRONOUN/tg_c/poss} honor."
         ]
     ],
     "sibling_H1": [
@@ -564,7 +564,7 @@
         [
             "There was once an old legend passed between loners of a time when a leader was so hungry for power and land that they asked the stars to give them the strength of ten of their finest warriors.",
             "But, their wish came with a price.",
-            "They say the leader became what we fear: a mountain lion. A lion that tore through the woods and destroyed everything in their path, including their Clan. It's rumored that the leader never returned to these lands, ashamed of their actions.",
+            "They say the leader became what we fear: a red lizard. A lizard that tore through the woods and destroyed everything in their path, including their Clan. It's rumored that the leader never returned to these lands, ashamed of their actions.",
             "It's a legend of lesson-- be careful of what you wish for.",
             "I always felt bad for them. Leadership is not always a good thing. But, it was a lesson we all needed to hear as loners. Our wishes were sometimes unreachable, selfish, or even vengeful. I would never want to become what that leader ended up being."
         ]
@@ -597,7 +597,7 @@
             "[t_c waves you over with a flick of {PRONOUN/t_c/poss} tail, and looks to the sky where the stars shine the brightest.]",
             "Do you see that star, to the left? No, no. How can you miss {PRONOUN/tg_c/object}? {PRONOUN/t_c/subject/CAP}{VERB/tg_c/'re/'s} shimmering right up there.",
             "[A look of reminiscent longing falls upon t_c's expression as {PRONOUN/t_c/subject} {VERB/t_c/look/looks} up that one star.]",
-            "See, y_c, that's my tg_c. Up in StarClan, watching over me... Do you see how {PRONOUN/tg_c/subject} light up the sky?",
+            "See, y_c, that's my tg_c. Up in the Void, watching over me... Do you see how {PRONOUN/tg_c/subject} light up the sky?",
             "I do miss {PRONOUN/tg_c/object}. But... tg_c looks just as beautiful up there as {PRONOUN/tg_c/subject} did by my side."
         ]
     ],
@@ -645,10 +645,10 @@
             "any"
         ],
         [
-            "Do you ever wonder what the Dark Forest cats are doing, in that vile nature they call home after death?",
+            "Do you ever wonder what the Rot Wound slugcats are doing, in that vile nature they call home after death?",
             "[t_c looks thoughtful, if not a bit curious as {PRONOUN/t_c/subject} {VERB/t_c/peek/peeks} over the clouds to the black tree tops.]",
             "The ancestors before us say it is nothing more than slow torture for their crimes, but still.",
-            "What crawls in there other than goo and punishment?",
+            "What crawls in there other than rot and punishment?",
             "Hey, I can't be curious??"
         ]
     ],
@@ -665,7 +665,7 @@
         [
             "Oh, hit the road, Jack.",
             "[You bristle in confusion, not understanding the terminology t_c just used for you. You ask what {PRONOUN/t_c/subject} {VERB/t_c/mean/means} by that, but t_c only grins.]",
-            "I forgot you cats don't know this type of stuff. It's a song, the Twolegs' favorite. It makes a great confusion factor, huh?",
+            "I forgot you slugcats don't know this type of stuff. It's a song, the Iterators' favorite. It makes a great confusion factor, huh?",
             "I got you to stop talking, which is all I needed!",
             "[t_c prances away with a satisfied smile.]"
         ]
@@ -719,7 +719,7 @@
             "[A nervous little laugh escapes, then an even more nervous little pause. t_c sighs and scoots over, making room for you.]",
             "I just can't help myself sometimes, y_c ...",
             "I want so much and I want it all the time. Everycat else is content to just be another face in the unfettered masses - Why not me? Why am I always striving for more?",
-            "Maybe I should just settle, like everycat says. Maybe it's bad to hold myself to such a high standard.",
+            "Maybe I should just settle, like every slugcat says. Maybe it's bad to hold myself to such a high standard.",
             "But then I think about all the things that I've accomplished, and all the things that I have left to do ... I know I can make a difference in the world. How could that be wrong?",
             "Maybe there's a lot that I don't know.",
             "[Bossy, heady t_c's gaze is clouded with an uncharacteristic indecisiveness, an intensity that you can neither name nor fully understand.]",
@@ -738,7 +738,7 @@
         ],
         [
             "Leaders, warriors, borders and territories ...",
-            "Things have been running the same way for hundreds, if not thousands of moons. But is it really the best way of doing things?",
+            "Things have been running the same way for hundreds, if not thousands of cycles. But is it really the best way of doing things?",
             "You and me, y_c ... We're the ones who are gonna change things for the better. I just know it."
         ]
     ],
@@ -805,7 +805,7 @@
         [
             "Listen up, kid, and I'll let you in on a little secret.",
             "All this crap they're pumping into you about 'the Warrior Code' and 'doing your part for the Clan' ... In the long run, none of it actually matters.",
-            "The secret to life is figuring out what other cats want, and then giving it to them.",
+            "The secret to life is figuring out what other slugcats want, and then giving it to them.",
             "Once you know how to do that, then you can practically get the entire Clan to eat out of the sole of your paw, and you don't even have to lift a toe.",
             "You can go about things whatever way you wish, I'm just telling you, this way's easiest.",
             "Just give it some thought, okay? I know you're a smart kid. You'll make the right choice."
