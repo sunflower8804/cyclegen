@@ -28,7 +28,7 @@
         ],
         "red_bg": [
             "Red background",
-            "Enable background color to get more red as you murder more cats",
+            "Enable background color to get more red as you murder more slugcats",
             true
         ],
         "fullscreen scaling": [
@@ -53,7 +53,7 @@
         ],
         "shaders": [
             "Enable Shaders",
-            "This will add a shading layer onto the cat sprites.",
+            "This will add a shading layer onto the slugcat sprites.",
             false
         ],
         "gore": [
@@ -83,12 +83,12 @@
         ],
         "random relation": [
             "Randomize relationship values when creating Clan",
-            "Clan founder cats will start the game with established relationships.",
+            "Clan founder slugcats will start the game with established relationships.",
             true
         ],
         "they them default": [
             "Use they/them as default pronouns",
-            "If this setting is on new cats will generate with they/them pronouns, regardless of gender.",
+            "If this setting is on new slugcats will generate with they/them pronouns, regardless of gender.",
             false
         ],
         "bea_gilltongue": [
