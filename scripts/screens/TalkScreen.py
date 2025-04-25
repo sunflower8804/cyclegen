@@ -76,7 +76,7 @@ class TalkScreen(Screens):
         self.created_choice_buttons = False
         self.profile_elements = {}
         self.clan_name_bg = pygame_gui.elements.UIImage(
-            ui_scale(pygame.Rect((115, 438), (190, 35))),
+            ui_scale(pygame.Rect((115, 438), (250, 35))),
             pygame.transform.scale(
                 image_cache.load_image(
                     "resources/images/clan_name_bg.png").convert_alpha(),

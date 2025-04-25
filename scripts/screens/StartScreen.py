@@ -63,7 +63,7 @@ class StartScreen(Screens):
 
         if png_files:
             chosen_file = random.choice(png_files)
-            return "resources/menus/" + chosen_file
+            return str(folder_path + chosen_file)
         else:
             return "resources/images/menu.png"
 
@@ -156,15 +156,18 @@ class StartScreen(Screens):
         # this is the only screen that has to check its own music, other screens handle that in the screen change
         music_manager.check_music("start screen")
 
-        bg = pygame.image.load(
-            self.choose_random_menu("resources/menus")).convert()
-
         if game.settings["dark mode"]:
+            bg = pygame.image.load(
+                self.choose_random_menu("resources/menus_dark/")).convert()
             bg.fill(
                 game.config["theme"]["fullscreen_background"]["dark"]["mainmenu_tint"],
                 bg.get_rect(),
                 pygame.BLEND_MULT,
             )
+        else:
+            bg = pygame.image.load(
+                self.choose_random_menu("resources/menus/")).convert()
+
         self.add_bgs(
             {"mainmenu_bg": bg},
         )
