@@ -161,7 +161,7 @@
         },
         "RAINBOWBOW": {
             "accept_like": "t_c thanks you and takes the colourful bow with a smile!",
-            "accept_dislike": "t_c eyes you strangely and stuffs the bow under {PRONOUN/t_c/poss} nest before anycat can see it."
+            "accept_dislike": "t_c eyes you strangely and stuffs the bow under {PRONOUN/t_c/poss} nest before any slugcat can see it."
         },
         "SPIKES": {
             "accept_like": "t_c admires the dangerous-looking spikes as {PRONOUN/t_c/subject} {VERB/t_c/accept/accepts} your gift.",
@@ -269,22 +269,22 @@
         },
         "BIRD SKULL": {
             "accept_like": "t_c admires how smooth and light the tiny skull is. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} into its eye sockets for a moment, {PRONOUN/t_c/poss} expression unreadable, before attaching it to {PRONOUN/t_c/poss} fur and nodding to you.",
-            "accept_dislike": "t_c seems unnerved by the bare bone and empty eye sockets. {PRONOUN/t_c/subject/CAP} {VERB/t_c/glance/glances} from a nearby songbird to the skull and back again, then {VERB/t_c/pick/picks} up your gift and {VERB/t_c/walk/walks} away."
+            "accept_dislike": "t_c seems unnerved by the bare bone and empty eye sockets. {PRONOUN/t_c/subject/CAP} {VERB/t_c/glance/glances} from the sky to the skull and back again, then {VERB/t_c/pick/picks} up your gift and {VERB/t_c/walk/walks} away."
         },
         "GRASS SNAKE": {
-            "accept_like": "Other cats stare as you present the wriggling grass snake to t_c, but {PRONOUN/t_c/subject} just {VERB/t_c/lean/leans} down to inspect it. After a moment, {PRONOUN/t_c/subject} {VERB/t_c/nod/nods} to you and {VERB/t_c/drape/drapes} the reptile over {PRONOUN/t_c/self}, seeming to enjoy how other cats back away from {PRONOUN/t_c/object} as {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} through camp.",
+            "accept_like": "Other slugcats stare as you present the wriggling grass snake to t_c, but {PRONOUN/t_c/subject} just {VERB/t_c/lean/leans} down to inspect it. After a moment, {PRONOUN/t_c/subject} {VERB/t_c/nod/nods} to you and {VERB/t_c/drape/drapes} the reptile over {PRONOUN/t_c/self}, seeming to enjoy how other slugcats back away from {PRONOUN/t_c/object} as {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} through camp.",
             "accept_dislike": "You tell t_c that the grass snake isn't venomous, but {PRONOUN/t_c/subject} still {VERB/t_c/don't/doesn't} seem to want to go near the wriggling reptile. {PRONOUN/t_c/subject/CAP} unenthusiastically {VERB/t_c/thank/thanks} you."
         },
         "BLUE RACER": {
-            "accept_like": "Other cats stare as you present the wriggling, gray-blue snake to t_c, but {PRONOUN/t_c/subject} just {VERB/t_c/lean/leans} down to inspect it. After a moment, {PRONOUN/t_c/subject} {VERB/t_c/nod/nods} to you and {VERB/t_c/drape/drapes} the reptile over {PRONOUN/t_c/self}, seeming to enjoy how other cats back away from {PRONOUN/t_c/object} as {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} through camp.",
+            "accept_like": "Other slugcats stare as you present the wriggling, gray-blue snake to t_c, but {PRONOUN/t_c/subject} just {VERB/t_c/lean/leans} down to inspect it. After a moment, {PRONOUN/t_c/subject} {VERB/t_c/nod/nods} to you and {VERB/t_c/drape/drapes} the reptile over {PRONOUN/t_c/self}, seeming to enjoy how other slugcats back away from {PRONOUN/t_c/object} as {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} through camp.",
             "accept_dislike": "You tell t_c that the blue racer isn't venomous, but {PRONOUN/t_c/subject} still {VERB/t_c/don't/doesn't} seem to want to go near the wriggling snake. {PRONOUN/t_c/subject/CAP} unenthusiastically {VERB/t_c/thank/thanks} you."
         },
         "WESTERN COACHWHIP": {
-            "accept_like": "Other cats stare as you present the red-and-brown snake to t_c, but {PRONOUN/t_c/subject} just {VERB/t_c/lean/leans} down to inspect it. After a moment, {PRONOUN/t_c/subject} {VERB/t_c/nod/nods} to you and {VERB/t_c/drape/drapes} the checkered reptile over {PRONOUN/t_c/self}, seeming to enjoy how other cats back away from {PRONOUN/t_c/object} as {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} through camp.",
+            "accept_like": "Other slugcats stare as you present the red-and-brown snake to t_c, but {PRONOUN/t_c/subject} just {VERB/t_c/lean/leans} down to inspect it. After a moment, {PRONOUN/t_c/subject} {VERB/t_c/nod/nods} to you and {VERB/t_c/drape/drapes} the checkered reptile over {PRONOUN/t_c/self}, seeming to enjoy how other slugcats back away from {PRONOUN/t_c/object} as {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} through camp.",
             "accept_dislike": "You tell t_c that the coachwhip isn't venomous, but {PRONOUN/t_c/subject} still {VERB/t_c/don't/doesn't} seem to want to go near the wriggling snake. {PRONOUN/t_c/subject/CAP} unenthusiastically {VERB/t_c/thank/thanks} you."
         },
         "KINGSNAKE": {
-            "accept_like": "Other cats stare as you present the vibrantly striped kingsnake to t_c, but {PRONOUN/t_c/subject} just {VERB/t_c/lean/leans} down to inspect it. After a moment, {PRONOUN/t_c/subject} {VERB/t_c/nod/nods} to you and {VERB/t_c/drape/drapes} the reptile over {PRONOUN/t_c/self}, seeming to enjoy how other cats back away from {PRONOUN/t_c/object} as {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} through camp.",
+            "accept_like": "Other slugcats stare as you present the vibrantly striped kingsnake to t_c, but {PRONOUN/t_c/subject} just {VERB/t_c/lean/leans} down to inspect it. After a moment, {PRONOUN/t_c/subject} {VERB/t_c/nod/nods} to you and {VERB/t_c/drape/drapes} the reptile over {PRONOUN/t_c/self}, seeming to enjoy how other slugcats back away from {PRONOUN/t_c/object} as {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} through camp.",
             "accept_dislike": "You tell t_c that the kingsnake isn't venomous, but {PRONOUN/t_c/subject} still {VERB/t_c/don't/doesn't} seem to want to go near the brightly striped reptile. {PRONOUN/t_c/subject/CAP} unenthusiastically {VERB/t_c/thank/thanks} you."
         },
         "LANTERNS": {
@@ -293,8 +293,8 @@
         },
         "RADIO": {
             "accept_like": "t_c curiously inspects the device, pawing at the parts that move when {PRONOUN/t_c/subject} {VERB/t_c/touch/touches} them. When the box makes an odd popping noise, t_c seems even more fascinated.",
-            "accept_dislike": "t_c inspects the strange device, but seems suspicious when it makes a strange hissing sound. Are those... distorted Twoleg words?",
-            "accept_neutral": "t_c appreciates and accepts the gift, but isn't particularly interested in random Twoleg devices."
+            "accept_dislike": "t_c inspects the strange device, but seems suspicious when it makes a strange hissing sound. Are those... distorted Iterator words?",
+            "accept_neutral": "t_c appreciates and accepts the gift, but isn't particularly interested in random Iterator devices."
         },
         "EGG": {
             "accept_like": "t_c jokes that {PRONOUN/t_c/subject}'ll be a fantastic {PRONOUN/t_c/parent} for whatever hatches from this egg.",
