@@ -11,9 +11,9 @@
         ],
         [
             "...",
-            "Oh...? Is that mouse for me?",
+            "Oh...? Is that yeek for me?",
             "[t_c stares longingly at the prey, eyes dull with hunger.]",
-            "No, you take it, young'un. It's not long before I take my place in StarClan, and you need your strength."
+            "No, you take it, young'un. It's not long before I take my place in the Void, and you need your strength."
         ]
     ],
     "theystarving_1": [
@@ -26,7 +26,7 @@
         ],
         [
             "[t_c kneads {PRONOUN/t_c/poss} stomach, eyes hollow with hunger.]",
-            "[Seems like this famine is really doing a number on everycat...]"
+            "[Seems like this famine is really doing a number on every slugcat...]"
         ]
     ],
     "theystarving_2": [
@@ -68,7 +68,7 @@
         [
             "...",
             "[t_c is staring up at the trees, scanning the branches.]",
-            "You know, y_c. It seems this hunger is affecting everything. The grass seems dry, and the little birds that normally sing above our camp haven't appeared.",
+            "You know, y_c. It seems this hunger is affecting everything. The grass seems dry, and the little noodleflies that normally sing above our camp haven't appeared.",
             "It's demoralising. I don't know how we'll go on, y_c."
         ]
     ],
@@ -80,7 +80,7 @@
             "focus"
         ],
         [
-            "I'd give anything for a nice mouse right now. StarClan, I'd even settle for a stale one! Anything to get rid of this hunger..."
+            "I'd give anything for a nice yeek right now. Void, I'd even settle for a stale one! Anything to get rid of this hunger..."
         ]
     ],
     "starving_queen": [
@@ -96,10 +96,10 @@
         ],
         [
             "[t_c stares into the nursery, eyes hollow.]",
-            "None of the kits have been out to play today.",
+            "None of the pups have been out to play today.",
             "[t_c makes a choking sound, avoiding your gaze.]",
             "Th-they're usually always so energetic... I don't...",
-            "y_c, I don't know what to do! This starvation, it's... I know it affects the kits. I need to get some prey. I can't think."
+            "y_c, I don't know what to do! This starvation, it's... I know it affects the pups. I need to get some prey. I can't think."
         ]
     ],
     "theystarving_sweet1": [
@@ -137,7 +137,7 @@
         ],
         [
             "[Despite everything, t_c continues to smile. Despite everything, {PRONOUN/t_c/subject} {VERB/t_c/keep/keeps} trying to make you happy.]",
-            "StarClan will bring us food, we just need to be patient.",
+            "The Ascended will bring us food, we just need to be patient.",
             "[Despite everything... The look in {PRONOUN/t_c/poss} eyes tells you {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} just as hopeless as you are.]"
         ]
     ],
@@ -150,7 +150,7 @@
             "focus"
         ],
         [
-            "[t_c drops a small mouse at your paws, nosing it towards you.]",
+            "[t_c drops a small eggbug at your paws, nosing it towards you.]",
             "Eat. We all need to keep our strength up, especially in times like these."
         ]
     ],
@@ -178,7 +178,7 @@
             "[t_c scans over the fresh kill pile, it appearing to be barren.]",
             "There's still no fresh kill. Nothing's been found.",
             "[{PRONOUN/t_c/poss/CAP} voice hitches and {PRONOUN/t_c/subject} {VERB/t_c/sniff/sniffs} quietly to {PRONOUN/t_c/self}.]",
-            "This... why would StarClan do this to us...?"
+            "This... why would The Ascended do this to us...?"
         ]
     ],
     "you_starving_4": [
@@ -191,7 +191,7 @@
         [
             "y_c?",
             "[You turn to look up at t_c.]",
-            "Listen... I know you're hungry, but we need more cats on hungry --- hunting. Hunting patrol.",
+            "Listen... I know you're hungry, but we need more slugcats on hungry --- hunting. Hunting patrol.",
             "There's nothing in the fresh kill pile, and we're getting a little desperate. Maybe you might be able to find something? A fresh pair of eyes is helpful.",
             "I know, I know. I wouldn't ask if it wasn't essential, y_c. You know this."
         ]
@@ -204,7 +204,7 @@
         ],
         [
             "[t_c trudges back into camp with {PRONOUN/t_c/poss} head and tail lowered in defeat. {PRONOUN/t_c/poss/CAP} dull eyes meet yours and {PRONOUN/t_c/subject} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head.]",
-            "There's not even so much as a mouse out there... I'm sorry. Let's try not to worry though, we have to catch at least something sooner or later!",
+            "There's not even so much as an eggbug out there... I'm sorry. Let's try not to worry though, we have to catch at least something sooner or later!",
             "...",
             "Right?"
         ]
@@ -235,9 +235,9 @@
         ],
         [
             "Y'know, I heard that if you imagine a meal in vivid enough detail, you can trick your brain into thinking you've eaten!",
-            "Okay, so ... I'm imagining a mouse still warm from the hunting patrol, with super tender flesh.",
-            "Now I'm imagining a ginormous fish shimmering with scales!",
-            "Now, I'm imagining one -- no, two -- no, ten squirrels, topped off with a vole or two, and maybe a sparrow to finish it all off!",
+            "Okay, so ... I'm imagining a yeek still warm from the hunting patrol, with super tender flesh.",
+            "Now I'm imagining a ginormous jetfish shimmering with scales!",
+            "Now, I'm imagining one -- no, two -- no, ten lantern mice, topped off with an eggbug or two, and maybe a noodlefly to finish it all off!",
             "... Man. If anything, all that did was make me even hungrier."
         ]
     ],
@@ -253,9 +253,9 @@
             "focus"
         ],
         [
-            "[t_c noses a small sparrow towards you.]",
+            "[t_c noses a small noodlefly towards you.]",
             "Please, t_c, you have to eat something.",
-            "It's very moving to see your dedication to the Clan during this period of hardship, but no cat can go without forever.",
+            "It's very moving to see your dedication to the Clan during this period of hardship, but no slugcat can go without forever.",
             "Your life is not worth any less than the rest of ours. c_nClan needs you healthy.",
             "Promise me you'll eat it and regain your strength, okay?"
         ]
@@ -270,7 +270,7 @@
             "focus"
         ],
         [
-            "[t_c drops a tiny mouse at your paws and looks away shyly.]",
+            "[t_c drops a tiny yeek at your paws and looks away shyly.]",
             "I know it's not much, but ... The hunting patrol couldn't bring much back. It's all I could manage to save for you.",
             "What about me?",
             "[t_c looks away.]",
@@ -286,7 +286,7 @@
         ],
         [
             "Meeewwww!!!!",
-            "[A newborn kitten kneads against a queen trying to get milk, but seemingly being unable to.]",
+            "[A newborn slugpup kneads against a queen trying to get milk, but seemingly being unable to.]",
             "[The queen gives you a sad glance before gently licking {PRONOUN/t_c/poss} forehead.]"
         ]
     ],
@@ -301,7 +301,7 @@
             "Oh, good morning, y_c.",
             "[You look over to see t_c coming over to you, a bundle of herbs wrapped in a leaf in {PRONOUN/t_c/poss} mouth. {PRONOUN/t_c/subject/CAP} gently {VERB/t_c/place/places} the package down next to you.]",
             "Listen, I've noticed that... well, you're not doing okay. This starvation is awful for the body and the mind. I've been thinking about it since yesterday, and I decided to make some herb bundles.",
-            "They're normally for traveling, but I suppose in a morbid sense this is its own kind of adventure. Please, will you eat them? I've made a bundle for all the cats that need it, so you don't need to worry that you're taking herbs off of someone else.",
+            "They're normally for traveling, but I suppose in a morbid sense this is its own kind of adventure. Please, will you eat them? I've made a bundle for all the alugcats that need it, so you don't need to worry that you're taking herbs off of someone else.",
             "In case you're wondering, it's a mixture of honey, chamomile and willow herb, and wrapped in a laurel leaf.",
             "... There we go. Thank you y_c. Hopefully there will be more fresh-kill soon."
         ]
@@ -317,7 +317,7 @@
             "Oh, good morning, y_c.",
             "[You look over to see t_c coming over to you, a bundle of herbs wrapped in a leaf in {PRONOUN/t_c/poss} mouth. {PRONOUN/t_c/subject/CAP} gently {VERB/t_c/place/places} the package down next to you.]",
             "Listen, I've noticed that... well, you're not doing okay. This starvation is awful for the body and the mind. I've been thinking about it since yesterday, and I decided to make some herb bundles.",
-            "They're normally for traveling, but I suppose in a morbid sense this is its own kind of adventure. Please, will you eat them? I've made a bundle for all the cats that need it, so you don't need to worry that you're taking herbs off of someone else.",
+            "They're normally for traveling, but I suppose in a morbid sense this is its own kind of adventure. Please, will you eat them? I've made a bundle for all the slugcats that need it, so you don't need to worry that you're taking herbs off of someone else.",
             "In case you're wondering, it's a mixture of honey, chamomile and willow herb, and wrapped in a laurel leaf.",
             "... There we go. Thank you y_c. Hopefully there will be more fresh-kill soon."
         ]
@@ -335,7 +335,7 @@
             "[t_c scanned over the fresh kill pile, it appearing to be barren.]",
             "There's still no fresh kill. Nothing's been found.",
             "[{PRONOUN/t_c/poss/CAP} voice hitches and {PRONOUN/t_c/subject} {VERB/t_c/sniff/sniffs} quietly to {PRONOUN/t_c/self}.]",
-            "This... why would StarClan do this to us...?"
+            "This... why would The Ascended do this to us...?"
         ]
     ],
     "starving_unlawful_Guy1": [
@@ -346,7 +346,7 @@
         ],
         [
             "Psst, y_c.",
-            "[You gather the strength to look at t_c, and notice that {PRONOUN/t_c/subject} {VERB/t_c/have/has} somehow found a skinny vole.",
+            "[You gather the strength to look at t_c, and notice that {PRONOUN/t_c/subject} {VERB/t_c/have/has} somehow found a skinny eggbug.",
             "It was supposed to be l_n's... But you need it more."
         ]
     ],
@@ -358,8 +358,8 @@
             "focus"
         ],
         [
-            "[t_c looks down at your pelt, dull and thin from what feels like moons of endless hunger.]",
-            "Preparing for the Dark Forest early, y_c?",
+            "[t_c looks down at your pelt, dull and thin from what feels like cycles of endless hunger.]",
+            "Preparing for the Rot Wound early, y_c?",
             "Serves you right, coward."
         ]
     ],
@@ -374,9 +374,9 @@
         [
             "[Since the Clan has been so low on prey recently, you've had even rarer meals than you would have before. The days spent stuck in camp are long and hard. And yet...]",
             "... y_c? Are you there?",
-            "[t_c approaches you with a small, scrawny mouse in {PRONOUN/t_c/poss} jaws, looking around to check that no cat notices when {PRONOUN/t_c/subject} {VERB/t_c/drop/drops} it in front of you.]",
+            "[t_c approaches you with a small, scrawny eggbug in {PRONOUN/t_c/poss} jaws, looking around to check that no slugcat notices when {PRONOUN/t_c/subject} {VERB/t_c/drop/drops} it in front of you.]",
             "You have to eat too. Some of our Clanmates don't think it's worth it to feed you anymore.",
-            "But I've seen the real you, y_c, I know what kind of cat you are, and you need to survive this.",
+            "But I've seen the real you, y_c, I know what kind of slugcat you are, and you need to survive this.",
             "I believe in you, and I know that you'll hold on."
         ]
     ],
@@ -432,11 +432,11 @@
         ],
         "cant_do": [
             "Oh... Haha, it must have slipped my mind. You are simply a ghost of what once lived, after all. I shouldn't expect you to disrupt fate.",
-            "Yet, I can hope and dream that one moon things will become better."
+            "Yet, I can hope and dream that one cycle things will become better."
         ],
         "lie_starving": [
             "Can you?? Oh, thank you, y_c!",
-            "When that time comes, I'm going to savor my fresh-kill and make sure everycat gets a delicious bite.",
+            "When that time comes, I'm going to savor my fresh-kill and make sure every slugcat gets a delicious bite.",
             "We all deserve the weight of hunger lifted off our shoulders.",
             "[t_c lights up with joy and hope, and you can't help but wonder if lying was the right thing to do.]"
         ]
@@ -453,7 +453,7 @@
             "connected"
         ],
         "intro": [
-            "[You decided to visit t_c once more, curious about {PRONOUN/t_c/poss} situation. t_c smiles brightly as {PRONOUN/t_c/subject} catch sight of your star-speckled pelt.]",
+            "[You decided to visit t_c once more, curious about {PRONOUN/t_c/poss} situation. t_c smiles brightly as {PRONOUN/t_c/subject} catch sight of your gold-speckled pelt.]",
             "y_c! Oh, I am so glad to see you!",
             "[t_c looks better -- less sunken and sad.]",
             "c_nClan's patrols suddenly found a whole lot of fresh-kill! It was a blessing!",
@@ -471,12 +471,12 @@
         },
         "didnt_do": [
             "Even if you didn't do anything directly, I still need to thank you!",
-            "c_nClan is doing so much better with StarClan's help and we'll thrive once again -- I just know it!",
-            "So... I thank you sincerely, y_c, and the rest of those with star-speckled pelts."
+            "c_nClan is doing so much better with The Ascended's help and we'll thrive once again -- I just know it!",
+            "So... I thank you sincerely, y_c, and the rest of those with gold-speckled pelts."
         ],
         "no_thanks": [
             "But it's the polite thing to do!",
-            "Well, if I can't thank you, you need to carry my thanks to StarClan, okay?",
+            "Well, if I can't thank you, you need to carry my thanks to The Ascended, okay?",
             "Preferably with haste and smiles!"
         ]
     },
@@ -522,7 +522,7 @@
         ],
         "lie_starving": [
             "Can you?? Oh, thank you, y_c!",
-            "When that time comes, I'm going to savor my fresh-kill and make sure everycat gets a delicious bite.",
+            "When that time comes, I'm going to savor my fresh-kill and make sure every slugcat gets a delicious bite.",
             "We all deserve the weight of hunger lifted off our shoulders.",
             "[t_c lights up with joy and hope, and you can't help but wonder if lying was the right thing to do.]"
         ]
@@ -555,7 +555,7 @@
         },
         "apologies": [
             "Oh, don't apologize, y_c. I'm sure you tried your best and I'll admit, I held too much faith in only you.",
-            "It was unfair of me to ask you to change our fates. I knew once the hunger dug its claws into our bellies, we would have no chance to fight back.",
+            "It was unfair of me to ask you to change our fates. I knew once the hunger dug its spears into our bellies, we would have no chance to fight back.",
             "At least my suffering is over, but I wonder if the price is too much to pay."
         ],
         "stay_quiet": [

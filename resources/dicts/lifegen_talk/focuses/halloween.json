@@ -10,8 +10,8 @@
         ],
         "intro": [
             "Boo!",
-            "[t_c pops out at you from behind a bush with the pelt of a rabbit laid over {PRONOUN/t_c/poss} own.]",
-            "Hehe, did I scare ya? Did you think I was a scary cat-rabbit hybrid?"
+            "[t_c pops out at you from behind a bush with the pelt of a squidcada laid over {PRONOUN/t_c/poss} own.]",
+            "Hehe, did I scare ya? Did you think I was a scary slugcat-squidcada hybrid?"
         ],
         "intro_choices": {
             "choice1": {
@@ -40,7 +40,7 @@
             "halloween"
         ],
         [
-            "[everycat in the Clan has been doing their best to scare each other lately. Today, r_k catches a glimpse of t_c from across the camp, jumps, and races back into the nursery.]",
+            "[every slugcat in the Clan has been doing their best to scare each other lately. Today, r_k catches a glimpse of t_c from across the camp, jumps, and races back into the nursery.]",
             "What? What's wrong?",
             "I scared {PRONOUN/r_k/object}?",
             "... That's just my face."
@@ -57,10 +57,10 @@
         ],
         [
             "y_c, y_c! Look, look, look!",
-            "[t_c runs towards you with a shiny, rectangular Twoleg object in {PRONOUN/t_c/poss} mouth.]",
-            "Look what r_a brought back for me from a patrol! {PRONOUN/r_a/subject/CAP} said {PRONOUN/r_a/subject} {VERB/r_a/think/thinks} it's Twoleg food... wanna share?",
+            "[t_c runs towards you with a shiny, rectangular Scavenger object in {PRONOUN/t_c/poss} mouth.]",
+            "Look what r_a brought back for me from a patrol! {PRONOUN/r_a/subject/CAP} said {PRONOUN/r_a/subject} {VERB/r_a/think/thinks} it's Scavenger food... wanna share?",
             "[You remember hearing about these things. As t_c attempts to tear into the object, you stop {PRONOUN/t_c/object}, informing {PRONOUN/t_c/object} that it's poisonous.]",
-            "Whoa, really? But r_a said the Twolegs were giving them to each other as gifts!",
+            "Whoa, really? But r_a said the Scavengers were giving them to each other as gifts!",
             "They're so cruel..."
         ]
     ],
@@ -71,10 +71,10 @@
             "halloween"
         ],
         [
-            "[t_c is licking clean the bones of some prey, long after most cats would have discarded of it.]",
+            "[t_c is licking clean the bones of some prey, long after most slugcats would have discarded of it.]",
             "Hi, y_c!",
             "Oh, I'm just cleaning up these bones so I can decorate the camp with them, since we're all in such a spooky mood lately.",
-            "I think this sparrow skull would look perfect on the top of the leader's den, don't you?"
+            "I think this lantern mouse skull would look perfect on the top of the leader's den, don't you?"
         ]
     ],
     "halloween_J5": [
@@ -87,7 +87,7 @@
         ],
         [
             "[t_c stalks past you with an indignant look on {PRONOUN/t_c/poss} face. {PRONOUN/t_c/subject/CAP} {VERB/t_c/have/has} a few sticks fastened to {PRONOUN/t_c/poss} head with vines.]",
-            "plike_r_c_silly wanted to put me in a costume. I'm a deer.",
+            "plike_r_c_silly wanted to put me in a costume. I'm a raindeer.",
             "Uncanny, right?"
         ]
     ],
@@ -103,7 +103,7 @@
         ],
         [
             "y_c, would it be insensitive to pretend I'm a ghost to scare plove_r_c?",
-            "Could you ask StarClan? I don't want to be rude."
+            "Could you ask The Ascended? I don't want to be rude."
         ]
     ],
     "halloween_J7": {
@@ -153,8 +153,8 @@
         ],
         "intro": [
             "[t_c walks into camp, holding some strange colorful things. Pelt decorations, maybe?]",
-            "I got costumes!!! The Twolegs would always dress me up in these around this time of year and then point metal boxes at me.",
-            "I don't have metal boxes, but I thought you guys would look adorable in these! plike_r_c_unlawful gave me the idea.",
+            "I got costumes!!! My Iterator would always dress me up in these around this time of year and then point overseers at me.",
+            "I don't have overseers, but I thought you guys would look adorable in these! plike_r_c_unlawful gave me the idea.",
             "Who wants a costume first?",
             "y_c! Come here, you'll be first!"
         ],
@@ -192,11 +192,11 @@
         ],
         "accept_choices": {
             "choice1": {
-                "text": "Deer",
+                "text": "Raindeer",
                 "next_scene": "costume"
             },
             "choice2": {
-                "text": "Bunny",
+                "text": "Yeek",
                 "next_scene": "costume"
             }
         },
@@ -216,12 +216,12 @@
         ],
         [
             "y_c! Do you want to hear the story that r_e just told me?",
-            "So once upon a time a cat got attacked.",
+            "So once upon a time a slugcat got attacked.",
             "Wait, that's not the right part.",
-            "Once upon a time there was a kittypet.",
-            "This kittypet was scary. At least to the cats around them.",
-            "There were rumors that they were a witch-cat!",
-            "One day, a warrior got curious about the kittypet. Then, yowls and screams were heard from the kittypet's house.",
+            "Once upon a time there was a pet.",
+            "This pet was scary. At least to the slugcats around them.",
+            "There were rumors that they were a witch-slugcat!",
+            "One day, a warrior got curious about the pet. Then, yowls and screams were heard from the pet's house.",
             "The warrior was never seen again.",
             "Haha look at your face! I'm kidding.",
             "Or am I? Hehehe!"
@@ -249,7 +249,7 @@
             "[You and t_c sit in the clearing, watching the last light of day fade from the sky.]",
             "Look at that.",
             "[t_c points to a shadow cast by the twisted roots of a nearby tree.]",
-            "Doesn't it look like a cat?... Or maybe something worse.",
+            "Doesn't it look like a slugcat?... Or maybe something worse.",
             "[You follow {PRONOUN/t_c/poss} gaze, and the shadow seems to shift, moving unnaturally along the ground.]",
             "t_p used to say that during Leaf-fall, spirits play with shadows. That's why they seem alive.",
             "[The silence stretches, and the shadow seems to creep closer, dark and menacing.]",
@@ -268,7 +268,7 @@
             "[While out on patrol, t_c suddenly halts and holds you back with {PRONOUN/t_c/poss} tail.]",
             "Whoa, whoa, don't get too close to that thing.",
             "[t_c glances at a nearby hollowed-out tree, its bark gnarled and twisted into strange patterns.]",
-            "They say a cat was buried inside it, and during Leaf-fall, you can still hear them scratching to get out.",
+            "They say a slugcat was buried inside it, and during Leaf-fall, you can still hear them scratching to get out.",
             "[In an instant, a sharp scraping sound emerges from within the hollow.]",
             "Did you hear that?"
         ]
@@ -282,10 +282,10 @@
         [
             "Watch me! I'm practicing my scary faces!",
             "[On cue, t_c scrunches up {PRONOUN/t_c/poss} nose and bares {PRONOUN/t_c/poss} teeth, trying to look fierce.]",
-            "Raaaar! I'm a mean old fox!",
+            "Raaaar! I'm a mean old lizard!",
             "[t_c glances around for a reaction, then huffs with determination.]",
             "Wait, wait, I can do better!",
-            "[The kit takes a deep breath, puffing out {PRONOUN/t_c/poss} cheeks and widening {PRONOUN/t_c/poss} eyes.]",
+            "[The pup takes a deep breath, puffing out {PRONOUN/t_c/poss} cheeks and widening {PRONOUN/t_c/poss} eyes.]",
             "How about this? I'm a ghost! Oooooo!",
             "[You try to pretend to be frightened, but it's hard to take such a cute sight seriously.]"
         ]
@@ -310,13 +310,13 @@
             "you_any"
         ],
         [
-            "[A group of cats are gathered around a large puddle, with t_c in the forefront, crouched low.]",
+            "[A group of slugcats are gathered around a large puddle, with t_c in the forefront, crouched low.]",
             "Okay, okay, I just need to grab one real quick.",
-            "[As you draw closer, you spot a few apples bobbing teasingly on the surface.]",
+            "[As you draw closer, you spot a few blue fruit bobbing teasingly on the surface.]",
             "[t_c dips {PRONOUN/t_c/poss} head to snatch one, but it slips away, causing {PRONOUN/t_c/object} to earn a mouthful of water.]",
             "Pfft! Bleh! Why are these things so slippery!?",
-            "[The apprentice lunges again, snapping {PRONOUN/t_c/poss} jaws at the apple, but it floats out of reach once more.]",
-            "Mouse-dung!",
+            "[The apprentice lunges again, snapping {PRONOUN/t_c/poss} jaws at the blue fruit, but it floats out of reach once more.]",
+            "Yeek-dung!",
             "[It seems like {PRONOUN/t_c/subject} might be at this all day.]"
         ]
     ],
@@ -332,7 +332,7 @@
         [
             "[Anytime you saw t_c in the past, {PRONOUN/t_c/subject} looked gloomy. However, as the leaves turn orange and the air chills, t_c is absolutely ecstatic.]",
             "y_c! y_c, do you know what time it is?",
-            "Oh, who am I kidding? It's when the housefolk-- I mean, Twolegs start putting up the pictures and candles! They say the dead visits them when they do.",
+            "Oh, who am I kidding? It's when the monkies-- I mean, Scavengers start putting up the pictures and candles! They say the dead visits them when they do.",
             "I hope - no, I know I'm in one of the pictures! I'll get to visit them! Isn't that exciting?",
             "[You nod, though as t_c continues to talk, you wonder what exactly a 'picture' and a 'candle' is.]"
         ]
@@ -347,9 +347,9 @@
             "they_blind"
         ],
         [
-            "[While all the other kittypets you've talked to lately are excited for the incoming 'visit' to their Twolegs, t_c is curled away in the distance.]",
+            "[While all the other pets you've talked to lately are excited for the incoming 'visit' to their Iterator, t_c is curled away in the distance.]",
             "Sorry for being all moppy. I didn't want to ruin the good mood.",
-            "I just... I know I'm not in my previous Twolegs pictures. I should be optimistic and have some faith!",
+            "I just... I know I'm not in my previous Iterator's pictures. I should be optimistic and have some faith!",
             "But I know lying to myself is just going to cause more pain."
         ]
     ],
@@ -363,9 +363,9 @@
             "halloween"
         ],
         [
-            "Oh, hey, y_c? Have you heard of what the kittypets have been talking about lately - the 'pictures' and 'candles'?",
+            "Oh, hey, y_c? Have you heard of what the pets have been talking about lately - the 'pictures' and 'candles'?",
             "It's really sweet, I think, to have others so dedicated to keeping your memory alive.",
-            "... The kittypets must be adored so much, even if it's from Twolegs, huh? It must've been nice."
+            "... The pets must be adored so much, even if it's from an Iterator, huh? It must've been nice."
         ]
     ],
     "halloween_SQ1~1": [
@@ -405,8 +405,8 @@
             "no_kit"
         ],
         [
-            "[A large raven has been hanging around the camp recently, filling silences with its mournful croaks and loudly flapping its wings when cats least expect it.]",
-            "[t_c is trying to speak with the bird to figure out what it wants, but so far {PRONOUN/t_c/poss} efforts have just been met with disparaging glances.]"
+            "[A large black noodlefly has been hanging around the camp recently, filling silences with its mournful honks and loudly flapping its wings when slugcats least expect it.]",
+            "[t_c is trying to speak with the noodlefly to figure out what it wants, but so far {PRONOUN/t_c/poss} efforts have just been met with disparaging glances.]"
         ]
     ],
     "halloween_SQ3": [
@@ -418,7 +418,7 @@
         ],
         [
             "[t_c's using the recent spooky mood in camp as an excuse to tell scarier stories than usual.]",
-            "And with a mournful wail, the ghost lifted its paw and pointed at the c_nClan cats! It hissed that for the blood they had spilled, all of them would be cursed for the rest of their lives...",
+            "And with a mournful wail, the ghost lifted its paw and pointed at the c_nClan slugcats! It hissed that for the blood they had spilled, all of them would be cursed for the rest of their lives...",
             "[r_c_neurotic excuses {PRONOUN/r_c_neurotic/self} and quickly leaves the audience, shivering.]"
         ]
     ],
@@ -461,7 +461,7 @@
         ],
         [
             "Have you ever wondered if we could fight ghosts? You know, if one decided to come after the Clan?",
-            "Please don't laugh at me. It's just... Everycat's been talking about ghosts and spooky things recently, and I can't help but worry. What if that stuff's real, and dangerous?"
+            "Please don't laugh at me. It's just... Every slugcat's been talking about ghosts and spooky things recently, and I can't help but worry. What if that stuff's real, and dangerous?"
         ]
     ],
     "halloween_SQ6~2": [
@@ -476,7 +476,7 @@
             "[t_c stares intently at the empty space in front of {PRONOUN/t_c/object}. {PRONOUN/t_c/subject/CAP} {VERB/t_c/swipe/swipes} one paw through the air with a quiet battlecry, but {VERB/t_c/stumble/stumbles} when {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} you nearby.]",
             "Ah... hi, y_c. So, remember how I was wondering about fighting ghosts a while back?",
             "r_c_introspective said maybe in order to fight a ghost, you just have to believe really hard that you'll be able to hit them. And if you don't believe enough, your paws will just pass through...",
-            "I know, it sounds like a kit story. But I couldn't stop thinking about it, so I guess I'm... practicing? Yeah. I'm practicing my believing, if that makes any sense.",
+            "I know, it sounds like a pup story. But I couldn't stop thinking about it, so I guess I'm... practicing? Yeah. I'm practicing my believing, if that makes any sense.",
             "...I'll go do something useful now."
         ]
     ],
@@ -523,7 +523,7 @@
             "[You shriek and leap back as t_c bursts out laughing. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} completely unbothered as {PRONOUN/t_c/subject} {VERB/t_c/toss/tosses} the spider onto the ground.]",
             "Hey, hey, it's alright! It's not real, see?",
             "[t_c makes a big show of batting at and flipping over the 'spider.' Sure enough, it doesn't move.]",
-            "Isn't it neat? I snatched it right out of a Twoleg garden while on patrol. I don't know what it's made of but it sure is creepy!",
+            "Isn't it neat? I snatched it right out of a Scavenger toll while on patrol. I don't know what it's made of but it sure is creepy!",
             "...",
             "Do you think I can prank r_c with it?"
         ]
@@ -541,8 +541,8 @@
         [
             "[In a moment of downtime you ask t_c if {PRONOUN/t_c/subject} would like to accompany you while you check on the o_c_n border.]",
             "The o_c_n border? No way! The river over there is totally haunted.",
-            "I heard that if you look into the water, you'll see another cat in your reflection looking right back at you!",
-            "r_c thinks they're Dark Forest cats trying to find their way back to the Clans. Creepy huh?"
+            "I heard that if you look into the water, you'll see another slugcat in your reflection looking right back at you!",
+            "r_c thinks they're Rot Wound slugcats trying to find their way back to the Clans. Creepy huh?"
         ]
     ],
     "halloween_E4": [
@@ -556,8 +556,8 @@
             "you_blind"
         ],
         [
-            "The medicine den could use some decorations to match the spooky mood around the camp, don't you think?",
-            "Something not too scary but still on theme. Something like... oh Starclan, what even is there?",
+            "The clerics' den could use some decorations to match the spooky mood around the camp, don't you think?",
+            "Something not too scary but still on theme. Something like... oh Void, what even is there?",
             "Oh! Cobwebs! Cobwebs are perfect. I'm sure there is plenty that I can spare for decorating. At least, I think so.",
             "...I'm going to go check."
         ]
