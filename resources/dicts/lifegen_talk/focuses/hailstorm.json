@@ -9,8 +9,8 @@
         ],
         [
             "This Clan sure loves the sound of its own chatter, doesn't it? It's just a hail storm! What's the big deal?",
-            "These days, it seems like even the most inane mouse dung is enough to set everybody off.",
-            "That cloud up there looks kinda like a turtle. Is everybody gonna be talking about that, next?"
+            "These days, it seems like even the most inane yeek dung is enough to set everybody off.",
+            "That cloud up there looks kinda like a raindeer. Is everybody gonna be talking about that, next?"
         ]
     ],
     "hail_focus_AJ1": [
@@ -24,7 +24,7 @@
             "[t_c rolls a large sphere of hail beneath {PRONOUN/t_c/poss} paws, gazing thoughtfully at its movement.]",
             "Incredible, how precisely formed these spheres are, how perfect and smooth ...",
             "It truly makes you wonder about the presence of a higher power, doesn't it, y_c? Were these balls of hail created by design? What is their significance?",
-            "And, were they created with intention, then why would StarClan release them upon our camp to cause such devastation? Is it a form of divine punishment? An act of fate?",
+            "And, were they created with intention, then why would The Ascended release them upon our camp to cause such devastation? Is it a form of divine punishment? An act of fate?",
             "[You ask t_c if {PRONOUN/t_c/poss} paws are cold from rolling the ball of hail for so long.]",
             "... Er, why, yes. I suppose they are."
         ]
@@ -75,7 +75,7 @@
         [
             "I wonder if we can make anything useful out of this hail storm ...",
             "Maybe we could use some of the more sizeable pieces to roll branches from one side of camp to the other?",
-            "And the smaller ones could plug some of the holes in the dens! Or be toys for the kits!",
+            "And the smaller ones could plug some of the holes in the dens! Or be toys for the pups!",
             "[You ask t_c what's going to happen when the hail pellets melt?]",
             "Oh, yeah, right. Melting. Forgot about that ...",
             "Well, there's gotta be a solution for that as well, right? Maybe if we bury them deep enough in the ground and wait until leafbare, we could ... Uh ... Hmm ....",
@@ -115,7 +115,7 @@
             "they_silly"
         ],
         [
-            "StarClan, y_c, did you hear that hail last night? It was crazy! It sounded like all of the stars dropped out of the sky at once!",
+            "Void, y_c, did you hear that hail last night? It was crazy! It sounded like all of the stars dropped out of the sky at once!",
             "Say, maybe that's not a bad idea ... Just think about it. Have you <i>seen</i> a star since the storm? Like, even once?",
             "Yeah, I know it's been cloudy, but still!"
         ]
@@ -208,7 +208,7 @@
             "[t_c is brooding alone in {PRONOUN/t_c/poss} corner of camp, as always.]",
             "[On your way to fetch more fresh moss, you remind {PRONOUN/t_c/object} that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} supposed to be sheltering and should really only leave {PRONOUN/t_c/poss} den in an emergency.]",
             "Tch, what's going to happen? A little hail is gonna kill me?",
-            "We're supposed to be warriors. Now, everycat's suddenly cowering like kits over a couple of pebbles."
+            "We're supposed to be warriors. Now, every slugcat's suddenly cowering like pups over a couple of pebbles."
         ]
     ],
     "hail_focus_AJ14": [
@@ -219,8 +219,8 @@
             "silly"
         ],
         [
-            "Oh, hey, y_c! I was just thinking of ways to help everycat pass time in the warrior's den until this whole storm thing is over.",
-            "Maybe we could play a game of moss-ball, like when all of us were kits? That could help lift everycat's spirits!",
+            "Oh, hey, y_c! I was just thinking of ways to help every slugcat pass time in the warrior's den until this whole storm thing is over.",
+            "Maybe we could play a game of moss-ball, like when all of us were pups? That could help lift every slugcat's spirits!",
             "Though, on second thought, it just might give d_n a heart attack if any more damage is done to the dens, especially when there hasn't even been another hailstorm."
         ]
     ],
@@ -274,8 +274,8 @@
             "they_warrior"
         ],
         [
-            "[The kits have temporarily taken over the warrior's den while the nursery is being repaired.]",
-            "[t_c sinks {PRONOUN/t_c/poss} claws into the moss of {PRONOUN/t_c/poss} nest, trying desperately to hold it together as the kits use {PRONOUN/t_c/poss} back as a temporary climbing gym.]",
+            "[The pups have temporarily taken over the warrior's den while the nursery is being repaired.]",
+            "[t_c sinks {PRONOUN/t_c/poss} paws into the moss of {PRONOUN/t_c/poss} nest, trying desperately to hold it together as the pups use {PRONOUN/t_c/poss} back as a temporary climbing gym.]",
             "Any shot d_n would let me take my chances sleeping outside tonight?"
         ]
     ],
@@ -306,7 +306,7 @@
             "Hm? Oh, yeah, just tired. The kits have been running around all day, trying to help clean up after the storm, getting in the way and tripping up warriors.",
             "I'm sure you've noticed.",
             "I challenged them all to see who could make the biggest hail pile, though, and that seems to have distracted them.",
-            "[You and t_c glance backwards towards the nursery, where the kits are scrambling to collect as many hailstones as possible to push into their pile.]",
+            "[You and t_c glance backwards towards the nursery, where the pups are scrambling to collect as many hailstones as possible to push into their pile.]",
             "I think r_k is winning!"
         ]
     ],
@@ -320,9 +320,9 @@
             "no_kit"
         ],
         [
-            "[As t_c does {PRONOUN/t_c/poss} best to patch up the hail damage on the medicine den, you ask how {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing.]",
+            "[As t_c does {PRONOUN/t_c/poss} best to patch up the hail damage on the clerics' den, you ask how {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing.]",
             "Hm? Oh, fine, fine. Just, you know, a bit annoyed at all of this.",
-            "I guess I'm just glad the hail didn't injure anycat too badly.",
+            "I guess I'm just glad the hail didn't injure any slugcat too badly.",
             "[You tell t_c that, actually, a pellet managed to hit you in the paw and it's feeling a bit sore.]",
             "What?! Oh, y_c.",
             "Get in the den. I'll look at it in a moment."
@@ -357,9 +357,9 @@
             "connected"
         ],
         [
-            "[You stop to peek over a group of warriors shoulders, catching sight of t_c jumping side to side, teaching other kittens on how to 'dodge' the balls of ice if the storm ever happens again.]",
+            "[You stop to peek over a group of warriors shoulders, catching sight of t_c jumping side to side, teaching other slugpups on how to 'dodge' the balls of ice if the storm ever happens again.]",
             "Like this, like this! Then, if the ice ever does rain again, we can outsmart it and dodge! Just like r_w says we should do if something is coming after us.",
-            "[The kittens attempt to follow t_c's movements, yet they trip over each other in a heep of giggles. At least the kittens are entertained.]"
+            "[The slugputs attempt to follow t_c's movements, yet they trip over each other in a heep of giggles. At least the pups are entertained.]"
         ]
     ]
 }

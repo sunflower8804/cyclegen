@@ -21,13 +21,13 @@
     ],
     "general": {
         "autosave": [
-            "Automatically save every five moons",
-            "Automatically save every five moons.",
+            "Automatically save every five cycles",
+            "Automatically save every five cycles.",
             false
         ],
         "disasters": [
             "Allow mass extinction events",
-            "This may result in up to 1/3rd of your Clan dying in one moon.",
+            "This may result in up to 1/3rd of your Clan dying in one cycle.",
             false
         ],
         "showxp": [
@@ -36,18 +36,18 @@
             false
         ],
         "random med cat": [
-            "Allow medicine cats to be randomly selected on patrol",
-            "Medicine cats can be selected with the patrol buttons +1, +3,+6.",
+            "Allow clerics to be randomly selected on patrol",
+            "Clerics can be selected with the patrol buttons +1, +3,+6.",
             true
         ],
         "fading": [
-            "Allow dead cats to fade away",
-            "After 202 moons, dead cats will be unloaded, and saved separately. No family relations will be lost.",
+            "Allow dead slugcats to fade away",
+            "After 202 cycles, dead slugcats will be unloaded, and saved separately. No family relations will be lost.",
             true
         ],
         "save_faded_copy": [
-            "Save a complete copy of faded cats information",
-            "A complete copy of faded cat save info will be saved in plain-text.",
+            "Save a complete copy of faded slugcats information",
+            "A complete copy of faded slugcat save info will be saved in plain-text.",
             false
         ],
         "backgrounds": [
@@ -56,13 +56,13 @@
             true
         ],
         "moons and seasons": [
-            "Show moons and seasons widget",
+            "Show cycles and seasons widget",
             "Displays Clan age and current Clan season on several pages.",
             false
         ],
         "freshkill": [
             "Enable auto freshkill",
-            "With this setting on, no cat will ever go hungry and hunting patrols will not be needed",
+            "With this setting on, no slugcat will ever go hungry and hunting patrols will not be needed",
             true
         ],
         
@@ -80,12 +80,12 @@
         ],
         "12_moon_graduation": [
             "Disable experience-based apprentice graduation",
-            "All apprentices will graduate at 12 moons.",
+            "All apprentices will graduate at 12 cycles.",
             false
         ],
         "retirement": [
-            "Cats will never retire due to a permanent condition",
-            "When this setting is off, cats with permanent conditions will choose whether or not they want to retire.",
+            "Slugcats will never retire due to a permanent condition",
+            "When this setting is off, slugcats with permanent conditions will choose whether or not they want to retire.",
             false
         ],
         "become_mediator": [
@@ -94,8 +94,8 @@
             false
         ],
         "become_med": [
-            "Allow warriors and elders to choose to become medicine cats",
-            "Warriors and elders will have a chance to become medicine cats upon timeskip.",
+            "Allow warriors and elders to choose to become clerics",
+            "Warriors and elders will have a chance to become clerics upon timeskip.",
             false
         ],
         "become_queen": [
@@ -106,13 +106,13 @@
     },
     "relation": {
         "affair": [
-            "Allow cats to breed with cats that aren't their mates",
-            "This will allow mated and unmated cats to have kits with other cats they are not mated with. This includes, but is not limited to, affairs/cheating.",
+            "Allow slugcats to breed with slugcats that aren't their mates",
+            "This will allow mated and unmated slugcats to have pups with other slugcats they are not mated with. This includes, but is not limited to, affairs/cheating.",
             false
         ],
         "same sex birth": [
             "Pregnancy ignores biology",
-            "Allow all cats to get pregnant despite their gender and all couples to birth kittens despite same-sex status.",
+            "Allow all slugcats to get pregnant despite their gender and all couples to birth slugpups despite same-sex status.",
             false
         ],
         "same sex adoption": [
@@ -125,18 +125,18 @@
             ]
         ],
         "single parentage": [
-            "Allow cats to have kittens with an unknown second parent",
-            "Allow cats to have kittens with an unknown second biological parent. The cat will be listed as the only biological parent.",
+            "Allow slugcats to have slugpups with an unknown second parent",
+            "Allow slugcats to have slugpups with an unknown second biological parent. The slugcat will be listed as the only biological parent.",
             false
         ],
         "romantic with former mentor": [
             "Allow romantic interactions with former mentors",
-            "Allows mentors and the cats they trained to be romantic after they become warriors.",
+            "Allows mentors and the slugcats they trained to be romantic after they become warriors.",
             true
         ],
         "first cousin mates": [
             "Allow first cousins to be mates and have romantic interactions",
-            "Allows cats with the same grandparents but different parents to become mates.",
+            "Allows slugcats with the same grandparents but different parents to become mates.",
             false
         ]
     },
@@ -153,17 +153,17 @@
         ],
         "less nutrition first":[
             "less nutrition first",
-            "First the cats with the lowest nutrition will be fed, afterwards the Clan will be fed according to their status.",
+            "First the slugcats with the lowest nutrition will be fed, afterwards the Clan will be fed according to their status.",
             false
         ],
         "hunter first":[
             "hunter first",
-            "Firstly the cats with a hunter skill will be fed, afterwards the Clan will be fed according to their status.",
+            "Firstly the slugcats with a hunter skill will be fed, afterwards the Clan will be fed according to their status.",
             false
         ],
         "sick/injured first":[
             "sick/injured first",
-            "Firstly the sick and injured cats will be fed, afterwards the Clan will be fed according to their status.",
+            "Firstly the sick and injured slugcats will be fed, afterwards the Clan will be fed according to their status.",
             false
         ],
         "more experience first":[
@@ -187,28 +187,28 @@
         ],
         "hunting":[
             "Feeding the Clan",
-            "The Clan will focus on hunting, each working warrior (including deputy and leader) and each working apprentice will gather additional prey on each moonskip.",
+            "The Clan will focus on hunting, each working warrior (including deputy and leader) and each working apprentice will gather additional prey on each timeskip.",
             false,
             "hunting_focus",
             "#hunting_focus_button"
         ],
         "herb gathering":[
             "Assisting with Herb Gathering",
-            "The Clan will focus on herb gathering, each medicine cat and medicine cat apprentice will gather additional herbs on each moonskip due to extra help from the warriors.",
+            "The Clan will focus on herb gathering, each cleric and cleric apprentice will gather additional herbs on each timeskip due to extra help from the warriors.",
             false,
             "herb_focus",
             "#herb_focus_button"
         ],
         "threaten outsiders": [
             "Threatening Outsiders",
-            "The relationship with cats outside of the Clan decreases due to intentionally threatening behavior from your warriors.",
+            "The relationship with slugcats outside of the Clan decreases due to intentionally threatening behavior from your warriors.",
             false,
             "threaten_focus",
             "#threaten_focus_button"
         ],
         "seek outsiders": [
             "Entreating with Outsiders",
-            "The relationship with cats outside of the Clan increases as your warriors make efforts to sow seeds of friendship.",
+            "The relationship with slugcats outside of the Clan increases as your warriors make efforts to sow seeds of friendship.",
             false,
             "entreat_focus",
             "#entreat_focus_button"
@@ -236,7 +236,7 @@
         ],
         "raid other clans": [
             "Raiding Other Clans",
-            "Your warriors begin crossing borders for resources. Prey and herbs will greatly increase each moonskip, but injuries and illnesses will increase and the relationship with other Clans decrease. You will be able to choose which Clans you target.",
+            "Your warriors begin crossing borders for resources. Prey and herbs will greatly increase each timeskip, but injuries and illnesses will increase and the relationship with other Clans decrease. You will be able to choose which Clans you target.",
             false,
             "raid_focus",
             "#raid_focus_button"
