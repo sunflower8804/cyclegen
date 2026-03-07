@@ -258,7 +258,7 @@ class ProfileScreen(Screens):
                             inventory_len = len(self.cat_inventory)
                         else:
                             for ac in self.cat_inventory:
-                                if self.search_bar.get_text().lower() in ac.lower():
+                                if self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                                     inventory_len+=1
                         self.max_pages = math.ceil(inventory_len/18)
                         if self.page == 0 and self.max_pages == 1:
@@ -290,7 +290,7 @@ class ProfileScreen(Screens):
                             inventory_len = len(self.cat_inventory)
                         else:
                             for ac in self.cat_inventory:
-                                if self.search_bar.get_text().lower() in ac.lower():
+                                if self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                                     inventory_len+=1
                         self.max_pages = math.ceil(inventory_len/18)
                         if self.page == 0 and (self.max_pages == 1 or self.max_pages == 0):
@@ -435,7 +435,7 @@ class ProfileScreen(Screens):
                         new_inv = self.cat_inventory
                     else:
                         for ac in self.cat_inventory:
-                            if self.search_bar.get_text().lower() in ac.lower():
+                            if self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                                 inventory_len+=1
                                 new_inv.append(ac)
                     self.max_pages = math.ceil(inventory_len/20)
@@ -889,7 +889,7 @@ class ProfileScreen(Screens):
                     new_inv = self.cat_inventory
                 else:
                     for ac in self.cat_inventory:
-                        if self.search_bar.get_text().lower() in ac.lower():
+                        if self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                             inventory_len+=1
                             new_inv.append(ac)
                 self.max_pages = math.ceil(inventory_len/20)
@@ -901,7 +901,7 @@ class ProfileScreen(Screens):
                 if self.cat_inventory:
                     for i, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len + start_index)], start = start_index):
                         try:
-                            if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
+                            if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in ACC_DISPLAY[accessory]["default"]:
                                 if accessory in cat.pelt.accessories:
                                     self.accessory_buttons[str(i) + str(randint(0,5000))] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#fav_marker")
                                 else:
@@ -3277,7 +3277,7 @@ class ProfileScreen(Screens):
             new_inv = self.cat_inventory
         else:
             for ac in self.cat_inventory:
-                if ac and self.search_bar.get_text() and self.search_bar.get_text().lower() in ac.lower():
+                if ac and self.search_bar.get_text() and self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                     inventory_len+=1
                     new_inv.append(ac)
         self.max_pages = math.ceil(inventory_len/20)
@@ -3290,7 +3290,7 @@ class ProfileScreen(Screens):
         if self.cat_inventory:
             for i, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len)], start = start_index):
                 try:
-                    if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
+                    if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in ACC_DISPLAY[accessory]["default"]:
                         if accessory in cat.pelt.accessories:
                             self.accessory_buttons[str(i)] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#fav_marker")
                         else:

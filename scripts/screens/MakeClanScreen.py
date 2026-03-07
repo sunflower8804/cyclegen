@@ -2856,6 +2856,13 @@ class MakeClanScreen(Screens):
                     #Pelt.aliveInsect_accessories + Pelt.fruit_accessories +
                     #Pelt.crafted_accessories + Pelt.tail2_accessories
                     )
+                
+                # 14:50 - i might regret this
+                #acc_display_list = list()
+                #for thing in acc_list:
+                #    acc_display_list.append(self.ACC_DISPLAY[thing]["default"])
+                # 15:10 - i regret this
+
                 if self.customiser_sort == "alphabetical":
                     acc_list.sort()
 
